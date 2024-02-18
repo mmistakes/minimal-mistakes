@@ -71,12 +71,12 @@ It is necessary to use GitHub token because we'll be using GitHub API for which 
 Please, have a look at the [GitHub docs](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to do it.
 
 ## 4. Planning
-What are we going to do and how exactly? To answer this questions we must investigate existing GitHub API so that we know what kind of data is exposed and how.
+What are we going to do and how exactly? To answer these questions we must investigate existing GitHub API so that we know what kind of data is exposed and how.
 
 Some of the interesting questions can be:
-- How can I fetch basic data about organization?
+- How can I fetch basic data about an organization?
 - How do I find out how many public projects are owned by the organization?
-- What is the number of contributors for each project owned by organization?
+- What is the number of contributors for each project owned by the organization?
 - ...
 
 ## 5. Quickstart
@@ -150,7 +150,7 @@ Turns out that if we send a basic request to ```"https://api.github.com/orgs/$or
 For example, let's pick an organization - `typelevel` and test it:
 ![alt ""](../images/github-contributors-aggregator/typelevel-curl.png)
 
-Nice, so we have our first interesting domain object - Amount of public repositories, lets model that, shall we? :)
+Nice, so we have our first interesting domain object - Amount of public repositories, let's model that, shall we? :)
 
 Since it's just a number we could use `Int` or `Long` but Scala 3 supports `opaque types`, so it's better to use that.
 
@@ -171,9 +171,9 @@ object domain {
 }
 ```
 
-We've defined `opaque type` which essentially is an `Int`. It has an `apply` constructor and `Empty` value. `apply` defines the method in the companion object. It allows you to create instances of `PublicRepos` by calling `PublicRepos` as if it was a function, passing an integer value as an argument, this way we could avoid additional wrapping cost over simple integers.
+We've defined an [`opaque type`](https://blog.rockthejvm.com/scala-3-opaque/) which essentially is an `Int`. It has an `apply` constructor and `Empty` value. `apply` defines the method in the companion object. It allows you to create instances of `PublicRepos` by calling `PublicRepos` as if it was a function, passing an integer value as an argument, this way we could avoid additional wrapping cost over simple integers.
 
-`Empty` value can be used in case the key is absent in JSON, or in case it has a negative value. The latter one is less likely to happen, but the more time I spent working as a software developer, the less trust I have in programmers, so let's choose the safer road and insure ourselves with a sensible fallback - 0.
+`Empty` value can be used in case the key is absent in JSON, or in case it has a negative value. The latter one is less likely to happen, but let's choose the safer road and insure ourselves with a sensible fallback - 0.
 
 With the `value` extension method, we can easily retrieve the underlying Int value for `PublicRepos`.
 
@@ -202,7 +202,7 @@ Let's break down step by step what is going on here:
 - `.read[Int]`: This part of the code specifies that the value at the path `"public_repos"` in the JSON structure should be read as an Int. It's defining how to extract an Int value from the JSON.
 - `.map(PublicRepos.apply)`: This maps the `Int` value obtained from reading the `"public_repos"` field to a `PublicRepos` instance using the `PublicRepos.apply` method. It essentially converts the extracted Int value into a `PublicRepos` instance.
 
-So, when you have JSON data representing a structure with a `"public_repos"` field, you can use this implicit `Reads` instance (`ReadsPublicRepos`) to convert that JSON into a `PublicRepos` instance.
+So, when you have JSON data representing a structure with a `"public_repos"` field, you can use this given `Reads` instance (`ReadsPublicRepos`) to convert that JSON into a `PublicRepos` instance.
 
 As soon as we have `PublicRepos` we could also define something like a placeholder for the repository name, maybe - `RepoName`.
 
@@ -253,7 +253,7 @@ e.g, let's pick `typelevel` (`$orgName`) and `cats` (`$repoName`).
 
 Paginated API endpoint looks like: `https://api.github.com/repos/$orgName/$repoName/contributors?per_page=100&page=$page`
 
-Please, notice that the response is a JSON array. Important fields for us should be first and last of each - `"login"` and "`contributions`":
+Notice, that the response is a JSON array. Important fields for us should be first and last of each - `"login"` and "`contributions`":
 
 ![alt ""](../images/github-contributors-aggregator/contributors-example.png)
 
@@ -372,6 +372,12 @@ Github token is just a string which must be attached to request headers so that 
 Let's be simple and model that as a single field case class:
 
 ```scala
+
+// other imports
+import pureconfig.ConfigReader
+import pureconfig.generic.derivation.default.*
+// other imports
+
 object Main extends IOApp.Simple {
 
   final case class Token(token: String) derives ConfigReader {
@@ -398,9 +404,9 @@ In general, there are a few options for managing such things:
 - hardcoding
   - very good for prototyping and development but extremely unsafe, as soon as you publish your token, GitHub will immediately expire it so that nobody can abuse it on your behalf
 
-Since I've already showed you `ConfigReader` and `pureconfig` dependency in our `build.sbt` it's fairly easy to guess which option we're using in this project, just a personal preference.
+Since we've already seen `ConfigReader` and `pureconfig` dependency in our `build.sbt` it's fairly easy to guess which option we're using in this project, just a personal preference.
 
-In terms of loading, it will just required one simple line of code in our `run` definition in:
+In terms of loading, it will just require one simple line of code in our `run` definition in:
 
 ```scala
 object Main extends IOApp.Simple {
@@ -500,7 +506,7 @@ object syntax {
 }
 ```
 
-This will enable us to do things such as:
+This will enable easy conversion between our case classes and their JSON equivalents. As an example with a dummy case class:
 ```scala
 case class Data(x: Int, y: Int)
 
@@ -545,11 +551,11 @@ After a few revisions and refinement this is the plan I came up with:
   - we will end up here with smth like `Vector("cats", "cats-effect", ... ,"fs2")`
 - for each repository, start fetching contributors in parallel and accumulate their contributions sequentially
   - So, if we have 3 repositories we will create 3 separate fibers and start accumulating paginated contributors sequentially until they are exhausted. It means that fiber A may take 500 millis, fiber B - 600 millis, fiber C - 300 millis. So, in total, we will have all results in 600 millis since it's based on fork-join algorithm.
-  - Unfortunately there is no clear way of parallelising fetching the contributors for repository because we don't know in advance how many contributors are there. However, if you feel brave you can play with different ideas and also try parallelising that, e.g you can use `fibonacci` approach and issue N amount of request on each iteration until they are exhausted, more on that later. 
+  - Unfortunately there is no clear way of parallelising fetching the contributors for repository because we don't know in advance how many contributors there are. However, if you feel brave you can play with different ideas and also try parallelising that, e.g you can use `fibonacci` approach and issue N amount of request on each iteration until they are exhausted, more on that later. 
 - group and sum contributions by contributor login
 - create a `Vector[Contributor]` instances sorted by contributions
 - generate a JSON response containing information about contributors and contributions
-- spit back the HTTP response with the JSON content
+- send back the HTTP response with the JSON content
 
 Let's begin!
 
@@ -595,7 +601,7 @@ As you can see, we updated `routes` definition so that it finds out how many pub
 The steps are:
 - define a `publicReposUri`
 - issue HTTP request to `publicReposUri`
-  - deserialize JSON response to `PublicRepos` which is an amount of public repositories
+- deserialize JSON response to `PublicRepos` which is an amount of public repositories
 - send response 200 OK with computed result
 
 Below you can see how could we test this functionality:
