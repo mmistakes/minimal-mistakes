@@ -521,19 +521,23 @@ val dataFromJsonString = dataJsonString.into[Data] // Data(x = 1, y = 2)
 Now we can define a general `HTTP GET` functionality which will be used later multiple times:
 ```scala
 def fetch[A: Reads](uri: Uri, client: Client[IO], default: => A)(using token: Token): IO[A] =
-    client
-        .expect[String](req(uri)) // issue request
-        .map(_.into[A]) // transform the JSON into A using Reads[A]
-        .onError(IO.println) // print out any errors
-        .handleError(_ => default) // if IO computation fails, return the default value of A
+  client
+    .expect[String](req(uri))
+    .map(_.into[A])
+    .onError {
+      case org.http4s.client.UnexpectedStatus(Status.Unauthorized, _, _) =>
+        error"GitHub token is either expired or absent, please check `token` key in src/main/resources/application.conf"
+      case other => error"other"
+    }
+    .handleErrorWith(_ => warn"returning default value: $default for $uri due to unexpected error" as default)
 ```
-This function is designed for fetching data from an HTTP endpoint, parsing the response as JSON into a type `A`, and handling errors gracefully by providing a default value. The use of type classes like `Reads` indicates that are using type class-based decoding for type `A`.
+This function is designed for fetching data from an HTTP endpoint, parsing the response as JSON into a type `A`, logging failed IO computations and handling errors gracefully by providing a default value. The use of type classes like `Reads` indicates that are using type class-based decoding for type `A`.
 
 Explanation:
 - `client.expect[String](req(uri))` sends an HTTP request using the `req` function from our previous example and expects the response as a `String` (it is assumed that the response body is expected to be a JSON string).
 - `.map(_.into[A])` transforms the JSON body into the concrete instance of `A` using `Reads[A]`
-- `.onError(IO.println)` logs the error if an exception occurs during the HTTP request. The `IO.println` function is used to print the error to the console.
-- `.handleError(_ => default)` If an error occurs in IO computation, it falls back to the `default` value for `A`.
+- `.onError { ... } ` logs the errors if `IO` fails
+- `.handleError(_ => ...)` If an error occurs in `IO`, it logs warning and falls back to the `default` value for `A`.
 
 With that, we can move on to the most important part of our project - business logic.
 
@@ -660,6 +664,8 @@ Let's manually test the output for different organizations:
 
 Since we have all the repositories, now we can start fetching the contributors of each project in parallel. We must notice that the results for this one are also paginated, however, we don't know exactly how many contributors are out there for each project, it means that we're limited in parallelism here and we have to iteratively fetch "next contributors list" until it returns the less than 100 results, indicating that it's the last one.
 
+With the business logic it's equally important to define logging to indicate the progress and point out errors, if any.
+
 ```scala
 // other imports  
 import cats.syntax.all.*
@@ -669,59 +675,81 @@ import cats.instances.all.*
 object Main extends IOApp.Simple { 
   
   // other definitions
+
+  private def getContributorsPerRepo(
+    client: Client[IO],
+    repoName: RepoName,
+    orgName: String,
+    contributors: Vector[Contributor] = Vector.empty[Contributor],
+    page: Int = 1,
+    isEmpty: Boolean = false,
+  )(using token: Token): IO[Vector[Contributor]] =
+    if ((page > 1 && contributors.size % 100 != 0) || isEmpty) IO.pure(contributors)
+    else {
+      uri(contributorsUrl(repoName.value, orgName, page))
+        .flatMap { contributorUri =>
+          for {
+            _ <- info"requesting page: $page of $repoName contributors"
+            newContributors <- fetch[Vector[Contributor]](contributorUri, client, Vector.empty)
+            _ <- info"fetched ${newContributors.size} contributors on page: $page for $repoName"
+            next <- getContributorsPerRepo(
+              client = client,
+              repoName = repoName,
+              orgName = orgName,
+              contributors = contributors ++ newContributors,
+              page = page + 1,
+              isEmpty = newContributors.isEmpty,
+            )
+          } yield next
+       }
+    }
+
   def routes(client: Client[IO], token: Token): HttpRoutes[IO] = {
     given tk: Token = token
 
     HttpRoutes.of[IO] {
-
       case GET -> Root => Ok("hi :)")
-
       case GET -> Root / "org" / orgName =>
         for {
+          start <- IO.realTime
+          _ <- info"accepted $orgName"
           publicReposUri <- uri(publicRepos(orgName))
+          _ <- info"fetching the amount of available repositories for $orgName"
           publicRepos <- fetch[PublicRepos](publicReposUri, client, PublicRepos.Empty)
+          _ <- info"amount of public repositories for $orgName: $publicRepos"
           pages = (1 to (publicRepos.value / 100) + 1).toVector
           repositories <- pages.parUnorderedFlatTraverse { page =>
             uri(repos(orgName, page))
                     .flatMap(fetch[Vector[RepoName]](_, client, Vector.empty[RepoName]))
           }
+          _ <- info"$publicRepos repositories were collected for $orgName"
+          _ <- info"starting to fetch contributors for each repository"
           contributors <- repositories
                   .parUnorderedFlatTraverse { repoName =>
-                    def getContributors(
-                      page: Int,
-                      contributors: Vector[Contributor],
-                      isEmpty: Boolean = false,
-                    ): IO[Vector[Contributor]] =
-                      if ((page > 1 && contributors.size % 100 != 0) || isEmpty) IO.pure(contributors)
-                      else {
-                        uri(contributorsUrl(repoName.value, orgName, page))
-                                .flatMap { contributorUri =>
-                                  for {
-                                    newContributors <- fetch[Vector[Contributor]](contributorUri, client, Vector.empty)
-                                    next <- getContributors(
-                                      page = page + 1,
-                                      contributors = contributors ++ newContributors,
-                                      isEmpty = newContributors.isEmpty,
-                                    )
-                                  } yield next
-                                }
-                      }
-
-                    getContributors(page = 1, contributors = Vector.empty)
+                    for {
+                      _ <- info"fetching contributors for $repoName"
+                      contributors <- getContributorsPerRepo(client, repoName, orgName)
+                      _ <- info"fetched amount of contributors for $repoName: ${contributors.size}"
+                    } yield contributors
                   }
                   .map {
                     _.groupMapReduce(_.login)(_.contributions)(_ + _).toVector
                             .map(Contributor(_, _))
                             .sortWith(_.contributions > _.contributions)
                   }
+          _ <- info"returning aggregated & sorted contributors for $orgName"
           response <- Ok(Contributions(contributors.size, contributors).toJson)
+          end <- IO.realTime
+          _ <- info"aggregation took ${(end - start).toSeconds} seconds"
         } yield response
     }
   }
 }
 ```
 
-In the code snippet above, `contributors` and `response` are two important components of the HTTP route handling logic. Let's break down their meanings:
+`getContributorsRepo` is a recursive function which takes lots of parameters and continuously fetches paginated contributors for a certain repository unless it's the last page. 
+
+Also, in the code snippet above, `contributors` and `response` are two important components of the HTTP route handling logic. Let's break down their meanings:
 
 `contributors`:
 
