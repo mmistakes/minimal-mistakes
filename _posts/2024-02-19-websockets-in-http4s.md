@@ -96,7 +96,7 @@ class Routes[F[_]: Files: MonadThrow] extends Http4sDsl[F] {
     HttpRoutes.of[F] { case request @ GET -> Root / "chat.html" =>
       StaticFile
         .fromPath(
-          fs2.io.file.Path("src/main/resources/chat.html"),
+          fs2.io.file.Path(getClass.getClassLoader.getResource("chat.html").getFile),
           Some(request)
         )
         .getOrElseF(NotFound())
