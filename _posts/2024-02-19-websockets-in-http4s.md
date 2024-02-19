@@ -4,7 +4,7 @@ date: 2024-02-19
 header:
   image: "/images/blog cover.jpg"
 tags: []
-excerpt: "An Introduction to WebSockets In Http4s."
+excerpt: "Learn how to use WebSockets in Scala with Http4s, and how to enable two-way communication between the frontend and the backend."
 toc: true
 toc_label: "In this article"
 ---
