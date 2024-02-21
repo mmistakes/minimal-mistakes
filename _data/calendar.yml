@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A5 - Bibliothek Spandau ",
-    "title": "Ausflug A5 - Bibliothek Spandau ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2V2dGNxbXFuanZwYW1wbDlmZGhwMmFwdHQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-02-21T07:50:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-02-21T11:30:00+01:00"
-    },
-    "created": "2024-01-17T12:03:54.000Z",
-    "updated": "2024-01-23T08:28:44.405Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A6 - GRIPS Theater ",
     "title": "Ausflug A6 - GRIPS Theater ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-31T12:14:47.000Z",
     "updated": "2024-01-31T12:14:47.720Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A6 - Bibliothek Spandau",
+    "title": "Ausflug A6 - Bibliothek Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzJzOWVqM3Rpc2k1OGw4OXR1czEwbzBudWEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-06T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-06T13:30:00+01:00"
+    },
+    "created": "2024-01-23T08:22:44.000Z",
+    "updated": "2024-01-23T08:22:44.119Z"
   }
 ]
