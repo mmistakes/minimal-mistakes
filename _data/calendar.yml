@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A6 - GRIPS Theater ",
-    "title": "Ausflug A6 - GRIPS Theater ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mmc1Njg1bzZxZnRwbWw4MHFuOGk4bmo0dXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-02-21T09:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-02-21T13:30:00+01:00"
-    },
-    "created": "2024-01-23T08:31:28.000Z",
-    "updated": "2024-01-23T08:31:28.112Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A3 - Eislaufbahn Glockenturm",
     "title": "Ausflug A3 - Eislaufbahn Glockenturm",
     "excerpt": null,
@@ -83,6 +66,23 @@
     },
     "created": "2024-01-31T12:14:47.000Z",
     "updated": "2024-01-31T12:14:47.720Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A4 - Science Center Spectrum",
+    "title": "Ausflug A4 - Science Center Spectrum",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzJsYXJsYWhxaG52ZDg2ZDRtbGxubjNiM2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-01T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-01T14:00:00+01:00"
+    },
+    "created": "2024-02-21T09:40:56.000Z",
+    "updated": "2024-02-21T09:40:56.662Z"
   },
   {
     "image_path": null,
