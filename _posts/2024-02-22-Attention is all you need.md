@@ -1,7 +1,7 @@
 ---
 layout: single        # 문서 형식
 title: 'Attention is all you need 리뷰'         # 제목
-categories: DL/NLP    # 카테고리
+categories: Natural Language Processing    # 카테고리
 toc: true             # 글 목차
 author_profiel: false # 홈페이지 프로필이 다른 페이지에도 뜨는지 여부
 sidebar:              # 페이지 왼쪽에 카테고리 지정
