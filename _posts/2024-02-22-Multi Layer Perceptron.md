@@ -12,6 +12,7 @@ sidebar:              # 페이지 왼쪽에 카테고리 지정
 # 1. Neuron
 ## In Biology
 전기적 및 화학적 신호를 통해 정보를 처리하고 전송하는 전기적으로 흥분시키는 세포. 뉴런 사이의 신호는 다른 세포와의 특별하게 연결된 시냅스에서 발생. 뉴런은 신경망을 형성할 수 있도록 상호 연결 가능.
+![11](https://github.com/SeokHwanHong/SeokHwanHong.github.io/assets/126441224/644bf9a8-fac8-4f39-91e6-f56a5191797d)
 
 # 2. Perceptron
 ## In 
