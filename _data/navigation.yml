@@ -5,14 +5,37 @@ main:
   - title: "Search"
     url: /search/
 docs:
-  - title: "Category1"
+  - title: "Statistics"
     children:
-      - title: "title1"
-        url: /categories/
-  - title: "Category2"
+      - title: "Definition"
+        url: /categories/stats/def
+      - title: "Stats1"
+        ulr: /categories/sats/stats1
+
+  - title: "Statistical Learning"
     children:
-      - title: "title2"
-        url: /categories/
+      - title: "Definition"
+        url: /categories/sl/def
+
+  - title: "Machine Learning"
+    children:
+      - title: "Definition"
+        url: /categories/ml/def    
+
+  - title: "Deep Learning"
+    children:
+      - title: "Definition"
+        url: /categories/dl/def/      
+    children:
+      - title: "NLP"
+        url: /categories/dl/nlp
+    children:
+      - title: "Segmentation"
+        url: /categories/dl/segmentation/
+  
+
+
+
 
 
 
