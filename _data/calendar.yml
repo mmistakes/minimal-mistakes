@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A3 - Eislaufbahn Glockenturm",
-    "title": "Ausflug A3 - Eislaufbahn Glockenturm",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXI2N292aWxxYzhodXNrYmZoZTVlbXFuNzggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-02-22T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-02-22T13:00:00+01:00"
-    },
-    "created": "2024-01-17T12:01:49.000Z",
-    "updated": "2024-01-23T08:30:06.182Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
-    "title": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWVlYTZkZGNoMGxwOGcwMXR0Z2tpMG1zZW0gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-02-22T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-02-22T13:30:00+01:00"
-    },
-    "created": "2024-01-23T08:37:33.000Z",
-    "updated": "2024-01-31T12:18:08.724Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A3 - Bibliothek Obstallee",
     "title": "Ausflug A3 - Bibliothek Obstallee",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-01-23T08:22:44.000Z",
     "updated": "2024-01-23T08:22:44.119Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. Fachkonferenz Mathe",
+    "title": "2. Fachkonferenz Mathe",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWYxNTBpb2hydWxvYTZsY21maTk5MDRyZjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-12T15:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-12T16:00:00+01:00"
+    },
+    "created": "2024-02-15T09:39:42.000Z",
+    "updated": "2024-02-15T09:39:42.399Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Fachkonferenz NaWi",
+    "title": "3. Fachkonferenz NaWi",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bnFvNWQyNjg3cXVlamVwbGtua3BoaGsxYjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-13T14:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-13T15:30:00+01:00"
+    },
+    "created": "2023-10-17T18:43:43.000Z",
+    "updated": "2023-10-17T18:43:43.025Z"
   }
 ]
