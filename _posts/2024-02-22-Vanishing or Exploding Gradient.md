@@ -1,6 +1,6 @@
 ---
 layout: single        # 문서 형식
-title: Fully Connected Layer         # 제목
+title: Skip Connection         # 제목
 categories: Deep Learning    # 카테고리
 toc: true             # 글 목차
 author_profiel: false # 홈페이지 프로필이 다른 페이지에도 뜨는지 여부
@@ -9,8 +9,7 @@ sidebar:              # 페이지 왼쪽에 카테고리 지정
 #search: false # 블로그 내 검색 비활성화
 ---
 
-# 1. 
-Definition
+# 1. Definition
 직역하면 "완전 연결 계층". 본 단어의 의미는 한 층(layer)의 모든 뉴런이 그 다음 층의 모든 뉴런과 연결된 상태를 의미.
 1차원 배열의 형태로 평탄화된 행렬을 통해 이미지를 분류하는데 사용하는 계층
 
