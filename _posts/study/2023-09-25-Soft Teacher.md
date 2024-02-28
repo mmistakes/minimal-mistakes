@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "End-to-End Semi-Supervised Object Detection with Soft Teacher"
+title: "Soft Teacher: End-to-End Semi-Supervised Object Detection with Soft Teacher"
 permalink: /studies/paper/Soft Teacher
 tags: [Paper, Vision AI]
 categories:
@@ -201,7 +201,7 @@ date: 2023-09-25
   - Table 11과 같이 지터링된 박스의 수인 $N_(jitter)$를 10으로 설정할 때 성능이 포화상태에 도달한다.
 
   <div align="center">
-  <img src="../../assets/images/2023-09-25-Soft Teacher/Table9.jpg" alt="Table_9" style="zoom:80%;"/>
+  <img src="../../assets/images/2023-09-25-Soft Teacher/Table9.jpg" alt="Table_9" style="zoom:80%;"/><br><br>
   <img src="../../assets/images/2023-09-25-Soft Teacher/Table10.jpg" alt="Table_10" style="zoom:72%;"/><br><br>
   <img src="../../assets/images/2023-09-25-Soft Teacher/Table11.jpg" alt="Table_11" style="zoom:80%;"/>
   </div>
