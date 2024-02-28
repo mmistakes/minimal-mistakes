@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "End-to-End Semi-Supervised Object Detection with Soft Teacher"
-permalink: /studies/paper/SoftTeacher
+permalink: /studies/paper/Soft Teacher
 tags: [Paper, Vision AI]
 categories:
   - 📄 paper
