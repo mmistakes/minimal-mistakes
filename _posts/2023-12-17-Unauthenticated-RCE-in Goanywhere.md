@@ -61,40 +61,36 @@ To investigate the  licenseResponseServlet class, we have to dive into the  lib 
 It was mentioned earlier that there is a bug in how the application handles licenses. Therefore, we need to dive![](Aspose.Words.e702ede5-81b5-45cd-8f8a-c0bd81f39ade.013.png)
 
 deep into the code to understand how the app handles licenses. in  LicenseResponseServlet we found this code
+public class LicenseResponseServlet extends HttpServlet {
 
-public class LicenseResponseServlet extends HttpServlet {  ![](Aspose.Words.e702ede5-81b5-45cd-8f8a-c0bd81f39ade.014.png)
+    private static final long serialVersionUID = -441307309120983773L;
+    private static final Logger LOGGER = LoggerFactory.getLogger(LicenseResponseServlet.class);
 
-`    `private static final long serialVersionUID = -441307309120983773L;  
+    public void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+        Response response = null;
 
-`    `private static final Logger LOGGER = LoggerFactory.getLogger(LicenseResponseServlet.class);  
+        try {
+            response = LicenseAPI.getResponse(httpServletRequest.getParameter("bundle"));
+        } catch (Exception e) {
+            LOGGER.error("Error parsing license response", e);
+            httpServletResponse.sendError((int) FtpReply.REPLY_500_SYNTAX_ERROR_COMMAND_UNRECOGNIZED);
+        }
 
-`    `public void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {  
+        httpServletRequest.getSession().setAttribute("LicenseResponse", response);
+        httpServletRequest.getSession().setAttribute(NavigationConstants.SESSION_GOTO_OUTCOME, NavigationConstants.ADMIN_LICENSE_OUTCOME);
 
-`        `Response response = null;  
+        httpServletResponse.sendRedirect(httpServletRequest.getScheme() + "://" +
+                httpServletRequest.getServerName() + IAMConstants.SEP +
+                httpServletRequest.getServerPort() + ProductInformation.PRODUCT_MAIN_CONTEXT_PATH +
+                AdminPageURL.LICENSE);
+    }
 
-`        `try {  
+    public void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {
+        doPost(httpServletRequest, httpServletResponse);
+    }
+}
 
-`            `response = LicenseAPI.getResponse(httpServletRequest.getParameter("bundle"));  
 
-`        `} catch (Exception e) {  
-
-`            `LOGGER.error("Error parsing license response", e);  
-
-`            `httpServletResponse.sendError((int) FtpReply.REPLY\_500\_SYNTAX\_ERROR\_COMMAND\_UNRECOGNIZED);  
-
-`        `}  
-
-`        `httpServletRequest.getSession().setAttribute("LicenseResponse", response);  
-
-`        `httpServletRequest.getSession().setAttribute(NavigationConstants.SESSION\_GOTO\_OUTCOME, NavigationConstants.ADMIN\_LICENSE\_OUTCOME);  
-
-`        `httpServletResponse.sendRedirect(httpServletRequest.getScheme() + "://" + httpServletRequest.getServerName() + IAMConstants.SEP + httpServletRequest.getServerPort() + ProductInformation.PRODUCT\_MAIN\_CONTEXT\_PATH + AdminPageURL.LICENSE);      }  
-
-`    `public void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {  
-
-`        `doPost(httpServletRequest, httpServletResponse);  
-
-`    `} 
 
 so here's the deal with this Java servlet code. It's handling web requests using  doPost and pulling in the
 
