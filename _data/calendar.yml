@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "Ausflug 5b - Bücherei",
+    "title": "Ausflug 5b - Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDlqcTJrMWFsNmVhcDlkcGhyMzgyN2tkcmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-04T08:20:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-04T12:35:00+01:00"
+    },
+    "created": "2024-02-27T11:22:09.000Z",
+    "updated": "2024-02-27T11:22:09.754Z"
+  },
+  {
+    "image_path": null,
     "alt": "Ausflug A6 - Bibliothek Spandau",
     "title": "Ausflug A6 - Bibliothek Spandau",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-02-15T09:39:42.000Z",
     "updated": "2024-02-15T09:39:42.399Z"
-  },
-  {
-    "image_path": null,
-    "alt": "3. Fachkonferenz NaWi",
-    "title": "3. Fachkonferenz NaWi",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bnFvNWQyNjg3cXVlamVwbGtua3BoaGsxYjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-13T14:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-13T15:30:00+01:00"
-    },
-    "created": "2023-10-17T18:43:43.000Z",
-    "updated": "2023-10-17T18:43:43.025Z"
   }
 ]
