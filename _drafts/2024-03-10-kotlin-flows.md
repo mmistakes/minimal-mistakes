@@ -106,9 +106,39 @@ val theMostRecentSpiderManFun: () -> Actor = { tomHolland }
 val theMostRecentSpiderMan: Flow<Actor> = theMostRecentSpiderManFun.asFlow()
 ```
 
-Under the hood, all the above flow factories are defined in term of the called flow builder, aka the `flow` function.
+Under the hood, all the above `Flow` factories are defined in terms of the so called flow builder, aka the `flow` function. The `flow` function is the most general way to create a flow. It takes a lambda that can emit values using the `emit` function. Let's make an example to clarify this concept. We want to create a flow that emits the actors that played in the "Spider Man" movies as main character. We can define the following flow:
+
+```kotlin
+val spiderMen: Flow<Actor> = flow {
+  emit(tobeyMaguire)
+  emit(andrewGarfield)
+  emit(tomHolland)
+}
+```
+
+Maybe, you're wondering from where the `emit` function comes from. Well, the lambda passed as parameter to the `flow` function defined as its receiver an instance of a functional interface called `FlowCollector`. The `FlowCollector` interface has a single method called `emit` that allows to emit a value. We'll see more about the `Flow` internals in the next sections. For now, it's enough to know that the `emit` function is used to emit a value within the `flow`.
+
+It's easy to define the previous factory methods in terms of the `flow` function. For example, the `flowOf` function is defined as follows:
+
+```kotlin
+// Kotlin Coroutines Library
+fun <T> flowOf(vararg values: T): Flow<T> = flow {
+    for (value in values) {
+        emit(value)
+    }
+}
+```
+
+However, since it's a reactive data structure, the values are in a flow are not computed until they are requested. A `Flow<T>` it's just a definition of how to compute the values, not the values themselves. This is a fundamental difference with collections, sequences, and iterables.
+
+Consuming a `Flow` it's quite straightforward. In fact, on the `Flow` type is defined one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda that is called for each value emitted by the flow.
 
 TODO
 
-However, since it's a reactive data structure, the values are in a flow are not computed until they are requested. 
+```kotlin
+// Kotlin Coroutines Library
+public interface Flow<out T> {
+    public suspend fun collect(collector: FlowCollector<T>)
+}
+```
 
