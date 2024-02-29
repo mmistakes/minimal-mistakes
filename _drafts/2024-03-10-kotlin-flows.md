@@ -146,7 +146,24 @@ val infiniteJLFlowActors: Flow<Actor> = flow {
 
 The flow `infiniteJLFlowActors` doesn't emit values during creation. If we put a print statement immediately after the flow definition, we will see the output.
 
-Consuming a `Flow` it's quite straightforward. In fact, on the `Flow` type is defined one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda that is called for each value emitted by the flow.
+Consuming a `Flow` it's quite straightforward. In fact, on the `Flow` type is defined one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda that is called for each value emitted by the flow. Say that we want to print the actors playing in the "Zack Snyder's Justice League" movie, we'll use the following code:
+
+```kotlin
+suspend fun main() {
+    val zackSnyderJusticeLeague: Flow<Actor> =
+        flowOf(
+            henryCavill,
+            galGodot,
+            ezraMiller,
+            benFisher,
+            rayHardy,
+            jasonMomoa
+        ) 
+    zackSnyderJusticeLeague.collect { println(it) }
+}
+```
+
+As the most of you would have noticed, we called the `collect` function from the `suspend main` function. In fact, the `collect` method is defined as a suspending function since it has to wait and suspend for consuming the emitted values without blocking a thread. Here is the definition of the `Flow` type:
 
 ```kotlin
 // Kotlin Coroutines Library
@@ -154,4 +171,7 @@ public interface Flow<out T> {
     public suspend fun collect(collector: FlowCollector<T>)
 }
 ```
+
+The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.  
+
 
