@@ -172,6 +172,33 @@ public interface Flow<out T> {
 }
 ```
 
-The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.  
+The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.
 
+It's important to notice that despite being a suspending function, the `collect` function is inherently synchronous. No new coroutine is started under the hood. Let's try to put a print statement immediately after the `collect` function of the previous flow:
 
+```kotlin
+suspend fun main() {
+    val zackSnyderJusticeLeague: Flow<Actor> =
+        flowOf(
+            henryCavill,
+            galGodot,
+            ezraMiller,
+            benFisher,
+            rayHardy,
+            jasonMomoa
+        ) 
+    zackSnyderJusticeLeague.collect { println(it) }
+    println("After Zack Snyder's Justice League")
+```
+
+We expect the program to print al the actors emitted by the flow and then the string "After Zack Snyder's Justice League". In fact, running the program produces the expected output:
+
+```
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastName=Hardy))
+Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
+After Zack Snyder's Justice League
+```
