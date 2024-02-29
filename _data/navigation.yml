@@ -20,6 +20,8 @@ sidebar-category:
         url: /categories/blog
       - title: 'React'
         url: /categories/react
+      - title: 'TypeScript'
+        url: /categories/typescript
       - title: 'Github'
         url: /categories/github
       - title: 'Node'
