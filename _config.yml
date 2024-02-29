@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "꿈을 찾아가는 중."
   location         : "Korea, Cheongju"
-  email            : "song_yong_woo@naver.com
+  email            : "song_yong_woo@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
