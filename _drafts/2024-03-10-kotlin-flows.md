@@ -129,11 +129,24 @@ fun <T> flowOf(vararg values: T): Flow<T> = flow {
 }
 ```
 
-However, since it's a reactive data structure, the values are in a flow are not computed until they are requested. A `Flow<T>` it's just a definition of how to compute the values, not the values themselves. This is a fundamental difference with collections, sequences, and iterables.
+Since it's a reactive data structure, the values in a flow are not computed until they are requested. A `Flow<T>` it's just a definition of how to compute the values, not the values themselves. This is a fundamental difference with collections, sequences, and iterables. In fact, we can define an infinite `Flow` quite easily:
+
+```kotlin
+val infiniteJLFlowActors: Flow<Actor> = flow {
+  while (true) {
+    emit(henryCavill)
+    emit(galGodot)
+    emit(ezraMiller)
+    emit(benFisher)
+    emit(rayHardy)
+    emit(jasonMomoa)
+  }
+}
+```
+
+The flow `infiniteJLFlowActors` doesn't emit values during creation. If we put a print statement immediately after the flow definition, we will see the output.
 
 Consuming a `Flow` it's quite straightforward. In fact, on the `Flow` type is defined one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda that is called for each value emitted by the flow.
-
-TODO
 
 ```kotlin
 // Kotlin Coroutines Library
