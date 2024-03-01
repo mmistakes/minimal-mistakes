@@ -1,11 +1,7 @@
 - GitLab
-- CircleCI
 - Subversion
 - Git
 - PHP
-- JavaScript
-- VueJS
-- TravisCI
 - GitHub
 - MySQL
 - PostgreSQL
@@ -13,14 +9,11 @@
 - Envoyer
 - Forge
 - Dusk
+- Cypress
 - Laravel
-- AWS
 - Agile
 - Scrum
-- Perl
 - Scripting
 - Linux
 - Docker
 - Jira
-- Trello
-- Redis

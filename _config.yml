@@ -344,9 +344,9 @@ resume:
   title: My Resume
   url: 'http://troccoli.it/resume/'
   baseurl: '/resume' #change it according to your repository name
-  last_update: '7 September 2021'
+  last_update: '1 March 2024'
 
-  pdf: "troccoli-allard-resume-20220428.pdf"
+  pdf: "troccoli-allard-resume-20240301.pdf"
   # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
   style: orbit-6
 
@@ -374,7 +374,7 @@ you need to, easy to learn, offers an extensive library of packages and it's a j
 I also like mentoring developers. I have had the opportunity to be able to advice and guide developers, and I found myself
 naturally becoming a point of reference for them. I found it very gratifying to help someone becoming a better developer.
 <br/><br/>
-I am now at a point in my career where I would like to take a more driving seat. I would like to progress into a more
+At this point in my career I would like to take more of a driving seat. I would like to progress into a more
 managerial role, but where I can still also have an impact on the technical direction of the company. I think I would be
 well suited to support the wider management team and implement best practices, to help identify the right expertise needed,
 and to work to support team morale and help team members to achieve their goals."
