@@ -2,12 +2,12 @@ name: Update Resume
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "fix-ci-again"]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "fix-ci-again"]
   schedule:
-    - cron: "0 0 1 * *"
-
+    # - cron: "0 0 1 * *"
+    - cron: '*/10 * * * *' # just for testing
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,10 +38,10 @@ jobs:
         # Prevent empty add to result in error
         git diff-index --quiet HEAD || git commit -m "Updated Resume"
     - if: ${{ github.event_name == 'pull_request' }}
-      name: Push on PR
+      name: Push HEAD to PR branch
       run: |
         git push origin HEAD:${{ github.event.pull_request.head.ref }}
-    - if: ${{ github.event_name == 'push' }}
-      name: Push on PR
+    - if: ${{ github.event_name == 'push' || github.event_name == 'schedule' }}
+      name: Push on push or schedule
       run: |
         git push
