@@ -38,7 +38,7 @@ site because of some style changes. I would recommend using Jekyll to serve the 
 If you prefer you could use docker to create a container which will build and serve your project.
 
 ```bash
-export JEKYLL_VERSION=4.2
+export JEKYLL_VERSION=4.2.2
 docker run --rm \
   --volume="$PWD:/srv/jekyll:Z" \
   -p 4000:4000 \
