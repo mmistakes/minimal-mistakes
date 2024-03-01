@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A3 - Bibliothek Obstallee",
-    "title": "Ausflug A3 - Bibliothek Obstallee",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDIxNmo3cmRycWE3YW5yb2YzaG52NzljNzAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-01T07:45:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-01T12:30:00+01:00"
-    },
-    "created": "2024-01-30T07:01:49.000Z",
-    "updated": "2024-01-30T07:01:49.537Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A9 - Schlittschuhbahn Glockenturm",
-    "title": "Ausflug A9 - Schlittschuhbahn Glockenturm",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDRyMGRydHNtdmZwaGFqN2U0a2xtcTlicHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-01T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-01T13:00:00+01:00"
-    },
-    "created": "2024-01-31T12:14:47.000Z",
-    "updated": "2024-01-31T12:14:47.720Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A4 - Science Center Spectrum",
-    "title": "Ausflug A4 - Science Center Spectrum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzJsYXJsYWhxaG52ZDg2ZDRtbGxubjNiM2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-01T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-01T14:00:00+01:00"
-    },
-    "created": "2024-02-21T09:40:56.000Z",
-    "updated": "2024-02-21T09:40:56.662Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 5b - Bücherei",
     "title": "Ausflug 5b - Bücherei",
     "excerpt": null,
@@ -86,6 +35,23 @@
   },
   {
     "image_path": null,
+    "alt": "Ausflug A3 - Bibliothek Obstallee",
+    "title": "Ausflug A3 - Bibliothek Obstallee",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDIxNmo3cmRycWE3YW5yb2YzaG52NzljNzAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-07T07:45:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-07T12:30:00+01:00"
+    },
+    "created": "2024-01-30T07:01:49.000Z",
+    "updated": "2024-02-29T06:13:11.587Z"
+  },
+  {
+    "image_path": null,
     "alt": "2. Fachkonferenz Mathe",
     "title": "2. Fachkonferenz Mathe",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-02-15T09:39:42.000Z",
     "updated": "2024-02-15T09:39:42.399Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Fachkonferenz NaWi",
+    "title": "3. Fachkonferenz NaWi",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bnFvNWQyNjg3cXVlamVwbGtua3BoaGsxYjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-13T14:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-13T15:30:00+01:00"
+    },
+    "created": "2023-10-17T18:43:43.000Z",
+    "updated": "2023-10-17T18:43:43.025Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. GEV",
+    "title": "3. GEV",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Z284bzE5cThxcTA1Nzdtcm41YmcybXVpMzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-14T18:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-14T19:30:00+01:00"
+    },
+    "created": "2023-12-01T04:55:50.000Z",
+    "updated": "2023-12-01T04:55:50.166Z"
   }
 ]
