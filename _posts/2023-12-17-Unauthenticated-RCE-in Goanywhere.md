@@ -1,6 +1,6 @@
 ﻿**Introduction![](Aspose.Words.e702ede5-81b5-45cd-8f8a-c0bd81f39ade.001.png)**
 
-CVE-2023-0669 is an insecure deserialization vulnerability that leads to code execution in the system (RCE). It has been discovered in GoAnywhere MFT versions 7.1.1 for Windows and 7.0.3 for Linux, which are utilized as secure file transfer solutions to carry out automated file transfer activities securely. This bug has been deemed highly dangerous and potentially a zero-day vulnerability as some organizations have left the Admin
+CVE-2023-0669 is an insecure deserialization vulnerability that leads to code execution in the system (RCE). It has been discovered in GoAnywhere MFT versions 7.1.1 for Windows and 7.0.3 for Linux, which are utilized as secure file transfer solutions for automated file transfer activities. This bug has been deemed highly dangerous and potentially a zero-day vulnerability as some organizations have left the Admin
 
 portal exposed to the internet.
 
@@ -10,7 +10,7 @@ based on [Shodan.io (IoT](https://www.shodan.io/) search engine) It appears that
 
 **Building our Testing Lab![](Aspose.Words.e702ede5-81b5-45cd-8f8a-c0bd81f39ade.003.png)**
 
-1. let's first install the app in our operation system  note the app support serval operations systems because it's depends on java installation ,run the app and check if it work by visiting the  localhost and it's by default run on![](Aspose.Words.e702ede5-81b5-45cd-8f8a-c0bd81f39ade.004.png)
+1. let's first install the app in our operation system  note the app supports serval operations systems because it depends on java installation, run the app and check if it works by visiting the  localhost and it's by default run on![](Aspose.Words.e702ede5-81b5-45cd-8f8a-c0bd81f39ade.004.png)
 
 port 8000
 
