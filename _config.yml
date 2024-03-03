@@ -1,0 +1,50 @@
+title: yosef0x1's Blog
+url: https://yosef0x01.github.io
+author: Youssef Muhammad
+description: |
+  <p style="text-align: center;">Hackthebox Write ups && CTF and some Research Stuff.</p>
+
+show_excerpts: true # set to true to show excerpts on the homepage
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/yosef0x1
+      icon: twitter-square
+      color: cyan
+    - url:  https://www.linkedin.com/in/yosef0x1
+      icon: linkedin
+      color: red
+#    - url: https://www.twitch.tv/bitbrain_
+#      icon: twitch
+#      color: purple
+#    - url: https://www.youtube.com/
+#      icon: youtube
+#      color: red
+    - url: https://github.com/yosef0x01
+      icon: github-square
+      color: red
+      
+  avatar_source: local
+  avatar_path: /public/avatar.jpg
+
+# Build settings
+theme: jekyll-dash
+
+plugins:
+  - liquid-md5
+  - jekyll/tagging
+
+
