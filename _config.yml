@@ -105,9 +105,9 @@ analytics:
 # Site Author
 author:
   name             : "Song YongWoo"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "꿈을 찾아가는 중."
-  location         : "Korea, Cheongju"
+  avatar           : # path of avatar image,South Korea e.g. "/assets/images/bio-photo.jpg"
+  bio              : "기술 기록 블로그입니다."
+  location         : "Cheongju, South Korea"
   email            : "song_yong_woo@naver.com"
   links:
     - label: "Email"
