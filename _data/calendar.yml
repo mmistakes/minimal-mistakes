@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 5b - Bücherei",
-    "title": "Ausflug 5b - Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDlqcTJrMWFsNmVhcDlkcGhyMzgyN2tkcmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-04T08:20:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-04T12:35:00+01:00"
-    },
-    "created": "2024-02-27T11:22:09.000Z",
-    "updated": "2024-02-27T11:22:09.754Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A6 - Bibliothek Spandau",
     "title": "Ausflug A6 - Bibliothek Spandau",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-12-01T04:55:50.000Z",
     "updated": "2023-12-01T04:55:50.166Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Schlittschuhbahn Glockenturm",
+    "title": "Ausflug A9 - Schlittschuhbahn Glockenturm",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDRyMGRydHNtdmZwaGFqN2U0a2xtcTlicHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-03-15T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-03-15T13:00:00+01:00"
+    },
+    "created": "2024-01-31T12:14:47.000Z",
+    "updated": "2024-02-29T06:12:56.709Z"
   }
 ]
