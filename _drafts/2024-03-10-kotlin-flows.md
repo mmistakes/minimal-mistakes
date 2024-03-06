@@ -68,7 +68,7 @@ val andrewGarfield: Actor = Actor(Id(14), FirstName("Andrew"), LastName("Garfiel
 
 We have defined the actors playing in the movies "Zack Snyder's Justice League", "The Avengers", and the various reboot of "Spider Man". Now, we can start to play with Kotlin flows.
 
-## 2. Creating Flows
+## 2. Flows Basics
 
 What is a flow in Kotlin? A `Flow<T>` is a reactive data structure that emits a sequence of values of type `T`. Flows are part of the Kotlin coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. In fact we can create a flow from a finite list of values using the `flowOf` function:
 
@@ -205,7 +205,37 @@ After Zack Snyder's Justice League
 
 We'll see in the following sections how to use the power of coroutines together with flows to perform asynchronous operations.
 
-## 3. How Flows Work
+## 3. Working with Flows
+
+As you may guess, working with flows doesn't reduce to create and consume them. In fact, we can transform them, filter them, and combine them and access to all the steps of their life cycle. 
+
+Flows are very similar to collections in terms of the API available for transforming them. In fact, we can map, filter, and reduce them. Let's start with transforming the values emitted by a flow. We can use the `map` function. For example, we can get out of an `Actor` who played in the Justice League movie only it lastname:
+
+```kotlin
+val lastNameOfJLActors: Flow<LastName> = zackSnyderJusticeLeague.map { it.lastName }
+```
+
+Easy peasy. We can now filter this new flow retaining only the actors whose last name counts 5 characters:
+
+```kotlin
+val lastNameOfJLActors5CharsLong: Flow<LastName> =
+    lastNameOfJLActors.filter { it.lastName.length == 5 }
+```
+
+We should also try to map and filter in the same step. In fact, flows provide the `mapNotNull` function that applies a transformation that can create `null` values and then filters out those `null` values:
+
+```kotlin
+val lastNameOfJLActors5CharsLong_v2: Flow<LastName> =
+    zackSnyderJusticeLeague.mapNotNull {
+      if (it.lastName.lastName.length == 5) {
+        it.lastName
+      } else {
+        null
+      }
+    }
+```
+
+## X. How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
 
@@ -328,7 +358,7 @@ interface Flow<T> {
     suspend fun collect(collector: FlowCollector<T>)
 }
 
-fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow =
+fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow<T> =
     object : Flow<T> {
         override suspend fun collect(collector: FlowCollector<T>) {
             builder(collector)
