@@ -7,4 +7,3 @@ title:  "첫 포스팅 입니다. 설레네요."
 
 앞으로 열심히 해보겠습니다.
 
-<img src="../images/2024-01-13-1st-posting/다운로드 (13).jpg" alt="다운로드 (13)" style="zoom:25%;" />
