@@ -30,6 +30,7 @@ Obsidian을 통해서 작성하고 md 파일만 올리면 되겠다 싶었다.
 ```
 
 ![GitHub-blog-08](../images/2024-03-06-GitHub-blog-2st/GitHub-blog-08.png)
+
 이 파일 구조가 맘에 들었기 때문에 이 방법을 찾기 위해서 알아보다가
 Typora 라는 편집기를 알게 되었다.
 
