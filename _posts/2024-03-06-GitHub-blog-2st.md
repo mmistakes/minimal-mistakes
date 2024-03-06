@@ -28,3 +28,10 @@ Obsidian을 통해서 작성하고 md 파일만 올리면 되겠다 싶었다.
 ```
 ![GitHub-blog-06](Yoon-Beom.github.io/images/2024-03-05-GitHub-blog-1st/GitHub-blog-06.png)
 ```
+
+![GitHub-blog-08](../images/2024-03-06-GitHub-blog-2st/GitHub-blog-08.png)
+이 파일 구조가 맘에 들었기 때문에 이 방법을 찾기 위해서 알아보다가
+Typora 라는 편집기를 알게 되었다.
+
+그래서 내가 생각한 방법은 Obsidian으로 블로그의 글을 작성하고
+사진 첨부할때 Typora를 사용하고 GitHub Desktop을 이용해 커밋하는 것이다.
