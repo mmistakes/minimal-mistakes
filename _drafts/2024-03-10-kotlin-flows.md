@@ -235,6 +235,34 @@ val lastNameOfJLActors5CharsLong_v2: Flow<LastName> =
     }
 ```
 
+The above functions, `map` and `filter`, and many others, are expressed internally as a combination of the `flow` builder function and the `collect` terminal operation. For example, we can define the `map` function as follows:
+
+```kotlin
+fun <T, R> Flow<T>.map(transform: suspend (value: T) -> R): Flow<R> =
+    flow {
+        this@map.collect { value ->
+            emit(transform(value))
+        }
+    }
+```
+
+The implementation we found in the library has some differences indeed, but the concept is the same. We're creating a new flow collecting the values of the original flow and emitting the transformation to them. If you think about the above implementation is quite elegant. since it's straightforward to understand and read. The same is for the `filter` function:
+
+```kotlin
+fun <T> Flow<T>.filter(predicate: suspend (value: T) -> Boolean): Flow<T> =
+    flow {
+        this@filter.collect { value ->
+            if (predicate(value)) {
+                emit(value)
+            }
+        }
+    }
+```
+
+Smooth.
+
+TODO()
+
 ## X. How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
