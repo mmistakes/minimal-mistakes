@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A6 - Bibliothek Spandau",
-    "title": "Ausflug A6 - Bibliothek Spandau",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzJzOWVqM3Rpc2k1OGw4OXR1czEwbzBudWEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-06T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-06T13:30:00+01:00"
-    },
-    "created": "2024-01-23T08:22:44.000Z",
-    "updated": "2024-01-23T08:22:44.119Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A3 - Bibliothek Obstallee",
     "title": "Ausflug A3 - Bibliothek Obstallee",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-31T12:14:47.000Z",
     "updated": "2024-02-29T06:12:56.709Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Fachkonferenz Jül ",
+    "title": "3. Fachkonferenz Jül ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGlsdnRvamNuNWZsZmc5ZDBuOTVnZHJpZjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-09T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-09T16:30:00+02:00"
+    },
+    "created": "2023-09-27T08:49:26.000Z",
+    "updated": "2023-09-27T08:49:26.165Z"
   }
 ]
