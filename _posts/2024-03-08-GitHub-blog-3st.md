@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "깃허브(GitHub) 블로그 03 : 카테고리와 태그 넣기"
-# categories: blog
+categories: blog
 tags:
   - Github
   - Blog
