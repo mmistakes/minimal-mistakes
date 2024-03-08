@@ -1,7 +1,7 @@
 ---
-tiile: "Category"
-layout: categories
-permalink: /categories/
+tiile: Tag
+layout: tags
+permalink: /tags/
 author_profile: true
 sidebar_main: true
 ---

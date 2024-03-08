@@ -238,7 +238,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
+  
 
 # Archives
 #  Type

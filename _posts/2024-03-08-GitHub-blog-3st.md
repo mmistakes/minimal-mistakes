@@ -1,13 +1,13 @@
 ---
 layout: single
 title: "깃허브(GitHub) 블로그 03 : 카테고리와 태그 넣기"
-categories: blog
+# categories: blog
 tags:
   - Github
   - Blog
 ---
 ### Minimall Mistakes 테마 가이드
-https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing
+<a href="https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing">https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing</a>
 
 ![GitHub-blog-09](../images/2024-03-08-GitHub-blog-3st/GitHub-blog-09.png)
 
@@ -18,14 +18,13 @@ https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-
 
 ![GitHub-blog-11](../images/2024-03-08-GitHub-blog-3st/GitHub-blog-11.png)
 
-- 밑의 주석 처리 된 코드들도 풀어준다.
+- 밑의 주석 처리 된 코드들도 풀어준다. line 260 ~ 269
 
 - Visual Studio Code 주석 처리 단축키는 Ctrl + K + C / 주석 해제 단축키는 Ctrl + K + U 이다.
 
 - _page 파일을 만들고 그안에 category-archive.md와 tag-archive.md 파일을 만든다.
 
   ![GitHub-blog-12](../images/2024-03-08-GitHub-blog-3st/GitHub-blog-12.png)
-
 
 - category-archive.md 파일 안에 아래의 코드를 입력한다.
 ```category-archive.md
@@ -37,7 +36,22 @@ author_profile: true
 sidebar_main: true
 ---
 ```
+```tag-archive.md
+---
+tiile: "Tag"
+layout: tags
+permalink: /tags/
+author_profile: true
+sidebar_main: true
+---
+```
 
 - _data 폴더 안의 navigation.yml 파일은 아래와 같이 수정한다.
 
-![GitHub-blog-13](../images/2024-03-08-GitHub-blog-3st/GitHub-blog-13.png)
+```
+main:
+ - title: "Category"
+   url: /categories/
+ - title: "Tag"
+   url: /tags/
+```
