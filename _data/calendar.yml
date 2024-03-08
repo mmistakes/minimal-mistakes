@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A3 - Bibliothek Obstallee",
-    "title": "Ausflug A3 - Bibliothek Obstallee",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDIxNmo3cmRycWE3YW5yb2YzaG52NzljNzAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-07T07:45:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-07T12:30:00+01:00"
-    },
-    "created": "2024-01-30T07:01:49.000Z",
-    "updated": "2024-02-29T06:13:11.587Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Fachkonferenz Mathe",
     "title": "2. Fachkonferenz Mathe",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-09-27T08:49:26.000Z",
     "updated": "2023-09-27T08:49:26.165Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Bibliothek Spandau",
+    "title": "Ausflug A9 - Bibliothek Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2U0NnFqbnY4NHQ3ZGxpNW9zZXNtOGRib2UgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-11T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-11T13:00:00+02:00"
+    },
+    "created": "2024-01-31T12:15:39.000Z",
+    "updated": "2024-01-31T12:15:39.063Z"
   }
 ]
