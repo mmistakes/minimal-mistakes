@@ -282,9 +282,146 @@ public fun <T> Flow<T>.launchIn(scope: CoroutineScope): Job = scope.launch {
 
 However, you might have noticed that we subtly introduced a new flow function, the `onEach` function. We'll delve in functions controlling the lifecycle of flows in a minute, but we can say that the `onEach` function is used to apply a lambda to each value emitted by the flow, and it's used in combination with the call the of `collect` function without parameters.
 
-Every suspending function must have a coroutine context and suspending lambdas used as input to flows function are no exception. In fact, a flow use internally the context of the coroutine that calls the `collect` function. TODO 
+Every suspending function must have a coroutine context and suspending lambdas used as input to flows function are no exception. In fact, a flow uses internally the context of the coroutine that calls the `collect` function. Let's make an example and rewrite the previous code using the `withContext` function to change the context:
 
 ```kotlin
+withContext(CoroutineName("Main")) {
+    coroutineScope {
+        val delayedJusticeLeague: Flow<Actor> =
+            flow {
+                println("${currentCoroutineContext()[CoroutineName]?.name} - In the flow")
+                delay(1000)
+                emit(henryCavill)
+                delay(1000)
+                emit(galGodot)
+                delay(1000)
+                emit(ezraMiller)
+                delay(1000)
+                emit(benFisher)
+                delay(1000)
+                emit(rayHardy)
+                delay(1000)
+                emit(jasonMomoa)
+            }
+        println(
+            "${currentCoroutineContext()[CoroutineName]?.name} - Before Zack Snyder's Justice Leag
+        )
+        withContext(CoroutineName("Zack Snyder's Justice League")) {
+            delayedJusticeLeague.collect { println(it) }
+        }
+        println(
+            "${currentCoroutineContext()[CoroutineName]?.name} - After Zack Snyder's Justice Leagu
+        )
+    }
+}
+```
+
+As we can see, we set the most external coroutine context to "Main" and we surround the call to the `collect` function with a new context called "Zack Snyder's Justice League". The output of the program is:
+
+```
+Main - Before Zack Snyder's Justice League
+Zack Snyder's Justice League - In the flow
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastName=Hardy))
+Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
+Main - After Zack Snyder's Justice League
+```
+
+We effectively changed the context of the coroutine that emits the values of the flow. Whereas, if we don't change the context, the context of the coroutine that emits the values of the flow is the same as the context of main coroutine:
+
+```kotlin
+withContext(CoroutineName("Main")) {
+    coroutineScope {
+        val delayedJusticeLeague: Flow<Actor> =
+            flow {
+                println("${currentCoroutineContext()[CoroutineName]?.name} - In the flow")
+                delay(1000)
+                emit(henryCavill)
+                delay(1000)
+                emit(galGodot)
+                delay(1000)
+                emit(ezraMiller)
+                delay(1000)
+                emit(benFisher)
+                delay(1000)
+                emit(rayHardy)
+                delay(1000)
+                emit(jasonMomoa)
+            }
+        println(
+            "${currentCoroutineContext()[CoroutineName]?.name} - Before Zack Snyder's Justice League",
+        )
+        delayedJusticeLeague.collect { println(it) }
+        println(
+            "${currentCoroutineContext()[CoroutineName]?.name} - After Zack Snyder's Justice League",
+        )
+    }
+}
+```
+
+The following output states that the main context is passed to the lambda of the `collect` function.
+
+Changing the context of the coroutine that executes the flow is so quite common that the Kotlin coroutines library provides a dedicated function to do that: the `flowOn` function. The `flowOn` function is used to change the context of the coroutine that emits the values of the flow. Let's rewrite out example using the `flowOn` function:
+
+```kotlin
+withContext(CoroutineName("Main")) {
+    coroutineScope {
+        val delayedJusticeLeague: Flow<Actor> =
+            flow {
+                println("${currentCoroutineContext()[CoroutineName]?.name} - In the flow")
+                delay(1000)
+                emit(henryCavill)
+                delay(1000)
+                emit(galGodot)
+                delay(1000)
+                emit(ezraMiller)
+                delay(1000)
+                emit(benFisher)
+                delay(1000)
+                emit(rayHardy)
+                delay(1000)
+                emit(jasonMomoa)
+            }
+        println(
+            "${currentCoroutineContext()[CoroutineName]?.name} - Before Zack Snyder's Justice League",
+        )
+        delayedJusticeLeague.flowOn(CoroutineName("Zack Snyder's Justice League")).collect {
+            println(it)
+        }
+        println(
+            "${currentCoroutineContext()[CoroutineName]?.name} - After Zack Snyder's Justice League",
+        )
+    }
+}
+```
+
+We can use the `flowOn` function also to change the dispatcher used to execute the flow. If it performs I/O operations, such as calling an external API or wrinting/reading to/from a database, we can change the dispatcher to `Dispatchers.IO`. We can create a repository interface to mimic the I/O operations:
+
+```kotlin
+interface ActorRepository {
+    suspend fun findJLAActors(): Flow<Actor>
+}
+```
+
+Then, we can execute the retrieval of the actors playing in the "Zack Snyder's Justice League" movie using the `Dispatchers.IO` dispatcher through the `flowOn` function:
+
+```kotlin
+val actorRepository: ActorRepository =
+    object : ActorRepository {
+        override suspend fun findJLAActors(): Flow<Actor> =
+            flowOf(
+                henryCavill,
+                galGodot,
+                ezraMiller,
+                benFisher,
+                rayHardy,
+                jasonMomoa,
+            )
+    }
+actorRepository.findJLAActors().flowOn(Dispatchers.IO).collect { actor -> println(actor) }
 ```
 
 ## 4. Working with Flows
