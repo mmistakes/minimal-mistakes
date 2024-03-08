@@ -4,6 +4,7 @@ title: "깃허브(GitHub) 블로그 05 : 이미지 경로 오류"
 tags:
   - Github
   - Blog
+toc: true
 ---
 ### 이미지 경로 오류
 카테고리 기능을 추가하고 결과를 확인 하는데 이미지가 안 읽어와서 또 무슨 오류인가 싶었다.
@@ -30,8 +31,8 @@ https://yoon-beom.github.io/blog/GitHub-blog-1st/
 
 ![GitHub-blog-15](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-15.png)
 
-## 카테고리 적용 후 경로
+### 카테고리 적용 후 경로
 
 ![GitHub-blog-16](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-16.png)
 
-- 여기서 카테고리 적용 하는 게시글은 ../../ 로 쓰면 이미지가 읽히지만 그렇게 되면 편집기에서는 사진이 안읽힌다는 문제가 있다.
+- 여기서 카테고리 적용 하는 게시글은 ../../ 로 쓰면 블로그에서 이미지가 읽히지만 그렇게 되면 편집기에서는 이미지가 안 읽힌다는 문제가 있다.

@@ -5,6 +5,7 @@ categories: blog
 tags:
   - Github
   - Blog
+toc: true
 ---
 ### Minimall Mistakes 테마 가이드
 <a href="https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing">https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing</a>

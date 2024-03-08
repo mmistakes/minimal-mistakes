@@ -5,6 +5,7 @@ categories: blog
 tags:
   - Github
   - Blog
+toc: true
 ---
 ### 블로그를 확인하려고 서버를 실행 시켰는데 오류가 나타났다.
 
@@ -35,3 +36,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 Jekyll을 이용하여 만든 github blog를 로컬에서 실행 시 발생하는 오류
 이 오류는 처음 블로그 세팅 할 때 (jekyll new ~ 등의 명령어로 초기화 할 때) 넣지 않은 플러그인을 후에 _config.yml 파일에 추가함으로써 생기는 오류이다.
+

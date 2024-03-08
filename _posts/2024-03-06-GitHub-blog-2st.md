@@ -5,6 +5,7 @@ categories: blog
 tags:
   - Github
   - Blog
+toc: true
 ---
 ### 내가 사용하는 편집기
 - Obsidian
