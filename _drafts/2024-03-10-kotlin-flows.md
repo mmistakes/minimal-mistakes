@@ -174,6 +174,9 @@ public interface Flow<out T> {
 
 The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.
 
+
+## 3. Flows and Coroutines
+
 It's important to notice that despite being a suspending function, the `collect` function is inherently synchronous. No new coroutine is started under the hood. Let's try to put a print statement immediately after the `collect` function of the previous flow:
 
 ```kotlin
@@ -186,14 +189,16 @@ suspend fun main() {
             benFisher,
             rayHardy,
             jasonMomoa
-        ) 
+        )
+    println("Before Zack Snyder's Justice League")
     zackSnyderJusticeLeague.collect { println(it) }
     println("After Zack Snyder's Justice League")
 ```
 
-We expect the program to print al the actors emitted by the flow and then the string "After Zack Snyder's Justice League". In fact, running the program produces the expected output:
+We expect the program to print all the actors emitted by the flow and then the string "After Zack Snyder's Justice League". In fact, running the program produces the expected output:
 
 ```
+Before Zack Snyder's Justice League
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
 Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
@@ -203,9 +208,86 @@ Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastN
 After Zack Snyder's Justice League
 ```
 
-We'll see in the following sections how to use the power of coroutines together with flows to perform asynchronous operations.
+If we want to kick in asynchronous behavior, we need to use the `launch` function from the `CoroutineScope` interface. Let's add a delay between the emission of the actors and the print statement:
 
-## 3. Working with Flows
+```kotlin
+coroutineScope {
+    val delayedJusticeLeague: Flow<Actor> =
+        flow {
+            delay(1000)
+            emit(henryCavill)
+            delay(1000)
+            emit(galGodot)
+            delay(1000)
+            emit(ezraMiller)
+            delay(1000)
+            emit(benFisher)
+            delay(1000)
+            emit(rayHardy)
+            delay(1000)
+            emit(jasonMomoa)
+        }
+    println("Before Zack Snyder's Justice League")
+    launch { delayedJusticeLeague.collect { println(it) } }
+    println("After Zack Snyder's Justice League")
+}
+```
+
+Now, the flow is collected inside a dedicated coroutine spawned by the `launch` coroutine builder (if you want to deep dive into the coroutines world, please refer to the article [Kotlin Coroutines - A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/)). Now, the program will not wait for the whole collection of the flow to complete before printing the string "After Zack Snyder's Justice League". In fact, the output of the program is:
+
+```
+Before Zack Snyder's Justice League
+After Zack Snyder's Justice League
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastName=Hardy))
+Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
+```
+
+Executing the collection of the values of a flow in a separate coroutine is such a common pattern that the Kotlin coroutines library provides a dedicated function to do that: the `launchIn` function:
+
+```kotlin
+coroutineScope {
+    val delayedJusticeLeague: Flow<Actor> =
+        flow {
+            delay(1000)
+            emit(henryCavill)
+            delay(1000)
+            emit(galGodot)
+            delay(1000)
+            emit(ezraMiller)
+            delay(1000)
+            emit(benFisher)
+            delay(1000)
+            emit(rayHardy)
+            delay(1000)
+            emit(jasonMomoa)
+        }
+    println("Before Zack Snyder's Justice League")
+    delayedJusticeLeague.onEach { println(it) }.launchIn(this)
+    println("After Zack Snyder's Justice League")
+}
+```
+
+The above code will produce the same output as the previous one. The `launchIn` implementation is straightforward:
+
+```kotlin
+// Kotlin Coroutines Library
+public fun <T> Flow<T>.launchIn(scope: CoroutineScope): Job = scope.launch {
+    collect()
+}
+```
+
+However, you might have noticed that we subtly introduced a new flow function, the `onEach` function. We'll delve in functions controlling the lifecycle of flows in a minute, but we can say that the `onEach` function is used to apply a lambda to each value emitted by the flow, and it's used in combination with the call the of `collect` function without parameters.
+
+Every suspending function must have a coroutine context and suspending lambdas used as input to flows function are no exception. In fact, a flow use internally the context of the coroutine that calls the `collect` function. TODO 
+
+```kotlin
+```
+
+## 4. Working with Flows
 
 As you may guess, working with flows doesn't reduce to create and consume them. In fact, we can transform them, filter them, and combine them and access to all the steps of their life cycle. 
 
