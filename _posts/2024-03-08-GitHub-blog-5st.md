@@ -36,3 +36,9 @@ https://yoon-beom.github.io/blog/GitHub-blog-1st/
 ![GitHub-blog-16](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-16.png)
 
 - 여기서 카테고리 적용 하는 게시글은 ../../ 로 쓰면 블로그에서 이미지가 읽히지만 그렇게 되면 편집기에서는 이미지가 안 읽힌다는 문제가 있다.
+
+### github 블로그에서 본 오류
+- 카테고리를 적용하지 않은 게시물의 이미지 경우 상대 경로가 절대경로로 잘 바뀌였다.
+![GitHub-blog-17](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-17.png)
+- 카테고리를 적용한 게시물의 이미지 경우 아직 상대 경로로 지정되어 있다.
+![GitHub-blog-18](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-18.png)
