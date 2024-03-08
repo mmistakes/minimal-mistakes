@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image,South Korea e.g. "/assets/images/bio-photo.jpg"
   bio              : "기술 기록 블로그입니다."
   location         : "Cheongju, South Korea"
-  email            : "song_yong_woo@naver.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
