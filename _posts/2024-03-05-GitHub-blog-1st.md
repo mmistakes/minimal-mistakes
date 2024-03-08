@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "깃허브(GitHub) 블로그 01 : 시작하기"
+categories: blog
 tags:
   - Github
   - Blog

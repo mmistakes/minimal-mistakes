@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "깃허브(GitHub) 블로그 02 : 이미지 넣기"
+categories: blog
 tags:
   - Github
   - Blog
