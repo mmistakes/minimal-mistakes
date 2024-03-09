@@ -18,14 +18,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Rock the JVM Blog"
 title_separator          : "-"
-subtitle                 : Articles on Scala, Akka, Apache Spark and more
+subtitle                 : Articles on Scala, Kotlin, software and more
 name                     : "Rock the JVM"
 description              : "Blog about Scala, functional programming, distributed systems (Akka), big data (Apache Spark) and the JVM."
 url                      : "https://blog.rockthejvm.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/fiery-lava 128x128.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Daniel Ciocîrlan"
   avatar           : "/images/bio-photo.jpg"
-  bio              : "I'm a software engineer and the founder of Rock the JVM. I teach Scala, Java, Akka and Apache Spark both live and in online courses."
+  bio              : "I'm a software engineer and the founder of Rock the JVM. I teach Scala, Kotlin, Java, big data and a variety of tech both live and in online courses."
   location         : "Bucharest, Romania"
   email            : "daniel@rockthejvm.com"
   links:
