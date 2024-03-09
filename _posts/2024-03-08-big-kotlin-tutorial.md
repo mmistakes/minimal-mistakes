@@ -17,7 +17,7 @@ Needless to say, Kotlin is going to be a force.
 
 Regardless of what kind of software you need to build, Kotlin has got you covered. For your career as a software engineer, it's a no-brainer to at least get a taste of what Kotlin can offer, so that you know where you stand. 
 
-This is your guide. In about the time it takes to watch a movie, you'll get a clear sense of what Kotlin is, what it's not, and what you can do with it. We will cover
+This is your guide. In about the time it takes to watch a movie[^time] you'll get a clear sense of what Kotlin is, what it's not, and what you can do with it. We will cover
 
 - Kotlin basics
 - OOP features of Kotlin
@@ -30,6 +30,8 @@ This guide is for developers with some experience with some other language, and 
 I also made a video version of this guide as a YouTube playlist which you can watch [here](https://www.youtube.com/playlist?list=PLmtsMNDRU0BwGCBDIKKQNLYycRTnQzMfp).
 
 > If you go through this guide saying "hmm, Kotlin looks cool", I encourage you to go _deep_. For that, I think you'll like [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed, long-form, hands-on course where you'll write not hundreds but _thousands_ of lines of code from scratch in dozens of examples and exercises, including an _image processing project_ that you can use for your own pictures.
+
+[^time]: Don't be fooled by the estimated "read time". If you can go through this guide at 200 words per minute as this blog is usually set up to estimate, then you're either a genius or a Kotlin expert already. My advice: take about 2-3x the estimated time here, to understand the code examples as well.
 
 ## 2. Getting Started
 
