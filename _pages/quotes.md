@@ -170,6 +170,9 @@ Categories are just for order and are continuously updated the more quotes are a
 > It is easy out of laziness, out of weakness, to throw oneself into the lap of deity, saying, 'I couldn't help it; the way was set.' But think of the glory of the choice! That makes a man a man.<br>
 -- J Steinbeck, "East of Eden"
 
+> All good things are wild and free.<br>
+-- H J Thoreau, "Walking" (lecture)
+
 ## Inequality
 
 > The problem with borders, I was beginning to realize, isn't that they are monstrous, offensive and unnatural constructions. The problem with borders is the same as the problem with evil that Hannah Arendt identified: their banality. We subconsciously accept them as part of the landscape - at least those of us privileged by them, granted meaningful passports - because they articulate our deepest, least exalted desire, for prestige and permanence, order and security, always at the cost of someone or something else.<br>
