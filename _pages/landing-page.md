@@ -17,13 +17,13 @@ intro:
   - excerpt: 'Making the power of quantum computing accessible'
 
 feature_row:
-  - image_path: /assets/images/access-only-icon.jpg
+  - image_path: /assets/images/access-icon.png
     title: "How to get access"
     excerpt: "Access to FiQCI is granted through the CSC supercomputing environment"
     url: "/access"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/books-icon.jpg
+  - image_path: /assets/images/posts-icon.jpg
     title: "Posts and publications"
     excerpt: "Blog posts, publications, and other material of interest"
     url: "/publications"
