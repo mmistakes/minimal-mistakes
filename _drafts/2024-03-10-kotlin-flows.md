@@ -398,7 +398,7 @@ withContext(CoroutineName("Main")) {
 }
 ```
 
-We can use the `flowOn` function also to change the dispatcher used to execute the flow. If it performs I/O operations, such as calling an external API or wrinting/reading to/from a database, we can change the dispatcher to `Dispatchers.IO`. We can create a repository interface to mimic the I/O operations:
+We can use the `flowOn` function also to change the dispatcher used to execute the flow. If it performs I/O operations, such as calling an external API or writing/reading to/from a database, we can change the dispatcher to `Dispatchers.IO`. We can create a repository interface to mimic the I/O operations:
 
 ```kotlin
 interface ActorRepository {
@@ -480,7 +480,36 @@ fun <T> Flow<T>.filter(predicate: suspend (value: T) -> Boolean): Flow<T> =
 
 Smooth.
 
+Usually, the third operation we find on collections/sequences after the `map` and the `filter` functions is the `fold` function. As you might guess, the `fold` function is used to reduce the values of a flow to a single value. It's a final operation, like the `collect` function, which means it suspends the current coroutine until the flow ends to emit values. It requires an initial value used to accumulate the final result. In out case we can use the `fold` function to count the number of actors playing in the "Zack Snyder's Justice League" movie. The initial value in our example is the number `0`, the unit value for the sum operation on integers:
+
+```kotlin
+val numberOfJlaActors: Int =
+      zackSnyderJusticeLeague.fold(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
+```
+
+Also for the `fold` function, its implementation if very straightforward. It simply accumulates the results of the accumulation into a local variable using the value emitted by the flow through the `collect` function:
+
+```kotlin
+// Kotlin Coroutines Library
+public suspend inline fun <T, R> Flow<T>.fold(
+    initial: R,
+    crossinline operation: suspend (acc: R, value: T) -> R
+): R {
+    var accumulator = initial
+    collect { value ->
+        accumulator = operation(accumulator, value)
+    }
+    return accumulator
+}
+```
+
+TODO `count`
+
+As you might guess, the `fold` function doesn't work well with infinite flows. In fact, the library gives us a dedicated function for infinite flows, the `scan` function. It works like `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. For sake of completeness, we can count all the actors emitted in the `infiniteJLFlowActors` flow. We can add a delay of 1 second to make the code more spicy:
+
+```kotlin
 TODO()
+```
 
 ## X. How Flows Work
 
