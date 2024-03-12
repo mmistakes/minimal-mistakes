@@ -2,6 +2,7 @@
 layout: single
 title: "깃허브 블로그 만들기"
 categories: blahblah
+tag: blog
 ---
 
 # 0. 서문
