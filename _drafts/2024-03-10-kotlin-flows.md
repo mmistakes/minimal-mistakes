@@ -553,6 +553,22 @@ public fun <T, R> Flow<T>.scan(initial: R, operation: suspend (accumulator: R, v
 }
 ```
 
+When dealing with infinite flows, we can always try to get the first _n_ elements of the flow and then stop the collection. The `take` function is used to do that. For example, we can get the first 3 actors playing in the "Zack Snyder's Justice League" movie:
+
+```kotlin
+infiniteJLFlowActors.take(3) 
+```
+
+The `take` function is a transformation, which means it returns a new flow just like `map` or `filter`. If the original flow was infinite, the new flow will be finite.
+
+The `drop` function makes the opposite operation. It skips the first _n_ elements of the flow and then emits the remaining ones. For example, we can skip the first 3 actors playing in the "Zack Snyder's Justice League" movie:
+
+```kotlin
+infiniteJLFlowActors.drop(3) 
+```
+
+Clearly, dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
+
 ## X. How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
