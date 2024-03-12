@@ -503,12 +503,54 @@ public suspend inline fun <T, R> Flow<T>.fold(
 }
 ```
 
-TODO `count`
-
-As you might guess, the `fold` function doesn't work well with infinite flows. In fact, the library gives us a dedicated function for infinite flows, the `scan` function. It works like `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. For sake of completeness, we can count all the actors emitted in the `infiniteJLFlowActors` flow. We can add a delay of 1 second to make the code more spicy:
+To be fair, there is a dedicated function called `count` to count the number of elements of a finite flow. It's a terminal operation either and it returns the number of elements emitted by the flow. Then, the previous example can be rewritten as follows:
 
 ```kotlin
-TODO()
+val numberOfJlaActors_v2: Int = zackSnyderJusticeLeague.count()
+```
+
+As you might guess, the `fold` and the `count` functions doesn't work well with infinite flows. In fact, the library gives us a dedicated function for infinite flows, the `scan` function. It works like `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. Unlike the `fold` function, the `scan` function is not a terminal operation.
+
+For sake of completeness, let's emit a value that represents the number of actors emitted by the `infiniteJLFlowActors` flow at every value emission. We can add a delay of 1 second to make the code more spicy:
+
+```kotlin
+infiniteJLFlowActors
+    .onEach { delay(1000) }
+    .scan(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
+    .collect { println(it) }
+
+```
+
+The output of the program is:
+
+```
+0
+(1 sec.)
+1
+(1 sec.)
+2
+(1 sec.)
+3
+(1 sec.)
+4
+(1 sec.)
+5
+(1 sec.)
+...
+```
+
+As for the previous functions we saw, the implementation of `scan` is quite elegant and straightforward:
+
+```kotlin
+// Kotlin Coroutines Library
+public fun <T, R> Flow<T>.scan(initial: R, operation: suspend (accumulator: R, value: T) -> R): Flow<R> = flow {
+    var accumulator: R = initial
+    emit(accumulator)
+    collect { value ->
+        accumulator = operation(accumulator, value)
+        emit(accumulator)
+    }
+}
 ```
 
 ## X. How Flows Work
