@@ -3,7 +3,6 @@ layout: single
 title: "깃허브 블로그 만들기"
 categories: blahblah
 tag: blog
-author_profile: false
 ---
 
 # 0. 서문
