@@ -68,7 +68,7 @@ An artificial neuron can be thought of, in its bare bones, as a entity that take
 </figure>
 
 $$f$$ is known as the *activation function* and it can vary depending on the type of neuron one is building - we will see a very simple version in the following section.
-Before getting passed to the activation function, inputs are added up, so effectively the output is given by $$f(x_1 + x_2 + \ldots + x_n)$$.
+Before getting passed to the activation function, inputs are added up, so effectively the output is given by $$f(x_1 + x_2 + \cdots + x_n)$$.
 
 ### The McCulloch-Pitts unit
 
@@ -88,7 +88,7 @@ which mathematically writes as
 
 $$
 f(x) = \begin{cases}
-  1  & x >= t \\
+  1  & x \geq t \\
   0 & x < t
 \end{cases}
 $$
