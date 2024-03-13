@@ -2,7 +2,7 @@
 title: "About Me"
 collection: pages
 type: "Page"
-permalink: /about
+permalink: /about/
 ---
 
 ### Career
