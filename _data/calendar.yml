@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. Fachkonferenz Mathe",
-    "title": "2. Fachkonferenz Mathe",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWYxNTBpb2hydWxvYTZsY21maTk5MDRyZjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-12T15:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-12T16:00:00+01:00"
-    },
-    "created": "2024-02-15T09:39:42.000Z",
-    "updated": "2024-02-15T09:39:42.399Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. Fachkonferenz NaWi",
     "title": "3. Fachkonferenz NaWi",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-01-31T12:15:39.000Z",
     "updated": "2024-01-31T12:15:39.063Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz",
+    "title": "3. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjE2aHM3dDRmOHQ2MHU3ZHE4ajA1YzhhMmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-11T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-11T17:00:00+02:00"
+    },
+    "created": "2023-12-01T04:55:37.000Z",
+    "updated": "2023-12-01T04:55:37.202Z"
   }
 ]
