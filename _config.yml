@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "우성욱"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "TodayILearned"
+  bio              : "TodayILearned" 
   location         : "Seoul, Korea"
   email            : "rubywoo215@gmail.com"
   links:
