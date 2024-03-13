@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "SEONGWOOK WOO"
+  name             : "우성욱"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "TodayILearned"
+  location         : "Seoul, Korea"
+  email            : "rubywoo215@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
