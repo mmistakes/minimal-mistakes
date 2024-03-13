@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Angela's Dev log 🤖"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Seongwook Woo"
+name                     : "Seongwook Woo" 
 description              : "An amazing website."
 url                      : "https://angelawoo215.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
