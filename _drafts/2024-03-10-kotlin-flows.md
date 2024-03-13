@@ -174,6 +174,59 @@ public interface Flow<out T> {
 
 The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.
 
+## X. Flows Lifecycle
+
+The Kotlin coroutines library provides a set of functions to control the lifecycle of a flow. Barely, we can add an hook function for flow creation, for each emitted element, and for the completion of the flow. 
+
+The `onStart` function lets us adding operations to be executed when the flow is started. We pass a lambda to the `onStart` function. A good question is: When a flow is started? A flow is started when a terminal operation is called on it. We've seen the `collect` function as terminal operation so far. The lambda of the `onStart` function is executed immediately after the terminal operation. It doesn't wait the first element to be emitted. Let's make an example. We want to print a message when the flow is started. Also, we want to simulate some latency in the emission of the values.
+
+```kotlin
+val spiderMenWithLatency: Flow<Actor> = flow {
+    delay(1000)
+    emit(tobeyMaguire)
+    emit(andrewGarfield)
+    emit(tomHolland)
+}
+spiderMenWithLatency
+    .onStart { println("Starting Spider Men flow") }
+    .collect { println(it) }
+```
+
+What do we expect from the program? We expect the program to print the message "Starting Spider Men flow" immediately and then, after 1 second, the actors playing. Indeed, the output of the program is exactly what we expect:
+
+```
+Starting Spider Men flow
+(1 sec.)
+Actor(id=Id(id=13), firstName=FirstName(firstName=Tobey), lastName=LastName(lastName=Maguire))
+Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(lastName=Garfield))
+Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
+```
+
+Let's see the definition of the `onStart` function:
+
+```kotlin
+// Kotlin Coroutines Library
+public fun <T> Flow<T>.onStart(
+    action: suspend FlowCollector<T>.() -> Unit
+): Flow<T>
+```
+
+First, we see that the `onStart` function is an extension function defined on a `Flow<T>` receiver. However, the interesting thing is that the `action` lambda has a `FlowCollector<T>` as receiver, which means that we can emit values inside it. As an example, we can add the emission of Paul Robert Soles, the actor who played the voice of the Spider Man in the 1967 animated series, in the `onStart` function:
+
+```kotlin
+spiderMenWithLatency
+    .onStart { emit(Actor(Id(15), FirstName("Paul"), LastName("Soles"))) }
+    .collect { println(it) }
+```
+
+The output of the program will add the actor Paul Robert Soles to the list of the actors playing:
+
+```
+Actor(id=Id(id=15), firstName=FirstName(firstName=Paul), lastName=LastName(lastName=Soles))
+Actor(id=Id(id=13), firstName=FirstName(firstName=Tobey), lastName=LastName(lastName=Maguire))
+Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(lastName=Garfield))
+Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
+```
 
 ## 3. Flows and Coroutines
 
