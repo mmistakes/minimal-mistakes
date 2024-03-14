@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "3. Fachkonferenz NaWi",
-    "title": "3. Fachkonferenz NaWi",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bnFvNWQyNjg3cXVlamVwbGtua3BoaGsxYjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-13T14:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-13T15:30:00+01:00"
-    },
-    "created": "2023-10-17T18:43:43.000Z",
-    "updated": "2023-10-17T18:43:43.025Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. GEV",
     "title": "3. GEV",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-12-01T04:55:37.000Z",
     "updated": "2023-12-01T04:55:37.202Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Fotograf 6. Klassen",
+    "title": "Fotograf 6. Klassen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGFtYzE2NDM3bXUybWFsMjZlZ2M1aWU5OGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-04-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-04-25",
+      "date_time": null
+    },
+    "created": "2023-06-30T11:12:09.000Z",
+    "updated": "2023-06-30T11:12:09.866Z"
   }
 ]
