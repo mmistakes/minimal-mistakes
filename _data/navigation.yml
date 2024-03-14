@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "About"
+  - title: "About Me"
     url: /about/
-  - title: "Posts"
-    url: /year-archive/
-  - title: "Misc"
-    url: /misc/
   - title: "Publications"
     url: /publications/
+  # - title: "Posts"
+  #   url: /year-archive/
+  # - title: "Misc"
+  #   url: /misc/

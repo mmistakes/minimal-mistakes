@@ -26,6 +26,7 @@ My research interests include the following:
 
 ### Hobbies
 Outside of my research work, I like to play music, read, run, draw, and more.
+
 This year (2023), I ran my first ever 10K with a time of 0:50:28 and played my first ever live musical performance (on guitar and bass).
 
 Currently reading (Jan 2024):
