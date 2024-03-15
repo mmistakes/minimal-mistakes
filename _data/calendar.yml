@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "3. GEV",
-    "title": "3. GEV",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Z284bzE5cThxcTA1Nzdtcm41YmcybXVpMzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-14T18:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-14T19:30:00+01:00"
-    },
-    "created": "2023-12-01T04:55:50.000Z",
-    "updated": "2023-12-01T04:55:50.166Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A9 - Schlittschuhbahn Glockenturm",
     "title": "Ausflug A9 - Schlittschuhbahn Glockenturm",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-06-30T11:12:09.000Z",
     "updated": "2023-06-30T11:12:09.866Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A4 - ZAK (Zitadelle)",
+    "title": "Ausflug A4 - ZAK (Zitadelle)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjRsMjBtMDJocHZnMGs5dXEwMm1zNjdvZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-24T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-24T13:30:00+02:00"
+    },
+    "created": "2024-02-21T09:41:48.000Z",
+    "updated": "2024-02-21T09:41:48.857Z"
   }
 ]
