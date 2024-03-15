@@ -107,7 +107,7 @@ author:
   name             : "Anthony Gacayan"
   avatar           : "/assets/images/profpic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "blog for my writeups, projects and research"
-  location         : "Earth"
+  location         : "California, US"
   email            :
   links:
     - label: "Email"
@@ -117,10 +117,10 @@ author:
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/anthony-gacayan-80890491/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-github"
       url: "https://github.com/cybersekyu"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
