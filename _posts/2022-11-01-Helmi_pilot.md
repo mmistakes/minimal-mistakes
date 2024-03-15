@@ -16,8 +16,6 @@ tags:
 
 <!-- # Open Call for pilot projects for access to the Helmi quantum computer -->
 
-Update 19 Sep 2023: The pilot phase is expected to run until 31 October 2023. 
-{: .notice--info}
 
 *Pilot access to the Helmi quantum computer is now open for users from Finnish higher-education 
 institutions and research institutes. Helmi, the Finnish quantum computer operated by VTT is 
