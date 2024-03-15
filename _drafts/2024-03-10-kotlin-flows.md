@@ -249,6 +249,67 @@ spiderMen.onEach {
 
 To be fair, the above approach is quite common in the Kotlin community since it produces code that is more close to the use of other collections in Kotlin.
 
+Finally, we can add some behavior at the end of the flow, after all its values have been emitted. We can use the `onCompletion` function to add a lambda to be executed when the flow is completed. Again, the lambda passed to the function has a `FlowCollector<T>` as receiver, so we can emit additional value at the end of the flow execution. For example, we can use the `onCompletion` function to print a message when the flow is completed:
+
+```kotlin
+spiderMen
+    .onEach {
+      println(it)
+    }
+    .onCompletion { println("End of the Spider Men flow") }
+    .collect()
+```
+
+Nothing new under the sun. The above code will produce the following output when executed:
+
+```
+Actor(id=Id(id=13), firstName=FirstName(firstName=Tobey), lastName=LastName(lastName=Maguire))
+Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(lastName=Garfield))
+Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
+End of the Spider Men flow
+```
+
+What if during the execution of the flow an exception is thrown? Let's see what the library does for us in the next section.
+
+## X. Flows Error Handling
+
+If something can possibly go wrong, it will. Flows execution is no exception. In fact, the Kotlin coroutines library provides a set of functions to handle errors during the execution of a flow.
+
+The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's quite uncommon to build intentionally flows that don't emit anything. The Kotlin coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function a good candidate to emit some default value for an empty flow:
+
+```kotlin
+val actorsEmptyFlow =
+    flow<Actor> { delay(1000) }
+        .onEmpty {
+            println("The flow is empty, adding some actors")
+            emit(henryCavill)
+            emit(benAffleck)
+        }
+        .collect { println(it) } 
+```
+
+The output of the program doesn't surprise us:
+
+```
+(1 sec.)
+The flow is empty, adding some actors
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
+```
+
+It's possible to create an empty flow also using a dedicated builder, called `emptyFlow`. The `emptyFlow` function returns a flow that doesn't emit any value. We can rewrite the above example using the `emptyFlow` function as follows:
+
+```kotlin
+val actorsEmptyFlow_v2 =
+    emptyFlow<Actor>()
+        .onStart { delay(1000) }
+        .onEmpty {
+            println("The flow is empty, adding some actors")
+            emit(henryCavill)
+            emit(benAffleck)
+        }
+        .collect { println(it) }
+```
 
 ## 3. Flows and Coroutines
 
