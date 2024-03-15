@@ -228,6 +228,28 @@ Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(las
 Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
 ```
 
+On the other hand, the `onEach` function is used to apply a lambda to each value emitted by the flow. The function has the same characteristics of the `onStart` function, which means it accept a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` let us emit new values inside the lambda.
+
+Let's say we want to add a delay of one second between the emission of each actors playing the Spider Man role. We can use the `onEach` function to add the delay:
+
+```kotlin
+spiderMen
+    .onEach { delay(1000) }
+    .collect { println(it) }
+```
+
+As you may guess, we can use the `onEach` function as a surrogate of the `collect` function. In fact, we can pass to the lambda we would have passed to the `collect` function to the `onEach` function. At this point, calling `collect` will trigger the effective execution of the flow. For example, we can rewrite the previous example as follows:
+
+```kotlin
+spiderMen.onEach { 
+    delay(1000)
+    println(it)
+}.collect()
+```
+
+To be fair, the above approach is quite common in the Kotlin community since it produces code that is more close to the use of other collections in Kotlin.
+
+
 ## 3. Flows and Coroutines
 
 It's important to notice that despite being a suspending function, the `collect` function is inherently synchronous. No new coroutine is started under the hood. Let's try to put a print statement immediately after the `collect` function of the previous flow:
