@@ -228,7 +228,7 @@ Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(las
 Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
 ```
 
-On the other hand, the `onEach` function is used to apply a lambda to each value emitted by the flow. The function has the same characteristics of the `onStart` function, which means it accept a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` let us emit new values inside the lambda.
+On the other hand, the `onEach` function is used to apply a lambda to each value emitted by the flow. The function has the same features of the `onStart` function, which means it accept a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` let us emit new values inside the lambda.
 
 Let's say we want to add a delay of one second between the emission of each actors playing the Spider Man role. We can use the `onEach` function to add the delay:
 
@@ -309,6 +309,139 @@ val actorsEmptyFlow_v2 =
             emit(benAffleck)
         }
         .collect { println(it) }
+```
+
+Another common case is when and exceptions raises during the execution of a flow. First, let's see what happens if we don't use any recovering mechanism. Our example will print the actors playing Sprider Men, but during the emission of the actors we'll throw an exception:
+
+```kotlin
+val spiderMenActorsFlowWithException =
+    flow {
+        emit(tobeyMaguire)
+        emit(andrewGarfield)
+        throw RuntimeException("An exception occurred")
+        emit(tomHolland)
+    }
+    .onStart { println("The Spider Men flow is starting") }
+    .onCompletion { println("The Spider Men flow is completed") }
+    .collect { println(it) }
+```
+
+If we execute the program, we'll see the following output:
+
+```
+The Spider Men flow is starting
+Actor(id=Id(id=13), firstName=FirstName(firstName=Tobey), lastName=LastName(lastName=Maguire))
+Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(lastName=Garfield))
+The Spider Men flow is completed
+Exception in thread "main" java.lang.RuntimeException: An exception occurred
+...
+```
+
+What can we see from the above output? First, that an exception in the flow execution breaks it and avoid the emission of the values after the exception. To be fair, the coroutine executing the suspending lambda function passed to the `collect` function is cancelled by the exception (see next sections for further details) that will bubble up to the context that called the `collect` function. Second, that the `onCompletion` function is called even if an exception is thrown during the execution of the flow. So, the `onCompletion` function is called when the flow is completed, no matter if an exception is thrown or not. We can think about it as a `finally` block.
+
+Can we catch the exception in some way and recover from it? Yep, we can. The library provides a `catch` method that we can chain to the flow to handle exceptions. The `catch` function is defined as follows:
+
+```
+// Kotlin Coroutines Library
+public fun <T> Flow<T>.catch(action: suspend FlowCollector<T>.(cause: Throwable) -> Unit): Flow<T>
+```
+
+It takes a lambda that is called when an exception is thrown during the execution of the flow. The lambda has a `Throwable` as input, so we can inspect the exception and decide what to do. We can also emit a value since the lambda has the `FlowCollector<T>` as the receiver.
+
+We can now change the previous example to catch the exception and emit a default value:
+
+```kotlin
+val spiderMenActorsFlowWithException_v3 =
+        flow {
+            emit(tobeyMaguire)
+            emit(andrewGarfield)
+            throw RuntimeException("An exception occurred")
+            emit(tomHolland)
+        }
+        .catch { ex -> emit(tomHolland) }
+        .onStart { println("The Spider Men flow is starting") }
+        .onCompletion { println("The Spider Men flow is completed") }
+        .collect { println(it) }
+```
+
+The `catch` function will intercept the `RuntimeException` and will emit the `tomHolland` actor value. The output of the program will be:
+
+```
+The Spider Men flow is starting
+Actor(id=Id(id=13), firstName=FirstName(firstName=Tobey), lastName=LastName(lastName=Maguire))
+Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(lastName=Garfield))
+Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
+The Spider Men flow is completed
+```
+
+So far so good. Another important feature of the `catch` function is that it catches all the exceptions thrown during the executions of the transformations chained to the flow before it. Let's make an example. The following code will throw an exception that will be easily handled by the `catch` function:
+
+```kotlin
+val spiderMenNames =
+    flow {
+        emit(tobeyMaguire)
+        emit(andrewGarfield)
+        emit(tomHolland)
+    }
+    .map {
+        if (it.firstName == FirstName("Tom")) {
+            throw RuntimeException("Ooops")
+        } else {
+            "${it.firstName.firstName} ${it.lastName.lastName}"
+        }
+    }.catch { ex -> emit("Tom Holland") }
+    .map { it.uppercase(Locale.getDefault()) }
+    .collect { println(it) }
+```
+
+The execution of the above flow will produce the expected output:
+
+```
+TOBEY MAGUIRE
+ANDREW GARFIELD
+TOM HOLLAND
+```
+
+What will happen if the move the throwing of the exception after the `catch` function? Let's see:
+
+```kotlin
+val spiderMenNames =
+    flow {
+          emit(tobeyMaguire)
+          emit(andrewGarfield)
+          emit(tomHolland)
+        }
+    .map { "${it.firstName.firstName} ${it.lastName.lastName}" }
+    .catch { ex -> emit("Tom Holland") }
+    .map {
+        if (it == "Tom Holland") {
+            throw RuntimeException("Oooops")
+        } else {
+            it.uppercase(Locale.getDefault())
+        }
+    }
+    .collect { println(it) }
+```
+
+Nothing will catch the exception thrown by the second `map` function, and the flow will be cancelled and the exception will bubble up. IN fact, the output of the program is the following:
+
+```
+TOBEY MAGUIRE
+ANDREW GARFIELD
+Exception in thread "main" java.lang.RuntimeException: Oooops
+...
+```
+
+So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, the `catch` function can't never catch the exceptions thrown by the `collect` function since it's the terminal operation of the flow: 
+
+```kotlin
+TODO
+```
+
+The only way we have to prevent this case is to move the `collect` logic into a dedicated `onEach` function, and put a `catch` in the chain after the `onEach` function. We can rewrite the above example as follows:
+
+```kotlin
+TODO
 ```
 
 ## 3. Flows and Coroutines
