@@ -6,9 +6,11 @@ typora-root-url: ../
 
  <br>
 
->  ### While 루프
+> ### While 루프
 >
 > <span style="font-size:85%">조건이 참일때 실행</span>
+
+
 
 
 
