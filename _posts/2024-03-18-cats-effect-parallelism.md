@@ -1,10 +1,10 @@
 ---
 title: "Functional Parallel Programming in the wild"
-date: 2024-01-26
+date: 2024-03-18
 header:
     image: "/images/blog cover.jpg"
-tags: [scala,http4s,cats,fp,parallelism,fibers,github-api,cats-effect]
-excerpt: "Speeding up the parallel processing power with the help of Scala & cats-effect fibers"
+tags: [scala,http4s,cats,fp,parallelism,github-api,cats-effect]
+excerpt: "A hands-on guide to speeding up the parallel processing power with the help of Scala & cats-effect fibers."
 ---
 
 _by [Anzori (Nika) Ghurtchumelia](https://github.com/ghurtchu)_
