@@ -838,6 +838,61 @@ infiniteJLFlowActors.drop(3)
 
 Clearly, dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
 
+## Z. Racing Flows
+
+In the previous sections we focused on working with one flow. However, flows are a very nice data structure to work with concurrency. The first operation we'll analyzed is the `merge` function. It lets us run two flows concurrently, collecting the results in a single flow as they are produced. Neither of the two streams waits for the other to emit a value. For example, let's merge the JLA flow and the Avenger flow:
+
+```kotlin
+val zackSnyderJusticeLeague: Flow<Actor> =
+    flowOf(
+        henryCavill,
+        galGodot,
+        ezraMiller,
+        benFisher,
+        benAffleck,
+        jasonMomoa,
+    ).onEach { delay(400) }
+
+val avengers: Flow<Actor> =
+    flowOf(
+        robertDowneyJr,
+        chrisEvans,
+        markRuffalo,
+        chrisHemsworth,
+        scarlettJohansson,
+        jeremyRenner,
+    ).onEach { delay(200) }
+
+merge(zackSnyderJusticeLeague, avengers).collect{ println(it) }
+```
+
+The execution of the program will produce the following output:
+
+```
+Actor(id=Id(id=6), firstName=FirstName(firstName=Robert), lastName=LastName(lastName=Downey Jr.))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=7), firstName=FirstName(firstName=Chris), lastName=LastName(lastName=Evans))
+Actor(id=Id(id=8), firstName=FirstName(firstName=Mark), lastName=LastName(lastName=Ruffalo))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=9), firstName=FirstName(firstName=Chris), lastName=LastName(lastName=Hemsworth))
+Actor(id=Id(id=10), firstName=FirstName(firstName=Scarlett), lastName=LastName(lastName=Johansson))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=11), firstName=FirstName(firstName=Jeremy), lastName=LastName(lastName=Renner))
+Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
+Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
+```
+
+As we may expect, the flow contains an actor of the JLA more or less every two actors of the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the flow. In fact, the execution halts when both flow have finished emitting all their values.
+
+The `merge` function is the first transformation we see that is not defined as an extension function of the `Flow` type. In fact, it's defined as a top-level function in the `Kotlinx.coroutines.flow` package. The `merge` function is defined as follows:
+
+```kotlin
+public fun <T> merge(vararg flows: Flow<T>): Flow<T>
+```
+
+As we can see, it receives an array of flows as input. So, we can merge and race the execution of more than two flows.
+
 ## X. How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
