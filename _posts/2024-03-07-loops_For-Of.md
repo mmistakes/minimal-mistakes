@@ -63,7 +63,7 @@ for ( 변수 of 반복가능한 객체) {
 
 <span style="font-size:80%"> => for 반복문은 기존의 변수를 변경하는 반면, <span style="color:green">for..of 반복문은 모든 반복에 대해 새롭게 생성되는 변수이기 때문에 **const** 사용 가능</span></span>
 
-<span style="font-size:80%; color:orangered">=> 배열에서의 반복은 값 하나 하나 따로 저장</span>
+<span style="font-size:80%; color:orangered">=> 배열에서의 반복은 값 하나 하나 따로 출력</span>
 
 
 
@@ -75,7 +75,7 @@ for ( 변수 of 반복가능한 객체) {
 
 <img src="/images/2024--03-07-loops_array/image-20240310154939326.png" alt="image-20240310154939326" style="zoom:50%;" />
 
-<span style="font-size:80%; color:orangered">=> 문자열에서의 반복은 철자 하나 하나씩 따로 저장</span>
+<span style="font-size:80%; color:orangered">=> 문자열에서의 반복은 철자 하나 하나씩 따로 출력</span>
 
 <br><br>
 
