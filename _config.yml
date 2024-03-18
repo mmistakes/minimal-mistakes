@@ -21,9 +21,9 @@ title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kim Bogyeom"
 description              : "공부한 것을 정리하고 복습하는 곳"
-url                      : "https://bogyeom.github.io"
+url                      : "https://bogamie.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : Bogamie/bogyeom.github.io
+repository               : Bogamie/bogamie.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/Bogamie/bogyeom.github.io"
+      url: "https://github.com/Bogamie/bogamie.github.io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/Bogamie/bogyeom.github.io
+      url: https://github.com/Bogamie/bogamie.github.io
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
