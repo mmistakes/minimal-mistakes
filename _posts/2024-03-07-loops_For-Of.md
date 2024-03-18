@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[자바스크립트_개념정리] 루프"
+title: "[자바스크립트_개념정리] For..of / For..in 루프"
 typora-root-url: ../
 ---
 

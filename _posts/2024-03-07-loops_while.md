@@ -10,6 +10,8 @@ typora-root-url: ../
 >
 > <span style="font-size:85%">조건이 참일때 실행</span>
 
+
+
 <br>
 
 <span style="font-size:85%"><span style="color:orangered">반복 횟수가 정해져 있지 않을 때</span> 유용하며 사용자 입력 값을 포함할 수 있다</span>
@@ -76,11 +78,9 @@ while ( 조건 ) {
 
 <br><br>
 
-
+<br>
 
 #### break 정지 키워드
-
-<br>
 
 <span style="font-size:80%">반복문을 종료시킨다</span>
 
