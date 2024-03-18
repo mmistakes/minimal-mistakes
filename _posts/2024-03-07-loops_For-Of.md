@@ -8,12 +8,6 @@ typora-root-url: ../
 
 
 
-## LOOPS   루프
-
-​	어떤 기능을 반복 수행하는 것
-
-​	
-
 
 
 <br>
