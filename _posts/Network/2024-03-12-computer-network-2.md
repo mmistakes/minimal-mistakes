@@ -1,5 +1,5 @@
 ---
-title: "네트워크 구성요소"
+title: "1.2 네트워크의 가장자리"
 excerpt: "컴퓨터 네트워크 구성요소에 대하여 더 자세히 알아보자."
 categories: ['Computer Network']
 tags:
@@ -8,6 +8,7 @@ tags:
 
 toc: true
 toc_sticky: true
+use_math: true
 
 date: 2024-03-12
 last_modified_at: 2024-03-12
