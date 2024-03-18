@@ -9,7 +9,7 @@ toc: true
 ---
 ### 블로그를 확인하려고 서버를 실행 시켰는데 오류가 나타났다.
 
-![GitHub-blog-14](../images/2024-03-08-GitHub-blog-4st/GitHub-blog-14.png)
+![GitHub-blog-14]({{site.url}}/images/2024-03-08-GitHub-blog-4st/GitHub-blog-4st-01.png)
 
 의존성 에러라고 하는데 가이드를 다시 살펴 보면서 빠트린 게 있는지 확인했다.
 

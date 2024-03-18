@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "깃허브(GitHub) 블로그 05 : 이미지 경로 오류"
+categories: blog
 tags:
   - Github
   - Blog
@@ -29,16 +30,22 @@ https://yoon-beom.github.io/blog/GitHub-blog-1st/
 
 ### 카테고리 적용 전 경로
 
-![GitHub-blog-15](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-15.png)
+![GitHub-blog-15]({{site.url}}/images/2024-03-08-GitHub-blog-5st/GitHub-blog-5st-01.png)
 
 ### 카테고리 적용 후 경로
 
-![GitHub-blog-16](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-16.png)
+![GitHub-blog-16]({{site.url}}/images/2024-03-08-GitHub-blog-5st/GitHub-blog-5st-02.png)
 
-- 여기서 카테고리 적용 하는 게시글은 ../../ 로 쓰면 블로그에서 이미지가 읽히지만 그렇게 되면 편집기에서는 이미지가 안 읽힌다는 문제가 있다.
+### 해결책
+- 이미지 경로에 ../ 를 ../../ 로 쓰는 방법이 있다. 
+- ../ 를 \{\{site.url\}\}로 변경하여 쓰는 방법이 있다.
+위의 방법을 쓰면 편집기에서는 이미지가 로딩이 안된다는 불편한 점이 있다.
 
-### github 블로그에서 본 오류
-- 카테고리를 적용하지 않은 게시물의 이미지 경우 상대 경로가 절대경로로 잘 바뀌였다.
-![GitHub-blog-17](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-17.png)
-- 카테고리를 적용한 게시물의 이미지 경우 아직 상대 경로로 지정되어 있다.
-![GitHub-blog-18](../images/2024-03-08-GitHub-blog-5st/GitHub-blog-18.png)
+```
+../images/2024-03-08-GitHub-blog-5st/GitHub-blog-5st-02.png
+```
+이런 상대경로를
+```
+Yoon-Beom.github.io/images/2024-03-08-GitHub-blog-5st/GitHub-blog-5st-02.png
+```
+이런 형식으로 바꿔주는 기능은 없는 듯 하다.
