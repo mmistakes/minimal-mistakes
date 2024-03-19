@@ -25,7 +25,7 @@
   $unit: unit($value);
 
   @if $unit == 'px' {
-    @return $value / 16px * 1em;
+    @return calc($value / 16px) * 1em;
   }
   @else if $unit == '%' {
     @return $value / 100% * 1em;
