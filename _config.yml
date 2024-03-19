@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Yun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**Yun**의 블로그 입니다.."
+  bio              : "Yun의 블로그 입니다."
   location         : "South Korea"
   email            :
   links:
