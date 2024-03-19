@@ -893,6 +893,93 @@ public fun <T> merge(vararg flows: Flow<T>): Flow<T>
 
 As we can see, it receives an array of flows as input. So, we can merge and race the execution of more than two flows.
 
+Sometimes, we need to work with pairs of emitted value coming from both the flows. Imagine a scenario where we want to retrieve for an actor his/her biography and filmography. The two information is retrieved from different services and we want to get them concurrently and proceed in the execution only when both are available. The `zip` function is used to do that. 
+
+First, we define a flow retrieving the biography of Henry Cavill:
+
+```kotlin
+val henryCavillBio =
+    flow {
+        delay(1000)
+        val biography =
+            """
+      Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown dependency 
+      in the Channel Islands. His mother, Marianne (Dalgliesh), a housewife, was also born on Jersey, 
+      and is of Irish, Scottish and English ancestry...
+    """.trimIndent()
+        emit(biography)
+    }
+```
+
+We delay the emission of the biography to simulate the time needed to retrieve it. Then, we define a flow retrieving the filmography of Henry Cavill:
+
+```kotlin
+val henryCavillMovies =
+    flow {
+        delay(2000)
+        val movies = listOf("Man of Steel", "Batman v Superman: Dawn of Justice", "Justice League")
+        emit(movies)
+    }
+```
+
+Again, we used a delay to simulate the time needed to retrieve the filmography. Now, we can zip the two flows to get the biography and the filmography of Henry Cavill and print out the result:
+
+```kotlin
+henryCavillBio
+    .zip(henryCavillMovies) { bio, movies -> bio to movies }
+    .collect { (bio, movies) ->
+        println(
+            """
+            Henry Cavill
+            ------------
+            BIOGRAPHY:
+              $bio
+              
+            MOVIES:
+              ${movies.joinToString("\n                  ")}
+            """.trimIndent(),
+        )
+    }
+```
+
+The output of the program is:
+
+```
+                Henry Cavill
+                ------------
+                BIOGRAPHY:
+                  Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown dependency 
+in the Channel Islands. His mother, Marianne (Dalgliesh), a housewife, was also born on Jersey, 
+and is of Irish, Scottish and English ancestry...
+                  
+                MOVIES:
+                  Man of Steel
+                  Batman v Superman: Dawn of Justice
+                  Justice League
+
+Process finished with exit code 0
+```
+
+As we may guess, the program printed the biography and the filmography of Henry Cavill after more or less 2 seconds since it has to wait that both the flows have emitted their values. Be aware that the `zip` function requires pairs of values. So, the resulting flow stops when the shortest of the two flows stops emitting values. If we zip a flow with the empty flow, the resulting flow will be empty as well. In fact, the following zipped flow doesn't emit any value:
+
+```kotlin
+henryCavillBio
+    .zip(emptyFlow<List<String>>()) { bio, movies -> bio to movies }
+    .collect { (bio, movies) ->
+        println(
+            """
+            Henry Cavill
+            ------------
+            BIOGRAPHY:
+              $bio
+              
+            MOVIES:
+              $movies
+            """.trimIndent(),
+        )
+    }
+```
+
 ## X. How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
