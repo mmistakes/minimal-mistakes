@@ -20,7 +20,7 @@ title                    : "Tommy Vlog"
 title_separator          : "|"
 subtitle                 : "Per ardua ad astra" # site tagline that appears below site title in masthead
 name                     : "Donghui Ye"
-description              : "동희의 개인 블로그 입니다."
+description              : "For share and earn"
 url                      : "https://tommyyeah.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "예동희 Tommy Ye"
+  name             : "Tommy"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PLC Engineer"
   location         : "South Korea"
@@ -116,40 +116,40 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://tommyyeah.github.io/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://tommyyeah.github.io/"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/tommyye92/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/TommyYeah"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      url: "https://github.com/TommyYeah"
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   # url:
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://github.com/TommyYeah"
 
 
 # Reading Files
@@ -175,7 +175,7 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
-  - node_modules
+  - node_modulesW
   - package.json
   - package-lock.json
   - Rakefile
@@ -220,7 +220,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
