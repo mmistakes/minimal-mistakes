@@ -9,13 +9,13 @@
 $serif: Lora, Georgia, Times, serif !default;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$global-font-family           : $sans-serif !default;
-// $global-font-family           : $serif !default;
+// $global-font-family           : $sans-serif !default;
+$global-font-family           : $serif !default;
 
 @import "minimal-mistakes"; // main partials
 
 html {
-//   font-family: serif;
+  font-family: serif;
   font-size: 16px;
 
   @include breakpoint($medium) {

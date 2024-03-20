@@ -59,7 +59,7 @@ plugins:
 author:
   name   : 
   avatar           : "/assets/images/avatar.png" # "/assets/images/my_profile_picture.jpeg"
-  bio              : "*computers*"
+  bio              : "Research & Policy at AI2"
   location         : "Seattle, WA"
   links:
     - label: "Email"
