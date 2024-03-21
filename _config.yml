@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # 사이트 설정
 locale                   : "ko-KR"
-title                    : "dongkoony"
+title                    : ""
 title_separator          : "|"
 subtitle                 : # 사이트 제목 아래에 표시되는 사이트 태그 라인
-name                     : "Shin Dong Hyeon"
-description              : "놀라운 웹사이트."
+name                     : "Dong Hyeon"
+description              : "테스트 블로그"
 url                      : "https://dongkoony.github.io"
 # baseurl                  : # 사이트의 하위 경로, 예: "/blog"
 repository               : # GitHub 사용자 이름/저장소 이름, 예: "mmistakes/minimal-mistakes"
 teaser                   : # 예비 티저 이미지의 경로, 예: "/assets/images/500x300.png"
-logo                     : "/assets/images/main_logo_block.png"
+# logo                     : "/assets/images/main_logo_block.png"
 masthead_title           : # 마스트헤드에 표시되는 웹사이트 제목을 재정의합니다. 제목이 없는 경우 " "를 사용합니다.
 breadcrumbs              : true # true, false (기본값)
 words_per_minute         : 200
