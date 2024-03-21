@@ -8,4 +8,4 @@ branches:
     # Change this to gh-pages if you're deploying using the gh-pages branch
     - master
 rvm:
- - 2.4
+  - 2.4
