@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "나는 문제를 어떻게 해결했는가"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Jeoung JuYoung"
+name                     : "Jeong JuYoung"
 description              : "An amazing website."
 url                      : "https://youngjungju.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "https://https-youngjungju-github-io.disqus.com/embed.js"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jeoung JuYoung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "내가 어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
+  bio              : "어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
   location         : "South Korea"
   email            : "elephantjuouung@gmail.com"
   links:
