@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
+locale                   : "ko-KR"
+title                    : "dongkoony"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Shin Dong Hyeon"
 description              : "An amazing website."
 url                      : "https://dongkoony.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
