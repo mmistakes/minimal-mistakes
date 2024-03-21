@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "Pixel Ponder"
 title_separator          : "|"
-subtitle                 : # 사이트 제목 아래에 표시되는 사이트 태그 라인
+subtitle                 : "delving deeply into and exploring the minute details of the digital world."
 name                     : "Dong Hyeon"
 description              : "테스트 블로그"
 url                      : "https://dongkoony.github.io"
