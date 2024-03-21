@@ -30,11 +30,11 @@ https://yoon-beom.github.io/blog/GitHub-blog-01st/
 
 ### 카테고리 적용 전 경로
 
-![GitHub-blog-015]({{site.url}}/images/2024-03-08-GitHub-blog-05st/GitHub-blog-05st-01.png)
+![GitHub-blog-05st-01]({{site.url}}/images/2024-03-08-GitHub-blog-05st/GitHub-blog-05st-01.png)
 
 ### 카테고리 적용 후 경로
 
-![GitHub-blog-016]({{site.url}}/images/2024-03-08-GitHub-blog-05st/GitHub-blog-05st-02.png)
+![GitHub-blog-05st-02]({{site.url}}/images/2024-03-08-GitHub-blog-05st/GitHub-blog-05st-02.png)
 
 ### 해결책
 - 이미지 경로에 ../ 를 ../../ 로 쓰는 방법이 있다. 

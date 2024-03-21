@@ -10,14 +10,14 @@ toc: true
 ### Minimall Mistakes 테마 가이드
 <a href="https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing">https://mmistakes.github.io/minimal-mistakes/docs/configuration/#conversion-and-markdown-processing</a>
 
-![GitHub-blog-009]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-01.png)
+![GitHub-blog-03st-01]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-01.png)
 
-![GitHub-blog-010]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-02.png)
+![GitHub-blog-03st-02]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-02.png)
 
 - 위의 가이드에서 아카이브 셋팅을 보면 카테고리와 태그 아카이브 관련한 글이다.
 - _config.yml 파일의 아카이브 관련 코드를 찾는다.
 
-![GitHub-blog-011]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-03.png)
+![GitHub-blog-03st-03]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-03.png)
 
 - 밑의 주석 처리 된 코드들도 풀어준다. line 260 ~ 269
 
@@ -25,7 +25,7 @@ toc: true
 
 - _page 파일을 만들고 그안에 category-archive.md와 tag-archive.md 파일을 만든다.
 
-  ![GitHub-blog-012]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-04.png)
+  ![GitHub-blog-03st-04]({{site.url}}/images/2024-03-08-GitHub-blog-03st/GitHub-blog-03st-04.png)
 
 - category-archive.md 파일 안에 아래의 코드를 입력한다.
 ```category-archive.md
