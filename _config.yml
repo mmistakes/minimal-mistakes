@@ -24,8 +24,8 @@ description              : "An amazing website."
 url                      : "https://youngjungju.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : "/assets/images/elephant.jpeg"
+logo                     : "/assets/images/elephant.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jeoung JuYoung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "내가 어떤 제를 겪고 어떻게 해결했는지 기록합니다."
+  bio              : "내가 어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
   location         : "South Korea"
   email            : "elephantjuouung@gmail.com"
   links:
