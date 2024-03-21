@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # 사이트 설정
 locale                   : "ko-KR"
-title                    : ""
+title                    : "Pixel Ponder"
 title_separator          : "|"
 subtitle                 : # 사이트 제목 아래에 표시되는 사이트 태그 라인
 name                     : "Dong Hyeon"
