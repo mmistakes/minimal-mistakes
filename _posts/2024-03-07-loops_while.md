@@ -6,9 +6,13 @@ typora-root-url: ../
 
  <br>
 
->  ### While 루프
+> ### While 루프
 >
 > <span style="font-size:85%">조건이 참일때 실행</span>
+
+
+
+
 
 <br>
 
@@ -76,11 +80,9 @@ while ( 조건 ) {
 
 <br><br>
 
-
+<br>
 
 #### break 정지 키워드
-
-<br>
 
 <span style="font-size:80%">반복문을 종료시킨다</span>
 
@@ -113,8 +115,4 @@ while ( 조건 ) {
 <br>
 
 
-
-숫자 맞추기 게임
-
-prompt는 문자열 입력에 사용되기 때문에 숫자를 입력하려면 변환을 시켜줘야(parseInt 활용) 유효한 숫자가 됨
 
