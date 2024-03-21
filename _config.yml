@@ -1,55 +1,57 @@
-# Welcome to Jekyll!
+# Jekyll에 오신 것을 환영합니다!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 이 설정 파일은 사이트 전체에 영향을 미치는 설정을 위한 것으로, 당신이 한 번 설정하고 거의 편집할 필요가 없는 값을 의미합니다.
+# 기술적인 이유로, 이 파일은 `jekyll serve`를 사용할 때 자동으로 다시로드되지 않습니다. 이 파일을 변경한 경우 서버 프로세스를 다시 시작하십시오.
 
-# Theme Settings
+# 테마 설정
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
+# 사용할 테마 또는 원격 테마를 사용해야 하는지 여부를 결정하려면 문서를 참조하십시오.
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
+
+# 블로그 스킨
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
-# Site Settings
+# 사이트 설정
 locale                   : "ko-KR"
 title                    : "dongkoony"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : # 사이트 제목 아래에 표시되는 사이트 태그 라인
 name                     : "Shin Dong Hyeon"
-description              : "An amazing website."
+description              : "놀라운 웹사이트."
 url                      : "https://dongkoony.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/main_logo.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
+# baseurl                  : # 사이트의 하위 경로, 예: "/blog"
+repository               : # GitHub 사용자 이름/저장소 이름, 예: "mmistakes/minimal-mistakes"
+teaser                   : # 예비 티저 이미지의 경로, 예: "/assets/images/500x300.png"
+logo                     : "/assets/images/main_logo_block.png"
+masthead_title           : # 마스트헤드에 표시되는 웹사이트 제목을 재정의합니다. 제목이 없는 경우 " "를 사용합니다.
+breadcrumbs              : true # true, false (기본값)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+
+# 댓글 플랫폼
+  provider               : "disqus" # false (기본값), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : "dongkoony"
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , 예: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : # 5 (기본값)
+    colorscheme          : # "light" (기본값), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : # "github-light" (기본값), "github-dark"
+    issue_term           : # "pathname" (기본값)
   giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    repo_id              : # giscus 설정 중 표시됨 https://giscus.app
+    category_name        : # 카테고리의 전체 텍스트 이름
+    category_id          : # giscus 설정 중 표시됨 https://giscus.app
+    discussion_term      : # "pathname" (기본값), "url", "title", "og:title"
+    reactions_enabled    : # '1'로 활성화 (기본값), '0'으로 비활성화
+    theme                : # "light" (기본값), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -57,74 +59,84 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+  path                   : # 빈 값 (기본값)은 feed.xml을 사용합니다.
+  hide                   : # true, false (기본값)
+search                   : # true, false (기본값
+search_full_content      : # true, false (기본값)
+search_provider          : # lunr (기본값), algolia, google
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : # true, false (기본값)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : # true (기본값), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
+  instant_search         : # false (기본값), true
+
+# SEO 관련
 google_site_verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Social Sharing
+# 소셜 공유
 twitter:
   username               :
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
+og_image                 : # Open Graph/Twitter 기본 사이트 이미지
+
+# 소셜 프로필 지정을 위한
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : # 개인 또는 조직 (기본값은 개인입니다)
+  name                   : # 사용자 또는 조직 이름이 사이트 이름과 다른 경우
+  links: # 소셜 미디어 프로필로의 링크 배열
 
-# Analytics
+# 분석
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (기본값), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-99SSB6GL03"
-    anonymize_ip         : false # true, false (default)
-
+    anonymize_ip         : false # true, false (기본값)
 
 # Site Author
 author:
-  name             : "Shin Dong Hyeon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Dong Hyeon"
+  avatar           : "/assets/images/emoji.png"
   bio              : "테스트 블로그"
-  location         : "South Korea"
+  location         : "South Korea of Seoul"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "shin.dh922@gmail.com"
+
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/donghyeon-shin-a037a926b/"
+      
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dongkoony"
+        
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
+
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+
+
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -132,14 +144,19 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/donghyeon-shin-a037a926b/"
+
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dongkoony"
+    
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -240,16 +257,17 @@ whitelist:
   - jekyll-include-cache
 
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
+# 아카이브
+#  유형
+#  - Liquid를 사용하여 구축된 GitHub Pages 호환 아카이브 페이지 ~> type: liquid (기본값)
+#  - Jekyll Archives 플러그인 아카이브 페이지 ~> type: jekyll-archives
+#  경로 (예시)
+#  - Liquid 방법을 사용할 때 아카이브 페이지가 경로에 존재해야 하며, 브레드크럼이 활성화되어 있는 경우 깨진 링크가 예상됩니다.
+#  - <기본 경로>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <기본 경로>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <기본 경로>/my-awesome-category/index.html ~> path: /
+
+# 카테고리
 category_archive:
   type: liquid
   path: /categories/
@@ -257,27 +275,25 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
-
-# HTML Compression
+# HTML 압축
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
 
-
-# Defaults
+# 기본값
 defaults:
   # _posts
   - scope:
@@ -290,7 +306,12 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date: true # 게시한 날짜 false(꺼짐)
+      show_date: true # 게시한 날짜를 표시할지 여부를 설정합니다. false로 설정하면 날짜가 표시되지 않습니다.
 
-# 게시한 날짜 년-월-일
+# 게시한 날짜 형식 년-월-일
 date_format: "%Y-%m-%d"
+
+# Dark Mode
+dark_theme_toggle: true
+after_footer_scripts:
+  - /assets/js/custom/dark-theme.js
