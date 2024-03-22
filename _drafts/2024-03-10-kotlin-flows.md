@@ -311,6 +311,8 @@ val actorsEmptyFlow_v2 =
         .collect { println(it) }
 ```
 
+## Z. Handling Exceptions in Flows
+
 Another common case is when and exceptions raises during the execution of a flow. First, let's see what happens if we don't use any recovering mechanism. Our example will print the actors playing Sprider Men, but during the emission of the actors we'll throw an exception:
 
 ```kotlin
@@ -485,6 +487,103 @@ The Spider Men flow is starting
 I caught an exception!
 The Spider Men flow is completed
 ```
+
+We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above example, catched or not, the thrown exception ended the flow. What if we want to embrace the fact that an operation can fail now and then, and we want to retry it? We can think to the call to an external service that requires a communication over the net. The network connection can be temporarly broken, the service can be temporarly unavailable due to high traffic, and so on. It's common that making a new retry of the operation can solve the problem. The Kotlin coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function.
+
+The `retry` function is defined as follows:
+
+```kotlin
+// Kotlin Coroutines Library
+public fun <T> Flow<T>.retry(
+    retries: Long = Long.MAX_VALUE,
+    predicate: suspend (cause: Throwable) -> Boolean = { true }
+): Flow<T>
+```
+
+The first parameter is the number of retries to make. The second parameter is a lambda that takes a `Throwable` as input and returns a `Boolean`. The lambda is used to decide if the operation should be retried or not. The default value of the `predicate` parameter is a lambda that always returns `true`, so the operation is always retried.
+
+Let's make a real example. We can create a repository interface to mimic the I/O operations over the network:
+
+```kotlin
+interface ActorRepository {
+    suspend fun findJLAActors(): Flow<Actor>
+}
+```
+
+We can implement the repository in a quite naive way for our purposes:
+
+```kotlin
+val actorRepository: ActorRepository =
+    object : ActorRepository {
+        var retries = 0
+        override suspend fun findJLAActors(): Flow<Actor> = flow {
+            emit(henryCavill)
+            emit(galGodot)
+            emit(ezraMiller)
+            if (retries == 0) {
+                retries++
+                throw RuntimeException("Oooops")
+            }
+            emit(benFisher)
+            emit(benAffleck)
+            emit(jasonMomoa)
+        }
+    }
+```
+
+Basically, the execution of the `findJLAActors` function will throw an exception the first time it's called. The second time, it will emit all the actors playing in the "Zack Snyder's Justice League" movie. The above example mimics a temporary network glitch. We can now use the `retry` function to retry the execution of the `findJLAActors` function and print all the actors playing in the movie:
+
+```kotlin
+actorRepository
+    .findJLAActors()
+    .retry(2)
+    .collect { println(it) }
+```
+
+We'll retry 2 times to call the `findJLAActors` function. So, we expect the first attempt to print the first 2 actors, and the second attempt to print all the list. In fact, the output of the program is what we expect:
+
+```
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
+Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
+```
+
+However, in such cases it's common and good practice to wait a bit between the retries to let the glitch to be resolved. We can add a delay in the lambda passed to the `retry` function:
+
+```kotlin
+actorRepository
+    .findJLAActors()
+    .retry(2) { ex ->
+        println("An exception occurred: '${ex.message}', retrying...")
+        delay(1000)
+        true
+    }
+    .collect { println(it) }
+```
+
+In this case, we also add a log. Please, remember to say that the function should be retried or not returning the proper boolean value. Running the above code will make the fact an exception occurred more evident:
+
+```
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+An exception occurred: 'Oooops', retrying...
+(1 sec.)
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
+Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
+Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
+```
+
+In real-world scenario we will use a more sophisticated backoff policy and avoid retrying multiple times using the same interval.
 
 ## 3. Flows and Coroutines
 
