@@ -432,16 +432,58 @@ Exception in thread "main" java.lang.RuntimeException: Oooops
 ...
 ```
 
-So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, the `catch` function can't never catch the exceptions thrown by the `collect` function since it's the terminal operation of the flow: 
+So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, the `catch` function can't catch the exceptions thrown by the `collect` function since it's the terminal operation of the flow: 
 
 ```kotlin
-TODO
+val spiderMenActorsFlowWithException =
+    flow {
+        emit(tobeyMaguire)
+        emit(andrewGarfield)
+        emit(tomHolland)
+    }
+    .catch { ex -> println("I caught an exception!") }
+    .onStart { println("The Spider Men flow is starting") }
+    .onCompletion { println("The Spider Men flow is completed") }
+    .collect { 
+        if (true) throw RuntimeException("Oooops")
+        println(it) 
+    }
+```
+
+The above code will produce the following output, which means the flow was eagerly terminated by the exception thrown by the `collect` function and not intercepted by the `catch` function:
+
+```
+The Spider Men flow is starting
+The Spider Men flow is completed
+Exception in thread "main" java.lang.RuntimeException: Oooops
+...
 ```
 
 The only way we have to prevent this case is to move the `collect` logic into a dedicated `onEach` function, and put a `catch` in the chain after the `onEach` function. We can rewrite the above example as follows:
 
 ```kotlin
-TODO
+val spiderMenActorsFlowWithException =
+    flow {
+        emit(tobeyMaguire)
+        emit(andrewGarfield)
+        emit(tomHolland)
+    }
+    .onEach {
+        if (true) throw RuntimeException("Oooops")
+        println(it)
+    }
+    .catch { ex -> println("I caught an exception!") }
+    .onStart { println("The Spider Men flow is starting") }
+    .onCompletion { println("The Spider Men flow is completed") }
+    .collect()
+```
+
+As we can see from the following output produced by the execution of the above example, the exception is caught by the `catch` function:
+
+```
+The Spider Men flow is starting
+I caught an exception!
+The Spider Men flow is completed
 ```
 
 ## 3. Flows and Coroutines
