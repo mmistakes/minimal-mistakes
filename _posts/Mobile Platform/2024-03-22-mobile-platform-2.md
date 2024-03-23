@@ -10,7 +10,7 @@ toc_sticky: true
 use_math: true
 
 date: 2024-03-22
-last_modified_at: 2024-03-22
+last_modified_at: 2024-03-23
 
 ---
 ## 1. 기초 문법
@@ -451,6 +451,265 @@ null
 &nbsp;&nbsp;타입 뒤에 ?를 추가하면 자동으로 null값이 저장된다. null을 가질 수 있는 변수에 새로운 값을 추가할 때 ??를 사용하면 null일 때만 값이 저장된다.
 
 ### 값 비교 연산자
-```dart
 
+```dart
+>
+<
+>=
+<=
+==
+!= // 서로 다르면 true 반환
+```
+
+### 타입 비교 연산자
+
+```dart
+void main() {
+  var num = 1;
+
+  num is int;     // true
+  num is String;  // false
+  num is! int;    // false '!'는 반대를 의미, int 타입이 아닌 경우 true
+  num is! String; // true, num은 String이 아니므로 true
+}
+```
+
+### 논리 연산자
+
+```dart
+&& and
+|| or
+```
+
+## 4. 제어문
+
+### if문
+
+```dart
+if (조건문 1) {
+  ⋯
+}
+else if (조건문 2) {
+  ⋯
+}
+else {
+  ⋯
+}
+```
+
+### switch문
+
+```dart
+switch (변수) {
+  case 값1:
+    ⋯
+    break;
+  case 값2:
+    ⋯
+    break;
+  default:
+    ⋯
+    break;
+}
+```
+
+### for문
+
+```dart
+for (var i = 0; i < count; i++) {
+  ⋯
+}
+```
+
+### while문과 do…while문
+
+```dart
+while (조건문) {
+  ⋯
+}
+```
+```dart
+do {
+  ⋯
+} while (조건문);
+```
+
+## 5. 함수와 람다
+
+### 함수의 일반적인 특징
+
+#### 포지셔널 파라미터
+```dart
+int addFunc(int a, int b) { 
+  return a + b;
+}
+
+void main() {
+  var result = addFunc(1, 2);
+}
+```
+&nbsp;&nbsp;순서가 고정된 매개변수로 입력된 순서대로 매개변수에 값이 지정된다. 포지셔널 파라미터(positional parameter) 또는 위치 매개변수라고 한다.
+
+##### 기본값을 갖는 포지셔널 파라미터
+
+```dart
+int addFunc(int a, [int b = 2]) {
+  return a + b;
+}
+
+void main() {
+  var result1 = addFunc(1);    // result = 3
+  var result2 = addFunc(1, 3); // result = 4
+}
+```
+&nbsp;&nbsp;기본값을 갖는 포지셔널 파라미터를 지정하기 위해 ```[]``` 기호를 사용하면 된다.
+
+#### 네임드 파라미터
+
+```dart
+int addFunc({
+  required int a,
+  required int b,
+}) {
+  return a + b;
+}
+
+void main() {
+  var result = addFunc(a: 1, b: 2);
+}
+```
+&nbsp;&nbsp;이름이 있는 매개변수로 매개변수의 이름을 이용해 값을 지정한다. 포지셔널 파라미터와 달리 입력 순서는 상관 없다. 네임드 파라미터를 지정하기 위해선 중괄호 ```{}```와 ```required``` 키워드를 사용해야 한다. 네임드 파라미터(named parameter) 또는 명명된 매개변수라고 한다.
+
+&nbsp;&nbsp;```required``` 키워드는 매개변수가 null값이 불가능한 타입이면 기본값을 지정해주거나 필수로 입력해야 한다는 의미이다.
+
+##### 기본값을 갖는 네임드 파라미터
+
+```dart
+int addFunc({
+  required int a,
+  int b = 2,
+}) {
+  return a + b;
+}
+
+void main() {
+  var result1 = addFunc(a: 1); // result = 3
+  var result2 = addFunc(a: 1, b: 3); // result = 4
+}
+```
+&nbsp;&nbsp;기본값을 갖는 네임드 파아미터를 지정하기 위해 ```required``` 키워드를 생략하고 선언하면 된다.
+
+#### 포지셔널, 네임드 파라미터 혼합 사용
+
+```dart
+int addFunc(
+  int a, {
+  required int b,
+  int c = 4,
+}) {
+  return a + b + c;
+}
+
+void main() {
+  var result1 = addFunc(1, b: 3, c: 6); // result = 10
+}
+```
+&nbsp;&nbsp;포지셔널 파라미터가 네임드 파라미터보다 반드시 먼저 위치해야 한다.
+
+### 익명 함수
+
+```dart
+(매개변수) {
+  ⋯
+  return ⋯
+}
+```
+**예시**
+```dart
+void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+
+  final allSum = numbers.reduce((value, element) {
+    return value + element;
+  }); // allSum = 15
+}
+```
+
+### 람다 함수
+
+```dart
+(매개변수) => 하나의 명령 단위
+```
+&nbsp;&nbsp;코드 블록을 묶는 ```{}```가 없기 때문에 함수 로직을 수행하는 코드는 오직 하나여야 한다. 콜백 함수나 리스트의 map(), reduce(), fold() 함수 등에서 일회성이 높은 로직을 작성할 때 주로 사용한다.
+
+**예시**
+```dart
+void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+
+  final allSum = numbers.reduce((value, element) => value + element); // allSum = 15
+}
+```
+
+### typedef와 함수
+
+```dart
+typedef Operation = void Function(int x, int y);
+
+void add(int x, int y) {
+  print('결과값: ${x + y}');
+}
+
+void subtract(int x, int y) {
+  print('결과값: ${x - y}');
+}
+
+void main() {
+  Operation oper = add;
+  oper(1, 2);
+
+  oper = subtract;
+  oper(1, 2);
+}
+```
+```
+결과값: 3
+결과값: -1
+```
+&nbsp;&nbsp;```typedef``` 키워드는 함수의 시그니처(반환값 타입, 매개변수 개수와 타입 등)를 정의하는 값으로 보면 된다. 다트에서 함수는 일급 객체이므로 함수를 값처럼 사용할 수 있다. 따라서 플러터에서는 ```typedef```로 선언한 함수를 매개변수로 넣어 사용 가능하다.
+
+**예시**
+
+```dart
+typedef Operation = void Function(int x, int y);
+
+void add(int x, int y) {
+  print('결과값: ${x + y}');
+}
+
+void calculate(int x, int y, Operation oper) {
+  oper(x, y);
+}
+
+void main() {
+  calculate(1, 2, add);
+}
+```
+```
+결과값: 3
+```
+
+## 6. try…catch문
+
+```dart
+try {
+  // 예외 가능성 있는 코드
+} catch (e) {
+  // 예외 발생 시 실행
+} finally {
+  // 무조건 실행
+}
+```
+```dart
+throw Exception('예외 메시지'); // 의도적으로 예외 발생
 ```
