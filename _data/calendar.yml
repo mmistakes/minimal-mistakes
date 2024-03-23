@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A5 - Naturspielplatz ",
-    "title": "Ausflug A5 - Naturspielplatz ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGozZjI4NG84czBnMmk3dmYxcnJxNXY1N2ggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-22T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-22T12:00:00+01:00"
-    },
-    "created": "2024-03-20T10:46:18.000Z",
-    "updated": "2024-03-20T10:46:18.483Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A7 - Bibliothek",
-    "title": "Ausflug A7 - Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGVsZjdsMm91bTZyZDltMDk5Y2dmdGlxYWggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-03-22T10:15:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-03-22T13:15:00+01:00"
-    },
-    "created": "2024-03-21T12:44:24.000Z",
-    "updated": "2024-03-21T12:44:24.254Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug Wiko - Gartenarbeitsschule",
     "title": "Ausflug Wiko - Gartenarbeitsschule",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-03-20T10:48:20.000Z",
     "updated": "2024-03-20T10:48:20.071Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Bibliothek Spandau",
+    "title": "Ausflug A9 - Bibliothek Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2U0NnFqbnY4NHQ3ZGxpNW9zZXNtOGRib2UgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-11T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-11T13:00:00+02:00"
+    },
+    "created": "2024-01-31T12:15:39.000Z",
+    "updated": "2024-01-31T12:15:39.063Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz",
+    "title": "3. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjE2aHM3dDRmOHQ2MHU3ZHE4ajA1YzhhMmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-11T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-11T17:00:00+02:00"
+    },
+    "created": "2023-12-01T04:55:37.000Z",
+    "updated": "2023-12-01T04:55:37.202Z"
   }
 ]
