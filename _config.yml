@@ -73,9 +73,9 @@ google:
   search_engine_id: #"328c66dbc5a57406c"
   instant_search: # false (default), true
 # SEO Related
-google_site_verification: "googled46046865aa1ab48"
+google_site_verification: #"googled46046865aa1ab48"
 bing_site_verification:
-naver_site_verification: "cc2b10345f0fbccdcf10d2bbf9c10e1de00a10c0"
+naver_site_verification: #"cc2b10345f0fbccdcf10d2bbf9c10e1de00a10c0"
 yandex_site_verification:
 baidu_site_verification:
 
