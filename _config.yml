@@ -72,8 +72,8 @@ algolia:
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (기본값), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (기본값), true
+  search_engine_id       : # "e5304ad9b2c774879"
+  instant_search         : # true # true, false (기본값)
 
 # SEO 관련
 google_site_verification :
