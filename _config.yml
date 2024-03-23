@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "goldtg/goldtg.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/88-cat.jpg"
-masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+masthead_title: "My Custom title"
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
@@ -104,10 +104,10 @@ analytics:
 # Site Author
 author:
   name: "Golden Tiger"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/88-cat.jpg"
   bio: "공사중입니다"
   location: "South Korea"
-  email:
+  email: "rhkdtjs25@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
