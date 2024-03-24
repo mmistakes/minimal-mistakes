@@ -18,7 +18,7 @@ minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon
 locale: "ko-KR"
 title: "Collection"
 title_separator: "|"
-subtitle: "친절해라. 우리가 만나는 사람 모두 힘든 싸움을 하고 있다. -플라톤"
+subtitle: "Hello"
 name: "Goldtg"
 description: "성실하게"
 url: "https://goldtg.github.io"
@@ -105,7 +105,7 @@ analytics:
 author:
   name: "박광선"
   avatar: "/assets/images/88-cat.jpg"
-  bio: "방황하지 않는 방법을 찾기 위해 써두려 합니다."
+  bio: "친절하라. 우리가 만나는 모든 사람은 모두 힘든 싸움을 하고 있다."
   location: "South Korea"
   email: "rhkdtjs25@naver.com"
   links:
