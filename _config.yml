@@ -16,9 +16,9 @@ minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "Writed_zip"
+title: "Collection"
 title_separator: "|"
-subtitle: "You can see as much as you know"
+subtitle: "친절해라. 우리가 만나는 사람 모두 힘든 싸움을 하고 있다. -플라톤"
 name: "Goldtg"
 description: "성실하게"
 url: "https://goldtg.github.io"
@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "goldtg/goldtg.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/88-cat.jpg"
-masthead_title: "My Custom title"
+masthead_title: "쌓아 올리는 곳"
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
@@ -103,9 +103,9 @@ analytics:
 
 # Site Author
 author:
-  name: "Golden Tiger"
+  name: "박광선"
   avatar: "/assets/images/88-cat.jpg"
-  bio: "공사중입니다"
+  bio: "방황하지 않는 방법을 찾기 위해 써두려 합니다."
   location: "South Korea"
   email: "rhkdtjs25@naver.com"
   links:
