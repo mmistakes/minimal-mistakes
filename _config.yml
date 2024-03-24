@@ -18,7 +18,7 @@ minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon
 locale: "ko-KR"
 title: "Collection"
 title_separator: "|"
-subtitle: "친절해라. 우리가 만나는 사람 모두 힘든 싸움을 하고 있다. -플라톤"
+subtitle: #""
 name: "Goldtg"
 description: "성실하게"
 url: "https://goldtg.github.io"
@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "goldtg/goldtg.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/88-cat.jpg"
-masthead_title: "쌓아 올리는 곳"
+masthead_title: "지식 상자"
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
@@ -73,7 +73,7 @@ google:
   search_engine_id: #"328c66dbc5a57406c"
   instant_search: # false (default), true
 # SEO Related
-google_site_verification: #"googled46046865aa1ab48"
+google_site_verification:
 bing_site_verification:
 naver_site_verification: "cc2b10345f0fbccdcf10d2bbf9c10e1de00a10c0"
 yandex_site_verification:
@@ -105,7 +105,7 @@ analytics:
 author:
   name: "박광선"
   avatar: "/assets/images/88-cat.jpg"
-  bio: "방황하지 않는 방법을 찾기 위해 써두려 합니다."
+  bio: "친절해라. 우리가 만나는 사람 모두 힘든 싸움을 하고 있다. -플라톤"
   location: "South Korea"
   email: "rhkdtjs25@naver.com"
   links:
