@@ -307,6 +307,10 @@ defaults:
       share: true
       related: true
       show_date: true # 게시한 날짜를 표시할지 여부를 설정합니다. false로 설정하면 날짜가 표시되지 않습니다.
+      toc: true # 콘텐츠 영역에 표시할 표시 목록 여부를 설정합니다.
+      toc_sticky: true # 표시 목록을 스크롤 하면 나타나는 것을 설정합니다.
+      toc_label: Contents # 표시 목록의 라벨을 설정합니다.
+      toc_icon: "fa-solid fa-ghost" #목차 아이콘
 
 # 게시한 날짜 형식 년-월-일
 date_format: "%Y-%m-%d"
