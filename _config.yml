@@ -16,9 +16,9 @@ minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Site Settings
 locale: "ko-KR"
-title: "Writed_zip"
+title: "Collection"
 title_separator: "|"
-subtitle: "You can see as much as you know"
+subtitle: "친절하라. 우리가 만나는 사람은 모두 힘든 싸움을 하고 있다."
 name: "Goldtg"
 description: "성실하게"
 url: "https://goldtg.github.io"
@@ -26,7 +26,7 @@ baseurl: # the subpath of your site, e.g. "/blog"
 repository: "goldtg/goldtg.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: "/assets/images/88-cat.jpg"
-masthead_title: "My Custom title"
+masthead_title: "박광선"
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 comments:
