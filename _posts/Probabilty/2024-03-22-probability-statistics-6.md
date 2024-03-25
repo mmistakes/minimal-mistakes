@@ -1,6 +1,6 @@
 ---
-title: "4장| 이산확률변수와 확률분포"
-excerpt: "4장| 이산확률변수와 확률분포"
+title: "4장 이산확률변수와 확률분포"
+excerpt: "4장 이산확률변수와 확률분포"
 categories: ['Probability & Statistics']
 # Cpp / Algorithm / Computer Network / A.I / Database / Mobile Platform / Probability & Statistics
 tags: probability-statistics

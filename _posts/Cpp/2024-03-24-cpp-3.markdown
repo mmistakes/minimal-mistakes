@@ -1,0 +1,219 @@
+---
+title: "[2장] C++ 프로그래밍 기본"
+excerpt: "[2장] C++ 프로그래밍 기본"
+categories:
+  - Cpp
+tags:
+  - computer
+  - Cpp
+
+toc: true
+toc_sticky: true
+use_math: true
+
+date: 2024-03-24
+last_modified_at: 2024-03-24
+---
+
+## 1. 변수, 값, 상수
+
+### 변수
+```cpp
+int num1;
+double num2;
+```
+&nbsp;&nbsp;프로그래밍 언어에서 변수$_\text{variable}$는 메모리의 특정 부분을 확보한 공간을 말한다. 프로그램이 실행되는 동안 이 공간 안에서 내용물을 변경할 수 있어서 **변수**라고 한다. 변수를 선언할 때는 자료형을 지정해야 한다.
+
+
+### 값
+&nbsp;&nbsp;**값**이란 변수에 저장된 내용을 의미한다.
+
+#### cin 객체/ cout 객체
+```cpp
+cin >> x;
+cout << x;
+cout << 4;
+// cin >> 4; 오류, cin 객체는 값이 아니라 변수를 필요로 함
+```
+&nbsp;&nbsp;cin 객체는 데이터의 소스이며 cout 객체는 데이터의 목적지이다. cin 객체는 `>>` 연산자를 사용하여 입력 장치를 통해 입력을 받아서 값을 변수에 저장한다. cout 객체는 `<<` 연산자를 사용하여 데이터를 전송하고 출력한다.
+&nbsp;&nbsp;cin 객체는 입력받은 값을 저장할 데이터의 목적지를 알아야 하므로 변수의 이름이 필요하다. **변수의 이름은 목적지로서의 위치를 나타내는 경우도 있고, 저장되어 있는 값을 나타내는 경우도 있다.**
+
+#### 할당 연산자
+```cpp
+x = y;
+x = 5;
+x = y + 6;
+```
+&nbsp;&nbsp;할당 연산자는 값과 변수와 관련되어 중요한 요소이다. 할당 연산자(=)는 왼쪽에 변수가 오고 오른쪽에 값이 온다.
+
+### 상수
+```cpp
+const double PI = 3.141592;
+```
+&nbsp;&nbsp;상수는 값을 변경할 수 없는 저장소 엔티티이다. 상수의 값은 언제나 고정적이고 상수를 선언하려면 `const`라는 한정자$_\text{modifier}$와 이름을 지정한다. 상수로 값을 선언하면 프로그램 실행 중에 값이 절대로 바뀌지 않는다. 따라서 cin 객체와 함께 활용할 수 없다.
+
+## 2. 토큰과 주석
+&nbsp;&nbsp;**토큰**은 컴파일러가 읽어 들여서 실행 가능한 프로그램을 만들 때 활용하는 코드이다. 주석을 제외한 모든 것이다.
+&nbsp;&nbsp;**주석**은 프로그램을 설명하기 위해 적는 메모이다.
+
+### 토큰
+
+#### 식별자
+&nbsp;&nbsp;엔티티의 이름을 식별자$_\text{identifier}$라고 부른다. 식별자는 반드시 기호 또는 글자(숫자가 아닌 것)나 언더스코어(_)로 시작해야 한다. 첫 번째 글자를 제외하면 숫자를 포함할 수 있다.
+
+##### 키워드
+&nbsp;&nbsp;키워드 또는 예약어는 C++ 프로그래밍 언어에서 예약된 식별자로 개발자가 재정의할 수 없다.
+
+##### 미리 정의된 식별자
+```cpp
+include, iostream, main, std, cout, endl, ⋯
+```
+&nbsp;&nbsp;키워드는 아니지만 C++ 프로그래밍 언어에 미리 정의되어 있는 식별자다. 재정의할 수 있지만 수정하지 않는 것이 좋다.
+
+##### 사용자 정의 식별자
+```cpp
+sum    average    result2    counter ⋯
+```
+&nbsp;&nbsp;식별자의 규칙을 지키기만 하면 식별자를 원하는 대로 정의해서 사용할 수 있다.
+
+#### 리터럴
+```cpp
+0 // 정수 리터럴
+"이 프로그램은 ⋯" // 문자열 리터럴
+```
+&nbsp;&nbsp;**리터럴**은 자료형을 가진 상수 값을 의미한다.
+
+#### 심볼
+```cpp
+#    (    ) {    }    ::    <<    ;    ⋯
+```
+&nbsp;&nbsp;C++은 알파벳이 아닌 기호들을 연산자$_\text{operator}$와 문장 부호$_\text{punctuation}$로 사용한다.
+
+### 주석
+```cpp
+// 한 줄 주석
+
+/*
+여러 줄 주석
+*/
+```
+
+## 3. 자료형
+
+### C++의 자료형
+![image](https://github.com/Bogamie/bogamie2.github.io/assets/162293185/6a4452a4-4497-4c00-8dd1-6dbce03dce61){: .align-center}
+* **내장 자료형**
+프로그래밍 언어에 정의된 자료형
+  * **기본 자료형**
+    기본적인 자료형
+  * **복합 자료형**
+    기본 자료형을 기반으로 파생된 자료형
+
+### 정수 자료형
+![image](https://github.com/Bogamie/bogamie2.github.io/assets/162293185/a432a9c0-955c-401c-a1fa-4a0dd3549982){: width="80%" height="80%"}{: .align-center}
+
+```
+short int <= int <= long int
+```
+**정수 자료형의 크기 확인하기**
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "short int의 크기: " << sizeof(short int) << "byte" << endl;
+	cout << "int의 크기: " << sizeof(int) << "byte" << endl;
+	cout << "long int의 크기: " << sizeof(long int) << "byte" << endl;
+
+	return 0;
+}
+```
+```
+short int의 크기: 2byte
+int의 크기:       4byte
+long int의 크기:  4byte
+```
+#### 정수 변수
+```cpp
+unsigned short int num1;
+short int num2;
+
+unsigned int num3;
+int num4;
+
+unsigned long int num5;
+long int num6;
+```
+
+#### 정수 리터럴
+```cpp
+1234    // 부호 있는 integer
+1234U   // 부호 없는 integer
+1234L   // 부호 있는 long integer
+1234UL  // 부호 없는 long integer
+```
+&nbsp;&nbsp;어떤 자료형의 값을 고정하여 이용할 때 이를 **리터럴**이라 한다. 정수 리터럴의 기본값은 `signed int`이다. `short int`는 리터럴로 사용하지 않는다. `int`의 범위를 넘는 숫자를 생성하면 `long int`로 생성된다. 
+
+![image](https://github.com/Bogamie/bogamie2.github.io/assets/162293185/5569accd-47e9-4369-a84e-a43555d5df15){: width="80%" height="80%"}{: .align-center}
+
+**주의점**
+```cpp
+int a = -1234;           // Ok
+unsigned int b = 1234;   // Ok
+unsigned int c = -1234;  // 4294966062, 논리적 오류
+unsigned int d = 12.34;  // 12, 소수점 아래 부분이 잘림
+```
+
+### 문자 자료형
+```cpp
+char c1 = 'A';  // c1: A
+char c2 = 65;   // c2: A
+```
+&nbsp;&nbsp;C++에 정의되어 있는 문자 자료형의 크기는 1byte이며 부호가 없다. 문자 리터럴은 반드시 작은 따옴표로 감싸야 한다.
+
+#### 이스케이프 문자
+```
+\n 줄바꿈 문자
+\t 탭 문자
+\b 백스페이스
+\r 캐리지 리턴(커서의 위치를 앞으로 이동)
+\f 폼 피드(다음 페이지로 넘기기)
+\' 작은 따옴표
+\" 큰 따옴표
+\\ 역슬래시
+```
+
+### 불 타입
+```cpp
+bool x = -1;    // true
+bool z = 100;   // true
+bool y = 0;     // false
+bool w = -0;    // false
+
+bool a = true; 
+bool b = false;
+```
+&nbsp;&nbsp;C++에서 불 자료형은 1byte로 저장된다. **0은 false**로 **0이 아닌 값은 true**로 해석된다. 불 자료형을 출력하면 0 또는 1이 나온다.
+
+### 부동 소수점 자료형
+```
+float <= double <= long double
+```
+&nbsp;&nbsp;소수점을 갖는 숫자를 부동 소수점이라고 한다. 부동 소수점은 모두 부호가 있다.
+
+#### 부동 소수점 리터럴
+![image](https://github.com/Bogamie/bogamie2.github.io/assets/162293185/1c845632-03f8-4de4-b210-e00f586a402a){: width="80%" height="80%"}{: .align-center}
+
+### void 자료형
+
+&nbsp;&nbsp;void 자료형은 값이 없음을 나타내는 특별한 자료형이다. 어떤 값도 반환하지 않거나, 어떤 자료형도 가리키지 않는 포인터를 나타내는 데 사용된다.
+
+### 문자열 자료형
+```cpp
+#include <string>
+```
+```cpp
+string name;
+```
+&nbsp;&nbsp;NULL 문자로 끝나는 문자의 집합이다. 널 문자(종료 문자)는 '\0'을 일컷는다. C++에서 문자열을 사용하려면 `<string>` 헤더 파일을 읽어 들여야 한다.

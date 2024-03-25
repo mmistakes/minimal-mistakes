@@ -10,7 +10,7 @@ toc_sticky: true
 use_math: true
 
 date: 2024-03-23
-last_modified_at: 2024-03-23
+last_modified_at: 2024-03-24
 
 ---
 ## 클래스

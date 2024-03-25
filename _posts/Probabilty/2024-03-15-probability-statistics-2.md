@@ -1,5 +1,5 @@
 ---
-title: "확률과 통계 3장: 확률"
+title: "확률과 통계 3장 확률"
 excerpt: "확률 변수와 확률 분포"
 categories: ['Probability & Statistics']
 # Cpp / Algorithm / Computer Network / A.I / Database / Mobile Platform / Probability & Statistics

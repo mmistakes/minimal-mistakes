@@ -1,5 +1,5 @@
 ---
-title: "확률과 통계 2장: 자료의 요약"
+title: "확률과 통계 2장 자료의 요약"
 excerpt: "확률과 통계 첫 시작"
 categories: ['Probability & Statistics']
 # Cpp / Algorithm / Computer Network / A.I / Database / Mobile Platform / Probability & Statistics

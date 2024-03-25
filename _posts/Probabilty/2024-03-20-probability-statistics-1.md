@@ -1,6 +1,6 @@
 ---
-title: "2장| 자료의 요약"
-excerpt: "2장| 자료의 요약"
+title: "2장 자료의 요약"
+excerpt: "2장 자료의 요약"
 categories: ['Probability & Statistics']
 # Cpp / Algorithm / Computer Network / A.I / Database / Mobile Platform / Probability & Statistics
 tags: probability-statistics

@@ -1,6 +1,6 @@
 ---
-title: "3장| 확률"
-excerpt: "3장| 확률"
+title: "3장 확률"
+excerpt: "3장 확률"
 categories: ['Probability & Statistics']
 # Cpp / Algorithm / Computer Network / A.I / Database / Mobile Platform / Probability & Statistics
 tags: probability-statistics
