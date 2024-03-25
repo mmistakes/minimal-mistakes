@@ -4,6 +4,10 @@ title: "깃허브 블로그 첫 포스팅 연습"
 categories: practice
 tags: [practice, blog, jekyll]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+search: true
 typora-root-url: ../
 ---
 
