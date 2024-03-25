@@ -4,8 +4,12 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title : "By Year"
+    url: /year-archive/ 
+    # /year-archive-grid/ if you want to arrange posts by year in grid view
   - title: "Search"
     url: /search/
+    
 
 docs:
   - title: "content1"

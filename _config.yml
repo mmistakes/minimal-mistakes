@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Semyeong Yu"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/NileRiver.jpg"
   bio              : "Computer Vision\n\nVideo Image Computing"
   location         : "South Korea"
   #email            : "semongsu0223@kaist.ac.kr"
@@ -128,6 +128,10 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/three_o_e"
+    # - label: "YouTube"
+    #   icon: "fab fa-fw fa-youtube"
+    #   url: "# youtube link"
+
 
 # Site Footer
 footer:
@@ -150,6 +154,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/three_o_e"
+    # - label: "YouTube"
+    #   icon: "fab fa-fw fa-youtube"
+    #   url: "# youtube link"
 
 
 # Reading Files
@@ -230,6 +237,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -238,6 +246,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -291,3 +300,7 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: "CONTENT"
+      toc_icon: "fas fa-tasks"
