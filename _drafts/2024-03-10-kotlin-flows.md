@@ -583,7 +583,30 @@ Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastNam
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
-In real-world scenario we will use a more sophisticated backoff policy and avoid retrying multiple times using the same interval.
+Having the cause of the exception in input, we can always decide to retry or not based on the exception type.
+
+In real-world scenario we will use a more sophisticated backoff policy and avoid retrying multiple times using the same interval. We need the current attempt number to implement such policies. To be fair, the `retry` function is a easier version of the more general `retryWhen` function that accept a lambda with two parameters as input: the exception and the attempt number. The `retryWhen` function is defined as follows:
+
+```kotlin
+// Kotlin Coroutines Library
+public fun <T> Flow<T>.retryWhen(
+    predicate: suspend FlowCollector<T>.(cause: Throwable, attempt: Long) -> Boolean): Flow<T> =
+```
+
+We can rewrite the previous example using the `retryWhen` function as follows, retrying with an increasing delay between the attempts: 
+
+```kotlin
+actorRepository
+    .findJLAActors()
+    .retryWhen { cause, attempt ->
+        println("An exception occurred: '${cause.message}', retry number $attempt...")
+        delay(attempt * 1000)
+        true
+    }
+    .collect { println(it) }
+```
+
+And, that's all for the error handling in flows.
 
 ## 3. Flows and Coroutines
 
@@ -1120,6 +1143,8 @@ henryCavillBio
         )
     }
 ```
+
+
 
 ## X. How Flows Work
 
