@@ -1,6 +1,10 @@
 # main links
 main:
+  - title: "About"
+    url: /about/
   - title: "Category"
     url: /categories/
+  # - title: "Post"
+  #   url: /post/
   - title: "Home"
-    url: https://bogamie.github.io
+    url: /
