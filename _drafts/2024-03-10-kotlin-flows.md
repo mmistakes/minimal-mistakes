@@ -1144,6 +1144,78 @@ henryCavillBio
     }
 ```
 
+In the section dedicated to flow transformation we didn't introduce any flavour of `flatMap` function. It's quite common for data structures representing a collection of values to offer such a function. However, the emission of values in a flow can be delayed or even stopped. So, it's not straightforward to come up with a proper implementation of the `flatMap` function. We need to understand which flow has the precedence over the other. 
+
+The Kotlin coroutine library comes up with 3 different implementations of the `flatMap` function: `flatMapConcat`, `flatMapMerge`, and `flatMapLatest`. We'll focus on the first two functions since they are the most used.
+
+The `flatMapConcat` function process the emitted values of the first flow and for each the associated emitted values of the second flow. In other words, it waits for the second flow to emit all its values before processing the next value of the first flow. It's defined as follows in the coroutine library:
+
+```kotlin
+@ExperimentalCoroutinesApi
+public fun <T, R> Flow<T>.flatMapConcat(transform: suspend (value: T) -> Flow<R>): Flow<R>
+```
+
+The definition is quite common for an function belonging to the family of `flatMap` functions. 
+
+Let's make an example now. We'll extend a bit the flow containing the biographies of the actors who played the Justice League movie. First of all, we add a repository returning biographies of actors:
+
+```kotlin
+interface BiographyRepository {
+    suspend fun findBio(actor: Actor): Flow<String>
+}
+
+val biographyRepository: BiographyRepository =
+    object : BiographyRepository {
+        val biosByActor =
+            mapOf(
+                henryCavill to
+                        listOf(
+                            "1983/05/05",
+                            "Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown",
+                            "Man of Steel, Batman v Superman: Dawn of Justice, Justice League",
+                        ),
+                benAffleck to
+                        listOf(
+                            "1972/08/15",
+                            "Benjamin Géza Affleck-Boldt was born on August 15, 1972 in Berkeley, California.",
+                            "Argo, The Town, Good Will Hunting, Justice League",
+                        ),
+            )
+        override suspend fun findBio(actor: Actor): Flow<String> =
+            biosByActor[actor]?.asFlow() ?: emptyFlow()
+    }
+```
+
+For the sake of simplicity, we added only the biographies of Henry Cavill and Ben Affleck. As we can see, the `findBio` function returns the biography of an actor as a flow: First his/her date of birth, them a brief introduction, and finally a small list of movies he/she played in.
+
+Now, we want to create a flow emitting only the actors `henryCavill` and `benAffleck`, and for each of them retrieving the biography. The `flatMapConcat` function is all that we need:
+
+```kotlin
+actorRepository
+    .findJLAActors()
+    .filter { it == benAffleck || it == henryCavill }
+    .onEach { actor -> println(actor)}
+    .flatMapConcat { actor -> biographyRepository.findBio(actor)}
+```
+
+As we said, the `flatMapConcat` function will take the first argument of the first flow, in this case `henryCavill`, and will wait for the second flow to emit all its values before processing the next value of the first flow. In fact, the output of the program is:
+
+```
+Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
+1983/05/05
+Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown
+Man of Steel, Batman v Superman: Dawn of Justice, Justice League
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
+1972/08/15
+Benjamin Géza Affleck-Boldt was born on August 15, 1972 in Berkeley, California.
+Argo, The Town, Good Will Hunting, Justice League
+```
+
+The `flatMapMerge` function is the second implementation of the `flatMap` function. It processes the emitted values of the first flow and for each the associated emitted values of the second flow. However, it doesn't wait for the second flow to emit all its values before processing the next value of the first flow. In other words, the values of the inner flow are processed concurrently. The `flatMapMerge` function is defined as follows in the coroutine library:
+
+```kotlin
+
+```
 
 
 ## X. How Flows Work
