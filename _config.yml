@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "David Austin"
   avatar           : "/assets/images/portrait.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Incoming CS grad student interested in NLP, IR, and HCI."
+  bio              : "Incoming MSc student at MILA/McGill"
   location         : "Toronto, Canada"
   email            : "deaustin@uwaterloo.ca"
   

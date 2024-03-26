@@ -8,7 +8,11 @@ permalink: /
 
 ## Welcome
 
-I’m a faculty affiliate researcher at the Vector Institute in Toronto, currently working with Dr. Scott Sanner and Dr. Chris McIntosh of the University of Toronto. In 2023, I earned a Bachelor of Computer Science from the University of Waterloo with a minor in Statistics. In September 2024, I'll begin graduate studies (more details to come).
+I’m a faculty affiliate researcher at the Vector Institute in Toronto, currently working with Dr. Scott Sanner and Dr. Chris McIntosh of the University of Toronto. 
+
+In September 2024, I'll begin my Master's degree at MILA/McGill under the supervision of Dr. Jackie Cheung.
+
+In 2023, I earned a Bachelor of Computer Science from the University of Waterloo with a minor in Statistics. 
 
 ## Research Interests
 
