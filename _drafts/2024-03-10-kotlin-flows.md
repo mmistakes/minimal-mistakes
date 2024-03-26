@@ -1214,8 +1214,16 @@ Argo, The Town, Good Will Hunting, Justice League
 The `flatMapMerge` function is the second implementation of the `flatMap` function. It processes the emitted values of the first flow and for each the associated emitted values of the second flow. However, it doesn't wait for the second flow to emit all its values before processing the next value of the first flow. In other words, the values of the inner flow are processed concurrently. The `flatMapMerge` function is defined as follows in the coroutine library:
 
 ```kotlin
-
+@ExperimentalCoroutinesApi
+public fun <T, R> Flow<T>.flatMapMerge(
+    concurrency: Int = DEFAULT_CONCURRENCY,
+    transform: suspend (value: T) -> Flow<R>
+): Flow<R>
 ```
+
+Unlike the definition of the `flatMapConcat`, the `flatMapMerge` add an input parameter, which is the number of concurrent operations we want to be executed. The default value is `DEFAULT_CONCURRENCY`, which is equal to the number of available processors. The default value of concurrency is 16 and it can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite of the concurrency degree, the rest of the definition is quite usual for a `flatMap` function.
+
+
 
 
 ## X. How Flows Work
