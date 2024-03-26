@@ -1221,10 +1221,84 @@ public fun <T, R> Flow<T>.flatMapMerge(
 ): Flow<R>
 ```
 
-Unlike the definition of the `flatMapConcat`, the `flatMapMerge` add an input parameter, which is the number of concurrent operations we want to be executed. The default value is `DEFAULT_CONCURRENCY`, which is equal to the number of available processors. The default value of concurrency is 16 and it can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite of the concurrency degree, the rest of the definition is quite usual for a `flatMap` function.
+Unlike the definition of the `flatMapConcat`, the `flatMapMerge` add an input parameter, which is the number of concurrent operations we want to be executed. The default value is `DEFAULT_CONCURRENCY`, which is equal to the number of available processors. The default value of concurrency is 16 and it can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite the concurrency degree, the rest of the definition is quite usual for a `flatMap` function.
 
+Now, we need an example to play with. This time, we want to simulate a repository that, given an actor, returns the small list of movies he/she played in. We can define the repository as follows:
 
+```kotlin
+val movieRepository =
+    object : MovieRepository {
+        val filmsByActor: Map<Actor, List<String>> =
+            mapOf(
+                henryCavill to
+                    listOf("Man of Steel", "Batman v Superman: Dawn of Justice", "Justice League"),
+                benAffleck to listOf("Argo", "The Town", "Good Will Hunting", "Justice League"),
+                galGodot to listOf("Fast & Furious", "Justice League", "Wonder Woman 1984"),
+            )
+        override suspend fun findMovies(actor: Actor): Flow<String> = 
+            filmsByActor[actor]?.asFlow() ?: emptyFlow()
+    }
+```
 
+We can create a flow emitting only the actors `henryCavill`, `benAffleck`, and `galGodot`, and for each of them retrieving the list of movies they played in. We can use the `flatMapMerge` function to do that:
+
+```kotlin
+actorRepository
+    .findJLAActors()
+    .filter { it == benAffleck || it == henryCavill || it == galGodot }
+    .flatMapMerge { actor ->
+        movieRepository.findMovies(actor).onEach { delay(1000) }
+    }
+    .collect { println(it) }
+```
+
+We added some delay between two calls to the `findMovies` to make the program more spicy. We run the program without setting the degree of concurrency, and one of the possible outputs is the following:
+
+```
+Fast & Furious
+Argo
+Man of Steel
+The Town
+Batman v Superman: Dawn of Justice
+Justice League
+Wonder Woman 1984
+Justice League
+Good Will Hunting
+Justice League
+```
+
+As we can see, the list of movies is randomly created from the merge of the original lists. For example, the "Fast & Furious" movie belongs to Gal Godot, which emitted as the second value by the first flow. Then, we have a film of Ben Affleck, and then we have the first movie of Henry Cavill. The program continues in this way until all the movies are emitted.
+
+We can set the level of concurrency to 1, and we can see that the output will be linearized, printing all the films of an actor before moving to the next one:
+
+```
+Man of Steel
+Batman v Superman: Dawn of Justice
+Justice League
+Fast & Furious
+Justice League
+Wonder Woman 1984
+Argo
+The Town
+Good Will Hunting
+Justice League
+```
+
+We've got the same result as the `flatMapConcat` function. 
+
+The `flatMapMerge` function is very useful when we have to deal with I/O operations on a collection of information. In fact, we can set the level of concurrency to the number of available processors to maximize the performance of the program or even to fine tune the maximum level of resources we want to use. Another approach could have been using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value the collection:
+
+```kotlin
+coroutineScope {
+    listOf(henryCavill, galGodot, benAffleck).map {
+        async { movieRepository.findMovies(it).onEach { delay(1000) } }
+    }.flatMap {
+        it.await()
+    }
+}
+```
+
+Clearly, here we're working with a slightly modified version of the `findMovies` returning a list of movies and not a flow. However, using the `async` builder it's harder to have control over the level of concurrency. Plus, we can emit each movie as soon as it's available, and not waiting for all the movies of an actor to be available.
 
 ## X. How Flows Work
 
