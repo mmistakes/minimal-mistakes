@@ -6,6 +6,9 @@ tags:
   - Github
   - Blog
 toc: true
+author_profile: false
+sidebar:
+  - nav: "docs"
 ---
 ### 이미지 경로 오류
 카테고리 기능을 추가하고 결과를 확인 하는데 이미지가 안 읽어와서 또 무슨 오류인가 싶었다.

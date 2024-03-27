@@ -6,6 +6,9 @@ tags:
   - Github
   - Blog
 toc: true
+author_profile: false
+sidebar:
+  - nav: "docs"
 ---
 ### 깃허브를 이용해 블로그를 만드는 이유
 - 호스팅 비용이 필요 없다.

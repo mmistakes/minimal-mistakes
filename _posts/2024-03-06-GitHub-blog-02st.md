@@ -6,6 +6,9 @@ tags:
   - Github
   - Blog
 toc: true
+author_profile: false
+sidebar:
+  - nav: "docs"
 ---
 ### 내가 사용하는 편집기
 - Obsidian
