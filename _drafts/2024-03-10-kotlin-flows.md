@@ -15,7 +15,7 @@ In the article [Kotlin Coroutines - A Comprehensive Introduction](https://blog.r
 
 ## 1. Setting the Stage
 
-We'll use Kotlin 1.9.22 and Kotlinx coroutines 1.8.0. In fact, flows are part of the Kotlin coroutines library. We'll use the Gradle build tool to manage our dependencies. Here's the dependencies added in the  `build.gradle.kts` file:
+We'll use Kotlin 1.9.23 and Kotlinx coroutines 1.8.0. In fact, flows are part of the Kotlin coroutines library. We'll use the Gradle build tool to manage our dependencies. Here's the dependencies added in the  `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
@@ -1449,7 +1449,7 @@ As promised, here is the complete Gradle configuration we used in this article:
 
 ```kotlin
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.9.22"
+    id("org.jetbrains.kotlin.jvm") version "1.9.23"
 }
 
 repositories {
