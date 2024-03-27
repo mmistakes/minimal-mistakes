@@ -174,7 +174,7 @@ public interface Flow<out T> {
 
 The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.
 
-## X. Flows Lifecycle
+## 3. Flows Lifecycle
 
 The Kotlin coroutines library provides a set of functions to control the lifecycle of a flow. Barely, we can add an hook function for flow creation, for each emitted element, and for the completion of the flow. 
 
@@ -271,7 +271,7 @@ End of the Spider Men flow
 
 What if during the execution of the flow an exception is thrown? Let's see what the library does for us in the next section.
 
-## X. Flows Error Handling
+## 4. Flows Error Handling
 
 If something can possibly go wrong, it will. Flows execution is no exception. In fact, the Kotlin coroutines library provides a set of functions to handle errors during the execution of a flow.
 
@@ -310,8 +310,6 @@ val actorsEmptyFlow_v2 =
         }
         .collect { println(it) }
 ```
-
-## Z. Handling Exceptions in Flows
 
 Another common case is when and exceptions raises during the execution of a flow. First, let's see what happens if we don't use any recovering mechanism. Our example will print the actors playing Sprider Men, but during the emission of the actors we'll throw an exception:
 
@@ -608,7 +606,152 @@ actorRepository
 
 And, that's all for the error handling in flows.
 
-## 3. Flows and Coroutines
+## 5. Working with Flows
+
+As you may guess, working with flows doesn't reduce to create and consume them. In fact, we can transform them, filter them, and combine them and access to all the steps of their life cycle.
+
+Flows are very similar to collections in terms of the API available for transforming them. In fact, we can map, filter, and reduce them. Let's start with transforming the values emitted by a flow. We can use the `map` function. For example, we can get out of an `Actor` who played in the Justice League movie only it lastname:
+
+```kotlin
+val lastNameOfJLActors: Flow<LastName> = zackSnyderJusticeLeague.map { it.lastName }
+```
+
+Easy peasy. We can now filter this new flow retaining only the actors whose last name counts 5 characters:
+
+```kotlin
+val lastNameOfJLActors5CharsLong: Flow<LastName> =
+    lastNameOfJLActors.filter { it.lastName.length == 5 }
+```
+
+We should also try to map and filter in the same step. In fact, flows provide the `mapNotNull` function that applies a transformation that can create `null` values and then filters out those `null` values:
+
+```kotlin
+val lastNameOfJLActors5CharsLong_v2: Flow<LastName> =
+    zackSnyderJusticeLeague.mapNotNull {
+      if (it.lastName.lastName.length == 5) {
+        it.lastName
+      } else {
+        null
+      }
+    }
+```
+
+The above functions, `map` and `filter`, and many others, are expressed internally as a combination of the `flow` builder function and the `collect` terminal operation. For example, we can define the `map` function as follows:
+
+```kotlin
+fun <T, R> Flow<T>.map(transform: suspend (value: T) -> R): Flow<R> =
+    flow {
+        this@map.collect { value ->
+            emit(transform(value))
+        }
+    }
+```
+
+The implementation we found in the library has some differences indeed, but the concept is the same. We're creating a new flow collecting the values of the original flow and emitting the transformation to them. If you think about the above implementation is quite elegant. since it's straightforward to understand and read. The same is for the `filter` function:
+
+```kotlin
+fun <T> Flow<T>.filter(predicate: suspend (value: T) -> Boolean): Flow<T> =
+    flow {
+        this@filter.collect { value ->
+            if (predicate(value)) {
+                emit(value)
+            }
+        }
+    }
+```
+
+Smooth.
+
+Usually, the third operation we find on collections/sequences after the `map` and the `filter` functions is the `fold` function. As you might guess, the `fold` function is used to reduce the values of a flow to a single value. It's a final operation, like the `collect` function, which means it suspends the current coroutine until the flow ends to emit values. It requires an initial value used to accumulate the final result. In out case we can use the `fold` function to count the number of actors playing in the "Zack Snyder's Justice League" movie. The initial value in our example is the number `0`, the unit value for the sum operation on integers:
+
+```kotlin
+val numberOfJlaActors: Int =
+      zackSnyderJusticeLeague.fold(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
+```
+
+Also for the `fold` function, its implementation if very straightforward. It simply accumulates the results of the accumulation into a local variable using the value emitted by the flow through the `collect` function:
+
+```kotlin
+// Kotlin Coroutines Library
+public suspend inline fun <T, R> Flow<T>.fold(
+    initial: R,
+    crossinline operation: suspend (acc: R, value: T) -> R
+): R {
+    var accumulator = initial
+    collect { value ->
+        accumulator = operation(accumulator, value)
+    }
+    return accumulator
+}
+```
+
+To be fair, there is a dedicated function called `count` to count the number of elements of a finite flow. It's a terminal operation either and it returns the number of elements emitted by the flow. Then, the previous example can be rewritten as follows:
+
+```kotlin
+val numberOfJlaActors_v2: Int = zackSnyderJusticeLeague.count()
+```
+
+As you might guess, the `fold` and the `count` functions doesn't work well with infinite flows. In fact, the library gives us a dedicated function for infinite flows, the `scan` function. It works like `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. Unlike the `fold` function, the `scan` function is not a terminal operation.
+
+For sake of completeness, let's emit a value that represents the number of actors emitted by the `infiniteJLFlowActors` flow at every value emission. We can add a delay of 1 second to make the code more spicy:
+
+```kotlin
+infiniteJLFlowActors
+    .onEach { delay(1000) }
+    .scan(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
+    .collect { println(it) }
+
+```
+
+The output of the program is:
+
+```
+0
+(1 sec.)
+1
+(1 sec.)
+2
+(1 sec.)
+3
+(1 sec.)
+4
+(1 sec.)
+5
+(1 sec.)
+...
+```
+
+As for the previous functions we saw, the implementation of `scan` is quite elegant and straightforward:
+
+```kotlin
+// Kotlin Coroutines Library
+public fun <T, R> Flow<T>.scan(initial: R, operation: suspend (accumulator: R, value: T) -> R): Flow<R> = flow {
+    var accumulator: R = initial
+    emit(accumulator)
+    collect { value ->
+        accumulator = operation(accumulator, value)
+        emit(accumulator)
+    }
+}
+```
+
+When dealing with infinite flows, we can always try to get the first _n_ elements of the flow and then stop the collection. The `take` function is used to do that. For example, we can get the first 3 actors playing in the "Zack Snyder's Justice League" movie:
+
+```kotlin
+infiniteJLFlowActors.take(3) 
+```
+
+The `take` function is a transformation, which means it returns a new flow just like `map` or `filter`. If the original flow was infinite, the new flow will be finite.
+
+The `drop` function makes the opposite operation. It skips the first _n_ elements of the flow and then emits the remaining ones. For example, we can skip the first 3 actors playing in the "Zack Snyder's Justice League" movie:
+
+```kotlin
+infiniteJLFlowActors.drop(3) 
+```
+
+Clearly, dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
+
+## 6. Flows and Coroutines
 
 It's important to notice that despite being a suspending function, the `collect` function is inherently synchronous. No new coroutine is started under the hood. Let's try to put a print statement immediately after the `collect` function of the previous flow:
 
@@ -857,152 +1000,7 @@ val actorRepository: ActorRepository =
 actorRepository.findJLAActors().flowOn(Dispatchers.IO).collect { actor -> println(actor) }
 ```
 
-## 4. Working with Flows
-
-As you may guess, working with flows doesn't reduce to create and consume them. In fact, we can transform them, filter them, and combine them and access to all the steps of their life cycle. 
-
-Flows are very similar to collections in terms of the API available for transforming them. In fact, we can map, filter, and reduce them. Let's start with transforming the values emitted by a flow. We can use the `map` function. For example, we can get out of an `Actor` who played in the Justice League movie only it lastname:
-
-```kotlin
-val lastNameOfJLActors: Flow<LastName> = zackSnyderJusticeLeague.map { it.lastName }
-```
-
-Easy peasy. We can now filter this new flow retaining only the actors whose last name counts 5 characters:
-
-```kotlin
-val lastNameOfJLActors5CharsLong: Flow<LastName> =
-    lastNameOfJLActors.filter { it.lastName.length == 5 }
-```
-
-We should also try to map and filter in the same step. In fact, flows provide the `mapNotNull` function that applies a transformation that can create `null` values and then filters out those `null` values:
-
-```kotlin
-val lastNameOfJLActors5CharsLong_v2: Flow<LastName> =
-    zackSnyderJusticeLeague.mapNotNull {
-      if (it.lastName.lastName.length == 5) {
-        it.lastName
-      } else {
-        null
-      }
-    }
-```
-
-The above functions, `map` and `filter`, and many others, are expressed internally as a combination of the `flow` builder function and the `collect` terminal operation. For example, we can define the `map` function as follows:
-
-```kotlin
-fun <T, R> Flow<T>.map(transform: suspend (value: T) -> R): Flow<R> =
-    flow {
-        this@map.collect { value ->
-            emit(transform(value))
-        }
-    }
-```
-
-The implementation we found in the library has some differences indeed, but the concept is the same. We're creating a new flow collecting the values of the original flow and emitting the transformation to them. If you think about the above implementation is quite elegant. since it's straightforward to understand and read. The same is for the `filter` function:
-
-```kotlin
-fun <T> Flow<T>.filter(predicate: suspend (value: T) -> Boolean): Flow<T> =
-    flow {
-        this@filter.collect { value ->
-            if (predicate(value)) {
-                emit(value)
-            }
-        }
-    }
-```
-
-Smooth.
-
-Usually, the third operation we find on collections/sequences after the `map` and the `filter` functions is the `fold` function. As you might guess, the `fold` function is used to reduce the values of a flow to a single value. It's a final operation, like the `collect` function, which means it suspends the current coroutine until the flow ends to emit values. It requires an initial value used to accumulate the final result. In out case we can use the `fold` function to count the number of actors playing in the "Zack Snyder's Justice League" movie. The initial value in our example is the number `0`, the unit value for the sum operation on integers:
-
-```kotlin
-val numberOfJlaActors: Int =
-      zackSnyderJusticeLeague.fold(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
-```
-
-Also for the `fold` function, its implementation if very straightforward. It simply accumulates the results of the accumulation into a local variable using the value emitted by the flow through the `collect` function:
-
-```kotlin
-// Kotlin Coroutines Library
-public suspend inline fun <T, R> Flow<T>.fold(
-    initial: R,
-    crossinline operation: suspend (acc: R, value: T) -> R
-): R {
-    var accumulator = initial
-    collect { value ->
-        accumulator = operation(accumulator, value)
-    }
-    return accumulator
-}
-```
-
-To be fair, there is a dedicated function called `count` to count the number of elements of a finite flow. It's a terminal operation either and it returns the number of elements emitted by the flow. Then, the previous example can be rewritten as follows:
-
-```kotlin
-val numberOfJlaActors_v2: Int = zackSnyderJusticeLeague.count()
-```
-
-As you might guess, the `fold` and the `count` functions doesn't work well with infinite flows. In fact, the library gives us a dedicated function for infinite flows, the `scan` function. It works like `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. Unlike the `fold` function, the `scan` function is not a terminal operation.
-
-For sake of completeness, let's emit a value that represents the number of actors emitted by the `infiniteJLFlowActors` flow at every value emission. We can add a delay of 1 second to make the code more spicy:
-
-```kotlin
-infiniteJLFlowActors
-    .onEach { delay(1000) }
-    .scan(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
-    .collect { println(it) }
-
-```
-
-The output of the program is:
-
-```
-0
-(1 sec.)
-1
-(1 sec.)
-2
-(1 sec.)
-3
-(1 sec.)
-4
-(1 sec.)
-5
-(1 sec.)
-...
-```
-
-As for the previous functions we saw, the implementation of `scan` is quite elegant and straightforward:
-
-```kotlin
-// Kotlin Coroutines Library
-public fun <T, R> Flow<T>.scan(initial: R, operation: suspend (accumulator: R, value: T) -> R): Flow<R> = flow {
-    var accumulator: R = initial
-    emit(accumulator)
-    collect { value ->
-        accumulator = operation(accumulator, value)
-        emit(accumulator)
-    }
-}
-```
-
-When dealing with infinite flows, we can always try to get the first _n_ elements of the flow and then stop the collection. The `take` function is used to do that. For example, we can get the first 3 actors playing in the "Zack Snyder's Justice League" movie:
-
-```kotlin
-infiniteJLFlowActors.take(3) 
-```
-
-The `take` function is a transformation, which means it returns a new flow just like `map` or `filter`. If the original flow was infinite, the new flow will be finite.
-
-The `drop` function makes the opposite operation. It skips the first _n_ elements of the flow and then emits the remaining ones. For example, we can skip the first 3 actors playing in the "Zack Snyder's Justice League" movie:
-
-```kotlin
-infiniteJLFlowActors.drop(3) 
-```
-
-Clearly, dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
-
-## Z. Racing Flows
+## 7. Racing Flows
 
 In the previous sections we focused on working with one flow. However, flows are a very nice data structure to work with concurrency. The first operation we'll analyzed is the `merge` function. It lets us run two flows concurrently, collecting the results in a single flow as they are produced. Neither of the two streams waits for the other to emit a value. For example, let's merge the JLA flow and the Avenger flow:
 
@@ -1308,11 +1306,11 @@ Does it mean that we can't use flows to managed hot data sources? Well, we can. 
 
 Since the focus of this  article is to introduce the main features of flows, we left for a future work the description of the hot data sources available in the library.
 
-## E. Conclusions
+## 8. Conclusions
 
 Ladies and gentlemen, we reach the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We only left out how to manage hot data sources using flows, but we'll return on the topic in a future post. We hope you found the article useful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
 
-## X. Appendix: How Flows Work
+## 9. Appendix: How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
 
@@ -1445,7 +1443,7 @@ fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow<T> =
 
 That's it. The above implementation is quite similar to the actual implementation of flows in the Kotlin coroutines library. This journey let us understand that behind flows there is not magic at all, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can proceed to define more complex use cases using flows.
 
-## G. Appendix: Gradle Configuration
+## 10. Appendix: Gradle Configuration
 
 As promised, here is the complete Gradle configuration we used in this article:
 
