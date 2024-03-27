@@ -11,7 +11,7 @@ toc_label: "In this article"
 
 _By [Riccardo Cardin](https://github.com/rcardin)_
 
-In the article [Kotlin Coroutines—A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/), we saw how to use Kotlin coroutines to write asynchronous code in a more natural and readable way. This article will focus on another important concept in Kotlin coroutines: Kotlin flows. Flows are a type of data structure you didn't know, but once you know them, you can't live without them. So, without further ado, let's dive into Kotlin Flows.
+In the article [Kotlin Coroutines—A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/), we saw how to use Kotlin coroutines to write asynchronous code in a more natural and readable way. This article will focus on another crucial concept in Kotlin coroutines: Kotlin flows. Flows are a data structure you didn't know, but you can't live without them once you know them. So, without further ado, let's dive into Kotlin Flows.
 
 ## 1. Setting the Stage
 
@@ -70,7 +70,7 @@ We have defined the actors playing in the movies "Zack Snyder's Justice League",
 
 ## 2. Flows Basics
 
-What is a flow in Kotlin? A `Flow<T>` is a reactive data structure that emits a sequence of values of type `T`. Flows are part of the Kotlin coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. In fact we can create a flow from a finite list of values using the `flowOf` function:
+What is a flow in Kotlin? A `Flow<T>` is a reactive data structure that emits a sequence of type `T` values. Flows are part of the Kotlin coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. We can create a flow from a finite list of values using the `flowOf` function:
 
 ```kotlin
 val zackSnyderJusticeLeague: Flow<Actor> = 
@@ -79,7 +79,7 @@ val zackSnyderJusticeLeague: Flow<Actor> =
         galGodot,
         ezraMiller,
         benFisher,
-        rayHardy,
+        benAffleck
         jasonMomoa
     )
 ```
@@ -106,7 +106,7 @@ val theMostRecentSpiderManFun: () -> Actor = { tomHolland }
 val theMostRecentSpiderMan: Flow<Actor> = theMostRecentSpiderManFun.asFlow()
 ```
 
-Under the hood, all the above `Flow` factories are defined in terms of the so called flow builder, aka the `flow` function. The `flow` function is the most general way to create a flow. It takes a lambda that can emit values using the `emit` function. Let's make an example to clarify this concept. We want to create a flow that emits the actors that played in the "Spider Man" movies as main character. We can define the following flow:
+Under the hood, all the above `Flow` factories are defined in terms of the so-called flow builder, aka the `flow` function. The `flow` function is the most general way to create a flow. It takes a lambda that can emit values using the `emit` function. Let's make an example to clarify this concept. We want to create a flow that emits the actors in the "Spider-Man" movies as main characters. We can define the following flow:
 
 ```kotlin
 val spiderMen: Flow<Actor> = flow {
@@ -116,7 +116,7 @@ val spiderMen: Flow<Actor> = flow {
 }
 ```
 
-Maybe, you're wondering from where the `emit` function comes from. Well, the lambda passed as parameter to the `flow` function defined as its receiver an instance of a functional interface called `FlowCollector`. The `FlowCollector` interface has a single method called `emit` that allows to emit a value. We'll see more about the `Flow` internals in the next sections. For now, it's enough to know that the `emit` function is used to emit a value within the `flow`.
+Maybe you're wondering where the `emit` function comes from. The lambda is passed as a parameter to the `flow` function, which is defined as its receiver and an instance of a functional interface called `FlowCollector`. The `FlowCollector` interface has a single method called `emit` that allows it to emit a value. We'll see more about the `Flow` internals in the following sections. For now, it's enough to know that the `emit` function emits a value within the `flow`.
 
 It's easy to define the previous factory methods in terms of the `flow` function. For example, the `flowOf` function is defined as follows:
 
@@ -129,7 +129,7 @@ fun <T> flowOf(vararg values: T): Flow<T> = flow {
 }
 ```
 
-Since it's a reactive data structure, the values in a flow are not computed until they are requested. A `Flow<T>` it's just a definition of how to compute the values, not the values themselves. This is a fundamental difference with collections, sequences, and iterables. In fact, we can define an infinite `Flow` quite easily:
+Since it's a reactive data structure, the values in a flow are only computed once requested. A `Flow<T>` is just a definition of calculating the values, not the values themselves, which is a fundamental difference with collections, sequences, and iterables. We can define an infinite `Flow` quite easily:
 
 ```kotlin
 val infiniteJLFlowActors: Flow<Actor> = flow {
@@ -144,9 +144,9 @@ val infiniteJLFlowActors: Flow<Actor> = flow {
 }
 ```
 
-The flow `infiniteJLFlowActors` doesn't emit values during creation. If we put a print statement immediately after the flow definition, we will see the output.
+The flow `infiniteJLFlowActors` doesn't emit values during creation. We will see the output if we put a print statement immediately after the flow definition.
 
-Consuming a `Flow` it's quite straightforward. In fact, on the `Flow` type is defined one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda that is called for each value emitted by the flow. Say that we want to print the actors playing in the "Zack Snyder's Justice League" movie, we'll use the following code:
+Consuming a `Flow` is relatively straightforward. The `Flow` type is defined by one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda, which is called for each value the flow emits. Say we want to print the actors playing in "Zack Snyder's Justice League" movie. We'll use the following code:
 
 ```kotlin
 suspend fun main() {
@@ -163,7 +163,7 @@ suspend fun main() {
 }
 ```
 
-As the most of you would have noticed, we called the `collect` function from the `suspend main` function. In fact, the `collect` method is defined as a suspending function since it has to wait and suspend for consuming the emitted values without blocking a thread. Here is the definition of the `Flow` type:
+As most of you would have noticed, we called the `collect` function from the `suspend main` function. The `collect` method is a suspending function since it has to wait and suspend for consuming the emitted values without blocking a thread. Here is the definition of the `Flow` type:
 
 ```kotlin
 // Kotlin Coroutines Library
@@ -172,7 +172,7 @@ public interface Flow<out T> {
 }
 ```
 
-The `collect` function is one of the possible *terminal operations*. They are so called because they consumer the values contained in the `Flow`.
+The `collect` function is one of the possible terminal operations. It is so-called because it consumes the values contained in the `Flow`.
 
 ## 3. Flows Lifecycle
 
