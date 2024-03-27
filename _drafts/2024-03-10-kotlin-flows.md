@@ -176,9 +176,9 @@ The `collect` function is one of the possible terminal operations. It is so-call
 
 ## 3. Flows Lifecycle
 
-The Kotlin coroutines library provides a set of functions to control the lifecycle of a flow. Barely, we can add an hook function for flow creation, for each emitted element, and for the completion of the flow. 
+The Kotlin coroutines library provides a set of functions to control a flow's lifecycle. We can only add a hook function for flow creation, for each emitted element, and for the completion of the flow.
 
-The `onStart` function lets us adding operations to be executed when the flow is started. We pass a lambda to the `onStart` function. A good question is: When a flow is started? A flow is started when a terminal operation is called on it. We've seen the `collect` function as terminal operation so far. The lambda of the `onStart` function is executed immediately after the terminal operation. It doesn't wait the first element to be emitted. Let's make an example. We want to print a message when the flow is started. Also, we want to simulate some latency in the emission of the values.
+The `onStart` function lets us add operations to be executed when the flow is started. We pass a lambda to the `onStart` function. A good question is: When does a flow starto emit values? A flow is started when a terminal operation is called on it. So far, we've seen the `collect` function as a terminal operation. The lambda of the `onStart` function is executed immediately after the terminal operation. It doesn't wait for the first element to be emitted. Let's make an example. We want to print a message when the flow is started. Also, we want to simulate some latency in the emission of the values.
 
 ```kotlin
 val spiderMenWithLatency: Flow<Actor> = flow {
@@ -192,7 +192,7 @@ spiderMenWithLatency
     .collect { println(it) }
 ```
 
-What do we expect from the program? We expect the program to print the message "Starting Spider Men flow" immediately and then, after 1 second, the actors playing. Indeed, the output of the program is exactly what we expect:
+What do we expect from the program? We expect the program to print the message "Starting Spider-Men flow" immediately and then, after 1 second, the actors playing. Indeed, the output of the program is what we expect:
 
 ```
 Starting Spider Men flow
@@ -211,7 +211,7 @@ public fun <T> Flow<T>.onStart(
 ): Flow<T>
 ```
 
-First, we see that the `onStart` function is an extension function defined on a `Flow<T>` receiver. However, the interesting thing is that the `action` lambda has a `FlowCollector<T>` as receiver, which means that we can emit values inside it. As an example, we can add the emission of Paul Robert Soles, the actor who played the voice of the Spider Man in the 1967 animated series, in the `onStart` function:
+First, the `onStart` function is an extension function defined on a `Flow<T>` receiver. However, the exciting thing is that the `action` lambda has a `FlowCollector<T>` as the receiver, meaning we can emit values inside it. As an example, we can add the emission of Paul Robert Soles, the actor who played the voice of Spider-Man in the 1967 animated series, in the `onStart` function:
 
 ```kotlin
 spiderMenWithLatency
@@ -228,9 +228,9 @@ Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(las
 Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
 ```
 
-On the other hand, the `onEach` function is used to apply a lambda to each value emitted by the flow. The function has the same features of the `onStart` function, which means it accept a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` let us emit new values inside the lambda.
+On the other hand, the `onEach` function is used to apply a lambda to each value emitted by the flow. The function has the same features as the `onStart` function, which means it accepts a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` lets us emit new values inside the lambda.
 
-Let's say we want to add a delay of one second between the emission of each actors playing the Spider Man role. We can use the `onEach` function to add the delay:
+Let's add a delay of one second between the emissions of each actor playing the Spider-Man role. We can use the `onEach` function to add the delay:
 
 ```kotlin
 spiderMen
@@ -238,7 +238,7 @@ spiderMen
     .collect { println(it) }
 ```
 
-As you may guess, we can use the `onEach` function as a surrogate of the `collect` function. In fact, we can pass to the lambda we would have passed to the `collect` function to the `onEach` function. At this point, calling `collect` will trigger the effective execution of the flow. For example, we can rewrite the previous example as follows:
+As you may guess, we can use the `onEach` function as a surrogate of the `collect` function. We can pass to the lambda we would have passed to the `collect` function to the `onEach` function. At this point, calling `collect` will trigger the effective execution of the flow. For example, we can rewrite the previous example as follows:
 
 ```kotlin
 spiderMen.onEach { 
@@ -247,9 +247,9 @@ spiderMen.onEach {
 }.collect()
 ```
 
-To be fair, the above approach is quite common in the Kotlin community since it produces code that is more close to the use of other collections in Kotlin.
+The above approach is quite common in the Kotlin community since it produces code closer to the use of other collections in Kotlin.
 
-Finally, we can add some behavior at the end of the flow, after all its values have been emitted. We can use the `onCompletion` function to add a lambda to be executed when the flow is completed. Again, the lambda passed to the function has a `FlowCollector<T>` as receiver, so we can emit additional value at the end of the flow execution. For example, we can use the `onCompletion` function to print a message when the flow is completed:
+Finally, we can add some behavior at the end of the flow after all its values have been emitted. We can use the `onCompletion` function to add a lambda to be executed when the flow is completed. Again, the lambda passed to the function has a `FlowCollector<T>` as the receiver so that we can emit additional value at the end of the flow execution. For example, we can use the `onCompletion` function to print a message when the flow is completed:
 
 ```kotlin
 spiderMen
@@ -269,13 +269,13 @@ Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastNa
 End of the Spider Men flow
 ```
 
-What if during the execution of the flow an exception is thrown? Let's see what the library does for us in the next section.
+What if an exception is thrown during the flow's execution? In the next section, let's see what the library does for us.
 
 ## 4. Flows Error Handling
 
-If something can possibly go wrong, it will. Flows execution is no exception. In fact, the Kotlin coroutines library provides a set of functions to handle errors during the execution of a flow.
+If something can go wrong, it will. Flow execution is no exception. In fact, the Kotlin coroutines library provides a set of functions to handle errors during flow execution.
 
-The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's quite uncommon to build intentionally flows that don't emit anything. The Kotlin coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function a good candidate to emit some default value for an empty flow:
+The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's uncommon to build intentional flows that don't emit anything. The Kotlin Coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function an excellent candidate to emit some default value for an empty flow:
 
 ```kotlin
 val actorsEmptyFlow =
@@ -297,7 +297,7 @@ Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastN
 Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
 ```
 
-It's possible to create an empty flow also using a dedicated builder, called `emptyFlow`. The `emptyFlow` function returns a flow that doesn't emit any value. We can rewrite the above example using the `emptyFlow` function as follows:
+Creating an empty flow using a dedicated builder called `emptyFlow` is possible. The `emptyFlow` function returns a flow that emits no value. We can rewrite the above example using the `emptyFlow` function as follows:
 
 ```kotlin
 val actorsEmptyFlow_v2 =
@@ -311,7 +311,7 @@ val actorsEmptyFlow_v2 =
         .collect { println(it) }
 ```
 
-Another common case is when and exceptions raises during the execution of a flow. First, let's see what happens if we don't use any recovering mechanism. Our example will print the actors playing Sprider Men, but during the emission of the actors we'll throw an exception:
+Another typical case is when exceptions arise during the execution of a flow. First, let's see what happens if we don't use any recovery mechanism. Our example will print the actors playing Spider-Man, but during the emission of the actors, we'll throw an exception:
 
 ```kotlin
 val spiderMenActorsFlowWithException =
@@ -337,7 +337,7 @@ Exception in thread "main" java.lang.RuntimeException: An exception occurred
 ...
 ```
 
-What can we see from the above output? First, that an exception in the flow execution breaks it and avoid the emission of the values after the exception. To be fair, the coroutine executing the suspending lambda function passed to the `collect` function is cancelled by the exception (see next sections for further details) that will bubble up to the context that called the `collect` function. Second, that the `onCompletion` function is called even if an exception is thrown during the execution of the flow. So, the `onCompletion` function is called when the flow is completed, no matter if an exception is thrown or not. We can think about it as a `finally` block.
+What can we see from the above output? First, an exception in the flow execution breaks it and avoids the emission of the values after the exception. The coroutine executing the suspending lambda function passed to the `collect` function is canceled by the exception (see following sections for further details) that will bubble up to the context called the `collect` function. Second, the `onCompletion` function is called even if an exception is thrown during the execution of the flow. So, the `onCompletion` function is called when the flow is completed, whether an exception is thrown or not. We can think about it as a `finally` block.
 
 Can we catch the exception in some way and recover from it? Yep, we can. The library provides a `catch` method that we can chain to the flow to handle exceptions. The `catch` function is defined as follows:
 
@@ -364,7 +364,7 @@ val spiderMenActorsFlowWithException_v3 =
         .collect { println(it) }
 ```
 
-The `catch` function will intercept the `RuntimeException` and will emit the `tomHolland` actor value. The output of the program will be:
+The `catch` function will intercept the `RuntimeException` and emit the `tomHolland` actor value. The output of the program will be:
 
 ```
 The Spider Men flow is starting
@@ -374,7 +374,7 @@ Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastNa
 The Spider Men flow is completed
 ```
 
-So far so good. Another important feature of the `catch` function is that it catches all the exceptions thrown during the executions of the transformations chained to the flow before it. Let's make an example. The following code will throw an exception that will be easily handled by the `catch` function:
+So far, so good. Another essential feature of the `catch` function is that it catches all the exceptions thrown during the executions of the transformations chained to the flow before it. Let's make an example. The following code will throw an exception that will be easily handled by the `catch` function:
 
 ```kotlin
 val spiderMenNames =
@@ -402,7 +402,7 @@ ANDREW GARFIELD
 TOM HOLLAND
 ```
 
-What will happen if the move the throwing of the exception after the `catch` function? Let's see:
+What will happen if we move the throwing of the exception after the `catch` function? Let's see:
 
 ```kotlin
 val spiderMenNames =
@@ -423,7 +423,7 @@ val spiderMenNames =
     .collect { println(it) }
 ```
 
-Nothing will catch the exception thrown by the second `map` function, and the flow will be cancelled and the exception will bubble up. IN fact, the output of the program is the following:
+Nothing will catch the exception thrown by the second `map` function, the flow will be canceled, and the exception will bubble up. The output of the program is the following:
 
 ```
 TOBEY MAGUIRE
@@ -459,7 +459,7 @@ Exception in thread "main" java.lang.RuntimeException: Oooops
 ...
 ```
 
-The only way we have to prevent this case is to move the `collect` logic into a dedicated `onEach` function, and put a `catch` in the chain after the `onEach` function. We can rewrite the above example as follows:
+The only way we can prevent this case is to move the `collect` logic into a dedicated `onEach` function and put a `catch` in the chain after the `onEach` function. We can rewrite the above example as follows:
 
 ```kotlin
 val spiderMenActorsFlowWithException =
@@ -486,7 +486,7 @@ I caught an exception!
 The Spider Men flow is completed
 ```
 
-We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above example, catched or not, the thrown exception ended the flow. What if we want to embrace the fact that an operation can fail now and then, and we want to retry it? We can think to the call to an external service that requires a communication over the net. The network connection can be temporarly broken, the service can be temporarly unavailable due to high traffic, and so on. It's common that making a new retry of the operation can solve the problem. The Kotlin coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function.
+We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above examples, caught or not, the thrown exception ended the flow. What if we want to embrace that an operation can fail now and then, and we want to retry it? We can think of the call to an external service that requires communication over the net. The network connection can be temporarily broken, and the service may be unavailable due to high traffic. It's expected that making a new retry of the operation can solve the problem. The Kotlin coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function.
 
 The `retry` function is defined as follows:
 
@@ -498,7 +498,7 @@ public fun <T> Flow<T>.retry(
 ): Flow<T>
 ```
 
-The first parameter is the number of retries to make. The second parameter is a lambda that takes a `Throwable` as input and returns a `Boolean`. The lambda is used to decide if the operation should be retried or not. The default value of the `predicate` parameter is a lambda that always returns `true`, so the operation is always retried.
+The first parameter is the number of retries to make. The second parameter is a lambda that takes a `Throwable` as input and returns a `Boolean`. The lambda decides whether the operation should be retried. The default value of the `predicate` parameter is a lambda that always returns `true`, so the operation is always retried.
 
 Let's make a real example. We can create a repository interface to mimic the I/O operations over the network:
 
@@ -529,7 +529,7 @@ val actorRepository: ActorRepository =
     }
 ```
 
-Basically, the execution of the `findJLAActors` function will throw an exception the first time it's called. The second time, it will emit all the actors playing in the "Zack Snyder's Justice League" movie. The above example mimics a temporary network glitch. We can now use the `retry` function to retry the execution of the `findJLAActors` function and print all the actors playing in the movie:
+Executing the `findJLAActors` function will throw an exception the first time it's called. The second time, it will emit all the actors playing in the "Zack Snyder's Justice League" movie. The above example mimics a temporary network glitch. We can now use the `retry` function to retry the execution of the `findJLAActors` function and print all the actors playing in the movie:
 
 ```kotlin
 actorRepository
@@ -538,7 +538,7 @@ actorRepository
     .collect { println(it) }
 ```
 
-We'll retry 2 times to call the `findJLAActors` function. So, we expect the first attempt to print the first 2 actors, and the second attempt to print all the list. In fact, the output of the program is what we expect:
+We'll retry two times to call the `findJLAActors` function. So, we expect the first attempt to print the first two actors and the second to print the entire list. The output of the program is what we expect:
 
 ```
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
@@ -552,7 +552,7 @@ Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastNam
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
-However, in such cases it's common and good practice to wait a bit between the retries to let the glitch to be resolved. We can add a delay in the lambda passed to the `retry` function:
+However, in such cases, waiting between the retries to resolve the glitch is familiar and good practice. We can add a delay in the lambda passed to the `retry` function:
 
 ```kotlin
 actorRepository
@@ -565,7 +565,7 @@ actorRepository
     .collect { println(it) }
 ```
 
-In this case, we also add a log. Please, remember to say that the function should be retried or not returning the proper boolean value. Running the above code will make the fact an exception occurred more evident:
+In this case, we also add a log. Please remember to say that the function should be retried or not return the proper boolean value. Running the above code will make the fact an exception occurred more evident:
 
 ```
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
@@ -581,9 +581,9 @@ Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastNam
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
-Having the cause of the exception in input, we can always decide to retry or not based on the exception type.
+Having the cause of the exception in input, we can always decide whether to retry based on the exception type.
 
-In real-world scenario we will use a more sophisticated backoff policy and avoid retrying multiple times using the same interval. We need the current attempt number to implement such policies. To be fair, the `retry` function is a easier version of the more general `retryWhen` function that accept a lambda with two parameters as input: the exception and the attempt number. The `retryWhen` function is defined as follows:
+In a real-world scenario, we will use a more sophisticated back-off policy and avoid retrying multiple times using the same interval. We need the current attempt number to implement such policies. The `retry` function is a more accessible version of the more general `retryWhen` function that accepts a lambda with two parameters as input: the exception and the attempt number. The `retryWhen` function is defined as follows:
 
 ```kotlin
 // Kotlin Coroutines Library
@@ -604,7 +604,7 @@ actorRepository
     .collect { println(it) }
 ```
 
-And, that's all for the error handling in flows.
+That's all for error handling in flows.
 
 ## 5. Working with Flows
 
