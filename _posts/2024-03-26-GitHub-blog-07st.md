@@ -13,6 +13,8 @@ sidebar:
 
 ### 1. 공지사항
 
+> 확인
+
 <a href="https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/#notices" class="btn btn--primary">Notice 관련 페이지</a>
 
 | Notice Type | Class              |
