@@ -43,8 +43,5 @@ feature_row:
 
 <!-- [Read more here](posts/2022-10-31-Helmi-pilot/). -->
 
-<p style="text-align:center"> <a href="_posts/2022-11-01-Helmi-pilot/">  <font size="+3"> Read more here </font></a> </p>
-
-
 {% include feature_row %}
 

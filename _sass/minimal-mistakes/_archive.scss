@@ -93,6 +93,11 @@
   img {
     width: 100%;
   }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .archive__item-caption {
