@@ -1,3 +1,30 @@
+---
+layout: single
+title: "깃허브(GitHub) 블로그 10 : 사이드바에 카테고리, 태그 숫자 카운트"
+categories: blog
+tags:
+  - Github
+  - Blog
+author_profile: false
+sidebar:
+  - nav: "counts"
+redirect_from:
+  - /blog/GitHub-blog-10st
+---
+
+`_data\navigation.yml` 파일에 아래 코드 추가
+
+```
+counts:
+  - title: "카테고리"
+    use: true
+  - title: "태그"
+    use: true
+```
+
+`_includes\nav_list` 파일에 아래 코드 추가
+
+```
 {% assign navigation = site.data.navigation[include.nav] %}
 
 {% assign categories_max = 0 %}
@@ -57,3 +84,10 @@
   </ul>
   {% endif %}
 </nav>
+```
+
+포스트 안에 프론트매터에 값을 입력해준다.
+```
+sidebar:
+  - nav: "counts"
+```

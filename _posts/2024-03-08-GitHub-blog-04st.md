@@ -5,10 +5,11 @@ categories: blog
 tags:
   - Github
   - Blog
-toc: true
 author_profile: false
 sidebar:
-  - nav: "docs"
+  - nav: "counts"
+redirect_from:
+  - /blog/GitHub-blog-04st
 ---
 ### 블로그를 확인하려고 서버를 실행 시켰는데 오류가 나타났다.
 

@@ -5,10 +5,11 @@ categories: blog
 tags:
   - Github
   - Blog
-toc: true
 author_profile: false
 sidebar:
-  - nav: "docs"
+  - nav: "counts"
+redirect_from:
+  - /blog/GitHub-blog-06st
 ---
 ### 1. Author Profile 보이기 안보이기 옵션
 

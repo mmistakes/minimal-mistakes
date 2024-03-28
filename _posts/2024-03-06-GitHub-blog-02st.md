@@ -5,10 +5,11 @@ categories: blog
 tags:
   - Github
   - Blog
-toc: true
 author_profile: false
 sidebar:
-  - nav: "docs"
+  - nav: "counts"
+redirect_from:
+  - /blog/GitHub-blog-02st
 ---
 ### 내가 사용하는 편집기
 - Obsidian

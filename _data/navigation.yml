@@ -4,16 +4,24 @@ main:
    url: /categories/
  - title: "Tag"
    url: /tags/
+ - title: "By Year"
+   url: /year-archive/
  - title: "Search"
    url: /search/
 
-docs:
-  - title: "List"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+#docs:
+#  - title: "List"
+#    children:
+#      - title: "Category"
+#        url: /categories/
+#      - title: "Tag"
+#        url: /tags/
+
+counts:
+  - title: "Category"
+    use: true
+  - title: "Tag"
+    use: true
 
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/

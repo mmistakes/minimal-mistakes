@@ -128,6 +128,10 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-brands fa-youtube"
+      # url: "https://www.youtube.com/"
+
 
 # Site Footer
 footer:
@@ -149,6 +153,9 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
+      # url:
+    - label: "Youtube"
+      icon: "fab fa-fw fa-brands fa-youtube"
       # url:
 
 
@@ -230,6 +237,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -238,6 +246,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
   
 
 # Archives
@@ -291,5 +300,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: " 목차"
+      toc_icon: "fas fa-stream"
 
 date_format: "%Y-%m-%d"
