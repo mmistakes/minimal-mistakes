@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" #"default", "air", "aqua", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" #"default", "air", "aqua", "dark", "contrast", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Gyu FX"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Study Tech and Art"
+  location         : "Seoul City in ROK"
   email            :
   links:
     - label: "Email"
