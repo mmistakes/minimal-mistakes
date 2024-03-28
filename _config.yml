@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" #"default", "dirt", "aqua", "dark", "contrast", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" #"default", "dirt", "aqua", "dark", "air", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
