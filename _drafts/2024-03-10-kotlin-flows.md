@@ -1002,7 +1002,7 @@ actorRepository.findJLAActors().flowOn(Dispatchers.IO).collect { actor -> printl
 
 ## 7. Racing Flows
 
-In the previous sections we focused on working with one flow. However, flows are a very nice data structure to work with concurrency. The first operation we'll analyzed is the `merge` function. It lets us run two flows concurrently, collecting the results in a single flow as they are produced. Neither of the two streams waits for the other to emit a value. For example, let's merge the JLA flow and the Avenger flow:
+In the previous sections, we focused on working with one flow. However, flows are a very nice data structure that works with concurrency. The first operation we'll analyze is the `merge` function. It lets us run two flows concurrently, collecting the results in a single flow as they are produced. Neither of the two streams waits for the other to emit a value. For example, let's merge the JLA flow and the Avenger flow:
 
 ```kotlin
 val zackSnyderJusticeLeague: Flow<Actor> =
@@ -1045,9 +1045,9 @@ Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastNam
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
-As we may expect, the flow contains an actor of the JLA more or less every two actors of the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the flow. In fact, the execution halts when both flow have finished emitting all their values.
+As we may expect, the flow contains an actor from the JLA and almost every two actors from the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the flow. The execution halts when both flows have finished emitting all their values.
 
-The `merge` function is the first transformation we see that is not defined as an extension function of the `Flow` type. In fact, it's defined as a top-level function in the `Kotlinx.coroutines.flow` package. The `merge` function is defined as follows:
+The `merge` function is the first transformation we see not defined as an extension function of the `Flow` type. It's a top-level function in the `Kotlinx.coroutines.flow` package. The `merge` function is defined as follows:
 
 ```kotlin
 public fun <T> merge(vararg flows: Flow<T>): Flow<T>
@@ -1055,7 +1055,7 @@ public fun <T> merge(vararg flows: Flow<T>): Flow<T>
 
 As we can see, it receives an array of flows as input. So, we can merge and race the execution of more than two flows.
 
-Sometimes, we need to work with pairs of emitted value coming from both the flows. Imagine a scenario where we want to retrieve for an actor his/her biography and filmography. The two information is retrieved from different services and we want to get them concurrently and proceed in the execution only when both are available. The `zip` function is used to do that. 
+Sometimes, we must work with pairs of emitted values from both flows. Imagine a scenario where we want to retrieve the biography and filmography of an actor. The two pieces of information are retrieved from different services, and we want to get them concurrently and proceed with the execution only when both are available. The `zip` function is used to do that.
 
 First, we define a flow retrieving the biography of Henry Cavill:
 
@@ -1122,7 +1122,7 @@ and is of Irish, Scottish and English ancestry...
 Process finished with exit code 0
 ```
 
-As we may guess, the program printed the biography and the filmography of Henry Cavill after more or less 2 seconds since it has to wait that both the flows have emitted their values. Be aware that the `zip` function requires pairs of values. So, the resulting flow stops when the shortest of the two flows stops emitting values. If we zip a flow with the empty flow, the resulting flow will be empty as well. In fact, the following zipped flow doesn't emit any value:
+The program printed the biography and the filmography of Henry Cavill after more or less 2 seconds since it had to wait for both flows to emit their values. Be aware that the `zip` function requires pairs of values. So, the resulting flow stops when the shortest of the two flows stops emitting values. If we zip a flow with the empty flow, the resulting flow will also be empty. The following zipped flow doesn't emit any value:
 
 ```kotlin
 henryCavillBio
@@ -1142,20 +1142,20 @@ henryCavillBio
     }
 ```
 
-In the section dedicated to flow transformation we didn't introduce any flavour of `flatMap` function. It's quite common for data structures representing a collection of values to offer such a function. However, the emission of values in a flow can be delayed or even stopped. So, it's not straightforward to come up with a proper implementation of the `flatMap` function. We need to understand which flow has the precedence over the other. 
+In the section dedicated to flow transformation, we didn't introduce any flavor of the `flatMap` function. It's typical for data structures representing a collection of values to offer such a function. However, the emission of values in a flow can be delayed or even stopped. So, it's not straightforward to come up with a proper implementation of the `flatMap` function. We need to understand which flow has precedence over the other.
 
-The Kotlin coroutine library comes up with 3 different implementations of the `flatMap` function: `flatMapConcat`, `flatMapMerge`, and `flatMapLatest`. We'll focus on the first two functions since they are the most used.
+The Kotlin Coroutine library provides three different implementations of the `flatMap` function: `flatMapConcat`, `flatMapMerge`, and `flatMapLatest`. Since the first two functions are the most used, we'll focus on them.
 
-The `flatMapConcat` function process the emitted values of the first flow and for each the associated emitted values of the second flow. In other words, it waits for the second flow to emit all its values before processing the next value of the first flow. It's defined as follows in the coroutine library:
+The `flatMapConcat` function processes the emitted values of the first flow and, for each, the associated emitted values of the second flow. In other words, it waits for the second flow to emit all its values before processing the next value of the first flow. It's defined as follows in the coroutine library:
 
 ```kotlin
 @ExperimentalCoroutinesApi
 public fun <T, R> Flow<T>.flatMapConcat(transform: suspend (value: T) -> Flow<R>): Flow<R>
 ```
 
-The definition is quite common for an function belonging to the family of `flatMap` functions. 
+The definition is relatively standard for a function belonging to the family of `flatMap` functions.
 
-Let's make an example now. We'll extend a bit the flow containing the biographies of the actors who played the Justice League movie. First of all, we add a repository returning biographies of actors:
+Let's make an example now. We'll extend the flow by including the biographies of the actors who played in the Justice League movie. First of all, we add a repository returning biographies of actors:
 
 ```kotlin
 interface BiographyRepository {
@@ -1184,7 +1184,7 @@ val biographyRepository: BiographyRepository =
     }
 ```
 
-For the sake of simplicity, we added only the biographies of Henry Cavill and Ben Affleck. As we can see, the `findBio` function returns the biography of an actor as a flow: First his/her date of birth, them a brief introduction, and finally a small list of movies he/she played in.
+For the sake of simplicity, we added only the biographies of Henry Cavill and Ben Affleck. As we can see, the `findBio` function returns an actor's biography as a flow: first, their date of birth, a brief introduction, and finally, a small list of movies they played in.
 
 Now, we want to create a flow emitting only the actors `henryCavill` and `benAffleck`, and for each of them retrieving the biography. The `flatMapConcat` function is all that we need:
 
@@ -1196,7 +1196,7 @@ actorRepository
     .flatMapConcat { actor -> biographyRepository.findBio(actor)}
 ```
 
-As we said, the `flatMapConcat` function will take the first argument of the first flow, in this case `henryCavill`, and will wait for the second flow to emit all its values before processing the next value of the first flow. In fact, the output of the program is:
+As we said, the `flatMapConcat` function will take the first argument of the first flow, in this case, `henryCavill`, and will wait for the second flow to emit all its values before processing the next value of the first flow. The output of the program is:
 
 ```
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
