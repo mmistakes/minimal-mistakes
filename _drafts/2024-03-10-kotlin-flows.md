@@ -172,11 +172,11 @@ public interface Flow<out T> {
 }
 ```
 
-The `collect` function is one of the possible terminal operations. It is so-called because it consumes the values contained in the `Flow`.
+The `collect` function is one of the possible terminal operations. It is so-called because it consumes the values in the `Flow`.
 
 ## 3. Flows Lifecycle
 
-The Kotlin coroutines library provides a set of functions to control a flow's lifecycle. We can only add a hook function for flow creation, for each emitted element, and for the completion of the flow.
+The Kotlin coroutines library provides functions to control a flow's lifecycle. We can only add a hook function for flow creation, for each emitted element, and for the completion of the flow.
 
 The `onStart` function lets us add operations to be executed when the flow is started. We pass a lambda to the `onStart` function. A good question is: When does a flow starto emit values? A flow is started when a terminal operation is called on it. So far, we've seen the `collect` function as a terminal operation. The lambda of the `onStart` function is executed immediately after the terminal operation. It doesn't wait for the first element to be emitted. Let's make an example. We want to print a message when the flow is started. Also, we want to simulate some latency in the emission of the values.
 
@@ -273,7 +273,7 @@ What if an exception is thrown during the flow's execution? In the next section,
 
 ## 4. Flows Error Handling
 
-If something can go wrong, it will. Flow execution is no exception. In fact, the Kotlin coroutines library provides a set of functions to handle errors during flow execution.
+If something can go wrong, it will. Flow execution is no exception. The Kotlin coroutines library provides functions to handle errors during flow execution.
 
 The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's uncommon to build intentional flows that don't emit anything. The Kotlin Coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function an excellent candidate to emit some default value for an empty flow:
 
@@ -604,26 +604,26 @@ actorRepository
     .collect { println(it) }
 ```
 
-That's all for error handling in flows.
+That's all for error handling in flow execution.
 
 ## 5. Working with Flows
 
-As you may guess, working with flows doesn't reduce to create and consume them. In fact, we can transform them, filter them, and combine them and access to all the steps of their life cycle.
+Working with flows doesn't reduce creation and consumption. We can transform, filter, combine, and access all the steps of their life cycle.
 
-Flows are very similar to collections in terms of the API available for transforming them. In fact, we can map, filter, and reduce them. Let's start with transforming the values emitted by a flow. We can use the `map` function. For example, we can get out of an `Actor` who played in the Justice League movie only it lastname:
+Flows are very similar to collections regarding the API available for transforming them. We can map, filter, and reduce them. Let's start with changing the values emitted by a flow. We can use the `map` function. For example, we can get out of an `Actor` who played in the Justice League movie only its last name:
 
 ```kotlin
 val lastNameOfJLActors: Flow<LastName> = zackSnyderJusticeLeague.map { it.lastName }
 ```
 
-Easy peasy. We can now filter this new flow retaining only the actors whose last name counts 5 characters:
+Easy peasy. We can now filter this new flow, retaining only the actors whose last names count five characters:
 
 ```kotlin
 val lastNameOfJLActors5CharsLong: Flow<LastName> =
     lastNameOfJLActors.filter { it.lastName.length == 5 }
 ```
 
-We should also try to map and filter in the same step. In fact, flows provide the `mapNotNull` function that applies a transformation that can create `null` values and then filters out those `null` values:
+We should also map and filter in the same step. Flows provide the `mapNotNull` function that applies a transformation that can create `null` values and then filters out those `null` values:
 
 ```kotlin
 val lastNameOfJLActors5CharsLong_v2: Flow<LastName> =
@@ -647,7 +647,7 @@ fun <T, R> Flow<T>.map(transform: suspend (value: T) -> R): Flow<R> =
     }
 ```
 
-The implementation we found in the library has some differences indeed, but the concept is the same. We're creating a new flow collecting the values of the original flow and emitting the transformation to them. If you think about the above implementation is quite elegant. since it's straightforward to understand and read. The same is for the `filter` function:
+The implementation we found in the library has some differences, but the concept is the same. We're creating a new flow, collecting the values of the original flow, and emitting the transformation to them. The above implementation is quite elegant. The same is true for the `filter` function:
 
 ```kotlin
 fun <T> Flow<T>.filter(predicate: suspend (value: T) -> Boolean): Flow<T> =
@@ -662,14 +662,14 @@ fun <T> Flow<T>.filter(predicate: suspend (value: T) -> Boolean): Flow<T> =
 
 Smooth.
 
-Usually, the third operation we find on collections/sequences after the `map` and the `filter` functions is the `fold` function. As you might guess, the `fold` function is used to reduce the values of a flow to a single value. It's a final operation, like the `collect` function, which means it suspends the current coroutine until the flow ends to emit values. It requires an initial value used to accumulate the final result. In out case we can use the `fold` function to count the number of actors playing in the "Zack Snyder's Justice League" movie. The initial value in our example is the number `0`, the unit value for the sum operation on integers:
+Usually, the third operation we find on collections/sequences after the `map` and the `filter` functions is the `fold` function. As you might guess, the `fold` function is used to reduce the values of a flow to a single value. It's a final operation, like the `collect` function, which suspends the current coroutine until the flow ends to emit values. It requires an initial value used to accumulate the final result. We can use the `fold` function to count the actors playing in the "Zack Snyder's Justice League" movie. The initial value in our example is the number `0`, the unit value for the sum operation on integers:
 
 ```kotlin
 val numberOfJlaActors: Int =
       zackSnyderJusticeLeague.fold(0) { currentNumOfActors, actor -> currentNumOfActors + 1 }
 ```
 
-Also for the `fold` function, its implementation if very straightforward. It simply accumulates the results of the accumulation into a local variable using the value emitted by the flow through the `collect` function:
+Also, the implementation of the `fold` function is very straightforward. It simply accumulates the results of the accumulation into a local variable using the value emitted by the flow through the `collect` function:
 
 ```kotlin
 // Kotlin Coroutines Library
@@ -685,15 +685,15 @@ public suspend inline fun <T, R> Flow<T>.fold(
 }
 ```
 
-To be fair, there is a dedicated function called `count` to count the number of elements of a finite flow. It's a terminal operation either and it returns the number of elements emitted by the flow. Then, the previous example can be rewritten as follows:
+A dedicated function called `count` counts the number of elements of a finite flow. It's a terminal operation that returns the number of elements the flow emits. Then, the previous example can be rewritten as follows:
 
 ```kotlin
 val numberOfJlaActors_v2: Int = zackSnyderJusticeLeague.count()
 ```
 
-As you might guess, the `fold` and the `count` functions doesn't work well with infinite flows. In fact, the library gives us a dedicated function for infinite flows, the `scan` function. It works like `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. Unlike the `fold` function, the `scan` function is not a terminal operation.
+As you might guess, the `fold` and the `count` functions don't work well with infinite flows. The library gives us a dedicated function for infinite flows, the `scan` function. It works like a `fold`, accumulating the emitted values. However, it emits the result of the partial accumulation of each step. Unlike the `fold` function, the `scan` function is not a terminal operation.
 
-For sake of completeness, let's emit a value that represents the number of actors emitted by the `infiniteJLFlowActors` flow at every value emission. We can add a delay of 1 second to make the code more spicy:
+For completeness, let's emit a value representing the number of actors emitted by the `infiniteJLFlowActors` flow at every value emission. We can add a delay of 1 second to make the code more spicy:
 
 ```kotlin
 infiniteJLFlowActors
@@ -735,21 +735,21 @@ public fun <T, R> Flow<T>.scan(initial: R, operation: suspend (accumulator: R, v
 }
 ```
 
-When dealing with infinite flows, we can always try to get the first _n_ elements of the flow and then stop the collection. The `take` function is used to do that. For example, we can get the first 3 actors playing in the "Zack Snyder's Justice League" movie:
+When dealing with infinite flows, we can always get the flow's first _n_ elements and then stop the collection. The `take` function is used to do that. For example, we can get the first three actors playing in the "Zack Snyder's Justice League" movie:
 
 ```kotlin
 infiniteJLFlowActors.take(3) 
 ```
 
-The `take` function is a transformation, which means it returns a new flow just like `map` or `filter`. If the original flow was infinite, the new flow will be finite.
+The `take` function is a transformation, which returns a new flow like `map` or `filter`. If the original flow is infinite, the new flow will be finite.
 
-The `drop` function makes the opposite operation. It skips the first _n_ elements of the flow and then emits the remaining ones. For example, we can skip the first 3 actors playing in the "Zack Snyder's Justice League" movie:
+The `drop` function makes the opposite operation. It skips the flow's first _n_ elements and then emits the remaining ones. For example, we can skip the first three actors playing in "Zack Snyder's Justice League" movie:
 
 ```kotlin
 infiniteJLFlowActors.drop(3) 
 ```
 
-Clearly, dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
+Dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
 
 ## 6. Flows and Coroutines
 
