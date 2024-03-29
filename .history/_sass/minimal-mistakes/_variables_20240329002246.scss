@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-@import url("https:///fonts.googleapis.com/css2?family=Poppins");
+@import url("https:///fonts.googleapis.com/css2?family=Montserrat");
 
 $doc-font-size: 16 !default;
 
@@ -16,10 +16,10 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: "Poppins", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $new_font: "Comfortaa", new_font !default;
-$monospace: "Poppins", sans-serif !default;
+$monospace: "Montserrat", sans-serif !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;

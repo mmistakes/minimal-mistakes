@@ -1,0 +1,25 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "About me"
+    url: /about_me/
+  - title: "CV"
+    url: /cv/
+  - title: "Publications"
+    url: /publications/
+  # - title: "Awards"
+  #   url: /awards/
+  # - title: "Posts"
+  #   url: /posts/
+
+  # - title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
