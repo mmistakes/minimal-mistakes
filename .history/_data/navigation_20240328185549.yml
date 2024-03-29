@@ -1,15 +1,13 @@
 # main links
 main:
-  - title: "Home"
-    url: /
   - title: "About me"
     url: /about_me/
   - title: "CV"
     url: /cv/
   - title: "Publications"
     url: /publications/
-  # - title: "Awards"
-  #   url: /awards/
+  - title: "Awards"
+    url: /awards/
   # - title: "Posts"
   #   url: /posts/
 
