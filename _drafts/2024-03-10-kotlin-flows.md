@@ -1296,19 +1296,19 @@ coroutineScope {
 }
 ```
 
-Here, we're working with a slightly modified version of the `findMovies` function, which returns a list of movies rather than a flow. However, using the `async` builder makes it harder to control the level of concurrency. Plus, we can emit each movie as soon as it's available, rather than waiting for all the movies of an actor to be available.
+Here, we're working with a slightly modified version of the `findMovies` function, which returns a list of movies rather than a flow. However, using the `async` builder makes it harder to control the concurrency level. Plus, we can emit each movie as soon as it's available, rather than waiting for an actor's film to be available.
 
 ## 8. Flows Are Cold Data Sources
 
-As you might guess, flow represent a cold data source, which means that values of are calculated on demand. In detail, flows start emitting values when the first terminal operation is reached, i.e. the `collect` function is called. However, we often have to deal with hot data sources, where the values are emitted independently from the presence of a collector. For example, think about a Kafka consumer or a WebSocket server. 
+As you might guess, flow represents a cold data source, which means that values are calculated on demand. In detail, flows start emitting values when the first terminal operation is reached, i.e., the `collect` function is called. However, we often have to deal with hot data sources, where the values are emitted independently from the presence of a collector. For example, think about a Kafka consumer or a WebSocket server.
 
-Does it mean that we can't use flows to managed hot data sources? Well, we can. There are certain kinds of flow that are actually used to managed hot data sources, such as `channelFlow`, `callbackFlow`, `StateFlow`, and `SharedFlow`. All those functions and type bridge the domain of cold flows with the data structure that was thought to managed hot data source in the Kotlin coroutines library: `Channel`s.
+Does this mean we can't use flows to manage hot data sources? Well, we can. Certain kinds of flow are actually used to manage hot data sources, such as `channelFlow`, `callbackFlow`, `StateFlow`, and `SharedFlow`. All those functions and types bridge the domain of cold flows with the data structure that was thought to manage hot data sources in the Kotlin Coroutines library: `Channels'.
 
-Since the focus of this  article is to introduce the main features of flows, we left for a future work the description of the hot data sources available in the library.
+Since the focus of this article is to introduce the main features of flows, we left the description of the hot data sources available in the library for future work.
 
 ## 9. Conclusions
 
-Ladies and gentlemen, we reach the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We only left out how to manage hot data sources using flows, but we'll return on the topic in a future post. We hope you found the article useful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
+Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We only left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
 
 ## 10. Appendix: How Flows Work
 
