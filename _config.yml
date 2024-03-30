@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : :disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "We0o0o_Note"
+    shortname            : "we0o0o-note"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
