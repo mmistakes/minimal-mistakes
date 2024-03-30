@@ -1312,9 +1312,9 @@ Ladies and gentlemen, we have reached the end of the article. We hope you enjoye
 
 ## 10. Appendix: How Flows Work
 
-We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
+We have seen that flows work using two functions in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But how do they work under the hood? If you're a curious Kotliner, please follow us into the black hole of the Kotlin flow library. You will not regret it.
 
-We'll try to rebuild the `Flow` type and the `flow` builder from scratch to understand how they work. We'll start using only lambdas and functional interfaces. Let's say we want to implement a function that prints the actors playing in the Justice League movie. We can define the following function: 
+We'll try to rebuild the `Flow` type and the `flow` builder from scratch to understand how they work. We'll start using only lambdas and functional interfaces. We want to implement a function that prints the actors playing in the Justice League movie. We can define the following function:
 
 ```kotlin
 val flow: suspend () -> Unit = {
@@ -1328,7 +1328,7 @@ val flow: suspend () -> Unit = {
 flow()
 ```
 
-We made the lambda as a suspending function because we want to have the possibility to use non blocking function. Now, we want to extend our `flow` function not only to print the emitted values, but possibly to consume them in different way. We'll consume them using a lambda passed to the `flow` function. So, The new version of the code is:
+We made the lambda as a suspending function because we want to have the possibility to use the nonblocking function. Now, we want to extend our `flow` function to print the emitted values and consume them differently. We'll consume them using a lambda passed to the `flow` function. So, The new version of the code is:
 
 ```kotlin
 val flow: suspend ((Actor) -> Unit) -> Unit = { emit: (Actor) -> Unit ->
@@ -1342,11 +1342,11 @@ val flow: suspend ((Actor) -> Unit) -> Unit = { emit: (Actor) -> Unit ->
 flow { println(it) }
 ```
 
-We called `emit` the input lambda to apply to each emitted value of the flow. We also specified the type of the `emit` lambda, just to be more explicit. However, the Kotlin compiler is able to infer the type of the `emit` lambda, so we can omit it in the next iteration.
+We called `emit` the input lambda to apply to each emitted value of the flow. To clarify, we also specified the `emit` lambda type. However, the Kotlin compiler can infer the type of the `emit` lambda, so we can omit it in the next iteration.
 
-We just made a crucial step in the above code. We introduced the `emit` lambda, which represents the consumer logic of the values created by the flow. So, emitting a new value equals to apply consuming logic to it. And, this concept is at the core of how the `Flow` type works. The next steps will be only make up the actual code to avoid passing lambdas around.
+We just made a crucial step in the above code. We introduced the `emit` lambda, which represents the consumer logic of the values created by the flow. So, emitting a new value equals applying consuming logic to it. This concept is at the core of the `Flow` type. The following steps will only make up the code to avoid passing lambdas around.
 
-So, let's work on the lambda passed as input to the `flow` function. We can think to every lambda as the implementation of an interface having only one method in its contract. In this case, we can call the interface `FlowCollector`, and implementing it as follows:
+So, let's work on the lambda passed as input to the `flow` function. We can think of every lambda as implementing an interface with only one method in its contract. In this case, we can call the interface `FlowCollector` and implement it as follows:
 
 ```kotlin
 fun interface FlowCollector {
@@ -1354,7 +1354,7 @@ fun interface FlowCollector {
 } 
 ```
 
-We made the `FlowCollector` interface a functional interface (or SAM, Single Abstract Method) to let the compiler adapting the lambda to the interface. We can now rewrite our `flow` function using the `FlowCollector` interface:
+We made the `FlowCollector` interface a functional interface (or SAM, Single Abstract Method) to let the compiler adapt the lambda to the interface. We can now rewrite our `flow` function using the `FlowCollector` interface:
 
 ```kotlin
 val flow: suspend (FlowCollector) -> Unit = {
@@ -1368,7 +1368,7 @@ val flow: suspend (FlowCollector) -> Unit = {
 flow { println(it) } // <- Possible because of the SAM interface
 ```
 
-Since we don't like to call the `emit` function on the `it` reference, we can change again the definition of the `flow` function. Our aim is to create a smoother DSL, letting to call the `emit` function directly. Then, we need to make the `FlowCollector` instance available as the `this` reference inside the lambda. Using the `FlowCollector` interface as the receiver of the lambda does the trick (if you want to deepen your knowledge about Kotlin receivers, please refer to the article [Kotlin Context Receivers: A Comprehensive Guide](https://blog.rockthejvm.com/kotlin-context-receivers/)):
+Since we don't like to call the `emit` function on the `it` reference, we can change the definition of the `flow` function again. We aim to create a smoother DSL, letting us call the `emit` function directly. Then, we must make the `FlowCollector` instance available as the `this` reference inside the lambda. Using the `FlowCollector` interface as the receiver of the lambda does the trick (if you want to deepen your knowledge about Kotlin receivers, please refer to the article [Kotlin Context Receivers: A Comprehensive Guide](https://blog.rockthejvm.com/kotlin-context-receivers/)):
 
 ```kotlin
 val flow: suspend FlowCollector.() -> Unit = {
@@ -1382,7 +1382,7 @@ val flow: suspend FlowCollector.() -> Unit = {
 flow { println(it) }
 ```
 
-We're almost done. Now, we don't want to pass a function to use flows. So, it's time to lift the `flow` function to a proper type. As you can imagine, the type is the `Flow` type. We can define the `Flow` type as follows:
+We're almost done. Now, we want to avoid passing a function to use flows. So, it's time to lift the `flow` function to a proper type. As you can imagine, the type is the `Flow` type. We can define the `Flow` type as follows:
 
 ```kotlin
 interface Flow {
@@ -1411,7 +1411,7 @@ val flow: Flow = object : Flow {
 flow.collect { println(it) }
 ```
 
-Here, we use the fact that calling a function or lambda with a receiver is equal to pass the receiver as the first argument of the function. Last but not least, we miss the original `flow` builder of the Kotlin coroutines library. We can define it as follows, moving a bit of code around:
+Here, we use the fact that calling a function or lambda with a receiver is equal to passing the receiver as the function's first argument. Last but not least, we miss the original `flow` builder of the Kotlin coroutines library. We can define it as follows, moving a bit of code around:
 
 ```kotlin
 fun flow(builder: suspend FlowCollector.() -> Unit): Flow =
@@ -1422,7 +1422,7 @@ fun flow(builder: suspend FlowCollector.() -> Unit): Flow =
     }
 ```
 
-Clearly, we want to define flows on every type, and not only on the `Actor` type. So, we need to add a bit of generic magic powder to the code we defined so far:
+We want to define flows on every type, not only on the `Actor` type. So, we need to add a bit of generic magic powder to the code we defined so far:
 
 ```kotlin
 fun interface FlowCollector<T> {
@@ -1441,7 +1441,7 @@ fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow<T> =
     } 
 ```
 
-That's it. The above implementation is quite similar to the actual implementation of flows in the Kotlin coroutines library. This journey let us understand that behind flows there is not magic at all, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can proceed to define more complex use cases using flows.
+That's it. The above implementation is similar to the actual implementation of flows in the Kotlin coroutines library. This journey let us understand that there is no magic behind flows, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can define more complex use cases using flows.
 
 ## 11. Appendix: Gradle Configuration
 
