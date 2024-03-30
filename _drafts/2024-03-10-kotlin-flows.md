@@ -1306,11 +1306,11 @@ Does it mean that we can't use flows to managed hot data sources? Well, we can. 
 
 Since the focus of this  article is to introduce the main features of flows, we left for a future work the description of the hot data sources available in the library.
 
-## 8. Conclusions
+## 9. Conclusions
 
 Ladies and gentlemen, we reach the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We only left out how to manage hot data sources using flows, but we'll return on the topic in a future post. We hope you found the article useful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
 
-## 9. Appendix: How Flows Work
+## 10. Appendix: How Flows Work
 
 We have seen that flows work using two function in concert: The `emit` function allows us to produce values, and the `collect` function allows us to consume them. But, how do they work under the hood? If you're a curious Kotliner, please, follow us into the black hole of the Kotlin flow library. You will not regret it.
 
@@ -1443,7 +1443,7 @@ fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow<T> =
 
 That's it. The above implementation is quite similar to the actual implementation of flows in the Kotlin coroutines library. This journey let us understand that behind flows there is not magic at all, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can proceed to define more complex use cases using flows.
 
-## 10. Appendix: Gradle Configuration
+## 11. Appendix: Gradle Configuration
 
 As promised, here is the complete Gradle configuration we used in this article:
 
