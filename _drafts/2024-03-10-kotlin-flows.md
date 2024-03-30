@@ -940,7 +940,7 @@ withContext(CoroutineName("Main")) {
 
 The following output states that the main context is passed to the lambda of the `collect` function.
 
-Changing the context of the coroutine that executes the flow is so common that the Kotlin coroutines library provides a dedicated function: the `flowOn` function. The `flowOn` function is used to change the coroutine context that emits the flow values. Let's rewrite our example using the `flowOn` function:
+Changing the context of the coroutine that executes the flow is so common that the Kotlin coroutines library provides a dedicated function: the `flowOn` function. The `flowOn` function changes the coroutine context that emits the flow values. Let's rewrite our example using the `flowOn` function:
 
 ```kotlin
 withContext(CoroutineName("Main")) {
@@ -1209,7 +1209,7 @@ Benjamin Géza Affleck-Boldt was born on August 15, 1972 in Berkeley, California
 Argo, The Town, Good Will Hunting, Justice League
 ```
 
-The `flatMapMerge` function is the second implementation of the `flatMap` function. It processes the emitted values of the first flow and for each the associated emitted values of the second flow. However, it doesn't wait for the second flow to emit all its values before processing the next value of the first flow. In other words, the values of the inner flow are processed concurrently. The `flatMapMerge` function is defined as follows in the coroutine library:
+The `flatMapMerge` function is the second implementation of the `flatMap` function. It processes the emitted values of the first flow and, for each, the associated emitted values of the second flow. However, it takes time for the second flow to emit all its values before processing the next value of the first flow. In other words, the values of the inner flow are processed concurrently. The `flatMapMerge` function is defined as follows in the coroutine library:
 
 ```kotlin
 @ExperimentalCoroutinesApi
@@ -1219,9 +1219,9 @@ public fun <T, R> Flow<T>.flatMapMerge(
 ): Flow<R>
 ```
 
-Unlike the definition of the `flatMapConcat`, the `flatMapMerge` add an input parameter, which is the number of concurrent operations we want to be executed. The default value is `DEFAULT_CONCURRENCY`, which is equal to the number of available processors. The default value of concurrency is 16 and it can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite the concurrency degree, the rest of the definition is quite usual for a `flatMap` function.
+Unlike the `flatMapConcat` definition, the `flatMapMerge` adds an input parameter: the number of concurrent operations we want to execute. The default value is `DEFAULT_CONCURRENCY`, equal to the number of available processors. The default value of concurrency is 16, which can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite the concurrency degree, the rest of the definition is usual for a `flatMap` function.
 
-Now, we need an example to play with. This time, we want to simulate a repository that, given an actor, returns the small list of movies he/she played in. We can define the repository as follows:
+Now, we need an example to play with. This time, we want to simulate a repository that, given an actor, returns the small list of movies they played in. We can define the repository as follows:
 
 ```kotlin
 val movieRepository =
@@ -1238,7 +1238,7 @@ val movieRepository =
     }
 ```
 
-We can create a flow emitting only the actors `henryCavill`, `benAffleck`, and `galGodot`, and for each of them retrieving the list of movies they played in. We can use the `flatMapMerge` function to do that:
+We can create a flow emitting only the actors `henryCavill`, `benAffleck`, and `galGodot` for each of them, retrieving the list of movies they played in. We can use the `flatMapMerge` function to do that:
 
 ```kotlin
 actorRepository
@@ -1265,7 +1265,7 @@ Good Will Hunting
 Justice League
 ```
 
-As we can see, the list of movies is randomly created from the merge of the original lists. For example, the "Fast & Furious" movie belongs to Gal Godot, which emitted as the second value by the first flow. Then, we have a film of Ben Affleck, and then we have the first movie of Henry Cavill. The program continues in this way until all the movies are emitted.
+As we can see, the list of movies is randomly created by merging the original lists. For example, the "Fast & Furious" movie belongs to Gal Godot, which was emitted as the second value by the first flow. Then, we have a film by Ben Affleck and the first movie by Henry Cavill. The program continues in this way until all the movies are emitted.
 
 We can set the level of concurrency to 1, and we can see that the output will be linearized, printing all the films of an actor before moving to the next one:
 
@@ -1282,9 +1282,9 @@ Good Will Hunting
 Justice League
 ```
 
-We've got the same result as the `flatMapConcat` function. 
+We've got the same result as the `flatMapConcat` function.
 
-The `flatMapMerge` function is very useful when we have to deal with I/O operations on a collection of information. In fact, we can set the level of concurrency to the number of available processors to maximize the performance of the program or even to fine tune the maximum level of resources we want to use. Another approach could have been using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value the collection:
+The `flatMapMerge` function is handy when dealing with I/O operations on a collection of information. We can set the concurrency level to the number of available processors to maximize the program's performance or even to fine-tune the maximum level of resources we want to use. Another approach could have been using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value the collection:
 
 ```kotlin
 coroutineScope {
@@ -1296,9 +1296,9 @@ coroutineScope {
 }
 ```
 
-Clearly, here we're working with a slightly modified version of the `findMovies` function returning a list of movies and not a flow. However, using the `async` builder it's harder to have control over the level of concurrency. Plus, we can emit each movie as soon as it's available, and not waiting for all the movies of an actor to be available.
+Here, we're working with a slightly modified version of the `findMovies` function, which returns a list of movies rather than a flow. However, using the `async` builder makes it harder to control the level of concurrency. Plus, we can emit each movie as soon as it's available, rather than waiting for all the movies of an actor to be available.
 
-## R. Flows Are Cold Data Sources
+## 8. Flows Are Cold Data Sources
 
 As you might guess, flow represent a cold data source, which means that values of are calculated on demand. In detail, flows start emitting values when the first terminal operation is reached, i.e. the `collect` function is called. However, we often have to deal with hot data sources, where the values are emitted independently from the presence of a collector. For example, think about a Kafka consumer or a WebSocket server. 
 
