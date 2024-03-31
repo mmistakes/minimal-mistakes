@@ -21,7 +21,7 @@ title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kim Bogyeom"
 description              : "공부한 것을 정리하고 복습하는 곳"
-url                      : "https://bogamiee.github.io/"
+url                      : "https://bogamie.github.io/bogamiee.github.io/"
 baseurl                  : ""
 repository               : Bogamie/bogamiee.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
