@@ -21,9 +21,9 @@ title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kim Bogyeom"
 description              : "공부한 것을 정리하고 복습하는 곳"
-url                      : "https://bogamie.github.io/"
+url                      : "https://bogamiee.github.io/"
 baseurl                  : ""
-repository               : Bogamie/bogamie.github.io
+repository               : Bogamie/bogamiee.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
