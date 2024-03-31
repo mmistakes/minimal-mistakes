@@ -25,7 +25,7 @@ url                      : "https://zerowater4704/zerowater4704.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "zerowater4704/zerowater4704.github.io"
 teaser                   : "/assets/images/200x200.jpg"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/200x200.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
