@@ -27,7 +27,7 @@ repository               : "zerowater4704/zerowater4704.github.io"
 teaser                   : #"/assets/images/200x200.jpg"
 logo                     : #"/assets/images/200x200.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
