@@ -13,7 +13,7 @@
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Cpp" %}
-                    <li><a href="/categories/cpp" class="">C++ ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/cpp" class="">C++ ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -21,28 +21,28 @@
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Algorithm" %}
-                    <li><a href="/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Computer Network" %}
-                    <li><a href="/categories/computer-network" class="">Computer Network ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/computer-network" class="">Computer Network ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "A.I" %}
-                    <li><a href="/categories/a-i" class="">A.I ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/a-i" class="">A.I ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Database" %}
-                    <li><a href="/categories/database" class="">Database ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/database" class="">Database ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -50,7 +50,7 @@
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Mobile Platform" %}
-                    <li><a href="/categories/mobile-platform" class="">Mobile Platform ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/mobile-platform" class="">Mobile Platform ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
@@ -58,14 +58,14 @@
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Probability & Statistics" %}
-                    <li><a href="/categories/probability-statistics" class="">Probability & Statistics ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/probability-statistics" class="">Probability & Statistics ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Other" %}
-                    <li><a href="/categories/other" class="">Other ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.io/categories/other" class="">Other ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>

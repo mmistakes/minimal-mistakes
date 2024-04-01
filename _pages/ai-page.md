@@ -1,7 +1,7 @@
 ---
 title: "A.I"
 layout: archive
-permalink: /categories/a-i/
+permalink: bogamiee.github.io/categories/a-i/
 author_profile: true
 sidebar_main: true
 ---
