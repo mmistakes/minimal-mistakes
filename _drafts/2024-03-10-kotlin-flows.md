@@ -275,7 +275,7 @@ What if an exception is thrown during the flow's execution? In the next section,
 
 If something can go wrong, it will. Flow execution is no exception. The Kotlin Coroutines library provides functions to handle errors during flow execution.
 
-The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's uncommon to build intentional flows that don't emit anything. The Kotlin Coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function an excellent candidate to emit some default value for an empty flow:
+The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's uncommon to build intentional flows that don't emit anything. **The Kotlin Coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function**. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function an excellent candidate to emit some default value for an empty flow:
 
 ```kotlin
 val actorsEmptyFlow =
@@ -337,11 +337,11 @@ Exception in thread "main" java.lang.RuntimeException: An exception occurred
 ...
 ```
 
-What can we see from the above output? First, an exception in the flow execution breaks it and avoids the emission of the values after the exception. The coroutine executing the suspending lambda function passed to the `collect` function is canceled by the exception (see following sections for further details) that will bubble up to the context called the `collect` function. Second, the `onCompletion` function is called even if an exception is thrown during the execution of the flow. So, the `onCompletion` function is called when the flow is completed, whether an exception is thrown or not. We can think about it as a `finally` block.
+What can we see from the above output? First, an exception in the flow execution breaks it and avoids the emission of the values after the exception. **The coroutine executing the suspending lambda function passed to the `collect` function is canceled** by the exception (see following sections for further details) that will bubble up to the context calling the `collect` function. Second, the `onCompletion` function is called even if an exception is thrown during the execution of the flow. So, the `onCompletion` function is called when the flow is completed, whether an exception is thrown or not. We can think about it as a `finally` block.
 
 Can we catch the exception in some way and recover from it? Yep, we can. The library provides a `catch` method that we can chain to the flow to handle exceptions. The `catch` function is defined as follows:
 
-```
+```kotlin
 // Kotlin Coroutines Library
 public fun <T> Flow<T>.catch(action: suspend FlowCollector<T>.(cause: Throwable) -> Unit): Flow<T>
 ```
@@ -432,7 +432,7 @@ Exception in thread "main" java.lang.RuntimeException: Oooops
 ...
 ```
 
-So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, the `catch` function can't catch the exceptions thrown by the `collect` function since it's the terminal operation of the flow: 
+So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, **the `catch` function can't catch the exceptions thrown by the `collect` function** since it's the terminal operation of the flow: 
 
 ```kotlin
 val spiderMenActorsFlowWithException =
@@ -486,7 +486,7 @@ I caught an exception!
 The Spider Men flow is completed
 ```
 
-We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above examples, caught or not, the thrown exception ended the flow. What if we want to embrace that an operation can fail now and then, and we want to retry it? We can think of the call to an external service that requires communication over the net. The network connection can be temporarily broken, and the service may be unavailable due to high traffic. It's expected that making a new retry of the operation can solve the problem. The Kotlin Coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function.
+We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above examples, caught or not, the thrown exception ended the flow. What if we want to embrace that an operation can fail now and then, and we want to retry it? We can think of the call to an external service that requires communication over the net. The network connection can be temporarily broken, and the service may be unavailable due to high traffic. It's expected that making a new retry of the operation can solve the problem. **The Kotlin Coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function**.
 
 The `retry` function is defined as follows:
 
@@ -565,7 +565,7 @@ actorRepository
     .collect { println(it) }
 ```
 
-In this case, we also add a log. Please remember to say that the function should be retried or not return the proper boolean value. Running the above code will make the fact an exception occurred more evident:
+In this case, we also add a log. Please don't forget to return the boolean value at the end of the lambda. Running the above code will make the fact an exception occurred more evident:
 
 ```
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
