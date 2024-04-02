@@ -11,11 +11,11 @@ toc_label: "In this article"
 
 _By [Riccardo Cardin](https://github.com/rcardin)_
 
-In the article [Kotlin Coroutines—A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/), we saw how to use Kotlin coroutines to write asynchronous code in a more natural and readable way. This article will focus on another crucial concept in Kotlin coroutines: Kotlin flows. Flows are a data structure you didn't know, but you can't live without them once you know them. So, without further ado, let's dive into Kotlin Flows.
+In the article [Kotlin Coroutines—A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/), we saw how to use Kotlin Coroutines to write asynchronous code in a more natural and readable way. This article will focus on another crucial concept in Kotlin Coroutines: Kotlin flows. Flows are a data structure you didn't know, but you can't live without them once you know them. So, without further ado, let's dive into Kotlin Flows.
 
 ## 1. Setting the Stage
 
-We'll use Kotlin 1.9.23 and Kotlinx coroutines 1.8.0. Flows are part of the Kotlin coroutines library. We'll use the Gradle build tool to manage our dependencies. Here are the dependencies added in the  `build.gradle.kts` file:
+We'll use Kotlin 1.9.23 and Kotlinx coroutines 1.8.0. Flows are part of the Kotlin Coroutines library. We'll use the Gradle build tool to manage our dependencies. Here are the dependencies added in the  `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
@@ -60,7 +60,7 @@ val chrisHemsworth: Actor = Actor(Id(9), FirstName("Chris"), LastName("Hemsworth
 val scarlettJohansson: Actor = Actor(Id(10), FirstName("Scarlett"), LastName("Johansson"))
 val jeremyRenner: Actor = Actor(Id(11), FirstName("Jeremy"), LastName("Renner"))
 
-// Spider Man
+// Spider-Man
 val tomHolland: Actor = Actor(Id(12), FirstName("Tom"), LastName("Holland"))
 val tobeyMaguire: Actor = Actor(Id(13), FirstName("Tobey"), LastName("Maguire"))
 val andrewGarfield: Actor = Actor(Id(14), FirstName("Andrew"), LastName("Garfield"))
@@ -70,7 +70,7 @@ We have defined the actors playing in the movies "Zack Snyder's Justice League",
 
 ## 2. Flows Basics
 
-What is a flow in Kotlin? A `Flow<T>` is a reactive data structure that emits a sequence of type `T` values. Flows are part of the Kotlin coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. We can create a flow from a finite list of values using the `flowOf` function:
+What is a flow in Kotlin? **A `Flow<T>` is a reactive data structure that emits a sequence of type `T` values**. Flows are part of the Kotlin Coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. We can create a flow from a finite list of values using the `flowOf` function:
 
 ```kotlin
 val zackSnyderJusticeLeague: Flow<Actor> = 
@@ -106,7 +106,7 @@ val theMostRecentSpiderManFun: () -> Actor = { tomHolland }
 val theMostRecentSpiderMan: Flow<Actor> = theMostRecentSpiderManFun.asFlow()
 ```
 
-Under the hood, all the above `Flow` factories are defined in terms of the so-called flow builder, aka the `flow` function. The `flow` function is the most general way to create a flow. It takes a lambda that can emit values using the `emit` function. Let's make an example to clarify this concept. We want to create a flow that emits the actors in the "Spider-Man" movies as main characters. We can define the following flow:
+Under the hood, all the above `Flow` factories are defined in terms of the so-called flow builder, aka the `flow` function. **The `flow` function is the most general way to create a flow**. It takes a lambda that can emit values using the `emit` function. Let's make an example to clarify this concept. We want to create a flow that emits the actors in the "Spider-Man" movies as main characters. We can define the following flow:
 
 ```kotlin
 val spiderMen: Flow<Actor> = flow {
@@ -116,7 +116,7 @@ val spiderMen: Flow<Actor> = flow {
 }
 ```
 
-Maybe you're wondering where the `emit` function comes from. The lambda is passed as a parameter to the `flow` function, which is defined as its receiver and an instance of a functional interface called `FlowCollector`. The `FlowCollector` interface has a single method called `emit` that allows it to emit a value. We'll see more about the `Flow` internals in the following sections. For now, it's enough to know that the `emit` function emits a value within the `flow`.
+Maybe you're wondering where the `emit` function comes from. The lambda passed as an input parameter to the `flow` function defines an instance of a functional interface called `FlowCollector` as its receiver. The `FlowCollector` interface has a single method called `emit` that allows it to emit a value. We'll see more about the `Flow` internals in one of the appendix sections. For now, it's enough to know that the `emit` function emits a value within the `flow`.
 
 It's easy to define the previous factory methods in terms of the `flow` function. For example, the `flowOf` function is defined as follows:
 
@@ -129,7 +129,7 @@ fun <T> flowOf(vararg values: T): Flow<T> = flow {
 }
 ```
 
-Since it's a reactive data structure, the values in a flow are only computed once requested. A `Flow<T>` is just a definition of calculating the values, not the values themselves, which is a fundamental difference with collections, sequences, and iterables. We can define an infinite `Flow` quite easily:
+**Since it's a reactive data structure, the values in a flow are only computed once requested**. A `Flow<T>` is just a definition of calculating the values, not the values themselves, which is a fundamental difference with collections, sequences, and iterables. We can define an infinite `Flow` quite easily:
 
 ```kotlin
 val infiniteJLFlowActors: Flow<Actor> = flow {
@@ -144,7 +144,7 @@ val infiniteJLFlowActors: Flow<Actor> = flow {
 }
 ```
 
-The flow `infiniteJLFlowActors` doesn't emit values during creation. We will see the output if we put a print statement immediately after the flow definition.
+The flow `infiniteJLFlowActors` doesn't emit values during creation.
 
 Consuming a `Flow` is relatively straightforward. The `Flow` type is defined by one and only one terminal operation: the `collect` function. The `collect` function is used to consume the values emitted by the flow. It takes a lambda, which is called for each value the flow emits. Say we want to print the actors playing in "Zack Snyder's Justice League" movie. We'll use the following code:
 
@@ -172,13 +172,13 @@ public interface Flow<out T> {
 }
 ```
 
-The `collect` function is one of the possible terminal operations. It is so-called because it consumes the values in the `Flow`.
+**The `collect` function is the most notable of the possible terminal operations**. It is so-called because it consumes the values in the `Flow`.
 
 ## 3. Flows Lifecycle
 
-The Kotlin coroutines library provides functions to control a flow's lifecycle. We can only add a hook function for flow creation, for each emitted element, and for the completion of the flow.
+The Kotlin Coroutines library provides functions to control a flow's lifecycle. We can add a hook function for flow creation, for each emitted element, and for the completion of the flow.
 
-The `onStart` function lets us add operations to be executed when the flow is started. We pass a lambda to the `onStart` function. A good question is: When does a flow starto emit values? A flow is started when a terminal operation is called on it. So far, we've seen the `collect` function as a terminal operation. The lambda of the `onStart` function is executed immediately after the terminal operation. It doesn't wait for the first element to be emitted. Let's make an example. We want to print a message when the flow is started. Also, we want to simulate some latency in the emission of the values.
+**The `onStart` function lets us add operations to be executed when the flow is started**. We pass a lambda to the `onStart` function. A good question is: When does a flow start to emit values? A flow is started when a terminal operation is called on it. So far, we've seen the `collect` function as a terminal operation. The lambda of the `onStart` function is executed immediately after the terminal operation. It doesn't wait for the first element to be emitted. Let's make an example. We want to print a message when the flow is started. Also, we want to simulate some latency in the emission of the values.
 
 ```kotlin
 val spiderMenWithLatency: Flow<Actor> = flow {
@@ -188,14 +188,14 @@ val spiderMenWithLatency: Flow<Actor> = flow {
     emit(tomHolland)
 }
 spiderMenWithLatency
-    .onStart { println("Starting Spider Men flow") }
+    .onStart { println("Starting Spider-Men flow") }
     .collect { println(it) }
 ```
 
 What do we expect from the program? We expect the program to print the message "Starting Spider-Men flow" immediately and then, after 1 second, the actors playing. Indeed, the output of the program is what we expect:
 
 ```
-Starting Spider Men flow
+Starting Spider-Men flow
 (1 sec.)
 Actor(id=Id(id=13), firstName=FirstName(firstName=Tobey), lastName=LastName(lastName=Maguire))
 Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(lastName=Garfield))
@@ -228,7 +228,7 @@ Actor(id=Id(id=14), firstName=FirstName(firstName=Andrew), lastName=LastName(las
 Actor(id=Id(id=12), firstName=FirstName(firstName=Tom), lastName=LastName(lastName=Holland))
 ```
 
-On the other hand, the `onEach` function is used to apply a lambda to each value emitted by the flow. The function has the same features as the `onStart` function, which means it accepts a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` lets us emit new values inside the lambda.
+On the other hand, **the `onEach` function is used to apply a lambda to each value emitted by the flow**. The function has the same features as the `onStart` function, which means it accepts a lambda with a `FlowCollector<T>` as receiver as input. As we previously saw, the `FlowCollector<T>` lets us emit new values inside the lambda.
 
 Let's add a delay of one second between the emissions of each actor playing the Spider-Man role. We can use the `onEach` function to add the delay:
 
@@ -238,7 +238,7 @@ spiderMen
     .collect { println(it) }
 ```
 
-As you may guess, we can use the `onEach` function as a surrogate of the `collect` function. We can pass to the lambda we would have passed to the `collect` function to the `onEach` function. At this point, calling `collect` will trigger the effective execution of the flow. For example, we can rewrite the previous example as follows:
+**We can even use the `onEach` function as a surrogate of the `collect` function**. We can pass to the lambda we would have passed to the `collect` function to the `onEach` function. At this point, calling `collect` will trigger the effective execution of the flow. For example, we can rewrite the previous example as follows:
 
 ```kotlin
 spiderMen.onEach { 
@@ -249,7 +249,7 @@ spiderMen.onEach {
 
 The above approach is quite common in the Kotlin community since it produces code closer to the use of other collections in Kotlin.
 
-Finally, we can add some behavior at the end of the flow after all its values have been emitted. We can use the `onCompletion` function to add a lambda to be executed when the flow is completed. Again, the lambda passed to the function has a `FlowCollector<T>` as the receiver so that we can emit additional value at the end of the flow execution. For example, we can use the `onCompletion` function to print a message when the flow is completed:
+Finally, we can add some behavior at the end of the flow after all its values have been emitted. **We can use the `onCompletion` function to add a lambda to be executed when the flow is completed**. Again, the lambda passed to the function has a `FlowCollector<T>` as the receiver so that we can emit additional value at the end of the flow execution. For example, we can use the `onCompletion` function to print a message when the flow is completed:
 
 ```kotlin
 spiderMen
@@ -273,7 +273,7 @@ What if an exception is thrown during the flow's execution? In the next section,
 
 ## 4. Flows Error Handling
 
-If something can go wrong, it will. Flow execution is no exception. The Kotlin coroutines library provides functions to handle errors during flow execution.
+If something can go wrong, it will. Flow execution is no exception. The Kotlin Coroutines library provides functions to handle errors during flow execution.
 
 The first ring bell that something went wrong during the execution of a flow is that it didn't emit any value. It's uncommon to build intentional flows that don't emit anything. The Kotlin Coroutines library provides a function to handle the case of an empty flow: the `onEmpty` function. The function is similar to the functions we saw in the previous section that handle a flow lifecycle. It has a lambda with a `FlowCollector<T>` as receiver as input, which makes the `onEmpty` function an excellent candidate to emit some default value for an empty flow:
 
@@ -486,7 +486,7 @@ I caught an exception!
 The Spider Men flow is completed
 ```
 
-We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above examples, caught or not, the thrown exception ended the flow. What if we want to embrace that an operation can fail now and then, and we want to retry it? We can think of the call to an external service that requires communication over the net. The network connection can be temporarily broken, and the service may be unavailable due to high traffic. It's expected that making a new retry of the operation can solve the problem. The Kotlin coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function.
+We saw how to handle an exception thrown during the lifecycle of a flow. However, in all the above examples, caught or not, the thrown exception ended the flow. What if we want to embrace that an operation can fail now and then, and we want to retry it? We can think of the call to an external service that requires communication over the net. The network connection can be temporarily broken, and the service may be unavailable due to high traffic. It's expected that making a new retry of the operation can solve the problem. The Kotlin Coroutines library provides a function to retry the execution of a flow in case of an exception: the `retry` function.
 
 The `retry` function is defined as follows:
 
@@ -822,7 +822,7 @@ Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastNam
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
-Executing the collection of the values of a flow in a separate coroutine is such a typical pattern that the Kotlin coroutines library provides a dedicated function to do that: the `launchIn` function:
+Executing the collection of the values of a flow in a separate coroutine is such a typical pattern that the Kotlin Coroutines library provides a dedicated function to do that: the `launchIn` function:
 
 ```kotlin
 coroutineScope {
@@ -940,7 +940,7 @@ withContext(CoroutineName("Main")) {
 
 The following output states that the main context is passed to the lambda of the `collect` function.
 
-Changing the context of the coroutine that executes the flow is so common that the Kotlin coroutines library provides a dedicated function: the `flowOn` function. The `flowOn` function changes the coroutine context that emits the flow values. Let's rewrite our example using the `flowOn` function:
+Changing the context of the coroutine that executes the flow is so common that the Kotlin Coroutines library provides a dedicated function: the `flowOn` function. The `flowOn` function changes the coroutine context that emits the flow values. Let's rewrite our example using the `flowOn` function:
 
 ```kotlin
 withContext(CoroutineName("Main")) {
@@ -1411,7 +1411,7 @@ val flow: Flow = object : Flow {
 flow.collect { println(it) }
 ```
 
-Here, we use the fact that calling a function or lambda with a receiver is equal to passing the receiver as the function's first argument. Last but not least, we miss the original `flow` builder of the Kotlin coroutines library. We can define it as follows, moving a bit of code around:
+Here, we use the fact that calling a function or lambda with a receiver is equal to passing the receiver as the function's first argument. Last but not least, we miss the original `flow` builder of the Kotlin Coroutines library. We can define it as follows, moving a bit of code around:
 
 ```kotlin
 fun flow(builder: suspend FlowCollector.() -> Unit): Flow =
@@ -1441,7 +1441,7 @@ fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow<T> =
     } 
 ```
 
-That's it. The above implementation is similar to the actual implementation of flows in the Kotlin coroutines library. This journey let us understand that there is no magic behind flows, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can define more complex use cases using flows.
+That's it. The above implementation is similar to the actual implementation of flows in the Kotlin Coroutines library. This journey let us understand that there is no magic behind flows, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can define more complex use cases using flows.
 
 ## 11. Appendix: Gradle Configuration
 
