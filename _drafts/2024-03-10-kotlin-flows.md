@@ -753,7 +753,7 @@ Dropping from the head of a flow the first _n_ elements does not reduce the card
 
 ## 6. Flows and Coroutines
 
-It's essential to notice that the `collect` function is inherently synchronous despite being a suspending function. No new coroutine is started under the hood. Let's try to put a print statement immediately after the `collect` function of the previous flow:
+It's essential to notice that **the `collect` function is inherently synchronous despite being a suspending function**. No new coroutine is started under the hood. Let's try to put a print statement immediately after the `collect` function of the previous flow:
 
 ```kotlin
 suspend fun main() {
@@ -809,7 +809,7 @@ coroutineScope {
 }
 ```
 
-Now, the flow is collected inside a dedicated coroutine spawned by the `launch` coroutine builder (if you want to deep dive into the coroutines world, please refer to the article [Kotlin Coroutines - A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/)). Now, the program will not wait for the whole collection of the flow to complete before printing the string "After Zack Snyder's Justice League". The output of the program is:
+Now, the flow is collected inside a dedicated coroutine spawned by the `launch` coroutine builder (if you want to deep dive into the coroutines world, please refer to the article [Kotlin Coroutines - A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/)). The program will not wait for the whole collection of the flow to complete before printing the string "After Zack Snyder's Justice League". The output of the program is:
 
 ```
 Before Zack Snyder's Justice League
@@ -856,9 +856,7 @@ public fun <T> Flow<T>.launchIn(scope: CoroutineScope): Job = scope.launch {
 }
 ```
 
-However, you might have noticed that we subtly introduced a new flow function, the `onEach` function. We'll delve into functions controlling the lifecycle of flows in a minute. Still, we can say that the `onEach` function applies a lambda to each value emitted by the flow, and it's used in combination with the call of the `collect` function without parameters.
-
-Every suspending function must have a coroutine context, and suspending lambdas used as input to the flows function is no exception. A flow uses internally the context of the coroutine that calls the `collect` function. Let's make an example and rewrite the previous code using the `withContext` function to change the context:
+Every suspending function must have a coroutine context, and suspending lambdas used as input to the flows function is no exception. **A flow uses internally the context of the coroutine that calls the `collect` function**. Let's make an example and rewrite the previous code using the `withContext` function to change the context:
 
 ```kotlin
 withContext(CoroutineName("Main")) {
@@ -892,7 +890,7 @@ withContext(CoroutineName("Main")) {
 }
 ```
 
-As we can see, we set the most external coroutine context to "Main," we surround the call to the `collect` function with a new context called "Zack Snyder's Justice League". The output of the program is:
+As we can see, we set the name of the most external coroutine context to "Main," and we surround the call to the `collect` function with a new context called "Zack Snyder's Justice League". The output of the program is:
 
 ```
 Main - Before Zack Snyder's Justice League
@@ -937,8 +935,6 @@ withContext(CoroutineName("Main")) {
     }
 }
 ```
-
-The following output states that the main context is passed to the lambda of the `collect` function.
 
 Changing the context of the coroutine that executes the flow is so common that the Kotlin Coroutines library provides a dedicated function: the `flowOn` function. The `flowOn` function changes the coroutine context that emits the flow values. Let's rewrite our example using the `flowOn` function:
 
