@@ -1,5 +1,5 @@
 ---
-title: "Tag"
+title: "コーディングテスト"
 layout: tags
 permalink: /tags/
 author_profile: true
