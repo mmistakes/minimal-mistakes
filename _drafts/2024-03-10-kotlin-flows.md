@@ -763,7 +763,7 @@ suspend fun main() {
             galGodot,
             ezraMiller,
             benFisher,
-            rayHardy,
+            benAffleck,
             jasonMomoa
         )
     println("Before Zack Snyder's Justice League")
@@ -779,7 +779,7 @@ Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastN
 Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
-Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastName=Hardy))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 After Zack Snyder's Justice League
 ```
@@ -799,7 +799,7 @@ coroutineScope {
             delay(1000)
             emit(benFisher)
             delay(1000)
-            emit(rayHardy)
+            emit(benAffleck)
             delay(1000)
             emit(jasonMomoa)
         }
@@ -818,7 +818,7 @@ Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastN
 Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
-Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastName=Hardy))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
@@ -837,7 +837,7 @@ coroutineScope {
             delay(1000)
             emit(benFisher)
             delay(1000)
-            emit(rayHardy)
+            emit(benAffleck)
             delay(1000)
             emit(jasonMomoa)
         }
@@ -875,7 +875,7 @@ withContext(CoroutineName("Main")) {
                 delay(1000)
                 emit(benFisher)
                 delay(1000)
-                emit(rayHardy)
+                emit(benAffleck)
                 delay(1000)
                 emit(jasonMomoa)
             }
@@ -901,7 +901,7 @@ Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastN
 Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
-Actor(id=Id(id=4), firstName=FirstName(firstName=Ray), lastName=LastName(lastName=Hardy))
+Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 Main - After Zack Snyder's Justice League
 ```
@@ -923,7 +923,7 @@ withContext(CoroutineName("Main")) {
                 delay(1000)
                 emit(benFisher)
                 delay(1000)
-                emit(rayHardy)
+                emit(benAffleck)
                 delay(1000)
                 emit(jasonMomoa)
             }
@@ -957,7 +957,7 @@ withContext(CoroutineName("Main")) {
                 delay(1000)
                 emit(benFisher)
                 delay(1000)
-                emit(rayHardy)
+                emit(benAffleck)
                 delay(1000)
                 emit(jasonMomoa)
             }
@@ -993,7 +993,7 @@ val actorRepository: ActorRepository =
                 galGodot,
                 ezraMiller,
                 benFisher,
-                rayHardy,
+                benAffleck,
                 jasonMomoa,
             )
     }
