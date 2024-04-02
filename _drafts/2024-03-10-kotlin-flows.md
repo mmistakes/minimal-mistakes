@@ -1041,7 +1041,7 @@ Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastNam
 Actor(id=Id(id=5), firstName=FirstName(firstName=Jason), lastName=LastName(lastName=Momoa))
 ```
 
-As we may expect, the flow contains an actor from the JLA and almost every two actors from the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the flow. The execution halts when both flows have finished emitting all their values.
+As we may expect, the flow contains an actor from the JLA almost every two actors from the Avengers. Once the Avengers actors are finished, the JLA actors fulfill the rest of the flow. The execution halts when both flows have finished emitting all their values.
 
 The `merge` function is the first transformation we see not defined as an extension function of the `Flow` type. It's a top-level function in the `Kotlinx.coroutines.flow` package. The `merge` function is defined as follows:
 
@@ -1080,7 +1080,7 @@ val henryCavillMovies =
     }
 ```
 
-Again, we used a delay to simulate the time needed to retrieve the filmography. Now, we can zip the two flows to get the biography and the filmography of Henry Cavill and print out the result:
+Again, we used a `delay` to simulate the time needed to retrieve the filmography. Now, we can zip the two flows to get the biography and the filmography of Henry Cavill and print out the result:
 
 ```kotlin
 henryCavillBio
@@ -1118,7 +1118,7 @@ and is of Irish, Scottish and English ancestry...
 Process finished with exit code 0
 ```
 
-The program printed the biography and the filmography of Henry Cavill after more or less 2 seconds since it had to wait for both flows to emit their values. Be aware that the `zip` function requires pairs of values. So, the resulting flow stops when the shortest of the two flows stops emitting values. If we zip a flow with the empty flow, the resulting flow will also be empty. The following zipped flow doesn't emit any value:
+The program printed the biography and the filmography of Henry Cavill after more or less 2 seconds since it had to wait for both flows to emit their values. Be aware that the `zip` function requires pairs of values. So, **the resulting flow stops when the shortest of the two flows stops emitting values**. If we zip a flow with the empty flow, the resulting flow will also be empty. The following zipped flow doesn't emit any value:
 
 ```kotlin
 henryCavillBio
@@ -1138,11 +1138,11 @@ henryCavillBio
     }
 ```
 
-In the section dedicated to flow transformation, we didn't introduce any flavor of the `flatMap` function. It's typical for data structures representing a collection of values to offer such a function. However, the emission of values in a flow can be delayed or even stopped. So, it's not straightforward to come up with a proper implementation of the `flatMap` function. We need to understand which flow has precedence over the other.
+In the section dedicated to flow transformation, we didn't introduce any flavor of the `flatMap` function. It's typical for data structures representing a collection of values to offer such a function. In the case of flows, the emission of values can be delayed or even stopped. So, it's not straightforward to come up with a proper implementation of the `flatMap` function. We need to understand which flow has precedence over the other.
 
 The Kotlin Coroutine library provides three different implementations of the `flatMap` function: `flatMapConcat`, `flatMapMerge`, and `flatMapLatest`. Since the first two functions are the most used, we'll focus on them.
 
-The `flatMapConcat` function processes the emitted values of the first flow and, for each, the associated emitted values of the second flow. In other words, it waits for the second flow to emit all its values before processing the next value of the first flow. It's defined as follows in the coroutine library:
+The `flatMapConcat` function processes the emitted values of the first flow and, for each, the associated emitted values of the second flow. In other words, **it waits for the second flow to emit all its values before processing the next value of the first flow**. It's defined as follows in the coroutine library:
 
 ```kotlin
 @ExperimentalCoroutinesApi
@@ -1151,7 +1151,7 @@ public fun <T, R> Flow<T>.flatMapConcat(transform: suspend (value: T) -> Flow<R>
 
 The definition is relatively standard for a function belonging to the family of `flatMap` functions.
 
-Let's make an example now. We'll extend the flow by including the biographies of the actors who played in the Justice League movie. First of all, we add a repository returning biographies of actors:
+Let's make an example now. We'll extend the flow of actors by including the biographies of the actors who played in the Justice League movie. First of all, we add a repository returning biographies:
 
 ```kotlin
 interface BiographyRepository {
@@ -1205,7 +1205,7 @@ Benjamin Géza Affleck-Boldt was born on August 15, 1972 in Berkeley, California
 Argo, The Town, Good Will Hunting, Justice League
 ```
 
-The `flatMapMerge` function is the second implementation of the `flatMap` function. It processes the emitted values of the first flow and, for each, the associated emitted values of the second flow. However, it takes time for the second flow to emit all its values before processing the next value of the first flow. In other words, the values of the inner flow are processed concurrently. The `flatMapMerge` function is defined as follows in the coroutine library:
+The `flatMapMerge` function is the second implementation of the `flatMap` function. It processes the emitted values of the first flow and, for each, the associated emitted values of the second flow. **The values of the inner flow are processed concurrently**. The `flatMapMerge` function is defined as follows in the coroutine library:
 
 ```kotlin
 @ExperimentalCoroutinesApi
@@ -1220,6 +1220,10 @@ Unlike the `flatMapConcat` definition, the `flatMapMerge` adds an input paramete
 Now, we need an example to play with. This time, we want to simulate a repository that, given an actor, returns the small list of movies they played in. We can define the repository as follows:
 
 ```kotlin
+interface MovieRepository {
+    suspend fun findMovies(actor: Actor): Flow<String>
+}
+
 val movieRepository =
     object : MovieRepository {
         val filmsByActor: Map<Actor, List<String>> =
@@ -1280,7 +1284,7 @@ Justice League
 
 We've got the same result as the `flatMapConcat` function.
 
-The `flatMapMerge` function is handy when dealing with I/O operations on a collection of information. We can set the concurrency level to the number of available processors to maximize the program's performance or even to fine-tune the maximum level of resources we want to use. Another approach could have been using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value the collection:
+**The `flatMapMerge` function is handy when dealing with I/O operations on a collection of information**. We can set the concurrency level to the number of available processors to maximize the program's performance or even to fine-tune the maximum level of resources we want to use. Another approach could have been using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value the collection:
 
 ```kotlin
 coroutineScope {
@@ -1296,15 +1300,15 @@ Here, we're working with a slightly modified version of the `findMovies` functio
 
 ## 8. Flows Are Cold Data Sources
 
-As you might guess, flow represents a cold data source, which means that values are calculated on demand. In detail, flows start emitting values when the first terminal operation is reached, i.e., the `collect` function is called. However, we often have to deal with hot data sources, where the values are emitted independently from the presence of a collector. For example, think about a Kafka consumer or a WebSocket server.
+As you might guess, **flows represent a cold data source, which means that values are calculated on demand**. In detail, flows start emitting values when the first terminal operation is reached, i.e., the `collect` function is called. However, we often have to deal with **hot data sources, where the values are emitted independently from the presence of a collector**. For example, think about a Kafka consumer or a WebSocket server.
 
-Does this mean we can't use flows to manage hot data sources? Well, we can. Certain kinds of flow are actually used to manage hot data sources, such as `channelFlow`, `callbackFlow`, `StateFlow`, and `SharedFlow`. All those functions and types bridge the domain of cold flows with the data structure that was thought to manage hot data sources in the Kotlin Coroutines library: `Channels'.
+Does this mean we can't use flows to manage hot data sources? Well, we can indeed. Certain kinds of flow are actually used to manage hot data sources, such as `channelFlow`, `callbackFlow`, `StateFlow`, and `SharedFlow`. All those functions and types bridge the domain of cold flows with the data structure that was thought to manage hot data sources in the Kotlin Coroutines library: `Channel`s.
 
 Since the focus of this article is to introduce the main features of flows, we left the description of the hot data sources available in the library for future work.
 
 ## 9. Conclusions
 
-Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We only left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
+Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We also left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
 
 ## 10. Appendix: How Flows Work
 
@@ -1324,7 +1328,7 @@ val flow: suspend () -> Unit = {
 flow()
 ```
 
-We made the lambda as a suspending function because we want to have the possibility to use the nonblocking function. Now, we want to extend our `flow` function to print the emitted values and consume them differently. We'll consume them using a lambda passed to the `flow` function. So, The new version of the code is:
+We made the lambda as a suspending function because we want to have the possibility to use nonblocking functions. Now, we want to extend our `flow` function to print the emitted values and consume them differently. We'll consume them using a lambda passed to the `flow` function. So, The new version of the code is:
 
 ```kotlin
 val flow: suspend ((Actor) -> Unit) -> Unit = { emit: (Actor) -> Unit ->
@@ -1340,7 +1344,7 @@ flow { println(it) }
 
 We called `emit` the input lambda to apply to each emitted value of the flow. To clarify, we also specified the `emit` lambda type. However, the Kotlin compiler can infer the type of the `emit` lambda, so we can omit it in the next iteration.
 
-We just made a crucial step in the above code. We introduced the `emit` lambda, which represents the consumer logic of the values created by the flow. So, emitting a new value equals applying consuming logic to it. This concept is at the core of the `Flow` type. The following steps will only make up the code to avoid passing lambdas around.
+We just made a crucial step in the above code. We introduced the `emit` lambda, which represents the consumer logic of the values created by the flow. So, **emitting a new value equals applying consuming logic to it**. This concept is at the core of the `Flow` type. The following steps will only make up the code to avoid passing lambdas around.
 
 So, let's work on the lambda passed as input to the `flow` function. We can think of every lambda as implementing an interface with only one method in its contract. In this case, we can call the interface `FlowCollector` and implement it as follows:
 
@@ -1378,7 +1382,7 @@ val flow: suspend FlowCollector.() -> Unit = {
 flow { println(it) }
 ```
 
-We're almost done. Now, we want to avoid passing a function to use flows. So, it's time to lift the `flow` function to a proper type. As you can imagine, the type is the `Flow` type. We can define the `Flow` type as follows:
+We're almost done. Now, we want to avoid passing a function to use our flow. So, it's time to lift the `flow` function to a proper type. As you can imagine, the type is the `Flow` type. We can define the `Flow` type as follows:
 
 ```kotlin
 interface Flow {
