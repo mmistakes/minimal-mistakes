@@ -65,7 +65,7 @@
         <ul>
             {% for category in site.categories %}
                 {% if category[0] == "Other" %}
-                    <li><a href="/bogamiee.github.io/categories/other" class="">Other ({{category[1].size}})</a></li>
+                    <li><a href="/bogamiee.github.iox`/categories/other" class="">Other ({{category[1].size}})</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
