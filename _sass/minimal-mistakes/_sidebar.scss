@@ -88,7 +88,7 @@
       position: -webkit-sticky;
       position: sticky;
       top: 2em;
-      float: right;
+      float: top;
 
       .toc {
         .toc__menu {
@@ -216,7 +216,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +350,3 @@
     margin-right: initial;
   }
 }
-
