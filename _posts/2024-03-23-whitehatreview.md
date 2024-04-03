@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "화이트햇스쿨 1기 후기"
-categories: review
-tag: [review, chat]
+categories: CHAT
+tag: review
 redirect_from:
     - #/daily/first
 ---
