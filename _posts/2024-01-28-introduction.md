@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자기 소개"
-categories: chat
+categories: CHAT
 tag: chat
 toc: false
 redirect_from:
