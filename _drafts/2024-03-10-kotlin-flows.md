@@ -1,10 +1,10 @@
 ---
-title: "All Things Kotlin Flows - A Comprehensive Introduction"
+title: "The Ultimate Guide to Kotlin Flows"
 date: 2024-03-10
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: ""
+excerpt: "This article will focus on another crucial concept in Kotlin Coroutines: Kotlin flows. Flows are a reactive data structure you didn't know, but you can't live without them once you know them."
 toc: true
 toc_label: "In this article"
 ---
@@ -46,7 +46,7 @@ We want to be sure to distinguish the first name and the last name of an actor. 
 ```kotlin
 // Zack Snyder's Justice League
 val henryCavill = Actor(Id(1), FirstName("Henry"), LastName("Cavill"))
-val galGodot: Actor = Actor(Id(1), FirstName("Gal"), LastName("Godot"))
+val galGadot: Actor = Actor(Id(1), FirstName("Gal"), LastName("Gadot"))
 val ezraMiller: Actor = Actor(Id(2), FirstName("Ezra"), LastName("Miller"))
 val benFisher: Actor = Actor(Id(3), FirstName("Ben"), LastName("Fisher"))
 val benAffleck: Actor = Actor(Id(4), FirstName("Ben"), LastName("Affleck"))
@@ -76,7 +76,7 @@ What is a flow in Kotlin? **A `Flow<T>` is a reactive data structure that emits 
 val zackSnyderJusticeLeague: Flow<Actor> = 
     flowOf(
         henryCavill,
-        galGodot,
+        galGadot,
         ezraMiller,
         benFisher,
         benAffleck
@@ -135,7 +135,7 @@ fun <T> flowOf(vararg values: T): Flow<T> = flow {
 val infiniteJLFlowActors: Flow<Actor> = flow {
   while (true) {
     emit(henryCavill)
-    emit(galGodot)
+    emit(galGadot)
     emit(ezraMiller)
     emit(benFisher)
     emit(rayHardy)
@@ -153,7 +153,7 @@ suspend fun main() {
     val zackSnyderJusticeLeague: Flow<Actor> =
         flowOf(
             henryCavill,
-            galGodot,
+            galGadot,
             ezraMiller,
             benFisher,
             rayHardy,
@@ -516,7 +516,7 @@ val actorRepository: ActorRepository =
         var retries = 0
         override suspend fun findJLAActors(): Flow<Actor> = flow {
             emit(henryCavill)
-            emit(galGodot)
+            emit(galGadot)
             emit(ezraMiller)
             if (retries == 0) {
                 retries++
@@ -542,10 +542,10 @@ We'll retry two times to call the `findJLAActors` function. So, we expect the fi
 
 ```
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
 Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
@@ -569,12 +569,12 @@ In this case, we also add a log. Please don't forget to return the boolean value
 
 ```
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 An exception occurred: 'Oooops', retrying...
 (1 sec.)
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
 Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
@@ -760,7 +760,7 @@ suspend fun main() {
     val zackSnyderJusticeLeague: Flow<Actor> =
         flowOf(
             henryCavill,
-            galGodot,
+            galGadot,
             ezraMiller,
             benFisher,
             benAffleck,
@@ -776,7 +776,7 @@ We expect the program to print all the actors emitted by the flow and then the s
 ```
 Before Zack Snyder's Justice League
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
 Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
@@ -793,7 +793,7 @@ coroutineScope {
             delay(1000)
             emit(henryCavill)
             delay(1000)
-            emit(galGodot)
+            emit(galGadot)
             delay(1000)
             emit(ezraMiller)
             delay(1000)
@@ -815,7 +815,7 @@ Now, the flow is collected inside a dedicated coroutine spawned by the `launch` 
 Before Zack Snyder's Justice League
 After Zack Snyder's Justice League
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
 Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
@@ -831,7 +831,7 @@ coroutineScope {
             delay(1000)
             emit(henryCavill)
             delay(1000)
-            emit(galGodot)
+            emit(galGadot)
             delay(1000)
             emit(ezraMiller)
             delay(1000)
@@ -867,7 +867,7 @@ withContext(CoroutineName("Main")) {
                 delay(1000)
                 emit(henryCavill)
                 delay(1000)
-                emit(galGodot)
+                emit(galGadot)
                 delay(1000)
                 emit(ezraMiller)
                 delay(1000)
@@ -896,7 +896,7 @@ As we can see, we set the name of the most external coroutine context to "Main,"
 Main - Before Zack Snyder's Justice League
 Zack Snyder's Justice League - In the flow
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
 Actor(id=Id(id=3), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Fisher))
 Actor(id=Id(id=4), firstName=FirstName(firstName=Ben), lastName=LastName(lastName=Affleck))
@@ -915,7 +915,7 @@ withContext(CoroutineName("Main")) {
                 delay(1000)
                 emit(henryCavill)
                 delay(1000)
-                emit(galGodot)
+                emit(galGadot)
                 delay(1000)
                 emit(ezraMiller)
                 delay(1000)
@@ -947,7 +947,7 @@ withContext(CoroutineName("Main")) {
                 delay(1000)
                 emit(henryCavill)
                 delay(1000)
-                emit(galGodot)
+                emit(galGadot)
                 delay(1000)
                 emit(ezraMiller)
                 delay(1000)
@@ -986,7 +986,7 @@ val actorRepository: ActorRepository =
         override suspend fun findJLAActors(): Flow<Actor> =
             flowOf(
                 henryCavill,
-                galGodot,
+                galGadot,
                 ezraMiller,
                 benFisher,
                 benAffleck,
@@ -1004,7 +1004,7 @@ In the previous sections, we focused on working with one flow. However, flows ar
 val zackSnyderJusticeLeague: Flow<Actor> =
     flowOf(
         henryCavill,
-        galGodot,
+        galGadot,
         ezraMiller,
         benFisher,
         benAffleck,
@@ -1031,7 +1031,7 @@ Actor(id=Id(id=6), firstName=FirstName(firstName=Robert), lastName=LastName(last
 Actor(id=Id(id=1), firstName=FirstName(firstName=Henry), lastName=LastName(lastName=Cavill))
 Actor(id=Id(id=7), firstName=FirstName(firstName=Chris), lastName=LastName(lastName=Evans))
 Actor(id=Id(id=8), firstName=FirstName(firstName=Mark), lastName=LastName(lastName=Ruffalo))
-Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Godot))
+Actor(id=Id(id=1), firstName=FirstName(firstName=Gal), lastName=LastName(lastName=Gadot))
 Actor(id=Id(id=9), firstName=FirstName(firstName=Chris), lastName=LastName(lastName=Hemsworth))
 Actor(id=Id(id=10), firstName=FirstName(firstName=Scarlett), lastName=LastName(lastName=Johansson))
 Actor(id=Id(id=2), firstName=FirstName(firstName=Ezra), lastName=LastName(lastName=Miller))
@@ -1215,7 +1215,7 @@ public fun <T, R> Flow<T>.flatMapMerge(
 ): Flow<R>
 ```
 
-Unlike the `flatMapConcat` definition, the `flatMapMerge` adds an input parameter: the number of concurrent operations we want to execute. The default value is `DEFAULT_CONCURRENCY`, equal to the number of available processors. The default value of concurrency is 16, which can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite the concurrency degree, the rest of the definition is usual for a `flatMap` function.
+Unlike the `flatMapConcat` definition, the `flatMapMerge` adds an input parameter: the number of concurrent operations we want to execute. The default value of concurrency is 16. It can be changed using the `kotlinx.coroutines.flow.defaultConcurrency` JVM property. Despite the concurrency degree, the rest of the definition is usual for a `flatMap` function.
 
 Now, we need an example to play with. This time, we want to simulate a repository that, given an actor, returns the small list of movies they played in. We can define the repository as follows:
 
@@ -1231,19 +1231,19 @@ val movieRepository =
                 henryCavill to
                     listOf("Man of Steel", "Batman v Superman: Dawn of Justice", "Justice League"),
                 benAffleck to listOf("Argo", "The Town", "Good Will Hunting", "Justice League"),
-                galGodot to listOf("Fast & Furious", "Justice League", "Wonder Woman 1984"),
+                galGadot to listOf("Fast & Furious", "Justice League", "Wonder Woman 1984"),
             )
         override suspend fun findMovies(actor: Actor): Flow<String> = 
             filmsByActor[actor]?.asFlow() ?: emptyFlow()
     }
 ```
 
-We can create a flow emitting only the actors `henryCavill`, `benAffleck`, and `galGodot` for each of them, retrieving the list of movies they played in. We can use the `flatMapMerge` function to do that:
+We can create a flow emitting only the actors `henryCavill`, `benAffleck`, and `galGadot` for each of them, retrieving the list of movies they played in. We can use the `flatMapMerge` function to do that:
 
 ```kotlin
 actorRepository
     .findJLAActors()
-    .filter { it == benAffleck || it == henryCavill || it == galGodot }
+    .filter { it == benAffleck || it == henryCavill || it == galGadot }
     .flatMapMerge { actor ->
         movieRepository.findMovies(actor).onEach { delay(1000) }
     }
@@ -1265,7 +1265,7 @@ Good Will Hunting
 Justice League
 ```
 
-As we can see, the list of movies is randomly created by merging the original lists. For example, the "Fast & Furious" movie belongs to Gal Godot, which was emitted as the second value by the first flow. Then, we have a film by Ben Affleck and the first movie by Henry Cavill. The program continues in this way until all the movies are emitted.
+As we can see, the list of movies is randomly created by merging the original lists. For example, the "Fast & Furious" movie belongs to Gal Gadot, which was emitted as the second value by the first flow. Then, we have a film by Ben Affleck and the first movie by Henry Cavill. The program continues in this way until all the movies are emitted.
 
 We can set the level of concurrency to 1, and we can see that the output will be linearized, printing all the films of an actor before moving to the next one:
 
@@ -1284,11 +1284,11 @@ Justice League
 
 We've got the same result as the `flatMapConcat` function.
 
-**The `flatMapMerge` function is handy when dealing with I/O operations on a collection of information**. We can set the concurrency level to the number of available processors to maximize the program's performance or even to fine-tune the maximum level of resources we want to use. Another approach could have been using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value the collection:
+**The `flatMapMerge` function is handy when dealing with I/O operations on a collection of information**. We can set the concurrency level to the number of available processors to maximize the program's performance or even to fine-tune the maximum level of resources we want to use. Another approach is using the [`async` coroutine builder](https://blog.rockthejvm.com/kotlin-coroutines-101/#52-the-async-builder) for each value in the collection:
 
 ```kotlin
 coroutineScope {
-    listOf(henryCavill, galGodot, benAffleck).map {
+    listOf(henryCavill, galGadot, benAffleck).map {
         async { movieRepository.findMovies(it).onEach { delay(1000) } }
     }.flatMap {
         it.await()
@@ -1319,7 +1319,7 @@ We'll try to rebuild the `Flow` type and the `flow` builder from scratch to unde
 ```kotlin
 val flow: suspend () -> Unit = {
     println(henryCavill)
-    println(galGodot)
+    println(galGadot)
     println(ezraMiller)
     println(benFisher)
     println(rayHardy)
@@ -1333,7 +1333,7 @@ We made the lambda as a suspending function because we want to have the possibil
 ```kotlin
 val flow: suspend ((Actor) -> Unit) -> Unit = { emit: (Actor) -> Unit ->
     emit(henryCavill)
-    emit(galGodot)
+    emit(galGadot)
     emit(ezraMiller)
     emit(benFisher)
     emit(rayHardy)
@@ -1359,7 +1359,7 @@ We made the `FlowCollector` interface a functional interface (or SAM, Single Abs
 ```kotlin
 val flow: suspend (FlowCollector) -> Unit = {
     it.emit(henryCavill)
-    it.emit(galGodot)
+    it.emit(galGadot)
     it.emit(ezraMiller)
     it.emit(benFisher)
     it.emit(rayHardy)
@@ -1373,7 +1373,7 @@ Since we don't like to call the `emit` function on the `it` reference, we can ch
 ```kotlin
 val flow: suspend FlowCollector.() -> Unit = {
     emit(henryCavill)
-    emit(galGodot)
+    emit(galGadot)
     emit(ezraMiller)
     emit(benFisher)
     emit(rayHardy)
@@ -1395,7 +1395,7 @@ If we rename our `flow` function into `builder`, we can define the `Flow` type a
 ```kotlin
 val builder: suspend FlowCollector.() -> Unit = {
     emit(henryCavill)
-    emit(galGodot)
+    emit(galGadot)
     emit(ezraMiller)
     emit(benFisher)
     emit(rayHardy)
