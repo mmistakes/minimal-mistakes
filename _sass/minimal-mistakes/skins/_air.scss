@@ -6,9 +6,10 @@
 $background-color: #eeeeee !default;
 $text-color: #222831 !default;
 $muted-text-color: #393e46 !default;
-$primary-color: #0092ca !default;
+$primary-color: #2f5a9f !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
-$footer-background-color: $primary-color !default;
+$colour-gradient: linear-gradient(to right, #3f69ad, #2647a2);
+$footer-background-color: $colour-gradient !default;
 $link-color: #393e46 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;

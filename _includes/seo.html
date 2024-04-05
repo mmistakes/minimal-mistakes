@@ -4,7 +4,7 @@
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
 
-{% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
+{% assign title_separator = site.title_separator | default: '' | replace: '|', '&#124;' %}
 
 {%- if page.title -%}
   {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}

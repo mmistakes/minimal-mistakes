@@ -57,19 +57,21 @@
     </div>
 
     {% include scripts.html %}
-    <script>
-      async function getHelmiStatus() {
-        const response = await fetch("https://fiqci-backend-fiqci-workspace.rahtiapp.fi/healthcheck")
-        const result = await response.json();
-        if (result?.data) {
-          const {data: { status }} = result;
-          document.getElementById("helmi_status").innerHTML= status ? "🟢" : "🔴";
-        } else{
-          document.getElementById("helmi_status").innerHTML="🔴";
+    {% if page.title == "Status" %}
+      <script>
+        async function getHelmiStatus() {
+          const response = await fetch("https://fiqci-backend-fiqci-workspace.rahtiapp.fi/healthcheck")
+          const result = await response.json();
+          if (result?.data) {
+            const {data: { status }} = result;
+            document.getElementById("helmi_status").innerHTML= status ? "🟢" : "🔴";
+          } else{
+            document.getElementById("helmi_status").innerHTML="🔴";
           }
         }
-      getHelmiStatus();
-    </script>
+        getHelmiStatus();
+      </script>
+    {% endif %}
 
   </body>
 </html>

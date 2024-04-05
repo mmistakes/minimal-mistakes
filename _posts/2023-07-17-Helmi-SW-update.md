@@ -1,7 +1,7 @@
 ---
 title: 'Helmi Software Update'
 date: 2023-07-17
-permalink: /_pages/status/Helmi-SW-update/
+permalink: /_posts/2023-07-17-Helmi-SW-update/
 header:
   teaser: /assets/images/access-icon.png
 published: true
@@ -30,7 +30,7 @@ The new software allows for additional new changes:
 
 - Job initialization time should now be reduced.
 - [Job metadata can be queried](https://docs.csc.fi/computing/quantum-computing/helmi/running-on-helmi/#job-metadata).
-- [Readout Heralding](https://arxiv.org/abs/1202.5541) has been implemented to filter out state preparation errors. It can be used by setting it in the [backend options](https://iqm-finland.github.io/qiskit-on-iqm/user_guide.html#running-a-quantum-circuit-on-an-iqm-quantum-computer). For the description of the option see [here](https://iqm-finland.github.io/iqm-client/api/iqm_client.iqm_client.HeraldingMode.html).
+- [Readout Heralding](https://arxiv.org/abs/1202.5541) has been implemented to filter out state preparation errors. It can be used by setting it in the [backend options](https://iqm-finland.github.io/qiskit-on-iqm/user_guide.html#running-a-quantum-circuit-on-an-iqm-quantum-computer). For the description of the option see [here](https://iqm-finland.github.io/iqm-client/api/iqm.iqm_client.iqm_client.HeraldingMode.html).
 - A fake backend with noise model has been added called `FakeAdonis`. See [here](https://iqm-finland.github.io/qiskit-on-iqm/user_guide.html#noisy-simulation-of-quantum-circuit-execution) for more information. Only available through Qiskit!
 - [Batched job submission and parameterized circuits](https://iqm-finland.github.io/qiskit-on-iqm/user_guide.html#more-advanced-examples).
 - You can get the latest figures of merit using this helpful [script](https://github.com/FiQCI/helmi-examples/blob/main/scripts/get_calibration_data.py)

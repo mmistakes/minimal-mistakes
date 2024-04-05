@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-GB"
 title                    : ""
-title_separator          : "-"
+title_separator          : ""
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "The FiQCI Consortium"
 description              : "Web presence of the Finnish Quantum-Computing Infrastructure"
