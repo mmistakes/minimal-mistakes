@@ -367,5 +367,9 @@ Reference
     -  <a href = 'https://wikidocs.net/229'>예외 처리 by 점프 투 자바</a>
     -  <a href = 'https://ttl-blog.tistory.com/351#Unchecked%20Exception%EC%9C%BC%EB%A1%9C%20%ED%8F%AC%EC%9E%A5%ED%95%98%EC%97%AC%20%EB%8D%98%EC%A0%B8%EB%9D%BC!-1'>예외 종류에 따른 트랜잭션 롤백처리 by 말 랑</a>
 
+- UnChecked-Exception과-트랜잭션의-오해와-진실
+    -  <a href = 'https://inpa.tistory.com/entry/JAVA-%E2%98%95-UnChecked-Exception%EA%B3%BC-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9D%98-%EC%98%A4%ED%95%B4%EC%99%80-%EC%A7%84%EC%8B%A4'>(Un)Checked Exception과 트랜잭션의 오해와 진실
+출처: https://inpa.tistory.com/entry/JAVA-☕-UnChecked-Exception과-트랜잭션의-오해와-진실 by Inpa Dev</a>
+
 - Image
     -  <a href = 'https://www.scaler.com/topics/java/exception-handling-in-java/'>Exception Handling in Java by Aditi Patil</a>
