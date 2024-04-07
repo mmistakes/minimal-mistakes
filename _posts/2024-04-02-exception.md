@@ -25,7 +25,7 @@ Spring을 이용한 웹 개발 미니프로젝트 중 효율적인 Exception 처
 <div style="display: flex; justify-content: center;">
     <img src="{{site.url}}\images\2024-04-02-exception\exception2.png" alt="Alt text" style="width: 70%; height: 70%; margin: 10px;">
 </div>
- Error와 Exception 클래스르 보면 Throwable 클래스를 상속받고 있다. Exception은 주로 개발자가 작성한 코드에 의해 런타임, 컴파일 중 발생한다.  Error는 시스템레벨에서 처리해야하지만 Exception은  Exception Handling, 즉 개발자가 로직을 추가하여 처리할 수 있다. 
+ Error와 Exception 클래스를 보면 Throwable 클래스를 상속받고 있다. Exception은 주로 개발자가 작성한 코드에 의해 런타임, 컴파일 중 발생한다.  Error는 시스템레벨에서 처리해야하지만 Exception은  Exception Handling, 즉 개발자가 로직을 추가하여 처리할 수 있다. 
 
  Exception의 자식 클래스 중 RuntimeException 은 CheckedException 과 Unchecked Exception 을 구분하는 기준이다 .  
  
