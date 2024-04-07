@@ -13,14 +13,14 @@ published: true
 
 Spring을 이용한 웹 개발 미니프로젝트 중 효율적인 Exception 처리 로직에 관해 공부할 필요성을 느껴 예외 처리 방법에 대해 정리했다.
 
-### 예외(Exception) vs 오류(Error)
+## 예외(Exception) vs 오류(Error)
 종종 예외와 오류를 동일하게 생각하는 경우가 있는데 둘은 명확히 다른 개념이다.
 
 오류는 시스템 비정상적인 상황이 생겼을 때 발생한다. 이는 시스템 레벨에서 발생하는 심각한 수준의 문제이다. 
 
 예외는 프로그래머가 작성한 로직에서 발생하는 문제이다. 미리 예측하고 처리할 수있기 때문에 올바르게 핸들링하는것이 중요하다. 
 
-### Exception 클래스  
+## Exception 클래스  
 
 <div style="display: flex; justify-content: center;">
     <img src="{{site.url}}\images\2024-04-02-exception\exception2.png" alt="Alt text" style="width: 70%; height: 70%; margin: 10px;">
@@ -37,7 +37,10 @@ Spring을 이용한 웹 개발 미니프로젝트 중 효율적인 Exception 처
 
 
 
-### 예외 처리 방법
+## 일반적인 예외 처리
+
+### try-catch 문
+
 일반적으로 JAVA 에서 예외 처리 방법의 구조는 try-catch 문이다. 
 
 ```java
@@ -213,7 +216,7 @@ NullPointerException
 
 다음과 같이 포장, 영수증발행, 발송 메서드에서는 예외를 던지고 상품발송 메서드에서 넘겨받은 예외를 처리하여 모두 취소하는 것이 완벽한 트랜잭션 처리 방법이다.
 
-## 예외처리 방법 
+## 예외 처리 방법 
 
 예외를 처리하는 일반적인 방법은 **예외 복구, 예외처리 회피, 예외 전환** 3가지 이다. 
 
