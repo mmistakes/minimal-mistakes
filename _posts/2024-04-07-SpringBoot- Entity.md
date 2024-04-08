@@ -10,7 +10,7 @@ toc_icon: "fas fa-list"
 
 ---
 
-[TOC]
+<br>
 
 
 
@@ -119,20 +119,18 @@ public class Question {
 
 - cascade : PERSIST, MERGE, REMOVE, REFRESH, DETACH와 모든 옵션을 줄 수 있는 ALL입니다.
 
-  <br>
+ <br>
 
 
-
+---
 
 
 
 
 # ◆양방향과 단방향 연관관계
 
-테이블은 **외래 키로 조인을 사용해서 연관된 테이블을 찾고**
-
-객체는 **참조를 사용해서 연관된 객체를 찾는다.**<br>
-
+테이블은 **외래 키로 조인을 사용해서 연관된 테이블을 찾고**객체는 **참조를 사용해서 연관된 객체를 찾는다.**
+<br>
 
 
 
@@ -141,6 +139,10 @@ public class Question {
 
 단방향(unidirectional)은 상대 엔티티에 `@ManyToOne`이 없는 경우,
 양방향(bidirectional)은 상대 엔티티에 `@ManyToOne`이 있는 경우이다.
+<br>
+
+
+
 
 **`@ManyToOne`** 기준으로 설명드리자면,
 
@@ -151,7 +153,7 @@ public class Question {
 
 
 
-
+---
 
 
 
@@ -165,6 +167,10 @@ public class Question {
 2. 답변 → 질문 연관관계 1개(단방향)
 
 위 와 같이 **단방향 연관관계가 두가지 존재한다고 볼 수 있다.**
+<br>
+
+
+
 
 
 
@@ -175,6 +181,10 @@ public class Question {
 **answer에 question를 바꿨을 때 외래키 값이 업데이트되어야 하는가?**
 
  이런 딜레마가 존재 한다.
+<br>
+
+
+
 
 
 
@@ -183,17 +193,22 @@ public class Question {
 객체의 두 관계 중 **하나를 연관관계의 주인으로 지정** 하고 **연관관계의 주인만이 외래 키를 관리(등록, 수정)**하는 것이다.
 
 주인이 아닌 쪽은 **읽기만 가능**하다.
+<br>
 
 
 
-보통 **1 대 다 관계에서는 보통 다(N) 쪽이 외래키를 가지므로 다(N) 쪽이 관계의 주인이 된.**
+
+
+
+보통 **1 대 다 관계에서는 보통 다(N) 쪽이 외래키를 가지므로 다(N) 쪽이 관계의 주인이 된다.**
 
 **JPA 설계를 할 때 단방향 매핑으로 설계를 끝내는 것이 좋다.**
+<br>
 
 
+---
 
-참고 : 
 
-[https://colevelup.tistory.com/41]: https://colevelup.tistory.com/41	"https://colevelup.tistory.com/41"
-[https://velog.io/@goniieee/JPA-OneToMany-ManyToOne%EC%9C%BC%EB%A1%9C-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0]: https://velog.io/@goniieee/JPA-OneToMany-ManyToOne%EC%9C%BC%EB%A1%9C-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0	"https://velog.io/@goniieee/"
+참고 : <a href="https://colevelup.tistory.com/41">https://colevelup.tistory.com/41, <a href="https://velog.io/@goniieee/JPA-OneToMany-ManyToOne%EC%9C%BC%EB%A1%9C-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">https://velog.io/@goniieee/
+
 
