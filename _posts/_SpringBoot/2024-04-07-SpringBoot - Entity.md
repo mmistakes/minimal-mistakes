@@ -10,7 +10,6 @@ toc_icon: "fas fa-list"
 
 ---
 
-[TOC]
 
 
 
