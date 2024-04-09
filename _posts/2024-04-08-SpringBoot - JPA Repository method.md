@@ -14,8 +14,6 @@ toc_icon: "fas fa-list"
 
 
 
-
-
 # ◆JPA Repository method
 
 - findAll() : 테이블에서 레코드 전체 목록을 조회
@@ -49,14 +47,13 @@ public interface QuestionRepository extends JpaRepository<Question, Integer>{
 	List<Question> findBySubjectLike(String subject);
 }
 ```
-
+<br/><br/>
 
 
 
 
 쿼리와 관련된 jpa메서드 : 
-
-<a href="https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html ">https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html</a>
+<a href="https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html ">Spring JPA 메서드</a>
 <br>
 
 
@@ -73,6 +70,8 @@ assertEquals(예상한 결과, 결과값) : 테스트에서 예상한 결과와 
 assertTrue(op.isPresent()) : 괄호안의 값이 true인지 false인지 확인하여 false이면 오류발생하고 테스트 종료<br/><br/>
 
 
+
 <a href="https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html ">인터페이스 CrudRepository</a>
+
 
 
