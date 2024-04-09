@@ -43,19 +43,6 @@ toc_icon: "fas fa-list"
 **예제**
 
 ```java
-package com.example.demo;
-
-import java.time.LocalDateTime;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import lombok.Getter;
-import lombok.Setter;
-
 @Getter
 @Setter
 @Entity
@@ -77,21 +64,6 @@ public class Answer {
 ```
 
 ```java
-package com.example.demo;
-
-import java.time.LocalDateTime;
-import java.util.List;
-
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import lombok.Getter;
-import lombok.Setter;
-
 @Getter
 @Setter
 @Entity
@@ -129,17 +101,13 @@ public class Question {
 
 # ◆양방향과 단방향 연관관계
 
-테이블은 **외래 키로 조인을 사용해서 연관된 테이블을 찾고**객체는 **참조를 사용해서 연관된 객체를 찾는다.**
-<br/>
-<br/>
+테이블은 **외래 키로 조인을 사용해서 연관된 테이블을 찾고**객체는 **참조를 사용해서 연관된 객체를 찾는다.**<br/><br/>
+
 **`@OneToMany`** 기준으로 설명드리자면,
-
 단방향(unidirectional)은 상대 엔티티에 `@ManyToOne`이 없는 경우,
-양방향(bidirectional)은 상대 엔티티에 `@ManyToOne`이 있는 경우이다.
-<br/>
-<br/>
-**`@ManyToOne`** 기준으로 설명드리자면,
+양방향(bidirectional)은 상대 엔티티에 `@ManyToOne`이 있는 경우이다.<br/><br/>
 
+**`@ManyToOne`** 기준으로 설명드리자면,
 단방향(unidirectional)은 상대 엔티티에 `@OneToMany`가 없는 경우,
 양방향(bidirectional)은 상대 엔티티에 `@OneToMany`가 있는 경우이다.
 
@@ -160,28 +128,19 @@ public class Question {
 1. 질문 → 답변 연관관계 1개(단방향)
 2. 답변 → 질문 연관관계 1개(단방향)
 
-위 와 같이 **단방향 연관관계가 두가지 존재한다고 볼 수 있다.**
-<br/>
-<br/>
+위 와 같이 **단방향 연관관계가 두가지 존재한다고 볼 수 있다.**<br/><br/>
 
 그렇다면 도대체 뭘로 매핑해야 할까?
-
 **question에 answer값을 바꿧을때 외래키 값이 업데이트되어야 하는가?**
-
 **answer에 question를 바꿨을 때 외래키 값이 업데이트되어야 하는가?**
 
- 이런 딜레마가 존재 한다.
-<br/>
-<br/>
+ 이런 딜레마가 존재 한다.<br/><br/>
+ 
 양방향 매핑 규칙은 그래서 연관관계의 주인을 지정하는 것이다.
-
 객체의 두 관계 중 **하나를 연관관계의 주인으로 지정** 하고 **연관관계의 주인만이 외래 키를 관리(등록, 수정)**하는 것이다.
+주인이 아닌 쪽은 **읽기만 가능**하다.<br/><br/>
 
-주인이 아닌 쪽은 **읽기만 가능**하다.
-<br/>
-<br/>
 보통 **1 대 다 관계에서는 보통 다(N) 쪽이 외래키를 가지므로 다(N) 쪽이 관계의 주인이 된다.**
-
 **JPA 설계를 할 때 단방향 매핑으로 설계를 끝내는 것이 좋다.**
 <br>
 
