@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug Wiko - Gartenarbeitsschule",
-    "title": "Ausflug Wiko - Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWlwZDZmdXM2NHJtNTM5ZzBkNjhmYTIwcW0gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-08T07:45:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-08T12:00:00+02:00"
-    },
-    "created": "2024-03-20T10:47:23.000Z",
-    "updated": "2024-03-20T10:47:23.326Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A2 - Bibliothek",
-    "title": "Ausflug A2 - Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzkwMG40M2EzNzUxNW5xNG4xNG1uZmhiNTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-09T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-09T12:00:00+02:00"
-    },
-    "created": "2024-03-21T07:59:24.000Z",
-    "updated": "2024-03-21T07:59:24.048Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. Fachkonferenz Jül ",
     "title": "3. Fachkonferenz Jül ",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2023-12-01T04:55:37.000Z",
     "updated": "2023-12-01T04:55:37.202Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A5 - Gartenarbeitsschule",
+    "title": "Ausflug A5 - Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWgydGlsYXA0cHBocjBlcGs1YnZsdmcyNWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-16T07:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-16T11:30:00+02:00"
+    },
+    "created": "2024-03-20T10:49:44.000Z",
+    "updated": "2024-03-20T10:49:44.479Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Fotograf 6. Klassen",
+    "title": "Fotograf 6. Klassen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGFtYzE2NDM3bXUybWFsMjZlZ2M1aWU5OGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-04-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-04-25",
+      "date_time": null
+    },
+    "created": "2023-06-30T11:12:09.000Z",
+    "updated": "2023-06-30T11:12:09.866Z"
   }
 ]
