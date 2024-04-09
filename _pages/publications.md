@@ -17,7 +17,7 @@ intro:
 
 <!-- {% include feature_row id="intro" type="center" %} -->
 
-Watch this space for the latest news and posts of interest!
+<!-- Watch this space for the latest news and posts of interest! -->
 
 <!-- {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
