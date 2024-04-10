@@ -5,6 +5,7 @@ permalink: /_posts/2024-04-09-Financial-Algorithms/
 header:
   teaser: /assets/images/vtt-images/VTT_kvanttitietokone_labra-3237.jpg
 published: true
+author: Olli Mukkula
 layout: single
 tags:
   - Helmi
@@ -79,7 +80,7 @@ Here, a reality check is in order. Both housing price estimation and option pric
 ## Finance and quantum computers gather public interest
 Experts from different fields interested in gaining a quantum advantage in the future are now working to improve their knowledge and encouraging people to learn about quantum technologies.
 
-Last November, the Hanken School of Economics in Finland and Ultrahack organized a quantum hackathon for finance-oriented minds with the theme of sustainable finance in the quantum era. The competition saw many teams with different backgrounds tackling the challenge and coming up with innovative solutions to combine the financial sector with the capabilities of quantum computers. Taking part in supporting the event, CSC, with colleagues from VTT and IQM, provided participants access to the 20-qubit Leena quantum computer through the LUMI supercomputer.
+Last November, the Hanken School of Economics in Finland and Ultrahack organized a quantum hackathon for finance-oriented minds with the theme of sustainable finance in the quantum era. The competition saw many teams with different backgrounds tackling the challenge and coming up with innovative solutions to combine the financial sector with the capabilities of quantum computers. Taking part in supporting the event, CSC and VTT with colleagues from IQM, provided participants access to the 20-qubit Leena quantum computer through the LUMI supercomputer.
 
 It was great to see teams utilizing the Finnish quantum computer as a part of their projects. One such team, Qumpula Quantum, won 2nd place in the competition. A popular topic in this year's hackathon was quantum machine learning, which was also implemented using Leena.
 
@@ -87,7 +88,7 @@ It was great to see teams utilizing the Finnish quantum computer as a part of th
     <img src="/assets/images/Financial-Algorithms-Blog/Figure5-Hanken-Hackathon.png" alt="Figure 5: Hanken-Hackathon">
     <figcaption>
     <p>
-    <em>Figure 5: CSC had a team mentoring at Hanken Quantum Hackathon. Pictured at the bottom left: Nikolas Klemola, Olli Mukkula, Modupe Falodun and Jake Muff.</em>
+    <em>Figure 5: CSC had a team mentoring at Hanken Quantum Hackathon. Pictured at the bottom left: Nikolas Klemola Tango, Olli Mukkula, Modupe Falodun and Jake Muff.</em>
     </p>
     </figcaption>
 </figure>
