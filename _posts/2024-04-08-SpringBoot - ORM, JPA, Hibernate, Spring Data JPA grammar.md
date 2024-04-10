@@ -49,7 +49,7 @@ JPA는 Java Persistence API의 약자로, **자바 어플리케이션에서 관�
 
 **<조회과정>**
 
-![JPA과정](https://github.com/pueser/pueser.github.io/images/2024-04-08-SpringBoot - ORM, JPA, Hibernate, Spring Data JPA grammar/JPA과정.png)
+![JPA과정](https://github.com/pueser/Thefesta_android/assets/117990884/fe1753ae-debc-4cdc-8b04-611b1f757320)
 
 <br>
 
