@@ -36,14 +36,14 @@ JPA는 Java Persistence API의 약자로, **자바 어플리케이션에서 관�
 
 
 > JPA는 영속성 컨텍스트인 EntityManager를 통해 Entity를 관리하고 이러한 Entity가 DB와 매핑되어 사용자가 Entity에 대한 CRUD를 실행을 했을 때 Entity와 관련된 테이블에 대한 적절한 SQL 쿼리문을 생성하고 이를 관리하였다가 필요시 JDBC API를 통해 DB에 날리게 된다.
-> 
+>
+
 - 영속성 컨텍스트는 Entity에 대한 캐시라고 생각하면 이해가 빠르게 될것이다.
 - Entity는 DB의 Entity와 동일한 개념이고 단지 이를 Java라는 객체지향 언어에서 객체로 관리하는 것을 의미한다. <a href="https://pueser.github.io/springboot/SpringBoot-Entity/">Entity</a>
 - EntityManager는 Entity를 생명주기를 관리하는 context로 Persistence Context 역할을 수행해준다. 마치 메모리에서 데이터를 언제 올리고 어떻게 내릴지에 관해 관리하는 것처럼 말이다.<br/><br/>
 
 
-
-**<조회과정>**
+<조회과정>
 
 ![JPA과정](https://github.com/pueser/Thefesta_android/assets/117990884/fe1753ae-debc-4cdc-8b04-611b1f757320)
 
@@ -69,7 +69,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.show_sql=true
 ```
-<br/><br/>
+
 - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect: 스프링 부트와 하이버네이트를 함께 사용할때 필요한 설정항목
 - spring.jpa.hibernate.ddl-auto=update: 엔터티를 기준으로 데이터의 테이블을 생성하는 규칙
 - spring.jpa.properties.hibernate.format_sql=true, spring.jpa.properties.hibernate.show_sql=true: 실행 쿼리문이 콘솔로그에서 확인할 수있도록하는 설정항목
