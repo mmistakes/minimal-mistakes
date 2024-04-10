@@ -15,18 +15,18 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko_KR"
 title                    : "hju`s blog"
 title_separator          : "-"
 subtitle                 : "since 2024.04"
 name                     : "Park HyeongJu"
 description              : "commonplace"
 url                      : "https://hju00.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/hju00"
 repository               : "hju00/hju00.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Just 컴공 대학생"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "Park HyeongJu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am majoring in Computer Engineering at Pusan National University."
-  location         : "In Busan, Korea"
+  bio              : "Pusan National University<br>Computer Engineering"
+  location         : "Republic of Korea"
   email            : "hju00forwork@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:hju00forwork@email.com"
+      url: "mailto:hju00forwork@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,14 +124,17 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/hju00/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/hju_april/"
 
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:hju00forwork@email.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -140,7 +143,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/hju00/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -149,7 +152,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/hju_april/"
 
 
 # Reading Files
@@ -218,7 +221,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -290,3 +293,11 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
