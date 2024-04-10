@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Park HyeongJu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am majoring in Information and Computer Engineering at Pusan National University."
+  bio              : "I am majoring in Computer Engineering at Pusan National University."
   location         : "In Busan, Korea"
-  email            :
+  email            : "hju00forwork@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
