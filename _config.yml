@@ -20,10 +20,10 @@ title                    : "hju`s blog"
 title_separator          : "-"
 subtitle                 : "since 2024.04"
 name                     : "Park HyeongJu"
-description              : "hi"
+description              : "commonplace"
 url                      : "https://hju00.github.io"
-baseurl                  : "/hju00"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "hju00/hju00.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -81,11 +81,11 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : null
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  username               : null
+  app_id                 : null
+  publisher              : null
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -104,25 +104,40 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Park HyeongJu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am majoring in Computer Engineering at Pusan National University"
+  bio              : "I am majoring in Information and Computer Engineering at Pusan National University."
   location         : "In Busan, Korea"
-  email            : "hju00forwork@gmail.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "hju00forwork@gmail.com"
+      # url: "mailto:hju00forwork@email.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/hju00"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/hju_april?igsh=Y200eWhheDR2dWFy&utm_source=qr"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
