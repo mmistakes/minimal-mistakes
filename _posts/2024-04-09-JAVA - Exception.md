@@ -18,6 +18,7 @@ toc_icon: "fas fa-list"
 
 
 
+
 # ◆예외처리
 
 -java는 에러 난 상황을 크게 오류(Error)와 예외(Exception)으로 구분한다. 예외(Exception)는 개발자가 처리 할 수 있는 에러이고 오류(Error)는 시스템에서 발생하여 개발자가 처리 할 수 없는 에러이다.<br/>
