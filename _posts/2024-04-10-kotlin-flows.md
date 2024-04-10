@@ -52,7 +52,7 @@ We want to be sure to distinguish the first name and the last name of an actor. 
 val henryCavill = Actor(Id(1), FirstName("Henry"), LastName("Cavill"))
 val galGadot: Actor = Actor(Id(1), FirstName("Gal"), LastName("Gadot"))
 val ezraMiller: Actor = Actor(Id(2), FirstName("Ezra"), LastName("Miller"))
-val benFisher: Actor = Actor(Id(3), FirstName("Ben"), LastName("Fisher"))
+val rayFisher: Actor = Actor(Id(3), FirstName("Ray"), LastName("Fisher"))
 val benAffleck: Actor = Actor(Id(4), FirstName("Ben"), LastName("Affleck"))
 val jasonMomoa: Actor = Actor(Id(5), FirstName("Jason"), LastName("Momoa"))
 
