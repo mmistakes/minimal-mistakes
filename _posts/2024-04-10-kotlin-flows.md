@@ -1,15 +1,19 @@
 ---
-title: "The Ultimate Guide to Kotlin Flows"
-date: 2024-03-10
+title: "Kotlin Flows - The Ultimate Guide"
+date: 2024-04-10
 header:
     image: "/images/blog cover.jpg"
 tags: [kotlin]
-excerpt: "This article will focus on another crucial concept in Kotlin Coroutines: Kotlin flows. Flows are a reactive data structure you didn't know, but you can't live without them once you know them."
+excerpt: "This article thoroughly covers a crucial concept in Kotlin Coroutines: Kotlin Flows. Flows are a reactive data structure you probably didn't know, but you can't live without them once you know them."
 toc: true
 toc_label: "In this article"
 ---
 
 _By [Riccardo Cardin](https://github.com/rcardin)_
+
+Video version:
+
+{% include video id="p6SagGRLYaE" provider="youtube" %}
 
 In the article [Kotlin Coroutines—A Comprehensive Introduction](https://blog.rockthejvm.com/kotlin-coroutines-101/), we saw how to use Kotlin Coroutines to write asynchronous code in a more natural and readable way. This article will focus on another crucial concept in Kotlin Coroutines: Kotlin flows. Flows are a data structure you didn't know, but you can't live without them once you know them. So, without further ado, let's dive into Kotlin Flows.
 
