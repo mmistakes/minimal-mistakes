@@ -88,7 +88,7 @@ It was great to see teams utilizing the Finnish quantum computer as a part of th
     <img src="/assets/images/Financial-Algorithms-Blog/Figure5-Hanken-Hackathon.png" alt="Figure 5: Hanken-Hackathon">
     <figcaption>
     <p>
-    <em>Figure 5: CSC had a team mentoring at Hanken Quantum Hackathon. Pictured at the bottom left: Nikolas Klemola Tango, Olli Mukkula, Modupe Falodun and Jake Muff.</em>
+    <em>Figure 5: CSC and VTT had teams mentoring at Hanken Quantum Hackathon. Pictured at the bottom left: Nikolas Klemola Tango, Olli Mukkula, Modupe Falodun and Jake Muff.</em>
     </p>
     </figcaption>
 </figure>
