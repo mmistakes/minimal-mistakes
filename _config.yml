@@ -26,7 +26,7 @@ baseurl                  : # "/hju00"
 repository               : "hju00/hju00.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Just 컴공 대학생"
+masthead_title           : "hju`s blog"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Pusan National University<br>Computer Engineering"
   location         : "Republic of Korea"
-  email            : "hju00forwork@gmail.com"
+  email            : # "hju00forwork@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
