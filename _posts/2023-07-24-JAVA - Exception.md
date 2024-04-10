@@ -120,7 +120,9 @@ RuntimeException 및 해당 서브 클래스는 메서드 또는 생성자의 �
 - 실행 단계에서 확인 가능하다.
 - 예외 발생 시 트랜잭션 roll back 한다.
 - RuntimeException의 하위 클래스
-<br?
+<br/>
+
+
 
 
 출처: https://steady-hello.tistory.com/55 [컨닝페이퍼:티스토리]
