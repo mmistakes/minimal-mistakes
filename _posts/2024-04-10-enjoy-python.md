@@ -35,3 +35,12 @@ title:  "Your Working Space"
 * Bi-LSTM
 * SVM 선형회귀
 * RNN
+
+### AI Hub 사용하기 
+* <b>데이터셋 이용하기</b>
+  * 한국 데이터셋 다운로드
+* AI 모델 이용하기
+  * 딥러닝 모델 API 사용하기 - openAPI key 가 있는 경우
+* 컴퓨팅 자원 신청하기
+
+
