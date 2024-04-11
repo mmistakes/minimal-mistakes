@@ -33,3 +33,6 @@ sidebar-category:
       - title: "Graduation"
         url: "/graduation"
         category: "graduation"
+  - title: ETC
+      url: "/etc"
+      category: "etc"
