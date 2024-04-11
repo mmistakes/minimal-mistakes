@@ -2,7 +2,7 @@
 layout: post
 title:  "[Blockchain] 하이퍼레저 패브릭 1"
 categories:
-  - graduation
+  - hyperledger
 ---
 
 # 하이퍼레저란??
