@@ -15,19 +15,19 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "문제를 어떻게 해결했는가"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "small positive action"
 name                     : "Jeong JuYoung"
-description              : "An amazing website."
+description              : "어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
 url                      : "https://youngjungju.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/elephant.jpeg"
 logo                     : "/assets/images/elephant.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
 comments:
   provider               : "disqus"
@@ -108,11 +108,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
   location         : "South Korea"
-  email            : "elephantjuouung@gmail.com"
+  email            : "elephantjuyoung@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "elephantjuouung@gmail.com"
+      url: "elephantjuyoung@gmail.com"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-linkedIn"
       # url: "https://your-website.com"
@@ -279,6 +279,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      show_date: true
+
+date_format: "%Y-%m-%d"
