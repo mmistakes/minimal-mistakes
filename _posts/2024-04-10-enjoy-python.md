@@ -25,6 +25,9 @@ title:  "Your Working Space"
 ### ASAP (Automated Student Assessment Prize) 
 -> Kaggle 이 공유한 학생용 데이터셋 ASAP, ASAP-AES, ASAP-SAS, ASAP++
 
+'''
+'''
+
 ### ASAP 활용 AI 모델 
 * 최단 경로 유사성, LSA 회귀 모델
 * word-graph
@@ -47,5 +50,5 @@ title:  "Your Working Space"
 ### 과제 데이터셋의 국내 외 현황 
 * 국내 현황
 * 해외 현황
-*   
+
 
