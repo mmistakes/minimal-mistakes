@@ -13,7 +13,9 @@ _Enter Riccardo:_
 
 This article introduces Kotlin coroutines, a powerful tool for asynchronous programming. Kotlin's coroutines fall under the umbrella of structured concurrency. They implement a model of concurrency which you can consider similar to Java virtual threads, [Cats Effect](https://blog.rockthejvm.com/cats-effect-fibers/) and [ZIO fibers](https://blog.rockthejvm.com/zio-fibers/). In detail, we'll present some use cases concerning the use of coroutines on backend services, not on the Android environment.
 
-The article requires a minimum knowledge of the Kotlin language. Still, you should be fine if you come from a Scala background.
+The article requires existing knowledge of Kotlin.
+
+> Coroutines can be tough. If you need to get the Kotlin fundamentals **fast** and with thousands of lines of code and a project under your belt, you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 1. Background and Setup
 
@@ -837,6 +839,8 @@ The only exception to the context inheritance rule is the `Job` context instance
 ## 9. Conclusions
 
 Our journey through the basics of the Kotlin coroutines library is over. We saw why coroutines matter and made a simplified explanation of how they're implemented under the hood. Then, we showed how to create coroutines, also introducing the structural concurrency topic. We saw how cooperative scheduling and cancellation work with many examples. Finally, we introduced the main features of the coroutines' context. There is a lot more to say about coroutines, but we hope this article can be a good starting point for those who want to learn more about them.
+
+If you found coroutines too difficult, you can quickly get the Kotlin basics you need by following the complete [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials) on Rock the JVM.
 
 ## 10. Appendix A
 

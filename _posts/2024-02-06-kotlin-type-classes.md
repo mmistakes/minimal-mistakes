@@ -11,11 +11,13 @@ toc_label: "In this article"
 
 _By [Riccardo Cardin](https://github.com/rcardin)_
 
-In this article, we delve into the concept of type classes in Kotlin, a powerful tool that allows developers to abstract logic for different data types. We'll take data validation as an example to show how type classes can be used to write generic and reusable code. Our implementation will be based on the [Arrow Kt](https://arrow-kt.io/) library, which will exploit Kotlin's context receivers. So, without further ado, let's get the party started.
+In this article, we explore the concept of _type classes_ in Kotlin, a powerful tool that allows developers to abstract logic for different data types. We'll take data validation as an example to show how type classes can be used to write generic and reusable code. Our implementation will be based on the [Arrow Kt](https://arrow-kt.io/) library, which will exploit Kotlin's context receivers. So, without further ado, let's get the party started.
 
 Video version by Daniel:
 
 {% include video id="Qhfiq_1eWM8" provider="youtube" %}
+
+> Type classes are tough. If you need to become proficient in Kotlin **quickly** and with thousands of lines of code and a project under your belt, you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 1. Setting the Stage
 
@@ -492,6 +494,8 @@ _Et voilà!_
 ## 6. Conclusions
 
 In conclusion, this article has explored the concept of type classes in Kotlin, demonstrating their utility in abstracting validation logic for different data types. We've seen how type classes can solve ad-hoc polymorphism, allowing us to define a set of behaviors that can be applied to various types without altering the types themselves. This approach is advantageous in languages like Kotlin, which supports object-oriented and functional programming paradigms. We've also delved into using Kotlin's context receivers and extension functions to enhance the elegance and intuitiveness of our code. Furthermore, we've seen how the Arrow library can be leveraged to handle validation errors functionally, avoiding exceptions and enhancing code maintainability.  However, it's important to note that while type classes offer many advantages, they also come with challenges, such as discoverability and the need for a certain level of familiarity with functional programming concepts. Overall, type classes represent a powerful tool in a developer's toolkit, offering a flexible and maintainable approach to handling everyday programming tasks such as data validation.
+
+Feedback is welcome at daniel@rockthejvm.com! If this article was difficult and you need to ramp up on Kotlin as fast as possible, you'll love the [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 7. Appendix: Gradle Configuration
 

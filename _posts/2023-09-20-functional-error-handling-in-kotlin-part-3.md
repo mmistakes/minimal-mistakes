@@ -22,6 +22,8 @@ For the video version, watch here:
 
 Without further ado, let's start!
 
+> This article requires existing Kotlin experience. If you need to get it **fast** and with thousands of lines of code and a project under your belt, you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
+
 ## 1. Setup
 
 We'll use version 1.9.0 of Kotlin and version 1.2.0 of the Arrow library. In fact, the Raise DSL is not available in previous versions of Arrow.
@@ -1291,6 +1293,8 @@ The risen errors are: NonEmptyList(NegativeAmount, InvalidCurrency(message=Curre
 ## 8. Conclusions
 
 The long journey throughout the new error-handling style in the Arrow 1.2.0 library has ended. During the path, we introduced the central concept of this article, the `Raise<E>` context, and all its implementing flavors. We saw how to use it to transform and recover a computation in its context. Then, we saw how easy it is to pass from the `Raise<E>` context to any of the available wrapper types, like `Either<E, A>`, `Option<A>`, and `Result<A>`. We appreciated how smooth is the composition of functions defined in the `Raise<E>` context. Finally, we saw how to use the `Raise<E>` context to accumulate errors. The article should have given you a good overview of the new error handling style in Arrow and how the Arrow guys decided to get rid of a lot of category theory types (did you see any reference to a monoid, monad, applicative, or _traverse_ application?) in favor of a more straight, idiomatic and Kotlinsh approach.
+
+If you found this article (or the ones before it) too difficult, you can quickly get the experience you need by following the Rock the JVM complete [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 9. Appendix: Maven Configuration
 

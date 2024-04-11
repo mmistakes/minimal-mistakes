@@ -17,6 +17,8 @@ If you'd like to watch the video form of this article, please enjoy:
 
 The Kotlin language is a multi-paradigm, general-purpose programming language. Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to handle errors. Still, this article will focus on the functional approaches and introduce the Arrow library. This article is the first part of a series. We'll focus on strategies that deal with the error without managing its cause, i.e., nullable types and Arrow Option types. So, without further ado, let's get started.
 
+> This article assumes you're comfortable with Kotlin. If you need to get those essential skills **as fast as possible** and with thousands of lines of code and a project under your belt, you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
+
 ## 1. Setup
 
 Let's first create the setup we'll use throughout the article as usual. We'll use the last version of Kotlin available at the moment of writing, version 1.8.20.
@@ -744,7 +746,11 @@ The salary gap between JobId(value=42) and the max salary is 0.0
 
 ## 5. Conclusions
 
-This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then, we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. In the next part of this series, we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type and the Arrow `Either<L, R>` type.
+This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then, we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. 
+
+In the next part of this series, we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type and the Arrow `Either<L, R>` type.
+
+If you found this article too difficult, you can quickly get the experience you need by following the complete [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials) on Rock the JVM.
 
 ## 6. Appendix: Maven Configuration
 

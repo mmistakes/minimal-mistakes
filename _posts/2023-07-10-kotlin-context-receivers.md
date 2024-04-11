@@ -17,6 +17,8 @@ In Kotlin, context receivers provide a convenient way to access functions and pr
 
 We'll dive deeply into context receivers, starting with their purpose and benefits. We'll explore practical examples and demonstrate how context receivers can make your Kotlin code more expressive and effective. So let's get started and unlock the full potential of context receivers in Kotlin!
 
+> Context Receivers are an experimental feature and requires good knowledge of Kotlin. If you need to get those skills **quickly** and with thousands of lines of code and a project under your belt, we think you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
+
 If you'd like to watch the video version, please find it below:
 
 {% include video id="TVdFAftHzPE" provider="youtube" %}
@@ -475,7 +477,11 @@ The final use case for context receivers is to help with typed errors. In fact, 
 
 ## 5. Conclusion
 
-It's time we sum up what we saw. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on the strengths and weaknesses of context receivers, and we proved that there are better solutions for dependency injection. In the next article, we will see how context receivers can help us handle typed errors functionally and how they'll be used in the next version of the Arrow library.
+It's time we sum up what we saw. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on the strengths and weaknesses of context receivers, and we proved that there are better solutions for dependency injection. 
+
+In the next article, we will see how context receivers can help us handle typed errors functionally and how they'll be used in the next version of the Arrow library.
+
+If you felt that this article was too complex and need to ramp up on Kotlin quickly, do check out the complete [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 6. Appendix: Gradle Configuration
 

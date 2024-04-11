@@ -74,6 +74,8 @@ We have defined the actors playing in the movies "Zack Snyder's Justice League",
 
 ## 2. Flows Basics
 
+> If you need to become proficient in Kotlin **quickly** and with thousands of lines of code and a project under your belt, you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
+
 What is a flow in Kotlin? **A `Flow<T>` is a reactive data structure that emits a sequence of type `T` values**. Flows are part of the Kotlin Coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. We can create a flow from a finite list of values using the `flowOf` function:
 
 ```kotlin
@@ -1312,7 +1314,9 @@ Since the focus of this article is to introduce the main features of flows, we l
 
 ## 9. Conclusions
 
-Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We also left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new. If you have any questions or feedback, please let us know. We're always happy to hear from you.
+Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We also left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new. 
+
+If you have any questions or feedback, please let us know. We're always happy to hear from you. If this article was in any way too difficult and you need to become good at Kotlin as fast as possible, we think you'll love the [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials). 
 
 ## 10. Appendix: How Flows Work
 

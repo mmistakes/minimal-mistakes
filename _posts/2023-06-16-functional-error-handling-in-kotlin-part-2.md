@@ -15,11 +15,13 @@ In this series [first part](https://blog.rockthejvm.com/functional-error-handlin
 
 For the project's setup, please refer to the first part of this series, in which we set up Maven and the needed dependencies.
 
-Without further ado, let's get started!
-
 For the video version, watch below:
 
 {% include video id="C0B44WBJJmY" provider="youtube" %}
+
+Without further ado, let's get started!
+
+> This article, as the first part, requires existing Kotlin experience. If you need to get it **fast** and with thousands of lines of code and a project under your belt, you'll love [Kotlin Essentials](https://rockthejvm.com/p/kotlin-essentials). It's a jam-packed course on **everything** you'll ever need to work with Kotlin for any platform (Android, native, backend, anything), including less-known techniques and language tricks that will make your dev life easier. Check it out [here](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 1. The Domain
 
@@ -929,3 +931,5 @@ And that's all, folks!
 ## 6. Conclusions
 
 In this second part of the series dedicated to error handling in Kotlin, we introduced the `Result` and the `Either`type. These types represent both the happy and error paths, unlike the types we saw in the first part of the series. We explored their APIs in deep and saw which features the Arrow library offers us to simplify the composition of `Result` and `Either` instances. It's time to recap what we've learned so far. We can use nullable types and the `Option` type if we are not interested in the possible error path of a computation. In Kotlin, such types are quite similar. If we want to know the cause of an error, we can use the `Result` type. Here, we use the subclasses of the `Throwable` type to express the cause. Finally, we use the `Either` type to avoid the `Throwable` type and handle errors using a hierarchy of custom-typed errors. In the last part of this series, we will introduce the upcoming features of the next version of the Arrow library, 1.2.0, which will further simplify the functional handling of errors.
+
+If you found this article (or the first part) too difficult, you can quickly get the experience you need by following the complete [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials) on Rock the JVM.
