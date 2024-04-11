@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Blockchain] 하이퍼레저 패브릭 1"
+title:  "[Hyperledger] 하이퍼레저 패브릭 1"
 categories:
   - hyperledger
 ---
