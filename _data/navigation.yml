@@ -23,5 +23,7 @@ sidebar-category:
         url: "/graduation"
         category: "graduation"
   - title: ETC
-      url: "/etc"
-      category: "etc"
+    children:
+      - title: "Etc"
+        url: "/etc"
+        category: "etc"
