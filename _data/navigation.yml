@@ -10,14 +10,26 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-docs:
+# docs:
+#   - title: BLOCKCHAIN
+#     children:
+#       - title: "Hyperledger"
+#         url: hyperledger/
+#         category: "hyperledger"
+#   - title: PROJECT
+#     children:
+#       - title: "Graduation"
+#         url: graduation/
+#         category: "graduation"
+        
+sidebar-category:
   - title: BLOCKCHAIN
     children:
       - title: "Hyperledger"
-        url: hyperledger/
+        url: "/hyperledger"
         category: "hyperledger"
   - title: PROJECT
     children:
       - title: "Graduation"
-        url: graduation/
+        url: "/graduation"
         category: "graduation"
