@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "나는 문제를 어떻게 해결했는가"
+title                    : "문제를 어떻게 해결했는가"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jeong JuYoung"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jeoung JuYoung"
+  name             : "Jeong JuYoung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
   location         : "South Korea"
