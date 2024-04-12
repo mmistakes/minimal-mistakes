@@ -1,54 +1,37 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A5 - Bibliothek ",
-    "title": "Ausflug A5 - Bibliothek ",
+    "alt": "Ausflug 5c - Bibliothek ",
+    "title": "Ausflug 5c - Bibliothek ",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWQxMnI4M2hyaGJzNzlvNjJudHBnaHFkODUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NDQ5ZWxtOG1qdjQzMThzdWpvcmhmcGI5MDcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-04-11T07:30:00+02:00"
+      "date_time": "2024-04-12T10:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-04-11T10:30:00+02:00"
+      "date_time": "2024-04-12T13:30:00+02:00"
     },
-    "created": "2024-03-20T10:48:20.000Z",
-    "updated": "2024-03-20T10:48:20.071Z"
+    "created": "2024-04-11T05:21:23.000Z",
+    "updated": "2024-04-11T05:21:23.445Z"
   },
   {
     "image_path": null,
-    "alt": "Ausflug A9 - Bibliothek Spandau",
-    "title": "Ausflug A9 - Bibliothek Spandau",
+    "alt": "Ausflug 4b - Bibliothek ",
+    "title": "Ausflug 4b - Bibliothek ",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2U0NnFqbnY4NHQ3ZGxpNW9zZXNtOGRib2UgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NWdpb2s2bW5yMXFoMmg3b2c2cDh2NG41a3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-04-11T10:00:00+02:00"
+      "date_time": "2024-04-15T10:45:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-04-11T13:00:00+02:00"
+      "date_time": "2024-04-15T13:15:00+02:00"
     },
-    "created": "2024-01-31T12:15:39.000Z",
-    "updated": "2024-01-31T12:15:39.063Z"
-  },
-  {
-    "image_path": null,
-    "alt": "3. Schulkonferenz",
-    "title": "3. Schulkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjE2aHM3dDRmOHQ2MHU3ZHE4ajA1YzhhMmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-11T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-11T17:00:00+02:00"
-    },
-    "created": "2023-12-01T04:55:37.000Z",
-    "updated": "2023-12-01T04:55:37.202Z"
+    "created": "2024-04-11T05:27:26.000Z",
+    "updated": "2024-04-11T05:27:26.820Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-02-21T09:41:48.000Z",
     "updated": "2024-02-21T09:41:48.857Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A5 - Bibliothek ",
+    "title": "Ausflug A5 - Bibliothek ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDhhYmpmb20yMXU1aWpmMDlsMnJra2I2ZHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-26T07:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-26T11:30:00+02:00"
+    },
+    "created": "2024-04-11T05:23:08.000Z",
+    "updated": "2024-04-11T05:23:08.462Z"
   }
 ]
