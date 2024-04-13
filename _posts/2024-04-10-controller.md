@@ -39,6 +39,29 @@ Spring은 클라이언트의 HTTP Accept 헤더와 서버의 컨트롤러 반환
 
 MessageConverter는 HandlerAdapter와 Controller가 요청을 주고 받는 시점 동작하는데 그림의 4번에서는 메세지를 객체로, 6번에서는 객체를 메세지로 변환하는데 메세지 컨버터가 사용된다.
 
+
+### 예제 코드 
+
+
+```java
+
+     // UserDto를 json으로 반환하기 위해 @ResponseBody라는 어노테이션 추가 
+     @GetMapping( "/find/name/{userName}")
+     public @ResponseBody ResponseEntity<UserDto> findByUserNamerWithResponseEntity(@PathVariable("userName") String userName) throws Exception {
+         return ResponseEntity.ok(userService.findByUserName(userName));
+     }
+
+     
+    @GetMapping("mypage")
+    public String mypage(Authentication authentication, Model model) {
+
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        model.addAttribute("username", userDetails.getUsername());
+        return "member/mypage";
+    }
+
+
+```
 ## @RestController
 
 @RestController는 Spring4.0에서 추가되었다.
@@ -48,6 +71,25 @@ MessageConverter는 HandlerAdapter와 Controller가 요청을 주고 받는 시�
 @RestController는 모든 핸들러 메소드에서 @ResponseBody를 사용할 필요가 없이 데이터를 반화해준다.
 
 REStful 웹 서비스를 만드는 경우에는 @Controller + @ResponseBody 보다 @RestController을 사용하는 것이 좋다. 
+
+
+### 예제 코드 
+
+```java
+    //  User 객체를 그대로 반환 -> 클라이언트가 예상하는 HttpStatus를 설정해줄 수 없다
+    @GetMapping("/find/name/{userName}")
+    public UserDto findByUserName(@PathVariable("userName") String userName) throws Exception {
+        return userService.findByUserName(userName);
+    }
+
+    // 객체를 그대로 반환하면 HttpStatus를 설정해줄 수 없으므로 객체를 상황에 맞는 ResponseEntity로 감싸서 반환
+    @GetMapping( "/find/name/{userName}")
+    public ResponseEntity<UserDto> findByUserNamerWithResponseEntity(@PathVariable("userName") String userName) throws Exception {
+        return ResponseEntity.ok(userService.findByUserName(userName));
+    }
+
+```
+
 
 정리하면 
 
@@ -63,7 +105,16 @@ REStful 웹 서비스를 만드는 경우에는 @Controller + @ResponseBody 보�
 유저와 관련된 컨트롤러는 UserController로, API 처리는 UserApiController와 같이 별도의 컨트롤러로 분리하면 역할을 명확히 구분하고 유지 관리를 용이하게 할 수 있다.
 
 
-## 예제 코드 
 
 
+<br>
+<br>
+----
+Reference
 
+- Exception Handling    
+    - <a href = 'https://mangkyu.tistory.com/49'>[Spring] @Controller와 @RestController 차이
+by [MangKyu's Diary:티스토리]</a>
+    - <a href = 'https://inpa.tistory.com/entry/JAVA-%E2%98%95-Exception-Handling-%EC%98%88%EC%99%B8%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-3%EA%B0%80%EC%A7%80-%EA%B8%B0%EB%B2%95#1._%EC%98%88%EC%99%B8_%EB%B3%B5%EA%B5%AC'>자바 예외를 처리하는 3가지 기법 by Inpa Dev</a>
+    - <a href = 'https://velog.io/@gillog/Java-Exception-Handling%EB%B3%B5%EA%B5%AC-%ED%9A%8C%ED%94%BC-%EC%A0%84%ED%99%98'> Exception Handling(복구, 회피, 전환) by gil.log</a>
+    - <a href = 'https://cheese10yun.github.io/checked-exception/'>Checked Exception을 대하는 자세 by cheese10yun</a>
