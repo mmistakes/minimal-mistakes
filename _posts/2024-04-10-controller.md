@@ -1,13 +1,13 @@
 ---
 layout: single
-title: '[Spring] @Controller와 @RestController 역할'
+title: '[Spring] @Controller와 @RestController 제대로 알기'
 categories: JAVA
 tag: [JAVA, Spring]
 toc: true 
 author_profile: false
 sidebar:
     nav: "counts"
-published: false
+published: true
 
 ---
 
@@ -82,39 +82,48 @@ REStful 웹 서비스를 만드는 경우에는 @Controller + @ResponseBody 보�
         return userService.findByUserName(userName);
     }
 
-    // 객체를 그대로 반환하면 HttpStatus를 설정해줄 수 없으므로 객체를 상황에 맞는 ResponseEntity로 감싸서 반환
+    // 객체를 그대로 반환하면 HttpStatus를 설정해줄 수 없음 -> 객체를 상황에 맞는 ResponseEntity로 감싸서 반환
     @GetMapping( "/find/name/{userName}")
     public ResponseEntity<UserDto> findByUserNamerWithResponseEntity(@PathVariable("userName") String userName) throws Exception {
         return ResponseEntity.ok(userService.findByUserName(userName));
     }
 
 ```
+<br>
 
-
-정리하면 
+@Controller와 @RestController 와 정리하면 다음과 같다. 
 
 >- @Controller : 뷰와 연계되는 웹 페이지를 위한 요청 처리
 >
 >- @RestController : RESTful API를 통해 데이터를 주고받기 위한 요청 처리
 
-<br>
+구조적으로 두 어노테이션을 사용하는 컨트롤러 클래스를 따로 구성하는 것이 바람직하다 !
 
-구조적으로 두 어노테이션을 사용하는 컨트롤러 클래스를 따로 구성하는 것이 바람직하다. 
+그래서 기존 기능별로 나눴던 컨트롤러 구조를 를 회원 / 비회원으로 나눴다.
+
+
+<div style="display: flex; justify-content: center;">
+    <img src="{{site.url}}\images\2024-04-10-controller\controllre_structure.png" alt="Alt text" style="width: 60%; height: 80%; margin: 20px;">
+</div>
+
+
+- Public controler : 누구나 접근할 수 있는 뷰 
+
+- UserController : 회원만 접근할 수 있는 뷰 
+
+- UserApiController : 회원 관련 RESTful API
 
 
 유저와 관련된 컨트롤러는 UserController로, API 처리는 UserApiController와 같이 별도의 컨트롤러로 분리하면 역할을 명확히 구분하고 유지 관리를 용이하게 할 수 있다.
 
 
-
-
-<br>
 <br>
 ----
+<br>
+
 Reference
 
-- Exception Handling    
+- @Controller와 @RestController 
     - <a href = 'https://mangkyu.tistory.com/49'>[Spring] @Controller와 @RestController 차이
 by [MangKyu's Diary:티스토리]</a>
-    - <a href = 'https://inpa.tistory.com/entry/JAVA-%E2%98%95-Exception-Handling-%EC%98%88%EC%99%B8%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94-3%EA%B0%80%EC%A7%80-%EA%B8%B0%EB%B2%95#1._%EC%98%88%EC%99%B8_%EB%B3%B5%EA%B5%AC'>자바 예외를 처리하는 3가지 기법 by Inpa Dev</a>
-    - <a href = 'https://velog.io/@gillog/Java-Exception-Handling%EB%B3%B5%EA%B5%AC-%ED%9A%8C%ED%94%BC-%EC%A0%84%ED%99%98'> Exception Handling(복구, 회피, 전환) by gil.log</a>
-    - <a href = 'https://cheese10yun.github.io/checked-exception/'>Checked Exception을 대하는 자세 by cheese10yun</a>
+    - <a href = 'https://backendcode.tistory.com/213_%EC%98%88%EC%99%B8_%EB%B3%B5%EA%B5%AC'>@Controller와 @RestController 차이점 by [무작정 개발:티스토리]</a>
