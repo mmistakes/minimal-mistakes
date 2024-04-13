@@ -6,7 +6,7 @@ tags:
   - innovation
   - technology
   - history
-  - italys
+  - italy
 excerpt: Reflecting on the history of technology company Olivetti and what it can still mean today.
 ---
 

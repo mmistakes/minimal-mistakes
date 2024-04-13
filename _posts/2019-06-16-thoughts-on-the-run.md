@@ -4,7 +4,6 @@ tags:
   - running
   - sport
   - marathon
-  - fitness
 excerpt: Running is an amazing activity for body and mind. It is hard work, but it feels so good. I started running more and more lately and have progressed quite well.
 ---
 

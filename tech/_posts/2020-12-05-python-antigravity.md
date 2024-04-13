@@ -2,8 +2,7 @@
 title: Python & Antigravity
 tags:
   - python
-  - xkcd
-  - easter_egg
+  - easter egg
 categories: tech
 excerpt: Python's antigravity package explored
 ---
