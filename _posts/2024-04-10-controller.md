@@ -76,13 +76,13 @@ REStful 웹 서비스를 만드는 경우에는 @Controller + @ResponseBody 보�
 ### 예제 코드 
 
 ```java
-    //  User 객체를 그대로 반환 -> 클라이언트가 예상하는 HttpStatus를 설정해줄 수 없다
+    //  User 객체를 그대로 반환 -> 클라이언트가 예상하는 HttpStatus를 설정해줄 수 없다 ❌
     @GetMapping("/find/name/{userName}")
     public UserDto findByUserName(@PathVariable("userName") String userName) throws Exception {
         return userService.findByUserName(userName);
     }
 
-    // 객체를 그대로 반환하면 HttpStatus를 설정해줄 수 없음 -> 객체를 상황에 맞는 ResponseEntity로 감싸서 반환
+    // 객체를 그대로 반환하면 HttpStatus를 설정해줄 수 없음 -> 객체를 상황에 맞는 ResponseEntity로 감싸서 반환 ⭕
     @GetMapping( "/find/name/{userName}")
     public ResponseEntity<UserDto> findByUserNamerWithResponseEntity(@PathVariable("userName") String userName) throws Exception {
         return ResponseEntity.ok(userService.findByUserName(userName));
@@ -99,7 +99,7 @@ REStful 웹 서비스를 만드는 경우에는 @Controller + @ResponseBody 보�
 
 구조적으로 두 어노테이션을 사용하는 컨트롤러 클래스를 따로 구성하는 것이 바람직하다 !
 
-그래서 기존 기능별로 나눴던 컨트롤러 구조를 를 회원 / 비회원으로 나눴다.
+그래서 기존 기능별로 나눴던 컨트롤러 구조를 회원 / 비회원으로 나눴다.
 
 
 <div style="display: flex; justify-content: center;">
