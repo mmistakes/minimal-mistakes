@@ -16,9 +16,10 @@ related: true
  
  no, but it is a little bit of all those things...
 
-How about the *Blue Knob **Everything** Radio Network!*<img src="/media/transparent_check.png">
+How about the *Blue Knob **Everything** Radio Network*???
 
- ---
+...let's just call it the **B.E.R.N.**<img src="/media/transparent_check.png">
+
  ![BERN not Pictured](/media/radar-dish-against-cloud-sky.webp)
 
 *Greetings, **Citizen**!*
@@ -39,7 +40,7 @@ Or would you like a platform on which to gossip about...well, just about anythin
 ![Talk About It](/media/truth_mic.jpg)
 
 # The BERN Mesh
-The **BERN** is a *user generated* radio network using the open-source [Meshtastic](https://meshtastic.org/) routing protocol to ensure long-range delivery of text based messages over the air. With maximum theoretical range of 250km, each node of the **BREN** extends the reach, range, and reliability of the entire network. The more people who use it, the more powerful and reliable it becomes.
+The **BERN** is a *user generated* radio network using the open-source [Meshtastic](https://meshtastic.org/) routing protocol to ensure long-range delivery of text based messages over the air. With maximum theoretical range of 250km, each node of the **BERN** extends the reach, range, and reliability of the entire network. The more people who use it, the more powerful and reliable it becomes.
 ![Partial Mesh Network](/media/partial-mesh.png)
 
 In the above mesh network diagram, all nodes are connected to the mesh but some nodes are not connected to one another. For example, there's no way for **A** to talk directly to **D** or **C**. The mesh routing will forward **A's** messages to **E** and **B** which **do** have connection to **C** and **D**...and the message is delivered. Larger mesh networks may see multiple hops across multiple nodes before messages propagate to their final destination.
