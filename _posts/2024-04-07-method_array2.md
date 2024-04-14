@@ -52,7 +52,7 @@ typora-root-url: ../
 
 <span style="font-size:85%">[ 평점이 높은 영화 제목 ]</span>
 
-![image-20240410143438002](/images/2024-04-07-method_array2/image-20240410143438002.png)
+<img src="/images/2024-04-07-method_array2/image-20240415004828355.png" alt="image-20240415004828355" style="zoom:50%;" />
 
 <img src="/images/2024-04-07-method_array2/image-20240410143513407.png" alt="image-20240410143513407" style="zoom:50%;" />
 
@@ -212,3 +212,4 @@ typora-root-url: ../
 <img src="/images/2024-04-07-method_array2/image-20240410183245535.png" alt="image-20240410183245535" style="zoom:50%;" />
 
 <span style="font-size:85%">=> 초기값을 지정하기 전에는 배열 요소의 합인 21이 반환되고, 초기값을 100으로 지정한 후 121이 반환됨</span>
+
