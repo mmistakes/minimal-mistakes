@@ -4,8 +4,8 @@ main:
     url: /
   - title: "Where to Buy"
     url: suppliers.html
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "DIY"
+    url: diy.html
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
