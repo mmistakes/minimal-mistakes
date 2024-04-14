@@ -8,10 +8,13 @@ related: false
 permalink: diy.html
 ---
 # DIY Builds
-There is no right way to build your own. Every build is unique. The builder should ask the purpose of the unit being constructed. Is it meant to remain stationary, at home? If so, then there would be no benefit to including a GPS receiver since the position is known and fixed. Here I present two units I built as examples. I do not assert these are the best, or most efficient, or most cost-effective designs...they're just designs that have proven practically useful.
+<img src="/media/DIY-Electronic-Project-2.png" width="80%">
+There is no definitive way to build your own. Every build is unique. Environment, use case, budget, all inform the build process. For example, there is no reason to include a GPS receiver on a stationary node since the position is known and fixed.
+
+These are not the best, the most efficient, nor most cost-effective designs...they're just early prototyes which have performed fairly well.
 ## Solar Base Station
-<img src="/media/base_mounted.jpg">
-This unit serves as a stationary, always-on rooftop "router" node for our mesh network. It's solar panel charges a high capacity battery unit, which is more than capable of running the unit for upwards of a full week under sunless conditions. 
+<img src="/media/base_mounted.jpg" width="67%">
+This unit serves as a stationary, always-on, rooftop router node for the BERN. Solar charging keeps a high capacity battery unit topped off infefinitely with enough reserve power to operate without sun for a week or more. 
 
  - [Waterproof Project Box](https://www.amazon.com/gp/product/B06XSQZ5M6): $10
  - [Rak Wireless Meshtastic Starter Kit](https://store.rokland.com/products/rak-wireless-wisblock-meshtastic-starter-kit): $35
@@ -20,13 +23,15 @@ This unit serves as a stationary, always-on rooftop "router" node for our mesh n
  - [10W Solar Panel Charger, IP66 Waterproof](https://www.amazon.com/gp/product/B0CJ5C2QY5): $22
  - [Vinyl Waterproof Tape](https://www.amazon.com/gp/product/B00K5GW67O): $15
  - [U.FL IPEX to N Type Female Coaxial Cable](https://www.amazon.com/gp/product/B09N3LPBYB)(pk of 2): $8
-**Total: $170**
-<img src="/media/base_hoseclamps.jpg"><img src="/media/base_board.jpg">
-<img src="/media/base_antenna.jpg"><img src="/media/base_inside.jpg">
+ - [Hose Clamp Wall Mount Bracket](https://www.amazon.com/gp/product/B08YRBR5FB)(pk of 2): $16
+ - [Chassis Drain Plug](https://www.mouser.com/ProductDetail/Amphenol-LTW/VENT-PS1YBK-N8001?qs=5aG0NVq1C4wAxWre7fChJA%3D%3D): $3
+**Total: $181**
+<img src="/media/base_hoseclamps.jpg"><img src="/media/base_board.jpg" width="67%">
+<img src="/media/base_antenna.jpg"><img src="/media/base_inside.jpg" width="67%">
 
 This can almost certainly be done more cheaply. The battery bank solves an important issue for outdoor installations, especially in cold climates. It prevents charging above or bellow dangerous thresholds. Time will tell if it can sustain itself all winter, but I'll update here once I find out!
 ## Handheld Client Unit
-<img src="/media/handhelds_closed.jpg">
+<img src="/media/handhelds_closed.jpg" width="67%">
 This unit is meant to be a medium range walking-around client node. It's got decent range due to 1/4 wave 2dbi antenna, which diminishes its portability somewhat. It's single, rechargeable battery is sufficient to keep the unit on constantly for over a month between charges!
  - [Rak Wireless Meshtastic Starter Kit](https://store.rokland.com/products/rak-wireless-wisblock-meshtastic-starter-kit): $35
  - [1/4 Wave 2dbi antenna](https://www.amazon.com/gp/product/B07HZ3BSHM): $10
@@ -37,7 +42,6 @@ This unit is meant to be a medium range walking-around client node. It's got dec
  - [Enclosure Belt Clip](https://www.digikey.com/en/products/detail/hammond-manufacturing/1599CLIP/460760): $3
  - [NCR18650GA 3450mAh 10A Battery](https://store.rokland.com/products/sanyo-ncr18650ga-3450mah-10a-battery-lilygo-ttgo-meshtastic-t-beam)(pk of 2): $12
  - [18650 Battery Holder](https://www.amazon.com/DIANN-10pcs-Battery-Holder-Single/dp/B0BJV7SK5D/)(pk of 10): $6
- - [Hose Clamp Wall Mount Bracket](https://www.amazon.com/gp/product/B08YRBR5FB)(pk of 2): $16
 **Total: $71**
-<img src="/media/handhelds_open.jpg"><img src="/media/handheld_solo.jpg">
+<img src="/media/handhelds_open.jpg" width="67%"><img src="/media/handheld_solo.jpg" width="67%">
 I was fortunately able to source a number of components, not the WizBlock, from eBay sellers at a substantial discount. I think my unit-cost was ~$50, but wanted to represent a worst-case number here.
