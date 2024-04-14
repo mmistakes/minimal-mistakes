@@ -9,11 +9,13 @@ permalink: diy.html
 ---
 # DIY Builds
 <img src="/media/DIY-Electronic-Project-2.png" width="80%">
+
 There is no definitive way to build your own. Every build is unique. Environment, use case, budget, all inform the build process. For example, there is no reason to include a GPS receiver on a stationary node since the position is known and fixed.
 
 These are not the best, the most efficient, nor most cost-effective designs...they're just early prototyes which have performed fairly well.
 ## Solar Base Station
 <img src="/media/base_mounted.jpg" width="67%">
+
 This unit serves as a stationary, always-on, rooftop router node for the BERN. Solar charging keeps a high capacity battery unit topped off infefinitely with enough reserve power to operate without sun for a week or more. 
 
  - [Waterproof Project Box](https://www.amazon.com/gp/product/B06XSQZ5M6): $10
@@ -32,6 +34,7 @@ This unit serves as a stationary, always-on, rooftop router node for the BERN. S
 This can almost certainly be done more cheaply. The battery bank solves an important issue for outdoor installations, especially in cold climates. It prevents charging above or bellow dangerous thresholds. Time will tell if it can sustain itself all winter, but I'll update here once I find out!
 ## Handheld Client Unit
 <img src="/media/handhelds_closed.jpg" width="67%">
+
 This unit is meant to be a medium range walking-around client node. It's got decent range due to 1/4 wave 2dbi antenna, which diminishes its portability somewhat. It's single, rechargeable battery is sufficient to keep the unit on constantly for over a month between charges!
  - [Rak Wireless Meshtastic Starter Kit](https://store.rokland.com/products/rak-wireless-wisblock-meshtastic-starter-kit): $35
  - [1/4 Wave 2dbi antenna](https://www.amazon.com/gp/product/B07HZ3BSHM): $10
@@ -44,4 +47,5 @@ This unit is meant to be a medium range walking-around client node. It's got dec
  - [18650 Battery Holder](https://www.amazon.com/DIANN-10pcs-Battery-Holder-Single/dp/B0BJV7SK5D/)(pk of 10): $6
 **Total: $71**
 <img src="/media/handhelds_open.jpg" width="67%"><img src="/media/handheld_solo.jpg" width="67%">
-I was fortunately able to source a number of components, not the WizBlock, from eBay sellers at a substantial discount. I think my unit-cost was ~$50, but wanted to represent a worst-case number here.
+
+I was able to source a number of components from eBay sellers at a substantial discount. My unit-cost was ~$50, but wanted to represent a worst-case number here.
