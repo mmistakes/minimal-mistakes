@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Join your community, join the BERN today!"
   location         : "Blue Knob, Pennsylvania, USA"
-  email            : "info@bern.net"
+  #email           : "info@bkbern.net"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -134,7 +134,7 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - /_pages
+  - /_pages/01_intro.md
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
