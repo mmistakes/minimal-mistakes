@@ -126,4 +126,4 @@ Reference
 - @Controller와 @RestController 
     - <a href = 'https://mangkyu.tistory.com/49'>[Spring] @Controller와 @RestController 차이
 by [MangKyu's Diary:티스토리]</a>
-    - <a href = 'https://backendcode.tistory.com/213_%EC%98%88%EC%99%B8_%EB%B3%B5%EA%B5%AC'>@Controller와 @RestController 차이점 by [무작정 개발:티스토리]</a>
+    - <a href = 'https://backendcode.tistory.com/213#google_vignette'>@Controller와 @RestController 차이점 by [무작정 개발:티스토리]</a>
