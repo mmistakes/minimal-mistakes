@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /about
+permalink: /
 author_profile: true
 read_time: true
 comments: #true
@@ -19,7 +19,7 @@ related: true
 How about the *Blue Knob **Everything** Radio Network!*<img src="/media/transparent_check.png">
 
  ---
- ![BERN not Pictured](/media/A_space_antenna_farm_amid_the_Ardennes_forest.jpg)
+ ![BERN not Pictured](/media/radar-dish-against-cloud-sky.webp)
 
 *Greetings, **Citizen**!*
 
