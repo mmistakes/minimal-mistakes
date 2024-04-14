@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: /
-  # - title: "About"
-  #   url: /about/
+  - title: "Where to Buy"
+    url: suppliers.html
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
