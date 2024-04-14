@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "A Strong Network, is a SAFE Network"
+  name             : "A connected community, is a strong community"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Join your community, join the BERN today!"
+  bio              : "Connect with your community, join the BERN today!"
   location         : "Blue Knob, Pennsylvania, USA"
   #email           : "info@bkbern.net"
   links:
