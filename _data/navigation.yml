@@ -6,7 +6,7 @@ main:
     url: suppliers.html
   - title: "DIY"
     url: diy.html
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Applicaiton"
+    url: app.html
+  - title: "Soapbox"
+    url: philosophy.html
