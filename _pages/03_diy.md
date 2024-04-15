@@ -45,6 +45,7 @@ This unit is meant to be a medium range walking-around client node. It's got dec
  - [Enclosure Belt Clip](https://www.digikey.com/en/products/detail/hammond-manufacturing/1599CLIP/460760): $3
  - [NCR18650GA 3450mAh 10A Battery](https://store.rokland.com/products/sanyo-ncr18650ga-3450mah-10a-battery-lilygo-ttgo-meshtastic-t-beam)(pk of 2): $12
  - [18650 Battery Holder](https://www.amazon.com/DIANN-10pcs-Battery-Holder-Single/dp/B0BJV7SK5D/)(pk of 10): $6
+
 **Total: $71**
 <img src="/media/handhelds_open.jpg" width="67%"><img src="/media/handheld_solo.jpg" width="67%">
 
