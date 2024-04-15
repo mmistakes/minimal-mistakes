@@ -16,8 +16,8 @@ typora-root-url: ../
 
 #### 배열 메서드 종류
 
-| forEach() | map() | Filter() | Reduce() | Some() | Every() | Find() |
-| :-------: | :---: | :------: | :------: | :----: | :-----: | :----: |
+| forEach() | map() | filter() | reduce() | some() | every() | find() |
+| --------- | ----- | -------- | -------- | ------ | ------- | ------ |
 
 
 
@@ -73,7 +73,7 @@ typora-root-url: ../
 
 <span style="font-size:85%">=> 이후 for of 루프 사용으로 함수를 넣을 필요가 없어지고 더 간결해짐</span>
 
-
+<br>
 
 
 
@@ -168,7 +168,7 @@ typora-root-url: ../
 
 
 
->  #### 화살표 함수 arrow functions
+> #### 화살표 함수 arrow functions
 
 
 
@@ -222,11 +222,11 @@ const 변수명 = (매개변수) => {
 
 <br>
 
-<span style="font-size:85%; color:green; font-weight:bold">[ 깨알 개념 정리 ]</span>
+<span style="font-size:80%; color:green; font-weight:bold">[ 깨알 개념 정리 ]</span>
 
-<span style="font-size:80%; color:green">**매개변수(parameter)**는 함수를 정의할 때 사용되는 변수이고 </span>
+<span style="font-size:75%; color:green">**매개변수(parameter)**는 함수를 정의할 때 사용되는 변수이고 </span>
 
-<span style="font-size:80%; color:green">**인수(argument)**는 실제로 함수가 호출될 때 넘기는 변수값이다</span>
+<span style="font-size:75%; color:green">**인수(argument)**는 실제로 함수가 호출될 때 넘기는 변수값이다</span>
 
 <br>
 
