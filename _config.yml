@@ -108,14 +108,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Connect with your community, join the BERN today!"
   location         : "Blue Knob, Pennsylvania, USA"
-  #email           : "info@bkbern.net"
+  #email           : "info@bkmesh.net"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:info@bkbern.net"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "mailto:info@bkmesh.net"
     - label: "Meshtastic"
       icon: ""
       url: "https://meshtastic.org/"
@@ -124,12 +121,8 @@ author:
 footer:
   links:
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
     - label: "Meshtastic"
-      # url:
-    - label: "Denver Mesh"
+      url: "https://meshtastic.org/"
 
 # Reading Files
 include:
