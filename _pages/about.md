@@ -1,9 +1,6 @@
 ---
 title: "About"
-<<<<<<< HEAD
-=======
-layout: page
->>>>>>> f9022464cdf86d07a8b338c1db6af78c18387658
+layout: single
 permalink: /about/
 excerpt: "나의 블로그 계획!"
 author_profile: true
