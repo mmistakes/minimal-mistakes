@@ -13,8 +13,7 @@ permalink: /publications/
 ### 2024
 
 * <a href="https://jacobmorrison.com/assets/GenAI_Legal_Risk_Taxonomy.pdf" style="text-decoration:none;color:navy">A Legal Risk Taxonomy for Generative Artificial Intelligence</a> 
-<span style="font-size:0.75em;">
-David Atkinson, **Jacob Morrison**</span><br>
+<span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
 <span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://jacobmorrison.com/assets/GenAI_Legal_Risk_Taxonomy.pdf)\]</span>
 * <a href="https://huggingface.co/spaces/allenai/reward-bench" style="text-decoration:none;color:navy">RewardBench: A Benchmark for Evaluating Reward Models</a>              
 <span style="font-size:0.75em;">Nathan Lambert, Valentina Piyatkin, **Jacob Morrison**, LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Tom Zick, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi</span><br>
