@@ -60,7 +60,7 @@ You can purchase a turn-key solution (no I am not selling them, this is not a co
 ## Sounds Sketchy, Who's Listening?
 ![FOR YOUR PROTECTION](/media/snooping.jpg)
 
-The **BERN** may be thought of as a series of chat-rooms. Users may self-configure their own private channels, or utilize public "clear" channels. Private and direct messaging channels are protected by [AES256 encryption](https://www.progress.com/blogs/use-aes-256-encryption-secure-data), the same strength utilized by your bank to perform financial transactions.
+The **BERN** may be thought of as a series of chat-rooms. Users may self-configure their own private channels, or utilize public "clear" channels. Private and direct messaging channels are protected by [AES256 encryption](https://www.atpinc.com/blog/what-is-aes-256-encryption), the same strength utilized by your bank to perform financial transactions.
 
 In short, the only people who can "hear" you on the **BERN** are those who you want to allow to do so. You create your own keys for your own rooms, and only those who you've given those keys to may communicate on those channels. It's all in your control.
 
