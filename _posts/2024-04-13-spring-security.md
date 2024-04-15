@@ -441,7 +441,8 @@ public class SecurityConfig {
                         .requestMatchers("/user/**") 
                         .authenticated() // 인증(로그인)만 접근 가능
                          // "/admin" 와 같은 url path로 접근할 경우...
-                        .requestMatchers("/admin/**").hasAuthority(Role.ADMIN.name())
+                        .requestMatchers("/admin/**")
+                        .hasAnyAuthority(Role.ADMIN.name())
                         .anyRequest().permitAll()) // 그외의 모든 url path는 누구나 접근 가능 
 
                 // 인증(로그인)에 대한 설정
