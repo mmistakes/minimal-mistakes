@@ -16,10 +16,9 @@ typora-root-url: ../
 
 #### 배열 메서드 종류
 
-| forEach() | map() | filter() | reduce() | some() | every() | find() |
-| --------- | ----- | -------- | -------- | ------ | ------- | ------ |
+**"  forEach()  &nbsp;/  map()  &nbsp; /  filter()  &nbsp; /  reduce()  &nbsp;/  some()  &nbsp;/  every()  &nbsp;/  find()   "**
 
-
+<br>
 
 <span style="font-size:85%">위 배열 메서드들은 **함수를 인수**로 받는다</span>
 
