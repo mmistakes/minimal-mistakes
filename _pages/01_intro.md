@@ -55,8 +55,6 @@ No, the radio frequencies utilized by the BERN mesh require no licensing by the 
 
 You can purchase a turn-key solution (no I am not selling them, this is not a commercial site!), for ~$60 or build your own for as little as $35. The price of entry is not expensive, and there is no infrastructure required to maintain other than a little radio unit small enough to fit in a shirt pocket!
 
-*A detailed article about purchasing or buiding your own will be available soon!*
-
 ## Sounds Sketchy, Who's Listening?
 ![FOR YOUR PROTECTION](/media/snooping.jpg)
 

@@ -27,6 +27,7 @@ This unit serves as a stationary, always-on, rooftop router node for the BERN. S
  - [U.FL IPEX to N Type Female Coaxial Cable](https://www.amazon.com/gp/product/B09N3LPBYB)(pk of 2): $8
  - [Hose Clamp Wall Mount Bracket](https://www.amazon.com/gp/product/B08YRBR5FB)(pk of 2): $16
  - [Chassis Drain Plug](https://www.mouser.com/ProductDetail/Amphenol-LTW/VENT-PS1YBK-N8001?qs=5aG0NVq1C4wAxWre7fChJA%3D%3D): $3
+
 **Total: $181**
 <img src="/media/base_hoseclamps.jpg"><img src="/media/base_board.jpg" width="67%">
 <img src="/media/base_antenna.jpg"><img src="/media/base_inside.jpg" width="67%">
@@ -47,6 +48,10 @@ This unit is meant to be a medium range walking-around client node. It's got dec
  - [18650 Battery Holder](https://www.amazon.com/DIANN-10pcs-Battery-Holder-Single/dp/B0BJV7SK5D/)(pk of 10): $6
 
 **Total: $71**
+
 <img src="/media/handhelds_open.jpg" width="67%"><img src="/media/handheld_solo.jpg" width="67%">
 
 I was able to source a number of components from eBay sellers at a substantial discount. My unit-cost was ~$50, but wanted to represent a worst-case number here.
+
+## [Let's move on to Software](http://bkmesh.net/app.html)
+<img src="/media/meshtastic-logo.png">

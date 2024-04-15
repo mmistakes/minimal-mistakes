@@ -24,7 +24,6 @@ Keep in mind the nature of these products, which are decidedly maturing rapidly,
  
 
 ## [LillyGo T-Echo](https://www.lilygo.cc/products/t-echo)
-
 <img src="/media/T-Echo-allsides.jpg">
 
 Your best bet for an off-the-shelf, ready-to-use unit. Small form factor makes for ease of use, at the price of radio performance. A good entry level choice to start your Meshtastic journey!
@@ -32,26 +31,22 @@ Your best bet for an off-the-shelf, ready-to-use unit. Small form factor makes f
 <img src="/media/LILYGO-T-DECK_15.webp" width="50%"> 
 
 A newer offering that tries to emulate a Blackberry style handheld. I've been led to believe there are some rough edges to the user experience that are slowly being ironed out by the community.
-
 ## [LillyGo T-Watch](https://www.lilygo.cc/products/t-watch-s3)
 <img src="/media/TWatch.jpg" width="50%">
 
 A "smart-watch" stand-in that can likewise serve as a Meshtastic client.
-
-## Heltec WiFi Lora32 V3
+## [Heltec WiFi Lora32 V3](https://heltec.org/project/wifi-lora-32-v3/)
 <img src="/media/heltecV3.jpg" width="50%">
 
-[WiFi Lora32 V3](https://heltec.org/project/wifi-lora-32-v3/): Technically a development board, optionally ships with a plastic case. You will still need to provide a battery, so this is more a build-it-yourself option.
+A development board, optionally ships with a plastic case. You will still need to provide a battery, so this is a partial DIY.
 ## [Rak Wireless WizBlock](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=41433735725254)
 <img src="/media/rak-wizblock.jpg" width="50%">		 
 
 The kit to buy if you are building your own. Modular options for a wide array of add-on environmental sensors. This is a board only, so will need a custom DIY build to make use of.
-
 ## [Rockland LLC](https://store.rokland.com/pages/meshtastic-hardware-rak-lilygo)
 <img src="/media/ROKLAND-LOGO.png">
 
 Rockland is a US based re-seller for many of the Asian manufacturers. Prices may appear, at first glance, to be slightly higher than ordering direct. However, their in-stock items ship direct from a US warehouse and arrive quite quickly. They're well regarded as a friendly US based supplier who's happy to work with hobbyists such as ourselves.
-
 ## A Note about Resellers 
  <img src="/media/buyer_beware.jpg">
  
@@ -59,5 +54,5 @@ Rockland is a US based re-seller for many of the Asian manufacturers. Prices may
 ## Moving on, let's look at some DIY builds..
 <img src="/media/workbench-scaled.jpg">
 
- - Handheld Client Unit
- - Stationary Solar Node
+ - [Stationary Solar Node](https://bkmesh.net/diy.html#solar-base-station)
+ - [Handheld Mobile Node](https://bkmesh.net/diy.html#handheld-client-unit)
