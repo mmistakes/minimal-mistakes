@@ -78,7 +78,7 @@ typora-root-url: ../
 
 
 
-> #### some(), every()
+>  #### some(), every()
 
 
 
@@ -90,6 +90,8 @@ typora-root-url: ../
 
 <br>
 
+
+
 #### every()
 
 
@@ -100,7 +102,7 @@ typora-root-url: ../
 
 <br>
 
-**<span style="font-size:90%">[ every()와 화살표 함수 활용 연습]</span>**
+<span style="font-size:90%; font-weight:bold">[ every()와 화살표 함수 활용 연습]</span>
 
 <img src="/images/2024-04-07-method_array2/image-20240410153003393.png" alt="image-20240410153003393" style="zoom:50%;" />
 
