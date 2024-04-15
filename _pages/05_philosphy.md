@@ -34,30 +34,31 @@ In the meantime, a shockingly small number of corporate actors have complete con
 > "Central authority is bad. The bias should be for freedom.
 > And without a central authority, there are lots of little authorities, and we learn which ones to trust." -John Stossel
 
-It is not a good state of affairs when someone who doesn't know you and cannot begin to perceive of your life, has the ability to cut off your electricity, power, bank accounts, automobile, or ability to communicate. Yet, this is our world today
+It is not a good state of affairs when someone who doesn't know you and cannot begin to perceive of your life, has the ability to cut off access to your power, water, bank accounts, automobiles, or communications. Yet, recent history has proven multiple examples of all of those things.
 
 ## Parallel Systems
 <img src="/media/pirate_radio.webp" width="50%">
 
-During the Cold War, countries under the heel of the Soviet Union were successful in shaking off the authoritarian yoke of the USSR by building, maintaining, and working within so-called, Parallel Systems.
+During the Cold War, countries under the heel of the Soviet Union were successful in shaking off the authoritarian yoke by building, maintaining, and working within so-called, Parallel Systems.
 
-Rather than utilize State services for things like banking, medicine, libraries, access to culture, the people created their own parallel systems, and only served one another. In so doing, the official agencies withered from lack of use while the people received better, more reliable goods and services, through these unofficial, parallel systems.
+Rather than utilize State services for things like banking, medicine, libraries, or culture, the people created their own parallel systems to serve one another. In so doing, the official agencies withered from lack of use while the people received better, more reliable goods and services, through these unofficial, parallel systems.
 
-It is no exaggeration to suggest that the collapse of the USSR and the rise of progressive democracies throughout the former Eastern Bloc nations owes significant debt to those parallel systems those brave citizens were able to establish and maintain them in the face of a powerful cental authority which sought to eliminate such things.
+It is no exaggeration to suggest that the collapse of the USSR and the rise of progressive democracies throughout the former Eastern Bloc nations owes significantly to those brave citizens who were able to establish and maintain those parallel systems in the face of an authoritarian government trying to stop them.
+
 ## Promise of the Mesh
 <img src="/media/mesh_diagram_houses.png">
 
-The **BERN** and other mesh networks like it represent a wholly different paradigm of communications. Nobody owns the **BERN**, but everyone with a radio owns a part of it.
+The **BERN**, and mesh networks like it, represents a wholly different paradigm of communications. Nobody owns the **BERN**, but everyone with a radio owns a part of it.
 
 > If no one owns it, no one controls it.
 > If no one controls it, no one can shut it down.
-> If no one can shut it down, it's more powerful than anyone who dare try!
+> If no one can shut it down, it's more powerful than anyone who would try!
 
 There is no corporation to commoditize your personal data, boosting corporate profits by selling your private information to the highest bidder. There are no advertisements, no shadow-bans, no algorithms, no commercials, and no content moderation of any kind.
 
-The $35 radio you hold in your hand may not seem like much. After all, it is a lot of work to achieve something as mundane as text messaging. However, that $35 is an investment in buying a slice of independence. A tiny victory in principal, in a world *hell bent* on creating a subservient race of paid subscribers and consumers for all conceivable needs.
+The $35 radio you hold in your hand may not seem like much. After all, it is a lot of work to achieve something as mundane as text messaging. However, that $35 is an investment in buying a slice of independence. A tiny victory in principal, in a world *hell bent* on creating a subservient race of paid subscribers and consumers for any conceivable needs.
 
-There aren't too things left in this world like this, but here is one way you can take something back from those who would use technology as a yoke to control you.
+There aren't too many things left in this world like this, but here is one way you can take something back from those who would use technology as a yoke to control you.
 
 > No one controls the **BERN**, Everyone controls the **BERN**.
 
@@ -66,7 +67,7 @@ There aren't too things left in this world like this, but here is one way you ca
 
 No! The **BERN** and other mesh networks are what you make of them. They can be used for something as mundane as local, neighborhood gossip, road and weather reports, or something as serious as emergency search & rescue. 
 
-Can it be considered a *"prepper thing"*?
+Can it be considered a *"Prepper Thing"*?
 
 Sure, but it's far, far more than that! The use cases are as wide and varied as your own imagination!
 
