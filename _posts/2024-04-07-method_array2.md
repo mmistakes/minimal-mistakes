@@ -64,6 +64,8 @@ typora-root-url: ../
 
 <br>
 
+<br>
+
 <img src="/images/2024-04-07-method_array2/image-20240410144417789.png" alt="image-20240410144417789" style="zoom:50%;" />
 
 <span style="font-size:85%; color:orangered">=> 필터와 매핑의 결과를 각각 변수에 저장하지 않고 필터링한 값에 map메서드를 바로 사용하여 배열을 만든다</span>
@@ -76,7 +78,7 @@ typora-root-url: ../
 
 
 
-> #### some(), every()
+>  #### some(), every()
 
 
 
@@ -88,6 +90,8 @@ typora-root-url: ../
 
 <br>
 
+
+
 #### every()
 
 
@@ -98,7 +102,7 @@ typora-root-url: ../
 
 <br>
 
-**<span style="font-size:90%">[ every()와 화살표 함수 활용 연습]</span>**
+<span style="font-size:90%; font-weight:bold">[ every()와 화살표 함수 활용 연습]</span>
 
 <img src="/images/2024-04-07-method_array2/image-20240410153003393.png" alt="image-20240410153003393" style="zoom:50%;" />
 
