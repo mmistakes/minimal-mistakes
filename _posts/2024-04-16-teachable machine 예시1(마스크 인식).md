@@ -1,10 +1,12 @@
 ---
-title: "마스크aktm"
+title: "마스크 착용여부 확인 하기"
 categories:
-  - AI Regulation
+  - coding
+# - Non-coding
+
 tags:
   - AI
-  - 코딩 예시
+  - coding
  
 
 last_modified_at: 2024-04-16T12:50:50-12:59
