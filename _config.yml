@@ -116,6 +116,18 @@ author:
     - label: "Meshtastic"
       icon: ""
       url: "https://meshtastic.org/"
+    - label: "Denver Mesh"
+      icon: ""
+      url: "https://denvermesh.org/"
+    - label: "Austin Mesh"
+      icon: ""
+      url: "https://austinmesh.org/"
+    - label: "SoCal Mesh"
+      icon: ""
+      url: "https://socalmesh.org/"
+    - label: "LOS Mapping Tool"
+      icon: ""
+      url: "https://www.heywhatsthat.com/"
 
 # Site Footer
 footer:
