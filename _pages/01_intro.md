@@ -84,5 +84,5 @@ Presently, we are able to make tenuous communication between the residential are
 
 Your investment in the **BERN** is something that can be used anywhere on Planet Earth, as it doesn't rely on any additional infrastructure other than what you hold in your hand.
 
-## The B.E.R.N. ...are you feelin' it yet?
+## [The B.E.R.N. ...are you feelin' it yet?](/suppliers.html)
 ![RadioSpace](/media/radiospaceposter.jpg)

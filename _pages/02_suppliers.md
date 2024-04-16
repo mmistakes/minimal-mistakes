@@ -51,8 +51,5 @@ Rockland is a US based re-seller for many of the Asian manufacturers. Prices may
  <img src="/media/buyer_beware.jpg">
  
  You will likely find a good number of these for sale on secondary marketplaces, like E-Bay, Amazon, Etsy, and similar. Outside of the aforementioned Rockland, there are no additional official resellers based in the US. Be cautious about who and what you are ordering if you decide to purchase from an unofficial third party supplier. If you receive a defective, or incorrect item from one of these un-official resellers, you may not have and recourse!
-## Moving on, let's look at some DIY builds..
+## [Moving on, let's look at some DIY builds](/diy.html)
 <img src="/media/workbench-scaled.jpg">
-
- - [Stationary Solar Node](https://bkmesh.net/diy.html#solar-base-station)
- - [Handheld Mobile Node](https://bkmesh.net/diy.html#handheld-client-unit)

@@ -53,5 +53,5 @@ This unit is meant to be a medium range walking-around client node. It's got dec
 
 I was able to source a number of components from eBay sellers at a substantial discount. My unit-cost was ~$50, but wanted to represent a worst-case number here.
 
-## [Let's move on to Software](http://bkmesh.net/app.html)
+## [Let's move on to Software](/app.html)
 <img src="/media/meshtastic-logo.png">
