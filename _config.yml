@@ -125,16 +125,31 @@ author:
     - label: "SoCal Mesh"
       icon: ""
       url: "https://socalmesh.org/"
-    - label: "LOS Mapping Tool"
+    - label: "LOS Mapping"
       icon: ""
       url: "https://www.heywhatsthat.com/"
 
 # Site Footer
 footer:
   links:
-      # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:info@bkmesh.net"
     - label: "Meshtastic"
+      icon: ""
       url: "https://meshtastic.org/"
+    - label: "Denver Mesh"
+      icon: ""
+      url: "https://denvermesh.org/"
+    - label: "Austin Mesh"
+      icon: ""
+      url: "https://austinmesh.org/"
+    - label: "SoCal Mesh"
+      icon: ""
+      url: "https://socalmesh.org/"
+    - label: "LOS Mapping"
+      icon: ""
+      url: "https://www.heywhatsthat.com/"
 
 # Reading Files
 include:
