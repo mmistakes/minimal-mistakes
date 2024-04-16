@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            :  "BrightLuminate"
+    shortname            : "BrightLuminate"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "최도현"
-  avatar           : "/assets/images/IMG_3498.JPG"
+  avatar           : "assets/images/IMG_3498.JPG"
   bio              : "BrightLuminate 블로그 입니다."
   location         : "South Korea"
   email            : "grace7194@gmail.com"
