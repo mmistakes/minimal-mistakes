@@ -20,7 +20,7 @@ title                    : "BrightLuminate"
 title_separator          : "|"
 subtitle                 : "새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 항상 배우고 성장하기 위해 노력합니다.<br>새로운 아이디어와 기술로 세상을 밝게 만들기 위해 노력합니다."
 name                     : "BrightLuminate"
-description              : "저는 새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 배우고 성장하기 위해 항상 노력하고 있습니다.또한 열린 소통과 협업을 중요하게 생각합니다. 더 나은 세상을 만들기 위해 끊임없이 노력하는 개발자로서 사용자 중심의 솔루션을 제공하고 혁신적인 기술을 활용하여 새로운 가능성을 모색합니다. 함께 일하고 싶은 열정적인 개발자 여러분을 만나기를 기대합니다."
+description              : "저는 새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 배우고 성장하기 위해 항상 노력하고 있습니다.또한 열린 소통과 협업을 중요하게 생각합니다."
 url                      : "https://brightluminate.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -112,44 +112,26 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "mailto:your.grace71394@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+       url: "https://brightluminate.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+       url: "https://github.com/BrightLuminate"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://www.instagram.com/dohyeon428/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+       url: "https://github.com/BrightLuminate"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+       url: "https://www.instagram.com/dohyeon428/"
 
 
 # Reading Files
