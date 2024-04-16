@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "BrightLuminate"
 title_separator          : "|"
-subtitle                 : "새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 항상 배우고 성장하기 위해 노력합니다.<br>새로운 아이디어와 기술로 세상을 발게 만들기 위해 노력합니다."
+subtitle                 : "새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 항상 배우고 성장하기 위해 노력합니다.<br>새로운 아이디어와 기술로 세상을 밝게 만들기 위해 노력합니다."
 name                     : "BrightLuminate"
 description              : "BrightLuminate 블로그 입니다."
 url                      : "https://brightluminate.github.io"
