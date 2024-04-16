@@ -20,7 +20,7 @@ title                    : "BrightLuminate"
 title_separator          : "|"
 subtitle                 : "새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 항상 배우고 성장하기 위해 노력합니다.<br>새로운 아이디어와 기술로 세상을 밝게 만들기 위해 노력합니다."
 name                     : "BrightLuminate"
-description              : "저는 새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 배우고 성장하기 위해 항상 노력하고 있습니다.<br> 또한 열린 소통과 협업을 중요하게 생각합니다. 더 나은 세상을 만들기 위해 끊임없이 노력하는 개발자로서 사용자 중심의 솔루션을 제공하고 <br>혁신적인 기술을 활용하여 새로운 가능성을 모색합니다. 함께 일하고 싶은 열정적인 개발자 여러분을 만나기를 기대합니다."
+description              : "저는 새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 배우고 성장하기 위해 항상 노력하고 있습니다.또한 열린 소통과 협업을 중요하게 생각합니다. 더 나은 세상을 만들기 위해 끊임없이 노력하는 개발자로서 사용자 중심의 솔루션을 제공하고 혁신적인 기술을 활용하여 새로운 가능성을 모색합니다. 함께 일하고 싶은 열정적인 개발자 여러분을 만나기를 기대합니다."
 url                      : "https://brightluminate.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            :  "BrightLuminate"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "최도현"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/IMG_3498.JPG"
   bio              : "BrightLuminate 블로그 입니다."
   location         : "South Korea"
   email            : "grace7194@gmail.com"
@@ -287,6 +287,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
+
+date_format: "%Y-%m-%d"
