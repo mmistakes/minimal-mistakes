@@ -108,7 +108,7 @@ author:
   avatar: "assets/images/IMG_3498.JPG"
   bio: "저는 새로운 도전을 좋아하고 끊임없이 변화하는 기술 세계에서 배우고 성장하기 위해 항상 노력하고 있습니다.또한 열린 소통과 협업을 중요하게 생각합니다."
   location: "South Korea"
-  email: "grace7194@gmail.com"
+  email: 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -240,16 +240,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
