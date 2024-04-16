@@ -12,7 +12,7 @@ permalink: app.html
 
 The Meshtastic radios are very simple devices which drives their low price point. By themselves the radios are rudderless. To make use of the radios in a meaningful way one must "drive" them using the Meshtastic client application.
 
-Though there are a number of ways to do this, the easiest is to use Bluetooth. Since most modern smart phones can run the Meshtastic application, and those same phones also have anon-board Bluetooth radio system, and since you're likely to be walking around with one anyay...the hardware platform of the modern phone makes a simple, practical means by which to operate your Meshtastic radio.
+Though there are a number of ways to do this, the easiest is to use Bluetooth. Since most modern smart phones can run the Meshtastic application, and those same phones also have on-board Bluetooth radio system. Since you're likely to be walking around with one anyay...the hardware platform of the modern phone makes a simple, practical means by which to operate your Meshtastic radio.
 
 The application may be found in your familar App stores:
  - [Meshtastic App on the Google Play Store](https://play.google.com/store/apps/details?id=com.geeksville.mesh&pli=1)
