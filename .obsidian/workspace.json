@@ -18,18 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3067c6322fce3812",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/post.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -160,8 +148,12 @@
   },
   "active": "e6dd13ff3870565d",
   "lastOpenFiles": [
-    "_posts/2024-04-17-.md",
+    "{{site.url}}/images/2024-03-25-OS8-images/swap1.png.md",
     "templates/post.md",
+    "{{site.url}}/images/2024-03-25-OS8-images",
+    "{{site.url}}/images",
+    "{{site.url}}",
+    "_posts/2024-04-17-.md",
     "_posts/2024-01-28-introduction.md",
     "_posts/2024-01-29-reversing1.md",
     "_posts/2024-04-04-net5.md",
