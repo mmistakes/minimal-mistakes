@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "d37d30b3f00d9a73",
+    "type": "split",
+    "children": [
+      {
+        "id": "88a5a7cb3241d6f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6dd13ff3870565d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/post.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3067c6322fce3812",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/post.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4d1ddedd4a9de621",
+    "type": "split",
+    "children": [
+      {
+        "id": "652994da386792bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45773f124c35f4ff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4f309d1d262697bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d82182b09d20986d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "44361cb6b8b44553",
+    "type": "split",
+    "children": [
+      {
+        "id": "3aef1af8ff0d4bb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "188d54c3f527babb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "templates/post.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9db8f15dd63334bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "templates/post.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "39eb582ce8f58034",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "58da35605683fafe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "templates/post.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "e6dd13ff3870565d",
+  "lastOpenFiles": [
+    "_posts/2024-04-17-.md",
+    "templates/post.md",
+    "_posts/2024-01-28-introduction.md",
+    "_posts/2024-01-29-reversing1.md",
+    "_posts/2024-04-04-net5.md",
+    "templates",
+    "2024-04-17.md"
+  ]
+}
