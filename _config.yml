@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jeong JuYoung"
+  name             : "정주영"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
   location         : "South Korea"

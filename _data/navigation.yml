@@ -6,7 +6,7 @@ main:
     url: /tags/
 
 docs:
-  - title: "정성길"
+  - title: "대목차"
     children:
       - title: "Category"
         url: /categories/
