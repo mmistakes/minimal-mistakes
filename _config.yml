@@ -108,7 +108,6 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "어떤 문제를 겪고 어떻게 해결했는지 기록합니다."
   location         : "South Korea"
-  email            : "elephantjuyoung@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -119,13 +118,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/youngjungju"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/youngjungju"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/youngjungju"
-
 
 # Site Footer
 footer:
