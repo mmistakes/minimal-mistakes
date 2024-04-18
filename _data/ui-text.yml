@@ -26,7 +26,7 @@ en: &DEFAULT_EN
   comments_label             : "Leave a comment"
   comments_title             : "Comments"
   more_label                 : "Learn more"
-  related_label              : "You may also enjoy"
+  related_label              : "Related Blog Posts"
   follow_label               : "Brought to you by:"
   feed_label                 : "Feed"
   powered_by                 : "Powered by"
