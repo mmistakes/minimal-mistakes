@@ -1,20 +1,7 @@
-<nav id="TableOfContents">
-    <div id="TableOfContentsTitle">Contents</div>
-    <ul>
-      {% assign headings = content | scan: '<h.' %}
-      {% for heading in headings %}
-        {% assign id = heading | split: 'id="' | last | split: '"' | first %}
-        {% assign name = heading | split: '>' | last | split: '<' | first %}
-        {% assign level = heading | split: '<h' | last | split: '>' | first | plus: 0 %}
-        {% if level > 1 %}
-          {% assign spaces = "" %}
-          {% assign count = level | minus: 2 %}
-          {% for i in (1..count) %}
-            {% assign spaces = spaces | append: "&nbsp;&nbsp;&nbsp;&nbsp;" %}
-          {% endfor %}
-          <li><a href="#{{ id }}">{{ spaces }}{{ name }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
-  
+<aside class="sidebar__right">
+<nav class="toc" markdown="1">
+<header><h4 class="nav__title"><i class="fas fa-{{ include.icon | default: 'file-alt' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+*  Auto generated table of contents
+{:toc .toc__menu}
+</nav>
+</aside>
