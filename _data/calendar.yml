@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 6b - Mitte Stadtgang (Gewi)",
-    "title": "Ausflug 6b - Mitte Stadtgang (Gewi)",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2VmMGZhMDk2aTlwaHFsMm04M2ozcjgxM24gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-18T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-18T12:30:00+02:00"
-    },
-    "created": "2024-04-15T09:05:48.000Z",
-    "updated": "2024-04-15T09:05:48.305Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 5a - Bibliothek",
     "title": "Ausflug 5a - Bibliothek",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2023-06-30T11:12:09.000Z",
     "updated": "2023-06-30T11:12:09.866Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A5 - Bibliothek ",
+    "title": "Ausflug A5 - Bibliothek ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDhhYmpmb20yMXU1aWpmMDlsMnJra2I2ZHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-26T07:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-26T11:30:00+02:00"
+    },
+    "created": "2024-04-11T05:23:08.000Z",
+    "updated": "2024-04-11T05:23:08.462Z"
   }
 ]
