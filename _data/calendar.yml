@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 5a - Bibliothek",
-    "title": "Ausflug 5a - Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzMxc2s4MzdvaDA3bzJvdWYwMGRydjNxcXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-19T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-19T13:30:00+02:00"
-    },
-    "created": "2024-04-15T09:07:40.000Z",
-    "updated": "2024-04-15T09:07:40.516Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 5b - Kiesteichtour Wei + ZD",
     "title": "Ausflug 5b - Kiesteichtour Wei + ZD",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-04-11T05:23:08.000Z",
     "updated": "2024-04-11T05:23:08.462Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A3 - Bibliothek",
+    "title": "Ausflug A3 - Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDBoMGF2NTg3N2YzdDNtdnVhb2RoNDNjMjYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-02T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-02T10:30:00+02:00"
+    },
+    "created": "2024-03-20T10:50:28.000Z",
+    "updated": "2024-03-20T10:50:28.208Z"
   }
 ]
