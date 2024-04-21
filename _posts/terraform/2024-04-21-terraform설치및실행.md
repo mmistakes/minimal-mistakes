@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Terraform 설치 및 시작하기
+title: Terraform(테라폼) 설치 및 시작하기
 categories: [Terraform]
 tags: [Terraform]
 toc: true

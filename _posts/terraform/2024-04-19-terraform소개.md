@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Terraform 소개
+title: Terraform(테라폼) 소개
 categories: [Terraform]
 tags: [Terraform]
 toc: true
