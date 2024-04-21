@@ -284,6 +284,7 @@ jekyll-archives:
     tag: archive-taxonomy
   permalinks:
     category: /categories/:name/
+    category_permalink: /:name/
     tag: /tags/:name/
 
 # HTML 압축
@@ -319,3 +320,18 @@ date_format: "%Y-%m-%d"
 dark_theme_toggle: true
 after_footer_scripts:
   - /assets/js/custom/dark-theme.js
+
+
+collections:
+  aws:
+    output: true
+    permalink: /aws/:path/
+  python: 
+    output: true
+    permalink: /python/:path/
+  terraform:
+    output: true 
+    permalink: /terraform/:path/
+  linux:
+    output: true
+    permalink: /linux/:path/

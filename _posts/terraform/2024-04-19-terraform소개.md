@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Terraform(테라폼) 소개
-categories: [Terraform]
+categories: [terraform]
 tags: [Terraform]
 toc: true
 author_profile: false

@@ -1,0 +1,15 @@
+---
+layout: archive
+---
+
+{{ content }}
+<br>
+<section class="taxonomy__section">
+  <div class="entries-{{ page.entries_layout | default: 'list' }}">
+    {% for post in site.categories['terraform'] %}
+    {% include archive-single.html type=page.entries_layout %}
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }}
+    &uarr;</a>
+</section>
