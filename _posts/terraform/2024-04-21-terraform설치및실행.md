@@ -25,7 +25,7 @@ sidebar:
 
 3. 시스템 환경 변수 편집기를 열고 "Path" 변수를 찾아 편집합니다. "새로 만들기"를 클릭하고 Terraform 바이너리 파일이 있는 디렉터리 경로(예: C:\Program Files\Terraform)를 추가합니다.
 
-4. 새 명령 프롬프트 창을 열고 다음 명령어를 실행하여 설치를 확인합니다:
+4. 새 명령 프롬프트 창을 열고 다음 명령어를 실행하여 설치를 확인합니다.
 
    ```
    terraform --version
@@ -186,7 +186,7 @@ sidebar:
 
 ### macOS
 
-1. 터미널 창을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+1. 터미널 창을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다.
 
    ```bash
    curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
@@ -424,7 +424,7 @@ AWS 액세스 키와 비밀 액세스 키는 AWS 콘솔에서 `IAM(Identity and 
 
 5. 작업이 완료되면 AWS 콘솔에서 인스턴스가 생성된 것을 확인할 수 있습니다.
 
-6. 더 이상 필요하지 않다면 다음 명령어로 인스턴스를 제거할 수 있습니다:
+6. 더 이상 필요하지 않다면 다음 명령어로 인스턴스를 제거할 수 있습니다.
 
    ```
    terraform destroy
