@@ -37,13 +37,13 @@ sidebar:
 
 2. 다운로드한 zip 파일의 압축을 해제합니다.
 
-3. 터미널 창을 열고 다음 명령어를 실행하여 Terraform 바이너리를 `/usr/local/bin` 디렉터리로 이동시킵니다:
+3. 터미널 창을 열고 다음 명령어를 실행하여 Terraform 바이너리를 `/usr/local/bin` 디렉터리로 이동시킵니다.
 
    ```bash
    mv ~/Downloads/terraform /usr/local/bin/
    ```
 
-4. 다음 명령어를 실행하여 설치를 확인합니다:
+4. 다음 명령어를 실행하여 설치를 확인합니다.
 
    ```
    terraform --version
@@ -55,7 +55,7 @@ sidebar:
 
 #### Ubuntu
 
-1. 터미널 창을 열고 다음 명령을 실행하여 `HashiCorp GPG` 키를 추가합니다:
+1. 터미널 창을 열고 다음 명령을 실행하여 `HashiCorp GPG` 키를 추가합니다.
 
    ```bash
    wget -O- https://apt.releases.hashicorp.com/gpg | \
@@ -63,7 +63,7 @@ sidebar:
     sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
    ```
 
-2. HashiCorp Terraform 저장소를 추가합니다:
+2. HashiCorp Terraform 저장소를 추가합니다.
 
    ```bash
    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
@@ -71,7 +71,7 @@ sidebar:
     sudo tee /etc/apt/sources.list.d/hashicorp.list
    ```
 
-3. Terraform를 설치합니다:
+3. Terraform를 설치합니다.
 
    ```bash
    sudo apt update
@@ -80,13 +80,13 @@ sidebar:
    
 #### Red Hat/CentOS
 
-1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다:
+1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다.
 
    ```bash
    sudo rpm --import https://rpm.releases.hashicorp.com/RHEL/hashicorp.asc
    ```
 
-2. HashiCorp Terraform 저장소를 추가합니다:
+2. HashiCorp Terraform 저장소를 추가합니다.
 
    ```bash
    sudo tee /etc/yum.repos.d/hashicorp.repo <<EOF
@@ -99,7 +99,7 @@ sidebar:
    EOF
    ```
 
-3. Terraform를 설치합니다:
+3. Terraform를 설치합니다.
 
    ```bash 
    sudo yum install -y terraform
@@ -108,19 +108,19 @@ sidebar:
 
 #### SUSE
 
-1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다:
+1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다.
 
    ```bash
    sudo rpm --import https://rpm.releases.hashicorp.com/SUSE/hashicorp.asc
    ```
 
-2. HashiCorp Terraform 저장소를 추가합니다:
+2. HashiCorp Terraform 저장소를 추가합니다.
 
    ```bash
    sudo zypper addrepo https://rpm.releases.hashicorp.com/SUSE/hashicorp.repo
    ```
 
-3. Terraform를 설치합니다:
+3. Terraform를 설치합니다.
 
    ```bash
    sudo zypper install -y terraform
@@ -128,13 +128,13 @@ sidebar:
 
 #### Amazon Linux
 
-1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다:
+1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다.
 
    ```bash
    sudo rpm --import https://rpm.releases.hashicorp.com/AWS/hashicorp.asc
    ```
    
-2. HashiCorp Terraform 저장소를 추가합니다:
+2. HashiCorp Terraform 저장소를 추가합니다.
 
    ```bash 
    sudo tee /etc/yum.repos.d/hashicorp.repo <<EOF
@@ -147,7 +147,7 @@ sidebar:
    EOF
    ```
    
-3. Terraform를 설치합니다:
+3. Terraform를 설치합니다.
 
    ```bash
    sudo yum install -y terraform
@@ -163,7 +163,7 @@ sidebar:
 
 2. 다운로드한 msi 파일을 실행하여 AWS CLI를 설치합니다.
 
-3. 설치가 완료되면 명령 프롬프트 창을 열고 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+3. 설치가 완료되면 명령 프롬프트 창을 열고 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다.
 
    ```
     // AWS Access Key, Secret Key 구성
@@ -193,7 +193,7 @@ sidebar:
    sudo installer -pkg AWSCLIV2.pkg -target /
    ```
 
-2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다.
 
    ```
     // AWS Access Key, Secret Key 구성
@@ -217,14 +217,14 @@ sidebar:
 ### Linux
 #### Ubuntu
 
-1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다.
 
    ```bash
    sudo apt-get update
    sudo apt-get install awscli
    ```
 
-2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다.
 
    ```
     // AWS Access Key, Secret Key 구성
@@ -244,13 +244,13 @@ sidebar:
    ```
 #### Red Hat/CentOS
 
-1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다.
 
    ```bash
    sudo yum install awscli
    ```
 
-2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다.
 
    ```
     // AWS Access Key, Secret Key 구성
@@ -271,13 +271,13 @@ sidebar:
 
 #### SUSE  
 
-1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다.
 
    ```bash
    sudo zypper install awscli
    ```
 
-2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다.
 
    ```
     // AWS Access Key, Secret Key 구성
@@ -298,14 +298,13 @@ sidebar:
 
 #### Amazon Linux
 
-1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다: 
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다.
 
    ```bash
    sudo yum install awscli
    ```
 
-2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
-
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다.
    ```
     // AWS Access Key, Secret Key 구성
     aws configure
