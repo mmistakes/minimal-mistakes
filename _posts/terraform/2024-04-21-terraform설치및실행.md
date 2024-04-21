@@ -19,7 +19,7 @@ sidebar:
 
 ### Windows
 
-1. `Terraform` [공식 웹사이트](https://www.terraform.io/downloads.html "Windows 다운로드")에서 최신 버전의 Windows 64비트 배포판을 다운로드합니다.
+1. `Terraform` [공식 웹사이트](https://www.terraform.io/downloads.html){:target="_blank" title="Windows 다운로드"} 에서 최신 버전의 Windows 64비트 배포판을 다운로드합니다.
 
 2. 다운로드한 zip 파일을 원하는 디렉터리에 압축을 해제합니다.
 
@@ -33,7 +33,7 @@ sidebar:
 
 ### macOS
 
-1. `Terraform` [공식 웹사이트](https://www.terraform.io/downloads.html "Mac OS 다운로드")에서 최신 버전의 macOS 64비트 배포판을 다운로드합니다.
+1. `Terraform` [공식 웹사이트](https://www.terraform.io/downloads.html){:target="_blank" title="Mac OS 다운로드"} 에서 최신 버전의 macOS 64비트 배포판을 다운로드합니다.
 
 2. 다운로드한 zip 파일의 압축을 해제합니다.
 
@@ -55,7 +55,7 @@ sidebar:
 
 ### Windows
 
-1. AWS CLI [공식 웹사이트](https://aws.amazon.com/cli/ "Windows 다운로드")에서 Windows 64비트 버전을 다운로드합니다.
+1. AWS CLI [공식 웹사이트](https://aws.amazon.com/cli/){:target="_blank" title="Windows 다운로드"} 에서 Windows 64비트 버전을 다운로드합니다.
 
 2. 다운로드한 msi 파일을 실행하여 AWS CLI를 설치합니다.
 
