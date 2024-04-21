@@ -123,12 +123,47 @@
 /*
    List view
    ========================================================================== */
-
+/* 백업
 .list__item {
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
   }
+}
+*/
+//작성일, read time
+.list__item {
+  margin-top: 1em;
+
+  a {   //사이드바 카테고리 클릭 시 나열되는 타이틀 
+    // font-family: $myfont_grid_title;
+    text-decoration: none;
+  }
+  .page__meta {
+    margin: 0 0 4px;
+    font-size: 0.9em;
+    // font-family: $myfont_grid_title;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+.archive__item_tag {
+  margin-top: 1em;
+  
+    a {
+      //테그 클릭 시 나열되는 타이틀 
+      // font-family: $myfont_grid_title;
+      text-decoration: none;
+    }
+  
+    .page__meta {
+      margin: 0 0 4px;
+      font-size: 0.9em;
+      // font-family: $myfont_grid_title;
+      font-weight: bold;
+      padding-left: 5px; //추가
+    }
 }
 
 /*
@@ -148,6 +183,7 @@
     }
   }
 }
+
 
 .grid__item {
   margin-bottom: 2em;
@@ -169,7 +205,7 @@
 
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
+    margin-right: 0; /*override margin*/
     width: span(3 of 12);
 
     &:nth-child(2n + 1) {
@@ -234,8 +270,26 @@
   }
 }
 
+
+
+  .archive__item-teaser {
+      @include breakpoint($small) {
+      min-height: 130px;
+      //max-height: 200px;
+      background-size: contain;  //비율 강제 고정
+      }
+  
+      @include breakpoint($medium) {
+      //max-height: 120px;
+      background-size: contain; //비율 강제 고정
+      }
+  }
+  
+
+
+
 /*
-   Features
+  Features
    ========================================================================== */
 
 .feature__wrapper {
