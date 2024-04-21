@@ -13,7 +13,7 @@ sidebar:
 
 # Terraform 설치 및 시작하기
 
-#### 이번 포스팅에서는 `Terraform`을 설치하고 기본적인 사용법을 알아보겠습니다. Windows와 macOS 환경 모두를 다루며, AWS 리소스를 다루기 위한 AWS CLI 설치와 액세스 키 설정 방법도 함께 설명하겠습니다.
+이번 포스팅에서는 `Terraform`을 설치하고 기본적인 사용법을 알아보겠습니다. Windows와 macOS 그리고 Linux(Ubuntu, Red Hat, SUSE, Amazon Linux) 모두를 다루며, AWS 리소스를 다루기 위한 AWS CLI 설치와 액세스 키 설정 방법도 함께 설명하겠습니다.
 
 ## Terraform 설치
 
@@ -49,6 +49,110 @@ sidebar:
    terraform --version
    ```
 
+
+
+### Linux
+
+#### Ubuntu
+
+1. 터미널 창을 열고 다음 명령을 실행하여 `HashiCorp GPG` 키를 추가합니다:
+
+   ```bash
+   wget -O- https://apt.releases.hashicorp.com/gpg | \
+    gpg --dearmor | \
+    sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   ```
+
+2. HashiCorp Terraform 저장소를 추가합니다:
+
+   ```bash
+   echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+    https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+    sudo tee /etc/apt/sources.list.d/hashicorp.list
+   ```
+
+3. Terraform를 설치합니다:
+
+   ```bash
+   sudo apt update
+   sudo apt install terraform
+   ```
+   
+#### Red Hat/CentOS
+
+1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다:
+
+   ```bash
+   sudo rpm --import https://rpm.releases.hashicorp.com/RHEL/hashicorp.asc
+   ```
+
+2. HashiCorp Terraform 저장소를 추가합니다:
+
+   ```bash
+   sudo tee /etc/yum.repos.d/hashicorp.repo <<EOF
+   [hashicorp]
+   name=HashiCorp Repository
+   baseurl=https://rpm.releases.hashicorp.com/RHEL/\$releasever/\$basearch/stable
+   enabled=1
+   gpgcheck=1
+   gpgkey=https://rpm.releases.hashicorp.com/RHEL/hashicorp.asc
+   EOF
+   ```
+
+3. Terraform를 설치합니다:
+
+   ```bash 
+   sudo yum install -y terraform
+   ```
+
+
+#### SUSE
+
+1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다:
+
+   ```bash
+   sudo rpm --import https://rpm.releases.hashicorp.com/SUSE/hashicorp.asc
+   ```
+
+2. HashiCorp Terraform 저장소를 추가합니다:
+
+   ```bash
+   sudo zypper addrepo https://rpm.releases.hashicorp.com/SUSE/hashicorp.repo
+   ```
+
+3. Terraform를 설치합니다:
+
+   ```bash
+   sudo zypper install -y terraform
+   ```
+
+#### Amazon Linux
+
+1. 터미널 창을 열고 `HashiCorp GPG` 키를 추가합니다:
+
+   ```bash
+   sudo rpm --import https://rpm.releases.hashicorp.com/AWS/hashicorp.asc
+   ```
+   
+2. HashiCorp Terraform 저장소를 추가합니다:
+
+   ```bash 
+   sudo tee /etc/yum.repos.d/hashicorp.repo <<EOF
+   [hashicorp]
+   name=HashiCorp Repository
+   baseurl=https://rpm.releases.hashicorp.com/AmazonLinux/\$releasever/\$basearch/stable  
+   enabled=1
+   gpgcheck=1
+   gpgkey=https://rpm.releases.hashicorp.com/AWS/hashicorp.asc
+   EOF
+   ```
+   
+3. Terraform를 설치합니다:
+
+   ```bash
+   sudo yum install -y terraform
+   ```
+
 ## AWS CLI 설치 및 액세스 키 설정
 
 `Terraform`으로 AWS 리소스를 다루기 위해서는 AWS CLI와 액세스 키가 필요합니다.
@@ -62,7 +166,20 @@ sidebar:
 3. 설치가 완료되면 명령 프롬프트 창을 열고 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
 
    ```
-   aws configure
+    // AWS Access Key, Secret Key 구성
+    aws configure
+
+    // 설정 AWS IAM 액세스 key
+    AWS Access Key ID [None] :
+    AWS Secret Access Key [None] :
+    Default region name [None] : ap-northeast-2(서울)
+    Default output format [None] : json
+
+    // 등록 확인
+    aws configure list
+
+    // 여러 AWS 계정과 아이디로 운용할 경우
+    aws configure --profile [원하는 이름]
    ```
 
    액세스 키는 AWS 콘솔의 보안 인증 > 액세스 키에서 생성할 수 있습니다.
@@ -79,10 +196,134 @@ sidebar:
 2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
 
    ```
-   aws configure
+    // AWS Access Key, Secret Key 구성
+    aws configure
+
+    // 설정 AWS IAM 액세스 key
+    AWS Access Key ID [None] :
+    AWS Secret Access Key [None] :
+    Default region name [None] : ap-northeast-2(서울)
+    Default output format [None] : json
+
+    // 등록 확인
+    aws configure list
+
+    // 여러 AWS 계정과 아이디로 운용할 경우
+    aws configure --profile [원하는 이름]
    ```
 
    액세스 키는 AWS 콘솔의 보안 인증 > 액세스 키에서 생성할 수 있습니다.
+
+### Linux
+#### Ubuntu
+
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+
+   ```bash
+   sudo apt-get update
+   sudo apt-get install awscli
+   ```
+
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+
+   ```
+    // AWS Access Key, Secret Key 구성
+    aws configure
+
+    // 설정 AWS IAM 액세스 key
+    AWS Access Key ID [None] :
+    AWS Secret Access Key [None] :
+    Default region name [None] : ap-northeast-2(서울)
+    Default output format [None] : json
+
+    // 등록 확인
+    aws configure list
+
+    // 여러 AWS 계정과 아이디로 운용할 경우
+    aws configure --profile [원하는 이름]
+   ```
+#### Red Hat/CentOS
+
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+
+   ```bash
+   sudo yum install awscli
+   ```
+
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+
+   ```
+    // AWS Access Key, Secret Key 구성
+    aws configure
+
+    // 설정 AWS IAM 액세스 key
+    AWS Access Key ID [None] :
+    AWS Secret Access Key [None] :
+    Default region name [None] : ap-northeast-2(서울)
+    Default output format [None] : json
+
+    // 등록 확인
+    aws configure list
+
+    // 여러 AWS 계정과 아이디로 운용할 경우
+    aws configure --profile [원하는 이름]
+   ```
+
+#### SUSE  
+
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다:
+
+   ```bash
+   sudo zypper install awscli
+   ```
+
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+
+   ```
+    // AWS Access Key, Secret Key 구성
+    aws configure
+
+    // 설정 AWS IAM 액세스 key
+    AWS Access Key ID [None] :
+    AWS Secret Access Key [None] :
+    Default region name [None] : ap-northeast-2(서울)
+    Default output format [None] : json
+
+    // 등록 확인
+    aws configure list
+
+    // 여러 AWS 계정과 아이디로 운용할 경우
+    aws configure --profile [원하는 이름]
+   ```
+
+#### Amazon Linux
+
+1. 터미널을 열고 다음 명령어를 실행하여 AWS CLI를 설치합니다: 
+
+   ```bash
+   sudo yum install awscli
+   ```
+
+2. 설치가 완료되면 다음 명령어를 실행하여 AWS 액세스 키와 비밀 액세스 키를 입력합니다:
+
+   ```
+    // AWS Access Key, Secret Key 구성
+    aws configure
+
+    // 설정 AWS IAM 액세스 key
+    AWS Access Key ID [None] :
+    AWS Secret Access Key [None] :
+    Default region name [None] : ap-northeast-2(서울)
+    Default output format [None] : json
+
+    // 등록 확인
+    aws configure list
+
+    // 여러 AWS 계정과 아이디로 운용할 경우
+    aws configure --profile [원하는 이름]
+   ```
+
+액세스 키는 AWS 콘솔의 보안 인증 > 액세스 키에서 생성할 수 있습니다.
 
 ### 액세스 키 하드코딩 또는 .aws 폴더 사용
 
@@ -96,7 +337,7 @@ provider "aws" {
 }
 ```
 
-하지만 보안상의 이유로 이 방법은 권장되지 않습니다. 대신 `~/.aws/credentials`파일 **(Windows의 경우 `%UserProfile%\.aws\credentials`)에 키를 저장하는 것이 좋습니다.**
+하지만 보안상의 이유로 이 방법은 권장되지 않습니다. 대신 `~/.aws/credentials`파일 **(Windows의 경우 %UserProfile%\.aws\credentials)에 키를 저장하는 것이 좋습니다.**
 
 ```bash
 [default]
@@ -108,7 +349,7 @@ aws_access_key_id = OTHER_ACCESS_KEY
 aws_secret_access_key = OTHER_SECRET_KEY
 ```
 
-위와 같이 ~/.aws/credentials 파일(Windows의 경우 %UserProfile%\.aws\credentials)에 액세스 키와 비밀 액세스 키를 저장할 수 있습니다.
+위와 같이 `~/.aws/credentials` 파일 **(Windows의 경우 `%UserProfile%\.aws\credentials)`에 액세스 키와 비밀 액세스 키를 저장할 수 있습니다.**
 
 파일 내부에는 여러 개의 프로필을 정의할 수 있습니다. 프로필 이름은 대괄호 [ ] 안에 작성합니다.
 
@@ -128,9 +369,9 @@ provider "aws" {
 
 프로필을 지정하지 않으면 default 프로필이 자동으로 사용됩니다.
 
-이렇게 ~/.aws/credentials 파일에 액세스 키를 저장해두면 Terraform 코드에 키를 하드코딩할 필요가 없어지므로 보안상 더 안전합니다. 또한 여러 개의 프로필을 관리할 수 있어 편리합니다.
+이렇게 `~/.aws/credentials` 파일에 액세스 키를 저장해두면 `Terraform` 코드에 키를 하드코딩할 필요가 없어지므로 보안상 더 안전합니다. 또한 여러 개의 프로필을 관리할 수 있어 편리합니다.
 
-AWS 액세스 키와 비밀 액세스 키는 AWS 콘솔에서 IAM(Identity and Access Management) 서비스를 통해 생성할 수 있습니다.
+AWS 액세스 키와 비밀 액세스 키는 AWS 콘솔에서 `IAM(Identity and Access Management)` 서비스를 통해 생성할 수 있습니다.
 
 1. AWS 콘솔에 로그인합니다.
 2. 서비스 목록에서 "IAM"을 선택합니다.
