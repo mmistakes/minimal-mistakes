@@ -1,8 +1,9 @@
 ---
 # terraform.md
 title: "Terraform"
-layout: terraform
+layout: collection
 permalink: /terraform/
+collection: terraform
 author_profile: true
 sidebar_main: true
 ---
