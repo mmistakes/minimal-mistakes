@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "Pixel Ponder"
 title_separator          : "|"
-subtitle                 : "delving deeply into and exploring the minute details of the digital world."
+subtitle                 : "어서오세요. 환영합니다. | Welcome, y'all! Come on in."
 name                     : "Dong Hyeon"
-description              : "테스트 블로그"
+description              : "즐기다 가세요."
 url                      : "https://dongkoony.github.io"
 # baseurl                  : # 사이트의 하위 경로, 예: "/blog"
 repository               : # GitHub 사용자 이름/저장소 이름, 예: "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Dong Hyeon"
   avatar           : "/assets/images/emoji.png"
-  bio              : "테스트 블로그"
+  bio              : "즐기다 가세요."
   location         : "South Korea of Seoul"
   email            :
   links:
