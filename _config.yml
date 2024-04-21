@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # 사이트 설정
 locale                   : "ko-KR"
-title                    : "Pixel Ponder"
+title                    : "안녕하세요."
 title_separator          : "|"
 subtitle                 : "어서오세요. 환영합니다. | Welcome, y'all! Come on in."
 name                     : "Dong Hyeon"
