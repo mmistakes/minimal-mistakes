@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 gemspec
-gem "jekyll-responsive-image"
+# gem "jekyll-responsive-image"
