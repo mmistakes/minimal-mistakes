@@ -40,11 +40,11 @@ reCaptcha:
 atom_feed:
   path: null
   hide: null
-search: null
-search_full_content: null
-search_provider: null
+search: false
+search_full_content: false
+search_provider: false
 lunr:
-  search_within_pages: null
+  search_within_pages: false
 algolia:
   application_id: null
   index_name: null
