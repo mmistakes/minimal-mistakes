@@ -1,181 +1,124 @@
-# Jekyll에 오신 것을 환영합니다!
-#
-# 이 설정 파일은 사이트 전체에 영향을 미치는 설정을 위한 것으로, 당신이 한 번 설정하고 거의 편집할 필요가 없는 값을 의미합니다.
-# 기술적인 이유로, 이 파일은 `jekyll serve`를 사용할 때 자동으로 다시로드되지 않습니다. 이 파일을 변경한 경우 서버 프로세스를 다시 시작하십시오.
-
-# 테마 설정
-#
-# 사용할 테마 또는 원격 테마를 사용해야 하는지 여부를 결정하려면 문서를 참조하십시오.
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-
-# 블로그 스킨
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
-
-# 사이트 설정
-locale                   : "ko-KR"
-title                    : "안녕하세요."
-title_separator          : "|"
-subtitle                 : "어서오세요. 환영합니다. | Welcome, y'all! Come on in."
-name                     : "Dong Hyeon"
-description              : "즐기다 가세요."
-url                      : "https://dongkoony.github.io"
-# baseurl                  : # 사이트의 하위 경로, 예: "/blog"
-repository               : # GitHub 사용자 이름/저장소 이름, 예: "mmistakes/minimal-mistakes"
-teaser                   : # 예비 티저 이미지의 경로, 예: "/assets/images/500x300.png"
-# logo                     : "/assets/images/main_logo_block.png"
-masthead_title           : # 마스트헤드에 표시되는 웹사이트 제목을 재정의합니다. 제목이 없는 경우 " "를 사용합니다.
-breadcrumbs              : true # true, false (기본값)
-words_per_minute         : 200
+minimal_mistakes_skin: contrast
+locale: ko-KR
+title: 안녕하세요.
+title_separator: '|'
+subtitle: 어서오세요. 환영합니다. | Welcome, y'all! Come on in.
+name: Dong Hyeon
+description: 즐기다 가세요.
+url: https://dongkoony.github.io
+repository: null
+teaser: null
+masthead_title: null
+breadcrumbs: true
+words_per_minute: 200
 comments:
-
-# 댓글 플랫폼
-  provider               : "disqus" # false (기본값), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: disqus
   disqus:
-    shortname            : "dongkoony"
+    shortname: dongkoony
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , 예: meta.discourse.org
+    server: null
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (기본값)
-    colorscheme          : # "light" (기본값), "dark"
+    appid: null
+    num_posts: null
+    colorscheme: null
   utterances:
-    theme                : # "github-light" (기본값), "github-dark"
-    issue_term           : # "pathname" (기본값)
+    theme: null
+    issue_term: null
   giscus:
-    repo_id              : # giscus 설정 중 표시됨 https://giscus.app
-    category_name        : # 카테고리의 전체 텍스트 이름
-    category_id          : # giscus 설정 중 표시됨 https://giscus.app
-    discussion_term      : # "pathname" (기본값), "url", "title", "og:title"
-    reactions_enabled    : # '1'로 활성화 (기본값), '0'으로 비활성화
-    theme                : # "light" (기본값), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    repo_id: null
+    category_name: null
+    category_id: null
+    discussion_term: null
+    reactions_enabled: null
+    theme: null
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch: null
+    endpoint: null
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey: null
+  secret: null
 atom_feed:
-  path                   : # 빈 값 (기본값)은 feed.xml을 사용합니다.
-  hide                   : # true, false (기본값)
-search                   : # true, false (기본값
-search_full_content      : # true, false (기본값)
-search_provider          : # lunr (기본값), algolia, google
+  path: null
+  hide: null
+search: null
+search_full_content: null
+search_provider: null
 lunr:
-  search_within_pages    : # true, false (기본값)
+  search_within_pages: null
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (기본값), false
+  application_id: null
+  index_name: null
+  search_only_api_key: null
+  powered_by: null
 google:
-  search_engine_id       : # "e5304ad9b2c774879"
-  instant_search         : # true # true, false (기본값)
-
-# SEO 관련
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  : "481bdea1101d4b74214dd5687f380dfd8c57f48e"
-yandex_site_verification :
-baidu_site_verification  :
-
-# 소셜 공유
+  search_engine_id: null
+  instant_search: null
+google_site_verification: null
+bing_site_verification: null
+naver_site_verification: 481bdea1101d4b74214dd5687f380dfd8c57f48e
+yandex_site_verification: null
+baidu_site_verification: null
 twitter:
-  username               :
+  username: null
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter 기본 사이트 이미지
-
-# 소셜 프로필 지정을 위한
-# - https://developers.google.com/structured-data/customize/social-profiles
+  username: null
+  app_id: null
+  publisher: null
+og_image: null
 social:
-  type                   : # 개인 또는 조직 (기본값은 개인입니다)
-  name                   : # 사용자 또는 조직 이름이 사이트 이름과 다른 경우
-  links: # 소셜 미디어 프로필로의 링크 배열
-
-# 분석
+  type: null
+  name: null
+  links: null
 analytics:
-  provider               : "google-gtag" # false (기본값), "google", "google-universal", "google-gtag", "custom"
+  provider: google-gtag
   google:
-    tracking_id          : "G-99SSB6GL03"
-    anonymize_ip         : false # true, false (기본값)
-
-# Site Author
+    tracking_id: G-99SSB6GL03
+    anonymize_ip: false
 author:
-  name             : "Dong Hyeon.Shin"
-  avatar           : "/assets/images/emoji.png"
-  bio              : "차린 건 없지만, 즐기다 가세요."
-  location         : "South Korea of Seoul"
-  email            : "shin.dh922@gmail.com"
+  name: Dong Hyeon.Shin
+  avatar: /assets/images/emoji.png
+  bio: 차린 건 없지만, 즐기다 가세요.
+  location: South Korea of Seoul
+  email: shin.dh922@gmail.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "shin.dh922@gmail.com"
-
-    - label: "linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/donghyeon-shin-a037a926b/"
-      
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dongkoony"
-        
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-
-
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-
-# Site Footer
+    - label: linkedin
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/donghyeon-shin-a037a926b/
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/dongkoony
+    - label: Website
+      icon: fas fa-fw fa-link
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+    - label: Facebook
+      icon: fab fa-fw fa-facebook-square
+    - label: Instagram
+      icon: fab fa-fw fa-instagram
 footer:
   links:
-    - label: "linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/donghyeon-shin-a037a926b/"
-
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dongkoony"
-    
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
-
-# Reading Files
+    - label: linkedin
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/donghyeon-shin-a037a926b/
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/dongkoony
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+    - label: Facebook
+      icon: fab fa-fw fa-facebook-square
+    - label: GitLab
+      icon: fab fa-fw fa-gitlab
+    - label: Bitbucket
+      icon: fab fa-fw fa-bitbucket
+    - label: Instagram
+      icon: fab fa-fw fa-instagram
 include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -198,24 +141,18 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - /docs
+  - /test
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
+encoding: utf-8
+markdown_ext: markdown,mkdown,mkdn,mkd,md
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: |+
 incremental: false
-
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -225,56 +162,31 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
+  style: compressed
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
+timezone: null
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-
-# 아카이브
-#  유형
-#  - Liquid를 사용하여 구축된 GitHub Pages 호환 아카이브 페이지 ~> type: liquid (기본값)
-#  - Jekyll Archives 플러그인 아카이브 페이지 ~> type: jekyll-archives
-#  경로 (예시)
-#  - Liquid 방법을 사용할 때 아카이브 페이지가 경로에 존재해야 하며, 브레드크럼이 활성화되어 있는 경우 깨진 링크가 예상됩니다.
-#  - <기본 경로>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <기본 경로>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <기본 경로>/my-awesome-category/index.html ~> path: /
-
-# 카테고리
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
 jekyll-archives:
   enabled:
     - categories
@@ -286,19 +198,13 @@ jekyll-archives:
     category: /categories/:name/
     category_permalink: /:name/
     tag: /tags/:name/
-
-# HTML 압축
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-# 기본값
 defaults:
-  # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -307,32 +213,29 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date: true # 게시한 날짜를 표시할지 여부를 설정합니다. false로 설정하면 날짜가 표시되지 않습니다.
-      toc: true # 콘텐츠 영역에 표시할 표시 목록 여부를 설정합니다.
-      toc_sticky: true # 표시 목록을 스크롤 하면 나타나는 것을 설정합니다.
-      toc_label: Contents # 표시 목록의 라벨을 설정합니다.
-      toc_icon: "fa-solid fa-ghost" #목차 아이콘
-
-# 게시한 날짜 형식 년-월-일
-date_format: "%Y-%m-%d"
-
-# Dark Mode
+      show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: Contents
+      toc_icon: fa-solid fa-ghost
+date_format: '%Y-%m-%d'
 dark_theme_toggle: true
 after_footer_scripts:
   - /assets/js/custom/dark-theme.js
-
-
 collections:
   aws:
     output: true
     permalink: /aws/:path/
-  python: 
+  python:
     output: true
     permalink: /python/:path/
   terraform:
-    output: true 
+    output: true
     permalink: /terraform/:path/
   linux:
     output: true
     permalink: /linux/:path/
-    
+Resources:
+  Account:
+    Type: AWS::ApiGateway::Account
+    Properties: {}
