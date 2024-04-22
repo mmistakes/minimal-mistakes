@@ -11,7 +11,7 @@ If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#gem-based-method" | 
 To check which version you are currently using, view the source of your built site and you should see something similar to:
 
 ```text
-{% include "copyright.html" %}
+{% include copyright.html %}
 ```
 
 At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.min.js`.
