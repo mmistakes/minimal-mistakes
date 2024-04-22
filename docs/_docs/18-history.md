@@ -5,13 +5,15 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-23T00:24:15+08:00'
+last_modified_at: '2024-04-23T01:30:41+08:00'
 toc: false
 ---
 
 <!-- Sourced from CHANGELOG.md -->
 {% raw %}
-## Unreleased
+# Changelog
+
+## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 
 ### Bug Fixes
 

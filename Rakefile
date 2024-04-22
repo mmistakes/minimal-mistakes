@@ -81,6 +81,7 @@ task :preview do
   Jekyll::Commands::Serve.process(options)
 end
 
+task :changelog => "docs/_docs/18-history.md"
 file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
   front_matter = {
     title: "History",
@@ -108,7 +109,7 @@ end
 
 COPYRIGHT_LINES = [
   "Minimal Mistakes Jekyll Theme #{package_json["version"]} by Michael Rose",
-  "Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes",
+  "Copyright 2013-#{Time.now.year} Michael Rose - mademistakes.com | @mmistakes",
   "Free for personal and commercial use under the MIT license",
   "https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE",
 ]
