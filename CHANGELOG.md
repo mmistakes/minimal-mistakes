@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Enhancements
+
+- Add Ukranian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
+
 ### Maintenance
 
 - Bump shell-quote from 1.7.1 to 1.7.3 [#3692](https://github.com/mmistakes/minimal-mistakes/issues/3692)
