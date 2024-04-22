@@ -13,6 +13,7 @@ toc: false
 
 ### Bug Fixes
 
+- Fix Linkedin social share link [#4754](https://github.com/mmistakes/minimal-mistakes/issues/4754)
 - Fix non-English characters being url encoded in breadcrumb [#3819](https://github.com/mmistakes/minimal-mistakes/issues/3819)
 - Fix wrong `first_page_path` because of hard-coded `page:num` [#3778](https://github.com/mmistakes/minimal-mistakes/issues/3778)
 - Remove JS and other files from search index [#4000](https://github.com/mmistakes/minimal-mistakes/pull/4000)
@@ -189,7 +190,7 @@ toc: false
 - Strip trailing whitespace in `seo_description`. [#2542](https://github.com/mmistakes/minimal-mistakes/pull/2542)
 - Improve sticky sidebar's appearance with short content. [#2514](https://github.com/mmistakes/minimal-mistakes/pull/2514)
 
-## [4.19.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
+## [4.19.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.2)
 
 ### Enhancements
 
@@ -561,7 +562,7 @@ toc: false
 - Add support for ["sticking" table of contents](https://mmistakes.github.io/minimal-mistakes/layout-table-of-contents-sticky/) to top of page via `toc_sticky: true` YAML Front Matter.
 - Add support for captioning images in feature row helper via `image_caption` YAML Front Matter. [#1440](https://github.com/mmistakes/minimal-mistakes/issues/1440)
 - Add [Google Custom Search Engine](https://cse.google.com/cse) support. [#1652](https://github.com/mmistakes/minimal-mistakes/issues/1652)
-- Update Font Awesome to version [`5.1.13`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md).
+- Update Font Awesome to version. [`5.1.13`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md)
 - Add "Pets" sample archive page to documentation site. [#1664](https://github.com/mmistakes/minimal-mistakes/pull/1664)
 - Add GitLab social icon brand color. [#1653](https://github.com/mmistakes/minimal-mistakes/issues/1653)
 - Prevent line breaks between FontAwesome icon and text in footer social links. [#1659](https://github.com/mmistakes/minimal-mistakes/issues/1659)
@@ -579,7 +580,7 @@ toc: false
 
 ### Enhancements
 
-- Update Font Awesome to version `5.0.11`. [#1605](https://github.com/mmistakes/minimal-mistakes/pull/1620)
+- Update Font Awesome to version `5.0.11`. [#1620](https://github.com/mmistakes/minimal-mistakes/pull/1620)
 - Add Slovak localized UI text strings. [#1613](https://github.com/mmistakes/minimal-mistakes/pull/1613)
 - Add option to anonymize IP addresses of hits sent to Google Analytics. [#1636](https://github.com/mmistakes/minimal-mistakes/pull/1636)
 
@@ -597,7 +598,7 @@ toc: false
 
 ### Bug Fixes
 
-- Replace `relative_url` filter with `relative_url` where it makes sense (asset/navigation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
+- Replace `absolute_url` filter with `relative_url` where it makes sense (asset/navigation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
 - Fix search excerpts that run together because of implied spaces.
 
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
@@ -1197,19 +1198,19 @@ toc: false
 
 ### Bug Fixes
 
-- Fix blank `site.teaser` bug [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
+- Fix blank `site.teaser` bug. [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
 
 ## [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.5)
 
 ### Enhancements
 
-- Add English default text `site.locale` strings [#407](https://github.com/mmistakes/minimal-mistakes/issues/407)
+- Add English default text `site.locale` strings. [#407](https://github.com/mmistakes/minimal-mistakes/issues/407)
 - Add Portuguese localized UI text. [#411](https://github.com/mmistakes/minimal-mistakes/pull/411)
 - Add Italian localized UI text. [#409](https://github.com/mmistakes/minimal-mistakes/pull/409)
 
 ### Maintenance
 
-- Remove unused Google AdSense variables in `_config.yml` [#404](https://github.com/mmistakes/minimal-mistakes/issues/404)
+- Remove unused Google AdSense variables in `_config.yml`. [#404](https://github.com/mmistakes/minimal-mistakes/issues/404)
 - Update `Gemfile` instructions for using `github-pages` vs. native `jekyll` gems.
 - Disable `gems:` in `_config.yml` and enable plugins with Bundler instead.
 - Add `repository` to `_config.yml` to suppress GitHub Pages error `Liquid Exception: No repo name found.`
@@ -1226,18 +1227,6 @@ toc: false
 - Update gems: `activesupport` (4.2.7), `ffi` (1.9.14), `github-pages` (88), `jekyll-redirect-from` (0.11.0), `jekyll-watch` (1.5.0).
 
 ## [3.3.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.3)
-
-### Enhancements
-
-- Make footer stick to the bottom of the page.
-
-### Bug Fixes
-
-- Fix `gallery` size bug [#402](https://github.com/mmistakes/minimal-mistakes/issues/402)
-
-### Maintenance
-
-- Set default `lang` to `en`.
 
 ### Enhancements
 
@@ -1272,7 +1261,7 @@ toc: false
 
 ## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
 
-### Enhancement
+### Enhancements
 
 - Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
 - Switch default locale from `en-US` to `en`.
@@ -1372,15 +1361,15 @@ toc: false
 
 ## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
 
-### Enhancement
+### Enhancements
 
-- Add [Discourse](https://www.discourse.org/) as a commenting provider [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
+- Add [Discourse](https://www.discourse.org/) as a commenting provider. [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
 
 ## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
 
-### Enhancement
+### Enhancements
 
-- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
+- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper. [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
 
 ## [3.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.1)
 
@@ -1412,7 +1401,7 @@ toc: false
 
 ## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
 
-### Enhancement
+### Enhancements
 
 - Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
 
@@ -1455,10 +1444,14 @@ toc: false
 
 ## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
 
-### Enhancement
+### Enhancements
 
 - Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list).
 - Reduce left/right padding on smaller screens to increase width of main content column.
+
+### Bug Fixes
+
+- Fix alignment issues with related posts [#273](https://github.com/mmistakes/minimal-mistakes/issues/273) and "Follow" button in author profile [#274](https://github.com/mmistakes/minimal-mistakes/issues/274).
 
 ## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
 
