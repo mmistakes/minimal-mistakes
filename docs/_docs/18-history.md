@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-23T03:54:18+08:00'
+last_modified_at: '2024-04-23T03:55:34+08:00'
 toc: false
 ---
 
@@ -44,7 +44,7 @@ toc: false
 
 ### Enhancements
 
-- Add site.copyright and site.copyright_url config options [#4313](https://github.com/mmistakes/minimal-mistakes/pull/4313)
+- Add `site.copyright` and `site.copyright_url` config options [#4313](https://github.com/mmistakes/minimal-mistakes/pull/4313)
 - Lazy-load InstantSearch scripts and stylesheets [#3691](https://github.com/mmistakes/minimal-mistakes/pull/3691)
 - Improve Finnish translations [#4595](https://github.com/mmistakes/minimal-mistakes/pull/4595)
 - Remove redundant downcase from _layouts/categories.html. [#4531](https://github.com/mmistakes/minimal-mistakes/pull/4531)
