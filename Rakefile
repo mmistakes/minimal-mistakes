@@ -1,8 +1,12 @@
 require "bundler/gem_tasks"
 require "jekyll"
+require "json"
 require "listen"
+require "rake/clean"
 require "time"
 require "yaml"
+
+package_json = JSON.parse(File.read("package.json"))
 
 def listen_ignore_paths(base, options)
   [
@@ -101,3 +105,42 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
     f.puts "{% endraw %}"
   end
 end
+
+COPYRIGHT_LINES = [
+  "Minimal Mistakes Jekyll Theme #{package_json["version"]} by Michael Rose",
+  "Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes",
+  "Free for personal and commercial use under the MIT license",
+  "https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE",
+]
+
+COPYRIGHT_FILES = [
+  "_includes/copyright.html",
+  "_includes/copyright.js",
+  "_sass/minimal-mistakes/_copyright.scss",
+]
+
+def genenerate_copyright_file(filename, header, prefix, footer)
+  File.open(filename, "w") do |f|
+    f.puts header
+    COPYRIGHT_LINES.each do |line|
+      f.puts "#{prefix}#{line}"
+    end
+    f.puts footer
+  end
+end
+
+file "_includes/copyright.html" do |t|
+  genenerate_copyright_file(t.name, "<!--", "  ", "-->")
+end
+
+file "_includes/copyright.js" do |t|
+  genenerate_copyright_file(t.name, "/*!", " * ", " */")
+end
+
+file "_sass/minimal-mistakes/_copyright.scss" do |t|
+  genenerate_copyright_file(t.name, "/*!", " * ", " */")
+end
+
+task :copyright => COPYRIGHT_FILES
+
+CLEAN.include(*COPYRIGHT_FILES)

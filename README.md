@@ -115,7 +115,7 @@ To install:
 
 2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
 
-3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+3. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
 
    ```bash
    bundle
@@ -123,13 +123,33 @@ To install:
 
 4. Add `remote_theme: "mmistakes/minimal-mistakes@4.24.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
+<!--
+  Dev note: The version number is currently hard-coded in these files:
+
+    - README.md (this file)
+    - package.json
+    - docs/_config.yml (as theme_version)
+    - docs/_pages/home.md (in Front Matter "excerpt")
+
+  For every release, files listed above should be manually updated with the new version number.
+
+  Additionally, the license year is hard-coded in these files:
+
+    - README.md (this file, near the end)
+    - LICENSE
+
+  The following files should also be regenerated:
+
+    - _includes/copyright.html, _includes/copyright.js, _sass/minimal-mistakes/_copyright.scss
+      (Run `bundle exec rake clean` then `bundle exec rake copyright` - all three references `package.json`)
+    - assets/js/main.min.js (Run `npm run build:js`, references `_includes/copyright.js`)
+-->
+
 **Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
 
 ## Usage
 
 For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
----
 
 ## Contributing
 
@@ -153,8 +173,6 @@ To set up your environment to develop this theme, run `bundle install`.
 
 To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
 
----
-
 ## Credits
 
 ### Creator
@@ -167,7 +185,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 
 ### Icons + Demo Images:
 
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
+- [The Noun Project](https://thenounproject.com) - Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
 - [Font Awesome](http://fontawesome.io/)
 - [Unsplash](https://unsplash.com/)
 
@@ -184,8 +202,6 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - [Gumshoe](https://github.com/cferdinandi/gumshoe)
 - [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
 - [Lunr](http://lunrjs.com)
-
----
 
 ## License
 
