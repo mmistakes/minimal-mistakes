@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Terraform(테라폼) vs Ansible(앤서블) IaC 도구 비교
-categories: [terraform]
+categories: [Terraform]
 tags: [Terraform]
 toc: true
 author_profile: false

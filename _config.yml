@@ -165,7 +165,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed
-permalink: /:categories/:title/
+permalink: /:title/ # /:categories/:title/ 
 paginate: 5
 paginate_path: /page:num/
 timezone: null

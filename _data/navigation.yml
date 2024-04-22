@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "HOME"
-    url: "https://dongkoony.github.io"
+    url: "/"
   - title: "Terraform"
-    url: /terraform/
+    url: /categories/terraform/
   - title: "AWS"
-    url: /aws/
+    url: /categories/aws/
   - title: "Python"
-    url: /python/
+    url: /categories/python/
   - title: "Linux"
-    url: /linux/
+    url: /categories/linux/
   # - title: "Category"
   #   url: /categories/
   - title: "Search"

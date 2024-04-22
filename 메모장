@@ -1,8 +1,8 @@
 ---
 layout: single
-title: Terraform 소개
-categories: [Terraform]
-tags: [Terraform]
+title: title
+categories: [categorty]
+tags: [tags]
 toc: true
 author_profile: false
 sidebar:
