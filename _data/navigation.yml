@@ -1,26 +1,25 @@
 main:
 - title: Data
+  url: /docs/datasets
   sublinks:
-    - title: "Overview"
-      url: /docs/RBC
     - title: "BHRC"
-      url: /docs/BHRC
+      url: /docs/datasets/BHRC
     - title: "dCCNP"
-      url: /docs/dCCNP
+      url: /docs/datasets/dCCNP
     - title: "HBN"
-      url: /docs/HBN
+      url: /docs/datasets/HBN
     - title: "HCP-D"
-      url: /docs/HCP-D
+      url: /docs/datasets/HCP-D
     - title: "NKI"
-      url: /docs/NKI
+      url: /docs/datasets/NKI
     - title: "PACCT"
-      url: /docs/PACCT
+      url: /docs/datasets/PACCT
     - title: "PNC"
-      url: /docs/PNC
+      url: /docs/datasets/PNC
 - title:  Psychiatric Phenotyping
   url: /docs/phenotypes
 - title: Imaging
-  sublinks: 
+  sublinks:
     - title: "Image Acquisition"
       url: /docs/image_acquisition
     - title: "Image Curation"
@@ -28,13 +27,13 @@ main:
     - title: "Image Processing"
       url: /docs/image_processing
     - title: "Structural Image Quality"
-      url: /docs/image_structural_QA  
+      url: /docs/image_structural_QA
     - title: "Functional Image Quality"
-      url: /docs/image_functional_QA  
+      url: /docs/image_functional_QA
 - title: Community and Impact
-  sublinks: 
+  sublinks:
     - title: "RBC Team"
-      url: /docs/contributors
+      url: /docs/team
     - title: "Publications"
       url: /docs/publications
     - title: "Contribute"
@@ -43,4 +42,3 @@ main:
       url: /docs/get_support
 - title: <em style="font-style:normal; font-weight:bold; color:#3F8AAC;"> Get Data </em>
   url: /docs/get_data
-

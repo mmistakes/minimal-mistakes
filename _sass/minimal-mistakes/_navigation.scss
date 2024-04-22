@@ -169,7 +169,11 @@
        ========================================================================== */
 
   .greedy-nav {
-    position: relative;
+    /*position: relative;*/
+    position: fixed; // Add this line
+    top: 0; // Add this line
+    width: flex; // Add this line
+    z-index: 100; // Add this line if the nav is not visible after adding position: fixed
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
