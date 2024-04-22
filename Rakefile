@@ -1,6 +1,8 @@
 require "bundler/gem_tasks"
 require "jekyll"
 require "listen"
+require "time"
+require "yaml"
 
 def listen_ignore_paths(base, options)
   [
@@ -73,4 +75,29 @@ task :preview do
   end
 
   Jekyll::Commands::Serve.process(options)
+end
+
+file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
+  front_matter = {
+    title: "History",
+    classes: "wide",
+    permalink: "/docs/history/",
+    excerpt: "Change log of enhancements and bug fixes made to the theme.",
+    sidebar: {
+      nav: "docs",
+    },
+    last_modified_at: Time.now.iso8601,
+    toc: false,
+  }
+  # https://stackoverflow.com/a/49553523/5958455
+  front_matter = JSON.parse(JSON.dump(front_matter))
+  File.open(t.name, "w") do |f|
+    f.puts front_matter.to_yaml
+    f.puts "---"
+    f.puts ""
+    f.puts "<!-- Sourced from CHANGELOG.md -->"
+    f.puts "{% raw %}"
+    f.write File.read(t.prerequisites.first)
+    f.puts "{% endraw %}"
+  end
 end
