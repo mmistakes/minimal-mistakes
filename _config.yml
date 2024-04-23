@@ -222,6 +222,7 @@ defaults:
       toc_sticky: true
       toc_label: Contents
       toc_icon: fa-solid fa-ghost
+      
 date_format: '%Y-%m-%d'
 dark_theme_toggle: true
 after_footer_scripts:
