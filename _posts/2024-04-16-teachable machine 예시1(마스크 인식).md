@@ -9,7 +9,7 @@ tags:
   - coding
  
 
-last_modified_at: 2024-04-16T12:50:50-12:59
+last_modified_at: 2024-04-23T23:52:50-23:59
 ---
 <button type="button" id='startBtn' onclick="init()">시작</button>
 <button type="button" id='stopBtn' onclick="stop()">중지</button></br>

@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "구글 검색 이미지 크롤링"
 categories:
   - coding
 # - Non-coding
@@ -9,11 +9,13 @@ tags:
   - Do it! 조코딩의 프로그래밍 입문
   - 이미지 크롤링
   - Python
+  - 셀레니움
+  - selenium
   - 에러 해결
   - coding
  
 
-last_modified_at: 2024-04-23T23:00:50-23:07
+last_modified_at: 2024-04-23T23:00:50-23:59
 ---
 
 ### Backgound
@@ -23,7 +25,7 @@ last_modified_at: 2024-04-23T23:00:50-23:07
 책과 연관된 [조코딩 유튜브](ttps://youtu.be/1b7pXC1-IbE?si=oMNhLoPG_G0aTtd3)에서 
 별도로 제공한 코드들과 영상들을 보며 따라했으나 역시 실행되지 않았음
 
-원인들은 페이지 로딩시간, 라이브러리(selenium) 업데이트 그리고 구글의 자동화 방지 등이 였으며, 수정한 코드를 공유하고자 함
+원인들은 페이지 로딩시간, 라이브러리(selenium)의 업데이트 그리고 구글의 자동화 방지 기능 등이 였으며, 수정한 코드를 공유하고자 함
 
 ### 참고사항
 
