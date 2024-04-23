@@ -576,3 +576,29 @@ body {
     }
   }
 }
+
+/* Splash Page */
+.feature__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feature__item {
+  margin-bottom: 2em;
+  font-size: 1.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint($small) {
+    width: calc(50% - 1em);
+  }
+}
+
+.feature__item:nth-child(odd) {
+  @include breakpoint($small) {
+    margin-right: 2em;
+  }
+}

@@ -1,0 +1,27 @@
+- title: "Terraform"
+  image-path: assets\splash\terraform_icon.png
+  alt: "Terraform Logo" 
+  excerpt: "Terraform은 HashiCorp에서 만든 인프라 as 코드 도구로, 클라우드 인프라를 코드로 관리할 수 있습니다. 멱등성과 선언적 문법이 특징입니다."
+  url: "/categories/terraform"
+  btn-label: "더 알아보기"
+
+- title: "AWS"
+  image-path: assets\splash\aws_icon.png
+  alt: "AWS Logo"
+  excerpt: "Amazon Web Services는 가장 포괄적이고 널리 채택된 클라우드 플랫폼입니다. 200개 이상의 완벽한 기능을 제공합니다."
+  url: "/categories/aws"
+  btn-label: "더 알아보기"
+
+- title: "Linux"
+  image-path: assets\splash\linux_icon.png
+  alt: "Linux Logo"
+  excerpt: "Linux는 오픈 소스 Unix 계열 운영 체제 중 하나로, 리누스 토르발스가 처음 개발했습니다. 서버, 데스크탑, 모바일 등 다양한 플랫폼에서 사용됩니다."
+  url: "/categories/linux"
+  btn-label: "더 알아보기"
+
+- title: "Python"
+  image-path: assets\splash\python_icon.png
+  alt: "Python Logo"
+  excerpt: "Python은 인기 있는 고급 프로그래밍 언어 중 하나로, 가독성과 생산성이 뛰어납니다. 데이터 과학, 웹 개발 등 다양한 분야에서 활용됩니다."
+  url: "/categories/python"
+  btn-label: "더 알아보기"

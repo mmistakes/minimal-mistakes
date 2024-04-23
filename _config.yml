@@ -181,6 +181,10 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+# 추가
+data_dir: _data
+
 category_archive:
   type: liquid
   path: /categories/
@@ -204,11 +208,11 @@ compress_html:
     envs: development
 defaults:
   - scope:
-      path: ''
-      type: posts
+      path: ""
+      type: pages #posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: false
       comments: true
       share: true
@@ -223,6 +227,8 @@ dark_theme_toggle: true
 after_footer_scripts:
   - /assets/js/custom/dark-theme.js
 collections:
+  splash:
+    output: true  
   aws:
     output: true
     permalink: /aws/:path/
