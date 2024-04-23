@@ -9,7 +9,7 @@
 ### Maintenance
 
 - Bump shell-quote from 1.7.1 to 1.7.3 [#3692](https://github.com/mmistakes/minimal-mistakes/issues/3692)
-- Add `after-content.html` include to ease docs site overrides.
+- Add `after-content.html` and `before-related.html` includes to ease docs site overrides.
 
 ## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 
