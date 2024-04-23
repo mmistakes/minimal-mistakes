@@ -27,29 +27,48 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
 
 <hr/>
 
+{% assign neuroimaging_values = "" | split: "" %}
+
+{% for dataset in site.categories.datasets %}
+  {% for neuroimaging in dataset.neuroimaging %}
+    {% assign neuroimaging_values = neuroimaging_values | push: neuroimaging %}
+  {% endfor %}
+{% endfor %}
+
+{% assign unique_neuroimaging_values = neuroimaging_values | uniq %}
+{% assign unique_neuroimaging_values = unique_neuroimaging_values | sort %}
+
 <table align="center"; width=1250px>
-  {% tablerow product in site.categories.datasets cols:2 %}
-
-    {% if product.image %}
-      {% assign image = product.image %}
-    {% else %}
-      {% assign image = "/assets/images/placeholder.png" %}
-    {% endif %}
-
-    <div class="col-md-2.5 paperbox">
-      <div class="media" style="width:525px; height:140px">
-        <div class="media">
-          <div class="media-body">
-            {{ product.title }}
-            <p>
-              <div class="note">
-                HELLO
-              </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="smallspacer"></div>
-  {% endtablerow %}
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Website</th>
+      <th>Site</th>
+      <th>PI</th>
+      <th>Sample Size</th>
+      {% for unique_value in unique_neuroimaging_values %}
+        <th>{{ unique_value }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for dataset in site.categories.datasets %}
+      <tr>
+        <td><a href="{{ dataset.url }}">{{ dataset.title }}</a></td>
+        <td><a href="{{ dataset.website }}">link</a></td>
+        <td>{{ dataset.site }}</td>
+        <td>{{ dataset.pi }}</td>
+        <td>{{ dataset.sample_size }}</td>
+        {% for unique_value in unique_neuroimaging_values %}
+          <td>
+            {% if dataset.neuroimaging contains unique_value %}
+              <span style="color: green;">✓</span>
+            {% else %}
+            <span style="color: red;">X</span>
+            {% endif %}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
 </table>

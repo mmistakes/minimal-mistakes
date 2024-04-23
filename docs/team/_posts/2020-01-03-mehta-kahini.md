@@ -1,7 +1,7 @@
 ---
 name: "Kahini Mehta"
 layout: single
-image: /assets/images/team/ted-satterthwaite.jpg
+image:
 site: "https://pennlinc.io"
 position: "Research Assistant"
 affiliation: "University of Pennsylvania"
