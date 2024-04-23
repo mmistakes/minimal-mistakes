@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* padding-top added to account for fixed-top (a Bootstrap class) navbar */
+  /* padding-top added by TS to account for fixed-top (a Bootstrap class) navbar */
   padding-top: 70px;
   color: $text-color;
   font-family: $global-font-family;
