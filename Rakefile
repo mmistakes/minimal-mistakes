@@ -6,6 +6,8 @@ require "rake/clean"
 require "time"
 require "yaml"
 
+task :default => [:copyright, :changelog]
+
 package_json = JSON.parse(File.read("package.json"))
 
 def listen_ignore_paths(base, options)
@@ -100,9 +102,12 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
     f.puts front_matter.to_yaml
     f.puts "---"
     f.puts ""
-    f.puts "<!-- Sourced from CHANGELOG.md -->"
+    f.puts "<!--\n  Sourced from CHANGELOG.md\n  See Rakefile `task :changelog` for details\n-->"
+    f.puts ""
     f.puts "{% raw %}"
-    f.write File.read(t.prerequisites.first)
+    changelog = File.read(t.prerequisites.first).gsub(/^# [^\n]*$/m, "").strip
+    f.write changelog
+    f.puts ""
     f.puts "{% endraw %}"
   end
 end

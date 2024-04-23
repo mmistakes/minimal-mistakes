@@ -4,7 +4,7 @@
 
 ### Enhancements
 
-- Add Ukranian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
+- Add Ukrainian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
 
 ### Maintenance
 
