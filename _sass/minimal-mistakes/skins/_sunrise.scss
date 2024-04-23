@@ -20,6 +20,9 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
+/* notices */
+$notice-background-mix: 75% !default;
+
 /* sunrise syntax highlighting (base16) */
 $base00: #1d1f21 !default;
 $base01: #282a2e !default;
