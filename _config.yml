@@ -22,10 +22,10 @@ subtitle                 : Reproducible Brain Charts
 name                     : RBC
 description              : "The official website for the Reproducible Brain Charts project."
 url                      : https://ReproBrainChart.github.io
-baseurl                  : 
+baseurl                  :
 repository               : "ReproBrainChart/ReproBrainChart.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /assets/RBC%20Primary%20Logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -119,7 +119,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      # url: https://github.com/ReproBrainChart
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -135,7 +135,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      # url: https://github.com/ReproBrainChart
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -232,7 +232,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Archives
 #  Type
