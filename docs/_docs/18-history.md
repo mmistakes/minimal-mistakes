@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-23T13:54:28+08:00'
+last_modified_at: '2024-04-23T21:52:19+08:00'
 toc: false
 ---
 
@@ -24,7 +24,8 @@ toc: false
 ### Enhancements
 
 - Add Ukrainian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
-- Add more configuration for Giscus [#4274](https://github.com/mmistakes/minimal-mistakes/pull/4274)
+- Add more configuration for Giscus. [#4274](https://github.com/mmistakes/minimal-mistakes/pull/4274)
+- Bump jekyll-toc to [v1.2.1](https://github.com/allejo/jekyll-toc/releases/tag/v1.2.1).
 
 ### Maintenance
 
@@ -56,7 +57,7 @@ toc: false
 - Add `site.copyright` and `site.copyright_url` config options [#4313](https://github.com/mmistakes/minimal-mistakes/pull/4313)
 - Lazy-load InstantSearch scripts and stylesheets [#3691](https://github.com/mmistakes/minimal-mistakes/pull/3691)
 - Improve Finnish translations [#4595](https://github.com/mmistakes/minimal-mistakes/pull/4595)
-- Remove redundant downcase from _layouts/categories.html. [#4531](https://github.com/mmistakes/minimal-mistakes/pull/4531)
+- Remove redundant downcase from \_layouts/categories.html. [#4531](https://github.com/mmistakes/minimal-mistakes/pull/4531)
 - Load latest Font Awesome package. [#3765](https://github.com/mmistakes/minimal-mistakes/pull/3765)
 - Add missing Polish missing UI text strings. [#3969](https://github.com/mmistakes/minimal-mistakes/pull/3969)
 - Update breadcrumbs conditional to enable/disable them via Front Matter on pages using `layout: single`. [#3096](https://github.com/mmistakes/minimal-mistakes/pull/3096) [#3669](https://github.com/mmistakes/minimal-mistakes/pull/3669)
