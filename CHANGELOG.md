@@ -12,11 +12,12 @@
 - Add more configuration for Giscus. [#4274](https://github.com/mmistakes/minimal-mistakes/pull/4274)
 - Bump jekyll-toc to [v1.2.1](https://github.com/allejo/jekyll-toc/releases/tag/v1.2.1).
 
-### Maintenance
+### Documentation & Maintenance
 
 - Bump shell-quote from 1.7.1 to 1.7.3 [#3692](https://github.com/mmistakes/minimal-mistakes/issues/3692)
 - Add `after-content.html` and `before-related.html` includes to ease docs site overrides.
 - GitHub Workflows security hardening [#3884](https://github.com/mmistakes/minimal-mistakes/issues/3884)
+- Replace Font Awesome v5 search page with v6.
 
 ## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 
