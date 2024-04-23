@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Bug Fixes
+
+- "You may also enjoy" no longer recommends hidden posts. [#4653](https://github.com/mmistakes/minimal-mistakes/issues/4653)
+
 ### Enhancements
 
 - Add Ukrainian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)

@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-23T12:08:54+08:00'
+last_modified_at: '2024-04-23T12:18:03+08:00'
 toc: false
 ---
 
@@ -16,6 +16,10 @@ toc: false
 
 {% raw %}
 ## Unreleased
+
+### Bug Fixes
+
+- "You may also enjoy" no longer recommends hidden posts. [#4653](https://github.com/mmistakes/minimal-mistakes/issues/4653)
 
 ### Enhancements
 
