@@ -11,9 +11,11 @@ tags:
 
 last_modified_at: 2024-04-23T23:52:50-23:59
 ---
+
+from 테디노트 TeddyNote: https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy
+
 <button type="button" id='startBtn' onclick="init()">시작</button>
 <button type="button" id='stopBtn' onclick="stop()">중지</button></br>
-from 테디노트 TeddyNote: https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy
 <div id="webcam-container"></div>
 <div id="label-container"></div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
