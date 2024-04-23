@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-23T13:21:21+08:00'
+last_modified_at: '2024-04-23T13:54:28+08:00'
 toc: false
 ---
 
@@ -24,6 +24,7 @@ toc: false
 ### Enhancements
 
 - Add Ukrainian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
+- Add more configuration for Giscus [#4274](https://github.com/mmistakes/minimal-mistakes/pull/4274)
 
 ### Maintenance
 

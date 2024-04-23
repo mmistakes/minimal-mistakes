@@ -9,6 +9,7 @@
 ### Enhancements
 
 - Add Ukrainian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
+- Add more configuration for Giscus [#4274](https://github.com/mmistakes/minimal-mistakes/pull/4274)
 
 ### Maintenance
 
