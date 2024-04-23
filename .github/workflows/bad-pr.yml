@@ -1,0 +1,32 @@
+name: Cleanup bad PR
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  close-pr:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    if: "contains(github.event.pull_request.body, 'by deleting this comment block') || github.event.pull_request.body == ''"
+    steps:
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: 'Type: Invalid'
+      - uses: superbrothers/close-pull-request@v3
+        with:
+          # Optional. Post an issue comment just before closing a pull request.
+          comment: |
+            **You have created a Pull Request to the wrong repository.** This is the repository for [Minimal Mistakes][1], the free Jekyll theme. See [GitHub Docs: About pull requests][2] if you need help.
+
+              [1]: https://mmistakes.github.io/minimal-mistakes/
+              [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+      - uses: sudo-bot/action-pull-request-lock@v1.0.5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+          lock-reason: spam
