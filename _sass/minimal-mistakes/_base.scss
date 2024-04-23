@@ -11,6 +11,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  /* padding-top added to account for fixed-top (a Bootstrap class) navbar */
+  padding-top: 70px;
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
@@ -64,6 +66,8 @@ small,
 }
 
 p {
+  /* justify added by TS */
+  text-align: justify;
   margin-bottom: 1.3em;
 }
 

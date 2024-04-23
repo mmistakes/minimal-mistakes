@@ -1,0 +1,17 @@
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px; /* Some padding */
+    display: flex; /* Make this a flex container */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    bottom: initial; /* Reset the bottom position */
+    transform: translateY(-50%); /* Move it up by 50% of its height */
+    top: 50%; /* Start from the middle of the container */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+}
+
+.carousel-caption h5 {
+    color: white; /* White text */
+    font-style: bold; /* Bold text */
+}

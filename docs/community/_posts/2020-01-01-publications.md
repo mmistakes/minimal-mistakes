@@ -1,12 +1,10 @@
 ---
 title: "Publications"
 excerpt: "publications"
-sitemap: false
 layout: single
-permalink: /docs/publications
 
 ---
- 
+
 ### Publications related to this project
 1. [Paper title and information ](somelink.com)
 2. [Paper title and information](somelink.com)
@@ -16,4 +14,3 @@ permalink: /docs/publications
 6. [Paper title and information](somelink.com)
 7. [Paper title and information ](somelink.com)
 8. [Paper title and information](somelink.com)
-

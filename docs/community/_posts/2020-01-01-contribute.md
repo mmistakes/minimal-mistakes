@@ -1,9 +1,7 @@
 ---
 title: "How to Contribute"
 excerpt: "Contribute"
-sitemap: false
 layout: single
-permalink: /docs/contribute
 
 ---
 1. Email us at xxxx@yyy.com

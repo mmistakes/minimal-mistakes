@@ -1,5 +1,6 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
+<!--
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu" style="display: flex; justify-content: center;">
@@ -7,12 +8,12 @@
         {% unless logo_path == empty %}
             <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
-        <!--
+        <\!--
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
-        -->
+        --\>
         <ul class="visible-links">
             {%- for link in site.data.navigation.main -%}
                 {% assign class = nil %}
@@ -20,19 +21,19 @@
                     {% assign class = 'active' %}
                 {% endif %}
                 {% if link.sublinks %}
-                    <li class="dropdown {{ class }}">
-                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}    <i class="fa fa-caret-down fa-sm" aria-hidden="true"></i><span class="caret"></span></a>
-                        <ul class="dropdown-content">
+                    <li class="nav-item dropdown {{ class }}">
+                        <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ link.url }}" id="navbarDropdown-{{ link.title }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ link.title }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ link.title }}">
                             {% for sublink in link.sublinks %}
-                                <li>
-                                    <a href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>
-                                </li>
+                                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                             {% endfor %}
-                        </ul>
+                        </div>
                     </li>
                 {% else %}
-                    <li class="masthead__menu-item">
-                        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    <li class="nav-item {{ class }}">
+                        <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
@@ -54,3 +55,38 @@
     </div>
   </div>
 </div>
+-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container d-flex justify-content-between">
+  <a class="navbar-brand" href="#">
+      {% unless logo_path == empty %}
+          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+      {% endunless %}
+  </a>
+
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+        {%- for link in site.data.navigation.main -%}
+            {% if link.sublinks %}
+                <li class="nav-item dropdown collapse navbar-collapse">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown-{{ link.title }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ link.title }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ link.title }}">
+                        <a class="dropdown-item" href="{{ site.baseurl }}{{ link.url }}">Overview</a>
+                        {% for sublink in link.sublinks %}
+                            <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+  </div>
+</div>
+</nav>

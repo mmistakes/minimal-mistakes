@@ -19,26 +19,28 @@ main:
 - title:  Psychiatric Phenotyping
   url: /docs/phenotypes
 - title: Imaging
+  url: /docs/imaging
   sublinks:
     - title: "Image Acquisition"
-      url: /docs/image_acquisition
+      url: /docs/imaging/image_acquisition
     - title: "Image Curation"
-      url: /docs/image_curation
+      url: /docs/imaging/image_curation
     - title: "Image Processing"
-      url: /docs/image_processing
+      url: /docs/imaging/image_processing
     - title: "Structural Image Quality"
-      url: /docs/image_structural_QA
+      url: /docs/imaging/image_structural_QA
     - title: "Functional Image Quality"
-      url: /docs/image_functional_QA
+      url: /docs/imaging/image_functional_QA
 - title: Community and Impact
+  url: /docs/community
   sublinks:
     - title: "RBC Team"
       url: /docs/team
     - title: "Publications"
-      url: /docs/publications
+      url: /docs/community/publications
     - title: "Contribute"
-      url: /docs/contribute
+      url: /docs/community/contribute
     - title: "Get support"
-      url: /docs/get_support
+      url: /docs/community/get_support
 - title: <em style="font-style:normal; font-weight:bold; color:#3F8AAC;"> Get Data </em>
   url: /docs/get_data
