@@ -17,7 +17,7 @@ last_modified_at: 2023-10-25T117:38:50-17:40
 
 ## 생성AI 표준과 인증체계, 어떻게 만들어지고 있나(이재호 서울시립대 교수)
 
-[![생성AI 표준과 인증체계](http://img.youtube.com/vi/cnP9oMlBo18/0.jpg)](https://www.youtu.be/cnP9oMlBo18) 
+[![생성AI 표준과 인증체계](http://img.youtube.com/vi/cnP9oMlBo18/0.jpg)](https://www.youtube.com/watch?v=cnP9oMlBo18) 
  
 
 "안심하고 그 서비스를 활용하거나 제품을 써야만 생성 AI 시장이 열립니다. 안정성 있는 기술을 확보하는 것이 AI 시장에서 앞서나갈 수 있는 경쟁력이 될 것입니다.“
