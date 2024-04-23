@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-23T12:18:03+08:00'
+last_modified_at: '2024-04-23T13:21:21+08:00'
 toc: false
 ---
 
@@ -29,6 +29,7 @@ toc: false
 
 - Bump shell-quote from 1.7.1 to 1.7.3 [#3692](https://github.com/mmistakes/minimal-mistakes/issues/3692)
 - Add `after-content.html` and `before-related.html` includes to ease docs site overrides.
+- GitHub Workflows security hardening [#3884](https://github.com/mmistakes/minimal-mistakes/issues/3884)
 
 ## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 
