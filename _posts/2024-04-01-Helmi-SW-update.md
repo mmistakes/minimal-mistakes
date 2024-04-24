@@ -19,12 +19,12 @@ The IQM adapter packages has been updated.
 
 | Package        | Previous version | New Version   |
 |----------------|------------------|---------------|
-| iqm-client     | 12.5             | >=15.2 < 16.0 |
+| iqm-client     | 12.5             | >=16.0 < 17.0 |
 | iqm-cortex-cli | 4.3              | >=5.8 < 6.0   |
-| qiskit-iqm     | 9.0              | >=11.10 < 12.0|
-| cirq-iqm       | 11.9             | >=12.2 < 13.0 |
+| qiskit-iqm     | 9.0              | >=12.0 < 13.0 |
+| cirq-iqm       | 11.9             | >=13.0 < 14.0 |
 
-As a result you will be able to use `qiskit~=0.44.1` and `cirq-core[contrib] ~= 1.2` which provide some significant changes. 
+As a result you will be able to use `qiskit~=0.45.1` and `cirq-core[contrib] ~= 1.2` which provide some significant changes. 
 
 The new software comes with interesting updates:
 
