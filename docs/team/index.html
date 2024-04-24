@@ -1,12 +1,12 @@
 ---
 layout: archive
-title: Contributors
+title: Team RBC
 ---
 {% assign team = site.categories.team | reverse %}
 
 <br>
 
-<table>
+<table style="display: flex; justify-content: center;">
 	{% tablerow member in team cols:2 %}
 		{% if member.image %}
 			{% assign image = member.image %}
@@ -17,7 +17,7 @@ title: Contributors
 			<a class="pull-left" href="{{ member.url }}" style="margin-right: 20px;">
 				<img src="{{ image }}" style="border-radius: 50%; width: 13vw; height: 13vw;">
 			</a>
-			<div class="media-body">
+			<div class="media-body" style="word-wrap: break-word; overflow-wrap: break-word;">
 				<p style="margin: 0px;">
 					{% if member.site %}
 						<a href="{{ member.site }}" class="off">{{ member.name }}</a>

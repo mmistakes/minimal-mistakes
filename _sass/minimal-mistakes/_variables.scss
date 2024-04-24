@@ -155,7 +155,8 @@ $max-width: $x-large !default;
    ========================================================================== */
 
 $right-sidebar-width-narrow: 100px !default;
-$right-sidebar-width: 200px !default;
+/* modified from 200px by TS to better match the width of the navbar/masthead */
+$right-sidebar-width: 100px !default;
 $right-sidebar-width-wide: 100px !default;
 
 /*

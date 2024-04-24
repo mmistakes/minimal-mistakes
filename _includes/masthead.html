@@ -59,34 +59,34 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container d-flex justify-content-between">
-  <a class="navbar-brand" href="#">
-      {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
-      {% endunless %}
-  </a>
+        <a class="navbar-brand" href="#">
+            {% unless logo_path == empty %}
+                <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+            {% endunless %}
+        </a>
 
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-        {%- for link in site.data.navigation.main -%}
-            {% if link.sublinks %}
-                <li class="nav-item dropdown collapse navbar-collapse">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown-{{ link.title }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{ link.title }}
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ link.title }}">
-                        <a class="dropdown-item" href="{{ site.baseurl }}{{ link.url }}">Overview</a>
-                        {% for sublink in link.sublinks %}
-                            <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                        {% endfor %}
-                    </div>
-                </li>
-            {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-  </div>
-</div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                {%- for link in site.data.navigation.main -%}
+                    {% if link.sublinks %}
+                        <li class="nav-item dropdown collapse navbar-collapse">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown-{{ link.title }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ link.title }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ link.title }}">
+                                <a class="dropdown-item" href="{{ site.baseurl }}{{ link.url }}">Overview</a>
+                                {% for sublink in link.sublinks %}
+                                    <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </nav>

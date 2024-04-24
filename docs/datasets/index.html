@@ -27,17 +27,6 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
 
 <hr/>
 
-{% assign neuroimaging_values = "" | split: "" %}
-
-{% for dataset in site.categories.datasets %}
-  {% for neuroimaging in dataset.neuroimaging %}
-    {% assign neuroimaging_values = neuroimaging_values | push: neuroimaging %}
-  {% endfor %}
-{% endfor %}
-
-{% assign unique_neuroimaging_values = neuroimaging_values | uniq %}
-{% assign unique_neuroimaging_values = unique_neuroimaging_values | sort %}
-
 <table align="center"; width=1250px>
   <thead>
     <tr>
@@ -46,28 +35,56 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
       <th>Site</th>
       <th>PI</th>
       <th>Sample Size</th>
-      {% for unique_value in unique_neuroimaging_values %}
-        <th>{{ unique_value }}</th>
-      {% endfor %}
+      <th>Structural MRI</th>
+      <th>Functional MRI</th>
     </tr>
   </thead>
   <tbody>
     {% for dataset in site.categories.datasets %}
       <tr>
         <td><a href="{{ dataset.url }}">{{ dataset.title }}</a></td>
-        <td><a href="{{ dataset.website }}">link</a></td>
-        <td>{{ dataset.site }}</td>
-        <td>{{ dataset.pi }}</td>
-        <td>{{ dataset.sample_size }}</td>
-        {% for unique_value in unique_neuroimaging_values %}
-          <td>
-            {% if dataset.neuroimaging contains unique_value %}
-              <span style="color: green;">✓</span>
-            {% else %}
-            <span style="color: red;">X</span>
-            {% endif %}
-          </td>
-        {% endfor %}
+        <td>
+          {% if dataset.website %}
+            <a href="{{ dataset.website }}">link</a>
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
+        <td>
+          {% if dataset.site %}
+            {{ dataset.site }}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
+        <td>
+          {% if dataset.pi %}
+            {{ dataset.pi }}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
+        <td>
+          {% if dataset.sample_size %}
+            {{ dataset.sample_size }}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
+        <td>
+          {% if dataset.smri_count %}
+            {{ dataset.smri_count }}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
+        <td>
+          {% if dataset.fmri_count %}
+            {{ dataset.fmri_count }}
+          {% else %}
+            n/a
+          {% endif %}
+        </td>
       </tr>
     {% endfor %}
   </tbody>
