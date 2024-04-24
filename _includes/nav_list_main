@@ -65,7 +65,7 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Time-series</span>
+        <!-- <span class="nav__sub-title">Time-series</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "prophet" %}
@@ -79,16 +79,16 @@
                         <li><a href="/categories/lstm" class="">LSTM ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
         
-        <span class="nav__sub-title">Anomaly-detection</span>
+        <!-- <span class="nav__sub-title">Anomaly-detection</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "autoencoder" %}
                         <li><a href="/categories/autoencoder" class="">Autoencoder (with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
 
         <span class="nav__sub-title">Pytorch</span>
             <ul>
@@ -99,15 +99,22 @@
                 {% endfor %}
             </ul>
 
-        <span class="nav__sub-title">Scikit-Learn</span>
+        <span class="nav__sub-title">Study</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "scikit-learn" %}
-                        <li><a href="/categories/scikit-learn" class="">Scikit-learn ({{category[1].size}})</a></li>
+                    {% if category[0] == "hands-on" %}
+                        <li><a href="/categories/hands-on" class="">Hands-On ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "nlp-tutorial" %}
+                        <li><a href="/categories/nlp-tutorial" class="">딥 러닝을 이용한 자연어 처리 입문 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Streamlit</span>
             <ul>
                 {% for category in site.categories %}
@@ -134,13 +141,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
+            <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "team-paper" %}
                         <li><a href="/categories/team-paper" class="">논문 읽기 모임 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "coding-test" %}
