@@ -27,6 +27,10 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
 
 <hr/>
 
+{% assign total_sample_size = 0 %}
+{% assign total_smri_count = 0 %}
+{% assign total_fmri_count = 0 %}
+
 <table align="center"; width=1250px>
   <thead>
     <tr>
@@ -67,6 +71,7 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
         <td>
           {% if dataset.sample_size %}
             {{ dataset.sample_size }}
+            {% assign total_sample_size = total_sample_size | plus: dataset.sample_size %}
           {% else %}
             n/a
           {% endif %}
@@ -74,6 +79,7 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
         <td>
           {% if dataset.smri_count %}
             {{ dataset.smri_count }}
+            {% assign total_smri_count = total_smri_count | plus: dataset.smri_count %}
           {% else %}
             n/a
           {% endif %}
@@ -81,11 +87,18 @@ Common data fields for each dataset {largely similar to ABIDE II/ADHD200}
         <td>
           {% if dataset.fmri_count %}
             {{ dataset.fmri_count }}
+            {% assign total_fmri_count = total_fmri_count | plus: dataset.fmri_count %}
           {% else %}
             n/a
           {% endif %}
         </td>
       </tr>
     {% endfor %}
+    <tr>
+      <td colspan="4">Total</td>
+      <td>{{ total_sample_size }}</td>
+      <td>{{ total_smri_count }}</td>
+      <td>{{ total_fmri_count }}</td>
+    </tr>
   </tbody>
 </table>
