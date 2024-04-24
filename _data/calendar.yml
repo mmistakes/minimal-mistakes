@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 5b - Kiesteichtour Wei + ZD",
-    "title": "Ausflug 5b - Kiesteichtour Wei + ZD",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NTU1aHJlN29rbXByYjhqanJndWx1Z3VrNmkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-23T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-23T13:00:00+02:00"
-    },
-    "created": "2024-04-16T10:51:13.000Z",
-    "updated": "2024-04-16T10:51:13.729Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug 6b - Naturkundemuseum",
-    "title": "Ausflug 6b - Naturkundemuseum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWNxM3JtbnNzbGJmbjQ3bXM0cDF0N2RsamEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-23T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-23T13:30:00+02:00"
-    },
-    "created": "2024-04-16T10:49:06.000Z",
-    "updated": "2024-04-16T10:49:06.762Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A4 - ZAK (Zitadelle)",
-    "title": "Ausflug A4 - ZAK (Zitadelle)",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjRsMjBtMDJocHZnMGs5dXEwMm1zNjdvZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-23T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-23T13:30:00+02:00"
-    },
-    "created": "2024-02-21T09:41:48.000Z",
-    "updated": "2024-04-16T10:50:33.816Z"
-  },
-  {
-    "image_path": null,
     "alt": "Fotograf 6. Klassen",
     "title": "Fotograf 6. Klassen",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2024-04-22T09:08:15.000Z",
     "updated": "2024-04-22T09:08:15.447Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A5 - Bibliothek ",
+    "title": "Ausflug A5 - Bibliothek ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDhhYmpmb20yMXU1aWpmMDlsMnJra2I2ZHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-26T07:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-26T11:30:00+02:00"
+    },
+    "created": "2024-04-11T05:23:08.000Z",
+    "updated": "2024-04-11T05:23:08.462Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug 6a - Futurium ",
+    "title": "Ausflug 6a - Futurium ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3RxOXBnMzFoZWt1cm1iZnJ2ZGpsYzFoMDIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-26T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-26T13:30:00+02:00"
+    },
+    "created": "2024-04-22T09:09:56.000Z",
+    "updated": "2024-04-22T09:09:56.249Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A8 - Futurium",
+    "title": "Ausflug A8 - Futurium",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmJndmFqMnE2cmwwMWo2Mjk3OXRqZmxucTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-26T08:45:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-26T12:45:00+02:00"
+    },
+    "created": "2024-04-22T09:10:43.000Z",
+    "updated": "2024-04-22T09:10:43.688Z"
   }
 ]
