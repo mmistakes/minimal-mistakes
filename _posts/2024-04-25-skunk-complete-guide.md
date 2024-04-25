@@ -7,6 +7,8 @@ tags: [skunk]
 excerpt: "Learn how to use Skunk Scala library to interact with PostgreSQL database in a type-safe and non-blocking manner."
 ---
 
+_by [Derick Bomen](https://www.linkedin.com/in/bomen-derick-b6b06517b/)_ 
+
 ## 1. Introduction
 
 In modern application development, efficient database interactions are crucial for building scalable and maintainable systems. Scala, being a versatile language, offers various tools and libraries to streamline these interactions. One such powerful tool among others ([Doobie](https://index.scala-lang.org/tpolecat/doobie/artifacts/doobie-hikari/0.9.0?binary-version=_2.13), [Slick](https://index.scala-lang.org/slick/slick), [Quill](https://index.scala-lang.org/zio/zio-quill) etc) is the [Skunk Scala library](https://typelevel.org/skunk/), which provides a functional and typesafe interface for PostgreSQL databases access in Scala applications. In this article, we'll delve deep into Skunk, exploring its features and demonstrating how to interact with a database effectively in a non-blocking manner.
