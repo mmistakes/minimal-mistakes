@@ -172,6 +172,6 @@ You can also add the `.notice` class to a `<div>` element.
 {% endcapture %}
 
 <div class="notice--info">
-  <h4>Notice Headline:</h4>
+  <h4 class="no_toc">Notice Headline:</h4>
   {{ notice-text | markdownify }}
 </div>
