@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-26T00:43:39+08:00'
+last_modified_at: '2024-04-26T00:45:40+08:00'
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 ### Bug Fixes
 
 - "You may also enjoy" no longer recommends hidden posts. [#4653](https://github.com/mmistakes/minimal-mistakes/issues/4653)
+- Replaced dead link to "Viewport and Media Queries" slides. [#4421](https://github.com/mmistakes/minimal-mistakes/discussions/4421)
 
 ### Enhancements
 
