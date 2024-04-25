@@ -227,6 +227,7 @@ date_format: '%Y-%m-%d'
 dark_theme_toggle: true
 after_footer_scripts:
   - /assets/js/custom/dark-theme.js
+
 collections:
   splash:
     output: true  
@@ -245,6 +246,7 @@ collections:
   ml-ai:
     output: true
     permalink: /ml-ai/:path/  
+    
 Resources:
   Account:
     Type: AWS::ApiGateway::Account
