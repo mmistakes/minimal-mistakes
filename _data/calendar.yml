@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Fotograf 6. Klassen",
-    "title": "Fotograf 6. Klassen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGFtYzE2NDM3bXUybWFsMjZlZ2M1aWU5OGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-04-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-04-25",
-      "date_time": null
-    },
-    "created": "2023-06-30T11:12:09.000Z",
-    "updated": "2023-06-30T11:12:09.866Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A5 - Gartenarbeitsschule",
-    "title": "Ausflug A5 - Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnZodHRobWZldXV2Y2ZjaTd0M2c4a2l1b2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-24T07:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-24T12:00:00+02:00"
-    },
-    "created": "2024-04-22T09:09:11.000Z",
-    "updated": "2024-04-22T09:09:11.649Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 4c - Kimbaexpress der Berliner Tafel e.V.",
     "title": "Ausflug 4c - Kimbaexpress der Berliner Tafel e.V.",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-04-22T09:10:43.000Z",
     "updated": "2024-04-22T09:10:43.688Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A1 - Gartenarbeitsschule",
+    "title": "Ausflug A1 - Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDZhZjR0MGw4c2NhajZrNDJrNHRrbHJoaTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-26T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-26T13:00:00+02:00"
+    },
+    "created": "2024-04-22T09:11:30.000Z",
+    "updated": "2024-04-22T09:11:30.417Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A3 - Bibliothek",
+    "title": "Ausflug A3 - Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDBoMGF2NTg3N2YzdDNtdnVhb2RoNDNjMjYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-02T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-02T10:30:00+02:00"
+    },
+    "created": "2024-03-20T10:50:28.000Z",
+    "updated": "2024-03-20T10:50:28.208Z"
   }
 ]
