@@ -11,7 +11,7 @@ main:
   - title: "Linux"
     url: /categories/linux/
   - title: "ML-AI"
-    url: /categories/mlai/
+    url: /categories/ml-ai/
   # - title: "Category"
   #   url: /categories/
   - title: "Search"

@@ -209,7 +209,7 @@ compress_html:
 defaults:
   - scope:
       path: ""
-      type: pages #posts
+      type: posts #posts
     values:
       layout: single #single
       author_profile: false
@@ -229,8 +229,8 @@ after_footer_scripts:
   - /assets/js/custom/dark-theme.js
 
 collections:
-  splash:
-    output: true  
+  # splash:
+  #   output: true  
   aws:
     output: true
     permalink: /aws/:path/
@@ -245,7 +245,7 @@ collections:
     permalink: /linux/:path/
   ml-ai:
     output: true
-    permalink: /mlai/:path/  
+    permalink: /ml-ai/:path/  
 
 Resources:
   Account:
