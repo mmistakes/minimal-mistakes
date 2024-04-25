@@ -1,10 +1,10 @@
 ---
-title: "Database interaction with skunk scala library: A comprehensive guide."
+title: "The Skunk Scala Library for Database Interaction: A Comprehensive Guide"
 date: 2024-04-25
 header:
   image: "/images/blog cover.jpg"
 tags: [skunk]
-excerpt: "Learn how to use Skunk Scala library to interact with PostgreSQL database in a type-safe and non-blocking manner."
+excerpt: "Learn how to use the Skunk library to interact with PostgreSQL database in a type-safe and non-blocking manner."
 ---
 
 _by [Derick Bomen](https://www.linkedin.com/in/bomen-derick-b6b06517b/)_ 
