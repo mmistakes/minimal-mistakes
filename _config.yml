@@ -211,7 +211,7 @@ defaults:
       path: ""
       type: pages #posts
     values:
-      layout: splash #single
+      layout: single #single
       author_profile: false
       read_time: false
       comments: true
