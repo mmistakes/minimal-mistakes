@@ -344,9 +344,9 @@ resume:
   title: My Resume
   url: 'http://troccoli.it/resume/'
   baseurl: '/resume' #change it according to your repository name
-  last_update: '1 March 2024'
+  last_update: '25 April 2024'
 
-  pdf: "troccoli-allard-resume-20240301.pdf"
+  pdf: "troccoli-allard-resume-20240425.pdf"
   # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
   style: orbit-6
 
@@ -360,7 +360,7 @@ resume:
   I then realised my future as a C developer was limited to legacy code. So I decided to move into Web Development and got a CoHE in
   Web Design Technologies, just to make sure I got the basics right.
 <br/><br/>
-During my 10 years as a Web Developer I learned a lot, about coding standards, Design Patterns, DRY and SOLID, agile and scrum,
+During my 10+ years as a Web Developer I learned a lot, about coding standards, Design Patterns, DRY and SOLID, agile and scrum,
 DB optimisation, UI and UX, TDD and BDD, and much more.
 <br/><br/>
 I'm passionate about writing clean, clear, documented, testable (and tested) code. I particularly enjoy refactoring legacy code.
@@ -381,7 +381,8 @@ and to work to support team morale and help team members to achieve their goals.
 
   #sidebar links
 #  email: "giulio@troccoli.it"
-  phone:
+  phone: "+447985197043"
+  email: "giulio@troccoli.it"
   website: "https://troccoli.it"
   linkedin: "giulio-troccoli"
   github: "troccoli"
