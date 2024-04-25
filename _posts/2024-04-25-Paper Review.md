@@ -1,3 +1,8 @@
+---
+layout: post
+title: "논문 리뷰, 2024년 4월"
+---
+
 #Toward a Theory of Tokenization in LLMs
 Nived Rajaraman, Jiantao Jiao, Kannan Ramchandran
 
