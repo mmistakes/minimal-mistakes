@@ -18,6 +18,7 @@
 - Add `after-content.html` and `before-related.html` includes to ease docs site overrides.
 - GitHub Workflows security hardening [#3884](https://github.com/mmistakes/minimal-mistakes/issues/3884)
 - Replace Font Awesome v5 search page with v6.
+- Try adding an FAQ page.
 
 ## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 

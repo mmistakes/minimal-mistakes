@@ -1040,8 +1040,15 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages, [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2) is the way to go.
 {: .notice--info}
+
+#### Using Jekyll Paginate V2
+
+Jekyll Paginate V2 is not available on GitHub Pages. You must build your site locally or with a CI service like [GitHub Actions][gh-pages-actions].
+{: .notice--info}
+
+  [gh-pages-actions]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
 
 ### Timezone
 
