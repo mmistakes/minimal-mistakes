@@ -40,29 +40,29 @@ minimal-mistakes
 
 ## Customizing
 
-To override the default [Sass](http://sass-lang.com/guide) (located in theme's 
+To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 `_sass` directory), do one of the following:
 
 1. Copy directly from the Minimal Mistakes theme gem
 
-   - Go to your local Minimal Mistakes gem installation directory (run 
+   - Go to your local Minimal Mistakes gem installation directory (run
      `bundle show minimal-mistakes-jekyll` to get the path to it).
-   - Copy the contents of `/assets/css/main.scss` from there to 
+   - Copy the contents of `/assets/css/main.scss` from there to
      `<your_project>`.
    - Customize what you want inside `<your_project>/assets/css/main.scss`.
 
 2. Copy from this repo.
 
-   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
+   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss)
      to `<your_project>`.
    - Customize what you want inside `<your_project/assets/css/main.scss`.
 
-**Note:** To make more extensive changes and customize the Sass partials bundled 
-in the gem. You will need to copy the complete contents of the `_sass` directory 
+**Note:** To make more extensive changes and customize the Sass partials bundled
+in the gem. You will need to copy the complete contents of the `_sass` directory
 to `<your_project>` due to the way Jekyll currently reads those files.
 
-To make basic tweaks to theme's style Sass variables can be overridden by adding 
-to `<your_project>/assets/css/main.scss`. For instance, to change the 
+To make basic tweaks to theme's style Sass variables can be overridden by adding
+to `<your_project>/assets/css/main.scss`. For instance, to change the
 link color used throughout the theme add:
 
 ```scss
@@ -71,7 +71,7 @@ $link-color: red;
 
 Before any `@import` lines.
 
-### Paragraph indention 
+### Paragraph indention
 
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
@@ -120,7 +120,7 @@ $header-font-family : $sans-serif-narrow;
 
 ### Type scale
 
-Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file. 
+Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file.
 
 Example:
 
@@ -147,7 +147,7 @@ $type-size-8 : 0.625em;  // ~10px
 
 ### Colors
 
-Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most affect when changed.
+Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most effect when changed.
 
 #### Syntax highlighting
 
@@ -275,6 +275,31 @@ $base0e: #bb90e2;
 $base0f: #b49368;
 ```
 
+##### Dracula
+
+![dracula-code-block]({{ '/assets/images/dracula-code-block.jpg' | relative_url }})
+
+```scss
+/* dracula syntax highlighting (base16) */
+/* https://github.com/dracula/base16-dracula-scheme */
+$base00: #282936;
+$base01: #3a3c4e;
+$base02: #4d4f68;
+$base03: #626483;
+$base04: #62d6e8;
+$base05: #e9e9f4;
+$base06: #f1f2f8;
+$base07: #f7f7fb;
+$base08: #ea51b2;
+$base09: #b45bcf;
+$base0a: #00f769;
+$base0b: #ebff87;
+$base0c: #a1efe4;
+$base0d: #62d6e8;
+$base0e: #b45bcf;
+$base0f: #00f769;
+```
+
 ##### Neon
 
 ![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | relative_url }})
@@ -345,7 +370,7 @@ $base0c: #8abeb7;
 $base0d: #81a2be;
 $base0e: #b294bb;
 $base0f: #a3685a;
-```  
+```
 
 ### Breakpoints and grid stuff
 

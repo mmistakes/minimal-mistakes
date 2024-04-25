@@ -2,28 +2,16 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-$(document).ready(function() {
-  // Sticky footer
-  var bumpIt = function() {
-    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-  };
-
-  bumpIt();
-  $(window).resize(
-    jQuery.throttle(250, function() {
-      bumpIt();
-    })
-  );
-
+$(function() {
   // FitVids init
   $("#main").fitVids();
 
   // Sticky sidebar
   var stickySideBar = function() {
     var show =
-      $(".author__urls-wrapper button").length === 0
+      $(".author__urls-wrapper").find("button").length === 0
         ? $(window).width() > 1024 // width should match $large Sass variable
-        : !$(".author__urls-wrapper button").is(":visible");
+        : !$(".author__urls-wrapper").find("button").is(":visible");
     if (show) {
       // fix
       $(".sidebar").addClass("sticky");
@@ -40,9 +28,9 @@ $(document).ready(function() {
   });
 
   // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function() {
+  $(".author__urls-wrapper").find("button").on("click", function() {
     $(".author__urls").toggleClass("is--visible");
-    $(".author__urls-wrapper button").toggleClass("open");
+    $(".author__urls-wrapper").find("button").toggleClass("open");
   });
 
   // Close search screen with Esc key
@@ -61,7 +49,7 @@ $(document).ready(function() {
     $(".initial-content").toggleClass("is--hidden");
     // set focus on input
     setTimeout(function() {
-      $(".search-content input").focus();
+      $(".search-content").find("input").focus();
     }, 400);
   });
 
@@ -92,11 +80,11 @@ $(document).ready(function() {
       events: true // if true, emit custom events
     });
   }
-  
+
   // add lightbox class to all image links
   $(
-    "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
-  ).addClass("image-popup");
+    "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
+  ).has("> img").addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
@@ -131,5 +119,18 @@ $(document).ready(function() {
     },
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  });
+
+  // Add anchors for headings
+  $('.page__content').find('h1, h2, h3, h4, h5, h6').each(function() {
+    var id = $(this).attr('id');
+    if (id) {
+      var anchor = document.createElement("a");
+      anchor.className = 'header-link';
+      anchor.href = '#' + id;
+      anchor.innerHTML = '<span class=\"sr-only\">Permalink</span><i class=\"fas fa-link\"></i>';
+      anchor.title = "Permalink";
+      $(this).append(anchor);
+    }
   });
 });

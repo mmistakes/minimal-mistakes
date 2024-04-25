@@ -18,8 +18,10 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
+.author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
-.page__footer-follow .social-icons .svg-inline--fa {
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
   color: inherit;
 }
 
