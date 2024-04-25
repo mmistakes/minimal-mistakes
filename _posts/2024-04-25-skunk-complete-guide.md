@@ -1,6 +1,6 @@
 ---
 title: "Database interaction with skunk scala library: A comprehensive guide."
-date: 2024-02-09
+date: 2024-04-25
 header:
   image: "/images/blog cover.jpg"
 tags: [skunk]
