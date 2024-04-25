@@ -245,8 +245,8 @@ collections:
     permalink: /linux/:path/
   ml-ai:
     output: true
-    permalink: /ml-ai/:path/  
-    
+    permalink: /mlai/:path/  
+
 Resources:
   Account:
     Type: AWS::ApiGateway::Account
