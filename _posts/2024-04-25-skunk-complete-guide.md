@@ -34,7 +34,7 @@ Before we delve into each concept, ensure you have the following prerequisites i
 
 To build and manage our Scala project, we will be using _Scala_ and _sbt_. To run a PostgreSQL database, we will be using _Docker_ as a containerized service. This involves pulling a PostgreSQL image from _Docker Hub_ (the official repository for Docker images), and running it as a container in our Docker installed system.
 
-> I understand that at the time the article was written, IntelliJ had poor support for Skunk as the compiler would underline Skunk keywords such as .query, .command, etc in red on SQL statements. If you're facing this issue, it is possible to make it go away by installing this [skunk-intellij](https://github.com/trobert/skunk-intellij) plugin.
+> Tip: for better Skunk support in IntelliJ IDEA with syntax highlighting, warnings etc., you may want to install the [skunk-intellij](https://github.com/trobert/skunk-intellij) plugin.
 
 Our proposed use case involves developing an application that allows the creation, reading, updating, and deleting of user data (CRUD operations). The application will make use of Skunk concepts to interact with a PostgreSQL database and manage user data. Our objective with this use case is to showcase the effectiveness of Skunk in database management. By utilizing Skunk concepts, the application will demonstrate how to perform CRUD operations on a PostgreSQL database effortlessly and efficiently.
 
