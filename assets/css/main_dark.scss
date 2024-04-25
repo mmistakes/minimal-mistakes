@@ -10,3 +10,36 @@
 @import "minimal-mistakes"; // main partials
 
 @import "custom/customOverride.scss";
+
+.feature__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; // space-between;
+}
+
+.feature__item {
+  margin-bottom: 2em;
+  font-size: 1.25rem;
+  width: 100%;
+
+  @include breakpoint($small) {
+    width: calc(50% - 1em);
+  }
+
+  @include breakpoint($medium) {
+    width: calc(25% - 1em);
+  }
+}
+
+/* 최근 포스트 컨테이너 */
+.recent-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 개별 포스트 항목 */
+.recent-post-item {
+  flex: 0 0 49%; /* 항목 너비 50% 설정 */
+  margin-bottom: 20px; /* 아래 여백 추가 */
+}

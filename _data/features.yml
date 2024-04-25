@@ -1,27 +1,34 @@
 - title: "Terraform"
-  image-path: https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_terraform_icon_130125.png
-  alt: "Terraform Logo" 
+  # image-path: https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_terraform_icon_130125.png
+  # alt: "Terraform Logo" 
   excerpt: "Terraform은 HashiCorp에서 만든 Infra as Code 도구로, 클라우드 인프라를 코드로 관리할 수 있습니다. 멱등성과 선언적 문법이 특징입니다."
   url: "/categories/terraform"
   btn-label: "더 알아보기"
 
 - title: "AWS"
-  image-path: https://cdn.icon-icons.com/icons2/2407/PNG/512/aws_icon_146074.png
-  alt: "AWS Logo"
+  # image-path: https://cdn.icon-icons.com/icons2/2407/PNG/512/aws_icon_146074.png
+  # alt: "AWS Logo"
   excerpt: "Amazon Web Services는 가장 포괄적이고 널리 채택된 클라우드 플랫폼입니다. 200개 이상의 완벽한 기능을 제공합니다."
   url: "/categories/aws"
   btn-label: "더 알아보기"
 
 - title: "Linux"
-  image-path: https://cdn.icon-icons.com/icons2/2699/PNG/512/linux_logo_icon_168243.png
-  alt: "Linux Logo"
+  # image-path: https://cdn.icon-icons.com/icons2/2699/PNG/512/linux_logo_icon_168243.png
+  # alt: "Linux Logo"
   excerpt: "Linux는 오픈 소스 Unix 계열 운영 체제 중 하나로, 리누스 토르발스가 처음 개발했습니다. 서버, 데스크탑, 모바일 등 다양한 플랫폼에서 사용됩니다."
   url: "/categories/linux"
   btn-label: "더 알아보기"
 
 - title: "Python"
-  image-path: https://cdn.icon-icons.com/icons2/1508/PNG/512/python_104451.png
-  alt: "Python Logo"
+  # image-path: https://cdn.icon-icons.com/icons2/1508/PNG/512/python_104451.png
+  # alt: "Python Logo"
   excerpt: "Python은 인기 있는 고급 프로그래밍 언어 중 하나로, 가독성과 생산성이 뛰어납니다. 데이터 과학, 웹 개발 등 다양한 분야에서 활용됩니다."
   url: "/categories/python"
+  btn-label: "더 알아보기"
+
+- title: "ML-AI"
+  # image-path: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  # alt: "ML-AI Logo"
+  excerpt: "머신러닝과 인공지능은 데이터에서 패턴을 학습하고 예측을 수행하는 기술입니다. 최근 딥러닝 기술로 다양한 분야에 적용되고 있습니다."
+  url: "/categories/ml-ai"
   btn-label: "더 알아보기"

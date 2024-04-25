@@ -212,7 +212,7 @@ defaults:
       type: posts #posts
     values:
       layout: single #single
-      author_profile: false
+      author_profile: false 
       read_time: false
       comments: true
       share: true
