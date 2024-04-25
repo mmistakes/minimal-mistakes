@@ -5,6 +5,7 @@
 ### Bug Fixes
 
 - "You may also enjoy" no longer recommends hidden posts. [#4653](https://github.com/mmistakes/minimal-mistakes/issues/4653)
+- Replaced dead link to "Viewport and Media Queries" slides. [#4421](https://github.com/mmistakes/minimal-mistakes/discussions/4421)
 
 ### Enhancements
 
