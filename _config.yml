@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Daniel Ciocîrlan"
-  avatar           : "/images/bio-photo.jpg"
+  # avatar           : "/images/bio-photo.jpg"
   bio              : "I'm a software engineer and the founder of Rock the JVM. I teach Scala, Kotlin, Java, big data and a variety of tech both live and in online courses."
   location         : "Bucharest, Romania"
   email            : "daniel@rockthejvm.com"
