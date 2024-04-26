@@ -246,6 +246,9 @@ collections:
   ml-ai:
     output: true
     permalink: /ml-ai/:path/  
+  database:
+    output: true
+    permalink: /database/:path/  
 
 Resources:
   Account:
