@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4c - Kimbaexpress der Berliner Tafel e.V.",
-    "title": "Ausflug 4c - Kimbaexpress der Berliner Tafel e.V.",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M28xa25hZW5nMmp2bGJoNXBlbTc4a2trYmwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-25T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-25T13:30:00+02:00"
-    },
-    "created": "2024-04-22T09:08:15.000Z",
-    "updated": "2024-04-22T09:08:15.447Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A5 - Bibliothek ",
     "title": "Ausflug A5 - Bibliothek ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-03-20T10:50:28.000Z",
     "updated": "2024-03-20T10:50:28.208Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A2 - Gartenarbeitsschule",
+    "title": "Ausflug A2 - Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDBidXIwam5iN2Nxc2phbnVhdDNjdnZmdnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-17T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-17T13:30:00+02:00"
+    },
+    "created": "2024-04-11T05:28:58.000Z",
+    "updated": "2024-04-11T05:28:58.157Z"
   }
 ]
