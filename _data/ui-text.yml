@@ -1112,11 +1112,8 @@ pl: &DEFAULT_PL
   comment_success_msg        : "Dziękuję za Twój komentarz! Zostanie dodany po akceptacji."
   comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
   loading_label              : "Trwa ładowanie strony..."
-  search_label_text          : "Wprowadź kryteria wyszukiwania..."
-  search_placeholder_text    : "Wprowadź kryteria wyszukiwania..."
+  search_label_text          :
   search_algolia_no_results  : "Brak wyników"
-  results_found              : "Znalezione wyniki"
-  back_to_top                : "Wróć na górę"
 pl-PL:
   <<: *DEFAULT_PL
 
@@ -1700,9 +1697,9 @@ ga-IE:
 # -----------------
 fi: &DEFAULT_FI
   skip_links                 : "Ohita linkit"
-  skip_primary_nav           : "Siirry päävalikkoon"
-  skip_content               : "Siirry sisältöön"
-  skip_footer                : "Siirry alareunaan"
+  skip_primary_nav           : "Hyppää pää navigaatioon"
+  skip_content               : "Hyppää sisältöön"
+  skip_footer                : "Hyppää alareunaan"
   page                       : "Sivu"
   pagination_previous        : "Edellinen"
   pagination_next            : "Seuraava"
@@ -1713,39 +1710,39 @@ fi: &DEFAULT_FI
   toc_label                  : "Tällä sivulla"
   ext_link_label             : "Suora linkki"
   less_than                  : "vähemmän kuin"
-  minute_read                : "minuuttia luettavaa"
+  minute_read                : "lukuaika"
   share_on_label             : "Jaa"
   meta_label                 :
-  tags_label                 : "Tunnisteet:"
+  tags_label                 : "Tagit:"
   categories_label           : "Kategoriat:"
   date_label                 : "Päivitetty:"
   comments_label             : "Jätä kommentti"
   comments_title             : "Kommentit"
   more_label                 : "Lisää"
-  related_label              : "Saatat olla kiinnostunut myös"
+  related_label              : "Voit olla kiinnostunut myös"
   follow_label               : "Seuraa:"
   feed_label                 : "Syöte"
-  powered_by                 : "Käyttäen"
-  website_label              : "Kotisivu"
-  email_label                : "Sähköposti"
-  recent_posts               : "Viimeisimmät kirjoitukset"
+  powered_by                 : "Voimanlähteenä"
+  website_label              : "Websivu"
+  email_label                : "Email"
+  recent_posts               : "Viimeisimmät postaukset"
   undefined_wpm              : "words_per_minute asetusta ei ole määritelty _config.yml tiedostossa"
-  comment_form_info          : "Sinun sähköpostiosoitetta ei julkaista. Vaaditut kentät ovat merkittyjä"
+  comment_form_info          : "Your email address will not be published. Required fields are marked"
   comment_form_comment_label : "Kommentti"
   comment_form_md_info       : "Tukee markdown muotoilua."
   comment_form_name_label    : "Nimi"
-  comment_form_email_label   : "Sähköpostiosoite"
-  comment_form_website_label : "Nettisivu (vapaaehtoinen)"
+  comment_form_email_label   : "Email osoite"
+  comment_form_website_label : "Webbisivu (vapaaehtoinen)"
   comment_btn_submit         : "Lähetä"
   comment_btn_submitted      : "Lähetetty"
-  comment_success_msg        : "Kiitos kommentista, se julkaistaan tällä sivulla tarkastelun jälkeen."
-  comment_error_msg          : "Tapahtui virhe. Tarkista, että olet täyttänyt kaikki kentät ja yritä uudelleen."
+  comment_success_msg        : "Kiitos kommentista, se julkaistaan tällä sivulla moderoinnin jälkeen."
+  comment_error_msg          : "Tarkista että olet täyttänyt kaikki kentät ja yritä uudelleen."
   loading_label              : "Ladataan..."
   search_label_text          : "Hakusana..."
   search_placeholder_text    : "Hakusana..."
-  search_algolia_no_results  : "Ei hakutuloksia"
+  search_algolia_no_results  :
   results_found              : "Tulosta"
-  back_to_top                : "Siirry ylös"
+  back_to_top                : "Ylös"
 
 # Myanmar (Burmese)
 # -----------------
@@ -2021,58 +2018,6 @@ sw-KE:
   <<: *DEFAULT_SW
 sw-TZ:
   <<: *DEFAULT_SW
-
-# Ukrainian / Українська
-# -----------------
-uk: &DEFAULT_UK
-  skip_links                 : "Посилання для переходу"
-  skip_primary_nav           : "Перейти до основної навігації"
-  skip_content               : "Перейти до змісту"
-  skip_footer                : "Перейти до нижнього колонтитула"
-  page                       : "Сторінка"
-  pagination_previous        : "Попередня"
-  pagination_next            : "Наступна"
-  breadcrumb_home_label      : "Головна"
-  breadcrumb_separator       : "/"
-  menu_label                 : "Випадаюче меню"
-  search_label               : "Пошук"
-  toc_label                  : "Зміст"
-  ext_link_label             : "Пряме посилання"
-  less_than                  : "менше ніж"
-  minute_read                : "хв. на чітання"
-  share_on_label             : "Поділитися"
-  meta_label                 :
-  tags_label                 : "Мітки:"
-  categories_label           : "Розділи:"
-  date_label                 : "Дата зміни:"
-  comments_label             : "Залишити коментар"
-  comments_title             : "Коментарі"
-  more_label                 : "Читати далі"
-  related_label              : "Вам також може сподобатись"
-  follow_label               : "Зв'язатися зі мною:"
-  feed_label                 : "RSS-стрічка"
-  powered_by                 : "Сайт працює на"
-  website_label              : "Сайт"
-  email_label                : "Электронна пошта"
-  recent_posts               : "Останні записи"
-  undefined_wpm              : "Не визначено параметр words_per_minute в _config.yml"
-  comment_form_info          : "Вашу адресу електронної пошти не буде опубліковано. Обов'язкові поля позначені"
-  comment_form_comment_label : "Коментар"
-  comment_form_md_info       : "Підтримується синтаксис Markdown."
-  comment_form_name_label    : "Ім'я"
-  comment_form_email_label   : "Електронна пошта"
-  comment_form_website_label : "Посилання на сайт (необов'язково)"
-  comment_btn_submit         : "Залишити коментар"
-  comment_btn_submitted      : "Відправлено"
-  comment_success_msg        : "Дякую за Ваш коментар! Його буде опубліковано на сайті після перевірки."
-  comment_error_msg          : "На жаль, сталася помилка з надсиланням коментаря. Будь ласка, переконайтеся, що всі обов'язкові поля заповнені та спробуйте знову."
-  loading_label              : "Відправка..."
-  search_label_text          : "Введіть пошуковий запит..."
-  search_placeholder_text    : "Введіть пошуковий запит..."
-  search_algolia_no_results  :
-  results_found              : "Знайдено"
-uk-UA:
-  <<: *DEFAULT_UK
 
 # Another locale
 # --------------
