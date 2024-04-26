@@ -32,3 +32,10 @@
   excerpt: "머신러닝과 인공지능은 데이터에서 패턴을 학습하고 예측을 수행하는 기술입니다. 최근 딥러닝 기술로 다양한 분야에 적용되고 있습니다."
   url: "/categories/ml-ai"
   btn-label: "더 알아보기"
+
+- title: "Database"
+  # image-path: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  # alt: "ML-AI Logo"
+  excerpt: "Database는 구조화된 방식으로 데이터를 저장, 관리, 조회하는 시스템입니다. 대량의 데이터를 안전하고 효율적으로 저장하고, 사용자가 원하는 데이터를 쉽게 찾을 수 있도록 합니다."
+  url: "/categories/database"
+  btn-label: "더 알아보기"
