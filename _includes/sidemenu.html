@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .tiktok li {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 242, 234, 1) 0%,
+          rgba(6, 0, 4, 1) 50%,
+          rgba(255, 0, 79, 1) 100%
+        ) !important;
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: 300ms;
+        color: #fff;
+        transform-origin: left center;
+      }
+
+      .tiktok li::before {
+        position: absolute;
+        content: '';
+        background: linear-gradient(
+          90deg,
+          rgba(0, 242, 234, 1) 0%,
+          rgba(6, 0, 4, 1) 50%,
+          rgba(255, 0, 79, 1) 100%
+        ) !important;
+        width: 25px;
+        height: 100%;
+        right: -25px;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+      }
+
+      .sidemenu-parent {
+        position: fixed;
+        top: 40%;
+        left: 0;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .sidemenu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        filter: drop-shadow(0 2px 3px #00000054);
+      }
+
+      .sidemenu li {
+        width: 70px;
+        height: 70px;
+        background-color: var(--clr);
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: 300ms;
+        color: #fff;
+        transform-origin: left center;
+      }
+
+      .sidemenu li::before {
+        position: absolute;
+        content: '';
+        background-color: var(--clr);
+        width: 25.3px;
+        height: 100%;
+        right: -25px;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+      }
+
+      .sidemenu i {
+        height: 60px !important;
+        width: 60px !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        position: absolute;
+      }
+
+      .sidemenu span {
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
+        white-space: nowrap;
+        position: absolute;
+        transform: translateX(60px);
+        padding-left: 10px;
+        color: transparent;
+      }
+
+      .sidemenu li:hover {
+        width: 240px;
+      }
+
+      .sidemenu li:hover span {
+        color: #fff;
+      }
+
+      /* .fa-n:before {
+            font-family: Arial;
+            font-weight: bold;
+            content: 'N';
+        } */
+    </style>
+  </head>
+
+  <body>
+    <ul class="sidemenu sidemenu-parent">
+      <a href="https://github.com/JackSmith-c">
+        <li class="sidemenu" style="--clr: #9b59b6">
+          <i class="fa-brands fa-github sidemenu"></i>
+          <span>Github</span>
+        </li>
+      </a>
+      <a href="https://blog.naver.com/yhon89">
+        <li class="sidemenu" style="--clr: #30ae48">
+          <!-- <i class="fa-brands fa-tiktok sidemenu"></i> -->
+          <i class="fa-solid fa-n sidemenu"></i>
+          <span>Naver</span>
+        </li>
+      </a>
+      <a href="https://www.instagram.com/seongung64/">
+        <li class="sidemenu" style="--clr: #dd2a7b">
+          <i class="fa-brands fa-instagram sidemenu"></i>
+          <span>instagram</span>
+        </li>
+      </a>
+      <!-- <li class="sidemenu"
+            style="background: linear-gradient(90deg, rgba(0, 242, 234, 1) 0%, rgba(6, 0, 4, 1) 50%, rgba(255, 0, 79, 1) 100%) !important;">
+            <i class="fa-brands fa-tiktok sidemenu"></i>
+            <span>TikTok</span>
+        </li> -->
+      <a href="https://www.youtube.com/channel/UCB4Xq3yWVgdzujvkxeY_MyA">
+        <li class="sidemenu" style="--clr: #ff0000">
+          <i class="fa-brands fa-youtube sidemenu"></i>
+          <span>youtube</span>
+        </li>
+      </a>
+      <!-- <li class="sidemenu" style="--clr: #4fce5d">
+            <i class="fa-brands fa-whatsapp sidemenu"></i>
+            <span class="sidemenu">whatsapp</span>
+        </li> -->
+    </ul>
+  </body>
+</html>

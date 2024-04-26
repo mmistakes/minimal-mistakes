@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "4a2525feec8ec577",
+    "type": "split",
+    "children": [
+      {
+        "id": "70ff9f5a5ee8974c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c27262310cef0476",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c3264d6768231952",
+    "type": "split",
+    "children": [
+      {
+        "id": "d16605479f47e6c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f1085c4309cb65e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88637fbad326d2d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "14fa79348d612f48",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "e4fbf6cc374c351a",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfcce50aead18a04",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31900fbfcae728a7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3c21e8bd5ef14474",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ef79ae871be0f48c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ef4eae1b28db5c25",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c27262310cef0476",
+  "lastOpenFiles": [
+    "_site/2024-01/codinglog(24)/index.html",
+    "_site/2024-01/codinglog(24)",
+    "_site/images/2024-01-22-codinglog(23)/image-20240123215846720.png",
+    "_site/images/2024-01-22-codinglog(23)",
+    "images/2024-01-22-codinglog(23)/image-20240123215847107.png",
+    "images/2024-01-22-codinglog(23)/image-20240123215846720.png",
+    "images/2024-01-22-codinglog(23)",
+    "_posts/2024-01-23-codinglog(24).md",
+    "_posts/2024-01-17-codinglog(20) copy.md",
+    "_site/2024-01/codinglog(23)/index.html",
+    "_site/2024-01/codinglog(23)",
+    "_posts/2024-01-22-codinglog(23).md",
+    "_site/2024-01/codinglog(20)-copy/index.html",
+    "_site/2024-01/codinglog(20)-copy",
+    "_site/2024-01/codinglog(22)/index.html",
+    "_site/2024-01/codinglog(22)",
+    "_site/2024-01/codinglog(21)/index.html",
+    "_site/images/2024-01-21-codinglog(22)/image-20240121212220540.png",
+    "_site/images/2024-01-14-codinglog(18)/image-20240114211406939.png",
+    "images/2024-01-21-codinglog(22)/image-20240121212220540.png",
+    "_posts/2024-01-21-codinglog(22).md",
+    "_posts/2024-01-17-codinglog(20).md",
+    "_posts/2024-01-11-codinglog(15) copy.md",
+    "_posts/2024-01-18-codinglog(21).md",
+    "_posts/2024-01-18-codinglog(20).md",
+    "images/README/preview(20240116).png",
+    "CHANGELOG.md",
+    "2.md",
+    "README.md",
+    "screenshot.png",
+    "screenshot-layouts.png",
+    "_posts/2024-01-013-codinglog(17).md",
+    "images/image-removebg-preview (1).png",
+    "_posts/2023-12-28-mylatexandmathjax.md",
+    "_posts/2023-12-28-mysyntax.md",
+    "_posts/2023-12-29-myjupyterapplication.md",
+    "_posts/2023-12-29-mylab.md",
+    "_posts/2023-12-29-mysyntax.md",
+    "_posts/2023-12-29-mylab.md.md"
+  ]
+}
