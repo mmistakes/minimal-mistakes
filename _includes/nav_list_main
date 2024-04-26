@@ -102,6 +102,27 @@
         <span class="nav__sub-title">Study</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "paper" %}
+                        <li><a href="/categories/paper" class="">논문 리뷰 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "coding-test" %}
+                        <li><a href="/categories/coding-test" class="">Coding Test ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "seminar" %}
+                        <li><a href="/categories/seminar" class="">Seminar ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "hands-on" %}
                         <li><a href="/categories/hands-on" class="">Hands-On ({{category[1].size}})</a></li>
                     {% endif %}
@@ -133,14 +154,14 @@
                 {% endfor %}
             </ul>
         
-        <span class="nav__sub-title">study</span>
-            <ul>
+        <!-- <span class="nav__sub-title">study</span> -->
+            <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "paper" %}
                         <li><a href="/categories/paper" class="">논문 리뷰 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
             <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "team-paper" %}
@@ -148,7 +169,7 @@
                     {% endif %}
                 {% endfor %}
             </ul> -->
-            <ul>
+            <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "coding-test" %}
                         <li><a href="/categories/coding-test" class="">Coding Test ({{category[1].size}})</a></li>
@@ -161,7 +182,7 @@
                         <li><a href="/categories/seminar" class="">Seminar ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
 
         <span class="nav__sub-title">me</span>
             <ul>

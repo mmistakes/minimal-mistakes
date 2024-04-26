@@ -98,9 +98,9 @@ all accessor variety was computed # words = 361598
 ### 3. SOYNLP의 응집 확률
 
 - 응집 확률은 내부 문자열이 얼마나 응집하여 자주 등장하는지를 판단하는 척도
-  -  ![image-20240426165600674](../images/2024-04-25-nlp_tutorial4/image-20240426165600674.png)
+  -  ![image-20240426165600674](/images/2024-04-25-nlp_tutorial4/image-20240426165600674.png)
   - '반포한강공원에'라는 7의 길이를 가진 문자 시퀀스에 대해서 각 내부 문자열의 스코어를 구하는 과정
-    - ![image-20240426165613088](../images/2024-04-25-nlp_tutorial4/image-20240426165613088.png)
+    - ![image-20240426165613088](/images/2024-04-25-nlp_tutorial4/image-20240426165613088.png)
 
 ~~~ python
 word_score_table["반포한"].cohesion_forward

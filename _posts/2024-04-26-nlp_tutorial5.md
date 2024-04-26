@@ -75,7 +75,7 @@ P(나는 메롱을 먹는다) < P(나는 메론을 먹는다)
 
 - 하나의 단어를 ![equation](https://latex.codecogs.com/svg.image?%20w), 단어 시퀀스를 대문자 ![equation](https://latex.codecogs.com/svg.image?%20W)라고 한다면, ![equation](https://latex.codecogs.com/svg.image?%20n)개의 단어가 등장하는 단어 시퀀스 ![equation](https://latex.codecogs.com/svg.image?%20W)의 확률
 
-  ![image-20240426173755432](../images/2024-04-26-nlp_tutorial5/image-20240426173755432.png)
+  ![image-20240426173755432](/images/2024-04-26-nlp_tutorial5/image-20240426173755432.png)
 
 &nbsp;
 
@@ -83,7 +83,7 @@ P(나는 메롱을 먹는다) < P(나는 메론을 먹는다)
 
 - ![equation](https://latex.codecogs.com/svg.image?%20n-1)개의 단어가 나열된 상태에서 ![equation](https://latex.codecogs.com/svg.image?%20n)번째 단어의 확률
 
-  ![image-20240426173924655](../images/2024-04-26-nlp_tutorial5/image-20240426173924655.png)
+  ![image-20240426173924655](/images/2024-04-26-nlp_tutorial5/image-20240426173924655.png)
 
 - `|` : 조건부 확률
 
@@ -91,4 +91,4 @@ P(나는 메롱을 먹는다) < P(나는 메론을 먹는다)
 
 > 전체 단어 시퀀스 ![equation](https://latex.codecogs.com/svg.image?%20W)의 확률은 모든 단어가 예측되고 알수있기 때문에 전체 확률
 >
-> ![image-20240426174041564](../images/2024-04-26-nlp_tutorial5/image-20240426174041564.png)
+> ![image-20240426174041564](/images/2024-04-26-nlp_tutorial5/image-20240426174041564.png)

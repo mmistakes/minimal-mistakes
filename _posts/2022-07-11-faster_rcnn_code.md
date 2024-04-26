@@ -9,11 +9,16 @@ toc_sticky: true
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=Faster R-CNN 구현&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
 
+<table align="left">
+  <td>
+    <a target="_blank" href="https://colab.research.google.com/github/choijhyeok/Collection-of-presentation-materials/blob/main/faster_rcnn.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" />구글 코랩에서 실행하기</a>
+  </td>
+</table>
 
 
-<div align=center> <a target="_blank" href="https://colab.research.google.com/drive/1P-S70UbPX4U7MT3RXtbFFpOZNBqMm5Bt?usp=sharing"><img _ngcontent-byh-c89="" src="https://aifactory.space/assets/images/open_colab.svg" /></a></div>
 
 
+&nbsp;
 
 - 데이터는 roboflow 사용
 - 방법1, 방법2 두가지로 구현
@@ -21,8 +26,6 @@ toc_sticky: true
 
 
 - 사용할 데이터셋 :  [마스크 데이터셋](https://public.roboflow.com/object-detection/mask-wearing)
-
-
 
 &nbsp;
 
