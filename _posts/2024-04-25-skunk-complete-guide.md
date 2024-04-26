@@ -13,11 +13,11 @@ _by [Derick Bomen](https://www.linkedin.com/in/bomen-derick-b6b06517b/)_
 
 In modern application development, efficient database interactions are crucial for building scalable and maintainable systems. Scala, being a versatile language, offers various tools and libraries to streamline these interactions. One such powerful tool among others ([Doobie](https://index.scala-lang.org/tpolecat/doobie/artifacts/doobie-hikari/0.9.0?binary-version=_2.13), [Slick](https://index.scala-lang.org/slick/slick), [Quill](https://index.scala-lang.org/zio/zio-quill) etc) is the [Skunk Scala library](https://typelevel.org/skunk/), which provides a functional and typesafe interface for PostgreSQL databases access in Scala applications. In this article, we'll delve deep into Skunk, exploring its features and demonstrating how to interact with a database effectively in a non-blocking manner.
 
-## 2. What is Skunk Scala Library?
+## 2. What is Skunk?
 
 Skunk is a robust Scala library that has been specifically crafted to offer optimal database access to PostgreSQL. Its functional, typesafe, resource-safe session, and composable interface provides a high level of type-safety, ensuring that SQL queries are checked at compile-time. With Skunk, developers can expect a reliable and efficient way to interact with PostgreSQL databases. Its advanced features offer a seamless and typesafe experience that enables developers to streamline their database access and management. Skunk is the perfect choice for developers who strive to achieve efficient and secure database access while maintaining a high level of type-safety.
 
-## 3. Understanding Skunk's Core Concepts
+## 3. Understanding Skunk Core Concepts
 
 Before diving into the practical implementation, let's familiarize ourselves with Skunk's core concepts:
 
@@ -49,7 +49,7 @@ libraryDependencies ++= Seq(
 
 With our dependencies loaded to our project, we can explore each of these concepts in detail and demonstrate how to leverage Skunk effectively. However, before diving into that, Let's start by defining our domain and setting up environment variables that will be used to launch our docker container.
 
-## 4. Domain
+## 4. Creating a Domain
 
 This guide will help us identify the data to manipulate in our database session.
 * `User.scala` placed in `src/main/scala/com/rockthejvm/domain`. This will guide us on the necessary _fields_ and _data types_ to create our `users` table (We will create the table in a short while.) for storing `User` data.
@@ -79,7 +79,8 @@ final case class Config (
 ) derives ConfigReader
 ```
 
-## 5. Resources
+## 5. Creating and Using Resources
+
 Configuration values reflecting our domain to be used throughout our project.
 
 * `application.conf` placed in `src/main/resources`. Here we set our configuration values needed to establish our database session. The key-value pairs that are set up in this file must correspond to the values specified in our `Config` case class.
@@ -122,7 +123,7 @@ services:
       - ./database/tables.sql:/docker-entrypoint-initdb.d/init.sql
 ```
 
-## 6. Setting Up Database Connection
+## 6. Setting Up a Database Connection
 
 To begin interacting with the database using Skunk, establish a database connection. This involves configuring the connection parameters such as host, port, username, password, and database name. Skunk provides a convenient way to manage database sessions using resources.
 
@@ -353,7 +354,7 @@ After preparing our query, we fetch a maximum of one row by using the `option` m
 User found: User(b68f2676-611e-4db2-af80-0458e9c52bd3,Jacob,jacob@email.com)
 ```
 
-## 9. Refactoring our code
+## 9. Refactoring
 Let's refactor our code in a functional style and add support for basic CRUD operations.
 Given we're leveraging the use of a purely functional library, we shall continue writing purely functional code throughout using the tagless final approach.
 
