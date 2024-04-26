@@ -17,6 +17,8 @@ In modern application development, efficient database interactions are crucial f
 
 Skunk is a robust Scala library that has been specifically crafted to offer optimal database access to PostgreSQL. Its functional, typesafe, resource-safe session, and composable interface provides a high level of type-safety, ensuring that SQL queries are checked at compile-time. With Skunk, developers can expect a reliable and efficient way to interact with PostgreSQL databases. Its advanced features offer a seamless and typesafe experience that enables developers to streamline their database access and management. Skunk is the perfect choice for developers who strive to achieve efficient and secure database access while maintaining a high level of type-safety.
 
+> Skunk is part of the Typelevel ecosystem of libraries. If you want some intense hands-on experience with Scala and the Typelevel stack, you'll greatly enjoy the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course. It's the biggest course on Rock the JVM, where you'll write a full-stack, production-grade application from scratch, including authentication, credit card checkout, email services, comprehensive test coverage, etc. Check it out [here](https://rockthejvm.com/p/typelevel-rite-of-passage).
+
 ## 3. Understanding Skunk Core Concepts
 
 Before diving into the practical implementation, let's familiarize ourselves with Skunk's core concepts:
