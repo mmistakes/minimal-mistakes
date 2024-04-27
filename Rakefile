@@ -135,15 +135,15 @@ def genenerate_copyright_file(filename, header, prefix, footer)
   end
 end
 
-file "_includes/copyright.html" do |t|
+file "_includes/copyright.html" => "package.json" do |t|
   genenerate_copyright_file(t.name, "<!--", "  ", "-->")
 end
 
-file "_includes/copyright.js" do |t|
+file "_includes/copyright.js" => "package.json" do |t|
   genenerate_copyright_file(t.name, "/*!", " * ", " */")
 end
 
-file "_sass/minimal-mistakes/_copyright.scss" do |t|
+file "_sass/minimal-mistakes/_copyright.scss" => "package.json" do |t|
   genenerate_copyright_file(t.name, "/*!", " * ", " */")
 end
 

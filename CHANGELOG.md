@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
 
 ### Bug Fixes
 
