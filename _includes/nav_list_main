@@ -131,7 +131,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "nlp-tutorial" %}
-                        <li><a href="/categories/nlp-tutorial" class="">딥러닝을 이용한 자연어 처리 입문 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/nlp-tutorial" class="">Deep learning processing natural language processing ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
