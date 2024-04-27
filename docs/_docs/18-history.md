@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-04-26T00:45:40+08:00'
+last_modified_at: '2024-04-28T00:38:38+08:00'
 toc: false
 ---
 
@@ -35,6 +35,7 @@ toc: false
 - GitHub Workflows security hardening [#3884](https://github.com/mmistakes/minimal-mistakes/issues/3884)
 - Replace Font Awesome v5 search page with v6.
 - Try adding an FAQ page.
+- Update remote theme reference in Quick-Start Guide to point to 4.25.0. [#4809](https://github.com/mmistakes/minimal-mistakes/issues/4809)
 
 ## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 
