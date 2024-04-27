@@ -4,6 +4,8 @@ layout: archive
 permalink: categories/nlp-tutorial
 author_profile: true
 sidebar_main: true
+sort_by: order
+sort_order: reverse
 ---
 
 
