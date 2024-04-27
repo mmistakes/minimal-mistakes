@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "딥러닝을 이용한 자연어 처리 - 2"
+date: 2024-04-25
 categories : nlp-tutorial
 tag : [nlp-study, 딥러닝을 이용한 자연어 처리,python]
 toc: true

@@ -28,21 +28,15 @@ author_profile: true
   - PPL은 낮을수록 좋고, 높을수록 안좋음
   - PPL은 문장의 길이로 정규화된 문장 확률의 역수, 문장 확률의 역수, 문장 ![equation](/images/svg.image)의 길이가 ![equation](/images/svg-20240427142822297.image)이라고 했을때 PPL의 수식
 
-    ```
-    $${PPL(W)=P(w_{1}, w_{2}, w_{3}, ... , w_{N})^{-\frac{1}{N}}=\sqrt[N]{\frac{1}{P(w_{1}, w_{2}, w_{3}, ... , w_{N})}}}$$
-    ```
-
-    
-  
   $$
   {PPL(W)=P(w_{1}, w_{2}, w_{3}, ... , w_{N})^{-\frac{1}{N}}=\sqrt[N]{\frac{1}{P(w_{1}, w_{2}, w_{3}, ... , w_{N})}}}
   $$
-  
+
   - 문장의 확률에 체인룰을 적용시
     $$
     PPL(W)=\sqrt[N]{\frac{1}{P(w_{1}, w_{2}, w_{3}, ... , w_{N})}}=\sqrt[N]{\frac{1}{\prod_{i=1}^{N}P(w_{i}| w_{1}, w_{2}, ... , w_{i-1})}}
     $$
-  
+
   - N-gram 적용시 bigram 언어 모델의 경우는 아래와 같음
     $$
     PPL(W)=\sqrt[N]{\frac{1}{\prod_{i=1}^{N}P(w_{i}| w_{i-1})}}
