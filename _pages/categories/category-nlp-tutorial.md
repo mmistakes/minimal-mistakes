@@ -1,5 +1,5 @@
 ---
-title: "딥러닝을 이용한 자연어 처리 입문"
+title: "Deep learning processing natural language processing"
 layout: archive
 permalink: categories/nlp-tutorial
 author_profile: true
