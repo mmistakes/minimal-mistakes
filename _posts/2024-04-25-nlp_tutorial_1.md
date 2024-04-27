@@ -1,12 +1,10 @@
 ---
 layout: single
 title:  "딥러닝을 이용한 자연어 처리 - 1"
-date: 2024-04-25
 categories : nlp-tutorial
 tag : [nlp-study, 딥러닝을 이용한 자연어 처리,python]
 toc: true
 toc_sticky: true
-order: 1
 ---
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=a2dcec&height=300&section=header&text=딥러닝을 이용한 자연어 처리 - 1&fontSize=40&animation=fadeIn&fontAlignY=38&fontColor=FFFFFF)
