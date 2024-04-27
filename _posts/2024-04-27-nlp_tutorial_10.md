@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "딥러닝을 이용한 자연어 처리 - 10"
+title:  "딥러닝을 이용한 자연어 처리-10"
 categories : nlp-tutorial
 tag : [딥러닝을 이용한 자연어 처리, nlp, python]
 toc: true
