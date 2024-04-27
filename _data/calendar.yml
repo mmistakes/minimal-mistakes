@@ -1,74 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A5 - Bibliothek ",
-    "title": "Ausflug A5 - Bibliothek ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDhhYmpmb20yMXU1aWpmMDlsMnJra2I2ZHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-26T07:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-26T11:30:00+02:00"
-    },
-    "created": "2024-04-11T05:23:08.000Z",
-    "updated": "2024-04-11T05:23:08.462Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug 6a - Futurium ",
-    "title": "Ausflug 6a - Futurium ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N3RxOXBnMzFoZWt1cm1iZnJ2ZGpsYzFoMDIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-26T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-26T13:30:00+02:00"
-    },
-    "created": "2024-04-22T09:09:56.000Z",
-    "updated": "2024-04-22T09:09:56.249Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A8 - Futurium",
-    "title": "Ausflug A8 - Futurium",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmJndmFqMnE2cmwwMWo2Mjk3OXRqZmxucTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-26T08:45:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-26T12:45:00+02:00"
-    },
-    "created": "2024-04-22T09:10:43.000Z",
-    "updated": "2024-04-22T09:10:43.688Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A1 - Gartenarbeitsschule",
-    "title": "Ausflug A1 - Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDZhZjR0MGw4c2NhajZrNDJrNHRrbHJoaTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-04-26T10:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-04-26T13:00:00+02:00"
-    },
-    "created": "2024-04-22T09:11:30.000Z",
-    "updated": "2024-04-22T09:11:30.417Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A3 - Bibliothek",
     "title": "Ausflug A3 - Bibliothek",
     "excerpt": null,
@@ -100,5 +32,73 @@
     },
     "created": "2024-04-11T05:28:58.000Z",
     "updated": "2024-04-11T05:28:58.157Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Demokratie-Tag",
+    "title": "Demokratie-Tag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YmY3bmM4c2J2NnU3bHJtbmxua2FxOWw4YTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-05-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-05-24",
+      "date_time": null
+    },
+    "created": "2024-04-07T10:00:01.000Z",
+    "updated": "2024-04-07T10:00:01.489Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
+    "title": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGN1MnVkdW80dXMzN21nb3A2Y2VjNDRvOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-28T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-28T13:00:00+02:00"
+    },
+    "created": "2024-01-31T12:17:25.000Z",
+    "updated": "2024-01-31T12:17:25.559Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A3 - Zoo",
+    "title": "Ausflug A3 - Zoo",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWxncnQ3OGpnYnEwMzBuajRpa25rNnZrM3YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-06T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-06T13:00:00+02:00"
+    },
+    "created": "2024-04-15T08:23:55.000Z",
+    "updated": "2024-04-15T08:23:55.637Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
+    "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NHFqb282MzI5MmtsdWRncjlnZmxybmRjc2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-02T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-02T12:00:00+02:00"
+    },
+    "created": "2024-02-21T09:45:46.000Z",
+    "updated": "2024-02-21T09:45:46.470Z"
   }
 ]
