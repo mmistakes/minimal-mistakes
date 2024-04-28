@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Ashe ma\'iingan\'s ML Engineer blog"
+title                    : "Ashe ma'iingan's ML Engineer blog"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Ashe ma\'iingan"
-description              : "Ashe ma\'iingan\'s ML Engineer blog"
+name                     : "Ashe ma'iingan"
+description              : "Ashe ma'iingan's ML Engineer blog"
 url                      : "https://thetjswo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,8 +104,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ashe Ma\'iingan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Ashe Ma'iingan"
+  avatar           : "/assets/images/profile.png"
   bio              : "Don't be impatient, but prepare diligently."
   location         : "South Korea"
   email            : "tjswodi96@gmail.com"
