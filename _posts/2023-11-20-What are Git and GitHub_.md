@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "What are Git and GitHub?"
-categories: AI 기술 블로그
+categories: AI
 tag: [git, github, gitblog]
 toc: true
 author_profile: false
