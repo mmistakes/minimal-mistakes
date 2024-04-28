@@ -127,8 +127,8 @@ author:
 footer:
   links:
     - label: "LinkedIn"
-          icon: "fas fa-fw fa-link"
-          url: "https://www.linkedin.com/in/seonjae-lee-b18b93299/"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.linkedin.com/in/seonjae-lee-b18b93299/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/thetjswo"
