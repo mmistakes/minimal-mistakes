@@ -20,7 +20,7 @@ title                    : "Ashe's ML Engineer blog"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ashe ma'iingan"
-description              : "Ashe ma'iingan의 블로그 입니다."
+description              : "선재의 머신러닝 기술 블로그 입니다."
 url                      : "https://thetjswo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
