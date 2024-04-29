@@ -2,6 +2,8 @@
 main:
   - title: "HOME"
     url: "/"
+  - title: "Docker"
+    url: /categories/docker/
   - title: "Terraform"
     url: /categories/terraform/
   - title: "AWS"

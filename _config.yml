@@ -249,6 +249,9 @@ collections:
   database:
     output: true
     permalink: /database/:path/  
+  docker:
+    output: true
+    permalink: /docker/:path/
 
 Resources:
   Account:
