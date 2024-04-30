@@ -45,9 +45,8 @@ author_profile: false
 <br/>
 
 <p style="text-align:center;">
-     <p style="display:flex; align-items:center;">
-          <img src="/assets/brain.png" width="80" height="40" />
-          <b style="margin-left:10px;">
+     <p style="display:flex; align-items:left;">
+          <b>
                RBC: An open resource for studies of the developing brain and mental health
           </b>
      </p>
@@ -57,9 +56,8 @@ author_profile: false
           To accelerate this effort, RBC aggregates several of the largest studies of brain development in youth as publicly available data resource for the scientific community.
      </p>
      <br>
-     <p style="display:flex; align-items:center;">
-          <img src="/assets/harmony.png" width="80" height="40" />
-          <b style="margin-left:10px;">
+     <p style="display:flex; align-items:left;">
+          <b>
                A harmonized data resource
           </b>
      </p>
@@ -71,9 +69,8 @@ author_profile: false
           This allows scientists to skip such time-consuming steps and make discoveries faster.
      </p>
      <br>
-     <p style="display:flex; align-items:center;">
-          <img src="/assets/repro.png" width="80" height="40" />
-          <b style="margin-left:10px;">
+     <p style="display:flex; align-items:left;">
+          <b>
                Reproducible and open science
           </b>
      </p>
@@ -84,10 +81,3 @@ author_profile: false
      </p>
      <br>
 </p>
-
-
-## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Recent activity [![Time period](https://images.repography.com/37080325/kahinimehta/mobilephenomicsdoc/recent-activity/RaosstSYqAhiIBmdQeXJQwku1DLQ1pnfqmuYuyV-_Wg/HwxLAHX_8XdVihvP5ZxY-LaaVQ1TH5Y7GyQCJAMp7h0_badge.svg)](https://repography.com)
-
-[![Timeline graph](https://images.repography.com/37080325/kahinimehta/mobilephenomicsdoc/recent-activity/RaosstSYqAhiIBmdQeXJQwku1DLQ1pnfqmuYuyV-_Wg/HwxLAHX_8XdVihvP5ZxY-LaaVQ1TH5Y7GyQCJAMp7h0_timeline.svg)](https://github.com/kahinimehta/mobilephenomicsdoc/commits)
-
-[![Activity map](https://images.repography.com/37080325/kahinimehta/mobilephenomicsdoc/recent-activity/RaosstSYqAhiIBmdQeXJQwku1DLQ1pnfqmuYuyV-_Wg/HwxLAHX_8XdVihvP5ZxY-LaaVQ1TH5Y7GyQCJAMp7h0_map.svg)](https://github.com/kahinimehta/mobilephenomicsdoc/commits)
