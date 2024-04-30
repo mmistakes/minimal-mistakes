@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Ausflug 6b - Gleisdreieck",
+    "title": "Ausflug 6b - Gleisdreieck",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWdqN2poajhhdmgxbDlsanY5cDNmbmlwaXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-04-30T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-04-30T13:30:00+02:00"
+    },
+    "created": "2024-04-29T09:00:57.000Z",
+    "updated": "2024-04-29T09:00:57.490Z"
+  },
+  {
+    "image_path": null,
     "alt": "Ausflug A3 - Bibliothek",
     "title": "Ausflug A3 - Bibliothek",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-04-15T08:23:55.000Z",
     "updated": "2024-04-15T08:23:55.637Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
-    "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHFqb282MzI5MmtsdWRncjlnZmxybmRjc2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-02T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-02T12:00:00+02:00"
-    },
-    "created": "2024-02-21T09:45:46.000Z",
-    "updated": "2024-02-21T09:45:46.470Z"
   }
 ]
