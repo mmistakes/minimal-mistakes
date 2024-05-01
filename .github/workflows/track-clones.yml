@@ -47,7 +47,7 @@ jobs:
       - name: Run fetch.py
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
-        run: python scripts/fetch.py ${{ matrix.repo }}
+        run: python scripts/clone-tracking/fetch.py ${{ matrix.repo }}
       - name: Commit download statistics
         run: |
           git config --global user.name 'tsalo'
