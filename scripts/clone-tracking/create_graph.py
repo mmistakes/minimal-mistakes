@@ -1,15 +1,27 @@
 """Create a dashboard showing clone statistics over time."""
 
+import os
+
 import pandas as pd
 from bokeh.layouts import Spacer, column, row
 from bokeh.models import ColumnDataSource, CustomJS, DatetimeTickFormatter, Select
 from bokeh.plotting import curdoc, figure, output_file, show
 
 if __name__ == "__main__":
-    out_file = "../../assets/dashboard.html"
+    script_dir = os.path.dirname(__file__)
+    stats_dir = os.path.join(script_dir, "../../_data/clone-tracking")
+
+    out_file = os.path.abspath(os.path.join(script_dir, "../../assets/dashboard.html"))
     output_file(out_file)
 
-    df = pd.read_csv("../../_data/clone-tracking/cumulative/all_repos_cumulative.csv")
+    df = pd.read_csv(
+        os.path.abspath(
+            os.path.join(
+                script_dir,
+                "../../_data/clone-tracking/cumulative/all_repos_cumulative.csv",
+            )
+        )
+    )
     df["date"] = pd.to_datetime(df["date"])
     REPOS = list(df)[1:]
 

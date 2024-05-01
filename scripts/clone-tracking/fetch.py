@@ -13,6 +13,7 @@ from github import Github
 def main():
     """Fetch download statistics for a GitHub repository and output to a directory."""
     args = parse_args()
+    print(f"Fetching clone statistics for {args.repo}...")
     token = os.environ.get("SECRET_TOKEN")
     g = Github(token)
     repo = g.get_repo(args.repo)
@@ -20,7 +21,8 @@ def main():
     df_clones = clones_to_df(fetch_clones(repo))
     owner_name, repo_name = args.repo.split("/")
 
-    stats_dir = "../../_data/clone-tracking"
+    script_dir = os.path.dirname(__file__)
+    stats_dir = os.path.abspath(os.path.join(script_dir, "../../_data/clone-tracking"))
     daily_dir = "daily"
     cum_dir = "cumulative"
 
