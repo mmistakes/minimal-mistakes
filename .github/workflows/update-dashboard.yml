@@ -1,0 +1,34 @@
+name: Update Clone Dashboard
+on:
+  schedule:
+      # Run this once per day, towards the end of the day for keeping the most
+      # recent data point most meaningful (hours are interpreted in UTC).
+      - cron: "0 23 * * *"
+  workflow_dispatch: # Allow for running this manually.
+permissions:
+  contents: write
+jobs:
+  update_dashboard:
+    runs-on: ubuntu-latest
+    if: github.repository == 'ReproBrainChart/ReproBrainChart.github.io' && github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python version
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          pip3 install PyGithub
+          python -m pip install --upgrade pip pandas
+          pip install bokeh
+      - name: Run create_graph.py
+        run: python create_graph.py
+      - name: Commit changes
+        run: |
+          git config --global user.name 'tsalo'
+          git config --global user.email ${{ secrets.EMAIL }}
+          git add -A
+          git commit -am "Update dashboard"
+      - name: Push changes
+        run: git push

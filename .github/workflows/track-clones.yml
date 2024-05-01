@@ -1,0 +1,60 @@
+name: Track Dataset Repository Clones
+on:
+  schedule:
+      # Run this once per day, towards the end of the day for keeping the most
+      # recent data point most meaningful (hours are interpreted in UTC).
+      - cron: "0 21 * * *"
+  workflow_dispatch: # Allow for running this manually.
+permissions:
+  contents: write
+jobs:
+  track_clones:
+    strategy:
+      matrix:
+        repo:
+          - ReproBrainChart/BHRC_BIDS
+          - ReproBrainChart/BHRC_CPAC
+          - ReproBrainChart/BHRC_FreeSurfer
+          - ReproBrainChart/CCNP_BIDS
+          - ReproBrainChart/CCNP_CPAC
+          - ReproBrainChart/CCNP_FreeSurfer
+          - ReproBrainChart/HBN_BIDS
+          - ReproBrainChart/HBN_CPAC
+          - ReproBrainChart/HBN_FreeSurfer
+          - ReproBrainChart/HBN_XCP
+          - ReproBrainChart/NKI_BIDS
+          - ReproBrainChart/NKI_CPAC
+          - ReproBrainChart/NKI_FreeSurfer
+          - ReproBrainChart/PACCT_BIDS
+          - ReproBrainChart/PACCT_CPAC
+          - ReproBrainChart/PNC_BIDS
+          - ReproBrainChart/PNC_CPAC
+          - ReproBrainChart/PNC_FreeSurfer
+    runs-on: ubuntu-latest
+    if: github.repository == 'ReproBrainChart/ReproBrainChart.github.io' && github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python version
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          pip3 install PyGithub
+          python -m pip install --upgrade pip pandas
+      - name: Pull any download-stats changes
+        run: git pull
+      - name: Run fetch.py
+        env:
+          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+        run: python fetch.py ${{ matrix.repo }}
+      - name: Commit download statistics
+        run: |
+          git config --global user.name 'tsalo'
+          git config --global user.email ${{ secrets.EMAIL }}
+          git add -A
+          git commit -am "Update download statistics"
+      - name: Push download statistics
+        run: |
+          git pull --rebase
+          git push

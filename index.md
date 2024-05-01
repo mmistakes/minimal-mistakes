@@ -81,3 +81,5 @@ author_profile: false
      </p>
      <br>
 </p>
+
+<iframe src="/assets/dashboard.html" width="100%" height="500px"></iframe>
