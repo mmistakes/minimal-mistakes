@@ -3,7 +3,7 @@ on:
   schedule:
       # Run this once per day, towards the end of the day for keeping the most
       # recent data point most meaningful (hours are interpreted in UTC).
-      - cron: "0 21 * * *"
+      - cron: "0 22 * * *"
   workflow_dispatch: # Allow for running this manually.
 permissions:
   contents: write
@@ -47,7 +47,7 @@ jobs:
       - name: Run fetch.py
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
-        run: python fetch.py ${{ matrix.repo }}
+        run: python scripts/fetch.py ${{ matrix.repo }}
       - name: Commit download statistics
         run: |
           git config --global user.name 'tsalo'

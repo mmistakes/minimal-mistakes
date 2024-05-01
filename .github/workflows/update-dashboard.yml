@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip pandas
           pip install bokeh
       - name: Run create_graph.py
-        run: python create_graph.py
+        run: python scripts/create_graph.py
       - name: Commit changes
         run: |
           git config --global user.name 'tsalo'
