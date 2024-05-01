@@ -18,7 +18,6 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "보겸 블로그"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kim Bogyeom"
 description              : "공부한 것을 정리하고 복습하는 곳"
 url                      : "https://bogamie.github.io"
@@ -218,7 +217,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 15 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

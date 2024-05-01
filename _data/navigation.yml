@@ -1,10 +1,18 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "About"
     url: /about/
   - title: "Category"
     url: /categories/
-  # - title: "Post"
-  #   url: /post/
-  - title: "Home"
-    url: /
+  - title: "Post"
+    url: /post/
+  
+social:
+  - icon: "fab fa-fw fa-instagram"
+    url: "https://www.instagram.com/bok_yeom"
+  - icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:bogamie02@gmail.com"
+  - icon: "fab fa-fw fa-github"
+    url: "https://github.com/Bogamie"

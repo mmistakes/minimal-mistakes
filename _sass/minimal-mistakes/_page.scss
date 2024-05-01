@@ -13,7 +13,7 @@
   max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
-
+  background-color: bisque;
   @include breakpoint($x-large) {
     max-width: $max-width;
   }
@@ -48,7 +48,8 @@ body {
   }
 
   .page__inner-wrap {
-    float: left;
+  background-color: brown;
+  float: left;
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;

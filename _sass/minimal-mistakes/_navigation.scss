@@ -17,7 +17,7 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-
+  
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
@@ -506,7 +506,7 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  background-color: $background-color;
+  // background-color: $background-color;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
