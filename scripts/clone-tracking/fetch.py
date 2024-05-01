@@ -15,9 +15,9 @@ def main(repo):
     print(f"Fetching clone statistics for {repo}...")
     token = os.environ.get("SECRET_TOKEN")
     g = Github(token)
-    repo = g.get_repo(repo)
+    repoobj = g.get_repo(repo)
 
-    df_clones = clones_to_df(fetch_clones(repo))
+    df_clones = clones_to_df(fetch_clones(repoobj))
     owner_name, repo_name = repo.split("/")
 
     script_dir = os.path.dirname(__file__)
