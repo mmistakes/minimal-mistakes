@@ -9,27 +9,6 @@ permissions:
   contents: write
 jobs:
   track_clones:
-    strategy:
-      matrix:
-        repo:
-          - ReproBrainChart/BHRC_BIDS
-          - ReproBrainChart/BHRC_CPAC
-          - ReproBrainChart/BHRC_FreeSurfer
-          - ReproBrainChart/CCNP_BIDS
-          - ReproBrainChart/CCNP_CPAC
-          - ReproBrainChart/CCNP_FreeSurfer
-          - ReproBrainChart/HBN_BIDS
-          - ReproBrainChart/HBN_CPAC
-          - ReproBrainChart/HBN_FreeSurfer
-          - ReproBrainChart/HBN_XCP
-          - ReproBrainChart/NKI_BIDS
-          - ReproBrainChart/NKI_CPAC
-          - ReproBrainChart/NKI_FreeSurfer
-          - ReproBrainChart/PACCT_BIDS
-          - ReproBrainChart/PACCT_CPAC
-          - ReproBrainChart/PNC_BIDS
-          - ReproBrainChart/PNC_CPAC
-          - ReproBrainChart/PNC_FreeSurfer
     runs-on: ubuntu-latest
     if: github.repository == 'ReproBrainChart/ReproBrainChart.github.io' && github.ref == 'refs/heads/master'
     steps:
@@ -47,7 +26,7 @@ jobs:
       - name: Run fetch.py
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
-        run: python scripts/clone-tracking/fetch.py ${{ matrix.repo }}
+        run: python scripts/clone-tracking/fetch.py
       - name: Commit download statistics
         run: |
           git config --global user.name 'tsalo'

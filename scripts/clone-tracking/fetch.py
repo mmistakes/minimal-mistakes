@@ -10,16 +10,15 @@ import pandas as pd
 from github import Github
 
 
-def main():
+def main(repo):
     """Fetch download statistics for a GitHub repository and output to a directory."""
-    args = parse_args()
-    print(f"Fetching clone statistics for {args.repo}...")
+    print(f"Fetching clone statistics for {repo}...")
     token = os.environ.get("SECRET_TOKEN")
     g = Github(token)
-    repo = g.get_repo(args.repo)
+    repo = g.get_repo(repo)
 
     df_clones = clones_to_df(fetch_clones(repo))
-    owner_name, repo_name = args.repo.split("/")
+    owner_name, repo_name = repo.split("/")
 
     script_dir = os.path.dirname(__file__)
     stats_dir = os.path.abspath(os.path.join(script_dir, "../../_data/clone-tracking"))
@@ -78,7 +77,7 @@ def main():
 
     # update overall cumulative stats across all repos
     overall_cum_path = os.path.join(stats_dir, cum_dir, "all_repos_cumulative.csv")
-    update_overall_cumulative(df_cum, overall_cum_path, args.repo)
+    update_overall_cumulative(df_cum, overall_cum_path, repo)
 
 
 def update_overall_cumulative(df_add, path, repo_name):
@@ -163,21 +162,26 @@ def fetch_clones(repo):
     return clones["clones"]
 
 
-def parse_args():
-    """Parse command-line arguments."""
-    parser = argparse.ArgumentParser(
-        description="Requires the environment variable SECRET_TOKEN to be set.",
-    )
-
-    parser.add_argument(
-        "repo",
-        metavar="REPOSITORY",
-        help="Owner and repository. Must contain a slash. Example: owner/repository",
-    )
-
-    args = parser.parse_args()
-    return args
-
-
 if __name__ == "__main__":
-    main()
+    repos = [
+        "ReproBrainChart/BHRC_BIDS",
+        "ReproBrainChart/BHRC_CPAC",
+        "ReproBrainChart/BHRC_FreeSurfer",
+        "ReproBrainChart/CCNP_BIDS",
+        "ReproBrainChart/CCNP_CPAC",
+        "ReproBrainChart/CCNP_FreeSurfer",
+        "ReproBrainChart/HBN_BIDS",
+        "ReproBrainChart/HBN_CPAC",
+        "ReproBrainChart/HBN_FreeSurfer",
+        "ReproBrainChart/HBN_XCP",
+        "ReproBrainChart/NKI_BIDS",
+        "ReproBrainChart/NKI_CPAC",
+        "ReproBrainChart/NKI_FreeSurfer",
+        "ReproBrainChart/PACCT_BIDS",
+        "ReproBrainChart/PACCT_CPAC",
+        "ReproBrainChart/PNC_BIDS",
+        "ReproBrainChart/PNC_CPAC",
+        "ReproBrainChart/PNC_FreeSurfer",
+    ]
+    for repo in repos:
+        main(repo)
