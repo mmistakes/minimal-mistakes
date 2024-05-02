@@ -1,7 +1,7 @@
 ---
 title: 'Helmi Software Update'
-date: 2024-04-01
-permalink: /_posts/2024-04-01-Helmi-SW-update/
+date: 2024-04-23
+permalink: /_posts/2024-04-23-Helmi-SW-update/
 header:
   teaser: /assets/images/update.png
 published: true
