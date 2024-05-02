@@ -3,7 +3,7 @@ title: 'Helmi Software Update'
 date: 2023-07-17
 permalink: /_posts/2023-07-17-Helmi-SW-update/
 header:
-  teaser: /assets/images/access-icon.png
+  teaser: /assets/images/update.png
 published: true
 layout: single
 tags:

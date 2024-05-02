@@ -31,7 +31,7 @@ intro:
 
 <!-- <center>Helmi 🟢 </center> -->
 
-Helmi is accessible through the LUMI environment daily between 00:00 EET and 23:59 EET.
+Helmi is accessible through the LUMI environment daily.
 {: .notice--info}
 
 <center>

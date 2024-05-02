@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "The FiQCI consortium"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "We develop FiQCI"
+  bio              : "We provide state-of-the-art quantum-computing services to Finnish RDI communities"
   location         : "Finland"
   email            :
   links:
