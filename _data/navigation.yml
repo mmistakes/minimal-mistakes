@@ -6,6 +6,8 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+  - title: "Search"
+    url: /search/
 
 
 docs:
@@ -17,6 +19,8 @@ docs:
         url: /tags/
       - title: "About"
         url: /about/
+      - title: "Search"
+        url: /search/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
