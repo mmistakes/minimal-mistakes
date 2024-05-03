@@ -2,7 +2,7 @@
 title: On AI Replacing Programmers
 ---
 
-Once enough gray-haired people in Washington DC had installed chatGPT on their phone, they became collectively conscious that this generative AI thing isn’t a fad. Then they got on the fearmongering bandwagon claiming that artificial general intelligence (AGI) is around the corner (and needs a lot of regulations), and overnight armies of consultants became experts on the topic of how to defend ourselves against this existential threat.
+Once enough gray-haired people in Washington DC had installed ChatGPT on their phone, they became collectively conscious that this generative AI thing isn’t a fad. Then they got on the fearmongering bandwagon claiming that artificial general intelligence (AGI) is around the corner (and needs a lot of regulations), and overnight armies of consultants became experts on the topic of how to defend ourselves against this existential threat.
 
 Meanwhile, the NVIDIA stock skyrocketed, Tesla tanked (along with investments in ESG), the US Fed interest rates remained high (along with the USD), and VC firm Andreessen Horowitz raised billions of dollars to invest in AI. Welcome to May of 2024!
 
@@ -10,7 +10,7 @@ Lately, another linear projection entered the echo chambers:
 
 > AI is about to replace programmers, so a degree from MIT in Computer Science is worse than it used to be.
 
-Might as well drop out and be the next Zuckerberg equipped with our trusted chatGPT offering us a competitive edge! ^_^
+Might as well drop out and be the next Zuckerberg equipped with our trusted ChatGPT offering us a competitive edge! ^_^
 
 Sarcasm aside, I think that there is definitely truth to the statement that AI is dramatically changing how we innovate, and that programmers' jobs are fundamentally changing.
 
