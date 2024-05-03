@@ -1,6 +1,14 @@
 require "bundler/gem_tasks"
 require "jekyll"
+require "json"
 require "listen"
+require "rake/clean"
+require "time"
+require "yaml"
+
+task :default => [:copyright, :changelog]
+
+package_json = JSON.parse(File.read("package.json"))
 
 def listen_ignore_paths(base, options)
   [
@@ -74,3 +82,71 @@ task :preview do
 
   Jekyll::Commands::Serve.process(options)
 end
+
+task :changelog => "docs/_docs/18-history.md"
+file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
+  front_matter = {
+    title: "History",
+    classes: "wide",
+    permalink: "/docs/history/",
+    excerpt: "Change log of enhancements and bug fixes made to the theme.",
+    sidebar: {
+      nav: "docs",
+    },
+    last_modified_at: Time.now.iso8601,
+    toc: false,
+  }
+  # https://stackoverflow.com/a/49553523/5958455
+  front_matter = JSON.parse(JSON.dump(front_matter))
+  File.open(t.name, "w") do |f|
+    f.puts front_matter.to_yaml
+    f.puts "---"
+    f.puts ""
+    f.puts "<!--\n  Sourced from CHANGELOG.md\n  See Rakefile `task :changelog` for details\n-->"
+    f.puts ""
+    f.puts "{% raw %}"
+    changelog = File.read(t.prerequisites.first).gsub(/^# [^\n]*$/m, "").strip
+    f.write changelog
+    f.puts ""
+    f.puts "{% endraw %}"
+  end
+end
+
+COPYRIGHT_LINES = [
+  "Minimal Mistakes Jekyll Theme #{package_json["version"]} by Michael Rose",
+  "Copyright 2013-#{Time.now.year} Michael Rose - mademistakes.com | @mmistakes",
+  "Free for personal and commercial use under the MIT license",
+  "https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE",
+]
+
+COPYRIGHT_FILES = [
+  "_includes/copyright.html",
+  "_includes/copyright.js",
+  "_sass/minimal-mistakes/_copyright.scss",
+]
+
+def genenerate_copyright_file(filename, header, prefix, footer)
+  File.open(filename, "w") do |f|
+    f.puts header
+    COPYRIGHT_LINES.each do |line|
+      f.puts "#{prefix}#{line}"
+    end
+    f.puts footer
+  end
+end
+
+file "_includes/copyright.html" => "package.json" do |t|
+  genenerate_copyright_file(t.name, "<!--", "  ", "-->")
+end
+
+file "_includes/copyright.js" => "package.json" do |t|
+  genenerate_copyright_file(t.name, "/*!", " * ", " */")
+end
+
+file "_sass/minimal-mistakes/_copyright.scss" => "package.json" do |t|
+  genenerate_copyright_file(t.name, "/*!", " * ", " */")
+end
+
+task :copyright => COPYRIGHT_FILES
+
+CLEAN.include(*COPYRIGHT_FILES)
