@@ -6,7 +6,9 @@ Once enough gray-haired people in Washington DC had installed chatGPT on their p
 
 Meanwhile, the NVIDIA stock skyrocketed, Tesla tanked (along with investments in ESG), the US Fed interest rates remained high (along with the USD), and VC firm Andreessen Horowitz raised billions of dollars to invest in AI. Welcome to May of 2024!
 
-Lately, another linear projection entered the echo chambers (it even showed up on one of my MIT Alumni WhatsApp groups!): AI is about to replace programmers, so a degree from MIT in Computer Science (Course 6) is worse than it used to be.
+Lately, another linear projection entered the echo chambers:
+
+> AI is about to replace programmers, so a degree from MIT in Computer Science is worse than it used to be.
 
 Might as well drop out and be the next Zuckerberg equipped with our trusted chatGPT offering us a competitive edge! ^_^
 
