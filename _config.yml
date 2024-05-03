@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Ashe's ML Engineer blog"
+title                    : "Ashe ma'iingan"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "ML Engineer blog"
 name                     : "Ashe ma'iingan"
 description              : "선재의 머신러닝 기술 블로그 입니다."
 url                      : "https://thetjswo.github.io"
