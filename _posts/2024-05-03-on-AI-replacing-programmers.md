@@ -22,7 +22,7 @@ But fear not, you might say, you just need a bigger context window! So according
 
 Yet, this doesn't mean the fundamental skills of software engineering will become obsolete any time soon. Drawing a parallel with calculators, which didn't eliminate the need to understand basic arithmetic, the core principles of computer science still hold significant educational and practical value. This ongoing relevance is essential, even as the role of software engineers may evolve towards more oversight and review in light of AI-generated code.
 
-Do you know of a CEO of a Fortune 500 corporation who would accept that the code running their critical infrastructure hasn’t been reviewed by humans? In health care? In finance? In mining? In energy? In construction? I highly doubt that. In fact, we might generate more code now and will no longer need 20M hands on developers worldwide, but rather 100-200M “code reviewers”.
+Do you know of a CEO of a Fortune 500 corporation who would accept that the code running their critical infrastructure hasn’t been reviewed by humans? In health care? In finance? In mining? In energy? In construction? I highly doubt that. In fact, we might generate more code now and will no longer need 20M hands-on developers worldwide, but rather 100-200M code-reviewing developers.
 
 The current trend of layoffs and shrinking job openings in tech may be caused by AI advancements but could be influenced by economic strategies and public perceptions. Similar to past shifts in industries like automotive manufacturing, where job dynamics changed due to economic pressures and global competition, the tech industry might be experiencing a redistribution of roles, enabling more global participation and potentially leveling salary scales.
 
