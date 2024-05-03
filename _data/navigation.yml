@@ -6,6 +6,15 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+
+
+docs:
+  - title: "Menu"
+    children:
+      - title: "Categories"
+        url: /categories/
+      - title: "Tags"
+        url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
