@@ -82,5 +82,3 @@ I once heard a tongue in cheek comment that the best salespeople have credit car
 Perhaps part of the reason why I'm good at selling is that when I do,  I do it for fun and not by necessity. It's something that is interesting. It's a puzzle to solve, and the act of tinkering with it is rewarding in and of itself.
 
 I hope that this was somehow insightful to you. I welcome new ideas and approaches to selling.
-
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*

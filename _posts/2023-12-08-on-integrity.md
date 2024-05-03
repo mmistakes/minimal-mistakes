@@ -87,5 +87,3 @@ Overtime as you accumulate these stories and as you make integrity part of who y
 This confidence allows you to be more consistent and authentic in everything that you do. You will be able to think on the spot from first principles and arrive at efficient decision making.
 
 If you aspire to change the world and intend to get people to rally behind your cause, I wish you good luck, but even more importantly, I wish you courage to have a deep sense of integrity that is as strong as how it is defined in the Stanford Business School's leadership assessment.
-
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*

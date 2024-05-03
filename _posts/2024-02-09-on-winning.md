@@ -21,7 +21,3 @@ A better strength is to not be afraid of losing.
 To not be afraid of losing means that you're confident that even in loss, you will learn. And that your identity is much more about improving and much more about putting in efforts to position yourself such that you survive another day, help others around you, and make the best out of the situations and the environment you're in.
 
 That's a stronger mindset.
-
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to help generate markdown tables, check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
-
-

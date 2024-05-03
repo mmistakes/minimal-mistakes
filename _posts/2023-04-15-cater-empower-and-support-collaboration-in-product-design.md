@@ -32,5 +32,3 @@ For example, in product management software, I'd like to see ticket reassignment
 ---
 
 I hope these three principles will help you craft products that foster trust and accelerate team collaboration. Good luck, fellow designers!
-
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*

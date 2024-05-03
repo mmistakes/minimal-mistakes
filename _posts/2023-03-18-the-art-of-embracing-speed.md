@@ -22,5 +22,3 @@ For startups, apply this approach and aim for positive unit economics and iterat
 Make sure variable costs are lower than variable revenue and achieve positive unit economics this way.
 
 I hope this helps. Good luck!
-
-*Disclaimer: this was not written by artificial intelligence (e.g., an LLM). I did use it, however, to check my syntax and small errors to improve readability. I prefer to avoid it as much as possible to stay more authentic and credible.*
