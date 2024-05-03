@@ -12,11 +12,13 @@ Lately, another linear projection entered the echo chambers:
 
 Might as well drop out and be the next Zuckerberg equipped with our trusted chatGPT offering us a competitive edge! ^_^
 
-Sarcasm aside. I think that there is definitely truth to the statement that AI is dramatically changing how we innovate, and that programmers' jobs are fundamentally changing.
+Sarcasm aside, I think that there is definitely truth to the statement that AI is dramatically changing how we innovate, and that programmers' jobs are fundamentally changing.
 
 First, it’s true that “anyone can code” now. For instance, have a look at this conversation I had with [ChatGPT 4](https://chat.openai.com/share/dc36a453-76c1-4469-824b-ee95c0c1c924). It’s worth reading it, I promise. ChatGPT 4 is so confident in its abilities! Unlike those pesky programmers, it doesn’t push back and it generates hundreds of lines of code per hour.
 
-Now, do you think it runs? It turns out it doesn’t. It’s too complicated. And today, I will still need a team of developers and the cost to build the prototype for this app will be around 50K for a barebone app. But fear not, you might say, you just need a bigger context window! So according to this argument, the only real competitive advantage in the world will be the size of the context window available to your organization. I do agree that large context windows are highly valuable.
+Now, do you think it runs? It turns out it doesn’t. It’s too complicated. And today, I will still need a team of developers and the cost to build the prototype for this app will be around 50K for a barebone app.
+
+But fear not, you might say, you just need a bigger context window! So according to this argument, the only real competitive advantage in the world will be the size of the context window available to your organization. I do agree that large context windows are highly valuable.
 
 Yet, this doesn't mean the fundamental skills of software engineering will become obsolete any time soon. Drawing a parallel with calculators, which didn't eliminate the need to understand basic arithmetic, the core principles of computer science still hold significant educational and practical value. This ongoing relevance is essential, even as the role of software engineers may evolve towards more oversight and review in light of AI-generated code.
 
