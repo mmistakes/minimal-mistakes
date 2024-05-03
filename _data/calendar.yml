@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A3 - Bibliothek",
-    "title": "Ausflug A3 - Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDBoMGF2NTg3N2YzdDNtdnVhb2RoNDNjMjYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-02T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-02T10:30:00+02:00"
-    },
-    "created": "2024-03-20T10:50:28.000Z",
-    "updated": "2024-03-20T10:50:28.208Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A7 - Südpark",
     "title": "Ausflug A7 - Südpark",
     "excerpt": null,
@@ -35,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "Brückentag: Schule und Hort geschlossen",
+    "title": "Brückentag: Schule und Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=aWgyZmdyNm51dDBjNDcxbGVia2U5azlqYTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-05-10",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-05-11",
+      "date_time": null
+    },
+    "created": "2024-05-02T03:27:49.000Z",
+    "updated": "2024-05-02T03:27:49.347Z"
+  },
+  {
+    "image_path": null,
     "alt": "Ausflug A2 - Gartenarbeitsschule",
     "title": "Ausflug A2 - Gartenarbeitsschule",
     "excerpt": null,
@@ -49,6 +49,23 @@
     },
     "created": "2024-04-11T05:28:58.000Z",
     "updated": "2024-04-11T05:28:58.157Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Feiertag",
+    "title": "Feiertag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=dnQ5cXBrdW5wc2plYmlxaGRiaW9xcmljNDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-05-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-05-21",
+      "date_time": null
+    },
+    "created": "2024-05-02T03:29:03.000Z",
+    "updated": "2024-05-02T03:29:10.625Z"
   },
   {
     "image_path": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-04-30T07:28:43.000Z",
     "updated": "2024-04-30T07:28:43.458Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Demokratie-Tag",
-    "title": "Demokratie-Tag",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YmY3bmM4c2J2NnU3bHJtbmxua2FxOWw4YTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-05-23",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-05-24",
-      "date_time": null
-    },
-    "created": "2024-04-07T10:00:01.000Z",
-    "updated": "2024-04-07T10:00:01.489Z"
   }
 ]
