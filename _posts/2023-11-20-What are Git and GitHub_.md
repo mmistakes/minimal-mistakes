@@ -6,7 +6,7 @@ tag: [git, github, gitblog]
 toc: true
 author_profile: false
 sidebar:
-  nav: "docs"
+    nav: "docs"
 ---
 
 <head>
