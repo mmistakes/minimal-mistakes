@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T03:17:32+08:00'
+last_modified_at: '2024-05-05T04:00:39+08:00'
 toc: false
 ---
 
@@ -31,6 +31,7 @@ toc: false
 
 - Rewrite skin previews on `05-configuration.md` in Liquid template.
 - Remove unused classes from `_layouts/single.html`.
+- Migrate npm run scripts to Ruby Rake tasks.
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
 

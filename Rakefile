@@ -3,10 +3,11 @@ require "jekyll"
 require "json"
 require "listen"
 require "rake/clean"
+require "shellwords"
 require "time"
 require "yaml"
 
-task :default => [:copyright, :changelog]
+task :default => [:copyright, :changelog, :js]
 
 package_json = JSON.parse(File.read("package.json"))
 
@@ -73,8 +74,7 @@ task :preview do
         puts "     Halting auto-regeneration."
         exit 0
       end
-
-      loop { sleep 1000 }
+      sleep
     end
   rescue ThreadError
     # You pressed Ctrl-C, oh my!
@@ -151,3 +151,31 @@ end
 task :copyright => COPYRIGHT_FILES
 
 CLEAN.include(*COPYRIGHT_FILES)
+
+JS_FILES = Dir.glob("assets/js/plugins/*.js") + ["assets/js/_main.js"]
+JS_TARGET = "assets/js/main.min.js"
+task :js => JS_TARGET
+file JS_TARGET => JS_FILES do |t|
+  sh Shellwords.join(%w[npx uglifyjs -c -m -o] + [t.name] + t.prerequisites)
+  sh "node banner.js"
+end
+
+task :watch_js do
+  listener = Listen.to(
+    "assets/js",
+    ignore: /main\.min\.js$/,
+  ) do |modified, added, removed|
+    Rake::Task[:js].invoke
+  end
+
+  trap("INT") do
+    listener.stop
+    exit 0
+  end
+
+  begin
+    listener.start
+    sleep
+  rescue ThreadError
+  end
+end
