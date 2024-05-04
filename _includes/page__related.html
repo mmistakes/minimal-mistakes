@@ -1,0 +1,15 @@
+<div class="page__related">
+  {% include before-related.html %}
+  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+  <div class="grid__wrapper">
+    {% assign count = 0 %}
+    {% assign limit = include.limit | default: 4 %}
+    {% for post in include.posts %}
+      {% if post.hidden %}{% continue %}{% endif %}
+      {% if post.id == page.id %}{% continue %}{% endif %}
+      {% if count >= limit %}{% break %}{% endif %}
+      {% assign count = count | plus: 1 %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
