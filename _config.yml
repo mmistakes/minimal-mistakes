@@ -134,17 +134,14 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "VTT"
-      icon: "fas fa-atom fa-lg icon-color-vtt"
-      #img: "/assets/footer-icons/footer-logo-vtt.svg"
+    - label: ""
+      img: "/assets/footer-icons/footer-logo-vtt.jpg"
       url: "https://www.vttresearch.com/en"
-    - label: "CSC"
-      icon: "fas fa-atom fa-lg icon-color-csc"
-      #img: "/assets/footer-icons/footer-logo-csc.svg"
+    - label: ""
+      img: "/assets/footer-icons/footer-logo-csc.svg"
       url: "https://research.csc.fi/"
-    - label: "Aalto University"
-      icon: "fas fa-university fa-lg icon-color-aalto"
-      #img: "/assets/footer-icons/footer-logo-aalto.svg"
+    - label: ""
+      img: "/assets/footer-icons/footer-logo-aalto.png"
       url: "https://www.aalto.fi/en"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"

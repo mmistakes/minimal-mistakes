@@ -1,4 +1,5 @@
-<div class="page__footer-follow">
+<section class="page__footer-follow">
+
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
@@ -7,7 +8,7 @@
     {% if site.footer.links %}
       {% for link in site.footer.links %}
         {% if link.label and link.img %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><svg class="svg-inline--fa fa-w-14 fa-fw" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <img src="{{ link.img | relative_url }}" height="40" width="40"  alt="{{ link.label | default: link.url }}";/></svg> {{ link.label }}</a></li>
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><svg class="svg-inline--fa fa-w-14 fa-fw" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <img src="{{ link.img | relative_url }}" height="90" width="90"  alt="{{ link.label | default: link.url }}";/></svg> {{ link.label }}</a></li>
         {% endif %}
         {% if link.label and link.icon %}
           <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
@@ -19,6 +20,7 @@
       <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
     {% endunless %}
   </ul>
-</div>
+
+</section>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
