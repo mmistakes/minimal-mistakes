@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Enhancements
+
+- Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
+
 ### Documentation
 
 - Rewrite skin previews on `05-configuration.md` in Liquid template.

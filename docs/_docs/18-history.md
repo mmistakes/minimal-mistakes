@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-04T23:32:02+08:00'
+last_modified_at: '2024-05-05T00:00:06+08:00'
 toc: false
 ---
 
@@ -16,6 +16,10 @@ toc: false
 
 {% raw %}
 ## Unreleased
+
+### Enhancements
+
+- Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
 
 ### Documentation
 

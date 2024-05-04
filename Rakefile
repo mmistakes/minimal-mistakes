@@ -83,6 +83,7 @@ task :preview do
   Jekyll::Commands::Serve.process(options)
 end
 
+task :history => :changelog
 task :changelog => "docs/_docs/18-history.md"
 file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
   front_matter = {

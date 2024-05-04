@@ -276,7 +276,7 @@ defaults:
 
 To disable reading time for a post, add `read_time: false` to its YAML Front Matter to override what was set in `_config.yml`.
 
-`words_per_minute` can also be adjusted per-page basis by adding to its YAML Front Matter. This is useful for sites with multi-lingual content where you'd like specify a different value from the site config.
+`words_per_minute` can also be adjusted on a per-page basis by adding to its YAML Front Matter. This is useful for sites with multi-lingual content where you'd like specify a different value from the site config.
 
 ```yaml
 words_per_minute: 250
@@ -327,7 +327,7 @@ defaults:
 
 If you add `comments: false` to a post's YAML Front Matter it will override the default and disable comments for just that post.
 
-**Note:** Comments are disabled by default in `development`. To enable when testing/building locally be sure to set
+**Note:** Comments are disabled in `development`. To enable when testing/building locally be sure to set
 `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--info}
 
@@ -760,7 +760,7 @@ twitter:
 
 And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme`, attributed as a creator of the page being shared.
 
-**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they will begin showing up.
+**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they begin showing up.
 {: .notice--warning}
 
 ##### Facebook Open Graph
@@ -791,22 +791,25 @@ For pages that don't have a `header.image` assigned in their YAML Front Matter, 
 og_image: /assets/images/site-logo.png
 ```
 
-<figure>
-  <img src="{{ '/assets/images/mm-twitter-card-summary-image.jpg' | relative_url }}" alt="Twitter Card summary example">
-  <figcaption>Example of a image placed in a Summary Card.</figcaption>
-</figure>
+{% include figure
+   image_path="/assets/images/mm-twitter-card-summary-image.jpg"
+   alt="Twitter Card summary example"
+   caption="Example of an image placed in a Summary Card."
+%}
 
 Documents who have a `header.image` assigned in their YAML Front Matter will appear like this when shared on Twitter and Facebook.
 
-<figure>
-  <img src="{{ '/assets/images/mm-twitter-card-summary-large.jpg' | relative_url }}" alt="page shared on Twitter">
-  <figcaption>Shared page on Twitter with header image assigned.</figcaption>
-</figure>
+{% include figure
+   image_path="/assets/images/mm-twitter-card-summary-large.jpg"
+   alt="page shared on Twitter"
+   caption="Shared page on Twitter with header image assigned."
+%}
 
-<figure>
-  <img src="{{ '/assets/images/facebook-share-example.jpg' | relative_url }}" alt="page shared on Facebook">
-  <figcaption>Shared page on Facebook with header image assigned.</figcaption>
-</figure>
+{% include figure
+   image_path="/assets/images/facebook-share-example.jpg"
+   alt="page shared on Facebook"
+   caption="Shared page on Facebook with header image assigned."
+%}
 
 ##### Include your social profile in search results
 
@@ -846,7 +849,7 @@ analytics:
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
 
-**Note:** Analytics are disabled by default in `development`. To enable when testing/building locally be sure to set
+**Note:** Analytics are disabled in `development`. To enable when testing/building locally be sure to set
 `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--info}
 
@@ -933,7 +936,7 @@ Nothing out of the ordinary here. `include` and `exclude` may be the only things
 
 ## Conversion and Markdown processing
 
-Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](http://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](http://rouge.jneen.net/) syntax highlighting, and incremental building disabled. Change them if you need to.
+Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](http://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](https://rouge.jneen.net/) syntax highlighting, and incremental building disabled. Change them if you need to.
 
 ## Front Matter Defaults
 
@@ -1005,15 +1008,45 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages, [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2) is the way to go.
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages, [**jekyll-paginate-v2**][jekyll-paginate-v2] is the way to go.
 {: .notice--info}
+
+  [jekyll-paginate-v2]: https://github.com/sverrirs/jekyll-paginate-v2
 
 #### Using Jekyll Paginate V2
 
-Jekyll Paginate V2 is not available on GitHub Pages. You must build your site locally or with a CI service like [GitHub Actions][gh-pages-actions].
+**Note:** Jekyll Paginate V2 is **not** available on GitHub Pages. You must build your site locally or with a CI service like [GitHub Actions][gh-pages-actions].
 {: .notice--info}
 
   [gh-pages-actions]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
+
+If you opt to use [Jekyll Paginate V2][jekyll-paginate-v2], remove `paginate` from `_config.yml` and add the following configuration to your `_config.yml`:
+
+```yaml
+# Pagination with jekyll-paginate-v2
+# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+#   for configuration details
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+```
+
+Minimal Mistakes will automatically pick up Jekyll Paginate V2 mode if it detects the `pagination.enabled` setting in `_config.yml`.
+
+While the plugin allows you to change the `indexpage` and the `extension` (which default to `index` and `html` respectively), Minimal Mistakes do not support non-default values for these settings, so you should keep them as-is.
 
 ### Timezone
 
