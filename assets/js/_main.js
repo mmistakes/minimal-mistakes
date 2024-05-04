@@ -88,7 +88,7 @@ $(function() {
 
     var tocElement = document.querySelector("aside.sidebar__right.sticky");
     if (!tocElement) return;
-    if (!window.getComputedStyle(tocElement).position !== "sticky") return;
+    if (window.getComputedStyle(tocElement).position !== "sticky") return;
 
     if (target.parentElement.classList.contains("toc__menu") && target == target.parentElement.firstElementChild) {
       // Scroll to top instead
