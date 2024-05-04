@@ -463,8 +463,6 @@ To overlay text on top of a header image you have a few more options:
 | **excerpt**              | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
 | **tagline**              | Overrides page excerpt. Useful when header text needs to be different from excerpt in archive views. | |
 | **actions**              | Call to action button links (`actions` array: `label` and `url`). More than one button link can be assigned. | |
-| **cta_label**            | Deprecated, use `actions` instead. Call to action button text label. | `more_label` in UI Text data file |
-| **cta_url**              | Deprecated, use `actions` instead. Call to action button URL. | |
 
   [mdn-linear-gradient]: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
 
