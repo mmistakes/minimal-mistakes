@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A7 - Südpark",
-    "title": "Ausflug A7 - Südpark",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MnVocG51dTFodmFzdWwzazc2cWFycGJhcTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-03T09:15:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-03T13:30:00+02:00"
-    },
-    "created": "2024-04-30T08:57:56.000Z",
-    "updated": "2024-04-30T08:57:56.719Z"
-  },
-  {
-    "image_path": null,
     "alt": "Brückentag: Schule und Hort geschlossen",
     "title": "Brückentag: Schule und Hort geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-04-30T07:28:43.000Z",
     "updated": "2024-04-30T07:28:43.458Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Demokratie-Tag",
+    "title": "Demokratie-Tag",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YmY3bmM4c2J2NnU3bHJtbmxua2FxOWw4YTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-05-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-05-24",
+      "date_time": null
+    },
+    "created": "2024-04-07T10:00:01.000Z",
+    "updated": "2024-04-07T10:00:01.489Z"
   }
 ]
