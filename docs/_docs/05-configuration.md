@@ -1008,45 +1008,72 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages, [**jekyll-paginate-v2**][jekyll-paginate-v2] is the way to go.
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest **[jekyll-paginate-v2][jekyll-paginate-v2]**.
 {: .notice--info}
 
   [jekyll-paginate-v2]: https://github.com/sverrirs/jekyll-paginate-v2
 
-#### Using Jekyll Paginate V2
+### Paginate V2
 
-**Note:** Jekyll Paginate V2 is **not** available on GitHub Pages. You must build your site locally or with a CI service like [GitHub Actions][gh-pages-actions].
-{: .notice--info}
-
-  [gh-pages-actions]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
-
-If you opt to use [Jekyll Paginate V2][jekyll-paginate-v2], remove `paginate` from `_config.yml` and add the following configuration to your `_config.yml`:
+If you're using [Jekyll Paginate V2][jekyll-paginate-v2], you can enjoy its powerful features by removing `paginate` and `paginate_path` and adding the following configuration to your `_config.yml`:
 
 ```yaml
-# Pagination with jekyll-paginate-v2
-# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-#   for configuration details
 pagination:
   enabled: true
-  debug: false
   collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/'
+  per_page: 5
+  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
   title: ':title - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
   trail:
     before: 2
     after: 2
 ```
 
-Minimal Mistakes will automatically pick up Jekyll Paginate V2 mode if it detects the `pagination.enabled` setting in `_config.yml`.
+Then, create `/posts/index.html` with the following content:
 
-While the plugin allows you to change the `indexpage` and the `extension` (which default to `index` and `html` respectively), Minimal Mistakes do not support non-default values for these settings, so you should keep them as-is.
+```html
+---
+title: "Posts"
+layout: home
+permalink: /posts/
+pagination:
+  enabled: true
+---
+```
+
+Your posts will be paginated at `/posts/`, `/posts/page/2/` and `/posts/page/3/` etc.
+
+Similarly, if you want to paginate a collection or a tag, you can create another `index.html` at an appropriate location, and add configuration to the `pagination` key in the front matter, like this:
+
+```html
+---
+title: "Lovely pets"
+layout: home
+permalink: /pets/
+pagination:
+  enabled: true
+  collection:
+    - cat
+    - dog
+---
+```
+
+**Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. You should either leave them out or use their default values as shown below. Changing them may lead to unexpected results and you're on your own.
+
+```yaml
+pagination:
+
+  # Optional, the default file extension for generated pages (e.g html, json, xml).
+  # Internally this is set to html by default
+  extension: html
+
+  # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+  # Without file extension
+  indexpage: 'index'
+```
 
 ### Timezone
 

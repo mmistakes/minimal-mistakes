@@ -365,7 +365,7 @@ Then adjust the `paginate_path` in **_config.yml** to match.
 paginate_path: /blog/page:num
 ```
 
-**Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
+**Note:** The default Jekyll Paginate plugin can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination-related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section, including settings for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
 **Note:** By default, documents are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter. To increase the width of the main container, giving more space to the grid items also add `classes: wide` to the home page's YAML Front Matter.
