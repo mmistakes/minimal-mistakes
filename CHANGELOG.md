@@ -10,6 +10,7 @@
 
 - Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
 - Auto scroll sticky ToC with content. [#3115](https://github.com/mmistakes/minimal-mistakes/pull/3115)
+- Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
 
 ### Documentation & Maintenance
 
