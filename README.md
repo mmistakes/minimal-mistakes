@@ -126,17 +126,12 @@ To install:
 <!--
   Dev note: The version number is currently hard-coded in these files:
 
-    - README.md (this file)
     - package.json
+    - README.md (this file)
     - docs/_config.yml (as theme_version)
     - docs/_pages/home.md (in Front Matter "excerpt")
 
-  For every release, files listed above should be manually updated with the new version number.
-
-  Additionally, the license year is hard-coded in these files:
-
-    - README.md (this file, near the end)
-    - LICENSE
+  `package.json` holds the authoritative version number, and the others can be updated with `bundle exec rake version`.
 
   The following files should also be regenerated:
 
@@ -144,7 +139,12 @@ To install:
       (Run `bundle exec rake clean` then `bundle exec rake copyright` - all three references `package.json`)
     - assets/js/main.min.js (Run `bundle exec rake js`, references `_includes/copyright.js`)
 
-  Tip: The default Rake task will update all of the above files at once.
+  *Tip*: The default Rake task will update all of the above files at once.
+
+  Additionally, the license year is hard-coded in these files and are NOT covered by a Rake task:
+
+    - README.md (this file, near the end)
+    - LICENSE
 -->
 
 **Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.

@@ -7,7 +7,7 @@ require "shellwords"
 require "time"
 require "yaml"
 
-task :default => [:copyright, :changelog, :js]
+task :default => %i[copyright changelog js version]
 
 package_json = JSON.parse(File.read("package.json"))
 
@@ -106,6 +106,7 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
     f.puts "<!--\n  Sourced from CHANGELOG.md\n  See Rakefile `task :changelog` for details\n-->"
     f.puts ""
     f.puts "{% raw %}"
+    # Remove H1
     changelog = File.read(t.prerequisites.first).gsub(/^# [^\n]*$/m, "").strip
     f.write changelog
     f.puts ""
@@ -178,4 +179,26 @@ task :watch_js do
     sleep
   rescue ThreadError
   end
+end
+
+task :version => ["docs/_data/theme.yml", "README.md", "docs/_pages/home.md"]
+
+file "docs/_data/theme.yml" => "package.json" do |t|
+  theme = { "version" => package_json["version"] }
+  File.open(t.name, "w") do |f|
+    f.puts "# for use with in-page templates"
+    f.puts theme.to_yaml
+  end
+end
+
+file "README.md" => "package.json" do |t|
+  content = File.read(t.name)
+  content = content.gsub(/(mmistakes\/minimal-mistakes@)[\d.]+/, '\1' + package_json["version"])
+  File.write(t.name, content)
+end
+
+file "docs/_pages/home.md" => "package.json" do |t|
+  content = File.read(t.name)
+  content = content.gsub(/(\breleases\/tag\/|Latest release v)[\d.]+/, '\1' + package_json["version"])
+  File.write(t.name, content)
 end
