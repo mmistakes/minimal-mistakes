@@ -1061,11 +1061,11 @@ pagination:
 ---
 ```
 
+<div class="notice--danger" markdown="1">
 **Note:** There are two more configuration options from Jekyll Paginate V2 that this theme doesn't support yet. You should either leave them out or use their default values as shown below. Changing them may lead to unexpected results and you're on your own.
 
 ```yaml
 pagination:
-
   # Optional, the default file extension for generated pages (e.g html, json, xml).
   # Internally this is set to html by default
   extension: html
@@ -1074,6 +1074,7 @@ pagination:
   # Without file extension
   indexpage: 'index'
 ```
+</div>
 
 ### Timezone
 
