@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T01:06:09+08:00'
+last_modified_at: '2024-05-05T02:36:12+08:00'
 toc: false
 ---
 
@@ -16,6 +16,10 @@ toc: false
 
 {% raw %}
 ## Unreleased
+
+### Bug Fixes
+
+- Fix an unclosed `<p>` tag in `page__hero.html`, near `page.header.actions`.
 
 ### Enhancements
 
