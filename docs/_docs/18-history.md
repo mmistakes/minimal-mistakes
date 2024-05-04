@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T00:00:06+08:00'
+last_modified_at: '2024-05-05T00:32:24+08:00'
 toc: false
 ---
 
@@ -21,9 +21,10 @@ toc: false
 
 - Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
 
-### Documentation
+### Documentation & Maintenance
 
 - Rewrite skin previews on `05-configuration.md` in Liquid template.
+- Remove unused classes from `_layouts/single.html`.
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
 

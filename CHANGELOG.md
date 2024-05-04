@@ -6,9 +6,10 @@
 
 - Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
 
-### Documentation
+### Documentation & Maintenance
 
 - Rewrite skin previews on `05-configuration.md` in Liquid template.
+- Remove unused classes from `_layouts/single.html`.
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
 
