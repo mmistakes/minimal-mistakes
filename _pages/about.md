@@ -67,6 +67,10 @@ The Scientific and Technical Advisory Group (STAG) provides input for the operat
 * Dr. Mikael Johansson, CSC, FiQCI vice-director
 * Prof. Tapio Ala-Nissilä, Aalto University, FiQCI vice-director
 
+## Acknowledgement
+
+When publishing the results that utilise the FiQCI infrastructure, users should acknowledge the use of FiQCI, preferably in the format: "These [results] have been acquired using the Finnish Quantum-Computing Infrastructure (https://fiqci.fi)". [Additionally, users should also acknowledge using Helmi if applicable](./posts/2022-11-01-Helmi-pilot.md#acknowledgement). 
+
 ## Supported by
 
 {% include gallery id="funders_gallery" %}
