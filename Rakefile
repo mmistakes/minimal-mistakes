@@ -155,9 +155,9 @@ CLEAN.include(*COPYRIGHT_FILES)
 JS_FILES = Dir.glob("assets/js/plugins/*.js") + ["assets/js/_main.js"]
 JS_TARGET = "assets/js/main.min.js"
 task :js => JS_TARGET
-file JS_TARGET => JS_FILES do |t|
-  sh Shellwords.join(%w[npx uglifyjs -c -m -o] + [t.name] + t.prerequisites)
-  sh "node banner.js"
+file JS_TARGET => ["_includes/copyright.js"] + JS_FILES do |t|
+  sh Shellwords.join(%w[npx uglifyjs -c --comments /@mmistakes/ --source-map -m -o] +
+    [t.name] + t.prerequisites)
 end
 
 task :watch_js do
