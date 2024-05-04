@@ -4,6 +4,26 @@ permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
 last_modified_at: 2021-05-11T10:40:42-04:00
 toc: true
+
+skins:
+  - name: air
+    description: Calm and blue.
+  - name: aqua
+    description: Just like water.
+  - name: contrast
+    description: Retro feel with bold blue links and inverted footer.
+  - name: dark
+    description: Inverted palette, white text on a dark background.
+  - name: dirt
+    description: Earthy tones.
+  - name: mint
+    description: Minty fresh green.
+  - name: neon
+    description: Inverted palette, white text on a dark background.
+  - name: plum
+    description: Purple reigns supreme.
+  - name: sunrise
+    description: Oranges and red.
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -31,90 +51,35 @@ Easily change the color scheme of the theme using one of the provided "skins":
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 ```
 
-**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include {% raw %}`@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin`{% endraw %} before the `minimal-mistakes` import.
 {: .notice--warning}
 
-#### Air skin: `air`
-
+{% for skin in page.skins %}
+#### {{ skin.name | capitalize }} skin: `{{ skin.name }}`
 {:.no_toc}
 
 <figure class="half">
-    <a href="{{ site.baseurl }}/assets/images/air-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-archive.png"></a>
-    <a href="{{ site.baseurl }}/assets/images/air-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-post.png"></a>
-    <figcaption>Calm and blue.</figcaption>
+  <a href="{{ skin.name | prepend: "/assets/images/" | append: "-skin-archive-large.png" | relative_url }}">
+    <img
+      src="{{ skin.name | prepend: "/assets/images/" | append: "-skin-archive.png" | relative_url }}"
+      alt="Archive page of {{ skin.name | capitalize }} skin"
+      />
+  </a>
+  <a href="{{ skin.name | prepend: "/assets/images/" | append: "-skin-post-large.png" | relative_url }}">
+    <img
+      src="{{ skin.name | prepend: "/assets/images/" | append: "-skin-post.png" | relative_url }}"
+      alt="Posts page of {{ skin.name | capitalize }} skin"
+      />
+  </a>
+  <figcaption>{{ skin.description }}</figcaption>
 </figure>
-
-#### Aqua skin: `aqua`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/aqua-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/aqua-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-post.png"></a>
-  <figcaption>Just like water.</figcaption>
-</figure>
-
-#### Contrast skin: `contrast`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/contrast-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/contrast-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-post.png"></a>
-  <figcaption>Retro feel with bold blue links and inverted footer.</figcaption>
-</figure>
-
-#### Dark skin: `dark`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/dark-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/dark-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-post.png"></a>
-  <figcaption>Inverted palette, white text on a dark background.</figcaption>
-</figure>
-
-#### Dirt skin: `dirt`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/dirt-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/dirt-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-post.png"></a>
-  <figcaption>Earthy tones.</figcaption>
-</figure>
-
-#### Mint skin: `mint`
-
-{:.no_toc}
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/mint-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/mint-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-post.png"></a>
-  <figcaption>Minty fresh green.</figcaption>
-</figure>
-
-#### Neon skin: `neon`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/neon-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/neon-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/neon-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/neon-skin-post.png"></a>
-  <figcaption>Inverted palette, white text on a dark background.</figcaption>
-</figure>
-
-#### Neon skin: `plum`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/plum-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/plum-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/plum-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/plum-skin-post.png"></a>
-  <figcaption>Purple reigns supreme.</figcaption>
-</figure>
-
-#### Sunrise skin: `sunrise`
-
-<figure class="half">
-  <a href="{{ site.baseurl }}/assets/images/sunrise-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-archive.png"></a>
-  <a href="{{ site.baseurl }}/assets/images/sunrise-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-post.png"></a>
-  <figcaption>Oranges and red.</figcaption>
-</figure>
+{% endfor %}
 
 ### Site locale
 
 `site.locale` is used to declare the primary language for each web page within the site.
 
-_Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _United States_ flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter variation `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](<https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx>).
+_Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _United States_ flavor of English, while `en-GB` would be for the _United Kingdom_ style of English. Country codes are optional and the shorter variation `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](<https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx>).
 
 Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
 
@@ -131,7 +96,7 @@ You also have the option of customizing the separation character used in SEO-fri
 
 _Example:_ `title_separator: "|"` would produce page titles like `Sample Page | My Awesome Site`.
 
-**Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. `My Awesome Site is the Best Because I Say So`.
+**Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title to prevent this from happening, e.g. `My Awesome Site is the Best Because I Say So`.
 {: .notice--warning}
 
 ### Site subtitle
@@ -157,7 +122,7 @@ _Example:_ `description: "A flexible Jekyll theme for your blog or site with a m
 
 ### Site URL
 
-The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "https://mmistakes.github.io"` or `url: "https://mademistakes.com"` if you have a custom domain name.
+The base hostname and protocol for your site. If you're hosting on GitHub Pages this will be something like `url: "https://mmistakes.github.io"` or `url: "https://mademistakes.com"` if you have a custom domain name.
 
 GitHub Pages now [forces `https://` for new sites](https://help.github.com/articles/securing-your-github-pages-site-with-https/) so be mindful of that when setting your URL to avoid mixed-content warnings.
 
@@ -183,9 +148,9 @@ Add your repository name with organization to your site's configuration file, `_
 repository: "username/repo-name"
 ```
 
-"NWO" stands for "name with owner." It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. `mmistakes/minimal-mistakes`, where **mmistakes** is the owner and **minimal-mistakes** is the repository name.
+"NWO" stands for "**n**ame **w**ith **o**wner." It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. `mmistakes/minimal-mistakes`, where **mmistakes** is the owner and **minimal-mistakes** is the repository name.
 
-Your `site.github.*` fields should fill in like normal. If you run Jekyll with the --verbose flag, you should be able to see all the API calls made.
+Your `site.github.*` fields should be filled in like normal. If you run Jekyll with the `--verbose` flag, you should be able to see all the API calls made.
 
 If you don't set `repository` correctly you may see the following error when trying to `serve` or `build` your Jekyll site:
 
