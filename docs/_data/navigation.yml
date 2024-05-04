@@ -78,6 +78,8 @@ docs:
         url: /docs/javascript/
   - title: Meta
     children:
+      - title: "FAQ"
+        url: /docs/faq/
       - title: "History"
         url: /docs/history/
       - title: "Contributing"
