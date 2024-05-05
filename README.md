@@ -121,7 +121,7 @@ To install:
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.25.1"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.26.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 <!--
   Dev note: The version number is currently hard-coded in these files:
@@ -210,7 +210,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 
 The MIT License (MIT)
 
-Copyright (c) 2013-2020 Michael Rose and contributors
+Copyright (c) 2013-2024 Michael Rose and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
