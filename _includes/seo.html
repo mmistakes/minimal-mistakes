@@ -6,18 +6,11 @@
 
 {% assign title_separator = site.title_separator | default: '-' %}
 
-{%- if page.title -%}
-  {%- assign page_title = page.title | default: site.title | replace: '|', '&#124;' -%}
-{%- endif -%}
+{%- assign page_title = page.title | default: site.title | replace: '|', '&#124;' -%}
+{%- assign seo_title = page_title | append: " " | append: title_separator | append: " " | append: site.title | replace: '|', '&#124;' -%}
 
-{%- if page_title -%}
-  {%- assign seo_title = page_title | append: " " | append: title_separator | append: " " | append: site.title | replace: '|', '&#124;' -%}
-  {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
-{%- endif -%}
-
-{%- if seo_title -%}
-  {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
-{%- endif -%}
+{%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
+{%- assign seo_title  = seo_title  | markdownify | strip_html | strip_newlines | escape_once -%}
 
 {% if page.canonical_url %}
   {%- assign canonical_url = page.canonical_url %}
