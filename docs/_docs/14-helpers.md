@@ -53,20 +53,23 @@ Generate a `<figure>` element with a single image and caption.
 | **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
 | **alt**           | Optional     | Alternate text for image.                                                                            |
 | **caption**       | Optional     | Figure caption text. Markdown is allowed.                                                            |
+| **popup**         | Optional     | Wrap the image as a popup link using class `image-popup` |
 
 Using the `figure` include like so:
 
 ```liquid
-{% raw %}{% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}{% endraw %}
+{% raw %}{% include figure popup=true image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}{% endraw %}
 ```
 
 Will output the following:
 
-{% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
+{% include figure popup=true image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
 
 ```html
 <figure>
-  <img src="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image">
+  <a href="/assets/images/unsplash-image-10.jpg" class="image-popup" title="This is a figure caption.">
+    <img src="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image">
+  </a>
   <figcaption>This is a figure caption.</figcaption>
 </figure>
 ```
