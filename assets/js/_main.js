@@ -202,7 +202,7 @@ $(document).ready(function () {
       var copyButton = document.createElement("button");
       copyButton.title = "Copy to clipboard";
       copyButton.className = "clipboard-copy-button";
-      copyButton.innerHTML = '<i class="far fa-copy"></i>';
+      copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-copy"></i>';
       copyButton.addEventListener("click", copyButtonEventListener);
       container.prepend(copyButton);
     });

@@ -19,7 +19,7 @@
   },
   "homepage": "https://mmistakes.github.io/minimal-mistakes/",
   "engines": {
-    "node": ">= 12.10.0"
+    "node": ">= 0.10.0"
   },
   "devDependencies": {
     "uglify-js": "^3.17.4"
