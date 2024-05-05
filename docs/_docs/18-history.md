@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T18:13:22+08:00'
+last_modified_at: '2024-05-05T18:22:58+08:00'
 toc: false
 ---
 
@@ -22,6 +22,7 @@ toc: false
 - Fix an unclosed `<p>` tag in `page__hero.html`, near `page.header.actions`.
 - Remove overlay and revert X to hamburger icon when popup disappears. [#3958](https://github.com/mmistakes/minimal-mistakes/pull/3958)
 - Fix SEO title when it contains a vertical bar. [#3094](https://github.com/mmistakes/minimal-mistakes/pull/3094) [#3113](https://github.com/mmistakes/minimal-mistakes/pull/3113)
+- Remove "sticky sidebar" JS as it's now completely based on CSS media queries. [#4245](https://github.com/mmistakes/minimal-mistakes/issues/4245) [#4645](https://github.com/mmistakes/minimal-mistakes/pull/4645)
 
 ### Enhancements
 
