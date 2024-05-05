@@ -190,6 +190,17 @@ $(document).ready(function () {
     var result = copyText(codeBlock.innerText);
     // Restore the focus to the button
     thisButton.focus();
+    if (result) {
+      if (thisButton.interval !== null) {
+        clearInterval(thisButton.interval);
+      }
+      thisButton.classList.add('copied');
+      thisButton.interval = setTimeout(function () {
+        thisButton.classList.remove('copied');
+        clearInterval(thisButton.interval);
+        thisButton.interval = null;
+      }, 1500);
+    }
     return result;
   };
 
@@ -206,7 +217,7 @@ $(document).ready(function () {
         var copyButton = document.createElement("button");
         copyButton.title = "Copy to clipboard";
         copyButton.className = "clipboard-copy-button";
-        copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-copy"></i>';
+        copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-fw fa-copy"></i><i class="fas fa-fw fa-check copied"></i>';
         copyButton.addEventListener("click", copyButtonEventListener);
         container.prepend(copyButton);
       });

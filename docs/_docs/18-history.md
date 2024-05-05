@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T19:50:49+08:00'
+last_modified_at: '2024-05-06T01:20:38+08:00'
 toc: false
 ---
 
@@ -16,6 +16,12 @@ toc: false
 
 {% raw %}
 ## Unreleased
+
+### Enhancements
+
+- Change the icon of a copy button into a tick for 1.5 seconds on successful copy.
+
+## [4.26.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.0)
 
 ### Bug Fixes
 

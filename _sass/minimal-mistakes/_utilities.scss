@@ -613,6 +613,8 @@ pre {
     position: absolute;
     top: 0.6em;
     right: 0.5em;
+    width: 1.8em;
+    height: 1.5em;
     z-index: 1;
     background: none;
     border: none;
@@ -635,6 +637,22 @@ pre {
       bottom: 0;
       left: 0;
       z-index: 2;
+    }
+
+    i {
+      position: absolute;
+      top: 0.25em;
+      right: 0.25em;
+      &.copied {
+        opacity: 0;
+      }
+    }
+
+    &.copied i {
+      opacity: 0;
+      &.copied {
+        opacity: 1;
+      }
     }
 
     @at-root {

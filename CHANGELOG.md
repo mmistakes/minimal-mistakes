@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Enhancements
+
+- Change the icon of a copy button into a tick for 1.5 seconds on successful copy.
+
 ## [4.26.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.0)
 
 ### Bug Fixes
