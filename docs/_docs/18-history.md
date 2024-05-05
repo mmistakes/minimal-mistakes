@@ -6,6 +6,7 @@ excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
 last_modified_at: 2022-05-30T12:18:47-04:00
+last_modified_at: '2024-05-05T19:50:49+08:00'
 toc: false
 ---
 
@@ -13,6 +14,64 @@ toc: false
 
 ### Bug Fixes
 
+- Fix an unclosed `<p>` tag in `page__hero.html`, near `page.header.actions`.
+- Remove overlay and revert X to hamburger icon when popup disappears. [#3958](https://github.com/mmistakes/minimal-mistakes/pull/3958)
+- Fix SEO title when it contains a vertical bar. [#3094](https://github.com/mmistakes/minimal-mistakes/pull/3094) [#3113](https://github.com/mmistakes/minimal-mistakes/pull/3113)
+- Remove "sticky sidebar" JS as it's now completely based on CSS media queries. [#4245](https://github.com/mmistakes/minimal-mistakes/issues/4245) [#4645](https://github.com/mmistakes/minimal-mistakes/pull/4645)
+
+### Enhancements
+
+- Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
+- Add "copy to clipboard" button for code blocks 🎉 [#2812](https://github.com/mmistakes/minimal-mistakes/pull/2812)
+- Auto scroll sticky ToC with content. [#3115](https://github.com/mmistakes/minimal-mistakes/pull/3115)
+- Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
+- Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
+- Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
+- Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
+- Add target attribute for navigation link. [#3056](https://github.com/mmistakes/minimal-mistakes/pull/3056)
+- Split schema to a separate include file. [#3085](https://github.com/mmistakes/minimal-mistakes/pull/3085)
+- Cleanup `_includes/seo.html`.
+
+### Documentation & Maintenance
+
+- Rewrite skin previews on `05-configuration.md` in Liquid template.
+- Remove unused classes from `_layouts/single.html`.
+- Migrate npm run scripts to Ruby Rake tasks.
+- Add Rake task `version` for updating all hard-coded version numbers from `package.json` all at once.
+- Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
+- Update Social Sharing links section. [#4066](https://github.com/mmistakes/minimal-mistakes/pull/4066)
+
+## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
+
+### Bug Fixes
+
+- "You may also enjoy" no longer recommends hidden posts. [#4653](https://github.com/mmistakes/minimal-mistakes/issues/4653)
+- Replaced dead link to "Viewport and Media Queries" slides. [#4421](https://github.com/mmistakes/minimal-mistakes/discussions/4421)
+- Fix broken `where_exp` in `lunr-store.js` for Jekyll &lt; 4.0. [#4808](https://github.com/mmistakes/minimal-mistakes/issues/4808)
+
+### Enhancements
+
+- Add Ukrainian translations. [#4273](https://github.com/mmistakes/minimal-mistakes/pull/4273)
+- Add more configuration for Giscus. [#4274](https://github.com/mmistakes/minimal-mistakes/pull/4274)
+- Bump jekyll-toc to [v1.2.1](https://github.com/allejo/jekyll-toc/releases/tag/v1.2.1).
+
+### Documentation & Maintenance
+
+- Bump shell-quote from 1.7.1 to 1.7.3 [#3692](https://github.com/mmistakes/minimal-mistakes/issues/3692)
+- Add `after-content.html` and `before-related.html` includes to ease docs site overrides.
+- GitHub Workflows security hardening [#3884](https://github.com/mmistakes/minimal-mistakes/issues/3884)
+- Replace Font Awesome v5 search page with v6.
+- Try adding an FAQ page.
+- Update remote theme reference in Quick-Start Guide to point to 4.25.0. [#4809](https://github.com/mmistakes/minimal-mistakes/issues/4809)
+
+## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
+
+### Bug Fixes
+
+- Fix Linkedin social share link [#4754](https://github.com/mmistakes/minimal-mistakes/issues/4754)
+- Fix non-English characters being url encoded in breadcrumb [#3819](https://github.com/mmistakes/minimal-mistakes/issues/3819)
+- Fix wrong `first_page_path` because of hard-coded `page:num` [#3778](https://github.com/mmistakes/minimal-mistakes/issues/3778)
+- Remove JS and other files from search index [#4000](https://github.com/mmistakes/minimal-mistakes/pull/4000)
 - Fix unlisted YouTube video embeds in documentation/test sites. [#3649](https://github.com/mmistakes/minimal-mistakes/issues/3649)
 - Fix error in Algolia search script when returning a hit that without `html` and `hightlight.html`. [#3101](https://github.com/mmistakes/minimal-mistakes/issues/3101) [#3102](https://github.com/mmistakes/minimal-mistakes/pull/3102)
 - Fix links to Font Awesome gallery. [#3599](https://github.com/mmistakes/minimal-mistakes/pull/3599)

@@ -5,8 +5,7 @@ permalink: /page-archive/
 author_profile: false
 ---
 
-{% for post in site.pages %}
-  {% unless post.hidden %}
-    {% include archive-single.html %}
-  {% endunless %}
+{% assign posts = site.pages | where_exp: "post", "post.hidden != true" %}
+{% for post in posts %}
+  {% include archive-single.html %}
 {% endfor %}

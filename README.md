@@ -132,7 +132,31 @@ To install:
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.24.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.26.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+
+<!--
+  Dev note: The version number is currently hard-coded in these files:
+
+    - package.json
+    - README.md (this file)
+    - docs/_data/theme.yml
+    - docs/_pages/home.md (in Front Matter "excerpt")
+
+  `package.json` holds the authoritative version number, and the others can be updated with `bundle exec rake version`.
+
+  The following files should also be regenerated:
+
+    - _includes/copyright.html, _includes/copyright.js, _sass/minimal-mistakes/_copyright.scss
+      (Run `bundle exec rake clean` then `bundle exec rake copyright` - all three references `package.json`)
+    - assets/js/main.min.js (Run `bundle exec rake js`, references `_includes/copyright.js`)
+
+  *Tip*: The default Rake task will update all of the above files at once.
+
+  Additionally, the license year is hard-coded in these files and are NOT covered by a Rake task:
+
+    - README.md (this file, near the end)
+    - LICENSE
+-->
 
 **Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
 
@@ -195,6 +219,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - [Gumshoe](https://github.com/cferdinandi/gumshoe)
 - [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
 - [Lunr](http://lunrjs.com)
+- [Clipboard.js](https://clipboardjs.com)
 
 ---
 
@@ -202,7 +227,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 
 The MIT License (MIT)
 
-Copyright (c) 2013-2020 Michael Rose and contributors
+Copyright (c) 2013-2024 Michael Rose and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -275,3 +300,7 @@ Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT 
 Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
 Copyright (c) 2018 Oliver Nightingale.
 Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [clipboard.js](https://clipboardjs.com/),
+Copyright (c) 2021 Zeno Rocha.
+Clipboard.js is distributed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
