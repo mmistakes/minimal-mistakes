@@ -1,10 +1,5 @@
 <!-- begin _includes/seo.html -->
-{%- if site.url -%}
-  {%- assign seo_url = site.url | append: site.baseurl -%}
-{%- endif -%}
-{%- assign seo_url = seo_url | default: site.github.url -%}
-
-{% assign title_separator = site.title_separator | default: '-' %}
+{%- assign title_separator = site.title_separator | default: '-' -%}
 
 {%- assign page_title = page.title | default: site.title | replace: '|', '&#124;' -%}
 {%- assign seo_title = page_title | append: " " | append: title_separator | append: " " | append: site.title | replace: '|', '&#124;' -%}
@@ -12,11 +7,7 @@
 {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- assign seo_title  = seo_title  | markdownify | strip_html | strip_newlines | escape_once -%}
 
-{% if page.canonical_url %}
-  {%- assign canonical_url = page.canonical_url %}
-{% else %}
-  {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
-{% endif %}
+{%- assign canonical_url = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url %}
 
 {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
@@ -30,14 +21,9 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url -%}
-{%- assign page_large_image = page_large_image | escape -%}
-
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url -%}
-{%- assign page_teaser_image = page_teaser_image | escape -%}
-
-{%- assign site_og_image = site.og_image | absolute_url -%}
-{%- assign site_og_image = site_og_image | escape -%}
+{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
+{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
+{%- assign site_og_image = site.og_image | absolute_url | escape -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
