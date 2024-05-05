@@ -764,7 +764,7 @@ If you'd like to add, remove, or change the order of these default links you can
 Let's say you wanted to replace the LinkedIn button with a Reddit one. Simply replace the HTML with the following:
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
 The important parts to change are:
@@ -788,13 +788,13 @@ $buttoncolors:
 (reddit, $reddit-color);
 ```
 
-**ProTip:** For bonus points you can modify the Sass variable `$reddit-color` that is set in `_variables.scss` [or create if different than Reddit example] to a modified ["brand" color](http://brandcolors.net/).
+**ProTip:** For bonus points you can modify the Sass variable `$reddit-color` that is set in `_variables.scss` [or use a different "brand" color](http://brandcolors.net/).
 {: .notice--info}
 
 Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" | relative_url }}) and away you go.
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | relative_url }})
