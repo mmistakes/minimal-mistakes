@@ -747,6 +747,15 @@ defaults:
         nav: "docs"
 ```
 
+If you have multiple sidebar navs defined and want to include more than one on a page, the sidebar nav can also be a list.
+
+```yaml
+sidebar:
+  nav:
+    - main
+    - docs
+```
+
 ---
 
 ## Social sharing links
