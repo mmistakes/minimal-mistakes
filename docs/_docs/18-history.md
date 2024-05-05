@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T18:22:58+08:00'
+last_modified_at: '2024-05-05T19:44:24+08:00'
 toc: false
 ---
 
@@ -27,6 +27,7 @@ toc: false
 ### Enhancements
 
 - Add support for [Jekyll Paginate V2](https://github.com/sverrirs/jekyll-paginate-v2) 🎉 [#2636](https://github.com/mmistakes/minimal-mistakes/pull/2636)
+- Add "copy to clipboard" button for code blocks 🎉 [#2812](https://github.com/mmistakes/minimal-mistakes/pull/2812)
 - Auto scroll sticky ToC with content. [#3115](https://github.com/mmistakes/minimal-mistakes/pull/3115)
 - Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
