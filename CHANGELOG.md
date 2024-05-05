@@ -5,6 +5,7 @@
 ### Bug Fixes
 
 - Fix an unclosed `<p>` tag in `page__hero.html`, near `page.header.actions`.
+- Remove overlay and revert X to hamburger icon when popup disappears. [#3958](https://github.com/mmistakes/minimal-mistakes/pull/3958)
 
 ### Enhancements
 
@@ -16,6 +17,7 @@
 - Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
 - Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
 - Add target attribute for navigation link. [#3056](https://github.com/mmistakes/minimal-mistakes/pull/3056)
+- Split schema to a separate include file. [#3085](https://github.com/mmistakes/minimal-mistakes/pull/3085)
 
 ### Documentation & Maintenance
 
