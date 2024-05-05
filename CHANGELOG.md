@@ -12,6 +12,7 @@
 - Auto scroll sticky ToC with content. [#3115](https://github.com/mmistakes/minimal-mistakes/pull/3115)
 - Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
+- Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
 
 ### Documentation & Maintenance
 
