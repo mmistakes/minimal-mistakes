@@ -193,20 +193,22 @@ $(document).ready(function () {
     return result;
   };
 
-  document
-    .querySelectorAll(".page__content pre > code")
-    .forEach(function (element, index, parentList) {
-      // Locate the <pre> element
-      var container = element.parentElement;
-      // Sanity check - don't add an extra button if there's already one
-      if (container.firstElementChild.tagName.toLowerCase() !== "code") {
-        return;
-      }
-      var copyButton = document.createElement("button");
-      copyButton.title = "Copy to clipboard";
-      copyButton.className = "clipboard-copy-button";
-      copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-copy"></i>';
-      copyButton.addEventListener("click", copyButtonEventListener);
-      container.prepend(copyButton);
-    });
+  if (window.enable_copy_code_button) {
+    document
+      .querySelectorAll(".page__content pre > code")
+      .forEach(function (element, index, parentList) {
+        // Locate the <pre> element
+        var container = element.parentElement;
+        // Sanity check - don't add an extra button if there's already one
+        if (container.firstElementChild.tagName.toLowerCase() !== "code") {
+          return;
+        }
+        var copyButton = document.createElement("button");
+        copyButton.title = "Copy to clipboard";
+        copyButton.className = "clipboard-copy-button";
+        copyButton.innerHTML = '<span class="sr-only">Copy code</span><i class="far fa-copy"></i>';
+        copyButton.addEventListener("click", copyButtonEventListener);
+        container.prepend(copyButton);
+      });
+  }
 });
