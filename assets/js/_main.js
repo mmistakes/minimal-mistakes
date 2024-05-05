@@ -187,7 +187,10 @@ $(document).ready(function () {
     if (realCodeBlock) {
       codeBlock = realCodeBlock;
     }
-    return copyText(codeBlock.innerText);
+    var result = copyText(codeBlock.innerText);
+    // Restore the focus to the button
+    thisButton.focus();
+    return result;
   };
 
   document
