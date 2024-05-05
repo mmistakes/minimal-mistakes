@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T16:30:49+08:00'
+last_modified_at: '2024-05-05T17:04:57+08:00'
 toc: false
 ---
 
@@ -29,6 +29,7 @@ toc: false
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
 - Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
 - Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
+- Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
 
 ### Documentation & Maintenance
 
@@ -36,6 +37,7 @@ toc: false
 - Remove unused classes from `_layouts/single.html`.
 - Migrate npm run scripts to Ruby Rake tasks.
 - Add Rake task `version` for updating all hard-coded version numbers from `package.json` all at once.
+- Update Social Sharing links section. [#4066](https://github.com/mmistakes/minimal-mistakes/pull/4066)
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
 

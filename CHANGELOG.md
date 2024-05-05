@@ -14,6 +14,7 @@
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
 - Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
 - Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
+- Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
 
 ### Documentation & Maintenance
 

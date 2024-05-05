@@ -53,7 +53,7 @@ Generate a `<figure>` element with a single image and caption.
 | **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
 | **alt**           | Optional     | Alternate text for image.                                                                            |
 | **caption**       | Optional     | Figure caption text. Markdown is allowed.                                                            |
-| **popup**         | Optional     | Wrap the image as a popup link using class `image-popup` |
+| **popup**         | Optional     | Enable Magnific Popup on the image.                                                                  |
 
 Using the `figure` include like so:
 
