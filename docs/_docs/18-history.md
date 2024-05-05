@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T17:04:57+08:00'
+last_modified_at: '2024-05-05T17:27:58+08:00'
 toc: false
 ---
 
@@ -30,6 +30,7 @@ toc: false
 - Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
 - Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
 - Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
+- Add target attribute for navigation link. [#3056](https://github.com/mmistakes/minimal-mistakes/pull/3056)
 
 ### Documentation & Maintenance
 
