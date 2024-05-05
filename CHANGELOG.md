@@ -21,6 +21,7 @@
 - Remove unused classes from `_layouts/single.html`.
 - Migrate npm run scripts to Ruby Rake tasks.
 - Add Rake task `version` for updating all hard-coded version numbers from `package.json` all at once.
+- Update Social Sharing links section. [#4066](https://github.com/mmistakes/minimal-mistakes/pull/4066)
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
 
