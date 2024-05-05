@@ -296,6 +296,30 @@ For example,
 }
 ```
 
+### Code block copy button
+
+To enable a copy button on code blocks, add the following to `_config.yml`:
+
+```yaml
+enable_copy_code_button: true
+```
+
+When enabled site-wide, the button can be disabled on individual code blocks by adding `no-copy` to the code block's class list.
+
+````markdown
+```
+Hey, I have a "copy to clipboard" button!
+```
+````
+
+````markdown
+```
+But I don't have one.
+```
+{: .no-copy}
+````
+{: .no-copy}
+
 ### Comments
 
 [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), [**giscus**](https://giscus.app/) and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
