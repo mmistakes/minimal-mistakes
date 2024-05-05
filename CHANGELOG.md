@@ -16,7 +16,6 @@
 - Auto scroll sticky ToC with content. [#3115](https://github.com/mmistakes/minimal-mistakes/pull/3115)
 - Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
-- Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
 - Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
 - Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
 - Add target attribute for navigation link. [#3056](https://github.com/mmistakes/minimal-mistakes/pull/3056)
@@ -29,6 +28,7 @@
 - Remove unused classes from `_layouts/single.html`.
 - Migrate npm run scripts to Ruby Rake tasks.
 - Add Rake task `version` for updating all hard-coded version numbers from `package.json` all at once.
+- Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
 - Update Social Sharing links section. [#4066](https://github.com/mmistakes/minimal-mistakes/pull/4066)
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)

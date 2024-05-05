@@ -298,6 +298,8 @@ For example,
 
 ### Code block copy button
 
+*New in v4.26.0*
+
 To enable a copy button on code blocks, add the following to `_config.yml`:
 
 ```yaml
@@ -1038,6 +1040,8 @@ paginate_path: /recent/page:num/
   [jekyll-paginate-v2]: https://github.com/sverrirs/jekyll-paginate-v2
 
 ### Paginate V2
+
+*New in v4.26.0*
 
 If you're using [Jekyll Paginate V2][jekyll-paginate-v2], you can enjoy its powerful features by removing `paginate` and `paginate_path` and adding the following configuration to your `_config.yml`:
 
