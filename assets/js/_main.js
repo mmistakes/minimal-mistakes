@@ -2,16 +2,16 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-$(document).ready(function() {
+$(function() {
   // FitVids init
   $("#main").fitVids();
 
   // Sticky sidebar
   var stickySideBar = function() {
     var show =
-      $(".author__urls-wrapper button").length === 0
+      $(".author__urls-wrapper").find("button").length === 0
         ? $(window).width() > 1024 // width should match $large Sass variable
-        : !$(".author__urls-wrapper button").is(":visible");
+        : !$(".author__urls-wrapper").find("button").is(":visible");
     if (show) {
       // fix
       $(".sidebar").addClass("sticky");
@@ -28,9 +28,9 @@ $(document).ready(function() {
   });
 
   // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function() {
+  $(".author__urls-wrapper").find("button").on("click", function() {
     $(".author__urls").toggleClass("is--visible");
-    $(".author__urls-wrapper button").toggleClass("open");
+    $(".author__urls-wrapper").find("button").toggleClass("open");
   });
 
   // Close search screen with Esc key
@@ -49,7 +49,7 @@ $(document).ready(function() {
     $(".initial-content").toggleClass("is--hidden");
     // set focus on input
     setTimeout(function() {
-      $(".search-content input").focus();
+      $(".search-content").find("input").focus();
     }, 400);
   });
 
@@ -81,10 +81,27 @@ $(document).ready(function() {
     });
   }
 
+  // Auto scroll sticky ToC with content
+  document.addEventListener("gumshoeActivate", function (event) {
+    var target = event.target;
+    var scrollOptions = { behavior: "auto", block: "nearest", inline: "start" };
+
+    var tocElement = document.querySelector("aside.sidebar__right.sticky");
+    if (!tocElement) return;
+    if (window.getComputedStyle(tocElement).position !== "sticky") return;
+
+    if (target.parentElement.classList.contains("toc__menu") && target == target.parentElement.firstElementChild) {
+      // Scroll to top instead
+      document.querySelector("nav.toc header").scrollIntoView(scrollOptions);
+    } else {
+      target.scrollIntoView(scrollOptions);
+    }
+  });
+
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
-  ).addClass("image-popup");
+  ).has("> img").addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
