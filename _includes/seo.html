@@ -121,7 +121,9 @@
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
-{% include schema.html %}
+{% if page.url == '/' %}
+  {% include schema.html %}
+{% endif %}
 
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
