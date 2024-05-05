@@ -1,0 +1,29 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<ul class="taxonomy__index">
+  {% assign postsInMonth = site.posts | group_by_exp: 'post', 'post.date | date: "%Y/%m"' %}
+  {% for month in postsInMonth %}
+    <li>
+      <a href="#{{ month.name }}">
+        <strong>{{ month.name }}</strong> <span class="taxonomy__count">{{ month.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% assign postsByMonth = site.posts | group_by_exp: 'post', 'post.date | date: "%Y/%m"' %}
+{% for month in postsByMonth %}
+  <section id="{{ month.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ month.name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% for post in month.items %}
+        {% include archive-single.html type=page.entries_layout %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}

@@ -1,9 +1,13 @@
 # main links
 main:
+  - title: "Yearly"
+    url: /year-archive-grid/
+  - title: "Monthly"
+    url: /month-archive-grid/
   - title: "Category"
     url: /categories/
-  - title: "Tag"
-    url: /tags/
+  - title: "Lang"
+    url: /langs/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
