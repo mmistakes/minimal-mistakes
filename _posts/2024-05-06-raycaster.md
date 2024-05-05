@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Raycaster C Code Breakdown 1"
+title:  "Raycaster C Code Breakdown"
 ---
 
 # Welcome
