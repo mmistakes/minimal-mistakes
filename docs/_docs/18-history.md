@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-05T14:13:21+08:00'
+last_modified_at: '2024-05-05T16:30:49+08:00'
 toc: false
 ---
 
@@ -28,6 +28,7 @@ toc: false
 - Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
 - Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
+- Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
 
 ### Documentation & Maintenance
 
