@@ -3,10 +3,11 @@ require "jekyll"
 require "json"
 require "listen"
 require "rake/clean"
+require "shellwords"
 require "time"
 require "yaml"
 
-task :default => [:copyright, :changelog]
+task :default => %i[copyright changelog js version]
 
 package_json = JSON.parse(File.read("package.json"))
 
@@ -73,8 +74,7 @@ task :preview do
         puts "     Halting auto-regeneration."
         exit 0
       end
-
-      loop { sleep 1000 }
+      sleep
     end
   rescue ThreadError
     # You pressed Ctrl-C, oh my!
@@ -83,6 +83,7 @@ task :preview do
   Jekyll::Commands::Serve.process(options)
 end
 
+task :history => :changelog
 task :changelog => "docs/_docs/18-history.md"
 file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
   front_matter = {
@@ -105,6 +106,7 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
     f.puts "<!--\n  Sourced from CHANGELOG.md\n  See Rakefile `task :changelog` for details\n-->"
     f.puts ""
     f.puts "{% raw %}"
+    # Remove H1
     changelog = File.read(t.prerequisites.first).gsub(/^# [^\n]*$/m, "").strip
     f.write changelog
     f.puts ""
@@ -135,18 +137,68 @@ def genenerate_copyright_file(filename, header, prefix, footer)
   end
 end
 
-file "_includes/copyright.html" do |t|
+file "_includes/copyright.html" => "package.json" do |t|
   genenerate_copyright_file(t.name, "<!--", "  ", "-->")
 end
 
-file "_includes/copyright.js" do |t|
+file "_includes/copyright.js" => "package.json" do |t|
   genenerate_copyright_file(t.name, "/*!", " * ", " */")
 end
 
-file "_sass/minimal-mistakes/_copyright.scss" do |t|
+file "_sass/minimal-mistakes/_copyright.scss" => "package.json" do |t|
   genenerate_copyright_file(t.name, "/*!", " * ", " */")
 end
 
 task :copyright => COPYRIGHT_FILES
 
 CLEAN.include(*COPYRIGHT_FILES)
+
+JS_FILES = ["assets/js/vendor/jquery/jquery-3.6.0.js"] + Dir.glob("assets/js/plugins/*.js") + ["assets/js/_main.js"]
+JS_TARGET = "assets/js/main.min.js"
+task :js => JS_TARGET
+file JS_TARGET => ["_includes/copyright.js"] + JS_FILES do |t|
+  sh Shellwords.join(%w[npx uglifyjs -c --comments /@mmistakes/ --source-map -m -o] +
+    [t.name] + t.prerequisites)
+end
+
+task :watch_js do
+  listener = Listen.to(
+    "assets/js",
+    ignore: /main\.min\.js$/,
+  ) do |modified, added, removed|
+    Rake::Task[:js].invoke
+  end
+
+  trap("INT") do
+    listener.stop
+    exit 0
+  end
+
+  begin
+    listener.start
+    sleep
+  rescue ThreadError
+  end
+end
+
+task :version => ["docs/_data/theme.yml", "README.md", "docs/_pages/home.md"]
+
+file "docs/_data/theme.yml" => "package.json" do |t|
+  theme = { "version" => package_json["version"] }
+  File.open(t.name, "w") do |f|
+    f.puts "# for use with in-page templates"
+    f.puts theme.to_yaml
+  end
+end
+
+file "README.md" => "package.json" do |t|
+  content = File.read(t.name)
+  content = content.gsub(/(mmistakes\/minimal-mistakes@)[\d.]+/, '\1' + package_json["version"])
+  File.write(t.name, content)
+end
+
+file "docs/_pages/home.md" => "package.json" do |t|
+  content = File.read(t.name)
+  content = content.gsub(/(\breleases\/tag\/|Latest release v)[\d.]+/, '\1' + package_json["version"])
+  File.write(t.name, content)
+end

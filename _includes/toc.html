@@ -24,7 +24,7 @@
         OTHER DEALINGS IN THE SOFTWARE.
     {% endcomment %}
     {% comment %}
-        Version 1.1.0
+        Version 1.2.1
           https://github.com/allejo/jekyll-toc
 
         "...like all things liquid - where there's a will, and ~36 hours to spare, there's usually a/some way" ~jaybe
@@ -47,6 +47,7 @@
             * base_url      (string) :   ''   - add a base url to the TOC links for when your TOC is on another page than the actual content
             * anchor_class  (string) :   ''   - add custom class(es) for each anchor element
             * skip_no_ids   (bool)   : false  - skip headers that do not have an `id` attribute
+            * flat_toc      (bool)   : false  - when set to true, the TOC will be a single level list
 
         Output:
             An ordered or unordered list representing the table of contents of a markdown block. This snippet will only
@@ -69,6 +70,7 @@
 
     {% capture jekyll_toc %}{% endcapture %}
     {% assign orderedList = include.ordered | default: false %}
+    {% assign flatToc = include.flat_toc | default: false %}
     {% assign baseURL = include.base_url | default: include.baseurl | default: '' %}
     {% assign skipNoIDs = include.skip_no_ids | default: include.skipNoIDs | default: false %}
     {% assign minHeader = include.h_min | default: 1 %}
@@ -138,9 +140,9 @@
             {% capture listItem %}{{ anchorBody }}{% endcapture %}
         {% endif %}
 
-        {% if currLevel > lastLevel %}
+        {% if currLevel > lastLevel and flatToc == false %}
             {% capture jekyll_toc %}{{ jekyll_toc }}<{{ listModifier }}{{ subMenuClass }}>{% endcapture %}
-        {% elsif currLevel < lastLevel %}
+        {% elsif currLevel < lastLevel and flatToc == false %}
             {% assign repeatCount = lastLevel | minus: currLevel %}
 
             {% for i in (1..repeatCount) %}
@@ -158,8 +160,13 @@
         {% assign firstHeader = false %}
     {% endfor %}
 
-    {% assign repeatCount = minHeader | minus: 1 %}
-    {% assign repeatCount = lastLevel | minus: repeatCount %}
+    {% if flatToc == true %}
+        {% assign repeatCount = 1 %}
+    {% else %}
+        {% assign repeatCount = minHeader | minus: 1 %}
+        {% assign repeatCount = lastLevel | minus: repeatCount %}
+    {% endif %}
+
     {% for i in (1..repeatCount) %}
         {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
     {% endfor %}
@@ -179,4 +186,4 @@
             {% capture jekyll_toc %}<{{ listModifier }}{{ rootAttributes }}>{{ nodes | shift | join: '>' }}>{% endcapture %}
         {% endif %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc }}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc -}}
