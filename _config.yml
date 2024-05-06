@@ -116,7 +116,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PERFECT"
   location         : "Wherever"
-  email            : #"ghghgh0202@gmail.com"
+  #email            : #"ghghgh0202@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
