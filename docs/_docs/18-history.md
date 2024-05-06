@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-06T01:20:38+08:00'
+last_modified_at: '2024-05-06T21:06:31+08:00'
 toc: false
 ---
 
@@ -16,6 +16,10 @@ toc: false
 
 {% raw %}
 ## Unreleased
+
+### Bug Fixes
+
+- Fix copy button going out of range for invalid syntax highlighting blocks.
 
 ### Enhancements
 

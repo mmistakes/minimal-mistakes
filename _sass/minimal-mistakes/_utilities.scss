@@ -608,6 +608,10 @@ a.reversefootnote {
 }
 
 pre {
+  &.highlight .clipboard-copy-button {
+    color: #ffffca;
+  }
+
   .clipboard-copy-button {
     display: block;
     position: absolute;
@@ -621,13 +625,8 @@ pre {
     outline: none;
     border-radius: 0.1em;
     padding: 0.2em 0.5em;
-    color: white;
     opacity: 0.4;
     transition: color 0.25s linear -0.25s, opacity 0.25s linear;
-
-    &:hover {
-      color: #ffffca;
-    }
 
     &::before {
       content: '';

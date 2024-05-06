@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Bug Fixes
+
+- Fix copy button going out of range for invalid syntax highlighting blocks.
+
 ### Enhancements
 
 - Change the icon of a copy button into a tick for 1.5 seconds on successful copy.
