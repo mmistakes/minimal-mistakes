@@ -7,6 +7,10 @@
 - Disable copy button on invalid syntax highlighting blocks to avoid positioning issues.
 - Fix typo for `fa-dribble` in `_utilities.scss`.
 
+### Documentation & Maintenance
+
+- Rewrite social icons SCSS with a loop.
+
 ### Enhancements
 
 - Change the icon of a copy button into a tick for 1.5 seconds on successful copy.

@@ -211,118 +211,35 @@ body:hover .visually-hidden button {
     color: $text-color;
   }
 
-  .fa-behance,
-  .fa-behance-square {
-    color: $behance-color;
-  }
-
-  .fa-bitbucket {
-    color: $bitbucket-color;
-  }
-
-  .fa-dribbble,
-  .fa-dribbble-square {
-    color: $dribbble-color;
-  }
-
-  .fa-facebook,
-  .fa-facebook-square,
-  .fa-facebook-f {
-    color: $facebook-color;
-  }
-
-  .fa-flickr {
-    color: $flickr-color;
-  }
-
-  .fa-foursquare {
-    color: $foursquare-color;
-  }
-
-  .fa-github,
-  .fa-github-alt,
-  .fa-github-square {
-    color: $github-color;
-  }
-
-  .fa-gitlab {
-    color: $gitlab-color;
-  }
-
-  .fa-instagram {
-    color: $instagram-color;
-  }
-
-  .fa-keybase {
-    color: $keybase-color;
-  }
-
-  .fa-lastfm,
-  .fa-lastfm-square {
-    color: $lastfm-color;
-  }
-
-  .fa-linkedin,
-  .fa-linkedin-in {
-    color: $linkedin-color;
-  }
-
-  .fa-mastodon,
-  .fa-mastodon-square {
-    color: $mastodon-color;
-  }
-
-  .fa-pinterest,
-  .fa-pinterest-p,
-  .fa-pinterest-square {
-    color: $pinterest-color;
-  }
-
-  .fa-reddit {
-    color: $reddit-color;
-  }
-
-  .fa-rss,
-  .fa-rss-square {
-    color: $rss-color;
-  }
-
-  .fa-soundcloud {
-    color: $soundcloud-color;
-  }
-
-  .fa-stack-exchange,
-  .fa-stack-overflow {
-    color: $stackoverflow-color;
-  }
-
-  .fa-tumblr,
-  .fa-tumblr-square {
-    color: $tumblr-color;
-  }
-
-  .fa-twitter,
-  .fa-twitter-square {
-    color: $twitter-color;
-  }
-
-  .fa-vimeo,
-  .fa-vimeo-square,
-  .fa-vimeo-v {
-    color: $vimeo-color;
-  }
-
-  .fa-vine {
-    color: $vine-color;
-  }
-
-  .fa-youtube {
-    color: $youtube-color;
-  }
-
-  .fa-xing,
-  .fa-xing-square {
-    color: $xing-color;
+  @each $color, $icons in (
+    $behance-color: ".fa-behance, .fa-behance-square",
+    $bitbucket-color: ".fa-bitbucket",
+    $dribbble-color: ".fa-dribbble, .fa-dribbble-square",
+    $facebook-color: ".fa-facebook, .fa-facebook-square, .fa-facebook-f",
+    $flickr-color: ".fa-flickr",
+    $foursquare-color: ".fa-foursquare",
+    $github-color: ".fa-github, .fa-github-alt, .fa-github-square",
+    $gitlab-color: ".fa-gitlab",
+    $instagram-color: ".fa-instagram",
+    $keybase-color: ".fa-keybase",
+    $lastfm-color: ".fa-lastfm, .fa-lastfm-square",
+    $linkedin-color: ".fa-linkedin, .fa-linkedin-in",
+    $mastodon-color: ".fa-mastodon, .fa-mastodon-square",
+    $pinterest-color: ".fa-pinterest, .fa-pinterest-p, .fa-pinterest-square",
+    $reddit-color: ".fa-reddit",
+    $rss-color: ".fa-rss, .fa-rss-square",
+    $soundcloud-color: ".fa-soundcloud",
+    $stackoverflow-color: ".fa-stack-exchange, .fa-stack-overflow",
+    $tumblr-color: ".fa-tumblr, .fa-tumblr-square",
+    $twitter-color: ".fa-twitter, .fa-twitter-square",
+    $vimeo-color: ".fa-vimeo, .fa-vimeo-square, .fa-vimeo-v",
+    $vine-color: ".fa-vine",
+    $xing-color: ".fa-xing, .fa-xing-square",
+    $youtube-color: ".fa-youtube",
+  ) {
+    #{$icons} {
+      color: $color;
+    }
   }
 }
 
