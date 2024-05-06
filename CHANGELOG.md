@@ -4,7 +4,7 @@
 
 ### Bug Fixes
 
-- Fix copy button going out of range for invalid syntax highlighting blocks.
+- Disable copy button on invalid syntax highlighting blocks to avoid positioning issues.
 
 ### Enhancements
 
