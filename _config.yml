@@ -15,6 +15,8 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+futrue                   : true
+published                : true
 locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
