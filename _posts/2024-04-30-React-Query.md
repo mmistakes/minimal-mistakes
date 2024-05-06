@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "React Query (1)"
+title: "React Query란?"
 published: true
 ---
 
@@ -16,3 +16,7 @@ published: true
 > React Query는 fetching, caching, 서버 데이터와의 동기화를 지원하는 라이브러리
 
 즉, React 환경에서 서버와 지속적으로 동기화 하도록 지원한다.
+
+비동기 데이터를 불러오는 과정에서 발생하는 문제를 해결하는 건데, 어떤 문제들을 어떻게 해결하는지 확인해보자.
+
+# 캐
