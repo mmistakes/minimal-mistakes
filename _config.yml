@@ -20,7 +20,7 @@ title                    : "Jinny's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jinny-EJ"
-description              : "Hello world."
+description              : "차근차근 기록중."
 url                      : "https://Jinny-EJ.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
