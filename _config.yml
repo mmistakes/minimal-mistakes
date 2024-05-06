@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "EUNJIN SHIN"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/main_picture.jpg"
   bio              : "PERFECT"
   location         : "Wherever"
   #email            : #"ghghgh0202@gmail.com"
