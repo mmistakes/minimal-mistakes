@@ -5,7 +5,7 @@
 ### Bug Fixes
 
 - Disable copy button on invalid syntax highlighting blocks to avoid positioning issues.
-- Fix typo for `fa-dribble` in `_utilities.scss`.
+- Fix typo for `fa-dribbble` in `_utilities.scss`.
 - Restrict "auto scroll sticky ToC to content" feature to Chromium browsers for now. [#4826](https://github.com/mmistakes/minimal-mistakes/issues/4826)
 
 ### Documentation & Maintenance
