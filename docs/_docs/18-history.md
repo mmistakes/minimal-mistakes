@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-06T21:37:37+08:00'
+last_modified_at: '2024-05-07T14:20:29+08:00'
 toc: false
 ---
 
@@ -21,6 +21,7 @@ toc: false
 
 - Disable copy button on invalid syntax highlighting blocks to avoid positioning issues.
 - Fix typo for `fa-dribble` in `_utilities.scss`.
+- Restrict "auto scroll sticky ToC to content" feature to Chromium browsers for now. [#4826](https://github.com/mmistakes/minimal-mistakes/issues/4826)
 
 ### Documentation & Maintenance
 
