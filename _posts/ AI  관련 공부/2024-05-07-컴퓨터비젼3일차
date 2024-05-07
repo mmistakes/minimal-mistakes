@@ -1,0 +1,44 @@
+---
+title: "컴퓨터 비전의 모든 것  "
+date: 2024-05-07
+last_modified_at: 2024-05-07
+categories:
+  - 컴퓨터비전
+tags:
+  - 컴퓨터비전
+
+
+published: true
+toc: true
+toc_sticky: true
+---
+
+# 사전에
+최초의 end-to-end segmentation 모델 FCN을 시작으로 Hypercolumn 모델을  배웁니다.
+
+다음으로 segmentation의 breakThrough(돌파구- 이런것 한글로 쓰든가)
+
+U- net 에 대해 공부하고 pytoruch 코드로 구현을 살펴 봅니다.
+끝으로 최근까지 좋은 성능을 보이는 DeepLab V3에 대해 보인다
+
+# 핵심단어
+1. segmantic segmentation (영상 분할)
+2. Fully Convolutional Networks (FCN)
+3. Hypercolumn
+4. U-Net
+5. DeepLab
+
+# 강의 끄적이기
+Semantic Segmentation은 픽셀 단위로 분류를 수행하는 것
+
+FCN은 Semantic Segmentation을 위해 제안된 첫 번째 end-to-end 모델입니다
+. 이전에는 다양한 알고리즘을 결합하여 사용했기 때문에 학습가능한 부분이 적었던 반면, FCN의 경우 입력 단부터 출력 단까지 모두 학습가능한 end-to-end 구조를 가집니다. 또한 입력 이미지의 해상도와 상관없이 동작할 수 있어 호환성이 높은 구조를 가진다고 볼 수 있습니다.
+
+upsampling 
+
+# 출처
+1. 메인 학습 
+https://www.boostcourse.org/ai340/lecture/1463030
+
+2. 참조
+https://velog.io/@babydeveloper/Semantic-segmentation
