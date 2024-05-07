@@ -26,7 +26,7 @@ The IQM adapter packages has been updated.
 
 As a result you will be able to use `qiskit~=0.45.1` and `cirq-core[contrib] ~= 1.2` which provide some significant changes. 
 
-The new software comes with relevant changes for Helmi:
+Here are the relevant changes for Helmi:
 
 - [Cuda quantum jobs can be run](https://nvidia.github.io/cuda-quantum/latest/using/backends/hardware.html#iqm).
 - Configurable max_circuit has been implemented to allow users control the number of circuits included in a batch. For the description of the property see [here](https://iqm-finland.github.io/qiskit-on-iqm/api/iqm.qiskit_iqm.iqm_provider.IQMBackend.html#iqm.qiskit_iqm.iqm_provider.IQMBackend.max_circuits).
