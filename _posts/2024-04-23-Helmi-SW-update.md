@@ -19,14 +19,14 @@ The IQM adapter packages has been updated.
 
 | Package        | Previous version | New Version   |
 |----------------|------------------|---------------|
-| iqm-client     | 12.5             | >=16.0 < 17.0 |
+| iqm-client     | 12.5             | >=17.1 < 18.0 |
 | iqm-cortex-cli | 4.3              | >=5.8 < 6.0   |
-| qiskit-iqm     | 9.0              | >=12.0 < 13.0 |
-| cirq-iqm       | 11.9             | >=13.0 < 14.0 |
+| qiskit-iqm     | 9.0              | >=13.0 < 14.0 |
+| cirq-iqm       | 11.9             | >=14.0 < 15.0 |
 
 As a result you will be able to use `qiskit~=0.45.1` and `cirq-core[contrib] ~= 1.2` which provide some significant changes. 
 
-The new software comes with interesting updates:
+The new software comes with relevant changes for Helmi:
 
 - [Cuda quantum jobs can be run](https://nvidia.github.io/cuda-quantum/latest/using/backends/hardware.html#iqm).
 - Configurable max_circuit has been implemented to allow users control the number of circuits included in a batch. For the description of the property see [here](https://iqm-finland.github.io/qiskit-on-iqm/api/iqm.qiskit_iqm.iqm_provider.IQMBackend.html#iqm.qiskit_iqm.iqm_provider.IQMBackend.max_circuits).
