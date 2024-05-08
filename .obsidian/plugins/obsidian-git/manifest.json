@@ -1,0 +1,9 @@
+{
+    "id": "obsidian-git",
+    "name": "Git",
+    "description": "Backup your vault with Git.",
+    "isDesktopOnly": false,
+    "fundingUrl": "https://ko-fi.com/vinzent",
+    "js": "main.js",
+    "version": "2.24.1"
+}
