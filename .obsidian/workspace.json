@@ -129,13 +129,21 @@
                 "file": "_posts/2024-03-24-first.md"
               }
             }
+          },
+          {
+            "id": "15f9e4b82a29ee8a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
