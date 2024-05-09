@@ -7,7 +7,7 @@
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
+<script async>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
@@ -32,7 +32,7 @@
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    <script src="{{ script | relative_url }}" defer></script>
   {% endfor %}
 {% endif %}
 
