@@ -2,7 +2,7 @@
 title: "A 2021 Retrospective"
 date: 2021-12-31
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [meta]
 excerpt: "Wrapping up 2021 with an overview of what's happened this year at Rock the JVM."
 ---
@@ -11,7 +11,7 @@ excerpt: "Wrapping up 2021 with an overview of what's happened this year at Rock
 
 ## 1. The Blog
 
-Last year, I promised the blog would add a new article every week, give or take. Out of 52 weeks of the year, the blog added 36 articles, which means roughly an article every week and a half. Although not terrible, this rate could be improved. However, the scale, length and depth of the articles improved dramatically, and I'm very happy with the rate + depth combination of the blog this year, compared to last year. 
+Last year, I promised the blog would add a new article every week, give or take. Out of 52 weeks of the year, the blog added 36 articles, which means roughly an article every week and a half. Although not terrible, this rate could be improved. However, the scale, length and depth of the articles improved dramatically, and I'm very happy with the rate + depth combination of the blog this year, compared to last year.
 
 By far the most significant improvement of the blog was in welcoming guest posts. [Riccardo Cardin](https://github.com/rcardin) quickly became a regular contributor, with an in-depth article every month or so. [Giannis Polyzos](https://github.com/polyzos) also contributed with an introduction to Pulsar, which is growing like crazy and quickly becoming a sought-after piece of technology. I suspect we'll see more in-depth coverage from these folks, I'm super proud of them and of what we've managed to publish.
 

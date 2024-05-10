@@ -2,7 +2,7 @@
 title: "Scala 3: Extension Methods"
 date: 2021-04-06
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
 excerpt: "Deconstructing extension methods, one of the most exciting features of the upcoming Scala 3."
 ---
@@ -48,7 +48,7 @@ and the code would compile &mdash; that's because the compiler will silently tur
 new PersonLike("Daniel").greet
 ```
 
-In other words, the `greet` method is an extension to the String type, even though we did not touch the String type at all. 
+In other words, the `greet` method is an extension to the String type, even though we did not touch the String type at all.
 
 Libraries like [Cats](https://typelevel.org/cats) (which I [teach](https://rockthejvm.com/p/cats) here on the site) do this all the time.
 
@@ -65,7 +65,7 @@ So how are extension methods declared?
 For our scenario with the string taking an extra method `greet` (which is person-like), we can write an explicit `extension` clause:
 
 ```scala3
-extension (str: String) 
+extension (str: String)
     def greet: String = Person(str).greet
 ```
 
@@ -92,7 +92,7 @@ extension [A](tree: Tree[A])
   def filter(predicate: A => Boolean): Boolean = tree match {
     case Leaf(value) => predicate(value)
     case Branch(left, right) => left.filter(predicate) || right.filter(predicate)
-  }     
+  }
 ```
 
 So the method is generic, in that it can "attach" to any `Tree[T]`.
@@ -166,30 +166,3 @@ Or even in both places, if you'd like.
 In this article, we've deconstructed the mechanism of `extension` methods. This feature, coupled with the given/using combo, allows for some powerful abstractions including [type classes](/why-are-typeclasses-useful/), DSLs and many more.
 
 I'm pretty confident that Scala 3 will rock. We may have some contention [here and there](/scala-3-indentation/) &mdash; and I absolutely hate the 3-spaces indentation which I will not follow if it becomes "convention" &mdash; but overall, Scala is getting more mature, more expressive, easy and fun to read and write. Which is what a language should be.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

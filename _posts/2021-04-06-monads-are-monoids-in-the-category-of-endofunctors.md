@@ -2,12 +2,12 @@
 title: "Monads are Monoids in the Category of Endofunctors - Scala version, No Psychobabble"
 date: 2021-04-06
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, mathematics, category theory]
 excerpt: "What's the problem?"
 ---
 
-This article will attempt to demystify one of the most condensed and convoluted pieces of abstract math to ever land in functional programming. 
+This article will attempt to demystify one of the most condensed and convoluted pieces of abstract math to ever land in functional programming.
 
 The description of monads as "just monoids in the category of endofunctors" is commonly attributed the book [Categories for the Working Mathematician](https://www.amazon.co.uk/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038), and then appeared in many other places. Some people [made some fun of it](http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html). There were quite a few articles on the topic, most littered with mathematical jargon, and almost none in Scala.
 
@@ -68,7 +68,7 @@ trait Monoid[T] extends FunctionalMonoid[T] {
     // the "official" API
     def empty: T
     def combine(a: T, b: T): T
-    
+
     // the hidden interface
     def unit = _ => empty
     override def combine = t => combine(t._1, t._2)
@@ -128,7 +128,7 @@ trait Monoid[T] extends FunctionalMonoid[T] {
   // the official interface
   def empty: T
   def combine(a: T, b: T): T
-  
+
   // the hidden interface
   def unit = _ => empty
   override def combine = t => combine(t._1, t._2)
@@ -154,7 +154,7 @@ trait Functor[F[_]] {
 }
 ```
 
-Functors describe the structure of "mappable" things, like lists, options, Futures, and many others. 
+Functors describe the structure of "mappable" things, like lists, options, Futures, and many others.
 
 For practical reasons why we need functors in Scala, check out the resources above. As for the mathematical properties of functors, they describe "mappings", i.e. relationships between categories, while preserving their structure. The abstract mathematical functor definition is very general, but thankfully we don't need it here. The functors we know (as functional programmers) operate on a single category (the category of Scala types) and describe mappings to the same category (the category of Scala types). In mathematical jargon, this special kind of functor (from a category to itself) is called an *endofunctor*.
 
@@ -190,7 +190,7 @@ object ListToOptionTrans extends FunctorNatTrans[List, Option] {
 }
 ```
 
-Even though this might not make too much sense right now, I'm going to remind you of that very general super-monoid definition: 
+Even though this might not make too much sense right now, I'm going to remind you of that very general super-monoid definition:
 
 ```scala3
 trait MonoidInCategoryK2[T[_], ~>[_[_], _[_]], U[_], P[_]]
@@ -226,7 +226,7 @@ For our purposes, we want to create a "product" concept between functors, by wra
 type HKTComposition[F[_], G[_], A] = F[G[A]]
 ```
 
-But because we're working with endofunctors, we're essentially doing 
+But because we're working with endofunctors, we're essentially doing
 
 ```scala3
 type SameTypeComposition[F[_], A] = F[F[A]]
@@ -248,7 +248,7 @@ We can write a special type of `MonoidInCategoryK2`, where
 Written in Scala, the header of this special monoid looks like this:
 
 ```scala3
-trait MonoidInCategoryOfFunctors[F[_]: Functor] 
+trait MonoidInCategoryOfFunctors[F[_]: Functor]
 extends MonoidInCategoryK2[F, FunctorNatTrans, Id, [A] =>> F[F[A]]] {
     type EndofunctorComposition[A] = F[F[A]] // instead of the type lambda
 }
@@ -275,7 +275,7 @@ object ListSpecialMonoid extends MonoidInCategoryOfFunctors[List] {
         // remember Id[A] = A
         override def apply[A](fa: Id[A]): List[A] = List(fa) // create a list
     }
-    
+
     // remember     EndofunctorComposition[A] = F[F[A]]
     // we know      F = List
     // so           EndofunctorComposition[A] = List[List[A]]
@@ -290,8 +290,8 @@ The thing is, because the `unit` and `combine` methods are so general and abstra
 ```scala3
 val simpleList = ListSpecialMonoid.combine(
     List(
-        List(1,2,3), 
-        List(4,5,6), 
+        List(1,2,3),
+        List(4,5,6),
         List(7,8,9)
         )
     ) // List(1,2,3,4,5,6,7,8,9)
@@ -302,17 +302,17 @@ Take a break here to to observe something. Notice that the concept of combinatio
 Now, we haven't actually made this whole journey just to use the clunky `unit` and `combine` methods. We need something more useful.
 
 ```scala3
-trait MonoidInCategoryOfFunctors[F[_]: Functor] 
+trait MonoidInCategoryOfFunctors[F[_]: Functor]
 extends MonoidInCategoryK2[F, FunctorNatTrans, Id, [A] =>> F[F[A]]] {
     // whoever implements this trait will implement empty/combine
-    
+
     type EndofunctorComposition[A] = F[F[A]] // instead of the type lambda
 
     // we can define two other functions
-    def pure[A](a: A): F[A] = 
+    def pure[A](a: A): F[A] =
         unit(a)
 
-    def flatMap[A, B](ma: F[A])(f: A => F[B]): F[B] = 
+    def flatMap[A, B](ma: F[A])(f: A => F[B]): F[B] =
         combine(summon[Functor[F]].map(ma)(f))
 }
 ```
@@ -343,7 +343,7 @@ trait Monad[F[_]] extends Functor[F] {
     // the public API - don't touch this
     def pure[A](a: A): F[A]
     def flatMap[A, B](ma: F[A])(f: A => F[B]): F[B]
-    
+
     // the method from Functor, in terms of pure + flatMap
     override def map[A, B](fa: F[A])(f: A => B) = flatMap(fa)(a => pure(f(a)))
 }
@@ -366,15 +366,15 @@ This is a piece of cake compared to the rest of the article. However, once we wr
 type EndofunctorComposition[A] = F[F[A]] // same as before
 
 // auxiliary function I made
-def flatten[A](ffa: F[F[A]]): F[A] = flatMap(ffa)(x => x) 
+def flatten[A](ffa: F[F[A]]): F[A] = flatMap(ffa)(x => x)
 
 // the methods of our general monoid
-def unit: FunctorNatTrans[Id, F] = 
+def unit: FunctorNatTrans[Id, F] =
     new FunctorNatTrans[Id, F] {
       override def apply[A](fa: Id[A]) = pure(fa)
     }
 
-def combine: FunctorNatTrans[EndofunctorComposition, F] = 
+def combine: FunctorNatTrans[EndofunctorComposition, F] =
     new FunctorNatTrans[EndofunctorComposition, F] {
       override def apply[A](fa: F[F[A]]) = flatten(fa)
     }
@@ -389,8 +389,8 @@ trait Monoid[F[_]] extends Functor[F]
 we can say &mdash; without any change to our public API &mdash; that
 
 ```scala3
-trait Monad[F[_]] 
-extends Functor[F] 
+trait Monad[F[_]]
+extends Functor[F]
 with MonoidInCategoryK2[F, FunctorNatTrans, Id, [A] =>> F[F[A]]]
 ```
 

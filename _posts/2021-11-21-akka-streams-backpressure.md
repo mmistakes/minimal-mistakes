@@ -2,7 +2,7 @@
 title: "Akka Streams Backpressure"
 date: 2021-11-21
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka, akka streams]
 excerpt: "Akka Streams implements backpressure, a critical component of the Reactive Streams specification. This article is a demonstration of this mechanism."
 ---
@@ -41,7 +41,7 @@ After that, we'll spin up a simple application with Akka Streams by creating an 
 ```scala
 object AkkaStreamsBackpressure {
   implicit val system: ActorSystem[_] = ActorSystem(Behaviors.empty, "StreamsSystem")
-  
+
   // rest of the code to follow
 }
 ```
@@ -109,13 +109,13 @@ What we see in the console is:
 
 and each pair is printed once per second (as the bottleneck is the flow). Is this backpressure? In effect, our flow is slowed down, isn't it?
 
-The answer might be surprising: this is _not_ an example of backpressure. When we connect Akka Streams components in this way, i.e. `source.via(debuggingFlow).to(slowSink)`, the Akka Streams library will make an interesting assumption. 
+The answer might be surprising: this is _not_ an example of backpressure. When we connect Akka Streams components in this way, i.e. `source.via(debuggingFlow).to(slowSink)`, the Akka Streams library will make an interesting assumption.
 
-* Because we'd like these components to be as fast as possible in real life, we assume that each transformation along the entire graph is very quick. 
-* Because components run on top of actors, sending elements between subsequent components is based on message exchanges between actors. 
+* Because we'd like these components to be as fast as possible in real life, we assume that each transformation along the entire graph is very quick.
+* Because components run on top of actors, sending elements between subsequent components is based on message exchanges between actors.
 * Because the components are considered to be fast, message exchanges are assumed to be a significant _overhead_: the time for a message to be sent, enqueued and received is (in this assumption) comparable with the time it takes for the data to be processed.
 
-For these reasons, Akka Streams automatically _fuses_ components together: if we connect components with the `via` and `to` methods, Akka Streams will actually run them on _the same actor_ to eliminate these message exchanges. The direct consequence is that all data processing happens _sequentially_. 
+For these reasons, Akka Streams automatically _fuses_ components together: if we connect components with the `via` and `to` methods, Akka Streams will actually run them on _the same actor_ to eliminate these message exchanges. The direct consequence is that all data processing happens _sequentially_.
 
 But wait, isn't Akka Streams supposed to parallelize everything, because it's based on actors?
 
@@ -200,7 +200,7 @@ Because the source + flow combo and the sink run on different actors, now we hav
 Here's a breakdown of what's happening in this case:
 
 1. The sink demands an element, which starts the flow + source.
-2. In a snap, the sink receives an element, but it takes 1 second to process it, so it will send a _backpressure signal_ upstream. 
+2. In a snap, the sink receives an element, but it takes 1 second to process it, so it will send a _backpressure signal_ upstream.
 3. During that time, the flow will attempt to keep the throughput of the source, and _buffer 16 elements_ internally.
 4. Once the flow's buffer is full, it will stop receiving new elements.
 5. Once per second, the sink will continue to receive an element and print it to the console (the second, slow batch).

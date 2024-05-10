@@ -2,12 +2,12 @@
 title: "The Skunk Scala Library for Database Interaction: A Comprehensive Guide"
 date: 2024-04-25
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [skunk]
 excerpt: "Learn how to use the Skunk library to interact with PostgreSQL database in a type-safe and non-blocking manner."
 ---
 
-_by [Derick Bomen](https://www.linkedin.com/in/bomen-derick-b6b06517b/)_ 
+_by [Derick Bomen](https://www.linkedin.com/in/bomen-derick-b6b06517b/)_
 
 ## 1. Introduction
 
@@ -140,7 +140,7 @@ import skunk.Session
 import com.rockthejvm.domain.Config
 
 object DbConnection {
-  def single[F[_] : Temporal : Trace : Network : Console](config: Config): Resource[F, Session[F]] = 
+  def single[F[_] : Temporal : Trace : Network : Console](config: Config): Resource[F, Session[F]] =
     Session.single(
       host = config.host,
       port = config.port,
@@ -149,7 +149,7 @@ object DbConnection {
       database = config.database,
     )
 
-  def pooled[F[_] : Temporal : Trace : Network : Console](config: Config): Resource[F, Resource[F, Session[F]]] = 
+  def pooled[F[_] : Temporal : Trace : Network : Console](config: Config): Resource[F, Resource[F, Session[F]]] =
     Session.pooled(
       host = config.host,
       port = config.port,
@@ -162,7 +162,7 @@ object DbConnection {
 ```
 Let's take a closer look at creating a database connection, as it involves several given instances that may seem overwhelming at first. However, we're here to help and provide a clear explanation of the purpose and use of each of these instances, to help you move forward with confidence.
 
-In Skunk, given instances such as `Temporal, Trace, Network, and Console` play essential roles in defining database connections using `Session.single` and `Session.pooled`. These instances are used to handle various aspects of database interaction, logging, and tracing. 
+In Skunk, given instances such as `Temporal, Trace, Network, and Console` play essential roles in defining database connections using `Session.single` and `Session.pooled`. These instances are used to handle various aspects of database interaction, logging, and tracing.
 
 1. `Temporal`
   * **Purpose**: Work with time-related effects that provide operations for dealing with time-based computations such as delays, timeouts, and scheduling.
@@ -225,7 +225,7 @@ In Skunk, given instances such as `Temporal, Trace, Network, and Console` play e
 
       case Right(configValues) =>
         singleSession(configValues) *> pooledSession(configValues) *> IO.pure(ExitCode.Success)
-    }   
+    }
   }
   ```
   We first load configuration values from `application.conf`. If values are properly set up, we pass the config values to both methods `singleSession` and `pooledSession` to establish our database connections with the help of `DbConnection` object we previously created and run both connections in a sequence. Otherwise, we print errors to the console to better understand what went wrong. We now test our database connections by fetching the current date and time of our system, and if our connections was succesfully established, we should have an output similar to the following.
@@ -384,7 +384,7 @@ trait Repository[F[_], E](session: Session[F]) {
 ```
 Our trait takes an instance of `Session[F]` useful to establish a database session. However, this is possible only for `Scala 3` as the app written in this article is based on Scala 3 features.
 
-We a `findOneBy` method that can be used to fetch a specific row from a table such as fetching a user given the user's id. 
+We a `findOneBy` method that can be used to fetch a specific row from a table such as fetching a user given the user's id.
 An `update` method for operations that update the state of the database such as deleting from a database.
 
 ###  9.2. User Repository
@@ -468,7 +468,7 @@ object UserRepository {
 }
 ```
 The `UserRepository` defines methods that allow us to interact with our database. It extends our `Repository` trait and specifies the data type that the repository will handle, which in this case is `User`.
-A **smart constructor** is placed in its companion object which is used to enforce constraints and control the creation of our `UserRepository` instances. 
+A **smart constructor** is placed in its companion object which is used to enforce constraints and control the creation of our `UserRepository` instances.
 
 ```scala
 def make[F[_]: Sync](session: Session[F]): F[UserRepository[F]] =
@@ -502,7 +502,7 @@ import natchez.Trace
 import skunk.Session
 
 object DbConnection {
-  def single[F[_] : Temporal : Trace : Network: Console](config: Config): Resource[F, Session[F]] = 
+  def single[F[_] : Temporal : Trace : Network: Console](config: Config): Resource[F, Session[F]] =
     Session.single(
       host = config.host,
       port = config.port,
@@ -512,7 +512,7 @@ object DbConnection {
     )
 
   // max = 10 represent a maximum of 10 concurrent sessions
-  def pooled[F[_] : Temporal : Trace : Network: Console](config: Config): Resource[F, Resource[F, Session[F]]] = 
+  def pooled[F[_] : Temporal : Trace : Network: Console](config: Config): Resource[F, Resource[F, Session[F]]] =
     Session.pooled(
       host = config.host,
       port = config.port,
@@ -598,7 +598,7 @@ Please ensure that your Docker container is running before executing your `main.
 
 ## 10. Conclusion
 
-In this comprehensive guide, we've explored the Skunk Scala library and its features for interacting with PostgreSQL databases by creating a reusable application that performs basic CRUD operations. Skunk's type-safe SQL interpolation, automatic type mapping, and resource-safe session management make it an excellent choice for building robust and scalable Scala applications. By mastering Skunk's core concepts and leveraging its features effectively, you can streamline PostgreSQL database interactions and focus on building innovative features for their applications. 
+In this comprehensive guide, we've explored the Skunk Scala library and its features for interacting with PostgreSQL databases by creating a reusable application that performs basic CRUD operations. Skunk's type-safe SQL interpolation, automatic type mapping, and resource-safe session management make it an excellent choice for building robust and scalable Scala applications. By mastering Skunk's core concepts and leveraging its features effectively, you can streamline PostgreSQL database interactions and focus on building innovative features for their applications.
 Happy coding with Skunk!
 Please note that for more detailed information, you can visit the [official documentation of Skunk](https://typelevel.org/skunk/tutorial/Setup.html).
 

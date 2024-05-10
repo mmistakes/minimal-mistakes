@@ -2,7 +2,7 @@
 title: "Scala 3: Anti-Givens"
 date: 2021-06-30
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
 excerpt: "Showing a Scala 3 trick that few developers know: exploiting the _absence_ of a given instance to enforce type relationships."
 ---
@@ -46,9 +46,9 @@ def processListsSameTypeV2[A](la: List[A], lb: List[A]): List[(A, A)] =
   processLists[A,A](la, lb)
 ```
 
-In this way, you won't be able to pass two lists of different types. 
+In this way, you won't be able to pass two lists of different types.
 
-However, there is a more complex, much less known, but more powerful technique. 
+However, there is a more complex, much less known, but more powerful technique.
 
 In Scala, the standard library contains the little-known type `=:=[A,B]` (also usable infix as `A =:= B`) which denotes the "equality" of types A and B. The compiler is able to synthesize instances of `=:=[A,A]` wherever we have methods requiring an implicit argument or a `using` clause. In our case, we can write
 
@@ -60,10 +60,10 @@ def processListsSameTypeV3[A, B](la: List[A], lb: List[B])(using A =:= B): List[
 which means that wherever we call this method with some concrete types, the compiler will search for a given instance of `=:=` for those particular types. In our case, we have
 
 ```scala3
-// works 
-val sameKindOfLists = processListsSameTypeV3(List(1,2,3), List(4,5)) 
+// works
+val sameKindOfLists = processListsSameTypeV3(List(1,2,3), List(4,5))
 // doesn't work
-val differentKindsOfLists = processListsSameTypeV3(List(1,2,3), List("black", "white")) 
+val differentKindsOfLists = processListsSameTypeV3(List(1,2,3), List("black", "white"))
 ```
 
 In the first case, the call works because the compiler can synthesize an instance of `=:=[Int, Int]`, whereas in the second case the compiler cannot find an instance of `=:=[Int, String]` and so it won't compile.
@@ -102,4 +102,4 @@ The first one doesn't compile now, because the compiler can synthesize an instan
 
 ## 4. Conclusion
 
-You learned another trick for manipulating the Scala 3 compiler to enforce type relationships at compile time. More to come! 
+You learned another trick for manipulating the Scala 3 compiler to enforce type relationships at compile time. More to come!

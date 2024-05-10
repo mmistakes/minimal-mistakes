@@ -2,7 +2,7 @@
 title: "Two-Factor Authentication in Scala with Http4s"
 date: 2023-07-27
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how to write a two-factor authentication mechanism using one-time passwords (HOTP and TOTP) with Scala and Http4s."
 toc: true
@@ -12,14 +12,14 @@ toc_label: "In this article"
 _by [Herbert Kateu](https://github.com/hkateu)_
 
 > Hey, it's Daniel here. You're reading a big article about a real-life use of the Http4s library. Herbert outdid himself in this article!
-> 
+>
 > If you want to master the Typelevel Scala libraries (including Http4s) with real-life practice, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage) course, a full-stack project-based course. It's my biggest and most jam-packed course yet.
 
 ## 1. Introduction
 
 This article is a continuation of the authentication methods that were covered in [the other article on http4s authentication](/scala-http4s-authentication). Here we will cover two more advanced authentication methods which include One Time Password (OTP) and Two Factor Authentication (2FA).
 
-You can find the entire code on [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/otpauth/src/main/scala/com/xonal). 
+You can find the entire code on [GitHub](https://github.com/hkateu/MyHttp4sCode/tree/main/otpauth/src/main/scala/com/xonal).
 
 ### 1.1 Requirements
 
@@ -354,7 +354,7 @@ class OtpService(generator: Generator, user: UserDB) {
 
   private val totpGen =
     new TOTPGenerator.Builder(secret)
-      .withHOTPGenerator { builder => 
+      .withHOTPGenerator { builder =>
         builder.withPasswordLength(6)
         builder.withAlgorithm(HMACAlgorithm.SHA256)
       }
@@ -447,7 +447,7 @@ class OtpService(generator: Generator, user: UserDB) {
 
   private val totpGen =
     new TOTPGenerator.Builder(secret)
-      .withHOTPGenerator { builder => 
+      .withHOTPGenerator { builder =>
         builder.withPasswordLength(6)
         builder.withAlgorithm(HMACAlgorithm.SHA256)
       }

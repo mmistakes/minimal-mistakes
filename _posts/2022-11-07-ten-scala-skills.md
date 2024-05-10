@@ -2,7 +2,7 @@
 title: "Top 10 Skills (Mostly Mental Models) to Learn to Be a Scala Developer"
 date: 2022-11-07
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, tips]
 excerpt: "Learning Scala doesn't need to be hard. Here are 10 mental skills you can learn to be a good Scala developer."
 ---
@@ -33,7 +33,7 @@ Scala can be a difficult language without a good foundation. I normally teach Sc
 
 ```scala
 object Main {
-	def main(args: Array[String]): Unit = 
+	def main(args: Array[String]): Unit =
 		println("Hello, Scala")
 }
 ```
@@ -138,13 +138,3 @@ Scala is immensely powerful, and the features that I've outlined so far will get
 # Conclusion
 
 In this article, we've explored some critical skills and concepts that you can learn as a Scala developer. If you learn the above, you'll be well ahead of most folks learning Scala from bits and pieces around the internet or StackOverflow.
-
-
-
-
-
-
-
-
-
-

@@ -2,9 +2,9 @@
 title: "Broadcast Joins in Apache Spark: an Optimization Technique"
 date: 2020-10-12
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [spark, optimization]
-excerpt: "Broadcast joins in Apache Spark are one of the most bang-for-the-buck techniques for optimizing speed and avoiding memory issues. Let's take a look." 
+excerpt: "Broadcast joins in Apache Spark are one of the most bang-for-the-buck techniques for optimizing speed and avoiding memory issues. Let's take a look."
 ---
 
 This article is for the Spark programmers who know some fundamentals: how data is split, how Spark generally works as a computing engine, plus some essential DataFrame APIs.
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
 )
-``` 
+```
 
 If you chose the standalone version, go ahead and start a Spark shell, as we will run some computations there. If you chose the library version, create a new Scala application and add the following tiny starter code:
 
@@ -51,7 +51,7 @@ At the same time, we have a small dataset which can easily fit in memory. For so
   - tagging each row with one of n possible tags, where n is small enough for most 3-year-olds to count to
   - finding the occurrences of some preferred values (so some sort of filter)
   - doing a variety of lookups with the small dataset acting as a lookup table
-  
+
 Regardless, we join these two datasets. Let's take a combined example and let's consider a dataset that gives medals in a competition:
 
 ```scala
@@ -111,7 +111,7 @@ In this query plan, we read the operations in dependency order from top to botto
     - a sort of the big DataFrame, which comes after
     - **a shuffle of the big DataFrame**
   - and a sort + shuffle + small filter on the small DataFrame
-  
+
 The shuffle on the big DataFrame - the one at the middle of the query plan - is required, because a join requires matching keys to stay on the same Spark executor, so Spark needs to redistribute the records by hashing the join column. This is a shuffle. But as you may already know, a shuffle is a massively expensive operation. On billions of rows it can take hours, and on more records, it'll take... more.
 
 ## 4. Enter Broadcast Joins
@@ -168,7 +168,7 @@ Spark will perform auto-detection when
 
   - it constructs a DataFrame from scratch, e.g. `spark.range`
   - it reads from files with schema and/or size information, e.g. Parquet
-  
+
 ## 6. Configuring Broadcast Join Detection
 
 The threshold for automatic broadcast join detection can be tuned or disabled. The configuration is `spark.sql.autoBroadcastJoinThreshold`, and the value is taken in bytes. If you want to configure it to another number, we can set it in the SparkSession:
@@ -178,9 +178,9 @@ spark.conf.set("spark.sql.autoBroadcastJoinThreshold", 104857600)
 ```
 
 or deactivate it altogether by setting the value to -1.
- 
+
 ```scala
-spark.conf.set("spark.sql.autoBroadcastJoinThreshold", -1) 
+spark.conf.set("spark.sql.autoBroadcastJoinThreshold", -1)
 ```
 
 This is also a good tip to use while testing your joins in the absence of this automatic optimization. We also use this in our [Spark Optimization course](https://rockthejvm.com/p/spark-optimization) when we want to test other optimization techniques.
@@ -188,9 +188,3 @@ This is also a good tip to use while testing your joins in the absence of this a
 ## 7. Conclusion
 
 Broadcast joins are one of the first lines of defense when your joins take a long time and you have an intuition that the table sizes might be disproportionate. It's one of the cheapest and most impactful performance optimization techniques you can use. Broadcast joins may also have other benefits (e.g. mitigating OOMs), but that'll be the purpose of another article.
-
-
-
-
-
-

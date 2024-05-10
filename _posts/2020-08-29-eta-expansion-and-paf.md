@@ -2,7 +2,7 @@
 title: "Eta-Expansion and Partially Applied Functions in Scala"
 date: 2020-08-29
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, functional programming]
 excerpt: "We explore some not-so-well-understood territory in the form of eta-expansion and how methods and functions interoperate."
 ---

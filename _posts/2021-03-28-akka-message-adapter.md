@@ -2,7 +2,7 @@
 title: "Akka Typed: Adapting Messages"
 date: 2021-03-28
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "In this article we'll see a good practice for organizing code, messages, domains and logic in an Akka application with Scala."
 ---
@@ -26,7 +26,7 @@ While working with Akka, your Scala code might become quite verbose, because of 
 - declaring various messages actors might support
 - organizing mini-domains inside your application
 - defining behaviors and handling every type of supported message
-- the various `Behaviors` constructs need you to pass boilerplate every time 
+- the various `Behaviors` constructs need you to pass boilerplate every time
 
 Because of this, Akka code might become quite hard to read and reason about, especially if you have lots of various actors interacting with one another. Therefore, it usually pays off to follow some good code organization practices, so your logic is not swallowed inside a large amount of boilerplate.
 
@@ -47,7 +47,7 @@ import akka.actor.typed.ActorRef
 
 object StoreDomain {
   // never use double for money - for illustration purposes
-  case class Product(name: String, price: Double) 
+  case class Product(name: String, price: Double)
 }
 
 object ShoppingCart {
@@ -55,11 +55,11 @@ object ShoppingCart {
   sealed trait Request
   case class GetCurrentCart(cartId: String, replyTo: ActorRef[Response]) extends Request
   // + some others
-  
+
   sealed trait Response
   case class CurrentCart(cartId: String, items: List[Product]) extends Response
   // + some others
-  
+
 }
 
 object Checkout {
@@ -69,7 +69,7 @@ object Checkout {
   sealed trait Request
   final case class InspectSummary(cartId: String, replyTo: ActorRef[Response]) extends Request
   // + some others
-  
+
   // this is what we send to the customer
   sealed trait Response
   final case class Summary(cartId: String, amount: Double) extends Response
@@ -114,7 +114,7 @@ def apply(shoppingCart: ActorRef[ShoppingCart.Request]): Behavior[Request] =
     // message adapter turns a ShoppingCart.Response into my own message
     val responseMapper: ActorRef[ShoppingCart.Response] =
       context.messageAdapter(rsp => WrappedSCResponse(rsp))
-      
+
     // ... rest of logic
   }
 ```
@@ -135,7 +135,7 @@ def handlingCheckouts(checkoutsInProgress: Map[String, ActorRef[Response]]): Beh
     case InspectSummary(cartId, replyTo) =>
       shoppingCart ! ShoppingCart.GetCurrentCart(cartId, responseMapper) // <--- message adapter here
       handlingCheckouts(checkoutsInProgress + (cartId -> replyTo))
-  
+
     // the wrapped message from my adapter: deal with the Shopping Cart's response here
     case WrappedSCResponse(resp) =>
       resp match {
@@ -161,8 +161,8 @@ def apply(shoppingCart: ActorRef[ShoppingCart.Request]): Behavior[Request] =
     val responseMapper: ActorRef[ShoppingCart.Response] =
       context.messageAdapter(rsp => WrappedSCResponse(rsp))
 
-    def handlingCheckouts(checkoutsInProgress: Map[String, ActorRef[Response]]): Behavior[Request] = { 
-      // ... see above 
+    def handlingCheckouts(checkoutsInProgress: Map[String, ActorRef[Response]]): Behavior[Request] = {
+      // ... see above
     }
 
     // final behavior
@@ -230,7 +230,7 @@ object AkkaMessageAdaptation {
         // adapter goes here
         val responseMapper: ActorRef[ShoppingCart.Response] =
           context.messageAdapter(rsp => WrappedSCResponse(rsp))
-          
+
         // checkout behavior's logic
         def handlingCheckouts(checkoutsInProgress: Map[String, ActorRef[Response]]): Behavior[Request] = {
           Behaviors.receiveMessage[Request] {
@@ -265,7 +265,7 @@ object AkkaMessageAdaptation {
 
     val rootBehavior: Behavior[Any] = Behaviors.setup { context =>
       val shoppingCart = context.spawn(ShoppingCart(), "shopping-cart")
-      
+
       // simple customer actor displaying the total amount due
       val customer = context.spawn(Behaviors.receiveMessage[Response] {
         case Summary(_, amount) =>
@@ -289,37 +289,3 @@ object AkkaMessageAdaptation {
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

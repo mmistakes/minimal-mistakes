@@ -2,7 +2,7 @@
 title: "Another Take at Monads: A Way to Generalize Chained Computations"
 date: 2021-08-30
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [fp]
 excerpt: "We've talked about monads quite a lot on Rock the JVM. In this article, we'll approach them from yet another angle."
 ---
@@ -74,7 +74,7 @@ Can we do better?
 
 ## 3. The Solution
 
-Guided by the DRY principle, let's abstract away this common structure. 
+Guided by the DRY principle, let's abstract away this common structure.
 
 What do we need? We need to be able to write a for-comprehension for any kind of data structure that has `map` and `flatMap`. We're getting a little ahead of ourselves, so let's try simply creating a [type class](/why-are-typeclasses-useful) that has these functionalities. We'll provide a method for
 
@@ -109,7 +109,7 @@ given monadList: Monad[List] with {
 }
 ```
 
-As an implementation, we rely on the standard Scala collection library. 
+As an implementation, we rely on the standard Scala collection library.
 
 Let's also define our unifying API:
 
@@ -162,43 +162,3 @@ combineLists(List("a", "b", "c"))(List(1,2,3,4)) == combine_v2(List("a", "b", "c
 ## 5. Conclusion
 
 Although we explored many facets of Monads on the blog and in the Cats course, in this article we saw another necessity for Monads as a type class: the need to not repeat ourselves in API design and implementation. Through Monads, we can now create general ways of chaining computations, with significant implications in our code at all levels.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

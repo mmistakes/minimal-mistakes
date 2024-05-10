@@ -2,7 +2,7 @@
 title: "Scala 3: How Givens Can Work with Implicits"
 date: 2021-04-02
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3]
 excerpt: "This quick article will show you how given instances in Scala 3 can work with Scala 2's implicits."
 ---

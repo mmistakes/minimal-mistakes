@@ -2,7 +2,7 @@
 title: "Givens vs. Implicits in Scala 3"
 date: 2020-11-18
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
 excerpt: From the previous article, you know how givens work. Let's compare them with the old Scala implicits.
 ---
@@ -27,11 +27,11 @@ In Scala 2, this suite of capabilities is available under the same `implicit` ke
 2. When we write code that requires implicits, we often need to import the _right_ implicits to make it compile. Automatic imports are really hard &mdash; the IDE can't read your mind &mdash; so that leaves us with either a) magically knowing which imports to pick, or b) frustration.
 3. Implicit `def`s without implicit arguments are capable of doing conversions. Most of the time, these conversions are dangerous and hard to pin down. Moreover, they're the easiest implicits feature to use, which makes them double-dangerous.
 4. Implicits are really hard to learn and therefore push many beginners away from Scala.
-4. Various annoyances, such as 
+4. Various annoyances, such as
     - the need to name implicits when we often don't need them
     - some syntax confusions if a method requires implicit parameters
     - the discrepancy between structure and intention: for example, an `implicit def` is never used with the meaning of a "method".
-    
+
 ## Implicit Conversions
 
 Implicit conversions now need to be made explicit. This solves a big burden.
@@ -39,14 +39,14 @@ Implicit conversions now need to be made explicit. This solves a big burden.
 Prior to Scala 3, implicit conversions were required for extension methods and for the type class pattern. Now, with Scala 3, the extension method concept is standalone, and so we can implement many of the patterns that required implicits without relying on conversions. As such, it's quite likely that the need for conversions will drop significantly. At the same time, conversions are dangerous on their own, and because they used to be so sneaky, they're double-dangerous. With Scala 3, conversions need to be declared in a specific way.
 
 Prior to Scala 3, implicit conversions were incredibly easy to write compared to their power (and danger).  Assuming a class
-                                                                                                           
+
 ```scala3
 case class Person(name: String) {
   def greet: String = s"Hey, I'm $name. Scala rocks!"
 }
 ```
 
-we could write a one-liner implicit conversion as 
+we could write a one-liner implicit conversion as
 
 ```scala3
 implicit def stringToPerson(string: String): Person = Person(string)
@@ -133,7 +133,7 @@ This is a hard one. Because givens are automatically injected wherever a `using`
 
 ```scala3
 def sortTheList[T](list: List[T])(using comparator: Comparator[T]) = ...
-``` 
+```
 
 then the IDE cannot read our mind and automatically import the right `given` instance in scope so we can call our method. Imports will still need to be explicit.
 

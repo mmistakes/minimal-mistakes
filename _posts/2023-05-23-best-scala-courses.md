@@ -2,7 +2,7 @@
 title: "A Comprehensive Guide to Choosing the Best Scala Course"
 date: 2023-05-23
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, learning]
 excerpt: "Discover the best Scala course for your learning journey. Explore the recommended courses and libraries like Cats Effect, ZIO, and Apache Spark."
 ---
@@ -84,7 +84,7 @@ The course above will check all the above boxes, and more. It has already taught
 If you have 2 hours free and want to simply have a taste of Scala instead of the full-blown experience, you can check out the [Scala at Light Speed](https://rockthejvm.com/p/scala-at-light-speed) mini-course, which is completely free, and you'll learn the quick foundations of Scala, including OOP, functional programming essentials, and even touching on some advanced features of Scala, such as given/using combos or advanced types.
 
 ## 3. How to Learn Scala as an Intermediate-Advanced User
-   
+
 Once you have a solid foundation in Scala and functional programming, it's time to take your skills to the next level. As an intermediate or advanced user, there are some topics you should focus on to enhance your expertise in Scala.
 
 ### 3.1. Intermediate Topics to Learn: Concurrency, Contextual Abstractions, Type System
@@ -107,13 +107,13 @@ Scala has a rich ecosystem of libraries, each built on a radically different set
 
 ### 4.1. Cats Effect
 
-[Cats Effect](https://typelevel.org/cats-effect) is a functional effect library that provides a general approach to handling side effects in a purely functional way. Besides the IO monad which gives you the power to write large-scale concurrent applications quite easily, Cats Effect also generalizes computations with type classes, making your code very clear, although it requires quite a bit of discipline to not get frustrated about compiler errors &mdash; which are good! Remember that the compiler is supposed to guard you from bugs. 
+[Cats Effect](https://typelevel.org/cats-effect) is a functional effect library that provides a general approach to handling side effects in a purely functional way. Besides the IO monad which gives you the power to write large-scale concurrent applications quite easily, Cats Effect also generalizes computations with type classes, making your code very clear, although it requires quite a bit of discipline to not get frustrated about compiler errors &mdash; which are good! Remember that the compiler is supposed to guard you from bugs.
 
 Cats and Cats Effect have started Typelevel, their own mini-ecosystem of libraries, including [http4s](https://http4s.org), [fs2](https://fs2.io/) and [doobie](https://tpolecat.github.io/doobie/), which are heavily used in production.
 
 I talked at length about writing production apps on the Typelevel libraries at Scalar and ScalaMatsuri 2023; you can find a polished recording [here](https://youtu.be/f7IKyXmcT8w).
 
-> If you want to master the Typelevel ecosystem in my biggest course to date, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage). We build a full-stack application that I deploy to production, on camera. 
+> If you want to master the Typelevel ecosystem in my biggest course to date, check out the [Typelevel Rite of Passage](https://rockthejvm.com/p/typelevel-rite-of-passage). We build a full-stack application that I deploy to production, on camera.
 
 If you want to learn Cats Effect, I have a long-form [Cats Effect course for Scala developers](https://rockthejvm.com/p/cats-effect). I also teach pure functional programming with [Cats](https://rockthejvm.com/p/cats) if you'd like that instead.
 
@@ -127,7 +127,7 @@ Second, it opts for more practicality with layers. With the Typelevel ecosystem,
 
 Third, type safety is guaranteed by embracing variance, one of the powerful features of the Scala type system which we explore in the advanced Scala course.
 
-ZIO is super powerful and has an emerging ecosystem of libraries that interact with databases, HTTP, ES, Cassandra, Kafka, GRPC, even Akka wrappers. If you want to learn ZIO, we have a full-blown [ZIO course here](https://rockthejvm.com/p/zio). 
+ZIO is super powerful and has an emerging ecosystem of libraries that interact with databases, HTTP, ES, Cassandra, Kafka, GRPC, even Akka wrappers. If you want to learn ZIO, we have a full-blown [ZIO course here](https://rockthejvm.com/p/zio).
 
 ### 4.3. Apache Spark
 
@@ -158,7 +158,7 @@ So, the big question: **what's a good order of topics to learn to become a Scala
 
 I'd recommend the following learning path:
 
-- Scala foundations 
+- Scala foundations
   - basics
   - advanced concepts that we discussed earlier in the article
 - one FP library ecosystem, either Typelevel or ZIO &mdash; don't ask which because you'll get into endless debates, pick one at random and stick with it

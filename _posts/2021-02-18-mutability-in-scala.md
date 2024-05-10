@@ -2,7 +2,7 @@
 title: "Mutability in Scala"
 date: 2021-02-18
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "Although frowned upon by FP purists, creating and managing mutable data structures is important in any language. Scala has some first-class features."
 ---
@@ -32,7 +32,7 @@ meaningOfLife = 45
 
 which allows us to change variables over time.
 
-Chances are you find this trivial. However, for some of you, it may very well be surprising. 
+Chances are you find this trivial. However, for some of you, it may very well be surprising.
 
 In my first days as an instructor, I used to teach Scala `val`s and `var`s in the same lesson. But then I learned &mdash; and later [wrote about]("/variables/") &mdash; how learning variables early is not useful for learning and teaching pure functional programming, because it keeps people in their current mental model. Learning FP is a different style of thinking, and changing variables prevents unlearning.
 
@@ -72,7 +72,7 @@ def age: Int = {
 }
 ```
 
-The first method `age_=` is a setter, and the other `age` (without parentheses) is a getter. 
+The first method `age_=` is a setter, and the other `age` (without parentheses) is a getter.
 
 _When they are both present_ in the class, the compiler can then accept the following sugar:
 
@@ -143,4 +143,4 @@ So you can mutate your data structures in the same style as arrays. The only res
 
 This article focused on _how_ to create mutable data structures in Scala that feel "natively" mutable. Hopefully at least one of the techniques here &mdash; I'm guessing either the `age_=(a: int)` or the `update` method &mdash; were new to you and you'll find them useful the next time you'll need mutability in Scala.
 
-In a future article, I'll discuss the _why_ of mutability and how to use such a power wisely. 
+In a future article, I'll discuss the _why_ of mutability and how to use such a power wisely.

@@ -2,7 +2,7 @@
 title: "Kotlin Context Receivers: A Comprehensive Guide"
 date: 2023-07-10
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kotlin]
 excerpt: "This tutorial describes Kotlin context receivers, a new feature of the Kotlin language for nice and controllable abstractions."
 toc: true
@@ -94,8 +94,8 @@ We need an example to work with to better introduce the context receivers featur
 
 ```kotlin
 fun printAsJson(objs: List<Job>) =
-    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
-        it.toJson() 
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") {
+        it.toJson()
     }
 ```
 
@@ -133,8 +133,8 @@ Now, we want to reuse this function in other parts of our application. However, 
 
 ```kotlin
 fun <T> printAsJson(objs: List<T>) =
-    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
-        it.toJson() 
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") {
+        it.toJson()
     }
 ```
 
@@ -240,9 +240,9 @@ Kotlin introduced a new keyword, `context`, that allows us to specify the contex
 ```kotlin
 context (JsonScope<T>)
 fun <T> printAsJson(objs: List<T>) =
-    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
-        it.toJson() 
-    } 
+    objs.joinToString(separator = ", ", prefix = "[", postfix = "]") {
+        it.toJson()
+    }
 ```
 
 The `context` keyword is followed by the type of the context receiver. The context receivers are available as the `this` reference inside the function body. Our example allows us to access the `toJson` extension function defined in the `JsonScope` interface.
@@ -270,10 +270,10 @@ Yuppy! We solved the first and the problems. What about having more than one con
 context (JsonScope<T>, Logger)
 fun <T> printAsJson(objs: List<T>): String {
     info("Serializing $objs list as JSON")
-    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
-        it.toJson() 
+    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") {
+        it.toJson()
     }
-} 
+}
 ```
 
 As we can see, we're using the `info` method of the `Logger` interface.
@@ -287,7 +287,7 @@ fun main() {
             println(printAsJson(JOBS_DATABASE.values.toList()))
         }
     }
-} 
+}
 ```
 
 Finally, we solved all the problems we found with the previous solution.
@@ -298,8 +298,8 @@ Inside the function using the `context` keyword, we can't access the context dir
 context (JsonScope<T>, Logger)
 fun <T> printAsJson(objs: List<T>): String {
     this.info("Serializing $objs list as JSON")
-    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") { 
-        it.toJson() 
+    return objs.joinToString(separator = ", ", prefix = "[", postfix = "]") {
+        it.toJson()
     }
 }
 ```
@@ -416,7 +416,7 @@ class JobController {
 
 However, the notation is very verbose and makes the code less readable. Moreover, we must ensure that a developer uses it.
 
-In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern. 
+In Scala, we had a very close problem with the [Tagless Final encoding](https://blog.rockthejvm.com/tagless-final/) pattern.
 
 > If you don't know Scala or Tagless Final, just skip the Scala code - it's a small comparison.
 
@@ -477,7 +477,7 @@ The final use case for context receivers is to help with typed errors. In fact, 
 
 ## 5. Conclusion
 
-It's time we sum up what we saw. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on the strengths and weaknesses of context receivers, and we proved that there are better solutions for dependency injection. 
+It's time we sum up what we saw. In this article, we introduced the experimental feature of context receivers in Kotlin. First, we saw the problem it addresses using the use case of type classes, and we first implemented it through extension functions and dispatcher receivers. Then, we saw how context receivers could improve the solution. Finally, we focused on the strengths and weaknesses of context receivers, and we proved that there are better solutions for dependency injection.
 
 In the next article, we will see how context receivers can help us handle typed errors functionally and how they'll be used in the next version of the Arrow library.
 

@@ -2,7 +2,7 @@
 title: "Match Types in Scala 3"
 date: 2021-02-02
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3]
 excerpt: "Scala 3 comes with lots of new features. In this episode, match types: a pattern matching on types, and a tool for more accurate type checking."
 ---
@@ -15,7 +15,7 @@ This feature (along with dozens of other changes) is explained in depth in the [
 
 Instead of describing the feature, I want to start with the need first. Let's say you are working on a library for standard data types (e.g. Int, String, Lists), and you want to write a piece of code that extracts the last constituent part of a bigger value:
 
-- assuming BigInts are made of digits, the last part is the last digit 
+- assuming BigInts are made of digits, the last part is the last digit
 - the last part of a String is a Char
 - the last part of a list is the element on its last position
 
@@ -31,8 +31,8 @@ def lastCharOf(string: String): Char =
 def lastElemOf[T](list: List[T]): T =
   if list.isEmpty then throw new NoSuchElementException
   else list.last
-```  
- 
+```
+
 Being the DRY maniac you are, you notice that the signatures of these methods is similar, and all of them have the meaning of "last piece of", so you'd like to reduce this API to one grand unifying API which can ideally work for all types. Plus, thinking about the future, you'd like to be able to extend this logic to other types as well in the future, perhaps some that are completely unrelated.
 
 How can you do that in the current Scala 2 world?
@@ -81,7 +81,7 @@ Now, for the implementation. There are special compiler rules for methods that r
 ```scala3
 def lastComponentOf[T](thing: T): ConstituentPartOf[T] = thing match
   case b: BigInt => (b % 10).toInt
-  case s: String => 
+  case s: String =>
     if (s.isEmpty) throw new NoSuchElementException
     else s.charAt(s.length - 1)
   case l: List[_] =>
@@ -161,7 +161,7 @@ As far as I'm aware &mdash; and please correct me if I'm wrong &mdash; the utili
 def method[T](argument: T): MyMatchType[T]
 ```
 
-are allowed. For our use case with `ConstituentPartOf`, if we wanted to create a more useful API, e.g. for adding a value to a container, in the likes of 
+are allowed. For our use case with `ConstituentPartOf`, if we wanted to create a more useful API, e.g. for adding a value to a container, in the likes of
 
 ```scala3
 def accumulate[T](accumulator: T, value: ConstituentPartOf[T]): T

@@ -2,7 +2,7 @@
 title: "ZIO: Introduction to Fibers"
 date: 2021-06-24
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [zio]
 excerpt: "Many libraries implement the effect pattern in the Scala ecosystem, and every one has its own concurrency model. First, let's introduce the ZIO library and its implementation of the fiber model."
 ---
@@ -293,5 +293,4 @@ Bob will make breakfast at home, no matter Alice's call. Sorry, Alice, maybe nex
 
 In the article, we briefly introduced the concept of effect and how ZIO uses it to implement concurrent execution through fibers. Then, using a simple example, we showed how to use the three primary operations available on fibers: fork, join, and interrupt.
 
-Moreover, fibers are the actual brick of concurrency programming in ZIO. A lot of concepts are built upon them, implementing richer and more complex use cases. 
-
+Moreover, fibers are the actual brick of concurrency programming in ZIO. A lot of concepts are built upon them, implementing richer and more complex use cases.

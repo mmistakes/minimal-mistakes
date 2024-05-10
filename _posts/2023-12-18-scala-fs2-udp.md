@@ -2,7 +2,7 @@
 title: "A guide to UDP in Scala with FS2"
 date: 2023-12-18
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Understand how UDP works, and how you can transition from an old Java NIO implementation to a higher level API like FS2 in Scala."
 toc: true
@@ -12,7 +12,7 @@ toc_label: "In this article"
 _by [Herbert Kateu](https://github.com/hkateu)_
 
 ## 1. Introduction
-UDP stands for User Datagram Protocol, it's a transport layer communication protocol built on top of IP that is used to transmit data across a network. It works by bundling up data in a UDP packet, adding header information, and sending these packets to the target destination. 
+UDP stands for User Datagram Protocol, it's a transport layer communication protocol built on top of IP that is used to transmit data across a network. It works by bundling up data in a UDP packet, adding header information, and sending these packets to the target destination.
 The UDP header is fixed at 8 bytes and contains a source port, destination port, the checksum used to verify packet integrity by the receiving device, and the length of the packet which equates to the sum of the payload and header.
 
 UDP has the following characteristics:
@@ -20,7 +20,7 @@ UDP has the following characteristics:
 - Packets may lost or arrive in a different order compared to how they were transmitted.
 - It's a connectionless protocol since the sender simply sends data without waiting for an acknowledgment of receipt.
 
-UDP is mainly used for time-sensitive communications where occasionally dropping packets is better than waiting, such applications include live video streaming and VoIP, online gaming, and live broadcast streams. 
+UDP is mainly used for time-sensitive communications where occasionally dropping packets is better than waiting, such applications include live video streaming and VoIP, online gaming, and live broadcast streams.
 
 In this article, we will first understand how to implement UDP with Java NIO and gradually transition to [Fs2's](https://blog.rockthejvm.com/fs2/) io library which provides binding for UDP networking. In the last section, we'll create a live audio streaming server with the knowledge we've gained.
 
@@ -42,9 +42,9 @@ lazy val root = project
     libraryDependencies += "co.fs2" %% "fs2-io" % "3.9.2"
   )
 ```
-To follow along, we'll need `fs2`'s core and io libraries, this installs [cats](https://rockthejvm.com/p/cats) and [cats-effect](https://rockthejvm.com/p/cats-effect) as dependencies in our project. 
+To follow along, we'll need `fs2`'s core and io libraries, this installs [cats](https://rockthejvm.com/p/cats) and [cats-effect](https://rockthejvm.com/p/cats-effect) as dependencies in our project.
 
-We'll also need the [FFplay](https://ffmpeg.org/ffplay.html) library which is installed as part of [FFmpeg](https://ffmpeg.org/download.html). We can confirm it's installed by running `ffplay -version`. 
+We'll also need the [FFplay](https://ffmpeg.org/ffplay.html) library which is installed as part of [FFmpeg](https://ffmpeg.org/download.html). We can confirm it's installed by running `ffplay -version`.
 
 ## 3. UDP with NIO
 In this section, we'll learn how to create a UDP echo server and client using Java NIO and get an in-depth explanation of how this API works.
@@ -63,7 +63,7 @@ object NioUdp extends IOApp {
   def run(args: List[String]): IO[ExitCode] = ???
 }
 ```
-Here we define an IOApp with its run method, we also have our `server` function where we've defined the `port` number and `ip` address on which the server will be waiting for incoming connections. 
+Here we define an IOApp with its run method, we also have our `server` function where we've defined the `port` number and `ip` address on which the server will be waiting for incoming connections.
 
 ```scala
 ...
@@ -94,9 +94,9 @@ object NioUdp extends IOApp {
   ...
 }
 ```
-We start by opening a Datagram channel using the `open()` method on `DatagramChanel` and passing it a `ProtocolFamily` parameter, here we use `StandardProtocolFamily.INET` meant for IPv4, the `StandardProtocolFamily` enum also provides two other options, `StandardProtocolFamily.INET6` for IPv6 and `StandardProtocolFamily.UNIX` for UNIX domain interprocess communication depending on your needs. 
+We start by opening a Datagram channel using the `open()` method on `DatagramChanel` and passing it a `ProtocolFamily` parameter, here we use `StandardProtocolFamily.INET` meant for IPv4, the `StandardProtocolFamily` enum also provides two other options, `StandardProtocolFamily.INET6` for IPv6 and `StandardProtocolFamily.UNIX` for UNIX domain interprocess communication depending on your needs.
 
-We confirm if `datagramChannel` is indeed open by calling `datagramChannel.isOpen()` with the help of an if statement whose body will have a notification message printed if this is true or false. This implementation is wrapped in a `Try` which we pattern match to either print an error message in case of a `Failure` or a success message in case no errors occur.  
+We confirm if `datagramChannel` is indeed open by calling `datagramChannel.isOpen()` with the help of an if statement whose body will have a notification message printed if this is true or false. This implementation is wrapped in a `Try` which we pattern match to either print an error message in case of a `Failure` or a success message in case no errors occur.
 
 Let's build on our if statement:
 
@@ -115,18 +115,18 @@ if (datagramChannel.isOpen()) {
   println(
     "[server] Udp server is bound to:" + datagramChannel.getLocalAddress()
   )
-} 
+}
 ...
 ```
-Here we define some socket options using the `setOption()` method which takes a `SocketOption` and it's associated value. 
+Here we define some socket options using the `setOption()` method which takes a `SocketOption` and it's associated value.
 
-The `StandardSocketOptions.SO_RCVBUF` and `StandardSocketOptions.SO_SNDBUF` are options for the datagram socket receive buffer and socket send buffer respectively which we set to 4 kilobytes each. 
+The `StandardSocketOptions.SO_RCVBUF` and `StandardSocketOptions.SO_SNDBUF` are options for the datagram socket receive buffer and socket send buffer respectively which we set to 4 kilobytes each.
 
 The size could be increased for high-volume connections and in the case of the receive buffer, reduced to limit the possible backlog of incoming data. StandardSocketOptions provides multiple options for fine-grained control of a DatagramChannel:
 
 ![udp screenshot](../images/fs2udp/socketOptions.png)
 
-We also make sure to bind our datagramChannel to a `SocketAddress` using the `bind()` method, this creates an association between the socket and the local address. In the code above we use `InetSocketAddress` which is a subclass of `SocketAddress`, and in the next line, print the address it's bound to. 
+We also make sure to bind our datagramChannel to a `SocketAddress` using the `bind()` method, this creates an association between the socket and the local address. In the code above we use `InetSocketAddress` which is a subclass of `SocketAddress`, and in the next line, print the address it's bound to.
 
 Let's see how we can send our data packets:
 
@@ -148,10 +148,10 @@ if (datagramChannel.isOpen()) {
     datagramChannel.send(content, clientAddress)
     content.clear()
   }
-} 
+}
 ...
 ```
-Here we showcase how the echo server works. The logic is defined within an infinite `while` loop where our datagram channel continuously listens for incoming Datagrams or packets from clients. 
+Here we showcase how the echo server works. The logic is defined within an infinite `while` loop where our datagram channel continuously listens for incoming Datagrams or packets from clients.
 
 We use the `datagramChannel.receive()` method to capture these packets, it takes a `ByteBuffer` as a parameter which we defined as `content`, this method transfers the incoming datagrams to the `ByteBuffer` like a write operation. This operation returns the `SocketAddress` of the client.
 
@@ -271,7 +271,7 @@ object NioUdp extends IOApp {
 }
 ```
 
-Here we define a `Charset` by calling `Charset.defaultCharset()`, then create a decoder using the `newDecoder()` method on `CharSet` which will be used to decode the byte data sent by the server. We also define `echoText`, a `ByteBuffer` containing the text that we want to send, we use the `ByteBuffer.wrap()` method that wraps our message into the buffer. 
+Here we define a `Charset` by calling `Charset.defaultCharset()`, then create a decoder using the `newDecoder()` method on `CharSet` which will be used to decode the byte data sent by the server. We also define `echoText`, a `ByteBuffer` containing the text that we want to send, we use the `ByteBuffer.wrap()` method that wraps our message into the buffer.
 
 We also define a `DatagramChannel`, check if it's open then send `echoText` to the server using the `send()` method. When we receive the response from the server, it's written to `content` and decoded using the `decode()` method from the `CharsetDecoder` that we defined earlier. We then close the socket by calling `datagramChannel.close()` since we are done sending messages.
 
@@ -322,9 +322,9 @@ NIO provides an alternative client implementation where the client first connect
       if (datagramChannel.isOpen()) {
         datagramChannel.setOption(StandardSocketOptions.SO_RCVBUF, 4 * 1024)
         datagramChannel.setOption(StandardSocketOptions.SO_SNDBUF, 4 * 1024)
-        
+
         datagramChannel.connect(new InetSocketAddress(serverIp, serverPort))
-      
+
         if(datagramChannel.isConnected()){
           val sent = datagramChannel.write(echoText)
           println(
@@ -395,9 +395,9 @@ object Fs2Udp extends IOApp {
   def run(args: List[String]): IO[ExitCode] = ???
 }
 ```
-Just like Java NIO, we start by opening a `DatagramChannel`, or in this case a `DatagramSocket` using the `Network[IO].openDatagramSocket()` method and passing it `address` and `port` values. 
+Just like Java NIO, we start by opening a `DatagramChannel`, or in this case a `DatagramSocket` using the `Network[IO].openDatagramSocket()` method and passing it `address` and `port` values.
 
-The `com.comcast.ip4s` library provides us with convenient string interpolation methods for constructing these values. Wrapping this method in `Stream.resource()` gives us a `Stream[IO, DatagramSocket[IO]]`. 
+The `com.comcast.ip4s` library provides us with convenient string interpolation methods for constructing these values. Wrapping this method in `Stream.resource()` gives us a `Stream[IO, DatagramSocket[IO]]`.
 
 
 
@@ -436,7 +436,7 @@ package object net {
   val DatagramSocketOption = SocketOption
 }
 ```
-The `SocketOption` companion object has an apply method that takes a `StandardSocketOptions` option as a key with its corresponding value, the same as Java NIO. We also define the protocol family using `StandardProtocolFamily.INET` for IPv4. 
+The `SocketOption` companion object has an apply method that takes a `StandardSocketOptions` option as a key with its corresponding value, the same as Java NIO. We also define the protocol family using `StandardProtocolFamily.INET` for IPv4.
 
 It's also fine to provide only the port value to `openDatagramSocket()`:
 
@@ -469,7 +469,7 @@ def server =
         }
     )
 ```
-Here we use the `evalTap()` function on `fs2.Stream[IO, DatagramSocket[IO]]` to print out some observations, this gives us access to the `DatagramSocket[IO]` but still keeps it available for the next operation. 
+Here we use the `evalTap()` function on `fs2.Stream[IO, DatagramSocket[IO]]` to print out some observations, this gives us access to the `DatagramSocket[IO]` but still keeps it available for the next operation.
 
 If the `openDatagramSocket()` method succeeds, we print a successfully opened message as well as the address that the server is bound to by flat mapping on `socket.localAddress` and printing the `address` of type `SocketAddress[IpAddress]` as a string.
 
@@ -495,7 +495,7 @@ def server =
         .through(socket.writes)
     }
 ```
-The `reads()` method on `DatagramSocket[IO]` returns a `Stream[IO, Datagram]`, we `evalTap` on this to print out the bytes size of the incoming datagram and the address of the client by calling `datagram.bytes.size` and `datagram.remote.toString` respectively. 
+The `reads()` method on `DatagramSocket[IO]` returns a `Stream[IO, Datagram]`, we `evalTap` on this to print out the bytes size of the incoming datagram and the address of the client by calling `datagram.bytes.size` and `datagram.remote.toString` respectively.
 
 Lastly, calling `through(socket.writes)` takes the `Stream` of incoming `Datagram`'s and writes it back to the address where they originated:
 
@@ -588,11 +588,11 @@ object Fs2Udp extends IOApp {
   ...
 }
 ```
-We start by defining the socket address of the server as a `SocketAddress[IpAddress]`, this is a case class that comes from `com.comcast.ip4s` and should not be confused with `SocketAddress` from `java.net`. 
+We start by defining the socket address of the server as a `SocketAddress[IpAddress]`, this is a case class that comes from `com.comcast.ip4s` and should not be confused with `SocketAddress` from `java.net`.
 
-Next, we open the datagram socket but don't supply any arguments since we'll be assigned by the system, server ports need to be known beforehand, however, client ports can be ephemeral meaning they are discarded after use. 
+Next, we open the datagram socket but don't supply any arguments since we'll be assigned by the system, server ports need to be known beforehand, however, client ports can be ephemeral meaning they are discarded after use.
 
-Our server will get the client address from the datagram header and use that to echo back. 
+Our server will get the client address from the datagram header and use that to echo back.
 
 ```scala
 import fs2.text
@@ -632,7 +632,7 @@ socket.reads
     IO.println(response)
   }
 ```
-Here we use the `++` operator to concatenate another stream that reads datagrams from the same `socket` resulting in a `Stream[IO, Datagram]` whose bytes we then `chunk`, `decode`, and `print` to the console. Notice that the process here is the reverse of the previous paragraph. 
+Here we use the `++` operator to concatenate another stream that reads datagrams from the same `socket` resulting in a `Stream[IO, Datagram]` whose bytes we then `chunk`, `decode`, and `print` to the console. Notice that the process here is the reverse of the previous paragraph.
 
 Because of the `++` operator, `socket.reads` is only starts after the previous stream has completed.
 
@@ -666,7 +666,7 @@ def client = {
             .foreach { response =>
               IO.println(response)
             }
-      }      
+      }
       .handleErrorWith { error =>
         Stream.eval(
           IO.println(s"[client] ${error.getMessage}")
@@ -710,7 +710,7 @@ Multicasting is a group communication protocol where a sender can send data to m
 2. A server streams to a multicast socket address while a client should connect to the associated multicast group to start listening for incoming datagrams.
 3. The client also has the option to leave the multicast group if there's a need to do so.
 
-For Multicasting to work, we need to have a network interface capable of multicasting available. A network interface is the point of interconnection between a computer and a private or public network. 
+For Multicasting to work, we need to have a network interface capable of multicasting available. A network interface is the point of interconnection between a computer and a private or public network.
 
 We can use the `ip link` command in the terminal to check if any is present. Here's the output from my computer:
 
@@ -722,7 +722,7 @@ We can use the `ip link` command in the terminal to check if any is present. Her
 3: wlxb4b024bc35a7: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
     link/ether b4:b0:24:bc:35:a7 brd ff:ff:ff:ff:ff:ff
 ```
-This shows I have two interfaces that I could use for multicasting, enp1s0 is the in-built Network Interface Card that came with the computer while wlxb4b024bc35a7 is the USB wireless adapter that I normally use. 
+This shows I have two interfaces that I could use for multicasting, enp1s0 is the in-built Network Interface Card that came with the computer while wlxb4b024bc35a7 is the USB wireless adapter that I normally use.
 
 At the moment they are both in a `DOWN` state because none are connected to a network. To change this state we could connect your interface to a wifi network or securely connect your ethernet cable to an existing network.
 
@@ -758,7 +758,7 @@ object GetInterfaces extends IOApp {
       while (enumIP.hasMoreElements()) {
         val ip: InetAddress = enumIP.nextElement()
         println(s"""
-               -$ip 
+               -$ip
           """)
       }
     }
@@ -778,13 +778,13 @@ Here are my results:
           - Name: wlxb4b024bc35a7
           - Is virtual: false
           - Ip Addresses:
-        
 
-               -/fe80:0:0:0:46de:2f6:e418:3479%wlxb4b024bc35a7 
-          
 
-               -/192.168.122.32 
-          
+               -/fe80:0:0:0:46de:2f6:e418:3479%wlxb4b024bc35a7
+
+
+               -/192.168.122.32
+
 
           Network Interface: lo
           - Up and running: true
@@ -792,12 +792,12 @@ Here are my results:
           - Name: lo
           - Is virtual: false
           - Ip Addresses:
-        
 
-               -/0:0:0:0:0:0:0:1%lo 
-          
 
-               -/127.0.0.1 
+               -/0:0:0:0:0:0:0:1%lo
+
+
+               -/127.0.0.1
 ```
 Notice `enp1s0` didn't appear since its state is `DOWN`.
 
@@ -805,7 +805,7 @@ Notice `enp1s0` didn't appear since its state is `DOWN`.
 For this example, we'll create a server that sends the current date and time as an endless stream to any client that connects to the multicast group. Create a file called `NioUdpMulticast.scala` in the following path, `src/main/scala/com/rockthejvm/nioUdp/NioUdpMulticast.scala` and add the following code:
 
 ```scala
-package com.rockthejvm.nioUdp 
+package com.rockthejvm.nioUdp
 
 import cats.effect.{IOApp, ExitCode, IO}
 import java.nio.ByteBuffer
@@ -886,7 +886,7 @@ Let's go through and compare the changes to the previous NIO server implementati
 
 First, we changed the IP address from localhost to a Multicast address, `225.4.5.6`. This address will form the multicast group and is where the datagrams will be sent.
 
-We also added two new socketOptions, `StandardSocketOptions.IP_MULTICAST_IF` and `StandardSocketOptions.SO_REUSEADDR`. 
+We also added two new socketOptions, `StandardSocketOptions.IP_MULTICAST_IF` and `StandardSocketOptions.SO_REUSEADDR`.
 
 The `IP_MULTICAST_IF` option is used to set the network interface that will be used for sending multicast datagrams, here I'll be using my wifi network adapter by calling `NetworkInterface.getByName("wlxb4b024bc35a7")` and passing the interface display name. Make sure you use the name of the multicast interface that you have on your computer or laptop.
 
@@ -966,7 +966,7 @@ Similar to the multicast server, we start by defining the port number and multic
 
 Within our `Try` we first define `group` as an `InetAddress` by calling `InetAddress.getByName(groupIp)`, this gives us access to some extra methods on `group`, one of which is `group.isMulticastAddress()` that checks if the address provided is an IP multicast address. Once this is confirmed, within an if statement we proceed to open the `datagramChannel` and set the `SO_REUSEADDR` socket option to true.
 
-Unlike the previous NIO client implementations, for multicast we bind the `datagramChannel` to a `SocketAddress`, here we use a placeholder address and port 5555 similar to our server. 
+Unlike the previous NIO client implementations, for multicast we bind the `datagramChannel` to a `SocketAddress`, here we use a placeholder address and port 5555 similar to our server.
 
 The next step is to join a multicast group, we do this by calling `datagramChannel.join(group, networkInterface)` where the `join()` method takes our multicast address and a network interface. This returns a `MembershipKey` which is a token representing the membership of the IP multicast group.
 
@@ -1084,13 +1084,13 @@ object Fs2UdpMulticasting extends IOApp {
   def run(args: List[String]): IO[ExitCode] = ???
 }
 ```
-Most of this should look familiar by now, we start by opening the UDP socket by calling `Network[IO].openDatagramSocket()`, we pass it the `port` value but leave the server address value to default to a placeholder address. 
+Most of this should look familiar by now, we start by opening the UDP socket by calling `Network[IO].openDatagramSocket()`, we pass it the `port` value but leave the server address value to default to a placeholder address.
 
-We then add `IP_MULTICAST_IF` and `SO_REUSEADDR` socket options, and pass `StandardProtocolFamily.INET` as the `protocolFamily` value. 
+We then add `IP_MULTICAST_IF` and `SO_REUSEADDR` socket options, and pass `StandardProtocolFamily.INET` as the `protocolFamily` value.
 
 Next, we call `evalTap()` on our resource to give us access to the `socket`, then use this to print the address that the server is bound to by flat mapping on `socket.localAddress` along with other relevant messages.
 
-In the following section, we call `flatMap` and then create an infinite stream of date values by calling `Stream.repeatEval(IO(new Date().toString()))`, these values then are encoded, chunked, and mapped to a `Datagram` along with the `multicastAddress`. 
+In the following section, we call `flatMap` and then create an infinite stream of date values by calling `Stream.repeatEval(IO(new Date().toString()))`, these values then are encoded, chunked, and mapped to a `Datagram` along with the `multicastAddress`.
 
 Before we write our values, the stream is `metered` so that any client that joins this multicast group will receive a date value every 10,000 milliseconds.
 
@@ -1147,7 +1147,7 @@ object Fs2UdpMulticasting extends IOApp {
   ...
 }
 ```
-Similar to our server, we open the datagram, set the `port` value, set `SO_REUSEADDR` as a socket option, add a `protocolFamily` and `evalTap` to print the socket address. 
+Similar to our server, we open the datagram, set the `port` value, set `SO_REUSEADDR` as a socket option, add a `protocolFamily` and `evalTap` to print the socket address.
 
 Next we `flatMap`, and call the `join()` method on `socket` to join a multicast group. `join()` takes a `MulticastJoin[IpAddress]` from `com.comcast.ip4s` and a `NetworkInterface` to return an `IO[socket.GroupMembership]` that we assigned to `groupMembership`.
 
@@ -1267,8 +1267,8 @@ To create our byte stream, `url`, we use the `io.readInputStream[IO]()` function
 
 ```scala
 def readInputStream[F[_$1]](
-  fis: F[InputStream], 
-  chunkSize: Int, 
+  fis: F[InputStream],
+  chunkSize: Int,
   closeAfterUse: Boolean = true)
   (implicit F: Sync[F]): fs2.Stream[F, Byte]
 ```
@@ -1281,7 +1281,7 @@ To create our datagrams we use the `url.chunks` method and pass the data chunk t
 Before we run our server, we should make sure our multicast interface is connected, if everything runs correctly, we should get the following output:
 
 ```bash
-[info] running com.rockthejvm.radio.RadioServer 
+[info] running com.rockthejvm.radio.RadioServer
 [multicast server] Udp server is successfully opened
 [multicast server] Udp server is bound to: 0.0.0.0:5555
 [multicast server] The Radio stream is starting...
@@ -1291,7 +1291,7 @@ We can now connect to our stream using `FFplay` in the following way:
 ```bash
 ffplay udp://225.4.5.6:5555
 ```
-This should bring up a popup screen with some audio visualizations while the radio station is playing. 
+This should bring up a popup screen with some audio visualizations while the radio station is playing.
 Here's a picture of this program running on Ubuntu 22.04 with two clients connected.
 
 ![udp screenshot](../images/fs2udp/udp.png)
@@ -1299,10 +1299,10 @@ Here's a picture of this program running on Ubuntu 22.04 with two clients connec
 Note: The application may fail incase the online radio link is unreachable, you can always replace it with a working link of your choosing.
 
 ## 7. Conclusion
-In this article, we've learned how to implement a UDP server and client in NIO and then used that knowledge to implement the same application in Fs2. 
+In this article, we've learned how to implement a UDP server and client in NIO and then used that knowledge to implement the same application in Fs2.
 
-We covered what multicasting is, how it works, and we developed a UDP multicast server to stream an online radio station to multiple clients. 
+We covered what multicasting is, how it works, and we developed a UDP multicast server to stream an online radio station to multiple clients.
 
-We've seen that the `fs2.io.net` package provides an easier purely functional interface for building UDP applications, the implementation is shorter, more concise, and readable code compared to NIO. 
+We've seen that the `fs2.io.net` package provides an easier purely functional interface for building UDP applications, the implementation is shorter, more concise, and readable code compared to NIO.
 
-I encourage you to dive more into `fs2.io.net` package to see what it offers as well as the `com.comcast.ip4s` package documentation that provided some of the important data structures that we used in this article. As always this code will be available on my [GitHub](https://github.com/hkateu/fs2Udp/tree/main) page. 
+I encourage you to dive more into `fs2.io.net` package to see what it offers as well as the `com.comcast.ip4s` package documentation that provided some of the important data structures that we used in this article. As always this code will be available on my [GitHub](https://github.com/hkateu/fs2Udp/tree/main) page.

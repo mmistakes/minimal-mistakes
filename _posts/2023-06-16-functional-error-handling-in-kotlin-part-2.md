@@ -2,7 +2,7 @@
 title: "Functional Error Handling in Kotlin, Part 2: Result and Either"
 date: 2023-06-16
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kotlin]
 excerpt: "In this article, we continue our journey through functional error handling by looking at the `Result` and `Either` data types and how to use them."
 toc: true
@@ -117,7 +117,7 @@ val appleJob: Result<Job> = Result.success(
     ),
 )
 
-val notFoundJob: Result<Job> = Result.failure(NoSuchElementException("Job not found")) 
+val notFoundJob: Result<Job> = Result.failure(NoSuchElementException("Job not found"))
 ```
 
 Unfortunately, we've no fancy extension functions defined on the `Result<A>` type, so we can't write anything similar to `job.toResult()`. _C'est la vie_. It's not that hard to define such an extension function:
@@ -233,7 +233,7 @@ The converter will throw an exception if the input amount is `null` or negative.
 
 ```kotlin
 class JobService(private val jobs: Jobs, private val currencyConverter: CurrencyConverter) {
-    
+
     fun getSalaryInEur(jobId: JobId): Result<Double> =
         jobs.findById(jobId)
             .map { it?.salary }
@@ -323,7 +323,7 @@ We can refactor our primary example to use the `onSuccess` and `onFailure` funct
 
 ```kotlin
 val notFoundJobId = JobId(42)
-val maybeSalary: Result<Double> = 
+val maybeSalary: Result<Double> =
     JobService(jobs, currencyConverter).getSalaryInEur(notFoundJobId)
 maybeSalary.onSuccess {
     println("The salary of jobId $notFoundJobId is $it")
@@ -381,7 +381,7 @@ As we saw in the previous article, we often deal with types (usually some contai
 
 We want to refactor the example using the `Result` type. First, we need to add the `findAll` function to the `Jobs` interface and implementation:
 
-```kotlin 
+```kotlin
 interface Jobs {
 
     fun findAll(): Result<List<Job>>
@@ -390,7 +390,7 @@ interface Jobs {
 
 class LiveJobs : Jobs {
 
-    override fun findAll(): Result<List<Job>> = 
+    override fun findAll(): Result<List<Job>> =
         Result.success(JOBS_DATABASE.values.toList())
     // Omissis...
 }
@@ -457,10 +457,10 @@ As we said in the previous article, the absence of native support for monadic co
 ```kotlin
 // Arrow SDK
 public object result {
-    public inline fun <A> eager(crossinline f: suspend ResultEagerEffectScope.() -> A): Result<A> 
+    public inline fun <A> eager(crossinline f: suspend ResultEagerEffectScope.() -> A): Result<A>
     // Omissis
 
-    public suspend inline operator fun <A> invoke(crossinline f: suspend ResultEffectScope.() -> A): Result<A> 
+    public suspend inline operator fun <A> invoke(crossinline f: suspend ResultEffectScope.() -> A): Result<A>
     // Omissis
 }
 ```
@@ -472,7 +472,7 @@ As for the nullable types and the `Option` type, the `result` DSL gives us the `
 ```kotlin
 // Arrow SDK
 public value class ResultEagerEffectScope(/* Omissis */) : EagerEffectScope<Throwable> {
-   
+
     // Omissis
     public suspend fun <B> Result<B>.bind(): B =
         fold(::identity) { shift(it) }
@@ -575,7 +575,7 @@ public data class Left<out A> constructor(val value: A) : Either<A, Nothing>()
 public data class Right<out B> constructor(val value: B) : Either<Nothing, B>()
 ```
 
-The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression. 
+The `Either` type is a sealed class, so it cannot be extended outside the Arrow library, and the compiler can check if all the possible cases are handled in a `when` expression.
 
 Since we can now use any type to represent errors, we can create an ADT on error causes. For example, we can define a `JobError` sealed class and extend it with the `JobNotFound` and `GenericError` classes:
 
@@ -637,8 +637,8 @@ val jobCompany: String = appleJob.map { it.company.name }.getOrElse { "Unknown c
 The `getOrElse` function takes a lambda with the error as a parameter, so we can use it to react differently to different errors:
 
 ```kotlin
-val jobCompany2: String = 
-    appleJob.map { it.company.name }.getOrElse { jobError -> 
+val jobCompany2: String =
+    appleJob.map { it.company.name }.getOrElse { jobError ->
         when (jobError) {
             is JobNotFound -> "Job not found"
             is GenericError -> "Generic error"
@@ -672,7 +672,7 @@ class LiveJobs : Jobs {
         } catch (e: Exception) {
             GenericError(e.message ?: "Unknown error").left()
         }
-} 
+}
 ```
 
 As we might expect, we're wrapping the happy path with a `Right` instance and all the available error cases with a `Left` instance. We are treating the absence of a job as a logic error, and we're wrapping it with a `JobNotFound` object using the recommended and idiomatic syntax:
@@ -709,7 +709,7 @@ Then, we can rewrite the `LiveJobs` class using the `catch` function:
 
 ```kotlin
 class LiveJobs : Jobs {
-    
+
     override fun findById(id: JobId): Either<JobError, Job> = catch {
         JOBS_DATABASE[id]
     }.mapLeft { GenericError(it.message ?: "Unknown error") }
@@ -764,7 +764,7 @@ interface Jobs {
 }
 
 class LiveJobs : Jobs {
-    
+
     // Omissis
     override fun findAll(): Either<JobError, List<Job>> =
         JOBS_DATABASE.values.toList().right()
@@ -884,7 +884,7 @@ If the `jobsList.maxSalary2()` statement returns a `null` value, we short-circui
 The `ensure` extension function is similar to the `ensureNotNull` function but works with a predicate instead of a nullable value. The `ensure` function is defined as follows:
 
 ```kotlin
-// Arrow SDK 
+// Arrow SDK
 public suspend fun ensure(condition: Boolean, shift: () -> R): Unit =
     if (condition) Unit else shift(shift())
 ```
@@ -895,10 +895,10 @@ We can use the `ensure` function when implementing smart constructors. For examp
 object NegativeAmount : JobError
 
 object EitherJobDomain {
-    
+
     @JvmInline
     value class Salary private constructor(val value: Double) {
-        
+
         companion object {
             operator fun invoke(value: Double): Either<JobError, Salary> = either.eager {
                 ensure(value >= 0.0) { NegativeAmount }

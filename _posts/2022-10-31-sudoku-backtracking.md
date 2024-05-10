@@ -2,7 +2,7 @@
 title: "A Backtracking Sudoku Solver in Scala"
 date: 2022-10-31
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, algorithms]
 excerpt: "How to approach Sudoku and other constraint-satisfaction problems with recursive backtracking in Scala."
 ---
@@ -11,7 +11,7 @@ This article is for Scala beginners. After you learn the language, the next big 
 
 This article will show you how to _think_ such "algorithmic" problems with recursion, with a famous example: a Sudoku solver in Scala.
 
-> If you want to master this mindset for Google-style algorithms questions, check out the [Scala & FP interview practice course](https://rockthejvm.com/p/scala-functional-programming-interview-practice). It's a long-form, 15-hour course that will take you through all the essential data structures and algorithms, taken in a functional style with Scala. 
+> If you want to master this mindset for Google-style algorithms questions, check out the [Scala & FP interview practice course](https://rockthejvm.com/p/scala-functional-programming-interview-practice). It's a long-form, 15-hour course that will take you through all the essential data structures and algorithms, taken in a functional style with Scala.
 
 If you want to follow the video version, check out the video below or on [YouTube](https://youtu.be/zBLCbqycVzw).
 
@@ -237,10 +237,10 @@ Combining all the properties gives us the final validation function:
 def validate(sudoku: Board, x: Int, y: Int, value: Int): Boolean = {
   val row = sudoku(y)
   val rowProperty = !row.contains(value)
-  
+
   val column = sudoku.map(r => r.apply(x))
   val columnProperty = !column.contains(value)
-  
+
   val boxX = x / 3
   val boxY = y / 3
   val box = for {
@@ -248,7 +248,7 @@ def validate(sudoku: Board, x: Int, y: Int, value: Int): Boolean = {
     xb <- (boxX * 3) until (boxX * 3 + 3) // same for cols
   } yield sudoku(yb)(xb)
   val boxProperty = !box.contains(value)
-  
+
   rowProperty && columnProperty && boxProperty
 }
 ```
@@ -299,7 +299,7 @@ Otherwise, we're at a cell which doesn't have a value yet, so we have to try all
 else (1 to 9).filter(value => validate(sudoku, x, y, value)).foreach { value => /* TODO */ }
 ```
 
-We keep just the values that are good candidates, i.e. pass the validation function. Inside the `foreach`, then we need to 
+We keep just the values that are good candidates, i.e. pass the validation function. Inside the `foreach`, then we need to
 - put the value in the matrix
 - call `solve` on the next cell
 - remove the value in the matrix to make room for the new one

@@ -2,7 +2,7 @@
 title: "Tagless Final in Scala"
 date: 2021-12-20
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, abstract]
 excerpt: "Demystifying the tagless final pattern in Scala. TLDR: it's got nothing to do with type classes."
 ---
@@ -14,7 +14,7 @@ This article is about a popular topic in the Scala world, which is a very weird 
 - It's poorly covered in articles, books and videos. I've read and watched everything I could get my hands on and still had gaps in my understanding.
 - It's very popular and widely used, especially in code based on the Cats Effect/Typelevel stack.
 
-That final point is striking. It seems as though TF is used not _because of_, but _in spite of_ its structure. Some argued it causes more problems than it solves. Debates started. Competing libraries emerged. 
+That final point is striking. It seems as though TF is used not _because of_, but _in spite of_ its structure. Some argued it causes more problems than it solves. Debates started. Competing libraries emerged.
 
 I'd argue TF's bad rap (if there is one) could be solved with a better learning curve. This article is the summary of everything I know so far, in what I hope to be an easily digestible form.
 
@@ -96,7 +96,7 @@ One easy way of doing this differentiation is by using some additional data insi
 ```scala3
 trait Expr(val tag: String)
 case class B(boolean: Boolean) extends Expr("bool")
-case class Or(left: Expr, right: Expr) extends Expr("bool") 
+case class Or(left: Expr, right: Expr) extends Expr("bool")
 case class And(left: Expr, right: Expr) extends Expr("bool")
 case class Not(expr: Expr) extends Expr("bool")
 case class I(int: Int) extends Expr("int")
@@ -105,9 +105,9 @@ case class Sum(left: Expr, right: Expr) extends Expr("int")
 def eval(expr: Expr): Any = expr match {
   case B(b) => b
   case Or(left, right) =>
-    if (left.tag == "bool" && right.tag == "bool") 
+    if (left.tag == "bool" && right.tag == "bool")
         eval(left).asInstanceOf[Boolean] || eval(right).asInstanceOf[Boolean]
-    else 
+    else
         throw new IllegalArgumentException("attempting to evaluate an expression with improperly typed operands")
   // same for others
 }
@@ -213,7 +213,7 @@ def demoTaglessFinal(): Unit = {
 
 This is, of course, a mere refactoring of the code in tagless initial so that we can immediately work with the final representation of our results.
 
-But that, friends, is it. This is tagless final. We started with the initial expression problem, and we solved it with this style of organizing code. I want you to think about TF as a "design pattern", because that's what we did: we designed and structured our code to fit a particular use-case. 
+But that, friends, is it. This is tagless final. We started with the initial expression problem, and we solved it with this style of organizing code. I want you to think about TF as a "design pattern", because that's what we did: we designed and structured our code to fit a particular use-case.
 
 _fine print: Tagless final in the original paper is much more than a design pattern, it's a way of creating new "languages", e.g. means of computation + syntaxes, on top of existing languages, e.g. Scala. That said, for the practicality of Scala programmers, this article is focused on our pragmatic need to write good code._
 
@@ -234,7 +234,7 @@ See the overlap?
 
 ## 5. A "Tagless Final" Refactor
 
-We can also take our own solution from the previous section and refactor it to use higher kinds. 
+We can also take our own solution from the previous section and refactor it to use higher kinds.
 
 We can group all our functionalities, i.e. the ability to construct expressions, operands and operators in a single type class, implemented in terms of an abstract type `E`:
 
@@ -261,7 +261,7 @@ given simpleExprAlg: Algebra[SimpleExpr] with {
 }
 ```
 
-where the implementation of the `Algebra` for `SimpleExpr` was made a `given` (or an `implicit val` in Scala 2). The implementation is called an _interpreter_, which is one of many possible. 
+where the implementation of the `Algebra` for `SimpleExpr` was made a `given` (or an `implicit val` in Scala 2). The implementation is called an _interpreter_, which is one of many possible.
 
 Now, if we want to reproduce the same expressions as last time, we'll need to build _programs_, i.e. build expressions using this `Algebra` trait.
 
@@ -304,7 +304,7 @@ object TaglessFinal_V2 {
     def and(left: E[Boolean], right: E[Boolean]): E[Boolean]
     def sum(left: E[Int], right: E[Int]): E[Int]
   }
-  
+
   case class SimpleExpr[A](value: A)
   given simpleExprAlg: Algebra[SimpleExpr] with {
     override def b(boolean: Boolean) = SimpleExpr(boolean)
@@ -313,12 +313,12 @@ object TaglessFinal_V2 {
     override def and(left: SimpleExpr[Boolean], right: SimpleExpr[Boolean]) = SimpleExpr(left.value && right.value)
     override def sum(left: SimpleExpr[Int], right: SimpleExpr[Int]) = SimpleExpr(left.value + right.value)
   }
-  
+
   def program1[E[_]](using alg: Algebra[E]): E[Boolean] = {
     import alg._
     or(b(true), and(b(true), b(false)))
   }
-  
+
   def program2[E[_]](using alg: Algebra[E]): E[Int] = {
     import alg._
     sum(i(24), i(-3))
@@ -337,7 +337,7 @@ object TaglessFinal_V2 {
     def mfa_v2(phone: E[Boolean], mobileApp: E[Boolean]): E[Boolean]
     def totalSessionLogins(server1Logins: E[Int], server2Logins: E[Int]): E[Int]
   }
-  
+
   case class UserLoginStatus[A](value: A)
   given loginCapabilityImplementation: UserLogin[UserLoginStatus] with {
     override def checkLogin(mfa: Boolean) = UserLoginStatus(mfa)
@@ -346,12 +346,12 @@ object TaglessFinal_V2 {
     override def mfa_v2(phone: UserLoginStatus[Boolean], mobileApp: UserLoginStatus[Boolean]) = UserLoginStatus(phone.value && mobileApp.value)
     override def totalSessionLogins(server1Logins: UserLoginStatus[Int], server2Logins: UserLoginStatus[Int]) = UserLoginStatus(server1Logins.value + server2Logins.value)
   }
-  
+
   def userLoginFlow[E[_]](using alg: UserLogin[E]): E[Boolean] = {
     import alg._
     mfa_v1(checkLogin(true), mfa_v2(checkLogin(true), checkLogin(false)))
   }
-  
+
   def checkLastStatus[E[_]](using alg: UserLogin[E]): E[Int] = {
     import alg._
     totalSessionLogins(countActiveSessions(24), countActiveSessions(3))
@@ -359,7 +359,7 @@ object TaglessFinal_V2 {
 }
 ```
 
-Yes, it's the exact same code with different function names &mdash; we see this all the time in service descriptions based on the Cats Effect/Typelevel stack! 
+Yes, it's the exact same code with different function names &mdash; we see this all the time in service descriptions based on the Cats Effect/Typelevel stack!
 
 ## 6. Conclusion
 

@@ -2,7 +2,7 @@
 title: "Variance Positions in Scala, Demystified"
 date: 2020-11-10
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "We'll take a look at the famous \"covariant type occurs in contravariant position\" problem, and what we can do about it."
 toc: true
@@ -35,12 +35,12 @@ To put it another way, if we wanted to write a new `Thing[T]` generic type in ou
 
 > If A is a subtype of B, then should Thing[A] be a subtype of Thing[B]?
 
-This is the _variance question_. 
+This is the _variance question_.
 
 If our `Thing` is a collection, such as a list, the answer is yes: if Dogs are Animals, then a collection of Dogs is also a collection of Animals. So from a substitution perspective, we could assign a collection of Dogs to a collection of Animals:
 
 ```scala
-val dogs: MyList[Animal] = new MyList[Dog] 
+val dogs: MyList[Animal] = new MyList[Dog]
 ```
 
 We say that MyList is _covariant_ in its type argument [T], and we mark it with a small `+` sign in the class declaration: `class MyList[+T]`
@@ -57,7 +57,7 @@ val lassiesVet: Vet[Dog] = new Vet[Animal]
 
 A Vet[Animal] is a proper replacement for a Vet[Dog], because a Vet can treat any Animal, and so she/he can treat a Dog too.
 
-If you want to keep a good rule of thumb on how to pick variance for your new generic type, it's this: 
+If you want to keep a good rule of thumb on how to pick variance for your new generic type, it's this:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A year of mental strain on <a href="https://twitter.com/hashtag/Scala?src=hash&amp;ref_src=twsrc%5Etfw">#Scala</a> variance, compressed:<br><br>Covariant = retrieves or produces T.<br>Contravariant = acts on, or consumes T.</p>&mdash; Rock the JVM (@rockthejvm) <a href="https://twitter.com/rockthejvm/status/1316385189883453441?ref_src=twsrc%5Etfw">October 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -120,7 +120,7 @@ Let's think about `Option[T]` for a second. Should it be covariant or contravari
 Spoiler: it's covariant. If `Dog` extends `Animal` then `Option[Dog]` should be a subtype of `Option[Animal]`. Pick your favorite reason (both are true):
 
 - If a dog is an animal, then a maybe-dog is also a maybe-animal.
-- Think of an Option as a list with at most one element. If a list is covariant, then an option is covariant. 
+- Think of an Option as a list with at most one element. If a list is covariant, then an option is covariant.
 
 Now, imagine that (for whatever reason) we had a mutable version of an option. Let's call it `MutableOption[+T]` with a subtype containing a `var` member, e.g. `class MutableSome[+T](var contents: T)`.
 
@@ -133,7 +133,7 @@ maybeAnimal.contents = new Cat
 
 The first line is perfectly legal: because `MutableSome` is covariant, we can assign a maybe-dog on the right-hand side of the assignment. Now, because we declared `maybeAnimal` to be a `MutableSome[Animal]`, the compiler would allow us to change the `contents` variable to another kind of `Animal`. Because a `Cat` is an `Animal`, then a `Cat` is a legal value to use, which would also blow up the type guarantee. That is because the original `MutableSome[Dog]` we used on the first line also comes with a guarantee that the contents are of type `Dog`, but we've just ruined it.
 
-Therefore, we say that **types of `var` fields are in _contravariant_ position**. 
+Therefore, we say that **types of `var` fields are in _contravariant_ position**.
 
 But wait, didn't we say that they were in _covariant_ position as per the earlier argument?
 
@@ -222,7 +222,7 @@ What if our `add(elem: T): MyList[T]` received an argument of a different type a
 def add[S >: T](elem: S): MyList[S]
 ```
 
-In other words, if we happen to add an element of a different type than the original list, we'll let the compiler infer the lowest type S which describes both the element being added AND the existing elements of the list. As a result, we'll obtain a `MyList[S]`. In our cats vs dogs example, if we add a cat to a list of dogs, we'll obtain a list of animals. If we add a flower to it, we'll obtain a list of life forms. If we add a number, we'll obtain a list of Any. You get the idea. 
+In other words, if we happen to add an element of a different type than the original list, we'll let the compiler infer the lowest type S which describes both the element being added AND the existing elements of the list. As a result, we'll obtain a `MyList[S]`. In our cats vs dogs example, if we add a cat to a list of dogs, we'll obtain a list of animals. If we add a flower to it, we'll obtain a list of life forms. If we add a number, we'll obtain a list of Any. You get the idea.
 
 This is how we solve the cryptic "covariant type T occurs in contravariant position":
 
@@ -249,7 +249,7 @@ val rescuedDog: Dog = vet.rescueAnimal[Dog] // type checking passes now
 
 ## 5. Conclusion
 
-This is one of the hardest parts of the Scala type system, even though it starts from such an innocent question (should lists of dogs be lists of animals). If you're curious, the [advanced Scala course](https://rockthejvm.com/p/advanced-scala) contains what you've just learned (and lots more on Scala's type system) with some practice exercises. 
+This is one of the hardest parts of the Scala type system, even though it starts from such an innocent question (should lists of dogs be lists of animals). If you're curious, the [advanced Scala course](https://rockthejvm.com/p/advanced-scala) contains what you've just learned (and lots more on Scala's type system) with some practice exercises.
 
 This article was pretty dense, and we learned quite a bit:
 
@@ -258,7 +258,7 @@ This article was pretty dense, and we learned quite a bit:
 - types `val` fields are in covariant position
 - types of `var` fields are in covariant AND contravariant position
 - types of method arguments are in contravariant position
-- method return types are in covariant position 
+- method return types are in covariant position
 - we solve the "covariant type occurs in contravariant position" by "widening": we add a type argument `[S >: T]` and change the argument type to S
 - we solve the "contravariant type occurs in covariant position" by "narrowing": we add a type argument `[S <: T]` and change the method return type to S
 

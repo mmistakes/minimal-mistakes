@@ -2,7 +2,7 @@
 title: "Roadmap to a Successful Data Engineer"
 date: 2022-06-06
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, beginners]
 excerpt: "One of the most prominent Rock the JVM students shares his insights to a successful career in Data Engineering."
 ---
@@ -103,8 +103,8 @@ Even possessing a plethora of technical skills, these days a data engineer in tr
 - Have some “peace of mind”: Emerging professionals around the world, be it software engineers or data engineers, are restless and running after quick success and collecting fame with shortcuts. There’s no shortcut to success. Peace of mind is such a nice quality to grow within, which can help anyone to be firm in critical situations and keep the path steady.
 - Be a listener first: Most of the time we make mistakes just because we do not wait to understand the problem holistically. We don’t listen but we propose opinions. 50% of the job is done when we listen to the problem statement and then think.
 - Take it slow and steady: Being first/fast doesn't make you optimal. Look into your solution 5 times more to validate with a 360 degree view. You miss it, and someone will have to correct you, which wastes everyone's time and your growth will suffer.
-- Read regularly: Reading “anything” of your interest at least 1 hour every day will give you such value that you can not even imagine. Take some idea that sparked your interest, read about it, live it and dream about it. 
-- Remember you don’t know everything: Be a humble student, that makes 100% of the job. You are not an authority of anything but your character, your true self. 
+- Read regularly: Reading “anything” of your interest at least 1 hour every day will give you such value that you can not even imagine. Take some idea that sparked your interest, read about it, live it and dream about it.
+- Remember you don’t know everything: Be a humble student, that makes 100% of the job. You are not an authority of anything but your character, your true self.
 - Ask for help: Ask for help from colleagues and professionals, no question is a bad question. Often, a question for one is a question for all, and everybody can learn.
 
 ## Conclusion

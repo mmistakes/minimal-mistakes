@@ -1,8 +1,8 @@
 ---
 title: "Kafka Streams 101"
-date: 2021-10-21 
+date: 2021-10-21
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kafka]
 excerpt: "Apache Kafka is clearly the leading technology concerning message brokers, and Kafka Streams brings a complete stateful streaming system based directly on top of it. Let's see its primary features."
 ---
@@ -129,29 +129,29 @@ kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic orders-by-user \
   --create
-  
+
 kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic discount-profiles-by-user \
   --create \
   --config "cleanup.policy=compact"
-  
+
 kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic discounts \
   --create \
   --config "cleanup.policy=compact"
-  
+
 kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic orders \
   --create
-  
+
 kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic payments \
   --create
-  
+
 kafka-topics \
   --bootstrap-server localhost:9092 \
   --topic paid-orders \
@@ -182,7 +182,7 @@ So, with these bullets in our Kafka gun, let's proceed diving a little deeper in
 
 ## 3. Messages Serialization and Deserialization
 
-If we want to create any structure on top of Kafka topics, such as stream, we need a standard way to serialize objects into a topic and deserialize messages from topic to objects. The Kafka Streams library uses the so-called `Serde` type. 
+If we want to create any structure on top of Kafka topics, such as stream, we need a standard way to serialize objects into a topic and deserialize messages from topic to objects. The Kafka Streams library uses the so-called `Serde` type.
 
 What's a `Serde`? The `Serde` word stands for `Serializer` and `Deserializer`. A `Serde` provides the logic to read and write a message from and to a Kafka topic.
 
@@ -196,7 +196,7 @@ object Serdes {
   implicit def longSerde: Serde[Long]
 
   implicit def javaLongSerde: Serde[java.lang.Long]
-  
+
   // ...
 }
 ```
@@ -233,7 +233,7 @@ The `serde` function constraints the type `A` to have a Circe `Decoder` and an `
 
 ```scala
 a.asJson
-``` 
+```
 
 Moreover, the function uses the type class `Decoder[A]` to parse a JSON string into an object:
 
@@ -926,4 +926,3 @@ The above command will read the following message, concluding our journey in the
 This article introduced the Kafka Streams library, a Kafka client library based on top of the Kafka consumers and producers API. In detail, we focused on the Stream DSL part of the library, which lets us represent the stream's topology at a higher level of abstraction. After introducing the basic building blocks of the DSL, `KStream`, `KTable`, and `GlobalKTable`, we showed the primary operations defined on them, both the stateless and the stateful ones. Then, we talked about joins, one of the most relevant features of Kafka Streams. Finally, we wired all together, and we learned how to start a Kafka Streams application.
 
 The Kafka Streams library is vast, and it offers many more features than we saw. For example, we've not talked about the Processor API and how it's possible to query a state store directly. However, the given information should be sufficient to have a solid base to learn the advanced feature of the excellent and helpful library.
-

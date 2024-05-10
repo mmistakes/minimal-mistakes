@@ -2,7 +2,7 @@
 title: "Functional Parallel Programming in the wild"
 date: 2024-03-18
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala,http4s,cats,fp,parallelism,github-api,cats-effect]
 excerpt: "A hands-on guide to speeding up the parallel processing power with the help of Scala & cats-effect fibers."
 ---
@@ -15,7 +15,7 @@ _by [Anzori (Nika) Ghurtchumelia](https://github.com/ghurtchu)_
 
 🚀 Welcome to a journey where functional programming meets the social media hub for developers - GitHub! 🌐.
 
-If you've ever wondered how to turbocharge your software projects with parallelism, you're in for a treat. 
+If you've ever wondered how to turbocharge your software projects with parallelism, you're in for a treat.
 
 Today, we're diving into the world of Scala and Cats-Effect fibers by solving a practical problem.
 
@@ -27,7 +27,7 @@ Simply put, we're creating an HTTP server to compile and organize contributors f
 
 ## 2. Project Structure
 
-We will use Scala 3.3.0, SBT 1.9.4 and a handful of useful libraries to complete our project. 
+We will use Scala 3.3.0, SBT 1.9.4 and a handful of useful libraries to complete our project.
 
 The initial project skeleton looks like the following:
 
@@ -82,7 +82,7 @@ Some of the interesting questions can be:
 ## 5. Quickstart
 
 Let's just create a `Main.scala` and run a basic HTTP server with health check endpoint to ensure that everything is fine.
- 
+
 ```scala
 package com.rockthejvm
 
@@ -166,7 +166,7 @@ object domain {
     def apply(value: Int): PublicRepos = value
   }
 
-  extension (repos: PublicRepos) 
+  extension (repos: PublicRepos)
     def value: Int = repos
 }
 ```
@@ -180,13 +180,13 @@ With the `value` extension method, we can easily retrieve the underlying Int val
 As for the deserializer for `PublicRepos` - it will be really simple. We would just want to read `"public_repos"` key from JSON, so we'd define that in `domain` object in the following way:
 ```scala
 object domain {
-  
+
   import play.api.libs.json.*
   import play.api.libs.*
   import Reads.{IntReads, StringReads}
 
   /**
-   * some PublicRepos definitions 
+   * some PublicRepos definitions
    * ..
    * ..
    */
@@ -221,14 +221,14 @@ object domain {
    */
 
   opaque type RepoName = String
-  
+
   object RepoName {
     def apply(value: String): RepoName = value
   }
-  
-  extension (repoName: RepoName) 
+
+  extension (repoName: RepoName)
     def value: String = repoName
-  
+
   given ReadsRepo: Reads[RepoName] = (__ \ "name").read[String].map(RepoName.apply)
 }
 ```
@@ -261,7 +261,7 @@ So, our `Contributor` model could look like this:
 
 ```scala
 object domain {
-  
+
   import play.api.libs.json.*
   import play.api.libs.*
   import Reads.{IntReads, StringReads}
@@ -272,7 +272,7 @@ object domain {
    */
 
   final case class Contributor(login: String, contributions: Long)
-  
+
   given ReadsContributor: Reads[Contributor] = json =>
     (
       (json \ "login").asOpt[String],
@@ -306,7 +306,7 @@ We are building an HTTP server which is going to respond us JSON object, and you
 
 ```scala
 object domain {
-  
+
   import play.api.libs.json.*
   import play.api.libs.*
   import Reads.{IntReads, StringReads}
@@ -336,12 +336,12 @@ After a few iterations and refinements I came up with something like this:
 - use organization name to find out how many public repos are available for organization name (let's say 10)
 - use this number (10) to issue N amount of parallel requests so that our server starts retrieving contributors for each project in parallel
   - since there is no way to know how many contributors are available for a project we will need to send requests iteratively until they are exhausted, meaning that at some point the JSON response will contain less than 100 contributors, assuming that we expect to retrieve 100 contributors per page.
-  
-First of all, we will need to define a basic route which will let us accept organization name as a query parameter, so let's add a new case for our `routes` definition: 
+
+First of all, we will need to define a basic route which will let us accept organization name as a query parameter, so let's add a new case for our `routes` definition:
 
 ```scala
 def routes: HttpRoutes[IO] = {
-  HttpRoutes.of[IO] { 
+  HttpRoutes.of[IO] {
     case GET -> Root => Ok("hi :)")
     case GET -> Root / "org" / orgName => Ok(orgName)
   }
@@ -367,7 +367,7 @@ I suggest that we create a simple private methods in `Main.scala` which will be 
 
 ### 7.1 Handling Github Token
 
-Github token is just a string which must be attached to request headers so that Github REST API rate limiter doesn't prohibit us issuing huge amount of requests. 
+Github token is just a string which must be attached to request headers so that Github REST API rate limiter doesn't prohibit us issuing huge amount of requests.
 
 Let's be simple and model that as a single field case class:
 
@@ -397,7 +397,7 @@ The derives clause is part of the new Scala 3 feature called "derivation," which
 In general, there are a few options for managing such things:
 - configuration
   - easy to set up
-- env variable 
+- env variable
   - easy to set up
 - key chains or secret management systems
   - not so easy and requires some time to set up, definitely an overkill for a small project such as ours
@@ -414,7 +414,7 @@ object Main extends IOApp.Simple {
   /**
    * Token and logger definitions
    */
-    
+
   override val run: IO[Unit] =
     (for {
       _ <- info"starting server".toResource
@@ -456,7 +456,7 @@ def contributorsUrl(repoName: String, orgName: String, page: Int): String =
 
 ### 7.3 HTTP request fetch functionality
 
-In order to implement a generic `HTTP GET` we will need to have a few other things in place. 
+In order to implement a generic `HTTP GET` we will need to have a few other things in place.
 
 Please keep in mind, that we're working with `http4s` server and client, which means that eventually we'll need to create things such as:
 - `http4s.org.Request[IO]`
@@ -498,10 +498,10 @@ Sometimes, working with JSON can make our code a bit clumsy, so I suggest we add
 
 ```scala
 object syntax {
-  extension (self: String) 
+  extension (self: String)
     def into[A](using r: Reads[A]): A = Json.parse(self).as[A]
-    
-  extension [A](self: A) 
+
+  extension [A](self: A)
     def toJson(using w: Writes[A]): String = Json.prettyPrint(w.writes(self))
 }
 ```
@@ -555,7 +555,7 @@ After a few revisions and refinement this is the plan I came up with:
   - we will end up here with smth like `Vector("cats", "cats-effect", ... ,"fs2")`
 - for each repository, start fetching contributors in parallel and accumulate their contributions sequentially
   - So, if we have 3 repositories we will create 3 separate fibers and start accumulating paginated contributors sequentially until they are exhausted. It means that fiber A may take 500 millis, fiber B - 600 millis, fiber C - 300 millis. So, in total, we will have all results in 600 millis since it's based on fork-join algorithm.
-  - Unfortunately there is no clear way of parallelising fetching the contributors for repository because we don't know in advance how many contributors there are. However, if you feel brave you can play with different ideas and also try parallelising that, e.g you can use `fibonacci` approach and issue N amount of request on each iteration until they are exhausted, more on that later. 
+  - Unfortunately there is no clear way of parallelising fetching the contributors for repository because we don't know in advance how many contributors there are. However, if you feel brave you can play with different ideas and also try parallelising that, e.g you can use `fibonacci` approach and issue N amount of request on each iteration until they are exhausted, more on that later.
 - group and sum contributions by contributor login
 - create a `Vector[Contributor]` instances sorted by contributions
 - generate a JSON response containing information about contributors and contributions
@@ -580,7 +580,7 @@ object Main extends IOApp.Simple {
               .withHttpApp(routes(client, token).orNotFound)
               .build
     } yield ()).useForever
-  
+
 
   def routes(client: Client[IO], token: Token): HttpRoutes[IO] = {
 
@@ -619,13 +619,13 @@ At this point we've already calculated the `pages` which holds the number of pag
 Since we have this value available, we can issue N amount of paginated requests and get back the `Vector[RepoName]`, let me demonstrate this to you:
 
 ```scala
-// other imports  
+// other imports
 import cats.syntax.all.*
 import cats.instances.all.*
 // other imports
-  
-object Main extends IOApp.Simple { 
-  
+
+object Main extends IOApp.Simple {
+
   // other definitions
 
   def routes(client: Client[IO], token: Token): HttpRoutes[IO] = {
@@ -667,13 +667,13 @@ Since we have all the repositories, now we can start fetching the contributors o
 With the business logic it's equally important to define logging to indicate the progress and point out errors, if any.
 
 ```scala
-// other imports  
+// other imports
 import cats.syntax.all.*
 import cats.instances.all.*
 // other imports
-  
-object Main extends IOApp.Simple { 
-  
+
+object Main extends IOApp.Simple {
+
   // other definitions
 
   private def getContributorsPerRepo(
@@ -747,7 +747,7 @@ object Main extends IOApp.Simple {
 }
 ```
 
-`getContributorsRepo` is a recursive function which takes lots of parameters and continuously fetches paginated contributors for a certain repository unless it's the last page. 
+`getContributorsRepo` is a recursive function which takes lots of parameters and continuously fetches paginated contributors for a certain repository unless it's the last page.
 
 Also, in the code snippet above, `contributors` and `response` are two important components of the HTTP route handling logic. Let's break down their meanings:
 
@@ -811,13 +811,3 @@ We built an HTTP server that accepts organization name and aggregates GitHub org
 If you want to see the whole project you can view _[Source code](https://github.com/Ghurtchu/COUNTributions)_
 
 Thank you for your time and patience! Hope you learned something new today 😊
-
-
-
-
-
-
-
-
-
-

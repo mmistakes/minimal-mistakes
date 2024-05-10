@@ -2,7 +2,7 @@
 title: "The Big Kotlin Tutorial"
 date: 2024-03-08
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn Kotlin in the ultimate long-form, hands-on and comprehensive guide."
 toc: true
@@ -15,7 +15,7 @@ Kotlin is an amazing programming language. At the time of writing, Kotlin is the
 
 Needless to say, Kotlin is going to be a force.
 
-Regardless of what kind of software you need to build, Kotlin has got you covered. For your career as a software engineer, it's a no-brainer to at least get a taste of what Kotlin can offer, so that you know where you stand. 
+Regardless of what kind of software you need to build, Kotlin has got you covered. For your career as a software engineer, it's a no-brainer to at least get a taste of what Kotlin can offer, so that you know where you stand.
 
 This is your guide. In about the time it takes to watch a movie[^time] you'll get a clear sense of what Kotlin is, what it's not, and what you can do with it. We will cover
 
@@ -62,7 +62,7 @@ fun main() {
 }
 ```
 
-and it does the same thing. You got the idea: you can now run Kotlin applications. 
+and it does the same thing. You got the idea: you can now run Kotlin applications.
 
 > A note: for every chapter of this guide, I recommend you create a fresh application just to keep your code nice and organized.
 
@@ -74,7 +74,7 @@ For this chapter, I'll write code in a new application that I'm going to call `B
 
 ### 3.1. Values, Variables, and Types
 
-What's programming without variables? In Kotlin we have two kinds of variables: `val`s and `var`s. 
+What's programming without variables? In Kotlin we have two kinds of variables: `val`s and `var`s.
 
 ```kotlin
 val meaningOfLife: Int = 42
@@ -324,7 +324,7 @@ To make things more interesting, let's add a constructor argument to Dog:
 class Dog(name: String): Pet()
 ```
 
-The invocation of `Pet()` is important, because if we want to allocate a `Dog`, the runtime needs to allocate a `Pet` first, in order to make space for the properties and methods we're inheriting. So _every time we extend a class, we must provide a constructor for the parent class._ 
+The invocation of `Pet()` is important, because if we want to allocate a `Dog`, the runtime needs to allocate a `Pet` first, in order to make space for the properties and methods we're inheriting. So _every time we extend a class, we must provide a constructor for the parent class._
 
 Nice. Let's allocate a `Dog`:
 
@@ -406,7 +406,7 @@ abstract class WalkingPet {
 
 The keyword `abstract` is necessary for methods that don't have an implementation, just a signature. In this case, a class that defines an abstract method must also have the `abstract` keyword next to it. An abstract class is just like a regular class &mdash; meaning that we can add properties and methods &mdash; but with the following rules:
 
-- an abstract class and all abstract methods are automatically `open` 
+- an abstract class and all abstract methods are automatically `open`
 - an abstract class does not necessarily _have_ to have abstract methods, but a class that _has_ abstract methods _must_ be abstract
 - an abstract class may not be instantiated, even if it may have constructor arguments
 - a class that inherits from an abstract class must either
@@ -429,9 +429,9 @@ With the new concept of an interface in Kotlin, it's time we expand upon the Kot
 
 ```kotlin
 class Snake: Pet(), Carnivore, ColdBlooded {
-    override fun eat(animal: Pet) = 
+    override fun eat(animal: Pet) =
         "sssst, I'm sssswallowing thisss poor sssucker"
-    
+
     // and maybe additional properties, methods, overrides
 }
 ```
@@ -456,7 +456,7 @@ object MySingleton
 Boom. Done. `MySingleton` is now a type, and the only possible instance of that type. Just like with a class, we can add properties and methods to this type:
 
 ```kotlin
-object MySingleton { 
+object MySingleton {
     val aProperty = 42
     fun aMethod(arg: Int): Int {
         println("hello from singleton: $arg")
@@ -512,7 +512,7 @@ The only restrictions are that
 
 ### 4.6. Basic Error Handling
 
-Much like other mainstream languages, Kotlin has the same `try-catch-finally` composite structure. 
+Much like other mainstream languages, Kotlin has the same `try-catch-finally` composite structure.
 
 JVM applications "crash" by either
 - Errors, which are caused by problems with the underlying system, e.g. stack overflow errors, out of memory errors
@@ -556,7 +556,7 @@ interface MyLinkedList<T> {
 }
 ```
 
-The `<T>` is a _type parameter_, meaning that we can make the compiler _set the type_ of an instance of `MyLinkedList` to a certain type that we use when instantiating. At that point, the real type in the place of `T` is used (and enforced) everywhere we use the API of the instance. For example, if we have an instance of `MyLinkedList<Int>`, then we know (and the compiler can enforce) that every time we call the `head()` method, we will obtain an `Int` and nothing else. 
+The `<T>` is a _type parameter_, meaning that we can make the compiler _set the type_ of an instance of `MyLinkedList` to a certain type that we use when instantiating. At that point, the real type in the place of `T` is used (and enforced) everywhere we use the API of the instance. For example, if we have an instance of `MyLinkedList<Int>`, then we know (and the compiler can enforce) that every time we call the `head()` method, we will obtain an `Int` and nothing else.
 
 A great example is the Kotlin standard collection library, which uses generics a lot:
 
@@ -576,7 +576,7 @@ We used collections superficially a few times in this guide. It's time to explor
 
 - lists
 - arrays
-- sets 
+- sets
 - maps
 
 in both their immutable and mutable forms.
@@ -673,7 +673,7 @@ val phonebook: Map<String, Int> = mapOf(
 
 In this case, we need to provide pairs instead of simple values (because we make associations), and we have this nice syntax sugar in Kotlin to build a pair in the form of a "key to value" association (see `"Alice" to 999` above).
 
-The fundamental API of a map is to 
+The fundamental API of a map is to
 - test whether a key is in the map
 - retrieve the value associated with a key
 
@@ -767,7 +767,7 @@ Or various forms of processing collections with predicates:
 - finding the first item in a collection that passes a predicate
 - taking/dropping a prefix of a collection containing just items that pass a predicate
 - counting how many items satisfy a predicate
-- 
+-
 ```kotlin
 // processing with predicates
 val firstEven = numbers.find { x -> x % 2 == 0 } // may return null if the item doesn't exist
@@ -797,7 +797,7 @@ Developer dev = null;
 String name = dev.name;
 ```
 
-and this will crash spectacularly, even if the problem is right in your face. 
+and this will crash spectacularly, even if the problem is right in your face.
 
 Kotlin learned. Kotlin will not allow you to use properties or methods of a variable which _might_ be null, and will also not allow you to _use_ null to assign to a variable that has a definitive type. So in our case, an assignment such as
 
@@ -808,7 +808,7 @@ val dev: Developer = null
 is not possible in Kotlin. If you want to use an expression on the right-hand side that _might_ be null, the type of the variable in question is not `Developer` but `Developer?`, a.k.a. a _nullable_. So it's okay to write
 
 ```kotlin
-val maybeDev: Developer? = null 
+val maybeDev: Developer? = null
 ```
 
 Now the second restriction kicks in. With a nullable variable, you may not use its properties and call its methods, so the following is also illegal:
@@ -884,7 +884,7 @@ val b = Vector(3.5, 6.7)
 val apb = a.plus(b)
 ```
 
-However, the Kotlin syntax allows us to place the keyword `operator` in front of a few special methods: plus (+), minus (-), times (*), div (/), rem (%) and a few others. For this plus operator, if we make it 
+However, the Kotlin syntax allows us to place the keyword `operator` in front of a few special methods: plus (+), minus (-), times (*), div (/), rem (%) and a few others. For this plus operator, if we make it
 
 ```kotlin
     operator fun plus(other: Vector) =

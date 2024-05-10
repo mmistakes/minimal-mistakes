@@ -2,7 +2,7 @@
 title: "Value Classes in Scala"
 date: 2021-02-19
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "An ad-hoc type definition technique for eliminating bugs which are hard to trace, with implementations in Scala 2 via newtypes and in Scala 3 via opaque types."
 ---
@@ -30,7 +30,7 @@ trait ProductRepository {
 }
 ```
 
-We cannot avoid using a description in the search by code or a code in the search by description. As we are representing both pieces of information through a `String`, we can wrongly pass a description to the search by code, and vice versa: 
+We cannot avoid using a description in the search by code or a code in the search by description. As we are representing both pieces of information through a `String`, we can wrongly pass a description to the search by code, and vice versa:
 
 ```scala
 val aCode = "8-000137-001620"
@@ -180,14 +180,14 @@ import io.estatico.newtype.macros.newtype
 
 The macro expansion generates a new `type` definition and an associated companion object. Moreover, the library expands the class marked with the `@newtype` annotation with its underlying value at runtime. So, a `@newtype` class can't extend any other type.
 
-Despite these limitations, the NewType library works like a charm and interacts smoothly with IDEs. 
+Despite these limitations, the NewType library works like a charm and interacts smoothly with IDEs.
 
 Using two `@newtype`s, one representing a bar-code and one representing a description, we can easily improve the definition of the initial `Product` class:
 
 ```scala
 @newtype case class BarCode(code: String)
 @newtype case class Description(descr: String)
-    
+
 case class Product(code: BarCode, description: Description)
 ```
 
@@ -195,7 +195,7 @@ Moreover, creating a new instance of a newtype it's as easy as creating an insta
 
 ```scala
 val iPhoneBarCode: BarCode = BarCode("1-234567-890123")
-val iPhoneDescription: Description = Description("Apple iPhone 12 Pro") 
+val iPhoneDescription: Description = Description("Apple iPhone 12 Pro")
 val iPhone12Pro: Product = Product(iPhoneBarCode, iPhoneDescription)
 ```
 
@@ -290,14 +290,14 @@ To create a `BarCode` from a `String`, we must provide one or many smart constru
 ```scala
 object BarCodes {
   opaque type BarCode = String
-  
+
   object BarCode {
     def mkBarCode(code: String): Either[String, BarCode] = {
       Either.cond(
         code.matches("\\d-\\d{6}-\\d{6}"),
         code,
         s"The given code $code has not the right format"
-      )   
+      )
     }
   }
 }
@@ -309,7 +309,7 @@ Inside the `BarCodes` scope, the `type` alias `BarCode` works as a `String`: We 
 object BarCodes {
   opaque type BarCode = String
   val barCode: BarCode = "8-000137-001620"
-  
+
   extension (b: BarCode) {
     def country: Char = b.head
   }

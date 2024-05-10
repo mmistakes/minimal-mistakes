@@ -2,7 +2,7 @@
 title: "A Functional Load Balancer with Scala, Http4s and Cats Effect"
 date: 2023-10-30
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala,http4s,cats,fp]
 excerpt: "How to build an application load balancer with Scala & Cats Effect, featuring efficiency and concurrency. Tests included!"
 ---
@@ -32,10 +32,10 @@ Our load balancer must:
 
 ## 2. Project Structure
 
-We will use Scala 3.3.0, SBT 1.9.4 and several monumental libraries to complete our project. 
+We will use Scala 3.3.0, SBT 1.9.4 and several monumental libraries to complete our project.
 
-The initial project skeleton: 
-- `src/main/scala` groups production code 
+The initial project skeleton:
+- `src/main/scala` groups production code
 - `src/test/scala` groups tests
 - `src/main/resources/application.conf` defines the project configuration
 - `.scalafmt.conf` is used to format the code
@@ -93,7 +93,7 @@ In our case we will also have additional two packages:
 With that we can move on to defining some data models.
 
 ## 3. Domain Modeling
-The domain of load balancer is pretty straightforward. Let's unfold it step by step. 
+The domain of load balancer is pretty straightforward. Let's unfold it step by step.
 
 In a load balancer, you often need to handle requests and route them to different backend servers based on the URL or other request attributes. The `Url` case class which we'll write provides a convenient way to represent and manipulate URLs in a strongly-typed manner, making it easier to work with URL-related logic in the load balancer. Using a dedicated `Url` type makes the code more self-explanatory and provides a clear and meaningful abstraction for URLs.
 
@@ -138,7 +138,7 @@ The `add` and `remove` methods allow you to dynamically manage the list of backe
 
 `currentUnsafe` and `currentOpt` methods are pretty much self-explanatory.
 
-As a next step we can write some unit tests to make sure that `Urls` API is sound. Such unit tests help ensure the correctness of the `Urls` class's functionality and behavior in various scenarios. They are essential for catching bugs or regressions when making changes to the `Urls` class. 
+As a next step we can write some unit tests to make sure that `Urls` API is sound. Such unit tests help ensure the correctness of the `Urls` class's functionality and behavior in various scenarios. They are essential for catching bugs or regressions when making changes to the `Urls` class.
 
 So, let's introduce `munit` library and create `UrlsTest.scala`:
 
@@ -249,7 +249,7 @@ backends=[
  "http://localhost:8081",
  "http://localhost:8082",
  "http://localhost:8083"
-], 
+],
 health-check-interval=3
 ```
 
@@ -311,7 +311,7 @@ object config {
 
 Ok, what about the fact that our load balancer should incorporate concurrency and thread-safety?
 
-It is apparent that the load balancer will have to handle concurrent requests from different clients which can be issued even the same time! So we need to make sure that the state updates for 
+It is apparent that the load balancer will have to handle concurrent requests from different clients which can be issued even the same time! So we need to make sure that the state updates for
 `Urls` are atomic.
 
 For that we can make use of `cats.effect.Ref`, however we need to distinguish between two completely separate problems:
@@ -354,7 +354,7 @@ There are a handful of services which can be useful to abstract over to make the
 - applying Round Robin to `HealthChecks` and `Backends` on each request (through the `cats.effect.Ref` API)
 - updating `Backends` based on health check responses (adding or removing backends through `cats.effect.Ref` API)
 
-Let's gradually follow the list above: 
+Let's gradually follow the list above:
 
 As we mentioned, we need a proper service for constructing `org.http4s.Uri` because we'll be using `http4s` and its inclusive ecosystem to write the HTTP server for our load balancer.
 
@@ -371,7 +371,7 @@ trait ParseUri {
 }
 
 object ParseUri {
-  
+
   object Impl extends ParseUri {
     /**
      * Either returns proper Uri or InvalidUri
@@ -517,7 +517,7 @@ class AddRequestPathToBackendUrlTest extends FunSuite {
 
     assertEquals(obtained, expected)
   }
-  
+
   test("since request doesn't have path just return backendUrl") {
     val obtained = impl(backendUrl = backendUrl, Request(uri = Uri.unsafeFromString("localhost:8080")))
     val expected = backendUrl
@@ -662,12 +662,12 @@ The code above a trait `SendAndExpect[A]` and companion object `SendAndExpect`. 
 
 - import statements: The code starts with several import statements that import necessary libraries and modules, such as HTTP client libraries, logging libraries, and other utility libraries.
 - `SendAndExpect[A]` trait: defines a single abstract method `apply(uri: Uri): IO[A]`. It represents a function that sends an HTTP request to a given URI and returns an effectful result of type `A` wrapped in `IO`. This trait is intended to be extended to create specific implementations for sending requests and handling responses.
-- `SendAndExpect` companion object: The companion object `SendAndExpect` contains some utility methods and implicit instances. 
-- `logger`: It defines an implicit logger for the IO effect using the `Slf4jLogger` library. This logger can be used for logging messages within the code. 
-- `toBackend`: This method takes an `HttpClient` and an HTTP request `(Request[IO])` and creates an implementation of `SendAndExpect[String]`. It sends the HTTP request to the specified URI using the `HttpClient` and handles errors, such as a `"Not Found"` response, by returning appropriate messages.  
-- `toHealthCheck`: This method takes an `HttpClient` and creates an implementation of `SendAndExpect[ServerHealthStatus]`. It performs a health check by sending a request to the specified URI using the `HttpClient` and returning the health status. It also handles timeouts and errors.  
+- `SendAndExpect` companion object: The companion object `SendAndExpect` contains some utility methods and implicit instances.
+- `logger`: It defines an implicit logger for the IO effect using the `Slf4jLogger` library. This logger can be used for logging messages within the code.
+- `toBackend`: This method takes an `HttpClient` and an HTTP request `(Request[IO])` and creates an implementation of `SendAndExpect[String]`. It sends the HTTP request to the specified URI using the `HttpClient` and handles errors, such as a `"Not Found"` response, by returning appropriate messages.
+- `toHealthCheck`: This method takes an `HttpClient` and creates an implementation of `SendAndExpect[ServerHealthStatus]`. It performs a health check by sending a request to the specified URI using the `HttpClient` and returning the health status. It also handles timeouts and errors.
 
-Overall, this code defines a flexible way to send HTTP requests and handle responses in a functional and effectful manner using the IO monad. It also provides logging functionality for monitoring the process. The implementations of `SendAndExpect` can be used to send different types of requests and handle different types of responses, making it a versatile tool for working with HTTP requests and responses. 
+Overall, this code defines a flexible way to send HTTP requests and handle responses in a functional and effectful manner using the IO monad. It also provides logging functionality for monitoring the process. The implementations of `SendAndExpect` can be used to send different types of requests and handle different types of responses, making it a versatile tool for working with HTTP requests and responses.
 
 Awesome! Let's write some tests to make sure that our definitions meet the criteria but for that we will need to add one mock value in `SendAndExpect` companion object, such as:
 ```scala
@@ -763,7 +763,7 @@ import scala.util.Try
 trait RoundRobin[F[_]] {
   def apply(ref: UrlsRef): IO[F[Url]]
 }
-  
+
 object RoundRobin {
 
   type BackendsRoundRobin     = RoundRobin[Option]
@@ -806,7 +806,7 @@ Overall, this code provides a flexible and generic way to implement round-robin 
 
 (I omitted the tests for `RoundRobin` because it's really huge, you can view whole the source code in the end)
 
-Nice! 
+Nice!
 
 It's time to create something that based on `ServerHealthStatus` will update the `Backends` atomically - either remove or add new `Url` to it:
 
@@ -827,7 +827,7 @@ trait UpdateBackendsAndGet {
 object UpdateBackendsAndGet {
 
   object Impl extends UpdateBackendsAndGet {
-    override def apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls] = 
+    override def apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls] =
       backends.urls.updateAndGet { urls =>
         status match {
           case ServerHealthStatus.Alive => urls.add(url)
@@ -840,7 +840,7 @@ object UpdateBackendsAndGet {
 
 - `UpdateBackendsAndGet` trait - defines a single abstract method `apply(backends: Backends, url: Url, status: ServerHealthStatus): IO[Urls]`. This trait represents an operation that updates the list of backends (`Backends`) based on the provided `Url` and its `ServerHealthStatus`. It returns the updated list of URLs (`Urls`) wrapped in an `IO` effect.
 - `UpdateBackendsAndGet` companion object - provides an implementation of the `UpdateBackendsAndGet` trait using the `Impl` object.
-- `Impl object`: defines the apply method, which takes the current backends, a url, and a status. Depending on the status (whether it's "Alive" or "Dead"), it updates the list of URLs (urls) inside the backends by adding or removing the provided url. It uses the `updateAndGet` method to perform this operation atomically. If the status is "Alive," the url is added to the list of backends; if the status is "Dead," the url is removed from the list. 
+- `Impl object`: defines the apply method, which takes the current backends, a url, and a status. Depending on the status (whether it's "Alive" or "Dead"), it updates the list of URLs (urls) inside the backends by adding or removing the provided url. It uses the `updateAndGet` method to perform this operation atomically. If the status is "Alive," the url is added to the list of backends; if the status is "Dead," the url is removed from the list.
 - `apply` - returns the updated urls wrapped in an `IO` effect.
 
 So, the code above updates the list of `Backends` based on the `ServerHealthStatus`. It's designed to be flexible and can be used to add or remove backends from the list depending on their health. The use of `IO` suggests that this operation is performed in a safe and asynchronous manner, which is common in functional programming and asynchronous environments.
@@ -867,7 +867,7 @@ class UpdateBackendsAndGetTest extends CatsEffectSuite {
     val obtained = for
       ref     <- IO.ref(urls)
       updated <- updateBackendsAndGet(Backends(ref), Url(localhost8083), ServerHealthStatus.Alive)
-    yield updated 
+    yield updated
 
     assertIO(obtained, Urls(initialUrls :+ Url(localhost8083)))
   }
@@ -950,7 +950,7 @@ The code above defines an object `HealthCheckBackends`, which periodically check
 
 `periodically` method - takes several parameters, including `healthChecks`, `backends`, `parseUri`, `updateBackendsAndGet`, `healthChecksRoundRobin`, `sendAndExpectStatus` and `healthCheckInterval`.  It calls the `checkHealthAndUpdateBackends` method and then sleeps for a specified interval (determined by `healthCheckInterval`) using `IO.sleep`. The `foreverM` method ensures that this process runs indefinitely.
 
-Breaking down the algorithm of `checkHealthAndUpdateBackends`: 
+Breaking down the algorithm of `checkHealthAndUpdateBackends`:
 - selects a `URL` from `healthChecks` using `healthChecksRoundRobin`.
 - parses the selected `URL` into a `org.http4s.URI`.
 - sends an HTTP request to the parsed `URI` using `sendAndExpectStatus` to determine the health status.
@@ -1256,7 +1256,7 @@ object Main extends IOApp.Simple {
       Host.fromString(host),
       Port.fromInt(port),
     ).tupled.toRight(InvalidConfig)
-    
+
   override def run: IO[Unit] =
     for {
       config <- IO(ConfigSource.default.loadOrThrow[Config])
@@ -1428,7 +1428,7 @@ sbt:loadbalancer> assembly
 [success] Total time: 7 s, completed Sep 9, 2023, 1:00:51 PM
 ```
 
-move `lb.jar` from `target/scala-3.3.0/` to the root directory: 
+move `lb.jar` from `target/scala-3.3.0/` to the root directory:
 - `mv target/scala-3.3.0/lb.jar lb.jar`
 
 and finally write the separate shell script - `lb` in order to run the load balancer:
@@ -1468,4 +1468,3 @@ In this video you can see the live testing of load balancer:
 If you want to see the whole project you can view _[Source code](https://github.com/Ghurtchu/lb)_
 
 Thank you for your time!
-

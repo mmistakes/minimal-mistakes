@@ -2,7 +2,7 @@
 title: "New Types in Scala 3"
 date: 2020-09-25
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3, type system]
 excerpt: "Scala 3 introduces some new kinds of types, which we're eagerly awaiting for."
 ---

@@ -2,7 +2,7 @@
 title: "Idiomatic Error Handling in Scala"
 date: 2021-02-04
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "Error handling is likely one of the most frustrating part of programming, and in Scala, there are better and worse ways to do it. Let's take a look."
 ---
@@ -21,7 +21,7 @@ val magicChar = try {
   scala.charAt(20) // throws out of bounds exception
 } catch {
   case e: NullPointerException => 'z'
-  case r: RuntimeException => 'z' 
+  case r: RuntimeException => 'z'
 } finally {
   // close a file or some other resource
 }
@@ -122,7 +122,7 @@ Besides that, `Either` has the liberating benefit of creating and handling any t
 Some examples:
 
 ```scala
-// good practice to add type aliases to understand what the "left" means 
+// good practice to add type aliases to understand what the "left" means
 type MyError = String
 
 val aSuccessfulComputation: Either[MyError, Int] = Right(22)
@@ -140,7 +140,7 @@ val aChainedComputation = for {
 
 ## 4. Advanced: `Validated`
 
-There are many data structures in various libraries with certain set goals in mind. One of the popular ones is `Validated`, which is part of the Cats library. By the way, I [teach](https://rockthejvm.com/p/cats) this here at Rock the JVM. 
+There are many data structures in various libraries with certain set goals in mind. One of the popular ones is `Validated`, which is part of the Cats library. By the way, I [teach](https://rockthejvm.com/p/cats) this here at Rock the JVM.
 
 Besides doing pretty much everything that Either does, Validated allows us to _accumulate_ errors. One obvious use case is online forms that have to meet certain criteria. If a user fails those conditions, the form should ideally show the user _all the places_ in which they filled wrong, not just a single error.
 
@@ -167,10 +167,10 @@ def validatePositive(n: Int): Validated[List[String], Int] =
 
 def validateSmall(n: Int): Validated[List[String], Int] =
   Validated.cond(n < 100, n, List("Number must be smaller than 100")
- 
+
 def validateEven(n: Int): Validated[List[String], Int] =
   Validated.cond(n % 2 == 0, n, List("Number must be even")
- 
+
 import cats.instances.list._ // to combine lists by concatenation
 implicit val combineIntMax: Semigroup[Int] = Semigroup.instance[Int](Math.max) // to combine ints by selecting the biggest
 
@@ -180,7 +180,7 @@ def validate(n: Int): Validated[List[String], Int] = validatePositive(n)
 ```
 
 The `validate` method can combine 3 `Validated` instances, in the sense that:
- 
+
 - If all are valid, their wrapped values will combine as specified by the implicit `Semigroup` of that type (basically a combination function).
 - If some are invalid, the result will be an Invalid instance containing the combination of all the errors as specified by the implicit `Semigroup` for the error type; in our case, the Cats default for lists is to concatenate them.
 

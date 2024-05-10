@@ -2,7 +2,7 @@
 title: "Why are Type Classes Useful in Scala?"
 date: 2020-06-11
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, functional programming, type system]
 excerpt: "FP fans talk about pure functional programming in Scala with type classes. They're hard. Why do we really need them?"
 ---

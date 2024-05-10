@@ -2,7 +2,7 @@
 title: "Akka Typed: Actor Discovery"
 date: 2022-03-22
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "A common pattern in Akka Typed: how to find actors that are not explicitly passed around."
 ---
@@ -144,18 +144,18 @@ The `ServiceKey` must be typed with the same type as the actor that we want to r
 val guardian: Behavior[NotUsed] = Behaviors.setup { context =>
   // controller for the sensors
   context.spawn(Sensor.controller(), "controller")
-  
+
   val dataAgg1 = context.spawn(DataAggregator(), "data_agg_1")
   // "publish" dataAgg1 is available by associating it to a key (service key)
   context.system.receptionist ! Receptionist.register(DataAggregator.serviceKey, dataAgg1)
-  
+
   // change data aggregator after 10s
   Thread.sleep(10000)
   context.log.info("[guardian] Changing data aggregator")
   context.system.receptionist ! Receptionist.deregister(DataAggregator.serviceKey, dataAgg1)
   val dataAgg2 = context.spawn(DataAggregator(), "data_agg_2")
   context.system.receptionist ! Receptionist.register(DataAggregator.serviceKey, dataAgg2)
-  
+
   Behaviors.empty
 }
 ```
@@ -180,7 +180,7 @@ def apply(id: String): Behavior[SensorCommand] = Behaviors.setup { context =>
 }
 ```
 
-We would like to be automatically notified if there is any change in the association to the `ServiceKey`. The API allows us to pass the `ServiceKey` instance in question and an actor which can handle a `Listing` message that the receptionist will send with every update. 
+We would like to be automatically notified if there is any change in the association to the `ServiceKey`. The API allows us to pass the `ServiceKey` instance in question and an actor which can handle a `Listing` message that the receptionist will send with every update.
 
 However, because our Sensor actor is typed with `SensorCommand` and we also need to handle the listing message, we will need a message adapter. We discussed the message adapter technique in [another article](/akka-message-adapter/), so we will use it here. We will need to wrap the listing message into some other `SensorCommand` that we can handle later:
 
@@ -193,7 +193,7 @@ def apply(id: String): Behavior[SensorCommand] = Behaviors.setup { context =>
   val receptionistSubscriber: ActorRef[Receptionist.Listing] = context.messageAdapter {
     case DataAggregator.serviceKey.Listing(set) => ChangeDataAggregator(set.headOption)
   }
-  
+
   // subscribe to the receptionist using the service key
   context.system.receptionist ! Receptionist.Subscribe(DataAggregator.serviceKey, receptionistSubscriber)
 }

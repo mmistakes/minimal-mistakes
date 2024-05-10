@@ -2,7 +2,7 @@
 title: "Cats Effect 3 - Racing IOs"
 date: 2021-04-29
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [cats effect]
 excerpt: "After the previous introduction to concurrency in Cats Effect, we'll look at how to manage racing IOs and fibers."
 ---
@@ -54,21 +54,21 @@ Let's consider two IOs:
 - one triggers a timeout
 
 ```scala3
-val valuableIO: IO[Int] = 
-    IO("task: starting").debug *> 
-    IO.sleep(1.second) *> 
-    IO("task: completed").debug *> 
+val valuableIO: IO[Int] =
+    IO("task: starting").debug *>
+    IO.sleep(1.second) *>
+    IO("task: completed").debug *>
     IO(42)
-    
+
 val vIO: IO[Int] = valuableIO.onCancel(IO("task: cancelled").debug.void)
 
-val timeout: IO[Unit] = 
-    IO("timeout: starting").debug *> 
-    IO.sleep(500.millis) *> 
+val timeout: IO[Unit] =
+    IO("timeout: starting").debug *>
+    IO.sleep(500.millis) *>
     IO("timeout: DING DING").debug.void
 ```
 
-(as a reminder, the `*>` operator is a sequencing operator for IOs, in the style of `flatMap`: in fact, it's implemented with `flatMap`) 
+(as a reminder, the `*>` operator is a sequencing operator for IOs, in the style of `flatMap`: in fact, it's implemented with `flatMap`)
 
 We can race these two IOs (started on different fibers) and get the result of the first one that finishes (the winner). The loser IO's fiber is cancelled. Therefore, the returned value of a race must be an Either holding the result of the first or second IO, depending (of course) which one wins.
 
@@ -76,7 +76,7 @@ We can race these two IOs (started on different fibers) and get the result of th
 
 def testRace() = {
   val first = IO.race(vIO, timeout)
-   
+
   first.flatMap {
     case Left(v) => IO(s"task won: $v")
     case Right(_) => IO("timeout won")
@@ -130,7 +130,7 @@ An example:
 
 ```scala3
 def demoRacePair[A](iox: IO[A], ioy: IO[A]) = {
-  val pair = IO.racePair(iox, ioy) 
+  val pair = IO.racePair(iox, ioy)
   // ^^ IO[Either[(OutcomeIO[A], FiberIO[B]), (FiberIO[A], OutcomeIO[B])]]
   pair.flatMap {
     case Left((outA, fibB)) => fibB.cancel *> IO("first won").debug *> IO(outA).debug

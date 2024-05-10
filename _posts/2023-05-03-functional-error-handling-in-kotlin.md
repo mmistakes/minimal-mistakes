@@ -2,7 +2,7 @@
 title: "Functional Error Handling in Kotlin, Part 1: Absent values, Nullables, Options"
 date: 2023-04-27
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kotlin]
 excerpt: "Whether we develop using an object-oriented or functional approach, we always have the problem of handling errors. Kotlin offers a lot of different methods to do it. Here, we'll focus on strategies that deal with the error without managing its cause, i.e., nullable types and Arrow Option types."
 toc: true
@@ -278,7 +278,7 @@ We can pass the new service to the `JobsService` and use it to get the salary in
 
 ```kotlin
 class JobsService(private val jobs: Jobs, private val converter: CurrencyConverter) {
-    
+
     // Omissis...
     fun retrieveSalaryInEur(id: JobId): Double =
         jobs.findById(id)?.let { converter.convertUsdToEur(it.salary.value) } ?: 0.0
@@ -461,7 +461,7 @@ interface Jobs {
 }
 
 class LiveJobs : Jobs {
-    
+
     override fun findById(id: JobId): Option<Job> = try {
         JOBS_DATABASE[id].toOption()
     } catch (e: Exception) {
@@ -511,7 +511,7 @@ interface Jobs {
 }
 
 class LiveJobs : Jobs {
-    
+
     // Omissis...
     override fun findAll(): List<Job> = JOBS_DATABASE.values.toList()
 }
@@ -587,8 +587,8 @@ Again, inside the DSL, the `bind` function is available. If you remember from th
 ```kotlin
 // Arrow SDK
 public value class OptionEagerEffectScope(private val cont: EagerEffectScope<None>) : EagerEffectScope<None> {
-    
-    // Omissis... 
+
+    // Omissis...
     public suspend fun <B> Option<B>.bind(): B = bind { None }
 }
 
@@ -666,7 +666,7 @@ The salary gap between JobId(value=42) and the max salary is 0.0
 
 ## 5. Conclusions
 
-This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then, we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type. 
+This article introduced the meaning of functional error handling in Kotlin. We started showing why we shouldn't rely on exceptions to handle errors. Then, we introduced two strategies to handling errors that forget the cause of errors: Kotlin nullable types and the Arrow `Option` type. Moreover, we saw how the Arrow library provides useful DSL to work with both nullable types and the `Option` type.
 
 In the next part of this series, we will see different strategies that allow us to propagate the cause of errors, such as the Kotlin `Result<T>` type and the Arrow `Either<L, R>` type.
 

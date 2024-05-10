@@ -2,7 +2,7 @@
 title: "Kotlin Flows - The Ultimate Guide"
 date: 2024-04-10
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kotlin]
 excerpt: "This article thoroughly covers a crucial concept in Kotlin Coroutines: Kotlin Flows. Flows are a reactive data structure you probably didn't know, but you can't live without them once you know them."
 toc: true
@@ -79,7 +79,7 @@ We have defined the actors playing in the movies "Zack Snyder's Justice League",
 What is a flow in Kotlin? **A `Flow<T>` is a reactive data structure that emits a sequence of type `T` values**. Flows are part of the Kotlin Coroutines library. In their simplest form, flows can be viewed as a collection, a sequence, or an iterable of values. We can create a flow from a finite list of values using the `flowOf` function:
 
 ```kotlin
-val zackSnyderJusticeLeague: Flow<Actor> = 
+val zackSnyderJusticeLeague: Flow<Actor> =
     flowOf(
         henryCavill,
         galGadot,
@@ -164,7 +164,7 @@ suspend fun main() {
             benFisher,
             rayHardy,
             jasonMomoa
-        ) 
+        )
     zackSnyderJusticeLeague.collect { println(it) }
 }
 ```
@@ -247,7 +247,7 @@ spiderMen
 **We can even use the `onEach` function as a surrogate of the `collect` function**. We can pass to the lambda we would have passed to the `collect` function to the `onEach` function. At this point, calling `collect` will trigger the effective execution of the flow. For example, we can rewrite the previous example as follows:
 
 ```kotlin
-spiderMen.onEach { 
+spiderMen.onEach {
     delay(1000)
     println(it)
 }.collect()
@@ -291,7 +291,7 @@ val actorsEmptyFlow =
             emit(henryCavill)
             emit(benAffleck)
         }
-        .collect { println(it) } 
+        .collect { println(it) }
 ```
 
 The output of the program doesn't surprise us:
@@ -438,7 +438,7 @@ Exception in thread "main" java.lang.RuntimeException: Oooops
 ...
 ```
 
-So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, **the `catch` function can't catch the exceptions thrown by the `collect` function** since it's the terminal operation of the flow: 
+So, we can think about the `catch` function as a `catch` block that handles all the exceptions thrown before it in the chain. For this reason, **the `catch` function can't catch the exceptions thrown by the `collect` function** since it's the terminal operation of the flow:
 
 ```kotlin
 val spiderMenActorsFlowWithException =
@@ -450,9 +450,9 @@ val spiderMenActorsFlowWithException =
     .catch { ex -> println("I caught an exception!") }
     .onStart { println("The Spider Men flow is starting") }
     .onCompletion { println("The Spider Men flow is completed") }
-    .collect { 
+    .collect {
         if (true) throw RuntimeException("Oooops")
-        println(it) 
+        println(it)
     }
 ```
 
@@ -597,7 +597,7 @@ public fun <T> Flow<T>.retryWhen(
     predicate: suspend FlowCollector<T>.(cause: Throwable, attempt: Long) -> Boolean): Flow<T> =
 ```
 
-We can rewrite the previous example using the `retryWhen` function as follows, retrying with an increasing delay between the attempts: 
+We can rewrite the previous example using the `retryWhen` function as follows, retrying with an increasing delay between the attempts:
 
 ```kotlin
 actorRepository
@@ -744,7 +744,7 @@ public fun <T, R> Flow<T>.scan(initial: R, operation: suspend (accumulator: R, v
 When dealing with infinite flows, we can always get the flow's first _n_ elements and then stop the collection. The `take` function is used to do that. For example, we can get the first three actors playing in the "Zack Snyder's Justice League" movie:
 
 ```kotlin
-infiniteJLFlowActors.take(3) 
+infiniteJLFlowActors.take(3)
 ```
 
 The `take` function is a transformation, which returns a new flow like `map` or `filter`. If the original flow is infinite, the new flow will be finite.
@@ -752,7 +752,7 @@ The `take` function is a transformation, which returns a new flow like `map` or 
 The `drop` function makes the opposite operation. It skips the flow's first _n_ elements and then emits the remaining ones. For example, we can skip the first three actors playing in "Zack Snyder's Justice League" movie:
 
 ```kotlin
-infiniteJLFlowActors.drop(3) 
+infiniteJLFlowActors.drop(3)
 ```
 
 Dropping from the head of a flow the first _n_ elements does not reduce the cardinality of an infinite flow. The new flow will be infinite as well.
@@ -1067,8 +1067,8 @@ val henryCavillBio =
         delay(1000)
         val biography =
             """
-      Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown dependency 
-      in the Channel Islands. His mother, Marianne (Dalgliesh), a housewife, was also born on Jersey, 
+      Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown dependency
+      in the Channel Islands. His mother, Marianne (Dalgliesh), a housewife, was also born on Jersey,
       and is of Irish, Scottish and English ancestry...
     """.trimIndent()
         emit(biography)
@@ -1098,7 +1098,7 @@ henryCavillBio
             ------------
             BIOGRAPHY:
               $bio
-              
+
             MOVIES:
               ${movies.joinToString("\n                  ")}
             """.trimIndent(),
@@ -1112,10 +1112,10 @@ The output of the program is:
                 Henry Cavill
                 ------------
                 BIOGRAPHY:
-                  Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown dependency 
-in the Channel Islands. His mother, Marianne (Dalgliesh), a housewife, was also born on Jersey, 
+                  Henry William Dalgliesh Cavill was born on the Bailiwick of Jersey, a British Crown dependency
+in the Channel Islands. His mother, Marianne (Dalgliesh), a housewife, was also born on Jersey,
 and is of Irish, Scottish and English ancestry...
-                  
+
                 MOVIES:
                   Man of Steel
                   Batman v Superman: Dawn of Justice
@@ -1136,7 +1136,7 @@ henryCavillBio
             ------------
             BIOGRAPHY:
               $bio
-              
+
             MOVIES:
               $movies
             """.trimIndent(),
@@ -1239,7 +1239,7 @@ val movieRepository =
                 benAffleck to listOf("Argo", "The Town", "Good Will Hunting", "Justice League"),
                 galGadot to listOf("Fast & Furious", "Justice League", "Wonder Woman 1984"),
             )
-        override suspend fun findMovies(actor: Actor): Flow<String> = 
+        override suspend fun findMovies(actor: Actor): Flow<String> =
             filmsByActor[actor]?.asFlow() ?: emptyFlow()
     }
 ```
@@ -1314,9 +1314,9 @@ Since the focus of this article is to introduce the main features of flows, we l
 
 ## 9. Conclusions
 
-Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We also left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new. 
+Ladies and gentlemen, we have reached the end of the article. We hope you enjoyed the journey into the world of flows. We saw how to create flows, how to consume them, and how to work with them, both synchronously and concurrently. The article would only be exhaustive in treating some of the features concerning flows. There are a lot of other transformation functions, terminal operations, etc. We invite you to discover and release the full power of flows. In the following appendix, we'll also delve into the internals of flows to understand how they work under the hood. We also left out how to manage hot data sources using flows, but we'll return to the topic in a future post. We hope you found the article helpful and that you learned something new.
 
-If you have any questions or feedback, please let us know. We're always happy to hear from you. If this article was in any way too difficult and you need to become good at Kotlin as fast as possible, we think you'll love the [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials). 
+If you have any questions or feedback, please let us know. We're always happy to hear from you. If this article was in any way too difficult and you need to become good at Kotlin as fast as possible, we think you'll love the [Kotlin Essentials course](https://rockthejvm.com/p/kotlin-essentials).
 
 ## 10. Appendix: How Flows Work
 
@@ -1359,7 +1359,7 @@ So, let's work on the lambda passed as input to the `flow` function. We can thin
 ```kotlin
 fun interface FlowCollector {
     suspend fun emit(value: Actor)
-} 
+}
 ```
 
 We made the `FlowCollector` interface a functional interface (or SAM, Single Abstract Method) to let the compiler adapt the lambda to the interface. We can now rewrite our `flow` function using the `FlowCollector` interface:
@@ -1446,7 +1446,7 @@ fun <T> flow(builder: suspend FlowCollector<T>.() -> Unit): Flow<T> =
         override suspend fun collect(collector: FlowCollector<T>) {
             builder(collector)
         }
-    } 
+    }
 ```
 
 That's it. The above implementation is similar to the actual implementation of flows in the Kotlin Coroutines library. This journey let us understand that there is no magic behind flows, only a bit of functional programming and a lot of Kotlin. With a deeper understanding of the `Flow` type, we can define more complex use cases using flows.
@@ -1478,5 +1478,3 @@ tasks.named<Test>("test") {
     useJUnitPlatform()
 }
 ```
-
-

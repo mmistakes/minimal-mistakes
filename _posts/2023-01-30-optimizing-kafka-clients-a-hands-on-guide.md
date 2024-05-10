@@ -2,7 +2,7 @@
 title: "Optimizing Kafka Clients: A Hands-On Guide"
 date: 2023-01-22
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kotlin, kafka, streaming]
 excerpt: "Tips on how to make Kafka clients run blazing fast, with code examples."
 attribution: <a href="https://www.vecteezy.com/free-vector/squirrel-cartoon">Squirrel Cartoon Vectors by Vecteezy</a>
@@ -16,7 +16,7 @@ _Enter Giannis:_
 
 Apache Kafka is a well-known event streaming platform used in many organizations worldwide.
 It is used as the backbone of many data infrastructures, thus it's important to understand how to use it efficiently.
-The focus of this article is to provide a better understanding of how Kafka works under the hood to better design and tune your client applications.  
+The focus of this article is to provide a better understanding of how Kafka works under the hood to better design and tune your client applications.
 
 Since we will discuss **how things work**, this article assumes some basic familiarity with Kafka, i.e.:
 - Understanding Kafka on a high level
@@ -27,11 +27,11 @@ Since we will discuss **how things work**, this article assumes some basic famil
 
 We will use a file ingestion data pipeline for clickstream data as an example to cover the following:
 1. Ingest click stream data from the filesystem into Kafka
-2. Explain how Kafka producers work, configurations and tuning for throughput / latency 
-3. How Kafka consumers work, configurations and scaling the consuming side 
+2. Explain how Kafka producers work, configurations and tuning for throughput / latency
+3. How Kafka consumers work, configurations and scaling the consuming side
 4. Caveats with consumer offsets and different approaches for handling them
 
-The relevant e-commerce datasets can be found [here](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store). 
+The relevant e-commerce datasets can be found [here](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store).
 The code samples are written in Kotlin, but the implementation should be easy to port in Java or Scala.
 You can find the source code on Github [here](https://github.com/polyzos/kafka-streaming-ledger).
 
@@ -113,13 +113,13 @@ services:
       - zookeeper
 ```
 
-All you have to do is navigate to the root folder of the project where the `docker-compose.yaml` file is located and run 
+All you have to do is navigate to the root folder of the project where the `docker-compose.yaml` file is located and run
 
 ```shell
 docker-compose up
 ```
 
-This command will start a 3-node Kafka Cluster. 
+This command will start a 3-node Kafka Cluster.
 
 > _Note: You might want to increase your docker resources (I'm running with 6GB RAM) to make sure you don't run into any issues._
 
@@ -147,7 +147,7 @@ Topic: ecommerce.events	TopicId: oMhOjOKcQZaoPp_8Xc27lQ	PartitionCount: 5	Replic
 
 ## 3. Show me the Code 👀
 
-The producer will send some events to Kafka. 
+The producer will send some events to Kafka.
 
 The data model for the click events should look similar to the following payload.
 ![Alt text](../images/kafka/payload.png "Payload")
@@ -186,9 +186,9 @@ _But what actually happens when the `send()` method is called?_
 Kafka does a lot of things under the hood when the `send()` method is invoked, so let’s outline them below:
 
 1. The message is serialized using the specified serializer.
-2. The partitioner determines which partition the message should be routed to. 
-3. Internally Kafka keeps message buffers; we have one buffer for each partition and each buffer can hold many batches of messages grouped for each partition. 
-4. Finally, the I/O threads pick up these batches and sent them over to the brokers.  
+2. The partitioner determines which partition the message should be routed to.
+3. Internally Kafka keeps message buffers; we have one buffer for each partition and each buffer can hold many batches of messages grouped for each partition.
+4. Finally, the I/O threads pick up these batches and sent them over to the brokers.
 At this point, our messages are in-flight from the client to the brokers. The brokers have sent/receive network buffers for the network threads to pick up the messages and hand them over to some IO thread to actually persist them on disk.
 5. On the leader broker, the messages are written on disk and sent to the followers for replication. One thing to note here is that the messages are first written on the PageCache and periodically are flushed on disk.
 (_Note:_ PageCache to disk is an extreme case for message loss, but still you might want to be aware of that)
@@ -220,7 +220,7 @@ Using the default configurations ingesting 5.000.000 messages takes around 119 s
 13:17:25.323 INFO  [kafka-producer-network-thread | producer-1] io.ipolyzos.utils.LoggingUtils - Total messages sent so far 4900000.
 13:17:27.960 INFO  [kafka-producer-network-thread | producer-1] io.ipolyzos.utils.LoggingUtils - Total messages sent so far 5000000.
 13:17:27.967 INFO  [main] io.ipolyzos.producers.ECommerceProducer - Total time '119' seconds
-13:17:27.968 INFO  [main] io.ipolyzos.utils.LoggingUtils - Total Event records sent: '5000000' 
+13:17:27.968 INFO  [main] io.ipolyzos.utils.LoggingUtils - Total Event records sent: '5000000'
 13:17:27.968 INFO  [main] io.ipolyzos.utils.LoggingUtils - Closing Producers ...
 ```
 Setting `batch.size` to 64Kb (16 is the default), linger.ms greater than 0 and finally `compression.type` to gzip
@@ -236,7 +236,7 @@ Has the following impact on the ingestion time.
 13:18:35.280 INFO  [kafka-producer-network-thread | producer-1] io.ipolyzos.utils.LoggingUtils - Total messages sent so far 4900000.
 13:18:35.980 INFO  [kafka-producer-network-thread | producer-1] io.ipolyzos.utils.LoggingUtils - Total messages sent so far 5000000.
 13:18:35.983 INFO  [main] io.ipolyzos.producers.ECommerceProducer - Total time '36' seconds
-13:18:35.984 INFO  [main] io.ipolyzos.utils.LoggingUtils - Total Event records sent: '5000000' 
+13:18:35.984 INFO  [main] io.ipolyzos.utils.LoggingUtils - Total Event records sent: '5000000'
 13:18:35.984 INFO  [main] io.ipolyzos.utils.LoggingUtils - Closing Producers ...
 ```
 
@@ -294,13 +294,13 @@ So decreasing the number of records the `poll()` loop should return and/or bette
 
 ## 6. Running the Consumer
 
-At this point, I will start one consuming instance on my `ecommerce.events` topic. Remember that this topic consists of 5 partitions. 
+At this point, I will start one consuming instance on my `ecommerce.events` topic. Remember that this topic consists of 5 partitions.
 I will execute against my Kafka cluster, using the default consumer configuration options and my goal is to see how long it takes for a consumer to read 10000 messages from the topic, assuming a 20ms processing time per message.
 
 ```shell
 12:37:13.362 INFO  [main] io.ipolyzos.utils.LoggingUtils - [Consumer-1] Records in batch: 500 - Elapsed Time: 226 seconds - Total Consumer Processed: 9500 - Total Group Processed: 9500
 12:37:25.039 INFO  [main] io.ipolyzos.Extensions - Batch Contains: 500 records from 1 partitions.
-12:37:25.040 INFO  [main] io.ipolyzos.Extensions - 
+12:37:25.040 INFO  [main] io.ipolyzos.Extensions -
 +--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
 | Offset | Topic            | Partition | Timestamp     | Key       | Value                                        | TimestampType | Teaders                                         | LeaderEpoch |
 +--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
@@ -341,7 +341,7 @@ When a consumer goes down or similarly a new one joins the group, Kafka will hav
 
 Let’s run again our previous example — consuming 10k messages — but this time having 5 consumers in our consumer group. I will be creating 5 consuming instances from within a single JVM (using Kotlin [coroutines](/kotlin-coroutines-101), but you can easily re-adjust the code (found [here](https://github.com/polyzos/kafka-streaming-ledger/blob/main/src/main/kotlin/io/ipolyzos/consumers/PerPartitionConsumer.kt)) and just start multiple JVMs.
 ```shell
-12:39:53.233 INFO  [DefaultDispatcher-worker-1] io.ipolyzos.Extensions - 
+12:39:53.233 INFO  [DefaultDispatcher-worker-1] io.ipolyzos.Extensions -
 +--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
 | Offset | Topic            | Partition | Timestamp     | Key       | Value                                        | TimestampType | Teaders                                         | LeaderEpoch |
 +--------+------------------+-----------+---------------+-----------+----------------------------------------------+---------------+-------------------------------------------------+-------------+
@@ -440,7 +440,7 @@ if (perMessageCommit) {
       mapOf(TopicPartition(record.topic(), record.partition()) to OffsetAndMetadata(record.offset()))
 
   consumer.commitSync(commitEntry)
-  logger.info { "Committed offset: ${record.partition()}:${record.offset()}" }   
+  logger.info { "Committed offset: ${record.partition()}:${record.offset()}" }
 }
 ```
 

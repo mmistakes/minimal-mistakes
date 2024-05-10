@@ -2,7 +2,7 @@
 title: "ZIO Streams: A Long-Form Introduction"
 date: 2022-08-10
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [zio, zio-streams]
 excerpt: "A comprehensive introduction to ZIO streams, a powerful abstraction in the ZIO ecosystem."
 ---

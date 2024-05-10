@@ -2,7 +2,7 @@
 title: "Streaming Analytics with Apache Pulsar and Spark Structured Streaming"
 date: 2022-01-29
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [pulsar, spark, spark structured streaming]
 excerpt: "We'll discuss the role Apache Pulsar plays in the event streaming and computing landscape, the use cases you can implement with Pulsar and when more advanced computing engines should be integrated to implement more sophisticated stream processing use cases."
 ---
@@ -176,7 +176,7 @@ And in another terminal we'll create a topic `events` to accept our values:
 
 ```shell
 docker exec -it pulsar bash
-bin/pulsar-admin topics create events 
+bin/pulsar-admin topics create events
 ```
 
 Now, in our Scala application, we need to set up a Pulsar producer. Assuming we can [parse our data easily](#33-parsing-events) (in this case from a file with randomized, realistic data), we'll need to set up the necessary Pulsar scaffolding:
@@ -217,13 +217,13 @@ Then we need to process all events in the list by sending them asynchronously to
 ```scala
 val messageIdFutures: Seq[Future[MessageId]] = events.map { event =>
   Thread.sleep(10)
-  
+
   // marshal an event for Pulsar
   val message: DefaultProducerMessage[Event] = DefaultProducerMessage[Event](
     Some(event.userid),
     event,
     eventTime = Some(EventTime(event.eventTime)))
-  
+
   //send it
   val messageIdFuture = eventProducer.sendAsync(message)
 
@@ -246,7 +246,7 @@ Future.sequence(messageIdFutures) // turn the Seq[Future[...]] into Future[Seq[.
     case Success(_) => println("Producer finished sending event records.")
     case Failure(e) => println(s"A failure occurred. Check the logs and the stack trace: $e")
   }
-  .andThen { 
+  .andThen {
     case _ => eventProducer.close()
   }
 ```

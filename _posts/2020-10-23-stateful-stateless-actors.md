@@ -2,9 +2,9 @@
 title: "Akka Typed Actors: Stateful and Stateless"
 date: 2020-10-22
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka]
-excerpt: "Akka Typed has fundamentally changed the way we create actors. In this article we'll look at several ways we can keep state inside Akka actors." 
+excerpt: "Akka Typed has fundamentally changed the way we create actors. In this article we'll look at several ways we can keep state inside Akka actors."
 ---
 
 This article is for people getting started with Akka typed actors. We'll look at how we can keep state inside an actor in a few different ways.
@@ -99,10 +99,10 @@ If we want to test this actor, all we have to do is back it up by an `ActorSyste
 So if we call this in our main method and run our application, we'll get the following log lines:
 
 ```
-[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) Eating chocolate, getting a shot of dopamine! 
-[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (1) Eating chocolate, getting a shot of dopamine! 
-[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (2) Doing chores, womp, womp... 
-[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) Learning Akka, looking good! 
+[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) Eating chocolate, getting a shot of dopamine!
+[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (1) Eating chocolate, getting a shot of dopamine!
+[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (2) Doing chores, womp, womp...
+[2020-10-22 17:49:32,854] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) Learning Akka, looking good!
 ```
 
 So we see that with every new message, our actor modified its internal state.
@@ -146,10 +146,10 @@ Notice that we moved our mutable variable as a method argument, and because we d
 Sure enough, if we change our test method to use this new `emotionalFunctionalActor` instead, the logged output will look the same:
 
 ```
-[2020-10-22 17:59:27,334] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) eating chocolate 
-[2020-10-22 17:59:27,335] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (1) eating chocolate 
-[2020-10-22 17:59:27,335] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (2) washing dishes, womp womp 
-[2020-10-22 17:59:27,335] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) Learning Akka, yes!! 
+[2020-10-22 17:59:27,334] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) eating chocolate
+[2020-10-22 17:59:27,335] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (1) eating chocolate
+[2020-10-22 17:59:27,335] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (2) washing dishes, womp womp
+[2020-10-22 17:59:27,335] [INFO] [live.day2actors.AkkaEssentials$] [] [EmotionalSystem-akka.actor.default-dispatcher-3] - (0) Learning Akka, yes!!
 ```
 
 ## How to Turn a Stateful Actor into Stateless

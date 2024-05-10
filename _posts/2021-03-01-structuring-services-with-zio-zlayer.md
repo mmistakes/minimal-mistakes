@@ -2,14 +2,14 @@
 title: "Organizing Services with ZIO and ZLayers"
 date: 2021-03-01
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, zio]
 excerpt: "ZIO layers (ZLayers) help us structure our complex services into modules that are independent, composable and easy to understand. Let's take a look."
 ---
 
 In this article, we'll take a look at `ZLayer`s, an abstraction naturally arising from the core design of ZIO, which can greatly assist in making large code bases more understandable, composable and searchable for the human beings charged with their care.
-  
-This article is for the comfortable Scala programmer. Some familiarity with ZIO basics will help, but I'll take care to outline the necessary concepts here so that the article can be as standalone as possible. 
+
+This article is for the comfortable Scala programmer. Some familiarity with ZIO basics will help, but I'll take care to outline the necessary concepts here so that the article can be as standalone as possible.
 
 If you want to code with me in the article (or the [YouTube video](https://youtu.be/PaogLRrYo64)), you'll have to add these lines to your `build.sbt` file:
 
@@ -46,7 +46,7 @@ val fail = ZIO.fail("Something went wrong") // notice the error can be of any ty
 // reading and writing to the console are effects
 // the input type is a Console instance, which ZIO provides with the import
 import zio.console._
-val greetingZio = 
+val greetingZio =
   for {
     _    <- putStrLn("Hi! What is your name?")
     name <- getStrLn
@@ -143,16 +143,16 @@ Much like `ZIO`, a `ZLayer` has 3 type arguments:
 - an error type `E`, for the error that might arise during creation of the service
 - an output type `ROut`
 
-Note the output type in this case: we have a `Has[UserEmailer.Service]`, not a plain `UserEmailer.Service`. We'll come back to this and show how this works and why it's needed.  
+Note the output type in this case: we have a `Has[UserEmailer.Service]`, not a plain `UserEmailer.Service`. We'll come back to this and show how this works and why it's needed.
 
 This `live` instance sits inside the `UserEmailer` object, as the live implementation of its inner `Service` trait. Still inside the same object, it's common to expose a higher-level API:
 
 ```scala
-def notify(user: User, message: String): ZIO[Has[UserEmailer.Service], Throwable, Unit] = 
+def notify(user: User, message: String): ZIO[Has[UserEmailer.Service], Throwable, Unit] =
   ZIO.accessM(_.get.notify(user, message))
 ```
 
-This may be hard to understand if you're seeing `ZIO`s for the first time. The `notify` method is an effect, so it's a `ZIO` instance. The input type is a `Has[UserEmailer.Service]`, which means that whoever calls this `notify` method needs to have obtained a `UserEmailer.Service`. If we do, then we can access that instance as the input of that ZIO instance, via `accessM`, and then use that service's API directly. 
+This may be hard to understand if you're seeing `ZIO`s for the first time. The `notify` method is an effect, so it's a `ZIO` instance. The input type is a `Has[UserEmailer.Service]`, which means that whoever calls this `notify` method needs to have obtained a `UserEmailer.Service`. If we do, then we can access that instance as the input of that ZIO instance, via `accessM`, and then use that service's API directly.
 
 Here's how we can directly use this in a main app:
 
@@ -179,7 +179,7 @@ object UserEmailer {
   trait Service {
     def notify(u: User, msg: String): Task[Unit]
   }
-  
+
   // layer; includes service implementation
   val live: ZLayer[Any, Nothing, UserEmailerEnv] = ZLayer.succeed(new Service {
     override def notify(u: User, msg: String): Task[Unit] =
@@ -222,7 +222,7 @@ object UserDb {
 
 ## 4. Composing `ZLayer`s
 
-The two `ZLayer`s we've just defined are so far independent, but we can compose them. Because the `ZLayer` type is analogous to a function `RIn => Either[E, ROut]`, it makes sense to be able to compose `ZLayer` instances like functions. 
+The two `ZLayer`s we've just defined are so far independent, but we can compose them. Because the `ZLayer` type is analogous to a function `RIn => Either[E, ROut]`, it makes sense to be able to compose `ZLayer` instances like functions.
 
 ### 4.1. Horizontal Composition
 
@@ -236,7 +236,7 @@ we can obtain a "bigger" `ZLayer` which can take as input `RIn1 with RIn2`, and 
 For our use-case, it makes sense to combine `UserDb` and `UserEmailer` horizontally, because they have no dependencies and can produce a powerful layer which combines `UserDbEnv with UserEmailerEnv`. In other words, there is such a thing as
 
 ```scala
-val userBackendLayer: ZLayer[Any, Nothing, UserDbEnv with UserEmailerEnv] = 
+val userBackendLayer: ZLayer[Any, Nothing, UserDbEnv with UserEmailerEnv] =
   UserDb.live ++ UserEmailer.live
 ```
 
@@ -296,10 +296,10 @@ val live: ZLayer[UserEmailerEnv with UserDbEnv, Nothing, UserSubscriptionEnv] =
 
 This is a bit opaque and hard to read: where do the real instances of `UserEmailer.Service` and `UserDb.Service` come from?
 
-If you remember the horizontal-composed `ZLayer`: 
+If you remember the horizontal-composed `ZLayer`:
 
 ```scala
-val userBackendLayer: ZLayer[Any, Nothing, UserDbEnv with UserEmailerEnv] = 
+val userBackendLayer: ZLayer[Any, Nothing, UserDbEnv with UserEmailerEnv] =
   UserDb.live ++ UserEmailer.live
 ```
 
@@ -325,7 +325,7 @@ The final program to subscribe the first fan of Rock the JVM (me) to this fictit
   object UserEmailer {
     // type alias to use for other layers
     type UserEmailerEnv = Has[UserEmailer.Service]
-    
+
     // service definition
     trait Service {
       def notify(u: User, msg: String): Task[Unit]
@@ -346,7 +346,7 @@ The final program to subscribe the first fan of Rock the JVM (me) to this fictit
   object UserDb {
     // type alias, to use for other layers
     type UserDbEnv = Has[UserDb.Service]
-    
+
     // service definition
     trait Service {
       def insert(user: User): Task[Unit]
@@ -366,14 +366,14 @@ The final program to subscribe the first fan of Rock the JVM (me) to this fictit
     def insert(u: User): ZIO[UserDbEnv, Throwable, Unit] = ZIO.accessM(_.get.insert(u))
   }
 
-  
+
   object UserSubscription {
     import UserEmailer._
     import UserDb._
-    
+
     // type alias
     type UserSubscriptionEnv = Has[UserSubscription.Service]
-    
+
     // service definition
     class Service(notifier: UserEmailer.Service, userModel: UserDb.Service) {
       def subscribe(u: User): Task[User] = {
@@ -397,7 +397,7 @@ The final program to subscribe the first fan of Rock the JVM (me) to this fictit
   object ZLayersPlayground extends zio.App {
     override def run(args: List[String]): ZIO[zio.ZEnv, Nothing, ExitCode] = {
       val userRegistrationLayer = (UserDb.live ++ UserEmailer.live) >>> UserSubscription.live
-      
+
       UserSubscription.subscribe(User("daniel", "daniel@rockthejvm.com"))
         .provideLayer(userRegistrationLayer)
         .catchAll(t => ZIO.succeed(t.printStackTrace()).map(_ => ExitCode.failure))

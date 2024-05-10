@@ -2,9 +2,9 @@
 title: "Type Lambdas in Scala 3"
 date: 2020-10-06
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3, type system]
-excerpt: "Exploring a quick but powerful structure in Scala 3 - type lambdas. This will help you think higher-level." 
+excerpt: "Exploring a quick but powerful structure in Scala 3 - type lambdas. This will help you think higher-level."
 ---
 
 This article is a bit more difficult &mdash; it's aimed at the experienced Scala developer who can think at a higher level. Ideally, you've read the [previous article](https://rockthejvm.com/scala-types-kinds) - it serves as a prep for this one. Type lambdas are simple to express in Scala 3, but the ramifications are deep.
@@ -22,7 +22,7 @@ To quickly recap:
   - Generic types like `List` belong to what I called the level-1 kind &mdash; they take plain (level-0) types as type arguments.
   - Scala allows us to express higher-kinded types &mdash; generic types whose type arguments are also generic. I called this kind the level-2 kind.
   - Generic types can't be attached to values on their own; they need the right type arguments (of inferior kinds) in place. For this reason, they're called type constructors.
-  
+
 ## 2. Types Look Like Functions
 
 As I mentioned before, generic types need the appropriate type arguments before they can be attached to a value. We can never use the `List` type directly to a value, but only `List[Int]` (or some other concrete type).
@@ -50,7 +50,7 @@ trait Monad[M[_]] {
   def pure[A](a: A): M[A]
   def flatMap[A, B](m: M[A])(f: A => M[B]): M[B]
 }
-``` 
+```
 
 You might also know that `Either` is a monadic data structure (another article on that, perhaps), so we can write a `Monad` for it. However, `Either` takes two type arguments, whereas `Monad` requires that its type argument take only one. How do we write it? We would like to write something along the lines of
 
@@ -62,7 +62,7 @@ class EitherMonad[T] extends Monad[Either[T, ?]] {
 
 In this way, this `EitherMonad` could work for both `Either[Exception, Int]` and `Either[String, Int]`, for example (where `Int` is the desired type). Given an error type `E`, we'd like `EitherMonad` to work with `Either[E, Int]` whatever concrete `E` we might end up using.
 
-Sadly, the above structure is not valid Scala. 
+Sadly, the above structure is not valid Scala.
 
 The answer is that we would write something like
 
@@ -83,4 +83,3 @@ Prior to Scala 3, libraries like Cats used to resort to compiler plugins ([kind-
 With a simple syntactic structure, Scala 3 solved a problem that API designers had been facing (and bending over backwards) for ages - how to define higher-kinded types where some type arguments are left "blank".
 
 In a future article, we'll talk about some more advanced capabilities (and pitfalls) of type lambdas.
-

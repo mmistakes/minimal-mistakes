@@ -2,7 +2,7 @@
 title: "Materialized Values in Akka Streams"
 date: 2020-04-14
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka, akka streams]
 excerpt: "We demystify one of the hardest concepts in Akka Streams: materialized values."
 ---

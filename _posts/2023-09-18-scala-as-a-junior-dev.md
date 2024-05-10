@@ -2,7 +2,7 @@
 title: "Scala as a Junior Developer"
 date: 2023-09-18
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "A story of a beginner developer learning and working with Scala."
 toc: true
@@ -12,7 +12,7 @@ toc_label: "The Story"
 _By [Lucas Nouguier](https://github.com/iusildra)_
 
 > Hey everyone, Daniel here. Lucas' story is shared by lots of beginner Scala developers, which is why I wanted to post it here on the blog. I've watched thousands of developers learn Scala from scratch, and, like Lucas, they love it!
-> 
+>
 > If you want to learn Scala well **and** fast, take a look at my [Scala Essentials](https://rockthejvm.com/p/scala) course at Rock the JVM.
 > Enjoy!
 
@@ -387,12 +387,12 @@ In Scala, everything is an expression, meaning that it is evaluated and has a va
 import scala.util.Random
 
 def byValue(t: Int): Seq[Int] =
-  for 
+  for
     _ <- 0 until 3
   yield t
 
 def byName(t: => Int): Seq[Int] =
-  for 
+  for
     _ <- 0 until 3
   yield t
 
@@ -448,7 +448,7 @@ But we might forget to check for `null` at some point, and the code will fail at
 
 ```scala
 val res3: Option[String] =
-  for 
+  for
     res <- Option(nullable)
     str <- Option(res.method)
   yield s"Length: ${str.size}"

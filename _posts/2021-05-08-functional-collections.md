@@ -2,12 +2,12 @@
 title: "Scala Functional Collections"
 date: 2021-05-08
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, collections]
 excerpt: "A short article with a powerful idea about functional collections many Scala programmers do not know about."
 ---
 
-This article is more beginner-friendly, so all you need is a basic understanding of Scala syntax, (partial) functions and collections. In what follows, I'll share some ideas about functional collections that many Scala developers are unaware of. 
+This article is more beginner-friendly, so all you need is a basic understanding of Scala syntax, (partial) functions and collections. In what follows, I'll share some ideas about functional collections that many Scala developers are unaware of.
 
 These ideas are actually what sparked my interest in Scala and functional programming in the first place &mdash; when one of my friends talked about this cool language he discovered (Scala) some 10 years ago and how often his mind was blown, I couldn't resist diving into it myself.
 
@@ -25,7 +25,7 @@ Let's build a small set:
 val aSet = Set(1,2,3,4,5)
 ```
 
-The critical API of a set consists of 
+The critical API of a set consists of
 
 - the ability to tell whether an item is in the set or not
 - the ability to add an element to a set (and if it exists, don't add it again)
@@ -50,15 +50,15 @@ If you dive deeper into the Set definition from the standard library, you'll eve
 trait Set[A] extends Iterable[A]
     with collection.Set[A]
     with SetOps[A, Set, Set[A]]
-    with IterableFactoryDefaults[A, Set] { 
-  ... 
+    with IterableFactoryDefaults[A, Set] {
+  ...
 }
 
 // in the scala.collection.immutable package
 
 trait SetOps[A, +CC[X], +C <: SetOps[A, CC, C]]
-  extends collection.SetOps[A, CC, C] { 
-  ... 
+  extends collection.SetOps[A, CC, C] {
+  ...
 }
 
 // in the general scala.collection package
@@ -189,7 +189,7 @@ trait Seq[+A] extends Iterable[A]
                  with collection.Seq[A]
                  with SeqOps[A, Seq, Seq[A]]
                  with IterableFactoryDefaults[A, Seq] {
-  ... 
+  ...
 }
 
 // scala.collection
@@ -209,7 +209,7 @@ Same idea is applicable to Maps. Maps are "invokable" objects on a key, returnin
 
 ```scala
 // scala.collection.immutable
-object Map extends MapFactory[Map] { ... } 
+object Map extends MapFactory[Map] { ... }
 //      ^                      ^
 //      | immutable Map        | general Map
 
@@ -225,12 +225,12 @@ trait Map[K, +V]
 // still there
 trait MapOps[K, +V, +CC[_, _] <: IterableOps[_, AnyConstr, _], +C]
   extends IterableOps[(K, V), Iterable, C]
-    with PartialFunction[K, V] // <-- here 
-{ 
+    with PartialFunction[K, V] // <-- here
+{
   ...
 }
 ```
 
 ## 4. Conclusion
 
-We've just learned that many critical Scala collections are not just "functional", but they are _actual_ functions. If your mind was at least moved a bit (not necessarily blown away), I'm really happy. These kinds of concepts make functional programming great, and Scala awesome. 
+We've just learned that many critical Scala collections are not just "functional", but they are _actual_ functions. If your mind was at least moved a bit (not necessarily blown away), I'm really happy. These kinds of concepts make functional programming great, and Scala awesome.

@@ -2,7 +2,7 @@
 title: "Functional Error Handling in Kotlin, Part 3: The Raise DSL"
 date: 2023-09-20
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [kotlin]
 excerpt: "It's time to end our journey on functional error handling in Kotlin with the new features introduced by the Arrow library in version 1.2.0. We'll focus on the `Raise` DSL, a new way to handle typed errors using Kotlin contexts."
 toc: true
@@ -222,7 +222,7 @@ class LiveJobs : Jobs {
     context (Raise<JobError>)
     override fun findById(id: JobId): Job =
         JOBS_DATABASE[id] ?: raise(JobNotFound(id))
-} 
+}
 ```
 
 Since Kotlin allows more than one context receiver at a time, we can add the `Logger` module as a context receiver:
@@ -532,7 +532,7 @@ As we can see, any reference to the `Either<E, A>` wrapper type vanishes. The `b
 // Arrow Kt Library
 public interface Raise<in Error> {
     // Omissis
-    
+
     @RaiseDSL
     public fun <A> Either<Error, A>.bind(): A = when (this) {
         is Either.Left -> raise(value)
@@ -587,7 +587,7 @@ class LiveJobs : Jobs {
 As we said, in case of an error, we'll raise a `None` object since we're not interested in the error that happened. Now, we can use the new `findByIdWithOption` function in the `JobService` module to get the salary associated with a `JobId`. We want the new function to return an `Option<Salary>` type. We can use the `option` builder to do that:
 
 ```kotlin
-fun salary(jobId: JobId): Option<Salary> = option { 
+fun salary(jobId: JobId): Option<Salary> = option {
     jobs.findByIdWithOption(jobId).salary
 }
 ```
@@ -993,7 +993,7 @@ The `RaiseAccumulate<A>` context overrides the `raise` method to create a `NonEm
 ```kotlin
 // Arrow Kt library
 @RaiseDSL
-public override fun raise(r: Error): Nothing = 
+public override fun raise(r: Error): Nothing =
     raise.raise(nonEmptyListOf(r))
 ```
 
@@ -1059,7 +1059,7 @@ Then, the `getSalaryGapWithMax` function can be rewritten as the following:
 ```kotlin
 context (RaiseAccumulate<JobError>)
 fun getSalaryGapWithMax(jobIdList: List<JobId>): List<Double> =
-    jobIdList.mapOrAccumulate{ getSalaryGapWithMax(it) } 
+    jobIdList.mapOrAccumulate{ getSalaryGapWithMax(it) }
 ```
 
 We can even get an `Either<NonEmptyList<JobError>, List<Double>>` instead of using `Raise<E>` as context. In fact, the Arrow library defines a version of the `mapOrAccumulate` function that works with the `Either` type:

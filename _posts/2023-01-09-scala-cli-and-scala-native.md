@@ -2,7 +2,7 @@
 title: "Scala CLI Tutorial: Creating a CLI Sudoku Solver"
 date: 2023-01-09
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala 3, cats, scala-native, scala-cli]
 excerpt: "Scala CLI is a great tool for prototyping and building Scala applications. We'll use `scala-cli`, `Scala Native` and `decline` to build a brute-force sudoku solver."
 ---
@@ -78,7 +78,7 @@ Maps in Scala have the shape Map[_, _]
 Through directives you can, for example:
 - add java options or compiler flags
 - declare tests
-- change the compilation target 
+- change the compilation target
 - package the application as a fat jar or as a script that downloads all the required dependencies
 
 and much more. For a complete reference, see [Directives](https://scala-cli.virtuslab.org/docs/reference/scala-command/directives).
@@ -105,7 +105,7 @@ $ head -3 Maps.scala
 
 ### 2.3. IDE support
 
-Writing Scala code without the help of a fully-fledged IDE is okay if you're writing a "Hello world" application or similar, but for a _"complete programming experience"_ using one of the IDE alternatives &mdash; at the moment either IntelliJ or a Metals-compatible one &mdash; is recommended. Scala CLI can help you set up your IDE of choice by generating the necessary files to provide full-blown IDE support. 
+Writing Scala code without the help of a fully-fledged IDE is okay if you're writing a "Hello world" application or similar, but for a _"complete programming experience"_ using one of the IDE alternatives &mdash; at the moment either IntelliJ or a Metals-compatible one &mdash; is recommended. Scala CLI can help you set up your IDE of choice by generating the necessary files to provide full-blown IDE support.
 
 The [setup-ide](https://scala-cli.virtuslab.org/docs/commands/setup-ide) command is run before every `run`, `compile` or `test` but it can be invoked manually like:
 
@@ -143,7 +143,7 @@ Since sudoku consists of 9 lines of 9 digits from 1 to 9, one of the ways to enc
 final case class Sudoku private (data: Vector[Int])
 ```
 
-We made the constructor private to avoid `Sudoku` getting instantiated outside its companion object, where we will soon create a "factory" method named `from`. 
+We made the constructor private to avoid `Sudoku` getting instantiated outside its companion object, where we will soon create a "factory" method named `from`.
 
 Since we plan to read sudoku boards from the command line, it's reasonable to imagine a factory method that accepts a `String` and returns a `Sudoku` or a data structure that may contain either a `Sudoku` or a way to signal an error (like an error `String` to log in case of validation errors).
 
@@ -188,9 +188,9 @@ object Sudoku {
 
 Let's examine the `from` function line by line:
 - `s.replace('.', '0')` replaces the `.`s with `0`s to signal the lack of a digit using a value that belongs to type `Int`. Replacing `.` is necessary since we'll use [this generator](https://qqwing.com/generate.html) with "Output format: One line", getting an input value like `8...1...2.7...931.....485...2....8.91..2....3.........7...9...1.5...1.....3.7.29.` that represents the 81 digits of the board.
-- `.asRight[String]` is the first cats utility that we'll use. Defined as 
-  
-  ```scala 
+- `.asRight[String]` is the first cats utility that we'll use. Defined as
+
+  ```scala
   def asRight[B]: Either[B, A] = Right(a)
   ```
 
@@ -207,7 +207,7 @@ Let's examine the `from` function line by line:
 - Using the same `ensure` function we check that the string has the correct length
 - Finally, we map the `Either[String, Vector[Int]]` into an `Either[String, Sudoku]` calling `Sudoku`'s constructor, that here in the companion object is accessible.
 
-The main strength of the `from` function is that it won't let us create a `Sudoku` if the input doesn't comply with a set of minimum requirements needed to fully and correctly describe a `Sudoku`. This approach, sometimes called ["Parse, don't validate"](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/), might not seem like a big deal. Still, it enables us to write functions and extension methods that use `Sudoku` as parameters and are not required to perform any validation. `Sudoku`s are now impossible to create without using a valid input: we made invalid `Sudoku`s impossible to represent. 
+The main strength of the `from` function is that it won't let us create a `Sudoku` if the input doesn't comply with a set of minimum requirements needed to fully and correctly describe a `Sudoku`. This approach, sometimes called ["Parse, don't validate"](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/), might not seem like a big deal. Still, it enables us to write functions and extension methods that use `Sudoku` as parameters and are not required to perform any validation. `Sudoku`s are now impossible to create without using a valid input: we made invalid `Sudoku`s impossible to represent.
 
 ## 4. Adding utility methods
 
@@ -250,14 +250,14 @@ object Sudoku {
 > Note: We added these methods to the case class itself, but another option we could have chosen is to add this logic in an [extension](https://docs.scala-lang.org/scala3/book/ca-extension-methods.html). Creating an extension over the `Sudoku` datatype will let us call the methods defined in it as if they were methods of the `Sudoku` class.
 > ```scala
 > object Sudoku {
-> 
+>
 >   extension (s: Sudoku) {
 >     def get(x: Int)(y: Int): Int = /* ... */
 >     def getRow(y: Int): Vector[Int] = /* ... */
 >     /* ... */
 >   }
 > }
-> 
+>
 > sudoku.get(0)(0)
 > ```
 > Extending may be preferable since it keeps data separated from the logic that manipulates them (enforcing some [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)), and since it's possible over data types not part of your codebase, like standard library types or data types coming from a library. This approach shines when the extension depends on a [typeclass](https://docs.scala-lang.org/scala3/book/ca-type-classes.html), since extending the type class for a new type `T` (i.e. adding a "*case*") you get a custom syntax over `T` for free.
@@ -382,8 +382,8 @@ final case class Sudoku private (data: Vector[Int]) {
   /* ... */
 
   // None will signal the lack of zeros, so a complete sudoku.
-  // Since -1 means that indexWhere hasn't found zeros we remap 
-  // it to None using filterNot. 
+  // Since -1 means that indexWhere hasn't found zeros we remap
+  // it to None using filterNot.
   def getZero: Option[(Int, Int)] = Option(data.indexWhere(_ === 0))
     .filterNot(_ === -1)
     .map(i => (i % 9, i / 9))
@@ -583,7 +583,7 @@ object Main extends CommandApp(
     sudoku.solve.headOption.fold { // We will print the first solution only
       System.err.println("Sudoku not solvable"); System.exit(1)
     } {
-      s => System.out.println(s); System.exit(0) 
+      s => System.out.println(s); System.exit(0)
     }
   )
 )
@@ -663,7 +663,7 @@ Compiled project (Scala 3.2.1, Scala Native)
 Wrote /Users/toniogela/Downloads/sudoku/sudokuNativeSolver, run it with
   ./sudokuNativeSolver
 
-$ SUDOKU="....47......5.....9.483..15.19.7...4...3.9.21.3...5.7......8....78.2..3...1.5.4.." 
+$ SUDOKU="....47......5.....9.483..15.19.7...4...3.9.21.3...5.7......8....78.2..3...1.5.4.."
 
 $ ./sudokuNativeSolver $SUDOKU
 185│247│963
@@ -682,20 +682,20 @@ $ ./sudokuNativeSolver $SUDOKU
 Now that we have two versions of the app, we can compare them using hyperfine again:
 
 ```shell
-$ hyperfine --warmup 20 -N "./sudokuSolver $SUDOKU" "./sudokuNativeSolver $SUDOKU"      
+$ hyperfine --warmup 20 -N "./sudokuSolver $SUDOKU" "./sudokuNativeSolver $SUDOKU"
 Benchmark 1: ./sudokuSolver
   Time (mean ± σ):     860.5 ms ±  17.9 ms    [User: 1751.0 ms, System: 103.1 ms]
   Range (min … max):   844.8 ms … 903.9 ms    10 runs
- 
+
 Benchmark 2: ./sudokuNativeSolver
   Time (mean ± σ):     122.5 ms ±   2.1 ms    [User: 83.4 ms, System: 34.0 ms]
   Range (min … max):   119.3 ms … 127.5 ms    24 runs
- 
+
 Summary
   './sudokuNativeSolver' ran 7.02 ± 0.19 times faster than './sudokuSolver'
 ```
 
-As we can see, Scala Native annihilated the application startup time (there's no JVM to startup) and reduced the whole computing time altogether by seven times. 
+As we can see, Scala Native annihilated the application startup time (there's no JVM to startup) and reduced the whole computing time altogether by seven times.
 
 Scala Native can be used to craft NGINX Unit server applications using [Snunit](https://github.com/lolgab/snunit), and as recently a [Cats-Effect single-threaded native runtime](https://github.com/armanbilge/epollcat) was published, it's possible to use [Http4s with Ember](https://github.com/ChristopherDavenport/scala-native-ember-example) to create single-threaded native servers!
 

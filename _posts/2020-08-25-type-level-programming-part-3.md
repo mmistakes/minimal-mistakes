@@ -2,7 +2,7 @@
 title: "Type-Level Programming in Scala, Part 3"
 date: 2020-08-25
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "Final blow in the type-level trilogy. We learn how to sort lists... at compile time."
 ---

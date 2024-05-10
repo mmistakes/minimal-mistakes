@@ -2,7 +2,7 @@
 title: "Type-Level Programming in Scala 3, Part 2: A Quicksort on Types"
 date: 2021-10-11
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Level 90 of type-level programming: a real sorting algorithm on lists... as types."
 ---
@@ -185,17 +185,17 @@ That, plus an `apply` method to summon the relevant given, will make `Partition`
   object Partition {
     given basic: Partition[HNil, HNil, HNil] with {}
     given basic2[N <: Nat]: Partition[N :: HNil, N :: HNil, HNil] with {}
-    
+
     given inductive[P <: Nat, N <: Nat, T <: HList, L <: HList, R <: HList]
     (using P <= N, Partition[P :: T, P :: L, R]):
       Partition[P :: N :: T, P :: L, N :: R] with {}
-      
+
     given inductive2[P <: Nat, N <: Nat, T <: HList, L <: HList, R <: HList]
     (using N < P, Partition[P :: T, P :: L, R]):
       Partition[P :: N :: T, P :: N  :: L, R] with {}
 
     def apply[HL <: HList, L <: HList, R <: HList]
-    (using partition: Partition[HL, L, R]): Partition[HL, L, R] = 
+    (using partition: Partition[HL, L, R]): Partition[HL, L, R] =
         partition
   }
 ```
@@ -232,7 +232,7 @@ That is of no consequence for correct sorting, as the compiler will be able to f
 
 ## 5. Type-Level Quicksort: The Sorting Operation
 
-This will be the final step in our quicksort algorithm at the type level, which will rely on both concatenation and partitioning (the ops we did before). 
+This will be the final step in our quicksort algorithm at the type level, which will rely on both concatenation and partitioning (the ops we did before).
 
 I think, by now, we got the hang of it. We'll use a new type `QSort[HL, R]` to test whether the sorting of `HL` is in fact `R`. If the compiler can find or generate a `given` of that type that we want to test, then the sorting is correct, otherwise it's not.
 
@@ -286,10 +286,10 @@ As before, the complete sorting looks like this:
 And we can test it on a bunch of examples to see that they work:
 
 ```scala3
-  val sortTest = QSort[_3 :: _2 :: _1 :: _4 :: HNil, _1 :: _2 :: _3 :: _4 :: HNil] 
+  val sortTest = QSort[_3 :: _2 :: _1 :: _4 :: HNil, _1 :: _2 :: _3 :: _4 :: HNil]
   val sortTest2 = QSort[_1 :: _2 :: _3 :: _4 :: HNil, _1 :: _2 :: _3 :: _4 :: HNil]
-  val sortTest3 = QSort[_4 :: _3 :: _2 :: _1 :: HNil, _1 :: _2 :: _3 :: _4 :: HNil] 
-  val sortTest4 = QSort[_4 :: _4 :: _4 :: HNil, _4 :: _4 :: _4 :: HNil] 
+  val sortTest3 = QSort[_4 :: _3 :: _2 :: _1 :: HNil, _1 :: _2 :: _3 :: _4 :: HNil]
+  val sortTest4 = QSort[_4 :: _4 :: _4 :: HNil, _4 :: _4 :: _4 :: HNil]
 ```
 
 That's it, folks! Quicksort on types at compile time!
@@ -393,8 +393,8 @@ And lo and behold:
 
 ```scala3
   Sort[::[_4, ::[_3, ::[_5, ::[_1, ::[_2, HNil]]]]]] {
-    type Result >: 
-      ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]] 
+    type Result >:
+      ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]]
     <: ::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Succ[_3], ::[Succ[_4], HNil]]]]]
   }
 ```
@@ -406,30 +406,3 @@ In other words, the result type is `::[Succ[_0], ::[Succ[_1], ::[Succ[_2], ::[Su
 If this is not the most badass quicksort you've ever seen in Scala, you can't be human.
 
 Scala rocks, folks.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

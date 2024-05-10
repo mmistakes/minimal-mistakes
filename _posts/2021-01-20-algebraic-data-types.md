@@ -2,7 +2,7 @@
 title: "Algebraic Data Types (ADT) in Scala"
 date: 2021-01-16
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "Every developer using Scala meets the acronym ADT sooner or later. In this article, we will try to answer all of your questions about ADTs."
 ---
@@ -112,7 +112,7 @@ case class Ok(weather: Weather) extends ForecastResponse
 case class Ko(error: String, description: String) extends ForecastResponse
 ```
 
-In this case, the `ForecastResponse` is a Sum type because it is an `Ok` OR a `Ko`. The `Ko` type is a Product type because it has an `error` AND a `description`. Hence, Hybrid types let us take the best of both worlds, i.e., Sum and Product types, adding the capability to model more and more business cases. 
+In this case, the `ForecastResponse` is a Sum type because it is an `Ok` OR a `Ko`. The `Ko` type is a Product type because it has an `error` AND a `description`. Hence, Hybrid types let us take the best of both worlds, i.e., Sum and Product types, adding the capability to model more and more business cases.
 
 Often, Hybrid types are also called Sum of Product types.
 
@@ -149,7 +149,7 @@ val weatherReporter: Behavior[ForecastResponse] =
     message match {
       case Ok(weather: Weather) =>
         context.log.info(s"Today the weather is $weather")
-      case Ko(e, d) => 
+      case Ko(e, d) =>
         context.log.info(s"I don't know what's the weather like, $d")
     }
     Behaviors.same
@@ -162,7 +162,7 @@ Finally, ADTs provide no functionality, only data. So, ADTs **minimize the set o
 
 Many of us are just thinking: "Why are these kinds of types called 'algebraic'"? Well, we first have to define what algebra is.
 
-An algebra is nothing more than a type of objects and one or more operations to create new items of that type. For example, in _numeric algebra_ the objects are the numbers, and the operations are +, -, \*, and /. Talking about ADTs, the objects are the Scala standard types themselves, and the class constructors of ADTs are the operators. They allow building new objects, starting from existing ones. 
+An algebra is nothing more than a type of objects and one or more operations to create new items of that type. For example, in _numeric algebra_ the objects are the numbers, and the operations are +, -, \*, and /. Talking about ADTs, the objects are the Scala standard types themselves, and the class constructors of ADTs are the operators. They allow building new objects, starting from existing ones.
 
 Going deeper, we can introduce more mathematics associated with ADTs. In detail, we have:
 
@@ -216,4 +216,3 @@ We reduced the complexity of the type, making it more focused, understandable, a
 ## 4. Conclusion
 
 Summing up, in this article, we introduced the Algebraic Data Types, or ADTs. In detail, we defined the two possible ADTs, Sum types and Product types. Then, we extended our domain, adding the Hybrid type, and enumerate the pros we have using ADTs in real-life scenarios.
-

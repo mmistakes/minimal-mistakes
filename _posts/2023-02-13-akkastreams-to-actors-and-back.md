@@ -1,8 +1,8 @@
 ---
 title: "From Akka Streams To Actors And Back"
-date: 2023-02-13 
+date: 2023-02-13
 header:
-   image: "/images/blog cover.jpg"
+   image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "Interoperability between Akka Streams and actors with code examples"
 ---
@@ -107,7 +107,7 @@ for this article.
 ```scala
 val askFlow: Flow[Int, ProcessMessage, NotUsed] =
       ActorFlow.ask[Int, Invocation, ProcessMessage](targetActor)((in, q) => Invocation(s"Invocation no $in", q))
-      
+
 Source(1 to 5)
   .map {
     case 3 =>
@@ -164,25 +164,25 @@ def processStoredMessage = {
 }
 ```
 
-The pseudocode above expresses some aspects of the use case sketched to show that there can be multiple emitted 
-messages for one message in. One Kafka message in can result in one message out to signal Kafka commit because the 
-information has been successfully stored and then later when the stored information is properly processed achieving the 
-desired result, it is propagated downstream using a second message. This is not possible to achieve with the ask based 
+The pseudocode above expresses some aspects of the use case sketched to show that there can be multiple emitted
+messages for one message in. One Kafka message in can result in one message out to signal Kafka commit because the
+information has been successfully stored and then later when the stored information is properly processed achieving the
+desired result, it is propagated downstream using a second message. This is not possible to achieve with the ask based
 approach, leading us to the next approach.
 
 ## 3. The StageActor Approach
-Now that we can appreciate the pros and cons using the standard approaches with an actor based sink and the variants of 
-actor based flows it's time to present an alternative approach that will satisfy all the requirements described above. 
-The general setup has the same anatomy as the ask based flow with the important difference that the communication with 
+Now that we can appreciate the pros and cons using the standard approaches with an actor based sink and the variants of
+actor based flows it's time to present an alternative approach that will satisfy all the requirements described above.
+The general setup has the same anatomy as the ask based flow with the important difference that the communication with
 the target actor is now based on actor messaging which is not restricted to request - response style.
 
 ![Alt text](../images/akkastreamstoactorsandback/stageactorbased.png "StageActor based approach with the target actor")
 
-ActorRefBackpressureProcessFlowStage is the name of a custom GraphStage used in the example code and 
+ActorRefBackpressureProcessFlowStage is the name of a custom GraphStage used in the example code and
 StreamToActorMessage[T] is the messaging protocol used to control message passing and backpressure.
-To set up a stream according to the diagram above we will have the target actor process StreamToActorMessage[T] messages 
-and construct the ActorRefBackpressureProcessFlowStage passing the actor ref of the target actor. 
-The StreamToActorMessage[T] message protocol will be described in detail, for now we note that they serve the same 
+To set up a stream according to the diagram above we will have the target actor process StreamToActorMessage[T] messages
+and construct the ActorRefBackpressureProcessFlowStage passing the actor ref of the target actor.
+The StreamToActorMessage[T] message protocol will be described in detail, for now we note that they serve the same
 purpose as in the sink based approach to manage the stream semantics.
 
 ```scala
@@ -191,8 +191,8 @@ val actorFlow: Flow[FlowMessage, FlowMessage, NotUsed] =
      Flow.fromGraph(new ActorRefBackpressureProcessFlowStage[FlowMessage](targetActor))
 ```
 
-Internally the ActorRefBackpressureProcessFlowStage uses the stage actor, a perhaps not so well known part of the 
-Akka Streams toolbox. In short, the stage actor (although it's not an actor per se) imitates some actor functionality 
+Internally the ActorRefBackpressureProcessFlowStage uses the stage actor, a perhaps not so well known part of the
+Akka Streams toolbox. In short, the stage actor (although it's not an actor per se) imitates some actor functionality
 and can be used inside a custom GraphStage to communicate with the "outside world".
 
 The following is an excerpt from the GraphStage documentation:
@@ -204,7 +204,7 @@ Initialize a StageActorRef which can be used to interact with from the outside w
 The messages are looped through the getAsyncCallback mechanism of GraphStage so they are safe to modify
 internal state of this operator.
  */
-   
+
 final protected def getStageActor(receive: ((ActorRef, Any)) => Unit): StageActor
 
 /**
@@ -215,23 +215,23 @@ final protected def getStageActor(receive: ((ActorRef, Any)) => Unit): StageActo
 final class StageActor @InternalApi() private[akka]
 ```
 
-By creating a custom Flow component using the stage actor we can create a bridge from the stream to the actor based part 
-of an application that has all the properties we desire. Let's now see in some more detail exactly how this is achieved. 
-We start out with a custom GraphStage, `ActorRefBackpressureProcessFlowStage`,  from which we want to communicate with 
-the actor based part of an application. The point of communication with this is naturally an actor, the target actor 
-embodying "the outside world" mentioned in the Akka docs above. The communication from  ActorRefBackpressureProcessFlowStage 
-to the target actor is just ordinary actor message passing. 
+By creating a custom Flow component using the stage actor we can create a bridge from the stream to the actor based part
+of an application that has all the properties we desire. Let's now see in some more detail exactly how this is achieved.
+We start out with a custom GraphStage, `ActorRefBackpressureProcessFlowStage`,  from which we want to communicate with
+the actor based part of an application. The point of communication with this is naturally an actor, the target actor
+embodying "the outside world" mentioned in the Akka docs above. The communication from  ActorRefBackpressureProcessFlowStage
+to the target actor is just ordinary actor message passing.
 The first message passed to the target actor in this example:
 
 ```scala
 // In ActorRefBackpressureProcessFlowStage
-targetActor ! StreamInit[T](self.ref) //self.ref is the stage actor ref 
+targetActor ! StreamInit[T](self.ref) //self.ref is the stage actor ref
 ```
 
 and in the target actor
 
 ```scala
-case StreamInit(replyTo) => // replyTo is the stage actor 
+case StreamInit(replyTo) => // replyTo is the stage actor
       logger.debug("Received StreamInit, will signal demand by responding ack")
       replyTo ! StreamAck
       Behaviors.same
@@ -250,10 +250,10 @@ getStageActor({
 })
 ```
 
-The messaging protocol used between the stage actor and the target actor serves two purposes. Communicating the  
-application specific information and the stream lifecycle and backpressure signalling. `StreamToActorMessage[T]` is just 
-the trait used in the example code, where T is the type of the application specific message that is tunneled to the 
-target actor. 
+The messaging protocol used between the stage actor and the target actor serves two purposes. Communicating the
+application specific information and the stream lifecycle and backpressure signalling. `StreamToActorMessage[T]` is just
+the trait used in the example code, where T is the type of the application specific message that is tunneled to the
+target actor.
 The `StreamToActorMessage` trait contains virtually the same type of messages used in the sink based approach.
 
 ```scala
@@ -266,11 +266,11 @@ case class StreamElementOut[T](msg: T) extends StreamToActorMessage[T]
 case class StreamElementOutWithAck[T](msg:T) extends StreamToActorMessage[T]
 ```
 
-The interaction starts with the target actor receiving a StreamInit message. This is when it gets hold of the stage 
-actor ref and can start communicating with it. The replyTo in this message is a reference to the stage actor. 
-At some point in time the target actor responds with a StreamAck message to signal demand, which triggers the stream 
-to start processing. The next step typically is the StreamElementIn message through which the application specific 
-message (of type T) is tunneled. At this point the target actor may either signal more demand, cause downstream emit 
+The interaction starts with the target actor receiving a StreamInit message. This is when it gets hold of the stage
+actor ref and can start communicating with it. The replyTo in this message is a reference to the stage actor.
+At some point in time the target actor responds with a StreamAck message to signal demand, which triggers the stream
+to start processing. The next step typically is the StreamElementIn message through which the application specific
+message (of type T) is tunneled. At this point the target actor may either signal more demand, cause downstream emit
 by responding StreamElementOut or both in any order it sees fit.
 
 StreamCompleted will be sent to the target actor on stream completion, and StreamFailed on stream failure.
@@ -284,7 +284,7 @@ In the vocabulary of Akka Streams the ActorRefBackpressureProcessFlowStage:
 * __Fails__ when the target actor terminates
 * __Cancels__ when downstream cancels
 
-The stage based actor approach to this problem has been addressed e.g. by Frank van Meeuwen. I have used the code with  
+The stage based actor approach to this problem has been addressed e.g. by Frank van Meeuwen. I have used the code with
 kind permission in this article and the original source code can be found on GitHub. (See references)
 
 ## 4. Putting the StageActor to Use
@@ -324,7 +324,7 @@ object StreamWithStageActor extends LazyLogging {
     val actorFlow: Flow[FlowMessage, FlowMessage, NotUsed] =
       Flow.fromGraph(new ActorRefBackpressureProcessFlowStage[FlowMessage](targetActor))
         val value = Source(1 to 3)
-          .map(number => Invocation(s"Name $number")) 
+          .map(number => Invocation(s"Name $number"))
           .via(actorFlow)
           .log("logflow", response => s"Got response $response")
           .runWith(Sink.ignore)
@@ -338,21 +338,21 @@ object StreamWithStageActor extends LazyLogging {
 }
 ```
 
-In the accompanying code on GitHub, there are more involved streams examples  both using the ask based approach and 
-the stage actor based approach to make it easy to play around with different variants that show how recovering, 
-throwing exceptions both in the stream part and in the actor part will affect the behavior. 
+In the accompanying code on GitHub, there are more involved streams examples  both using the ask based approach and
+the stage actor based approach to make it easy to play around with different variants that show how recovering,
+throwing exceptions both in the stream part and in the actor part will affect the behavior.
 See the comments in the code and README file.
 
 ## 5. Inside the custom GraphStage
 
-Lastly a few glimpses of the ActorRefBackpressureProcessFlowStage code. While explaining the GraphStage is outside 
+Lastly a few glimpses of the ActorRefBackpressureProcessFlowStage code. While explaining the GraphStage is outside
 the scope of this article, just peeking into a couple of part is enlightening.
 
-Basically a custom GraphStage is created by encoding the behavior when elements flow in, emit elements and keep track 
+Basically a custom GraphStage is created by encoding the behavior when elements flow in, emit elements and keep track
 of the logic for when demand should be signaled and the lifecycle functionality.
 
-At the outset the preStart method will be called, which is pretty self-explanatory. Self, the actual stage actor, 
-watches our target actor to manage the failure logic. Also, the StreamInit message is passed onto the target actor to 
+At the outset the preStart method will be called, which is pretty self-explanatory. Self, the actual stage actor,
+watches our target actor to manage the failure logic. Also, the StreamInit message is passed onto the target actor to
 bootstrap the interactions.
 
 ```scala
@@ -365,7 +365,7 @@ override def preStart(): Unit = {
 }
 ```
 
-The `stageActorReceive` method defines the stage actor behavior. Without going into details the code should give a feeling of the 
+The `stageActorReceive` method defines the stage actor behavior. Without going into details the code should give a feeling of the
 translational functionality.
 
 ```scala
@@ -402,7 +402,7 @@ def stageActorReceive(messageWithSender: (ActorRef, Any)): Unit = {
 }
 ```
 
-On the other side, in the GraphStage handlers api we can see the corresponding for the stream interaction. 
+On the other side, in the GraphStage handlers api we can see the corresponding for the stream interaction.
 The InHandler and OutHandler traits are the core of the api.
 
 ```scala
@@ -446,20 +446,20 @@ setHandler(out, new OutHandler {
 
 ## 6. Another Take on Pass-Through
 
-The careful reader may have spotted a gap in the account of the stage based approach in the context of the original 
+The careful reader may have spotted a gap in the account of the stage based approach in the context of the original
 use case with Kafka where committing is a crucial part.
 
-In the ask based example we saw the pass-through flow in action, which basically zips together the element that should 
-pass through (carrying the information later used for Kafka commits) with the response from the target actor. 
-You might now ask what happens in the stage based approach if the target actor responds multiple times for a single 
+In the ask based example we saw the pass-through flow in action, which basically zips together the element that should
+pass through (carrying the information later used for Kafka commits) with the response from the target actor.
+You might now ask what happens in the stage based approach if the target actor responds multiple times for a single
 message in. The answer is it will simply not work without some modification.
 
-The complexity of the solution depends on the case at hand, and one example solution is provided in the example code. 
-There must be some management of state and a mapping from messages to the target actor and messages from the target actor. 
-Sticking to the use case with Kafka commit information, the most common scenario will be that there is one message from 
-the target actor that should be associated with the commit information and consequently the state can be deleted as soon 
-as that message has been observed. There must be some identifier to map a response message to the original message to 
-the target actor, and in an enterprise application setting this will already be present. The following is a 
+The complexity of the solution depends on the case at hand, and one example solution is provided in the example code.
+There must be some management of state and a mapping from messages to the target actor and messages from the target actor.
+Sticking to the use case with Kafka commit information, the most common scenario will be that there is one message from
+the target actor that should be associated with the commit information and consequently the state can be deleted as soon
+as that message has been observed. There must be some identifier to map a response message to the original message to
+the target actor, and in an enterprise application setting this will already be present. The following is a
 brief explanation of the simple example provided in the accompanying code.
 
 The application messages must have an identifier:
@@ -473,9 +473,9 @@ object IdFlowMessages {
 }
 ```
 
-The stream signature is now slightly different. The input to the stage actor based flow is a tuple of the application 
-message and the pass-through and the output is a tuple of the application message and an option of the pass-through 
-since not all flow elements will carry the pass-through on. Note that the term pass-through now has a slightly different 
+The stream signature is now slightly different. The input to the stage actor based flow is a tuple of the application
+message and the pass-through and the output is a tuple of the application message and an option of the pass-through
+since not all flow elements will carry the pass-through on. Note that the term pass-through now has a slightly different
 meaning. It just means the pass-through will accompany one message following the `PassthroughActorRefBackpressureProcessFlowStage`.
 
 ```scala
@@ -484,7 +484,7 @@ val actorFlow: Flow[(FlowMessageWithId, PassThrough), (FlowMessageWithId, Option
    Flow.fromGraph(new PassthroughActorRefBackpressureProcessFlowStage[FlowMessageWithId, PassThrough](targetActor))
 ```
 
-Finally, a peek into the modified custom GraphStage, `PassthroughActorRefBackpressureProcessFlowStage`. It makes the assumption 
+Finally, a peek into the modified custom GraphStage, `PassthroughActorRefBackpressureProcessFlowStage`. It makes the assumption
 about the application messages that they have an identifier and also keeps a mapping from this id to the pass-through internally.
 
 ```scala
@@ -514,22 +514,21 @@ def onElementOut(elemOut: Any): Unit = {
 ```
 
 When an element arrives (onPush) its pass-through is associated with the identifier to be obtained later.
-When onElementOut is processed the stored pass-through element is removed once it is not needed anymore and this simple 
-state management will be good enough for the normal case where not a very big number of elements are stored in the mapping 
+When onElementOut is processed the stored pass-through element is removed once it is not needed anymore and this simple
+state management will be good enough for the normal case where not a very big number of elements are stored in the mapping
 keeping the necessary state.
 
 ## 7. Conclusion
 
-We have studied a custom Akka flow component based of the stage actor that gives us all the functionality to create a 
-full-blown interaction between Akka Streams and actor based code. This can be used in different use cases where the 
-functionality needs to include parts interacting with actor based code, or other code all together where an actor is 
-used as a bridge between the two. The standard approaches fall short of supporting different rate of input to output and 
+We have studied a custom Akka flow component based of the stage actor that gives us all the functionality to create a
+full-blown interaction between Akka Streams and actor based code. This can be used in different use cases where the
+functionality needs to include parts interacting with actor based code, or other code all together where an actor is
+used as a bridge between the two. The standard approaches fall short of supporting different rate of input to output and
 do not integrate the failure logic as in the showcased code.
 
 ### References
 
-1. Sample applications for the ask based and stage actor based approaches described in the article: 
+1. Sample applications for the ask based and stage actor based approaches described in the article:
    https://github.com/niklasuhrberg/akka-streamtoactor-interop
 2. Frank van Meeuwen GitHub repo: https://github.com/fmeeuw/akka-playground
 3. Akka Streams documentation on actor interoperability: https://doc.akka.io/docs/akka/current/stream/actor-interop.html
-

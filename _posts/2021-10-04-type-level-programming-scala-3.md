@@ -2,14 +2,14 @@
 title: "Type-Level Programming in Scala 3, Part 1: Comparing Types"
 date: 2021-10-04
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learning how to use the power of givens to infer type relationships in Scala 3... at compile time."
 ---
 
 This article will introduce you to type-level programming on Scala 3 &mdash; the capability to express computations on _types_ instead of values, by making the compiler figure out some type relationships at compile time. By encoding some computational problem as a type restriction or as an enforcement of a type relationship, we can make the compiler "solve" our computation by searching, inferring or validating the proper use of types.
 
-This will be a 2-part series, specifically focused on **Scala 3**. I also published an older [type-level programming miniseries](/type-level-programming-part-1) for Scala 2, which still works on Scala 3 as because implicits are still supported. In this version, we're going to use 
+This will be a 2-part series, specifically focused on **Scala 3**. I also published an older [type-level programming miniseries](/type-level-programming-part-1) for Scala 2, which still works on Scala 3 as because implicits are still supported. In this version, we're going to use
 
 - [givens](/scala-3-given-using)
 - generics
@@ -53,7 +53,7 @@ In order to model this relationship, we'll make the compiler prove the truth val
 
 ## 3. Proving Ordering at the Type Level
 
-First, we need to think about how we can prove this relationship in mathematical terms. How can we determine that `_3` is "less than" `_5` when all we have is the "number" `_0` and the succession relationship between two consecutive numbers? 
+First, we need to think about how we can prove this relationship in mathematical terms. How can we determine that `_3` is "less than" `_5` when all we have is the "number" `_0` and the succession relationship between two consecutive numbers?
 
 We can solve this problem by writing the axioms (basic truths) of the `<` relationship. Here is how to think about it:
 
@@ -189,26 +189,3 @@ The complete code can be found below:
 With this code, we showed how we can compare natural numbers &mdash; in their type-level Peano representation &mdash; at compile time, by proving the existence of the appropriate `given` value of the comparison "operator" (again, at the type level).
 
 In the next part, we'll take this skill to level 90 and do a quicksort on types.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

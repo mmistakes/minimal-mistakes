@@ -2,7 +2,7 @@
 title: "Objects and Companions in Scala"
 date: 2021-01-15
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "This article is for the starting Scala programmer: an introduction to singleton objects and companions in Scala, what they can do, and why and where we should use them."
 ---
@@ -30,7 +30,7 @@ Singleton declarations work like class declarations, in the sense that we can de
 ```scala
 object ClusterSingleton {
   val MAX_NODES = 20
-  
+
   def getNumberOfNodes(): Int = { /* code */ }
 }
 
@@ -76,15 +76,15 @@ class Kid {
 
   public Kid(String name, int age) {
     this.name = name;
-    this.age = age;  
+    this.age = age;
   }
 
   public String greet() {
     return "Hi, I'm " + name + " and I'm " + age + " years old.";
   }
-  
+
   static boolean LIKES_VEGETABLES = false;
-  // ...and other kids preconceptions 
+  // ...and other kids preconceptions
 }
 ```
 
@@ -105,7 +105,7 @@ val bobbie = new Kid("Bobbie", 9)
 playAGameWith(bobbie) // OK
 playAGameWith(Kid /* <-- the companion*/) // will not compile
 ```
- 
+
 To be truly technical, the type of the Kid object is known to the compiler as `Kid.type`, which is different than `Kid` (the class name). I'll share more details about `.type` in another more advanced article, but for now, just know the class/object types are different, but they're "compatible" to the compiler (in a sense that I'll clarify when I talk about `.type`).
 
 ## 5. Conclusion
@@ -113,4 +113,3 @@ To be truly technical, the type of the Kid object is known to the compiler as `K
 We discussed about Scala `object`s as implementing the singleton pattern in one line, and then we explored the concept of class/object companions in Scala and the implications. We learned a best-practice structure of our code and how to split it in between the class (for instance-dependent logic) and the companion object (for instance-independent logic).
 
 Hopefully this article will be useful in your Scala learning journey.
-

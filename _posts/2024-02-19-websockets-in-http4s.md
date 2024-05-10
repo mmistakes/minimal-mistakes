@@ -2,7 +2,7 @@
 title: "WebSockets in Http4s"
 date: 2024-02-19
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how to use WebSockets in Scala with Http4s, and how to enable two-way communication between the frontend and the backend."
 toc: true
@@ -59,10 +59,10 @@ First, create a `resources` folder under `main`, then under `resources` add a `c
 
 <body>
     <div>
-        <div id="output" style="height: 500px; 
-            width: 500px; 
-            text-align: left; 
-            overflow-y: scroll; 
+        <div id="output" style="height: 500px;
+            width: 500px;
+            text-align: left;
+            overflow-y: scroll;
             border-radius: 5px;
             padding: 3px;
             border: solid purple 2px;">
@@ -139,7 +139,7 @@ object Server {
 }
 ```
 
-In the body of the `server()` function, we use the `EmberServerBuilder`, pass it a host value, port value and in addition, pass an instance of `Routes()` while subsequently calling the `service()` function to `withHttpApp()` then `build()` giving us a `Resource[F, Server]`.  
+In the body of the `server()` function, we use the `EmberServerBuilder`, pass it a host value, port value and in addition, pass an instance of `Routes()` while subsequently calling the `service()` function to `withHttpApp()` then `build()` giving us a `Resource[F, Server]`.
 
 The `useForever`, and `void` methods allocate the resource to a non-terminating action and discards everything returning F[Unit] respectively.
 
@@ -179,7 +179,7 @@ Control frames are used to communicate the **state** of the WebSocket and can be
 
 There are three types of control frames, which include, **Close**, **Ping**, and **Pong** frames whose opcodes are 0x8, 0x9, and 0xA respectively.
 
-A Close frame is sent when the WebSocket is closed or disconnected and may contain a body with the reason for closing. 
+A Close frame is sent when the WebSocket is closed or disconnected and may contain a body with the reason for closing.
 
 The reason may or may not be human-readable but can be used for debugging purposes. Moreover, the application must not send any more data frames after sending a Close frame.
 
@@ -251,9 +251,9 @@ class Routes[F[_]: Files: Concurrent] extends Http4sDsl[F] {
 }
 ```
 
-Here we create `wrappedQueue` of type `F[Queue[F, WebSocketFrame]]` that's unbounded. Next, we `flatMap` and pass the `actualQueue` to the `send` and `receive` handles. 
+Here we create `wrappedQueue` of type `F[Queue[F, WebSocketFrame]]` that's unbounded. Next, we `flatMap` and pass the `actualQueue` to the `send` and `receive` handles.
 
-As a result, the receive handle can offer each `WebSocketFrame` received from the client to `Queue` while the `send` handle retrieves frames from the `Queue` by calling `Stream.fromQueueUnterminated(actualQueue)`. 
+As a result, the receive handle can offer each `WebSocketFrame` received from the client to `Queue` while the `send` handle retrieves frames from the `Queue` by calling `Stream.fromQueueUnterminated(actualQueue)`.
 
 We'll need to bind `F` to `Concurrent` for the `Queue` to work as well as import `cats.syntax.all.*` to `flatMap` on it.
 
@@ -298,7 +298,7 @@ To implement the WebSocket client, add the following code to `chat.html`:
 
 </html>
 ```
-We start by accessing the chat `<div>` and `<form>` elements by `id`, then append an instruction for the user to get started. 
+We start by accessing the chat `<div>` and `<form>` elements by `id`, then append an instruction for the user to get started.
 
 Next, we initialize a WebSocket connection by passing the path to `new WebSocket()` which gives us access to functions that help manage WebSocket data and state:
 
@@ -318,7 +318,7 @@ Next, we initialize a WebSocket connection by passing the path to `new WebSocket
 </script>
 ```
 
-The `socket.onmessage` function handles data that the WebSocket receives, in the body we append the data to the output `<div>` component. 
+The `socket.onmessage` function handles data that the WebSocket receives, in the body we append the data to the output `<div>` component.
 
 Close frames are handled by `socket.onclose`, here we append a message to output `<div>` showing the user that the connection ended.
 
@@ -338,7 +338,7 @@ Lastly, we see how to send messages to the WebSocket using the `HTML` form defin
 </script>
 ```
 
-First, we add an event listener for submit events to our form element. Next, we call `event.preventDefault()` to prevent the form from submitting and refreshing the page. 
+First, we add an event listener for submit events to our form element. Next, we call `event.preventDefault()` to prevent the form from submitting and refreshing the page.
 
 Third, we access the value in the input field, by calling accessing `document.getElementById('entry').value` and then send this value using the `socket.send()` method.
 
@@ -347,7 +347,7 @@ Finally, we clear the value in the input element by changing its value to an emp
 If we run our application at this point and try to send messages, they will be received from the server and appended to the output `<div>` proving that our WebSocket server and client are connected and working.
 
 ## 5. Chat Application
-In this section, we build a chat application using http4s WebSocket implementation, the code in the following sections is inspired by [work](https://github.com/MartinSnyder/http4s-chatserver) done by [Martin Snyder](https://github.com/MartinSnyder). 
+In this section, we build a chat application using http4s WebSocket implementation, the code in the following sections is inspired by [work](https://github.com/MartinSnyder/http4s-chatserver) done by [Martin Snyder](https://github.com/MartinSnyder).
 
 ### 5.1 Topic for Message Pipeline
 
@@ -381,7 +381,7 @@ class Routes[F[_]: Files: Concurrent] extends Http4sDsl[F] {
 }
 ```
 
-Here we promote, the `Queue` and `Topic` to the top level by passing them as parameters to the `service()` function, the `Queue` is still needed to order messages as First In First Out (FIFO). 
+Here we promote, the `Queue` and `Topic` to the top level by passing them as parameters to the `service()` function, the `Queue` is still needed to order messages as First In First Out (FIFO).
 
 Furthermore, the `receive` handle remains unchanged but the `send` handle now subscribes to the `Topic` using the `subscribe()` method which takes `maxQueued` as a parameter. This is the maximum number of elements to enqueue to the subscription queue before blocking publishers.
 
@@ -435,7 +435,7 @@ object Program extends IOApp.Simple{
   override def run: IO[Unit] = program
 }
 ```
-Here we define `program()` that returns `IO[Unit]` and create a for comprehension where we initialize `Queue` and `Topic`. Next, we pass the data from the Queue to the Topic by calling, `Stream.fromQueueUnterminated(q).through(t.publish)`. 
+Here we define `program()` that returns `IO[Unit]` and create a for comprehension where we initialize `Queue` and `Topic`. Next, we pass the data from the Queue to the Topic by calling, `Stream.fromQueueUnterminated(q).through(t.publish)`.
 
 Additionally, we join these two streams by calling `parJoinUnbounded`. Finally we `compile`, and `drain` the `Stream`, then call `program` in the body of the `run()` function.
 
@@ -473,13 +473,13 @@ object Program extends IOApp.Simple{
 Here we add a `Stream` that publishes a `WebSocketFrame.Ping()` to our `Topic` every 30 seconds. This is enough to keep our WebSocket connection alive.
 
 ## 6. Advanced Chat Application Features
-In this section, we modify our application and add a lot of extra features such as user names, rooms, and metrics. 
+In this section, we modify our application and add a lot of extra features such as user names, rooms, and metrics.
 
 To properly follow along with the code example, check out the code on [GitHub](https://github.com/hkateu/WebsocketChatApp) since this section may contain large code snippets.
 
 ### 6.1. Users and Rooms
 
-We want to add the ability to register and switch between rooms by use of commands. For this, we'll need to create `User` and `Room` case classes to hold the user and room names respectively. 
+We want to add the ability to register and switch between rooms by use of commands. For this, we'll need to create `User` and `Room` case classes to hold the user and room names respectively.
 
 Create `Util.scala` in the following path, `src/main/scala/rockthejvm/websockets/Util.scala` and add the following code:
 
@@ -526,13 +526,13 @@ object ChatState {
 }
 ```
 
-Here we create a `User` and `Room` case classes both of which take a value of type `String` and within each companion object, we call `validateItem()` in the `apply()` method to validate their inputs. 
+Here we create a `User` and `Room` case classes both of which take a value of type `String` and within each companion object, we call `validateItem()` in the `apply()` method to validate their inputs.
 
-The `validateItem()` function takes as parameters a `String` input from the `apply()` function, an instance of the case class, and a `name` of type `String` that becomes part of an error message. 
+The `validateItem()` function takes as parameters a `String` input from the `apply()` function, an instance of the case class, and a `name` of type `String` that becomes part of an error message.
 
 In the body, we use `Validated.cond()` function to produce a `User` or `Room` if the value is between 2 and 10 characters since we don't want very short or very long user/room names.
 
-Lastly, we have `ChatState`, a case class that holds all the rooms and users in the chat application at a particular moment. 
+Lastly, we have `ChatState`, a case class that holds all the rooms and users in the chat application at a particular moment.
 
 It takes two parameters, `userRooms` of type `Map[User, Room]` that shows which room each user is in, and `roomMembers` of type `Map[Room, Set[User]]` that shows all the users in each room.
 
@@ -635,7 +635,7 @@ object Protocol {
       override def isUsernameInUse(name: String): F[Boolean] = ???
       override def enterRoom(user: User, room: Room): F[List[OutputMessage]] = ???
       override def chat(user: User, text: String): F[List[OutputMessage]] = ???
-      override def help(user: User): F[OutputMessage] = ???      
+      override def help(user: User): F[OutputMessage] = ???
       override def listRooms(user: User): F[List[OutputMessage]] = ???
       override def listMembers(user: User): F[List[OutputMessage]] = ???
       override def disconnect(userRef: Ref[F, Option[User]]): F[List[OutputMessage]] = ???
@@ -644,7 +644,7 @@ object Protocol {
 }
 ```
 
-Here we create a `Protocol` trait with multiple methods, key among which is `register()` that takes a `String` and returns an `F[OutputMessage]`, in the companion object we define a `make()` function that takes a `Ref[F, ChatState]` as a parameter and returns a `Protocol[F]`. 
+Here we create a `Protocol` trait with multiple methods, key among which is `register()` that takes a `String` and returns an `F[OutputMessage]`, in the companion object we define a `make()` function that takes a `Ref[F, ChatState]` as a parameter and returns a `Protocol[F]`.
 
 In the body of the `register()` function we pass `name` to `User` and pattern match against it. If the result is of type `Valid`, we return `SuccessfulRegistration` otherwise we return `ParsingError`.
 
@@ -740,7 +740,7 @@ object Protocol {
 ```
 The `listMembers()` function lists all the members in the room where the user is currently located. Here we access `cs`, the `ChatState` then call `cs.userRooms.get(user)` that returns an `Option[Room]` that we pattern match on.
 
-In case of a `Some(room)` which shows the user belongs to a certain room, we call `cs.roomMembers.getOrElse(room, Set())` to get the list of members in the room, sorting and formatting the result as a `String`. 
+In case of a `Some(room)` which shows the user belongs to a certain room, we call `cs.roomMembers.getOrElse(room, Set())` to get the list of members in the room, sorting and formatting the result as a `String`.
 
 In case we receive a `None`, we inform the user that he or she is not currently in a room, and the resulting string, `membersList` is finally passed to `List(SendToUser(user, memberList))` along with the `user`:
 
@@ -785,11 +785,11 @@ object Protocol {
   }
 }
 ```
-The `chat()` function is used to process normal chat messages sent by the user, it takes a `User` and `text` of type `String` as parameters. 
+The `chat()` function is used to process normal chat messages sent by the user, it takes a `User` and `text` of type `String` as parameters.
 
 Here we use a for comprehension to check which room the user belongs to, in case we receive a `None` we inform the user that he or she doesn't belong to any room, otherwise, we call `broadcastMessage()` to send each `ChatMsg` to all members of that room:
 
-The `broadcastMessage()` function takes a `ChatState`, `Room`, and `OutputMessages` as parameters. Then we call `cs.roomMembers.getOrElse(room, Set.empty[User])` to get all the users in the room that the user currently is in. 
+The `broadcastMessage()` function takes a `ChatState`, `Room`, and `OutputMessages` as parameters. Then we call `cs.roomMembers.getOrElse(room, Set.empty[User])` to get all the users in the room that the user currently is in.
 
 Notice in `chat()` we passed `ChatMsg(user, user, text)` with the same `user` to the `from` and `to` parameters, when we `map` and pattern match on `OutputMessage` when we receive a `ChatMsg`, we replace all the `to` values with members in the `room`.
 
@@ -828,9 +828,9 @@ object Protocol {
 ```
 The `enterRoom()` function adds a user to a room but also removes the user from their current room if they belong to one. It takes a `User` and `Room` as parameters and returns an `F[List[OutputMessage]]`.
 
-We start by accessing `ChatState` and pattern match on `cs.userRooms.get(user)` to check if the user belongs to a room, if he or she doesn't, we call the `addToRoom()` function that adds a user to a specific room. 
+We start by accessing `ChatState` and pattern match on `cs.userRooms.get(user)` to check if the user belongs to a room, if he or she doesn't, we call the `addToRoom()` function that adds a user to a specific room.
 
-Otherwise, we first check if the room the user wants to join is the same as the room the user currently is in, if this is true, we inform the user he or she is already in the room. 
+Otherwise, we first check if the room the user wants to join is the same as the room the user currently is in, if this is true, we inform the user he or she is already in the room.
 
 If this is false we call `removeFromCurrentRoom()` then `addToRoom()` to remove the user from the current room and subsequently add the user to the new room respectively:
 
@@ -860,7 +860,7 @@ object Protocol {
   }
 }
 ```
-`addToRoom()` is a private function that takes a `Ref[F, ChatState]`, `User`, and `Room` as parameters. Here we update the `ChatState` by calling `stateRef.updateAndGet()`. 
+`addToRoom()` is a private function that takes a `Ref[F, ChatState]`, `User`, and `Room` as parameters. Here we update the `ChatState` by calling `stateRef.updateAndGet()`.
 
 First, we get the current members in the room then add the new member by calling `cs.roomMembers.getOrElse(room, Set()) + user` to get an updated member list, then add this list to `ChatState` along with the user's current room with the following code:
 
@@ -981,7 +981,7 @@ object InputMessage {
 }
 ```
 
-We start by creating an `InputMessage` trait with `defaultRoom`, a function that returns `Validated[String, Room]` and a `parse()` function that takes a `Ref[F, Option[User]]` and a `String` and returns an `F[List[OutputMessage]]`. 
+We start by creating an `InputMessage` trait with `defaultRoom`, a function that returns `Validated[String, Room]` and a `parse()` function that takes a `Ref[F, Option[User]]` and a `String` and returns an `F[List[OutputMessage]]`.
 
 Similar to `Protocol` we create a `make()` function where we provide the implementations for `InputMessage`. We make sure to bind `F` to `Monad` for the following implementation of `parse()`.
 
@@ -1006,7 +1006,7 @@ override def parse(
 ...
 ```
 
-Here, we call `text.trim()` to remove any surrounding white spaces in our `text` and then pattern match on the result, in case we get an empty string, we discard the message by returning `DiscardMessage.pure[F]`. 
+Here, we call `text.trim()` to remove any surrounding white spaces in our `text` and then pattern match on the result, in case we get an empty string, we discard the message by returning `DiscardMessage.pure[F]`.
 
 Otherwise we, access `Option[User]` from `userRef` and fold on it to handle messages from registered and unregistered users. We'll get back to this soon, first, we look at how we'll use the `cats-parse` library to parse the text commands:
 
@@ -1106,9 +1106,9 @@ If we fail to parse the text command, we return a `List` of `ParsingError` that 
 
 ```scala
 parseToTextCommand(text).fold(
-  _ => 
+  _ =>
     ...,
-  v => 
+  v =>
     v match {
       case TextCommand("/name", Some(n)) =>
         protocol.isUsernameInUse(n).flatMap { b =>
@@ -1257,15 +1257,15 @@ object InputMessage {
 }
 ```
 
-Here we define `procesText4Reg()` that takes a `user`, `text`, and `protocol` of type `User`, `String`, and `Protocol[F]` respectively as parameters. The implementation is similar to `processText4UnReg()`, except that we pattern match on a few more commands. 
+Here we define `procesText4Reg()` that takes a `user`, `text`, and `protocol` of type `User`, `String`, and `Protocol[F]` respectively as parameters. The implementation is similar to `processText4UnReg()`, except that we pattern match on a few more commands.
 
-Depending on the command passed we call the respective method from `Protocol[F]`. If we match with a `TextCommand("/name", Some(n))`, we inform the user that he or she can't register again. 
+Depending on the command passed we call the respective method from `Protocol[F]`. If we match with a `TextCommand("/name", Some(n))`, we inform the user that he or she can't register again.
 
-In the case of `TextCommand("/room", Some(r))`, which is the command to switch rooms, we first pass the room name to the `Room` `apply()` function, if it's valid we call `protocol.enterRoom(user, room)` otherwise we call `List(ParsingError(Some(user), e)).pure[F]` passing the error as the message. 
+In the case of `TextCommand("/room", Some(r))`, which is the command to switch rooms, we first pass the room name to the `Room` `apply()` function, if it's valid we call `protocol.enterRoom(user, room)` otherwise we call `List(ParsingError(Some(user), e)).pure[F]` passing the error as the message.
 
-In the case of `TextCommand("/help", None)`, `TextCommand("/rooms", None)` and `TextCommand("/members", None)`, we call `protocol.help(user).map(List(_))`, `protocol.listRooms(user)` and `protocol.listMembers(user)` respectively and if any other command is passed we respond with `List(UnsupportedCommand(Some(user))).pure[F]`. 
+In the case of `TextCommand("/help", None)`, `TextCommand("/rooms", None)` and `TextCommand("/members", None)`, we call `protocol.help(user).map(List(_))`, `protocol.listRooms(user)` and `protocol.listMembers(user)` respectively and if any other command is passed we respond with `List(UnsupportedCommand(Some(user))).pure[F]`.
 
-Lastly, if we receive a regular message, we call `protocol.chat(user, text)`. 
+Lastly, if we receive a regular message, we call `protocol.chat(user, text)`.
 
 We can now update our `make()` function as follows using the `processText4UnReg()` and `procesText4Reg()` functions:
 
@@ -1336,11 +1336,11 @@ class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
 }
 ```
 
-Here, we not only update the `service()` parameters, `Queue` and `Topic` to `OutputMessage` instead of `WebSocketFrame` but also add `InputMessage[F]`, and `Protocol[F]` as parameters. 
+Here, we not only update the `service()` parameters, `Queue` and `Topic` to `OutputMessage` instead of `WebSocketFrame` but also add `InputMessage[F]`, and `Protocol[F]` as parameters.
 
 At the `/ws` route level, we now use a for comprehension where we have `userRef` a `Ref[F, Option[User]]` that we initialize to `None` for unregistered users when they first access the WebSocket and `uQueue`, a second `Queue[F, OutputMessage]`, to handle messages for new users until they are registered.
 
-This is necessary since every new user is identified by a `None`, it would be hard to filter messages for unregistered users, so we give each of them a private queue until they get registered. 
+This is necessary since every new user is identified by a `None`, it would be hard to filter messages for unregistered users, so we give each of them a private queue until they get registered.
 
 Finally, we call `wsb.build()` with custom `send()` and `recieve()` functions. We'll see how these are implemented starting with the latter:
 
@@ -1397,13 +1397,13 @@ class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
 
 The new `receive()` function takes a `Protocol[F]`, `InputMessage[F]`, `Ref[F, Option[User]]` and two `Queue`'s of type `Queue[F, OutputMessage]`, one that feeds into our `Topic` and one that processes messages for unregistered users.
 
-We start by calling `handleWebSocketStream()`, a function that takes a `Stream[F, WebSocketFrame]`, `InputMessage[F]`, `Protocol[F]`, and `Ref[F, Option[User]]` and returns a `Stream[F, OutputMessage]`. 
+We start by calling `handleWebSocketStream()`, a function that takes a `Stream[F, WebSocketFrame]`, `InputMessage[F]`, `Protocol[F]`, and `Ref[F, Option[User]]` and returns a `Stream[F, OutputMessage]`.
 
-It uses a for comprehension where we access `sf`, a `WebSocketFrame` that we pattern match on, for cases of type `WebSocketFrame.Text(text, _)`, we pass the text value to `im.parse()` along with a `Ref[F, Option[User]]` which returns `F[List[OutputMessage]]`. 
+It uses a for comprehension where we access `sf`, a `WebSocketFrame` that we pattern match on, for cases of type `WebSocketFrame.Text(text, _)`, we pass the text value to `im.parse()` along with a `Ref[F, Option[User]]` which returns `F[List[OutputMessage]]`.
 
 While for cases of type `WebSocketFrame.Close(_)`, we call `protocol.disconnect(uRef)`. Lastly, we wrap the pattern match results in `Stream.evalSeq()` to produce a `Stream[F, OutputMessage]`.
 
-In the `receive()` function, we call `evalMap` on `handleWebSocketStream()` and offer the `OutputMessage` to either `q` or `uQueue` for cases of registered and unregistered users respectively. 
+In the `receive()` function, we call `evalMap` on `handleWebSocketStream()` and offer the `OutputMessage` to either `q` or `uQueue` for cases of registered and unregistered users respectively.
 
 This all results in a `Stream[F, Unit]` that we run concurrently with another stream that offers a `KeepAlive` message to `uQueue` acting as a heartbeat for unregistered users, we also make sure to bind `F` to `Temporal` since we are dealing with duration:
 
@@ -1458,15 +1458,15 @@ class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
 }
 ```
 
-The new `send()` function takes a `Topic[F, OutputMessage]`, `Queue[F, OutputMessage]` and `Ref[F, Option[User]]` as arguments. 
+The new `send()` function takes a `Topic[F, OutputMessage]`, `Queue[F, OutputMessage]` and `Ref[F, Option[User]]` as arguments.
 
-In the body, we define `uStream`, where we create a `Stream[F, OutputMessage]` for unregistered users by calling `Stream.fromQueueUnterminated(uQueue)`, then filter out all messages of type `DiscardMessage`. 
+In the body, we define `uStream`, where we create a `Stream[F, OutputMessage]` for unregistered users by calling `Stream.fromQueueUnterminated(uQueue)`, then filter out all messages of type `DiscardMessage`.
 
 Lastly, we map to the `processMsg()` function that converts `KeepAlive` messages to `WebSocketFrame.Ping()` and the rest to `WebSocketFrame.Text()`, however, we call `msg.asJson.noSpaces` to pass these messages as a `JSON` string.
 
 The `mainStream` function subscribes to `Topic[F, OutputMessage]` and uses `filterMsg()`, a custom filter function that takes the `OutputMessage` and a `Ref[F, Option[User]]` to produce an `F[Boolean]`.
 
-The `filterMsg()` function first pattern matches on `msg` to filter out `DiscardMessage`, in cases of `SendToUser` and `ChatMsg`, we access `Option[User]` from  `Ref[F, Option[User]]` and filter out all messages when we have a `None`. 
+The `filterMsg()` function first pattern matches on `msg` to filter out `DiscardMessage`, in cases of `SendToUser` and `ChatMsg`, we access `Option[User]` from  `Ref[F, Option[User]]` and filter out all messages when we have a `None`.
 
 Otherwise, we use the `forUser()` method to filter based on the user. Lastly, we also map these messages to `processMsg()`.
 
@@ -1499,7 +1499,7 @@ class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
                 |<body>
                 |<pre>Users: ${cState.userRooms.keys.size}</pre>
                 |<pre>Rooms: ${cState.roomMembers.keys.size}</pre>
-                |<pre>Overview: 
+                |<pre>Overview:
                 |${cState.roomMembers.keys.toList
                 .map(room =>
                   cState.roomMembers
@@ -1526,7 +1526,7 @@ class Routes[F[_]: Files: Temporal] extends Http4sDsl[F] {
   ...
 }
 ```
-Here we create a new route `/metrics`, that gives a snapshot of our application. Using an `HTML` string, we show the number of users and the number of rooms by calling `cState.userRooms.keys.size` and `cState.roomMembers.keys.size` respectively. 
+Here we create a new route `/metrics`, that gives a snapshot of our application. Using an `HTML` string, we show the number of users and the number of rooms by calling `cState.userRooms.keys.size` and `cState.roomMembers.keys.size` respectively.
 
 We also give an overview of the application by showing the users in each room. Finally, we pass this `HTML` string to `Ok()` where we also specify the content type by adding `MediaType.text.html` header.
 
@@ -1650,11 +1650,11 @@ We start by creating a `colorText()` function that creates a `<pre>` element, ap
   ...
 </script>
 ```
-The `socket.onmessage` function now parses the data using the `JSON.parse` function, `obj` now has access to the different types of messages being sent. 
+The `socket.onmessage` function now parses the data using the `JSON.parse` function, `obj` now has access to the different types of messages being sent.
 
 We don't print out the user for all message types except `ChatMsg`. Here error messages, notification messages, and chat messages are printed in red, green, and purple respectively using the `colorText()` function.
 
-We also add `output.scrollTop = output.scrollHeight;` to each of the above handles, this code ensures that we focus on the latest appended message. 
+We also add `output.scrollTop = output.scrollHeight;` to each of the above handles, this code ensures that we focus on the latest appended message.
 
 Here's an example of how `/chat.html` should behave:
 
@@ -1666,6 +1666,6 @@ Here's sample output from `/metrics`:
 
 
 ## 7. Conclusion
-In summary, this article shows how to implement a WebSocket server and client in Http4s and Javascript respectively. We built a chat application and learned how to process multiple messages and monitor the status of our application. 
+In summary, this article shows how to implement a WebSocket server and client in Http4s and Javascript respectively. We built a chat application and learned how to process multiple messages and monitor the status of our application.
 
 We've only been handling text data, however many chat applications also handle other file formats like images, audio, video, and documents, this can be an area for further research. As always, the code for this application can be found [over on GitHub](https://github.com/hkateu/WebsocketChatApp).

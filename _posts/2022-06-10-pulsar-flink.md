@@ -2,7 +2,7 @@
 title: "Stateful Streams with Apache Pulsar and Apache Flink"
 date: 2022-06-14
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [pulsar, flink, streaming]
 excerpt: "We discuss how you can integrate Apache Pulsar\  with Apache Flink to perform data enrichment with state from different topics."
 ---
@@ -19,7 +19,7 @@ For the best experience following this article, we recommend referring to [this 
 ### 1. Introduction
 
 Typical Streaming data architectures include a streaming storage layer like Apache Pulsar that serves as the backbone of the infrastructure.
-Stateful stream processing is also required to deliver advanced analytics for your users; a stream computing engine 
+Stateful stream processing is also required to deliver advanced analytics for your users; a stream computing engine
 like Apache Flink is required to handle time-based event computations, especially when they require managing large state.
 Data often resides inside multiple different topics in a streaming storage layer, and it's important to be able to combine data from _multiple input topics_.
 
@@ -33,8 +33,8 @@ If you are interested about this type of architecture, [this video](https://www.
 ![Alt text](../images/pf2.png "Example Use Case")
 
 Our example use case is an online store and users come online to place orders for different items. Our fundamental types involved are users, items (products) and orders.
-Every new order is written into an `orders` topic, and similarly for users or items - written into the `users` and `items` topics respectively. 
-We treat `users` and `items` topics as _changelog_ streams &mdash; this means that the events written in those topics will be 
+Every new order is written into an `orders` topic, and similarly for users or items - written into the `users` and `items` topics respectively.
+We treat `users` and `items` topics as _changelog_ streams &mdash; this means that the events written in those topics will be
 a key-value pair and for each unique key we are only interested in the _latest_ value.
 
 For example, if `user1` updates the phone number we are ony interested in the latest updated value (the new phone number). The same goes for a product.
@@ -161,7 +161,7 @@ services:
 
 There are a few things to note here:
 - First, we create a Flink Cluster with one Task Manager which has 2 slots, and a Pulsar cluster.
-- We expose ports 8080 for Pulsar, as well as port 6650 which is the Pulsar broker port. 
+- We expose ports 8080 for Pulsar, as well as port 6650 which is the Pulsar broker port.
 - We also enable some configurations: `systemTopicEnabled` and `topicLevelPoliciesEnabled` allow us to use topic-level policies for infinite data retention.
 - Then we have `transactionCoordinatorEnabled` which enables the transaction coordinator which is used by the Pulsar-Flink connector.
 
@@ -296,7 +296,7 @@ This data producer's main function does the following:
 - loads the data files with one of the utilities earlier &mdash; nothing more than mere CSV parsing
 - creates a Pulsar client
 - creates data producers for users and for items
-- pushes each user and each item to Pulsar one by one 
+- pushes each user and each item to Pulsar one by one
 - keeps track of the total records with an `AtomicInteger` (we're doing parallel processing, remember?)
 - closes the resources cleanly
 
@@ -426,7 +426,7 @@ mvn clean package
 docker cp \
   target/pulsar-flink-stateful-streams-0.1.0.jar \
   pulsar-flink-stateful-streams_taskmanager_1:opt/flink/job.jar
-  
+
 docker exec -it pulsar-flink-stateful-streams_taskmanager_1 ./bin/flink run \
   --class io.ipolyzos.compute.v1.EnrichmentStream \
     job.jar
@@ -543,7 +543,7 @@ import org.slf4j.LoggerFactory;
 public class UserLookupHandler extends CoProcessFunction<Order, User, OrderWithUserData> {
     private static final Logger logger = LoggerFactory.getLogger(UserLookupHandler.class);
     private ValueState<User> userState;
-    
+
     @Override
     public void open(Configuration parameters) throws Exception {
         logger.info("{}, initializing state ...", this.getClass().getSimpleName());
@@ -637,7 +637,7 @@ mvn clean package
 docker cp \
   target/pulsar-flink-stateful-streams-0.1.0.jar \
   pulsar-flink-stateful-streams_taskmanager_1:opt/flink/job.jar
-  
+
 docker exec -it pulsar-flink-stateful-streams_taskmanager_1 ./bin/flink run \
   --class io.ipolyzos.compute.v2.EnrichmentStream \
     job.jar
@@ -646,7 +646,7 @@ docker exec -it pulsar-flink-stateful-streams_taskmanager_1 ./bin/flink run \
 Following our previous steps:
 1. Run the `deploy.sh` script
 2. Generate some `Order` events
-3. Check the logs 
+3. Check the logs
 
 We should see an output similar to this:
 ```shell
@@ -675,7 +675,7 @@ In order to have more visibility we introduce Flink's [Side Outputs](https://nig
 You can think of Side Outputs like a branch of a stream that you can use to redirect events that don't comply with your expected behavior and need to be propagated to a different output downstream, like printing them to the console, pushing them to another Pulsar topic or storing into a database.
 
 With this approach, if we hit a scenario that a user or item event is missing, we can propagate the order event downstream.
-We might not be sure why this happened, but at least we have visibility that it happened and we can investigate more later. 
+We might not be sure why this happened, but at least we have visibility that it happened and we can investigate more later.
 
 In order to use side outputs, we need to modify our `ProcessFunction` logic:
 ```java
@@ -736,11 +736,11 @@ We also need to modify our main `EnrichmentStream` class to support Side Outputs
         .printToErr()
         .name("MissingUserStateSink")
         .uid("MissingUserStateSink");
-    
+
     enrichedOrderStream.getSideOutput(missingStateTagItems)
         .printToErr()
         .name("MissingItemStateSink")
-        .uid("MissingItemStateSink"); 
+        .uid("MissingItemStateSink");
 ```
 
 Here we create two side outputs - one for missing user events and one for item events. Then we extract the side outputs from our output stream and print it.
@@ -833,19 +833,19 @@ Navigate to the Flink UI and you should see something like this:
 
 ![Alt text](../images/flink/job.png "JOB")
 
-You can see that while we consume new order events, the events actually get enriched with `user` and `item` information, even though our source streams haven't read any new records. 
+You can see that while we consume new order events, the events actually get enriched with `user` and `item` information, even though our source streams haven't read any new records.
 This means the state is restored from the checkpoint and flink knows how to rebuild it without replaying all the events from the topics.
 
 ## 7. Additional Resources
 - [Rock The JVM Apache Flink Course](https://rockthejvm.com/p/flink)
 - Apache Pulsar Documentation:
-   - [Pulsar Overview](https://pulsar.apache.org/docs/concepts-overview/) 
+   - [Pulsar Overview](https://pulsar.apache.org/docs/concepts-overview/)
    - [Pulsar Producers](https://pulsar.apache.org/docs/concepts-messaging/)
 - StreamNative Academy:
    - [Apache Pulsar Fundamentals](https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101+UNLM/about)
    - [Pulsar API Essentials - Java](https://www.academy.streamnative.io/courses/course-v1:streamnative+AP101-Lab+UNLM/about)
-- [Apache Pulsar Ebooks](https://streamnative.io/ebooks/) 
-- [Using RocksDB State Backend in Apache Flink - When and How](https://flink.apache.org/2021/01/18/rocksdb.html) 
+- [Apache Pulsar Ebooks](https://streamnative.io/ebooks/)
+- [Using RocksDB State Backend in Apache Flink - When and How](https://flink.apache.org/2021/01/18/rocksdb.html)
 - [Apache Flink Restart Strategies](https://kartikiyer.com/2019/05/26/choosing-the-correct-flink-restart-strategy-avoiding-production-gotchas/)
 - [Apache Flink Checkpoints](https://nightlies.apache.org/flink/flink-docs-master/docs/ops/state/checkpoints/)
 

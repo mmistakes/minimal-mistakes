@@ -23,7 +23,7 @@ All files are Markdown, with a header that looks like this (example from one of 
 title: "Akka Typed: Actor Discovery"
 date: 2022-03-22
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "A common pattern in Akka Typed: how to find actors that are not explicitly passed around."
 ---
@@ -52,7 +52,7 @@ In this first topic we're going to talk about the first topic.
 
 For **images**, they sit in the `images/` directory, and you can reference them in Markdown as `![Alt text](../images/myimage.png "Caption")`.
 
-To embed **YouTube videos**, include a line of this form: 
+To embed **YouTube videos**, include a line of this form:
 
 ```
 {% include video id="MY_VIDEO_ID" provider="youtube" %}

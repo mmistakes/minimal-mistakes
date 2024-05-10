@@ -2,9 +2,9 @@
 title: "Types, Kinds and Type Constructors in Scala"
 date: 2020-10-06
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
-excerpt: "Scala has a powerful type system. We look at how Scala types can be organized, what type constructors are, and why we should care." 
+excerpt: "Scala has a powerful type system. We look at how Scala types can be organized, what type constructors are, and why we should care."
 ---
 
 This article is for the mature Scala developer. We aren't looking at the basics here, and some abstract thinking will be required for this one.
@@ -51,7 +51,7 @@ Level-1 is the _kind_ of types which receive type arguments of the inferior leve
 Look at how we attached the type `LinkedList[Int]` to the previous value. We used the level-1 type `LinkedList` and we used the level-0 type argument `Int` to create a new level-0 type. Does that sound similar to something else you've seen?
 
 If you think about it, this mechanism looks similar to a function: take a function, pass a value to it, obtain another value. Except in this case, we work with types: take a level-1 type, pass a level-0 type argument to it, obtain another level-0 type.
-  
+
 For this reason, these generic types are also called type constructors, because they can _create_ level-0 types. `LinkedList` itself is a type constructor: takes a value type (e.g. `Int`) and returns a value type (e.g. `LinkedList[Int]`).
 
 ## 5. Level 2 and Beyond: Higher-Kinded Types
@@ -108,7 +108,7 @@ Given what you've learned so far, you can read these types for what they are:
   - `HashMap` is (by itself) a type constructor taking two level-0 type arguments.
   - `ComposedFunctor` is (by itself) a type constructor taking two level-1 type arguments.
   - `Formatter` is (by itself) a type constructor taking a level-1 type argument and a level-0 type argument.
-  
+
 ## 7. Conclusion: Why Should We Care?
 
 We've explored how types in Scala are organized and what type constructors are. Why is this important? How does it help us in real life?
@@ -118,5 +118,5 @@ Here's the deal.
   1. When you get started with Scala, you work with normal types, like `Int`s or classes you define, usually plain data structures.
   2. As you work with increasingly complex code, you start noticing patterns in your code. Ideally, you'll also have more power (and responsibility) to shape the future direction of your codebase. You'll use higher-level types and generics to accomplish that. It's almost impossible not to.
   3. As you become more experienced and notice additional subtle common functionality in your code, you may look to some pure FP libraries like [Cats](https://typelevel.org/cats) to manage logic.
-  
-Without good understanding of Scala's type system, not only will this progression seem hard, but you'll also increasingly resist it. As you resist it, you place obstacles to your own growth as a Scala engineer. Conversely, with good understanding of types in Scala, this progression will not only be natural to you, but you'll enjoy your development and abstract code will seem like child's play. 
+
+Without good understanding of Scala's type system, not only will this progression seem hard, but you'll also increasingly resist it. As you resist it, you place obstacles to your own growth as a Scala engineer. Conversely, with good understanding of types in Scala, this progression will not only be natural to you, but you'll enjoy your development and abstract code will seem like child's play.

@@ -2,23 +2,23 @@
 title: "Let's Talk About the Scala 3 Indentation"
 date: 2020-11-02
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
-excerpt: "Some people love it, some hate it. Scala 3 indented syntax is not that bad, and it might actually help. Let's take a look at how Scala 3 can change the structure of our code." 
+excerpt: "Some people love it, some hate it. Scala 3 indented syntax is not that bad, and it might actually help. Let's take a look at how Scala 3 can change the structure of our code."
 ---
 
 Regardless of whether you're experienced or new to Scala, you've probably been confused about Scala syntax inconsistencies and alternatives at least once. In this article, we'll take a careful, structured look at how Scala 3 adds yet another facility to our ever-expanding set of alternative code styles.
 
 This feature (along with dozens of other changes) is explained in depth in the [Scala 3 New Features](https://rockthejvm.com/p/scala-3-new-features) course.
 
-## 1. If Expressions 
+## 1. If Expressions
 
 The Scala 2 syntax allows you to write if expressions on multiple lines:
 
 ```scala3
 val aCondition = if (2 > 3)
   "bigger"
-  else "smaller" 
+  else "smaller"
 ```
 
 Of course, that's not how aesthetics are generally chosen. Some styles include:
@@ -28,7 +28,7 @@ Of course, that's not how aesthetics are generally chosen. Some styles include:
 val aCondition = if (2 > 3) "bigger" else "smaller"
 
 // java-style
-val aCondition2 = 
+val aCondition2 =
   if (2 > 3) {
     "bigger"
   } else {
@@ -36,7 +36,7 @@ val aCondition2 =
   }
 
 // compact
-val aCondition3 = 
+val aCondition3 =
     if (2 > 3) "bigger"
     else "smaller"
 ```
@@ -44,7 +44,7 @@ val aCondition3 =
 To be clear, all the above _are still supported_ in Scala 3. However, we can make do without the braces and even the parentheses of if expressions, while _indentation becomes significant_.
 
 ```scala3
-val anIndentedCondition = 
+val anIndentedCondition =
   if 2 > 3
     "bigger"
   else
@@ -59,8 +59,8 @@ If we want to place the if-branch result on the same line as the condition, we n
 // one-liner
 val aCondition = if 2 > 3 then "bigger" else "smaller"
 // compact
-val aCondition = 
-  if 2 > 3 then "bigger" 
+val aCondition =
+  if 2 > 3 then "bigger"
   else "smaller"
 ```
 
@@ -80,7 +80,7 @@ for {
 Now, in Scala 3:
 
 ```scala3
-for 
+for
   n <- List(1, 2, 3)
   c <- List('a', 'b', 'c')
 yield s"$c$n"
@@ -97,13 +97,13 @@ In the syntactic analysis compilation step, the compiler adds indentation region
 This means that methods can now be implemented without braces:
 
 ```scala3
-def computeMeaningOfLife(year: Int): Int = 
+def computeMeaningOfLife(year: Int): Int =
   println("thinking...")
-  
+
   42 // <-- indent matters, so it's taken under the scope of this method
 ```
 
-This part may be particularly confusing. The way I like to talk about it is: imagine the compiler inserted braces between `=` and your returned value; in this way, the implementation of the method is a _code block_, which, obviously, is a single expression whose value is given by its last constituent expression. The significant indentation means, in this case, that we actually have an invisible code block there.  
+This part may be particularly confusing. The way I like to talk about it is: imagine the compiler inserted braces between `=` and your returned value; in this way, the implementation of the method is a _code block_, which, obviously, is a single expression whose value is given by its last constituent expression. The significant indentation means, in this case, that we actually have an invisible code block there.
 
 An indentation region is also created when we define classes, traits, objects or [enums](https://blog.rockthejvm.com/enums-scala-3/) followed by a colon `:` and a line break. This token is now interpreted by the compiler as "colon at end of line", which is to say "colon then define everything indented". Examples:
 
@@ -122,13 +122,13 @@ Similar rules apply for extension methods and given instances (we'll talk about 
 
 ```scala3
 given myOrder as Ordering[Int]: // <-- start the indentation region
-  def compare(x: Int, y: Int) = 
+  def compare(x: Int, y: Int) =
     if x < y then 1 // notice my new syntax
     else if x > y then -1
     else 0
 ```
 
-Now for the million dollar question: indent with _spaces or tabs_? Scala 3 supports both, and the compiler is able to compare indentations. 
+Now for the million dollar question: indent with _spaces or tabs_? Scala 3 supports both, and the compiler is able to compare indentations.
 
 If two lines start with the same number of spaces or the same number of tabs, the indentations are comparable, and the comparison is given by the number of spaces/tabs after. For example, 3 tabs + one space is "less indented" than 3 tabs + 2 spaces. Similarly, 4 spaces + 1 tab is "less indented" than 4 spaces + 2 tabs. Makes sense. If two lines don't start with the same number of spaces/tabs, they are _incomparable_, e.g. 3 tabs vs 6 spaces. The compiler always knows the indentation baseline for an indentation region, so if a line is incomparable with the baseline, it'll give an error.
 
@@ -144,7 +144,7 @@ val aFuture = Future {
 }
 ```
 
-which is the same as `Future(/* that block of code */)`, which throws some newcomers off. This brace syntax is applicable to any method with a single argument. 
+which is the same as `Future(/* that block of code */)`, which throws some newcomers off. This brace syntax is applicable to any method with a single argument.
 
 Here's the thing: this one is here to stay. No significant indentation here. We could add support for it with the `-Yindent-colons` compiler option, which would allow us to add an end-of-line `:` and write the method argument indented:
 
@@ -153,7 +153,7 @@ val nextYear = Future:
   2021
 ```
 
-or 
+or
 
 ```scala3
 List(1,2,3).map:
@@ -170,10 +170,10 @@ To that end (pun intended), Scala 3 introduced the `end` token to differentiate 
 
 ```scala3
 class Animal:
-  def eat(): Unit = 
+  def eat(): Unit =
     if System.currentTimeMillis() % 2 == 0
       println("even")
-    else 
+    else
       println("odd")
     end if
   end eat
@@ -184,4 +184,4 @@ Obviously, this example is trivial, but the `end` token will definitely prove us
 
 ## 6. Conclusion
 
-There's not much more to it - pretty much everything you need to know about indentation with Scala 3. When I personally looked at the new indentation rules for Scala 3, I personally thought, "what have you done?!". Come to take a more structured approach, it's not that bad, and it might actually help. Several people already report that Scala feels faster to write, easier to read and generally more productive with this style. Only time will tell - in any event, if this article made even one person think, "this isn't as bad as I thought", then it was a success! 
+There's not much more to it - pretty much everything you need to know about indentation with Scala 3. When I personally looked at the new indentation rules for Scala 3, I personally thought, "what have you done?!". Come to take a more structured approach, it's not that bad, and it might actually help. Several people already report that Scala feels faster to write, easier to read and generally more productive with this style. Only time will tell - in any event, if this article made even one person think, "this isn't as bad as I thought", then it was a success!

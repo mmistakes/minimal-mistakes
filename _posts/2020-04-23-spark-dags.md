@@ -2,7 +2,7 @@
 title: "Reading Spark DAGs"
 date: 2020-04-23
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [spark, how to]
 excerpt: "We walk you through one of the foundational skills for Spark performance optimization: reading the Spark UI and the graph of how your job is structured."
 ---

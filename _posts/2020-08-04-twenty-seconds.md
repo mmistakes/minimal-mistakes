@@ -2,7 +2,7 @@
 title: "How Does \"20 seconds\" Work in Scala?"
 date: 2020-08-04
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, tricks]
 excerpt: "Various constructions like \"20.seconds\" look like baked into the Scala language. Let's see how these work."
 ---

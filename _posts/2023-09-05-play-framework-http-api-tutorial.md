@@ -2,7 +2,7 @@
 title: "REST APIs Using Play Framework and Scala: A Comprehensive Guide"
 date: 2023-09-04
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka,play,http,scala]
 excerpt: "Learn the basics of Play Framework to build robust HTTP APIs with Scala, in this long-form tutorial."
 ---
@@ -17,9 +17,9 @@ access data and not only through URLs, across the web.
 
 ## 2. Setting Up
 
-Let's start by adding our dependencies on our sbt files. 
+Let's start by adding our dependencies on our sbt files.
 
-On `plugins.sbt` add the following plugins. PlayScala plugin defines default settings for Scala-based applications. 
+On `plugins.sbt` add the following plugins. PlayScala plugin defines default settings for Scala-based applications.
 
 ```scala
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.19")
@@ -53,7 +53,7 @@ After using all this you should be ready to create the codebase for our rest api
 
 ## 3. Basic REST Api skeleton project
 
-The image below shows the basic folder and package structure for our project. It is organized based on each layer of concern. 
+The image below shows the basic folder and package structure for our project. It is organized based on each layer of concern.
 
 ![alt "Project structure"](../images/play-rest-api/project_structure.jpeg)
 
@@ -65,9 +65,9 @@ It is the layer where we define the basic persistence entities and persistence m
 
 ![alt "Persistence structure"](../images/play-rest-api/persistence_structure.jpeg)
 
-On a persistence trait we define basic functions given from our underlying persistence mechanism. Here we define the mechanism for example purposes. As we can see basic operations on a persisted dataset are defined. We use types A, B, C[_] to make our Persistence layer as abstract as possible. 
+On a persistence trait we define basic functions given from our underlying persistence mechanism. Here we define the mechanism for example purposes. As we can see basic operations on a persisted dataset are defined. We use types A, B, C[_] to make our Persistence layer as abstract as possible.
 
-`A` defines the types we save in our datastore. `B` defines the type of our primary key and `C[_]` defines the type of data structure that we use for persisting our entities. As you will see on the sections that follows for our specific example A corresponds to Car type, B corresponds to Long and C[_] to a ListBuffer. 
+`A` defines the types we save in our datastore. `B` defines the type of our primary key and `C[_]` defines the type of data structure that we use for persisting our entities. As you will see on the sections that follows for our specific example A corresponds to Car type, B corresponds to Long and C[_] to a ListBuffer.
 With this implementation we can easily swap this Layer and use other persistent types.
 
 ```scala
@@ -109,7 +109,7 @@ object CarDTO{
 }
 ```
 
-We can use a variety of databases with our project. Because our focus is Play itself, we simplify the database as an in-memory object. It is a simple ListBuffer which we can use to do basic operations to insert, find, update, and delete Car entities. We implement basic validations as to avoid duplicates on insert and missing entities on delete and update. 
+We can use a variety of databases with our project. Because our focus is Play itself, we simplify the database as an in-memory object. It is a simple ListBuffer which we can use to do basic operations to insert, find, update, and delete Car entities. We implement basic validations as to avoid duplicates on insert and missing entities on delete and update.
 
 ```scala
 package com.rockthejvm.playdemo.persistence
@@ -253,7 +253,7 @@ package managers.errors
 case class ManagerError(val message: String)
 ```
 
-The example in the code above is very simple because we simply invoke methods from the repository. But assume we also wanted to keep track of the most popular cars that were requested (so that the marketing department can do their thing with the data), so we'd do some more than just fetching the cars from the database. For example, we could keep a field on our database entity for how many sales does a car model do in a month. We would then modify our manager to fetch the cars and order them by the new sales field. 
+The example in the code above is very simple because we simply invoke methods from the repository. But assume we also wanted to keep track of the most popular cars that were requested (so that the marketing department can do their thing with the data), so we'd do some more than just fetching the cars from the database. For example, we could keep a field on our database entity for how many sales does a car model do in a month. We would then modify our manager to fetch the cars and order them by the new sales field.
 
 Below you can see how our entity and manager would change: we add a new field in the Car data type, a new method in the Manager trait and the implementation of that method in the "live" version of the manager.
 
@@ -405,7 +405,7 @@ With this new complex action, we can implement our "delete" endpoint as follows:
 ```scala
 class HomeController(val carManager: CarManager, val controllerComponents: ControllerComponents)(implicit val ec: ExecutionContext)
   extends BaseController {
-  
+
   // ... the rest of the code
   def delete(id: Long) = CarAction(id){ implicit request =>
     request.carDTO.map(car =>
@@ -450,7 +450,7 @@ Finally, we need to put all of the above together and define our main applicatio
 
 ![alt "Application Loader"](../images/play-rest-api/application_loader.jpeg)
 
-We use application loaders to wire everything together and make our application ready to available for service. We provide a context and get back an application. 
+We use application loaders to wire everything together and make our application ready to available for service. We provide a context and get back an application.
 
 ```scala
   final case class Context(
@@ -466,7 +466,7 @@ We also find `initialConfiguration`, which is the configuration that the applica
 
 To load an application we need to provide all the necessary components like the routes of our application, the configuration needed which consists of the [built-in components](https://www.playframework.com/documentation/2.8.x/api/scala/play/api/BuiltInComponents.html) that we extend with our components like our managers, controllers and routes. This is the place where we instantiate our classes.
 
-Here we define and initialize our main entry point. Initialize all needed components like Managers, Repositories, Routers etc. and finally return an instance of our application. 
+Here we define and initialize our main entry point. Initialize all needed components like Managers, Repositories, Routers etc. and finally return an instance of our application.
 
 ```scala
 import controllers.HomeController
@@ -503,7 +503,7 @@ class RestApiComponents(context: ApplicationLoader.Context)
 
 ## 4 Dependency Injection
 
-In this simple example we initialize all needed classes "by hand", manual Dependency injection, but as the project is getting more complex we may want to switch to a more advanced framework, like [Guice](https://github.com/google/guice) or [Macwire](https://github.com/softwaremill/macwire), included in our `build.sbt` (see the beginning of the article). 
+In this simple example we initialize all needed classes "by hand", manual Dependency injection, but as the project is getting more complex we may want to switch to a more advanced framework, like [Guice](https://github.com/google/guice) or [Macwire](https://github.com/softwaremill/macwire), included in our `build.sbt` (see the beginning of the article).
 
 For example instead of having all components initialized on RestApiComponents we could have them grouped in different component traits and on the application loader we could mix in those traits. In those traits a DI framework could help as drop the tedious work of manually passing all variables needed.
 

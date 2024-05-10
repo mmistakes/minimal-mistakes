@@ -2,7 +2,7 @@
 title: "Custom Pattern Matching in Scala"
 date: 2021-09-21
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "Pattern matching is one of Scala's most powerful features. In this article, we'll how to customize it and create our own patterns."
 ---
@@ -13,7 +13,7 @@ Pattern matching is one of the most powerful features of the Scala language: it'
 
 In this article, we'll learn how to define our own patterns and make our own types compatible with pattern matching. Both Scala 2 and Scala 3 are supported, and you don't need to install any special libraries if you want to follow along.
 
-This article is for Scala developers with _some_ existing experience. The techniques I'm about to show you are not rocket science, but they are nonetheless pretty useful. 
+This article is for Scala developers with _some_ existing experience. The techniques I'm about to show you are not rocket science, but they are nonetheless pretty useful.
 
 ## 1. Pattern Matching on Any Type
 
@@ -79,7 +79,7 @@ Let's make the connections.
 
 In other words, the pattern match tells the compiler to invoke `Person.unapply(daniel)` and if the result is empty, the pattern did not match; if it did, then it will extract the tuple, take its fields and put them through the resulting expression.
 
-This is power already: we've just enabled pattern matching on a custom data type! 
+This is power already: we've just enabled pattern matching on a custom data type!
 
 ## 2. Custom Patterns
 
@@ -92,7 +92,7 @@ In other words, we can create another pattern with a totally different name, ret
 
 ```scala
 object PersonDrinkingStatus {
-  def unapply(age: Int): Option[String] = 
+  def unapply(age: Int): Option[String] =
     if (age < 21) Some("minor")
     else Some("legally allowed to drink")
 }
@@ -153,7 +153,7 @@ val varargCustom = myList match {
 }
 ```
 
-The mechanism behind `unapplySeq` is similar to that of `unapply`. Once you write an `unapplySeq`, you automatically unlock the vararg pattern, which is one of the less-known tricks I show you in [another article](/8-pm-tricks/). 
+The mechanism behind `unapplySeq` is similar to that of `unapply`. Once you write an `unapplySeq`, you automatically unlock the vararg pattern, which is one of the less-known tricks I show you in [another article](/8-pm-tricks/).
 
 ## 4. Explaining the Known & Conclusion
 
@@ -172,4 +172,4 @@ aList match {
 }
 ```
 
-Pattern matching is indeed one of the most powerful features of the Scala language. It took Java more than a decade to replicate a fraction of it; however, having pattern matching so powerful and customizable is something we will not see very soon in other JVM languages. 
+Pattern matching is indeed one of the most powerful features of the Scala language. It took Java more than a decade to replicate a fraction of it; however, having pattern matching so powerful and customizable is something we will not see very soon in other JVM languages.

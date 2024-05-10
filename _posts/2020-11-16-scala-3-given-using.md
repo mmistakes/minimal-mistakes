@@ -2,7 +2,7 @@
 title: "Given and Using Clauses in Scala 3"
 date: 2020-11-16
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
 excerpt: The given/using clauses are some of the most important features of Scala 3. Read on for the essential concepts and how to use them."
 ---
@@ -27,10 +27,10 @@ It would make sense for instances of Person to be ordered in various data struct
 
 ```scala3
 val personOrdering: Ordering[Person] = new Ordering[Person] {
-  override def compare(x: Person, y: Person): Int = 
+  override def compare(x: Person, y: Person): Int =
     x.surname.compareTo(y.surname)
 }
-``` 
+```
 (you can use your favorite comparison class instead of `Ordering` if you like)
 
 In other words, we need a single standard `Ordering[Person]` that we need to use everywhere. At the same time, making that instance available and using it explicitly would make the code cumbersome, because such a standard ordering is _assumed_, and (as a developer) we want to focus on the logic rather than pass the same standard value everywhere:
@@ -56,7 +56,7 @@ First, our standard ordering will be considered a "given", that is, an automatic
 
 ```scala3
 given personOrdering: Ordering[Person] with {
-  override def compare(x: Person, y: Person): Int = 
+  override def compare(x: Person, y: Person): Int =
     x.surname.compareTo(y.surname)
 }
 ```
@@ -123,7 +123,7 @@ given optionOrdering[T](using normalOrdering: Ordering[T]): Ordering[Option[T]] 
     case (None, None) => 0
     case (None, _) => -1
     case (_, None) => 1
-    case (Some(a), Some(b)) => normalOrdering.compare(a, b) 
+    case (Some(a), Some(b)) => normalOrdering.compare(a, b)
   }
 }
 ```
@@ -135,10 +135,10 @@ def sortThings[T](things: List[T])(using ordering: Ordering[T]) = ...
 
 // elsewhere in our code
 val maybePersons: List[Option[Person]] = ...
-sortThings(maybePersons) 
+sortThings(maybePersons)
 ```
 
-the compiler will automatically create an `Ordering[Option[Person]]` based on the existing `Ordering[Person]`, so the call will look like 
+the compiler will automatically create an `Ordering[Option[Person]]` based on the existing `Ordering[Person]`, so the call will look like
 
 ```scala3
 sortThings(maybePersons)(optionOrdering(personOrdering))
@@ -170,7 +170,7 @@ Notice that in the previous example with the person ordering, once we used the g
 
 ```scala3
 given Ordering[Person] {
-  override def compare(x: Person, y: Person): Int = 
+  override def compare(x: Person, y: Person): Int =
     x.surname.compareTo(y.surname)
 }
 ```

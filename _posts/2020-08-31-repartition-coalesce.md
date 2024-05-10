@@ -2,7 +2,7 @@
 title: "Repartition vs Coalesce in Apache Spark"
 date: 2020-08-31
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [spark]
 excerpt: "Drawing the line between two fundamental repartitioning operations in Apache Spark."
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Unleashing the Power of HTTP Apis: The Http4s Library"
-date: 2021-06-07 
+date: 2021-06-07
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [cats, cats effect, http4s]
 excerpt: "Once we learned the basics of functional programming, it's time to understand how to use them to expose APIs over an HTTP channel. If we know the Cats ecosystem, it's straightforward to choose the http4s library to implement HTTP endpoints."
 ---
@@ -60,7 +60,7 @@ libraryDependencies ++= Seq(
 
 As version 3 of the Cats Effect library was just released, we use version `1.0.0-M21` of http4s library that integrates with it. Even though it's not a release version, the API should be stable enough to build something. Moreover, **this version of http4s uses Scala 2.13** as the target language.
 
-Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps: 
+Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps:
 
  1. We will focus on route definitions and match HTTP methods, headers, path, and query parameters.
  2. We will learn how to read a request body into an object and translate an object into a response body.
@@ -270,7 +270,7 @@ So, the `http4s-dsl` module provides us some shortcuts to create responses assoc
 ```scala
 val directors: mutable.Map[Actor, Director] =
   mutable.Map("Zack Snyder" -> Director("Zack", "Snyder"))
-  
+
 def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
@@ -290,7 +290,7 @@ We will look at the meaning of the `asJson` method in the next section. However,
 ```
 F(
   Response(
-    status=200, 
+    status=200,
     headers=Headers(Content-Type: application/json, Content-Length: 40)
   )
 )
@@ -494,7 +494,7 @@ def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
 
 The above code uses the _for-comprehension_ syntax making it more readable. However, it is possible only because we initially import the Cats extension methods of `cats.syntax.flatMap._` and `cats.syntax.functor._`. Remember that an implicit type class `Monad[F]` must be defined for' F'.
 
-Last but not least, we changed the context-bound of the effect `F`. In fact, the `jsonOf` method requires at least an instance of `Concurrent` to execute. So, the `Monad` type class is not sufficient if we need to decode a JSON request into a `case class`. 
+Last but not least, we changed the context-bound of the effect `F`. In fact, the `jsonOf` method requires at least an instance of `Concurrent` to execute. So, the `Monad` type class is not sufficient if we need to decode a JSON request into a `case class`.
 
 ### 6.3. Encoding the Response Body Using Circe
 
@@ -539,7 +539,7 @@ package object syntax {
 
 As we can see, the above method comes into the scope importing the `io.circe.syntax._` package. As we previously said for decoders, the module `http4s-circe` provides the type `EntityEncoder[Json]`, with the import `org.http4s.circe._`.
 
-Now, we can complete our API definition, responding with the needed information. 
+Now, we can complete our API definition, responding with the needed information.
 
 ```scala
 val snjl: Movie = Movie(
@@ -639,7 +639,7 @@ object Http4sTutorial extends IOApp {
       "/api" -> Http4sTutorial.movieRoutes[IO],
       "/api/private" -> Http4sTutorial.directorRoutes[IO]
     ).orNotFound
-    
+
     BlazeServerBuilder[IO](runtime.compute)
       .bindHttp(8080, "localhost")
       .withHttpApp(apis)

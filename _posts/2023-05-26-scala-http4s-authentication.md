@@ -2,7 +2,7 @@
 title: "HTTP Authentication with Scala and Http4s"
 date: 2023-06-06
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how you can implement HTTP authentication with Scala and http4s, with 4 different methods: basic, digest, session and JWT tokens."
 toc: true
@@ -84,7 +84,7 @@ object SimpleRoutes extends IOApp {
         .withHttpApp(routes.orNotFound)
         .build
 
-    override def run(args: List[String]): IO[ExitCode] = 
+    override def run(args: List[String]): IO[ExitCode] =
        server.use(_ => IO.never).as(ExitCode.Success)
 }
 ```
@@ -322,7 +322,7 @@ object BasicExample extends IOApp {
     .withHttpApp(serviceKleisli.orNotFound)
     .build
 
-  override def run(args: List[String]): IO[ExitCode] = 
+  override def run(args: List[String]): IO[ExitCode] =
      server.use(_ => IO.never).as(ExitCode.Success)
 }
 ```
@@ -375,7 +375,7 @@ For this example, we decided to use a hashed password. The Http4s digest middlew
 import org.http4s.server.*
 import org.http4s.server.middleware.authentication.DigestAuth
 
-   val middleware: IO[AuthMiddleware[IO, User]] = 
+   val middleware: IO[AuthMiddleware[IO, User]] =
       DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 ```
 
@@ -497,8 +497,8 @@ object DigestExample extends IOApp {
           case "username" => ha1.flatMap(hash => IO(Some(User(1, "username"), hash)))
           case _ => IO(None)
         }
-              
-    val middleware: IO[AuthMiddleware[IO, User]] = 
+
+    val middleware: IO[AuthMiddleware[IO, User]] =
        DigestAuth.applyF[IO,User]("http://localhost:8080/welcome", Md5HashedAuthStore(funcPass))
 
     val authedRoutes: AuthedRoutes[User,IO] =
@@ -520,7 +520,7 @@ object DigestExample extends IOApp {
                 .build
         }
 
-    override def run(args: List[String]): IO[ExitCode] = 
+    override def run(args: List[String]): IO[ExitCode] =
        server(digestService).flatMap(s => s.use(_ => IO.never)).as(ExitCode.Success)
 }
 ```
@@ -546,11 +546,11 @@ import java.util.Base64
 import java.nio.charset.StandardCharsets
 
 val today: String = LocalDateTime.now().toString()
-def setToken(user: String, date: String):String = 
+def setToken(user: String, date: String):String =
    Base64.getEncoder.encodeToString(s"${user}:{$today}".getBytes(StandardCharsets.UTF_8))
 ```
 
-> NOTE: do not use this exact encoding in production! 
+> NOTE: do not use this exact encoding in production!
 > This example is for illustration to ease understanding. Base64 is easily deciphered, and an attacker can easily impersonate someone by knowing their username and a rough time when the server was started.
 > For true security, such tokens should be signed by a private key. Look [here](https://http4s.org/v1/docs/auth.html#cookies) for more info.
 
@@ -810,7 +810,7 @@ object SessionAuth extends IOApp {
        .withHttpApp(serviceRouter.orNotFound)
        .build
 
-    override def run(args: List[String]): IO[ExitCode] = 
+    override def run(args: List[String]): IO[ExitCode] =
        server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
@@ -827,7 +827,7 @@ First, let's create our token that we will send to the client once he/she logs i
 import pdi.jwt.*
 import java.time.Instant
 
-val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""", expiration = 
+val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""", expiration =
    Some(Instant.now.plusSeconds(157784760).getEpochSecond), issuedAt = Some(Instant.now.getEpochSecond))
 
 val key = "secretKey"
@@ -940,7 +940,7 @@ val server = EmberServerBuilder
    .withHttpApp(service.orNotFound)
    .build
 
-override def run(args: List[String]): IO[ExitCode] = 
+override def run(args: List[String]): IO[ExitCode] =
    server.use(_ => IO.never).as(ExitCode.Success)
 ```
 
@@ -1025,7 +1025,7 @@ object TokenAuth extends IOApp {
         }
     }
 
-    val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""",expiration = 
+    val claim = JwtClaim(content = """{"user":"John", "level":"basic"}""",expiration =
        Some(Instant.now.plusSeconds(157784760).getEpochSecond), issuedAt = Some(Instant.now.getEpochSecond))
 
     val key = "secretKey"
@@ -1037,7 +1037,7 @@ object TokenAuth extends IOApp {
     val database = Map("John" -> AuthUser(123,"JohnDoe"))
 
     val authenticate: JwtToken => JwtClaim => IO[Option[AuthUser]] =
-        (token: JwtToken) => (claim: JwtClaim) => 
+        (token: JwtToken) => (claim: JwtClaim) =>
            decode[TokenPayLoad](claim.content) match {
               case Right(payload) => IO(database.get(payload.user))
               case Left(_) => IO(None)
@@ -1069,7 +1069,7 @@ object TokenAuth extends IOApp {
        .withHttpApp(service.orNotFound)
        .build
 
-    override def run(args: List[String]): IO[ExitCode] = 
+    override def run(args: List[String]): IO[ExitCode] =
        server.use(_ => IO.never).as(ExitCode.Success)
 }
 ```

@@ -2,7 +2,7 @@
 title: "Semigroups and Monoids in Scala"
 date: 2021-03-19
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, cats]
 excerpt: "This article is about Monoids and Semigroups as a gentle introduction to functional abstractions and to how the Cats library works."
 ---
@@ -48,7 +48,7 @@ To make these semigroups &mdash; which are essentially 2-arg combination funcito
 object SemigroupInstances {
   given intSemigroup: Semigroup[Int] with
     override def combine(a: Int, b: Int) = a + b
-  
+
   given stringSemigroup: Semigroup[String] with
     override def combine(a: String, b: String) = a + b
 }
@@ -72,7 +72,7 @@ val naturalIntSemigroup = Semigroup[Int]
 val naturalStringSemigroup = Semigroup[String]
 
 val meaningOfLife = naturalIntSemigroup.combine(2, 40)
-val language = naturalStringSemigroup.combine("Sca", "la")  
+val language = naturalStringSemigroup.combine("Sca", "la")
 ```
 
 But why do we need this fancy structure, when we already have the `+` operator for both ints and strings?
@@ -173,7 +173,7 @@ object MonoidInstances {
     def combine(a: Int, b: Int): Int = a + b
     def empty: Int = 0
   }
-  
+
   given stringMonoid: Monoid[String] with {
     def combine(a: String, b: String): Int = a + b
     def empty: String = ""
@@ -225,19 +225,3 @@ We dicsuss a lot of other aspects related to Semigroups (and much more) in the [
 In this article, we discussed two common type classes used in Cats and other FP libraries, and we showed what kind of practical problems they solve &mdash; besides the mathematical abstractions.
 
 Hopefully after reading this article, you'll find that such type classes are not really rocket science, and you'll start to use them more in your Scala code once you understand their utility.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

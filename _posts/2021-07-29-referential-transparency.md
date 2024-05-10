@@ -2,7 +2,7 @@
 title: "Why Should You Care About Referential Transparency?"
 date: 2021-07-29
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [fp]
 excerpt: "Referential transparency is your best tool for productivity as a functional programmer in Scala. In this article, we'll talk about what it is and why it's important."
 ---
@@ -33,7 +33,7 @@ We can safely replace `five` with `add(2,3)`, with `2 + 3` or with `5` anywhere 
 val ten = five + five
 val ten_v2 = add(2,3) + add(2,3)
 val ten_v3 = 5 + add(2,3)
-val ten_v4 = 10 
+val ten_v4 = 10
 ```
 
 An expression is referentially transparent if we can do this back-and-forth replacement anytime anywhere, without changing the meaning and output of our program. Mega powerful, as we'll see later.
@@ -106,7 +106,7 @@ def aBigComputation() = {
   val comp1 = anRTFunction(2, 3)
   val comp2 = anRTFunction(2, 3)
   val comp3 = anRTFunction(2, 3)
-  
+
   comp1 + comp2 + comp3
 }
 ```
@@ -120,7 +120,7 @@ def aBigComputation_v2() = {
 }
 ```
 
-Another refactoring tool is extracting variables. If we have many referentially transparent expressions 
+Another refactoring tool is extracting variables. If we have many referentially transparent expressions
 
 ```scala
 // implementations not important
@@ -150,7 +150,7 @@ def bigProgram_v2() = {
 }
 ```
 
-Referential transparency is basically a fancy term for "replaceable code". Refactoring capabilities come for free in RT code. 
+Referential transparency is basically a fancy term for "replaceable code". Refactoring capabilities come for free in RT code.
 
 ## 4. Referential Transparency Benefit #2: Mental Space
 
@@ -165,10 +165,10 @@ def sumN(n: Int): Int =
 Looking at the code, we quickly understand that this function is referentially transparent: it does nothing else but compute values. No interaction with the world of any kind. If our function is RT, then we can quickly trace its execution:
 
 ```
-sumN(10) = 
+sumN(10) =
 10 + sumN(9) =
 10 + 9 + sumN(8) =
-10 + 9 + 8 + sumN(7) = 
+10 + 9 + 8 + sumN(7) =
 ...
 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0 =
 55

@@ -2,7 +2,7 @@
 title: "Immutable Doubly Linked Lists in Scala with Call-By-Name and Lazy Values"
 date: 2020-12-04
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, data structures]
 excerpt: "I'll show you a technique to use lazy values and call-by-name for recursive value definitions and implement a fully immutable doubly-linked list in Scala."
 ---
@@ -11,7 +11,7 @@ This article is for the Scala programmers who want to brush up on their data str
 
 > How would you write a simple, fully immutable, doubly-linked list in Scala?
 
-If you're up for a challenge, try your hand at this problem before reading the rest of the article. You might find it's not quite what you'd expect. 
+If you're up for a challenge, try your hand at this problem before reading the rest of the article. You might find it's not quite what you'd expect.
 
 This article was inspired by a question from one of my students who got the point of my initial singly linked list implementation and wanted to move one level up. However simple a doubly-linked-list might be conceptually, this student picked quite a difficult data structure for practice.
 
@@ -84,24 +84,24 @@ Now the Cons thing (which I've named DLCons) is not straightforward. Let's say w
 Not so fast.
 
   - Because this is a doubly-linked list, the existing "left-end" of the list would have to point to the new node as well.
-  - Which means we'd have to replace it with a new node. 
+  - Which means we'd have to replace it with a new node.
   - However, this new node's `next` reference would have to point to the remainder of the list.
   - Which means that we'd have to replace this existing node in the list with a new node as well.
   - And so on, for the entire list...
-  - ...without any mutable variables. 
-  
-Turns out that's hard to do in a single operation. We can't have two declared nodes reference each other, because at least one would have to be a forward declaration. Demo with a circular singly linked list (which doesn't work): 
+  - ...without any mutable variables.
+
+Turns out that's hard to do in a single operation. We can't have two declared nodes reference each other, because at least one would have to be a forward declaration. Demo with a circular singly linked list (which doesn't work):
 
 ```scala
 val a = Cons(3, b) // who's b? I can't create a
 val b = Cons(4, a) // who's a?
 ```
 
-An imperative approach would quickly solve this problem because we're allowed to mutate references: for example we could start with nodes pointing at `null`, then change the references to point to the right nodes. But we're not allowed mutation, so we have our hands tied. 
+An imperative approach would quickly solve this problem because we're allowed to mutate references: for example we could start with nodes pointing at `null`, then change the references to point to the right nodes. But we're not allowed mutation, so we have our hands tied.
 
 ## 3. Enter Call-By-Name and Lazy Vals
 
-This section assumes you know call-by-name and lazy values. A quick recap: 
+This section assumes you know call-by-name and lazy values. A quick recap:
 
   - The marker `=>` attached to a method argument means that this argument will _not_ be evaluated until needed, and it will be evaluated as many times as it's used in the method body. This is a "call-by-name", or simply by-name, argument.
   - A `lazy` variable (either `val` or `var`) means that the variable will only be evaluated when used _for the first time_. After the first use, the value will be already set and won't need recomputing.
@@ -125,7 +125,7 @@ As we mentioned earlier, prepending means:
   - adding a new node
   - pointing that node's `next` reference to the rest of the list...
   - ...which also needs to update its `prev` and `next` reference throughout the list
-  
+
 ## 4. Forward References and Lazy Vals
 
 Let's take the smaller problem of updating a node's `prev` reference. Let's say we have the list `[1,2,3,4]`, pointing at 1. We want to change this node's `left` reference to another value, say 5, so we'll end up with `[5,1,2,3,4]`.
@@ -181,7 +181,7 @@ class DLCons[+T](override val value: T, p: => DLList[T], n: => DLList[T]) extend
     lazy val result: DLCons[S] = new DLCons(value, newPrev, n.updatePrev(result))
     result
   }
-  
+
   override def updateNext[S >: T](newTail: => DLList[S]) = {
     lazy val result: DLCons[S] = new DLCons(value, p.updateNext(result), newTail)
     result
@@ -221,7 +221,7 @@ trait DLList[+T] {
   def next: DLList[T]
   def prepend[S >: T](element: S): DLList[S]
   def append[S >: T](element: S): DLList[S]
-  
+
   def updatePrev[S >: T](newPrev: => DLList[S]): DLList[S]
   def updateNext[S >: T](newNext: => DLList[S]): DLList[S]
 }
@@ -246,7 +246,7 @@ class DLCons[+T](override val value: T, p: => DLList[T], n: => DLList[T]) extend
     lazy val result: DLCons[S] = new DLCons(value, newPrev, n.updatePrev(result))
     result
   }
-  
+
   override def updateNext[S >: T](newTail: => DLList[S]) = {
     lazy val result: DLCons[S] = new DLCons(value, p.updateNext(result), newTail)
     result
@@ -280,5 +280,4 @@ object DLListPlayground {
 
 ## 7. Conclusion
 
-We learned how to use _forward references_ based on call-by-name and lazy values to implement a (pretty primitive) fully immutable doubly-linked list with proper appending and prepending. This data structure will likely not become part of the standard library too soon &mdash; we'd have to replace the whole list on every new addition &mdash; this is an excellent small exercise for the technique, that you might apply elsewhere in your libraries or custom data structures. 
-
+We learned how to use _forward references_ based on call-by-name and lazy values to implement a (pretty primitive) fully immutable doubly-linked list with proper appending and prepending. This data structure will likely not become part of the standard library too soon &mdash; we'd have to replace the whole list on every new addition &mdash; this is an excellent small exercise for the technique, that you might apply elsewhere in your libraries or custom data structures.

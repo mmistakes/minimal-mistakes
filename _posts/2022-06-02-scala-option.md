@@ -2,7 +2,7 @@
 title: "Scala Option: A Gentle Introduction"
 date: 2022-06-02
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, beginners]
 excerpt: "Scala Options are some of the first things we learn - but why? What do they do, and why are they useful?"
 ---
@@ -119,7 +119,7 @@ val innerValue: Int = anOption.getOrElse(99)
 val aChainedOption: Option[Int] = anEmptyOption.orElse(anOption)
 ```
 
-The `isEmpty` method checks whether an Option contains nothing. The `getOrElse` method returns either the value inside the option, or the default value which we pass as argument. Finally, the `orElse` method returns the original Option if non-empty, or the other option otherwise. There's also a `get` method on Option, which returns the value inside, but beware: if the Option is empty, the method will crash! 
+The `isEmpty` method checks whether an Option contains nothing. The `getOrElse` method returns either the value inside the option, or the default value which we pass as argument. Finally, the `orElse` method returns the original Option if non-empty, or the other option otherwise. There's also a `get` method on Option, which returns the value inside, but beware: if the Option is empty, the method will crash!
 
 There are more methods in the Option data type, but these are the most frequently used.
 
@@ -188,7 +188,7 @@ With this in mind, we'll write a first piece of good practice:
 
 Beginning Scala programmers, upon learning about Options, can successfully navigate Option transformations in other people's code. However, when some external code hands them an Option, the immediate itch is to try to "get" the value inside the Option, so that you can do something meaningful to it.
 
-That's a mistake. 
+That's a mistake.
 
 Because you don't know whether an Option is empty or not, if we ever want to "get" a value safely we need to test whether the Option is empty or not. Considering the same example with calling the `unsafeMethod` multiple times (this time wrapped inside Options), scratching the itch to "get" the values inside will lead us to code that looks like this:
 
@@ -233,4 +233,3 @@ So here's the final bit of best practice:
 ## 6. Conclusion
 
 In this article, we introduced Scala Options: how you can start thinking about them, the main API, how to transform Options, _why_ they are useful, and we also shared some bits of best practice when dealing with them.
-

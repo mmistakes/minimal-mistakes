@@ -2,7 +2,7 @@
 title: "Streaming SQL with Apache Flink: A Gentle Introduction"
 date: 2023-02-06
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [flink, kafka, streaming]
 excerpt: "A hands-on guide to Flink SQL for data streaming with familiar tools."
 ---
@@ -211,13 +211,13 @@ docker exec -it depths-of-flink-kafka-1 kafka-topics.sh --create \
   --topic sensor.readings \
   --partitions 3 \
   --bootstrap-server localhost:9092
-  
+
 docker exec -it depths-of-flink-kafka-1 kafka-topics.sh --bootstrap-server localhost:9092 --describe
 
 ------- Output -------
 Topic: sensor.info	TopicId: zFY47WiRS721XIUik2nRBg	PartitionCount: 1	ReplicationFactor: 1	Configs: cleanup.policy=compact
 	Topic: sensor.info	Partition: 0	Leader: 1001	Replicas: 1001	Isr: 1001
-	
+
 Topic: sensor.readings	TopicId: HGvGHOeKQQCxG3cly2R7Lw	PartitionCount: 3	ReplicationFactor: 1	Configs:
 	Topic: sensor.readings	Partition: 0	Leader: 1001	Replicas: 1001	Isr: 1001
 	Topic: sensor.readings	Partition: 1	Leader: 1001	Replicas: 1001	Isr: 1001
@@ -252,8 +252,8 @@ CREATE TABLE readings (
   'json.fail-on-missing-field' = 'false',
   'json.ignore-parse-errors' = 'true'
 );
-  
-  
+
+
   Flink SQL> DESCRIBE readings;
 +---------------+----------------------------+------+-----+-------------------------------------+----------------------------------------+
 |          name |                       type | null | key |                              extras |                              watermark |
@@ -296,7 +296,7 @@ CREATE TABLE sensors (
   'json.fail-on-missing-field' = 'false',
   'json.ignore-parse-errors' = 'true'
 );
-  
+
 Flink SQL> DESCRIBE sensors;
 +------------+--------+------+-----+--------+-----------+
 |       name |   type | null | key | extras | watermark |
@@ -435,16 +435,16 @@ Now consider a query that joins the *sensor information* and *sensor readings* t
 
 *Query:* Enrich Sensor readings with Sensor Information (Regular Join)
 ```shell
-SELECT 
-  sensors.sensorId, 
-  reading, 
+SELECT
+  sensors.sensorId,
+  reading,
   eventTime_ltz,
   latitude,
   longitude,
   sensorType
 FROM readings
   JOIN sensors ON readings.sensorId = sensors.sensorId
-  
+
 ------- Sample Output -------
 
 +----+--------------------------------+--------------------------------+-------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -513,19 +513,19 @@ GROUP BY sensorId, window_start, window_end
 
 *Query:* Find reading statistics (max, min, average and stddev) for all readings per sensorId over the previous minute.
 ```shell
-SELECT 
+SELECT
   eventTime_ltz,
-  sensorId, 
+  sensorId,
   reading,
   ROUND(AVG(reading) OVER minuteInterval, 1) AS minuteAvgTemp,
   MAX(reading) OVER minuteInterval AS minuteMinTemp,
   MIN(reading) OVER minuteInterval AS minuteMaxTemp,
   ROUND(STDDEV(reading) OVER minuteInterval, 5) AS minuteStdevTemp
-FROM readings 
+FROM readings
 WINDOW minuteInterval AS (
   PARTITION BY sensorId
   ORDER BY eventTime_ltz
-  RANGE BETWEEN INTERVAL '1' MINUTE PRECEDING AND CURRENT ROW 
+  RANGE BETWEEN INTERVAL '1' MINUTE PRECEDING AND CURRENT ROW
 );
 ```
 
@@ -545,28 +545,28 @@ of the query and reuse it the calculated statistics to filter readings; for exam
 That's a simple example that can be used to build more sophisticated outlier detection logic.
 
 ```shell
---- Create a Temporary View -- CREATE [TEMPORARY] VIEW 
-CREATE VIEW readings_stats AS 
-SELECT 
+--- Create a Temporary View -- CREATE [TEMPORARY] VIEW
+CREATE VIEW readings_stats AS
+SELECT
   eventTime_ltz,
-  sensorId, 
+  sensorId,
   reading,
   ROUND(AVG(reading) OVER minuteInterval, 1) AS minuteAvgTemp,
   MAX(reading) OVER minuteInterval AS minuteMinTemp,
   MIN(reading) OVER minuteInterval AS minuteMaxTemp,
   ROUND(STDDEV(reading) OVER minuteInterval, 5) AS minuteStdevTemp
-FROM readings 
+FROM readings
 WINDOW minuteInterval AS (
   PARTITION BY sensorId
   ORDER BY eventTime_ltz
-  RANGE BETWEEN INTERVAL '1' MINUTE PRECEDING AND CURRENT ROW 
+  RANGE BETWEEN INTERVAL '1' MINUTE PRECEDING AND CURRENT ROW
 );
 
 --- Run a filter query on the results to get the readings we want
-SELECT 
+SELECT
   sensorId,
   reading,
-  ROUND(minuteAvgTemp + 2 * minuteStdevTemp, 2) as threshold 
+  ROUND(minuteAvgTemp + 2 * minuteStdevTemp, 2) as threshold
 FROM readings_stats
 WHERE reading > minuteAvgTemp + 2 * minuteStdevTemp
 

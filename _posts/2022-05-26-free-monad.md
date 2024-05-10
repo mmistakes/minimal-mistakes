@@ -2,7 +2,7 @@
 title: "Free Monad in Scala"
 date: 2022-05-26
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [abstract]
 excerpt: "A tutorial on the Free monad in Scala, how it works and what it's good for."
 ---
@@ -75,7 +75,7 @@ trait Free[M[_], A] {
 }
 
 object Free {
-  def pure[M[_], A](a: A): Free[M, A] = ??? 
+  def pure[M[_], A](a: A): Free[M, A] = ???
 }
 ```
 
@@ -140,13 +140,13 @@ Because we're using a Free monad, instead of describing combinators of the data 
 ```scala3
 def create[A](key: String, value: A): DBMonad[Unit] =
   Free.liftM[DBOps, Unit](Create(key, value))
-  
+
 def get[A](key: String): DBMonad[A] =
   Free.liftM[DBOps, A](Read[A](key))
-  
+
 def update[A](key: String, value: A): DBMonad[A] =
   Free.liftM[DBOps, A](Update[A](key, value))
-  
+
 def delete(key: String): DBMonad[Unit] =
   Free.liftM(Delete(key))
 ```
@@ -221,7 +221,7 @@ The IO type encapsulates computations that evaluate to `A`, with potential side 
 
 ```scala3
 given ioMonad: Monad[IO] with {
-  override def pure[A](a: A) = 
+  override def pure[A](a: A) =
     IO(() => a)
   override def flatMap[A, B](ma: IO[A])(f: A => IO[B]) =
     IO(() => f(ma.unsafeRun()).unsafeRun())
@@ -249,7 +249,7 @@ The natural transformation from `DBOps` to our IO data type will need to take th
 val dbOps2IO: DBOps ~> IO = new (DBOps ~> IO) {
   override def apply[A](fa: DBOps[A]): IO[A] = fa match {
     case Create(key, value) => IO.create {
-      // database insert query - here, just printing 
+      // database insert query - here, just printing
       println(s"insert into people(id, name) values ($key, $value)")
       myDB += (key -> serialize(value))
       ()
@@ -300,7 +300,7 @@ The Free monad is a pattern which allows us to separate
 - the business logic of our application
 - the evaluation of that business logic
 
-In other words, our abstract program is what matters for our application/business logic. We can keep that fixed, and give it different interpreters depending on how our requirements change &mdash; e.g. perhaps we want the program to be evaluated asynchronously &mdash; or we can do the reverse. This makes it very easy to maintain, because we can work independently on either 
+In other words, our abstract program is what matters for our application/business logic. We can keep that fixed, and give it different interpreters depending on how our requirements change &mdash; e.g. perhaps we want the program to be evaluated asynchronously &mdash; or we can do the reverse. This makes it very easy to maintain, because we can work independently on either
 
 - the business logic, while keeping interpreters fixed
 - the interpreters, while keeping the business logic fixed
@@ -314,7 +314,7 @@ You might have noticed that our current code is incomplete. We took a detour to 
 
 ```scala3
 trait Free[M[_], A] {
-  def flatMap[B](f: A => Free[M, B]): Free[M, B] 
+  def flatMap[B](f: A => Free[M, B]): Free[M, B]
   def map[B](f: A => B): Free[M, B] = flatMap(a => pure(f(a)))
   def foldMap[G[_]: Monad](natTrans: M ~> G): G[A]
 }
@@ -355,7 +355,7 @@ trait Free[M[_], A] {
 object Free {
   def pure[M[_], A](a: A): Free[M, A] = Pure(a) // added now
   def liftM[M[_], A](ma: M[A]): Free[M, A] = Suspend(ma) // added now
-  
+
   // added earlier
   case class Pure[M[_], A](a: A) extends Free[M, A]
   case class FlatMap[M[_],A,B](fa: Free[M, A], f: A => Free[M, B]) extends Free[M, B]
@@ -377,7 +377,7 @@ Notice how the presence of a given/implicit `Monad[G]` in scope is crucial here.
 def foldMap[G[_]](natTrans: M ~> G)(using monadG: Monad[G]): G[A] = this match {
   case Pure(a) => Monad[G].pure(a)
   case Suspend(ma) => natTrans.apply(ma)
-  case FlatMap(fa, f) => 
+  case FlatMap(fa, f) =>
     monadG.flatMap(fa.foldMap(natTrans))(a => f(a).foldMap(natTrans))
 }
 ```
@@ -392,7 +392,7 @@ object Monad {
 
 trait Free[M[_], A] {
   // ... existing code
-  
+
   // added now
   def foldMap[G[_]: Monad](natTrans: M ~> G): G[A] = this match {
      case Pure(a) => Monad[G].pure(a)

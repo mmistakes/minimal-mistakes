@@ -2,7 +2,7 @@
 title: "Cats Effect 3 - Introduction to Fibers"
 date: 2021-04-22
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [cats effect]
 excerpt: "A quick dive into asynchronous computations with fibers in Cats Effect 3, written for Scala 3."
 ---
@@ -46,18 +46,18 @@ IO instances can run synchronously on the main thread, unless specified otherwis
 object AsynchronousIOs extends IOApp {
   val meaningOfLife: IO[Int] = IO(42)
   val favLang: IO[String] = IO("Scala")
-     
+
   extension [A] (io: IO[A])
     def debug: IO[A] = io.map { value =>
       println(s"[${Thread.currentThread().getName}] $value")
       value
     }
-    
+
   def sameThread() = for {
     _ <- meaningOfLife.debug
     _ <- favLang.debug
   } yield ()
-  
+
   def run(args: List[String]): IO[ExitCode] =
     sameThread().as(ExitCode.Success)
 }
@@ -165,7 +165,7 @@ In any event, let me give an example of a cancelled fiber. Let's say we run an I
 ```scala3
   def testCancel() = {
     val task = IO("starting").debug *> IO.sleep(1.second) *> IO("done").debug
-    
+
     for {
       fib <- task.start
       _ <- IO.sleep(500.millis) *> IO("cancelling").debug

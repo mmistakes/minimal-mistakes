@@ -2,7 +2,7 @@
 title: "Type-Level Programming in Scala, Part 1"
 date: 2020-08-10
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "This one is hardcode. We make the Scala compiler infer type relationships for us at compile time. Pure power."
 ---

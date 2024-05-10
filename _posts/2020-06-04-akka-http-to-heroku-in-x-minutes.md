@@ -2,7 +2,7 @@
 title: "Akka HTTP to Heroku in 10 Minutes"
 date: 2020-06-04
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka http, heroku, how to]
 excerpt: "Akka HTTP is super easy to deploy to a web server. Learn how to use Heroku and deploy your first Akka HTTP service in minutes."
 ---

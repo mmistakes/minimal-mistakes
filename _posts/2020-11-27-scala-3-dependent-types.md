@@ -2,7 +2,7 @@
 title: "Scala 3: Path-Dependent Types, Type Projections, Dependent Methods and Functions"
 date: 2020-11-27
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3, type system]
 excerpt: "This quick tutorial will show you what dependent types are and how they work in Scala 3, along with dependent methods and functions."
 ---
@@ -88,7 +88,7 @@ outerA.processGeneral(innerB) // ok
 ```
 
 The types of the style `instance.MyType` and `Outer#Inner` are called _path-dependent types_, because they depend on either an instance or an outer type (a "path"). The term is quite confusing &mdash; as some feedback to this article and the [video](https://www.youtube.com/watch?v=63syJfNoDPI) has pointed out &mdash; and I'll use the term _type projection_ to differentiate the `Outer#Inner` types from the rest.
- 
+
 ## 3. Motivation for Path-Dependent Types and Type Projections
 
 Here are a few examples where path-dependent types type projections are useful.
@@ -145,7 +145,5 @@ Let's recap:
   - we explored type projections, the mother of instance-dependent types (`Outer#Inner`)
   - we went through some examples why path-dependent types and type projections are useful
   - we discussed dependent methods and dependent _functions_, the latter of which is exclusive to Scala 3
-  
-Hope it helps!
 
- 
+Hope it helps!

@@ -2,7 +2,7 @@
 title: "Akka HTTP loves JSON: 3 Libraries You Can Integrate into Akka HTTP"
 date: 2020-09-16
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka http, spray, circe, jackson]
 excerpt: "Akka HTTP needs JSON like humans need water. We show you how to integrate Spray-Json, Circe and Jackson into Akka HTTP."
 ---

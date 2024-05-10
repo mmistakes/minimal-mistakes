@@ -2,7 +2,7 @@
 title: "Higher-Order Functions for OO Programmers"
 date: 2020-04-06
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, functional programming]
 excerpt: "For OO programmers looking to dive into functional programming in Scala: a gentle introduction to functions working with other functions."
 ---

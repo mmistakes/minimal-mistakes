@@ -2,7 +2,7 @@
 title: "4 Nice Ways to Read Files in Scala"
 date: 2020-04-30
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, io]
 excerpt: "Learn to read files in Scala like a boss and compare it to other styles in other languages. We write a simple API which looks almost as easy as Python's read()."
 ---

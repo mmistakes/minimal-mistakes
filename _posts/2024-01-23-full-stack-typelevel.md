@@ -2,7 +2,7 @@
 title: "How to Write a Full-Stack Scala 3 Application with the Typelevel Stack"
 date: 2024-01-23
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how to write a full-stack Scala 3 application with Cats Effect, Doobie, Http4s and Tyrian, from scratch."
 toc: true
@@ -275,7 +275,7 @@ import doobie.util.transactor.Transactor
 class JobsLive[F[_]: Concurrent] private (transactor: Transactor[F]) extends Jobs[F] {
   override def all: F[List[Job]] =
     sql"""
-      SELECT 
+      SELECT
         company,
         title,
         description,
@@ -411,7 +411,7 @@ import org.http4s.dsl.Http4sDsl
 import com.rockthejvm.livedemo.core.*
 
 class JobRoutes[F[_]: Concurrent] private (jobs: Jobs[F]) extends Http4sDsl[F] {
-  
+
 }
 
 object JobRoutes {
@@ -507,8 +507,8 @@ object Application extends IOApp.Simple {
     )
   } yield transactor
 
-  
-  
+
+
   override def run: IO[Unit] = ??? // for now
 }
 ```
@@ -544,7 +544,7 @@ Congratulations, we now have the server ready!
 
 ## 6. Frontend
 
-Before we get started on the frontend, we need to be able to share the domain model between multiple compilation modules in our project. For this, we will need to 
+Before we get started on the frontend, we need to be able to share the domain model between multiple compilation modules in our project. For this, we will need to
 - create a `src/main/scala` directory inside the `shared` directory of the `common` module
 - move the `com/rockthejvm/livedemo/domain` folder to the newly created directory
 
@@ -624,7 +624,7 @@ import io.circe.parser.*
 import io.circe.generic.auto.*
 
 object App {
-  
+
 }
 ```
 
@@ -655,7 +655,7 @@ object App extends TyrianApp[Msg, Model] {
   override def init(flags: Map[String, String]): (Model, Cmd[IO, Msg]) = ???
 
   override def view(model: Model): Html[Msg] = ???
-  
+
   override def update(model: Model): Msg => (Model, Cmd[IO, Msg]) = ???
 
   override def subscriptions(model: Model): Sub[IO, Msg] = ???
@@ -669,9 +669,9 @@ To recap:
 - we have an `init` function that returns the initial model with an initial command that might, for example, fetch the first blob of data from the backend
 - we have a `subscriptions` function that allows us to send messages based on various streams of events, e.g. timed events or browser navigation events
 
-All of this is still quite abstract, so let's make it concrete. In this (very simple) frontend, let's imagine that upon loading the application, we need to send the first backend call and return the first list of Jobs from the backend, so that we can display that list in the frontend. 
+All of this is still quite abstract, so let's make it concrete. In this (very simple) frontend, let's imagine that upon loading the application, we need to send the first backend call and return the first list of Jobs from the backend, so that we can display that list in the frontend.
 
-In this case, the Model is a case class containing the `List[Job]` that we might want to render on screen (as nice HTML). In terms of update: we can decide to change the model by either 
+In this case, the Model is a case class containing the `List[Job]` that we might want to render on screen (as nice HTML). In terms of update: we can decide to change the model by either
 - doing nothing, e.g. a no-op
 - adding new jobs to the model
 - showing an error
@@ -753,7 +753,7 @@ So we have all the functions implemented, except the backend call. Tyrian offers
 ```
 
 The relevant pieces are:
-- `Http.send`, which takes an HTTP request and a decoder 
+- `Http.send`, which takes an HTTP request and a decoder
 - the Decoder, which contains two functions: how to parse an HTTP response, and how to parse an HTTP error
 - the HTTP response parser uses Circe (manually) to `parse(resp.body)` and then pattern match on the result to build a `Msg` instance
 

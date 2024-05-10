@@ -2,7 +2,7 @@
 title: "The Practical Difference Between Abstract Classes and Traits in Scala"
 date: 2020-08-07
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "Abstract classes and traits share a lot of overlap in Scala. How are they actually different?"
 ---

@@ -2,12 +2,12 @@
 title: "Cats: Essential Type Class Hierarchy, Explained"
 date: 2021-06-03
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, cats]
 excerpt: "Cats is a complex library for Scala. In this article, we'll deconstruct the major type classes of Cats and explain how they're connected."
 ---
 
-_This article is about the Cats Scala library. For lots of in-depth explanations, examples, exercises and a hands-on experience with Cats, check out the Rock the JVM [Cats course](https://rockthejvm.com/p/cats). It's going to make you a productive developer with Scala and Cats and a better engineer and thinker overall._ 
+_This article is about the Cats Scala library. For lots of in-depth explanations, examples, exercises and a hands-on experience with Cats, check out the Rock the JVM [Cats course](https://rockthejvm.com/p/cats). It's going to make you a productive developer with Scala and Cats and a better engineer and thinker overall._
 
 This article is for the comfortable Scala programmer. We'll discuss the essential type classes in the Cats library, why we need them, how they're related and how you should think about them so that you're not tangled in all the abstractions.
 

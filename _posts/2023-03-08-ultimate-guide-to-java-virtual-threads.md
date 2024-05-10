@@ -2,7 +2,7 @@
 title: "The Ultimate Guide to Java Virtual Threads"
 date: 2023-02-23
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Project Loom and virtual threads promise to bring modern concurrency paradigms that we already found in Kotlin (coroutines) and Scala (Cats Effect and ZIO fibers) in Java. They are still in preview, but we can already enjoy them."
 toc: true
@@ -106,8 +106,8 @@ As we said in the article concerning Kotlin Coroutines, many approaches have ris
 
 ```java
 static void callbackHell() {
-  a(aInput, resultFromA -> 
-    b(resultFromA, resultFromB -> 
+  a(aInput, resultFromA ->
+    b(resultFromA, resultFromB ->
       c(resultFromB, resultFromC ->
         d(resultFromC, resultFromD ->
           System.out.printf("A, B, C, D: $resultFromA, $resultFromB, $resultFromC, $resultFromD")))));
@@ -337,9 +337,9 @@ Virtual threads are scheduled using a FIFO queue consumed by a dedicated `ForkJo
 // SDK code
 final class VirtualThread extends BaseVirtualThread {
   private static final ForkJoinPool DEFAULT_SCHEDULER = createDefaultScheduler();
-  
+
   // Omissis
-  
+
   private static ForkJoinPool createDefaultScheduler() {
     // Omissis
     int parallelism, maxPoolSize, minRunnable;
@@ -580,7 +580,7 @@ Let's create a version of our `Bathroom` class using the `Lock` API:
 ```java
 static class Bathroom {
   private final Lock lock = new ReentrantLock();
-  
+
   @SneakyThrows
   void useTheToiletWithLock() {
     if (lock.tryLock(10, TimeUnit.SECONDS)) {
@@ -817,7 +817,7 @@ private void runContinuation() {
     } finally {
         // Omissis
     }
-}   
+}
 ```
 
 From this point on, the state of the virtual threads depends on the execution of the continuation, made through the method `Continuation.run()`. The method performs a lot of native calls, and it's not easy to follow the execution flow. However, the first thing it makes is to set as mounted the associated virtual thread:

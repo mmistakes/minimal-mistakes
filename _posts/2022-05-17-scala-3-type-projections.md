@@ -2,7 +2,7 @@
 title: "Scala 3 and General Type Projections"
 date: 2022-05-17
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3]
 excerpt: "Scala general type projections are unsound and were removed in Scala 3 - what do you mean?"
 ---
@@ -95,7 +95,7 @@ trait ItemNothing extends ItemLike {
 }
 ```
 
-These type bounds don't really make sense, because 
+These type bounds don't really make sense, because
 - there's no supertype of `Any`
 - there's no subtype of `Nothing`
 
@@ -130,8 +130,8 @@ def funcWeird[I <: ItemAll with ItemNothing]: Any => Nothing =
   funcAll[I].andThen(funcNothing[I])
 ```
 
-This function is also legal. There's nobody preventing us from "using" the type `ItemAll with ItemNothing` even though there's no possible concrete type that conforms to it. 
-1. Because `I <: ItemAll`, we can call `funcAll[I]`, which is an identity function of type `Any => I#Key`. 
+This function is also legal. There's nobody preventing us from "using" the type `ItemAll with ItemNothing` even though there's no possible concrete type that conforms to it.
+1. Because `I <: ItemAll`, we can call `funcAll[I]`, which is an identity function of type `Any => I#Key`.
 2. Because `I <: ItemNothing`, we can call `funcNothing[I]`, which is an identity function of type `I#Key => Nothing`.
 3. Because the return type of `funcAll[I]` is the same as the argument type of `funcNothing[I]`, we can chain these two.
 
@@ -162,4 +162,3 @@ The reason is the general type projection `I#Key`. Because the compiler allows u
 The phrase "general type projection is unsound" means that allowing this feature would lead to corner cases where the code should not compile, but it does, and leads to the kind of nonsense that we demonstrated earlier.
 
 This article wanted to show you how, and why, the feature of general type projections were removed in Scala 3, with and example and a piece of uncompilable code which does compile and runs into trouble.
-

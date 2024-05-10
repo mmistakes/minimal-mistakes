@@ -2,9 +2,9 @@
 title: "Akka Typed: How the Pipe Pattern Prevents Anti-Patterns"
 date: 2020-10-26
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka]
-excerpt: "Akka Typed has not only made fundamental changes in the actor protocol definitions, but made significant improvements in actor mechanics as well." 
+excerpt: "Akka Typed has not only made fundamental changes in the actor protocol definitions, but made significant improvements in actor mechanics as well."
 ---
 
 This article is for people who are getting familiar with Akka Typed actors. You don't have to be an expert &mdash; that would certainly be a plus &mdash; but some familiarity with actor concepts is assumed.
@@ -36,7 +36,7 @@ import java.util.concurrent.Executors
 object Infrastructure {
 
   private implicit val ec: ExecutionContext = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(8))
-  
+
   private val db: Map[String, Int] = Map(
     "Daniel" -> 123,
     "Alice" -> 456,
@@ -58,9 +58,9 @@ import scala.util.{Failure, Success}
 trait PhoneCallProtocol
 case class FindAndCallPhoneNumber(name: String) extends PhoneCallProtocol
 
-val quickPhoneCallInitiator: Behavior[PhoneCallProtocol] = 
+val quickPhoneCallInitiator: Behavior[PhoneCallProtocol] =
   Behaviors.setup { (context, message) =>
-    var nPhoneCalls = 0 
+    var nPhoneCalls = 0
     var nFailures = 0
 
     Behaviors.receiveMessage {
@@ -109,9 +109,9 @@ case class LogPhoneCallFailure(reason: Throwable) extends PhoneCallProtocol
 After which we can make the actor send the future result to itself later, and handle the new messages:
 
 ```scala
-val phoneCallInitiatorV2: Behavior[PhoneCallProtocol] = 
+val phoneCallInitiatorV2: Behavior[PhoneCallProtocol] =
   Behaviors.setup { (context, message) =>
-    var nPhoneCalls = 0 
+    var nPhoneCalls = 0
     var nFailures = 0
 
     Behaviors.receiveMessage {
@@ -123,7 +123,7 @@ val phoneCallInitiatorV2: Behavior[PhoneCallProtocol] =
           case Success(phoneNumber) =>
             // messages that will be sent to myself
             InitiatePhoneCall(phoneNumber)
-          case Failure(ex) => 
+          case Failure(ex) =>
             LogPhoneCallFailure(ex)
         }
         Behaviors.same
@@ -143,9 +143,9 @@ val phoneCallInitiatorV2: Behavior[PhoneCallProtocol] =
 Notice the `pipeToSelf` call. We pass a `Future` and a function which transforms a `Try[Int]` into a message this actor will handle later. In the message handlers, we are then free to change actor state, because handling a message is atomic. We've repaired the actor encapsulation.
 
 This pattern now enables us to make the actor stateless if we wanted, because changing state happens in a message handler. So we can further refactor our actor:
- 
+
 ```scala
-def phoneCallInitiatorV3(nPhoneCalls: Int = 0, nFailures: Int = 0): Behavior[PhoneCallProtocol] = 
+def phoneCallInitiatorV3(nPhoneCalls: Int = 0, nFailures: Int = 0): Behavior[PhoneCallProtocol] =
   Behaviors.receive { (context, message) =>
     message match {
       case FindAndCallPhoneNumber(name) =>
@@ -156,7 +156,7 @@ def phoneCallInitiatorV3(nPhoneCalls: Int = 0, nFailures: Int = 0): Behavior[Pho
           case Success(phoneNumber) =>
             // messages that will be sent to myself
             InitiatePhoneCall(phoneNumber)
-          case Failure(ex) => 
+          case Failure(ex) =>
             LogPhoneCallFailure(ex)
         }
         Behaviors.same

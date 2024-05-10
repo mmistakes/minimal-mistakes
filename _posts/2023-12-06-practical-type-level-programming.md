@@ -2,7 +2,7 @@
 title: "Practical Type-Level Programming in Scala 3"
 date: 2023-12-06
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 toc: true
 excerpt: "Learn how to use type-level programming to solve practical problems."
@@ -44,7 +44,7 @@ case class Email(primary: String, secondary: Option[String])
 
 case class Phone(number: String, prefix: Int)
 
-case class Address(country: String, city: String) 
+case class Address(country: String, city: String)
 
 object Email:
   given Codec.AsObject[Email] = semiauto.deriveCodec[Email]
@@ -66,7 +66,7 @@ Suppose you have the following data:
 ```scala
 val user = User(
   Email(
-    primary = "bilbo@baggins.com", 
+    primary = "bilbo@baggins.com",
     secondary = Some("frodo@baggins.com")),
   Phone(number = "555-555-00", prefix = 88),
   Address(country = "Shire", city = "Hobbiton"))
@@ -172,7 +172,7 @@ Using `Tuple.fromProductTyped` we can convert a `User` value to its correspondin
 
 ## 2.3. Tuple Iteration
 
-So how do we iterate over a tuple? 
+So how do we iterate over a tuple?
 
 If we were working with actual lists, the `map` function would come in handy for our problem.
 The new Scala 3 tuples now too have the `map` function which sounds like it could be what we're looking for. Here's the code that I wish I could write:
@@ -189,7 +189,7 @@ Unfortunately, this won't work, for multiple reasons.
 
 We're now going to play a game of code Whac-A-Mole, where we'll fix one problem and another will pop up. We'll get it to work, eventually...
 
-To start with, what does the `summon[Encoder]` line actually means? What type exactly are we converting to JSON? An `Encoder` doesn't just take any value and turns it into JSON, but rather takes a type-parameter that indicates what type to convert, and then it can convert that specific type. So we should be calling it with `summon[Encoder[X]]`. Where `X` is the type of the field we are currently operating on. 
+To start with, what does the `summon[Encoder]` line actually means? What type exactly are we converting to JSON? An `Encoder` doesn't just take any value and turns it into JSON, but rather takes a type-parameter that indicates what type to convert, and then it can convert that specific type. So we should be calling it with `summon[Encoder[X]]`. Where `X` is the type of the field we are currently operating on.
 
 What is the type of `field` here? Recall that we are operating on tuples, meaning that the type of each element is unique, and `map` needs to be able to deal with that. The only way to do that is if the function argument that `map` accepts can handle any type whatsoever. And this what the `map` signature actually looks like:
 ```scala
@@ -211,13 +211,13 @@ Suppose we have a `List` and we want to convert each element to JSON and aggrega
 import io.circe.*
 
 def listToJson[A: Encoder](ls: List[A]): List[Json] =
-  ls match 
+  ls match
     case Nil => Nil
-    case h :: t => 
+    case h :: t =>
       val encoder = summon[Encoder[A]]
-      
-      val json = encoder(h) 
-      
+
+      val json = encoder(h)
+
       json :: listToJson(t)
 ```
 
@@ -237,7 +237,7 @@ Can be written as[^confusing]:
 val tuple: Int *: String *: Boolean *: EmptyTuple = (3, "abc", true)
 ```
 
-[^confusing]: Confusing though it may be, but we now have two equivalent ways of expressing the same tuple values:  
+[^confusing]: Confusing though it may be, but we now have two equivalent ways of expressing the same tuple values:
     ```scala
     (3, "abc", true) == 3 *: "abc" *: true *: EmptyTuple
     ```
@@ -310,7 +310,7 @@ def tupleToJson(tuple: Tuple): List[Json] = // 1
 
       json :: tupleToJson(tup.tail) // 6
 ```
- 
+
  Let us compile again:
 ```scala
 -- [E172] Type Error: ----------------------------------------------------------
@@ -344,7 +344,7 @@ scala.compiletime.summonInline
 This function is the same as `summon`, but as stated in the documentation:
 > The summoning is delayed until the call has been fully inlined.
 
-What does it mean for the call to be "fully inlined"? That's where Scala's new [`inline`](https://docs.scala-lang.org/scala3/reference/metaprogramming/inline.html) keyword comes into play. 
+What does it mean for the call to be "fully inlined"? That's where Scala's new [`inline`](https://docs.scala-lang.org/scala3/reference/metaprogramming/inline.html) keyword comes into play.
 
 By marking a function as `inline` the compiler will always insert the code for the function directly at the call-site. While this sounds like a rather innocent capability, when mixed with the fact that inlining can be recursive, and that the compiler can evaluate simple control-flow expressions (like `if` and `match`) while inlining, the result is something like macro code-generation powers. This is how we make the compiler evaluate code at compile-time for us.
 
@@ -419,7 +419,7 @@ inline def tupleToJson(tuple: Tuple): List[Json] = // 1
 We marked the pattern-match as an [`inline match`](https://docs.scala-lang.org/scala3/reference/metaprogramming/inline.html#inline-matches). This forces the compiler to try to actually evaluate the pattern-match at compile-time and to choose the correct `case` branch based on information known at compile-time during inlining. This brings in some limitations with respect to what exactly can be pattern-matched. But in our case, we have a pattern-match that the compiler can evaluate. This is so because at the inlining site the tuple type is fully known and the compiler can replace the `h` and `t` with the specific types at hand, and choose the correct `case` branch on each inlining step. Like so:
 ```scala
 scala> val tuple = (1, "abc", true)
-      
+
        val list = tupleToJson(tuple)
 
 val tuple: (Int, String, Boolean) = (1,abc,true)
@@ -441,7 +441,7 @@ It works! We managed to iterate the tuple and inline the `summonInline` calls as
         val tup = true *: EmptyTuple
         val encoder = summon[Encoder[Boolean]]
         val json = encoder(tup.head)
-        
+
         json :: {
           Nil
         }
@@ -460,7 +460,7 @@ Some interesting observations about this approach:
 - Preserving type information is very important. Missing type information can prevent the compiler from fully inlining. For example:
     ```scala
     scala> val tuple: Tuple = (1, "abc", true)
-     
+
            val list = tupleToJson(tuple)
     -- Error: ----------------------------------------------------------------------
     3 |val list = tupleToJson(tuple)
@@ -494,13 +494,13 @@ With the implementation of `tupleToJson` and the knowledge of `Tuple.fromProduct
 scala> val fields = Tuple.fromProductTyped(user)
        val jsons = tupleToJson(fields)
 
-val fields: (Email, Phone, Address) = 
+val fields: (Email, Phone, Address) =
   (Email(bilbo@baggins.com,Some(frodo@baggins.com)),
    Phone(555-555-00,88),
    Address(Shire,Hobbiton))
 
 val jsons: List[Json] = List(
-  {"primary":"bilbo@baggins.com","secondary":"frodo@baggins.com"}, 
+  {"primary":"bilbo@baggins.com","secondary":"frodo@baggins.com"},
   {"number":"555-555-00","prefix":88},
   {"country":"Shire","city":"Hobbiton"})
 ```
@@ -622,7 +622,7 @@ Here too Scala 3 has new machinery for us to use: the [`Mirror`](https://blog.ph
 `Mirror`s are special values that provide us with an interface for metaprogramming over [various types](https://docs.scala-lang.org/scala3/reference/contextual/derivation.html#mirror-1), case classes in particular. Each instance of a `Mirror` is synthesized by the compiler on-the-fly for the class we are interested in[^generic]. We can summon a `Mirror` for our `User` type like so:
 ```scala
 scala> import scala.deriving.Mirror
-       
+
        val mirror = summon[Mirror.Of[User]]
 val mirror:
   scala.deriving.Mirror.Product{
@@ -647,7 +647,7 @@ But there's a wrinkle, perviously, when we iterated over a tuple, we had a tuple
 
 ## 3.3. Erased Values
 
-Actually, we can do quite a bit. Recall how we used `inline` and `inline match` to achieve compile-time evaluation of code. We can apply the same tools here as well, all we need is a way to pull a type into a value. 
+Actually, we can do quite a bit. Recall how we used `inline` and `inline match` to achieve compile-time evaluation of code. We can apply the same tools here as well, all we need is a way to pull a type into a value.
 
 That's where [`scala.compiletime.erasedValue`](https://www.scala-lang.org/api/3.3.1/scala/compiletime.html#erasedValue-fffff7c4) comes into play:
 > Use this method when you have a type, do not have a value for it but want to pattern match on it.
@@ -732,13 +732,13 @@ So close...
 
 ## 3.5. Type Hackery
 
-What we are lacking here is type-unification. The compiler should've figured out that it can unify the type of each case branch with the type argument `T`.  I would claim that it's a bug that the compiler can't do this, but I have a hack to circumvent this issue. 
+What we are lacking here is type-unification. The compiler should've figured out that it can unify the type of each case branch with the type argument `T`.  I would claim that it's a bug that the compiler can't do this, but I have a hack to circumvent this issue.
 
 Apparently the compiler is better at unifying type-arguments of real types[^realTypes]. To trigger this, we need to make our pattern match include a type-argument. We can do this artificially, like so:
 ```scala
 trait Is[A] // 1
 
-inline def decodeTuple[T <: Tuple]: Decoder[T] = 
+inline def decodeTuple[T <: Tuple]: Decoder[T] =
   inline erasedValue[Is[T]] match // 2
     case _: Is[EmptyTuple] => Decoder.const(EmptyTuple) // 3
     case _: Is[h *: t] => // 4
@@ -772,7 +772,7 @@ val json: Json = {
 
 scala> decodeTuple[mirror.MirroredElemTypes].decodeJson(json)
 val res1:
-  Decoder.Result[mirror.MirroredElemTypes] = 
+  Decoder.Result[mirror.MirroredElemTypes] =
     Right(
       (Email(bilbo@baggins.com,Some(frodo@baggins.com)),
       Phone(555-555-00,88),
@@ -791,7 +791,7 @@ scala> val tuple = (
             Email("bilbo@baggins.com", Some("frodo@baggins.com")),
             Phone("555-555-00", 88),
             Address("Shire", "Hobbiton"))
-      
+
        val user = mirror.fromTuple(tuple)
 
 val user: User = User(
@@ -855,9 +855,9 @@ val codec: Codec[User] = // 1
   val encoder = Encoder.instance[User]: value =>
     val fields = Tuple.fromProductTyped(value)
     val jsons = tupleToJson(fields)
-    
+
     concatObjects(jsons)
-    
+
   val mirror = summon[Mirror.Of[User]] // 2
 
   val decoder =
@@ -905,7 +905,7 @@ def makeCodec[A <: Product]( // 1
 
     concatObjects(jsons)
 
-  val decoder = 
+  val decoder =
     decodeTuple[mirror.MirroredElemTypes].map(mirror.fromTuple)
 
   Codec.from(decoder, encoder)
@@ -925,7 +925,7 @@ This fails yet again:
    |        value fromTuple is not a member of deriving.Mirror.Of[A]
    |
    |        where:    A is a type in method makeCodec with bounds <: Product
-``` 
+```
 
 And now we learn that there are different kinds of `Mirror`s. There's a `Mirror.ProductOf` and there is `Mirror.SumOf`. Case classes which are also known as product types are matched with a `Mirror.ProductOf`. And accordingly, all functions that go back and forth between case classes and tuples need a `Mirror.ProductOf` to work. We can now specialize our `Mirror` argument to this more specific type:
 ```scala
@@ -938,7 +938,7 @@ def makeCodec[A <: Product]( // 1
 
     concatObjects(jsons)
 
-  val decoder = 
+  val decoder =
     decodeTuple[mirror.MirroredElemTypes].map(mirror.fromTuple)
 
   Codec.from(decoder, encoder)
@@ -964,7 +964,7 @@ And we fail yet again...
    |----------------------------------------------------------------------------
 ```
 
-This one is a bit more difficult to decipher[^elided]. It seems that we have issues with `inline match` in our code, a failure to reduce them. Curiously, part of the errors are references to code we didn't even touch now. 
+This one is a bit more difficult to decipher[^elided]. It seems that we have issues with `inline match` in our code, a failure to reduce them. Curiously, part of the errors are references to code we didn't even touch now.
 
 [^elided]: I elided some of the details from the full error.
 
@@ -983,7 +983,7 @@ inline def makeCodec[A <: Product]( // 1
 
     concatObjects(jsons)
 
-  val decoder = 
+  val decoder =
     decodeTuple[mirror.MirroredElemTypes].map(mirror.fromTuple)
 
   Codec.from(decoder, encoder)
@@ -996,7 +996,7 @@ The important lesson that we can learn here is that `inline` is somewhat viral. 
 As you might recall though, once we are `inline`-land, compiling doesn't necessarily mean that everything works correctly. Since the actual code to be executed is going to be fully known only at the call-site. That is, we must check that calling `makeCodec` with a concrete type works as well. Let's use the `makeCodec` to make a JSON roundtrip like we did before:
 ```scala
 scala> val codec = makeCodec[User]
-      
+
        val json = codec(user)
        val decodedUser = codec.decodeJson(json)
 val codec: Codec[User] = io.circe.Codec$$anon$4@da69e23
@@ -1031,7 +1031,7 @@ Having done our fair share of type-level programming by now, is this really true
 
 If we take a look at one of our more advanced functions:
 ```scala
-inline def decodeTuple[T <: Tuple]: Decoder[T] = 
+inline def decodeTuple[T <: Tuple]: Decoder[T] =
   inline erasedValue[Is[T]] match
     case _: Is[EmptyTuple] => Decoder.const(EmptyTuple)
     case _: Is[h *: t] =>
@@ -1042,7 +1042,7 @@ inline def decodeTuple[T <: Tuple]: Decoder[T] =
 
 Is it really reusable and not a very custom solution to a specific problem?
 
-My answer here would be no, it's not reusable. We are solving a very specific problem, in a very non-modular way. 
+My answer here would be no, it's not reusable. We are solving a very specific problem, in a very non-modular way.
 
 By non-modular I mean that we are mixing up two different concerns into a single function:
 - Iterating over tuples
@@ -1097,17 +1097,17 @@ We can read this as follows:
 - If it is the empty-tuple, the resulting type is the empty tuple as well.
 - If it is made out of a head `h` and a tail `t` then the result is a new tuple made out of `F[h]` and a recursive call on `Map` with the the tail of the tuple (4).
 
-When we make a "call" to `Map` with a concrete tuple and type constructor, the compiler will perform this logic at compile-time and compute a new resulting type[^dayOfYore]. This is very similar to how you would implement `List.map` with naive recursion. But it may be easier to follow with a concrete example. 
+When we make a "call" to `Map` with a concrete tuple and type constructor, the compiler will perform this logic at compile-time and compute a new resulting type[^dayOfYore]. This is very similar to how you would implement `List.map` with naive recursion. But it may be easier to follow with a concrete example.
 
-[^dayOfYore]: In the days of yore computations of this kind would be accomplished with an unholy mix of recursive implicits and type-members. See, e.g., all of [Shapeless](https://github.com/milessabin/shapeless). 
+[^dayOfYore]: In the days of yore computations of this kind would be accomplished with an unholy mix of recursive implicits and type-members. See, e.g., all of [Shapeless](https://github.com/milessabin/shapeless).
 
 Suppose that `T = (String, Int, Double)` and `F = Decoder`. What is then the type `Map[(String, Int, Double), Decoder]`? Recall that with the new tuple syntax we can write our type as `Map[String *: Int *: Double *: EmptyTuple, Decoder]`. Now we can reduce this step by step:
 ```scala
 Map[String *: Int *: Double *: EmptyTuple, Decoder] =
 // T is not empty, `h = String` and `t = Int *: Double *: EmptyTuple`
-F[String] *: Map[Int *: Double *: EmptyTuple, Decoder] = 
+F[String] *: Map[Int *: Double *: EmptyTuple, Decoder] =
 // T is not empty, `h = Int` and `t = Double *: EmptyTuple`
-F[String] *: F[Int] *: Map[Double *: EmptyTuple, Decoder] = 
+F[String] *: F[Int] *: Map[Double *: EmptyTuple, Decoder] =
 // T is not empty, `h = Double` and `t = EmptyTuple`
 F[String] *: F[Int] *: F[Double] *: Map[EmptyTuple, Decoder] =
 // T is empty
@@ -1182,9 +1182,9 @@ Surprisingly, this compiles!
 
 We can even try it out:
 ```scala
-scala> val decoders = (Decoder[Email], Decoder[Phone], Decoder[Address]) 
+scala> val decoders = (Decoder[Email], Decoder[Phone], Decoder[Address])
        val decoder = decodeTuple[(Email, Phone, Address)](decoders)
-      
+
        decoder.decodeJson(json)
 val res10:
   Decoder.Result[(Email, Phone, Address)] = Right((
@@ -1206,7 +1206,7 @@ What type will that tuple have? This is exactly what `Map` is for. The type we a
 Map[mirror.MirroredElemTypes, Decoder]
 ```
 
-Now we could iterate over this type and `summonInline` each `Decoder` one by one[^summonExercise], but we don't have 
+Now we could iterate over this type and `summonInline` each `Decoder` one by one[^summonExercise], but we don't have
 to. The standard library already provides us with a solution:
 ```scala
 scala.compiletime.summonAll
@@ -1228,7 +1228,7 @@ inline def makeDecoder[A <: Product](
     using mirror: Mirror.ProductOf[A]): Decoder[A] =
 
   val decoders = summonAll[Map[mirror.MirroredElemTypes, Decoder]] // 1
-  
+
   decodeTuple(decoders).map(mirror.fromTuple) // 2
 ```
 
@@ -1281,7 +1281,7 @@ Why is this a safety issue? Imagine that you have the following alternative mode
 ```scala
 case class User2(email: Email2, phone: Phone2, address: Address2)
 
-case class Email2(primary: String, secondary: Option[String], 
+case class Email2(primary: String, secondary: Option[String],
                   lastUpdate: Long, verified: Boolean)
 
 case class Phone2(number: String, prefix: Int, verified: Boolean)
@@ -1306,7 +1306,7 @@ object Date:
 What will happen if we create a flat JSON format for `User2`? Here's what:
 ```scala
 scala> val user2 = User2(
-         Email2(primary = "bilbo@baggins.com", secondary = Some("frodo@baggins.com"), 
+         Email2(primary = "bilbo@baggins.com", secondary = Some("frodo@baggins.com"),
                 lastUpdate = 21, verified = true),
          Phone2(number = "555-555-00", prefix = 88, verified = false),
          Address2(country = "Shire", city = "Hobbiton", lastUpdate = Date(55)))
@@ -1352,7 +1352,7 @@ scala> val emailMirror = summon[Mirror.Of[Email]]
 val emailMirror:
   Mirror.Product{
     type MirroredMonoType = Email;
-    type MirroredType = Email; 
+    type MirroredType = Email;
     type MirroredLabel = "Email";
     type MirroredElemTypes = (String, Option[String]);
     type MirroredElemLabels = ("primary", "secondary")
@@ -1368,7 +1368,7 @@ val phoneMirror:
 val addressMirror:
   Mirror.Product{
     type MirroredMonoType = Address;
-    type MirroredType = Address; 
+    type MirroredType = Address;
     type MirroredLabel = "Address";
     type MirroredElemTypes = (String, String);
     type MirroredElemLabels = ("country", "city")
@@ -1390,7 +1390,7 @@ Labelling[emailMirror.MirroredLabel, emailMirror.MirroredElemLabels] *:
   Labelling[phoneMirror.MirroredLabel, phoneMirror.MirroredElemLabels] *:
   Labelling[addressMirror.MirroredLabel, addressMirror.MirroredElemLabels] *:
   EmptyTuple
-``` 
+```
 
 [^typeBound]: The type bound `<: String` means that we are aiming at storing string literal types here.
 
@@ -1533,7 +1533,7 @@ To be honest, I have no idea why our code didn't work as expected. It's time for
 
 Trying to "debug" what happened here, it seems that we didn't manage to preserve the precise type of the `Labelling`s we got from the tail, hence the `Tuple` part of the return type. Nor are we preserving the type of the `Labelling`s of the head, that's the `Labelling[_, _]` we got.
 
-The general intuition that I have from this is that we need to force the compiler to somehow be more precise. What follows is the code I ended up with after a lot of trial and error. I don't have any good way to explain why this code works, as I suspect that a lot of it is just workarounds around issues in the typer code for `transparent inline`s[^transparentIssues]. 
+The general intuition that I have from this is that we need to force the compiler to somehow be more precise. What follows is the code I ended up with after a lot of trial and error. I don't have any good way to explain why this code works, as I suspect that a lot of it is just workarounds around issues in the typer code for `transparent inline`s[^transparentIssues].
 
 [^transparentIssues]: Here are a two issues I opened while playing around with this code: [18010](https://github.com/lampepfl/dotty/issues/18010) and [18011](https://github.com/lampepfl/dotty/issues/18011).
 
@@ -1543,7 +1543,7 @@ transparent inline def makeLabellings[T <: Tuple]: Typed[_ <: Tuple] =
     case EmptyTuple => Typed[EmptyTuple]
     case _: (h *: t) =>
       inline makeLabellings[t] match // 1
-        case tailLabellings => 
+        case tailLabellings =>
           inline summonInline[Mirror.Of[h]] match // 2
             case headMirror =>
               type HeadLabelling = Labelling[headMirror.MirroredLabel, headMirror.MirroredElemLabels]
@@ -1634,8 +1634,8 @@ First we'll need a way to pair each field label with its source (the class it ca
 type ZipWithSource[L] <: Tuple = L match // 1
   case Labelling[label, elemLabels] => // 2
     ZipWithConst[elemLabels, label] // 3
-  
-type ZipWithConst[T <: Tuple, A] = 
+
+type ZipWithConst[T <: Tuple, A] =
   T Map ([t] =>> (t, A)) // 4
 ```
 
@@ -1652,9 +1652,9 @@ Let's "run" `ZipWithSource`:
 scala> type L = Labelling["Email2", ("primary", "secondary", "lastUpdate", "verified")]
        type Res = ZipWithSource[L]
 // defined alias type Res
-   = (("primary", "Email2"), 
-      ("secondary", "Email2"), 
-      ("lastUpdate", "Email2"), 
+   = (("primary", "Email2"),
+      ("secondary", "Email2"),
+      ("lastUpdate", "Email2"),
       ("verified", "Email2"))
 ```
 We are applying `ZipWithSource` to a specific `Labelling` and we get back `Tuple` of pairs, where each element is a field name and its class source.
@@ -1671,12 +1671,12 @@ scala> type Labellings = (
            Labelling["Email2", ("primary", "secondary", "lastUpdate", "verified")],
            Labelling["Phone2", ("number", "prefix", "verified")],
            Labelling["Address2", ("country", "city", "lastUpdate")])
-      
+
        type Res = ZipAllWithSource[Labellings]
 // defined alias type Res
    = (("primary", "Email2"), ("secondary", "Email2"), ("lastUpdate", "Email2"),
       ("verified", "Email2"), ("number", "Phone2"), ("prefix", "Phone2"),
-      ("verified", "Phone2"), ("country", "Address2"), ("city", "Address2"), 
+      ("verified", "Phone2"), ("country", "Address2"), ("city", "Address2"),
       ("lastUpdate", "Address2"))
 ```
 
@@ -1716,10 +1716,10 @@ scala> type Labels =(("primary", "Email2"), ("secondary", "Email2"), ("lastUpdat
                      ("verified", "Email2"), ("number", "Phone2"), ("prefix", "Phone2"),
                      ("verified", "Phone2"), ("country", "Address2"), ("city", "Address2"),
                      ("lastUpdate", "Address2"))
-      
+
        type Res1 = FindLabel["verified", Labels]
        type Res2 = RemoveLabel["verified", Labels]
-// defined alias type Res1 
+// defined alias type Res1
    = ("Email2", "Phone2")
 // defined alias type Res2
    = (("primary", "Email2"), ("secondary", "Email2"), ("lastUpdate", "Email2"),
@@ -1731,7 +1731,7 @@ In the first invocation we find all the sources for the `verified` label. In the
 
 [^cheating]: I'm slightly cheating with the REPL output, as for some reason the REPL refuses to fully reduce the last result. To this end I wrap `Res2` with the `Reduce`, which is defined as:
     ```scala
-    type Reduce[T <: Tuple] = T match 
+    type Reduce[T <: Tuple] = T match
       case EmptyTuple => EmptyTuple
       case h *: t => h *: Reduce[t]
     ```
@@ -1755,9 +1755,9 @@ scala> type Res = GroupByLabels[Labels]
 // defined alias type Res
    = (("primary", "Email2" *: EmptyTuple),
       ("secondary", "Email2" *: EmptyTuple),
-      ("lastUpdate", ("Email2", "Address2")), 
+      ("lastUpdate", ("Email2", "Address2")),
       ("verified", ("Email2", "Phone2")),
-      ("number", "Phone2" *: EmptyTuple), 
+      ("number", "Phone2" *: EmptyTuple),
       ("prefix", "Phone2" *: EmptyTuple),
       ("country", "Address2" *: EmptyTuple),
       ("city", "Address2" *: EmptyTuple))
@@ -1770,7 +1770,7 @@ import scala.compiletime.ops.int.* // 1
 
 type OnlyDuplicates[Labels <: Tuple] = Labels Filter ([t] =>> Size[Second[t]] > 1) // 2
 
-type FindDuplicates[Labellings <: Tuple] = 
+type FindDuplicates[Labellings <: Tuple] =
   OnlyDuplicates[GroupByLabels[ZipAllWithSource[Labellings]]] // 3
 
 type Size[T] <: Int = T match // 4
@@ -1793,13 +1793,13 @@ And that's it, we can now find duplicate fields from a bunch of `Labelling`s[^ch
 ```scala
 scala> type Res = FindDuplicates[Labellings]
 // defined alias type Res
-   = (("lastUpdate", ("Email2", "Address2")), 
+   = (("lastUpdate", ("Email2", "Address2")),
       ("verified", ("Email2", "Phone2")))
 ```
 
 [^cheatAgain]: We are cheating again and applying `Reduce` here as well.
 
-Great success! We found the duplicate fields, along with the class names they came from. With this info, that we managed to obtain at compile-time, we can proceed to generate a compilation error. 
+Great success! We found the duplicate fields, along with the class names they came from. With this info, that we managed to obtain at compile-time, we can proceed to generate a compilation error.
 
 The full code for `FindDuplicates` can be found in the [repo](https://github.com/ncreep/scala3-flat-json-blog/blob/master/find_duplicates.scala).
 
@@ -1816,7 +1816,7 @@ type GroupByLabels[Labels <: Tuple] <: Tuple = Labels match
   case (label, source) *: t =>
     ((label, source *: FindLabel[label, t])) *: GroupByLabels[RemoveLabel[label, t]]
 
-type OnlyDuplicates[Labels <: Tuple] = 
+type OnlyDuplicates[Labels <: Tuple] =
   Labels Filter ([t] =>> Size[Second[t]] > 1)
 
 type FindLabel[Label, T <: Tuple] =
@@ -1875,13 +1875,13 @@ scala.compiletime.error
 ```
 
 [Described as](https://docs.scala-lang.org/scala3/reference/metaprogramming/compiletime-ops.html#error-1):
-> The `error` method is used to produce user-defined compile errors during inline expansion.  
+> The `error` method is used to produce user-defined compile errors during inline expansion.
 > If an inline expansion results in a call `error(msgStr)` the compiler produces an error message containing the given `msgStr`.
 
 If we try this in the REPL, we can trigger a custom error message:
 ```scala
 scala> import scala.compiletime.error
-      
+
        error("my error!")
 -- Error: ----------------------------------------------------------------------
 3 |error("my error!")
@@ -1895,7 +1895,7 @@ This is our way to plug-in custom compile-time errors and gain some usability po
 It's actually not that complicated to turn types full of literals back into a value. The [`constValueTuple`](https://docs.scala-lang.org/scala3/reference/metaprogramming/compiletime-ops.html#constvalue-and-constvalueopt-1) function lets us do just that:
 ```scala
 scala> import scala.compiletime.constValueTuple
-      
+
        type Stuff = ("a", "b", "c")
        val tupleValue = constValueTuple[Stuff]
 // defined alias type Stuff = ("a", "b", "c")
@@ -1904,13 +1904,13 @@ val tupleValue: Stuff = (a,b,c)
 
 `constValueTuple` iterates over the tuple and calls [`constValue`](https://docs.scala-lang.org/scala3/reference/metaprogramming/compiletime-ops.html#constvalue-and-constvalueopt-1) on each element. If the element is a literal, it is turned into the corresponding value.
 
-Now we started from a **type** `Stuff` with some string type-literals, and ended up with a **value** `tupleValue` that contains actual string values. 
+Now we started from a **type** `Stuff` with some string type-literals, and ended up with a **value** `tupleValue` that contains actual string values.
 
 We can try to experiment with the `error` function: form a string from `tupleValue` and pass it to `error`:
 ```scala
 scala> import scala.compiletime.error
        val listValue: List[String] = tupleValue.toList
-      
+
        error("The error" + listValue.mkString(","))
 -- Error: ----------------------------------------------------------------------
 5 |error("The error" + listValue.mkString(","))
@@ -1924,7 +1924,7 @@ This does not work, apparently `error` can only work with literal strings, while
 Digging some more, `error` does support something beyond string literals, we can also use the `+` and it will be evaluated at compile-time:
 ```scala
 scala> import scala.compiletime.error
-       
+
        error("error1" + " error2")
 -- Error: ----------------------------------------------------------------------
 1 |error("error1" + " error2")
@@ -1974,7 +1974,7 @@ This works just like `List.mkString`:
 ```scala
 scala> type Strings = ("a", "b", "c")
        type Result = MkString[Strings]
-// defined alias type Result 
+// defined alias type Result
    = "a, b, c"
 ```
 
@@ -1992,7 +1992,7 @@ Given a pair of a label and its sources, we create a single string with the labe
 ```scala
 scala> type Label = ("lastUpdate", ("Email2", "Address2"))
        type Result  = RenderLabelWithSources[Label]
-// defined alias type Result 
+// defined alias type Result
    = "- [lastUpdate] from [Email2, Address2]"
 ```
 
@@ -2000,7 +2000,7 @@ We are starting to compute bits that look like an actual error message. This sta
 
 With `Tuple.Map` we can apply this logic to a tuple of labels with sources:
 ```scala
-type RenderLabelsWithSources[LabelsWithSources <: Tuple] = 
+type RenderLabelsWithSources[LabelsWithSources <: Tuple] =
   LabelsWithSources Map RenderLabelWithSource
 ```
 
@@ -2009,7 +2009,7 @@ And use it like so:
 scala> type Labels =
          (("lastUpdate", ("Email2", "Address2")),
           ("verified", ("Email2", "Phone2")))
-      
+
        type Result = RenderLabelsWithSources[Labels]
 // defined alias type Result
    = ("- [lastUpdate] from [Email2, Address2]",
@@ -2019,7 +2019,7 @@ scala> type Labels =
 Getting warm... The last step is to combine this tuple into a single string:
 ```scala
 type RenderError[LabelsWithSources <: Tuple] =
-  "Duplicate fields found:\n" ++ 
+  "Duplicate fields found:\n" ++
     Fold[RenderLabelsWithSources[LabelsWithSources], "", [a, b] =>> a ++ "\n" ++ b]
 ```
 
@@ -2045,7 +2045,7 @@ Last step is to patch it up into the `error` function:
 ```scala
 inline def renderDuplicatesError[Labellings <: Tuple]: Unit = // 1
   type Duplicates = FindDuplicates[Labellings] // 2
-  
+
   inline erasedValue[Duplicates] match // 3
     case _: EmptyTuple => () // 4
     case _: (h *: t) => error(constValue[RenderError[h *: t]]) // 5
@@ -2127,7 +2127,7 @@ val json: Json = {
   "country" : "Shire",
   "city" : "Hobbiton"
 }
-val fromJson: Decoder.Result[User] = 
+val fromJson: Decoder.Result[User] =
   Right(
     User(
       Email(bilbo@baggins.com,Some(frodo@baggins.com)),

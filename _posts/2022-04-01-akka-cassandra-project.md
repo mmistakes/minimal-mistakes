@@ -2,7 +2,7 @@
 title: "A Scala project with Akka, Cats and Cassandra"
 date: 2022-04-01
 header:
-    image: "/images/blog cover.jpg"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [akka, cassandra, cats]
 excerpt: "Akka, Cats and Cassandra in a bigger Scala project integrating multiple pieces in the Scala ecosystem."
 ---
@@ -43,7 +43,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor-typed"           % akkaVersion,
   "com.typesafe.akka" %% "akka-stream"                % akkaVersion,
   "com.typesafe.akka" %% "akka-persistence-typed"     % akkaVersion,
-  "com.datastax.oss"  %  "java-driver-core"           % "4.13.0",  
+  "com.datastax.oss"  %  "java-driver-core"           % "4.13.0",
   "com.typesafe.akka" %% "akka-persistence-cassandra" % "1.0.5",
   "io.circe"          %% "circe-core"                 % circeVersion,
   "io.circe"          %% "circe-generic"              % circeVersion,
@@ -422,7 +422,7 @@ val commandHandler: (State, Command) => Effect[Event, State] = ???
 However, we need to be able to spawn new bank accounts in this handler, which means we'll need an `ActorContext` to do that. It's usually available when we create the final behavior of the actor, so we need to be able to pass it here, so our definition will change to
 
 ```scala
-def commandHandler(context: ActorContext[Command]): (State, Command) => Effect[Event, State] = (state, command) => 
+def commandHandler(context: ActorContext[Command]): (State, Command) => Effect[Event, State] = (state, command) =>
   command match {
     // continue here
   }
@@ -551,7 +551,7 @@ object BankPlayground {
 
       // test 1
       //      bank ! CreateBankAccount("daniel", "USD", 10, responseHandler)
-      
+
       // test 2
       //      bank ! GetBankAccount("replaceWithYourUuidHere", responseHandler)
 
@@ -614,8 +614,8 @@ For this section, we're going to use Akka HTTP (obviously), and we'll use the hi
 Under a new `BankRouter` file, we need to represent the JSON payloads of these requests. We only have two:
 
 ```scala
-case class BankAccountCreationRequest(user: String, currency: String, balance: Double) 
-case class BankAccountUpdateRequest(currency: String, amount: Double) 
+case class BankAccountCreationRequest(user: String, currency: String, balance: Double)
+case class BankAccountUpdateRequest(currency: String, amount: Double)
 ```
 
 As for responses, we already have the right data structures in the bank account definition, so we can either use them verbatim, or create new case classes with the same structure and some conversion methods to/from the responses from the bank account actor. For this article, we'll choose the former, so we'll simply
@@ -644,7 +644,7 @@ And along with the main import of all directives in Akka HTTP
 import akka.http.scaladsl.server.Directives._
 ```
 
-we can then get started with the Akka HTTP routes we'll need for the server. 
+we can then get started with the Akka HTTP routes we'll need for the server.
 
 ### 3.1. Creating a Bank Account in the Akka HTTP Server
 
@@ -944,7 +944,7 @@ import scala.util.{Success, Failure}
 object BankApp {
   trait RootCommand
   case class RetrieveBankActor(replyTo: ActorRef[ActorRef[Command]]) extends RootCommand
-  
+
   val rootBehavior: Behavior[RootCommand] = Behaviors.setup { context =>
     val bankActor = context.spawn(Bank(), "bank")
     Behaviors.receiveMessage {
@@ -953,7 +953,7 @@ object BankApp {
         Behaviors.same
     }
   }
-  
+
   // continue here
 }
 ```
@@ -965,10 +965,10 @@ def startHttpServer(bank: ActorRef[Command])(implicit system: ActorSystem[_]): U
   implicit val ec: ExecutionContext = system.executionContext
   val router = new BankRouter(bank)
   val routes = router.routes
-  
+
   // start the server
   val httpBindingFuture = Http().newServerAt("localhost", 8080).bind(routes)
-  
+
   // manage the server binding
   httpBindingFuture.onComplete {
     case Success(binding) =>
@@ -1015,7 +1015,7 @@ object Validation {
   trait ValidationFailure {
     def errorMessage: String
   }
-  
+
   // continue here
 }
 ```
@@ -1201,4 +1201,3 @@ At this point, you can run the application again, and have fun with the new endp
 ## 5. Conclusion
 
 This was a whirlwind tutorial on how to use Akka Actors, Akka Persistence, Akka HTTP, Cassandra and Cats into a bigger application. We created persistent actors, we managed them with a "root" actor, we ran an HTTP server with a sleek DSL and REST API, and we made our data validation more robust with a bit of Cats and the Validated type. We hope you had as much fun writing this application as we did.
-

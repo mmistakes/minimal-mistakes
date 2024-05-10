@@ -2,7 +2,7 @@
 title: "Self-types in Scala, Real Quick"
 date: 2020-04-03
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "Self types are a really interesting way to enforce type constraints in Scala. Learn to use it in a few minutes."
 ---

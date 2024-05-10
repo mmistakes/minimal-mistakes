@@ -2,7 +2,7 @@
 title: "Exploiting Implicit Ambiguity in Scala"
 date: 2021-07-07
 header:
-  image: "/images/blog cover.jpg"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "In this article, I'll show you how you can exploit the implicit resolution mechanism in Scala to enforce type relationships at compile time."
 ---
@@ -48,7 +48,7 @@ def processListsSameTypeV2[A](la: List[A], lb: List[A]): List[(A, A)] =
   processLists[A,A](la, lb)
 ```
 
-Now, for a variety of reasons, such a solution may not be appropriate, especially in very general library code. 
+Now, for a variety of reasons, such a solution may not be appropriate, especially in very general library code.
 
 There is another, more powerful technique.
 
@@ -62,10 +62,10 @@ def processListsSameTypeV3[A, B](la: List[A], lb: List[B])(using A =:= B): List[
 In this case, we'll have the following:
 
 ```scala
-// works 
-val sameKindOfLists = processListsSameTypeV3(List(1,2,3), List(4,5)) 
+// works
+val sameKindOfLists = processListsSameTypeV3(List(1,2,3), List(4,5))
 // doesn't work - implicit not found
-val differentKindsOfLists = processListsSameTypeV3(List(1,2,3), List("black", "white")) 
+val differentKindsOfLists = processListsSameTypeV3(List(1,2,3), List("black", "white"))
 ```
 
 This approach is much more general and can be taken to a new level for a harder problem.
@@ -101,7 +101,7 @@ implicit def generate1[A]: A =!= A = null
 implicit def generate2[A]: A =!= A = null
 ```
 
-This brilliant solution is not mine, but it belongs to Miles Sabin from an old StackOverflow answer which I couldn't find anymore, but stuck with me for a long time. The genius of this approach is that when we call 
+This brilliant solution is not mine, but it belongs to Miles Sabin from an old StackOverflow answer which I couldn't find anymore, but stuck with me for a long time. The genius of this approach is that when we call
 
 ```scala
 processDifferentTypes(List(1,2,3), List(4,5))
