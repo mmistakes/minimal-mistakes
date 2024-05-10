@@ -18,7 +18,7 @@ minimal_mistakes_skin: "air" # "default", "air", "aqua", "contrast", "dark", "di
 locale: "en-US"
 title: "Juneau Jung"
 title_separator: "-"
-# subtitle                 : "https://github.com/zzuno/zzuno.github.io" # site tagline that appears below site title in masthead
+subtitle: "Catalyze global intrigue with a proposition of unparalleled exhilaration" # site tagline that appears below site title in masthead
 name: "Juneau Jung"
 description: "Undergraduate at SNU ECE"
 url: "https://zzuno.github.io"
