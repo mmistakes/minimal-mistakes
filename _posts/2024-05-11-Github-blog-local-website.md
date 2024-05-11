@@ -28,3 +28,5 @@ bundle add webrick
 ```terminal
 bundle exec jekyll serve
 ```
+
+#### 짜란~! 실시간으로 블로그 웹사이트 수정내용 확인가능
