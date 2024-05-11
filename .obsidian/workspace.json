@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "95faf974f049bf6b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-03-24-first.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "files/jslogo.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "files/jslogo.jpg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-24-first.md"
+                "file": "files/jslogo.jpg"
               }
             }
           },
@@ -176,10 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "95faf974f049bf6b",
+  "active": "c507a29ed08f1fa6",
   "lastOpenFiles": [
-    "_posts/2024-05-08-Obsidian with Git.md",
     "_posts/2024-03-24-first.md",
+    "_posts/2024-05-08-Obsidian with Git.md",
     "_posts/2024-05-11-Github-blog-local-website.md",
     "myblog/_site/jekyll/update/2024/05/11/welcome-to-jekyll.html",
     "myblog/_site/jekyll/update/2024/05/11",
