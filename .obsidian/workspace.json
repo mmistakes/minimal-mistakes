@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "_posts/2024-05-11-Github-blog-local-website.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "_posts/2024-05-11-Github-blog-local-website.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "_posts/2024-05-11-Github-blog-local-website.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-24-first.md"
+                "file": "_posts/2024-05-11-Github-blog-local-website.md"
               }
             }
           },
@@ -178,6 +178,9 @@
   },
   "active": "95faf974f049bf6b",
   "lastOpenFiles": [
+    "_posts/2024-03-24-first.md",
+    "_posts/2024-05-08-Obsidian with Git.md",
+    "_posts/2024-04-22-The_Journey_of_BABO.md",
     "_posts/2024-05-11-Github-blog-local-website.md",
     "_site/Github-blog-local-website/index.html",
     "_site/Github-blog-local-website",
@@ -192,10 +195,7 @@
     "_site/screenshot-layouts.png",
     "_site/minimal-mistakes-jekyll.gemspec",
     "_site/files/jslogo.jpg",
-    "_posts/2024-05-08-Obsidian with Git.md",
-    "_posts/2024-04-22-The_Journey_of_BABO.md",
     "files/jslogo.jpg",
-    "_posts/2024-03-24-first.md",
     "screenshot-layouts.png",
     "screenshot.png"
   ]
