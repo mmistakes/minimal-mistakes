@@ -10,3 +10,21 @@ _ 유튜브 TedyNote [Ep03. 업데이트 내역을 실시간 확인하기](https
 
 ### 1. 필요한 프로그램들 설치하기(Ruby 등)
 [필요 설치파일 및 안내](https://jekyllrb.com/docs/)
+설치할 것들을 모두 설치한 뒤, 블로그 폴더에 터미널을 열고
+```terminal
+bundle install
+```
+실행. 
+```terminal
+bundle exec jekyll serve
+```
+
+오류 발생시
+```
+bundle add webrick
+```
+->
+다시 실행 / 서버 구동
+```terminal
+bundle exec jekyll serve
+```
