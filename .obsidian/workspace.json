@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md",
+                "file": "_posts/2024-03-24-first.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "379ee8f555e1e53a",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md",
+                "file": "_posts/2024-03-24-first.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md",
+                "file": "_posts/2024-03-24-first.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md"
+                "file": "_posts/2024-03-24-first.md"
               }
             }
           },
@@ -179,6 +178,7 @@
   },
   "active": "95faf974f049bf6b",
   "lastOpenFiles": [
+    "_posts/2024-05-11-Github-blog-local-website.md",
     "myblog/_site/jekyll/update/2024/05/11/welcome-to-jekyll.html",
     "myblog/_site/jekyll/update/2024/05/11",
     "myblog/_site/jekyll/update/2024/05",
@@ -190,11 +190,9 @@
     "myblog/_site/about/index.html",
     "myblog/_site/jekyll",
     "myblog/_site/index.html",
-    "myblog/_site/feed.xml",
     "_posts/2024-03-24-first.md",
     "_posts/2024-05-08-Obsidian with Git.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
-    "_posts/2024-05-11-Github-blog-local-website.md",
     "_site/screenshot.png",
     "_site/screenshot-layouts.png",
     "_site/files/jslogo.jpg",
