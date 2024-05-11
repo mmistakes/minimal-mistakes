@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "_posts/2024-05-08-Obsidian with Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "_posts/2024-05-08-Obsidian with Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-24-first.md",
+                "file": "_posts/2024-05-08-Obsidian with Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-24-first.md"
+                "file": "_posts/2024-05-08-Obsidian with Git.md"
               }
             }
           },
@@ -165,11 +165,11 @@
   },
   "active": "112b73a6af3f8e7e",
   "lastOpenFiles": [
+    "_posts/2024-05-11-Github-blog-local-website.md",
+    "_posts/2024-03-24-first.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
     "files/jslogo.jpg",
-    "_posts/2024-03-24-first.md",
     "_posts/2024-05-08-Obsidian with Git.md",
-    "_posts/2024-05-11-Github-blog-local-website.md",
     "myblog/_site/jekyll/update/2024/05/11/welcome-to-jekyll.html",
     "myblog/_site/jekyll/update/2024/05/11",
     "myblog/_site/jekyll/update/2024/05",
