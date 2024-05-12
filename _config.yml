@@ -112,11 +112,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jaewon Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "컴퓨터과학을 공부중이며 **철학과 웹 기획, 개발** 등 다양한 폭 넓은 지식에 관심이 많습니다."
+  location         : "Seoul"
+  email            : "hyeyum@humanartmuseum.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
