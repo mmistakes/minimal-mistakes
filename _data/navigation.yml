@@ -3,7 +3,7 @@ main:
   - title: "Category"
     url: /categories/
   - title: "Tag"
-    url: /Tags/
+    url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
