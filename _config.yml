@@ -117,7 +117,7 @@ author:
   bio              : "컴퓨터과학을 공부중이며 **철학과 웹 기획, 개발** 등 다양하고 폭 넓은 지식에 관심이 많습니다."
   location         : "Seoul"
   email            : "hyeyum@humanartmuseum.com"
-  instagram        : "https://www.instagram.com/hume_designlab/"
+  instagram        : "hume_designlab"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
