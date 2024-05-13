@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "1a61ba291432bd1d",
+    "id": "f1c4a524e8394f15",
     "type": "split",
     "children": [
       {
-        "id": "884eca30238ddb15",
+        "id": "d47001e9354de893",
         "type": "tabs",
         "children": [
           {
-            "id": "66e28d45e613edfc",
+            "id": "fd3f0e43138f48cc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,25 +21,25 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8c300f4e10b3570a",
+    "id": "3fe75fc380d501d6",
     "type": "split",
     "children": [
       {
-        "id": "ede9bcf01d214c9c",
+        "id": "87f1a55aa96e7379",
         "type": "tabs",
         "children": [
           {
-            "id": "c507a29ed08f1fa6",
+            "id": "ac1ae0b550ab6dd4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabeticalReverse"
+                "sortOrder": "alphabetical"
               }
             }
           },
           {
-            "id": "7b9a6d4ba0e9c264",
+            "id": "d9dd3ec755315ccd",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "47f3cb0b7268b33e",
+            "id": "3e856a90f2727a3f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "379ee8f555e1e53a",
+    "id": "297eac3a2fc924e8",
     "type": "split",
     "children": [
       {
-        "id": "81164e9712f02134",
+        "id": "98ae326670a4680e",
         "type": "tabs",
         "children": [
           {
-            "id": "b1eb7199c0e6c55e",
+            "id": "35d604bb0df43ecb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "37f890f0c3179c2c",
+            "id": "f436f0338df276aa",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "5d3fd7491b88a579",
+            "id": "99b19f6b42fb4866",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,33 +114,22 @@
             }
           },
           {
-            "id": "94c313c85b6d2f2a",
+            "id": "c9c4f3d338038e1f",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md"
-              }
-            }
-          },
-          {
-            "id": "15f9e4b82a29ee8a",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
               "state": {}
             }
           },
           {
-            "id": "e269c3c852f295e5",
+            "id": "455884945911eefc",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -163,31 +146,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c507a29ed08f1fa6",
+  "active": "fd3f0e43138f48cc",
   "lastOpenFiles": [
-    "screenshot.png",
-    "screenshot-layouts.png",
-    "_posts/2024-05-13-United_Automotive_Software.md",
-    "CHANGELOG.md",
-    "_posts/2024-05-11-Github-blog-local-website.md",
-    "_posts/2024-03-24-first.md",
-    "_posts/2024-04-22-The_Journey_of_BABO.md",
-    "_posts/Templates/Basic Blog template.md",
-    "_posts/2024-05-08-Obsidian with Git.md",
-    "_posts/Templates",
-    "_posts/files/jslogo.jpg",
-    "myblog/_site/jekyll/update/2024/05/11/welcome-to-jekyll.html",
-    "myblog/_site/jekyll/update/2024/05/11",
-    "myblog/_site/jekyll/update/2024/05",
-    "myblog/_site/jekyll/update/2024",
-    "myblog/_site/jekyll/update",
-    "myblog/_site/assets/main.css.map",
-    "myblog/_site/assets/minima-social-icons.svg",
-    "myblog/_site/assets/main.css",
-    "myblog/_site/about/index.html",
-    "myblog/_site/jekyll",
-    "_site/screenshot.png",
-    "_site/screenshot-layouts.png",
-    "_site/files/jslogo.jpg"
+    "2024-05-08-Obsidian with Git.md"
   ]
 }
