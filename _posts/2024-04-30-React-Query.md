@@ -84,3 +84,13 @@ React 개발 초창기 (2015-2018), Redux와 같은 라이브러리를 사용하
 
 <!-- Redux sample code -->
 
+## a. Query와 Mutation
+
+React Query에서 비동기 데이터 요청을 Query와 Mutation이라는 2가지 유형으로 나누어 생각한다.
+
+제공되는 useQuery훅을 통해 수행되는 Query 요청은 GET Method로, 서버에 저장된 상태를 불러올 때 사용한다.
+
+> 이 외에 단 건 요청인 useQuery와 다르게 병렬로 요청하는 useQueries, 무한 스크롤 구현에 용이한 useInfiniteQuery 훅도 제공된다.
+
+useQuery 훅은 요청마다 고유값 Unique Key (Query Key)를 필요로 한다. 해당 Unique Key로 서버 상태를 로컬에 캐시하고 관리한다. (재호출 등)
+
