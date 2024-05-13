@@ -10,6 +10,7 @@ published: true
 이에 대해 몇 번 스쳐들었을 뿐이기에 이번 포스트를 통해 정확히 어떤 개념인지 알아보자.
 
 <!-- 이미지 -->
+![ReactQuery](../assets/img/ReactQuery.png)
 
 [공식문서](https://tanstack.com/query/v5/docs/framework/react/overview)에선 React Query를 다음과 같이 설명하고 있다.
 
