@@ -5,8 +5,14 @@ title: United_Automotive_Software
 ## I Believe the 'United Automotive Software' Starts from small groups
 
 ### Started from Veecle
-*어느날 우연히 *
+'*어느날 우연히 눈에 띈 한 유튜브 동영상* '
+
 
 ### Forest of Inspiration
 ---
-##### 학교에
+##### 자동차 소프트웨어 동아리를 만들고, 운영하면서 느낀점
+1. 학교에서 학생들이 사용할 수 있게 간단한 운영체제를 만들어 보면 어떨까?
+	- 임베디드에 대한 진입장벽이 높음. 
+	- Rust를 어떻게 시작해야 할지에 대한 진입장벽.
+	- 작은 RC카 등 간단한 자동차를 제어할 수 있는  
+2. 
