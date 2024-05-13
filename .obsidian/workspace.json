@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f19b6b8578a3ac99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,15 +163,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f19b6b8578a3ac99",
+  "active": "112b73a6af3f8e7e",
   "lastOpenFiles": [
-    "Templates/Basic Blog template.md",
-    "_posts/2024-05-13-United_Automotive_Software.md",
-    "_posts/2024-05-11-Github-blog-local-website.md",
-    "_posts/2024-05-08-Obsidian with Git.md",
-    "Templates",
     "_posts/2024-03-24-first.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
+    "_posts/2024-05-13-United_Automotive_Software.md",
+    "_posts/2024-05-11-Github-blog-local-website.md",
+    "Templates/Basic Blog template.md",
+    "_posts/2024-05-08-Obsidian with Git.md",
+    "Templates",
     "files/jslogo.jpg",
     "myblog/_site/jekyll/update/2024/05/11/welcome-to-jekyll.html",
     "myblog/_site/jekyll/update/2024/05/11",
