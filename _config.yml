@@ -126,20 +126,23 @@ author:
       # url: "https://your-website.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/hume_designlab/"
+    - label: "Linkedin"
+      icon: "fab fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/jaewon-lee-%EC%9D%B4%EC%9E%AC%EC%9B%90-06236b61/"
 
 # Site Footer
 footer:
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://facebook.com/hyeyumpeople"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
@@ -152,6 +155,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/hume_designlab/"
+    - label: "Linkedin"
+      icon: "fab fa-brands fa-linkedin"
+      url:   "https://www.linkedin.com/in/jaewon-lee-%EC%9D%B4%EC%9E%AC%EC%9B%90-06236b61"
 
 
 # Reading Files
