@@ -74,7 +74,9 @@
                                 {{ link.title }}
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ link.title }}">
-                                <a class="dropdown-item" href="{{ site.baseurl }}{{ link.url }}">Overview</a>
+                                {% unless link.hidden %}
+                                    <a class="dropdown-item" href="{{ site.baseurl }}{{ link.url }}">Overview</a>
+                                {% endunless %}
                                 {% for sublink in link.sublinks %}
                                     <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                                 {% endfor %}

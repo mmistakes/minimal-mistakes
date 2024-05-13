@@ -33,6 +33,7 @@ main:
       url: /docs/imaging/image_functional_QA
 - title: Community and Impact
   url: /docs/community
+  hidden: true
   sublinks:
     - title: "RBC Team"
       url: /docs/team

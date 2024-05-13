@@ -5,7 +5,7 @@ author_profile: false
 ---
 
 <div style="text-align: center;">
-     <img src="/assets/RBC%20Primary%20Logo.png" width="700" height="300" />
+     <img src="/assets/images/logos/rbc_primary_logo.png" width="700" height="300" />
 </div>
 
 <br/>
@@ -82,4 +82,25 @@ author_profile: false
      <br>
 </p>
 
-<iframe src="/assets/dashboard.html" width="100%" height="500px"></iframe>
+<div style="text-align: center;">
+     <h2>Contributing Institutions</h2>
+     <br/>
+
+     <div style="display: flex; justify-content: space-between; width: 90%; margin: auto;">
+          <img src="/assets/images/logos/university_of_pennsylvania.png" style="height: 150px;" />
+          <img src="/assets/images/logos/child_mind_institute.png" style="height: 150px;" />
+          <img src="/assets/images/logos/beijing_normal_university.png" style="height: 150px;" />
+          <img src="/assets/images/logos/columbia_university.png" style="height: 150px;" />
+     </div>
+
+</div>
+
+<br/>
+<br/>
+
+<div style="text-align: center;">
+     <h2>Data Downloads</h2>
+     <br/>
+
+     <iframe src="/assets/dashboard.html" width="100%" height="600px"></iframe>
+</div>
