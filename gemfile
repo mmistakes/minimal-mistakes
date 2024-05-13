@@ -6,3 +6,4 @@ gem 'jekyll-gist'
 gem 'jekyll-feed', '~> 0.17.0'
 gem 'jekyll-include-cache'
 gem 'tzinfo-data'
+gem "jekyll-redirect-from"

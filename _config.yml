@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "Jaewon Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "컴퓨터과학을 공부중이며 **철학과 웹 기획, 개발** 등 다양하고 폭 넓은 지식에 관심이 많습니다."
   location         : "Seoul"
   email            :
@@ -256,6 +256,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -264,7 +265,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
+  - jekyll-redirect-from
 
 # Archives
 #  Type
@@ -317,5 +318,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fas fa-regular fa-folder-open"
 
 date_format: "%Y-%m-%d"
