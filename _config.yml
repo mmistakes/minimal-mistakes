@@ -20,7 +20,7 @@ title                    : "HUME DESIGNLAB"
 title_separator          : "|"
 subtitle                 : # "big think act small"
 name                     : "Jaewon Lee"
-description              : "컴퓨터과학 공부 블로그."
+description              : "생각을 짓는 사람."
 url                      : "https://hyeyumpeople.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "Jaewon Lee"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "컴퓨터과학을 공부중이며 **철학과 웹 기획, 개발** 등 다양하고 폭 넓은 지식에 관심이 많습니다."
+  bio              : "긴 호흡으로 **시각적 미술 인지심리 정보**를 활용한 인공지능 알고리듬과 서비스를 개발중입니다."
   location         : "Seoul"
   email            :
   links:
