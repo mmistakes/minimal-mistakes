@@ -10,19 +10,27 @@ main:
     url: /search/
 
 docs:
-#  - title: "대목차1"
-#    children:
-#      - title: "Category"
-#        url: /categories/
-#      - title: "Tag"
-#        url: /tags/
-#
-#  - title: "대목차2"
-#    children:
-#      - title: "Category"
-#        url: /categories/
-#      - title: "Tag"
-#        url: /tags/
+  - title: "대목차1"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
+  - title: "대목차2"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
+counts:
+  - title: "카테고리"
+    use: true
+  - title: "태그"
+    use: true
+
+
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
