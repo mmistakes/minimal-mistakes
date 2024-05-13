@@ -5,6 +5,13 @@ layout: single
 
 ---
 
-For each study and site, imaging parameters differed. Find below a table that summarises all the necessary imaging parameters for each site:
+RBC is a heterogeneous data resource that includes data that were acquired under diverse settings.  
 
--	Table 2 from paper (once finalized)
+Structural imaging parameters for studies included in RBC were as follows:
+
+-	**ADD TABLE 2 from paper with struct acq details**
+
+Fucnctional imaging parameters for studies included in RBC are detailed below:
+
+
+-	**ADD TABLE 3 from paper with func acq details**
