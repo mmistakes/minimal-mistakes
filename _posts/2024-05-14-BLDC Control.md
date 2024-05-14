@@ -3,7 +3,8 @@ layout: single
 title: BLDC Control
 ---
 ## What is BLDC
-**
+*Brushless DC electric motor*
+Synchronous motor using a direct current(DC) electric power supply. 
 
 ## How to Control BLDC Motor?
 
