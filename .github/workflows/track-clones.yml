@@ -27,6 +27,8 @@ jobs:
         env:
           SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: python scripts/clone-tracking/fetch.py
+      - name: Run cumulative.py
+        run: python scripts/clone-tracking/cumulative.py
       - name: Commit download statistics
         run: |
           git config --global user.name 'tsalo'

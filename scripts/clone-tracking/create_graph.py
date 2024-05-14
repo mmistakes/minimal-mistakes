@@ -7,6 +7,7 @@ from bokeh.layouts import Spacer, column, row
 from bokeh.models import ColumnDataSource, CustomJS, DatetimeTickFormatter, Select
 from bokeh.plotting import curdoc, figure, output_file, show
 
+
 if __name__ == "__main__":
     script_dir = os.path.dirname(__file__)
     stats_dir = os.path.join(script_dir, "../../_data/clone-tracking")
@@ -19,14 +20,14 @@ if __name__ == "__main__":
             os.path.join(
                 script_dir,
                 "../../_data/clone-tracking/cumulative/all_repos_cumulative.csv",
-            )
-        )
+            ),
+        ),
     )
     df["date"] = pd.to_datetime(df["date"])
-    REPOS = list(df)[1:]
+    repos = [col for col in df.columns if col != "date"]
 
     # dropdown menu
-    select = Select(title="Repository", value="Overall", options=REPOS)
+    select = Select(title="Repository", value="Overall", options=repos)
 
     def get_data(source_data, repo):
         df = source_data[["date", repo]]
