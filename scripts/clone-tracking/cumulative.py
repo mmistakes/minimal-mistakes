@@ -9,11 +9,11 @@ import pandas as pd
 def main(folder):
     """Combine cumulative statistics for all repositories into a single file."""
     repo_wise_cumulative_files = sorted(
-        glob(os.path.join(folder, "ReproBrainChart_*_cumulative.csv"))
+        glob(os.path.join(folder, "ReproBrainChart_*_cum_clones.csv"))
     )
     dfs = []
     for file_ in repo_wise_cumulative_files:
-        repo_name = os.path.basename(file_).split("_cumulative")[0]
+        repo_name = os.path.basename(file_).split("_cum_clones")[0]
         repo_name = repo_name.replace("_", "/", 1)
         df = pd.read_csv(file_, index_col="date")
         df = df.rename({"clone_count": repo_name}, axis=1)
