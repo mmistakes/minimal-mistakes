@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "React Query란?"
+title: "React Query란"
 published: true
 ---
 
@@ -209,3 +209,25 @@ const { data } = useQuery(
 
 useQuery 훅은 요청마다 고유값 Unique Key (Query Key)를 필요로 한다. 해당 Unique Key로 서버 상태를 로컬에 캐시하고 관리한다. (재호출 등)
 
+아래는 유저 정보를 가져오는 샘플 코드이다.
+
+```javascript
+
+const User = () => {
+  const { isLoading, error, data } = useQuery(
+    'userInfo', // Key, 다른 컴포넌트에서 해당 키를 사용한 hook이 있으면, 캐시된 데이터를 우선 사용함
+    () => axios.get('/user').then(({ data }) => data)
+  );
+
+  if (isLoading) return <div> 로딩중 </div>
+  if (error) return <div> 에러 {error.message} </div>
+  if (!data) return <div> 데이터가 존재하지 않음 </div>
+
+  return (
+    <div>
+      {data.name}
+    </div>
+  )
+}
+
+```
