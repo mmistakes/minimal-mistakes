@@ -1,8 +1,8 @@
 ---
-name: "Golia Shafiei"
+name: "Andrea Jackowski"
 layout: single
-image: /assets/images/team/golia-shafiei.jpg
-site: "https://www.linkedin.com/in/goliashafiei/"
-position: "Post-Doctoral Researcher"
-affiliation: "University of Pennsylvania"
+image: /assets/images/team/andrea-jackowski.jpg
+site: "https://www.linkedin.com/in/andrea-jackowski-a5312551/"
+position: "Researcher"
+affiliation: "Federal University of São Paulo (UNIFESP)"
 ---

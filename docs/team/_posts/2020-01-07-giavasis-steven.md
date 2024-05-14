@@ -1,8 +1,8 @@
 ---
-name: "Lei Ai"
+name: "Steven Giavasis"
 layout: single
-image: /assets/images/team/placeholder-user.png
-site: "https://www.researchgate.net/scientific-contributions/Lei-Ai-2163473051"
-position: "Researcher"
+image: /assets/images/team/steven-giavasis.jpg
+site: "https://childmind.org/bio/steven-giavasis-ms/"
+position: "Lead Research Engineer"
 affiliation: "Child Mind Institute"
 ---

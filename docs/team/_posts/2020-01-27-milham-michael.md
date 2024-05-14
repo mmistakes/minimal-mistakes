@@ -1,8 +1,8 @@
 ---
-name: "Golia Shafiei"
+name: "Michael Milham"
 layout: single
-image: /assets/images/team/golia-shafiei.jpg
-site: "https://www.linkedin.com/in/goliashafiei/"
-position: "Post-Doctoral Researcher"
-affiliation: "University of Pennsylvania"
+image: /assets/images/team/michael-milham.jpg
+site: "https://www.linkedin.com/in/michael-milham-4625a2265/"
+position: "Director of Healthy Brain Network;"
+affiliation: "Child Mind Institute"
 ---

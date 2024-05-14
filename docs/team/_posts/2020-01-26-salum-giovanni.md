@@ -1,8 +1,8 @@
 ---
-name: "Golia Shafiei"
+name: "Giovanni Salum"
 layout: single
-image: /assets/images/team/golia-shafiei.jpg
-site: "https://www.linkedin.com/in/goliashafiei/"
-position: "Post-Doctoral Researcher"
-affiliation: "University of Pennsylvania"
+image: /assets/images/team/giovanni-salum.jpg
+site: "https://childmind.org/bio/giovanni-abrahao-salum-md-phd/"
+position: "Vice-President, Global Programs"
+affiliation: "Child Mind Institute"
 ---

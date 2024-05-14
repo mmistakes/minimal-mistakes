@@ -1,8 +1,8 @@
 ---
-name: "Golia Shafiei"
+name: "Nim Tottenham"
 layout: single
-image: /assets/images/team/golia-shafiei.jpg
-site: "https://www.linkedin.com/in/goliashafiei/"
-position: "Post-Doctoral Researcher"
-affiliation: "University of Pennsylvania"
+image: /assets/images/team/nim-tottenham.jpg
+site: "https://en.wikipedia.org/wiki/Nim_Tottenham"
+position: "Researcher"
+affiliation: "Columbia University"
 ---

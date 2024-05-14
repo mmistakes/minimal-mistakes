@@ -1,8 +1,8 @@
 ---
-name: "Lei Ai"
+name: "Tyler Moore"
 layout: single
-image: /assets/images/team/placeholder-user.png
-site: "https://www.researchgate.net/scientific-contributions/Lei-Ai-2163473051"
+image: /assets/images/team/tyler-moore.jpg
+site: "https://www.linkedin.com/in/tyler-moore-08660020"
 position: "Researcher"
-affiliation: "Child Mind Institute"
+affiliation: "University of Pennsylvania"
 ---

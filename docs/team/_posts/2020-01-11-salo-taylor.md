@@ -1,8 +1,8 @@
 ---
-name: "Lei Ai"
+name: "Taylor Salo"
 layout: single
-image: /assets/images/team/placeholder-user.png
-site: "https://www.researchgate.net/scientific-contributions/Lei-Ai-2163473051"
-position: "Researcher"
-affiliation: "Child Mind Institute"
+image: /assets/images/team/taylor-salo.jpg
+site: "https://www.linkedin.com/in/taylor-salo-3233b7a7"
+position: "Senior Scientist"
+affiliation: "University of Pennsylvania"
 ---

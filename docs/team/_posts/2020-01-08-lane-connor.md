@@ -1,8 +1,8 @@
 ---
-name: "Lei Ai"
+name: "Connor Lane"
 layout: single
-image: /assets/images/team/placeholder-user.png
-site: "https://www.researchgate.net/scientific-contributions/Lei-Ai-2163473051"
-position: "Researcher"
+image: /assets/images/team/connor-lane.jpg
+site: "https://childmind.org/bio/connor-lane-mse/"
+position: "Scientific Software Developer"
 affiliation: "Child Mind Institute"
 ---
