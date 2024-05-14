@@ -19,3 +19,6 @@ The model published by McElroy et al (2018) was chosen as this model better fit 
 
 
 
+<div style="text-align: center;">
+     <img src="/assets/images/misc/Figure_Harmonization_v1.png" width="850" height="850" />
+</div>

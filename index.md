@@ -91,6 +91,7 @@ author_profile: false
           <img src="/assets/images/logos/child_mind_institute.png" style="height: 150px;" />
           <img src="/assets/images/logos/beijing_normal_university.png" style="height: 150px;" />
           <img src="/assets/images/logos/columbia_university.png" style="height: 150px;" />
+          <img src="/assets/images/logos/BHRC.png" style="height: 140px;" />
      </div>
 
 </div>

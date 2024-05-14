@@ -8,12 +8,8 @@ main:
       url: /docs/datasets/dCCNP
     - title: "HBN"
       url: /docs/datasets/HBN
-    - title: "HCP-D"
-      url: /docs/datasets/HCP-D
     - title: "NKI"
       url: /docs/datasets/NKI
-    - title: "PACCT"
-      url: /docs/datasets/PACCT
     - title: "PNC"
       url: /docs/datasets/PNC
 - title:  Psychiatric Phenotyping
