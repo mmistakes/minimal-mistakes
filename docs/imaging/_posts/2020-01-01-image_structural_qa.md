@@ -10,4 +10,8 @@ These QC files are available in the BIDS and Freesurfer repository of each datas
 
 Additionally, their Euler numbers are also available.
 This workflow is depicted below.
--	T1 QC figure (when ready)
+
+<div style="text-align: center;">
+     <img src="/assets/images/misc/Figure_T1-QA_v2.png" width="700" height="300" />
+</div>
+
