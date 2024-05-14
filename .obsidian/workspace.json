@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
+                "file": "_posts/2024-05-14-BLDC Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "379ee8f555e1e53a",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
+                "file": "_posts/2024-05-14-BLDC Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md",
+                "file": "_posts/2024-05-14-BLDC Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-13-United_Automotive_Software.md"
+                "file": "_posts/2024-05-14-BLDC Control.md"
               }
             }
           },
@@ -163,12 +164,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15f9e4b82a29ee8a",
+  "active": "66e28d45e613edfc",
   "lastOpenFiles": [
+    "_posts/2024-05-13-United_Automotive_Software.md",
+    "_posts/2024-05-14-BLDC Control.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
     "_posts/2024-05-08-Obsidian with Git.md",
     "_posts/2024-05-11-Github-blog-local-website.md",
-    "_posts/2024-05-13-United_Automotive_Software.md",
     "_posts/2024-03-24-first.md",
     "files/jslogo.jpg",
     "screenshot.png",
