@@ -17,6 +17,8 @@ def main(folder):
         repo_name = repo_name.replace("_", "/", 1)
         df = pd.read_csv(file_, index_col="date")
         df = df.rename({"clone_count": repo_name}, axis=1)
+        # Drop duplicate index rows, retaining the highest clone count.
+        df = df.loc[~df.index.duplicated(keep="first")]
         dfs.append(df)
 
     # Concatenate all repo-wise cumulative stats into a single DataFrame
