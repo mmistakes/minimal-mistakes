@@ -44,6 +44,10 @@ def main(repo):
     else:
         df_clones_historical = pd.DataFrame(columns=["clone_count"])
 
+    # Ensure that the index is a datetime object
+    df_clones.index = pd.to_datetime(df_clones.index)
+    df_clones_historical.index = pd.to_datetime(df_clones_historical.index)
+
     if len(df_clones):
         # Merge df_clones and df_clones_historical.
         df_clones = pd.concat([df_clones_historical, df_clones], axis=0)
