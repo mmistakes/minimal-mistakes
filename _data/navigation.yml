@@ -28,9 +28,9 @@ main:
     - title: "Image Processing"
       url: /docs/imaging/image_processing
     - title: "Structural Image Quality"
-      url: /docs/imaging/image_structural_QA
+      url: /docs/imaging/image_structural_qa
     - title: "Functional Image Quality"
-      url: /docs/imaging/image_functional_QA
+      url: /docs/imaging/image_functional_qa
 - title: Community and Impact
   url: /docs/community
   hidden: true
@@ -39,8 +39,6 @@ main:
       url: /docs/team
     - title: "Publications"
       url: /docs/community/publications
-    - title: "Contribute"
-      url: /docs/community/contribute
     - title: "Get support"
       url: /docs/community/get_support
 - title: <em style="font-style:normal; font-weight:bold; color:#3F8AAC;"> Get Data </em>
