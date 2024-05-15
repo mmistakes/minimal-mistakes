@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "Templates/Basic Blog template.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "Templates/Basic Blog template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "Templates/Basic Blog template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md"
+                "file": "Templates/Basic Blog template.md"
               }
             }
           },
@@ -165,9 +165,9 @@
   },
   "active": "66e28d45e613edfc",
   "lastOpenFiles": [
+    "_posts/2024-05-14-BLDC Control.md",
     "Templates/Basic Blog template.md",
     "_posts/Test without Date.md",
-    "_posts/2024-05-14-BLDC Control.md",
     "files/jslogo.jpg",
     "_config.yml~",
     "_pages/404.md~",
