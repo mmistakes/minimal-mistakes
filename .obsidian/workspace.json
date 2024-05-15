@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Test without Date.md",
+                "file": "_posts/2024-05-14-BLDC Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Test without Date.md",
+                "file": "_posts/2024-05-14-BLDC Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Test without Date.md",
+                "file": "_posts/2024-05-14-BLDC Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Test without Date.md"
+                "file": "_posts/2024-05-14-BLDC Control.md"
               }
             }
           },

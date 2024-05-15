@@ -1,7 +1,8 @@
 ---
 layout: single
 title: BLDC Control
-categories: engineering
+categories:
+  - engineering
 tags:
   - arduino
   - embedded
