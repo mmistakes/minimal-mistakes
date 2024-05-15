@@ -125,7 +125,7 @@ author:
         #  # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://thejourneyofbabo.github.io/"
+      url: "https://github.com/thejourneyofbabo"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/cargo_build_js/"
@@ -141,7 +141,7 @@ footer:
     #  # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://thejourneyofbabo.github.io/"
+      url: "https://github.com/thejourneyofbabo"
       # - label: "GitLab"
       #   icon: "fab fa-fw fa-gitlab"
       #   # url:
