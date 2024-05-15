@@ -4,10 +4,6 @@ title: "React Query란"
 published: true
 classes: wide
 category: React Query
-sidebar:
-    nav: "React Query" 
-tags: 
-  - React Query
 ---
 
 # React Query란
