@@ -245,6 +245,6 @@ const { mutate } = useMutation(
 
 Side Effect를 발생시킨 후, 요청의 성공 여부에 따라 수행할 함수를 지정할 수 있다.
 
-> onSuccess: 쿼리 요청 성공시 실행되는 함수
-> onError:   쿼리 요청 실패시 실행되는 함수
-> onSettled: 성공/실패 관계 없이 쿼리 요청시 실행되는 함수
+> onSuccess: 쿼리 요청 성공시 실행되는 함수 <br />
+> onError:   쿼리 요청 실패시 실행되는 함수 <br />
+> onSettled: 성공/실패 관계 없이 쿼리 요청시 실행되는 함수 <br />
