@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/Test without Date.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/Test without Date.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/Test without Date.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md"
+                "file": "_posts/Test without Date.md"
               }
             }
           },
@@ -165,8 +165,10 @@
   },
   "active": "66e28d45e613edfc",
   "lastOpenFiles": [
-    "files/jslogo.jpg",
+    "Templates/Basic Blog template.md",
+    "_posts/Test without Date.md",
     "_posts/2024-05-14-BLDC Control.md",
+    "files/jslogo.jpg",
     "_config.yml~",
     "_pages/404.md~",
     "_site/404.html",
@@ -176,7 +178,6 @@
     "_posts/2024-05-08-Obsidian with Git.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
     "_posts/2024-03-24-first.md",
-    "Templates/Basic Blog template.md",
     "_posts/2024-05-11-Github-blog-local-website.md",
     "_site/categories/index.html",
     "_site/_pages/category-archive.md",
