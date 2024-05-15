@@ -197,7 +197,7 @@ React Query에서 비동기 데이터 요청을 Query와 Mutation이라는 2가�
 제공되는 useQuery훅을 통해 수행되는 Query 요청은 GET Method로, 서버에 저장된 상태를 불러올 때 사용한다.
 
 ```javascript
-// React Query useQuery 사용 예시
+// React Query useQuery 기본 사용 예시
 const { data } = useQuery(
   queryKey, // Required
   fetchFn, // The function that the query will use to request data.
@@ -231,3 +231,20 @@ const User = () => {
 }
 
 ```
+useMutation을 통해 수행되는 Query 요청은 POST, PUT, DELETE Method로, Side Effect를 발생시켜 서버의 상태를 변경시킬 때 사용한다.
+
+> Side Effect: 결과를 예측할 수 없는 것. 외부의 상태를 변경
+
+```javascript
+// React Query useMutation 기본 사용 예시
+const { mutate } = useMutation(
+  mutationFn, // Required
+  options
+)
+```
+
+Side Effect를 발생시킨 후, 요청의 성공 여부에 따라 수행할 함수를 지정할 수 있다.
+
+> onSuccess: 쿼리 요청 성공시 실행되는 함수
+> onError:   쿼리 요청 실패시 실행되는 함수
+> onSettled: 성공/실패 관계 없이 쿼리 요청시 실행되는 함수
