@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/2024-05-11-Github-blog-local-website.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "379ee8f555e1e53a",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/2024-05-11-Github-blog-local-website.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/2024-05-11-Github-blog-local-website.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md"
+                "file": "_posts/2024-05-11-Github-blog-local-website.md"
               }
             }
           },
@@ -166,6 +165,9 @@
   },
   "active": "66e28d45e613edfc",
   "lastOpenFiles": [
+    "_posts/2024-05-13-United_Automotive_Software.md",
+    "_posts/2024-05-11-Github-blog-local-website.md",
+    "_posts/2024-05-14-BLDC Control.md",
     "_site/BLDC-Control/index.html",
     "_site/BLDC-Control",
     "_site/United_Automotive_Software/index.html",
@@ -175,11 +177,8 @@
     "_site/Templates/Basic Blog template/index.html",
     "_site/Templates/Basic Blog template",
     "_site/Templates",
-    "_posts/2024-05-13-United_Automotive_Software.md",
-    "_posts/2024-05-14-BLDC Control.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
     "_posts/2024-05-08-Obsidian with Git.md",
-    "_posts/2024-05-11-Github-blog-local-website.md",
     "_posts/2024-03-24-first.md",
     "files/jslogo.jpg",
     "screenshot.png",
@@ -187,7 +186,6 @@
     "CHANGELOG.md",
     "Templates/Basic Blog template.md",
     "Templates",
-    "myblog/_site/jekyll/update/2024/05/11/welcome-to-jekyll.html",
     "myblog/_site/assets/minima-social-icons.svg",
     "_site/screenshot.png",
     "_site/screenshot-layouts.png",
