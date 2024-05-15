@@ -2,6 +2,7 @@
 layout: single
 title: BLDC Control
 categories: engineering
+tag: [arduino, embedded, bldc] 
 ---
 ## What is BLDC
 *Brushless DC electric motor*
