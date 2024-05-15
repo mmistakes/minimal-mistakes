@@ -39,10 +39,10 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            :  5 (default)
+    num_posts            :  #5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "github-light" (default), "github-dark"
+    theme                : #"github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
