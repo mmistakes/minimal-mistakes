@@ -6,7 +6,6 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Theme Settings
-#
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
@@ -18,78 +17,81 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Rock the JVM Blog"
 title_separator          : "-"
-subtitle                 : Articles on Scala, Kotlin, software and more
+subtitle                 : "Articles on Scala, Kotlin, software and more"
 name                     : "Rock the JVM"
 description              : "Blog about Scala, functional programming, distributed systems (Akka), big data (Apache Spark) and the JVM."
 url                      : "https://blog.rockthejvm.com"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# logo                     : "/assets/fiery-lava 128x128.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# logo                   : "/assets/fiery-lava 128x128.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : "" # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid                : ""
+    num_posts            : 5 # 5 (default)
+    colorscheme          : "light" # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "github-light" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch               : "master"
+    endpoint             : "" # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                : ""
+  secret                 : ""
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : true #, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+  path                   : "" # blank (default) uses feed.xml
+search                   : true # true, false (default)
+search_full_content      : false # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  application_id         : "" # YOUR_APPLICATION_ID
+  index_name             : "" # YOUR_INDEX_NAME
+  search_only_api_key    : "" # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  search_engine_id       : "" # YOUR_SEARCH_ENGINE_ID
+  instant_search         : false # false (default), true
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+google_site_verification : ""
+bing_site_verification   : ""
+yandex_site_verification : ""
+naver_site_verification  : ""
 
 # Social Sharing
 twitter:
   username               : "rockthejvm"
 facebook:
   username               : "rockthejvm"
-  app_id                 :
-  publisher              :
+  app_id                 : ""
+  publisher              : ""
 og_image                 : "images/blog cover large.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Organization" # Person or Organization (defaults to Person)
+  name                   : "Rock the JVM" # If the user or organization name differs from the site's name
+  links: 
+    - "https://twitter.com/rockthejvm"
+    - "https://facebook.com/rockthejvm"
+    - "https://github.com/rockthejvm"
+    - "https://youtube.com/rockthejvm"
 
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
-
+    tracking_id          : ""
+    anonymize_ip         : false # true, false (default)
 
 # Site Author
 author:
@@ -173,14 +175,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 #highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -193,19 +193,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
 permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: "" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
@@ -225,7 +222,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
-
 
 # Archives
 #  Type
@@ -255,14 +251,12 @@ jekyll-archives:
     category: /categories/:name/
     tag: /tags/:name/
 
-
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
