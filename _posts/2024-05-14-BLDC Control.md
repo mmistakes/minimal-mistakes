@@ -1,6 +1,7 @@
 ---
 layout: single
 title: BLDC Control
+categories: engineering
 ---
 ## What is BLDC
 *Brushless DC electric motor*
