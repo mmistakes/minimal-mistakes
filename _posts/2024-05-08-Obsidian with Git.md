@@ -12,7 +12,11 @@ toc: true
 - 사진 넣기 용이함.
 - 완벽?
 
-# Sample Blog Posting
-## Sample 1
+## Sample Blog Posting
+### Sample 1
+Hi Sample 1
+
 ### Sample 2
-#### Sample 3
+Hi Sample 2
+### Sample 3
+Hi Sample 3
