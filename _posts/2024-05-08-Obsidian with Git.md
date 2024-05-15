@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Obsidian with Git
+toc: true
 ---
 # Hello, using Obsidian with Git
 
@@ -10,3 +11,8 @@ title: Obsidian with Git
 - 깃허브 확장자 활용해서 자동 업로드
 - 사진 넣기 용이함.
 - 완벽?
+
+# Sample Blog Posting
+## Sample 1
+### Sample 2
+#### Sample 3
