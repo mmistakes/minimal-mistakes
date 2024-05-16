@@ -139,11 +139,11 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rockthejvm"
-      iconFile: "/comments-providers/icons/square-facebook.svg"
+      iconFile: "/comments-providers/icons/github.svg"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://youtube.com/rockthejvm"
-      iconFile: "/comments-providers/icons/square-facebook.svg"
+      iconFile: "/comments-providers/icons/youtube.svg"
 
 # Reading Files
 include:
