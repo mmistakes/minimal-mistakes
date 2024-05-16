@@ -67,10 +67,6 @@ bing_site_verification   : ""
 yandex_site_verification : ""
 naver_site_verification  : ""
 
-# Icons
-icons:
-  read_time_icon         : "/comments-providers/icons/clock.svg"
-
 # Social Sharing
 twitter:
   username               : "rockthejvm"
@@ -106,6 +102,7 @@ author:
   locationIcon     : "/comments-providers/icons/location.svg"
   email            : "daniel@rockthejvm.com"
   emailIcon        : "/comments-providers/icons/email.svg"
+  read_time_icon   : "/comments-providers/icons/clock.svg"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
