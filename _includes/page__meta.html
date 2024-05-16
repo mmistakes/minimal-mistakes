@@ -1,4 +1,5 @@
 {% assign document = post | default: page %}
+{% assign icons = page.icons %}
 {% if document.read_time or document.show_date %}
   <p class="page__meta">
     {% if document.show_date and document.date %}
