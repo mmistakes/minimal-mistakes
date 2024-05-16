@@ -103,6 +103,7 @@ author:
   email            : "daniel@rockthejvm.com"
   emailIcon        : "/comments-providers/icons/email.svg"
   read_time_icon   : "/comments-providers/icons/clock.svg"
+  feed_icon        : "/comments-providers/icons/feed.svg"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
