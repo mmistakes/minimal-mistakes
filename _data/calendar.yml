@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Ausflug A1 - Bibliothek Altstadt",
+    "title": "Ausflug A1 - Bibliothek Altstadt",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NTB0bm5ybDQzbXJzcTlrZjg0ZjQwbGxmdXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-16T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-16T12:30:00+02:00"
+    },
+    "created": "2024-05-15T09:11:13.000Z",
+    "updated": "2024-05-15T09:11:13.904Z"
+  },
+  {
+    "image_path": null,
     "alt": "Ausflug A2 - Gartenarbeitsschule",
     "title": "Ausflug A2 - Gartenarbeitsschule",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-04-07T10:00:01.000Z",
     "updated": "2024-04-07T10:00:01.489Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Demokratiefest für Familien",
-    "title": "Demokratiefest für Familien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=dW1hY2kycDNncXBwbHB1ZHEybDU2cTZobWcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-23T17:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-23T19:00:00+02:00"
-    },
-    "created": "2024-05-14T03:46:17.000Z",
-    "updated": "2024-05-14T03:46:17.529Z"
   }
 ]
