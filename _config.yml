@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Welcome to Xin PENG's Homepage"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Device Design of IGBTs and Application"
 name                     : "xinpeng-ust"
 description              : "An amazing website."
 url                      : "https://xinpeng-ust.github.io/" # e.g. "https://mmistakes.github.io"
