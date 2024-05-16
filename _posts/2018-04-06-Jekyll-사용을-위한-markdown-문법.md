@@ -1,13 +1,6 @@
 ---
-layout: page
+layout: single
 title: "편안한 Jekyll 사용을 위한 마크다운(markdown) 문법"
-description: "Github을 한다면 피해갈 수 없고, 편안한 Jekyll 사용을 위한 마크다운(markdown) 문법 간단 요약"
-headline: 편안한 Jekyll 사용을 위한 마크다운(markdown) 문법
-tags: [jekyll]
-comments: true
-published: true
-categories:
-  - jekyll
 ---
 
 Github Pages 운용을 위해서는 **markdown** 문법에 대한 이해도가 요구되며, [[공통] 마크다운 markdown 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601)을 참고하여 작성하였습니다.
