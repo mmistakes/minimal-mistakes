@@ -104,7 +104,7 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://rockthejvm.com"
-      iconFile: "icons/square-facebook.svg"
+      iconFile: "icons/link.svg"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/rockthejvm"
@@ -116,11 +116,11 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rockthejvm"
-      iconFile: "icons/square-facebook.svg"
+      iconFile: "icons/github.svg"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://youtube.com/rockthejvm"
-      iconFile: "icons/square-facebook.svg"
+      iconFile: "icons/youtube.svg"
 
 # Site Footer
 footer:
