@@ -1,3 +1,6 @@
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
@@ -25,7 +28,21 @@
       {% endfor %}
     {% endif %}
 
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <li>
+      <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">
+        {% if author.feed_icon %}
+          <svg class="icon">
+            {% capture svg %}
+              {% include {{ author.feed_icon }} %}
+            {% endcapture %}
+            {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+          </svg>
+        {% else %}
+          <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+        {% endif %} 
+        {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
+      </a>
+    </li>
   </ul>
 </div>
 
