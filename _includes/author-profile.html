@@ -36,7 +36,7 @@
           {% if author.locationIcon %}
             <svg class="icon">
               {% capture svg %}
-                {% include icons/twitter.svg %}
+                {% include {{ author.locationIcon }} %}
               {% endcapture %}
               {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
             </svg>
