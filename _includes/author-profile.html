@@ -33,6 +33,16 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          {% if author.locationIcon %}
+            <svg class="icon">
+              {% capture svg %}
+                {% include {{ author.locationIcon }} %}
+              {% endcapture %}
+              {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+            </svg>
+          {% else %}
+            <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+          {% endif %}
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
         </li>
       {% endif %}
