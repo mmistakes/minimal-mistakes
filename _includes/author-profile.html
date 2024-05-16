@@ -72,6 +72,16 @@
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
+            {% if link.emailIcon %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ link.emailIcon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% else %}
+              <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+            {% endif %}
             <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
           </a>
         </li>
