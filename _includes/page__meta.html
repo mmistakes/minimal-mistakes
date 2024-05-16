@@ -1,5 +1,6 @@
 {% assign document = post | default: page %}
-{% assign icons = page.icons %}
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
 {% if document.read_time or document.show_date %}
   <p class="page__meta">
     {% if document.show_date and document.date %}
@@ -18,10 +19,10 @@
 
       <span class="page__meta-readtime">
         <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
-        {% if icons.read_time_icon %}
+        {% if author.read_time_icon %}
           <svg class="icon">
             {% capture svg %}
-              {% include {{ icons.read_time_icon }} %}
+              {% include {{ author.read_time_icon }} %}
             {% endcapture %}
             {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
           </svg>
