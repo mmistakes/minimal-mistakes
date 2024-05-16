@@ -99,6 +99,7 @@ author:
   avatar           : "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto/yge0qeqj1m9toqla3qfg"
   bio              : "I'm a software engineer and the founder of Rock the JVM. I teach Scala, Kotlin, Java, big data and a variety of tech both live and in online courses."
   location         : "Bucharest, Romania"
+  locationIcon     : "/comments-providers/icons/location.svg"
   email            : "daniel@rockthejvm.com"
   links:
     - label: "Website"
