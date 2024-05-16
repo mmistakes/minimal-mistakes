@@ -135,7 +135,7 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/rockthejvm"
-      iconFile: "/comments-providers/icons/square-facebook.svg"
+      iconFile: "/comments-providers/icons/facebook-square.svg"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rockthejvm"
