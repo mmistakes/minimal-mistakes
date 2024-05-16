@@ -18,7 +18,6 @@
       {% assign words = document.content | strip_html | number_of_words %}
 
       <span class="page__meta-readtime">
-        <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
         {% if author.read_time_icon %}
           <svg class="icon">
             {% capture svg %}
