@@ -101,6 +101,7 @@ author:
   location         : "Bucharest, Romania"
   locationIcon     : "/comments-providers/icons/location.svg"
   email            : "daniel@rockthejvm.com"
+  emailIcon        : "/comments-providers/icons/email.svg"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
