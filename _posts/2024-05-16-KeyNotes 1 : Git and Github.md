@@ -1,2 +1,2 @@
-## ✨ Key Notes : Git and Github
+## ✨ Key Notes : Git and Github !
 ---
