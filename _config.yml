@@ -121,7 +121,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rockthejvm"
-      iconFile: "/github.svg"
+      iconFile: "/comments-providers/icons/github.svg"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://youtube.com/rockthejvm"
