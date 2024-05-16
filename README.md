@@ -3,6 +3,7 @@
 > For Beginners: Conceptual Overview and Reference
 > 
 <br>
+
 ### 1️⃣  Project Objective and Target Users
 
 ---
@@ -10,7 +11,6 @@
 - This project was created to provide a guide for those feeling overwhelmed about how to prepare for coding tests, aiming to offer some assistance.
 - It shares a guide that can be helpful for both major and non-major students preparing for coding tests, along with daily notes for reference.
 <br>
-
 
 ### 2️⃣  Table of Contents
 
