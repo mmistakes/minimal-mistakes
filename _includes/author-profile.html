@@ -38,7 +38,7 @@
             {% if link.iconFile %}
               <svg class="icon">
                 {% capture svg %}
-                  {% include_relative icons/twitter.svg %}
+                  {% include /comments-providers/twitter.svg %}
                 {% endcapture %}
                 {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
               </svg>
