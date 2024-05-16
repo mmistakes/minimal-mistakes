@@ -14,6 +14,8 @@ toc: true
 Synchronous motor using a direct current(DC) electric power supply. 
 
 ## How to Control BLDC Motor?
+>**FOC control**
+
 
 
 
