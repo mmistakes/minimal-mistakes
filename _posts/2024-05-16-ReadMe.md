@@ -1,8 +1,8 @@
-## Coding Test Guide for Beginners
+## 📌 Coding Test Guide for Beginners
 
 > For Beginners: Conceptual Overview and Reference
 > 
-<br><br>
+<br>
 ### 1️⃣  Project Objective and Target Users
 
 ---
