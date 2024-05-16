@@ -250,3 +250,45 @@ Side Effect를 발생시킨 후, 요청의 성공 여부에 따라 수행할 함
 > onSuccess: 쿼리 요청 성공시 실행되는 함수 <br />
 > onError:   쿼리 요청 실패시 실행되는 함수 <br />
 > onSettled: 성공/실패 관계 없이 쿼리 요청시 실행되는 함수 <br />
+
+아래는 간단한 샘플 코드이다.
+
+```javascript
+// 서버에 정보를 전달하기 위한 Custom Hook
+import axios from 'axios';
+import { useMutation, useQueryClient } from 'react-query';
+import { QUERY_KEY as getContractQueryKey } from './useContractQuery';
+
+const apiFetch = (params: string) => axios.post('/create/contract', { params });
+
+const useCreateContractMutation = () => {
+  const queryClient = useQueryClient();
+
+  return useMutation(apiFetch, {
+    // 해당 쿼리키로 관리되는 서버 상태를 다시 불러오기 위해
+    // mutate 요청 성공 후, API Response Cache 초기화
+    onSuccess: () => queryClient.invalidateQueries(getContractQueryKey),
+  });
+};
+```
+
+```javascript
+import useCreateContractMutation from 'quires/useCreateContractMutation';
+
+function Todo() {
+  // 서버에 새로운 계약을 생성하기 위한 Custom Hook
+  const { mutate } = useCreateContractMutation();
+
+  const handleCreateContract = () => {
+    mutate({ title: "계약서" });
+  }
+
+  return (
+    <div>
+      <button onClick={handleCreateContract}>계약 생성</button>
+    </div>
+  );
+}
+
+export default Todo;
+```
