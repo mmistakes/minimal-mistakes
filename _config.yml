@@ -131,15 +131,19 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/rockthejvm"
+      iconFile: "assets/images/twitter.svg"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/rockthejvm"
+      iconFile: "assets/images/square-facebook.svg"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rockthejvm"
+      iconFile: "assets/images/square-facebook.svg"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://youtube.com/rockthejvm"
+      iconFile: "assets/images/square-facebook.svg"
 
 # Reading Files
 include:
