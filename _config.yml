@@ -270,6 +270,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      read_time_icon: "/comments-providers/icons/clock.svg"
       comments: # true
       share: true
       related: true
