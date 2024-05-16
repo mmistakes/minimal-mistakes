@@ -52,10 +52,10 @@
           {% if link.label and link.url %}
             <li>
               <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
-                {% if link.iconFile %}
+                {% if author.emailIcon %}
                   <svg class="icon">
                     {% capture svg %}
-                      {% include {{ link.iconFile }} %}
+                      {% include {{ author.emailIcon }} %}
                     {% endcapture %}
                     {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
                   </svg>
