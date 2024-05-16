@@ -67,6 +67,10 @@ bing_site_verification   : ""
 yandex_site_verification : ""
 naver_site_verification  : ""
 
+# Icons
+icons:
+  read_time_icon         : "/comments-providers/icons/clock.svg"
+
 # Social Sharing
 twitter:
   username               : "rockthejvm"
@@ -270,7 +274,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      read_time_icon: "/comments-providers/icons/clock.svg"
       comments: # true
       share: true
       related: true
