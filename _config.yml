@@ -95,7 +95,7 @@ global_icons:
   calendar_icon          : "icons/calendar.svg"
   email_icon             : "icons/email.svg"
   read_time_icon         : "icons/clock.svg"
-  feed_icon              : "icons/feed.svg"
+  feed_icon              : "icons/rss.svg"
   file_icon              : "icons/file-alt.svg"
   location_icon          : "icons/location.svg"
 
