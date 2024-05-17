@@ -14,7 +14,19 @@
   {% assign tag_hashes = page_tags | split: ',' | sort %}
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+    <strong>
+      {% if site.global_icons.tag_icon %}
+        <svg class="icon">
+          {% capture svg %}
+            {% include {{ site.global_icons.tag_icon }} %}
+          {% endcapture %}
+          {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+        </svg>
+      {% else %}
+        <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+      {% endif %} 
+      {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} 
+    </strong>
     <span itemprop="keywords">
     {% for hash in tag_hashes %}
       {% assign keyValue = hash | split: '|' %}

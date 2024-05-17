@@ -1,5 +1,35 @@
 {% if page.last_modified_at %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></p>
+  <p class="page__date">
+    <strong>
+      {% if site.global_icons.calendar_icon %}
+        <svg class="icon">
+          {% capture svg %}
+            {% include {{ site.global_icons.calendar_icon }} %}
+          {% endcapture %}
+          {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+        </svg>
+      {% else %}
+        <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+      {% endif %} 
+      {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}
+    </strong>
+    <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time>
+  </p>
 {% elsif page.date %}
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  <p class="page__date">
+    <strong>
+      {% if site.global_icons.calendar_icon %}
+        <svg class="icon">
+          {% capture svg %}
+            {% include {{ site.global_icons.calendar_icon }} %}
+          {% endcapture %}
+          {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+        </svg>
+      {% else %}
+        <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+      {% endif %}  
+      {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}
+    </strong> 
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </p>
 {% endif %}
