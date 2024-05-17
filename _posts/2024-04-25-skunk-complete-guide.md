@@ -13,6 +13,10 @@ _by [Derick Bomen](https://www.linkedin.com/in/bomen-derick-b6b06517b/)_
 
 In modern application development, efficient database interactions are crucial for building scalable and maintainable systems. Scala, being a versatile language, offers various tools and libraries to streamline these interactions. One such powerful tool among others ([Doobie](https://index.scala-lang.org/tpolecat/doobie/artifacts/doobie-hikari/0.9.0?binary-version=_2.13), [Slick](https://index.scala-lang.org/slick/slick), [Quill](https://index.scala-lang.org/zio/zio-quill) etc) is the [Skunk Scala library](https://typelevel.org/skunk/), which provides a functional and typesafe interface for PostgreSQL databases access in Scala applications. In this article, we'll delve deep into Skunk, exploring its features and demonstrating how to interact with a database effectively in a non-blocking manner.
 
+For the video version, watch on [YouTube](https://youtu.be/xNCCHFljwBg):
+
+{% include video id="xNCCHFljwBg" provider="youtube" %}
+
 ## 2. What is Skunk?
 
 Skunk is a robust Scala library that has been specifically crafted to offer optimal database access to PostgreSQL. Its functional, typesafe, resource-safe session, and composable interface provides a high level of type-safety, ensuring that SQL queries are checked at compile-time. With Skunk, developers can expect a reliable and efficient way to interact with PostgreSQL databases. Its advanced features offer a seamless and typesafe experience that enables developers to streamline their database access and management. Skunk is the perfect choice for developers who strive to achieve efficient and secure database access while maintaining a high level of type-safety.
@@ -200,35 +204,35 @@ In Skunk, given instances such as `Temporal, Trace, Network, and Console` play e
 
   object main extends IOApp {
 
-    def singleSession(config: Config): IO[Unit] = DbConnection.single[IO](config).use { session =>
-      for {
-        _           <- IO(println("Using a single session..."))
-        dateAndTime <- session.unique(sql"select current_timestamp".query(timestamptz))
-        _           <- IO(println(s"Current date and time is $dateAndTime."))
-      } yield ()
-    }
-
-    def pooledSession(config: Config): IO[Unit] = DbConnection.pooled[IO](config).use { resource =>
-      resource.use { session =>
+    def singleSession(config: Config): IO[Unit] = 
+      DbConnection.single[IO](config).use { session =>
         for {
-          _           <- IO(println("Using a pooled session..."))
+          _           <- IO(println("Using a single session..."))
           dateAndTime <- session.unique(sql"select current_timestamp".query(timestamptz))
           _           <- IO(println(s"Current date and time is $dateAndTime."))
         } yield ()
       }
-    }
+
+    def pooledSession(config: Config): IO[Unit] = 
+      DbConnection.pooled[IO](config).use { resource =>
+        resource.use { session =>
+          for {
+            _           <- IO(println("Using a pooled session..."))
+            dateAndTime <- session.unique(sql"select current_timestamp".query(timestamptz))
+            _           <- IO(println(s"Current date and time is $dateAndTime."))
+          } yield ()
+        }
+      }
 
     override def run(args: List[String]): IO[ExitCode] = {
       val config: Either[ConfigReaderFailures, Config] = ConfigSource.default.at("db").load[Config]
-      config match
-      case Left(configFailure) =>
-        for {
-          _ <- IO(println(configFailure.prettyPrint(2)))
-        } yield ExitCode.Success
-
-      case Right(configValues) =>
-        singleSession(configValues) *> pooledSession(configValues) *> IO.pure(ExitCode.Success)
-    }
+      config match {
+        case Left(configFailure) =>
+          IO(println(configFailure.prettyPrint(2))).as(ExitCode.Success)
+        case Right(configValues) =>
+          singleSession(configValues) *> pooledSession(configValues) *> IO.pure(ExitCode.Success)
+      }
+    }   
   }
   ```
   We first load configuration values from `application.conf`. If values are properly set up, we pass the config values to both methods `singleSession` and `pooledSession` to establish our database connections with the help of `DbConnection` object we previously created and run both connections in a sequence. Otherwise, we print errors to the console to better understand what went wrong. We now test our database connections by fetching the current date and time of our system, and if our connections was succesfully established, we should have an output similar to the following.
