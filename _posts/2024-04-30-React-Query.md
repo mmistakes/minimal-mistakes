@@ -192,7 +192,7 @@ export default App;
 
 위와 같은 상황을 해결하기 위해 React Query를 도입하면 이러한 복잡성을 줄일 수 있다.
 
-## a. Query와 Mutation
+## Query와 Mutation
 
 React Query에서 비동기 데이터 요청을 Query와 Mutation이라는 2가지 유형으로 나누어 생각한다.
 
@@ -292,3 +292,107 @@ function Todo() {
 
 export default Todo;
 ```
+
+# 3. React Query외 다른 라이브러리는?
+
+React Query와 성격이 비슷한 데이터 페칭 라이브러리는 SWR (stale-while-revalidate)가 있다.
+
+![ReactQuery_SWR](../assets/img/ReactQuery.png)
+
+위 사진은 [State of js](https://2022.stateofjs.com/en-US/other-tools/#data_fetching)에서 조사한 2022 라이브러리 사용 빈도이며, TanStack Query (React Query) 다음으로 SWR가 많이 사용되고 있는 걸 볼 수 있다.
+
+아래 코드를 통해 React Query와 유사한 점과 차이점을 알아보자.
+
+```javascript
+// SWR 기본 사용 예시
+import useSWR from 'swr';
+import axios from 'axios;
+
+const url = "/api";
+const fetcher = (url:string) => axios.get(url).then((res) => res.data);
+
+const App = () => {
+  const { data, error, isLoading } = useSWR(QUERY_KEY, fetcher);
+
+  return (
+    <div>
+      {data.name}
+    </div>
+  )}
+```
+
+SWR은 첫 번째 인자로 URL을 키로 사용하고, 두 번째 인자로 fetch 함수를 받는다.
+이 방식으로 SWR은 URL을 키로 삼아 fetch 함수를 통해 데이터를 가져온다.
+
+일반적으로 요청에는 "loading", "ready", "error"의 세 가지 상태가 있다.
+data, error, isLoading 값을 사용하여 요청의 현재 상태를 확인하여 필요한 UI를 반환할 수 있다.
+
+또한 React Query와 비슷하게 Custom Hook을 통해 쉽게 재사용 할 수 있다.
+
+```javascript
+// user 정보를 얻어오는 커스텀 훅
+const useUser = (id:string) => {
+  const { data, error, isLoading } = useSWR(`/api/user/${id}`, fetcher)
+ 
+  return {
+    user: data,
+    isLoading,
+    isError: error
+  }
+}
+```
+
+Data fetching 와 몇 기능에 조금의 차이는 있지만, 추구하는 방향이 비슷한 걸 볼 수 있다.
+
+그렇다면 **차이점은** 무엇인지 알아보자.
+
+* Provider의 유무
+
+> React-Query는 App (또는 root) 컴포넌트에 Provider로 감싸줘야, 자식 컴포넌트에서 사용 가능하며, SWR은 그냥 fetching 하면 된다.
+
+React Query는 QueryClient라는 객체를 통해 모든 쿼리와 관련된 상태를 중앙에서 관리한다.
+
+QueryClientProvider를 사용하여 QueryClient를 React 컴포넌트에 삽입하면, 트리 내의 모든 컴포넌트가 동일한 QueryClient 인스턴스를 공유하게 된다.
+이를 통해 캐싱, 재요청, 가비지 컬렉션 등의 기능이 이루어진다.
+
+반면 SWR은 단순성과 사용 편의성을 강조한다.
+
+별도의 Provider 설정 없이도 전역적으로 캐시가 공유되도록 설계되었기에,
+SWR 훅을 직접 호출하면, 내부적으로 글로벌 캐시를 사용하여 데이터 페칭 및 캐싱을 처리한다.
+
+
+* fetcher 정의
+
+> useSWR, useQuery 모두 두 번째 인자로 fetcher를 받는다. <br />
+> 하지만 SWR은 fetcher의 인자로 useSWR의 첫 번째 인자(url)를 넘겨 주고, useQuery는 fetcher에 url을 직접 전달해야 한다.
+
+또한 SWR은 전역 설정을 통해 fetcher를 정해 둘 수 있지만, React Query는 항상 두 번째 인자에 fetcher를 넘겨 줘야 한다.
+
+
+* Mutation
+
+> SWR과 React Query엔 Mutation이라는 개념이 있다. <br />
+> 하지만 개념이 서로 다르게 적용된다.
+
+둘 다 '변형시킨다' 라는 의미를 가졌지만,
+
+**React Query**는 서버의 상태를 변형시킨 후, 쿼리를 갱신하여 최신 데이터를 반영하는 방식이고,
+**SWR**은 useSWR()을 통해 캐시된 데이터를 Client에서 변형시킨 후, 필요에 따라 서버 요청을 통해 데이터를 동기화한다.
+
+---
+
+React Query는 서버 상태 관리를 위한 라이브러리로, 데이터를 효율적으로 페칭하고 캐싱하며, 자동으로 refetching, 쿼리 무효화, 재시도 등의 기능을 제공한다.
+주로 RESTful API와 잘 어울리며, 데이터를 관리하는 데 필요한 다양한 옵션을 제공합니다.
+
+비슷한 라이브러리로 SWR이 있으며, 프로젝트 상황에 맞게 라이브러리를 선택하면 된다.
+
+> SWR을 사용해야 할 때: 간단하고 빠른 설정으로 캐싱과 페칭을 구현하고 싶을 때 <br />
+> React Query를 사용해야 할 때: 복잡한 서버 상태 관리와 다양한 옵션이 필요한 경우
+
+### Reference
+
+[Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview)
+[State of js](https://2022.stateofjs.com/en-US/other-tools/#data_fetching)
+[SWR](https://swr.vercel.app/ko/docs/getting-started)
+
+
