@@ -18,10 +18,10 @@
       {% assign words = document.content | strip_html | number_of_words %}
 
       <span class="page__meta-readtime">
-        {% if author.read_time_icon %}
+        {% if site.global_icons.read_time_icon %}
           <svg class="icon">
             {% capture svg %}
-              {% include {{ author.read_time_icon }} %}
+              {% include {{ site.global_icons.read_time_icon }} %}
             {% endcapture %}
             {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
           </svg>

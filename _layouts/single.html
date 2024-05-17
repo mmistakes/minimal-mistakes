@@ -40,10 +40,10 @@ layout: default
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
               <header><h4 class="nav__title">
-                {% if author.file_icon %}
+                {% if site.global_icons.file_icon %}
                   <svg class="icon">
                     {% capture svg %}
-                      {% include {{ author.file_icon }} %}
+                      {% include {{ site.global_icons.file_icon }} %}
                     {% endcapture %}
                     {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
                   </svg>

@@ -33,10 +33,10 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          {% if author.locationIcon %}
+          {% if site.global_icons.location_icon %}
             <svg class="icon">
               {% capture svg %}
-                {% include {{ author.locationIcon }} %}
+                {% include {{ site.global_icons.location_icon }} %}
               {% endcapture %}
               {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
             </svg>
@@ -81,10 +81,10 @@
         <li>
           <a href="mailto:{{ author.email }}">
             <meta itemprop="email" content="{{ author.email }}" />
-            {% if author.emailIcon %}
+            {% if site.global_icons.email_icon %}
               <svg class="icon">
                 {% capture svg %}
-                  {% include {{ author.emailIcon }} %}
+                  {% include {{ site.global_icons.email_icon }} %}
                 {% endcapture %}
                 {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
               </svg>
