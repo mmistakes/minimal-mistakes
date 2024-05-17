@@ -2,7 +2,7 @@
 title: "Comparing Akka Streams, Kafka Streams and Spark Streaming"
 date: 2020-06-17
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [kafka, akka streams, spark, spark streaming]
 excerpt: "We compare three of the most popular streaming libraries and see where Akka Streams, Kafka Streams and Spark Streaming are most useful."
 ---

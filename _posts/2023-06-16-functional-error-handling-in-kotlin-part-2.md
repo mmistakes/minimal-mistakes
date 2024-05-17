@@ -2,7 +2,7 @@
 title: "Functional Error Handling in Kotlin, Part 2: Result and Either"
 date: 2023-06-16
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [kotlin]
 excerpt: "In this article, we continue our journey through functional error handling by looking at the `Result` and `Either` data types and how to use them."
 toc: true

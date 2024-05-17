@@ -2,7 +2,7 @@
 title: "Kotlin Flows - The Ultimate Guide"
 date: 2024-04-10
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [kotlin]
 excerpt: "This article thoroughly covers a crucial concept in Kotlin Coroutines: Kotlin Flows. Flows are a reactive data structure you probably didn't know, but you can't live without them once you know them."
 toc: true

@@ -2,7 +2,7 @@
 title: "2020 Retrospective (and What's Coming in 2021)"
 date: 2020-12-07
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [meta]
 excerpt: "In this article I'll wrap 2020 and share a few insights, achievements and changes, and I'll project some plans for the future of Rock the JVM."
 ---

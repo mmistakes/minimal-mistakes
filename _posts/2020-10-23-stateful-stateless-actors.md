@@ -2,7 +2,7 @@
 title: "Akka Typed Actors: Stateful and Stateless"
 date: 2020-10-22
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [akka]
 excerpt: "Akka Typed has fundamentally changed the way we create actors. In this article we'll look at several ways we can keep state inside Akka actors."
 ---

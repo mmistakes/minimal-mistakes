@@ -2,7 +2,7 @@
 title: "Functional Error Handling in Kotlin, Part 3: The Raise DSL"
 date: 2023-09-20
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [kotlin]
 excerpt: "It's time to end our journey on functional error handling in Kotlin with the new features introduced by the Arrow library in version 1.2.0. We'll focus on the `Raise` DSL, a new way to handle typed errors using Kotlin contexts."
 toc: true

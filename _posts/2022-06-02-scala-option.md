@@ -2,7 +2,7 @@
 title: "Scala Option: A Gentle Introduction"
 date: 2022-06-02
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [scala, beginners]
 excerpt: "Scala Options are some of the first things we learn - but why? What do they do, and why are they useful?"
 ---

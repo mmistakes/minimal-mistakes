@@ -2,7 +2,7 @@
 title: "Optimizing Kafka Clients: A Hands-On Guide"
 date: 2023-01-22
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/dkoypjlgr/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,fl_progressive/v1715952116/blog_cover_large_phe6ch.jpg"
 tags: [kotlin, kafka, streaming]
 excerpt: "Tips on how to make Kafka clients run blazing fast, with code examples."
 attribution: <a href="https://www.vecteezy.com/free-vector/squirrel-cartoon">Squirrel Cartoon Vectors by Vecteezy</a>
