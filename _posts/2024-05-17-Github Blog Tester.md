@@ -9,7 +9,6 @@ toc: true
 author_profile: true
 sidebar:
   nav: docs
-sitemap: true
 ---
 ## This is the Tester File for Blog
 ```
