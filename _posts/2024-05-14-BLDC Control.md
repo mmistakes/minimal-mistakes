@@ -8,6 +8,7 @@ tags:
   - embedded
   - bldc
 toc: true
+author_profile: true
 ---
 ## What is BLDC
 *Brushless DC electric motor*
