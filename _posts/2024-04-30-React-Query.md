@@ -297,7 +297,7 @@ export default Todo;
 
 React Query와 성격이 비슷한 데이터 페칭 라이브러리는 SWR (stale-while-revalidate)가 있다.
 
-![ReactQuery_SWR](../assets/img/ReactQuery.png)
+![2022_data_fetching](../assets/img/2022_data_fetching.png)
 
 위 사진은 [State of js](https://2022.stateofjs.com/en-US/other-tools/#data_fetching)에서 조사한 2022 라이브러리 사용 빈도이며, TanStack Query (React Query) 다음으로 SWR가 많이 사용되고 있는 걸 볼 수 있다.
 
@@ -381,6 +381,8 @@ SWR 훅을 직접 호출하면, 내부적으로 글로벌 캐시를 사용하여
 
 ---
 
+## 결론
+
 React Query는 서버 상태 관리를 위한 라이브러리로, 데이터를 효율적으로 페칭하고 캐싱하며, 자동으로 refetching, 쿼리 무효화, 재시도 등의 기능을 제공한다.
 주로 RESTful API와 잘 어울리며, 데이터를 관리하는 데 필요한 다양한 옵션을 제공합니다.
 
@@ -389,10 +391,10 @@ React Query는 서버 상태 관리를 위한 라이브러리로, 데이터를 �
 > SWR을 사용해야 할 때: 간단하고 빠른 설정으로 캐싱과 페칭을 구현하고 싶을 때 <br />
 > React Query를 사용해야 할 때: 복잡한 서버 상태 관리와 다양한 옵션이 필요한 경우
 
-### Reference
+## Reference
 
-[Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview)
-[State of js](https://2022.stateofjs.com/en-US/other-tools/#data_fetching)
+[Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview) <br />
+[State of js](https://2022.stateofjs.com/en-US/other-tools/#data_fetching) <br />
 [SWR](https://swr.vercel.app/ko/docs/getting-started)
 
 
