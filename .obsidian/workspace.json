@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-17-Github Blog Tester.md",
+                "file": "_posts/2024-05-08-Obsidian with Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-17-Github Blog Tester.md",
+                "file": "_posts/2024-05-08-Obsidian with Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-17-Github Blog Tester.md",
+                "file": "_posts/2024-05-08-Obsidian with Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-17-Github Blog Tester.md"
+                "file": "_posts/2024-05-08-Obsidian with Git.md"
               }
             }
           },
@@ -177,10 +177,10 @@
   },
   "active": "0224bc0574ed2699",
   "lastOpenFiles": [
-    "_sass/minimal-mistakes.scss~",
-    "_sass/minimal-mistakes/_variables.scss~",
-    "_posts/2024-05-08-Obsidian with Git.md",
     "_posts/2024-05-17-Github Blog Tester.md",
+    "_sass/minimal-mistakes/_variables.scss~",
+    "_sass/minimal-mistakes.scss~",
+    "_posts/2024-05-08-Obsidian with Git.md",
     "_site/search/index.html",
     "_site/search",
     "_site/_pages/search.md",
@@ -191,7 +191,6 @@
     "_site/docs/javascript/index.html",
     "_site/docs/javascript",
     "_site/docs",
-    "_site/page-a/index.html",
     "_posts/2024-05-17-Blog Edge case tester.md",
     "Templates/Basic Blog template.md",
     "_posts/2024-05-14-BLDC Control.md",
