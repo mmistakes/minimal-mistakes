@@ -73,8 +73,8 @@ twitter:
   icon                   : "icons/twitter.svg"
 facebook:
   username               : "rockthejvm"
-  icon                   : "icons/twitter.svg"
-  app_id                 : "icons/facebook-square.svg"
+  icon                   : "icons/facebook-square.svg"
+  app_id                 : ""
   publisher              : ""
 linkedin:
   icon                   : "icons/linkedin.svg"
