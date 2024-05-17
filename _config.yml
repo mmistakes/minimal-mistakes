@@ -93,6 +93,11 @@ social:
 global_icons:
   tag_icon               : "icons/tag.svg"
   calendar_icon          : "icons/calendar.svg"
+  email_icon             : "icons/email.svg"
+  read_time_icon         : "icons/clock.svg"
+  feed_icon              : "icons/feed.svg"
+  file_icon              : "icons/file-alt.svg"
+  location_icon          : "icons/location.svg"
 
 # Analytics
 analytics:
@@ -107,12 +112,7 @@ author:
   avatar           : "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto/yge0qeqj1m9toqla3qfg"
   bio              : "I'm a software engineer and the founder of Rock the JVM. I teach Scala, Kotlin, Java, big data and a variety of tech both live and in online courses."
   location         : "Bucharest, Romania"
-  locationIcon     : "icons/location.svg"
   email            : "daniel@rockthejvm.com"
-  emailIcon        : "icons/email.svg"
-  read_time_icon   : "icons/clock.svg"
-  feed_icon        : "icons/feed.svg"
-  file_icon        : "icons/file-alt.svg"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
