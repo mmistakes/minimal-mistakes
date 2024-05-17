@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Basic Blog template.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Basic Blog template.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Basic Blog template.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Basic Blog template.md"
+                "file": "_posts/2024-05-17-Github Blog Tester.md"
               }
             }
           },
@@ -164,6 +164,12 @@
   },
   "active": "66e28d45e613edfc",
   "lastOpenFiles": [
+    "_site/tags/setup/index.html",
+    "_site/tags/setup",
+    "_site/tags/blog/index.html",
+    "_site/tags/blog",
+    "Templates/Basic Blog template.md",
+    "_data/navigation.yml~",
     "_posts/2024-05-17-Github Blog Tester.md",
     "_site/Github-Blog-Tester/index.html",
     "_site/Github-Blog-Tester",
@@ -172,17 +178,12 @@
     "_posts/2024-05-13-United_Automotive_Software.md",
     "_posts/2024-05-14-BLDC Control.md",
     "_posts/2024-03-24-first.md",
-    "Templates/Basic Blog template.md",
     "_site/coding/Github-blog-local-website/index.html",
     "_site/coding/Github-blog-local-website",
     "_site/coding",
     "_site/categories/coding/index.html",
-    "_site/categories/coding",
     "_posts/Test without Date.md",
     "files/jslogo.jpg",
-    "_config.yml~",
-    "_pages/404.md~",
-    "_site/404.html",
     "_site/_pages/404.md",
     "_pages/404.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
