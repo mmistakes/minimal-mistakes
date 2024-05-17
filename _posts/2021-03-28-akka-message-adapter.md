@@ -2,7 +2,7 @@
 title: "Akka Typed: Adapting Messages"
 date: 2021-03-28
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "In this article we'll see a good practice for organizing code, messages, domains and logic in an Akka application with Scala."
 ---

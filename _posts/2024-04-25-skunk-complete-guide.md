@@ -2,7 +2,7 @@
 title: "The Skunk Scala Library for Database Interaction: A Comprehensive Guide"
 date: 2024-04-25
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [skunk]
 excerpt: "Learn how to use the Skunk library to interact with PostgreSQL database in a type-safe and non-blocking manner."
 ---

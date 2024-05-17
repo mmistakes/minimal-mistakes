@@ -2,7 +2,7 @@
 title: "Streaming Analytics with Apache Pulsar and Spark Structured Streaming"
 date: 2022-01-29
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [pulsar, spark, spark structured streaming]
 excerpt: "We'll discuss the role Apache Pulsar plays in the event streaming and computing landscape, the use cases you can implement with Pulsar and when more advanced computing engines should be integrated to implement more sophisticated stream processing use cases."
 ---

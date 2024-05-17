@@ -2,7 +2,7 @@
 title: "Let's Talk About the Scala 3 Indentation"
 date: 2020-11-02
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
 excerpt: "Some people love it, some hate it. Scala 3 indented syntax is not that bad, and it might actually help. Let's take a look at how Scala 3 can change the structure of our code."
 ---

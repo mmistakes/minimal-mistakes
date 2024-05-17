@@ -2,7 +2,7 @@
 title: "ALL the Joins in Spark DataFrames"
 date: 2020-10-12
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [spark]
 excerpt: "It's obvious that Spark allows us to join tables. What's not obvious is how many different kinds of joins Spark supports. We explore them in this article."
 ---

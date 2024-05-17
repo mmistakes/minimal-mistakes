@@ -2,7 +2,7 @@
 title: "How Akka Typed Incentivizes You to Write Good Code"
 date: 2020-05-11
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "Akka Typed is one of the best things that happened with the Akka API. We explore how good practices are baked into the API directly."
 ---

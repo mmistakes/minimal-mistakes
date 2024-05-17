@@ -2,7 +2,7 @@
 title: "Unleashing the Power of HTTP Apis: The Http4s Library"
 date: 2021-06-07
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [cats, cats effect, http4s]
 excerpt: "Once we learned the basics of functional programming, it's time to understand how to use them to expose APIs over an HTTP channel. If we know the Cats ecosystem, it's straightforward to choose the http4s library to implement HTTP endpoints."
 ---

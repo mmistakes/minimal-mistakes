@@ -2,7 +2,7 @@
 title: "Sync, Async and (non) blocking in Scala and Akka"
 date: 2020-05-08
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [scala, akka]
 excerpt: "We discuss the tradeoffs between 3 different styles of writing parallel code, in terms of thread use (and other effects) in Scala and Akka."
 ---

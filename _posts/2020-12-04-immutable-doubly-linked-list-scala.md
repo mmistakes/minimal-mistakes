@@ -2,7 +2,7 @@
 title: "Immutable Doubly Linked Lists in Scala with Call-By-Name and Lazy Values"
 date: 2020-12-04
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [scala, data structures]
 excerpt: "I'll show you a technique to use lazy values and call-by-name for recursive value definitions and implement a fully immutable doubly-linked list in Scala."
 ---

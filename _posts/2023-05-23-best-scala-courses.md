@@ -2,7 +2,7 @@
 title: "A Comprehensive Guide to Choosing the Best Scala Course"
 date: 2023-05-23
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [scala, learning]
 excerpt: "Discover the best Scala course for your learning journey. Explore the recommended courses and libraries like Cats Effect, ZIO, and Apache Spark."
 ---

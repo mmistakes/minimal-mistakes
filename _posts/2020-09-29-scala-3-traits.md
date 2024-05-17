@@ -2,7 +2,7 @@
 title: "Scala 3 Traits: New Features"
 date: 2020-09-29
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3, traits]
 excerpt: "This article will continue some of the previous explorations of Scala 3. Here, we'll discuss some of the new functionality of traits in Scala 3."
 ---

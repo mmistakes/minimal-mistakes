@@ -2,7 +2,7 @@
 title: "Akka Typed: How the Pipe Pattern Prevents Anti-Patterns"
 date: 2020-10-26
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "Akka Typed has not only made fundamental changes in the actor protocol definitions, but made significant improvements in actor mechanics as well."
 ---

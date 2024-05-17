@@ -2,7 +2,7 @@
 title: "Objects and Companions in Scala"
 date: 2021-01-15
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto:good,c_auto,w_1200,h_300,g_auto,ar_4.0,fl_progressive/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "This article is for the starting Scala programmer: an introduction to singleton objects and companions in Scala, what they can do, and why and where we should use them."
 ---
