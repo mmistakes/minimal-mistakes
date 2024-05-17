@@ -16,7 +16,13 @@ sidebar:
 {: .notice--info} 
 / info / warning / danger / success
 
-<dif
+<div class="notice--success">
+<h4>공지사항입니다.</h4>
+	<ul>
+		<li>공지사항1</li>
+		<li>공지사항2</li>
+	</ul>
+</div>
 
 
 
