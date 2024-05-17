@@ -2,7 +2,7 @@
 title: "Given and Using Clauses in Scala 3"
 date: 2020-11-16
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala 3]
 excerpt: The given/using clauses are some of the most important features of Scala 3. Read on for the essential concepts and how to use them."
 ---

@@ -2,7 +2,7 @@
 title: "5 Nice Scala Tricks for Expressiveness"
 date: 2020-05-21
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, tricks]
 excerpt: "Scala is an amazingly expressive language, but even the most experienced devs aren't aware of all the subtleties."
 ---

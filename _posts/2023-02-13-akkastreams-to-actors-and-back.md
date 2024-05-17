@@ -2,7 +2,7 @@
 title: "From Akka Streams To Actors And Back"
 date: 2023-02-13
 header:
-   image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+   image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [akka]
 excerpt: "Interoperability between Akka Streams and actors with code examples"
 ---

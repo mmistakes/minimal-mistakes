@@ -2,7 +2,7 @@
 title: "How to Create Your Own Custom String Interpolator"
 date: 2020-05-12
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, tricks]
 excerpt: "Yep, you can write your own interpolator that looks like it was built into the Scala language. Learn how."
 ---

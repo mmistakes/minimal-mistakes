@@ -2,7 +2,7 @@
 title: "Scala 3: Opaque Types"
 date: 2020-10-02
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3]
 excerpt: "We discover opaque type aliases in Scala 3 and how we can define new types with zero overhead."
 ---

@@ -2,7 +2,7 @@
 title: "Organizing Services with ZIO and ZLayers"
 date: 2021-03-01
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, zio]
 excerpt: "ZIO layers (ZLayers) help us structure our complex services into modules that are independent, composable and easy to understand. Let's take a look."
 ---

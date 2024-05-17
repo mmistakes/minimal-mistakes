@@ -2,7 +2,7 @@
 title: "WebSockets in Http4s"
 date: 2024-02-19
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how to use WebSockets in Scala with Http4s, and how to enable two-way communication between the frontend and the backend."
 toc: true

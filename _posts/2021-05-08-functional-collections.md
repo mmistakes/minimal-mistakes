@@ -2,7 +2,7 @@
 title: "Scala Functional Collections"
 date: 2021-05-08
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, collections]
 excerpt: "A short article with a powerful idea about functional collections many Scala programmers do not know about."
 ---

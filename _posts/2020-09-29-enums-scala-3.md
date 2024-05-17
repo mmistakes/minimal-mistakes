@@ -2,7 +2,7 @@
 title: "Enums in Scala 3"
 date: 2020-09-29
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3]
 excerpt: "Scala 3 introduces enums. About time! Even though it might seem like something minor, it has important implications."
 ---

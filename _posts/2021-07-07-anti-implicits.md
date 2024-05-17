@@ -2,7 +2,7 @@
 title: "Exploiting Implicit Ambiguity in Scala"
 date: 2021-07-07
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "In this article, I'll show you how you can exploit the implicit resolution mechanism in Scala to enforce type relationships at compile time."
 ---

@@ -2,7 +2,7 @@
 title: "What the Functor?"
 date: 2021-01-05
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, cats]
 excerpt: "In this article, we'll explore one of the most used (and useful) concepts in pure functional programming: the Functor. Pretty abstract, so buckle up."
 ---

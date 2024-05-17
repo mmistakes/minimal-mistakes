@@ -2,7 +2,7 @@
 title: "Why Should You Care About Referential Transparency?"
 date: 2021-07-29
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [fp]
 excerpt: "Referential transparency is your best tool for productivity as a functional programmer in Scala. In this article, we'll talk about what it is and why it's important."
 ---

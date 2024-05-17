@@ -2,7 +2,7 @@
 title: "gRPC in Scala with Fs2 and Scalapb"
 date: 2023-10-02
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "A long-form guide on how to make microservices communicate with gRPC in Scala."
 toc: true

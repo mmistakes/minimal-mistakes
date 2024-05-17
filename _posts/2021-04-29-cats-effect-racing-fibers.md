@@ -2,7 +2,7 @@
 title: "Cats Effect 3 - Racing IOs"
 date: 2021-04-29
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [cats effect]
 excerpt: "After the previous introduction to concurrency in Cats Effect, we'll look at how to manage racing IOs and fibers."
 ---

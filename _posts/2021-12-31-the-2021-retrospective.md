@@ -2,7 +2,7 @@
 title: "A 2021 Retrospective"
 date: 2021-12-31
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [meta]
 excerpt: "Wrapping up 2021 with an overview of what's happened this year at Rock the JVM."
 ---

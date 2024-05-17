@@ -2,7 +2,7 @@
 title: "OAuth Authentication in Scala with Http4s"
 date: 2023-07-27
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how to implement OAuth authentication in Scala using Http4s, using GitHub as an OAuth provider."
 toc: true

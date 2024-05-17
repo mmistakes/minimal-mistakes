@@ -2,7 +2,7 @@
 title: "Akka Streams Backpressure"
 date: 2021-11-21
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [akka, akka streams]
 excerpt: "Akka Streams implements backpressure, a critical component of the Reactive Streams specification. This article is a demonstration of this mechanism."
 ---

@@ -2,7 +2,7 @@
 title: "Scala Testing with ScalaTest: Test Styles for Beginners"
 date: 2021-05-17
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, testing]
 excerpt: "In this article, we'll go through the major testing styles with Scala and ScalaTest, and we'll understand what 'FunSuite', 'FlatSpec' etc mean."
 ---

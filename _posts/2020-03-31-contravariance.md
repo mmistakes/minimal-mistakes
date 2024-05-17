@@ -2,7 +2,7 @@
 title: "Why is Scala contravariance so hard?"
 date: 2020-03-31
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "The Scala type system is powerful, but also hard. We look at contravariance in Scala and try to make some sense out of it."
 ---

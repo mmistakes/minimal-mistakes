@@ -2,7 +2,7 @@
 title: "Type Classes in Kotlin: A Practical Guide"
 date: 2024-02-06
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [kotlin]
 excerpt: "Learn type classes in Kotlin - a powerful 'design pattern' to organize your code better and make it easier to read, understand and change."
 toc: true

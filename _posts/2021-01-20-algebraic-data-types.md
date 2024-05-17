@@ -2,7 +2,7 @@
 title: "Algebraic Data Types (ADT) in Scala"
 date: 2021-01-16
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "Every developer using Scala meets the acronym ADT sooner or later. In this article, we will try to answer all of your questions about ADTs."
 ---

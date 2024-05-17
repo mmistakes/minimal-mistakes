@@ -2,7 +2,7 @@
 title: "Underscores are Overloaded in Scala!"
 date: 2020-09-05
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala]
 excerpt: "Scala syntax is so confusing sometimes - I'll show almost all uses of underscores in Scala. Sometimes the philosophy is inconsistent, but it's worth at least being aware."
 ---

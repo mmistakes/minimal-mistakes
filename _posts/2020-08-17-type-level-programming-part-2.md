@@ -2,7 +2,7 @@
 title: "Type-Level Programming in Scala, Part 2"
 date: 2020-08-17
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "We continue down the path of type-level power in Scala. We learn to add numbers as types, at compile time."
 ---

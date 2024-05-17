@@ -2,7 +2,7 @@
 title: "Types, Kinds and Type Constructors in Scala"
 date: 2020-10-06
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "Scala has a powerful type system. We look at how Scala types can be organized, what type constructors are, and why we should care."
 ---

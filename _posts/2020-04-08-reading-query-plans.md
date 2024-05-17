@@ -2,7 +2,7 @@
 title: "Reading Spark Query Plans"
 date: 2020-04-08
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [spark, how to]
 excerpt: "In this article you'll learn one of the most important Spark skill: reading how your job will run. This is foundational to any further Spark optimization."
 ---

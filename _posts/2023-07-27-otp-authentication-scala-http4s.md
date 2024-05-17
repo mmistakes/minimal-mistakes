@@ -2,7 +2,7 @@
 title: "Two-Factor Authentication in Scala with Http4s"
 date: 2023-07-27
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Learn how to write a two-factor authentication mechanism using one-time passwords (HOTP and TOTP) with Scala and Http4s."
 toc: true

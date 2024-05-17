@@ -2,7 +2,7 @@
 title: "A Backtracking Sudoku Solver in Scala"
 date: 2022-10-31
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, algorithms]
 excerpt: "How to approach Sudoku and other constraint-satisfaction problems with recursive backtracking in Scala."
 ---

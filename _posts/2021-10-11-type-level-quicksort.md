@@ -2,7 +2,7 @@
 title: "Type-Level Programming in Scala 3, Part 2: A Quicksort on Types"
 date: 2021-10-11
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: []
 excerpt: "Level 90 of type-level programming: a real sorting algorithm on lists... as types."
 ---

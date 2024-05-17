@@ -2,7 +2,7 @@
 title: "Streaming SQL with Apache Flink: A Gentle Introduction"
 date: 2023-02-06
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [flink, kafka, streaming]
 excerpt: "A hands-on guide to Flink SQL for data streaming with familiar tools."
 ---

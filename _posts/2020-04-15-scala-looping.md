@@ -2,7 +2,7 @@
 title: "How Things Don't Make Sense - Scala Loops"
 date: 2020-04-15
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, teaching, rant]
 excerpt: "Daniel goes into another rant about learning (and teaching) Scala using loops. Are they actually useful?"
 ---

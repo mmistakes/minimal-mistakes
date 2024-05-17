@@ -2,7 +2,7 @@
 title: "Match Types in Scala 3"
 date: 2021-02-02
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3]
 excerpt: "Scala 3 comes with lots of new features. In this episode, match types: a pattern matching on types, and a tool for more accurate type checking."
 ---

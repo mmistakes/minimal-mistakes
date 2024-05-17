@@ -2,7 +2,7 @@
 title: "The Difference Between Null, Nothing, Nil, None and Unit in Scala"
 date: 2020-07-31
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, type system]
 excerpt: "We explore the various flavors of nothing-ness in Scala."
 ---

@@ -2,7 +2,7 @@
 title: "Top 10 Skills (Mostly Mental Models) to Learn to Be a Scala Developer"
 date: 2022-11-07
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, tips]
 excerpt: "Learning Scala doesn't need to be hard. Here are 10 mental skills you can learn to be a good Scala developer."
 ---

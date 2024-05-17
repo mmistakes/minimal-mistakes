@@ -2,7 +2,7 @@
 title: "3 Fun Tricks with Call-By-Name in Scala"
 date: 2020-04-28
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, tricks]
 excerpt: "Maximize the call-by-name semantics in Scala and manipulate your results when you want them."
 ---

@@ -2,7 +2,7 @@
 title: "Scala 3: Path-Dependent Types, Type Projections, Dependent Methods and Functions"
 date: 2020-11-27
 header:
-  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+  image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala, scala 3, type system]
 excerpt: "This quick tutorial will show you what dependent types are and how they work in Scala 3, along with dependent methods and functions."
 ---

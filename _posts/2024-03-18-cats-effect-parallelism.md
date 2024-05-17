@@ -2,7 +2,7 @@
 title: "Functional Parallel Programming in the wild"
 date: 2024-03-18
 header:
-    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,h_300,w_1200/vlfjqjardopi8yq2hjtd"
+    image: "https://res.cloudinary.com/riverwalk-software/image/upload/f_auto,q_auto,c_auto,g_auto,ar_4.0/vlfjqjardopi8yq2hjtd"
 tags: [scala,http4s,cats,fp,parallelism,github-api,cats-effect]
 excerpt: "A hands-on guide to speeding up the parallel processing power with the help of Scala & cats-effect fibers."
 ---
