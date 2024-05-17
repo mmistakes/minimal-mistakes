@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-14-BLDC Control.md"
+                "file": "_posts/2024-05-17-Github Blog Tester.md"
               }
             }
           },
@@ -164,16 +164,20 @@
   },
   "active": "66e28d45e613edfc",
   "lastOpenFiles": [
+    "_site/Github-Blog-Tester/index.html",
+    "_site/Github-Blog-Tester",
     "_posts/2024-05-11-Github-blog-local-website.md",
+    "_posts/2024-05-17-Github Blog Tester.md",
+    "_posts/2024-05-08-Obsidian with Git.md",
+    "_posts/2024-05-13-United_Automotive_Software.md",
+    "_posts/2024-05-14-BLDC Control.md",
+    "_posts/2024-03-24-first.md",
+    "Templates/Basic Blog template.md",
     "_site/coding/Github-blog-local-website/index.html",
     "_site/coding/Github-blog-local-website",
     "_site/coding",
     "_site/categories/coding/index.html",
     "_site/categories/coding",
-    "_posts/2024-05-08-Obsidian with Git.md",
-    "_posts/2024-03-24-first.md",
-    "_posts/2024-05-14-BLDC Control.md",
-    "Templates/Basic Blog template.md",
     "_posts/Test without Date.md",
     "files/jslogo.jpg",
     "_config.yml~",
@@ -183,10 +187,8 @@
     "_site/_pages",
     "_pages/404.md",
     "_posts/2024-04-22-The_Journey_of_BABO.md",
-    "_site/categories/index.html",
     "_site/_pages/category-archive.md",
     "_pages/category-archive.md",
-    "_posts/2024-05-13-United_Automotive_Software.md",
     "screenshot.png",
     "screenshot-layouts.png",
     "CHANGELOG.md",
