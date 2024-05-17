@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 2024-05-17-Github Blog Tester
+title: Github Blog Tester
 categories: 
 tags:
   - blog
@@ -9,6 +9,7 @@ toc: true
 author_profile: true
 sidebar:
   nav: docs
+sitemap: true
 ---
 ## This is the Tester File for Blog
 ```
