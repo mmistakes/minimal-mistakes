@@ -11,6 +11,10 @@ sidebar:
   nav: docs
 ---
 ## This is the Tester File for Blog
+
+	**Notice**[This is the Brand new Blog](){: . notice --danger}
+	
+
 ```
 Beautiful!
 ```
@@ -20,3 +24,5 @@ Using Obsidian for the Github Blog.
 옵시디언으로 블로그 수정하기. 아주 좋구만.
 
 Sidebar 기능 수정하기.
+
+

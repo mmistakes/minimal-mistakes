@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md",
+                "file": "_posts/2024-05-17-Github Blog Tester.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-05-11-Github-blog-local-website.md"
+                "file": "_posts/2024-05-17-Github Blog Tester.md"
               }
             }
           },
@@ -177,6 +177,7 @@
   },
   "active": "0224bc0574ed2699",
   "lastOpenFiles": [
+    "_posts/2024-05-11-Github-blog-local-website.md",
     "_posts/2024-05-08-Obsidian with Git.md",
     "_sass/minimal-mistakes/_variables.scss~",
     "_sass/minimal-mistakes.scss~",
@@ -194,7 +195,6 @@
     "_posts/2024-05-17-Blog Edge case tester.md",
     "Templates/Basic Blog template.md",
     "_posts/2024-05-14-BLDC Control.md",
-    "_posts/2024-05-11-Github-blog-local-website.md",
     "_posts/2024-05-13-United_Automotive_Software.md",
     "_posts/2024-03-24-first.md",
     "_posts/Test without Date.md",
