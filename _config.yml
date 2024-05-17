@@ -98,6 +98,11 @@ global_icons:
   feed_icon              : "icons/rss.svg"
   file_icon              : "icons/file-alt.svg"
   location_icon          : "icons/location.svg"
+  link_icon              : "icons/link.svg"
+  github_icon            : "icons/github.svg"
+  youtube_icon           : "icons/youtube.svg"
+  folder_open_icon       : "icons/folder_open.svg"
+  no_icon                : "icons/no_icon.svg"
 
 # Analytics
 analytics:
