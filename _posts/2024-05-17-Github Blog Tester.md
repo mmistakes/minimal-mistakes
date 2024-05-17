@@ -12,8 +12,13 @@ sidebar:
 ---
 ## This is the Tester File for Blog
 
-	**Notice**[This is the Brand new Blog](){: . notice --danger}
-	
+**[Notice]** [This is the Brand new Blog](https://thejourneyofbabo.github.io/)
+{: .notice--info} 
+/ info / warning / danger / success
+
+<dif
+
+
 
 ```
 Beautiful!
