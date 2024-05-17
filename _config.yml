@@ -70,10 +70,14 @@ naver_site_verification  : ""
 # Social Sharing
 twitter:
   username               : "rockthejvm"
+  icon                   : "icons/twitter.svg"
 facebook:
   username               : "rockthejvm"
-  app_id                 : ""
+  icon                   : "icons/twitter.svg"
+  app_id                 : "icons/facebook-square.svg"
   publisher              : ""
+linkedin:
+  icon                   : "icons/linkedin.svg"
 og_image                 : "images/blog cover large.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
