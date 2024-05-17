@@ -41,7 +41,12 @@
               {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
             </svg>
           {% else %}
-            <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+            <svg class="icon">
+              {% capture svg %}
+                {% include {{ site.global_icons.no_icon }} %}
+              {% endcapture %}
+              {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+            </svg>
           {% endif %}
           <span itemprop="name">{{ author.location }}</span>
         </li>
@@ -60,7 +65,12 @@
                     {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
                   </svg>
                 {% else %}
-                  <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+                  <svg class="icon">
+                    {% capture svg %}
+                      {% include {{ site.global_icons.no_icon }} %}
+                    {% endcapture %}
+                    {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+                  </svg>
                 {% endif %}
                 <span class="label">{{ link.label }}</span>
               </a>
@@ -72,7 +82,22 @@
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
-            <i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
+            {% if site.global_icons.link_icon %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.link_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% else %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.no_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% endif %}
+            <span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>
           </a>
         </li>
       {% endif %}
@@ -89,7 +114,12 @@
                 {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
               </svg>
             {% else %}
-              <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.no_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
             {% endif %}
             <span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
           </a>
@@ -107,7 +137,22 @@
       {% if author.twitter %}
         <li>
           <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
+            {% if site.twitter.icon %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.twitter.icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% else %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.no_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% endif %}
+            <span class="label">Twitter</span>
           </a>
         </li>
       {% endif %}
@@ -115,7 +160,22 @@
       {% if author.facebook %}
         <li>
           <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span>
+            {% if site.facebook.icon %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.facebook.icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% else %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.no_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% endif %}
+            <span class="label">Facebook</span>
           </a>
         </li>
       {% endif %}
@@ -123,7 +183,22 @@
       {% if author.linkedin %}
         <li>
           <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span>
+            {% if site.linkedin.icon %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.linkedin.icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% else %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.no_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% endif %}
+            <span class="label">LinkedIn</span>
           </a>
         </li>
       {% endif %}
@@ -139,7 +214,8 @@
       {% if author.instagram %}
         <li>
           <a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span>
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i>
+            <span class="label">Instagram</span>
           </a>
         </li>
       {% endif %}
@@ -163,7 +239,22 @@
       {% if author.github %}
         <li>
           <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+            {% if site.global_icons.github_icon %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.github_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% else %}
+              <svg class="icon">
+                {% capture svg %}
+                  {% include {{ site.global_icons.no_icon }} %}
+                {% endcapture %}
+                {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+              </svg>
+            {% endif %}
+            <span class="label">GitHub</span>
           </a>
         </li>
       {% endif %}
@@ -228,13 +319,43 @@
         {% if author.youtube contains "://" %}
           <li>
             <a href="{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-              <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><span class="label">YouTube</span>
+              {% if site.global_icons.youtube_icon %}
+                <svg class="icon">
+                  {% capture svg %}
+                    {% include {{ site.global_icons.youtube_icon }} %}
+                  {% endcapture %}
+                  {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+                </svg>
+              {% else %}
+                <svg class="icon">
+                  {% capture svg %}
+                    {% include {{ site.global_icons.no_icon }} %}
+                  {% endcapture %}
+                  {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+                </svg>
+              {% endif %}
+              <span class="label">YouTube</span>
             </a>
           </li>
         {% elsif author.youtube %}
           <li>
             <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-              <i class="fab fa-fw fa-youtube" aria-hidden="true"></i><span class="label">YouTube</span>
+              {% if site.global_icons.youtube_icon %}
+                <svg class="icon">
+                  {% capture svg %}
+                    {% include {{ site.global_icons.youtube_icon }} %}
+                  {% endcapture %}
+                  {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+                </svg>
+              {% else %}
+                <svg class="icon">
+                  {% capture svg %}
+                    {% include {{ site.global_icons.no_icon }} %}
+                  {% endcapture %}
+                  {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+                </svg>
+              {% endif %}
+              <span class="label">YouTube</span>
             </a>
           </li>
         {% endif %}

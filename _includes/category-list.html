@@ -14,7 +14,24 @@
   {% assign category_hashes = page_categories | split: ',' | sort %}
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <strong>
+      {% if site.global_icons.folder_open %}
+        <svg class="icon">
+          {% capture svg %}
+            {% include {{ site.global_icons.folder_open }} %}
+          {% endcapture %}
+          {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+        </svg>
+      {% else %}
+        <svg class="icon">
+          {% capture svg %}
+            {% include {{ site.global_icons.no_icon }} %}
+          {% endcapture %}
+          {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+        </svg>
+      {% endif %}
+      {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }}
+    </strong>
     <span itemprop="keywords">
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '|' %}

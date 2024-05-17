@@ -48,7 +48,12 @@ layout: default
                     {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
                   </svg>
                 {% else %}
-                  <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+                  <svg class="icon">
+                    {% capture svg %}
+                      {% include {{ site.global_icons.no_icon }} %}
+                    {% endcapture %}
+                    {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+                  </svg>
                 {% endif %} 
                 {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}
               </h4></header>

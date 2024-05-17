@@ -19,7 +19,24 @@
     {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink">
+          {% if site.global_icons.link_icon %}
+            <svg class="icon">
+              {% capture svg %}
+                {% include {{ site.global_icons.link_icon }} %}
+              {% endcapture %}
+              {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+            </svg>
+          {% else %}
+            <svg class="icon">
+              {% capture svg %}
+                {% include {{ site.global_icons.no_icon }} %}
+              {% endcapture %}
+              {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+            </svg>
+          {% endif %}
+          <span class="sr-only">Permalink</span>
+        </a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}

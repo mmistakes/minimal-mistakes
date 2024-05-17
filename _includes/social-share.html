@@ -12,7 +12,12 @@
         {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
       </svg>
     {% else %}
-      <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+      <svg class="icon">
+        {% capture svg %}
+          {% include {{ site.global_icons.no_icon }} %}
+        {% endcapture %}
+        {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+      </svg>
     {% endif %}
     <span> Twitter</span>
   </a>
@@ -26,7 +31,12 @@
         {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
       </svg>
     {% else %}
-      <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+      <svg class="icon">
+        {% capture svg %}
+          {% include {{ site.global_icons.no_icon }} %}
+        {% endcapture %}
+        {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+      </svg>
     {% endif %}
     <span> Facebook</span>
   </a>
@@ -40,7 +50,12 @@
         {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
       </svg>
     {% else %}
-      <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+      <svg class="icon">
+        {% capture svg %}
+          {% include {{ site.global_icons.no_icon }} %}
+        {% endcapture %}
+        {{ svg | remove: '<?xml version="1.0" encoding="UTF-8"?>' }}
+      </svg>
     {% endif %}
     <span> LinkedIn</span>
   </a>
