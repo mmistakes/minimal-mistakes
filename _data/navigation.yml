@@ -2,11 +2,11 @@
 main:
   - title: "Get to know me"
     url: /about/
-  - title: "About"
+  - title: "Personal"
     url: /about/
   - title: "Blogs"
     url: /posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
-  #   url: /sitemap/
+  #   url: /sitemap/    
