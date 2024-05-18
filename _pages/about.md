@@ -14,7 +14,7 @@ Hello, I'm [Your Name]. Welcome to my personal space on the internet.
 Feel free to reach out to me on [social media](#) or via email at [your@email.com]. -->
 
 ## About me 
-![profile_picture](/../assets/img/prof_pic.jpeg)
+![prof_pic](/../assets/splash/cover.jpeg)
 Hello! 
 thanks for visiting my personal website! 
 I am Abhijeet, working as a Data Analyst at SLB (Schlumberger) working primarily on Data Analysis. 
