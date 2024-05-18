@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A2 - Gartenarbeitsschule",
-    "title": "Ausflug A2 - Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDBidXIwam5iN2Nxc2phbnVhdDNjdnZmdnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-17T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-17T13:30:00+02:00"
-    },
-    "created": "2024-04-11T05:28:58.000Z",
-    "updated": "2024-04-11T05:28:58.157Z"
-  },
-  {
-    "image_path": null,
     "alt": "Feiertag",
     "title": "Feiertag",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-05-14T03:46:17.000Z",
     "updated": "2024-05-14T03:46:17.529Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug 6b - Filmpark Babelsberg",
+    "title": "Ausflug 6b - Filmpark Babelsberg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2ZqMjJzdDg2NjNxZ3RyazN1a2ZhdnNqZ2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-28T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-28T16:00:00+02:00"
+    },
+    "created": "2024-05-15T09:25:21.000Z",
+    "updated": "2024-05-15T09:25:21.074Z"
   }
 ]
