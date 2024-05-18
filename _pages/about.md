@@ -1,6 +1,7 @@
 ---
 title: About Me
 permalink: /about/
+image : prof_pic.jpeg
 ---
 
 <!-- # About Me
