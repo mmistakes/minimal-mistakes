@@ -7,7 +7,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "counts"
-published: true
+published: false
 
 ---
 본격적으로 파이널 프로젝트를 시작하기 전에 대규모 시스템 설계에 대해 공부해보려고 한다. 멘토님이 추천해주신 [가상 면접 사례로 배우는 대규모 시스템 설계 기초] 의 1장 내용인 "사용자 수에 따른 규모 확장성" 을 정리했다. 
