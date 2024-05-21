@@ -22,13 +22,13 @@ permissions:
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
-  group: "pages"
+  group: ${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
