@@ -4,9 +4,13 @@ main:
     url: /
   - title: "News"
     url: /
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "The Team"
+    url: /
+  - title: "Join Us"
+    url: /
+  - title: "Publications"
+    url: /
+  - title: "Data"
+    url: /
+  - title: "Contact"
+    url: /
