@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: /
   - title: "News"
-    url: /
+    url: /year-archive/
   - title: "The Team"
     url: /
   - title: "Join Us"
@@ -13,4 +13,4 @@ main:
   - title: "Data"
     url: /
   - title: "Contact"
-    url: /
+    url: /about/
