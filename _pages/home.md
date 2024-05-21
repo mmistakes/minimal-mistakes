@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#27282b"
   overlay_image: /assets/images/splash.jpg
   actions:
     - label: "<i class='fas fa-plus'></i> Join Us"
