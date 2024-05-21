@@ -53,4 +53,4 @@ title:  "효율적인 논문 작성 기법"
   + 애초에 완벽하게 납득되는 글은 헌법 책 조차도 없기 때문에 그 적절한 선을 잘 타야한다
   + 그 적절한 선은 지도교수에게 배우게 된다
 
-![고생하는 하레짱](https://drive.google.com/file/d/14bg2Xh511jsmUqGf9uVwLB5hama974ua/view?usp=drive_link)
+![고생하는 하레짱](https://i.namu.wiki/i/XStxxFdEFUp6VF8p5pRTo5esxz_NK5__xYP-pVA3YpfrPE-W7hzWrKTJA-unzHoBc6_IGPqqhvwChRDOYPAWfhzk0NhrsL9iRfL_I9k51FBnR5ucxtePbcY7HYAmOw3EZ5tHSbxrnBkiGuR80u_gvA.webp)
