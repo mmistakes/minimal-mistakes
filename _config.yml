@@ -10,14 +10,14 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+# theme                    : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.26.1" # mmistakes/minimal-mistakes@4.26.1
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Nuttida Lab"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : "@ Columbia University" # site tagline that appears below site title in masthead
 name                     : "Nuttida Lab"
 description              : "A research lab at Columbia University that focuses on developing experimental and computational frameworks to investigate the neural computations that underlie complex cognitive functions in health and disease."
@@ -89,7 +89,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "NuttidaLab"
 facebook:
   username               :
   app_id                 :

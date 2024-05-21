@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Home"
-    url: /
   - title: "News"
     url: /year-archive/
   - title: "The Team"
@@ -12,5 +10,5 @@ main:
     url: /
   - title: "Data"
     url: /
-  - title: "Contact"
+  - title: "About"
     url: /about/
