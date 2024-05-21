@@ -1,0 +1,4 @@
+---
+layout: team
+permalink: /team/
+---

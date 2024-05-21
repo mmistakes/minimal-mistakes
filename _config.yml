@@ -215,7 +215,7 @@ paginate_path: /page:num/
 #   for configuration details
 pagination:
   # Set enabled to true to use paginate v2
-  # enabled: true
+  enabled: false
   debug: false
   collection: 'posts'
   per_page: 5
@@ -306,3 +306,4 @@ defaults:
     values:
       layout: single
       author_profile: false
+      related: true

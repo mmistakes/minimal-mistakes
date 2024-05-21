@@ -1,0 +1,63 @@
+# Make storage of all postdocs, grads, and undergrads
+- section: "Postdocs"
+  people:
+    
+    - name: "Dr. John Doe"
+      title: "MD PhD"
+      email: "email [at] columbia.edu"
+      bio: "I am a postdoc."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar7.png"
+
+    - name: "Dr. Jane Doe"
+      title: "PhD"
+      email: "email [at] columbia.edu"
+      bio: "I am a postdoc."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar6.png"
+
+- section: "Graduate Students"
+  people:
+    
+    - name: "John Doe"
+      title: "PhD Student"
+      email: "email [at] columbia.edu"
+      bio: "I am a graduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar5.png"
+    
+    - name: "Jane Doe"
+      title: "PhD Student"
+      email: "email [at] columbia.edu"
+      bio: "I am a graduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar4.png"
+
+- section: "Undergraduate Students"
+  people:
+    
+    - name: "John Doe"
+      title: "Undergraduate Student"
+      email: "email [at] columbia.edu"
+      bio: "I am an undergraduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar3.png"
+
+    - name: "Jane Doe"
+      title: "Undergraduate Student"
+      email: "email [at] columbia.edu"
+      bio: "I am an undergraduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar2.png"
+
+    - name: "John Doe"
+      title: "Undergraduate Student"
+      email: "email [at] columbia.edu"
+      bio: "I am an undergraduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar1.png"
+
+    - name: "Jane Doe"
+      title: "Undergraduate Student"
+      email: "email [at] columbia.edu"
+      bio: "I am an undergraduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar4.png"
+    
+    - name: "John Doe"
+      title: "Undergraduate Student"
+      email: "email [at] columbia.edu"
+      bio: "I am an undergraduate student."
+      avatar: "https://bootdey.com/img/Content/avatar/avatar3.png"

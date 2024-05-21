@@ -1,0 +1,127 @@
+
+body {
+    background-color: transparent;
+}
+
+.team_member {
+    background: rgba(0, 0, 0, 0);
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+.single_team_content{
+padding:45px;
+margin-top:60px;
+}
+.single_team_content h1 {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 60px;
+}
+.single_team_content p{}
+
+.our-team {
+	margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.our-team .team_img{
+    position: relative;
+    overflow: hidden;
+}
+.our-team .team_img:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover .team_img:after{
+    bottom: 0;
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+}
+
+.our-team:hover {
+    top: 0;
+    -webkit-box-shadow: 0 0 6px 5px #1a1d24;
+    box-shadow: 0 0 6px 5px #1a1d24;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    border: 1px solid #1a1d24;
+    border-radius: 5px;
+}
+
+.our-team .team-content{
+    padding: 20px 0;
+    background: #1a1d24;
+}
+.our-team .title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #eaeaea;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+    position: relative;
+}
+.our-team .title:before{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #eaeaea;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    margin-right: 9px;
+    transition-duration: 0.25s;
+}
+.our-team .title:after{
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #eaeaea;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: 9px;
+    transition-duration: 0.25s;
+}
+.our-team:hover .title:before,
+.our-team:hover .title:after{
+    width: 50px;
+}
+.our-team .post{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.our-team .blurp{
+    font-size: 16px;
+
+}
+
+.our-team .email{
+    font-size: 14px;
+}
+
+
+.our-team .post:before{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #eaeaea;
+    margin: 0 auto;
+    position: relative;
+    top: -13px;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}

@@ -3,7 +3,7 @@ main:
   - title: "Lab News"
     url: /updates/
   - title: "The Team"
-    url: /
+    url: /team/
   - title: "Publications"
     url: /publications/
   - title: "Data"

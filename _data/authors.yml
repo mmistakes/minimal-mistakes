@@ -3,7 +3,7 @@
 Billy Rick:
   name        : "Billy Rick"
   bio         : "What do you want, jewels? I am a very extravagant man."
-  avatar      : "https://mmistakes.github.io/minimal-mistakes/assets/images/bio-photo-2.jpg"
+  avatar      : "https://bootdey.com/img/Content/avatar/avatar7.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -15,7 +15,7 @@ Billy Rick:
 Cornelius Fiddlebone:
   name        : "Cornelius Fiddlebone"
   bio         : "I ordered what?"
-  avatar      : "https://mmistakes.github.io/minimal-mistakes/assets/images/bio-photo.jpg"
+  avatar      : "https://bootdey.com/img/Content/avatar/avatar6.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
