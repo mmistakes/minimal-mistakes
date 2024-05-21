@@ -49,6 +49,8 @@ title:  "효율적인 논문 작성 기법"
 
 대표적인 치료 방법
 1. 두괄식으로 써보기를 시도해보기
-2. 납득이 되는 글을 쓰기
+2. 납득이 되는(Why가 안나올 만한) 글을 쓰기
+  + 애초에 완벽하게 납득되는 글은 헌법 책 조차도 없기 때문에 그 적절한 선을 잘 타야한다
+  + 그 적절한 선은 지도교수에게 배우게 된다
 
 ![고생하는 하레짱](https://i.namu.wiki/i/6s90iq82BKE4zYaIbIRCxqhR5HNH0YBs06KSa17rVfrAkTt0M-0IX0zJYeFND0IT_QH73z2fQKNBPR5ra4aw8Q.webp)
