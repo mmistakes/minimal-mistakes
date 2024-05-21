@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /about/
-title: "About Nuttida Lab"
+title: "Join Nuttida Lab"
 last_modified_at: 2024-05-21T11:59:26-04:00
 toc: true
 ---
@@ -17,3 +17,11 @@ At NuttidaLab, we are passionate about advancing our understanding of the brain 
 ## Join Us!
 
 We are always looking for talented and motivated individuals to join our team. If you are interested in pursuing a career in neuroscience or related fields and are passionate about advancing our understanding of the brain, please contact us.
+
+## Contact Us
+
+Lab contact information
+Lab address
+Directions
+Timing and availability
+etc

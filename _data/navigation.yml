@@ -1,14 +1,12 @@
 # main links
 main:
-  - title: "News"
-    url: /year-archive/
+  - title: "Lab News"
+    url: /updates/
   - title: "The Team"
     url: /
-  - title: "Join Us"
-    url: /
   - title: "Publications"
-    url: /
+    url: /404.html
   - title: "Data"
-    url: /
-  - title: "About"
+    url: /404.html
+  - title: "Join Us"
     url: /about/
