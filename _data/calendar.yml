@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Feiertag",
-    "title": "Feiertag",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=dnQ5cXBrdW5wc2plYmlxaGRiaW9xcmljNDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-05-20",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-05-21",
-      "date_time": null
-    },
-    "created": "2024-05-02T03:29:03.000Z",
-    "updated": "2024-05-02T03:29:10.625Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A7 - Stadtbibliothek",
     "title": "Ausflug A7 - Stadtbibliothek",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-05-15T09:25:21.000Z",
     "updated": "2024-05-15T09:25:21.074Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
+    "title": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGN1MnVkdW80dXMzN21nb3A2Y2VjNDRvOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-05-28T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-05-28T13:00:00+02:00"
+    },
+    "created": "2024-01-31T12:17:25.000Z",
+    "updated": "2024-01-31T12:17:25.559Z"
   }
 ]
