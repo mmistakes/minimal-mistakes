@@ -4,6 +4,9 @@ permalink: /about/
 title: "Join Nuttida Lab"
 last_modified_at: 2024-05-21T11:59:26-04:00
 toc: true
+toc_label: "About Us"
+toc_icon: "question-circle"
+toc_sticky: true
 ---
 
 ## Who are we?
