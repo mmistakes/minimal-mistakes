@@ -19,14 +19,14 @@ locale                   : "en-US"
 title                    : "Nuttida Lab"
 title_separator          : "|"
 subtitle                 : "@ Columbia University" # site tagline that appears below site title in masthead
-name                     : "Nuttida Lab"
+name                     : 
 description              : "A research lab at Columbia University that focuses on developing experimental and computational frameworks to investigate the neural computations that underlie complex cognitive functions in health and disease."
 url                      : "https://nuttidalab.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "NuttidaLab/nuttidalab.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" - FOR POSTS
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" - AT TITLE OF NAVBAR
+masthead_title           : "Nuttida Lab" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : true # true, false (default)
