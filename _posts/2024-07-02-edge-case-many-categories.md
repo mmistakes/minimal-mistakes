@@ -6,7 +6,7 @@ categories:
   - arrangement
   - asmodeus
   - broder
-  - buying
+  - buyingW
   - championship
   - chastening
   - disinclination
