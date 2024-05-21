@@ -17,7 +17,7 @@ feature_row:
     alt: "customizable"
     title: "Brain Evolution"
     excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url: "/docs/configuration/"
+    url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   
@@ -25,7 +25,7 @@ feature_row:
     alt: "fully responsive"
     title: "Barcoding the Brain"
     excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url: "/docs/layouts/"
+    url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   
@@ -33,7 +33,7 @@ feature_row:
     alt: "100% free"
     title: "Barcoding the Brain"
     excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url: "/docs/license/"
+    url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
