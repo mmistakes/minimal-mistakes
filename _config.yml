@@ -113,8 +113,8 @@ analytics:
 # Site Author
 author:
   name             : "OneKnowChar"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I_study_backend_development."
+  avatar           : "/assets/images/bio-photo2.jpg"
+  bio              : "TO-BE A BackEnd developer who exerts a steady high-voltage influence"
   location         : "Seoul_South_Korea_(UTC+09:00)"
   email            :
   links:
