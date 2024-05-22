@@ -22,5 +22,8 @@ categories: Computer_Basic
 
 ## 컴퓨터의 4가지 핵심부품 
 
+*
+*
+*
 
 
