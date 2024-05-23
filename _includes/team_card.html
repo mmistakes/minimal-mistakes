@@ -1,0 +1,42 @@
+{% if site.data.team %}
+
+    {% for section in site.data.team %}
+        <hr>
+        <div class="section-title text-center">
+            <h1>{{ section.section }}</h1>
+        </div>
+
+        <section id="team" class="team_member section-padding">
+            <div class="container">	
+        
+                <div class="row text-center">
+
+                    {% for person in section.people %}
+        
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="our-team">
+                                <div class="team_img">
+                                    <img src="{{ person.avatar }}" alt="team-image">
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title">{{ person.name }}</h3>
+                                    <span class="post">{{ person.title }}</span>
+                                    <br>
+                                    <span class="blurp">{{ person.bio }}</span>
+                                    <br>
+                                    <span class="email"> {{ person.email }} </span>
+                                </div>
+                            </div>
+                        </div><!--- END COL -->
+
+                    {% endfor %}
+                
+                </div><!--- END ROW -->
+        
+            </div><!--- END CONTAINER -->
+        </section>
+
+    {% endfor %}
+
+{% endif %}
+

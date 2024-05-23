@@ -2,62 +2,40 @@
 - section: "Postdocs"
   people:
     
-    - name: "Dr. John Doe"
-      title: "MD PhD"
-      email: "email [at] columbia.edu"
-      bio: "I am a postdoc."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar7.png"
+    - name: "Robert Kim"
+      title: "MD, PhD"
+      position: "Affiliated research scientist"
+      email: false
+      bio: "Robert received his BS in Biomedical Engineering from Johns Hopkins University in 2012. Following his undergraduate studies, he worked in the lab of Dr. Hal Blumenfeld at Yale University, focusing on mechanisms of impaired consciousness in Childhood Absence Epilepsy. Robert then joined the Medical Scientist Training Program at UC San Diego, where he obtained his PhD in Neuroscience in 2020 and his MD in 2022. During his graduate research in the lab of Dr. Terry Sejnowski, Robert developed computational tools and frameworks to probe neural dynamics and identify neural correlates of working memory. Currently, Robert is a resident physician in Adult Neurology at Cedars-Sinai Medical Center while continuing his research in Nuttida lab and the lab of Dr. Ueli Rutishauser in the Cedars-Sinai Neurosurgery Department. His work focuses on developing computational models and analyzing human electrophysiology data to better understand the neural mechanisms of higher cognitive functions. In his free time, Robert enjoys puppy watching, playing tennis, and watching sports."
+      avatar: "/assets/images/people/robert.jpg"
 
-    - name: "Dr. Jane Doe"
+    - name: "Tomas G. Aquino"
       title: "PhD"
-      email: "email [at] columbia.edu"
-      bio: "I am a postdoc."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar6.png"
+      position: "Postdoctoral Research Scientist"
+      email: "tg2863 [at] columbia.edu"
+      bio: "I study learning and flexible decision making utilizing a combination of human single neuron recordings and AI, including RL and RNN models. I also like to plant tomatoes and play jazz/bossa nova on guitar."
+      avatar: "/assets/images/people/tomas.jpg"
 
 - section: "Graduate Students"
   people:
     
-    - name: "John Doe"
-      title: "PhD Student"
-      email: "email [at] columbia.edu"
-      bio: "I am a graduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar5.png"
+    - name: "Zelin Yu"
+      title: false
+      position: "Ph.D. Student"
+      email: "zy2489 [at] columbia.edu"
+      bio: "Zelin is a graduate student in Electrical Engineering. At Nuttida lab, Zelin will investigate how the human cortex simultaneously handles multiple complex computations at the single-neuron level and circuit levels. Besides academics, she enjoys running in Central Park and playing video games."
+      avatar: "/assets/images/people/zelin.jpg"
     
-    - name: "Jane Doe"
-      title: "PhD Student"
-      email: "email [at] columbia.edu"
-      bio: "I am a graduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar4.png"
+    - name: "Salma Elhassa"
+      title: false
+      position: "MS/PhD Student"
+      email: "salma.elhassa [at] columbia.edu"
+      bio: "I am a first-year PhD student studying neural mechanisms of neuronal encoding, focusing on single-neuron recordings to investigate human perception and cognitive flexibility using machine learning modeling and computational methods. Outside the lab, I enjoy reading, writing creative pieces, walking in Queens, and exploring new cafes as a coffee enthusiast."
+      avatar: "/assets/images/people/salma.jpg"
 
-- section: "Undergraduate Students"
-  people:
-    
-    - name: "John Doe"
-      title: "Undergraduate Student"
-      email: "email [at] columbia.edu"
-      bio: "I am an undergraduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar3.png"
-
-    - name: "Jane Doe"
-      title: "Undergraduate Student"
-      email: "email [at] columbia.edu"
-      bio: "I am an undergraduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar2.png"
-
-    - name: "John Doe"
-      title: "Undergraduate Student"
-      email: "email [at] columbia.edu"
-      bio: "I am an undergraduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar1.png"
-
-    - name: "Jane Doe"
-      title: "Undergraduate Student"
-      email: "email [at] columbia.edu"
-      bio: "I am an undergraduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar4.png"
-    
-    - name: "John Doe"
-      title: "Undergraduate Student"
-      email: "email [at] columbia.edu"
-      bio: "I am an undergraduate student."
-      avatar: "https://bootdey.com/img/Content/avatar/avatar3.png"
+    - name: "Siddhant Iyer"
+      title: false
+      position: "PhD candidate in Neurobiology & Behavior"
+      email: "salma.elhassa [at] columbia.edu"
+      bio: "Sid has a background in cognitive neuroscience and human fMRI data analysis. At Nuttida lab, he hopes to study precisely how neuronal populations initiate, scaffold and terminate cognitive processes. Outside of lab, he likes to play racket sports and board games."
+      avatar: "/assets/images/people/sid.jpg"

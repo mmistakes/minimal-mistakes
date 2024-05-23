@@ -1,3 +1,10 @@
+/* variable for color */
+
+:root {
+    --rudra_text_color: #1a1d24;
+    --rudra_shadow_color: #eaeaea;
+}
+
 
 body {
     background-color: transparent;
@@ -21,8 +28,11 @@ margin-top:60px;
 
 .our-team {
 	margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
+    /* height: 300px; */
+
+    border: 1px solid #ffffff00;
 }
 .our-team .team_img{
     position: relative;
@@ -32,7 +42,7 @@ margin-top:60px;
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,0.2);
+    /* background-color: rgba(255,255,255,0.2); */
     position: absolute;
     bottom: -100%;
     left: 0;
@@ -42,30 +52,31 @@ margin-top:60px;
     bottom: 0;
 }
 .our-team img{
-    width: 100%;
-    height: auto;
+    /* width: auto; */
+    /* max-width: none; */
+    height: 100%;
+    object-fit: cover;
 }
 
 .our-team:hover {
     top: 0;
-    -webkit-box-shadow: 0 0 6px 5px #1a1d24;
-    box-shadow: 0 0 6px 5px #1a1d24;
+    -webkit-box-shadow: 10px var(--rudra_shadow_color);
+    box-shadow: 10px var(--rudra_shadow_color);
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
 
-    border: 1px solid #1a1d24;
-    border-radius: 5px;
+    border: 1px solid var(--rudra_text_color);
+    /* border-radius: 5px; */
 }
 
 .our-team .team-content{
     padding: 20px 0;
-    background: #1a1d24;
 }
 .our-team .title{
     font-size: 22px;
     font-weight: bold;
-    color: #eaeaea;
+    color: var(--rudra_text_color);
     text-transform: capitalize;
     margin: 0 0 20px;
     position: relative;
@@ -74,7 +85,7 @@ margin-top:60px;
     content: "";
     width: 25px;
     height: 1px;
-    background: #eaeaea;
+    background: var(--rudra_text_color);
     position: absolute;
     bottom: -10px;
     right: 50%;
@@ -85,7 +96,7 @@ margin-top:60px;
     content: "";
     width: 25px;
     height: 1px;
-    background: #eaeaea;
+    background: var(--rudra_text_color);
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -117,7 +128,7 @@ margin-top:60px;
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #eaeaea;
+    background: var(--rudra_text_color);
     margin: 0 auto;
     position: relative;
     top: -13px;

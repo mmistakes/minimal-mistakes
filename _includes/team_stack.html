@@ -1,0 +1,46 @@
+
+
+{% if site.data.team %}
+
+    {% for section in site.data.team %}
+        <hr>
+        <div class="section-title text-center">
+            <h1>{{ section.section }}</h1>
+        </div>
+
+        <section class="team_member section-padding">
+            <div class="container">	
+        
+                {% for person in section.people %}
+                    <div class="row our-team">
+
+                        <div class = col-lg-3 style="padding-left: 0px;">
+                            <div style="height: 100%; width: 100%; border-radius: 5px; overflow: hidden;">
+                                <img src="{{ person.avatar | relative_url}}" alt="team-image">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="team-content" style="line-height: 1;">
+                                <span>{{ person.name }}{% if person.title %}, {{ person.title }} {% endif %}</span>
+                                
+                                {% if person.position %} <br> <span>{{ person.position }}</span> {% endif %}
+                                
+                                <br><br><span>{{ person.bio }}</span>
+
+                                {% if person.email %}
+                                    <br><br><span>{{ person.email }}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                    </div><!--- END ROW -->
+                {% endfor %}
+                
+            </div><!--- END CONTAINER -->
+        </section>
+
+    {% endfor %}
+
+{% endif %}
+
