@@ -6,7 +6,5 @@ main:
     url: /team/
   - title: "Publications"
     url: /publications/
-  - title: "Data"
-    url: /404.html
   - title: "Join Us"
     url: /about/
