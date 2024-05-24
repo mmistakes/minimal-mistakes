@@ -94,3 +94,31 @@ const validate = (validators, errMsg) => (value) => {
     - 함수를 여러 개의 함수로 분해하여 여러 상황에서 필요한 인자만 적용해 재사용성을 높인다.
 - .every()
     - 배열의 모든 요소가 주어진 조건을 만족하는지 검사
+
+
+
+### 커스텀 훅을 이용한 상태 관리
+
+커스텀 훅의 활용은 상태 관리 및 컴포넌트 로직 분리와 같은 다양한 작업을 효율적으로 수행할 수 있어, 코드의 일관성을 유지하며 코드 중복을 최소화하는 데 도움을 준다. 이를 통해 다양한 입력 필드의 검증 값과 에러 상태를 간결하게 처리할 수 있다.
+
+
+작업을 시작하기 전, 중복되는 로직을 먼저 정리해보자.
+
+- 입력 값의 상태 관리
+- 입력 값을 검증하고, 그에 대한 성공 또는 에러 상태 관리
+
+```javascript
+const useInputValid = (initValue, validators, errMsg) => {
+    const [value, setValue] = useState(initValue);
+    const [result, setResult] = useState({});
+
+    useEffect(() => {
+        if (value) {
+            const validationResult = validate(validators, errMsg)(value);
+            setResult(validationResult);
+        }
+    }, [value]);
+
+    return [value, setValue, result]
+}
+```
