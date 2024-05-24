@@ -13,17 +13,24 @@
       title: "PhD"
       position: "Postdoctoral Research Scientist"
       email: "tg2863 [at] columbia.edu"
-      bio: "I study learning and flexible decision making utilizing a combination of human single neuron recordings and AI, including RL and RNN models. I also like to plant tomatoes and play jazz/bossa nova on guitar."
+      bio: "Tomas received his BSc in Molecular Sciences from the University of São Paulo, Brazil in 2015. Subsequently, he did his PhD with John O'Doherty at Caltech, and was co-advised by Ueli Rutishauser at the Cedars-Sinai Medical Center in Los Angeles. His work focused on single-neuron correlates of value learning and decision-making in the human brain. He obtained his PhD in Computation and Neural Systems in 2022. Currently, Tomas works on the intersection between flexible decision making and recurrent neural network models of perception and decision, leveraging human single neuron recordings. Tomas also enjoys planting tomatoes and playing jazz/bossa nova guitar."
       avatar: "/assets/images/people/tomas.jpg"
 
 - section: "Graduate Students"
   people:
+
+    - name: "Rudramani Singha"
+      title: false
+      position: "Research Analyst"
+      email: "rgs2151 [at] columbia.edu"
+      bio: "Rudra received his BEng in Information Technology from the University of Mumbai in 2022. He then pursued an MS in Biomedical Engineering at Columbia University, graduating in 2024. Throughout his time at Columbia, Rudra worked closely with Dr. Nuttida Rungratsameetaweemana, focusing on developing explainable machine learning methods to model influences in human perceptual decision-making. His research interests span representational similarity analysis, Bayesian inference, and dimensionality reduction techniques. After graduating, Rudra joined Nuttida's lab full-time as a Research Analyst, continuing his work on unraveling the neural mechanisms underlying higher cognitive functions through computational modeling and analysis of human brain data. Beyond academia, he loves to discuss about startups, movies, and Dota2."
+      avatar: "/assets/images/people/rudra.jpg"
     
     - name: "Zelin Yu"
       title: false
       position: "Ph.D. Student"
       email: "zy2489 [at] columbia.edu"
-      bio: "Zelin is a graduate student in Electrical Engineering. At Nuttida lab, Zelin will investigate how the human cortex simultaneously handles multiple complex computations at the single-neuron level and circuit levels. Besides academics, she enjoys running in Central Park and playing video games."
+      bio: "Zelin received her BS in Electronic Information Engineering from Wuhan University in 2021. Following that, she received her MS in Electrical Engineering from Columbia University in 2022. Previous to joining the Nuttida lab, Zelin worked in the lab of Jennifer Gelinas and Dion Khodagholy, focusing on identifying electrophysiological markers of epileptic network progression and memory impairment as a comorbidity. Currently, Zelin is excited to investigate how the human cortex simultaneously handles multiple complex computations at the single-neuron level and circuit levels. Besides academics, she enjoys running in Central Park and playing video games."
       avatar: "/assets/images/people/zelin.jpg"
     
     - name: "Salma Elhassa"
@@ -36,6 +43,6 @@
     - name: "Siddhant Iyer"
       title: false
       position: "PhD candidate in Neurobiology & Behavior"
-      email: "salma.elhassa [at] columbia.edu"
-      bio: "Sid has a background in cognitive neuroscience and human fMRI data analysis. At Nuttida lab, he hopes to study precisely how neuronal populations initiate, scaffold and terminate cognitive processes. Outside of lab, he likes to play racket sports and board games."
+      email: "si2442 [at] columbia.edu"
+      bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At the Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
       avatar: "/assets/images/people/sid.jpg"

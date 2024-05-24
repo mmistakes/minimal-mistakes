@@ -1,0 +1,22 @@
+<div style="font-family: 'Times New Roman', Times, serif;">
+    <hr>
+    {% if site.data.pubs %}
+
+        {% for pub in site.data.pubs %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <span>{{ pub.title }}</span> <br>
+                        <span>{{ pub.authors }}</span> <br>
+
+                        <span>[<a href="#">pdf</a>] [<a href="#">bib</a>] <i>{{ pub.venue }}</i></span>
+
+                    </div>
+                </div>
+                <hr>
+            </div> 
+            
+        {% endfor %}
+
+    {% endif %}
+</div>

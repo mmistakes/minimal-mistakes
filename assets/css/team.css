@@ -53,12 +53,13 @@ margin-top:60px;
 }
 .our-team img{
     /* width: auto; */
-    /* max-width: none; */
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
-.our-team:hover {
+/* .our-team:hover {
     top: 0;
     -webkit-box-shadow: 10px var(--rudra_shadow_color);
     box-shadow: 10px var(--rudra_shadow_color);
@@ -67,8 +68,7 @@ margin-top:60px;
     transition: all 0.4s;
 
     border: 1px solid var(--rudra_text_color);
-    /* border-radius: 5px; */
-}
+} */
 
 .our-team .team-content{
     padding: 20px 0;

@@ -2,20 +2,20 @@
 
 {% if site.data.team %}
 
-    {% for section in site.data.team %}
-        <hr>
-        <div class="section-title text-center">
-            <h1>{{ section.section }}</h1>
-        </div>
+    <!-- <hr> -->
+    <!-- <div class="section-title text-center">
+    <h1>{{ section.section }}</h1>
+    </div> -->
 
-        <section class="team_member section-padding">
+    <section class="team_member section-padding">
+        {% for section in site.data.team %}
             <div class="container">	
         
                 {% for person in section.people %}
                     <div class="row our-team">
 
                         <div class = col-lg-3 style="padding-left: 0px;">
-                            <div style="height: 100%; width: 100%; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 100%; border-radius: 5px; overflow: hidden; display: flex; display: flex; justify-content: center; align-items: center;">
                                 <img src="{{ person.avatar | relative_url}}" alt="team-image">
                             </div>
                         </div>
@@ -28,19 +28,20 @@
                                 
                                 <br><br><span>{{ person.bio }}</span>
 
-                                {% if person.email %}
+                                <!-- {% if person.email %}
                                     <br><br><span>{{ person.email }}</span>
-                                {% endif %}
+                                {% endif %} -->
                             </div>
                         </div>
 
                     </div><!--- END ROW -->
+                <hr>
                 {% endfor %}
                 
             </div><!--- END CONTAINER -->
-        </section>
-
-    {% endfor %}
+            
+        {% endfor %}
+    </section>
 
 {% endif %}
 
