@@ -122,3 +122,46 @@ const useInputValid = (initValue, validators, errMsg) => {
     return [value, setValue, result]
 }
 ```
+
+
+
+위 코드 흐름을 간단하게 요약하면 아래와 같다.
+
+```javascript
+상태 초기화 -> 받아온 검증 함수를 고차 함수로 전달하고 실행 -> 반환된 결과를 업데이트 -> 화면 노출
+```
+
+지금까지 개발한 훅, 고차 함수, 그리고 적용할 검증 함수를 모두 풀어내면 아래와 같다.
+
+```javascript
+// 검증 함수
+const isFileSizeUnder1MB = event => { 
+    const file = event?.target?.files[0];
+    const maxSizeInBytes = 1024 * 1024; // 용량이 1MB보다 작은 파일만 허용
+
+    return file?.size < maxSizeInBytes
+}
+
+export { isFileSizeUnder1MB };
+```
+
+```javascript
+// 화면
+const App = () => {
+  const [imgFile, setImgFile, imgFileValidator] = useInputValid('', [isFileSizeUnder1MB], '용량이 1MB보다 작은 파일만 허용합니다.');
+
+  return (
+    <div className="container">
+			...
+      <input 
+          type='file' 
+          src={imgFile}
+          onChange={setImgFile}
+          />
+      <p>{fileValidator?.error}</p>
+			...
+    </div>
+  );
+}
+```
+
