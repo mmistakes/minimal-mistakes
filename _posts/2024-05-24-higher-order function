@@ -1,0 +1,43 @@
+프론트엔드 개발은 사용자 경험을 향상시키는 데 중요한 역할을 한다.
+
+현대의 웹 애플리케이션은 복잡하고 다양한 입력 폼과 상호 작용을 포함하며, 이를 관리하고 검증하는 것은 매우 중요하다. 이에 따라 코드의 재사용성과 에러 관리는 더욱 중요해진다. 
+
+이 글에서는 고차 함수를 이용하여 프론트엔드 개발에서 재사용성을 높이고, Input 상태를 효과적으로 다루는 방법에 대해 살펴보자.
+
+### **고차 함수 사용하기 전 input 상태 관리**
+
+고차 함수를 사용하지 않고, useState로 Input의 상태를 관리하면서 입력 받은 값을 검증하는 과정을 간단히 구현하면 아래와 같을 것이다. (예시. 파일 사이즈가 1MB 이상인지 확인)
+
+```javascript
+const App = () => {
+    const [fileValue, setFileValue] = React.useState("");
+    const [fileSizeError, setFileError] = React.useState("");
+
+    // 파일 용량 검사
+    const isFileSizeUnder1MB = _file => { 
+        const maxSizeInBytes = 1024 * 1024;
+    
+        return _file?.size < maxSizeInBytes
+    }
+
+		// onChange 이벤트 핸들러
+    const handleChangeFile = (event) => {
+        const file = event?.target?.files[0];
+
+        if(isFileSizeUnder1MB(file)) {
+            setFileValue(file);
+        } else {
+            setFileError("파일 용량이 1MB가 넘습니다.");
+        }
+    }
+
+    return (
+        <div className="container">
+            <input onChange={handleChangeFile} value={fileValue} />
+            <p>{fileSizeError}</p>
+        </div>
+    );
+}
+
+export default App;
+```
