@@ -1,3 +1,11 @@
+---
+layout: single
+title: "코드 생산성 2배 높이기: 고차 함수"
+published: true
+classes: wide
+category: Higher-order function
+---
+
 프론트엔드 개발은 사용자 경험을 향상시키는 데 중요한 역할을 한다.
 
 현대의 웹 애플리케이션은 복잡하고 다양한 입력 폼과 상호 작용을 포함하며, 이를 관리하고 검증하는 것은 매우 중요하다. 이에 따라 코드의 재사용성과 에러 관리는 더욱 중요해진다. 
