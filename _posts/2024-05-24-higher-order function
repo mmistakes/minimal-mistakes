@@ -65,3 +65,18 @@ export default App;
 
 그러면 고차 함수의 특징 중 하나인 파라미터로 함수를 받을 수 있다는 특성을 활용하여 검증 함수를 파라미터로 받고, 그 결과를 반환하도록 해보자.
 
+```javascript
+const validate = (validators, errMsg) => (value) => {
+    const isValid = validators.every(fn => Boolean(fn(value)));
+
+    return { 
+        succeed: isValid,
+        error: isValid ? '' : errMsg
+    }
+}
+```
+
+위 코드에서 validators는 검증 함수들이 담긴 배열이며, errMsg는 입력 값에 에러가 발생했을 때 반환할 에러 메세지다. 그리고 커링 패턴을 활용하여 2개의 파라미터를 미리 고정하고 입력 값을 나중에 받아 여러 상황에서 재사용할 수 있도록 설계하였다.
+
+입력한 값이 검증 함수들을 통과하며 에러가 있는지 확인하는 로직을 구현했으니, 상태 관리는 React의 커스텀 훅을 이용하여 다루어 보자.
+
