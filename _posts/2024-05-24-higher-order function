@@ -165,3 +165,37 @@ const App = () => {
 }
 ```
 
+화면에서 커스텀 훅을 호출하였고, 검증 결과가 imgFileValidator 에 담겨 반환되어 진위 여부와 에러 메세지를 확인할 수 있다. 
+
+또한 입력 값 상태 관리도 화면 파일에선 더 이상 관리해줄 필요가 없어 간결한 코드를 유지할 수 있다.
+
+아래에서 코드 중복 최소화 전과 후를 비교해보면 고차 함수의 중요성을 더 이해하기 쉬울 것이다.
+
+```javascript
+// 변경 전
+const [fileValue, setFileValue] = React.useState("");
+const [fileSizeError, setFileError] = React.useState("");
+const [oddValue, setOddValue] = React.useState(""); // 홀수 상태 관리
+const [oddError, setOddError] = React.useState("");
+
+const handleChangeFile = (file) => {
+    if(isFileSize1MB(file)) {
+        setFileValue(file);
+    } else {
+        setFileError("파일 용량이 1MB가 넘습니다.");
+    }
+}
+
+const handleChangeOddValue = (value) => {
+    if(isOdd(value)) {
+        setOddValue(value);
+    } else {
+        setOddError("입력한 값이 홀수가 아닙니다.");
+    }
+}
+
+// 변경 후
+const [imgFile, setImgFile, imgFileValidator] = useInputValid('', [isFileSize1MB], '용량이 1MB보다 작은 파일만 허용합니다.');
+const [oddValue, setOddValue, oddValidator] = useInputValid('', [isOdd], '입력한 값이 홀수가 아닙니다.');
+```
+
