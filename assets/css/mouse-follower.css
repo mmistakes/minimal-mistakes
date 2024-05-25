@@ -109,8 +109,10 @@
     transition:transform .35s,opacity .2s .2s
 }
 .mf-cursor.-media .mf-cursor-media-box{
+    /* opacity:1;
+    transform:scale(0.696); */
     opacity:1;
-    transform:scale(0.696);
+    transform:scale(0.5);
     transition-duration:.4s,.4s;
     transition-delay:0s,0s
 }

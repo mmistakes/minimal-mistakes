@@ -11,7 +11,11 @@
 {% endif %}
 
 <div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  {% if post.header.overlay_image and include.type != "grid" %}
+    <article class="archive__item" data-cursor-img="{{ post.header.overlay_image | relative_url }}" itemscope itemtype="https://schema.org/CreativeWork">
+  {% else %}
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  {% endif %}
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src="{{ teaser | relative_url }}" alt="">
