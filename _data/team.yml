@@ -4,9 +4,9 @@
     
     - name: "Robert Kim"
       title: "MD, PhD"
-      position: "Affiliated research scientist"
+      position: "Affiliated Research Scientist"
       email: false
-      bio: "Robert received his BS in Biomedical Engineering from Johns Hopkins University in 2012. Following his undergraduate studies, he worked in the lab of Dr. Hal Blumenfeld at Yale University, focusing on mechanisms of impaired consciousness in Childhood Absence Epilepsy. Robert then joined the Medical Scientist Training Program at UC San Diego, where he obtained his PhD in Neuroscience in 2020 and his MD in 2022. During his graduate research in the lab of Dr. Terry Sejnowski, Robert developed computational tools and frameworks to probe neural dynamics and identify neural correlates of working memory. Currently, Robert is a resident physician in Adult Neurology at Cedars-Sinai Medical Center while continuing his research in Nuttida lab and the lab of Dr. Ueli Rutishauser in the Cedars-Sinai Neurosurgery Department. His work focuses on developing computational models and analyzing human electrophysiology data to better understand the neural mechanisms of higher cognitive functions. In his free time, Robert enjoys puppy watching, playing tennis, and watching sports."
+      bio: "Robert received his BS in Biomedical Engineering from Johns Hopkins University in 2012. Following his undergraduate studies, he worked in the lab of Hal Blumenfeld at Yale University, focusing on mechanisms of impaired consciousness in Childhood Absence Epilepsy. Robert then joined the Medical Scientist Training Program at UC San Diego, where he obtained his PhD in Neuroscience in 2020 and his MD in 2022. During his graduate research in the lab of Terry Sejnowski, Robert developed computational tools and frameworks to probe neural dynamics and identify neural correlates of working memory. Currently, Robert is a resident physician in Adult Neurology at Cedars-Sinai Medical Center while continuing his research in Nuttida lab and the lab of Ueli Rutishauser in the Cedars-Sinai Neurosurgery Department. His work focuses on developing computational models and analyzing human electrophysiology data to better understand the neural mechanisms of higher cognitive functions. In his free time, Robert enjoys puppy watching, playing tennis, and watching sports."
       avatar: "/assets/images/people/robert.jpg"
 
     - name: "Tomas G. Aquino"
@@ -23,26 +23,26 @@
       title: false
       position: "Research Analyst"
       email: "rgs2151 [at] columbia.edu"
-      bio: "Rudra received his BEng in Information Technology from the University of Mumbai in 2022. He then pursued an MS in Biomedical Engineering at Columbia University, graduating in 2024. Throughout his time at Columbia, Rudra worked closely with Dr. Nuttida Rungratsameetaweemana, focusing on developing explainable machine learning methods to model influences in human perceptual decision-making. His research interests span representational similarity analysis, Bayesian inference, and dimensionality reduction techniques. After graduating, Rudra joined Nuttida's lab full-time as a Research Analyst, continuing his work on unraveling the neural mechanisms underlying higher cognitive functions through computational modeling and analysis of human brain data. Beyond academia, he loves to discuss about startups, movies, and Dota2."
+      bio: "Rudra received his BEng in Information Technology from the University of Mumbai in 2022. He then pursued an MS in Biomedical Engineering at Columbia University, graduating in 2024. Throughout his time at Columbia, Rudra worked closely with Nuttida, focusing on developing explainable machine-learning methods to model the dynamics of human perceptual decision-making. His research interests span representational similarity analysis, Bayesian inference, and dimensionality reduction techniques. After graduating, Rudra joined Nuttida's lab full-time as a Research Analyst, continuing his work on unraveling the neural mechanisms underlying higher cognitive functions through computational modeling and analysis of human electrophysiological data. Beyond academia, he loves to discuss startups, movies, and Dota2."
       avatar: "/assets/images/people/rudra.jpg"
     
     - name: "Zelin Yu"
       title: false
-      position: "Ph.D. Student"
+      position: "PhD Student in Electrical Engineering"
       email: "zy2489 [at] columbia.edu"
       bio: "Zelin received her BS in Electronic Information Engineering from Wuhan University in 2021. Following that, she received her MS in Electrical Engineering from Columbia University in 2022. Previous to joining the Nuttida lab, Zelin worked in the lab of Jennifer Gelinas and Dion Khodagholy, focusing on identifying electrophysiological markers of epileptic network progression and memory impairment as a comorbidity. Currently, Zelin is excited to investigate how the human cortex simultaneously handles multiple complex computations at the single-neuron level and circuit levels. Besides academics, she enjoys running in Central Park and playing video games."
       avatar: "/assets/images/people/zelin.jpg"
     
     - name: "Salma Elhassa"
       title: false
-      position: "MS/PhD Student"
+      position: "MS/PhD Student in Biomedical Engineering"
       email: "salma.elhassa [at] columbia.edu"
-      bio: "I am a first-year PhD student studying neural mechanisms of neuronal encoding, focusing on single-neuron recordings to investigate human perception and cognitive flexibility using machine learning modeling and computational methods. Outside the lab, I enjoy reading, writing creative pieces, walking in Queens, and exploring new cafes as a coffee enthusiast."
+      bio: "Salma is interested in exploring the neural mechanisms of perceptual and cognitive flexibility. Her project leverages single-neuron recordings in humans with methods from statistics and computational neuroscience. Outside the lab, she enjoys reading, writing creative pieces, walking in Queens, and exploring new cafes as a coffee enthusiast."
       avatar: "/assets/images/people/salma.jpg"
 
     - name: "Siddhant Iyer"
       title: false
-      position: "Rotation student/PhD student in Neurobiology & Behavior"
+      position: "PhD Student in Neurobiology & Behavior (Rotation Student)"
       email: "si2442 [at] columbia.edu"
       bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At the Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
       avatar: "/assets/images/people/sid.jpg"

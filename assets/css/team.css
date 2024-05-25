@@ -143,11 +143,13 @@ margin-top:60px;
 
 
 
+/* Modifications */
 
 
 
-
-
+.page__content img {
+    border-radius: 5px;
+}
 
 
 

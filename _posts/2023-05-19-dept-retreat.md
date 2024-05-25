@@ -1,8 +1,8 @@
 ---
 title: "BME Retreat"
 header:
-  teaser: /assets/images/post/bme_retreat.jpg
-  overlay_image: /assets/images/post/bme_retreat.jpg
+  teaser: /assets/images/posts/bme_retreat.jpg
+  overlay_image: /assets/images/posts/bme_retreat.jpg
   # overlay_color: rgba(0, 0, 0, 0.5)
   overlay_filter: 0.5
 categories:
@@ -13,7 +13,7 @@ tags:
 ---
 Last Friday, the Columbia BME community came together for a **tropical-themed department retreat** aboard the ***Baylander***. ☀️🌴 
 
-![BME Retreat]({{ site.url }}{{ site.baseurl }}/assets/images/post/bme_retreat.jpg)
+![BME Retreat]({{ site.url }}{{ site.baseurl }}/assets/images/posts/bme_retreat.jpg)
 
 
 It was an afternoon filled with fun, food, and making new memories!

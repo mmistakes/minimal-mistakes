@@ -1,5 +1,6 @@
 ---
 layout: splash
+title: "Systems Intelligence Lab"
 permalink: /
 hidden: true
 header:
@@ -12,34 +13,18 @@ header:
       url: "/about/"
 excerpt: >
   We develop experimental and computational frameworks to investigate the neural computations that underlie complex cognitive functions in health and disease.
-feature_row:
-  - image_path: https://mmistakes.github.io/minimal-mistakes/assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Brain Evolution"
-    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url: "/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: https://mmistakes.github.io/minimal-mistakes/assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Barcoding the Brain"
-    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url: "/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: https://mmistakes.github.io/minimal-mistakes/assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "Barcoding the Brain"
-    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url: "/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
 ---
 
-{% include feature_row %}
+# Mission
 
+As we navigate through diverse environments and social interactions, we constantly transform sensory information into optimal behaviors. This sensorimotor conversion is inherently complex and non-linear, requiring the brain to flexibly map identical sensory inputs onto a spectrum of potential actions informed by context and immediate goals. Our lab focuses on understanding the computational principles and coding schemes employed by the cortical hierarchy to support this cognitive flexibility and adaptive information processing.
 
-More here - Rudra
+# Approach
 
+Our research interests lie at the intersection of systems neuroscience and artificial intelligence, where we integrate complementary computational and experimental approaches. These include deep learning models and machine learning techniques combined with psychophysical and electrophysiological data, such as human intracranial recordings and rodent electrophysiology.
+
+# Focus
+
+We also investigate how these computations are disrupted in neuropsychiatric disorders and explore different pathways through which information can be rerouted to bypass disrupted pathways. Additionally, we are excited about the potential of integrating insights on the efficient coding schemes employed by cortical neurons into a new class of biologically-inspired deep learning models. These models, theoretically, would be able to flexibly adapt to changing computational demands while maintaining energy efficiency similar to that of cortical neurons.
 
 {% include page__related.html posts=site.posts %}
