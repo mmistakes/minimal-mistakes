@@ -8,6 +8,7 @@ toc_label: "About Us"
 toc_icon: "question-circle"
 toc_sticky: true
 ---
+<br>
 
 ## Who are we?
 
@@ -24,7 +25,10 @@ We are always looking for talented and motivated individuals to join our team. I
 ## Contact Us
 
 Lab contact information
+<br>
 Lab address
+<br>
 Directions
+<br>
 Timing and availability
 etc

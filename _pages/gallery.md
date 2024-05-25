@@ -1,9 +1,10 @@
 ---
 title: Gallery
-layout: collection
+layout: single
 permalink: /gallery/
-collection: portfolio
-entries_layout: grid
+classes: wide
 ---
 
-*Coming Soon*
+<hr>
+
+{% include gallery.html %}
