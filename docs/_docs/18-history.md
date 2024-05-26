@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-15T00:46:38+08:00'
+last_modified_at: '2024-05-27T01:08:26+08:00'
 toc: false
 ---
 
@@ -19,7 +19,7 @@ toc: false
 
 ### Bug Fixes
 
-- Figure helper breaks when using code markup in caption. [#4841](https://github.com/mmistakes/minimal-mistakes/issues/4841)
+- Figure helper breaks when using code markup in caption with `popup=true`. [#4841](https://github.com/mmistakes/minimal-mistakes/issues/4841)
 
 ## [4.26.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.1)
 

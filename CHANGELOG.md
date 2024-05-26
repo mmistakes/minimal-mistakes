@@ -4,7 +4,7 @@
 
 ### Bug Fixes
 
-- Figure helper breaks when using code markup in caption. [#4841](https://github.com/mmistakes/minimal-mistakes/issues/4841)
+- Figure helper breaks when using code markup in caption with `popup=true`. [#4841](https://github.com/mmistakes/minimal-mistakes/issues/4841)
 
 ## [4.26.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.1)
 
