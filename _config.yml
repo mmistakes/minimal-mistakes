@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Minhoo's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Kim Minhoo"
+description              : "한 줄씩 천천히 정리합니다."
 url                      : "https://minhoo03.github.io"
 future                   : true
 baseurl                  : # the subpath of your site, e.g. "/blog"
