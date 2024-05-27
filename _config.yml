@@ -116,7 +116,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "한 줄씩 천천히 정리합니다."
   location         : "South Korea"
-  email            : "minhoo0333@gmail.com"
+  # email            : "minhoo0333@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
