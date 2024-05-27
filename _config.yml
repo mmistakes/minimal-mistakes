@@ -223,9 +223,8 @@ kramdown:
 
 # Collections
 collections:
-  publications:
+  events:
     output: true
-    permalink: /:collection/:path/
 
 # Sass/SCSS
 sass:

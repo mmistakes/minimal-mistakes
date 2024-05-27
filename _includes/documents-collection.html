@@ -7,9 +7,16 @@
 {% if include.sort_order == 'reverse' %}
   {% assign entries = entries | reverse %}
 {% endif %}
+{% assign postsByYear = entries | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 
-{%- for post in entries -%}
-  {%- unless post.hidden -%}
-    {% include archive-single.html %}
-  {%- endunless -%}
+
+{%- for year in postsByYear -%}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <div class="entries-{{ entries_layout }}">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+      {%- for post in year.items -%}
+        {% include archive-single.html type=entries_layout %}
+      {%- endfor -%}
+    </div>
+  </section>
 {%- endfor -%}
