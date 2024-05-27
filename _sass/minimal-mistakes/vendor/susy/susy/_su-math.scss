@@ -59,6 +59,7 @@
 ///
 /// @return {length} -
 ///   Relative or static length of a span on the grid
+@use "sass:math";
 @function su-span(
   $span,
   $columns,
@@ -90,7 +91,7 @@
   @if unitless($span-width) {
     $container-spread: su-valid-spread($container-spread);
     $container: _su-sum($columns, $gutters, $container-spread, $validate: false);
-    @return percentage($span-width / $container);
+    @return percentage(math.div($span-width, $container));
   }
 
   @return $span-width;
@@ -141,7 +142,7 @@
   }
 
   $container: _su-sum($columns, $gutters, $container-spread);
-  @return percentage($gutters / $container);
+  @return percentage(math.div($gutters, $container));
 }
 
 

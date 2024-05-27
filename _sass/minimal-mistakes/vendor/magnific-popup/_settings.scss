@@ -24,11 +24,12 @@ $mfp-controls-text-color-hover:       #fff;                     // Hover color o
 $mfp-IE7support:                      true;                       // Very basic IE7 support
 
 // Iframe-type options
+@use "sass:math";
 $mfp-include-iframe-type:             true;                       // Enable Iframe-type popups
 $mfp-iframe-padding-top:              40px;                       // Iframe padding top
 $mfp-iframe-background:               #000;                       // Background color of iframes
 $mfp-iframe-max-width:                900px;                      // Maximum width of iframes
-$mfp-iframe-ratio:                    9/16;                       // Ratio of iframe (9/16 = widescreen, 3/4 = standard, etc.)
+$mfp-iframe-ratio:          math.div(9, 16);                       // Ratio of iframe (9/16 = widescreen, 3/4 = standard, etc.)
 
 // Image-type options
 $mfp-include-image-type:              true;                       // Enable Image-type popups

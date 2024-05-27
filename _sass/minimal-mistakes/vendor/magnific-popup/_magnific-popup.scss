@@ -1,7 +1,6 @@
 /* Magnific Popup CSS */
-
+@use "sass:math";
 @import "settings";
-
 ////////////////////////
 //
 // Contents:
@@ -52,7 +51,7 @@ $mfp-include-iframe-type:             true !default;
 $mfp-iframe-padding-top:              40px !default;
 $mfp-iframe-background:               #000 !default;
 $mfp-iframe-max-width:                900px !default;
-$mfp-iframe-ratio:                    9/16 !default;
+$mfp-iframe-ratio:                    (9, 16) !default;
 
 // Image-type options
 $mfp-include-image-type:              true !default;
