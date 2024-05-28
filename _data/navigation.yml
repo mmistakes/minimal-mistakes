@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Lab News"
-    url: /updates/
-  - title: "Gallery"
-    url: /gallery/
   - title: "The Team"
     url: /team/
   - title: "Publications"
     url: /publications/
+  - title: "Lab News"
+    url: /updates/
+  - title: "Gallery"
+    url: /gallery/
   - title: "Join Us"
     url: /about/
