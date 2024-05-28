@@ -40,57 +40,57 @@ title:  "SSCNav Code Analyze"
 
   * [6.5 class SCNavAgent 대규모 분석](#65-class-SCNavAgent-대규모-분석)
 
-    * [6.5.1 \_\_init\_\_ \(\)](#651-__init__)
+    * [6.5.1 \_\_init\_\_ \(\)](#651-def-__init__)
 
-    * [6.5.2 embedding(self, target)](#652-embeddingself-target)
+    * [6.5.2 embedding(self, target)](#652-def-embeddingself-target)
 
-    * [6.5.3 reset_config(self, config)](#653-reset_configself-config)
+    * [6.5.3 reset_config(self, config)](#653-def-reset_configself-config)
 
-    * [6.5.4 reset(self, target=None)](#654-resetself-targetnone)
+    * [6.5.4 reset(self, target=None)](#654-def-resetself-targetnone)
 
-    * [6.5.5 update_Q_t(self)](#655-update_Q_tself)
+    * [6.5.5 update_Q_t(self)](#655-def-update_Q_tself)
 
-    * [6.5.6 update_Q_t_soft(self)](#656-update_Q_t_softself)
+    * [6.5.6 update_Q_t_soft(self)](#656-def-update_Q_t_softself)
 
-    * [6.5.7 train_Q(self)](#657-train_Qself)
+    * [6.5.7 train_Q(self)](#657-def-train_Qself)
 
-    * [6.5.8 get_observations(self)](#658-get_observationsself)
+    * [6.5.8 get_observations(self)](#658-def-get_observationsself)
 
-    * [6.5.9 get_trinsics(self)](#659-get_trinsicsself)
+    * [6.5.9 get_trinsics(self)](#659-def-get_trinsicsself)
 
-    * [6.5.10 single_view_and_save(self)](#6510-single_view_and_saveself)
+    * [6.5.10 single_view_and_save(self)](#6510-def-single_view_and_saveself)
 
-    * [6.5.11 single_view_and_save_new(self)](#6511-single_view_and_save_newself)
+    * [6.5.11 single_view_and_save_new(self)](#6511-def-single_view_and_save_newself)
 
-    * [6.5.12 view(self)](#6512-viewself)
+    * [6.5.12 view(self)](#6512-def-viewself)
 
-    * [6.5.13 action_picker(self, eps_threshold)](#6513-action_pickerself-eps_threshold)
+    * [6.5.13 action_picker(self, eps_threshold)](#6513-def-action_pickerself-eps_threshold)
 
-    * [6.5.14 reach_goal(self, c_x, c_y)](#6514-reach_goalself-c_x-c_y)
+    * [6.5.14 reach_goal(self, c_x, c_y)](#6514-def-reach_goalself-c_x-c_y)
 
-    * [6.5.15 planner_path(self, eps_threshold)](#6515-planner_pathself-eps_threshold)
+    * [6.5.15 planner_path(self, eps_threshold)](#6515-def-planner_pathself-eps_threshold)
 
-    * [6.5.16 planner(self, eps_threshold)](#6516-plannerself-eps_threshold)
+    * [6.5.16 planner(self, eps_threshold)](#6516-def-plannerself-eps_threshold)
 
-    * [6.5.17 planner_discrete(self, randomness)](#6517-planner_discreteself-randomness)
+    * [6.5.17 planner_discrete(self, randomness)](#6517-def-planner_discreteself-randomness)
 
-    * [6.5.18 euclidean_distance(self, position_a, position_b)](#6518-euclidean_distanceself-position_a-position_b)
+    * [6.5.18 euclidean_distance(self, position_a, position_b)](#6518-def-euclidean_distanceself-position_a-position_b)
 
-    * [6.5.19 shortest_distance(self)](#6519-shortest_distanceself)
+    * [6.5.19 shortest_distance(self)](#6519-def-shortest_distanceself)
 
-    * [6.5.20 rotate(self, angle)](#6520-rotateself-angle)
+    * [6.5.20 rotate(self, angle)](#6520-def-rotateself-angle)
 
-    * [6.5.21 move_path(self)](#6521-move_pathself)
+    * [6.5.21 move_path(self)](#6521-def-move_pathself)
 
-    * [6.5.22 move(self, action_list)](#6522-moveself-action_list)
+    * [6.5.22 move(self, action_list)](#6522-def-moveself-action_list)
 
-    * [6.5.23 visible_close_checker(self, targets, semantic, depth)](#6523-visible_close_checkerself-targets-semantic-depth)
+    * [6.5.23 visible_close_checker(self, targets, semantic, depth)](#6523-def-visible_close_checkerself-targets-semantic-depth)
 
-    * [6.5.24 stop_checker(self)](#6524-stop_checkerself)
+    * [6.5.24 stop_checker(self)](#6524-def-stop_checkerself)
 
     * [6.5.25 success_checker(self)](#6525-def-success_checkerself)
 
-    * [6.5.26 step(self, randomness)](###-6.5.26-def-step(self,-randomness):)
+    * [6.5.26 step(self, randomness)](#6526-def-stepself-randomness)
 
 ---
 # 1 SSCNav-master/utils에 대하여
