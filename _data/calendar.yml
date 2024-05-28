@@ -86,19 +86,19 @@
   },
   {
     "image_path": null,
-    "alt": "Schulkonferenz",
-    "title": "Schulkonferenz",
+    "alt": "Ausflug A5 - Bibliothek ",
+    "title": "Ausflug A5 - Bibliothek ",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cGI5cWpqYmFlZHQ3NWYwa2FzNmRrcGpoaGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=N2VmMDllcjU4ZmIybmkxMmcydXZrcHBxbTMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-06-06T15:30:00+02:00"
+      "date_time": "2024-06-06T08:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-06-06T17:00:00+02:00"
+      "date_time": "2024-06-06T10:00:00+02:00"
     },
-    "created": "2024-05-15T04:18:50.000Z",
-    "updated": "2024-05-15T04:18:50.237Z"
+    "created": "2024-05-27T11:01:30.000Z",
+    "updated": "2024-05-27T11:01:30.559Z"
   }
 ]
