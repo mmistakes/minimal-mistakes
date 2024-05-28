@@ -88,7 +88,7 @@ title:  "SSCNav Code Analyze"
 
     * [6.5.24 stop_checker(self)](#6524-stop_checkerself)
 
-    * [6.5.25 success_checker(self)](#6525-success_checkerself)
+    * [6.5.25 success_checker(self)](#6525-def-success_checkerself)
 
     * [6.5.26 step(self, randomness)](###-6.5.26-def-step(self,-randomness):)
 
