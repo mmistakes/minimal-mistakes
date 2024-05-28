@@ -138,7 +138,7 @@ margin-top:60px;
 
 /* Ensure images are 400x400 on smaller screens */
 @media (max-width: 768px) {
-    .team-image {
+    .lab_avatar {
         width: 300px;
         height: 300px;
     }
