@@ -24,7 +24,6 @@ margin-top:60px;
 	font-weight: 600;
 	line-height: 60px;
 }
-.single_team_content p{}
 
 .our-team {
 	margin-bottom: 30px;
@@ -135,6 +134,14 @@ margin-top:60px;
 }
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
+}
+
+/* Ensure images are 400x400 on smaller screens */
+@media (max-width: 768px) {
+    .team-image {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 
