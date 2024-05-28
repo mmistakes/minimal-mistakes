@@ -10,7 +10,7 @@ title:  "SSCNav Code Analyze"
 
 ## 목차   
 
-* [1. SSCNav-master/utils에 대하여](#1-SSCNav-masterutils에-대하여)
+* [1. SSCNav-master/utils에 대하여](#1-sscnav-masterutils에-대하여)
 
   * [1.1 SSCNav-master/utils/mapper.py](#11-SSCNav-masterutilsmapperpy)
 
