@@ -16,7 +16,9 @@
 
                         <div class = col-lg-3 style="padding-left: 0px;">
                             <div class="lab_avatar" style="height: 100%; width: 100%; border-radius: 5px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
-                                <img src="{{ person.avatar | relative_url}}" alt="team-image">
+                                <div style="width: 300px; height: 300px; border-radius: 5px; overflow: hidden;">
+                                    <img src="{{ person.avatar | relative_url}}" alt="team-image">
+                                </div>
                             </div>
                         </div>
 
