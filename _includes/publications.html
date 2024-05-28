@@ -9,7 +9,7 @@
                         <span>{{ pub.title }}</span> <br>
                         <span>{{ pub.authors }}</span> <br>
 
-                        <span>[<a href="#">pdf</a>] [<a href="#">bib</a>] <i>{{ pub.venue }}</i></span>
+                        <span>[<a href="{{ pub.pdf | relative_url }}">pdf</a>] [<a href="#">bib</a>] <i>{{ pub.venue }}</i></span>
 
                     </div>
                 </div>
