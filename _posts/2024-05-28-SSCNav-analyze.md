@@ -34,11 +34,11 @@ title:  "SSCNav Code Analyze"
 
   * [6.2 class replay_buffer(object) 분석](#62-class-replay_bufferobject-분석)
 
-  * [6.3 class Memory 분석](#63-class-Memory-분석)
+  * [6.3 class Memory 분석](#63-class-memory-분석)
 
-  * [6.4 class Memory_gpu(Memory) 분석](#64-class-Memory_gpuMemory-분석)
+  * [6.4 class Memory_gpu(Memory) 분석](#64-class-memory_gpumemory-분석)
 
-  * [6.5 class SCNavAgent 대규모 분석](#65-class-SCNavAgent-대규모-분석)
+  * [6.5 class SCNavAgent 대규모 분석](#65-class-scnavagent-대규모-분석)
 
     * [6.5.1 \_\_init\_\_ \(\)](#651-def-__init__)
 
@@ -50,9 +50,9 @@ title:  "SSCNav Code Analyze"
 
     * [6.5.5 update_Q_t(self)](#655-def-update_Q_tself)
 
-    * [6.5.6 update_Q_t_soft(self)](#656-def-update_Q_t_softself)
+    * [6.5.6 update_Q_t_soft(self)](#656-def-update_q_t_softself)
 
-    * [6.5.7 train_Q(self)](#657-def-train_Qself)
+    * [6.5.7 train_Q(self)](#657-def-train_qself)
 
     * [6.5.8 get_observations(self)](#658-def-get_observationsself)
 
