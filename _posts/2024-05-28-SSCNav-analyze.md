@@ -48,7 +48,7 @@ title:  "SSCNav Code Analyze"
 
     * [6.5.4 reset(self, target=None)](#654-def-resetself-targetnone)
 
-    * [6.5.5 update_Q_t(self)](#655-def-update_Q_tself)
+    * [6.5.5 update_Q_t(self)](#655-def-update_q_tself)
 
     * [6.5.6 update_Q_t_soft(self)](#656-def-update_q_t_softself)
 
