@@ -90,7 +90,7 @@ title:  "SSCNav Code Analyze"
 
     * [6.5.25 success_checker(self)](#6525-success_checkerself)
 
-    * [6.5.26 step(self, randomness)](#6526-stepself-randomness)
+    * [6.5.26 step(self, randomness)](###-6.5.26-def-step(self,-randomness):)
 
 ---
 # 1 SSCNav-master/utils에 대하여
