@@ -15,6 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+futrue                   : true  
 locale                   : "en-US"
 title                    : "Welcome to SLSCM Lab"
 title_separator          : "-"
