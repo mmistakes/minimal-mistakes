@@ -182,6 +182,16 @@ a:focus {
     font-size: 1.2rem;
 }
 
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/* Gallery */
+
+
 .gallery_img_container { 
     width: 30%;
     margin-bottom: 20px;

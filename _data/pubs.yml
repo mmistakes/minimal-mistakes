@@ -5,12 +5,12 @@
   bib: false
   doi: "10.1101/2023.09.11.557257"
 
-- title: "Top-down signaling dynamically mediates information processing in biologically inspired RNNs"
+- title: "Disinhibitory signaling enables flexible coding of top-down information"
   authors: "Aquino TG*, Kim R*, Rungratsameetaweemana N."
-  venue: "bioRxiv: 10.1101/2023.10.17.562828, 2023. Submitted."
+  venue: "bioRxiv: 10.1101/2023.10.17.562828v2, 2023. Submitted."
   pdf: "/assets/papers/Aquino_2023.pdf"
   bib: false
-  doi: "10.1101/2023.10.17.562828"
+  doi: "https://doi.org/10.1101/2023.10.17.562828 "
 
 - title: "Random noise promotes slow heterogeneous synaptic dynamics important for robust working memory computation"
   authors: "Rungratsameetaweemana N*, Kim R*, Chotibut T, Sejnowski TJ."
