@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "air" # "default" # "air", "aqua", £ "contrast", "da
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Dom McKean Project Portfolio"
+title                    : "Dom Christian Project Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Dom McKean"
+name                     : "Dom Christian"
 description              : "Data Science Researcher/Robotics Engineer at Intelligent Automation. "
                             
 url                      : "https://DomMcKean.github.io" 
@@ -94,59 +94,59 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dom McKean"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. 
+  name             : "Dom Christian"
+  #avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. 
   bio              : > 
                       <p style='text-align: justify;'>
                       Data Science/Robotics Researcher at Intelligent Automation. PhD student at Loughborough University. 
                       4 years in data science/deep learning and robotics, 7 years in control systems and academic research 
                       and 10 years in Automotive Systems Engineering.</p><br>
                        
-  location         : "Midlands UK"
+  #location         : "Midlands UK"
   #email            : "dommckean@gmail.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:dommckean@gmail.com"
+  # links:
+  #   - label: "Email"
+  #     icon: "fas fa-fw fa-envelope-square"
+  #     url: "mailto:dommckean@gmail.com"
       
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/dom-mckean//"
+  #   - label: "LinkedIn"
+  #     icon: "fab fa-fw fa-linkedin"
+  #     url: "https://www.linkedin.com/in/dom-mckean//"
 
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/dommckean"
+  #   - label: "Twitter"
+  #     icon: "fab fa-fw fa-twitter-square"
+  #     url: "https://twitter.com/dommckean"
       
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+  #   - label: "Facebook"
+  #     icon: "fab fa-fw fa-facebook-square"
+  #     # url: "https://facebook.com/"
       
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/PorkPy"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/PorkPy"
     
 # Site Footer
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:dommckean@gmail.com"
+# footer:
+#   links:
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: "mailto:dommckean@gmail.com"
       
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/dom-mckean//"
+#     - label: "LinkedIn"
+#       icon: "fab fa-fw fa-linkedin"
+#       url: "https://www.linkedin.com/in/dom-mckean//"
 
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/dommckean"
+#     - label: "Twitter"
+#       icon: "fab fa-fw fa-twitter-square"
+#       url: "https://twitter.com/dommckean"
       
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+#     - label: "Facebook"
+#       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
       
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/PorkPy"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/PorkPy"
     
 
 # Reading Files
