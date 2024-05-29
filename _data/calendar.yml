@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 6b - Filmpark Babelsberg",
-    "title": "Ausflug 6b - Filmpark Babelsberg",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2ZqMjJzdDg2NjNxZ3RyazN1a2ZhdnNqZ2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-28T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-28T16:00:00+02:00"
-    },
-    "created": "2024-05-15T09:25:21.000Z",
-    "updated": "2024-05-15T09:25:21.074Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
-    "title": "Ausflug A9 - Gartenarbeitsschule Hakenfelde",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGN1MnVkdW80dXMzN21nb3A2Y2VjNDRvOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-28T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-28T13:00:00+02:00"
-    },
-    "created": "2024-01-31T12:17:25.000Z",
-    "updated": "2024-01-31T12:17:25.559Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 4b - Gartenarbeitsschule",
     "title": "Ausflug 4b - Gartenarbeitsschule",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-05-27T11:01:30.000Z",
     "updated": "2024-05-27T11:01:30.559Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug 4a - Kletterwald ",
+    "title": "Ausflug 4a - Kletterwald ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWJ0ZWIwdHAxZmJiYmFoNDIxNjZqcGpydnYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-06T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-06T14:00:00+02:00"
+    },
+    "created": "2024-05-27T11:00:42.000Z",
+    "updated": "2024-05-27T11:00:42.432Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulkonferenz",
+    "title": "Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=cGI5cWpqYmFlZHQ3NWYwa2FzNmRrcGpoaGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-06T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-06T17:00:00+02:00"
+    },
+    "created": "2024-05-15T04:18:50.000Z",
+    "updated": "2024-05-15T04:18:50.237Z"
   }
 ]
