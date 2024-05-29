@@ -1,0 +1,13 @@
+@article{
+doi:10.1073/pnas.1904502116,
+author = {Nuttida Rungratsameetaweemana  and Larry R. Squire  and John T. Serences },
+title = {Preserved capacity for learning statistical regularities and directing selective attention after hippocampal lesions},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {116},
+number = {39},
+pages = {19705-19710},
+year = {2019},
+doi = {10.1073/pnas.1904502116},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.1904502116},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.1904502116},
+abstract = {Prior knowledge about the probabilistic structure of visual environments is necessary to resolve ambiguous information about objects in the world. Expectations based on stimulus regularities exert a powerful influence on human perception and decision making by improving the efficiency of information processing. Another type of prior knowledge, termed top-down attention, can also improve perceptual performance by facilitating the selective processing of relevant over irrelevant information. While much is known about attention, the mechanisms that support expectations about statistical regularities are not well-understood. The hippocampus has been implicated as a key structure involved in or perhaps necessary for the learning of statistical regularities, consistent with its role in various kinds of learning and memory. Here, we tested this hypothesis using a motion discrimination task in which we manipulated the most likely direction of motion, the degree of attention afforded to the relevant stimulus, and the amount of available sensory evidence. We tested memory-impaired patients with bilateral damage to the hippocampus and compared their performance with controls. Despite a modest slowing in response initiation across all task conditions, patients performed similar to controls. Like controls, patients exhibited a tendency to respond faster and more accurately when the motion direction was more probable, the stimulus was better attended, and more sensory evidence was available. Together, these findings demonstrate a robust, hippocampus-independent capacity for learning statistical regularities in the sensory environment in order to improve information processing.}}

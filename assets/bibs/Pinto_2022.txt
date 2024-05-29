@@ -1,0 +1,18 @@
+@article{10.1162/netn_a_00255,
+    author = {Lima Dias Pinto, Italo’Ivo and Rungratsameetaweemana, Nuttida and Flaherty, Kristen and Periyannan, Aditi and Meghdadi, Amir and Richard, Christian and Berka, Chris and Bansal, Kanika and Garcia, Javier Omar},
+    title = "{Intermittent brain network reconfigurations and the resistance to social media influence}",
+    journal = {Network Neuroscience},
+    volume = {6},
+    number = {3},
+    pages = {870-896},
+    year = {2022},
+    month = {07},
+    abstract = "{Since its development, social media has grown as a source of information and has a significant impact on opinion formation. Individuals interact with others and content via social media platforms in a variety of ways, but it remains unclear how decision-making and associated neural processes are impacted by the online sharing of informational content, from factual to fabricated. Here, we use EEG to estimate dynamic reconfigurations of brain networks and probe the neural changes underlying opinion change (or formation) within individuals interacting with a simulated social media platform. Our findings indicate that the individuals who changed their opinions are characterized by less frequent network reconfigurations while those who did not change their opinions tend to have more flexible brain networks with frequent reconfigurations. The nature of these frequent network configurations suggests a fundamentally different thought process between intervals in which individuals are easily influenced by social media and those in which they are not. We also show that these reconfigurations are distinct to the brain dynamics during an in-person discussion with strangers on the same content. Together, these findings suggest that brain network reconfigurations may not only be diagnostic to the informational context but also the underlying opinion formation.Distinctive neural underpinnings of opinion formation and change during in-person and online social interactions are not well understood. Here, we analyze EEG recordings of the participants interacting with a simulated social media platform and during an in-person discussion by using a network-based analysis approach. We show that the structure of network reconfigurations during these interactions is diagnostic of the opinion change and the context in which information was received.}",
+    issn = {2472-1751},
+    doi = {10.1162/netn_a_00255},
+    url = {https://doi.org/10.1162/netn\_a\_00255},
+    eprint = {https://direct.mit.edu/netn/article-pdf/6/3/870/2046467/netn\_a\_00255.pdf},
+}
+
+
+

@@ -1,0 +1,18 @@
+@article{10.1063/1.5139654,
+    author = {Lainscsek, Claudia and Rungratsameetaweemana, Nuttida and Cash, Sydney S. and Sejnowski, Terrence J.},
+    title = "{Cortical chimera states predict epileptic seizures}",
+    journal = {Chaos: An Interdisciplinary Journal of Nonlinear Science},
+    volume = {29},
+    number = {12},
+    pages = {121106},
+    year = {2019},
+    month = {12},
+    abstract = "{A chimera state is a spatiotemporal pattern of broken symmetry, where synchrony (coherent state) and asynchrony (incoherent state) coexist. Here, we report chimera states in electrocorticography recordings preceding, by several hours, each of seven seizures in one patient with epilepsy. Before the seizures, the onset channels are not synchronized, while the remaining channels are synchronized. During the seizures, this pattern of behavior flips and the nononset channels show a more asynchronous behavior. At a seizure offset, synchrony can be observed that might facilitate termination.}",
+    issn = {1054-1500},
+    doi = {10.1063/1.5139654},
+    url = {https://doi.org/10.1063/1.5139654},
+    eprint = {https://pubs.aip.org/aip/cha/article-pdf/doi/10.1063/1.5139654/14622173/121106\_1\_online.pdf},
+}
+
+
+

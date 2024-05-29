@@ -1,0 +1,8 @@
+@misc{pao2021experimentally,
+      title={Experimentally testable whole brain manifolds that recapitulate behavior}, 
+      author={Gerald M Pao and Cameron Smith and Joseph Park and Keichi Takahashi and Wassapon Watanakeesuntorn and Hiroaki Natsukawa and Sreekanth H Chalasani and Tom Lorimer and Ryousei Takano and Nuttida Rungratsameetaweemana and George Sugihara},
+      year={2021},
+      eprint={2106.10627},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.NC}
+}

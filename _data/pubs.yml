@@ -2,96 +2,96 @@
   authors: "Henderson MM, Serences, JT, Rungratsameetaweemana N."
   venue: "bioRxiv: 10.1101/2023.09.11.557257, 2023. In revision."
   pdf: "/assets/papers/Henderson_2023.pdf"
-  bib: false
+  bib: "/assets/bibs/Henderson_2023.txt"
   doi: "10.1101/2023.09.11.557257"
 
 - title: "Disinhibitory signaling enables flexible coding of top-down information"
   authors: "Aquino TG*, Kim R*, Rungratsameetaweemana N."
   venue: "bioRxiv: 10.1101/2023.10.17.562828v2, 2023. Submitted."
   pdf: "/assets/papers/Aquino_2023.pdf"
-  bib: false
+  bib: "/assets/bibs/Aquino_2023.txt"
   doi: "https://doi.org/10.1101/2023.10.17.562828 "
 
 - title: "Random noise promotes slow heterogeneous synaptic dynamics important for robust working memory computation"
   authors: "Rungratsameetaweemana N*, Kim R*, Chotibut T, Sejnowski TJ."
   venue: "bioRxiv: 10.1101/2022.10.14.512301, 2023. In revision."
   pdf: "/assets/papers/Nuttida_2023.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_2023.txt"
   doi: false
 
 - title: "Brain network dynamics codify heterogeneity in seizure evolution"
   authors: "Rungratsameetaweemana N, Lainscsek C, Cash SS, Garcia JO, Sejnowski TJ*, Bansal K*."
   venue: "Brain Communications, 2022."
   pdf: "/assets/papers/Nuttida_2022.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_2022.txt"
   doi: false
 
 - title: "Intermittent brain network reconfigurations and the resistance to social media influence"
   authors: "Pinto ILD, Rungratsameetaweemana N, Flaherty K, Periyannan A, Meghdadi A, Richard C, Berka C, Bansal K, Garcia JO."
   venue: "Network Neuroscience, 2022."
   pdf: "/assets/papers/Pinto_2022.pdf"
-  bib: false
+  bib: "/assets/bibs/Pinto_2022.txt"
   doi: false
 
 - title: "Understanding motor abnormalities in psychiatric disorders as altered sensorimotor processing"
   authors: "Rungratsameetaweemana N."
   venue: "Biological Psychiatry: Global Open Science, 2021."
   pdf: "/assets/papers/Nuttida_2021.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_2021.txt"
   doi: false
 
 - title: "Experimentally testable whole brain manifolds that recapitulate behavior"
   authors: "Pao G, Smoth C, Park J, Takahashi K, Watanakeesuntorn W, Natsukawa H, Chalasani SH, Lorimer T, Takano R, Rungratsameetaweemana N, Sugihara G. "
   venue: "arXiv:2106.10627, 2021."
   pdf: "/assets/papers/Pao_2021.pdf"
-  bib: false
+  bib: "/assets/bibs/Pao_2021.txt"
   doi: false
 
 - title: "Cortical chimera states predict epileptic seizures"
   authors: "Lainscsek C*, Rungratsameetaweemana N*, Cash SS, Sejnowski TJ."
   venue: "Chaos: An Interdisciplinary Journal of Nonlinear Science, 29: 121106, 2019."
   pdf: "/assets/papers/Lainscsek_2019.pdf"
-  bib: false
+  bib: "/assets/bibs/Lainscsek_2019.txt"
   doi: false
 
 - title: "Preserved capacity for learning statistical regularities and directing selective attention after hippocampal lesions"
   authors: "Rungratsameetaweemana N, Squire LR, Serences JT."
   venue: "The Proceedings of the National Academy of Sciences, 116 (39): 19705-19710, 2019."
   pdf: "/assets/papers/Nuttida_2019.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_2019.txt"
   doi: false
 
 - title: "Dissociating the impact of attention and expectation on early sensory processing"
   authors: "Rungratsameetaweemana N, Serences JT."
   venue: "Current Opinion in Psychology, 29: 181-186, 2019."
   pdf: "/assets/papers/Nuttida_Serences_2019.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_Serences_2019.txt"
   doi: false
 
 - title: "The speed-accuracy tradeoff reveals flexible access to accumulating sensory evidence during human decision-making"
   authors: "Nelli S, Itthipuripat S, Rungratsameetaweemana N, Serences JT."
   venue: "bioRxiv: 10.1101/420430v1, 2018."
   pdf: "/assets/papers/Nelli_2018.pdf"
-  bib: false
+  bib: "/assets/bibs/Nelli_2018.txt"
   doi: false
 
 - title: "Expectations do not alter early sensory processing during perceptual decision-making."
   authors: "Rungratsameetaweemana N*, Itthipuripat S*, Salazar A, Serences JT."
   venue: "Journal of Neuroscience, 2018."
   pdf: "/assets/papers/Nuttida_2018.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_2018.txt"
   doi: false
 
 - title: "Preserved capacity for scene construction and shifts in perspective after hippocampal lesions."
   authors: "Rungratsameetaweemana N, Squire, LR."
   venue: "Learning & Memory, 25: 347-351, 2018."
   pdf: "/assets/papers/Nuttida_Squire_2018.pdf"
-  bib: false
+  bib: "/assets/bibs/Nuttida_Squire_2018.txt"
   doi: false
 
 - title: "Changing the spatial scope of attention alters patterns of neural gain in human cortex"
   authors: "Itthipuripat S, Garcia, JO, Rungratsameetaweemana N, Sprague TC, Serences JT."
   venue: "Journal of Neuroscience, 2014."
   pdf: "/assets/papers/Itthipuripat_2014.pdf"
-  bib: false
+  bib: "/assets/bibs/Itthipuripat_2014.txt"
   doi: false

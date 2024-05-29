@@ -190,9 +190,14 @@ a:focus {
 
 
 /* Gallery */
-
-
 .gallery_img_container { 
-    width: 30%;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+/* On large screens change width */
+@media (min-width: 768px) {
+    .gallery_img_container {
+        width: 30%;
+    }
 }
