@@ -384,3 +384,22 @@ Bhuvnesh Jain:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://live-sas-physics.pantheon.sas.upenn.edu/people/standing-faculty/bhuvnesh-jain/"
+
+Alaia Solko-Breslin:
+  name    : "Alaia Solko-Breslin"
+  avatar  : "/assets/images/avatar/alaia.png"
+  bio     : "PhD Student at UPenn"
+  home    : https://alaiasolkobreslin.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:alaia@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://alaiasolkobreslin.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/alaia_solko"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/alaiasolkobreslin"
