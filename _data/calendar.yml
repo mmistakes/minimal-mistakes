@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4b - Gartenarbeitsschule",
-    "title": "Ausflug 4b - Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzF2c2dtMzViNWUzMmZhOGJlb3VkOXZxZG4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-05-31T07:50:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-05-31T12:20:00+02:00"
-    },
-    "created": "2024-05-15T09:27:31.000Z",
-    "updated": "2024-05-15T09:27:31.439Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 4b - Kimba Express",
     "title": "Ausflug 4b - Kimba Express",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-05-15T04:18:50.000Z",
     "updated": "2024-05-15T04:18:50.237Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A3 - Bibliothek",
+    "title": "Ausflug A3 - Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXIzNm1hb2FpOWMwcnNwZXM1cWlpM2FlamggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-14T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-14T11:00:00+02:00"
+    },
+    "created": "2024-05-06T10:38:07.000Z",
+    "updated": "2024-05-06T10:38:07.446Z"
   }
 ]
