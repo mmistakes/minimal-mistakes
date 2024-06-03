@@ -67,6 +67,52 @@ neural_programs:
     flex: 0 0 48%; /* this ensures the child takes up 48% of the parent's width (leaving a bit of space between them) */
 }
 
+.button-method {
+  width: 25%;
+  background: rgba(76, 175, 80, 0.0);
+  border: 0px;
+  border-right: 1px solid #ccc;
+  color: #999;
+}
+
+.button-sample {
+  padding: 5px;
+  font-size: 10px;
+  background: rgba(76, 175, 80, 0.0);
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.btn-clicked {
+  color: black;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+}
+
+th, td {
+  text-align: center;
+  padding: 1px 5px;
+}
+
+table {
+  width: auto; 
+  padding-top:15px;
+  margin-right: 5px;
+}
+
+math, div {
+  width: auto; 
+  margin-right: 15px;
+}
+
+div {
+  margin-left: 15px;
+}
+
 </style>
 
 <script type="text/x-mathjax-config">
@@ -250,6 +296,384 @@ TODO: SOME GRAPHIC SHOWING THE AGGREGATION STEP
 **Descend**
 
 The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px; font-size:12px" id="scrollContainer">
+  <p>
+    $r_1 = 1$, $r_2 = 2$. $y = 3$. <br>
+      Assume $ M_\theta(x_1) = \begin{bmatrix}
+              0.1\\
+              0.6 \\
+              0.3
+              \end{bmatrix}$
+      and $ M_\theta(x_2) = \begin{bmatrix}
+                  0.2\\
+                  0.1 \\
+                  0.7
+                  \end{bmatrix}$.
+  </p>
+  
+  <script>showDiv(1);</script>
+  
+  <div style="padding-right:20px; border-bottom:1px solid #ccc; border-top:1px solid #ccc;">
+    <button onclick="showDiv(1)" class="button-method btn-clicked" id="isedbutton">ISED</button>
+    <button onclick="showDiv(2)" class="button-method" id="dplbutton">DeepProbLog</button>
+    <button onclick="showDiv(3)" class="button-method">Scallop</button>
+    <button onclick="showDiv(4)" class="button-method" style="border-right: 0px">REINFORCE</button>
+  </div>
+  
+  <div id="div1" class="content">
+    <div class="container">
+        <button onclick="isedshow()" style="display: inline-block;" class="button-sample">Sample</button>
+        <table id="isedresult" style="align:center"></table>
+    </div>
+    <div class="container">
+      <div id="isedagg" style=""></div>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <math display="inline-block" id="ised" style="margin-left: 15px;"></math>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <div id="isedloss"></div>
+      </div>
+    </div>
+  
+  <div id="div2" class="content hidden">
+    <table id="dplresult" style="align:center"></table>
+    <div class="container">
+      <div id="dplagg" style=""></div>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <math display="inline-block" style="margin-left: 15px;" id="dpl"></math>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <div id="dplloss"></div>
+    </div>
+  </div>
+  
+  <div id="div3" class="content hidden">
+    <div class="container">
+      <button onclick="scallop1show()" style="margin: 0 5px;" class="button-sample">top-1</button>
+      <button onclick="scallop3show()" style="display: inline-block;" class="button-sample">top-3</button>
+      <table id="scallopresult" style="align:center"></table>
+    </div>
+    <div class="container" style="overflow-x:auto">
+      <div id="scallopagg" style="width: auto;"></div>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <math display="inline-block" style="margin-left: 15px;" id="scallop"></math>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <div id="scalloploss"></div>
+    </div>
+  </div>
+  
+  <div id="div4" class="content hidden">
+    <div class="container">
+      <button onclick="reinforceshow()" style="display: inline-block;" class="button-sample">Sample</button>
+      <table id="reinforceresult" style="align:center"></table>
+    </div>
+    <div id="reinforceloss"></div>
+  </div>
+
+</div>
+
+<script>
+  // Default sampling when page loads
+  document.addEventListener("DOMContentLoaded", function() {
+      isedshow();
+      dplshow();
+      scallop1show();
+      reinforceshow();
+  });
+
+  const buttons = document.querySelectorAll('.button-method');
+   buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                buttons.forEach(btn => btn.classList.remove('btn-clicked'));
+                this.classList.add('btn-clicked');
+            });
+        });
+
+  function showDiv(divNum) {
+      // Hide all divs
+      var divElements = document.querySelectorAll('.content');
+      for (var i = 0; i < divElements.length; i++) {
+        divElements[i].classList.add('hidden');
+    }
+    document.getElementById('div' + divNum).classList.remove('hidden');
+  }
+
+  function get_prob(n, i){
+      if(i<=0) return n.zero
+      if(i<=1) return n.one
+      if(i<=2) return n.two;
+    }
+  
+  function sample(n1, n2, y) {
+    function randn_bm(n) {
+      let u = 0;
+      u = Math.random(); 
+      if (u < n.zero) return 0
+      if (u < n.zero + n.one) return 1
+      return 2;
+    }
+
+    let samples = [];
+    for (let i = 0; i < 5; i++) {
+      a = randn_bm(n1)
+      b = randn_bm(n2)
+      sum = a + b
+      pa = get_prob(n1, a)
+      pb = get_prob(n2, b)
+      if(sum==y) reward = 1
+      else reward = 0
+      pab = pa * pb
+      minab = Math.min(pa, pb)
+      samples.push({a, b, sum, pa, pb, reward, pab, minab});
+    }
+    return samples;
+  }
+
+  function enumerate(n1, n2){
+    let samples = [];
+    for (let i = 0; i < 3; i ++){
+      for (let j = 0; j < 3; j++){
+        a = i
+        b = j
+        sum = a + b
+        pa = get_prob(n1, a)
+        pb = get_prob(n2, b)
+        pab = pa * pb
+        minab = Math.min(pa, pb)
+        samples.push({a, b, sum, pa, pb, pab, minab});
+      }
+    }
+    return samples;
+  }
+
+  function filter(samples) {
+    let min = samples[0] 
+    samples.forEach(sample => {
+      let t = sample.pa * sample.pb;
+      let minp = min.pa * min.pb
+      if(t > minp) min = sample
+      if(t==minp) {
+        if(Math.random() < 0.5) min = sample
+      } 
+    })
+    return [min]
+  }
+
+  function classify(samples) {
+    let zero = [], one = [], two = [], three = [], four = [];
+    samples.forEach(sample => {
+      let s = sample.sum; 
+      if(s == 0) zero.push(sample)
+      if(s == 1) one.push(sample)
+      if(s == 2) two.push(sample)
+      if(s == 3) three.push(sample)
+      if(s == 4) four.push(sample)
+  })
+    return [zero, one, two, three, four]
+  }
+
+  function wmc(samples){
+    let t = samples.reduce((acc, val) => acc + val.pa.toString()+ ' * ' + val.pb.toString() + ' + ', '').slice(0, -3);
+    if(t.length < 1) return '0'
+    return t
+  }
+
+  function minmax(samples){
+    let t = samples.reduce((acc, val) => acc + "min(" + val.pa.toString()+ ' , ' + val.pb.toString() + '), ', '').slice(0, -2);
+    if(t.length < 1) return '0'
+    if(t.length > 15) return "max(" + t + ")"
+    return t
+  }
+
+  function ws(samples, method, resultname, lossname){
+    document.getElementById(resultname).innerHTML = `
+        <tr>
+          <th> sample </th>
+          ${samples.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+        </tr>
+        <tr>
+          <th> output </th>
+          ${samples.reduce((acc, val) => acc + "<th> " + val.sum.toString()+ '</th>', '')}
+        </tr>
+        <tr>
+          <th> reward </th>
+          ${samples.reduce((acc, val) => acc + "<th> " + val.reward.toString()+ '</th>', '')}
+        </tr>`;
+    
+    document.getElementById(lossname).innerHTML = `
+      <math display="inline-block" style="margin-right: 0px;"> 
+        <mo>[</mo>
+        <mtable>
+          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>log(" + val.pa.toString()+ ') + log(' + val.pb.toString() + ')'+ '</mi></mtd></mtr>', '')}
+        </mtable>
+        <mo>]</mo>
+      </math>
+      *
+      <math display="inline-block"> 
+        <mo>[</mo>
+        <mtable>
+          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>" + val.reward.toString()+ '</mi></mtd></mtr>', '')}
+        </mtable>
+        <mo>]</mo>
+      </math>`;
+    
+    document.getElementById(method).innerHTML = `
+        <mo>[</mo>
+        <mtable>
+          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>log(" + val.pa.toString()+ ') + log(' + val.pb.toString() + ')'+ '</mi></mtd></mtr>', '')}
+        </mtable>
+        <mo>]</mo>;`
+  }
+
+  function isedshow() {
+    let samples = sample({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7}, 3);
+    let [zero, one, two, three, four] = classify(samples)
+    common(samples, zero, one, two, three, four, 'ised', 'isedagg', 'isedresult', 'isedloss')
+    //isedminmax(samples, zero, one, two, three, four, 'minmax', 'minmaxloss')
+  }
+
+  function reinforceshow() {
+    let samples = sample({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7}, 3);
+    ws(samples, 'reinforce', 'reinforceresult', 'reinforceloss')
+  }
+
+  function dplshow(){
+    let samples = enumerate({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7})
+    let [zero, one, two, three, four] = classify(samples)
+    common(samples, zero, one, two, three, four, 'dpl', 'dplagg', 'dplresult', 'dplloss')
+  }
+
+  function scallop3show(){
+    let samples = enumerate({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7})
+    let [zero, one, two, three, four] = classify(samples)
+    common(samples, zero, one, two, three, four, 'scallop', 'scallopagg', 'scallopresult', 'scalloploss')
+  }
+
+  function scallop1show(){
+    let samples = enumerate({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7})
+    let [zero, one, two, three, four] = classify(samples)
+    common(samples, filter(zero), filter(one), filter(two), filter(three), filter(four), 'scallop', 'scallopagg', 'scallopresult', 'scalloploss')
+  }
+
+  function common(samples, zero, one, two, three, four, method, aggname, resultname, lossname){
+    document.getElementById(aggname).innerHTML = `
+    <table>
+      <tr>
+        <th>y=0</th>
+        ${zero.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+      </tr>
+      <tr>
+        <th>y=1</th>
+        ${one.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+      </tr>
+      <tr>
+        <th>y=2</th>
+        ${two.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+      </tr>
+      <tr>
+        <th>y=3</th>
+        ${three.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+      </tr>
+      <tr>
+        <th>y=4</th>
+        ${four.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+      </tr>
+    </table>`
+    
+    document.getElementById(method).innerHTML = `
+      <mo>[</mo>
+        <mtable>
+          <mtr><mtd><mi>${wmc(zero)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${wmc(one)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${wmc(two)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${wmc(three)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${wmc(four)}</mi></mtd></mtr>
+        </mtable>
+      <mo>]</mo>`;
+
+    document.getElementById(lossname).innerHTML = `
+    BCE
+    <math display="inline-block" style="margin-right: 0px;">
+      <mo>(</mo>
+      <mo>[</mo>
+        <mtable>
+          <mtr><mtd><mi>${zero.reduce((acc, val) => acc + val.pab, 0).toFixed(2)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${one.reduce((acc, val) => acc + val.pab, 0).toFixed(2)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${two.reduce((acc, val) => acc + val.pab, 0).toFixed(2)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${three.reduce((acc, val) => acc + val.pab, 0).toFixed(2)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${four.reduce((acc, val) => acc + val.pab, 0).toFixed(2)}</mi></mtd></mtr>
+        </mtable>
+      <mo>]</mo>
+      </math>
+      ,
+    <math display="inline-block">
+      <mo>[</mo>
+        <mtable>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+          <mtr><mtd><mi>1</mi></mtd></mtr>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+        </mtable>
+      <mo>]</mo>
+    <mo>)</mo>
+    </math>`;
+
+    // Display all samples
+    document.getElementById(resultname).innerHTML = `
+      <tr>
+        <th> sample </th>
+        ${samples.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
+      </tr>
+      <tr>
+        <th> output </th>
+        ${samples.reduce((acc, val) => acc + "<th> " + val.sum.toString()+ '</th>', '')}
+      </tr>`;
+  }
+
+  function isedminmax(samples, zero, one, two, three, four, method, lossname){
+    document.getElementById(method).innerHTML = `
+      <mo>[</mo>
+        <mtable>
+          <mtr><mtd><mi>${minmax(zero)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${minmax(one)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${minmax(two)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${minmax(three)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${minmax(four)}</mi></mtd></mtr>
+        </mtable>
+      <mo>]</mo>`;
+
+    document.getElementById(lossname).innerHTML = `
+    BCE
+    <math display="inline-block" style="margin-right: 0px;">
+      <mo>(</mo>
+      <mo>[</mo>
+        <mtable>
+          <mtr><mtd><mi>${zero.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${one.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${two.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${three.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
+          <mtr><mtd><mi>${four.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
+        </mtable>
+      <mo>]</mo>
+      </math>
+      ,
+    <math display="inline-block">
+      <mo>[</mo>
+        <mtable>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+          <mtr><mtd><mi>1</mi></mtd></mtr>
+          <mtr><mtd><mi>0</mi></mtd></mtr>
+        </mtable>
+      <mo>]</mo>
+    <mo>)</mo>
+    </math>`;
+  }
+</script>
 
 ## Evaluation
 

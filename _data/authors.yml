@@ -403,3 +403,19 @@ Alaia Solko-Breslin:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/alaiasolkobreslin"
+
+Seewon Choi:
+  name    : "Seewon Choi"
+  avatar  : "/assets/images/avatar/seewon.jpg"
+  bio     : "PhD Student at UPenn"
+  home    : https://seewonChoi.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:seewon@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://seewonchoi.github.io/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/seewonchoi"
