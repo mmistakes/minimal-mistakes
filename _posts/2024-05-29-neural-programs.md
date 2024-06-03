@@ -181,7 +181,7 @@ $(document).ready(function(){
 Many computational tasks cannot be solved by neural perception alone but can naturally be expressed as a composition of a neural model $M_\theta$ followed by a program $P$.
 The program takes the output predictions of the neural model and performs some kind of reasoning over them.
 $P$ can take many forms, including a Python program, a logic program, or a call to a state-of-the-art foundation model such as GPT-4.
-(We call such composites a neural program.)
+We call such composites a neural program.
 One task that can be expressed as a neural program is scene recognition, where $M_\theta$ classifies objects in an image and $P$ prompts GPT-4 to identify the room type given these objects.
 
 
@@ -244,8 +244,8 @@ Such a learning algorithm must rely only on symbol-output pairs that represent i
 ## Black-Box Gradient Estimation 
 
 The key challenge comes from back-propagating the loss across the program $P$ without assuming differentiability of $P$. 
-Previous works on black-box gradient estimation can be used for learning neural programs.  [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. Updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
-<!-- There are variants of REINFORCE TODO.  -->
+Previous works on black-box gradient estimation can be used for learning neural programs.  [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. Then, it updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
+There are various variants of REINFORCE, including [IndeCateR](https://arxiv.org/abs/2311.12569) that improves upon the sampling strategy to lower the variance of gradient estimation and [NASR](https://openreview.net/forum?id=en9V5F8PR-) that targets efficient finetuning with single sample and custom reward function. 
 [A-NeSI](https://arxiv.org/abs/2212.12393) instead uses the samples to train a surrogate neural network of $P$, and updates the parameter by back-propagating through this surrogate model. 
 
 
