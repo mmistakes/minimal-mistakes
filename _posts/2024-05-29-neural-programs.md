@@ -14,6 +14,9 @@ header:
       url: https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0
 authors:
   - Alaia Solko-Breslin
+  - Seewon Choi
+  - Ziyang Li
+  - Neelay Velingker
   - Rajeev Alur
   - Mayur Naik
   - Eric Wong

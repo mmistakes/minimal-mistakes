@@ -419,3 +419,37 @@ Seewon Choi:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/seewonchoi"
+
+Ziyang Li:
+  name    : "Ziyang Li"
+  avatar  : "/assets/images/avatar/ziyang.png"
+  bio     : "PhD Student at UPenn"
+  home    : https://liby99.github.io/
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:liby99@seas.upenn.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://liby99.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/_ziyang_"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Liby99"
+
+Neelay Velingker:
+  name    : "Neelay Velingker"
+  avatar  : "/assets/images/avatar/neelay.jpeg"
+  bio     : "PhD Student at UPenn"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:neelay@seas.upenn.edu"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/NeelayV"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/nvelingker"
