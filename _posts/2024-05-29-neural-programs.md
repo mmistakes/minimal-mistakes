@@ -199,28 +199,63 @@ Previous works on black-box gradient estimation can be used for learning neural 
 
 
 ## Our Approach: ISED
-Now that we understand neurosymbolic frameworks and algorithms that perform black-box gradient estimation, we introduce an algorithm that combines concepts from both techniques to facilitate learning.
+Now that we understand neurosymbolic frameworks and algorithms that perform black-box gradient estimation, we are ready to introduce an algorithm that combines concepts from both techniques to facilitate learning.
 
 Suppose we want to learn the task of adding two MNIST digits (sum$_2$). In Scallop, we can express this task with the following program:
 
-$\texttt{sum_2(a + b) :- digit_1(a), digit_2(b)}$
+sum_2(r1 + r2) :- digit_1(r1), digit_2(r1)
 
 and Scallop allows us to differentiate across this program. 
 In the general neural program learning setting, we don’t assume that we can differentiate $P$.
-We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a summary logic program representing the task, using only forward evaluation.
-Suppose that $M_\theta$ has predicted distributions for digits a and b, and we take categorical samples three times, evaluating the program on the sampled symbols each time.
 
-Suppose that we sample the following pairs of symbols: (1, 2), (1, 0), (2, 1) and obtain their corresponding outputs. ISED would produce the following summary logic program:
+We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a summary logic program representing the task, using only forward evaluation. We describe each step of the algorithm below.
 
-$r_1 = 1 \land r_2 = 2 \rightarrow y = 3$
+**Infer**
 
-$r_1 = 1 \land r_2 = 0 \rightarrow y = 1$
+The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits r1 and r2. Suppose that we obtain the following distributions:
 
+<div style="text-align: center;">
+$p_{r_1} = [0.1, 0.6, 0.3]$<br>
+$p_{r_2} = [0.2, 0.1, 0.7]$
+</div>
+<br>
+
+**Sample**
+
+ISED is initialized with a sample count $k$, representing the number of samples to take from the predicted distributions in each training iteration.
+
+Suppose that we initialize $k=3$, and we use a categorical sampling procedure. ISED might sample the following pairs of symbols: (1, 2), (1, 0), (2, 1). ISED would then evaluate $P$ on these symbol pairs, obtaining the following outputs: 3, 1, 3.
+
+**Estimate**
+
+ISED then takes the symbol-output pairs obtained in the last step and produces the following summary logic program:
+
+<div style="text-align: center;">
+$r_1 = 1 \land r_2 = 2 \rightarrow y = 3$<br>
+$r_1 = 1 \land r_2 = 0 \rightarrow y = 1$<br>
 $r_1 = 2 \land r_2 = 1 \rightarrow y = 3$
+</div>
+<br>
 
-ISED is then able to differentiate through this summary logic program continue
+ISED differentiates through this summary program by aggregating the probabilities of inputs for each possible output.
+
+In this example, there are 5 possible output values (0-4). For $y=3$, ISED would consider the pairs (1, 2) and (2, 1) in its probability aggregation. This resulting aggregation would be equal to $p_{r_1 = 1} * p_{r_2 = 2} + p_{r_1 = 2} * p_{r_2 = 1}$. Similarly, the aggregation for $y=1$ would consider the pair (1, 0) and would be equal to $p_{r_1=1} * p_{r_2 = 0}$.
+
+We say that this method of aggregation uses the $\texttt{add-mult}$ semiring, but a different method of aggregation called the $\texttt{min-max}$ semiring uses $\texttt{min}$ instead of $\texttt{mult}$ and $\texttt{max}$ instead of add. Different semirings might be more or less ideal depending on the task.
+
+This aggregation leads to the following prediction vector:
+
+TODO: SOME GRAPHIC SHOWING THE AGGREGATION STEP
+
+**Descend**
+
+The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
+
+## Evaluation
 
 ## Conclusion
+
+We proposed ISED, a data- and sample-efficient algorithm for learning neural programs. Unlike existing neurosymbolic frameworks which require differentiable logic programs, ISED is compatible with Python programs and API calls to GPT. 
 
 <!-- For more details in thoeretical proofs and quantitative experiments, see our [paper](https://arxiv.org/abs/2310.16316) and [code](https://github.com/DebugML/sop). -->
 
