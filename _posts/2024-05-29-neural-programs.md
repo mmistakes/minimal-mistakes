@@ -93,23 +93,23 @@ neural_programs:
   align-items: center;
 }
 
-th, td {
+.container th, .container td {
   text-align: center;
   padding: 1px 5px;
 }
 
-table {
+.container table {
   width: auto; 
   padding-top:15px;
   margin-right: 5px;
 }
 
-math, div {
+.container math, .container div {
   width: auto; 
   margin-right: 15px;
 }
 
-div {
+.container div {
   margin-left: 15px;
 }
 
@@ -129,6 +129,8 @@ div {
 </script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
 
 
 <script>
@@ -296,9 +298,6 @@ TODO: SOME GRAPHIC SHOWING THE AGGREGATION STEP
 **Descend**
 
 The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 
 <div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px; font-size:12px" id="scrollContainer">
   <p>
