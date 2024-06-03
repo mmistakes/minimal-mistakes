@@ -202,7 +202,7 @@ Click on the thumbnails to see different examples of neural programs:
 
     <!-- Masked Images - First Row -->
     <div style="text-align: center; display: flex; justify-content: space-around; align-items: center;">
-      {% if forloop.index <= 3 %}
+      {% if forloop.index <= 5 %}
       <figure class="center" style="margin-top: 0; margin-bottom: 5pt;">
       <figcaption>{{ example.caption }}</figcaption>
           <a href="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
