@@ -10,6 +10,11 @@ body {
     font-family: 'Roboto' !important;
 }
 
+a {
+    color: var(--rudra_text_color) !important;
+    text-decoration: underline;
+}
+
 .team_member {
     background: rgba(0, 0, 0, 0);
 	padding-bottom: 50px;
