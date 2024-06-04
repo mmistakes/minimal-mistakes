@@ -233,6 +233,8 @@ are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
 
 Here are some examples of logic programs
 
+
+
 Restricting neurosymbolic programs to use logic programs makes it easy to differentiate $P$.
 However, these frameworks use specialized languages that offer a narrow range of features.
 The scene recognition task, as described above, can’t be encoded in Scallop or DeepProbLog due to its use of the GPT-4 API.
@@ -254,7 +256,10 @@ Now that we understand neurosymbolic frameworks and algorithms that perform blac
 
 Suppose we want to learn the task of adding two MNIST digits (sum$_2$). In Scallop, we can express this task with the following program:
 
-sum_2(r1 + r2) :- digit_1(r1), digit_2(r1)
+<!-- <p style="text-align: center;">`sum_2(a + b) :- digit_1(a), digit_2(b)`</p> -->
+```
+    sum_2(a + b) :- digit_1(a), digit_2(b)
+```
 
 and Scallop allows us to differentiate across this program. 
 In the general neural program learning setting, we don’t assume that we can differentiate $P$.
@@ -266,8 +271,8 @@ We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a 
 The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits r1 and r2. Suppose that we obtain the following distributions:
 
 <div style="text-align: center;">
-$p_{r_1} = [0.1, 0.6, 0.3]$<br>
-$p_{r_2} = [0.2, 0.1, 0.7]$
+$p_{a} = [0.1, 0.6, 0.3]$<br>
+$p_{b} = [0.2, 0.1, 0.7]$
 </div>
 <br>
 
@@ -282,17 +287,17 @@ Suppose that we initialize $k=3$, and we use a categorical sampling procedure. I
 ISED then takes the symbol-output pairs obtained in the last step and produces the following summary logic program:
 
 <div style="text-align: center;">
-$r_1 = 1 \land r_2 = 2 \rightarrow y = 3$<br>
-$r_1 = 1 \land r_2 = 0 \rightarrow y = 1$<br>
-$r_1 = 2 \land r_2 = 1 \rightarrow y = 3$
+$a = 1 \land b = 2 \rightarrow y = 3$<br>
+$a = 1 \land b = 0 \rightarrow y = 1$<br>
+$a = 2 \land b = 1 \rightarrow y = 3$
 </div>
 <br>
 
 ISED differentiates through this summary program by aggregating the probabilities of inputs for each possible output.
 
-In this example, there are 5 possible output values (0-4). For $y=3$, ISED would consider the pairs (1, 2) and (2, 1) in its probability aggregation. This resulting aggregation would be equal to $p_{r_1 = 1} * p_{r_2 = 2} + p_{r_1 = 2} * p_{r_2 = 1}$. Similarly, the aggregation for $y=1$ would consider the pair (1, 0) and would be equal to $p_{r_1=1} * p_{r_2 = 0}$.
+In this example, there are 5 possible output values (0-4). For $y=3$, ISED would consider the pairs (1, 2) and (2, 1) in its probability aggregation. This resulting aggregation would be equal to $p_{a1} * p_{b2} + p_{a2} * p_{b1}$. Similarly, the aggregation for $y=1$ would consider the pair (1, 0) and would be equal to $p_{a1} * p_{b0}$.
 
-We say that this method of aggregation uses the $\texttt{add-mult}$ semiring, but a different method of aggregation called the $\texttt{min-max}$ semiring uses $\texttt{min}$ instead of $\texttt{mult}$ and $\texttt{max}$ instead of add. Different semirings might be more or less ideal depending on the task.
+We say that this method of aggregation uses the `add-mult` semiring, but a different method of aggregation called the `min-max` semiring uses `min` instead of `mult` and `max`$ instead of `add`. Different semirings might be more or less ideal depending on the task.
 
 This aggregation leads to the following prediction vector:
 
@@ -304,7 +309,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
 
 <div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px; font-size:12px" id="scrollContainer">
   <p>
-    $r_1 = 1$, $r_2 = 2$. $y = 3$. <br>
+    $a = 1$, $b = 2$. $y = 3$. <br>
       Assume $ M_\theta(x_1) = \begin{bmatrix}
               0.1\\
               0.6 \\
