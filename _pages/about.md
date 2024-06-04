@@ -3,13 +3,14 @@ layout: single
 permalink: /about/
 title: "Join Us"
 dont_show_title: true
-last_modified_at: 2024-05-21T11:59:26-04:00
+last_modified_at: 2024-06-4T11:59:26-04:00
 toc: False
 toc_label: "About Us"
 toc_icon: "question-circle"
 toc_sticky: true
 classes: wide
 ---
+<br>
 
 # Interested in joining the lab?
 
@@ -29,6 +30,9 @@ We welcome applications from prospective PhD students with shared or complementa
 
 Interested candidates should apply through the [Department of Biomedical Engineering](https://www.bme.columbia.edu/doctoral-program) or the [Doctoral Program in Neurobiology and Behavior (NBB)](https://www.neurosciencephd.columbia.edu/) at Columbia University. Candidates applying through the NBB program should also contact Nuttida to discuss rotation opportunities.
 
+<hr>
+<br>
+
 # Why join us?
 
 *Shape new research directions:* Take advantage of the unique opportunity to shape and contribute to innovative research directions in our new lab.
@@ -42,6 +46,8 @@ Interested candidates should apply through the [Department of Biomedical Enginee
 
 *Advance your career in a supportive environment:* Gain essential skills and experience to excel in academia, industry, or healthcare. We are dedicated to fostering your professional growth and committed to providing the resources and guidance needed to ensure your success. 
 
+<hr>
+<br>
 
 # Contact
 
