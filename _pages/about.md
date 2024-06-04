@@ -51,7 +51,7 @@ Interested candidates should apply through the [Department of Biomedical Enginee
 
 # Contact
 
-Please contact Nuttida at nr2860 [at] Columbia.edu if you have any questions.
+Please contact Nuttida at nr2869 [at] Columbia.edu if you have any questions.
 
 
 Our lab is located in the Schapiro Center for Engineering and Physical Science Research (CEPSR) 7LE3 on Morningside Campus of Columbia University, at 530 W 120th St Suite 1001, New York, NY 10027.

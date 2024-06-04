@@ -27,7 +27,7 @@ margin-top:60px;
 .single_team_content h1 {
 	font-size: 50px;
 	font-weight: 600;
-	line-height: 60px;
+	line-height: 1.2em;
 }
 
 .our-team {
@@ -141,7 +141,7 @@ margin-top:60px;
 .n_holder {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
