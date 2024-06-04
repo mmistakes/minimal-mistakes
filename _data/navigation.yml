@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "The Team"
+  - title: "Team"
     url: /team/
   - title: "Publications"
     url: /publications/
-  - title: "Lab News"
+  - title: "News"
     url: /updates/
   - title: "Gallery"
     url: /gallery/

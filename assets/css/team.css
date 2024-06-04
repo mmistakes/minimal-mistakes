@@ -1,10 +1,14 @@
 /* variable for color */
 
 :root {
-    --rudra_text_color: #1a1d24;
+    --rudra_text_color: #000000;
     --rudra_shadow_color: #eaeaea;
 }
 
+a {
+    color: var(--rudra_text_color);
+    text-decoration: underline;
+}
 
 body {
     background-color: transparent;
@@ -132,11 +136,30 @@ margin-top:60px;
     position: relative;
     top: -13px;
 }
+
+.n_holder {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.nuttida_lab_avatar {
+    height: 90%; 
+    width: 100%; 
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
 @media (max-width: 900px){
     .our-team{ margin-bottom: 30px; }
     .lab_avatar {
         width: 300px;
         height: 300px;
+    }
+    .nuttida_lab_avatar {
+        height: 100%;
     }
 }
 
@@ -146,58 +169,3 @@ margin-top:60px;
 } */
 
 
-
-
-
-
-
-/* Modifications */
-
-a::-moz-focus-inner {
-    border: 0;
-}  
-
-a:focus {
-    outline: none;
-}
-
-
-.page__content img {
-    border-radius: 5px;
-}
-
-.page__content img:hover {
-    /* box shadow */
-    box-shadow: 0 0 15px rgb(0, 0, 0);
-    transition: 0.3s;
-}
-
-.page__content a:not(.btn):hover img { 
-    box-shadow: 0 0 15px rgb(0, 0, 0);
-    transition: 0.3s;
-}
-
-
-.taxonomy__section .archive__item-title{
-    font-size: 1.2rem;
-}
-
-.btn:hover {
-    color: #fff;
-    border-color: #fff;
-}
-
-
-
-/* Gallery */
-.gallery_img_container { 
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-/* On large screens change width */
-@media (min-width: 768px) {
-    .gallery_img_container {
-        width: 30%;
-    }
-}

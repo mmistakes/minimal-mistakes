@@ -1,0 +1,50 @@
+/* Modifications */
+
+a::-moz-focus-inner {
+    border: 0;
+}  
+
+a:focus {
+    outline: none;
+}
+
+
+.page__content img {
+    border-radius: 5px;
+}
+
+.page__content img:hover {
+    /* box shadow */
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.page__content a:not(.btn):hover img { 
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+
+.taxonomy__section .archive__item-title{
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/* Gallery */
+.gallery_img_container { 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* On large screens change width */
+@media (min-width: 768px) {
+    .gallery_img_container {
+        width: 30%;
+    }
+}
