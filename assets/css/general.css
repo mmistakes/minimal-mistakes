@@ -1,11 +1,21 @@
 /* Modifications */
 
+:root {
+    --rudra_text_color: #000000;
+    --rudra_shadow_color: #eaeaea;
+}
+
 a::-moz-focus-inner {
     border: 0;
 }  
 
 a:focus {
     outline: none;
+}
+
+a {
+    color: var(--rudra_text_color);
+    text-decoration: underline;
 }
 
 

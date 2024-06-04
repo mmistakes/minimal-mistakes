@@ -5,13 +5,9 @@
     --rudra_shadow_color: #eaeaea;
 }
 
-a {
-    color: var(--rudra_text_color);
-    text-decoration: underline;
-}
-
 body {
     background-color: transparent;
+    font-family: 'Roboto' !important;
 }
 
 .team_member {
