@@ -60,5 +60,5 @@ I've been using **Pocket Casts** for ages and it's pretty good. Here's my favour
 
 * I use and pay for Readwise for both RSS feeds and newsletters, it's really good
 * I have my own newsletter on Buttondown - read [here](https://martinapugliese.github.io/doodling-data-reloaded/) about when I moved from Substack and why
-* **Recipes**: the [CookBook app](https://thecookbookapp.com/) is great, to the point I bought 
+* **Recipes**: the [CookBook app](https://thecookbookapp.com/) is great, to the point I bought the lifetime subscription
 * I use AnkiApp for my language learning (flashcards)
