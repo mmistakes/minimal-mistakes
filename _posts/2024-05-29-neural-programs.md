@@ -353,7 +353,6 @@ Now that we understand neurosymbolic frameworks and algorithms that perform blac
 
 Suppose we want to learn the task of adding two MNIST digits (sum$_2$). In Scallop, we can express this task with the following program:
 
-<!-- <p style="text-align: center;">`sum_2(a + b) :- digit_1(a), digit_2(b)`</p> -->
 ```
     sum_2(a + b) :- digit_1(a), digit_2(b)
 ```
@@ -394,15 +393,107 @@ ISED differentiates through this summary program by aggregating the probabilitie
 
 In this example, there are 5 possible output values (0-4). For $y=3$, ISED would consider the pairs (1, 2) and (2, 1) in its probability aggregation. This resulting aggregation would be equal to $p_{a1} * p_{b2} + p_{a2} * p_{b1}$. Similarly, the aggregation for $y=1$ would consider the pair (1, 0) and would be equal to $p_{a1} * p_{b0}$.
 
-We say that this method of aggregation uses the `add-mult` semiring, but a different method of aggregation called the `min-max` semiring uses `min` instead of `mult` and `max`$ instead of `add`. Different semirings might be more or less ideal depending on the task.
+We say that this method of aggregation uses the `add-mult` semiring, but a different method of aggregation called the `min-max` semiring uses `min` instead of `mult` and `max` instead of `add`. Different semirings might be more or less ideal depending on the task.
 
 This aggregation leads to the following prediction vector:
 
-TODO: SOME GRAPHIC SHOWING THE AGGREGATION STEP
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Column Vector</title>
+<style>
+  .vector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .vector .element {
+    margin: 5px 0;
+    padding: 5px;
+  }
+  .probability {
+    padding: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  .probability-r1-0:hover,
+  .probability-hover-r1-0 {
+    background-color: grey;
+  }
+  .probability-r1-1:hover,
+  .probability-hover-r1-1 {
+    background-color: yellow;
+  }
+  .probability-r1-2:hover,
+  .probability-hover-r1-2 {
+    background-color: orange;
+  }
+  .probability-r2-0:hover,
+  .probability-hover-r2-0 {
+    background-color: green;
+  }
+  .probability-r2-1:hover,
+  .probability-hover-r2-1 {
+    background-color: pink;
+  }
+  .probability-r2-2:hover,
+  .probability-hover-r2-2 {
+    background-color: red;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = [
+      {class: 'probability-r1-0', hoverClass: 'probability-hover-r1-0'},
+      {class: 'probability-r1-1', hoverClass: 'probability-hover-r1-1'},
+      {class: 'probability-r1-2', hoverClass: 'probability-hover-r1-2'},
+      {class: 'probability-r2-0', hoverClass: 'probability-hover-r2-0'},
+      {class: 'probability-r2-1', hoverClass: 'probability-hover-r2-1'},
+      {class: 'probability-r2-2', hoverClass: 'probability-hover-r2-2'}
+    ];
+
+    links.forEach(link => {
+      const elements = document.querySelectorAll(`.${link.class}`);
+      elements.forEach(el => {
+        el.addEventListener('mouseover', () => {
+          elements.forEach(ele => ele.classList.add(link.hoverClass));
+        });
+        el.addEventListener('mouseout', () => {
+          elements.forEach(ele => ele.classList.remove(link.hoverClass));
+        });
+      });
+    });
+  });
+</script>
+</head>
+<body>
+<p><span class="probability-r1-1">$p_{a1} = 0.6$</span></p>
+<p><span class="probability-r1-2">$p_{a2} = 0.3$</span></p>
+<p><span class="probability-r2-0">$p_{b0} = 0.2$</span></p>
+<p><span class="probability-r2-1">$p_{b1} = 0.1$</span></p>
+<p><span class="probability-r2-2">$p_{b2} = 0.7$</span></p>
+
+<div class="vector">
+  <div class="element">0.0</div>
+  <div class="element"><span class="probability probability-r1-1">0.6</span> * <span class="probability probability-r2-0">0.2</span></div>
+  <div class="element">0.0</div>
+  <div class="element"><span class="probability probability-r1-1">0.6</span> * <span class="probability probability-r2-2">0.7</span> + <span class="probability probability-r1-2">0.3</span> * <span class="probability probability-r2-1">0.1</span></div>
+  <div class="element">0.0</div>
+</div>
+</body>
+
 
 **Descend**
 
 The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
+
+**Summary**
+
+We provide an interactive explanation of the differences between the different methods discussed in this blog post. Click through the different methods to see the differences in how they differentiate across programs.
 
 <div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px;" id="scrollContainer">
   <p>
@@ -411,9 +502,9 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
         <math display="inline-block">
           <mo>[</mo>
             <mtable>
-              <mtr><mtd><mi class="probability probability-r1-0">0.1</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability probability-r1-1">0.6</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability probability-r1-2">0.3</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability-r1-0">0.1</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability-r1-1">0.6</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability-r1-2">0.3</mi></mtd></mtr>
             </mtable>
           <mo>]</mo>
         </math>
@@ -421,9 +512,9 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
       <math display="inline-block">
           <mo>[</mo>
             <mtable>
-              <mtr><mtd><mi class="probability probability-r2-0">0.2</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability probability-r2-1">0.1</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability probability-r2-2">0.7</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability-r2-0">0.2</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability-r2-1">0.1</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability-r2-2">0.7</mi></mtd></mtr>
             </mtable>
           <mo>]</mo>
         </math>.
@@ -714,7 +805,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
     m.innerHTML += `</mtable></math>`;
     
     document.getElementById(lossname).innerHTML = `
-    BCE
+    <span>\\(\\mathcal{L}\\)</span>
     <math display="inline-block" style="margin-right: 0px;">
       <mo>(</mo>
       <mo>[</mo>
@@ -766,7 +857,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
       <mo>]</mo>`;
 
     document.getElementById(lossname).innerHTML = `
-    BCE
+    <span>\\(\\mathcal{L}\\)</span>
     <math display="inline-block" style="margin-right: 0px;">
       <mo>(</mo>
       <mo>[</mo>
