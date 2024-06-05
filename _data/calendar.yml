@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4b - Kimba Express",
-    "title": "Ausflug 4b - Kimba Express",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2FzczRmYWE3NXQxdjR2cTI1YTc2aGVkY3MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-06-04T07:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-06-04T14:30:00+02:00"
-    },
-    "created": "2024-05-15T09:28:24.000Z",
-    "updated": "2024-05-15T09:28:24.223Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A3 - Zoo",
     "title": "Ausflug A3 - Zoo",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-05-06T10:38:07.000Z",
     "updated": "2024-05-06T10:38:07.446Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4. Schulkonferenz",
+    "title": "4. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ajJ2aGRwc2Y3NDFmYWtscmt0NjA3cWZ0ZnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-20T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-20T16:30:00+02:00"
+    },
+    "created": "2024-05-29T16:51:25.000Z",
+    "updated": "2024-05-29T16:51:25.252Z"
   }
 ]
