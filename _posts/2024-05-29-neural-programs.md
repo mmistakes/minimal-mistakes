@@ -80,7 +80,7 @@ neural_programs:
 
 .button-sample {
   padding: 5px;
-  font-size: 10px;
+  font-size: 12px;
   background: rgba(76, 175, 80, 0.0);
   display: inline-block;
   margin-right: 15px;
@@ -114,6 +114,35 @@ neural_programs:
 
 .container div {
   margin-left: 15px;
+}
+
+  .probability {
+    padding: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  .probability-r1-0:hover,
+  .probability-hover-r1-0 {
+    background-color: rgba(227,98,9,0.5);
+  }
+  .probability-r1-1:hover,
+  .probability-hover-r1-1 {
+    background-color: rgba(227,98,9,0.5);
+  }
+  .probability-r1-2:hover,
+  .probability-hover-r1-2 {
+    background-color: rgba(227,98,9,0.5);
+  }
+  .probability-r2-0:hover,
+  .probability-hover-r2-0 {
+    background-color: rgba(227,98,9,0.5);
+  }
+  .probability-r2-1:hover,
+  .probability-hover-r2-1 {
+    background-color: rgba(227,98,9,0.5);
+  }
+  .probability-r2-2:hover,
+  .probability-hover-r2-2 {
+    background-color: rgba(227,98,9,0.5);
 }
 
 </style>
@@ -307,19 +336,29 @@ TODO: SOME GRAPHIC SHOWING THE AGGREGATION STEP
 
 The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
 
-<div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px; font-size:12px" id="scrollContainer">
+<div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px;" id="scrollContainer">
   <p>
-    $a = 1$, $b = 2$. $y = 3$. <br>
-      Assume $ M_\theta(x_1) = \begin{bmatrix}
-              0.1\\
-              0.6 \\
-              0.3
-              \end{bmatrix}$
-      and $ M_\theta(x_2) = \begin{bmatrix}
-                  0.2\\
-                  0.1 \\
-                  0.7
-                  \end{bmatrix}$.
+    $r_1 = 1$, $r_2 = 2$. $y = 3$. <br>
+      Assume $ M_\theta(x_1) = $
+        <math display="inline-block">
+          <mo>[</mo>
+            <mtable>
+              <mtr><mtd><mi class="probability probability-r1-0">0.1</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability probability-r1-1">0.6</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability probability-r1-2">0.3</mi></mtd></mtr>
+            </mtable>
+          <mo>]</mo>
+        </math>
+      and $ M_\theta(x_2) = $
+      <math display="inline-block">
+          <mo>[</mo>
+            <mtable>
+              <mtr><mtd><mi class="probability probability-r2-0">0.2</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability probability-r2-1">0.1</mi></mtd></mtr>
+              <mtr><mtd><mi class="probability probability-r2-2">0.7</mi></mtd></mtr>
+            </mtable>
+          <mo>]</mo>
+        </math>.
   </p>
   
   <script>showDiv(1);</script>
@@ -339,7 +378,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
     <div class="container">
       <div id="isedagg" style=""></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
-      <math display="inline-block" id="ised" style="margin-left: 15px;"></math>
+      <div display="inline-block" id="ised" style="margin-left: 15px;"></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
       <div id="isedloss"></div>
       </div>
@@ -350,7 +389,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
     <div class="container">
       <div id="dplagg" style=""></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
-      <math display="inline-block" style="margin-left: 15px;" id="dpl"></math>
+      <div display="inline-block" style="margin-left: 15px;" id="dpl"></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
       <div id="dplloss"></div>
     </div>
@@ -365,7 +404,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
     <div class="container" style="overflow-x:auto">
       <div id="scallopagg" style="width: auto;"></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
-      <math display="inline-block" style="margin-left: 15px;" id="scallop"></math>
+      <div display="inline-block" style="margin-left: 15px;" id="scallop"></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
       <div id="scalloploss"></div>
     </div>
@@ -588,18 +627,24 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
         ${four.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
       </tr>
     </table>`
-    
-    document.getElementById(method).innerHTML = `
-      <mo>[</mo>
-        <mtable>
-          <mtr><mtd><mi>${wmc(zero)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${wmc(one)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${wmc(two)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${wmc(three)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${wmc(four)}</mi></mtd></mtr>
-        </mtable>
-      <mo>]</mo>`;
 
+    var m = document.getElementById(method);
+    m.innerHTML = `<math display="inline-block" style="margin-right: 0px;">
+                   <mtable>`;
+    for(let i = 0; i < 5; i++){
+      x = [zero, one, two, three, four][i];
+      m.innerHTML += `<mtr><mtd><mi>`;
+      if(x.length==0) m.innerHTML += `0`;
+      for(let j = 0; j < x.length; j++){
+        m.innerHTML += `<span class="probability probability-r1-${x[j].a}"> ${x[j].pa} </span> * 
+                        <span class="probability probability-r2-${x[j].b}"> ${x[j].pb} </span>`;
+        if(j + 1 < x.length) m.innerHTML += `+`;   
+      };
+      m.innerHTML += `</mi></mtd></mtr>`;
+      m.innerHTML += `<br>`;
+    }
+    m.innerHTML += `</mtable></math>`;
+    
     document.getElementById(lossname).innerHTML = `
     BCE
     <math display="inline-block" style="margin-right: 0px;">
@@ -680,6 +725,34 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
     <mo>)</mo>
     </math>`;
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = [
+      {class: 'probability', hoverClass: 'probability-hover'},
+      {class: 'probability-r1-0', hoverClass: 'probability-hover-r1-0'},
+      {class: 'probability-r1-1', hoverClass: 'probability-hover-r1-1'},
+      {class: 'probability-r1-2', hoverClass: 'probability-hover-r1-2'},
+      {class: 'probability-r2-0', hoverClass: 'probability-hover-r2-0'},
+      {class: 'probability-r2-1', hoverClass: 'probability-hover-r2-1'},
+      {class: 'probability-r2-2', hoverClass: 'probability-hover-r2-2'}
+    ];
+
+    links.forEach(link => {
+      const elements = document.querySelectorAll(`.${link.class}`);
+      elements.forEach(el => {
+        el.addEventListener('mouseover', () => {
+          elements.forEach(ele => ele.classList.add(link.hoverClass));
+        });
+        el.addEventListener('mouseout', () => {
+          elements.forEach(ele => ele.classList.remove(link.hoverClass));
+        });
+      });
+    });
+  });
+</script>
+
+<script>
+
 </script>
 
 ## Evaluation
