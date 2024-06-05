@@ -228,7 +228,7 @@ $(document).ready(function(){
 Many computational tasks cannot be solved by neural perception alone but can naturally be expressed as a composition of a neural model $M_\theta$ followed by a program $P$.
 The program takes the output predictions of the neural model and performs some kind of reasoning over them.
 $P$ can take many forms, including a Python program, a logic program, or a call to a state-of-the-art foundation model such as GPT-4.
-We call such composites a neural program.
+We call such composites "neural programs".
 One task that can be expressed as a neural program is scene recognition, where $M_\theta$ classifies objects in an image and $P$ prompts GPT-4 to identify the room type given these objects.
 
 
@@ -351,7 +351,7 @@ There are various variants of REINFORCE, including [IndeCateR](https://arxiv.org
 ## Our Approach: ISED
 Now that we understand neurosymbolic frameworks and algorithms that perform black-box gradient estimation, we are ready to introduce an algorithm that combines concepts from both techniques to facilitate learning.
 
-Suppose we want to learn the task of adding two MNIST digits (sum$_2$). In Scallop, we can express this task with the following program:
+Suppose we want to learn the task of adding two MNIST digits (sum$_2$). In Scallop, we can express this task with the program
 
 ```
     sum_2(a + b) :- digit_1(a), digit_2(b)
@@ -420,40 +420,64 @@ This aggregation leads to the following prediction vector:
     padding: 0 5px;
     transition: background-color 0.3s ease;
   }
-  .probability-r1-0:hover,
-  .probability-hover-r1-0 {
+  .fig1-probability-r1-0:hover,
+  .fig1-probability-hover-r1-0 {
     background-color: grey;
   }
-  .probability-r1-1:hover,
-  .probability-hover-r1-1 {
+  .fig1-probability-r1-1:hover,
+  .fig1-probability-hover-r1-1 {
     background-color: yellow;
   }
-  .probability-r1-2:hover,
-  .probability-hover-r1-2 {
+  .fig1-probability-r1-2:hover,
+  .fig1-probability-hover-r1-2 {
     background-color: orange;
   }
-  .probability-r2-0:hover,
-  .probability-hover-r2-0 {
+  .fig1-probability-r2-0:hover,
+  .fig1-probability-hover-r2-0 {
     background-color: green;
   }
-  .probability-r2-1:hover,
-  .probability-hover-r2-1 {
+  .fig1-probability-r2-1:hover,
+  .fig1-probability-hover-r2-1 {
     background-color: pink;
   }
-  .probability-r2-2:hover,
-  .probability-hover-r2-2 {
+  .fig1-probability-r2-2:hover,
+  .fig1-probability-hover-r2-2 {
+    background-color: red;
+  }
+  .fig2-probability-r1-0:hover,
+  .fig2-probability-hover-r1-0 {
+    background-color: grey;
+  }
+  .fig2-probability-r1-1:hover,
+  .fig2-probability-hover-r1-1 {
+    background-color: yellow;
+  }
+  .fig2-probability-r1-2:hover,
+  .fig2-probability-hover-r1-2 {
+    background-color: orange;
+  }
+  .fig2-probability-r2-0:hover,
+  .fig2-probability-hover-r2-0 {
+    background-color: green;
+  }
+  .fig2-probability-r2-1:hover,
+  .fig2-probability-hover-r2-1 {
+    background-color: pink;
+  }
+  .fig2-probability-r2-2:hover,
+  .fig2-probability-hover-r2-2 {
     background-color: red;
   }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const links = [
-      {class: 'probability-r1-0', hoverClass: 'probability-hover-r1-0'},
-      {class: 'probability-r1-1', hoverClass: 'probability-hover-r1-1'},
-      {class: 'probability-r1-2', hoverClass: 'probability-hover-r1-2'},
-      {class: 'probability-r2-0', hoverClass: 'probability-hover-r2-0'},
-      {class: 'probability-r2-1', hoverClass: 'probability-hover-r2-1'},
-      {class: 'probability-r2-2', hoverClass: 'probability-hover-r2-2'}
+      {class: 'fig1-probability-r1-0', hoverClass: 'fig1-probability-hover-r1-0'},
+      {class: 'fig1-probability-r1-1', hoverClass: 'fig1-probability-hover-r1-1'},
+      {class: 'fig1-probability-r1-2', hoverClass: 'fig1-probability-hover-r1-2'},
+      {class: 'fig1-probability-r2-0', hoverClass: 'fig1-probability-hover-r2-0'},
+      {class: 'fig1-probability-r2-1', hoverClass: 'fig1-probability-hover-r2-1'},
+      {class: 'fig1-probability-r2-2', hoverClass: 'fig1-probability-hover-r2-2'}
     ];
 
     links.forEach(link => {
@@ -471,17 +495,17 @@ This aggregation leads to the following prediction vector:
 </script>
 </head>
 <body>
-<p><span class="probability-r1-1">$p_{a1} = 0.6$</span></p>
-<p><span class="probability-r1-2">$p_{a2} = 0.3$</span></p>
-<p><span class="probability-r2-0">$p_{b0} = 0.2$</span></p>
-<p><span class="probability-r2-1">$p_{b1} = 0.1$</span></p>
-<p><span class="probability-r2-2">$p_{b2} = 0.7$</span></p>
+<p><span class="fig1-probability-r1-1">$p_{a1} = 0.6$</span></p>
+<p><span class="fig1-probability-r1-2">$p_{a2} = 0.3$</span></p>
+<p><span class="fig1-probability-r2-0">$p_{b0} = 0.2$</span></p>
+<p><span class="fig1-probability-r2-1">$p_{b1} = 0.1$</span></p>
+<p><span class="fig1-probability-r2-2">$p_{b2} = 0.7$</span></p>
 
 <div class="vector">
   <div class="element">0.0</div>
-  <div class="element"><span class="probability probability-r1-1">0.6</span> * <span class="probability probability-r2-0">0.2</span></div>
+  <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
   <div class="element">0.0</div>
-  <div class="element"><span class="probability probability-r1-1">0.6</span> * <span class="probability probability-r2-2">0.7</span> + <span class="probability probability-r1-2">0.3</span> * <span class="probability probability-r2-1">0.1</span></div>
+  <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
   <div class="element">0.0</div>
 </div>
 </body>
@@ -502,9 +526,9 @@ We provide an interactive explanation of the differences between the different m
         <math display="inline-block">
           <mo>[</mo>
             <mtable>
-              <mtr><mtd><mi class="probability-r1-0">0.1</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability-r1-1">0.6</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability-r1-2">0.3</mi></mtd></mtr>
+              <mtr><mtd><mi class="fig2-probability-r1-0">0.1</mi></mtd></mtr>
+              <mtr><mtd><mi class="fig2-probability-r1-1">0.6</mi></mtd></mtr>
+              <mtr><mtd><mi class="fig2-probability-r1-2">0.3</mi></mtd></mtr>
             </mtable>
           <mo>]</mo>
         </math>
@@ -512,9 +536,9 @@ We provide an interactive explanation of the differences between the different m
       <math display="inline-block">
           <mo>[</mo>
             <mtable>
-              <mtr><mtd><mi class="probability-r2-0">0.2</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability-r2-1">0.1</mi></mtd></mtr>
-              <mtr><mtd><mi class="probability-r2-2">0.7</mi></mtd></mtr>
+              <mtr><mtd><mi class="fig2-probability-r2-0">0.2</mi></mtd></mtr>
+              <mtr><mtd><mi class="fig2-probability-r2-1">0.1</mi></mtd></mtr>
+              <mtr><mtd><mi class="fig2-probability-r2-2">0.7</mi></mtd></mtr>
             </mtable>
           <mo>]</mo>
         </math>.
@@ -795,8 +819,8 @@ We provide an interactive explanation of the differences between the different m
       m.innerHTML += `<mtr><mtd><mi>`;
       if(x.length==0) m.innerHTML += `0`;
       for(let j = 0; j < x.length; j++){
-        m.innerHTML += `<span class="probability probability-r1-${x[j].a}"> ${x[j].pa} </span> * 
-                        <span class="probability probability-r2-${x[j].b}"> ${x[j].pb} </span>`;
+        m.innerHTML += `<span class="probability fig2-probability-r1-${x[j].a}"> ${x[j].pa} </span> * 
+                        <span class="probability fig2-probability-r2-${x[j].b}"> ${x[j].pb} </span>`;
         if(j + 1 < x.length) m.innerHTML += `+`;   
       };
       m.innerHTML += `</mi></mtd></mtr>`;
@@ -887,13 +911,13 @@ We provide an interactive explanation of the differences between the different m
 
   document.addEventListener('DOMContentLoaded', () => {
     const links = [
-      {class: 'probability', hoverClass: 'probability-hover'},
-      {class: 'probability-r1-0', hoverClass: 'probability-hover-r1-0'},
-      {class: 'probability-r1-1', hoverClass: 'probability-hover-r1-1'},
-      {class: 'probability-r1-2', hoverClass: 'probability-hover-r1-2'},
-      {class: 'probability-r2-0', hoverClass: 'probability-hover-r2-0'},
-      {class: 'probability-r2-1', hoverClass: 'probability-hover-r2-1'},
-      {class: 'probability-r2-2', hoverClass: 'probability-hover-r2-2'}
+      // {class: 'probability', hoverClass: 'probability-hover'},
+      {class: 'fig2-probability-r1-0', hoverClass: 'fig2-probability-hover-r1-0'},
+      {class: 'fig2-probability-r1-1', hoverClass: 'fig2-probability-hover-r1-1'},
+      {class: 'fig2-probability-r1-2', hoverClass: 'fig2-probability-hover-r1-2'},
+      {class: 'fig2-probability-r2-0', hoverClass: 'fig2-probability-hover-r2-0'},
+      {class: 'fig2-probability-r2-1', hoverClass: 'fig2-probability-hover-r2-1'},
+      {class: 'fig2-probability-r2-2', hoverClass: 'fig2-probability-hover-r2-2'}
     ];
 
     links.forEach(link => {
@@ -915,6 +939,8 @@ We provide an interactive explanation of the differences between the different m
 </script>
 
 ## Evaluation
+
+We evaluate ISED on 16 tasks, with some involving 
 
 ## Conclusion
 
