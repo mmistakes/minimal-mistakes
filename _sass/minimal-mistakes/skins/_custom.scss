@@ -10,13 +10,13 @@ $muted-text-color: #d6cabc !default;
 $primary-color: #8b0029 !default;
 $border-color: mix(#fff, #d6cabc, 75%) !default;
 $footer-background-color: $primary-color !default;
-$link-color: #8b0029 !default;
+$link-color: #d6cabc !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .page__footer {
-  color: #8b0029 !important; // override
+  color: #d6cabc !important; // override
 }
 
 .page__footer-follow .social-icons .svg-inline--fa {
