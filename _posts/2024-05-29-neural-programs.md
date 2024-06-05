@@ -58,6 +58,44 @@ neural_programs:
     name: sudoku
     caption: Neural Program for Sudoku Solving
 
+logic_programs:
+  - id: 1
+    name: leaf
+    caption: Scallop Program for Leaf Classification using a Decision Tree
+    code: "rel label = {(\"Alstonia Scholaris\",),(\"Citrus limon\",),\n             (\"Jatropha curcas\",),(\"Mangifera indica\",),\n             (\"Ocimum basilicum\",),(\"Platanus orientalis\",),\n             (\"Pongamia Pinnata\",),(\"Psidium guajava\",),\n             (\"Punica granatum\",),(\"Syzygium cumini\",),\n             (\"Terminalia Arjuna\",)}\n\n
+
+    rel leaf(m,s,t) = margin(m), shape(s), texture(t)\n\n
+
+    rel predict_leaf(\"Ocimum basilicum\") = leaf(m, _, _), m == \"serrate\"\nrel predict_leaf(\"Jatropha curcas\") = leaf(m, _, _), m == \"indented\"\nrel predict_leaf(\"Platanus orientalis\") = leaf(m, _, _), m == \"lobed\"\nrel predict_leaf(\"Citrus limon\") = leaf(m, _, _), m == \"serrulate\"\nrel predict_leaf(\"Pongamia Pinnata\") = leaf(\"entire\", s, _), s == \"ovate\"\nrel predict_leaf(\"Mangifera indica\") = leaf(\"entire\", s, _), s== \"lanceolate\"\nrel predict_leaf(\"Syzygium cumini\") = leaf(\"entire\", s, _), s == \"oblong\"\nrel predict_leaf(\"Psidium guajava\") = leaf(\"entire\", s, _), s == \"obovate\"\n\n
+
+    rel predict_leaf(\"Alstonia Scholaris\") = leaf(\"entire\", \"elliptical\", t), t == \"leathery\"\nrel predict_leaf(\"Terminalia Arjuna\") = leaf(\"entire\", \"elliptical\", t), t == \"rough\"\nrel predict_leaf(\"Citrus limon\") = leaf(\"entire\", \"elliptical\", t), t == \"glossy\"\nrel predict_leaf(\"Punica granatum\") = leaf(\"entire\", \"elliptical\", t), t == \"smooth\"\n\n
+
+    rel predict_leaf(\"Terminalia Arjuna\") = leaf(\"undulate\", s, _), s == \"elliptical\"\nrel predict_leaf(\"Mangifera indica\") = leaf(\"undulate\", s, _), s == \"lanceolate\"\nrel predict_leaf(\"Syzygium cumini\") = leaf(\"undulate\", s, _) and s != \"lanceolate\" and s != \"elliptical\"\n\n
+
+    rel get_prediction(l) = label(l), predict_leaf(l)"
+
+  - id: 2
+    name: hwf
+    caption: Scallop Program for Hand-Written Formula
+    code: "// Inputs\ntype symbol(u64, String)\ntype length(u64)\n\n
+
+    // Facts for lexing\nrel digit = {(\"0\", 0.0), (\"1\", 1.0), (\"2\", 2.0), \n             (\"3\", 3.0), (\"4\", 4.0), (\"5\", 5.0),\n             (\"6\", 6.0),(\"7\", 7.0), (\"8\", 8.0), (\"9\", 9.0)}\nrel mult_div = {\"*\", \"/\"}\nrel plus_minus = {\"+\", \"-\"}\n\n
+
+    // Symbol ID for node index calculation\nrel symbol_id = {(\"+\", 1), (\"-\", 2), (\"*\", 3), (\"/\", 4)}\n\n
+
+    // Node ID Hashing\n@demand(\"bbbbf\")\nrel node_id_hash(x, s, l, r, x + sid * n + l * 4 * n + r * 4 * n * n) =\n     symbol_id(s, sid), length(n)\n\n
+
+    // Parsing\nrel value_node(x, v) =
+      symbol(x, d), digit(d, v), length(n), x < n\nrel mult_div_node(x, \"v\", x, x, x, x, x) = value_node(x, _)\nrel mult_div_node(h, s, x, l, end, begin, end) =\n    symbol(x, s), mult_div(s), node_id_hash(x, s, l, end, h),\n    mult_div_node(l, _, _, _, _, begin, x - 1),\n    value_node(end, _), end == x + 1\nrel plus_minus_node(x, t, i, l, r, begin, end) =\n    mult_div_node(x, t, i, l, r, begin, end)\nrel plus_minus_node(h, s, x, l, r, begin, end) =\n    symbol(x, s), plus_minus(s), node_id_hash(x, s, l, r, h),\n    plus_minus_node(l, _, _, _, _, begin, x - 1),\n    mult_div_node(r, _, _, _, _, x + 1, end)\n\n
+
+    // Evaluate AST\nrel eval(x, y, x, x) = value_node(x, y)\nrel eval(x, y1 + y2, b, e) =\n    plus_minus_node(x, \"+\", i, l, r, b, e),\n    eval(l, y1, b, i - 1),\n    eval(r, y2, i + 1, e)\nrel eval(x, y1 - y2, b, e) =\n    plus_minus_node(x, \"-\", i, l, r, b, e),\n    eval(l, y1, b, i - 1),\n    eval(r, y2, i + 1, e)\nrel eval(x, y1 * y2, b, e) =\n    mult_div_node(x, \"*\", i, l, r, b, e),\n    eval(l, y1, b, i - 1),\n    eval(r, y2, i + 1, e)\nrel eval(x, y1 / y2, b, e) =\n    mult_div_node(x, \"/\", i, l, r, b, e),\n    eval(l, y1, b, i - 1),\n    eval(r, y2, i + 1, e), y2 != 0.0\n\n
+
+    // Compute result\nrel result(y) = eval(e, y, 0, n - 1), length(n)"
+  - id: 3
+    name: sum2
+    caption: Scallop Program for 2-Digit Addition
+    code: "rel digit_1 = {(0,),(1,),(2,),(3,),(4,),(5,),(6,),(7,),(8,),(9,)}\nrel digit_2 = {(0,),(1,),(2,),(3,),(4,),(5,),(6,),(7,),(8,),(9,)}\n\nrel sum_2(a + b) :- digit_1(a), digit_2(b)"
+
 ---
 <style>
 .histogram-row {
@@ -116,33 +154,13 @@ neural_programs:
   margin-left: 15px;
 }
 
-  .probability {
-    padding: 0 5px;
-    transition: background-color 0.3s ease;
-  }
-  .probability-r1-0:hover,
-  .probability-hover-r1-0 {
-    background-color: rgba(227,98,9,0.5);
-  }
-  .probability-r1-1:hover,
-  .probability-hover-r1-1 {
-    background-color: rgba(227,98,9,0.5);
-  }
-  .probability-r1-2:hover,
-  .probability-hover-r1-2 {
-    background-color: rgba(227,98,9,0.5);
-  }
-  .probability-r2-0:hover,
-  .probability-hover-r2-0 {
-    background-color: rgba(227,98,9,0.5);
-  }
-  .probability-r2-1:hover,
-  .probability-hover-r2-1 {
-    background-color: rgba(227,98,9,0.5);
-  }
-  .probability-r2-2:hover,
-  .probability-hover-r2-2 {
-    background-color: rgba(227,98,9,0.5);
+.code-block {
+  font-size: 14px; /* Adjust the font size as needed */
+  text-align: left;
+}
+
+.code-snippet {
+  display: inline-block;
 }
 
 </style>
@@ -217,14 +235,14 @@ One task that can be expressed as a neural program is scene recognition, where $
 <!-- Here are some examples of neural programs: -->
 Click on the thumbnails to see different examples of neural programs:
 
-<ul class="tab" data-tab="other-x-examples" data-name="otherxeg">
+<ul class="tab" data-tab="neural-program-examples" data-name="otherxeg">
 {% for i in (0..4) %}
 <li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
     <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/neural_programs/blog_figs_attrs/{{ i }}/thumbnail.png" alt="{{ i | plus: 1 }}"></a>
 </li>
 {% endfor %}
 </ul>
-<ul class="tab-content" id="other-x-examples" data-name="otherxeg">
+<ul class="tab-content" id="neural-program-examples" data-name="otherxeg">
 
 {% for example in page.neural_programs %}
 <li class="{% if forloop.first %}active{% endif %}">
@@ -257,12 +275,62 @@ The main challenge concerns how to differentiate across $P$ to learn in an end-t
 ## Neurosymbolic Learning Frameworks
 
 Neurosymbolic learning is one instance of neural program learning in which $P$ is a logic program.
-[Scallop](https://arxiv.org/abs/2304.04812) and [DeepProbLog](https://arxiv.org/abs/1805.10872)
-are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
+[Scallop](https://arxiv.org/abs/2304.04812) and [DeepProbLog](https://arxiv.org/abs/1805.10872) are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
 
-Here are some examples of logic programs
+Click on the thumbnails to see a few of the neural program examples from before expressed as logic programs in Scallop:
 
+<!-- Second Figure -->
+<ul class="tab" data-tab="second-figure" data-name="secondfigure">
+  {% for i in (1..3) %}
+  <li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
+      <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/neural_programs/blog_figs_attrs/{{ i }}/thumbnail.png" alt="{{ i | plus: 1 }}"></a>
+  </li>
+  {% endfor %}
+</ul>
+<ul class="tab-content" id="second-figure" data-name="secondfigure">
+  {% for example in page.logic_programs %}
+  <li class="{% if forloop.first %}active{% endif %}">
+      <div style="text-align: center; display: flex; justify-content: space-around; align-items: center;">
+        {% if forloop.index <= 5 %}
+        <figure class="center" style="margin-top: 0; margin-bottom: 5pt;">
+        <figcaption>{{ example.caption }}</figcaption>
+            <div class="code-popup" style="overflow-y: auto; overflow-x: auto; max-width:600px; max-height: 500px;">
+              <pre class="code-block"><code class="code-snippet">{{ example.code }}</code></pre>
+            </div>
+            <!-- <a href="#" class="code-popup" data-code="code code">
+                <img src="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" alt="Code Block {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
+            </a> -->
+        </figure>
+        {% endif %}
+      </div>
+  </li>
+  {% endfor %}
+</ul>
 
+<!-- <ul class="tab" data-tab="logic-program-examples" data-name="otherxeg">
+{% for i in (1..4) %}
+<li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
+    <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/neural_programs/blog_figs_attrs/{{ i }}/thumbnail.png" alt="{{ i | plus: 1 }}"></a>
+</li>
+{% endfor %}
+</ul>
+<ul class="tab-content" id="logic-program-examples" data-name="otherxeg">
+{% for example in page.logic_programs %}
+<li class="{% if forloop.first %}active{% endif %}">
+
+    <div style="text-align: center; display: flex; justify-content: space-around; align-items: center;">
+      {% if forloop.index <= 5 %}
+      <figure class="center" style="margin-top: 0; margin-bottom: 5pt;">
+      <figcaption>{{ example.caption }}</figcaption>
+          <a href="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
+              <img src="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" alt="Masked Image {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
+          </a>
+      </figure>
+      {% endif %}
+    </div>
+</li>
+{% endfor %}
+</ul> -->
 
 Restricting neurosymbolic programs to use logic programs makes it easy to differentiate $P$.
 However, these frameworks use specialized languages that offer a narrow range of features.
