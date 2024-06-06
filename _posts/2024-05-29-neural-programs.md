@@ -275,7 +275,7 @@ The main challenge concerns how to differentiate across $P$ to learn in an end-t
 ## Neurosymbolic Learning Frameworks
 
 Neurosymbolic learning is one instance of neural program learning in which $P$ is a logic program.
-[Scallop](https://arxiv.org/abs/2304.04812) and [DeepProbLog](https://arxiv.org/abs/1805.10872) are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
+[Scallop](https://arxiv.org/abs/2304.04812) and [DeepProbLog (DPL)](https://arxiv.org/abs/1805.10872) are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
 
 Click on the thumbnails to see a few of the neural program examples from before expressed as logic programs in Scallop:
 
@@ -334,7 +334,7 @@ Click on the thumbnails to see a few of the neural program examples from before 
 
 Restricting neurosymbolic programs to use logic programs makes it easy to differentiate $P$.
 However, these frameworks use specialized languages that offer a narrow range of features.
-The scene recognition task, as described above, can’t be encoded in Scallop or DeepProbLog due to its use of the GPT-4 API.
+The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of the GPT-4 API.
 To solve the general problem of learning neural programs, a learning algorithm that treats $P$ as black-box is required.
 By this, we mean that the learning algorithm must perform gradient estimation through $P$ without being able to explicitly differentiate it.
 Such a learning algorithm must rely only on symbol-output pairs that represent inputs and outputs of $P$.
@@ -940,7 +940,175 @@ We provide an interactive explanation of the differences between the different m
 
 ## Evaluation
 
-We evaluate ISED on 16 tasks, with some involving 
+We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits.
+
+We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines. We present our results:
+
+<table class="styled-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th colspan="5" style="text-align: center; vertical-align: middle;">TODO</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle;">TODO</th>
+        <th colspan="3" style="text-align: center; vertical-align: middle;">TODO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <th></th>
+          <td>HWF</td>
+          <td>DT leaf</td>
+          <td>GPT leaf</td>
+          <td>scene</td>
+          <td>sudoku</td>
+          <td>sum$_2$</td>
+          <td>sum$_3$</td>
+          <td>sum$_4$</td>
+          <td>mult$_2$</td>
+          <td>mod$_2$</td>
+          <td>less-than</td>
+          <td>add-mod-3</td>
+          <td>add-sub</td>
+          <td>equal</td>
+          <td>not-3-or-4</td>
+          <td>count-3-4</td>
+      </tr>
+      <tr>
+          <th>DPL</th>
+          <td>TO</td>
+          <td>81.13</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>TO</td>
+          <td>95.14</td>
+          <td>93.80</td>
+          <td>TO</td>
+          <td>95.43</td>
+          <td>96.34</td>
+          <td><strong>96.60</strong></td>
+          <td>95.28</td>
+          <td>93.86</td>
+          <td><strong>98.53</strong></td>
+          <td>98.19</td>
+          <td>TO</td>
+      </tr>
+      <tr>
+          <th>Scallop</th>
+          <td>96.65</td>
+          <td>81.13</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>TO</td>
+          <td>91.18</td>
+          <td>91.86</td>
+          <td>80.1</td>
+          <td>87.26</td>
+          <td>77.98</td>
+          <td>80.02</td>
+          <td>75.12</td>
+          <td>92.02</td>
+          <td>71.60</td>
+          <td>97.42</td>
+          <td>93.47</td>
+      </tr>
+      <tr>
+          <th>A-NeSI</th>
+          <td>3.13</td>
+          <td>78.82</td>
+          <td>72.40</td>
+          <td>61.46</td>
+          <td>26.36</td>
+          <td><strong>96.66</strong></td>
+          <td>94.39</td>
+          <td>78.10</td>
+          <td><strong>96.25</strong></td>
+          <td><strong>96.89</strong></td>
+          <td>94.75</td>
+          <td>77.44</td>
+          <td>93.95</td>
+          <td>77.89</td>
+          <td>98.63</td>
+          <td>93.73</td>
+      </tr>
+      <tr>
+          <th>REINFORCE</th>
+          <td>18.59</td>
+          <td>23.60</td>
+          <td>34.02</td>
+          <td>47.07</td>
+          <td>79.08</td>
+          <td>74.46</td>
+          <td>19.40</td>
+          <td>13.84</td>
+          <td>96.62</td>
+          <td>94.40</td>
+          <td>78.92</td>
+          <td><strong>95.42</strong></td>
+          <td>17.86</td>
+          <td>78.26</td>
+          <td><strong>99.28</strong></td>
+          <td>87.78</td>
+      </tr>
+      <tr>
+          <th>IndeCateR</th>
+          <td>15.14</td>
+          <td>40.38</td>
+          <td>52.67</td>
+          <td>12.28</td>
+          <td>66.50</td>
+          <td>95.70</td>
+          <td>66.24</td>
+          <td>13.02</td>
+          <td>96.32</td>
+          <td>93.88</td>
+          <td>78.20</td>
+          <td>94.02</td>
+          <td>70.12</td>
+          <td>83.10</td>
+          <td><strong>99.28</strong></td>
+          <td>2.26</td>
+      </tr>
+      <tr>
+          <th>NASR</th>
+          <td>1.85</td>
+          <td>16.41</td>
+          <td>17.32</td>
+          <td>2.02</td>
+          <td>82.78</td>
+          <td>6.08</td>
+          <td>5.48</td>
+          <td>4.86</td>
+          <td>5.34</td>
+          <td>20.02</td>
+          <td>49.30</td>
+          <td>33.38</td>
+          <td>5.26</td>
+          <td>81.72</td>
+          <td>68.36</td>
+          <td>25.26</td>
+      </tr>
+      <tr>
+          <th>ISED</th>
+          <td><strong>97.34</strong></td>
+          <td><strong>82.32</strong></td>
+          <td><strong>79.95</strong></td>
+          <td><strong>68.59</strong></td>
+          <td>80.32</td>
+          <td>80.34</td>
+          <td><strong>95.10</strong></td>
+          <td><strong>94.1</strong></td>
+          <td>96.02</td>
+          <td>96.68</td>
+          <td>96.22</td>
+          <td>83.76</td>
+          <td><strong>95.32</strong></td>
+          <td>96.02</td>
+          <td>98.08</td>
+          <td><strong>95.26</strong></td>
+      </tr>
+    </tbody>
+</table>
+
 
 ## Conclusion
 
