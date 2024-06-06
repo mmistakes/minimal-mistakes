@@ -181,45 +181,6 @@ logic_programs:
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 
-
-
-<script>
-$(document).ready(function(){
-    // Iterate over each figure
-    $("figure.sopfig").each(function(){
-        var $figure = $(this);
-        var imgSrc = $figure.find("img").attr("src");
-        var jsonURL = imgSrc.replace(".png", ".json").replace("/figs/", "/json/");
-        var jsonURLorig;
-        if (imgSrc.includes("good/")) {
-            jsonURLorig = imgSrc.replace("/figs/", "/json/").replace(/good\/.*$/, "original.json");
-        } else if (imgSrc.includes("bad/")) {
-            jsonURLorig = imgSrc.replace("/figs/", "/json/").replace(/bad\/.*$/, "original.json");
-        }
-        console.log(jsonURLorig);
-
-        // Fetch the JSON data from jsonURL
-        $.getJSON(jsonURL, function(data){
-            var predClass = data.pred_class;
-
-            // Fetch the JSON data from jsonURLorig inside the previous callback
-            $.getJSON(jsonURLorig, function(dataOrig){
-                var predClassOrig = dataOrig.pred_class;
-                var predClassColor = (predClass === predClassOrig) ? "#3a66a3" : "#b23030";
-                var captionText = "<strong>Mask Weight</strong>: " +
-                  (data.mask_weight == 1 || data.mask_weight == 0 ? data.mask_weight.toFixed(1) : data.mask_weight) +
-                  "<br><strong>Probability</strong>: " +
-                  (data.pred_prob == 1 || data.pred_prob == 0 ? data.pred_prob.toFixed(1) : data.pred_prob) +
-                  "<br><strong>Predicted</strong>: <span style='color:" + predClassColor + "'>" + predClass + "</span>";
-
-                $figure.find("figcaption").html(captionText);
-            });
-        });
-    });
-});
-</script>
-
-
 > We introduce “neural programs” as the composition of a DNN followed by a program written in a traditional programming language or an API call to an LLM.
 > We introduce new neural program tasks that use Python and calls to GPT-4.
 > We present an algorithm for learning neural programs in a data-efficient manner.
@@ -435,27 +396,27 @@ We restate the predicted distributions from the neural model and show the result
   }
   .fig2-probability-r1-0:hover,
   .fig2-probability-hover-r1-0 {
-    background-color: grey;
+    background-color: rgba(128,128,128,0.5);
   }
   .fig2-probability-r1-1:hover,
   .fig2-probability-hover-r1-1 {
-    background-color: yellow;
+    background-color: rgba(255,255,0,0.5);
   }
   .fig2-probability-r1-2:hover,
   .fig2-probability-hover-r1-2 {
-    background-color: orange;
+    background-color: rgba(255,165,0,0.5);
   }
   .fig2-probability-r2-0:hover,
   .fig2-probability-hover-r2-0 {
-    background-color: green;
+    background-color: rgba(0,128,0,0.5);
   }
   .fig2-probability-r2-1:hover,
   .fig2-probability-hover-r2-1 {
-    background-color: pink;
+    background-color: rgba(255,192,203,0.5);
   }
   .fig2-probability-r2-2:hover,
   .fig2-probability-hover-r2-2 {
-    background-color: red;
+    background-color: rgba(255,0,0,0.5);
   }
 </style>
 <script>
@@ -604,7 +565,13 @@ We provide an interactive explanation of the differences between the different m
       <button onclick="reinforceshow()" style="display: inline-block;" class="button-sample">Sample</button>
       <table id="reinforceresult" style="align:center"></table>
     </div>
-    <div id="reinforceloss"></div>
+    <div class="container">
+      <div id="reinforce"></div>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <div id="reinforceagg"></div>
+      <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
+      <div id="reinforceloss"></div>
+    </div>
   </div>
 
 </div>
@@ -616,7 +583,32 @@ We provide an interactive explanation of the differences between the different m
       dplshow();
       scallop1show();
       reinforceshow();
+      linkcolors();
   });
+
+  function linkcolors(){
+    links.forEach(link => {
+      const elements = document.querySelectorAll(`.${link.class}`);
+      elements.forEach(el => {
+        el.addEventListener('mouseover', () => {
+          elements.forEach(ele => ele.classList.add(link.hoverClass));
+        });
+        el.addEventListener('mouseout', () => {
+          elements.forEach(ele => ele.classList.remove(link.hoverClass));
+        });
+      });
+    });
+  }
+
+  const links = [
+      // {class: 'probability', hoverClass: 'probability-hover'},
+      {class: 'fig2-probability-r1-0', hoverClass: 'fig2-probability-hover-r1-0'},
+      {class: 'fig2-probability-r1-1', hoverClass: 'fig2-probability-hover-r1-1'},
+      {class: 'fig2-probability-r1-2', hoverClass: 'fig2-probability-hover-r1-2'},
+      {class: 'fig2-probability-r2-0', hoverClass: 'fig2-probability-hover-r2-0'},
+      {class: 'fig2-probability-r2-1', hoverClass: 'fig2-probability-hover-r2-1'},
+      {class: 'fig2-probability-r2-2', hoverClass: 'fig2-probability-hover-r2-2'}
+    ];
 
   const buttons = document.querySelectorAll('.button-method');
    buttons.forEach(button => {
@@ -709,20 +701,7 @@ We provide an interactive explanation of the differences between the different m
     return [zero, one, two, three, four]
   }
 
-  function wmc(samples){
-    let t = samples.reduce((acc, val) => acc + val.pa.toString()+ ' * ' + val.pb.toString() + ' + ', '').slice(0, -3);
-    if(t.length < 1) return '0'
-    return t
-  }
-
-  function minmax(samples){
-    let t = samples.reduce((acc, val) => acc + "min(" + val.pa.toString()+ ' , ' + val.pb.toString() + '), ', '').slice(0, -2);
-    if(t.length < 1) return '0'
-    if(t.length > 15) return "max(" + t + ")"
-    return t
-  }
-
-  function ws(samples, method, resultname, lossname){
+  function ws(samples, method, resultname, aggname, lossname){
     document.getElementById(resultname).innerHTML = `
         <tr>
           <th> sample </th>
@@ -736,42 +715,56 @@ We provide an interactive explanation of the differences between the different m
           <th> reward </th>
           ${samples.reduce((acc, val) => acc + "<th> " + val.reward.toString()+ '</th>', '')}
         </tr>`;
-    
-    document.getElementById(lossname).innerHTML = `
+
+    document.getElementById(method).innerHTML = `
+    <math display="inline-block" style="margin-right: 0px;">
+    <mo>[</mo>
+      <mtable>
+      <mtr><mtd><mi>
+      <span class="probability fig2-probability-r1-${samples[0].a}">log(${samples[0].pa})</span> + <span class="probability fig2-probability-r2-${samples[0].b}">log(${samples[0].pb})</span></mi></mtd></mtr>
+      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[1].a}">log(${samples[1].pa})</span> + <span class="probability fig2-probability-r2-${samples[1].b}">log(${samples[1].pb})</span></mi></mtd></mtr>
+      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[2].a}">log(${samples[2].pa})</span> + <span class="probability fig2-probability-r2-${samples[2].b}">log(${samples[2].pb})</span></mi></mtd></mtr>
+      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[3].a}">log(${samples[3].pa})</span> + <span class="probability fig2-probability-r2-${samples[3].b}">log(${samples[3].pb})</span></mi></mtd></mtr>
+      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[4].a}">log(${samples[4].pa})</span> + <span class="probability fig2-probability-r2-${samples[4].b}">log(${samples[4].pb})</span></mi></mtd></mtr>
+      </mtable>
+      <mo>]</mo></math>
+      *
       <math display="inline-block" style="margin-right: 0px;"> 
         <mo>[</mo>
         <mtable>
-          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>log(" + val.pa.toString()+ ') + log(' + val.pb.toString() + ')'+ '</mi></mtd></mtr>', '')}
-        </mtable>
-        <mo>]</mo>
-      </math>
-      *
-      <math display="inline-block"> 
-        <mo>[</mo>
-        <mtable>
-          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>" + val.reward.toString()+ '</mi></mtd></mtr>', '')}
+          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>" + val.reward.toString() + '</mi></mtd></mtr>', '')}
         </mtable>
         <mo>]</mo>
       </math>`;
-    
-    document.getElementById(method).innerHTML = `
+
+    document.getElementById(aggname).innerHTML = `
+      <math display="inline-block" style="margin-right: 0px;"> 
         <mo>[</mo>
         <mtable>
-          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>log(" + val.pa.toString()+ ') + log(' + val.pb.toString() + ')'+ '</mi></mtd></mtr>', '')}
+          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>" + val.reward*(Math.log(val.pa)+Math.log(val.pb)).toFixed(2)+ '</mi></mtd></mtr>', '')}
         </mtable>
-        <mo>]</mo>;`
+        <mo>]</mo>
+      </math>`
+      
+    document.getElementById(lossname).innerHTML = `
+      <math display="inline-block" style="margin-right: 0px;"> 
+        <mi>-
+          (${samples.reduce((acc, val) => acc + val.reward*(Math.log(val.pa)+Math.log(val.pb)).toFixed(2), 0)})
+        </mi>
+      </math>`;
   }
 
   function isedshow() {
     let samples = sample({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7}, 3);
-    let [zero, one, two, three, four] = classify(samples)
-    common(samples, zero, one, two, three, four, 'ised', 'isedagg', 'isedresult', 'isedloss')
-    //isedminmax(samples, zero, one, two, three, four, 'minmax', 'minmaxloss')
+    let [zero, one, two, three, four] = classify(samples);
+    common(samples, zero, one, two, three, four, 'ised', 'isedagg', 'isedresult', 'isedloss');
+    linkcolors();
   }
 
   function reinforceshow() {
     let samples = sample({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7}, 3);
-    ws(samples, 'reinforce', 'reinforceresult', 'reinforceloss')
+    ws(samples, 'reinforce', 'reinforceresult', 'reinforceagg', 'reinforceloss');
+    linkcolors();
   }
 
   function dplshow(){
@@ -783,59 +776,63 @@ We provide an interactive explanation of the differences between the different m
   function scallop3show(){
     let samples = enumerate({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7})
     let [zero, one, two, three, four] = classify(samples)
-    common(samples, zero, one, two, three, four, 'scallop', 'scallopagg', 'scallopresult', 'scalloploss')
+    common(samples, zero, one, two, three, four, 'scallop', 'scallopagg', 'scallopresult', 'scalloploss');
+    linkcolors();
   }
 
   function scallop1show(){
     let samples = enumerate({zero : 0.1, one: 0.6, two:0.3}, {zero : 0.2, one: 0.1, two:0.7})
     let [zero, one, two, three, four] = classify(samples)
-    common(samples, filter(zero), filter(one), filter(two), filter(three), filter(four), 'scallop', 'scallopagg', 'scallopresult', 'scalloploss')
+    common(samples, filter(zero), filter(one), filter(two), filter(three), filter(four), 'scallop', 'scallopagg', 'scallopresult', 'scalloploss');
+    linkcolors();
   }
 
   function common(samples, zero, one, two, three, four, method, aggname, resultname, lossname){
     document.getElementById(aggname).innerHTML = `
-    <table>
-      <tr>
-        <th>y=0</th>
-        ${zero.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
-      </tr>
-      <tr>
-        <th>y=1</th>
-        ${one.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
-      </tr>
-      <tr>
-        <th>y=2</th>
-        ${two.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
-      </tr>
-      <tr>
-        <th>y=3</th>
-        ${three.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
-      </tr>
-      <tr>
-        <th>y=4</th>
-        ${four.reduce((acc, val) => acc + "<th> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</th>', '')}
-      </tr>
-    </table>`
-
+    <math display="inline-block">
+    <mtable>
+      <mtr>
+      <mtd><mi>y=0 : </mi></mtd>
+        ${zero.reduce((acc, val) => acc + "<mtd><mi> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</mi></mtd>', '')}
+      </mtr>
+      <mtr>
+      <mtd><mi>y=1 : </mi></mtd>
+        ${one.reduce((acc, val) => acc + "<mtd><mi> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</mi></mtd>', '')}
+      </mtr>
+      <mtr>
+      <mtd><mi>y=2 : </mi></mtd>
+        ${two.reduce((acc, val) => acc + "<mtd><mi> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</mi></mtd>', '')}
+      </mtr>
+      <mtr>
+      <mtd><mi>y=3 : </mi></mtd>
+        ${three.reduce((acc, val) => acc + "<mtd><mi> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</mi></mtd>', '')}
+      </mtr>
+      <mtr>
+      <mtd><mi>y=4 : </mi></mtd>
+        ${four.reduce((acc, val) => acc + "<mtd><mi> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</mi></mtd>', '')}
+      </mtr>
+    </mtable></math>`;    
+    
     var m = document.getElementById(method);
-    m.innerHTML = `<math display="inline-block" style="margin-right: 0px;">
-                   <mtable>`;
-    for(let i = 0; i < 5; i++){
-      x = [zero, one, two, three, four][i];
-      m.innerHTML += `<mtr><mtd><mi>`;
-      if(x.length==0) m.innerHTML += `0`;
-      for(let j = 0; j < x.length; j++){
-        m.innerHTML += `<span class="probability fig2-probability-r1-${x[j].a}"> ${x[j].pa} </span> * 
-                        <span class="probability fig2-probability-r2-${x[j].b}"> ${x[j].pb} </span>`;
-        if(j + 1 < x.length) m.innerHTML += `+`;   
-      };
-      m.innerHTML += `</mi></mtd></mtr>`;
-      m.innerHTML += `<br>`;
+    var html = '';
+    html += `<math display="inline-block"><mtable>`;
+    for (let i = 0; i < 5; i++){
+      let x = [zero, one, two, three, four][i];
+      html += `<mtr><mtd><mi>`;
+      if(x.length==0) html += `0`;
+      for (let j = 0; j < x.length; j++){
+        html += `<span class="probability fig2-probability-r1-${x[j].a}">${x[j].pa}</span> * <span class="probability fig2-probability-r2-${x[j].b}">${x[j].pb}</span>`;
+        if(j+1 < x.length) html += ` + `;
+      }
+      html += `</mi></mtd></mtr>`;
     }
-    m.innerHTML += `</mtable></math>`;
+    html += `</mtable></math>`;
+    m.innerHTML = html;
     
     document.getElementById(lossname).innerHTML = `
-    <span>\\(\\mathcal{L}\\)</span>
+    <math display="inline-block" style="margin-right: 0px;">
+    <mi mathvariant="script">L</mi>
+    </math>
     <math display="inline-block" style="margin-right: 0px;">
       <mo>(</mo>
       <mo>[</mo>
@@ -873,71 +870,6 @@ We provide an interactive explanation of the differences between the different m
         ${samples.reduce((acc, val) => acc + "<th> " + val.sum.toString()+ '</th>', '')}
       </tr>`;
   }
-
-  function isedminmax(samples, zero, one, two, three, four, method, lossname){
-    document.getElementById(method).innerHTML = `
-      <mo>[</mo>
-        <mtable>
-          <mtr><mtd><mi>${minmax(zero)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${minmax(one)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${minmax(two)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${minmax(three)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${minmax(four)}</mi></mtd></mtr>
-        </mtable>
-      <mo>]</mo>`;
-
-    document.getElementById(lossname).innerHTML = `
-    <span>\\(\\mathcal{L}\\)</span>
-    <math display="inline-block" style="margin-right: 0px;">
-      <mo>(</mo>
-      <mo>[</mo>
-        <mtable>
-          <mtr><mtd><mi>${zero.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${one.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${two.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${three.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
-          <mtr><mtd><mi>${four.reduce((acc, val) => Math.max(acc, val.minab), 0).toFixed(1)}</mi></mtd></mtr>
-        </mtable>
-      <mo>]</mo>
-      </math>
-      ,
-    <math display="inline-block">
-      <mo>[</mo>
-        <mtable>
-          <mtr><mtd><mi>0</mi></mtd></mtr>
-          <mtr><mtd><mi>0</mi></mtd></mtr>
-          <mtr><mtd><mi>0</mi></mtd></mtr>
-          <mtr><mtd><mi>1</mi></mtd></mtr>
-          <mtr><mtd><mi>0</mi></mtd></mtr>
-        </mtable>
-      <mo>]</mo>
-    <mo>)</mo>
-    </math>`;
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const links = [
-      // {class: 'probability', hoverClass: 'probability-hover'},
-      {class: 'fig2-probability-r1-0', hoverClass: 'fig2-probability-hover-r1-0'},
-      {class: 'fig2-probability-r1-1', hoverClass: 'fig2-probability-hover-r1-1'},
-      {class: 'fig2-probability-r1-2', hoverClass: 'fig2-probability-hover-r1-2'},
-      {class: 'fig2-probability-r2-0', hoverClass: 'fig2-probability-hover-r2-0'},
-      {class: 'fig2-probability-r2-1', hoverClass: 'fig2-probability-hover-r2-1'},
-      {class: 'fig2-probability-r2-2', hoverClass: 'fig2-probability-hover-r2-2'}
-    ];
-
-    links.forEach(link => {
-      const elements = document.querySelectorAll(`.${link.class}`);
-      elements.forEach(el => {
-        el.addEventListener('mouseover', () => {
-          elements.forEach(ele => ele.classList.add(link.hoverClass));
-        });
-        el.addEventListener('mouseout', () => {
-          elements.forEach(ele => ele.classList.remove(link.hoverClass));
-        });
-      });
-    });
-  });
 </script>
 
 <script>
