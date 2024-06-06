@@ -1,7 +1,7 @@
 ---
 title: "Data-Efficient Learning with Neural Programs"
 layout: single
-excerpt: "TBD"
+excerpt: "Combining neural perception with symbolic or GPT-based reasoning"
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -20,26 +20,6 @@ authors:
   - Rajeev Alur
   - Mayur Naik
   - Eric Wong
-
-# gallery_grouped_attributions:
-#   - url: /assets/images/sum_of_parts/group_attribution.png
-#     image_path: /assets/images/sum_of_parts/group_attribution.png
-#     title: Grouped Attributions
-
-# gallery_sop_model:
-#   - url: /assets/images/sum_of_parts/sop_model.png
-#     image_path: /assets/images/sum_of_parts/sop_model.png
-#     title: Sum-of-Parts Model
-
-# gallery_void_cluster:
-#   - image_path: /assets/images/sum_of_parts/voids.png
-#     title: Voids
-#   - image_path: /assets/images/sum_of_parts/clusters.png
-#     title: Clusters
-
-# gallery_weak_lensing_maps:
-#   - image_path: /assets/images/sum_of_parts/weak_lensing_maps.png
-#     title: Weak Lensing Maps
 
 neural_programs:
   - id: 0
@@ -227,7 +207,7 @@ Click on the thumbnails to see different examples of neural programs:
 
 <figcaption style="margin-top: 0; margin-bottom: 25pt;">Neural programs involve a composition of a neural component and a program component. Input images are fed into the neural model(s), and symbols predicted by the neural component can be passed into the program $P$.</figcaption>
 
-These tasks can be difficult to learn if there are no intermediate labels that can be used to train $M_\theta$.
+These tasks can be difficult to learn if there are no intermediate labels to train $M_\theta$.
 The main challenge concerns how to differentiate across $P$ to faciliate end-to-end learning.
 
 
@@ -236,7 +216,8 @@ The main challenge concerns how to differentiate across $P$ to faciliate end-to-
 Neurosymbolic learning is one instance of neural program learning in which $P$ is a logic program.
 [Scallop](https://arxiv.org/abs/2304.04812) and [DeepProbLog (DPL)](https://arxiv.org/abs/1805.10872) are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
 
-Click on the thumbnails to see a few of the neural program examples from before expressed as logic programs in Scallop:
+Click on the thumbnails to see a few of the neural program examples from before expressed as logic programs in Scallop.
+Notice how some programs are much more verbose than they would be if written in Python.
 
 <!-- Second Figure -->
 <ul class="tab" data-tab="second-figure" data-name="secondfigure">
@@ -265,7 +246,7 @@ Click on the thumbnails to see a few of the neural program examples from before 
 
 Restricting neurosymbolic programs to use logic programs makes differentiating $P$ straightforward.
 However, these frameworks use specialized languages that offer a narrow range of features.
-The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of the GPT-4 API.
+The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of GPT-4.
 
 To solve the general problem of learning neural programs, a learning algorithm that treats $P$ as black-box is required.
 By this, we mean that the learning algorithm must perform gradient estimation through $P$ without being able to explicitly differentiate it.
@@ -274,13 +255,12 @@ Such a learning algorithm must rely only on symbol-output pairs that represent i
 
 ## Black-Box Gradient Estimation 
 
-<!-- The key challenge comes from back-propagating the loss across the program $P$ without assuming differentiability of $P$.  -->
-Previous works on black-box gradient estimation can be used for learning neural programs.  [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. Then, it updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
+Previous works on black-box gradient estimation can be used for learning neural programs.  [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. It then updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
 
 There are various variants of REINFORCE, including [IndeCateR](https://arxiv.org/abs/2311.12569) that improves upon the sampling strategy to lower the variance of gradient estimation and [NASR](https://openreview.net/forum?id=en9V5F8PR-) that targets efficient finetuning with single sample and custom reward function. 
 [A-NeSI](https://arxiv.org/abs/2212.12393) instead uses the samples to train a surrogate neural network of $P$, and updates the parameter by back-propagating through this surrogate model.
 
-While these techniques can achieve high performance on tasks like Sudoku solving and MNIST addition, they struggle with data inefficiency (learning slowly when there are limited training data) and sample inefficiency (requiring a large number of samples to achieve high accuracy). 
+While these techniques can achieve high performance on tasks like Sudoku solving and MNIST addition, they struggle with data inefficiency (i.e., learning slowly when there are limited training data) and sample inefficiency (i.e., requiring a large number of samples to achieve high accuracy). 
 
 
 ## Our Approach: ISED
@@ -293,17 +273,22 @@ Suppose we want to learn the task of adding two MNIST digits (sum$_2$). In Scall
 ```
 
 and Scallop allows us to differentiate across this program. 
-In the general neural program learning setting, we don’t assume that we can differentiate $P$.
+In the general neural program learning setting, we don’t assume that we can differentiate $P$, and we use a Python program for evaluation:
 
-We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a summary logic program representing the task, using only forward evaluation. We describe each step of the algorithm below.
+```
+    def sum_2(a, b):
+        return a + b
+```
+
+We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a summary logic program representing the task using only forward evaluation, and differentiates across the summary. We describe each step of the algorithm below.
 
 **Infer**
 
-The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits r1 and r2. Suppose that we obtain the following distributions:
+The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits $a$ and $b$. Suppose that we obtain the following distributions:
 
 <div style="text-align: center;">
-$p_a = [0.1, 0.6, 0.3]$<br>
-$p_b = [0.2, 0.1, 0.7]$
+$p_a = [p_{a0}, p_{a1}, p_{a2}] = [0.1, 0.6, 0.3]$<br>
+$p_b = [p_{b0}, p_{b1}, p_{b2}] = [0.2, 0.1, 0.7]$
 </div>
 <br>
 
@@ -311,7 +296,7 @@ $p_b = [0.2, 0.1, 0.7]$
 
 ISED is initialized with a sample count $k$, representing the number of samples to take from the predicted distributions in each training iteration.
 
-Suppose that we initialize $k=3$, and we use a categorical sampling procedure. ISED might sample the following pairs of symbols: (1, 2), (1, 0), (2, 1). ISED would then evaluate $P$ on these symbol pairs, obtaining the following outputs: 3, 1, 3.
+Suppose that we initialize $k=3$, and we use a categorical sampling procedure. ISED might sample the following pairs of symbols: (1, 2), (1, 0), (2, 1). ISED would then evaluate $P$ on these symbol pairs, obtaining the outputs 3, 1, and 3.
 
 **Estimate**
 
@@ -330,7 +315,7 @@ In this example, there are 5 possible output values (0-4). For $y=3$, ISED would
 
 We say that this method of aggregation uses the `add-mult` semiring, but a different method of aggregation called the `min-max` semiring uses `min` instead of `mult` and `max` instead of `add`. Different semirings might be more or less ideal depending on the task.
 
-We restate the predicted distributions from the neural model and show the resulting prediction vector after aggregation. Hover over the elements to see where they originated from in $p_a$ and $p_b$. 
+We restate the predicted distributions from the neural model and show the resulting prediction vector after aggregation. Hover over the elements to see where they originated from in the predicted distributions.
 
 <head>
 <meta charset="UTF-8">
@@ -485,6 +470,7 @@ The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \thet
 **Summary**
 
 We provide an interactive explanation of the differences between the different methods discussed in this blog post. Click through the different methods to see the differences in how they differentiate across programs.
+You can also sample different values for ISED and REINFORCE and change the semiring used in Scallop.
 
 <div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px;" id="scrollContainer">
   <p>
@@ -723,7 +709,7 @@ We provide an interactive explanation of the differences between the different m
         ${samples.map(sample => `
           <mtr><mtd><mi>
             <mrow>
-              <span class="probability fig2-probability-r1-${sample.a}">log(${sample.pa})</span> + <span class="probability fig2-probability-r2-${sample.b}">log(${sample.pb})</span>
+              log(<span class="probability fig2-probability-r1-${sample.a}">${sample.pa}</span>) + log(<span class="probability fig2-probability-r2-${sample.b}">${sample.pb}</span>)
             </mrow>
           </mi></mtd></mtr>
         `).join('')}
@@ -822,7 +808,7 @@ We provide an interactive explanation of the differences between the different m
       let x = [zero, one, two, three, four][i];
       html += `<mtr><mtd>`;
       if (x.length == 0) {
-        html += `<mn>0</mn>`;
+        html += `<mn>0.0</mn>`;
       } else {
         html += `<mrow>`;
         for (let j = 0; j < x.length; j++) {
@@ -888,6 +874,8 @@ We provide an interactive explanation of the differences between the different m
 ## Evaluation
 
 We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits (called MNIST-R benchmarks).
+
+**Performance and Accuracy**
 
 We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines.
 We present our results in the table below.
@@ -1061,12 +1049,96 @@ We present our results in the table below.
 </table>
 
 Despite treating $P$ as a black-box, ISED outperforms neurosymbolic solutions on many tasks.
-ISED also outperforms
+In particular, while neurosymbolic solutions time out on Sudoku, ISED achieves high accuracy and even comes within 2.46% of NASR, the state-of-the art solution for this task.
 
+The baseline that comes closest to ISED on most tasks is A-NeSI. However, since A-NeSI trains a neural model to approximate the program and its gradient, it struggles to learn tasks involving complex programs, namely HWF and Sudoku.
+
+**Data Efficiency**
+
+We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the sum$_4$ task. This task involves just 5K training examples, which is less than what A-NeSI would have used in its evaluation on the same task (15K). Our results show that ISED reaches high accuracy much faster than A-NeSI in this setting, suggesting that it offers better data efficiency than the baseline.
+
+<figure>
+  <img src="/assets/images/neural_programs/sum4.png" alt="Accuracy vs. Time for sum4." style="width: 1000px">
+  <figcaption>Accuracy vs. Time for sum4</figcaption>
+</figure>
+
+**Sample Efficiency**
+
+We compared ISED to REINFORCE, IndeCateR, and IndeCateR+, a variant of IndeCateR customized for higher dimensional settings, to assess how they compare in terms of sample efficiency.
+We use the task of MNIST addition over 8, 12, and 16 digits, while varying the number of samples taken.
+We report the results below.
+
+<table class="styled-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th colspan="2" style="text-align: center; vertical-align: middle;">sum$_8$</th>
+        <th colspan="2" style="text-align: center; vertical-align: middle;">sum$_{12}$</th>
+        <th colspan="2" style="text-align: center; vertical-align: middle;">sum$_{16}$</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <th></th>
+          <td>$k=80$</td>
+          <td>$k=800$</td>
+          <td>$k=120$</td>
+          <td>$k=1200$</td>
+          <td>$k=160$</td>
+          <td>$k=1600$</td>
+      </tr>
+      <tr>
+          <td>REINFORCE</td>
+          <td>8.32</td>
+          <td>8.28</td>
+          <td>7.52</td>
+          <td>8.20</td>
+          <td>5.12</td>
+          <td>6.28</td>
+      </tr>
+      <tr>
+          <td>IndeCateR</td>
+          <td>5.36</td>
+          <td><strong>89.60</strong></td>
+          <td>4.60</td>
+          <td>77.88</td>
+          <td>1.24</td>
+          <td>5.16</td>
+      </tr>
+      <tr>
+          <td>IndeCateR+</td>
+          <td>10.20</td>
+          <td>88.60</td>
+          <td>6.84</td>
+          <td><strong>86.92</strong></td>
+          <td>4.24</td>
+          <td><strong>83.52</strong></td>
+      </tr>
+      <tr>
+          <td>ISED</td>
+          <td><strong>87.28</strong></td>
+          <td>87.72</td>
+          <td><strong>85.72</strong></td>
+          <td>86.72</td>
+          <td><strong>6.48</strong></td>
+          <td>8.13</td>
+      </tr>
+    </tbody>
+</table>
+
+For lower numbers of samples, ISED outperforms all other methods on the three tasks, outperforming IndeCateR by over 80% on 8- and 12-digit addition.
+These results demonstrate that ISED is more sample efficient than than the baselines for these tasks.
+This is due to ISED providing a stronger learning signal than other REINFORCE-based methods.
+
+IndeCateR+ significantly outperforms ISED for 16-digit addition with 1600 samples, which suggests that our approach is limited in its scalability.
+This result motivates exploring better sampling techniques to allow for scaling to higher-dimensional input spaces.
 
 ## Conclusion
 
-We proposed ISED, a data- and sample-efficient algorithm for learning neural programs. Unlike existing neurosymbolic frameworks which require differentiable logic programs, ISED is compatible with Python programs and API calls to GPT. 
+We proposed ISED, a data- and sample-efficient algorithm for learning neural programs.
+Unlike existing neurosymbolic frameworks which require differentiable logic programs, ISED is compatible with Python programs and API calls to GPT.
+We demonstrate that ISED achieves similar, and often better, accuracy compared to the baselines.
+ISED also learns in a more data- and sample-efficient manner compared to the baselines.
 
 For more details about our method and experiments, see our [paper](https://arxiv.org) and [code](https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0).
 
