@@ -718,24 +718,26 @@ We provide an interactive explanation of the differences between the different m
 
     document.getElementById(method).innerHTML = `
     <math display="inline-block" style="margin-right: 0px;">
-    <mo>[</mo>
+      <mo>[</mo>
       <mtable>
-      <mtr><mtd><mi>
-      <span class="probability fig2-probability-r1-${samples[0].a}">log(${samples[0].pa})</span> + <span class="probability fig2-probability-r2-${samples[0].b}">log(${samples[0].pb})</span></mi></mtd></mtr>
-      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[1].a}">log(${samples[1].pa})</span> + <span class="probability fig2-probability-r2-${samples[1].b}">log(${samples[1].pb})</span></mi></mtd></mtr>
-      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[2].a}">log(${samples[2].pa})</span> + <span class="probability fig2-probability-r2-${samples[2].b}">log(${samples[2].pb})</span></mi></mtd></mtr>
-      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[3].a}">log(${samples[3].pa})</span> + <span class="probability fig2-probability-r2-${samples[3].b}">log(${samples[3].pb})</span></mi></mtd></mtr>
-      <mtr><mtd><mi><span class="probability fig2-probability-r1-${samples[4].a}">log(${samples[4].pa})</span> + <span class="probability fig2-probability-r2-${samples[4].b}">log(${samples[4].pb})</span></mi></mtd></mtr>
+        ${samples.map(sample => `
+          <mtr><mtd><mi>
+            <mrow>
+              <span class="probability fig2-probability-r1-${sample.a}">log(${sample.pa})</span> + <span class="probability fig2-probability-r2-${sample.b}">log(${sample.pb})</span>
+            </mrow>
+          </mi></mtd></mtr>
+        `).join('')}
       </mtable>
-      <mo>]</mo></math>
-      *
-      <math display="inline-block" style="margin-right: 0px;"> 
-        <mo>[</mo>
-        <mtable>
-          ${samples.reduce((acc, val) => acc + "<mtr><mtd><mi>" + val.reward.toString() + '</mi></mtd></mtr>', '')}
-        </mtable>
-        <mo>]</mo>
-      </math>`;
+      <mo>]</mo>
+    </math>
+    *
+    <math display="inline-block" style="margin-right: 0px;"> 
+      <mo>[</mo>
+      <mtable>
+        ${samples.map(sample => `<mtr><mtd><mi>${sample.reward}</mi></mtd></mtr>`).join('')}
+      </mtable>
+      <mo>]</mo>
+    </math>`;
 
     document.getElementById(aggname).innerHTML = `
       <math display="inline-block" style="margin-right: 0px;"> 
@@ -835,7 +837,7 @@ We provide an interactive explanation of the differences between the different m
     }
     html += `</mtable><mo>]</mo></mrow></math>`;
     m.innerHTML = html;
-    
+
     document.getElementById(lossname).innerHTML = `
     <math display="inline-block" style="margin-right: 0px;">
     <mi mathvariant="script">L</mi>
