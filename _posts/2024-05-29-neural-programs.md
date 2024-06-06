@@ -367,8 +367,8 @@ We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a 
 The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits r1 and r2. Suppose that we obtain the following distributions:
 
 <div style="text-align: center;">
-$p_{a} = [0.1, 0.6, 0.3]$<br>
-$p_{b} = [0.2, 0.1, 0.7]$
+$p_a = [0.1, 0.6, 0.3]$<br>
+$p_b = [0.2, 0.1, 0.7]$
 </div>
 <br>
 
@@ -395,27 +395,42 @@ In this example, there are 5 possible output values (0-4). For $y=3$, ISED would
 
 We say that this method of aggregation uses the `add-mult` semiring, but a different method of aggregation called the `min-max` semiring uses `min` instead of `mult` and `max` instead of `add`. Different semirings might be more or less ideal depending on the task.
 
-This aggregation leads to the following prediction vector:
+We restate the predicted distributions from the neural model and show the resulting prediction vector after aggregation. Hover over the elements to see where they originated from in $p_a$ and $p_b$. 
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interactive Column Vector</title>
 <style>
-  .vector {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  .vector .element {
-    margin: 5px 0;
-    padding: 5px;
-  }
+
+.vector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; /* Adjust as needed */
+}
+
+.vector {
+  display: flex;
+  align-items: center;
+}
+
+.bracket {
+  font-size: 44px; /* Adjust as needed */
+  line-height: 0.8; /* Adjust as needed to align brackets correctly */
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px; /* Adjust spacing between brackets and elements */
+}
+
+.element {
+  margin: 2px 0;
+}
+
   .probability {
     padding: 0 5px;
     transition: background-color 0.3s ease;
@@ -494,20 +509,50 @@ This aggregation leads to the following prediction vector:
   });
 </script>
 </head>
-<body>
-<p><span class="fig1-probability-r1-1">$p_{a1} = 0.6$</span></p>
-<p><span class="fig1-probability-r1-2">$p_{a2} = 0.3$</span></p>
-<p><span class="fig1-probability-r2-0">$p_{b0} = 0.2$</span></p>
-<p><span class="fig1-probability-r2-1">$p_{b1} = 0.1$</span></p>
-<p><span class="fig1-probability-r2-2">$p_{b2} = 0.7$</span></p>
 
-<div class="vector">
-  <div class="element">0.0</div>
-  <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
-  <div class="element">0.0</div>
-  <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
-  <div class="element">0.0</div>
+<body>
+
+<div style="text-align: center;">
+  <p>
+    $p_a = \left[ \right. $<span class="fig1-probability-r1-0">0.1</span>$, $
+    <span class="fig1-probability-r1-1">0.6</span>$, $
+    <span class="fig1-probability-r1-2">0.3</span>$\left. \right]$
+  </p>
+  <p>
+    $p_b = \left[ \right. $<span class="fig1-probability-r2-0">0.2</span>$, $
+    <span class="fig1-probability-r2-1">0.1</span>$, $
+    <span class="fig1-probability-r2-2">0.7</span>$\left. \right]$
+  </p>
 </div>
+
+
+<div class="vector-container">
+  <div class="vector">
+    <div class="bracket left-bracket">⎡<br>⎢<br>⎢<br>⎢<br>⎣</div>
+    <div class="elements">
+      <div class="element">0.0</div>
+      <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
+      <div class="element">0.0</div>
+      <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
+      <div class="element">0.0</div>
+    </div>
+    <div class="bracket right-bracket">⎤<br>⎥<br>⎥<br>⎥<br>⎦</div>
+  </div>
+</div>
+
+<!-- <div class="vector">
+  <div class="bracket left-bracket">⎡<br>⎢<br>⎢<br>⎢<br>⎣</div>
+  <div class="elements">
+    <div class="element">0.0</div>
+    <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
+    <div class="element">0.0</div>
+    <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
+    <div class="element">0.0</div>
+  </div>
+  <div class="bracket right-bracket">⎤<br>⎥<br>⎥<br>⎥<br>⎦</div>
+</div> -->
+
+
 </body>
 
 
@@ -521,8 +566,8 @@ We provide an interactive explanation of the differences between the different m
 
 <div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px;" id="scrollContainer">
   <p>
-    $r_1 = 1$, $r_2 = 2$. $y = 3$. <br>
-      Assume $ M_\theta(x_1) = $
+    Ground truth: $a = 1$, $b = 2$, $y = 3$. <br>
+      Assume $ M_\theta(a) = $
         <math display="inline-block">
           <mo>[</mo>
             <mtable>
@@ -532,7 +577,7 @@ We provide an interactive explanation of the differences between the different m
             </mtable>
           <mo>]</mo>
         </math>
-      and $ M_\theta(x_2) = $
+      and $ M_\theta(b) = $
       <math display="inline-block">
           <mo>[</mo>
             <mtable>
