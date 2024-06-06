@@ -224,11 +224,9 @@ $(document).ready(function(){
 > We introduce new neural program tasks that use Python and calls to GPT-4.
 > We present an algorithm for learning neural programs in a data-efficient manner.
 
-
-Many computational tasks cannot be solved by neural perception alone but can naturally be expressed as a composition of a neural model $M_\theta$ followed by a program $P$.
-The program takes the output predictions of the neural model and performs some kind of reasoning over them.
-$P$ can take many forms, including a Python program, a logic program, or a call to a state-of-the-art foundation model such as GPT-4.
-We call such composites "neural programs".
+In this post, we introduce "neural programs" as the composition of a neural model $M_\theta$ followed by a program $P$.
+Neural programs can be used to solve computational tasks that neural perception alone cannot solve.
+$P$ can take many forms, including a Python program, a logic program, or a call to an LLM such as GPT-4.
 One task that can be expressed as a neural program is scene recognition, where $M_\theta$ classifies objects in an image and $P$ prompts GPT-4 to identify the room type given these objects.
 
 
@@ -269,7 +267,7 @@ Click on the thumbnails to see different examples of neural programs:
 <figcaption style="margin-top: 0; margin-bottom: 25pt;">Neural programs involve a composition of a neural component and a program component. Input images are fed into the neural model(s), and symbols predicted by the neural component can be passed into the program $P$.</figcaption>
 
 These tasks can be difficult to learn if there are no intermediate labels that can be used to train $M_\theta$.
-The main challenge concerns how to differentiate across $P$ to learn in an end-to-end manner.
+The main challenge concerns how to differentiate across $P$ to faciliate end-to-end learning.
 
 
 ## Neurosymbolic Learning Frameworks
@@ -297,9 +295,6 @@ Click on the thumbnails to see a few of the neural program examples from before 
             <div class="code-popup" style="overflow-y: auto; overflow-x: auto; max-width:600px; max-height: 500px;">
               <pre class="code-block"><code class="code-snippet">{{ example.code }}</code></pre>
             </div>
-            <!-- <a href="#" class="code-popup" data-code="code code">
-                <img src="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" alt="Code Block {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
-            </a> -->
         </figure>
         {% endif %}
       </div>
@@ -307,34 +302,10 @@ Click on the thumbnails to see a few of the neural program examples from before 
   {% endfor %}
 </ul>
 
-<!-- <ul class="tab" data-tab="logic-program-examples" data-name="otherxeg">
-{% for i in (1..4) %}
-<li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
-    <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/neural_programs/blog_figs_attrs/{{ i }}/thumbnail.png" alt="{{ i | plus: 1 }}"></a>
-</li>
-{% endfor %}
-</ul>
-<ul class="tab-content" id="logic-program-examples" data-name="otherxeg">
-{% for example in page.logic_programs %}
-<li class="{% if forloop.first %}active{% endif %}">
-
-    <div style="text-align: center; display: flex; justify-content: space-around; align-items: center;">
-      {% if forloop.index <= 5 %}
-      <figure class="center" style="margin-top: 0; margin-bottom: 5pt;">
-      <figcaption>{{ example.caption }}</figcaption>
-          <a href="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" title="Example {{ forloop.parentloop.index }}" class="image-popup">
-              <img src="/assets/images/neural_programs/blog_figs_attrs/{{ example.id }}/{{ example.name }}.png" alt="Masked Image {{ forloop.index }} for {{ forloop.parentloop.index }}" style="width: 95%">
-          </a>
-      </figure>
-      {% endif %}
-    </div>
-</li>
-{% endfor %}
-</ul> -->
-
-Restricting neurosymbolic programs to use logic programs makes it easy to differentiate $P$.
+Restricting neurosymbolic programs to use logic programs makes differentiating $P$ straightforward.
 However, these frameworks use specialized languages that offer a narrow range of features.
 The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of the GPT-4 API.
+
 To solve the general problem of learning neural programs, a learning algorithm that treats $P$ as black-box is required.
 By this, we mean that the learning algorithm must perform gradient estimation through $P$ without being able to explicitly differentiate it.
 Such a learning algorithm must rely only on symbol-output pairs that represent inputs and outputs of $P$.
@@ -342,10 +313,13 @@ Such a learning algorithm must rely only on symbol-output pairs that represent i
 
 ## Black-Box Gradient Estimation 
 
-The key challenge comes from back-propagating the loss across the program $P$ without assuming differentiability of $P$. 
+<!-- The key challenge comes from back-propagating the loss across the program $P$ without assuming differentiability of $P$.  -->
 Previous works on black-box gradient estimation can be used for learning neural programs.  [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. Then, it updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
+
 There are various variants of REINFORCE, including [IndeCateR](https://arxiv.org/abs/2311.12569) that improves upon the sampling strategy to lower the variance of gradient estimation and [NASR](https://openreview.net/forum?id=en9V5F8PR-) that targets efficient finetuning with single sample and custom reward function. 
-[A-NeSI](https://arxiv.org/abs/2212.12393) instead uses the samples to train a surrogate neural network of $P$, and updates the parameter by back-propagating through this surrogate model. 
+[A-NeSI](https://arxiv.org/abs/2212.12393) instead uses the samples to train a surrogate neural network of $P$, and updates the parameter by back-propagating through this surrogate model.
+
+While these techniques can achieve high performance on tasks like Sudoku solving and MNIST addition, they struggle with data inefficiency (learning slowly when there are limited training data) and sample inefficiency (requiring a large number of samples to achieve high accuracy). 
 
 
 ## Our Approach: ISED
@@ -539,19 +513,6 @@ We restate the predicted distributions from the neural model and show the result
     <div class="bracket right-bracket">⎤<br>⎥<br>⎥<br>⎥<br>⎦</div>
   </div>
 </div>
-
-<!-- <div class="vector">
-  <div class="bracket left-bracket">⎡<br>⎢<br>⎢<br>⎢<br>⎣</div>
-  <div class="elements">
-    <div class="element">0.0</div>
-    <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
-    <div class="element">0.0</div>
-    <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
-    <div class="element">0.0</div>
-  </div>
-  <div class="bracket right-bracket">⎤<br>⎥<br>⎥<br>⎥<br>⎦</div>
-</div> -->
-
 
 </body>
 
@@ -985,17 +946,19 @@ We provide an interactive explanation of the differences between the different m
 
 ## Evaluation
 
-We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits.
+We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits (called MNIST-R benchmarks).
 
-We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines. We present our results:
+We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines. We present our results below.
 
 <table class="styled-table">
     <thead>
       <tr>
         <th></th>
-        <th colspan="5" style="text-align: center; vertical-align: middle;">TODO</th>
-        <th colspan="1" style="text-align: center; vertical-align: middle;">TODO</th>
-        <th colspan="3" style="text-align: center; vertical-align: middle;">TODO</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle;">HWF</th>
+        <th colspan="2" style="text-align: center; vertical-align: middle;">leaf</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle;">scene</th>
+        <th colspan="1" style="text-align: center; vertical-align: middle;">sudoku</th>
+        <th colspan="11" style="text-align: center; vertical-align: middle;">MNIST-R</th>
       </tr>
     </thead>
     <tbody>
@@ -1154,6 +1117,7 @@ We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines. We pre
     </tbody>
 </table>
 
+Despite treating $P$ as a black-box, ISED outperforms 
 
 ## Conclusion
 
