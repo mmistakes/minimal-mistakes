@@ -372,27 +372,27 @@ We restate the predicted distributions from the neural model and show the result
   }
   .fig1-probability-r1-0:hover,
   .fig1-probability-hover-r1-0 {
-    background-color: grey;
+    background-color: rgba(128,128,128,0.5);
   }
   .fig1-probability-r1-1:hover,
   .fig1-probability-hover-r1-1 {
-    background-color: yellow;
+    background-color: rgba(255,255,0,0.5);
   }
   .fig1-probability-r1-2:hover,
   .fig1-probability-hover-r1-2 {
-    background-color: orange;
+    background-color: rgba(255,165,0,0.5);
   }
   .fig1-probability-r2-0:hover,
   .fig1-probability-hover-r2-0 {
-    background-color: green;
+    background-color: rgba(0,128,0,0.5);
   }
   .fig1-probability-r2-1:hover,
   .fig1-probability-hover-r2-1 {
-    background-color: pink;
+    background-color: rgba(255,192,203,0.5);
   }
   .fig1-probability-r2-2:hover,
   .fig1-probability-hover-r2-2 {
-    background-color: red;
+    background-color: rgba(255,0,0,0.5);
   }
   .fig2-probability-r1-0:hover,
   .fig2-probability-hover-r1-0 {
@@ -1049,13 +1049,15 @@ We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines. We pre
     </tbody>
 </table>
 
-Despite treating $P$ as a black-box, ISED outperforms 
+Despite treating $P$ as a black-box, ISED outperforms neurosymbolic solutions on many tasks.
+ISED also outperforms
+
 
 ## Conclusion
 
 We proposed ISED, a data- and sample-efficient algorithm for learning neural programs. Unlike existing neurosymbolic frameworks which require differentiable logic programs, ISED is compatible with Python programs and API calls to GPT. 
 
-<!-- For more details in thoeretical proofs and quantitative experiments, see our [paper](https://arxiv.org/abs/2310.16316) and [code](https://github.com/DebugML/sop). -->
+For more details about our method and experiments, see our [paper](https://arxiv.org) and [code](https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0).
 
 ### Citation
 @misc{solkobreslin2024neuralprograms,
