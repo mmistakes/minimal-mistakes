@@ -812,21 +812,28 @@ We provide an interactive explanation of the differences between the different m
         ${four.reduce((acc, val) => acc + "<mtd><mi> (" + val.a.toString()+ ' , ' + val.b.toString() + ')</mi></mtd>', '')}
       </mtr>
     </mtable></math>`;    
-    
+
     var m = document.getElementById(method);
     var html = '';
-    html += `<math display="inline-block"><mtable>`;
-    for (let i = 0; i < 5; i++){
+    html += `<math display="block"><mrow><mo>[</mo><mtable>`;
+    for (let i = 0; i < 5; i++) {
       let x = [zero, one, two, three, four][i];
-      html += `<mtr><mtd><mi>`;
-      if(x.length==0) html += `0`;
-      for (let j = 0; j < x.length; j++){
-        html += `<span class="probability fig2-probability-r1-${x[j].a}">${x[j].pa}</span> * <span class="probability fig2-probability-r2-${x[j].b}">${x[j].pb}</span>`;
-        if(j+1 < x.length) html += ` + `;
+      html += `<mtr><mtd>`;
+      if (x.length == 0) {
+        html += `<mn>0</mn>`;
+      } else {
+        html += `<mrow>`;
+        for (let j = 0; j < x.length; j++) {
+          html += `<mi class="probability fig2-probability-r1-${x[j].a}">${x[j].pa}</mi><mo>*</mo><mi class="probability fig2-probability-r2-${x[j].b}">${x[j].pb}</mi>`;
+          if (j + 1 < x.length) {
+            html += `<mo>+</mo>`;
+          }
+        }
+        html += `</mrow>`;
       }
-      html += `</mi></mtd></mtr>`;
+      html += `</mtd></mtr>`;
     }
-    html += `</mtable></math>`;
+    html += `</mtable><mo>]</mo></mrow></math>`;
     m.innerHTML = html;
     
     document.getElementById(lossname).innerHTML = `
@@ -880,7 +887,9 @@ We provide an interactive explanation of the differences between the different m
 
 We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits (called MNIST-R benchmarks).
 
-We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines. We present our results below.
+We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines.
+We present our results in the table below.
+"N/A" indicates that the task cannot be programmed in the given framework, and "TO" means that there was a timeout.
 
 <table class="styled-table">
     <thead>
