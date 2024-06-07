@@ -875,6 +875,10 @@ You can also sample different values for ISED and REINFORCE and change the semir
 
 We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits (called MNIST-R benchmarks).
 
+Our results demonstrate that on tasks that can be specified as logic programs, ISED achieves similar, and sometimes superior accuracy compared to neurosymbolic baselines.
+Additionally, ISED often achieves superior accuracy compared to black-box gradient estimation baselines, especially on tasks in which the black-box component involves complex reasoning.
+Our results show that ISED is often more data- and sample-efficient than state-of-the-art baselines.
+
 **Performance and Accuracy**
 
 We use [Scallop](https://arxiv.org/abs/2304.04812), [DPL](https://arxiv.org/abs/1805.10872), [REINFORCE](https://link.springer.com/article/10.1007/BF00992696), [IndeCateR](https://arxiv.org/abs/2311.12569), [NASR](https://openreview.net/forum?id=en9V5F8PR-), and [A-NeSI](https://arxiv.org/abs/2212.12393) as baselines.
