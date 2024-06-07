@@ -1,4 +1,4 @@
 source "https://rubygems.org"
-gemspec
+gemspecs
 
 gem "dependencies", "~> 0.0.9"
