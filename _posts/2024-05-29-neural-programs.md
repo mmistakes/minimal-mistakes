@@ -497,8 +497,6 @@ You can also sample different values for ISED and REINFORCE and change the semir
         </math>.
   </p>
   
-  <script>showDiv(1);</script>
-  
   <div style="padding-right:20px; border-bottom:1px solid #ccc; border-top:1px solid #ccc;">
     <button onclick="showDiv(1)" class="button-method btn-clicked" id="isedbutton">ISED</button>
     <button onclick="showDiv(2)" class="button-method" id="dplbutton">DeepProbLog</button>
