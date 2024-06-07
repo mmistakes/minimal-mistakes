@@ -1,71 +1,37 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A3 - Zoo",
-    "title": "Ausflug A3 - Zoo",
+    "alt": "Ausflug A5 - Spielplatz",
+    "title": "Ausflug A5 - Spielplatz",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWxncnQ3OGpnYnEwMzBuajRpa25rNnZrM3YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MnJ0N3Rwa2dkcHJzMTdiaGFuN3A2OW5vZGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-06-06T08:00:00+02:00"
+      "date_time": "2024-06-07T08:30:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-06-06T13:00:00+02:00"
+      "date_time": "2024-06-07T12:30:00+02:00"
     },
-    "created": "2024-04-15T08:23:55.000Z",
-    "updated": "2024-04-15T08:23:55.637Z"
+    "created": "2024-06-06T12:09:55.000Z",
+    "updated": "2024-06-06T12:09:55.059Z"
   },
   {
     "image_path": null,
-    "alt": "Ausflug A5 - Bibliothek ",
-    "title": "Ausflug A5 - Bibliothek ",
+    "alt": "Ausflug A6 - Harry-Potter-Spielplatz",
+    "title": "Ausflug A6 - Harry-Potter-Spielplatz",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2VmMDllcjU4ZmIybmkxMmcydXZrcHBxbTMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=N2lkZTY5NGVpMTQzbGg4dDNmNW9wNGd2aW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-06-06T08:00:00+02:00"
+      "date_time": "2024-06-07T09:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-06-06T10:00:00+02:00"
+      "date_time": "2024-06-07T13:30:00+02:00"
     },
-    "created": "2024-05-27T11:01:30.000Z",
-    "updated": "2024-05-27T11:01:30.559Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug 4a - Kletterwald ",
-    "title": "Ausflug 4a - Kletterwald ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWJ0ZWIwdHAxZmJiYmFoNDIxNjZqcGpydnYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-06-06T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-06-06T14:00:00+02:00"
-    },
-    "created": "2024-05-27T11:00:42.000Z",
-    "updated": "2024-05-27T11:00:42.432Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Schulkonferenz",
-    "title": "Schulkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cGI5cWpqYmFlZHQ3NWYwa2FzNmRrcGpoaGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-06-06T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-06-06T17:00:00+02:00"
-    },
-    "created": "2024-05-15T04:18:50.000Z",
-    "updated": "2024-05-15T04:18:50.237Z"
+    "created": "2024-06-06T11:47:30.000Z",
+    "updated": "2024-06-06T11:47:30.063Z"
   },
   {
     "image_path": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-05-29T16:51:25.000Z",
     "updated": "2024-05-29T16:51:25.252Z"
+  },
+  {
+    "image_path": null,
+    "alt": "GEV",
+    "title": "GEV",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=dmgwZTNjMnNnY3QybmpsamhrMTcwNXM0MDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-27T18:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-27T20:00:00+02:00"
+    },
+    "created": "2024-05-29T16:52:01.000Z",
+    "updated": "2024-05-29T16:52:01.485Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
+    "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NHFqb282MzI5MmtsdWRncjlnZmxybmRjc2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-02T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-02T12:00:00+02:00"
+    },
+    "created": "2024-02-21T09:45:46.000Z",
+    "updated": "2024-02-21T09:45:46.470Z"
   }
 ]
