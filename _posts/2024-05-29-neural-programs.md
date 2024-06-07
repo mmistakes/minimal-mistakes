@@ -700,28 +700,20 @@ You can also sample different values for ISED and REINFORCE and change the semir
           ${samples.reduce((acc, val) => acc + "<th> " + val.reward.toString()+ '</th>', '')}
         </tr>`;
 
-    document.getElementById(method).innerHTML = `
-    <math display="inline-block" style="margin-right: 0px;">
-      <mo>[</mo>
-      <mtable>
-        ${samples.map(sample => `
-          <mtr><mtd><mi>
-            <mrow>
-              log(<span class="probability fig2-probability-r1-${sample.a}">${sample.pa}</span>) + log(<span class="probability fig2-probability-r2-${sample.b}">${sample.pb}</span>)
-            </mrow>
-          </mi></mtd></mtr>
-        `).join('')}
-      </mtable>
-      <mo>]</mo>
-    </math>
-    *
-    <math display="inline-block" style="margin-right: 0px;"> 
-      <mo>[</mo>
-      <mtable>
-        ${samples.map(sample => `<mtr><mtd><mi>${sample.reward}</mi></mtd></mtr>`).join('')}
-      </mtable>
-      <mo>]</mo>
-    </math>`;
+    var m = document.getElementById(method);
+    var html = '';
+    html += `<math display="block"><mrow><mo>[</mo><mtable>`;
+    for (let i = 0; i < 5; i++) {
+      let x = i;
+      html += `<mtr><mtd>`;
+      html += `<mrow>`;
+      html += `<mi class="probability fig2-probability-r1-${samples[i].a}">log(${samples[i].pa})</mi><mo>+</mo><mi class="probability fig2-probability-r2-${samples[i].b}">log(${samples[i].pb})</mi>`;
+      html += `</mrow>`;
+      html += `</mtd></mtr>`;
+    }
+    html += `</mtable><mo>]</mo></mrow></math>`;
+    m.innerHTML = html;
+
 
     document.getElementById(aggname).innerHTML = `
       <math display="inline-block" style="margin-right: 0px;"> 
