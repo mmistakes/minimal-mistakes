@@ -208,7 +208,7 @@ Click on the thumbnails to see different examples of neural programs:
 <figcaption style="margin-top: 0; margin-bottom: 25pt;">Neural programs involve a composition of a neural component and a program component. Input images are fed into the neural model(s), and symbols predicted by the neural component can be passed into the program $P$.</figcaption>
 
 These tasks can be difficult to learn if there are no intermediate labels to train $M_\theta$.
-The main challenge concerns how to differentiate across $P$ to faciliate end-to-end learning.
+The main challenge concerns how to estimate the gradient across $P$ to faciliate end-to-end learning.
 
 
 ## Neurosymbolic Learning Frameworks
@@ -244,7 +244,7 @@ Notice how some programs are much more verbose than they would be if written in 
   {% endfor %}
 </ul>
 
-Restricting neurosymbolic programs to use logic programs makes differentiating $P$ straightforward.
+When $P$ is a logic program, techniques have been developed for differentiation by exploiting its structure.
 However, these frameworks use specialized languages that offer a narrow range of features.
 The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of GPT-4.
 
@@ -255,9 +255,9 @@ Such a learning algorithm must rely only on symbol-output pairs that represent i
 
 ## Black-Box Gradient Estimation 
 
-Previous works on black-box gradient estimation can be used for learning neural programs.  [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. It then updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
+Previous works on black-box gradient estimation can be used for learning neural programs. [REINFORCE](https://link.springer.com/article/10.1007/BF00992696) samples from the probability distribution output by $M_\theta$ and computes the reward for each sample. It then updates the parameter to maximize the log probability of the sampled symbols weighed by the reward value. 
 
-There are various variants of REINFORCE, including [IndeCateR](https://arxiv.org/abs/2311.12569) that improves upon the sampling strategy to lower the variance of gradient estimation and [NASR](https://openreview.net/forum?id=en9V5F8PR-) that targets efficient finetuning with single sample and custom reward function. 
+There are different variants of REINFORCE, including [IndeCateR](https://arxiv.org/abs/2311.12569) that improves upon the sampling strategy to lower the variance of gradient estimation and [NASR](https://openreview.net/forum?id=en9V5F8PR-) that targets efficient finetuning with single sample and custom reward function. 
 [A-NeSI](https://arxiv.org/abs/2212.12393) instead uses the samples to train a surrogate neural network of $P$, and updates the parameter by back-propagating through this surrogate model.
 
 While these techniques can achieve high performance on tasks like Sudoku solving and MNIST addition, they struggle with data inefficiency (i.e., learning slowly when there are limited training data) and sample inefficiency (i.e., requiring a large number of samples to achieve high accuracy). 
@@ -877,7 +877,7 @@ We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore can
 
 **Performance and Accuracy**
 
-We use Scallop, DPL, REINFORCE, IndeCateR, NASR, and A-NeSI as baselines.
+We use [Scallop](https://arxiv.org/abs/2304.04812), [DPL](https://arxiv.org/abs/1805.10872), [REINFORCE](https://link.springer.com/article/10.1007/BF00992696), [IndeCateR](https://arxiv.org/abs/2311.12569), [NASR](https://openreview.net/forum?id=en9V5F8PR-), and [A-NeSI](https://arxiv.org/abs/2212.12393) as baselines.
 We present our results in the table below.
 "N/A" indicates that the task cannot be programmed in the given framework, and "TO" means that there was a timeout.
 
@@ -1129,9 +1129,17 @@ We report the results below.
 For lower numbers of samples, ISED outperforms all other methods on the three tasks, outperforming IndeCateR by over 80% on 8- and 12-digit addition.
 These results demonstrate that ISED is more sample efficient than than the baselines for these tasks.
 This is due to ISED providing a stronger learning signal than other REINFORCE-based methods.
-
 IndeCateR+ significantly outperforms ISED for 16-digit addition with 1600 samples, which suggests that our approach is limited in its scalability.
-This result motivates exploring better sampling techniques to allow for scaling to higher-dimensional input spaces.
+
+## Limitations and Future Work
+
+The main limitation of ISED concerns scaling with the dimensionality of the space of inputs to the program.
+For future work, we are interested in exploring better sampling techniques to allow for scaling to higher-dimensional input spaces.
+For example, techniques can be borrowed from the field of Bayesian optimization where such large spaces have traditionally been studied.
+
+Another limitation of ISED involves its restriction of the structure of neural programs, only allowing the composition of a neural model followed by a program.
+Other types of composites might be of interest for certain tasks, such as a neural model, followed by a program, followed by another neural model.
+Improving ISED to be compatible with such composites would require a more general gradient estimation technique for the black-box components.
 
 ## Conclusion
 
