@@ -4,6 +4,8 @@ title: "title-test"
 categories: ppoosting
 tags: [stats, sta2]
 toc: true
+author_profile: true
+search: true
 ---
 
 ## title1
