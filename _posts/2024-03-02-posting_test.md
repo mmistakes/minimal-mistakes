@@ -4,8 +4,9 @@ title: "title-test"
 categories: ppoosting
 tags: [stats, sta2]
 toc: true
-author_profile: true
+author_profile: false
 search: true
+use_math: true
 ---
 
 ## title1
@@ -18,7 +19,9 @@ add **img**
 
 Why?
 
+$\[x^2 + y^2 = z^{12} \]$
 
+$y=f(x)^7$
 
 ### title1-2
 
