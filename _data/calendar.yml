@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A5 - Spielplatz",
-    "title": "Ausflug A5 - Spielplatz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MnJ0N3Rwa2dkcHJzMTdiaGFuN3A2OW5vZGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-06-07T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-06-07T12:30:00+02:00"
-    },
-    "created": "2024-06-06T12:09:55.000Z",
-    "updated": "2024-06-06T12:09:55.059Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A6 - Harry-Potter-Spielplatz",
-    "title": "Ausflug A6 - Harry-Potter-Spielplatz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2lkZTY5NGVpMTQzbGg4dDNmNW9wNGd2aW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-06-07T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-06-07T13:30:00+02:00"
-    },
-    "created": "2024-06-06T11:47:30.000Z",
-    "updated": "2024-06-06T11:47:30.063Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A3 - Bibliothek",
     "title": "Ausflug A3 - Bibliothek",
     "excerpt": null,
@@ -49,6 +15,23 @@
     },
     "created": "2024-05-06T10:38:07.000Z",
     "updated": "2024-05-06T10:38:07.446Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A5 - Bibliothek ",
+    "title": "Ausflug A5 - Bibliothek ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NmY5NjI4bjZ0bjY1N2lodnBwaG9zMjdoNmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-19T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-19T12:30:00+02:00"
+    },
+    "created": "2024-06-07T05:50:12.000Z",
+    "updated": "2024-06-07T05:50:12.583Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-02-21T09:45:46.000Z",
     "updated": "2024-02-21T09:45:46.470Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Mitgliederversammlung Förderverein",
+    "title": "Mitgliederversammlung Förderverein",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YzE3NTF1MHNjYW0wam44dGowam5ldnVpbW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-08T19:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-08T20:30:00+02:00"
+    },
+    "created": "2024-06-04T18:19:39.000Z",
+    "updated": "2024-06-04T18:19:39.314Z"
   }
 ]
