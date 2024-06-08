@@ -22,7 +22,7 @@ Why?
 
 ### title1-2
 
-![IMG_5241](../images/2024-03-02-posting_test/IMG_5241.jpg)
+![IMG_5241]({{site.url}}/images/2024-03-02-posting_test/IMG_5241.jpg)
 
 ## 
 
