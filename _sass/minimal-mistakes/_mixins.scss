@@ -1,6 +1,7 @@
 /* ==========================================================================
    MIXINS
    ========================================================================== */
+@use "sass:math";
 
 %tab-focus {
   /* Default*/
@@ -15,7 +16,7 @@
    ========================================================================== */
 
 @function em($target, $context: $doc-font-size) {
-  @return ($target / $context) * 1em;
+  @return math.div($target, $context) * 1em;
 }
 
 
@@ -65,7 +66,7 @@
   $green: green($color);
   $blue: blue($color);
 
-  $yiq: (($red*299)+($green*587)+($blue*114))/1000;
+  $yiq: math.div((($red*299)+($green*587)+($blue*114)), 1000);
 
   @if $yiq-debug { @debug $yiq, $threshold; }
 
