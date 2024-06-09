@@ -93,7 +93,7 @@ toc: false
 - GitHub Workflows security hardening [#3884](https://github.com/mmistakes/minimal-mistakes/issues/3884)
 - Replace Font Awesome v5 search page with v6.
 - Try adding an FAQ page.
-- Update remote theme reference in Quick-Start Guide to point to 4.25.0. [#4809](https://github.com/mmistakes/minimal-mistakes/issues/4809)
+- Update remote theme reference in About to point to 4.25.0. [#4809](https://github.com/mmistakes/minimal-mistakes/issues/4809)
 
 ## [4.25.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.0)
 
@@ -862,7 +862,7 @@ toc: false
 - Clarify documentation around taxonomy page and index generation. [#1207](https://github.com/mmistakes/minimal-mistakes/pull/1207)
 - Fix "Posts by tag" grammar in documentation. [#1209](https://github.com/mmistakes/minimal-mistakes/pull/1209)
 - Improve Chinese `date_label` and `minute_read` translations in `ui-text.yml`. [#1205](https://github.com/mmistakes/minimal-mistakes/pull/1205) [#1211](https://github.com/mmistakes/minimal-mistakes/pull/1211)
-- Add note to Quick-Start Guide about GitHub Pages hosting alternatives that allow 3rd party gem themes and Jekyll plugins.
+- Add note to About about GitHub Pages hosting alternatives that allow 3rd party gem themes and Jekyll plugins.
 - Add note to configuration documentation about Cloudflare minification as an alternative to `layout: compress`. [#1217](https://github.com/mmistakes/minimal-mistakes/pull/1217)
 - Show 4 latest posts in "You May Also Enjoy" module when `related: true` and no related posts are found due to `lsi` ([latent semantic indexing](https://en.wikipedia.org/wiki/Latent_semantic_analysis#Latent_semantic_indexing)) being disabled on GitHub Pages. [#554](https://github.com/mmistakes/minimal-mistakes/issues/554)
 - Truncate archive item titles' that overflow with an ellipsis. [#1213](https://github.com/mmistakes/minimal-mistakes/issues/1213)
