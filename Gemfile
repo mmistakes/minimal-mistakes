@@ -16,6 +16,6 @@ gem "jekyll", "~> 4.3"
 
 gem "jekyll-sass-converter", "~> 3.0"
 
-gem "sassc", "~> 2.4"
+gem "sassc", "~> 2.4.0"
 
 gem "sass", "~> 3.7"
