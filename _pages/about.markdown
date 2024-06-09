@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-The Cybersec and Security Engineering blogs.
+The Cybersec and Security Engineering blogs..
 
 ![home](/assets/images/link.png){:class="img-responsive"}
 
