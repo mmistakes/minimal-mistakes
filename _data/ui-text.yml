@@ -2125,7 +2125,7 @@ cs: &DEFAULT_CS
   results_found              : "Nalezené výsledky"
   back_to_top                : "Na začátek stránky"
 cs-CZ:
-  <<: *DEFAULT_UK
+  <<: *DEFAULT_CS
 
 # Another locale
 # --------------
