@@ -26,14 +26,16 @@
     padding: 0;
     list-style: none;
     font-size: $type-size-6;
+    float: left;
 
     @include breakpoint($large) {
-      float: right;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      // width: calc(100% - #{$right-sidebar-width-narrow});
+      width: 100%;
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      // width: calc(100% - #{$right-sidebar-width});
+      width: 100%;
     }
   }
 
