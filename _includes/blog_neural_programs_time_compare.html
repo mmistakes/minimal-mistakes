@@ -6,17 +6,7 @@
 
       let timeData = data;
 
-      // Create a function to generate the datasets needed for Chart.js
-      function generateDatasets(dataArray) {
-        return dataArray.map((datum, index) => ({
-          label: datum.caption, // Label from caption
-          data: datum.y,
-          borderColor: ['#FAF089', '#A8DADC'][index], // Border colors
-          backgroundColor: ['rgba(255, 159, 28, 0.5)', 'rgba(46, 204, 113, 0.5)'][index], // Background colors with some transparency
-          fill: false
-        }));
-      }
-
+      // Function to generate datasets
       function generateDatasets(data) {
         const colors = {
           'ised': '#408BCF', // Blue
@@ -25,24 +15,75 @@
 
         return data.map(datum => ({
           label: datum.caption,
-          data: datum.y,
+          data: datum.x.map((x, i) => ({ x: x, y: datum.y[i], y_err: datum.y_err ? datum.y_err[i] : 0 })),  // Including error data
           backgroundColor: colors[datum.type],
           borderColor: colors[datum.type],
-          borderWidth: 1
+          showLine: true, // To draw the line between points
+          fill: false,
         }));
       }
 
+      // Plugin to draw error bars
+      const errorBarPlugin = {
+        id: 'errorBarPlugin',
+        afterDatasetsDraw: function (chart) {
+          const ctx = chart.ctx;
+          chart.data.datasets.forEach(function (dataset, i) {
+            const meta = chart.getDatasetMeta(i);
+            if (!meta.hidden) {
+              meta.data.forEach(function (point, index) {
+                const dataPoint = dataset.data[index];
+                if (dataPoint && dataPoint.y !== undefined) {
+                  const error = dataPoint.y_err || 0;
+                  const x = point.getCenterPoint().x;
+                  const y = point.getCenterPoint().y;
+                  const topY = chart.scales['y'].getPixelForValue(dataPoint.y + error);
+                  const bottomY = chart.scales['y'].getPixelForValue(dataPoint.y - error);
+
+                  ctx.save();
+                  ctx.beginPath();
+                  ctx.strokeStyle = 'rgba(0, 0, 0, 0.8)';
+                  ctx.moveTo(x, topY);
+                  ctx.lineTo(x, bottomY);
+                  ctx.stroke();
+                  ctx.restore();
+                }
+              });
+            }
+          });
+        }
+      };
+
+      // Register the plugin
+      Chart.register(errorBarPlugin);
+
       const timeCtx = document.getElementById('time-compare-canvas').getContext('2d');
       const timeChart = new Chart(timeCtx, {
-        type: 'line',
+        type: 'scatter',
         data: {
-          labels: timeData[1].x,  // Assuming both datasets have the same x axis values (bins)
           datasets: generateDatasets(timeData)
         },
         options: {
-          // Your chart options here...
+          scales: {
+            x: {
+              type: 'linear',
+              position: 'bottom',
+            },
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function (context) {
+                  const dataPoint = context.raw;
+                  return context.dataset.label + ': (' + dataPoint.x + ', ' + dataPoint.y + ') ± ' + dataPoint.y_err;
+                }
+              }
+            }
+          }
         }
       });
 
     });
 </script>
+
+<canvas id="time-compare-canvas"></canvas>
