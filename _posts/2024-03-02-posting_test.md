@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 search: true
 use_math: true
+typora-root-url: ../
 ---
 
 ## title1
@@ -25,9 +26,11 @@ $y=f(x)^7$
 
 ### title1-2
 
-![IMG_5241]({{site.url}}/images/2024-03-02-posting_test/IMG_5241.jpg)
+ ![free-icon-star-1012248](/images/2024-03-02-posting_test/free-icon-star-1012248.png){: .img-width-half .align-center}
 
-## 
+
+haha 
+한국어 테스트
 
 ## title2
 
