@@ -13,49 +13,52 @@
           'anesi': '#E38820', // Orange
         };
 
-        return data.map(datum => ({
-          label: datum.caption,
-          data: datum.x.map((x, i) => ({ x: x, y: datum.y[i], y_err: datum.y_err ? datum.y_err[i] : 0 })),  // Including error data
-          backgroundColor: colors[datum.type],
-          borderColor: colors[datum.type],
-          showLine: true, // To draw the line between points
-          fill: false,
-        }));
+        const datasets = data.flatMap(datum => {
+          const mainData = datum.x.map((x, i) => ({ x: x, y: datum.y[i], y_err: datum.y_err ? datum.y_err[i] : 0 }));
+          const upperBoundData = mainData.map(point => ({ x: point.x, y: point.y + point.y_err }));
+          const lowerBoundData = mainData.map(point => ({ x: point.x, y: point.y - point.y_err }));
+
+          return [
+            {
+              label: `${datum.caption} (Upper Bound)`,
+              data: upperBoundData,
+              borderColor: colors[datum.type],
+              backgroundColor: colors[datum.type] + '33', // Transparent background
+              borderWidth: 1,
+              fill: '+1', // Fill between this dataset and the previous one
+              pointRadius: 0, // Hide points
+              order: 1,
+              showLine: true, // Show line for upper bound
+              datasetLabel: datum.caption
+            },
+            {
+              label: datum.caption,
+              data: mainData,
+              borderColor: colors[datum.type],
+              backgroundColor: 'rgba(0,0,0,0)', // Transparent background
+              borderWidth: 2,
+              fill: '-1',
+              showLine: true, // To draw the line between points
+              order: 2,
+              datasetLabel: datum.caption
+            },
+            {
+              label: `${datum.caption} (Lower Bound)`,
+              data: lowerBoundData,
+              borderColor: colors[datum.type],
+              backgroundColor: colors[datum.type] + '33', // Transparent background
+              borderWidth: 1,
+              fill: '-1', // Fill between this dataset and the upper bound
+              pointRadius: 0, // Hide points
+              order: 1,
+              showLine: true, // Show line for lower bound
+              datasetLabel: datum.caption
+            },
+          ];
+        });
+
+        return datasets;
       }
-
-      // Plugin to draw error bars
-      const errorBarPlugin = {
-        id: 'errorBarPlugin',
-        afterDatasetsDraw: function (chart) {
-          const ctx = chart.ctx;
-          chart.data.datasets.forEach(function (dataset, i) {
-            const meta = chart.getDatasetMeta(i);
-            if (!meta.hidden) {
-              meta.data.forEach(function (point, index) {
-                const dataPoint = dataset.data[index];
-                if (dataPoint && dataPoint.y !== undefined) {
-                  const error = dataPoint.y_err || 0;
-                  const x = point.getCenterPoint().x;
-                  const y = point.getCenterPoint().y;
-                  const topY = chart.scales['y'].getPixelForValue(dataPoint.y + error);
-                  const bottomY = chart.scales['y'].getPixelForValue(dataPoint.y - error);
-
-                  ctx.save();
-                  ctx.beginPath();
-                  ctx.strokeStyle = 'rgba(0, 0, 0, 0.8)';
-                  ctx.moveTo(x, topY);
-                  ctx.lineTo(x, bottomY);
-                  ctx.stroke();
-                  ctx.restore();
-                }
-              });
-            }
-          });
-        }
-      };
-
-      // Register the plugin
-      Chart.register(errorBarPlugin);
 
       const timeCtx = document.getElementById('time-compare-canvas').getContext('2d');
       const timeChart = new Chart(timeCtx, {
@@ -75,13 +78,43 @@
               callbacks: {
                 label: function (context) {
                   const dataPoint = context.raw;
-                  return context.dataset.label + ': (' + dataPoint.x + ', ' + dataPoint.y + ') ± ' + dataPoint.y_err;
+                  return context.dataset.label.includes('Bound') ? '' : `${context.dataset.label}: (${dataPoint.x}, ${dataPoint.y}) ± ${dataPoint.y_err}`;
+                }
+              }
+            },
+            legend: {
+              display: true,
+              labels: {
+                filter: function (legendItem, chartData) {
+                  return !legendItem.text.includes('Bound');
                 }
               }
             }
           }
         }
       });
+
+
+      // Event listener for legend click
+      document.getElementById('time-compare-canvas').onclick = function (event) {
+        const activePoints = timeChart.getElementsAtEventForMode(event, 'dataset', { intersect: true }, false);
+
+        if (activePoints.length > 0) {
+          const clickedDatasetIndex = activePoints[0].datasetIndex;
+          const clickedDataset = timeChart.data.datasets[clickedDatasetIndex];
+
+          // Toggle visibility of upper and lower bound datasets with the same dataset label
+          if (clickedDataset.datasetLabel) {
+            timeChart.data.datasets.forEach(dataset => {
+              if (dataset.datasetLabel === clickedDataset.datasetLabel && dataset.label.includes('Bound')) {
+                dataset.hidden = !dataset.hidden;
+              }
+            });
+
+            timeChart.update();
+          }
+        }
+      };
 
     });
 </script>
