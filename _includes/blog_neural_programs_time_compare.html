@@ -1,0 +1,48 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  fetch('../assets/other/neural_programs/time_compare.json')
+    .then(response => response.json())
+    .then(data => {
+
+      let timeData = data;
+
+      // Create a function to generate the datasets needed for Chart.js
+      function generateDatasets(dataArray) {
+        return dataArray.map((datum, index) => ({
+          label: datum.caption, // Label from caption
+          data: datum.y,
+          borderColor: ['#FAF089', '#A8DADC'][index], // Border colors
+          backgroundColor: ['rgba(255, 159, 28, 0.5)', 'rgba(46, 204, 113, 0.5)'][index], // Background colors with some transparency
+          fill: false
+        }));
+      }
+
+      function generateDatasets(data) {
+        const colors = {
+          'ised': '#408BCF', // Blue
+          'anesi': '#E38820', // Orange
+        };
+
+        return data.map(datum => ({
+          label: datum.caption,
+          data: datum.y,
+          backgroundColor: colors[datum.type],
+          borderColor: colors[datum.type],
+          borderWidth: 1
+        }));
+      }
+
+      const timeCtx = document.getElementById('time-compare-canvas').getContext('2d');
+      const timeChart = new Chart(timeCtx, {
+        type: 'line',
+        data: {
+          labels: timeData[1].x,  // Assuming both datasets have the same x axis values (bins)
+          datasets: generateDatasets(timeData)
+        },
+        options: {
+          // Your chart options here...
+        }
+      });
+
+    });
+</script>

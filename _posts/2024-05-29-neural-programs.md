@@ -160,12 +160,14 @@ logic_programs:
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-> We introduce “neural programs” as the composition of a DNN followed by a program written in a traditional programming language or an API call to an LLM.
-> We introduce new neural program tasks that use Python and calls to GPT-4.
-> We present an algorithm for learning neural programs in a data-efficient manner.
 
-In this post, we introduce "neural programs" as the composition of a neural model $M_\theta$ followed by a program $P$.
+> This post introduces neural programs: the composition of neural networks with general programs, such as those written in a traditional programming language or an API call to an LLM.
+> We present new neural programming tasks that consist of generic Python and calls to GPT-4.
+> To learn neural programs, we develop ISED, an algorithm for data-efficient learning of neural programs.
+
+Neural programs are the composition of a neural model $M_\theta$ followed by a program $P$.
 Neural programs can be used to solve computational tasks that neural perception alone cannot solve.
 $P$ can take many forms, including a Python program, a logic program, or a call to an LLM such as GPT-4.
 One task that can be expressed as a neural program is scene recognition, where $M_\theta$ classifies objects in an image and $P$ prompts GPT-4 to identify the room type given these objects.
@@ -1056,6 +1058,11 @@ We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the
   <figcaption>Accuracy vs. Time for sum4</figcaption>
 </figure>
 
+<div style="margin-bottom: 15px">
+<canvas id="time-compare-canvas" style="margin-bottom: 15px"></canvas>
+</div>
+{% include blog_neural_programs_time_compare.html %}
+
 **Sample Efficiency**
 
 We compared ISED to REINFORCE, IndeCateR, and IndeCateR+, a variant of IndeCateR customized for higher dimensional settings, to assess how they compare in terms of sample efficiency.
@@ -1145,11 +1152,11 @@ ISED also learns in a more data- and sample-efficient manner compared to the bas
 For more details about our method and experiments, see our [paper](https://arxiv.org) and [code](https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0).
 
 ### Citation
-@misc{solkobreslin2024neuralprograms,
-    title={},
-    author={Alaia Solko-Breslin and Seewon Choi and Ziyang Li and Neelay Velingker and Rajeev Alur and Mayur Naik and Eric Wong},
-    year={2024},
-    eprint={},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+```
+@article{solkobreslin2024neuralprograms,
+  title={Data-Efficient Learning with Neural Programs},
+  author={Solko-Breslin, Alaia and Choi, Seewon and Li, Ziyang and Velingker, Neelay and Alur, Rajeev and Naik, Mayur and Wong, Eric},
+  journal={arXiv preprint arXiv:},
+  year={2024}
 }
+```
