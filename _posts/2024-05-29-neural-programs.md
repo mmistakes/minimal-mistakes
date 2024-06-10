@@ -869,9 +869,11 @@ We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore can
 
 Our results demonstrate that on tasks that can be specified as logic programs, ISED achieves similar, and sometimes superior accuracy compared to neurosymbolic baselines.
 Additionally, ISED often achieves superior accuracy compared to black-box gradient estimation baselines, especially on tasks in which the black-box component involves complex reasoning.
-Our results show that ISED is often more data- and sample-efficient than state-of-the-art baselines.
+Our results demonstrate that ISED is often more data- and sample-efficient than state-of-the-art baselines.
 
 **Performance and Accuracy**
+
+Our results show that ISED achieves comparable, and often superior accuracy compared to neurosymbolic and black-box gradient estimation baselines on the benchmark tasks.
 
 We use [Scallop](https://arxiv.org/abs/2304.04812), [DPL](https://arxiv.org/abs/1805.10872), [REINFORCE](https://link.springer.com/article/10.1007/BF00992696), [IndeCateR](https://arxiv.org/abs/2311.12569), [NASR](https://openreview.net/forum?id=en9V5F8PR-), and [A-NeSI](https://arxiv.org/abs/2212.12393) as baselines.
 We present our results in the tables below, divided by "custom" tasks (HWF, leaf, scene, and sudoku), MNIST-R arithmetic, and MNIST-R other.
@@ -1132,7 +1134,6 @@ We present our results in the tables below, divided by "custom" tasks (HWF, leaf
     </script>
 </body>
 
-
 Despite treating $P$ as a black-box, ISED outperforms neurosymbolic solutions on many tasks.
 In particular, while neurosymbolic solutions time out on Sudoku, ISED achieves high accuracy and even comes within 2.46% of NASR, the state-of-the art solution for this task.
 
@@ -1140,7 +1141,9 @@ The baseline that comes closest to ISED on most tasks is A-NeSI. However, since 
 
 **Data Efficiency**
 
-We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the sum$_4$ task. This task involves just 5K training examples, which is less than what A-NeSI would have used in its evaluation on the same task (15K). Our results show that ISED reaches high accuracy much faster than A-NeSI in this setting, suggesting that it offers better data efficiency than the baseline.
+We demonstrate that when there are limited training data, ISED learns faster than A-NeSI, a state-of-the-art black-box gradient estimation baseline.
+
+We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the sum$_4$ task. This task involves just 5K training examples, which is less than what A-NeSI would have used in its evaluation on the same task (15K). In this setting, ISED reaches high accuracy much faster than A-NeSI, suggesting that it offers better data efficiency than the baseline.
 
 <div style="margin-bottom:20px">
 <canvas width="200" height="130" id="time-compare-canvas">
@@ -1149,6 +1152,8 @@ We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the
 </div>
 
 **Sample Efficiency**
+
+Our results suggest that on tasks with a large input space, ISED achieves superior accuracy compared to REINFORCE-based methods when we limit the sample count.
 
 We compared ISED to REINFORCE, IndeCateR, and IndeCateR+, a variant of IndeCateR customized for higher dimensional settings, to assess how they compare in terms of sample efficiency.
 We use the task of MNIST addition over 8, 12, and 16 digits, while varying the number of samples taken.
