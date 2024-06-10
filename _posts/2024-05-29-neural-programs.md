@@ -874,175 +874,264 @@ Our results show that ISED is often more data- and sample-efficient than state-o
 **Performance and Accuracy**
 
 We use [Scallop](https://arxiv.org/abs/2304.04812), [DPL](https://arxiv.org/abs/1805.10872), [REINFORCE](https://link.springer.com/article/10.1007/BF00992696), [IndeCateR](https://arxiv.org/abs/2311.12569), [NASR](https://openreview.net/forum?id=en9V5F8PR-), and [A-NeSI](https://arxiv.org/abs/2212.12393) as baselines.
-We present our results in the table below.
+We present our results in the tables below, divided by "custom" tasks (HWF, leaf, scene, and sudoku), MNIST-R arithmetic, and MNIST-R other.
 "N/A" indicates that the task cannot be programmed in the given framework, and "TO" means that there was a timeout.
 
-<table class="styled-table">
-    <thead>
-      <tr>
-        <th></th>
-        <th colspan="1" style="text-align: center; vertical-align: middle;">HWF</th>
-        <th colspan="2" style="text-align: center; vertical-align: middle;">leaf</th>
-        <th colspan="1" style="text-align: center; vertical-align: middle;">scene</th>
-        <th colspan="1" style="text-align: center; vertical-align: middle;">sudoku</th>
-        <th colspan="11" style="text-align: center; vertical-align: middle;">MNIST-R</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-          <th></th>
-          <td>HWF</td>
-          <td>DT leaf</td>
-          <td>GPT leaf</td>
-          <td>scene</td>
-          <td>sudoku</td>
-          <td>sum$_2$</td>
-          <td>sum$_3$</td>
-          <td>sum$_4$</td>
-          <td>mult$_2$</td>
-          <td>mod$_2$</td>
-          <td>less-than</td>
-          <td>add-mod-3</td>
-          <td>add-sub</td>
-          <td>equal</td>
-          <td>not-3-or-4</td>
-          <td>count-3-4</td>
-      </tr>
-      <tr>
-          <th>DPL</th>
-          <td>TO</td>
-          <td>81.13</td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>TO</td>
-          <td>95.14</td>
-          <td>93.80</td>
-          <td>TO</td>
-          <td>95.43</td>
-          <td>96.34</td>
-          <td><strong>96.60</strong></td>
-          <td>95.28</td>
-          <td>93.86</td>
-          <td><strong>98.53</strong></td>
-          <td>98.19</td>
-          <td>TO</td>
-      </tr>
-      <tr>
-          <th>Scallop</th>
-          <td>96.65</td>
-          <td>81.13</td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>TO</td>
-          <td>91.18</td>
-          <td>91.86</td>
-          <td>80.1</td>
-          <td>87.26</td>
-          <td>77.98</td>
-          <td>80.02</td>
-          <td>75.12</td>
-          <td>92.02</td>
-          <td>71.60</td>
-          <td>97.42</td>
-          <td>93.47</td>
-      </tr>
-      <tr>
-          <th>A-NeSI</th>
-          <td>3.13</td>
-          <td>78.82</td>
-          <td>72.40</td>
-          <td>61.46</td>
-          <td>26.36</td>
-          <td><strong>96.66</strong></td>
-          <td>94.39</td>
-          <td>78.10</td>
-          <td><strong>96.25</strong></td>
-          <td><strong>96.89</strong></td>
-          <td>94.75</td>
-          <td>77.44</td>
-          <td>93.95</td>
-          <td>77.89</td>
-          <td>98.63</td>
-          <td>93.73</td>
-      </tr>
-      <tr>
-          <th>REINFORCE</th>
-          <td>18.59</td>
-          <td>23.60</td>
-          <td>34.02</td>
-          <td>47.07</td>
-          <td>79.08</td>
-          <td>74.46</td>
-          <td>19.40</td>
-          <td>13.84</td>
-          <td>96.62</td>
-          <td>94.40</td>
-          <td>78.92</td>
-          <td><strong>95.42</strong></td>
-          <td>17.86</td>
-          <td>78.26</td>
-          <td><strong>99.28</strong></td>
-          <td>87.78</td>
-      </tr>
-      <tr>
-          <th>IndeCateR</th>
-          <td>15.14</td>
-          <td>40.38</td>
-          <td>52.67</td>
-          <td>12.28</td>
-          <td>66.50</td>
-          <td>95.70</td>
-          <td>66.24</td>
-          <td>13.02</td>
-          <td>96.32</td>
-          <td>93.88</td>
-          <td>78.20</td>
-          <td>94.02</td>
-          <td>70.12</td>
-          <td>83.10</td>
-          <td><strong>99.28</strong></td>
-          <td>2.26</td>
-      </tr>
-      <tr>
-          <th>NASR</th>
-          <td>1.85</td>
-          <td>16.41</td>
-          <td>17.32</td>
-          <td>2.02</td>
-          <td>82.78</td>
-          <td>6.08</td>
-          <td>5.48</td>
-          <td>4.86</td>
-          <td>5.34</td>
-          <td>20.02</td>
-          <td>49.30</td>
-          <td>33.38</td>
-          <td>5.26</td>
-          <td>81.72</td>
-          <td>68.36</td>
-          <td>25.26</td>
-      </tr>
-      <tr>
-          <th>ISED</th>
-          <td><strong>97.34</strong></td>
-          <td><strong>82.32</strong></td>
-          <td><strong>79.95</strong></td>
-          <td><strong>68.59</strong></td>
-          <td>80.32</td>
-          <td>80.34</td>
-          <td><strong>95.10</strong></td>
-          <td><strong>94.1</strong></td>
-          <td>96.02</td>
-          <td>96.68</td>
-          <td>96.22</td>
-          <td>83.76</td>
-          <td><strong>95.32</strong></td>
-          <td>96.02</td>
-          <td>98.08</td>
-          <td><strong>95.26</strong></td>
-      </tr>
-    </tbody>
-</table>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Selector</title>
+</head>
+<body>
+    <button id="customButton" style="background-color: lightgrey" onclick="showCustomTable()">Custom</button>
+    <button id="mnistArithButton" style="background-color: lightgrey" onclick="showMnistArithTable()">MNIST-R (arithmetic)</button>
+    <button id="mnistOtherButton" style="background-color: lightgrey" onclick="showMnistOtherTable()">MNIST-R (other)</button>
+    
+    <table id="customTable" class="styled-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>HWF</th>
+                <th>DT leaf</th>
+                <th>GPT leaf</th>
+                <th>scene</th>
+                <th>sudoku</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>DPL</th>
+                <td>TO</td>
+                <td>81.13</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>TO</td>
+            </tr>
+            <tr>
+                <th>Scallop</th>
+                <td>96.65</td>
+                <td>81.13</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>TO</td>
+            </tr>
+            <tr>
+                <th>A-NeSI</th>
+                <td>3.13</td>
+                <td>78.82</td>
+                <td>72.40</td>
+                <td>61.46</td>
+                <td>26.36</td>
+            </tr>
+            <tr>
+                <th>REINFORCE</th>
+                <td>18.59</td>
+                <td>23.60</td>
+                <td>34.02</td>
+                <td>47.07</td>
+                <td>79.08</td>
+            </tr>
+            <tr>
+                <th>IndeCateR</th>
+                <td>15.14</td>
+                <td>40.38</td>
+                <td>52.67</td>
+                <td>12.28</td>
+                <td>66.50</td>
+            </tr>
+            <tr>
+                <th>NASR</th>
+                <td>1.85</td>
+                <td>16.41</td>
+                <td>17.32</td>
+                <td>2.02</td>
+                <td><strong>82.78</strong></td>
+            </tr>
+            <tr>
+                <th>ISED</th>
+                <td><strong>97.34</strong></td>
+                <td><strong>82.32</strong></td>
+                <td><strong>79.95</strong></td>
+                <td><strong>68.59</strong></td>
+                <td>80.32</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table id="mnistArithTable" class="styled-table" style="display:none;">
+        <thead>
+            <tr>
+                <th></th>
+                <th>sum_2</th>
+                <th>sum_3</th>
+                <th>sum_4</th>
+                <th>mult_2</th>
+                <th>mod_2</th>
+                <th>add-mod-3</th>
+                <th>add-sub</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>DPL</th>
+                <td>95.14</td>
+                <td>93.80</td>
+                <td>TO</td>
+                <td>95.43</td>
+                <td>96.34</td>
+                <td>95.28</td>
+                <td>93.86</td>
+            </tr>
+            <tr>
+                <th>Scallop</th>
+                <td>91.18</td>
+                <td>91.86</td>
+                <td>80.10</td>
+                <td>87.26</td>
+                <td>77.98</td>
+                <td>75.12</td>
+                <td>92.02</td>
+            </tr>
+            <tr>
+                <th>A-NeSI</th>
+                <td><strong>96.66</strong></td>
+                <td>94.39</td>
+                <td>78.10</td>
+                <td><strong>96.25</strong></td>
+                <td><strong>96.89</strong></td>
+                <td>77.44</td>
+                <td>93.95</td>
+            </tr>
+            <tr>
+                <th>REINFORCE</th>
+                <td>74.46</td>
+                <td>19.40</td>
+                <td>13.84</td>
+                <td>96.62</td>
+                <td>94.40</td>
+                <td><strong>95.42</strong></td>
+                <td>17.86</td>
+            </tr>
+            <tr>
+                <th>IndeCateR</th>
+                <td>95.70</td>
+                <td>66.24</td>
+                <td>13.02</td>
+                <td>96.32</td>
+                <td>93.88</td>
+                <td>94.02</td>
+                <td>70.12</td>
+            </tr>
+            <tr>
+                <th>NASR</th>
+                <td>6.08</td>
+                <td>5.48</td>
+                <td>4.86</td>
+                <td>5.34</td>
+                <td>20.02</td>
+                <td>33.38</td>
+                <td>5.26</td>
+            </tr>
+            <tr>
+                <th>ISED</th>
+                <td>80.34</td>
+                <td><strong>95.10</strong></td>
+                <td><strong>94.10</strong></td>
+                <td>96.02</td>
+                <td>96.68</td>
+                <td>83.76</td>
+                <td><strong>95.32</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="mnistOtherTable" class="styled-table" style="display:none;">
+        <thead>
+            <tr>
+                <th></th>
+                <th>less-than</th>
+                <th>equal</th>
+                <th>not-3-or-4</th>
+                <th>count-3-4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>DPL</th>
+                <td><strong>96.60</strong></td>
+                <td><strong>98.53</strong></td>
+                <td>98.19</td>
+                <td>TO</td>
+            </tr>
+            <tr>
+                <th>Scallop</th>
+                <td>80.02</td>
+                <td>71.60</td>
+                <td>97.42</td>
+                <td>93.47</td>
+            </tr>
+            <tr>
+                <th>A-NeSI</th>
+                <td>94.75</td>
+                <td>77.89</td>
+                <td>98.63</td>
+                <td>93.73</td>
+            </tr>
+            <tr>
+                <th>REINFORCE</th>
+                <td>78.92</td>
+                <td>78.26</td>
+                <td><strong>99.28</strong></td>
+                <td>87.78</td>
+            </tr>
+            <tr>
+                <th>IndeCateR</th>
+                <td>78.20</td>
+                <td>83.10</td>
+                <td><strong>99.28</strong></td>
+                <td>2.26</td>
+            </tr>
+            <tr>
+                <th>NASR</th>
+                <td>49.30</td>
+                <td>81.72</td>
+                <td>68.36</td>
+                <td>25.26</td>
+            </tr>
+            <tr>
+                <th>ISED</th>
+                <td>96.22</td>
+                <td>96.02</td>
+                <td>98.08</td>
+                <td><strong>95.26</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showCustomTable() {
+            document.getElementById("customTable").style.display = "table";
+            document.getElementById("mnistArithTable").style.display = "none";
+            document.getElementById("mnistOtherTable").style.display = "none";
+        }
+
+        function showMnistArithTable() {
+            document.getElementById("customTable").style.display = "none";
+            document.getElementById("mnistArithTable").style.display = "table";
+            document.getElementById("mnistOtherTable").style.display = "none";
+        }
+
+        function showMnistOtherTable() {
+            document.getElementById("customTable").style.display = "none";
+            document.getElementById("mnistArithTable").style.display = "none";
+            document.getElementById("mnistOtherTable").style.display = "table";
+        }
+
+        // Show custom table by default
+        showCustomTable();
+    </script>
+</body>
+
 
 Despite treating $P$ as a black-box, ISED outperforms neurosymbolic solutions on many tasks.
 In particular, while neurosymbolic solutions time out on Sudoku, ISED achieves high accuracy and even comes within 2.46% of NASR, the state-of-the art solution for this task.
