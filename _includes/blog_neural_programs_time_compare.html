@@ -71,7 +71,17 @@
             x: {
               type: 'linear',
               position: 'bottom',
+              title: {
+                display: true,
+                text: 'Time (s)'
+              }
             },
+            y: {
+              title: {
+                display: true,
+                text: 'Accuracy'
+              }
+            }
           },
           plugins: {
             tooltip: {
@@ -88,34 +98,25 @@
                 filter: function (legendItem, chartData) {
                   return !legendItem.text.includes('Bound');
                 }
+              },
+              onClick: function (e, legendItem, legend) {
+                // Prevent the default behavior of hiding datasets
+              }
+            },
+            title: {
+              display: true,
+              text: 'Accuracy vs. Time for sum-4',
+              font: {
+                size: 18
+              },
+              padding: {
+                top: 10,
+                bottom: 10
               }
             }
           }
         }
       });
-
-
-      // Event listener for legend click
-      document.getElementById('time-compare-canvas').onclick = function (event) {
-        const activePoints = timeChart.getElementsAtEventForMode(event, 'dataset', { intersect: true }, false);
-
-        if (activePoints.length > 0) {
-          const clickedDatasetIndex = activePoints[0].datasetIndex;
-          const clickedDataset = timeChart.data.datasets[clickedDatasetIndex];
-
-          // Toggle visibility of upper and lower bound datasets with the same dataset label
-          if (clickedDataset.datasetLabel) {
-            timeChart.data.datasets.forEach(dataset => {
-              if (dataset.datasetLabel === clickedDataset.datasetLabel && dataset.label.includes('Bound')) {
-                dataset.hidden = !dataset.hidden;
-              }
-            });
-
-            timeChart.update();
-          }
-        }
-      };
-
     });
 </script>
 
