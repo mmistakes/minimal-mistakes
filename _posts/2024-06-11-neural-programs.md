@@ -444,20 +444,20 @@ We restate the predicted distributions from the neural model and show the result
   </p>
 </div>
 
-<div>
-  <math display="block">
-  <mo>[</mo>
-    <mtable>
-      <mtr><mtd><mi>0.0</mi></mtd></mtr>
-      <mtr><mtd><mi><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></mi></mtd></mtr>
-      <mtr><mtd><mi>0.0</mi></mtd></mtr>
-      <mtr><mtd><mi><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></mi></mtd></mtr>
-      <mtr><mtd><mi>0.0</mi></mtd></mtr>
-  </mtable>
-  <mo>]</mo>
-  </math>
-  <br>
+<div class="vector-container">
+  <div class="vector">
+    <div class="bracket left-bracket">⎡<br>⎢<br>⎢<br>⎢<br>⎣</div>
+    <div class="elements">
+      <div class="element">0.0</div>
+      <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
+      <div class="element">0.0</div>
+      <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
+      <div class="element">0.0</div>
+    </div>
+    <div class="bracket right-bracket">⎤<br>⎥<br>⎥<br>⎥<br>⎦</div>
+  </div>
 </div>
+<br>
 
 **Step 4: Descend**
 
