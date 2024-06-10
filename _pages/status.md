@@ -34,6 +34,9 @@ intro:
 Helmi is accessible through the LUMI environment daily.
 {: .notice--info}
 
+Helmi is offline since the 10.06. for maintenance.
+{: .notice--danger}
+
 <center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
