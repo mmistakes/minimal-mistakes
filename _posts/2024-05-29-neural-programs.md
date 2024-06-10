@@ -248,7 +248,7 @@ Notice how some programs are much more verbose than they would be if written in 
 
 When $P$ is a logic program, techniques have been developed for differentiation by exploiting its structure.
 However, these frameworks use specialized languages that offer a narrow range of features.
-The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of GPT-4.
+The scene recognition task, as described above, can’t be encoded in Scallop or DPL due to its use of GPT-4, which cannot be expressed as a logic program.
 
 To solve the general problem of learning neural programs, a learning algorithm that treats $P$ as black-box is required.
 By this, we mean that the learning algorithm must perform gradient estimation through $P$ without being able to explicitly differentiate it.
@@ -284,7 +284,7 @@ In the general neural program learning setting, we don’t assume that we can di
 
 We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a summary logic program representing the task using only forward evaluation, and differentiates across the summary. We describe each step of the algorithm below.
 
-**Infer**
+**Step 1: Infer**
 
 The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits $a$ and $b$. Suppose that we obtain the following distributions:
 
@@ -294,13 +294,13 @@ $p_b = [p_{b0}, p_{b1}, p_{b2}] = [0.2, 0.1, 0.7]$
 </div>
 <br>
 
-**Sample**
+**Step 2: Sample**
 
 ISED is initialized with a sample count $k$, representing the number of samples to take from the predicted distributions in each training iteration.
 
 Suppose that we initialize $k=3$, and we use a categorical sampling procedure. ISED might sample the following pairs of symbols: (1, 2), (1, 0), (2, 1). ISED would then evaluate $P$ on these symbol pairs, obtaining the outputs 3, 1, and 3.
 
-**Estimate**
+**Step 3: Estimate**
 
 ISED then takes the symbol-output pairs obtained in the last step and produces the following summary logic program:
 
@@ -465,7 +465,7 @@ We restate the predicted distributions from the neural model and show the result
 </body>
 
 
-**Descend**
+**Step 4: Descend**
 
 The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
 
