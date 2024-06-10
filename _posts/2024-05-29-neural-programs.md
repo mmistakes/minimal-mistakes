@@ -209,7 +209,7 @@ Click on the thumbnails to see different examples of neural programs:
 
 <figcaption style="margin-top: 0; margin-bottom: 25pt;">Neural programs involve a composition of a neural component and a program component. Input images are fed into the neural model(s), and symbols predicted by the neural component can be passed into the program $P$.</figcaption>
 
-These tasks can be difficult to learn if there are no intermediate labels to train $M_\theta$.
+These tasks can be difficult to learn without intermediate labels for training $M_\theta$.
 The main challenge concerns how to estimate the gradient across $P$ to faciliate end-to-end learning.
 
 
@@ -304,12 +304,11 @@ Suppose that we initialize $k=3$, and we use a categorical sampling procedure. I
 
 ISED then takes the symbol-output pairs obtained in the last step and produces the following summary logic program:
 
-<div style="text-align: center;">
-$a = 1 \land b = 2 \rightarrow y = 3$<br>
-$a = 1 \land b = 0 \rightarrow y = 1$<br>
-$a = 2 \land b = 1 \rightarrow y = 3$
-</div>
-<br>
+```
+    a = 1 /\ b = 2 -> y = 3
+    a = 1 /\ b = 0 -> y = 1
+    a = 2 /\ b = 1 -> y = 3
+```
 
 ISED differentiates through this summary program by aggregating the probabilities of inputs for each possible output.
 
@@ -1052,11 +1051,6 @@ The baseline that comes closest to ISED on most tasks is A-NeSI. However, since 
 **Data Efficiency**
 
 We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the sum$_4$ task. This task involves just 5K training examples, which is less than what A-NeSI would have used in its evaluation on the same task (15K). Our results show that ISED reaches high accuracy much faster than A-NeSI in this setting, suggesting that it offers better data efficiency than the baseline.
-
-<figure>
-  <img src="/assets/images/neural_programs/sum4.png" alt="Accuracy vs. Time for sum4." style="width: 1000px">
-  <figcaption>Accuracy vs. Time for sum4</figcaption>
-</figure>
 
 <div style="margin-bottom: 15px">
 <canvas id="time-compare-canvas" style="margin-bottom: 15px"></canvas>
