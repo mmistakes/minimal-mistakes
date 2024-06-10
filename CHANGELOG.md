@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Enhancements
+
+- Add Czech localization. [#4866](https://github.com/mmistakes/minimal-mistakes/pull/4866)
+
 ### Bug Fixes
 
 - Figure helper breaks when using code markup in caption with `popup=true`. [#4841](https://github.com/mmistakes/minimal-mistakes/issues/4841)
