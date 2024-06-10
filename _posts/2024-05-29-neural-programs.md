@@ -499,15 +499,15 @@ You can also sample different values for ISED and REINFORCE and change the semir
   </p>
   
   <div style="padding-right:20px; border-bottom:1px solid #ccc; border-top:1px solid #ccc;">
-    <button onclick="showDiv(1)" class="button-method btn-clicked" id="isedbutton">ISED</button>
-    <button onclick="showDiv(2)" class="button-method" id="dplbutton">DeepProbLog</button>
-    <button onclick="showDiv(3)" class="button-method">Scallop</button>
-    <button onclick="showDiv(4)" class="button-method" style="border-right: 0px">REINFORCE</button>
+    <button onclick="showDiv(1)" class="button-method btn-clicked" id="isedbutton" style="background-color: lightblue">ISED</button>
+    <button onclick="showDiv(2)" class="button-method" id="dplbutton" style="background-color: lightblue">DeepProbLog</button>
+    <button onclick="showDiv(3)" class="button-method" style="background-color: lightblue">Scallop</button>
+    <button onclick="showDiv(4)" class="button-method" style="border-right: 0px" style="background-color: lightblue">REINFORCE</button>
   </div>
   
   <div id="div1" class="content">
     <div class="container">
-        <button onclick="isedshow()" style="display: inline-block;" class="button-sample">Sample</button>
+        <button onclick="isedshow()" style="display: inline-block;" class="button-sample" style="background-color: lightgrey">Sample</button>
         <table id="isedresult" style="align:center"></table>
     </div>
     <div class="container">
@@ -532,8 +532,9 @@ You can also sample different values for ISED and REINFORCE and change the semir
   
   <div id="div3" class="content hidden">
     <div class="container">
-      <button onclick="scallop1show()" style="margin: 0 5px;" class="button-sample">top-1</button>
-      <button onclick="scallop3show()" style="display: inline-block;" class="button-sample">top-3</button>
+      <button onclick="scallop1show()" style="margin: 0 5px; background-color: lightgrey" class="button-sample">top-1</button>
+      <button onclick="scallop3show()" style="display: inline-block; background-color: lightgrey" 
+      class="button-sample">top-3</button>
       <table id="scallopresult" style="align:center"></table>
     </div>
     <div class="container" style="overflow-x:auto">
@@ -547,7 +548,7 @@ You can also sample different values for ISED and REINFORCE and change the semir
   
   <div id="div4" class="content hidden">
     <div class="container">
-      <button onclick="reinforceshow()" style="display: inline-block;" class="button-sample">Sample</button>
+      <button onclick="reinforceshow()" style="display: inline-block; background-color: lightgrey" class="button-sample">Sample</button>
       <table id="reinforceresult" style="align:center"></table>
     </div>
     <div class="container">
