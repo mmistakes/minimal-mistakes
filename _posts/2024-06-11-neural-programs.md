@@ -214,7 +214,7 @@ Click on the thumbnails to see different examples of neural programs:
 <figcaption style="margin-top: 0; margin-bottom: 25pt;">Neural programs involve a composition of a neural component and a program component. Input images are fed into the neural model(s), and symbols predicted by the neural component can be passed into the program $P$.</figcaption>
 
 These tasks can be difficult to learn without intermediate labels for training $M_\theta$.
-The main challenge concerns how to estimate the gradient across $P$ to faciliate end-to-end learning.
+The main challenge concerns how to estimate the gradient across $P$ to facilitate end-to-end learning.
 
 
 ## Neurosymbolic Learning Frameworks
