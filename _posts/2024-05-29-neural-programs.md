@@ -141,6 +141,8 @@ logic_programs:
 
 .code-snippet {
   display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 </style>
@@ -178,7 +180,7 @@ One task that can be expressed as a neural program is scene recognition, where $
 <!-- Here are some examples of neural programs: -->
 Click on the thumbnails to see different examples of neural programs:
 
-<ul class="tab" data-tab="neural-program-examples" data-name="otherxeg">
+<ul class="tab" data-tab="neural-program-examples" data-name="otherxeg" style="margin-left:3px">
 {% for i in (0..4) %}
 <li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
     <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/neural_programs/blog_figs_attrs/{{ i }}/thumbnail.png" alt="{{ i | plus: 1 }}"></a>
@@ -220,25 +222,27 @@ The main challenge concerns how to estimate the gradient across $P$ to faciliate
 Neurosymbolic learning is one instance of neural program learning in which $P$ is a logic program.
 [Scallop](https://arxiv.org/abs/2304.04812) and [DeepProbLog (DPL)](https://arxiv.org/abs/1805.10872) are neurosymbolic learning frameworks that use Datalog and ProbLog respectively.
 
-Click on the thumbnails to see a few of the neural program examples from before expressed as logic programs in Scallop.
-Notice how some programs are much more verbose than they would be if written in Python.
+Click on the thumbnails to see examples of neural programs expressed as logic programs in Scallop.
+Notice how some programs are much more verbose than they would be if written in Python. 
+For instance, the Python program for Hand-Written Formula could be a single line of code calling the built-in `eval` function,
+instead of the manually built lexer, parser, and interpreter.  
 
 <!-- Second Figure -->
-<ul class="tab" data-tab="second-figure" data-name="secondfigure">
+<ul class="tab" data-tab="second-figure" data-name="secondfigure" style="margin-left:3px">
   {% for i in (1..3) %}
-  <li class="{% if forloop.first %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
+  <li class="{% if forloop.index == 2 %}active{% endif %}" style="width: 10%; padding: 0; margin: 0">
       <a href="#" style="padding: 5%; margin: 0"><img src="/assets/images/neural_programs/blog_figs_attrs/{{ i }}/thumbnail.png" alt="{{ i | plus: 1 }}"></a>
   </li>
   {% endfor %}
 </ul>
 <ul class="tab-content" id="second-figure" data-name="secondfigure">
   {% for example in page.logic_programs %}
-  <li class="{% if forloop.first %}active{% endif %}">
+  <li class="{% if forloop.index == 2 %}active{% endif %}">
       <div style="text-align: center; display: flex; justify-content: space-around; align-items: center;">
         {% if forloop.index <= 5 %}
         <figure class="center" style="margin-top: 0; margin-bottom: 5pt;">
         <figcaption>{{ example.caption }}</figcaption>
-            <div class="code-popup" style="overflow-y: auto; overflow-x: auto; max-width:600px; max-height: 500px;">
+          <div class="code-popup" style="overflow-y: auto; overflow-x: auto; width:600px; max-height: 320px; background-color: #231E18; color: #CABCB1; border-radius: 5px;">
               <pre class="code-block"><code class="code-snippet">{{ example.code }}</code></pre>
             </div>
         </figure>
@@ -290,11 +294,10 @@ We introduce Infer-Sample-Estimate-Descend (ISED), an algorithm that produces a 
 
 The first step of ISED is for the neural models to perform inference. In this example, $M_\theta$ predicts distributions for digits $a$ and $b$. Suppose that we obtain the following distributions:
 
-<div style="text-align: center;">
+<div style="text-align: center; margin-bottom:25px">
 $p_a = [p_{a0}, p_{a1}, p_{a2}] = [0.1, 0.6, 0.3]$<br>
 $p_b = [p_{b0}, p_{b1}, p_{b2}] = [0.2, 0.1, 0.7]$
 </div>
-<br>
 
 **Step 2: Sample**
 
@@ -320,10 +323,6 @@ We say that this method of aggregation uses the `add-mult` semiring, but a diffe
 
 We restate the predicted distributions from the neural model and show the resulting prediction vector after aggregation. Hover over the elements to see where they originated from in the predicted distributions.
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interactive Column Vector</title>
 <style>
 
 .vector-container {
@@ -431,40 +430,34 @@ We restate the predicted distributions from the neural model and show the result
     });
   });
 </script>
-</head>
-
-<body>
 
 <div style="text-align: center;">
-  <p>
-    $p_a = \left[ \right. $<span class="fig1-probability-r1-0">0.1</span>$, $
-    <span class="fig1-probability-r1-1">0.6</span>$, $
-    <span class="fig1-probability-r1-2">0.3</span>$\left. \right]$
+  <p style="margin-bottom:0;  margin-top:0">
+    $p_a = \left[ \right. $<span class="fig1-probability-r1-0">$0.1$</span>$, $
+    <span class="fig1-probability-r1-1">$0.6$</span>$, $
+    <span class="fig1-probability-r1-2">$0.3$</span>$\left. \right]$
   </p>
   <p>
-    $p_b = \left[ \right. $<span class="fig1-probability-r2-0">0.2</span>$, $
-    <span class="fig1-probability-r2-1">0.1</span>$, $
-    <span class="fig1-probability-r2-2">0.7</span>$\left. \right]$
+    $p_b = \left[ \right. $<span class="fig1-probability-r2-0">$0.2$</span>$, $
+    <span class="fig1-probability-r2-1">$0.1$</span>$, $
+    <span class="fig1-probability-r2-2">$0.7$</span>$\left. \right]$
   </p>
 </div>
 
-
-<div class="vector-container">
-  <div class="vector">
-    <div class="bracket left-bracket">⎡<br>⎢<br>⎢<br>⎢<br>⎣</div>
-    <div class="elements">
-      <div class="element">0.0</div>
-      <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></div>
-      <div class="element">0.0</div>
-      <div class="element"><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></div>
-      <div class="element">0.0</div>
-    </div>
-    <div class="bracket right-bracket">⎤<br>⎥<br>⎥<br>⎥<br>⎦</div>
-  </div>
+<div>
+  <math display="block">
+  <mo>[</mo>
+    <mtable>
+      <mtr><mtd><mi>0.0</mi></mtd></mtr>
+      <mtr><mtd><mi><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-0">0.2</span></mi></mtd></mtr>
+      <mtr><mtd><mi>0.0</mi></mtd></mtr>
+      <mtr><mtd><mi><span class="probability fig1-probability-r1-1">0.6</span> * <span class="probability fig1-probability-r2-2">0.7</span> + <span class="probability fig1-probability-r1-2">0.3</span> * <span class="probability fig1-probability-r2-1">0.1</span></mi></mtd></mtr>
+      <mtr><mtd><mi>0.0</mi></mtd></mtr>
+  </mtable>
+  <mo>]</mo>
+  </math>
+  <br>
 </div>
-
-</body>
-
 
 **Step 4: Descend**
 
@@ -476,8 +469,9 @@ We provide an interactive explanation of the differences between the different m
 You can also sample different values for ISED and REINFORCE and change the semiring used in Scallop.
 
 <div style="white-space: nowrap; border: 1px solid #ccc; padding: 10px;" id="scrollContainer">
-  <p>
-    Ground truth: $a = 1$, $b = 2$, $y = 3$. <br>
+  <p style="margin-bottom:5px">
+    Ground truth: $a = 1$, $b = 2$, $y = 3$. </p>
+  <p style="margin-bottom:15px">
       Assume $ M_\theta(a) = $
         <math display="inline-block">
           <mo>[</mo>
@@ -522,7 +516,9 @@ You can also sample different values for ISED and REINFORCE and change the semir
     </div>
   
   <div id="div2" class="content hidden">
-    <table id="dplresult" style="align:center"></table>
+    <div class="container">
+      <table id="dplresult" style="align:center"></table>
+    </div>
     <div class="container">
       <div id="dplagg" style=""></div>
       <img src="/assets/images/neural_programs/sort-down.png" alt="arrow" style="width: 10px">
