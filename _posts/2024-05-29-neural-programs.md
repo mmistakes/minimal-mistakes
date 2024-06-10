@@ -168,8 +168,10 @@ logic_programs:
 > To learn neural programs, we develop ISED, an algorithm for data-efficient learning of neural programs.
 
 Neural programs are the composition of a neural model $M_\theta$ followed by a program $P$.
-Neural programs can be used to solve computational tasks that neural perception alone cannot solve.
-$P$ can take many forms, including a Python program, a logic program, or a call to an LLM such as GPT-4.
+Neural programs can be used to solve computational tasks that neural perception alone cannot solve, such as those involving complex symbolic reasoning.
+
+Neural programs also offer the opportunity to interface existing black-box programs, such as GPT or other custom software, with the real world via sensoring/perception-based neural networks.
+$P$ can take many forms, including a Python program, a logic program, or a call to a state-of-the-art foundation model.
 One task that can be expressed as a neural program is scene recognition, where $M_\theta$ classifies objects in an image and $P$ prompts GPT-4 to identify the room type given these objects.
 
 
