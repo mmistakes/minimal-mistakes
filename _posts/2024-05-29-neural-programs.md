@@ -1142,10 +1142,11 @@ The baseline that comes closest to ISED on most tasks is A-NeSI. However, since 
 
 We compared ISED to A-NeSI in terms of data efficiency by evaluating them on the sum$_4$ task. This task involves just 5K training examples, which is less than what A-NeSI would have used in its evaluation on the same task (15K). Our results show that ISED reaches high accuracy much faster than A-NeSI in this setting, suggesting that it offers better data efficiency than the baseline.
 
-<div>
-<canvas width="200" height="130" id="time-compare-canvas"></canvas>
-</div>
+<div style="margin-bottom:20px">
+<canvas width="200" height="130" id="time-compare-canvas">
 {% include blog_neural_programs_time_compare.html %}
+</canvas>
+</div>
 
 **Sample Efficiency**
 
