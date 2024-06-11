@@ -69,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "Ausflug 6b - Karl´s Erdbeerhof",
+    "title": "Ausflug 6b - Karl´s Erdbeerhof",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGI5ZTlvbXNpZmZuZnRpN2dkaWtjNmdyMmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-28T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-28T13:30:00+02:00"
+    },
+    "created": "2024-06-10T10:30:26.000Z",
+    "updated": "2024-06-10T10:30:26.368Z"
+  },
+  {
+    "image_path": null,
     "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
     "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-02-21T09:45:46.000Z",
     "updated": "2024-02-21T09:45:46.470Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Mitgliederversammlung Förderverein",
-    "title": "Mitgliederversammlung Förderverein",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YzE3NTF1MHNjYW0wam44dGowam5ldnVpbW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-08T19:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-08T20:30:00+02:00"
-    },
-    "created": "2024-06-04T18:19:39.000Z",
-    "updated": "2024-06-04T18:19:39.314Z"
   }
 ]
