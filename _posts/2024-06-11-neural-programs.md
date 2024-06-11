@@ -459,9 +459,11 @@ We restate the predicted distributions from the neural model and show the result
 </div>
 <br>
 
+We then set $\mathcal{l}$ to be equal to the loss of this prediction vector and a one-hot vector representing the ground truth final output.
+
 **Step 4: Descend**
 
-The last step is to optimize $\theta$ based on $\frac{\partial l}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
+The last step is to optimize $\theta$ based on $\frac{\partial \mathcal{l}}{\partial \theta}$ using a stochastic optimizer (e.g., Adam optimizer). This completes the training pipeline for one example, and the algorithm returns the final $\theta$ after iterating through the entire dataset.
 
 **Summary**
 
@@ -863,7 +865,7 @@ You can also sample different values for ISED and REINFORCE and change the semir
 
 ## Evaluation
 
-We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification, Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits (called MNIST-R benchmarks).
+We evaluate ISED on 16 tasks. Two tasks involve calls to GPT-4 and therefore cannot be specified in neurosymbolic frameworks. We use the tasks of scene recognition, leaf classification (using decision trees or GPT-4), Sudoku solving, Hand-Written Formula (HWF), and 11 other tasks involving operations over MNIST digits (called MNIST-R benchmarks).
 
 Our results demonstrate that on tasks that can be specified as logic programs, ISED achieves similar, and sometimes superior accuracy compared to neurosymbolic baselines.
 Additionally, ISED often achieves superior accuracy compared to black-box gradient estimation baselines, especially on tasks in which the black-box component involves complex reasoning.
