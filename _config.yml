@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 locale                   : "ko-KR"
 title                    : "퀀트, 데이터사이언스"
 title_separator          : "|"
-subtitle                 : "Quant, Statistics, Mathematics, Programming..."
+subtitle                 : "Quant, Statistics, Mathematics, Programming, AI..."
 name                     : "QuantDatascience"
-description              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍..."
+description              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍, AI 등등 교육"
 url                      : "https://quantdatascience.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -290,7 +290,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -305,5 +304,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar:
+        nav: "docs"
+
+
 
 date_format: "%Y-%m-%d"
