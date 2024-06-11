@@ -47,7 +47,7 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo                 : "100xoo/ghblog-comments"
+    # repo                 : "100xoo/ghblog-comments"
     repo_id              : "R_kgDOMH0UjQ" # Shown during giscus setup at https://giscus.app
     category_name        : "Comments" # Full text name of the category
     category_id          : "DIC_kwDOMH0Ujc4CgATH" # Shown during giscus setup at https://giscus.app
