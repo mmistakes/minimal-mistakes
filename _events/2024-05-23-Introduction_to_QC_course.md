@@ -9,5 +9,5 @@ tags:
   - Helmi
   - LUMI
 ---
-
+Two-day introductory course on quantum computers and the basic quantum algorithms that control them.
 
