@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/utm-builder.css">
+  <title>GA4 test</title>
+  <script src="./script/utm-builder.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="title">GA4 UTM</div>
+      <div id="cookie_remover_box">
+        <button id="cookie_remover_btn">cookie remove</button>
+      </div>
+    </div>
+    <div id="main">
+      <div id="utm_creator">
+        <form id="utm_creat_form" action="#">
+          <labe for="utm_source">source</labe>
+          <input id="utm_source" type="text" placeholder="google" required>
+          <labe for="utm_medium">medium</labe>
+          <input id="utm_medium" type="text" placeholder="cpc" required>
+          <labe for="utm_campaign">campaign</labe>
+          <input id="utm_campaign" type="text" placeholder="promotion" required>
+          <labe for="utm_term">term</labe>
+          <input id="utm_term" type="text" placeholder="cat">
+          <labe for="utm_content">content</labe>
+          <input id="utm_content" type="text" placeholder="A">
+          <input id="utm_create_btn" type="submit" value="생성하기">
+        </form>
+        <div id="created_utm_btn_box">
+          <a id="created_utm_btn" class="button" target="_blank">생성된 버튼</a>
+        </div>
+      </div>
+      <div id="fixed_utm_box">
+        <div id="utm_naver" class="utm_box">
+          <a href="https://cherrylime69.github.io/?utm_source=naver&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=A"
+            class="button" target="_blank">naver_cpc_promotion_cat_A</a>
+          <a href="https://cherrylime69.github.io/?utm_source=naver&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=B"
+            class="button" target="_blank">naver_cpc_sales_rat_B</a>
+          <a href="https://cherrylime69.github.io/?utm_source=naver&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=C"
+            class="button" target="_blank">naver_cpc_promotion_cat_C</a>
+          <a href="https://cherrylime69.github.io/?utm_source=naver&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=D"
+            class="button" target="_blank">naver_cpc_sales_rat_D</a>
+        </div>
+        <div id="utm_facebook" class="utm_box">
+          <a href="https://cherrylime69.github.io/?utm_source=facebook&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=A"
+            class="button" target="_blank">facebook_cpc_promotion_cat_A</a>
+          <a href="https://cherrylime69.github.io/?utm_source=facebook&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=B"
+            class="button" target="_blank">facebook_cpc_sales_rat_B</a>
+          <a href="https://cherrylime69.github.io/?utm_source=facebook&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=C"
+            class="button" target="_blank">facebook_cpc_promotion_cat_C</a>
+          <a href="https://cherrylime69.github.io/?utm_source=facebook&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=D"
+            class="button" target="_blank">facebook_cpc_sales_rat_D</a>
+        </div>
+        <div id="utm_insta" class="utm_box">
+          <a href="https://cherrylime69.github.io/?utm_source=instagram&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=A"
+            class="button" target="_blank">insta_cpc_promotion_cat_A</a>
+          <a href="https://cherrylime69.github.io/?utm_source=instagram&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=B"
+            class="button" target="_blank">insta_cpc_sales_rat_B</a>
+          <a href="https://cherrylime69.github.io/?utm_source=instagram&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=C"
+            class="button" target="_blank">insta_cpc_promotion_cat_C</a>
+          <a href="https://cherrylime69.github.io/?utm_source=instagram&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=D"
+            class="button" target="_blank">insta_cpc_sales_rat_D</a>
+        </div>
+        <div id="utm_google" class="utm_box">
+          <a href="https://cherrylime69.github.io/?utm_source=google&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=A"
+            class="button" target="_blank">google_cpc_promotion_cat_A</a>
+          <a href="https://cherrylime69.github.io/?utm_source=google&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=B"
+            class="button" target="_blank">google_cpc_sales_rat_B</a>
+          <a href="https://cherrylime69.github.io/?utm_source=google&utm_medium=cpc&utm_campaign=promotion&utm_term=cat&utm_content=C"
+            class="button" target="_blank">google_cpc_promotion_cat_C</a>
+          <a href="https://cherrylime69.github.io/?utm_source=google&utm_medium=cpc&utm_campaign=sales&utm_term=rat&utm_content=D"
+            class="button" target="_blank">google_cpc_sales_rat_D</a>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+
+    </div>
+  </div>
+</body>
+
+</html>

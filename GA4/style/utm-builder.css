@@ -1,0 +1,204 @@
+html {
+  background-color: #ffe380;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  color: black;
+  align-items: center;
+  border: none;
+  height: 10vh;
+
+}
+
+#title {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: black;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#cookie_remover_btn {
+  display: flex;
+  position: fixed;
+  right: 2vw;
+  bottom: 2vh;
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  color: tomato;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 5px 4px #493f1e;
+}
+
+#cookie_remover_btn:hover {
+  background-color: rgb(236, 236, 125);
+  color: rgb(245, 127, 107);
+}
+
+#utm_creator {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+#utm_creator form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+#utm_creator form #utm_create_btn {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+#created_utm_btn_box {
+  display: flex;
+  flex-grow: 1;
+}
+
+#created_utm_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 0, 0.356);
+  border-radius: 20px;
+  flex-grow: 1;
+  border: none;
+  font-size: 1.5em;
+  color: rgb(150, 150, 245);
+  cursor: pointer;
+  box-shadow: 4px 5px 4px #493f1e;
+}
+
+#created_utm_btn:hover {
+  background-color: rgb(184, 184, 11);
+  color: black;
+}
+
+#fixed_utm_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px;
+}
+
+.utm_box {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+#utm_naver .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgb(66, 60, 60);
+  background: linear-gradient(rgb(48, 243, 48), rgb(241, 222, 113));
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 5px 4px #493f1e;
+  flex-grow: 1;
+}
+
+#utm_naver .button:hover {
+  background-color: rgb(33, 155, 46);
+  color: rgb(255, 255, 255);
+}
+
+#utm_facebook .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(30, 104, 16);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px #493f1e;
+  flex-grow: 1;
+  background: linear-gradient(rgb(84, 84, 187), rgb(224, 222, 211));
+
+}
+
+#utm_facebook .button:hover {
+  background-color: rgb(35, 35, 230);
+  color: rgb(255, 255, 255);
+}
+
+#utm_insta .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(72, 30, 224);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px #493f1e;
+  flex-grow: 1;
+  background: linear-gradient(rgb(241, 97, 181), rgb(247, 226, 111));
+
+}
+
+#utm_insta .button:hover {
+  background-color: rgb(156, 59, 116);
+  color: rgb(255, 255, 255);
+}
+
+#utm_google .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(56, 55, 54);
+  background-color: rgb(139, 139, 146);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px #493f1e;
+  flex-grow: 1;
+  background: linear-gradient(rgb(139, 139, 146), rgb(236, 173, 77));
+}
+
+#utm_google .button:hover {
+  background-color: rgb(47, 47, 49);
+  color: rgb(214, 202, 190);
+}
