@@ -1,7 +1,14 @@
+my github blog used mmistakes.
+
+---
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
+
+
+<details>
+   <summary>Introduction</summary>
 
 Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
@@ -67,6 +74,11 @@ Additional sample posts are available under [posts archive][year-archive] on the
 [categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
 [tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
 [year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+
+</details>
+
+<details>
+  <summary>Dev</summary>
 
 ## Installation
 
@@ -175,7 +187,11 @@ To set up your environment to develop this theme, run `bundle install`.
 
 To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
 
-## Credits
+</details>
+
+<details>
+
+   <summary>Credits</summary>
 
 ### Creator
 
@@ -287,3 +303,5 @@ Lunr is distributed under the terms of the [MIT License](http://opensource.org/l
 Minimal Mistakes incorporates [clipboard.js](https://clipboardjs.com/),
 Copyright (c) 2021 Zeno Rocha.
 Clipboard.js is distributed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+</details>
