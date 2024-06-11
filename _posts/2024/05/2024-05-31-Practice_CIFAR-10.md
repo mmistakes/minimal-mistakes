@@ -4,7 +4,8 @@ title: "Practice CIFAR-10"
 ---
 
 
-## CIFAR-10 데이터셋 불러오기
+
+## CIFAR-10 데이터셋 불러오기 
 
 
 ```python
