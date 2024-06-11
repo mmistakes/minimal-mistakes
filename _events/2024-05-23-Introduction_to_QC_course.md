@@ -1,5 +1,5 @@
 ---
-title: '3-4 June 2024: Introduction to Quantum Computing and FiQCI'
+title: '3-4 June: Introduction to Quantum Computing and FiQCI'
 date: 2024-05-23
 published: true
 link: https://csc.fi/en/training-calendar/introduction-to-quantum-computing-and-fiqci/
