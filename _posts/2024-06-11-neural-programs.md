@@ -9,7 +9,7 @@ header:
   teaser: assets/images/neural_programs/scene_recognition.png
   actions:
     - label: "Paper"
-      url:
+      url: https://arxiv.org/abs/2406.06246
     - label: "Code"
       url: https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0
 authors:
@@ -1237,14 +1237,14 @@ Unlike existing neurosymbolic frameworks which require differentiable logic prog
 We demonstrate that ISED achieves similar, and often better, accuracy compared to the baselines.
 ISED also learns in a more data- and sample-efficient manner compared to the baselines.
 
-For more details about our method and experiments, see our [paper](https://arxiv.org) and [code](https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0).
+For more details about our method and experiments, see our [paper](https://arxiv.org/abs/2406.06246) and [code](https://github.com/alaiasolkobreslin/ISED/tree/v1.0.0).
 
 ### Citation
 ```
 @article{solkobreslin2024neuralprograms,
   title={Data-Efficient Learning with Neural Programs},
   author={Solko-Breslin, Alaia and Choi, Seewon and Li, Ziyang and Velingker, Neelay and Alur, Rajeev and Naik, Mayur and Wong, Eric},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2406.06246},
   year={2024}
 }
 ```
