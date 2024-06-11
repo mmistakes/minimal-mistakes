@@ -12,6 +12,6 @@ excerpt: >
   <small></small>
 
 intro: 
-  - excerpt: 'Upcoming and past events'
+  - excerpt: 'Upcoming and past events with connection to FiQCI'
    
 ---
