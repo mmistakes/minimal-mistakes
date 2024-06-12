@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "Tech Nots"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Hojin"
+description              : "Uncover insights in data by using modeling, advanced statistics, and analystics"
 url                      : "https://hojinpk.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -112,11 +112,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Hojin Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  location         : "WA U.S."
+  email            : hojinpk@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
