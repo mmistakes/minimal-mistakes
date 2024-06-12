@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "4 - Web MVC Framework Basic"
-categories: "PZM기반 실무중심 백엔드 부트캠프(프리트레이닝)"
+categories: PZM기반_실무중심_백엔드_부트캠프(프리트레이닝)
 tags: [mybatis, mvc]
 ---
 
