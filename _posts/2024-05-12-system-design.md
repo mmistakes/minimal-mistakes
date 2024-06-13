@@ -7,7 +7,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "counts"
-published: false
+published: true
 
 ---
 본격적으로 파이널 프로젝트를 시작하기 전에 대규모 시스템 설계에 대해 공부해보려고 한다. 멘토님이 추천해주신 [가상 면접 사례로 배우는 대규모 시스템 설계 기초] 의 1장 내용인 "사용자 수에 따른 규모 확장성" 을 정리했다. 
@@ -459,12 +459,12 @@ CDN은 정적 콘텐츠를 전송하는 데 쓰이는, 지리적으로분산된 
 
 ### 메시지 큐, 로그, 매트릭, 자동화 등을 반영하여 수정한 설계안 
 
-
-<!-- <div style="display: flex; justify-content: center;">
-     <img src="{{site.url}}\images\2024-05-12-system-design\msg_log_metric.png" alt="Alt text" style="width: 60%; height: 100%; margin: 10px;">
+<div style="display: flex; justify-content: center;">
+     <img src="{{site.url}}\images\2024-05-12-system-design\msg_log_metric_architecture.png" alt="Alt text" style="width: 60%; height: 100%; margin: 10px;">
 </div>
 
-<p style="text-align:center;"><b><span style="font-size:14px;">메시지 큐, 로그, 매트릭, 자동화 등을 반영하여 수정한 설계안 </span></b></p> -->
+<p style="text-align:center;"><b><span style="font-size:14px;">메시지 큐, 로그, 매트릭, 자동화 등을 반영하여 수정한 설계안 </span></b></p> 
+![alt text](image-1.png)
 
 (1) 메세지 큐는 각 컴포넌트가 보다 느슨한 결합(loosely coupled)될 수 있도록 하고, 결함에 대한 내성을 높인다. 
 
@@ -481,13 +481,48 @@ CDN은 정적 콘텐츠를 전송하는 데 쓰이는, 지리적으로분산된 
 - 비용이 많이 든다 
 
 ### 수평적 확장
-데이터베이스의 수평적 확장은 샤딩(sharding)이라고도 부르는데, 더 많은 서버를 추가함으로써 성능을 향상시킬 수 있도록 한다. 
+데이터베이스의 수평적 확장은 **샤딩(sharding)**이라고도 부르는데, 더 많은 서버를 추가함으로써 성능을 향상시킬 수 있도록 한다. 
 
-샤딩은 대듀모 데이터베이스를 샤드(shard)라고 부르는 작은 단위로 분할하는 기술을 일컫는다. 모든 샤드는 같은 스키마를 쓰지만 샤드에 보관되는 데이터는 중복이 없다. 
+샤딩은 대듀모 데이터베이스를 **샤드(shard)**라고 부르는 작은 단위로 분할하는 기술을 일컫는다. 모든 샤드는 같은 스키마를 쓰지만 샤드에 보관되는 데이터는 중복이 없다. 
 
-샤드로 분할된 
+<div style="display: flex; justify-content: center;">
+     <img src="{{site.url}}\images\2024-05-12-system-design\horizontal_expansion.png" alt="Alt text" style="width: 60%; height: 100%; ">
+     
+</div>
 
 
+다음은 샤드로 분할된 데이터베이스의 예이다. 사용자 데이터를 어느 샤드에 넣을지는 사용자 ID에 따라 정한다. 이 사례는 user_id % 4 를 해시함수로 사용하여 데이터가 보관되는 샤드를 정한다.  
 
 
+<div style="display: flex; justify-content: center; align-items: center; margin: 10px 0;">
+   
+     <img src="{{site.url}}\images\2024-05-12-system-design\shard.png" alt="Alt text" style="width: 60%; height: 100%; margin: 10px;">     
+     <img src="{{site.url}}\images\2024-05-12-system-design\shard_node.png" alt="Alt text" style="width: 70%; height: 100%; margin: 10px;">
 
+</div>
+
+<p style="text-align:center;"><b><span style="font-size:14px;">샤드로 분할된 데이터베이스 & 각 샤드 노드에 보관된 사용자 데이터  </span></b></p> 
+
+샤딩 전략을 구현할 때 고려해야 할 가장 중요한 것은 샤딩 키(sharding key)를 어떻게 정하느냐 하는 것이다. 샤딩 키는 파티션 키(partition key)라고도 부르는데. 데이터가 어떻게 분산될지 정하는 하나 이상의 칼럼으로 구성된다. 
+
+위의 예시의 경우네는 샤딩 키는 user_id 이다. 샤딩키를 정할 때는 데이터를 고르게 분할 할 수 있도록 하는게 중요하다. 
+
+<div style="display: flex; justify-content: center;">
+     <img src="{{site.url}}\images\2024-05-12-system-design\system_architecture_sharding.png" alt="Alt text" style="width: 80%; height: 100%; margin: 10px ">
+     
+</div>
+
+<p style="text-align:center;"><b><span style="font-size:14px;">데이터베이스 샤딩을 적용한 아키텍쳐</span></b></p> 
+
+
+## 백만 사용자, 그리고 그 이상
+시스템의 규모를 확장하는 것은 지속적이고 반복적인 과정이다. 시스템 규모 확장을 위해 살펴본 기법들은 다시 한번 정리해보면 다음과 같다.
+
+- 웹 계층은 무상태 계층으로
+- 모든 계층에 다중화 도입
+- 가능한 한 많은 데이터를 캐시할 것
+- 여러 데이터 센커를 지원할 것
+- 정적 콘텐츠는 CDN을 통해 서비스할 것
+- 데이터 계층은 샤딩을 통해 그 규모를 확장할 것
+- 각 계층은 독립적 서비스로 분할할 것 
+- 시스템을 지속적으로 모니터링하고, 자동화 도구를 활용할 것 
