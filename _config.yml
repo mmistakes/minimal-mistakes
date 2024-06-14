@@ -226,7 +226,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Seoul
+timezone: ''
 
 
 # Pagination with jekyll-paginate
