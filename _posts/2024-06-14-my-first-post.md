@@ -1,5 +1,5 @@
 ---
-title: "Edge Case: Post with multiline excerpt"
+title: "My first post"
 ---
 
 This is my first post!!
