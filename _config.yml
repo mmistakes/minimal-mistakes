@@ -226,7 +226,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: ''
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
