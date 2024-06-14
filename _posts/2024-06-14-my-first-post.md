@@ -1,5 +1,6 @@
 ---
 title: "My first post"
+categories: coding
 ---
 
 This is my first post!!
