@@ -25,7 +25,7 @@ url                      : "https://quantdatascience.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo.PNG"
+logo                     : "/assets/images/money.PNG"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : True # true, false (default)
 words_per_minute         : 200
@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "QuantDatascience"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/quant.png"
   bio              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍, AI 등등 교육"
   location         : "South Korea"
   email            :
