@@ -1,6 +1,7 @@
 ---
 title: "My first post"
 categories: coding
+tag: python
 ---
 
 This is my first post!!
