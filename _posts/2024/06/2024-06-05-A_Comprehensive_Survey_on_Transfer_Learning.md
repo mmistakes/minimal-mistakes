@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Review - A Comprehensive Survey on Transfer Learning"
+categories: AI
+tag: Paper Review
 ---
 
 Transfer Learning(전이 학습)에 대한 서베이 논문 리뷰 발표자료

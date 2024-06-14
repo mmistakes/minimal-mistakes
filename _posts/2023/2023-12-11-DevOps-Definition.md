@@ -1,3 +1,10 @@
+---
+layout: single
+title: "데브옵스 정의"
+categories: DevOps
+tag: [DevOps]
+---
+
 #### 데브옵스란..
 
 Red Hat : 신속한 고품질 서비스 제공을 통해 비즈니스 가치를 높이고 대응 능력을 개선할 목적으로 기업 문화, 자동화, 플랫폼 설계에 접근하는 방식

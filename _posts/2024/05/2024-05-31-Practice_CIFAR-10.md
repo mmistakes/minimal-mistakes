@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Practice CIFAR-10"
+categories: AI
+tag: Paper Review
 ---
 
 
