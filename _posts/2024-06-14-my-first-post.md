@@ -1,8 +1,10 @@
 ---
+layout: single
 title: "My first post"
 categories: coding
 tag: python
 toc: true
+author_profile: false
 ---
 
 # This is my first post!!
