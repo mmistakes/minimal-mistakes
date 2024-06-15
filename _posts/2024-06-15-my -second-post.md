@@ -17,3 +17,9 @@ sidebar:
 # 다른 언어도 공부하기
 
 머리아프다
+
+# Hasta que se seque el Maleón
+
+Necesito descansar un poco 
+Porque aprender algo sin descanso puede causar algo malo
+voy a ver Youtube un poco
