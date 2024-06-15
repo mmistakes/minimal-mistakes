@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-06-10T02:57:53+08:00'
+last_modified_at: '2024-06-15T17:52:15+08:00'
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 ### Enhancements
 
 - Add Czech localization. [#4866](https://github.com/mmistakes/minimal-mistakes/pull/4866)
+- Allow overriding HTML `lang` attribute on a per-page basis. [#4862](https://github.com/mmistakes/minimal-mistakes/pull/4862)
 
 ### Bug Fixes
 

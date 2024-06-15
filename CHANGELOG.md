@@ -5,6 +5,7 @@
 ### Enhancements
 
 - Add Czech localization. [#4866](https://github.com/mmistakes/minimal-mistakes/pull/4866)
+- Allow overriding HTML `lang` attribute on a per-page basis. [#4862](https://github.com/mmistakes/minimal-mistakes/pull/4862)
 
 ### Bug Fixes
 
