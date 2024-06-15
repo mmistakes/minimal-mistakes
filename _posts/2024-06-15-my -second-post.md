@@ -23,6 +23,8 @@ sidebar:
 
 [네이버로 바로가기](https://naver.com){: .btn .btn--success}
 
+{% include video id="dYIT_jeUBKg" provider="youtube" %}
+
 # 깃허브 블로그 계속 공부 중!!
 
 근데 에러가 너무 자주 발생한다
