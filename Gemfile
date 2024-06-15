@@ -21,3 +21,5 @@ gem "sassc", "~> 2.4.0"
 gem "sass", "~> 3.7"
 
 gem "jekyll-toc", "~> 0.19.0"
+
+gem "jekyll-redirect-from", "~> 0.16.0"
