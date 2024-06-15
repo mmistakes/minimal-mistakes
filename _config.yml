@@ -20,7 +20,7 @@ title                    : "퀀트, 데이터사이언스"
 title_separator          : "|"
 subtitle                 : "Quant, Statistics, Mathematics, Programming, AI..."
 name                     : "QuantDatascience"
-description              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍, AI 등등 교육"
+description              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍, AI 등등"
 url                      : "https://quantdatascience.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "QuantDatascience"
   avatar           : "/images/quant.png"
-  bio              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍, AI 등등 교육"
+  bio              : "퀀트, 통계학, 미적분학, 선형대수학, 프로그래밍, AI 등등"
   location         : "South Korea"
   email            :
   links:
@@ -130,7 +130,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+    #  url:
 # Site Footer
 footer:
   links:
@@ -195,6 +197,9 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
+  toc:
+    ordered_list: true    # Set to true if you want a numbered list for TOC
+    max_levels: 6           # Adjust the maximum heading levels to include in TOC
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
@@ -244,6 +249,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekylll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -252,6 +258,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekylll-redirect-from
 
 
 # Archives
@@ -306,7 +313,11 @@ defaults:
       show_date: true
       sidebar:
         nav: "docs"
-
-
+      search: true
+      toc: true
+      toc_sticky: true
+      toc_label: "목차"
+      toc_icon: "fa-solid fa-list"
+      search: true
 
 date_format: "%Y-%m-%d"

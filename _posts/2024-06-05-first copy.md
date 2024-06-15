@@ -4,12 +4,13 @@ title:  "This is sample2"
 categories: "미적분학"
 tags: ["미적분학", "Calculus"]
 typora-root-url: ../
-redirect_from:
-    - /older/first
 ---
 
 **[공지사항]**[홈페이지 링크를 안내드립니다.](https://quantdatascience.github.io)
 {: .notice--danger}
+
+
+
 
 <div class="notice--success">
     <h1>공지사항2</h1>
@@ -21,8 +22,6 @@ redirect_from:
 </div>
 
 
-
-샘플 목차입니다.
 
 
 
@@ -37,20 +36,20 @@ redirect_from:
 ```python
 
 import random
-​
+
 secret_number = random.randint(1, 100)
-​
+
 while True:
-    guess = int(input("Guess the number between 1 and 100: "))
-    
-    if guess == secret_number:
-        print("Congratulations! You guessed the number!")
-        break
-    elif guess < secret_number:
-        print("Too low! Try again.")
-    else:
-        print("Too high! Try again.")
-​
+    guess = int(input("Guess the number between 1 and 100: "))
+    
+    if guess == secret_number:
+        print("Congratulations! You guessed the number!")
+        break
+    elif guess < secret_number:
+        print("Too low! Try again.")
+    else:
+        print("Too high! Try again.")
+
 ```
 
 샘플입니다.
@@ -65,7 +64,6 @@ while True:
 
 ### 샘플 목차2
 
-
 샘플 목차입니다.
 
 ### 샘플 목차3
@@ -74,6 +72,6 @@ while True:
 
 
 
-```샘플2
+# 샘플2
 
 안녕하세요
