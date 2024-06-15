@@ -5,6 +5,8 @@ categories: coding
 tag: github blog
 toc: true
 author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 # 깃허브 블로그 계속 공부 중!!

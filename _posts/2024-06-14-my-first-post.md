@@ -5,6 +5,8 @@ categories: coding
 tag: python
 toc: true
 author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 # This is my first post!!
