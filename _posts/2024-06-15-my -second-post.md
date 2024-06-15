@@ -9,6 +9,18 @@ sidebar:
     nav: "docs"
 ---
 
+**[공지사항]** 공부 열심히 하세요~~
+{: .notice--success}
+
+<div class="notice--info">
+<h4>공지사항 테스트</h4>
+<ul>
+    <li>공지사항 1</li>
+    <li>공지사항 2</li>
+    <li>공지사항 3</li>
+</ul>
+</div>
+
 # 깃허브 블로그 계속 공부 중!!
 
 근데 에러가 너무 자주 발생한다
