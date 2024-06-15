@@ -319,5 +319,6 @@ defaults:
       toc_label: "목차"
       toc_icon: "fa-solid fa-list"
       search: true
+      use_math: true
 
 date_format: "%Y-%m-%d"
