@@ -15,7 +15,8 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $max-width;
+    // max-width: $max-width;
+    max-width: min(calc(100% - $right-sidebar-width-narrow), $max-customer-width);
   }
 }
 
@@ -39,11 +40,13 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
+    // width: 100%;
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
+    // width: 100%;
     padding-right: $right-sidebar-width;
   }
 
