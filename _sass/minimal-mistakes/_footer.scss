@@ -26,6 +26,7 @@
 
     @include breakpoint($x-large) {
       max-width: $x-large;
+      // max-width: min(calc(100% - 200px), 1680px);
     }
   }
 

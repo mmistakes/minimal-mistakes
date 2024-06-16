@@ -48,7 +48,8 @@
     animation-delay: 0.15s;
 
     @include breakpoint($x-large) {
-      max-width: $max-width;
+      // max-width: $max-width; 너비수정
+      max-width: min(calc(100% - 200px), 1680px);
     }
 
   }

@@ -19,7 +19,8 @@
   animation-delay: 0.3s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    // max-width: $x-large; 너비수정 네비게이션
+    max-width: min(calc(100% - 200px), 1680px);
   }
 
   ol {
