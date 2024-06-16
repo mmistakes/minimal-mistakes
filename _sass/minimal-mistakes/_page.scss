@@ -16,7 +16,7 @@
 
   @include breakpoint($x-large) {
     // max-width: $max-width;
-    max-width: min( #{ calc(100% - #{$right-sidebar-width-narrow}) } , $max-customer-width);
+    max-width: min(calc(100% - #{$right-sidebar-width-narrow}), $max-width);
     // max-width: min(calc(100% - 200px), 1680px);
     // max-width: calc(100% - #{$right-sidebar-width-narrow}) ;
   }
