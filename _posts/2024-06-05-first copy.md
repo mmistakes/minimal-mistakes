@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "This is sample2"
-categories: "미적분학"
-tags: ["미적분학", "Calculus"]
+#categories: "미적분학"
+#tags: ["미적분학", "Calculus"]
 typora-root-url: ../
 ---
 

@@ -29,6 +29,7 @@ layout: default
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
+      {% include top-banner.html %}
         <header>
           {% if page.title -%}
           <h1 id="page-title" class="page__title" itemprop="headline">
