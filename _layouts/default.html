@@ -15,6 +15,7 @@
         pointer-events: none;      /* Disables mouse events like clicking and dragging */
       }
     </style>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/disable-selection.css">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -40,5 +41,6 @@
     </div>
 
     {% include scripts.html %}
+
   </body>
 </html>
