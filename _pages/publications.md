@@ -12,9 +12,14 @@ permalink: /publications/
 ***
 ### 2024
 
+* <a href="" style="text-decoration:none;color:navy">Merge to Learn: Efficiently Adding Skills to Language Models with Model Merging</a>              
+<span style="font-size:0.75em;">**Jacob Morrison**, Noah A. Smith, Hannaneh Hajishirzi, Pang Wei Koh, Jesse Dodge, Pradeep Dasigi</span><br>
+<span style="font-size:0.75em;">*under review* \[[pdf]()\]</span>
+
 * <a href="https://arxiv.org/abs/2404.09479" style="text-decoration:none;color:navy">A Legal Risk Taxonomy for Generative Artificial Intelligence</a>              
 <span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
 <span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://arxiv.org/pdf/2404.09479)\]</span>
+
 * <a href="https://huggingface.co/spaces/allenai/reward-bench" style="text-decoration:none;color:navy">RewardBench: A Benchmark for Evaluating Reward Models</a>              
 <span style="font-size:0.75em;">Nathan Lambert, Valentina Piyatkin, **Jacob Morrison**, LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Tom Zick, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi</span><br>
 <span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://arxiv.org/pdf/2403.13787)\] \[[code](https://github.com/allenai/reward-bench/)\] \[[leaderboard](https://huggingface.co/spaces/allenai/reward-bench)\]</span>
