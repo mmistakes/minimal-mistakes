@@ -151,7 +151,8 @@ $medium-wide: 900px !default;
 $large: 1024px !default;
 $x-large: 1280px !default;
 // $x-large: 100% - $right-sidebar-width-narrow !default;
-$max-width: $x-large !default;
+$max-width: 1680px !default;
+// $max-width: $x-large !default;
 $max-customer-width: 1680px !default;
 
 /*
