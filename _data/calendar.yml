@@ -35,6 +35,23 @@
   },
   {
     "image_path": null,
+    "alt": "Ausflug A5 - Spielplatz",
+    "title": "Ausflug A5 - Spielplatz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MG9wa29nNnNuZWJ0NmFlcmdrMHIwcDNlN28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-06-21T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-06-21T13:00:00+02:00"
+    },
+    "created": "2024-06-17T09:39:17.000Z",
+    "updated": "2024-06-17T09:39:17.284Z"
+  },
+  {
+    "image_path": null,
     "alt": "GEV",
     "title": "GEV",
     "excerpt": null,
@@ -69,36 +86,19 @@
   },
   {
     "image_path": null,
-    "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
-    "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
+    "alt": "Ausflug A6 - Legoland",
+    "title": "Ausflug A6 - Legoland",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHFqb282MzI5MmtsdWRncjlnZmxybmRjc2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NHVxMmhjNWI0aHNjc3VlcGhuajEzZGFycDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-07-02T08:00:00+02:00"
+      "date_time": "2024-06-28T09:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-07-02T12:00:00+02:00"
+      "date_time": "2024-06-28T14:00:00+02:00"
     },
-    "created": "2024-02-21T09:45:46.000Z",
-    "updated": "2024-02-21T09:45:46.470Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend der neuen Schulkinder (0. Elternabend)",
-    "title": "Elternabend der neuen Schulkinder (0. Elternabend)",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bmVpMDM0MDZtODlra3FzazYwZWtidXRlZjAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-04T16:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-04T18:30:00+02:00"
-    },
-    "created": "2024-06-13T04:44:34.000Z",
-    "updated": "2024-06-13T04:44:34.689Z"
+    "created": "2024-06-17T09:40:04.000Z",
+    "updated": "2024-06-17T09:40:04.561Z"
   }
 ]
