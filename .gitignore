@@ -30,4 +30,8 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+
 _posts/.ztr-directory
+
+.obsidian/*
