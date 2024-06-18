@@ -3,6 +3,7 @@ layout: single
 title: "Practice CIFAR-10"
 categories: AI
 tag: Paper Review
+toc: true
 ---
 
 
@@ -71,7 +72,7 @@ for i in range(num_rows*num_cols):
 ![png](/images/2024/05/2024-05-31-02-output_5_0.png)
     
 
-# 데이터셋 전처리
+## 데이터셋 전처리
 
 
 ```python
@@ -93,7 +94,7 @@ print('categorical one-hot encoded labels: ', y_train[0])
     After conversion to categorical one-hot encoded labels:  [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
 
 
-# 데이터 세트 및 학습 구성 매개 변수
+## 데이터 세트 및 학습 구성 매개 변수
 
 
 ```python
@@ -111,7 +112,7 @@ class TrainingConfig:
     LEARNING_RATE: float = 0.001
 ```
 
-# Keras의 CNN 모델 구현
+## Keras의 CNN 모델 구현
 
 
 ```python
@@ -281,7 +282,7 @@ history = model.fit(X_train,
     137/137 [==============================] - 3s 23ms/step - loss: 0.0604 - accuracy: 0.9815 - val_loss: 2.1921 - val_accuracy: 0.7115
 
 
-# 훈련 결과 플로팅
+## 훈련 결과 플로팅
 
 
 ```python
@@ -344,7 +345,7 @@ plot_results([ train_acc, valid_acc ],
     
 
 
-# 모델에 드롭아웃 추가
+## 모델에 드롭아웃 추가
 
 
 ```python
@@ -523,7 +524,7 @@ history = model_dropout.fit(X_train,
     137/137 [==============================] - 4s 27ms/step - loss: 0.4810 - accuracy: 0.8299 - val_loss: 0.6545 - val_accuracy: 0.7846
 
 
-# 드롭아웃이 적용된 훈련 결과 플로팅
+## 드롭아웃이 적용된 훈련 결과 플로팅
 
 
 ```python
@@ -581,7 +582,7 @@ print(f"Test accuracy: {test_acc*100:.3f}")
     Test accuracy: 78.220
 
 
-# 샘플 테스트 이미지 예측
+## 샘플 테스트 이미지 예측
 
 
 ```python
