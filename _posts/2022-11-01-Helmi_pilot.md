@@ -11,7 +11,7 @@ layout: single
 #     image_path: /assets/images/about-icon.jpg
 #     title: Before and after comparison
 tags:
-  - helmi
+  - Helmi
 ---
 
 <!-- # Open Call for pilot projects for access to the Helmi quantum computer -->

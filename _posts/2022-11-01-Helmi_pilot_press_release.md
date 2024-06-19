@@ -11,7 +11,7 @@ layout: single
 #     image_path: /assets/images/about-icon.jpg
 #     title: Before and after comparison
 tags:
-  - helmi
+  - Helmi
 ---
 
 <!-- # Finland opens quantum computer for research purposes – the fusion of quantum computing and supercomputing enables completely new science -->
