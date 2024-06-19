@@ -7,7 +7,7 @@ header:
 published: true
 layout: single
 tags:
-  - helmi
+  - Helmi
   - maintenance
 ---
 
