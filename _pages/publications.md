@@ -17,7 +17,7 @@ permalink: /publications/
 <span style="font-size:0.75em;">*under review* \[[pdf]()\]</span>
 
 * <a href="https://arxiv.org/abs/2406.07835" style="text-decoration:none;color:navy">SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature</a>              
-<span style="font-size:0.75em;">David Wadden*, Kejian Shi*, **Jacob Morrison**, Aakanksha Naik, Shruti Singh, Nitzan Barzilay, Kyle Lo, Tom Hope, Luca Soldaini, Shannon Zejiang Shen, Doug Downey, Hannaneh Hajishirzi, Arman Cohan</span><br>
+<span style="font-size:0.75em;">David Wadden\*, Kejian Shi\*, **Jacob Morrison**, Aakanksha Naik, Shruti Singh, Nitzan Barzilay, Kyle Lo, Tom Hope, Luca Soldaini, Shannon Zejiang Shen, Doug Downey, Hannaneh Hajishirzi, Arman Cohan</span><br>
 <span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://arxiv.org/pdf/2406.07835)\]</span>
 
 * <a href="https://arxiv.org/abs/2404.09479" style="text-decoration:none;color:navy">A Legal Risk Taxonomy for Generative Artificial Intelligence</a>              
