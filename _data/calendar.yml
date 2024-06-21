@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4. Schulkonferenz",
-    "title": "4. Schulkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ajJ2aGRwc2Y3NDFmYWtscmt0NjA3cWZ0ZnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-06-20T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-06-20T16:30:00+02:00"
-    },
-    "created": "2024-05-29T16:51:25.000Z",
-    "updated": "2024-05-29T16:51:25.252Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A5 - Spielplatz",
     "title": "Ausflug A5 - Spielplatz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-02-21T09:45:46.000Z",
     "updated": "2024-02-21T09:45:46.470Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend der neuen Schulkinder (0. Elternabend)",
+    "title": "Elternabend der neuen Schulkinder (0. Elternabend)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bmVpMDM0MDZtODlra3FzazYwZWtidXRlZjAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-04T16:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-04T18:30:00+02:00"
+    },
+    "created": "2024-06-13T04:44:34.000Z",
+    "updated": "2024-06-13T04:44:34.689Z"
   }
 ]
