@@ -23,7 +23,7 @@ name                     : "강문성"
 description              : "개발자의 일상을 기록합니다."
 url                      : "https://kamser0415.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "kamser0415/kamser0415.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "kamser0415/TIL" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/favi.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
