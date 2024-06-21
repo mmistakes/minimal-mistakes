@@ -2,7 +2,7 @@
 layout: single
 title: Typora 단축키 한국어 버전
 categories: Editor
-tag: [Typora,shortcut key]
+tag: [Typora]
 toc: true
 toc_sticky: true
 author_profile: false
