@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  direction: $direction;
   margin: 0;
   padding: 0;
   color: $text-color;
