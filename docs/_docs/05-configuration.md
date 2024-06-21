@@ -215,6 +215,12 @@ By default your site title is used in the masthead. You can override this text b
 masthead_title: "My Custom Title"
 ```
 
+### Site direction
+
+`site.direction` is used to declare the direction of the page. This option can be used for RTL languages (like Arabic, Persian, etc)
+
+_Example:_ `direction: "rtl"` sets the `direction` of the body of page to right to left. By defaultm this option is `locale: "ltr"`.
+
 ### Breadcrumb navigation (beta)
 
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
