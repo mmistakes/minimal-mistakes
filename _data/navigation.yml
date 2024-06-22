@@ -2,8 +2,8 @@
 main:
   title: "1인 크리에이터 바로가기"
     url: "https://syskido.tistory.com/"
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  title: "1인 크리에이터"
+    url: "https://syskido.tistory.com"
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
