@@ -1,0 +1,171 @@
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  skip_links                 : "Skip links"
+  skip_primary_nav           : "Skip to primary navigation"
+  skip_content               : "Skip to content"
+  skip_footer                : "Skip to footer"
+  page                       : "Page"
+  pagination_previous        : "Previous"
+  pagination_next            : "Next"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Toggle menu"
+  search_label               : "Toggle search"
+  toc_label                  : "On this page"
+  ext_link_label             : "Direct link"
+  less_than                  : "less than"
+  minute_read                : "minute read"
+  share_on_label             : "Share on"
+  meta_label                 :
+  tags_label                 : "Tags:"
+  categories_label           : "Categories:"
+  date_label                 : "Updated:"
+  comments_label             : "Leave a comment"
+  comments_title             : "Comments"
+  more_label                 : "Learn more"
+  related_label              : "You may also enjoy"
+  follow_label               : "Follow:"
+  feed_label                 : "Feed"
+  powered_by                 : "Powered by"
+  website_label              : "Website"
+  email_label                : "Email"
+  recent_posts               : "Recent posts"
+  undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
+  comment_form_info          : "Your email address will not be published. Required fields are marked"
+  comment_form_comment_label : "Comment"
+  comment_form_md_info       : "Markdown is supported."
+  comment_form_name_label    : "Name"
+  comment_form_email_label   : "Email address"
+  comment_form_website_label : "Website (optional)"
+  comment_btn_submit         : "Submit comment"
+  comment_btn_submitted      : "Submitted"
+  comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
+  comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
+  loading_label              : "Loading..."
+  search_label_text          : "Enter your search term..."
+  search_placeholder_text    : "Enter your search term..."
+  search_algolia_no_results  : "No results"
+  results_found              : "Result(s) found"
+  back_to_top                : "Back to top"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  skip_links                 : "Saltar enlaces"
+  skip_primary_nav           : "Saltar a navegación principal"
+  skip_content               : "Saltar a contenido"
+  skip_footer                : "Saltar a pie"
+  page                       : "Página"
+  pagination_previous        : "Anterior"
+  pagination_next            : "Siguiente"
+  breadcrumb_home_label      : "Inicio"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Alternar menú"
+  search_label               : "Alternar búsqueda"
+  toc_label                  : "En esta página"
+  ext_link_label             : "Enlace directo"
+  less_than                  : "menos de"
+  minute_read                : "minuto(s) de lectura"
+  share_on_label             : "Compartir en"
+  meta_label                 :
+  tags_label                 : "Etiquetas:"
+  categories_label           : "Categorías:"
+  date_label                 : "Actualizado:"
+  comments_label             : "Deja un comentario"
+  comments_title             : "Comentarios"
+  more_label                 : "Ver más"
+  related_label              : "Puede que también te interese"
+  follow_label               : "Seguir:"
+  feed_label                 : "Feed"
+  powered_by                 : "Funciona con"
+  website_label              : "Sitio web"
+  email_label                : "Correo electrónico"
+  recent_posts               : "Entradas recientes"
+  undefined_wpm              : "El parámetro words_per_minute (palabras por minuto) no está definido en _config.yml"
+  comment_form_info          : "Tu dirección de correo electrónico no se publicará. Los campos obligatorios están marcados"
+  comment_form_comment_label : "Comentario"
+  comment_form_md_info       : "Puedes utilizar Markdown"
+  comment_form_name_label    : "Nombre"
+  comment_form_email_label   : "Dirección de correo electrónico"
+  comment_form_website_label : "Sitio web (opcional)"
+  comment_btn_submit         : "Enviar comentario"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "¡Gracias por tu comentario! Se publicará una vez sea aprobado."
+  comment_error_msg          : "Ha ocurrido un error al enviar el comentario. Asegúrate de completar todos los campos obligatorios e inténtalo de nuevo."
+  loading_label              : "Cargando..."
+  search_label_text          : "Términos de búsqueda..."
+  search_placeholder_text    : "Términos de búsqueda..."
+  search_algolia_no_results  :
+  results_found              : "resultado(s) encontrado(s)"
+  back_to_top                : "Volver arriba"
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
+
+# French
+# ------
+fr: &DEFAULT_FR
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
+  page                       : "Page"
+  pagination_previous        : "Précédent"
+  pagination_next            : "Suivant"
+  breadcrumb_home_label      : "Accueil"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menu"
+  search_label               :
+  toc_label                  : "Sur cette page"
+  ext_link_label             : "Lien direct"
+  less_than                  : "moins de"
+  minute_read                : "minute(s) de lecture"
+  share_on_label             : "Partager sur"
+  meta_label                 :
+  tags_label                 : "Tags :"
+  categories_label           : "Catégories :"
+  date_label                 : "Mis à jour :"
+  comments_label             : "Laisser un commentaire"
+  comments_title             : "Commentaires"
+  more_label                 : "Lire plus"
+  related_label              : "Vous pourriez aimer aussi"
+  follow_label               : "Contact"
+  feed_label                 : "Flux"
+  powered_by                 : "Propulsé par"
+  website_label              : "Site"
+  email_label                : "Email"
+  recent_posts               : "Posts récents"
+  undefined_wpm              : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
+  comment_form_info          : "Votre adresse email ne sera pas visible. Les champs obligatoires sont marqués"
+  comment_form_comment_label : "Commentaire"
+  comment_form_md_info       : "Markdown est supporté."
+  comment_form_name_label    : "Nom"
+  comment_form_email_label   : "Adresse mail"
+  comment_form_website_label : "Site web (optionnel)"
+  comment_btn_submit         : "Envoyer"
+  comment_btn_submitted      : "Envoyé"
+  comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
+  comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
+  loading_label              : "Chargement..."
+  search_label_text          :
+  search_placeholder_text    : "Entrez votre recherche..."
+  search_algolia_no_results  :
+  results_found              : "Résultat(s) trouvé(s)"
+  back_to_top                : "Retour en haut"
+fr-FR:
+  <<: *DEFAULT_FR
+fr-BE:
+  <<: *DEFAULT_FR
+fr-CH:
+  <<: *DEFAULT_FR
