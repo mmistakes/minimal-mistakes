@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 title                    : "나령 윤기도 Program Room"
-title_separator          : "-"
+title_separator          : "개발 블로그 및 개인 블로그 합병병"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "syskido"
 description              : "개인적으로 학습을 하는 공간입니다."
@@ -73,7 +73,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "sfqlj_6RHifjHtRWGSOgn2Fusl4z-Zh5xlMRrX8fjWE"
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
