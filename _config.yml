@@ -19,9 +19,9 @@ locale                   : "ko-KR"
 title                    : "나령 윤기도 Program Room"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Teddy"
+name                     : "syskido"
 description              : "개인적으로 학습을 하는 공간입니다."
-url                      : "https://teddynote.github.io"
+url                      : "https://syskido.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : "/images/2023-09-06-first/yunkido.jpg"
+  bio              : "“Naryeong Yoongi-do” is a person who develops a new future."
   location         : "Somewhere"
   email            :
   links:
