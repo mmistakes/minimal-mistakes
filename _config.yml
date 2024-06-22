@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "예스노트"
 title_separator          : "|"
 subtitle                 : "인데 오답노트인.."
-name                     : "Yesnote"
+name                     : "YesNote"
 description              : "예스노트의 블로그입니다"
 url                      : "https://yesnote.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -112,7 +112,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yesnote"
+  name             : "YesNote"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "예스노트의 블로그입니다"
   location         : "SKKU, Republic of Korea"
