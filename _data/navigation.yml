@@ -1,7 +1,7 @@
-# main links
+     main links
 main:
-  - title: "1인 크리에이터 바로가기"
-    url: https://syskido.tistory.com/
+  title: "1인 크리에이터 바로가기"
+    url: "https://syskido.tistory.com/"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
