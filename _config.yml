@@ -12,6 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme             : "1인 크리에이터로 바로가기"
+                          
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -73,7 +74,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "sfqlj_6RHifjHtRWGSOgn2Fusl4z-Zh5xlMRrX8fjWE"
+google_site_verification : "<meta name="google-site-verification" content="nYrS3VfmX0apQqBzFGmBX7ytHBs6nFKI-4Zwsi9O56g" />"
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
