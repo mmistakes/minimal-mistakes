@@ -8,10 +8,10 @@
 # Theme Settings
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
-url                      : "https://syskido.tistory.com"
+# url                      : "https://syskido.tistory.com"
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "1인 크리에이터로 바로가기"
+# remote_theme             : "1인 크리에이터로 바로가기"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "나령 윤기도"
-  avatar           : "/images/yunkido.jpg"
+  avatar           : "../images/yunkido.jpg"
   bio              : "“Naryeong Yoongi-do” is a person who develops a new future."
   location         : "Somewhere"
   email            :
