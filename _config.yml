@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "예스노트인데 오답노트"
+title                    : "예스노트"
 title_separator          : "|"
-subtitle                 : "small positive action"
+subtitle                 : "인데 오답노트인.."
 name                     : "Yesnote"
 description              : "예스노트의 블로그입니다"
 url                      : "https://yesnote.github.io"
@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "Seongjin Ye"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "이것저것 올리는 사람"
+  bio              : "예스노트의 블로그입니다"
   location         : "SKKU, Republic of Korea"
   email            : "dolcei5935@gmail.com"
   links:
