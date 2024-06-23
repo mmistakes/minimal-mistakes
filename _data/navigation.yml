@@ -4,7 +4,7 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
-  -title: "Search"
+  - title: "Search"
     url: /search/
 
 docs:
