@@ -5,9 +5,9 @@ permalink: /now/
 title: The now page
 ---
 
-I'm resuming the tradition of keeping an updated now page, inspired by [D Sivers](https://nownownow.com/about). I used to have it in the past and used to create posts out of it for regular time snaphots, as opposed as deleting content. We'll see if I'll resume that tradition too.
+My now page, inspired by [D Sivers](https://nownownow.com/about) - what I'm up to now. 
 
-_Updated early June 2024._
+_Updated mid June 2024._
 
 ## German learning
 I'm well into working towards a B1 level, I've started taking conversation lessons and having great fun with them. I've started reading simple books without the frustrating need to check every other word, speaking flows quite nicely despite the many mistakes and rules I still need to solidify, and I'm learning a lot about culture/history too.
@@ -18,5 +18,5 @@ I'm being a bit slow with my book-reading this year and in fact I'm quite sure I
 Podcasts remain a favourite activity for a walk at the park, check out the list [I maintain]({{ site.url }}/things-i-like/). 
 For movies and shows, while waiting for a bunch of things to release new seasons (Cobra Kai, Stranger Things and I lost track of others) I'm watching Fallout on Prime - popular dystopic vibes (I should investigate the growth of popualrity of these) but really good and quite layered.
 
-## Seeing places 
-I'll be in Dublin soon and I'm planning to go to York later in the summer, plus spend possibly a few days around nice places in Scotland I can easily reach by train and that I've not visited yet. Oh, I'm in Italy right now while writing this.
+## Reading 
+This year I'm doing the [Footnotes/Tangents](https://footnotesandtangents.substack.com/) readalong of Tolstoy's War and Peace, going well so far and loving the read. It's likely a text I'd have felt intimidated (due to size) to read otherwise.
