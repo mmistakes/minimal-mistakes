@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "We0o0oNote"
+title                    : "We0o0o-Note"
 title_separator          : "|"
-subtitle                 :  "공부 기록과 잡다한 기록실 "
+subtitle                 :  "공부기록과 취미"
 name                     : "HeyonWoo"
 description              : "We0o0o의 블로그 입니다"
 url                      : "https://Weoooo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "../images/2024-03-25-second/we0o0o.png"
+logo                     : "../images/Weoooo-logo/weoooo-logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              :  true # false (default)
 words_per_minute         : 200
@@ -257,16 +257,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+  jekyll-archives:
+    enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
