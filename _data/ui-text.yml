@@ -1070,17 +1070,17 @@ da-DK:
 # Polish
 # ------
 pl: &DEFAULT_PL
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "Pomiń linki"
+  skip_primary_nav           : "Przejdź do nawigacji"
+  skip_content               : "Przejdź do treści"
+  skip_footer                : "Przejdź do stopki"
   page                       : "Strona"
   pagination_previous        : "Poprzednia"
   pagination_next            : "Następna"
   breadcrumb_home_label      : "Strona główna"
   breadcrumb_separator       : "/"
   menu_label                 : "Przełącz menu"
-  search_label               :
+  search_label               : "Przełącz wyszukiwanie"
   toc_label                  : "Spis treści"
   ext_link_label             : "Link bezpośredni"
   less_than                  : "mniej niż"
@@ -1101,7 +1101,7 @@ pl: &DEFAULT_PL
   email_label                : "Email"
   recent_posts               : "Najnowsze wpisy"
   undefined_wpm              : "Parametr words_per_minute nie został zdefiniowany w _config.yml."
-  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone"
+  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone."
   comment_form_comment_label : "Skomentuj"
   comment_form_md_info       : "Markdown jest wspierany"
   comment_form_name_label    : "Imię"
