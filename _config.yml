@@ -8,21 +8,20 @@
 # Theme Settings
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
-# url                      : "https://syskido.tistory.com"
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme             : "1인 크리에이터로 바로가기"
-                          
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
-title                    : "나령 윤기도 Program Room"
-title_separator          : "개발 블로그 및 개인 블로그 합병병"
+locale                   : "en-US"
+title                    : "Site Title"
+title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "syskido"
-description              : "개인적으로 학습을 하는 공간입니다."
-url                      : "https://syskido.github.io"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -82,7 +81,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "<meta name="google-site-verification" content="nYrS3VfmX0apQqBzFGmBX7ytHBs6nFKI-4Zwsi9O56g" />"
+google_site_verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
@@ -113,43 +112,43 @@ analytics:
 
 # Site Author
 author:
-  name             : "나령 윤기도"
-  avatar           : "images/2023-09-26-first/yunkido.jpg"
-  bio              : "“Naryeong Yoongi-do” is a person who develops a new future."
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "syskido82@gmail.com"
-    - label: "1인 크리에이터 나령 윤기도"
+      # url: "mailto:your.name@email.com"
+    - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://syskido.tistory.com"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://x.com/syskidoyun"
+      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/kidoyun"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/syskido"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/kidoyun"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:"https://x.com/syskidoyun"
+      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:"https://facebook.com/kidoyun"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:"https://github.com/syskido"
+      # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -158,7 +157,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:"https://instagram.com/kidoyun"
+      # url:
 
 
 # Reading Files
