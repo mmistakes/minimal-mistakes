@@ -107,6 +107,7 @@ $(function() {
     // Mouse has left, start the timer
     timer = setTimeout(function() {
       $hlinks.addClass('hidden');
+      $('.greedy-nav__toggle').removeClass('close');
     }, closingTime);
   }).on('mouseenter', function() {
     // Mouse is back, cancel the timer

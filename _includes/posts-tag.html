@@ -1,5 +1,4 @@
-{%- for post in site.tags[include.taxonomy] -%}
-  {%- unless post.hidden -%}
-    {% include archive-single.html %}
-  {%- endunless -%}
+{% assign posts = site.tags[include.taxonomy] | where_exp: "post", "post.hidden != true" %}
+{%- for post in posts -%}
+  {% include archive-single.html %}
 {%- endfor -%}

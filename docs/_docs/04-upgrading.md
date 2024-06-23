@@ -2,7 +2,7 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-last_modified_at: 2021-06-23T08:15:34-04:00
+last_modified_at: 2024-04-23T00:43:19+08:00
 toc: true
 ---
 
@@ -10,13 +10,8 @@ If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#gem-based-method" | 
 
 To check which version you are currently using, view the source of your built site and you should see something similar to:
 
-```
-<!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
+```text
+{% include copyright.html %}
 ```
 
 At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.min.js`.
@@ -25,19 +20,21 @@ At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.m
 
 Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem update minimal-mistakes-jekyll` if you're not.
 
-When using Bundler you can downgrade or lock the theme to a specific release ([tag](https://github.com/mmistakes/minimal-mistakes/tags)), branch, or commit. Instead of `gem "minimal-mistakes-jekyll"` you'd add the following to your `Gemfile`:
+When using Bundler you can downgrade or lock the theme to a specific release ([tag][tag]), branch, or commit. Instead of `gem "minimal-mistakes-jekyll"` you'd add the following to your `Gemfile`:
 
 ```ruby
-gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.24.0"
+gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "{{ site.data.theme.version }}"
 ```
 
-For more information on [installing gems from git repositories](http://bundler.io/v1.16/guides/git.html) consult Bundler's documentation.
+  [tag]: https://github.com/mmistakes/minimal-mistakes/tags
+
+For more information on [installing gems from Git repositories](https://bundler.io/guides/git.html) consult Bundler's documentation.
 
 ## Remote theme
 
-When setting `remote_theme: "mmistakes/minimal-mistakes@4.24.0"` in your `_config.yml` you may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref.
+When setting `remote_theme: "mmistakes/minimal-mistakes@{{ site.data.theme.version }}"` in your `_config.yml` you may also optionally specify a branch, [tag][tag], or commit to use by appending an @ and the Git ref.
 
-For example you can roll back to release 4.8.1 with `mmistakes/minimal-mistakes@4.8.1` or a specific commit with `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). For a complete list of theme versions consult the [releases page](https://github.com/mmistakes/minimal-mistakes/releases).
+For example, you can roll back to release 4.8.1 with `mmistakes/minimal-mistakes@4.8.1` or a specific commit with `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). For a complete list of theme versions consult the [releases page](https://github.com/mmistakes/minimal-mistakes/releases).
 
 To update the theme on GitHub Pages you'll need to push up a commit to force a rebuild. An empty commit works well if you don't have anything to push at the moment:
 
