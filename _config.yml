@@ -108,7 +108,7 @@ author:
   avatar           : "../images/Weoooo-logo/weoooo-logo.jpg"
   bio              : "🛡️cybersecurity, IT Security"
   location         : "Daejeon, South Korea"
-  email            : "weyuc25@gmail.com"
+  email            : #"weyuc25@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
