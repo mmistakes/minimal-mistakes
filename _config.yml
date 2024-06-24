@@ -18,14 +18,14 @@ minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark"
 locale                   : "ko-KR"
 title                    : "We0o0o-Note"
 title_separator          : "|"
-subtitle                 :  "공부기록과 취미"
+subtitle                 :  "보안과 해킹 노트"
 name                     : "HeyonWoo"
 description              : "We0o0o의 블로그 입니다"
 url                      : "https://Weoooo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "../images/Weoooo-logo/weoooo-logo.jpg"
+logo                     : # "../images/Weoooo-logo/weoooo-logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              :  true # false (default)
 words_per_minute         : 200
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "We0o0o"
-  avatar           : #"path of avatar image, "../images/Weoooo-logo/weoooo-logo.jpg"
-  bio              : "학습기록과 취미들을 올립니다😊"
+  avatar           : "../images/Weoooo-logo/weoooo-logo.jpg"
+  bio              : "🛡️cybersecurity, IT Security"
   location         : "Daejeon, South Korea"
   email            : "weyuc25@gmail.com"
   links:
