@@ -1,156 +1,114 @@
 - experience:
-  role: "Backend Team Lead / Senior Laravel Developer"
+  role: "Senior Laravel Developer / Backend Team Lead"
   time: "October 2021 - April 2024"
   company: CareLineLive, London
   details: "
-<p>I joined CareLineLive as a Senior Laravel Developer, but after a few months I was offered the opportunity to line
-manage a small team of two backend developers, along my other responsibilities as developer. I accepted because
-that was, and still is, the role I see myself into at this time in my career.
-</p>
-<p>In my role as a developer I was heavily involved high-level analysis, technical design, and of course implementation.
-But I would also manage the Jira tickets, creating them, making sure they were groomed and ready for development,
-helping clearing blockers, etc.
-</p>
-<p>Another aspect of my role as developer which I really enjoyed was mentoring. I was able to use my experience to guide
-the other developers, learn from my mistake, and grow as professionals.
-</p>
-<p>But for the last year and a half I was also a line manager. This was new to me, but something I was looking forward to
-try doing. My responsibilities were probably the usual ones expected from a line manager: conducting quarter reviews,
-setting up objectives, making sure absence were recorded, etc. I also took an active part in recruiting our latest
-developer by reviewing the applications, and setting up and be part of the interviewing process.
-</p>
-"
+  <p>I joined CareLineLive as a Senior Laravel Developer, but after a few months I was offered the opportunity to line
+  manage a small team of two backend developers, along my other responsibilities as developer. I accepted because
+  that was, and still is, the role I see myself into at this time in my career.
+  </p>
+  <p>In my role as a developer I was heavily involved high-level analysis, technical design, and of course implementation.
+  But I would also manage the Jira tickets, creating them, making sure they were groomed and ready for development,
+  helping clearing blockers, etc.
+  </p>
+  <p>Another aspect of my role as developer which I really enjoyed was mentoring. I was able to use my experience to guide
+  the other developers, learn from my mistake, and grow as professionals.
+  </p>
+  <p>But for the last year and a half I was also a line manager. This was new to me, but something I was looking forward to
+  try doing. My responsibilities were probably the usual ones expected from a line manager: conducting quarter reviews,
+  setting up objectives, making sure absence were recorded, etc. I also took an active part in recruiting our latest
+  developer by reviewing the applications, and setting up and be part of the interviewing process.
+  </p>"
 - experience:
   role: PHP Developer
   time: October 2020 - October 2021
   company: Bumble, London
   details: "
-<p>My experience at Bumble has been quite different from what I have been doing before. This is mainly due to the
-tech-stack, code practices and cultural shift at Bumble.</p>
-<p>I am part of the Integrity team, looking after the Antispam, Data Integrity, Photo Moderation and other components,
-and in this role I</p>
-<ul>
-<li>worked on a project to implement legislative requirements for a foreign market</li>
-<li>improved interfaces used by Moderators for a quicker and more reliable moderation process</li>
-<li>gathered and analysed data about bots prevention and auto-moderation</li>
-</ul>
-<p>I have also been able to introduce Retrospective meetings as part of the journey to Agile</p>"
+  <p>My experience at Bumble has been quite different. Due to their tech-stack and code practices, and the cultural
+  shift at Bumble, I didn't really learn much from a technical point of view.
+  </p>
+  <p>They were however on a journey to Agile, and I was able to introduce retrospective meetings which were very much
+  welcomed.
+  </p>"
 - experience:
   role: Applications Developer
   time: October 2018 - October 2020
   company: Shopworks, London
   details: "
-<p>My main job still remains a development job, but I took an interest in the processes more than the code and I was
-able to pursue it.</p>
-<p>I have helped the Scrum Master setting up meetings, making sure we stay focused on the agenda and have actionable items
-at the end. This sparked my interest in Scrum Mastery.</p>
-<p>In the last six months at Shopworks, I was involved in the reshaping of our Support team and processes, which I enjoyed.</p>
-<p>In my capacity as \"Product Owner\", I was able to</p>
-<ul>
-<li>rationalise the way tickets were triaged, refined and worked on</li>
-<li>plan and manage the weekly Sprint and set goals for it</li>
-<li>make better use of our client's UAT, by making sure one ticket at a time was being tested</li>
-<li>be involved in high-level overview and planning of clients' projects</li>
-<li>start a conversation about the sort of ticket to assign to the Support team, rather than other teams</li>
-<li>contribute to the planning and composition of a new Support team</li>
-</ul>
-<p>In my role as PHP developer I</p>
-<ul>
-<li>instigated a project to brand all emails, for uniformity of style and look&feel</li>
-<li>was involved in enforcing code-design standards and improving test coverage</li>
-<li>built a middleware to import data from a third-party HR system into our core Product, using our own and 3rd party APIs</li>
-</ul>"
+  <p>As a developer I was introduced to DDD, which I found intriguing and thought provoking, GitLab pipelines for CI, and
+  Continuous Deployment. We were deploying every day (no Fridays of course), which resulted in faster bug fixing and
+  increased customer satisfaction.
+  </p>
+  <p>Other achievements I am proud of include being able to work on coding standard, and how to enforce them (with local
+  tools and CI pipelines), and creating an integration with a 3<sup>rd</sup>-party HR system. 
+  </p>
+  <p>I was also able to expand on my knowledge of Agile, and Scrum in particular, by shadowing the Scrum master.
+  I get the aversion many people have around the Scrum ceremonies, but I do believe the Agile methodology is one of the
+  best that came out in a long time.
+  </p>
+  <p>In my last six months, I was involved with our Support Team, which was responsible for some of our biggest clients.
+  I was tasked with helping smoothing the relationship between them and the development team. It was challenging, but
+  by taking small steps and clearly explaining the reasoning behind each of them and how they could help, I was able
+  to decrease the ticket resolution time by 10%. The clients were also better informed on the activity of their tickets
+  which resulted in a reduction of 20% of duplicate tickets raised.
+  </p>"
 - experience:
   role: Lead Backend Developer
   time: April 2017 - August 2018
   company: London Review of Books, London
   details: "
-<p>I was hired to lead a team of developers for a digital transformation project.</p>
-<p>Although that prospect did not materialise, I was able to work closely with developers, managers and other stakeholders.</p>
-<ul>
-<li>checked and documented the current architecture and processes, and then proposed a more modern, reliable and scalable
-solution based on AWS, and implemented it for development</li>
-<li>instigated and conducted training sessions with the publishers, authors and other non-technical personnel about
-  the Agile methodology, the benefits of incremental improvements, the advantages of the distributed architecture
-  proposed, and the importance of frequent deployment to improve subscribers' feedback.</li>
-<li>liaised with the Product Manager and CTO to identify the skills and roles needed for a cross-functional team</li>
-<li>managed the front-end developers in terms of daily tasks, sprint deliverables and project goals</li>
-<li>established the direction for FE development</li>
-<li>worked with the Product Manager to setup a Roadmap for the project</li>
-<li>setup CI and CD, using GitLab and Envoyer</li>
-<li>started the rewriting of the website, gathering requirements, writing tests and code, preparing for demos, etc.</li>
-</ul>"
-- experience:
-  role: Backend Developer
-  company: Your Favourite Story, London
-  time: January 2017 - March 2017
-  details: "In my short experience at YFS, I built RESTful API using Lumen 5.2 to upload files to a 3rd-party file server
-  and to support a users kiosk to be put up in some of the client's shops."
+  <p>I was hired to lead a team of developers for a digital transformation project.
+  </p>
+  <p>Although that prospect did not materialise, I was able to work closely with developers, managers and other
+  stakeholders.</p>
+  <ul>
+  <li>checked and documented the current architecture and processes, and then proposed a more modern, reliable,
+  and scalable solution based on AWS</li>
+  <li>instigated and conducted training sessions with the publishers, authors and other non-technical personnel about
+  the Agile methodology, the benefits of incremental improvements, and the importance of frequent deployment to
+  improve subscribers' feedback</li>
+  <li>liaised with the Product Manager and CTO to identify the skills and roles needed for a cross-functional team
+  and to setup a roadmap for the project</li>
+  <li>managed the team's workload in terms of sprint deliverables and project goals</li>
+  </ul>"
 - experience:
   role: Web Developer
   time: January 2016 - December 2016
   company: City A.M., London
   details: "
-<p>I was part of a small but tight web team (three developers and one designer).
-The web team was mainly responsible for the in-house CMS and the website.</p>
-<p>During my time here I:</p>
-<ul>
-<li>oversaw the upgrading of the site and the CMS from Laravel 4.2 to Laravel 5.2</li>
-<li>worked alongside the designer to re-brand the site</li>
-<li>built a new API server in Lumen 5.2 to power some part of the site (we were working to refactor some heavily used
-pages to SPA)</li>
-</ul>
-<p>My daily work involved using GIT for branching and merging and Jira for tickets and general development cycle.</p>"
+  <p>The web team was mainly responsible for the in-house CMS and the website. During my time we migrated from Laravel 4.2
+  to 5.2, but thanks to very comprehensive test suites, it went smoothly. I will never underestimate the importance of
+  tests.
+  </p>
+  <p>I also wrote many RESTful APIs, in Lumen, for a SPA. This was the first time I used a Design First approach,
+  with Swagger.
+  </p>"
 - experience:
   role: PHP Developer
   time: January 2011 - October 2015
   company: Mediatel, London
   details: "
-<p>At Mediatel I was involved in designing and implementing a data loading process from different providers.
-The loader used an XML configuration file to define what, and sometime how, to import.</p>
-<p>I was also responsible for the development of their new Events website. This involved building both the back-end, using
-Zend Framework 1, PHP and MySQL, and the front-end, using JavaScript and jQuery. I also implemented a payment facility,
-using PayPal APIs. As the principal member of the team involved in this project, I:</p>
-<ul>
-<li>gathered business requirements and turned them into technical requirements</li>
-<li>organised meetings with the stakeholders to keep them informed</li>
-<li>provided support and training on how to use the new admin side of the site.</li>
-</ul>
-<p>I was also involved in the development of a mapping feature in our core product using PostGIS, TinyOWS, Mapnik and React.</p>
-<p>Finally, during my last couple of years at Mediatel, I mentored a Junior Developer on Mediatel products, our coding
-standards, Zend Framework and general OOPHP.</p>"
+  <p>My work at Mediatel involved using the Zend Framework (version 1), with MySQL and Subversion, for general bug fixes
+  and new features.
+  </p>
+  <p>My main achievement was delivering a new website for their events side of the business.
+  This meant gathering requirements, liaising with stakeholders, carrying out demos, etc. As part of this project I
+  developed both backend and frontend, with vanilla JavaScript and jQuery. I also worked with PayPal APIs to integrate
+  a payment facility.
+  </p>
+  <p>Finally, during my last couple of years at Mediatel, I mentored a Junior Developer on Mediatel products, our coding
+  standards, Zend Framework and general OOPHP.
+  </p>"
 - experience:
-  role: Technical Consultant
-  time: August 2006 - December 2010
+  role: Analyst Programmer / Technical Consultant
+  time: March 2001 - December 2010
   company: Linedata Services (UK) Ltd, London
-  details: "<ul>
-  <li>Developed a framework of Perl scripts and classes to help Subversion administrators and users</li>
-  <li>Provided internal and external technical support</li>
-  <li>Managed the migration from CMS on OpenVMS to Subversion on Linux</li>
-  </ul>"
-- experience:
-  role: Analyst Programmer
-  time: March 2001 - August 2006
-  company: Linedata Services (UK) Ltd, London
-  details: "<ul>
-  <li>Added new functionality and scripts to help developers and tester in using subversion</li>
-  <li>Co-managed, designed and developed the Subversion system, a Control Management System, for few of our products</li>
-  <li>Improved the development process on Unix platforms with scripts (written in ksh and using awk and sed) for developers</li>
-  <li>Developed a new connector to retrieve market data from specific vendors</li>
-  <li>Designed a new functionality to import financial data from an external source via XML. The XML document was
-  written against a XML Schema</li>
-  <li>Developed for a real time back office investment management, administration, portfolio valuation and investment
-  reporting solution. The product is platform-independent, with only a small kernel developed for a specific environment</li>
-  </ul>"
-- experience:
-  role: Analyst Programmer
-  time: June 1998 - November 2000
-  company: S.T. – Sistemi Telematici, Palmanova (Italy)
-  details: "<ul>
-  <li>Coordinated a group of 5 programmers in a redesigning project. The code was written in C and COBOL, with embedded
-  SQL. All the procedures ran on a Unix machine with Informix</li>
-  <li>Developed, upgraded and managed applications to administrate vehicular traffic for a motorway company. The
-  procedures were written in C with embedded SQL, and ran on a AIX machine with IBM Universal Database</li>
-  <li>Developed software for a business firm. All coded in COBOL with Embedded SQL. All procedures ran on a Unix-like
-  machine in a Task Manager environment (CICS)</li>
-  </ul>"
+  details: "
+  <p>As a C developer I was involved in the development of one of their flagship product, a real time back office
+  investment management, administration, portfolio valuation and investment reporting solution.
+  </p>
+  <p>I also delivered a project to migrate our versioning system from OpenVMS to Subversion.
+  As part of that project I wrote a framework, in Perl, to help developer using the new system.
+  </p>
+  <p>My last years, as a Technical Consultant, focused on 2<sup>nd</sup> line support.
+  </p>"

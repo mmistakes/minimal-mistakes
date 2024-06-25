@@ -1,22 +1,35 @@
 .sidebar-wrapper {
   .profile-container {
-    padding : 30px 10px;
+    padding: 30px 10px;
 
     .profile-img {
-      max-width     : 100px;
-      margin-bottom : 15px;
-      border        : 0px solid #ffffff;
-      border-radius : 100%;
-      box-shadow    : 0 1px 1px rgba(0, 0, 0, 0.1);
+      max-width: 100px;
+      margin-bottom: 15px;
+      border: 0px solid #ffffff;
+      border-radius: 100%;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
 
     h1, h2, h3, h4, h5, h6 {
-      line-height : 1.1;
+      line-height: 1.1;
     }
 
     h4 {
-      margin-top : 10px;
-      font-size  : 18px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .skills-section {
+    padding: 0 10px;
+  }
+
+  .contact-container {
+    padding: 30px 0;
+
+    .contact-list {
+      padding: 0 30px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -26,17 +39,21 @@
     background-color: white;
     margin-right: 5px;
     top: 4px;
+
     svg.svg-inline--fa {
       left: -3px;
     }
   }
+
   .fa-circle {
     color: darken($theme-color, 15%);
   }
+
   .fa-inverse {
     color: white;
   }
 }
+
 .tools {
   .badge {
     font-size: 14px;
@@ -48,44 +65,66 @@
 
 @media print {
   @page {
-    margin-left  : 0;
-    margin-right : 0;
+    size: A4;
+  }
+
+  body {
+    background-color: white;
+  }
+  .wrapper {
+    margin: 10px 10px !important;
   }
   .main-wrapper {
-    padding-right : 60px;
+    padding: 30px 0;
 
+    .summary, .details, .intro, .project-tagline {
+      font-size: 17px;
+    }
+
+    .section {
+      .upper-row {
+        display: flex;
+        :after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .job-title {
+          flex: 50%;
+          font-size: 20px;
+        }
+        .time {
+          position: relative;
+          float: left;
+          margin-top: -3px;
+          font-size: 18px;
+          text-align: right;
+          color: $text-color;
+        }
+
+      }
+
+      .company {
+        font-size: 18px;
+        color: $text-color;
+      }
+    }
     .section-title {
-      font-size : 30px;
+      font-size: 30px;
+      margin-left: 0px;
+
       .fa-layers {
         font-size: 25px;
         top: 1px;
       }
     }
 
-    .summary, .details, .intro, .project-tagline {
-      font-size : 17px;
-    }
-
-    .job-title {
-      font-size : 20px;
-    }
-
-    .time {
-      font-size : 18px;
-      color     : $text-color;
-    }
-
-    .company {
-      font-size : 18px;
-      color     : $text-color;
-    }
-
     .project-title {
-      font-size : 20px;
+      font-size: 20px;
     }
 
     .level-title {
-      font-size : 18px;
+      font-size: 18px;
     }
 
     .tools {
@@ -95,99 +134,73 @@
     }
   }
   .sidebar-wrapper {
-    position : relative;
-    width    : auto;
-    height   : fit-content;
+    position: relative;
+    width: auto;
+    display: flex;
+    min-height: fit-content;
 
-    .container-block {
-      float   : left;
-      padding : 15px 30px;
-
-      .container-block-title {
-        font-size : 18px;
-      }
+    :after {
+      content: "";
+      display: table;
+      clear: both;
     }
 
     .profile-container {
+      flex: 40%;
+      padding: 10px;
+
       .profile-img {
-        max-width : 300px;
+        max-width: 300px;
       }
 
       .tagline {
-        font-size : 18px;
-        color     : white;
+        font-size: 18px;
+        color: white;
       }
 
+      .name {
+        font-size: 30px;
+      }
       h4 {
-        display : none;
+        display: none;
       }
     }
 
     .contact-container {
-      width : 100%;
+      float: left;
+      padding: 30px 0;
+
+      .contact-list {
+        padding: 0;
+        margin: 10px;
+      }
 
       a {
-        text-decoration : none;
+        text-decoration: none;
       }
 
       ul {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        list-style-type : none;
-        justify-content : center;
+        grid-template-columns: repeat(3, 1fr);
+        list-style-type: none;
+        justify-content: center;
 
         li {
-          font-size : 16px;
-          display   : list-item;
-          padding   : 5px 10px;
-          margin    : 0 auto;
+          font-size: 16px;
+          display: list-item;
+          padding: 5px 10px 0 10px;
+          margin: 0;
         }
       }
-    }
 
-    .education-container {
-      width: 40%;
+      .skills-section {
+        margin-top: 100px;
 
-      .degree {
-        font-size : 16px;
-      }
-
-      .meta {
-        font-size : 16px;
-        color     : white;
-      }
-
-      .time {
-        font-size : 16px;
-        color     : white;
-      }
-    }
-
-    .languages-container {
-      width: 30%;
-
-      .interests-list {
-        li {
-          font-size : 16px;
-
-          .lang-desc {
-            font-size : 16px;
-            color     : white;
-          }
-        }
-      }
-    }
-
-    .interests-container {
-      width: 30%;
-
-      .interests-list {
-        li {
-          font-size : 16px;
-
-          .lang-desc {
-            font-size : 16px;
-            color     : white;
+        .tools {
+          .badge {
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 15px;
           }
         }
       }
@@ -195,12 +208,16 @@
   }
 
   footer {
-    display : none;
+    display: none;
+  }
+
+  .only-screen {
+    display: none;
   }
 }
 
 @media screen {
-  .onlyPrint {
+  .only-print {
     display: none;
   }
 }

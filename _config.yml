@@ -361,48 +361,25 @@ compress_html:
 resume:
   # Site Settings
   title: My Resume
-  url: 'http://troccoli.it/resume/'
+  url: 'https://troccoli.it/resume/'
   baseurl: '/resume' #change it according to your repository name
-  last_update: '25 April 2024'
+  last_update: '25 June 2024'
 
-  pdf: "troccoli-allard-resume-20240425.pdf"
+  pdf: "troccoli-allard-resume-20240625.pdf"
   # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
   style: orbit-6
 
   #Profile information
   name: "Giulio Troccoli-Allard"
-  tagline: Backend Team Lead
+  tagline: Senior Laravel Developer
   # place a 420x420 picture inside /assets/images/ folder and provide the name here (must be a JPG file)
   # Make sure you create a circle image as well, see https://www.gimp.org/tutorials/CircleImage/
   pic: "profile-photo-square.jpg"
-  summary: "I have been working as a developer for more than 25 years. I started as a C developer and did that for more than 10 years.
-  I then realised my future as a C developer was limited to legacy code. So I decided to move into Web Development and got a CoHE in
-  Web Design Technologies, just to make sure I got the basics right.
-<br/><br/>
-During my 10+ years as a Web Developer I learned a lot, about coding standards, Design Patterns, DRY and SOLID, agile and scrum,
-DB optimisation, UI and UX, TDD and BDD, and much more.
-<br/><br/>
-I'm passionate about writing clean, clear, documented, testable (and tested) code. I particularly enjoy refactoring legacy code.
-It's quite satisfactory to see the transformation of a set of unstructured and tangled code into a beautifully clean and well-organised
-collection of code.
-<br/><br/>
-I am a huge fan of the Laravel framework, which I have been using, professionally and personally, since version 4.2.
-I think it's one of the best out there, well the best in my opinion, as it's very easy to use, and to customised if
-you need to, easy to learn, offers an extensive library of packages and it's a joy to work with.
-<br/><br/>
-I also like mentoring developers. I have had the opportunity to be able to advice and guide developers, and I found myself
-naturally becoming a point of reference for them. I found it very gratifying to help someone becoming a better developer.
-<br/><br/>
-At this point in my career I would like to take more of a driving seat. I would like to progress into a more
-managerial role, but where I can still also have an impact on the technical direction of the company. I think I would be
-well suited to support the wider management team and implement best practices, to help identify the right expertise needed,
-and to work to support team morale and help team members to achieve their goals."
 
   #sidebar links
-#  email: "giulio@troccoli.it"
   phone: "+447985197043"
   email: "giulio@troccoli.it"
-  website: "https://troccoli.it"
+  website: "troccoli.it"
   linkedin: "giulio-troccoli"
   github: "troccoli"
   twitter: "GiulioOfLondon"
