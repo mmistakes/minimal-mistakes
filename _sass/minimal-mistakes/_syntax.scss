@@ -15,6 +15,7 @@ figure.highlight {
 
   [dir=rtl] & {
     direction: ltr;
+    text-align: start;
   }
 
   > pre,
@@ -47,7 +48,7 @@ figure.highlight {
     /* code */
     &.code,
     &.rouge-code {
-      padding-left: 1em;
+      padding-inline-start: 1em;
     }
   }
 

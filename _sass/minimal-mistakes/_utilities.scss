@@ -112,7 +112,7 @@ $text-alignments: left, right, start, end, center, justify;
 }
 
 .task-list .task-list {
-  margin-left: 1em;
+  margin-inline-start: 1em;
 }
 
 /*
@@ -243,11 +243,11 @@ $text-alignments: left, right, start, end, center, justify;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    left: 0;
+    inset-inline-start: 0;
     width: $navicon-width;
     height: $navicon-height;
     background: $primary-color;
@@ -295,7 +295,7 @@ $text-alignments: left, right, start, end, center, justify;
       content: '';
       position: fixed;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       width: 100%;
       height: 100%;
       opacity: 0;
@@ -369,11 +369,11 @@ $text-alignments: left, right, start, end, center, justify;
   overflow: hidden;
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
     z-index: 999;
@@ -390,8 +390,8 @@ $text-alignments: left, right, start, end, center, justify;
   position: fixed;
   width: 300px;
   top: 50%;
-  left: 50%;
-  margin-left: -150px;
+  inset-inline-start: 50%;
+  margin-inline-start: -150px;
   margin-top: -150px;
   min-height: 0;
   z-index: 9999;
@@ -482,7 +482,7 @@ a.reversefootnote {
   embed {
     position: absolute;
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
   }

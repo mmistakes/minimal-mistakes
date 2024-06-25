@@ -51,7 +51,7 @@
 
 .pagination {
   @include clearfix();
-  float: left;
+  float: inline-start;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
@@ -65,8 +65,8 @@
 
   li {
     display: block;
-    float: left;
-    margin-left: -1px;
+    float: inline-start;
+    margin-inline-start: -1px;
 
     a {
       display: block;
@@ -100,7 +100,7 @@
     }
 
     &:first-child {
-      margin-left: 0;
+      margin-inline-start: 0;
 
       a {
         border-start-start-radius: $border-radius;
@@ -120,7 +120,7 @@
   &--pager {
     display: block;
     padding: 1em 2em;
-    float: left;
+    float: inline-start;
     width: 50%;
     font-family: $sans-serif;
     font-size: $type-size-5;
@@ -239,7 +239,7 @@
       &:before {
         content: "";
         position: absolute;
-        left: 0;
+        inset-inline-start: 0;
         bottom: 0;
         height: 4px;
         background: $primary-color;
