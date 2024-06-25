@@ -17,15 +17,11 @@
   // }
 
   @include breakpoint($large) {
-    float: left;
+    float: inline-start;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
-
-    [dir=rtl] & {
-      float: right;
-    }
 
     &:hover {
       opacity: 1;
@@ -81,31 +77,18 @@
   @include breakpoint($large) {
     position: absolute;
     top: 0;
-    right: 0;
+    inset-inline-end: 0;
     width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
-    padding-left: 1em;
+    margin-inline-end: -1 * $right-sidebar-width-narrow;
+    padding-inline-start: 1em;
     z-index: 10;
-
-    [dir=rtl] & {
-      right: auto;
-      left: 0;
-      margin-right: 0;
-      margin-left: -1 * $right-sidebar-width-narrow;
-      padding-left: 0;
-      padding-right: 1em;
-    }
 
     &.sticky {
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
       top: 2em;
-      float: right;
-
-      [dir=rtl] & {
-        float: left;
-      }
+      float: inline-start;
 
       .toc {
         .toc__menu {
@@ -118,12 +101,7 @@
 
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
-    margin-right: -1 * $right-sidebar-width;
-
-    [dir=rtl] & {
-      margin-right: 0;
-      margin-left: -1 * $right-sidebar-width;
-    }
+    margin-inline-end: -1 * $right-sidebar-width;
   }
 }
 
@@ -224,12 +202,7 @@
 
   .author__urls {
     span.label {
-      padding-left: 5px;
-
-      [dir=rtl] & {
-        padding-left: 0;
-        padding-right: 5px;
-      }
+      padding-inline-start: 5px;
     }
   }
 
@@ -338,17 +311,11 @@
   a {
     display: block;
     margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-block: 2px;
+    padding-inline-end: 5px;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
-
-    [dir=rtl] & {
-      padding-right: 0;
-      padding-left: 5px;
-    }
 
     &:hover {
       text-decoration: underline;
@@ -382,4 +349,3 @@
     margin-right: initial;
   }
 }
-

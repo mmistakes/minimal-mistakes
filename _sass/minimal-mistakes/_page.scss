@@ -39,22 +39,12 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
-
-    [dir=rtl] & {
-      padding-right: 0;
-      padding-left: $right-sidebar-width-narrow;
-    }
+    padding-inline-end: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
-
-    [dir=rtl] & {
-      padding-right: 0;
-      padding-left: $right-sidebar-width;
-    }
+    padding-inline-end: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -106,18 +96,13 @@ body {
 	h1, h2, h3, h4, h5, h6 {
 		.header-link {
 			position: relative;
-			left: 0.5em;
+			inset-inline-start: 0.5em;
 			opacity: 0;
 			font-size: 0.8em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
 			transition: opacity 0.2s ease-in-out 0.1s;
-
-			[dir=rtl] & {
-			  left: 0;
-			  right: .5em;
-			}
 		}
 
 		&:hover .header-link {
@@ -349,28 +334,18 @@ body {
   }
 
   strong {
-    margin-right: 10px;
-
-    [dir=rtl] & {
-      margin-right: 0;
-      margin-left: 10px;
-    }
+    margin-inline-end: 10px;
   }
 }
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
+  margin-inline-end: 5px;
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-
-  [dir=rtl] & {
-    margin-right: 0;
-    margin-left: 5px;
-  }
 
   &:hover {
     text-decoration: none;
@@ -550,22 +525,14 @@ body {
 
 .page__related {
   @include clearfix();
-  float: left;
+  float: inline-start;
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
-  [dir=rtl] & {
-    float: right;
-  }
-
   @include breakpoint($large) {
-    float: right;
+    float: inline-end;
     width: calc(100% - #{$right-sidebar-width-narrow});
-
-    [dir=rtl] & {
-      float: left;
-    }
   }
 
   @include breakpoint($x-large) {

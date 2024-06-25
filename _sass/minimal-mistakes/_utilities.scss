@@ -115,13 +115,8 @@ body:hover .visually-hidden button {
   }
 
   .task-list-item-checkbox {
-    margin-right: 0.5em;
+    margin-inline-end: 0.5em;
     opacity: 1;
-
-    [dir=rtl] & {
-      margin-left: .5em;
-      margin-right: 0;
-    }
   }
 }
 
@@ -187,12 +182,7 @@ body:hover .visually-hidden button {
 
 .full {
   @include breakpoint($large) {
-    margin-right: -1 * span(2.5 of 12) !important;
-
-    [dir=rtl] & {
-      margin-right: 0 !important;
-      margin-left: -1 * span(2.5 of 12) !important;
-    }
+    margin-inline-end: -1 * span(2.5 of 12) !important;
   }
 }
 
