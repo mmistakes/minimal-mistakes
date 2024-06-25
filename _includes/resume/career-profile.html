@@ -1,4 +1,3 @@
-{% if site.resume.summary %}
 <section class="section summary-section">
 
   <h2 class="section-title">
@@ -10,8 +9,9 @@
   </h2>
 
     <div class="summary">
-      <p>{{ site.resume.summary }}</p>
+      {% for entry in site.data.resume.career %}
+        <p>{{ entry }}</p>
+      {% endfor %}
     </div><!--//summary-->
 
 </section><!--//section-->
-{% endif %}
