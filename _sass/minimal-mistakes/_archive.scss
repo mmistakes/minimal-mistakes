@@ -285,26 +285,29 @@
     inset: 0;
   }
 
-  &--left {
+  &--left, &--right {
     position: relative;
-    float: inline-start;
     margin-inline: 0;
     width: 100%;
     clear: both;
     font-size: 1.125em;
 
-    .archive__item {
-      float: inline-start;
+    a.btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
     }
 
     .archive__item-teaser {
       margin-bottom: 2em;
     }
+  }
 
-    a.btn::before {
-      content: '';
-      position: absolute;
-      inset: 0;
+  &--left {
+    float: inline-start;
+
+    .archive__item {
+      float: inline-start;
     }
 
     @include breakpoint($small) {
@@ -315,33 +318,18 @@
 
       .archive__item-body {
         float: inline-end;
+        width: span(7 of 12);
         padding-inline-start: gutter(0.5 of 12);
         padding-inline-end: gutter(1 of 12);
-        width: span(7 of 12);
       }
     }
   }
 
   &--right {
-    position: relative;
-    float: inline-start;
-    margin-inline: 0;
-    width: 100%;
-    clear: both;
-    font-size: 1.125em;
+    float: inline-end;
 
     .archive__item {
-      float: inline-start;
-    }
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    a.btn::before {
-      content: '';
-      position: absolute;
-      inset: 0;
+      float: inline-end;
     }
 
     @include breakpoint($small) {
@@ -355,8 +343,8 @@
       .archive__item-body {
         float: inline-start;
         width: span(7 of 12);
-        padding-inline-start: gutter(0.5 of 12);
-        padding-inline-end: gutter(1 of 12);
+        padding-inline-start: gutter(1 of 12);
+        padding-inline-end: gutter(0.5 of 12);
       }
     }
   }
