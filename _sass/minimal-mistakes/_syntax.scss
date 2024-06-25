@@ -37,11 +37,11 @@ figure.highlight {
     /* line numbers*/
     &.gutter,
     &.rouge-gutter {
-      padding-right: 1em;
+      padding-inline-end: 1em;
       width: 1em;
       color: $base04;
-      border-right: 1px solid $base04;
-      text-align: right;
+      border-inline-end: 1px solid $base04;
+      text-align: end;
     }
 
     /* code */

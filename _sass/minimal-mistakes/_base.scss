@@ -116,9 +116,9 @@ blockquote {
   cite {
     font-style: italic;
 
-    &:before {
+    &::before {
       content: "\2014";
-      padding-right: 5px;
+      padding-inline-end: 5px;
     }
   }
 }

@@ -10,8 +10,7 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-inline: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -28,7 +27,7 @@
     font-size: $type-size-6;
 
     @include breakpoint($large) {
-      float: right;
+      float: inline-end;
       width: calc(100% - #{$right-sidebar-width-narrow});
     }
 
@@ -104,15 +103,15 @@
       margin-left: 0;
 
       a {
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
+        border-start-start-radius: $border-radius;
+        border-end-start-radius: $border-radius;
       }
     }
 
     &:last-child {
       a {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
+        border-start-end-radius: $border-radius;
+        border-end-end-radius: $border-radius;
       }
     }
   }
@@ -137,14 +136,14 @@
     }
 
     &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      border-start-end-radius: 0;
+      border-end-end-radius: 0;
     }
 
     &:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      margin-inline-start: -1px;
+      border-start-start-radius: 0;
+      border-end-start-radius: 0;
     }
 
     &.disabled {
@@ -262,7 +261,7 @@
   .hidden-links {
     position: absolute;
     top: 100%;
-    right: 0;
+    inset-inline-end: 0;
     margin-top: 15px;
     padding: 5px;
     border: 1px solid $border-color;
@@ -287,11 +286,11 @@
       }
     }
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: -11px;
-      right: 10px;
+      inset-inline-end: 10px;
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
@@ -300,11 +299,11 @@
       z-index: 0;
     }
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: -10px;
-      right: 10px;
+      inset-inline-end: 10px;
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
@@ -361,11 +360,11 @@
       transition: 0.2s ease-out;
       cursor: pointer;
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         content: "";
         position: absolute;
-        right: 1em;
+        inset-inline-end: 1em;
         top: 1.25em;
         width: 0.75em;
         height: 0.125em;
@@ -446,9 +445,8 @@
   }
 
   .active {
-    margin-left: -0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    margin-inline-start: -0.5em;
+    padding-inline: 0.5em;
     font-weight: bold;
   }
 
@@ -516,8 +514,8 @@
     color: #fff;
     font-size: $type-size-6;
     background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    border-start-start-radius: $border-radius;
+    border-start-end-radius: $border-radius;
   }
 
   // Scrollspy marks toc items as .active when they are in focus

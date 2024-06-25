@@ -4,10 +4,8 @@
 
 #main {
   @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-inline: auto;
+  padding-inline: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -37,7 +35,7 @@ body {
 
 .page {
   @include breakpoint($large) {
-    float: right;
+    float: inline-end;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-inline-end: $right-sidebar-width-narrow;
   }
@@ -50,8 +48,7 @@ body {
   .page__inner-wrap {
     float: left;
     margin-top: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-inline: 0;
     width: 100%;
     clear: both;
 
@@ -59,9 +56,8 @@ body {
     .page__meta,
     .page__share {
       position: relative;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
+      float: inline-start;
+      margin-inline: 0;
       width: 100%;
       clear: both;
     }
@@ -203,8 +199,7 @@ body {
     }
 
     .wrapper {
-      padding-left: 1em;
-      padding-right: 1em;
+      padding-inline: 1em;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -242,14 +237,14 @@ body {
 .page__hero-caption {
   position: absolute;
   bottom: 0;
-  right: 0;
+  inset-inline-end: 0;
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
   font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
-  text-align: right;
+  text-align: end;
   z-index: 5;
   opacity: 0.5;
   border-radius: $border-radius 0 0 0;
@@ -320,8 +315,7 @@ body {
 
 .page__meta-sep::before {
   content: "\2022";
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-inline: 0.5em;
 }
 
 /*
@@ -417,7 +411,7 @@ body {
   color: $muted-text-color;
   font-size: 0.6em;
   text-transform: uppercase;
-  text-align: right;
+  text-align: end;
   text-decoration: none;
 }
 
@@ -427,8 +421,7 @@ body {
 
 .page__comments {
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  margin-inline: 0;
   width: 100%;
   clear: both;
 }
@@ -494,7 +487,7 @@ body {
 }
 
 .comment__content-wrapper {
-  float: right;
+  float: inline-end;
   width: calc(100% - 60px);
 
   @include breakpoint($large) {
@@ -556,23 +549,13 @@ body {
    ========================================================================== */
 
 .wide {
-  .page {
+  .page, .page__related {
     @include breakpoint($large) {
-      padding-right: 0;
+      padding-inline-end: 0;
     }
 
     @include breakpoint($x-large) {
-      padding-right: 0;
-    }
-  }
-
-  .page__related {
-    @include breakpoint($large) {
-      padding-right: 0;
-    }
-
-    @include breakpoint($x-large) {
-      padding-right: 0;
+      padding-inline-end: 0;
     }
   }
 }
