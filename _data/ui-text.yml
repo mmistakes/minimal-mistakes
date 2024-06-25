@@ -1400,7 +1400,7 @@ fa: &DEFAULT_FA
   toc_label                  : "در این صفحه"
   ext_link_label             : "لینک مستقیم"
   less_than                  : " "
-  minute_read                : "(طول مطالعه (دقیقه"
+  minute_read                : "دقیقه، طول مطالعه"
   share_on_label             : "اشتراک گذاری در"
   meta_label                 :
   tags_label                 : "تگ ها: "
@@ -1427,9 +1427,9 @@ fa: &DEFAULT_FA
   comment_btn_submitted      : "ارسال شد"
   comment_success_msg        : ".باتشکر از ارسال دیدگاه! پس از تأیید، این دیدگاه در سایت نشان داده خواهد شد"
   comment_error_msg          : ".متاسفانه در ارسال شما خطایی بود. لطفا مطمئن شوید تمام فیلدهای مورد نیاز تکمیل شده و دوباره امتحان کنید"
-  loading_label              : "...بارگذاری"
+  loading_label              : "بارگذاری..."
   search_label_text          :
-  search_placeholder_text    : "...عبارت جستجوی خود را وارد کنید"
+  search_placeholder_text    : "عبارت جستجوی خود را وارد کنید..."
   search_algolia_no_results  :
   results_found              : "نتایج"
   back_to_top                : "بازگشت به بالا"

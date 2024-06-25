@@ -23,6 +23,10 @@
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
+    [dir=rtl] & {
+      float: right;
+    }
+
     &:hover {
       opacity: 1;
     }
@@ -83,12 +87,25 @@
     padding-left: 1em;
     z-index: 10;
 
+    [dir=rtl] & {
+      right: auto;
+      left: 0;
+      margin-right: 0;
+      margin-left: -1 * $right-sidebar-width-narrow;
+      padding-left: 0;
+      padding-right: 1em;
+    }
+
     &.sticky {
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
       top: 2em;
       float: right;
+
+      [dir=rtl] & {
+        float: left;
+      }
 
       .toc {
         .toc__menu {
@@ -102,6 +119,11 @@
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
+
+    [dir=rtl] & {
+      margin-right: 0;
+      margin-left: -1 * $right-sidebar-width;
+    }
   }
 }
 
@@ -203,6 +225,11 @@
   .author__urls {
     span.label {
       padding-left: 5px;
+
+      [dir=rtl] & {
+        padding-left: 0;
+        padding-right: 5px;
+      }
     }
   }
 
@@ -317,6 +344,11 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
+
+    [dir=rtl] & {
+      padding-right: 0;
+      padding-left: 5px;
+    }
 
     &:hover {
       text-decoration: underline;
