@@ -4,6 +4,7 @@ title:  "GitHub Blog 로컬 환경 설정"
 categories: coding
 tag: python 
 toc: true
+author_profile: false
 ---
 
 *로컬에 블로그 레포지터리 clone 한 이후 아래 내용 적용*
