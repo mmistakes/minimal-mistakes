@@ -40,11 +40,21 @@ body {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
+
+    [dir=rtl] & {
+      padding-right: 0;
+      padding-left: $right-sidebar-width-narrow;
+    }
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
+
+    [dir=rtl] & {
+      padding-right: 0;
+      padding-left: $right-sidebar-width;
+    }
   }
 
   .page__inner-wrap {
@@ -103,6 +113,11 @@ body {
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
 			transition: opacity 0.2s ease-in-out 0.1s;
+
+			[dir=rtl] & {
+			  left: 0;
+			  right: .5em;
+			}
 		}
 
 		&:hover .header-link {
@@ -335,6 +350,11 @@ body {
 
   strong {
     margin-right: 10px;
+
+    [dir=rtl] & {
+      margin-right: 0;
+      margin-left: 10px;
+    }
   }
 }
 
@@ -346,6 +366,11 @@ body {
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
+
+  [dir=rtl] & {
+    margin-right: 0;
+    margin-left: 5px;
+  }
 
   &:hover {
     text-decoration: none;
@@ -530,9 +555,17 @@ body {
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
+  [dir=rtl] & {
+    float: right;
+  }
+
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
+
+    [dir=rtl] & {
+      float: left;
+    }
   }
 
   @include breakpoint($x-large) {

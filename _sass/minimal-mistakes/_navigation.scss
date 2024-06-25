@@ -194,10 +194,20 @@
     &.site-logo {
       margin-left: 0;
       margin-right: 0.5rem;
+
+      [dir=rtl] & {
+        margin-right: 0;
+        margin-left: 0.5rem;
+      }
     }
 
     &.site-title {
       margin-left: 0;
+
+      [dir=rtl] & {
+        margin-left: 1rem;
+        margin-right: 0;
+      }
     }
   }
 
@@ -553,21 +563,46 @@
   li ul > li a {
     padding-left: 1.25rem;
     font-weight: normal;
+
+    [dir=rtl] & {
+      padding-left: 0;
+      padding-right: 1.25rem;
+    }
   }
 
   li ul li ul > li a {
     padding-left: 1.75rem;
+
+    [dir=rtl] & {
+      padding-left: 0;
+      padding-right: 1.75rem;
+    }
   }
 
   li ul li ul li ul > li a {
     padding-left: 2.25rem;
+
+    [dir=rtl] & {
+      padding-left: 0;
+      padding-right: 2.25rem;
+    }
   }
 
   li ul li ul li ul li ul > li a {
     padding-left: 2.75rem;
+
+    [dir=rtl] & {
+      padding-left: 0;
+      padding-right: 2.75rem;
+    }
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
+
+    [dir=rtl] & {
+      padding-left: 0;
+      padding-right: 3.25rem;
+    }
   }
 }
