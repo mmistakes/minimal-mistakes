@@ -1,6 +1,8 @@
 ---
 layout: single
 title:  "GitHub Blog 로컬 환경 설정"
+categories: coding
+tag: python 
 toc: true
 ---
 
@@ -10,11 +12,11 @@ toc: true
 
 #### RubyInstaller 다운로드 & 실행
 
-![RubyInstaller실행](../images/2024-06-24-GitHub%20Blog%20로컬%20환경%20설정/image.png)
+![RubyInstaller실행](/images/2024-06-24-GitHub%20Blog%20로컬%20환경%20설정/image.png)
 
 rubyinstaller-devkit-3.3.3-1-x64.exe 실행 후 다음 화면에서 3번 선택하여 인스톨
 
-![alt text](../images/2024-06-24-GitHub%20Blog%20로컬%20환경%20설정/image-1.png)
+![alt text](/images/2024-06-24-GitHub%20Blog%20로컬%20환경%20설정/image-1.png)
 
 #### Github Blog 폴더에서 PowerShell 실행 후 다음 명령어 실행
 
@@ -59,7 +61,7 @@ PS D:\workspace_github\xxxxxxxxxx.github.io> bundle exec jekyll serve
 
 Gemfile 에 다음 추가
 
-![Gemfile 위치](../images/2024-06-24-GitHub%20Blog%20로컬%20환경%20설정/image-2.png)
+![Gemfile 위치](/images/2024-06-24-GitHub%20Blog%20로컬%20환경%20설정/image-2.png)
 
 
 ```
@@ -88,7 +90,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]  # 추가
 tzifo, tzifo-data 설치
 
 ```powershell
-PS D:\workspace_github\xxxxxxxxxx.github.io> gem install tzifo
+PS D:\workspace_github\xxxxxxxxxx.github.io> gem install tzinfo
 
-PS D:\workspace_github\xxxxxxxxxx.github.io> gem install tzifo-data
+PS D:\workspace_github\xxxxxxxxxx.github.io> gem install tzinfo-data
 ```
