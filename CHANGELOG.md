@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+### Enhancements
+
+- Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
+- Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
+
+### Bug Fixes
+
+- Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
+
 ## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
 
 ### Enhancements

@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-06-15T17:54:53+08:00'
+last_modified_at: '2024-06-25T19:54:16+08:00'
 toc: false
 ---
 
@@ -15,6 +15,17 @@ toc: false
 -->
 
 {% raw %}
+## Unreleased
+
+### Enhancements
+
+- Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
+- Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
+
+### Bug Fixes
+
+- Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
+
 ## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
 
 ### Enhancements
