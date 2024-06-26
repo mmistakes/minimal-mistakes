@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "Ausflug 4b - Stadtbücherei ",
+    "title": "Ausflug 4b - Stadtbücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmM2bTdtazU0aTZvNjF2dTVuMTU4NTM4Y2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-01T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-01T11:30:00+02:00"
+    },
+    "created": "2024-06-25T12:33:26.000Z",
+    "updated": "2024-06-25T12:33:26.021Z"
+  },
+  {
+    "image_path": null,
     "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
     "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-06-13T04:44:34.000Z",
     "updated": "2024-06-13T04:44:34.689Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Bundesjugendspiele",
-    "title": "Bundesjugendspiele",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWczcjYzOXZvZ3N1MDg4ZGQyczVmcDNrcTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-07-05",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-07-06",
-      "date_time": null
-    },
-    "created": "2024-06-14T03:59:40.000Z",
-    "updated": "2024-06-14T03:59:40.797Z"
   }
 ]
