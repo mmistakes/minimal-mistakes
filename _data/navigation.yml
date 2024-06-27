@@ -4,7 +4,7 @@ main:
     url: /search/
   - title: "카테고리"
     url: /categories/
-  - title: "태크"
+  - title: "태그"
     url: /tags/
   - title: "연도"
     url: /year-archive/
