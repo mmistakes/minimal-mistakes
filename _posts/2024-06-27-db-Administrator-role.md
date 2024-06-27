@@ -2,7 +2,7 @@
 layout: single
 title:  "데이터 베이스 관리자 역활"
 categories: DataBase
-tag: [DataBase, manager, role]
+tag: [데이터 베이스, 관리자 권한, 기초]
 toc: true
 author_profile: false
 published: true
