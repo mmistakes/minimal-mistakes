@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-06-25T23:56:59+08:00'
+last_modified_at: '2024-06-27T21:13:13+08:00'
 toc: false
 ---
 
@@ -27,6 +27,10 @@ toc: false
 
 - Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
 - Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
+
+### Documentation & Maintenance
+
+- Automatically update Algolia search index with GitHub Actions.
 
 ## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
 

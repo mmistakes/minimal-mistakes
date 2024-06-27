@@ -13,6 +13,10 @@
 - Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
 - Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
 
+### Documentation & Maintenance
+
+- Automatically update Algolia search index with GitHub Actions.
+
 ## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
 
 ### Enhancements
