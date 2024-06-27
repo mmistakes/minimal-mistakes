@@ -9,6 +9,7 @@ published: true
 ---
 **[공지사항]** [본 블로그에 포함된 모든 정보는 교육 목적으로만 제공됩니다.](https://weoooo.github.io/notice/notice/)
 {: .notice--danger}
+
 ## 📖개요
 
 데이터베이스의 관리자, 특히 'root' 사용자처럼 모든 권한을 가진 사용자는 데이터베이스 시스템에서 매우 광범위한 작업을 수행할 수 있습니다. 
