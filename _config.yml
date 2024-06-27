@@ -19,10 +19,10 @@ future : true
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "read,note."
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "f.f.f.f.f.f.f.f."
 description              : "An amazing website."
 url                      : "https://jiyoungeeeeeeeeeeeeeeeeeeeee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
