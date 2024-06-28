@@ -18,8 +18,8 @@ category[1].size > categories_max %} {% assign categories_max = category[1].size
       site.categories %} {% if category[1].size == i %}
       <ul style="padding-top: 0px; padding-bottom: 0px">
         <a href="/categories/#{{ category[0] | slugify }}">
-          <strong style="font-size: 16px">{{ category[0] }}</strong>
-          <span class="taxonomy__count" style="font-size: 14px">{{ i }}</span>
+          <strong style="font-size: 15px">{{ category[0] }}</strong>
+          <span class="taxonomy__count" style="font-size: 15px">{{ i }}</span>
         </a>
       </ul>
       {% endif %} {% endfor %} {% endfor %}
@@ -37,8 +37,8 @@ category[1].size > categories_max %} {% assign categories_max = category[1].size
       tag[1].size == i %}
       <ul style="padding-top: 0px; padding-bottom: 0px">
         <a href="/tags/#{{ tag[0] | slugify }}">
-          <strong style="font-size: 16px">{{ tag[0] }}</strong>
-          <span class="taxonomy__count" style="font-size: 14px">{{ i }}</span>
+          <strong style="font-size: 15px">{{ tag[0] }}</strong>
+          <span class="taxonomy__count" style="font-size: 15px">{{ i }}</span>
         </a>
       </ul>
       {% endif %} {% endfor %} {% endfor %}

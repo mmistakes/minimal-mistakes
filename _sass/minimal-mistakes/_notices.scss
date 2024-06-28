@@ -11,13 +11,17 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  /* override*/
+  margin: 1em 0 !important; /* override*/
   padding: 1em;
   color: $text-color;
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
   text-indent: initial; /* override*/
-  background-color: mix($background-color, $notice-color, $notice-background-mix);
+  background-color: mix(
+    $background-color,
+    $notice-color,
+    $notice-background-mix
+  );
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
@@ -58,12 +62,16 @@
   }
 
   code {
-    background-color: mix($background-color, $notice-color, $code-notice-background-mix)
+    background-color: mix(
+      $background-color,
+      $notice-color,
+      $code-notice-background-mix
+    );
   }
 
-	pre code {
-		background-color: inherit;
-	}
+  pre code {
+    background-color: inherit;
+  }
 
   ul {
     &:last-child {
