@@ -1,9 +1,16 @@
 ---
 layout: single
 title: "Pytorch Lightning과 Hydra 사용해보기"
+
+# sidebar:
+#   nav: "counts"
+
 categories: Pytorch
-tag: [Pytorch, Pytorch-Lightning, Hydra]
+tag: [Pytorch]
+# tag: [Pytorch, Pytorch-Lightning, Hydra]
 ---
+
+PytorchLightning과 Hydra를 사용해보자.
 
 # 1.왜 사용할까?
 
@@ -24,14 +31,14 @@ tag: [Pytorch, Pytorch-Lightning, Hydra]
 - 학습, 평가
 - 추론
 
-이외에도 LearningRate Scheduler, EarlyStopping, CheckpointSaving과 같은 다양한 기능들을 원하는대로 사용하기 위해 **구현**을 한다.  
+이외에도 LearningRate Scheduler, EarlyStopping, CheckpointSaving과 같은 다양한 기능들을 원하는대로 사용하기 위해 구현을 한다.  
 분명 필수적으로 구현을 해야하는 것 맞지만 풀어야할 문제가 가진 복잡성에 따라 구현단계에서 소모되는 시간도 크고, 관리적인 측면에서도 상당히 큰 시간과 비용을 요구하게 된다.
 
 또한 사용되는 파라미터를 코드 내부에 직접 작성하는 것은 각각의 스크립트마다 파라미터를 변경해야할 수 있고 같은 파라미터가 여러 위치에서 사용되는 경우 일관성을 유지하기도 어렵다.  
 즉, 이런저런 이유로 인해 한 부분에서 문제가 생긴다면 프로젝트 전체에 영향을 주게 된다.
 
-**파이토치 라이트닝(Pytorch Lightning)**은 개발 단계에서 소모되는 시간과 비용을 단축시키기 위해 코드 템플릿을 제공하는 Python 라이브러리로, 표준화된 방식에 따라 개발을 해야하기 때문에 가독성을 높이면서 유지보수를 쉽게 만든다.  
-**하이드라(Hydra)**는 yaml 파일로 모델 하이퍼파라미터, 프로젝트의 설정값 등을 관리를 쉽게 해주는 라이브러리로써 다양한 설정을 실험하고 결과를 비교하는데 집중할 수 있게 한다.
+파이토치 라이트닝(Pytorch Lightning)은 개발 단계에서 소모되는 시간과 비용을 단축시키기 위해 코드 템플릿을 제공하는 Python 라이브러리로, 표준화된 방식에 따라 개발을 해야하기 때문에 가독성을 높이면서 유지보수를 쉽게 만든다.  
+하이드라(Hydra)는 yaml 파일로 모델 하이퍼파라미터, 프로젝트의 설정값 등을 관리를 쉽게 해주는 라이브러리로써 다양한 설정을 실험하고 결과를 비교하는데 집중할 수 있게 한다.
 
 # 2.Pytorch Lightning
 

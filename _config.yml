@@ -296,5 +296,7 @@ defaults:
       toc_label: 목차
       toc_icon: fa-solid fa-hat-wizard
       author_profile: false
+      sidebar:
+        nav: "counts"
 
 date_format: "%Y-%m-%d"
