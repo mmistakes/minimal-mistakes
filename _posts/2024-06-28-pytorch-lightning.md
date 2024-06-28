@@ -1,7 +1,9 @@
 ---
 layout: single
-
 title: "Pytorch Lightning과 Hydra 사용해보기"
+categories: Pytorch
+tag: [Pytorch, Pytorch-Lightning, Hydra]
+toc: true
 ---
 
 # 1.왜 추가적인 라이브러리들을 사용해야하지??
