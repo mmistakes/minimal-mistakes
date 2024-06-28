@@ -166,9 +166,9 @@ len(list_a)
 
 
 
-append method : https://docs.python.org/ko/3/tutorial/datastructures.html
-\n
-https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
+[append method](https://docs.python.org/ko/3/tutorial/datastructures.html)
+
+[Using Lists as Stacks](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks)
 
 ## append()와 insert()
 
@@ -223,7 +223,7 @@ list_a.apend(4)
 
 ## extend() p.201
  - extend() 함수는 매개변수로 리스트를 입력
- - https://docs.python.org/ko/3/library/dis.html#opcode-LIST_EXTEND
+ - [LIST_EXTEND(i)](https://docs.python.org/ko/3/library/dis.html#opcode-LIST_EXTEND)
 
 ## 인덱스로 제거하기 : del 키워드 , pop() 키워드 
 p.203
@@ -244,7 +244,7 @@ list_a
 
 ## pop 
 - "리스트에서 주어진 위치의 항목을 제거하고 반환합니다. 인덱스가 지정되지 않은 경우, a.pop()은 리스트의 마지막 항목을 제거하고 반환합니다. 만약 리스트가 비어 있거나 인덱스가 리스트 범위를 벗어나면 IndexError가 발생합니다."
-- 출처 : https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
+- [출처](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks)
 
 
 ```python
@@ -348,7 +348,7 @@ list_a
 
 
 ## 리스트 정렬하기 : sort()
-- 공식 문서 : https://docs.python.org/ko/3/library/stdtypes.html#list.sort
+- [sort 공식 문서](https://docs.python.org/ko/3/library/stdtypes.html#list.sort)
 - **sort(*, key=None, reverse=False)**
 - "이 메소드는 리스트를 제자리에서 정렬하며, 항목 간의 비교는 오직 < 비교만을 사용합니다. 예외는 무시되지 않습니다
 - 만약 어떤 비교 작업이 실패하면 전체 정렬 작업이 실패하게 되며(그리고 리스트는 아마도 부분적으로 수정된 상태로 남게 될 것입니다)."
@@ -476,7 +476,7 @@ tuple_test[0] = 100
 반면에 항목을 추가, 제거, 변경해야 하는 경우에는 리스트를 사용하는 것이 더 적합합니다
 
 ## 딕셔너리
-https://docs.python.org/3/library/stdtypes.html#typesmapping
+[Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#typesmapping)
  - Web 관련 자료형 중에서 json 형태와 유사
  - pandas 데이터프레임을 만들 때도 매우 자주 사용
  - 사전식 구성 연상
@@ -827,10 +827,8 @@ else:
     
 
 ## 날짜/시간 활용하기
- - detetime (파이썬 기본 라이브러리)
-    + https://docs.python.org/3/library/datetime.html
- - pandas to_datetime
-    + https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html
+ - [detetime (파이썬 기본 라이브러리)](https://docs.python.org/3/library/datetime.html)
+ - [pandas to_datetime](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html)
 
 
 ```python
