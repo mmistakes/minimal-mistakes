@@ -1,6 +1,6 @@
 ---
 title: "스프링 DI(Dependency Injection) 3가지 방법과 장단점"
-date: 2024-06-30
+date: 2024-06-29
 categories: spring
 comments: false
 ---
