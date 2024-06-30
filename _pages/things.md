@@ -15,7 +15,7 @@ This page is a living document where I list things I really like. It's a list of
 
 ## News
 * [The Edinburgh Minute](https://edinburghminute.substack.com/), which I support 
-* Will Media, which I also support
+* [Will Media](https://willmedia.it/) [ITA], which I also support
 
 
 ## Podcasts
@@ -25,7 +25,7 @@ I've been using **Pocket Casts** for ages, it's good. [Here]({{site.url}}/podcas
 
 ## Tools
 
-* I use *Readwise* for both RSS feeds and newsletters, it's really good
+* I use *Readwise* for both RSS feeds and newsletters, it's really useful
 * I have my own newsletter on *Buttondown* - read [here](https://martinapugliese.github.io/doodling-data-reloaded/) about why I moved away from Substack
 * **Recipes**: the [CookBook app](https://thecookbookapp.com/) is great, to the point I bought a lifetime subscription
-* I use AnkiApp for my language learning (flashcards)
+* I use AnkiApp for my language learning (flashcards) - quite an old fashioned design but honestly this is trumped by the quality and range of features
