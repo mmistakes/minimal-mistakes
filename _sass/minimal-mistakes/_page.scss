@@ -418,7 +418,9 @@ body {
 /*
    Comments
    ========================================================================== */
-
+.utterances {
+  max-width: 100% !important;
+}
 .page__comments {
   float: inline-start;
   margin-inline: 0;
