@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Son SangWoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "「자료구조와 알고리즘을 함께 Java!」</br>4월 23일 출간되었습니다.</br>저자. 손상우</br></br>기록은 기억보다 강하다."
+  bio              : "「자료구조와 알고리즘을 함께 Java!」</br>4월 23일 출간되었습니다.</br>저자. 손상우</br></br>문의: rerewwwme@gmail.com</br>기록은 기억보다 강하다."
   location         : "Seoul, Korea"
   email            : "rerewwwme@gmail.com"
   links:
