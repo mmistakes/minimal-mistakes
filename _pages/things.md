@@ -29,3 +29,4 @@ I've been using **Pocket Casts** for ages, it's good. [Here]({{site.url}}/podcas
 * I have my own newsletter on *Buttondown* - read [here](https://martinapugliese.github.io/doodling-data-reloaded/) about why I moved away from Substack
 * **Recipes**: the [CookBook app](https://thecookbookapp.com/) is great, to the point I bought a lifetime subscription
 * I use AnkiApp for my language learning (flashcards) - quite an old fashioned design but honestly this is trumped by the quality and range of features
+
