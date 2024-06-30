@@ -31,6 +31,9 @@ $base0d: #96cbfe !default;
 $base0e: #ff73fd !default;
 $base0f: #b18a3d !default;
 
+.page__title{
+  color: $link-color;
+}
 .page__content {
   .notice,
   .notice--primary,
