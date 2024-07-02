@@ -5,10 +5,10 @@ date: 2024-07-02
 
 
 참고 영상
-	https://www.youtube.com/watch?v=ACzFIAOsfpM&t=715s
+	[테디노트 깃헙(GitHub) 블로그 10분안에 완성하기](https://www.youtube.com/watch?v=ACzFIAOsfpM)
 ### 1. 블로그 만들기
 1. 간단하게 만들기 위해서 유명한 테마를 **fork**한다
-	1. https://github.com/mmistakes/minimal-mistakes 접속
+	1. [minimal-mistakes 테마](https://github.com/mmistakes/minimal-mistakes) 접속
 	![image](https://i.imgur.com/drg0ivT.png)
 	2. 복사된 리포지토리로 들어가서 **Settings** → **General** → **Repository name**을 **“내 ID.github.io”** 이 형식으로 수정해서 입력한다.
 	   ![image](https://i.imgur.com/FkPnUhl.png)
