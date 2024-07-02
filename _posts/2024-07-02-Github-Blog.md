@@ -22,9 +22,13 @@ date: 2024-07-02
 1. **Create new file** 로 새로운 파일을 만들고 파일 이름의 형식을 “**YYYY-MM-DD-제목.md**”로 설정하고 **Front matter**를 설정하고 그 아래에 내용을 작성한다.
 - Front matter
 \---
+
 title: "The second post"
+
 date: 2024-06-29
+
 \---
+
 ![](https://i.imgur.com/QhJUuoS.png)
 	
    ![](https://i.imgur.com/5jpqUV0.png)
