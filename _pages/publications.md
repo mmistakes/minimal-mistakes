@@ -24,7 +24,7 @@ permalink: /publications/
 <span style="font-size:0.75em;">Nathan Lambert, Valentina Piyatkin, **Jacob Morrison**, LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Tom Zick, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi</span><br>
 <span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://arxiv.org/pdf/2403.13787)\] \[[code](https://github.com/allenai/reward-bench/)\] \[[leaderboard](https://huggingface.co/spaces/allenai/reward-bench)\]</span>
 
-* <a href="https://arxiv.org/abs/2404.09479" style="text-decoration:none;color:navy">Unsettled Law: Time to Generate New Approaches?</a>              
+* <a href="https://jacobmorrison.com/assets/Unsettled-Law-2024.pdf" style="text-decoration:none;color:navy">Unsettled Law: Time to Generate New Approaches?</a>              
 <span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
 <span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://jacobmorrison.com/assets/Unsettled-Law-2024.pdf)\]</span>
 
