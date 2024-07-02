@@ -126,7 +126,7 @@ author:
       url: "https://quantdatascience.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/quantdatascience"
+      # url: "https://github.com/quantdatascience"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -138,7 +138,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/quantdatascience"
+      # url: "https://github.com/quantdatascience"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
