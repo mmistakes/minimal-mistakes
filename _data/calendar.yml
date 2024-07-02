@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 4b - Stadtbücherei ",
-    "title": "Ausflug 4b - Stadtbücherei ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmM2bTdtazU0aTZvNjF2dTVuMTU4NTM4Y2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-01T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-01T11:30:00+02:00"
-    },
-    "created": "2024-06-25T12:33:26.000Z",
-    "updated": "2024-06-25T12:33:26.021Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
     "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-02-29T09:58:12.000Z",
     "updated": "2024-02-29T09:58:12.656Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Letzter Schultag: Zeugnisse",
+    "title": "Letzter Schultag: Zeugnisse",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YW5nNTN0bGlmbTF0cXZtOWIyNjZuN3BicjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-17T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-17T10:45:00+02:00"
+    },
+    "created": "2024-06-16T08:37:35.000Z",
+    "updated": "2024-06-16T08:37:35.395Z"
   }
 ]
