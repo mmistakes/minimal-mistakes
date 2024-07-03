@@ -8,6 +8,7 @@ categories: github-blog
 ### 1. navigation.yml 설정
 
 - 형식
+
 ```
 main:
   - title: [메뉴 제목]
@@ -18,6 +19,7 @@ main:
 ```
 
 - 예시
+  
 ```
 main:
   - title: Programming 
@@ -36,8 +38,11 @@ main:
 ```
 
 ### 2. 카테고리의 포스트들을 모아 보여주는 페이지를 생성
+
 	1. 루트 디렉토리에 "_pages" 폴더 생성 후 각각의 카테고리 페이지 파일 생성.
+ 
 - 형식
+
 ```
 ---
 title: [페이지 제목]
@@ -51,7 +56,9 @@ permalink: [페이지 URL]
 {% endfor %}
 
 ```
+
 - 예시(파일 경로: \_pages/category-datastructure-and-algorithm.md)
+
 ```
 ---
 title: "Data Structure and Algorithm"
@@ -63,37 +70,40 @@ permalink: /datastructure-and-algorithm/
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
-
 ```
 
 ### 3. 업로드 할 포스트에 카테고리 추가
+
 - 업로드할 포스트의 front matter에 카테고리를 추가한다
 
 - 형식
+
 ```
 ---
 title: [포스트 제목]
 date: [작성 날짜]
 categories: [카테고리 이름]
 ---
-
 ```
+
 - 예시
+
 ```
 ---
 title: "Data Structure and Algorithm"
 date: 2024-07-03
 categories: datastructure-and-algorithm
 ---
-
 ```
 
 ### 4.  \_config.yml , index.html 수정
 
 - \_config.yml 수정
+
 ![image](https://i.imgur.com/scXMEGa.png)
 
 - index.html
+
 ```
 ---
 layout: home
