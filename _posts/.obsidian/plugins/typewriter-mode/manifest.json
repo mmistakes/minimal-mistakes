@@ -1,0 +1,10 @@
+{
+	"id": "typewriter-mode",
+	"name": "Typewriter Mode",
+	"author": "Davis Riedel",
+	"authorUrl": "https://github.com/davisriedel",
+	"description": "Typewriter scrolling, highlighting of the current line, dimming of unfocused paragraphs and more",
+	"isDesktopOnly": false,
+	"version": "0.0.10",
+	"minAppVersion": "0.15.0"
+}

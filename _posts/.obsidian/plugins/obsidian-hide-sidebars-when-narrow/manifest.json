@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-hide-sidebars-when-narrow",
+	"name": "Hide Sidebars on Window Resize",
+	"version": "1.1.0",
+	"minAppVersion": "1.2.8",
+	"description": "Automatically hides the sidebars when your window is resized to be narrower",
+	"author": "NomarCub, Michael Hanson",
+	"authorUrl": "https://github.com/NomarCub",
+	"fundingUrl": "https://ko-fi.com/nomarcub",
+	"isDesktopOnly": true
+}
