@@ -1,12 +1,25 @@
 # main links
+# main:
+#   - title: "Quick-Start Guide"
+#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#   - title: "About"
+#     url: https://mmistakes.github.io/minimal-mistakes/about/
+#   - title: "Sample Posts"
+#     url: /year-archive/
+#   - title: "Sample Collections"
+#     url: /collection-archive/
+#   - title: "Sitemap"
+#     url: /sitemap/
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: Programming 
+    children:
+      - title: "Data Structure and Algorithm" 
+        url: /_post/datastructure-and-algorithm/
+  - title: AI 
+    children:
+      - title: "Machine Learning"
+        url: /_post/machine-learning/
+  - title: 기타
+    children:
+      - title: "Github Blog"
+        url: /_post/github-blog/
