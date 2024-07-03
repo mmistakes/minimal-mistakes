@@ -2,6 +2,10 @@
 title: "Data Structure and Algorithm"
 layout: archive
 permalink: /datastructure-and-algorithm/
+author_profile: true
+sidebar:
+    nav:
+      - main
 ---
 
 {% assign posts = site.categories.datastructure-and-algorithm %}
