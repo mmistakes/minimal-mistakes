@@ -1,9 +1,9 @@
-
 ---
 title: "Jekyll Github blog 사이드바 네비게이션 추가하기(2024)"
 date: 2024-07-03
 categories: github-blog
 ---
+
 [참고 자료](https://x2info.github.io/minimal-mistakes/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC_%EB%A7%8C%EB%93%A4%EA%B8%B0/)
 
 ### 1. navigation.yml 설정
