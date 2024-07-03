@@ -1,3 +1,4 @@
+
 ---
 title: "Jekyll Github blog 사이드바 네비게이션 추가하기(2024)"
 date: 2024-07-03
@@ -9,18 +10,17 @@ categories: github-blog
 
 - 형식
 
-```
+```yaml
 main:
   - title: [메뉴 제목]
     children:
       - title: [하위 메뉴 제목]
         url: [하위 메뉴 URL]
-
 ```
 
 - 예시
-  
-```
+
+```yaml
 main:
   - title: Programming 
     children:
@@ -34,17 +34,15 @@ main:
     children:
       - title: "GitHub Blog"
         url: /github-blog/
-
 ```
 
 ### 2. 카테고리의 포스트들을 모아 보여주는 페이지를 생성
 
-	1. 루트 디렉토리에 "_pages" 폴더 생성 후 각각의 카테고리 페이지 파일 생성.
- 
+1. 루트 디렉토리에 "_pages" 폴더 생성 후 각각의 카테고리 페이지 파일 생성.
+
 - 형식
 
-<pre>
-  <code>
+```markdown
 ---
 title: [페이지 제목]
 layout: archive
@@ -55,13 +53,11 @@ permalink: [페이지 URL]
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
-  </code>
-</pre>
-
+```
 
 - 예시(파일 경로: \_pages/category-datastructure-and-algorithm.md)
-<pre>
-  <code>
+
+```markdown
 ---
 title: "Data Structure and Algorithm"
 layout: archive
@@ -72,10 +68,7 @@ permalink: /datastructure-and-algorithm/
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
-    
-  </code>
-</pre>
-
+```
 
 ### 3. 업로드 할 포스트에 카테고리 추가
 
@@ -83,7 +76,7 @@ permalink: /datastructure-and-algorithm/
 
 - 형식
 
-```
+```yaml
 ---
 title: [포스트 제목]
 date: [작성 날짜]
@@ -93,7 +86,7 @@ categories: [카테고리 이름]
 
 - 예시
 
-```
+```yaml
 ---
 title: "Data Structure and Algorithm"
 date: 2024-07-03
@@ -101,7 +94,7 @@ categories: datastructure-and-algorithm
 ---
 ```
 
-### 4.  \_config.yml , index.html 수정
+### 4. \_config.yml , index.html 수정
 
 - \_config.yml 수정
 
@@ -109,7 +102,7 @@ categories: datastructure-and-algorithm
 
 - index.html
 
-```
+```yaml
 ---
 layout: home
 author_profile: true
