@@ -43,6 +43,7 @@ main:
 - 형식
 
 ```markdown
+<pre><code>
 ---
 title: [페이지 제목]
 layout: archive
@@ -53,11 +54,13 @@ permalink: [페이지 URL]
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
+</code></pre>
 ```
 
 - 예시(파일 경로: \_pages/category-datastructure-and-algorithm.md)
 
 ```markdown
+<pre><code>
 ---
 title: "Data Structure and Algorithm"
 layout: archive
@@ -68,6 +71,7 @@ permalink: /datastructure-and-algorithm/
 {% for post in posts %}
   {% include archive-single.html type=page.entries_layout %}
 {% endfor %}
+</code></pre>
 ```
 
 ### 3. 업로드 할 포스트에 카테고리 추가
