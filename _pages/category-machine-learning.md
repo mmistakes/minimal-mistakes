@@ -2,6 +2,10 @@
 title: "Machine Learning"
 layout: archive
 permalink: /machine-learning/
+author_profile: true
+sidebar:
+    nav:
+      - main
 ---
 
 {% assign posts = site.categories.machine-learning %}
