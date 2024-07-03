@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "08a534e3ac0af032",
+        "id": "95d4c0d3de98bd68",
         "type": "tabs",
         "children": [
           {
-            "id": "08b11f87847aae99",
+            "id": "1846cf2b24d45a80",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-07-02-Github-Blog.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2024-07-02-Github-Blog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_posts/2024-07-02-Github-Blog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "_posts/2024-07-02-Github-Blog.md"
+              }
             }
           }
         ]
@@ -137,8 +145,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "08b11f87847aae99",
+  "active": "1846cf2b24d45a80",
   "lastOpenFiles": [
+    "_posts/2024-07-03-githubblog-categories.md.md",
+    "_posts/2024-07-02-Github-Blog.md",
     "_pages/category-github-blog.md",
     "_pages/category-machine-learning 복사본.md.sb-0db555ec-JaTm59",
     "_pages/category-machine-learning 복사본.md",
@@ -152,7 +162,6 @@
     "_pages/categories/githubblog.md",
     "_pages/categories",
     "_includes/nav_list_main",
-    "_posts/2024-07-02-Github-Blog.md",
     "_posts/github-blog/2024-07-02-Github-Blog.md",
     "_posts/github-blog",
     "_posts/2024-07-02-test.md"
