@@ -4,6 +4,9 @@ title: "Practice CIFAR-10"
 categories: AI
 tag: Paper Review
 toc: true
+author_profile: true
+sidebar:
+    nav: "docs"
 ---
 
 
