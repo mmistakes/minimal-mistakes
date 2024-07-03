@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
-    "title": "Ausflug A4 - Imkerführung Gartenarbeisschule Hakenfelde",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHFqb282MzI5MmtsdWRncjlnZmxybmRjc2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-02T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-02T12:00:00+02:00"
-    },
-    "created": "2024-02-21T09:45:46.000Z",
-    "updated": "2024-02-21T09:45:46.470Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend der neuen Schulkinder (0. Elternabend)",
     "title": "Elternabend der neuen Schulkinder (0. Elternabend)",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-06-16T08:37:35.000Z",
     "updated": "2024-06-16T08:37:35.395Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Sommerferien",
+    "title": "Sommerferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=c21qaTFvNnEzdGFrM3JhdDRwc3ZvcW9vYWcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-07-18",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-08-31",
+      "date_time": null
+    },
+    "created": "2024-06-16T08:38:07.000Z",
+    "updated": "2024-06-16T08:38:07.779Z"
   }
 ]
