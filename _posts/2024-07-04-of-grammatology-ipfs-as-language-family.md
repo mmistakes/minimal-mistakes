@@ -135,7 +135,7 @@ Here is a bog-simple architectural breakdown of an IPFS system, that we can use 
     * Networking can be optimized for global sync, e.g. via `libp2p`, and/or combined with allowlists and conventional authorization systems, depending on the mode and permissioning model chosen.
     * In its simplest form, all data that comes in will be shared to peers; beyond rate-limiting, any other policy usually requires awareness of abstractions or introspection, thus coupling to choices at other layers.
 3. Routing: The data and information about networking and routability get indexed and advertised to
-    * Advertising content to consumers, TTL, and other persistence consideration add more supporting abstractions (e.g. IPNI records, bitswap, etc.).
+    * Advertising content to consumers, TTL, and other persistence consideration add more supporting abstractions (e.g. IPNI records, delegated routing, bitswap, etc.).
     * Indexes and distribution networks can scale up to global scale, as on the public DHT or "IPFS mainnet", or skew simple and static in bounded networks, such as on subnets, traditionally-enforced trust boundaries, by API keys, etc etc.
     * Optimizing for global distribution favors global-scale "gateways" and a distinction between ingress/origination nodes and "persistence nodes" (F.K.A. "pinning services").
 4. Fetch: The last mile of dereferencing a CID from a potentially untrusted and often unfamiliar node.
@@ -298,7 +298,7 @@ For them, these might be the up-front questions to answer in a first pass of res
 1. Does each logical unit of data have a TTL, or is it permanent? Should there be garbage collection, based on frequency of access if not by expiry decided in advance?
 1. Will your data be append-only? Or (at least from certain views) mutable?
 
-The answers to these questions can determine whether (and where) a given system will need things like `ipns` for mutability, `bitswap` for syncing, `ipni` for advertising CIDs, etc.
+The answers to these questions can determine whether (and where) a given system will need things like `ipns` for mutability, `bitswap` for syncing, `ipni` for advertising CIDs through channels other than the Amino DHT, etc.
 If it only needs them in certain places, figuring out "checkpoints" beyond which they are not needed (and even awareness of them is not needed).
 
 #### Fetch Profiles
