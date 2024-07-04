@@ -182,7 +182,7 @@ Lucid establishes a path for a few hundred lines of javascript to secure ingress
 In this future, data can travel around between web servers and crawlers and backup services and security registries tamper-proofed by CIDs, but still live happily in today's domain-locked browser security model and architecture.
 As distribution networks go, there are more immature ones!
 
-## Excursus: web3up, CAR files and Content/Equivalence Credentials
+## Excursus: web3up, CAR Envelopes, and Content Credentialing
 
 [Web3.storage](https://web3.storage/) is a Protocol Labs-incubated startup that, like `iroh`, needed a different featureset than conventional IPFS to optimize for various aspects of their product offering: location-aware hosting and fetching, object-capability authorization woven into the IPLD graph alongside the data itself, heavy and novel usage of IPLD over discrete resources, etc etc.
 
@@ -313,10 +313,10 @@ Reading between the lines a little, it is obvious that these three distinct mode
 Just a little specification about what a trustless "mode" can be (i.e., do they always map `1:1` to an HTTP header? what gateway or client behaviors MUST and MAY they specify?) would go a long way towards making Trusted Gateways powerful enablers of reliable and mature translation.
 If these modes were a little more detailed (i.e. if they profiles of an architectural component rather than just modes a trustless gateway component can be configured to run), we might get a set of defaults or pre-configurations for gateways that are ready-to-go, just-add-water components of a system that speaks CID at its edges... while allowing more freedom to diverge within their system.
 
-#### Use-Case Excurses: A Simple Example requiring two distinct network profiles and two distinct indexing profiles
+### Excurses: Segmented NFT Example System
 
-To make this more concrete, many systems I've seen have CID _generation_ strictly segregated from CID _publication_:
-think, for example, of a system that only generates CIDs at, say, the minting process of a batch of NFTs, a process which includes very few actors and components.
+To make this more concrete, many systems I've seen have CID _generation_ strictly segregated from CID _publication_ already, and can thus greatly simplify a system with two distinct parts.
+Think, for example, of a system that only generates CIDs at, say, the minting process of a batch of NFTs, a process which includes very few actors and components.
 Once that corpus of images and metadata has been "CIDified" and each NFT has the right URIs encoded in it, this static SQL table of a system switches gears, and suddenly each of those CIDs needs to be available performantly and globally over conventional web technologies.
 
 In this case, how the subsystem involved in generating CIDs bootstraps its networks and passing along its outputs to a more conventional publication system is very different from the network profile of the "mini-gateways".
