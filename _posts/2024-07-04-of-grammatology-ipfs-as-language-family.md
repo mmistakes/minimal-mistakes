@@ -11,6 +11,7 @@ read_time: true
 comments: true
 share: true
 related: true
+toc: true
 description: "Are we still referring to IPFS as one system?"
 excerpt: "Like languages, technologies can drift into mutual incomprehensibility after enough drift and specialization: dialects becoming languages, translators become necessary, and thus dictionaries and reference grammars becoming necessary for scaling them up."
 defaults:
