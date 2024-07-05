@@ -36,7 +36,7 @@ categories: python-basic
         코드 사용
       </li>
     </ul>
-<div class="language-plaintext highlighter-rouge">
+<div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
     def <input type="text" data-answer="함수 이름" /> (<input type="text" data-answer="parameter|파라미터" />, ...):
@@ -59,7 +59,7 @@ categories: python-basic
       </li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+    <div class="language-python highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
     def f(<input type="text" data-answer="x" />): <- x가 <input type="text" data-answer="parameter" />
 
     &gt;&gt;&gt;print(f(<input type="text" data-answer="2" />)) <- 2가 <input type="text" data-answer="argument" />
@@ -92,7 +92,7 @@ categories: python-basic
       <li>%string</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+    <div class="language-python highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
     print('%s %s % ('one', 'two'))
     - %<input type="text" data-answer="s" /> : string
     - %<input type="text" data-answer="d" /> : digit
@@ -107,7 +107,7 @@ categories: python-basic
       </li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+    <div class="language-python highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
     print("I eat <input type="text" data-answer="%d" /> apples."% 3)
     print("Product: <input type="text" data-answer="%s" />, Price per unit: <input type="text" data-answer="%f" />." % ("Apple", 5.243))
     print("Product: %s, Price per unit: %8.2f." % ("Apple", 5.243))
@@ -119,7 +119,7 @@ categories: python-basic
       <li>- str.<input type="text" data-answer="format" />()</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+    <div class="language-python highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
     print("My name is {0}. I'm {1} years.old.".format(<input type="text" data-answer="name" />, <input type="text" data-answer="age" />))
       {0}, {1} : 인덱스
     print("My name is {0}. I'm {1:10.5f} years.old.".format(name, age))
@@ -142,7 +142,7 @@ categories: python-basic
       <li>- naming</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+    <div class="language-python highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
     print("Product : %(name)10s, Price per unit: %(price)10.5f"% {"name":"Apple", "price":5.243})
     print("Product : {name:10s}, Price per unit: {price:10.5f}.".format(name="Apple", price=5.243))
     </code></pre> </div> </div>
@@ -151,7 +151,7 @@ categories: python-basic
 
     <h4>f-string</h4>
 
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+    <div class="language-python highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
     print(f"Hello, {<input type="text" data-answer="name" />} . You are {age}.")
     print(f"{name:<input type="text" data-answer="20" />} ) : 기본이 왼쪽 정렬, 20자리 출력
     print(f"{name:>20}) : 오른쪽 정렬
