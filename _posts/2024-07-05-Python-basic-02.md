@@ -7,8 +7,6 @@ related_posts:
   - "2024-07-05-Python-basic-01-review.md"
 ---
 
-# 파이썬 기초 문법 1
-
 ## Variable & List
 
 variable & memory
