@@ -22,8 +22,6 @@ related_posts:
     </style>
   </head>
   <body>
-    <h1>파이썬 기초 문법 1</h1>
-
     <h2>Variable & List</h2>
     <p>variable & memory</p>
     <p>
