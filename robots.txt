@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gityeop.github.io/sitemap.xml
