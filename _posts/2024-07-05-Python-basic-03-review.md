@@ -17,6 +17,16 @@ categories: python-basic
       .result {
         margin-top: 20px;
       }
+      pre {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        overflow: auto;
+      }
+      code {
+        font-family: monospace;
+      }
     </style>
   </head>
   <body>
