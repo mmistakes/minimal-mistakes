@@ -17,7 +17,7 @@ categories: python-basic
 ```
 def 함수 이름 (parameter #1, ...,):
     수행문 #1(statements)
-    return <반환값값
+    return 반환값
 ```
 
 ### 함수의 수행 순서
