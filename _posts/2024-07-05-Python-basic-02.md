@@ -1,5 +1,5 @@
 ---
-title: Python 기본 문법 - variable, list, operations, 
+title: Python 기본 문법 - variable, list, operations
 date: 2024-07-05
 categories: python-basic
 related_posts:
