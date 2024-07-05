@@ -36,3 +36,12 @@ layout: archive
         crossorigin="anonymous"
         async>
 </script>
+<!-- 관련 포스트가 있는 경우에만 표시 -->
+{% if page.related_posts %}
+  <h2>관련 포스트</h2>
+  <ul>
+    {% for related_post in page.related_posts %}
+      <li><a href="{{ related_post }}">{{ related_post | split: '/' | last }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
