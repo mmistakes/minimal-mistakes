@@ -35,11 +35,11 @@ categories: python-basic
       </li>
     </ul>
 
-    <pre>
+    <pre><code>
     def <input type="text" data-answer="함수 이름" /> (<input type="text" data-answer="parameter|파라미터" />, ...):
         <input type="text" data-answer="수행문" /> #1(statements)
         return <input type="text" data-answer="반환값|리턴값" />
-    </pre>
+    </code></pre>
 
     <h3>함수의 수행 순서</h3>
     <ul>
@@ -56,11 +56,11 @@ categories: python-basic
       </li>
     </ul>
 
-    <pre>
+    <pre><code>
     def f(<input type="text" data-answer="x" />): <- x가 <input type="text" data-answer="parameter" />
 
     &gt;&gt;&gt;print(f(<input type="text" data-answer="2" />)) <- 2가 <input type="text" data-answer="argument" />
-    </pre>
+    </code></pre>
 
     <hr />
 
@@ -89,13 +89,13 @@ categories: python-basic
       <li>%string</li>
     </ul>
 
-    <pre>
+    <pre><code>
     print('%s %s % ('one', 'two'))
     - %<input type="text" data-answer="s" /> : string
     - %<input type="text" data-answer="d" /> : digit
 
     print('<input type="text" data-answer="{}" /> <input type="text" data-answer="{}" />'.format(1,2))
-    </pre>
+    </code></pre>
 
     <ul>
       <li>
@@ -104,26 +104,26 @@ categories: python-basic
       </li>
     </ul>
 
-    <pre>
+    <pre><code>
     print("I eat <input type="text" data-answer="%d" /> apples."% 3)
     print("Product: <input type="text" data-answer="%s" />, Price per unit: <input type="text" data-answer="%f" />." % ("Apple", 5.243))
     print("Product: %s, Price per unit: %8.2f." % ("Apple", 5.243))
     <input type="text" data-answer="%8.2f" /> : 8자리로 출력, 소수점 아래 2자리만 출력
       %<input type="text" data-answer="10s" /> : 10자리 문자열 출력
-    </pre>
+    </code></pre>
 
     <ul>
       <li>- str.<input type="text" data-answer="format" />()</li>
     </ul>
 
-    <pre>
+    <pre><code>
     print("My name is {0}. I'm {1} years.old.".format(<input type="text" data-answer="name" />, <input type="text" data-answer="age" />))
       {0}, {1} : 인덱스
     print("My name is {0}. I'm {1:10.5f} years.old.".format(name, age))
     <input type="text" data-answer="{1:10.5f}" /> : 10자리로 출력, 소수점 아래 5자리까지 출력
     {0:<input type="text" data-answer="<10s" />} : 왼쪽 정렬
     {0:>10s} : 오른쪽 정렬
-    </pre>
+    </code></pre>
 
     <ul>
       <li>- padding</li>
@@ -139,16 +139,16 @@ categories: python-basic
       <li>- naming</li>
     </ul>
 
-    <pre>
+    <pre><code>
     print("Product : %(name)10s, Price per unit: %(price)10.5f"% {"name":"Apple", "price":5.243})
     print("Product : {name:10s}, Price per unit: {price:10.5f}.".format(name="Apple", price=5.243))
-    </pre>
+    </code></pre>
 
     <hr />
 
     <h4>f-string</h4>
 
-    <pre>
+    <pre><code>
     print(f"Hello, {<input type="text" data-answer="name" />} . You are {age}.")
     print(f"{name:<input type="text" data-answer="20" />} ) : 기본이 왼쪽 정렬, 20자리 출력
     print(f"{name:>20}) : 오른쪽 정렬
@@ -156,7 +156,7 @@ categories: python-basic
     print(f"{name:<input type="text" data-answer="*>20" />}) : 오른쪽 정렬에 빈 공간을 *로 채움
     print(f"{name:<input type="text" data-answer="*^20" />}) : 가운데 정렬에 빈 공간을 *로 채움
     print(f"{number:<input type="text" data-answer=".2f" />}") : 소수점 아래 2자리
-    </pre>
+    </code></pre>
 
     <button onclick="checkAnswers()">제출</button>
     <p id="result"></p>
