@@ -38,7 +38,7 @@ categories: python-basic
     </ul>
 <div class="language-plaintext highlighter-rouge">
   <div class="highlight">
-    <div class="language-plaintext highlighter-rouge">   <div class="highlight">     <pre class="highlight"><code>
+        <pre class="highlight"><code>
     def <input type="text" data-answer="함수 이름" /> (<input type="text" data-answer="parameter|파라미터" />, ...):
         <input type="text" data-answer="수행문" /> #1(statements)
         return <input type="text" data-answer="반환값|리턴값" />
