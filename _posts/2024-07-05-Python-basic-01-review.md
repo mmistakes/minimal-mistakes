@@ -12,6 +12,7 @@ categories: python-basic
     <style>
       input[type="text"] {
         width: 150px;
+        border: 1px solid black;
       }
       .result {
         margin-top: 20px;
