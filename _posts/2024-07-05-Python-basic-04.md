@@ -140,7 +140,7 @@ else:
 File "test.py, line 1 # 몇번째 줄에
  test = float(intput())
  ^  # 이 부분에 에러가 있어요
-IndentationError : unexpected indet # 이런 문제가 있네요
+IndentationError : unexpected indent # 이런 문제가 있네요
 ```
 
 - 논리적 에러 : print()를 찍어보며 확인하기
