@@ -2,8 +2,10 @@
 title: Python 기본 문법 - Python의 특징(복습용)
 date: 2024-07-05
 categories: python-basic
+related_posts:
+  - "2024-07-05-Python-basic-01.md"
 ---
-<!DOCTYPE html>
+
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
