@@ -1,5 +1,5 @@
 ---
-title: Conditionals and Loops(조건문과 루프)
+title: Conditionals and Loops(조건문과 루프)(복습용)
 date: 2024-07-05
 categories: python-basic
 ---
