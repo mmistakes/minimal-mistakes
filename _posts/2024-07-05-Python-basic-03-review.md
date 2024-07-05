@@ -10,23 +10,79 @@ categories: python-basic
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python 학습</title>
     <style>
-      input[type="text"] {
-        width: 150px;
-        border: 1px solid black;
-      }
-      .result {
-        margin-top: 20px;
-      }
-      pre {
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        overflow: auto;
-      }
-      code {
-        font-family: monospace;
-      }
+      /* 추가 및 수정된 CSS */
+input[type="text"] {
+  width: 150px;
+  border: 1px solid black;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  margin: 1em 0;
+}
+
+code {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  color: #000;
+}
+
+div.highlighter-rouge, figure.highlight {
+  position: relative;
+  margin-bottom: 1em;
+  background: #282a36;
+  color: #f8f8f2;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.875em;
+  line-height: 1.6;
+  border-radius: 4px;
+}
+
+div.highlighter-rouge > pre, div.highlighter-rouge pre.highlight, figure.highlight > pre, figure.highlight pre.highlight {
+  margin: 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.highlight pre {
+  width: 100%;
+}
+
+tt, code, kbd, samp, pre {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+  orphans: 3;
+  widows: 3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  unicode-bidi: isolate;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  line-height: 1.5;
+}
     </style>
   </head>
   <body>
