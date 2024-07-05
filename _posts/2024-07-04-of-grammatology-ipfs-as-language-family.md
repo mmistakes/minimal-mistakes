@@ -255,7 +255,7 @@ I'm sure someone will eventually convince me there are effective three, or six, 
 3. Indexing --> Data Circulation dialect
 4. Hosting-Consumer Interface --> Fetch dialect
 
-#### Ingress Dialects
+### Ingress Dialects
 
 Ingress profiles are pretty self-explanatory: the configuration of an ingress client often accomodates a lot of optionality, and one ingress client can often be configured to "mimic" another and produce the CID that this other client would have.
 Formalizing this with an IPFS spec might make interop targets easier to backlog, roadmap, and prioritize.
@@ -269,7 +269,7 @@ it decomposes a network to its smallest unit (the CID) and recreates it in a new
 In many cases, it would be preferable to instead make living systems interact in the present (and at system-scale) at one or more of the other three layers in a way that is _aware of_ differences of CID generation.
 This could well require, at those layers, for "foreign" CIDs to be routed and handled differently, accomodating (if nothing else) the somewhat expensive work of translating CIDs for the benefit of the rest of the system.
 
-#### Networking Dialects
+### Networking Dialects
 
 Here there is much less diversity, partly because `libp2p` has been so useful for stitching servers almost everywhere and anywhere into the Amino DHT, so few other dialects have evolved.
 Historically, libp2p was the default option both for automagically forming synchronization networks on a peer-to-peer basis, AND for the formation of a broader and more heirarchical/scalable "content routing" (i.e. CID propagation) network for long-lived content.
@@ -283,7 +283,7 @@ Little work has been done to specify this layer, partly because interoperability
 It might be necessary if evolution continues on non-Amino systems that might develop a need to federate _to one another_.
 It could also be worth specifying sooner for projects like "supersetting" Amino and making it work more smoothly with other global-scale DHTs like the [Mainline DHT](https://discuss.ipfs.tech/t/ipld-and-ipfs-a-pitch-for-the-future/15095) that runs `pkarr` and BitTorrent, or deeper integration with "composable" blockchain data plumbing like [Celestia](https://app.x23.ai/celestia/discussions/topic/1416/questions-regarding-p2p-and-its-design).
 
-#### Data Circulation Dialects
+### Data Circulation Dialects
 
 Since Amino usecases were prioritized for a long time, lots of optimization for massive-scale CID lookup sharing between [all] directly-connected peers and massive advertising of each CID were baked into `kubo` and other implementations.
 Over time, even these optimizations were not enough and hyperscaling components like Elastic IPFS and IPFS-cluster were evolved to accomodate usecases where millions of CIDs were added every day to massive stores, for whom even indexing CIDs for advertisement became a bottlenecking problem at scale.
@@ -301,7 +301,7 @@ For them, these might be the up-front questions to answer in a first pass of res
 The answers to these questions can determine whether (and where) a given system will need things like `ipns` for mutability, `bitswap` for syncing, `ipni` for advertising CIDs through channels other than the Amino DHT, etc.
 If it only needs them in certain places, figuring out "checkpoints" beyond which they are not needed (and even awareness of them is not needed).
 
-#### Fetch Dialects
+### Fetch Dialects
 
 We could think of the trustless gateway project as the design precedent for a more flexible and interoperable architecture.
 The trustless gateway could be thought of as a "checkpoint" where IPFS-aware (but system-unaware) counterparties bridge a perimeter: CID verifiability as no-guarantees egress protocol.
