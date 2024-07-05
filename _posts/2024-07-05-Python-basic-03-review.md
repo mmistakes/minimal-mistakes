@@ -8,7 +8,7 @@ categories: python-basic
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python 기본 문법 - Function and Console I/O(복습용)</title>
+    <title>Python 기본 문법 - Function and Console I/O-review</title>
     <style>
       /* 기존 CSS 스타일과 추가된 스타일 */
       input[type="text"] {
@@ -17,54 +17,6 @@ categories: python-basic
       }
       .result {
         margin-top: 20px;
-      }
-      pre {
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        overflow: auto;
-        margin: 1em 0;
-      }
-      code {
-        font-family: Monaco, Consolas, "Lucida Console", monospace;
-        color: #000;
-      }
-      div.highlighter-rouge, figure.highlight {
-        position: relative;
-        margin-bottom: 1em;
-        background: #282a36;
-        color: #f8f8f2;
-        font-family: Monaco, Consolas, "Lucida Console", monospace;
-        font-size: 0.875em;
-        line-height: 1.6;
-        border-radius: 4px;
-      }
-      div.highlighter-rouge > pre, div.highlighter-rouge pre.highlight, figure.highlight > pre, figure.highlight pre.highlight {
-        margin: 0;
-        padding: 1em;
-        overflow: auto;
-      }
-      .highlight pre {
-        width: 100%;
-      }
-      tt, code, kbd, samp, pre {
-        font-family: Monaco, Consolas, "Lucida Console", monospace;
-      }
-      p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
-        orphans: 3;
-        widows: 3;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      pre {
-        display: block;
-        font-family: monospace;
-        unicode-bidi: isolate;
-        white-space: pre;
-        margin: 1em 0;
-      }
   </head>
   <body>
     <h1>Function and Console I/O</h1>
