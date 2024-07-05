@@ -301,7 +301,7 @@ For them, these might be the up-front questions to answer in a first pass of res
 The answers to these questions can determine whether (and where) a given system will need things like `ipns` for mutability, `bitswap` for syncing, `ipni` for advertising CIDs through channels other than the Amino DHT, etc.
 If it only needs them in certain places, figuring out "checkpoints" beyond which they are not needed (and even awareness of them is not needed).
 
-#### Fetch Profiles
+#### Fetch Dialects
 
 We could think of the trustless gateway project as the design precedent for a more flexible and interoperable architecture.
 The trustless gateway could be thought of as a "checkpoint" where IPFS-aware (but system-unaware) counterparties bridge a perimeter: CID verifiability as no-guarantees egress protocol.
