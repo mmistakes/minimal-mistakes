@@ -45,7 +45,7 @@ categories: python-basic
       <li>- 조건 불일치시 수행 명령 block</li>
     </ul>
 
-<div class="language-plaintext highlighter-rouge">
+<div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 # 비교 연산자
@@ -64,7 +64,7 @@ categories: python-basic
 </div>
 
 
-    <div class="language-plaintext highlighter-rouge">
+    <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 boolean_list = [True, False, True, False, True]
@@ -85,7 +85,7 @@ boolean_list = [True, False, True, False, True]
       <li>- 조건문을 사용하여 참일 경우와 거짓일 경우의 결과를 한줄에 표현</li>
     </ul>
 
-   <div class="language-plaintext highlighter-rouge">
+   <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
  >>> value = 12
@@ -115,7 +115,7 @@ boolean_list = [True, False, True, False, True]
       <li>- <input type="text" data-answer="range()" /> 사용하기</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">
+    <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 for looper in [1, 2, 3, 4, 5]:
@@ -137,7 +137,7 @@ for looper in [1, 2, 3, 4, 5]:
 
     <h4>간격을 두고 세기</h4>
 
-    <div class="language-plaintext highlighter-rouge">
+    <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 for i in range(1, 10, 2):
@@ -150,7 +150,7 @@ for i in range(1, 10, 2):
 
     <h4>역순으로 반복문 수행</h4>
 
-    <div class="language-plaintext highlighter-rouge">
+    <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 for i in range(10, 1, -1):
@@ -171,7 +171,7 @@ for i in range(10, 1, -1):
       <li>- break : 특정 조건에서 반복 종료</li>
     </ul>
 
-   <div class="language-plaintext highlighter-rouge">
+   <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 for i in range(10):
@@ -188,7 +188,7 @@ for i in range(10):
       <li>- continue : 특정 조건에서 남은 반복 명령 skip</li>
     </ul>
 
-   <div class="language-plaintext highlighter-rouge">
+   <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 for i in range(10):
@@ -205,7 +205,7 @@ for i in range(10):
       <li>- else : 반복 조건이 만족하지 않을 경우 반복 종료 시 1회 수행</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">
+    <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 for i in range(10):
@@ -231,7 +231,7 @@ for i in range(10):
       <li>- <strong>논리적 에러</strong>를 찾기 위한 테스트도 중요</li>
     </ul>
 
-   <div class="language-plaintext highlighter-rouge">
+   <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 - IndentationError : <input type="text" data-answer="들여쓰기 오류" />
@@ -242,7 +242,7 @@ for i in range(10):
 </div>
 
 
-   <div class="language-plaintext highlighter-rouge">
+   <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 File "test.py, line 1 # 몇번째 줄에
@@ -259,7 +259,7 @@ File "test.py, line 1 # 몇번째 줄에
       <li>- 논리적 에러 : print()를 찍어보며 확인하기</li>
     </ul>
 
-    <div class="language-plaintext highlighter-rouge">
+    <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
 if __name__ == '__main__':
