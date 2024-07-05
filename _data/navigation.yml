@@ -4,6 +4,8 @@ main:
     children:
       - title: "Data Structure and Algorithm" 
         url: /datastructure-and-algorithm/
+      - title: "Python 기본 문법"
+        url: /python-basic/
   - title: AI 
     children:
       - title: "Machine Learning"
@@ -12,7 +14,7 @@ main:
     children:
       - title: "Github Blog"
         url: /github-blog/
-
+  
 # main:
 #   - title: "Quick-Start Guide"
 #     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
