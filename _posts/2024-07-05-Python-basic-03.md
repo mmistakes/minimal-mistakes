@@ -76,8 +76,8 @@ print("Product: %s, Price per unit: %8.2f." % ("Apple", 5.243))
   %10s : 10자리 문자열 출력
 ```
 
-- str.forat()
-  - "~~~{datatype}~~~".format(argument)
+- str.format()
+  - "{datatype}".format(argument)
 
 ```
 print("My name is {0}. I'm {1} years.old.".format(name, age))
