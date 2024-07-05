@@ -313,7 +313,7 @@ Reading between the lines a little, it is obvious that these three distinct mode
 Just a little specification about what a trustless "mode" can be (i.e., do they always map `1:1` to an HTTP header? what gateway or client behaviors MUST and MAY they specify?) would go a long way towards making Trusted Gateways powerful enablers of reliable and mature translation.
 If these modes were a little more detailed (i.e. if they profiles of an architectural component rather than just modes a trustless gateway component can be configured to run), we might get a set of defaults or pre-configurations for gateways that are ready-to-go, just-add-water components of a system that speaks CID at its edges... while allowing more freedom to diverge within their system.
 
-### Excurses: Segmented NFT Example System
+## Excursus: Segmented NFT Example System
 
 To make this more concrete, many systems I've seen have CID _generation_ strictly segregated from CID _publication_ already, and can thus greatly simplify a system with two distinct parts.
 Think, for example, of a system that only generates CIDs at, say, the minting process of a batch of NFTs, a process which includes very few actors and components.
