@@ -2,6 +2,8 @@
 title: Python 기본 문법 - Python의 특징
 date: 2024-07-05
 categories: python-basic
+related_posts:
+  - "2024-07-05-Python-basic-01-review.md"
 ---
 
 ## Python
