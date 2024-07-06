@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Bundesjugendspiele",
-    "title": "Bundesjugendspiele",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWczcjYzOXZvZ3N1MDg4ZGQyczVmcDNrcTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-07-05",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-07-06",
-      "date_time": null
-    },
-    "created": "2024-06-14T03:59:40.000Z",
-    "updated": "2024-06-14T03:59:40.797Z"
-  },
-  {
-    "image_path": null,
     "alt": "Mitgliederversammlung Förderverein",
     "title": "Mitgliederversammlung Förderverein",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-02-29T09:58:12.000Z",
     "updated": "2024-02-29T09:58:12.656Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Letzter Schultag: Zeugnisse",
+    "title": "Letzter Schultag: Zeugnisse",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YW5nNTN0bGlmbTF0cXZtOWIyNjZuN3BicjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-17T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-17T10:45:00+02:00"
+    },
+    "created": "2024-06-16T08:37:35.000Z",
+    "updated": "2024-06-16T08:37:35.395Z"
   }
 ]
