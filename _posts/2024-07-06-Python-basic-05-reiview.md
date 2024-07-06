@@ -288,6 +288,9 @@ def <input type="text" data-answer="동사" />+<input type="text" data-answer="�
             </ul>
         </li>
     </ul>
+     <button onclick="checkAnswers()">제출</button>
+    <p id="result"></p>
+
     <script>
       function normalizeText(text) {
         return text.trim().toLowerCase().replace(/\s+/g, "");
