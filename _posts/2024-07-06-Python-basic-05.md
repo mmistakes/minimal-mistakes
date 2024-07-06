@@ -3,13 +3,12 @@ title: String and advanced function concept
 date: 2024-07-06
 categories: python-basic
 ---
-# String and advanced function concept
 
 ## String
 
 - 시퀀스 자료형으로 문자형 data를 메모리에 저장
 - 영문자 한 글자는 1byte의 메모리 공간을 사용
-- ![alt text](image.png)
+- ![alt text](https://i.imgur.com/mna5FrP.png))
 
 비트 : 0 또는 1
 
