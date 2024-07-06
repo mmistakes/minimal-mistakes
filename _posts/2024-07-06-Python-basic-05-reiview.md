@@ -21,7 +21,7 @@ categories: python-basic
     </style>
 </head>
 <body>
-    <h1>String and Advanced Function Concept</h1>
+    <p>이 포스트는 <a href="https://www.boostcourse.org/ai100/lecture/739168?isDesc=false">이 사이트</a>의 동영상 강의를 바탕으로 작성되었습니다. 더 자세한 내용은 해당 강의를 참고하시기 바랍니다.</p>
 
     <h2>String</h2>
     <ul>
