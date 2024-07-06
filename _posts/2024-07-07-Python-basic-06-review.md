@@ -226,7 +226,7 @@ print(deque_list)
 </div>
 
 <ul>
-    <li>rotate, reverse 등 Linked List[^1]의 특성을 지원함</li>
+    <li><input type="text" data-answer="rotate" />, reverse 등 <input type="text" data-answer="Linked List" />[^1]의 특성을 지원함</li>
     <li>기존 list 형태의 함수를 모두 지원함</li>
 </ul>
 
