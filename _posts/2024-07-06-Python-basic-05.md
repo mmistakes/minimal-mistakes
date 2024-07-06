@@ -8,7 +8,7 @@ categories: python-basic
 
 - 시퀀스 자료형으로 문자형 data를 메모리에 저장
 - 영문자 한 글자는 1byte의 메모리 공간을 사용
-- ![alt text](https://i.imgur.com/mna5FrP.png))
+- ![alt text](https://i.imgur.com/mna5FrP.png)
 
 비트 : 0 또는 1
 
@@ -155,7 +155,7 @@ def type_hint_example(name: str) -> str:
   3. 시스템 전체적인 안정성을 확보할 수 있다.
 
 ex)
-![alt text](image-1.png)
+![alt text](https://i.imgur.com/CpgANZk.png)
 
 ## docstring
 
