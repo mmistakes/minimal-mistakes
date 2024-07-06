@@ -130,7 +130,7 @@ t = <input type="text" data-answer="(1, )" /> # 튜플로 선언하려면 <input
         <pre class="highlight"><code>
 s1 = set([1, 2, 3, 4, 5])
 s1 = set([3, 4, 5, 6, 7])
-s1.<input type="text" data-answer="union" />(s1) or s1 <input type="text" data-answer="|" /> s2
+s1.<input type="text" data-answer="union" />(s1) or s1 | s2
 # {1, 2, 3, 4, 5, 6, 7}
 s1.<input type="text" data-answer="intersection" />(s2) or s1 <input type="text" data-answer="&" /> s2
 # {3, 4, 5}
