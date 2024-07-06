@@ -3,6 +3,7 @@ title: String and advanced function concept
 date: 2024-07-06
 categories: python-basic
 ---
+이 포스트는 [[이 사이트](https://example.com)](https://www.boostcourse.org/ai100/lecture/739168?isDesc=false)의 동영상 강의를 바탕으로 작성되었습니다. 더 자세한 내용은 해당 강의를 참고하시기 바랍니다.
 
 ## String
 
