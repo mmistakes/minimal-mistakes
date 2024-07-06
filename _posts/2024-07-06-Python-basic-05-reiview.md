@@ -237,7 +237,7 @@ def type_hint_example(name<input type="text" data-answer=":" /> str) <input type
         </li>
     </ul>
     <p>ex)</p>
-    <li><img src="[https://i.imgur.com/mna5FrP.png](https://i.imgur.com/CpgANZk.png)" alt="alt text"></li>
+    <li><img src="https://i.imgur.com/mna5FrP.png" alt="alt text"></li>
 
     <h2>docstring</h2>
     <ul>
