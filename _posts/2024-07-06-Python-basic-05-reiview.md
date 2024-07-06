@@ -47,8 +47,8 @@ a.lower() # 문자열을 소문자로 변환
 a.capitalize() # 첫 글자를 대문자로 변환
 a.title() # 각 단어의 첫 글자를 대문자로 변환
 a.count('abc') # 'abc' 문자열의 출현 횟수를 반환
-a.find('abc') # 'abc' 문자열이 처음 나타나는 위치를 반환 (없으면 -1)
-a.rfind('abc') # 'abc' 문자열이 마지막으로 나타나는 위치를 반환 (없으면 -1)
+a.<input type="text" data-answer="find" />('abc') # 'abc' 문자열이 처음 나타나는 위치를 반환 (없으면 -1)
+a.<input type="text" data-answer="rfind" />('abc') # 'abc' 문자열이 마지막으로 나타나는 위치를 반환 (없으면 -1)
 a.startswith('abc') # 문자열이 'abc'로 시작하면 True, 아니면 False
 a.endswith('abc') # 문자열이 'abc'로 끝나면 True, 아니면 False
 a.split() # 공백을 기준으로 문자열을 나누어 리스트로 반환
@@ -132,8 +132,8 @@ def swap_offset(offset_x, offset_y):
 </div>
 
     <ul>
-        <li>이 함수는 리스트 <code>a</code>의 특정 위치에 있는 값을 교환합니다.</li>
-        <li><code>offset_x</code>와 <code>offset_y</code>는 리스트의 인덱스(위치)를 의미합니다.</li>
+        <li>이 함수는 리스트 <code>a</code>의 <input type="text" data-answer="특정 위치에 있는 값" />을 교환합니다.</li>
+        <li><code>offset_x</code>와 <code>offset_y</code>는 리스트의 <input type="text" data-answer="인덱스(위치)|위치|인덱스" />를 의미합니다.</li>
         <li>예를 들어, <code>swap_offset(0, 1)</code>을 호출하면 <code>a[0]</code>과 <code>a[1]</code>의 값이 교환되어 리스트 <code>a</code>는 <code>[2, 1, 3, 4, 5]</code>가 됩니다.</li>
     </ul>
 
@@ -161,8 +161,8 @@ def swap_reference(list, offset_x, offset_y):
     <h2>function - scoping rule</h2>
     <ul>
         <li>변수의 범위(Scoping Rule)</li>
-        <li>지역변수(local variable) : 함수내에서만 사용</li>
-        <li>전역변수(Global variable) : 프로그램 전체에서 사용</li>
+        <li><input type="text" data-answer="지역변수(local variable)|local variable|지역 변수" /> : 함수내에서만 사용</li>
+        <li><input type="text" data-answer="전역변수(Global variable)|global variable|전역변수" /> : 프로그램 전체에서 사용</li>
     </ul>
 <div class="language-python highlighter-rouge">
   <div class="highlight">
@@ -175,6 +175,9 @@ def test(t): # t : 함수 내의 변수 local variable
 x = 10
 test(x)
 print(t)
+# <input type="text" data-answer="10" />
+# In Function:  <input type="text" data-answer="20" />
+# <input type="text" data-answer="NameError" />: name 't' is not defined
 </code>
 </pre> 
 </div> 
@@ -192,8 +195,8 @@ s = "I love Paris!"
 f()
 print(s)
 
-# I love London!
-# I love London!
+# <input type="text" data-answer="I love London!" />
+# <input type="text" data-answer="I love London!" />
 </code>
 </pre> 
 </div> 
@@ -203,21 +206,21 @@ print(s)
     <h2>Recursive Function(재귀 함수)</h2>
     <ul>
         <li>자기 자신을 호출하는 함수</li>
-        <li>점화식과 같은 재귀적 수학 모형을 표현할 때 사용</li>
-        <li>재귀 종료 조건 존재, 종료 조건까지 함수호출 반복</li>
+        <li>점화식과 같은 <input type="text" data-answer="재귀적 수학" /> 모형을 표현할 때 사용</li>
+        <li>재귀 <input type="text" data-answer="종료 조건" /> 존재, <input type="text" data-answer="종료 조건" />까지 함수호출 반복</li>
     </ul>
 
     <h2>Function type hints</h2>
     <ul>
         <li>파이썬의 가장 큰 특징 : dynamic typing</li>
-        <li>처음 함수를 사용하는 사용자가 interface를 알기 어렵다는 단점이 있음</li>
+        <li>처음 함수를 사용하는 사용자가 <input type="text" data-answer="interface|인터페이스" />를 알기 어렵다는 단점이 있음</li>
     </ul>
 <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
-def do_function(var_name: var_type) -> return_type:
+def do_function(var_name<input type="text" data-answer=":" /> var_type) <input type="text" data-answer="->" /> return_type:
     pass
-def type_hint_example(name: str) -> str:
+def type_hint_example(name<input type="text" data-answer=":" /> str) <input type="text" data-answer="->" /> str:
     return f"Hello, {name}"
 </code>
 </pre> 
@@ -239,7 +242,7 @@ def type_hint_example(name: str) -> str:
     <h2>docstring</h2>
     <ul>
         <li>파이썬 함수에 대한 상세스펙을 사전에 작성 -> 함수 사용자의 이해도 up</li>
-        <li>세 개의 따옴표로 docstring 영역 표시(함수명 아래)</li>
+        <li><input type="text" data-answer="세 개의 따옴표|&quot;&quot;&quot;" />로 docstring 영역 표시(함수명 아래)</li>
     </ul>
 
     <h2>함수 작성 가이드 라인</h2>
@@ -249,7 +252,7 @@ def type_hint_example(name: str) -> str:
 <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
-def 동사+명사():
+def <input type="text" data-answer="동사" />+<input type="text" data-answer="명사" />():
 </code>
 </pre> 
 </div> 
@@ -258,7 +261,7 @@ def 동사+명사():
         <li>하나의 함수에는 유사한 역할을 하는 코드만 포함</li>
         <li>인자로 받은 값 자체를 바꾸진 말 것(임시변수 선언)</li>
         <li>공통적으로 사용되는 코드는 함수로 변환</li>
-        <li>복잡한 수식, 조건 -> 식별 가능한 이름의 함수로 변환</li>
+        <li>복잡한 수식, 조건 -> <input type="text" data-answer="식별 가능한 이름의 함수로|식별 가능한 이름으로" /> 변환</li>
     </ul>
 
     <h2>코딩은 팀플</h2>
@@ -267,10 +270,10 @@ def 동사+명사():
     </blockquote>
     <ul>
         <li>사람의 이해를 돕기 위한 <strong>규칙</strong>이 필요함</li>
-        <li>그 규칙을 <strong>코딩 컨벤션</strong>이라고 함(Google python convention)
+        <li>그 규칙을 <strong><input type="text" data-answer="코딩 컨벤션|coding convention" /></strong>이라고 함(Google python <input type="text" data-answer="convention" />)
             <ul>
-                <li>명확한 규칙은 없으나 중요한 건 팀이나 프로젝트 마다의 <strong>일관성</strong></li>
-                <li>들여쓰기는 Tab or 4 Space
+                <li>명확한 규칙은 없으나 중요한 건 팀이나 프로젝트 마다의 <strong><input type="text" data-answer="일관성" /></strong></li>
+                <li>들여쓰기는 <input type="text" data-answer="Tab|4 space" /> or <input type="text" data-answer="4 Space| tab" />
                     <ul>
                         <li>일반적으로 4 Space 권장</li>
                     </ul>
