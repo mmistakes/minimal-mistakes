@@ -374,8 +374,8 @@ print(c)
 <div class="language-python highlighter-rouge">
   <div class="highlight">
         <pre class="highlight"><code>
-from collections import namedtuple
-Point = namedtuple('Point', ['x', 'y'])
+from collections import <input type="text" data-answer="namedtuple" />
+Point = <input type="text" data-answer="namedtuple" />('Point', ['x', 'y'])
 p = Point(x = 11, y = 22)
 print(p[0]+p[1])
 # 33
