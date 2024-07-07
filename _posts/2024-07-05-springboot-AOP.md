@@ -16,19 +16,19 @@ published: true
 
 ## AOP ( Aspect Oriented Programming )
 
-AOP는 Aspect Oriented Programming의 준말로, 관점 지향 프로그래밍이라고 합니다.
+AOP는 Aspect Oriented Programming의 준말로, 관점 지향 프로그래밍이라고 한다.
 
-관점 지향 프로그래밍은 어떤 로직을 기준으로 **핵심 관심사(Core Concern)**와 **공통 관심사(Cross-cutting Concern)**로 나누어서 각각을 모듈화하는 개발 방법론입니다. 핵심 관심사는 각 객체가 가져야 할 주요 기능을 말하며, 공통 관심사는 여러 객체에서 공통으로 사용되는 코드를 의미합니다. 이렇게 모듈화란 공통된 로직이나 기능을 하나의 단위로 묶는 것을 말합니다.
+관점 지향 프로그래밍은 어떤 로직을 기준으로 **핵심 관심사(Core Concern)**와 **공통 관심사(Cross-cutting Concern)**로 나누어서 각각을 모듈화하는 개발 방법론이다. 핵심 관심사는 각 객체가 가져야 할 주요 기능을 말하며, 공통 관심사는 여러 객체에서 공통으로 사용되는 코드를 의미한다. 이렇게 모듈화란 공통된 로직이나 기능을 하나의 단위로 묶는 것을 말한다.
 
-AOP에서는 이러한 관심사들을 기준으로 코드를 모듈화하여 재사용성을 높이고 중복을 줄입니다. 예를 들어, 여러 메소드에서 반복되는 로깅, 트랜잭션 관리 등을 횡단적으로 처리할 수 있습니다. 이런 횡단적인 관심사를 **흩어진 관심사(Crosscutting Concerns)**라고 합니다.
+AOP에서는 이러한 관심사들을 기준으로 코드를 모듈화하여 재사용성을 높이고 중복을 줄인다. 예를 들어, 여러 메소드에서 반복되는 로깅, 트랜잭션 관리 등을 횡단적으로 처리할 수 있다. 이런 횡단적인 관심사를 **흩어진 관심사(Crosscutting Concerns)**라고 한다.
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-03-springboot-AOP\AOP.png" alt="Alt text" style="width: 50%; height: 70%; margin: 50px;">
+    <img src="{{site.url}}\images\2024-07-03-springboot-AOP\AOP.png" alt="Alt text" style="width: 50%; height: 70%; margin: 10px;">
 </div>
 
-만약 A에서 주황색 블록을 수정해야 할 경우, 이 로직이 클래스 B와 C에 모두 적용되는 상황이 발생할 수 있습니다. 이때는 유지보수 관점에서 모든 코드를 일일이 수정하는 것이 아니라, 공통 관심사를 담당하는 AspectX만 수정하면 됩니다. 따라서 재사용성과 유지보수성을 크게 향상시킬 수 있다.  
+만약 A에서 주황색 블록을 수정해야 할 경우, 이 로직이 클래스 B와 C에 모두 적용되는 상황이 발생할 수 있다. 이때는 유지보수 관점에서 모든 코드를 일일이 수정하는 것이 아니라, 공통 관심사를 담당하는 AspectX만 수정하면 된다. 따라서 재사용성과 유지보수성을 크게 향상시킬 수 있다.  
 
-AspectX는 여러 클래스나 메소드에서 공통적으로 필요한 기능을 제공하므로, 변경 사항이 생겼을 때 한 곳에서만 수정하면 모든 관련 코드에 반영됩니다.
+AspectX는 여러 클래스나 메소드에서 공통적으로 필요한 기능을 제공하므로, 변경 사항이 생겼을 때 한 곳에서만 수정하면 모든 관련 코드에 반영된다.
 
 AOP 용어 정리
 ------
@@ -58,7 +58,7 @@ Advice의 종류
 
 
 
-스프링이 제공하는 AOP 방식은 주로 프록시를 이용한 방식입니다. 스프링 AOP는 프록시 객체를 자동으로 생성하여 실제 객체의 기능을 실행하기 전, 후에 공통 기능을 호출합니다. 
+스프링이 제공하는 AOP 방식은 주로 프록시를 이용한 방식이다. 스프링 AOP는 프록시 객체를 자동으로 생성하여 실제 객체의 기능을 실행하기 전, 후에 공통 기능을 호출한다. 
 
 ## AOP 적용 - 로깅 
 
@@ -69,9 +69,9 @@ Advice의 종류
 implementation 'org.springframework.boot:spring-boot-starter
 ```
 
-### 2. oggingAspect 클래스 생성
+### 2. LoggingAspect 클래스 생성
 
-@Aspect 어노테이션이 붙은 클래스를 생성하여 로깅 어드바이스를 정의합니다.  아래는 메서드 실행 시 로그를 남기는 간단한 LoggingAspect 클래스 예제입니다.
+@Aspect 어노테이션이 붙은 클래스를 생성하여 로깅 어드바이스를 정의한다.  메서드 실행 시 로그를 남기는 클래스이다.  
 
 
 #### LoggingAspect
@@ -163,18 +163,19 @@ public class LoggingAspect {
 - Swagger UI를 이용하여 테스트
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-03-springboot-AOP\swagger.png" alt="Alt text" style="width: 80%; height: 80%; margin: 50px;">
+    <img src="{{site.url}}\images\2024-07-03-springboot-AOP\swagger.png" alt="Alt text" style="width: 80%; height: 80%; margin: 10px;">
 </div>
 
 - 콘솔 확인
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-03-springboot-AOP\result.png" alt="Alt text" style="width: 100%; height: 100%; margin: 50px;">
+    <img src="{{site.url}}\images\2024-07-03-springboot-AOP\result.png" alt="Alt text" style="width: 100%; height: 100%; margin: 10px;">
 </div>
 
 
  콘솔창에 정상적으로 로그가 잘 출력되는것을 확인할 수 있다 .
 
+**UserApiController에서 각각의 메서드에 로그를 남기는 대신, Spring AOP를 사용하여 로그를 중앙에서 관리하는 클래스를 만들어 코드의 중복을 줄이고 유지보수성을 향상시켰다.**
 
 <br>
 <br>

@@ -32,7 +32,7 @@ IoC는 제어의 역전(Inversion of Control)을 의미합니다. 전통적인 �
 ### IOC 컨테이너란?
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-03-springboot-IOC-DI\IOC.png" alt="Alt text" style="width: 40%; height: 50%; margin: 50px;">
+    <img src="{{site.url}}\images\2024-07-03-springboot-IOC-DI\IOC.png" alt="Alt text" style="width: 70%; height: 70%; margin: 50px;">
 </div>
 
 IoC 컨테이너는 IoC를 제공하는 Bean을 담고 있는 컨테이너이다. Bean은 IoC 컨테이너에서 관리하는 객체를 의미하며, Spring은 이 객체들을 필요에 따라 적절하게 주입하여 사용하게 한다.
