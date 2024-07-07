@@ -295,3 +295,6 @@ defaults:
       share: true
       related: true
       show_date: false # 글 작성 날짜
+      toc: true # table of contents 목차
+      toc_sticky: true # 스크롤해도 목차 고정
+      toc_label: 목차
