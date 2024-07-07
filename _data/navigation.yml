@@ -1,9 +1,26 @@
 # main links
 main:
-  - title: "Category"
+  - title: "Category" # 우측 상단에 보이는 버튼 이름
     url: /categories/
-  - title: "Tag"
+  - title: "Tag" # 우측 상단에 보이는 버튼 이름
     url: /tags/
+  - title: "Search" # 우측 상단에 보이는 버튼 이름
+    url: /search/
+
+docs:
+  - title: "대목차1"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
+  - title: "대목차2"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
     # - title: "Quick-Start Guide"
     #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
     # - title: "About"
