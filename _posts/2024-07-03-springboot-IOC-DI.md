@@ -241,7 +241,8 @@ AuthServiceImpl 객체를 생성할 때 생성자를 통해 Mock 객체를 전�
 
 ### 1. 필드 주입 방식 리팩토링 
 
-기존 코드를 살펴보면 @Autowired 를 ㅇ
+기존 코드를 살펴보면 @Autowired 를 이용한 필드 주입 방식을 사용했다.
+
 ```java
 @Service
 public class AuthDaoImpl implements AuthDao{
