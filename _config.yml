@@ -19,7 +19,7 @@ locale: "ko-KR"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
 title: "김맥스의 개발기록"
 title_separator: "|"
-subtitle: "백엔드 개발자"
+subtitle:
 name: "Minho Kim"
 description: "An amazing website."
 url: "https://maxkmh712.github.io"
@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name:
-  avatar: "/assets/images/photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/max.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio:
   location: "Seoul, South Korea"
   email:
@@ -289,7 +289,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false # ~분 소요 제거
       comments: # true
       share: true
       related: true
