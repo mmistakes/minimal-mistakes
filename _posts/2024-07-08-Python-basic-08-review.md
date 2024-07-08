@@ -285,7 +285,7 @@ for animal in animals:
             </ol>
         </li>
     </ul>
-    <h4><input type="text" data-answer="Encapsulation\캡슐화" /></h4>
+    <h4><input type="text" data-answer="Encapsulation|캡슐화" /></h4>
     <ul>
         <li>캡슐화 또는 정보 은닉(Information Hiding)</li>
         <li>Class를 설계할 때, 클래스 간 간섭/정보공유의 최소화
