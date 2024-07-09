@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Mitgliederversammlung Förderverein",
-    "title": "Mitgliederversammlung Förderverein",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YzE3NTF1MHNjYW0wam44dGowam5ldnVpbW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-08T19:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-08T20:30:00+02:00"
-    },
-    "created": "2024-06-04T18:19:39.000Z",
-    "updated": "2024-06-04T18:19:39.314Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A4 - Spielplatz Dschungeldorf",
     "title": "Ausflug A4 - Spielplatz Dschungeldorf",
     "excerpt": null,
@@ -35,10 +18,44 @@
   },
   {
     "image_path": null,
-    "alt": "Ausflug 6b - Kletterpark Jungfernheidepark",
-    "title": "Ausflug 6b - Kletterpark Jungfernheidepark",
+    "alt": "Ausflug 5a - Strandbad Wannsee",
+    "title": "Ausflug 5a - Strandbad Wannsee",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXM1MGV2OHF2M3V1azVobnRoanI4dmkzZnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NDFzazltYTQxZ2RucHVmMGtrM3ZsdHFpaXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-09T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-09T14:20:00+02:00"
+    },
+    "created": "2024-07-08T12:17:50.000Z",
+    "updated": "2024-07-08T12:17:50.751Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug 6b - Spielplatz Cosmarweg",
+    "title": "Ausflug 6b - Spielplatz Cosmarweg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGIzNzl0YWhqZzVmNzlkYWo3YnJiMXBzOGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-09T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-09T13:30:00+02:00"
+    },
+    "created": "2024-07-08T12:18:53.000Z",
+    "updated": "2024-07-08T12:18:53.856Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug 6b - Kletterpark Jungfernheide",
+    "title": "Ausflug 6b - Kletterpark Jungfernheide",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NXVhaDFsbzZhYTNjMWU5ajR0czU3amR0Z28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
       "date_time": "2024-07-10T07:40:00+02:00"
@@ -47,58 +64,41 @@
       "date": null,
       "date_time": "2024-07-10T13:00:00+02:00"
     },
-    "created": "2024-07-04T12:17:41.000Z",
-    "updated": "2024-07-04T12:17:41.967Z"
+    "created": "2024-07-08T10:32:57.000Z",
+    "updated": "2024-07-08T10:32:57.040Z"
   },
   {
     "image_path": null,
-    "alt": "Ausflug 6b - Zoo",
-    "title": "Ausflug 6b - Zoo",
+    "alt": "Ausflug 4c - Spielplatz Cosmarweg",
+    "title": "Ausflug 4c - Spielplatz Cosmarweg",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWtlY2xpc2ppMmI5NmoxZTJxZzVzMzgydjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MDAyZTVudTVvbGZxZHExMTZrODhqNDBidDkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-07-12T08:00:00+02:00"
+      "date_time": "2024-07-10T08:30:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-07-12T13:30:00+02:00"
+      "date_time": "2024-07-10T11:30:00+02:00"
     },
-    "created": "2024-07-04T12:18:49.000Z",
-    "updated": "2024-07-04T12:18:49.249Z"
+    "created": "2024-07-08T12:16:42.000Z",
+    "updated": "2024-07-08T12:16:42.792Z"
   },
   {
     "image_path": null,
-    "alt": "Ausflug A4 - Umweltbildung Naturschutzstation Hahneberg",
-    "title": "Ausflug A4 - Umweltbildung Naturschutzstation Hahneberg",
+    "alt": "Ausflug A9 - Wasserspielplatz Magistratsweg",
+    "title": "Ausflug A9 - Wasserspielplatz Magistratsweg",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzM3YWt2NW5xMDV0YmFzc3BuNm9nN2lvb3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MXQ2ZDI2azRsNWU5cDdlcW5iaTIyNXZjdXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-07-12T09:00:00+02:00"
+      "date_time": "2024-07-10T10:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-07-12T13:00:00+02:00"
+      "date_time": "2024-07-10T13:00:00+02:00"
     },
-    "created": "2024-02-29T09:58:12.000Z",
-    "updated": "2024-02-29T09:58:12.656Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Letzter Schultag: Zeugnisse",
-    "title": "Letzter Schultag: Zeugnisse",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YW5nNTN0bGlmbTF0cXZtOWIyNjZuN3BicjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-17T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-17T10:45:00+02:00"
-    },
-    "created": "2024-06-16T08:37:35.000Z",
-    "updated": "2024-06-16T08:37:35.395Z"
+    "created": "2024-07-08T12:15:47.000Z",
+    "updated": "2024-07-08T12:15:47.887Z"
   }
 ]
