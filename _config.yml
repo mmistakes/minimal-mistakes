@@ -148,7 +148,7 @@ footer:
       #url: "https://www.facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/bumsu-kim"
+      url: "https://github.com/kbs-kim"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -224,8 +224,11 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
+
 # Outputting
 permalink: /:categories/:title/
+paginate: 15                                    # Defaults : 5
+paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
