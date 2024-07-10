@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug A4 - Spielplatz Dschungeldorf",
-    "title": "Ausflug A4 - Spielplatz Dschungeldorf",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWNkdW5ycXY2Z29lMTIyNzZobWdxZ2Voa2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-09T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-09T11:30:00+02:00"
-    },
-    "created": "2024-07-04T12:16:41.000Z",
-    "updated": "2024-07-04T12:16:41.628Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug 5a - Strandbad Wannsee",
-    "title": "Ausflug 5a - Strandbad Wannsee",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDFzazltYTQxZ2RucHVmMGtrM3ZsdHFpaXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-09T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-09T14:20:00+02:00"
-    },
-    "created": "2024-07-08T12:17:50.000Z",
-    "updated": "2024-07-08T12:17:50.751Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug 6b - Spielplatz Cosmarweg",
-    "title": "Ausflug 6b - Spielplatz Cosmarweg",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGIzNzl0YWhqZzVmNzlkYWo3YnJiMXBzOGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-09T10:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-09T13:30:00+02:00"
-    },
-    "created": "2024-07-08T12:18:53.000Z",
-    "updated": "2024-07-08T12:18:53.856Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug 6b - Kletterpark Jungfernheide",
     "title": "Ausflug 6b - Kletterpark Jungfernheide",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2024-07-08T12:15:47.000Z",
     "updated": "2024-07-08T12:15:47.887Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A8 - Zoo ",
+    "title": "Ausflug A8 - Zoo ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXU3dXY4bHM5ZjI0a29jZjI5dWxrYjA4Nm4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-12T07:45:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-12T13:15:00+02:00"
+    },
+    "created": "2024-07-08T12:12:35.000Z",
+    "updated": "2024-07-08T12:12:35.162Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug 6b - Zoo",
+    "title": "Ausflug 6b - Zoo",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWtlY2xpc2ppMmI5NmoxZTJxZzVzMzgydjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-12T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-12T13:30:00+02:00"
+    },
+    "created": "2024-07-04T12:18:49.000Z",
+    "updated": "2024-07-04T12:18:49.249Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A9 - Fähre Wannsee/Kladow",
+    "title": "Ausflug A9 - Fähre Wannsee/Kladow",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NXJlaWI4MnE5dXFiMzN1N2NkZWpjYzdwNjIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-12T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-12T13:30:00+02:00"
+    },
+    "created": "2024-07-08T12:13:35.000Z",
+    "updated": "2024-07-08T12:13:35.031Z"
   }
 ]
