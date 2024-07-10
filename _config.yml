@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "BumSu Kim"                  # 이름 영역입니다.
-  avatar           : "assets/images/profile-photo.jpg"     # 프로필 사진 경로입니다.
+  avatar           : "assets/images/profile-photo.png"     # 프로필 사진 경로입니다.
   bio              : "대학생활을 하며<br>**공부한것을 기록합니다**<br>"
                      # biography의 약칭으로, 자기소개를 적으시면 됩니다.
                      # 줄바꿈은 <br>로 굵은 글씨는 **글씨** 로 표기
@@ -123,24 +123,38 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "kbsbmori3@gmail.com"
+      url: mailto:kbsbmori3@gmail.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: #"https://github.com/kbs-kim"
+      url: "https://github.com/kbs-kim"
     - label: #"Facebook"
       icon: #"fab fa-fw fa-facebook-square"
       url: #"https://www.facebook.com/eona1301"
     - label: "Instagram"                            # 표시되는 이름입니다.
       icon: "fab fa-fw fa-instagram"                # fab fa-fw fa-{SNS NAME} 으로 해주세요.
-      url: "https://www.instagram.com/bumsiuu/"  # 개인 SNS 계정 링크를 기재하면 됩니다.
+      url: "https://www.instagram.com/bumsiuu_/"  # 개인 SNS 계정 링크를 기재하면 됩니다.
 
 # Site Footer
 footer:
   links:
-    
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:kbsbmori3@gmail.com
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:                                        # 이런식으로 url을 주석처리하면 노출되지 않습니다.
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      #url: "https://www.facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/kbs-kim"
+      url: "https://github.com/bumsu-kim"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/bumsiuu_/"
