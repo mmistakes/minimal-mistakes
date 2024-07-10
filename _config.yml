@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "BumSu Kim"                  # 이름 영역입니다.
-  avatar           : "assets/images/bio-photo.jpg"     # 프로필 사진 경로입니다.
-  bio              : "**공부한것을 기록합니다**<br>"
+  avatar           : "assets/images/profile-photo.jpg"     # 프로필 사진 경로입니다.
+  bio              : "대학생활을 하며<br>**공부한것을 기록합니다**<br>"
                      # biography의 약칭으로, 자기소개를 적으시면 됩니다.
                      # 줄바꿈은 <br>로 굵은 글씨는 **글씨** 로 표기
   location         : "Republic of Korea"            # 지역 입니다. 
@@ -123,7 +123,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: kbsbmori3@gmail.com
+      url: "kbsbmori3@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: #"https://github.com/kbs-kim"
