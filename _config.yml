@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "BumSu Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Hi I'm University Student in Korea"
   location         : "South Korea"
   email            : "kbsbmori3@gmail.com
@@ -122,15 +122,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "kbsbmori3@gmail.com"
-   # - label: "Website"
-      #icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-  #  - label: "Twitter"
-  #   icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-  #  - label: "facebook"
-  #  icon: "fab fa-fw fa-facebook-square"
-      # url: "https://www.instagram.com/bumsiuu_/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kbs-kim"
@@ -145,12 +136,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kbs-kim"
-   # - label: "GitLab"
-    #  icon: "fab fa-fw fa-gitlab"
-      # url:
-   # - label: "Bitbucket"
-    #  icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/bumsiuu_/"
