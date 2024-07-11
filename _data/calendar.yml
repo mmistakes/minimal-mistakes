@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Ausflug 6b - Kletterpark Jungfernheide",
-    "title": "Ausflug 6b - Kletterpark Jungfernheide",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXVhaDFsbzZhYTNjMWU5ajR0czU3amR0Z28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-10T07:40:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-10T13:00:00+02:00"
-    },
-    "created": "2024-07-08T10:32:57.000Z",
-    "updated": "2024-07-08T10:32:57.040Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug 4c - Spielplatz Cosmarweg",
-    "title": "Ausflug 4c - Spielplatz Cosmarweg",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDAyZTVudTVvbGZxZHExMTZrODhqNDBidDkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-10T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-10T11:30:00+02:00"
-    },
-    "created": "2024-07-08T12:16:42.000Z",
-    "updated": "2024-07-08T12:16:42.792Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Ausflug A9 - Wasserspielplatz Magistratsweg",
-    "title": "Ausflug A9 - Wasserspielplatz Magistratsweg",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXQ2ZDI2azRsNWU5cDdlcW5iaTIyNXZjdXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-07-10T10:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-07-10T13:00:00+02:00"
-    },
-    "created": "2024-07-08T12:15:47.000Z",
-    "updated": "2024-07-08T12:15:47.887Z"
-  },
-  {
-    "image_path": null,
     "alt": "Ausflug A8 - Zoo ",
     "title": "Ausflug A8 - Zoo ",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2024-07-08T12:13:35.000Z",
     "updated": "2024-07-08T12:13:35.031Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A1 - Rathaus Spandau",
+    "title": "Ausflug A1 - Rathaus Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDdidWhmcmc2anVoNXEzN282bmxpMDhiYmsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-12T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-12T13:00:00+02:00"
+    },
+    "created": "2024-07-09T12:03:23.000Z",
+    "updated": "2024-07-09T12:03:23.398Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ausflug A4 - Umweltbildung Naturschutzstation Hahneberg",
+    "title": "Ausflug A4 - Umweltbildung Naturschutzstation Hahneberg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzM3YWt2NW5xMDV0YmFzc3BuNm9nN2lvb3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-12T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-12T13:00:00+02:00"
+    },
+    "created": "2024-02-29T09:58:12.000Z",
+    "updated": "2024-02-29T09:58:12.656Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Letzter Schultag: Zeugnisse",
+    "title": "Letzter Schultag: Zeugnisse",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=YW5nNTN0bGlmbTF0cXZtOWIyNjZuN3BicjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-07-17T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-07-17T10:45:00+02:00"
+    },
+    "created": "2024-06-16T08:37:35.000Z",
+    "updated": "2024-06-16T08:37:35.395Z"
   }
 ]
