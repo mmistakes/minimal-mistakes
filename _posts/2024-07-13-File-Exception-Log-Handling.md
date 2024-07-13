@@ -1,5 +1,8 @@
-# File / Exception / Log Handling
-
+---
+title: File / Exception / Log Handling
+date: 2024-07-13
+categories: python-basic
+---
 ## Exception
 
 - 프로그램 사용할 때 일어나는 오류들
