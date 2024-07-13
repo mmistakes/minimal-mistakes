@@ -1,4 +1,8 @@
-# Python data handling
+---
+title: Python data handling
+date: 2024-07-13
+categories: python-basic
+---
 
 1. CSV
 2. 웹(html)
