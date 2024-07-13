@@ -1,4 +1,8 @@
-# Module, Package and Project
+---
+title: Module, Package and Project
+date: 2024-07-13
+categories: python-basic
+---
 
 # Module & Package 개요
 
