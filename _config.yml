@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Anton Kuznetsov"
-  avatar           :  "/images/1.jpg"
+  avatar           :  "/images/photo.jpg"
   bio              : "Security Researcher.Purple Team.Speaker.Author in the xakep.ru"
   location         : "Moscow"
   linkedin         :  "anton-kuznetsov-6046a2235/"
