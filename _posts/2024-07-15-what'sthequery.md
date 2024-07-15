@@ -1,6 +1,7 @@
 ---
 layout: single
 title:   "쿼리가 뭐야?"
+archive__item-excerpt: "이 글을 보고계신 당신 쿼리를 요청하신겁니다."
 ---
 
 ## 개요
