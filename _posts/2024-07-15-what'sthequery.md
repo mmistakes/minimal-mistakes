@@ -1,7 +1,7 @@
 ---
 layout: single
 title:   "쿼리가 뭐야?"
-categories: Computer Science
+categories: Computer_Science
 ---
 
 ## 개요
