@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "evan Note"
+title_separator          : "|"
+subtitle                 : "simply amazing, amazingly simple"
 name                     : "Your Name"
 description              : "An amazing website."
 url                      : "https://jamm0316.github.io"
