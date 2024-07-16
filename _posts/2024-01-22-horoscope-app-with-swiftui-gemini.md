@@ -1,8 +1,19 @@
 ---
-layout: post
+layout: single
 title: "Horoscope app with Gemini AI & SwiftUI"
-categories: [iOS Development, AI, Gemini, Google, SwiftUI, Swift]
-tags: [Gemini, AI, iOS, SwiftUI]
+excerpt: "In this post we'll look at one of the important capabilities of AI models i.e. Summarization. You may have seen this when browsing the reviews section of Amazon where before the actual reviews, you see an AI generated summary of the reviews posted for the given product."
+seo_title: "Horoscope app with Gemini AI & SwiftUI on iOS"
+seo_description: "Horoscope app with Gemini AI & SwiftUI on iOS"
+categories:
+  - iOS
+  - AI
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
 ---
 ![image](/assets/images/post13/horoscope-thumbnail.png)
 
