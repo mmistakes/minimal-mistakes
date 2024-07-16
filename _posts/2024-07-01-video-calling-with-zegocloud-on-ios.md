@@ -16,6 +16,7 @@ tags:
   - Video Calling
   - Voice Calling
 ---
+![image](/assets/images/post20/zegocloud-thumbnail.png)
 
 Watch the video or follow along with the post below. 
 
