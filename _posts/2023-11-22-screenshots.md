@@ -1,18 +1,21 @@
 ---
-layout: post
-title: "iOS Simulator Screenshots with Device Bezels & without the toolbar!"
-categories: [iOS Development]
-tags: [iOS, Simulator, Screenshot]
+layout: single
+title: "Editing iOS Simulator Screenshots with Device Bezels"
+excerpt: "Learn how to edit screenshots of the iOS simulator with device bezels & without the toolbar."
+seo_title: "iOS Simulator Screenshots with Device Bezels"
+seo_description: "iOS Simulator Screenshots with Device Bezels"
+categories:
+  - iOS
+tags:
+  - iOS Development
 ---
-In this post we'll learn how to generate screenshots of the iOS simulator with device bezels & without the toolbar.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/nHwepVSd7t4?controls=0" frameborder="0" allowfullscreen></iframe>
+
+In this post we'll learn how to edit screenshots of the iOS simulator with device bezels & without the toolbar.
 
 ![image](/assets/images/post8/screenshotbeforeafter.png)
 
 View the video or follow along with the steps detailed in the post.
-
-[<img src="https://img.youtube.com/vi/nHwepVSd7t4/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/nHwepVSd7t4)
-
 
 Taking a regular screenshot of the simulator involves using the `⌘ + S` key combination with the simulator active which saves the screenshot to the desktop or your preferred location. You could also use the simulator's `Trigger Screenshot`
 option from the `Device` menu which saves the screenshot to the simulator's internal `Photos` application. You could get this image by going to the `~/Library/Developer/CoreSimulator/Devices/<Simulator ID>/data/Media/DCIM/100APPLE` path on your Mac. You get the simulator ID by running the `xcrun simctl list devices` command in Terminal & looking for `(Booted)` devices in the list that match the simulator.
