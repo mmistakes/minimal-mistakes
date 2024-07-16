@@ -1,8 +1,19 @@
 ---
-layout: post
+layout: single
 title: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"
-categories: [iOS Development, AI, Gemini, Google, SwiftUI, Swift]
-tags: [Gemini, AI, iOS, SwiftUI]
+excerpt: "In this post we will see how to perform multimodal (text-and-image) conversations using the `gemini-pro` & `gemini-pro-vision` models."
+seo_title: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"
+seo_description: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"
+categories:
+  - iOS
+  - AI
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
 ---
 ![image](/assets/images/post12/multimodal-chat-thumbnail.png)
 
