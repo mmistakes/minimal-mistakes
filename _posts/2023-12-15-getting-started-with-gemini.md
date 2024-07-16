@@ -1,10 +1,20 @@
 ---
-layout: post
+layout: single
 title: "How to get started with Gemini AI on iOS with SwiftUI"
-categories: [iOS Development,AI, Gemini, Google, SwiftUI, Swift]
-tags: [Gemini, AI, iOS, SwiftUI]
+excerpt: "So Google released the Gemini SDK for developers just a few days ago and in this post I'm going to show you how you can get started with it in just a few steps and lines of code."
+seo_title: "How to get started with Gemini AI on iOS with SwiftUI"
+seo_description: "How to get started with Gemini AI on iOS with SwiftUI"
+categories:
+  - iOS
+  - AI
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
 ---
-
 So Google released the Gemini SDK for developers just a few days ago and in this post I'm going to show you how you can get started with it in just a few steps and lines of code. For the purpose of this post, we'll be looking at text-only inputs with the Gemini Pro model. You will need Xcode 15.0 at minimum with the app target set to iOS 15/MacOS 12 or later.
 
 
