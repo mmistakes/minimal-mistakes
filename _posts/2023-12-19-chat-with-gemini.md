@@ -1,10 +1,20 @@
 ---
-layout: post
+layout: single
 title: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"
-categories: [iOS Development, AI, Gemini, Google, SwiftUI, Swift]
-tags: [Gemini, AI, iOS, SwiftUI]
+excerpt: "In the previous post we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient."
+seo_title: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"
+seo_description: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"
+categories:
+  - iOS
+  - AI
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
 ---
-
 [<img src="https://img.youtube.com/vi/VO3YGN2UuHc/hqdefault.jpg" width="600" height="350"
 />](https://www.youtube.com/embed/VO3YGN2UuHc)
 
