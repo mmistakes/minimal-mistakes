@@ -1,8 +1,19 @@
 ---
-layout: post
-title: "Build a Chatbot on iOS with Firebase Gemini API Extension in Swift & SwiftUI: A Step-by-Step Guide"
-categories: [iOS Development, AI, Gemini, Google, Firebase, SwiftUI, Swift]
-tags: [Gemini, Firebase, AI, iOS, SwiftUI, Swift]
+layout: single
+title: "Build a Chatbot on iOS with Firebase Gemini API Extension in Swift & SwiftUI - A Step-by-Step Guide"
+excerpt: "Google has recently rolled out a Firebase extension that gives you another way of working with Gemini API but through Firebase. The advantage of this extension is that if you are familiar with Firebase, you can build a chatbot on iOS very quickly."
+seo_title: "Build a Chatbot on iOS with Firebase Gemini API Extension on iOS"
+seo_description: "Build a Chatbot on iOS with Firebase Gemini API Extension on iOS"
+categories:
+  - iOS
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
+  - Firebase
 ---
 ![image](/assets/images/post17/gemini-firebase-thumbnail.png)
 
