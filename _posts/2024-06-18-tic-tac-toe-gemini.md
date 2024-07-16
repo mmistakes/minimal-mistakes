@@ -7,8 +7,8 @@ seo_description: "Create a tic-tac-toe game with Gemini AI"
 categories:
   - iOS
 tags:
-  - SwiftUI
   - Swift
+  - SwiftUI
   - AI
   - Gemini
   - Google
