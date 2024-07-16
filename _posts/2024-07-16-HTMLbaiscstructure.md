@@ -88,22 +88,26 @@ lang속성을 입력하는 이유는 텍스트가 포함된 모든 요소 속성
 ```
 <img width="1437" alt="image" src="https://github.com/user-attachments/assets/2c08202e-7ecb-4f7d-86eb-c3f6637dbafb">
 <br><br>
+
 #### ```<body>``` : 표시되는 콘텐츠
 텍스트, 이미지, 미디어 요소등 다양한 콘텐츠를 포함하여 웹페이지를 꾸밀 수 있다.
 실제 네이버에서도 <head>부분에서는 온갖 설정들을 정의해 주었고,
 <img width="1450" alt="image" src="https://github.com/user-attachments/assets/d561330d-8dae-47ec-8a0e-088bc7cab1a8">
 <br><br>
+
 ```<body>``` 부분에 와서야 웹페이지를 <div> 별로 나누어 구성했음을 알 수 있다.
 ```<body>``` 중 "header" 부분
 검색창과 각종 메뉴와 같이 핵심적인 기능들이 들어가있다.
 <img width="1450" alt="image" src="https://github.com/user-attachments/assets/fd6399c7-6746-4928-8579-6c9593a0cdeb">
 <br>
 <br>
+
 ```<body>``` 중 "container" 부분
 마이메뉴의 빠른 접근, 뉴스, 쇼핑 등 각종 컨텐츠와 같이 눈길을 끌만한 컨텐츠가 들어가있다.
 <img width="1374" alt="스크린샷 2024-07-16 22 42 55" src="https://github.com/user-attachments/assets/ff877e75-a396-4eea-80b7-10dbeb834254">
 <br>
 <br>
+
 ```<body>``` 중 "footer" 부분
 공지사항과 기업정보, 파트너사 등 행정적인 내용과 같이 비교적 유저들이 덜 관심갖을 만한 내용이지만 웹페이지에 표시되어야할 내용이 들어가있다.
 <img width="1369" alt="image" src="https://github.com/user-attachments/assets/4ad8ac12-2b00-4f3b-a708-50aa49487f8e">
