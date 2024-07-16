@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Home"
-  url: https://anupdsouza.com
+    url: https://anupdsouza.com
   - title: "About"
-  url: https://anupdsouza.com
+    url: https://anupdsouza.com
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
