@@ -9,10 +9,10 @@ categories:
 tags:
   - Swift
   - SwiftUI
+  - iOS Development
   - AI
   - Gemini
   - Google
-  - iOS Development
 ---
 ![image](/assets/images/post19/tictactoe-gemini-thumbnail.png)
 
