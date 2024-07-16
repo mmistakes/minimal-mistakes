@@ -6,6 +6,7 @@ seo_title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
 seo_description: "Create a tic-tac-toe game with Gemini AI"
 categories:
   - iOS
+  - AI
 tags:
   - Swift
   - SwiftUI
