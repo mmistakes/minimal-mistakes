@@ -1,8 +1,19 @@
 ---
-layout: post
+layout: single
 title: "Create a Murder Mystery game powered by Gemini AI with SwiftUI"
-categories: [iOS Development, AI, Gemini, Google, SwiftUI, Swift]
-tags: [Gemini, AI, iOS, SwiftUI]
+excerpt: "For context, it may be uncommon today but back in the early 70's to 2000's text based or as they are better known, interactive fiction(IF) games were quite popular."
+seo_title: "Create a Murder Mystery game powered by Gemini AI with SwiftUI on iOS"
+seo_description: "Create a Murder Mystery game powered by Gemini AI with SwiftUI on iOS"
+categories:
+  - iOS
+  - AI
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
 ---
 ![image](/assets/images/post15/murder-mystery-thumbnail.png)
 
