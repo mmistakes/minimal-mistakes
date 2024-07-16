@@ -1,8 +1,18 @@
 ---
-layout: post
-title: "Challenging Gemini AI to Tic-Tac-Toe | SwiftUI Tutorial"
-categories: [iOS Development, AI, Gemini, Google, SwiftUI, Swift]
-tags: [Gemini, AI, iOS, SwiftUI, Swift]
+layout: single
+title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
+excerpt: "Apart from all the stuff that you can do with a LLM like Gemini, did you know that you could also play games with it?"
+seo_title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
+seo_description: "Create a tic-tac-toe game with Gemini AI"
+categories:
+  - iOS
+tags:
+  - SwiftUI
+  - Swift
+  - AI
+  - Gemini
+  - Google
+  - iOS Development
 ---
 ![image](/assets/images/post19/tictactoe-gemini-thumbnail.png)
 
