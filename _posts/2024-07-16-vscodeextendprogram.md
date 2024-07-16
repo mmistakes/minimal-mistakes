@@ -1,7 +1,7 @@
 ---
 layout: single
 title:   "(프론트엔드 개발자) VS Code 셋팅하기(임시저장)"
-categories: VS Code
+categories: Environment
 ---
 ## 남들보다 빠른 작업을 원한다면 업무환경부터 바꿔야한다.
 어느 곳에서 일하든 나에게는 업무환경이 무척이나 중요하다.
