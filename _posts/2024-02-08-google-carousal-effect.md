@@ -1,8 +1,16 @@
 ---
-layout: post
+layout: single
 title: "Google Carousal Effect with SwiftUI"
-categories: [iOS Development, Google, SwiftUI, Swift]
-tags: [Google, iOS, SwiftUI, ScrollView]
+excerpt: "Google has a really cool on-hover effect that you can see on the web if you were to search for stuff like popular movies or Disney movies."
+seo_title: "Google Carousal Effect with SwiftUI on iOS"
+seo_description: "Google Carousal Effect with SwiftUI on iOS"
+categories:
+  - iOS
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - Google
 ---
 ![image](/assets/images/post14/google-carousal-thumbnail-mini.png)
 
