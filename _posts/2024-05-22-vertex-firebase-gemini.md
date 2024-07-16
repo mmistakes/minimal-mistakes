@@ -6,6 +6,7 @@ seo_title: "Multimodal Chatbot with Gemini API using the Vertex AI for Firebase 
 seo_description: "Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK on iOS"
 categories:
   - iOS
+  - AI
 tags:
   - Swift
   - SwiftUI
