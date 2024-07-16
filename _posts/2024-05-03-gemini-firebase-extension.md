@@ -6,6 +6,7 @@ seo_title: "Build a Chatbot on iOS with Firebase Gemini API Extension on iOS"
 seo_description: "Build a Chatbot on iOS with Firebase Gemini API Extension on iOS"
 categories:
   - iOS
+  - AI
 tags:
   - Swift
   - SwiftUI
