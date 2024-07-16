@@ -1,8 +1,21 @@
 ---
-layout: post
+layout: single
 title: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"
-categories: [iOS Development, AI, Gemini, Google, OpenAI, DallE, SwiftUI, Swift]
-tags: [Gemini, OpenAI, AI, iOS, SwiftUI]
+excerpt: "In this post we'll once again harness the power of Gemini AI's data generation combining it with Dall-E's image generation capability to create a storybook app for kids."
+seo_title: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"
+seo_description: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"
+categories:
+  - iOS
+  - AI
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
+  - AI
+  - Gemini
+  - Google
+  - OpenAI
+  - DallE
 ---
 ![image](/assets/images/post16/storybook-thumbnail.png)
 
