@@ -15,12 +15,14 @@ tags:
   - Gemini
   - Google
 ---
-![image](/assets/images/post13/horoscope-thumbnail.png)
+<!--![image](/assets/images/post13/horoscope-thumbnail.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/bxiP1J4-V8w?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/bxiP1J4-V8w/hqdefault.jpg" width="600" height="350"
-/>](https://www.youtube.com/embed/bxiP1J4-V8w)
+<!--[<img src="https://img.youtube.com/vi/bxiP1J4-V8w/hqdefault.jpg" width="600" height="350"
+/>](https://www.youtube.com/embed/bxiP1J4-V8w)-->
 
 Previously, we saw how to [easily integrate the Gemini AI SDK](https://www.anupdsouza.com/posts/getting-started-with-gemini/) to perform simple text-only interactions, then created a [multi-turn chat interface](https://www.anupdsouza.com/posts/chat-with-gemini/) & followed it up with a [multimodal chat interface](https://www.anupdsouza.com/posts/multimodal-chat-with-gemini/) that combined sending images as well as text. In this post we'll look at one of the important capabilities of AI models i.e. Summarization.
 
