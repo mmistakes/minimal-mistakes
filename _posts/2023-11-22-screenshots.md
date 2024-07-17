@@ -13,7 +13,7 @@ tags:
 
 In this post we'll learn how to edit screenshots of the iOS simulator with device bezels & without the toolbar.
 
-![image](/assets/images/post8/screenshotbeforeafter.png)
+<!--![image](/assets/images/post8/screenshotbeforeafter.png)-->
 
 View the video or follow along with the steps detailed in the post.
 
