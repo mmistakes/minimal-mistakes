@@ -17,7 +17,8 @@ tags:
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6_zJ4I_xdKM?controls=0" frameborder="0" allowfullscreen></iframe>
 
-Watch the video or follow along with the post below. 
+
+Watch the video or follow along with the post below.
 
 <!--[<img src="https://img.youtube.com/vi/6_zJ4I_xdKM/hqdefault.jpg" width="768" height="432"
 />](https://www.youtube.com/embed/6_zJ4I_xdKM)-->
