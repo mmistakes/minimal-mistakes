@@ -3,7 +3,7 @@ layout: single
 title:   "(프론트엔드 개발자) VS Code 셋팅하기_단축키 편"
 categories: Environment
 toc: true
-atuor_profile : false
+author_profile : false
 ---
 
 ## 혹시... 야근하세요?
