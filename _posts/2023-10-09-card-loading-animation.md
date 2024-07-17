@@ -1,19 +1,26 @@
 ---
-layout: post
+layout: single
 title: "Creating a playing card loading animation in SwiftUI"
-categories: [iOS Development, SwiftUI, Swift]
-tags: [SwiftUI, Swift, ZStack, RotationEffect]
+excerpt: "The idea for this animation was a gif I had seen on the now defunct gfycat website when looking for inspiration for creating a loading view for a personal project I'd been working on."
+seo_title: "Creating a playing card loading animation in SwiftUI"
+seo_description: "Creating a playing card loading animation in SwiftUI"
+categories:
+  - iOS
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
 ---
-In this post we'll learn how to create a simple playing card loading animation in SwiftUI.
+<!--[<img src="https://img.youtube.com/vi/jsMSFwhBryg/hqdefault.jpg" width="426" height="240"
+/>](https://www.youtube.com/embed/jsMSFwhBryg)-->
 
-![image](/assets/images/post6/cardloading.png)
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/jsMSFwhBryg?controls=0" frameborder="0" allowfullscreen></iframe>
 
-View the video or follow along with the steps detailed in the post.
+Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/jsMSFwhBryg/hqdefault.jpg" width="426" height="240"
-/>](https://www.youtube.com/embed/jsMSFwhBryg)
+<!--![image](/assets/images/post6/cardloading.png)-->
 
-The idea for this animation was a gif I had seen on the now defunct gfycat website when looking for inspiration for creating a loading view for a personal project I'd been working on. This view could be used as a waiting or loading view for any type of board game project in SwiftUI. To begin with, we use a `ZStack` to layout the views or cards which is an array of `AnyView` so that any type of views could be displayed. The purpose of using a `ZStack` is so that we can fan out the individual views during the animation.
+In this post we'll learn how to create a simple playing card loading animation in SwiftUI. The idea for this animation was a gif I had seen on the now defunct gfycat website when looking for inspiration for creating a loading view for a personal project I'd been working on. This view could be used as a waiting or loading view for any type of board game project in SwiftUI. To begin with, we use a `ZStack` to layout the views or cards which is an array of `AnyView` so that any type of views could be displayed. The purpose of using a `ZStack` is so that we can fan out the individual views during the animation.
 We use a `@State` `Boolean` property **animate** in order to trigger the animation in the `onAppear` modifier. 
 
 ```
