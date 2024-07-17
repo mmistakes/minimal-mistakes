@@ -12,7 +12,7 @@ tags:
   - Google Domains
   - GitHub
 ---
-In the [last post](https://www.anupdsouza.com/posts/create-website-github-and-jekyll/) we learnt how you can create a static website using the [GitHub Pages](https://pages.github.com/) feature and apply themes to it using [jekyll](https://jekyllrb.com/) themes. In this post we will learn how to set up a Google Domain for your website so that users no longer have to visit `username.github.io` to view your website but rather visit your shiny `awesomewebsite.com` domain. Let's get started.
+In the [last post](https://www.anupdsouza.com/web/create-website-github-and-jekyll/) we learnt how you can create a static website using the [GitHub Pages](https://pages.github.com/) feature and apply themes to it using [jekyll](https://jekyllrb.com/) themes. In this post we will learn how to set up a Google Domain for your website so that users no longer have to visit `username.github.io` to view your website but rather visit your shiny `awesomewebsite.com` domain. Let's get started.
 
 Head over to [Google Domains](https://domains.google.com/registrar/search) and search for a domain of your choice. Proceed to make the payment and complete the purchase. Once done, go to the `My Domains` section from the left menu and click on the `Manage` link shown on the right of your domain.
 
