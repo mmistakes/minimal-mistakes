@@ -24,7 +24,7 @@ Watch the video or follow along with the post below.
 <!--[<img src="https://img.youtube.com/vi/bxiP1J4-V8w/hqdefault.jpg" width="600" height="350"
 />](https://www.youtube.com/embed/bxiP1J4-V8w)-->
 
-Previously, we saw how to [easily integrate the Gemini AI SDK](https://www.anupdsouza.com/posts/getting-started-with-gemini/) to perform simple text-only interactions, then created a [multi-turn chat interface](https://www.anupdsouza.com/posts/chat-with-gemini/) & followed it up with a [multimodal chat interface](https://www.anupdsouza.com/posts/multimodal-chat-with-gemini/) that combined sending images as well as text. In this post we'll look at one of the important capabilities of AI models i.e. Summarization.
+Previously, we saw how to [easily integrate the Gemini AI SDK](https://www.anupdsouza.com/ios/ai/getting-started-with-gemini/) to perform simple text-only interactions, then created a [multi-turn chat interface](https://www.anupdsouza.com/ios/ai/chat-with-gemini/) & followed it up with a [multimodal chat interface](https://www.anupdsouza.com/ios/ai/multimodal-chat-with-gemini/) that combined sending images as well as text. In this post we'll look at one of the important capabilities of AI models i.e. Summarization.
 
 You may have seen this when browsing the reviews section of Amazon where before the actual reviews, you see an AI generated summary of the reviews posted for the given product. For those unfamiliar, it looks something like this.
 
