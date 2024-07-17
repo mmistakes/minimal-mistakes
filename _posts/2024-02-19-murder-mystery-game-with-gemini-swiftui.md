@@ -2,10 +2,6 @@
 layout: single
 title: "Create a Murder Mystery game powered by Gemini AI with SwiftUI"
 excerpt: "For context, it may be uncommon today but back in the early 70's to 2000's text based or as they are better known, interactive fiction(IF) games were quite popular."
-header:
-  video:
-    id: "dDbunbxzrSI"
-    provider: youtube
 seo_title: "Create a Murder Mystery game powered by Gemini AI with SwiftUI on iOS"
 seo_description: "Create a Murder Mystery game powered by Gemini AI with SwiftUI on iOS"
 categories:
@@ -19,12 +15,14 @@ tags:
   - Gemini
   - Google
 ---
-![image](/assets/images/post15/murder-mystery-thumbnail.png)
+<!--![image](/assets/images/post15/murder-mystery-thumbnail.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/dDbunbxzrSI?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/dDbunbxzrSI/hqdefault.jpg" width="600" height="350"
-/>](https://www.youtube.com/embed/dDbunbxzrSI)
+<!--[<img src="https://img.youtube.com/vi/dDbunbxzrSI/hqdefault.jpg" width="600" height="350"
+/>](https://www.youtube.com/embed/dDbunbxzrSI)-->
 
 Previously, we saw how to [easily summarize data with the Gemini AI SDK to provide for some interesting horoscope readings.](https://www.anupdsouza.com/posts/horoscope-app-with-swiftui-gemini/) In this post we'll look at another one of Gemini AI's capabilities i.e. Data Generation to create a. murder mystery text adventure game.
 
