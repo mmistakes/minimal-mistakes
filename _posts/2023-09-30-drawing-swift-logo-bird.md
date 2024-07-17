@@ -1,17 +1,26 @@
 ---
-layout: post
+layout: single
 title: "Drawing the Swift logo bird in SwiftUI"
-categories: [iOS Development, SwiftUI, Swift]
-tags: [SwiftUI, Swift, Path, Shape]
+excerpt: "I decided to get the official logo than simply Googling for an image since you find so many variations online. If you go to the resources section on Apple's developer website you'll find a .zip package at the bottom of the page that you can download along with guidelines. The guidelines are especially important if you plan to use the logo in your application"
+seo_title: "Drawing the Swift logo bird in SwiftUI"
+seo_description: "Drawing the Swift logo bird in SwiftUI"
+categories:
+  - iOS
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
 ---
-![image](/assets/images/post5/SwiftShape_resized.png)
+<!--[<img src="https://img.youtube.com/vi/w_mwTaR0Rts/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/w_mwTaR0Rts)-->
 
-In this post we'll learn how to draw the Swift logo bird in SwiftUI using Shape and Path. Watch the video or follow along with the steps detailed in the post.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/w_mwTaR0Rts?controls=0" frameborder="0" allowfullscreen></iframe>
 
-[<img src="https://img.youtube.com/vi/w_mwTaR0Rts/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/w_mwTaR0Rts)
+Watch the video or follow along with the post below.
 
-I decided to get the official logo than simply Googling for an image since you find so many variations online. If you go to the [resources section](https://developer.apple.com/swift/resources/) on Apple's developer website you'll find a .zip package at the bottom of the page that you can download along with guidelines. The guidelines are especially important if you plan to use the logo in your application.
+<!--![image](/assets/images/post5/SwiftShape_resized.png)-->
+
+In this post we'll learn how to draw the Swift logo bird in SwiftUI using Shape and Path. I decided to get the official logo than simply Googling for an image since you find so many variations online. If you go to the [resources section](https://developer.apple.com/swift/resources/) on Apple's developer website you'll find a .zip package at the bottom of the page that you can download along with guidelines. The guidelines are especially important if you plan to use the logo in your application.
 
 I began by creating a SwiftUI project and importing the image, then displaying it as resizable inside a 200x200pt Image view. For the next step I identified the points of interest that I'd need to draw curves from in order to draw the bird(see image below). I identified a total of 11 such points marked from A-K. Notice that I decided to break down the lower wing curve into 3 points for better handling when drawing. You could probably do it with fewer points. Now that the points were identified, I needed to get the position of the points within the 200x200pt grid. I did this by overlaying a Grid with GridRow(s) of Rectangles of 50x50pt each with a 1pt stroke border, giving me a 4x4 grid that would make it easy to approximate the positions. Note that I say approximate because the positions of the points are not entirely accurate and are only approximations since I wanted to do this quickly.
 
