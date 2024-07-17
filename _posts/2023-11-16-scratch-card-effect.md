@@ -1,13 +1,21 @@
 ---
-layout: post
+layout: single
 title: "Creating the scratch card effect in SwiftUI"
-categories: [iOS Development, SwiftUI, Swift, Gestures]
-tags: [SwiftUI, Swift, DragGesture, Mask]
+excerpt: "The idea for this view came when I was going through Azam Sharp's video on drawing in SwiftUI using the `Canvas` view. I wondered if one could apply the strokes using the DragGesture to a view, it would somewhat replicate the scratch card effect that is normally seen in modern iOS applications"
+seo_title: "Creating the scratch card effect in SwiftUI"
+seo_description: "Creating the scratch card effect in SwiftUI"
+categories:
+  - iOS
+tags:
+  - Swift
+  - SwiftUI
+  - iOS Development
 ---
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/n5fRNTwtc2A?controls=0" frameborder="0" allowfullscreen></iframe>
+
 In this post we'll learn how to create the scratch card effect in SwiftUI.
 
-![image](/assets/images/post7/scratchcard.png)
-
+<!--![image](/assets/images/post7/scratchcard.png)-->
 
 The idea for this view came when I was going through Azam Sharp's [video](https://www.youtube.com/watch?v=P0OdY9MVu_g) on drawing in SwiftUI using the `Canvas` view. I wondered if one could apply the strokes using the DragGesture to a view, it would somewhat replicate the scratch card effect that is normally seen in modern iOS applications. Turns out, implementing this is simpler than I thought. All we need to do is to apply the strokes that a user creates via the DragGesture onto a view but using the [mask](https://developer.apple.com/documentation/swiftui/view/mask(alignment:_:)) modifier. The code below is modified to do just that.
 
