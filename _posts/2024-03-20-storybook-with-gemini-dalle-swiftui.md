@@ -17,12 +17,14 @@ tags:
   - OpenAI
   - DallE
 ---
-![image](/assets/images/post16/storybook-thumbnail.png)
+<!--![image](/assets/images/post16/storybook-thumbnail.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/NOgoWd6phn0?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/NOgoWd6phn0/hqdefault.jpg" width="768" height="432"
-/>](https://www.youtube.com/embed/NOgoWd6phn0)
+<!--[<img src="https://img.youtube.com/vi/NOgoWd6phn0/hqdefault.jpg" width="768" height="432"
+/>](https://www.youtube.com/embed/NOgoWd6phn0)-->
 
 Stories and storybooks ignite imagination, nurture language skills, cultural awareness, emotional intelligence, and cognitive development in young minds, fostering creativity and shaping values crucial for lifelong learning and understanding. And if you're a parent, they are also the magical power & the ultimate bedtime weapon against tiny bedtime rebels!
 
