@@ -17,12 +17,14 @@ tags:
   - VertexAI
   - Firebase
 ---
-![image](/assets/images/post18/vertex-firebase-thumbnail.png)
+<!--![image](/assets/images/post18/vertex-firebase-thumbnail.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aEMGUF7Smro?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/aEMGUF7Smro/hqdefault.jpg" width="768" height="432"
-/>](https://www.youtube.com/embed/aEMGUF7Smro)
+<!--[<img src="https://img.youtube.com/vi/aEMGUF7Smro/hqdefault.jpg" width="768" height="432"
+/>](https://www.youtube.com/embed/aEMGUF7Smro)-->
 
 Previously [we've seen](https://youtu.be/X-zs-wa6j28) how to use the Gemini AI Generative Swift SDK to chat with the LLM using text-based requests. We then explored how to use the [Firebase extension](https://youtu.be/GewyZgQbsIw) in order to interface with Gemini. In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's. The Firebase setup is similar to using the extension so if you've been following my posts, the next few steps should feel familiar.
 
