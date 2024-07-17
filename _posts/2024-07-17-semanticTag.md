@@ -1,7 +1,7 @@
 ---
 layout: single
 title:   "애플 홈페이지로 배우는 시맨틱 태그"
-categories: Environment
+categories: HTML
 toc: true
 author_profile : false
 ---
