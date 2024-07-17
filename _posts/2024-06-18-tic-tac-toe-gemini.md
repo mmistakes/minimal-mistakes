@@ -16,6 +16,7 @@ tags:
   - Google
 ---
 <!--![image](/assets/images/post19/tictactoe-gemini-thumbnail.png)-->
+
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/ZDnEM1BeKLQ?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
