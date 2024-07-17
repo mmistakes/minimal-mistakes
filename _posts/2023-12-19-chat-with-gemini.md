@@ -22,7 +22,7 @@ tags:
 
 Watch the video or follow along with the post below.
 
-In the [previous post](https://www.anupdsouza.com/posts/getting-started-with-gemini/), we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient. Thankfully, Google has a solution for that.
+In the [previous post](https://www.anupdsouza.com/ios/ai/getting-started-with-gemini/), we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient. Thankfully, Google has a solution for that.
 
 According to the documentation
 > Using Gemini, you can build freeform conversations across multiple turns. The SDK simplifies the process by managing the state of the conversation, so unlike with generateContent, you don't have to store the conversation history yourself.
