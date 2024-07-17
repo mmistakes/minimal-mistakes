@@ -12,12 +12,14 @@ tags:
   - iOS Development
   - Google
 ---
-![image](/assets/images/post14/google-carousal-thumbnail-mini.png)
+<!--![image](/assets/images/post14/google-carousal-thumbnail-mini.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/budcijoiNvE?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/budcijoiNvE/hqdefault.jpg" width="600" height="350"
-/>](https://www.youtube.com/embed/budcijoiNvE)
+<!--[<img src="https://img.youtube.com/vi/budcijoiNvE/hqdefault.jpg" width="600" height="350"
+/>](https://www.youtube.com/embed/budcijoiNvE)-->
 
 Google has a really cool on-hover effect that you can see on the web if you were to search for stuff like popular movies or Disney movies. The layout is pretty simple with a horizontally scrolling scrollview component with items that consist of the movie poster and the movie title displayed beneath it.
 
