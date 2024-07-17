@@ -15,12 +15,13 @@ tags:
   - Gemini
   - Google
 ---
-![image](/assets/images/post19/tictactoe-gemini-thumbnail.png)
+<!--![image](/assets/images/post19/tictactoe-gemini-thumbnail.png)-->
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/ZDnEM1BeKLQ?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/ZDnEM1BeKLQ/hqdefault.jpg" width="768" height="432"
-/>](https://www.youtube.com/embed/ZDnEM1BeKLQ)
+<!--[<img src="https://img.youtube.com/vi/ZDnEM1BeKLQ/hqdefault.jpg" width="768" height="432"
+/>](https://www.youtube.com/embed/ZDnEM1BeKLQ)-->
 
 This article is long overdue since I got caught up with all the developments surrounding WWDC but it's finally here. Apart from all the stuff that you can do with a LLM like Gemini, did you know that you could also play games with it? Well, I didn't until I came across [this post](https://leonnicholls.medium.com/tic-tac-toe-and-the-art-of-gemini-prompt-engineering-0b0dfa47e733) which formed the basis for this experimental project. Since Gemini is a LLM, it has knowledge of a popular game like tic-tac-toe but how good can it be at playing it? It seems from the linked post that although Gemini knows about tic-tac-toe, that doesn't necessarily mean that it knows how to play it & thus began my quest to build a relatively simple tic-tac-toe game playable versus Gemini AI. As with all LLM interactions, we start off with a prompt to acquaint Gemini with the end result that we expect. I crafted a simple prompt like so & trialled it with the [Gemini web app](https://gemini.google.com/app).
 
