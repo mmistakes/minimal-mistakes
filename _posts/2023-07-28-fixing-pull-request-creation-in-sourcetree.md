@@ -1,8 +1,15 @@
 ---
-layout: post
+layout: single
 title: "Fixing pull request creation in Sourcetree"
-categories: [Coding, Development]
-tags: [Coding, Bitbucket, Sourcetree, Pull requests]
+excerpt: "I recently had to setup a new machine & realised that I was not able to create pull requests from branches in Sourcetree. Turns out in the newest version 4.2.4(254) for Mac the `Host Type` is not automatically set"
+seo_title: "Fixing pull request creation in Sourcetree"
+seo_description: "Fixing pull request creation in Sourcetree"
+categories:
+  - General
+tags:
+  - Development
+  - Bitbucket
+  - Sourcetree
 ---
 I recently had to setup a new machine & realised that I was not able to create pull requests from branches in Sourcetree. Turns out in the newest version 4.2.4(254) for Mac the `Host Type` is not automatically set, well at least in my case it wasn't. As a result, right-clicking on a local branch & selecting the `Create Pull Request...` option did nothing.
 Fixing this is fairly easy and you'll see how to do that below.
