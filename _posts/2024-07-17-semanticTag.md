@@ -48,9 +48,6 @@ semantic : 의미론적
 그 옆에 iPad, iPhone...고객지원, 검색, 장바구니까지 어느 탭에 들어가도 이것은 유지된다.  
 
 내친김에 한번 페이지 전체 구성을 보자.  
-<br>
-<img width="1469" alt="image" src="https://github.com/user-attachments/assets/7ad1d810-62a0-4676-97ab-a0df52a29c4b">
-<br>
 
 ### 저희 라인업 한번 보시죠(nav)
 **golbalheader** 아래에는 **```<nav id = 'chapternav'>```** 라는 id가 존재한다.
