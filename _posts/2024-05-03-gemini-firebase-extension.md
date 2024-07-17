@@ -16,12 +16,14 @@ tags:
   - Google
   - Firebase
 ---
-![image](/assets/images/post17/gemini-firebase-thumbnail.png)
+<!--![image](/assets/images/post17/gemini-firebase-thumbnail.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/GewyZgQbsIw?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/GewyZgQbsIw/hqdefault.jpg" width="768" height="432"
-/>](https://www.youtube.com/embed/GewyZgQbsIw)
+<!--[<img src="https://img.youtube.com/vi/GewyZgQbsIw/hqdefault.jpg" width="768" height="432"
+/>](https://www.youtube.com/embed/GewyZgQbsIw)-->
 
 Previously [we've seen](https://youtu.be/X-zs-wa6j28) how to use the Gemini AI Swift SDK to chat with the LLM using text-based requests. Google has recently rolled out a Firebase extension that gives you another way of working with Gemini API but through Firebase. The advantage of this extension is that if you are familiar with Firebase, you can build a chatbot on iOS very quickly. With some configuration which is pretty straight-forward, making requests to Gemini is a breeze. So let's get to it! 
 Head on over to https://firebase.google.com and sign in with your Google account.
