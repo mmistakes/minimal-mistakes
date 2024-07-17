@@ -15,12 +15,14 @@ tags:
   - Gemini
   - Google
 ---
-![image](/assets/images/post12/multimodal-chat-thumbnail.png)
+<!--![image](/assets/images/post12/multimodal-chat-thumbnail.png)-->
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/4SeW1x4m6Gc?controls=0" frameborder="0" allowfullscreen></iframe>
 
 Watch the video or follow along with the post below.
 
-[<img src="https://img.youtube.com/vi/4SeW1x4m6Gc/hqdefault.jpg" width="600" height="350"
-/>](https://www.youtube.com/embed/4SeW1x4m6Gc)
+<!--[<img src="https://img.youtube.com/vi/4SeW1x4m6Gc/hqdefault.jpg" width="600" height="350"
+/>](https://www.youtube.com/embed/4SeW1x4m6Gc)-->
 
 Previously, we saw how to [easily integrate the Gemini Swift SDK](https://www.anupdsouza.com/posts/getting-started-with-gemini/) to perform simple text-only interactions & then followed it up with [creating a multi-turn chat interface](https://www.anupdsouza.com/posts/chat-with-gemini/) with Gemini AI's `gemini-pro` model.
 
