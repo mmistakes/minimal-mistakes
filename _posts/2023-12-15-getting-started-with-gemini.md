@@ -15,6 +15,10 @@ tags:
   - Gemini
   - Google
 ---
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/X-zs-wa6j28?controls=0" frameborder="0" allowfullscreen></iframe>
+
+Watch the video or follow along with the post below.
+
 So Google released the Gemini SDK for developers just a few days ago and in this post I'm going to show you how you can get started with it in just a few steps and lines of code. For the purpose of this post, we'll be looking at text-only inputs with the Gemini Pro model. You will need Xcode 15.0 at minimum with the app target set to iOS 15/MacOS 12 or later.
 
 
