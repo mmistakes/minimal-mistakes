@@ -1,7 +1,7 @@
 ---
 layout: single
-title:   "네이버와 구글도 따라하는 HTML시맨틱 태그"
-categories: HTML
+title:   "애플 홈페이지로 배우는 시맨틱 태그"
+categories: Environment
 toc: true
 author_profile : false
 ---
