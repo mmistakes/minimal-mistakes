@@ -3,6 +3,7 @@ title: "the next big thing is you"
 categories: 
   - blog
   - ssi
+  - identity
 type: "blog"  
 layout: single
 author_profile: true
