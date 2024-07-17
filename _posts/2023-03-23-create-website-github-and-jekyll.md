@@ -1,8 +1,15 @@
 ---
-layout: post
+layout: single
 title: "Create a website with GitHub & jekyll in 2023"
-categories: [Web Development, Jekyll]
-tags: [Web Development, Jekyll, GitHub Actions]
+excerpt: "If you have a GitHub account, you can create a static website using the GitHub Pages feature."
+seo_title: "Create a website with GitHub & jekyll in 2023"
+seo_description: "Create a website with GitHub & jekyll in 2023"
+categories:
+  - Web
+tags:
+  - Web Development
+  - GitHub
+  - Jekyll
 ---
 If you have a GitHub account, you can create a static website using the [GitHub Pages](https://pages.github.com/) feature.
 In this post I will guide you on how to create a website for yourself that you can use to showcase your work or if you like blogging,
