@@ -28,6 +28,7 @@ semantic : 의미론적
 그들의 홈페이지가 매력적인 이유는 또 있다.  
 바로 잘 정돈된 구조이다.  
 지난 포스팅에서는 HTML기본 구조를 알아보면서 네이버 홈페이지를 예시로 들며, ```<body>```태그 안에 ```<header>```, ```<container>```, ```<footer>```가 있는 것을 살펴볼 수 있었다.  
+([지난 포스팅])https://jamm0316.github.io/html/HTMLbaiscstructure/)을 보면 이번 포스팅은 이해가 더 쉽다)
 이것은 애플도 예외가 아니다.  
 <br>
 <img width="1462" alt="image" src="https://github.com/user-attachments/assets/3acd06f7-2f20-488d-9ca1-0047b057e0fc">
