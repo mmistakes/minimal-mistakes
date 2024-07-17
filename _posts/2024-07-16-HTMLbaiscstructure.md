@@ -3,7 +3,9 @@ layout: single
 title:   "네이버와 구글도 따라하는 HTML 문서 기본 구조"
 categories: HTML
 toc : true
+author_profile : false
 ---
+
 
 ## Google 개발자도 쓰고 Naver 개발자도 쓰는 그것!!  
 네이버와 구글 사이트에 들어간 후 개발자 도구(f12)를 눌러보자.  
