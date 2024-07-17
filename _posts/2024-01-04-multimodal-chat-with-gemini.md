@@ -24,7 +24,7 @@ Watch the video or follow along with the post below.
 <!--[<img src="https://img.youtube.com/vi/4SeW1x4m6Gc/hqdefault.jpg" width="600" height="350"
 />](https://www.youtube.com/embed/4SeW1x4m6Gc)-->
 
-Previously, we saw how to [easily integrate the Gemini Swift SDK](https://www.anupdsouza.com/posts/getting-started-with-gemini/) to perform simple text-only interactions & then followed it up with [creating a multi-turn chat interface](https://www.anupdsouza.com/posts/chat-with-gemini/) with Gemini AI's `gemini-pro` model.
+Previously, we saw how to [easily integrate the Gemini Swift SDK](https://www.anupdsouza.com/ios/ai/getting-started-with-gemini/) to perform simple text-only interactions & then followed it up with [creating a multi-turn chat interface](https://www.anupdsouza.com/ios/ai/chat-with-gemini/) with Gemini AI's `gemini-pro` model.
 
 In this post we will see how to perform multimodal (text-and-image) conversations using the `gemini-pro` & `gemini-pro-vision` models. 
 Before we begin, you must note that unlike the previous multi-turn chat interface which made use of the `Chat` object, we will be managing the chat history ourselves since `gemini-pro-vision` does not support multi-turn conversations **yet.**
