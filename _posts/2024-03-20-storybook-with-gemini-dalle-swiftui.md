@@ -28,7 +28,7 @@ Watch the video or follow along with the post below.
 
 Stories and storybooks ignite imagination, nurture language skills, cultural awareness, emotional intelligence, and cognitive development in young minds, fostering creativity and shaping values crucial for lifelong learning and understanding. And if you're a parent, they are also the magical power & the ultimate bedtime weapon against tiny bedtime rebels!
 
-Previously, we saw how to [create a murder mystery game](https://www.anupdsouza.com/posts/murder-mystery-game-with-gemini-swiftui/) powered entirely by Gemini AI. In this post we'll once again harness the power of Gemini AI's data generation combining it with Dall-E's image generation capability to create a storybook app for kids.
+Previously, we saw how to [create a murder mystery game](https://www.anupdsouza.com/ios/ai/murder-mystery-game-with-gemini-swiftui/) powered entirely by Gemini AI. In this post we'll once again harness the power of Gemini AI's data generation combining it with Dall-E's image generation capability to create a storybook app for kids.
 
 Just as we have seen before, we begin by writing a prompt for Gemini with as much detail as possible for generating stories. This time I've elaborated the prompt much more so as to generate child friendly stories. Checkout the prompt below:
 
