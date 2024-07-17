@@ -2,6 +2,7 @@
 layout: single
 title:   "쿼리가 뭐야?"
 categories: Computer_Science
+toc: true
 ---
 
 ## 개요
