@@ -20,7 +20,7 @@ title                    : "Sandra Nguemto "
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sandra Nguemto"
-description              : "Mathematics PhD Candidate"
+description              : "Mathematics PhD"
 url                      : "https://sandra-nguemto.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "sandra-nguemto/sandra-nguemto.github.io" 
@@ -109,7 +109,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:anguemto@tennessee.edu"
+      url: "mailto:snguemto@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
