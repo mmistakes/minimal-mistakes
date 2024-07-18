@@ -15,7 +15,7 @@ Reproduction of the paper ["Deep Attentive Learning for Stock Movement Predictio
 
 We provide an alternative implementation of the model, and all the resources to run it, including how to extract and process wikirelations data (according to this [paper](https://dl.acm.org/doi/10.1145/3309547))
 
-This code uses the [stokcnet dataset](https://github.com/yumoxu/stocknet-dataset)
+This code uses the [stocknet dataset](https://github.com/yumoxu/stocknet-dataset)
 
 {% include gallery caption="-" %}
 
