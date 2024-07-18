@@ -39,7 +39,7 @@ Work experience
 
 Skills
 ======
-* Python (Qiskit, Scikit-learn, Keras, Matplotlib, Pandas, Tensorflow)
+* Python (Qiskit, Scikit-learn, Keras, Matplotlib, Pandas, Tensorflow, Pytorch)
 * Matlab
 * R
 * SQL
