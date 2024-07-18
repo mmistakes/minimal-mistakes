@@ -3,11 +3,11 @@ title: "MAN-SF - Stock Forecasting with Social Media Data and Attention Mechanis
 excerpt: "Tech: Pytorch, Tensorflow, CUDA, SPARQL"
 header:
   image: assets/images/headerimg.png 
-  teaser: /assets/images/reqgan.png
+  teaser: /assets/images/stockmvtteaser.png
 collection: portfolio
 gallery:
-  - url: /assets/images/reqgan.png
-    image_path: /assets/images/reqgan.png
+  - url: /assets/images/stockmvtgallery.png
+    image_path: /assets/images/stockmvtgallery.png
    
 ---
 
