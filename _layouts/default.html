@@ -28,6 +28,18 @@
       </div>
     {% endif %}
 
+    {% if site.data.navigation.sidebar %}
+      <nav class="sidebar">
+        <ul>
+          {% for item in site.data.navigation.sidebar %}
+            <li>
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
