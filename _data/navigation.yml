@@ -10,9 +10,11 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Home"
-    url: "/"
-  - title: "개발"
-    url: "/categories/development/"
-  - title: "소설"
-    url: "/categories/novel/"
+
+sidebar:
+  - title: "카테고리"
+    items:
+      - title: "개발"
+        url: /categories/development/
+      - title: "소설"
+        url: /categories/novel/
