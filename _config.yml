@@ -163,6 +163,7 @@ footer:
 
 # Reading Files
 include:
+  - _posts
   - .htaccess
   - _pages
 exclude:
