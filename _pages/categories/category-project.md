@@ -1,7 +1,7 @@
 ---
 title: "프로젝트"
 layout: archive
-permalink: categories/project/
+permalink: categories/project
 taxonomy: project
 author_profile: true
 sidebar_main: true
