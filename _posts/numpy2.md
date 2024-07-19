@@ -1,0 +1,185 @@
+# Handling shape
+
+## Reshape
+
+- Array의 shape의 크기를 변경함
+- element의 갯수는 동일
+
+```python
+test_matrix = [[1, 2, 3, 4], [5, 6, 7, 8]]
+print(np.array(test_matrix).shape)
+# (2, 4)
+print(test_matrix.shape)
+# AttributeError: 'list' object has no attribute 'shape'
+
+np.array(test_matrix).reshape(8,)
+# [1, 2, 3, 4, 5, 6, 7, 8]
+# (8,)
+
+np.array(test_matrix).reshape(-1, 2).shape
+# -1 : 나머지 값에 맞게 자동으로 설정
+```
+## Flatten
+- 다차원 array를 1차원 array로 변환
+
+```python
+test_matrix = [[[1, 2, 3, 4],[1, 2, 3, 4]], [[1, 2, 3, 4],[1, 2, 3, 4]]]
+np.array(test_matrix).flatten()
+# array([1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, ])
+```
+
+## Indexting & Slicing
+
+- list와 달리 이차원 배열에서 [0, 0] 표기법을 제공함
+- matrix일 경우 앞은 row 뒤는 column을 의미함
+
+```python
+a = np.array([[1, 2, 3], [4.5, 5, 6]],int)
+print(a[0,0])
+print(a[0][0])
+# 1
+# 1
+```
+### slicing for numpy array
+- list와 달리 행과 열 부분을 나눠서 slicing이 가능함
+```python
+a = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]],int)
+a[:, 2:] # [[3, 4, 5], [8, 9, 10]]
+a[1, 1:3] # [7, 8]
+a[1:3] # [6, 7, 8, 9, 10]
+
+test_example[1] # array([6, 7, 8, 9, 10]) # 1 diension
+test_example[1:3] # array([[6, 7, 8, 9, 10]]) # 2 dimension
+```
+
+|  0 |  1 |  2 |  3 |  4 |
+|----|----|----|----|----|
+|  5 |  6 |  7 |  8 |  9 |
+| 10 | 11 | 12 | 13 | 14 |
+
+```python
+arr[:,::2]
+```
+|  0 |  2 |  4 |
+|----|----|----|
+|  5 |  7 |  9 |
+| 10 | 12 | 14 |
+
+```python
+arr[::2, ::3]
+```
+|  0 |  3 |
+|----|----|
+| 10 | 13 |
+
+## Creation function
+
+### arange
+- array의 범위를 지정하여, 값의 list를 생성하는 명령어
+```python
+np.arange(30)
+# array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30])
+np.arange(0, 5, 0.5) # (시작, 끝, 스텝)
+# array([0, 0.5, 1, 1.5, 2.5, 3.5, 4.5])
+np.arange(30).reshape(5, 6)
+# array([0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11], [12, 13, 14, 15, 16, 17], [18, 19, 20, 21, 22, 23], [24, 25, 26, 27, 28, 29]])
+```
+### ones, zeros, empty
+- ones : 1로 가득찬 ndarray 생성
+- zeros : 0으로 가득찬 ndarray 생성
+- empty : shape만 주어지고 비어있는 ndarray 생성
+  - memory initialization이 되지 않음
+
+### something_like
+- 기존의 ndarray의 shape 크기 만큼 1, 0 또는 empty array를 반환
+```python
+test_matrix = np.arange(30).reshape(5, 6)
+np.ones_like(test_matrix)
+# (5, 6) shape의 1로 가득찬 ndarray 반환
+```
+### identity
+- 단위 행렬(i 행렬)을 생성함
+```python
+np.identity(n=3, dtype=np.int8)
+np.identity(5)
+```
+
+### eye
+- 대각선이 1인 행렬, k값의 시작 index 변경 가능
+```python
+np.eye(3)
+# array([[1, 0, 0], [0, 1, 0], [0, 0, 1])
+
+np.eye(3, 5, k-2)
+```
+|  0 |  0 |  1 |  0 |  0 |
+|----|----|----|----|----|
+|  0|  0|  0 |  1 |  0 |
+| 0 | 0 | 0| 0 | 1 |
+
+### diag
+- 대각 행렬의 값을 추출함
+```python
+matrix = np.arange(9).reshape(3, 3)
+np.diag(matrix)
+# array([0, 4, 8])
+
+np.diag(matrix, k=1)
+# array([1, 5])
+```
+|  0 |  **1** |  2 |
+|----|----|----|
+|  3 |  4 |  **5** |
+| 6 | 7 | 8 |
+
+## random sampling
+- 데이터 분포에 따른 sanmpling으로 array를 생성
+```python
+np.random.uniform(0,1,10).reshape(2, 5) # 균등 분포
+
+np.random.normal(0,1,10).reshape(2, 5) # 정규 분포
+```
+## Operation function
+
+### sum, mean, std, var
+- sum : ndarray의 element들 간의 합을 구함, list의 sum 기능과 동일
+- mean : ndarray의 element들의 평균값을 구함
+- std : ndarray의 element들의 표준편차를 구함
+- var : ndarray의 element들의 분산을 구함
+
+### axis
+- 모든 operation function을 실행할 때 기준이 되는 dimension 축
+```python
+(4,) -> (3, 4) -> (3, 3, 4) 
+# axis : 0 -> 0, 1 -> 0, 1, 2
+```
+
+### concatenate
+- numpy array를 붙이는 함수
+```python
+np.vstack((a, b))
+np.hstack((a, b))
+np.concatenate((a, b), axis = 0)
+np.concatenate((a, b.T), axis = 1)
+```
+
+### Element-wise operations
+- array 간 shape이 같을 때 일어나는 연산
+
+### dot product
+- 행렬간의 곱
+
+### broadcasting
+- shape이 다른 배열 간 연산을 지원하는 기능
+
+### timeit
+- jupyter 환경에서 코드의 퍼포먼스를 체크하는 함수
+
+```python
+%timeit scalar_vector_product(scalar, vector)
+%timeit np.arange(iteration_max)*scalar
+```
+- 일반적으로 속도는 for loop < list comprehension < numpy
+- 100,000,000번의 loop이 돌 떄, 약 4배 이상의 성능 차이를 보임
+- numby는 c로 구혀녀되어 있어, 성능을 확보하는 대신, 파이썬의 dynamic typing을 포기함
+- concatenate처럼 계산이 아닌, 할당에서는 연산 속도의 이점이 없음
