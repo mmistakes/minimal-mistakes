@@ -348,6 +348,7 @@ categories: math-for-ml
 
         
       </section>
+<button onclick="checkAnswers()">제출</button>      
  <script>
         function normalizeText(text) {
             return text.trim().toLowerCase().replace(/\s+/g, "");
