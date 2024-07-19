@@ -7,6 +7,22 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+  </script>
+
+  <script type="text/x-mathjax-config">
+      window.MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+              displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          },
+          options: {
+              processHtmlClass: 'mathjax-process', // You can add this class to elements that should be processed
+              ignoreHtmlClass: 'mathjax-ignore' // You can add this class to elements that should be ignored
+          }
+      };
+  </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
