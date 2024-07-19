@@ -3,6 +3,24 @@ title: 통계학 맛보기(복습용)
 date: 2024-07-20
 categories: math-for-ml
 ---
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통계학 맛보기</title>
+    <style>
+        /* 기존 CSS 스타일과 추가된 스타일 */
+        input[type="text"] {
+            width: 150px;
+            border: 1px solid black;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 <section class="page__content" itemprop="text">
         
         <h2 id="모수">모수<a class="header-link" href="#모수" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
@@ -10,7 +28,7 @@ categories: math-for-ml
 <ul>
   <li>모수 : 특정 집단 전체의 특성을 나타내는 수치
     <ul>
-      <li>모집단의 평균, 분산, 비율 등의 형태로 나타남</li>
+      <li><input type="text" data-answer="모집단" />의 평균, 분산, 비율 등의 형태로 나타남</li>
     </ul>
   </li>
   <li>통계적 모델링은 적절한 가정 위에서 확률분포를 추정(inference)하는 것이 목표</li>
@@ -330,3 +348,31 @@ categories: math-for-ml
 
         
       </section>
+ <script>
+        function normalizeText(text) {
+            return text.trim().toLowerCase().replace(/\s+/g, "");
+        }
+
+        function checkAnswers() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            let correct = 0;
+            let total = inputs.length;
+
+            inputs.forEach((input) => {
+                const userAnswer = normalizeText(input.value);
+                const correctAnswers = input.dataset.answer
+                    .split("|")
+                    .map(normalizeText);
+                if (correctAnswers.includes(userAnswer)) {
+                    input.style.backgroundColor = "lightgreen";
+                    correct++;
+                } else {
+                    input.style.backgroundColor = "lightcoral";
+                }
+            });
+
+            document.getElementById("result").textContent = `총 ${total} 문제 중 ${correct}개 맞았습니다.`;
+        }
+    </script>
+</body>
+</html>
