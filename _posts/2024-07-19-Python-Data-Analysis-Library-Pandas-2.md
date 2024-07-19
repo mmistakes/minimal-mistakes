@@ -1,4 +1,8 @@
-# Python Data Analysis Library - Pandas 2
+---
+title: Python Data Analysis Library - Pandas 2
+date: 2024-07-19
+categories: python-basic
+---
 
 ## Groupby 1
 
