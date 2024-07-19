@@ -4,7 +4,6 @@ title: 통계학 맛보기
 date: 2024-07-19
 categories: math-for-ml
 ---
-{%- include mathjax.html -%}
 
 ## 모수
 
