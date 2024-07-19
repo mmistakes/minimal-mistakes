@@ -3,38 +3,7 @@ title: 통계학 맛보기(복습용)
 date: 2024-07-20
 categories: math-for-ml
 ---
-<div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="https://gityeop.github.io/math-for-ml/statistics/" itemprop="url">통계학 맛보기
-</a>
-          </h1>
-          
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          6 분 소요
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
+<section class="page__content" itemprop="text">
         
         <h2 id="모수">모수<a class="header-link" href="#모수" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h2>
 
@@ -361,55 +330,3 @@ categories: math-for-ml
 
         
       </section>
-
-      <footer class="page__meta">
-        
-        
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#math-for-ml" class="page__taxonomy-item p-category" rel="tag">math-for-ml</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2024-07-19T00:00:00+00:00">July 19, 2024</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">공유하기</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=%ED%86%B5%EA%B3%84%ED%95%99+%EB%A7%9B%EB%B3%B4%EA%B8%B0%20https%3A%2F%2Fgityeop.github.io%2Fmath-for-ml%2Fstatistics%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgityeop.github.io%2Fmath-for-ml%2Fstatistics%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://gityeop.github.io/math-for-ml/statistics/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/python-basic/numpy2/" class="pagination--pager" title="Numerical Python - numpy 2
-">이전</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">다음</a>
-    
-  </nav>
-
-    </div>
