@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : # "Anup D'Souza"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Coding by Day, Debugging by Night" # site tagline that appears below site title in masthead
 name                     : "Anup D'Souza"
 description              : "Collection of my development endeavours"
 url                      : https://anupdsouza.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
