@@ -1,4 +1,8 @@
-# Python Data Analysis Library - Pandas 1
+---
+title: Python Data Analysis Library - Pandas 1
+date: 2024-07-19
+categories: python-basic
+---
 
 - 구조화된 데이터의 처리를 지원하는 Python 라이브러리
 - panel data -> pandas
