@@ -89,7 +89,7 @@ S^2 = \frac{1}{N-1} \sum_{i=1}^{N} (X_i - \bar{X})^2 \quad \text{표본분산}
 2. 데이터 \\(\mathbf{x}\\):
    - \\(\mathbf{x}\\)는 실제 관측된 데이터입니다. 예를 들어, 어떤 실험에서 얻은 결과나 측정값들입니다.
 3. 우도 함수 \\(L(\theta; \mathbf{x})\\):
-   - 우도 함수는 주어진 파라미터 \\(\theta\\)에 대해 데이터 \\(\mathbf{x}\\)가 관측될 확률을 나타냅니다. 즉, \(L(\theta; \mathbf{x}) = P(\mathbf{x}|\theta)\)입니다.
+   - 우도 함수는 주어진 파라미터 \\(\theta\\)에 대해 데이터 \\(\mathbf{x}\\)가 관측될 확률을 나타냅니다. 즉, \\(L(\theta; \mathbf{x}) = P(\mathbf{x}|\theta)\\)입니다.
    - 여기서 \\(P(\mathbf{x}|\theta)\\)는 조건부 확률로, \\(\theta\\)가 주어졌을 때 \\(\mathbf{x}\\)가 관측될 확률을 의미합니다.
 4. \\(\underset{\theta}{\operatorname{argmax}}\\):
    - 이 부분은 “우도 함수 \\(L(\theta; \mathbf{x})\\)를 최대화하는 \\(\theta\\)를 찾는다”는 의미입니다.
