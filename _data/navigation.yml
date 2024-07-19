@@ -10,6 +10,8 @@ main:
     children:
       - title: "Machine Learning"
         url: /machine-learning/
+      - title: "인공지능을 위한 수학"
+        url: /math-for-ml/
   - title: 기타
     children:
       - title: "Github Blog"
