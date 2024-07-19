@@ -152,7 +152,9 @@ $$
 
 3. 정규분포의 확률밀도함수(PDF):
 
+
 - 정규분포에서 \\(P(x_i|\theta)\\)는 다음과 같습니다.
+
 
 $$
 P(x_i|\theta) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp \left( -\frac{(x_i - \mu)^2}{2\sigma^2} \right)
