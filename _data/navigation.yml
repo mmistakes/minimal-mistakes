@@ -16,7 +16,8 @@ main:
     children:
       - title: "Github Blog"
         url: /github-blog/
-  
+      - title: "생산성"
+        url: /productivity/
 # main:
 #   - title: "Quick-Start Guide"
 #     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
