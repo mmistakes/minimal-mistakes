@@ -1,0 +1,18 @@
+---
+layout: post
+title: Cause
+date: 2016-12-13 00:00:00
+homepage: https://github.com/CloudCannon/cause-jekyll-template
+download: https://github.com/CloudCannon/cause-jekyll-template/archive/master.zip
+demo: https://clean-oryx.cloudvent.net/
+author: CloudCannon
+thumbnail: cause.png
+license: MIT
+license_link: https://github.com/CloudCannon/cause-jekyll-template/blob/master/LICENSE
+---
+
+Cause is the perfect way for a non-profit to get started with Jekyll.
+
+* Build a community through a mailing list.
+* Accept donations from around the world.
+* Post the latest milestones to your community.

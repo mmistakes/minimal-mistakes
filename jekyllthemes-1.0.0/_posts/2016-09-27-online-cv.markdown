@@ -1,0 +1,42 @@
+---
+layout: post
+title: Online CV
+date: 2016-09-27 00:00:00
+homepage: https://github.com/sharu725/online-cv
+download: https://github.com/sharu725/online-cv/archive/master.zip
+demo: http://webjeda.com/online-cv/
+author: webjeda
+thumbnail: online-cv.png
+license: Creative Commons Attribution 3.0 Unported License
+license_link: https://creativecommons.org/licenses/by/3.0/
+---
+
+Default Theme
+
+![online CV](https://raw.githubusercontent.com/sharu725/online-cv/master/assets/images/online-cv-jekyll-theme.png)
+
+Color Customization
+
+![online CV](https://github.com/sharu725/online-cv/raw/master/assets/images/online-cv-jekyll-theme-2.png)
+
+Responsive Theme
+
+![online CV](https://github.com/sharu725/online-cv/raw/master/assets/images/online-cv-responsive-jekyll-theme.png)
+
+## How to install this Theme
+
+<iframe width="730" height="480" src="https://www.youtube.com/embed/T2nx6tj-ZH4" frameborder="0" allowfullscreen></iframe>
+
+[Detailed Installation and Theme Guidelines](https://blog.webjeda.com/jekyll-themes/online-cv/)
+
+## Changing color schemes
+Enable a color scheme by removing # in the **_config.yml** file.
+
+```
+# Enable one of these styles by removing #
+#style: styles-2
+style: styles-3
+#style: styles-4
+#style: styles-5
+#style: styles-6
+```

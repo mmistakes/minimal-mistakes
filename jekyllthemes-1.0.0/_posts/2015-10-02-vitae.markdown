@@ -1,0 +1,14 @@
+---
+layout: post
+title: Vitae
+date: 2015-10-03 00:00:00
+homepage: https://github.com/biomadeira/vitae
+download: https://github.com/biomadeira/vitae/archive/gh-pages.zip
+demo: https://biomadeira.github.io/vitae/
+author: biomadeira
+thumbnail: vitae.png
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+A simple and elegante personal resume.

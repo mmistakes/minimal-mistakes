@@ -1,0 +1,18 @@
+---
+layout: post
+title: Murmur
+date: 2016-12-01 15:35:00
+homepage: https://github.com/songroger/murmur
+download: https://github.com/songroger/murmur/archive/master.zip
+demo: http://songroger.github.io/murmur
+author: Songroger
+thumbnail: murmur.png
+license: MIT License
+license_link: https://opensource.org/licenses/MIT
+---
+
+[preview](http://songroger.github.io/murmur)
+
+This is another simple theme for [jekyll](http://jekyllrb.com/). Try to
+edit `_config.yml` first before use it. Replace all the blabla
+configurations(like "avatar", "about", "title", etc.) to your owns.

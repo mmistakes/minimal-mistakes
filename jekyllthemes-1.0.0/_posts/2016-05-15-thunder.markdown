@@ -1,0 +1,26 @@
+---
+layout: post
+title: Thunder
+date: 2014-05-15 18:50:00
+homepage: http://webjeda.com/thunder/
+download: https://github.com/sharu725/thunder/archive/master.zip
+author: sharathdt
+thumbnail: thunder.jpg
+license: MIT License
+license_link: https://opensource.org/licenses/MIT
+---
+
+[Thunder](http://webjeda.com/thunder/) minimal and light-weight jekyll
+theme.
+
+Default theme
+
+![Thunder default jekyll theme](http://webjeda.com/thunder/images/thunder-jekyll-theme.jpg)
+
+Responsive
+
+![Thunder responsive jekyll theme](http://webjeda.com/thunder/images/thunder-responsive-jekyll-theme.jpg)
+
+Color schemes
+
+![Thunder jekyll theme color scheme](http://webjeda.com/thunder/images/thunder-jekyll-theme-2.jpg)

@@ -1,0 +1,30 @@
+---
+layout: post
+title: Webjeda Karna
+date: 2016-11-01 00:00:00
+homepage: https://github.com/sharu725/karna
+download: https://github.com/sharu725/karna/archive/master.zip
+demo: http://webjeda.com/karna
+author: webjeda
+thumbnail: karna.png
+license: MIT License
+license_link: https://opensource.org/licenses/MIT
+---
+
+Default Theme
+
+![karna Jekyll Theme](http://webjeda.com/karna/images/karna-jekyll-theme-screenshot.png)
+
+A post would look like this
+
+![karna Jekyll Theme](http://webjeda.com/karna/images/post.png)
+
+Responsive Theme
+
+![karna Jekyll Theme](http://webjeda.com/karna/images/karna-responsive-jekyll-theme.png)
+
+## How to install this Theme
+
+<iframe width="730" height="480" src="https://www.youtube.com/embed/T2nx6tj-ZH4" frameborder="0" allowfullscreen></iframe>
+<br />
+[**Detailed Installation and Theme Guidelines**](https://blog.webjeda.com/jekyll-themes/)

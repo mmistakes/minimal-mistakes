@@ -1,0 +1,45 @@
+---
+layout: post
+title: JOYTOU
+date: 2017-08-04 00:08:00
+homepage: https://github.com/joytou/joytou.github.io
+download: https://github.com/joytou/joytou.github.io/archive/master.zip
+demo: https://joytou.github.io/
+author: Joytou
+thumbnail: JOYTOU.png
+license: GNU General Public License Version 2
+license_link: https://github.com/joytou/joytou.github.io/blob/master/LICENSE
+---
+
+JOYTOU is a succinct theme for blogging that be made from Bootstrap.
+It supports searching for articles by date, category, label, equal class.
+>> function：
+>> - Blog post / browse function
+>> - Top navigation bar
+>> - Sitemap.xml Automatic generated
+>> - View the article by date, type, label, etc.
+>> - Important articles can be placed top
+>>
+>> Template introduction：
+>> - Bootstrap style
+>> - Simple and extreme
+>> - No picture
+>> - Fashionable
+>> - Card article section
+
+
+JOYTOU是一款基于Bootstrap搭建的博客模板。
+支持依据日期、类型、标签等分类和查看文章。
+>> 功能：
+>> - 博客发布/浏览功能
+>> - 顶部导航栏
+>> - Sitemap.xml自动生成
+>> - 按照日期、类型、标签等分类查看文章
+>> - 重要文章可置顶
+>>
+>> 模板介绍：
+>> - Bootstrap样式
+>> - 简约极致
+>> - 无图片
+>> - 时尚流行
+>> - 卡片式文章栏目

@@ -1,0 +1,40 @@
+---
+layout: post
+title: sunshine
+date: 2015-12-09 12:00:00
+homepage: https://github.com/limingyang2012/limingyang2012.github.io
+download: https://github.com/limingyang2012/limingyang2012.github.io/archive/master.zip
+demo: http://limingyang2012.github.io/
+author: limingyang2012
+thumbnail: sunshine.jpg
+license: MIT License
+license_link: https://github.com/limingyang2012/limingyang2012.github.io/blob/master/LICENSE
+---
+
+> A Jekyll theme.
+
+## Sites using sunshine
+
+If you are using this theme, please click a `star` on [this respository](https://github.com/limingyang2012/limingyang2012.github.io),
+we will be happy to know where the theme has been used.
+
+## Contributing
+
+If you want to contribute to this project, 
+file and perform the following steps:
+
+    # Fork this repository
+    # Clone your fork
+    jekyll serve --watch
+
+    git checkout -b feature_branch
+    # Implement your feature and tests
+    git add . && git commit
+    git push -u origin feature_branch
+    # Send a pull request for your feature branch
+
+### Contact
+
+If you have any questions or suggestions for improvements, don't
+hesitate to [open an issue](https://github.com/limingyang2012/limingyang2012.github.io/issues)
+or making a pull request for your fork!

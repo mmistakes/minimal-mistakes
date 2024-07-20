@@ -1,0 +1,36 @@
+---
+layout: post
+title: Uno-dbyll
+date: 2015-01-02 03:26:00
+homepage: https://github.com/meliodus/uno-dbyll
+download: https://github.com/meliodus/uno-dbyll/archive/gh-pages.zip
+demo: http://meliodus.github.io/uno-dbyll/
+author: Ankan Biswas
+thumbnail: uno-dbyll_00.png
+license: MIT
+license_link: https://raw.githubusercontent.com/meliodus/uno-dbyll/gh-pages/LICENSE
+---
+
+### Uno-dbyll
+
+<iframe src="//ghbtns.com/github-btn.html?user=meliodus&repo=uno-dbyll&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+Uno-dbyll is a simple, clean, responsive and stylist theme for jekyll.
+
+The [theme demo site](http://meliodus.github.io/uno-dbyll) is my source code for personal blogging, build and hosted with Jekyll. 
+
+I started this _project as a part of my learning and curiosity. Many
+thanks to _İsmail_Demirbilek for his responsive website on Jekyll and
+providing his blog as a reference.
+
+I would also like to thank Dale-Anthony for the his awesome website as
+a next-reference.
+
+### Contribute
+
+<iframe src="//ghbtns.com/github-btn.html?user=meliodus&repo=uno-dbyll&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="156px" height="30px"></iframe>
+Start by [forking the repository](https://github.com/meliodus/uno-dbyll/fork).
+
+### Contact
+<iframe src="//ghbtns.com/github-btn.html?user=meliodus&type=follow&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="224px" height="30px"></iframe>
+I am a starter. If you have any suggestions for improvements, don't hesitate to [open an issue](https://github.com/meliodus/uno-dbyll/issues) or making a pull request for your fork!
+

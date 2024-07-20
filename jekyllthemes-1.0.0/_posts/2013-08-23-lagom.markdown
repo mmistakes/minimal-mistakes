@@ -1,0 +1,30 @@
+---
+layout: post
+title: Lagom
+date: 2013-08-23 12:00:00
+homepage: https://github.com/swanson/lagom
+download: https://github.com/swanson/lagom/archive/master.zip
+demo: http://lagom.mdswanson.com/
+author: Matt Swanson
+thumbnail: lagom.png
+license: MIT License
+license_link: https://github.com/swanson/lagom/blob/master/LICENSE
+---
+
+Lagom, a [Jekyll][j] blog theme with just the right amount of style.
+
+Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
+
+### Features
+
+* Responsive, based on [Skeleton][skeleton]
+* [Font Awesome][font-awesome] for icons
+* Open Sans from [Google web fonts][gfonts]
+* Built-in Atom RSS feed
+
+
+[j]: http://jekyllrb.com/
+[mds]: http://mdswanson.com
+[skeleton]: http://www.getskeleton.com/
+[font-awesome]: http://fortawesome.github.io/Font-Awesome/
+[gfonts]: http://www.google.com/fonts/specimen/Open+Sans

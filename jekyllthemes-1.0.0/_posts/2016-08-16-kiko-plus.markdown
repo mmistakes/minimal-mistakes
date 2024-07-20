@@ -1,0 +1,21 @@
+---
+layout: post
+title: Kiko Plus
+date: 2016-08-16 01:45:03
+homepage: https://github.com/AWEEKJ
+download: https://github.com/AWEEKJ/Kiko-plus/archive/master.zip
+demo: http://aweekj.github.io/Kiko-plus
+author: Hanju Jamie Jo
+thumbnail: kiko-plus.png
+license: MIT License
+---
+
+An open source minimal theme for Jekyll, ideal for blogging.
+
+## Features
+
+- Disqus comment system
+- Google analytics
+- Pagination support
+- Custom tags
+- SEO support

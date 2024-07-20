@@ -1,0 +1,15 @@
+---
+layout: post
+title: Ed
+date: 2016-01-24 10:00:00
+homepage: https://github.com/elotroalex/ed
+download: https://github.com/elotroalex/ed/archive/master.zip
+demo: http://elotroalex.github.io/ed/
+author: Alex Gil
+thumbnail: ed.png
+license: MIT License
+license_link: https://github.com/elotroalex/ed/blob/master/LICENSE.md
+---
+
+Ed is a Jekyll theme designed for editors interested in producing
+beautiful and durable digital editions of poetry, drama or narrative.

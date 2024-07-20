@@ -1,0 +1,45 @@
+---
+layout: post
+title: Wangana
+date: 2014-02-20 00:00:00
+homepage: https://github.com/nadjetey/wangana
+download: https://github.com/nadjetey/wangana/archive/master.zip
+demo: http://nadjetey.github.io/
+author: Nii Adjetey Sowah
+thumbnail: wangana.png
+license: MIT License
+license_link: https://github.com/nadjetey/wangana/blob/master/LICENSE
+---
+
+## Wangana
+
+<iframe
+src="http://ghbtns.com/github-btn.html?user=nadjetey&repo=wangana&type=watch&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="110"
+height="20"></iframe>
+
+Wangana is responsive Jekyll theme, perfect for powering your GitHub
+hosted blog -- by developer and design hacker
+[Nii](https://twitter.com/_nadjetey).
+
+## Contribute
+
+<iframe
+src="http://ghbtns.com/github-btn.html?user=nadjetey&repo=wangana&type=fork&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="95"
+height="20"></iframe>
+
+You are welcome to help make Wangana even better. Start by
+[forking](https://github.com/nadjetey/wangana/fork) this repository.
+
+## Contact
+
+<iframe
+src="http://ghbtns.com/github-btn.html?user=nadjetey&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="132"
+height="20"></iframe>
+
+I'd love to hear from you, send me a
+[tweet](https://twitter.com/_nadjetey). Feel free to [open
+issues](https://github.com/nadjetey/wangana/issues/new) if you run into
+trouble or have suggestions. Pull Requests always welcome.

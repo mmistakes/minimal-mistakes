@@ -1,0 +1,14 @@
+---
+layout: post
+title: Clean
+date: 2015-09-27 00:00:00
+homepage: https://github.com/knaman2609/clean
+download: https://github.com/knaman2609/clean/archive/master.zip
+demo: http://knaman2609.github.io/clean/
+author: knaman2609
+thumbnail: clean.png
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+A simple clean theme for jekyll.

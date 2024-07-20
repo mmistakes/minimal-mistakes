@@ -1,0 +1,28 @@
+---
+layout: post
+title: Sweet 16
+homepage: https://github.com/jdh8/sweet-16/
+download: https://github.com/jdh8/sweet-16/archive/master.zip
+demo: https://jdh8.github.io
+author: Chen-Pang He
+thumbnail: sweet-16.png
+license: GPL
+license_link: https://github.com/jdh8/sweet-16/blob/master/LICENSE
+---
+
+Sweet 16 is [Wordpress 2016 theme][2016] rewritten in Jekyll.
+
+This theme is for those who like the visual design of Wordpress but otherwise
+want a static site.
+
+This theme is a reaction to content injection vulnerability in Wordpress 4.7.
+I've always liked the design of Wordpress default themes.  Wordpress is also
+good for muggles but too complex for me.  I've never thought that such
+complexity would cause problem until a random French guy injected a spam
+article.
+
+License
+-------
+GPL because this theme is a derivative from Wordpress.
+
+[2016]: https://wordpress.org/themes/twentysixteen/

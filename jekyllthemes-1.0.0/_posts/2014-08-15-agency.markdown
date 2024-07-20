@@ -1,0 +1,50 @@
+---
+layout: post
+title: Agency
+date: 2014-08-15 00:00:00
+homepage: https://github.com/y7kim/agency-jekyll-theme
+download: https://github.com/y7kim/agency-jekyll-theme/archive/gh-pages.zip
+demo: https://y7kim.github.io/agency-jekyll-theme
+author: Rick Kim
+thumbnail: agency.jpg
+license: Apache License Version 2.0
+license_link: https://github.com/y7kim/agency-jekyll-theme/blob/gh-pages/LICENSE
+---
+
+## Agency
+
+<iframe
+src="http://ghbtns.com/github-btn.html?user=y7kim&repo=agency-jekyll-theme&type=watch&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="110"
+height="20"></iframe>
+
+Agency theme, a portfolio theme that allows you to showcase your
+projects. The theme is based on free and open source
+[Agency](http://startbootstrap.com/templates/agency/) theme by [Start
+Bootstrap](http://startbootstrap.com/).
+
+This theme for Jekyll was inspired by [Jerome
+Lachaud](https://github.com/jeromelachaud)'s Freelancer theme for
+Jekyll.
+
+## Contribute
+
+<iframe
+src="http://ghbtns.com/github-btn.html?user=y7kim&repo=agency-jekyll-theme&type=fork&count=true"
+allowtransparency="true" frameborder="0" scrolling="0" width="95"
+height="20"></iframe>
+
+Start by [forking](https://github.com/y7kim/agency-jekyll-theme/fork)
+this repository.
+
+## Contact
+
+<iframe src="http://ghbtns.com/github-btn.html?user=y7kim&type=follow"
+allowtransparency="true" frameborder="0" scrolling="0" width="156"
+height="20"></iframe>
+
+Feel free to [open
+issues](https://github.com/y7kim/agency-jekyll-theme/issues/new) if you
+run into trouble or have suggestions.
+
+Pull Requests always welcome.

@@ -1,0 +1,11 @@
+---
+layout: post
+title: Horizons
+date: 2015-08-20 00:00:00
+homepage: https://github.com/CloudCannon/Horizons-Jekyll-Theme
+download: https://github.com/CloudCannon/Horizons-Jekyll-Theme/archive/master.zip
+author: Template by http://templated.co, images by http://unsplash.com, ported by http://cloudcannon.com
+thumbnail: horizons.jpg
+license: Creative Commons Attribution 3.0 Unported License
+license_link: https://github.com/CloudCannon/Horizons-Jekyll-Theme/blob/master/LICENSE.txt
+---

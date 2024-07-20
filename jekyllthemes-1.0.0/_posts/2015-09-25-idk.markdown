@@ -1,0 +1,38 @@
+---
+layout: post
+title: idk
+date: 2015-09-25 14:35:00
+homepage: https://github.com/UniFreak/unifreak.github.io
+download: https://codeload.github.com/UniFreak/unifreak.github.io/zip/master
+demo: https://unifreak.github.io
+author: FangHao
+thumbnail: idk.png
+license: MIT License
+license_link: https://github.com/UniFreak/unifreak.github.io/blob/master/LICENCE
+---
+
+### INTRO
+
+Plan to start blogging, so designed this.
+
+My first design, the css code maybe messy, but I will improve it
+gradully.
+
+If you wanna improve it, fork it.
+
+### FEATURE
+
+Pagination per category/tag-ly, using [pagination.js][paginationJs]
+
+Nothing else....
+
+Hope you like it :)
+
+### YES, ELSE
+
+Thanks to [@Gaohaoyang's theme][gsTheme], I refered to it a lot when
+coding the theme
+
+
+  [paginationJs]: http://paginationjs.com
+  [gsTheme]: http://jekyllthemes.org/themes/cool-concise-high-end/

@@ -1,0 +1,17 @@
+---
+layout: post
+title: Darcli
+date: 2016-05-02 17:00:00
+homepage: https://github.com/gjuniioor/darcli
+download: https://github.com/gjuniioor/darcli/archive/master.zip
+demo: https://gjuniioor.github.io/darcli/
+author: Gildásio Júnior aka gjuniioor
+thumbnail: darcli.jpg
+license: GNU General Public License Version 3
+license_link: https://github.com/gjuniioor/darcli/blob/gh-pages/assets/LICENSE
+---
+
+A minimal dark theme focused on the content.
+
+To more information, please, take a look at the
+[README](https://github.com/gjuniioor/darcli/) file.
