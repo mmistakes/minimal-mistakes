@@ -1,0 +1,14 @@
+---
+layout: post
+title: Mekyll
+date: 2017-03-30 23:00:00
+homepage: https://github.com/ifedyukin/Mekyll
+download: https://github.com/ifedyukin/Mekyll
+demo: https://ifedyukin.github.io/Mekyll
+author: Igor Fedyukin
+thumbnail: mekyll.png
+license: MIT
+---
+
+Mekyll is Medium style Jekyll theme.    
+![Screenshot](https://raw.githubusercontent.com/ifedyukin/Mekyll/master/screenshot.png)

@@ -1,0 +1,20 @@
+---
+layout: post
+title: Dbyll
+date: 2013-11-15 11:53:00
+homepage: https://github.com/dbtek/dbyll
+download: https://github.com/dbtek/dbyll/archive/master.zip
+demo: http://dbtek.github.io/dbyll/
+author: Ismail Demirbilek
+thumbnail: dbyll.png
+license: MIT License
+license_link: https://github.com/dbtek/dbyll/blob/master/LICENSE
+---
+
+Bootstrap based two-column, minimalistic theme for your jekyll powered
+website. Supports tags, categories, social links, bio, gravatar,
+disqus. Perfect for blogging!
+
+There is also [another edition](https://github.com/jekyll-bs3/dbyll) of
+the theme for project
+[jekyll-bootstrap-3](https://github.com/dbtek/jekyll-bootstrap-3).

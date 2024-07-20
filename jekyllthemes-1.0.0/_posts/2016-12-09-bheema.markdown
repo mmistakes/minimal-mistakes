@@ -1,0 +1,30 @@
+---
+layout: post
+title: Webjeda Bheema
+date: 2016-12-09 00:00:00
+homepage: https://github.com/sharu725/bheema
+download: https://github.com/sharu725/bheema/archive/master.zip
+demo: http://webjeda.com/bheema
+author: webjeda
+thumbnail: bheema.png
+license: MIT License
+license_link: https://opensource.org/licenses/MIT
+---
+
+Default Theme
+
+![Bheema Jekyll Theme](http://webjeda.com/bheema/img/bheema-jekyll-theme.png)
+
+
+Responsive Theme
+
+![Bheema Jekyll Theme](http://webjeda.com/bheema/img/bheema-jekyll-responsive-theme-screenshot.png)
+
+## How to install this Theme
+
+<iframe width="730" height="480"
+src="https://www.youtube.com/embed/T2nx6tj-ZH4"
+frameborder="0" allowfullscreen></iframe>
+<br />
+
+[**Detailed Installation and Theme Guidelines**](https://blog.webjeda.com/jekyll-themes/)

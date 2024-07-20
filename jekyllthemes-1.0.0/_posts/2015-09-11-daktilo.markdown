@@ -1,0 +1,25 @@
+---
+layout: post
+title: Daktilo
+date: 2015-09-11 00:48:00
+homepage: https://github.com/kronik3r/daktilo
+download: https://github.com/kronik3r/daktilo/archive/master.zip
+demo: http://electrik-frog.com/daktilo/
+author: Motaquillah Maddane
+thumbnail: daktilo.jpg
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+Daktilo is a Jekyll theme with a minimal design inspired from
+typewriters.
+
+# Features
+- Fully responsive
+- [Disqus](https://disqus.com/) integration for comments.
+- Google Analytics integration.
+- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
+- Support for categories.
+- Font-Awesome Icons.
+- Optimized for SEO.
+- Coolest [404 page ever](http://hitchhiker.ma/daktilo/404.html).

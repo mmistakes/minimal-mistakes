@@ -1,0 +1,37 @@
+---
+layout: post
+title: Simplest
+date: 2016-01-02 15:05:09
+homepage: https://github.com/nandomoreirame/simplest
+download: https://github.com/nandomoreirame/simplest/archive/master.zip
+demo: http://nandomoreira.me/simplest/
+author: nandomoreira.me
+thumbnail: simplest.png
+license: MIT License
+license_link: https://github.com/nandomoreirame/simplest/blob/master/LICENSE
+---
+
+### Start in 4 steps
+
+1. Download or clone repo `git clone git@github.com:nandomoreirame/simplest.git`
+2. Enter the folder: `cd simplest/`
+3. Install bundle gem: `gem install bundle`
+3. Install local gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
+
+Access, [localhost:4000/simplest](http://localhost:4000/simplest)
+
+### Demo and Download
+
+[Demo](http://nandomoreira.me/simplest/)
+[Download](https://github.com/nandomoreirame/simplest/archive/master.zip)
+
+![simplest - free Jekyll theme](http://raw.githubusercontent.com/nandomoreirame/simplest/master/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
+
+Enjoy!

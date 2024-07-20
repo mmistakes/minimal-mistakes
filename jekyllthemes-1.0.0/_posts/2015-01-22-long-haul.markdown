@@ -1,0 +1,32 @@
+---
+layout: post
+title: Long Haul
+date: 2015-01-22 12:00:00
+homepage: https://github.com/brianmaierjr/long-haul
+download: https://github.com/brianmaierjr/long-haul/archive/master.zip
+demo: http://brianmaierjr.com/long-haul/
+author: Brian Maier Jr.
+thumbnail: long-haul.png
+license: MIT License
+license_link: https://github.com/brianmaierjr/long-haul/blob/master/LICENSE
+---
+
+## Long Haul
+
+Long Haul is a minimal jekyll theme built with COMPASS / SASS / SUSY
+and focuses on long form blog plosts.
+
+## Features
+
+- Minimal, Type Focused Design
+- Built with SASS + COMPASS
+- Layout with SUSY Grid
+- SVG Social Icons
+- Responsive Nav Menu
+- XML Feed for RSS Readers
+- Contact Form via Formspree
+- 5 Post Loop with excerpt on Home Page
+- Previous / Next Post Navigation
+- Estimated Reading Time for posts
+- Stylish Drop Cap on posts
+- A Better Type Scale for all devices

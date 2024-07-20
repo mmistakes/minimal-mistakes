@@ -1,0 +1,15 @@
+---
+layout: post
+title: Rifyll
+date: 2015-01-31 13:28:53
+homepage: https://github.com/itsrifat/rifyll
+download: https://github.com/itsrifat/rifyll/archive/master.zip
+demo: http://itsrifat.github.io/rifyll/
+author: Moinul
+thumbnail: rifyll.png
+license: MIT License
+license_link: https://github.com/itsrifat/rifyll/blob/master/LICENSE.md
+---
+
+This is plain and simple blog template I made for my personal website,
+fork it if you like!

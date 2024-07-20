@@ -1,0 +1,35 @@
+---
+layout: post
+title: Biu
+date: 2017-04-03 00:00:00
+homepage: https://github.com/RedL0tus/Biu-Jekyll-Theme
+download: https://github.com/RedL0tus/Biu-Jekyll-Theme
+demo: https://v2bv.win
+author: KayMW (RedL0tus) & alexcarpenter
+thumbnail: biu.png
+license: MIT
+---
+
+![Screenshot](https://img.vim-cn.com/20/1fd5266e6c9bb35260597958b6df83aa1c00eb.png)  
+
+Biu is a minimal theme based on [Butane](https://github.com/alexcarpenter/butane-jekyll-theme)  
+
+Integrations  
+- [Google Fonts](https://fonts.google.com/)  
+- [Disqus](https://disqus.com/)  
+
+# How to Use  
+
+  For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details,  
+  or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),  
+  and [creating pages](https://jekyllrb.com/docs/pages/).  
+
+And:  
+- `git clone https://github.com/RedL0tus/Biu-Jekyll-Theme.git`  
+- `cd Biu-Jekyll-Theme`  
+- `rm -rf CHANGELOG.md README.md`  
+- `jekyll serve`  
+
+## License  
+
+[MIT License](https://github.com/RedL0tus/Biu-Jekyll-Theme/blob/gh-pages/LICENSE)  

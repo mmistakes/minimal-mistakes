@@ -1,0 +1,12 @@
+---
+layout: post
+title: Twenty
+date: 2015-08-20 00:00:00
+homepage: https://github.com/CloudCannon/Twenty-Jekyll-Theme
+download: https://github.com/CloudCannon/Twenty-Jekyll-Theme/archive/master.zip
+demo: http://html5up.net/twenty
+author: HTML5 UP (html5up.net), @n33co
+thumbnail: twenty.jpg
+license: Creative Commons Attribution 3.0 Unported License
+license_link: https://github.com/CloudCannon/Twenty-Jekyll-Theme/blob/master/LICENSE.txt
+---

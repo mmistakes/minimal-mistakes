@@ -1,0 +1,25 @@
+---
+layout: post
+title: So Simple
+date: 2013-07-13 23:42:00
+homepage: https://github.com/mmistakes/so-simple-theme
+download: https://github.com/mmistakes/so-simple-theme/archive/master.zip
+demo: http://mmistakes.github.io/so-simple-theme/
+author: Michael Rose
+thumbnail: so-simple.png
+license: MIT License
+license_link: https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+---
+
+A simple and clean responsive Jekyll theme for words and photos.
+
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Gracefully degrading in older browsers. Compatible with Internet
+  Explorer 8+ and all modern browsers.
+* Minimal embellishments and subtle animations.
+* Readable typography to make your words shine.
+* Support for large images to call out your favorite posts.
+* Simple and clear permalink structure.
+* Tags for Open Graph and Twitter Cards for a better social sharing
+  experience.
+* Vanilla custom 404 page to get you started.

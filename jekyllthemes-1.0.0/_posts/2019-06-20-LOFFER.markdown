@@ -1,0 +1,16 @@
+---
+layout: post
+title: LOFFER
+date: 2019-06-20 14:00:00
+homepage: https://github.com/FromEndWorld/LOFFER
+download: https://github.com/FromEndWorld/LOFFER/archive/v0.1.0.zip
+demo: https://fromendworld.github.io/LOFFER/
+author: FromEndworld
+thumbnail: LOFFER.png
+license: MIT License
+license_link: https://github.com/FromEndWorld/LOFFER/blob/master/LICENSE
+---
+
+LOFFER is a forkable minimal responsive theme. Sidebar layout on desktop, one column on mobile.
+
+Documentation in Simplified Chinese. 

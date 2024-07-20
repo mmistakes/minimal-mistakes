@@ -1,0 +1,14 @@
+---
+layout: post
+title: Slender
+date: 2016-03-31 13:34:00
+homepage: https://github.com/nikrich/jekyll-slender-template
+download: https://github.com/nikrich/jekyll-slender-template/archive/master.zip
+demo: http://nikrich.github.io/jekyll-slender-template/#
+author: Jannik Richter
+thumbnail: slender.png
+license: MIT License
+license_link: https://github.com/nikrich/jekyll-slender-template/blob/master/LICENSE
+---
+
+A modern theme for graphic designers and developers.

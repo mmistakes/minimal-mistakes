@@ -1,0 +1,59 @@
+---
+layout: post
+title: mug
+date: 2015-11-21 11:42:09
+homepage: https://github.com/nandomoreirame/mug
+download: https://github.com/nandomoreirame/mug/archive/master.zip
+demo: http://nandomoreira.me/mug/
+author: nandomoreira.me
+thumbnail: mug.png
+license: MIT License
+license_link: https://github.com/nandomoreirame/mug/blob/master/LICENSE
+---
+
+**This theme requires ruby and rubygems installed**
+
+---
+
+### Start in 4 steps
+
+1. Download or clone repo `git clone git@github.com:nandomoreirame/mug.git`
+2. Enter the folder: `cd mug/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
+
+Access, [localhost:4000/mug](http://localhost:4000/mug)
+
+### Deploy in Github pages in 2 steps
+
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in
+  `Rakefile`
+2. Run `rake` or `rake publish` for build and publish on Github
+
+---
+
+### Using Rake tasks
+
+* Create a new page: `rake page name="contact.md"`
+* Create a new post: `rake post title="TITLE OF THE POST"`
+
+---
+
+### Demo and Download
+
+[Demo](http://nandomoreira.me/mug/)
+[Download](https://github.com/nandomoreirame/mug/archive/master.zip)
+
+![mug - free Jekyll theme](http://raw.githubusercontent.com/nandomoreirame/mug/master/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
+
+**Warning:** _Please remove metas `<meta name="robots"
+content="noindex">` and `<meta name="googlebot" content="noindex">` in
+`_layouts/default.html`_
+
+Enjoy

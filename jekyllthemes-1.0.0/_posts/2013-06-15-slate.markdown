@@ -1,0 +1,16 @@
+---
+layout: post
+title: Slate
+date: 2013-06-15 01:38:11
+homepage: https://github.com/jasoncostello/slate
+download: https://github.com/jasoncostello/slate/archive/master.zip
+author: Jason Costello
+thumbnail: slate.png
+license: MIT License
+license_link: https://github.com/jasoncostello/slate/blob/master/LICENSE
+---
+
+Slate is responsive theme for GitHub Pages. [Fork
+it](https://github.com/jsncostello/slate/fork) and use it on your own
+site or generate one automatically using [GitHub
+Pages](http://pages.github.com).

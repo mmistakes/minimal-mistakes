@@ -1,0 +1,36 @@
+---
+layout: post
+title: Nice Blog
+date: 2016-03-30 00:00:00
+homepage: https://github.com/itisbenjamin/Nice_Blog
+download: https://github.com/itisbenjamin/Nice_Blog/archive/master.zip
+demo: https://itisbenjamin.github.io/Nice_Blog
+author: Benjamin
+thumbnail: nice-blog.png
+license: MIT License
+license_link: https://github.com/itisbenjamin/Nice_Blog/blob/master/LICENSE
+---
+
+# Welcome
+
+I think many blog themes are over designed, so I created this one.
+
+Just for using, not showing off.
+
+# Nice Blog
+
+A Simple Jekyll Blog Theme.
+
+[Demo](http://benjaminblog.ml/Nice_Blog)
+
+![index-page](https://itisbenjamin.github.io/Nice_Blog/img/blog/index.png)
+
+# Author
+
+A normal person just wanna see this world.
+
+[Twitter](https://twitter.com/itisbenjamin1)
+
+# License
+
+Use MIT License.

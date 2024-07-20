@@ -1,0 +1,25 @@
+---
+layout: post
+title: autm-rb
+date: 2014-10-10 10:00:00
+homepage: https://github.com/railsr/autm-rb
+download: https://github.com/railsr/autm-rb/archive/master.zip
+author: Kirill Beletskiy
+thumbnail: autm-rb.png
+license: MIT License
+license_link: https://github.com/railsr/autm-rb/blob/master/LICENSE
+---
+
+### Features
+
+- github, stackoverflow, twitter links
+- share buttons: twitter, facebook, google plus
+- comments via DISQUS
+- pagination
+- tags
+- code highlighting
+- bootstrap components
+- font awesome
+- responsive
+- embeded video support
+- cool colors

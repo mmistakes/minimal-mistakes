@@ -1,0 +1,71 @@
+---
+layout: post
+title: Shiori
+date: 2014-09-07 15:00:00
+homepage: https://github.com/ellekasai/shiori/
+download: https://github.com/ellekasai/shiori/archive/gh-pages.zip
+demo: http://ellekasai.github.io/shiori/
+author: Elle Kasai
+thumbnail: shiori.png
+license: MIT License
+license_link: http://ellekasai.mit-license.org/
+---
+
+Shiori is a Bootstrap-based Jekyll theme. It looks great by default,
+but you can customize it easily. It supports Bootstrap and Font Awesome
+classes out of the box.
+
+## Screenshots
+
+### Desktop/Tablet
+
+![](http://cl.ly/image/3a2M1D3E3b3d/screenshot%202014-08-30%20at%206.51.34%20PM.png)
+
+### Mobile
+
+![](http://cl.ly/image/3n432P3S161z/screenshot%202014-09-01%20at%2011.20.52%20AM.png)
+
+## Color Schemes
+
+I wear different colors (based on [Flat UI
+Colors](http://flatuicolors.com/)):
+
+### Dark
+
+![](http://cl.ly/image/3d3T3b3E0b45/screenshot%202014-08-30%20at%206.48.56%20PM.png)
+
+---
+
+### Turquoise
+
+![](http://cl.ly/image/1s1k3m1E3n37/screenshot%202014-08-30%20at%206.49.02%20PM.png)
+
+---
+
+### Green
+
+![](http://cl.ly/image/0G0G3u392I11/screenshot%202014-08-30%20at%206.49.08%20PM.png)
+
+---
+
+### Blue
+
+![](http://cl.ly/image/1V1C0n2U0c1s/screenshot%202014-08-30%20at%206.49.14%20PM.png)
+
+---
+
+### Purple
+
+![](http://cl.ly/image/1V283M0f1K08/screenshot%202014-08-30%20at%206.49.19%20PM.png)
+
+---
+
+### Orange
+
+![](http://cl.ly/image/2d2k010J3z3g/screenshot%202014-08-30%20at%206.49.24%20PM.png)
+
+---
+
+### Red
+
+![](http://cl.ly/image/10080E2G3c1e/screenshot%202014-08-30%20at%206.49.31%20PM.png)

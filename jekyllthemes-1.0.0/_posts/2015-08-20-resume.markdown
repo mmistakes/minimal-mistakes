@@ -1,0 +1,12 @@
+---
+layout: post
+title: Resume
+date: 2015-08-20 00:00:00
+homepage: https://github.com/jglovier/resume-template
+download: https://github.com/jglovier/resume-template/archive/gh-pages.zip
+demo: http://resume-template.joelglovier.com/
+author: Joel Glovier
+thumbnail: resume.png
+license: MIT License
+license_link: https://github.com/jglovier/resume-template/blob/gh-pages/LICENSE
+---

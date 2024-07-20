@@ -1,0 +1,30 @@
+---
+layout: post
+title: leopard
+date: 2016-11-26 00:00:00
+homepage: https://github.com/leopardpan/leopardpan.github.io
+download: https://github.com/leopardpan/leopardpan.github.io/archive/master.zip
+demo: http://baixin.io
+author: leopardpan
+thumbnail: leopard.png
+license: MIT License
+license_link: https://opensource.org/licenses/MIT
+---
+
+### leopard theme
+
+[See it](http://baixin.io/#blog)
+
+A concise air interactive theme, theme is very easy to use and theme
+will maintain for a long time
+
+一个简洁大气的交互式主题, 主题使用非常简单，主题会长期维护，有问题和需求可以在
+[Jekyll搭建个人博客](http://baixin.io/2016/10/jekyll_tutorials1/) 中提问。
+
+#### 一些其它效果
+
+![](https://segmentfault.com/img/bVF42T?w=360&h=240)
+
+![](https://segmentfault.com/img/bVF42W?w=2250&h=1134)     
+
+[更多效果点击查看](http://baixin.io)

@@ -1,0 +1,18 @@
+---
+layout: post
+title: Edition
+date: 2016-12-13 00:00:00
+homepage: https://github.com/CloudCannon/edition-jekyll-template
+download: https://github.com/CloudCannon/edition-jekyll-template/archive/master.zip
+demo: https://long-pig.cloudvent.net/
+author: CloudCannon
+thumbnail: edition.png
+license: MIT
+license_link: https://github.com/CloudCannon/edition-jekyll-template/blob/master/LICENSE
+---
+
+Write documentation for your product using Edition.
+
+* Clearly document how you use your product.
+* Fully integrated search allows your customers to find the content they’re looking for.
+* Write a change log to keep customers up-to-date with the latest changes.

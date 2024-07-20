@@ -1,0 +1,15 @@
+---
+layout: post
+title: Gravity
+date: 2016-04-02 11:43:00
+homepage: https://github.com/hemangsk/Gravity
+download: https://github.com/hemangsk/Gravity/archive/master.zip
+demo: http://hemangsk.github.io/Gravity
+author: Hemang Kumar (@hemangsk)
+thumbnail: gravity.png
+license: MIT License
+license_link: https://github.com/hemangsk/Gravity/blob/master/LICENSE.txt
+---
+
+Minimal, text based, liberal Jekyll theme for sharing your awesome
+ideas.

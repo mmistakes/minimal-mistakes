@@ -1,0 +1,14 @@
+---
+layout: post
+title: Urban
+date: 2016-02-28 23:30:00
+homepage: https://github.com/midzer/urban-theme
+download: https://github.com/midzer/urban-theme/archive/master.zip
+demo: http://narkotyk.net/
+author: Dennis Rohner
+thumbnail: urban.png
+license: MIT License
+license_link: https://github.com/midzer/urban-theme/blob/master/LICENSE
+---
+
+A jekyll theme for visual artists

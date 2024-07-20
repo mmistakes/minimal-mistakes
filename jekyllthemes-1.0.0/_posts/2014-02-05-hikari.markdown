@@ -1,0 +1,25 @@
+---
+layout: post
+title: Hikari
+date: 2014-02-05 12:42:00
+homepage: https://github.com/mx3m/hikari-for-Jekyll
+download: https://github.com/mx3m/hikari-for-Jekyll/archive/master.zip
+demo: http://mx3m.github.io/hikari-for-Jekyll/
+author: Mathieu Mayer-Mazzoli
+thumbnail: hikari.png
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+Hikari is an open-source [Jekyll](http://jekyllrb.com) theme perfect
+for bloggers and developers who want the best of both worlds: sharing
+snippets and stories/pictures of their latest vacation in Tokyo (that's
+just for the example, you may want to go to Kyoto too).
+
+## Hikari is
+
+- Simple & elegant
+- Fluid & responsive
+- Lightweight (no JS library has been abused during the development of
+  this theme)
+- & packed with syntax highlighting for you coders!

@@ -1,0 +1,39 @@
+---
+layout: post
+title: devAid
+date: 2015-04-16 18:00:00
+homepage: https://github.com/kevit/devaid-jekyll-theme
+download: https://github.com/kevit/devaid-jekyll-theme/archive/master.zip
+demo: http://themes.3rdwavemedia.com/demo/devaid/
+author: Xiaoying Riley
+thumbnail: devaid.png
+license: Creative Commons Attribution 3.0 Unported License
+license_link: https://creativecommons.org/licenses/by/3.0/
+---
+
+### About devAid
+
+A free mobile-friendly Bootstrap theme designed to help developers
+promote their personal projects
+
+### Setup & usage
+
+devAid may be installed by simply downloading the .tar.bz2 folder from
+the [repository on
+Github](https://github.com/kevit/devaid-jekyll-theme/archive.tar.bz2).
+
+After extracting the content from the folder into the selected
+directory, you can type ``jekyll serve`` from the terminal, than open
+your browser to ``0.0.0.0:4000/`` and you will find there.
+
+Additionally it is possible to fork the repository and using Github
+Pages as hosting. By following this way it will enough change the
+``baseurl`` value into the ``_config.yml`` file, with the directory
+name of your project (for example /blog) or with a simply "/" (slash)
+if you want install Emerald in the root.
+
+### License
+
+devAid is released under [CC BY 3.0
+License](https://creativecommons.org/licenses/by/3.0/).
+

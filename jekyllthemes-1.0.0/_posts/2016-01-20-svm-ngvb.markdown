@@ -1,0 +1,16 @@
+---
+layout: post
+title: Steve's NGVB Theme
+date: 2016-01-20 22:00:00
+homepage: https://github.com/svmiller/steve-ngvb-jekyll-template
+download: https://github.com/svmiller/steve-ngvb-jekyll-template/archive/master.zip
+demo: http://svmiller.com
+author: Steven V. Miller
+thumbnail: svm-ngvb.png
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+Steve's NGVB Theme - This is my no-good-very-bad template for Jekyll
+(modified from jekyll-new and Alex King's Favepersonal). See it in
+action at http://svmiller.com.

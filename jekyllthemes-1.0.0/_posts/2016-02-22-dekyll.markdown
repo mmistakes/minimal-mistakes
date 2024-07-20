@@ -1,0 +1,14 @@
+---
+layout: post
+title: Dekyll
+date: 2016-02-22 21:08:00
+homepage: https://github.com/kuntoaji/dekyll
+download: https://github.com/kuntoaji/dekyll/archive/master.zip
+demo: http://www.kaklabs.com
+author: Kunto Aji Kristianto
+thumbnail: dekyll.png
+license: MIT License
+license_link: https://github.com/kuntoaji/dekyll/blob/master/LICENSE.txt
+---
+
+Jekyll's default theme extended. [Demo](http://www.kaklabs.com).

@@ -1,0 +1,29 @@
+---
+layout: post
+title: Metaphor
+date: 2015-02-05 01:42:00
+homepage: https://github.com/prio101/metaphor-jekyll
+download: https://github.com/prio101/metaphor-jekyll/archive/master.zip
+demo: http://mahabubislam.me
+author: Mahabub I.
+thumbnail: metaphor.png
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+**This is a simple type blog theme made with Jekyll**
+
+# Features
+
+* Pinot-Boilerplate
+* Pinot Buttons components
+* Normalize css
+* Modernizr added
+* Parallax Effect
+* Responsive
+* Bootstrap Included
+
+
+---
+
+This is Metaphor.

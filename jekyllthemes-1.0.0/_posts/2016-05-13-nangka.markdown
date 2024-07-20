@@ -1,0 +1,16 @@
+---
+layout: post
+title: Nangka Theme
+date: 2016-05-13 21:40:00
+homepage: https://github.com/rmsubekti/nangka
+download: https://github.com/rmsubekti/nangka/archive/master.zip
+demo: https://rmsubekti.github.io/nangka
+author: rmsubekti
+thumbnail: nangka.png
+license: MIT License
+license_link: http://opensource.org/licenses/MIT
+---
+
+Just a simple Jekyll theme.
+
+✅ it's responsive.

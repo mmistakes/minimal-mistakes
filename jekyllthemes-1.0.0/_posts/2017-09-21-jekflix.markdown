@@ -1,0 +1,48 @@
+---
+layout: post
+title: Jekflix
+date: 2017-09-21 09:10:00
+homepage: https://github.com/thiagorossener/jekflix-template
+download: https://github.com/thiagorossener/jekflix-template/archive/master.zip
+demo: https://www.rossener.com/jekflix-template/
+author: Thiago Rossener
+thumbnail: jekflix.png
+license: MIT License
+license_link: https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE
+---
+
+## Jekflix Template
+
+A Jekyll template inspired by Netflix. [[Demo here](https://www.rossener.com/jekflix-template)]
+[[Features here](https://github.com/thiagorossener/jekflix-template#features)] [[Setup here](https://github.com/thiagorossener/jekflix-template/#setup)]
+
+![Jekflix](https://camo.githubusercontent.com/743784c96f7e5569d7cd80162d33718cda410013/687474703a2f2f7265732e636c6f7564696e6172792e636f6d2f646d3768376538786a2f696d6167652f75706c6f61642f76313530353335343138322f6a656b666c69782d6c6f676f5f6d666e6770732e706e67)
+
+### Did you like it? Star it!
+
+<iframe
+src="//ghbtns.com/github-btn.html?user=thiagorossener&repo=jekflix-template&type=watch&count=true&size=large"
+allowtransparency="true" frameborder="0" scrolling="0" width="160px"
+height="30px"></iframe>
+
+The [Jekflix Template](https://github.com/thiagorossener/jekflix-template/) show the main Theme. Feel free to Fork, Star it and make a New Version of it.
+
+### Contribute
+
+<iframe
+src="//ghbtns.com/github-btn.html?user=thiagorossener&repo=jekflix-template&type=fork&count=true&size=large"
+allowtransparency="true" frameborder="0" scrolling="0" width="158px"
+height="30px"></iframe>
+
+Start by [forking the repository](https://github.com/thiagorossener/jekflix-template/).
+
+### Contact
+
+<iframe
+src="//ghbtns.com/github-btn.html?user=thiagorossener&type=follow&count=true&size=large"
+allowtransparency="true" frameborder="0" scrolling="0" width="220px"
+height="30px"></iframe>
+
+If you have any questions or suggestions for improvements, don't
+hesitate to [open an issue](https://github.com/thiagorossener/jekflix-template/issues)
+or making a pull request for your fork!

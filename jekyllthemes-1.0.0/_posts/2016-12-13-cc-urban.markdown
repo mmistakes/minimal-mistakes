@@ -1,0 +1,18 @@
+---
+layout: post
+title: CC Urban
+date: 2016-12-13 00:00:00
+homepage: https://github.com/CloudCannon/urban-jekyll-template
+download: https://github.com/CloudCannon/urban-jekyll-template/archive/master.zip
+demo: https://teal-worm.cloudvent.net/
+author: CloudCannon
+thumbnail: urban1.png
+license: MIT
+license_link: https://github.com/CloudCannon/urban-jekyll-template/blob/master/LICENSE
+---
+
+Urban is the perfect starting point for your Agency website.
+
+* Show off your latest work on the portfolio page.
+* Talk about the latest trends in the industry on the blog.
+* Get new business through the contact form.

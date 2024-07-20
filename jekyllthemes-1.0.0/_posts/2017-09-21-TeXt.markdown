@@ -1,0 +1,62 @@
+---
+layout: post
+title: TeXt
+date: 2017-10-07 00:00:00
+homepage: https://github.com/kitian616/jekyll-TeXt-theme
+demo: https://tianqi.name/jekyll-TeXt-theme
+author: Tian Qi
+thumbnail: TeXt.png
+license: MIT License
+license_link: https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE
+---
+
+# TeXt Theme
+
+TeXt is a succinct theme for blogging. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+
+<iframe
+src="//ghbtns.com/github-btn.html?user=kitian616&repo=jekyll-TeXt-theme&type=watch&count=true&size=large"
+allowtransparency="true" frameborder="0" scrolling="0" width="160px"
+height="30px"></iframe>
+
+![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.png)
+
+<br />
+
+![TeXt Theme Details](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-details.png)
+
+## Features
+
+- Responsive
+- Paginate ([jekyll-paginate](https://github.com/jekyll/jekyll-paginate))
+- Table of contents
+- Tag
+- Search
+- Reading quantity ([LeanCloud](https://leancloud.cn/))
+- Emoji ([Jemoji](https://github.com/jekyll/jemoji))
+- Comment ([Disqus](https://disqus.com/))
+- Google Analytics
+- Contact information (Email, Facebook, Twitter, Linkedin, Weibo, Zhihu, etc)
+- Semantic HTML
+- Icon automation tool ([gulp-svg2png](https://www.npmjs.com/package/gulp-svg2png), [gulp-to-ico](https://www.npmjs.com/package/gulp-to-ico))
+- Color Theme
+- Mathematical formula ([MathJax](https://www.mathjax.org/))
+- Flowchart, Sequence diagram, Gantt diagram ([mermaid](https://mermaidjs.github.io/))
+- Line Chart, Bar Chart, Radar Chart, Pie Chart ([chartjs](http://www.chartjs.org/))
+- RSS（[jekyll-feed](https://github.com/jekyll/jekyll-feed))
+- Multi-language support(English | Simplified Chinese | Traditional Chinese)
+
+## How to use
+
+See [HERE](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/README.md).
+
+<br />
+
+Just feel free to Fork, Star it and make a New Version of it. :-)
+
+[GitHub](https://github.com/kitian616/jekyll-TeXt-theme) | [Demo](https://tianqi.name/jekyll-TeXt-theme)
+
+<iframe
+src="//ghbtns.com/github-btn.html?user=kitian616&repo=jekyll-TeXt-theme&type=watch&count=true&size=large"
+allowtransparency="true" frameborder="0" scrolling="0" width="160px"
+height="30px"></iframe>

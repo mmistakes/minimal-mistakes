@@ -1,0 +1,17 @@
+---
+layout: post
+title: hushaw
+date: 2014-01-23 01:42:00
+homepage: https://github.com/hushaw/hushaw.github.com
+download: https://github.com/hushaw/hushaw.github.com/archive/master.zip
+demo: http://hushaw.github.io
+author: signifox
+thumbnail: hushaw.png
+license: MIT License
+license_link: https://github.com/hushaw/hushaw.github.com/blob/master/LICENCE
+---
+
+I just want to develop a minimal jekyll theme, and now i figure it out.
+It 's free, just for fun.
+
+This demo containes some chinese characters.

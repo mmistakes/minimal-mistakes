@@ -1,0 +1,17 @@
+---
+layout: post
+title: Naringu
+date: 2015-02-21 02:30:00
+homepage: https://github.com/ariestiyansyah/naringu
+download: https://github.com/ariestiyansyah/naringu/archive/master.zip
+demo: http://naringu.oonlab.com
+author: Rizky Ariestiyansyah
+thumbnail: naringu.png
+license: MIT License
+license_link: https://github.com/ariestiyansyah/naringu/blob/master/LICENSE.md
+---
+
+Naringu is a hacker like with dark theme for jekyll, it's based on
+poole and come with several change like the contact form using
+formspree, reverse layout and more. Just checkout the web and start
+using the theme

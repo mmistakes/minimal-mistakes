@@ -1,0 +1,17 @@
+---
+layout: post
+title: Renge
+date: 2016-06-22 04:14:03
+homepage: https://github.com/billyfish152/Renge
+download: https://github.com/billyfish152/Renge/archive/master.zip
+demo: http://junchaowang.com
+author: Junchao Wang
+thumbnail: Renge.png
+license: MIT License
+license_link: https://github.com/billyfish152/Renge/blob/master/LICENSE.md
+---
+
+Renge is designed by Junchao, inspired by the amination called
+"のんのんびより" and named by one of the Characters, Renge Miyauchi (宮内 れんげ).
+If you have any questions, you can reach me via Renge on GitHub by
+submitting an issue or via email billyfish152[at]gmail.com.
