@@ -37,7 +37,7 @@ DOM은 원본 HTML 문서의 객체 기반 표현 방식이다. 단순 텍스트
 DOM의 개체 구조는 “노드 트리”로 표현된다. 하나의 부모 줄기가 여러 개의 자식 나뭇가지를 갖고 있고, 또 각각의 나뭇가지는 잎들을 가질 수 있는 나무와 같은 구조로 이루어져 있다.
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-15-vanilla-js-dom1\DOM.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
+    <img src="{{site.url}}\images\2024-07-15-vanilla-js-dom\DOM.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
 </div>
 
 이 케이스의 경우, 루트 요소인 <html> 은 “부모 줄기”, 루트 요소에 내포된 태그들은 “자식 나뭇가지” 그리고 요소 안의 컨텐츠는 “잎”에 해당한다.
