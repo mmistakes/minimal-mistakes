@@ -1,7 +1,7 @@
 ---
-title: "coding tools"
+title: "coding_tools"
 layout: archive
-permalink: categories/coding tools
+permalink: categories/coding_tools
 taxonomy: coding tools
 author_profile: true
 sidebar_main: true
