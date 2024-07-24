@@ -2,7 +2,7 @@
 title: "coding_tools"
 layout: archive
 permalink: categories/coding_tools
-taxonomy: coding tools
+taxonomy: coding_tools
 author_profile: true
 sidebar_main: true
 ---
