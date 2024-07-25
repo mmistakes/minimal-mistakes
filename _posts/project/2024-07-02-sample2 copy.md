@@ -1,12 +1,14 @@
 ---
-title:  "sample" 
-
+title:  "sample22" 
 categories: project
 tag: [python, coding]
 date: 2024-07-02
+toc: true
+
 last_modified_at: 2024-07-02
 ---
 
+# 목차
 ```python
 # 중복되는 list를 저장하는 set
 
@@ -21,7 +23,7 @@ print(unique_list_of_lists)
     [[[1, 0], [0, 1]], [[1, 1], [1, 1]]]
     
 
-
+## 목차 1-1
 ```python
 # zip 사용법
 
@@ -36,7 +38,7 @@ print(list(zipped))  # [(1, 'a', True), (2, 'b', False), (3, 'c', True)]
     [(1, 'a', True), (2, 'b', False), (3, 'c', True)]
     
 
-
+### 목차 1-1-1
 ```python
 names = ['Alice', 'Bob', 'Charlie']
 scores = [85, 92, 78]
@@ -50,7 +52,7 @@ for name, score in zip(names, scores):
     Charlie scored 78
     
 
-
+## 목차 1-2
 ```python
 # class 특수 메서드
 class Person:

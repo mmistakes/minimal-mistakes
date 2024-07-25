@@ -1,8 +1,8 @@
 ---
-title: "project"
+title: "studying"
 layout: archive
-permalink: categories/project
-taxonomy: project
+permalink: categories/studying
+taxonomy: studying
 author_profile: true
 sidebar_main: true
 ---
