@@ -31,7 +31,7 @@ After building and widely deploying [tooling for DAO record-keeping based](https
 After discussing the problem widely with stakeholders inside and outside of that community, Joshua Tan asked me to propose a technological approach to the para-legal identity of decentralization autonomous organizations.
 I do not claim to be an expert in any of the domains touched by this problem set, but at least I'm comfortable proposing solutions to thorny interdisciplinary problems, which seems to be the prime qualification for this kind of work.
 
-I'll start with my understanding of the main problems that could be solved by a DAO identifier scheme (be it a DID method or otherwise), sketch out the shape of a solution, and then make a few concrete proposals at a high level.
+I'll start with my understanding of the main problems that could be solved by a DAO identifier scheme (be it a DID method or otherwise), written in a playful provocative (maybe even bullying) tone, then sketch out the shape of a solution and a few high-level approaches, and only then turn to a list of candidate solutions, to be validated and elaborated later (perhaps even prototyped in miniature?).
 Doing any more single-handedly wouldn't be appropriate, so I'll throw that bucket of chum into the deliberative waters and see what questions and next steps the groups come up with.
 
 ## Problems
@@ -41,10 +41,10 @@ Doing any more single-handedly wouldn't be appropriate, so I'll throw that bucke
 DAOs are, like blockchains themselves, willful things.
 The problem of identifying a DAO is the first step towards defining and stabilizing a subset of all possible DAOs and calling that "most DAOs," and a pragmatic step towards maturity or at least maturability.
 Opting into an identification scheme, in the best of cases, would reach a kind of Pareto distribution, allowing 80% of DAOs to sacrifice a little of their freedom and agility to scale up organization, record-keeping, and (if I may be so bold) even legal infrastructure appropriate to a novel form of property-first legal person.
-To optimize for legal recognizability in the design of a Dao ID system, I'd like to steelman the most skeptical, anti-DAO critique as the starting point for the design process.
+To optimize for legal recognizability in the design of a Dao ID system, I'd like to steelman the most skeptical, anti-DAO critique as the starting point for a design process for the papers that DAOs might hand over to their critics.
 Trust me, this is the fun part!
 
-> Upon what radically opt-in basis does the DAO even exist to be the referent of an identification?
+> Upon what radically and unaccountably opt-in basis does the DAO even exist to be the referent of an identification?
 
 Axiomatically, private money (with or without fancy cryptographically-enabled actor models) wills itself into being, and self-assigns a degree of rights-granting power normally reserved for [sovereigns](https://learningproof.xyz/self-sovereignty-and-autonomy/#sovereignty).
 (What's more, private monies routinely invite subjects of other crowns to challenge their respective sovereigns for the right to participate in their novel off-shore economy).
