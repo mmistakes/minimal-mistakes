@@ -26,7 +26,7 @@ defaults:
 
 ## Context
 
-After building and widely deploying [tooling for DAO record-keeping based](https://github.com/metagov/daostar?tab=readme-ov-file#introduction) on the Ethereum standard [ERC-4824])(), DAOStar found itself a little [stumped](https://github.com/metagov/daostar/issues/213) on how to "v2" its contingent "identity system".
+After building and widely deploying [tooling for DAO record-keeping based](https://github.com/metagov/daostar?tab=readme-ov-file#introduction) on the Ethereum standard [ERC-4824])(), DAOStar finds itself a little [stumped](https://github.com/metagov/daostar/issues/213) on how to "v2" its contingent "identity system".
 
 After discussing the problem widely with stakeholders inside and outside of that community, Joshua Tan asked me to propose a technological approach to the para-legal identity of decentralization autonomous organizations.
 I do not claim to be an expert in any of the domains touched by this problem set, but at least I'm comfortable proposing solutions to thorny interdisciplinary problems, which seems to be the prime qualification for this kind of work.
@@ -104,11 +104,15 @@ In the traditional world of finance, locking up assets as collateral to borrow s
 On blockchains it's just called "DeFi" and glorified as a value unto itself.
 Those domino effects can cause prices to swing so much that even banal things like "gas" (per-transaction usage costs) and transaction speeds are affected for unrelated co-users of the same system (like DAOs or DIDs).
 
-Multichain
+In this sense, what would be legally useful to get asset-handling DAOs recognized legally is a kind of cross-chain identity that effectively buttresses realistic treasury/asset-checks and solvency audits.
+Making such checks aware enough of lock-ups, staking, bridge-locks, time-locks, etc etc is a tall order, and hopefully orthogonal here, but I mention cross-chain assets because a necessary (and insufficient) condition for such checks is an identity system that declares (hopefully verifiably and non-repudiably) assets controlled on multiple chains and in multiple kinds of locking contracts such that any legal situation requiring entities to prove their solvency or expose assets for audit can check such assets against [public records rather than just-in-time disclosures](https://www.theverge.com/2022/12/9/23502193/ftx-alameda-binance-kraken-tether-exchange-texts).
+Maybe there is no other way to incorporate this generically enough in an identity system than to add one more optional array of URIs, but it's worth mentioning if we're listing MUSTs and SHOULDs.
 
 ### Provocation: Ships of Theseus All the way Down
 
 > Even vanilla legal entities are leaky abstractions over leaky ships of Theseus.
+
+
 
 ### Provocation: What even does anyone mean when they say "DID"?
 
