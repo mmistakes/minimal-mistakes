@@ -21,7 +21,7 @@ title                    : # "Anup D'Souza"
 title_separator          : "-"
 subtitle                 : "Coding by Day, Debugging by Night" # site tagline that appears below site title in masthead
 name                     : "Anup D'Souza"
-description              : " Collection of my development endeavours"
+description              : "Collection of my development endeavours"
 url                      : https://anupdsouza.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
