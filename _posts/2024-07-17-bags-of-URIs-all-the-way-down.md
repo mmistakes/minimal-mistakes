@@ -1,5 +1,5 @@
 ---
-title: "The DAO Question: Bags of URIs All the Way Down"
+title: "Show me your papers, Mr. DAO"
 categories: 
   - blog
   - decentralization
@@ -39,9 +39,12 @@ Doing any more single-handedly wouldn't be appropriate, so I'll throw that bucke
 ### Provocation: Opt-in Civilization
 
 DAOs are, like blockchains themselves, willful things.
-The problem of identifying a DAO is the first step towards defining and stabilizing a subset of all possible DAOs and calling that "most DAOs," in a pragmatic step towards maturity or at least maturability.
-Opting into an identification scheme, in the best of cases, would reach a kind of Pareto distribution, allowing 80% of DAOs to sacrifice a little of their freedom to scale up organization, record-keeping, and (if I may be so bold) even legal infrastructure appropriate to a novel form of property-first legal person.
-But first, a tiny excursus: upon what cartoonishly opt-in basis does the DAO even exist to be the referent of an identification?
+The problem of identifying a DAO is the first step towards defining and stabilizing a subset of all possible DAOs and calling that "most DAOs," and a pragmatic step towards maturity or at least maturability.
+Opting into an identification scheme, in the best of cases, would reach a kind of Pareto distribution, allowing 80% of DAOs to sacrifice a little of their freedom and agility to scale up organization, record-keeping, and (if I may be so bold) even legal infrastructure appropriate to a novel form of property-first legal person.
+To optimize for legal recognizability in the design of a Dao ID system, I'd like to steelman the most skeptical, anti-DAO critique as the starting point for the design process.
+Trust me, this is the fun part!
+
+> Upon what radically opt-in basis does the DAO even exist to be the referent of an identification?
 
 Axiomatically, private money (with or without fancy cryptographically-enabled actor models) wills itself into being, and self-assigns a degree of rights-granting power normally reserved for [sovereigns](https://learningproof.xyz/self-sovereignty-and-autonomy/#sovereignty).
 (What's more, private monies routinely invite subjects of other crowns to challenge their respective sovereigns for the right to participate in their novel off-shore economy).
@@ -53,7 +56,7 @@ The pioneers of the new world find themselves sorely lacking in legal groundtrut
 
 ![Twitter ad for the Bitcoin Voter Project.org](/assets/images/bitcoinvoterproject.jpg)
 
-From the earliest reverse-engineering (or speedrunning) of the early days of capital, the DAO is born, a legal person without a court, a stateless corporation, a legal fiction within a monetary one.
+From the earliest reverse-engineering (or speedrunning) of the early days of borderless capital, the DAO was born, a legal person without a court, a stateless corporation, a legal fiction within a monetary one.
 What will be its by-laws, and how can anyone else be expected to enter into contracts or relationships with this mysterious legal Odradek, the legal person composed entirely of unnamed foreigners, which does business under no nation's laws?
 
 > If capital is coded in law, how can global capitalism
