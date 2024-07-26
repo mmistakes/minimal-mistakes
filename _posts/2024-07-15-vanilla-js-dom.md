@@ -1,8 +1,8 @@
 ---
 layout: single
 title: '[JS] 바닐라 자비스크립트와 DOM'
-categories: SpringBoot
-tag: [Spring, SpringBoot]
+categories: Javascript
+tag: [Javascript]
 toc: true 
 author_profile: false
 sidebar:
