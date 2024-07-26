@@ -112,7 +112,17 @@ Maybe there is no other way to incorporate this generically enough in an identit
 
 > Even vanilla legal entities are leaky abstractions over leaky ships of Theseus.
 
+Delegation (i.e. who can actually represent a collective at any given point in time) is as tricky a legal technology as it is in data management systems.
+In fact, the latter inherits most of its mental models and terminology from the former, as anyone deep in the literature on authorization can tell you;
+if the latter seems rigidly and needlessly heirarchical, it's largely mental models inherited from the former.
+When parties start disagreeing on who could represent what collective when, the fallback and groundtruth is to look up public documents and (recognized, verifiable) public claims to trace who has the most leg to stand on in the dispute;
+crucially, this includes named officers of incorporated entities and board members of public entities.
+In incorporated entities, this is easy enough-- named officers and board memberships are pretty clearly public and available information, and the burden of publication is on the currently-public members any time membership changes need to be published.
 
+This may also be a nice-to-have rather than a MUST, but if we are using dedicated bags of member-URIs to express membership, then it is important for these bags of URIs to be checked not just now but historically against public chain-state.
+This is simple enough to do when all canonical records live on the same [stable, never-down, long-lived, fully-public] blockchain, but any multichain or off-chain mechanism would _also_ need to be just as historically verifiable, at least to the level of granularity of most-recent block at any given timestamp.
+Ironically, this has been the biggest design challenge in DID methods _not_ locked to a single blockchain, which, in the case of DAOs, would be coals to Newcastle, since only multi-chain or off-chain DID methods would actually add anything to DaoID as currently specified.
+Which brings us to the most vexing provocation of all:
 
 ### Provocation: What even does anyone mean when they say "DID"?
 
@@ -121,7 +131,7 @@ Depending on whom you ask, a DID method can be:
 1. a **URI scheme with a resolution mechanism** stapled to it
 2. an **export format** for identity documents allowing actors outside that that system to deterministically and transparently fetch the current document for a given URI
 3. a **bag of keys** and, optionally, endpoints (both serialized as URIs) that can be fetched for any specimen of a given type of actor in a DPKI (decentralized public key infrastructure) system
-4. a specification formalizing how to **dereference a URI to**... a document containing **more URIs**
+4. a specification formalizing how to **dereference a URI to**... a document containing **more URIs** (i.e. a slightly more kitchen-sink URI scheme)
 5. an abstraction allowing a **cryptographic identity to mutate** (i.e. rotate, grow, and shirnk) verifiably over time
 6. a user's manual for a **censorship-proof and resilient** identity-document substrate
 7. the constitution for a service that dereferences URIs to **certified documents**, whether by delivering self-certifying documents or by certifying the documents it delivers
@@ -130,6 +140,22 @@ While this might sound like hyperbole, I have attended in-person meetings of the
 There *has* been some progress over time to tighten this loose bag of purposes, such as my old boss Wayne Chang's [ideological intervention](https://blog.spruceid.com/upgradeable-decentralized-identity/) arguing for a [feature-matrix approach](https://gist.github.com/jceb/8e37e4900e815eb14b207ad7e8d02a6c) to DID interoperability and migration thinking.
 But fundamentally, we're still here, trying to figure out what generalization is worth making about DIDs, when there is such diversity between their URI schemes and their resolution mechanisms, each grounded in a radically different _kind_ of ground-truth-producing system.
 
+There is no general sense in which "DIDs", in general, provide a path to meeting all the requirements above, but the methodology people are using above to differentiate DIDs by featuresets might still be useful in finding 1 or more DID methods that are useful enough to be better than status quo, and for writing a specification that names everything else a better DID method would have.
+
 ## The Shape of a Solution
 
+### Relationship to the DaoURI() interface
+
+Realistically, a DaoD ID is only worth offering as an extension of ERC-4828 and DaoURIs as they exist today.
+Stated technically, we could say that a worthwhile (and realistic to deploy) DaoID would need to be a strictly backwards-compatible superset of DaoURI, i.e., every DaoURI returned by the DaoURI() on-chain calls possible today MUST be a valid DaoID value.
+Practically, this means that a DaoID is just a BIGGER bag of URIs, which might add some optional properties if there is value in adding them, resolved in a different way than just querying the same chain with a different call.
+That passive-voice "resolved" does a lot of work, though!
+DID methods, in the best of cases, abstract over [pre-existing] resolution methods to bridge consumers and producers inside and outside of them, whereas here any resolution method chosen is a novel infrastructural commitment from every DAO publishing for it anywhere other than on their [primary, current] chain.
+
+> Whether the solution is a DID or not, the publication and resolution mechanisms for these chain-agnostic documents make or break the feasibility of any such proposal.
+
+Historical resolution, long 
+
 ## Proposals
+
+[ERC-4824]: https://eip.tools/eip/4824
