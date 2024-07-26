@@ -51,7 +51,7 @@ How to borrow against an onchain fortune in the offchain world, or vice versa?
 How to transact onchain about any but the least well-regulated of services and intangibles?
 The pioneers of the new world find themselves sorely lacking in legal groundtruths.
 
-![Twitter ad for the Bitcoin Voter Project.org](/assets/static/bitcoinvoterproject.jpg)
+![Twitter ad for the Bitcoin Voter Project.org](/assets/images/bitcoinvoterproject.jpg)
 
 From the earliest reverse-engineering (or speedrunning) of the early days of capital, the DAO is born, a legal person without a court, a stateless corporation, a legal fiction within a monetary one.
 What will be its by-laws, and how can anyone else be expected to enter into contracts or relationships with this mysterious legal Odradek, the legal person composed entirely of unnamed foreigners, which does business under no nation's laws?
@@ -138,24 +138,112 @@ Depending on whom you ask, a DID method can be:
 
 While this might sound like hyperbole, I have attended in-person meetings of the DID Working Group over the years, and each of these is actually a flippant parody of the working definition various key members of that working group hold and act on (and, debatably, pull the rest of the working group towards over time).
 There *has* been some progress over time to tighten this loose bag of purposes, such as my old boss Wayne Chang's [ideological intervention](https://blog.spruceid.com/upgradeable-decentralized-identity/) arguing for a [feature-matrix approach](https://gist.github.com/jceb/8e37e4900e815eb14b207ad7e8d02a6c) to DID interoperability and migration thinking.
-But fundamentally, we're still here, trying to figure out what generalization is worth making about DIDs, when there is such diversity between their URI schemes and their resolution mechanisms, each grounded in a radically different _kind_ of ground-truth-producing system.
 
-There is no general sense in which "DIDs", in general, provide a path to meeting all the requirements above, but the methodology people are using above to differentiate DIDs by featuresets might still be useful in finding 1 or more DID methods that are useful enough to be better than status quo, and for writing a specification that names everything else a better DID method would have.
+But fundamentally, we're still here, trying to figure out what generalization is worth making about DIDs, when there is such diversity between their URI schemes and their resolution mechanisms, each grounded in a radically different _kind_ of ground-truth-producing system.
+They're not much more generalizable or schematized than DAOs-- if anything, even more emergent on both the technological and social/business layers.
+There is no general sense in which "DIDs", in general, provide a path to meeting all the requirements above, nor are DIDs easily classifiable into a few categories, one of which would be.
+That said, the "trait" methodology mentioned above that some are using to differentiate DIDs by featuresets might still be useful in finding 1 or more DID methods that are useful enough to be better than status quo, and for writing a specification that names everything else a better DID method would have.
+That's what I have done, at a high-level, below, and could do more systematically once requirements have been clarified and validated if it makes sense to hone in on the applicability of existing DID methods versus a novel one.
+
+#### Historical Verifiability of Mutable [DID] Documents
+
+Historical resolution, long a [contentious and optional feature](https://github.com/w3c/did-core/issues/580) of DID methods, is actually only supported by a few of them.
+Most DID method designers punt this extremely difficult set of cornercases to distinct "internal" or orthogonal mechanisms (i.e., independent of the DID document's resolution), rather than make available to any consumer of the DID document detailed information about what a given DID document was at a specific point in time via the option `versionTime=` query parameter of a DID URL.
+Indeed, even query parameters themselves are kind of rare in DID-based systems, so limiting ourselves to DID methods that handle historical verifiability automatically is a fairly constraining decision without many options, and should be compared (apples-to-apples) with solutions where such verifiability is guaranteed on another layer.
 
 ## The Shape of a Solution
 
+To decouple a bit the question of whether or not the problem space is best addressed by one or more current or future DID methods from a higher-level analysis of the space itself and the requirements, I have elaborated some families of options first.
+In so doing, I made a solid assumption that a Dao ID defined a DAO over time without taking authority or priority over the DaoURI valid at any point.
+Boiling down the list of functional requirements mentioned above to "traits" needed from a Dao ID system, we could enumerate them approximately as:
+
+### Summary of Requirements above
+
+1. Opt-in upgrade: no current [ERC-4824] DAO should _need_ to implement or change anything if the kinds of legal recognition or non-repudiable record-keeping enabled by this proposal are not urgent for them.
+2. Some kind of historical verifiability of previous versions of the DaoURI document.
+3. Either a long-term identifier per DAO OR a way to derive all previously-authoritate DaoURIs over time from the current one (for those opting into such long-term identity, as per req. #1).
+4. A chain-agnostic/off-chain Dao ID Document, if established, needs to be verifiably and bidirectioned linked to the on-chain DaoURI Document,
+5. Extensible enough to verifiably link to additional novel Document types, so as to accomodate additional reporting, auditing, authentication, deanonymizing, and other mechanisms as needed for legal recognition (particularly ones where underlying blockchain records and identities are categorically inadequate and external notarization or machine-readable equivalence statements are needed)
+6. Unambiguously resolvable in case of blockchain forks or outages or other availability issues 
+   - (May require explicit disambiguation logic around forks as force majeure)
+7. Clear fallback for DAO-Hack style intervention in chain-state
+   - (May require explicit deferral to or from altered or rolled-back chain-state)
+8. Multichain and Multi-VM dereferencing: child-DAOs, members, and controlled accounts might all live on other chains than the daoURI, and these must all be expressable at least in the form of a DaoID, if not in the legacy DaoURI itself
+
 ### Relationship to the DaoURI() interface
 
-Realistically, a DaoD ID is only worth offering as an extension of ERC-4828 and DaoURIs as they exist today.
-Stated technically, we could say that a worthwhile (and realistic to deploy) DaoID would need to be a strictly backwards-compatible superset of DaoURI, i.e., every DaoURI returned by the DaoURI() on-chain calls possible today MUST be a valid DaoID value.
-Practically, this means that a DaoID is just a BIGGER bag of URIs, which might add some optional properties if there is value in adding them, resolved in a different way than just querying the same chain with a different call.
+Realistically, a Dao ID is only worth offering as an extension of ERC-4828 and DaoURIs as they exist today.
+Stated technically, we could say that a worthwhile (and realistic to deploy) DaoID would need to be a strictly backwards-compatible superset of DaoURI, i.e., every DaoURI returned by the DaoURI() on-chain calls possible today MUST be a valid Dao ID value.
+Practically, this means that a Dao ID is just a BIGGER bag of URIs, which might add some optional properties if there is value in adding them, resolved in a different way than just querying the same chain with a different call.
 That passive-voice "resolved" does a lot of work, though!
-DID methods, in the best of cases, abstract over [pre-existing] resolution methods to bridge consumers and producers inside and outside of them, whereas here any resolution method chosen is a novel infrastructural commitment from every DAO publishing for it anywhere other than on their [primary, current] chain.
+DID methods, in the best of cases, abstract over [pre-existing] resolution methods to bridge consumers and producers inside and outside of them, whereas here any resolution method chosen is a novel infrastructural commitment demanded of every DAO self-publishing these records in addition to their authoritative DaoURI records on their [primary, current] chain.
 
-> Whether the solution is a DID or not, the publication and resolution mechanisms for these chain-agnostic documents make or break the feasibility of any such proposal.
+> Whether the solution involves DIDs or not, the publication and resolution mechanisms for these chain-agnostic documents make or break the feasibility of any such proposal.
 
-Historical resolution, long 
+#### DaoID Document as Microledger of DaoURI Documents
+
+Working backwards from failure modes, one backstop that strikes me as a hard requirement to commit to upfront is for a given Dao ID to be considered valid IF AND ONLY IF it also is or contains the current DaoURI document.
+Extending the DaoURI document system is already a huge ask of DaoURI users, without also creating a risk center and attack vector in case the extension gets out of sync somehow with the simpler, easier-to-maintain legacy form.
+
+This property could be achieved two very different ways: making a backwards-compatible version of the DaoURI method that returns additional properties and all the current ones, OR making a Dao ID that lives somewhere else, includes a link to the DaoURI, and is not considered complete until BOTH documents have been dereferenced (and perhaps merged).
+I refer to these two variants as "second-document" approaches, above and below.
+
+From simplest to most complex resolution methods, I can think of three families of solutions here:
+
+### Solution-Shape A: Back-Linking DaoURIs
+
+A single property could be added to each DaoURI document called, say, `previousVersion` which pointed to the most recent previous state that the DaoURI resolved to (if addressable as a standard URI, or at least to the transaction that updated it, if this can deterministically produce the previous version).
+This would mean that from today's DaoURI, one could walk back across all updates to inception and have the history of each Dao as a "microledger" of DaoURIs.
+Since each finite update to DaoURI doc and/or memberships or other important properties occured in a timestamped (or at least block-numbered) transaction, fetching historical state for a given DaoURI at a point in time would be deterministic, if slightly networking/compute intensive without a comprehensive indexer, historical node, or at least a pre-loaded cache, of entire histories of each DaoURI.
+
+Note: this would only really be feature-complete for net-new DAOs, since the microledger would end abruptly at the first post-implementation update for any DAO whose history stretches before the implementation.
+
+Unlike the two alternatives below, where the legacy document and resolution is extended by a second document type and resolution mechanisms, requirement 4 is moot here because no second Document-type is added.
+By iterating the core DaoURI mechanism, though, all changes to support the other requirements would have to be made together, along with the backlinking change, in one atomic upgrade.
+For requirement 5, this would simply consist of additional properties, but solving for 6, 7, and potentially even 8 might not be possible in this solution-shape, or at least require  validation research in a different direction.
+
+### Solution-Shape B: Off-Linking from DaoURIs Documents to Dao ID Documents
+
+Similarly, instead of `previousVersion`, a property like `alternateDocument` could contain 1 or more URLs pointing to an "extended" version of the same document, which also includes metadata about update history, links to previous or individual versions, etc.
+This could be content-identified, i.e. `https://{ipfs-cid}.subdomain-gateway.ipfs.io` or `ipfs://{ipfs-cid}`, or some other content-address, data-availability URL, in addition to or instead of conventional HTTPS urls.
+
+Since this off-chain copy of the same document would probably be less constrained for space than something on-chain, it could conceivably take a different (i.e. more complex, even layered) structure than merely adding a single backlink.
+For example, the Dao ID could refer to an intermediate document containing links to every version of the file sorted in reverse chronological order, tuples of links and metadata, triples of HTTPS link, alternate link, and metadata, etc etc.
+Whether or not this added complexity here makes sense depends on the trust model and on the degree to which it solves the legacy problem of DaoURI document historical  pre-upgrade.
+
+Mitigations for requirements 6 and 7 can be encoded quite simply in parsing rules for off-chain documents as a "state of exception" to requirements 1 and 4, i.e., "until outage/fork/consensus issues/availability issues are resolved to X standard, most recent on-chain DaoURI Document remains valid and off-chain extension document can be acted on."
+
+### Solution-Shape C: Completely Separate Resolution Mechanism
+
+If, instead of changing anything about the DaoURI Documents, a second step were introduced _after_ resolving the DaoURI, no change would need to be made to how DaoURIs are published and resolved.
+For example, with the current DaoURI document in hand, one could take the DaoURI (or a hash of the current DaoURI document, or any other deterministic transformation of it into a URN) and resolved that in some alternate registry (onchain or off-), to get back the "extended version" of the Document, or all other documents pertinent to, linked from, or linking to that Document.
+
+"Deterministic" is doing a lot of work in the sentence above, because the universal determinism of [canonicalized] DaoURI documents to URNs is required throughout the system for them to be reliably used for discovery, deduplication, and subsequent authentication (i.e. to function as a checksum).
+Note that an IPFS CID here is only as deterministic as the degree to which its generation is constrained to a very opinionated profile: single format, single hash, etc. 
+For example, hashing all records in a today's default kubo configuration, or [LUCID][] configuration, or SHA-256 after JCS canonicalization, or Blake-2B after RDFC canonicalization (since they are all JSON-LD records after all), is all but locked in for the life of the system and runnable by all actors and form-factors.
+
+Mitigations for requirements 6 and 7 can be encoded just as simply as above in the parsing rules for off-chain documents as a "state of exception" to requirements 1 and 4.
+
+Even if append-only, even if content-addressed, this approach also brings up the usual governance questions about how a common corpus or registry could be governed in common, since it would be a public good and not free to maintain.
 
 ## Proposals
 
+I will only mention these at a very high-level for now so as not to invest time elaborating on any of the following which might be eliminated by refinement of requirements and priorities.
+Ideally, this list could grow or shrink considerably _before_ validating and elaborating any of them.
+
+- Candidate Solution: Minimalist Upgrade to DaoURI (only add backlinks and minimal/open-ended extensibility)
+- Candidate Solution: ENS-based second-document
+- Candidate Solution: A Ceramic-based broadcast/self-publishing network
+- Candidate Solution: A `did:dht` broadcast/self-publishing network
+- Candidate Solution: A `did:tdw` (i.e., HTTPS-based) microserver per DAO
+
+## Acknowledgements
+
+## References
+
 [ERC-4824]: https://eip.tools/eip/4824
+[LUCID]: https://github.com/darobin/lucid
+
+## Copyright
+
+Copyright and related rights waived via [CC0](https://github.com/ChainAgnostic/CAIPs/blob/main/LICENSE).
