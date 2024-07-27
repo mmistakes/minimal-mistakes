@@ -22,7 +22,7 @@ published: true
 첫 번째 단계에서 브라우저는 읽어들인 문서를 파싱하여 최종적으로 어떤 내용을 페이지에 렌더링할지 결정하고 두 번째 단계에서 브라우저는 해당 렌더링을 수행한다.
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-15-vanila-javascript1\render_tree.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
+    <img src="{{site.url}}\images\2024-07-15-vanilla-js-dom\render_tree.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
 </div>
 
 첫 번째 과정을 거치면 **“렌더 트리”**가 생성된다. 렌더 트리는 웹 페이지에 표시될 HTML 요소들과 이와 관련된 스타일 요소들로 구성되며 브라우저는 렌더 트리를 생성하기 위해 다음과 같이 두 모델이 필요하다.
@@ -37,7 +37,7 @@ DOM은 원본 HTML 문서의 객체 기반 표현 방식이다. 단순 텍스트
 DOM의 개체 구조는 “노드 트리”로 표현된다. 하나의 부모 줄기가 여러 개의 자식 나뭇가지를 갖고 있고, 또 각각의 나뭇가지는 잎들을 가질 수 있는 나무와 같은 구조로 이루어져 있다.
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-15-vanila-javascript1\DOM.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
+    <img src="{{site.url}}\images\2024-07-15-vanilla-js-dom\DOM.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
 </div>
 
 이 케이스의 경우, 루트 요소인 <html> 은 “부모 줄기”, 루트 요소에 내포된 태그들은 “자식 나뭇가지” 그리고 요소 안의 컨텐츠는 “잎”에 해당한다.
@@ -58,7 +58,7 @@ DOM은 HTML 문서로부터 생성되지만 항상 동일하지 않다. DOM이 �
 렌더링이 발생될 상황에 놓이게 되면 새로운 화면에 들어갈 내용이 담긴 가상 돔을 생성하게 된다. 가상 돔은 실제 DOM의 가벼운 복사본으로 메모리 상에 JavaScript 객체 형태로 존재하게된다.
 
 <div style="display: flex; justify-content: center;">
-    <img src="{{site.url}}\images\2024-07-15-vanila-javascript1\virtual_dom.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
+    <img src="{{site.url}}\images\2024-07-15-vanilla-js-dom\virtual_dom.png" alt="Alt text" style="width: 70%; height: 70%; margin: 20px;">
 </div>
 
 메모리에 가상 돔을 만들고 실제 돔과 비교하며 작업한 후, 수정된 부분은 실제 돔에 적용하는 식으로 활용할 수 있다. 
