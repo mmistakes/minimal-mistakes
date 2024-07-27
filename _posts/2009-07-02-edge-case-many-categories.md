@@ -1,5 +1,5 @@
 ---
-title: "Edge Case: Many Categories"
+title: "Post 테스트 "
 categories:
   - aciform
   - antiquarianism
@@ -18,5 +18,15 @@ tags:
   - categories
   - edge case
 ---
+
+
+
+
+{% capture fig_img %}
+![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | relative_url }})
+{% endcapture %}
+
+
+
 
 This post has many categories.
