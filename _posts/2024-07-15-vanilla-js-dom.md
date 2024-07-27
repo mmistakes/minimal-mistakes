@@ -1,8 +1,8 @@
 ---
 layout: single
 title: '[JS] 바닐라 자비스크립트와 DOM'
-categories: JavaScript
-tag: [JavaScript]
+categories: Javascript
+tag: [Javascript]
 toc: true 
 author_profile: false
 sidebar:
@@ -65,7 +65,7 @@ DOM은 HTML 문서로부터 생성되지만 항상 동일하지 않다. DOM이 �
 
 브라우저의 성능과 속도 문제를 보완한다는 장점을 바탕으로, 가상 돔을 이용한 프레임워크와 라이브러리는 리액트(React), 뷰(Vue.js), 앵귤러(Angular)가 대표적이다.
 
-가상 돔을 이용할 때 제이쿼리를 쓰면 스크립트 충돌이 발생할 수도 있어서, 되도록 바닐라 JS로 스크립트를 작성하려는 경향이 생다.
+가상 돔을 이용할 때 제이쿼리를 쓰면 스크립트 충돌이 발생할 수도 있어서, 되도록 바닐라 JS로 스크립트를 작성하려는 경향이 생겼다.
 
 ### Vanilla JS는 필수일까?
 
