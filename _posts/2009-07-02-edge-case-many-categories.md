@@ -23,7 +23,7 @@ tags:
 
 
 {% capture fig_img %}
-![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | relative_url }})
+![Foo]({{ "/images/unsplash-gallery-image-3.jpg" | relative_url }})
 {% endcapture %}
 
 
