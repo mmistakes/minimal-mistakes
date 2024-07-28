@@ -312,7 +312,7 @@ compress_html:
 
 # Defaults
 defaults:
-   _posts2
+  # _posts
   - scope:
       path: ""
       type: posts
