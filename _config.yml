@@ -314,7 +314,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "_posts2"
+      path: "/_posts2/"
       type: posts
     values:
       layout: single
