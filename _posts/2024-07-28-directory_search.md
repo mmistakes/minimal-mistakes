@@ -14,6 +14,7 @@ tags:
 
 
 ![Foo]({{ "images/capture/post1_1.png" | relative_url }})
+![Foo]({{ "images/post1_1.png" | relative_url }})
 이런 파일들이 생성됐다
 
 먼저 README파일을 확인해보자
