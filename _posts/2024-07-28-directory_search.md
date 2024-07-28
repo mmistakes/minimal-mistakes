@@ -1,5 +1,5 @@
 ---
-title: "폴더 살펴보기"
+title: "git 블로그 폴더 살펴보기"
 categories:
 
 tags:
