@@ -315,7 +315,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: posts2
     values:
       layout: single
       author_profile: true
