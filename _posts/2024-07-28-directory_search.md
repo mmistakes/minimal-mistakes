@@ -13,12 +13,12 @@ tags:
 블로그를 한번 해보기 위해 minimal-mistake라는 테마를 fork했다.
 
 
-![Foo]({{ ".images/capture/post1_1.png" | relative_url }})
+![Foo]({{ "images/capture/post1_1.png" | relative_url }})
 이런 파일들이 생성됐다
 
 먼저 README파일을 확인해보자
 
-![Foo]({{ ".images/capture/post1_2.png" | relative_url }})
+![Foo]({{ "images/capture/post1_2.png" | relative_url }})
 
 ...................
 
@@ -33,14 +33,14 @@ tags:
 
 이번엔 package.json을 확인해보자
 
-![Foo]({{ ".images/capture/post1_3.png" | relative_url }})
+![Foo]({{ "images/capture/post1_3.png" | relative_url }})
 
 방금 땡겨서 그런지 minial_mistake만 있다.
 
 
 그리고 설정 파일인 config.yml파일을 확인해보자 
 
-![Foo]({{ ".images/capture/post1_4.png" | relative_url }})
+![Foo]({{ "images/capture/post1_4.png" | relative_url }})
 
 
 설정 파일은 사이트 값에 영향을 미치는 것이고 바꾸면 서버를 다시 실행하라고 나온다 
@@ -51,7 +51,7 @@ tags:
 그다음에 layout 폴더로 들어와서 default.html을 확인해보자.
 
 
-![Foo]({{ ".images/capture/post1_5.png" | relative_url }})
+![Foo]({{ "images/capture/post1_5.png" | relative_url }})
 
 여기에 {  } 안에 include + 경로 이렇게 되어있는것들은 include폴더의 경로 파일이 여기에 들어가는거 같다.
 head - head + head/custom 
@@ -62,19 +62,19 @@ footer - footer + footer/custom
 
 그리고 home.html 파일을 확인해보자
 
-![Foo]({{ ".images/capture/post1_6.png" | relative_url }})
+![Foo]({{ "images/capture/post1_6.png" | relative_url }})
 
 먼저 default에는 없던 layout이 생겼다 
 
 
-![Foo]({{ ".images/capture/post1_7.png" | relative_url }})
+![Foo]({{ "images/capture/post1_7.png" | relative_url }})
 
 그래서 다른 파일도 확인해봤더니 여기는 또 home이랑은 다르다 이 부분은 해당 페이지에서 어떤 레이아웃을 사용하는지 설정하는 부분인것 같다.
 기본으로 설정된 home페이지의 내용은 최근 포스트와 포스트 + 페이지로 구성되는것 같다.
 
 이것들을 수정하면 어떻게 되는지 간단한 text를 추가해봤다.
 
-![Foo]({{ ".images/capture/post1_8.png" | relative_url }})
+![Foo]({{ "images/capture/post1_8.png" | relative_url }})
 
 생각했던 대로 내용이 바뀌였다
 페이지를 꾸미는 것은 include + layout 폴더에 추가하면 되는거같다.
@@ -83,14 +83,14 @@ footer - footer + footer/custom
 posts 폴더를 발견해서 파일을 열어봤는데 
 
 
-![Foo]({{ ".images/capture/post1_9.png" | relative_url }})
+![Foo]({{ "images/capture/post1_9.png" | relative_url }})
 
 누가봐도 블로그 포스트 이렇게 하면 된다 예제 파일이다 ㅋㅋ
 그런데 이 파일들이 있으면 포스트가 보인다는건 알겠는데 이 파일을 어디다가 둬야하는지는 알 수 없어서 이것저것 해보다가
 _posts폴더를 상위 폴더에 넣어봤더니 
 
 
-![Foo]({{ ".images/capture/post1_10.png" | relative_url }})
+![Foo]({{ "images/capture/post1_10.png" | relative_url }})
 
 이렇게 약 70개의 글을 가진 블로그가 됐다!
 그리고 글들을 보면 영상 목차 그림 등등이 들어 있어서 이것들을 참고해서 글을 쓰면 될꺼같다
