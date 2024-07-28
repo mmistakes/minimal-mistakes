@@ -241,14 +241,14 @@ pagination:
   # Set enabled to true to use paginate v2
   # enabled: true
   debug: false
-  collection: 'posts2'
+  collection: 'posts'
   per_page: 10
   permalink: '/page/:num/'
   title: ':title - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-  category: 'posts2'
+  category: 'posts'
   tag: ''
   locale: ''
   trail:
@@ -314,8 +314,8 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
-      type: posts2
+      path: "_posts2"
+      type: posts
     values:
       layout: single
       author_profile: true
