@@ -229,8 +229,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 15                                    # Defaults : 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: Asia/Seoul
 
 # Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
