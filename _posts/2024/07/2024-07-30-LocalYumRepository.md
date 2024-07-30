@@ -1,8 +1,8 @@
 ---
 layout: single
-title: [CentOS 7] Local Yum Repository 만들기
+title: CentOS 7, Local Yum Repository 만들기
 categories: Linux
-tags: [CentOS7,Yum,Repository]
+tags: [CentOS 7,Yum,Repository]
 toc: true
 ---
 사용한 하이퍼바이저 : Hyper-V
