@@ -14,11 +14,31 @@ CentOS-7-x86_64-DVD-2009.iso
 
 ![](/images/2024/07/2024-07-30-LocalYumRepository/3-ServerSetting.png)
 
+---
+
 ![](/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1_mount.png)
 
 ![](/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1 mount.png)
 
 ![](/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1-mount.png)
+
+![]("/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1_mount.png")
+
+![]("/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1 mount.png")
+
+![]("/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1-mount.png")
+
+![]('/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1_mount.png')
+
+![]('/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1 mount.png')
+
+![]('/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1-mount.png')
+
+![](/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1"mount.png)
+
+![](/images/2024/07/2024-07-30-LocalYumRepository/4-TestServer1'mount.png)
+
+---
 
 ![](/images/2024/07/2024-07-30-LocalYumRepository/5-cp_Packages.png)
 
