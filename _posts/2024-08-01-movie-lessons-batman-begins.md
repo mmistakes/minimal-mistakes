@@ -1,7 +1,7 @@
 ---
 layout: single
-post_date: 2024-08-01 13:00:00
 title: "Why do we fall?"
+date: 2024-08-01 13:30:00 +0530
 excerpt: "It is no secret, atleast to the people around me that I am a big Batman fan, but it wasn't always like this"
 seo_title: "Why do we fall"
 seo_description: "Movie Lessons"
