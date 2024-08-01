@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "dark" #"default", "air", "aqua", "contrast", "dark",
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : # "Anup D'Souza"
+title                    : "Coding by Day, Debugging by Night" # "Anup D'Souza"
 title_separator          : "-"
-subtitle                 : "Coding by Day, Debugging by Night, Innovating All the Time..." # site tagline that appears below site title in masthead
+subtitle                 : "Reviewing stuff all the time..." # site tagline that appears below site title in masthead
 name                     : "Anup D'Souza"
 description              : "Collection of my development endeavours"
 url                      : https://anupdsouza.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
