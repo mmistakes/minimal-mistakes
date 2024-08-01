@@ -1,5 +1,6 @@
 ---
 layout: single
+post_date: 2024-08-01 15:30:00
 title: "Batman: Caped Crusader Episode 1 Review"
 excerpt: "The first episode of Batman: Caped Crusader, “In Treacherous Waters” reintroduces us to a reimagined Gotham."
 seo_title: "Batman Caped Crusader"
