@@ -30,3 +30,4 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+.Rproj.user
