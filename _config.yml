@@ -117,7 +117,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "My personal portfolio"
   location         : "Lakewood Ranch, FL"
-  email            :
+  email            : "tylerpollard410@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
