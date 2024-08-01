@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Tyler Pollard"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profilepic.jpeg"
   bio              : "My personal portfolio"
   location         : "Lakewood Ranch, FL"
   email            : "tylerpollard410@gmail.com"
