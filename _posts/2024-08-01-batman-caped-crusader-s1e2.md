@@ -2,9 +2,9 @@
 layout: single
 title: "Batman: Caped Crusader Episode 2 Review"
 date: 2024-08-01 23:50:00 +0530
-excerpt: "The first episode of Batman: Caped Crusader, “In Treacherous Waters” reintroduces us to a reimagined Gotham."
+excerpt: "After the setup in episode one, Batman: Caped Crusader's second episode '...And Be A Villain' dives into a classic detective mystery."
 seo_title: "Batman Caped Crusader"
-seo_description: "Batman Caped Crusader Episode 1"
+seo_description: "Batman Caped Crusader Episode 2"
 categories:
   - TV
 tags:
