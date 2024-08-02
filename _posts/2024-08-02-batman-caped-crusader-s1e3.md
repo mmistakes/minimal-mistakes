@@ -18,6 +18,8 @@ tags:
 
 ![image](/assets/images/batman-caped-crusader/batman-cc.png)
 
+# Kiss of the Catwoman
+
 *Spoilers ahead...*  
 
 Episode 3 of Batman: Caped Crusader, titled 'Kiss of the Catwoman', kicks off at Gotham Museum with Bruce Wayne checking out the Wayne Collection. While there he is approached by Selina Kyle(Christina Ricci), who flirts with him and invites him for a drink, but he declines. Instead, Bruce punches a guy who badmouths his family, and the incident gets caught by the press, landing Bruce in hot water with a felony assault charge. It seems Bruce hasn't learnt anything about staying out of the limelight given the events with Yvonne Frances in the previous episode. To avoid jail time, Bruce has to undergo therapy with Dr. Harleen Quinzel(Jamie Chung). During their sessions, she brings up his parents, causing Bruce to revisit his memory of their tragic death in the alleyway.
