@@ -3,8 +3,8 @@ layout: single
 title: "Batman: Caped Crusader Episode 2 Review"
 date: 2024-08-01 23:50:00 +0530
 excerpt: "After the setup in episode one, Batman: Caped Crusader's second episode '...And Be A Villain' dives into a classic detective mystery."
-seo_title: "Batman Caped Crusader"
-seo_description: "Batman Caped Crusader Episode 2"
+seo_title: "Batman Caped Crusader Episode 2 Review"
+seo_description: "Batman Caped Crusader Episode 2 Review"
 categories:
   - TV
 tags:
