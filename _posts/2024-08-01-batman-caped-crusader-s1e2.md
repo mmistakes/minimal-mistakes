@@ -17,6 +17,8 @@ tags:
 
 ![image](/assets/images/batman-caped-crusader/batman-cc.png)
 
+# ...And Be A Villain
+
 *Spoilers ahead...*  
 
 After the setup in episode one, Batman: Caped Crusader's second episode '...And Be A Villain' dives into a classic detective mystery. Actress Yvonne Frances has been missing for two days, and GCPD’s Renee Montoya (Michelle C. Bonilla) interviews Bruce Wayne, the last person seen with her. Bruce plants a bug in Montoya's coat, and lawyer Lucius Fox bails him out.
