@@ -17,6 +17,8 @@ tags:
 
 ![image](/assets/images/batman-caped-crusader/batman-cc.png)
 
+# In Treacherous Waters
+
 *Spoilers ahead...*  
 
 The first episode of Batman: Caped Crusader, “In Treacherous Waters” reintroduces us to a reimagined Gotham. We start with Clarence, an underling, being interrogated by Iggy, who suspects he is a mole working for crime boss Rupert Thorne. Clarence fails to confess, and we see The Penguin step out of the shadows, taking charge. There is only one way this'll end.
