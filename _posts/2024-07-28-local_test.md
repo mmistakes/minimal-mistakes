@@ -79,9 +79,6 @@ localhost:4000으로 실행 할 수 있다고 한다.
 git bash를 키고 블로그 디렉토리로 이동 후 bundle install을 입력하니까 여러가지가 install됐다
 
 
-![Foo]({{ "images/capture/post2_9.png" | relative_url }})
-
-
 그리고 bundle exec jekyll serve를 입력하니까 
 
 localhost 포트 4000번에 서버가 실행됐다고 나온다.
@@ -111,3 +108,6 @@ local에서 블로그가 잘 실행된다 !!
 저장하고 페이지에 재접속을 하니까 바로 사라지지는 않았지만 새로고침 2번 하니까 변경사항이 적용됐다
 
 이제 포스트 작성 후 로컬에서 확인 -> git에 올리기로 포스트를 할 수 있게 됐다!
+
+
+5
