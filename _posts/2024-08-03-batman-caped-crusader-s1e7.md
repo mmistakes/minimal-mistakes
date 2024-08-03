@@ -35,7 +35,7 @@ Batman arrives, helping them fend off the attackers. It turns out the hit was on
 
 Overall, it's a solid episode showing Barbara getting deeper into danger & Batman as the savior. It also did a good job highlighting class differences in Gotham. Law enforcement relationships are strained, and it's unclear if they will reach a breaking point.
 
-Rating: 4/5
+Rating: 4.2/5
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey). Leave a comment if you have any questions. 
 
