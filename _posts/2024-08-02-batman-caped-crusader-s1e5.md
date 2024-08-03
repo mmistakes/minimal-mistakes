@@ -36,7 +36,7 @@ Quinzel's date with Montoya is cut short, and Batman discovers her Playpen. Now 
 
 This episode raises the stakes, revealing Quinzel's true intentions and setting up a potential alliance between Barbara and Batman against a returning Quinzel, possibly with the Joker. Overall, it made for very interesting viewing.
 
-Rating: 4.5/5
+Rating: 4.2/5
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey). Leave a comment if you have any questions. 
 
