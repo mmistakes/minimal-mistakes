@@ -35,7 +35,7 @@ Harvey's campaign struggles worsen with his biggest donors turning their backs o
 
 Another solid episode showcasing Batman's signature detective work. It played with a Scooby-Doo-like theme, but with a real ghost—something rare in the Bat-verse. The episode also delved into Batman's relationship with Alfred, hinting at a mysterious secret Alfred might be keeping. Harvey, usually confident and charismatic, starts showing signs of vulnerability in desperation. This shift hints at potential developments in his character.
 
-Rating: 4.6/5
+Rating: 4.3/5
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey). Leave a comment if you have any questions. 
 
