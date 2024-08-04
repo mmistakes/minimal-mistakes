@@ -34,11 +34,13 @@ As chaos ensues at the docks, Harvey gets shot while trying to protect Barbara. 
 
 The episode ends with a mysterious figure injecting a man who laughs maniacally.
 
-This finale wraps up the first season with the extent of crime in Gotham exposed as well as having alliances tested. Harvey's death is a shock, leaving Batman without not only a dear friend but also an ally. Barbara, who has now lost both Quinzel and Dent, people who took a turn for the worst, faces an uncertain future with mob bosses already gunning for her. How Gordon keeps her safe when he can't trust anyone at GCPD is anyone's guess. The odds are stacked against Gotham saviours as the next season sets the stage for more villains and challenges. Maybe some new and maybe some returning.
+This finale wraps up the first season with the extent of crime in Gotham exposed as well as having alliances tested. Harvey's death is a shock, leaving Batman without not only a dear friend but also an ally. Barbara, who has now lost both Quinzel and Dent, people who took a turn for the worst, faces an uncertain future with mob bosses already gunning for her. How Gordon keeps her safe when he can't trust anyone at GCPD is anyone's guess. The odds are stacked against Gotham's saviours as the next season sets the stage for more villains and challenges. Maybe some new and maybe some returning.
 
 Rating: 4/5
 
-Season rating: 
+# Season rating: 4/5
+Season one followed the original animated series in style but sometimes lacked substance. Given the runtime, theres only so much it can do but it managed to pick things up towards the end. Nonetheless, I'm hopeful for what the next season brings.
+
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey). Leave a comment if you have any questions. 
 
