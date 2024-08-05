@@ -25,7 +25,9 @@ The steps are as follows:
 
 [<img src="/assets/images/post21/preview-remove-bg-3.jpg" width="50%"/>](/assets/images/post21/preview-remove-bg-3.jpg)
 
+
 4. If you are okay with it, simply click the `Remove Background` option, you could also activate it using the **Shift+ ⌘ + K** key shortcut & wait for Preview to process your image.
+
 5. If you are editing a JPEG image, Preview will prompt you to allow converting the image to a PNG image in order for background removal to work. The resultant image will be saved with as a PNG image.
 
 [<img src="/assets/images/post21/preview-remove-bg-5.jpg" width="50%"/>](/assets/images/post21/preview-remove-bg-5.jpg)
