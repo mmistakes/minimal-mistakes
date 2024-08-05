@@ -23,14 +23,13 @@ The steps are as follows:
 2. Select the `Tools` menu and wait for the `Remove Background` option to enable. This usually takes a few seconds as Preview tries to recognize a removable background from the photo. 
 3. Once enabled, hover over the option & Preview will show you an animated boudary along the area that will be retained post background removal. The area that will be removed will be `dimmed` to help you differentiate between the two.
 
-[<img src="/assets/images/post21/preview-remove-bg-3.jpg" width="50%"/>](/assets/images/post21/preview-remove-bg-3.jpg)
-
+    [<img src="/assets/images/post21/preview-remove-bg-3.jpg" width="50%"/>](/assets/images/post21/preview-remove-bg-3.jpg)
 
 4. If you are okay with it, simply click the `Remove Background` option, you could also activate it using the **Shift+ ⌘ + K** key shortcut & wait for Preview to process your image.
 
 5. If you are editing a JPEG image, Preview will prompt you to allow converting the image to a PNG image in order for background removal to work. The resultant image will be saved with as a PNG image.
 
-[<img src="/assets/images/post21/preview-remove-bg-5.jpg" width="50%"/>](/assets/images/post21/preview-remove-bg-5.jpg)
+    [<img src="/assets/images/post21/preview-remove-bg-5.jpg" width="50%"/>](/assets/images/post21/preview-remove-bg-5.jpg)
 
 The final image will have an increased file size so you might want to convert it back to JPEG.
 
