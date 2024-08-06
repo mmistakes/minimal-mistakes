@@ -67,7 +67,7 @@ algolia:
 # SEO Related
 google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : 
 yandex_site_verification :
 baidu_site_verification  :
 
