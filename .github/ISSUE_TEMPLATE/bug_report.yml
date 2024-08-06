@@ -19,7 +19,7 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: What happened?
+      label: Theme version and system environment
       description: |
         Please include theme version, Jekyll version, public git repository, whether
         you are hosting with GitHub Pages, and the operating system you tested with.
@@ -33,8 +33,21 @@ body:
         - Ruby gem or remote theme version:
         - Jekyll version:
         - Git repository URL:
-        - Hosted on GitHub Pages (if yes provide URL to site):
+        - URL to the page with the problem:
         - Operating system:
+        - Browser version:
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: |
+        Describe the problem **in detail**. For example:
+
+        - What is missing?
+        - What error do you see? Attach the error log if available.
     validations:
       required: true
 
