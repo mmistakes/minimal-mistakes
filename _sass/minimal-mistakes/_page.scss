@@ -35,18 +35,18 @@ body {
 
 .page {
   @include breakpoint($large) {
-    float: right;
-    width: calc(100%);
+    float: inline-end;
+    width: calc(100% - #{$right-sidebar-width-narrow});
     padding-inline-end: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100%);
+    width: calc(100% - #{$right-sidebar-width});
     padding-inline-end: $right-sidebar-width;
   }
 
   .page__inner-wrap {
-    float: left;
+    float: inline-start;
     margin-top: 1em;
     margin-inline: 0;
     width: 100%;
@@ -56,7 +56,7 @@ body {
     .page__meta,
     .page__share {
       position: relative;
-      float: left;
+      float: inline-start;
       margin-inline: 0;
       width: 100%;
       clear: both;
