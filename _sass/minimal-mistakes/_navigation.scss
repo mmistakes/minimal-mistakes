@@ -28,7 +28,7 @@
 
     @include breakpoint($large) {
       float: inline-end;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      width: calc(100% - #{$right-sidebar-narrow});
     }
 
     @include breakpoint($x-large) {
