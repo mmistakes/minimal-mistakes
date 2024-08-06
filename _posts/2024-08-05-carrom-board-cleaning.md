@@ -52,18 +52,16 @@ It took me 3 days in total to finish this little project & I'm quite happy with 
 [<img src="/assets/images/post23/board-result.jpg" width="50%"/>](/assets/images/post23/board-result.jpg)
 
 
-Here are the item's that I used:
+#### Here are the item's that I used:
 * **Asian Paints WOODTECH TOUCHWOOD Varnish & brushes**, *purchased from paint store*
-    [<img src="/assets/images/post23/varnish.jpg" width="10%"/>](/assets/images/post23/varnish.jpg)
-
 * **180 grit sandpaper**, *purchased from local hardware store*
-
 * **Sun brand boric acid powder**, *purchased from novelty store*
-    [<img src="/assets/images/post23/powder.jpg" width="10%"/>](/assets/images/post23/powder.jpg)
-
 * **Scotch brite scrub pads**, *purchased from general store*
-    [<img src="/assets/images/post23/scrubs.jpg" width="10%"/>](/assets/images/post23/scrubs.jpg)
 
+[<img src="/assets/images/post23/varnish.jpg" width="10%"/>](/assets/images/post23/varnish.jpg)
+[<img src="/assets/images/post23/powder.jpg" width="10%"/>](/assets/images/post23/powder.jpg)
+[<img src="/assets/images/post23/scrubs.jpg" width="10%"/>](/assets/images/post23/scrubs.jpg)
+  
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey). Leave a comment if you have any questions. 
 
