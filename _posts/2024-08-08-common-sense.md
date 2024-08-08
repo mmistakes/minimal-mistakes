@@ -1,6 +1,6 @@
-
-
-The Misunderstood Value of Common Sense
+---
+title: On Common Sense
+---
 
 Common sense is a tricky concept—often undervalued and misunderstood. People throw around the term like it means something is obvious or easy. But the truth is, what’s common sense to one person might not be to another. Our perspectives are shaped by different experiences, and what seems like common sense might actually be misleading or even wrong, depending on the situation.
 
