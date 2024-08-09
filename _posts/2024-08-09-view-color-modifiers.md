@@ -32,7 +32,7 @@ As their names suggest, these modifiers affect the brightness, contrast, saturat
 
 [<img src="/assets/images/post24/modifiers-result.png" width="80%"/>](/assets/images/post24/modifiers-result.png)
 
-As you can see from the screenshots above, the modifiers can actually do a decent job. And the best part is, they are supported from iOS 13+. Do note that as this solution affects the entire view it's applied on, it's best used for views comprising of just `Color`. If you apply it to views containing other elements such as `Text` or `Image`, this may lead to undesired results.
+As you can see from the screenshots above, the modifiers if used correctly, can actually do a decent job. And the best part is, they are supported from iOS 13+. Do note that as this solution affects the entire view it's applied on, it's best used for views comprising of just `Color`. If you apply it to views containing other elements such as `Text` or `Image`, this may lead to undesired results.
 
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey). Leave a comment if you have any questions. 
