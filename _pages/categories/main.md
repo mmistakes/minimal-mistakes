@@ -1,7 +1,7 @@
 ---
 title: "Category"
 layout: archive
-permalink: categories
+permalink: /categories/
 author_profile: true
 types: posts
 ---
