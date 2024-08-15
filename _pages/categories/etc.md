@@ -1,6 +1,6 @@
 ---
 title: "ETC"
-taxonomy: etc
+taxonomy: ETC
 layout: category
 permalink: /etc/
 author_profile: true
