@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "퍼셉트론, 다층 퍼셉트론 살펴보기"
-categories: ai
+categories: AI
 tag: [python, ai, bigdata]
 toc: true
 author_profile: false
