@@ -1,0 +1,68 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	color: #333;
+	min-width: 380px;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	height:1px;
+	border: 0;
+	background-color: #ddd;
+	margin-bottom: 50px;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0 0 20px 0;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-family: 'Fira Mono', monospace;
+	font-size: 1.5em;
+	// margin: 0 0 30px 0;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: 20px 0 20px 0;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	color: #888;
+}
+
+nav {
+	padding: 0;
+	svg {
+		fill: $brand-color;
+		height: 35px;
+	}
+}
+
+section {
+	padding: 60px 0;
+}
+
+
+
+.button a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: 200ms ease-in background;
+
+	&:hover {
+		background: darken($brand-color, 5%);
+	}
+}
