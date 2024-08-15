@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "초파✪v✪"
+title                    : "초파의 공부노트"
 title_separator          : "|"
 subtitle                 : "Being happy never goes out of style."
 name                     : "chopa"
-description              : "초파의 블로그입니다.✪v✪"
+description              : "초파의 공부노트"
 url                      : "https://chopaovo.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "chopa"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "초파의 블로그입니다."
+  name             : "chopa✪v✪"
+  avatar           : "/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "아자아자 홧팅이닷!"
   location         : "South Korea"
   email            :
   links:
@@ -301,6 +301,10 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fa-solid fa-paw"
 
 date_format: "%Y-%m-%d"
 
