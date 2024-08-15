@@ -13,6 +13,6 @@ main:
       - title: "ALL"
         url: /categories/
       - title: "AI"
-        url: /categories/ai
+        url: /ai/
       - title: "ETC"
-        url: /categories/etc
+        url: /etc/
