@@ -1,6 +1,6 @@
 ---
 title: "AI"
 layout: category
-permalink: /categories/ai
+permalink: /ai/
 author_profile: true
 ---
