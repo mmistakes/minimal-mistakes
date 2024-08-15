@@ -10,3 +10,8 @@ main:
   #   url: /collection-archive/
   - title: "Categories"
     url: /categories/
+    sublinks:
+      - title: "AI"
+      - url: /categories/ai
+      - title: "ETC"
+      - url: /categories/etc
