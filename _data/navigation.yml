@@ -9,9 +9,10 @@ main:
   # - title: "Sample Collections"
   #   url: /collection-archive/
   - title: "Categories"
-    url: /categories/
     sublinks:
+      - title: "ALL"
+        url: /categories/
       - title: "AI"
-      - url: /categories/ai
+        url: /categories/ai
       - title: "ETC"
-      - url: /categories/etc
+        url: /categories/etc
