@@ -7,3 +7,71 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+//  import fonts
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Overpass&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+.site-title {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.archive__item-title{
+  font-size: 1.4em;
+}
+
+.archive__item a[rel="permalink"]{
+  color: mix(#fff, #666d72, 7%);
+}
+
+.archive__item {
+  a:hover{
+    color: #79b7cc;
+  }
+
+  a:visited{
+    color: mix(#fff, #666d72, 15%);
+  }
+}
+
+.archive__subtitle{
+  padding-bottom: 1em;
+  color: #5f85b9;
+}
+
+
+.site-title {
+
+  img{
+    margin: 0;
+    max-width:23%;
+  }
+
+}
+
+p > code{
+  color: #f0555a;
+  font-size: 0.95em;
+}
+
+// base.css
+body {
+  line-height: 1.65;
+}
+
+// page.css
+.page__content p, .page__content li, .page__content dl {
+  font-size: 0.9em;
+}
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
