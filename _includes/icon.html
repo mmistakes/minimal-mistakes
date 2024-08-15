@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+
+	{% case include.icon %}
+
+		{% when "email" %}
+			<i class='fas' style='font-size:32px;color:#8193a9'>&#xf0e0;</i>
+
+
+		{% when "github" %}
+			<i class='fab' style='font-size:32px;color:#8193a9'>&#xf09b;</i>
+
+
+		{% when "look" %}
+			<i class='far' style='font-size:32px;color:#8193a9' >&#xf4da;</i>
+	{% endcase %}
+
+
+</body>
+</html>
