@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+	<head>
+		{% include head.html %}
+		{% include head/custom.html %}
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% seo %}
+		<!-- terminal -->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/terminal.css">
+
+
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/screen.css">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/sitelogo.png" sizes="32x32">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300" rel="stylesheet">
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+
+		<!-- google search console -->
+		<meta name="google-site-verification" content="xAUeIt95gyVt5GeBZzONF5lFcO4QCaFKTioGEuUiBQE" />
+	</head>
+
+
+	<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+		{% include_cached skip-links.html %}
+		{% include_cached browser-upgrade.html %}
+		{% include_cached masthead.html %}
+
+		<div class="initial-content">
+			{{ content }}
+		</div>
+
+		{% if site.search == true %}
+			<div class="search-content">
+				{% include_cached search/search_form.html %}
+			</div>
+		{% endif %}
+
+	<!-- footer section -->
+	<div id="footer" class="page__footer">
+		<footer>
+			{% include_cached footer.html %}
+		</footer>
+	</div>
+
+		{% include scripts.html %}
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('a[href*=\\#]').on('click', function(event){
+			var el = $(this.hash);
+			if (el.length > 0) {
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			}
+		});
+	</script> -->
+
+	</body>
+</html>
