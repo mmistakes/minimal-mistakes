@@ -1,6 +1,6 @@
 ---
 title: "AI"
-taxonomy: AI
+taxonomy: ai
 layout: category
 permalink: /ai/
 author_profile: true
