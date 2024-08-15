@@ -1,0 +1,127 @@
+#terminal{
+  width: 670px !important;
+  max-width: 100%;
+  margin: 0 auto;
+
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+
+#bar {
+    text-align: center;
+    max-width: 100%;
+    height: 25px;
+    background-color: #e4e3e5;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    position: relative;
+    float: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+#bar:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    /* A little hack to display the window buttons in one pseudo element. */
+    background: #d9515d;
+    -webkit-box-shadow: 20px 0 0 #f4c025, 40px 0 0 #3ec930;
+            box-shadow: 20px 0 0 #f4c025, 40px 0 0 #3ec930;
+}
+
+#bar:after {
+    content: '$ chaerim-kim.github.io';
+    position: absolute;
+    font-size: 13px;
+    top:2px;
+    color: #1a1e24;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+#screen {
+    background-color: #fbfbfb;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+    position: relative;
+    border-radius: 0 0 4px 4px;
+    margin: 0 auto;
+    padding: 30px 20px 40px 0px;
+  	box-shadow: 0px 20px 64px rgba(50,50,93,.15),
+                0 15px 35px rgba(50,50,93,.2),
+                0 5px 15px rgba(0,0,0,.12);
+}
+
+#screen .command {
+    margin: 0;
+    color: #D76D77;
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    font-size: 13px;
+    text-align: left;
+    position: static;
+    padding-left: 30px
+}
+
+#screen .command::before {
+	content: "> ";
+}
+
+#screen .response {
+    margin: 0 0 25px 0;
+    color: #1a1e24;
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    font-size: 13px;
+    text-align: left;
+    position: static;
+    padding-left: 30px;
+}
+
+#screen .array::before {
+	content: "[";
+}
+
+#screen .array::after {
+	content: "]";
+}
+
+#screen .array .array-element::before {
+	content: "\"";
+}
+
+#screen .array .array-element::after {
+	content: "\"";
+}
+
+#screen a {
+	background-color: #5DB96F;
+	color: #FBDB5A;
+	text-decoration: none;
+}
+
+#screen a:hover {
+	color: #FFFFFF;
+}
+
+#screen .cursor {
+	background: hsla(0, 0%, 21%, .65);
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
