@@ -18,15 +18,16 @@ eddy simulations](https://en.wikipedia.org/wiki/Large_eddy_simulation).
 ## Submesoscale instabilities in the ocean bottom boundary layer
 
 
-![CSI paper](/assets/images/JPO2022_CSI.png)
+![Headland paper](/assets/images/PV_bathymetry_R1F008.png)
 
 I use Large-eddy simulations to investigate the impact of submesoscale dynamics in bottom boundary
 layer flows. I've given specific focus to Centrifugal-Symmetric instabilities, which are thought to
 be especially active in the submesoscale range of the spectrum.
 
-You can find a relevant publication
-[here](https://journals.ametsoc.org/view/journals/phoc/52/9/JPO-D-21-0259.1.xml) and watch my
-presentation on the topic [here](https://youtu.be/F2RVCqTOF5o).
+You can find relevant publications
+[here](https://journals.ametsoc.org/view/journals/phoc/52/9/JPO-D-21-0259.1.xml) and
+[here](https://eartharxiv.org/repository/view/7526/), and watch my presentation on the topic
+[here](https://youtu.be/F2RVCqTOF5o).
 
 
 
