@@ -17,6 +17,8 @@ tags:
   - Flass
   - Bullock
   - Alfred Pennyworth
+  - Onomatopoeia
+  - Deadshot
 ---
 
 ![image](/assets/images/batman-caped-crusader/batman-cc.png)
@@ -25,11 +27,11 @@ tags:
 
 *Spoilers ahead...*  
 
-Episode 7, "Moving Target," kicks off with Barbara and James arguing about her client being let off on a technicality, with Gordon believing the cops did a flawed but decent job while Barbara disagrees. Montoya rushes in, warning of a threat on Gordon's life. When the attacker is shot by Officer Corrigan, they discover he's Floyd Lawton, a hitman, but don’t know who ordered the hit. 
+Episode 7, "Moving Target," kicks off with Barbara and James arguing about her client being let off on a technicality, with Gordon believing the cops did a flawed but decent job while Barbara disagrees. Montoya rushes in, warning of a threat on Gordon's life. When the attacker is shot by Officer Corrigan, they discover he's Floyd Lawton(Deadshot), a hitman, but don’t know who ordered the hit. 
 
 Bullock wants to take a hardline approach, but Gordon dimisses him. Barbara requests Montoya for a security detail for Gordon, worried about him, but he denies. Montoya suspects Rupert Thorne's involvement and insists that Gordon move to a safehouse, which he declines, worried about Bullock and Flass possibly worsening the situation. 
 
-Batman tells Barbara that the hit was ordered from inside Black Gate Prison and warns her to keep Gordon safe until he gets more information. Batman finds out the hit money has doubled after Lawtons failed attempt, drawing more henchmen, including a new boss. Gordon reluctantly moves to a safehouse with additional security but is attacked on the way. Barbara takes the wheel and they escape. They hide in Wayne Garden's project, but the masked boss tracks them down.
+Batman tells Barbara that the hit was ordered from inside Black Gate Prison and warns her to keep Gordon safe until he gets more information. Batman finds out the hit money has doubled after Lawtons failed attempt, drawing more henchmen, including a new boss, Onomatopoeia. Gordon reluctantly moves to a safehouse with additional security but is attacked on the way. Barbara takes the wheel and they escape. They hide in Wayne Garden's project, but Onomatopoeia tracks them down.
 
 Batman arrives, helping them fend off the attackers. It turns out the hit was on Barbara, not Gordon, ordered by her former client Muller. Corrigan tries to kill Barbara but is stopped by Gordon in th nick of time. In the end, Barbara visits Muller, who canceled the hit on Batman's command but remains unhappy with his sentence.
 
