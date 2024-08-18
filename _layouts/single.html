@@ -60,6 +60,8 @@ layout: default
         {% include page__date.html %}
       </footer>
 
+      {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
@@ -70,7 +72,6 @@ layout: default
     {% endif %}
   </article>
 
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     {% include page__related.html posts=site.related_posts %}
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}

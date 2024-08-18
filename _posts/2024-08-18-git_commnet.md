@@ -32,3 +32,16 @@ mmistakes 가이드 사이트를 보면 여러가지 종류의 댓글 기능이 
 https://help.disqus.com/en/articles/1717111-what-s-a-shortname 여기로 들어가서 디스쿠스 계정을 만들고 사이트를 등록해줬다.
 
 ![image](https://github.com/user-attachments/assets/e0b94d8f-6e24-4698-842e-73675c692e7b)
+
+
+그리고 생성된 shortname을 config 파일에 지정해주고 comment를 disqus로 바꿔줬다.
+
+![image](https://github.com/user-attachments/assets/ee2b6aa2-8001-4735-88ab-9e559f01fb30)
+
+![image](https://github.com/user-attachments/assets/94d43166-ad68-4956-a73e-62d71a9babdf)
+
+
+그렇게 했더니 댓글이 추가되었다.
+
+
+![image](https://github.com/user-attachments/assets/e3cf922c-482c-4841-a0a5-5052c86a1cbb)
