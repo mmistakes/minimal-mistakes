@@ -3,8 +3,8 @@ layout: single
 title: "Building a Horoscope app with Gemini AI & SwiftUI"
 date: 2024-08-19 10:02:00 +0530
 excerpt: "In this post we'll look at one of the important capabilities of AI models i.e. Summarization. You may have seen this when browsing the reviews section of Amazon where before the actual reviews, you see an AI generated summary of the reviews posted for the given product."
-seo_title: "Building a Horoscope app with Gemini AI & SwiftUI"
-seo_description: "Building a Horoscope app with Gemini AI & SwiftUI"
+seo_title: "Create a Dynamic Horoscope App with Gemini AI and SwiftUI"
+seo_description: "Learn how to build a unique horoscope app using Gemini AI and SwiftUI. This guide explores AI-driven summarization and tonal customization to enhance user experience in iOS apps."
 categories:
   - iOS
   - AI
