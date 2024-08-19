@@ -3,8 +3,8 @@ layout: single
 title: "Complete Guide to building a Gemini AI Chatbot on iOS using Firebase API Extension"
 date: 2024-08-19 09:58:00 +0530
 excerpt: "Google has recently rolled out a Firebase extension that gives you another way of working with Gemini API but through Firebase. The advantage of this extension is that if you are familiar with Firebase, you can build a chatbot on iOS very quickly."
-seo_title: "Complete Guide to building a Gemini AI Chatbot on iOS using Firebase API Extension"
-seo_description: "Complete Guide to building a Gemini AI Chatbot on iOS using Firebase API Extension"
+seo_title: "Step-by-Step Guide: Building a Gemini AI Chatbot on iOS with Firebase API Extension"
+seo_description: "Master the process of creating a Gemini AI-powered chatbot on iOS using Firebase API Extension. This detailed tutorial covers everything from setting up Firebase to integrating the Gemini API, making chatbot development fast and efficient for iOS apps."
 categories:
   - iOS
   - AI
