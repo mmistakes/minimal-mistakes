@@ -13,31 +13,27 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-  docs:
-    - title: Back-end
-      childen:
-        - title: "Spring"
-          url: spring/
-          category: "springboot"
-    - title: AI
-      childen:
-        - title: "Deep Learning"
-          url: deeplearning/
-          category: "딥러닝"
-        - title: "Machine Learning"
-          url: machinelearning/
-          category: "머신러닝"
-    - title: 알고리즘
-      childen:
-        - title: "Algorithm"
-          url: algorithm/
-          category: "자료구조-알고리즘"
-    - title: Git
-      childen:
-        - title: "Git"
-          url: git/
-          category: "git"
-
-
-
-          자료구조-알고리즘
+docs:
+  - title: Back-end
+    childen:
+      - title: "Spring"
+        url: spring/
+        category: "springboot"
+      - title: AI
+        childen:
+          - title: "Deep Learning"
+            url: deeplearning/
+            category: "딥러닝"
+          - title: "Machine Learning"
+            url: machinelearning/
+            category: "머신러닝"
+      - title: 알고리즘
+        childen:
+          - title: "Algorithm"
+            url: algorithm/
+            category: "자료구조-알고리즘"
+      - title: Git
+        childen:
+          - title: "Git"
+            url: git/
+            category: "git"
