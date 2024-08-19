@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Recreating Google's Desktop Carousal Effect with SwiftUI"
-date: 2024-08-19 08:10:00 +0530
+date: 2024-02-07 08:10:00 +0530
 excerpt: "Google has a really cool on-hover effect that you can see on the web if you were to search for stuff like popular movies or Disney movies."
 seo_title: "How to Recreate Google’s Desktop Carousel Effect in SwiftUI"
 seo_description: "Learn to replicate Google’s smooth desktop carousel effect using SwiftUI in this step-by-step guide. Perfect for iOS developers aiming to enhance user interactions with sleek animations and dynamic content display."
