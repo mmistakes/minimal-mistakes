@@ -3,8 +3,8 @@ layout: single
 title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
 date: 2024-08-19 09:45:00 +0530
 excerpt: "Apart from all the stuff that you can do with a LLM like Gemini, did you know that you could also play games with it?"
-seo_title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
-seo_description: "Create a tic-tac-toe game with Gemini AI"
+seo_title: "Master Tic-Tac-Toe with Gemini AI: A SwiftUI Tutorial"
+seo_description: "Discover how to build a tic-tac-toe game using Gemini AI and SwiftUI. This tutorial explores AI-driven gameplay, prompt engineering, and tips for creating challenging iOS games."
 categories:
   - iOS
   - AI
@@ -15,6 +15,7 @@ tags:
   - AI
   - Gemini
   - Google
+  - Prompt Engineering
 ---
 <!--![image](/assets/images/post19/tictactoe-gemini-thumbnail.png)-->
 
