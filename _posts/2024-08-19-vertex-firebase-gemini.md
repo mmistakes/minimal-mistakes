@@ -3,8 +3,8 @@ layout: single
 title: "Complete guide to building a Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK"
 date: 2024-08-19 09:50:00 +0530
 excerpt: "In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's."
-seo_title: "Complete guide to building a Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK"
-seo_description: "Complete guide to building a Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK"
+seo_title: "Complete Guide to Building a Multimodal Chatbot with Gemini API and Vertex AI for Firebase SDK"
+seo_description: "Learn how to create a powerful multimodal chatbot using Gemini API and Vertex AI for Firebase SDK on iOS. This comprehensive guide walks you through Firebase setup, chat service creation, and media integration for advanced AI-powered apps."
 categories:
   - iOS
   - AI
@@ -17,6 +17,7 @@ tags:
   - Google
   - VertexAI
   - Firebase
+  - Prompt Engineering
 ---
 <!--![image](/assets/images/post18/vertex-firebase-thumbnail.png)-->
 
