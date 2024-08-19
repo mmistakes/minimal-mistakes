@@ -195,9 +195,9 @@ This project was yet another eye-opener for me in terms of using AI in a way oth
 And that's it for this post! The complete code can be found [here](https://github.com/anupdsouza/ios-gemini-tic-tac-toe)
 
 Checkout a short video of the playthrough here:
-
-[<img src="https://img.youtube.com/vi/N5bvgwxHA1k/hqdefault.jpg" width="300" height="450"
-/>](https://www.youtube.com/embed/N5bvgwxHA1k)
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/N5bvgwxHA1k?controls=0" frameborder="0" allowfullscreen></iframe>
+<!--[<img src="https://img.youtube.com/vi/N5bvgwxHA1k/hqdefault.jpg" width="300" height="450"
+/>](https://www.youtube.com/embed/N5bvgwxHA1k)-->
 
 
 <!--Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey) for more such information. Leave a comment if you have any questions. 
