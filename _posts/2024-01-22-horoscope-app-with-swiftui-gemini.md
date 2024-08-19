@@ -25,7 +25,9 @@ Watch the video or follow along with the post below.
 <!--[<img src="https://img.youtube.com/vi/bxiP1J4-V8w/hqdefault.jpg" width="600" height="350"
 />](https://www.youtube.com/embed/bxiP1J4-V8w)-->
 
-Previously, we saw how to [easily integrate the Gemini AI SDK](https://www.anupdsouza.com/ios/ai/getting-started-with-gemini/) to perform simple text-only interactions, then created a [multi-turn chat interface](https://www.anupdsouza.com/ios/ai/chat-with-gemini/) & followed it up with a [multimodal chat interface](https://www.anupdsouza.com/ios/ai/multimodal-chat-with-gemini/) that combined sending images as well as text. In this post we'll look at one of the important capabilities of AI models i.e. Summarization.
+<!--Previously, we saw how to [easily integrate the Gemini AI SDK](https://www.anupdsouza.com/ios/ai/getting-started-with-gemini/) to perform simple text-only interactions, then created a [multi-turn chat interface](https://www.anupdsouza.com/ios/ai/chat-with-gemini/) & followed it up with a [multimodal chat interface](https://www.anupdsouza.com/ios/ai/multimodal-chat-with-gemini/) that combined sending images as well as text. In this post we'll look at one of the important capabilities of AI models i.e. Summarization.!-->
+
+Previously, we saw how to [easily integrate the Gemini AI SDK](https://youtu.be/X-zs-wa6j28) to perform simple text-only interactions, then created a [multi-turn chat interface](https://youtu.be/VO3YGN2UuHc) & followed it up with a [multimodal chat interface](https://youtu.be/4SeW1x4m6Gc) that combined sending images as well as text. In this post we'll look at one of the important capabilities of AI models i.e. Summarization.
 
 You may have seen this when browsing the reviews section of Amazon where before the actual reviews, you see an AI generated summary of the reviews posted for the given product. For those unfamiliar, it looks something like this.
 
@@ -36,7 +38,7 @@ Most LLM's these days are capable of summarization. The following text extract f
 
 This is extremely beneficial, again as described by Google's Document AI
 
-> The benefits of AI summarization range from cost savings to improved accessibility to information. AI summarization can help businesses and organizations save time and money when producing research, business intelligence, or insights. AI-powered summarization can extract key information from news articles, research, legal and financial documents, technical literature, and even customer feedback. Summartization, then, means more time acting on information instead of sifting through it.
+> The benefits of AI summarization range from cost savings to improved accessibility to information. AI summarization can help businesses and organizations save time and money when producing research, business intelligence, or insights. AI-powered summarization can extract key information from news articles, research, legal and financial documents, technical literature, and even customer feedback. Summarization, then, means more time acting on information instead of sifting through it.
 
 Broadly speaking, summarization helps you get to the juicy bits of information from the vast sea of data that exists. This data could be a book or as mentioned above, user reviews of a product on an e-commerce website.
 
