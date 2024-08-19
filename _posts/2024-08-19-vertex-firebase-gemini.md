@@ -1,6 +1,5 @@
 ---
 layout: single
-published: false
 title: "Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK on iOS - A Step-by-Step Guide"
 excerpt: "In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's."
 seo_title: "Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK on iOS"
@@ -198,9 +197,11 @@ Run the app & chat on!
 
 And that's it for this post! The complete code can be found [here](https://github.com/anupdsouza/ios-vertex-firebase-swiftui)
 
-Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey) for more such information. Leave a comment if you have any questions. 
+<!--Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey) for more such information. Leave a comment if you have any questions. 
 
-Share this article if you found it useful !
+Share this article if you found it useful !-->
+
+Leave a comment if you have any questions!
 
 Resources:
 * https://firebase.google.com/docs/vertex-ai/get-started?platform=ios
