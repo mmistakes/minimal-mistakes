@@ -200,8 +200,3 @@ Checkout a short video of the playthrough here:
 
 
 Leave a comment if you have any questions!
-<!--
-Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey) for more such information. Leave a comment if you have any questions. 
-
-Share this article if you found it useful !
--->
