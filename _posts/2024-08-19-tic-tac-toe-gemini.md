@@ -1,6 +1,5 @@
 ---
 layout: single
-published: false
 title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
 excerpt: "Apart from all the stuff that you can do with a LLM like Gemini, did you know that you could also play games with it?"
 seo_title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
@@ -199,6 +198,9 @@ Checkout a short video of the playthrough here:
 />](https://www.youtube.com/embed/N5bvgwxHA1k)
 
 
+Leave a comment if you have any questions!
+<!--
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@swiftodyssey?sub_confirmation=1) & follow me on [X(Twitter)](https://twitter.com/swift_odyssey) for more such information. Leave a comment if you have any questions. 
 
 Share this article if you found it useful !
+-->
