@@ -1,10 +1,9 @@
 ---
 layout: single
-published: false
-title: "Google Carousal Effect with SwiftUI"
+title: "Recreating Google's Desktop Carousal Effect with SwiftUI"
 excerpt: "Google has a really cool on-hover effect that you can see on the web if you were to search for stuff like popular movies or Disney movies."
-seo_title: "Google Carousal Effect with SwiftUI on iOS"
-seo_description: "Google Carousal Effect with SwiftUI on iOS"
+seo_title: "Recreating Google's Desktop Carousal Effect with SwiftUI"
+seo_description: "Recreating Google's Desktop Carousal Effect with SwiftUI"
 categories:
   - iOS
 tags:
@@ -114,5 +113,5 @@ Notes:
 
 And that's it! The complete code can be found [here.](https://github.com/anupdsouza/ios-google-movie-carousal)
 
-
-Leave a comment if you have any questions and share this article if you found it useful  !
+Leave a comment if you have any questions!
+<!--Leave a comment if you have any questions and share this article if you found it useful  !-->
