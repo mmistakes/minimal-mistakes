@@ -7,6 +7,9 @@
 - Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
 - Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
 - Rewrite most directions with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+- Remove unnecessary "type" attribute (#4956)
+- The "if" means the default is never used (#4955)
+- For pages without a title, show the site title only once (#4959)
 
 ### Bug Fixes
 
