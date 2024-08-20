@@ -187,9 +187,10 @@ init() {
 let response = try await chat?.sendMessage(aiPrompt)
 ``` 
 
-With the changes made above, Gemini's responses improved dramatically & mirrored the performance it had in the web app! I was finally able to play tic-tac-toe on iOS :)
+With the changes made above, Gemini's responses improved dramatically & mirrored the performance it had in the web app! I was finally able to play tic-tac-toe on iOS :)  
 
-![image](/assets/images/post19/result.png)
+
+[<img src="/assets/images/post19/result.png" width="200"/>](/assets/images/post19/result.png)  
 
 This project was yet another eye-opener for me in terms of using AI in a way other than just to spew information it had learnt in response to questions we've been so accustomed to Googling.
 And that's it for this post! The complete code can be found [here](https://github.com/anupdsouza/ios-gemini-tic-tac-toe)
