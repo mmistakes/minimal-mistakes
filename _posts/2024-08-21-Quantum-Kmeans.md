@@ -110,7 +110,7 @@ After the clustering algorithm has been run for each data set, the ARI scores fo
   }
   caption {
     caption-side: bottom;
-    text-align: center;
+    text-align: left;
     font-style: italic;
     padding-top: 10px;
   }
@@ -188,7 +188,7 @@ After the clustering algorithm has been run for each data set, the ARI scores fo
   }
   caption {
     caption-side: bottom;
-    text-align: center;
+    text-align: left;
     font-style: italic;
     padding-top: 10px;
   }
