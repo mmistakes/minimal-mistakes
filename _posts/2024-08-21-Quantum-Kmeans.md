@@ -243,7 +243,7 @@ The clusters can also be visualized by plotting. **Figure 3** shows the results 
     <img src="/assets/images/QKmeans-Blog/KmeansEuroSAT6.png" alt="Dataset6" style="width: 100%;">
   </div>
 
-  <div style="width: 100%; text-align: center; margin-top: 10px;">
+  <div style="width: 100%; text-align: left; margin-top: 10px;">
     <p>
     <em>Figure 3: The results from the quantum k-means are on the left with the ARI score below each clustering result. The results from the classical algorithm are on the right with the ARI score above each clustering result. The graphs have the feature of the vectors on the x-axis and the cluster label on the y-axis.</em>
     </p>
@@ -269,7 +269,7 @@ Each point in the cluster can be traced back to the image that it represents. Th
     </p>
   </div>
 
-  <div style="width: 100%; text-align: center; margin-top: 10px;">
+  <div style="width: 100%; text-align: left; margin-top: 10px;">
     <p>
     <em>Figure 4: After clustering the vectors, the images from each cluster can be plotted and the true and predicted labels can be compared. In (a) and (b) you can see images clustered into the Residential and Forest clusters.</em>
     </p>
@@ -331,7 +331,7 @@ The results of the image segmentation done with the quantum k-means algorithm ca
     <img src="/assets/images/QKmeans-Blog/QRiver_219.png" alt="QRiver" style="width: 100%;">
   </div>
 
-  <div style="width: 100%; text-align: center; margin-top: 10px;">
+  <div style="width: 100%; text-align: left; margin-top: 10px;">
     <p>
     <em>Figure 5: Some satellite images from the EuroSAT data set and their segmented versions. The segmentation has been done with the quantum k-means algorithm. The left most image has been segmented into four clusters, the right most images into three clusters and the rest have two clusters.</em>
     </p>
