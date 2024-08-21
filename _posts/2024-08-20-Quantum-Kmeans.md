@@ -3,7 +3,7 @@ title: 'Quantum k-means for clustering and segmenting satellite images'
 date: 2024-08-20
 permalink: /_posts/2024-08-20-Quantum-K-Means/
 header:
-  teaser: /assets/images/vtt-images/VTT_kvanttitietokone_labra-3237.jpg
+  teaser: /assets/images/Satellite-Thumbnail.jpg
 published: true
 author: Meeri Makitalo
 layout: single
