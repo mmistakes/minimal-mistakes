@@ -1,9 +1,9 @@
 ---
 title: 'Quantum k-means for clustering and segmenting satellite images'
-date: 2024-08-20
-permalink: /_posts/2024-08-20-Quantum-K-Means/
+date: 2024-08-21
+permalink: /_posts/2024-08-21-Quantum-K-Means/
 header:
-  teaser: /assets/images/vtt-images/VTT_kvanttitietokone_labra-3237.jpg
+  teaser: /assets/images/Satellite-Thumbnail.jpg
 published: true
 author: Meeri Makitalo
 layout: single
@@ -40,7 +40,7 @@ Previously, the EuroSAT data set has been classified with a quantum convolutiona
     </p>
   </div>
 
-<p style="text-align: center;">
+<p style="text-align: left;">
 <em>Figure 1: Two examples of the satellite images that are in the EuroSAT dataset. The complete dataset contains ten different categories of images and some of the other labels are for example AnnualCrop, Highway, River, and Industrial. </em>
 </p>
 
@@ -180,8 +180,6 @@ After the clustering algorithm has been run for each data set, the ARI scores fo
   </tr>
 </table>
 
-<br>
-
 <style>
   table {
     margin-left: auto;
@@ -216,8 +214,6 @@ After the clustering algorithm has been run for each data set, the ARI scores fo
     <td>0.9597</td>
   </tr>
 </table>
-
-<br>
 
 The clusters can also be visualized by plotting. **Figure 3** shows the results from the quantum and classical algorithms for three different data sets. The plots show each point in the cluster it has been assigned to and the two clusters can be differentiated by the color of the points and by the label value on the y-axis.
 
@@ -260,14 +256,14 @@ Each point in the cluster can be traced back to the image that it represents. Th
 <div style="display: flex; flex-direction: column; align-items: center;">
 
   <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-    <img src="/assets/images/QKmeans-Blog/Cluster0.png" alt="Cluster Residential" style="width: 100%;">
+    <img src="/assets/images/QKmeans-Blog/Cluster_residential.png" alt="Cluster Residential" style="width: 100%;">
     <p>
     <em>(a) The images of residential areas with their true and predicted labels.</em>
     </p>
   </div>
   
   <div style="width: 100%; text-align: center; margin-bottom: 10px;">
-    <img src="/assets/images/QKmeans-Blog/Cluster1.png" alt="Cluster Forest" style="width: 100%;">
+    <img src="/assets/images/QKmeans-Blog/Cluster_forest.png" alt="Cluster Forest" style="width: 100%;">
     <p>
     <em>(b) The images of forest with their true and predicted labels.</em>
     </p>
@@ -308,7 +304,7 @@ The results of the image segmentation done with the quantum k-means algorithm ca
   </div>
   
   <div style="width: 19%; text-align: center; margin: 3px;">
-    <img src="/assets/images/QKmeans-Blog/Industrial_106 copy.jpg" alt="Industrial" style="width: 100%;">
+    <img src="/assets/images/QKmeans-Blog/Industrial_106.jpg" alt="Industrial" style="width: 100%;">
   </div>
   
   <div style="width: 19%; text-align: center; margin: 3px;">
