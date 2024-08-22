@@ -10,7 +10,6 @@ en: &DEFAULT_EN
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
-  breadcrumbs                 : true
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "Toggle menu"
