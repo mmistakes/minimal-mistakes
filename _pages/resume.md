@@ -5,4 +5,4 @@ permalink: /resume/
 classes: wide
 ---
 
-<object data="https://TylerPollard410.github.io/assets/download/resume.pdf" type="application/pdf" />
+<embed src="https://TylerPollard410.github.io/assets/download/resume.pdf" type="application/pdf" />
