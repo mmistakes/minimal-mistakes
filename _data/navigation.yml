@@ -2,5 +2,5 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Untitled"
-    url: /untitled/
+  - title: "Resume"
+    url: /resume/
