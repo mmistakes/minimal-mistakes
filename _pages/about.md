@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: About
+output: html_output
 ---
 
 ![image](/assets/images/aboutpic.png)
