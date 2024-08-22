@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /untitled/
 title: Untitled
 output: html_document
 ---
