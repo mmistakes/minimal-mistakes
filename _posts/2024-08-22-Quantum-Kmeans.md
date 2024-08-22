@@ -54,7 +54,7 @@ Firstly, what is k-means? K-means is an unsupervised machine learning algorithm 
 
 The algorithm becomes computationally heavy as the number and the dimension of the vectors grow. According to [[5]](#references), the heaviest part of the k-means is calculating the distance between each vector and each cluster centroid. In [[4]](#references) the time complexity of this algorithm is given as $O(Nnk)$, where $N$ is the number of features in the vector, $n$ is the number of vectors, and $k$ is the number of clusters. The time complexity describes the computing time required to run a certain algorithm, and ideally this should be minimized.
 
-## Quantum K-means Algorithm
+## The Quantum K-means Algorithm
 
 How can a quantum computer be used in this? Well, for example, a quantum computer could be used to perform some of the steps in the k-means algorithm. In the algorithm that is described in this blog, the distance calculation is done with a quantum circuit that is then run on Helmi, a 5-qubit quantum computer connected to the LUMI-supercomputer, a part of the Finnish Quantum Computing Infrastructure (FiQCI)
 
@@ -277,7 +277,7 @@ Each point in the cluster can be traced back to the image that it represents. Th
 
 </div>
 
-## Testing the Quantun K-means for Image Segmentation
+## Testing the Quantum K-means for Image Segmentation
 
 Besides the clustering, the quntum k-means algorithm can be used for image segmentation. To segment an image from the EuroSAT data set it was transformed into a two-dimensional array that contains each pixel and the array of the RGB values in that pixel. Then, the images were changed to gray-scale and flattened into a one-dimensional array of the pixel values. Thus, the distance between the pixels will be the difference in their intensity. The distance of the points was then determined with the same quantum circuit that uses the swap test. Using a swap test in image segmentation has been previously done in [[10]](#references).
 
