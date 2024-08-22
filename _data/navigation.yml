@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Projects"
-    url: /untitled/
   - title: "About"
     url: /about/
+  - title: "Projects"
+    url: /untitled/
