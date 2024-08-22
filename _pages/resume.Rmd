@@ -1,0 +1,130 @@
+---
+header-includes:
+  - \usepackage{tabularx}
+  - \usepackage{multirow}
+  - \usepackage{multicol}
+  - \usepackage{paracol}
+  - \usepackage{ragged2e}
+  - \usepackage{fontawesome5}
+  - \usepackage{enumitem}
+  - \PassOptionsToPackage{svgnames}{xcolor}
+  - \usepackage{tcolorbox}
+  - \usepackage{tikz}
+  - \usepackage{titlesec}
+document: article
+geometry: "left=0.5in,right=0.5in,top=0.5in,bottom=0.5in"
+fontsize: 11pt
+mainfont: Arial
+linestretch: 1.0
+pagestyle: empty
+indent: false
+output: 
+  pdf_document:
+    latex_engine: xelatex
+---
+
+<!-- Font Sizes List -->
+<!-- \tiny -->
+<!-- \scriptsize -->
+<!-- \footnotesize -->
+<!-- \small -->
+<!-- \normalsize -->
+<!-- \large -->
+<!-- \Large -->
+<!-- \LARGE -->
+<!-- \huge -->
+<!-- \Huge -->
+
+\titlespacing*{\subsection}{0pt}{\baselineskip}{0.2\baselineskip}
+
+\colorlet{body}{black!40!white}
+
+<!-- \setcolumnwidth{.35\textwidth} -->
+<!-- \setlength{\columnsep}{0.02\textwidth} -->
+
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body,fill=body!10,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+
+\setcolumnwidth{2.25in}
+\setlength{\columnsep}{0.06\textwidth}
+
+<!-- \setlength{\columnseprule}{0.4pt} -->
+
+\backgroundcolor{c[0](4cm,4cm)(0.5\columnsep,4cm)}{cyan!10}
+
+\begin{paracol}{2}
+\begin{leftcolumn}
+\begin{RaggedRight}
+\begin{fontsize}{24}{28}\selectfont \textbf{Tyler Pollard} 
+  \end{fontsize}
+\end{RaggedRight} \\
+\begin{fontsize}{16}{1}\selectfont Statistician 
+  \end{fontsize} \\
+
+\vspace{-1em}
+\faEnvelope \hspace{0.75em} tylerpollard410@gmail.com \\
+\faPhone \hspace{0.75em} (443) 974-4559 \\
+\faMapMarker \hspace{0.75em} Bradenton, FL, 34211 \\ 
+\faUser \hspace{0.75em} {https://tylerpollard410.github.io} \\
+\hrule
+
+\subsection{PROFESSIONAL SUMMARY}
+\begin{flushleft}
+Experienced and self-motivated Mathematical Statistician with over five years of experience applying statistical methods reinforced by robust mathematical reasoning to effectively scope tests and analyze test data across various U.S. Army warfighting commodities while consistently exceeding established job performance metrics. I have demonstrated success collaborating with several agencies simultaneously to identify test constraints, develop action plans, and support data fluency through both oral and written communication.
+\end{flushleft}
+
+\subsection{SKILLS}
+\subsubsection{Software}
+\begin{flushleft}
+\cvtag{R}\cvtag{R Shiny}\cvtag{JMP}\cvtag{SAS}\cvtag{GitHub/GitLab}\cvtag{SQL}\cvtag{Tableau}
+\end{flushleft}
+\vspace{-0.5em}
+\subsubsection{Technical}
+\begin{flushleft}
+\cvtag{Regression Modeling}\cvtag{Bayesian Statistics}\cvtag{Multilevel Modeling}\cvtag{Multivariate Modeling}\cvtag{Predictive Modeling}\cvtag{Design of Experiments (DOE)}\cvtag{Data Visualization}\cvtag{Time Series Analysis}
+\end{flushleft}
+\raggedright
+\textbf{Active Secret Security Clearance}
+\end{leftcolumn}
+
+\begin{rightcolumn}
+\subsection{WORK EXPERIENCE}
+\begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
+\textbf{Operations Research Analyst} & {Apr 2024 - Current} \\
+\multicolumn{2}{@{}l}{U.S. Special Operations Command \bullet \ Tampa, FL} \\
+\end{tabularx}
+
+\begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
+\textbf{Mathematical Statistician} & {Sep 2018 - Apr 2024} \\
+\multicolumn{2}{@{}l}{U.S. Army Evaluation Center \bullet \ Aberdeen Proving Ground, MD} \\
+\end{tabularx}
+
+\begin{itemize}[leftmargin=*]\setlength\itemsep{-0.25em}\raggedright
+  \item{Awarded Department of the Army Civilian Service Commendation Medal for outstanding statistical analysis and insight in timely support of a top-priority system-of-systems operational test which ensured the success of the demonstration over a distributed test network while simultaneously transforming the Command's test infrastructure}
+  \item{Selected as AEC Employee of the Quarter, First Quarter, Fiscal Year 2024, for leading a working group to gain efficiencies and improve accuracies in the test design and analysis of a modeling and simulation tool}
+  \item{Led division in integrating into a Data Science Environment which is used to deploy apps for faster and more effective analyses}
+  \item{Served as lead statistician on 24 diverse, multi-disciplinary teams to scope test events through design of experiments, simulation, and other innovative statistical techniques, resulting in robust designs that successfully addressed critical evaluation metrics and reduced test resources by up to 67\%}
+  \item{Analyzed continuous, discrete, and survey test data using regression, mixed models, and other complex statistical methods to generate data visualizations that effectively communicated findings in results briefs and written reports which allowed evaluators and senior leaders to efficiently interpret data and reach important decisions}
+  \item{Developed all steps of a modular evaluation workflow that outlined test design through Monte Carlo simulation, data cleaning with automated scripts, data analysis using Beta-Binomial regression, kernel density estimation, and random effects models, and data visualization with an R Shiny application for all programs that evaluate probability of hit/kill}
+  \item{Developed 13 R Shiny analytical dashboards to provide necessary statistical and data visualization tools for all of AEC, producing standardization and improved analysis across the organization}
+\end{itemize}
+
+\subsection{EDUCATION}
+\begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
+\textbf{Master of Statistics} & {Jul 2024} \\
+North Carolina State University \bullet \ Raleigh, NC & GPA: 4.00/4.00 \\
+\end{tabularx}
+
+\begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
+\textbf{Bachelor of Science in Mechanical Engineering} & {May 2018} \\
+Clemson University \bullet \ Clemson, SC & GPA: 3.53/4.00 \\
+\end{tabularx}
+
+\end{rightcolumn}
+\end{paracol}
+
+
+
+
+

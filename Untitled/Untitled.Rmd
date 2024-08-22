@@ -1,0 +1,68 @@
+---
+title: CV
+name: Marie
+surname: Curie
+position: "Professor"
+address: "School of Physics & Chemistry, École Normale Supérieure"
+phone: +1 22 3333 4444
+pronouns: she/her
+www: mariecurie.com
+email: "Marie.Curie@ens.fr"
+twitter: mariecurie
+github: mariecurie
+linkedin: mariecurie
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Marie is a Polish and naturalized-French physicist and chemist who conducts pioneering research on radioactivity."
+output:
+  vitae::markdowncv:
+    theme: kjhealy
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+## Some stuff about me
+
+ * I poisoned myself doing research.
+ * I was the first woman to win a Nobel prize
+ * I was the first person and only woman to win a Nobel prize in two different sciences.
+
+## Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
+  "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
+  "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+## Nobel Prizes
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
+  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+) %>%
+  brief_entries(
+    glue::glue("Nobel Prize in {Type}"),
+    Year,
+    Desc
+  )
+```
+
+## Publications
+
+```{r}
+library(dplyr)
+knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
