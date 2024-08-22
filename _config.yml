@@ -19,8 +19,8 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "까요태 블로그"
 title_separator          : "|"
-subtitle                 : "good luck"
-name                     : "Kkayotae"
+subtitle                 : "Good Luck"
+name                     : "KKayotae"
 description              : "까요태 블로그 입니다."
 url                      : "https://kkayotae.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kkayotae"
+  name             : "KKayotae"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "까요태 블로그 입니다."
   location         : "South Korea"
