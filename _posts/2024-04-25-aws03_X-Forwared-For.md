@@ -9,8 +9,6 @@ post-header: false
 
 ---
 
-# X-Forwared-For
-
 ### X-Forwared-For 헤더
 
 단순히 포트만 열어두고 Application 서비스를 올리는 경우가 아닌 NGINX 및 AWS CloudFront 또는 Application Load Balancer 같이 앞단에 프록시 서버를 두는 경우가 있다.

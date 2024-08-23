@@ -9,8 +9,6 @@ post-header: false
 
 ---
 
-# AWS VPC와 Public,Private Subnet 생성
-
 ## 구축 순서
 
 VPC 생성 → 서브넷 생성 → 인터넷 게이트웨이 생성 → 퍼블릭 라우팅 → 라우팅 테이블 생성 및 설정
