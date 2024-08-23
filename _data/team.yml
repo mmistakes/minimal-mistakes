@@ -25,7 +25,14 @@
       email: "rgs2151 [at] columbia.edu"
       bio: "Rudra received his BEng in Information Technology from the University of Mumbai in 2022. He then pursued an MS in Biomedical Engineering at Columbia University, graduating in 2024. Throughout his time at Columbia, Rudra worked closely with Nuttida, focusing on developing explainable machine-learning methods to model the dynamics of human perceptual decision-making. His research interests span representational similarity analysis, Bayesian inference, and dimensionality reduction techniques. After graduating, Rudra joined Nuttida's lab full-time as a Research Analyst, continuing his work on unraveling the neural mechanisms underlying higher cognitive functions through computational modeling and analysis of human electrophysiological data. Beyond academia, he loves to discuss startups, movies, and Dota2."
       avatar: "/assets/images/people/rudra.jpg"
-    
+
+    - name: "Siddhant Iyer"
+      title: false
+      position: "PhD Student in Neurobiology & Behavior"
+      email: "si2442 [at] columbia.edu"
+      bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At the Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
+      avatar: "/assets/images/people/sid.jpg"
+      
     - name: "Zelin Yu"
       title: false
       position: "PhD Student in Electrical Engineering"
@@ -39,10 +46,3 @@
       email: "salma.elhassa [at] columbia.edu"
       bio: "Salma received her BS in Biology Bioinformatics from CUNY Hunter College in 2022. During her undergraduate studies, she worked in the lab of Eric Nestler at Icahn School of Medicine Mount Sinai. Salma then took part in the NIH Postbaccalaureate Research Education Program as a research scholar at Baylor College of Medicine in Kelly Bijanki’s lab and in collaboration with Sameer Sheth, where she studied the change in depression symptom severity of inpatient deep brain stimulation treatment. Currently, Salma is interested in exploring the neural mechanisms of perceptual and cognitive flexibility. Her project leverages single-neuron recordings in humans with methods from statistics and computational neuroscience. Outside the lab she enjoys reading, writing creative pieces, and exploring places in her hometown in Queens."
       avatar: "/assets/images/people/salma.jpg"
-
-    - name: "Siddhant Iyer"
-      title: false
-      position: "PhD Student in Neurobiology & Behavior"
-      email: "si2442 [at] columbia.edu"
-      bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At the Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
-      avatar: "/assets/images/people/sid.jpg"
