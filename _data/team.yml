@@ -21,10 +21,17 @@
 
     - name: "Rudramani Singha"
       title: false
-      position: "Research Analyst"
+      position: "Research Technician"
       email: "rgs2151 [at] columbia.edu"
       bio: "Rudra received his BEng in Information Technology from the University of Mumbai in 2022. He then pursued an MS in Biomedical Engineering at Columbia University, graduating in 2024. Throughout his time at Columbia, Rudra worked closely with Nuttida, focusing on developing explainable machine-learning methods to model the dynamics of human perceptual decision-making. His research interests span representational similarity analysis, Bayesian inference, and dimensionality reduction techniques. After graduating, Rudra joined Nuttida's lab full-time as a Research Analyst, continuing his work on unraveling the neural mechanisms underlying higher cognitive functions through computational modeling and analysis of human electrophysiological data. Beyond academia, he loves to discuss startups, movies, and Dota2."
       avatar: "/assets/images/people/rudra.jpg"
+      
+    - name: "Zelin Yu"
+      title: false
+      position: "PhD Student in Electrical Engineering"
+      email: "zy2489 [at] columbia.edu"
+      bio: "Zelin received her BS in Electronic Information Engineering from Wuhan University in 2021. Following that, she received her MS in Electrical Engineering from Columbia University in 2022. Previous to joining Nuttida lab, Zelin worked in the lab of Jennifer Gelinas and Dion Khodagholy, focusing on identifying electrophysiological markers of epileptic network progression and memory impairment as a comorbidity. Currently, Zelin is excited to investigate how the human cortex simultaneously handles multiple complex computations at the single-neuron level and circuit levels. Besides academics, she enjoys running in Central Park and playing video games."
+      avatar: "/assets/images/people/zelin.jpg"
 
     - name: "Siddhant Iyer"
       title: false
@@ -32,13 +39,6 @@
       email: "si2442 [at] columbia.edu"
       bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
       avatar: "/assets/images/people/sid.jpg"
-      
-    - name: "Zelin Yu"
-      title: false
-      position: "PhD Student in Electrical Engineering"
-      email: "zy2489 [at] columbia.edu"
-      bio: "Zelin received her BS in Electronic Information Engineering from Wuhan University in 2021. Following that, she received her MS in Electrical Engineering from Columbia University in 2022. Previous to joining the Nuttida lab, Zelin worked in the lab of Jennifer Gelinas and Dion Khodagholy, focusing on identifying electrophysiological markers of epileptic network progression and memory impairment as a comorbidity. Currently, Zelin is excited to investigate how the human cortex simultaneously handles multiple complex computations at the single-neuron level and circuit levels. Besides academics, she enjoys running in Central Park and playing video games."
-      avatar: "/assets/images/people/zelin.jpg"
     
     - name: "Salma Elhassa"
       title: false
