@@ -30,7 +30,7 @@
       title: false
       position: "PhD Student in Neurobiology & Behavior"
       email: "si2442 [at] columbia.edu"
-      bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At the Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
+      bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
       avatar: "/assets/images/people/sid.jpg"
       
     - name: "Zelin Yu"
@@ -45,4 +45,11 @@
       position: "MS/PhD Student in Biomedical Engineering"
       email: "salma.elhassa [at] columbia.edu"
       bio: "Salma received her BS in Biology Bioinformatics from CUNY Hunter College in 2022. During her undergraduate studies, she worked in the lab of Eric Nestler at Icahn School of Medicine Mount Sinai. Salma then took part in the NIH Postbaccalaureate Research Education Program as a research scholar at Baylor College of Medicine in Kelly Bijanki’s lab and in collaboration with Sameer Sheth, where she studied the change in depression symptom severity of inpatient deep brain stimulation treatment. Currently, Salma is interested in exploring the neural mechanisms of perceptual and cognitive flexibility. Her project leverages single-neuron recordings in humans with methods from statistics and computational neuroscience. Outside the lab she enjoys reading, writing creative pieces, and exploring places in her hometown in Queens."
+      avatar: "/assets/images/people/salma.jpg"
+
+    - name: "Daria Kussovska"
+      title: false
+      position: "MS Student in Biomedical Engineering"
+      email: "salma.elhassa [at] columbia.edu"
+      bio: "Daria completed her BS in Neuroscience at King’s College London in 2023. During her undergraduate studies, she focused on investigating the neural correlates of aggression in Autism Spectrum Disorder (ASD), exploring the effects of Neuroligin-3 mutations in mice and analyzing fMRI data. At Nuttida lab, Daria is excited about uncovering the neural codes that drive efficient encoding and maintenance of short- and long-term memory. She aims to develop a comprehensive, data-driven theory integrating neural geometry and manifold concepts to deepen our understanding of memory dynamics, with potential implications for various disorders. Outside the lab, she has a passion for high-adrenaline sports like skydiving and skiing."
       avatar: "/assets/images/people/salma.jpg"
