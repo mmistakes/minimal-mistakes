@@ -136,17 +136,18 @@ The results demonstrate that encoding Grover’s Search Algorithm with the [[4, 
 
 ## References
 
-1. L. K. Grover, "Quantum mechanics helps in searching for a needle in a haystack," Phys. Rev. Lett., vol. 79, pp. 325-328, Jul. 1997. Available: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.325
-2. A. Chatterjee, S. Das, and S. Ghosh, "Q-Pandora Unboxed: Characterizing Noise Resilience of Quantum Error Correction Codes,", Aug. 2023. Available: https://arxiv.org/pdf/2308.02769
-3. B. Pokharel and D. A. Lidar, "Better-than-classical Grover search via quantum error detection and suppression," npj Quantum Inf., vol. 9, no. 1, Mar. 2023. Available: https://www.nature.com/articles/s41534-023-00794-6
-4. E. G. Rieffel, D. A. Lidar, and A. Y. Matsuura, "Error detection on quantum computers improves accuracy of chemical calculations," arXiv:1910.00129, Oct. 2019. Available: https://arxiv.org/pdf/1910.00129
-5. A. R. Calderbank and P. W. Shor, "Error prevention scheme with four particles," arXiv:quant-ph/9603031, Mar. 1996. Available: https://arxiv.org/pdf/quant-ph/9603031
-6. D. Gottesman, "Protecting quantum memories using coherent parity check codes," arXiv:1709.01866, Sep. 2017. Available: https://arxiv.org/pdf/1709.01866#page=15.52
-7. E. Hu, Z. Li, and R. Shapiro, "Quantum Benchmarking on the [[4,2,2]] Code," Duke University, Department of Mathematics, 2018. Available: https://services.math.duke.edu/DOmath/DOmath2018/hu-li-shapiro.pdf
-8. A. D. Corcoles et al., "Fault-tolerant quantum error detection," Sci. Adv., vol. 3, no. 7, Jul. 2017. Available: https://www.science.org/doi/epdf/10.1126/sciadv.1701074
-9. S. J. Devitt, W. J. Munro, and K. Nemoto, "Quantum error correction for beginners," Rep. Prog. Phys., vol. 76, no. 7, p. 076001, Jun. 2013, doi: 10.1088/0034-4885/76/7/076001. Available: https://arxiv.org/pdf/0905.2794
-10. Z. Cai, R. Babbush, S. C. Benjamin, S. Endo, W. J. Huggins, Y. Li, J. R. McClean, and T. E. O’Brien, "Quantum error mitigation," Rev. Mod. Phys., vol. 95, no. 4, p. 045005, Dec. 2023, doi: 10.1103/revmodphys.95.045005. Available: https://arxiv.org/pdf/2210.00921
+1. L. K. Grover, "Quantum mechanics helps in searching for a needle in a haystack," Phys. Rev. Lett., vol. 79, pp. 325-328, Jul. 1997. Available: <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.325>
+2. A. Chatterjee, S. Das, and S. Ghosh, "Q-Pandora Unboxed: Characterizing Noise Resilience of Quantum Error Correction Codes,", Aug. 2023. Available: <https://arxiv.org/pdf/2308.02769>
+3. B. Pokharel and D. A. Lidar, "Better-than-classical Grover search via quantum error detection and suppression," npj Quantum Inf., vol. 9, no. 1, Mar. 2023. Available: <https://www.nature.com/articles/s41534-023-00794-6>
+4. E. G. Rieffel, D. A. Lidar, and A. Y. Matsuura, "Error detection on quantum computers improves accuracy of chemical calculations," arXiv:1910.00129, Oct. 2019. Available: <https://arxiv.org/pdf/1910.00129>
+5. A. R. Calderbank and P. W. Shor, "Error prevention scheme with four particles," arXiv:quant-ph/9603031, Mar. 1996. Available: <https://arxiv.org/pdf/quant-ph/9603031>
+6. D. Gottesman, "Protecting quantum memories using coherent parity check codes," arXiv:1709.01866, Sep. 2017. Available: <https://arxiv.org/pdf/1709.01866#page=15.52>
+7. E. Hu, Z. Li, and R. Shapiro, "Quantum Benchmarking on the [[4,2,2]] Code," Duke University, Department of Mathematics, 2018. Available: <https://services.math.duke.edu/DOmath/DOmath2018/hu-li-shapiro.pdf>
+8. A. D. Corcoles et al., "Fault-tolerant quantum error detection," Sci. Adv., vol. 3, no. 7, Jul. 2017. Available: <https://www.science.org/doi/epdf/10.1126/sciadv.1701074>
+9. S. J. Devitt, W. J. Munro, and K. Nemoto, "Quantum error correction for beginners," Rep. Prog. Phys., vol. 76, no. 7, p. 076001, Jun. 2013, doi: 10.1088/0034-4885/76/7/076001. Available: <https://arxiv.org/pdf/0905.2794>
+10. Z. Cai, R. Babbush, S. C. Benjamin, S. Endo, W. J. Huggins, Y. Li, J. R. McClean, and T. E. O’Brien, "Quantum error mitigation," Rev. Mod. Phys., vol. 95, no. 4, p. 045005, Dec. 2023, doi: 10.1103/revmodphys.95.045005. Available: <https://arxiv.org/pdf/2210.00921>
 
 ## Give feedback
 
 Feedback is greatly appreciated! You can send feedback directly to [fiqci-feedback@postit.csc.fi](mailto:fiqci-feedback@postit.csc.fi).
+
