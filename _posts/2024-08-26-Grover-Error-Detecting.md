@@ -1,5 +1,5 @@
 ---
-title: 'Quadratic Speedup Search Algorithm With [[4, 2, 2]] Quantum Error Detecting code'
+title: 'Quadratic Speedup Search Algorithm with [[4, 2, 2]] Quantum Error Detecting Code'
 date: 2024-08-26
 permalink: /_posts/2024-08-26-Grover-Error-Detecting/
 header:
