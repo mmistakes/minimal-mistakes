@@ -1,5 +1,5 @@
 ---
-title: 'Quantum circuit-knitting On FiQCI'
+title: 'Quantum Circuit-Knitting on FiQCI'
 date: 2024-08-27
 permalink: /_posts/2024-08-27-Circuit_Knitting_FiQCI/
 header:
