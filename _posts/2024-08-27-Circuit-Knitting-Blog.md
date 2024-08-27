@@ -19,7 +19,7 @@ tags:
 
 ![Simple visualization of circuit knitting](/assets/images/Circuit-Knitting-Blog/circuit-knitting-simple-visual.png)
 
-This blog will focus on a form of circuit knitting known as wire-cutting with local operations. For those interested in other forms of circuit knitting check out [gate-cuts](https://arxiv.org/abs/1909.07534) and [cutting with classical communication](http://arxiv.org/abs/2205.00016). Wire-cutting means that a large quantum circuit is split into subcircuits by "cutting" a wire. Local operations means that there is no communication allowed between the formed subcircuits. Wire-cutting was chosen since it is the most viable circuit knitting method for currently existing hardware, requiring no classical communication between QPUs, reset gates, or mid-circuit measurements. We perform wire-cuts with a Python package, [QCut](https://github.com/jooniv/QCut), built on top of Qiskit. QCut was built for performing wire-cuts on real hardware connected to FiQCI as a part of CSC's summer trainee program. This, together with classical computing power provided by the LUMI supercomputer enhances the ability to investigate the performance of large variational quantum algorithms (VQAs) through FiQCI. VQAs can be used, for example, for solving problems in chemistry, optimization, materials science, and machine learning. 
+This blog will focus on a form of circuit knitting known as wire-cutting with local operations. For those interested in other forms of circuit knitting check out [gate-cuts](https://arxiv.org/abs/1909.07534) and [cutting with classical communication](https://arxiv.org/abs/2205.00016). Wire-cutting means that a large quantum circuit is split into subcircuits by "cutting" a wire. Local operations means that there is no communication allowed between the formed subcircuits. Wire-cutting was chosen since it is the most viable circuit knitting method for currently existing hardware, requiring no classical communication between QPUs, reset gates, or mid-circuit measurements. We perform wire-cuts with a Python package, [QCut](https://github.com/jooniv/QCut), built on top of Qiskit. QCut was built for performing wire-cuts on real hardware connected to FiQCI as a part of CSC's summer trainee program. This, together with classical computing power provided by the LUMI supercomputer enhances the ability to investigate the performance of large variational quantum algorithms (VQAs) through FiQCI. VQAs can be used, for example, for solving problems in chemistry, optimization, materials science, and machine learning. 
 
 ## What and why
 
@@ -29,7 +29,7 @@ Essentially wire-cutting is exactly what the name indicates. It splits a circuit
 
 The main motivation behind wire-cutting (and other forms of circuit knitting) is increasing the number of available qubits <a href="#references">[1]</a> by instead of requiring larger quantum computers, introducing the concept of distributed quantum computing. In distributed quantum computing a quantum circuit too large for any single quantum computer to execute can be cut into multiple pieces. The resulting subcircuits can then be executed in parallel on multiple separate quantum computers, or, of course, sequentially on a single quantum computer.
 
-The performance of wire-cutting is tied to the quality of the quantum hardware. Even on currently available NISQ devices, wire-cutting is showing promising results. Here, we present a simple example circuit where the result obtained on a real quantum computer using wire-cutting achieves better fidelities than the same quantum computer can achieve by just running the circuit as a whole. In addition, we use a QAOA on a noisy simulator to demonstrate that even on NISQ devices, wire-cutting can improve results for real-world problems.
+The performance of wire-cutting is tied to the quality of the quantum hardware. Even on currently available NISQ devices, wire-cutting is showing promising results. Here, we present a simple example circuit where the result obtained on a real quantum computer using wire-cutting achieves better fidelities than the same quantum computer can achieve by just running the circuit as a whole. In addition, we use a Quantum Approximate Optimization Algorithm (QAOA) on a noisy simulator to demonstrate that even on NISQ devices, wire-cutting can improve results for real-world problems.
 
 ## Theory of wire-cutting
 
@@ -86,7 +86,7 @@ and the operations $O_i$ and $\rho_i$ can be given as <a href="#references">[4]<
 
 *An important point about notation*: $ \rho_i $ are a density matrices corresponding to a state to be prepared and $ O_i $ are basis measurements, sets of operations transforming the state from one basis to another and measuring it. The identity basis here means that measurement will always yield the zero state $ \ket{0} $.
 
-The QPD contains two types of operations. Basis measurements and state initializations. The basis measurements are inserted at the cut location and the state initializations to the beginning of the new qubit wire. For example, let's say we have a three-qubit circuit with a Hadamard and two cnots that we want to cut from between the cnots to get two two-qubit subcircuits.
+The QPD contains two types of operations. Basis measurements and state initializations. The basis measurements are inserted at the cut location and the state initializations to the beginning of the new qubit wire. For example, let's say we have a three-qubit circuit with a Hadamard and two CNOTs that we want to cut from between the CNOTs to get two two-qubit subcircuits.
 
 <a id="examplecircuit"></a>
 
@@ -160,7 +160,7 @@ Circuit knitting is a rather new tool. Potential applications for a distributed 
 
 ## QAOA max-cut with QCut
 
-QAOA is a quantum approximation algorithm for solving combinatorial problems by optimizing some circuit parameters to obtain a minimum value for a problem-specific cost function <a href="#references">[6]</a>. The objective of the Max_Cut problem is to find a way to partition a graph into two separate subgraphs by cutting as many vertices as possible <a href="#references">[7]</a>. It has applications for example in machine learning, circuit design and statistical physics <a href="#references">[8]</a> <a href="#references">[9]</a>.
+QAOA is a quantum approximation algorithm for solving combinatorial problems by optimizing some circuit parameters to obtain a minimum value for a problem-specific cost function <a href="#references">[6]</a>. The objective of the Max-Cut problem is to find a way to partition a graph into two separate subgraphs by cutting as many vertices as possible <a href="#references">[7]</a>. It has applications for example in machine learning, circuit design and statistical physics <a href="#references">[8]</a> <a href="#references">[9]</a>.
 
 Now let's say we have a simple graph that we wish to solve the Max-Cut problem for using a QAOA.
 
