@@ -1,7 +1,7 @@
 ---
 layout: single
 title: '[Spring] Spring MVC Framework와 Dispatcher-Servlet 이해하기'
-categories: Spring
+categories: Backend
 tag: [JAVA, Spring]
 toc: true 
 author_profile: false
