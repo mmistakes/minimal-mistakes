@@ -1,7 +1,7 @@
 ---
 layout: single
 title: '[Spring] Jasypt를 이용해 암호화 기능 적용 후 배포하기'
-categories: SpringBoot
+categories: Backend
 tag: [Spring, SpringBoot]
 toc: true 
 author_profile: false

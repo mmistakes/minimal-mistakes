@@ -1,7 +1,7 @@
 ---
 layout: single
 title: '[Spring] Spring Security 흐름 이해하기'
-categories: Spring
+categories: Backend
 tag: [Spring]
 toc: true 
 author_profile: false

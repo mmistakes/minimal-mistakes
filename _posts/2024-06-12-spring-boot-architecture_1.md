@@ -1,7 +1,7 @@
 ---
 layout: single
 title: '[Network] Proxy Server 란?'
-categories: Network
+categories: Backend
 tag: [server]
 toc: true 
 author_profile: false

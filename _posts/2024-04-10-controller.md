@@ -1,8 +1,8 @@
 ---
 layout: single
 title: '[Spring] @Controller와 @RestController 제대로 알기'
-categories: JAVA
-tag: [JAVA, Spring]
+categories: Backend
+tag: [Spring, SpringBoot]
 toc: true 
 author_profile: false
 sidebar:
