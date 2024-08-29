@@ -1,7 +1,7 @@
 ---
 layout: single
 title: '[Spring] SpringBoot 제대로 알기 - IoC(Inversion of Control) 와 DI (Dependency Injection) '
-categories: SpringBoot
+categories: Backend
 tag: [Spring, SpringBoot]
 toc: true 
 author_profile: false

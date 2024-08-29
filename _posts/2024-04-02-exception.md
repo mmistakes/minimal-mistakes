@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '[JAVA][Spring] Exception Handling'
+title: '[JAVA] Exception Handling'
 categories: JAVA
 tag: [JAVA]
 toc: true 

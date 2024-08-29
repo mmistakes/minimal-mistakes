@@ -1,7 +1,7 @@
 ---
 layout: single
 title: '[JS] 바닐라 자비스크립트와 DOM'
-categories: Javascript
+categories: Frontend
 tag: [Javascript]
 toc: true 
 author_profile: false
