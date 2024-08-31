@@ -8,19 +8,16 @@ category: React Query
 
 # React Query란
 
-프론트 개발을 하며 API 호출 이후에 데이터를 효과적으로 관리하기 위한 방법을 찾던 중, React Query를 찾았다.
-이에 대해 몇 번 스쳐들었을 뿐이기에 이번 포스트를 통해 정확히 어떤 개념인지 알아보자.
+프론트엔드 개발을 하면서 API 호출 후 데이터를 효과적으로 관리할 방법을 찾던 중, React Query를 알게 되었다. 이전에도 몇 번 들어본 적은 있었지만, 이번 기회를 통해 React Query가 정확히 어떤 개념인지 정리해보았다.
 
 <!-- 이미지 -->
 ![ReactQuery](../assets/img/ReactQuery.png)
 
-[공식문서](https://tanstack.com/query/v5/docs/framework/react/overview)에선 React Query를 다음과 같이 설명하고 있다.
 
-> React Query는 fetching, caching, 서버 데이터와의 동기화를 지원하는 라이브러리
+[공식문서](https://tanstack.com/query/v5/docs/framework/react/overview)에 따르면, React Query는 데이터를 가져오고(fetching), 캐싱하며, 서버 데이터와의 동기화를 지원하는 라이브러리라고 설명하고 있다.
 
-즉, React 환경에서 서버와 지속적으로 동기화 하도록 지원한다.
+즉, React 환경에서 서버와의 데이터 동기화를 지속적으로 유지할 수 있도록 돕는 도구다. 이 라이브러리는 비동기 데이터를 불러오는 과정에서 발생할 수 있는 다양한 문제를 해결하는 데 중점을 두고 있다. 이제, 이러한 문제들이 무엇이며, React Query가 이를 어떻게 해결하는지 구체적으로 살펴보자.
 
-비동기 데이터를 불러오는 과정에서 발생하는 문제를 해결하는 건데, 어떤 문제들을 어떻게 해결하는지 확인해보자.
 
 # 1. 캐싱
 
