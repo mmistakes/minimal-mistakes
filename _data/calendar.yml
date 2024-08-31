@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Sommerferien",
-    "title": "Sommerferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=c21qaTFvNnEzdGFrM3JhdDRwc3ZvcW9vYWcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-07-18",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-08-31",
-      "date_time": null
-    },
-    "created": "2024-06-16T08:38:07.000Z",
-    "updated": "2024-06-16T08:38:07.779Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Schultag nach den Sommerferien",
     "title": "1. Schultag nach den Sommerferien",
     "excerpt": null,
@@ -32,6 +15,57 @@
     },
     "created": "2024-06-16T08:39:05.000Z",
     "updated": "2024-06-16T08:39:05.009Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4b - Ausflug Spielplatz am Cosmarweg",
+    "title": "4b - Ausflug Spielplatz am Cosmarweg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHVoN2c5c2hpajlpM3BnN3EzMWRsbnRvNmsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-04T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-04T12:45:00+02:00"
+    },
+    "created": "2024-08-30T06:33:23.000Z",
+    "updated": "2024-08-30T07:19:38.625Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Harry-Potter-Spielplatz (Innsbrucker Platz)",
+    "title": "6b - Harry-Potter-Spielplatz (Innsbrucker Platz)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3RiOWVpdWZoM205ZXJkamxydWFjb2g1aDcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-05T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-05T12:45:00+02:00"
+    },
+    "created": "2024-08-30T07:21:44.000Z",
+    "updated": "2024-08-30T07:21:44.136Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4c - Ausflug Spielplatz am Cosmarweg",
+    "title": "4c - Ausflug Spielplatz am Cosmarweg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M3Q4cnRnb2NsZm4ybXN0YWJwNzAwMGNzZ20gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-05T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-05T12:45:00+02:00"
+    },
+    "created": "2024-08-30T07:20:23.000Z",
+    "updated": "2024-08-30T07:20:23.662Z"
   },
   {
     "image_path": null,
