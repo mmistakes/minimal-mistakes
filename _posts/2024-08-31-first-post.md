@@ -8,4 +8,4 @@ title: "첫 블로그 포스팅입니다."
 앞으로 열심히 해보겠습니다.
 
 
-![alt text](image.png)
+![Dobby](../images/Dobby.png)
