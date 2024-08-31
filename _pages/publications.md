@@ -26,7 +26,7 @@ permalink: /publications/
 
 * <a href="" style="text-decoration:none;color:navy">Intentionally Unintentional Speech: Why Generative AI Models Are Not Protected by the First Amendment</a>              
 <span style="font-size:0.75em;">David Atkinson, Jena D. Hwang, **Jacob Morrison**</span><br>
-<span style="font-size:0.75em;">*under review* </span>
+<span style="font-size:0.75em;">*First Amendment Law Review (University of North Carolina)* </span>
 
 * <a href="" style="text-decoration:none;color:navy">Unsettled Law in the Age of Generative AI: Time to Generate New Approaches?</a>              
 <span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
