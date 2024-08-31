@@ -5,6 +5,7 @@ tags:
   - learning
   - GenAI
   - ChatGPT
+  - llm
 excerpt: Some quick notes - it's a tool, not a oracle 
 ---
 
