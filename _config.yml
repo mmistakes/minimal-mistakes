@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Keib's Blog"
+title                    : "Keib's Blogg"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
