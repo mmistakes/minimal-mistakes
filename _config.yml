@@ -168,6 +168,10 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/morayo.ibidunniportfolio/"
       target: _blank
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/moary0"
+      target: _blank
 
 
 # Reading Files
