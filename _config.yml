@@ -116,11 +116,11 @@ author:
   name             : "Morayo Omotesho"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "PR & Marketing Consultant."
-  location         : "London"
+  location         : "London, UK"
   email            : "morayoofficial559@gmail.com"
   linkedin         : "moray0"
-  instagram        : "morayo.ibidunniportfolio"
-  # github           : "morayoomotesho"
+  Instagram        : "morayo.ibidunniportfolio"
+  github           : "morayoomotesho"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -141,11 +141,7 @@ author:
       target: _blank
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/morayo.ibidunniportfolio/"
-      target: _blank
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      # url: "https://www.linkedin.com/in/moary0"
+      url: "https://www.instagram.com/morayo.ibidunniportfolio/"
       target: _blank
 
 # Site Footer
@@ -168,14 +164,11 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-   # - label: "Instagram"
-   #   icon: "fab fa-fw fa-instagram"
-    #  url: "https://www.instagram.com/morayo.ibidunniportfolio/"
-    #  target: _blank
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/moary0"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/morayo.ibidunniportfolio/"
       target: _blank
+
 
 
 # Reading Files
