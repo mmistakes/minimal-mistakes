@@ -141,11 +141,11 @@ author:
       target: _blank
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/morayo.ibidunniportfolio/"
+      # url: "https://www.instagram.com/morayo.ibidunniportfolio/"
       target: _blank
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/moary0"
+      # url: "https://www.linkedin.com/in/moary0"
       target: _blank
 
 # Site Footer
