@@ -120,7 +120,7 @@ author:
   email            : "morayoofficial559@gmail.com"
   linkedin         : "moray0"
   instagram        : "morayo.ibidunniportfolio"
-  github           : "morayoomotesho"
+  # github           : "morayoomotesho"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
