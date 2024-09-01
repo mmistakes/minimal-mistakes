@@ -1,0 +1,28 @@
+# /_data/authors.yml
+
+Morayo Omotesho:
+  name        : "Morayo Omotesho"
+  bio         : "PR & Marketing Consultant."
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:morayoofficial559@gmail.com"
+    #- label: "Website"
+     # icon: "fas fa-fw fa-link"
+     # url: "https://thewhip.com"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/morayo.ibidunniportfolio/"
+
+Arel Akaunu:
+  name        : "Arel Akaunu"
+  bio         : "Quant Dev."
+  avatar      : "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:arel.akaunu@outlook.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ArelAkaunu"
