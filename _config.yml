@@ -119,7 +119,7 @@ author:
   location         : "London, UK"
   email            : "morayoofficial559@gmail.com"
   linkedin         : "moray0"
-  Instagram        : "morayo.ibidunniportfolio"
+  instagram        : "morayo.ibidunniportfolio"
   github           : "morayoomotesho"
   links:
     - label: "Email"
@@ -143,6 +143,10 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/morayo.ibidunniportfolio/"
       target: _blank
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/moary0"
+      target: _blank
 
 # Site Footer
 footer:
@@ -164,10 +168,10 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/morayo.ibidunniportfolio/"
-      target: _blank
+   # - label: "Instagram"
+   #   icon: "fab fa-fw fa-instagram"
+    #  url: "https://www.instagram.com/morayo.ibidunniportfolio/"
+    #  target: _blank
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/moary0"
