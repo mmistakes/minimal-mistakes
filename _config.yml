@@ -113,15 +113,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Morayo Omotesho"
+  avatar           : "/assets/images/bio-photo.jpeg"
+  bio              : "PR & Marketing Consultant."
+  location         : "London, UK"
+  email            : "morayoofficial559@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+        url: "mailto:morayoofficial559@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -136,7 +136,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+        url: "https://www.instagram.com/morayo.ibidunniportfolio/"
 
 # Site Footer
 footer:
