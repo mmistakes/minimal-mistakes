@@ -69,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "Elternabend A8",
+    "title": "Elternabend A8",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=dG9ydmJ0YjZwNXFuYmppZDZ0aGFuamZvdG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-18T17:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-18T18:30:00+02:00"
+    },
+    "created": "2024-09-01T10:37:38.000Z",
+    "updated": "2024-09-01T10:37:38.953Z"
+  },
+  {
+    "image_path": null,
     "alt": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
     "title": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-08-22T20:06:17.000Z",
     "updated": "2024-08-22T20:06:33.128Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. GEV",
-    "title": "1. GEV",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ZHJtaWxuY2QxNXZ1b3I5dW9ncHV2bGZoNjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-10-09T18:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-10-09T19:30:00+02:00"
-    },
-    "created": "2024-08-26T17:33:02.000Z",
-    "updated": "2024-08-26T17:33:02.138Z"
   }
 ]
