@@ -1,20 +1,20 @@
 [
   {
     "image_path": null,
-    "alt": "1. Schultag nach den Sommerferien",
-    "title": "1. Schultag nach den Sommerferien",
+    "alt": "4a - Ausflug Spielplatz am Cosmarweg",
+    "title": "4a - Ausflug Spielplatz am Cosmarweg",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=aTFwZWE0M2QxbWdpMzdzcWxnZDJzOHNiZ2MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NDliOGdqMmRuc3ZsMjB2NGIwdDYzZXVwMTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2024-09-02",
-      "date_time": null
+      "date": null,
+      "date_time": "2024-09-03T09:30:00+02:00"
     },
     "end": {
-      "date": "2024-09-03",
-      "date_time": null
+      "date": null,
+      "date_time": "2024-09-03T12:45:00+02:00"
     },
-    "created": "2024-06-16T08:39:05.000Z",
-    "updated": "2024-06-16T08:39:05.009Z"
+    "created": "2024-09-02T11:51:05.000Z",
+    "updated": "2024-09-02T11:51:05.089Z"
   },
   {
     "image_path": null,
