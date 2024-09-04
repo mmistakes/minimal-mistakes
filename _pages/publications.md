@@ -3,7 +3,7 @@ classes: wide
 layout: single
 author_profile: true
 title: Publications
-date:   2024-03-19 00:00:00 -0800
+date:   2024-09-03 00:00:00 -0800
 permalink: /publications/
 ---   
 
@@ -11,6 +11,10 @@ permalink: /publications/
 
 ***
 ### 2024
+
+* <a href="https://arxiv.org/abs/2409.02060" style="text-decoration:none;color:navy">OLMoE: Open Mixture-of-Experts Language Models</a>              
+<span style="font-size:0.75em;">Niklas Muennighoff, Luca Soldaini, Dirk Groeneveld, Kyle Lo, **Jacob Morrison**, Sewon Min, Weijia Shi, Pete Walsh, Oyvind Tafjord, Nathan Lambert, Yuling Gu, Shane Arora, Akshita Bhagia, Dustin Schwenk, David Wadden, Alexander Wettig, Binyuan Hui, Tim Dettmers, Douwe Kiela, Ali Farhadi, Noah A. Smith, Pang Wei Koh, Amanpreet Singh, Hannaneh Hajishirzi</span><br>
+<span style="font-size:0.75em;">*arXiv preprint* \[[pdf](https://arxiv.org/pdf/2409.02060)\]</span>
 
 * <a href="" style="text-decoration:none;color:navy">Merge to Learn: Efficiently Adding Skills to Language Models with Model Merging</a>              
 <span style="font-size:0.75em;">**Jacob Morrison**, Noah A. Smith, Hannaneh Hajishirzi, Pang Wei Koh, Jesse Dodge, Pradeep Dasigi</span><br>
