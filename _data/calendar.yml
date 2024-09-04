@@ -1,20 +1,37 @@
 [
   {
     "image_path": null,
-    "alt": "4a - Ausflug Spielplatz am Cosmarweg",
-    "title": "4a - Ausflug Spielplatz am Cosmarweg",
+    "alt": "A3 - Spielplatz am Cosmarweg",
+    "title": "A3 - Spielplatz am Cosmarweg",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDliOGdqMmRuc3ZsMjB2NGIwdDYzZXVwMTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=M2xvZjRqamI3ZDRmdmVwMGhqNzk1Z284YmIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-09-03T09:30:00+02:00"
+      "date_time": "2024-09-04T08:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-09-03T12:45:00+02:00"
+      "date_time": "2024-09-04T11:30:00+02:00"
     },
-    "created": "2024-09-02T11:51:05.000Z",
-    "updated": "2024-09-02T11:51:05.089Z"
+    "created": "2024-09-03T12:12:28.000Z",
+    "updated": "2024-09-03T12:12:28.595Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6a - Ausflug Florida-Eis/Spielplatz",
+    "title": "6a - Ausflug Florida-Eis/Spielplatz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWRzMGppOTdmb3Q3YzY2NTh2b25zODJhYTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-04T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-04T11:30:00+02:00"
+    },
+    "created": "2024-09-03T12:11:41.000Z",
+    "updated": "2024-09-03T12:11:41.963Z"
   },
   {
     "image_path": null,
@@ -52,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "6c -Ausflug Rathaus Spandau",
+    "title": "6c -Ausflug Rathaus Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NW5kZmVwaXE3YWFkdWRoNzRjYnNndWM2NWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-05T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-05T12:30:00+02:00"
+    },
+    "created": "2024-09-03T12:13:21.000Z",
+    "updated": "2024-09-03T12:13:21.259Z"
+  },
+  {
+    "image_path": null,
     "alt": "4c - Ausflug Spielplatz am Cosmarweg",
     "title": "4c - Ausflug Spielplatz am Cosmarweg",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2024-08-30T07:20:23.000Z",
     "updated": "2024-08-30T07:20:23.662Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend A8",
-    "title": "Elternabend A8",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=dG9ydmJ0YjZwNXFuYmppZDZ0aGFuamZvdG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-09-18T17:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-09-18T18:30:00+02:00"
-    },
-    "created": "2024-09-01T10:37:38.000Z",
-    "updated": "2024-09-01T10:37:38.953Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
-    "title": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzE1b2V1aHBsMWVlZ2tlZWpwZWVjNmRpN28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2024-10-07",
-      "date_time": null
-    },
-    "end": {
-      "date": "2024-10-08",
-      "date_time": null
-    },
-    "created": "2024-08-22T20:06:17.000Z",
-    "updated": "2024-08-22T20:06:33.128Z"
   }
 ]
