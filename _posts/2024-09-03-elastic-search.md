@@ -11,21 +11,18 @@ published: true
 
 ---
 
-현재 부동산 실거래 매매가 데이터를 가지고 프로젝트 진행 중 Elastic Search를 활용하여 데이터 검색 및 분석 기능을 구현하기로했다.
+현재 진행 중인 부동산 실거래 매매가 데이터 프로젝트에서 Elasticsearch를 활용해 데이터 검색 및 분석 기능을 구현하고자 한다.
 
-Docker를 이용해 엘라스틱 서치 이미지를 다운받고 파이썬을 이용해 데이터를 다룰 예정이다. 
+이 프로젝트에서는 Docker를 사용하여 Elasticsearch 이미지를 다운로드하고, Python을 이용해 데이터를 처리할 예정이다. 
 
-현재 부동산 실거래 매매가 데이터는 [국토교통부 실거래공개시스템](https://rt.molit.go.kr/pt/xls/xls.do?mobileAt=) 에서 제공해주는 csv 파일을 이용한다. 
-
-Selenium을 이용하여 CSV 파일 다운로드 받은 후 Elasticsearch 클라이언트를 설정하고, 전처리된 데이터를 Elasticsearch에 인덱싱할 생각이다.
-
+실거래 매매가 데이터는  [국토교통부 실거래공개시스템](https://rt.molit.go.kr/pt/xls/xls.do?mobileAt=)에서 제공하는 CSV 파일을 활용한다. 전체적인 흐름은  Selenium을 사용해 CSV 파일을 자동으로 다운로드한 후, Elasticsearch 클라이언트를 설정하고, 전처리된 데이터를 Elasticsearch에 인덱싱할 계획이다.
 
 ## 작업환경
 
-- Window Home  11 
-- Python : 3.10
-- elastic search : 8.15.0
-- docker : 25.0.3
+- 운영체제: Windows 11 Home
+- Python 버전: 3.10
+- Elasticsearch 버전: 8.15.0
+- Docker 버전: 27.1.1
 
 ## Docker를 이용한 Elasticsearch 설치
 
