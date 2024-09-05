@@ -233,7 +233,7 @@ GameObject director = GameObject.Find("GameDirector");
 	2) GetComponent 메서드로 오브젝트 컴포넌트 얻기*/
 ```
 
-#닷지 게임
+닷지 게임
 
 ```csharp
 Rigidbody playerRigidbody;	//이동에 사용할 리지드바디 컴포넌트
