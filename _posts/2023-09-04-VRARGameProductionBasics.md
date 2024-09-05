@@ -33,10 +33,12 @@ BxA = -c 둘이 다르다
 
 normalized하는 이유 : 방향 벡터로 동일한 방향만큼으로 만들기 위해(루트3을곱합), 정규화한다고 한다.
 
+```csharp
 Vector3 a = new Vector3(0, 0, 1);
 Vector3 b = new Vector3(1, 0, 0);
 float c = Vector3.Dot(a, b);
 Vector3 d = Vector3.Cross(a, b);
+```
 
 c는 0이다
 d값은 : y축 (0,1,0)
@@ -98,13 +100,14 @@ this.rotSpeed *= 0.96f;
 
 점프시키기
 
+```csharp
 Rigidbody myRigidbody;
 myRigidbody =  GetComponent<Rigidbody>();
 myRigidbody.addForce(0, 500, 0);
-
+```
 
 마우스 이동시키기
-
+```csharp
 Vector2 startPos;
 float speed = 0;
 void Update(){
@@ -118,10 +121,10 @@ void Update(){
 	}
 	transtorm.Translate(this.speed, 0,0);
 	this.speed *= 0.98f;
-
+```
 
 텍스트 연동
-
+```csharp
 GameObject car;
 GameObject flag;
 GameObject distance;
@@ -143,9 +146,10 @@ void Update(){
 	else
 		this.distance.GetComponent<Text>().text = "GG";
 }
+```
 
 오디오 연동
-
+```csharp
 AudioSource audio;
 void Start(){
 	audio = GetComponent<AudioSource>();
@@ -156,30 +160,30 @@ if(this.speed>0)
 public void Restart(){
 	transform.position = new Vector3(-7, -3.7f, 0);
 }
-
+```
 한 칸씩 이동하기
-
+```csharp
 if(Input.GetKeyDown(KeyCode.LeftArrow))
 	transform.Translate(-1, 0, 0);
 if(Input.GetKeyDown(KeyCode.RightArrow))
 	transform.Translate(1, 0, 0);
-
+```
 
 화살 떨어지기 and 제거
-
+```csharp
 void Updata(){
 	transform.Translate(0, -0.1f, 0);//프레임마다 등속으로 낙하
 	if(transform.position.y <-5.0f)//화면 밖으로나가면 옵젝소멸
 		Destroy(gameObject);
 }
-
+```
 간단한 충돌 판정
 - 원의 중심 좌표와 반지름을 알면 충돌을 간단히 판별 가능
 - 두 오브젝트의 중심 사이의 거리
 - d > r1 + r2	==> 충돌하지 않음
 - d  <  r1 + r2  ==> 충돌
 
-  
+```csharp
 GamObject player;
 void Start(){
 	this.player = GameObject.Find("player");
@@ -194,12 +198,12 @@ void Update(){
 	if(d < r1 + r2)
 		Destroy(gameObject); // 충돌인 경우 화살을 소멸
 }
+```
 
+화살 제너레이터
 
-/*화살 제너레이터
-	ㄴ 프리팹 : 설계도, 같은 오브젝트를 많이 만들고 싶을때 주로 사용
-	ㄴ 프리팹만고치면 수정이 완료*/
- 
+프리팹 : 설계도, 같은 오브젝트를 많이 만들고 싶을때 주로 사용
+ ```csharp
 public GameObject arrowPrefab; // 드래그엔 드롭으로만 설정 가능
 float spac =1.0f;		// 때문에 public 으로 해야함
 float delta = 0;
@@ -210,10 +214,11 @@ void Update(){
 	   GameObject go = Instantiate(arrowPrefab) as GamObject
 	     int px = Random.Range(-6, 7);
 	   go.transform.position = new Vector3(px, 7, 0);
-
+```
 
 UI HP감독 스크립트
 
+```csharp
 using UnityEngine.UI //UI를 사용하기 위해 필요
 GamObject hpGauge; // 우측 상단에 놓아던 hp게이지를 가르킬 포인터
 void Start()
@@ -226,11 +231,11 @@ GameObject director = GameObject.Find("GameDirector");
 /*자신 이외의 오브젝트 컴포넌트에 접근하는 방법
 	1) Find 메서드로 오브젝트 찾기
 	2) GetComponent 메서드로 오브젝트 컴포넌트 얻기*/
-
+```
 
 #닷지 게임
 
-
+```csharp
 Rigidbody playerRigidbody;	//이동에 사용할 리지드바디 컴포넌트
 public float speed = 8;		//이동속도
 void Start(){
@@ -249,6 +254,7 @@ void Update(){
 public void Die(){
 	gmaobject.SetActive(flase);
 }
+```
 
 GetAxis() 메서드
 - 어떤 축 에 대한 입력 값을 숫자로 반환하는 메서드
