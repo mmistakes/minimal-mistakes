@@ -56,11 +56,13 @@ d값은 : y축 (0,1,0)
 
 룰렛 회전시키기
 
+```csharp
 if(Input.GetMouseButtonDown(0)){
 	this.rotspeed =10;
 }
 transtorm.Rotate(0,0,this.rotSpeed);
 this.rotSpeed *= 0.96f;
+```
 
 상속과 재사용
 - 게임 엔진의 코드를 '재사용(상속)'하므로 생산성이 올라감
