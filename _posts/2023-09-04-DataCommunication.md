@@ -65,3 +65,15 @@ title:  "데이터 통신"
 ![4](https://github.com/user-attachments/assets/801012b6-00c4-4b71-8ea5-9548d3edbb11)
 ![5](https://github.com/user-attachments/assets/cab3428e-c0e1-4ad5-9a07-fca71a2c5234)
 ![6](https://github.com/user-attachments/assets/1c082f0f-4315-42c7-957c-b384e6b789ca)
+
+
+4장-----------------------근거리 통신망 : LAN
+
+![7](https://github.com/user-attachments/assets/57a22456-d449-4a8f-bccc-e7c5b8564f9f)
+![8](https://github.com/user-attachments/assets/87fa1f1d-4179-4ba1-b80b-5b9913387612)
+
+
+5장-----------------------광역 통신망 : WAN
+
+![10](https://github.com/user-attachments/assets/abf35331-7ad7-4367-8ae5-193631696693)
+![11](https://github.com/user-attachments/assets/3ee01264-777a-4e70-a27e-a971bf433bc5)
