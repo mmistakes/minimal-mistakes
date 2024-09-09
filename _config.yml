@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Jinho"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **Gorgeous** person."
-  location         : "Seoul"
+  bio              : "저는 **멋진** 사람입니다."
+  location         : "Seoul, South Korea"
   email            :
   links:
     - label: "Email"
