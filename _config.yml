@@ -17,8 +17,8 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 # Site Settings
 locale                   : "ko"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "Blog"
+title_separator          : "*"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Choi Sunmi"
 description              : "An amazing website."
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Choi Sunmi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : #"I am an **amazing** person."
+  location         : # "Somewhere"
+  email            : "ebebeb@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
