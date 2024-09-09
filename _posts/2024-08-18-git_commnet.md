@@ -45,3 +45,19 @@ https://help.disqus.com/en/articles/1717111-what-s-a-shortname 여기로 들어�
 
 
 ![image](https://github.com/user-attachments/assets/e3cf922c-482c-4841-a0a5-5052c86a1cbb)
+
+
+찾아보니까 댓글 불러오는 코드는 disqus.html에 등록되어 있었다.
+
+![image](https://github.com/user-attachments/assets/227449f2-1b8e-44a8-86d6-57a5bcb247e8)
+
+이렇게 되있는거 보니까 따로 서버 만들고 스크립트로 댓글같은 정보를 불러와서 사용해도 될꺼 같다는 생각이 들었다.
+
+
+Discourse를 사용하기 위해서는 설정을 discourse로 변경하고 해당 사이트를 참조하라고 나온다 
+
+https://meta.discourse.org/t/embed-discourse-comments-on-another-website-via-javascript/31963
+
+![image](https://github.com/user-attachments/assets/ebe2f9ac-e2af-4f77-9405-891343c6c3a9)
+
+
