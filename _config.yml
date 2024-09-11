@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "Kayser's Finishing move"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "I'm Kayser"
+name                     : "카이접니다."
 description              : "전생했더니 AI 모델이었던 건에 대하여"
 url                      : "https://dorumugs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
