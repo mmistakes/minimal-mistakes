@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Kayser's Finishing move"
+title                    : "Finishing move"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "I'm Kayser"
+name                     : "Kayser"
 description              : "전생했더니 AI 모델이었던 건에 대하여"
 url                      : "https://dorumugs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
