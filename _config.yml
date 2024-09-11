@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/johnwick.png"
   bio              : "카이접니다."
   location         : "대한민국"
-  email            : "dorumugs@gmail.com"
+  email            : #"dorumugs@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
