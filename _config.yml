@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Flooded with Code"
+title                    : "카이저 공책"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "dorumugs"
-description              : "An amazing website."
+name                     : "카이접니다."
+description              : "전생했더니 AI 모델이었던 건에 대하여"
 url                      : "https://dorumugs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,10 +114,10 @@ analytics:
 # Site Author
 author:
   name             : "Kayser"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/johnwick.png"
   bio              : "카이접니다."
-  location         : "Kanye South"
-  email            :
+  location         : "대한민국"
+  email            : "dorumugs@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
