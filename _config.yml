@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "카이저 공책"
+title                    : "Kayser's Finishing move"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "카이접니다."
+name                     : "I'm Kayser"
 description              : "전생했더니 AI 모델이었던 건에 대하여"
 url                      : "https://dorumugs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Kayser"
   avatar           : "/assets/images/johnwick.png"
-  bio              : "카이접니다."
-  location         : "대한민국"
+  bio              : "I'm Kayser"
+  location         : "South Korea"
   email            : #"dorumugs@gmail.com"
   links:
     - label: "Email"
@@ -124,7 +124,7 @@ author:
       url: "mailto:dorumugse@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://dorumugs.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
