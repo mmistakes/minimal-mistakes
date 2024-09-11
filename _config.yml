@@ -21,7 +21,7 @@ title                    : "Finishing move"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Kayser"
-description              : # "전생했더니 AI 모델이었던 건에 대하여"
+description              : "전생했더니 AI 모델이었던 건에 대하여"
 url                      : "https://dorumugs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
