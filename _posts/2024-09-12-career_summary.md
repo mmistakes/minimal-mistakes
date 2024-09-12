@@ -7,9 +7,9 @@ toc: true
 author_profile: true
 ---
 
-## Job Title : Data Specialist 
+# Job Title : Data Specialist 
 
-### Personal Information
+## Personal Information
 
 - Name : 소재현(蘇在賢), Jaehyun So
 - Nickname : Kayser So, dorumugs
@@ -19,7 +19,7 @@ author_profile: true
 
 
 
-### Education
+## Education
 
 - 2018.09 ~ 2020.12  한양대학교(서울) 대학원 컴퓨터공학 석사졸업 (MNA Lab, 조인휘 교수)
 - 2007.07 ~ 2010.02  학점은행제 컴퓨터공학과 편입졸업
@@ -28,7 +28,7 @@ author_profile: true
 
 
 
-### Paper
+## Paper
 
 - 2022년 5월 31일  [그림으로 배우는 딥러닝](https://product.kyobobook.co.kr/detail/S000061352299)  에이콘출판(*교보문고 MD 추천*)
 - 2020년 12월 31일  졸업논문, 전자상거래에서 성별 예측을 위한 앙상블 모델(*MNA Lab, 조인휘 교수*)
@@ -37,13 +37,13 @@ author_profile: true
 
 
 
-### Contest Award
+## Contest Award
 
 - 2020년 12월 3일 대만민국 바로 알리기 AI 공모전 우수상(*과학기술정보통신부*)
 
 
 
-### KeySkill
+## KeySkill
 
 - Machine Learning, Deep Learning, LLM(LangChain), Recommendation System
 - Google Cloud Platform, Hadoop ECO System
@@ -51,8 +51,6 @@ author_profile: true
 - RDBMS, BigQuery, Hive, Elasticsearch
 - Superset, Looker
 - Digital Forensic(Incident Management)
-
-
 
 
 
@@ -66,7 +64,7 @@ author_profile: true
 
 - 이직사유 : 새로운 도전
 
-
+  
 
 **<u>포지션</u>**
 
@@ -277,7 +275,7 @@ author_profile: true
 
 
 
-### AhnlabㅣA-FIRST l 선임연구원
+### Ahnlab
 
 **<u>회사소개</u>** 
 
