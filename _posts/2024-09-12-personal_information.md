@@ -29,10 +29,14 @@ toc: true
 
 # Paper
 
-- 2022년 5월 31일  [그림으로 배우는 딥러닝](https://product.kyobobook.co.kr/detail/S000061352299)  에이콘출판(*교보문고 MD 추천*)
-- 2020년 12월 31일  졸업논문, 전자상거래에서 성별 예측을 위한 앙상블 모델(*MNA Lab, 조인휘 교수*)
-- 2016년 2월 26일  A Proactive Inference Method of Suspicious Domains(*Journal of The Korea Institute of Information Security & Cryptology*)
-- 2015년 10월 9일  Detecting trigger-based behaviors in botnet malware(*Research in Applied Computation Symposium*)
+- [그림으로 배우는 딥러닝](https://product.kyobobook.co.kr/detail/S000061352299)  에이콘출판  
+  (*2022.05.31, 교보문고 MD 추천*)
+-  졸업논문, 전자상거래에서 성별 예측을 위한 앙상블 모델  
+  (*2020.12.31, MNA Lab, 조인휘 교수*)
+- A Proactive Inference Method of Suspicious Domains  
+  (*2016.02.26, Journal of The Korea Institute of Information Security & Cryptology*)
+- Detecting trigger-based behaviors in botnet malware  
+  (*2015.10.09, Research in Applied Computation Symposium*)
 
 <br>
 
