@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Schulwandertag (alle Klassen)",
+    "title": "Schulwandertag (alle Klassen)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2lidWdlOWY2dHAwbThwMWJxaGVwNG82a2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2024-09-12",
+      "date_time": null
+    },
+    "end": {
+      "date": "2024-09-13",
+      "date_time": null
+    },
+    "created": "2024-03-20T11:17:10.000Z",
+    "updated": "2024-09-11T10:02:59.885Z"
+  },
+  {
+    "image_path": null,
     "alt": "Elternabend A8",
     "title": "Elternabend A8",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-09-02T12:11:06.000Z",
     "updated": "2024-09-02T12:11:06.781Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug zur Gartenarbeitsschule ",
-    "title": "A5 - Ausflug zur Gartenarbeitsschule ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHY3MnN1aDB2ZmM0dnVxbWtnMWQ3Z2cxNjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-12-13T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-12-13T13:30:00+01:00"
-    },
-    "created": "2024-09-02T12:11:53.000Z",
-    "updated": "2024-09-02T12:11:53.829Z"
   }
 ]
