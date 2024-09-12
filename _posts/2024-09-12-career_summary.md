@@ -11,15 +11,11 @@ author_profile: true
 
 ### Personal Information
 
-**Name** : 소재현(蘇在賢), Jaehyun So
-
-**Nickname** : Kayser So, dorumugs
-
-**Email** : dorumugs@mail.com
-
-**Birthday** : January 12, 1984
-
-**Gender** : Male 
+- Name : 소재현(蘇在賢), Jaehyun So
+- Nickname : Kayser So, dorumugs
+- Email : dorumugs@mail.com
+- Birthday : January 12, 1984
+- Gender : Male 
 
 
 
@@ -64,7 +60,7 @@ author_profile: true
 
 ### Q10 Technology
 
-<u>**회사소개**</u>
+**<u>회사소개</u>**
 
 - 이커머스, 스타트업 기업 / 직원수 : 600명
 
@@ -81,7 +77,7 @@ author_profile: true
 
 
 
-<u>**주요프로젝트 및 업무**</u> 
+**<u>주요프로젝트 및 업무</u>** 
 
 - **자동 라벨링 프로젝트**
   - **기간**: 2022-01 ~ 현재까지
@@ -189,7 +185,7 @@ author_profile: true
 
 ### Dorumugs Company
 
-<u>**회사소개**</u>
+**<u>회사소개</u>**
 
 - 기업 데이터 분석 및 교육, 프리랜서 / 직원수 : 1명
 
@@ -197,7 +193,7 @@ author_profile: true
 
 
 
-<u>**포지션**</u>
+**<u>포지션</u>**
 
 - **기간** : 2017.09 ~ 2018.11
 - **소속팀** : 분석팀
@@ -205,7 +201,7 @@ author_profile: true
 
 
 
-<u>**주요프로젝트 및 업무**</u>
+**<u>주요프로젝트 및 업무</u>**
 
 - **머신러닝 논문 데이터 분석 및 인사이트 도출**
 
@@ -283,14 +279,14 @@ author_profile: true
 
 ### AhnlabㅣA-FIRST l 선임연구원
 
-<u>**회사소개**</u> 
+**<u>회사소개</u>** 
 
 - 백신, 코스탁 상장 기업 / 직원수 : 1000명
 - 퇴직사유 : 프리랜서 전향
 
 
 
-<u>**포지션**</u>
+**<u>포지션</u>**
 
 - **기간** : 2009.07 ~ 2017.08
 - **소속팀** : A-FIRST
@@ -298,7 +294,7 @@ author_profile: true
 
 
 
-<u>**주요프로젝트 및 업무**</u>
+**<u>주요프로젝트 및 업무</u>**
 
 - **Athena** (악성코드의 정형/비정형 데이터 분석)
 
