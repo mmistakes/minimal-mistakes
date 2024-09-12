@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "KayserDocs"
 title_separator          : "|"
 subtitle                 : "전생했더니 AI 모델이었던 건에 대하여"
-name                     : "카이접니다"
+name                     : "Kayser So(dorumugs)"
 description              : "카이저의 기술 블로그"
 url                      : "https://dorumugs.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
