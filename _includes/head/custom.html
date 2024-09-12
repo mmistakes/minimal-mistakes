@@ -2,6 +2,10 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+{% if page.use_math #}
+	{% include mathjax-support.html %}
+{% endif %}
+
 <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}/assets/images/favicon-16x16.png">
