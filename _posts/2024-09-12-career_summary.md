@@ -72,7 +72,7 @@ author_profile: true
 
 
 
-<u>**포지션**</u>
+**<u>포지션</u>**
 
 - **기간** : 2018.12 ~ 현  재
 - **소속실** : Info Platform Division
