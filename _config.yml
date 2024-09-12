@@ -309,3 +309,7 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: Index
+      toc_icon: "fa-solid fa-binoculars"

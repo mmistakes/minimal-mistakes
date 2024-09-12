@@ -3,8 +3,8 @@ layout: single
 title:  "Personal Information"
 categories: Personal
 tag: [dorumugs, kayser, 주인장]
+author_profile: false
 toc: true
-author_profile: true
 ---
 
 # About ME
@@ -16,7 +16,7 @@ author_profile: true
 - Birthday : January 12, 1984
 - Gender : Male
 
-  
+<br>
 
 # Education
 
@@ -25,7 +25,7 @@ author_profile: true
 - 2004.02 ~ 2007.07  명지전문대학 영어과 편입
 - 1999.03 ~ 2002.02  한양공업고등학교 전자기계과 졸업
 
-
+<br>
 
 # Paper
 
@@ -34,15 +34,15 @@ author_profile: true
 - 2016년 2월 26일  A Proactive Inference Method of Suspicious Domains(*Journal of The Korea Institute of Information Security & Cryptology*)
 - 2015년 10월 9일  Detecting trigger-based behaviors in botnet malware(*Research in Applied Computation Symposium*)
 
-
+<br>
 
 # Contest Award
 
 - 2020년 12월 3일 대만민국 바로 알리기 AI 공모전 우수상(*과학기술정보통신부*)
 
+<br>
 
-
-# KeySkill
+# Key Skill
 
 - Machine Learning, Deep Learning, LLM(LangChain), Recommendation System
 - Google Cloud Platform, Hadoop ECO System
@@ -51,7 +51,7 @@ author_profile: true
 - Superset, Looker
 - Digital Forensic(Incident Management)
 
-
+<br>
 
 # Professional Experience
 
@@ -66,12 +66,13 @@ author_profile: true
 
 ### 포지션
 
-- **기간** : 2018.12 ~ 현  재
-- **소속실** : Info Platform Division
-- **소속팀** : AI Dev
-- **직위** : 실장, 팀장 겸임
+- 기간 : 2018.12 ~ 현  재
+- 소속실 : Info Platform Division
+- 소속팀 : AI Dev
+- 직위 : 실장, 팀장 겸임
 
-  
+
+<br>
 
 ## Dorumugs Company
 
@@ -84,11 +85,11 @@ author_profile: true
 
 ### 포지션
 
-- **기간** : 2017.09 ~ 2018.11
-- **소속팀** : 분석팀
-- **직위** : 프리랜서
+- 기간 : 2017.09 ~ 2018.11
+- 소속팀 : 분석팀
+- 직위 : 프리랜서
 
-
+<br>
 
 
 ## Ahnlab
@@ -102,8 +103,7 @@ author_profile: true
 
 ### 포지션
 
-- **기간** : 2009.07 ~ 2017.08
-- **소속팀** : A-FIRST
-- **직위** : 선임연구원
-
+- 기간 : 2009.07 ~ 2017.08
+- 소속팀 : A-FIRST
+- 직위 : 선임연구원
 
