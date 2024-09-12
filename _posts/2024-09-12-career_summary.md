@@ -7,12 +7,6 @@ toc: true
 author_profile: true
 ---
 
-
-
-# Professional Experience Statement
-
-
-
 ## Job Title : Data Specialist 
 
 ### Personal Information
