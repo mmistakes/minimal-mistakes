@@ -62,7 +62,7 @@ author_profile: true
 
 ## Professional Experience
 
-### Q10 Technology **ㅣInfo Platform 실장, AI Dev 팀장 겸임**
+### Q10 Technology
 
 <u>**회사소개**</u>
 
@@ -74,7 +74,7 @@ author_profile: true
 
 <u>**포지션**</u>
 
-- **기간** : 2017.09 ~ 2018.11
+- **기간** : 2018.12 ~ 현  재
 - **소속실** : Info Platform Division
 - **소속팀** : AI Dev
 - **직위** : 실장, 팀장 겸임
