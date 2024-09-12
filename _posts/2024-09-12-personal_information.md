@@ -46,7 +46,7 @@ toc: true
 
 <br>
 
-# Key Skill
+# Key Skills
 
 - Machine Learning, Deep Learning, LLM(LangChain), Recommendation System
 - Google Cloud Platform, Hadoop ECO System
