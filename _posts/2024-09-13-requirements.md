@@ -14,7 +14,7 @@ toc: true
 LLM 관련된 필요 Library 들을 설치합니다.
 
 ```shell
-pip install -r https://github.com/dorumugs/llm_code/blob/main/requirements.txt
+pip install -r https://raw.githubusercontent.com/dorumugs/llm_code/main/requirements.txt
 ```
 
 
