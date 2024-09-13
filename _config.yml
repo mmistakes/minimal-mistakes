@@ -21,7 +21,7 @@ title                    : "민채아빠의 DBMS운영노트"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "민채아빠"
-description              : "DBMS를 운영과 관련된 이야기를 적어봅니다."
+description              : "DBMS 운영 이야기를 적어봅니다."
 url                      : "https://duhokim0901.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
