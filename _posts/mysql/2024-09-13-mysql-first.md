@@ -1,5 +1,5 @@
 ---
-title: "MSSQL운영관련"
+title: "MySQL/MariaDB"
 layout: archive
 permalink: /mysql
 ---

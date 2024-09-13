@@ -1,5 +1,5 @@
 ---
-title: "MSSQL운영관련2"
+title: "MSSQL"
 layout: archive
 permalink: /mssql
 ---
