@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/bio-photo.png"
   bio              : "DBMS 운영과 관련된 이야기를 기록합니다."
   location         : "South Korea"
-  email            : "kimvj200@gmail.com"
+  #email            : "kimvj200@gmail.com"
   links:
     - label: "kimvj200@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
