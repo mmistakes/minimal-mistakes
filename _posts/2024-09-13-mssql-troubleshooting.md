@@ -1,7 +1,7 @@
 ---
-title: "blog"
+title: "MSSQL운영관련2"
 layout: archive
-permalink: /blog
+permalink: /mssql
 ---
 
 
