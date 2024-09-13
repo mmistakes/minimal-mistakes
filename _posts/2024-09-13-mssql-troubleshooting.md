@@ -1,6 +1,9 @@
 ---
-layout: single
-title: "첫포스팅테스트"
+title: "blog"
+layout: archive
+permalink: /blog
 ---
 
-#github 첫번째 포스팅
+
+{% assign posts = site.categories.blog %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
