@@ -12,7 +12,7 @@ toc: true
 - Job Title : Data Specialist 
 - Name : 소재현(蘇在賢), Jaehyun So
 - Nickname : Kayser So, dorumugs
-- Email : dorumugs@mail.com
+- Email : dorumugs@gmail.com
 - Birthday : January 12, 1984
 - Gender : Male
 
