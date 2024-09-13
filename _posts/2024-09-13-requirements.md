@@ -11,7 +11,13 @@ toc: true
 
 ## requirements.txt
 
+LLM 관련된 필요 Library 들을 설치합니다.
+
+```shell
 pip install -r https://github.com/dorumugs/llm_code/blob/main/requirements.txt
+```
+
+
 
 ```shell
 aiohappyeyeballs==2.4.0 ; python_version >= "3.11" and python_version < "3.12"
