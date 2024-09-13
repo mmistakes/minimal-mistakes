@@ -1,11 +1,25 @@
 ---
 layout: single
 title: Writing a Business Plan by Sequoia
-categories: Tech-Insight
-tags: [Insight]
-toc: true
+categories: Tech-Insight, Capstone-Project
+tags: [Insight, Capstone-Project]
+toc: false
 ---
 
+벌써 대학원 마지막 학기가 됐습니다.
+졸업시험이나 기타 자격증 공부를 회사다니며 병행하기엔 쉽지 않은 것 같아요.
+그래도 어찌저찌 여기까지 왔네요...
+
+이번 학기에는 캡스톤 프로젝트를 듣게 됐고
+지금까지 배운 내용들을 망각의 저편에서 모두 끄집어내야 할 것 같습니다..
+
+원래 쓰려고 한 내용은 수업 중 교수님께서 Sequoia Capital이라는 벤처 투자회사의 
+사업 계획서 작성 방식을 소개해주시고 캡스톤 프로젝트를 준비하기 위해 활용하면 좋겠다고 하셔서
+고민하다가 내용이 되게 좋고 앞으로도 도움이 많이 될 것 같아서 블로깅해봅니다.
+
+이 원칙들?을 바탕으로 제 캡스톤 프로젝트의 주제와 방향성을 정하게 될 것 같네요.
+
+---
 
 1. Company purpose
 Define your company/business in a single declarative sentence.
