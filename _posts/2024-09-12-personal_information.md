@@ -20,7 +20,7 @@ toc: true
 
 # Education
 
-- 2018.09 ~ 2020.12  한양대학교(서울) 대학원 컴퓨터공학 석사졸업 (MNA Lab, 조인휘 교수)
+- 2018.09 ~ 2020.12  한양대학교(서울) 대학원 컴퓨터공학 석사졸업 ([MNA Lab](http://wm.hanyang.ac.kr/), [조인휘 교수](http://wm.hanyang.ac.kr/xe/professor))
 - 2007.07 ~ 2010.02  학점은행제 컴퓨터공학과 편입졸업
 - 2004.02 ~ 2007.07  명지전문대학 영어과 편입
 - 1999.03 ~ 2002.02  한양공업고등학교 전자기계과 졸업
@@ -31,11 +31,11 @@ toc: true
 
 - [그림으로 배우는 딥러닝](https://product.kyobobook.co.kr/detail/S000061352299)  에이콘출판  
   (*2022.05.31, 교보문고 MD 추천*)
--  졸업논문, 전자상거래에서 성별 예측을 위한 앙상블 모델  
+-  졸업논문, [전자상거래에서 성별 예측을 위한 앙상블 모델](https://repository.hanyang.ac.kr/handle/20.500.11754/164233)  
   (*2020.12.31, MNA Lab, 조인휘 교수*)
-- A Proactive Inference Method of Suspicious Domains  
+- [A Proactive Inference Method of Suspicious Domains](https://public.thinkonweb.com/journals/jkiisc/digital-library/manuscript/file/2932/JKIISC-2016-26-2-405.pdf)  
   (*2016.02.26, Journal of The Korea Institute of Information Security & Cryptology*)
-- Detecting trigger-based behaviors in botnet malware  
+- [Detecting trigger-based behaviors in botnet malware](https://dl.acm.org/doi/10.1145/2811411.2811485)  
   (*2015.10.09, Research in Applied Computation Symposium*)
 
 <br>
