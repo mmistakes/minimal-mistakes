@@ -1,9 +1,11 @@
 ---
 title: "MySQL/MariaDB"
 layout: archive
-permalink: /mysql
+categories:
+ : /mysql
+permalink: mysql/start
 ---
-![](./2024-09-13-20-00-39.png)
+![](mysql/2024-09-13-mysql-first/2024-09-13-20-00-39.png)
 
 ```
 systemctl status mysqld.service
