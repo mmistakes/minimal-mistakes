@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "init setting"
+title:  "LLM을 위한 init setting"
 categories: coding
 tag: [llm, langchain, settings, poetry]
 author_profile: false
@@ -17,7 +17,6 @@ toc: true
 
    - OpenAI : 
      - URL : https://platform.openai.com/docs/overview
-
    - Sign up > Log in > 톱니바퀴 > Setting > billing > Add to Credit Balance($10) > Auto recharge is off
      - 최소 $5 이니 $5 이상 결제해야 합니다.
      - 보안이 항상 신경쓰이기 때문에 "Auto recharge is off" 로 진행했습니다.
@@ -25,6 +24,8 @@ toc: true
      - Name은 Key 이름이 됩니다.
      - Project는 Default 로 진행해요.
      - 키는 안전한 곳에 복사하여 저장하세요.
+
+   <br>
 
 2. Homebrew
 
@@ -42,18 +43,18 @@ toc: true
    /opt/homebrew/bin/brew shellenv #환경변수를 확인합니다.
    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$MY_ACCOUNT/.zprofile
    ```
-   
+
    brew로 설치하고 git 버전도 확인합니다.
-   
+
    ```
    brew install git
    git --version
    ```
-   
+
    brew로 pyenv도 설치하고 환경변수도 ~/.zshrs에 넣어줍니다.   
    pyenv를 사용하면 다양한 python 버전을 프로젝트별로 사용할 수 있어요.  
    모두 적용되었다면, exec를 통해 쉘을 재시작합니다.  
-   
+
    ```shell
    brew update
    brew install pyenv
@@ -62,6 +63,8 @@ toc: true
    echo 'eval "$(pyenv init -)"' >> ~/.zshrc
    exec "$SHELL"
    ```
+
+   <br>
 
 3. XCODE
 
@@ -72,6 +75,8 @@ toc: true
    ```shell
    xcode-select --install
    ```
+
+   <br>
 
 4. pyevn로 python 3.11버전 설치
 
@@ -88,6 +93,8 @@ toc: true
    python --version
    ```
 
+   <br>
+
 5. Poetry 설치
 
    Poetry는 정말 다양한 라이브러리들의 의존성을 해결을 해결해 줍니다.  
@@ -103,6 +110,8 @@ toc: true
    poetry update # 파이썬 패키지 일괄 업데이트
    ```
 
+   <br>
+
 6. Visual Studio Code 설치
 
    URL : https://code.visualstudio.com/download
@@ -111,6 +120,8 @@ toc: true
    그럼 VS Code에서 테디노트님의 git 자료를 오픈합니다.  
    Select Kernel에서 "langchain-kr" 로 시작하는 커널을 선택해서 코드를 연습하면 됩니다. 
 
+   <br>
+
 7. LangSmith
 
    LangSmith는 LLM 모니터링으로 정말 좋습니다.  
@@ -118,6 +129,10 @@ toc: true
    웹으로 방문해서 봐야하기에 조금 거추장스러울 수 도 있지만, Full Managed라서 정말 손쉽습니다. 
 
    ![image-20240915020446545](/assets/images/2024-09-13-init_setting/image-20240915020446545.png)
+   
+   <br>
+   
+   <br>
 
 
 
