@@ -10,8 +10,7 @@
     @include clearfix;
     margin: 0 auto;
     max-width: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-inline: 1em;
     font-family: $sans-serif;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
@@ -28,7 +27,7 @@
       font-size: $type-size-6;
   
       @include breakpoint($large) {
-        float: right;
+        float: inline-end;
         width: calc(100% - #{$right-sidebar-width-narrow});
       }
   
@@ -52,7 +51,7 @@
   
   .pagination {
     @include clearfix();
-    float: left;
+    float: inline-start;
     margin-top: 1em;
     padding-top: 1em;
     width: 100%;
@@ -66,8 +65,8 @@
   
     li {
       display: block;
-      float: left;
-      margin-left: -1px;
+      float: inline-start;
+      margin-inline-start: -1px;
   
       a {
         display: block;
@@ -101,78 +100,53 @@
       }
   
       &:first-child {
-        margin-left: 0;
+        margin-inline-start: 0;
   
         a {
-          border-top-left-radius: $border-radius;
-          border-bottom-left-radius: $border-radius;
+          border-start-start-radius: $border-radius;
+          border-end-start-radius: $border-radius;
         }
       }
   
       &:last-child {
         a {
-          border-top-right-radius: $border-radius;
-          border-bottom-right-radius: $border-radius;
+          border-start-end-radius: $border-radius;
+          border-end-end-radius: $border-radius;
         }
       }
     }
-  }
-  
-  .pagination_prev_next {
-    @include clearfix();
-    float: left;
-    width: 100%;
   
     /* next/previous buttons */
     &--pager {
-      margin-top: 0em;
-      padding-top: 0em;
       display: block;
       padding: 1em 2em;
-      //float: left;
-      width: 100%;
+      float: inline-start;
+      width: 50%;
       font-family: $sans-serif;
       font-size: $type-size-5;
       font-weight: bold;
       text-align: center;
       text-decoration: none;
       color: $muted-text-color;
-      border: 1px solid mix(#fff, $border-color, 60%);
+      border: 1px solid mix(#000, $border-color, 25%);
       border-radius: $border-radius;
-  
-      .prev_next {
-        font-family: $cute;
-        color:#ffd861;
-      }
   
       &:hover {
         @include yiq-contrasted($muted-text-color);
       }
   
       &:first-child {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-start-end-radius: 0;
+        border-end-end-radius: 0;
       }
   
       &:last-child {
-        //margin-left: -1px;
-        margin-bottom: 1em;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        margin-inline-start: -1px;
+        border-start-start-radius: 0;
+        border-end-start-radius: 0;
       }
   
-      &.disabled-first-child {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        color: rgba($muted-text-color, 0.5);
-        pointer-events: none;
-        cursor: not-allowed;
-      }
-  
-      &.disabled-last-child {
-        margin-bottom: 1em;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+      &.disabled {
         color: rgba($muted-text-color, 0.5);
         pointer-events: none;
         cursor: not-allowed;
@@ -209,19 +183,26 @@
       margin: 0 1rem;
       color: $masthead-link-color;
       text-decoration: none;
+      -webkit-transition: none;
+      transition: none;
   
       &:hover {
         color: $masthead-link-color-hover;
       }
   
       &.site-logo {
-        margin-left: 0;
-        margin-right: 0.5rem;
+        margin-inline-start: 0;
+        margin-inline-end: 0.5rem;
       }
   
       &.site-title {
-        margin-left: 0;
+        margin-inline-start: 0;
       }
+    }
+  
+    img {
+      -webkit-transition: none;
+      transition: none;
     }
   
     &__toggle {
@@ -258,7 +239,7 @@
         &:before {
           content: "";
           position: absolute;
-          left: 0;
+          inset-inline-start: 0;
           bottom: 0;
           height: 4px;
           background: $primary-color;
@@ -280,7 +261,7 @@
     .hidden-links {
       position: absolute;
       top: 100%;
-      right: 0;
+      inset-inline-end: 0;
       margin-top: 15px;
       padding: 5px;
       border: 1px solid $border-color;
@@ -305,11 +286,11 @@
         }
       }
   
-      &:before {
+      &::before {
         content: "";
         position: absolute;
         top: -11px;
-        right: 10px;
+        inset-inline-end: 10px;
         width: 0;
         border-style: solid;
         border-width: 0 10px 10px;
@@ -318,11 +299,11 @@
         z-index: 0;
       }
   
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         top: -10px;
-        right: 10px;
+        inset-inline-end: 10px;
         width: 0;
         border-style: solid;
         border-width: 0 10px 10px;
@@ -379,11 +360,11 @@
         transition: 0.2s ease-out;
         cursor: pointer;
   
-        &:before,
-        &:after {
+        &::before,
+        &::after {
           content: "";
           position: absolute;
-          right: 1em;
+          inset-inline-end: 1em;
           top: 1.25em;
           width: 0.75em;
           height: 0.125em;
@@ -458,30 +439,14 @@
   .nav__list .nav__items {
     margin: 0;
     font-size: 1.25rem;
-    font-family: $sans-serif;
-  
-    img { // 방문자수 이미지 크기 맞추느라 추가했던 것
-      width: auto; height: auto;
-      max-width: 140px;
-      max-height: 38px;
-      margin-bottom: 1em;
-    }
   
     a {
       color: inherit;
-      font-size: $type-size-3;
-      font-family: $cute;
-      color: mix(#fff,$primary-color,80%);
-  
-      &:hover {
-        text-decoration: underline;
-      }
     }
   
     .active {
-      margin-left: -0.5em;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
+      margin-inline-start: -0.5em;
+      padding-inline: 0.5em;
       font-weight: bold;
     }
   
@@ -525,19 +490,19 @@
     display: block;
     margin: 0.5rem 0;
     padding: 0.25rem 0;
-    font-size: $type-size-3;
-    font-family: $serif;
-    color: mix(#fff,$primary-color,35%);
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-transform: uppercase;
     border-bottom: 1px solid $border-color;
   }
-  
   
   /*
        Table of contents navigation
        ========================================================================== */
   
   .toc {
-    font-family: $cute;
+    font-family: $sans-serif-narrow;
     color: $gray;
     background-color: $background-color;
     border: 1px solid $border-color;
@@ -547,10 +512,10 @@
   
     .nav__title {
       color: #fff;
-      font-size: $type-size-5;
-      background: mix(#fff,$primary-color,30%);
-      border-top-left-radius: $border-radius;
-      border-top-right-radius: $border-radius;
+      font-size: $type-size-6;
+      background: $primary-color;
+      border-start-start-radius: $border-radius;
+      border-start-end-radius: $border-radius;
     }
   
     // Scrollspy marks toc items as .active when they are in focus
@@ -564,10 +529,10 @@
     padding: 0;
     width: 100%;
     list-style: none;
-    font-size: $type-size-5;
+    font-size: $type-size-6;
   
     @include breakpoint($large) {
-      font-size: $type-size-6;
+      font-size: $type-size-7;
     }
   
     a {
@@ -584,23 +549,24 @@
     }
   
     li ul > li a {
-      padding-left: 1.25rem;
+      padding-inline-start: 1.25rem;
       font-weight: normal;
     }
   
     li ul li ul > li a {
-      padding-left: 1.75rem;
+      padding-inline-start: 1.75rem;
     }
   
     li ul li ul li ul > li a {
-      padding-left: 2.25rem;
+      padding-inline-start: 2.25rem;
     }
   
     li ul li ul li ul li ul > li a {
-      padding-left: 2.75rem;
+      padding-inline-start: 2.75rem;
     }
   
     li ul li ul li ul li ul li ul > li a {
-      padding-left: 3.25rem
+      padding-inline-start: 3.25rem;
     }
   }
+  
