@@ -6,7 +6,7 @@ categories:
   - mysql
 tags:
   - [mysql, mariadb]
-
+permalink: mysql/first
 toc: true
 toc_sticky: true
  
