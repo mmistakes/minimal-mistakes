@@ -1,7 +1,7 @@
 ---
-title: "MySQL/MariaDB"
+title: "MongoDB"
 layout: archive
-permalink: categories/mysql
+permalink: categories/mongodb
 author_profile: true
 sidebar_main: true
 ---

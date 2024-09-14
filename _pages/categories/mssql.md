@@ -1,7 +1,7 @@
 ---
-title: "MySQL/MariaDB"
+title: "MSSQL"
 layout: archive
-permalink: categories/mysql
+permalink: categories/mssql
 author_profile: true
 sidebar_main: true
 ---
