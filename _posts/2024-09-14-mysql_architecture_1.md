@@ -63,7 +63,7 @@ MySQL의 메모리 산정 시 이 두 영역에서 발생하는 메모리 점유
 [MySQL 메모리 계산기](https://www.mysqlcalculator.com/)
 
 
-아래는 [마사토 유시오 블로그](https://masato.ushio.org/blog/index.php/2015/12/31/uco-tech_mysql-memory-usage/)님의 블로그에 있는 MySQL 메모리 영역과 디스크 영역을 나타낸 그림이니 참고하시기 바랍니다.
+아래는 [마사토 유시오 블로그](https://masato.ushio.org/blog/index.php/2015/12/31/uco-tech_mysql-memory-usage/)님의 블로그에 있는 MySQL 메모리 영역과 디스크 영역을 나타낸 그림입니다.
 
 ![MySQL 메모리 영역과 디스크간 상관관계](https://github.com/user-attachments/assets/711c8e69-07ca-4298-b2d7-3a65bca06d91 "MySQL 메모리 영역과 디스크간 상관관계")
 
