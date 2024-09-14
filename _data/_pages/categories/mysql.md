@@ -1,14 +1,12 @@
- ---
-published: true
-title: "MySQL"
-toc: true
-toc_sticky: true
-categories:
-  - mysql
-tags:
-  - mysql
-  - architecture
- ---
+---
+title: "MySQL/MariaDB"
+layout: archive
+permalink: categories/mysql
+author_profile: true
+types: posts
+---
 
- {% assign posts = site.categories.categories %}
- {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% assign posts = site.categories['embedded_c_optimization']%}
+{% for post in posts %}
+  {% include archive-single.html type=page.entries_layout %}
+{% endfor %}

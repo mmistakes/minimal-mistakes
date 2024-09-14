@@ -10,7 +10,7 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-sidebar-category:
+docs:
   - title: "DBMS"
     children:
       - title: "MySQL/MariaDB"

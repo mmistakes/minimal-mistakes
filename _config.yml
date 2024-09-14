@@ -324,4 +324,4 @@ defaults:
       share: true
       related: true
       sidebar:                  # 추가한 부분
-        nav: "sidebar-category" # 추가한 부분
+        nav: "docs" # 추가한 부분
