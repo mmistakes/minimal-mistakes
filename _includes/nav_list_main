@@ -37,21 +37,28 @@
                     {% endif %}
                 {% endfor %}
             </ul>            
-        <span class="nav__sub-title">Coding Test</span>
+        <span class="nav__sub-title">Cloud</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 구현 (with C++) ({{category[1].size}})</a></li>
+                    {% if category[0] == "Aws" %}
+                        <li><a href="/categories/aws" class="">AWS (with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Azure" %}
+                        <li><a href="/categories/azure" class="">Azure ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Gcp" %}
+                        <li><a href="/categories/gcp" class="">GCP ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>            
       </li>
   </ul>
 </nav>
