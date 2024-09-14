@@ -323,4 +323,4 @@ defaults:
       comments: # true
       share: true
       related: true
-      sidebar: true
+      sidebar_main: true
