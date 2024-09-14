@@ -24,7 +24,7 @@ name                     : "민채아빠"
 description              : "DBMS 운영 이야기를 적어봅니다."
 url                      : "https://duhokim0901.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "duhokim0901/duhokim0901-comment" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "duhokim0901/duhokim0901.github.io-comment" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
