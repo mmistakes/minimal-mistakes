@@ -12,6 +12,7 @@ toc_sticky: true
  
 date: 2024-09-14
 last_modified_at: 2024-09-14
+comments: true
 ---
 ![](mysql/2024-09-13-mysql-first/2024-09-13-20-00-39.png)
 
