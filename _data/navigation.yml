@@ -11,11 +11,14 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-category:
-  - title: "카테고리"
+  - title: "DBMS"
     children:
       - title: "MySQL/MariaDB"
-        url: "/mysql"
+        url: "categories/mysql"
+        category: "mysql"
       - title: "MongoDB"
-        url:  "/mongodb"
+        url:  "categories/mongodb"
+        category: "mongodb"
       - title: "MSSQL"
-        url:  "/mssql"
+        url:  "categories/mssql"
+        category: "mssql"
