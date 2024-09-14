@@ -33,7 +33,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mssql" %}
-                        <li><a href="categories/mssql" class="">MongoDB ({{category[1].size}})</a></li>
+                        <li><a href="categories/mssql" class="">MSSQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>            
