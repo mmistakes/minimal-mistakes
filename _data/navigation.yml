@@ -10,15 +10,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-docs:
-  - title: "DBMS"
-    children:
-      - title: "MySQL/MariaDB"
-        url: "categories/mysql"
-        category: "mysql"
-      - title: "MongoDB"
-        url:  "categories/mongodb"
-        category: "mongodb"
-      - title: "MSSQL"
-        url:  "categories/mssql"
-        category: "mssql"
+#docs:
+#  - title: "DBMS"
+#    children:
+#      - title: "MySQL/MariaDB"
+#        url: "categories/mysql"
+#        category: "mysql"
+#      - title: "MongoDB"
+#        url:  "categories/mongodb"
+#        category: "mongodb"
+#      - title: "MSSQL"
+#        url:  "categories/mssql"
+#        category: "mssql"
