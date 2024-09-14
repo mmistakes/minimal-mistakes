@@ -20,21 +20,21 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "Mysql" %}
-                        <li><a href="/categories/mysql" class="">MySQL/MariaDB ({{category[1].size}})</a></li>
+                        <li><a href="/_pages/categories/mysql" class="">MySQL/MariaDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mongodb" %}
-                        <li><a href="/categories/mongodb" class="">MongoDB ({{category[1].size}})</a></li>
+                        <li><a href="/_pages/categories/mongodb" class="">MongoDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Mssql" %}
-                        <li><a href="/categories/mssql" class="">MSSQL ({{category[1].size}})</a></li>
+                        <li><a href="/_pages/categories/mssql" class="">MSSQL ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>            
@@ -42,21 +42,21 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Aws" %}
-                        <li><a href="/categories/aws" class="">AWS (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/_pages/categories/aws" class="">AWS (with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Azure" %}
-                        <li><a href="/categories/azure" class="">Azure ({{category[1].size}})</a></li>
+                        <li><a href="/_pages/categories/azure" class="">Azure ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Gcp" %}
-                        <li><a href="/categories/gcp" class="">GCP ({{category[1].size}})</a></li>
+                        <li><a href="/_pages/categories/gcp" class="">GCP ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>            
