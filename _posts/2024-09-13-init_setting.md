@@ -15,7 +15,9 @@ toc: true
 
 1. API Key 만들기 > 10달러(결제) + 1달러(세금)
 
-   - OpenAI : https://platform.openai.com/docs/overview
+   - OpenAI : 
+     - URL : https://platform.openai.com/docs/overview
+
    - Sign up > Log in > 톱니바퀴 > Setting > billing > Add to Credit Balance($10) > Auto recharge is off
      - 최소 $5 이니 $5 이상 결제해야 합니다.
      - 보안이 항상 신경쓰이기 때문에 "Auto recharge is off" 로 진행했습니다.
@@ -48,11 +50,9 @@ toc: true
    git --version
    ```
    
-   brew로 pyenv도 설치하고 환경변수도 ~/.zshrs에 넣어줍니다. 
-   
-   pyenv를 사용하면 다양한 python 버전을 프로젝트별로 사용할 수 있어요.
-   
-   모두 적용되었다면, exec를 통해 쉘을 재시작합니다.
+   brew로 pyenv도 설치하고 환경변수도 ~/.zshrs에 넣어줍니다.   
+   pyenv를 사용하면 다양한 python 버전을 프로젝트별로 사용할 수 있어요.  
+   모두 적용되었다면, exec를 통해 쉘을 재시작합니다.  
    
    ```shell
    brew update
@@ -65,11 +65,9 @@ toc: true
 
 3. XCODE
 
-   Xcode는 macOS에서 사용할 수 있는 통합 개발 환경(IDE)으로, Apple에서 제공하는 공식 도구입니다. 
-
-   주로 iOS, macOS, watchOS, tvOS 애플리케이션을 개발하는 데 사용됩니다. 
-
-   Xcode는 Apple의 프로그래밍 언어인 Swift와 Objective-C를 지원하며, 다양한 기능을 제공합니다.
+   Xcode는 macOS에서 사용할 수 있는 통합 개발 환경(IDE)으로, Apple에서 제공하는 공식 도구입니다.   
+   주로 iOS, macOS, watchOS, tvOS 애플리케이션을 개발하는 데 사용됩니다.  
+   Xcode는 Apple의 프로그래밍 언어인 Swift와 Objective-C를 지원하며, 다양한 기능을 제공합니다. 
 
    ```shell
    xcode-select --install
@@ -78,11 +76,8 @@ toc: true
 4. pyevn로 python 3.11버전 설치
 
    pyenv로 파이선 3.11 버전 설치하면 3.11.10이 설치됩니다. 시간지다면 다르겠지만 현재는 그러합니다.  
-
-   일단 전역으로 3.11을 사용하기 위해 global로 설정합니다. 
-
-   exec zsh로 쉘프로세스를 새로 시작하면서 pyenv에서 설정한 파이썬 버전을 즉시 반영합니다.
-
+   일단 전역으로 3.11을 사용하기 위해 global로 설정합니다.   
+   exec zsh로 쉘프로세스를 새로 시작하면서 pyenv에서 설정한 파이썬 버전을 즉시 반영합니다.  
    버전을 보면 적용된 버전을 확인할 수 있어요.
 
    ```shell
@@ -94,11 +89,9 @@ toc: true
 
 5. Poetry 설치
 
-   Poetry는 정말 다양한 라이브러리들의 의존성을 해결을 해결해 줍니다.
-
-   저는 테디노트님의 코드를 한번 훓어보려고 하기 때문에 테디노트님의 프로젝트를 그대로 받아 이동했습니다.
-
-   @테디노트님 영상으로만 만나지만, 많은 가르침 감사합니다.
+   Poetry는 정말 다양한 라이브러리들의 의존성을 해결을 해결해 줍니다.  
+   저는 테디노트님의 코드를 한번 훓어보려고 하기 때문에 테디노트님의 프로젝트를 그대로 받아 이동했습니다.  
+   @테디노트님 영상으로만 만나지만, 많은 가르침 감사합니다.  
 
    ```shell
    pip3 install poetry # poetry 설치
@@ -113,21 +106,17 @@ toc: true
 
    URL : https://code.visualstudio.com/download
 
-   설치가 완료되면, install extentsion > python, jupyter 노트북 설치합니다.
-
-   그럼 VS Code에서 테디노트님의 git 자료를 오픈합니다.
-
-   Select Kernel에서 "langchain-kr" 로 시작하는 커널을 선택해서 코드를 연습하면 됩니다.
+   설치가 완료되면, install extentsion > python, jupyter 노트북 설치합니다.  
+   그럼 VS Code에서 테디노트님의 git 자료를 오픈합니다.  
+   Select Kernel에서 "langchain-kr" 로 시작하는 커널을 선택해서 코드를 연습하면 됩니다. 
 
 7. LangSmith
 
-   LangSmith는 LLM 모니터링으로 정말 좋습니다.
+   LangSmith는 LLM 모니터링으로 정말 좋습니다.  
+   꼭 API를 받아 사용하는 것을 추천드립니다. 얼마나 낭비하는지, 무엇을 실행했는지 전부 알 수 있습니다.  
+   웹으로 방문해서 봐야하기에 조금 거추장스러울 수 도 있지만, Full Managed라서 정말 손쉽습니다. 
 
-   꼭 API를 받아 사용하는 것을 추천드립니다. 얼마나 낭비하는지, 무엇을 실행했는지 전부 알 수 있습니다.
-
-   웹으로 방문해서 봐야하기에 조금 거추장스러울 수 도 있지만, Full Managed라서 정말 손쉽습니다.
-
-   ![image-20240915015349998](/Users/dorumugs/Documents/projects/dorumugs.github.io/assets/images/2024-09-13-init setting/image-20240915015349998.png)
+   ![image-20240915020446545](/assets/images/2024-09-13-init_setting/image-20240915020446545.png)
 
 
 
