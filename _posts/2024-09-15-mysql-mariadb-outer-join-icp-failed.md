@@ -1,5 +1,5 @@
 ---
-title: "MySQL Outer Join 사용 유의사항"
+title: "[MySQL] Outer Join 성능 개선"
 excerpt: "MySQL 8.0.37 과 MariaDB 10.6.15 버전에서 Outer Join 사용시 유의 사항을 공유합니다. 조인조건이 멀티 컬럼일 때 Composite Column Index로 최적화 할 수 없습니다."
 #layout: archive
 categories:

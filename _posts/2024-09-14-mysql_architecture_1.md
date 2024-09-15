@@ -1,5 +1,5 @@
 ---
-title: "MySQL 아키텍처 기본편"
+title: "[MySQL] 아키텍처 기본편"
 excerpt: "MySQL 아키텍처 구성요소인 MySQL엔진과 스토리지엔진 영역을 정리합니다."
 #layout: archive
 categories:

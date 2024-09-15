@@ -1,5 +1,5 @@
 ---
-title: "MySQL sql_mode STRICT_TRANS_TABLES 설정"
+title: "[MySQL] sql_mode STRICT_TRANS_TABLES 설정"
 excerpt: "호환되지 않는 타입으로 인한 데이터 삽입, 삭제, 변경으로 인한 데이터 부정합을 막기 위해 STRICT_TRANS_TABLES 를 설정합니다."
 #layout: archive
 categories:
