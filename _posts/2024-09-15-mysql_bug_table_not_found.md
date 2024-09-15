@@ -1,5 +1,5 @@
 ---
-title: "MySQL Bug #107311	InnoDB: Load table xx failed; Table xx doesn't exist"
+title: "MySQL5.7 Bug #107311	InnoDB: Load table xx failed; Table xx doesn't exist"
 excerpt: "MySQL Bug 사항으로 부모키 - 외래키의 캐릭터셋이 불일치 할 경우 연관 테이블이 사라지는 현상을 정리합니다."
 #layout: archive
 categories:
