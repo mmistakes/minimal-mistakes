@@ -46,6 +46,7 @@ MySQL Version : 5.7.32 Community Version
 
 
 - 스키마 생성
+
 ```
 DROP TABLE `parent1`;
 DROP TABLE `parent2`;
@@ -108,6 +109,7 @@ CREATE TABLE `son3` (
 ### 🚀테이블 제약 관계 손상 케이스 1) - 자식 테이블 Charset 변경
 
 자식 테이블의 테이블 캐릭터셋을 UTF8MB4 로 변경 후 Deamon 재기동합니다.
+
 ```
 set foreign_key_checks=0;
 ALTER TABLE son1 CONVERT TO CHARACTER SET utf8mb4;
@@ -154,6 +156,7 @@ ERROR 1146 (42S02): Table 'content_v3.parent3' doesn't exist
 ### 🚀테이블 제약 관계 손상 케이스 2) - 부모 테이블 Charset 변경
 
 부모 테이블의 PK 설정을 변경해보고 동일하게 MySQL을 재기동합니다.
+
 
 ```
 set foreign_key_checks=0;
