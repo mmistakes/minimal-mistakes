@@ -43,6 +43,8 @@ aws rds describe-db-instances
 
 <details><summary>rds_cli_ouput.json</summary>
 
+<br/>
+
 ```
 
 {
@@ -183,6 +185,7 @@ aws rds describe-db-instances
 
 
 ```
+<br/>
 
 </details>
 

@@ -55,7 +55,7 @@ https://emojipedia.org/smileys#smiling-affectionate
 <summary>결과보기</summary>
 
 ```
-코드블록 긴거
+코드블록
 
 ```
 </details>
