@@ -7,11 +7,13 @@ author_profile: true
 sidebar_main: true
 search: true
 last_modified_at: 2024-09-15T13:00:00+09:00
-toc: true
+toc: false
 ---
 
 
-## Profile
+## 😎️ Profile
+- Name : 김두호
+- NickName : 민채아빠
 <center><img src="https://duhokim0901.github.io/assets/images/bio-photo.png" width="30%" height="30%" style="
 border: 1px solid #cab6de;
 border-radius: 50%;
@@ -22,14 +24,12 @@ padding: 5px;
 "></center>
 
 
-## **김두호**
-
-## Career & Activities
+## 🚀 Career & Activities
  - (주)콘텐츠웨이브 - Wavve 플랫폼 기술본부 Database Administrator (2019.09 ~ 현재)
  - (주)위메프 - 위메프 인프라실 Database Administrator (2018.01 ~ 2019.08) 
  - (주)셀파소프트 - Database Engineer (2015.07 ~ 2017.08)
 
-## Current Interest
+## 🔥 Current Interest
  * Mysql/MariaDB
  * MongoDB
  * MSSQL
@@ -44,6 +44,6 @@ padding: 5px;
  * Python, Shell, Golang
  * Grafana, Zabbix, InfluxDB, Prometheus, Exporter
 
-## Contact
+## 💌️ Contact
  * Email : kimvj200@gmail.com
  * Blog : [https://duhokim0901.github.io/](https://duhokim0901.github.io)
