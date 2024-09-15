@@ -44,7 +44,7 @@ aws rds describe-db-instances
 <details><summary>rds_cli_ouput.json</summary>
 <div markdown="1">
 
-```
+```json
 
 {
     "DBInstances": [
