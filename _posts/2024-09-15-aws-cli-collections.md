@@ -39,9 +39,6 @@ aws rds describe-db-instances
 ```
   
 아래처럼 json 형식으로 리턴합니다. 
-<details>
-<summary>결과보기  
-</summary>
 
 ```
 {
@@ -181,7 +178,8 @@ aws rds describe-db-instances
 }
 
 ```
-</details>  
+   
+   
   
    
 필요한 필드값만 추려내고 싶다면 --query 옵션을 사용하면 됩니다. 관련 예시입니다.  
@@ -195,9 +193,6 @@ aws rds describe-db-instances --query '{"DBInstanceIdentifier":DBInstances[*].DB
 
 ```
 aws rds describe-db-instances --filters "Name=tag:Name,Values=prd-contents1-mongo-104" | grep "InstanceId" | awk -F ':' '{print $2}' | sed -r "s/\"//g" | sed -r "s/,//g"
-
-
-
 aws rds describe-db-instances --query "{instance: DBInstances[*].DBInstanceIdentifier, disksize: DBInstances[*].AllocatedStorage}"
 ```
 
