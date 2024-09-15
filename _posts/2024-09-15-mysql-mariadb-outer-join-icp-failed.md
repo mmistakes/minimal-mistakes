@@ -18,7 +18,7 @@ comments: true
 
 Outer Join 사용 시 조인 절에 해당하는 ON 절이 멀티 컬럼으로 구성되어 있을 경우, 조인컬럼에 대한 복합 컬럼 인덱스를 구성하더라도 조인해야할 레코드의 처리 범위를 단일 컬럼으로만 줄일 수 있는 현상이 있습니다. 즉, Access Predicate 로 멀티 컬럼이 모두 반영이 되어야 하는데 단일 컬럼만 반영되고 Access Predicate 로 반영되지 못한 다른 컬럼들은 Filter Predicate 로 처리되어 비효율적인 인덱스 스캔, Random Access 가 발생하는 현상입니다. 다른 DBMS 에서는 나타나지 않는 현상인데 MySQL 엔진에서 발생합니다. MySQL 8.0.37 버전과 MariaDB 10.6.15 버전에서 여전히 문제가 나타납니다.
 
-#### 문제 현상
+#### 1) 문제 현상
 
 드라이빙 테이블이 department 가 유리한 상황에서 후행테이블의 Access Predicate 를 고려하여 employees 테이블에 (department_id, hire_date) 순의 복합 컬럼 인덱스를 만들어도 department_id 컬럼을 기준으로만 레코드를 조인하고 hire_date 는 Filter 처리되어 비효율적인 인덱스 범위 스캔 및 랜덤엑세스가 발생합니다.(위의 LEFT JOIN 을 INNER JOIN 으로 변경하면 employess 테이블의 Access Predicate 를 department_id, hire_date 기준으로 삼아 처리범위를 감소시킵니다.)
 
@@ -109,6 +109,7 @@ ORDER  BY `bsGroup`.`update_ts` DESC,
 ```
 
 아래는 실행계획입니다.
+
 | id | select_type | table | type | possible_keys | key | key_len | ref | rows | Extra |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | SIMPLE | bsGroup | ref | idx_obs_group_01 | idx_obs_group_01 | 366 | const,const | 1 | Using index condition; Using temporary; Using filesort |
