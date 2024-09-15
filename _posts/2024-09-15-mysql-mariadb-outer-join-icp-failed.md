@@ -89,6 +89,7 @@ WHERE NOT EXISTS (
 
 부연 설명을 하자면 department 테이블과 employees 테이블의 교집합과 department 테이블 기준 차집합을 각각 추출한 후 결합하여 데이터를 리턴하는 것입니다. 후행테이블인 employees 에 INNER JOIN 으로 접근시 department_id, hire_date 가 MySQL 기능인 ICP(Index Condition Pushdown)로 인해 access predicate 로 설정되어 불필요한 데이터 스캔범위 없이 교집합을 추출해낼 수 있고 department 테이블의 차집합은 department 테이블의 데이터 건수가 작을 경우에는 dependant subquery로 풀어내고 , 반대의 경우에는 semi join으로 풀어 불필요한 데이터 스캔범위를 줄일 수 있습니다.
 
+---
 
 ### 🚀개선사례
 
@@ -115,6 +116,7 @@ ORDER  BY `bsGroup`.`update_ts` DESC,
 | 1 | SIMPLE | bsGroup | ref | idx_obs_group_01 | idx_obs_group_01 | 366 | const,const | 1 | Using index condition; Using temporary; Using filesort |
 | 1 | SIMPLE | scd | ref | idx_obs_03,idx_obs_05,idx_obs_06 | idx_obs_06 | 188 | cms_operation.bsGroup.id,const | 1664 | Using where |
 
+드라이빙 테이블로 bsGroup 이 선정되었고 `name`,`status` 로 구성된 idx_obs_group_01 인덱스를 탑니다. 그리고 scd 테이블에 조인 접근 시 `group_id`,`status`,`end_date` 로 구성된 idx_obs_06 인덱스에 접근합니다. 실행계획에 출력되는 1664 라는 값은 추정치이므로 정확한 값을 보려면 핸들러 API 호출 수를 확인해보아야 합니다.
 
 핸들러 API 호출수를 확인해 보았을 때 해당 쿼리의 레코드 호출비용은 아래와 같았습니다.
 
@@ -130,9 +132,11 @@ Handler_read_rnd          1
 Handler_read_rnd_next     2       
 
 ```
+위의 수치에서 주목해야할 항목은 Handler_read_next 입니다. Hander_read_next는 인덱스 리프페이지에 접근후 검사된 레코드 행의 수를 의미합니다. 즉, Index Range Scan 으로 검사한 행의 수를 말하는 것입니다. Index Range Scan 으로 읽어들인 행의 수가 약 7만개입니다. 그러나 실제로 리턴한 결과는 2건 뿐이었습니다. 버려지는 비용이 많았습니다.
+이는 scd 테이블에 group_id 단일 컬럼을 인덱스로 생성한 후 조인한 레코드 비용과 일치합니다. 다시 말해서 group_id, status, end_date 세개의 컬럼 조건으로 처리범위를 감소시키지 못했음을 의미합니다.
 
 
-아래는 변경한 쿼리입니다.
+위와 같은 현상을 없애기 위해 아래와 같은 형태로 쿼리를 변경하겠습니다. Outer Join은 교집합과 차집합의 결합으로 변경할 수 있습니다. 따라서 아래와 같이 Inner Join + Not Exists 의 결합으로 대체할 수 있습니다.
 
 ```
 SELECT bsInfo.*
@@ -179,7 +183,7 @@ ORDER  BY `bsInfo`.`update_ts` DESC,
 ```
 
 
-아래는 실행계획입니다.
+쿼리 형태를 변경한 쿼리 실행계획은 아래와 같습니다.
 
 | id | select_type | table | type | possible_keys | key | key_len | ref | rows | filtered | Extra |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -189,21 +193,24 @@ ORDER  BY `bsInfo`.`update_ts` DESC,
 | 3 | UNION | bsGroup | ref | idx_obs_group_01 | idx_obs_group_01 | 366 | const,const | 1 | 100.00 | Using index condition; Using where |
 | 4 | DEPENDENT SUBQUERY | scd | index_subquery | idx_obs_03,idx_obs_02,idx_obs_04,idx_obs_05,idx_obs_06 | idx_obs_06 | 188 | func,const | 1664 | 100.00 | Using where |
 
+마찬가지로 드라이빙 테이블로 bsGroup이 선정되었고 `name`,`status` 으로 구성된 idx_obs_group_01 인덱스를 탑니다. 이후에 이전쿼리와 마찬가지로 scd 테이블에 조인 접근하는데 동일하게  `group_id`,`status`,`end_date` 로 구성된 idx_obs_06 인덱스를 탑니다. 이전과 실행계획이 달라진 점이 있다면 scd 접근시 Extra 항목에 Using index condition 항목이 나타났다는 것입니다. 해당 구문은 ICP(Index Condition Pushdown)이 사용되었음을 의미합니다. 즉 조인조건에 해당하는 모든 컬럼이 모두 Storage Engine 영역에서 처리되었음을 의미합니다. 실행계획에 출력되는 1664 라는 값은 추정치이므로 정확한 값을 보려면 핸들러 API 호출 수를 확인해보아야 합니다.
 
+핸들러 API 호출수를 확인해 보았을 때 해당 쿼리의 레코드 호출비용은 아래와 같았습니다.
 
 ```
-
 Variable_name             Value   
 ------------------------  --------
 Handler_read_first        0       
-Handler_read_key          5       
+Handler_read_key          3       
 Handler_read_last         0       
 Handler_read_next         2       
 Handler_read_prev         0       
 Handler_read_rnd          1          
 Handler_read_rnd_next     2       
-
 ```
+
+이전과 달리 Handler_read_next 의 수치가 극단적으로 감소하였습니다. group_id, status, end_date 세개의 컬럼 조건으로 처리범위를 감소시켰기 때문입니다. 이처럼 데이터분포도에 따라서 Outer Join 성능이 현저하게 차이가 날 수 있기 때문에 해당 현상에 대하여 유의하시고 운영하셨으면 좋겠습니다.
+
 
 ---
 {% assign posts = site.categories.Mysql %}
