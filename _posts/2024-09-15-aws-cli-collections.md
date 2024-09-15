@@ -21,8 +21,8 @@ comments: true
 
 ## ⌨️ 기본 프로필 설정
 
-관리하는 AWS 계정이 다수일 경우 cli 입력시 --profile 옵션을 지정하기 귀찮을 때가 있을 때 사용합니다. ~/.aws/credential 파일을 수정해도 됩니다.
-
+관리하는 AWS 계정이 다수일 경우 cli 입력시 --profile 옵션을 지정하기 귀찮을 때가 있을 때 사용합니다. ~/.aws/credential 파일을 수정해도 됩니다.  
+{% include codeHeader.html name="aws_configure" %}
 ```
 aws configure set aws_access_key_id $aws_access_key_id
 aws configure set aws_secret_access_key $aws_secret_access_key
@@ -31,8 +31,8 @@ aws configure set aws_secret_access_key $aws_secret_access_key
 
 ## 🖥️ RDS CLI
 
-RDS 정보를 조회하는 기본 명령어입니다.
-
+RDS 정보를 조회하는 기본 명령어입니다.  
+{% include codeHeader.html name="rds_example_1" %}
 ```
 aws rds describe-db-instances
 ```
@@ -186,22 +186,23 @@ aws rds describe-db-instances
 
 <br/>
 
-필요한 필드값만 추려내고 싶다면 --query 옵션을 사용하면 됩니다. 관련 예시입니다. query 옵션의 문법은 [JMESPATH](https://jmespath.org/) 문법을 따릅니다. 
-
+필요한 필드값만 추려내고 싶다면 --query 옵션을 사용하면 됩니다. 관련 예시입니다. query 옵션의 문법은 [JMESPATH](https://jmespath.org/) 문법을 따릅니다.  
+{% include codeHeader.html name="rds_example_2" %}
 ```
 aws rds describe-db-instances --query '{"DBInstanceIdentifier":DBInstances[*].DBInstanceIdentifier,"Endpoint":DBInstances[*].Endpoint.Address,"TagList" : DBInstances[*].TagList, DiskSize: DBInstances[*].AllocatedStorage }' > output/${cloud_platform}_rds"_list.json"
 ```
 <br/>
 
-조건에 맞는 RDS 정보만 가져오고 싶다면 --filters 옵션을 사용하면 됩니다. 아래는 관련 예시입니다. RDS의 경우 [지원되는 --filters 항목](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html#options)이 명시 되어 있으니 공식문서를 참고하시면 좋겠습니다. 아래는 DBInstance Identifier 명이 postgres-101 인 RDS 의 ARN 정보를 출력하는 예시입니다.
-
+조건에 맞는 RDS 정보만 가져오고 싶다면 --filters 옵션을 사용하면 됩니다. 아래는 관련 예시입니다. RDS의 경우 [지원되는 --filters 항목](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html#options)이 명시 되어 있으니 공식문서를 참고하시면 좋겠습니다. 아래는 DBInstance Identifier 명이 postgres-101 인 RDS 의 ARN 정보를 출력하는 예시입니다.  
+{% include codeHeader.html name="rds_example_3" %}
 ```
 aws rds describe-db-instances --filters "Name=db-instance-id,Values=postgres-101" --query 'DBInstances[*].DBInstanceArn'
 ```
 <br/>
 
-RDS 스냅샷 관련 CLI 입니다. FinOps 중요성이 커지면서 퍼블릭 클라우드의 비용관리를 위해 태깅이 없는 리소스들에 대하여 일괄 등록하는 작업을 한적이 있었습니다. 그 때 태깅이 없는 자동백업된 스냅샷들이 엄청 많아 CLI를 통해 태깅처리를 일괄 처리를 했었습니다. 아래는 관련 CLI 예시입니다.
+RDS 스냅샷 관련 CLI 입니다. FinOps 중요성이 커지면서 퍼블릭 클라우드의 비용관리를 위해 태깅이 없는 리소스들에 대하여 일괄 등록하는 작업을 한적이 있었습니다. 그 때 태깅이 없는 자동백업된 스냅샷들이 엄청 많아 CLI를 통해 태깅처리를 일괄 처리를 했었습니다. 아래는 관련 CLI 예시입니다.  
 
+{% include codeHeader.html name="rds_snapshot" %}
 ```
 aws rds describe-db-snapshots  --db-snapshot-identifier rds:prd-xxxxxxx-2022-07-13-13-47 --query 'DBSnapshots[*].TagList' > rds:prd-xxxxxxx-2022-07-13-13-47.result
 
@@ -219,7 +220,8 @@ aws rds add-tags-to-resource --resource-name arn:aws:rds:ap-northeast-2:xxxxxxx:
 ```
 <br/>
 
-RDS의 파라미터 그룹을 조회하거나 현재 설정된 파라미터 그룹의 파라미터 항목을 변경하는 CLI 입니다.
+RDS의 파라미터 그룹을 조회하거나 현재 설정된 파라미터 그룹의 파라미터 항목을 변경하는 CLI 입니다.  
+{% include codeHeader.html name="rds_parameter_group" %}
 ```
 #파라미터 그룹 리스트 조회
 aws rds describe-db-parameter-groups --query={"parameter_group":DBParameterGroups[*].DBParameterGroupName}
@@ -243,12 +245,12 @@ cat xxxxxxx-paramter-group.json
 
 #RDS 재시작
 aws rds reboot-db-instance --db-instance-identifier xxxxxxx-xxxx-101
-
 ```
 <br/>
 
-RDS의 유지보수 시간을 변경하는 CLI 입니다.
+RDS의 유지보수 시간을 변경하는 CLI 입니다.  
 
+{% include codeHeader.html name="rds_maintenance_window" %}
 ```
 aws rds modify-db-instance --db-instance-identifier xxxxxxx-postgres-101 --preferred-maintenance-window Thu:19:00-Thu:19:30
 ```
@@ -256,6 +258,7 @@ aws rds modify-db-instance --db-instance-identifier xxxxxxx-postgres-101 --prefe
 
 Multi-AZ 가 적용되지 않은 RDS를 조회하고 Multi-AZ를 반영하는 CLI 입니다.
 
+{% include codeHeader.html name="rds_multi-az" %}
 ```
 aws rds describe-db-instances --query 'DBInstances[?MultiAZ==`false`]' | grep '"DBInstanceIdentifier":'
 aws rds modify-db-instance --db-instance-identifier "xxxx-xxxxx-101" --multi-az --apply-immediately
@@ -267,8 +270,8 @@ aws rds modify-db-instance --db-instance-identifier "xxxx-xxxxx-101" --multi-az 
 
 ## 🖱️ EC2 CLI
 
-ec2 머신에 설치된 DBMS 또는 서드파티 솔루션들을 관리하기 위해 ec2 명령어도 사용합니다. 
-
+ec2 머신에 설치된 DBMS 또는 서드파티 솔루션들을 관리하기 위해 ec2 명령어도 사용합니다.   
+{% include codeHeader.html name="aws_ec2_list" %}
 ```
 #ec2 리스트 확인
 aws ec2 describe-instances --filters --query "Reservations[].Instances[].[PrivateIpAddress,Tags[?Key=='Name'].Value[]]" --output text | sed '$!N;s/\n/\t/'
@@ -281,21 +284,17 @@ aws ec2 describe-instances --filters --query "Reservations[].Instances[].[Privat
 AWS S3에 파일을 업로드 하는 CLI 입니다.  
 {% include codeHeader.html name="aws_s3_cli_upload" %}
 ```
-aws s3 cp a.txt s3://bucket-name
+aws s3 cp a.txt s3://bucket-name/a.txt
 ```
 <br/>
 
-AWS S3에 파일을 업로드 하는 CLI 입니다.  
-{% include codeHeader.html name="aws_s3_cli_upload" %}
+AWS S3에 파일을 버킷에서 다운로드 하는 CLI 입니다.  
+{% include codeHeader.html name="aws_s3_cli_download" %}
+```
 aws s3 cp s3://bucket-name/a.txt .
 ```
 <br/>
   
-
-{% include codeHeader.html name="file-name" %}
-```sql
-select * from tab;
-```
 
 
 {% assign posts = site.categories.Mysql %}
