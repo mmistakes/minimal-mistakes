@@ -102,7 +102,7 @@ CREATE TABLE `son3` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-
+---
 
 
 ### 🚀테이블 제약 관계 손상 케이스 1) - 자식 테이블 Charset 변경
