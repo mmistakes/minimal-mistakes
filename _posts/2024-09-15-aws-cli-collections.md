@@ -278,12 +278,15 @@ aws ec2 describe-instances --filters --query "Reservations[].Instances[].[Privat
 
 ## 💾 S3 CLI
 
-AWS S3에 파일을 다운로드 / 업로드 하는 CLI 입니다.
+AWS S3에 파일을 업로드 하는 CLI 입니다.  
+{% include codeHeader.html name="aws_s3_cli_upload" %}
 ```
-#a.txt 파일을 업로드
 aws s3 cp a.txt s3://bucket-name
+```
+<br/>
 
-#버킷에서 a.txt를 다운로드
+AWS S3에 파일을 업로드 하는 CLI 입니다.  
+{% include codeHeader.html name="aws_s3_cli_upload" %}
 aws s3 cp s3://bucket-name/a.txt .
 ```
 <br/>
