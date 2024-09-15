@@ -45,7 +45,6 @@ aws rds describe-db-instances
 <div markdown="1">
 
 ```json
-
 {
     "DBInstances": [
         {
@@ -181,7 +180,6 @@ aws rds describe-db-instances
         }
     ]
 }
-
 ```
 </div>
 </details>
