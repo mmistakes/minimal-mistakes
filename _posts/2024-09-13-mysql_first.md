@@ -1,6 +1,6 @@
 ---
-title:  "MySQL"
-excerpt: "systemctl start mysql.post.service"
+title:  "[MySQL]"
+excerpt: ""
 
 categories:
   - Mysql
