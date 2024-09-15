@@ -7,5 +7,5 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.Mysql %}
+{% assign posts = site.categories.Aws %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
