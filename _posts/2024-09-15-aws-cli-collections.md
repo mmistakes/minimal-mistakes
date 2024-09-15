@@ -36,9 +36,8 @@ RDS 정보를 조회하는 기본 명령어입니다.
 
 ```
 aws rds describe-db-instances
-
 ```
-
+  
 아래처럼 json 형식으로 리턴합니다. 
 <details>
 <summary>결과보기  
@@ -182,13 +181,10 @@ aws rds describe-db-instances
 }
 
 ```
-  
-
 </details>  
-
-
+  
+   
 필요한 필드값만 추려내고 싶다면 --query 옵션을 사용하면 됩니다. 관련 예시입니다.  
-
 ```
 aws rds describe-db-instances --query '{"DBInstanceIdentifier":DBInstances[*].DBInstanceIdentifier,"Endpoint":DBInstances[*].Endpoint.Address,"TagList" : DBInstances[*].TagList }' > output/${cloud_platform}_rds"_list.json"
 ```
