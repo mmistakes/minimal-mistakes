@@ -10,10 +10,6 @@ last_modified_at: 2024-09-15T13:00:00+09:00
 toc: false
 ---
 
-
-## 😎️ Profile
-- Name : 김두호
-- NickName : 민채아빠
 <center><img src="https://duhokim0901.github.io/assets/images/bio-photo.png" width="30%" height="30%" style="
 border: 1px solid #cab6de;
 border-radius: 50%;
@@ -23,6 +19,9 @@ padding: 5px;
 -webkit-border-radius: 50%;
 "></center>
 
+## 😎️ Profile
+- Name : 김두호
+- NickName : 민채아빠
 
 ## 🚀 Career & Activities
  - (주)콘텐츠웨이브 - Wavve 플랫폼 기술본부 Database Administrator (2019.09 ~ 현재)
