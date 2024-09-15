@@ -30,6 +30,17 @@ comments: true
 #### 소제목1
 본문
 
+
+
+### 코드카피하기
+참고 : https://kosate.github.io/blog/blogs/how-to-add-copy-button-into-jekyll-blogs/
+예시 : 아래 
+
+{% include codeHeader.html name="file-name" %}
+```someLanguage
+code goes in here!
+```
+
 ---
 {% assign posts = site.categories.Mysql %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

@@ -42,8 +42,7 @@ aws rds describe-db-instances
 아래처럼 json 형식으로 리턴합니다. 
 
 <details><summary>rds_cli_ouput.json</summary>
-
-<br/>
+<div markdown="1">
 
 ```
 
@@ -183,10 +182,8 @@ aws rds describe-db-instances
     ]
 }
 
-
 ```
-<br/>
-
+</div>
 </details>
 
 <br/>

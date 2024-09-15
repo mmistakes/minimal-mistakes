@@ -564,3 +564,31 @@ body {
 .utterances {
   max-width: 100% !important;
 }
+
+
+/*added*/
+
+.copy-code-button {
+  float: right;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 50;
+  text-align: center;
+  padding: 5px 5px;
+  background-color: #fff;
+  color: #100f0e;
+  border: 2px solid #dedad6;
+  min-width: 60px;
+  margin-top: -40px;
+}
+
+.copy-code-button:hover
+{
+  color: #fcfbfa;
+  background-color: #45413e;
+}
+
+.copy-code-name{
+  font-size: 14px;
+  padding: 5px 5px;
+}
