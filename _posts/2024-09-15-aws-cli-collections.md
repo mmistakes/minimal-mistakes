@@ -44,6 +44,7 @@ aws rds describe-db-instances
 <details><summary>rds_cli_ouput.json</summary>
 
 ```
+
 {
     "DBInstances": [
         {
@@ -180,7 +181,9 @@ aws rds describe-db-instances
     ]
 }
 
+
 ```
+
 </details>
 
 <br/>
@@ -259,6 +262,9 @@ Multi-AZ 가 적용되지 않은 RDS를 조회하고 Multi-AZ를 반영하는 CL
 aws rds describe-db-instances --query 'DBInstances[?MultiAZ==`false`]' | grep '"DBInstanceIdentifier":'
 aws rds modify-db-instance --db-instance-identifier "xxxx-xxxxx-101" --multi-az --apply-immediately
 ```
+<br/>
+
+
 
 
 ## 🖱️ EC2 CLI
