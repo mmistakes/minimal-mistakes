@@ -14,7 +14,7 @@ last_modified_at: 2024-09-15
 comments: true
 ---
 
-어느날 갑자기 개발환경에서 ```show tables ``` 명령어로는 보이지만 실제로 조회해보면 조회가 불가능한 테이블이 발견되어 원인을 확인하던 중 부모키 외래키의 캐릭터셋이 불일치 할 경우 연관된 테이블이 보이지 않는 현상(Load table xx failed; Table xx doesn't exist)이 발견되어 정리하였습니다.
+어느날 갑자기 개발환경에서 ```show tables ``` 명령어로는 보이지만 조회가 불가능한 테이블이 발견되었습니다.(Load table xx failed; Table xx doesn't exist) 해당 현상이 발생된 원인에 대해서 알아보고 해결방법에 대하여 정리하였습니다.
 
 ---
 
