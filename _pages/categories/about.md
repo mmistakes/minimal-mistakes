@@ -22,8 +22,7 @@ padding: 5px;
 "></center>
 
 
-
-* NAME : 김두호
+## **김두호**
 
 ## Career & Activities
  - (주)콘텐츠웨이브 - Wavve 플랫폼 기술본부 Database Administrator (2019.09 ~ 현재)
