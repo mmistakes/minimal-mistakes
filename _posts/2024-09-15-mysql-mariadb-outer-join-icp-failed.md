@@ -193,7 +193,7 @@ ORDER  BY `bsInfo`.`update_ts` DESC,
 | 3 | UNION | bsGroup | ref | idx_obs_group_01 | idx_obs_group_01 | 366 | const,const | 1 | 100.00 | Using index condition; Using where |
 | 4 | DEPENDENT SUBQUERY | scd | index_subquery | idx_obs_03,idx_obs_02,idx_obs_04,idx_obs_05,idx_obs_06 | idx_obs_06 | 188 | func,const | 1664 | 100.00 | Using where |
 
-마찬가지로 드라이빙 테이블로 bsGroup이 선정되었고 `name`,`status` 으로 구성된 idx_obs_group_01 인덱스를 탑니다. 이후에 이전쿼리와 마찬가지로 scd 테이블에 조인 접근하는데 동일하게  `group_id`,`status`,`end_date` 로 구성된 idx_obs_06 인덱스를 탑니다. 이전과 실행계획이 달라진 점이 있다면 scd 접근시 Extra 항목에 Using index condition 항목이 나타났다는 것입니다. 해당 구문은 ICP(Index Condition Pushdown)이 사용되었음을 의미합니다. 즉 조인조건에 해당하는 모든 컬럼이 모두 Storage Engine 영역에서 처리되었음을 의미합니다. 실행계획에 출력되는 1664 라는 값은 추정치이므로 정확한 값을 보려면 핸들러 API 호출 수를 확인해보아야 합니다.
+마찬가지로 드라이빙 테이블로 bsGroup이 선정되었고 `name`,`status` 으로 구성된 idx_obs_group_01 인덱스를 탑니다. 이후에 이전쿼리와 마찬가지로 scd 테이블에 조인 접근하는데 동일하게  `group_id`,`status`,`end_date` 로 구성된 idx_obs_06 인덱스를 탑니다. 이전과 실행계획이 달라진 점이 있다면 scd 접근시 Extra 항목에 Using index condition 항목이 나타났다는 것입니다. 해당 구문은 ICP(Index Condition Pushdown)가 사용되었음을 의미합니다. 즉 조인조건에 해당하는 모든 컬럼이 모두 Storage Engine 영역에서 처리되었음을 의미합니다. 실행계획에 출력되는 1664 라는 값은 추정치이므로 정확한 값을 보려면 핸들러 API 호출 수를 확인해보아야 합니다.
 
 핸들러 API 호출수를 확인해 보았을 때 해당 쿼리의 레코드 호출비용은 아래와 같았습니다.
 
