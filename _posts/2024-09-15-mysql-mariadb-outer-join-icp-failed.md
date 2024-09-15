@@ -110,8 +110,8 @@ ORDER  BY `bsGroup`.`update_ts` DESC,
 
 아래는 실행계획입니다.
 
-| id | select_type | table | type | possible_keys | key | key_len | ref | rows | Extra |
-|---|---|---|---|---|---|---|---|---|---|
+| id | select_type | table | type | possible_keys | key | key_len | ref | rows | filtered | Extra |
+|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | SIMPLE | bsGroup | ref | idx_obs_group_01 | idx_obs_group_01 | 366 | const,const | 1 | Using index condition; Using temporary; Using filesort |
 | 1 | SIMPLE | scd | ref | idx_obs_03,idx_obs_05,idx_obs_06 | idx_obs_06 | 188 | cms_operation.bsGroup.id,const | 1664 | Using where |
 
