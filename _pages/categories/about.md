@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: about
-permalink: categories/about
+permalink: /about/
 excerpt: "About Me"
 author_profile: true
 sidebar_main: true
