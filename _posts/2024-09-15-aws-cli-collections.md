@@ -290,8 +290,8 @@ aws s3 cp s3://bucket-name/a.txt .
   
 
 {% include codeHeader.html name="file-name" %}
-```someLanguage
-code goes in here!
+```sql
+select * from tab;
 ```
 
 
