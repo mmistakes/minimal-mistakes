@@ -26,6 +26,10 @@ comments: true
 ### 🚀해결방안
 foreign_key_checks 변수를 0 으로 변경 후 보이지 않는 테이블 조회하면 다시 테이블에 접근할 수 있습니다. 이후 불일치한 캐릭터셋을 맞춰주는 작업을 해주시면 됩니다.
 
+```
+set foreign_key_checks = 0;
+```
+
 
 ---
 
