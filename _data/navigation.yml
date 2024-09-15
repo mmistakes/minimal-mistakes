@@ -22,3 +22,14 @@ main:
 #      - title: "MSSQL"
 #        url:  "categories/mssql"
 #        category: "mssql"
+
+  - title: "Home"
+    url: /index.html
+  - title: "About"
+    url: /about/
+  - title: "Category"
+    url: /categories/
+  #- title: "Tag"
+    #url: /tags/
+  #- title: "Post by Year"
+    #url: /year-archive/
