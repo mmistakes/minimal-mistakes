@@ -42,7 +42,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Aws" %}
-                        <li><a href="https://duhokim0901.github.io/categories/aws" class="">AWS (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="https://duhokim0901.github.io/categories/aws" class="">AWS ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
