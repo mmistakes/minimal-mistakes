@@ -1,8 +1,8 @@
 ---
 title: "About"
-layout: about
+layout: single
 permalink: /about/
-excerpt: "About Me"
+excerpt: "Database Administrator 김두호입니다."
 author_profile: true
 sidebar_main: true
 search: true
