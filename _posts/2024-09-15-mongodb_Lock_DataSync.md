@@ -1,6 +1,6 @@
 ---
-title: "[MongoDB] MongoDB WiredTiger 스토리지 엔진"
-excerpt: "MongoDB의 메인 스토리지 엔진인 WiredTiger의 특징을 정리합니다."
+title: "[MongoDB] MongoDB 데이터 동기화 및 압축"
+excerpt: "MongoDB의 공유 캐시와 디스크 간의 데이터 동기화 과정과 캐시 효율성을 높이기 위한 운영체제 캐시 사용 여부, MongoDB의 데이터 페이지 압축에 대한 내용을 정리하였습니다."
 #layout: archive
 categories:
  - Mongodb
