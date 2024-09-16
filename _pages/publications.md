@@ -34,7 +34,7 @@ permalink: /publications/
 
 * <a href="" style="text-decoration:none;color:navy">Unsettled Law in the Age of Generative AI: Time to Generate New Approaches?</a>              
 <span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
-<span style="font-size:0.75em;">*under review* </span>
+<span style="font-size:0.75em;">*Journal of Law and Technology at Texas* </span>
 
 * <a href="https://arxiv.org/abs/2404.09479" style="text-decoration:none;color:navy">A Legal Risk Taxonomy for Generative Artificial Intelligence</a>              
 <span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
