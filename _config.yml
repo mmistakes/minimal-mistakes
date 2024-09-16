@@ -114,20 +114,20 @@ analytics:
 # Site Author
 author:
   name             : "David Garcia"
-  avatar           : "Website_MM/assets/images/portrait_DG.jpg"
+  avatar           : "assets/images/portrait_DG.png"
   bio              : "Senior Research Scientist at DEVCOM CBC and Caltech"
   location         : "Pasadena, CA"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "mailto:dgarcia.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      icon: "fab fa-fw fa-linkedin-square"
+       url: "https://www.linkedin.com/feed/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
