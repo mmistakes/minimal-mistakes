@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "David Garcia"
-  avatar           : "/assets/images/portrait_DG.jpg"
+  avatar           : "Website_MM/assets/images/portrait_DG.jpg"
   bio              : "Senior Research Scientist at DEVCOM CBC and Caltech"
   location         : "Pasadena, CA"
   email            :
