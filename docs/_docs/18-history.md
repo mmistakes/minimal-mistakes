@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-08-20T17:04:07+08:00'
+last_modified_at: '2024-09-17T16:37:54+08:00'
 toc: false
 ---
 
@@ -25,6 +25,7 @@ toc: false
 - Remove unnecessary "type" attribute [#4956](https://github.com/mmistakes/minimal-mistakes/issues/4956)
 - The "if" means the default is never used [#4955](https://github.com/mmistakes/minimal-mistakes/issues/4955)
 - For pages without a title, show the site title only once [#4959](https://github.com/mmistakes/minimal-mistakes/issues/4959)
+- Use `documents-collection.html` partial in `home` layout.
 
 ### Bug Fixes
 

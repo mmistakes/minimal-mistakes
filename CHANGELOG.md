@@ -10,6 +10,7 @@
 - Remove unnecessary "type" attribute (#4956)
 - The "if" means the default is never used (#4955)
 - For pages without a title, show the site title only once (#4959)
+- Use `documents-collection.html` partial in `home` layout.
 
 ### Bug Fixes
 
