@@ -1,20 +1,54 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend A8",
-    "title": "Elternabend A8",
+    "alt": "A3 - Ausflug Theater Zitadelle",
+    "title": "A3 - Ausflug Theater Zitadelle",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=dG9ydmJ0YjZwNXFuYmppZDZ0aGFuamZvdG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=Nm5vaGNoa3Jic2h0ajFhb2pzOGlnZWgwM3YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-09-18T17:00:00+02:00"
+      "date_time": "2024-09-19T08:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-09-18T18:30:00+02:00"
+      "date_time": "2024-09-19T12:30:00+02:00"
     },
-    "created": "2024-09-01T10:37:38.000Z",
-    "updated": "2024-09-01T10:37:38.953Z"
+    "created": "2024-09-18T05:53:10.000Z",
+    "updated": "2024-09-18T05:53:10.147Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A7 - Ausflug Theater Zitadelle",
+    "title": "A7 - Ausflug Theater Zitadelle",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmIzY210cjY1cGp0bzBqaXIwZGNwdWRiZW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-19T08:45:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-19T11:45:00+02:00"
+    },
+    "created": "2024-09-18T05:52:20.000Z",
+    "updated": "2024-09-18T05:52:20.344Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A3 - Ausflug Bibliothek",
+    "title": "A3 - Ausflug Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NTYzaXQ1ZDg4cmk4YmJpMGFnMDMycG1zZjMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-20T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-20T11:00:00+02:00"
+    },
+    "created": "2024-09-18T05:54:11.000Z",
+    "updated": "2024-09-18T05:54:11.112Z"
   },
   {
     "image_path": null,
@@ -66,39 +100,5 @@
     },
     "created": "2024-09-02T12:09:54.000Z",
     "updated": "2024-09-02T12:09:54.631Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug zur Gartenarbeitsschule",
-    "title": "A5 - Ausflug zur Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-22T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-22T13:30:00+01:00"
-    },
-    "created": "2024-09-02T12:11:06.000Z",
-    "updated": "2024-09-02T12:11:06.781Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug zur Gartenarbeitsschule ",
-    "title": "A5 - Ausflug zur Gartenarbeitsschule ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHY3MnN1aDB2ZmM0dnVxbWtnMWQ3Z2cxNjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-12-13T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-12-13T13:30:00+01:00"
-    },
-    "created": "2024-09-02T12:11:53.000Z",
-    "updated": "2024-09-02T12:11:53.829Z"
   }
 ]
