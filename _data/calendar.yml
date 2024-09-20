@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A3 - Ausflug Bibliothek",
-    "title": "A3 - Ausflug Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NTYzaXQ1ZDg4cmk4YmJpMGFnMDMycG1zZjMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-09-20T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-09-20T11:00:00+02:00"
-    },
-    "created": "2024-09-18T05:54:11.000Z",
-    "updated": "2024-09-18T05:54:11.112Z"
-  },
-  {
-    "image_path": null,
     "alt": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
     "title": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-02T12:11:53.000Z",
     "updated": "2024-09-02T12:11:53.829Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Zitadelle (Theater)",
+    "title": "A5 - Ausflug zur Zitadelle (Theater)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N25xYm1pbDI2N2ZrbWh1cnQ3cnJxMjNrZGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-12-19T09:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-12-19T13:30:00+01:00"
+    },
+    "created": "2024-09-02T12:12:45.000Z",
+    "updated": "2024-09-02T12:12:45.392Z"
   }
 ]
