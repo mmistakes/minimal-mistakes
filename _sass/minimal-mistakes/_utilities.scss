@@ -83,20 +83,11 @@ body:hover .visually-hidden button {
    Type
    ========================================================================== */
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-justify {
-  text-align: justify;
+$text-alignments: left, right, start, end, center, justify;
+@each $alignment in $text-alignments {
+  .text-#{$alignment} {
+    text-align: $alignment;
+  }
 }
 
 .text-nowrap {
@@ -108,20 +99,20 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .task-list {
-  padding:0;
+  padding: 0;
 
   li {
     list-style-type: none;
   }
 
   .task-list-item-checkbox {
-    margin-right: 0.5em;
+    margin-inline-end: 0.5em;
     opacity: 1;
   }
 }
 
 .task-list .task-list {
-  margin-left: 1em;
+  margin-inline-start: 1em;
 }
 
 /*
@@ -135,8 +126,7 @@ body:hover .visually-hidden button {
 }
 
 .wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   width: 100%;
 }
 
@@ -148,8 +138,7 @@ body:hover .visually-hidden button {
 
 .align-left {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 
   @include breakpoint($small) {
     float: left;
@@ -161,8 +150,7 @@ body:hover .visually-hidden button {
 
 .align-right {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 
   @include breakpoint($small) {
     float: right;
@@ -174,15 +162,14 @@ body:hover .visually-hidden button {
 
 .align-center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 /* file page content container */
 
 .full {
   @include breakpoint($large) {
-    margin-right: -1 * span(2.5 of 12) !important;
+    margin-inline-end: -1 * span(2.5 of 12) !important;
   }
 }
 
@@ -256,11 +243,11 @@ body:hover .visually-hidden button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    left: 0;
+    inset-inline-start: 0;
     width: $navicon-width;
     height: $navicon-height;
     background: $primary-color;
@@ -308,7 +295,7 @@ body:hover .visually-hidden button {
       content: '';
       position: fixed;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       width: 100%;
       height: 100%;
       opacity: 0;
@@ -382,11 +369,11 @@ body:hover .visually-hidden button {
   overflow: hidden;
   position: relative;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
     z-index: 999;
@@ -403,8 +390,8 @@ body:hover .visually-hidden button {
   position: fixed;
   width: 300px;
   top: 50%;
-  left: 50%;
-  margin-left: -150px;
+  inset-inline-start: 50%;
+  margin-inline-start: -150px;
   margin-top: -150px;
   min-height: 0;
   z-index: 9999;
@@ -495,7 +482,7 @@ a.reversefootnote {
   embed {
     position: absolute;
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
   }
@@ -533,7 +520,7 @@ pre {
     display: block;
     position: absolute;
     top: 0.6em;
-    right: 0.5em;
+    inset-inline-end: 0.5em;
     width: 1.8em;
     height: 1.5em;
     z-index: 1;
@@ -548,17 +535,14 @@ pre {
     &::before {
       content: '';
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      inset: 0;
       z-index: 2;
     }
 
     i {
       position: absolute;
       top: 0.25em;
-      right: 0.25em;
+      inset-inline-end: 0.25em;
       &.copied {
         opacity: 0;
       }

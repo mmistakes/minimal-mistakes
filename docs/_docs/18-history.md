@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-06-10T02:57:53+08:00'
+last_modified_at: '2024-09-20T02:38:49+08:00'
 toc: false
 ---
 
@@ -19,7 +19,30 @@ toc: false
 
 ### Enhancements
 
+- Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
+- Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
+- Rewrite most directions with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+- Remove unnecessary "type" attribute [#4956](https://github.com/mmistakes/minimal-mistakes/issues/4956)
+- The "if" means the default is never used [#4955](https://github.com/mmistakes/minimal-mistakes/issues/4955)
+- For pages without a title, show the site title only once [#4959](https://github.com/mmistakes/minimal-mistakes/issues/4959)
+- Use `documents-collection.html` partial in `home` layout.
+
+### Bug Fixes
+
+- Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
+- Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
+- Fix reset stylesheet overruling `$doc-font-size`. [#4983](https://github.com/mmistakes/minimal-mistakes/issues/4983)
+
+### Documentation & Maintenance
+
+- Automatically update Algolia search index with GitHub Actions.
+
+## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
+
+### Enhancements
+
 - Add Czech localization. [#4866](https://github.com/mmistakes/minimal-mistakes/pull/4866)
+- Allow overriding HTML `lang` attribute on a per-page basis. [#4862](https://github.com/mmistakes/minimal-mistakes/pull/4862)
 
 ### Bug Fixes
 

@@ -1070,17 +1070,17 @@ da-DK:
 # Polish
 # ------
 pl: &DEFAULT_PL
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "Pomiń linki"
+  skip_primary_nav           : "Przejdź do nawigacji"
+  skip_content               : "Przejdź do treści"
+  skip_footer                : "Przejdź do stopki"
   page                       : "Strona"
   pagination_previous        : "Poprzednia"
   pagination_next            : "Następna"
   breadcrumb_home_label      : "Strona główna"
   breadcrumb_separator       : "/"
   menu_label                 : "Przełącz menu"
-  search_label               :
+  search_label               : "Przełącz wyszukiwanie"
   toc_label                  : "Spis treści"
   ext_link_label             : "Link bezpośredni"
   less_than                  : "mniej niż"
@@ -1101,7 +1101,7 @@ pl: &DEFAULT_PL
   email_label                : "Email"
   recent_posts               : "Najnowsze wpisy"
   undefined_wpm              : "Parametr words_per_minute nie został zdefiniowany w _config.yml."
-  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone"
+  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone."
   comment_form_comment_label : "Skomentuj"
   comment_form_md_info       : "Markdown jest wspierany"
   comment_form_name_label    : "Imię"
@@ -1400,7 +1400,7 @@ fa: &DEFAULT_FA
   toc_label                  : "در این صفحه"
   ext_link_label             : "لینک مستقیم"
   less_than                  : " "
-  minute_read                : "(طول مطالعه (دقیقه"
+  minute_read                : "دقیقه، طول مطالعه"
   share_on_label             : "اشتراک گذاری در"
   meta_label                 :
   tags_label                 : "تگ ها: "
@@ -1427,9 +1427,9 @@ fa: &DEFAULT_FA
   comment_btn_submitted      : "ارسال شد"
   comment_success_msg        : ".باتشکر از ارسال دیدگاه! پس از تأیید، این دیدگاه در سایت نشان داده خواهد شد"
   comment_error_msg          : ".متاسفانه در ارسال شما خطایی بود. لطفا مطمئن شوید تمام فیلدهای مورد نیاز تکمیل شده و دوباره امتحان کنید"
-  loading_label              : "...بارگذاری"
+  loading_label              : "بارگذاری..."
   search_label_text          :
-  search_placeholder_text    : "...عبارت جستجوی خود را وارد کنید"
+  search_placeholder_text    : "عبارت جستجوی خود را وارد کنید..."
   search_algolia_no_results  :
   results_found              : "نتایج"
   back_to_top                : "بازگشت به بالا"
