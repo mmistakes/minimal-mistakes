@@ -41,5 +41,6 @@ WiredTiger 스토리지 엔진은 공유 캐시에 적재된 데이터 페이지
 WiredTiger 스토리지 엔진의 백그라운드 이빅션 쓰레드가 적절히 공유 캐시의 여유 공간을 확보하지 못하면 WiredTiger 스토리지 엔진에서는 사용자의 쿼리를 처리하는 포그라운드 쓰레드에서 직접 캐시 이빅션을 실행하기도 합니다. 이런 상황이 되면 쿼리를 처리해야 할 쓰레드들이 캐시 이빅션까지 처리해야 하기 때문에 MongoDB의 쿼리 처리 성능이 떨어지게 됩니다. 이러한 현상을 측정할 수 있는 지표들은 다음과 같습니다.
 
 ---
+
 {% assign posts = site.categories.Elk %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
