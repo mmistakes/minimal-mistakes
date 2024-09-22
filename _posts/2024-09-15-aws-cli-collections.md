@@ -298,5 +298,5 @@ aws s3 cp s3://bucket-name/a.txt .
   
 
 
-{% assign posts = site.categories.Mysql %}
+{% assign posts = site.categories.Aws %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
