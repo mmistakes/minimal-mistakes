@@ -5,7 +5,7 @@ excerpt: "ELK 스택을 이용하여 proxySQL의 로그를 수집하고 검색�
 categories:
  - Elk
 tags:
- - [elk,proxysql,mysql]
+ - [elk]
 toc: true
 toc_sticky: true
 date: 2024-09-23
