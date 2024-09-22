@@ -33,6 +33,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Elk" %}
+                        <li><a href="https://duhokim0901.github.io/categories/elk" class="">ELK ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>            
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Mssql" %}
                         <li><a href="https://duhokim0901.github.io/categories/mssql" class="">MSSQL ({{category[1].size}})</a></li>
                     {% endif %}
