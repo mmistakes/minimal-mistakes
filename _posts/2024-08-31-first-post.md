@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "첫 블로그 포스팅입니다."
+categories: coding
 ---
 
 # 오늘 처음 블로그를 만들었어요
