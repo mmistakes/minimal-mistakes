@@ -2,6 +2,7 @@
 layout: single
 title: "첫 블로그 포스팅입니다."
 categories: coding
+tags: [python, blog, jekyll]
 ---
 
 # 오늘 처음 블로그를 만들었어요
@@ -24,4 +25,5 @@ while True:
         print("Too high! Try again.")
 ```
 
-![Dobby](../assets/images/Dobby.png)
+<!-- ![Dobby](../assets/images/Dobby.png) -->
+![Koala](../../assets/images/Koala_Logo.png)
