@@ -82,7 +82,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
 
-#### ※ 실행계획 설명
+**※ 실행계획 설명**
 
 | 단계 | 설명 |
 |---|---|
@@ -328,7 +328,7 @@ AND subJob.status = 'S';
 | 2    | DERIVED | subJob      | ALL    | (NULL) | (NULL)       | (NULL)       | (NULL)                    | 3049555    | Using temporary         |
 
 
-실행계획을 보면 DRIVED 로 변경되었습니다. 그리고 ref 의 값도 NULL 이 되었죠. 참고로 쿼리 실행속도는 기존 속도보다 훨씬더 느려집니다ㅋㅋㅋ
+실행계획을 보면 DERIVED 로 변경되었습니다. 그리고 ref 의 값도 NULL 이 되었죠. 참고로 쿼리 실행속도는 기존 속도보다 훨씬더 느려집니다ㅋㅋㅋ
 (WINDOW 함수를 썼기 때문에 인라인뷰의 결과 집합은 subjob의 전체 테이블 건수가 되니 그만큼 조인시 스캔해야할 행이 많아집니다.)
 
 
