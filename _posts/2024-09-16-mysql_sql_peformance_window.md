@@ -20,9 +20,9 @@ comments: true
 
 그런데 청천병력과 같은 소식이 등장했습니다. 바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 지원을 종료한다는 이야기입니다.
 
- 그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다.(잘했다 내자신😄) 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.
-
 !["Azure MySQL Single Database 중단 소식"](https://github.com/user-attachments/assets/9e342aab-3afb-43f3-a7cf-6af2a117b596)
+
+ 그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다. 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.(잘했다 내자신😄)
 
 
 <br/>
@@ -33,7 +33,7 @@ comments: true
 
 ![슬로우쿼리 발생](https://github.com/user-attachments/assets/60bf43bd-f65c-44c3-8538-40fc7527550f)
 
-역시나 ELK 로 모든 로그를 통합 관리해서 보니 손쉽게 확인할 수 있습니다. 분당 1회씩 꾸준히 발생 중 이었던 해당 쿼리는 동일한 패턴이었습니다. 응답시간은 무려 12초입니다.
+역시나 ELK 로 모든 로그를 통합 관리해서 보니 손쉽게 확인할 수 있습니다. 분당 1회씩 꾸준히 발생 중 이었던 해당 쿼리는 동일한 패턴이었습니다. 응답시간은 무려 12초입니다😲
 
 <br/>
 
@@ -50,14 +50,11 @@ WHERE (job.status = 'P' AND subJob.status = 'S');
 ```
 
 
-아래처럼 job과 subjob 테이블을 조인하고
-
-``` FROM `job` INNER JOIN subJob ON job.id = subJob.jobId AND job.step = subJob.type ```
-
-
-subjob 으로 INNER JOIN 을 한번 더 합니다. 응?
-
-``` INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  ```
+>아래처럼 job과 subjob 테이블을 조인하고
+>> ```FROM job INNER JOIN subJob ON job.id = subJob.jobId AND job.step = subJob.type```
+> 
+>subjob 으로 INNER JOIN 을 한번 더 합니다. 응?
+>>``` INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  ```
 
 
 subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 가장 최근에 작업한 subjob 내역들을 job 별로 조회하고 싶은 것이네요. 그런데 불필요한 조인을 한번 더하기도 하고 subjob 의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어렵겠네요. 실행계획을 살펴보겠습니다.
