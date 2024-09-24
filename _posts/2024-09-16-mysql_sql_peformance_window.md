@@ -157,14 +157,12 @@ Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 >- The derived table/View/CTE has a GROUP BY operation as its top-level operation
 >- The query only needs data from a few GROUP BY groups
 
-<br/>
 
 번역하자면 아래와 같습니다.
 >- Derived Table(인라인 뷰형태 혹은 비재귀 호출 형태의 WITH 절 테이블)을 사용하고, 
 >- 인라인뷰의 최상위 레벨의 쓰임이 GROUP BY 연산을 사용할 경우,
 >- SELECT 절에 많은 컬럼이 선언되지 않을 때 
 
-<br/>
 
 예를 들어 다음과 같은 쿼리가 있다고 가정합니다.
 
@@ -185,7 +183,7 @@ FROM customer
 WHERE
   customer.customer_name IN ('Customer#1', 'Customer#2')
 ```
-<br/>
+
 
 위의 상황에서 MariaDB 5.3, MySQL 5.6 이전에는 다음과 같은 실행계획으로 최적화 되었습니다.
 
@@ -196,23 +194,16 @@ WHERE
 | 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
 | 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
 
-<br/>
 
 위의 실행계획 단계를 설명해보면 이렇습니다.
 1. customer_name 이 'Customer#1', 'Customer#2' 값을 찾습니다.
 2. OCT_TOTALS 뷰를 구체화합니다. 모든 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
 3. 고객 테이블과 조인합니다.
 
-<br/>
-
 위의 id = 2번 단계에서 모든 고객에 대한 합계를 계산하는 작업이 상당히 비효율 적입니다. 왜냐하면 우리는 고객 2명("Customer#1", "Customer#2")의 합산 결과만 알면 되기 때문입니다. 하지만 Derived Table(인라인뷰) 바깥에 해당하는 필터조건을 인라인뷰는 알지 못하기 때문에 불필요한 많은 연산 작업을 동반하게 됩니다.(고객테이블의 건수가 많으면 많을 수록 성능 부하는 심해집니다.)
-
-<br/>
 
 "LATERAL DERIVED" 최적화는 위와 같은 문제를 해결하기 위해 Derived Table(인라인뷰) 바깥에 있는 조인조건인 
 ```ON customer.customer_id = OCT_TOTALS.customer_id``` 절을 내부에 푸쉬함으로써 처리범위를 극적으로 감소시킬 수 있습니다. "LATERAL DERIVED" 최적화가 이루어지면 실행계획은 아래와 같이 변경됩니다.
-
-<br/>
 
 | id   | select_type     | table      | type  | possible_keys | key       | key_len | ref                       | rows | Extra                    |
 |------|-----------------|------------|-------|---------------|-----------|---------|---------------------------|------|--------------------------|
@@ -220,8 +211,6 @@ WHERE
 | 1    | PRIMARY         | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 2    |                          |
 | 2    | LATERAL DERIVED | orders     | ref   | o_cust_id     | o_cust_id | 4       | test.customer.customer_id | 1    | Using where              |
 
-
-<br/>
 
 >1. 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다.
 >2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
