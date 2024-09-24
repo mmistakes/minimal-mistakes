@@ -24,12 +24,12 @@ comments: true
 
  그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다. 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.(잘했다 내자신😄)
 
- MySQL 5.7 에서 MariaDB 10.6 으로 이전하면서 발생한 자잘한 이슈들이 있는데 추후에 정리를 해보겠습니다.(역시 일은 미루는게 맛이야! 응?!😲)
+ MySQL 5.7 에서 MariaDB 10.6 으로 이전하면서 발생한 자잘한 이슈들이 있는데 추후에 정리를 해보겠습니다.(뒷일은 미래의 나에게 맡긴다 후후..)
 
 
 <br/>
 
-### 😲 아직 끝나지 않았다. 슬로우쿼리 발생
+### ⚠️ 아직 끝나지 않았다. 슬로우쿼리 발생
 ---
 이전을 완료했다는 안도감도 잠시 슬로우 쿼리 알람이 발생하였고 RDS 로그를 수집하고 있던 키바나를 통해 현재 발생 중인 슬로우 쿼리들을 확인하였습니다.
 
@@ -64,7 +64,9 @@ WHERE (job.status = 'P' AND subJob.status = 'S');
 >>``` INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  ```
 
 
-주 작업(job) 테이블과 하위작업(subjob) 테이블을 조인한 뒤 하위작업 테이블에서 주 작업번호(jobid) 를 기준으로 하위 작업번호(subjob.id) 의 최댓값을 집계한 후 이너조인 시키고 있습니다. 결국엔 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id) 내역만을 조회하고 싶은 것이었네요. 그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)테이블의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 일단 실행계획을 살펴보겠습니다.
+주 작업(job) 테이블과 하위작업(subjob) 테이블을 조인한 뒤 한번 더 하위작업(subjob) 테이블을 이용해서 주 작업번호(jobid) 를 기준으로 하위 작업번호(subjob.id) 의 최댓값을 집계한 인라인뷰를 만들어 이너조인 시키고 있습니다. 
+
+결국엔 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id) 내역만을 조회하고 싶은 것이었네요. 그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)테이블의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 일단 실행계획을 살펴보겠습니다.
 
 
 | id  | select_type | table      | type   | possible_keys                              | key        | key_len | ref               | rows   | Extra                    |
@@ -105,10 +107,10 @@ Handler_tmp_write		  1343096  <-- Derived 테이블 생성으로 인한 발생
 
 ### 😸 문제 해결
 ---
-subjob을 두번 조회하는 이유가 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다. 변경쿼리는 아래와 같습니다.
+subjob 테이블을 두번 조회하는 이유가 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다. 변경쿼리는 아래와 같습니다.
 
 
-```
+```sql
 SELECT 컬럼....
 	subJob.updatedAt AS sj_updatedAt
 FROM (
