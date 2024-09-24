@@ -82,6 +82,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
 
+
 **※ 실행계획 설명**
 
 | 단계 | 설명 |
@@ -145,7 +146,7 @@ AND subJob.status = 'S';
 | 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 2    | Using where             |
 | 2    | LATERAL DERIVED | subJob      | ref    | jobId,idx_subjob_01 | jobId       | 5       | frozen.job.id                    | 1    | Using temporary         |
 
-#### ※ 실행계획 설명
+**※ 실행계획 설명**
 
 | 단계 | 설명 |
 |---|---|
@@ -220,7 +221,7 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
 | 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
 
-#### ※ 실행계획 설명
+**※ 실행계획 설명**
 
 | 단계 | 설명 |
 |---|---|
@@ -239,7 +240,7 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1    | PRIMARY         | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 2    |                          |
 | 2    | LATERAL DERIVED | orders     | ref   | o_cust_id     | o_cust_id | 4       | test.customer.customer_id | 1    | Using where              |
 
-#### ※ 실행계획 설명
+**※ 실행계획 설명**
 
 | 단계 | 설명 |
 |---|---|
