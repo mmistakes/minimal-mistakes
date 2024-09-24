@@ -58,9 +58,7 @@ WHERE (job.status = 'P' AND subJob.status = 'S');
 
 
 subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하고 싶은 것이네요. 
-
 그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 
-
 일단 실행계획을 살펴보겠습니다.
 
 
@@ -71,10 +69,16 @@ subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) �
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
+>실행계획 설명
+>>1. job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다.(job.status = 'P')
+>>2. 단계1의 결과셋과 subjob을 조인합니다. 
+>>>- 단계1의 job.id 값을 상수화 시켜 subjob.jobId 에 대입하며 전달합니다. 스토리지 엔진 영역으로 푸시되는 조건입니다.(access predicate)
+>>>- 단계1의 job.step 값을 상수값으로 전달받아 subJob.type 에 대입하며 전달합니다. MySQL 엔진 영역으로 필터링 되는 조건입니다.(filter predicate)
+>>
+>>3. A 뷰를 구체화합니다. 전체 하위작업을 주작업으로 집계합니다. 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다.
+>>4. 단계1,2 로 만들어진 결과셋과 A뷰를 조인합니다.(드라이빙 테이블 : 1,2 결과셋, 드리븐테이블 : A뷰)
 
-조인을 위한 인덱스 최적화는 모두 되어 있습니다. job이 드라이빙 테이블이되고 subJob 을 이후 접근합니다. ``` ON job.id = subJob.jobId AND job.step = subJob.type ``` 으로 인한 접근이구요. 이후에 jobId 별 id 의 최댓값을 뽑기 위해 DERIVED 처리된 subJob 테이블의 결과 집합을 조인하는 모습을 볼 수 있습니다. ``` ON subJob.id = A.LatestId  ``` 
-
-병목 지점은 id 2 구간 입니다. DERIVED 의 결과 집합을 임시테이블에 적재하기 위해 3백여만건의 레코드를 읽어들여야 하고 조인을 위한 인덱스 생성(***derived2***의 ***key0***) 작업이 필요합니다.(MySQL 5.X 버전의 경우는 DRIVED table 을 생성하면 임시테이블이 만들어지고 인덱스가 생성되지 않아 Using Join Buffer Block Nested Loop 의 실행계획이 생성되었습니다.) 이 과정에서 상당한 부하가 발생하였습니다.
+병목 지점은 rows 수치가 압도적으로 높은 id 2 구간 입니다. DERIVED 의 결과 집합을 임시테이블에 적재하기 위해 3백여만건의 레코드를 읽어들여야 하고 조인을 위한 인덱스 생성(derived2 key0) 작업이 필요합니다.(MySQL 5.X 버전의 경우는 DRIVED table 을 생성하면 임시테이블이 만들어지고 인덱스가 생성되지 않아 Using Join Buffer Block Nested Loop 의 실행계획이 생성되었습니다.) 이 과정에서 상당한 부하가 발생하였습니다.
 
 핸들러 API를 조회해보면 아래와 같이 스캔이 과다하게 발생되는 지점을 확인할 수 있습니다.
 
@@ -97,7 +101,7 @@ Handler_tmp_write		  1343096  <-- Derived 테이블 생성으로 인한 발생
 
 ### 😸 문제 해결
 ---
-일단 subjob을 두번 조회하는 목적이 가장 최근에 작업한 subjob 내역들을 job 별로 구분해서 보겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다.
+subjob을 두번 조회하는 이유가 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다. 변경쿼리는 아래와 같습니다.
 
 
 ```
@@ -127,9 +131,9 @@ AND subJob.status = 'S';
 | 2    | LATERAL DERIVED | subJob      | ref    | jobId,idx_subjob_01 | jobId       | 5       | frozen.job.id                    | 1    | Using temporary         |
 
 >실행계획 설명
->>1. customer_name 이 'Customer#1', 'Customer#2' 값을 찾습니다.
->>2. OCT_TOTALS 뷰를 구체화합니다. 모든 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
->>3. 고객 테이블과 조인합니다.
+>>1. job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다.(job.status = 'P')
+>>2. A 뷰를 구체화합니다. ***주작업의 상태가 'P'에 해당하는 하위작업만을 집계합니다.*** 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다.
+>>4. 단계1로 만들어진 결과셋과 A뷰를 조인합니다.(드라이빙 테이블 : 1 결과셋, 드리븐테이블 : A뷰)
 
 
 핸들러 API 수치도 확인해봅니다.
@@ -218,9 +222,8 @@ WHERE
 >>2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
 >>3. 고객 테이블과 조인합니다.
 
-<br/>
-
 주목해야할 점은 id = 2 에 "LATERAL DERIVED"로 표기된점과 ref 값에 test.customer.customer_id 가 들어온 점입니다. 일반적인 DERIVED TABLE에서는 ref 값은 NULL 입니다.
+즉, DERIVED TABLE을 만들 때 2명의 고객('Customer#1', 'Customer#2')에 대한 customer_id가 푸시되면서 집계 처리범위를 감소시킨 것입니다.
 
 <br/>
 
@@ -228,7 +231,6 @@ WHERE
 ---
 
 그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 
-
 WINDOW 함수를 이용해 쿼리 형태를 바꾼 것과 어떤 차이가 있길래 최적화 방식이 달라진 것인지 궁금해졌습니다.
 
 
