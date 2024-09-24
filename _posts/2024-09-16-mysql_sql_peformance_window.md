@@ -71,14 +71,12 @@ subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) �
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
-<br/>
+
 조인을 위한 인덱스 최적화는 모두 되어 있습니다. job이 드라이빙 테이블이되고 subJob 을 이후 접근합니다. ``` ON job.id = subJob.jobId AND job.step = subJob.type ``` 으로 인한 접근이구요. 이후에 jobId 별 id 의 최댓값을 뽑기 위해 DERIVED 처리된 subJob 테이블의 결과 집합을 조인하는 모습을 볼 수 있습니다. ``` ON subJob.id = A.LatestId  ``` 
-<br/>
+
 병목 지점은 id 2 구간 입니다. DERIVED 의 결과 집합을 임시테이블에 적재하기 위해 3백여만건의 레코드를 읽어들여야 하고 조인을 위한 인덱스 생성(***derived2***의 ***key0***) 작업이 필요합니다.(MySQL 5.X 버전의 경우는 DRIVED table 을 생성하면 임시테이블이 만들어지고 인덱스가 생성되지 않아 Using Join Buffer Block Nested Loop 의 실행계획이 생성되었습니다.) 이 과정에서 상당한 부하가 발생하였습니다.
 
-
 핸들러 API를 조회해보면 아래와 같이 스캔이 과다하게 발생되는 지점을 확인할 수 있습니다.
-<br/>
 
 ```
 Variable_name             Value    
@@ -94,11 +92,12 @@ Handler_read_rnd_deleted  0
 Handler_read_rnd_next     419356  <-- 조인시 Derived 테이블 접근으로 인한 발생
 Handler_tmp_write		  1343096  <-- Derived 테이블 생성으로 인한 발생
 ```
+
 <br/>
 
 ### 😸 문제 해결
 ---
-일단 subjob을 두번 조회하는 목적이 가장 최근에 작업한 subjob 내역들을 job 별로 구분해서 보겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 MySQL, MariaDB 의 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다.
+일단 subjob을 두번 조회하는 목적이 가장 최근에 작업한 subjob 내역들을 job 별로 구분해서 보겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다.
 
 
 ```
@@ -127,7 +126,9 @@ AND subJob.status = 'S';
 | 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 2    | Using where             |
 | 2    | LATERAL DERIVED | subJob      | ref    | jobId,idx_subjob_01 | jobId       | 5       | frozen.job.id                    | 1    | Using temporary         |
 
-
+ㅇㅇㅇㅇ
+ㅇㅇㅇ
+ㅇㅇ
 
 
 ```
@@ -146,12 +147,10 @@ Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
 Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 ```
 
-<br/>
 
 그런데 2번 항목에 "LATERAL DERIVED" 라는 항목이 있습니다. 어떤 동작인지 알아봐야 할 것 같습니다. 
 
 [MariaDB 의 공식문서](https://mariadb.com/kb/en/lateral-derived-optimization/)를 찾아봅니다.
-
 "LATERAL DERIVED" 는 아래와 같은 상황일 때 동작한다고 합니다.
 
 >- The query uses a derived table (or a VIEW, or a non-recursive CTE)
