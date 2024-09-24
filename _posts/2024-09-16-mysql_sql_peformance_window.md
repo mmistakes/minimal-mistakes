@@ -126,10 +126,13 @@ AND subJob.status = 'S';
 | 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 2    | Using where             |
 | 2    | LATERAL DERIVED | subJob      | ref    | jobId,idx_subjob_01 | jobId       | 5       | frozen.job.id                    | 1    | Using temporary         |
 
-ㅇㅇㅇㅇ
-ㅇㅇㅇ
-ㅇㅇ
+>실행계획 설명
+>>1. customer_name 이 'Customer#1', 'Customer#2' 값을 찾습니다.
+>>2. OCT_TOTALS 뷰를 구체화합니다. 모든 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
+>>3. 고객 테이블과 조인합니다.
 
+
+핸들러 API 수치도 확인해봅니다.
 
 ```
 Variable_name             Value    
@@ -147,8 +150,9 @@ Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
 Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 ```
 
-
-그런데 2번 항목에 "LATERAL DERIVED" 라는 항목이 있습니다. 어떤 동작인지 알아봐야 할 것 같습니다. 
+극적인 성능 개선이네요. 이전과 Handler 의 호출 빈도수가 급격히 낮아졌고 응답시간도 10ms 이내입니다. 
+성능이 개선되었으니 바로 이슈를 종료하려 했으나 2번 항목에 눈에 잘 익지 않던 select_type 보입니다.
+바로 "LATERAL DERIVED" 라는 항목인데요. 그냥 지나치면 나중에 아쉽겠죠?ㅎ 어떤 동작인지 알아봐야 할 것 같습니다. 
 
 [MariaDB 의 공식문서](https://mariadb.com/kb/en/lateral-derived-optimization/)를 찾아봅니다.
 "LATERAL DERIVED" 는 아래와 같은 상황일 때 동작한다고 합니다.
@@ -157,12 +161,10 @@ Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 >- The derived table/View/CTE has a GROUP BY operation as its top-level operation
 >- The query only needs data from a few GROUP BY groups
 
-
 번역하자면 아래와 같습니다.
 >- Derived Table(인라인 뷰형태 혹은 비재귀 호출 형태의 WITH 절 테이블)을 사용하고, 
 >- 인라인뷰의 최상위 레벨의 쓰임이 GROUP BY 연산을 사용할 경우,
 >- SELECT 절에 많은 컬럼이 선언되지 않을 때 
-
 
 예를 들어 다음과 같은 쿼리가 있다고 가정합니다.
 
@@ -194,11 +196,11 @@ WHERE
 | 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
 | 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
 
+>실행계획 설명
+>>1. customer_name 이 'Customer#1', 'Customer#2' 값을 찾습니다.
+>>2. OCT_TOTALS 뷰를 구체화합니다. 모든 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
+>>3. 고객 테이블과 조인합니다.
 
-위의 실행계획 단계를 설명해보면 이렇습니다.
-1. customer_name 이 'Customer#1', 'Customer#2' 값을 찾습니다.
-2. OCT_TOTALS 뷰를 구체화합니다. 모든 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
-3. 고객 테이블과 조인합니다.
 
 위의 id = 2번 단계에서 모든 고객에 대한 합계를 계산하는 작업이 상당히 비효율 적입니다. 왜냐하면 우리는 고객 2명("Customer#1", "Customer#2")의 합산 결과만 알면 되기 때문입니다. 하지만 Derived Table(인라인뷰) 바깥에 해당하는 필터조건을 인라인뷰는 알지 못하기 때문에 불필요한 많은 연산 작업을 동반하게 됩니다.(고객테이블의 건수가 많으면 많을 수록 성능 부하는 심해집니다.)
 
@@ -211,10 +213,10 @@ WHERE
 | 1    | PRIMARY         | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 2    |                          |
 | 2    | LATERAL DERIVED | orders     | ref   | o_cust_id     | o_cust_id | 4       | test.customer.customer_id | 1    | Using where              |
 
-
->1. 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다.
->2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
->3. 고객 테이블과 조인합니다.
+>실행계획 설명
+>>1. 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다.
+>>2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
+>>3. 고객 테이블과 조인합니다.
 
 <br/>
 
