@@ -58,6 +58,57 @@ https://emojipedia.org/smileys#smiling-affectionate
 코드블록
 
 ```
+
+
+Window Function 은 쿼리 행 집합에 대해 집계나 정렬과유사한 연산을 지원하는 함수입니다. 그러나 집계 연산이 쿼리 행을 단일 결과 행으로 그룹화하는 반면, 윈도우 함수는 각 쿼리 행에 대한 결과를 생성합니다. 
+
+기본적인 쓰임은 OVER 구문을 같이 사용하는 것입니다. 아래와 같습니다.
+
+<br/>
+
+```
+집계합수(컬럼) OVER()
+집계합수(컬럼) OVER(PARTITION BY 기준컬럼)
+집계합수(컬럼) OVER(PARTITION BY 기준컬럼 ORDER BY 정렬컬럼 ASC|DESC)
+```
+
+
+윈도우 함수에 쓸수 있는 집계함수는 아래와 같습니다.
+
+먼저 집계함수에 적용되는 함수입니다.
+```
+AVG()
+BIT_AND()
+BIT_OR()
+BIT_XOR()
+COUNT()
+JSON_ARRAYAGG()
+JSON_OBJECTAGG()
+MAX()
+MIN()
+STDDEV_POP(), STDDEV(), STD()
+STDDEV_SAMP()
+SUM()
+VAR_POP(), VARIANCE()
+VAR_SAMP()
+```
+
+MySQL은 또한 윈도우 함수로만 사용되는 비집계 함수도 지원합니다.
+```
+CUME_DIST()
+DENSE_RANK()
+FIRST_VALUE()
+LAG()
+LAST_VALUE()
+LEAD()
+NTH_VALUE()
+NTILE()
+PERCENT_RANK()
+RANK()
+ROW_NUMBER()
+```
+
+
 </details>
 
 

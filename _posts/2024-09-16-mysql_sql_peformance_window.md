@@ -100,58 +100,8 @@ Handler_tmp_write		  1343096  <-- Derived 테이블 생성으로 인한 발생
 
 ### 😸 문제 해결
 ---
+일단 subjob을 두번 조회하는 목적이 가장 최근에 작업한 subjob 내역들을 job 별로 구분해서 보겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 MySQL, MariaDB 의 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다.
 
-
-일단 subjob을 두번 조회하는 목적이 가장 최근에 작업한 subjob 내역들을 job 별로 구분해서 보겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 MySQL, MariaDB 의 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 을 사용하고자 합니다. Window Function 은 쿼리 행 집합에 대해 집계나 정렬과유사한 연산을 지원하는 함수입니다. 그러나 집계 연산이 쿼리 행을 단일 결과 행으로 그룹화하는 반면, 윈도우 함수는 각 쿼리 행에 대한 결과를 생성합니다. 
-
-기본적인 쓰임은 OVER 구문을 같이 사용하는 것입니다. 아래와 같습니다.
-
-<br/>
-
-```
-집계합수(컬럼) OVER()
-집계합수(컬럼) OVER(PARTITION BY 기준컬럼)
-집계합수(컬럼) OVER(PARTITION BY 기준컬럼 ORDER BY 정렬컬럼 ASC|DESC)
-```
-
-
-윈도우 함수에 쓸수 있는 집계함수는 아래와 같습니다.
-
-먼저 집계함수에 적용되는 함수입니다.
-```
-AVG()
-BIT_AND()
-BIT_OR()
-BIT_XOR()
-COUNT()
-JSON_ARRAYAGG()
-JSON_OBJECTAGG()
-MAX()
-MIN()
-STDDEV_POP(), STDDEV(), STD()
-STDDEV_SAMP()
-SUM()
-VAR_POP(), VARIANCE()
-VAR_SAMP()
-```
-
-MySQL은 또한 윈도우 함수로만 사용되는 비집계 함수도 지원합니다.
-```
-CUME_DIST()
-DENSE_RANK()
-FIRST_VALUE()
-LAG()
-LAST_VALUE()
-LEAD()
-NTH_VALUE()
-NTILE()
-PERCENT_RANK()
-RANK()
-ROW_NUMBER()
-```
-
-
-저는 그중에서도 job 내역별로 가장 최근의 subjob 내역을 확인하기 위해 ROW_NUMBER() 를 사용하려 합니다. 
 
 ```
 SELECT 컬럼....
@@ -276,9 +226,9 @@ WHERE
 
 <br/>
 
-1. 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다.
-2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
-3. 고객 테이블과 조인합니다.
+>1. 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다.
+>2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
+>3. 고객 테이블과 조인합니다.
 
 <br/>
 
