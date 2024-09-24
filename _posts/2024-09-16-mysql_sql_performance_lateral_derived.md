@@ -14,7 +14,7 @@ last_modified_at: 2024-09-16
 comments: true
 ---
 
-### 💻 Azure MySQL Database, AWS RDS MariaDB로 이전을 마치다
+### 💻 Azure MySQL, AWS RDS MariaDB로 이전을 마치다
 --- 
 제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.(제가 지향하는건 아니구요 또르르...😢)
 
@@ -114,7 +114,7 @@ Handler_tmp_write         1343096  <-- Derived 테이블 생성으로 인한 발
 
 <br/>
 
-### 😸 문제 해결
+### 😸 Derived Table 성능 문제 해결
 ---
 
 하위작업(subjob) 테이블을 두번 조회하는 이유가 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id) 내역만을 조회하겠다는 것이므로 이에 맞춰서 쿼리를 재작성 하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다. 변경쿼리는 아래와 같습니다.
@@ -260,7 +260,7 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 
 <br/>
 
-### 😸 사용시 주의점
+### 😸 Lateral Derived 사용시 주의점
 ---
 
 그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 똑같이 인라인뷰에 집계함수를 적용한 것인데 말이죠.
