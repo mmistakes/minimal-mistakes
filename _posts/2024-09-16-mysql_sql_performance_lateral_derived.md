@@ -1,5 +1,5 @@
 ---
-title: "[MySQL/MariaDB] Lateral Drived 최적화"
+title: "[MySQL/MariaDB] Lateral Drived 최적화를 통한 성능 개선 사례"
 excerpt: "MySQL, MariaDB의 인라인뷰 사용시 Lateral Drived 최적화를 이용하여 쿼리 성능을 개선한 사례를 공유합니다."
 #layout: archive
 categories:
@@ -72,8 +72,8 @@ subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) �
 >실행계획 설명
 >>1. job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다.(job.status = 'P')
 >>2. 단계1의 결과셋과 subjob을 조인합니다. 
->>>- 단계1의 job.id 값을 상수화 시켜 subjob.jobId 에 대입하며 전달합니다. 스토리지 엔진 영역으로 푸시되는 조건입니다.(access predicate)
->>>- 단계1의 job.step 값을 상수값으로 전달받아 subJob.type 에 대입하며 전달합니다. MySQL 엔진 영역으로 필터링 되는 조건입니다.(filter predicate)
+>>- 단계1의 job.id 값을 상수화 시켜 subjob.jobId 에 대입하며 전달합니다. 스토리지 엔진 영역으로 푸시되는 조건입니다.(access predicate)
+>>- 단계1의 job.step 값을 상수값으로 전달받아 subJob.type 에 대입하며 전달합니다. MySQL 엔진 영역으로 필터링 되는 조건입니다.(filter predicate)
 >>
 >>3. A 뷰를 구체화합니다. 전체 하위작업을 주작업으로 집계합니다. 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다.
 >>4. 단계1,2 로 만들어진 결과셋과 A뷰를 조인합니다.(드라이빙 테이블 : 1,2 결과셋, 드리븐테이블 : A뷰)
