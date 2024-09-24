@@ -122,20 +122,21 @@ Handler_tmp_write         1343096  <-- Derived 테이블 생성으로 인한 발
 ```sql
 SELECT 컬럼....
 	subJob.updatedAt AS sj_updatedAt
-FROM (
-    SELECT *
-         , ROW_NUMBER() OVER (PARTITION BY jobId ORDER BY id DESC) AS rn
-    FROM subJob
-) subJob
-INNER JOIN job ON job.id = subJob.jobId 
-AND job.step = subJob.type
+FROM job
+INNER JOIN (
+              SELECT 컬럼...
+                    , ROW_NUMBER() OVER (PARTITION BY jobId ORDER BY id DESC) AS rn
+              FROM subJob
+            ) subJob
+    ON job.id = subJob.jobId 
+    AND job.step = subJob.type
 WHERE subJob.rn = 1
 AND job.status = 'P'
 AND subJob.status = 'S';	
 ```
 
 
-```ROW_NUMBER()``` 함수는 각 행마다 숫자를 매기는 함수입니다. 숫자를 매기는 기준은 OVER절을 이용하면 되고 OVER 절 내부에 ```PARTITION BY jobId ORDER BY id DESC``` 라고 작성하여 subjob.jobId 가 동일한 행들을 그룹핑해서 subjob.id 컬럼의 내림차 순 기준으로 숫자를 할당 합니다. 이렇게 처리한 후에 alias 로 'rn' 이라는 명칭의 컬럼을 만들어주고 인라인뷰 바깥에서 WHERE subJob.rn = 1 처리로 필터합니다. 이러면 조인을 두번하는 연산은 사라집니다. 실행계획을 살펴보도록 하겠습니다.
+```ROW_NUMBER()``` 함수는 각 행마다 숫자를 매기는 함수입니다. 추가로 ```OVER (PARTITION BY jobId ORDER BY id DESC)``` 라고 작성하여 각 파티션(subjob.jobId)의 행들마다 subjob.id 컬럼의 내림차 순 기준으로 숫자를 할당하는 'rn' 이라는 명칭의 컬럼을 만들어줍니다. 그리고 인라인뷰 바깥에서 WHERE subJob.rn = 1 처리로 필터합니다. 이러면 조인을 두번하는 연산은 사라집니다. 실행계획을 살펴보도록 하겠습니다.
 
 
 | id   | select_type     | table       | type   | possible_keys      | key         | key_len | ref                              | rows | Extra                  |
@@ -161,12 +162,12 @@ Variable_name             Value
 Handler_read_first        0        
 Handler_read_key          9      
 Handler_read_last         0        
-Handler_read_next         27 <-- Derived 테이블 생성을 위한 subJob 인덱스 풀스캔으로 조회
+Handler_read_next         27
 Handler_read_prev         0        
 Handler_read_retry        0        
 Handler_read_rnd          60      
 Handler_read_rnd_deleted  0        
-Handler_read_rnd_next     19  <-- 조인시 Derived 테이블 접근으로 인한 발생
+Handler_read_rnd_next     19
 Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
 Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 ```
