@@ -409,6 +409,8 @@ FROM
 - [Lateral Derived Optimization (클릭)](https://mariadb.com/kb/en/lateral-derived-optimization/)
 - [Lateral Derived Tables (클릭)](https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html) 
 
+<br/>
+---
 
 {% assign posts = site.categories.Mysql %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
