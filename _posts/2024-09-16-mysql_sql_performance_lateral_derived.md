@@ -81,7 +81,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
-
+  
 
 **※ 실행계획 설명**
 
