@@ -10,7 +10,7 @@ last_modified_at: 2024-09-15T13:00:00+09:00
 toc: false
 ---
 
-<center><img src="https://github.com/user-attachments/assets/b86bc252-b023-4ed6-bec5-ad972173bd3c" width="30%" height="30%" style="
+<center><img src="https://github.com/user-attachments//assets/images/bio-photo2.png" width="30%" height="30%" style="
 border: 1px solid #cab6de;
 border-radius: 50%;
 padding: 5px;
