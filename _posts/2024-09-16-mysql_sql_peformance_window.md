@@ -57,7 +57,11 @@ WHERE (job.status = 'P' AND subJob.status = 'S');
 >>``` INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  ```
 
 
-subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 가장 최근에 작업한 subjob 내역들을 job 별로 조회하고 싶은 것이네요. 그런데 불필요한 조인을 한번 더하기도 하고 subjob 의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어렵겠네요. 실행계획을 살펴보겠습니다.
+subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하고 싶은 것이네요. 
+
+그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 
+
+일단 실행계획을 살펴보겠습니다.
 
 
 | id  | select_type | table      | type   | possible_keys                              | key        | key_len | ref               | rows   | Extra                    |
