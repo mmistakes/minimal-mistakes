@@ -389,8 +389,8 @@ FROM
 
 ### 📚 참고자료
 
-Lateral Derived Optimization : https://mariadb.com/kb/en/lateral-derived-optimization/
-Lateral Derived Tables : https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html
+- Lateral Derived Optimization : https://mariadb.com/kb/en/lateral-derived-optimization/
+- Lateral Derived Tables : https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html
 
 
 {% assign posts = site.categories.Mysql %}
