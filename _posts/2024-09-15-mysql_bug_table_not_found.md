@@ -16,24 +16,26 @@ comments: true
 
 어느날 갑자기 개발환경에서 ```show tables ``` 명령어로는 보이지만 조회가 불가능한 테이블이 발견되었습니다.(Load table xx failed; Table xx doesn't exist) 해당 현상이 발생된 원인에 대해서 알아보고 해결방법에 대하여 정리하였습니다.
 
+<br/>
+
+### ⚠️버그현상
 ---
-
-### 🚀버그현상
-
 해당 현상은 MySQL 5.7 환경에서 발생하는 현상으로 [버그리포트](https://bugs.mysql.com/bug.php?id=107311) 로 기재 되어 있는 현상입니다. 부모키 - 외래키의 캐릭터셋이 불일치 상태인 이후, MySQL Daemon이 재시작 하면 연관 테이블이 보이지 않는 현상이 발생합니다. DBMS 재기동 이후 물리적으로 설정된 부모 - 자식 관계 테이블 중 나중에 조회가 발생된 테이블이 보이지 않습니다. MySQL 5.7.38 릴리즈 환경에서도 지속되고 있는 현상이므로 상위버전으로 패치하거나 8버전 이상으로 업그레이드 하는 것을 권장합니다.
 
+<br/>
+
+### 😸해결방안
 ---
-### 🚀해결방안
 foreign_key_checks 변수를 0 으로 변경 후 보이지 않는 테이블 조회하면 다시 테이블에 접근할 수 있습니다. 이후 불일치한 캐릭터셋을 맞춰주는 작업을 해주시면 됩니다.
 
-```
+```sql
 set foreign_key_checks = 0;
 ```
 
-
----
+<br/>
 
 ### 🚀테스트 환경
+---
 아래의 환경에서 테스트를 진행하였습니다.
 
 ```
@@ -51,7 +53,7 @@ MySQL Version : 5.7.32 Community Version
 
 - 스키마 생성
 
-```
+```sql
 DROP TABLE `parent1`;
 DROP TABLE `parent2`;
 DROP TABLE `parent3`;
@@ -107,14 +109,13 @@ CREATE TABLE `son3` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
----
-
+<br/>
 
 ### 🚀테이블 제약 관계 손상 케이스 1) - 자식 테이블 Charset 변경
-
+---
 자식 테이블의 테이블 캐릭터셋을 UTF8MB4 로 변경 후 Deamon 재기동합니다.
 
-```
+```sql
 set foreign_key_checks=0;
 ALTER TABLE son1 CONVERT TO CHARACTER SET utf8mb4;
 ALTER TABLE son2 CONVERT TO CHARACTER SET utf8mb4;
@@ -154,15 +155,14 @@ ERROR 1146 (42S02): Table 'content_v3.parent3' doesn't exist
 
 ```
 
----
-
+<br/>
 
 ### 🚀테이블 제약 관계 손상 케이스 2) - 부모 테이블 Charset 변경
-
+---
 부모 테이블의 PK 설정을 변경해보고 동일하게 MySQL을 재기동합니다.
 
 
-```
+```sql
 set foreign_key_checks=0;
 ALTER TABLE parent1 CONVERT TO CHARACTER SET utf8mb4;
 ALTER TABLE parent2 CONVERT TO CHARACTER SET utf8mb4;
@@ -202,6 +202,7 @@ ERROR 1146 (42S02): Table 'content_v3.parent3' doesn't exist
 
 ```
 
+<br/>
 
 ---
 {% assign posts = site.categories.Mysql %}

@@ -14,8 +14,8 @@ last_modified_at: 2024-09-15
 comments: true
 ---
 
-### 🚀Outer Join 시 발생하는 성능 문제
-
+### ⚠️Outer Join 시 발생하는 성능 문제
+---
 Outer Join 사용 시 조인 절에 해당하는 ON 절이 멀티 컬럼으로 구성되어 있을 경우, 조인컬럼에 대한 복합 컬럼 인덱스를 구성하더라도 조인해야할 레코드의 처리 범위를 단일 컬럼으로만 줄일 수 있는 현상이 있습니다. 즉, Access Predicate 로 멀티 컬럼이 모두 반영이 되어야 하는데 단일 컬럼만 반영되고 Access Predicate 로 반영되지 못한 다른 컬럼들은 Filter Predicate 로 처리되어 비효율적인 인덱스 스캔, Random Access 가 발생하는 현상입니다. 다른 DBMS 에서는 나타나지 않는 현상인데 MySQL 엔진에서 발생합니다. MySQL 8.0.37 버전과 MariaDB 10.6.15 버전에서 여전히 문제가 나타납니다.
 
 #### 1) 문제 현상
@@ -24,7 +24,7 @@ Outer Join 사용 시 조인 절에 해당하는 ON 절이 멀티 컬럼으로 �
 
 문제쿼리 예시
 
-```
+```sql
   SELECT d.name
         ,e.id
         ,e.name
@@ -42,10 +42,10 @@ Outer Join의 성능 비효율로 인하여 위 쿼리의 데이터 스캔범위
 !["데이터스캔범위"](https://github.com/user-attachments/assets/93fc58f7-0785-499d-b98c-3bd77ef7ac2c "데이터스캔범위1")
 
 
+<br/>
+
+### 😸해결방안
 ---
-
-### 🚀해결방안
-
 Filter 처리되는 범위가 많아 문제가 발생하는 경우 Outer Join을 쓰지않는 방법으로 성능 문제를 해결해야만 합니다. 다양한 방법 중 다음과 같은 방법으로 문제를 해결할 수 있습니다.
 
 #### 테이블 반정규화
@@ -89,13 +89,13 @@ WHERE NOT EXISTS (
 
 부연 설명을 하자면 department 테이블과 employees 테이블의 교집합과 department 테이블 기준 차집합을 각각 추출한 후 결합하여 데이터를 리턴하는 것입니다. 후행테이블인 employees 에 INNER JOIN 으로 접근시 department_id, hire_date 가 MySQL 기능인 ICP(Index Condition Pushdown)로 인해 access predicate 로 설정되어 불필요한 데이터 스캔범위 없이 교집합을 추출해낼 수 있고 department 테이블의 차집합은 department 테이블의 데이터 건수가 작을 경우에는 dependant subquery로 풀어내고 , 반대의 경우에는 semi join으로 풀어 불필요한 데이터 스캔범위를 줄일 수 있습니다.
 
----
+<br/>
 
 ### 🚀개선사례
-
+---
 실제로 아래와 같은 쿼리에서 문제 현상을 겪었습니다. JPA를 통해 Generated 된 쿼리입니다.
 
-```
+```sql
 SELECT col1, col2, col3, col4 ...
 FROM   `obs_group` `bsGroup`
        LEFT JOIN `obs` `scd`
@@ -138,7 +138,7 @@ Handler_read_rnd_next     2
 
 위와 같은 현상을 없애기 위해 아래와 같은 형태로 쿼리를 변경하겠습니다. Outer Join은 교집합과 차집합의 결합으로 변경할 수 있습니다. 따라서 아래와 같이 Inner Join + Not Exists 의 결합으로 대체할 수 있습니다.
 
-```
+```sql
 SELECT bsInfo.*
 FROM (
 	SELECT
