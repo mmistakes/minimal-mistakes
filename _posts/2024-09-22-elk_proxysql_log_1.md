@@ -1,11 +1,11 @@
 ---
-title: "[ELK] 로그 수집시스템 - proxySQL 수집"
-excerpt: "ELK 스택을 이용하여 proxySQL의 로그를 수집하고 검색하는 시스템을 구성합니다."
+title: "[ELK] proxySQL 로그 수집"
+excerpt: "filebeat와 logstash를 이용하여 proxySQL의 로그를 수집해봅니다."
 
 categories:
   - Elk
 tags:
-  - [elk]
+  - [elk, elasticsearch, filebeat, logstash]
 #permalink: mysql-first
 toc: true
 toc_sticky: true
