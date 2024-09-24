@@ -180,6 +180,22 @@ AND subJob.status = 'S';
 
 
 
+```
+Variable_name             Value    
+------------------------  ---------
+Handler_read_first        0        
+Handler_read_key          9      
+Handler_read_last         0        
+Handler_read_next         27 <-- Derived 테이블 생성을 위한 subJob 인덱스 풀스캔으로 조회
+Handler_read_prev         0        
+Handler_read_retry        0        
+Handler_read_rnd          60      
+Handler_read_rnd_deleted  0        
+Handler_read_rnd_next     19  <-- 조인시 Derived 테이블 접근으로 인한 발생
+Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
+Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
+```
+
 
 
 <br/>
@@ -269,8 +285,15 @@ WHERE
 주목해야할 점은 id = 2 에 "LATERAL DERIVED"로 표기된점과 ref 값에 test.customer.customer_id 가 들어온 점입니다. 일반적인 DERIVED TABLE에서는 ref 값은 NULL 입니다.
 
 
-
-
+### 😸 의문점
 ---
+<br/>
+
+그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 
+
+WINDOW 함수를 이용해 쿼리 형태를 바꾼 것과 어떤 차이가 있길래 최적화 방식이 달라진 것인지 궁금해졌습니다.
+
+
+
 {% assign posts = site.categories.Mysql %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
