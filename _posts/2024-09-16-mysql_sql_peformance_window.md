@@ -17,9 +17,13 @@ comments: true
 ### 💻 Azure MySQL Database, AWS RDS MariaDB로 이전을 마치다
 --- 
 <br/>
-제가 근무하고 있는 환경은 멀티클라우드를 사용하고 있습니다. 
-그래서 AWS, Azure, GCP 를 모두 사용중입니다. 그런데 청천병력과 같은 소식이 등장했습니다.
-바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 지원을 종료한다는 이야기입니다. 그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다.(잘했다. 내자신.) 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.
+제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.(제가 지향하는건 아니구요 또르르...ㅠ)
+<br/>
+그런데 청천병력과 같은 소식이 등장했습니다. 바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 지원을 종료한다는 이야기입니다.
+
+
+
+ 그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다.(잘했다 내자신😄) 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.
 
 !["Azure MySQL Single Database 중단 소식"](https://github.com/user-attachments/assets/9e342aab-3afb-43f3-a7cf-6af2a117b596)
 
@@ -246,6 +250,24 @@ WHERE
 ```ON customer.customer_id = OCT_TOTALS.customer_id``` 절을 내부에 푸쉬함으로써 처리범위를 극적으로 감소시킬 수 있습니다. "LATERAL DERIVED" 최적화가 이루어지면 실행계획은 아래와 같이 변경됩니다.
 
 <br/>
+
+| id   | select_type     | table      | type  | possible_keys | key       | key_len | ref                       | rows | Extra                    |
+|------|-----------------|------------|-------|---------------|-----------|---------|---------------------------|------|--------------------------|
+| 1    | PRIMARY         | customer   | range | PRIMARY,name  | name      | 103     | NULL                      | 2    | Using where; Using index |
+| 1    | PRIMARY         | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 2    |                          |
+| 2    | LATERAL DERIVED | orders     | ref   | o_cust_id     | o_cust_id | 4       | test.customer.customer_id | 1    | Using where              |
+
+
+<br/>
+
+1. 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다.
+2. OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다.
+3. 고객 테이블과 조인합니다.
+
+<br/>
+
+주목해야할 점은 id = 2 에 "LATERAL DERIVED"로 표기된점과 ref 값에 test.customer.customer_id 가 들어온 점입니다. 일반적인 DERIVED TABLE에서는 ref 값은 NULL 입니다.
+
 
 
 
