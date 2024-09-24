@@ -16,7 +16,7 @@ comments: true
 
 ### 💻 Azure MySQL Database, AWS RDS MariaDB로 이전을 마치다
 --- 
-제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.(제가 지향하는건 아니구요 또르르...ㅠ)
+제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.(제가 지향하는건 아니구요 또르르...😢)
 
 그런데 청천병력과 같은 소식이 등장했습니다. 바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 지원을 종료한다는 이야기입니다.
 
@@ -24,16 +24,18 @@ comments: true
 
  그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다. 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.(잘했다 내자신😄)
 
+ MySQL 5.7 에서 MariaDB 10.6 으로 이전하면서 발생한 자잘한 이슈들이 있는데 추후에 정리를 해보겠습니다.(역시 일은 미루는게 맛이야! 응?!😲)
+
 
 <br/>
 
 ### 😲 아직 끝나지 않았다. 슬로우쿼리 발생
 ---
-하지만 안도한 순간도 잠시 슬로우 쿼리들이 감지되었고 RDS 로그를 수집하고 있던 키바나를 통해 현재 발생 중인 슬로우 쿼리들을 확인하였습니다.
+이전을 완료했다는 안도감도 잠시 슬로우 쿼리 알람이 발생하였고 RDS 로그를 수집하고 있던 키바나를 통해 현재 발생 중인 슬로우 쿼리들을 확인하였습니다.
 
 ![슬로우쿼리 발생](https://github.com/user-attachments/assets/60bf43bd-f65c-44c3-8538-40fc7527550f)
 
-역시나 ELK 로 모든 로그를 통합 관리해서 보니 손쉽게 확인할 수 있습니다. 분당 1회씩 꾸준히 발생 중 이었던 해당 쿼리는 동일한 패턴이었습니다. 응답시간은 무려 12초입니다😲
+역시나 ELK 로 모든 로그를 통합 관리해서 보니 손쉽게 확인할 수 있습니다. 분당 1회씩 꾸준히 발생 중 이던 해당 쿼리는 동일한 패턴이었습니다. 응답시간은 무려 12초입니다😲
 
 <br/>
 
@@ -42,24 +44,27 @@ comments: true
 
 쿼리는 매우 간단합니다.
 
-```
+```sql
 SELECT 컬럼....
-FROM `job` INNER JOIN subJob ON job.id = subJob.jobId AND job.step = subJob.type 
-INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId 
+FROM `job` INNER JOIN subJob 
+    ON job.id = subJob.jobId 
+    AND job.step = subJob.type 
+INNER JOIN (SELECT MAX(id) AS LatestId 
+            FROM subJob 
+            GROUP BY jobId) A 
+    ON subJob.id = A.LatestId 
 WHERE (job.status = 'P' AND subJob.status = 'S');
 ```
 
 
->아래처럼 job과 subjob 테이블을 조인하고
+>아래처럼 주작업(job) 테이블과 하위작업(subjob) 테이블을 조인하고
 >> ```FROM job INNER JOIN subJob ON job.id = subJob.jobId AND job.step = subJob.type```
 > 
->subjob 으로 INNER JOIN 을 한번 더 합니다. 응?
+>하위작업(subjob)테이블과 INNER JOIN 을 한번 더 합니다. 응?
 >>``` INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  ```
 
 
-subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하고 싶은 것이네요. 
-그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 
-일단 실행계획을 살펴보겠습니다.
+주 작업(job) 테이블과 하위작업(subjob) 테이블을 조인한 뒤 하위작업 테이블에서 주 작업번호(jobid) 를 기준으로 하위 작업번호(subjob.id) 의 최댓값을 집계한 후 이너조인 시키고 있습니다. 결국엔 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id) 내역만을 조회하고 싶은 것이었네요. 그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)테이블의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 일단 실행계획을 살펴보겠습니다.
 
 
 | id  | select_type | table      | type   | possible_keys                              | key        | key_len | ref               | rows   | Extra                    |
@@ -69,14 +74,13 @@ subJob 의 id 는 해당 테이블의 pk 입니다. 아하... 주 작업(job) �
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
->실행계획 설명
->>1. job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다.(job.status = 'P')
->>2. 단계1의 결과셋과 subjob을 조인합니다. 
->>- 단계1의 job.id 값을 상수화 시켜 subjob.jobId 에 대입하며 전달합니다. 스토리지 엔진 영역으로 푸시되는 조건입니다.(access predicate)
->>- 단계1의 job.step 값을 상수값으로 전달받아 subJob.type 에 대입하며 전달합니다. MySQL 엔진 영역으로 필터링 되는 조건입니다.(filter predicate)
->>
->>3. A 뷰를 구체화합니다. 전체 하위작업을 주작업으로 집계합니다. 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다.
->>4. 단계1,2 로 만들어진 결과셋과 A뷰를 조인합니다.(드라이빙 테이블 : 1,2 결과셋, 드리븐테이블 : A뷰)
+※ 실행계획 설명
+1. job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다.(job.status = 'P')
+2. 단계1의 결과셋과 subjob을 조인합니다. 
+- 단계1의 job.id 값을 상수화 시켜 subjob.jobId 에 대입하며 전달합니다. 스토리지 엔진 영역으로 푸시되는 조건입니다.(access predicate)
+- 단계1의 job.step 값을 상수값으로 전달받아 subJob.type 에 대입하며 전달합니다. MySQL 엔진 영역으로 필터링 되는 조건입니다.(filter predicate)
+3. A 뷰를 구체화합니다. 전체 하위작업을 주작업으로 집계합니다. 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다.
+4. 단계1,2 로 만들어진 결과셋과 A뷰를 조인합니다.(드라이빙 테이블 : 1,2 결과셋, 드리븐테이블 : A뷰)
 
 병목 지점은 rows 수치가 압도적으로 높은 id 2 구간 입니다. DERIVED 의 결과 집합을 임시테이블에 적재하기 위해 3백여만건의 레코드를 읽어들여야 하고 조인을 위한 인덱스 생성(derived2 key0) 작업이 필요합니다.(MySQL 5.X 버전의 경우는 DRIVED table 을 생성하면 임시테이블이 만들어지고 인덱스가 생성되지 않아 Using Join Buffer Block Nested Loop 의 실행계획이 생성되었습니다.) 이 과정에서 상당한 부하가 발생하였습니다.
 
