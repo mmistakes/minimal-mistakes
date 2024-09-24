@@ -15,7 +15,7 @@ last_modified_at: 2024-09-22
 comments: true
 ---
 
-ProxySQL은 MySQL의 L7 Layer에서 로드밸런싱을 돕는 Third Party 솔루션입니다. 참 고맙게 잘 쓰고 있는데요. 이번에는 ProxySQL의 로그들을 장기간 보관하고 통합으로 볼 수 있도록 로그가 발생할 때 ElasticSearch에 자동으로 보관할 수 있도록 설정해보려 합니다.
+ProxySQL은 MySQL의 L7 Layer에서 로드밸런싱을 돕는 Third Party 솔루션입니다. 참 고맙게 잘 쓰고 있는데요. 이번에는 ProxySQL의 로그들을 장기간 보관하고 통합 관리할 수 있도록 ElasticSearch에 보내는 방법을 공유드리고자 합니다.
 
 ### 🙈ProxySQL의 로그(Log) 종류
 ---
