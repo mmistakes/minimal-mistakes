@@ -368,6 +368,8 @@ set optimizer_switch='split_materialized=off'
 set optimizer_switch='split_materialized=off'
 ```
 
+<br/>
+
 ### 👉 MySQL의 Lateral Derived 설정
 
 MySQL 8.0 에서도 Lateral Derived 테이블 설정이 가능합니다. 다만 문법이 약간 달라서 기재를 해둡니다.
@@ -403,6 +405,7 @@ FROM
 특별히 어렵진 않으나 MySQL / MariaDB 간 문법이 상이하다는 점만 숙지해두면 좋을 것 같습니다.
 분량이 생각보다 길어진 것 같은데 이만 글을 줄이도록 하겠습니다. 감사합니다.
 
+<br/>
 
 ### 📚 참고자료
 
