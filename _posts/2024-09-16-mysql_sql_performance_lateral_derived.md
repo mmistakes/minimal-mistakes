@@ -81,7 +81,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
-
+<br/>
 
 **※ 실행계획 설명**
 
@@ -145,6 +145,8 @@ AND subJob.status = 'S';
 | 1    | PRIMARY         | job         | ref    | PRIMARY,idx_job_01  | idx_job_01  | 11      | const                            | 116  | Using index condition   |
 | 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 2    | Using where             |
 | 2    | LATERAL DERIVED | subJob      | ref    | jobId,idx_subjob_01 | jobId       | 5       | frozen.job.id                    | 1    | Using temporary         |
+
+<br/>
 
 **※ 실행계획 설명**
 
@@ -221,6 +223,8 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
 | 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
 
+<br/>
+
 **※ 실행계획 설명**
 
 | 단계 | 설명 |
@@ -239,6 +243,8 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1    | PRIMARY         | customer   | range | PRIMARY,name  | name      | 103     | NULL                      | 2    | Using where; Using index |
 | 1    | PRIMARY         | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 2    |                          |
 | 2    | LATERAL DERIVED | orders     | ref   | o_cust_id     | o_cust_id | 4       | test.customer.customer_id | 1    | Using where              |
+
+<br/>
 
 **※ 실행계획 설명**
 
@@ -260,8 +266,9 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 똑같이 인라인뷰에 집계함수를 적용한 것인데 말이죠.
 WINDOW 함수를 이용해 쿼리 형태를 바꾼 것과 어떤 차이가 있길래 최적화 방식이 달라진 것인지 궁금해졌습니다.
 
+<br/>
 
-#### 기존쿼리
+**기존쿼리**
 
 ```sql
 SELECT 컬럼....
@@ -275,7 +282,9 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId
 WHERE (job.status = 'P' AND subJob.status = 'S');
 ```
 
-#### 변경쿼리
+<br/>
+
+**변경쿼리**
 
 ```sql
 SELECT 컬럼....
@@ -300,7 +309,9 @@ AND subJob.status = 'S';
 개선한 쿼리에도 바깥 결과셋과 조인시 필요한 컬럼인 jobId 값을 가공한다면 LATERAL DERIVED 최적화는 불가능합니다.
 예를들면 아래와 같은 형태의 가공입니다.
 
-#### Lateral Derived 불가 쿼리 예시
+<br/>
+
+**Lateral Derived 불가 쿼리 예시**
 
 ```sql
 SELECT 컬럼....
@@ -332,8 +343,9 @@ AND subJob.status = 'S';
 실행계획을 보면 DERIVED 로 변경되었습니다. 그리고 ref 의 값도 NULL 이 되었죠. 참고로 쿼리 실행속도는 기존 속도보다 훨씬더 느려집니다ㅋㅋㅋ
 (WINDOW 함수를 썼기 때문에 인라인뷰의 결과 집합은 subjob의 전체 테이블 건수가 되니 그만큼 조인시 스캔해야할 행이 많아집니다.)
 
+<br/>
 
-#### Lateral Derived 의 제어
+**Lateral Derived 의 제어**
 
 LATERAL DERIVED 최적화는 optimizer_switch 에서도 제어가 가능합니다. split_materialized 을 on / off 시키면 되고 
 기본적으로는 on 으로 설정되어 있습니다. 개인적으로는 인라인뷰의 성능 이슈를 해결하기 위한 좋은 방안이 될 수 있기 때문에
