@@ -78,6 +78,7 @@ WHERE (job.status = 'P' AND subJob.status = 'S');
 
 
 #### ※ 실행계획 설명
+
 | 단계 | 설명 |
 |---|---|
 | 1 | job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다. (job.status = 'P') |
@@ -102,14 +103,15 @@ Handler_read_retry        0
 Handler_read_rnd          0      
 Handler_read_rnd_deleted  0        
 Handler_read_rnd_next     419356  <-- 조인시 Derived 테이블 접근으로 인한 발생
-Handler_tmp_write		  1343096  <-- Derived 테이블 생성으로 인한 발생
+Handler_tmp_write         1343096  <-- Derived 테이블 생성으로 인한 발생
 ```
 
 <br/>
 
 ### 😸 문제 해결
 ---
-subjob 테이블을 두번 조회하는 이유가 주 작업(job) 별 가장 최근에 작업한 하위작업(subjob) 내역을 조회하겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다. 변경쿼리는 아래와 같습니다.
+
+하위작업(subjob) 테이블을 두번 조회하는 이유가 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id) 내역만을 조회하겠다는 것이므로 이에 맞춰서 쿼리를 재작성 하였습니다. 이를 위해 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 중 ROW_NUMBER() 를 사용하였습니다. 변경쿼리는 아래와 같습니다.
 
 
 ```sql
