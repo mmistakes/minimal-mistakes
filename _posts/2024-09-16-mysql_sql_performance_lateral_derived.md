@@ -1,6 +1,6 @@
 ---
 title: "[MySQL/MariaDB] Lateral Drived 최적화를 통한 성능 개선 사례"
-excerpt: "MySQL, MariaDB의 인라인뷰 사용시 Lateral Drived 최적화를 이용하여 쿼리 성능을 개선한 사례를 공유합니다."
+excerpt: "MySQL, MariaDB의 Derived Table(인라인뷰) 사용시 Lateral Drived 최적화를 이용하여 쿼리 성능을 개선한 사례를 공유합니다."
 #layout: archive
 categories:
  - Mysql
@@ -81,7 +81,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
 
-<br/>
+
 
 **※ 실행계획 설명**
 
