@@ -49,7 +49,7 @@ SELECT 컬럼....
 FROM `job` INNER JOIN subJob 
     ON job.id = subJob.jobId 
     AND job.step = subJob.type 
-INNER JOIN (SELECT MAX(id) AS LatestId 
+INNER JOIN (SELECT jobId, MAX(id) AS LatestId 
             FROM subJob 
             GROUP BY jobId) A 
     ON subJob.id = A.LatestId 
@@ -65,7 +65,7 @@ FROM job INNER JOIN subJob ON job.id = subJob.jobId AND job.step = subJob.type
 하위작업(subjob)테이블과 INNER JOIN 을 한번 더 합니다. 응?
 
 ```sql
-INNER JOIN (SELECT MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  
+INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  
 ```
 
 
@@ -124,7 +124,7 @@ SELECT 컬럼....
 	subJob.updatedAt AS sj_updatedAt
 FROM job
 INNER JOIN (
-              SELECT 컬럼...
+              SELECT jobId, type, 컬럼....
                     , ROW_NUMBER() OVER (PARTITION BY jobId ORDER BY id DESC) AS rn
               FROM subJob
             ) subJob
@@ -176,7 +176,7 @@ Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 성능이 개선되었으니 바로 이슈를 종료하려 했으나 뭔가 미심쩍었습니다. 
 단순히 테이블 조인하나 빼려고 한건데 이정도의 개선이 맞는건가 싶었죠.(잘되도 의심하는 나란 녀석...😂)
 
-그 때 눈에 잘 익지 않던 select_type 보입니다. 바로 id = 2 의 "LATERAL DERIVED" 라는 항목인데요. 그냥 안되겠다는 느낌이 바로 들어 어떤 동작인지 살펴보았습니다.
+그 때 눈에 잘 익지 않던 select_type 보입니다. 바로 id = 2 의 "LATERAL DERIVED" 라는 항목인데요. 그냥 넘어가면 안되겠다는 느낌이 바로 들어 어떤 동작인지 살펴보았습니다.
 [MariaDB 의 공식문서](https://mariadb.com/kb/en/lateral-derived-optimization/)를 찾아봅니다.
 확인해본 결과 "LATERAL DERIVED" 최적화는 아래와 같은 상황일 때 동작합니다.
 
@@ -188,7 +188,7 @@ Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 
 >- Derived Table(인라인 뷰형태 혹은 비재귀 호출 형태의 WITH 절 테이블)을 사용하고, 
 >- 인라인뷰의 최상위 레벨의 쓰임이 GROUP BY 연산을 사용할 경우,
->- SELECT 절에 많은 컬럼이 선언되지 않을 때 
+>- 몇개의 GROUP BY 그룹의 데이터만 필요할 때 
 
 예를 들어 다음과 같은 쿼리가 있다고 가정합니다.
 
@@ -253,12 +253,144 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 
 <br/>
 
-### 😸 의문점
+### 😸 사용시 주의점
 ---
 
-그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 
+그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 똑같이 인라인뷰에 집계함수를 적용한 것인데 말이죠.
 WINDOW 함수를 이용해 쿼리 형태를 바꾼 것과 어떤 차이가 있길래 최적화 방식이 달라진 것인지 궁금해졌습니다.
 
+
+#### 기존쿼리
+
+```sql
+SELECT 컬럼....
+FROM `job` INNER JOIN subJob 
+    ON job.id = subJob.jobId 
+    AND job.step = subJob.type 
+INNER JOIN (SELECT jobId, MAX(id) AS LatestId 
+            FROM subJob 
+            GROUP BY jobId) A 
+    ON subJob.id = A.LatestId 
+WHERE (job.status = 'P' AND subJob.status = 'S');
+```
+
+#### 변경쿼리
+
+```sql
+SELECT 컬럼....
+	subJob.updatedAt AS sj_updatedAt
+FROM job
+INNER JOIN (
+              SELECT jobId, type, 컬럼....
+                    , ROW_NUMBER() OVER (PARTITION BY jobId ORDER BY id DESC) AS rn
+              FROM subJob
+            ) subJob
+    ON job.id = subJob.jobId 
+    AND job.step = subJob.type
+WHERE subJob.rn = 1
+AND job.status = 'P'
+AND subJob.status = 'S';	
+```
+
+
+테스트를 해본 결과 조인조건에 해당하는 컬럼이 DERIVED 테이블 내에서 가공된 컬럼에 해당한다면 LATERAL DERIVED 는 적용되지 않습니다.
+기존쿼리의 경우 바깥 결과셋과 조인시 필요한 컬럼인 LatestId 값은 MAX() 집계함수에 의해 가공된 값이므로 LATERAL DERIVED 를 적용받지 못합니다.
+
+개선한 쿼리에도 바깥 결과셋과 조인시 필요한 컬럼인 jobId 값을 가공한다면 LATERAL DERIVED 최적화는 불가능합니다.
+예를들면 아래와 같은 형태의 가공입니다.
+
+#### Lateral Derived 불가 쿼리 예시
+
+```sql
+SELECT 컬럼....
+	subJob.updatedAt AS sj_updatedAt
+FROM job
+INNER JOIN (
+              SELECT jobId * 1 as 'jobId' -- jobId 에 *1 가공
+                    , type, 컬럼....
+                    , ROW_NUMBER() OVER (PARTITION BY jobId ORDER BY id DESC) AS rn
+              FROM subJob
+            ) subJob
+    ON job.id = subJob.jobId 
+    AND job.step = subJob.type
+WHERE subJob.rn = 1
+AND job.status = 'P'
+AND subJob.status = 'S';	
+```
+
+조인컬럼이 되는 jobId 에 1을 곱하는 연산을 작성하고 실행계획을 봅니다.
+
+
+| id   | select_type     | table       | type   | possible_keys      | key         | key_len | ref                              | rows | Extra                  |
+|------|-----------------|-------------|--------|--------------------|-------------|---------|-----------------------------------|------|------------------------|
+| 1    | PRIMARY         | job         | ref    | PRIMARY,idx_job_01  | idx_job_01  | 11      | const                            | 4  | Using index condition   |
+| 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 10    | Using where             |
+| 2    | DERIVED | subJob      | ALL    | (NULL) | (NULL)       | (NULL)       | (NULL)                    | 3049555    | Using temporary         |
+
+
+실행계획을 보면 DRIVED 로 변경되었습니다. 그리고 ref 의 값도 NULL 이 되었죠. 참고로 쿼리 실행속도는 기존 속도보다 훨씬더 느려집니다ㅋㅋㅋ
+(WINDOW 함수를 썼기 때문에 인라인뷰의 결과 집합은 subjob의 전체 테이블 건수가 되니 그만큼 조인시 스캔해야할 행이 많아집니다.)
+
+
+#### Lateral Derived 의 제어
+
+LATERAL DERIVED 최적화는 optimizer_switch 에서도 제어가 가능합니다. split_materialized 을 on / off 시키면 되고 
+기본적으로는 on 으로 설정되어 있습니다. 개인적으로는 인라인뷰의 성능 이슈를 해결하기 위한 좋은 방안이 될 수 있기 때문에
+해당 옵션은 켜주는 게 맞다고 보고 있습니다.
+
+
+- LATERAL DERIVED 끄기
+
+```sql
+set optimizer_switch='split_materialized=off'
+```
+
+- LATERAL DERIVED 켜기
+
+```sql
+set optimizer_switch='split_materialized=off'
+```
+
+### 👉 MySQL의 Lateral Derived 설정
+
+MySQL 8.0 에서도 Lateral Derived 테이블 설정이 가능합니다. 다만 문법이 약간 달라서 기재를 해둡니다.
+혹시나 MySQL / MariaDB 간 전환 작업이 필요할 경우를 대비해야할 것 같습니다.
+
+[MySQL 8.0 의 Lateral Derived Tables 와 관련된 공식문서](https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html) 의 쿼리 예시를 가져와봅니다.
+
+```sql
+SELECT
+  salesperson.name,
+  max_sale.amount,
+  max_sale_customer.customer_name
+FROM
+  salesperson,
+  -- calculate maximum size, cache it in transient derived table max_sale
+  LATERAL
+  (SELECT MAX(amount) AS amount
+    FROM all_sales
+    WHERE all_sales.salesperson_id = salesperson.id)
+  AS max_sale,
+  -- find customer, reusing cached maximum size
+  LATERAL
+  (SELECT customer_name
+    FROM all_sales
+    WHERE all_sales.salesperson_id = salesperson.id
+    AND all_sales.amount =
+        -- the cached maximum size
+        max_sale.amount)
+  AS max_sale_customer;
+```
+
+인라인뷰 앞에 LATERAL 이라는 문구를 표기하고 조인조건에 해당하는 절을 인라인뷰 내부에 선언해주는 형식입니다.
+특별히 어렵진 않으나 MySQL / MariaDB 간 문법이 상이하다는 점만 숙지해두면 좋을 것 같습니다.
+분량이 생각보다 길어진 것 같은데 이만 글을 줄이도록 하겠습니다. 감사합니다.
+
+
+### 📚 참고자료
+
+Lateral Derived Optimization : https://mariadb.com/kb/en/lateral-derived-optimization/
+Lateral Derived Tables : https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html
 
 
 {% assign posts = site.categories.Mysql %}
