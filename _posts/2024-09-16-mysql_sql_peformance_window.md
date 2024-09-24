@@ -28,20 +28,21 @@ comments: true
 !["Azure MySQL Single Database 중단 소식"](https://github.com/user-attachments/assets/9e342aab-3afb-43f3-a7cf-6af2a117b596)
 
 
+<br/>
 
 ### 😲 아직 끝나지 않았다. 슬로우쿼리 발생
 ---
-<br/>
 하지만 안도한 순간도 잠시 슬로우 쿼리들이 감지되었고 RDS 로그를 수집하고 있던 키바나를 통해 현재 발생 중인 슬로우 쿼리들을 확인하였습니다.
 
 ![슬로우쿼리 발생](https://github.com/user-attachments/assets/60bf43bd-f65c-44c3-8538-40fc7527550f)
 
 역시나 ELK 로 모든 로그를 통합 관리해서 보니 손쉽게 확인할 수 있습니다. 분당 1회씩 꾸준히 발생 중 이었던 해당 쿼리는 동일한 패턴이었습니다. 응답시간은 무려 12초입니다.
 
+<br/>
 
 ### 🙈 문제 쿼리 확인
 ---
-<br/>
+
 쿼리는 매우 간단합니다.
 
 ```
@@ -95,10 +96,11 @@ Handler_read_rnd_deleted  0
 Handler_read_rnd_next     419356  <-- 조인시 Derived 테이블 접근으로 인한 발생
 Handler_tmp_write		  1343096  <-- Derived 테이블 생성으로 인한 발생
 ```
+<br/>
 
 ### 😸 문제 해결
 ---
-<br/>
+
 
 일단 subjob을 두번 조회하는 목적이 가장 최근에 작업한 subjob 내역들을 job 별로 구분해서 보겠다는 의도였기 때문에 이에 맞춰서 쿼리를 재작성 하기로 결정하였습니다. 이를 위해 MySQL, MariaDB 의 [Window Function](https://dev.mysql.com/doc/refman/8.0/en/window-functions-usage.html) 을 사용하고자 합니다. Window Function 은 쿼리 행 집합에 대해 집계나 정렬과유사한 연산을 지원하는 함수입니다. 그러나 집계 연산이 쿼리 행을 단일 결과 행으로 그룹화하는 반면, 윈도우 함수는 각 쿼리 행에 대한 결과를 생성합니다. 
 
@@ -196,8 +198,6 @@ Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
 Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 ```
 
-
-
 <br/>
 
 그런데 2번 항목에 "LATERAL DERIVED" 라는 항목이 있습니다. 어떤 동작인지 알아봐야 할 것 같습니다. 
@@ -284,10 +284,10 @@ WHERE
 
 주목해야할 점은 id = 2 에 "LATERAL DERIVED"로 표기된점과 ref 값에 test.customer.customer_id 가 들어온 점입니다. 일반적인 DERIVED TABLE에서는 ref 값은 NULL 입니다.
 
+<br/>
 
 ### 😸 의문점
 ---
-<br/>
 
 그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 
 
