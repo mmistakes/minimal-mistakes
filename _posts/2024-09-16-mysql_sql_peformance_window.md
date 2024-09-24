@@ -190,31 +190,46 @@ AND subJob.status = 'S';
 >- The derived table/View/CTE has a GROUP BY operation as its top-level operation
 >- The query only needs data from a few GROUP BY groups
 
+<br/>
+
 번역하자면 아래와 같습니다.
 >- Derived Table(인라인 뷰형태 혹은 비재귀 호출 형태의 WITH 절 테이블)을 사용하고, 
 >- 인라인뷰의 최상위 레벨의 쓰임이 GROUP BY 연산을 사용할 경우,
 >- SELECT 절에 많은 컬럼이 선언되지 않을 때 
 
+<br/>
 
-위의 조건과 같은 상황에서 
+예를 들어 다음과 같은 쿼리가 있다고 가정합니다.
 
 ```
-create view OCT_TOTALS as
-select
-  customer_id,
-  SUM(amount) as TOTAL_AMT
-from orders
-where
-  order_date BETWEEN '2017-10-01' and '2017-10-31'
-group by
-  customer_id;
+SELECT *
+FROM customer
+  INNER JOIN (
+              SELECT
+                customer_id,
+                SUM(amount) as TOTAL_AMT
+              FROM orders
+              WHERE
+                order_date BETWEEN '2017-10-01' and '2017-10-31'
+              GROUP BY
+                customer_id
+              ) OCT_TOTALS
+  ON customer.customer_id = OCT_TOTALS.customer_id
+WHERE
+  customer.customer_name IN ('Customer#1', 'Customer#2')
 ```
+<br/>
+
+위의 상황에서 MariaDB 5.3, MySQL 5.6 이전에는 다음과 같은 실행계획으로 최적화 되었습니다.
+
 
 | id   | select_type | table      | type  | possible_keys | key       | key_len | ref                       | rows  | Extra                    |
 |------|-------------|------------|-------|---------------|-----------|---------|---------------------------|-------|--------------------------|
 | 1    | PRIMARY     | customer   | range | PRIMARY,name  | name      | 103     | NULL                      | 2     | Using where; Using index |
 | 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
 | 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
+
+<br/>
 
 
 
