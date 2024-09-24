@@ -80,6 +80,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 1   | PRIMARY     | subJob     | ref    | PRIMARY,jobId,idx_subjob_01,idx_subjob_02  | jobId      | 5       | frozen.job.id     | 1      | Using where              |
 | 1   | PRIMARY     | <derived2> | ref    | key0                                       | key0       | 5       | frozen.subJob.id  |10     |                          |
 | 2   | DERIVED     | subJob     | index  | (NULL)                                     | jobId      | 5       | (NULL)            | 3049799| Using index              |
+
 <br/>
 
 **※ 실행계획 설명**
@@ -91,6 +92,7 @@ INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON s
 | 3 | A 뷰를 구체화합니다. 전체 하위작업을 주작업으로 집계합니다. 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다. |
 | 4 | 단계1,2로 만들어진 결과셋과 A뷰를 조인합니다. (드라이빙 테이블 : 1,2 결과셋, 드리븐 테이블 : A뷰) |
 
+<br/>
 
 병목 지점은 rows 수치가 압도적으로 높은 id 2 구간 입니다. DERIVED 의 결과 집합을 임시테이블에 적재하기 위해 3백여만건의 레코드를 읽어들여야 하고 조인을 위한 인덱스 생성(derived2 key0) 작업이 필요합니다. 이 과정에서 부하가 발생합니다.
 
@@ -154,7 +156,7 @@ AND subJob.status = 'S';
 | 1 | job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다. (job.status = 'P') |
 | 2 | A 뷰를 구체화합니다. ***주작업의 상태가 'P'에 해당하는 하위작업만을 집계합니다.*** 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다. |
 | 3 | 단계1로 만들어진 결과셋과 A뷰를 조인합니다. (드라이빙 테이블 : 1 결과셋, 드리븐 테이블 : A뷰) |
-
+<br/>
 
 핸들러 API 수치도 확인해봅니다.
 
@@ -221,7 +223,6 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1    | PRIMARY     | customer   | range | PRIMARY,name  | name      | 103     | NULL                      | 2     | Using where; Using index |
 | 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
 | 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
-
 <br/>
 
 **※ 실행계획 설명**
@@ -231,6 +232,7 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1 | customer_name 이 'Customer#1', 'Customer#2' 값을 찾습니다. |
 | 2 | OCT_TOTALS 뷰를 구체화합니다. 모든 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다. |
 | 3 | 고객 테이블과 조인합니다. |
+<br/>
 
 위의 id = 2번 단계에서 모든 고객에 대한 합계를 계산하는 작업은 상당히 비효율적입니다. 왜냐하면 사실 고객 2명("Customer#1", "Customer#2")의 합산 결과만 알면 되기 때문입니다. Derived Table(인라인뷰) 바깥의 WHERE 절로 인해 결국엔 고객 2명을 제외한 행들은 필터링 되니까요. 하지만 Derived Table 바깥에 해당하는 필터조건을 인라인뷰는 알 수 없기 때문에 불필요한 많은 연산 작업을 동반하게 됩니다.(고객테이블의 건수가 많으면 많을 수록 성능 부하는 심해집니다.)
 
@@ -242,7 +244,6 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1    | PRIMARY         | customer   | range | PRIMARY,name  | name      | 103     | NULL                      | 2    | Using where; Using index |
 | 1    | PRIMARY         | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 2    |                          |
 | 2    | LATERAL DERIVED | orders     | ref   | o_cust_id     | o_cust_id | 4       | test.customer.customer_id | 1    | Using where              |
-
 <br/>
 
 **※ 실행계획 설명**
@@ -252,7 +253,7 @@ MariaDB 5.3, MySQL 5.6 이전에는 위의 쿼리는 다음과 같은 실행계�
 | 1 | 고객 테이블을 스캔하여 'Customer#1', 'Customer#2'에 대한 customer_id를 찾습니다. |
 | 2 | OCT_TOTALS 뷰를 구체화합니다. 'Customer#1', 'Customer#2' 고객에 대한 OCT_TOTALS를 계산하여 임시테이블을 생성합니다. |
 | 3 | 고객 테이블과 조인합니다. |
-
+<br/>
 
 주목해야할 점은 id = 2 에 "LATERAL DERIVED"로 표기된점과 ref 값에 test.customer.customer_id 가 들어온 점입니다. 일반적인 DERIVED TABLE에서는 ref 값은 NULL 입니다.
 즉, DERIVED TABLE을 만들 때 2명의 고객('Customer#1', 'Customer#2')에 대한 customer_id가 푸시되면서 집계 처리범위를 감소시킨 것입니다.
@@ -337,12 +338,10 @@ AND subJob.status = 'S';
 | 1    | PRIMARY         | job         | ref    | PRIMARY,idx_job_01  | idx_job_01  | 11      | const                            | 4  | Using index condition   |
 | 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 10    | Using where             |
 | 2    | DERIVED | subJob      | ALL    | (NULL) | (NULL)       | (NULL)       | (NULL)                    | 3049555    | Using temporary         |
-
+<br/>
 
 실행계획을 보면 DERIVED 로 변경되었습니다. 그리고 ref 의 값도 NULL 이 되었죠. 참고로 쿼리 실행속도는 기존 속도보다 훨씬더 느려집니다ㅋㅋㅋ
 (WINDOW 함수를 썼기 때문에 인라인뷰의 결과 집합은 subjob의 전체 테이블 건수가 되니 그만큼 조인시 스캔해야할 행이 많아집니다.)
-
-<br/>
 
 **Lateral Derived 의 제어**
 
