@@ -1,5 +1,5 @@
 ---
-title: "[MySQL/MariaDB] Lateral Drived 최적화를 통한 성능 개선 사례"
+title: "[MySQL/MariaDB] Lateral Derived 최적화를 통한 성능 개선 사례"
 excerpt: "MySQL, MariaDB의 Derived Table(인라인뷰) 사용시 Lateral Drived 최적화를 이용하여 쿼리 성능을 개선한 사례를 공유합니다."
 #layout: archive
 categories:
@@ -14,11 +14,12 @@ last_modified_at: 2024-09-16
 comments: true
 ---
 
-### 💻 Azure MySQL, AWS RDS MariaDB로 이전을 마치다
+### 💻 Azure MySQL, AWS RDS MariaDB로 이전 완료
 --- 
 제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.(제가 지향하는건 아니구요 또르르...😢)
 
-그런데 청천병력과 같은 소식이 등장했습니다. 바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 지원을 종료한다는 이야기입니다.
+그런데 청천병력과 같은 소식이 등장했습니다. 바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 Single Database 서비스가 없어집니다. 그리고 강제로 Flexible Database 로 전환된다는 것이죠.
+Single Database 와 Flexible Database 의 디자인이 상이하고 접속 방식도 차이가 있기 때문에 큰 문제가 될 수 있었습니다.
 
 !["Azure MySQL Single Database 중단 소식"](https://github.com/user-attachments/assets/9e342aab-3afb-43f3-a7cf-6af2a117b596)
 
@@ -62,16 +63,15 @@ WHERE (job.status = 'P' AND subJob.status = 'S');
 FROM job INNER JOIN subJob ON job.id = subJob.jobId AND job.step = subJob.type
 ```
  
-하위작업(subjob)테이블과 INNER JOIN 을 한번 더 합니다. 응?
+인라인뷰로 감싸진 하위작업(subjob)테이블과 INNER JOIN 을 한번 더 합니다. 응?
 
 ```sql
 INNER JOIN (SELECT jobId, MAX(id) AS LatestId FROM subJob GROUP BY jobId) A ON subJob.id = A.LatestId  
 ```
 
 
-주 작업(job) 테이블과 하위작업(subjob) 테이블을 조인한 뒤 한번 더 하위작업(subjob) 테이블을 이용해서 주 작업번호(jobid) 를 기준으로 하위 작업번호(subjob.id) 의 최댓값을 집계한 인라인뷰를 만들어 이너조인 시키고 있습니다. 
-
-결국엔 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id) 내역만을 조회하고 싶은 것이었네요. 그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)테이블의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 일단 실행계획을 살펴보겠습니다.
+인라인뷰의 내용을 보니 하위 작업(subjob) 테이블에서 주 작업번호(jobid) 를 기준으로 하위 작업번호(subjob.id)의 최댓값을 집계한 결과이네요.
+결국엔 주 작업(subjob.jobid) 별로 가장 최근에 작업한 하위작업(subjob.id)들을 조회하고 싶은 것이었네요. 그런데 불필요한 조인을 한번 더하기도 하고 하위작업(subjob)테이블의 건수가 300만여 건이 넘다 보니 좋은 성능을 내기는 어려워 보입니다. 일단 실행계획을 살펴보겠습니다.
 
 
 | id  | select_type | table      | type   | possible_keys                              | key        | key_len | ref               | rows   | Extra                    |
@@ -177,7 +177,7 @@ Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
 Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
 ```
 
-뭐지? 아주 극적인 성능 개선입니다. 이전과 Handler의 호출 수를 비교했을 때 급격히 낮아졌고 응답시간도 10ms 이내입니다. 
+아주 극적인 성능 개선입니다. 이전과 Handler의 호출 수를 비교했을 때 급격히 낮아졌고 응답시간도 10ms 이내입니다. 
 성능이 개선되었으니 바로 이슈를 종료하려 했으나 뭔가 미심쩍었습니다. 
 단순히 테이블 조인하나 빼려고 한건데 이정도의 개선이 맞는건가 싶었죠.(잘되도 의심하는 나란 녀석...😂)
 
