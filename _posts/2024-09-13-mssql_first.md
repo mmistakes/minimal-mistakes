@@ -182,18 +182,35 @@ $password = "ew(0dv7}xoa>d}"       # SQL Server 로그인 비밀번호
 
 # SQL 쿼리: 각 Job 단계의 상태 및 메시지 가져오기
 $query = @"
-SELECT TOP 10 j.name AS JobName,
-   last_outcome_message AS Msg, 
-   CASE WHEN last_run_outcome = 1 THEN 'Success'
-        WHEN last_run_outcome = 0 THEN 'Failure'
-        WHEN last_run_outcome = 2 THEN 'Retry'
-        WHEN last_run_outcome = 3 THEN 'Canceled'    
+SELECT TOP (select max(st.step_id)-1 
+			from msdb.dbo.sysjobsteps st 
+			inner join msdb.dbo.sysjobs j on st.job_id = j.job_id
+			where j.name = '$JobName'
+			)
+   CONCAT('[SQLAgentJob] - ', j.name) AS JobName,
+   h.step_name  AS StepName,
+   message AS Msg, 
+   CASE WHEN run_status = 1 THEN 'Success'
+        WHEN run_status = 0 THEN 'Failure'
+        WHEN run_status = 2 THEN 'Retry'
+        WHEN run_status = 3 THEN 'Canceled'    
         ELSE 'Unknown'             
-        END AS JobStatus
-FROM msdb.dbo.sysjobs j 
-INNER JOIN msdb.dbo.sysjobservers o ON j.job_id = o.job_id
+        END AS JobStatus,
+   CASE 
+        WHEN run_status = 1 THEN '#36a64f'  -- 성공(초록색)
+        WHEN run_status = 0 THEN '#ff0000'  -- 실패(빨간색)
+        WHEN run_status = 2 THEN '#ffcc00'  -- 재시도(노란색)
+        WHEN run_status = 3 THEN '#808080'  -- 취소(회색)
+        ELSE '#000000'  -- 알 수 없음(검정색)
+   END AS JobColorCode   
+FROM msdb.dbo.sysjobhistory h
+  LEFT JOIN msdb.dbo.sysjobs j 
+ON h.job_id = j.job_id
+  LEFT JOIN (SELECT job_id, run_requested_date, stop_execution_date FROM msdb.dbo.sysjobactivity) a
+ON a.job_id = h.job_id
 WHERE 1=1
-AND j.name = '[DBA] TEST'
+ AND j.name = '$JobName'
+ORDER BY instance_id DESC;
 "@
 
 # SQL Server에서 Job 상태 조회
@@ -207,17 +224,19 @@ Print $queryResult
 try {
     foreach ($result in $queryResult) {
         $jobname = $result.JobName
+        $stepname = $result.StepName
         $status = $result.JobStatus
         $msg = $result.Msg
+        $jobcolorcode = $result.JobColorCode
         
 
         # Slack에 보낼 Payload 구성
         $payload = @{
             attachments = @(
                 @{
-                    color = "#36a64f"
+                    color = $jobcolorcode
                     title = "$jobname"
-                    text = "STATUS: $status`nMSG: $msg"  # `n으로 줄 바꿈
+                    text = "STEP: $stepname`nSTATUS: $status`nMSG: $msg"  # `n으로 줄 바꿈
                     footer = "MSSQL Agent Job"
                     ts = [int][double]::Parse((Get-Date -UFormat %s))  # 타임스탬프 추가
                 }
