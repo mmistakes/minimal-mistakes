@@ -35,14 +35,7 @@ Executed as user: User Manager\ContainerAdministrator. Could not load the DLL od
 [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750).  The step failed.
 ```
 
-<<<<<<< HEAD
-dll 파일이 없어서 발생하는 에러인데요. 찾아보니 저희같은 Azure 의 관리형 DBMS 를 사용할 경우 기능을 지원하지 않았습니다. 그렇게 서칭을 하다가 SQL Agent Job 에 Powershell 코드를 삽입할 수 있다는 것을 알게 되었는데요. PowerShell이 가능하다면 PowerShell 코드를 통해 REST API 를 호출해서 Slack 전송을 하면 되는 것 아니야? 라는 생각이 들었고 부랴부랴 테스트를 하게 되었습니다.
-=======
-dll 파일이 없어서 발생하는 에러인데요. 찾아보니 저희같은 Azure 의 관리형 MSSQL DBMS를 사용할 경우 해당 기능이 지원이 불가능 한 것이었습니다.
-그러게 서칭을 하다가 SQL Agent Job 에 Powershell 코드를 삽입할 수 있다는 것을 알게 되었습니다. 그렇다면 PowerShell을 통해 REST API 를 호출할 수 있다면 Slack 전송도 가능한것 아니야? 라는 생각이 들어 부랴부랴 테스트를 하게 되었습니다.
->>>>>>> 54ac5a0b1a2c78deb4bed78cfc2bdaf156cfb8b1
-
-
+dll 파일이 없어서 발생하는 에러인데요. 찾아보니 저희같은 Azure의 관리형 DBMS 를 사용할 경우 기능을 지원하지 않았습니다. 그렇게 서칭을 하다가 SQL Agent Job 에 Powershell 코드를 삽입할 수 있다는 것을 알게 되었는데요. PowerShell이 가능하다면 PowerShell 코드를 통해 REST API 를 호출해서 Slack 전송을 하면 되는 것 아니야? 라는 생각이 들었고 부랴부랴 테스트를 하게 되었습니다. 
 
 테스트 코드는 아래와 같습니다.
 
