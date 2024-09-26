@@ -35,7 +35,12 @@ Executed as user: User Manager\ContainerAdministrator. Could not load the DLL od
 [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750)  Could not load the DLL odsole70.dll, or one of the DLLs it references. Reason: 2(The system cannot find the file specified.). [SQLSTATE 42000] (Error 17750).  The step failed.
 ```
 
+<<<<<<< HEAD
 dll 파일이 없어서 발생하는 에러인데요. 찾아보니 저희같은 Azure 의 관리형 DBMS 를 사용할 경우 기능을 지원하지 않았습니다. 그렇게 서칭을 하다가 SQL Agent Job 에 Powershell 코드를 삽입할 수 있다는 것을 알게 되었는데요. PowerShell이 가능하다면 PowerShell 코드를 통해 REST API 를 호출해서 Slack 전송을 하면 되는 것 아니야? 라는 생각이 들었고 부랴부랴 테스트를 하게 되었습니다.
+=======
+dll 파일이 없어서 발생하는 에러인데요. 찾아보니 저희같은 Azure 의 관리형 MSSQL DBMS를 사용할 경우 해당 기능이 지원이 불가능 한 것이었습니다.
+그러게 서칭을 하다가 SQL Agent Job 에 Powershell 코드를 삽입할 수 있다는 것을 알게 되었습니다. 그렇다면 PowerShell을 통해 REST API 를 호출할 수 있다면 Slack 전송도 가능한것 아니야? 라는 생각이 들어 부랴부랴 테스트를 하게 되었습니다.
+>>>>>>> 54ac5a0b1a2c78deb4bed78cfc2bdaf156cfb8b1
 
 
 
@@ -70,16 +75,27 @@ $utf8Payload = [System.Text.Encoding]::UTF8.GetString($bytes)
 Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json; charset=utf-8' -Body $utf8Payload
 ```
 
+<<<<<<< HEAD
 <br/>
 
 코드를 대략적으로 설명하면 다음과 같습니다.
 
 **웹훅주소를 지정 변수**
+=======
+
+코드를 대략적으로 설명하면 다음과 같습니다.
+
+- 웹훅주소를 지정하는 변수입니다.
+>>>>>>> 54ac5a0b1a2c78deb4bed78cfc2bdaf156cfb8b1
  
 ```powershell
 $webhookUrl = "슬랙웹훅주소"
 ```
+<<<<<<< HEAD
 위 변수에 url 주소를 입력하면 됩니다. 운영환경에 적용할 시에는 대부분 공인망은 막혀있을 것이므로 slack 용 proxy 서버를 하나 만들어서 경유해야합니다.
+=======
+- 위 변수에 url 주소를 입력하면 됩니다. 운영환경에 적용할 시에는 대부분 공인망은 막혀있을 것이므로 slack 용 proxy 서버를 하나 만들어서 경유해야합니다.
+>>>>>>> 54ac5a0b1a2c78deb4bed78cfc2bdaf156cfb8b1
 
 - Slack 메시지 내용 구성
 
