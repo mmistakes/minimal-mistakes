@@ -280,7 +280,7 @@ $webhookUrl = "슬랙웹훅주소"
 
 아래 그림과 같이 슬랙으로 메시지가 전송된 것을 확인할 수 있었습니다.
 
-![Slack 발송 확인](https://github.com/user-attachments/assets/67a891aa-9e21-4e36-b8f1-df65f54e5a0e)
+![Slack 발송 확인](https://github.com/user-attachments/assets/364c83ca-8d4b-45da-8563-08ed7d8aed2d)
 
 <br/>
 
