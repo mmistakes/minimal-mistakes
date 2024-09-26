@@ -155,31 +155,95 @@ Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json; 
 
 <br/>
 
-### 🙈ProxySQL 로그별 Filebeat 설정
+### 🚀고도화 - SQL Agent Job 의 Slack 알람 보내기
 ---
-이빅션 쓰레드는 한정된 공유캐시의 공간을 확보하기 위해 적절히 제거할 수 있는 페이지를 디스크 영역으로 동기화 시키는 작업을 수행하는데 이 때 하자드 포인터를 참조하여 공유 캐시에 제거 가능한지 여부를 확인합니다. 
+그렇다면 현재 코드에 살을 입혀 좀더 고도화를 해보면 좋을 것 같습니다. 
 
-사용자 쓰레드는 사용자의 쿼리를 처리하기 위해 WiredTiger 의 공유캐시를 참조할 때 먼저 하자드 포인터에 자신이 참조하는 페이지를 등록합니다. 그리고 사용자 쓰레드가 쿼리를 처리하는 동안 이빅션 쓰레드는 동시에 캐시에서 제거해야 할 데이터 페이지를 골라 캐시에서 삭제하는 작업을 실행합니다. 이때 "이빅션 쓰레드"는 적절히 제거할 수 있는 페이지(자주 사용되지 않는 페이지)를 골라 먼저 하자드 포인터에 등록돼 있는지 확인합니다.
+필요한 것이라하면 아래 정도가 됩니다.
 
-WiredTiger 스토리지 엔진에서 사용할 수 있는 하자드 포인터의 최대 개수는 기본적으로 1,000개로 제한돼 있습니다. 만약 하자드 포인터의 개수가 부족해 WiredTiger 스토리지 엔진의 처리량이 느려진다면 WiredTiger 스토리지 엔진의 옵션을 변경하여 하자드 포인터의 최대 개수를 1,000개 이상으로 설정할 수 있습니다.
+- 스케쥴링된 작업들의 작업 이상여부 판단 로직
+- 이상여부에 따라 다른 메시지 출력("작업성공" or "작업실패")
+- 메시지 색상(작업실패:빨간색, 작업성공:초록색)
 
-MongoDB 서버의 설정 파일을 이용해 하자드 포인터의 개수를 변경하려면, 다음과 같이 `configString` 옵션에 `hazard_max` 옵션을 설정합니다.
+위의 요건들을 고려하여 코드를 추가로 만들어 줍니다. 테스트 코드는 아래와 같습니다.
+
+```powershell
+
+# 변수 설정
+$JobName = "$(ESCAPE_SQUOTE(JOBNAME))"  # JOBNAME을 가져오는 코드
+
+$webhookUrl = "http://hooks.slack.com.local.wavve.com/services/TPCTZ84AK/B048GQ98CLA/MBQXEQ0gwVKO9ATy2QODANyc"
+
+# SQL Server 연결 정보
+$serverInstance = "qa-sql-prdb-paas.076dab551c44.database.windows.net"
+$database = "msdb"
+$username = "wavve"               # SQL Server 로그인 사용자 이름
+$password = "ew(0dv7}xoa>d}"       # SQL Server 로그인 비밀번호
+
+# SQL 쿼리: 각 Job 단계의 상태 및 메시지 가져오기
+$query = @"
+SELECT TOP 10 j.name AS JobName,
+   last_outcome_message AS Msg, 
+   CASE WHEN last_run_outcome = 1 THEN 'Success'
+        WHEN last_run_outcome = 0 THEN 'Failure'
+        WHEN last_run_outcome = 2 THEN 'Retry'
+        WHEN last_run_outcome = 3 THEN 'Canceled'    
+        ELSE 'Unknown'             
+        END AS JobStatus
+FROM msdb.dbo.sysjobs j 
+INNER JOIN msdb.dbo.sysjobservers o ON j.job_id = o.job_id
+WHERE 1=1
+AND j.name = '[DBA] TEST'
+"@
+
+# SQL Server에서 Job 상태 조회
+$connectionString = "Server=$serverInstance;Database=$database;User ID=$username;Password=$password;"
+$queryResult = Invoke-Sqlcmd -ConnectionString $connectionString -Query $query
+
+# SQL 결과 출력 (디버깅용)
+Print $queryResult
+
+# Slack 메시지 내용 구성
+try {
+    foreach ($result in $queryResult) {
+        $jobname = $result.JobName
+        $status = $result.JobStatus
+        $msg = $result.Msg
+        
+
+        # Slack에 보낼 Payload 구성
+        $payload = @{
+            attachments = @(
+                @{
+                    color = "#36a64f"
+                    title = "$jobname"
+                    text = "STATUS: $status`nMSG: $msg"  # `n으로 줄 바꿈
+                    footer = "MSSQL Agent Job"
+                    ts = [int][double]::Parse((Get-Date -UFormat %s))  # 타임스탬프 추가
+                }
+            )
+        }
+
+        # Payload를 JSON으로 변환
+        $payloadJson = $payload | ConvertTo-Json -Depth 3
+
+        # UTF-8 인코딩을 명시적으로 지정하여 Webhook 호출
+        $utf8Encoding = [System.Text.Encoding]::UTF8
+        $bytes = [System.Text.Encoding]::UTF8.GetBytes($payloadJson)
+        $utf8Payload = [System.Text.Encoding]::UTF8.GetString($bytes)
+
+        # Webhook 호출하여 Slack으로 메시지 전송
+        Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json; charset=utf-8' -Body $utf8Payload
+    }
+} catch {
+    Write-Host "Error during processing: $_"
+}
+
+```
 
 <br/>
 
-### 📚개념확인
----
-이빅션 쓰레드는 한정된 공유캐시의 공간을 확보하기 위해 적절히 제거할 수 있는 페이지를 디스크 영역으로 동기화 시키는 작업을 수행하는데 이 때 하자드 포인터를 참조하여 공유 캐시에 제거 가능한지 여부를 확인합니다. 
-
-<br/>
-
-### 🚀환경테스트
----
-이빅션 쓰레드는 한정된 공유캐시의 공간을 확보하기 위해 적절히 제거할 수 있는 페이지를 디스크 영역으로 동기화 시키는 작업을 수행하는데 이 때 하자드 포인터를 참조하여 공유 캐시에 제거 가능한지 여부를 확인합니다. 
-
-<br/>
-
-### 😸문제해결
+### 😸보완할 점 - SQL Agent Job 의 Slack 알람 보내기
 ---
 이빅션 쓰레드는 한정된 공유캐시의 공간을 확보하기 위해 적절히 제거할 수 있는 페이지를 디스크 영역으로 동기화 시키는 작업을 수행하는데 이 때 하자드 포인터를 참조하여 공유 캐시에 제거 가능한지 여부를 확인합니다. 
 
