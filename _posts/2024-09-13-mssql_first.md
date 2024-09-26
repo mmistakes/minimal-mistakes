@@ -72,6 +72,7 @@ Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json; 
 코드를 설명하면 다음과 같습니다.
 
 
+
 **웹훅 주소 지정**
 
 ``` powershell
@@ -103,12 +104,21 @@ $payload라는 변수에 슬랙 메시지의 내용을 구성하는 attachments 
 
 
 
-**Payload를 JSON으로 변환**
-
 ``` powershell
-$payloadJson = $payload | ConvertTo-Json -Depth 3
-
+$payload = @{
+    attachments = @(
+        @{
+            color = "#36a64f"
+            title = "발송테스트"
+            text = "STATUS: complete`n`nMSG: 작업완료"  # `n으로 줄 바꿈
+            footer = "MSSQL Agent Job"
+            ts = [int][double]::Parse((Get-Date -UFormat %s))  # 타임스탬프 추가
+        }
+    )
+}
 ```
+
+$payload라는 변수에 슬랙 메시지의 내용을 구성하는 attachments 정보를 설정합니다.
 
 
 
