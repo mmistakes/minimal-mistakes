@@ -75,31 +75,23 @@ $utf8Payload = [System.Text.Encoding]::UTF8.GetString($bytes)
 Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json; charset=utf-8' -Body $utf8Payload
 ```
 
-<<<<<<< HEAD
-<br/>
 
-코드를 대략적으로 설명하면 다음과 같습니다.
+코드를 설명하면 다음과 같습니다.
 
-**웹훅주소를 지정 변수**
-=======
 
-코드를 대략적으로 설명하면 다음과 같습니다.
+**웹훅 주소 지정**
 
-- 웹훅주소를 지정하는 변수입니다.
->>>>>>> 54ac5a0b1a2c78deb4bed78cfc2bdaf156cfb8b1
- 
-```powershell
+``` powershell
 $webhookUrl = "슬랙웹훅주소"
 ```
-<<<<<<< HEAD
-위 변수에 url 주소를 입력하면 됩니다. 운영환경에 적용할 시에는 대부분 공인망은 막혀있을 것이므로 slack 용 proxy 서버를 하나 만들어서 경유해야합니다.
-=======
-- 위 변수에 url 주소를 입력하면 됩니다. 운영환경에 적용할 시에는 대부분 공인망은 막혀있을 것이므로 slack 용 proxy 서버를 하나 만들어서 경유해야합니다.
->>>>>>> 54ac5a0b1a2c78deb4bed78cfc2bdaf156cfb8b1
 
-- Slack 메시지 내용 구성
 
-```
+위 변수에다 사용할 슬랙웹훅주소를 입력합니다. 공인 outbound 가 막혀있다면 슬랙 전용 proxy 서버의주소를 써야합니다.
+
+
+**Slack 메시지 내용 구성**
+
+``` powershell
 $payload = @{
     attachments = @(
         @{
@@ -111,6 +103,18 @@ $payload = @{
         }
     )
 }
+```
+
+$payload라는 변수에 슬랙 메시지의 내용을 구성하는 attachments 정보를 설정합니다.
+
+
+
+
+**Payload를 JSON으로 변환**
+
+``` powershell
+$payloadJson = $payload | ConvertTo-Json -Depth 3
+
 ```
 
 
