@@ -14,7 +14,7 @@ last_modified_at: 2024-09-14
 comments: true
 ---
 
-### ⚠️ MSSQL 이벤트 스케쥴러, SQL Server Agent Job의 다소 아쉬운 알람 방식
+### ⚠️ SQL Server Agent Job의 다소 아쉬운 알람 방식
 
 MSSQL은 SQL Agent Job 이라는 이벤트 스케쥴러가 있습니다. SSMS 을 이용하면 작업단계를 설정하여 원하는 시간에 반복적으로 수행할 수 있는 장점이 있기 때문에 일배치를 수행할 때 자주 사용합니다. 그런데 SQL Agent Job 의 작업 상태를 확인하기 위해서는 아래의 화면과 같이 SSMS 상에서 **[관리] - [데이터베이스 메일]** 에서 **"데이터베이스 메일 구성"** 에 들어가서 이메일 서버 주소와 SMTP Port, 이메일 표시 정보를 설정하여 알람을 받아야 합니다.
 
