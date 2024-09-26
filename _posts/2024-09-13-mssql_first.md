@@ -41,8 +41,9 @@ Executed as user: User Manager\ContainerAdministrator. Could not load the DLL od
 dll 파일이 없어서 발생하는 에러인데요. 찾아보니 저희같은 Azure의 관리형 DBMS 를 사용할 경우 기능을 지원하지 않았습니다. 그렇게 서칭을 하다가 SQL Agent Job 에 Powershell 코드를 삽입할 수 있다는 것을 알게 되었는데요. PowerShell이 가능하다면 코드 레벨에서 REST API 호출이 가능하지 않을까? 그걸로 Slack 전송을 하면 되는 것 아니야? 라는 생각이 들었고 부랴부랴 테스트를 하게 되었습니다. 
 
 
-
+<br/>
 ### 🙈 테스트
+---
 
 SQL Agent Job의 작업단계를 아래 그림과 같이 새로 추가하고 코드를 입력합니다. 단계이름을 작성해 주고 "유형" 란에 PowerShell 을 선택한 후 코드를 삽입합니다.
 
@@ -171,15 +172,15 @@ Invoke-RestMethod -Uri $webhookUrl -Method Post -ContentType 'application/json; 
 ```powershell
 
 # 변수 설정
-$JobName = "$(ESCAPE_SQUOTE(JOBNAME))"  # JOBNAME을 가져오는 코드
+$JobName = "$(ESCAPE_SQUOTE(JOBNAME))"  
 
-$webhookUrl = "http://hooks.slack.com.local.wavve.com/services/TPCTZ84AK/B048GQ98CLA/MBQXEQ0gwVKO9ATy2QODANyc"
+$webhookUrl = "슬랙웹훅주소"
 
 # SQL Server 연결 정보
-$serverInstance = "qa-sql-prdb-paas.076dab551c44.database.windows.net"
+$serverInstance = "DB서버명"
 $database = "msdb"
-$username = "wavve"               # SQL Server 로그인 사용자 이름
-$password = "ew(0dv7}xoa>d}"       # SQL Server 로그인 비밀번호
+$username = "유저명"               
+$password = "패스워드"      
 
 # SQL 쿼리: 각 Job 단계의 상태 및 메시지 가져오기
 $query = @"
@@ -237,7 +238,7 @@ try {
                 @{
                     color = $jobcolorcode
                     title = "$jobname"
-                    text = "STEP: $stepname`nSTATUS: $status`nMSG: $msg"  # `n으로 줄 바꿈
+                    text = "STEP: $stepname`nSTATUS: $status`nMSG: $msg"
                     footer = "MSSQL Agent Job"
                     ts = [int][double]::Parse((Get-Date -UFormat %s))  # 타임스탬프 추가
                 }
