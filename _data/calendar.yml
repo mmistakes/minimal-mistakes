@@ -1,20 +1,37 @@
 [
   {
     "image_path": null,
-    "alt": "Kinderparlament",
-    "title": "Kinderparlament",
+    "alt": "A2 - Ausflug Bibliothek",
+    "title": "A2 - Ausflug Bibliothek",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YjJnaTA2Z2FmcWo3NXU4Z25icWFjaXI3cDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NWZyOG1kbmM0MnI5cWVtbHY1aW11a25oODggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-09-26T08:00:00+02:00"
+      "date_time": "2024-09-27T10:30:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-09-26T09:45:00+02:00"
+      "date_time": "2024-09-27T13:30:00+02:00"
     },
-    "created": "2024-09-21T07:15:24.000Z",
-    "updated": "2024-09-25T18:48:58.065Z"
+    "created": "2024-09-26T12:05:35.000Z",
+    "updated": "2024-09-26T12:05:35.810Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A4 - Ausflug Gartenarbeitsschule Reinickendorf",
+    "title": "A4 - Ausflug Gartenarbeitsschule Reinickendorf",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NTNtcmphNW1mbXM4Y2UyOW8zZ2V2N2V1ZXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-09-30T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-09-30T13:30:00+02:00"
+    },
+    "created": "2024-09-26T12:06:26.000Z",
+    "updated": "2024-09-26T12:06:26.909Z"
   },
   {
     "image_path": null,
@@ -69,36 +86,19 @@
   },
   {
     "image_path": null,
-    "alt": "A5 - Ausflug zur Gartenarbeitsschule",
-    "title": "A5 - Ausflug zur Gartenarbeitsschule",
+    "alt": "A3 - Ausflug Bücherei",
+    "title": "A3 - Ausflug Bücherei",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=N25hZWV0cmdjMWl0OG9mM2hiaGxyMmFtYXAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-11-22T10:00:00+01:00"
+      "date_time": "2024-11-08T08:00:00+01:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-11-22T13:30:00+01:00"
+      "date_time": "2024-11-08T10:30:00+01:00"
     },
-    "created": "2024-09-02T12:11:06.000Z",
-    "updated": "2024-09-02T12:11:06.781Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug zur Gartenarbeitsschule ",
-    "title": "A5 - Ausflug zur Gartenarbeitsschule ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHY3MnN1aDB2ZmM0dnVxbWtnMWQ3Z2cxNjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-12-13T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-12-13T13:30:00+01:00"
-    },
-    "created": "2024-09-02T12:11:53.000Z",
-    "updated": "2024-09-02T12:11:53.829Z"
+    "created": "2024-09-26T12:13:48.000Z",
+    "updated": "2024-09-26T12:13:48.531Z"
   }
 ]
