@@ -1,25 +1,41 @@
 # main links
 main:
-  - title: "Category"
+  - title: "카테고리"
     url: /categories/
-  - title: "Tag"
+  - title: "태그"
     url: /tags/
-  - title: "Search"
+  - title: "검색"
     url: /search/
 
-docs:
-  - title: "목차1"
+시리즈1:
+  - title: "함께 보면 좋은 글(주제 1)"
     children:
-      - title: "Category"
-        url: /Categories/
-      - title: "Tag"
-        url: /tags/
-  - title: "목차2"
+      - title: "글 1-1"
+        url: https://www.naver.com
+      - title: "글 1-2"
+        url: /주소 1-2/
+  - title: "함께 보면 좋은 글(주제 2)"
     children:
-      - title: "Category"
-        url: /Categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "글 2-1"
+        url: /주소 2-1/
+      - title: "글 2-2"
+        url: /주소 2-2/
+
+docs2:
+  - title: "함께 보면 좋은 글(주제 3)"
+    children:
+      - title: "글 3-1"
+        url: /주소 3-1/
+      - title: "글 3-2"
+        url: /주소 3-2/
+      - title: "글 3-3"
+        url: /주소 3-3/
+  - title: "함께 보면 좋은 글(주제 4)"
+    children:
+      - title: "글 4-1"
+        url: /주소 4-1/
+
+
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

@@ -601,11 +601,11 @@ ko: &DEFAULT_KO
   page                       : "페이지"
   pagination_previous        : "이전"
   pagination_next            : "다음"
-  breadcrumb_home_label      : "Home"
+  breadcrumb_home_label      : "메인"
   breadcrumb_separator       : "/"
   menu_label                 : "토글 메뉴"
   search_label               :
-  toc_label                  : "On This Page"
+  toc_label                  : "목차"
   ext_link_label             : "직접 링크"
   less_than                  : "최대"
   minute_read                : "분 소요"
@@ -633,7 +633,7 @@ ko: &DEFAULT_KO
   comment_form_website_label : "웹사이트(선택사항)"
   comment_btn_submit         : "댓글 등록"
   comment_btn_submitted      : "등록됨"
-  comment_success_msg        : "감사합니다! 댓글이 머지된 후 확인하실 수 있습니다."
+  comment_success_msg        : "감사합니다! 댓글이 등록된 후 확인하실 수 있습니다."
   comment_error_msg          : "댓글 등록에 문제가 있습니다. 필요 필드를 작성했는지 확인하고 다시 시도하세요."
   loading_label              : "로딩중..."
   search_label_text          :
