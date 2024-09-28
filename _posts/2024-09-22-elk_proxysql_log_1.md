@@ -308,7 +308,56 @@ output.logstash:
   hosts: ["로그스태시접속주소:허용포트"]
 ```
 
-filebeat.inputs 를 통해 수집해야할 로그를 명시합니다. 그리고 저 같은 경우는 tags 를 logstash 에서 전달받은 로그를 어떤 인덱스로 보낼지 분기하기 위해 사용합니다. 자세한 내용은 logstash 설정을 언급할 때 다시 말씀드리도록 하겠습니다.
+- filebeat.inputs : 수집해야할 로그를 명시합니다. 그리고 저 같은 경우는 tags 를 logstash 에서 전달받은 로그를 어떤 인덱스로 보낼지 분기하기 위해 사용합니다. 자세한 내용은 logstash 설정을 언급할 때 다시 말씀드리도록 하겠습니다.
+
+- output.logstash : 수집된 로그를 전달하기 위한 설정입니다. 로그들을 전처리하기 위해 logstash 로 전달합니다.
+
+<br/>
+
+**proxySQL 감사로그 - filebeat 설정**
+
+감사로그용 filebeat 을 만들기 위해 /etc/filebeat 경로에 filebeat.yml 을 복사하여 filebeat_audit.yml 을 하나 만듭니다.
+
+```bash
+cp /etc/filebeat/filebeat.yml /etc/filebeat/filebeat_audit.yml
+```
+
+filebeat_audit.yml 의 주요설정입니다.
+
+```yml
+filebeat:
+  registry:
+    path: /tmp/myqsl-proxysql-audit-log-registry.json
+
+filebeat.inputs:
+- type: log
+  paths:
+    - /{datadir경로}/audit.log.*
+  tags: ["mysql-proxysql-audit-log","mysql"]
+
+output.logstash:
+  hosts: ["로그스태시주소:5503"]
+```
+
+- filebeat.registry.path : 이 설정은 Filebeat가 로그 파일의 읽은 위치를 저장하는 레지스트리 파일의 경로를 지정합니다. Filebeat는 로그 파일을 읽을 때 이미 읽은 로그를 다시 읽지 않기 위해 파일의 현재 오프셋(읽은 위치)을 레지스트리 파일에 기록합니다. 만약 Filebeat가 재시작되더라도 레지스트리 파일을 통해 중복되지 않게 로그를 읽을 수 있습니다.
+
+- filebeat.inputs.paths : 수집할 로그 파일의 경로를 정의합니다. 이 경우 datadir 경로의 audit.log.* 경로에서 로그 파일을 읽습니다. .*는 와일드카드로, 여러 개의 로그 파일을 처리할 수 있습니다. 예를 들어, audit.log, audit.log.1 등과 같은 여러 로그 파일을 포함할 수 있습니다.
+
+- tags : 태그를 설정합니다. 태그는 로그 이벤트에 메타데이터를 추가하기 위한 필드로, 로그 분석 시 필터링을 쉽게 만들어 줍니다. 이 설정에서 각 로그 이벤트에 mysql-proxysql-audit-log 및 mysql 태그가 추가됩니다. 저는 이 태그를 이용해서 logstash 에서 elasticsearch로 보낼 대 특정 인덱스로 보내는 작업을 합니다.
+
+- output.logstash.hosts: 로그 데이터를 보낼 Logstash 서버의 호스트 주소와 포트를 지정합니다. 로그스태시주소 포트 5503으로 설정되어 있습니다. 이를 통해 Filebeat는 이 Logstash 서버로 데이터를 전송하게 됩니다.
+
+
+
+<br/>
+
+**proxySQL 감사로그 - filebeat 설정**
+
+
+<br/>
+
+**proxySQL 감사로그 - filebeat 설정**
+
 
 <br/>
 
