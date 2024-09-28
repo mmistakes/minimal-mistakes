@@ -16,7 +16,7 @@ comments: true
 
 ### ⚠️Outer Join 시 발생하는 성능 문제
 ---
-Outer Join 사용 시 조인 절에 해당하는 ON 절이 멀티 컬럼으로 구성되어 있을 경우, 조인컬럼에 대한 복합 컬럼 인덱스를 구성하더라도 조인해야할 레코드의 처리 범위를 단일 컬럼으로만 줄일 수 있는 현상이 있습니다. 즉, Access Predicate 로 멀티 컬럼이 모두 반영이 되어야 하는데 단일 컬럼만 반영되고 Access Predicate 로 반영되지 못한 다른 컬럼들은 Filter Predicate 로 처리되어 비효율적인 인덱스 스캔, Random Access 가 발생하는 현상입니다. 다른 DBMS 에서는 나타나지 않는 현상인데 MySQL 엔진에서 발생합니다. MySQL 8.0.37 버전과 MariaDB 10.6.15 버전에서 여전히 문제가 나타납니다.
+Outer Join 사용 시 조인 절에 해당하는 ON 절이 멀티 컬럼으로 구성되어 있을 경우, 조인컬럼에 대한 복합 컬럼 인덱스를 구성하더라도 조인해야할 레코드의 처리 범위를 단일 컬럼으로만 줄이는 문제가 있습니다. 즉, Access Predicate 로 멀티 컬럼이 모두 반영이 되어야 하는데 단일 컬럼만 반영되고 Access Predicate 로 반영되지 못한 다른 컬럼들은 Filter Predicate 로 처리되어 비효율적인 인덱스 스캔, Random Access 가 발생하는 현상입니다. 다른 DBMS 에서는 나타나지 않는 현상인데 MySQL 엔진에서 발생합니다. MySQL 8.0.37 버전과 MariaDB 10.6.15 버전에서 여전히 문제가 나타납니다.
 
 #### 1) 문제 현상
 
