@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-US" #ko-KR
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "import Yeong"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+title_separator          : "|" #-
+subtitle                 : "success = Yeong.steady()" # site tagline that appears below site title in masthead
+name                     : "Shinyeong-Hong"
+description              : "This is Yeong's Blog"
 url                      : "https://0package.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
