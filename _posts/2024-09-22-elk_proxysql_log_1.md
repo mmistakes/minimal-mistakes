@@ -52,7 +52,7 @@ ProxySQL의 감사 로그(Audit Log)는 버전 2.0.5부터 도입되었습니다
 ![audit.log](https://github.com/user-attachments/assets/8f499ed3-0126-4309-81d3-d62ec166812b)
 
 
-지정한 파일이름뒤에 8자리의 롤링형식 숫자 파일이 생깁니다. 이러한 파일들은 추후 logrotate 를 통해 적절히 aging 처리를 해주어야 합니다.
+지정한 이름 뒤에 8자리의 롤링형식 숫자가 더해져 파일이름이 생깁니다. 이러한 파일들은 추후 logrotate 를 통해 적절히 aging 처리를 해주어야 합니다.
 
 
 **audit log 형식**
@@ -139,7 +139,7 @@ ProxySQL의 에러 로그(Error Log)는 버전 0.1부터 도입되었습니다. 
 
 **에러로그 파일 형식**
 
-현재 구현된 로그 형식은 syslog 와 유사한 일반 텍스트 형식만 지원됩니다. 각 로그는 다음과 같은 속성을 가집니다:
+현재 구현된 에러 로그의 파일 형식은 syslog 와 유사한 일반 텍스트 형식만 지원됩니다. 각 로그는 다음과 같은 속성을 가집니다:
 
 - date: 날짜 (YYYY-MM-DD 형식)
 - time: 시간 (HH:MM 로컬 시간)
@@ -308,12 +308,12 @@ output.logstash:
 
 <br/>
 
-**proxySQL 감사로그 - filebeat 설정**
+#### 1) proxySQL 감사로그 - filebeat 설정
 
 감사로그용 filebeat 을 만들기 위해 /etc/filebeat 경로에 filebeat.yml 을 복사하여 filebeat_audit.yml 을 하나 만듭니다.
 
 ```bash
-cp /etc/filebeat/filebeat.yml /etc/filebeat/filebeat_audit.yml
+cp /etc/filebeat/filebeat.yml /etc/filebeat/filebeat_proxysql_audit.yml
 ```
 
 filebeat_audit.yml 의 주요설정입니다.
@@ -345,12 +345,128 @@ output.logstash:
 
 <br/>
 
-**proxySQL 감사로그 - filebeat 설정**
+#### 2) proxySQL 에러로그 - filebeat 설정
+
+에러로그용 filebeat 을 만들기 위해 /etc/filebeat 경로에 filebeat.yml 을 복사하여 filebeat_error.yml 을 하나 만듭니다.
+
+```bash
+cp /etc/filebeat/filebeat.yml /etc/filebeat/filebeat_proxysql_error.yml
+```
+
+filebeat_error.yml 의 주요설정입니다.
+
+```yml
+filebeat:
+  registry:
+    path: /tmp/myqsl-proxysql-error-log-registry.json
+
+filebeat.inputs:
+- type: log
+  paths:
+    - /{datadir경로}/proxysql.log
+  multiline.pattern: '^\d{4}-\d{2}-\d{2}'  # 타임스탬프 패턴 (로그의 시작을 나타내는 패턴)
+  multiline.negate: true
+  multiline.match: after
+  tags: ["mysql-proxysql-error-log","mysql"]    
+
+output.logstash:
+  hosts: ["로그스태시주소:5504"]
+```
+
+대부분 위에서 언급드린 audit 의 설정과 동일합니다. 다른 부분만 설명드리자면 다음과 같습니다.
+
+- multiline.pattern: 여러 줄인 로그의 시작을 정의하는 정규 표현식을 설정 필드입니다. 패턴 '^\d{4}-\d{2}-\d{2}'는 로그의 첫 줄이 날짜 형식(예: 2024-09-29)으로 시작되는 경우를 나타냅니다. 로그에서 날짜로 시작하는 줄을 하나의 새로운 로그 항목으로 간주합니다.
+
+- multiline.negate: true로 설정되면, 패턴과 일치하지 않는 줄이 있을 때 그 줄을 이전 줄에 추가합니다. 이 설정에서 true로 지정된 이유는 다중 줄 로그가 패턴과 일치하지 않는 줄로 이어지는 경우를 처리하기 위해서입니다. 즉, 날짜로 시작하지 않는 줄들은 이전 줄의 연속으로 간주됩니다.
+
+- multiline.match: after는 패턴과 일치하는 첫 줄 이후에 나오는 줄들을 하나의 로그 항목으로 묶겠다는 의미입니다.
+예를 들어, 로그 파일에서 첫 줄이 날짜로 시작하고, 그 다음 줄들이 패턴과 일치하지 않을 경우 그 줄들을 함께 묶어 하나의 로그 항목으로 처리합니다.
 
 
 <br/>
 
-**proxySQL 감사로그 - filebeat 설정**
+#### 3) proxySQL 쿼리로그 - filebeat 설정
+
+쿼리로그용 filebeat 을 만들기 위해 /etc/filebeat 경로에 filebeat.yml 을 복사하여 filebeat_error.yml 을 하나 만듭니다.
+
+```bash
+cp /etc/filebeat/filebeat.yml /etc/filebeat/filebeat_proxysql_query.yml
+```
+
+filebeat_error.yml 의 주요설정입니다.
+
+```yml
+filebeat:
+  registry:
+    path: /tmp/myqsl-proxysql-query-log-registry.json
+
+filebeat.inputs:
+- type: log
+  paths:
+    - /{datadir경로}/queries.log.*
+  tags: ["mysql-proxysql-query-log","mysql"]  
+
+output.logstash:
+  hosts: ["로그스태시주소:5505"]
+```
+
+대부분 위에서 언급드린 audit 의 설정과 동일합니다.
+
+
+#### 4) filebeat systemd 설정
+
+각각의 filebeat의 systemd 를 만들어 보겠습니다.
+
+기존의 /usr/lib/systemd/system/filebeat.service 파일을 복사하여 각 로그용도의 system load file 을 생성합니다.
+
+```bash
+cp /usr/lib/systemd/system/filebeat.service /usr/lib/systemd/system/filebeat_proxysql_audit.service
+cp /usr/lib/systemd/system/filebeat.service /usr/lib/systemd/system/filebeat_proxysql_error.service
+cp /usr/lib/systemd/system/filebeat.service /usr/lib/systemd/system/filebeat_proxysql_query.service
+```
+
+그리고 각 파일을 열어 환경 변수들을 변경합니다. /usr/lib/systemd/system/filebeat_proxysql_audit.service 파일을 예시로 들면 다음과 같습니다.
+
+```bash
+[Unit]
+Description=Filebeat sends log files to Logstash or directly to Elasticsearch.
+Documentation=https://www.elastic.co/beats/filebeat
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+
+UMask=0027
+Environment="GODEBUG='madvdontneed=1'"
+Environment="BEAT_LOG_OPTS="
+Environment="BEAT_CONFIG_OPTS=-c /etc/filebeat/filebeat_proxysql_audit.yml" #변경항목
+Environment="BEAT_PATH_OPTS=--path.home /usr/share/filebeat --path.config /etc/filebeat --path.data /var/lib/filebeat_proxysql_audit --path.logs /var/log/filebeat_proxysql_audit" #변경항목
+ExecStart=/usr/share/filebeat/bin/filebeat --environment systemd $BEAT_LOG_OPTS $BEAT_CONFIG_OPTS $BEAT_PATH_OPTS
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+보시는 바와 같이 설정파일의 경로와 --path.data, --path.logs 의 설정을 변경합니다. 서로 겹치지 않게 주의합니다.
+
+
+아래 명령어를 통해 수정된 데몬들을 각각 활성화합니다.
+
+```bash
+systemctl enable filebeat_proxysql_audit.service
+systemctl enable filebeat_proxysql_error.service
+systemctl enable filebeat_proxysql_query.service
+```
+
+그리고 기동합니다.
+
+```bash
+systemctl start filebeat_proxysql_audit.service
+systemctl start filebeat_proxysql_error.service
+systemctl start filebeat_proxysql_query.service
+```
+
 
 
 <br/>
