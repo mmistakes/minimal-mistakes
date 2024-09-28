@@ -38,7 +38,6 @@ ProxySQL의 감사 로그(Audit Log)는 버전 2.0.5부터 도입되었습니다
 - 연결 종료
 - 스키마 변경(COM_INIT_DB)
 
-<br/>
 
 **Admin 모듈**
 
@@ -46,8 +45,6 @@ ProxySQL의 감사 로그(Audit Log)는 버전 2.0.5부터 도입되었습니다
 - 실패한 인증
 - 정상적인 연결 해제
 - 연결 종료
-
-<br/>
 
 
 저는 mysql-auditlog_filename 변수를 audit.log 라 지정하였습니다. 이후에 datadir 영역에 audit.log 가 저장되는데 아래 그림과 같은 형식으로 로그파일이 발생합니다. 
@@ -61,7 +58,7 @@ ProxySQL의 감사 로그(Audit Log)는 버전 2.0.5부터 도입되었습니다
 **audit log 형식**
 
 아래 내용을 펼치면 알 수 있듯이 각 라인마다 json 형식으로 출력됩니다.
-대부분 필드명이 직관적이라 어떤 의미인지 금방 파악이 가능합니다. 다만 extra_info 필드는 의미가 모호해서 설명을 드리자면 세션이 코드의 어느 부분에서 닫혔는지 설명하는 데만 사용되고 있습니다.
+대부분 필드명이 직관적이라 어떤 의미인지 금방 파악이 가능합니다. 다만 extra_info 필드는 의미가 모호해서 설명을 드리자면 세션이 코드의 어느 부분에서 닫혔는지를 나타냅니다.
 
 <details><summary>audit.log</summary>
 <div markdown="1">
@@ -126,7 +123,7 @@ ProxySQL의 감사 로그(Audit Log)는 버전 2.0.5부터 도입되었습니다
 
 #### 2) 에러로그
 
-ProxySQL의 에러 로그(Error Log)는 버전 0.1부터 도입되었습니다. 이 기능은 ProxySQL에서 생성된 메시지를 파일에 기록할 수 있도록 해줍니다. ProxySQL이 -f 옵션과 함께 실행되면, 모든 메시지는 stdout으로 출력됩니다. 이 기능을 활성화하려면, 설정 파일(proxysql.cnf) 에서 errorlog 변수를 설정하여 로그가 기록될 파일을 지정해야 합니다. 이 파일 경로는 절대 경로를 권장하고 있습니다.
+ProxySQL의 에러 로그(Error Log)는 버전 0.1부터 도입되었습니다. 이 기능은 ProxySQL에서 생성된 메시지를 파일에 기록할 수 있도록 해줍니다. ProxySQL이 -f 옵션과 함께 실행되면, 모든 메시지는 stdout으로 출력됩니다. 이 기능을 활성화하려면, 설정 파일(proxysql.cnf) 에서 errorlog 변수를 설정하여 로그가 기록될 파일을 지정해야 합니다. 이 변수의 기본값은 [datadir]/proxysql.log 입니다. 그리고 mysql-verbose_query_error 변수를 추가로 true로 설정하면 에러의 상세 정보가 더 많이 출력됩니다. 이 파일 경로는 절대 경로를 권장하고 있습니다.
 
 기능을 활성화하면 다음과 같은 이벤트가 기록됩니다:
 
@@ -140,9 +137,6 @@ ProxySQL의 에러 로그(Error Log)는 버전 0.1부터 도입되었습니다. 
 - 변수 설정
 
 
-errorlog: 이벤트가 기록될 에러 로그의 기본 이름을 정의하는 변수입니다. 이 변수의 기본값은 [datadir]/proxysql.log 입니다. 그리고 mysql-verbose_query_error 변수를 추가로 true로 설정하면 에러의 상세 정보가 더 많이 출력됩니다.
-
-
 **에러로그 파일 형식**
 
 현재 구현된 로그 형식은 syslog 와 유사한 일반 텍스트 형식만 지원됩니다. 각 로그는 다음과 같은 속성을 가집니다:
@@ -150,7 +144,7 @@ errorlog: 이벤트가 기록될 에러 로그의 기본 이름을 정의하는 
 - date: 날짜 (YYYY-MM-DD 형식)
 - time: 시간 (HH:MM 로컬 시간)
 - file:line: 메시지를 생성한 소스 코드의 파일, 줄 번호, 함수 이름
-- [loglevel]: 로그 레벨 (info, warn, error, debug)
+- \[loglevel\]: 로그 레벨 (info, warn, error, debug)
 - message: 상세 메시지 (여러 줄일 수 있음)
 
 ![image](https://github.com/user-attachments/assets/25e0f54a-13a2-49ca-ac6e-776f32115d72)
@@ -163,7 +157,7 @@ ProxySQL은 통과하는 쿼리를 로그로 기록할 수도 있는데 선택�
 
 버전 2.0.6 이전에는 mysql_query_rules.log를 사용하는 쿼리 규칙(Query Rules)으로 로깅을 설정할 수 있었으며, 이를 통해 매우 광범위하거나 세밀한 로깅이 가능합니다.
 
-버전 2.0.6부터는 새로운 전역 변수 mysql-eventslog_default_log가 추가되었습니다. 일치하는 규칙이 mysql_query_rules.log 값을 지정하지 않으면, mysql-eventslog_default_log가 적용됩니다. 이 변수의 기본값은 1이며, 가능한 값은 mysql-eventslog_format과 1입니다.
+버전 2.0.6부터는 새로운 전역 변수 mysql-eventslog_default_log가 추가되었습니다. mysql_query_rules.log 값을 지정하지 않으면, mysql-eventslog_default_log가 적용됩니다. 이 변수의 기본값은 1이며, 가능한 값은 mysql-eventslog_format과 1입니다.
 
 **설정**
 
@@ -282,7 +276,7 @@ SAVE MYSQL VARIABLES TO DISK;
 
 ### 📚로그수집 구조도
 ---
-ProxySQL의 로그들을 ElasticSearch에 보내는 개념은 다음과 같습니다. 세분화 시키자면 elasticsearch 클러스터 만으로도 노드 별 Role 이 다양하기 때문에 구조가 복잡해지겠지만 큰 흐름은 아래의 사진과 같습니다.
+ProxySQL의 로그들을 ElasticSearch에 보내는 개념은 다음과 같습니다. 세분화 시키자면 elasticsearch 클러스터 만으로도 노드 별 Role 이 다양하기 때문에 구조가 복잡해지겠지만 큰 흐름은 아래의 그림과 같습니다.
 
 ![ELK 스택의 로그수집 구조](https://github.com/user-attachments/assets/f4bbfcd0-8372-4ed3-bf4c-d49b81ca9758)
 
