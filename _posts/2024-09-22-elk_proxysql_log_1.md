@@ -277,10 +277,6 @@ SAVE MYSQL VARIABLES TO DISK;
 </div>
 </details>
 
-<br/>
-
-
-
 
 <br/>
 
