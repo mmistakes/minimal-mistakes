@@ -638,8 +638,6 @@ http://kibana주소:5601
 
 ![Discover](https://github.com/user-attachments/assets/e961e937-bfdd-49c3-93f4-f8a8f382e2c1 "Discover 진입 화면")
 
-<img src="https://github.com/user-attachments/assets/e961e937-bfdd-49c3-93f4-f8a8f382e2c1" title="Discover 진입 화면" alt="Discover 진입 화면"></img>
-
 좌측상단의 파란색 박스에 인덱스 선택 란을 클릭한 후 Create a data view 를 선택합니다.
 
 ![Create a data view](https://github.com/user-attachments/assets/a515a649-d0c4-47aa-ab06-e12243e215a7)
