@@ -423,7 +423,8 @@ cp /usr/lib/systemd/system/filebeat.service /usr/lib/systemd/system/filebeat_pro
 cp /usr/lib/systemd/system/filebeat.service /usr/lib/systemd/system/filebeat_proxysql_query.service
 ```
 
-그리고 각 파일을 열어 환경 변수들을 변경합니다. /usr/lib/systemd/system/filebeat_proxysql_audit.service 파일을 예시로 들면 다음과 같습니다.
+그리고 각 파일을 열어 환경 변수들을 변경합니다. 
+/usr/lib/systemd/system/filebeat_proxysql_audit.service 파일을 예시로 들면 다음과 같습니다.
 
 ```bash
 [Unit]
