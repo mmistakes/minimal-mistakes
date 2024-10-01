@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-08-20T17:04:07+08:00'
+last_modified_at: '2024-09-26T13:40:04+08:00'
 toc: false
 ---
 
@@ -25,11 +25,14 @@ toc: false
 - Remove unnecessary "type" attribute [#4956](https://github.com/mmistakes/minimal-mistakes/issues/4956)
 - The "if" means the default is never used [#4955](https://github.com/mmistakes/minimal-mistakes/issues/4955)
 - For pages without a title, show the site title only once [#4959](https://github.com/mmistakes/minimal-mistakes/issues/4959)
+- Use `documents-collection.html` partial in `home` layout.
 
 ### Bug Fixes
 
 - Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
 - Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
+- Fix reset stylesheet overruling `$doc-font-size`. [#4983](https://github.com/mmistakes/minimal-mistakes/issues/4983)
+- Fix JavaScript null error on home and splash layouts. [#4938](https://github.com/mmistakes/minimal-mistakes/issues/4938), [#4939](https://github.com/mmistakes/minimal-mistakes/pull/4939)
 
 ### Documentation & Maintenance
 
