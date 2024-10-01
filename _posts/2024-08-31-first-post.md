@@ -4,6 +4,10 @@ title: "첫 블로그 포스팅입니다."
 categories: coding
 tags: [python, blog, jekyll]
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+search: true
 ---
 
 # 오늘 처음 블로그를 만들었어요
