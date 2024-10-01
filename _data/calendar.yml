@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A4 - Ausflug Gartenarbeitsschule Reinickendorf",
-    "title": "A4 - Ausflug Gartenarbeitsschule Reinickendorf",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NTNtcmphNW1mbXM4Y2UyOW8zZ2V2N2V1ZXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-09-30T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-09-30T13:30:00+02:00"
-    },
-    "created": "2024-09-26T12:06:26.000Z",
-    "updated": "2024-09-26T12:06:26.909Z"
-  },
-  {
-    "image_path": null,
     "alt": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
     "title": "Studientag der Lehrkräfte und Erzieher*innen: Schule und Hort geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-26T12:12:59.000Z",
     "updated": "2024-09-26T12:12:59.042Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Gartenarbeitsschule",
+    "title": "A5 - Ausflug zur Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-22T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-22T13:30:00+01:00"
+    },
+    "created": "2024-09-02T12:11:06.000Z",
+    "updated": "2024-09-02T12:11:06.781Z"
   }
 ]
