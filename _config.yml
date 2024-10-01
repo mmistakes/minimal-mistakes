@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "anem1c"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "이시헌(AI_8기)"
+  avatar           : "/images/profile.jpg"
+  bio              : "Lee Si Heon"
   location         : "South Korea"
   email            :
   links:
