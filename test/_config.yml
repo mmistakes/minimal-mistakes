@@ -64,7 +64,7 @@ algolia:
 google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
-
+naver_site_verification  : "67430ab07fd9709751b36a4309114b397a4520fa" 
 # Social Sharing
 twitter:
   username               : "mmistakes"
