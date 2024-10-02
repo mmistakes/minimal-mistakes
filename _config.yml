@@ -118,7 +118,7 @@ author:
   bio              : "소소한 블로그"
   location         : "Republic Of Korea"
   email            :
-  docs:
+  links:
      - title: "Game Dev"
     children:
       - title: "Unity"
