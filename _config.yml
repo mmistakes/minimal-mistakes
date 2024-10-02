@@ -118,8 +118,8 @@ author:
   bio              : "소소한 블로그"
   location         : "Republic Of Korea"
   email            :
-  links:
-    - label: "Email"
+  docs:
+    - title: "Email"
       # icon: "fas fa-fw fa-envelope-square"
       url: "/categories/"
     - label: "Website"
