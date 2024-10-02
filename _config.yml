@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Hongryeol In"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "ROK"
+  bio              : "소소한 블로그"
+  location         : "Republic Of Korea"
   email            :
   links:
     - label: "Email"
