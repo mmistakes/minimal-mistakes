@@ -1,3 +1,6 @@
 source "https://rubygems.org"
-gemspec
-gem "webbrick", "~> 1.7"
+gemspecs
+gem "minimal-mistakes-jekyll"
+
+
+gem "webrick", "~> 1.8"
