@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Category"
-    url: /categories/
+  - title: "Search"
+    url: /search/
 
 docs:
   - title: "목차"
