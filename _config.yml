@@ -119,7 +119,7 @@ author:
   location         : "Republic Of Korea"
   email            :
   docs:
-    - title: "Email"
+    - label: "Email"
       # icon: "fas fa-fw fa-envelope-square"
       url: "/categories/"
     - label: "Website"
