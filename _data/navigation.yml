@@ -4,12 +4,12 @@ main:
     url: /search/
 
 docs:
-  - title: "목차"
+  - title: "Game Dev"
     children:
-      - title: "Category"
+      - title: "Unity"
         url: /categories/
-      # - title: "Tag"
-      #  url: /tags/
+      - title: "Unreal Engine"
+        url: /categories/
 
   # - title: "Tag"
   #  url: /tags/
