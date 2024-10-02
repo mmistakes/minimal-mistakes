@@ -12,6 +12,10 @@ permalink: /publications/
 ***
 ### 2024
 
+* <a href="" style="text-decoration:none;color:navy">Holistically Evaluating the Environmental Impact of Creating Language Models</a>              
+<span style="font-size:0.75em;">**Jacob Morrison**, Clara Na, Jared Fernandez, Tim Dettmers, Emma Strubell, Jesse Dodge</span><br>
+<span style="font-size:0.75em;">*under review*</span>
+
 * <a href="https://arxiv.org/abs/2409.02060" style="text-decoration:none;color:navy">OLMoE: Open Mixture-of-Experts Language Models</a>              
 <span style="font-size:0.75em;">Niklas Muennighoff, Luca Soldaini, Dirk Groeneveld, Kyle Lo, **Jacob Morrison**, Sewon Min, Weijia Shi, Pete Walsh, Oyvind Tafjord, Nathan Lambert, Yuling Gu, Shane Arora, Akshita Bhagia, Dustin Schwenk, David Wadden, Alexander Wettig, Binyuan Hui, Tim Dettmers, Douwe Kiela, Ali Farhadi, Noah A. Smith, Pang Wei Koh, Amanpreet Singh, Hannaneh Hajishirzi</span><br>
 <span style="font-size:0.75em;">*under review* \[[pdf](https://arxiv.org/pdf/2409.02060)\]</span>
@@ -22,15 +26,15 @@ permalink: /publications/
 
 * <a href="https://arxiv.org/abs/2406.07835" style="text-decoration:none;color:navy">SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature</a>              
 <span style="font-size:0.75em;">David Wadden\*, Kejian Shi\*, **Jacob Morrison**, Aakanksha Naik, Shruti Singh, Nitzan Barzilay, Kyle Lo, Tom Hope, Luca Soldaini, Shannon Zejiang Shen, Doug Downey, Hannaneh Hajishirzi, Arman Cohan</span><br>
-<span style="font-size:0.75em;">*under review* \[[pdf](https://arxiv.org/pdf/2406.07835)\]</span>
+<span style="font-size:0.75em;">*arXiv* \[[pdf](https://arxiv.org/pdf/2406.07835)\]</span>
 
 * <a href="https://huggingface.co/spaces/allenai/reward-bench" style="text-decoration:none;color:navy">RewardBench: A Benchmark for Evaluating Reward Models</a>              
 <span style="font-size:0.75em;">Nathan Lambert, Valentina Piyatkin, **Jacob Morrison**, LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Tom Zick, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi</span><br>
-<span style="font-size:0.75em;">*under review* \[[pdf](https://arxiv.org/pdf/2403.13787)\] \[[code](https://github.com/allenai/reward-bench/)\] \[[leaderboard](https://huggingface.co/spaces/allenai/reward-bench)\]</span>
+<span style="font-size:0.75em;">*arXiv* \[[pdf](https://arxiv.org/pdf/2403.13787)\] \[[code](https://github.com/allenai/reward-bench/)\] \[[leaderboard](https://huggingface.co/spaces/allenai/reward-bench)\]</span>
 
 * <a href="" style="text-decoration:none;color:navy">Intentionally Unintentional Speech: Why Generative AI Models Are Not Protected by the First Amendment</a>              
 <span style="font-size:0.75em;">David Atkinson, Jena D. Hwang, **Jacob Morrison**</span><br>
-<span style="font-size:0.75em;">*First Amendment Law Review (University of North Carolina)* </span>
+<span style="font-size:0.75em;">*First Amendment Law Review (University of North Carolina), Spring 2025* </span>
 
 * <a href="" style="text-decoration:none;color:navy">Unsettled Law in the Age of Generative AI: Time to Generate New Approaches?</a>              
 <span style="font-size:0.75em;">David Atkinson, **Jacob Morrison**</span><br>
