@@ -44,10 +44,55 @@ comments: true
 
 
 
+### 🚀ProxySQL 클러스터 설정
 
+mysql-server1의 ProxySQL 관리콘솔에 접속하여 ADMIN VARIABLES 를 변경합니다.
 
+```bash
+mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
+```
 
+그리고 아래와 같이 클러스터 설정에 필요한 클러스터 사용자의 정보를 추가합니다.
 
+```sql
+UPDATE global_variables SET variable_value='admin:admin;cluster_user:cluster_pass' WHERE variable_name='admin-admin_credentials';
+UPDATE global_variables SET variable_value='cluster_user' WHERE variable_name='admin-cluster_username';
+UPDATE global_variables SET variable_value='cluster_pass' WHERE variable_name='admin-cluster_password';
+```
+
+그리고 클러스터의 상태를 체크하기 위한 용도의 ADMIN VARIABLES 도 추가합니다. 명령어에 대한 설명은 주석을 참고하시면 됩니다.
+
+```sql
+/*클러스터의 상태를 확인하는 간격을 설정합니다. 이 경우 1000ms로 설정되어 있으며, 클러스터의 상태를 1초마다 점검하게 됩니다.*/
+UPDATE global_variables SET variable_value=1000 WHERE variable_name='admin-cluster_check_interval_ms';
+
+/*클러스터 상태 체크의 빈도를 설정합니다. 10으로 설정되었으므로 ProxySQL은 클러스터 상태를 10번 확인한 후 결과를 기록합니다.*/
+UPDATE global_variables SET variable_value=10 WHERE variable_name='admin-cluster_check_status_frequency';
+
+/*MySQL 쿼리 규칙을 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로, 쿼리 규칙이 클러스터에 동기화될 때 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_mysql_query_rules_save_to_disk';
+
+/*MySQL 서버 정보가 클러스터에 동기화될 때 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로 MySQL 서버 정보가 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_mysql_servers_save_to_disk';
+
+/*MySQL 사용자 정보가 클러스터에 동기화될 때 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로 MySQL 사용자 정보가 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_mysql_users_save_to_disk';
+
+/*ProxySQL 서버 정보가 클러스터에 동기화될 때 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로 ProxySQL 서버 정보가 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_proxysql_servers_save_to_disk';
+
+/*쿼리 규칙이 동기화되기 전에 몇 번의 차이점(diff)을 허용할지를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_mysql_query_rules_diffs_before_sync';
+
+/*MySQL 서버 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_mysql_servers_diffs_before_sync';
+
+/*MySQL 사용자 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_mysql_users_diffs_before_sync';
+
+/*ProxySQL 서버 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_proxysql_servers_diffs_before_sync';
+```
 
 proxysql_servers 테이블에 명시된 핵심 멤버의 정보들을 기반으로 설정을 가져옵니다. 위성 멤버의 경우 RUNTIME 단계로 proxysql_servers 설정을 반영시켜야 핵심 멤버의 정보들을 동기화합니다. 초기 동기화 과정에서 아래와 같은 에러가 반복적으로 발생합니다. 
 
