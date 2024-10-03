@@ -28,7 +28,6 @@ comments: true
 - mysql-server2 192.168.0.12
 - mysql-server3 192.168.0.13
 
-<br/>
 
 **구성정보**
 
@@ -93,6 +92,29 @@ UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_
 /*ProxySQL 서버 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
 UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_proxysql_servers_diffs_before_sync';
 ```
+
+
+위에서 반영한 어드민 변수를 런타임으로 로드하고 영구반영하기 위해 디스크에 저장합니다.
+
+```sql
+LOAD ADMIN VARIABLES TO RUNTIME;
+SAVE ADMIN VARIABLES TO DISK;
+```
+
+그리고 클러스터 멤버 중 핵심 멤버 정보를 proxysql_servers 테이블에 입력합니다. 입력 대상에서 위성 멤버는 제외해야합니다.
+
+```sql
+INSERT INTO proxysql_servers VALUES('192.168.0.11',6032,0,'proxysql_node1');
+INSERT INTO proxysql_servers VALUES('192.168.0.12',6032,0,'proxysql_node2');
+```
+
+ PROXYSQL SERVERS 정보를 런타임으로 로드하고 영구반영하기 위해 디스크에 저장합니다.
+
+ ```sql
+LOAD PROXYSQL SERVERS TO RUNTIME;
+SAVE PROXYSQL SERVERS TO DISK;
+ ```
+
 
 proxysql_servers 테이블에 명시된 핵심 멤버의 정보들을 기반으로 설정을 가져옵니다. 위성 멤버의 경우 RUNTIME 단계로 proxysql_servers 설정을 반영시켜야 핵심 멤버의 정보들을 동기화합니다. 초기 동기화 과정에서 아래와 같은 에러가 반복적으로 발생합니다. 
 
