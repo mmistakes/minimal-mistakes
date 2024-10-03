@@ -121,7 +121,7 @@ ProxySQL 의 핵심노드의 변경사항이 클러스터 전체에 반영되는
 
 ### 😸ProxySQL 클러스터 구성 테스트 
 ---
-핵심 노드와 위성 노드의 구성 개수를 유연하게 조정할 수 있습니다. 저는 핵심노드 2대를 별도 노드로 구성하고 클러스터링 하여 이중화하고 ProxySQL을 keepalived 를 이용하여 SPOF를 막기 위한 용도로 구성해보는 테스트를 해보도록 하겠습니다. 핵심노드는 2대 이상을 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 위성노드에 설정을 전파할 수 있기 때문입니다.
+간단한 테스트를 위해 HA를 고려한 ProxySQL 클러스터 구성을 해보도록 하겠습니다. 저는 핵심노드 2대를 클러스터로 구성하고 keepalived 를 이용하여 각각 active, backup 용도로 구분하였습니다. active로 선정된 핵심노드는 vip로 연결할 수 있습니다. vip를 할당받은 노드의 ProxySQL이 강제종료 되면 VRRP 프로토콜에 의해 backup 상태의 노드가 active로 전환됩니다. 구성한 ProxySQL 2대를 모두 핵심 노드로 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 설정을 전파할 수 있기 때문입니다.
 
 ![keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안](https://github.com/user-attachments/assets/816a403c-b937-4453-8ba7-ac523f06642a)
 [그림5] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
