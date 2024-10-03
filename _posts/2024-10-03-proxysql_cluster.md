@@ -70,7 +70,7 @@ AWS 환경인 경우 MySQL Aurora 클러스터를 사용하고 있다면 \[그�
 - NLB에 설정된 리스너를 통해 API의 요청을 수신하고 요청 트래픽을 대상 그룹 내 ProxySQL 들로 분배합니다.
 - 각 ProxySQL에는 Aurora 클러스터의 각 엔드포인트 설정이 있습니다.
 - ProxySQL의 설정변경은 availability zone c 영역에 있는 핵심노드에서만 수행하여도 모두 전파됩니다.
-- NLB에 등록된 ProxySQL 인스턴스 중 하나가 장애가 발생하면 대상그룹에서 제외하고 미등록된 ProxySQL 인스턴스로 교체할 수 있습니다.
+- NLB에 등록된 ProxySQL 인스턴스 중 하나에 장애가 발생하면 NLB에 미등록된 ProxySQL 인스턴스로 교체할 수 있습니다.
 
 
 <br/>
