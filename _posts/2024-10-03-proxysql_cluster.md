@@ -14,7 +14,7 @@ last_modified_at: 2024-10-03
 comments: true
 ---
 
-### 💻 ProxySQL 을 어떻게 구성하면 좋을까?
+### ❓ProxySQL 을 어떻게 구성하면 좋을까?
 --- 
 ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하게 사용되는 고성능 프록시입니다. ProxySQL을 사용하면 트래픽 분산외에도 다음과 같은 기능들을 사용할 수 있습니다.
 
@@ -46,7 +46,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 
 <br/>
 
-### 🙈 이중화 관리를 용이하게, ProxySQL 클러스터 
+### 🚀이중화 관리를 용이하게, ProxySQL 클러스터 
 ---
 서비스를 운영하면서 중요한점 중의 하나가 있다면 바로 SPOF(단일고장점) 회피입니다. 서비스를 운영하는 컴포넌트 중 하나가 망가졌다고 해서 서비스 연속성이 무너지면 안되는 것입니다. 이를 위해 매년마다 재해복구 훈련 등을 하는 것이고 standby 서버들이 존재하는 것이죠. 마찬가지로 ProxySQL이 불특정한 이유로 서비스가 되지 않는다면 이를 대비한 standby 성 서버들이 필요하다는 것입니다. 또한 과도한 트래픽을 단일 ProxySQL이 감당할 수 있는지 여부도 고민해야합니다. 즉 위에서 언급한 1안(\[그림1\])의 경우에도 proxySQL이 단일 노드처럼 구성된 것으로 그려지고 있지만 이를 대비한 이중화와 로드밸런싱 구성이 필요합니다.
 
@@ -78,7 +78,7 @@ AWS 환경인 경우 \[그림4\] 과 같은 구성안을 통해 ProxySQL을 운�
 
 <br/>
 
-### 🙈 ProxySQL 클러스터 주요개념
+### ✏️ProxySQL 클러스터 주요개념
 
 ProxySQL 클러스터의 구성을 위해서는 기본적으로 ProxySQL 클러스터 구성 멤버인 핵심(Core) 멤버와 위성(Satellites) 멤버를 이해하고 있어야 합니다. 아래는 공식문서에 기술된 ProxySQL 클러스터 멤버의 종류와 각 멤버가 되기 위한 전제조건이 기술되어 있습니다.
 
@@ -99,124 +99,13 @@ Satellite 노드는 다음 조건을 만족해야합니다.
 
 <br/>
 
-### 😸 ProxySQL 클러스터 구성 테스트 
+### 😸ProxySQL 클러스터 구성 테스트 
 ---
 
 본문
 
 <br/>
 
-### 😸 Derived Table 성능 문제 해결
----
-
-본문
-
-
-| id   | select_type     | table       | type   | possible_keys      | key         | key_len | ref                              | rows | Extra                  |
-|------|-----------------|-------------|--------|--------------------|-------------|---------|-----------------------------------|------|------------------------|
-| 1    | PRIMARY         | job         | ref    | PRIMARY,idx_job_01  | idx_job_01  | 11      | const                            | 116  | Using index condition   |
-| 1    | PRIMARY         | <derived2>  | ref    | key0               | key0        | 158     | frozen.job.id,frozen.job.step    | 2    | Using where             |
-| 2    | LATERAL DERIVED | subJob      | ref    | jobId,idx_subjob_01 | jobId       | 5       | frozen.job.id                    | 1    | Using temporary         |
-
-<br/>
-
-**※ 실행계획 설명**
-
-| 단계 | 설명 |
-|---|---|
-| 1 | job 테이블을 스캔하여 job.status 가 'P' 인 행을 스캔합니다. (job.status = 'P') |
-| 2 | A 뷰를 구체화합니다. ***주작업의 상태가 'P'에 해당하는 하위작업만을 집계합니다.*** 주작업별(GROUP BY jobId) 가장 최근의 하위작업(MAX(subJob.id))을 계산하여 임시테이블을 생성합니다. |
-| 3 | 단계1로 만들어진 결과셋과 A뷰를 조인합니다. (드라이빙 테이블 : 1 결과셋, 드리븐 테이블 : A뷰) |
-
-<br/>
-
-핸들러 API 수치도 확인해봅니다.
-
-```
-Variable_name             Value    
-------------------------  ---------
-Handler_read_first        0        
-Handler_read_key          9      
-Handler_read_last         0        
-Handler_read_next         27
-Handler_read_prev         0        
-Handler_read_retry        0        
-Handler_read_rnd          60      
-Handler_read_rnd_deleted  0        
-Handler_read_rnd_next     19
-Handler_tmp_write		      30  <-- Derived 테이블 생성으로 인한 발생
-Handler_tmp_update        15  <-- Derived 테이블 생성으로 인한 발생
-```
-
-
-| id   | select_type | table      | type  | possible_keys | key       | key_len | ref                       | rows  | Extra                    |
-|------|-------------|------------|-------|---------------|-----------|---------|---------------------------|-------|--------------------------|
-| 1    | PRIMARY     | customer   | range | PRIMARY,name  | name      | 103     | NULL                      | 2     | Using where; Using index |
-| 1    | PRIMARY     | <derived2> | ref   | key0          | key0      | 4       | test.customer.customer_id | 36    |                          |
-| 2    | DERIVED     | orders     | index | NULL          | o_cust_id | 4       | NULL                      | 36738 | Using where              |
-
-<br/>
-
-### 😸 Lateral Derived 사용시 주의점
----
-
-그런데 의문점이 생겼습니다. 왜 기존 쿼리는 LATERAL DERIVED 최적화가 이루어지지 않았던 것일까요? 똑같이 인라인뷰에 집계함수를 적용한 것인데 말이죠.
-WINDOW 함수를 이용해 쿼리 형태를 바꾼 것과 어떤 차이가 있길래 최적화 방식이 달라진 것인지 궁금해졌습니다.
-
-<br/>
-
-**기존쿼리**
-
-```sql
-SELECT 컬럼....
-FROM `job` INNER JOIN subJob 
-    ON job.id = subJob.jobId 
-    AND job.step = subJob.type 
-INNER JOIN (SELECT jobId, MAX(id) AS LatestId 
-            FROM subJob 
-            GROUP BY jobId) A 
-    ON subJob.id = A.LatestId 
-WHERE (job.status = 'P' AND subJob.status = 'S');
-```
-
-<br/>
-
-### 👉 MySQL의 Lateral Derived 설정
-
-MySQL 8.0 에서도 Lateral Derived 테이블 설정이 가능합니다. 다만 문법이 약간 달라서 기재를 해둡니다.
-혹시나 MySQL / MariaDB 간 전환 작업이 필요할 경우를 대비해야할 것 같습니다.
-
-[MySQL 8.0 의 Lateral Derived Tables 와 관련된 공식문서](https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html) 의 쿼리 예시를 가져와봅니다.
-
-```sql
-SELECT
-  salesperson.name,
-  max_sale.amount,
-  max_sale_customer.customer_name
-FROM
-  salesperson,
-  -- calculate maximum size, cache it in transient derived table max_sale
-  LATERAL
-  (SELECT MAX(amount) AS amount
-    FROM all_sales
-    WHERE all_sales.salesperson_id = salesperson.id)
-  AS max_sale,
-  -- find customer, reusing cached maximum size
-  LATERAL
-  (SELECT customer_name
-    FROM all_sales
-    WHERE all_sales.salesperson_id = salesperson.id
-    AND all_sales.amount =
-        -- the cached maximum size
-        max_sale.amount)
-  AS max_sale_customer;
-```
-
-인라인뷰 앞에 LATERAL 이라는 문구를 표기하고 조인조건에 해당하는 절을 인라인뷰 내부에 선언해주는 형식입니다.
-특별히 어렵진 않으나 MySQL / MariaDB 간 문법이 상이하다는 점만 숙지해두면 좋을 것 같습니다.
-분량이 생각보다 길어진 것 같은데 이만 글을 줄이도록 하겠습니다. 감사합니다.
-
-<br/>
 
 ### 📚 참고자료
 
