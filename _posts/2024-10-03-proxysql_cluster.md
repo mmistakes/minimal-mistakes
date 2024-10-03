@@ -50,21 +50,21 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 ![ProxySQL HA, 로드밸런싱 구성안](https://github.com/user-attachments/assets/9460076f-74e8-45f1-a6ad-177a54a5beda)   
 [그림3] ProxySQL HA, 로드밸런싱 구성안
 
-위의 그림은 ProxySQL의 HA(고가용성)를 위한 구성안입니다. App Server에서 ProxySQL 노드의 ip에 직접 연결하는 것이 아니라 vip를 통해 연결하는 방식입니다. 위의 구성안을 이용하면 L4 Switch에 등록된 ProxySQL에 트래픽을 분배할 수 있습니다. 또한 유지보수 작업으로 인해 ProxySQL 서버를 교체하거나 할 경우 App Server 단의 연결정보를 변경할 필요가 없습니다. 또한 Standby 용 L4 Switch가 있어 Active 장비가 장애가 발생했을 경우 VRRP 프로토콜을 이용하여 vip 를 Standby 로 이동시킴으로써 고가용성을 유지할 수 있습니다.
+위의 그림은 ProxySQL의 HA(고가용성)를 위한 구성안입니다. App Server에서 ProxySQL 노드의 ip에 직접 연결하는 것이 아니라 vip를 통해 연결하는 방식입니다. 위의 구성안을 이용하면 L4 Switch에 등록된 ProxySQL에 트래픽을 분배할 수 있습니다. 그리고 유지보수 작업으로 인해 ProxySQL 서버를 교체하거나 할 경우 App Server 단의 연결정보를 변경할 필요가 없습니다. 또한 Standby 용 L4 Switch가 있어 Active 장비가 장애가 발생했을 경우 VRRP 프로토콜을 이용하여 vip 를 Standby 로 이동시킴으로써 고가용성을 유지할 수 있습니다.
 
-이 경우 ProxySQL 인스턴스 그룹을 관리하기 위해서는 각 호스트를 개별적으로 구성 후 Ansible / Chef / Puppet / Salt와 같은 구성 관리 도구를 사용해서 일괄배포를 하거나, Consul/ZooKeeper와 같은 서비스 검색 도구를 사용하여 관리할 수 있습니다. 하지만 이러한 접근 방식에는 몇 가지 단점이 있습니다.
+위와 같은 구성에서 여러대의 ProxySQL 노드를 관리하기 위해서는 각 노드별로 Ansible / Chef / Puppet / Salt와 같은 IaC 도구를 사용해서 일괄 배포를 하거나, Consul/ZooKeeper와 같은 서비스 검색 도구를 사용하여 관리할 수 있습니다. 하지만 이러한 접근 방식은 아래와 같은 불편함이 있습니다.
 
-- 외부 소프트웨어(구성 관리 소프트웨어 자체)에 의존해야 합니다.
+- 외부 소프트웨어(IaC 도구)에 의존해야 합니다.
 - 반영 시간 예측할 수 없습니다.
 - 네트워크 분리에 대한 보호가 없습니다.
 
 이러한 이유로, ProxySQL 1.4.x 버전부터는 클러스터 구성을 지원하고 있습니다. ProxySQL 클러스터를 구성하면 코어노드에서 변경한 설정들을 클러스터링된 모든 ProxySQL 노드에 동적으로 반영시킬 수 있기 때문에 관리면에서 용이합니다. 
 
 
-![ProxySQL 클러스터 + Aurora 구성안](https://github.com/user-attachments/assets/b3af0f0b-8317-47a8-bf60-b2477ef223a2)   
-[그림4] ProxySQL클러스터 + Aurora 구성안
+![ProxySQL 클러스터 + MySQL Aurora 클러스터 구성안](https://github.com/user-attachments/assets/b3af0f0b-8317-47a8-bf60-b2477ef223a2)   
+[그림4] ProxySQL 클러스터 + MySQL Aurora 클러스터 구성안
 
-AWS 환경인 경우 \[그림4\] 과 같은 구성안을 통해 ProxySQL을 운영할 수 있습니다. 구성안을 설명하면 다음과 같습니다.
+AWS 환경인 경우 MySQL Aurora 클러스터를 사용하고 있다면 \[그림4\] 과 같은 구성안을 통해 ProxySQL을 운영할 수 있습니다. 구성안을 설명하면 다음과 같습니다.
 - 특정 az의 장애발생에 대비하여 고가용성을 유지할 수 있도록 ProxySQL 클러스터의 각 노드들은 다른 az에 구성합니다. 
 - API의 요청의 분산이 필요하거나 유지보수측면의 용이성 확보하기 위해 ProxySQL은 NLB(Network Load Balancer)로 묶어서 운영합니다.
 - NLB에 설정된 리스너를 통해 API의 요청을 수신하고 요청 트래픽을 대상 그룹 내 ProxySQL 인스턴스들로 분배합니다.
@@ -77,29 +77,30 @@ AWS 환경인 경우 \[그림4\] 과 같은 구성안을 통해 ProxySQL을 운�
 
 ### ✏️ProxySQL 클러스터 주요개념
 
-ProxySQL 클러스터의 구성을 위해서는 기본적으로 ProxySQL 클러스터 구성 멤버인 핵심(Core) 멤버와 위성(Satellites) 멤버를 이해하고 있어야 합니다. 아래는 공식문서에 기술된 ProxySQL 클러스터 멤버의 종류와 각 멤버가 되기 위한 전제조건이 기술되어 있습니다.
+ProxySQL 클러스터의 구성을 위해서는 기본적으로 ProxySQL 클러스터 구성 멤버인 핵심(Core) 멤버와 위성(Satellites) 멤버를 이해하고 있어야 합니다. 아래는 공식문서에 기술된 ProxySQL 클러스터 멤버의 종류와 각 멤버의 특징입니다.
 
 **클러스터 멤버**
 ProxySQL 클러스터는 두 가지 역할 중 하나를 수행하는 여러 ProxySQL 노드로 구성됩니다.
-- Core: 클러스터의 기본 노드로, 구성을 공유하고 전파합니다.
-- Satellites: 클러스터의 복제 노드로, Core 노드로부터 구성을 가져옵니다.
+- 핵심(Core)노드: 클러스터의 기본 노드로, 설정을 공유하고 전파합니다. 다수로 구성할 수 있습니다.
+- 위성(Satellites)노드: 클러스터의 복제 노드로, 핵심 노드로부터 설정을 가져옵니다.
 
-ProxySQL 클러스터의 Core 노드가 되기 위한 전제조건은 아래와 같습니다. 
-- 다른 Core 멤버와 함께 proxysql_servers 테이블에 존재합니다.
-- 클러스터의 다른 Core 노드의 proxysql_servers 테이블에 존재합니다.
+ProxySQL 클러스터의 핵심 노드가 되기 위한 전제조건은 아래와 같습니다. 
+- 다른 핵심 멤버와 함께 proxysql_servers 테이블에 존재합니다.
+- 클러스터의 다른 핵심 노드의 proxysql_servers 테이블에 존재합니다.
 
 Satellite 노드는 다음 조건을 만족해야합니다.
 - 자신의 proxysql_servers 테이블에 존재하지 않습니다.
-- 다른 Core 노드의 proxysql_servers 테이블에 존재하지 않습니다.
-
-핵심 노드와 위성 노드의 구성 개수를 유연하게 조정할 수 있습니다. 저는 핵심노드 2대를 별도 노드로 구성하고 클러스터링 하여 이중화하고 ProxySQL을 keepalived 를 이용하여 SPOF를 막기 위한 용도로 구성해보는 테스트를 해보도록 하겠습니다. 핵심노드는 2대 이상을 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 위성노드에 설정을 전파할 수 있기 때문입니다.
+- 다른 핵심 노드의 proxysql_servers 테이블에 존재하지 않습니다.
 
 <br/>
 
 ### 😸ProxySQL 클러스터 구성 테스트 
 ---
 
-본문
+핵심 노드와 위성 노드의 구성 개수를 유연하게 조정할 수 있습니다. 저는 핵심노드 2대를 별도 노드로 구성하고 클러스터링 하여 이중화하고 ProxySQL을 keepalived 를 이용하여 SPOF를 막기 위한 용도로 구성해보는 테스트를 해보도록 하겠습니다. 핵심노드는 2대 이상을 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 위성노드에 설정을 전파할 수 있기 때문입니다.
+
+[그림5] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
+
 
 <br/>
 
