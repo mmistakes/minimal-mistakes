@@ -35,6 +35,40 @@
   },
   {
     "image_path": null,
+    "alt": "A9 - Ausflug Spandauer Stadtforst",
+    "title": "A9 - Ausflug Spandauer Stadtforst",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDAwdWRwYjFuY2VqcnJ0amJia2x2MzBjYW8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-10-10T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-10-10T13:30:00+02:00"
+    },
+    "created": "2024-10-02T12:07:01.000Z",
+    "updated": "2024-10-02T12:07:01.060Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A9 - Ausflug Schloss Charlottenburg",
+    "title": "A9 - Ausflug Schloss Charlottenburg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjJ1dnZ0Z2VxMnNuOTZrM2dmdmtjNTlnZ2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-10-17T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-10-17T13:30:00+02:00"
+    },
+    "created": "2024-10-02T12:07:41.000Z",
+    "updated": "2024-10-02T12:07:41.846Z"
+  },
+  {
+    "image_path": null,
     "alt": "A5 - Ausflug zur Gartenarbeitsschule",
     "title": "A5 - Ausflug zur Gartenarbeitsschule",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2024-09-26T12:13:48.000Z",
     "updated": "2024-09-26T12:13:48.531Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4c - Jugendverkehrsschule (2. Termin)",
-    "title": "4c - Jugendverkehrsschule (2. Termin)",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGI0b21rMG5iZTlwaTJzNGpvcGl0MGM0Y2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-19T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-19T11:30:00+01:00"
-    },
-    "created": "2024-09-26T12:12:59.000Z",
-    "updated": "2024-09-26T12:12:59.042Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug zur Gartenarbeitsschule",
-    "title": "A5 - Ausflug zur Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-22T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-22T13:30:00+01:00"
-    },
-    "created": "2024-09-02T12:11:06.000Z",
-    "updated": "2024-09-02T12:11:06.781Z"
   }
 ]
