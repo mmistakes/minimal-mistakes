@@ -115,7 +115,7 @@ analytics:
 # Site Author
 author:
   name             : "Chanyeong Park"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/pouyo.jpg"
   bio              : "박찬영의 멈추지 않는 질주"
   location         : "Seoul, Republic of Korea"
   email            : "pcy7805@naver.com"
