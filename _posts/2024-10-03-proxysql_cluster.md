@@ -106,7 +106,7 @@ Satellite 노드는 다음 조건을 만족해야합니다.
 
 
 ### 📚 참고자료
-
+---
 - [ProxySQL 클러스터](https://proxysql.com/documentation/proxysql-클러스터/)
 - [Where Do I Put ProxySQL?](https://www.percona.com/blog/where-do-i-put-proxysql/)
 - [ProxySQL Aurora 구성](https://community.aws/content/2fUJK8dG9EYXLr52nCWVRejCCf0/using-proxysql-to-replace-deprecated-mysql-8-0-query-cache)
