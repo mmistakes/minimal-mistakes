@@ -50,7 +50,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 ---
 서비스를 운영하면서 중요한점 중의 하나가 있다면 바로 SPOF(단일고장점) 회피입니다. 서비스를 운영하는 컴포넌트 중 하나가 망가졌다고 해서 서비스 연속성이 무너지면 안되는 것입니다. 이를 위해 매년마다 재해복구 훈련 등을 하는 것이고 standby 서버들이 존재하는 것이죠. 마찬가지로 ProxySQL이 불특정한 이유로 서비스가 되지 않는다면 이를 대비한 standby 성 서버들이 필요하다는 것입니다. 또한 과도한 트래픽을 단일 ProxySQL이 감당할 수 있는지 여부도 고민해야합니다. 즉 위에서 언급한 1안(\[그림1\])의 경우에도 proxySQL이 단일 노드처럼 구성된 것으로 그려지고 있지만 이를 대비한 이중화와 로드밸런싱 구성이 필요합니다.
 
-![ProxySQL HA, 로드밸런싱 구성안](https://github.com/user-attachments/assets/9460076f-74e8-45f1-a6ad-177a54a5beda)
+![ProxySQL HA, 로드밸런싱 구성안](https://github.com/user-attachments/assets/9460076f-74e8-45f1-a6ad-177a54a5beda)   
 [그림3] ProxySQL HA, 로드밸런싱 구성안
 
 위의 그림은 ProxySQL의 HA(고가용성)를 위한 구성안입니다. App Server에서 ProxySQL 노드의 ip에 직접 연결하는 것이 아니라 vip를 통해 연결하는 방식입니다. 위의 구성안을 이용하면 L4 Switch에 등록된 ProxySQL에 트래픽을 분배할 수 있습니다. 또한 유지보수 작업으로 인해 ProxySQL 서버를 교체하거나 할 경우 App Server 단의 연결정보를 변경할 필요가 없습니다. 또한 standby 용 L4 Switch가 있어 Active 장비가 장애가 발생했을 경우 VRRP 프로토콜을 이용하여 vip 를 standby 로 이동시킴으로써 가용성을 유지할 수 있습니다.
@@ -64,7 +64,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 이러한 이유로, ProxySQL 1.4.x 버전부터는 클러스터 구성을 지원하고 있습니다. ProxySQL 클러스터를 구성하면 코어노드에서 변경한 설정들을 클러스터링된 모든 ProxySQL 노드에 동적으로 반영시킬 수 있기 때문에 관리면에서 용이합니다. 
 
 
-![ProxySQL 클러스터 + Aurora 구성안](https://github.com/user-attachments/assets/b3af0f0b-8317-47a8-bf60-b2477ef223a2)
+![ProxySQL 클러스터 + Aurora 구성안](https://github.com/user-attachments/assets/b3af0f0b-8317-47a8-bf60-b2477ef223a2)   
 [그림4] ProxySQL클러스터 + Aurora 구성안
 
 AWS 환경인 경우 \[그림4\] 과 같은 구성안을 통해 ProxySQL을 운영할 수 있습니다. 구성안을 설명하면 다음과 같습니다.
