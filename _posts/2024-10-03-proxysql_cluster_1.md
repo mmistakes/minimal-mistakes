@@ -126,7 +126,7 @@ HA를 고려한 ProxySQL 클러스터 구성을 간단히 테스트해 볼 예�
 ![keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안](https://github.com/user-attachments/assets/816a403c-b937-4453-8ba7-ac523f06642a)
 [그림5] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
 
-저는 핵심노드 2대를 클러스터로 구성하고 keepalived 를 이용하여 각각 active, backup 용도로 구분할 예정입니다. active로 선정된 핵심노드는 vip로 연결할 수 있습니다. vip를 할당받은 노드의 ProxySQL이 강제종료 되면 VRRP 프로토콜에 의해 backup 상태의 노드가 active로 전환됩니다. 구성한 ProxySQL 2대를 모두 핵심 노드로 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 설정을 전파할 수 있기 때문입니다. 실습이 완료되는대로 별도의 포스팅을 할 예정입니다. 
+저는 핵심 노드 2대를 클러스터로 구성하고 keepalived 를 이용하여 각각 active, backup 용도로 구분할 예정입니다. keepavlied 설정으로 인해 active 상태인 서버는 vip로 연결할 수 있습니다. vip를 할당받은 서버에 구성된 ProxySQL이 강제종료 되면 VRRP 프로토콜에 의해 backup 상태의 노드가 active로 전환됩니다. 구성한 ProxySQL 2대를 모두 핵심 노드로 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 설정을 전파할 수 있기 때문입니다. 실습이 완료되는대로 별도의 포스팅을 할 예정입니다. 
 
 <br/>
 
