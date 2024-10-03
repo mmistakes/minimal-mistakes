@@ -2,6 +2,8 @@
 main:
   - title: "Search"
     url: /search/
+  - title: "Category"
+    url: /categories/
 
 docs:
   - title: "Game Dev"
