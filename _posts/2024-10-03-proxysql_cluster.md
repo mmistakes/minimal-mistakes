@@ -119,9 +119,6 @@ ProxySQL 의 핵심노드의 변경사항이 클러스터 전체에 반영되는
 8. 마지막으로 구성은 모듈 변수 cluster_module_name_save_to_disk의 값에 따라 조건부로 디스크에 저장됩니다. true로 설정된 경우 SAVE module_name TO DISK 명령을 통해 디스크에 저장됩니다.
 
 
-
-
-
 <br/>
 
 ### 😸ProxySQL 클러스터 구성 테스트 
