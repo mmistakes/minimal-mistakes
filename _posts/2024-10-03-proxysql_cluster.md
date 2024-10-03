@@ -47,7 +47,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 
 <br/>
 
-### 🙈 이중화 관리를 용이하게, ProxySQL Cluster 
+### 🙈 이중화 관리를 용이하게, ProxySQL 클러스터 
 ---
 서비스를 운영하면서 중요한점 중의 하나가 있다면 바로 SPOF(단일고장점) 회피입니다. 서비스를 운영하는 컴포넌트 중 하나가 망가졌다고 해서 서비스 연속성이 무너지면 안되는 것입니다. 이를 위해 매년마다 재해복구 훈련 등을 하는 것이고 standby 서버들이 존재하는 것이죠. 마찬가지로 ProxySQL이 불특정한 이유로 서비스가 되지 않는다면 이를 대비한 standby 성 서버들이 필요하다는 것입니다. 즉 위에서 언급한 1안(\[그림1\])의 경우에도 proxySQL이 단일 노드처럼 구성된 것으로 그려지고 있지만 이를 대비한 이중화 구성이 필요합니다.
 
@@ -60,7 +60,7 @@ ProxySQL 인스턴스 그룹을 관리하기 위해서는 각 호스트를 개�
 - 네트워크 분리에 대한 보호가 없습니다.
 
 
-이러한 이유로, ProxySQL 1.4.x 버전부터는 클러스터 구성을 지원하고 있습니다. ProxySQL Cluster를 구성하면 코어노드에서 변경한 설정들을 클러스터링된 모든 ProxySQL 노드에 동적으로 반영시킬 수 있기 때문에 관리면에서 용이합니다. ProxySQL Cluster의 구성을 위해서는 기본적으로 ProxySQL 클러스터 구성 멤버인 핵심(Core) 멤버와 위성(Satellites) 멤버를 이해하고 있어야 합니다. 아래는 공식문서에 기술된 ProxySQL 클러스터 멤버의 종류와 각 멤버가 되기 위한 전제조건이 기술되어 있습니다.
+이러한 이유로, ProxySQL 1.4.x 버전부터는 클러스터 구성을 지원하고 있습니다. ProxySQL 클러스터를 구성하면 코어노드에서 변경한 설정들을 클러스터링된 모든 ProxySQL 노드에 동적으로 반영시킬 수 있기 때문에 관리면에서 용이합니다. ProxySQL 클러스터의 구성을 위해서는 기본적으로 ProxySQL 클러스터 구성 멤버인 핵심(Core) 멤버와 위성(Satellites) 멤버를 이해하고 있어야 합니다. 아래는 공식문서에 기술된 ProxySQL 클러스터 멤버의 종류와 각 멤버가 되기 위한 전제조건이 기술되어 있습니다.
 
 #### ProxySQL 클러스터 주요개념
 
@@ -202,7 +202,7 @@ FROM
 
 ### 📚 참고자료
 
-- [ProxySQL Cluster](https://proxysql.com/documentation/proxysql-cluster/)
+- [ProxySQL 클러스터](https://proxysql.com/documentation/proxysql-클러스터/)
 - [Where Do I Put ProxySQL?](https://www.percona.com/blog/where-do-i-put-proxysql/)
 
 <br/>
