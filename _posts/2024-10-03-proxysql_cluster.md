@@ -16,8 +16,7 @@ comments: true
 
 ### 💻 ProxySQL 을 어떻게 구성하면 좋을까?
 --- 
-ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하게 사용되는 고성능 프록시입니다. 
-데이터베이스에서 리소스를 찾는 클라이언트 요청의 중개자 역할을 하는데요. ProxySQL을 사용하면 다음과 같은 기능들을 사용할 수 있습니다.
+ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하게 사용되는 고성능 프록시입니다. ProxySQL을 사용하면 트래픽 분산외에도 다음과 같은 기능들을 사용할 수 있습니다.
 
 - MySQL 방화벽
 - 연결 풀링
@@ -25,7 +24,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 - 읽기/쓰기 분할 가능
 - 활성 마스터 장애 발생 시 자동으로 다른 마스터로 전환
 
-이렇게 좋은 기능을 갖는 ProxySQL을 어떻게 구성을 해야할지 무척 고민이 될 것입니다. 
+이렇게 좋은 기능을 가진 ProxySQL을 어떻게 구성을 해야할지 무척 고민이 될 것입니다. 
 대표적으로는 2개의 안으로 나눠볼 수 있습니다.
 
 
@@ -51,7 +50,10 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 ---
 서비스를 운영하면서 중요한점 중의 하나가 있다면 바로 SPOF(단일고장점) 회피입니다. 서비스를 운영하는 컴포넌트 중 하나가 망가졌다고 해서 서비스 연속성이 무너지면 안되는 것입니다. 이를 위해 매년마다 재해복구 훈련 등을 하는 것이고 standby 서버들이 존재하는 것이죠. 마찬가지로 ProxySQL이 불특정한 이유로 서비스가 되지 않는다면 이를 대비한 standby 성 서버들이 필요하다는 것입니다. 즉 위에서 언급한 1안(\[그림1\])의 경우에도 proxySQL이 단일 노드처럼 구성된 것으로 그려지고 있지만 이를 대비한 이중화 구성이 필요합니다.
 
-다이어그램
+![image](https://github.com/user-attachments/assets/b3af0f0b-8317-47a8-bf60-b2477ef223a2)
+[그림3] ProxySQL클러스터 구성안
+
+\[그림3\] 과 같이 
 
 ProxySQL 인스턴스 그룹을 관리하기 위해서는 각 호스트를 개별적으로 구성하거나, Ansible/Chef/Puppet/Salt(알파벳 순서)와 같은 구성 관리 도구를 사용해서 일괄배포를 하거나, Consul/ZooKeeper와 같은 서비스 검색 도구를 사용할 수 도 있습니다. 하지만 이러한 접근 방식에는 몇 가지 단점이 있습니다.
 
@@ -204,7 +206,8 @@ FROM
 
 - [ProxySQL 클러스터](https://proxysql.com/documentation/proxysql-클러스터/)
 - [Where Do I Put ProxySQL?](https://www.percona.com/blog/where-do-i-put-proxysql/)
-
+- [ProxySQL Aurora 구성](https://community.aws/content/2fUJK8dG9EYXLr52nCWVRejCCf0/using-proxysql-to-replace-deprecated-mysql-8-0-query-cache)
+- 
 <br/>
 ---
 
