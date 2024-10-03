@@ -115,32 +115,35 @@ analytics:
 # Site Author
 author:
   name             : "Chanyeong Park"
-  avatar           : "/images/pouyo.jpg"
+  avatar           : "/assets/images/chan.gif"
   bio              : "박찬영의 멈추지 않는 질주"
   location         : "Seoul, Republic of Korea"
   email            : "pcy7805@naver.com"
   links:
-    - label: "Email"
+    - label: "pcy7805@naver.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "pcy7805@naver.com"
-    - label: "Website"
+    - label: "Naver blog"
       icon: "fas fa-fw fa-link"
       url: "https://blog.naver.com/pcy7805"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Park-Chanyeong"
-
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com"
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Park-Chanyeong"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "Naver blog"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.naver.com/pcy7805"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com"
 
 
 # Reading Files
@@ -245,6 +248,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -253,6 +257,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
@@ -306,5 +311,9 @@ defaults:
       share: true
       related: true
       show_date : true
-
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fa-solid fa-mug-saucer"
+      author_profile: false
 date_format: "%Y-%m-%d"
