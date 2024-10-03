@@ -50,7 +50,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 ![ProxySQL HA, 로드밸런싱 구성안](https://github.com/user-attachments/assets/9460076f-74e8-45f1-a6ad-177a54a5beda)   
 [그림3] ProxySQL HA, 로드밸런싱 구성안
 
-위의 그림은 ProxySQL의 HA(고가용성)를 위한 구성안입니다. App Server에서 ProxySQL 노드의 ip에 직접 연결하는 것이 아니라 vip를 통해 연결하는 방식입니다. 위의 구성안을 이용하면 L4 Switch에 등록된 ProxySQL에 트래픽을 분배할 수 있습니다. 그리고 유지보수 작업으로 인해 ProxySQL 서버를 교체하거나 할 경우 App Server 단의 연결정보를 변경할 필요가 없습니다. 또한 Standby 용 L4 Switch가 있어 Active 장비가 장애가 발생했을 경우 VRRP 프로토콜을 이용하여 vip 를 Standby 로 이동시킴으로써 고가용성을 유지할 수 있습니다.
+위의 그림은 ProxySQL의 HA(고가용성)를 위한 구성안입니다. App Server에서 ProxySQL 노드의 ip에 직접 연결하는 것이 아니라 vip를 통해 연결하는 방식입니다. 위의 구성안을 이용하면 L4 Switch에 등록된 ProxySQL에 트래픽을 분배할 수 있습니다. 위의 가장 큰 이점은 유지보수 작업으로 인해 ProxySQL 서버를 교체하거나 Auto Failover가 발생할 경우 App Server 단의 연결정보를 변경할 필요가 없다는 것입니다. 또한 Standby 용 L4 Switch가 있어 Active 장비가 장애가 발생했을 경우 VRRP 프로토콜을 이용하여 vip 를 Standby 로 이동시킴으로써 고가용성을 유지할 수 있습니다.
 
 위와 같은 구성에서 여러대의 ProxySQL 노드를 관리하기 위해서는 각 노드별로 Ansible / Chef / Puppet / Salt와 같은 IaC 도구를 사용해서 일괄 배포를 하거나, Consul/ZooKeeper와 같은 서비스 검색 도구를 사용하여 관리할 수 있습니다. 하지만 이러한 접근 방식은 아래와 같은 불편함이 있습니다.
 
