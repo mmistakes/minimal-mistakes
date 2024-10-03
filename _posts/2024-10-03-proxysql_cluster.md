@@ -80,7 +80,8 @@ AWS 환경인 경우 MySQL Aurora 클러스터를 사용하고 있다면 \[그�
 ProxySQL 클러스터의 구성을 위해서는 기본적으로 ProxySQL 클러스터 구성 멤버인 핵심(Core) 멤버와 위성(Satellites) 멤버를 이해하고 있어야 합니다. 아래는 공식문서에 기술된 ProxySQL 클러스터 멤버의 종류와 각 멤버의 특징입니다.
 
 **클러스터 멤버**
-ProxySQL 클러스터는 두 가지 역할 중 하나를 수행하는 여러 ProxySQL 노드로 구성됩니다.
+
+ProxySQL 클러스터 멤버는 두 가지 역할 중 하나를 수행하는 여러 ProxySQL 노드로 구성됩니다.
 - 핵심(Core)노드: 클러스터의 기본 노드로, 설정을 공유하고 전파합니다. 다수로 구성할 수 있습니다.
 - 위성(Satellites)노드: 클러스터의 복제 노드로, 핵심 노드로부터 설정을 가져옵니다.
 
@@ -90,7 +91,16 @@ ProxySQL 클러스터의 핵심 노드가 되기 위한 전제조건은 아래�
 
 Satellite 노드는 다음 조건을 만족해야합니다.
 - 자신의 proxysql_servers 테이블에 존재하지 않습니다.
-- 다른 핵심 노드의 proxysql_servers 테이블에 존재하지 않습니다.
+- 다른 핵심 노드의 proxysql_servers 테이블에 존재하지 않습니다.  
+
+
+**클러스터 동기화 방식**
+
+ProxySQL 의 핵심노드의 변경사항이 클러스터 전체에 반영되는 방식은 2단계로 구분할 수 있습니다.  
+
+1) 구성 전파를 위한 
+
+
 
 <br/>
 
@@ -101,6 +111,28 @@ Satellite 노드는 다음 조건을 만족해야합니다.
 
 [그림5] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
 
+
+
+
+
+
+proxysql_servers 테이블에 명시된 핵심노드의 정보들을 기반으로 설정을 가져옵니다. 위성노드의 경우 RUNTIME 단계로 proxysql_servers 설정을 반영시켜야 핵심노드의 정보들을 동기화합니다. 초기 동기화 과정에서 아래와 같은 에러가 반복적으로 발생합니다. 
+
+```
+Cluster: detected a peer %s with **module_name** version 1, epoch %d, diff_check %d. Own version: 1, epoch: %d. diff_check is increasing, but version 1 doesn't allow sync
+
+실제 예시
+[WARNING] Cluster: detected a peer 192.168.0.11:6032 with mysql_servers version 1, epoch 1727874872, diff_check 210. Own version: 1, epoch: 1727932964. diff_check is increasing, but version 1 doesn't allow sync. This message will be repeated every 30 checks until LOAD MYSQL SERVERS TO RUNTIME is executed on candidate master.
+```
+
+위의 에러는 핵심노드의 현재 정보의 설정과 위성노드의 현재 정보의 설정을 비교하고 있는데(diff_check) 버전이 1인 상황이어서 동기화를 하지 못한다는 내용입니다.이 일치하기 때문에 나타나는 현상으로 핵심 노드중 하나에 접근해서 모듈 정보를 명시적으로 LOAD 함으로써 설정 버전을 올리면 해결됩니다.
+
+```
+LOAD **MODULE_NAME** TO RUNTIME;
+
+실제 예시
+LOAD MYSQL SERVERS TO RUNTIME;
+```
 
 <br/>
 
