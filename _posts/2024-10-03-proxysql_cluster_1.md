@@ -25,7 +25,7 @@ ProxySQL은 MySQL의 트래픽을 분산시키기 위한 목적에서 유용하�
 - 활성 마스터 장애 발생 시 자동으로 다른 마스터로 전환
 
 이렇게 좋은 기능을 가진 ProxySQL을 어떻게 구성을 해야할지 무척 고민이 될 것입니다. 
-대표적으로는 2개의 안으로 나눠볼 수 있습니다. 먼저 아래와 같이 ProxySQL을 사용할 경우 어플리케이션과 데이터베이스 사이에 별도의 노드를 두어 구성하는 경우가 있습니다.
+대표적으로는 2개의 안으로 나눠볼 수 있습니다. 먼저 아래와 같이 여러 애플리케이션 서버의 요청을 모두 처리하는 중앙집중형 구성입니다.
 
 ![ProxySQL 아키텍처1](https://github.com/user-attachments/assets/48322c3b-9d7e-49ce-919c-6ea5c157b97a)
 [그림1] ProxySQL 아키텍처1
@@ -69,7 +69,7 @@ AWS 환경인 경우 MySQL Aurora 클러스터를 사용하고 있다면 \[그�
 - API의 요청의 분산이 필요하거나 유지보수 용이성 확보하기 위해 ProxySQL은 NLB로 운영합니다.
 - NLB에 설정된 리스너를 통해 API의 요청을 수신하고 요청 트래픽을 대상 그룹 내 ProxySQL 들로 분배합니다.
 - 각 ProxySQL에는 Aurora 클러스터의 각 엔드포인트 설정이 있습니다.
-- ProxySQL의 설정변경은 availability zone c 영역에 있는 핵심노드에서만 수행하여도 모두 전파됩니다.
+- ProxySQL의 설정변경은 availability zone c 영역에 있는 핵심 멤버에서만 수행하여도 모두 전파됩니다.
 - NLB에 등록된 ProxySQL 인스턴스 중 하나에 장애가 발생하면 NLB에 미등록된 ProxySQL 인스턴스로 교체할 수 있습니다.
 
 
@@ -82,22 +82,22 @@ ProxySQL 클러스터의 구성을 위해서는 기본적으로 ProxySQL 클러�
 **※클러스터 멤버**
 
 ProxySQL 클러스터 멤버는 두 가지 역할 중 하나를 수행하는 여러 ProxySQL 노드로 구성됩니다.
-- 핵심(Core)노드: 클러스터의 기본 노드로, 설정을 공유하고 전파합니다. 다수로 구성할 수 있습니다.
-- 위성(Satellites)노드: 클러스터의 복제 노드로, 핵심 노드로부터 설정을 가져옵니다.
+- 핵심(Core) 멤버: 클러스터의 기본 노드로, 설정을 공유하고 전파합니다. 다수로 구성할 수 있습니다.
+- 위성(Satellites) 멤버: 클러스터의 복제 노드로, 핵심 멤버로부터 설정을 가져옵니다.
 
-ProxySQL 클러스터의 핵심 노드가 되기 위한 전제조건은 아래와 같습니다. 
+ProxySQL 클러스터의 핵심 멤버가 되기 위한 전제조건은 아래와 같습니다. 
 - 다른 핵심 멤버와 함께 proxysql_servers 테이블에 존재합니다.
-- 클러스터의 다른 핵심 노드의 proxysql_servers 테이블에 존재합니다.
+- 클러스터의 다른 핵심 멤버의 proxysql_servers 테이블에 존재합니다.
 
 Satellite 노드는 다음 조건을 만족해야합니다.
 - 자신의 proxysql_servers 테이블에 존재하지 않습니다.
-- 다른 핵심 노드의 proxysql_servers 테이블에 존재하지 않습니다.     
+- 다른 핵심 멤버의 proxysql_servers 테이블에 존재하지 않습니다.     
 
 <br/>
 
 **※클러스터 동기화 방식**
 
-ProxySQL 의 핵심노드의 변경사항이 클러스터 전체에 반영되는 방식은 2단계로 구분할 수 있습니다.  
+ProxySQL 의 핵심 멤버의 변경사항이 클러스터 전체에 반영되는 방식은 2단계로 구분할 수 있습니다.  
 
 - 1단계: 설정 전파를 위한 데이터(resultset) 생성 및 체크섬 업데이트
 - 2단게: 체크섬 업데이트가 감지되었을 때 다른 노드에서 가져오기
@@ -126,7 +126,7 @@ HA를 고려한 ProxySQL 클러스터 구성을 간단히 테스트해 볼 예�
 ![keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안](https://github.com/user-attachments/assets/816a403c-b937-4453-8ba7-ac523f06642a)
 [그림5] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
 
-저는 핵심 노드 2대를 클러스터로 구성하고 keepalived 를 이용하여 각각 active, backup 용도로 구분할 예정입니다. keepavlied 설정으로 인해 active 상태인 서버는 vip로 연결할 수 있습니다. vip를 할당받은 서버에 구성된 ProxySQL이 강제종료 되면 VRRP 프로토콜에 의해 backup 상태의 노드가 active로 전환됩니다. 구성한 ProxySQL 2대를 모두 핵심 노드로 구성하는 이유는 핵심 노드 1대가 문제가 생겼을 경우 다른 핵심노드를 통해 설정을 전파할 수 있기 때문입니다. 실습이 완료되는대로 별도의 포스팅을 할 예정입니다. 
+저는 핵심 멤버 2대를 클러스터로 구성하고 keepalived 를 이용하여 각각 active, backup 용도로 구분할 예정입니다. keepavlied 설정으로 인해 active 상태인 서버는 vip로 연결할 수 있습니다. vip를 할당받은 서버에 구성된 ProxySQL이 강제종료 되면 VRRP 프로토콜에 의해 backup 상태의 노드가 active로 전환됩니다. 구성한 ProxySQL 2대를 모두 핵심 멤버로 구성하는 이유는 핵심 멤버 1대가 문제가 생겼을 경우 다른 핵심 멤버를 통해 설정을 전파할 수 있기 때문입니다. 실습이 완료되는대로 별도의 포스팅을 할 예정입니다. 
 
 <br/>
 
