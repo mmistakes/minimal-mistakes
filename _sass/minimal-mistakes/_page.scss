@@ -123,10 +123,13 @@ body {
         margin-top: -($indent-var);
       }
     }
+
+    a{
+      color: #553514;
+    }
   }
 
   a:not(.btn) {
-    color: $link-color;
 
     &:hover {
       text-decoration: underline;
