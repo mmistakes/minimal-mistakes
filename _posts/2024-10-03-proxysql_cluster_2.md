@@ -117,23 +117,206 @@ SAVE PROXYSQL SERVERS TO DISK;
  ```
 
 
-proxysql_servers 테이블에 명시된 핵심 멤버의 정보들을 기반으로 설정을 가져옵니다. 위성 멤버의 경우 RUNTIME 단계로 proxysql_servers 설정을 반영시켜야 핵심 멤버의 정보들을 동기화합니다. 초기 동기화 과정에서 아래와 같은 에러가 반복적으로 발생합니다. 
+mysql-server1 의 ProxySQL 에러로그를 확인해보면 아래와 같은 메시지를 확인할 수 있습니다.
 
 ```
-Cluster: detected a peer %s with **module_name** version 1, epoch %d, diff_check %d. Own version: 1, epoch: %d. diff_check is increasing, but version 1 doesn't allow sync
-
-실제 예시
-[WARNING] Cluster: detected a peer 192.168.0.11:6032 with mysql_servers version 1, epoch 1727874872, diff_check 210. Own version: 1, epoch: 1727932964. diff_check is increasing, but version 1 doesn't allow sync. This message will be repeated every 30 checks until LOAD MYSQL SERVERS TO RUNTIME is executed on candidate master.
+2024-10-04 12:56:29 ProxySQL_Cluster.cpp:244:ProxySQL_Cluster_Monitor_thread(): [WARNING] Cluster: unable to connect to peer 192.168.0.12:6032 . Error: ProxySQL Error: Access denied for user 'cluster_user'@'192.168.0.11' (using password: YES)
 ```
 
-위의 에러는 핵심 멤버의 현재 정보의 설정과 위성 멤버의 현재 정보의 설정을 비교하고 있는데(diff_check) 버전이 1인 상황이어서 동기화를 하지 못한다는 내용입니다.이 일치하기 때문에 나타나는 현상으로 핵심 멤버중 하나에 접근해서 모듈 정보를 명시적으로 LOAD 함으로써 설정 버전을 올리면 해결됩니다.
+mysql-server2(192.168.0.12:6032)와 연결이 안된다는 메시지 입니다. 이는 클러스터 관리 계정이 미생성 되어있어서 그렇습니다. 해당 조치를 위해 기본적인 어드민 변수들을 반영해주어야 합니다. mysql-server2 의 관리콘솔로 접속합니다.
+
+```bash
+#mysql-server2 로 접속
+[root@mysql-server2 proxysql]# mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
+```
+
+```sql
+
+/*모니터 계정 등록*/
+UPDATE global_variables SET variable_value='monitor' WHERE variable_name='mysql-monitor_username';
+UPDATE global_variables SET variable_value='monitor' WHERE variable_name='mysql-monitor_password';
+
+UPDATE global_variables SET variable_value='2000' 
+WHERE variable_name IN ('mysql-monitor_connect_interval'
+                        ,'mysql-monitor_ping_interval'
+                        ,'mysql-monitor_read_only_interval');
+
+LOAD MYSQL VARIABLES TO RUNTIME;
+SAVE MYSQL VARIABLES TO DISK;
+
+
+/*클러스터 계정 등록*/
+UPDATE global_variables SET variable_value='admin:admin;cluster_user:cluster_pass' WHERE variable_name='admin-admin_credentials';
+UPDATE global_variables SET variable_value='cluster_user' WHERE variable_name='admin-cluster_username';
+UPDATE global_variables SET variable_value='cluster_pass' WHERE variable_name='admin-cluster_password';
+
+
+/*클러스터의 상태를 확인하는 간격을 설정합니다. 이 경우 1000ms로 설정되어 있으며, 클러스터의 상태를 1초마다 점검하게 됩니다.*/
+UPDATE global_variables SET variable_value=1000 WHERE variable_name='admin-cluster_check_interval_ms';
+
+/*클러스터 상태 체크의 빈도를 설정합니다. 10으로 설정되었으므로 ProxySQL은 클러스터 상태를 10번 확인한 후 결과를 기록합니다.*/
+UPDATE global_variables SET variable_value=10 WHERE variable_name='admin-cluster_check_status_frequency';
+
+/*MySQL 쿼리 규칙을 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로, 쿼리 규칙이 클러스터에 동기화될 때 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_mysql_query_rules_save_to_disk';
+
+/*MySQL 서버 정보가 클러스터에 동기화될 때 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로 MySQL 서버 정보가 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_mysql_servers_save_to_disk';
+
+/*MySQL 사용자 정보가 클러스터에 동기화될 때 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로 MySQL 사용자 정보가 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_mysql_users_save_to_disk';
+
+/*ProxySQL 서버 정보가 클러스터에 동기화될 때 디스크에 저장할지 여부를 설정합니다. true로 설정되었으므로 ProxySQL 서버 정보가 디스크에 저장됩니다.*/
+UPDATE global_variables SET variable_value='true' WHERE variable_name='admin-cluster_proxysql_servers_save_to_disk';
+
+/*쿼리 규칙이 동기화되기 전에 몇 번의 차이점(diff)을 허용할지를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_mysql_query_rules_diffs_before_sync';
+
+/*MySQL 서버 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_mysql_servers_diffs_before_sync';
+
+/*MySQL 사용자 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_mysql_users_diffs_before_sync';
+
+/*ProxySQL 서버 정보 동기화 전에 허용할 차이점의 수를 설정합니다. 3으로 설정되어, 세 번의 차이점이 발생하면 동기화가 진행됩니다.*/
+UPDATE global_variables SET variable_value=3 WHERE variable_name='admin-cluster_proxysql_servers_diffs_before_sync';
+
+
+LOAD ADMIN VARIABLES TO RUNTIME;
+SAVE ADMIN VARIABLES TO DISK;
+
+
+
+/*PROXYSQL SERVERS 정보를 반영합니다.*/
+INSERT INTO proxysql_servers VALUES('192.168.0.11',6032,0,'proxysql_node1');
+INSERT INTO proxysql_servers VALUES('192.168.0.12',6032,0,'proxysql_node2');
+
+LOAD PROXYSQL SERVERS TO RUNTIME;
+SAVE PROXYSQL SERVERS TO DISK;
 
 ```
-LOAD **MODULE_NAME** TO RUNTIME;
 
-실제 예시
+위의 설정을 반영하면 mysql-server2 의 ProxySQL 의 에러로그에 아래와 같은 메시지가 반복적으로 발생하게 됩니다. 2개의 모듈(MYSQL QUERY RULES, MYSQL SERVERS)에서 반복적인 메시지가 나타납니다.
+
+```
+2024-10-04 13:05:54 ProxySQL_Cluster.cpp:863:set_checksums(): [WARNING] Cluster: detected a peer 192.168.0.11:6032 with mysql_query_rules version 1, epoch 1727968666, diff_check 150. Own version: 1, epoch: 1728013985. diff_check is increasing, but version 1 doesn't allow sync. This message will be repeated every 30 checks until LOAD MYSQL QUERY RULES TO RUNTIME is executed on candidate master.
+
+2024-10-04 13:05:54 ProxySQL_Cluster.cpp:915:set_checksums(): [WARNING] Cluster: detected a peer 192.168.0.11:6032 with mysql_servers version 1, epoch 1727968666, diff_check 150. Own version: 1, epoch: 1728013985. diff_check is increasing, but version 1 doesn't allow sync. This message will be repeated every 30 checks until LOAD MYSQL SERVERS TO RUNTIME is executed on candidate master.
+
+```
+
+이는 앞서 설명드린 ProxySQL의 [클러스터 동기화 과정(클릭)](https://duhokim0901.github.io/mysql/proxysql_cluster_1/#%EF%B8%8Fproxysql-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EC%A3%BC%EC%9A%94%EA%B0%9C%EB%85%90)에 의해 발생합니다. mysql-server1(192.168.0.11) 에서 전달받은 모듈의 체크섬의 결과값과 자신의 체크섬 값이 상이할 경우 모듈별 현재 체크섬의 버전과 에포크를 비교하면서 동기화를 수행합니다. 이 때 mysql-server2의 버전이 1일 경우 1버전보다 크면서 에포크 값이 가장 높은 인스턴스를 찾아 동기화를 해야합니다. 하지만 에러 메시지를 통해 미루어보아 mysql-server1 의 모듈 체크섬 버전이 1이기 때문에 동기화를 하지 못하는 것입니다.   
+
+모듈별 체크섬 버전과 에포크 값을 확인하는 방법은 아래와 같습니다.
+
+- 관리콘솔 접속
+  ```bash
+mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
+```
+
+- runtime_checksums_values 테이블 조회
+  ```sql
+SELECT * FROM runtime_checksums_values;
+```
+
+- 확인결과
+  ```
+mysql-server1> SELECT * FROM runtime_checksums_values;
++-------------------+---------+------------+--------------------+
+| name              | version | epoch      | checksum           |
++-------------------+---------+------------+--------------------+
+| admin_variables   | 1       | 1727968666 | 0xB62B8D3CB14389C2 |
+| mysql_query_rules | 1       | 1727968666 | 0x9DEAF45E6E662B5F | <-- 코어 멤버의 mysql server rules 모듈의 체크섬 정보 version 1
+| mysql_servers     | 1       | 1727968666 | 0x397CE208AB710D50 | <-- 코어 멤버의 mysql servers 모듈의 체크섬 정보 version 1
+| mysql_users       | 2       | 1727969204 | 0x4C50FB16DB34D2E5 |
+| mysql_variables   | 2       | 1728014575 | 0x4E71AB1ADF17EF70 |
+| proxysql_servers  | 1       | 1727968666 | 0xEB7F779029A89859 |
+| mysql_servers_v2  | 1       | 1727968666 | 0x74B77E00F44904CE |
++-------------------+---------+------------+--------------------+
+7 rows in set (0.01 sec)
+
+
+mysql-server2> SELECT * FROM runtime_checksums_values;
++-------------------+---------+------------+--------------------+
+| name              | version | epoch      | checksum           |
++-------------------+---------+------------+--------------------+
+| admin_variables   | 2       | 1728014600 | 0xB62B8D3CB14389C2 |
+| mysql_query_rules | 1       | 1728013985 | 0x0000000000000000 | <-- 신규 구성 멤버의 mysql server rules 모듈의 체크섬 정보 version 1
+| mysql_servers     | 1       | 1728013985 | 0x0000000000000000 | <-- 신규 구성 멤버의 mysql servers 모듈의 체크섬 정보 version 1
+| mysql_users       | 2       | 1727969204 | 0x4C50FB16DB34D2E5 |
+| mysql_variables   | 2       | 1728014575 | 0x4E71AB1ADF17EF70 |
+| proxysql_servers  | 2       | 1728014605 | 0xEB7F779029A89859 |
+| mysql_servers_v2  | 1       | 1728013985 | 0x0000000000000000 |
++-------------------+---------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+  ```
+
+<br/>
+
+확인해본 결과와 같이 version 값이 "1보다 커야" 동기화가 가능하지만 현재 버전이 1로 동일한 상황입니다. 이를 해결하기 위한 방법으로 핵심 멤버의 모듈을 runtime 단계롤 다시 재로딩하는 것입니다. 아래의 명령어를 mysql-server1(192.168.0.11) 에서 수행하고 체크섬 값과 로그를 다시 확인해봅니다.
+
+- runtime 단계에서 모듈 재로딩
+  ```
 LOAD MYSQL SERVERS TO RUNTIME;
+LOAD MYSQL QUERY RULES TO RUNTIME;
 ```
+
+- 모듈별 체크섬 결과
+  ```
+mysql-server1> SELECT * FROM runtime_checksums_values;
++-------------------+---------+------------+--------------------+
+| name              | version | epoch      | checksum           |
++-------------------+---------+------------+--------------------+
+| admin_variables   | 1       | 1727968666 | 0xB62B8D3CB14389C2 |
+| mysql_query_rules | 2       | 1728016171 | 0x9DEAF45E6E662B5F | <-- 버전2로 변경
+| mysql_servers     | 2       | 1728016170 | 0x397CE208AB710D50 | <-- 버전2로 변경
+| mysql_users       | 2       | 1727969204 | 0x4C50FB16DB34D2E5 |
+| mysql_variables   | 2       | 1728014575 | 0x4E71AB1ADF17EF70 |
+| proxysql_servers  | 1       | 1727968666 | 0xEB7F779029A89859 |
+| mysql_servers_v2  | 2       | 1728016170 | 0x74B77E00F44904CE |
++-------------------+---------+------------+--------------------+
+7 rows in set (0.01 sec)
+
+
+mysql-server2> SELECT * FROM runtime_checksums_values;
++-------------------+---------+------------+--------------------+
+| name              | version | epoch      | checksum           |
++-------------------+---------+------------+--------------------+
+| admin_variables   | 2       | 1728014600 | 0xB62B8D3CB14389C2 |
+| mysql_query_rules | 2       | 1728016171 | 0x9DEAF45E6E662B5F | <-- 버전2로 변경, mysql-server1의 체크섬 값과 동일
+| mysql_servers     | 2       | 1728016170 | 0x397CE208AB710D50 | <-- 버전2로 변경, mysql-server1의 체크섬 값과 동일
+| mysql_users       | 2       | 1727969204 | 0x4C50FB16DB34D2E5 |
+| mysql_variables   | 2       | 1728014575 | 0x4E71AB1ADF17EF70 |
+| proxysql_servers  | 2       | 1728014605 | 0xEB7F779029A89859 |
+| mysql_servers_v2  | 2       | 1728016170 | 0x74B77E00F44904CE |
++-------------------+---------+------------+--------------------+
+7 rows in set (0.00 sec)
+
+```
+
+- mysql-server2의 ProxySQL 에러로그 확인
+  ```
+2024-10-04 13:29:31 [INFO] Cluster: detected a peer 192.168.0.11:6032 with mysql_servers_v2 version 2, epoch 1728016170, diff_check 1565. Own version: 1, epoch: 1728013985. Proceeding with remote sync
+2024-10-04 13:29:31 [INFO] Cluster: Fetch mysql_servers_v2:'YES', mysql_servers:'YES' from peer 192.168.0.11:6032
+2024-10-04 13:29:31 [INFO] Cluster: detected peer 192.168.0.11:6032 with mysql_servers_v2 version 2, epoch 1728016170
+2024-10-04 13:29:31 [INFO] Cluster: Fetching MySQL Servers v2 from peer 192.168.0.11:6032 started. Expected checksum 0x74B77E00F44904CE
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Servers v2' from peer 192.168.0.11:6032 completed
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Group Replication Hostgroups' from peer 192.168.0.11:6032
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Galera Hostgroups' from peer 192.168.0.11:6032
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Aurora Hostgroups' from peer 192.168.0.11:6032
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Hostgroup Attributes' from peer 192.168.0.11:6032
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Servers SSL Params' from peer 192.168.0.11:6032
+2024-10-04 13:29:31 [INFO] Cluster: Fetching 'MySQL Servers' from peer 192.168.0.11:6032 completed
+2024-10-04 13:29:31 [INFO] Cluster: Computed checksum for MySQL Servers v2 from peer 192.168.0.11:6032 : 0x74B77E00F44904CE
+2024-10-04 13:29:31 [INFO] Cluster: Computed checksum for MySQL Servers from peer 192.168.0.11:6032 : 0x397CE208AB710D50
+2024-10-04 13:29:31 [INFO] Cluster: Fetching checksum for 'MySQL Servers' from peer 192.168.0.11:6032 successful. Checksum: 0x74B77E00F44904CE
+2024-10-04 13:29:31 [INFO] Cluster: Writing mysql_servers table
+
+
+```
+
+보이는 바와 같이 mysql-server1의 체크섬 버전이 2로 올라가면서 mysql-server2 또한 동기화 되는 것을 확인할 수 있습니다.
 
 <br/>
 
