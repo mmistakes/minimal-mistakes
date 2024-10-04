@@ -219,8 +219,7 @@ mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> '
 SELECT * FROM runtime_checksums_values;
 ```
 
-- 확인결과
-  
+- 확인 결과
 ```
 mysql-server1> SELECT * FROM runtime_checksums_values;
 +-------------------+---------+------------+--------------------+
