@@ -34,7 +34,7 @@ comments: true
 | 구성              | 버전             | OS        | 서버 대수                | 서버 IP                  |
 |-------------------|------------------|-----------|--------------------------|--------------------------|
 | **ProxySQL**       | 2.7.0-11         | Rocky 8.8 | 2대                      | mysql-server1, mysql-server2|
-| **Keepalived**     | 2.1.5            | -         | Active/Backup             | Active: mysql-server1      |
+| **Keepalived**     | 2.1.5            | Rocky 8.8 | Active/Backup             | Active: mysql-server1      |
 |                   |                  |           |                          | Backup: mysql-server2      |
 | **MySQL**          | 8.0.39           | Rocky 8.8 | 3대                      | mysql-server1(P), mysql-server2(R), mysql-server3(R) |
 
@@ -210,17 +210,17 @@ SAVE PROXYSQL SERVERS TO DISK;
 모듈별 체크섬 버전과 에포크 값을 확인하는 방법은 아래와 같습니다.
 
 - 관리콘솔 접속
-  ```bash
+```bash
 mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
 ```
 
 - runtime_checksums_values 테이블 조회
-  ```sql
+```sql
 SELECT * FROM runtime_checksums_values;
 ```
 
 - 확인결과
-  ```
+```
 mysql-server1> SELECT * FROM runtime_checksums_values;
 +-------------------+---------+------------+--------------------+
 | name              | version | epoch      | checksum           |
@@ -249,21 +249,20 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 | mysql_servers_v2  | 1       | 1728013985 | 0x0000000000000000 |
 +-------------------+---------+------------+--------------------+
 7 rows in set (0.00 sec)
-
-  ```
+```
 
 <br/>
 
 확인해본 결과와 같이 version 값이 "1보다 커야" 동기화가 가능하지만 현재 버전이 1로 동일한 상황입니다. 이를 해결하기 위한 방법으로 핵심 멤버의 모듈을 runtime 단계롤 다시 재로딩하는 것입니다. 아래의 명령어를 mysql-server1(192.168.0.11) 에서 수행하고 체크섬 값과 로그를 다시 확인해봅니다.
 
 - runtime 단계에서 모듈 재로딩
-  ```
+```
 LOAD MYSQL SERVERS TO RUNTIME;
 LOAD MYSQL QUERY RULES TO RUNTIME;
 ```
 
 - 모듈별 체크섬 결과
-  ```
+```
 mysql-server1> SELECT * FROM runtime_checksums_values;
 +-------------------+---------+------------+--------------------+
 | name              | version | epoch      | checksum           |
@@ -296,7 +295,7 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 ```
 
 - mysql-server2의 ProxySQL 에러로그 확인
-  ```
+```
 2024-10-04 13:29:31 [INFO] Cluster: detected a peer 192.168.0.11:6032 with mysql_servers_v2 version 2, epoch 1728016170, diff_check 1565. Own version: 1, epoch: 1728013985. Proceeding with remote sync
 2024-10-04 13:29:31 [INFO] Cluster: Fetch mysql_servers_v2:'YES', mysql_servers:'YES' from peer 192.168.0.11:6032
 2024-10-04 13:29:31 [INFO] Cluster: detected peer 192.168.0.11:6032 with mysql_servers_v2 version 2, epoch 1728016170
@@ -312,17 +311,36 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 2024-10-04 13:29:31 [INFO] Cluster: Computed checksum for MySQL Servers from peer 192.168.0.11:6032 : 0x397CE208AB710D50
 2024-10-04 13:29:31 [INFO] Cluster: Fetching checksum for 'MySQL Servers' from peer 192.168.0.11:6032 successful. Checksum: 0x74B77E00F44904CE
 2024-10-04 13:29:31 [INFO] Cluster: Writing mysql_servers table
-
-
 ```
 
-보이는 바와 같이 mysql-server1의 체크섬 버전이 2로 올라가면서 mysql-server2 또한 동기화 되는 것을 확인할 수 있습니다.
+보이는 바와 같이 mysql-server1의 체크섬 버전이 2로 올라가면서 mysql-server2 또한 동기화된 것을 확인할 수 있습니다.
+
+- 동기화 결과 확인 
+
+```bash
+mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
+```
+
+```sql
+SELECT * FROM mysql_servers;
+SELECT * FROM mysql_servers;
+SELECT * FROM mysql_servers;
+```
+
+위 쿼리 결과를 ProxySQL 간 비교해보면 동일한 것을 확인하실 수 있습니다.
+
 
 <br/>
 
-### 🚀제목 
+### 🚀keepalived 를 이용한 HA 구성
 ---
-본문
+이번에는 keepalived 를 이용하여 vip를 만들고 Active - Backup 구조를 만들어보도록 하겠습니다. Active 서버는 mysql-server1(192.168.0.11)이고 Backup 서버는 mysql-server2(192.168.0.12) 입니다.
+
+먼저 yum 을 이용해 패키지를 설치합니다.
+
+```bash
+
+```
 
 
 <br/>
