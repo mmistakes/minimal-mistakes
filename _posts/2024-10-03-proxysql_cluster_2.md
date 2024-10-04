@@ -1,5 +1,5 @@
 ---
-title: "[MySQL/MariaDB] ProxySQL 클러스터 구성(2/3)"
+title: "[MySQL/MariaDB] ProxySQL 클러스터 구성(2/2)"
 excerpt: "HA를 고려한 ProxySQL 클러스터 구성을 테스트합니다."
 #layout: archive
 categories:
@@ -404,7 +404,7 @@ vrrp_instance VI_1 {
 | `virtual_ipaddress`  | 가상 IP 설정: `192.168.0.20/24` (마스터와 백업 노드 모두 동일한 IP를 사용).                  |
 | `track_script`       | 서비스 상태 확인 스크립트 `chk_service`를 트래킹하여 서비스 상태에 따라 VRRP 우선순위 조정. |
 
-
+<br/>
 
 다음은 Backup 용도의 mysql-server2 의 keepalived.conf 입니다.
 ```shell
@@ -462,6 +462,7 @@ vrrp_instance VI_1 {
 | `virtual_ipaddress`  | 마스터와 동일한 가상 IP 설정 (192.168.0.20/24).                                        |
 | `track_script`       | 상태 확인 스크립트 `chk_service`를 트래킹하여 서비스 상태에 따라 VRRP 상태 변경.      |
 
+<br/>
 
 keepalived 설정 파일을 구성하였으면 vrrp_script(vrrp 상태 체크) 를 생성합니다. 해당 작업은 mysql-server1, mysql-server2 모두 동일하게 적용하면 됩니다. ProxySQL 프로세스가 존재하지 않을 경우 vrrp 프로토콜에 의해 vip 를 backup 서버로 전달하기 위한 설정입니다.
 
@@ -542,15 +543,187 @@ ip addr show dev enp0s3
 
 <br/>
 
-### ✏️제목
+### 😸HA + ProxySQL 연결 테스트
 ---
-본문
+모든 구성이 끝났으니 간단한 동작 테스트를 해보려고 합니다. duhokim.tab1 이란 테이블에 1초 주기마다 데이터를 INSERT 를 하도록 하겠습니다. 이 때 keepalived 로 설정한 vip 와 ProxySQL 포트(6033)를 이용하여 접근할 것입니다. 이 상황에서 mysql-server1(192.168.0.11) 서버의 ProxySQL 이 예기치 않은 종료가 이루어졌을 때에도 지속적으로 데이터 삽입이 가능한지 볼 예정입니다.
 
-<br/>
+duhokim.tab1 테이블은 아래와 같습니다.
 
-### 😸제목
----
-본문
+```sql
+mysql> desc tab1;
++-------+--------------+------+-----+-------------------+-------------------+
+| Field | Type         | Null | Key | Default           | Extra             |
++-------+--------------+------+-----+-------------------+-------------------+
+| col1  | int          | NO   | PRI | NULL              | auto_increment    |
+| col2  | varchar(100) | YES  |     | NULL              |                   |
+| col3  | datetime     | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-------+--------------+------+-----+-------------------+-------------------+
+```
+
+INSERT 쿼리는 아래와 같습니다.
+```sql
+INSERT INTO tab1(col2, col3) values(@@hostname, now());
+```
+
+
+반복호출을 시도합니다.
+```shell
+ while [ true ] ;do mysql -h192.168.0.20 -usvcusr -psvcusr -P6033 duhokim < test.sql; sleep 1; done
+```
+
+아래와 같이 매초마다 데이터가 삽입되고 있습니다.
+```
+mysql> select * from duhokim.tab1;
++------+---------------+---------------------+
+| col1 | col2          | col3                |
++------+---------------+---------------------+
+|  433 | mysql-server1 | 2024-10-03 22:04:10 |
+|  434 | mysql-server1 | 2024-10-03 22:04:11 |
+|  435 | mysql-server1 | 2024-10-03 22:04:12 |
+|  436 | mysql-server1 | 2024-10-03 22:04:13 |
+|  437 | mysql-server1 | 2024-10-03 22:04:14 |
+|  438 | mysql-server1 | 2024-10-03 22:04:15 |
+|  439 | mysql-server1 | 2024-10-03 22:04:16 |
+|  440 | mysql-server1 | 2024-10-03 22:04:17 |
+|  441 | mysql-server1 | 2024-10-03 22:04:18 |
+|  442 | mysql-server1 | 2024-10-03 22:04:19 |
+|  443 | mysql-server1 | 2024-10-03 22:04:20 |
+|  444 | mysql-server1 | 2024-10-03 22:04:21 |
+|  445 | mysql-server1 | 2024-10-03 22:04:22 |
+|  446 | mysql-server1 | 2024-10-03 22:04:24 |
+|  447 | mysql-server1 | 2024-10-03 22:04:25 |
+|  448 | mysql-server1 | 2024-10-03 22:04:26 |
+|  449 | mysql-server1 | 2024-10-03 22:04:27 |
+|  450 | mysql-server1 | 2024-10-03 22:04:28 |
+|  451 | mysql-server1 | 2024-10-03 22:04:29 |
+|  452 | mysql-server1 | 2024-10-03 22:04:30 |
+|  453 | mysql-server1 | 2024-10-03 22:04:31 |
+|  454 | mysql-server1 | 2024-10-03 22:04:32 |
+|  455 | mysql-server1 | 2024-10-03 22:04:33 |
+|  456 | mysql-server1 | 2024-10-03 22:04:34 |
+|  457 | mysql-server1 | 2024-10-03 22:04:35 |
+|  458 | mysql-server1 | 2024-10-03 22:04:36 |
+|  459 | mysql-server1 | 2024-10-03 22:04:37 |
+|  460 | mysql-server1 | 2024-10-03 22:04:38 |
+|  461 | mysql-server1 | 2024-10-03 22:04:39 |
+|  462 | mysql-server1 | 2024-10-03 22:04:40 |
+|  463 | mysql-server1 | 2024-10-03 22:04:42 |
+|  464 | mysql-server1 | 2024-10-03 22:04:43 |
+|  465 | mysql-server1 | 2024-10-03 22:04:44 |
+|  466 | mysql-server1 | 2024-10-03 22:04:45 |
+|  467 | mysql-server1 | 2024-10-03 22:04:46 |
++------+---------------+---------------------+
+35 rows in set (0.00 sec)
+```
+
+위의 상황에서 mysql-server1 의 proxysql 데몬을 kill -9 처리하여 강제 종료 시키겠습니다.
+
+```shell
+[root@mysql-server1 ~]# ps -ef | grep proxysql | grep proxysql.cnf | egrep -v grep
+proxysql  445081       1  0 00:17 ?        00:00:00 /usr/bin/proxysql --idle-threads -c /etc/proxysql.cnf
+proxysql  445082  445081  0 00:17 ?        00:06:56 /usr/bin/proxysql --idle-threads -c /etc/proxysql.cnf
+
+[root@mysql-server1 ~]# kill -9 445081
+```
+
+위의 작업을 수행하면 실행중인 반복문에서 일시적으로 연결 실패가 나타납니다. 하지만 머지않아 다시 정상적으로 연결됩니다.
+```
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.0.20:6033' (111)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.0.20:6033' (111)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.0.20:6033' (111)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.0.20:6033' (111)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.0.20:6033' (111)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 2003 (HY000): Can't connect to MySQL server on '192.168.0.20:6033' (111)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+```
+
+mysql-server1의 keepalived 로그를 살펴보겠습니다.
+
+```shell
+[root@mysql-server1 ~]# tail -f /var/log/messages | grep "Keepalived"
+Oct  4 16:07:00 mysql-server1 Keepalived_vrrp[640390]: Script `chk_service` now returning 1
+Oct  4 16:07:02 mysql-server1 Keepalived_vrrp[640390]: VRRP_Script(chk_service) failed (exited with status 1)
+Oct  4 16:07:02 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Changing effective priority from 100 to 80
+Oct  4 16:07:05 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Master received advert from 192.168.0.12 with higher priority 90, ours 
+Oct  4 16:07:05 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Entering BACKUP STATE
+Oct  4 16:07:05 mysql-server1 Keepalived_vrrp[640390]: (VI_1) removing VIPs.
+```
+
+다음은 mysql-server2의 keepalived 로그입니다.
+
+```shell
+[root@mysql-server2 ~]# tail -f /var/log/messages | grep "Keepalived"
+Oct  4 16:07:02 mysql-server2 Keepalived_vrrp[638259]: (VI_1) received lower priority (80) advert from 192.168.0.11 - discarding
+Oct  4 16:07:03 mysql-server2 Keepalived_vrrp[638259]: (VI_1) received lower priority (80) advert from 192.168.0.11 - discarding
+Oct  4 16:07:04 mysql-server2 Keepalived_vrrp[638259]: (VI_1) received lower priority (80) advert from 192.168.0.11 - discarding
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: (VI_1) Receive advertisement timeout
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: (VI_1) Entering MASTER STATE
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: (VI_1) setting VIPs.
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: (VI_1) Sending/queueing gratuitous ARPs on enp0s3 for 192.168.0.20
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
+Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
+```
+
+보시는 바와 같이 VRRP_Script 가 동작하면서 priority 를 80 으로 낮추면서 priority 값이 그보다 높은 값(90)을 가진 Backup 서버로 VIP 가 전달 되었습니다.
+실제로 데이터도 살펴보도록 하겠습니다.
+
+```sql
+mysql> select * from tab1 where col1 >= 585 and col1 <= 600;
++------+---------------+---------------------+
+| col1 | col2          | col3 (UTC)          |
++------+---------------+---------------------+
+|  585 | mysql-server1 | 2024-10-03 22:06:51 |
+|  586 | mysql-server1 | 2024-10-03 22:06:52 |
+|  587 | mysql-server1 | 2024-10-03 22:06:53 |
+|  588 | mysql-server1 | 2024-10-03 22:06:54 |
+|  589 | mysql-server1 | 2024-10-03 22:06:55 |
+|  590 | mysql-server1 | 2024-10-03 22:06:56 |
+|  591 | mysql-server1 | 2024-10-03 22:06:57 |
+|  592 | mysql-server1 | 2024-10-03 22:06:58 |
+|  593 | mysql-server1 | 2024-10-03 22:07:05 |<--- 장애발생시점 이후 정상화된 시간
+|  594 | mysql-server1 | 2024-10-03 22:07:06 |
+|  595 | mysql-server1 | 2024-10-03 22:07:07 |
+|  596 | mysql-server1 | 2024-10-03 22:07:08 |
+|  597 | mysql-server1 | 2024-10-03 22:07:09 |
+|  598 | mysql-server1 | 2024-10-03 22:07:10 |
+|  599 | mysql-server1 | 2024-10-03 22:07:11 |
+|  600 | mysql-server1 | 2024-10-03 22:07:12 |
++------+---------------+---------------------+
+16 rows in set (0.15 sec)
+```
+
+위의 로그내용과 데이터 상황을 종합해보면 다음과 같습니다.
+
+- chk_service 스크립트를 통해 proxySQL이 다운된 것을 감지합니다.
+  ```Oct  4 16:07:00 mysql-server1 Keepalived_vrrp[640390]: Script `chk_service` now returning 1```
+- 그리고 mysql-server2 가 vip를 넘겨받은 시간은 16:07:05 입니다.
+  ```Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: (VI_1) Sending/queueing gratuitous ARPs on enp0s3 for 192.168.0.20```
+- 16:07:05 부터 vip 연결이 정상화 되어 DB 내에 데이터를 적재할 수 있게 되었습니다.
+
+
+대략 Failover 이후 정상화 단계까지 7초 정도 걸렸습니다. AWS RDS 의 유지보수 작업 시 발생하는 Failover 에 비하면 상당히 빠른 전환이라 볼 수 있지만 vrrp_script 의 체크인터벌을 줄이면 조금 더 민첩하게 대응할 수 있을 것으로 보입니다. 물론 운영환경에서는 조금 더 안전한 방식의 HA를 구성하는 것이 정신건강에 좋을 수 있습니다. 저라면 Cloud 를 쓸 수 있는 환경이라면 관리형 로드밸런서를 이용하고 IDC 환경일 경우 L4 Switch 장비를 선택할 것 같습니다. 가벼운 시스템의 경우 지금처럼 Keepalived 를 이용하여 구축을 할 수도 있습니다. 그리고 StandBy 서버에서도 ProxySQL을 통해 미리 연결 풀링을 맺은 상태이기 때문에 커넥션을 맺는 과정이 생략되어 전환이 좀 더 빨라진 효과도 얻었다고 볼 수 있습니다. HA 를 고려한 ProxySQL 클러스터 구성 및 테스트는 여기서 마무리 하도록 하겠습니다. 감사합니다.
+
 
 <br/>
 

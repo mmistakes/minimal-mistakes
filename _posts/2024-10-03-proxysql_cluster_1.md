@@ -1,5 +1,5 @@
 ---
-title: "[MySQL/MariaDB] ProxySQL 클러스터 구성(1/3)"
+title: "[MySQL/MariaDB] ProxySQL 클러스터 구성(1/1)"
 excerpt: "ProxySQL 클러스터에 대한 기본 지식을 정리합니다."
 #layout: archive
 categories:
