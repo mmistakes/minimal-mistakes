@@ -130,13 +130,17 @@ body {
     }
   }
 
-  li:not(.toc__menu) {
+  li {
     a{
       color: #be7831;
       text-decoration: underline;
     }
   }
 
+  .toc__menu li a {
+    color: inherit;           // 상위 요소의 색상을 그대로 사용 (색상 제거)
+    text-decoration: none;    // 밑줄 제거
+  }
 
   a:not(.btn) {
 
