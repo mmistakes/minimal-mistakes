@@ -254,11 +254,10 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 7 rows in set (0.00 sec)
 ```
 
-<br/>
-
 확인해본 결과와 같이 version 값이 "1보다 커야" 동기화가 가능하지만 현재 버전이 1로 동일한 상황입니다. 이를 해결하기 위한 방법으로 핵심 멤버의 모듈을 runtime 단계롤 다시 재로딩하는 것입니다. 아래의 명령어를 mysql-server1(192.168.0.11) 에서 수행하고 체크섬 값과 로그를 다시 확인해봅니다.
 
 - runtime 단계에서 모듈 재로딩
+  
 ```
 LOAD MYSQL SERVERS TO RUNTIME;
 LOAD MYSQL QUERY RULES TO RUNTIME;
@@ -299,6 +298,7 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 ```
 
 - mysql-server2의 ProxySQL 에러로그 확인
+  
 ```
 2024-10-04 13:29:31 [INFO] Cluster: detected a peer 192.168.0.11:6032 with mysql_servers_v2 version 2, epoch 1728016170, diff_check 1565. Own version: 1, epoch: 1728013985. Proceeding with remote sync
 2024-10-04 13:29:31 [INFO] Cluster: Fetch mysql_servers_v2:'YES', mysql_servers:'YES' from peer 192.168.0.11:6032
@@ -389,6 +389,23 @@ vrrp_instance VI_1 {
 }
 ```
 
+위 설정을 간략하게 설명하면 다음과 같습니다.
+
+| 설정 항목            | 설명                                                                                     |
+|----------------------|------------------------------------------------------------------------------------------|
+| `vrrp_script`        | VRRP에서 사용할 서비스 상태 확인 스크립트 설정.                                           |
+| `chk_service`        | - 스크립트 경로: `/etc/keepalived/check_service.sh`<br>- 스크립트 실행 간격: 2초<br>- weight 조정: -20 (서비스가 비정상일 경우 우선순위를 20 낮춤)<br>- fall: 2 (2회 연속 실패 시 스크립트 상태를 비정상으로 간주) |
+| `vrrp_instance VI_1` | VRRP 인스턴스 설정 블록. VRRP ID, 인증, 우선순위, 가상 IP 주소 등을 정의.                    |
+| `state MASTER`       | 현재 노드를 MASTER로 설정 (백업 노드보다 높은 우선순위를 가짐).                             |
+| `interface enp0s3`   | 가상 IP를 바인딩할 네트워크 인터페이스 (예: `enp0s3`).                                       |
+| `virtual_router_id 51` | VRRP 그룹을 구분하는 ID (마스터와 백업이 동일한 ID로 설정되어 같은 그룹으로 인식됨).       |
+| `priority 100`       | 마스터 노드의 우선순위 (백업 노드보다 높은 값으로 설정).                                     |
+| `authentication`     | - 인증 방식: `PASS`<br>- 인증 비밀번호: `1234`                                            |
+| `virtual_ipaddress`  | 가상 IP 설정: `192.168.0.20/24` (마스터와 백업 노드 모두 동일한 IP를 사용).                  |
+| `track_script`       | 서비스 상태 확인 스크립트 `chk_service`를 트래킹하여 서비스 상태에 따라 VRRP 우선순위 조정. |
+
+
+
 다음은 Backup 용도의 mysql-server2 의 keepalived.conf 입니다.
 ```shell
 [root@mysql-server2 ~]# vi /etc/keepalived/keepalived.conf
@@ -446,7 +463,82 @@ vrrp_instance VI_1 {
 | `track_script`       | 상태 확인 스크립트 `chk_service`를 트래킹하여 서비스 상태에 따라 VRRP 상태 변경.      |
 
 
+keepalived 설정 파일을 구성하였으면 vrrp_script(vrrp 상태 체크) 를 생성합니다. 해당 작업은 mysql-server1, mysql-server2 모두 동일하게 적용하면 됩니다. ProxySQL 프로세스가 존재하지 않을 경우 vrrp 프로토콜에 의해 vip 를 backup 서버로 전달하기 위한 설정입니다.
 
+
+```shell
+#!/bin/bash
+
+# keepalive가 포함된 프로세스의 수를 확인
+count=$(ps -ef | grep "proxysql.cnf" | egrep -v "grep" | wc -l)
+
+# 카운트가 0보다 크면 exit 0, 그렇지 않으면 exit 1
+if [ "$count" -gt 0 ]; then
+    exit 0
+else
+    exit 1
+fi
+```
+
+
+위 설정을 완료하면 keepalived 데몬을 기동합니다.
+
+```shell
+
+systemctl start keepalived.service
+
+```
+
+keepalived 데몬 기동 후 로그는 아래의 명령어를 통해 확인할 수 있습니다.
+
+```shell
+tail -f /var/log/messages | grep "Keepalived"
+```
+
+아래는 기동 후 발생하는 로그입니다.
+
+```
+`[root@mysql-server1 ~`]# tail -f /var/log/messages | grep "Keepalived"
+Oct  4 15:37:56 mysql-server1 Keepalived[640388]: Starting Keepalived v2.1.5 (07/13,2020)
+Oct  4 15:37:56 mysql-server1 Keepalived[640388]: Running on Linux 4.18.0-477.10.1.el8_8.x86_64 #1 SMP Tue May 16 11:38:37 UTC 2023 (built for Linux 4.18.0)
+Oct  4 15:37:56 mysql-server1 Keepalived[640388]: Command line: '/usr/sbin/keepalived' '-D'
+Oct  4 15:37:56 mysql-server1 Keepalived[640388]: Opening file '/etc/keepalived/keepalived.conf'.
+Oct  4 15:37:56 mysql-server1 Keepalived[640389]: NOTICE: setting config option max_auto_priority should result in better keepalived performance
+Oct  4 15:37:56 mysql-server1 Keepalived[640389]: Starting VRRP child process, pid=640390
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: Registering Kernel netlink reflector
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: Registering Kernel netlink command channel
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: Opening file '/etc/keepalived/keepalived.conf'.
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: Assigned address 192.168.0.11 for interface enp0s3
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: Assigned address fe80::a00:27ff:fe71:50fe for interface enp0s3
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: Registering gratuitous ARP shared channel
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: (VI_1) removing VIPs.
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Entering BACKUP STATE (init)
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: VRRP sockpool: [ifindex(  2), family(IPv4), proto(112), fd(11,12)]
+Oct  4 15:37:56 mysql-server1 Keepalived_vrrp[640390]: VRRP_Script(chk_service) succeeded
+Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Receive advertisement timeout
+Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Entering MASTER STATE
+Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: (VI_1) setting VIPs.
+Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Sending/queueing gratuitous ARPs on enp0s3 for 192.168.0.20
+Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
+```
+
+enp0s3 네트워크 카드에 vip 가 정상적으로 등록 되었는지 확인합니다.
+
+```shell
+ip addr show dev enp0s3
+```
+
+설정한 192.168.0.20 ip 가 등록된것을 확인할 수 있습니다.
+```
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:71:50:fe brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.11/24 brd 192.168.0.255 scope global noprefixroute enp0s3
+       valid_lft forever preferred_lft forever
+    inet 192.168.0.20/24 scope global secondary enp0s3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe71:50fe/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+```
 
 <br/>
 
