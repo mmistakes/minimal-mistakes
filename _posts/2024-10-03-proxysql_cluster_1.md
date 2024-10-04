@@ -136,7 +136,7 @@ HA를 고려한 ProxySQL 클러스터 구성을 간단히 테스트해 볼 예�
 - [ProxySQL 클러스터](https://proxysql.com/documentation/proxysql-클러스터/)
 - [Where Do I Put ProxySQL?](https://www.percona.com/blog/where-do-i-put-proxysql/)
 - [ProxySQL Aurora 구성](https://community.aws/content/2fUJK8dG9EYXLr52nCWVRejCCf0/using-proxysql-to-replace-deprecated-mysql-8-0-query-cache)
-- 
+
 <br/>
 ---
 
