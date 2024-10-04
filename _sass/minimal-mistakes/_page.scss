@@ -125,15 +125,15 @@ body {
     }
 
     a{
-      color: #75491d;
-      /*text-decoration: underline;*/
+      color: #be7831;
+      text-decoration: underline;
     }
   }
 
-  li {
+  li:not(.toc__menu) {
     a{
-      color: #75491d;
-      /*text-decoration: underline;*/
+      color: #be7831;
+      text-decoration: underline;
     }
   }
 
