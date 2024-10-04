@@ -336,11 +336,112 @@ SELECT * FROM mysql_servers;
 ---
 이번에는 keepalived 를 이용하여 vip를 만들고 Active - Backup 구조를 만들어보도록 하겠습니다. Active 서버는 mysql-server1(192.168.0.11)이고 Backup 서버는 mysql-server2(192.168.0.12) 입니다.
 
-먼저 yum 을 이용해 패키지를 설치합니다.
+먼저 yum 을 이용해 패키지를 설치합니다. mysql-server1 과 mysql-server2 양쪽에 모두 수행합니다.
 
 ```bash
+yum install keepalived
+```
+
+
+이후에 설정파일을 수정합니다. Active, Backup 용도에 맞게 mysql-server1 과 mysql-server2 의 설정파일을 각각 설정해야합니다.
+
+먼저 Active 용도의 mysql-server1 의 keepalived.conf 입니다.
+```
+[root@mysql-server1 ~]# vi /etc/keepalived/keepalived.conf
+```
 
 ```
+global_defs {
+
+}
+
+
+vrrp_script chk_service {          # 서비스 상태 확인 스크립트 정의 
+    script "/etc/keepalived/check_service.sh"  # 스크립트 경로 
+    interval 2                     # 스크립트 실행 간격 (초 단위)
+    weight -20                     # 실패 시 우선순위를 줄임 
+    fall 2
+}
+
+vrrp_instance VI_1 {
+    state MASTER                   # MASTER 또는 BACKUP 설정
+    interface enp0s3                 # 가상 IP를 바인딩할 네트워크 인터페이스 (예: eth0)
+    virtual_router_id 51           # VRRP 그룹을 구분하는 ID (0~255 범위)
+    priority 100                   # 마스터의 우선순위 (BACKUP은 더 낮게 설정)
+    #advert_int 1                   # VRRP 광고 전송 간격 (초 단위)
+
+    authentication {               # 인증 설정 (옵션)
+        auth_type PASS
+        auth_pass 1234
+    }
+
+    virtual_ipaddress {            # 가상 IP 설정
+        192.168.0.20/24
+    }
+
+    track_script {                 # 상태 확인 스크립트 (옵션)
+        chk_service
+    }
+}
+```
+
+다음은 Backup 용도의 mysql-server2 의 keepalived.conf 입니다.
+```
+[root@mysql-server2 ~]# vi /etc/keepalived/keepalived.conf
+```
+
+```
+global_defs {
+
+}
+
+vrrp_script chk_service {          # 서비스 상태 확인 스크립트
+    script "/etc/keepalived/check_service.sh"
+    interval 2
+    weight -20
+    fall 2
+}
+
+
+vrrp_instance VI_1 {
+    state BACKUP                   # 이 노드는 백업으로 설정
+    interface enp0s3                 # VIP를 바인딩할 인터페이스
+    virtual_router_id 51           # 마스터와 동일한 VRRP ID
+    priority 90                    # 백업 노드는 마스터보다 낮은 우선순위를 가짐
+    #advert_int 1                   # VRRP 광고 메시지 간격
+
+    authentication {               # 인증 설정 (마스터와 동일)
+        auth_type PASS
+        auth_pass 1234
+    }
+
+    virtual_ipaddress {            # 마스터와 동일한 가상 IP
+        192.168.0.20/24
+    }
+
+    track_script {                 # 상태 확인 스크립트
+        chk_service
+    }
+}
+
+```
+
+위 설정을 간략하게 설명하면 다음과 같습니다.
+
+| 설정 항목            | 설명                                                                 |
+|----------------------|----------------------------------------------------------------------|
+| `vrrp_script`        | VRRP(Virtual Router Redundancy Protocol)에서 사용할 서비스 상태 확인 스크립트 설정. |
+| `chk_service`        | - 상태 확인 스크립트 경로: `/etc/keepalived/check_service.sh`<br>- 스크립트 실행 간격: 2초<br>- weight 조정: -20 (서비스가 비정상이면 우선순위가 20 낮아짐)<br>- fall: 2 (2회 연속 실패 시 다운) |
+| `vrrp_instance VI_1` | VRRP 인스턴스 설정 블록. VRRP ID, 인증, 우선순위, 가상 IP 주소 등을 정의. |
+| `state BACKUP`       | 현재 노드를 백업으로 설정하여 마스터 장애 발생 시만 활성화.                              |
+| `interface enp0s3`   | 가상 IP를 바인딩할 네트워크 인터페이스.                                                 |
+| `virtual_router_id 51` | 마스터와 동일한 VRRP ID (마스터와 백업이 같은 그룹으로 인식됨).                   |
+| `priority 90`        | 우선순위를 90으로 설정하여 마스터보다 낮음 (마스터보다 높은 숫자일수록 우선순위 높음).  |
+| `authentication`     | - 인증 방식: `PASS`<br>- 인증 비밀번호: `1234`                                          |
+| `virtual_ipaddress`  | 마스터와 동일한 가상 IP 설정 (192.168.0.20/24).                                        |
+| `track_script`       | 상태 확인 스크립트 `chk_service`를 트래킹하여 서비스 상태에 따라 VRRP 상태 변경.      |
+
+
 
 
 <br/>
