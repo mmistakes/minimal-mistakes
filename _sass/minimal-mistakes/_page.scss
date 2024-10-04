@@ -125,10 +125,18 @@ body {
     }
 
     a{
-      color: #dd8a37;
-      text-decoration: underline;
+      color: #75491d;
+      /*text-decoration: underline;*/
     }
   }
+
+  li {
+    a{
+      color: #75491d;
+      /*text-decoration: underline;*/
+    }
+  }
+
 
   a:not(.btn) {
 
