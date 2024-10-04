@@ -220,6 +220,7 @@ SELECT * FROM runtime_checksums_values;
 ```
 
 - 확인결과
+  
 ```
 mysql-server1> SELECT * FROM runtime_checksums_values;
 +-------------------+---------+------------+--------------------+
