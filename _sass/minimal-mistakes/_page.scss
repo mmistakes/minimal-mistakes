@@ -115,7 +115,7 @@ body {
   /* paragraph indents */
   p {
     /*margin: 0 0 $indent-var;*/
-    margin: 0 0 0.5em;
+    margin: 0 0 0.2em;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
@@ -136,11 +136,6 @@ body {
       color: #be7831;
       text-decoration: underline;
     }
-  }
-
-  pre {
-    /*margin: 0 0 $indent-var;*/
-    margin: 0 0 0.5em;
   }
 
   .toc__menu li a {
