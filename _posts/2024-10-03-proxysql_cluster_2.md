@@ -263,6 +263,7 @@ LOAD MYSQL QUERY RULES TO RUNTIME;
 ```
 
 - 모듈별 체크섬 결과
+   
 ```
 mysql-server1> SELECT * FROM runtime_checksums_values;
 +-------------------+---------+------------+--------------------+
@@ -339,7 +340,7 @@ SELECT * FROM mysql_servers;
 
 먼저 yum 을 이용해 패키지를 설치합니다. mysql-server1 과 mysql-server2 양쪽에 모두 수행합니다.
 
-```bash
+```shell
 yum install keepalived
 ```
 
@@ -347,11 +348,11 @@ yum install keepalived
 이후에 설정파일을 수정합니다. Active, Backup 용도에 맞게 mysql-server1 과 mysql-server2 의 설정파일을 각각 설정해야합니다.
 
 먼저 Active 용도의 mysql-server1 의 keepalived.conf 입니다.
-```
+```shell
 [root@mysql-server1 ~]# vi /etc/keepalived/keepalived.conf
 ```
 
-```
+```conf
 global_defs {
 
 }
@@ -387,11 +388,11 @@ vrrp_instance VI_1 {
 ```
 
 다음은 Backup 용도의 mysql-server2 의 keepalived.conf 입니다.
-```
+```shell
 [root@mysql-server2 ~]# vi /etc/keepalived/keepalived.conf
 ```
 
-```
+```conf
 global_defs {
 
 }
