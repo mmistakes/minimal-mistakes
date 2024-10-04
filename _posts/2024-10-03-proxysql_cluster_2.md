@@ -210,16 +210,19 @@ SAVE PROXYSQL SERVERS TO DISK;
 모듈별 체크섬 버전과 에포크 값을 확인하는 방법은 아래와 같습니다.
 
 - 관리콘솔 접속
+  
 ```bash
 mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
 ```
 
 - runtime_checksums_values 테이블 조회
+  
 ```sql
 SELECT * FROM runtime_checksums_values;
 ```
 
-- 확인 결과
+- 확인결과
+  
 ```
 mysql-server1> SELECT * FROM runtime_checksums_values;
 +-------------------+---------+------------+--------------------+
