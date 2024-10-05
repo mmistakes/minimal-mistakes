@@ -113,13 +113,13 @@ body {
   }
 
   code {
-    margin: 0 0 1em;
+    margin: 0 0 1.5em;
   }
 
   /* paragraph indents */
   p {
     /*margin: 0 0 $indent-var;*/
-    margin: 0 0 0.2em;
+    margin: 0 0 0.4em;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
