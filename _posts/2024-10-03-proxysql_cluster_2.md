@@ -20,7 +20,7 @@ comments: true
 
 ![keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안](https://github.com/user-attachments/assets/816a403c-b937-4453-8ba7-ac523f06642a)
 [그림1] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
-
+<br>
 테스트 환경은 아래와 같습니다.
 
 #### 서버정보
