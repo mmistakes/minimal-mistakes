@@ -50,6 +50,7 @@ mysql-server1의 ProxySQL 관리콘솔에 접속하여 ADMIN VARIABLES 를 변�
 ```bash
 mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
 ```
+<br/>
 
 그리고 아래와 같이 클러스터 설정에 필요한 클러스터 사용자의 정보를 추가합니다.
 ```sql
@@ -65,6 +66,7 @@ UPDATE global_variables
 SET variable_value='cluster_pass' 
 WHERE variable_name='admin-cluster_password';
 ```
+<br/>
 
 그리고 클러스터의 상태를 체크하기 위한 용도의 ADMIN VARIABLES 도 추가합니다. 명령어에 대한 설명은 주석을 참고하시면 됩니다.
 
