@@ -19,8 +19,10 @@ comments: true
 간단한 테스트를 위해 HA를 고려한 ProxySQL 클러스터 구성을 해보도록 하겠습니다. [ProxySQL에 대한 기본적인 설명은 이전 포스팅을 참고(클릭)](https://duhokim0901.github.io/mysql/proxysql_cluster_1/)하시기 바랍니다. 저는 핵심 멤버 2대를 클러스터로 구성하고 keepalived 를 이용하여 각각 active, backup 용도로 구분할 예정입니다. keepavlied 설정으로 인해 active 상태인 서버는 vip로 연결할 수 있습니다. vip를 할당받은 서버에 구성된 ProxySQL이 강제종료 되면 VRRP 프로토콜에 의해 backup 상태의 노드가 active로 전환됩니다. 구성한 ProxySQL 2대를 모두 핵심 멤버로 구성하는 이유는 핵심 멤버 1대가 문제가 생겼을 경우 다른 핵심 멤버를 통해 설정을 전파할 수 있기 때문입니다. 아래 그림은 ProxySQL의 테스트 구성안입니다.
 
 ![keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안](https://github.com/user-attachments/assets/816a403c-b937-4453-8ba7-ac523f06642a)
-[그림1] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안
+[그림1] keepalived + ProxySQL 클러스터 + MySQL 레플리카 구성안  
+
 <br>
+
 테스트 환경은 아래와 같습니다.
 
 #### 서버정보
@@ -132,6 +134,7 @@ SET variable_value=3
 WHERE variable_name='admin-cluster_proxysql_servers_diffs_before_sync';
 ```
 
+<br>
 
 위에서 반영한 어드민 변수를 런타임으로 로드하고 영구반영하기 위해 디스크에 저장합니다.
 
@@ -140,12 +143,16 @@ LOAD ADMIN VARIABLES TO RUNTIME;
 SAVE ADMIN VARIABLES TO DISK;
 ```
 
+<br>
+
 그리고 클러스터 멤버 중 핵심 멤버 정보를 proxysql_servers 테이블에 입력합니다. 입력 대상에서 위성 멤버는 제외해야합니다.
 
 ```sql
 INSERT INTO proxysql_servers VALUES('192.168.0.11',6032,0,'proxysql_node1');
 INSERT INTO proxysql_servers VALUES('192.168.0.12',6032,0,'proxysql_node2');
 ```
+
+<br>
 
  PROXYSQL SERVERS 정보를 런타임으로 로드하고 영구반영하기 위해 디스크에 저장합니다.
 
@@ -154,6 +161,7 @@ LOAD PROXYSQL SERVERS TO RUNTIME;
 SAVE PROXYSQL SERVERS TO DISK;
  ```
 
+<br>
 
 mysql-server1 의 ProxySQL 에러로그를 확인해보면 아래와 같은 메시지를 확인할 수 있습니다.
 
@@ -182,6 +190,8 @@ UPDATE global_variables
 SET variable_value='cluster_pass' 
 WHERE variable_name='admin-cluster_password';
 ```
+
+<br>
 
 그리고 mysql-server2 의 ProxySQL에는 클러스터와 관련된 설정이 없는 상태이기 때문에 기본적인 어드민 변수들을 반영해주어야 합니다. mysql-server1에서 수행했던 어드민 변수 설정과 PROXYSQL SERVER 정보 등록을 동일하게 수행합니다. 그리고 별도로 모니터링 계정 생성과 관련 변수도 설정해 줍니다.
 
@@ -222,6 +232,8 @@ SAVE PROXYSQL SERVERS TO DISK;
 
 위의 설정을 반영하면 mysql-server2 의 ProxySQL 의 에러로그에 아래와 같은 메시지가 반복적으로 발생하게 됩니다. 저는 테스트 과정에서 2개의 모듈(MYSQL QUERY RULES, MYSQL SERVERS)에서 발생하였습니다.
 
+<br>
+
 ```
 2024-10-04 13:05:54 ProxySQL_Cluster.cpp:863:set_checksums(): [WARNING] Cluster: detected a peer 192.168.0.11:6032 with mysql_query_rules version 1, epoch 1727968666, diff_check 150. Own version: 1, epoch: 1728013985. diff_check is increasing, but version 1 doesn't allow sync. This message will be repeated every 30 checks until LOAD MYSQL QUERY RULES TO RUNTIME is executed on candidate master.
 
@@ -231,6 +243,8 @@ SAVE PROXYSQL SERVERS TO DISK;
 
 이는 앞서 설명드린 ProxySQL의 [클러스터 동기화 과정(클릭)](https://duhokim0901.github.io/mysql/proxysql_cluster_1/#%EF%B8%8Fproxysql-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0-%EC%A3%BC%EC%9A%94%EA%B0%9C%EB%85%90)에 의해 발생합니다. mysql-server1(192.168.0.11) 에서 전달받은 모듈의 체크섬의 결과값과 자신의 체크섬 값이 상이할 경우 모듈별 현재 체크섬의 버전과 에포크를 비교하면서 동기화를 수행합니다. 이 때 mysql-server2의 버전이 1일 경우 1버전보다 크면서 에포크 값이 가장 높은 인스턴스를 찾아 동기화를 해야합니다. 하지만 에러 메시지를 통해 미루어보아 mysql-server1 의 모듈 체크섬 버전이 1이기 때문에 동기화를 하지 못하는 것입니다.   
 
+<br>
+
 모듈별 체크섬 버전과 에포크 값을 확인하는 방법은 아래와 같습니다.
 
 - 관리콘솔 접속
@@ -239,11 +253,15 @@ SAVE PROXYSQL SERVERS TO DISK;
 mysql -u admin -padmin -h 127.0.0.1 -P6032 --prompt='Admin> ' 
 ```
 
+<br>
+
 - runtime_checksums_values 테이블 조회
   
 ```sql
 SELECT * FROM runtime_checksums_values;
 ```
+
+<br>
 
 - 확인결과
   
@@ -280,12 +298,16 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 
 확인해본 결과와 같이 version 값이 "1보다 커야" 동기화가 가능하지만 현재 버전이 1로 동일한 상황입니다. 이를 해결하기 위한 방법으로 핵심 멤버의 모듈을 runtime 단계롤 다시 재로딩하는 것입니다. 아래의 명령어를 mysql-server1(192.168.0.11) 에서 수행하고 체크섬 값과 로그를 다시 확인해봅니다.
 
+<br>
+
 - runtime 단계에서 모듈 재로딩
   
 ```
 LOAD MYSQL SERVERS TO RUNTIME;
 LOAD MYSQL QUERY RULES TO RUNTIME;
 ```
+
+<br>
 
 - 모듈별 체크섬 결과
    
@@ -321,6 +343,8 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 
 ```
 
+<br>
+
 - mysql-server2의 ProxySQL 에러로그 확인
   
 ```
@@ -342,6 +366,8 @@ mysql-server2> SELECT * FROM runtime_checksums_values;
 ```
 
 보이는 바와 같이 mysql-server1의 체크섬 버전이 2로 올라가면서 mysql-server2 또한 동기화된 것을 확인할 수 있습니다.
+
+<br>
 
 - 동기화 결과 확인 
 
@@ -370,10 +396,9 @@ SELECT * FROM mysql_servers;
 yum install keepalived
 ```
 
+<br>
 
-이후에 설정파일을 수정합니다. Active, Backup 용도에 맞게 mysql-server1 과 mysql-server2 의 설정파일을 각각 설정해야합니다.
-
-먼저 Active 용도의 mysql-server1 의 keepalived.conf 입니다.
+이후에 설정파일을 수정합니다. Active, Backup 용도에 맞게 mysql-server1 과 mysql-server2 의 설정파일을 각각 설정해야합니다. 먼저 Active 용도의 mysql-server1 의 keepalived.conf 입니다.
 ```shell
 [root@mysql-server1 ~]# vi /etc/keepalived/keepalived.conf
 ```
@@ -412,6 +437,8 @@ vrrp_instance VI_1 {
     }
 }
 ```
+
+<br>
 
 위 설정을 간략하게 설명하면 다음과 같습니다.
 
@@ -471,6 +498,8 @@ vrrp_instance VI_1 {
 
 ```
 
+<br>
+
 위 설정을 간략하게 설명하면 다음과 같습니다.
 
 | 설정 항목            | 설명                                                                 |
@@ -505,6 +534,7 @@ else
 fi
 ```
 
+<br>
 
 위 설정을 완료하면 keepalived 데몬을 기동합니다.
 
@@ -514,11 +544,15 @@ systemctl start keepalived.service
 
 ```
 
+<br>
+
 keepalived 데몬 기동 후 로그는 아래의 명령어를 통해 확인할 수 있습니다.
 
 ```shell
 tail -f /var/log/messages | grep "Keepalived"
 ```
+
+<br>
 
 아래는 기동 후 발생하는 로그입니다.
 
@@ -547,13 +581,15 @@ Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Sending/queueing g
 Oct  4 15:38:00 mysql-server1 Keepalived_vrrp[640390]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
 ```
 
+<br>
+
 enp0s3 네트워크 카드에 vip 가 정상적으로 등록 되었는지 확인합니다.
 
 ```shell
 ip addr show dev enp0s3
 ```
 
-설정한 192.168.0.20 ip 가 등록된것을 확인할 수 있습니다.
+위의 명령어를 수행하면 아래와 같은 결과를 확인할 수 있습니다. 확인 결과, 설정한 192.168.0.20 ip 가 잘 등록되었습니다.
 ```
 2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 08:00:27:71:50:fe brd ff:ff:ff:ff:ff:ff
@@ -571,6 +607,8 @@ ip addr show dev enp0s3
 ---
 모든 구성이 끝났으니 간단한 동작 테스트를 해보려고 합니다. duhokim.tab1 이란 테이블에 1초 주기마다 데이터를 INSERT 를 하도록 하겠습니다. 이 때 keepalived 로 설정한 vip 와 ProxySQL 포트(6033)를 이용하여 접근할 것입니다. 이 상황에서 mysql-server1(192.168.0.11) 서버의 ProxySQL 이 예기치 않은 종료가 이루어졌을 때에도 지속적으로 데이터 삽입이 가능한지 볼 예정입니다.
 
+<br/>
+
 duhokim.tab1 테이블은 아래와 같습니다.
 
 ```sql
@@ -584,18 +622,20 @@ mysql> desc tab1;
 +-------+--------------+------+-----+-------------------+-------------------+
 ```
 
+<br/>
+
 INSERT 쿼리는 아래와 같습니다.
 ```sql
 INSERT INTO tab1(col2, col3) values(@@hostname, now());
 ```
 
+<br/>
 
 반복호출을 시도합니다.
 ```shell
  while [ true ] ;do mysql -h192.168.0.20 -usvcusr -psvcusr -P6033 duhokim < test.sql; sleep 1; done
 ```
 
-아래와 같이 매초마다 데이터가 삽입되고 있습니다.
 ```
 mysql> select * from duhokim.tab1;
 +------+---------------+---------------------+
@@ -640,6 +680,8 @@ mysql> select * from duhokim.tab1;
 35 rows in set (0.00 sec)
 ```
 
+<br/>
+
 위의 상황에서 mysql-server1 의 proxysql 데몬을 kill -9 처리하여 강제 종료 시키겠습니다.
 
 ```shell
@@ -649,6 +691,8 @@ proxysql  445082  445081  0 00:17 ?        00:06:56 /usr/bin/proxysql --idle-thr
 
 [root@mysql-server1 ~]# kill -9 445081
 ```
+
+<br/>
 
 위의 작업을 수행하면 실행중인 반복문에서 일시적으로 연결 실패가 나타납니다. 하지만 머지않아 다시 정상적으로 연결됩니다.
 ```
@@ -679,6 +723,8 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 
+<br/>
+
 mysql-server1의 keepalived 로그를 살펴보겠습니다.
 
 ```shell
@@ -690,6 +736,8 @@ Oct  4 16:07:05 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Master received ad
 Oct  4 16:07:05 mysql-server1 Keepalived_vrrp[640390]: (VI_1) Entering BACKUP STATE
 Oct  4 16:07:05 mysql-server1 Keepalived_vrrp[640390]: (VI_1) removing VIPs.
 ```
+
+<br/>
 
 다음은 mysql-server2의 keepalived 로그입니다.
 
@@ -708,6 +756,8 @@ Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on
 Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
 Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: Sending gratuitous ARP on enp0s3 for 192.168.0.20
 ```
+
+<br/>
 
 보시는 바와 같이 VRRP_Script 가 동작하면서 priority 를 80 으로 낮추면서 priority 값이 그보다 높은 값(90)을 가진 Backup 서버로 VIP 가 전달 되었습니다.
 실제로 데이터도 살펴보도록 하겠습니다.
@@ -745,6 +795,7 @@ mysql> select * from tab1 where col1 >= 585 and col1 <= 600;
   ```Oct  4 16:07:05 mysql-server2 Keepalived_vrrp[638259]: (VI_1) Sending/queueing gratuitous ARPs on enp0s3 for 192.168.0.20```
 - 16:07:05 부터 vip 연결이 정상화 되어 DB 내에 데이터를 적재할 수 있게 되었습니다.
 
+<br/>
 
 대략 Failover 이후 정상화 단계까지 7초 정도 걸렸습니다. AWS RDS 의 유지보수 작업 시 발생하는 Failover 에 비하면 상당히 빠른 전환이라 볼 수 있지만 vrrp_script 의 체크인터벌을 줄이면 조금 더 민첩하게 대응할 수 있을 것으로 보입니다. 물론 운영환경에서는 조금 더 안전한 방식의 HA를 구성하는 것이 정신건강에 좋을 수 있습니다. 저라면 Cloud 를 쓸 수 있는 환경이라면 관리형 로드밸런서를 이용하고 IDC 환경일 경우 L4 Switch 장비를 선택할 것 같습니다. 가벼운 시스템의 경우 지금처럼 Keepalived 를 이용하여 구축을 할 수도 있습니다. 그리고 StandBy 서버에서도 ProxySQL을 통해 미리 연결 풀링을 맺은 상태이기 때문에 커넥션을 맺는 과정이 생략되어 전환이 좀 더 빨라진 효과도 얻었다고 볼 수 있습니다. HA 를 고려한 ProxySQL 클러스터 구성 및 테스트는 여기서 마무리 하도록 하겠습니다. 감사합니다.
 
