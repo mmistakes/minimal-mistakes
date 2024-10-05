@@ -112,6 +112,10 @@ body {
     font-size: 1em;
   }
 
+  code {
+    margin: 0 0 $indent-var;
+  }
+
   /* paragraph indents */
   p {
     /*margin: 0 0 $indent-var;*/
