@@ -23,7 +23,7 @@ comments: true
 
 <br>
 
-테스트 환경은 아래와 같습니다.
+구성안을 설명드리면 ProxySQL 1대와 MySQL3대는 이미 구성 중이고 mysql-server2 에 설정정보가 전혀 반영되어 있지 않은 ProxySQL을 신규 설치한 상황입니다. 이 상황에서 ProxySQL 클러스터를 구성하고 keepalived 를 이용하여 HA 설정을 해보려합니다. 테스트 환경처럼 ProxySQL 구성이 아직 안되어 있다면 **ProxySQL 기본설치편(클릭)** 를 먼저 확인하시고 읽어주시기 바랍니다. 테스트 환경 정보는 아래와 같습니다.
 
 #### 서버정보
 - mysql-server1 192.168.0.11
@@ -39,10 +39,6 @@ comments: true
 | **Keepalived**     | 2.1.5            | Rocky 8.8 | Active/Backup             | Active: mysql-server1      |
 |                   |                  |           |                          | Backup: mysql-server2      |
 | **MySQL**          | 8.0.39           | Rocky 8.8 | 3대                      | mysql-server1(P), mysql-server2(R), mysql-server3(R) |
-
-<br/>
-
-실습환경은 ProxySQL 1대와 MySQL3대는 이미 구성 중이고 mysql-server2 에 설정정보가 전혀 반영되어 있지 않은 ProxySQL을 신규 설치한 상황입니다. 이 상황에서 ProxySQL 클러스터를 구성하고 keepalived 를 이용하여 HA 설정을 해보려합니다. 테스트 환경처럼 ProxySQL 구성이 아직 안되어 있다면 **ProxySQL 기본설치편(클릭)** 를 먼저 확인하시고 읽어주시기 바랍니다.
 
 <br/>
 
