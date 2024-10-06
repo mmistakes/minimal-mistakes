@@ -210,6 +210,30 @@ root 계정에 있는 authorized_keys 파일의 보안컨텍스트를 확인해�
 [root@mon-server1 .ssh]# ls -dlZ authorized_keys 
 -rw-------. 1 root root unconfined_u:object_r:ssh_home_t:s0 1146 Oct  7 00:40 authorized_keys
 ```
+<br>
+
+ssh_home_t 컨텍스를 부여하기 위해 서버에서 아래의 명령어를 수행합니다.
+
+{% include codeHeader.html name="ssh_home_t 컨텍스 부여" %}
+```bash
+sudo semanage fcontext -a -t ssh_home_t "/var/lib/mysql/.ssh(/.*)?"
+sudo restorecon -Rv /var/lib/mysql/.ssh
+```
+- semanage fcontext -a -t ssh_home_t "/var/lib/mysql/.ssh(/.*)?"는 .ssh 디렉토리 및 그 내부의 모든 파일에 대해 ssh_home_t 보안 컨텍스트를 적용합니다.
+- restorecon -Rv /var/lib/mysql/.ssh 명령어는 위에서 설정한 보안 컨텍스트를 실제 파일에 적용합니다.
+<br>
+
+수행결과는 아래와 같습니다.
+```bash
+[root@mon-server1 .ssh]# sudo semanage fcontext -a -t ssh_home_t "/var/lib/mysql/.ssh(/.*)?"
+[root@mon-server1 .ssh]# sudo restorecon -Rv /var/lib/mysql/.ssh
+Relabeled /var/lib/mysql/.ssh from system_u:object_r:mysqld_db_t:s0 to system_u:object_r:ssh_home_t:s0
+Relabeled /var/lib/mysql/.ssh/id_rsa from unconfined_u:object_r:mysqld_db_t:s0 to unconfined_u:object_r:ssh_home_t:s0
+Relabeled /var/lib/mysql/.ssh/id_rsa.pub from unconfined_u:object_r:mysqld_db_t:s0 to unconfined_u:object_r:ssh_home_t:s0
+Relabeled /var/lib/mysql/.ssh/known_hosts from unconfined_u:object_r:mysqld_db_t:s0 to unconfined_u:object_r:ssh_home_t:s0
+Relabeled /var/lib/mysql/.ssh/authorized_keys from system_u:object_r:mysqld_db_t:s0 to system_u:object_r:ssh_home_t:s0
+```
+
 
 
 
