@@ -97,7 +97,7 @@ all:
 
 <br>
 
-작업대상은 hosts 에 있는 서버 4대입니다. ansbile_user 에 의해 root 로 접속을 하고 ansbile_become 변수가 true 이므로 모든 명령어들이 sudo 로 실행됩니다.
+작업대상은 hosts 에 있는 서버 4대입니다. ansible_user 에 의해 root 로 접속을 하고 ansbile_become 변수가 true 이므로 모든 명령어들이 sudo 로 실행됩니다.
 vars 설정에 의해서 ssh 키 디렉토리와 파일들을 정의하였습니다. ssh_key_passphrase 는 ssh-keygen 수행 시 passphrase 값을 지정한 변수입니다. delete_existing_key 는 ssh 키 디렉토리를 초기화 할지 여부를 설정하기 위해 만든 변수입니다.
 
 <br>
