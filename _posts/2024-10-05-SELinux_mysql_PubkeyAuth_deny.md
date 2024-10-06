@@ -148,7 +148,7 @@ publickey 인증으로 연결을 시도하려다가 패스워드 인증으로 �
 
 <br>
 
-### ✏️원인은 SElinux 의 보안 컨텍스트
+### ⚠️원인은 SElinux 의 보안 컨텍스트
 ---
 
 이리저리 찾아보던 중 [System Administrator 님의 블로그](https://www.lesstif.com/system-admin/ssh-authorized_keys-public-key-17105307.html)를 확인하게 되었고 원인을 찾게 되었습니다. 바로 mysql 계정 연결실패의 원인은 SElinux 의 보안 컨텍스트였습니다. 사용자의 .ssh 의 SELinux 보안 컨텍스트가 적절치 않으면 sshd 가 authorized_keys 를 읽을 수 없기 때문에 로그인이 실패하는 현상이었습니다.
