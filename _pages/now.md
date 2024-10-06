@@ -7,6 +7,12 @@ title: The now page
 
 My now page, inspired by [D Sivers](https://nownownow.com/about) - what I'm up to now. 
 
+# August/September 2024 
+
+End of July and August have been very much a lot about sport: Olympics, Paralympics, Athletics events. I've had a great time watching sport, the kind of sport which is less mainstream (and that I like the most).
+
+German learning continues well, I've also signed up to a couple of Meetups for conversation, and I found the [Seedlang app](https://www.easygerman.org/app), kinda like Duolinguo but much more effective and useful IMHO.
+
 # June/July 2024
 
 ## German learning
