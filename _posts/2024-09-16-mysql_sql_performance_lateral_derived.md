@@ -16,16 +16,16 @@ comments: true
 
 ### 💻 Azure MySQL, AWS RDS MariaDB로 이전 완료
 --- 
-제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.(제가 지향하는건 아니구요 또르르...😢)
+제가 근무하고 있는 환경은 멀티클라우드를 지향하고 있어 AWS, Azure, GCP 를 모두 사용중입니다.
 
 그런데 청천병력과 같은 소식이 등장했습니다. 바로 [Azure MySQL Single Database 의 지원 종료 소식인데요.](https://learn.microsoft.com/ko-kr/azure/mysql/migrate/whats-happening-to-mysql-single-server) 24년 9월 16일 이후에는 Single Database 서비스가 없어집니다. 그리고 강제로 Flexible Database 로 전환된다는 것이죠.
 Single Database 와 Flexible Database 의 디자인이 상이하고 접속 방식도 차이가 있기 때문에 큰 문제가 될 수 있었습니다.
 
 !["Azure MySQL Single Database 중단 소식"](https://github.com/user-attachments/assets/9e342aab-3afb-43f3-a7cf-6af2a117b596)
 
- 그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다. 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.(잘했다 내자신😄)
+ 그래서 저희도 이와 발맞춰 착실히(?) AWS와 GCP 로 이관을 했었고 잔존했던 "레거시" DBMS 까지 드디어 상황이 맞아 AWS MariaDB RDS로 이전을 완료하였습니다. 특히나 MySQL 5.7 에서 LTS 버전인  MariaDB 10.6 으로 옮긴 상황이라 드디어 안도할 수 있었습니다.
 
- MySQL 5.7 에서 MariaDB 10.6 으로 이전하면서 발생한 자잘한 이슈들이 있는데 추후에 정리를 해보겠습니다.(뒷일은 미래의 나에게 맡긴다 후후..)
+ MySQL 5.7 에서 MariaDB 10.6 으로 이전하면서 발생한 자잘한 이슈들이 있는데 추후에 정리를 해보겠습니다.
 
 
 <br/>
