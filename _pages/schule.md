@@ -51,8 +51,9 @@ zu den Schulveranstaltungen eingeladen. Gleichzeitig befinden wir uns in engem
 Austausch und sind gerne Gast der Elternversammlungen.
 
 Wir pflegen Kooperationen mit
-{% include external_link text="Hertha BSC" url="https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html" %} und der
-{% include external_link text="Al-Farabi Musikakademie" url="https://www.al-farabi.de" %}.
+{% include external_link text="Hertha BSC" url="https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html" %}.
+ <!-- und der -->
+<!-- {% include external_link text="Al-Farabi Musikakademie" url="https://www.al-farabi.de" %}. -->
 <!-- Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. -->
 Hier werden Talente erkannt und individuell gefördert.
 <!-- Unsere Schule nimmt am Projekt "{% include external_link text="ErzählZeit" url="https://erzaehlzeit.de/" %}" teil. -->
