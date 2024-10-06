@@ -5,7 +5,7 @@ excerpt: "SElinux로 인해 mysql 계정의 공개키 접속이 차단되는 현
 categories:
  - Mysql
 tags:
-  - [mysql, mariadb]
+  - [mysql, mariadb, linux, ssh]
 #permalink: mysql-architecture
 toc: true
 toc_sticky: true
@@ -253,6 +253,15 @@ Last login: Mon Oct  7 01:41:19 2024 from 192.168.0.11
 
 정상적으로 수행됩니다.👏
 
+<br/>
+
+### 🚀추가로 해야할 일(자동화)
+---
+공개키를 넘기는 작업은 수동으로 한다면 굉장히 수고스러운 작업입니다. 플랫폼을 대거 이관해야하는 작업이 생긴다면 더할나위 없이 야근 당첨입니다. 그리고 mha 를 구성할 경우에도 공개키를 서로 교환하는 사전작업이 필요하기 때문에 IaC 도구를 활용하여 자동화시킬 필요가 있습니다. 
+
+<br>
+
+ansible 을 활용하여 공개키를 자동화 작업은 [다음 포스팅(클릭)](https://duhokim0901.github.io/mysql/ansible_mysql_PubkeyAuth_script/)을 통해 공유드리겠습니다. 감사합니다.
 
 
 ### 📚 참고자료

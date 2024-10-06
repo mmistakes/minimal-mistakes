@@ -66,7 +66,22 @@
                         <li><a href="https://duhokim0901.github.io/categories/gcp" class="">GCP ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>            
+            </ul>   
+            <span class="nav__sub-title">IaC</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Ansible" %}
+                        <li><a href="https://duhokim0901.github.io/categories/ansible" class="">Ansible ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Terraform" %}
+                        <li><a href="https://duhokim0901.github.io/categories/terraform" class="">Terraform ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>                     
       </li>
   </ul>
 </nav>
