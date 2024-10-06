@@ -148,12 +148,13 @@ publickey 인증으로 연결을 시도하려다가 패스워드 인증으로 �
 
 <br>
 
-### ✏️원인은 SElinux
+### ✏️원인은 SElinux 의 보안 컨텍스트
 ---
 
-이리저리 찾아보던 중 [System Administrator 님의 블로그](https://www.lesstif.com/system-admin/ssh-authorized_keys-public-key-17105307.html)를 확인하게 되었고 원인을 찾게 되었습니다. 바로 mysql 계정 연결실패의 원인은 SElinux 이었습니다. 사용자의 홈디렉토리나 .ssh 의 SELinux context가 맞지 않으면 sshd 가 authorized_keys 를 읽을 수 없어서 로그인이 실패하는 현상이었습니다.
+이리저리 찾아보던 중 [System Administrator 님의 블로그](https://www.lesstif.com/system-admin/ssh-authorized_keys-public-key-17105307.html)를 확인하게 되었고 원인을 찾게 되었습니다. 바로 mysql 계정 연결실패의 원인은 SElinux 의 보안 컨텍스트였습니다. 사용자의 .ssh 의 SELinux 보안 컨텍스트가 적절치 않으면 sshd 가 authorized_keys 를 읽을 수 없기 때문에 로그인이 실패하는 현상이었습니다.
 
-mysql 의 연결실패 원인을 찾기 위해 mysql 서버에서 아래의 명령어를 수행합니다.
+mysql 의 연결실패를 분석하기 위해 mysql 서버에서 아래의 명령어를 수행합니다.
+<br>
 
 {% include codeHeader.html name="SElinux 감사로그 분석" %}
 ```bash
@@ -162,6 +163,8 @@ audit2why  < /var/log/audit/audit.log
 
 - audit2why: SELinux의 보안 경고 및 차단 로그를 해석하여 "왜(why)" 해당 동작이 차단되었는지 설명하는 도구입니다.
 - < /var/log/audit/audit.log: /var/log/audit/audit.log는 SELinux와 관련된 보안 감사 로그가 저장되는 파일입니다. 이 파일에는 SELinux가 차단한 모든 접근 시도에 대한 기록이 들어 있습니다.
+
+<br>
 
 위의 명령어 결과에서 아래와 같은 항목을 볼 수 있었습니다.
 
@@ -180,11 +183,13 @@ type=AVC msg=audit(1728189270.965:8192): avc:  denied  { read } for  pid=138598 
 로그의 내용을 ChatGPT를 통해 해석을 받아보니 아래와 같았습니다. 
 
 > SELinux가 mysqld_db_t 컨텍스트로 설정된 파일에서 SSH 데몬(sshd_t)이 authorized_keys 파일을 읽는 것을 차단하고 있습니다. 이로 인해 mysql 계정으로 퍼블릭 키를 통한 SSH 접속이 불가능한 상황입니다.
+>
 > SELinux가 파일 접근을 차단하는 문제는 mysqld_db_t 컨텍스트가 MySQL과 관련된 파일에만 접근하도록 제한되어 있기 때문입니다. 즉, mysql 계정의 .ssh 디렉토리 내 authorized_keys 파일도 MySQL 관련 파일로 인식되어 접근이 차단된 것입니다.
 
 메시지 중 ```denied  { read } for``` 는 읽기가 거부되었다는 의미입니다. 읽으려는 주체는 ```pid=138598 comm="sshd"``` 입니다. 즉 프로세스 id 138598 인 sshd 입니다. 그리고 ```name="authorized_keys"```를 통해서 authorized_keys 파일을 읽지 못한 것을 알 수 있습니다.
 
 그리고 ```tcontext=system_u:object_r:mysqld_db_t:s0``` 는 읽지 못한 authorized_keys 파일의 보안 컨텍스트입니다.즉, authorized_keys 파일이 mysqld_db_t로 라벨링되어 있어서 MySQL 관련 파일로 인식되었고, 이 때문에 sshd 프로세스가 해당 파일에 접근하는 것을 차단한 것입니다. 참고로 mysqld_db_t 컨텍스트는 MySQL 데이터베이스 파일 및 MySQL 서버가 사용하는 파일유형들을 의미합니다. authorized_keys 파일의 보안컨텍스트는 아래의 명령어를 통해서도 확인 가능합니다.
+<br>
 
 {% include codeHeader.html name="파일의 보안컨텍스트 확인" %}
 ```bash
@@ -202,9 +207,9 @@ ls -dlZ 파일명
 
 ### 😸문제해결
 ---
-authorized_keys 파일이 존재하는 $HOME/.ssh 디렉토리 내의 파일들에 대하여 연결 제한을 막는 mysqld_db_t 컨텍스트 대신 ssh 연결을 위한 전용 컨텍스트인 ssh_home_t 를 부여하면 됩니다. ssh_home_t는 SELinux에서 ssh와 관련된 파일(특히 사용자의 SSH 설정 파일)에 사용되는 보안 컨텍스트 유형(Type)입니다. 주로 ssh 키 파일과 사용자 홈 디렉토리 안에 있는 ssh 관련 파일들에 적용되며, ssh 데몬(sshd)이 안전하게 접근할 수 있도록 설계된 보안 정책을 따릅니다. 
+authorized_keys 파일이 존재하는 $HOME/.ssh 디렉토리 내의 파일들에 대하여 연결 제한을 막는 mysqld_db_t 컨텍스트 대신 ssh 연결을 위한 전용 컨텍스트인 ssh_home_t 를 부여하면 됩니다. ssh_home_t는 SELinux에서 ssh와 관련된 파일(특히 사용자의 SSH 설정 파일)에 사용되는 보안 컨텍스트 입니다. 주로 ssh 키 파일과 사용자 홈 디렉토리 안에 있는 ssh 관련 파일들에 적용되며, ssh 데몬(sshd)이 안전하게 접근할 수 있습니다.
 
-root 계정에 있는 authorized_keys 파일의 보안컨텍스트를 확인해보아도 ssh_home_t 컨텍스트를 할당받고 있습니다.
+root 계정에 있는 authorized_keys 파일의 보안컨텍스트를 확인해보아도 ssh_home_t 컨텍스트를 할당받고 있었습니다.
 
 ```bash
 [root@mon-server1 .ssh]# ls -dlZ authorized_keys 
@@ -233,7 +238,20 @@ Relabeled /var/lib/mysql/.ssh/id_rsa.pub from unconfined_u:object_r:mysqld_db_t:
 Relabeled /var/lib/mysql/.ssh/known_hosts from unconfined_u:object_r:mysqld_db_t:s0 to unconfined_u:object_r:ssh_home_t:s0
 Relabeled /var/lib/mysql/.ssh/authorized_keys from system_u:object_r:mysqld_db_t:s0 to system_u:object_r:ssh_home_t:s0
 ```
+<br>
 
+이제 다시한번 mysql 계정으로 접속을 시도해봅니다.
+
+```bash
+[mysql@mysql-server1 ~]$ ssh mysql@192.168.0.5
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Last login: Mon Oct  7 01:41:19 2024 from 192.168.0.11
+[mysql@mon-server1 ~]$ 
+```
+<br>
+
+정상적으로 수행됩니다.👏
 
 
 
