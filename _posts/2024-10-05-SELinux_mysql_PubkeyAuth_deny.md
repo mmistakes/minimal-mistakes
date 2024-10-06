@@ -263,6 +263,7 @@ Last login: Mon Oct  7 01:41:19 2024 from 192.168.0.11
 
 ansible 을 활용하여 공개키를 자동화 작업은 [다음 포스팅(클릭)](https://duhokim0901.github.io/mysql/ansible_mysql_PubkeyAuth_script/)을 통해 공유드리겠습니다. 감사합니다.
 
+<br>
 
 ### 📚 참고자료
 ---
