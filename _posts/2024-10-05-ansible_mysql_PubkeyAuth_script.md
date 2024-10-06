@@ -223,20 +223,6 @@ main.yml 중 아래 내용들은 hosts 파일의 vars 에서 선언하였던 del
 
 공개키를 slurp 모듈을 이용하여 읽어들입니다. 텍스트를 Base64로 인코딩하여 가져옴으로써 데이터 손실이 없도록 가져올 수 있습니다. 공개키는 current_public_key 변수에 할당됩니다. slurp 모듈을 쓰면 dict 형으로 자료를 받아올 수 있는데 그 중 content 필드에 공개키의 내용이 포함되어 있습니다. Base64 인코딩된 값은 ```{{ current_public_key.content | b64decode }}``` 이란 표현으로 디코딩 시킬 수 있습니다. authorized_key 모듈을 이용해서 hosts 에 정의된 ansible_host로 현재 실행 서버의 공개키를 넘겨줍니다.
 
-```yml
-- name: Fetch public key from current server
-  slurp:
-    src: /var/lib/mysql/.ssh/id_rsa.pub
-  register: current_public_key
-
-- name: Add public key to authorized_keys on other servers
-  authorized_key:
-    user: mysql
-    state: present
-    key: "{{ current_public_key.content | b64decode }}"
-  delegate_to: "{{ item }}"
-  with_items: "{{ groups['mysql-server-list'] | map('extract', hostvars, 'ansible_host') | list }}"
-```
 
 <br>
 
@@ -247,6 +233,7 @@ ansible-playbook 은 아래와 같이 수행하면 됩니다.
 ```bash
 ansible-playbook -i inventory/hosts ssh-publickey-cp_deploy.yml
 ```
+
 <br>
 
 
@@ -259,6 +246,7 @@ mysql-server1              : ok=16   changed=8    unreachable=0    failed=0    s
 mysql-server2              : ok=16   changed=8    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
 mysql-server3              : ok=16   changed=8    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0 
 ```
+
 <br>
 
 스크립트 수행 이후 ssh 접속을 해보면 아래와 같이 패스워드 인증없이 정상적으로 연결되는 것을 확인할 수 있습니다.👍
