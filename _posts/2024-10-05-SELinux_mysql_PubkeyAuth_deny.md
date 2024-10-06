@@ -16,19 +16,20 @@ comments: true
 
 ### ✏️mysql 서버를 패스워드 인증없이 SSH 키로 접근하기
 --- 
-mysql 서버의 접근을 용이하게 하기 위해 보통 우리는 SSH 키 인증 방식을 설정하여 접근을 합니다. 대강의 루틴을 그림으로 보면 이렇습니다.
+mysql 서버의 접근을 용이하게 하기 위해 보통 우리는 SSH 키 인증 방식을 설정하여 접근합니다. 대강의 루틴을 그림으로 보면 이렇습니다.
 
 ![SSH 키 인증 방식 설정](https://github.com/user-attachments/assets/37af50d5-1717-4781-8332-1ee42f3f8ed4)
 [그림1] SSH 키 인증 방식 설정
 
 #### 1. SSH 키 생성
 
-먼저, 클라이언트에서 ssh-keygen 명령을 통해 공개키와 개인키를 생성합니다. 이때 공개키는 .pub 파일로, 개인키는 id_rsa라는 파일로 생성됩니다. 공개키는 누구나 볼 수 있지만, 개인키는 소유자가 안전하게 보관해야 합니다.
+먼저, 클라이언트에서 ssh-keygen 명령을 통해 공개키와 개인키를 생성합니다. 이때 공개키는 .pub 파일로, 개인키는 id_rsa라는 파일로 생성됩니다.
 
 {% include codeHeader.html name="SSH 키 생성" %}
 ```bash
 ssh-keygen -t rsa
 ```
+<br>
 
 #### 2. 공개키를 서버에 복사
 
@@ -38,8 +39,9 @@ ssh-keygen -t rsa
 ```bash
 ssh-copy-id 사용자명@서버_IP
 ```
+<br>
 
-그런데 위의 명령어를 사용하기 위해서는 패스워드가 존재해야하기 때문에 보안상의 이유로 패스워드 없이 계정과 홈디렉토리만 있는 경우라면 클라이언트의 공개키 파일 내용을 그대로 복사해 서버의 authorized_keys 파일에 붙여넣어도 됩니다.
+그런데 위의 명령어를 사용하기 위해서는 패스워드가 필요하기 때문에 보안상의 이유로 패스워드 없이 계정과 홈디렉토리만 있어야 한다면 클라이언트의 공개키 파일 내용을 그대로 복사해 서버의 authorized_keys 파일에 붙여넣어도 됩니다.
 
 {% include codeHeader.html name="id_rsa.pub 로 공개키를 서버에 복사" %}
 ```bash
@@ -54,6 +56,7 @@ vi ~/.ssh/authorized_keys
 #authorized_keys 권한조정
 chmod 600 ~/.ssh/authorized_keys
 ```
+<br>
 
 #### 3. 서버에서 공개키 인증 설정
 
@@ -72,6 +75,7 @@ PubkeyAuthentication yes
 sudo systemctl restart sshd
 
 ```
+<br>
 
 #### 4. 패스워드 없이 접속
 
@@ -88,7 +92,9 @@ ssh 사용자명@서버_IP
 ### ❓mysql 유저만 SSH 키 접근이 안된다?
 ---
 
-ㅇㅇㅇㅇㅇ
+Rocky8.8 환경에서 mysql 계정에 쉽게 접근하기 위해 공개키를 각 서버들의 authorized_keys 에 넣고 SSH 키 인증으로 연결을 시도했지만 계속해서 패스워드를 인증하라는 문구가 발생하였습니다. 그리고 신기한 것은 유독 mysql 유저로 연결을 맺으려고 할때에만 SSH 키 접근이 불가했습니다. 조금더 자세히 살펴보기 위해 ssh 접속 시 -v(verbose) 옵션을 주어 다른 계정과의 차이를 확인해보았습니다.
+
+
 
 
 <br/>
