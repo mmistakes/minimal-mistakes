@@ -221,7 +221,7 @@ main.yml 중 아래 내용들은 hosts 파일의 vars 에서 선언하였던 del
 
 <br>
 
-공개키를 slurp 모듈을 이용하여 읽어들입니다. 텍스트를 Base64로 인코딩하여 가져옴으로써 데이터 손실이 없도록 가져올 수 있습니다. 공개키는 current_public_key 변수에 할당됩니다. slurp 모듈을 쓰면 dict 형으로 자료를 받아올 수 있는데 그 중 content 필드에 공개키의 내용이 포함되어 있습니다. Base64 인코딩된 값은 ```{{ current_public_key.content | b64decode }}``` 이란 표현으로 디코딩 시킬 수 있습니다. authorized_key 모듈을 이용해서 hosts 에 정의된 ansible_host로 현재 실행 서버의 공개키를 넘겨줍니다.
+공개키를 slurp 모듈을 이용하여 읽어들입니다. 텍스트를 Base64로 인코딩하여 가져옴으로써 데이터 손실이 없도록 가져올 수 있습니다. 공개키는 current_public_key 변수에 할당됩니다. slurp 모듈을 쓰면 dict 형으로 자료를 받아올 수 있는데 그 중 content 필드에 공개키의 내용이 포함되어 있습니다. Base64 인코딩된 값은 ```{% raw %}{{ current_public_key.content | b64decode }}{% endraw %}``` 이란 표현으로 디코딩 시킬 수 있습니다. authorized_key 모듈을 이용해서 hosts 에 정의된 ansible_host로 현재 실행 서버의 공개키를 넘겨줍니다.
 
 ```yml
 {% raw %}
