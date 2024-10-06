@@ -161,8 +161,8 @@ mysql 의 연결실패를 분석하기 위해 mysql 서버에서 아래의 명�
 audit2why  < /var/log/audit/audit.log
 ```
 
-- audit2why: SELinux의 보안 경고 및 차단 로그를 해석하여 "왜(why)" 해당 동작이 차단되었는지 설명하는 도구입니다.
-- < /var/log/audit/audit.log: /var/log/audit/audit.log는 SELinux와 관련된 보안 감사 로그가 저장되는 파일입니다. 이 파일에는 SELinux가 차단한 모든 접근 시도에 대한 기록이 들어 있습니다.
+- ```audit2why``` : SELinux의 보안 경고 및 차단 로그를 해석하여 "왜(why)" 해당 동작이 차단되었는지 설명하는 도구입니다.
+- ```< /var/log/audit/audit.log``` : /var/log/audit/audit.log는 SELinux와 관련된 보안 감사 로그가 저장되는 파일입니다. 이 파일에는 SELinux가 차단한 모든 접근 시도에 대한 기록이 들어 있습니다.
 
 <br>
 
@@ -224,8 +224,8 @@ ssh_home_t 컨텍스를 부여하기 위해 서버에서 아래의 명령어를 
 sudo semanage fcontext -a -t ssh_home_t "/var/lib/mysql/.ssh(/.*)?"
 sudo restorecon -Rv /var/lib/mysql/.ssh
 ```
-- semanage fcontext -a -t ssh_home_t "/var/lib/mysql/.ssh(/.*)?"는 .ssh 디렉토리 및 그 내부의 모든 파일에 대해 ssh_home_t 보안 컨텍스트를 적용합니다.
-- restorecon -Rv /var/lib/mysql/.ssh 명령어는 위에서 설정한 보안 컨텍스트를 실제 파일에 적용합니다.
+- ```semanage fcontext -a -t ssh_home_t "/var/lib/mysql/.ssh(/.*)?"```는 .ssh 디렉토리 및 그 내부의 모든 파일에 대해 ssh_home_t 보안 컨텍스트를 적용합니다.
+- ```restorecon -Rv /var/lib/mysql/.ssh``` 명령어는 위에서 설정한 보안 컨텍스트를 실제 파일에 적용합니다.
 <br>
 
 수행결과는 아래와 같습니다.
