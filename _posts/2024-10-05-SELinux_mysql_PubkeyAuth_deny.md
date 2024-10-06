@@ -16,7 +16,10 @@ comments: true
 
 ### ✏️mysql 서버를 패스워드 인증없이 SSH 키로 접근하기
 --- 
-mysql 서버의 접근을 용이하게 하기 위해 보통 우리는 SSH 키 인증 방식을 설정하여 접근을 합니다. 대강의 루틴을 보면 이렇습니다.
+mysql 서버의 접근을 용이하게 하기 위해 보통 우리는 SSH 키 인증 방식을 설정하여 접근을 합니다. 대강의 루틴을 그림으로 보면 이렇습니다.
+
+![SSH 키 인증 방식 설정](https://github.com/user-attachments/assets/37af50d5-1717-4781-8332-1ee42f3f8ed4)
+[그림1] SSH 키 인증 방식 설정
 
 #### 1. SSH 키 생성
 
@@ -26,7 +29,6 @@ mysql 서버의 접근을 용이하게 하기 위해 보통 우리는 SSH 키 �
 ```bash
 ssh-keygen -t rsa
 ```
-<br>
 
 #### 2. 공개키를 서버에 복사
 
@@ -36,7 +38,6 @@ ssh-keygen -t rsa
 ```bash
 ssh-copy-id 사용자명@서버_IP
 ```
-<br>
 
 그런데 위의 명령어를 사용하기 위해서는 패스워드가 존재해야하기 때문에 보안상의 이유로 패스워드 없이 계정과 홈디렉토리만 있는 경우라면 클라이언트의 공개키 파일 내용을 그대로 복사해 서버의 authorized_keys 파일에 붙여넣어도 됩니다.
 
@@ -53,7 +54,6 @@ vi ~/.ssh/authorized_keys
 #authorized_keys 권한조정
 chmod 600 ~/.ssh/authorized_keys
 ```
-<br>
 
 #### 3. 서버에서 공개키 인증 설정
 
@@ -72,7 +72,6 @@ PubkeyAuthentication yes
 sudo systemctl restart sshd
 
 ```
-<br>
 
 #### 4. 패스워드 없이 접속
 
@@ -83,7 +82,6 @@ sudo systemctl restart sshd
 #클라이언트에서 작업
 ssh 사용자명@서버_IP
 ```
-<br>
 
 <br>
 
