@@ -630,7 +630,11 @@ INSERT INTO tab1(col2, col3) values(@@hostname, now());
 
 반복호출을 시도합니다.
 ```shell
- while [ true ] ;do mysql -h192.168.0.20 -usvcusr -psvcusr -P6033 duhokim < test.sql; sleep 1; done
+ while [ true ] ;
+ do 
+ mysql -h192.168.0.20 -usvcusr -psvcusr -P6033 duhokim < test.sql; 
+ sleep 1; 
+ done
 ```
 
 ```
@@ -638,19 +642,6 @@ mysql> select * from duhokim.tab1;
 +------+---------------+---------------------+
 | col1 | col2          | col3                |
 +------+---------------+---------------------+
-|  433 | mysql-server1 | 2024-10-03 22:04:10 |
-|  434 | mysql-server1 | 2024-10-03 22:04:11 |
-|  435 | mysql-server1 | 2024-10-03 22:04:12 |
-|  436 | mysql-server1 | 2024-10-03 22:04:13 |
-|  437 | mysql-server1 | 2024-10-03 22:04:14 |
-|  438 | mysql-server1 | 2024-10-03 22:04:15 |
-|  439 | mysql-server1 | 2024-10-03 22:04:16 |
-|  440 | mysql-server1 | 2024-10-03 22:04:17 |
-|  441 | mysql-server1 | 2024-10-03 22:04:18 |
-|  442 | mysql-server1 | 2024-10-03 22:04:19 |
-|  443 | mysql-server1 | 2024-10-03 22:04:20 |
-|  444 | mysql-server1 | 2024-10-03 22:04:21 |
-|  445 | mysql-server1 | 2024-10-03 22:04:22 |
 |  446 | mysql-server1 | 2024-10-03 22:04:24 |
 |  447 | mysql-server1 | 2024-10-03 22:04:25 |
 |  448 | mysql-server1 | 2024-10-03 22:04:26 |
