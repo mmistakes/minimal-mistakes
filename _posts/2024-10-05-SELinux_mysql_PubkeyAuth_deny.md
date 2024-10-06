@@ -41,7 +41,7 @@ ssh-copy-id 사용자명@서버_IP
 ```
 <br>
 
-그런데 위의 명령어를 사용하기 위해서는 패스워드가 필요하기 때문에 보안상의 이유로 패스워드 없이 계정과 홈디렉토리만 있어야 한다면 클라이언트의 공개키 파일 내용을 그대로 복사해 서버의 authorized_keys 파일에 붙여넣어도 됩니다.
+그런데 위의 명령어를 사용하기 위해서는 패스워드가 필요합니다. 보안상의 이유로 패스워드 없이 계정과 홈디렉토리만 있어야 한다면 아래처럼 클라이언트의 공개키 파일 내용을 그대로 복사해 서버의 authorized_keys 파일에 붙여넣어도 됩니다.
 
 {% include codeHeader.html name="id_rsa.pub 로 공개키를 서버에 복사" %}
 ```bash
@@ -92,13 +92,124 @@ ssh 사용자명@서버_IP
 ### ❓mysql 유저만 SSH 키 접근이 안된다?
 ---
 
-Rocky8.8 환경에서 mysql 계정에 쉽게 접근하기 위해 공개키를 각 서버들의 authorized_keys 에 넣고 SSH 키 인증으로 연결을 시도했지만 계속해서 패스워드를 인증하라는 문구가 발생하였습니다. 그리고 신기한 것은 유독 mysql 유저로 연결을 맺으려고 할때에만 SSH 키 접근이 불가했습니다. 조금더 자세히 살펴보기 위해 ssh 접속 시 -v(verbose) 옵션을 주어 다른 계정과의 차이를 확인해보았습니다.
+Rocky8.8 환경에서 mysql 계정에 쉽게 접근하기 위해 공개키를 각 서버들의 authorized_keys 에 넣고 ssh 키 인증으로 연결을 시도했지만 계속해서 패스워드를 인증하라는 문구가 발생하였습니다. 그리고 신기한 것은 유독 mysql 유저로 연결을 맺으려고 할때에만 SSH 키 접근이 불가했습니다. 조금더 자세히 살펴보기 위해 ssh 접속 시 -v(verbose) 옵션을 주어 다른 계정과의 차이를 확인해보았습니다. 
 
+root 계정과 mysql 계정간의 접속 과정을 -v 옵션을 통해 확인해보면 다음과 같습니다.
 
+#### 1. root 계정으로 ssh 키로 연결
 
+```bash
+[root@mysql-server1 .ssh]# ssh root@192.168.0.5 -v
+OpenSSH_8.0p1, OpenSSL 1.1.1k  FIPS 25 Mar 2021
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug1: configuration requests final Match pass
+debug1: re-parsing configuration
+
+..중략...
+
+debug1: Next authentication method: publickey
+debug1: Offering public key: /root/.ssh/id_rsa RSA SHA256:6drYGRU1V7xgeP+Nn1H2xUQ2zfozfDKAlA0wQw79Ru4
+debug1: Server accepts key: /root/.ssh/id_rsa RSA SHA256:6drYGRU1V7xgeP+Nn1H2xUQ2zfozfDKAlA0wQw79Ru4
+debug1: Authentication succeeded (publickey).
+Authenticated to 192.168.0.5 ([192.168.0.5]:22).
+
+```
+
+보는 바와 같이 publickey 인증방식으로 공개키를 서버에 전달하여 accept 가 이루어지면서 최종 연결이 이루어지는 모습을 볼 수 있습니다.
+
+#### 2. mysql 계정으로 ssh 키로 연결
+
+이번엔 mysql 계정으로 연결할 경우 ssh 키 연결입니다.
+
+```bash
+[mysql@mon-server1 ~]$ ssh mysql@192.168.0.5 -v
+OpenSSH_8.0p1, OpenSSL 1.1.1k  FIPS 25 Mar 2021
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/05-redhat.conf
+debug1: Reading configuration data /etc/crypto-policies/back-ends/openssh.config
+debug1: configuration requests final Match pass
+
+..중략...
+
+debug1: Next authentication method: publickey
+debug1: Offering public key: /var/lib/mysql/.ssh/id_rsa RSA SHA256:aLkRbfnxWmvdWktpvzsfIOSHwUUxXOJEQ/ZuAvYYEjg
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic,password
+debug1: Trying private key: /var/lib/mysql/.ssh/id_dsa
+debug1: Trying private key: /var/lib/mysql/.ssh/id_ecdsa
+debug1: Trying private key: /var/lib/mysql/.ssh/id_ed25519
+debug1: Trying private key: /var/lib/mysql/.ssh/id_xmss
+debug1: Next authentication method: password
+mysql@192.168.0.5's password: 
+
+```
+publickey 인증으로 연결을 시도하려다가 패스워드 인증으로 넘어가게 됩니다. ssh 생성과 서버에 전달하는 과정은 root 계정과 동일하게 작업하였는데 왜그러는 것인지 의문이었습니다.
+
+<br>
+
+### ✏️원인은 SElinux
+---
+
+이리저리 찾아보던 중 [System Administrator 님의 블로그](https://www.lesstif.com/system-admin/ssh-authorized_keys-public-key-17105307.html)를 확인하게 되었고 원인을 찾게 되었습니다. 바로 mysql 계정 연결실패의 원인은 SElinux 이었습니다. 사용자의 홈디렉토리나 .ssh 의 SELinux context가 맞지 않으면 sshd 가 authorized_keys 를 읽을 수 없어서 로그인이 실패하는 현상이었습니다.
+
+mysql 의 연결실패 원인을 찾기 위해 mysql 서버에서 아래의 명령어를 수행합니다.
+
+{% include codeHeader.html name="SElinux 감사로그 분석" %}
+```bash
+audit2why  < /var/log/audit/audit.log
+```
+
+- audit2why: SELinux의 보안 경고 및 차단 로그를 해석하여 "왜(why)" 해당 동작이 차단되었는지 설명하는 도구입니다.
+- < /var/log/audit/audit.log: /var/log/audit/audit.log는 SELinux와 관련된 보안 감사 로그가 저장되는 파일입니다. 이 파일에는 SELinux가 차단한 모든 접근 시도에 대한 기록이 들어 있습니다.
+
+위의 명령어 결과에서 아래와 같은 항목을 볼 수 있었습니다.
+
+```bash
+[root@mon-server1 .ssh]# audit2why  < /var/log/audit/audit.log
+
+type=AVC msg=audit(1728189270.965:8192): avc:  denied  { read } for  pid=138598 comm="sshd" name="authorized_keys" dev="dm-0" ino=4236386 scontext=system_u:system_r:sshd_t:s0-s0:c0.c1023 tcontext=system_u:object_r:mysqld_db_t:s0 tclass=file permissive=0
+
+        Was caused by:
+                Missing type enforcement (TE) allow rule.
+
+                You can use audit2allow to generate a loadable module to allow this access.
+```
+<br>
+
+로그의 내용을 ChatGPT를 통해 해석을 받아보니 아래와 같았습니다. 
+
+> SELinux가 mysqld_db_t 컨텍스트로 설정된 파일에서 SSH 데몬(sshd_t)이 authorized_keys 파일을 읽는 것을 차단하고 있습니다. 이로 인해 mysql 계정으로 퍼블릭 키를 통한 SSH 접속이 불가능한 상황입니다.
+> SELinux가 파일 접근을 차단하는 문제는 mysqld_db_t 컨텍스트가 MySQL과 관련된 파일에만 접근하도록 제한되어 있기 때문입니다. 즉, mysql 계정의 .ssh 디렉토리 내 authorized_keys 파일도 MySQL 관련 파일로 인식되어 접근이 차단된 것입니다.
+
+메시지 중 ```denied  { read } for``` 는 읽기가 거부되었다는 의미입니다. 읽으려는 주체는 ```pid=138598 comm="sshd"``` 입니다. 즉 프로세스 id 138598 인 sshd 입니다. 그리고 ```name="authorized_keys"```를 통해서 authorized_keys 파일을 읽지 못한 것을 알 수 있습니다.
+
+그리고 ```tcontext=system_u:object_r:mysqld_db_t:s0``` 는 읽지 못한 authorized_keys 파일의 보안 컨텍스트입니다.즉, authorized_keys 파일이 mysqld_db_t로 라벨링되어 있어서 MySQL 관련 파일로 인식되었고, 이 때문에 sshd 프로세스가 해당 파일에 접근하는 것을 차단한 것입니다. 참고로 mysqld_db_t 컨텍스트는 MySQL 데이터베이스 파일 및 MySQL 서버가 사용하는 파일유형들을 의미합니다. authorized_keys 파일의 보안컨텍스트는 아래의 명령어를 통해서도 확인 가능합니다.
+
+{% include codeHeader.html name="파일의 보안컨텍스트 확인" %}
+```bash
+ls -dlZ 파일명
+```
+<br>
+
+위의 명령어를 실행하면 아래의 결과를 확인할 수 있습니다. audit2why 감사 로그의 보안컨텍스트와 동일합니다.
+```bash
+[mysql@mon-server1 .ssh]$ ls -dlZ authorized_keys 
+-rw-------. 1 mysql mysql system_u:object_r:mysqld_db_t:s0 745 10월  6 13:35 authorized_keys
+```
 
 <br/>
 
+### 😸문제해결
+---
+authorized_keys 파일이 존재하는 $HOME/.ssh 디렉토리 내의 파일들에 대하여 연결 제한을 막는 mysqld_db_t 컨텍스트 대신 ssh 연결을 위한 전용 컨텍스트인 ssh_home_t 를 부여하면 됩니다. ssh_home_t는 SELinux에서 ssh와 관련된 파일(특히 사용자의 SSH 설정 파일)에 사용되는 보안 컨텍스트 유형(Type)입니다. 주로 ssh 키 파일과 사용자 홈 디렉토리 안에 있는 ssh 관련 파일들에 적용되며, ssh 데몬(sshd)이 안전하게 접근할 수 있도록 설계된 보안 정책을 따릅니다. 
+
+root 계정에 있는 authorized_keys 파일의 보안컨텍스트를 확인해보아도 ssh_home_t 컨텍스트를 할당받고 있습니다.
+
+```bash
+[root@mon-server1 .ssh]# ls -dlZ authorized_keys 
+-rw-------. 1 root root unconfined_u:object_r:ssh_home_t:s0 1146 Oct  7 00:40 authorized_keys
+```
 
 
 
