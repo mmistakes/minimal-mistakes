@@ -232,8 +232,8 @@ main.yml 중 아래 내용들은 hosts 파일의 vars 에서 선언하였던 del
     key: "{{ current_public_key.content | b64decode }}"
   delegate_to: "{{ item }}"
   with_items: "{{ groups['mysql-server-list'] | map('extract', hostvars, 'ansible_host') | list }}"
-
 ```
+
 <br>
 
 ### 😎️Ansible 플레이북 실행
