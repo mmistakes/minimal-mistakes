@@ -18,7 +18,7 @@ Unsere Kontaktseite finden Sie [hier](/kontakt/).
 
 ## Über die Grundschule am Brandwerder
 
-<!-- {% include outdated.md %} -->
+{% include outdated.md %}
 
 Wir sind eine dreizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken,
 die in diesem Schuljahr von rund 400 Kindern besucht wird.
@@ -87,7 +87,7 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Das sind unsere Unterrichtszeiten:
 
-<!-- {% include outdated.md %} -->
+{% include outdated.md %}
 
 |Einlass | 7:50 Uhr | Blöcke | Mittagessen |
 | ---|----| ----- |  |
