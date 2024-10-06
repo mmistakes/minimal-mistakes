@@ -48,6 +48,7 @@ root@DESKTOP:~/ansible_code/ansible-ssh-publickey-cp# tree
 │       └── vars
 └── ssh-publickey-cp_deploy.yml
 ```
+
 <br>
 
 
@@ -64,6 +65,7 @@ root@DESKTOP:~/ansible_code/ansible-ssh-publickey-cp# tree
   roles:
     - ssh-publickey-cp
 ```
+
 <br>
 
 아래는 공개키를 서로 교환할 서버 정보인 inventory/hosts 입니다.
@@ -92,6 +94,7 @@ all:
         ssh_key_passphrase: ""
         delete_existing_key: true #파일 초기화할지 여부 확인
 ```
+
 <br>
 
 작업대상은 hosts 에 있는 서버 4대입니다. ansbile_user 에 의해 root 로 접속을 하고 ansbile_become 변수가 true 이므로 모든 명령어들이 sudo 로 실행됩니다.
@@ -215,6 +218,7 @@ main.yml 중 아래 내용들은 hosts 파일의 vars 에서 선언하였던 del
   register: ssh_keygen_result
   when: delete_existing_key | default(false)  
 ```
+
 <br>
 
 공개키를 slurp 모듈을 이용하여 읽어들입니다. 텍스트를 Base64로 인코딩하여 가져옴으로써 데이터 손실이 없도록 가져올 수 있습니다. 공개키는 current_public_key 변수에 할당됩니다. slurp 모듈을 쓰면 dict 형으로 자료를 받아올 수 있는데 그 중 content 필드에 공개키의 내용이 포함되어 있습니다. Base64 인코딩된 값은 ```{{ current_public_key.content | b64decode }}``` 이란 표현으로 디코딩 시킬 수 있습니다. authorized_key 모듈을 이용해서 hosts 에 정의된 ansible_host로 현재 실행 서버의 공개키를 넘겨줍니다.
