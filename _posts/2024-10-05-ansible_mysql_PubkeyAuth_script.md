@@ -149,20 +149,15 @@ vars 설정에 의해서 ssh 키 디렉토리와 파일들을 정의하였습니
   slurp:
     src: /var/lib/mysql/.ssh/id_rsa.pub
   register: current_public_key
-
+{% raw %}
 - name: Add public key to authorized_keys on other servers
   authorized_key:
     user: mysql
     state: present
     key: "{{ current_public_key.content | b64decode }}"
   delegate_to: "{{ item }}"
-  with_items:
-    - mon-server1
-    - mysql-server1
-    - mysql-server2
-    - mysql-server3
-  #when: inventory_hostname != item
-
+  with_items: "{{ groups['mysql-server-list'] | map('extract', hostvars, 'ansible_host') | list }}"
+{% endraw %}
 - name: Check if the SELinux context is already defined
   shell: semanage fcontext -l | grep '/var/lib/mysql/.ssh' || true #파이프(|)와 같은 셸 기능은 command 에서 지원이 안되어서 shell 로 변경
   register: secontext_check
