@@ -39,6 +39,13 @@
       email: "si2442 [at] columbia.edu"
       bio: "Sid obtained his BA in Brain & Cognitive Sciences from University of Rochester, working with David Dodell-Feder to decode ‘theory of mind’ processes from fMRI data. He then teched for Meghan Meyer, relating individual differences in social memory processing to fMRI functional connectivity. At the Nuttida lab, he seeks to understand why real and artificial neural networks change with cognitive context. Outside of the lab, he enjoys playing racket sports and board games."
       avatar: "/assets/images/people/sid.jpg"
+
+    - name: "Renee Tung"
+      title: false
+      position: "MD/PhD Student in Neurobiology & Behavior"
+      email: "rjt2155 [at] cumc.columbia.edu"
+      bio: "Renee completed her BS in Neuroscience with a certificate in Statistics & Data Science at Yale University in 2021, where she studied the neural mechanisms of behavioral impairment in a rat model of absence epilepsy in Hal Blumenfeld's lab. She then spent a year working with Carsen Stringer at Janelia using computational methods to study neural representations of behavior in mouse recordings of tens of thousands of neurons with behavioral keypoint tracking. In the Nuttida lab, she is interested in using modeling in combination with experimental data to better understand the neural mechanisms underlying the effects of neurostimulation on cognition in humans. Outside of lab, she enjoys playing [card, board, video] games, walking in parks, and exploring the city."
+      avatar: "/assets/images/people/renee.jpg"
     
     - name: "Salma Elhassa"
       title: false
