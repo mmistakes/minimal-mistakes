@@ -35,6 +35,23 @@
   },
   {
     "image_path": null,
+    "alt": "5a - Ausflug Beelitzer Heilstätten",
+    "title": "5a - Ausflug Beelitzer Heilstätten",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDU3dGZwMmRyOGVsbTFsMzlzajA4b2JmNWUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-10-15T07:45:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-10-15T14:45:00+02:00"
+    },
+    "created": "2024-10-08T12:23:26.000Z",
+    "updated": "2024-10-08T12:23:26.980Z"
+  },
+  {
+    "image_path": null,
     "alt": "A9 - Ausflug Schloss Charlottenburg",
     "title": "A9 - Ausflug Schloss Charlottenburg",
     "excerpt": null,
@@ -69,36 +86,19 @@
   },
   {
     "image_path": null,
-    "alt": "A3 - Ausflug Bücherei",
-    "title": "A3 - Ausflug Bücherei",
+    "alt": "A5 - Ausflug Bibliothek",
+    "title": "A5 - Ausflug Bibliothek",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N25hZWV0cmdjMWl0OG9mM2hiaGxyMmFtYXAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NjFjdDY2c3UwN2ozdDc0ZzRoZGhrNjFta3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2024-11-08T08:00:00+01:00"
+      "date_time": "2024-10-18T07:30:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2024-11-08T10:30:00+01:00"
+      "date_time": "2024-10-18T10:30:00+02:00"
     },
-    "created": "2024-09-26T12:13:48.000Z",
-    "updated": "2024-09-26T12:13:48.531Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4c - Jugendverkehrsschule (2. Termin)",
-    "title": "4c - Jugendverkehrsschule (2. Termin)",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGI0b21rMG5iZTlwaTJzNGpvcGl0MGM0Y2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-19T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-19T11:30:00+01:00"
-    },
-    "created": "2024-09-26T12:12:59.000Z",
-    "updated": "2024-09-26T12:12:59.042Z"
+    "created": "2024-10-08T12:48:25.000Z",
+    "updated": "2024-10-08T12:48:25.301Z"
   }
 ]
