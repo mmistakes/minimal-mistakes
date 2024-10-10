@@ -46,7 +46,20 @@ comments: true
 
 그런데 특이한 설정도 보입니다. Source 란에 "sg-" 접두어가 붙은 설정과 "pl-" 이 붙은 설정입니다. 이 항목들은 어떤 의미일까요? 
 
+보안그룹에 지정할 수 있는 Source 는 3가지로 분류할 수 있습니다. 바로 Cidr Blocks, Prefix lists, Security Groups 입니다.
 
+![보안그룹 Source 종류](https://github.com/user-attachments/assets/0270a2b3-b9ce-4ec0-ad4e-0bb28042c87f)   
+[그림3] 보안그룹 규칙의 Source 종류
+
+<br>
+
+#### 1. Cidr Blocks
+
+
+#### 2. Prefix lists
+
+
+#### 3. Security Groups
 
 <br>
 
@@ -82,6 +95,7 @@ comments: true
 - [관리형 접두사 목록으로 네트워크 CIDR 블록 통합 및 관리](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/managed-prefix-lists.html)
 - [보안 그룹 참조](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/security-group-rules.html#security-group-referencing)
 - [리전 및 영역](https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+- [보안 그룹 규칙 구성](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/working-with-security-group-rules.html)
 
 <br/>
 ---
