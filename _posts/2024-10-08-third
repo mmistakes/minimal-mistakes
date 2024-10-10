@@ -1,0 +1,51 @@
+---
+title: "3주차 강의일지"
+excerpt_separator: "ai and ni"
+categories:
+  - Post Formats
+tags:
+  - Post Formats
+  - readability
+  - standard
+---
+
+> 목차  
+> [1. LLM의 종류](#1-llm의-종류)  
+> [2. RAG란?](#2-rag란)  
+> [3. 대규모 모델의 유형](#3-대규모-모델의-유형)  
+> [4. Causal AI란?](#4-causal-ai란)  
+
+
+```yaml
+print('AI AND NI')
+```
+  
+# 1. LLM의 종류
+  1. SOTA(State Of The Art) LLM
+  SOTA LLM은 State-of-the-Art Large Language Model의 약자로, 현재 기술 수준에서 최고의 성능을 보이는 대규모 언어 모델을 의미한다. 최신 연구와 기술을 반영해 다양한 자연어 처리 작업에서 우수한 성능을 발휘하는 모델이다.
+ 
+  2. sLLM(SLM)
+  sLLM은 Specialized Large Language Model로, 특정 도메인이나 목적에 맞게 설계된 대규모 언어 모델을 뜻한다. 일반적인 LLM과 달리 특정 분야에 특화된 데이터를 학습해 해당 분야의 작업에서 더 높은 성능을 보인다.
+
+# 2. RAG란?
+  RAG는 **Retrieval-Augmented Generation**의 약자로, 정보 검색과 생성 모델을 결합한 방식이다. 먼저 필요한 정보를 검색한 후, 이를 바탕으로 답변을 생성하는 방식이다. 최신 정보나 특정 데이터베이스의 자료를 활용할 수 있는 점이 특징이다.
+
+
+# 3. 대규모 모델의 유형
+  1.LLM
+  **LLM**은 **Large Language Model**의 약자로, 대규모 데이터로 학습된 자연어 처리 모델을 의미한다. 텍스트 기반 작업에서 높은 성능을 발휘한다.
+  
+  2.LMM
+  **LMM**은 **Large Multimodal Model**로, 텍스트뿐만 아니라 이미지, 비디오 등 여러 형태의 데이터를 동시에 처리할 수 있는 대규모 모델이다.
+  
+  3.LAM
+  **LAM은 Large Audio Model**로, 주로 음성 인식이나 생성 작업에 특화된 대규모 모델이다.
+  
+  4.LWM
+  **LWM**은 **Large Spatial Model**로, 공간적 정보에 초점을 맞춘 대규모 모델이다. 주로 3D 공간 내에서의 물체 인식, 위치 추적 등과 같은 작업에 활용되며, 공간 데이터를 다루는 데 특화되어 있다.
+
+# 4. 여담
+**MECE**는 Mutually Exclusive, Collectively Exhaustive의 약자로, 경영에서 문제를 분석할 때 사용하는 논리적 분류 방식이다.  
+**Mutually Exclusive**는 상호 배타적이라는 뜻으로, 각 항목이 서로 중복되지 않도록 구분하는 것을 말한다.  
+**Collectively Exhaustive**는 전체를 포괄한다는 의미로, 모든 가능한 경우를 빠짐없이 포함해야 함을 뜻한다. 즉, MECE는 **중복 없이** 명확하게 분류하면서도 **빠진 부분이 없도록** 문제를 체계적으로 분석하는 방법이다.
+
