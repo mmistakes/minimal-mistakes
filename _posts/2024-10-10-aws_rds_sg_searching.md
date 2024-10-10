@@ -79,7 +79,7 @@ Managed Prefix lists 또는 Prefix lists로 불리는데 이 개념은 하나 �
 
 <br>
 
-위의 문서를 읽고 처음에는 sg-0abcdef1234567890 에 명시된 Source 룰을 말하는 것으로 이해했으나 그것은 아니고 sg-0abcdef1234567890 가 Attach 된 인스턴스(ec2, eks cluster, elb, rds, lambda 등)를 말하는 것입니다. 이점을 꼭 이해하셔야 합니다. 그리고 아래의 유의사항도 참고해야 합니다.
+위의 문서를 읽고 처음에는 sg-0abcdef1234567890 에 명시된 Source 룰을 말하는 것으로 이해했으나 그것은 아니고 sg-0abcdef1234567890 가 Attach 된 인스턴스(ec2, eks cluster, elb, rds, lambda 등)를 말하는 것입니다. 즉, sg-0abcdef1234567890 에 들어간 Inbound 룰에 적힌 Source 와의 통신이 아니라 sg-0abcdef1234567890 보안그룹을 사용 중인 ec2 나 eks cluster, elb 같은 리소스에 대한 허용규칙이라는 점입니다. 이점을 꼭 이해하셔야 합니다. 그리고 아래의 유의사항도 참고하셔야 합니다.
 
 - 두 보안 그룹 모두 동일한 VPC 또는 피어링된 VPC에 속해야 합니다.
 - 참조된 보안 그룹의 규칙은 해당 그룹을 참조하는 보안 그룹에 추가되지 않습니다.
