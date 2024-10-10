@@ -113,26 +113,39 @@ Managed Prefix lists 또는 Prefix lists로 불리는데 이 개념은 하나 �
 
 콘솔에서 제공하는 화면을 통해서도 보안그룹을 정리할 수 있겠지만 CLI 를 통해서도 정보를 얻을 수 있습니다. 아래는 보안그룹 정리를 위해 사용하는 CLI 와 출력 결과입니다.
 
-{% include codeHeader.html name="SElinux 감사로그 분석" %}
+#### 1. 전체 VPC 정보 확인
+
+{% include codeHeader.html name="aws ec2 describe-vpcs" %}
 ```bash
-audit2why  < /var/log/audit/audit.log
+aws ec2 describe-vpcs --query 'Vpcs[*].{VpcId:VpcId, CidrBlock:CidrBlock Name:Tags[?Key==`Name`].Value | [0]}'
 ```
 
 <br>
 
-출력결과는 아래와 같습니다.
+VPC 전체 리스트를 가져오고 싶을 때 쓰는 명령어입니다. 기본적으로 json 포맷을 기반으로 합니다. ```--query``` 옵션을 통해 원하는 정보만 추출할 수 있습니다. query 옵션에 쓴 문법은 [JMESPath](https://jmespath.org/) 표현식을 따르고 있습니다. [JMESPath의 공식 사이트](https://jmespath.org/)에 들어가시면 각종 예제를 볼 수 있고 튜토리얼을 까지 해보실 수 있으니 참고하시면 좋을 것 같습니다. 예전에는 많이 연습하려고 들어갔던 사이트인데 요즘엔 AI 로 제너레이팅 시키는 방식이 더 효율적입니다. 전체 출력물의 일부를 제공하고 원하는 필드를 추출해달라고 물어보면 금방 원하는 문법을 얻으실 수 있을것입니다.
 
-<details><summary>roles/ssh-publickey-cp/tasks/main.yml</summary>
+<br>
+
+위의 명령어를 수행하면 아래와 같은 결과를 얻을 수 있습니다. VPC명과 아이디, 대역 정보를 추출합니다.
+
+<details><summary>aws ec2 describe-vpcs 출력결과</summary>
 <div markdown="1">
 
-{% include codeHeader.html name="roles/ssh-publickey-cp/tasks/main.yml" %}
-```yml
----
-
-- name: Check if the SSH authorized key exists
-  stat:
-    path: /var/lib/mysql/.ssh/authorized_keys
-  register: authorized_key
+{% include codeHeader.html name="출력결과" %}
+```json
+[
+    {
+        "VpcId": "vpc-05d262xxxx",
+        "CidrBlock": "10.144.0.0/16",
+        "Name": "service-A-vpc"
+    },
+    {
+        "VpcId": "vpc-c95503xxxa0",
+        "CidrBlock": "172.31.0.0/16",
+        "Name": "service-B-vpc"
+    }
+    ...
+]
 ```
 
 </div>
@@ -140,7 +153,161 @@ audit2why  < /var/log/audit/audit.log
 
 <br>
 
-다음은 블라블라
+#### 2. 전체 서브넷 정보 확인
+
+{% include codeHeader.html name="aws ec2 describe-subnets" %}
+```bash
+aws ec2 describe-subnets --query 'Subnets[*].{VpcId:VpcId, SubnetId:SubnetId, CidrBlock:CidrBlock Name:Tags[?Key==`Name`].Value | [0]}'
+```
+
+<br>
+
+전체 서브넷 리스트를 가져오고 싶을 때 쓰는 명령어입니다. 마찬가지로 ```--query``` 옵션을 통해 원하는 정보만 추출하였습니다. VPC id, 서브넷 id, 서브넷 명, 서브넷 대역(CidrBlock) 을 가져옵니다.
+
+<br>
+
+위의 명령어를 수행하면 아래와 같은 결과를 얻을 수 있습니다.
+
+<details><summary>aws ec2 describe-subnets 출력결과</summary>
+<div markdown="1">
+
+{% include codeHeader.html name="출력결과" %}
+```json
+[
+    {
+        "VpcId": "vpc-c95xxxxxxxxxx",
+        "SubnetId": "subnet-b4xxxxxx9",
+        "CidrBlock": "172.31.16.0/20",
+        "Name": "service-A-c-subnet"
+    },
+    {
+        "VpcId": "vpc-05d2xxxxxxxxxxxx",
+        "SubnetId": "subnet-0000bxxxxxxxx2",
+        "CidrBlock": "10.145.3.64/27",
+        "Name": "service-A-b-subnet"
+    },
+...
+]
+```
+
+</div>
+</details>
+
+<br>
+
+#### 3. RDS 인스턴스별 사용하는 보안그룹 가져오기
+
+{% include codeHeader.html name="aws rds describe-db-instances" %}
+```bash
+aws rds describe-db-instances --query 'DBInstances[*].{DBInstanceIdentifier:DBInstanceIdentifier, VpcSecurityGroupIds:VpcSecurityGroups[*].VpcSecurityGroupId}'
+```
+
+<br>
+
+RDS인스턴스별 사용 중인 보안그룹(SG)을 조회합니다. RDS 식별자와 보안그룹 id 를 가져옵니다.
+
+<br>
+
+위의 명령어를 수행하면 아래와 같은 결과를 얻을 수 있습니다.
+
+<details><summary>aws rds describe-db-instances 출력결과</summary>
+<div markdown="1">
+
+{% include codeHeader.html name="출력결과" %}
+```json
+[
+    {
+        "DBInstanceIdentifier": "mysql-101",
+        "VpcSecurityGroupIds": [
+            "sg-0b5bxx8e56968"
+        ]
+    },
+    {
+        "DBInstanceIdentifier": "mysql-102",
+        "VpcSecurityGroupIds": [
+            "sg-0b5bxxxx56968"
+        ]
+    }
+    ...
+]
+```
+
+</div>
+</details>
+
+<br>
+
+#### 4. 보안 그룹의 인바운드 및 아웃바운드 규칙 확인
+
+{% include codeHeader.html name="aws ec2 describe-security-groups" %}
+```bash
+aws ec2 describe-security-groups --group-ids sg-05991f7712b938df3 \
+  --query 'SecurityGroups[*].{
+      IpPermissions: IpPermissions[*].{
+          IpRangesCidrIp: IpRanges[*].CidrIp,
+          PrefixListIds: PrefixListIds[*].PrefixListId,
+          UserIdGroupPairs: UserIdGroupPairs[*].GroupId
+      },
+      IpPermissionsEgress: IpPermissionsEgress[*].{
+          IpRangesCidrIp: IpRanges[*].CidrIp,
+          PrefixListIds: PrefixListIds[*].PrefixListId,
+          UserIdGroupPairs: UserIdGroupPairs[*].GroupId
+      }
+  }' \
+  --output json
+```
+
+<br>
+
+RDS 에서 사용중인 보안그룹 id 를 추려서 위의 명령어를 수행할 수도 있습니다. ```aws ec2 describe-security-groups``` 명령어는 보안그룹정보를 조회하기 위한 명령어이고 ```--group-ids "보안그룹id"``` 옵션을 추가하면 특정 보안그룹에 대한 정보를 확인할 수 있습니다. 마찬가지로 ```query```옵션을 통해 원하는 필드만 정제해서 볼 수 있습니다. 명령어의 아웃풋은 인바운드(IpPermissions)룰과 아웃바운드(IpPermissionEgress) 를 각각 다른 필드로 구분지어 놓고 있고 그 안에서도 소스유형(cidr,prefix lists,security group) 별로 분기가 되어 있습니다. 처음에 볼땐 복잡해 보일 수 있으나 인터넷에 있는 online formatter 들을 이용하면 금방 적응이 되실 것입니다.
+
+<br>
+
+위의 명령어를 수행하면 아래와 같은 결과를 얻을 수 있습니다.
+
+<details><summary>aws ec2 describe-security-groups 출력결과</summary>
+<div markdown="1">
+
+{% include codeHeader.html name="출력결과" %}
+```json
+[
+    {
+        "IpRangesCidrIp": [
+            [
+                "10.140.1.34/32",
+                "10.132.8.0/24",
+                "10.132.16.0/24",
+                "10.214.211.163/32",
+                "10.214.213.21/32"
+            ]
+        ],
+        "PrefixListIds": [
+            [
+                "pl-072dee2154e66d36f"
+            ]
+        ],
+        "UserIdGroupPairs": [
+            [
+                "sg-042ssssss0d3fe5",
+                "sg-0135ssss51b01fee"
+            ]
+        ]
+    }
+]
+```
+
+<br>
+
+그런데 위의 결과에서 보여지는 Prefix lists(PrefixListIds) 와 보안그룹(UserIdGroupPairs) 으로는 어느 ip 대역에서 inbound 하는 것인지 파악이 불가능합니다. 따라서 추가적인 정보를 더 가져와야 합니다.
+
+
+</div>
+</details>
+
+
+
+
+
 
 <br>
 
