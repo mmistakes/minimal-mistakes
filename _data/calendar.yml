@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. GEV",
-    "title": "1. GEV",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ZHJtaWxuY2QxNXZ1b3I5dW9ncHV2bGZoNjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-10-09T18:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-10-09T19:30:00+02:00"
-    },
-    "created": "2024-08-26T17:33:02.000Z",
-    "updated": "2024-08-26T17:33:02.138Z"
-  },
-  {
-    "image_path": null,
     "alt": "A9 - Ausflug Spandauer Stadtforst",
     "title": "A9 - Ausflug Spandauer Stadtforst",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-10-08T12:48:25.000Z",
     "updated": "2024-10-08T12:48:25.301Z"
+  },
+  {
+    "image_path": null,
+    "alt": "5a - Ausflug Altes Museum",
+    "title": "5a - Ausflug Altes Museum",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWUydDNtcnVuMjNwZTZkOG81bmYyY2pndXYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-10-18T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-10-18T13:30:00+02:00"
+    },
+    "created": "2024-10-08T12:24:16.000Z",
+    "updated": "2024-10-08T12:24:16.204Z"
   }
 ]
