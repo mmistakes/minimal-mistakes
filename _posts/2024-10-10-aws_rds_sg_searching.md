@@ -40,13 +40,9 @@ comments: true
 
 <br>
 
-위의 그림은 네트워크 인바운드에 대한 제어를 할 수 있는 화면입니다. 기본적으로 화이트 리스트 방식으로 네트워크를 제어할 수 있고 IP version, Protocol, Port, Source 를 설정하여 허용하고 싶은 규칙을 정할 수 있습니다.
+위의 그림은 네트워크 인바운드에 대한 제어를 할 수 있는 화면입니다. 기본적으로 화이트 리스트 방식으로 네트워크를 제어할 수 있고 IP version, Protocol, Port, Source 를 설정하여 허용하고 싶은 규칙을 정할 수 있습니다. 일반적으로 IPv4, TCP 포트 연결로 DBMS 와의 연결을 허용시킬 수 있습니다. Source 란에 연결 허용을 하고 싶은 서브넷 대역 또는 ip 를 직접 작성하면 됩니다.
 
-일반적으로 IPv4, TCP 포트 연결로 DBMS 와의 연결을 허용시킬 수 있습니다. Source 란에 연결 허용을 하고 싶은 서브넷 대역 또는 ip 를 직접 작성하면 됩니다.
-
-그런데 특이한 설정도 보입니다. Source 란에 "sg-" 접두어가 붙은 설정과 "pl-" 이 붙은 설정입니다. 이 항목들은 어떤 의미일까요? 
-
-보안그룹에 지정할 수 있는 Source 는 3가지로 분류할 수 있습니다. 바로 Cidr Blocks, Prefix lists, Security Groups 입니다.
+그런데 특이한 설정도 보입니다. Source 란에 "sg-" 접두어가 붙은 설정과 "pl-" 이 붙은 설정입니다. 이 항목들은 어떤 의미일까요? 보안그룹에 지정할 수 있는 Source 는 3가지로 분류할 수 있습니다. 바로 Cidr Blocks, Prefix lists, Security Groups 입니다.
 
 ![보안그룹 Source 종류](https://github.com/user-attachments/assets/0270a2b3-b9ce-4ec0-ad4e-0bb28042c87f)   
 [그림3] 보안그룹 규칙의 Source 종류
@@ -83,16 +79,18 @@ sg-0abcdef1234567890 에 명시된 Source 에 대한 인바운드 / 아웃바운
 
 아래는 **잘못된 발상**입니다.
 
-![보안그룹 참조 방식의 잘못된 해석](https://github.com/user-attachments/assets/89347b50-8b53-4171-8ed6-292ea78db9be)   
+![보안그룹 참조 방식의 잘못된 해석](https://github.com/user-attachments/assets/d04ed831-0b0a-409b-b45c-1bcf0179c44c)    
 [그림5] 보안그룹 참조 방식의 잘못된 해석
 
 <br>
 
 \[그림5\]와 같이 참조하는 sg-02b4d97bee6deaf0f 보안그룹 규칙에 정의된 소스를 RDS 에서 사용하는 보안그룹에 할당시킨다는 생각입니다. 이러한 발상은 잘못된 것입니다.
 
-sg-02b4d97bee6deaf0f 를 사용하는 인스턴스라는 해석이 정확합니다. 특정 보안그룹을 사용하는 인스턴스를 조회하는 방법은 네트워크 인터페이스 관리 콘솔 화면을 검색하는 것입니다. 모든 인스턴스들은 상호 통신을 하기 위해 고유의 ip 를 할당 받습니다. 그리고 이 ip를 할당받기 위해서는 인스턴스에 network interface 리소스가 있어야 합니다. 그리고 AWS 에서 제공하는 network interface의 관리화면과 CLI 는 특정 네트워크 인터페이스가 할당받은 ip 주소, 서브넷 대역, 인스턴스 ID, 사용중인 보안그룹 등의 정보를 제공해주고 있습니다.
+<br>
 
-![보안그룹 참조 방식의 올바른 해석](https://github.com/user-attachments/assets/219cc0b1-82e2-42a5-a5f9-d73f94bb9f34)
+올바른 해석은 "**sg-02b4d97bee6deaf0f 를 사용하는 인스턴스** 를 대상으로 규칙을 생성한다" 입니다. 특정 보안그룹을 사용하는 인스턴스를 조회하는 방법은 네트워크 인터페이스 관리 콘솔 화면을 검색하는 것입니다. 모든 인스턴스들은 상호 통신을 하기 위해 고유의 ip 를 할당 받습니다. 그리고 이 ip를 할당받기 위해서는 인스턴스에 network interface 리소스가 있어야 합니다. 그리고 AWS 에서 제공하는 network interface의 관리화면과 CLI 는 특정 네트워크 인터페이스가 할당받은 ip 주소, 서브넷 대역, 인스턴스 ID, 사용중인 보안그룹 등의 정보를 제공해주고 있습니다.
+
+![보안그룹 참조 방식의 올바른 해석](https://github.com/user-attachments/assets/205a4942-22ab-4853-8c93-5a30d7cc1a87)    
 [그림6] 보안그룹 참조 방식의 올바른 해석
 
 <br>
