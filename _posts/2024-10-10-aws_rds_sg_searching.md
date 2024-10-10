@@ -68,7 +68,23 @@ Managed Prefix lists 또는 Prefix lists로 불리는데 이 개념은 하나 �
 
 #### 3. Security Groups
 
-다음은 보안그룹(Security Groups) 입니다. 보안 그룹 내에서 Source 로 보안 그룹을 설정할 수 있습니다. 저는 처음에 AWS 의 방화벽 정책을 보았을 때 이 부분이 헷갈리곤 했었는데요. 
+다음은 보안그룹(Security Groups) 입니다. 보안 그룹 내에서 Source 로 보안 그룹을 설정할 수 있습니다. 저는 처음에 AWS 의 방화벽 정책을 보았을 때 이 부분이 헷갈리곤 했었는데요. AWS 공식문서의 [**보안 그룹 참조**](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/security-group-rules.html#security-group-referencing) 페이지에 나와 있는 글을 빌리면 다음과 같습니다. 
+
+> 보안 그룹을 규칙의 소스 또는 대상으로 지정할 경우 규칙은 보안 그룹과 연결된 모든 인스턴스에 영향을 줍니다. 인스턴스는 인스턴스의 프라이빗 IP 주소를 사용하여 지정된 프로토콜 및 포트를 통해 지정된 방향으로 통신할 수 있습니다.
+> 
+> 예를 들어 다음은 보안 그룹 sg-0abcdef1234567890을(를) 참조하는 보안 그룹에 대한 인바운드 규칙을 나타냅니다. 이 규칙에서는 sg-0abcdef1234567890과(와) 연결된 인스턴스에서 발생한 인바운드 SSH 트래픽이 허용됩니다.
+
+![Security Groups 참조 예시](https://github.com/user-attachments/assets/5b724c75-5c98-42a4-977a-288ead393d70)   
+[그림4] [보안 그룹 참조 예시](https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/security-group-rules.html#security-group-referencing)
+
+<br>
+
+위의 문서를 읽고 처음에는 sg-0abcdef1234567890 에 명시된 Source 룰을 말하는 것으로 이해했으나 그것은 아니고 sg-0abcdef1234567890 가 Attach 된 인스턴스(ec2, eks cluster, elb, rds, lambda 등)를 말하는 것입니다. 이점을 꼭 이해하셔야 합니다. 그리고 아래의 유의사항도 참고해야 합니다.
+
+- 두 보안 그룹 모두 동일한 VPC 또는 피어링된 VPC에 속해야 합니다.
+- 참조된 보안 그룹의 규칙은 해당 그룹을 참조하는 보안 그룹에 추가되지 않습니다.
+- 인바운드 규칙의 경우 보안 그룹과 연결된 EC2 인스턴스는 참조된 보안 그룹과 연결된 EC2 인스턴스의 프라이빗 IP 주소로부터 인바운드 트래픽을 수신할 수 있습니다.
+- 아웃바운드 규칙의 경우 보안 그룹과 연결된 EC2 인스턴스는 참조된 보안 그룹과 연결된 EC2 인스턴스의 프라이빗 IP 주소로 아웃바운드 트래픽을 보낼 수 있습니다.
 
 
 <br>
