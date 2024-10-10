@@ -90,7 +90,7 @@ Managed Prefix lists 또는 Prefix lists로 불리는데 이 개념은 하나 �
 
 올바른 해석은 "**sg-02b4d97bee6deaf0f 를 사용하는 인스턴스** 를 대상으로 규칙을 생성한다" 입니다. 특정 보안그룹을 사용하는 인스턴스를 조회하는 방법은 네트워크 인터페이스 관리 콘솔 화면을 검색하는 것입니다. 모든 인스턴스들은 상호 통신을 하기 위해 고유의 ip 를 할당 받습니다. 그리고 이 ip를 할당받기 위해서는 인스턴스에 network interface 리소스가 있어야 합니다. 그리고 AWS 에서 제공하는 network interface의 관리화면과 CLI 는 특정 네트워크 인터페이스가 할당받은 ip 주소, 서브넷 대역, 인스턴스 ID, 사용중인 보안그룹 등의 정보를 제공해주고 있습니다.
 
-![보안그룹 참조 방식의 올바른 해석](https://github.com/user-attachments/assets/205a4942-22ab-4853-8c93-5a30d7cc1a87)    
+![보안그룹 참조 방식의 올바른 해석](https://github.com/user-attachments/assets/205a4942-22ab-4853-8c93-5a30d7cc1a87){: #magnific}
 [그림6] 보안그룹 참조 방식의 올바른 해석
 
 <br>
