@@ -13,6 +13,7 @@ React Router DOM은 React 애플리케이션에서 CSR(Client-Side Routing)을 �
 일반적인 웹 애플리케이션은 SSR(Server Side Rendering)을 통해 사용자가 요청한 URL에 맞는 페이지를 서버에서 렌더링해 제공한다.
 
 
+
 <!--
 2024-10-12 (토)
 
