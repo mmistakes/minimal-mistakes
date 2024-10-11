@@ -23,7 +23,7 @@ IDC 환경에서는 네트워크 룰을 보기 위한 접근성의 제한으로 
 
 ![RDS 연결 구성도](https://github.com/user-attachments/assets/228e9559-7980-4eea-abec-231990181b58)
 
-
+<br>
 
 AWS 환경에서 위에서 설명드린 연결 구성도를 파악하기 위해서는 제일 먼저 확인해야 할 항목이 보안 그룹(Security Group)입니다.
 
