@@ -11,11 +11,10 @@ category: React Router Dom
 React Router DOM은 React 애플리케이션에서 CSR(Client-Side Routing)을 구현하기 위한 라이브러리다.
 
 일반적인 웹 애플리케이션은 SSR(Server Side Rendering)을 통해서 사용자가 요청한 URL에 맞는 페이지를 서버에서 렌더링하여 제공한다.
-<!--
-2024-10-12 (토)
+
 
 하지만 React Router DOM을 사용하면 서버에 매번 요청할 필요 없이 브라우저에서 클라이언트 사이드 렌더링(CSR, Client Side Rendering)을 통해 동적으로 페이지를 전환할 수 있다.
--->
+
 
 <!--
 2024-10-13 (일)
