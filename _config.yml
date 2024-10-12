@@ -323,3 +323,14 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Navigation Links
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Conferences"
+    url: /conferences/
+  - title: "CV"
+    url: /cv/
