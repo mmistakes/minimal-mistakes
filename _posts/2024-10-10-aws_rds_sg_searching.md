@@ -303,38 +303,127 @@ RDS 에서 사용중인 보안그룹 id 를 추려서 위의 명령어를 수행
 ]
 ```
 
+</div>
+</details>
+
 <br>
 
-그런데 위의 결과에서 보여지는 Prefix lists(PrefixListIds) 와 보안그룹(UserIdGroupPairs) 으로는 어느 ip 대역에서 inbound 하는 것인지 파악이 불가능합니다. 따라서 추가적인 정보를 더 가져와야 합니다.
+그런데 위의 결과에서 보여지는 Prefix lists(PrefixListIds) 와 보안그룹(UserIdGroupPairs) 으로는 어느 ip 대역에서 inbound 하는 것인지 파악이 불가능합니다. 따라서 추가적인 정보를 더 가져와야 합니다. 즉, Prefix lists 에 있는 cidr block 정보와 네트워크 인터페이스상에서 보안그룹을 사용중인 인스턴스의 cidr block(ip 주소)을 추가로 가져와야합니다.
 
+<br>
+
+#### 5. 프리픽스리스트 목록 확인
+
+{% include codeHeader.html name="aws ec2 get-managed-prefix-list-entries" %}
+```bash
+aws ec2 get-managed-prefix-list-entries --prefix-list-id pl-01d4f9f1a6d3e6c9d --query 'Entries[*].Cidr' --output json
+
+```
+
+<br>
+
+위의 명령어는 보안그룹에 정의된 프리픽스 리스트의 Cidr Block 목록을 가져오는 cli 입니다. 명령어를 수행하면 아래와 같은 결과를 얻을 수 있습니다.
+
+<details><summary>aws ec2 get-managed-prefix-list-entries 출력결과</summary>
+<div markdown="1">
+
+{% include codeHeader.html name="출력결과" %}
+```json
+[
+    "10.214.211.26/32",
+    "10.214.211.70/32",
+    "10.214.211.96/32",
+    "10.214.211.237/32",
+    "10.214.211.97/32",
+    "10.214.211.66/32",
+    "10.214.211.163/32",
+    "10.214.211.77/32",
+    "10.214.211.93/32",
+    "10.214.211.189/32",
+    "10.214.211.126/32"
+]
+
+```
 
 </div>
 </details>
 
+<br>
 
+#### 6. 네트워크 인터페이스 확인
 
+{% include codeHeader.html name="aws ec2 describe-network-interfaces" %}
+```bash
+aws ec2 describe-network-interfaces
 
-
+```
 
 <br>
 
-### ⚠️보안그룹의 실행결과를 DBMS에 넣어 관리하자
----
+위의 명령어는 네트워크 인터페이스 cli 입니다. 해당 명령어를 사용하면 네트워크 인터페이스에 할당된 Cidr Block(PrivateIpAddress), 보안그룹(GroupId), 서브넷 정보, VPC 정보, 인스턴스정보(InstanceId) 까지도 매핑해서 볼 수 있습니다.
 
-![테이블 스키마](https://github.com/user-attachments/assets/917d5495-fcd6-4253-9d30-541c3650204e)   
-[그림x] 대략적인 테이블 스키마
+<details><summary>aws ec2 describe-network-interfaces 출력결과</summary>
+<div markdown="1">
+
+{% include codeHeader.html name="출력결과" %}
+```json
+{
+    "NetworkInterfaces": [
+        {
+            "Attachment": {
+                "AttachTime": "2022-09-26T06:43:32+00:00",
+                "AttachmentId": "en***************104",
+                "DeleteOnTermination": true,
+                "DeviceIndex": 0,
+                "NetworkCardIndex": 0,
+                "InstanceId": "i-***********ffd2",
+                "InstanceOwnerId": "88*****3684",
+                "Status": "attached"
+            },
+            "AvailabilityZone": "ap-northeast-2c",
+            "Description": "",
+            "Groups": [
+                {
+                    "GroupName": "prd-******-sg",
+                    "GroupId": "sg-0*******c08"
+                }
+            ],
+            "InterfaceType": "interface",
+            "Ipv6Addresses": [],
+            "MacAddress": "0a:**:**:**:**:dc",
+            "NetworkInterfaceId": "eni-****************",
+            "OwnerId": "8822********",
+            "PrivateDnsName": "ip-10-********.ap-northeast-2.compute.internal",
+            "PrivateIpAddress": "10.***.***.***",
+            "PrivateIpAddresses": [
+                {
+                    "Primary": true,
+                    "PrivateDnsName": "ip-10-********.ap-northeast-2.compute.internal",
+                    "PrivateIpAddress": "10.***.***.***"
+                }
+            ],
+            "RequesterManaged": false,
+            "SourceDestCheck": true,
+            "Status": "in-use",
+            "SubnetId": "subnet-062********0a",
+            "TagSet": [],
+            "VpcId": "vpc-0ebe****c"
+        }
+    ]
+}
+
+```
+
+</div>
+</details>
 
 <br/>
 
-### 😸결과
+
+### 🚀추가로 해야할 일
 ---
 
-
-<br/>
-
-### 🚀추가로 해야할 일(자동화)
----
-
+지금까지 RDS 의 연결 현황을 정리하기 위한 유용한 cli 들에 대해 소개해드렸습니다. 하지만 해당 cli 만을 이용하여 필요한 정보를 손쉽게 추출하기에는 어려움이 있을 수 있습니다. 그래서 cli 를 통해 raw 데이터를 받아오고 DBMS 테이블에 적재시킨 뒤 원하는 정보들만 SQL 로 질의하면 조금 더 데이터를 유용하게 다룰 수 있습니다. 다음 포스팅에서는 Python 코드를 이용하여 cli 를 실행하여 테이블에 적재하고, 필요한 정보를 조회하는 과정을 다뤄보도록 하겠습니다. 감사합니다.
 
 <br>
 

@@ -186,6 +186,17 @@ code goes in here!
 </div>
 </details>
 
+
+<br>
+
+### ⚠️보안그룹의 실행결과를 DBMS에 넣어 관리하자
+---
+
+![테이블 스키마](https://github.com/user-attachments/assets/917d5495-fcd6-4253-9d30-541c3650204e)   
+[그림x] 대략적인 테이블 스키마
+
+<br>
+
 ---
 {% assign posts = site.categories.Mysql %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
