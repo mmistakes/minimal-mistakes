@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug Atze ",
-    "title": "6b - Ausflug Atze ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnY0ZW81bjZ1NWZ1ZWpwcmJuMjAwb3M1aG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-10-14T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-10-14T13:30:00+02:00"
-    },
-    "created": "2024-10-10T06:17:57.000Z",
-    "updated": "2024-10-10T06:17:57.759Z"
-  },
-  {
-    "image_path": null,
     "alt": "5a - Ausflug Beelitzer Heilstätten",
     "title": "5a - Ausflug Beelitzer Heilstätten",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-10-08T12:24:16.000Z",
     "updated": "2024-10-08T12:24:16.204Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug Bücherei",
+    "title": "6b - Ausflug Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGhrcnNyNTIyN3N0ZmNnZm03c2s2MmtjcWYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-06T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-06T12:00:00+01:00"
+    },
+    "created": "2024-10-10T06:17:12.000Z",
+    "updated": "2024-10-10T06:17:12.084Z"
   }
 ]
