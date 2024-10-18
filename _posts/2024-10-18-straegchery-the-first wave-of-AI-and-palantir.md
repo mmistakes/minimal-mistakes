@@ -1,5 +1,5 @@
 ---
-title: "[stratechery] Enterprise Philosophy and The First Wave of AI (palantir와 연관된 내용 일부내용 )"
+title: "[stratechery] Enterprise Philosophy and The First Wave of AI (palantir와 연관된 내용 일부내용 요약)"
 categories:
   #- AI Company
   - AI article
@@ -32,15 +32,14 @@ _________________
 
 ##### By Ben Thompson
 ##### Tuesday, September 24, 2024
-https://stratechery.com/2024/enterprise-philosophy-and-the-first-wave-of-ai/
+
+[기사원문](https://stratechery.com/2024/enterprise-philosophy-and-the-first-wave-of-ai/){: target="_blank"}
 
 
 This Article is available as a video essay on [YouTube](https://youtu.be/3cgjWHzFdj4?si=J7o0xEahi8W-k7qT){: target="_blank"}
 
 
-
 ---
-
 
   * 우리가 지금 AI 시대로의 전환점에 있는데, 이 과정이 예전에 기업들이 처음 컴퓨터를 도입하던 시기와 비슷
   * 큰 변화가 올 때마다 기업들은 어떻게 접근하는 게 좋을지 고민(AI를 도구로 볼 것인가, 우리를 대체하는 것으로 볼 것인가)
