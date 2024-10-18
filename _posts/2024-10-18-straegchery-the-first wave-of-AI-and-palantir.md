@@ -28,12 +28,11 @@ _________________
 
 # Enterprise Philosophy and The First Wave of AI
 
-#### The AI moonshot was founded in the spirit of transparency. This is the inside story of how competitive pressure eroded that idealism.
 
 ##### By Ben Thompson
 ##### Tuesday, September 24, 2024
 
-[기사원문](https://stratechery.com/2024/enterprise-philosophy-and-the-first-wave-of-ai/){: target="_blank"}
+[원문](https://stratechery.com/2024/enterprise-philosophy-and-the-first-wave-of-ai/){: target="_blank"}
 
 
 This Article is available as a video essay on [YouTube](https://youtu.be/3cgjWHzFdj4?si=J7o0xEahi8W-k7qT){: target="_blank"}
@@ -49,7 +48,49 @@ This Article is available as a video essay on [YouTube](https://youtu.be/3cgjWHz
 
 ---
 
-## <주요내용 요약>
+### claude를 통해 원문 요약
+```yaml
+AI 발전의 역사적 맥락
+
+
+대부분의 기술 역사는 PC(개인용 컴퓨터)에서 시작한다고 보지만, 실제로는 기업의 백오피스 디지털화가 첫 번째 물결이었음
+1908년부터 1970년대까지 은행의 회계/부기 업무가 수작업에서 컴퓨터로 전환되는 과정을 예시로 설명
+
+
+기술 철학의 세 가지 흐름
+
+
+Google/Facebook: 컴퓨터가 사용자를 위해 일을 대신 처리
+Apple/Microsoft: 컴퓨터가 사용자의 일을 더 효율적으로 수행하도록 도움
+엔터프라이즈 철학: 기업의 수익 증대와 비용 절감에 초점
+
+
+AI의 현재와 미래
+
+
+Microsoft의 Copilot은 도구로서의 AI를 강조하지만, 직원들의 작업방식 변화를 이끌어내는 것이 과제
+Salesforce는 AI 에이전트를 통해 직원을 '대체'하는 방향을 제시
+OpenAI의 o1 모델은 에이전트 기반 AI의 실현 가능성을 높임
+
+
+기업 AI 도입의 전망
+
+
+AI 도입은 1980년대 PC 도입과 유사: 대부분의 직원들은 필요할 때만 사용
+진정한 변화는 다음 세대에서 일어날 것
+현재는 비용절감을 위한 top-down 방식의 AI 도입이 주를 이룰 것
+Palantir과 같은 기업 운영체제 제공업체가 중요한 역할을 할 것으로 전망
+
+
+결론
+
+
+AI는 새로운 컴퓨팅 패러다임이며, 초기에는 기업 중심으로 발전할 것
+소비자 영역에서의 AI 혁명은 예상보다 더 오래 걸릴 수 있음
+차세대가 AI와 함께 성장하면서 진정한 소비자화가 이루어질 것
+```
+
+## <핵심내용 요약>
 
 ### 기술 업계의 두 가지 철학: AI 시대의 새로운 관점
 
