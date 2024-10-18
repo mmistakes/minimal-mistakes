@@ -35,7 +35,7 @@ from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy)
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 <script>
-    const URL = "./my_model/";
+    const URL = "../../my_model/";
     let model, webcam, labelContainer, maxPredictions;
     let flag = false;
 
