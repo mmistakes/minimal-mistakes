@@ -15,12 +15,17 @@ tags:
 last_modified_at: 2024-04-23T23:52:50-23:59
 ---
 
-from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy)
+from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy){: target="_blank"}
 
+## 방법
+1. Teachable 머신에서 딥러닝 모델 간단히 생성
+2. 생성된 모델을 다운로드
+3. github 블로그 post를 위해, 모델 업로드 및 MD파일를 통해 코딩 및 모델 로딩
+4. github post에서 동작 확인
 
 ---
 
-# 마스크 착용 감지 웹 애플리케이션
+## 마스크 착용 감지 웹 애플리케이션
 
 <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 2rem;">
     <div style="display: flex; gap: 1rem;">
