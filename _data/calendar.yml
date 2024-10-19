@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5 - Ausflug Bibliothek",
-    "title": "A5 - Ausflug Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NjFjdDY2c3UwN2ozdDc0ZzRoZGhrNjFta3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-10-18T07:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-10-18T10:30:00+02:00"
-    },
-    "created": "2024-10-08T12:48:25.000Z",
-    "updated": "2024-10-08T12:48:25.301Z"
-  },
-  {
-    "image_path": null,
-    "alt": "5a - Ausflug Altes Museum",
-    "title": "5a - Ausflug Altes Museum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWUydDNtcnVuMjNwZTZkOG81bmYyY2pndXYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-10-18T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-10-18T13:30:00+02:00"
-    },
-    "created": "2024-10-08T12:24:16.000Z",
-    "updated": "2024-10-08T12:24:16.204Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b - Ausflug Bücherei",
     "title": "6b - Ausflug Bücherei",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-10-08T12:49:11.000Z",
     "updated": "2024-10-08T12:49:11.782Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4c - Jugendverkehrsschule (2. Termin)",
+    "title": "4c - Jugendverkehrsschule (2. Termin)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGI0b21rMG5iZTlwaTJzNGpvcGl0MGM0Y2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-19T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-19T11:30:00+01:00"
+    },
+    "created": "2024-09-26T12:12:59.000Z",
+    "updated": "2024-09-26T12:12:59.042Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Lesepatinnen-Treffen",
+    "title": "Lesepatinnen-Treffen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHMyNWJ2c3ZpbmI5bWV0bjdiZWFhMGkyNG4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-21T14:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-21T15:00:00+01:00"
+    },
+    "created": "2024-10-10T06:15:00.000Z",
+    "updated": "2024-10-10T06:15:00.922Z"
   }
 ]
