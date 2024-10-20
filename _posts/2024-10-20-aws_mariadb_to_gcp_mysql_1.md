@@ -1,5 +1,5 @@
 ---
-title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전하기"
+title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전(1)"
 excerpt: "AWS MariaDB를 GCP MySQL로 이전하는 내용을 정리합니다."
 #layout: archive
 categories:
