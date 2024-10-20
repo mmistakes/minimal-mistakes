@@ -20,6 +20,7 @@ comments: true
 제가 속한 회사는 멀티 클라우드 환경에서 AWS, GCP, Azure를 활용해 플랫폼을 운영하고 있습니다. 이런 구조에서 종종 GCP의 GKE에서 AWS의 RDS에 연결해야 하는 경우가 발생하기도 했는데, 이는 운영 비용 증가를 유발하기도 했습니다. 특히, GCP에서 AWS로의 데이터 전송은 DTO(Data Transfer Out)를 발생시켜 불필요한 비용을 부담해야하는 상황을 만들었습니다. GCP의 같은 리전 내 모든 플랫폼이 구축되어 있을 경우 DTO는 무비용이 되는 반면 AWS <-> GCP 를 경유할 경우 중간다리 역할을 하는 AWS Transit Gateway 의 사용량을 증가시켜 비용을 발생시켰기 때문입니다.
 
 ![Transit Gateway peering across Regions](https://github.com/user-attachments/assets/b0c7317b-9d18-4f7f-95b1-eb75358ed554)
+[그림] Transit Gateway peering across Regions
 
 <br>
 
