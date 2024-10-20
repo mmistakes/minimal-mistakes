@@ -3,7 +3,7 @@ title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전(2)"
 excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이전하는 내용을 정리합니다."
 #layout: archive
 categories:
- - Aws
+ - Gcp
 tags:
   - [aws, rds, gcp, cloudsql, mysql, mariadb]
 #permalink: mysql-architecture
@@ -119,5 +119,5 @@ comments: true
 <br/>
 ---
 
-{% assign posts = site.categories.Mysql %}
+{% assign posts = site.categories.Aws %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

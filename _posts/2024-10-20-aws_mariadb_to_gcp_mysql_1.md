@@ -128,5 +128,5 @@ AWS DMS 로의 이전 작업은 역시나 아주 간편하였습니다. 물론 M
 <br/>
 ---
 
-{% assign posts = site.categories.Mysql %}
+{% assign posts = site.categories.Gcp %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
