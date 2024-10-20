@@ -17,17 +17,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Sophia's Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+name                     : "Sophia Momah"
+description              : "Software Engineer with experience in full-stack web development, UX/UI engineer, and automated testing. Proficient in writing and maintaining high-quality C# code for scalable, high-performance applications, as well as building and managing automated test suites. Key projects have included developing complex web applications and optimizing backend solutions, showcasing strong skills in Agile environments, specifically with Scrum practices. Eager to leverage current skills to further enhance application delivery and performance within dynamic teams."
+url                      : "https://sophiamomah.github.io"
+baseurl                  : "/portfolio"
+repository               : "sophiamomah.github.io"
+teaser                   : "/assets/images/facepic.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : " " 
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -39,8 +39,7 @@ comments:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
+  facebook:               # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
@@ -113,27 +112,27 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Sophia Momah"
+  avatar           : "/assets/images/facepic1.jpg"
+  bio              : "Software Engineer with experience in full-stack web development and automated testing. Proficient in writing and maintaining high-quality C# code for scalable, high-performance applications, as well as building and managing automated test suites. Key projects have included developing complex web applications and optimizing backend solutions, showcasing strong skills in Agile environments, specifically with Scrum practices. Eager to leverage current skills to further enhance application delivery and performance within dynamic teams."
+  location         : "Philadelphia"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "sophia.momah@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
+    - label: "Linkedln"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://www.linkedin.com/in/sophiamomah/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/sophiamomah"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -141,9 +140,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
+    - label: "Linkedln"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://www.linkedin.com/in/sophiamomah/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
