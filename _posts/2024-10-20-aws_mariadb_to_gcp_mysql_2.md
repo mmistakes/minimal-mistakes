@@ -5,7 +5,7 @@ excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이�
 categories:
  - Aws
 tags:
-  - [aws, rds]
+  - [aws, rds, gcp, cloudsql, mysql, mariadb]
 #permalink: mysql-architecture
 toc: true
 toc_sticky: true
