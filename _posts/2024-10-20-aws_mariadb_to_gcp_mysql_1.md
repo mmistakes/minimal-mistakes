@@ -89,7 +89,7 @@ GCP Cloud SQL과 같은 관리형 상품들은 내부 VPC 망에서만 Inter Con
 
 <br>
 
-\[그림5\]는 PSA 망에 있는 GCP Cloud SQL 로 직접 이관이 불가능하기 때문에 GCP MySQL을 IaaS 형태로 구축 후 1차 이관(이 때 IaaS MySQL에는 GTID 모드가 활성화 되어 있어야함), 2차이관으로 GCP Cloud SQL 외부 복제 기능을 사용합니다.(AWS의 rds_set_external_master 프로시져와 유사한기능, 단 GCP에서는 MySQL 내부에서 프로시져를 호출하는 방법이 아니라 curl 을 이용한 REST API 호출 방식이라 테스트 해보면 불편하고 다소 어색한 느낌이 드실겁니다.)   
+\[그림5\]는 PSA 망에 있는 GCP Cloud SQL 로 직접 이관이 불가능하기 때문에 PSA 망이 아닌 일반 서브넷에 GCP MySQL을 IaaS 형태로 구축 후 1차 이관(이 때 IaaS MySQL에는 GTID 모드가 활성화 되어 있어야함), 2차이관으로 GCP Cloud SQL 외부 복제 기능을 사용합니다.(AWS의 rds_set_external_master 프로시져와 유사한기능, 단 GCP에서는 MySQL 내부에서 프로시져를 호출하는 방법이 아니라 curl 을 이용한 REST API 호출 방식이라 테스트 해보면 불편하고 다소 어색한 느낌이 드실겁니다.)   
 
 위의 구조는 이관을 위해 AWS에는 DMS 를 생성하고 GCP에는 MySQL 리소스 생성과 외부복제 기능을 설정해야하는 작업이 발생하여 \[그림4\]에 비해 추가적인 작업들이 필요해 여러모로 불편한 방식이었습니다. 하지만 VPN 설정 작업을 하지 않아도 DBMS 이전은 가능한 방식이었습니다.
 
