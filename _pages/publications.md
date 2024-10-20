@@ -20,9 +20,9 @@ permalink: /publications/
 <span style="font-size:0.75em;">Niklas Muennighoff, Luca Soldaini, Dirk Groeneveld, Kyle Lo, **Jacob Morrison**, Sewon Min, Weijia Shi, Pete Walsh, Oyvind Tafjord, Nathan Lambert, Yuling Gu, Shane Arora, Akshita Bhagia, Dustin Schwenk, David Wadden, Alexander Wettig, Binyuan Hui, Tim Dettmers, Douwe Kiela, Ali Farhadi, Noah A. Smith, Pang Wei Koh, Amanpreet Singh, Hannaneh Hajishirzi</span><br>
 <span style="font-size:0.75em;">*under review* \[[pdf](https://arxiv.org/pdf/2409.02060)\]</span>
 
-* <a href="" style="text-decoration:none;color:navy">Merge to Learn: Efficiently Adding Skills to Language Models with Model Merging</a>              
+* <a href="https://arxiv.org/abs/2410.12937" style="text-decoration:none;color:navy">Merge to Learn: Efficiently Adding Skills to Language Models with Model Merging</a>              
 <span style="font-size:0.75em;">**Jacob Morrison**, Noah A. Smith, Hannaneh Hajishirzi, Pang Wei Koh, Jesse Dodge, Pradeep Dasigi</span><br>
-<span style="font-size:0.75em;">*Findings of EMNLP 2024*</span>
+<span style="font-size:0.75em;">*Findings of EMNLP 2024* \[[pdf](https://arxiv.org/pdf/2410.12937)\]</span>
 
 * <a href="https://arxiv.org/abs/2406.07835" style="text-decoration:none;color:navy">SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature</a>              
 <span style="font-size:0.75em;">David Wadden\*, Kejian Shi\*, **Jacob Morrison**, Aakanksha Naik, Shruti Singh, Nitzan Barzilay, Kyle Lo, Tom Hope, Luca Soldaini, Shannon Zejiang Shen, Doug Downey, Hannaneh Hajishirzi, Arman Cohan</span><br>
