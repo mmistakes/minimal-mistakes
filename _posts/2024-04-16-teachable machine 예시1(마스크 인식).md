@@ -83,10 +83,15 @@ from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy){
             const modelURL = URL + "model.json";
             const metadataURL = URL + "metadata.json";
 
+            console.log("카메라 권한 확인 완료");
+            console.log("모델 URL:", modelURL);
+            console.log("메타데이터 URL:", metadataURL);
+
             try {
                 model = await tmImage.load(modelURL, metadataURL);
             } catch (modelError) {
-                throw new Error('모델 로딩에 실패했습니다. 파일 경로를 확인해주세요.');
+                console.error('모델 로딩 에러:', modelError);
+                throw new Error(`모델 로딩에 실패했습니다. 파일 경로를 확인해주세요. 에러: ${modelError.message}`);
             }
 
             maxPredictions = model.getTotalClasses();
@@ -115,6 +120,8 @@ from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy){
 
             showStatus("실행 중...");
             window.requestAnimationFrame(loop);
+
+            console.log("모델 로딩 완료");
 
         } catch (error) {
             console.error('초기화 중 오류 발생:', error);
@@ -184,3 +191,4 @@ from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy){
         showStatus('시작 버튼을 눌러 카메라를 활성화하세요.');
     }
 </script>
+
