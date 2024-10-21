@@ -261,7 +261,7 @@ Last login: Mon Oct  7 01:41:19 2024 from 192.168.0.11
 
 <br>
 
-ansible을 활용하여 공개키 복사 작업을 자동화 시키고자 하고 해당 내용은 [다음 포스팅(클릭)](https://duhokim0901.github.io/mysql/ansible_mysql_PubkeyAuth_script/)을 통해 공유드리겠습니다. 감사합니다.
+ansible을 활용하여 공개키 복사 작업을 자동화 시키고자 하고 해당 내용은 [다음 포스팅(클릭)](https://duhokim0901.github.io/ansible/ansible_mysql_PubkeyAuth_script/)을 통해 공유드리겠습니다. 감사합니다.
 
 <br>
 
