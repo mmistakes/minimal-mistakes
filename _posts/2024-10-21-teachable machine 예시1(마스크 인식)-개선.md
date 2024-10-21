@@ -1,5 +1,5 @@
 ---
-title: "마스크 착용여부 확인 하기(디처블 머신)"
+title: "마스크 착용여부 확인 하기(디처블 머신, 코드 개선)"
 categories:
 #   - coding
  - Non-coding
@@ -17,7 +17,7 @@ last_modified_at: 2024-10-21T10:56:50-11:10
 
 from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy){: target="_blank"}
 
-## 방법
+## 과정
 1. Teachable 머신에서 딥러닝 모델 간단히 생성
 2. 생성된 모델을 다운로드
 3. github 블로그 post를 위해, 모델 업로드 및 MD파일를 통해 코딩 및 모델 로딩
