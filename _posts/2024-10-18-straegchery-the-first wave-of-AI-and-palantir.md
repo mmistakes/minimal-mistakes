@@ -27,12 +27,12 @@ last_modified_at: 2024-10-21T10:26:11-10:30
 _________________
 
 # Enterprise Philosophy and The First Wave of AI
+[원문](https://stratechery.com/2024/enterprise-philosophy-and-the-first-wave-of-ai/){: target="_blank"}
 
 
 ##### By Ben Thompson
 ##### Tuesday, September 24, 2024
 
-[원문](https://stratechery.com/2024/enterprise-philosophy-and-the-first-wave-of-ai/){: target="_blank"}
 
 
 This Article is available as a video essay on [YouTube](https://youtu.be/3cgjWHzFdj4?si=J7o0xEahi8W-k7qT){: target="_blank"}
