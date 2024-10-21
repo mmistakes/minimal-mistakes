@@ -9,8 +9,8 @@ tags:
 #permalink: mysql-architecture
 toc: true
 toc_sticky: true
-date: 2024-10-20
-last_modified_at: 2024-10-20
+date: 1999-10-20
+last_modified_at: 1999-10-20
 comments: true
 ---
 
