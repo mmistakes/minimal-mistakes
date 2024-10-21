@@ -121,8 +121,6 @@ from [테디노트 TeddyNote](https://youtu.be/SpiYDdVGgcs?si=dstwPqCq_DxmRtBy){
             showStatus("실행 중...");
             window.requestAnimationFrame(loop);
 
-            console.log("모델 로딩 완료");
-
         } catch (error) {
             console.error('초기화 중 오류 발생:', error);
             showStatus(error.message || '카메라 초기화 중 오류가 발생했습니다.', true);
