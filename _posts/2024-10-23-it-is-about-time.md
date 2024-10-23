@@ -20,7 +20,9 @@ There are things money can't buy: meaningful relationships, personal growth, ach
 
 What really strikes me is that this person would probably agree with everything I just wrote. They might even say these exact words. Yet their behavior tells a different story. It reveals an internal conflict - a gap between their stated beliefs and their actions.
 
-This made me wonder about my own inconsistencies. What beliefs do I hold that contradict my actions? It's always easier to spot these contradictions in others than in ourselves.
+This connects to something I wrote about before - [on being deeply authentic](https://blog.dannycastonguay.com/communication/on-being-deeply-authentic/). In that post, I explored how being unauthentic often means shallow-copying behaviors or holding beliefs that haven't truly become part of us. We might say the right things, but our actions tell a different story. True authenticity comes when we've deeply integrated our learnings and values into a consistent whole.
+
+This made me wonder about my own inconsistencies in the recent past. What beliefs do I hold that contradict my actions? It's always easier to spot these contradictions in others than in ourselves.
 
 Maybe that's what rapid iteration really means - getting faster at aligning our actions with our values, at prioritizing what truly matters. Because in the end, time is the most important dimension. It's the one you never get back.
 
