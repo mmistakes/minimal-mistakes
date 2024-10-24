@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Yeonbo_ra"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "Lilac"
 name                     : "Yeonbo_ra"
 description              : "Programming Something"
 url                      : "https://Yeonb0ra.github.io"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "연보라해"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "라일락처럼 연보라해"
+  location         : "Seoul, South Korea"
+  email            : "kby7576@sogang.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
