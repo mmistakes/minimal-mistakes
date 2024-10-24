@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Yeonbo_ra"
+title                    : "bora.log"
 title_separator          : "|"
 subtitle                 : "Lilac"
 name                     : "Yeonbo_ra"
