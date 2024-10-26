@@ -49,7 +49,7 @@ comments: true
 #### 1. GCP Cloud SQL 생성
 ---
 
-먼저 이관 대상인 Cloud SQL을 생성하였습니다. Cloud SQL Enterprise 를 생성하기로 하였습니다. 콘솔로 인스턴스를 생성할 수도 있긴하지만 전체 플랫폼을 대거 이관해야하고, GCP 에 CloudSQL 파라미터 그룹같은 개념이 없기 때문에 변경해야할 설정 값을 인스턴스 마다 모두 입력해야 하기 때문에 코드로 작성하여 관리하는 것이 생산적이라 판단하였습니다. 제가 근무하고 있는 회사는 클라우드 리소스는 모두 테라폼으로 생성하고 있기 때문에 규칙에 맞추어 테라폼으로 생성하였습니다. [공식 테라폼 생성 가이드](https://github.com/gruntwork-io/terraform-google-sql/blob/v0.6.0/modules/cloud-sql/main.tf)가 있으니 참고하시면 좋을 것 같습니다.
+먼저 이관 대상인 Cloud SQL을 생성하였습니다. 콘솔로 인스턴스를 생성할 수도 있긴하지만 전체 플랫폼을 대거 이관해야하고, GCP 에 CloudSQL 파라미터 그룹같은 개념이 없기 때문에 변경해야할 설정 값을 인스턴스 마다 모두 입력해야 해서 코드로 작성하여 관리하는 것이 생산적이라 판단하였습니다. 제가 근무하고 있는 회사는 클라우드 리소스는 모두 테라폼으로 생성하고 있기 때문에 규칙에 맞추어 테라폼으로 생성하였습니다. [공식 테라폼 생성 가이드](https://github.com/gruntwork-io/terraform-google-sql/blob/v0.6.0/modules/cloud-sql/main.tf)가 있으니 참고하시면 좋을 것 같습니다.
 
 ※ 테라폼 cloud sql template 디렉토리 구조
 ```
@@ -61,10 +61,7 @@ comments: true
     │   └── mysql-replica
     │       ├── sql-database-replica.tf    
     │       └── variables.tf    
-    └── essential
-        ├── output.tf
-        ├── resource.tf
-        └── variables.tf    
+ 
 ```
 
 <br>
@@ -237,6 +234,7 @@ resource "google_sql_user" "db_users" {
 </div>
 </details>
 
+<br>
 
 다음은 레플리카 인스턴스를 생성하기 위한 템플릿 입니다.   
 {% include codeHeader.html name="sql-database-replica.tf" %}
