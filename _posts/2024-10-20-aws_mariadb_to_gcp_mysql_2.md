@@ -153,7 +153,7 @@ resource "google_sql_user" "db_users" {
 <details><summary>variables.tf</summary>
 <div markdown="1">  
 {% include codeHeader.html name="variables.tf" %}
-```bash
+```
 
 locals {
     is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
@@ -233,7 +233,7 @@ resource "google_sql_user" "db_users" {
 ```
 </div>
 </details>
-
+  
 <br>
 
 다음은 레플리카 인스턴스를 생성하기 위한 템플릿 입니다.   
@@ -311,13 +311,155 @@ resource "google_sql_database_instance" "read_replica" {
 }
 ```
 
+<br>
 
 아래는 위에서 정의한 레플리카 인스턴스의 기본 변수값을 설정하기 위한 파일입니다.
-{% include codeHeader.html name="sql-database-replica.tf" %}
-```
 
+<details><summary>variables.tf</summary>
+<div markdown="1">  
+{% include codeHeader.html name="variables.tf" %}
 ```
+variable "project_name" {
+    type = string
+}
 
+variable "region_name" {
+  type = string
+  default = "asia-northeast3"
+}
+
+#variable "database_instance_name" {
+#  type = string
+#}
+
+variable "database_version" {
+  type = string
+}
+
+variable "instance_spec_size" {
+  type = string
+}
+
+variable "disk_size_gb" {
+  type = string
+}
+
+variable "enable_public_internet_access" {
+  type = bool
+  default = false
+}
+
+variable "private_network" {
+  type = string
+}
+
+variable "tag_environment" {
+  type = string
+}
+
+variable "tag_application" {
+  type = string
+}
+
+variable "tag_category" {
+  type = string
+}
+
+
+variable "master_user_host" {
+  type = string
+  default = null
+}
+
+
+variable "database_flags" {
+  description = "List of Cloud SQL flags that are applied to the database server. See [more details](https://cloud.google.com/sql/docs/mysql/flags)"
+  type = list(object({
+    name  = string
+    value = string
+  }))
+  default = []
+}
+
+variable "availability_type" {
+  description = "The availability type for the master instance. Can be either `REGIONAL` or `null`."
+  type        = string
+  default     = "REGIONAL"
+}
+
+
+variable "backup_configuration" {
+  description = "The backup_configuration settings subblock for the database setings"
+  type = object({
+    binary_log_enabled             = bool
+    enabled                        = bool
+    start_time                     = string
+    location                       = string
+    transaction_log_retention_days = string
+    retained_backups               = number
+    retention_unit                 = string
+  })
+  default = {
+    binary_log_enabled             = false
+    enabled                        = false
+    start_time                     = null
+    location                       = null
+    transaction_log_retention_days = null
+    retained_backups               = null
+    retention_unit                 = null
+  }
+}
+
+#variable "num_read_replicas" {
+#  description = "The number of read replicas to create. Cloud SQL will replicate all data from the master to these replicas, which you can use to horizontally scale read traffic."
+#  type        = number
+#  default     = 0
+#}
+
+variable "read_replica_zones" {
+  description = "A list of compute zones where read replicas should be created. List size should match 'num_read_replicas'"
+  type        = list(string)
+  default     = []
+  # Example:
+  #  default = ["us-central1-b", "us-central1-c"]
+}
+
+
+variable "replica_set_name" {
+  description = "The name of the database instance. Note, after a name is used, it cannot be reused for up to one week. Use lowercase letters, numbers, and hyphens. Start with a letter."
+  type        = string
+}
+
+
+#variable "custom_labels" {
+#  description = "A map of custom labels to apply to the instance. The key is the label name and the value is the label value."
+#  type        = map(string)
+#  default     = {}
+#}
+
+
+variable "resource_timeout" {
+  description = "Timeout for creating, updating and deleting database instances. Valid units of time are s, m, h."
+  type        = string
+  default     = "60m"
+}
+
+
+variable "deletion_protection" {
+  description = "Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply command that deletes the instance will fail."
+  type        = bool
+  default     = "true"
+}
+
+
+variable "replica_names" {
+  description = "replica list"
+  type        = list(string)
+  # example : ["Paul_Dirac", "Erwin_Schrodinger", "Wolfgang_Pauli"]
+}
+```
+</div>
+</details>
 
 
 <br>
