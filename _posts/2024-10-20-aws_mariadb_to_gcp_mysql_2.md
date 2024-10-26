@@ -71,8 +71,10 @@ comments: true
 <br>
 
 아래는 프라이머리 인스턴스를 생성하기 위한 템플릿입니다.   
+<details><summary>sql-database.tf</summary>
+<div markdown="1">  
 {% include codeHeader.html name="sql-database.tf" %}
-```bash
+```tf
 
 locals {
     is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
@@ -150,6 +152,8 @@ resource "google_sql_user" "db_users" {
     password = var.db_user_password
 }
 ```
+</div>
+</details>
 
 <br>
 
@@ -157,7 +161,7 @@ resource "google_sql_user" "db_users" {
 <details><summary>variables.tf</summary>
 <div markdown="1">  
 {% include codeHeader.html name="variables.tf" %}
-```
+```tf
 
 locals {
     is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
@@ -241,8 +245,11 @@ resource "google_sql_user" "db_users" {
 <br>
 
 다음은 레플리카 인스턴스를 생성하기 위한 템플릿 입니다.   
+
+<details><summary>sql-database-replica.tf</summary>
+<div markdown="1">
 {% include codeHeader.html name="sql-database-replica.tf" %}
-```
+```tf
 locals {
     is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
     is_mysql    = replace(var.database_version, "MYSQL", "") != var.database_version
@@ -314,6 +321,9 @@ resource "google_sql_database_instance" "read_replica" {
 
 }
 ```
+
+</div>
+</details>
 
 <br>
 
@@ -468,7 +478,7 @@ variable "replica_names" {
 
 <br>
 
-위에서 정의한 템플릿을 기반으로 프라이머리 인스턴스를 생성하기 위한 모듈 정의입니다.
+위에서 정의한 템플릿을 기반으로 프라이머리 인스턴스를 생성하기 위한 모듈 정의입니다. 프라이머리 인스턴스를 생성할 때는 아래의 tf 파일을 정의해야합니다.
 
 {% include codeHeader.html name="sql-database.tf" %}
 ```
@@ -510,8 +520,56 @@ module "prd-zzim-mysql-101" {
 
 ```
 
+<br>
 
-<br/>
+프라이머리 구성이 완료되면 레플리카를 구성할 차례인데 아래의 tf파일을 이용하면 됩니다.
+
+<details><summary>tf</summary>
+<div markdown="1">
+
+{% include codeHeader.html name="replica.tf" %}
+```tf
+module "prd-zzim-mysql-101" {
+    source = "../../../../gcp-template/cloud-sql/mysql"
+    project_name = "${module.essential.project_name}"
+    region_name = "${module.essential.region_name}"
+
+    # instance
+    replica_set_name = "prd-zzim-mysql"
+    database_version ="MYSQL_8_0"
+
+    # db-custom-[vcore]-[mem(MB)]
+    instance_spec_size = "db-custom-16-106496" #db-n1-highmem-16 #https://cloud.google.com/sql/docs/mysql/create-instance#machine-types
+    disk_size_gb = "2048"
+    enable_public_internet_access = false
+    private_network = "service-prd-vpc"
+
+    # instance lable
+    tag_environment     = "${module.essential.tag_environment}"
+    tag_application     = "${module.essential.tag_application}"
+    tag_category        = "${module.essential.tag_category}"
+
+    # db
+    database_name = "dba"
+    
+    # db user
+    db_user_name = "wavve"
+    db_user_password = "ew(0dv7}xoa>d}"
+
+    # database_flags
+    database_flags = [
+      {
+        name  = "log_bin_trust_function_creators"
+        value = "on"
+      },
+    ]
+}
+```
+
+</div>
+</details>
+
+
 
 #### 2. 방화벽 Rule 허용 작업
 ---
