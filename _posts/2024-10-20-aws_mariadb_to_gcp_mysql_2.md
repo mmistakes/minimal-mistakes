@@ -539,9 +539,6 @@ terraform apply
 
 프라이머리 구성이 완료되면 레플리카를 구성할 차례인데 아래의 tf파일을 이용하면 됩니다.
 
-<details><summary>replica.tf</summary>
-<div markdown="1">
-
 {% include codeHeader.html name="replica.tf" %}
 ```tf
 
@@ -585,9 +582,6 @@ module "replica" {
     ]
 }
 ```
-
-</div>
-</details>
 
 <br>
 
