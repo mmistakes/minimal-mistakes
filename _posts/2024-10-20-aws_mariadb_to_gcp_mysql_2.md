@@ -54,6 +54,7 @@ comments: true
 ※ 테라폼 cloud sql template 디렉토리 구조
 ```
 └── gcp-template
+    ├── credential.json
     ├── cloud-sql
     │   ├── mysql
     │   │   ├── sql-database.tf
@@ -63,9 +64,9 @@ comments: true
     │       └── variables.tf    
     ├── primary
     │   └── primary.tf
-    ├── replica
-    │   └── replica.tf
-    └── main.tf
+    └── replica
+        └── replica.tf
+
 ```
 
 <br>
@@ -241,7 +242,7 @@ resource "google_sql_user" "db_users" {
 ```
 </div>
 </details>
-  
+
 <br>
 
 다음은 레플리카 인스턴스를 생성하기 위한 템플릿 입니다.   
@@ -482,6 +483,11 @@ variable "replica_names" {
 
 {% include codeHeader.html name="sql-database.tf" %}
 ```tf
+
+provider "google" {
+    credentials = "${file("../../credential.json")}"
+}
+
 module "prd-zzim-mysql-101" {
     source = "../../gcp-template/cloud-sql/mysql"
     project_name = "프로젝트명"
@@ -522,13 +528,27 @@ module "prd-zzim-mysql-101" {
 
 <br>
 
+primary 디렉토리에 접근하여 아래의 명령어를 수행하면 프라이머리 인스턴스가 생성됩니다.
+
+```bash
+terraform init
+terraform apply
+```
+
+<br>
+
 프라이머리 구성이 완료되면 레플리카를 구성할 차례인데 아래의 tf파일을 이용하면 됩니다.
 
-<details><summary>tf</summary>
+<details><summary>replica.tf</summary>
 <div markdown="1">
 
 {% include codeHeader.html name="replica.tf" %}
 ```tf
+
+provider "google" {
+    credentials = "${file("../../credential.json")}"
+}
+
 module "replica" {
     source = "    source = "../../gcp-template/cloud-sql/mysql-replica"
     project_name = "프로젝트명"
@@ -569,7 +589,16 @@ module "replica" {
 </div>
 </details>
 
+<br>
 
+Replica 디렉토리에 접근하여 아래의 명령어를 수행하면 레플리카 인스턴스가 생성됩니다.
+
+```bash
+terraform init
+terraform apply
+```
+
+<br>
 
 #### 2. 방화벽 Rule 허용 작업
 ---
