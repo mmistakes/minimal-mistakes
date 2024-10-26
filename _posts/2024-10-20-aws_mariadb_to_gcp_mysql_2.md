@@ -529,34 +529,34 @@ module "prd-zzim-mysql-101" {
 
 {% include codeHeader.html name="replica.tf" %}
 ```tf
-module "prd-zzim-mysql-101" {
-    source = "../../../../gcp-template/cloud-sql/mysql"
-    project_name = "${module.essential.project_name}"
-    region_name = "${module.essential.region_name}"
+module "replica" {
+    source = "    source = "../../gcp-template/cloud-sql/mysql-replica"
+    project_name = "프로젝트명"
+    region_name = "리전명"
+    replica_names = ["프라이머리명-repl-01", "프라이머리명-repl-02"]
 
     # instance
-    replica_set_name = "prd-zzim-mysql"
-    database_version ="MYSQL_8_0"
+    replica_set_name = "프라이머리명" #자동으로 붙었던 _master 명칭은 빼야함
+    database_version = "MYSQL_8_0"
 
     # db-custom-[vcore]-[mem(MB)]
-    instance_spec_size = "db-custom-16-106496" #db-n1-highmem-16 #https://cloud.google.com/sql/docs/mysql/create-instance#machine-types
+    instance_spec_size = "db-n1-highmem-16" #db-n1-highmem-16 #https://cloud.google.com/sql/docs/mysql/create-instance#machine-types
+    availability_type = "REGIONAL"
     disk_size_gb = "2048"
-    enable_public_internet_access = false
-    private_network = "service-prd-vpc"
+    enable_public_internet_access = false  #공인ip제거
+    private_network = "VPC명"
 
     # instance lable
-    tag_environment     = "${module.essential.tag_environment}"
-    tag_application     = "${module.essential.tag_application}"
-    tag_category        = "${module.essential.tag_category}"
+    # 인스턴스에 원하는 태그를 작성하고 싶다면 사용합니다.
+    tag_environment     = "태그값" 
 
-    # db
-    database_name = "dba"
-    
-    # db user
-    db_user_name = "wavve"
-    db_user_password = "ew(0dv7}xoa>d}"
+
+    #location_preference
+    read_replica_zones  = ["asia-northeast3-b", "asia-northeast3-a"]
+
 
     # database_flags
+    # 원하는 파라미터 설정값을 기재한다. 파라미터 그룹으로 관리되지 않으니 모든 인스턴스마다 파라미터값을 정의해주어야한다.    
     database_flags = [
       {
         name  = "log_bin_trust_function_creators"
