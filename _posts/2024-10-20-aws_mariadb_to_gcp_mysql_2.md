@@ -3,7 +3,7 @@ title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전(2)"
 excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이전하는 내용을 정리합니다."
 #layout: archive
 categories:
- - Gcpa
+ - Gcp
 tags:
   - [aws, rds, gcp, cloudsql, mysql, mariadb]
 #permalink: mysql-architecture
@@ -30,10 +30,9 @@ comments: true
 | 4    | 사용자 계정 및 권한 생성
 | 5    | 데이터베이스 덤프 / 리스토어 (--no-data, --routines, --triggers, --events)|
 | 6    | DMS 실행                                                       |
-| 7    | 보조인덱스 생성 및 제약 사항 조치                                |
-| 8    | Cloud DNS 변환                                                 |
-| 9    | 컷오버                                                         |
-| 10    | AWS RDS 정지                                                   |
+| 7    | Cloud DNS 변환                                                 |
+| 8    | 컷오버                                                         |
+| 9    | AWS RDS 정지                                                   |
 
 <br>
 
@@ -49,6 +48,282 @@ comments: true
 
 #### 1. GCP Cloud SQL 생성
 ---
+
+먼저 이관 대상인 Cloud SQL을 생성하였습니다. Cloud SQL Enterprise 를 생성하기로 하였습니다. 콘솔로 인스턴스를 생성할 수도 있긴하지만 전체 플랫폼을 대거 이관해야하고, GCP 에 CloudSQL 파라미터 그룹같은 개념이 없기 때문에 변경해야할 설정 값을 인스턴스 마다 모두 입력해야 하기 때문에 코드로 작성하여 관리하는 것이 생산적이라 판단하였습니다. 제가 근무하고 있는 회사는 클라우드 리소스는 모두 테라폼으로 생성하고 있기 때문에 규칙에 맞추어 테라폼으로 생성하였습니다. [공식 테라폼 생성 가이드](https://github.com/gruntwork-io/terraform-google-sql/blob/v0.6.0/modules/cloud-sql/main.tf)가 있으니 참고하시면 좋을 것 같습니다.
+
+※ 테라폼 cloud sql template 디렉토리 구조
+```
+└── gcp-template
+    ├── cloud-sql
+    │   ├── mysql
+    │   │   ├── sql-database.tf
+    │   │   └── variables.tf    
+    │   └── mysql-replica
+    │       ├── sql-database-replica.tf    
+    │       └── variables.tf    
+    └── essential
+        ├── output.tf
+        ├── resource.tf
+        └── variables.tf    
+```
+
+<br>
+
+아래는 프라이머리 인스턴스를 생성하기 위한 템플릿입니다.   
+{% include codeHeader.html name="sql-database.tf" %}
+```bash
+
+locals {
+    is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
+    is_mysql    = replace(var.database_version, "MYSQL", "") != var.database_version
+
+    // HA method using REGIONAL availability_type requires binary logs to be enabled
+    binary_log_enabled = var.availability_type == "REGIONAL" ? true : lookup(var.backup_configuration, "binary_log_enabled", null)
+    backups_enabled    = var.availability_type == "REGIONAL" ? true : lookup(var.backup_configuration, "enabled", null)
+}
+
+resource "google_sql_database_instance" "db_instance" {
+
+    project = var.project_name
+    region = var.region_name
+
+    name = "${var.replica_set_name}-master"
+    database_version = var.database_version
+    
+    settings {
+        tier = var.instance_spec_size
+        availability_type = var.availability_type
+
+        dynamic "backup_configuration" {
+        for_each = [var.backup_configuration]
+        content {
+            binary_log_enabled             = local.binary_log_enabled
+            enabled                        = local.backups_enabled
+            start_time                     = lookup(backup_configuration.value, "start_time", null)
+            location                       = lookup(backup_configuration.value, "location", null)
+            transaction_log_retention_days = lookup(backup_configuration.value, "transaction_log_retention_days", null)
+        }
+        }
+
+        disk_type = "PD_SSD"
+        disk_size = var.disk_size_gb
+        
+        ip_configuration {
+            ipv4_enabled = var.enable_public_internet_access
+            private_network = "projects/${var.project_name}/global/networks/${var.private_network}"
+            #private_network = var.private_network
+        }
+
+        user_labels = {
+            environmrnt = var.tag_environment
+            application = var.tag_application
+            category = var.tag_category
+        }
+
+        dynamic "database_flags" {
+            for_each = var.database_flags
+            content {
+                name  = lookup(database_flags.value, "name", null)
+                value = lookup(database_flags.value, "value", null)
+            }
+        }
+    }
+}
+
+
+resource "google_sql_database" "db" {
+    depends_on = [ google_sql_database_instance.db_instance ]    
+    name = var.database_name
+    instance = google_sql_database_instance.db_instance.name
+    project = var.project_name
+    charset   = var.db_charset
+    collation = var.db_collation
+}
+
+resource "google_sql_user" "db_users" {
+    depends_on = [google_sql_database.db ]
+    name     = var.db_user_name
+    instance = google_sql_database_instance.db_instance.name
+    project = var.project_name
+    host     = local.is_postgres ? null : var.master_user_host
+    password = var.db_user_password
+}
+```
+
+<br>
+
+아래의 variables.tf 파일은 위에서 정의한 프라이머리 인스턴스의 기본 변수값들을 설정하기 위한 파일입니다. 
+<details><summary>variables.tf</summary>
+<div markdown="1">  
+{% include codeHeader.html name="variables.tf" %}
+```bash
+
+locals {
+    is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
+    is_mysql    = replace(var.database_version, "MYSQL", "") != var.database_version
+
+    // HA method using REGIONAL availability_type requires binary logs to be enabled
+    binary_log_enabled = var.availability_type == "REGIONAL" ? true : lookup(var.backup_configuration, "binary_log_enabled", null)
+    backups_enabled    = var.availability_type == "REGIONAL" ? true : lookup(var.backup_configuration, "enabled", null)
+}
+
+resource "google_sql_database_instance" "db_instance" {
+
+    project = var.project_name
+    region = var.region_name
+
+    name = "${var.replica_set_name}-master"
+    database_version = var.database_version
+    
+    settings {
+        tier = var.instance_spec_size
+        availability_type = var.availability_type
+
+        dynamic "backup_configuration" {
+        for_each = [var.backup_configuration]
+        content {
+            binary_log_enabled             = local.binary_log_enabled
+            enabled                        = local.backups_enabled
+            start_time                     = lookup(backup_configuration.value, "start_time", null)
+            location                       = lookup(backup_configuration.value, "location", null)
+            transaction_log_retention_days = lookup(backup_configuration.value, "transaction_log_retention_days", null)
+        }
+        }
+
+        disk_type = "PD_SSD"
+        disk_size = var.disk_size_gb
+        
+        ip_configuration {
+            ipv4_enabled = var.enable_public_internet_access
+            private_network = "projects/${var.project_name}/global/networks/${var.private_network}"
+            #private_network = var.private_network
+        }
+
+        user_labels = {
+            environmrnt = var.tag_environment
+            application = var.tag_application
+            category = var.tag_category
+        }
+
+        dynamic "database_flags" {
+            for_each = var.database_flags
+            content {
+                name  = lookup(database_flags.value, "name", null)
+                value = lookup(database_flags.value, "value", null)
+            }
+        }
+    }
+}
+
+
+resource "google_sql_database" "db" {
+    depends_on = [ google_sql_database_instance.db_instance ]    
+    name = var.database_name
+    instance = google_sql_database_instance.db_instance.name
+    project = var.project_name
+    charset   = var.db_charset
+    collation = var.db_collation
+}
+
+resource "google_sql_user" "db_users" {
+    depends_on = [google_sql_database.db ]
+    name     = var.db_user_name
+    instance = google_sql_database_instance.db_instance.name
+    project = var.project_name
+    host     = local.is_postgres ? null : var.master_user_host
+    password = var.db_user_password
+}
+```
+</div>
+</details>
+
+
+다음은 레플리카 인스턴스를 생성하기 위한 템플릿 입니다.   
+{% include codeHeader.html name="sql-database-replica.tf" %}
+```
+locals {
+    is_postgres = replace(var.database_version, "POSTGRES", "") != var.database_version
+    is_mysql    = replace(var.database_version, "MYSQL", "") != var.database_version
+
+    // HA method using REGIONAL availability_type requires binary logs to be enabled
+    binary_log_enabled = var.availability_type == "REGIONAL" ? true : lookup(var.backup_configuration, "binary_log_enabled", null)
+    backups_enabled    = var.availability_type == "REGIONAL" ? true : lookup(var.backup_configuration, "enabled", null)
+}
+
+resource "google_sql_database_instance" "read_replica" {
+  count = length(var.replica_names)
+
+  name             = var.replica_names[count.index]
+  project          = var.project_name
+  region           = var.region_name
+  database_version = var.database_version
+
+  # The name of the instance that will act as the master in the replication setup.
+  master_instance_name = "${var.replica_set_name}-master"
+
+  # Whether or not to allow Terraform to destroy the instance.
+  deletion_protection = var.deletion_protection
+
+  replica_configuration {
+    # Specifies that the replica is not the failover target.
+    failover_target = false
+  }
+
+  settings {
+    tier            = var.instance_spec_size
+    #disk_autoresize = var.disk_autoresize
+    availability_type = var.availability_type
+
+    ip_configuration {
+      #dynamic "authorized_networks" {
+      #  for_each = var.authorized_networks
+      #  content {
+      #    name  = authorized_networks.value.name
+      #    value = authorized_networks.value.value
+      #  }
+      #}
+
+      ipv4_enabled    = var.enable_public_internet_access
+      private_network = "projects/${var.project_name}/global/networks/${var.private_network}"
+      #require_ssl     = var.require_ssl
+    }
+
+    location_preference {
+      zone = element(var.read_replica_zones, count.index)
+    }
+
+    disk_size = var.disk_size_gb
+    disk_type = "PD_SSD"
+
+    dynamic "database_flags" {
+      for_each = var.database_flags
+      content {
+        name  = lookup(database_flags.value, "name", null)
+        value = lookup(database_flags.value, "value", null)
+      }
+    }
+
+    user_labels = {
+            environmrnt = var.tag_environment
+            application = var.tag_application
+            category = var.tag_category
+    }
+  }
+
+}
+```
+
+
+아래는 위에서 정의한 레플리카 인스턴스의 기본 변수값을 설정하기 위한 파일입니다.
+{% include codeHeader.html name="sql-database-replica.tf" %}
+```
+
+```
+
+
+
+<br>
+
 
 
 <br/>
