@@ -332,7 +332,7 @@ resource "google_sql_database_instance" "read_replica" {
 <details><summary>variables.tf</summary>
 <div markdown="1">  
 {% include codeHeader.html name="variables.tf" %}
-```
+```tf
 variable "project_name" {
     type = string
 }
@@ -481,7 +481,7 @@ variable "replica_names" {
 위에서 정의한 템플릿을 기반으로 프라이머리 인스턴스를 생성하기 위한 모듈 정의입니다. 프라이머리 인스턴스를 생성할 때는 아래의 tf 파일을 정의해야합니다.
 
 {% include codeHeader.html name="sql-database.tf" %}
-```
+```tf
 module "prd-zzim-mysql-101" {
     source = "../../gcp-template/cloud-sql/mysql"
     project_name = "프로젝트명"
