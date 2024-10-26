@@ -61,7 +61,11 @@ comments: true
     │   └── mysql-replica
     │       ├── sql-database-replica.tf    
     │       └── variables.tf    
- 
+    ├── primary
+    │   └── primary.tf
+    ├── replica
+    │   └── replica.tf
+    └── main.tf
 ```
 
 <br>
@@ -464,6 +468,47 @@ variable "replica_names" {
 
 <br>
 
+위에서 정의한 템플릿을 기반으로 프라이머리 인스턴스를 생성하기 위한 모듈 정의입니다.
+
+{% include codeHeader.html name="sql-database.tf" %}
+```
+module "prd-zzim-mysql-101" {
+    source = "../../gcp-template/cloud-sql/mysql"
+    project_name = "프로젝트명"
+    region_name = "리전명"
+
+    # instance
+    replica_set_name = "인스턴스명" # "인스턴스명_master" 라는 명칭으로 생성
+    database_version ="MYSQL_8_0"
+
+    # db-custom-[vcore]-[mem(MB)]
+    instance_spec_size = "db-n1-highmem-16" #db-n1-highmem-16 #https://cloud.google.com/sql/docs/mysql/create-instance#machine-types
+    disk_size_gb = "2048"
+    enable_public_internet_access = false #공인ip제거
+    private_network = "VPC명"
+
+    # instance lable
+    # 인스턴스에 원하는 태그를 작성하고 싶다면 사용합니다.
+    tag_environment     = "태그값" 
+
+    # db
+    database_name = "dba"
+    
+    # db user
+    db_user_name = "관리자계정"
+    db_user_password = "관리자계정비밀번호"
+
+    # database_flags
+    # 원하는 파라미터 설정값을 기재한다. 파라미터 그룹으로 관리되지 않으니 모든 인스턴스마다 파라미터값을 정의해주어야한다.
+    database_flags = [
+      {
+        name  = "log_bin_trust_function_creators"
+        value = "on"
+      },
+    ]
+}
+
+```
 
 
 <br/>
