@@ -69,7 +69,8 @@ Console.WriteLine("{0}", c.age);
 
 ```csharp
 int n = 5;
-object obj
+object obj = n;
+
 int t = (int)obj;
 Console.WriteLine(t);
 ```
