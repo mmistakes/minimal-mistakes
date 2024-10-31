@@ -234,3 +234,53 @@ using (StreamReader sr = new StreamReader("test.txt"))
     Console.WriteLine($"{val}, {pi}, {str}");
 }
 ```
+
+### 14. Serialize 와 NonSerialize
+
+- NonSerialized 속성을 사용하면 직렬화 대상에서 제외
+
+```csharp
+[Serializable]
+struct Data
+{
+    public int a;
+    public float b;
+
+    [NonSerialized]
+    public string c;
+
+    public Data(int a, float b, string c)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+}
+
+List<Data> dataList = new List<Data>
+{
+    new Data(7, 3.14f, "test1"),
+    new Data(12, 0.5f, "test2")
+}
+
+using (FileStream fs = new FileStream("test.dat", FileMode.Create))
+{
+    BinaryFormatter bf = new BinaryFormatter();
+    bf.Serialize(fs, dataList);
+}
+
+List<Data> resData;
+using (FileStream fs = new FileStream("test.dat", FileMode.Open))
+{
+    BinaryFormatter bf = new BinaryFormatter();
+    resData = (List<Data>)bf.Deserialize(fs);
+}
+
+foreach (var item in resData)
+    Console.WriteLine($"{item.a}, {item.b}");
+```
+
+### 15. List 와 ArrayList
+
+- List : 단일 데이터형만 쓸 수 있다.
+- ArrayList : 다양한 데이터형을 쓸 수 있지만 그만큼 성능이 느리다. 그래서 거의 안 씀.
