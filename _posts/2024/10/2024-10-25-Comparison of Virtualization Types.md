@@ -3,7 +3,7 @@ layout: single
 title: 가상화 종류 비교(Type 1, Type 2, Container)
 categories: Infra
 tags: [Virtualization, Hypervisor, Container]
-toc: false
+toc: True
 ---
 ### Type 비교
 Type 1 하이퍼바이저, Type 2 하이퍼바이저, 컨테이너의 차이를 설명하는 도표
