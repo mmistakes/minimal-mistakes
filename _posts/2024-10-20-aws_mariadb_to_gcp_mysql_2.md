@@ -598,8 +598,8 @@ terraform apply
 
 백엔드 서버 또는 EKS, GKE 와 GCP SQL 간의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWALL Rule 을 생성할 수 있는 [콘솔 화면](https://console.cloud.google.com/net-security/firewall-manager/firewall-policies/list) 에 접속하여 정책을 넣어주면 됩니다.
 
-![CREATE FIREWALL RULE](https://github.com/user-attachments/assets/984fb49b-9018-4f8c-a2a2-3612d9a434e0)
-[그림1] 방화벽 허용 정책 생성
+![CREATE FIREWALL RULE](https://github.com/user-attachments/assets/984fb49b-9018-4f8c-a2a2-3612d9a434e0)    
+[그림1] 방화벽 허용 정책 생성   
 
 <br>
 
@@ -607,8 +607,8 @@ terraform apply
 
 <br>
 
-![FIREWALL 생성 메뉴](https://github.com/user-attachments/assets/b7af1ef4-3c04-4594-b42a-774112b77644)
-[그림2] 방화벽 정책 생성 메뉴
+![FIREWALL 생성 메뉴](https://github.com/user-attachments/assets/b7af1ef4-3c04-4594-b42a-774112b77644)   
+[그림2] 방화벽 정책 생성 메뉴   
 
 <br>
 
@@ -616,8 +616,8 @@ terraform apply
 
 <br>
 
-![FIREWALL RULE 설정 결과](https://github.com/user-attachments/assets/5fb64e3e-5fec-4b0f-ad3b-2105ec641cb2)
-[그림3] 방화벽 정책 설정 결과
+![FIREWALL RULE 설정 결과](https://github.com/user-attachments/assets/5fb64e3e-5fec-4b0f-ad3b-2105ec641cb2)   
+[그림3] 방화벽 정책 설정 결과   
 
 설정 이후에는 \[그림3\]과 같이 설정한 정보를 확인할 수 있습니다.
 
@@ -646,6 +646,7 @@ SHOW GRANTS FOR `계정명`; -- 사용자 계정의 권한 백업
 
 1) 사용자 계정 생성 구문과 권한 차이
 
+{% include codeHeader.html name="사용자 백업 결과 일부" %}
 ```sql
 MariaDB 10.6 : CREATE USER `cooperation`@`%` IDENTIFIED BY PASSWORD '*08xxxxxxxxxxxxxxx9F6181';
 MySQL 8.0 : CREATE USER `cooperation`@`%` IDENTIFIED WITH 'mysql_native_password' AS '*08xxxxxxxxxxxxxxx9F6181';
@@ -657,6 +658,7 @@ MySQL 8.0 : CREATE USER `cooperation`@`%` IDENTIFIED WITH 'mysql_native_password
 
 <br>
 
+{% include codeHeader.html name="사용자 백업 결과 변환" %}
 ```bash
 echo `mysql -h${HOST} -u${USER} -p"${PASSWORD}" -N -B --execute="${QUERY}"`";" >> result_show_create_user.sql"
 sed -i -e 's/BY PASSWORD/WITH '"'"'mysql_native_password'"'"' AS/g' result_show_create_user.sql"
@@ -666,11 +668,14 @@ sed -i -e 's/BY PASSWORD/WITH '"'"'mysql_native_password'"'"' AS/g' result_show_
 
 권한 같은 경우도 지원하지 않는 권한이 있습니다. BINLOG MONITOR, SLAVE MONITOR 라는 권한은 MariaDB에만 있는 권한입니다. 대체 가능한 MySQL의 REPLICATION CLIENT 로 변경해야합니다. 추가로 SHOW GRANTS FOR 구문 실행 시 MariaDB 의 경우 IDENTIFIED BY PASSWORD ~ 문구가 생성되는데 해당 내용은 삭제 시켜줍니다.
 
+{% include codeHeader.html name="사용자 권한 백업 결과 일부" %}
 ```sql
 GRANT USAGE ON *.* TO `cooperation`@`%` IDENTIFIED BY PASSWORD '*08xxxxxxxxxxxxxxx9F6181';
 GRANT BINLOG MONITOR, SLAVE MONITOR ON *.* TO `adm`@`%` ;
 ```
+<br>
 
+{% include codeHeader.html name="사용자 백업 결과 변환" %}
 ```bash
 sed -i -e 's/BINLOG MONITOR/REPLICATION CLIENT/g' result_show_grants.sql
 sed -i -e 's/SLAVE MONITOR/REPLICATION CLIENT/g' result_show_grants.sql
