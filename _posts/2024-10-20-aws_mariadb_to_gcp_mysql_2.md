@@ -684,9 +684,17 @@ sed -i -e 's/IDENTIFIED BY PASSWORD.*/;/g' result_show_grants.sql
 
 <br/>
 
-#### 5. 데이터베이스 덤프 / 리스토어 (--no-data, --routines, --triggers, --events)
+#### 5. 데이터베이스 덤프 / 리스토어 (--no-data, --routines)
 ---
 
+소스 데이터베이스의 형상을 타겟 MySQL에 복원하기 위해서 아래와 같은 명령어를 수행합니다. --no-data 옵션을 통해 스키마 틀만 가져올 것이고 routines 옵션으로 프로시져까지 반영하도록 합니다. DMS를 이용하여 이전할 경우 DMS에 의한 변경 작업과 트리거와 이벤트의 변경 작업이 충돌되기 때문에 이전이 완료된 후에 별도로 생성해주어야 합니다. 아래의 명령어를 수행하여 덤프를 받은 뒤 타겟 데이터베이스에 리스토어 합니다.
+
+<br>
+
+```sql
+/usr/bin/mysqldump -h 'AWS RDS 주소' -u'관리자계정' -p'관리자패스워드' --no-data --databases db1 db2 db3 db4 --routines > backup.sql
+mysql -h 'GCP MySQL 주소' -u'관리자계정' -p'관리자패스워드' < backup.sql
+```
 
 <br/>
 
