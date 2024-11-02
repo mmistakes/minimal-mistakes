@@ -14,7 +14,7 @@ last_modified_at: 1999-10-20
 comments: true
 ---
 
-### 📝AWS DMS 를 이용한 AWS RDS MariaDB 의 GCP Cloud SQL MySQL 이전
+### 📝AWS DMS 를 이용한 AWS RDS MariaDB 의 GCP Cloud SQL MySQL 이전 절차
 --- 
 **[지난번 포스팅](https://duhokim0901.github.io/aws/aws_mariadb_to_gcp_mysql_1/#gcp-cloud-sqlmysql-%EC%9D%B4%EC%A0%84-%EB%B0%B0%EA%B2%BD)**에서 AWS RDS MariaDB를 GCP Cloud SQL MySQL 에 이전해야하는 배경과 이전 방안에 대해 정리하였습니다. AWS의 관리형 데이터베이스(RDS)를 GCP의 관리형 데이터베이스(Cloud SQL)로 이전하는 이유가 성능이나 관리적 이점(HA,RPO,RTO)으로 인한 점이 아닌 회사 내부 상황에 의한 비용 효율화 측면으로 인한 이전 배경이었음을 다시 말씀드리고 싶습니다.
 
@@ -35,17 +35,11 @@ comments: true
 
 <br>
 
-위의 작업 중 1 ~ 6 까지가 사전 작업에 필요한 내용이고, 실제로 7번부터가 전환할 시점에서 이루어져야 할 작업입니다. 이제부터 각 단계 별 작업을 간단하게 정리해보려고 합니다.
+위의 작업 중 1 ~ 5 까지가 사전 작업에 필요한 내용이고, 실제로 6번부터 본작업입니다. 이 글에서는 사전작업을 정리하고자 합니다.
 
 <br>
 
-### ✏️마이그레이션 절차
----
-
-
-<br>
-
-#### 1. GCP Cloud SQL 생성
+### 1. GCP Cloud SQL 생성
 ---
 
 먼저 이관 대상인 Cloud SQL을 생성하였습니다. 콘솔로 인스턴스를 생성할 수도 있긴하지만 전체 플랫폼을 대거 이관해야하고, GCP 에 CloudSQL 파라미터 그룹같은 개념이 없기 때문에 변경해야할 설정 값을 인스턴스 마다 모두 입력해야 해서 코드로 작성하여 관리하는 것이 생산적이라 판단하였습니다. 제가 근무하고 있는 회사는 클라우드 리소스는 모두 테라폼으로 생성하고 있기 때문에 규칙에 맞추어 테라폼으로 생성하였습니다. [공식 테라폼 생성 가이드](https://github.com/gruntwork-io/terraform-google-sql/blob/v0.6.0/modules/cloud-sql/main.tf)가 있으니 참고하시면 좋을 것 같습니다.
@@ -593,7 +587,7 @@ terraform apply
 
 <br>
 
-#### 2. 방화벽 Rule 허용 작업
+### 2. 방화벽 Rule 허용 작업
 ---
 
 백엔드 서버 또는 EKS, GKE 와 GCP SQL 간의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWALL Rule 을 생성할 수 있는 [콘솔 화면](https://console.cloud.google.com/net-security/firewall-manager/firewall-policies/list) 에 접속하여 정책을 넣어주면 됩니다.
@@ -625,7 +619,7 @@ terraform apply
 <br/>
 
 
-#### 4. 사용자 계정 및 권한 생성
+### 3. 사용자 계정 및 권한 생성
 ---
 
 사용자 계정 및 권한 생성 작업입니다. 이관 대상 DBMS 의 사용자 계정과 권한을 동일하게 설정해야합니다. 물론 이관 대상 DBMS 의 서비스 성격에 따라서 정합성이 강하게 요구된다면 읽기 권한만 먼저 설정하고 커넥션이 AS-IS DBMS 에서 TO-BE DBMS로 완전히 전환된 것을 확인하고 쓰기 권한을 부여할 수도 있습니다.
@@ -684,7 +678,7 @@ sed -i -e 's/IDENTIFIED BY PASSWORD.*/;/g' result_show_grants.sql
 
 <br/>
 
-#### 5. 데이터베이스 덤프 / 리스토어 (--no-data, --routines)
+### 4. 데이터베이스 덤프 / 리스토어 (--no-data, --routines)
 ---
 
 소스 데이터베이스의 형상을 타겟 MySQL에 복원하기 위해서 아래와 같은 명령어를 수행합니다. --no-data 옵션을 통해 스키마 틀만 가져올 것이고 routines 옵션으로 프로시져까지 반영하도록 합니다. DMS를 이용하여 이전할 경우 DMS에 의한 변경 작업과 트리거와 이벤트의 변경 작업이 충돌되기 때문에 이전이 완료된 후에 별도로 생성해주어야 합니다. 아래의 명령어를 수행하여 덤프를 받은 뒤 타겟 데이터베이스에 리스토어 합니다.
@@ -698,31 +692,10 @@ mysql -h 'GCP MySQL 주소' -u'관리자계정' -p'관리자패스워드' < back
 
 <br/>
 
-#### 6. DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성 및 실행
----
-
-<br/>
-
-#### 7. 보조인덱스 생성 및 제약 사항 조치
----
-
-<br/>
-
-#### 8. Cloud DNS 변환
+#### 5. DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성 및 실행
 ---
 
 
-<br/>
-
-#### 9. 컷오버
----
-
-
-
-<br/>
-
-#### 10. AWS RDS 정지
----
 
 
 <br>
