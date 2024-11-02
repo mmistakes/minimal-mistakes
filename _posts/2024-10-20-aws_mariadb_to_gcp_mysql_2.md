@@ -1,6 +1,6 @@
 ---
-title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전(2)[draft]"
-excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이전하는 내용을 정리합니다."
+title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전 - 사전 작업편[draft]"
+excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이전하기 위한 사전작업을 정리합니다."
 #layout: archive
 categories:
  - Gcp
@@ -698,7 +698,7 @@ mysql -h 'GCP MySQL 주소' -u'관리자계정' -p'관리자패스워드' < back
 
 <br/>
 
-#### 6. DMS 실행
+#### 6. DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성 및 실행
 ---
 
 <br/>
