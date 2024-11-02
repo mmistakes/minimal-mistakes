@@ -716,18 +716,18 @@ DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 �
 소스 엔드포인트 생성 시 볼 수 있는 화면입니다. 저는 아래 항목으로 기입하였습니다.
 
 항목 : action
-Endpoint type : Source endpoint 선택
-Select RDS DB instances : 체크
-RDS Instance : 인스턴스 선택
-Endpoint identifier : 소스엔드포인트명 기입
-Source Engine : MariaDB
-Access to endpoint database : Provide access information manually 선택
-Server Name : 서버명 서택
-Port : 포트번호
-User name : DMS 실행 DB 계정
-Password : DB 패스워드
-Secure Socket Layer(SSL) mode : none
-Extra connection attributes : initstmt=SET FOREIGN_KEY_CHECKS=0
+Endpoint type : Source endpoint 선택    
+Select RDS DB instances : 체크    
+RDS Instance : 인스턴스 선택    
+Endpoint identifier : 소스엔드포인트명 기입    
+Source Engine : MariaDB    
+Access to endpoint database : Provide access information manually 선택    
+Server Name : 서버명 서택    
+Port : 포트번호    
+User name : DMS 실행 DB 계정    
+Password : DB 패스워드    
+Secure Socket Layer(SSL) mode : none    
+Extra connection attributes : initstmt=SET FOREIGN_KEY_CHECKS=0    
 
 
 
