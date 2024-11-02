@@ -681,7 +681,7 @@ sed -i -e 's/IDENTIFIED BY PASSWORD.*/;/g' result_show_grants.sql
 ### 4. 데이터베이스 덤프 / 리스토어 (--no-data, --routines)
 ---
 
-소스 데이터베이스의 형상을 타겟 MySQL에 복원하기 위해서 아래와 같은 명령어를 수행합니다. --no-data 옵션을 통해 스키마 틀만 가져올 것이고 routines 옵션으로 프로시져까지 반영하도록 합니다. DMS를 이용하여 이전할 경우 DMS에 의한 변경 작업과 트리거와 이벤트의 변경 작업이 충돌되기 때문에 이전이 완료된 후에 별도로 생성해주어야 합니다. 아래의 명령어를 수행하여 덤프를 받은 뒤 타겟 데이터베이스에 리스토어 합니다.
+소스 데이터베이스의 형상을 타겟 MySQL에 복원하기 위해서 아래와 같은 명령어를 수행합니다. `--no-data` 옵션을 통해 스키마 틀만 가져올 것이고 routines 옵션으로 프로시져까지 반영하도록 합니다. 트리거와 이벤트가 존재하여도 현 시점에서는 복원시키지 않습니다. DMS를 이용하여 이전할 경우 DMS에 의한 변경 작업과 트리거와 이벤트의 변경 작업이 충돌되기 때문에 이전이 완료된 후에 별도로 생성해주어야 합니다. 아래의 명령어를 수행하여 덤프를 받은 뒤 타겟 데이터베이스에 리스토어 합니다.
 
 <br>
 
@@ -690,10 +690,44 @@ sed -i -e 's/IDENTIFIED BY PASSWORD.*/;/g' result_show_grants.sql
 mysql -h 'GCP MySQL 주소' -u'관리자계정' -p'관리자패스워드' < backup.sql
 ```
 
-<br/>
+<br>
 
-#### 5. DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성 및 실행
+### 5. DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성 및 실행
 ---
+
+AWS 의 DMS 를 사용하기 위해서는 3가지 정도의 구성물이 필요합니다. 1) DMS 인스턴스,  2) 엔드포인트, 3) DMS 태스크 입니다. 
+
+<br>
+
+#### 5.1 DMS 인스턴스
+
+DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 용도로 생성된 별도의 인스턴스입니다. multi-AZ 를 활성화 할 경우 다른 az 에 있는 secondary 인스턴스의 동기식 대기 복제본을 자동으로 프로비저닝하고 유지합니다. Primary 복제 인스턴스는 az 전체에서 secondary 복제본으로 동기식 복제가 이루어집니다.
+
+
+#### 5.2 소스 타겟 엔드포인트
+
+엔드포인트는 소스 DBMS 와 타겟 DBMS 의 연결정보를 담고 있습니다.
+
+![그림6](https://github.com/user-attachments/assets/40baab03-110b-4ba2-b6e2-ca9f0f76d8c2)   
+[그림6] 소스 엔드포인트 생성 화면
+
+<br>
+
+소스 엔드포인트 생성 시 볼 수 있는 화면입니다. 저는 아래 항목으로 기입하였습니다.
+
+항목 : action
+Endpoint type : Source endpoint 선택
+Select RDS DB instances : 체크
+RDS Instance : 인스턴스 선택
+Endpoint identifier : 소스엔드포인트명 기입
+Source Engine : MariaDB
+Access to endpoint database : Provide access information manually 선택
+Server Name : 서버명 서택
+Port : 포트번호
+User name : DMS 실행 DB 계정
+Password : DB 패스워드
+Secure Socket Layer(SSL) mode : none
+Extra connection attributes : initstmt=SET FOREIGN_KEY_CHECKS=0
 
 
 
