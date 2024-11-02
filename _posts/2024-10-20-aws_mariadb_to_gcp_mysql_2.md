@@ -1,5 +1,5 @@
 ---
-title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전 - 사전 작업편[draft]"
+title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전 - 사전 작업[draft]"
 excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이전하기 위한 사전작업을 정리합니다."
 #layout: archive
 categories:
