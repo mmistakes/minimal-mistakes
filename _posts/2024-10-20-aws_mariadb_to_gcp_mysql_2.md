@@ -26,13 +26,12 @@ comments: true
 |------|---------------------------------------------------------------|
 | 1    | GCP Cloud SQL 생성                                             |
 | 2    | 방화벽 Rule 허용 작업                                          |
-| 3    | DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성             |
-| 4    | 사용자 계정 및 권한 생성
-| 5    | 데이터베이스 덤프 / 리스토어 (--no-data, --routines)|
-| 6    | DMS 실행                                                       |
-| 7    | Cloud DNS 변환                                                 |
-| 8    | 컷오버                                                         |
-| 9    | AWS RDS 정지                                                   |
+| 3    | 사용자 계정 및 권한 생성                                        |
+| 4    | 데이터베이스 덤프 / 리스토어 (--no-data, --routines)             |
+| 5    | DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성 및 실행       |
+| 6    | Cloud DNS 변환                                                 |
+| 7    | 컷오버                                                         |
+| 8    | AWS RDS 정지                                                   |
 
 <br>
 
@@ -597,7 +596,7 @@ terraform apply
 #### 2. 방화벽 Rule 허용 작업
 ---
 
-GCP SQL 과의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWALL Rule 을 생성할 수 있는 [콘솔 화면](https://console.cloud.google.com/net-security/firewall-manager/firewall-policies/list) 에 접속하여 정책을 넣어주면 됩니다.
+백엔드 서버 또는 EKS, GKE 와 GCP SQL 간의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWALL Rule 을 생성할 수 있는 [콘솔 화면](https://console.cloud.google.com/net-security/firewall-manager/firewall-policies/list) 에 접속하여 정책을 넣어주면 됩니다.
 
 ![CREATE FIREWALL RULE](https://github.com/user-attachments/assets/984fb49b-9018-4f8c-a2a2-3612d9a434e0)
 [그림1] 방화벽 허용 정책 생성
@@ -615,6 +614,7 @@ GCP SQL 과의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWA
 
 \[그림2\] 는 방화벽 정책 생성을 위한 정보를 기입하는 화면입니다. 방화벽 이름, 로그 생성 여부, 우선순위, 트래픽방향, 허용여부, 소스 및 타겟 설정, 허용 포트 등의 항목들을 입력하여 백엔드 서버 또는 EKS, GKE 등이 Cloud SQL 과 통신할 수 있도록 룰을 설정해야합니다.
 
+<br>
 
 ![FIREWALL RULE 설정 결과](https://github.com/user-attachments/assets/5fb64e3e-5fec-4b0f-ad3b-2105ec641cb2)
 [그림3] 방화벽 정책 설정 결과
@@ -624,15 +624,58 @@ GCP SQL 과의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWA
 
 <br/>
 
-#### 3. DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성
----
-
-
-<br/>
 
 #### 4. 사용자 계정 및 권한 생성
 ---
 
+사용자 계정 및 권한 생성 작업입니다. 이관 대상 DBMS 의 사용자 계정과 권한을 동일하게 설정해야합니다. 물론 이관 대상 DBMS 의 서비스 성격에 따라서 정합성이 강하게 요구된다면 읽기 권한만 먼저 설정하고 커넥션이 AS-IS DBMS 에서 TO-BE DBMS로 완전히 전환된 것을 확인하고 쓰기 권한을 부여할 수도 있습니다.
+
+{% include codeHeader.html name="사용자 백업" %}
+```sql
+SHOW CREATE USER `계정명`;  -- 사용자 계정 암호 및 계정 설정 백업
+SHOW GRANTS FOR `계정명`; -- 사용자 계정의 권한 백업
+```
+
+<br>
+
+사용자 계정과 권한을 백업할 때에는 보통 위의 쿼리를 통해 계정의 패스워드 설정과 정책, 권한을 백업합니다. 계정 목록은 mysql.user 테이블에 있기 때문에 해당 테이블에서 계정 목록을 읽어들여서 필요한 계정 정보를 백업하는 스크립트를 만들어서 관리하는 편이 좋습니다.
+
+<br>
+
+##### MariaDB, MySQL 간의 사용자 계정, 권한 부여 차이점
+
+1) 사용자 계정 생성 구문과 권한 차이
+
+```sql
+MariaDB 10.6 : CREATE USER `cooperation`@`%` IDENTIFIED BY PASSWORD '*08xxxxxxxxxxxxxxx9F6181';
+MySQL 8.0 : CREATE USER `cooperation`@`%` IDENTIFIED WITH 'mysql_native_password' AS '*08xxxxxxxxxxxxxxx9F6181';
+```
+
+<br>
+
+위의 내용과 같이 MySQL 로 이전 시에 유의사항으로는 mysql_native_password 로 패스워드를 설정한 경우에 MariaDB 문법과 MySQL 문법이 상호 다른점이 있습니다. 구문을 파싱해야하는 작업이 필요합니다. MariaDB 에서 ```SHOW CREATE USER``` 명령문의 수행결과를 모아둔 파일에 아래와 같이 sed 를 이용해서 파싱을 해줘서 호환 가능하도록 변경해도 좋습니다.
+
+<br>
+
+```bash
+echo `mysql -h${HOST} -u${USER} -p"${PASSWORD}" -N -B --execute="${QUERY}"`";" >> result_show_create_user.sql"
+sed -i -e 's/BY PASSWORD/WITH '"'"'mysql_native_password'"'"' AS/g' result_show_create_user.sql"
+```
+
+<br>
+
+권한 같은 경우도 지원하지 않는 권한이 있습니다. BINLOG MONITOR, SLAVE MONITOR 라는 권한은 MariaDB에만 있는 권한입니다. 대체 가능한 MySQL의 REPLICATION CLIENT 로 변경해야합니다. 추가로 SHOW GRANTS FOR 구문 실행 시 MariaDB 의 경우 IDENTIFIED BY PASSWORD ~ 문구가 생성되는데 해당 내용은 삭제 시켜줍니다.
+
+```sql
+GRANT USAGE ON *.* TO `cooperation`@`%` IDENTIFIED BY PASSWORD '*08xxxxxxxxxxxxxxx9F6181';
+GRANT BINLOG MONITOR, SLAVE MONITOR ON *.* TO `adm`@`%` ;
+```
+
+```bash
+sed -i -e 's/BINLOG MONITOR/REPLICATION CLIENT/g' result_show_grants.sql
+sed -i -e 's/SLAVE MONITOR/REPLICATION CLIENT/g' result_show_grants.sql
+sed -i -e 's/IDENTIFIED BY PASSWORD.*/;/g' result_show_grants.sql
+```
 
 <br/>
 
