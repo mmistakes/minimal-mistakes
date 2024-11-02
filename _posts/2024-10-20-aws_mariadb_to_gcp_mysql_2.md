@@ -616,7 +616,7 @@ terraform apply
 
 <br>
 
-![FIREWALL RULE 설정 결과](https://github.com/user-attachments/assets/5fb64e3e-5fec-4b0f-ad3b-2105ec641cb2)   
+<img src="https://github.com/user-attachments/assets/5fb64e3e-5fec-4b0f-ad3b-2105ec641cb2" alt="FIREWALL RULE 설정 결과" width="300">
 [그림3] 방화벽 정책 설정 결과   
 
 설정 이후에는 \[그림3\]과 같이 설정한 정보를 확인할 수 있습니다.
