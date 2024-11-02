@@ -28,7 +28,7 @@ comments: true
 | 2    | 방화벽 Rule 허용 작업                                          |
 | 3    | DMS 인스턴스, 소스/타겟 엔드포인트, DMS 태스크 생성             |
 | 4    | 사용자 계정 및 권한 생성
-| 5    | 데이터베이스 덤프 / 리스토어 (--no-data, --routines, --triggers, --events)|
+| 5    | 데이터베이스 덤프 / 리스토어 (--no-data, --routines)|
 | 6    | DMS 실행                                                       |
 | 7    | Cloud DNS 변환                                                 |
 | 8    | 컷오버                                                         |
@@ -596,6 +596,30 @@ terraform apply
 
 #### 2. 방화벽 Rule 허용 작업
 ---
+
+GCP SQL 과의 연결을 위해 방화벽 Rule 을 설정해야합니다. FIREWALL Rule 을 생성할 수 있는 [콘솔 화면](https://console.cloud.google.com/net-security/firewall-manager/firewall-policies/list) 에 접속하여 정책을 넣어주면 됩니다.
+
+![CREATE FIREWALL RULE](https://github.com/user-attachments/assets/984fb49b-9018-4f8c-a2a2-3612d9a434e0)
+[그림1] 방화벽 허용 정책 생성
+
+<br>
+
+\[그림1\] 처럼 Cloud NGFW 의 Firewall policies 메뉴에서 CREATE FIREWALL RULE 을 생성할 수 있습니다.
+
+<br>
+
+![FIREWALL 생성 메뉴](https://github.com/user-attachments/assets/b7af1ef4-3c04-4594-b42a-774112b77644)
+[그림2] 방화벽 정책 생성 메뉴
+
+<br>
+
+\[그림2\] 는 방화벽 정책 생성을 위한 정보를 기입하는 화면입니다. 방화벽 이름, 로그 생성 여부, 우선순위, 트래픽방향, 허용여부, 소스 및 타겟 설정, 허용 포트 등의 항목들을 입력하여 백엔드 서버 또는 EKS, GKE 등이 Cloud SQL 과 통신할 수 있도록 룰을 설정해야합니다.
+
+
+![FIREWALL RULE 설정 결과](https://github.com/user-attachments/assets/5fb64e3e-5fec-4b0f-ad3b-2105ec641cb2)
+[그림3] 방화벽 정책 설정 결과
+
+설정 이후에는 \[그림3\]과 같이 설정한 정보를 확인할 수 있습니다.
 
 
 <br/>
