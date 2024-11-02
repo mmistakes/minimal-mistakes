@@ -697,8 +697,6 @@ mysql -h 'GCP MySQL 주소' -u'관리자계정' -p'관리자패스워드' < back
 
 AWS 의 DMS 를 사용하기 위해서는 3가지 정도의 구성물이 필요합니다. 1) DMS 인스턴스,  2) 엔드포인트, 3) DMS 태스크 입니다. 
 
-<br>
-
 #### 5.1 DMS 인스턴스
 
 DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 용도로 생성된 별도의 인스턴스입니다. multi-AZ 를 활성화 할 경우 다른 az 에 있는 secondary 인스턴스의 동기식 대기 복제본을 자동으로 프로비저닝하고 유지합니다. Primary 복제 인스턴스는 az 전체에서 secondary 복제본으로 동기식 복제가 이루어집니다.
@@ -708,7 +706,7 @@ DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 �
 
 엔드포인트는 소스 DBMS 와 타겟 DBMS 의 연결정보를 담고 있습니다.
 
-![그림6](https://github.com/user-attachments/assets/40baab03-110b-4ba2-b6e2-ca9f0f76d8c2)   
+![그림6](https://github.com/user-attachments/assets/b8b93c3c-83ae-46b0-8447-33d56d762b3d)   
 [그림6] 소스 엔드포인트 생성 화면
 
 <br>
