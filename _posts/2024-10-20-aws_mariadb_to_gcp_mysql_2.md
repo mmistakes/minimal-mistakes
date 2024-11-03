@@ -646,7 +646,7 @@ MySQL 8.0 : CREATE USER `cooperation`@`%` IDENTIFIED WITH 'mysql_native_password
 
 <br>
 
-위의 내용과 같이 MySQL 로 이전 시에 유의사항으로는 mysql_native_password 로 패스워드를 설정한 경우에 MariaDB 문법과 MySQL 문법이 상호 다른점이 있습니다. 구문을 파싱해야하는 작업이 필요합니다. MariaDB 에서 ```SHOW CREATE USER``` 명령문의 수행결과를 모아둔 파일에 아래와 같이 sed 를 이용해서 파싱을 해줘서 호환 가능하도록 변경해도 좋습니다.
+MySQL 로 이전 시에 유의사항으로는 ```SHOW CREATE USER `계정명`;``` 명령어의 결과가 mysql에서 바로 호환되지 않는다는 점입니다.mysql_native_password 를 이용한 패스워드 설정 문법이 MariaDB 와 MySQL이 서로 다릅니다. 따라서 호환 문법으로 구문을 파싱해야하는 작업이 필요합니다. MariaDB 에서 ```SHOW CREATE USER``` 명령문의 수행결과를 모아둔 파일에 아래와 같이 sed 를 이용해서 파싱을 해줘서 호환 가능하도록 변경해도 좋습니다.
 
 <br>
 
@@ -658,7 +658,7 @@ sed -i -e 's/BY PASSWORD/WITH '"'"'mysql_native_password'"'"' AS/g' result_show_
 
 <br>
 
-권한 같은 경우도 지원하지 않는 권한이 있습니다. BINLOG MONITOR, SLAVE MONITOR 라는 권한은 MariaDB에만 있는 권한입니다. 대체 가능한 MySQL의 REPLICATION CLIENT 로 변경해야합니다. 추가로 SHOW GRANTS FOR 구문 실행 시 MariaDB 의 경우 IDENTIFIED BY PASSWORD ~ 문구가 생성되는데 해당 내용은 삭제 시켜줍니다.
+권한 같은 경우도 지원하지 않는 경우가 있습니다. BINLOG MONITOR, SLAVE MONITOR 라는 권한은 MariaDB에만 있는 권한입니다. 대체 가능한 MySQL의 REPLICATION CLIENT 로 변경해야합니다. 추가로 SHOW GRANTS FOR 구문 실행 시 MariaDB 의 경우 IDENTIFIED BY PASSWORD ~ 문구가 생성되는데 해당 내용은 삭제 시켜줍니다.
 
 {% include codeHeader.html name="사용자 권한 백업 결과 일부" %}
 ```sql
