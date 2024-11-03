@@ -2,11 +2,22 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+sidebar-category:
+  - title: "카테고리"
+    children:
+      # - title: "딥러닝"
+      #   url: "/deep_learning"
+      #   category: "deep_learning"
+        
+      - title: "설정"
+        url:  "/set_up"
+        category: "set_up"
+
+      # - title: "프로그래밍 언어"
+      #   url:  "/programming_languages"
+      #   category: "programming_languages"
+
+      # - title: "GPU 프로그래밍"
+      #   url: "/gpu_programming"
+      #   category: "gpu_programming"
