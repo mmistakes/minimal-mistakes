@@ -1,14 +1,17 @@
 ---
-title:  "GPU 클라우드 셋팅(paperspace, vast.ai)"
-excerpt: "paperspace와 vast.ai를 이용하여 GPU 클라우드 셋팅하는 방법을 설명합니다."
+title:  "GPU cloud setting(paperspace, vast.ai)"
+excerpt: "How to set up GPU cloud using papersapce or vast.ai"
+lang: en
+lang-ref: gpu-cloud-setup
+permalink: set_up/gpu-cloud-setup/
 categories: 
   - set_up
 tags:
-  - GPU 서버
-  - GPU 클라우드
+  - GPU server
+  - GPU cloud
   - GPU VM
   - GPU docker container
-  - GPU 셋팅
+  - GPU setting
 
 toc_label: "목차"  # 목차 제목을 원하는 대로 설정
 toc: true           # 목차 활성화

@@ -263,6 +263,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-polyglot
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -325,3 +326,8 @@ defaults:
       related: true
       sidebar:
         nav: "sidebar-category" 
+
+languages: ["ko", "en"]
+default_lang: "ko"
+exclude_from_localization: ["images", "javascripts"]
+parallel_localization: true
