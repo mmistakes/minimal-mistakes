@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug Bücherei",
-    "title": "6b - Ausflug Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGhrcnNyNTIyN3N0ZmNnZm03c2s2MmtjcWYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-06T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-06T12:00:00+01:00"
-    },
-    "created": "2024-10-10T06:17:12.000Z",
-    "updated": "2024-10-10T06:17:12.084Z"
-  },
-  {
-    "image_path": null,
     "alt": "A3 - Ausflug Bücherei",
     "title": "A3 - Ausflug Bücherei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-10-10T06:15:00.000Z",
     "updated": "2024-10-10T06:15:00.922Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Bibliothek",
+    "title": "A5 - Ausflug zur Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-22T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-22T13:30:00+01:00"
+    },
+    "created": "2024-09-02T12:11:06.000Z",
+    "updated": "2024-11-04T06:51:24.726Z"
   }
 ]
