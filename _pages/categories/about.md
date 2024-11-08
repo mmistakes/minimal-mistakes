@@ -28,20 +28,24 @@ padding: 5px;
  - (주)위메프 - 위메프 인프라실 Database Administrator (2018.01 ~ 2019.08) 
  - (주)셀파소프트 - Database Engineer (2015.07 ~ 2017.08)
 
-## 🔥 Current Interest
- * Mysql/MariaDB
- * MongoDB
- * MSSQL
- * Redis
- * ELK
- * Cassandra
- * Terraform
- * Ansible
- * AWS RDS
- * Azure Databases
- * GCP SQL
- * Python, Shell, Golang
- * Grafana, Zabbix, InfluxDB, Prometheus, Exporter
+## 📚 Current Interest
+ * RDBMS : Mysql/MariaDB, MSSQL : 운영 유지보수, 성능 튜닝, 이전 경험이 있습니다.
+ * NoSQL : MongoDB, Redis, Cassandra : RDBMS 만큼은 아니지만 운영 구축 및 이전 경험이 있습니다.   
+   (MongoDB 의 경우 Skewed 데이터에 대한 플랜캐시 재수립 문제를 해결한 경험이 있습니다😄)
+ * IaC(Terraform, Ansible) : Terraform 을 이용한 DBMS 리소스 생성, ansible 을 이용한 DBMS 설치 및 솔루션 구축 등의 경험이 있습니다.
+ * Cloud : AWS, GCP, Azure : 3개 클라우드에서 DBMS 운영 경험이 있습니다.
+ * Programming Language : Python, Shell
+ * Solution : Grafana, Zabbix, InfluxDB, Prometheus, Exporter, Datadog
+
+ * RDBMS 성능 튜닝 및 운영 유지보수
+ * MongoDB 쿼리 튜닝 및 운영 유지보수
+ * redis replication(sentinel), Cassandra Cluster 구축 및 마이그레이션
+ * 클라우드 이전으로 인한 DBMS 마이그레이션
+ * DB 리소스 생성 시 감지 후 자동으로 모니터링 등록
+ * Cloud Formation을 이용한 일몰제(비사용시간 shutdown) 적용
+ * 구글시트 DB 대장 자동관리
+ * 운영데이터 검증환경 이관
+ * ELK stack 으로 AWS, GCP Log(audit, slow, error) 이관
 
 ## 😸 하고싶은 이야기
 <center><img src="https://duhokim0901.github.io/assets/images/bio-photo2.png" width="30%" style="
