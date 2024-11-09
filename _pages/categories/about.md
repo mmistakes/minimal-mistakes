@@ -28,7 +28,7 @@ padding: 5px;
  - (주)위메프 - 위메프 인프라실 Database Administrator (2018.01 ~ 2019.08) 
  - (주)셀파소프트 - Database Engineer (2015.07 ~ 2017.08)
 
-## 📚 Current Interest
+## 📚 Current Experience
  * RDBMS : Mysql/MariaDB, MSSQL : 운영 유지보수, 성능 튜닝, 이전 경험이 있습니다.
  * NoSQL : MongoDB, Redis, Cassandra : RDBMS 만큼은 아니지만 운영 구축 및 이전 경험이 있습니다.   
    (MongoDB 의 경우 Skewed 데이터에 대한 플랜캐시 재수립 문제를 해결한 경험이 있습니다😄)
