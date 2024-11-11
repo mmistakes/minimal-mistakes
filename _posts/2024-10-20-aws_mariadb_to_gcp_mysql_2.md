@@ -1,5 +1,5 @@
 ---
-title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전 - 사전 작업[draft]"
+title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전 - 사전 작업[작성중]"
 excerpt: "AWS DMS를 이용하여 AWS RDS MariaDB를 GCP Cloud SQL MySQL로 이전하기 위한 사전작업을 정리합니다."
 #layout: archive
 categories:
@@ -709,23 +709,49 @@ DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 �
 
 <br>
 
-소스 엔드포인트 생성 시 볼 수 있는 화면입니다. 저는 아래 항목으로 기입하였습니다.
+소스 엔드포인트 생성 시 볼 수 있는 화면입니다. 저는 소스 DBMS 의 기본적인 연결 정보를 입력하는 항목을 아래처럼 기입하였습니다.
 
-항목 : action
-Endpoint type : Source endpoint 선택    
-Select RDS DB instances : 체크    
-RDS Instance : 인스턴스 선택    
-Endpoint identifier : 소스엔드포인트명 기입    
-Source Engine : MariaDB    
-Access to endpoint database : Provide access information manually 선택    
-Server Name : 서버명 서택    
-Port : 포트번호    
-User name : DMS 실행 DB 계정    
-Password : DB 패스워드    
-Secure Socket Layer(SSL) mode : none    
-Extra connection attributes : initstmt=SET FOREIGN_KEY_CHECKS=0    
+| 항목                       | 설정값                                           |
+|----------------------------|--------------------------------------------------|
+| Endpoint type              | Source endpoint 선택                              |
+| Select RDS DB instances    | 체크                                             |
+| RDS Instance               | 인스턴스 선택                                    |
+| Endpoint identifier        | 소스엔드포인트명 기입                             |
+| Source Engine              | MariaDB                                          |
+| Access to endpoint database| Provide access information manually 선택          |
+| Server Name                | 서버명 선택                                      |
+| Port                       | 포트번호                                         |
+| User name                  | DMS 실행 DB 계정                                 |
+| Password                   | DB 패스워드                                      |
+| Secure Socket Layer(SSL) mode | none                                         |
+| Extra connection attributes | `initstmt=SET FOREIGN_KEY_CHECKS=0`               |
+
+<br>
+
+다음은 타겟 엔드포인트 설정입니다.
+
+![그림7](https://github.com/user-attachments/assets/298cfc8e-b764-43de-8248-e21ede23e6bc)
+[그림7] 타겟 엔드포인트 생성 화면
+
+<br>
+
+| 항목                        | 설정값                                   |
+|-----------------------------|------------------------------------------|
+| Endpoint identifier     | 타겟 엔드포인트명 기입                    |
+| Target engine           | MySQL                                    |
+| Access to endpoint database | Provide access information manually 선택 |
+| Server name             | Target endpoint 기입                      |
+| Port                    | 포트번호                                 |
+| User name               | DMS 실행 DB 계정                         |
+| Password                | DB 패스워드                              |
+| Extra connection attributes | `initstmt=SET FOREIGN_KEY_CHECKS=0`   |
+
+<br>
+
+위의 항목에서 Extra connection attributes 설정을 하는 이유는 외래키 제약으로 인해 DMS 의 변경작업이 실패하지 않게 하기 위함입니다. 그 외엔 타겟 DBMS 의 기본적인 연결 정보를 입력하는 부분입니다.   
 
 
+#### 5.3 DMS 태스크 생성(이어서 계속)
 
 
 <br>
