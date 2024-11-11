@@ -11,6 +11,7 @@
 - The "if" means the default is never used (#4955)
 - For pages without a title, show the site title only once (#4959)
 - Use `documents-collection.html` partial in `home` layout.
+- Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
 
 ### Bug Fixes
 
@@ -19,6 +20,7 @@
 - Fix reset stylesheet overruling `$doc-font-size`. [#4983](https://github.com/mmistakes/minimal-mistakes/issues/4983)
 - Fix JavaScript null error on home and splash layouts. [#4938](https://github.com/mmistakes/minimal-mistakes/issues/4938), [#4939](https://github.com/mmistakes/minimal-mistakes/pull/4939)
 - Fix bad &lt;figure&gt; HTML if "alt" contains quotes.
+- Fix extra newline generated in `_includes/post_pagination.html`.
 
 ### Documentation & Maintenance
 
