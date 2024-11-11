@@ -36,7 +36,7 @@ padding: 5px;
  * IaC(Terraform, Ansible) : Terraform 을 이용한 DBMS 리소스 생성, ansible 을 이용한 DBMS 설치 및 솔루션 구축 등의 경험이 있습니다.
  * Cloud : AWS, GCP, Azure : 3개 클라우드에서 DBMS 운영 경험이 있습니다.
  * Programming Language : Python, Shell
- * Solution : Grafana, Zabbix, InfluxDB, Prometheus, Exporter, Datadog
+ * Solution : Grafana, Zabbix, Datadog
 
  * RDBMS 성능 튜닝 및 운영 유지보수
  * MongoDB 쿼리 튜닝 및 운영 유지보수
