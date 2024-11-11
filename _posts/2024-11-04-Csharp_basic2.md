@@ -252,7 +252,7 @@ class B : A
 
 - 위 코드에서 new 키워드는 기본 클래스에서 상속된 멤버를 숨기고, 파생 클래스에서 해당 멤버를 새로 정의할 때 사용
 
-### 10. virtual & override
+### 10. virtual 과 override
 
 - 메서드나 속성을 파생 클래스에서 재정의할 수 있도록 만드는 데 사용
 - virtual 메서드나 속성을 재정의하지 않아도 됨
@@ -307,7 +307,7 @@ b.Print();
 b.PrintNumber();
 ```
 
-### 12. boxing & unboxing
+### 12. boxing 과 unboxing
 
 - 값 형식(int, struct)을 참조 형식으로 변환하는 과정을 박싱(boxing)이라고 하고
 - 그 반대의 과정을 언박싱(unboxing)이라고 함
@@ -319,7 +319,7 @@ object obj = n;     // 힙에 메모리가 할당되고 obj는 힙에 있는 값
 int val = (int)obj; // 힙에 있는 값을 스택에 넣음
 ```
 
-### 13. upcasting & downcasting (참조 변환)
+### 13. upcasting 과 downcasting (참조 변환)
 
 - 최상위 클래스 object는 상속관계에 있으므로 참조 변환이 가능
 
