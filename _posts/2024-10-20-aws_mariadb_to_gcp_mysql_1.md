@@ -105,12 +105,17 @@ GCP Cloud SQL과 같은 관리형 상품들은 내부 VPC 망에서만 Inter Con
 
 단, AWS 시스템을 이전할 때 완전 이전 과정에서 AWS EKS <-> GCP Cloud SQL 간의 DTO 가 발생할 것을 우려하기도 하였지만 내부 기술력을 믿고 빠르게 완수해줄 것이라 믿어준 내부 책임자들의 멋진 결정이었습니다. 그리하여 사용량이 적은 새벽 시간대에 외부망과 PSA 대역의 통신허용을 위한 VPN 작업을 수행하게 되었습니다.
 
-![VPN 설정 작업](https://github.com/user-attachments/assets/7ac5de3b-c296-4316-8b94-8d082d455135)     
+![VPN 설정 작업](https://github.com/user-attachments/assets/758b4799-5407-4033-b02c-8c9e84d50667)   
 [그림4] 사용중인 GCP 망의 네트워크 순단을 유발했던 VPN 설정 작업
 
 <br>
 
-AWS DMS 를 이용한 이전 작업은 역시나 이관 작업의 효율성을 매우 높여주었습니다. 물론 MySQL 엔진으로 전환하면서 추가로 작업해야할 사항도 있었지만 Critical 한 문제는 아니었습니다. 이후 포스팅에서는 AWS DMS 를 사용하여 이관을 하는 시나리오에 대해 별도로 글을 작성할 예정입니다. 그리고 번외로 외부망과 Private Service Access 망 연결이 불가능할 때의 작업 방법도 포스팅해도록 하겠습니다. 감사합니다.
+AWS DMS 를 이용한 이전 작업은 역시나 이관 작업의 효율성을 매우 높여주었습니다. 물론 MySQL 엔진으로 전환하면서 추가로 작업해야할 사항도 있었지만 해결할 수 있는 문제들이었습니다.
+
+![image](https://github.com/user-attachments/assets/c156b852-9932-4042-a444-ee20519d4ce4)
+[그림5] 성황리에 마친(?) GCP SQL로의 이관작업
+
+이후 포스팅에서는 AWS DMS 를 사용하여 이관을 하는 시나리오에 대해 별도로 글을 작성할 예정입니다. 그리고 번외로 외부망과 Private Service Access 망 연결이 불가능할 때의 작업 방법도 포스팅해도록 하겠습니다. 감사합니다.
 
 
 <br>
