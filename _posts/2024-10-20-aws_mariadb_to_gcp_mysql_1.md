@@ -1,6 +1,6 @@
 ---
-title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전(1)"
-excerpt: "AWS MariaDB를 GCP MySQL로 이전하는 내용을 정리합니다."
+title: "[GCP] AWS MariaDB 를 GCP MySQL 로 이전 - 계획편"
+excerpt: "AWS MariaDB를 GCP MySQL로의 이전 계획을 정리합니다."
 #layout: archive
 categories:
  - Gcp
@@ -110,7 +110,7 @@ GCP Cloud SQL과 같은 관리형 상품들은 내부 VPC 망에서만 Inter Con
 
 <br>
 
-AWS DMS 로의 이전 작업은 역시나 아주 간편하였습니다. 물론 MySQL 엔진으로 전환하면서 별도 작업도 발생했지만 Critical 한 문제는 아니었습니다. 이후 포스팅에서는 AWS DMS 를 사용하여 이관을 하는 시나리오에 대해 별도로 글을 작성할 예정입니다. 그리고 번외로 외부망과 Private Service Access 망 연결이 불가능할 때의 작업 방법도 포스팅해도록 하겠습니다. 감사합니다.
+AWS DMS 를 이용한 이전 작업은 역시나 이관 작업의 효율성을 매우 높여주었습니다. 물론 MySQL 엔진으로 전환하면서 추가로 작업해야할 사항도 있었지만 Critical 한 문제는 아니었습니다. 이후 포스팅에서는 AWS DMS 를 사용하여 이관을 하는 시나리오에 대해 별도로 글을 작성할 예정입니다. 그리고 번외로 외부망과 Private Service Access 망 연결이 불가능할 때의 작업 방법도 포스팅해도록 하겠습니다. 감사합니다.
 
 
 <br>
