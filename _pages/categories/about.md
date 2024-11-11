@@ -30,7 +30,7 @@ padding: 5px;
 
 ## 📚 Current Experience
  * RDBMS : Mysql/MariaDB, MSSQL : 운영 유지보수, 성능 튜닝, 이전 경험이 있습니다.
- * NoSQL : MongoDB, Redis, Cassandra : RDBMS 만큼은 아니지만 운영 구축 및 이전 경험이 있습니다.   
+ * NoSQL : MongoDB, Cassandra : RDBMS 만큼은 아니지만 운영 구축 및 이전 경험이 있습니다.   
    - MongoDB 의 경우 Skewed 데이터에 대한 플랜캐시 재수립 문제를 해결한 경험이 있습니다😄
    - Cassandra의 파티션키 재조정 작업을 통해 특정 노드에만 몰리던 쓰기 부하를 해결한 경험이 있습니다.
  * IaC(Terraform, Ansible) : Terraform 을 이용한 DBMS 리소스 생성, ansible 을 이용한 DBMS 설치 및 솔루션 구축 등의 경험이 있습니다.
@@ -40,7 +40,7 @@ padding: 5px;
 
  * RDBMS 성능 튜닝 및 운영 유지보수
  * MongoDB 쿼리 튜닝 및 운영 유지보수
- * redis replication(sentinel), Cassandra Cluster 구축 및 마이그레이션
+ * Cassandra Cluster 구축 및 마이그레이션
  * 클라우드 이전으로 인한 DBMS 마이그레이션
  * DB 리소스 생성 시 감지 후 자동으로 모니터링 등록
  * Cloud Formation을 이용한 일몰제(비사용시간 shutdown) 적용
