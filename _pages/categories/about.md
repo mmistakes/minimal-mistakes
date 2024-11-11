@@ -33,7 +33,7 @@ padding: 5px;
  * NoSQL : MongoDB, Cassandra : RDBMS 만큼은 아니지만 운영 구축 및 이전 경험이 있습니다.   
    - 데이터의 편중도(Data Skewness)로 인해 발생한 MongoDB의 쿼리 지연 현상을 개선하였습니다.
    - Cassandra의 파티션키 재조정 작업을 통해 특정 노드에만 몰리던 쓰기 부하를 해결한 경험이 있습니다.
- * IaC(Terraform, Ansible) : Terraform 을 이용한 DBMS 리소스 생성, ansible 을 이용한 DBMS 설치 및 솔루션 구축 등의 경험이 있습니다.
+ * IaC(Terraform, Ansible) : Terraform 을 이용한 DBMS 리소스 생성, ansible 을 이용하여 DBMS 및 연관 솔루션을 구성하였습니다.
  * Cloud : AWS, GCP, Azure : 3개 클라우드에서 DBMS 운영 경험이 있습니다.
  * Programming Language : Python, Shell
  * Solution : Grafana, Zabbix, Datadog
