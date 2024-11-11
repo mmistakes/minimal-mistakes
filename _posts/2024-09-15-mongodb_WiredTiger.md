@@ -27,13 +27,18 @@ WiredTiger 스토리지 엔진 설정과 관련된 파라미터는 아래와 같
 
 {% include codeHeader.html name="/etc/mongod.conf" %}
 ```json
-작성필요
+storage:
+  ...
+  engine: wiredTiger
+      engineConfig:
+          cacheSizeGB: 10
+          configString: "log=(archive=true, enabled=ture, file_max=100MB, path=/log/journal)"
+      collectionConfig:
+          blockCompressor: snappy
 ```
 
 #### 파라미터 설명
 
-syncPeriodSecs: MongoDB의 대부분 스토리지 엔진은 DIRECT-IO를 사용하지 않기 때문에, 데이터 쓰기는 일반적으로 운영체제의 캐시 메모리에 머물러 있을 가능성이 큽니다. 따라서 MongoDB 서버는 주기적으로 캐시의 더티 페이지(디스크로 기록되지 않은 데이터)를 디스크로 플러시(동기화)하는데, syncPeriodSecs는 이러한 동기화 주기를 결정합니다. 일반적으로 저널 로그를 활성화한 경우에는 데이터 파일이 손실되더라도 자동 복구가 가능하므로, 이 설정은 상대적으로 중요도가 낮습니다.  
-<br/>
 journal: MongoDB 서버의 저널 로그는 데이터 변경 내역을 기록하여 복구에 사용됩니다. journalenabled를 false로 설정하면 저널 로그를 생성하지 않아 복구 기능이 제한됩니다. journal.commitIntervalMs 옵션은 저널 로그를 디스크에 강제로 동기화하는 주기를 설정합니다. MongoDB는 트랜잭션 단위로 저널 로그를 동기화하지 않고, commitIntervalMs에 설정된 시간마다 일괄적으로 동기화합니다.  
 <br/>
 engine: MongoDB는 일반적으로 하나의 인스턴스에서 단일 스토리지 엔진을 사용합니다. MongoDB 3.0에서는 예외적으로MMAPv1과 WiredTiger를 동시에 사용할 수 있었지만, 이는 지원 중단된 기능입니다. storage.engine 항목은 기본 스토리지 엔진을 지정하는데, WiredTiger가 가장 일반적으로 사용됩니다. wiredTiger 섹션에서는 engineConfig, collectionConfig,indexConfig 등을 통해 다양한 설정을 할 수 있습니다.  
@@ -41,8 +46,6 @@ engine: MongoDB는 일반적으로 하나의 인스턴스에서 단일 스토리
 engineConfig.cacheSizeGB: WiredTiger 스토리지 엔진의 공유 캐시 크기를 설정합니다. 공유 캐시는 자주 사용되는 데이터를 메모리에 저장하여 디스크 I/O를 줄여 성능을 향상시킵니다. 일반적으로 서버 메모리의 50~60%를 할당하는 것이 좋습니다.  
 <br/>
 collectionConfig.blockCompressor: WiredTiger는 데이터 파일을 압축하여 디스크 공간을 절약할 수 있습니다. Zlib,snappy 등의 압축 알고리즘을 선택할 수 있으며, "none"으로 설정하면 압축을 사용하지 않습니다.  
-<br/>
-indexConfig.prefixCompression: WiredTiger의 인덱스는 접두사 압축을 지원하여 인덱스 크기를 줄일 수 있습니다.
 <br/>
 
 
