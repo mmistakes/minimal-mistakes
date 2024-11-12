@@ -1,2 +1,4 @@
 source "https://rubygems.org"
-gemspec
+#gemspec
+gem 'minimal-mistakes-jekyll', '>= 0'
+gem 'faraday-retry'
