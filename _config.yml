@@ -157,8 +157,8 @@ footer:
       icon: "fab fa-fw fa-bitbucket"
       # url:
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      icon: "doyeon_ww-instagram"
+      url: "https://www.instagram.com/doyeon_ww/"
 
 
 # Reading Files
