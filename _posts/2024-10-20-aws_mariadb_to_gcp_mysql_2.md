@@ -730,7 +730,7 @@ DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 �
 
 다음은 타겟 엔드포인트 설정입니다.
 
-![그림7](https://github.com/user-attachments/assets/298cfc8e-b764-43de-8248-e21ede23e6bc)
+![그림7](https://github.com/user-attachments/assets/298cfc8e-b764-43de-8248-e21ede23e6bc)   
 [그림7] 타겟 엔드포인트 생성 화면
 
 <br>
