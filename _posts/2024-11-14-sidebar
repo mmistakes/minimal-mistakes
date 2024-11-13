@@ -1,3 +1,9 @@
+---
+layout: single
+title: "사이드 바"
+---
+사이드 바를 만들었어요.
+
 sidebar:
   - title: "Title"
     image: "/assets/images/your-image.jpg"
