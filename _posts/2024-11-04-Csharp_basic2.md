@@ -99,6 +99,23 @@ collection[0] = "Hello, World!";
 Console.WriteLine(collection[0]);
 ```
 
+### 6. 배열
+
+- 고정 배열
+
+```csharp
+int[] arr = new int[3] {1,2,3};
+int[] arr = new int[] {1,2,3};
+int[] arr = {1,2,3};
+
+int[,] arr = new int[,] {{1,2,3},{4,5,6}};
+```
+
+- 가변 배열
+
+```csharp
+```
+
 ### 7. delegate
 
 - delegate는 일종의 참조 타입으로, 특정 메서드를 가리킬 수 있는 "메서드 포인터" 역할을 합니다.
