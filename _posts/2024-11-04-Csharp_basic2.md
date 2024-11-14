@@ -23,3 +23,35 @@ tags: [Csharp]
 - private protected
   - C# 7.2에서 추가된 접근 제한자로, 해당 멤버는 같은 클래스 내에서만, 또는 같은 어셈블리 내에서 상속받은 하위 클래스에서만 접근할 수 있습니다.
 
+### 2. 생성자와 소멸자
+
+```csharp
+class MyClass
+{
+    string msg;
+  
+    // 기본 생성자
+    public MyClass() {
+        msg = "기본 생성자 호출";
+    }
+
+    public MyClass(string msg) {
+        this.msg = msg;
+    }
+
+    // 소멸자
+    ~MyClass() {
+        Console.WriteLine("destroyed " + msg);
+    }
+
+    public void showMsg() {
+        Console.WriteLine(msg);
+    }
+}
+
+MyClass a = new MyClass();
+a.showMsg()
+
+MyClass b = new MyClass("b class");
+b.showMsg();
+```
