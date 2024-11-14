@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Research"
-    url: /_pages/research_page.html
+    url: /_pages/research_page/index.html
   - title: "Projects"
-    url: /_pages/projects_page.html
+    url: /_pages/projects_page/index.html
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

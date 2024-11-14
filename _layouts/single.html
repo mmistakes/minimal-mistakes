@@ -39,6 +39,25 @@ layout: default
         </header>
       {% endunless %}
 
+      {% if page.authors %}
+      <p class="page__authors" itemprop="description">
+        {{ page.authors }}
+      </p>
+      {% endif %}
+      {% if page.links %}
+      
+      <p class="page__links" itemprop="description">
+        {% for link in page.links %}
+        {% if link.name and link.link contains "http" %}
+        <a href="{{ link.link }}">{{ link.name    }}</a>
+        {% elsif link.name contains "Bibtex"  %}
+        <a href="{{base_path}}{{ page.url }}index.html#bibtex">{{ link.name    }}</a>
+        {% else %}
+        <a href="{{base_path}}{{ link.link }}">{{ link.name      }}</a>
+        {% endif %}
+        {% endfor %}
+      </p>
+      {% endif %}
       <section class="page__content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">

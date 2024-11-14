@@ -116,7 +116,51 @@
     text-decoration: none;
   }
 }
-
+.archive__item-teaser_leftOfText {
+  @extend .archive__item-teaser;
+  float: left;
+  border-radius: $border-radius;
+  overflow: hidden;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 14px;
+  width: 150px;
+  @include breakpoint($medium) {
+    width: 180px;
+  }
+  @include breakpoint($large) {
+    width: 200px;
+  }
+  @include breakpoint($x-large) {
+    width: 200px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+}
+.archive__item:hover {
+  .archive__item-teaser {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+  .archive__item-teaser_leftOfText {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+  .archive__item-teaser-link {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.feature__item > .archive__item:hover {
+  .archive__item-teaser > img {
+    filter: brightness(50%);
+  }
+}
 /*
    List view
    ========================================================================== */

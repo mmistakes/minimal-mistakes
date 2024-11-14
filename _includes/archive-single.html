@@ -16,6 +16,10 @@
       <div class="archive__item-teaser">
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
+    {% elsif include.type == "post" and teaser %}
+      <div class="archive__item-teaser_leftOfText">
+        <img src="{{ teaser | relative_url }}" alt="">
+      </div>  
     {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}

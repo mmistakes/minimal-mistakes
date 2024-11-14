@@ -434,13 +434,17 @@ $text-alignments: left, right, start, end, center, justify;
     font-size: $type-size-6;
   }
 }
-
+a {
+  text-decoration: none;
+  text-decoration-color: $link-color;
+}
 a.reversefootnote {
   color: $gray;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+    text-decoration-color: $link-color-hover;
   }
 }
 
