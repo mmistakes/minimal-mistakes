@@ -24,7 +24,7 @@ sidebar-sample:
       - title: "5. Video(You Tube)"
         url: https://iregg.github.io/post%20formats/video-play/
       - title: "6. Sidebar"
-         url: https://iregg.github.io/sidebar/
+        url: https://iregg.github.io/sidebar/
   - title: "Parent Page B"
     children:
       - title: "Child Page B1"
