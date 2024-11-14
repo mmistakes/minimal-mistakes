@@ -1,0 +1,15 @@
+---
+layout: archive
+author_profile: true
+header:
+  overlay_image: assets/image/thumbnail/homepage_thumbnail.jpeg
+  overlay_filter: 0.5
+excerpt: "Projects"
+--- 
+<p>Projects</p>
+{% for post in site.my_posts %}
+<div class="post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div>{{ post.content }}</div>
+</div>
+{% endfor %}

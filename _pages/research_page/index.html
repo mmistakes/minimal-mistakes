@@ -1,0 +1,21 @@
+---
+layout: archive
+author_profile: true
+header:
+  overlay_image: assets/image/thumbnail/homepage_thumbnail.jpeg
+  overlay_filter: 0.5
+excerpt: "Research"
+---
+
+<h3 class="archive__subtitle">Publications</h3>
+
+{% for post in site.categories.Journal %}
+	{% include archive-single.html type='post' %}
+{% endfor %}
+
+<p class="archive__subtitle">2nd Author</p>
+
+{% for post in site.categories.2ndAuthor %}
+	{% include archive-single.html type='post' %}
+{% endfor %}
+
