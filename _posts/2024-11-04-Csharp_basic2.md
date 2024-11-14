@@ -109,6 +109,15 @@ Console.WriteLine(collection[0]);
 - 가변 배열
 
 ```csharp
+int[][] arr = new int[2][];
+arr[0] = new int[2] {1,2};
+arr[1] = new int[3] {4,5,6};
+
+int[][] arr = new int[][] {
+    new int[] {1,2},
+    new int[] {4,5,6}
+};
+arr[1][2] = 1;
 ```
 
 ### 7. delegate
