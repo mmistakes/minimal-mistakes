@@ -13,14 +13,18 @@ main:
 sidebar-sample:
   - title: "iregg.github.io Page"
     children:
-      - title: "첫 포스팅 압니다. 설레네요."
+      - title: "1. 첫 포스팅 입니다. 설레네요."
         url: https://iregg.github.io/first/
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
+      - title: "2. 사이트 모음집"
+        url: https://iregg.github.io/sitelist/
+      - title: "3. 경력기술서"
+        url: https://iregg.github.io/third/
+      - title: "4. 유투브 동영상"
+        url: https://iregg.github.io/video/
+      - title: "5. Video(You Tube)"
+        url: https://iregg.github.io/post%20formats/video-play/
+      - title: "6. Sidebar"
+         url: https://iregg.github.io/sidebar/
   - title: "Parent Page B"
     children:
       - title: "Child Page B1"
