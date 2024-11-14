@@ -124,32 +124,3 @@ int[][] arr = new int[][] {
 };
 arr[1][2] = 1;
 ```
-
-### 7. delegate
-
-- delegate는 일종의 참조 타입으로, 특정 메서드를 가리킬 수 있는 "메서드 포인터" 역할을 합니다.
-
-```csharp
-delegate void MyDelegate(string msg);;
-
-class Program
-{
-    static void PrintA(string msg) {
-        Console.WriteLine("A : " + msg);
-    }
-
-    static void PrintB(string msg) {
-        Console.WriteLine("B : " + msg);
-    }
-
-    static void Main()
-    {
-        MyDelegate fn = PrintA;
-        fn += PrintB;
-        fn("Hello, World!");
-    
-        fn -= PrintA;
-        fn("Hello, World!");
-    }
-}
-```
