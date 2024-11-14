@@ -99,28 +99,31 @@ collection[0] = "Hello, World!";
 Console.WriteLine(collection[0]);
 ```
 
-### 6. 배열
+### 7. delegate
 
-- 고정 배열
-
-```csharp
-int[] arr = new int[3] {1,2,3};
-int[] arr = new int[] {1,2,3};
-int[] arr = {1,2,3};
-
-int[,] arr = new int[,] {{1,2,3},{4,5,6}};
-```
-
-- 가변 배열
+- delegate는 일종의 참조 타입으로, 특정 메서드를 가리킬 수 있는 "메서드 포인터" 역할을 합니다.
 
 ```csharp
-int[][] arr = new int[2][];
-arr[0] = new int[2] {1,2};
-arr[1] = new int[3] {4,5,6};
+delegate void MyDelegate(string msg);;
 
-int[][] arr = new int[][] {
-    new int[] {1,2},
-    new int[] {4,5,6}
-};
-arr[1][2] = 1;
+class Program
+{
+    static void PrintA(string msg) {
+        Console.WriteLine("A : " + msg);
+    }
+
+    static void PrintB(string msg) {
+        Console.WriteLine("B : " + msg);
+    }
+
+    static void Main()
+    {
+        MyDelegate fn = PrintA;
+        fn += PrintB;
+        fn("Hello, World!");
+    
+        fn -= PrintA;
+        fn("Hello, World!");
+    }
+}
 ```
