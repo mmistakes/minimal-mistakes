@@ -108,7 +108,7 @@ int[] arr = new int[3] {1,2,3};
 int[] arr = new int[] {1,2,3};
 int[] arr = {1,2,3};
 
-int[,] arr = new int[2,3] {{}};
+int[,] arr = new int[,] {{1,2,3},{4,5,6}};
 ```
 
 - 가변 배열
