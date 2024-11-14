@@ -104,7 +104,7 @@ Console.WriteLine(collection[0]);
 - 고정 배열
 
 ```csharp
-int[] arr = new int[] {{1,2,3},{4,5,6}};
+int[,] arr = new int[,] {{1,2,3},{4,5,6}};
 ```
 
 - 가변 배열
