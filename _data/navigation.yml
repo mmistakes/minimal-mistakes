@@ -11,10 +11,10 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-sample:
-  - title: "Parent Page A"
+  - title: "iregg.github.io Page"
     children:
-      - title: "Child Page A1"
-        url: /
+      - title: "첫 포스팅 압니다. 설레네요."
+        url: https://iregg.github.io/first/
       - title: "Child Page A2"
         url: /
       - title: "Child Page A3"
