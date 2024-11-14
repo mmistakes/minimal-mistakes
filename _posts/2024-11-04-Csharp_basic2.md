@@ -80,3 +80,21 @@ class MyClass
     public string Name { get; set; } = "ilyoung"; 
 }
 ```
+
+### 5. indexer
+
+```csharp
+public class SampleCollection<T>
+{
+    private T[] arr = new T[100];
+
+    public T this[int i] {
+        get { return arr[i]; }
+        set { arr[i] = value; }
+    }
+}
+
+SampleCollection<string> collection = new SampleCollection<string>();
+collection[0] = "Hello, World!";
+Console.WriteLine(collection[0]);
+```
