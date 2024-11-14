@@ -55,3 +55,28 @@ a.showMsg()
 MyClass b = new MyClass("b class");
 b.showMsg();
 ```
+
+### 3. 객체의 레퍼런스
+
+```csharp
+MyClass a = new MyClass();
+MyClass b = a;
+```
+
+### 4. class property (getter, setter)
+
+```csharp
+class MyClass
+{
+    int number;
+    string name;
+
+    public int Number {
+        get { return number; }
+        set { number = value; }
+    }
+
+    // Auto-Implemented Properties
+    public string Name { get; set; } = "ilyoung"; 
+}
+```
