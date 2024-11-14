@@ -1,6 +1,3 @@
-sidebar:
-  title: "Sample Title"
-  nav: sidebar-sample
 sidebar-sample:
   - title: "Parent Page A"
     children:
