@@ -35,7 +35,7 @@ Good headings
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
-## 윰석열 골프
+## 윤석열 골프
 ● 윤석열 대통령이 최근 군 골프장에서 골프를 쳤다는 사실이 알려지자, 대통령실은 트럼프 대통령과 이른바 '골프 외교'에 대비한 거라고 해명했습니다. 하지만 트럼프가 당선되기 전에도 윤 대통령이 골프를 쳤단 주장이 나오면서 논란이 일고 있습니다.
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
