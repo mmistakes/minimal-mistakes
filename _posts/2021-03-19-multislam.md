@@ -5,7 +5,7 @@ categories:
 tags:
  - Multi Robot System
 header:
-  teaser: /assets/image/thumbnail/tro2023.gif
+  teaser: /assets/image/thumbnail/homepage_multislam_7x_comp_crop.gif
 authors: Youngseok, Changsuk Oh, <u>Yunwoo Lee*</u>, and H. Jin Kim
 links:
 - paper:
@@ -14,7 +14,7 @@ links:
 - bibtex:
   name: "Bibtex"
 ---
-{% include video id="zxpBws6kxNI" provider="youtube" %}
+{% include video id="aaVWl64vYxQ" provider="youtube" %}
 
 **Abstract:** Multirobot simultaneous localization and mapping (SLAM) requires technical ingredients such as systematic construction of multiple SLAM systems and collection of information from each robot. In particular, map fusion is an essential process of multirobot SLAM that combines multiple local maps estimated by team robots into a global map. Fusion of multiple local maps is usually based on interloop detection that recognizes the same scene visited by multiple robots, or robot rendezvous where a member(s) of a robot team is observed in another member's images. This article proposes a collaborative monocular SLAM including a map fusion algorithm that utilizes rendezvous, which can happen when multirobot team members operate in close proximity. Unlike existing rendezvous-based approaches that require additional sensors, the proposed system uses a monocular camera only. Our system can recognize robot rendezvous using nonstatic features (NSFs) without fiducial markers to identify team robots. NSFs, which are abandoned as outliers in typical SLAM systems for not supporting ego-motion, can include relative bearing measurements between robots in a rendezvous situation. The proposed pipeline consists of the following: first, a feature identification module that extracts the relative bearing measurements between robots from NSFs consisting of anonymous bearing vectors with false positives, and second, a map fusion module that integrates the map from the observer robot with the maps from the observed robots using identified relative measurements. The feature identification module can operate quickly using the proposed alternating minimization algorithm formulated by two subproblems with closed-form solutions. The experimental results confirm that our collaborative monocular SLAM system recognizes rendezvous rapidly and robustly, and fuses local maps of team robots into a global map accurately.
 

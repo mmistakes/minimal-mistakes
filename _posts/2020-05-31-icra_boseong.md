@@ -5,7 +5,7 @@ categories:
 tags:
  - Aerial Tracking
 header:
-  teaser: /assets/image/thumbnail/tro2023.gif
+  teaser: /assets/image/thumbnail/homepage_boseong-icra_gif.gif
 authors: Boseong Jeon, <u>Yunwoo Lee*</u>, and H. Jin Kim
 links:
 - paper:
@@ -14,7 +14,7 @@ links:
 - bibtex:
   name: "Bibtex"
 ---
-{% include video id="zxpBws6kxNI" provider="youtube" %}
+{% include video id="_JSwXBwYRl8" provider="youtube" %}
 
 **Abstract:** This work suggests an integrated approach for a drone (or multirotor) to perform an autonomous videography task in a 3-D obstacle environment by following a moving object. The proposed system includes 1) a target motion prediction module which can be applied to dense environments and 2) a hierarchical chasing planner. Leveraging covariant optimization, the prediction module estimates the future motion of the target assuming it efforts to avoid the obstacles. The other module, chasing planner, is in a bi-level structure composed of preplanner and smooth planner. In the first phase, we exploit a graph-search method to plan a chasing corridor which incorporates safety and visibility of target. In the subsequent phase, we generate a smooth and dynamically feasible trajectory within the corridor using quadratic programming (QP). We validate our approach with multiple complex scenarios and actual experiments. The source code and the experiment video can be found in https://github.com/icsl-Jeon/traj_gen_vis and https://www.youtube.com/watch?v=_JSwXBwYRl8.
 

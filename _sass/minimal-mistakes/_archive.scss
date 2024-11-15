@@ -124,10 +124,10 @@
   overflow: hidden;
   -webkit-transition: $global-transition;
   transition: $global-transition;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   margin-left: 0px;
-  margin-right: 14px;
+  margin-right: 20px;
   width: 150px;
 
   @include breakpoint($medium) {
@@ -167,7 +167,7 @@
 
 .feature__item>.archive__item:hover {
   .archive__item-teaser>img {
-    filter: brightness(50%);
+    filter: brightness(70%);
   }
 }
 

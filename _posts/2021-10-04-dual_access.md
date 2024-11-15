@@ -5,7 +5,7 @@ categories:
 tags:
  - Aerial Tracking
 header:
-  teaser: /assets/image/thumbnail/tro2023.gif
+  teaser: /assets/image/thumbnail/homepage_dualtarget_gif.gif
 authors: Boseong Jeon, <u>Yunwoo Lee*</u>, Jeongjun Choi, Jungwon Park, and H. Jin Kim
 links:
 - paper:

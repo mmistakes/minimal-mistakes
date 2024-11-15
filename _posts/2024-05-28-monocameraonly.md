@@ -1,11 +1,11 @@
 ---
-title: "(R-AL) Mono-Camera-Only Target Chasing for a Drone in a Dense Environment by Cross-Modal Learning"
+title: "(RA-L) Mono-Camera-Only Target Chasing for a Drone in a Dense Environment by Cross-Modal Learning"
 categories:
  - 2ndAuthor
 tags:
  - deep learning
 header:
-  teaser: /assets/image/thumbnail/tro2023.gif
+  teaser: /assets/image/thumbnail/homepage_monocamera_gif.gif
 authors: Seungyeon Yoo, Seungwoo Jung, <u>Yunwoo Lee</u>, Dongsek Shim, and H. Jin Kim
 links:
 - paper:
