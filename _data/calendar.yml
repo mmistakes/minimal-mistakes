@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "5b - Ausflug Gartenarbeitsschule",
-    "title": "5b - Ausflug Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2Y4MHMwYmhrczNvOGpodXFpYjI1cjE4dWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-14T07:50:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-14T12:30:00+01:00"
-    },
-    "created": "2024-11-08T06:40:26.000Z",
-    "updated": "2024-11-08T06:40:26.321Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug rbb Masurenallee",
     "title": "A5 - Ausflug rbb Masurenallee",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-26T12:12:59.000Z",
     "updated": "2024-09-26T12:12:59.042Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Lesepatinnen-Treffen",
+    "title": "Lesepatinnen-Treffen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHMyNWJ2c3ZpbmI5bWV0bjdiZWFhMGkyNG4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-21T14:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-21T15:00:00+01:00"
+    },
+    "created": "2024-10-10T06:15:00.000Z",
+    "updated": "2024-10-10T06:15:00.922Z"
   }
 ]
