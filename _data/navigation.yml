@@ -25,12 +25,12 @@ sidebar-sample:
         url: https://iregg.github.io/post%20formats/video-play/
       - title: "6. Sidebar"
         url: https://iregg.github.io/sidebar/
-  - title: "Parent Page B"
+  - title: "Basic Page B"
     children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
+      - title: "Header Image Overlay"
+        url: https://iregg.github.io/header-image-overlay/
+      - title: "Table of Contents"
+        url: https://iregg.github.io/table-of-contents/
       - title: "Child Page B3"
         url: /
       - title: "Child Page B4"
