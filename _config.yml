@@ -324,11 +324,6 @@ defaults:
       share: true
       related: true
 
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
 defaults:
   # _portfolio
   - scope:
@@ -338,3 +333,8 @@ defaults:
       layout: single
       author_profile: false
       share: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
