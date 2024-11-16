@@ -323,6 +323,16 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 collections:
   portfolio:
