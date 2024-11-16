@@ -323,8 +323,6 @@ defaults:
       comments: # true
       share: true
       related: true
-
-defaults:
   # _portfolio
   - scope:
       path: ""
