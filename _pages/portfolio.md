@@ -1,9 +1,8 @@
-defaults:
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
+---
+title: Portfolio
+layout: collection
+permalink: /portfolio/
+collection: portfolio
+entries_layout: grid
+classes: wide
+---
