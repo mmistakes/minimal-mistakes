@@ -1,74 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5 - Ausflug rbb Masurenallee",
-    "title": "A5 - Ausflug rbb Masurenallee",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MnJ0OWVsZW1manN0OGEyZGhhczI4N2ZxZXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-15T07:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-15T11:00:00+01:00"
-    },
-    "created": "2024-10-08T12:49:49.000Z",
-    "updated": "2024-10-08T12:49:49.363Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A2 - Ausflug rbb",
-    "title": "A2 - Ausflug rbb",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Njh1c29iYnZjZnZsdXN1Z3AwNG9zODhhcXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-15T07:40:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-15T11:30:00+01:00"
-    },
-    "created": "2024-11-11T06:31:32.000Z",
-    "updated": "2024-11-11T06:31:32.796Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A3 - Ausflug rbb Masurenallee",
-    "title": "A3 - Ausflug rbb Masurenallee",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MnRjOXB1cTIwZnR2YzhuM2NjOTlhZ2I5dGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-15T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-15T12:00:00+01:00"
-    },
-    "created": "2024-10-08T12:49:11.000Z",
-    "updated": "2024-10-08T12:49:11.782Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A9 - Ausflug ins Planetarium",
-    "title": "A9 - Ausflug ins Planetarium",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NmgwOTNuNjNxMjRyYTVyazFzOW52NGxnbzEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-15T09:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-15T13:30:00+01:00"
-    },
-    "created": "2024-11-07T08:40:03.000Z",
-    "updated": "2024-11-07T08:40:03.980Z"
-  },
-  {
-    "image_path": null,
     "alt": "4c - Jugendverkehrsschule (2. Termin)",
     "title": "4c - Jugendverkehrsschule (2. Termin)",
     "excerpt": null,
@@ -86,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "A6 - Ausflug Planetarium",
+    "title": "A6 - Ausflug Planetarium",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzY1a2k5NGE4bTR1cDdnZTFmYXI4NDYyc3YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-21T09:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-21T13:45:00+01:00"
+    },
+    "created": "2024-11-15T08:10:37.000Z",
+    "updated": "2024-11-15T08:10:37.543Z"
+  },
+  {
+    "image_path": null,
     "alt": "Lesepatinnen-Treffen",
     "title": "Lesepatinnen-Treffen",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2024-10-10T06:15:00.000Z",
     "updated": "2024-10-10T06:15:00.922Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A9 - Ausflug Bücherei",
+    "title": "A9 - Ausflug Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzBvZHZ2M2ZyZWYzdjl1Ympzb240M2kyaWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-22T09:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-22T12:00:00+01:00"
+    },
+    "created": "2024-11-07T08:40:55.000Z",
+    "updated": "2024-11-07T08:40:55.814Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Bibliothek",
+    "title": "A5 - Ausflug zur Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-22T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-22T13:30:00+01:00"
+    },
+    "created": "2024-09-02T12:11:06.000Z",
+    "updated": "2024-11-04T06:51:24.726Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug Bücherei",
+    "title": "6b - Ausflug Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2s0NDdyc21wdTZrNXUwbXU2Z3NyNHIzN2UgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-11-27T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-11-27T12:00:00+01:00"
+    },
+    "created": "2024-10-10T06:16:25.000Z",
+    "updated": "2024-10-10T06:16:25.357Z"
   }
 ]
