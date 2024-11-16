@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "MMS"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Make me smile"
+name                     : "Your Name"
 description              : "An amazing website."
 url                      : "https://iregg.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Make Me Smile"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
