@@ -1,4 +1,3 @@
-# The Walking Professional: Why Leaders Should Work on the Move
 
 For the past year, I've been doing roughly 80% of my work while walking or riding my bike (except when my ACL and MCL injuries prevented it). While this approach isn't feasible for everyone—think chefs, physiotherapists, or graphic artists—many of us, especially knowledge workers, can incorporate more movement into our workday, regardless of whether we’re working remotely or from an office.
 
@@ -14,10 +13,10 @@ My work revolves around three core activities: consuming information, deep think
 
 Staying informed while staying active is manageable by converting written content into audio:
 
-1. **Source Variety**: I follow major publications like *Hacker News*, *Wall Street Journal*, *The Economist*, *Reuters*, *Bloomberg*, *The Guardian*, and *Al Jazeera*.
+1. **Source Variety**: I follow many sources such as [Hacker News](https://news.ycombinator.com), [WSJ](https://www.wsj.com), [The Economist](https://www.economist.com), [Bloomberg](https://www.bloomberg.com/), [Al Jazeera](https://www.aljazeera.com), [Science](https://www.science.org), and [Krebs](https://krebsonsecurity.com).
 2. **Audio Features**: I use apps with built-in audio options to have articles read aloud during walks or rides.
 3. **AI Support**: For articles without audio, I load them into ChatGPT or other AI tools for text-to-speech conversion.
-4. **Flexible Queueing**: I set up 10-15 minutes of content at a time, allowing easy switching when finished.
+4. **Flexible Queueing**: I set up 15 minutes of content at a time, allowing easy switching when finished.
 5. **Longer Reads**: This setup also works for audiobooks and other in-depth content, keeping me updated while moving.
 
 ---
@@ -26,8 +25,8 @@ Staying informed while staying active is manageable by converting written conten
 
 For tasks like writing blog posts, emails, or proposals, I've adapted my process to work on the move:
 
-1. **Voice Notes**: I capture thoughts through voice notes, using apps like Apple’s native tool or AIKO.
-2. **Transcription**: The audio is converted to text and further refined through AI tools like Claude, ChatGPT, and Perplexity.
+1. **Voice Notes**: I capture thoughts through voice notes, using apps like Apple’s native tool or AIKO (which uses OpenAI's [whisper](https://github.com/openai/whisper)).
+2. **Transcription**: The audio is converted to text and further refined through AI tools like [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Perplexity](https://www.perplexity.ai), and [Grok](https://x.ai).
 3. **Collaboration**: Once drafted, I share content via WhatsApp for feedback, streamlining collaborative refinement.
 
 ---
