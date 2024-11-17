@@ -1,4 +1,6 @@
+---
 Title: I Am Addicted to Heroin
+---
 
 Addiction is a difficult thing to admit. It’s isolating, consuming, and often starts innocently—just a spark of curiosity. Curiosity becomes pleasure, pleasure becomes habit, and before long, the habit takes control. The cost mounts, often outweighing the fleeting benefits, yet the cycle persists. Breaking free feels like hell on earth, leaving scars—emotional, physical, and social.
 
