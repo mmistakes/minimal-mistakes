@@ -6,6 +6,10 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Sample Posts"
     url: https://iregg.github.io/header-image-overlay/
+  - title: "News"
+    url: https://iregg.github.io/table-of-contents/
+  - title: "Video"
+    url: https://iregg.github.io/post%20formats/video-play/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
