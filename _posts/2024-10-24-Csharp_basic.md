@@ -68,9 +68,11 @@ Console.WriteLine("{0}", c.age);
 ### 5. boxing 과 unboxing
 
 ```csharp
+//boxing : 값 타입(int, struct)을 참조 타입으로 변환
 int n = 5;
 object obj = n;
 
+//unboxing : 참조 타입을 값 타입으로 변환
 int t = (int)obj;
 Console.WriteLine(t);
 ```
