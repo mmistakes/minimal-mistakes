@@ -2127,6 +2127,59 @@ cs: &DEFAULT_CS
 cs-CZ:
   <<: *DEFAULT_CS
 
+# Bulgarian
+# -----------------
+bg: &DEFAULT_BG
+  skip_links                 : "Пропуснете връзките"
+  skip_primary_nav           : "Преминете към основната навигация"
+  skip_content               : "Преминете към съдържанието"
+  skip_footer                : "Преминете към долния колонтитул"
+  page                       : "Страница"
+  pagination_previous        : "Предишна"
+  pagination_next            : "Следваща"
+  breadcrumb_home_label      : "Начало"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Превключване на меню"
+  search_label               : "Превключване на търсене"
+  toc_label                  : "На тази страница"
+  ext_link_label             : "Пряка връзка"
+  less_than                  : "по-малко от"
+  minute_read                : "минута четене"
+  share_on_label             : "Споделете"
+  meta_label                 :
+  tags_label                 : "Етикети:"
+  categories_label           : "Категории:"
+  date_label                 : "Обновено:"
+  comments_label             : "Оставете коментар"
+  comments_title             : "Коментари"
+  more_label                 : "Научете повече"
+  related_label              : "Може да са ви интересни"
+  follow_label               : "Последвайте:"
+  feed_label                 : "Емисия"
+  powered_by                 : "Осъществено чрез"
+  website_label              : "Уебсайт"
+  email_label                : "Е-поща"
+  recent_posts               : "Последни публикации"
+  undefined_wpm              : "Недефиниран параметър words_per_minute в _config.yml"
+  comment_form_info          : "Вашият адрес за е-поща няма да бъде публикуван. Задължителните полета са обозначени"
+  comment_form_comment_label : "Коментар"
+  comment_form_md_info       : "Поддържа се Маркдаун."
+  comment_form_name_label    : "Име"
+  comment_form_email_label   : "Адрес за е-поща"
+  comment_form_website_label : "Уебсайт (по желание)"
+  comment_btn_submit         : "Изпращане на коментар"
+  comment_btn_submitted      : "Изпратено"
+  comment_success_msg        : "Благодарности за коментара! Ще се покаже на сайта, след като бъде одобрен."
+  comment_error_msg          : "Съжаляваме, възникна грешка с изпращането. Моля, уверете се, че всички задължителни полета са попълнени и опитайте отново."
+  loading_label              : "Зареждане..."
+  search_label_text          : "Въведете термин за търсене..."
+  search_placeholder_text    : "Въведете термин за търсене..."
+  search_algolia_no_results  : "Няма резултати"
+  results_found              : "Намерени резултати"
+  back_to_top                : "Обратно към началото"
+bg-BG:
+  <<: *DEFAULT_BG
+
 # Another locale
 # --------------
 #
