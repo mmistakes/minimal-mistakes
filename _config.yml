@@ -316,7 +316,7 @@ collections:
     permalink: /:collection/:path/
   news:
     output: true
-    permalink: /:news/:path/
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
