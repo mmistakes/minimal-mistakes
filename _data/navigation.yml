@@ -64,7 +64,7 @@ sidebar-sample:
 
 # sidebar-news links
 sidebar-news:
-  - title: "News List"
+  - title: "2024년 11월 넷째주"
     children:
       - title: "2024-11-15(금)"
         url: https://iregg.github.io/news/2024-11-15-news/
