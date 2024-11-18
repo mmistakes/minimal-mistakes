@@ -314,6 +314,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:news/:path/
 
 # Defaults
 defaults:
@@ -332,6 +335,14 @@ defaults:
   - scope:
       path: ""
       type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _news
+  - scope:
+      path: ""
+      type: nes
     values:
       layout: single
       author_profile: false
