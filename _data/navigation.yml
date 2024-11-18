@@ -14,6 +14,8 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+# sidebar-sample links
 sidebar-sample:
   - title: "iregg.github.io Page"
     children:
@@ -59,3 +61,12 @@ sidebar-sample:
         url: /
       - title: "Child Page D2"
         url: /
+
+# sidebar-news links
+sidebar-news:
+  - title: "News List"
+    children:
+      - title: "2024-11-15(금)"
+        url: https://iregg.github.io/news/2024-11-15-news/
+      - title: "2024-11-18(월)"
+        url: https://iregg.github.io/news/2024-11-18-news/
