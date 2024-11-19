@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Editing iOS Simulator Screenshots with Device Bezels"
 excerpt: "Learn how to edit screenshots of the iOS simulator with device bezels & without the toolbar."
 seo_title: "iOS Simulator Screenshots with Device Bezels"
