@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Creating a playing card loading animation in SwiftUI"
 excerpt: "The idea for this animation was a gif I had seen on the now defunct gfycat website when looking for inspiration for creating a loading view for a personal project I'd been working on."
 seo_title: "Creating a playing card loading animation in SwiftUI"
