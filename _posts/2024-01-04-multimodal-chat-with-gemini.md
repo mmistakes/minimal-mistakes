@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"
 excerpt: "In this post we will see how to perform multimodal (text-and-image) conversations using the `gemini-pro` & `gemini-pro-vision` models."
 seo_title: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"
