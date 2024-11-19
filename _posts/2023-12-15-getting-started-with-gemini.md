@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "How to get started with Gemini AI on iOS with SwiftUI"
 excerpt: "So Google released the Gemini SDK for developers just a few days ago and in this post I'm going to show you how you can get started with it in just a few steps and lines of code."
 seo_title: "How to get started with Gemini AI on iOS with SwiftUI"
