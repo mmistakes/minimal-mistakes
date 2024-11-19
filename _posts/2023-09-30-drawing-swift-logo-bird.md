@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Drawing the Swift logo bird in SwiftUI"
 excerpt: "I decided to get the official logo than simply Googling for an image since you find so many variations online. If you go to the resources section on Apple's developer website you'll find a .zip package at the bottom of the page that you can download along with guidelines. The guidelines are especially important if you plan to use the logo in your application"
 seo_title: "Drawing the Swift logo bird in SwiftUI"
