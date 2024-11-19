@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Voice & Video Calling app on iOS using ZEGOCLOUD API - Swift Tutorial"
 excerpt: "In this tutorial I will guide you on how to create a voice & video calling app using ZEGOCLOUD"
 seo_title: "Voice & Video Calling app on iOS using ZEGOCLOUD API | Swift Tutorial"
