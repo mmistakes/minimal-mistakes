@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"
 excerpt: "In this post we'll once again harness the power of Gemini AI's data generation combining it with Dall-E's image generation capability to create a storybook app for kids."
 seo_title: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"
