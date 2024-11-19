@@ -1,6 +1,6 @@
 ---
 layout: single
-published: false
+published: true
 title: "Creating the scratch card effect in SwiftUI"
 excerpt: "The idea for this view came when I was going through Azam Sharp's video on drawing in SwiftUI using the `Canvas` view. I wondered if one could apply the strokes using the DragGesture to a view, it would somewhat replicate the scratch card effect that is normally seen in modern iOS applications"
 seo_title: "Creating the scratch card effect in SwiftUI"
