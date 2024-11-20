@@ -3,6 +3,7 @@ layout: single
 title: reguloGPT
 categories: paper
 toc: true
+toc_depth: 2
 ---
 
 # 논문 리뷰: reguloGPT
