@@ -15,14 +15,14 @@
 minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko"
+locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Blog"
-title_separator          : "*"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : # "Choi Sunmi"
+name                     : "Choi Sunmi"
 description              : # "An amazing website."
-url                      : # "https://choisunmi00.github.io"
+url                      : "https://choisunmi00.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
