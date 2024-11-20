@@ -1,6 +1,7 @@
 ---
 layout: single
 title: reguloGPT
+categories: paper
 ---
 
 # 논문 리뷰: reguloGPT
