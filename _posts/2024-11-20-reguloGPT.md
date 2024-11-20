@@ -2,17 +2,18 @@
 layout: single
 title: reguloGPT
 categories: paper
+toc: true
 ---
 
 # 논문 리뷰: reguloGPT
-{: .no_toc }
+<!-- {: .no_toc } -->
 [reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
 
-## Table of contents
+<!-- ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+{:toc} -->
 
 ---
 ## Background
