@@ -325,11 +325,8 @@ defaults:
       related: true
       show_date: true
       toc: true
-      toc_depth: 2
       toc_sticky: true
       toc_icon: "fa-solid fa-bars"
       toc_label: Contents
-      toc_h_min: 1
-      toc_h_max: 2
 
 date_format: "%Y-%m-%d"
