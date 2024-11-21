@@ -326,8 +326,8 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
-      toc_icon: "fa-regular fa-circle"
+      toc_icon: "fa-solid fa-bars"
       toc_label: Contents
-      toc_depth: 1
+      toc_h_max: 2
 
 date_format: "%Y-%m-%d"
