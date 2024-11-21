@@ -30,7 +30,7 @@
   @at-root .page__content #{&} h4 {
     /* using at-root to override .page-content h4 font size*/
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 0.75em;
   }
 
   p {
