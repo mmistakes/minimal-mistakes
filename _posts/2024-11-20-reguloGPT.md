@@ -1,21 +1,13 @@
 ---
 layout: single
 title: reguloGPT
-projects: reguloLlama
+categories: reguloLlama
 tags: paper
-sidebar: 
-  nav: docs
 ---
 
 # 논문 리뷰: reguloGPT
-<!-- {: .no_toc } -->
+
 [reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
-
-<!-- ## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc} -->
 
 ---
 ## Background
@@ -26,7 +18,6 @@ sidebar:
 - m<sup>6</sup>A(N6-methyladenosine): mRNA(단백질 설계도)에 부여하는 화학적 변형. 유전자 발현을 조절하기 위한 기작.
 - ICL: in-context learning.
 - outdegree: 방향성 그래프에서 node로부터 시작하는 고유한 edge.
-{: .fs-3 }
 
 ## 0. Abstract
 

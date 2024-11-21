@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Project"
-    url: /projects/
+    url: /categories/
   - title: "Tag"
     url: /tags/
   - title: "Search"
@@ -11,13 +11,9 @@ docs:
   - title: Category
     children: 
       - title: "Project"
-        url: /projects/
-        children:
-          - title: "reguloLlama"
+        url: /categories/
       - title: "Tag"
         url: /tags/
-  - title: Projects
-  - title: Study 
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"

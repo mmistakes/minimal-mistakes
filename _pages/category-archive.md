@@ -1,7 +1,7 @@
 ---
 title: "Project"
-layout: projects
-permalink: /projects/
+layout: categories
+permalink: /categoties/
 athor_profile: true
 sidebar_main: true
 ---
