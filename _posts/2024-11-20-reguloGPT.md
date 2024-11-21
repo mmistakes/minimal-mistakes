@@ -1,8 +1,10 @@
 ---
 layout: single
 title: reguloGPT
-categories: reguloLlama
+projects: reguloLlama
 tags: paper
+sidebar: 
+  nav: docs
 ---
 
 # 논문 리뷰: reguloGPT
