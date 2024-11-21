@@ -326,7 +326,7 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
-      toc_icon: ""
+      toc_icon: "fa-regular fa-circle"
       toc_label: Contents
       toc_depth: 1
 
