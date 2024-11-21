@@ -2,8 +2,6 @@
 layout: single
 title: reguloGPT
 categories: paper
-toc: true
-toc_depth: 1
 ---
 
 # 논문 리뷰: reguloGPT
@@ -124,18 +122,18 @@ toc_depth: 1
 1) 벤치마크 데이터 세트 평가  
   Precision 및 F1 score 지표  
 
-      예측된 node 및 edge를 평가하는 기준  
-            a. True positive: GPT-4의 예측 node가 벤치마크 주석과 완전히 일치할 경우  
-            b. False positive: node나 edge가 잘못 추출될 경우 혹은 node는 일치하지만 서술어가 올바르지 않거나 추출되지 않았을 경우  
-            c. False negative: 모든 node와 edge에 대한 예측이 일치하지 않았을 경우
+    예측된 node 및 edge를 평가하는 기준  
+          a. True positive: GPT-4의 예측 node가 벤치마크 주석과 완전히 일치할 경우  
+          b. False positive: node나 edge가 잘못 추출될 경우 혹은 node는 일치하지만 서술어가 올바르지 않거나 추출되지 않았을 경우  
+          c. False negative: 모든 node와 edge에 대한 예측이 일치하지 않았을 경우
 
 
-3) G-Eval 체계  
+3) G-Eval 체계
   수동 주석 작업을 자동화하기 위해 LLM 사용.  
   프레임워크 GPT-4-evaluation 제안.  
   
-      ![Fig. 4.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg)   
-      평가를 위한 G-Eval 프롬프트 / A: 컨텍스트 평가, B: 그래프 평가  
+    ![Fig. 4.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg)   
+    평가를 위한 G-Eval 프롬프트 / A: 컨텍스트 평가, B: 그래프 평가  
 
 ## 3. Results  
 
