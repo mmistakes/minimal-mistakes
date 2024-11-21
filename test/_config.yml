@@ -272,7 +272,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       share: true
       related: true
   # _pages

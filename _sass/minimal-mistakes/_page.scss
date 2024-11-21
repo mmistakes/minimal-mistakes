@@ -109,7 +109,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   /* paragraph indents */
@@ -332,14 +332,24 @@ body {
   }
 }
 
+// .page__taxonomy-item {
+//   display: inline-block;
+//   margin-inline-end: 5px;
+//   margin-bottom: 8px;
+//   padding: 5px 10px;
+//   text-decoration: none;
+//   border: 1px solid mix(#000, $border-color, 25%);
+//   border-radius: $border-radius;
 .page__taxonomy-item {
   display: inline-block;
   margin-inline-end: 5px;
   margin-bottom: 8px;
-  padding: 5px 10px;
+  padding: 2px 10px; /* 세로 폭 줄이기: 기존 5px에서 2px로 */
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
-  border-radius: $border-radius;
+  border: none; /* 테두리 제거 */
+  background-color: #d4e0ef; /* 배경색을 옅은 회색으로 */
+  border-radius: $border-radius; /* 모서리 둥글기는 유지 (필요 시 수정 가능) */
+}
 
   &:hover {
     text-decoration: none;
