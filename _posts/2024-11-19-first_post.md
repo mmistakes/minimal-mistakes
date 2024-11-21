@@ -1,14 +1,15 @@
 ---
 layout: single
-title:  "백준 1904번 문제풀이"
+title:  "[python] 백준 1904번 문제풀이"
 categories: coding
 tags: [python, blog, baekjoon] 
 toc : true
 author_profile : false 
 ---
 
-백준 1904번 01타일 문제 풀이를 해보겠습니다
- 
+백준 1904번 01타일 문제 풀이를 해보겠습니다.
+
+
 출처 : [백준](https://www.acmicpc.net/problem/1904)
 #### 문제
 지원이에게 2진 수열을 가르쳐 주기 위해, 지원이 아버지는 그에게 타일들을 선물해주셨다. 그리고 이 각각의 타일들은 0 또는 1이 쓰여 있는 낱장의 타일들이다.
@@ -26,15 +27,25 @@ author_profile : false
 첫 번째 줄에 지원이가 만들 수 있는 길이가 N인 모든 2진 수열의 개수를 15746으로 나눈 나머지를 출력한다.
 
 #### 풀이
-커밋 테스트를 위한 추가 문장
+문제 설명: 점화식의 값을 특정 상수로 나눈 나머지를 구하는 문제
+
+n이 1일때는 1만 가능하고, n이 2일때는 11,00 그리고 n이 3일때는 100, 001, 111이 가능하다.
+
+n이 4일때는 1100, 1001, 0011, 1111, 0000이 가능하다.
+
+즉, 아래와 같은 점화식이 만들어진다.
+* tile(3) = tile(2) + tile(1)
+* tile(4) = tile(3) + tile(2)
+* tile(n) = tile(n-1) + tile(n-2)
+
+하지만 문제에서는 1,000,000까지의 N이 주어지고 tile(N)의 값이 매우 커질 수 있어서 15746으로 나눈 나머지를 저장한다.
 
 #### 코드
 ```python
-
 import sys
 input = sys.stdin.readline
 
-def dynamic(n) :
+def tile(n) :
     if n == 1 :
         return 1
     elif n == 2:
@@ -52,7 +63,7 @@ def dynamic(n) :
 
 def main():
     N = int(input().strip())
-    print(dynamic(N))
+    print(tile(N))
 
 main()
     
