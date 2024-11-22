@@ -1,8 +1,8 @@
 ---
 title: News
 layout: collection
-permalink: /news234/
-collection: news234
+permalink: /news/
+collection: news
 entries_layout: grid
 classes: wide
 ---
