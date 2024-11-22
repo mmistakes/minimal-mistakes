@@ -2,7 +2,7 @@
 title: "Mobile Wedding"
 excerpt: "병준 & 문영 결혼합니다."
 header:
-  image: 
+  image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
 sidebar:
   - title: "SAVE THE DATE"
