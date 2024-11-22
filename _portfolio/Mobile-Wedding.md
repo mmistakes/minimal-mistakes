@@ -20,6 +20,9 @@ gallery:
   - url: /assets/images/1732296620307.jpg
     image_path: /assets/images/1732296620307.jpg
     alt: "placeholder image 3"
+  - url: /assets/images/1732295652283.jpg
+    image_path: /assets/images/1732295652283.jpg
+    alt: "placeholder image 4"
 ---
 
 ### [모시는 말씀]
