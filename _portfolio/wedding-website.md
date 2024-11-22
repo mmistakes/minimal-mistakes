@@ -1,8 +1,8 @@
 ---
-title: "Foo Bar Identity"
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+title: "Mobile Wedding"
+excerpt: "병준 그리고 문영 (SAVE THE DATE: 2025-11-29)."
 header:
-  image: /assets/images/foo-bar-identity.jpg
+  image: /assets/images/1732294094349.jpg
   teaser: /assets/images/foo-bar-identity-th.jpg
 sidebar:
   - title: "Role"
