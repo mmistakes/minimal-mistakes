@@ -342,7 +342,7 @@ defaults:
   # _news
   - scope:
       path: ""
-      type: news
+      type: news234
     values:
       layout: single
       author_profile: false
