@@ -3,14 +3,14 @@ title: "Mobile Wedding"
 excerpt: "병준 그리고 문영 (SAVE THE DATE: 2025-11-29)."
 header:
   image: /assets/images/1732294094349.jpg
-  teaser: /assets/images/1732294094349.jpg
+  teaser: /assets/images/1732294709906.jpg
 sidebar:
-  - title: "Role"
+  - title: "11/29"
     image: /assets/images/1732294094349.jpg
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "더채플앳청담 오후 5시 커티지홀"
+  - title: "장소"
+    text: "서울특별시 강남구 선릉로 757"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
