@@ -1,8 +1,8 @@
 ---
 title: "Mobile Wedding"
-excerpt: "병준 그리고 문영 (SAVE THE DATE: 2025-11-29)."
+excerpt: "병준 그리고 문영 두 사람."
 header:
-  image: /assets/images/1732294094349.jpg
+  image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
 sidebar:
   - title: "SAVE THE DATE"
