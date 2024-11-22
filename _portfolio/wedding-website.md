@@ -6,7 +6,7 @@ header:
   teaser: /assets/images/1732294094349.jpg
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/images/1732294094349.jpg
     image_alt: "logo"
     text: "Designer, Front-End Developer"
   - title: "Responsibilities"
