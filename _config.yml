@@ -314,7 +314,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  news:
+  news234:
     output: true
     permalink: /:collection/:path/
 
