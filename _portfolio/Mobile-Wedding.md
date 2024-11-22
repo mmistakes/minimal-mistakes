@@ -30,6 +30,6 @@ gallery:
 
 {% include gallery caption="함께 해온 707일 (문영 ♡ 병준)" %}
 
-Calendar
-![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg&w=300&h=300)
+Calendar <br>
+![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg&w=300)
 ![pooh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0Z94iqO01RBz7uaesVFC5hG-J4y-ldNCHg&usqp=CAU)
