@@ -2,7 +2,7 @@
 title: "Mobile Wedding"
 excerpt: "병준 & 문영 결혼합니다."
 header:
-  image: /assets/images/1732296620307.jpg
+  image: 
   teaser: /assets/images/1732294709906.jpg
 sidebar:
   - title: "SAVE THE DATE"
@@ -13,13 +13,13 @@ sidebar:
     text: "서울특별시 강남구 선릉로 757 <br> 더채플앳청담 커티지홀"
 gallery:
   - url: /assets/images/1732296602028.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+    image_path: /assets/images/1732296602028.jpg
     alt: "placeholder image 1"
   - url: /assets/images/1732296589153.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+    image_path: /assets/images/1732296589153.jpg
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - url: /assets/images/1732296620307.jpg
+    image_path: /assets/images/1732296620307.jpg
     alt: "placeholder image 3"
 ---
 <br><br>
