@@ -22,7 +22,6 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-## 이토록 아름다운 날에 <br> 이토록 어여쁜 너가 있으니 <br> 이토록 난 행복할 수 밖에
 ### [모시는 말씀]
 서로가 있기에 눈뜨는 매일이 행복했습니다.<br>
 이제 그 행복을 평생 곁에서 함께 하려 합니다.<br>
@@ -31,5 +30,5 @@ gallery:
 {% include gallery caption="함께 해온 707일 (문영 ♡ 병준)" %}
 
 Calendar <br>
-![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg&w=300)
+![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg)
 ![pooh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0Z94iqO01RBz7uaesVFC5hG-J4y-ldNCHg&usqp=CAU)
