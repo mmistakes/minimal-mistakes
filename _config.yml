@@ -289,6 +289,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+news_archive:
+  type: liquid
+  path: /news/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
