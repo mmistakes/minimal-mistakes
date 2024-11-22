@@ -1,6 +1,6 @@
 ---
 title: "Mobile Wedding"
-excerpt: "병준 그리고 문영 두 사람."
+excerpt: "병준 그리고 문영 결혼합니다."
 header:
   image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
@@ -8,7 +8,7 @@ sidebar:
   - title: "SAVE THE DATE"
     image: /assets/images/1732294094349.jpg
     image_alt: "logo"
-    text: "2025년 11월 29일 (토) 오후 5시 더채플앳청담 커티지홀"
+    text: "2025년 11월 29일 (토) 오후 5시 <br> 더채플앳청담 커티지홀"
   - title: "LOCATION"
     text: "서울특별시 강남구 선릉로 757"
 gallery:
