@@ -1,6 +1,6 @@
 ---
 title: News
-layout: posts
+layout: collection
 permalink: /news/
 collection: news
 entries_layout: grid
