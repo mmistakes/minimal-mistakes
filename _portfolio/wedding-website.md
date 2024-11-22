@@ -3,7 +3,7 @@ title: "Mobile Wedding"
 excerpt: "병준 그리고 문영 (SAVE THE DATE: 2025-11-29)."
 header:
   image: /assets/images/1732294094349.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  teaser: /assets/images/1732294094349.jpg
 sidebar:
   - title: "Role"
     image: http://placehold.it/350x250
