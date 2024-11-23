@@ -198,7 +198,7 @@ https://github.com/Huang-AI4Medicine-Lab/reguloGPT
 
   => MRP의 특징
 
-### C. m<sup>6</sup>A-KG는 다양한 암 유형에서 m<sup>6</sup> 기능의 독특한 메커니즘을 보여준다  
+**C. m<sup>6</sup>A-KG는 다양한 암 유형에서 m<sup>6</sup> 기능의 독특한 메커니즘을 보여준다**  
 
 - m<sup>6</sup>A 조절 기능에 대해 알 수 있다.  
   m<sup>6</sup>A 조절자, 질병 표현형, 종양 전이 관여, 종양 억제 유전자의 암 의존적 조절 등 조절 메커니즘을 KG를 통해 해석할 수 있다.
