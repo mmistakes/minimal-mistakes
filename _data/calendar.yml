@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5 - Ausflug zur Bibliothek",
-    "title": "A5 - Ausflug zur Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGlpbG9yb2YzMTF2bzV0bHQwNDg3Z2gxOWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-22T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-22T10:00:00+01:00"
-    },
-    "created": "2024-09-02T12:11:06.000Z",
-    "updated": "2024-11-21T11:55:01.697Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A9 - Ausflug Bücherei",
-    "title": "A9 - Ausflug Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzBvZHZ2M2ZyZWYzdjl1Ympzb240M2kyaWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-22T09:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-22T12:00:00+01:00"
-    },
-    "created": "2024-11-07T08:40:55.000Z",
-    "updated": "2024-11-07T08:40:55.814Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b - Ausflug Bücherei",
     "title": "6b - Ausflug Bücherei",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-10-10T06:15:46.000Z",
     "updated": "2024-10-10T06:15:46.573Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Bücherei",
+    "title": "A5 - Ausflug zur Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NHY3MnN1aDB2ZmM0dnVxbWtnMWQ3Z2cxNjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-12-13T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-12-13T11:00:00+01:00"
+    },
+    "created": "2024-09-02T12:11:53.000Z",
+    "updated": "2024-10-21T06:10:01.373Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug zur Zitadelle (Theater)",
+    "title": "A5 - Ausflug zur Zitadelle (Theater)",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N25xYm1pbDI2N2ZrbWh1cnQ3cnJxMjNrZGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-12-19T09:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-12-19T13:30:00+01:00"
+    },
+    "created": "2024-09-02T12:12:45.000Z",
+    "updated": "2024-09-02T12:12:45.392Z"
   }
 ]
