@@ -4,7 +4,7 @@ BJ LIM:
   name        : "BJ LIM"
   bio         : "What do you want, jewels? I am a very extravagant man."
   avatar      : "/assets/images/SmartSelect_20241123_164731_Google Play services.png"
-  url         : "https://m.naver.com/"
+  google_plus : "GOOGLE"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
