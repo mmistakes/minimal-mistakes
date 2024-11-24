@@ -10,6 +10,8 @@ main:
     url: https://iregg.github.io/news/
   - title: "Video"
     url: https://iregg.github.io/post%20formats/video-play/
+  - title: "Categories"
+    url: https://iregg.github.io/categories/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
