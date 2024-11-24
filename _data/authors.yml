@@ -11,7 +11,8 @@ BJ LIM:
       url: "mailto:billyrick@rick.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://thewhip.com"
+      # url: "https://thewhip.com"
+      url: https://benbenstone.blogspot.com/?m=1
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/extravagantman"
