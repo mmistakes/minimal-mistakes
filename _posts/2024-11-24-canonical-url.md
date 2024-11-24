@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Title of Your Post
+title: Canonical URL
 canonical_url: "https://yoursite.com/custom-canonical-url"
 ---
 
