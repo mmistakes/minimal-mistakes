@@ -31,7 +31,7 @@ gallery:
 이제 그 행복을 평생 곁에서 함께 하려 합니다.<br>
 저희의 시작하는 모습을 보여 드리고 싶습니다.<br>
 
-{% include gallery caption="함께 해온 707일 (문영 ♡ 병준)" %}
+{% include gallery caption="함께 해온 707일 (문♡준)" %}
 
 Calendar <br>
 ![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg){: width="150%" height="50%"}{: .center}
