@@ -9,25 +9,8 @@ toc_sticky: true
 toc_label: "Loose categories"
 ---
 
-Categories are just for order and are continuously updated the more quotes are added and themes appear. Really, the relation between themes and quotes is many:many, not possible to display as a stream of text.
+Categories are just for keeping order and are continuously updated. The relation between themes and quotes is many:many, so this is a very imperfect representation.
 
-
-## Relations 
-
-> I have often thought that perhaps formal good manners may be a cushion against heartbreak.<br>
--- J Steinbeck, "East of Eden"
-
-> When a child first catches adults out—when it first walks into his grave little head that adults do not have divine intelligence, that their judgments are not always wise, their thinking true, their sentences just—his world falls into panic desolation. The gods are fallen and all safety gone. And there is one sure thing about the fall of gods: they do not fall a little; they crash and shatter or sink deeply into green muck. It is a tedious job to build them up again; they never quite shine. And the child's world is never quite whole again. It is an aching kind of growing.<br>
--- J Steinbeck, "East of Eden"
-
-> Maybe I wanted to hand down the nonsense that passes for wisdom in a parent, to force it on my own helpless children.<br>
--- J Steinbeck, "East of Eden"
-
-> The greatest terror a child can have is that he is not loved, and rejection is the hell he fears. I think everyone in the world to a large or small extent has felt rejection. And with rejection comes anger, and with anger some kind of crime in revenge for the rejection, and with the crime guilt—and there is the story of mankind. I think that if rejection could be amputated, the human would not be what he is. Maybe there would be fewer crazy people.<br>
--- J Steinbeck, "East of Eden"
-
-> I guess we were like a tough but inexperienced little boy who gets punched in the nose in the first flurry and it hurts and we wished it was over.<br>
--- J Steinbeck, "East of Eden"
 
 ## Appearing vs. being
 
@@ -37,6 +20,34 @@ Categories are just for order and are continuously updated the more quotes are a
 > People like you to be something, preferably what they are.<br>
 -- J Steinbeck, "East of Eden"
 
+
+## Consumerism
+
+> When our food and clothing and housing all are born in the complication of mass production, mass method is bound to get into our thinking and to eliminate all other thinking. In our time mass or collective production has entered our economics, our politics, and even our religion, so that some nations have substituted the idea collective for the idea God.<br>
+-- J Steinbeck, "East of Eden"
+
+
+## Creativity
+
+> Our species is the only creative species, and it has only one creative instrument, the individual mind and spirit of a man. Nothing was ever created by two men. There are no good collaborations, whether in music, in art, in poetry, in mathematics, in philosophy. Once the miracle of creation has taken place, the group can build and extend it, but the group never invents anything. The preciousness lies in the lonely mind of a man.<br>
+-- J Steinbeck, "East of Eden"
+
+> You are one of the rare people who can separate your observation from your preconception. You see what is, where most people see what they expect.<br>
+-- J Steinbeck, "East of Eden"
+
+> In human affairs of danger and delicacy successful conclusion is sharply limited by hurry. So often men trip by being in a rush. If one were properly to perform a difficult and subtle act, he should first inspect the end to be achieved and then, once he had accepted the end as desirable, he should forget it completely and concentrate solely on the means. By this method he would not be moved to false action by anxiety or hurry or fear. Very few people learn this.<br>
+-- J Steinbeck, "East of Eden"
+
+
+## Diversity
+
+> We know from our own society that humans are diverse: people come in all shapes and sizes, individuals can have all sorts of traits and interests and gender manifests in multiple ways. Yet we look to historical and archaeological records to do something magical: we expect them to show worlds in which every single person followed strictly defined social patterns and never deviated from them.
+-- A Saini, "The Patriarchs"
+
+> Once people were seen as socially distinct, they could be imagined as essentially different.
+-- A Saini, "The Patriarchs"
+
+
 ## Emotions 
 
 > All great and precious things are lonely.<br>
@@ -45,19 +56,42 @@ Categories are just for order and are continuously updated the more quotes are a
 > There are no ugly questions except those clothed in condescension.<br>
 -- J Steinbeck, "East of Eden"
 
-## Time
 
-> "It's one of the great fallacies, it seems to me," said Lee, "that time gives much of anything but years and sadness to a man." "And memory." "Yes, memory. Without that, time would be unarmed against us.<br>
+## Environment
+
+> for if people see themselves as distinct and separate from the natural world, they believe they risk nothing in destroying it. What Thoreau was really saying was that he'd travelled *wildly* in Concord, that you can travel wildly just about anywhere. The wildness of a place or experience" isn't in the place or experience, necessarily, but in you - your capacity to see it, feel it.<br>
+-- K Harris, "Lands of lost borders"
+
+> "I lay in my sleeping bag, aching all over, and fervently hoped humans never made it to Mars. We didn't deserve a new world; we'd just wreck it all over again.<br>
+-- K Harris, "Lands of lost borders"
+
+
+## Exceptionalism 
+
+> A war comes always to someone else. In Salinas we were aware that the United States was the greatest and most powerful nation in the world. Every American was a rifleman by birth, and one American was worth ten or twenty foreigners in a fight. Pershing's expedition into Mexico after Villa had exploded one of our myths for a little while. We had truly believed that Mexicans can't shoot straight and besides were lazy and stupid. When our own Troop C came wearily back from the border they said that none of this was true. Mexicans could shoot straight, goddam it! And Villa's horsemen had outridden and outlasted our town boys. The two evenings a month of training had not toughened them very much. And last, the Mexicans seemed to have outthought and outambushed Black Jack Pershing. When the Mexicans were joined by their ally, dysentery, it was godawful. Some of our boys didn't really feel good again for years.<br> 
 -- J Steinbeck, "East of Eden"
 
-> It would be reasonable to suppose that a routine time or an eventless time would seem interminable. It should be so, but it is not. It is the dull eventless times that have no duration whatever.<br>
+
+## Freedom
+
+> And this I believe: that the free, exploring mind of the individual human is the most valuable thing in the world.<br>
 -- J Steinbeck, "East of Eden"
 
-> Every man has a retirement picture in which he does those things he never had time to do—makes the journeys, reads the neglected books he always pretended to have read.<br>
+> "Don't you see?" he cried. "The American Standard translation orders men to triumph over sin, and you can call sin ignorance. The King James translation makes a promise in 'Thou shalt,' meaning that men will surely triumph over sin. But the Hebrew word, the word timshel—'Thou mayest'—that gives a choice. It might be the most important word in the world. That says the way is open. That throws it right back on a man. For if 'Thou mayest'—it is also true that 'Thou mayest not.' Don't you see?"<br>
 -- J Steinbeck, "East of Eden"
 
-> The split second has been growing more and more important to us. And as human activities become more and more intermeshed and integrated, the split tenth of a second will emerge, and then a new name must be made for the split hundredth, until one day, although I don't believe it, we'll say, "Oh, the hell with it. What's wrong with an hour?"<br>
+> Any writing which has influenced the thinking and the lives of innumerable people is important. Now, there are many millions in their sects and churches who feel the order, 'Do thou,' and throw their weight into obedience. And there are millions more who feel predestination in 'Thou shalt.' Nothing they may do can interfere with what will be. But 'Thou mayest'! Why, that makes a man great, that gives him stature with the gods, for in his weakness and his filth and his murder of his brother he has still the great choice. He can choose his course and fight it through and win."<br>
 -- J Steinbeck, "East of Eden"
+
+> It is easy out of laziness, out of weakness, to throw oneself into the lap of deity, saying, 'I couldn't help it; the way was set.' But think of the glory of the choice! That makes a man a man.<br>
+-- J Steinbeck, "East of Eden"
+
+> All good things are wild and free.<br>
+-- H J Thoreau, "Walking" (lecture)
+
+> It isn't what we say or think that defines us, but what we do.<br>
+-- Jane Austen, "Sense and Sensibility"
+
 
 ## God
 
@@ -96,12 +130,62 @@ Categories are just for order and are continuously updated the more quotes are a
 > We think everybody is seeing into us. Then dirt is very dirty and purity is shining white.<br>
 -- J Steinbeck, "East of Eden"
 
-## Capitalism
 
-> When our food and clothing and housing all are born in the complication of mass production, mass method is bound to get into our thinking and to eliminate all other thinking. In our time mass or collective production has entered our economics, our politics, and even our religion, so that some nations have substituted the idea collective for the idea God.<br>
+## Human relations 
+
+> I have often thought that perhaps formal good manners may be a cushion against heartbreak.<br>
 -- J Steinbeck, "East of Eden"
 
-## Wealth
+> When a child first catches adults out—when it first walks into his grave little head that adults do not have divine intelligence, that their judgments are not always wise, their thinking true, their sentences just—his world falls into panic desolation. The gods are fallen and all safety gone. And there is one sure thing about the fall of gods: they do not fall a little; they crash and shatter or sink deeply into green muck. It is a tedious job to build them up again; they never quite shine. And the child's world is never quite whole again. It is an aching kind of growing.<br>
+-- J Steinbeck, "East of Eden"
+
+> Maybe I wanted to hand down the nonsense that passes for wisdom in a parent, to force it on my own helpless children.<br>
+-- J Steinbeck, "East of Eden"
+
+> The greatest terror a child can have is that he is not loved, and rejection is the hell he fears. I think everyone in the world to a large or small extent has felt rejection. And with rejection comes anger, and with anger some kind of crime in revenge for the rejection, and with the crime guilt—and there is the story of mankind. I think that if rejection could be amputated, the human would not be what he is. Maybe there would be fewer crazy people.<br>
+-- J Steinbeck, "East of Eden"
+
+> I guess we were like a tough but inexperienced little boy who gets punched in the nose in the first flurry and it hurts and we wished it was over.<br>
+-- J Steinbeck, "East of Eden"
+
+
+## Intelligence, knowledge, greatness
+
+> Shrewdness tells you what you must not do because it would not be shrewd.<br>
+-- J Steinbeck, "East of Eden"
+
+> A man who is certain he is right is almost sure to be wrong.<br>
+-- [Attributed to M Faraday](https://quoteinvestigator.com/2022/09/22/certain-right/), from a speech he gave in 1819.
+
+> The medical profession is unconsciously irritated by lay knowledge.<br>
+-- J Steinbeck, "East of Eden"
+
+> There is only one corner of the universe you can be certain of improving, and that is your own self.<br>
+-- A Huxley
+
+> There you have the difference between greatness and mediocrity. It's not an uncommon disease. But it's nice for a mediocre man to know that greatness must be the loneliest state in the world." "I'd think there are degrees of greatness," Adam said. "I don't think so," said Samuel. "That would be like saying there is a little bigness. No. I believe when you come to that responsibility the hugeness and you are alone to make your choice. On one side you have warmth and companionship and sweet understanding, and on the other—cold, lonely greatness. There you make your choice. I'm glad I chose mediocrity, but how am I to say what reward might have come with the other?<br>
+-- J Steinbeck, "East of Eden"
+
+
+## Mathematics 
+
+> One of the most painful parts about teaching mathematics is seeing students damaged by the cult of the genius. The genius cult tells students it's not worth doing mathematics unless you're the best at mathematics, because those special few are the only ones whose contributions matter. We don't treat any other subject that way!<br>
+-- J Ellenberg, "How not to be wrong"
+
+
+## Power, social class, inequality, wealth
+
+> When power is scarce, a little of it is tempting.<br>
+-- M Atwood, "The Handmaid's tale"
+
+> They kept order the way our poor species has ever learned to keep order. We think there must be better ways but we never learn them — always the whip, the rope, and the rifle.<br>
+-- J Steinbeck, "East of Eden"
+
+> I don't know where being a servant came into disrepute. It is the refuge of a philosopher, the food of the lazy, and, properly carried out, it is a position of power, even of love. I can't understand why more intelligent people don't take it as a career—learn to do it well and reap its benefits. A good servant has absolute security, not because of his master's kindness, but because of habit and indolence. It's a hard thing for a man to change spices or lay out his own socks. He'll keep a bad servant rather than change. But a good servant, and I am an excellent one, can completely control his master, tell him what to think, how to act, whom to marry, when to divorce, reduce him to terror as a discipline, or distribute happiness to him, and finally be mentioned in his will.<br>
+-- J Steinbeck, "East of Eden"
+
+> The problem with borders, I was beginning to realize, isn't that they are monstrous, offensive and unnatural constructions. The problem with borders is the same as the problem with evil that Hannah Arendt identified: their banality. We subconsciously accept them as part of the landscape - at least those of us privileged by them, granted meaningful passports - because they articulate our deepest, least exalted desire, for prestige and permanence, order and security, always at the cost of someone or something else.<br>
+-- K Harris, "Lands of lost borders"
 
 > "Maybe everyone is too rich. I have noticed that there is no dissatisfaction like that of the rich. Feed a man, clothe him, put him in a good house, and he will die of despair."<br>
 -- J Steinbeck, "East of Eden"
@@ -111,6 +195,7 @@ Categories are just for order and are continuously updated the more quotes are a
 
 > Riches seem to come to the poor in spirit, the poor in interest and joy. To put it straight — the very rich are a poor bunch of bastards.<br>
 -- J Steinbeck, "East of Eden"
+
 
 ## Society
 
@@ -138,92 +223,18 @@ Categories are just for order and are continuously updated the more quotes are a
 > "and I do not know, Mrs Elton, whether the uncertainty of our meetings, the sort of constant expectation there will be of his coming today or tomorrow, and at any hour, may not be more friendly to happiness than having him actually in the house. It think it is so. I think it is the state of mind which gives most spirit and delight."<br>
 -- J Austen, "Emma"
 
-## Power 
 
-> When power is scarce, a little of it is tempting.<br>
--- M Atwood, "The Handmaid's tale"
+## Time
 
-> They kept order the way our poor species has ever learned to keep order. We think there must be better ways but we never learn them — always the whip, the rope, and the rifle.<br>
+> "It's one of the great fallacies, it seems to me," said Lee, "that time gives much of anything but years and sadness to a man." "And memory." "Yes, memory. Without that, time would be unarmed against us.<br>
 -- J Steinbeck, "East of Eden"
 
-## Hierarchy and class
-
-> I don't know where being a servant came into disrepute. It is the refuge of a philosopher, the food of the lazy, and, properly carried out, it is a position of power, even of love. I can't understand why more intelligent people don't take it as a career—learn to do it well and reap its benefits. A good servant has absolute security, not because of his master's kindness, but because of habit and indolence. It's a hard thing for a man to change spices or lay out his own socks. He'll keep a bad servant rather than change. But a good servant, and I am an excellent one, can completely control his master, tell him what to think, how to act, whom to marry, when to divorce, reduce him to terror as a discipline, or distribute happiness to him, and finally be mentioned in his will.<br>
+> It would be reasonable to suppose that a routine time or an eventless time would seem interminable. It should be so, but it is not. It is the dull eventless times that have no duration whatever.<br>
 -- J Steinbeck, "East of Eden"
 
-## American exceptionalism 
-
-> A war comes always to someone else. In Salinas we were aware that the United States was the greatest and most powerful nation in the world. Every American was a rifleman by birth, and one American was worth ten or twenty foreigners in a fight. Pershing's expedition into Mexico after Villa had exploded one of our myths for a little while. We had truly believed that Mexicans can't shoot straight and besides were lazy and stupid. When our own Troop C came wearily back from the border they said that none of this was true. Mexicans could shoot straight, goddam it! And Villa's horsemen had outridden and outlasted our town boys. The two evenings a month of training had not toughened them very much. And last, the Mexicans seemed to have outthought and outambushed Black Jack Pershing. When the Mexicans were joined by their ally, dysentery, it was godawful. Some of our boys didn't really feel good again for years.<br> 
+> Every man has a retirement picture in which he does those things he never had time to do—makes the journeys, reads the neglected books he always pretended to have read.<br>
 -- J Steinbeck, "East of Eden"
 
-## Freedom
-
-> And this I believe: that the free, exploring mind of the individual human is the most valuable thing in the world.<br>
+> The split second has been growing more and more important to us. And as human activities become more and more intermeshed and integrated, the split tenth of a second will emerge, and then a new name must be made for the split hundredth, until one day, although I don't believe it, we'll say, "Oh, the hell with it. What's wrong with an hour?"<br>
 -- J Steinbeck, "East of Eden"
 
-> "Don't you see?" he cried. "The American Standard translation orders men to triumph over sin, and you can call sin ignorance. The King James translation makes a promise in 'Thou shalt,' meaning that men will surely triumph over sin. But the Hebrew word, the word timshel—'Thou mayest'—that gives a choice. It might be the most important word in the world. That says the way is open. That throws it right back on a man. For if 'Thou mayest'—it is also true that 'Thou mayest not.' Don't you see?"<br>
--- J Steinbeck, "East of Eden"
-
-> Any writing which has influenced the thinking and the lives of innumerable people is important. Now, there are many millions in their sects and churches who feel the order, 'Do thou,' and throw their weight into obedience. And there are millions more who feel predestination in 'Thou shalt.' Nothing they may do can interfere with what will be. But 'Thou mayest'! Why, that makes a man great, that gives him stature with the gods, for in his weakness and his filth and his murder of his brother he has still the great choice. He can choose his course and fight it through and win."<br>
--- J Steinbeck, "East of Eden"
-
-> It is easy out of laziness, out of weakness, to throw oneself into the lap of deity, saying, 'I couldn't help it; the way was set.' But think of the glory of the choice! That makes a man a man.<br>
--- J Steinbeck, "East of Eden"
-
-> All good things are wild and free.<br>
--- H J Thoreau, "Walking" (lecture)
-
-## Inequality
-
-> The problem with borders, I was beginning to realize, isn't that they are monstrous, offensive and unnatural constructions. The problem with borders is the same as the problem with evil that Hannah Arendt identified: their banality. We subconsciously accept them as part of the landscape - at least those of us privileged by them, granted meaningful passports - because they articulate our deepest, least exalted desire, for prestige and permanence, order and security, always at the cost of someone or something else.<br>
--- K Harris, "Lands of lost borders"
-
-## Greatness and mediocrity
-
-> It isn't what we say or think that defines us, but what we do.<br>
--- Jane Austen, "Sense and Sensibility"
-
-> There you have the difference between greatness and mediocrity. It's not an uncommon disease. But it's nice for a mediocre man to know that greatness must be the loneliest state in the world." "I'd think there are degrees of greatness," Adam said. "I don't think so," said Samuel. "That would be like saying there is a little bigness. No. I believe when you come to that responsibility the hugeness and you are alone to make your choice. On one side you have warmth and companionship and sweet understanding, and on the other—cold, lonely greatness. There you make your choice. I'm glad I chose mediocrity, but how am I to say what reward might have come with the other?<br>
--- J Steinbeck, "East of Eden"
-
-## Being knowledgeable
-
-> A man who is certain he is right is almost sure to be wrong.<br>
--- [Attributed to M Faraday](https://quoteinvestigator.com/2022/09/22/certain-right/), from a speech he gave in 1819.
-
-> The medical profession is unconsciously irritated by lay knowledge.<br>
--- J Steinbeck, "East of Eden"
-
-## Intelligence 
-
-> Shrewdness tells you what you must not do because it would not be shrewd.<br>
--- J Steinbeck, "East of Eden"
-
-## Creativity
-
-> Our species is the only creative species, and it has only one creative instrument, the individual mind and spirit of a man. Nothing was ever created by two men. There are no good collaborations, whether in music, in art, in poetry, in mathematics, in philosophy. Once the miracle of creation has taken place, the group can build and extend it, but the group never invents anything. The preciousness lies in the lonely mind of a man.<br>
--- J Steinbeck, "East of Eden"
-
-> You are one of the rare people who can separate your observation from your preconception. You see what is, where most people see what they expect.<br>
--- J Steinbeck, "East of Eden"
-
-> In human affairs of danger and delicacy successful conclusion is sharply limited by hurry. So often men trip by being in a rush. If one were properly to perform a difficult and subtle act, he should first inspect the end to be achieved and then, once he had accepted the end as desirable, he should forget it completely and concentrate solely on the means. By this method he would not be moved to false action by anxiety or hurry or fear. Very few people learn this.<br>
--- J Steinbeck, "East of Eden"
-
-## Learning
-
-> There is only one corner of the universe you can be certain of improving, and that is your own self.<br>
--- A Huxley
-
-## Mathematics 
-
-> One of the most painful parts about teaching mathematics is seeing students damaged by the cult of the genius. The genius cult tells students it's not worth doing mathematics unless you're the best at mathematics, because those special few are the only ones whose contributions matter. We don't treat any other subject that way!<br>
--- J Ellenberg, "How not to be wrong"
-
-## Environment
-
-> for if people see themselves as distinct and separate from the natural world, they believe they risk nothing in destroying it. What Thoreau was really saying was that he'd travelled *wildly* in Concord, that you can travel wildly just about anywhere. The wildness of a place or experience" isn't in the place or experience, necessarily, but in you - your capacity to see it, feel it.<br>
--- K Harris, "Lands of lost borders"
-
-> "I lay in my sleeping bag, aching all over, and fervently hoped humans never made it to Mars. We didn't deserve a new world; we'd just wreck it all over again.<br>
--- K Harris, "Lands of lost borders"
