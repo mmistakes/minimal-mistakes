@@ -1,5 +1,5 @@
 ---
-excerpt: "준 & 문 결혼합니다."
+excerpt: "준 & 문."
 header:
   overlay_image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
