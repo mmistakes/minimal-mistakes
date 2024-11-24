@@ -16,7 +16,8 @@ BJ LIM:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/extravagantman"
     - label: 🏷 
-      googl_plus: "Google"
+      icon: 🏷 
+      google_plus: "Google"
 
 Cornelius Fiddlebone:
   name        : "Cornelius Fiddlebone"
