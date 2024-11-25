@@ -30,10 +30,10 @@ Not all addictions are inherently bad. The key is effort. The most dangerous add
 
 Examples of Good Addictions
 
-	1.	Sports: Physical activity is challenging but rewarding. Unlike food or alcohol, sports don’t provide instant gratification. Instead, the benefits—strength, flexibility, cardiovascular health—compound over time.
-	2.	Learning: Becoming addicted to acquiring knowledge—whether through books, courses, or experiences—is another effortful yet enriching pursuit.
-	3.	Work: When balanced with other priorities, work can be a fulfilling addiction. Beyond economic rewards, it provides purpose, structure, and the opportunity to positively impact others.
-	4.	Parenting: Raising children is perhaps the most challenging addiction of all. It demands sleepless nights, emotional resilience, and endless patience, with delayed but deeply meaningful rewards.
+1.	Sports: Physical activity is challenging but rewarding. Unlike food or alcohol, sports don’t provide instant gratification. Instead, the benefits—strength, flexibility, cardiovascular health—compound over time.
+2.	Learning: Becoming addicted to acquiring knowledge—whether through books, courses, or experiences—is another effortful yet enriching pursuit.
+3.	Work: When balanced with other priorities, work can be a fulfilling addiction. Beyond economic rewards, it provides purpose, structure, and the opportunity to positively impact others.
+4.	Parenting: Raising children is perhaps the most challenging addiction of all. It demands sleepless nights, emotional resilience, and endless patience, with delayed but deeply meaningful rewards.
 
 # 5. Teaching Resilience
 
