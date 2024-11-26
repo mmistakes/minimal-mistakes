@@ -10,10 +10,15 @@ search: false
 
 body {
     font-size: 75%; 
-    letter-spacing: 0.02em;
-    line-height: 1.6; 
+    // letter-spacing: 0.02em;
+    // line-height: 1.6; 
   }
   
 //   h1, h2, h3, h4, h5, h6 {
 //     font-size: inherit; 
 //   }
+
+.element-class {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
