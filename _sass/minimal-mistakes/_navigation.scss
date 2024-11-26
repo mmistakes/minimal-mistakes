@@ -32,9 +32,8 @@
     }
 
     @include breakpoint($x-large) {
-      width: calc(100%});
+      width: calc(100%);
     }
-  }
 
   li {
     display: inline;
@@ -43,6 +42,9 @@
   .current {
     font-weight: bold;
   }
+
+}
+
 }
 
 /*
