@@ -48,6 +48,7 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.953em;
   font-weight: bold;
   // z-index: 20;
 }
@@ -82,7 +83,7 @@
 .masthead__menu-item {
   display: block;
   list-style-type: none;
-  white-space: nowrap;
+  white-space: normal;
 
   &--lg {
     padding-inline-end: 2em;

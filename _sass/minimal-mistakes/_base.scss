@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.4;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
