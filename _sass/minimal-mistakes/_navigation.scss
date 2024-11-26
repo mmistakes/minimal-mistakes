@@ -190,6 +190,8 @@
 
     &:hover {
       color: $masthead-link-color-hover;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
     }
 
     &.site-logo {
@@ -433,7 +435,6 @@
 
       &:hover {
         text-decoration: underline;
-        text-decoration-thickness: 0.5px;
       }
     }
   }
