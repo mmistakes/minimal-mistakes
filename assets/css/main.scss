@@ -7,3 +7,12 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+body {
+    font-size: 90%; 
+    line-height: 1.6; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit; 
+  }
