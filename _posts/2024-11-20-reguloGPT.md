@@ -7,7 +7,7 @@ tags: paper
 
 # 논문 리뷰: reguloGPT
 
-[reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
+[reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
 
 ---
 ## Background
@@ -28,7 +28,7 @@ tags: paper
   G-Eval 체계: 성능 평가 위해 GPT-4를 활용. 기존 주석 기반 평가와 일치.
 - Availability and implementation:     
    reguloGPT의 소스 코드, m<sup>6</sup>A 관련 제목 및 벤치마크 데이터 세트, m<sup>6</sup>A-KG  
-https://github.com/Huang-AI4Medicine-Lab/reguloGPT
+   [https://github.com/Huang-AI4Medicine-Lab/reguloGPT](https://github.com/Huang-AI4Medicine-Lab/reguloGPT)
 - Key words: MRP, KG, GPT, In Context Learning, m6A mRNA Methylation                   
 
 ## 1. Introduction    
@@ -117,9 +117,9 @@ https://github.com/Huang-AI4Medicine-Lab/reguloGPT
   Precision 및 F1 score 지표  
 
     예측된 node 및 edge를 평가하는 기준  
-          a. True positive: GPT-4의 예측 node가 벤치마크 주석과 완전히 일치할 경우  
-          b. False positive: node나 edge가 잘못 추출될 경우 혹은 node는 일치하지만 서술어가 올바르지 않거나 추출되지 않았을 경우  
-          c. False negative: 모든 node와 edge에 대한 예측이 일치하지 않았을 경우
+          1 - True positive: GPT-4의 예측 node가 벤치마크 주석과 완전히 일치할 경우  
+          2 - False positive: node나 edge가 잘못 추출될 경우 혹은 node는 일치하지만 서술어가 올바르지 않거나 추출되지 않았을 경우  
+          3 - False negative: 모든 node와 edge에 대한 예측이 일치하지 않았을 경우
 
 
 - G-Eval 체계
