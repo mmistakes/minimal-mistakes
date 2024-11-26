@@ -245,7 +245,7 @@
         position: absolute;
         inset-inline-start: 0;
         bottom: 0;
-        height: 4px;
+        height: 2px;
         background: $primary-color;
         width: 100%;
         -webkit-transition: $global-transition;
@@ -372,7 +372,7 @@
         top: 1.25em;
         width: 0.75em;
         height: 0.125em;
-        line-height: 0.2;
+        line-height: 1;
         background-color: $gray;
         -webkit-transition: 0.2s ease-out;
         transition: 0.2s ease-out;
