@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "최연호"
+  name             : "Yeonho Choi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "백엔드 개발자입니다."
+  bio              : "Backend Developer"
   location         : "Somewhere"
   email            :
   links:
