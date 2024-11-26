@@ -51,13 +51,13 @@ tags: paper
 - 이 논문에서는  
   주어진 문장에서 m<sup>6</sup>A methylation의 컨텍스트별 MRP를 위해 컨텍스트 인식 관계형 그래프의 end-to-end 구성에서 GPT-4 기능을 탐구한다.
   - 논문의 기여  
-    1 - end-to-end joint NER, N-ary 위한 reguloGPT, GPT-4 구동 ICL prompt 제안.
+    1__ end-to-end joint NER, N-ary 위한 reguloGPT, GPT-4 구동 ICL prompt 제안.
        reguloGPT에 대한 기준선인 few-shot 및 CoT 프롬프트 설계  
-    2 - 컨텍스트 인식 관계형 그래프 표현 도입  
-    3 - 벤치마크 데이터 세트 구축  
-    4 - 프롬프트의 성능 평가  
-    5 - G-Eval 체계 도입: 프롬프트를 활용하여 추출된 그래프를 평가  
-    6 - m<sup>6</sup>A-KG 구축: 2013-2023년 PubMed에서 수집한 문헌 제목에 reguloGPT 적용
+    2__ 컨텍스트 인식 관계형 그래프 표현 도입  
+    3__ 벤치마크 데이터 세트 구축  
+    4__ 프롬프트의 성능 평가  
+    5__ G-Eval 체계 도입: 프롬프트를 활용하여 추출된 그래프를 평가  
+    6__ m<sup>6</sup>A-KG 구축: 2013-2023년 PubMed에서 수집한 문헌 제목에 reguloGPT 적용
 
 ## 2. Methods
 
@@ -72,12 +72,12 @@ tags: paper
    ![Fig. 3.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0003.jpg)  
    
 - 기준 프롬프트 (A): 지침, 정의 및 출력 형식을 포함한 기준 프롬프트  
-  1 - 작업 목표 제시  
-  2 - node, edge, context, inferred edge 를 포함하여 컨텍스트 인식 관계형 그래프의 구성요소 정의  
-  3 - 출력 형식.   
+  1__ 작업 목표 제시  
+  2__ node, edge, context, inferred edge 를 포함하여 컨텍스트 인식 관계형 그래프의 구성요소 정의  
+  3__ 출력 형식.   
 
 - Few-shot 프롬프트 (B): 대상 문장과 출력(context, nodes, direct edges, inferred edges)  
-  1 - 지시,  2 - 정의,  3 - 데모,  4 - 출력의 형식  
+   1__ 지시,  2__ 정의,  3__ 데모,  4__ 출력의 형식  
   기준 프롬프트와 달리 정의 뒤에 추가 데모 섹션이 포함되어 있음.  
 
 - Chain-of-Thoughts(CoT) 프롬프트 (C):
@@ -90,9 +90,9 @@ tags: paper
 
 - 벤치마크 데이터세트에 대한 주석 방법  
   컴퓨터 과학과 생물의학 분야 전문가 5명을 주석자로 삼고 400개의 제목에 주석을 닮. 세 단계를 거침.  
-  1 - 연습 주석 단계  
-  2 - 그룹 주석 단계  
-  3 - 심사 단계  
+  1__ 연습 주석 단계  
+  2__ 그룹 주석 단계  
+  3__ 심사 단계  
 
 - 주석 지침  
   연습 주석 단계에서의 기본 지침 요약
@@ -117,9 +117,9 @@ tags: paper
   Precision 및 F1 score 지표  
 
     예측된 node 및 edge를 평가하는 기준  
-          1 - True positive: GPT-4의 예측 node가 벤치마크 주석과 완전히 일치할 경우  
-          2 - False positive: node나 edge가 잘못 추출될 경우 혹은 node는 일치하지만 서술어가 올바르지 않거나 추출되지 않았을 경우  
-          3 - False negative: 모든 node와 edge에 대한 예측이 일치하지 않았을 경우
+          1__ True positive: GPT-4의 예측 node가 벤치마크 주석과 완전히 일치할 경우  
+          2__ False positive: node나 edge가 잘못 추출될 경우 혹은 node는 일치하지만 서술어가 올바르지 않거나 추출되지 않았을 경우  
+          3__ False negative: 모든 node와 edge에 대한 예측이 일치하지 않았을 경우
 
 
 - G-Eval 체계
