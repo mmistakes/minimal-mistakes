@@ -1,0 +1,10 @@
+name: Cloud Sync
+
+on:
+  push:
+
+jobs:
+  sync:
+    uses: karmaniverous/gha-workflows/.github/workflows/cloud-sync.yml@main
+    secrets:
+      RCLONE_CONFIG: ${{ secrets.RCLONE_CONFIG }}
