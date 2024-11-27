@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-11-11T21:31:17+08:00'
+last_modified_at: '2024-11-28T01:11:41+08:00'
 toc: false
 ---
 
@@ -36,6 +36,7 @@ toc: false
 - Fix JavaScript null error on home and splash layouts. [#4938](https://github.com/mmistakes/minimal-mistakes/issues/4938), [#4939](https://github.com/mmistakes/minimal-mistakes/pull/4939)
 - Fix bad &lt;figure&gt; HTML if "alt" contains quotes.
 - Fix extra newline generated in `_includes/post_pagination.html`.
+- Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
 
 ### Documentation & Maintenance
 
