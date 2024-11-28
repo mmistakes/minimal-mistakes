@@ -75,3 +75,25 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 ```
+#### ohmyzsh
+
+https://ohmyz.sh/#install
+
+폰트 설치(apt로 설치하거나, git clone 후 install.sh 실행)
+https://github.com/powerline/fonts
+설치 후 터미널 재실행하여 preferences에서 font 수정
+
+
+플러그인 설치
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# ~/.zshrc의 plugins 부분 수정
+...
+plugins=(git
+zsh-syntax-highlighting
+zsh-autosuggestions
+)
+...
+```
