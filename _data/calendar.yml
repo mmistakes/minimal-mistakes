@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug Bücherei",
-    "title": "6b - Ausflug Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2s0NDdyc21wdTZrNXUwbXU2Z3NyNHIzN2UgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-27T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-27T12:00:00+01:00"
-    },
-    "created": "2024-10-10T06:16:25.000Z",
-    "updated": "2024-10-10T06:16:25.357Z"
-  },
-  {
-    "image_path": null,
     "alt": "A8 - Ausflug in den Spandauer Forst",
     "title": "A8 - Ausflug in den Spandauer Forst",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-02T12:12:45.000Z",
     "updated": "2024-09-02T12:12:45.392Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5- Ausflug Gartenarbeitsschule",
+    "title": "A5- Ausflug Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2plcnEybmRqbzBiNTVmZHFqODlqanUzYWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-01-16T07:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-01-16T11:30:00+01:00"
+    },
+    "created": "2024-09-13T10:07:47.000Z",
+    "updated": "2024-09-13T10:07:47.671Z"
   }
 ]
