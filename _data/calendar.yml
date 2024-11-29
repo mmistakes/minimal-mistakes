@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A8 - Ausflug in den Spandauer Forst",
-    "title": "A8 - Ausflug in den Spandauer Forst",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHJmbzBlaGo0bG5uaWVrZ29kdTdsOGZpZm8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-11-28T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-11-28T13:30:00+01:00"
-    },
-    "created": "2024-11-19T09:17:01.000Z",
-    "updated": "2024-11-19T09:17:01.675Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b - Ausflug Bücherei ",
     "title": "6b - Ausflug Bücherei ",
     "excerpt": null,
@@ -49,6 +32,23 @@
     },
     "created": "2024-10-10T06:15:46.000Z",
     "updated": "2024-10-10T06:15:46.573Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A3 - Ausflug zum Staakentreff",
+    "title": "A3 - Ausflug zum Staakentreff",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXE3bzF2ZTNhMGRtcGdibmxyNTRpbWNpN2IgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2024-12-12T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2024-12-12T12:30:00+01:00"
+    },
+    "created": "2024-11-28T09:07:01.000Z",
+    "updated": "2024-11-28T09:07:01.588Z"
   },
   {
     "image_path": null,
