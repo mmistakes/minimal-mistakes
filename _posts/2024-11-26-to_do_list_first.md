@@ -31,8 +31,11 @@ author_profile : false
 
 먼저 html과 css를 이용해서 To-do List의 전체적인 형태를 만들었습니다.
 
+- text창의 today's work 부분을 클릭해 할일을 입력한 후
+- '+' 버튼을 누르면 할 일이 추가되도록 할 것입니다.
+
 ### 구현하기
-아래와 같은 
+아래와 같은 to-do List를 만들기 위한 코드 입니다.
 ![todolist](/assets/images/todoList1.png)
 #### HTML
 ```html
@@ -65,7 +68,7 @@ author_profile : false
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, 'Courier New', Courier, monospace;
+    font-family: Arial, 'Courier New';
     display: flex;
     justify-content: center;
     align-items: center;
