@@ -1,7 +1,0 @@
-{% if paginator.total_pages > 1 %}
-  {% if site.paginate %}
-    {% include paginator-v1.html %}
-  {% elsif site.pagination.enabled %}
-    {% include paginator-v2.html %}
-  {% endif %}
-{% endif %}
