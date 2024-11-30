@@ -1,7 +1,25 @@
 ---
-layout: post
-title: "나의 첫 블로그 작성"
-date: 2024-11-26 21:23:00 +0900
+title: "My First Post"              # 글 제목
+excerpt: "This is a sample post."   # 요약 (선택)
+layout: single                      # 레이아웃 설정
+author: "나의 첫 블로그 작성"                 # 작성자 이름
+date: 2024-11-26 21:23:00 +0900     # 작성 날짜와 시간
+categories:
+  - Blog                            # 카테고리 (대분류)
+  - Tutorial                        # 카테고리 (소분류)
+tags:                               # 태그 목록
+  - Jekyll
+  - Minimal Mistakes
+  - Blogging
+header:
+  overlay_image: /assets/images/sample.jpg  # 헤더 이미지 (선택)
+  overlay_filter: 0.5                      # 헤더 이미지 투명도 (0.0 ~ 1.0)
+  caption: "Photo credit: Unsplash"        # 헤더 이미지 캡션 (선택)
+  actions:
+    - label: "Read More"
+      url: "https://example.com"
+breadcrumbs: true
+comments: true                     # 댓글 허용 여부 (선택)
 ---
 
 ## #1 🎬 나의 첫 블로그 작성
