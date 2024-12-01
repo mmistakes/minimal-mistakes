@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "KSY"
-  avatar           : "/assets/images/1000027023.webp" # path of avatar image, e.g.
+  avatar           : "/assets/images/1000027023.webp"  # path of avatar image, e.g.
   bio              : "KSY의 심플코딩"
   location         : "Seoul, Republic of Korea"
   email            :
