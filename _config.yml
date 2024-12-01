@@ -116,7 +116,7 @@ author:
   name             : "KSY
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "KSY의 심플코딩 블로그"
-  location         : "south Korea"
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
