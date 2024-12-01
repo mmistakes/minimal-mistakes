@@ -19,9 +19,9 @@ locale                   : ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Simple Coding"
 title_separator          : "|"
-subtitle                 : "test" # site tagline that appears below site title in masthead
-name                     : "Route Find"
-description              : "Route Finder's blog"
+subtitle                 : "My Simple Note" # site tagline that appears below site title in masthead
+name                     : "KSY"
+description              : "KSY의 심플코딩 블로그"
 url                      : "https://sdusk0731.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
