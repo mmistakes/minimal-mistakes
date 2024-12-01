@@ -26,11 +26,7 @@ url                      : "https://sdusk0731.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-<<<<<<< HEAD
 logo                     : # path of logo image to display in the masthead, e.g.
-=======
-logo                     : "/assets/images/1000027023.webp" # path of logo image to display in the masthead, e.g. 
->>>>>>> parent of d7bac740 (Merge branch 'master' of https://github.com/sdusk0731/sdusk0731.github.io)
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
