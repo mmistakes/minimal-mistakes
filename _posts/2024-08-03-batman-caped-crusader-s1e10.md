@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 10 Review"
 date: 2024-08-04 16:35:00 +0530
 excerpt: "Episode 10, 'Savage Night', starts with Barbara Gordon visiting Harvey Dent. She convinces him to let her be his attorney and to undergo a psych evaluation."
