@@ -20,8 +20,8 @@ rtl                      : false # true, false (default) # turns direction of th
 title                    : "비주류 툴 전문가"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "빈빈"
-description              : "비주류 툴의 매력을 탐구하는 공간"
+name                     : "binbin"
+description              : "hello world"
 url                      :  "https://dusvlf111.github.io" # the base hostname & protocol for your site e.g.
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
