@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 3 Review"
 date: 2024-08-02 12:15:00 +0530
 excerpt: "Episode 3 titled 'Kiss of the Catwoman', kicks off at Gotham Museum with Bruce Wayne checking out the Wayne Collection."
