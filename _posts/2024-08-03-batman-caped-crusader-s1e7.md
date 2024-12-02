@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 7 Review"
 date: 2024-08-03 11:45:00 +0530
 excerpt: "Episode 7, 'Moving Target', begins with Barbara and James arguing about her client being let off on a technicality, with Gordon believing the cops did a flawed but decent job while Barbara disagrees."
