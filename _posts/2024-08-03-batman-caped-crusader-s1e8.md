@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 8 Review"
 date: 2024-08-03 14:12:00 +0530
 excerpt: "In Episode 8, 'Nocturne', two kids Dickie and Jason sneaking out of bed at night to check out the 'Carnival of Human Oddities' setting up camp. Despite Jason's pleading, Dickie follows an older mysterious girl Natalia into the carnival tents..."
