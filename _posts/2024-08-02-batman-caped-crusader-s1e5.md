@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 5 Review"
 date: 2024-08-02 17:20:00 +0530
 excerpt: "Episode 5 kicks off with Batman saving a possessed former real estate baron, Fletcher Demming, from walking into traffic."
