@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 4 Review"
 date: 2024-08-02 15:00:00 +0530
 excerpt: "In 'The Night of the Hunters', Gotham is abuzz with mixed feelings about Batman, especially after his rough handling of cops at the museum in the previous episode."
