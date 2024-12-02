@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 6 Review"
 date: 2024-08-03 00:45:00 +0530
 excerpt: "In Episode 6, 'Night Ride', we witness a ghostly masked figure on horseback attacking a cash truck. "
