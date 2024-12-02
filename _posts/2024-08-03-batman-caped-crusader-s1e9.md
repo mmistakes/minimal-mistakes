@@ -1,5 +1,6 @@
 ---
 layout: single
+published: false
 title: "Batman: Caped Crusader Episode 9 Review"
 date: 2024-08-03 16:30:00 +0530
 excerpt: "Episode 9, 'The Killer Inside Me', starts with Harvey Dent dreaming about becoming mayor, but the cheers of the crowd soon change into jeers as they turn on him, calling him a monster because of his disfigured face."
