@@ -754,17 +754,30 @@ DMS 인스턴스는 AWS EC2 기반의 인스턴스에 DBMS 마이그레이션 �
 #### 5.3 DMS 태스크 생성(이어서 계속)
 
 
+![태스크생성작업1](https://github.com/user-attachments/assets/1852741e-7307-4fec-8598-7a8839356f94)   
+[그림8] DMS 태스크 설정 화면
+
+<br>
+
+![태스크생성작업2](https://github.com/user-attachments/assets/108d7d1c-c973-4eed-ab13-97b0193d0998)   
+[그림9] DMS 태스크 설정 화면2
+
+<br>
+
+![태스크생성작업3](https://github.com/user-attachments/assets/60316f02-9d80-409c-bc10-460559596ddd)   
+[그림10] DMS 태스크 설정 화면3
+
+<br>
+
+![태스크생성작업4](https://github.com/user-attachments/assets/c3d9603c-5dd7-4841-b880-2bcc1f850bc5)   
+[그림11] DMS 태스크 설정 화면4
+
 <br>
 
 ### 📚 참고자료
 ---
 - [AWS Database Migration Service](https://docs.aws.amazon.com/ko_kr/dms/latest/userguide/Welcome.html)
-- [AWS DMS - MySQL을 소스로 사용](https://docs.aws.amazon.com/ko_kr/dms/latest/userguide/CHAP_Source.MySQL.html)
-- [AWS DMS best practices for moving large tables with table parallelism settings](https://aws.amazon.com/ko/blogs/database/aws-dms-best-practices-for-moving-large-tables-with-table-parallelism-settings/)
-- [GCP Cloud SQL 가격정책](https://cloud.google.com/sql/pricing?hl=ko#storage-networking-prices)
-- [AWS RDS 서비스 전송 비용](https://aws.amazon.com/ko/blogs/korea/exploring-data-transfer-costs-for-aws-managed-databases/)
-- [AWS RDS 가격 정책](https://aws.amazon.com/ko/rds/mysql/pricing/)
-- [공통 아키텍처에 대한 데이터 전송 비용 개요](https://aws.amazon.com/ko/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/)
+- 
 
 <br/>
 ---
