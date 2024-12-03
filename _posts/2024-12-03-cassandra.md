@@ -1,5 +1,5 @@
 ---
-title: "[Cassandra] 내결함성(Fault tolerance)을 고려한 Cassandra Cluster 설계"
+title: "[Cassandra] 내결함성을 고려한 Cassandra Cluster 구축"
 excerpt: "클라우드 환경에서 내결함성(Fault tolerance)을 고려한 설치형 카산드라 클러스터 구축 디자인을 알아봅니다."
 #layout: archive
 categories:
@@ -57,10 +57,7 @@ memtable은 memtable_flush_period_in_ms 설정 값에 의해 flush 가 일어납
 
 내결함성은 결국 노드가 장애가 나더라도 다른 노드에서 필요로 하는 데이터 복사본이 존재하기 때문에 읽고 쓰는데 문제가 없음을 말하기 때문에 Rack을 가용영역과 동일한 관점으로 매핑시켜야합니다. [그림2] 에서는 Rack1 을 A존, Rack2 를 B존, Rack3을 C존에 매핑시켰습니다. 이러한 설정은 각 노드들의 ec2 머신이 할당받는 서브넷대역의 가용영역에 대한 설정과 cassandra-rackdc.properties 파일에 DC와 RACK 정보를 위의 그림처럼 정의하면 됩니다. 
 
-혹은 cassandra.yaml 파일내 endpoint_snitch 에 대한 설정을 Ec2Snitch 로 설정하면 편리하게 위의 디자인으로 구축 가능합니다. 개인적으로는 GossipingPropertyFileSnitch 로 설정하여 노드 별 DC와 Rack 정보를 매뉴얼하게 설정하는 것을 선호하는 편입니다. Rack 에 배치시킨 노드의 개수는 서비스가 요구하는 처리량에 따라 적절히 구성하면 됩니다. 그림에서는 Rack 별로 3대씩 이루어져 있습니다.
-
-위의 구성처럼 설정한다면 Rack3(C존)이 장애가 발생한다고 하더라도 Rack1 과 Rack2 에 필요로 하는 데이터가 존재하기 때문에 읽기와 쓰기를 문제없이 처리할 수 있습니다.
-
+혹은 cassandra.yaml 파일내 endpoint_snitch 에 대한 설정을 Ec2Snitch 로 설정하면 편리하게 위의 디자인으로 구축 가능합니다. 개인적으로는 GossipingPropertyFileSnitch 로 설정하여 노드 별 DC와 Rack 정보를 매뉴얼하게 설정하는 것을 선호하는 편입니다. Rack 에 배치시킨 노드의 개수는 서비스가 요구하는 처리량에 따라 적절히 구성하면 됩니다. 그림에서는 Rack 별로 3대씩 이루어져 있습니다. 위의 구성처럼 설정한다면 Rack3(C존)이 장애가 발생한다고 하더라도 Rack1 과 Rack2 에 필요로 하는 데이터가 존재하기 때문에 읽기와 쓰기를 문제없이 처리할 수 있습니다.
 
 이러한 모습은 마치 오로라 클러스터의 디스크 볼륨 구성과 유사한 모습을 보입니다. 
 
@@ -69,7 +66,9 @@ memtable은 memtable_flush_period_in_ms 설정 값에 의해 flush 가 일어납
 
 <br>
 
-오로라 클러스터의 디스크 볼륨 그룹도 3개의 가용영역 당 2개의 쿼럼 구성원을 배치시켜 총 6개의 쿼럼을 이용하여 읽기 쓰기를 처리합니다. 이 중 AZ 3이 장애가 발생했을 때 4개의 쿼럼 구성원이 존재하므로 쓰기와 읽기가 정상적으로 이루어집니다. 물론 여기서 추가로 AZ 1에 다른 하드웨어 장애로 쿼럼 구성원 하나가 추가로 장애가 발생한다면 쓰기 작업은 불능상태이겠지만 읽기는 유지됩니다. 이처럼 오로라 클러스터 또한 내결함성이 강한 아키텍처를 갖고 있다고 볼 수 있습니다.
+오로라 클러스터의 디스크 볼륨 그룹도 3개의 가용영역 당 2개의 쿼럼 구성원을 배치시켜 총 6개의 쿼럼을 이용하여 읽기 쓰기를 처리합니다. 이 중 AZ 3이 장애가 발생했을 때 다른 가용영역에 총 4개의 쿼럼 구성원이 존재하므로 쓰기와 읽기가 정상적으로 이루어집니다. 물론 여기서 추가로 AZ 1에 하드웨어 장애로 쿼럼 구성원 하나가 추가로 장애가 발생한다면 쓰기 작업은 불능상태이겠지만 읽기는 유지됩니다. 이처럼 오로라 클러스터 또한 내결함성이 강한 아키텍처를 갖고 있다고 볼 수 있습니다.
+
+<br>
 
 {% assign posts = site.categories.Cassandra %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
