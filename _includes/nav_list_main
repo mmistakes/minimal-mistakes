@@ -26,7 +26,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Mongodb" %}
+                    {% if category[0] == "Cassandra" %}
                         <li><a href="https://duhokim0901.github.io/categories/cassandra" class="">Cassandra ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
