@@ -67,6 +67,9 @@ memtable은 memtable_flush_period_in_ms 설정 값에 의해 flush 가 일어납
 ![오로라의 내결함성](https://github.com/user-attachments/assets/6aa65fa8-d437-485d-9909-a132be829c40)     
 [그림3] 오로라의 내결함성   
 
+<br>
+
+오로라 클러스터의 디스크 볼륨 그룹도 3개의 가용영역 당 2개의 쿼럼 구성원을 배치시켜 총 6개의 쿼럼을 이용하여 읽기 쓰기를 처리합니다. 이 중 AZ 3이 장애가 발생했을 때 4개의 쿼럼 구성원이 존재하므로 쓰기와 읽기가 정상적으로 이루어집니다. 물론 여기서 추가로 AZ 1에 다른 하드웨어 장애로 쿼럼 구성원 하나가 추가로 장애가 발생한다면 쓰기 작업은 불능상태이겠지만 읽기는 유지됩니다. 이처럼 오로라 클러스터 또한 내결함성이 강한 아키텍처를 갖고 있다고 볼 수 있습니다.
 
 {% assign posts = site.categories.Cassandra %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
