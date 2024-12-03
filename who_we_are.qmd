@@ -1,0 +1,74 @@
+---
+title: "Who We Are"
+description: |
+ Who's Who in SIPBS CompBiol
+number-sections: true
+about:
+  template: marquee
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/scompbiol
+    - icon: github
+      text: Github
+      href: https://github.com/sipbs-compbiol
+    - icon: envelope
+      text: Email
+      href: mailto:leighton.pritchard@strath.ac.uk
+html:
+  anchor-sections: true
+---
+
+## Current Members
+
+- Dr Leighton Pritchard
+- Dr Peter Cock (PDRA 2024-)
+- Angelika Kiepas (PhD 2020-2024, with Prof Paul Hoskisson; PDRA 2024-)
+
+## Current Joint Group Members
+
+- Kirstyn Beattie (PhD 2023-2026, with Prof Dan Walker)
+- Natasha Frate (PhD 2023-2026, with Prof Dan Walker)
+- Tom Harris (PhD 2020-2024, with Dr Arnaud Javelle)
+- Julia Monserrat Relano (PhD 2023-2026, University of Lancaster, with Dr Doug Orr)
+
+## Alumni
+
+- Dr Bailey Harrington (PDRA 2021-2022)
+- Dr Emma Hobbs (PhD 2019-2023, University of St Andrews, with Dr Tracey Gloster)
+- Dr Rory McLeod (PhD 2016-2020, University of Dundee, with Dr Edgar Huitema)
+- Dr Christelle Robert (PhD 2006-2009, University of Dundee, with Prof. Geoff Barton)
+- Dr Nick Waters (PhD 2016-2020, NUIG Galway, with Dr Fiona Brennan and Dr Florence Abram)
+- Dr Eirini Xemantilotou (PhD 2015-2019, University of St Andrews, with Dr Tracey Gloster)
+
+## Project Students
+
+- Dami Adeleke (BSc, 2021-22; MSc, 2023-24)
+- Gwyneth Adumah (BSc, 2024-25)
+- Ramzi Alahmadi (MSc, 2021)
+- Yassmeen Ali (MSc, 2022)
+- Max Barclay (BSc, 2022-23)
+- Lotte Broekhoff (BSc, 2022-23)
+- Banaz Fetah (BSc, 2021-22)
+- Steven Hughes (BSc, 2023-24)
+- Lee Keenan (BSc, 2022-23)
+- Sabrina Lau (MSci, 2022-23)
+- Xinyi Liu (BSc, 2023-24)
+- Xingyu Lu (BSc, 2024-25)
+- Amber Minhas (Lister-funded Internship, 2021; BSc, 2021-22)
+- Kimberley Morsheimer (MSc, 2021)
+- Nora Novak (Carnegie-funded Internship, 2022) [w/ Gwyn Gould, Strathclyde]
+- Areej Obaid (MSc, 2022)
+- Ailsa Orr (BSc, 2021-22)
+- Yiming Qiu (BSc, 2022-23)
+- Lewis Rankin (BSc, 2024-25)
+- Aisha Saba (BSc, 2022-23)
+- Sifan Shen (BSc, 2022-23)
+- Tong Sun (BSc, 2023-24)
+- Ho Ching Tai (BSc, 2023-24)
+- David Teixeira (SfAM-funded Internship, 2022; BSc, 2022-23)
+- Ziyao Wang (BSc, 2022-23)
+- Wong-Ka Yann (BSc, 2021-22)
+- Chiming Yao (BSc, 2023-24)
+- Bowen Zhange (BSc, 2022-23)
+- Pengcheng Zhang (BSc, 2023-24)

@@ -1,0 +1,59 @@
+---
+title: "SIPBS Computational Biology"
+image: ./assets/images/sipbs_compbio.png
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/scompbiol
+    - icon: github
+      text: Github
+      href: https://github.com/sipbs-compbiol
+    - icon: envelope
+      text: Email
+      href: mailto:leighton.pritchard@strath.ac.uk
+---
+
+We are a computational biology research group in [SIPBS](Strathclyde Institute for Pharmacy and Biomedical Sciences) at the University of Strathclyde, Glasgow. We apply computational and mathematical approaches to better understand biology.
+
+Our main areas of research are in microbiology, human health, and plant health, We have experience and work across a number of areas, including:
+
+- genomics
+- systems biology
+- metabolic modelling
+- software development
+- biostatistics
+- phylogenetics and phylogenomics
+
+## Recent Publications
+
+See a more complete list [here](publications.qmd).
+
+## Active Research Collaborators
+
+### SIPBS
+
+- Prof Paul Hoskisson
+- Dr Arnaud Javelle
+- Prof Dan Walker
+
+### UK
+
+- Dr Carrie Brady (University of the West of England)
+- Prof David Cooke (James Hutton Institute)
+- Dr Tracey Gloster (University of St Andrews)
+- Dr Ashleigh Holmes (James Hutton Institute)
+- Dr Sonia Humphris (James Hutton Institute)
+- Dr Doug Orr (University of Lancaster)
+- Prof Pieter van West (University of Aberdeen)
+
+### International
+
+- Prof C Titus Brown (UC Davis)
+- Prof Lenwood Heath (Virginia Tech)
+- Prof Boris Vinatzer (Virginia Tech)
+
+## How do I edit this website?
+
+Anyone in the group can edit or add to these pages. To do so, please fork this repository from [https://github.com/sipbs-compbiol/sipbs-compbiol.github.io](https://github.com/sipbs-compbiol/sipbs-compbiol.github.io), make your changes, and issue a pull request against the original repository, tagging [Leighton](https://github.com/widdowquinn) as a reviewer. Most requests will be merged without question, but the time to changes going live may vary.

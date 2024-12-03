@@ -1,0 +1,50 @@
+project:
+  type: website
+#  resources:
+#    - "assets/presentations/2024_slides.pdf"
+#    - "assets/forms/SIPBS_Placement_Application_Form_2024-25_v2.docx"
+
+website:
+  title: "SIPBS CompBiol"
+  site-url: https://sipbs-compbiol.github.io/
+  description: "SIPBS Computational Biology Group"
+  favicon: "icon_32.png"
+  navbar:
+    logo: ./assets/images/sipbs_compbio.png
+    right:
+      - text: "Home"
+        file: index.qmd
+      - text: "Group"
+        menu:
+        - text: "Who We Are"
+          href: who_we_are.qmd
+        - text: "What We Do"
+          href: what_we_do.qmd
+        - text: "Code of Conduct"
+          href: code_of_conduct.qmd
+      - text: "Activities"
+        menu: 
+        - text: "Publications"
+          href: publications.qmd
+        - text: "Hacky Hour"
+          href: hacky_hour.qmd
+      - icon: github
+        href: https://github.com/sipbs-compbiol/sipbs-compbiol.github.io
+      - icon: twitter
+        href: https://twitter.com/scompbiol
+      - icon: rss
+        href: index.xml  
+  page-footer: 
+    left: This site © University of Strathclyde 2024
+
+format:
+  html:
+    theme: simplex
+    toc: true
+    css: styles.css
+    embed-resources: true
+
+editor: source
+
+execute:
+  freeze: auto
