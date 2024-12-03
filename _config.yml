@@ -12,3 +12,32 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-include-cache # Add this to resolve the 'include_cached' issue
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      classes: dark-mode
+
+# Pagination settings
+paginate: 5
+paginate_path: "/articles/page:num/"
+
+# Social media links (Optional)
+social_links:
+  github: "https://github.com/dminischetti"
+  linkedin: "https://www.linkedin.com/in/dminischetti"
+  twitter: "https://twitter.com/dominischetti"
+
+# Exclude specific files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
