@@ -64,8 +64,8 @@ memtable은 memtable_flush_period_in_ms 설정 값에 의해 flush 가 일어납
 
 이러한 모습은 마치 오로라 클러스터의 디스크 볼륨 구성과 유사한 모습을 보입니다. 
 
-![오로라의 내결함성](https://github.com/user-attachments/assets/6aa65fa8-d437-485d-9909-a132be829c40)
-[그림3] 오로라의 내결함성
+![오로라의 내결함성](https://github.com/user-attachments/assets/6aa65fa8-d437-485d-9909-a132be829c40)     
+[그림3] 오로라의 내결함성   
 
 
 {% assign posts = site.categories.Cassandra %}
