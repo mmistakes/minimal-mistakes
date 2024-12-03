@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Family Christmas Treasure Hunt</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #f8f9fa;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeInContainer 1s ease-in-out;
+        }
+        .language-switch {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+        .language-switch a {
+            color: #33cc33;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+        .language-switch a:hover {
+            color: #ff4d4d;
+        }
+        .language-switch img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #33cc33;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #ff4d4d;
+            margin-top: 1.5em;
+            border-bottom: 2px dashed #ff4d4d;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        h2:hover {
+            color: #33cc33;
+        }
+        p {
+            margin: 0 0 1em 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff4d4d;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .large {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #33cc33;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            animation: fadeInList 1.5s ease-in-out;
+        }
+        ul li {
+            padding: 10px;
+            background-color: #222;
+            color: #f8f9fa;
+            margin: 8px 0;
+            border-radius: 5px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeInItem 1.8s ease-in-out;
+        }
+        ul li:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+        ul li span {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+        .team-list {
+            display: grid;
+            gap: 20px;
+            animation: fadeInTeams 1.5s ease-in-out;
+        }
+        .team {
+            padding: 15px;
+            background-color: #222;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: slideInTeam 1.5s ease-in-out;
+        }
+        .team:hover {
+            background-color: #333;
+            transform: scale(1.03);
+        }
+        .team-name {
+            font-size: 1.2em;
+            color: #33cc33;
+            font-weight: bold;
+        }
+        .team-desc {
+            font-size: 1em;
+            color: #f8f9fa;
+            margin-top: 5px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 1em;
+            color: #ccc;
+            margin-top: 30px;
+            font-style: italic;
+            animation: fadeInFooter 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <a href="index.html"><img src="italy-flag-icon.png" alt="Italian Flag">Italiano</a>
+    </div>
+
+    <div class="container">
+        <h1>🎉 Welcome to da First-Ever Big Family Christmas Treasure Hunt! 🎉</h1>
+
+        <p class="large">Listen up, *dis year* we thought, “How can we make Christmas even more *bananas*, ya know?” And BOOM – here we are! It’s da <span class="highlight">BIGGEST, CRAZIEST CHRISTMAS TREASURE HUNT you’ll ever see in da famiglia!</span> 🎅🤶</p>
+
+        <h2>🎄 So, What’s Da Deal?</h2>
+        <p>Each team’s gotta go out and find da items on da list below and snap a <span class="italic">selfie</span> with each one (ehhh, and don’t you dare Google it – I’ll know, alright?! 😜). <span class="highlight">Da weirder you make it, da better!</span> I wanna see cucumbers dressed as Christmas trees, Santa hats on random stuff like your *coffee machine*, whatever makes you laugh till you cry! 🎁</p>
+        <p>When you find somethin’, <span class="highlight">post it in da group!</span> We all need a good laugh, maybe a little cry (ya know, from da laughin’), and probably we’ll all be askin’, *“But... whattaf*ck?!”* 🎄📸</p>
+
+        <h2>🏆 Da Squads</h2>
+        <div class="team-list">
+            <div class="team">
+                <div class="team-name">Da Wandering Elves 🧳🎅</div>
+                <div class="team-desc">Dominic, Chiara, Mia, and Liam – they’re always on da move, maybe *dis time* they won’t get lost! 😅</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Da Christmas Cilloni 🍢🎅</div>
+                <div class="team-desc">Mattia and Valentina – straight outta Abruzzo, bringin’ da passion, da spirit... and da *skewers*! 🍢</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Da Spirits of da Present Arrosticino 🎄🍢</div>
+                <div class="team-desc">Pier, his loyal buddy Baghera 🐕, and some mystery guest he picked! What’s it gonna be, eh? 🤷‍♂️</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Da Merry Maknaes 🎄🌟</div>
+                <div class="team-desc">Noemi and Laura – they’re bringin’ a little K-pop to da Christmas party! 🎤</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Da Christmas Pixels 🎄💾</div>
+                <div class="team-desc">Gianfranco and Ashley – where tech and holiday spirit meet! 🤖</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Da Zampettanti Party People 🐾🍾</div>
+                <div class="team-desc">Lorenzo, Sabrina, and Ozzy – ready to paw their way to victory! 🐾</div>
+            </div>
+        </div>
+
+        <h2>🎖 What’s Da Big Prize?</h2>
+        <p>So, listen up! At da end of dis treasure hunt, <span class="highlight">one lucky team will be crowned CHRISTMAS CHAMPIONE!</span> You’ll get da kinda *eternal glory* that lasts till, ya know, next year (eh, don’t get too comfortable). We’re announcin’ da winner on <span class="highlight">January 1st</span> – gotta start da new year off with a bang, am I right? 🎆</p>
+
+        <h2>🎅 Da Big List of Christmas "Stuff"</h2>
+        <p>(*Alright, capisce? Letza go!*)</p>
+        <ul>
+            <li><span>🧦</span> A lonely sock that looks like it belongs to some elf who forgot it at Nonna’s house</li>
+            <li><span>🎄</span> A Christmas decoration so tacky, it makes ya go, “*You kiddin’ me right now?*”</li>
+            <li><span>✨</span> A “magic” spoon – yeah, turn it into a Christmas wand or somethin’! 🪄</li>
+            <li><span>🎅</span> A Santa who looks like he could use a vacation, espresso, and a good nap</li>
+            <li><span>🍪</span> A “Christmas cookie” that nobody asked for – hey, even a *potato chip* can have dreams, right?</li>
+            <li><span>🎩</span> A Santa hat on somethin’... *weird* (you got da imagination, now use it)</li>
+            <li><span>☕</span> A “winter drink” that’s “fancy” – and I mean *really improvised*</li>
+            <li><span>🐶</span> A pet (real or fake) dressed up like “Merry Christmas” and wonderin’, *“Why me?”*</li>
+            <li><span>🎁</span> Wrappin’ paper so old it’s practically an antique</li>
+            <li><span>💫</span> Somethin’ with WAY too much glitter – if it’s all over ya for days, ya got it right</li>
+            <li><span>🍽️</span> A plate of food that *looks* like Christmas decor – yeah, even spaghetti counts 🍝</li>
+            <li><span>📝</span> A sign that you can pretend says “Merry Christmas” – even if it says “Keep Out” or somethin’</li>
+            <li><span>🌵</span> Somethin’ that should NOT be decorated for Christmas – like your TV remote or... Nonno’s glasses?</li>
+            <li><span>🧙</span> An elf ya made yaself – creativity like back in Nonna’s kitchen, eh? ✂️</li>
+            <li><span>🖼️</span> A decoration way too serious for Christmas – like da Mona Lisa wearin’ a Santa hat?</li>
+            <li><span>🦌</span> An improvised “reindeer” – if it’s got antlers, it’s a reindeer, alright?</li>
+            <li><span>🤔</span> Somethin’ that makes ya go, “What’s dis got to do with Christmas?” Just take da pic</li>
+            <li><span>☹️</span> Somethin’ that looks like *The Grinch before coffee* ☕</li>
+            <li><span>📜</span> A “creative” Christmas card – even if it’s just on a napkin!</li>
+            <li><span>🛋️</span> A chair “dressed up” for Christmas – dis is your Christmas runway moment! 💃</li>
+            <li><span>📺</span> Somethin’ that *claims* it’s Christmas-y... but you’re like, *nahhh*</li>
+            <li><span>🍅</span> Somethin’ red and white that’s *tryin’ hard* – like a ketchup bottle or da pasta sauce</li>
+            <li><span>🔔</span> Somethin’ that “sounds like Christmas” but isn’t – make some noise!</li>
+            <li><span>🤷</span> A decoration so weird it’s gotta be explained, maybe twice</li>
+            <li><span>📦</span> Somethin’ that *wants* to be a gift – even if it’s just an empty box with a bow</li>
+        </ul>
+
+        <h2>⏰ Da Deadline</h2>
+        <p>So listen, da treasure hunt ends at <span class="highlight">midnight, December 24th</span> (right when Santa clocks in for his shift). Wherever ya are, ya got till da end of Christmas Eve to finish da list and *show off da goods!* 🎁🌟</p>
+
+        <h2>📲 WhatsApp Group Additions</h2>
+        <p>Alright, here’s da deal. I already made a WhatsApp group and added a few of ya. Now it’s your job to add your partners (and pets too, if they got a smartphone 🐶📱). Alright? Let’s get this thing goin’! 🚀</p>
+
+        <p class="large">Ya ready to make dis Christmas a big, beautiful, *Italian-style* mess? 🚀 Let’s make it da most hilarious, unforgettable, “what-was-I-thinkin’” Christmas ever! 🎄📸</p>
+
+        <p class="footer"><span class="italic">P.S.</span> Da list? Wazza Mara You? Blame ChatGPT! (So nobody look at me when it gets weird!) *Have fun!* 😜</p>
+    </div>
+</body>
+</html>
+
+</body>
+</html>

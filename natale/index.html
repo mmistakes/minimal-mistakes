@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caccia al Tesoro Natalizia di Famiglia</title>
+    <style>
+        /* Add styling for the language switcher */
+        .language-switch {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+        .language-switch a {
+            color: #33cc33;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+        .language-switch a:hover {
+            color: #ff4d4d;
+        }
+        .language-switch img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #f8f9fa;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeInContainer 1s ease-in-out;
+        }
+        h1 {
+            font-size: 2em;
+            color: #33cc33;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #ff4d4d;
+            margin-top: 1.5em;
+            border-bottom: 2px dashed #ff4d4d;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+            animation: slideIn 1.2s ease-in-out;
+        }
+        h2:hover {
+            color: #33cc33;
+        }
+        p {
+            margin: 0 0 1em 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff4d4d;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .large {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #33cc33;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            animation: fadeInList 1.5s ease-in-out;
+        }
+        ul li {
+            padding: 10px;
+            background-color: #222;
+            color: #f8f9fa;
+            margin: 8px 0;
+            border-radius: 5px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeInItem 1.8s ease-in-out;
+        }
+        ul li:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+        ul li span {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+        .team-list {
+            display: grid;
+            gap: 20px;
+            animation: fadeInTeams 1.5s ease-in-out;
+        }
+        .team {
+            padding: 15px;
+            background-color: #222;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: slideInTeam 1.5s ease-in-out;
+        }
+        .team:hover {
+            background-color: #333;
+            transform: scale(1.03);
+        }
+        .team-name {
+            font-size: 1.2em;
+            color: #33cc33;
+            font-weight: bold;
+        }
+        .team-desc {
+            font-size: 1em;
+            color: #f8f9fa;
+            margin-top: 5px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 1em;
+            color: #ccc;
+            margin-top: 30px;
+            font-style: italic;
+            animation: fadeInFooter 2s ease-in-out;
+        }
+        .notice {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: fadeInNotice 1.8s ease-in-out;
+        }
+        a {
+            color: #33cc33;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff4d4d;
+        }
+        /* Animazioni */
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInList {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInItem {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInContainer {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeInTeams {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInTeam {
+            from { transform: translateX(-10px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInFooter {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInNotice {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Responsività */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .large {
+                font-size: 1.1em;
+            }
+            ul li {
+                font-size: 0.9em;
+            }
+            .team-name {
+                font-size: 1em;
+            }
+            .team-desc {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="language-switch">
+        <a href="eng.html"><img src="us-flag-icon.png" alt="US Flag">English</a>
+    </div>
+    
+    <div class="container">
+        <h1>🎉 Il Gran Gioco di Caccia al Tesoro Natalizia di Famiglia! 🎉</h1>
+
+        <p class="large">Quest’anno ho pensato: "Come posso rendere il Natale ancora più folle?" 🤔 E voilà, ecco a voi la <span class="highlight">CACCIA AL TESORO NATALIZIA PIÙ DIVERTENTE DI SEMPRE!</span> 🎅🤶</p>
+
+        <h2>🎄 Come funziona?</h2>
+        <p>Ogni squadra deve trovare gli oggetti della lista qui sotto e scattarsi un <span class="italic">selfie</span> con ciascuno (no, le foto di Google non valgono! 😜). <span class="highlight">Più creativi siete, meglio è!</span> Voglio vedere cetrioli trasformati in alberi di Natale e cappelli di Babbo Natale su... beh, sorprendetemi! 🎁</p>
+        <p>Quando trovate un oggetto, <span class="highlight">postate la foto nel gruppo!</span> Così possiamo tutti ridere, piangere (dal ridere) e magari chiedervi "ma perché?!". 🎄📸</p>
+
+        <h2>🏆 Le Squadre</h2>
+        <div class="team-list">
+            <div class="team">
+                <div class="team-name">Gli Elfi Erranti 🧳🎅</div>
+                <div class="team-desc">Dominic, Chiara, Mia e Liam – sempre in giro, forse stavolta si perdono meno! 😅</div>
+            </div>
+            <div class="team">
+                <div class="team-name">I Cilloni di Natale 🍢🎅</div>
+                <div class="team-desc">Mattia e Valentina – direttamente dall'Abruzzo con furore e arrosticini! 🍢</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Gli Spiriti dell’Arrosticino del Presente 🎄🍢</div>
+                <div class="team-desc">Pier, il suo fedele Baghera 🐕 e un misterioso compagno scelto da lui! Chi sarà? 🤷‍♂️</div>
+            </div>
+            <div class="team">
+                <div class="team-name">Le Merry Maknaes 🎄🌟</div>
+                <div class="team-desc">Noemi e Laura – portando un po' di K-pop nel nostro Natale! 🎤</div>
+            </div>
+            <div class="team">
+                <div class="team-name">I Pixel di Natale 🎄💾</div>
+                <div class="team-desc">Gianfranco e Ashley – la tecnologia incontra il Natale! 🤖</div>
+            </div>
+            <div class="team">
+                <div class="team-name">I Festeggiatori Zampettanti 🐾🍾</div>
+                <div class="team-desc">Lorenzo, Sabrina e Ozzy – pronti a zampettare verso la vittoria! 🐾</div>
+            </div>
+        </div>
+
+        <h2>🎖 Il Premio</h2>
+        <p>Alla fine della caccia al tesoro, una sola squadra sarà incoronata <span class="highlight">Campione del Natale</span> e guadagnerà la <span class="italic">Gloria Eterna</span> (fino al prossimo anno, poi scade 😜). Il vincitore sarà annunciato il <span class="highlight">1º gennaio</span> – così iniziamo l'anno con una risata! 🎆</p>
+
+        <h2>🎅 La Lista degli Oggetti</h2>
+        <p>(Pronti? Via!)</p>
+        <ul>
+            <li><span>🧦</span>Un calzino spaiato che potrebbe essere di un elfo distratto</li>
+            <li><span>🎄</span>Una decorazione natalizia così kitsch da farti dire "ma davvero?"</li>
+            <li><span>✨</span>Un cucchiaio magico – trasformalo in una bacchetta natalizia! 🪄</li>
+            <li><span>🎅</span>Un Babbo Natale che sembra aver bisogno di ferie (occhiaie incluse)</li>
+            <li><span>🍪</span>Un "biscotto di Natale" inaspettato – sì, anche una patatina può sognare!</li>
+            <li><span>🎩</span>Un cappello di Babbo Natale su qualcosa di... strano (si accettano idee folli)</li>
+            <li><span>☕</span>Una bevanda "invernale" improvvisata – sorprendici! 🥤</li>
+            <li><span>🐶</span>Un animaletto (vero o finto) vestito a festa che pensa "perché a me?"</li>
+            <li><span>🎁</span>Carta regalo riciclata così tante volte da essere vintage</li>
+            <li><span>💫</span>Qualcosa con TROPPO glitter – se brilli per tre giorni, è quello giusto</li>
+            <li><span>🍽️</span>Un piatto che sembra una decorazione natalizia – anche se è solo pasta al sugo 🍝</li>
+            <li><span>📝</span>Una scritta che puoi interpretare come "Felice Natale" – anche se dice tutt'altro!</li>
+            <li><span>🌵</span>Qualcosa che NON andrebbe decorato per Natale – tipo... il tuo spazzolino?</li>
+            <li><span>🧙</span>Un elfo fai-da-te – creatività al potere! ✂️</li>
+            <li><span>🖼️</span>Una decorazione troppo seria per Natale – una Monna Lisa con cappello?</li>
+            <li><span>🦌</span>Una "renna" improvvisata – il tuo cane con corna di carta conta!</li>
+            <li><span>🤔</span>Un oggetto che ti fa dire "Ma che c'entra col Natale?" – ma lo fotografi lo stesso</li>
+            <li><span>☹️</span>Qualcosa che sembra "il Grinch prima del caffè" ☕</li>
+            <li><span>📜</span>Un biglietto d'auguri creativo – anche su un tovagliolo va bene!</li>
+            <li><span>🛋️</span>Una sedia o poltrona "vestita" per Natale – stile passerella! 💃</li>
+            <li><span>📺</span>Un oggetto che "sostiene" di essere natalizio... ma proprio no</li>
+            <li><span>🍅</span>Qualcosa di rosso e bianco che ci prova – tipo una bottiglia di ketchup</li>
+            <li><span>🔔</span>Qualcosa che "fa rumore natalizio" ma non lo è – campane fai-da-te!</li>
+            <li><span>🤷</span>Una decorazione così strana che va spiegata due volte (o tre)</li>
+            <li><span>📦</span>Qualcosa che "vuole" essere un regalo – anche una scatola vuota con fiocco!</li>
+        </ul>
+
+        <h2>⏰ Termine Ultimo</h2>
+        <p>La caccia al tesoro si conclude il <span class="highlight">24 dicembre a mezzanotte</span> (quando Babbo Natale inizia il turno). Quindi, ovunque siate, avete tempo fino alla fine della vigilia per completare la lista e condividere le vostre meraviglie! 🎁🌟</p>
+
+        <h2>📲 Aggiunta al Gruppo WhatsApp</h2>
+        <p>Ho creato un gruppo WhatsApp e ho aggiunto alcuni di voi. Ora tocca a voi! 👥</p>
+        <p><span class="highlight">Ogni partecipante</span> deve aggiungere il proprio partner (e anche i cani, se hanno uno smartphone! 🐶📱) per completare le squadre. Pronti a partire? 🚀</p>
+
+        <p class="large">Siete pronti a trasformare questo Natale in un'avventura epica? 🚀 Prepariamoci a vivere il Natale più divertente, strano e memorabile di sempre! 🎄📸</p>
+
+        <p class="footer"><span class="italic">P.S.</span> La lista è stata creata da ChatGPT (lo so, colpa sua!), quindi nessuno può incolpare me per questi oggetti strani! <span class="highlight">Buon divertimento!</span> 😜</p>
+    </div>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
