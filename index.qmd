@@ -28,7 +28,9 @@ Our main areas of research are in microbiology, human health, and plant health, 
 
 ## Recent Publications
 
-See a more complete list [here](publications.qmd).
+- @Kiepas2024-sq
+
+See a more complete list [here](references.qmd).
 
 ## Active Research Collaborators
 

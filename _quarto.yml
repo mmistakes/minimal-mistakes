@@ -22,6 +22,8 @@ website:
           href: what_we_do.qmd
         - text: "Code of Conduct"
           href: code_of_conduct.qmd
+        - text: "Publications"
+          href: references.qmd
       - text: "Activities"
         menu: 
         - text: "Publications"
@@ -36,6 +38,8 @@ website:
         href: index.xml  
   page-footer: 
     left: This site © University of Strathclyde 2024
+
+bibliography: references.bib
 
 format:
   html:
