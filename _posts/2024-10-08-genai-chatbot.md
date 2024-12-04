@@ -1,129 +1,136 @@
-# Building an Intelligent Chatbot with Streamlit, Azure Search, and GPT
+# Building a RAG Search System with Azure AI and Streamlit
 
-Are you interested in creating a powerful, context-aware chatbot for your website or application? In this blog post, I'll walk you through the process of building a smart chatbot using Streamlit, Azure Cognitive Search, and GPT. This project combines the ease of use of Streamlit for creating web apps, the robust search capabilities of Azure, and the natural language processing power of GPT.
+In this post, I'll walk you through how I built a Retrieval-Augmented Generation (RAG) search system using Azure AI services and Streamlit. This project combines the power of Azure Cognitive Search with Large Language Models to create an intelligent chatbot that can answer questions based on your own knowledge base.
 
-## Project Overview
+## What is RAG?
 
-Our chatbot is designed to answer user queries by searching through a knowledge base and generating context-aware responses. It features:
+Before diving into the implementation details, let's understand what RAG is. Retrieval-Augmented Generation is a technique that enhances Large Language Models by allowing them to access and use external knowledge. Instead of relying solely on the model's trained knowledge, RAG systems first retrieve relevant information from a curated knowledge base and then use that information to generate more accurate and contextual responses.
 
-1. A user-friendly interface built with Streamlit
-2. Integration with Azure Cognitive Search for efficient information retrieval
-3. GPT-powered response generation for natural, contextual answers
-4. Multiple persona options for varied interaction styles
-5. Chat history tracking for a more coherent conversation flow
+## System Architecture
 
-Let's dive into the key components and how they work together!
+The system consists of several key components:
 
-## The Code
+1. **Document Processing Pipeline**: Handles PDF documents by:
+   - Splitting them into pages
+   - Extracting text (including tables)
+   - Chunking content into manageable sections
+   - Uploading to Azure Blob Storage
 
-Here's a breakdown of the main parts of our chatbot application:
+2. **Azure Cognitive Search**: Indexes and stores the processed documents for efficient retrieval
 
-### Imports and Setup
+3. **Streamlit Interface**: Provides a user-friendly chat interface with:
+   - Persona selection
+   - Conversation history
+   - Dynamic response generation
 
-```python
-import os
-import time
-import streamlit as st
-from azure.core.credentials import AzureKeyCredential
-from azure.search.documents import SearchClient
-from azure.search.documents.models import QueryType
-from gpt_return_st import *
-from PIL import Image
-import base64
-```
+## Key Implementation Features
 
-We start by importing necessary libraries. Streamlit for the web interface, Azure SDK for search functionality, and custom modules for GPT integration.
+### Document Processing
 
-### Persona Definitions
+One of the most interesting aspects of this project is how it handles document processing. The system can process PDF documents intelligently:
 
 ```python
-PERSONAS = {
-    "TLM Manager": st.secrets["tlm_manager"],
-    "PSD Manager": st.secrets["psd_manager"]
-}
+def get_document_text(filename):
+    if localpdfparser:
+        reader = PdfReader(filename)
+        pages = reader.pages
+        for page_num, p in enumerate(pages):
+            page_text = p.extract_text()
+            page_map.append((page_num, offset, page_text))
+    else:
+        form_recognizer_client = DocumentAnalysisClient(...)
+        # Use Azure Form Recognizer for advanced document analysis
 ```
 
-We define different personas for our chatbot, allowing users to interact with different "personalities" or knowledge bases.
-
-### Streamlit UI Setup
+The system can even handle complex tables by converting them to HTML format:
 
 ```python
-st.set_page_config(page_title="My AskAI Query Chatbot", layout="wide")
-st.title("How may I help you today?")
-
-persona_selected = st.selectbox("Select a Persona:", options=list(PERSONAS.keys()))
-
-st.markdown("### 🤖 Ask your Question:")
-user_input = st.text_input('Enter your question here:', 'At what temperature can I use the Ora technology')
+def table_to_html(table):
+    table_html = "<table>"
+    rows = [sorted([cell for cell in table.cells if cell.row_index == i], 
+            key=lambda cell: cell.column_index) 
+            for i in range(table.row_count)]
+    # Process table structure...
+    return table_html
 ```
 
-This section sets up the Streamlit interface, including the title, persona selection dropdown, and input field for user questions.
+### Smart Text Chunking
+
+To optimize search performance, the system implements intelligent text chunking:
+
+1. Maintains context across chunks with overlapping sections
+2. Respects sentence boundaries
+3. Handles special cases like tables spanning multiple chunks
 
 ### Azure Search Integration
 
-```python
-service_name = st.secrets["searchservice"]
-key = st.secrets["searchkey"]
-searchservice = st.secrets["searchservice"]
-endpoint = "https://{}.search.windows.net/".format(searchservice)
-index_name = st.secrets["index"]
-azure_credential = AzureKeyCredential(key)
-
-search_client = SearchClient(endpoint=endpoint, index_name=index_name, credential=azure_credential)
-```
-
-Here, we set up the connection to Azure Cognitive Search using the provided credentials and create a search client.
-
-### Search and Response Generation
+The search index is designed to support semantic search capabilities:
 
 ```python
-results = search_client.search(user_input,
-                               filter=filter,
-                               query_type=QueryType.SEMANTIC,
-                               query_language="en-us",
-                               query_speller="lexicon",
-                               semantic_configuration_name="content-search",
-                               top=3)
-
-# Extract content and references
-# ...
-
-prompt = create_prompt(content, user_input)
-conversation.append({"role": "user", "content": user_input})
-
-reply = generate_answer(conversation)
-answer = reply.choices[0].message.content
+search_index = SearchIndex(
+    name=index,
+    fields=[
+        SimpleField(name="id", type="Edm.String", key=True),
+        SearchableField(name="content", type="Edm.String", analyzer_name="en.microsoft"),
+        SimpleField(name="category", type="Edm.String", filterable=True, facetable=True),
+        # Additional fields...
+    ],
+    semantic_settings=SemanticSettings(...)
+)
 ```
 
-This section performs the search query, extracts relevant content, and generates a response using GPT.
+## The User Experience
 
-### Chat History Management
+The Streamlit interface provides a clean, chat-like experience where users can:
 
-```python
-if 'conversation_history' not in st.session_state:
-    st.session_state.conversation_history = []
+1. Select different personas (e.g., TLM Manager, PSD Manager)
+2. Ask questions naturally
+3. See conversation history
+4. Get responses with source references
 
-# ... (display chat history in sidebar)
+## Deployment and Configuration
 
-st.session_state.conversation_history.append((user_input, answer))
-```
+The system is designed to be easily deployable with minimal configuration:
 
-We manage and display the chat history, storing it in Streamlit's session state for persistence across interactions.
+1. Configure Azure services in `secrets.toml`:
+   ```toml
+   [default]
+   searchservice = "your-search-service-name"
+   searchkey = "your-search-service-admin-api-key"
+   index = "your-index-name"
+   ```
 
-## How It Works
+2. Run with a simple command:
+   ```bash
+   streamlit run app.py
+   ```
 
-1. **User Interface**: The user selects a persona and enters a question through the Streamlit interface.
-2. **Azure Search**: The question is sent to Azure Cognitive Search, which returns relevant information from the knowledge base.
-3. **Context Preparation**: The search results, along with the chat history and selected persona, are used to create a context for GPT.
-4. **GPT Response**: The prepared context is sent to GPT, which generates a natural language response.
-5. **Display and Storage**: The response is displayed to the user and stored in the chat history.
+## Technical Considerations
+
+When building this system, I had to address several technical challenges:
+
+1. **Document Processing**: Handling various PDF formats and table structures
+2. **Chunking Strategy**: Balancing chunk size with context preservation
+3. **Search Relevance**: Tuning search parameters for optimal results
+4. **Response Generation**: Creating contextual prompts for the LLM
+
+## Future Improvements
+
+Some potential enhancements I'm considering:
+
+1. Multi-language support
+2. Advanced document preprocessing options
+3. Custom embeddings for improved search relevance
+4. Real-time document updates
 
 ## Conclusion
 
-This project demonstrates how to combine Streamlit, Azure Cognitive Search, and GPT to create a powerful, context-aware chatbot. The resulting application is not only intelligent but also user-friendly and easily customizable.
+This RAG search system demonstrates how to combine Azure AI services with modern UI frameworks to create a powerful, user-friendly search experience. The modular architecture makes it easy to extend and customize for different use cases.
 
-By leveraging Azure's search capabilities and GPT's language understanding, we've created a chatbot that can provide accurate, contextual responses to user queries. The multi-persona feature adds an extra layer of versatility, allowing the chatbot to adapt its tone and knowledge base to different scenarios.
+Feel free to check out the [GitHub repository](https://github.com/your-username/rag-search-azure-ai) for the complete code and documentation.
 
-Feel free to adapt this code for your own projects, and don't hesitate to explore further enhancements like adding more personas, improving the UI, or integrating with other APIs to expand the chatbot's capabilities.
+## Resources
 
-Happy coding!
+- [Azure Cognitive Search Documentation](https://docs.microsoft.com/en-us/azure/search/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Python PDF Processing](https://pypdf.readthedocs.io/)
