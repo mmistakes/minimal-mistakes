@@ -19,5 +19,6 @@ html:
   anchor-sections: true
 ---
 
-::: {#refs}
-:::
+```{=html}
+<script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/sipbs-compbiol/sipbs-compbiol.github.io/refs/heads/quarto/references.bib&jsonp=1"></script>
+```

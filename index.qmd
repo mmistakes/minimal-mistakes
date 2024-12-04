@@ -28,7 +28,11 @@ Our main areas of research are in microbiology, human health, and plant health, 
 
 ## Recent Publications
 
-- @Kiepas2024-sq
+Our five most recent publications are
+
+```{=html}
+<script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/sipbs-compbiol/sipbs-compbiol.github.io/refs/heads/quarto/references_recent.bib&jsonp=1"></script>
+```
 
 See a more complete list [here](references.qmd).
 
