@@ -50,5 +50,16 @@ format:
 
 editor: source
 
+custom-callout:
+  callout-publications:
+    icon-symbol: "📚"
+    color: "orange"
+  callout-scientist:
+    icon-symbol: "🧑"
+    color: "cadetblue"
+
+filters:
+- custom-callout
+
 execute:
   freeze: auto

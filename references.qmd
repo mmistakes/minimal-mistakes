@@ -20,5 +20,5 @@ html:
 ---
 
 ```{=html}
-<script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/sipbs-compbiol/sipbs-compbiol.github.io/refs/heads/quarto/references.bib&jsonp=1"></script>
+<script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/sipbs-compbiol/sipbs-compbiol.github.io/refs/heads/quarto/references.bib&jsonp=1&folding=1"></script>
 ```

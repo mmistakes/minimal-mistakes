@@ -26,6 +26,7 @@ Our main areas of research are in microbiology, human health, and plant health, 
 - biostatistics
 - phylogenetics and phylogenomics
 
+::: {.callout-publications collapse="true"}
 ## Recent Publications
 
 ```{=html}
@@ -33,8 +34,10 @@ Our main areas of research are in microbiology, human health, and plant health, 
 ```
 
 For a more complete list, see [here](references.qmd).
+:::
 
-## Active Research Collaborators
+::: {.callout-scientist collapse="true"}
+## Ongoing Collaborations
 
 ### SIPBS
 
@@ -57,6 +60,7 @@ For a more complete list, see [here](references.qmd).
 - Prof C Titus Brown (UC Davis)
 - Prof Lenwood Heath (Virginia Tech)
 - Prof Boris Vinatzer (Virginia Tech)
+:::
 
 ## How do I edit this website?
 
