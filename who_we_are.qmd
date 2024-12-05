@@ -33,8 +33,10 @@ html:
 - Tom Harris (PhD 2020-2024, with Dr Arnaud Javelle)
 - Julia Monserrat Relano (PhD 2023-2026, University of Lancaster, with Dr Doug Orr)
 
-::: {.callout-scientist-purple collapse="true"}
 ## Alumni
+
+::: {.callout-scientist-purple collapse="true"}
+## PDRAs and PhDs {.unnumbered}
 
 - Dr Bailey Harrington (PDRA 2021-2022)
 - Dr Emma Hobbs (PhD 2019-2023, University of St Andrews, with Dr Tracey Gloster)
@@ -45,7 +47,7 @@ html:
 :::
 
 ::: {.callout-scientist-blue collapse="true"}
-## Project Students
+## Project Students {.unnumbered}
 
 - Dami Adeleke (BSc, 2021-22; MSc, 2023-24)
 - Gwyneth Adumah (BSc, 2024-25)
@@ -78,4 +80,4 @@ html:
 - Pengcheng Zhang (BSc, 2023-24)
 :::
 
-![Gantt chart of current and former SIPBSCompBiol members.](assets/images/2024-12-05_gantt.jpg){#fig-gantt width=80%}
+![Gantt chart of current and former SIPBSCompBiol members, while the group was active at Strathclyde. Colour bars indicate PI (purple), PhD student (green and yellow), PDRA (dark blue), Postgraduate taught student (red), and Undergraduate student (cyan).](assets/images/2024-12-05_gantt.jpg){#fig-gantt width=80%}
