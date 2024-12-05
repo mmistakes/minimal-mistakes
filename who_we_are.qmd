@@ -80,4 +80,4 @@ html:
 - Pengcheng Zhang (BSc, 2023-24)
 :::
 
-![Gantt chart of current and former SIPBSCompBiol members, while the group was active at Strathclyde. Colour bars indicate PI (purple), PhD student (green and yellow), PDRA (dark blue), Postgraduate taught student (red), and Undergraduate student (cyan).](assets/images/2024-12-05_gantt.jpg){#fig-gantt width=80%}
+![Gantt chart of current and former SIPBSCompBiol members, while the group has been active at Strathclyde. Colour bars indicate PI (purple), PhD student (green and yellow), PDRA (dark blue), Postgraduate taught student (red), and Undergraduate student (cyan).](assets/images/2024-12-05_gantt.jpg){#fig-gantt width=80%}
