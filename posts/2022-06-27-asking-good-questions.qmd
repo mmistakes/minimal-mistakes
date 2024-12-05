@@ -17,7 +17,9 @@ date-modified: 2024-12-05
 ::: {.callout-tip}
 ## Credit
 
-This post is based on the excellent "How to report bugs effectively" by Simon Tatham, which can be read [here](https://www.chiark.greenend.org.uk/%7Esgtatham/bugs.html). Please do read it!
+This post is based on the excellent "How to report bugs effectively" by Simon Tatham, which can be read [here](https://www.chiark.greenend.org.uk/%7Esgtatham/bugs.html).
+
+(Please do read it!)
 :::
 
 ::: {.callout-important}
