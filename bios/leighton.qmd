@@ -11,6 +11,10 @@ about:
       href: https://github.com/widdowquinn
     - text: "{{< fa brands linkedin >}} LinkedIn"
       href: https://www.linkedin.com/in/leighton-pritchard-7b05111/
+    - text: "{{< fa brands google >}} Google Scholar"
+      href: https://scholar.google.co.uk/citations?user=5QhdsWkAAAAJ&hl=en
+    - text: "{{< fa brands orcid >}} ORCID"
+      href: https://orcid.org/0000-0002-8392-2822
     - icon: envelope
       text: Email
       href: mailto:leighton.pritchard@strath.ac.uk
@@ -38,3 +42,8 @@ Leighton Pritchard is the SIPBSCompBiol PI. When not running the group, he enjoy
 **The Scottish Crop Research Institute** | Computational Biologist | 2003 - 2011
 
 **University of Wales, Aberystwyth** | Postdoctoral Research Associate | 1999 - 2003
+
+## Links
+
+- [University page](https://www.strath.ac.uk/staff/pritchardleightondr/)
+- [University Pure page](https://pureportal.strath.ac.uk/en/persons/leighton-pritchard)
