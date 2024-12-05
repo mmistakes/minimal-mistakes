@@ -1,23 +1,30 @@
 ---
-permalink: /phd/viva
 title: "What to Expect from Your *Viva*"
-categories: PhD
-tags: [advice, studentships, PhD students, supervision]
+categories:
+  - PhD
+  - advice
+  - studentships
+  - PhD students
+  - supervision
 toc: true
-toc_label: "Table of Contents"
-toc_icon: "book-reader"
-toc_sticky: true
-author: Leighton Pritchard
+author: "Leighton Pritchard"
+date: 2022-06-01
+date-modified: 2022-12-05
 ---
 
 The *viva voce* examination is the main assessment of your PhD. Typically, students don't ask about it until they are ready to submit, and it can seem for some to be an intimidating event, lurking on the horizon. It doesn't have to be a horrible, traumatic experience. In reality, it's one of the few opportunities you'll have to discuss so much of your work in detail with interested people, and it can be very enjoyable, even fun. This page has some advice (adapted from a University of Strathclyde training course: "*Preparing Your Student for Viva*") that might help put the *viva* into context for you.
 
+::: {.callout-important}
+## We're being UK-specific!
+
 All this advice is based on the UK PhD *viva* process. It can be very different in other countries. In Finland people wear swords.
-{: .notice--warning}
+:::
+
+::: {.callout-warning}
+## Check official sources!
 
 This is not official university advice. Please be sure to check the current regulations for your home institution.
-{: .notice--danger}
-
+:::
 
 ## Who will be in the room?
 

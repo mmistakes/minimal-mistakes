@@ -1,22 +1,26 @@
 ---
 title: "How to Get Good Feedback"
-categories: Student
-tags: [advice, studentships, PhD students, supervision]
+categories:
+  - Student
+  - advice
+  - studentships
+  - PhD students
+  - supervision]
 toc: true
-toc_label: "Table of Contents"
-toc_icon: "book-reader"
-toc_sticky: true
-author: Leighton Pritchard
+author: "Leighton Pritchard"
+date: 2022-06-01
+date-modified: 2024-12-05
 ---
 
+::: {.callout-important}
 ## tldr;
 
 - explain what kind of feedback you want (or don't want)
 - say when you need a response
     - (but be mindful of how long it takes to produce detailed feedback, and for you to act on it)
 
-REMEMBER: criticism of the work is not criticism of you as a person
-{: .notice--primary}
+**REMEMBER: criticism of the work is not criticism of you as a person**
+:::
 
 ## General advice
 

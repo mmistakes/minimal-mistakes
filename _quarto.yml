@@ -29,6 +29,8 @@ website:
           href: code_of_conduct.qmd
       - text: "Activities"
         menu: 
+        - text: "Blog"
+          href: blog.qmd
         - text: "Publications"
           href: references.qmd
 #        - text: "Hacky Hour"

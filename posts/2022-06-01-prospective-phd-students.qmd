@@ -1,16 +1,18 @@
 ---
-permalink: /phd/prospective_students
 title: "Advice for Prospective PhD Students"
-categories: PhD
-tags: [advice, studentships, PhD students, job applications, supervision]
+description: A short post with advice for if you're thinking about applying for a PhD in the group, or with Leighton as a supervisor.
+categories:
+  - PhD
+  - advice
+  - studentships 
+  - PhD students
+  - job applications
+  - supervision
 toc: true
-toc_label: "Table of Contents"
-toc_icon: "book-reader"
-toc_sticky: true
-author: Leighton Pritchard
+author: "Leighton Pritchard"
+date: 2022-06-01
+date-modified: 2024-12-05
 ---
-
-A short post with advice for if you're thinking about applying for a PhD in the group, or with Leighton as a supervisor.
 
 ## Should I get in touch first?
 

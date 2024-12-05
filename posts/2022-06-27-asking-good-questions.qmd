@@ -1,17 +1,26 @@
 ---
 title: "How to Ask Good (Computational) Questions and Make Good Bug Reports"
-categories: Student
-tags: [advice, studentships, MSc students, Internships, supervision]
+description: A short guide to helping people give you the answers you want and need.
+categories:
+  - Student
+  - advice
+  - studentships
+  - MSc students
+  - Internships
+  - supervision
 toc: true
-toc_label: "Table of Contents"
-toc_icon: "book-reader"
-toc_sticky: true
-author: Leighton Pritchard
+author: "Leighton Pritchard"
+date: 2022-06-27
+date-modified: 2024-12-05
 ---
 
-This post is based on the excellent "How to report bugs effectively" by Simon Tatham, which can be read [here](https://www.chiark.greenend.org.uk/%7Esgtatham/bugs.html). Please do read it!
-{: .notice--success}
+::: {.callout-tip}
+## Credit
 
+This post is based on the excellent "How to report bugs effectively" by Simon Tatham, which can be read [here](https://www.chiark.greenend.org.uk/%7Esgtatham/bugs.html). Please do read it!
+:::
+
+::: {.callout-important}
 ## tldr;
 
 - Be precise
@@ -20,6 +29,7 @@ This post is based on the excellent "How to report bugs effectively" by Simon Ta
 - Provide at least enough information to solve the problem. Too much information is also good
 - Avoid speculation, stick to facts
 - Check elsewhere for answers first
+:::
 
 ## You want an answer, so be kind and helpful
 

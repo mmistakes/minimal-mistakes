@@ -1,25 +1,30 @@
 ---
 title: "So, You've Joined SIPBS-CompBiol as a Project Student…"
-categories: Student
-tags: [advice, studentships, MSc students, Internships, supervision]
+categories:
+  - Student
+  - advice
+  - studentships
+  - MSc students
+  - Internships
+  - supervision
 toc: true
-toc_label: "Table of Contents"
-toc_icon: "book-reader"
-toc_sticky: true
-author: Leighton Pritchard
+author: "Leighton Pritchard"
+date: 2022-09-18
+date-modified: 2024-12-05
 ---
 
 Firstly, **welcome to the group**!
 
 The SIPBS-CompBiol group is a purely computational biology and bioinformatics research group, in the Strathclyde Institute for Pharmacy and Biomedical Sciences. If you're reading this, you've probably asked for (or been assigned) an undergraduate, Master's, or internship project with us. We're a friendly group and excited about computational biology so, even if this is your first time working in this area, we want you to do well and are all happy to help and answer questions.
 
-{: .notice--success}
-Please start by reading the current group member bios, and our philosophy, responsibilities, and code of conduct.
+::: {.callout-tip}
+You could make a start by reading the current group member bios, and our philosophy, responsibilities, and code of conduct.
 
 - [Group bios](/group/bios)
 - [Group philosophy](/group/philosophy)
-- [Code of Conduct](/group/code_of_conduct)
+- [Code of Conduct](/code_of_conduct.qmd)
 - [Group responsibilities](/group/responsibilities)
+:::
 
 ## What do you need to do?
 
