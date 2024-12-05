@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "hidoKim's blog"
 title_separator          : "|"
-subtitle                 : "Hello world"# site tagline that appears below site title in masthead
+subtitle                 : "programming blog"# site tagline that appears below site title in masthead
 name                     : "hido Kim"
 description              : "히도의 블로그입니다"
 url                      : "https://hidoKim.github.io"

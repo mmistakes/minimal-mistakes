@@ -39,12 +39,12 @@ author_profile : false
 ![todolist](/assets/images/todoList1.png)
 #### HTML
 ```html
-<!DOCTYPE hle>tml>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</tit
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
