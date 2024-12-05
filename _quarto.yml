@@ -23,22 +23,22 @@ website:
         menu:
         - text: "Who We Are"
           href: who_we_are.qmd
-        - text: "What We Do"
-          href: what_we_do.qmd
+#        - text: "What We Do"
+#          href: what_we_do.qmd
         - text: "Code of Conduct"
           href: code_of_conduct.qmd
-        - text: "Publications"
-          href: references.qmd
       - text: "Activities"
         menu: 
         - text: "Publications"
-          href: publications.qmd
-        - text: "Hacky Hour"
-          href: hacky_hour.qmd
+          href: references.qmd
+#        - text: "Hacky Hour"
+#          href: hacky_hour.qmd
+      - text: "{{< fa brands bluesky >}}"
+        href: https://bsky.app/profile/sipbscompbiol.bsky.social
       - icon: github
         href: https://github.com/sipbs-compbiol/sipbs-compbiol.github.io
-      - icon: twitter
-        href: https://twitter.com/scompbiol
+#      - icon: twitter
+#        href: https://twitter.com/scompbiol
       - icon: rss
         href: index.xml
   page-footer: 
@@ -57,7 +57,7 @@ format:
   html:
     theme: simplex
     toc: true
-#    css: styles.css
+    css: styles.css
     embed-resources: true
 
 editor: source

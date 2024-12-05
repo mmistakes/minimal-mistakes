@@ -4,12 +4,8 @@ image: ./assets/images/sipbs_compbio.png
 about:
   template: trestles
   links:
-    - icon: bluesky
-      text: Bluesky
-      href: https://twitter.com/scompbiol
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/scompbiol
+    - text: "{{< fa brands bluesky >}} Bluesky"
+      href: https://bsky.app/profile/sipbscompbiol.bsky.social
     - icon: github
       text: Github
       href: https://github.com/sipbs-compbiol
