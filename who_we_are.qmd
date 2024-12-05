@@ -2,7 +2,6 @@
 title: "Who We Are"
 description: |
  Who's Who in SIPBS CompBiol
-number-sections: true
 about:
   template: marquee
   links:
@@ -41,6 +40,7 @@ html:
 - Dr Bailey Harrington (PDRA 2021-2022)
 - Dr Emma Hobbs (PhD 2019-2023, University of St Andrews, with Dr Tracey Gloster)
 - Dr Rory McLeod (PhD 2016-2020, University of Dundee, with Dr Edgar Huitema)
+- Dr Julianna Piat (PhD 2020-2024, University of Oxford, with Prof. Gail Preston)
 - Dr Christelle Robert (PhD 2006-2009, University of Dundee, with Prof. Geoff Barton)
 - Dr Nick Waters (PhD 2016-2020, NUIG Galway, with Dr Fiona Brennan and Dr Florence Abram)
 - Dr Eirini Xemantilotou (PhD 2015-2019, University of St Andrews, with Dr Tracey Gloster)
