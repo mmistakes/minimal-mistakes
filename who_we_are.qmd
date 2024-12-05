@@ -19,6 +19,7 @@ html:
   anchor-sections: true
 ---
 
+
 ## Current Members
 
 - Dr Leighton Pritchard
@@ -32,6 +33,7 @@ html:
 - Tom Harris (PhD 2020-2024, with Dr Arnaud Javelle)
 - Julia Monserrat Relano (PhD 2023-2026, University of Lancaster, with Dr Doug Orr)
 
+::: {.callout-scientist-purple collapse="true"}
 ## Alumni
 
 - Dr Bailey Harrington (PDRA 2021-2022)
@@ -40,7 +42,9 @@ html:
 - Dr Christelle Robert (PhD 2006-2009, University of Dundee, with Prof. Geoff Barton)
 - Dr Nick Waters (PhD 2016-2020, NUIG Galway, with Dr Fiona Brennan and Dr Florence Abram)
 - Dr Eirini Xemantilotou (PhD 2015-2019, University of St Andrews, with Dr Tracey Gloster)
+:::
 
+::: {.callout-scientist-blue collapse="true"}
 ## Project Students
 
 - Dami Adeleke (BSc, 2021-22; MSc, 2023-24)
@@ -70,5 +74,8 @@ html:
 - Ziyao Wang (BSc, 2022-23)
 - Wong-Ka Yann (BSc, 2021-22)
 - Chiming Yao (BSc, 2023-24)
-- Bowen Zhange (BSc, 2022-23)
+- Bowen Zhang (BSc, 2022-23)
 - Pengcheng Zhang (BSc, 2023-24)
+:::
+
+![Gantt chart of current and former SIPBSCompBiol members.](assets/images/2024-12-05_gantt.jpg){#fig-gantt width=80%}
