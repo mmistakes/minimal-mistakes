@@ -2,19 +2,18 @@
 title: "Group Publications"
 description: |
  Publications from the SIPBSCompBiol group
-number-sections: true
 about:
   template: marquee
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/scompbiol
+    - text: "{{< fa brands bluesky >}} Bluesky"
+      href: https://bsky.app/profile/sipbscompbiol.bsky.social
     - icon: github
       text: Github
       href: https://github.com/sipbs-compbiol
     - icon: envelope
       text: Email
       href: mailto:leighton.pritchard@strath.ac.uk
+toc: true
 html:
   anchor-sections: true
 ---

@@ -1,6 +1,21 @@
 ---
 title: "Group Responsibilities"
+description: |
+ Responsibilities and expectations of group members
+about:
+  template: marquee
+  links:
+    - text: "{{< fa brands bluesky >}} Bluesky"
+      href: https://bsky.app/profile/sipbscompbiol.bsky.social
+    - icon: github
+      text: Github
+      href: https://github.com/sipbs-compbiol
+    - icon: envelope
+      text: Email
+      href: mailto:leighton.pritchard@strath.ac.uk
 toc: true
+html:
+  anchor-sections: true
 ---
 
 ## Leighton's responsibilities as PI:

@@ -29,6 +29,10 @@ website:
 #          href: what_we_do.qmd
         - text: "Code of Conduct"
           href: code_of_conduct.qmd
+        - text: "Responsibilities"
+          href: responsibilities.qmd
+        - text: "Philosophy"
+          href: philosophy.qmd
       - text: "Activities"
         menu: 
         - text: "Blog"
@@ -59,7 +63,9 @@ bibliography: references.bib
 
 format:
   html:
-    theme: simplex
+    theme:
+      light: flatly
+      dark: darkly
     toc: true
     css: styles.css
     embed-resources: true
