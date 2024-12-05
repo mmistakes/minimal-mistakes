@@ -9,6 +9,11 @@ website:
   site-url: https://sipbs-compbiol.github.io/
   description: "SIPBS Computational Biology Group"
   favicon: "icon_32.png"
+  cookie-consent:
+    type: express
+  open-graph:
+    locale: en_GB
+    description: "The SIPBS CompBiol group pages"
   navbar:
     logo: ./assets/images/sipbs_compbio.png
     right:
@@ -35,9 +40,16 @@ website:
       - icon: twitter
         href: https://twitter.com/scompbiol
       - icon: rss
-        href: index.xml  
+        href: index.xml
   page-footer: 
     left: This site © University of Strathclyde 2024
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "Funded PhD opportunity to study mixed bacterial infection in potato: [APPLY HERE](https://www.gla.ac.uk/postgraduate/doctoraltraining/northwestbio/projects/pathogens/futurethreatstocropprotectiontheroleofmixedpectobacteriuminfectionsindiseaserisk/) - Closing date Monday 6th January 2025"
+    type: info
+    position: below-navbar
+    background: "blueviolet"
 
 bibliography: references.bib
 
@@ -45,18 +57,26 @@ format:
   html:
     theme: simplex
     toc: true
-    css: styles.css
+#    css: styles.css
     embed-resources: true
 
 editor: source
 
 custom-callout:
   callout-publications:
+    title: "Publications"
     icon-symbol: "📚"
     color: "orange"
-  callout-scientist:
-    icon-symbol: "🧑"
+  callout-scientist-blue:
+    icon-symbol: "🧑‍🔬"
     color: "cadetblue"
+  callout-scientist-purple:
+    icon-symbol: "🧑‍🔬"
+    color: "darkorchid"
+  callout-scientist-peach:
+    icon-symbol: "🧑‍🔬"
+    color: "peachpuff"
+
 
 filters:
 - custom-callout

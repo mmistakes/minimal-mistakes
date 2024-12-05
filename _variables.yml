@@ -1,0 +1,11 @@
+admin:
+  name: "Leighton Pritchard"
+  email: "leighton.pritchard@strath.ac.uk"
+  mailto: "mailto:leighton.pritchard@strath.ac.uk"
+  homepage: "https://www.strath.ac.uk/staff/pritchardleightondr/"
+  github: "https://github.com/widdowquinn"
+  
+github:
+  website: "https://sipbs-compbiol.github.io/"
+  repo: "https://github.com/sipbs-compbiol/sipbs-compbiol.github.io"
+  issues: "https://github.com/sipbs-compbiol/sipbs-compbiol.github.io/issues"
