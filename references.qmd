@@ -1,7 +1,7 @@
 ---
 title: "Group Publications"
 description: |
- SIPBS CompBiol Publications
+ Publications from the SIPBSCompBiol group
 number-sections: true
 about:
   template: marquee
@@ -18,6 +18,14 @@ about:
 html:
   anchor-sections: true
 ---
+
+::: {.callout-warning}
+## Scope
+
+This page lists publications involving members of SIPBSCompBiol since it began in September 2019.
+
+Individual group members may have many publications dating from before or after their time with the group.
+:::
 
 ```{=html}
 <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/sipbs-compbiol/sipbs-compbiol.github.io/refs/heads/quarto/references.bib&jsonp=1&folding=1"></script>
