@@ -19,18 +19,26 @@ html:
   anchor-sections: true
 ---
 
-This group aims to be a supportive, encouraging environment for producing excellent science. We subscribe to and support the University of Strathclyde's unacceptable behaviour and personal relationship policies:
+::: {.callout-important}
+## Summary
+
+**This group aims to be a supportive, encouraging environment for producing excellent science.** We subscribe to and support the University of Strathclyde's unacceptable behaviour and personal relationship policies:
 
 - University of Strathclyde Unacceptable Behaviour Policy [[pdf]](https://www.strath.ac.uk/media/1newwebsite/documents/complaintsprocedure/Unacceptable_Behaviour_Policy.pdf)
 - University of Strathclyde Staff Personal Relationship Policy [[pdf]](https://www.strath.ac.uk/media/ps/humanresources/policies/Staff_Personal_Relationships_Policy.pdf)
+:::
+
+::: {.callout-warning}
+## Other University Policies
 
 Members of the group are also expected to follow all other applicable university policies, including the following:
 
 - Alcohol, drugs, and substance misuse [[pdf]](https://www.strath.ac.uk/media/ps/humanresources/policies/Alcohol_Drugs_Substances_Misuse_Policy.pdf)
 - Dignity and respect policy [[pdf]](https://www.strath.ac.uk/media/ps/humanresources/policies/DignityandRespectPolicy.pdf)
 - Use of social media [[pdf]](https://www.strath.ac.uk/media/ps/humanresources/policies/Guidance_on_the_Use_of_Social_Media.pdf)
+:::
 
-::: {.callout-warning collapse="true"}
+::: {.callout-tip collapse="true"}
 ## Social Media
 
 We encourage posting about our science and culture on social media, but please keep in mind that posting about work issues from a personal account can be in breach of university policies, as this extract notes:
@@ -61,7 +69,7 @@ Group members asked to stop any harassing behavior are expected to comply immedi
 ::: {.callout-tip}
 ## What to do if you have an issue
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact [Leighton Pritchard](mailto:leighton.pritchard@strath.ac.uk) immediately. For official concerns, or if Leighton is the cause of your concern, please use the [University of Strathclyde complaints procedure](https://www.strath.ac.uk/contactus/complaintsprocedure/).
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact [Leighton Pritchard](mailto:leighton.pritchard@strath.ac.uk) immediately. For official concerns, or if Leighton is the cause of your concern, please follow the standard [University of Strathclyde complaints procedure](https://www.strath.ac.uk/contactus/complaintsprocedure/).
 :::
 
 We expect members to follow these guidelines at any work-related event.
