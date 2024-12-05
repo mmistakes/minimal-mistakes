@@ -21,7 +21,7 @@ html:
 
 ## Current Members
 
-- Dr Leighton Pritchard
+- [Dr Leighton Pritchard](bios/leighton.qmd)
 - Dr Peter Cock (PDRA 2024-)
 - Angelika Kiepas (PhD 2020-2024, with Prof Paul Hoskisson; PDRA 2024-)
 

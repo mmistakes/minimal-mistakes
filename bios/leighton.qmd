@@ -1,0 +1,40 @@
+---
+title: "Leighton Pritchard"
+about:
+  template: trestles
+  image: ../assets/images/avatars/leighton_profile.jpg
+  links:
+    - text: "{{< fa brands bluesky >}} Bluesky"
+      href: https://bsky.app/profile/widdowquinn.bsky.social
+    - icon: github
+      text: Github
+      href: https://github.com/widdowquinn
+    - text: "{{< fa brands linkedin >}} LinkedIn"
+      href: https://www.linkedin.com/in/leighton-pritchard-7b05111/
+    - icon: envelope
+      text: Email
+      href: mailto:leighton.pritchard@strath.ac.uk
+---
+
+
+Leighton Pritchard is the SIPBSCompBiol PI. When not running the group, he enjoys playing guitar, reading, and watching movies.
+
+## Education
+
+**Open University** | Milton Keynes, UK | BA (Hons) Mathematics | 2013
+
+**University of Strathclyde** | Glasgow, UK | PhD Computational Biology | 2000
+
+**University of Strathclyde** | Glasgow, UK | BSc (Hons) Forensic and Analytical Chemistry | 1996
+
+## Experience
+
+**University of Strathclyde** | Senior Lecturer | 2024 - present
+
+**University of Strathclyde** | Chancellor's Fellow | 2019 - 2024
+
+**The James Hutton Institute** | Computational Biologist | 2011 - 2019
+
+**The Scottish Crop Research Institute** | Computational Biologist | 2003 - 2011
+
+**University of Wales, Aberystwyth** | Postdoctoral Research Associate | 1999 - 2003
