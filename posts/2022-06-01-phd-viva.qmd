@@ -1,5 +1,6 @@
 ---
 title: "What to Expect from Your *Viva*"
+image: ../assets/images/phd_viva.jpg
 categories:
   - PhD
   - advice

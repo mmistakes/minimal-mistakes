@@ -1,5 +1,7 @@
 ---
 title: "So, You've Joined SIPBS-CompBiol as a Project Student…"
+description: "What you can expect from your project and from us."
+image: ../assets/images/project_student.jpg
 categories:
   - Student
   - advice

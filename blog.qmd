@@ -1,5 +1,6 @@
 ---
 title: "SIPBSCompBiol Blog"
+feed: true
 about:
   template: marquee
   links:
@@ -21,6 +22,9 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
+  fields: [image, date, title, author, reading-time, categories, description]
+  image-placeholder: "/assets/images/sipbs_compbio.png"
 page-layout: full
 title-block-banner: true
 ---
+

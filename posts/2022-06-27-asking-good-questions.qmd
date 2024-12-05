@@ -1,6 +1,7 @@
 ---
 title: "How to Ask Good (Computational) Questions and Make Good Bug Reports"
 description: A short guide to helping people give you the answers you want and need.
+image: ../assets/images/bug_squash.jpg
 categories:
   - Student
   - advice

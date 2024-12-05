@@ -1,6 +1,7 @@
 ---
 title: "Advice for Prospective PhD Students"
 description: A short post with advice for if you're thinking about applying for a PhD in the group, or with Leighton as a supervisor.
+image: ../assets/images/prospective_phd.jpg
 categories:
   - PhD
   - advice

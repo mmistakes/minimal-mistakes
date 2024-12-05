@@ -1,5 +1,7 @@
 ---
 title: "How to Avoid Cognitive Overload In Your Summer/Honours Project"
+description: "Approaching your work in a way that softens the learning curve"
+image: ../assets/images/cognitive_overload.jpg
 categories:
   - Student
   - advice
