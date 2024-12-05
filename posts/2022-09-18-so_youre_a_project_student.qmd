@@ -20,10 +20,12 @@ The SIPBS-CompBiol group is a purely computational biology and bioinformatics re
 ::: {.callout-tip}
 You could make a start by reading the current group member bios, and our philosophy, responsibilities, and code of conduct.
 
-- [Group bios](/group/bios)
-- [Group philosophy](/group/philosophy)
+- [Group bios](/who_we_are.qmd)
+- [Group philosophy](/philosophy.qmd)
 - [Code of Conduct](/code_of_conduct.qmd)
-- [Group responsibilities](/group/responsibilities)
+- [Group responsibilities](/responsibilities.qmd)
+  - [Project student responsibilities](/responsibilities.qmd#sec-student-responsibilities)
+  - [Weekly reports](/responsibilities.qmd#sec-weekly-reports)
 :::
 
 ## What do you need to do?
@@ -49,14 +51,20 @@ Computational biology and bioinformatics are practical skills, like lab skills. 
 
 Unfortunately, our degree curriculum doesn't yet prepare you with computational skills in the same way we train you in laboratory techniques. How far you get in your project will depend on the skills you start with, and how much you are willing to learn independently. The good news is that there are many ways to practice these skills and learn new skills, yourself. We hope that the resources below will be helpful 
 
-{: .notice--success}
+::: {.callout-tip}
+## Where to get help
+
 Remember, you can ask anyone in the group - and your peers - for advice on these topics. You are not alone. We were all complete novices, once.
 
 - [How to avoid cognitive overload in your project](/student/avoid-cognitive-overload/)
 - [How to ask a (good) question](/student/asking-good-questions/)
+:::
 
-{: .notice--warning}
+::: {.callout-wwarning}
+## Use the limited time you have
+
 Your project will be short: six weeks practical work for an undergraduate project; eight weeks for a summer internship or Master's project. You cannot learn everything below in that time. The links are provided to help you learn independently now, but also as a resource you can return to if you want to develop your skills further in future.
+:::
 
 ### Programming
 

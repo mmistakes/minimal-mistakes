@@ -1,5 +1,7 @@
 project:
   type: website
+  preview: 
+    port: 4909
 #  resources:
 #    - "assets/presentations/2024_slides.pdf"
 #    - "assets/forms/SIPBS_Placement_Application_Form_2024-25_v2.docx"
