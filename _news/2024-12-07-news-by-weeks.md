@@ -1,6 +1,6 @@
 ---
 title: "News by Weeks"
 permalink: /news/weeks
-layout: archive
+layout: search
 author_profile: true
 ---
