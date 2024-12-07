@@ -1,7 +1,7 @@
 ---
 title: "News by Weeks"
+layout: category
 permalink: /news/weeks
 taxonomy: news1stweek
-entries_layout: # list (default), grid
 author_profile: true
 ---
