@@ -1,6 +1,6 @@
 ---
 title: "News by Category"
-layout: categories
+layout: news
 permalink: /news/
 author_profile: true
 ---
