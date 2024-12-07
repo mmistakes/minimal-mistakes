@@ -94,3 +94,7 @@ sidebar-news:
         url: https://iregg.github.io/news/2024-11-28-news/
       - title: "2024-11-29(금)"
         url: https://iregg.github.io/news/2024-11-29-news/
+  - title: "2024년 12월 첫째주"
+    children:
+      - title: "2024-12-02(월)"
+        url: https://iregg.github.io/news/2024-12-02-news/
