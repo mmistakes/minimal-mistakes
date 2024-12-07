@@ -37,6 +37,7 @@ AFAIK there isn't a tool you can use to review podcasts (something à la goodrea
 * [Certe Cose](https://www.ilpost.it/2022/04/22/certe-cose/) (terminato?): podcast di C Alessi realizzato con il Post, storia d'Italia attraverso degli oggetti trovati in elenchi che caratterizzano alcuni eventi
 * [Ci vuole una scienza](https://www.ilpost.it/2022/04/08/ci-vuole-una-scienza-trailer/) (in corso): podcast di Menietti e Mautino realizzato con il Post, attualità scientifica con un tono informativo e leggero
 * [Cose molto umane](https://www.cosemoltoumane.it/) - di G Kesten, io lo support su Patreon perché fa un lavoro eccellente. Kesten ne fa anche altri, tra parentesi, di podcast
+* [Avanti Veloce](https://www.raiplaysound.it/programmi/avantiveloce-viaggionelladhd), sempre di G Kesten e prodotto per RadioRai (sta su tutte le piattaforme), un podcast per capire meglio l'ADHD
 
 ### Attualità
 * [Stories](https://choramedia.com/podcast/stories/), di C Sala - episodi brevi su fatti di contorno e approfondimenti, lei va sul posto e intervista gente. E fa un bellissimo lavoro
@@ -50,4 +51,5 @@ AFAIK there isn't a tool you can use to review podcasts (something à la goodrea
 * [Chiedilo a Barbero](https://group.intesasanpaolo.com/it/sezione-editoriale/intesa-sanpaolo-on-air/cultura/chiedilo-a-alessandro-barbero-podcast) - sponsorizzato da Intesa SanPaolo, e non ho capito come gli si fanno le domande, ma è Barbero che ti spiega cose
 
 ### Sport 
+
 * [Rimbalzi](https://choramedia.com/podcast/rimbalzi/) (un altro bellissimo podcast di Chora Media, finito?): storie di sport e sportiv*, intrecciate col loro contesto storico
