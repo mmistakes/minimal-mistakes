@@ -1,6 +1,6 @@
 ---
 title: "News by Category"
 permalink: /lo/
-layout: posts
+layout: news
 author_profile: true
 ---
