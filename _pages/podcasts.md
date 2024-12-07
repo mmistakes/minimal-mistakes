@@ -51,4 +51,5 @@ AFAIK there isn't a tool you can use to review podcasts (something à la goodrea
 * [Chiedilo a Barbero](https://group.intesasanpaolo.com/it/sezione-editoriale/intesa-sanpaolo-on-air/cultura/chiedilo-a-alessandro-barbero-podcast) - sponsorizzato da Intesa SanPaolo, e non ho capito come gli si fanno le domande, ma è Barbero che ti spiega cose
 
 ### Sport 
+
 * [Rimbalzi](https://choramedia.com/podcast/rimbalzi/) (un altro bellissimo podcast di Chora Media, finito?): storie di sport e sportiv*, intrecciate col loro contesto storico

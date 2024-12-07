@@ -41,10 +41,10 @@ Categories are just for keeping order and are continuously updated. The relation
 
 ## Diversity
 
-> We know from our own society that humans are diverse: people come in all shapes and sizes, individuals can have all sorts of traits and interests and gender manifests in multiple ways. Yet we look to historical and archaeological records to do something magical: we expect them to show worlds in which every single person followed strictly defined social patterns and never deviated from them.
+> We know from our own society that humans are diverse: people come in all shapes and sizes, individuals can have all sorts of traits and interests and gender manifests in multiple ways. Yet we look to historical and archaeological records to do something magical: we expect them to show worlds in which every single person followed strictly defined social patterns and never deviated from them.<br>
 -- A Saini, "The Patriarchs"
 
-> Once people were seen as socially distinct, they could be imagined as essentially different.
+> Once people were seen as socially distinct, they could be imagined as essentially different.<br>
 -- A Saini, "The Patriarchs"
 
 
@@ -196,6 +196,30 @@ Categories are just for keeping order and are continuously updated. The relation
 > Riches seem to come to the poor in spirit, the poor in interest and joy. To put it straight — the very rich are a poor bunch of bastards.<br>
 -- J Steinbeck, "East of Eden"
 
+> This doesn't mean that people want to live under authoritarian communist regimes again. But if there is a longing for the old days of the Soviet Union, says Fodor [Éva Fodor, hungarian sociologist], "the nostalgia is mainly for a caring state. [...]". The promise of state socialism wasn't luxury. But it did offer a community, a welfare net, and a guarantee of work that staved off some of the alienation that had made people vulnerable to abuse or exploitation - and this has been especially true for women.<br>
+-- A Saini, "The Patriarchs"
+
+> Population - maintaining its size and controlling it is crucial to understanding the rise of inequality and patriarchal power. <br>
+-- A Saini, "The Patriarchs"
+
+> As ethnic and religious nationalists have always known, there's nothing quite as powerful as having an enemy against which a people's sense of cultural identity can be asserted.<br>
+-- A Saini, "The Patriarchs"
+
+> As much as religion can feel like a set of beliefs that is fixed and eternal, religious mening has always been manipulated to suit the politics of the day.<br>
+-- A Saini, "The Patriarchs"
+
+> Part of the privilege of having power is being able to pour your definition of what is moral, natural, or authentic into your mould.<br>
+-- A Saini, "The Patriarchs"
+
+> It is the sarcasm of the 19th century to represent liberty as a woman, while not one single woman throughout the length and breadth of the land is as yet in possession of political liberty.<br>
+-- M Joslyn Gage, during/after the protests for the dedication of the Statue of Liberty, 1886
+
+> The most dangerous of any form of oppression is that it can make people believe that there are no alternatives.<br>
+-- A Saini, "The Patriarchs"
+
+> Patriarchal control is, in one sense, no different from any other. What sets it apart is that it operates even at the level of the family.<br>
+-- A Saini, "The Patriarchs"
+
 
 ## Society
 
@@ -223,6 +247,8 @@ Categories are just for keeping order and are continuously updated. The relation
 > "and I do not know, Mrs Elton, whether the uncertainty of our meetings, the sort of constant expectation there will be of his coming today or tomorrow, and at any hour, may not be more friendly to happiness than having him actually in the house. It think it is so. I think it is the state of mind which gives most spirit and delight."<br>
 -- J Austen, "Emma"
 
+> Over millennia, we've been pushed gradually into believing that there are just a few ways in which we can live.<br>
+-- A Saini, "The Patriarchs"
 
 ## Time
 
