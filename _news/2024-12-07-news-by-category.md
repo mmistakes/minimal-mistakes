@@ -1,6 +1,6 @@
 ---
 title: "News by Category"
-permalink: /lo/
+permalink: /news/weeks
 layout: archive
 author_profile: true
 ---
