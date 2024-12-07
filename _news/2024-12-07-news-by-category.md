@@ -1,6 +1,6 @@
 ---
 title: "News by Category"
-permalink: /news/
+permalink: /lo/
 layout: posts
 author_profile: true
 ---
