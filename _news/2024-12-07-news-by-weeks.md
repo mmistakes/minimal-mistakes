@@ -1,7 +1,7 @@
 ---
 title: "News by Weeks"
 layout: category
-permalink: /news/weeks
+permalink: categories/news/
 taxonomy: news1stweek
 author_profile: true
 ---
