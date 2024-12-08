@@ -345,7 +345,7 @@ defaults:
       path: ""
       type: news
     values:
-      layout: single
+      layout: grid #single
       author_profile: false
       share: true
 
