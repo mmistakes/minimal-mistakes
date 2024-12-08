@@ -45,7 +45,9 @@ author_profile : false
 
 추가, 삭제 기능을 구현할 때 미리 알아야 할 것
 - HTML DOM 
+    - [HTML DOM 공부하기 보러가기](/study/study_html_DOM/)
 - 이벤트 기초 및 활용
+    - [이벤트 리스너 공부하기 보러가기](/study/study_eventListener/)
 
 
 ***
