@@ -12,6 +12,10 @@ permalink: /publications/
 ***
 ### 2024
 
+* <a href="https://arxiv.org/abs/2411.15124" style="text-decoration:none;color:navy">Tülu 3: Pushing Frontiers in Open Language Model Post-Training</a>
+<span style="font-size:0.75em;">Nathan Lambert, **Jacob Morrison**, Valentina Pyatkin, Shengyi Huang, Hamish Ivison, Faeze Brahman, Lester James V. Miranda, Alisa Liu, Nouha Dziri, Shane Lyu, Yuling Gu, Saumya Malik, Victoria Graf, Jena D. Hwang, Jiangjiang Yang, Ronan Le Bras, Oyvind Tafjord, Chris Wilhelm, Luca Soldaini, Noah A. Smith, Yizhong Wang, Pradeep Dasigi, Hannaneh Hajishirzi</span><br>
+<span style="font-size:0.75em;">*arXiv* \[[pdf](https://arxiv.org/pdf/2411.15124)\] \[[blog](https://allenai.org/tulu)\]</span>
+
 * <a href="" style="text-decoration:none;color:navy">Holistically Evaluating the Environmental Impact of Creating Language Models</a>              
 <span style="font-size:0.75em;">**Jacob Morrison**, Clara Na, Jared Fernandez, Tim Dettmers, Emma Strubell, Jesse Dodge</span><br>
 <span style="font-size:0.75em;">*under review*</span>
