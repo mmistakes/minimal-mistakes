@@ -343,7 +343,7 @@ defaults:
   # _news
   - scope:
       path: ""
-      type: news
+      type: category #news
     values:
       layout: single
       author_profile: false
