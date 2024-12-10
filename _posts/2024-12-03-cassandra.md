@@ -16,7 +16,7 @@ comments: true
 
 ### 🚀 아파치 카산드라
 
-카산드라는 Java 기반의 NoSQL 분산 데이터베이스입니다. 컬럼패밀리 기반의 데이터베이스로 기본적으로 고정된 스키마가 없다는 점에서 관계형 데이터베이스와 다르다 볼 수 있습니다. 또한 프라이머리 키 내에서도 파티션 키를 기준으로 노드에 분산되어 데이터를 저장하는 구조로 이루어져 있어 핫블록 경합을 최소화 할 수 있기 때문에 RDBMS에 비해 쓰기와 읽기 처리량을 높일 수 있는 장점이 있습니다. 데이터의 삽입, 변경, 삭제가 발생된다면 주로 알고 있는 RDBMS의 경우, 변경 레코드가 적재된 버퍼에 변경 내용을 반영하는 구조(Dirty Buffer) 이지만 카산드라의 경우는 LSM(Log Structure Merge) Tree 라고 하는 Data Structure 로 관리합니다.   
+카산드라는 Java 기반의 NoSQL 분산 데이터베이스입니다. 프라이머리 키 내에서도 파티션 키를 기준으로 노드에 분산되어 데이터를 저장하는 구조로 이루어져 있어 핫블록 경합을 최소화 할 수 있기 때문에 RDBMS에 비해 쓰기와 읽기 처리량을 높일 수 있는 장점이 있습니다. 데이터의 삽입, 변경, 삭제가 발생된다면 주로 알고 있는 RDBMS의 경우, 변경 레코드가 적재된 버퍼에 변경 내용을 반영하는 구조(Dirty Buffer) 이지만 카산드라의 경우는 LSM(Log Structure Merge) Tree 라고 하는 Data Structure 로 관리합니다.   
 
 [LSM Tree](https://en.wikipedia.org/wiki/Log-structured_merge-tree) 는 Key(primary key), value(column family) 를 디스크에 빠르게 저장 시킬수 있도록 구성된 데이터 스트럭쳐입니다. 그리고 LSM Tree 는 Key를 기준으로 정렬된 상태의 모양을 하고 있습니다.(SizeTiered 와 Leveled 관점에서 다른부분이 있으나 맥락은 유사합니다. 관련한 내용은 다른 포스팅에서 담겠습니다.) 그리고 이러한 구조체를 메모리 영역내에 보관하고 있는데 이를 memtable 이라 부릅니다.  
 
