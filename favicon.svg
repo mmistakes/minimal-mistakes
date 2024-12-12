@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Square background -->
+  <rect width="100" height="100" fill="navy"/>
+  
+  <!-- Letters "JM" -->
+  <text x="50" y="65" 
+        font-family="Arial, sans-serif" 
+        font-weight="bold" 
+        font-size="45" 
+        fill="white" 
+        text-anchor="middle">
+    JM
+  </text>
+</svg>
