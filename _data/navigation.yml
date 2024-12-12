@@ -1,7 +1,7 @@
-main:
-  - title: Home
-    url: /
-  - title: "Publications"
-    url: /publications/
-  - title: "CV"
-    url: /assets/cv-10.18.24.pdf
+# main:
+#   - title: Home
+#     url: /
+#   - title: "Publications"
+#     url: /publications/
+#   - title: "CV"
+#     url: /assets/cv-10.18.24.pdf

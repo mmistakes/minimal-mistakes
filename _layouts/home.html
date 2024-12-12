@@ -1,51 +1,192 @@
 ---
-layout: archive
+layout: single
+classes: wide
+toc: false
+author_profile: false
+sidebar:
+  nav: false
 ---
 
+<style>
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .profile-column {
+    position: relative;  /* Instead of fixed */
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .profile-info {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .profile-info p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .social-links li {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons {
+    .fas, .fab, .far, .ai {
+      margin: 0 15px; 
+      font-size: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  /* Optional: Add hover effect */
+  .fas:hover, .fab:hover {
+    color: #0366d6;   /* Changes color on hover */
+    transition: color 0.2s ease;
+  }
+
+  .social-icons {
+    text-align: center;  /* This centers the icons */
+    /* OR using flexbox: */
+    /* display: flex;
+    justify-content: center;
+    gap: 15px; */
+  }
+
+  h1, .page__title {
+    margin-top: 10px;  /* Removes top margin */
+    padding-top: 0; /* Removes top padding if any exists */
+  }
+
+  /* Removes the horizontal line */
+  /* h2 {
+    border-bottom: none;
+  } */
+  
+  .page__content h2,
+  .archive__item-body h2 {
+      /* border-bottom: none; */
+      padding-top: 30px; /* Removes top padding if any exists */
+      margin-top: 0;  /* Removes top margin */
+      padding-bottom: 0px; /* Removes top padding if any exists */
+      margin-bottom: 0;  /* Removes top margin */
+  }
+
+  /* Headers */
+  h1, h2, h3, h4, h5, h6 {
+      font-family: Georgia, Times, "Times New Roman", serif;
+  }
+
+  /* Body text */
+  body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  /* Optional: if you want to adjust the font weights */
+  h1 { font-weight: 400; }
+  h2 { font-weight: 400; }
+  body { font-weight: 400; }
+
+  a {
+    color: #52958b;  /* Or similar teal color */
+  }
+
+  @media (max-width: 768px) {
+    .custom-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .profile-column {
+      text-align: center;
+    }
+  }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <div class="custom-grid">
+    <div class="profile-column">
+      <img src="assets/images/avatar.png" alt="Jacob Morrison" class="profile-image">
+      <div class="profile-info">
+        <!-- <p>Jacob Morrison</p> -->
+        <p>
+          Predoctoral Researcher
+          <br>
+          Allen Institute for AI
+        </p>
+        <!-- <p>📍 Seattle, WA</p> -->
+        <div class="social-icons">
+          <a href="mailto:jacobm@allenai.org"><i class="fas fa-envelope"></i></a> 
+          <!-- <a href="https://twitter.com/jacobcares"><i class="fab fa-twitter"></i></a>  -->
+          <a href="https://bsky.app/profile/jacobcares.bsky.social"><i class="fab fa-bluesky"></i></a>
+          <a href="https://linkedin.com/in/jacob-morrison"><i class="fab fa-linkedin"></i></a>
+          <a href="https://scholar.google.com/citations?user=AZgHehoAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="main-content">
+
+<h1>Jacob Morrison</h1>
 Hi! I'm a <a href="https://allenai.org/predoctoral-young-investigators">predoctoral researcher</a> on the
-<a href="https://allennlp.org/">AllenNLP</a> team at <a href="https://allenai.org/">Ai2</a>, where I work broadly
-on problems in machine learning, natural language processing, and AI policy. I've been awarded an <a href="">NSF Computer Science Graduate
-  Fellowship</a>,
-and I'm advised by <a href="https://pdasigi.github.io/">Pradeep Dasigi</a> and <a
-  href="https://jessedodge.github.io/">Jesse Dodge</a>.
+<a href="https://allennlp.org/">AllenNLP</a> team at <a href="https://allenai.org/">Ai2</a>, and I'm advised by <a href="https://pdasigi.github.io/">Pradeep Dasigi</a> and <a
+href="https://jessedodge.github.io/">Jesse Dodge</a>. I received my masters in computational linguistics and bachelors in computer science from the University of Washington,
+  where I was advised by <a href="https://nasmith.github.io/">Noah
+    Smith</a>. I've previously worked on code & program synthesis at <a href="https://x.company/">Google [x]</a>, language + vision models at Ai2,
+  and platform health at Twitter, and I also spent a few years as a software engineer at <a
+    href="https://www.tableau.com/">Tableau</a> and <a
+    href="https://marketingplatform.google.com/about/display-video-360/">Google</a>. See my
+  <a href="/assets/cv-12.12.24.pdf">CV</a> for more details.
 
-<h4 id="research">Research Interests</h4>
-My research generally spans machine learning and natural language processing. I work to improve and better
-understand modern language models, and I've recently focused on efficiently adapting them to specialized
-domains, building better evaluations, and measuring and reporting the environmental impact of AI.
+  <br>
+  <br>
+  <b>I'm applying to PhD programs!</b> Feel free to reach out if you're interested in chatting. I'm interested in building broadly capable LMs, and I'll be supported by an <a href="https://cra.org/csgrad4us/">NSF Computer Science Graduate Fellowship</a>.
+    
+<h2>Research</h2>
+<br>
+My research is generally focused on making modern language models broadly useful and reliable. I've recently been focused on improving model capabilities through post-training by creating new datasets and evaluations, and improving training algorithms and model architectures. I'm also a strong supporter of open science, and I've contributed to openly released artefacts including <a href="https://allenai.org/blog/tulu-3">Tulu 3</a>, <a href="https://huggingface.co/spaces/allenai/reward-bench">RewardBench</a>, <a href="https://arxiv.org/abs/2402.00159">Dolma</a>, and <a href="https://arxiv.org/abs/2402.00838">OLMo</a>, <a href="https://allenai.org/olmo">OLMo 2</a>, and <a href="https://arxiv.org/abs/2409.02060">OLMoE</a>, with more coming soon.
 <br><br>
-I'm also a strong supporter of open science. I've contributed to various openly released tools
-and platforms including <a href="https://arxiv.org/abs/2402.00838">OLMo</a>, <a
-  href="https://arxiv.org/abs/2402.00159">Dolma</a>, <a
-  href="https://huggingface.co/spaces/allenai/reward-bench">RewardBench</a>, and <a href="https://arxiv.org/abs/2409.02060">OLMoE</a>, with more coming soon. <h4 id="policy">
-  Public Policy</h4>
-I spend a portion of my time helping policymakers understand and address the societal impacts of
-advances in AI. I started and currently lead Ai2's public policy efforts,
-through which I regularly engage with policymakers at the local, state, and federal levels. I previously
-served on the City of Seattle's Generative AI Policy Advisory Group.
+I also spend a portion of my time helping policymakers understand and address the societal impacts of advances in AI. I started and currently lead Ai2's public policy efforts, through which I regularly engage with policymakers at the local, state, and federal levels. I previously served on the City of Seattle's Generative AI Policy Advisory Group, and I'm currently serving on the Education and Workforce Development Subcommittee of the Washington State AI Task Force.
 
-<h4 id="education">Education & Experience</h4>
-I received my masters in computational linguistics and bachelors in computer science from the University of Washington,
-where I worked with <a href="https://homes.cs.washington.edu/~jkasai/">Jungo Kasai</a> and <a
-  href="https://yangfengji.net/">Yangfeng Ji</a>, and was advised by <a href="https://nasmith.github.io/">Noah
-  Smith</a>.
+<h2>Awards & Fellowships</h2>
+<ul>
+  <li>Aug. 2024: ACL Theme Paper Award</li>
+  <li>Aug. 2024: ACL Best Resource Paper Award</li>
+  <li>Aug. 2023: NSF Computer Science Graduate Fellowship</li>
+</ul>
+<!-- <h2>Service</h2>
 <br>
-<br>
-I've previously worked on code & program synthesis at <a href="https://x.company/">X, the moonshot
-  factory</a> and <a href="https://en.wikipedia.org/wiki/Google_Labs">Google Labs</a>, language + vision models at Ai2,
-and platform health at <a href="https://twitter.com/">Twitter</a>. I also spent a few years as a software engineer at <a
-  href="https://www.tableau.com/">Tableau</a> and <a
-  href="https://marketingplatform.google.com/about/display-video-360/">Google</a>. See my
-<a href="/assets/cv-10.18.24.pdf">CV</a> for more details.
-
-<h4 id="Service">Service</h4>
 In my free time, I serve in a number of positions in the UW Alumni Association including as a
 <a href="https://uwimpact.org/district-dawgs/">District Dawg</a>, on the
 <a href="https://www.washington.edu/alumni/about-uwaa/gold-alumni-council/">GOLD Council</a>,
 and as an early career mentor. I'm also on the <a
   href="https://www.seattle.gov/neighborhoods1/programs-and-services/major-institutions-and-schools/major-institution-advisory-committees/university-of-washington">City
   University Community Advisory Committee</a>,
-where I help advise on major capital projects on UW's campus as well as in the greater University District.
+where I help advise on major capital projects on UW's campus as well as in the greater University District. -->
+<h2>Publications</h2>
+<br>
+{% include publications.md %}
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FXNR7SR6G"></script>
@@ -56,3 +197,6 @@ where I help advise on major capital projects on UW's campus as well as in the g
 
   gtag('config', 'G-9FXNR7SR6G');
 </script>
+
+</div>
+</div>

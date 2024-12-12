@@ -56,24 +56,24 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : 
-  avatar           : "/assets/images/avatar.png" # "/assets/images/my_profile_picture.jpeg"
-  bio              : "Predoctoral Researcher at Ai2"
-  location         : "Seattle, WA"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jacobm@allenai.org"
-    # - label: "GitHub"
-    #   icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/jacob-morrison"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jacobcares"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin-in"
-      url: "https://linkedin.com/in/jacob-morrison/"
+# author:
+#   name   : 
+#   avatar           : "/assets/images/avatar.png" # "/assets/images/my_profile_picture.jpeg"
+#   bio              : "Predoctoral Researcher at Ai2"
+#   location         : "Seattle, WA"
+#   links:
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: "mailto:jacobm@allenai.org"
+#     # - label: "GitHub"
+#     #   icon: "fab fa-fw fa-github"
+#     #   url: "https://github.com/jacob-morrison"
+#     - label: "Twitter"
+#       icon: "fab fa-fw fa-twitter-square"
+#       url: "https://twitter.com/jacobcares"
+#     - label: "LinkedIn"
+#       icon: "fab fa-linkedin-in"
+#       url: "https://linkedin.com/in/jacob-morrison/"
 
 # footer:
 #   links:
@@ -88,24 +88,13 @@ author:
 #       url: "https://instagram.com/"
 
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false # <- Change this to false
 
 category_archive:
   type: liquid

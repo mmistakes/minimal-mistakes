@@ -6,13 +6,16 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
 $serif: Lora, Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+// $sans-serif: "Google Sans", -apple-system, BlinkMacSystemFont, "Roboto" "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 // $global-font-family           : $sans-serif !default;
 $global-font-family           : $serif !default;
 
 @import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/custom/custom"; // custom styles
 
 html {
   font-family: serif;
@@ -54,5 +57,9 @@ html {
         border: 0px solid $border-color;
       }
     }
+  }
+
+.masthead {
+    display: none;
   }
   

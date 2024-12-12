@@ -1,0 +1,69 @@
+/* _sass/minimal-mistakes/custom/_custom.scss */
+
+// Override any minimal-mistakes styles here
+.page__content {
+    .page__title {
+      margin-top: 2em;
+      margin-bottom: 1em;
+      font-size: 2.5em;
+    }
+  
+    .intro {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 2em;
+    }
+  
+    .content-section {
+      margin: 2.5em 0;
+  
+      h2 {
+        color: #2c3e50;
+        margin-bottom: 1em;
+        font-size: 1.75em;
+      }
+  
+      p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: #0366d6;
+      transition: color 0.2s ease;
+  
+      &:hover {
+        color: #044289;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  // Profile image styling
+  .author__avatar {
+    margin-bottom: 2em;
+  
+    img {
+      border-radius: 50%;
+      max-width: 150px;
+    }
+  }
+  
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    .page__content {
+      .page__title {
+        font-size: 2em;
+      }
+      
+      .intro {
+        font-size: 1em;
+      }
+      
+      .content-section h2 {
+        font-size: 1.5em;
+      }
+    }
+  }

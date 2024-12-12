@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 */
 
+article.page {
+    float: left;
+    width: 100%;
+}
+
 /* Variables */
 @import "minimal-mistakes/variables";
 
