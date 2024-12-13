@@ -1,7 +1,7 @@
 ---
 title: "Anthropic의 'Generate a Prompt' 서비스 활용하기"
 categories:
-  - AI
+  - coding
 tags:
   - Anthropic
   - Claude

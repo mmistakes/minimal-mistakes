@@ -2,7 +2,8 @@
 title: "[stratechery] Enterprise Philosophy and The First Wave of AI (palantir관련 내용 일부내용 요약)"
 categories:
   #- AI Company
-  - AI article
+  - AI Insights  #AI Standards, AI Regulation, AI Safety
+
 
 tags:
 #  - OpenAI
@@ -12,6 +13,7 @@ tags:
   - AI
   - AIP
   - stratechery
+  - AI article
 #  - MIT Technolgy Reviews
 # - Reliable AI
   - AI policy
