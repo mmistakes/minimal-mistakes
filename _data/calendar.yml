@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A3 - Ausflug zum Staakentreff",
-    "title": "A3 - Ausflug zum Staakentreff",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXE3bzF2ZTNhMGRtcGdibmxyNTRpbWNpN2IgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-12-12T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-12-12T12:30:00+01:00"
-    },
-    "created": "2024-11-28T09:07:01.000Z",
-    "updated": "2024-11-28T09:07:01.588Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug zur Bücherei",
     "title": "A5 - Ausflug zur Bücherei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-13T10:08:44.000Z",
     "updated": "2024-09-13T10:08:44.018Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=c21lMXVpbWo5NmJpMzUwZG1jdHVxaWtvbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-06-10",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-06-11",
+      "date_time": null
+    },
+    "created": "2024-10-11T03:48:29.000Z",
+    "updated": "2024-10-11T03:48:49.755Z"
   }
 ]
