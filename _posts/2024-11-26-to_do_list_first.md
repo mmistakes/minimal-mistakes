@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "[html] To-do List 만들기"
+title:  "[html] To-do List 만들기 (기본 디자인)"
 categories: Project
-tags: [html, blog, miniProject] 
+tags: [html, blog, miniProject, todoList] 
 toc : true
 author_profile : false 
 ---

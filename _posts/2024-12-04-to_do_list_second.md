@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "[javaScript] To-do List 만들기"
+title:  "[javaScript] To-do List 만들기 (추가,삭제 기능)"
 categories: Project
-tags: [javaScript, blog, miniProject] 
+tags: [javaScript, blog, miniProject, todoList] 
 toc : true
 author_profile : false 
 ---
@@ -199,3 +199,4 @@ li {
 }
 
 ```
+> 다음에는 체크기능과 새로고침 후에도 내용이 유지되게 하는 기능을 넣어보겠습니다.
