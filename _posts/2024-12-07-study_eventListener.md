@@ -8,7 +8,8 @@ author_profile : false
 ---
 
 ### EventListener
-
+***
+#### EventListener란?
 
 - 목적
     - 발생한 이벤트에 대처하기 위해 작성된 JavaScript 코드
@@ -16,6 +17,7 @@ author_profile : false
     - 이벤트의 종류는 70여가지, 이벤트 리스너는 이벤트 앞에 'on'을 덧붙임
         - onmousedown : mousedown의 이벤트 리스너
 
+***
 ### 이벤트 리스너 만들기
 
 #### HTML 태그 내 작성

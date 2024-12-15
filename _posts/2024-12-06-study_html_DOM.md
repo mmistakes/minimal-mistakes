@@ -8,7 +8,8 @@ author_profile : false
 ---
 
 ### HTML DOM(Document Object Model)
-
+***
+#### HTML DOM이란?
 
 - 기능
     - 웹 페이지에 작성된 HTML 태그 당 객체(DOM객체) 생성

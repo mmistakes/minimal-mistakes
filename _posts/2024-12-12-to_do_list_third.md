@@ -40,7 +40,7 @@ author_profile : false
 
 체크, 내용유지 기능을 구현할 때 미리 알아야 할 것
 - LocalStorage
-    - [LocalStorage 공부하기 보러가기](/study/study_html_DOM/)
+    - [LocalStorage 공부하기 보러가기](/study/study_localStorage/)
 - toggle 함수
     - [toggle 함수 공부하기 보러가기](/stydy/stydy_toggle/)
 
