@@ -42,7 +42,7 @@ author_profile : false
 - LocalStorage
     - [LocalStorage 공부하기 보러가기](/study/study_localStorage/)
 - toggle 함수
-    - [toggle 함수 공부하기 보러가기](/stydy/stydy_toggle/)
+    - [toggle 함수 공부하기 보러가기](/study/study_toggle/)
 
 ***
 ### 코드
