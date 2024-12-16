@@ -157,5 +157,3 @@ author_profile : false
 }
 ```
 ***
-
-> 다음에는
