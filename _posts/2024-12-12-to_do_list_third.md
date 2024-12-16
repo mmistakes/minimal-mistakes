@@ -12,7 +12,7 @@ author_profile : false
 저번에 만들었던 to-do List에 이어서 기능을 추가로 넣어보겠습니다.
 
 - [css, html 보러가기](https://hidokim.github.io/project/to_do_list_first/)
-- [to-do List 기능1 보러가기](https://hidokim.github.io/project/to_do_list_second/)
+- [to-do List 추가, 삭제기능 보러가기](https://hidokim.github.io/project/to_do_list_second/)
 
 #### 주요 기능
 1. '+' 버튼으로 할 일을 추가한다.
@@ -157,3 +157,4 @@ author_profile : false
 }
 ```
 ***
+> 중요한 to-do List의 기능을 모두 구현했지만 다음에는 추가적인 기능을 더 넣어보겠습니다.
