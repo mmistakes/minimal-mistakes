@@ -3,7 +3,9 @@ layout: single
 title: "게임의 재미"
 ---
 
-### ![스크린샷 2024-12-15 030540](C:\Users\user\OneDrive\Documents\GitHub\SoekHun.github.io\images\2024-12-17-fun-of-the-game\스크린샷 2024-12-15 030540.png)
+### 
+
+![kim2](..\images\2024-12-17-fun-of-the-game\kim2-1734445588579-4.png)
 
 ### 게임의 재미와 재미 이론
 
