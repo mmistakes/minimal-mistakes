@@ -1,10 +1,8 @@
 ---
-layout: single
+layout: post
 title: "게임의 재미"
 ---
-# 게임의 재미
 
-속성: 게임 기획 준비
 
 ### 게임의 재미와 재미 이론
 
