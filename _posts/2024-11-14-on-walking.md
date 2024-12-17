@@ -1,3 +1,6 @@
+---
+Title: On Walking
+---
 
 For the past year, I've been doing roughly 80% of my work while walking or riding my bike (except when my ACL and MCL injuries prevented it). While this approach isn't feasible for everyone—think chefs, physiotherapists, or graphic artists—many of us, especially knowledge workers, can incorporate more movement into our workday, regardless of whether we’re working remotely or from an office.
 
