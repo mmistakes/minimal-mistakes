@@ -116,7 +116,7 @@ author:
   name             : "Seok Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "빨리자 지은아"
-  location         : "South Korea"
+  #location         : "South Korea"
   email            : "jsr_bile@naver.com"
   links:
     - label: "Email"
