@@ -21,7 +21,7 @@ title                    : "이모저모 메모장"
 title_separator          : "|"
 subtitle                 : "이석훈"
 name                     : "SeokHun"
-description              : " 빨리 자  "
+description              : " 경험한 것을 적어보는 블로그 "
 url                      : "https://Soekhun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "이 석 훈"
+  name             : "Seok Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "경험한 것을 적어보는 블로그입니다"
+  bio              : "빨리자 지은아"
   location         : "South Korea"
   email            : "jsr_bile@naver.com"
   links:
