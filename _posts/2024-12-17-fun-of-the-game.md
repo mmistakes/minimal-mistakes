@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "게임의 재미"
+toc: true #오른쪽 UI 목차 기능
+author_profile: false #좌측 프로필 표시 기능
 ---
 
 

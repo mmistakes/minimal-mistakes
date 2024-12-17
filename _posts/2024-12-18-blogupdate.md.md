@@ -4,6 +4,7 @@ title:  "블로그 업데이트 방법"
 categories: 블로그
 tag: [블로그]
 toc: true
+author_profile: false #좌측 프로필 표시 기능
 ---
 
 ### 1. 🌐 실시간 웹사이트 업데이트 기능
