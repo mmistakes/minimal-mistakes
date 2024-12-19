@@ -1,12 +1,12 @@
 ---
 layout: single
 title:  "Unity와 데이터베이스 연동하기"
-categories: Database
+categories: 데이터베이스
 tag: [Unity, MySQL, DB연동]
 toc: true # 오른쪽 UI 목차 기능
 author_profile: false # 좌측 프로필 표시 기능
-sidebar:
-    nav: "docs" # 네비게이션 설정
+#sidebar:
+    #nav: "docs" # 네비게이션 설정
 
 search: false # 블로그 검색 기능 노출 여부
 ---
