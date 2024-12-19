@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4b - Ausflug in die Jugendverkehrsschule",
-    "title": "4b - Ausflug in die Jugendverkehrsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NG9wamU0YWJpazc4aXJzNnFzMTY2M3B2aGEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2024-12-18T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2024-12-18T13:30:00+01:00"
-    },
-    "created": "2024-12-13T11:04:29.000Z",
-    "updated": "2024-12-13T11:04:29.055Z"
-  },
-  {
-    "image_path": null,
     "alt": "A6 - Ausflug ins Planetarium",
     "title": "A6 - Ausflug ins Planetarium",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-13T10:08:44.000Z",
     "updated": "2024-09-13T10:08:44.018Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei ",
+    "title": "A5 - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MG9udGZuNnQ4a2Rqb2dob3JicWRwYzNhZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-07T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-07T11:30:00+01:00"
+    },
+    "created": "2024-12-13T11:11:28.000Z",
+    "updated": "2024-12-13T11:11:28.795Z"
   }
 ]
