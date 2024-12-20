@@ -15,9 +15,13 @@ search: true # 블로그 검색 기능 노출 여부
 
 Unity와 MySQL을 연동하여 게임 데이터와 같은 중요한 정보를 효율적으로 저장하고 관리하는 방법을 소개한다. 이 글에서는 MySQL 설치부터 Unity와의 연동 과정까지 단계별로 설명하며, 초보자도 쉽게 따라 할 수 있도록 작성하였다.
 
+
+
 ---
 
 ## 1. MySQL 설치하기
+
+
 
 ### MySQL 다운로드 및 설치 (MySQL Community 8.0)
 
@@ -29,11 +33,15 @@ MySQL은 전 세계적으로 가장 널리 사용되는 관계형 데이터베�
 
 설치가 완료되면 MySQL Workbench를 통해 데이터베이스를 생성하고 관리할 준비가 완료된다.
 
+
+
 ---
 
 ## 2. MySQL Workbench를 사용한 데이터베이스 생성
 
 MySQL Workbench는 MySQL을 시각적으로 관리할 수 있는 GUI 도구이다. 이를 통해 데이터베이스(Schema)와 테이블을 쉽게 생성할 수 있다.
+
+
 
 ### 1) Schema 생성
 
@@ -42,6 +50,8 @@ MySQL Workbench는 MySQL을 시각적으로 관리할 수 있는 GUI 도구이�
 3. 스키마 이름(예: `testdb`)을 입력하고 **Apply** 버튼을 클릭하여 생성한다.
 
 Schema는 데이터를 저장하는 기본 단위로, 테이블(Table)을 포함한다.
+
+
 
 ### 2) Table 생성
 
@@ -60,11 +70,17 @@ Schema를 생성한 뒤, 다음과 같은 과정을 통해 테이블을 추가�
 
 테이블은 데이터를 저장하는 구조이다. 위 예시에서는 사용자 정보를 저장하기 위한 간단한 테이블을 만들었다.
 
+
+
 ---
+
+
 
 ## 3. Unity와 MySQL 연동
 
 MySQL 데이터베이스를 Unity 프로젝트에서 사용하려면 MySQL Connector를 설치하고, Unity에서 데이터베이스와 통신할 코드를 작성해야 한다.
+
+
 
 ### 1) MySQL Connector 설치
 
@@ -75,11 +91,14 @@ MySQL Connector는 Unity와 MySQL 간의 통신을 가능하게 하는 드라이
 
 설치가 완료되면 Unity 프로젝트에서 이 드라이버를 사용할 수 있다.
 
+
+
 ### 2) Unity 프로젝트 설정
 
 1. Visual Studio에서 새로운 Unity 프로젝트를 생성한다.
 2. Unity 프로젝트 탐색기에서 `NuGet 패키지 관리자`를 열고 MySQL 라이브러리를 추가한다.
    - 예: `MySql.Data`를 검색하여 설치한다.
+   - 
 
 ### 3) DBManager 스크립트 작성
 
@@ -117,9 +136,13 @@ public class DBManager : MonoBehaviour
 
 이 스크립트는 `user` 테이블에 데이터를 삽입하는 역할을 한다. 필요에 따라 조회, 수정 등의 기능을 추가할 수 있다.
 
+
+
 ---
 
 ## 4. Unity에서 데이터 확인
+
+
 
 1. Unity 에디터에서 빈 게임 오브젝트를 생성한다.
 2. 생성한 오브젝트에 `DBManager` 스크립트를 추가한다.
@@ -128,6 +151,10 @@ public class DBManager : MonoBehaviour
 
 이 과정을 통해 MySQL 데이터베이스와 Unity 프로젝트 간의 연동이 완료된다.
 
+
+
 ---
+
+
 
 위 과정을 따라하면 Unity와 MySQL 간의 데이터를 효율적으로 관리할 수 있다. 이 연동은 사용자 정보 관리, 게임 진행 데이터 저장 등 다양한 용도로 활용할 수 있다. 데이터 조회, 수정 기능을 추가 구현하여 더욱 강력한 시스템을 구축해 보자.
