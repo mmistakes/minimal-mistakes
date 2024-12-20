@@ -20,6 +20,16 @@ docs:
         url: /categories/
       - title: "Tag"
         url: /tags/
+  - title: "공부"
+    children:
+      - title: "Unity"
+        url: /categories/unity/
+      - title: "Database"
+        url: /categories/database/
+      - title: "게임기획"
+        url: /categories/game-design/
+  - title: "일상"
+    url: /categories/daily/
 
  
   # - title: "About"
