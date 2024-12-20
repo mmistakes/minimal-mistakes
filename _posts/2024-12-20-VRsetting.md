@@ -1,3 +1,20 @@
+---
+layout: single
+title:  "VR 초기 세팅"
+categories: GameDevelope
+tag: [Unity, VR]
+toc: true # 오른쪽 UI 목차 기능
+author_profile: false # 좌측 프로필 표시 기능
+sidebar:
+    nav: "docs" # 네비게이션 설정
+
+search: true # 블로그 검색 기능 노출 여부
+---
+
+
+
+
+
 # VR 초기 세팅
 
 ---
