@@ -70,19 +70,10 @@ layout: default
         {% include comments.html %}
       {% else %}
         <p>
-          Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>, 
+          Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
           but are disabled in non-production environments.
         </p>
       {% endif %}
-    {% else %}
-      <p>
-        Comments are not configured for this page.
-        {% if site.comments.provider %}
-          Current provider: <strong>{{ site.comments.provider }}</strong>
-        {% else %}
-          No provider specified.
-        {% endif %}
-      </p>
     {% endif %}
   </article>
 
