@@ -18,7 +18,7 @@ I am a scientist by background and I've been working in data science/Machine Lea
 
 My name is Martina Pugliese, I am a physicist by studies and I've been working in/with **data science** since the glorious times it was still uncool. I love **science** and have this annoying obsession towards finding quantitative explanations for things. You can read some of my thinking and scientific journey in this <a href="{{ site.url }}/crossing-the-barriers" target="_blank">old post</a>. On the side, I produce **hand-drawn data vizzes** on various topics, usually lightweight (but not just), which I share here (and there).
 
-*You can sign up to my newsletter here - it has funky vizzes, divertissements and odds and sods, all from this blog.*
+*You can sign up to my newsletter here - it has funky vizzes, some sciency/techy divertissements and some opinion pieces on tech too.*
 
 <iframe
 scrolling="no"
@@ -40,4 +40,4 @@ I regularly speak about topics related to data, from reflections on the field to
 
 ## Follow me
 
-Use the links on the side to find me on (some) socials. Note: despite trying hard a few times, I'm not much of a social media animal - I like to read and observe but I don't tend to post much, it's that I prefer longer and more thoughtful conversations.
+Use the links on the side to find me on (some) socials - Bluesky preferred and it's where I post the most. 
