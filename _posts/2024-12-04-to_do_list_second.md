@@ -35,12 +35,6 @@ author_profile : false
     - 추가된 할 일 옆의 'x' 버튼을 누르면 할 일이 삭제되도록 할 것입니다.
 
 *** 
-
-#### 구현 이미지
-
-![todolist2](/assets/images/todoList2.png)
-
-
 #### 사전지식
 
 추가, 삭제 기능을 구현할 때 미리 알아야 할 것
@@ -48,6 +42,11 @@ author_profile : false
     - [HTML DOM 공부하기 보러가기](/study/study_html_DOM/)
 - 이벤트 기초 및 활용
     - [이벤트 리스너 공부하기 보러가기](/study/study_eventListener/)
+
+***
+#### 구현 이미지
+
+![todolist2](/assets/images/todoList2.png)
 
 
 ***

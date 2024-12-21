@@ -33,9 +33,6 @@ author_profile : false
 > 할 일이 마무리 된 것을 좀 더 명확히 표현하기 위해서 체크 됨과 동시에 할일에 가운데 줄이 추가되게 구현하겠습니다.
 
 ***
-#### 구현 이미지
-![todoList3](/assets/images/todoList3.png)
-
 #### 사전지식
 
 체크, 내용유지 기능을 구현할 때 미리 알아야 할 것
@@ -43,6 +40,10 @@ author_profile : false
     - [LocalStorage 공부하기 보러가기](/study/study_localStorage/)
 - toggle 함수
     - [toggle 함수 공부하기 보러가기](/study/study_toggle/)
+
+***
+#### 구현 이미지
+![todoList3](/assets/images/todoList3.png)
 
 ***
 ### 코드
