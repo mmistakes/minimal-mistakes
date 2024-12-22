@@ -24,21 +24,21 @@ search: true # 블로그 검색 기능 노출 여부
 - 프로젝트 생성 : VRTutorial
 - 3D (URP) 선택
 
-![image](..\images\2024-12-20-VRsetting\image.png)
+![image](/images/2024-12-20-VRsetting/image.png)
 
 ### **2. XR Plugin Management**
 
 - Edit - Project Settings 에서
   - Install XR Plugin Management 설치
 
-![image2](..\images\2024-12-20-VRsetting\image2.png)
+![image2](/images\2024-12-20-VRsetting\image2.png)
 
 
 
 - pc 탭 아래에서 OpenXR 선택
   - 경고 아이콘이 나올때 클릭(Project Validation) → Fix All
 
-![image3](..\images\2024-12-20-VRsetting\image3.png)
+![image3](/images\2024-12-20-VRsetting\image3.png)
 
 
 
@@ -46,19 +46,19 @@ search: true # 블로그 검색 기능 노출 여부
 
 - 안드로이드 탭 아래에서 OpenXR 를 선택한다.
 
-![4](..\images\2024-12-20-VRsetting\4.png)
+![4](/images\2024-12-20-VRsetting\4.png)
 
 
 
 - pc 탭 아래에서 (+) 버튼을 눌러서 아래와 같이 셋팅 한다.
 
-![5](..\images\2024-12-20-VRsetting\5.png)
+![5](/images\2024-12-20-VRsetting\5.png)
 
 
 
 - 안드로이드탭 아래에서 (+) 버튼을 눌러서 아래와 같이 셋팅 한다.
 
-![6](..\images\2024-12-20-VRsetting\6.png)
+![6](/images\2024-12-20-VRsetting\6.png)
 
 
 
@@ -67,7 +67,7 @@ search: true # 블로그 검색 기능 노출 여부
 - Package Manager 에서 Unity Registry 를 선택 한다.
 - XR Interaction Toolkit 을 설치
 
-![7](..\images\2024-12-20-VRsetting\7.png)
+![7](/images\2024-12-20-VRsetting\7.png)
 
 
 
@@ -76,7 +76,7 @@ search: true # 블로그 검색 기능 노출 여부
   - XR Device Simulator
   - Hands Interaction Demo
 
-![8](..\images\2024-12-20-VRsetting\8.png)
+![8](/images\2024-12-20-VRsetting\8.png)
 
 
 
@@ -88,7 +88,7 @@ search: true # 블로그 검색 기능 노출 여부
   - Camera Offset → Position (0, 0, 0)
   - Main Camera / Left Controller / Right Controller → Position (0, 0, 0)
 
-![9](..\images\2024-12-20-VRsetting\9.png)
+![9](/images\2024-12-20-VRsetting\9.png)
 
 
 
@@ -97,7 +97,7 @@ search: true # 블로그 검색 기능 노출 여부
 - Right Controller
   - Sorting Group 콤포넌트 삭제
 
-![10](..\images\2024-12-20-VRsetting\10.png)
+![10](/images\2024-12-20-VRsetting\10.png)
 
 
 
@@ -107,7 +107,7 @@ XR Origin을 추가하면 자동으로 XR Interaction Manger도 추가 된다. *
 
 Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 대한 목록이 전부 누락되어 있는것을 확인할 수 있다. Select Preset 버튼(XR Controller 오른쪽 상단의 아이콘)을 눌러서 XRI Default Left Controller 를 선택하도록 한다. 마찬가지로 Right Controller 역시 같은 작업으로 진행한다.
 
-![11](..\images\2024-12-20-VRsetting\11.png)
+![11](/images\2024-12-20-VRsetting\11.png)
 
 
 
@@ -121,7 +121,7 @@ Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 
 
 
 
-![12](..\images\2024-12-20-VRsetting\12.png)
+![12](/images\2024-12-20-VRsetting\12.png)
 
 
 
@@ -133,7 +133,7 @@ Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 
   - XRI Default Left Controller 옆의 빈 슬롯에다 “Left” 입력
   - XRI Default Right Controller 옆의 빈 슬롯에다 “Right” 입력
 
-![13](..\images\2024-12-20-VRsetting\13.png)
+![13](/images\2024-12-20-VRsetting\13.png)
 
 
 
@@ -150,7 +150,7 @@ Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 
 
 
 
-![14](..\images\2024-12-20-VRsetting\14.png)
+![14](/images\2024-12-20-VRsetting\14.png)
 
 
 
@@ -163,11 +163,11 @@ Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 
 - XR Origin - Camera Offset - Left Controller 밑에다가 Sphere을 하나 추가 (이름 : LSphere, Scale(0.1, 0.1, 0.1))
 - XR Origin - Camera Offset - Right Controller 밑에다가 Sphere을 하나 추가 (이름 : RSphere, Scale(0.1, 0.1, 0.1))
 
-![15](..\images\2024-12-20-VRsetting\15.png)
+![15](/images\2024-12-20-VRsetting\15.png)
 
 
 
-![16](..\images\2024-12-20-VRsetting\16.png)
+![16](/images\2024-12-20-VRsetting\16.png)
 
 
 
@@ -177,7 +177,7 @@ Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 
 
 - [meta.com](http://meta.com/)/kr/quest/setup (본인은 Quest 2를 가지고 있기 때문에 Quest 2를 기본으로 하였음)
 
-![17](..\images\2024-12-20-VRsetting\17.png)
+![17](/images\2024-12-20-VRsetting\17.png)
 
 
 
@@ -191,5 +191,5 @@ Left Controller 에서 XR Controller (Action-based) 을 보면 입력 작업에 
 
 ### 
 
-![16](..\images\2024-12-20-VRsetting\16.png)
+![16](/images\2024-12-20-VRsetting\16.png)
 

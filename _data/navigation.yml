@@ -7,13 +7,7 @@ main:
   - title: "검색"
     url: /search/
 
-docs:
-  - title: "Category"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+docs:  
   - title: "Home"
     children:
       - title: "Category"
