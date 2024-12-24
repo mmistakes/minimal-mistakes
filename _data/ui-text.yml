@@ -608,7 +608,7 @@ ko: &DEFAULT_KO
   toc_label                  : "On This Page"
   ext_link_label             : "직접 링크"
   less_than                  : "최대"
-  minute_read                : "분 소요"
+  minute_read                : ""
   share_on_label             : "공유하기"
   meta_label                 :
   tags_label                 : "태그:"
