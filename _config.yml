@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "이모저모 메모장"
+title                    : "Huniverse"
 title_separator          : "|"
-subtitle                 : "이석훈"
+subtitle                 : "Space note"
 name                     : "SeokHun"
-description              : " 경험한 것을 적어보는 블로그 "
+description              : "경험과 정보를 담는 스페이스"
 url                      : "https://Soekhun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Seok Hun"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "기록일지"
+  bio              : "경험과 정보를 담는 스페이스"
   #location         : "South Korea"
   email            : "jsr_bile@naver.com"
   links:
