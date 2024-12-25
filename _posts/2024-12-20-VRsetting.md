@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "VR 초기 세팅"
+excerpt: "VR 초기 세팅에 대해 알아보자"
 categories: GameDevelope
 tag: [Unity, VR]
 toc: true # 오른쪽 UI 목차 기능

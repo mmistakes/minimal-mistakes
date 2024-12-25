@@ -1,29 +1,29 @@
 ---
 layout: single
-title:  "VR 상호작용"
+title: "VR 상호작용"
+excerpt: "VR Interactor"    # 
 categories: GameDevelope
 tag: [Unity, VR]
-toc: true # 오른쪽 UI 목차 기능
-author_profile: false # 좌측 프로필 표시 기능
+toc: true
+author_profile: false
 sidebar:
-    nav: "docs" # 네비게이션 설정
-
-search: true # 블로그 검색 기능 노출 여부
+    nav: "docs"
+search: true
 ---
 
 # VR 상호작용
 
-## Interactor 만들기
+## 1. Interactor 만들기
+이번 챕터에서는 Action - Based XR Origin(VR) 안에 Interactor 기능을 하는 기본적으로 들어 가 있는 Left/Right Controller 대신에 직접 Interactor를 만들어 보는 작업을 진행한다.
 
-이번 챕터에서는 Action - Based XR Origin(VR) 안에 Interactor 기능을 하는 기본적으로 들어 가 있는 Left/Right Controller 대신에 직접 Interactor를 만들어 보는 작업을 진행한다. 가장 기본적인 일(물건을 집는 작업)을 하는 XR Direct Interactor 콤포넌트를 활용해서 직접 Interactor를 만드는 작업이다.
-
+### 1.1. Interactor의 개념
 - Interactor : 인터랙션을 시도하는 쪽(일반적으로 컨트롤러)
 - XR Direct Interactor
 - Interactable : 인터랙션이 되어지는 쪽(일반적으로 래이캐스팅 당하는 물체)
 - Interaction manager : Interactor와 Interactable 을 주관해서 관리함
-- XR Direct Interactor : XR Interaction Toolkit에서 제공해주는 Interactor로서 직접적인 상호 작용을 할 수 있게 해주는 컴포넌트 임. 컨트롤러를 객체에 다가가서 집거나 하는 등의 인터랙션을 수행할 수 있게 해줌
+- XR Direct Interactor : XR Interaction Toolkit에서 제공해주는 Interactor로서 직접적인 상호 작용을 할 수 있게 해주는 컴포넌트 임
 
----
+### 1.2. Interactor 구현 과정
 
 1. LeftHand Controller / Right Controller 는 비활성화 한다.
 
@@ -49,7 +49,10 @@ search: true # 블로그 검색 기능 노출 여부
 
 ## 2. Interactable 만들기
 
-XR Interaction Toolkit 에서 제공해주는 Interactable 중 XR Grab Interactable 이 있다. 붙어 있는 게임 오브젝트를 집을 수 있도록 해준다. 기본적으로 Rigidbody 와 Collider가 포함 되어 있어야 한다.
+### 2.1. XR Grab Interactable 이해하기
+XR Interaction Toolkit 에서 제공해주는 Interactable 중 XR Grab Interactable 이 있다. 붙어 있는 게임 오브젝트를 집을 수 있도록 해준다.
+
+### 2.2. Interactable 구현 과정
 
 1. 하이어라키에 새로운 Cube 게임 오브젝트를 하나 만든다. Position(0, 0, 3.0) 정도로 해서 앞에 보이도록 한다.
 2. Cube에 XR Grab Interactable 컴포넌트 추가 - 자동으로 Rigidbody 컴포넌트가 추가 된다.

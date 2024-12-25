@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "git블로그 업데이트 방법"
+excerpt: "git블로그 업데이트 방법에 대해 알아보자"
 categories: 블로그
 tag: [github.io, localserver, blog]
 toc: true #오른쪽 UI 목차 기능
