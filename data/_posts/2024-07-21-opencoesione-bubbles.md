@@ -2,7 +2,7 @@
 title: OpenCoesione, progetti conclusi e costi 
 tags:
   - italy
-  - italiano
+  - italian
   - eu
   - eu projects
 categories: data

@@ -6,7 +6,6 @@ header:
 tags:
   - shows
   - netflix
-  - series
   - amazon prime
 excerpt: Talking about some shows I loved, with a feminist kick
 ---
