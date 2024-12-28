@@ -88,7 +88,7 @@ variable "ec2_instances" {
 
 <img title="" src="../../images/2024-12-14-for_each_vs_count/ee04c8ee479952c49c52a56787f694582138b1b5.png" alt="loading-ag-1043" data-align="center">
 
-오히려 projectA-instance3라는 이름을 가진 마지막 인스턴스를 삭제하고 두번째 인스턴스의 이름이 projectA_instance3으로 변경하게 됩니다. 다시 state list를 살펴보면
+오히려 projectA-instance3라는 이름을 가진 마지막 인스턴스를 삭제하고 두번째 인스턴스의 이름이 projectA_instance3으로 변경됩니다. 다시 state list를 살펴보면
 
 <img title="" src="../../images/2024-12-14-for_each_vs_count/2024-12-28-16-34-12-image.png" alt="loading-ag-1092" data-align="center">
 
