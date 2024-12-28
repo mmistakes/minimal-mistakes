@@ -134,7 +134,7 @@ state list를 확인해보니 이번에는 고유한 key 값을 인덱스로 부
 
 <img title="" src="../../images/2024-12-14-for_each_vs_count/2024-12-28-17-49-40-image.png" alt="loading-ag-1134" data-align="center">
 
-이번에는 의도한 대로 instance2 라는 인덱스를 가진 두번째 인스턴스가 삭제됩니다. 이처럼 for_each는 순서에 구애받지 않는 고유한 key값을 리소스와 mapping해요. 그래서 이후에 편집하거나 삭제하려고 하는 리소스를 명확하게 지정할 수 있다는 장점을 확인할 수 있었습니다.
+이번에는 의도한 대로 instance2 라는 인덱스를 가진 두번째 인스턴스만 삭제됩니다. 이처럼 for_each는 순서에 구애받지 않는 고유한 key값을 리소스와 mapping해요. 그래서 이후에 편집하거나 삭제하려고 하는 리소스를 명확하게 지정할 수 있다는 장점을 확인할 수 있었습니다.
 
 ## count vs for_each
 
