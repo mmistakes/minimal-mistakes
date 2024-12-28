@@ -114,7 +114,7 @@ function Counter() {
 const [state, setState] = useState(initialState) //초기값
 ```
 
-##### useEffet
+##### useEffect
 - 외부 시스템과 컴포넌트를 동기화함
 
 컴포넌트의 최상위 레벨에서 useEffect를 호출하여 Effect를 선언할 수 있음
