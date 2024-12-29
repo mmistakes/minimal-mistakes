@@ -132,7 +132,9 @@ resource "aws_key_pair" "mykeypair" {
 
 state list를 확인해보니 이번에는 고유한 key 값을 인덱스로 부여한 것을 확인할 수 있습니다. 여기서 projectA-instance2 라는 인스턴스를 다시 삭제해 보겠습니다. 동일하게 instance2 라는 suffix의 map element를 주석처리하고 terraform plan을 실행하면 다음과 같은 결과가 출력됩니다.
 
-<img title="" src="../../images/2024-12-14-for_each_vs_count/2024-12-28-17-49-40-image.png" alt="loading-ag-1134" data-align="center">
+<img title="" src="../../images/2024-12-14-for_each_vs_count/fb3d74a58b244db3d8445b82f74d6b8641c79d4a.png" alt="loading-ag-273" data-align="center">
+
+<img title="" src="../../images/2024-12-14-for_each_vs_count/66b53504bac4c95bb0d30c27e89685cfde6c6bef.png" alt="loading-ag-274" data-align="center">
 
 이번에는 의도한 대로 instance2 라는 인덱스를 가진 두번째 인스턴스만 삭제됩니다. 이처럼 for_each는 순서 상관없는 고유한 key값을 리소스와 mapping하게 됩니다. 그래서 작업하려고 하는 리소스에 해당하는 element를 명확하게 지정할 수 있다는 장점을 확인할 수 있었습니다.
 
@@ -141,7 +143,3 @@ state list를 확인해보니 이번에는 고유한 key 값을 인덱스로 부
 shared storage를 기반으로 동일한 인스턴스를 생성하거나 혹은 naming 규칙이 필요 없이 **특정 수량**의 리소스를 빠르게 scale-out할 경우 등 **stateless**한 리소스를 프로비저닝할 땐 복잡한 하드 코딩 없이 count를 사용할 수 있습니다. count는 정수값을 취급하기 때문에 적절한 리소스 수량만 입력하면 될 정도로 비교적 간단하게 쓰일 수 있는 구문입니다.
 
 for_each는 주로 **map** 자료형을 기반으로 리소스에 고유한 naming을 적용하고 관리할 때 사용됩니다. 그래서 SSM parameter나 iam 사용자 등 count보다 더 많은 사용 사례를 갖게 됩니다. count를 아얘 사용하지 않는 것은 아니지만 엄격한 naming 규칙 아래 **stateful**한 리소스를 운영해야 되는 사례가 많아 for_each를 더욱 선호하게 되는 것 같아요. 하지만 상대적으로 count보단 코딩이 간단하지 않아서 굳이 필요하지 않은 상황에는 사용하지 않고 비교적 간단한 count를 사용하는 것이 terraform 코드의 가독성을 높일 수 있습니다.
-
-
-
-
