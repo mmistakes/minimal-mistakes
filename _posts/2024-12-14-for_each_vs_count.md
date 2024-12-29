@@ -65,7 +65,7 @@ resource "aws_key_pair" "mykeypair" {
 }
 ```
 
-각 인스턴스의 suffix가 ec2_instances 라는 list에 저장하고 ec2_instance 모듈을 사용하여 인스턴스를 생성해 보겠습니다. count는 **지정된 수만큼 리소스를 프로비저닝할 때** 사용하는 구문으로 정수값만 취급합니다. 그래서 ec2_instances 라는 list의 element 개수를 매개변수로 전달해 총 3대의 인스턴스를 suffix를 붙여 생성합니다.
+각 인스턴스의 suffix를 ec2_instances 라는 list에 저장하고 ec2_instance 모듈을 연동하여 인스턴스를 생성해 보겠습니다. count는 **지정된 수만큼 리소스를 프로비저닝할 때** 사용하는 구문으로 정수값만 취급합니다. 그래서 ec2_instances 라는 list의 element 개수를 매개변수로 전달해 총 3대의 인스턴스를 suffix를 붙여 생성합니다.
 
 <img title="" src="../../images/2024-12-14-for_each_vs_count/e27951ccef7a1c22513276666691bcafa83f3b93.png" alt="loading-ag-1014" data-align="center">
 
@@ -134,7 +134,7 @@ state list를 확인해보니 이번에는 고유한 key 값을 인덱스로 부
 
 <img title="" src="../../images/2024-12-14-for_each_vs_count/2024-12-28-17-49-40-image.png" alt="loading-ag-1134" data-align="center">
 
-이번에는 의도한 대로 instance2 라는 인덱스를 가진 두번째 인스턴스만 삭제됩니다. 이처럼 for_each는 순서에 구애받지 않는 고유한 key값을 리소스와 mapping하게 됩니다. 그래서 이후에 편집하거나 삭제하려고 하는 리소스를 명확하게 지정할 수 있다는 장점을 확인할 수 있었습니다.
+이번에는 의도한 대로 instance2 라는 인덱스를 가진 두번째 인스턴스만 삭제됩니다. 이처럼 for_each는 순서 상관없는 고유한 key값을 리소스와 mapping하게 됩니다. 그래서 작업하려고 하는 리소스에 해당하는 element를 명확하게 지정할 수 있다는 장점을 확인할 수 있었습니다.
 
 ## count vs for_each
 
