@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "파드 내 configuration 적용 우선 순위"
+title:  "파드 내 설정값 적용 우선 순위"
 categories: Kubernetes
 tag: [쿠버네티스, Kubernetes]
 author_profile: false
