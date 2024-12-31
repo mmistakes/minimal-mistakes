@@ -5,7 +5,7 @@ tags:
   - machine learning
   - collaborative filtering
   - recommender
-  - movie
+  - movies
 toc: true
 toc_label: "Table of Contents"
 toc_sticky: true

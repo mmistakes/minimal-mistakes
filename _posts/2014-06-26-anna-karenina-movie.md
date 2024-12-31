@@ -4,7 +4,7 @@ header:
   image: /assets/posts_images/anna.jpeg
   caption: "Ivan Kramsoi, Portrait of an unknown woman (Image licensed under the Public Domain terms)"
 tags:
-  - movie
+  - movies
   - review
   - literature
 excerpt: "A review of the movie Anna Karenina"

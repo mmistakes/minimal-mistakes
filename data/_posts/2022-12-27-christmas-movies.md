@@ -2,7 +2,7 @@
 title: Christmas keeps upping the movies game
 tags:
   - christmas
-  - movie
+  - movies
 gallery:
   - url: /assets/posts_images/xmas-2.jpg
     image_path: /assets/posts_images/xmas-2.jpg
