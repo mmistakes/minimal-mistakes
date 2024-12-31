@@ -1,7 +1,7 @@
 ---
 title: "Storia di una ladra di libri, di Markus Zusak"
 tags:
-  - book
+  - books
   - literature
   - review
   - italian

@@ -1,7 +1,7 @@
 ---
 title: L'anello di re Salomone
 tags:
-  - book
+  - books
   - review
   - ethology
   - italian
