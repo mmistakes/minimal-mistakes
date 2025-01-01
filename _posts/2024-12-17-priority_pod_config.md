@@ -65,10 +65,10 @@ spec:
   containers:
   - name: busybox
     image: lewisjlee/sleep:v1
-envFrom:
-        - configMapRef:
-            name: time-configmap
-        command: [ 'sh', '-c', 'while true; do echo "Sleeping for $TIME"; sleep $TIME; done' ]    command: [ 'sh', '-c', 'while true; do echo "Sleeping for $TIME"; sleep $TIME; done' ]
+    envFrom:
+    - configMapRef:
+        name: time-configmap
+    command: [ 'sh', '-c', 'while true; do echo "Sleeping for $TIME"; sleep $TIME; done' ]    command: [ 'sh', '-c', 'while true; do echo "Sleeping for $TIME"; sleep $TIME; done' ]
 ```
 
 컨테이너 이미지에 이미 60이라는 값을 가진 TIME 환경 변수가 설정되어 있는 상태에서 45라는 값을 가진 TIME 환경 변수를 담은 ConfigMap을 적용했습니다. 그 결과 애플리케이션은 ConfigMap에 적용된 TIME 값을 사용하는 것으로 확인됩니다.
