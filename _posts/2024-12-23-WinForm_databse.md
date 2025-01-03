@@ -164,12 +164,66 @@ static void Main()
     tbl.Rows.Add("미자", 29, false);
     
     // 객체 순회
-    foreach (DataRow item in tbl.Rows)
-        Console.WriteLine($"이름:{item["name"]} 나이:{item["age"]} 성별:{item["gender"]}");
+    foreach (DataRow row in tbl.Rows)
+        Console.WriteLine($"이름:{row["name"]} 나이:{row["age"]} 성별:{row["male"]}");
 
     // 조건 검색
     DataRow[] rows = tbl.Select("age >= 100"); // 조건은 문자열로 작성
-    foreach (var item in rows)
-        Console.WriteLine($"이름:{item["name"]} 나이:{item["age"]} 성별:{item["gender"]}");
+    foreach (var row in rows)
+        Console.WriteLine($"이름:{row["name"]} 나이:{row["age"]} 성별:{row["male"]}");
+}
+```
+
+- <a href="https://youtu.be/kQR_Ql3p-zc" target="_blank">DataGridView 예제</a>
+
+```csharp
+DataTable tbl;
+
+private void Form1_Load(object sender, EventArgs e)
+{
+    tbl = new DataTable();
+
+    tbl.Columns.AddRange(new DataColumn[]
+    {
+        new DataColumn("name", typeof(string)),
+        new DataColumn("age", typeof(int)),
+        new DataColumn("male", typeof(bool))
+    });
+
+    tbl.Rows.Add("철수", 9, true);
+    tbl.Rows.Add("수지", 28, false);
+    tbl.Rows.Add("미자", 29, false);
+    
+    //셀을 선택하면 해당 row가 전부 선택됨
+    dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+    dataGridView1.MultiSelect = false; //한 행만 선택
+    dataGridView1.DataSource = tbl;
+}
+
+private void insertBtn_Click(object sender, EventArgs e)
+{
+    tbl.Rows.Add(textBox1.Text, int.Parse(textBox2.Text), radioButton1.Checked);
+}
+
+private void deleteBtn_Click(object sender, EventArgs e)
+{
+    //1. DataTable의 서브 객체인 DataRow를 이용
+    var idx = dataGridView1.SelectedRows[0].Index; // MultiSelect가 false이므로 
+    DataRow row = tbl.Rows[idx];
+    row.Delete(); // row 속성에만 삭제 표시
+    tbl.AcceptChanges(); // 실제로 삭제
+    
+    // 2. DataGridView의 서브 객체인 DataGridViewRow를 이용
+    //foreach (DataGridViewRow row in dataGridView1.SelectedRows) // multi row인 경우
+    //    dataGridView1.Rows.Remove(row);
+}
+
+private void updateBtn_Click(object sender, EventArgs e)
+{
+    var idx = dataGridView1.SelectedRows[0].Index; 
+    DataRow row = tbl.Rows[idx];
+    row["name"] = textBox1.Text;
+    row["age"] = int.Parse(textBox2.Text);
+    row["male"] = radioButton1.Checked;
 }
 ```
