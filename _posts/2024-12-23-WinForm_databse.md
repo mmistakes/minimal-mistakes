@@ -95,6 +95,8 @@ private void button4_Click(object sender, EventArgs e)
   - 주요 속성 : Connection, FieldCount, HasRows, RecordsAffected
   - 주요 메서드 : Close(), Read()
 
+- <a href="https://youtu.be/8PJXHmaHZds" target="_blank">예제</a>
+
 ```csharp
 //textBox에 nonQuery(리턴값이 없는 쿼리) 입력
 private void button1_Click(object sender, EventArgs e)
@@ -126,5 +128,48 @@ private void button1_Click(object sender, EventArgs e)
             listView1.Items.Add("DB 에러: " + ex.Message);
         }
     }
+}
+```
+
+### 4. 비연결형 데이터 접근 (메모리형 DataBase)
+
+- DataSet : DataTable들의 집합
+  - DataTable : DB 테이블 구조와 데이터를 저장하는 객체
+  - DataRow : 테이블의 행을 나타내는 객체
+  - DataColumn : 테이블의 열을 나타내는 객체
+
+### 5. DataTable
+
+- DB의 테이블과 동일한 구조를 가지고 있는 객체
+- DB 쿼리 후의 결과를 DataTable 객체에 저장하여 사용
+
+```csharp
+static void Main()
+{
+    var tbl = new DataTable();
+
+    tbl.Columns.AddRange(new DataColumn[]
+    {
+        new DataColumn("name", typeof(string)),
+        new DataColumn("age", typeof(int)),
+        new DataColumn("male", typeof(bool))
+    });
+
+    // primary key 설정
+    tbl.PrimaryKey = new DataColumn[] { tbl.Columns["name"] };
+
+    // 데이터 입력
+    tbl.Rows.Add("철수", 9, true);
+    tbl.Rows.Add("수지", 28, false);
+    tbl.Rows.Add("미자", 29, false);
+    
+    // 객체 순회
+    foreach (DataRow item in tbl.Rows)
+        Console.WriteLine($"이름:{item["name"]} 나이:{item["age"]} 성별:{item["gender"]}");
+
+    // 조건 검색
+    DataRow[] rows = tbl.Select("age >= 100"); // 조건은 문자열로 작성
+    foreach (var item in rows)
+        Console.WriteLine($"이름:{item["name"]} 나이:{item["age"]} 성별:{item["gender"]}");
 }
 ```
