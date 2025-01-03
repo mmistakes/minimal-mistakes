@@ -12,22 +12,23 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "테디노트"
-title_separator          : "-"
-subtitle                 : "데이터와 인공지능을 좋아하는 개발자 노트"
-name                     : "테디노트"
-description              : "데이터와 인공지능을 좋아하는 개발자 노트"
-url                      : "https://teddylee777.github.io"
+rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+title                    : "Game Study Blog"
+title_separator          : "|"
+subtitle                 : "hah"
+name                     : "dongseon"
+description              : "dongseon의 블로그 입니다."
+url                      : "https://ehdtjspc.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "teddylee777/minimal-mistakes"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/Dog.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
@@ -116,7 +117,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "안녕하세요~"
   location         : "South Korea"
-  # email            : ""
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -205,7 +206,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Seoul
+timezone: # Asia/Seoul
 
 
 # Pagination with jekyll-paginate
@@ -267,17 +268,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-  # https://github.com/jekyll/jekyll-archives
- jekyll-archives:
-   enabled:
-     - categories
-     - tags
-   layouts:
-     category: archive-taxonomy
-     tag: archive-taxonomy
-   permalinks:
-     category: /categories/:name/
-     tag: /tags/:name/
+# https://github.com/jekyll/jekyll-archives
+ # jekyll-archives:
+ #  enabled:
+ #    - categories
+ #    - tags
+ #  layouts:
+ #    category: archive-taxonomy
+ #    tag: archive-taxonomy
+ #  permalinks:
+ #    category: /categories/:name/
+ #    tag: /tags/:name/
 
 
 # HTML Compression
