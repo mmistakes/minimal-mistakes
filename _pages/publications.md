@@ -12,6 +12,10 @@ permalink: /publications/
 ***
 ### 2024
 
+* <a href="https://arxiv.org/abs/2501.00656" style="text-decoration:none;color:navy">2 OLMo 2 Furious</a>              
+<span style="font-size:0.75em;">OLMo Team, Pete Walsh, Luca Soldaini, Dirk Groeneveld, Kyle Lo, Shane Arora, Akshita Bhagia, Yuling Gu, Shengyi Huang, Matt Jordan, Nathan Lambert, Dustin Schwenk, Oyvind Tafjord, Taira Anderson, David Atkinson, Faeze Brahman, Christopher Clark, Pradeep Dasigi, Nouha Dziri, Michal Guerquin, Hamish Ivison, Pang Wei Koh, Jiacheng Liu, Saumya Malik, William Merrill, Lester James V. Miranda, **Jacob Morrison**, Tyler Murray, Crystal Nam, Valentina Pyatkin, Aman Rangapur, Michael Schmitz, Sam Skjonsberg, David Wadden, Christopher Wilhelm, Michael Wilson, Luke Zettlemoyer, Ali Farhadi, Noah A. Smith, Hannaneh Hajishirzi</span><br>
+<span style="font-size:0.75em;">*arXiv* \[[pdf](https://arxiv.org/pdf/2501.00656)\] \[[blog](https://allenai.org/blog/olmo2)\]</span>
+
 * <a href="https://arxiv.org/abs/2411.15124" style="text-decoration:none;color:navy">Tülu 3: Pushing Frontiers in Open Language Model Post-Training</a>              
 <span style="font-size:0.75em;">Nathan Lambert, **Jacob Morrison**, Valentina Pyatkin, Shengyi Huang, Hamish Ivison, Faeze Brahman, Lester James V. Miranda, Alisa Liu, Nouha Dziri, Shane Lyu, Yuling Gu, Saumya Malik, Victoria Graf, Jena D. Hwang, Jiangjiang Yang, Ronan Le Bras, Oyvind Tafjord, Chris Wilhelm, Luca Soldaini, Noah A. Smith, Yizhong Wang, Pradeep Dasigi, Hannaneh Hajishirzi</span><br>
 <span style="font-size:0.75em;">*arXiv* \[[pdf](https://arxiv.org/pdf/2411.15124)\] \[[blog](https://allenai.org/tulu)\]</span>
