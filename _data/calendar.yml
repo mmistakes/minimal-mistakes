@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei",
+    "title": "6b - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MnA4dWI0MmR0OTZwb2U0czFocjB2NW8yZWMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-01-07T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-01-07T12:30:00+01:00"
+    },
+    "created": "2025-01-02T09:04:39.000Z",
+    "updated": "2025-01-02T09:04:39.610Z"
+  },
+  {
+    "image_path": null,
     "alt": "A5 - Ausflug in die Bücherei",
     "title": "A5 - Ausflug in die Bücherei",
     "excerpt": null,
@@ -35,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "6c - Ausflug zur Grünen Woche",
+    "title": "6c - Ausflug zur Grünen Woche",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NXBuajFpaDc1OGt1ZGpnZnQzc2M0ajdxZTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-01-23T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-01-23T13:30:00+01:00"
+    },
+    "created": "2025-01-02T09:05:34.000Z",
+    "updated": "2025-01-02T09:05:34.517Z"
+  },
+  {
+    "image_path": null,
     "alt": "A5 - Ausflug Gartenarbeitsschule",
     "title": "A5 - Ausflug Gartenarbeitsschule",
     "excerpt": null,
@@ -52,53 +86,19 @@
   },
   {
     "image_path": null,
-    "alt": "A5 - Ausflug in die Bücherei ",
-    "title": "A5 - Ausflug in die Bücherei ",
+    "alt": "6c - Ausflug zur Eishalle Charlottenburg",
+    "title": "6c - Ausflug zur Eishalle Charlottenburg",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MG9udGZuNnQ4a2Rqb2dob3JicWRwYzNhZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NzVnaDFpMmEyOTZjMThrMHE3Z2hxajYxNG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2025-03-07T08:30:00+01:00"
+      "date_time": "2025-01-29T08:30:00+01:00"
     },
     "end": {
       "date": null,
-      "date_time": "2025-03-07T11:30:00+01:00"
+      "date_time": "2025-01-29T12:30:00+01:00"
     },
-    "created": "2024-12-13T11:11:28.000Z",
-    "updated": "2024-12-13T11:11:28.795Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug in die Bücherei",
-    "title": "A5 - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-04-04T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-04-04T11:30:00+02:00"
-    },
-    "created": "2024-12-13T11:14:40.000Z",
-    "updated": "2024-12-13T11:14:40.459Z"
-  },
-  {
-    "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=c21lMXVpbWo5NmJpMzUwZG1jdHVxaWtvbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2025-06-10",
-      "date_time": null
-    },
-    "end": {
-      "date": "2025-06-11",
-      "date_time": null
-    },
-    "created": "2024-10-11T03:48:29.000Z",
-    "updated": "2024-10-11T03:48:49.755Z"
+    "created": "2025-01-02T09:06:21.000Z",
+    "updated": "2025-01-02T09:06:21.107Z"
   }
 ]
