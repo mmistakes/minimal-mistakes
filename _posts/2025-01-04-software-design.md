@@ -1,5 +1,5 @@
 ---
-layout: post            # 포스트 레이아웃 사용
+layout: single            
 title: "소프트웨어 설계"    # 포스트 제목
 description: "정보처리 기사 1과목"    # 포스트 설명
 date: 2025-01-04       # 작성 날짜
