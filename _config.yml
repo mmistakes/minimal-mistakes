@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Game Study Blog"
 title_separator          : "|"
-subtitle                 : "hah"
+subtitle                 : "haha"
 name                     : "dongseon"
 description              : "dongseon의 블로그 입니다."
 url                      : "https://ehdtjspc.github.io"
