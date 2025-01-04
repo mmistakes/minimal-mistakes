@@ -2,8 +2,8 @@
 layout: single
 title:  "VR 초기 세팅"
 excerpt: "VR 초기 세팅에 대해 알아보자"
-categories: GameDevelope
-tag: [Unity, VR]
+categories: [Unity, VR]
+tag: [setting]
 toc: true # 오른쪽 UI 목차 기능
 author_profile: false # 좌측 프로필 표시 기능
 sidebar:

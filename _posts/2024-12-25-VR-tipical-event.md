@@ -2,7 +2,7 @@
 layout: single            # 싱글 페이지 레이아웃 사용
 title: "VR트래커의 기본 이벤트"    # 포스트 제목
 excerpt: "VR 인터랙션의 기본이 되는 이벤트들에 대해 알아보자"    # 포스트 요약 (목록에서 표시됨)
-categories: VR, Unity           # 포스트 카테고리
+categories: [Unity, VR]           # 포스트 카테고리
 tag: [Interaction, Event]    # 태그 목록
 toc: true               # 목차 사용 여부
 toc_sticky: true        # 목차를 스크롤해도 고정할지 여부
