@@ -82,7 +82,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : 
 bing_site_verification   :
 naver_site_verification  : 3083d8597bb7b612aec045d6cd67bfdb4068bcf6
 yandex_site_verification :
@@ -123,7 +123,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "jsr_bile@naver.com"
     - label: "Youtube"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-youtube"
       url: "https://youtube.com/channel/UCefvo-jzz86YXTLWRl0JDGA?si=jV2ndav6_ehJaZsF"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
