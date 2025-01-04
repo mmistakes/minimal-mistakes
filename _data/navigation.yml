@@ -17,7 +17,7 @@ docs:
   - title: "공부"
     children:
       - title: "Unity"
-        url: /categories/Unity/
+        url: /categories/unity/
       - title: "Database"
         url: /categories/database/
       - title: "게임기획"
