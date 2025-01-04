@@ -12,6 +12,7 @@
 - For pages without a title, show the site title only once (#4959)
 - Use `documents-collection.html` partial in `home` layout.
 - Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
+- Add provider and comments info to `single.html` layout for non-production. (#5068)
 
 ### Bug Fixes
 
