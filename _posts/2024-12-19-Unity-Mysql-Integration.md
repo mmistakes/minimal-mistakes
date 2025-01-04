@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title:  "Unity와 데이터베이스 연동하기"
 excerpt: "Unity와 데이터베이스 연동하기에 대해 알아보자"
 categories: 데이터베이스
