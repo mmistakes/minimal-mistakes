@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title:  "VR 초기 세팅"
 excerpt: "VR 초기 세팅에 대해 알아보자"
 categories: [Unity, VR]

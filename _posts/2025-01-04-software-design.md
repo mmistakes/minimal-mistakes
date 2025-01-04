@@ -1,5 +1,5 @@
 ---
-layout: single            
+layout: post            
 title: "소프트웨어 설계"    # 포스트 제목
 excerpt: "정보처리 기사 1과목"    # 포스트 설명
 categories: [정보처리기사]    # 카테고리 지정

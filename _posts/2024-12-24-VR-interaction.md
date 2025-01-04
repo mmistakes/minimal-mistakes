@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "VR 상호작용"
 excerpt: "VR Interactor"    # 
 categories: [Unity, VR]
