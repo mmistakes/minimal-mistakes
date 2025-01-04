@@ -1,9 +1,9 @@
 ---
-layout: post            
+layout: single           
 title: "소프트웨어 설계"    # 포스트 제목
 excerpt: "정보처리 기사 1과목"    # 포스트 설명
 categories: [정보처리기사]    # 카테고리 지정
-tags: [소프트웨어 설계, 소프트웨어 개발 방법론, 폭포수 모형, 애자일 방법론, UI/UX 설계, 프로토타입]    # 태그 목록
+tag: [소프트웨어 설계, 소프트웨어 개발 방법론, 폭포수 모형, 애자일 방법론, UI/UX 설계, 프로토타입]    # 태그 목록
 toc: true             # 목차 사용
 toc_sticky: true      # 목차 고정
 author_profile: false

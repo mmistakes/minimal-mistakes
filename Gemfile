@@ -7,5 +7,3 @@ gem "webrick", "~> 1.9"
 gem "tzinfo"
 gem "tzinfo-data"
 
-gem "github-pages", group: :jekyll_plugins
-

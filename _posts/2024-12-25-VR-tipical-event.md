@@ -1,5 +1,5 @@
 ---
-layout: post            # 싱글 페이지 레이아웃 사용
+layout: single            # 싱글 페이지 레이아웃 사용
 title: "VR트래커의 기본 이벤트"    # 포스트 제목
 excerpt: "VR 인터랙션의 기본이 되는 이벤트들에 대해 알아보자"    # 포스트 요약 (목록에서 표시됨)
 categories: [Unity, VR]           # 포스트 카테고리
