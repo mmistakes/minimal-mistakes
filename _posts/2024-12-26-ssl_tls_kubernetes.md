@@ -86,9 +86,9 @@ TLS 인증서는 **서버 인증서, 체인 인증서, 루트 인증서** 체인
 
 kubeadm을 이용하여 쿠버네티스 클러스터를 구축하면 kubeadm은 각 컴포넌트를 생성하고 certification을 하나씩 생성합니다. 이 때 **클러스터 자신의 이름으로 직접 서명한 CA 루트 인증서**가 먼저 생성되고 이 루트 인증서는 다른 컴포넌트들의 인증서들을 서명하고 발급하는데 사용됩니다. **etcd의 경우 클러스터 CA로 서명된 서버 인증서를 갖지 않고 자신이 직접 CA 루트 인증서를 생성하여 자신의 서버 인증서를 서명합니다.**
 
-### 클라이언트 컴포넌트 인증서
+## 클라이언트 컴포넌트 인증서
 
-#### 관리자, 사용자
+### 관리자, 사용자
 
 클러스터가 생성되고 나면 관리자용 certification이 포함된 config가 생성되고, 관리자는 이 config를 통해 API 서버와 통신하며 클러스터를 제어할 수 있습니다. 사용자는 openssl을 이용하여 자신의 자격 증명을 위한 키와 CSR을 생성하고 관리자에게 config 생성을 요청할 수 있습니다. 
 
@@ -100,35 +100,35 @@ CSR을 승인하고 생성된 사용자에게 RBAC를 통해 쿠버네티스를 
 
 [Certificates and Certificate Signing Requests](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user)
 
-#### Controller Manager
+### Controller Manager
 
 <img title="" src="../../images/2024-12-26-ssl_tls_kubernetes/2025-01-06-19-10-29-image.png" alt="loading-ag-1618" data-align="center">Controller Manager는 정해진 개수만큼 파드를 실행시키기 위해 API 서버에 요청하는 클라이언트 컴포넌트입니다. 따라서 지정된 config 파일에 클러스터 CA를 통해 서명된 certification 데이터와 CA 루트 인증서 데이터가 저장되어 있고 이 config 파일을 갖고 API 서버에 접근할 수 있습니다. 인증서 API를 제공하는 역할을 하기 때문에 CSR을 서명하기 위한 CA 인증서 경로 또한 명시되어 있습니다.
 
-#### Scheduler
+### Scheduler
 
 <img title="" src="../../images/2024-12-26-ssl_tls_kubernetes/2025-01-06-19-13-58-image.png" alt="loading-ag-1634" data-align="center">
 
 마찬가지로 Scheduler는 어떤 노드에 파드를 배치하면 좋은지 API 서버에 알리는 역할을 하는 클라이언트 컴포넌트입니다. 그래서 지정된 config 파일에 클러스터 CA로 서명된 certification 데이터와 CA 루트 인증서 데이터가 저장되어 있고 이 config 파일을 갖고 API 서버에 접근할 수 있습니다.
 
-#### kube-proxy
+### kube-proxy
 
 <img title="" src="../../images/2024-12-26-ssl_tls_kubernetes/6b377cef142d6272daec9bb5e8f2695671b53967.png" alt="loading-ag-1684" data-align="center">
 
 kube-proxy는 서비스를 비롯한 쿠버네티스 네트워크 동작을 관리하는 역할로 역시 API 서버 호출이 필요한 클라이언트 컴포넌트입니다. 역시 지정된 config 파일에 클러스터 CA로 서명된 certification 데이터와 CA 루트 인증서 데이터가 저장되어 있고 이 config 파일을 갖고 API 서버에 접근할 수 있습니다.
 
-#### kubelet
+### kubelet
 
 kubelet은 노드에서 파드를 실행시키는 데몬으로 상태 정보를 API 서버에 전달하는 클라이언트 역할을 하기도 합니다. 따라서 지정된 config 파일에 CA 루트 인증서 데이터가 저장되어 있고 클러스터 CA로 서명된 certification 경로가 저장되어 있습니다. 인증서를 살펴보면 쿠버네티스 클러스터로부터 발급되었다는 점과 Subject가 kubelet 데몬이 실행되는 노드 그룹으로 되어있는 것을 확인할 수 있습니다.
 
 <img title="" src="../../images/2024-12-26-ssl_tls_kubernetes/2025-01-06-19-59-36-image.png" alt="loading-ag-1737" data-align="center">
 
-### ETCD
+## ETCD의 인증서
 
 etcd는 쿠버네티스 클러스터에 대한 데이터를 key=value 형태로 저장하는 메모리 기반 데이터베이스로 Control-Plane에 스태틱 파드 형태로 배치되거나 클러스터 외부에 별도로 구성할 수 있습니다. 따라서 자체 CA 루트 인증서와 서버 certification을 갖고 있는 것이 특징입니다. 이들 모두 etcd CA에 의해 서명되어 있는 것을 확인할 수 있습니다.
 
 <img title="" src="../../images/2024-12-26-ssl_tls_kubernetes/2025-01-06-20-06-31-image.png" alt="loading-ag-1749" data-align="center">
 
-### APIServer
+## APIServer의 인증서
 
 API 서버는 다른 컴포넌트로부터 접근 받는 서버 역할과 kubelet 데몬에 파드 실행을 명령하거나 etcd에 데이터를 저장하는 클라이언트 역할을 함께 수행합니다. 그래서 서버 certification과 kubelet 접근용 클라이언트 certification, etcd 접근용 클라이언트 certification을 한 쌍씩 보유하고 있습니다. 서버 certification과 kubelet 클라이언트 certification은 클러스터 CA에 의해 서명되어 있고 etcd 클라이언트 certification은 etcd CA에 의해 서명되어 있습니다.
 
