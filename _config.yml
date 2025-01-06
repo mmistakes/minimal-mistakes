@@ -20,7 +20,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "어제보다 오늘 더 성장합니다."
 title_separator          : "|"
-subtitle                 : "small positive action"
+subtitle                 : ""
 name                     : "강영미"
 description              : "안녕하세요! Flutter 앱 개발자가 되고 싶은 강영미입니다. 현재 Flutter 개발을 위한 Dart와 Kotlin을 활용한 Android 앱 개발에 대해 공부 중입니다."
 url                      : "https://youngmi-k.github.io"
