@@ -32,13 +32,13 @@ metrics-server는 쿠버네티스 클러스터 구성 시 기본으로 설치되
 
 ### 초기 클러스터 구성 시 kubelet TLS 인증서
 
-초기 클러스터 구성 시 노드가 default로 생성하는 Self-Signed 서버 인증서는 SANs에 노드의 hostname을 DNS 이름으로 갖고 IP Address 정보는 갖고 있지 않습니다. 이를 해결하기 위해 metrics-server 공식 github를 살펴보면 'Requirement' 소제목에 "Kubelet certificate needs to be signed by cluster Certificate Authority (or disable certificate validation by passing `--kubelet-insecure-tls` to Metrics Server)" 라는 요구 사항을 확인할 수 있습니다.
+초기 클러스터 구성 시 노드가 default로 생성하는 Self-Signed 서버 인증서는 SANs에 노드의 hostname을 DNS 이름으로 갖고 IP Address 정보는 갖고 있지 않습니다.[(쿠버네티스 TLS Post 참고)](https://lewisjlee.github.io/kubernetes/ssl_tls_kubernetes/) 이를 해결하기 위해 metrics-server 공식 github를 살펴보면 'Requirement' 소제목에 "Kubelet certificate needs to be signed by cluster Certificate Authority (or disable certificate validation by passing `--kubelet-insecure-tls` to Metrics Server)" 라는 요구 사항을 확인할 수 있습니다.
 
-"--kubelet-insecure-tls"를 활성화하는 방법으로 TLS 암호화 통신 없이 metric을 주고받을 수 있도록 할 수 있지만 보다 신뢰성 있는 쿠버네티스 환경을 만들기 위해서는 좋은 방법이 아니라고 생각했습니다. 그래서 저는 요구 사항 원문대로 kubelet 데몬이 클러스터 CA로부터 서명받은 인증서를 사용하도록 바꾸기로 결정했습니다.
+`--kubelet-insecure-tls`를 활성화하는 방법으로 TLS 암호화 통신 없이 metric을 주고받을 수 있도록 할 수 있지만 신뢰성 있는 쿠버네티스 환경을 만들기 위해서는 좋은 방법이 아니라고 생각했습니다. 그래서 저는 요구 사항 원문대로 **kubelet 데몬이 클러스터 CA로부터 서명받은 인증서를 사용하도록** 바꾸기로 결정했습니다.
 
 ## 쿠버네티스 클러스터 CA 서명을 받은 TLS 인증서 Bootstraping
 
-쿠버네티스 공식 문서의 kubelet config 페이지를 살펴 보면 Self-Signed 인증서 대신 인증서 API를 통해 인증서를 생성할 수 있는 **"serverTLSBootstrap"** 설정값을 소개하고 있습니다. 이 설정값은 default로 false로 지정되어 있기 때문에 Kubelet Configuration에서 true를 명시적으로 지정해 주고 kubelet을 restart 해주게 되면 kubelet은 자동으로 CSR을 생성하고 등록하게 됩니다.
+쿠버네티스 공식 문서의 kubelet config 페이지를 살펴 보면 Self-Signed 인증서 대신 인증서 API를 통해 인증서를 생성할 수 있는 **`serverTLSBootstrap`** 설정값을 소개하고 있습니다. 이 설정값은 default로 false로 지정되어 있기 때문에 Kubelet Configuration에서 true를 명시적으로 지정해 주고 kubelet을 restart 해주게 되면 kubelet은 자동으로 CSR을 생성하고 등록하게 됩니다.
 
 <img title="" src="../../images/2025-01-02-metrics-server/2025-01-07-19-15-01-image.png" alt="loading-ag-809" data-align="center">
 
@@ -58,7 +58,7 @@ sudo systemctl restart kubelet
 
 ## 초기 클러스터 구성부터 클러스터 CA 서명된 kubelet 인증서 사용하려면?
 
-HPA는 쿠버네티스 워크로드의 확장성을 위해 꼭 필요한 기능으로 꼽힙니다. 그런 만큼 초기 쿠버네티스 클러스터를 구성할 때부터 metrics-server를 사용할 수 있도록 하는 것이 편리할 텐데요. 그렇다면 첫 Control-Plane에서 kubeadm init을 실행할 때 "serverTLSBootstrap" 설정값을 담은 최소 Kubelet Configuration을 전달해서 실행해야 합니다. 아래와 같이 Kubelet Configuration을 작성하고 클러스터를 초기화하면 노드의 kubelet은 default로 클러스터 CA로부터 서명된 서버 인증서를 사용하여 API를 제공할 수 있습니다.
+HPA는 쿠버네티스 워크로드의 확장성을 위해 꼭 필요한 기능으로 꼽힙니다. 그런 만큼 초기 쿠버네티스 클러스터를 구성할 때부터 metrics-server를 사용할 수 있도록 하는 것이 편리할 텐데요. 그렇다면 첫 Control-Plane에서 kubeadm init을 실행할 때 `serverTLSBootstrap` 설정값을 담은 최소 Kubelet Configuration을 전달해서 실행해야 합니다. 아래와 같이 Kubelet Configuration을 작성하고 클러스터를 초기화하면 노드의 kubelet은 default로 클러스터 CA로부터 서명된 서버 인증서를 사용하여 API를 제공할 수 있습니다.
 
 ```yaml
 apiVersion: kubeadm.k8s.io/v1beta3
