@@ -222,8 +222,68 @@ private void updateBtn_Click(object sender, EventArgs e)
 {
     var idx = dataGridView1.SelectedRows[0].Index; 
     DataRow row = tbl.Rows[idx];
+    row.BeginEdit();
     row["name"] = textBox1.Text;
     row["age"] = int.Parse(textBox2.Text);
     row["male"] = radioButton1.Checked;
+    row.EndEdit();
+}
+```
+
+### 6. DataSet
+
+- DataSet.Tables : DataTable 컬렉션
+- 테이블명 대소문자 구별
+- XML 파일로 저장 및 로드 가능
+- DataRelation : 테이블 간의 관계 설정 가능
+
+- <a href="https://youtu.be/Ars6Tu_9orA" target="_blank">DataSet 예제</a>
+
+```csharp
+DataSet dataSet;
+
+private void Form1_Load(object sender, EventArgs e)
+{
+    dataSet = new DataSet();
+    
+    // major 테이블 생성 및 열 추가
+    DataTable majorTable = dataSet.Tables.Add("major");
+    majorTable.Columns.Add(new DataColumn("id", typeof(int))
+    {
+        AutoIncrement = true,
+        AutoIncrementSeed = 1, // 시작 값
+        AutoIncrementStep = 1 // 증가 값
+    });
+    majorTable.PrimaryKey = new DataColumn[] { majorTable.Columns["id"] };
+    majorTable.Columns.Add(new DataColumn("name", typeof(string)) { MaxLength = 50, AllowDBNull = false });
+    
+    // 데이터 행 추가
+    majorTable.Rows.Add(new object[] { null, "통계학과" });
+    majorTable.Rows.Add(new object[] { null, "불문학과" });
+    
+    // student 테이블 생성 및 열 추가
+    DataTable studentTable = dataSet.Tables.Add("student");
+    studentTable.Columns.Add(new DataColumn("id", typeof(int))
+    {
+        AutoIncrement = true,
+        AutoIncrementSeed = 1,
+        AutoIncrementStep = 1
+    });
+    studentTable.PrimaryKey = new DataColumn[] { studentTable.Columns["id"] };
+    studentTable.Columns.Add(new DataColumn("name", typeof(string)) { MaxLength = 50, AllowDBNull = false });
+    studentTable.Columns.Add(new DataColumn("major_id", typeof(int)) { AllowDBNull = false });
+    
+    // 외래키 제약조건 추가
+    var fk = new ForeignKeyConstraint("FK_student_major", majorTable.Columns["id"], studentTable.Columns["major_id"])
+    {
+        UpdateRule = Rule.Cascade, // 부모 키를 업데이트하면 자동으로 자식 테이블의 참조키가 변경됨 
+        DeleteRule = Rule.Cascade  // 부모 키를 삭제하면 자동으로 자식 테이블의 row가 삭제됨
+    };
+    studentTable.Constraints.Add(fk);
+    
+    // 데이터 행 추가
+    studentTable.Rows.Add(new object[] { null, "윤영주", 2 });
+    studentTable.Rows.Add(new object[] { null, "정일영", 1 });
+    studentTable.Rows.Add(new object[] { null, "마재은", 1 });
 }
 ```
