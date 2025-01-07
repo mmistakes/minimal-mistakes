@@ -18,10 +18,10 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Fahrur's Life"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : # site tagline th at appears below site title in masthead
 name                     : "Muhammad Akhyar Fahrurrozi"
 description              : "Hello!"
-url                      : blog.muhammadakfz.com
+url                      : #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
