@@ -10,9 +10,9 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Muhammad Akhyar Fahrurrozi"
 description              : "Hello!"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : blog.muhammadakfz.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -115,7 +115,7 @@ author:
   name             : "Muhammad Akhyar Fahrurrozi"
   avatar           : "/assets/images/bio.jpg"
   bio              : "Hello World!"
-  location         : "Depok, Jawa Barat, Indonesia"
+  location         : "Indonesian"
   email            : "muhammadakfz@gmail.com"
   links:
     - label: "Email"
@@ -124,9 +124,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://muhammadakfz.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url: "https://facebook.com/"
@@ -148,7 +148,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/muhammadakfz"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -157,7 +157,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/muhammadakfz"
 
 
 # Reading Files
