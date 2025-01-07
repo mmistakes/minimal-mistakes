@@ -118,7 +118,7 @@ kube-proxy는 서비스를 비롯한 쿠버네티스 네트워크 동작을 관�
 
 kubelet은 노드에서 파드를 실행시키는 데몬으로 상태 정보를 API 서버에 전달하는 클라이언트 역할을 하기도 합니다. 따라서 지정된 kubeconfig 파일에 클러스터 CA 루트 인증서 데이터와 서버 인증서 path가 저장되어 있습니다.
 
-**kubelet 서버 인증서는 노드에서 자체적으로 발급하고 서명하는 Self-Signed 인증서입니다.** 따라서 발급자와 Subject가 노드 이름으로 되어 있는 것을 확인할 수 있습니다.
+**kubelet 서버 인증서는 초기 kubeadm 구성 시 노드에서 자체적으로 발급하고 서명하는 Self-Signed 인증서로 생성됩니다.** 따라서 발급자와 Subject가 노드 이름으로 되어 있는 것을 확인할 수 있습니다.
 
 <img title="" src="../../images/2024-12-26-ssl_tls_kubernetes/2025-01-07-15-35-25-image.png" alt="loading-ag-406" data-align="center">
 
