@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "kubelet tls Bootstraping을 통한 metrics-server Troubleshooting"
+title:  "kubelet TLS Bootstraping을 통한 metrics-server Troubleshooting"
 categories: Kubernetes
 tag: [쿠버네티스, Kubernetes]
 author_profile: false
