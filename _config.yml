@@ -18,9 +18,9 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Fahrur's Life"
 title_separator          : "-"
-subtitle                 : # site tagline th at appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Muhammad Akhyar Fahrurrozi"
-description              : "dunia emg se ngebosenin itu"
+description              : "Hello!"
 url                      : #
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "Muhammad Akhyar Fahrurrozi"
   avatar           : "/assets/images/bio.jpg"
-  bio              : "Hello World!"
+  bio              : "Hdunia emg se ngebosenin itu"
   location         : "Indonesian"
   email            : "muhammadakfz@gmail.com"
   links:
