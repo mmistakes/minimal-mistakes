@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-09-26T13:40:04+08:00'
+last_modified_at: '2025-01-02T02:21:49+08:00'
 toc: false
 ---
 
@@ -26,6 +26,8 @@ toc: false
 - The "if" means the default is never used [#4955](https://github.com/mmistakes/minimal-mistakes/issues/4955)
 - For pages without a title, show the site title only once [#4959](https://github.com/mmistakes/minimal-mistakes/issues/4959)
 - Use `documents-collection.html` partial in `home` layout.
+- Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
+- Add provider and comments info to `single.html` layout for non-production. [#5068](https://github.com/mmistakes/minimal-mistakes/issues/5068)
 
 ### Bug Fixes
 
@@ -33,6 +35,9 @@ toc: false
 - Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
 - Fix reset stylesheet overruling `$doc-font-size`. [#4983](https://github.com/mmistakes/minimal-mistakes/issues/4983)
 - Fix JavaScript null error on home and splash layouts. [#4938](https://github.com/mmistakes/minimal-mistakes/issues/4938), [#4939](https://github.com/mmistakes/minimal-mistakes/pull/4939)
+- Fix bad &lt;figure&gt; HTML if "alt" contains quotes.
+- Fix extra newline generated in `_includes/post_pagination.html`.
+- Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
 
 ### Documentation & Maintenance
 

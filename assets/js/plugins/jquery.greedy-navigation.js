@@ -103,7 +103,11 @@ $(function() {
     clearTimeout(timer);
   });
 
-  $hlinks.on('mouseleave', function() {
+  $hlinks.on("click", function () {
+    // Hide the hidden links & remove the overlay when one is clicked.
+    $hlinks.addClass("hidden");
+    $btn.removeClass("close");
+  }).on('mouseleave', function() {
     // Mouse has left, start the timer
     timer = setTimeout(function() {
       $hlinks.addClass('hidden');
