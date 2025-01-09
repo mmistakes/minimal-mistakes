@@ -6,23 +6,28 @@
 
 html {
   /* apply a natural box layout model to all elements */
+  /* 글씨 폰트 조정하기 */
   box-sizing: border-box;
   background-color: $background-color;
   font-size: $doc-font-size;
 
+  /* 본문 사이즈 */
   @include breakpoint($medium) {
     font-size: $doc-font-size-medium;
   }
 
+  /* 헤더 사이즈 */
   @include breakpoint($large) {
     font-size: $doc-font-size-large;
   }
 
+  /* 제목 사이즈 (이 부분만 조정해도 글씨 사이즈가 조절 됨) */
   @include breakpoint($x-large) {
-    font-size: $doc-font-size-x-large;
+    // 기본값: font-size: $doc-font-size-x-large;
+    font-size: 20px;
   }
 
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* 모바일 폰트 사이즈 조정정 */
   -ms-text-size-adjust: 100%;
 }
 

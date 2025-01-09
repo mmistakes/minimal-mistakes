@@ -18,11 +18,11 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 future                   : true
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "어제보다 오늘 더 성장합니다"
+title                    : "개발자 성장 다이어리"
 title_separator          : "|"
-subtitle                 : ""
-name                     : "강영미"
-description              : "안녕하세요! Flutter 앱 개발자가 되고 싶은 강영미입니다. 현재 Flutter 개발을 위한 Dart와 Kotlin을 활용한 Android 앱 개발에 대해 공부 중입니다."
+subtitle                 : "어제보다 오늘 더 성장합니다"
+name                     : "Satomi"
+description              : "안녕하세요! Flutter 앱 개발자가 되고 싶은 Satomi입니다. 현재 Flutter 개발을 위한 Dart와 Kotlin을 활용한 Android 앱 개발에 대해 공부 중입니다."
 url                      : "https://youngmi-k.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,9 +114,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "강영미"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Flutter 개발 공부를 기록하는 블로그입니다."
+  name             : "Satomi"
+  avatar           : "/assets/profile_image.jpg"
+  bio              : "Flutter와 Dart를 공부하며 기록하는 블로그입니다. 잘 부탁드립니다 :)"
   location         : "South Korea"
   email            :
   links:
