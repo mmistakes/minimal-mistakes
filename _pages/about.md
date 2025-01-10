@@ -63,8 +63,8 @@ The Scientific and Technical Advisory Group (STAG) provides input for the operat
 
 ## Management
 
-* Prof. Mika Prunnila, VTT, FiQCI director
-* Dr. Mikael Johansson, CSC, FiQCI vice-director
+* Dr. Mikael Johansson, CSC, FiQCI director
+* Prof. Mika Prunnila, VTT, FiQCI vice-director
 * Prof. Tapio Ala-Nissilä, Aalto University, FiQCI vice-director
 
 ## Acknowledgement
