@@ -7,6 +7,16 @@ title: The now page
 
 My now page, inspired by [D Sivers](https://nownownow.com/about) - what I'm up to now. 
 
+# Winter 2024-25
+
+I feel like I've finally mastered a B1 level in German! I can read and I definitely feel less strain in listening to things, so long as they're not too complex of course. I'll want to properly study some Spanish soon.
+
+Other than [languages](https://awareeu.osservatoriocivicopnrr.it/infografiche/), I've concluded a project (in Italian) aimed at creating data vizzes about EU project, and for 2025 I am entertaining the idea of more vizzes about historical snippet. It will also mean resuming the newsletter which have been kinda stalled.
+
+I'll visit (at the time of writing it's in the future) some dear friends I've not seen in years.
+
+I'm more and more disappointed at the state of the world but part of me thinks it's a physiological cycle, maybe. I'm trying to read from those more informed and better clear-headed than I am. Maybe I'll write some thoughts.
+
 # August/September 2024 
 
 End of July and August have been very much a lot about sport: Olympics, Paralympics, Athletics events. I've had a great time watching sport, the kind of sport which is less mainstream (and that I like the most).
