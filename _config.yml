@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 future                   : true
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "개발자 성장 다이어리"
+title                    : "Satomi's Development Diary"
 title_separator          : "|"
 subtitle                 : "어제보다 오늘 더 성장합니다"
 name                     : "Satomi"
