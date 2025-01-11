@@ -220,6 +220,26 @@ Categories are just for keeping order and are continuously updated. The relation
 > Patriarchal control is, in one sense, no different from any other. What sets it apart is that it operates even at the level of the family.<br>
 -- A Saini, "The Patriarchs"
 
+> Poverty is the feeling that your government is against you, not for you; that your country was designed to serve other people and that you are fated to be managed and processed, roughed up and handcuffed.
+-- M Desmond, "Poverty, by America"
+
+> Poverty is diminished life and personhood. It changes how you think and prevents you from realizing your full potential.
+-- M Desmond, "Poverty, by America"
+
+> In the history of the nation, there has only been one other state-sponsored initiative more antifamily than mass incarceration, and that was slavery.
+-- M Desmond, "Poverty, by America"
+
+> Lousy, underpaid work is not an indispensable, if regrettable, by-product of capitalism, as some pro-business defenders claim today.
+-- M Desmond, "Poverty, by America"
+
+> Poverty isn't simply the condition of not having enough money. It's the condition of not having enough choice and being taken advantage of because of that.
+-- M Desmond, "Poverty, by America"
+
+> We need only to vote yes on policies that lead to private opulence and public squalor and, with that opulence, build a life behind a wall that we tend and maintain. We may plaster our wall with Gadsden flags or rainbow flags, ALL LIVES MATTER signs or BLACK LIVES MATTER signs. The wall remains a wall, indifferent to our decorations.
+-- M Desmond, "Poverty, by America"
+
+> This country of ours should be in the business of helping its people create wealth, but it should not be in the business of heavily subsidizing it. Why are we so focused on increasing the wealth of the already wealthy when millions languish in poverty?
+-- M Desmond, "Poverty, by America"
 
 ## Society
 
@@ -249,6 +269,15 @@ Categories are just for keeping order and are continuously updated. The relation
 
 > Over millennia, we've been pushed gradually into believing that there are just a few ways in which we can live.<br>
 -- A Saini, "The Patriarchs"
+
+> they think that, at best, our vocation amounts to a butchering sort of business; and that when actively engaged therein, we are surrounded by all manner of defilements. Butchers we are, that is true. But butchers, also, and butchers of the bloodiest badge have been all Martial Commanders whom the world invariably delights to honor.
+-- H Melville, "Moby Dick"
+
+> For we are all killers, on land and on sea; Bonapartes and Sharks included.
+-- H Melville, "Moby Dick"
+
+> Has there ever been another time, in the full sweep of human history, when so many people had so much and yet felt so deprived and anxious?
+-- M Desmond, "Poverty, by America"
 
 ## Time
 
