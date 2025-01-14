@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4c - Jugendverkehrsschule",
-    "title": "4c - Jugendverkehrsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2xmY3U5ZWVya2xjOXVwdmNjbWQzcGowZ20gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-01-13T09:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-01-13T11:30:00+01:00"
-    },
-    "created": "2025-01-08T07:23:06.000Z",
-    "updated": "2025-01-08T07:23:06.352Z"
-  },
-  {
-    "image_path": null,
     "alt": "A2 - Ausflug zum Jonas Haus",
     "title": "A2 - Ausflug zum Jonas Haus",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-01-02T09:05:34.000Z",
     "updated": "2025-01-02T09:05:34.517Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug Gartenarbeitsschule",
+    "title": "A5 - Ausflug Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3RuaWlsMWpzYnJnaHFzaWVibzdiYXNzNzEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-01-28T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-01-28T13:30:00+01:00"
+    },
+    "created": "2024-09-13T10:08:44.000Z",
+    "updated": "2024-09-13T10:08:44.018Z"
   }
 ]
