@@ -123,9 +123,6 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "http://https://www.linkedin.com/in/roy-blume/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-       url: "https://github.com/royblume"
 
 
 # Site Footer
