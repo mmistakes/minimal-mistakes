@@ -117,11 +117,8 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Security Researcher @ Assurit"
   location         : "California"
+  linkedin         : "roy-blume/"
   email            :
-  links:
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/roy-blume/"
 
 
 # Site Footer
