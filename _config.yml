@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "DeanNote"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "This is Dean's coding blog\n이민석의 코딩블로그입니다."
+  location         : "South Korea"
+  email            : "alstjr3824@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
