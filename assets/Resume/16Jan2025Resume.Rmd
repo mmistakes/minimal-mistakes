@@ -89,7 +89,10 @@ output:
 Experienced and self-motivated Mathematical Statistician with over five years of experience applying statistical methods reinforced by robust mathematical reasoning to effectively scope tests and analyze test data across various U.S. Army warfighting commodities while consistently exceeding established job performance metrics. I have demonstrated success collaborating with several agencies simultaneously to identify test constraints, develop action plans, and support data fluency through both oral and written communication.
 \end{flushleft}
 
+\vspace{-0.5em}
 \subsection{SKILLS}
+\vspace{0.5em}
+\titlerule
 \subsubsection{Software}
 \vspace{-0.5em}
 \begin{flushleft}
@@ -110,17 +113,19 @@ Top Secret / Sensitive Compartmented Information
 
 \begin{rightcolumn}
 \subsection{WORK EXPERIENCE}
-
+\vspace{0.5em}
+\titlerule
 \begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
 \textbf{Operations Research Analyst} & {Apr 2024 - Current} \\
 \multicolumn{2}{@{}l}{U.S. Special Operations Command \bullet \ Tampa, FL} \\
 \end{tabularx}
 
 \begin{itemize}[leftmargin=*]\setlength\itemsep{-0.25em}\raggedright
-  \item{Promoted to lead of the assessments team to develop best practices and innovative solutions that ensure standardization of Military Information Support Operations assessments across the 11 combatant commands at a joint enterprise}
-  \item{Apply Bayesian multilevel ordinal regression models for likert response survey data which quantify behavior change in target audiences over time to provide evidence for the effectiveness of influential campaigns}
-  \item{Program and publish R Shiny apps on the Posit Connect cloud environment that enable data exploration, analysis, and reporting through newly standardized statistical methods and data visualizations to inform a Behavior Change Model}
-  \item{Conduct social network analysis of social media data to }
+  \item{Promoted to lead of the assessments team, overseeing the development of best practices and innovative solutions that standardized evaluation of Military Information Support Operations across 11 combatant commands}
+  \item{Applied Bayesian multilevel ordinal regression models to quantify temporal behavior changes from Likert survey data, providing evidence of effectiveness and actionable insights that structured strategic efforts for influential campaigns}
+  \item{Programmed and deployed R Shiny apps on the Posit Connect cloud environment, supporting over 50 assessment team members, to enable data exploration, standardize statistical methods, and improve reporting on a Behavior Change Model}
+  \item{Designed a scalable process combining prompt engineering of large language model (LLM) and hierarchical modeling using Markov Chain Monte Carlo (MCMC) simulations, validated for consistency on 43 text items through inter-rater reliability methods, and expanded to tens of thousands, enabling predictive accuracy and efficiency that were previously unattainable}
+  \item{Designed a scalable process, combining prompt engineering of large language model (LLM) and hierarchical modeling using Markov Chain Monte Carlo (MCMC) simulations. Thus, validating for consistency on 43 text items through inter-rater reliability methods, and expanding to tens of thousands, which enabled predictive accuracy and efficiency that were previously unattainable}
 \end{itemize}
 
 \begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
@@ -129,7 +134,7 @@ Top Secret / Sensitive Compartmented Information
 \end{tabularx}
 
 \begin{itemize}[leftmargin=*]\setlength\itemsep{-0.25em}\raggedright
-  \item{Awarded Department of the Army Civilian Service Commendation Medal for outstanding statistical analysis and insight in timely support of a top-priority system-of-systems operational test which ensured the success of the demonstration over a distributed test network while simultaneously transforming the Command's test infrastructure}
+  \item{Awarded "Department of the Army Civilian Service Commendation Medal" for outstanding statistical analysis and insight in timely support of a top-priority system-of-systems operational test which ensured the success of the demonstration over a distributed test network while simultaneously transforming the Command's test infrastructure}
   \item{Selected as "AEC Employee of the Quarter, First Quarter, Fiscal Year 2024" for leading a working group to gain efficiencies and improve accuracies in the test design and analysis of a probabilistic modeling and simulation tool}
   \item{Served as lead statistician on 24 diverse, multi-disciplinary teams to scope test events through design of experiments, simulation, and other innovative statistical techniques, resulting in robust designs that successfully addressed critical evaluation metrics and reduced test resources by up to 67\%}
   \item{Analyzed continuous, discrete, and survey test data using regression, mixed models, and other complex statistical methods to generate data visualizations that effectively communicated findings in results briefs and written reports which allowed evaluators and senior leaders to efficiently interpret data and reach important decisions}
@@ -137,6 +142,8 @@ Top Secret / Sensitive Compartmented Information
 \end{itemize}
 
 \subsection{EDUCATION}
+\vspace{0.5em}
+\titlerule
 \begin{tabularx}{\columnwidth}{@{}l >{\raggedleft\arraybackslash}X}
 \textbf{Master of Statistics} & {Jul 2024} \\
 North Carolina State University \bullet \ Raleigh, NC & GPA: 4.00/4.00 \\
