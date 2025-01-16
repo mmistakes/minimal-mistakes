@@ -21,7 +21,7 @@ title                    : "Gyrok42"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jairo Borba"
-description              : "An amazing website."
+description              : "Science and Technology"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -124,7 +124,7 @@ author:
       # url: "mailto:gyrok42@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://gyrok42.com"
+      # url: "https://gyrok42.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/gyrok42"
@@ -137,6 +137,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/gyrok42"
 
 # Site Footer
 footer:
@@ -159,6 +162,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/gyrok42"
 
 
 # Reading Files
