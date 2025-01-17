@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5- Ausflug Gartenarbeitsschule",
-    "title": "A5- Ausflug Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2plcnEybmRqbzBiNTVmZHFqODlqanUzYWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-01-16T07:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-01-16T11:30:00+01:00"
-    },
-    "created": "2024-09-13T10:07:47.000Z",
-    "updated": "2024-09-13T10:07:47.671Z"
-  },
-  {
-    "image_path": null,
     "alt": "5b - Ausflug zur Grünen Woche",
     "title": "5b - Ausflug zur Grünen Woche",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-09-13T10:08:44.000Z",
     "updated": "2024-09-13T10:08:44.018Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6c - Ausflug zur Eishalle Charlottenburg",
+    "title": "6c - Ausflug zur Eishalle Charlottenburg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzVnaDFpMmEyOTZjMThrMHE3Z2hxajYxNG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-01-29T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-01-29T12:30:00+01:00"
+    },
+    "created": "2025-01-02T09:06:21.000Z",
+    "updated": "2025-01-02T09:06:21.107Z"
   }
 ]
