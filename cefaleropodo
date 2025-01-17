@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotógrafo Artístico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            background-color: #111;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fotógrafo Artístico</h1>
+        <p>Capturando la esencia de cada momento</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div id="inicio" class="hero">
+        <img src="https://via.placeholder.com/1200x500" alt="Fotografía destacada">
+        <div class="hero-text">Bienvenidos a mi portafolio</div>
+    </div>
+    <section id="galeria" class="section">
+        <h2>Galería</h2>
+        <p>Explora mis proyectos más recientes</p>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 1">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 2">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 3">
+            <img src="https://via.placeholder.com/400x300" alt="Foto 4">
+        </div>
+    </section>
+    <section id="sobre-mi" class="section">
+        <h2>Sobre mí</h2>
+        <p>Soy un fotógrafo apasionado por capturar emociones y contar historias a través de mis imágenes. Mi enfoque artístico busca encontrar la belleza en los detalles más pequeños.</p>
+    </section>
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+        <form>
+            <input type="text" name="nombre" placeholder="Tu nombre" required style="padding: 10px; margin: 5px; width: 100%; max-width: 400px;"><br>
+            <input type="email" name="email" placeholder="Tu correo" required style="padding: 10px; margin: 5px; width: 100%; max-width: 400px;"><br>
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required style="padding: 10px; margin: 5px; width: 100%; max-width: 400px;"></textarea><br>
+            <button type="submit" style="padding: 10px 20px; background-color: #111; color: #fff; border: none; cursor: pointer;">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Sígueme en redes sociales:</p>
+        <a href="#">Instagram</a> |
+        <a href="#">Flickr</a> |
+        <a href="#">Behance</a>
+        <p>&copy; 2025 Fotógrafo Artístico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
