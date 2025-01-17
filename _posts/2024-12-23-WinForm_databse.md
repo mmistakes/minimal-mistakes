@@ -287,3 +287,5 @@ private void Form1_Load(object sender, EventArgs e)
     studentTable.Rows.Add(new object[] { null, "마재은", 1 });
 }
 ```
+
+### 7. Test
