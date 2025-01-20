@@ -1,10 +1,10 @@
 ---
 main:
-  - title: "About"
+  - title: "Services"
     url: /year-archive/
   - title: "Testimonials"
     url: /categories/
-  - title: "Services"
+  - title: "About"
     url: /tags/
   - title: "Resourses"
     url: /page-archive/
