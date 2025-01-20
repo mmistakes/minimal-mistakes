@@ -4,15 +4,19 @@ title:  "Statistics as a Diagnostic Superpower"
 date:   2025-01-15 19:29:41 -0800
 ---
 <p>
-Remember that iconic scene when Neo opens his eyes and says to Morpheus, <em>'I know Jiu-Jitsu.'</em> 
+Remember that iconic scene when Neo opens his eyes and says to Morpheus, <em>'I know Jiu-Jitsu.'</em>? 
 By the end of this post, you’ll be able to say something similar: <em>'I know statistics'</em> 
-(or at least some of it).
+(or at least the basics of it).
+</p>
+<p>
 Do you realize how powerful and impressive it is for an engineer to understand and apply 
 statistical methods to solve problems? 
-In this post, I aim to introduce statistics in a practical and approachable way for those 
-new to it, while also refreshing the knowledge of those already familiar.
+This post aims to introduce statistics in a practical and approachable way for those 
+new to it while also refreshing the knowledge of those already familiar.
 To illustrate, I’ll use a simple and relatable example involving diagnostic systems.
 </p>
+
+<p>
 Diagnostics are crucial for monitoring devices as they ensure device health, 
 enhance data reliability, and support predictive maintenance. Additionally, 
 compliance and safety are key reasons for utilizing diagnostics, especially 
@@ -20,191 +24,238 @@ in industries such as automotive, healthcare, and aerospace. These sectors
 rely on diagnostics to meet stringent safety standards and regulations. 
 By continuously monitoring devices, diagnostics ensure they operate within 
 specified safety parameters.
-<p></p>
+</p>
+
+<h2>Temperature Diagnostics: A Practical Example</h2>
+
 <p>
-In this post, I will walk through an example of a temperature diagnostic. 
+Let’s explore an example of a temperature diagnostic. 
 Temperature diagnostics are a common yet critical aspect of device monitoring, 
 ensuring that systems operate within safe and optimal temperature ranges. 
 By examining this example, we will explore how diagnostics help maintain device 
 health, enhance data reliability, and support predictive maintenance.
 </p>
+<h3>Purpose of the Diagnostic</h3>
 <p>
-We’ll be using some basic statistical concepts, but don’t worry—I’ll explain 
-everything in a clear and accessible way so that even those without prior knowledge 
-can follow along. I won’t dive into the technical details of the statistical processes, 
-but for those interested in exploring the topic further, I highly recommend a fantastic 
-<a href="https://coursera.org/share/248ecc720118b822e6387bfb044669d8" target=”_blank”>course</a>
- on Coursera taught by Luis Serrano. This is not a sponsored recommendation; 
+This diagnostic assumes there is a well-defined "normal" operating temperature (\( \mu \)), 
+and the system is expected to function around this target value with minor fluctuations.
 </p>
 <p>
-Let’s begin with some context. When developing a system, subsystem, module, or even a single piece 
-of code, one of the key questions to ask is: Is this problem deterministic or stochastic?
-When it comes to diagnostics, the answer is often stochastic—meaning the process involves some 
-level of randomness. In such cases, we must turn to a powerful ally: Statistics.
-Consider rain as an example of a random process. Measuring each individual raindrop as it falls 
-is neither practical nor possible. We can’t predict the exact time or location where a raindrop 
-will land. However, with statistical methods, we can select random areas, measure the rate of 
-rainfall, and derive statistical parameters. These insights enable us to make informed, 
-data-driven decisions, even in the face of uncertainty.
+It is not designed for systems where the temperature varies widely but remains functional, 
+as it would flag significant deviations from \( \mu \) as abnormal.
 </p>
 
 <p>
-Statistics often deals with probability distributions. For example, imagine an area where 
-rain is falling, and you want to understand how the rain is distributed across the entire region. 
-The entire area, along with all the raindrops, is referred to as the population.
-In practice, it’s not feasible to observe every single raindrop in every location. 
-Instead, we use sampling to make estimations about the population. To ensure accurate estimations, 
-we must focus on data quality when collecting samples. This means the samples should be:
+We’ll use basic statistical concepts, but don’t worry—I’ll explain 
+everything in a clear and accessible way so that even those without prior knowledge 
+can follow along. For those interested in diving deeper, I recommend an excellent 
+<a href="https://coursera.org/share/248ecc720118b822e6387bfb044669d8" target="_blank">course</a> 
+on Coursera by Luis Serrano. (Not a sponsored recommendation.)
+</p>
+
+<h2>Deterministic or Stochastic?</h2>
+
+<p>
+When developing a system, one key question is: Is the problem deterministic or stochastic?
+In diagnostics, the answer is often stochastic, meaning the process involves some 
+randomness. Here’s an analogy: Consider rain as a random process. Measuring every raindrop 
+as it falls is impractical, but statistical methods allow us to measure rainfall in sampled areas 
+and derive useful insights, enabling data-driven decisions.
+</p>
+
+<h3>Statistics and Probability Distributions</h3>
+
+<p>
+Statistics often deal with probability distributions. For instance, imagine rainfall across a region. 
+Instead of observing every raindrop, we use sampling to estimate the population’s behavior. To ensure accuracy, 
+samples should be:
 <ol>
 <li>Representative of the population,</li>
 <li>Randomized to avoid bias, and</li>
-<li>Sufficiently large to capture meaningful patterns.</li>
+<li>Large enough to capture meaningful patterns.</li>
 </ol>
-Now, suppose the rainfall across the area follows a uniform distribution. While this could 
-theoretically be true, in practice, the distribution may be arbitrary or vary significantly. 
-If we design our system under the assumption that rainfall is always uniformly distributed, we risk 
-significant issues. Whenever the actual distribution deviates from this assumption, our system’s 
-analyses could fail, leading to inaccurate decisions.
 </p>
+
 <p>
-Here’s where the <strong>Central Limit Theorem (CLT)</strong> comes to the rescue. The CLT states that, regardless 
-of the population's distribution, the distribution of sample means will approach a <strong>Normal (Gaussian) 
-distribution</strong> as the sample size increases. This property provides us with a robust foundation for 
-using statistical tools and techniques that rely on the assumption of normality.
+If rainfall were uniformly distributed, it would simplify predictions. However, in reality, 
+distributions often vary. Assuming uniformity when the distribution deviates can lead to poor system 
+designs and inaccurate decisions.
 </p>
+
+<h3>The Central Limit Theorem (CLT)</h3>
+
 <p>
-Whenever we work on solutions to solve a problem we have to keep two thing in mind:
+The <strong>Central Limit Theorem (CLT)</strong> provides a robust foundation for statistical methods. It states 
+that regardless of a population's distribution, the sample means will approach a <strong>Normal (Gaussian) 
+distribution</strong> as the sample size increases. This allows us to use statistical tools based on normality.
+</p>
+
+<h2>Enter the Matrix: Hypothesis Testing</h2>
+
+<p>
+We will use <strong>Hypothesis Testing</strong> to analyze the temperature diagnostic problem. 
+The first step is defining the hypotheses:
+</p>
+
+<ul>
+<li>Null Hypothesis (\(H_0\)): The sample mean temperature represents the expected temperature (\(\mu = \mu_0\)).</li>
+<li>Alternative Hypothesis (\(H_1\)): The sample mean temperature deviates from the expected temperature (\(\mu \neq \mu_0\)).</li>
+</ul>
+
+<p>
+The null and alternative hypotheses are mutually exclusive. If we reject \(H_0\), we accept \(H_1\), 
+indicating the system may not be operating normally.
+</p>
+
+<h3>Formulas</h3>
+
+<p>
+Sample Mean:
+</p>
+$$
+\overline{X} = \frac{1}{n}\sum_{i=1}^n X_i
+$$
+
+<p>
+Sample Standard Deviation:
+</p>
+$$
+S = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2}
+$$
+
+<p>
+T-Statistic (if standard deviation is unknown):
+</p>
+$$
+T = \frac{\overline{X} - \mu_0}{S/\sqrt{n}}
+$$
+
+<h3>Determine the Critical Value</h3>
+
+<p>
+Define the significance level (\(\alpha\)), representing the maximum probability of rejecting \(H_0\) when it is true. 
+For a two-sided test, the critical values are:
+</p>
+$$
+\pm t_{\alpha/2, n-1}
+$$
+
+<p>
+Example: With \(\alpha = 0.05\) and \(n = 25\), find \(t_{0.025, 24}\) (approximately \(2.064\)) in a 
+<a href="https://math.fandom.com/wiki/T_table" target="_blank">T-table</a>. In other words, we defined
+the critical value to be 2.064.
+</p>
+
+<p>
+Reject \(H_0\) if:
+</p>
+$$
+T \leq -t_{\alpha/2, n-1} \quad \text{or} \quad T \geq t_{\alpha/2, n-1}.
+$$
+
+<p>
+Otherwise, fail to reject \(H_0\).
+</p>
+
+<p>
+The <strong>confidence level</strong> and the variability in the data (measured by the standard deviation \( S \)) determine the range of values that are considered "acceptable" around the mean (\( \mu_0 = 75^\circ \text{C} \)).
+This range is derived using the <strong>confidence interval</strong>, which provides a statistically-based range around \( \mu_0 \) within which the true population mean is expected to fall with a certain probability (e.g., 95%).
+</p>
+
+<h3>How the Range Is Adjusted Using the Confidence Level</h3>
+
 <ol>
-  <li>Provide a few design options</li>
-  <li>How can that be made as a tool for solving similar problems</li>
+  <li><strong>Confidence Interval Formula:</strong>
+  <p>
+  For a sample mean \( \overline{X} \), the confidence interval is:
+  </p>
+  $$
+  \overline{X} \pm t_{\alpha/2, n-1} \cdot \frac{S}{\sqrt{n}}
+  $$
+  <ul>
+    <li>\( t_{\alpha/2, n-1} \): Critical t-value based on the confidence level and degrees of freedom (\( n-1 \)).</li>
+    <li>\( S \): Sample standard deviation (variability in temperature readings).</li>
+    <li>\( n \): Sample size (number of temperature readings).</li>
+  </ul>
+  </li>
+  <li><strong>Impact of Confidence Level (\( 1 - \alpha \)):</strong>
+  <p>
+  - A <strong>higher confidence level</strong> (e.g., 99%) produces a <strong>wider range</strong> because it requires more certainty that the true mean is within the interval.<br>
+  - A <strong>lower confidence level</strong> (e.g., 90%) results in a <strong>narrower range</strong> because you are willing to accept a higher chance that the true mean falls outside the interval.
+  </p>
+  </li>
 </ol>
-To achieve the first goal, a good approach is to start as simply as possible. 
-Even a rough draft of a solution that doesn’t work perfectly can be valuable if it clearly conveys 
-the idea to you and your collaborators. This initial solution serves as a foundation, making it 
-easier for everyone to understand the approach and its objectives.
-</p>
+
+<h3>Example:</h3>
 <p>
-Since the solution is not yet fully functional, it naturally invites discussion and provides a 
-clear basis for justifying changes or enhancements. At this stage, everyone is on the same page, 
-and new design options begin to emerge. This topic is rich enough to expand into not just another 
-post but an entire series of posts.
-For the purposes of this post, I will present a functional solution and briefly touch on an 
-alternative approach to the diagnostic problem at the end.
-</p>
-<p>
-[Message added by Blog reviewer 🙄]: He seems to have forgotten to address the second goal. 
-Feel free to let him know via X or email.
+Let’s assume:
+<ul>
+  <li>\( \mu_0 = 75^\circ \text{C} \) (expected mean temperature),</li>
+  <li>\( S = 2 \) (sample standard deviation),</li>
+  <li>\( n = 25 \) (sample size),</li>
+  <li>Confidence level = 95%, so \( \alpha = 0.05 \).</li>
+</ul>
 </p>
 
-<h2>Enter the Matrix</h2>
+<ol>
+  <li>Determine the critical \( t \)-value:
+  <p>
+  For 95% confidence and \( n-1 = 24 \) degrees of freedom, \( t_{0.025, 24} \approx 2.064 \).
+  </p>
+  </li>
+  <li>Calculate the confidence interval:
+  <p>
+  $$
+  75 \pm 2.064 \cdot \frac{2}{\sqrt{25}}
+  $$
+  Simplify:
+  $$
+  75 \pm 2.064 \cdot 0.4 = 75 \pm 0.8256
+  $$
+  </p>
+  </li>
+</ol>
 
 <p>
-  We are going to solve the temperature diagnostic problem using the 
-  <strong>Hypothisis Testing</strong>. It is just a hint actually however very insightful.
+<strong>Confidence interval range:</strong>
 </p>
-<p>
-  The first step is to define a hypothesis:
-<em>"The temperature sample mean represents the expected temperature."</em>
-What we are doing here is defining a hypothesis and establishing a condition for it. 
-This is referred to as the null hypothesis, represented as 
-<span style="color: green;"><em>H<sub>0</sub></em></span>. 
-Additionally, we define the alternative hypothesis, represented as 
-<span style="color: red;"><em>H<sub>1</sub></em></span>.
-The null and alternative hypotheses are mutually exclusive. If we reject the null 
-hypothesis, <span style="color: green;"><em>H<sub>0</sub></em></span>, it means the 
-alternative hypothesis, <span style="color: red;"><em>H<sub>1</sub></em></span>, 
-is accepted. In this case, the interpretation is that the sample mean temperature has 
-changed, indicating that it no longer aligns with what we would expect under normal 
-system behavior.
-</p> 
-
-<span style="color: green;">Null</span> and <span style="color: red;">alternative hypotheses</span>:
 $$
-H_0: \mu = \mu_0
-\quad\text{vs.}\quad
-H_1: \mu \neq \mu_0.
+[74.17^\circ \text{C}, 75.83^\circ \text{C}]
 $$
 
-<p>
-  We define a mean value &mu; of a working device. The interpretation is that the hypothesis 
-  <span style="color: green;"><em>H<sub>0</sub></em></span> is accepted when the mean 
-  of the system temperature is &mu;<sub>0</sub>.
-  The <strong>sample mean x̅</strong> is an estimate of the mean &mu;<sub>0</sub>. Decisions are 
-  based on the observations that we get.
-</p>
-$$
-\overline{X} \;=\; \frac{1}{n}\sum_{i=1}^n X_i
-$$
-<p>
-Each temperature sensor read is X<sub>i</sub>. Note that <em>n</em> is the size of the sample,
-in this example, the number of temperature readings for the sample.
-</p>
+<h3>Key Takeaways:</h3>
+<ul>
+  <li>The range around \( \mu_0 \) is determined by the confidence level and variability in the data.</li>
+  <li>Adjusting the confidence level changes the width of this range:
+    <ul>
+      <li>Higher confidence = Wider range.</li>
+      <li>Lower confidence = Narrower range.</li>
+    </ul>
+  </li>
+</ul>
 
+<h2>Conclusion</h2>
 <p>
-  We are assuming for this problem that we don't have the standard deviation.
-  Let's use the formula for <strong>sample standard deviation</strong>: 
-</p>
-$$
-S \;=\; \sqrt{\frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2}
-$$
-<p>
-  We use the (two-sided) <strong>T-statistic</strong> 
-  (or z-statistic if &sigma; is known of <em>n</em> is large):
-</p>
-$$
-T \;=\; \frac{\overline{X} - \mu_0}{S/\sqrt{n}}.
-$$
-
-    <h4>Determine the Critical Value</h4>
-    <p>
-    First we need to define the significance level (<span>&alpha;</span>).
-    </p>
-    <p>
-    The significance level is a statistical threshold used to determine whether a hypothesis 
-    test's results are significant. It represents the maximum probability of rejecting the null 
-    hypothesis (H₀) when it is true, often referred to as the risk of a Type I error (false positive).
-    </p>
-    <p>
-    In simpler terms and to our temperature diagnostics example, it measures how willing we are to 
-    make a wrong decision when claiming that there is an abnormal temperature in the system. 
-    </p>
-    <p>
-    For a two-sided test at significance level <span>&alpha;</span>, the critical values for a 
-    <i>t</i>-distribution with (<i>n</i> - 1) degrees of freedom are typically denoted
-    </p>
-
-$$
-\pm\,t_{\alpha/2,\,n-1},
-$$
-<p>
-    where <span>t<sub>&alpha;/2, n-1</sub></span> is the 
-    <span>(1 - &alpha;/2)</span>-quantile of the <i>t</i>-distribution. 
+In this article, we explored the fundamentals of diagnostics and hypothesis testing through the lens 
+of temperature monitoring. By defining a target temperature (\( \mu \)) and leveraging statistical 
+tools like the confidence interval and t-statistic, we can detect abnormal behavior in systems where 
+stability is critical. This approach provides a robust method for maintaining system health and 
+reliability in environments with predictable operating conditions.
 </p>
 <p>
-    For example, if <span>&alpha; = 0.05</span> and <span>n = 25</span>, you would look up 
-    <span>t<sub>0.025, 24</sub></span> (approximately <span>2.064</span>) in a 
-    <a href="https://math.fandom.com/wiki/T_table" target=”_blank”>standard <i>t</i>-table</a>.
+However, diagnostics must be tailored to the specific needs of a system. For systems with wide 
+operating ranges, a different approach may be necessary to accommodate the inherent variability 
+in such environments. The flexibility of statistical methods ensures there is always a way to adapt 
+and develop suitable solutions.
 </p>
-
 <p>
-We then <strong>reject</strong> the null hypothesis 
-<span style="color: green;"><em>H<sub>0</sub></em></span> if 
+Looking ahead, I plan to post practical examples of diagnostics implementations using 
+<strong>C++20</strong> and <strong>Python</strong>. These examples will be available on my 
+<a href="https://github.com/gyrok42" target="_blank">GitHub</a> repository to help readers see how these 
+concepts translate into real-world code. Stay tuned for updates, and feel free to reach out with 
+questions or suggestions!
 </p>
-$$
-T \;\le\; -\,t_{\alpha/2,\,n-1}
-\quad\text{or}\quad 
-T \;\ge\; t_{\alpha/2,\,n-1}.
-$$
 <p>
-Otherwise, we <strong>fail to reject</strong> 
-<span style="color: green;"><em>H<sub>0</sub></em></span>.
+Thank you for reading, and I hope this post has brought you one step closer to saying: 
+<em>"I know statistics."</em>
 </p>
-
-Critical values for two-sided test
-$$
-\text{Reject } H_0 
-\quad \text{if} \quad
-T \leq -\,t_{\alpha/2,\,n-1}
-\quad \text{or} \quad
-T \ge t_{\alpha/2,\,n-1}.
-$$
