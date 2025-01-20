@@ -1,0 +1,210 @@
+---
+layout: single
+title:  "Statistics as a Diagnostic Superpower"
+date:   2025-01-15 19:29:41 -0800
+---
+<p>
+Remember that iconic scene when Neo opens his eyes and says to Morpheus, <em>'I know Jiu-Jitsu.'</em> 
+By the end of this post, you’ll be able to say something similar: <em>'I know statistics'</em> 
+(or at least some of it).
+Do you realize how powerful and impressive it is for an engineer to understand and apply 
+statistical methods to solve problems? 
+In this post, I aim to introduce statistics in a practical and approachable way for those 
+new to it, while also refreshing the knowledge of those already familiar.
+To illustrate, I’ll use a simple and relatable example involving diagnostic systems.
+</p>
+Diagnostics are crucial for monitoring devices as they ensure device health, 
+enhance data reliability, and support predictive maintenance. Additionally, 
+compliance and safety are key reasons for utilizing diagnostics, especially 
+in industries such as automotive, healthcare, and aerospace. These sectors 
+rely on diagnostics to meet stringent safety standards and regulations. 
+By continuously monitoring devices, diagnostics ensure they operate within 
+specified safety parameters.
+<p></p>
+<p>
+In this post, I will walk through an example of a temperature diagnostic. 
+Temperature diagnostics are a common yet critical aspect of device monitoring, 
+ensuring that systems operate within safe and optimal temperature ranges. 
+By examining this example, we will explore how diagnostics help maintain device 
+health, enhance data reliability, and support predictive maintenance.
+</p>
+<p>
+We’ll be using some basic statistical concepts, but don’t worry—I’ll explain 
+everything in a clear and accessible way so that even those without prior knowledge 
+can follow along. I won’t dive into the technical details of the statistical processes, 
+but for those interested in exploring the topic further, I highly recommend a fantastic 
+<a href="https://coursera.org/share/248ecc720118b822e6387bfb044669d8" target=”_blank”>course</a>
+ on Coursera taught by Luis Serrano. This is not a sponsored recommendation; 
+</p>
+<p>
+Let’s begin with some context. When developing a system, subsystem, module, or even a single piece 
+of code, one of the key questions to ask is: Is this problem deterministic or stochastic?
+When it comes to diagnostics, the answer is often stochastic—meaning the process involves some 
+level of randomness. In such cases, we must turn to a powerful ally: Statistics.
+Consider rain as an example of a random process. Measuring each individual raindrop as it falls 
+is neither practical nor possible. We can’t predict the exact time or location where a raindrop 
+will land. However, with statistical methods, we can select random areas, measure the rate of 
+rainfall, and derive statistical parameters. These insights enable us to make informed, 
+data-driven decisions, even in the face of uncertainty.
+</p>
+
+<p>
+Statistics often deals with probability distributions. For example, imagine an area where 
+rain is falling, and you want to understand how the rain is distributed across the entire region. 
+The entire area, along with all the raindrops, is referred to as the population.
+In practice, it’s not feasible to observe every single raindrop in every location. 
+Instead, we use sampling to make estimations about the population. To ensure accurate estimations, 
+we must focus on data quality when collecting samples. This means the samples should be:
+<ol>
+<li>Representative of the population,</li>
+<li>Randomized to avoid bias, and</li>
+<li>Sufficiently large to capture meaningful patterns.</li>
+</ol>
+Now, suppose the rainfall across the area follows a uniform distribution. While this could 
+theoretically be true, in practice, the distribution may be arbitrary or vary significantly. 
+If we design our system under the assumption that rainfall is always uniformly distributed, we risk 
+significant issues. Whenever the actual distribution deviates from this assumption, our system’s 
+analyses could fail, leading to inaccurate decisions.
+</p>
+<p>
+Here’s where the <strong>Central Limit Theorem (CLT)</strong> comes to the rescue. The CLT states that, regardless 
+of the population's distribution, the distribution of sample means will approach a <strong>Normal (Gaussian) 
+distribution</strong> as the sample size increases. This property provides us with a robust foundation for 
+using statistical tools and techniques that rely on the assumption of normality.
+</p>
+<p>
+Whenever we work on solutions to solve a problem we have to keep two thing in mind:
+<ol>
+  <li>Provide a few design options</li>
+  <li>How can that be made as a tool for solving similar problems</li>
+</ol>
+To achieve the first goal, a good approach is to start as simply as possible. 
+Even a rough draft of a solution that doesn’t work perfectly can be valuable if it clearly conveys 
+the idea to you and your collaborators. This initial solution serves as a foundation, making it 
+easier for everyone to understand the approach and its objectives.
+</p>
+<p>
+Since the solution is not yet fully functional, it naturally invites discussion and provides a 
+clear basis for justifying changes or enhancements. At this stage, everyone is on the same page, 
+and new design options begin to emerge. This topic is rich enough to expand into not just another 
+post but an entire series of posts.
+For the purposes of this post, I will present a functional solution and briefly touch on an 
+alternative approach to the diagnostic problem at the end.
+</p>
+<p>
+[Message added by Blog reviewer 🙄]: He seems to have forgotten to address the second goal. 
+Feel free to let him know via X or email.
+</p>
+
+<h2>Enter the Matrix</h2>
+
+<p>
+  We are going to solve the temperature diagnostic problem using the 
+  <strong>Hypothisis Testing</strong>. It is just a hint actually however very insightful.
+</p>
+<p>
+  The first step is to define a hypothesis:
+<em>"The temperature sample mean represents the expected temperature."</em>
+What we are doing here is defining a hypothesis and establishing a condition for it. 
+This is referred to as the null hypothesis, represented as 
+<span style="color: green;"><em>H<sub>0</sub></em></span>. 
+Additionally, we define the alternative hypothesis, represented as 
+<span style="color: red;"><em>H<sub>1</sub></em></span>.
+The null and alternative hypotheses are mutually exclusive. If we reject the null 
+hypothesis, <span style="color: green;"><em>H<sub>0</sub></em></span>, it means the 
+alternative hypothesis, <span style="color: red;"><em>H<sub>1</sub></em></span>, 
+is accepted. In this case, the interpretation is that the sample mean temperature has 
+changed, indicating that it no longer aligns with what we would expect under normal 
+system behavior.
+</p> 
+
+<span style="color: green;">Null</span> and <span style="color: red;">alternative hypotheses</span>:
+$$
+H_0: \mu = \mu_0
+\quad\text{vs.}\quad
+H_1: \mu \neq \mu_0.
+$$
+
+<p>
+  We define a mean value &mu; of a working device. The interpretation is that the hypothesis 
+  <span style="color: green;"><em>H<sub>0</sub></em></span> is accepted when the mean 
+  of the system temperature is &mu;<sub>0</sub>.
+  The <strong>sample mean x̅</strong> is an estimate of the mean &mu;<sub>0</sub>. Decisions are 
+  based on the observations that we get.
+</p>
+$$
+\overline{X} \;=\; \frac{1}{n}\sum_{i=1}^n X_i
+$$
+<p>
+Each temperature sensor read is X<sub>i</sub>. Note that <em>n</em> is the size of the sample,
+in this example, the number of temperature readings for the sample.
+</p>
+
+<p>
+  We are assuming for this problem that we don't have the standard deviation.
+  Let's use the formula for <strong>sample standard deviation</strong>: 
+</p>
+$$
+S \;=\; \sqrt{\frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2}
+$$
+<p>
+  We use the (two-sided) <strong>T-statistic</strong> 
+  (or z-statistic if &sigma; is known of <em>n</em> is large):
+</p>
+$$
+T \;=\; \frac{\overline{X} - \mu_0}{S/\sqrt{n}}.
+$$
+
+    <h4>Determine the Critical Value</h4>
+    <p>
+    First we need to define the significance level (<span>&alpha;</span>).
+    </p>
+    <p>
+    The significance level is a statistical threshold used to determine whether a hypothesis 
+    test's results are significant. It represents the maximum probability of rejecting the null 
+    hypothesis (H₀) when it is true, often referred to as the risk of a Type I error (false positive).
+    </p>
+    <p>
+    In simpler terms and to our temperature diagnostics example, it measures how willing we are to 
+    make a wrong decision when claiming that there is an abnormal temperature in the system. 
+    </p>
+    <p>
+    For a two-sided test at significance level <span>&alpha;</span>, the critical values for a 
+    <i>t</i>-distribution with (<i>n</i> - 1) degrees of freedom are typically denoted
+    </p>
+
+$$
+\pm\,t_{\alpha/2,\,n-1},
+$$
+<p>
+    where <span>t<sub>&alpha;/2, n-1</sub></span> is the 
+    <span>(1 - &alpha;/2)</span>-quantile of the <i>t</i>-distribution. 
+</p>
+<p>
+    For example, if <span>&alpha; = 0.05</span> and <span>n = 25</span>, you would look up 
+    <span>t<sub>0.025, 24</sub></span> (approximately <span>2.064</span>) in a 
+    <a href="https://math.fandom.com/wiki/T_table" target=”_blank”>standard <i>t</i>-table</a>.
+</p>
+
+<p>
+We then <strong>reject</strong> the null hypothesis 
+<span style="color: green;"><em>H<sub>0</sub></em></span> if 
+</p>
+$$
+T \;\le\; -\,t_{\alpha/2,\,n-1}
+\quad\text{or}\quad 
+T \;\ge\; t_{\alpha/2,\,n-1}.
+$$
+<p>
+Otherwise, we <strong>fail to reject</strong> 
+<span style="color: green;"><em>H<sub>0</sub></em></span>.
+</p>
+
+Critical values for two-sided test
+$$
+\text{Reject } H_0 
+\quad \text{if} \quad
+T \leq -\,t_{\alpha/2,\,n-1}
+\quad \text{or} \quad
+T \ge t_{\alpha/2,\,n-1}.
+$$

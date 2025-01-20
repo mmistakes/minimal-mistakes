@@ -118,7 +118,7 @@ author:
   bio              : "**Science** and **Technology**"
   location         : "Bay Area - California"
   email            : "gyrok42@gmail.com"
-  links:
+  links: # See icons on https://fontawesome.com/v4/icons/
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:gyrok42@gmail.com"
