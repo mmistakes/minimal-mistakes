@@ -1,16 +1,13 @@
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "Posts"
+  - title: "Window Cleaner Know How"
+    url: /windowcleanerknowhow.com
+  - title: "About"
     url: /year-archive/
-  - title: "Categories"
+  - title: "Testimonials"
     url: /categories/
-  - title: "Tags"
+  - title: "Services"
     url: /tags/
-  - title: "Pages"
+  - title: "Rescourses"
     url: /page-archive/
-  - title: "Collections"
+  - title: "Blog"
     url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
-    target: _blank
