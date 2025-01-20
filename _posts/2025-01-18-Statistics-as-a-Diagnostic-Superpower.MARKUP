@@ -29,16 +29,18 @@ specified safety parameters.
 <h2>Temperature Diagnostics: A Practical Example</h2>
 
 <p>
-Let’s explore an example of a temperature diagnostic. 
-Temperature diagnostics are a common yet critical aspect of device monitoring, 
-ensuring that systems operate within safe and optimal temperature ranges. 
-By examining this example, we will explore how diagnostics help maintain device 
-health, enhance data reliability, and support predictive maintenance.
+Let’s explore an example of a temperature diagnostic in an industrial oven used for electronics curing. 
+Temperature diagnostics are essential in ensuring that components like printed circuit boards (PCBs) are 
+cured at precise temperatures to maintain mechanical strength and electrical conductivity. 
+By examining this example, we will see how diagnostics help ensure product quality, prevent defects, 
+and maintain reliable manufacturing processes.
 </p>
+
 <h3>Purpose of the Diagnostic</h3>
 <p>
 This diagnostic assumes there is a well-defined "normal" operating temperature (\( \mu \)), 
 and the system is expected to function around this target value with minor fluctuations.
+
 </p>
 <p>
 It is not designed for systems where the temperature varies widely but remains functional, 
