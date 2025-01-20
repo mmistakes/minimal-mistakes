@@ -57,18 +57,32 @@
   font-size: $type-size-8;
 }
 
-.iframe-container {
+.masthead__inner-wrap {
+  @include clearfix;
+  margin-inline: auto;
+  padding: 1em;
+  max-width: 100%;
   display: flex;
-  align-items: center; // Align items vertically in the center
-  justify-content: space-between; // Ensure space between iframe and button
-}
+  justify-content: space-between;
+  align-items: center;
+  font-family: $sans-serif-narrow;
 
-.iframe-content {
-  flex-grow: 1; // Allow iframe to take up remaining space
-}
+  @include breakpoint($x-large) {
+    max-width: $max-width;
+  }
 
-.btn--large {
-  font-size: $type-size-5; // Ensure this matches your large button size
+  nav {
+    z-index: 10;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn--large {
+    margin-left: auto; // Pushes the button to the right
+    font-size: $type-size-5; // Ensure this matches your large button size
+  }
 }
 
 .masthead__menu {
