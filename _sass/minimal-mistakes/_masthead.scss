@@ -57,10 +57,14 @@
   font-size: $type-size-8;
 }
 
-.flex-container {
+.iframe-container {
   display: flex;
-  justify-content: flex-end; // Aligns the button to the right
-  padding: 1em; // Optional padding for the container
+  align-items: center; // Align items vertically in the center
+  justify-content: space-between; // Ensure space between iframe and button
+}
+
+.iframe-content {
+  flex-grow: 1; // Allow iframe to take up remaining space
 }
 
 .btn--large {
