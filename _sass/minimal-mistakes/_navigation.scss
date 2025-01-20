@@ -163,6 +163,35 @@
   border-top: 1px solid $border-color;
 }
 
+// Add the necessary CSS for the button
+.masthead {
+  position: relative; // Ensure the masthead is positioned relative for absolute positioning of the button
+  // ...existing styles...
+}
+
+.masthead__inner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Ensure the content is spaced between
+  // ...existing styles...
+}
+
+.custom-button {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
 /*
      Navigation list
      ========================================================================== */
