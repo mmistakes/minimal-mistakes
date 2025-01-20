@@ -87,6 +87,16 @@ $(document).ready(function () {
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
   ).has("> img").addClass("image-popup");
 
+// Toggle navigation menu
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.querySelector('.greedy-nav__toggle');
+  const hiddenLinks = document.querySelector('.hidden-links');
+
+  toggleButton.addEventListener('click', function() {
+    hiddenLinks.classList.toggle('show');
+  });
+});
+
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
     // disableOn: function() {

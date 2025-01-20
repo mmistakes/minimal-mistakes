@@ -81,6 +81,14 @@
   .visible-links {
     display: none;
   }
+  
+  .hidden-links {
+    display: none;
+  }
+
+  .hidden-links.show {
+    display: block;
+  }
 }
 
 .masthead__menu-item {
