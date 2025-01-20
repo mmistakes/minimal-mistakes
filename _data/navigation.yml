@@ -1,14 +1,12 @@
 ---
 main:
-  - title: "Window Cleaner Know How"
-    url: /windowcleanerknowhow.com
   - title: "About"
     url: /year-archive/
   - title: "Testimonials"
     url: /categories/
   - title: "Services"
     url: /tags/
-  - title: "Rescourses"
+  - title: "Resourses"
     url: /page-archive/
   - title: "Blog"
     url: /collection-archive/
