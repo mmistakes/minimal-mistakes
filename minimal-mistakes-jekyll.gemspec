@@ -1,6 +1,11 @@
 require "json"
 
-package_json = JSON.parse(File.read("package.json"))
+# 안전하게 package.json 읽기
+if File.exist?("package.json")
+  package_json = JSON.parse(File.read("package.json"))
+else
+  package_json = { "version" => "1.0.0" }
+end
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-mistakes-jekyll"
@@ -13,7 +18,8 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files                   = `git ls-files -z`.split("\x0").select do |f|
+  # Git 명령 없이 파일 설정
+  spec.files = Dir.glob("**/*").select do |f|
     f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
 
@@ -25,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", ">= 12.3.3"
+  spec.add_development_dependency "rake", ">= 13.2.1"
 end
