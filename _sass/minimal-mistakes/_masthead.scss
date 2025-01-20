@@ -57,6 +57,16 @@
   font-size: $type-size-8;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: flex-end; // Aligns the button to the right
+  padding: 1em; // Optional padding for the container
+}
+
+.btn--large {
+  font-size: $type-size-5; // Ensure this matches your large button size
+}
+
 .masthead__menu {
   float: inline-start;
   margin-inline: 0;
