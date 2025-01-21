@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[study] prepend 함수 공부하기 (append, before, after)"
+title:  "[study] [javaScript] prepend함수 공부하기 (append, before, after)"
 categories: study
 tags: [javaScript, blog, study] 
 toc : true
