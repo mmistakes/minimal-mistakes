@@ -5,8 +5,7 @@ date:   2025-01-15 19:29:41 -0800
 ---
 <p>
 Remember that iconic scene when Neo opens his eyes and says to Morpheus, <em>'I know Kung Fu.'</em>? 
-By the end of this post, you’ll be able to say something similar: <em>'I know statistics'</em> 
-(or at least the basics of it).
+By the end of this post, you’ll be able to say something similar: <em>'I know statistics'</em>.
 </p>
 <p>
 Do you realize how powerful and impressive it is for an engineer to understand and apply 
@@ -143,7 +142,7 @@ $$
 $$
 
 <p>
-Example: With \(\alpha = 0.05\) and \(n = 25\), find \(t_{0.025, 24}\) (approximately \(2.064\)) in a 
+Example: With \(\alpha = 0.05\) and \(n = 25\), find \(t_{0.025, 24}\) (approximately \(2.064\)) in the 
 <a href="https://math.fandom.com/wiki/T_table" target="_blank">T-table</a>. In other words, we defined
 the critical value to be 2.064.
 </p>
@@ -158,10 +157,19 @@ $$
 <p>
 Otherwise, fail to reject \(H_0\).
 </p>
-
 <p>
-The <strong>confidence level</strong> and the variability in the data (measured by the standard deviation \( S \)) determine the range of values that are considered "acceptable" around the mean (\( \mu_0 = 75^\circ \text{C} \)).
-This range is derived using the <strong>confidence interval</strong>, which provides a statistically-based range around \( \mu_0 \) within which the true population mean is expected to fall with a certain probability (e.g., 95%).
+  The <strong>confidence level</strong> and the variability in the data 
+  (measured by the standard deviation \( S \)) determine the range of values that are considered 
+  "acceptable" around the mean (\( \mu_0 = 75^\circ \text{C} \)).
+  This range is derived using the <strong>confidence interval</strong>, 
+  which provides a statistically-based range around \( \mu_0 \) within which the true population mean 
+  is expected to fall with a certain probability (e.g., 95%).
+</p>
+<p>
+  The <strong>significance level</strong> (&alpha;) represents the maximum probability of committing a 
+  <strong>Type I error</strong>, which occurs when the null hypothesis \(H_0\) is incorrectly rejected. 
+  In this context, <em>type I error</em> means concluding that the temperature is not good when, 
+  in fact, it is within acceptable limits.
 </p>
 
 <h3>How the Range Is Adjusted Using the Confidence Level</h3>
@@ -236,6 +244,13 @@ $$
   </li>
 </ul>
 
+<h2>Interpretation</h2>
+  <p>
+  If the null hypothesis (\(H_0:\) temperature is good) is not rejected, it means the data does not 
+  provide strong enough evidence to conclude that the average temperature deviates significantly from 
+  the expected value (75). It does not prove \(H_0\) is true, but rather that the observed 
+  data is consistent with it under the chosen significance level (&alpha;).
+  </p>
 <h2>Conclusion</h2>
 <p>
 In this article, we explored the fundamentals of diagnostics and hypothesis testing through the lens 
