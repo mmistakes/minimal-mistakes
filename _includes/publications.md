@@ -58,7 +58,7 @@
       <a href="https://huggingface.co/spaces/allenai/reward-bench" class="publication-title">RewardBench: A Benchmark for Evaluating Reward Models</a>
       <div class="authors">Nathan Lambert, Valentina Piyatkin, <strong>Jacob Morrison</strong>, LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Tom Zick, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi</div>
       <div class="venue">
-        <em>arXiv</em>
+        <em>Findings of NAACL 2025</em>
         <a href="https://arxiv.org/pdf/2403.13787">paper</a>
         <a href="https://github.com/allenai/reward-bench/">code</a>
         <a href="https://huggingface.co/spaces/allenai/reward-bench">leaderboard</a>
