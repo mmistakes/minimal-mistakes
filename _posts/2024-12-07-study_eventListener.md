@@ -131,7 +131,7 @@ obj.onclick = function(e){ // 매개변수 e에 이벤트 객체를 전달 받�
         - currentTarget : 현재 이벤트 리스너를 실행하고 있는 DOM 객체
         - defaultPrevented : 이벤트의 디폴트 행동이 취소되었는지를  나타내는 True/False 값
     - 메소드
-        - preventDefault() : 이벤트의 디폴트 행동을 취소시키는 메소드
+        - preventDefault() : 이벤트의 디폴트 행동(새로고침)을 취소시키는 메소드
 
 ### 이벤트 흐름
 1. 이벤트 발생
