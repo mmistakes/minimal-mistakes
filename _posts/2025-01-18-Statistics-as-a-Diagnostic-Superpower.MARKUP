@@ -125,7 +125,12 @@ S = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2}
 $$
 
 <p>
-T-Statistic (if standard deviation is unknown):
+A <strong>test statistic</strong> is a numerical value calculated from sample data during a hypothesis test. 
+It measures how much the observed data differs from what is expected under the null hypothesis \(H_0\). 
+The test statistic is then compared to a critical value or used to calculate a p-value to decide whether 
+to reject \(H_0\). In this example we are assuming we do not have the 
+<strong>Standard Deviation (&sigma;)</strong> so we are going to calculate the <strong>sample standard 
+deviation (S) </strong> and use the T-Statistic (instead of Z-Statistic).
 </p>
 $$
 T = \frac{\overline{X} - \mu_0}{S/\sqrt{n}}
@@ -157,44 +162,6 @@ $$
 <p>
 Otherwise, fail to reject \(H_0\).
 </p>
-<p>
-  The <strong>confidence level</strong> and the variability in the data 
-  (measured by the standard deviation \( S \)) determine the range of values that are considered 
-  "acceptable" around the mean (\( \mu_0 = 75^\circ \text{C} \)).
-  This range is derived using the <strong>confidence interval</strong>, 
-  which provides a statistically-based range around \( \mu_0 \) within which the true population mean 
-  is expected to fall with a certain probability (e.g., 95%).
-</p>
-<p>
-  The <strong>significance level</strong> (&alpha;) represents the maximum probability of committing a 
-  <strong>Type I error</strong>, which occurs when the null hypothesis \(H_0\) is incorrectly rejected. 
-  In this context, <em>type I error</em> means concluding that the temperature is not good when, 
-  in fact, it is within acceptable limits.
-</p>
-
-<h3>How the Range Is Adjusted Using the Confidence Level</h3>
-
-<ol>
-  <li><strong>Confidence Interval Formula:</strong>
-  <p>
-  For a sample mean \( \overline{X} \), the confidence interval is:
-  </p>
-  $$
-  \overline{X} \pm t_{\alpha/2, n-1} \cdot \frac{S}{\sqrt{n}}
-  $$
-  <ul>
-    <li>\( t_{\alpha/2, n-1} \): Critical t-value based on the confidence level and degrees of freedom (\( n-1 \)).</li>
-    <li>\( S \): Sample standard deviation (variability in temperature readings).</li>
-    <li>\( n \): Sample size (number of temperature readings).</li>
-  </ul>
-  </li>
-  <li><strong>Impact of Confidence Level (\( 1 - \alpha \)):</strong>
-  <p>
-  - A <strong>higher confidence level</strong> (e.g., 99%) produces a <strong>wider range</strong> because it requires more certainty that the true mean is within the interval.<br>
-  - A <strong>lower confidence level</strong> (e.g., 90%) results in a <strong>narrower range</strong> because you are willing to accept a higher chance that the true mean falls outside the interval.
-  </p>
-  </li>
-</ol>
 
 <h3>Example:</h3>
 <p>
@@ -203,18 +170,48 @@ Let’s assume:
   <li>\( \mu_0 = 75^\circ \text{C} \) (expected mean temperature),</li>
   <li>\( S = 2 \) (sample standard deviation),</li>
   <li>\( n = 25 \) (sample size),</li>
-  <li>Confidence level = 95%, so \( \alpha = 0.05 \).</li>
 </ul>
 </p>
 
 <ol>
+  <li>Determine the Confidence level:
+    <p>Confidence level = 95%</p>
+    <p>Significance level \( \alpha = (1 - 0.95) = 0.05 \).</p>
+  </li>
+  <li>Calculate the test statistic:
+  $$
+  T = \frac{\overline{X} - \mu_0}{S/\sqrt{n}}
+  $$
+  $$
+  T = \frac{74.92 - 75}{2/\sqrt{25}} = -0.2
+  $$
+  </li>
   <li>Determine the critical \( t \)-value:
   <p>
-  For 95% confidence and \( n-1 = 24 \) degrees of freedom, \( t_{0.025, 24} \approx 2.064 \).
+  From the <a href="https://math.fandom.com/wiki/T_table" target="_blank">T-table</a> 
+  for \( \alpha/2 = 0.025 \) and \( n-1 = 24 \) degrees of freedom, \( t_{0.025, 24} \approx 2.064 \).
   </p>
   </li>
-  <li>Calculate the confidence interval:
+  <li>Perform the two-tailed test:
   <p>
+  Reject \(H_0\) if:
+  </p>
+  $$
+  T \leq -t_{\alpha/2, n-1} \quad \text{or} \quad T \geq t_{\alpha/2, n-1}.
+  $$
+  $$
+  abs(-0.2) \geq 2.064.
+  $$
+
+  <p>
+  <strong>Result:</strong> Failed to reject \(H_0\).
+  </p>
+  </li>
+  <li>Calculate the confidence interval (optional for logging):
+  <p>
+  $$
+  \text{Confidence Interval} = \bar{X} \pm t_{\alpha/2, n-1} \cdot \frac{s}{\sqrt{n}}
+  $$
   $$
   75 \pm 2.064 \cdot \frac{2}{\sqrt{25}}
   $$
@@ -232,17 +229,6 @@ Let’s assume:
 $$
 [74.17^\circ \text{C}, 75.83^\circ \text{C}]
 $$
-
-<h3>Key Takeaways:</h3>
-<ul>
-  <li>The range around \( \mu_0 \) is determined by the confidence level and variability in the data.</li>
-  <li>Adjusting the confidence level changes the width of this range:
-    <ul>
-      <li>Higher confidence = Wider range.</li>
-      <li>Lower confidence = Narrower range.</li>
-    </ul>
-  </li>
-</ul>
 
 <h2>Interpretation</h2>
   <p>
