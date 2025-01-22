@@ -24,14 +24,14 @@
     <li class="publication-item">
       <span class="publication-title">Holistically Evaluating the Environmental Impact of Creating Language Models</span>
       <div class="authors"><strong>Jacob Morrison</strong>, Clara Na, Jared Fernandez, Tim Dettmers, Emma Strubell, Jesse Dodge</div>
-      <div class="venue"><em>under review</em></div>
+      <div class="venue"><em>ICLR 2025</em></div>
     </li>
 
     <li class="publication-item">
       <a href="https://arxiv.org/abs/2409.02060" class="publication-title">OLMoE: Open Mixture-of-Experts Language Models</a>
       <div class="authors">Niklas Muennighoff, Luca Soldaini, Dirk Groeneveld, Kyle Lo, <strong>Jacob Morrison</strong>, Sewon Min, Weijia Shi, Pete Walsh, Oyvind Tafjord, Nathan Lambert, Yuling Gu, Shane Arora, Akshita Bhagia, Dustin Schwenk, David Wadden, Alexander Wettig, Binyuan Hui, Tim Dettmers, Douwe Kiela, Ali Farhadi, Noah A. Smith, Pang Wei Koh, Amanpreet Singh, Hannaneh Hajishirzi</div>
       <div class="venue">
-        <em>under review</em>
+        <em>ICLR 2025, NeurIPS 2024 Workshop on Efficient Natural Language and Speech Processing (spotlight)</em>
         <a href="https://arxiv.org/pdf/2409.02060">paper</a>
       </div>
     </li>
