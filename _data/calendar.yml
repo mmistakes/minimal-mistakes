@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6c - Ausflug zur Grünen Woche",
-    "title": "6c - Ausflug zur Grünen Woche",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXBuajFpaDc1OGt1ZGpnZnQzc2M0ajdxZTYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-01-23T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-01-23T13:30:00+01:00"
-    },
-    "created": "2025-01-02T09:05:34.000Z",
-    "updated": "2025-01-02T09:05:34.517Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug Bibliothek",
     "title": "A5 - Ausflug Bibliothek",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-01-21T14:04:36.000Z",
     "updated": "2025-01-21T14:04:36.027Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei ",
+    "title": "A5 - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MG9udGZuNnQ4a2Rqb2dob3JicWRwYzNhZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-07T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-07T11:30:00+01:00"
+    },
+    "created": "2024-12-13T11:11:28.000Z",
+    "updated": "2024-12-13T11:11:28.795Z"
   }
 ]
