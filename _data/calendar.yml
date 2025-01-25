@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5 - Ausflug Bibliothek",
-    "title": "A5 - Ausflug Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mm03MXF1bGUxdDVzcjNlZGhkZzVqZjJqMXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-01-24T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-01-24T11:30:00+01:00"
-    },
-    "created": "2025-01-20T11:14:10.000Z",
-    "updated": "2025-01-20T11:14:10.452Z"
-  },
-  {
-    "image_path": null,
     "alt": "5b - Ausflug zur Gartenarbeitsschule",
     "title": "5b - Ausflug zur Gartenarbeitsschule",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2024-12-13T11:11:28.000Z",
     "updated": "2024-12-13T11:11:28.795Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Studientag Schule geschlossen",
+    "title": "Studientag Schule geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=am4xNHRnczIyYWtvMGswdDloY3U5dHNtMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-03-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-04-01",
+      "date_time": null
+    },
+    "created": "2025-01-14T09:24:43.000Z",
+    "updated": "2025-01-14T09:24:43.886Z"
   }
 ]
