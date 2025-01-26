@@ -69,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "Schulfasching",
+    "title": "Schulfasching",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=aG9jaXE1NXEzZW44MjVvdDc4YzFtNGR2MzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-03-04",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-03-05",
+      "date_time": null
+    },
+    "created": "2025-01-25T17:55:00.000Z",
+    "updated": "2025-01-25T17:55:00.852Z"
+  },
+  {
+    "image_path": null,
     "alt": "A5 - Ausflug in die Bücherei ",
     "title": "A5 - Ausflug in die Bücherei ",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2024-12-13T11:11:28.000Z",
     "updated": "2024-12-13T11:11:28.795Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Studientag Schule geschlossen",
-    "title": "Studientag Schule geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=am4xNHRnczIyYWtvMGswdDloY3U5dHNtMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2025-03-31",
-      "date_time": null
-    },
-    "end": {
-      "date": "2025-04-01",
-      "date_time": null
-    },
-    "created": "2025-01-14T09:24:43.000Z",
-    "updated": "2025-01-14T09:24:43.886Z"
   }
 ]
