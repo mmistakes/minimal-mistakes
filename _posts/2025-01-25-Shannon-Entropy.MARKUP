@@ -3,7 +3,6 @@ layout: single
 title:  "Shannon Entropy"
 date:   2025-01-25 9:31::00 -0800
 ---
-<img src="/assets/images/dall-e-shannon-entropy.webp" alt="Entropy vs. Probability Distribution" style="width:70%;margin:10px 0;">
 <p>
     Welcome! In this post, we’ll explore the concept of Shannon Entropy, a fundamental measure of information in probability theory and information science. 
     To ensure everyone can follow along, I’ve included a quick review of probability and probability distributions.
@@ -29,11 +28,10 @@ that represents the result of flipping a <span style="color: red;">biased</span>
   <li>TAILS</li>
 </ul>
 </p>
-If the probability of observing the outcome 
-$$X = \text{HEADS} $$ is 70% $$ P(X = \text{HEADS}) = 0.7, $$ 
-the probability of observing the outcome $$X = \text{TAILS} $$ is 30%.<br>
+If the probability of observing the outcome HEADS is 70%
+$$ P(X = \text{HEADS}) = 0.7, $$ 
+then the probability of observing the outcome TAILS is 30%.<br>
 </p>
-\[ P(X = \text{TAILS}) = 1 - P(X = \text{HEADS}) \]
 \[ P(X = \text{TAILS}) = 1 - 0.7 = 0.3 \] 
 <p>
 Which is the rule that all probabilities must sum to 1 (100%). 
