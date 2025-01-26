@@ -1,0 +1,200 @@
+---
+layout: single
+title:  "Shannon Entropy"
+date:   2025-01-25 9:31::00 -0800
+---
+<p>
+    Welcome! In this post, we’ll explore the concept of Shannon Entropy, a fundamental measure of information in probability theory and information science. 
+    To ensure everyone can follow along, I’ve included a quick review of probability and probability distributions.
+</p>
+<p>
+    However, if you’re already familiar with these concepts, feel free to skip directly to the section on 
+    <a href="#shannon-entropy">Shannon Entropy</a>.
+</p>
+
+<h2>Probability and Random Variables</h2> 
+<p> A random variable \( X \) is a variable 
+that can assume a set of possible states or outcomes. 
+Each of these states has an associated probability, 
+which quantifies the likelihood of the random variable taking on that state. 
+</p> 
+
+<p> 
+For example, consider a random variable \( X \) 
+that represents the result of flipping a <span style="color: red;">biased</span>
+ coin, which can take two states: 
+<ul>
+  <li>HEADS</li>
+  <li>TAILS</li>
+</ul>
+</p>
+If the probability of observing the outcome 
+$$X = \text{HEADS} $$ is 70% $$ P(X = \text{HEADS}) = 0.7, $$ 
+the probability of observing the outcome $$X = \text{TAILS} $$ is 30%.<br>
+</p>
+\[ P(X = \text{TAILS}) = 1 - P(X = \text{HEADS}) \]
+\[ P(X = \text{TAILS}) = 1 - 0.7 = 0.3 \] 
+<p>
+Which is the rule that all probabilities must sum to 1 (100%). 
+In other words, the probabilities of all possible states must satisfy the following condition: 
+</p> 
+
+$$ 
+\sum_{i} P(X = x_i) = 1
+$$
+
+<p> This brings us to the concept of a <strong>probability distribution</strong>, 
+which describes how the total probability of 1 is distributed among the possible 
+states of a random variable. </p>
+
+<h2>Probability Distribution</h2>
+<p>
+    A <strong>probability distribution</strong> is a function that maps outcomes to their corresponding probabilities.
+    It describes how uncertainty is distributed among individual states in a system and characterizes the system as a whole.
+</p>
+<h3>Key Points:</h3>
+<ul>
+    <li><strong>Total Probability:</strong> The total probability of all outcomes must equal 1. Therefore, the probability of one state cannot be changed independently of the others.</li>
+    <li><strong>System Characterization:</strong> The probability distribution provides a complete description of the system, defining the uncertainty and likelihood of different states.</li>
+</ul>
+<h3>Examples of Probability Distributions:</h3>
+<ol>
+    <li>
+        <strong>Fair Dice (Discrete Random Variable):</strong>
+        <ul>
+            <li>A discrete random variable consists of distinct states, such as the outcomes of rolling a fair die: {1, 2, 3, 4, 5, 6}.</li>
+            <li>The probabilities of all states must sum to 1:
+                <br>
+                \( P(1) + P(2) + P(3) + P(4) + P(5) + P(6) = 1 \)
+            </li>
+            <li>Below is a bar chart representation of the discrete probability distribution:</li>
+            <img src="/assets/images/discrete-distribution-6-side-dice.png" alt="Discrete Probability Distribution" style="width:70%;margin:10px 0;">
+        </ul>
+    </li>
+    <li>
+        <strong>Height of Adults (Continuous Random Variable):</strong>
+        <ul>
+            <li>A continuous random variable represents measurements that can take on any value within a range, such as the height of adults.</li>
+            <li>The total probability is represented by the area under the curve of the probability density function (PDF), which must equal 1:
+                $$
+                 \int_{-\infty}^{\infty} f(x) \, dx = 1
+                 $$
+            </li>
+            <li>Below is a graph representation of the continuous probability distribution (normal distribution):</li>
+            <img src="/assets/images/continuous-normal-distribution.png" alt="Continuous Probability Distribution" style="width:70%;margin:10px 0;">
+        </ul>
+    </li>
+    <li>
+            <strong>Sum of Two Dice Rolls (Discrete Normal Distribution):</strong>
+            <ul>
+                <li>This represents the sum of outcomes when rolling two six-sided dice 10,000 times. The resulting probabilities approximate a discrete normal distribution due to the central limit theorem.</li>
+                <li>Below is the graph of the simulated discrete normal distribution:</li>
+                <img src="/assets/images/two-dice-sum-normal-distribution.png" alt="Sum of Two Dice Rolls (Discrete Normal Distribution)" style="width:70%;margin:10px 0;">
+            </ul>
+        </li>
+</ol>
+
+<h1 id="shannon-entropy">Shannon Entropy</h1>
+
+<p>Shannon entropy, introduced by Claude Shannon, quantifies the <strong>uncertainty</strong> or <strong>randomness</strong> in a data source. It is a fundamental concept in information theory and measures the average amount of information contained in a random variable.</p>
+
+<h2>Formula for Shannon Entropy</h2>
+<p>For a discrete random variable <i>X</i> with <i>n</i> possible outcomes \( \{x_1, x_2, \dots, x_n\} \), each having a probability \( P(x_i) \), the Shannon entropy \( H(X) \) is defined as:</p>
+
+<p>\[
+H(X) = -\sum_{i=1}^n P(x_i) \log_b P(x_i)
+\]</p>
+
+<ul>
+    <li>\( P(x_i) \): Probability of the outcome \( x_i \).</li>
+    <li>\( \log_b \): Logarithm with base \( b \) (usually base 2, giving entropy in bits).</li>
+    <li>Negative sign ensures that entropy is non-negative since \( P(x_i) \) is between 0 and 1.</li>
+</ul>
+
+<h2>Key Intuitions</h2>
+
+<h3>1. Higher Entropy → More Uncertainty</h3>
+<p>If all outcomes are equally likely, entropy is maximized because we gain the most information by observing the outcome.</p>
+
+<h3>2. Lower Entropy → Less Uncertainty</h3>
+<p>If one outcome is highly likely, entropy is lower because the result is more predictable, so less information is gained.</p>
+
+<h3>3. Zero Entropy</h3>
+<p>When the outcome is completely certain (\( P(x_i) = 1 \) for one outcome and 0 for all others), entropy is zero because there is no uncertainty.</p>
+
+<h2>Why Logarithms?</h2>
+<h3>a) Logarithms Measure Information Content</h3>
+<p>The information content \( I(x_i) \) of an outcome \( x_i \) is inversely related to its probability \( P(x_i) \):</p>
+
+<p>\[
+I(x_i) = -\log_b P(x_i)
+\]</p>
+
+<p>The less likely an event, the more surprising and informative it is.</p>
+
+<h3>b) Logarithms Are Additive</h3>
+<p>The property \( \log_b(xy) = \log_b(x) + \log_b(y) \) makes logarithms suitable for combining uncertainties of independent events.</p>
+
+<h3>c) Logarithmic Growth Matches Diminishing Returns</h3>
+<p>The logarithmic scale reflects diminishing returns in information gain: observing a rare event adds much more information than observing a common one.</p>
+
+<h2>Why the Negative Sign?</h2>
+<p>Probabilities \( P(x_i) \) are between 0 and 1, so \( \log_b(P(x_i)) \) is negative. The negative sign ensures entropy is positive.</p>
+
+<h2>Examples</h2>
+
+<h3>1. Fair Coin Flip</h3>
+<p>\[
+H(X) = - (0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \text{ bit}
+\]</p>
+
+<h3>2. Biased Coin Flip (90% Heads, 10% Tails)</h3>
+<p>\[
+H(X) = - (0.9 \log_2 0.9 + 0.1 \log_2 0.1) \approx 0.469 \text{ bits}
+\]</p>
+
+<h3>3. Uniform Distribution Over 4 Outcomes</h3>
+<p>If \( P(x_i) = 0.25 \):</p>
+<p>\[
+H(X) = - (4 \cdot 0.25 \log_2 0.25) = 2 \text{ bits}
+\]</p>
+<h2>Explanation of Entropy Differences</h2>
+
+<h3>1. Fair Coin Flip (\(H(X) = 1 \text{ bit}\))</h3>
+<p>In a <strong>fair coin flip</strong>, there is equal probability (\(P(\text{Heads}) = 0.5\)) of landing heads or tails.</p>
+<p>Since both outcomes are equally likely, there is <strong>maximum uncertainty</strong>; we can't predict the outcome better than pure chance.</p>
+<p><strong>Entropy is highest</strong> because there is no bias or preference in the distribution. Each flip carries 1 bit of information.</p>
+
+<h3>2. Biased Coin Flip (\(H(X) \approx 0.469 \text{ bits}\))</h3>
+<p>In this case, one outcome (Heads) is much more likely (\(P(\text{Heads}) = 0.9\)) than the other (\(P(\text{Tails}) = 0.1\)).</p>
+<p>The <strong>bias reduces uncertainty</strong> because the outcome is more predictable. We can reasonably guess "Heads" most of the time with confidence.</p>
+<p><strong>Entropy is lower</strong> compared to the fair coin flip because the distribution is uneven,  <span style="color: red;">making the system less random</span>.</p>
+
+<h5>3. Uniform Distribution Over 4 Outcomes (\(H(X) = 2 \text{ bits}\))</h5>
+<p>Here, there are four outcomes, each with an equal probability (\(P(x_i) = 0.25\)).</p>
+<p>The <strong>uncertainty is higher</strong> than in the coin flip examples because there are more possible outcomes. Predicting any one outcome is more difficult since each is equally likely.</p>
+<p><strong>Entropy is maximized</strong> for this distribution (given 4 outcomes), as it represents the most random scenario for a uniform probability over four options.</p>
+
+<h3>Why Entropy Differs</h3>
+<ul>
+    <li><strong>Fair Coin Flip (1 bit):</strong> Maximum uncertainty because the two outcomes are equally likely.</li>
+    <li><strong>Biased Coin Flip (0.469 bits):</strong> Reduced uncertainty due to an uneven distribution; outcomes are more predictable.</li>
+    <li><strong>Uniform Distribution (2 bits):</strong> Higher uncertainty because there are more equally likely outcomes, and more information is required to specify the result.</li>
+</ul>
+
+<h3>Key Takeaways</h3>
+<ul>
+    <li>Entropy increases with the number of possible outcomes and is maximized for uniform distributions.</li>
+    <li>Entropy decreases when the distribution becomes skewed or biased because predictability increases and randomness decreases.</li>
+</ul>
+
+<h2>Why This Formula Works</h2>
+<ul>
+    <li><strong>Non-Negativity:</strong> \( H(X) \geq 0 \), with equality when \( P(x_i) = 1 \) for some \( i \).</li>
+    <li><strong>Maximal Entropy for Uniform Distributions:</strong> Entropy is maximized when all outcomes are equally likely.</li>
+    <li><strong>Additivity:</strong> For independent events, \( H(X, Y) = H(X) + H(Y) \).</li>
+    <li><strong>Continuity:</strong> Small changes in probabilities result in small changes in entropy.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>The Shannon entropy formula elegantly captures our intuitive understanding of uncertainty and information. It is fundamental to data compression, cryptography, machine learning, and more.</p>
