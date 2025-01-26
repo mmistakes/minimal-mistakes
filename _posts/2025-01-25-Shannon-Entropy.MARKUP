@@ -3,6 +3,7 @@ layout: single
 title:  "Shannon Entropy"
 date:   2025-01-25 9:31::00 -0800
 ---
+<img src="/assets/images/dall-e-shannon-entropy.webp" alt="Entropy vs. Probability Distribution" style="width:70%;margin:10px 0;">
 <p>
     Welcome! In this post, we’ll explore the concept of Shannon Entropy, a fundamental measure of information in probability theory and information science. 
     To ensure everyone can follow along, I’ve included a quick review of probability and probability distributions.
@@ -121,7 +122,7 @@ H(X) = -\sum_{i=1}^n P(x_i) \log_b P(x_i)
 
 <h3>3. Zero Entropy</h3>
 <p>When the outcome is completely certain (\( P(x_i) = 1 \) for one outcome and 0 for all others), entropy is zero because there is no uncertainty.</p>
-
+<img src="/assets/images/probability-vs-entropy.png" alt="Entropy vs. Probability Distribution" style="width:70%;margin:10px 0;">
 <h2>Why Logarithms?</h2>
 <h3>a) Logarithms Measure Information Content</h3>
 <p>The information content \( I(x_i) \) of an outcome \( x_i \) is inversely related to its probability \( P(x_i) \):</p>
@@ -129,7 +130,7 @@ H(X) = -\sum_{i=1}^n P(x_i) \log_b P(x_i)
 <p>\[
 I(x_i) = -\log_b P(x_i)
 \]</p>
-
+<img src="/assets/images/logarithms-measure-information-content.png" alt="Logarithms measure information content" style="width:70%;margin:10px 0;">
 <p>The less likely an event, the more surprising and informative it is.</p>
 
 <h3>b) Logarithms Are Additive</h3>
@@ -162,25 +163,24 @@ H(X) = - (4 \cdot 0.25 \log_2 0.25) = 2 \text{ bits}
 
 <h3>1. Fair Coin Flip (\(H(X) = 1 \text{ bit}\))</h3>
 <p>In a <strong>fair coin flip</strong>, there is equal probability (\(P(\text{Heads}) = 0.5\)) of landing heads or tails.</p>
+<img src="/assets/images/fair-coin-flip-histogram.png" alt="Fair coin flip histogram" style="width:70%;margin:10px 0;">
 <p>Since both outcomes are equally likely, there is <strong>maximum uncertainty</strong>; we can't predict the outcome better than pure chance.</p>
+<img src="/assets/images/fair-coin-flip-entropy.png" alt="Fair coin flip entropy" style="width:70%;margin:10px 0;"></p>
 <p><strong>Entropy is highest</strong> because there is no bias or preference in the distribution. Each flip carries 1 bit of information.</p>
 
 <h3>2. Biased Coin Flip (\(H(X) \approx 0.469 \text{ bits}\))</h3>
-<p>In this case, one outcome (Heads) is much more likely (\(P(\text{Heads}) = 0.9\)) than the other (\(P(\text{Tails}) = 0.1\)).</p>
+<p>In this case, one outcome (Heads) is much more likely (\(P(\text{Heads}) = 0.9\)) than the other (\(P(\text{Tails}) = 0.1\)).
+<img src="/assets/images/biased-coin-flip-histogram.png" alt="Biased coin flip histogram" style="width:70%;margin:10px 0;"></p>
 <p>The <strong>bias reduces uncertainty</strong> because the outcome is more predictable. We can reasonably guess "Heads" most of the time with confidence.</p>
+<img src="/assets/images/biased-coin-flip-entropy.png" alt="Biased coin flip entropy" style="width:70%;margin:10px 0;">
 <p><strong>Entropy is lower</strong> compared to the fair coin flip because the distribution is uneven,  <span style="color: red;">making the system less random</span>.</p>
 
 <h5>3. Uniform Distribution Over 4 Outcomes (\(H(X) = 2 \text{ bits}\))</h5>
-<p>Here, there are four outcomes, each with an equal probability (\(P(x_i) = 0.25\)).</p>
+<p>Here, there are four outcomes, each with an equal probability (\(P(x_i) = 0.25\)).<br>
+<img src="/assets/images/four-outcomes-histogram.png" alt="Four outcomes histogram" style="width:70%;margin:10px 0;"></p>
 <p>The <strong>uncertainty is higher</strong> than in the coin flip examples because there are more possible outcomes. Predicting any one outcome is more difficult since each is equally likely.</p>
+<img src="/assets/images/four-outcomes-entropy.png" alt="Four outcomes entropy" style="width:70%;margin:10px 0;">
 <p><strong>Entropy is maximized</strong> for this distribution (given 4 outcomes), as it represents the most random scenario for a uniform probability over four options.</p>
-
-<h3>Why Entropy Differs</h3>
-<ul>
-    <li><strong>Fair Coin Flip (1 bit):</strong> Maximum uncertainty because the two outcomes are equally likely.</li>
-    <li><strong>Biased Coin Flip (0.469 bits):</strong> Reduced uncertainty due to an uneven distribution; outcomes are more predictable.</li>
-    <li><strong>Uniform Distribution (2 bits):</strong> Higher uncertainty because there are more equally likely outcomes, and more information is required to specify the result.</li>
-</ul>
 
 <h3>Key Takeaways</h3>
 <ul>
