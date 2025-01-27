@@ -4,96 +4,16 @@ title:  "Shannon Entropy"
 date:   2025-01-25 9:31::00 -0800
 ---
 <p>
-    Welcome! In this post, we’ll explore the concept of Shannon Entropy, a fundamental measure of information in probability theory and information science. 
-    To ensure everyone can follow along, I’ve included a quick review of probability and probability distributions.
+    Welcome! In this post, we’ll explore the concept of Shannon Entropy, 
+    a fundamental measure of information in probability theory and information science.<br>
 </p>
-<p>
-    However, if you’re already familiar with these concepts, feel free to skip directly to the section on 
-    <a href="#shannon-entropy">Shannon Entropy</a>.
+<p style="font-size: 14px">
+    If you are not familiar with probability distributions, you may have a quick review on this
+    <a href="{{ site.baseurl }}/Probability-Distribution-Quick-Review/">
+    probability distribution - quick review</a>.
 </p>
 
-<h2>Probability and Random Variables</h2> 
-<p> A random variable \( X \) is a variable 
-that can assume a set of possible states or outcomes. 
-Each of these states has an associated probability, 
-which quantifies the likelihood of the random variable taking on that state. 
-</p> 
-
-<p> 
-For example, consider a random variable \( X \) 
-that represents the result of flipping a <span style="color: red;">biased</span>
- coin, which can take two states: 
-<ul>
-  <li>HEADS</li>
-  <li>TAILS</li>
-</ul>
-</p>
-If the probability of observing the outcome HEADS is 70%
-$$ P(X = \text{HEADS}) = 0.7, $$ 
-then the probability of observing the outcome TAILS is 30%.<br>
-</p>
-\[ P(X = \text{TAILS}) = 1 - 0.7 = 0.3 \] 
-<p>
-Which is the rule that all probabilities must sum to 1 (100%). 
-In other words, the probabilities of all possible states must satisfy the following condition: 
-</p> 
-
-$$ 
-\sum_{i} P(X = x_i) = 1
-$$
-
-<p> This brings us to the concept of a <strong>probability distribution</strong>, 
-which describes how the total probability of 1 is distributed among the possible 
-states of a random variable. </p>
-
-<h2>Probability Distribution</h2>
-<p>
-    A <strong>probability distribution</strong> is a function that maps outcomes to their corresponding probabilities.
-    It describes how uncertainty is distributed among individual states in a system and characterizes the system as a whole.
-</p>
-<h3>Key Points:</h3>
-<ul>
-    <li><strong>Total Probability:</strong> The total probability of all outcomes must equal 1. Therefore, the probability of one state cannot be changed independently of the others.</li>
-    <li><strong>System Characterization:</strong> The probability distribution provides a complete description of the system, defining the uncertainty and likelihood of different states.</li>
-</ul>
-<h3>Examples of Probability Distributions:</h3>
-<ol>
-    <li>
-        <strong>Fair Dice (Discrete Random Variable):</strong>
-        <ul>
-            <li>A discrete random variable consists of distinct states, such as the outcomes of rolling a fair die: {1, 2, 3, 4, 5, 6}.</li>
-            <li>The probabilities of all states must sum to 1:
-                <br>
-                \( P(1) + P(2) + P(3) + P(4) + P(5) + P(6) = 1 \)
-            </li>
-            <li>Below is a bar chart representation of the discrete probability distribution:</li>
-            <img src="/assets/images/discrete-distribution-6-side-dice.png" alt="Discrete Probability Distribution" style="width:70%;margin:10px 0;">
-        </ul>
-    </li>
-    <li>
-        <strong>Height of Adults (Continuous Random Variable):</strong>
-        <ul>
-            <li>A continuous random variable represents measurements that can take on any value within a range, such as the height of adults.</li>
-            <li>The total probability is represented by the area under the curve of the probability density function (PDF), which must equal 1:
-                $$
-                 \int_{-\infty}^{\infty} f(x) \, dx = 1
-                 $$
-            </li>
-            <li>Below is a graph representation of the continuous probability distribution (normal distribution):</li>
-            <img src="/assets/images/continuous-normal-distribution.png" alt="Continuous Probability Distribution" style="width:70%;margin:10px 0;">
-        </ul>
-    </li>
-    <li>
-            <strong>Sum of Two Dice Rolls (Discrete Normal Distribution):</strong>
-            <ul>
-                <li>This represents the sum of outcomes when rolling two six-sided dice 10,000 times. The resulting probabilities approximate a discrete normal distribution due to the central limit theorem.</li>
-                <li>Below is the graph of the simulated discrete normal distribution:</li>
-                <img src="/assets/images/two-dice-sum-normal-distribution.png" alt="Sum of Two Dice Rolls (Discrete Normal Distribution)" style="width:70%;margin:10px 0;">
-            </ul>
-        </li>
-</ol>
-
-<h1 id="shannon-entropy">Shannon Entropy</h1>
+<h1>Definition</h1>
 
 <p>Shannon entropy, introduced by Claude Shannon, quantifies the <strong>uncertainty</strong> or <strong>randomness</strong> in a data source. It is a fundamental concept in information theory and measures the average amount of information contained in a random variable.</p>
 
@@ -120,6 +40,7 @@ H(X) = -\sum_{i=1}^n P(x_i) \log_b P(x_i)
 
 <h3>3. Zero Entropy</h3>
 <p>When the outcome is completely certain (\( P(x_i) = 1 \) for one outcome and 0 for all others), entropy is zero because there is no uncertainty.</p>
+<p>The graph below shows how the entropy varies for one probability state as mentioned above.</p>
 <img src="/assets/images/probability-vs-entropy.png" alt="Entropy vs. Probability Distribution" style="width:70%;margin:10px 0;">
 <h2>Why Logarithms?</h2>
 <h3>a) Logarithms Measure Information Content</h3>
@@ -143,18 +64,18 @@ I(x_i) = -\log_b P(x_i)
 <h2>Examples</h2>
 
 <h3>1. Fair Coin Flip</h3>
-<p>\[
+<p style="font-size: 16px">\[
 H(X) = - (0.5 \log_2 0.5 + 0.5 \log_2 0.5) = 1 \text{ bit}
 \]</p>
 
 <h3>2. Biased Coin Flip (90% Heads, 10% Tails)</h3>
-<p>\[
+<p style="font-size: 16px">\[
 H(X) = - (0.9 \log_2 0.9 + 0.1 \log_2 0.1) \approx 0.469 \text{ bits}
 \]</p>
 
 <h3>3. Uniform Distribution Over 4 Outcomes</h3>
-<p>If \( P(x_i) = 0.25 \):</p>
-<p>\[
+<p style="font-size: 16px">If \( P(x_i) = 0.25 \):</p>
+<p style="font-size: 16px">\[
 H(X) = - (4 \cdot 0.25 \log_2 0.25) = 2 \text{ bits}
 \]</p>
 <h2>Explanation of Entropy Differences</h2>

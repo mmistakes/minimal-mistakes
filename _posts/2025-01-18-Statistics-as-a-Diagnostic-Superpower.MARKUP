@@ -4,23 +4,22 @@ title:  "Statistics as a Diagnostic Superpower"
 date:   2025-01-15 19:29:41 -0800
 ---
 <p>
-Remember that iconic scene when Neo opens his eyes and says to Morpheus, <em>'I know Kung Fu.'</em>? 
-By the end of this post, you’ll be able to say something similar: <em>'I know statistics'</em>.
+Do you realize how powerful and impressive it is for an engineer to understand and apply 
+statistical methods to solve problems?<br>
+While modern <strong>machine learning</strong> algorithms are increasingly being adopted to solve 
+non-deterministic problems, we always strive to rely on the most simple and clean approach.<br>
+Many times a simple statistical method would solve a problem in a very simple way.
 </p>
 <p>
-Do you realize how powerful and impressive it is for an engineer to understand and apply 
-statistical methods to solve problems? 
 This post aims to introduce statistics in a practical and approachable way for those 
-new to it while also refreshing the knowledge of those already familiar.
-To illustrate, I’ll use a simple and relatable example involving diagnostic systems.
+new to it while also refreshing the knowledge of those already familiar.<br>
+To illustrate, I’ll use a simple and relatable example involving 
+<strong>diagnostic systems</strong>.
 </p>
 
 <p>
 Diagnostics are crucial for monitoring devices as they ensure device health, 
-enhance data reliability, and support predictive maintenance. Additionally, 
-compliance and safety are key reasons for utilizing diagnostics, especially 
-in industries such as automotive, healthcare, and aerospace. These sectors 
-rely on diagnostics to meet stringent safety standards and regulations. 
+enhance data reliability, and support predictive maintenance. 
 By continuously monitoring devices, diagnostics ensure they operate within 
 specified safety parameters.
 </p>
@@ -54,44 +53,7 @@ can follow along. For those interested in diving deeper, I recommend an excellen
 on Coursera by Luis Serrano. (Not a sponsored recommendation.)
 </p>
 
-<h2>Deterministic or Stochastic?</h2>
-
-<p>
-When developing a system, one key question is: Is the problem deterministic or stochastic?
-In diagnostics, the answer is often stochastic, meaning the process involves some 
-randomness. Here’s an analogy: Consider rain as a random process. Measuring every raindrop 
-as it falls is impractical, but statistical methods allow us to measure rainfall in sampled areas 
-and derive useful insights, enabling data-driven decisions.
-</p>
-
-<h3>Statistics and Probability Distributions</h3>
-
-<p>
-Statistics often deal with probability distributions. For instance, imagine rainfall across a region. 
-Instead of observing every raindrop, we use sampling to estimate the population’s behavior. To ensure accuracy, 
-samples should be:
-<ol>
-<li>Representative of the population,</li>
-<li>Randomized to avoid bias, and</li>
-<li>Large enough to capture meaningful patterns.</li>
-</ol>
-</p>
-
-<p>
-If rainfall were uniformly distributed, it would simplify predictions. However, in reality, 
-distributions often vary. Assuming uniformity when the distribution deviates can lead to poor system 
-designs and inaccurate decisions.
-</p>
-
-<h3>The Central Limit Theorem (CLT)</h3>
-
-<p>
-The <strong>Central Limit Theorem (CLT)</strong> provides a robust foundation for statistical methods. It states 
-that regardless of a population's distribution, the sample means will approach a <strong>Normal (Gaussian) 
-distribution</strong> as the sample size increases. This allows us to use statistical tools based on normality.
-</p>
-
-<h2>Enter the Matrix: Hypothesis Testing</h2>
+<h2>Hypothesis Testing</h2>
 
 <p>
 We will use <strong>Hypothesis Testing</strong> to analyze the temperature diagnostic problem. 
@@ -124,6 +86,7 @@ $$
 S = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2}
 $$
 
+<h3>Test statistic</h3>
 <p>
 A <strong>test statistic</strong> is a numerical value calculated from sample data during a hypothesis test. 
 It measures how much the observed data differs from what is expected under the null hypothesis \(H_0\). 

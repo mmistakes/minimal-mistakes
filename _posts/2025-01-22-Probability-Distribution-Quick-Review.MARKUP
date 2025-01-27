@@ -1,0 +1,82 @@
+---
+layout: single
+title:  "Probability Distribution - Quick Review"
+date:   2025-01-22 9:31::00 -0800
+---
+<p>
+  In this post, I’ll cover the fundamental concepts that form the foundation for understanding 
+  many topics in other posts on this blog.
+</p>
+
+<h2>Probability and Random Variables</h2> 
+<p> A random variable \( X \) is a variable 
+that can assume a set of possible states or outcomes. 
+Each of these states has an associated probability, 
+which quantifies the likelihood of the random variable taking on that state. 
+</p> 
+
+<p> 
+For example, consider a random variable \( X \) 
+that represents the result of flipping a <span style="color: red;">biased</span>
+ coin, which can take two states: 
+<ul style="font-size: 18px">
+  <li>HEADS</li>
+  <li>TAILS</li>
+</ul>
+</p>
+If the probability of observing the outcome HEADS is 70%
+<span style="font-size: 18px">$$ P(X = \text{HEADS}) = 0.7, $$</span>
+then the probability of observing the outcome TAILS is 30%.<br>
+</p>
+<span style="font-size: 18px">\[ P(X = \text{TAILS}) = 1 - 0.7 = 0.3 \]</span>
+<p>
+Which is the rule that all probabilities must sum to 1 (100%). 
+In other words, the probabilities of all possible states must satisfy the following condition: 
+</p> 
+
+$$ 
+\sum_{i} P(X = x_i) = 1
+$$
+
+<p> This brings us to the concept of a <strong>probability distribution</strong>, 
+which describes how the total probability of 1 is distributed among the possible 
+states of a random variable. </p>
+
+<h2>Probability Distribution</h2>
+<p>
+    A <strong>probability distribution</strong> is a function that maps outcomes to their corresponding probabilities.
+    It describes how uncertainty is distributed among individual states in a system and characterizes the system as a whole.
+</p>
+<h3>Key Points:</h3>
+<ul>
+    <li><strong>Total Probability:</strong> The total probability of all outcomes must equal 1. Therefore, the probability of one state cannot be changed independently of the others.</li>
+    <li><strong>System Characterization:</strong> The probability distribution provides a complete description of the system, defining the uncertainty and likelihood of different states.</li>
+</ul>
+<h3>Examples of Probability Distributions:</h3>
+<ol>
+    <li>
+        <strong>Fair Dice (Discrete Random Variable):</strong>
+        <ul>
+            <li>A discrete random variable consists of distinct states, such as the outcomes of rolling a fair die: {1, 2, 3, 4, 5, 6}.</li>
+            <li>The probabilities of all states must sum to 1:
+                <br>
+                <span style="font-size: 16px">\( P(1) + P(2) + P(3) + P(4) + P(5) + P(6) = 1 \)</span>
+            </li>
+            <li>Below is a bar chart representation of the discrete probability distribution:</li>
+            <img src="/assets/images/discrete-distribution-6-side-dice.png" alt="Discrete Probability Distribution" style="width:70%;margin:10px 0;">
+        </ul>
+    </li>
+    <li>
+        <strong>Height of Adults (Continuous Random Variable):</strong>
+        <ul>
+            <li>A continuous random variable represents measurements that can take on any value within a range, such as the height of adults.</li>
+            <li>The total probability is represented by the area under the curve of the probability density function (PDF), which must equal 1:
+                $$
+                 \int_{-\infty}^{\infty} f(x) \, dx = 1
+                 $$
+            </li>
+            <li>Below is a graph representation of the continuous probability distribution (normal distribution):</li>
+            <img src="/assets/images/continuous-normal-distribution.png" alt="Continuous Probability Distribution" style="width:70%;margin:10px 0;">
+        </ul>
+    </li>
+</ol>
