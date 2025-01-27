@@ -13,7 +13,7 @@ This [post](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twi
 
 ### 2.	Scaling Wearable Foundation Models
 
-This [study]https://arxiv.org/pdf/2410.13638(https://arxiv.org/pdf/2410.13638) by Google DeepMind treats sensor data as tokens. They processed 40 million hours of data such as temperature or accelerometry. Any sensor feed can be processed similarly, allowing the twin to learn from continuous signals rather than just text.
+This [study](https://arxiv.org/pdf/2410.13638) by Google DeepMind treats sensor data as tokens. They processed 40 million hours of data such as temperature or accelerometry. Any sensor feed can be processed similarly, allowing the twin to learn from continuous signals rather than just text.
 
 ### 3.	DeepSeek’s Large Model Approach
 
