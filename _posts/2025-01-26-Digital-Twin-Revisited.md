@@ -1,8 +1,6 @@
 ---
-Title: Twin GPT
+Title: Digital Twin Revisited
 ---
-
-# TwinGPT - Building Large Foundational Models for Enterprises
 
 ## A. Short (Executive) Version
 
