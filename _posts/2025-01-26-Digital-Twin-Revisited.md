@@ -17,7 +17,7 @@ This [study]https://arxiv.org/pdf/2410.13638(https://arxiv.org/pdf/2410.13638) b
 
 ### 3.	DeepSeek’s Large Model Approach
 
-They [built large models]https://arxiv.org/pdf/2501.12948(https://arxiv.org/pdf/2501.12948) using minimal rule based signals. They reached top tier performance without expensive manual feedback. This means you can own your models without paying a vendor for labeling.
+They [built large models](https://arxiv.org/pdf/2501.12948) using minimal rule based signals. They reached top tier performance without expensive manual feedback. This means you can own your models without paying a vendor for labeling.
 	
 ### 4.	Implications for Executives
 
