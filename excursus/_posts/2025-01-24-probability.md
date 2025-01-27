@@ -25,7 +25,7 @@ We'll give a brief overview of something from the early era of probability theor
 
 ## The Bernoulli distribution
 
-Let's consider a binary variable $X$, that is, one that can take only 2 values, say "1" (usually representing *success*) with probability $\mu$ and "0" (usually representing *failure*), with probability $1-\mu$. Phenomena behaving like this are known as Bernoulli trials - examples are a coin flip or randomly asking people in the street whether they had cereal for breakfast or not.
+Let's consider a binary variable $$X$$, that is, one that can take only 2 values, say "1" (usually representing *success*) with probability $$\mu$$ and "0" (usually representing *failure*), with probability $$1-\mu$$. Phenomena behaving like this are known as Bernoulli trials - examples are a coin flip or randomly asking people in the street whether they had cereal for breakfast or not.
 
 We can write the [probability mass function](https://en.wikipedia.org/wiki/Probability_mass_function) (the mathematical form of probability for each value) as
 
@@ -33,7 +33,7 @@ $$
 p(x;\mu) = P (X=x) = \mu^x(1-\mu)^{1-x}
 $$
 
-because when $x=1$ we are left with $\mu$ and when $x=0$ with $1-\mu$. This is the Bernoulli distribution.
+because when $$x=1$$ we are left with $$\mu$$ and when $$x=0$$ with $$1-\mu$$. This is the Bernoulli distribution.
 
 Expected value (the mean where each value is weighted by its probability) and variance (measuring the spread of values) calculate respectively as
 
@@ -50,17 +50,23 @@ The Bernoulli responsible for this formalisation was Jakob (there are many famou
 > In this business it’s easy to confuse luck with brains.<br>
 > **Jim Simons** [undocumented]
 
-The Bernoulli is a special case of a more general distribution, the Binomial: you have $k$ successes in a set of $n$ Bernoulli trials. The probability mass function writes as
+The Bernoulli is a special case of a more general distribution, the Binomial: you have $$k$$ successes in a set of $$n$$ Bernoulli trials. The probability mass function writes as
 
 $$P(X=k) = {n\choose k} \mu^k (1-\mu)^{n-k} \ .$$
 
-The first element, ${n}\choose{k}$, quite uncreatively called the ["binomial coefficient"](https://en.wikipedia.org/wiki/Binomial_coefficient), tells you how many ways of creating groups of $k$ from $n$ values are there and writes as (with all expansion)
+The first element, $${n}\choose{k}$$, quite uncreatively called the ["binomial coefficient"](https://en.wikipedia.org/wiki/Binomial_coefficient), tells you how many ways of creating groups of $$k$$ from $$n$$ values are there and writes as (with all expansion)
 
-$${n\choose k} = \frac{n!}{k!(n-k)!} = \frac{n(n-1)(n-2) \ldots 1}{(k(k-1)(k-2)\ldots1)((n-k)(n-k-1)(n-k-2)\ldots1)} = \frac{n(n-1)(n-2) \ldots (n-k+1)}{k (k-1)(k-2)\ldots1}$$
+$$
+\begin{split}
+{n\choose k} &= \frac{n!}{k!(n-k)!} \\
+ &= \frac{n(n-1)(n-2) \ldots 1}{(k(k-1)(k-2)\ldots1)((n-k)(n-k-1)(n-k-2)\ldots1)} \\
+ &= \frac{n(n-1)(n-2) \ldots (n-k+1)}{k (k-1)(k-2)\ldots1}
+\end{split}
+$$
 
-If you have a bag with 3 balls, named say A, B and C, and want to extract 2 of them (at the same time, that is, with no replacement), you can pick any of 3 different sets: AB, AC, BC, ${3 \choose 2} = \frac{3\cdot2}{2}=3$. If the balls are 4 (A,B,C,D) and you still want a group of 2, you can pick AB, AC, AD, BC, BD, CD, which makes 6 groups or ${4 \choose2} = \frac{4\cdot3}{2\cdot1}$. For  group of 3 with 4 balls you can do ABC, ABD, ACD, BCD, ${4\choose 3} = \frac{4\cdot3\cdot2}{3\cdot2\cdot1}$. And so on.
+If you have a bag with 3 balls, named say A, B and C, and want to extract 2 of them (at the same time, that is, with no replacement), you can pick any of 3 different sets: AB, AC, BC, $${3 \choose 2} = \frac{3\cdot2}{2}=3$$. If the balls are 4 (A,B,C,D) and you still want a group of 2, you can pick AB, AC, AD, BC, BD, CD, which makes 6 groups or $${4 \choose2} = \frac{4\cdot3}{2\cdot1}$$. For  group of 3 with 4 balls you can do ABC, ABD, ACD, BCD, $${4\choose 3} = \frac{4\cdot3\cdot2}{3\cdot2\cdot1}$$. And so on.
 
-Expected value and variance of the Binomial calculate respectively as $\mathbb{E}[X] = n \mu$ and $Var[X] = n \mu (1- \mu)$ (see [Wikipedia](https://en.wikipedia.org/wiki/Binomial_distribution#Expected_value_and_variance) for the proofs).
+Expected value and variance of the Binomial calculate respectively as $$\mathbb{E}[X] = n \mu$$ and $$Var[X] = n \mu (1- \mu)$$ (see [Wikipedia](https://en.wikipedia.org/wiki/Binomial_distribution#Expected_value_and_variance) for the proofs).
 
 Let's see this with a bit of code. 
 
