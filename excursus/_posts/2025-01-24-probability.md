@@ -118,7 +118,7 @@ obtaining these trends:
   <figcaption>Trials with a fair coin. The probabilities of success and failure take about 200 trials to stabilise around 0.5.</figcaption>
 </figure>
 
-If we vary the probability of success (using arg `p` in [`numpy.random.choice`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html), note that this is the $\mu$ in text above), so to represent unfair coins, we get these trends
+If we vary the probability of success (using arg `p` in [`numpy.random.choice`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html), note that this is the $$\mu$$ in text above), so to represent unfair coins, we get these trends
 
 <figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}bernoulli-trials-p.png" alt="Plots showing the probabilities of success and failure in 1000 trials with coins of varying success probability.">
