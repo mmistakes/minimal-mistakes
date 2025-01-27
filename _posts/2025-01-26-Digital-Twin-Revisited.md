@@ -8,22 +8,16 @@ Executives worldwide see the promise of digital twins, but many remain at the MV
 	
 ### 1.	Recap of the Original Digital Twin Post
 
-Link:
-[https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)
-
-It described an MVP you can build in 6 months for 1 million. That project included data pipelines, a simulator, basic autonomy, and disruption tests. Many enterprises remain stuck at that baseline.
+This [post](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)
+ described an MVP you can build in 6 months for 1 million. That project included data pipelines, a simulator, basic autonomy, and disruption tests. Many enterprises remain stuck at that baseline.
 
 ### 2.	Scaling Wearable Foundation Models
 
-Link: [https://arxiv.org/pdf/2410.13638](https://arxiv.org/pdf/2410.13638)
-
-This study treats sensor data as tokens. They processed 40 million hours of data such as temperature or accelerometry. Any sensor feed can be processed similarly, allowing the twin to learn from continuous signals rather than just text.
+This [studyhttps://arxiv.org/pdf/2410.13638](https://arxiv.org/pdf/2410.13638) by Google DeepMind treats sensor data as tokens. They processed 40 million hours of data such as temperature or accelerometry. Any sensor feed can be processed similarly, allowing the twin to learn from continuous signals rather than just text.
 
 ### 3.	DeepSeek’s Large Model Approach
 
-Link: [https://arxiv.org/pdf/2501.12948](https://arxiv.org/pdf/2501.12948)
-
-They built large models using minimal rule based signals. They reached top tier performance without expensive manual feedback. This means you can own your models without paying a vendor for labeling.
+They [built large modelshttps://arxiv.org/pdf/2501.12948](https://arxiv.org/pdf/2501.12948) using minimal rule based signals. They reached top tier performance without expensive manual feedback. This means you can own your models without paying a vendor for labeling.
 	
 ### 4.	Implications for Executives
 
@@ -39,9 +33,7 @@ Below is a deeper dive into why large sensor models and minimal feedback trainin
 
 ### 1. Lessons from the Original Digital Twin Approach
 
-Refer to
-https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/
-for the first stage of a digital twin. That earlier post covered a 6 month, 1 million dollar plan. It outlined data connections, a basic simulator for future states, user facing dashboards, minimal autonomous algorithms, and a module for disruption scenarios. Many companies copied it to prove the concept and get an initial pilot. Yet it remained an MVP that lacked advanced sensor ingestion or large foundational models.
+Refer to my [post](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/) for the first stage of a digital twin. That earlier post covered a 6 month, 1 million dollar plan. It outlined data connections, a basic simulator for future states, user facing dashboards, minimal autonomous algorithms, and a module for disruption scenarios. Many companies copied it to prove the concept and get an initial pilot. Yet it remained an MVP that lacked advanced sensor ingestion or large foundational models.
 
 Executives often settle at that point because the data pipeline shows some value, the simulator can do short-term forecasts, and the risk scenarios reveal vulnerabilities. However, the real power comes from scaling sensor feeds and from using next-generation modeling techniques. When your twin can read data continuously in near real time, you spot patterns before anyone else, especially if you feed that data into a large model that can interpret subtle signals.
 
@@ -49,9 +41,7 @@ We are now at a stage where the cost of computing and data storage has gone down
 
 ### 2. The Wearable Study and Its Relevance to Industrial Operations
 
-See the paper at
-https://arxiv.org/pdf/2410.13638
-The authors took sensor data from wearable devices, such as heart rate, steps, skin temperature, and altimeter, then treated these data as if they were text tokens. They ended up with over 40 million hours of continuous sensor data. That volume allowed them to build a model that understood patterns of daily activity and physiological signals.
+In this [paper](https://arxiv.org/pdf/2410.13638) from Google DeepMind, the authors took sensor data from wearable devices, such as heart rate, steps, skin temperature, and altimeter, then treated these data as if they were text tokens. They ended up with over 40 million hours of continuous sensor data. That volume allowed them to build a model that understood patterns of daily activity and physiological signals.
 
 Why does that matter for a manufacturer, a logistics firm, or an energy company? In each case, you have streams of sensor data, whether from engines, conveyors, or climate sensors. You can treat these sensor readings in a similar way. Instead of thinking of tokens as words, you think of each sensor measurement as part of a long text. Over time, the model learns to interpret patterns that might not be obvious to a conventional script. For instance, imagine a pipeline that has subtle pressure fluctuations. If you let a large sensor model see years of data at a granular level, it can predict pressure spikes, detect minor leaks, and correlate changes to outside factors like seasonal temperature or upstream flow. It is like teaching a system to read the pulse of your entire operation.
 
@@ -59,9 +49,7 @@ The wearable study proves the concept by using a domain that is easy to grasp, h
 
 ### 3. The DeepSeek Approach to Large Model Training Without Heavy Manual Feedback
 
-Read the DeepSeek paper at
-https://arxiv.org/pdf/2501.12948
-They built a large language model that matches top-tier performance while cutting back on typical labeling costs. Often, large language models rely on supervised fine tuning, where thousands of subject matter experts label data or answer questions. That can cost huge sums. DeepSeek used minimal rule based signals to guide the model. This strategy is crucial for big enterprises that want to build internal foundation models. They do not have to pay for large annotation tasks or rely on reinforcement learning from human feedback. Instead, they can rely on well-designed rules or minimal sets of examples. It is like training a strong chess player not by enumerating millions of openings move by move, but by letting it figure things out with a few guiding principles.
+The [DeepSeek paper](https://arxiv.org/pdf/2501.12948) gives insights into how they built a large language model that matches top-tier performance while cutting back on typical labeling costs. Often, large language models rely on supervised fine tuning, where thousands of subject matter experts label data or answer questions. That can cost huge sums. DeepSeek used minimal rule based signals to guide the model. This strategy is crucial for big enterprises that want to build internal foundation models. They do not have to pay for large annotation tasks or rely on reinforcement learning from human feedback. Instead, they can rely on well-designed rules or minimal sets of examples. It is like training a strong chess player not by enumerating millions of openings move by move, but by letting it figure things out with a few guiding principles.
 
 In practical terms, if you run an industrial plant, you have logs, sensor data, and standard operating procedures. You can unify them in a way that does not require big labeling from scratch. The DeepSeek study suggests you can feed the raw data, use a small set of correctness checks, and reward the model accordingly. Over time, it learns to interpret signals and produce coherent responses. This frees you to focus on your actual domain data rather than hiring large labeling teams.
 
