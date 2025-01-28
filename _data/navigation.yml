@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
+  - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
@@ -10,10 +10,3 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  sidebar-category:
-  - title: "Mathmatics"
-    children:
-      - title: "Dicrete Mathmatics"
-        url: "/dicrete"
-      - title: "Linear Algebra"
-        url:  "/linear"
