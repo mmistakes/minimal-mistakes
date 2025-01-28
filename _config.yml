@@ -119,7 +119,7 @@ author:
   location         : "Seoul"
   email            : 
   links:
-    - label: ""
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yrighting@gmail.com"
     - label: "Website"
@@ -131,7 +131,7 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: ""
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/yrighting"
     - label: "Instagram"
