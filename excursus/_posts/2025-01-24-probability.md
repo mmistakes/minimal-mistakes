@@ -25,23 +25,23 @@ We'll give a brief overview of something from the early era of probability theor
 
 ## The Bernoulli distribution
 
-Let's consider a binary variable $$X$$, that is, one that can take only 2 values, say "1" (usually representing *success*) with probability $$\mu$$ and "0" (usually representing *failure*), with probability $$1-\mu$$. Phenomena behaving like this are known as Bernoulli trials - examples are a coin flip or randomly asking people in the street whether they had cereal for breakfast or not.
+Let's consider a binary variable $$X$$, that is, one that can take only 2 values, say "1" (usually representing *success*) with probability $$p$$ and "0" (usually representing *failure*), with probability $$1-p$$. Phenomena behaving like this are known as Bernoulli trials - examples are a coin flip or randomly asking people in the street whether they had cereal for breakfast or not.
 
 We can write the [probability mass function](https://en.wikipedia.org/wiki/Probability_mass_function) (the mathematical form of probability for each value) as
 
 $$
-p(x;\mu) = P (X=x) = \mu^x(1-\mu)^{1-x}
+p(x;p) = P (X=x) = p^x(1-p)^{1-x}
 $$
 
-because when $$x=1$$ we are left with $$\mu$$ and when $$x=0$$ with $$1-\mu$$. This is the Bernoulli distribution.
+because when $$x=1$$ we are left with $$p$$ and when $$x=0$$ with $$1-p$$. This is the Bernoulli distribution.
 
 Expected value (the mean where each value is weighted by its probability) and variance (measuring the spread of values) calculate respectively as
 
-$$\mathbb{E}[X] = \sum_{x \in \{0,1\}} x \mu^x(1-\mu)^{1-x} = 0 + 1\mu(1-\mu)^0 = \mu$$
+$$\mathbb{E}[X] = \sum_{x \in \{0,1\}} x p^x(1-p)^{1-x} = 0 + 1p(1-p)^0 = p$$
 
 and
 
-$$Var[X] = \sum_{x \in \{0,1\}} x^2 \mu^x(1-\mu)^{1-x} - \mu^2 = \mu - \mu^2 = \mu(1-\mu)$$
+$$Var[X] = \sum_{x \in \{0,1\}} x^2 p^x(1-p)^{1-x} - p^2 = p - p^2 = p(1-p)$$
 
 The Bernoulli responsible for this formalisation was Jakob (there are many famous Bernoullis), son of a pharmacist and brother to Johann. The boys were a bit naughty and disobeyed their father who wanted them to study medicine and theology and [did mathemathics instead](https://www.britannica.com/topic/Bernoulli-family). We must be very thankful they did as they left us with a huge corpus of important work. Also, Johann's sons and their sons continued the mathematical dynasty: the Bernoulli family was [quite gifted](https://en.wikipedia.org/wiki/Bernoulli_family#Family_Tree_of_the_Basler_Bernoullis) for sure.
 
@@ -52,7 +52,7 @@ The Bernoulli responsible for this formalisation was Jakob (there are many famou
 
 The Bernoulli is a special case of a more general distribution, the Binomial: you have $$k$$ successes in a set of $$n$$ Bernoulli trials. The probability mass function writes as
 
-$$P(X=k) = {n\choose k} \mu^k (1-\mu)^{n-k} \ .$$
+$$P(X=k) = {n\choose k} p^k (1-p)^{n-k} \ .$$
 
 The first element, $${n}\choose{k}$$, quite uncreatively called the ["binomial coefficient"](https://en.wikipedia.org/wiki/Binomial_coefficient), tells you how many ways of creating groups of $$k$$ from $$n$$ values are there and writes as (with all expansion)
 
@@ -66,7 +66,7 @@ $$
 
 If you have a bag with 3 balls, named say A, B and C, and want to extract 2 of them (at the same time, that is, with no replacement), you can pick any of 3 different sets: AB, AC, BC, $${3 \choose 2} = \frac{3\cdot2}{2}=3$$. If the balls are 4 (A,B,C,D) and you still want a group of 2, you can pick AB, AC, AD, BC, BD, CD, which makes 6 groups or $${4 \choose2} = \frac{4\cdot3}{2\cdot1}$$. For  group of 3 with 4 balls you can do ABC, ABD, ACD, BCD, $${4\choose 3} = \frac{4\cdot3\cdot2}{3\cdot2\cdot1}$$. And so on.
 
-Expected value and variance of the Binomial calculate respectively as $$\mathbb{E}[X] = n \mu$$ and $$Var[X] = n \mu (1- \mu)$$ (see [Wikipedia](https://en.wikipedia.org/wiki/Binomial_distribution#Expected_value_and_variance) for the proofs).
+Expected value and variance of the Binomial calculate respectively as $$\mathbb{E}[X] = n p$$ and $$Var[X] = n p (1- p)$$ (see [Wikipedia](https://en.wikipedia.org/wiki/Binomial_distribution#Expected_value_and_variance) for the proofs).
 
 Let's see this with a bit of code. 
 
@@ -82,12 +82,8 @@ rng = np.random.default_rng()
 then we simulate 1000 trials of a fair coin flip, that is, one where each face is equiprobable (probability 0.5)
 
 ```py
-trials = []
 n = 1000    # choose how many trials
-for i in range(n):
-    trials.append(rng.choice([0,1]))   # numpy.choice will by default use a uniform distr over values
-
-trials = np.array(trials)
+trials.append(rng.choice([0,1], size=n))   # numpy.choice will by default use a uniform distr over values
 ```
 
 and we count successes and their probability 
@@ -118,7 +114,7 @@ obtaining these trends:
   <figcaption>Trials with a fair coin. The probabilities of success and failure take about 200 trials to stabilise around 0.5.</figcaption>
 </figure>
 
-If we vary the probability of success (using arg `p` in [`numpy.random.choice`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html), note that this is the $$\mu$$ in text above), so to represent unfair coins, we get these trends
+If we vary the probability of success (using arg `p` in [`numpy.random.choice`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html)), so to represent unfair coins, we get these trends
 
 <figure class="responsive">
   <img src="{{ site.url }}{{site.posts_images_path}}bernoulli-trials-p.png" alt="Plots showing the probabilities of success and failure in 1000 trials with coins of varying success probability.">
