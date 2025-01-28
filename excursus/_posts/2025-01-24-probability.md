@@ -30,7 +30,7 @@ Let's consider a binary variable $$X$$, that is, one that can take only 2 values
 We can write the [probability mass function](https://en.wikipedia.org/wiki/Probability_mass_function) (the mathematical form of probability for each value) as
 
 $$
-p(x;p) = P (X=x) = p^x(1-p)^{1-x}
+P (X=x) = p^x(1-p)^{1-x}
 $$
 
 because when $$x=1$$ we are left with $$p$$ and when $$x=0$$ with $$1-p$$. This is the Bernoulli distribution.
