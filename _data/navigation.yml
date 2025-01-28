@@ -10,3 +10,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  sidebar-category:
+  - title: "Mathmatics"
+    children:
+      - title: "Dicrete Mathmatics"
+        url: "/dicrete"
+      - title: "Linear Algebra"
+        url:  "/linear"
