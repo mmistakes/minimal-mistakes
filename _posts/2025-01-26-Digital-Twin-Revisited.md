@@ -2,9 +2,9 @@
 Title: Digital Twin Revisited
 ---
 
-## A. Short (Executive) Version
-
 Executives worldwide see the promise of digital twins, but many remain at the MVP stage. Large foundational models can accelerate these twins, and new methods lower the cost of feedback. Not owning the IP can lead to a big disadvantage.
+
+## A. Short (Executive) Version
 	
 ### 1.	Recap of the Original Digital Twin Post
 
