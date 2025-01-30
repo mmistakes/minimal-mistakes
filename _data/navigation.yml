@@ -1,4 +1,5 @@
 # main links
+# Modify the _data/navigation.yml file to set up your portfolio navigation menu.
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
