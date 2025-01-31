@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A4 - Ausflug zum Teufelsberg",
-    "title": "A4 - Ausflug zum Teufelsberg",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWlmaWc5Z2lpa29sb3BodHVibDFtbHExaWQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-01-30T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-01-30T13:30:00+01:00"
-    },
-    "created": "2025-01-28T13:12:58.000Z",
-    "updated": "2025-01-28T13:12:58.881Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A7 - Ausflug ins Atze Musiktheater",
-    "title": "A7 - Ausflug ins Atze Musiktheater",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXZqcHZzcDNqczhlNHBoZHJtYnNob2g3ZnEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-01-30T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-01-30T13:00:00+01:00"
-    },
-    "created": "2025-01-28T11:47:20.000Z",
-    "updated": "2025-01-28T11:47:20.487Z"
-  },
-  {
-    "image_path": null,
     "alt": "GEV",
     "title": "GEV",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2024-12-13T11:11:28.000Z",
     "updated": "2024-12-13T11:11:28.795Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Studientag Schule geschlossen",
+    "title": "Studientag Schule geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=am4xNHRnczIyYWtvMGswdDloY3U5dHNtMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-03-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-04-01",
+      "date_time": null
+    },
+    "created": "2025-01-14T09:24:43.000Z",
+    "updated": "2025-01-14T09:24:43.886Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei",
+    "title": "A5 - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-04T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-04T11:30:00+02:00"
+    },
+    "created": "2024-12-13T11:14:40.000Z",
+    "updated": "2024-12-13T11:14:40.459Z"
   }
 ]
