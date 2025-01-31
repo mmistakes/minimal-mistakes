@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "Study blog"
+title_separator          : "|"
+subtitle                 : "good"
+name                     : "Jeon-Eun-Ji"
+description              : "Jeon-Eun-Ji님의 공부 블로그 입니다."
 url                      : "https://Jeon-Eun-Ji.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
