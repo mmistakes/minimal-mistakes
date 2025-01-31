@@ -22,7 +22,8 @@ subtitle                 : "ride the waves"
 name                     : "강문성"
 description              : "개발자의 일상을 기록합니다."
 url                      : "https://kamser0415.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
+baseurl                  : "" #"/blog" # the subpath of your site, e.g. "/blog"
 repository               : "kamser0415/kamser0415.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/favi.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -86,7 +87,7 @@ google_site_verification :
 bing_site_verification   :
 naver_site_verification  : "35762db4af98457ea03163dc4fd433ed4aeb81b0"
 yandex_site_verification :
-baidu_site_verification  : 
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
@@ -105,7 +106,7 @@ social:
 
 # Analytics 방문 기록
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : "G-5H5EB71FRD"
     anonymize_ip         : false # (default)

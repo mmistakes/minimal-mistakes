@@ -5,3 +5,4 @@ gem 'tzinfo'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'faraday-retry'
 gem 'jekyll-redirect-from'
+gem "webrick", "~> 1.9"

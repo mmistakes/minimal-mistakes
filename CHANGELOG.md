@@ -1,5 +1,33 @@
 # Changelog
 
+## Unreleased
+
+### Enhancements
+
+- Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
+- Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
+- Rewrite most directions with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+- Remove unnecessary "type" attribute (#4956)
+- The "if" means the default is never used (#4955)
+- For pages without a title, show the site title only once (#4959)
+- Use `documents-collection.html` partial in `home` layout.
+- Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
+- Add provider and comments info to `single.html` layout for non-production. (#5068)
+
+### Bug Fixes
+
+- Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
+- Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
+- Fix reset stylesheet overruling `$doc-font-size`. [#4983](https://github.com/mmistakes/minimal-mistakes/issues/4983)
+- Fix JavaScript null error on home and splash layouts. [#4938](https://github.com/mmistakes/minimal-mistakes/issues/4938), [#4939](https://github.com/mmistakes/minimal-mistakes/pull/4939)
+- Fix bad &lt;figure&gt; HTML if "alt" contains quotes.
+- Fix extra newline generated in `_includes/post_pagination.html`.
+- Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
+
+### Documentation & Maintenance
+
+- Automatically update Algolia search index with GitHub Actions.
+
 ## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
 
 ### Enhancements

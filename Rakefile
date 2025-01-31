@@ -107,7 +107,10 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
     f.puts ""
     f.puts "{% raw %}"
     # Remove H1
-    changelog = File.read(t.prerequisites.first).gsub(/^# [^\n]*$/m, "").strip
+    changelog = File.read(t.prerequisites.first)
+      .gsub(/^# [^\n]*$/m, "")
+      .gsub(/\(#(\d+)\)$/m, "[#\\1](https://github.com/mmistakes/minimal-mistakes/issues/\\1)")
+      .strip
     f.write changelog
     f.puts ""
     f.puts "{% endraw %}"
