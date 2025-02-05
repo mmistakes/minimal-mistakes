@@ -2,10 +2,6 @@
 Title: On Waiting
 ---
 
-Here’s a refined version of your insight, structured as a blog post or Twitter thread that stays true to your message.
-
-The Hidden Cost of Traffic: Why Your Life Shouldn’t Be Spent Waiting
-
 If you experience traffic in your life—whether in a car, in a queue, or waiting on a process—you’ve accepted a condition. You’ve chosen to live in a place, work in a place, and structure your life in a way that makes waiting a normal part of your day.
 
 But is it necessary?
