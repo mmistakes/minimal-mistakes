@@ -1,4 +1,6 @@
-
+---
+Title: On Waiting
+---
 
 Here’s a refined version of your insight, structured as a blog post or Twitter thread that stays true to your message.
 
