@@ -2,7 +2,9 @@
 Title: On Waiting
 ---
 
-How often do you find yourself waiting? If you experience waiting in your life (whether in car traffic, in a queue, or waiting on a process) you’ve accepted a condition. You’ve chosen to live in a place, work in a place, and structure your life in a way that makes waiting a normal part of your day.
+How often do you find yourself waiting? If you experience waiting in your life (whether in car traffic, in a queue, or waiting on a process) you’ve accepted a condition. 
+
+You’ve chosen to live in a place, work in a place, and structure your life in a way that makes waiting a normal part of your day.
 
 But is it necessary?
 
