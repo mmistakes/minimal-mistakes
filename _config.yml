@@ -26,7 +26,7 @@ url: "https://honghyunAhn.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: #"/assets/images/favicon.png"
-logo: "/assets/images/favicon.png"
+logo: "/assets/images/icon.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true
 words_per_minute: 200
@@ -114,7 +114,7 @@ analytics:
 author:
   name: "AHN HONGHYUN"
   avatar:
-  bio: "勉強しながら記録する空間です。"
+  bio: "日本で住んでいる<br>韓国人の開発者です!<br>勉強しながら記録する空間です。"
   location: "Japan, Tokyo"
   email: "anh2073@gmail.com"
   links:
