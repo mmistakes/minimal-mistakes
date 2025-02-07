@@ -116,11 +116,11 @@ author:
   avatar           : "assets/images/TChor-02p_UCLA_cropped.jpg"
   bio              : "<br>"
   location         : "Los Angeles, CA"
-  email            : #"tomaschor@gmail.com"
+  email            : #"contact@tomaschor.xyz"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tomaschor@gmail.com"
+      url: "mailto:contact@tomaschor.xyz"
     - label: "Google Scholar" # This odd username is somehow brewed up by Google.
       icon: "fab fa-fw fa-google"
       url: "https://scholar.google.com/citations?user=0uQC6kkAAAAJ&hl=en"
