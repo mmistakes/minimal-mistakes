@@ -5,20 +5,11 @@ main:
   - title: "Tag"
     url: /tags/
 
-docs:
-  - title: "Category1"
+daily:
+  - title: "Category"
     children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
-
-  - title: "Category2"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "Daily"
+        url: /categories/#daily/
 
     # - title: "About"
     #   url: https://mmistakes.github.io/minimal-mistakes/about/
