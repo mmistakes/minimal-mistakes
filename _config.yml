@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "HUHA"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/huha-avatar.png"
   bio              : "江湖迷途小书童，小小凡人。"
   location         : "四川 - 成都"
   email            : "wsyhok@126.com"
