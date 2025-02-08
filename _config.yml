@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "HUHA"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "江湖迷途小书童，小小凡人。"
+  location         : "四川 - 成都"
+  email            : "wsyhok@126.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
