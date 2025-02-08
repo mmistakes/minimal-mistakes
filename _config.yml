@@ -1,64 +1,64 @@
-# Welcome to Jekyll!
+# 欢迎使用 Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 这个配置文件用于设置影响整个网站的设置，
+# 这些值通常只需要设置一次，之后很少需要编辑。
+# 由于技术原因，当你使用 `jekyll serve` 时，此文件不会自动重新加载。
+# 如果你更改了此文件，请重启服务器进程。
 
-# Theme Settings
+# 主题设置
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
+# 查看文档以确定你应该使用 `theme` 还是 `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Site Settings
+# 网站设置
 locale                   : "zh-CHS"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+rtl                      : # true, false (默认) # 将页面方向改为从右到左，用于RTL语言
 title                    : "HUHA的茅屋"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "一间简陋的草房，住着一颗不安的心。" # 显示在网站标题下方的标语
 name                     : "HUHA"
 description              : "一间简陋的草房，住着一颗不安的心。"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+url                      : # 你的网站基础主机名和协议，例如 "https://mmistakes.github.io"
+baseurl                  : # 你的网站子路径，例如 "/blog"
+repository               : # GitHub 用户名/仓库名，例如 "mmistakes/minimal-mistakes"
+teaser                   : # 默认预览图片路径，例如 "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+masthead_title           : # 覆盖显示在页眉的网站标题，使用 " " 则不显示标题
+breadcrumbs              : # true, false (默认)
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
-copyright_url            : # "copyright" URL, defaults to site.url
+enable_copy_code_button  : true # true, false (默认) 允许复制代码
+copyright                : # 版权名称，默认使用网站标题
+copyright_url            : # 版权URL，默认使用网站URL
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : # false (默认), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # 访问 https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- 获取
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : # 访问 https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 获取，例如: meta.discourse.org
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
+    # 访问 https://developers.facebook.com/docs/plugins/comments 获取
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : # 5 (默认)
+    colorscheme          : # "light" (默认), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : # "github-light" (默认), "github-dark"
+    issue_term           : # "pathname" (默认)
   giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               : # 1 for enabled, 0 for disabled (default)
-    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 : # "en" (default)
-    lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+    repo_id              : # 在 https://giscus.app 设置时显示
+    category_name        : # 分类的完整文本名称
+    category_id          : # 在 https://giscus.app 设置时显示
+    discussion_term      : # "pathname" (默认), "url", "title", "og:title"
+    reactions_enabled    : # '1' 启用 (默认), '0' 禁用
+    theme                : # "light" (默认), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    strict               : # 1 启用, 0 禁用 (默认)
+    input_position       : # "top", "bottom" # 评论输入框将放置在评论的上方或下方
+    emit_metadata        : # 1 启用, 0 禁用 (默认)
+    lang                 : # "en" (默认)
+    lazy                 : # true, false # 评论加载将延迟到用户滚动到评论容器附近
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -66,52 +66,51 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
-search_provider          : # lunr (default), algolia, google
+  path                   : # 空白 (默认) 使用 feed.xml
+  hide                   : # true, false (默认)
+search                   : true # true, false (默认)
+search_full_content      : true # true, false (默认)
+search_provider          : # lunr (默认), algolia, google
 lunr:
-  search_within_pages    : true # true, false (default)
+  search_within_pages    : true # true, false (默认)
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  application_id         : # 你的应用ID
+  index_name             : # 你的索引名称
+  search_only_api_key    : # 你的搜索专用API密钥
+  powered_by             : # true (默认), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
+  search_engine_id       : # 你的搜索引擎ID
+  instant_search         : # false (默认), true
+# SEO 相关
 google_site_verification :
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
-# Social Sharing
+# 社交分享
 twitter:
   username               :
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
+og_image                 : # Open Graph/Twitter 默认站点图片
+# 用于指定社交档案
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : # 个人或组织 (默认为个人)
+  name                   : # 如果用户或组织名称与站点名称不同
+  links: # 社交媒体链接数组
 
-# Analytics
+# 分析统计
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : # false (默认), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : # true, false (默认)
 
-
-# Site Author
+# 站点作者
 author:
   name             : "HUHA"
   avatar           : "/assets/images/huha-avatar.png"
@@ -121,10 +120,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "mailto:你的邮箱@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      # url: "https://你的网站.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -138,7 +137,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# Site Footer
+# 站点页脚
 footer:
   links:
     - label: "Twitter"
@@ -160,8 +159,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
-
-# Reading Files
+# 读取文件
 include:
   - .htaccess
   - _pages
@@ -190,24 +188,22 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - /docs # 忽略 Minimal Mistakes /docs
+  - /test # 忽略 Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-# Conversion
+# 转换设置
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
+# Markdown 处理
 kramdown:
   input: GFM
   hard_wrap: false
@@ -218,27 +214,24 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
-# Outputting
+# 输出设置
 permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
-# Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+# 使用 jekyll-paginate 进行分页
+paginate: 5 # 显示的文章数量
 paginate_path: /page:num/
 
-# Pagination with jekyll-paginate-v2
-# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-#   for configuration details
+# 使用 jekyll-paginate-v2 进行分页
+# 查看 https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+# 获取配置详情
 pagination:
-  # Set enabled to true to use paginate v2
+  # 设置 enabled 为 true 以使用 paginate v2
   # enabled: true
   debug: false
   collection: 'posts'
@@ -255,8 +248,7 @@ pagination:
     before: 2
     after: 2
 
-
-# Plugins (previously gems:)
+# 插件 (之前称为 gems)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -264,7 +256,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
+# 模拟 GitHub Pages 的 --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -272,14 +264,13 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
+# 归档
+#  类型
+#  - GitHub Pages 兼容的使用 Liquid 构建的归档页面 ~> type: liquid (默认)
+#  - Jekyll Archives 插件归档页面 ~> type: jekyll-archives
+#  路径 (示例)
+#  - 使用 Liquid 方法时归档页面应该存在于路径中，否则可能会导致链接失效
+#    (特别是在启用面包屑导航时)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
@@ -289,28 +280,15 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
-
-# HTML Compression
+# HTML 压缩
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
 
-
-# Defaults
+# 默认值
 defaults:
   # _posts
   - scope:
@@ -324,5 +302,3 @@ defaults:
       share: true
       related: true
 
-# 允许复制代码
-enable_copy_code_button: true
