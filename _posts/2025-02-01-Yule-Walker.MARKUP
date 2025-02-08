@@ -1,0 +1,98 @@
+---
+layout: single
+title:  "Yule Walker"
+date:   2025-02-01 9:31::00 -0800
+---
+<h1>Derivation of the Yule-Walker Equations</h1>
+Yule-Walker equations is to assume that the signal lags multiplied by the 
+autoregressive (AR) model coefficients equals the noise because this follows 
+directly from the definition of an autoregressive process.
+
+<h2>1. Autoregressive Model Assumption</h2>
+<p>
+    An autoregressive process of order \( p \) (AR(\( p \))) is defined as:
+</p>
+<p>
+    \[
+    x_t = \sum_{i=1}^{p} \phi_i x_{t-i} + w_t
+    \]
+</p>
+<p>
+    where:
+    <ul>
+        <li> \( x_t \) is the time series at time \( t \),</li>
+        <li> \( \phi_i \) are the AR model coefficients,</li>
+        <li> \( w_t \) is white noise (uncorrelated with zero mean and constant variance),</li>
+        <li> \( x_{t-i} \) are past values (lags) of the signal.</li>
+    </ul>
+</p>
+<p>
+    This equation states that each value in the time series is a <strong>linear combination of past values plus some noise</strong>.
+</p>
+
+<h2>2. Moving to the Autocovariance Function</h2>
+<p>
+    By multiplying both sides by \( x_{t-k} \) (for some lag \( k \)) and taking expectations, we obtain:
+</p>
+<p>
+    \[
+    E[x_{t-k} x_t] = E \left[ x_{t-k} \sum_{i=1}^{p} \phi_i x_{t-i} \right] + E[x_{t-k} w_t]
+    \]
+</p>
+<p>
+    Since \( w_t \) is <strong>white noise</strong> and is uncorrelated with past values (\( x_{t-k} \)), we get:
+</p>
+<p>
+    \[
+    E[x_{t-k} w_t] = 0
+    \]
+</p>
+<p>
+    which simplifies the equation to:
+</p>
+<p>
+    \[
+    \gamma_k = \sum_{i=1}^{p} \phi_i \gamma_{k-i}
+    \]
+</p>
+<p>
+    where \( \gamma_k = E[x_t x_{t-k}] \) is the <strong>autocovariance function</strong> of \( x_t \).
+</p>
+
+<h2>3. Forming the Yule-Walker Equations</h2>
+<p>
+    By writing these equations for \( k = 1, 2, ..., p \), we obtain a system of <strong>linear equations</strong> in terms of the <strong>autocovariance function</strong> \( \gamma_k \) and the AR coefficients \( \phi_i \). This system of equations is known as the <strong>Yule-Walker equations</strong>:
+</p>
+<p>
+    \[
+    \begin{bmatrix}
+    \gamma_0 & \gamma_1 & \gamma_2 & \dots & \gamma_{p-1} \\
+    \gamma_1 & \gamma_0 & \gamma_1 & \dots & \gamma_{p-2} \\
+    \vdots & \vdots & \vdots & \ddots & \vdots \\
+    \gamma_{p-1} & \gamma_{p-2} & \gamma_{p-3} & \dots & \gamma_0
+    \end{bmatrix}
+    \begin{bmatrix}
+    \phi_1 \\
+    \phi_2 \\
+    \vdots \\
+    \phi_p
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    \gamma_1 \\
+    \gamma_2 \\
+    \vdots \\
+    \gamma_p
+    \end{bmatrix}
+    \]
+</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+    <li>The assumption that <em>signal lags multiplied by AR coefficients equals noise</em> follows from the AR process definition.</li>
+    <li>This leads to an equation where we multiply by \( x_{t-k} \) and take expectations, eliminating the noise term due to its uncorrelation.</li>
+    <li>The resulting system of equations links the <strong>autocovariance function</strong> to the <strong>AR coefficients</strong>, forming the <strong>Yule-Walker equations</strong>, which allow estimation of AR parameters from the observed data.</li>
+</ul>
+<p>
+    This method is widely used in time series analysis and <strong>linear prediction</strong>, especially in estimating the parameters of an AR process efficiently.
+</p>

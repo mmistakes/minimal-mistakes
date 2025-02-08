@@ -1,0 +1,33 @@
+---
+layout: single
+title:  "Adaptive LMS Filter (AEC)"
+date:   2025-02-01 9:31::00 -0800
+---
+<h1>Adaptive LMS Filter for Acoustic Echo Cancellation</h1>
+
+<h2>1. Problem Setup</h2>
+<p>In an <strong>acoustic echo cancellation</strong> system:</p>
+<ul>
+    <li>A <strong>far-end signal</strong> (e.g., voice from a remote speaker) is played through a loudspeaker.</li>
+    <li>Some portion of this sound <strong>reflects off surfaces</strong> and <strong>leaks back</strong> into the microphone as an echo.</li>
+    <li>The goal is to <strong>remove this echo</strong> from the microphone signal while preserving the near-end speech.</li>
+</ul>
+
+<h2>2. LMS Adaptive Filtering Approach</h2>
+<p>An <strong>adaptive filter</strong> attempts to model the <strong>echo path</strong> and subtract the estimated echo from the microphone signal.</p>
+<p>Definitions:</p>
+<ul style="font-size: 18px">
+    <li>\( x(n) \) → <strong>Far-end signal</strong> (input to the loudspeaker)</li>
+    <li>\( d(n) \) → <strong>Microphone signal</strong> (contains both near-end speech + echo)</li>
+    <li>\( y(n) \) → <strong>Adaptive filter output</strong> (estimated echo)</li>
+    <li>\( e(n) = d(n) - y(n) \) → <strong>Error signal</strong> (ideally just the near-end speech)</li>
+</ul>
+<p>The LMS filter updates its weights to minimize the squared error:</p>
+<p>\[ w(n+1) = w(n) + \mu e(n) x(n) \]</p>
+<p>Where:</p>
+<ul>
+    <li>\( w(n) \) → Adaptive filter coefficients</li>
+    <li>\( \mu \) → Step size (controls convergence speed vs. stability)</li>
+    <li>\( e(n) \) → Error signal</li>
+    <li>\( x(n) \) → Input signal</li>
+</ul>

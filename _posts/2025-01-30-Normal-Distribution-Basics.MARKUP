@@ -1,0 +1,53 @@
+---
+layout: single
+title:  "Normal Distribution Basics"
+date:   2025-01-30 9:31::00 -0800
+---
+
+<P>
+The purpose of this post is to explain some basics of the Normal Distribution. 
+In furture posts I will be explaining the Auto-Regressive (AR) model and the 
+concepts explained here will be important for understanding it.
+</P>
+
+<h2>Normal Distribution</h2>
+<p>The <strong>normal distribution</strong> (also known as the <em>Gaussian distribution</em>) is a continuous probability distribution that describes data clustering around a central mean. It has a characteristic <strong>bell-shaped curve</strong> that is symmetric about the mean.</p>
+
+<p>The probability density function (PDF) of a normal distribution is given by:</p>
+<p>\[ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}} \]</p>
+
+<ul>
+    <li>\( \mu \) is the <strong>mean</strong> (center of the distribution).</li>
+    <li>\( \sigma \) is the <strong>standard deviation</strong> (spread of the distribution).</li>
+    <li>\( \sigma^2 \) is the <strong>variance</strong> (measure of dispersion).</li>
+</ul>
+
+<h3>Key Properties</h3>
+<p>The normal distribution follows the <strong>68-95-99.7 Rule</strong>:</p>
+<ul>
+    <li>68% of values lie within <strong>1 standard deviation</strong> (\( \mu \pm \sigma \)).</li>
+    <li>95% of values lie within <strong>2 standard deviations</strong> (\( \mu \pm 2\sigma \)).</li>
+    <li>99.7% of values lie within <strong>3 standard deviations</strong> (\( \mu \pm 3\sigma \)).</li>
+</ul>
+
+<h3>Probability Density Function (PDF) Plot</h3>
+<img src="/assets/images/normal-distribution.png" alt="Probability Density Function (PDF)" width="600">
+
+<h2>Cumulative Distribution Function (CDF)</h2>
+<p>The <strong>cumulative distribution function (CDF)</strong> gives the probability that a random variable \( X \) is <strong>less than or equal to</strong> a specific value \( x \):</p>
+<p>\[ F(x) = P(X \leq x) = \frac{1}{2} \left[1 + \operatorname{erf} \left( \frac{x - \mu}{\sigma \sqrt{2}} \right) \right] \]</p>
+
+<p>where \( \operatorname{erf}(z) \) is the <strong>error function</strong>, a special function that cannot be expressed in elementary form but is available in most mathematical libraries.</p>
+
+<h3>Cumulative Distribution Function (CDF) Plot</h3>
+<img src="/assets/images/normal-distribution-cdf.png" alt="Cumulative Distribution Function (CDF)" width="600">
+
+<h2>Applications of the Normal Distribution</h2>
+<ul>
+    <li><strong>Hypothesis testing</strong> (e.g., Z-tests).</li>
+    <li><strong>Confidence intervals</strong> in statistics.</li>
+    <li><strong>Machine learning</strong> (e.g., Gaussian Naive Bayes, Gaussian Processes).</li>
+    <li><strong>Signal processing</strong> and <strong>error modeling</strong>.</li>
+</ul>
+
+<p>Understanding the normal distribution is essential for many fields, including statistics, finance, and engineering. Its applications range from modeling real-world data to improving machine learning algorithms.</p>
