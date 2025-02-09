@@ -2,21 +2,23 @@
    Neon skin
    ========================================================================== */
 
+@use 'sass:color';
+
 /* Colors */
 $background-color: #141010 !default;
 $text-color: #fff6fb !default;
 $primary-color: #f21368 !default;
-$border-color: mix(#fff, $background-color, 20%) !default;
-$code-background-color: mix(#000, $background-color, 15%) !default;
-$code-background-color-dark: mix(#000, $background-color, 20%) !default;
-$form-background-color: mix(#000, $background-color, 15%) !default;
-$footer-background-color: mix($primary-color, #000, 10%) !default;
+$border-color: color.mix(#fff, $background-color, 20%) !default;
+$code-background-color: color.mix(#000, $background-color, 15%) !default;
+$code-background-color-dark: color.mix(#000, $background-color, 20%) !default;
+$form-background-color: color.mix(#000, $background-color, 15%) !default;
+$footer-background-color: color.mix($primary-color, #000, 10%) !default;
 $link-color: $primary-color !default;
-$link-color-hover: mix(#fff, $link-color, 25%) !default;
-$link-color-visited: mix(#000, $link-color, 25%) !default;
+$link-color-hover: color.mix(#fff, $link-color, 25%) !default;
+$link-color-visited: color.mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
-$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+$masthead-link-color-hover: color.mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: color.mix(#000, $background-color, 30%) !default;
 
 /* notices */
 $notice-background-mix: 90% !default;
