@@ -7,7 +7,7 @@ main:
   - title: "Search"
     url: /search/
 
-daily:
+doc:
   - title: "Category"
     children:
       - title: "Daily"
