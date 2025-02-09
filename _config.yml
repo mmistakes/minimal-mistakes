@@ -113,16 +113,16 @@ analytics:
 # Site Author
 author:
   name: "AHN HONGHYUN"
-  avatar:
+  avatar: #"/assets/images/icon.png"
   bio: "日本で住んでいる<br>韓国人の開発者です!<br>勉強しながら記録する空間です。"
   location: "Japan, Tokyo"
-  email: "anh2073@gmail.com"
+  email: #"anh2073@gmail.com"
   links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:anh2073@gmail.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:anh2073@gmail.com"
     - label: "Portfolio"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-user-tie"
       url: "https://honghyunahn.github.io/portfolio/"
     # - label: "Twitter"
     #icon: "fab fa-fw fa-twitter-square"
