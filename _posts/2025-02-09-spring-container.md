@@ -1,8 +1,8 @@
 ---
 layout: single
-title: 스프링 부트가 바꾼 웹 애플리케이션 배포 패러다임
+title: 컨테이너리스(Containerless) 정리
 categories: spring
-tag: [spring]
+tag: [spring, containerless]
 toc: true
 toc_sticky: true
 author_profile: false
@@ -16,90 +16,153 @@ typora-root-url: ../
 
 ---
 
-# 컨테이너리스(Containerless): 스프링 부트가 바꾼 웹 애플리케이션 배포 패러다임
+## 📌 컨테이너리스 (Containerless) 정리
 
-## 학습 목표
-1. **컨테이너리스(Containerless) 개념**과 스프링 부트(Spring Boot)에서 어떻게 적용되는지 이해한다.
-2. **서블릿 컨테이너(Servlet Container)**와 **IoC 컨테이너(스프링 컨테이너)**의 차이점을 명확히 파악한다.
-3. **웹 애플리케이션의 동작 흐름**(요청→매핑→응답)과 **생명주기(Life cycle) 관리** 방식에 대해 이해한다.
-4. **전통적인 WAR 배포 방식**과 **스프링 부트를 통한 독립 실행형(스탠드얼론) JAR 배포** 차이를 이해한다.
-5. **소프트웨어 공학적 키워드**(추상화, 라이프사이클 관리, IoC, DI 등)와 연계해 **컨테이너리스 아키텍처**가 가지는 **장점**을 학습한다.
+## 📚 목차
 
----
-
-## 목차
-1. [컨테이너리스(Containerless)란 무엇인가?](#컨테이너리스containerless란-무엇인가)
-2. [전통적인 자바 웹 애플리케이션 구성](#전통적인-자바-웹-애플리케이션-구성)
-   - [2.1. 서블릿(Servlet)과 서블릿 컨테이너(Servlet Container)](#21-서블릿servlet과-서블릿-컨테이너servlet-container)
-   - [2.2. 스프링 프레임워크와 IoC 컨테이너](#22-스프링-프레임워크와-ioc-컨테이너)
-3. [컨테이너리스와 스프링 부트](#컨테이너리스와-스프링-부트)
-   - [3.1. 서블릿 컨테이너 자동 구성과 임베디드(Embedded) 톰캣](#31-서블릿-컨테이너-자동-구성과-임베디드embedded-톰캣)
-   - [3.2. 독립 실행형(스탠드얼론) JAR 배포 방식](#32-독립-실행형스탠드얼론-jar-배포-방식)
-4. [소프트웨어 공학적 관점](#소프트웨어-공학적-관점)
-   - [4.1. 라이프사이클(Life cycle) 관리와 추상화(Abstraction)](#41-라이프사이클life-cycle-관리와-추상화abstraction)
-   - [4.2. Inversion of Control (IoC)와 Dependency Injection (DI)](#42-inversion-of-control-ioc와-dependency-injection-di)
-   - [4.3. DevOps, CI/CD 파이프라인에서의 장점](#43-devops-cicd-파이프라인에서의-장점)
-5. [정리](#정리)
-6. [이해도 확인 문제](#이해도-확인-문제)
+1. [개념 요약 (핵심 내용 정리)](#개념-요약-핵심-내용-정리)
+2. [실무 적용 포인트](#실무-적용-포인트)
+3. [코드 예제](#코드-예제)
+4. [주요 질문 & 인터뷰 대비](#주요-질문--인터뷰-대비)
+5. [트러블슈팅 & 실전 노트](#트러블슈팅--실전-노트)
+6. [트레이드 오프 분석](#트레이드-오프-분석)
+7. [소프트웨어 아키텍처 관점](#소프트웨어-아키텍처-관점)
+8. [이해도 체크 질문](#이해도-체크-질문)
+9. [추가 학습 키워드](#추가-학습-키워드)
+10. [비슷하거나 반대되는 개념 정리](#비슷하거나-반대되는-개념-정리)
 
 ---
 
-## 핵심 키워드
-- **Containerless(컨테이너리스)**
-- **Serverless(서버리스)**
-- **Servlet Container(서블릿 컨테이너)**
-- **IoC Container(스프링 컨테이너)**
-- **Embedded Tomcat(임베디드 톰캣)**
-- **WAR/JAR 배포 방식**
-- **Life cycle Management(생명주기 관리)**
-- **Dependency Injection(DI)**
-- **Inversion of Control(IoC)**
+## 1️⃣ 개념 요약 (핵심 내용 정리)
+
+### 🔹 컨테이너리스(Containerless)란?
+컨테이너리스는 **“컨테이너가 없는”** 것이 아니라, **“개발자가 컨테이너 관리를 신경 쓰지 않아도 된다”**는 개념이다.
+
+### 🔹 배경 및 개념
+- 스프링 부트는 **컨테이너리스 웹 애플리케이션** 개발을 쉽게 하기 위해 만들어졌다.
+- 기존에는 서블릿 컨테이너(예: Tomcat, Jetty, Undertow 등)를 개발자가 직접 설정하고 배포해야 했다.
+- 컨테이너리스는 **서블릿 컨테이너를 자동 설정하고 실행할 수 있도록** 지원해준다.
+- 개발자는 비즈니스 로직 개발에만 집중할 수 있도록 한다.
+
+### 🔹 컨테이너리스와 서버리스(Serverless)의 관계
+- 서버리스(Serverless)와 유사한 개념이지만 완전히 동일하지 않다.
+- 서버리스는 **인프라 자체를 관리할 필요 없게 만드는 것** (예: AWS Lambda).
+- 컨테이너리스는 **서블릿 컨테이너 관리 부담을 없애는 것**.
+
+### 🔹 웹 컨테이너(Web Container)와의 관계
+- 기존에는 웹 컴포넌트(서블릿)가 **웹 컨테이너(예: Tomcat) 안에서 실행**되었다.
+- 웹 컨테이너는 서블릿의 **생명주기 관리, 요청 매핑, 리소스 관리** 등의 역할을 수행했다.
+- **컨테이너리스는 웹 컨테이너의 관리 부담을 줄여주고 자동 설정한다.**
 
 ---
 
-## 컨테이너리스(Containerless)란 무엇인가?
-컨테이너리스(Containerless) 아키텍처는 **“개발자가 직접 컨테이너를 설치하고 관리하지 않아도”** 웹 애플리케이션을 구동·운영할 수 있도록 하는 방식을 의미한다.
+## 2️⃣ 실무 적용 포인트
 
-- 전통적으로 웹 애플리케이션을 구동하려면 **서블릿 컨테이너**(예: Tomcat)를 서버에 설치하고, `WAR` 파일을 배포하는 과정을 거쳐야 했다.
-- 컨테이너리스 환경에서는 **임베디드(Embedded)** 서블릿 컨테이너가 애플리케이션 내부에 포함되어, **추가적인 설치나 복잡한 설정 없이** 애플리케이션 실행만으로 웹 서버가 동작하도록 한다.
-
-이 개념은 **‘서버리스(Serverless)’**와 유사하게 **개발자가 서버 환경 설정이나 컨테이너 설정에 신경 쓰지 않고** 애플리케이션 로직에만 집중하도록 돕는다는 점이 핵심이다.
-
----
-
-## 전통적인 자바 웹 애플리케이션 구성
-
-### 2.1. 서블릿(Servlet)과 서블릿 컨테이너(Servlet Container)
-- **서블릿(Servlet)**: 자바에서 웹 요청을 처리하고 동적 컨텐츠(HTML, JSON 등)를 생성하는 웹 컴포넌트이다.
-- **서블릿 컨테이너(Servlet Container)**: 서블릿의 **생명주기(Life cycle)**를 관리하고, **요청 라우팅(맵핑)**을 담당한다.
-  - **예:** Tomcat, Jetty, Undertow 등.
-  - 클라이언트(웹 브라우저나 API 호출)로부터 들어온 HTTP 요청을 알맞은 서블릿으로 분배(라우팅)하고, 응답을 전송한다.
-
-전통적인 방식에서는 Tomcat 같은 외부 서블릿 컨테이너를 **서버에 별도로 설치**하고, 설정 파일(`web.xml`, 서버 설정 파일 등)을 직접 작성해서 관리해야 했다.
-
-### 2.2. 스프링 프레임워크와 IoC 컨테이너
-- **스프링 IoC 컨테이너**: 스프링 프레임워크가 제공하는 **의존성 주입(Dependency Injection)**과 라이프사이클 관리를 담당한다.
-- 스프링 컨테이너는 **비즈니스 로직, 서비스, 레포지토리** 등 다양한 컴포넌트를 `Bean`이라는 형태로 관리한다.
-- 하지만 **스프링 컨테이너**는 어디까지나 애플리케이션 내부 구성에 집중하며, 외부에서 들어오는 HTTP 요청은 **서블릿 컨테이너**를 통해 받아야 한다.
+- **빠른 개발 환경 구성** → `spring-boot-starter-web` 의존성만 추가하면 자동으로 내장 Tomcat이 실행된다.
+- **독립 실행형 애플리케이션(Standalone Application)** → JAR 실행만으로 서버가 동작하는 구조 (`java -jar application.jar`).
+- **WAR 배포 없이 실행 가능** → WAR 패키징 없이 JAR만으로 실행 가능하며, CI/CD가 간단해진다.
+- **설정 간소화** → `application.properties`에서 최소한의 설정만으로 웹 컨테이너가 자동 실행됨.
+- **Docker 컨테이너와 함께 사용 가능** → 컨테이너리스와 Docker는 별개 개념이지만, 필요하면 Docker 기반 배포도 가능.
 
 ---
 
-## 컨테이너리스와 스프링 부트
+## 3️⃣ 코드 예제
 
-### 3.1. 서블릿 컨테이너 자동 구성과 임베디드(Embedded) 톰캣
-- **스프링 부트(Spring Boot)**는 내장(Embedded) 톰캣이나 Jetty, Undertow를 **자동으로 설정**해서 제공한다.
-- 개발자가 톰캣을 따로 설치해서 `WAR` 파일을 배포할 필요가 없다.
-- 스프링 부트 애플리케이션을 실행하면, **애플리케이션 내부에 포함된 서블릿 컨테이너**가 자동으로 구동된다.
+### ✅ 기존 Servlet Container 기반 Spring MVC
+```xml
+<!-- web.xml에서 서블릿 설정 필요 -->
+<servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
 
-### 3.2. 독립 실행형(스탠드얼론) JAR 배포 방식
-- 스프링 부트는 기본적으로 **Fat JAR(Uber JAR)** 형태로 빌드한다.
-- 이 JAR 안에는 **모든 라이브러리와 서블릿 컨테이너(예: 톰캣)**가 포함된다.
-- `java -jar myapp.jar` 명령만으로도 곧바로 애플리케이션 서버가 동작한다.
+<servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+</servlet-mapping>
+```
+
+### ✅ 컨테이너리스 Spring Boot 방식
+```java
+@SpringBootApplication
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+```
 
 ---
 
-## 이해도 확인 문제
+## 4️⃣ 주요 질문 & 인터뷰 대비
 
-1. **서블릿 컨테이너**와 **스프링 IoC 컨테이너**의 주요 역할 차이를 간단히 설명해보세요.  
-2. **스프링 부트**가 제공하는 **임베디드 서블릿 컨테이너**가 왜 ‘컨테이너리스(Containerless)’라고 불리는지 설명하세요.  
-3. **CI/CD 파이프라인**에서 컨테이너리스(스프링 부트)의 배포가 가지는 **장점**은 무엇인지 서술하세요. ₩₩
+### 📌 컨테이너리스란 무엇인가?
+컨테이너리스는 **서블릿 컨테이너(Tomcat, Jetty)를 개발자가 직접 관리하지 않아도 되도록 하는 방식**이다.
+
+### 📌 기존 Servlet Container 기반 개발과 컨테이너리스 개발 방식의 차이점?
+| **구분**      | **기존 방식 (Servlet Container)** | **컨테이너리스 방식** |
+| ------------- | --------------------------------- | --------------------- |
+| **설정**      | `web.xml`, `server.xml` 등 필요   | 최소한의 설정         |
+| **배포 방식** | WAR 파일 배포                     | JAR 파일 배포 가능    |
+| **실행 방식** | Tomcat/Jetty 설치 필요            | `java -jar` 실행 가능 |
+| **CI/CD**     | 컨테이너 설치 및 배포 필요        | 간단한 JAR 실행       |
+
+---
+
+## 5️⃣ 트러블슈팅 & 실전 노트
+
+- **Q: 기존 Tomcat 설정을 변경하려면?** → `application.properties`에서 `server.port`, `server.tomcat.max-threads` 등을 조정하면 된다.
+- **Q: 내장 Tomcat 대신 Jetty, Undertow를 사용하고 싶다면?** → `spring-boot-starter-web`을 제거하고 원하는 웹 서버 의존성을 추가하면 된다.
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jetty</artifactId>
+</dependency>
+```
+
+---
+
+## 6️⃣ 트레이드 오프 분석
+
+| **선택지**                                  | **장점**                               | **단점**                           |
+| ------------------------------------------- | -------------------------------------- | ---------------------------------- |
+| **컨테이너리스 (Spring Boot 내장 Tomcat)**  | 설정이 간단, JAR 배포 가능, CI/CD 용이 | 세부적인 웹 컨테이너 설정이 제한적 |
+| **기존 Servlet Container 사용 (Tomcat 등)** | 다양한 설정 가능, 레거시 시스템과 호환 | 설정이 복잡하고 유지보수 부담 증가 |
+
+---
+
+## 7️⃣ 소프트웨어 아키텍처 관점
+
+- **마이크로서비스 아키텍처 (MSA)** → 컨테이너리스 방식은 MSA에서 개별 서비스 실행을 독립적으로 할 수 있어 유리하다.
+- **배포 및 확장성** → JAR 기반 배포가 가능해 DevOps 환경에서 더 쉽게 확장할 수 있다.
+- **레거시 시스템과의 통합** → 기존 WAS 환경과 통합하려면 WAR 방식도 지원해야 하는 경우가 있음.
+
+---
+
+## 8️⃣ 이해도 체크 질문
+
+1. 컨테이너리스와 서버리스의 차이점은?
+2. Spring Boot에서 내장 Tomcat을 Jetty로 변경하는 방법은?
+3. 컨테이너리스 방식이 CI/CD에서 가지는 장점은?
+4. Spring Boot가 서블릿 컨테이너를 자동 실행하는 과정은?
+
+---
+
+## 9️⃣ 추가 학습 키워드
+
+- Embedded Tomcat vs External Tomcat
+- Spring Boot Actuator
+- Java EE vs Spring Boot (Servlet Container 차이)
+
+---
+
+## 🔄 비슷하거나 반대되는 개념 정리
+
+| **개념**                       | **설명**                                         |
+| ------------------------------ | ------------------------------------------------ |
+| **Serverless**                 | 인프라를 직접 운영하지 않는 방식 (AWS Lambda 등) |
+| **Containerless**              | 웹 컨테이너를 직접 관리하지 않는 방식            |
+| **Embedded Servlet Container** | Spring Boot 내장 Tomcat, Jetty, Undertow         |
+
+---
+
