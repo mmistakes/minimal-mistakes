@@ -10,7 +10,8 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  padding-inline: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -27,7 +28,7 @@
     font-size: $type-size-6;
 
     @include breakpoint($large) {
-      float: inline-end;
+      float: right;
       width: calc(100% - #{$right-sidebar-width-narrow});
     }
 
@@ -51,7 +52,7 @@
 
 .pagination {
   @include clearfix();
-  float: inline-start;
+  float: left;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
@@ -65,8 +66,8 @@
 
   li {
     display: block;
-    float: inline-start;
-    margin-inline-start: -1px;
+    float: left;
+    margin-left: -1px;
 
     a {
       display: block;
@@ -100,18 +101,18 @@
     }
 
     &:first-child {
-      margin-inline-start: 0;
+      margin-left: 0;
 
       a {
-        border-start-start-radius: $border-radius;
-        border-end-start-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
       }
     }
 
     &:last-child {
       a {
-        border-start-end-radius: $border-radius;
-        border-end-end-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
       }
     }
   }
@@ -120,7 +121,7 @@
   &--pager {
     display: block;
     padding: 1em 2em;
-    float: inline-start;
+    float: left;
     width: 50%;
     font-family: $sans-serif;
     font-size: $type-size-5;
@@ -136,14 +137,14 @@
     }
 
     &:first-child {
-      border-start-end-radius: 0;
-      border-end-end-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     &:last-child {
-      margin-inline-start: -1px;
-      border-start-start-radius: 0;
-      border-end-start-radius: 0;
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
 
     &.disabled {
@@ -191,12 +192,12 @@
     }
 
     &.site-logo {
-      margin-inline-start: 0;
-      margin-inline-end: 0.5rem;
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
 
     &.site-title {
-      margin-inline-start: 0;
+      margin-left: 0;
     }
   }
 
@@ -239,7 +240,7 @@
       &:before {
         content: "";
         position: absolute;
-        inset-inline-start: 0;
+        left: 0;
         bottom: 0;
         height: 4px;
         background: $primary-color;
@@ -261,7 +262,7 @@
   .hidden-links {
     position: absolute;
     top: 100%;
-    inset-inline-end: 0;
+    right: 0;
     margin-top: 15px;
     padding: 5px;
     border: 1px solid $border-color;
@@ -286,11 +287,11 @@
       }
     }
 
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       top: -11px;
-      inset-inline-end: 10px;
+      right: 10px;
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
@@ -299,11 +300,11 @@
       z-index: 0;
     }
 
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -10px;
-      inset-inline-end: 10px;
+      right: 10px;
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
@@ -360,11 +361,11 @@
       transition: 0.2s ease-out;
       cursor: pointer;
 
-      &::before,
-      &::after {
+      &:before,
+      &:after {
         content: "";
         position: absolute;
-        inset-inline-end: 1em;
+        right: 1em;
         top: 1.25em;
         width: 0.75em;
         height: 0.125em;
@@ -445,8 +446,9 @@
   }
 
   .active {
-    margin-inline-start: -0.5em;
-    padding-inline: 0.5em;
+    margin-left: -0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-weight: bold;
   }
 
@@ -514,8 +516,8 @@
     color: #fff;
     font-size: $type-size-6;
     background: $primary-color;
-    border-start-start-radius: $border-radius;
-    border-start-end-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -549,23 +551,23 @@
   }
 
   li ul > li a {
-    padding-inline-start: 1.25rem;
+    padding-left: 1.25rem;
     font-weight: normal;
   }
 
   li ul li ul > li a {
-    padding-inline-start: 1.75rem;
+    padding-left: 1.75rem;
   }
 
   li ul li ul li ul > li a {
-    padding-inline-start: 2.25rem;
+    padding-left: 2.25rem;
   }
 
   li ul li ul li ul li ul > li a {
-    padding-inline-start: 2.75rem;
+    padding-left: 2.75rem;
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-inline-start: 3.25rem;
+    padding-left: 3.25rem
   }
 }

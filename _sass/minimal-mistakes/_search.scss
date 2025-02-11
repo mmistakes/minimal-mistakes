@@ -9,7 +9,8 @@
 }
 
 .search__toggle {
-  margin-inline: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   height: $nav-toggle-height;
   border: 0;
   outline: none;
@@ -37,8 +38,10 @@
 
   &__inner-wrap {
     width: 100%;
-    margin-inline: auto;
-    padding-inline: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.15s;

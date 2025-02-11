@@ -3,7 +3,7 @@
    ========================================================================== */
 
 form {
-  margin-bottom: 5px;
+  margin: 0 0 5px 0;
   padding: 1em;
   background-color: $form-background-color;
 
@@ -17,7 +17,7 @@ form {
     display: block;
     width: 100%;
     margin-bottom: 5px * 2;
-    margin-inline-start: -7px;
+    *margin-left: -7px;
     padding: 0;
     color: $text-color;
     border: 0;
@@ -45,6 +45,7 @@ button,
 select,
 textarea {
   vertical-align: baseline;
+  *vertical-align: middle;
 }
 
 input,
@@ -101,6 +102,7 @@ input[type="radio"] {
   height: auto;
   padding: 0;
   margin: 3px 0;
+  *margin-top: 0;
   line-height: normal;
   cursor: pointer;
   border-radius: 0;
@@ -112,6 +114,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
+  *width: 13px;
+  *height: 13px;
 }
 
 input[type="image"] {
@@ -134,6 +138,12 @@ input[type="submit"] {
   width: auto;
   height: auto;
   cursor: pointer;
+  *overflow: visible;
+}
+
+select,
+input[type="file"] {
+  *margin-top: 4px;
 }
 
 select {
@@ -163,14 +173,14 @@ input[type="hidden"] {
 
 .radio,
 .checkbox {
-  padding-inline-start: 18px;
+  padding-left: 18px;
   font-weight: normal;
 }
 
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
-  float: inline-start;
-  margin-inline-start: -18px;
+  float: left;
+  margin-left: -18px;
 }
 
 .radio.inline,
@@ -183,7 +193,7 @@ input[type="hidden"] {
 
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
-  margin-inline-start: 10px;
+  margin-left: 10px;
 }
 
 /*
@@ -238,7 +248,7 @@ select:focus {
 .help-inline {
   display: inline-block;
   vertical-align: middle;
-  padding-inline-start: 5px;
+  padding-left: 5px;
 }
 
 /*
@@ -269,16 +279,16 @@ select:focus {
 .form-inline .radio,
 .form-inline .checkbox,
 .form-inline .radio {
-  padding-inline-start: 0;
+  padding-left: 0;
   margin-bottom: 0;
   vertical-align: middle;
 }
 
 .form-inline .radio input[type="radio"],
 .form-inline .checkbox input[type="checkbox"] {
-  float: inline-start;
-  margin-inline-start: 0;
-  margin-inline-end: 3px;
+  float: left;
+  margin-left: 0;
+  margin-right: 3px;
 }
 
 /*
@@ -293,7 +303,8 @@ select:focus {
 }
 
 .form-search .search-query {
-  padding-inline: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
   margin-bottom: 0;
   border-radius: 14px;
 }
@@ -305,23 +316,23 @@ select:focus {
 .form-search .radio,
 .form-search .checkbox,
 .form-inline .radio {
-  padding-inline-start: 0;
+  padding-left: 0;
   margin-bottom: 0;
   vertical-align: middle;
 }
 
 .form-search .radio input[type="radio"],
 .form-search .checkbox input[type="checkbox"] {
-  float: inline-start;
-  margin-inline-start: 0;
-  margin-inline-end: 3px;
+  float: left;
+  margin-left: 0;
+  margin-right: 3px;
 }
 
 /*
      .form--loading
      ========================================================================== */
 
-.form--loading::before {
+.form--loading:before {
   content: "";
 }
 
@@ -329,10 +340,10 @@ select:focus {
   display: block;
 }
 
-.form::before {
+.form:before {
   position: absolute;
   top: 0;
-  inset-inline-start: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
@@ -343,6 +354,6 @@ select:focus {
   display: none;
   position: absolute;
   top: 50%;
-  inset-inline-start: 50%;
+  left: 50%;
   z-index: 11;
 }

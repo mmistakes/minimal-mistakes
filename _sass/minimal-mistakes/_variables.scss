@@ -6,18 +6,15 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16px !default;
-$doc-font-size-medium: $doc-font-size * 1.125 !default;
-$doc-font-size-large: $doc-font-size * 1.25 !default;
-$doc-font-size-x-large: $doc-font-size * 1.375 !default;
+$doc-font-size: 16 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
-/* system typefaces */
+/* system typefaces */ /* "Nanum Brush Script" <- sans-serif쪽에 글씨 추가 가능*/
 $serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", 
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 

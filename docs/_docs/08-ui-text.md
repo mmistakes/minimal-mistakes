@@ -11,10 +11,8 @@ The English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://github.com
 
 - Arabic (عربي)
 - Brazilian Portuguese (Português brasileiro)
-- Bulgarian
 - Catalan
 - Chinese
-- Czech
 - Danish
 - Dutch
 - Finnish

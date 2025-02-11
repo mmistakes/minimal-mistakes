@@ -54,7 +54,7 @@
   }
 
   @at-root #{selector-unify(&, "blockquote")} {
-    border-inline-start-color: mix(#000, $notice-color, 10%);
+    border-left-color: mix(#000, $notice-color, 10%);
   }
 
   code {

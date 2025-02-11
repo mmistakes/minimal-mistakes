@@ -4,8 +4,10 @@
 
 #main {
   @include clearfix;
-  margin-inline: auto;
-  padding-inline: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -35,20 +37,21 @@ body {
 
 .page {
   @include breakpoint($large) {
-    float: inline-end;
+    float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-inline-end: $right-sidebar-width-narrow;
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-inline-end: $right-sidebar-width;
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
-    float: inline-start;
+    float: left;
     margin-top: 1em;
-    margin-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     clear: both;
 
@@ -56,8 +59,9 @@ body {
     .page__meta,
     .page__share {
       position: relative;
-      float: inline-start;
-      margin-inline: 0;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
       width: 100%;
       clear: both;
     }
@@ -92,7 +96,7 @@ body {
 	h1, h2, h3, h4, h5, h6 {
 		.header-link {
 			position: relative;
-			inset-inline-start: 0.5em;
+			left: 0.5em;
 			opacity: 0;
 			font-size: 0.8em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
@@ -156,7 +160,7 @@ body {
   }
 
   dd {
-    margin-inline-start: 1em;
+    margin-left: 1em;
     font-family: $sans-serif;
     font-size: $type-size-6;
   }
@@ -168,7 +172,7 @@ body {
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
-    padding-inline-start: 1.25rem;
+    padding-left: 1.25rem;
   }
 }
 
@@ -199,7 +203,8 @@ body {
     }
 
     .wrapper {
-      padding-inline: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -237,14 +242,14 @@ body {
 .page__hero-caption {
   position: absolute;
   bottom: 0;
-  inset-inline-end: 0;
+  right: 0;
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
   font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
-  text-align: end;
+  text-align: right;
   z-index: 5;
   opacity: 0.5;
   border-radius: $border-radius 0 0 0;
@@ -315,7 +320,8 @@ body {
 
 .page__meta-sep::before {
   content: "\2022";
-  padding-inline: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /*
@@ -328,13 +334,13 @@ body {
   }
 
   strong {
-    margin-inline-end: 10px;
+    margin-right: 10px;
   }
 }
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-inline-end: 5px;
+  margin-right: 5px;
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
@@ -411,7 +417,7 @@ body {
   color: $muted-text-color;
   font-size: 0.6em;
   text-transform: uppercase;
-  text-align: end;
+  text-align: right;
   text-decoration: none;
 }
 
@@ -420,8 +426,9 @@ body {
    ========================================================================== */
 
 .page__comments {
-  float: inline-start;
-  margin-inline: 0;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
   clear: both;
 }
@@ -463,7 +470,7 @@ body {
 }
 
 .comment__avatar-wrapper {
-  float: inline-start;
+  float: left;
   width: 60px;
   height: 60px;
 
@@ -487,7 +494,7 @@ body {
 }
 
 .comment__content-wrapper {
-  float: inline-end;
+  float: right;
   width: calc(100% - 60px);
 
   @include breakpoint($large) {
@@ -518,13 +525,13 @@ body {
 
 .page__related {
   @include clearfix();
-  float: inline-start;
+  float: left;
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
   @include breakpoint($large) {
-    float: inline-end;
+    float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
@@ -549,13 +556,23 @@ body {
    ========================================================================== */
 
 .wide {
-  .page, .page__related {
+  .page {
     @include breakpoint($large) {
-      padding-inline-end: 0;
+      padding-right: 0;
     }
 
     @include breakpoint($x-large) {
-      padding-inline-end: 0;
+      padding-right: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
     }
   }
 }
