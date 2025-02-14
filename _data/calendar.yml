@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A4 - Ausflug in die Büchereit und auf den Spielplatz",
-    "title": "A4 - Ausflug in die Büchereit und auf den Spielplatz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NHVmMmtlb2pjNnFuMjRvamg0bWplcXRyM2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-02-13T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-02-13T13:30:00+01:00"
-    },
-    "created": "2025-02-11T06:41:27.000Z",
-    "updated": "2025-02-11T06:41:27.165Z"
-  },
-  {
-    "image_path": null,
     "alt": "5b - Ausflug in die Gartenarbeitsschule",
     "title": "5b - Ausflug in die Gartenarbeitsschule",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-01-25T17:55:00.000Z",
     "updated": "2025-01-25T17:55:00.852Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei ",
+    "title": "A5 - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MG9udGZuNnQ4a2Rqb2dob3JicWRwYzNhZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-07T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-07T11:30:00+01:00"
+    },
+    "created": "2024-12-13T11:11:28.000Z",
+    "updated": "2024-12-13T11:11:28.795Z"
   }
 ]
