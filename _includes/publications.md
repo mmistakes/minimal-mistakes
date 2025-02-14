@@ -27,7 +27,10 @@
     <li class="publication-item">
       <span class="publication-title">Holistically Evaluating the Environmental Impact of Creating Language Models</span>
       <div class="authors"><strong>Jacob Morrison</strong>, Clara Na, Jared Fernandez, Tim Dettmers, Emma Strubell, Jesse Dodge</div>
-      <div class="venue"><em>ICLR 2025</em></div>
+      <div class="venue">
+        <em>ICLR 2025</em>
+        <span class="award">🔦 Spotlight Paper 🔦</span>
+      </div>
     </li>
 
     <li class="publication-item">
@@ -36,6 +39,7 @@
       <div class="venue">
         <em>ICLR 2025, NeurIPS 2024 Workshop on Efficient Natural Language and Speech Processing (spotlight)</em>
         <a href="https://arxiv.org/pdf/2409.02060">paper</a>
+        <span class="award">🗣️ Oral Presentation 🗣️</span>
       </div>
     </li>
 
