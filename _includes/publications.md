@@ -37,7 +37,11 @@
       <a href="https://arxiv.org/abs/2409.02060" class="publication-title">OLMoE: Open Mixture-of-Experts Language Models</a>
       <div class="authors">Niklas Muennighoff, Luca Soldaini, Dirk Groeneveld, Kyle Lo, <strong>Jacob Morrison</strong>, Sewon Min, Weijia Shi, Pete Walsh, Oyvind Tafjord, Nathan Lambert, Yuling Gu, Shane Arora, Akshita Bhagia, Dustin Schwenk, David Wadden, Alexander Wettig, Binyuan Hui, Tim Dettmers, Douwe Kiela, Ali Farhadi, Noah A. Smith, Pang Wei Koh, Amanpreet Singh, Hannaneh Hajishirzi</div>
       <div class="venue">
-        <em>ICLR 2025, NeurIPS 2024 Workshop on Efficient Natural Language and Speech Processing (spotlight)</em>
+        <em>NeurIPS 2024 Workshop on Efficient Natural Language and Speech Processing (spotlight)</em>
+        <span class="award">🔦 Spotlight Paper 🔦</span>
+      </div>
+      <div class="venue">
+        <em>ICLR 2025</em>
         <a href="https://arxiv.org/pdf/2409.02060">paper</a>
         <span class="award">🗣️ Oral Presentation 🗣️</span>
       </div>
