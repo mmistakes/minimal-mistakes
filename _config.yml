@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "HSH's Note"
 title_separator          : "|"
-subtitle                 : "A CS Student's Learning Journey"
+subtitle                 : "A CS Student's Scribbles"
 name                     : "HSH"
 description              : "HSH's Learning Blog"
 url                      : "https://HSH-11.github.io"
@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Heo seunghyun"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "이것저적 끄적이는 블로그"
+  avatar           : "/images/profile.jpg"
+  bio              : "아무거나 끄적이는 블로그"
   location         : "South Korea"
   email            :
   links:
@@ -137,6 +137,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Soongsil AI Convergence"
+      icon: "fas fa-fw fa-university"
+      url: "http://aix.ssu.ac.kr/main"
       
 
 # Site Footer
@@ -315,5 +318,8 @@ defaults:
       share: true
       related: true
       show_date: true
-    
-      
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+
+
