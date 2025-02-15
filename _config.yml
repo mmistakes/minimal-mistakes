@@ -21,7 +21,7 @@ title                    : "서정의 플밍로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "99a_99u"
-description              : "타닥타닥...작업 중!🎀"
+description              : #"타닥타닥...작업 중!🎀"
 url                      : "https://Imggaggu.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : Imggaggu/Imggaggu.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "99a_99u"
+  avatar           : /assets/images/heart.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "타닥타닥...작업 중!🎀"
+  location         : "Seoul, Korea"
+  email            : ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Imggaggu"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
