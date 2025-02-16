@@ -90,7 +90,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : swift_odyssey
+  username               : areaswiftyone
 facebook:
   username               :
   app_id                 :
@@ -127,7 +127,7 @@ author:
       url: "https://anupdsouza.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/swift_odyssey"
+      url: "https://x.com/areaswiftyone"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -139,7 +139,7 @@ author:
       # url: "https://instagram.com/"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/@swiftodyssey"
+      url: "https://www.youtube.com/@areaswiftyone"
     - label: "Medium"
       icon: "fab fa-fw fa-medium"
       url: "https://medium.com/@anup.dsouza"
@@ -155,7 +155,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/swift_odyssey"
+      url: "https://x.com/areaswiftyone"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -173,7 +173,7 @@ footer:
       # url:
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/@swiftodyssey"
+      url: "https://www.youtube.com/@areaswiftyone"
     - label: "Medium"
       icon: "fab fa-fw fa-medium"
       url: "https://medium.com/@anup.dsouza"
