@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "PM_Research_AI"
+title_separator          : "|"
+subtitle                 : "AI하는 PM"
 name                     : "K.Oliver Park"
 description              : "Hi there!"
 url                      : "https://CroinDA.github.io"
