@@ -28,7 +28,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/Croin_logo.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Kwangjin Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "AI하는 기획자의 놀이터에 오신 것을 환영합니다👋"
+  bio              : "AI하는 기획자, Croin의 블로그입니다👋"
   location         : "Seoul, South Korea"
   email            : "plks1304@gmail.com"
   links:
