@@ -81,10 +81,12 @@ client = genai.Client(api_key=userdata.get('GEMINI_API_KEY'))
 model = "gemini-2.0-flash"
 
 file_ = client.files.upload(file=f'pdfs/{filename}')
-    response = client.models.generate_content(
-        model=model, 
-        config=types.GenerateContentConfig(system_instruction=sys_instruct),
-        contents=[prompt, file_])
+start_time = datetime.now()
+response = client.models.generate_content(
+    model=model,
+    config=types.GenerateContentConfig(system_instruction=sys_instruct,
+                                       temperature=0),  # use greedy decoding
+    contents=[prompt, file_])
 ```
 
 I've used Gemini 2.0 Flash but I'll check out if Lite can do the same job and maybe faster. About the API key, you can store it in the ["secrets" feature](https://medium.com/@parthdasawant/how-to-use-secrets-in-google-colab-450c38e3ec75) in Colab which works a bit like environment variables.
