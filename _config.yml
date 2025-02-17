@@ -117,7 +117,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "AI하는 기획자의 놀이터에 오신 것을 환영합니다👋"
   location         : "Seoul, South Korea"
-  email            :
+  email            : "plks1304@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
