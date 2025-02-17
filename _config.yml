@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "PM_Research_AI"
+title                    : "PM_AI_LAB"
 title_separator          : "|"
 subtitle                 : "AI하는 PM"
 name                     : "K.Oliver Park"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Kwangjin Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "AI하는 기획자의 놀이터에 오신 것을 환영합니다👋"
+  location         : "Seoul, South Korea"
   email            :
   links:
     - label: "Email"
