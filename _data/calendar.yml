@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "GEV",
-    "title": "GEV",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MTFwMXJ0Z2RoazVhcGtoMzEzMjFhNWIwcTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-02-17T18:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-02-17T19:30:00+01:00"
-    },
-    "created": "2025-01-21T14:04:36.000Z",
-    "updated": "2025-01-21T14:04:36.027Z"
-  },
-  {
-    "image_path": null,
     "alt": "A3 - Ausflug zum Planetarium",
     "title": "A3 - Ausflug zum Planetarium",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-01-14T09:24:43.000Z",
     "updated": "2025-01-14T09:24:43.886Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei",
+    "title": "A5 - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-04T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-04T11:30:00+02:00"
+    },
+    "created": "2024-12-13T11:14:40.000Z",
+    "updated": "2024-12-13T11:14:40.459Z"
   }
 ]
