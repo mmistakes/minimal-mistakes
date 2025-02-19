@@ -20,7 +20,7 @@ title                    : "Jiyun's Data Space🔮"
 title_separator          : "|"
 subtitle                 : "Pursuing a Master’s in Urban Science & Data Science @ NYU" # site tagline that appears below site title in masthead
 name                     : "Jiyun Cho"
-description              : ""
+description              : " "
 url                      : "https://Jiyun2025.github.io/blog"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jiyun Cho"
   avatar           : "./assets/"
-  bio              : "Specializing in DEEP Learning & Machine Learning."
+  bio              : "Specializing in Deep Learning & Machine Learning."
   location         : "NY, USA"
   email            : "jc12818@nyu.edu"
   links:
@@ -119,7 +119,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://Jiyun2925.github.io"
+      url: "https://Jiyun2025.github.io"
 
 
 # Reading Files
