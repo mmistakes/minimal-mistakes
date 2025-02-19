@@ -106,16 +106,13 @@ analytics:
 author:
   name             : "Jiyun Cho"
   avatar           : "./assets/"
-  bio              : "Specializing in AI & Machine Learning."
+  bio              : "Specializing in DEEP Learning & Machine Learning."
   location         : "NY, USA"
   email            : "jc12818@nyu.edu"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Jiyun2025"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/leahmaybethelight"
 
 # Site Footer
 footer:
@@ -123,9 +120,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://Jiyun2925.github.io"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/wonatoday"
 
 
 # Reading Files
