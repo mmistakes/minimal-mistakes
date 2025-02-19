@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Jiyun Cho"
-  avatar           : "./assets/"
+  avatar           : "assets/images/IMG_8910.JPG"
   bio              : "Specializing in Deep Learning & Machine Learning."
   location         : "NY, USA"
   email            : "jc12818@nyu.edu"
