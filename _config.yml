@@ -226,18 +226,24 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+post_archive:
+  type: liquid
+  path: /posts/  
 tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
   enabled:
+    - posts
     - categories
     - tags
   layouts:
+    post: archive-taxonomy
     category: archive-taxonomy
     tag: archive-taxonomy
   permalinks:
+    post: /posts/:name/
     category: /categories/:name/
     tag: /tags/:name/
 
