@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Kwangjin Park"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Croin_logo_final.png"
   bio              : "AI하는 기획자, Croin의 블로그입니다👋"
   location         : "Seoul, South Korea"
   email            : "plks1304@gmail.com"
