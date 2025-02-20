@@ -335,4 +335,4 @@ defaults:
       toc_label: 목차     # toc 목차 라벨 문구 수정
       toc_icon: "fa-solid fa-play"
 
-# date_format: "%Y-%m-%d"
+date_format: "%Y-%m-%d"
