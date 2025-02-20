@@ -1,0 +1,23 @@
+
+
+
+1️⃣ Which of the following best describes the “vanishing gradient problem” in RNNs?
+✅ Answer: B. When gradients become very small as they are backpropagated through many time steps.
+
+Explanation: The vanishing gradient problem occurs in RNNs when the gradients shrink exponentially as they are propagated backward through time, 
+making it difficult for the network to learn long-range dependencies.
+
+2️⃣ How does an LSTM cell help mitigate the vanishing gradient problem?
+✅ Answer: A. By introducing a cell state and gating mechanisms that control information flow.
+Explanation: LSTMs address the vanishing gradient problem by introducing a cell state and gating mechanisms 
+(forget, input, and output gates), which help preserve long-term dependencies in the sequence.
+
+3️⃣ In a seq2seq model, what is the main purpose of the encoder’s final hidden state?
+✅ Answer: C. It summarizes the input sequence information and is passed to the decoder.
+Explanation: The encoder’s final hidden state acts as a context vector, summarizing the information from the input sequence and passing it to the decoder to generate the output.
+
+4️⃣ What is “teacher forcing” in the context of training seq2seq models?
+✅ Answer: C. Using the ground-truth target token at each time step as the next input during training.
+Explanation: Teacher forcing is a technique where, during training, the model is fed the ground-truth token 
+from the actual dataset at each time step instead of its own previous prediction. This helps the model converge faster 
+but can cause issues during inference if it becomes too dependent on the ground truth.
