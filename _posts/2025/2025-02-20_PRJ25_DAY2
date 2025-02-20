@@ -1,4 +1,13 @@
-
+---
+title: "2025-02-20-PRJ_25_DAY2: Basic of Deep Learning"
+layout: single
+classes: wide
+categories: PRJ_25
+read_time: True
+typora-root-url: ../../
+tag: [DLReview, PRJ_25]
+toc: true 
+---
 
 
 1️⃣ Which of the following best describes the “vanishing gradient problem” in RNNs?
