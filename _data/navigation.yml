@@ -12,7 +12,7 @@ docs:
     children: 
       - title: "AI Basic"
         url: /ai_basic/
-      - title: "CV"
+      - title: "CV(Computer Vision)"
         url: /cv/
       - title: "RecSys"
         url: /recsys/
