@@ -1,8 +1,8 @@
 ---
-title: "Company Hackathon"
+title: "Hackathon"
 layout: category
 permalink: /hackathon/
-taxonomy: Company Hackathon    # categories 값과 일치해야 함
+taxonomy: Hackathon    # categories 값과 일치해야 함
 sidebar:
     nav: "docs"
 ---
