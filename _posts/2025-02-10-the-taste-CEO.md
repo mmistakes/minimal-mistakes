@@ -2,7 +2,7 @@
 Title: The Taste CEO
 ---
 
-For the past three years, bld.ai has been operating at a different pace. After scaling fast, we shifted focus inward, streamlining operations, improving efficiency, and automating processes. The result is a business that can run lean, handle high revenue without bloating, and function with near-zero marginal cost. But as we refined our internal machine, one thing became increasingly clear. Growth was not just about operational efficiency.
+For the past three years, [bld.ai](https://www.bld.ai) has been operating at a different pace. After scaling fast, we shifted focus inward, streamlining operations, improving efficiency, and automating processes. The result is a business that can run lean, handle high revenue without bloating, and function with near-zero marginal cost. But as we refined our internal machine, one thing became increasingly clear. Growth was not just about operational efficiency.
 
 I kept searching for the answer in better go-to-market strategies, testing different playbooks, running experiments, and iterating on sales motions. But every time, it felt like I was applying the wrong framework. The traditional approaches were not broken, but they were not the real answer either.
 
@@ -19,10 +19,11 @@ This is the evolution of leadership.
 ## The Evolution of the CEO
 
 For centuries, leadership has evolved alongside the dominant skill set of the era.
-	•	In early societies, strength determined leadership. The strongest warrior led the tribe.
-	•	As civilization advanced, legal and financial expertise became the path to power. The best lawyers and financiers rose to the top, shaping industries and influencing economies.
-	•	With the rise of technology, the best CEOs were often technologists. They were the ones who built the infrastructure of the internet and laid the foundation for the modern digital economy.
-	•	Then came the product-driven leaders. These founders obsessed over user experience and design, ensuring that every touchpoint of their product felt intuitive, seamless, and delightful.
+
+1. In early societies, strength determined leadership. The strongest warrior led the tribe.
+2. As civilization advanced, legal and financial expertise became the path to power. The best lawyers and financiers rose to the top, shaping industries and influencing economies.
+3. With the rise of technology, the best CEOs were often technologists. They were the ones who built the infrastructure of the internet and laid the foundation for the modern digital economy.
+4. Then came the product-driven leaders. These founders obsessed over user experience and design, ensuring that every touchpoint of their product felt intuitive, seamless, and delightful.
 
 Today, the ultimate skill set is something different. It is taste.
 
