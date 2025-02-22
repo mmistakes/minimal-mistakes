@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Category"
-    url: /categories/
+  # - title: "Category"
+  #   url: /categories/
   - title: "Tag"
     url: /tags/
   - title: "Search"
@@ -9,7 +9,7 @@ main:
 
 docs:
   - title: "NAVER AI Tech"
-    children: 
+    children:
       - title: "AI Basic"
         url: /ai_basic/
       - title: "CV(Computer Vision)"

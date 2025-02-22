@@ -292,6 +292,12 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+  title_translations:
+    optim_lightweight: "최적화 및 경량화"
+    ai_basic: "AI Basic"
+    cv: "CV(Computer Vision)"
+    recsys: "RecSys"
+    hackathon: "Company Hackathon"
 tag_archive:
   type: liquid
   path: /tags/
