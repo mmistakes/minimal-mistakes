@@ -354,3 +354,11 @@ defaults:
         nav: "docs"   # posts에도 동일하게 적용
 
 date_format: "%Y-%m-%d"
+
+# Breadcrumb title mappings
+breadcrumb_titles:
+  ai_basic: "AI Basic"
+  cv: "CV(Computer Vision)"
+  recsys: "RecSys"
+  model_compression: "최적화 및 경량화"
+  hackathon: "Company Hackathon"

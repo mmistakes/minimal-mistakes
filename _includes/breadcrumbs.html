@@ -29,10 +29,9 @@
         <li class="current"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</li>
       {% else %}
         {% assign i = i | plus: 1 %}
-        {% assign crumb_path_parts = crumb | append: '/index.html' %}
-        {% assign current_page = site.pages | where: "permalink", crumb_path_parts | first %}
-        {% if current_page %}
-          {% assign crumb_title = current_page.title %}
+        {% assign crumb_path_current = crumb | downcase %}
+        {% if site.breadcrumb_titles[crumb_path_current] %}
+          {% assign crumb_title = site.breadcrumb_titles[crumb_path_current] %}
         {% else %}
           {% assign crumb_title = crumb | url_decode | replace: '-', ' ' | capitalize %}
         {% endif %}
