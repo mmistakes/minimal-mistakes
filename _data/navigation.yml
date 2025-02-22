@@ -16,8 +16,8 @@ docs:
         url: /cv/
       - title: "RecSys"
         url: /recsys/
-      - title: "최적화 및 경량화"
-        url: /optim_lightweight/
+      - title: "경량화"
+        url: /lightweight/
       - title: "Company Hackathon"
         url: /hackathon/
 
