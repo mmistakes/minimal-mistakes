@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "PM_AI_LAB"
 title_separator          : "|"
-subtitle                 : "AI하는 PM"
+subtitle                 : "Since 2025"
 name                     : "K.Oliver Park"
 description              : "Hi there!"
 url                      : "https://CroinDA.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Kwangjin Park"
   avatar           : "/images/Croin_logo_final.png"
-  bio              : "AI하는 기획자, Croin의 블로그입니다👋"
+  bio              : "AI하는 PM, Croin의 블로그입니다👋"
   location         : "Seoul, South Korea"
   # email            : "plks1304@gmail.com" # 중복 삭제
   links:
