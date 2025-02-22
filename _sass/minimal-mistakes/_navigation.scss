@@ -16,6 +16,7 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  font-size: $type-size-5;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -24,7 +25,7 @@
   ol {
     padding: 0;
     list-style: none;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
 
     @include breakpoint($large) {
       float: inline-end;
@@ -42,6 +43,10 @@
 
   .current {
     font-weight: bold;
+  }
+
+  a {
+    font-size: $type-size-5;
   }
 }
 
