@@ -331,6 +331,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
       sidebar:
         nav: "docs"    # navigation.yml의 docs 메뉴를 사이드바에 표시
   
@@ -350,6 +351,7 @@ defaults:
       toc_sticky: true    # toc 사이드바 고정
       toc_label: 목차     # toc 목차 라벨 문구 수정
       toc_icon: "fa-solid fa-play"
+      classes: wide
       sidebar:
         nav: "docs"   # posts에도 동일하게 적용
 
