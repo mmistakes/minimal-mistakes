@@ -7,3 +7,29 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// 본문 폰트 사이즈 조절
+.page__content {
+  font-size: 0.85em !important; // 기본 사이즈의 85% 크기로 설정
+  
+  // 헤더 크기 조절
+  h1 { font-size: 1.5em !important; }
+  h2 { font-size: 1.3em !important; }
+  h3 { font-size: 1.1em !important; }
+  h4 { font-size: 1em !important; }
+  
+  // 수식 폰트 사이즈 유지
+  .math { 
+    font-size: 1em !important; 
+  }
+}
+
+// 목차 폰트 사이즈 조절
+.toc {
+  font-size: 0.85em !important;
+}
+
+// 사이드바 폰트 사이즈 조절
+.sidebar {
+  font-size: 0.85em !important;
+}
