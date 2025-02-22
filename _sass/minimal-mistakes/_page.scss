@@ -561,9 +561,9 @@ body {
 }
 
 .toc {
-  position: fixed;
+  position: absolute;
   top: 100px;
-  right: 20px;
+  right: 0;
   width: 200px;
   max-height: 80vh;
   overflow-y: auto;
@@ -575,5 +575,5 @@ body {
 }
 
 .page__content {
-  margin-right: 240px;
+  margin-right: 220px;
 }
