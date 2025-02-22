@@ -34,6 +34,8 @@ body {
 }
 
 .page {
+  display: flex;
+  align-items: flex-start;
   @include breakpoint($large) {
     float: inline-end;
     width: calc(100%);   // calc(100%)로 설정 시, 전체 영역으로 내용 확대  - #{$right-sidebar-width-narrow}
@@ -561,19 +563,13 @@ body {
 }
 
 .toc {
-  position: absolute;
-  top: 100px;
-  right: 0;
   width: 200px;
-  max-height: 80vh;
-  overflow-y: auto;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  position: sticky;
+  top: 100px;
 }
 
 .page__content {
-  margin-right: 220px;
+  flex: 1;
+  margin-right: 20px;
 }
