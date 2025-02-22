@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A3 - Ausflug zum Spielplatz",
-    "title": "A3 - Ausflug zum Spielplatz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NmdjZjFoN2RiZmt1aTQ5anNubWlta3U5MmYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-02-21T09:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-02-21T13:30:00+01:00"
-    },
-    "created": "2025-01-29T08:17:21.000Z",
-    "updated": "2025-02-18T12:55:26.184Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A3 - Ausflug in die Bücherei",
-    "title": "A3 - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjI2MmwyYnJoNWFwMDU0MDQ1OWZhM3M1OXUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-02-28T07:45:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-02-28T11:00:00+01:00"
-    },
-    "created": "2025-02-10T07:38:15.000Z",
-    "updated": "2025-02-10T07:38:15.923Z"
-  },
-  {
-    "image_path": null,
     "alt": "Schulfasching",
     "title": "Schulfasching",
     "excerpt": null,
@@ -69,6 +35,23 @@
   },
   {
     "image_path": null,
+    "alt": "A3 - Ausflug in die Bücherei",
+    "title": "A3 - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjI2MmwyYnJoNWFwMDU0MDQ1OWZhM3M1OXUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-13T07:45:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-13T11:00:00+01:00"
+    },
+    "created": "2025-02-10T07:38:15.000Z",
+    "updated": "2025-02-21T06:34:09.382Z"
+  },
+  {
+    "image_path": null,
     "alt": "A3 - Ausflug zum Planetarium",
     "title": "A3 - Ausflug zum Planetarium",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-01-14T09:24:43.000Z",
     "updated": "2025-01-14T09:24:43.886Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei",
+    "title": "A5 - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-04T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-04T11:30:00+02:00"
+    },
+    "created": "2024-12-13T11:14:40.000Z",
+    "updated": "2024-12-13T11:14:40.459Z"
   }
 ]
