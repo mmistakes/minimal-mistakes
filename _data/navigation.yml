@@ -8,12 +8,18 @@ main:
     url: /search/
 
 docs:
-  - title: "대목차"
+  - title: "NAVER AI Tech"
     children: 
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "AI Basic"
+        url: /ai_basic/
+      - title: "CV"
+        url: /CV/
+      - title: "RecSys"
+        url: /recsys/
+      - title: "AudioLM"
+        url: /audiolm/
+      - title: "최적화 및 경량화"
+        url: /optimization_lightweight/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
