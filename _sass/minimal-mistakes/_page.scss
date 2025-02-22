@@ -34,8 +34,6 @@ body {
 }
 
 .page {
-  display: flex;
-  align-items: flex-start;
   @include breakpoint($large) {
     float: inline-end;
     width: calc(100%);   // calc(100%)로 설정 시, 전체 영역으로 내용 확대  - #{$right-sidebar-width-narrow}
@@ -560,16 +558,4 @@ body {
       padding-inline-end: 0;
     }
   }
-}
-
-.toc {
-  width: 200px;
-  margin-left: 20px;
-  position: sticky;
-  top: 100px;
-}
-
-.page__content {
-  flex: 1;
-  margin-right: 20px;
 }
