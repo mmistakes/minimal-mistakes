@@ -13,13 +13,13 @@ docs:
       - title: "AI Basic"
         url: /ai_basic/
       - title: "CV"
-        url: /CV/
+        url: /cv/
       - title: "RecSys"
         url: /recsys/
       - title: "AudioLM"
         url: /audiolm/
       - title: "최적화 및 경량화"
-        url: /optimization_lightweight/
+        url: /optim_lightweight/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
