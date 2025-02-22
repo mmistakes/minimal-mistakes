@@ -1,5 +1,6 @@
 ---
 title: "Company Hackathon"
+breadcrumb_title: "Company Hackathon"
 layout: category
 permalink: /hackathon/
 taxonomy: Hackathon    # categories 값과 일치해야 함
