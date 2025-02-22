@@ -16,10 +16,10 @@ docs:
         url: /cv/
       - title: "RecSys"
         url: /recsys/
-      - title: "AudioLM"
-        url: /audiolm/
       - title: "최적화 및 경량화"
         url: /optim_lightweight/
+      - title: "Company Hackathon"
+        url: /hackathon/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
