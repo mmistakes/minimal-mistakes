@@ -117,14 +117,14 @@ author:
   avatar           : "/images/Croin_logo_final.png"
   bio              : "AI하는 기획자, Croin의 블로그입니다👋"
   location         : "Seoul, South Korea"
-  email            : "plks1304@gmail.com"
+  # email            : "plks1304@gmail.com" # 중복 삭제
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:plks1304@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://croinda.github.io/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://croinda.github.io/"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   # url: "https://twitter.com/"
