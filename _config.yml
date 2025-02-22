@@ -350,8 +350,8 @@ defaults:
       toc_sticky: true    # toc 사이드바 고정
       toc_label: 목차     # toc 목차 라벨 문구 수정
       toc_icon: "fa-solid fa-play"
-      # sidebar:
-      #   nav: "docs"   # posts에도 동일하게 적용
+      sidebar:
+        nav: "docs"   # posts에도 동일하게 적용
 
 date_format: "%Y-%m-%d"
 
