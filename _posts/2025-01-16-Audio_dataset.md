@@ -4,8 +4,6 @@ title: "Audio Benchmark Dataset(SALMONN: Paper Review)"
 categories: "hackathon"    # navigation.yml의 url과 일치하도록 수정
 tag: [AI, Paper review, AudioLM, Lightweight]  # 단순 관련 태그 추가
 author_profile: false # 블로그 글 안에서는 좌측 프로필 안뜨도록
-# sidebar: 
-#     nav: "docs"
 # search: false   # 검색기능으로 찾을 수 없도록
 ---
 
