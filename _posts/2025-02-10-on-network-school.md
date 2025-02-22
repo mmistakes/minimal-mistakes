@@ -40,7 +40,7 @@ The moment someone lands on bld.ai, they’ll be greeted by a Welcome Agent that
 
 1. Clients → Sent to the Proposal Agent
 2. Service Providers → Onboarded via the Service Agent
-3. IP Vendors → Connected to the IP Onboarding Agent
+3. Solution Providers (e.g., SaaS) → Connected to the Solution Agent
 
 These agents will be trained on our legal documents and workflows to speed up onboarding and reduce unnecessary back-and-forth.
 
