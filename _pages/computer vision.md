@@ -1,9 +1,8 @@
 ---
 title: "CV(Computer Vision)"
-breadcrumb_title: "CV(Computer Vision)"
 layout: category
 permalink: /cv/
-taxonomy: CV   # categories 값과 일치해야 함
+taxonomy: CV(Computer Vision)   # categories 값과 일치해야 함
 sidebar:
     nav: "docs"
 ---
