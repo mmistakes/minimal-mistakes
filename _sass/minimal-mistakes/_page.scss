@@ -561,11 +561,19 @@ body {
 }
 
 .toc {
-  float: right;
+  position: fixed;
+  top: 100px;
+  right: 20px;
   width: 200px;
-  margin-left: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page__content {
-  margin-right: 220px;
+  margin-right: 240px;
 }
