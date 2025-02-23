@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "PM_AI_LAB"
 title_separator          : "|"
-subtitle                 : "Since 2025"
+subtitle                 : "Since 2024"
 name                     : "K.Oliver Park"
 description              : "Hi there!"
 url                      : "https://CroinDA.github.io"
@@ -31,7 +31,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
+copyright                : "PM_AI_LAB" # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -134,6 +134,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/CroinDA"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://github.com/CroinDA"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/research.ai.pm/"
@@ -152,6 +155,9 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      url: "https://github.com/CroinDA"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://github.com/CroinDA"
     # - label: "GitLab"
     #   icon: "fab fa-fw fa-gitlab"
