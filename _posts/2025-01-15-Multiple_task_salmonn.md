@@ -76,7 +76,7 @@ author_profile: false # 블로그 글 안에서는 좌측 프로필 안뜨도록
   - **LibriSpeech**: 성별 정보가 포함된 음성 데이터 활용
 - **목적**: SALMONN이 화자의 성별을 정확히 분류할 수 있도록 학습
 
-## 10~12 - QA (ChatGPT를 활용해서 만든 텍스트 캡셔닝 task)
+## 10~12 - QA (ChatGPT를 활용한 텍스트 캡셔닝 task)
 
 
 
