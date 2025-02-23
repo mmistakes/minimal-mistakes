@@ -1,9 +1,10 @@
 ---
 layout: single
 title:  "처음 포스팅!"
-categories: "model_compression"
-tags: [python, ai, lightweight]
-author_profile: false # 블로그 글 안에서는 좌측 프로필 안뜨도록
+# categories: ""
+permalink: /
+tags: [pm, ai, ]
+author_profile: true # 좌측 author profile 보이도록 설정 여부
 sidebar: 
     nav: "docs"
 # search: false   # 검색기능으로 찾을 수 없도록
@@ -32,7 +33,7 @@ sidebar:
 
 # 오늘 처음 블로그를 만들었어요
 
-앞으로 꾸준히 적어볼께요!
+앞으로 꾸준히 적어볼게요!
 
 
 
