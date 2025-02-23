@@ -8,6 +8,8 @@ main:
     url: /search/
 
 docs:
+  # - title: "안녕하세요! Welcome to PM_AI_LAB🙋"
+  #   url: /first/
   - title: "NAVER AI Tech"
     children:
       - title: "AI Basic"

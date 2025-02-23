@@ -17,11 +17,11 @@ minimal_mistakes_skin    : # "air", "aqua", "contrast", "dark", "dirt", "neon", 
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "PM_AI_LAB"
+title                    : "PM AI LAB"
 title_separator          : "|"
 subtitle                 : "Since 2024"
 name                     : "K.Oliver Park"
-description              : "Hi there!"
+description              : "Sincerely, Research in AI🧐"
 url                      : "https://CroinDA.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -31,7 +31,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
-copyright                : "PM_AI_LAB" # "copyright" name, defaults to site.title
+copyright                : "by. Kwangjin Park" # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -77,7 +77,7 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : "KJ.Oliver Park" # true (default), false
+  powered_by             : "croinda" # true (default), false
 google:
   search_engine_id       : "23c809a7d89c1406d"
   instant_search         : true # false (default), true
