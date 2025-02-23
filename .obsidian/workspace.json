@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "e98abb0b770c88ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "a688ffe87bd99057",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9c6c653669eafff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-01-15-SALMONN.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-01-15-SALMONN"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0ee95b62ae1c765",
+    "type": "split",
+    "children": [
+      {
+        "id": "47a1db886c803b7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "37bf1aed25081d32",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "efdd3fcbd4dbc3ff",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "c71b3a14569a8ef0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "231b5e00ff94988c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8671be05a6e7097",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa587d63d3cf24c8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2025-01-15-SALMONN.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-01-15-SALMONN의 백링크"
+            }
+          },
+          {
+            "id": "abcdf685927ca7ef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2025-01-15-SALMONN.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2025-01-15-SALMONN의 나가는 링크"
+            }
+          },
+          {
+            "id": "0f1515be93b6fad9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "51613b1d6e60db2d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2025-01-15-SALMONN.md"
+              },
+              "icon": "lucide-list",
+              "title": "2025-01-15-SALMONN 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "e9c6c653669eafff",
+  "lastOpenFiles": [
+    "_posts/2025-01-16-Audio_dataset.md",
+    "_posts/2025-01-15-SALMONN.md"
+  ]
+}
