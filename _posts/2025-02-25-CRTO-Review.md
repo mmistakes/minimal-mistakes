@@ -1,9 +1,11 @@
 ---
-title:  "CRTO Review: Cobalt Strike"
+title:  "CRTO Review: Learning the Foundations of Cobalt Strike"
 date:   2025-02-25
 tags: [posts]
 excerpt: "CRTO Review"
 ---
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/CRTO-Review-Header.JPG" alt="">
 
 ## Introduction
 
@@ -70,11 +72,11 @@ I highly recommend the CRTO course for anyone interested in red teaming or looki
 
 For red teamers, the course demonstrates how to conduct engagements stealthily using Cobalt Strike. For blue teamers, it highlights common attack techniques and showcases how to detect them using Kibana logs.
 
-At the end of the day, security is a continuous learning process. Every course builds upon previous knowledge, and CRTO reinforced that AV alone won’t keep attackers out. Misconfigurations remain a massive security risk, and understanding how to exploit them is crucial to strengthening defenses.
+At the end of the day, security is a continuous learning process. Every course builds upon previous knowledge, and will improve your proficiency across all cyber focuses.
 
 ### What’s Next?
 
-I’ve started **Learn Unlimited** and will be working towards the **Offensive Security Web Expert (OSWE)** certification. This will shift my focus toward web application security, diving into code auditing and advanced web exploitation techniques.
+I’ve started **Learn Unlimited** and will be working towards the **Offensive Security Web Expert (OSWE)** certification with the goal of earning the OSCE3 certification this year.
 
 ## References
 
