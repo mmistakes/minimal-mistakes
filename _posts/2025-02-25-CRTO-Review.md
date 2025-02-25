@@ -7,7 +7,7 @@ excerpt: "CRTO Review"
 
 ## Introduction
 
-With some extra time to use during the 2024 holiday season I decided to purchase and complete the [Red Team Operator (CRTO) Course](https://training.zeropointsecurity.co.uk/courses/red-team-ops) by Zero Point Security, going for the 30 days of lab access (it's actually 40 total hours of lab time that can be used over the course of a month). For the past year, my focus has mainly been geared toward defensive security engineering and vulnerability research, having recently completed the Offensive Security Exploit Developer (OSED) certification in October. And so, I wanted to get my feet wet learning about Cobalt Strike and anti-virus evasion in preparation for my pursuit of the OSEP certification later in the year.
+With some extra time to use during the 2024 holiday season I decided to purchase and complete the [Red Team Operator (CRTO) Course](https://training.zeropointsecurity.co.uk/courses/red-team-ops) by Zero Point Security, going for the 30 days of lab access (it's actually 40 total hours of lab time that can be used over the course of a month). For the past year, my focus has mainly been geared toward defensive security engineering and vulnerability research, having recently completed the Offensive Security Exploit Developer (OSED) certification in October. And so, I wanted to get my feet wet learning about Cobalt Strike and anti-virus evasion in preparation for my pursuit of the OSEP certification in 2025.
 
 Prior to taking the RTO course, I had barely touched Cobalt Strike, having mainly used PowerShell Empire or Sliver whenever I needed a C2 (I aint got money for CB!).
 
