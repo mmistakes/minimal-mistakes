@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-01-15-SALMONN.md",
+                "file": "_posts/2025-01-16-Audio_dataset.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-15-SALMONN"
+              "title": "2025-01-16-Audio_dataset"
             }
           }
         ]
@@ -165,8 +165,19 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
+    "_posts/2024-08-05-python_day_1.md",
+    "_posts/2025-01-16-salmonn-audio_dataset.md",
+    "_posts/2025-01-15-salmonn-multiple_task.md",
+    "_posts/2025-01-15-SALMONN.md",
+    "_posts/2025-01-16-audio_dataset.md",
+    "_posts/2025-01-15-salmonn.md",
+    "_posts/2025-01-15-multiple_task_salmonn.md",
+    "_posts/2024-08-05-python_day1.md",
+    "2025-02-25.md",
+    "_posts/2024-08-05-Python_Day1.md",
+    "_pages/python_algorithm.md",
+    "_posts/2024-08-05-Python-Day1.md",
     "images/2025-01-15-SALMONN/Multiple_task.png",
-    "_posts/2025-01-16-Audio_dataset.md",
-    "_posts/2025-01-15-SALMONN.md"
+    "_posts/2025-01-16-Audio_dataset.md"
   ]
 }
