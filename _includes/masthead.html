@@ -1,5 +1,7 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
-
+<a class="site-logo" href="{{ '/' | relative_url }}">
+  <img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}">
+</a>
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
