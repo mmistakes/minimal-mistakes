@@ -1,0 +1,69 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+.tab-container{
+    border-radius: .5rem .5rem 0 0;
+    border: .1rem solid var(--table-border-color);
+    padding-top: .25rem;
+    margin: 1rem 0;
+}
+.tab-container .tabs{
+    color: var(--text-muted);
+    display: flex;
+    margin-bottom: 0;
+    overflow-x: auto;
+    padding: 0 !important;
+    margin: 0;
+
+    /* no selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tab-container .tabs .tab-item {
+    cursor: pointer;
+    display: inline-flex;
+    padding: .25rem 1rem .5rem;
+    font-size: 1rem;
+    white-space:nowrap;
+}
+.tab-container .tabs .tab-item.active {
+    color: var(--text-normal);
+    background-color: var(--code-background);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.tab-container .tab-content {
+    display: none;
+}
+.tab-container .tab-content.active {
+    display: block !important;
+}
+
+.tab-container .tab-content > *,
+.tab-container .tab-content table {
+    margin: 0;
+}
+
+.tab-container .tab-content pre[class*="language-"] {
+    border-radius: unset;
+}
+
+/* settings */
+
+.cbt-settings .setting-item{
+    border: 0;
+    padding: .25rem 0;
+}
+.cbt-settings .setting-item-name > span{
+    vertical-align: middle;
+    padding-left: .5rem;
+}

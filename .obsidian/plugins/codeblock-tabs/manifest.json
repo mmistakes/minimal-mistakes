@@ -1,0 +1,11 @@
+{
+	"id": "codeblock-tabs",
+	"name": "CodeBlock Tabs",
+	"version": "1.0.0",
+	"minAppVersion": "0.0.1",
+	"description": "Create tab group for contiguous CodeBlocks.",
+	"author": "Jemin Mau",
+	"authorUrl": "https://github.com/JeminMau",
+	"fundingUrl": "https://buymeacoffee.com/JeminMau",
+	"isDesktopOnly": false
+}
