@@ -65,16 +65,23 @@ layout: default
       {% include post_pagination.html %}
     </div>
 
-    {% if site.comments.provider and page.comments %}
-      {% if jekyll.environment == 'production' %}
-        {% include comments.html %}
-      {% else %}
-        <p>
-          Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
-          but are disabled in non-production environments.
-        </p>
+      {% if page.comments %}
+        <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function () {
+            this.page.url = "{{ page.url | absolute_url }}";  
+            this.page.identifier = "{{ page.id }}"; 
+          };
+          (function() {  
+            var d = document, s = d.createElement('script');
+            s.src = 'https://jongs-blog.disqus.com/embed.js';  
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the comments.</noscript>
       {% endif %}
-    {% endif %}
+
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
