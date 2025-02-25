@@ -7,11 +7,11 @@ excerpt: "CRTO Review"
 
 ## Introduction
 
-I had some extra time in December, so I decided to purchase the [Red Team Operator (CRTO) Course](https://training.zeropointsecurity.co.uk/courses/red-team-ops) by Zero Point Security, going for the 30 days of lab access (it's actually 40 total hours of lab time that can be used over the course of a month). I had recently completed the Offensive Security Exploit Developer (OSED) certification in October and wanted to have a little fun learning more about Cobalt Strike, and prepping myself for when I puruse OSEP later in the year.
+With some extra time to use during the 2024 holiday season I decided to purchase and complete the [Red Team Operator (CRTO) Course](https://training.zeropointsecurity.co.uk/courses/red-team-ops) by Zero Point Security, going for the 30 days of lab access (it's actually 40 total hours of lab time that can be used over the course of a month). For the past year, my focus has mainly been geared toward defensive security engineering and vulnerability research, having recently completed the Offensive Security Exploit Developer (OSED) certification in October. And so, I wanted to get my feet wet learning about Cobalt Strike and anti-virus evasion in preparation for my pursuit of the OSEP certification later in the year.
 
-Prior to taking the course, I had barely touched Cobalt Strike, having mainly used PowerShell Empire or Sliver for C2's.
+Prior to taking the RTO course, I had barely touched Cobalt Strike, having mainly used PowerShell Empire or Sliver whenever I needed a C2 (I aint got money for CB!).
 
-The CRTO course provided an excellent hands-on experience focusing on Cobalt Strike, initial compromise, lateral movement, and defense evasion—all within the context of realistic Active Directory environments. Having previously earned the OSCP back in 2023, I found this course to be a natural progression, especially in terms of offensive security in corporate networks.
+The CRTO course provided an excellent hands-on experience focusing on Cobalt Strike, initial compromise, lateral movement, and defense evasion—all within the context of Active Directory environments. Having previously earned the OSCP back in 2023, I find this course to be a natural progression for those interested in becoming red teamers, as this provides the knowledge required to build a C2 framework, and the specific detection methods that can be used to discover your own malicious actions.
 
 ## Course Material
 
@@ -28,18 +28,16 @@ The course provides a structured approach to red teaming using Cobalt Strike, co
 
 ## Exam
 
+The CRTO exam is extremely fair and structured like a CTF, in which you need 6 flags out of 8 total to pass the test. You are given 48 hours of lab time to use over the course of four days, allowing for flexibility in how you approach it. 
 
-The CRTO exam is extremely fair and well-structured. You are given 48 hours of lab time to use over the course of four days, allowing for flexibility in how you approach it. 
+I completed the exam in one session, taking about six-eight hours to finish. While the exam combines multiple techniques from the course, none of the challenges felt unreasonable. 
 
-I completed the exam in one session, taking about six hours to finish. While the exam combines multiple techniques from the course, none of the challenges felt unreasonable. 
-
-Some portions were more challenging than others, but overall, the exam was a great way to reinforce what I had learned in the labs.
 
 ## Thoughts
 
-### Application of OSCP Knowledge
+### Red Teaming, not Pen Testing
 
-The OSCP primarily focuses on enumeration and exploiting vulnerable software components. While there is some Active Directory content, it doesn’t go as in-depth as CRTO. This course shifts the focus toward real-world red teaming tactics, where the goal is not just to exploit software vulnerabilities but also to abuse misconfigurations within enterprise networks.
+The OSCP primarily focuses on penetration testing - enumeration and exploiting vulnerable services. While there is some Active Directory content, it doesn’t go as in-depth as CRTO. This course shifts the focus toward real-world red teaming tactics, where the goal is to abuse misconfigurations within enterprise networks and emulate the actions of an advanced threat actor within a network.
 
 In reality, vulnerability scanners can help identify outdated software, but AD misconfigurations often require human analysis and creative attack chains to exploit effectively. This makes the CRTO course highly relevant for modern penetration testers and red teamers.
 
@@ -48,7 +46,7 @@ In reality, vulnerability scanners can help identify outdated software, but AD m
 One of the key takeaways was seeing how much easier red teaming operations become when leveraging Cobalt Strike’s built-in features and additional plugins. Instead of manually chaining together various tools, Cobalt Strike provides a centralized framework for execution, persistence, and evasion.
 
 - **Real-World Application** – The course effectively simulates how attackers move stealthily through networks.
-- **WMI Persistence** – Learning persistence techniques that can evade traditional defenses.
+- **Persistence** – Learning persistence techniques that can evade traditional defenses.
 - **Beaconing & Covert Channels** – Understanding how traffic can blend into normal network activity.
 - **Red Team Exercises** – Inspired me to think about designing red team engagements tailored to my organization’s infrastructure.
 
