@@ -15,11 +15,11 @@
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "jong's blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : "Improve yourself every day."
 name                     : "jongtae12"
 description              : "jong's study"
 url                      : "https://jongtae12.github.io"
@@ -114,10 +114,10 @@ analytics:
 # Site Author
 author:
   name             : "jongtae12"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "jong's study post"
   location         : "incheon"
-  email            :
+  email            : "whdxo0705@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
