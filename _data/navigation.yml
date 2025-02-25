@@ -14,6 +14,8 @@ docs:
     children:
       - title: "AI Basic"
         url: /ai_basic/
+      - title: "코테 공부 기록(Python)"
+        url: /python_algorithm/
       - title: "CV(Computer Vision)"
         url: /cv/
       - title: "RecSys"

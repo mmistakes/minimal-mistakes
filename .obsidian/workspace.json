@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a688ffe87bd99057",
+        "id": "eaf7bfbcca9fc977",
         "type": "tabs",
         "children": [
           {
-            "id": "e9c6c653669eafff",
+            "id": "11f6c4fab5c13c44",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-01-16-Audio_dataset.md",
+                "file": "_pages/python_algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-16-Audio_dataset"
+              "title": "python_algorithm"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2025-01-15-SALMONN.md",
+                "file": "_pages/python_algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-01-15-SALMONN의 백링크"
+              "title": "python_algorithm 의 백링크"
             }
           },
           {
@@ -145,8 +145,19 @@
               "icon": "lucide-list",
               "title": "2025-01-15-SALMONN 개요"
             }
+          },
+          {
+            "id": "ac87c5e546195a61",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -160,24 +171,24 @@
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e9c6c653669eafff",
+  "active": "11f6c4fab5c13c44",
   "lastOpenFiles": [
     "_posts/2024-08-05-python_day_1.md",
-    "_posts/2025-01-16-salmonn-audio_dataset.md",
-    "_posts/2025-01-15-salmonn-multiple_task.md",
-    "_posts/2025-01-15-SALMONN.md",
-    "_posts/2025-01-16-audio_dataset.md",
     "_posts/2025-01-15-salmonn.md",
-    "_posts/2025-01-15-multiple_task_salmonn.md",
-    "_posts/2024-08-05-python_day1.md",
-    "2025-02-25.md",
-    "_posts/2024-08-05-Python_Day1.md",
+    "_posts/2025-01-16-salmonn-audio_dataset.md",
     "_pages/python_algorithm.md",
-    "_posts/2024-08-05-Python-Day1.md",
-    "images/2025-01-15-SALMONN/Multiple_task.png",
-    "_posts/2025-01-16-Audio_dataset.md"
+    "_posts/2025-01-15-salmonn-multiple_task.md",
+    "2025-02-25.md",
+    "_pages/model_compression.md",
+    "_pages/recsys.md",
+    "_pages/category-archieve.md",
+    "_pages/computer vision.md",
+    "_pages/hackathon.md",
+    "2025-02-25 python.md",
+    "images/2025-01-15-SALMONN/Multiple_task.png"
   ]
 }
