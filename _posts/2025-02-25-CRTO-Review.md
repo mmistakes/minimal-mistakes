@@ -9,9 +9,9 @@ excerpt: "CRTO Review"
 
 ## Introduction
 
-With some extra time to burn during the 2024 holiday season I decided to purchase and complete the [Red Team Operator (CRTO) Course](https://training.zeropointsecurity.co.uk/courses/red-team-ops) by Zero Point Security, going for the 30 days of lab access (it's actually 40 total hours of lab time that can be used over the course of a month). For the past year, my focus has mainly been geared toward defensive security operations and vulnerability research, having departed from managing a SOC in early 2024 and recently earnining the Offensive Security Exploit Developer (OSED) certification in October. And so, I wanted to get my feet wet learning about Cobalt Strike and anti-virus evasion in preparation for my pursuit of the OSEP certification in 2025.
+With some extra time to burn during the 2024 holiday season I decided to purchase and complete the [Red Team Operator (CRTO) Course](https://training.zeropointsecurity.co.uk/courses/red-team-ops) by Zero Point Security, going for the 30 days of lab access (it's actually 40 total hours of lab time that can be used over the course of a month). For the past year, my focus has mainly been geared toward defensive security operations and vulnerability research, having departed from managing a SOC in early 2024 and recently earned the Offensive Security Exploit Developer (OSED) certification in October. And so, I wanted to get my feet wet learning about Cobalt Strike and anti-virus evasion in preparation for my pursuit of the OSEP certification in 2025.
 
-Prior to taking this course, I had barely touched Cobalt Strike, but had used other C2 frameworks like PowerShell Empire and Sliver. But after taking this course and taking advantage of the hands-on appplication provided with the lab access, I am more proficient with CB than I am with the other frameworks. This course covers the tactics required of an entry level red team from initial compromise to lateral movement and defense evasion—all within the context of Active Directory environments. Having previously earned the OSCP back in 2023, I find this course to be a natural progression for those interested in red teaming.
+Prior to taking this course, I had barely touched Cobalt Strike, but had used other C2 frameworks like PowerShell Empire and Sliver. After taking this course and making use of the hands-on appplication provided with the lab access, I am more proficient with CB than I am with the other frameworks. This course covers the tactics required of an entry level red teamer from initial compromise to lateral movement and defense evasion—all within the context of Active Directory environments. Having previously earned the OSCP back in 2023, I find this course to be a natural progression for those interested in red teaming.
 
 ## Course Material
 
@@ -39,17 +39,11 @@ One of the key takeaways was seeing how much easier red teaming operations becom
 - **Real-World Application** – The course effectively simulates how attackers move stealthily through networks.
 - **Persistence** – Learning persistence techniques that can evade traditional defenses.
 - **Beaconing & Covert Channels** – Understanding how traffic can blend into normal network activity.
-- **Red Team Exercises** – Inspired me to think about designing red team engagements tailored to my organization’s infrastructure.
+- **Payload Creation** – Using templates to create a variety of payloads that evade Anti-Virus (AV) mechanisms.
 
 ### Blue Team & Detection Insights
 
-One standout feature of the labs was the integration with Kibana, allowing me to analyze my actions from a defender’s perspective. As a red teamer, this provides you with: 1) an understanding of your footprints and the kinds of artifacts being left behind, 2) actionable detections or queries that you can provide the blue team to detect your actions to improve their detection mechanisms, and 3) reinforces the importance of proper network segmentation, logging, and behavioral analysis, as actions taken are actively evading AV mechanisms that are in place.
-
-### A Natural Follow-Up to OSCP
-
-- **OSCP** teaches methodology—how to think critically about security problems and navigate networks logically.
-- **CRTO** provides a structured medium to execute attacks efficiently using Cobalt Strike, streamlining red team operations.
-- **Windows-Centric Focus** – While OSCP includes Linux, CRTO is much deeper into Windows environments, making it highly applicable to corporate networks where Active Directory dominates.
+One standout feature of the labs was the integration with Kibana, allowing me to analyze my actions from a defender’s perspective. As a red teamer, this provides you with: 1) an understanding of your footprints and the kinds of artifacts being left behind, 2) actionable detections or queries that you can provide the blue team to uncover your actions to improve their detection mechanisms, and 3) reinforces the importance of proper network segmentation, logging, and behavioral analysis, as actions taken are actively evading AV mechanisms that are in place.
 
 ### Exam
 
