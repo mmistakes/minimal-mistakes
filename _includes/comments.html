@@ -7,6 +7,22 @@
     {% when "disqus" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="disqus_thread"></section>
+      
+      <script>
+      var disqus_config = function () {
+          this.page.url = "{{ page.url | absolute_url }}";  
+          this.page.identifier = "{{ page.id }}"; 
+      };
+    
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';  
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+      </script>
+    
+      <noscript>댓글을 보려면 <a href="https://disqus.com/?ref_noscript">Disqus</a>를 활성화하세요.</noscript>
     {% when "facebook" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
