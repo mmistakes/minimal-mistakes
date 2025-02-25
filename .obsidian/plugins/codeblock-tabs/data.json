@@ -1,4 +1,6 @@
 {
-  "extraLang": {},
+  "extraLang": {
+    "python": true
+  },
   "defaultTitle": "(x)"
 }

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "eaf7bfbcca9fc977",
+        "id": "96bff25b242d86f0",
         "type": "tabs",
         "children": [
           {
-            "id": "11f6c4fab5c13c44",
+            "id": "3227abb8a70f84b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_pages/python_algorithm.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "python_algorithm"
+              "title": "새 탭"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_pages/python_algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "python_algorithm 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -175,12 +170,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "11f6c4fab5c13c44",
+  "active": "3227abb8a70f84b9",
   "lastOpenFiles": [
     "_posts/2024-08-05-python_day_1.md",
+    "_pages/python_algorithm.md",
     "_posts/2025-01-15-salmonn.md",
     "_posts/2025-01-16-salmonn-audio_dataset.md",
-    "_pages/python_algorithm.md",
     "_posts/2025-01-15-salmonn-multiple_task.md",
     "2025-02-25.md",
     "_pages/model_compression.md",
