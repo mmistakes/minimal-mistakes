@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "jong's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "jongtae"
+name                     : "jongtae12"
 description              : "jong's study"
 url                      : "https://jongtae12.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
