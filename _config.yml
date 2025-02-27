@@ -116,11 +116,11 @@ author:
   avatar           : "/assets/images/profile.jpg"
   bio              : "jong's study post"
   location         : "incheon"
-  email            : "whdxo0705@gmail.com"
+  # email            : "whdxo0705@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "whdxo0705@gmail.com"
+      url: "mailto:whdxo0705@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jongtae12"
