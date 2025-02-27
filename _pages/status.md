@@ -58,7 +58,7 @@ Helmi is accessible through the LUMI environment daily.
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs" id="helmi_status"></td>
+    <td class="tg-49rs">🟢</td>
   </tr>
 </tbody>
 </table>
