@@ -16,14 +16,15 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "jong's blog"
 title_separator          : "|"
 subtitle                 : "Improve yourself every day."
 name                     : "jongtae12"
 description              : "jong's study"
 url                      : "https://jongtae12.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+relative_links           : true
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.webp"
@@ -302,5 +303,8 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
 
 date_format: "%Y-%m-%d"
