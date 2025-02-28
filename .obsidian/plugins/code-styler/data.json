@@ -200,7 +200,7 @@
         "advanced": {
           "gradientHighlights": false,
           "gradientHighlightsColourStop": "70%",
-          "languageBorderColour": false,
+          "languageBorderColour": true,
           "languageBorderWidth": 5,
           "iconSize": 28
         }
@@ -349,7 +349,7 @@
       "advanced": {
         "gradientHighlights": false,
         "gradientHighlightsColourStop": "70%",
-        "languageBorderColour": false,
+        "languageBorderColour": true,
         "languageBorderWidth": 5,
         "iconSize": 28
       }
