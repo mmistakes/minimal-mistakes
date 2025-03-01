@@ -4,11 +4,11 @@ title: "Greetings!"
 ---
 # <center>Hello World!</center> 
   
-<center>This is my first post ever!</center> 
+<center>This is my first post ever!</center> <br>
 
-<center>Great to see you all.</center> 
+<center>Great to see you all.</center> <br>
 
-<center>Welcome!</center> 
+<center>Welcome!</center> <br>
 
 <center>
   
