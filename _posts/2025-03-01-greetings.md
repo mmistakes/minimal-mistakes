@@ -9,4 +9,6 @@ title: "Greetings!"
 
 <center>Welcome!</center>
 
-<center>![톰인사짤](https://github.com/user-attachments/assets/d3673d19-0ba6-4ff0-a15c-326479ffaa3d)</center>
+<center>
+  ![톰인사짤](https://github.com/user-attachments/assets/d3673d19-0ba6-4ff0-a15c-326479ffaa3d)
+</center>
