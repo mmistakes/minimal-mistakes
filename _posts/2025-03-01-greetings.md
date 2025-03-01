@@ -2,7 +2,7 @@
 layout: post
 title: "Greetings!"
 ---
-<center># Hello World!</center> 
+# <center>Hello World!</center> 
   
 <center>This is my first post ever!</center> 
 
