@@ -8,7 +8,7 @@ title: "Greetings!"
 
 <center>Great to see you all.</center> <br>
 
-<center>Welcome!</center> <br>
+<center>Welcome!</center> 
 
 <center>
   
