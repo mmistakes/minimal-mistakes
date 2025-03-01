@@ -2,11 +2,11 @@
 layout: post
 title: "Greetings!"
 ---
-# Hello World!
-This is my first post ever! 
+#<center>Hello World!</center>
+<center>This is my first post ever!</center>
 
-Great to see you all. 
+<center>Great to see you all.</center>
 
-Welcome!
+<center>Welcome!</center>
 
-![톰인사짤](https://github.com/user-attachments/assets/d3673d19-0ba6-4ff0-a15c-326479ffaa3d)
+<center>![톰인사짤](https://github.com/user-attachments/assets/d3673d19-0ba6-4ff0-a15c-326479ffaa3d)</center>
