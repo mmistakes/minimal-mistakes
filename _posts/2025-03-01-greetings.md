@@ -13,4 +13,4 @@ title: "Greetings!"
 <center>Welcome!</center> 
 
 
-<p align="center"><img src="https://github.com/user-attachments/assets/e3406f03-8db4-4fda-bd2d-351d76686472" height="100px" width="300px"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/e3406f03-8db4-4fda-bd2d-351d76686472"></p>
