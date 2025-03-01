@@ -25,7 +25,7 @@ padding: 5px;
 
 ## 🚀 Career & Activities
  - Coupang Corp - DBA | Sr. Database Engineer (2025.01 ~ 현재)
- - (주)콘텐츠웨이브 - Wavve 플랫폼 기술본부 Database Administrator (2019.09 ~ 25.01)
+ - (주)콘텐츠웨이브 - Wavve 플랫폼 기술본부 Database Administrator (2019.09 ~ 2025.01)
  - (주)위메프 - 위메프 인프라실 Database Administrator (2018.01 ~ 2019.08) 
  - (주)셀파소프트 - Database Engineer (2015.07 ~ 2017.08)
 
