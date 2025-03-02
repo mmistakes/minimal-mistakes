@@ -72,7 +72,7 @@ Categories are just for keeping order and are continuously updated. The relation
 -- J Steinbeck, "East of Eden"
 
 
-## Freedom
+## Freedom & lack thereof
 
 > And this I believe: that the free, exploring mind of the individual human is the most valuable thing in the world.<br>
 -- J Steinbeck, "East of Eden"
@@ -91,6 +91,132 @@ Categories are just for keeping order and are continuously updated. The relation
 
 > It isn't what we say or think that defines us, but what we do.<br>
 -- Jane Austen, "Sense and Sensibility"
+
+> Nothing was your own except the few cubic centimetres inside your skull.<br>
+-- G Orwell, "1984"
+
+> If the Party could thrust its hand into the past and say of this or that event, it never happened — that, surely, was more terrifying than mere torture and death?<br>
+-- G Orwell, "1984"
+
+> ’Who controls the past,’ ran the Party slogan, ’controls the future: who controls the present controls the past.’<br>
+-- G Orwell, "1984"
+
+> To know and not to know, to be conscious of complete truthfulness while telling carefully constructed lies, to hold simultaneously two opinions which cancelled out, knowing them to be contradictory and believing in both of them, to use logic against logic, to repudiate morality while laying claim to it, to believe that democracy was impossible and that the Party was the guardian of democracy, to forget whatever it was necessary to forget, then to draw it back into memory again at the moment when it was needed, and then promptly to forget it again: and above all, to apply the same process to the process itself. That was the ultimate subtlety: consciously to induce unconsciousness, and then, once again, to become unconscious of the act of hypnosis you had just performed.<br>
+-- G Orwell, "1984"
+
+> ’Don’t you see that the whole aim of Newspeak is to narrow the range of thought? In the end we shall make thoughtcrime literally impossible, because there will be no words in which to express it. Every concept that can ever be needed, will be expressed by exactly one word, with its meaning rigidly defined and all its subsidiary meanings rubbed out and forgotten.<br>
+-- G Orwell, "1984"
+
+> The whole climate of thought will be different. In fact there will be no thought, as we understand it now. Orthodoxy means not thinking — not needing to think. Orthodoxy is unconsciousness.<br>
+-- G Orwell, "1984"
+
+> Zeal was not enough. Orthodoxy was unconsciousness.<br>
+-- G Orwell, "1984"
+
+> The heresy of heresies was common sense.<br>
+-- G Orwell, "1984"
+
+> Every record has been destroyed or falsified, every book has been rewritten, every picture has been repainted, every statue and street and building has been renamed, every date has been altered. And that process is continuing day by day and minute by minute. History has stopped. Nothing exists except an endless present in which the Party is always right.<br>
+-- G Orwell, "1984"
+
+> In a way, the world-view of the Party imposed itself most successfully on people incapable of understanding it. They could be made to accept the most flagrant violations of reality, because they never fully grasped the enormity of what was demanded of them, and were not sufficiently interested in public events to notice what was happening.<br>
+-- G Orwell, "1984"
+
+> The terrible thing that the Party had done was to persuade you that mere impulses, mere feelings, were of no account, while at the same time robbing you of all power over the material world.<br>
+-- G Orwell, "1984"
+
+> When once you were in the grip of the Party, what you felt or did not feel, what you did or refrained from doing, made literally no difference.<br>
+-- G Orwell, "1984"
+
+> the object of waging a war is always to be in a better position in which to wage another war.<br>
+-- G Orwell, "1984"
+
+> In Newspeak there is no word for ’Science’.<br>
+-- G Orwell, "1984"
+
+> The two aims of the Party are to conquer the whole surface of the earth and to extinguish once and for all the possibility of independent thought.<br>
+-- G Orwell, "1984"
+
+> Newspapers and history books were, of course, always coloured and biased, but falsification of the kind that is practised today would have been impossible. War was a sure safeguard of sanity, and so far as the ruling classes were concerned it was probably the most important of all safeguards. While wars could be won or lost, no ruling class could be completely irresponsible. But when war becomes literally continuous, it also ceases to be dangerous. When war is continuous there is no such thing as military necessity. Technical progress can cease and the most palpable facts can be denied or disregarded.<br>
+-- G Orwell, "1984"
+
+> The rulers of such a state are absolute, as the Pharaohs or the Caesars could not be. They are obliged to prevent their followers from starving to death in numbers large enough to be inconvenient, and they are obliged to remain at the same low level of military technique as their rivals; but once that minimum is achieved, they can twist reality into whatever shape they choose.<br>
+-- G Orwell, "1984"
+
+> In the past, the ruling groups of all countries, although they might recognize their common interest and therefore limit the destructiveness of war, did fight against one another, and the victor always plundered the vanquished. In our own day they are not fighting against one another at all. The war is waged by each ruling group against its own subjects, and the object of the war is not to make or prevent conquests of territory, but to keep the structure of society intact. The very word ’war’, therefore, has become misleading. It would probably be accurate to say that by becoming continuous war has ceased to exist.<br>
+-- G Orwell, "1984"
+
+> The effect would be much the same if the three super-states, instead of fighting one another, should agree to live in perpetual peace, each inviolate within its own boundaries. For in that case each would still be a self-contained universe, freed for ever from the sobering influence of external danger. A peace that was truly permanent would be the same as a permanent war. This — although the vast majority of Party members understand it only in a shallower sense — is the inner meaning of the Party slogan: War is Peace.<br>
+-- G Orwell, "1984"
+
+> The aim of the High is to remain where they are. The aim of the Middle is to change places with the High. The aim of the Low, when they have an aim — for it is an abiding characteristic of the Low that they are too much crushed by drudgery to be more than intermittently conscious of anything outside their daily lives — is to abolish all distinctions and create a society in which all men shall be equal.<br>
+-- G Orwell, "1984"
+
+> Socialism, a theory which appeared in the early nineteenth century and was the last link in a chain of thought stretching back to the slave rebellions of antiquity, was still deeply infected by the Utopianism of past ages. But in each variant of Socialism that appeared from about 1900 onwards the aim of establishing liberty and equality was more and more openly abandoned.<br>
+-- G Orwell, "1984"
+
+> as early as the beginning of the twentieth century, human equality had become technically possible. It was still true that men were not equal in their native talents and that functions had to be specialized in ways that favoured some individuals against others; but there was no longer any real need for class distinctions or for large differences of wealth. In earlier ages, class distinctions had been not only inevitable but desirable. Inequality was the price of civilization. With the development of machine production, however, the case was altered. Even if it was still necessary for human beings to do different kinds of work, it was no longer necessary for them to live at different social or economic levels.<br>
+-- G Orwell, "1984"
+
+> in the past no government had the power to keep its citizens under constant surveillance. The invention of print, however, made it easier to manipulate public opinion, and the film and the radio carried the process further. With the development of television, and the technical advance which made it possible to receive and transmit simultaneously on the same instrument, private life came to an end.<br>
+-- G Orwell, "1984"
+
+> the only secure basis for oligarchy is collectivism. Wealth and privilege are most easily defended when they are possessed jointly. The so-called ’abolition of private property’ which took place in the middle years of the century meant, in effect, the concentration of property in far fewer hands than before: but with this difference, that the new owners were a group instead of a mass of individuals. Individually, no member of the Party owns anything, except petty personal belongings. Collectively, the Party owns everything in Oceania, because it controls everything, and disposes of the products as it thinks fit.<br>
+-- G Orwell, "1984"
+
+> The masses never revolt of their own accord, and they never revolt merely because they are oppressed. Indeed, so long as they are not permitted to have standards of comparison, they never even become aware that they are oppressed.<br>
+-- G Orwell, "1984"
+
+> the fact that the Party was not a hereditary body did a great deal to neutralize opposition. The older kind of Socialist, who had been trained to fight against something called ’class privilege’ assumed that what is not hereditary cannot be permanent. He did not see that the continuity of an oligarchy need not be physical, nor did he pause to reflect that hereditary aristocracies have always been shortlived, whereas adoptive organizations such as the Catholic Church have sometimes lasted for hundreds or thousands of years. The essence of oligarchical rule is not father-to-son inheritance, but the persistence of a certain world-view and a certain way of life, imposed by the dead upon the living.<br>
+-- G Orwell, "1984"
+
+> The Party is not concerned with perpetuating its blood but with perpetuating itself. Who wields power is not important, provided that the hierarchical structure remains always the same.<br>
+-- G Orwell, "1984"
+
+> Ultimately it is by means of doublethink that the Party has been able — and may, for all we know, continue to be able for thousands of years — to arrest the course of history.<br>
+-- G Orwell, "1984"
+
+> it is only by reconciling contradictions that power can be retained indefinitely. In no other way could the ancient cycle be broken. If human equality is to be for ever averted — if the High, as we have called them, are to keep their places permanently — then the prevailing mental condition must be controlled insanity.<br>
+-- G Orwell, "1984"
+
+> We know that no one ever seizes power with the intention of relinquishing it. Power is not a means, it is an end.<br>
+-- G Orwell, "1984"
+
+> can you be sure that he is obeying your will and not his own? Power is in inflicting pain and humiliation. Power is in tearing human minds to pieces and putting them together again in new shapes of your own choosing.<br>
+-- G Orwell, "1984"
+
+> The more the Party is powerful, the less it will be tolerant: the weaker the opposition, the tighter the despotism.<br>
+-- G Orwell, "1984"
+
+> You are imagining that there is something called human nature which will be outraged by what we do and will turn against us. But we create human nature. Men are infinitely malleable.<br>
+-- G Orwell, "1984"
+
+> To die hating them, that was freedom.<br>
+-- G Orwell, "1984"
+
+> It was intended that when Newspeak had been adopted once and for all and Oldspeak forgotten, a heretical thought — that is, a thought diverging from the principles of Ingsoc — should be literally unthinkable, at least so far as thought is dependent on words. Its vocabulary was so constructed as to give exact and often very subtle expression to every meaning that a Party member could properly wish to express, while excluding all other meanings and also the possibility of arriving at them by indirect methods. This was done partly by the invention of new words, but chiefly by eliminating undesirable words and by stripping such words as remained of unorthodox meanings, and so far as possible of all secondary meanings whatever.<br>
+-- G Orwell, "1984"
+
+> In Newspeak, euphony outweighed every consideration other than exactitude of meaning. Regularity of grammar was always sacrificed to it when it seemed necessary.<br>
+-- G Orwell, "1984"
+
+> The intention was to make speech, and especially speech on any subject not ideologically neutral, as nearly as possible independent of consciousness.<br>
+-- G Orwell, "1984"
+
+> Newspeak, indeed, differed from most all other languages in that its vocabulary grew smaller instead of larger every year. Each reduction was a gain, since the smaller the area of choice, the smaller the temptation to take thought.<br>
+-- G Orwell, "1984"
+
+> in Newspeak the expression of unorthodox opinions, above a very low level, was well-nigh impossible. It was of course possible to utter heresies of a very crude kind, a species of blasphemy. It would have been possible, for example, to say Big Brother is ungood. But this statement, which to an orthodox ear merely conveyed a self-evident absurdity, could not have been sustained by reasoned argument, because the necessary words were not available.<br>
+-- G Orwell, "1984"
+
+> The concept of political equality no longer existed, and this secondary meaning had accordingly been purged out of the word equal.<br>
+-- G Orwell, "1984"
+
+> A person growing up with Newspeak as his sole language would no more know that equal had once had the secondary meaning of ’politically equal’, or that free had once meant ’intellectually free’, than for instance, a person who had never heard of chess would be aware of the secondary meanings attaching to queen and rook.<br>
+-- G Orwell, "1984"
+
+> When Oldspeak had been once and for all superseded, the last link with the past would have been severed. History had already been rewritten, but fragments of the literature of the past survived here and there, imperfectly censored, and so long as one retained one’s knowledge of Oldspeak it was possible to read them.<br>
+-- G Orwell, "1984"
 
 
 ## God
