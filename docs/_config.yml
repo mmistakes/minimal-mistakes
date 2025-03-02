@@ -142,6 +142,7 @@ exclude:
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
+  - jekyll-relative-links
   - .sass-cache
   - assets/js/plugins
   - assets/js/_main.js
