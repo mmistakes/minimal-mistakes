@@ -124,3 +124,22 @@ feed:
 
 # Search
 search: true
+
+# Collections configuration
+collections:
+  certificates:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults for certificates
+defaults:
+  # _certificates
+  - scope:
+      path: ""
+      type: certificates
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      sidebar:
+        nav: "certificates"
