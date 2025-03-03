@@ -17,9 +17,10 @@ excerpt: >
 
 ## Accessing the FiQCI infrastructure
 
-The main access portal to the real quantum computing resources is through the LUMI supercomputer environment. Kvasi, the Quantum Learning Machine can be accessed directly.
+The main access portal to the physical quantum computing resources is through the LUMI supercomputer environment.
+Kvasi, the Quantum Learning Machine can be accessed directly.
 
-### Access to new quantum computer
+### Access to VTT Q50
 
 Coming soon!
 
