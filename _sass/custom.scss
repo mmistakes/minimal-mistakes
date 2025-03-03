@@ -1,0 +1,187 @@
+/* Custom Neon Enhancements */
+
+/* Certificate card styling */
+.certificate-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 2em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 
+                0 0 20px rgba(255, 0, 255, 0.3), 
+                0 0 40px rgba(255, 0, 255, 0.1);
+  }
+  
+  .certificate-image {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+  }
+  
+  .certificate-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.8em;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.8);
+  }
+  
+  .certificate-provider i {
+    margin-right: 5px;
+  }
+  
+  .certificate-metadata {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 10px;
+  }
+  
+  .certificate-tag {
+    background: #120052;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .certificate-tag:hover {
+    background: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+  }
+  
+  /* Neon text effects */
+  .page__title,
+  .archive__item-title {
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+  }
+  
+  /* Neon buttons */
+  .btn--primary,
+  .btn--info {
+    background-color: #120052;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .btn--primary:hover,
+  .btn--info:hover {
+    background-color: #ff00ff;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+  }
+  
+  /* Neon accents for links */
+  a {
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.5);
+    text-decoration: none;
+  }
+  
+  /* Feature row enhancements */
+  .feature__item {
+    transition: transform 0.3s ease;
+  }
+  
+  .feature__item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Custom notice styling */
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    border-radius: 8px;
+  }
+  
+  .notice--primary,
+  .notice--info {
+    background-color: rgba(18, 0, 82, 0.1);
+    border-left-color: #120052;
+  }
+  
+  /* Masthead styling */
+  .masthead {
+    background-color: #000;
+    border-bottom: 1px solid rgba(255, 0, 255, 0.3);
+  }
+  
+  /* Newsletter signup styling */
+  .newsletter-container {
+    background: linear-gradient(135deg, rgba(18, 0, 82, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%);
+    border: 1px solid rgba(255, 0, 255, 0.3);
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 2em 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 
+                0 0 20px rgba(255, 0, 255, 0.2);
+  }
+  
+  .newsletter-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 
+                0 0 30px rgba(255, 0, 255, 0.4);
+  }
+  
+  .newsletter-content {
+    margin-bottom: 1em;
+  }
+  
+  .neon-glow {
+    color: #ff00ff;
+    text-shadow: 0 0 8px rgba(255, 0, 255, 0.8);
+  }
+  
+  .newsletter-input-group {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .newsletter-input {
+    flex-grow: 1;
+    padding: 0.5em 1em;
+    border: 1px solid rgba(255, 0, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+  
+  .newsletter-input:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    outline: none;
+  }
+  
+  .newsletter-button {
+    white-space: nowrap;
+  }
+  
+  .newsletter-privacy {
+    font-size: 0.8em;
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-input-group {
+      flex-direction: column;
+    }
+  }
