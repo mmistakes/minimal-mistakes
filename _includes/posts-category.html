@@ -1,9 +1,4 @@
-{% if page.sort_order == "ascending" %}
-  {% assign posts = site.categories[include.taxonomy] | sort: 'date' %}
-{% else %}
-  {% assign posts = site.categories[include.taxonomy] | sort: 'date' | reverse %}
-{% endif %}
-
-{% for post in posts %}
-  {% include archive-single.html type=include.type %}
-{% endfor %}
+{% assign posts = site.categories[include.taxonomy] | where_exp: "post", "post.hidden != true" %}
+{%- for post in posts -%}
+  {% include archive-single.html %}
+{%- endfor -%}
