@@ -1,5 +1,5 @@
 ---
-title: "Certificate Gallery"
+title: Certificate Gallery
 layout: collection
 permalink: /certificate-gallery/
 collection: certificates
@@ -9,8 +9,6 @@ sidebar:
   nav: "certificates"
 ---
 
-# Welcome to The Neon Vault
+Welcome to my certificate gallery - a collection of professional achievements and learning milestones that reflect my journey of continuous growth and development.
 
-This gallery showcases my professional journey through certifications and achievements. Each certificate represents not just a piece of paper, but a chapter in my ongoing story of learning and growth.
-
-Feel free to browse by category using the sidebar navigation, or simply scroll through the complete collection below.
+Each certificate represents not just a completed course, but new skills acquired, challenges overcome, and knowledge that I apply in my work every day.
