@@ -1,6 +1,6 @@
 # Theme settings
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # This activates the neon skin! 🌈
+minimal_mistakes_skin    : "neon" # The magical neon glow! ✨
 
 # Site Settings
 locale                   : "en-US"
@@ -8,30 +8,29 @@ title                    : "The Neon Vault"
 title_separator          : "⚡"
 subtitle                 : "Where Achievements Glow"
 name                     : "Your Name"
-description              : "A luminous collection of professional certifications, achievements, and learning adventures."
-url                      : "https://gerryjekova.github.io"
-baseurl                  : "/minimal-mistakes-certifications-gallery"
-repository               : "gerryjekova/minimal-mistakes-certifications-gallery"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
+description              : "A luminous collection of professional certifications, achievements, and digital learning adventures."
+url                      : # your github.io URL here
+baseurl                  : # leave blank for github.io sites
+repository               : # username/repo-name
+teaser                   : # fallback teaser image
+logo                     : # path of logo for masthead
+masthead_title           : # override masthead title
+breadcrumbs              : true
 words_per_minute         : 200
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+google_site_verification : # Your verification code
+bing_site_verification   : # Your verification code
+yandex_site_verification : # Your verification code
+baidu_site_verification  : # Your verification code
 
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Professional with expertise in [your skills]."
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "Professional with a passion for continuous learning and growth."
   location         : "Your Location"
-  email            :
+  email            : # optional
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -44,26 +43,20 @@ author:
       # url: "https://linkedin.com/in/yourprofile"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/gerryjekova"
+      # url: "https://github.com/yourusername"
 
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+      # url: "https://linkedin.com/in/yourprofile"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/gerryjekova"
-    - label: "Substack"
-      icon: "fas fa-fw fa-newspaper"
-      url: "https://yourname.substack.com"
-    - label: "YouTube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://youtube.com/@yourchannel"
+      # url: "https://github.com/yourusername"
     - label: "Twitch"
       icon: "fab fa-fw fa-twitch"
-      url: "https://twitch.tv/yourchannel"
+      # url: "https://twitch.tv/yourchannel"
 
 # Collections - This is the magic that creates our certificate gallery! ✨
 collections:
@@ -71,7 +64,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Defaults
+# Defaults - Think of these as the preset settings for different content types
 defaults:
   # _posts
   - scope:
@@ -99,6 +92,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      classes: wide
       sidebar:
         nav: "certificates"
 
@@ -113,6 +107,14 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+# Feed settings
+feed:
+  path: /feed.xml
+  posts_limit: 20
+  categories:
+    - Blog
+    - Project Showcase
 
 # Search
 search: true

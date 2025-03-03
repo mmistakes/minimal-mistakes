@@ -1,43 +1,43 @@
 # Main navigation links
 main:
-  - title: "Introduction"
+  - title: "🏠 Introduction"
     url: /
-  - title: "Blog"
+  - title: "📝 Blog"
     url: /blog/
-  - title: "Certificate Gallery"
+  - title: "🏆 Certificate Gallery"
     url: /certificate-gallery/
-  - title: "Categories"
+  - title: "🗂️ Categories"
     url: /categories/
-  - title: "Tags"
+  - title: "🏷️ Tags"
     url: /tags/
 
 # Sidebar navigation for certificates with subcategories
 certificates:
   - title: "Technical Certificates"
     children:
-      - title: "Computer Literacy"
+      - title: "💻 Computer Literacy"
         url: /certificates/category/technical/computer-literacy/
-      - title: "Software Development"
+      - title: "🖥️ Software Development"
         url: /certificates/category/technical/software-development/
-      - title: "Backend"
-        url: /certificates/category/technical/frontend/
-      - title: "Frontend"
+      - title: "🔧 Backend"
         url: /certificates/category/technical/backend/
+      - title: "🎨 Frontend"
+        url: /certificates/category/technical/frontend/
   
   - title: "Professional Certificates"
     children:
-      - title: "Project Management"
+      - title: "📊 Project Management"
         url: /certificates/category/professional/project-management/
-      - title: "Leadership"
+      - title: "🚀 Leadership"
         url: /certificates/category/professional/leadership/
-      - title: "Marketing"
+      - title: "📈 Marketing"
         url: /certificates/category/professional/marketing/
   
-  - title: "By Provider"
+  - title: "Certification Providers"
     children:
-      - title: "AWS"
+      - title: "☁️ AWS"
         url: /certificates/provider/aws/
-      - title: "Microsoft"
+      - title: "🔷 Microsoft"
         url: /certificates/provider/microsoft/
-      - title: "Google"
+      - title: "🌈 Google"
         url: /certificates/provider/google/
