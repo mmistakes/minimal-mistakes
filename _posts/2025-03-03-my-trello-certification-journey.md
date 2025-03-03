@@ -1,5 +1,6 @@
 ---
 title: "My Journey to Trello Certification"
+permalink: /blog/my-journey-to-trello-certification/
 categories:
   - Learning
 tags:
