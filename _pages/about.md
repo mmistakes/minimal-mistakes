@@ -13,9 +13,9 @@ intro:
   - excerpt: 'The FiQCI consortium maintains, operates, and develops the infrastructure'
 funders_gallery:
  - url: /assets/images/funder-Academy_of_Finland.png
-   image_path: /assets/images/funder-Academy_of_Finland.png
-   alt: "Academy of Finland logo"
-   title: "Academy of Finland"
+   image_path: /assets/images/funder-Research_Council_of_Finland.png
+   alt: "Research Council of Finland logo"
+   title: "Research Council of Finland"
  - url: /assets/images/funder-EU-RRF.jpg
    image_path: /assets/images/funder-EU-RRF.jpg
    alt: "European Union NextGenerationEU logo"
