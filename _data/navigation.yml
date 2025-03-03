@@ -10,7 +10,7 @@ main:
 docs:
   # - title: "안녕하세요! Welcome to PM_AI_LAB🙋"
   #   url: /first/
-  - title: "NAVER AI Tech - 정규(RecSys)"
+  - title: "NAVER AI Tech"
     children:
       - title: "PyTorch"
         url: /pytorch/
@@ -42,15 +42,15 @@ docs:
         url: /model_compression/
       - title: "RecSys Recent Trend"
         url: /recsys_recent_trend/ 
-  - title: "NAVER AI Tech_기업 해커톤"
+  - title: "기업 해커톤(NAVER AI Tech)"
     children:
       - title: "Company Hackathon"
         url: /hackathon/
   - title: "알고리즘 정복기"
     children:
-      - title: "알고리즘 기초"
+      - title: "알고리즘 기초(Python)"
         url: /python_algorithm_basic/
-      - title: "알고리즘 스터디"
+      - title: "알고리즘 스터디(Python)"
         url: /python_algorithm/
 
   # - title: "About"

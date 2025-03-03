@@ -364,6 +364,7 @@ date_format: "%Y-%m-%d"
 # Breadcrumb title mappings
 breadcrumb_titles:
   # NAVER AI Tech - 정규(RecSys)
+  "NAVER AI Tech": "NAVER AI Tech"
   pytorch: "PyTorch"
   ml_lifecycle: "ML Lifecycle" 
   matplotlib: "EDA & DataViz"
@@ -380,12 +381,14 @@ breadcrumb_titles:
   model_compression: "모델 최적화 및 경량화"
   recsys_recent_trend: "RecSys Recent Trend"
   
-  # NAVER AI Tech - 기업 해커톤
+  # NAVER AI Tech_기업 해커톤
+  "기업 해커톤(NAVER AI Tech)": "기업 해커톤(NAVER AI Tech)"
   hackathon: "Company Hackathon"
   
   # 알고리즘 정복기
-  python_algorithm_basic: "알고리즘 기초"
-  python_algorithm: "알고리즘 스터디"
+  "알고리즘 정복기": "알고리즘 정복기"
+  python_algorithm_basic: "알고리즘 기초(Python)"
+  python_algorithm: "알고리즘 스터디(Python)"
   
   # # Kept from original (may still be in use elsewhere)
   # ai_basic: "AI Basic"

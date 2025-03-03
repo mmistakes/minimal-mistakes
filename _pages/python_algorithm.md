@@ -1,5 +1,5 @@
 ---
-title: 코테 공부 기록(Python)
+title: 알고리즘 기초(Python)
 layout: category
 permalink: /python_algorithm_basic/
 taxonomy: python_algorithm_basic
