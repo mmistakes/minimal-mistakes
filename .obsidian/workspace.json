@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/0_15_recsys_recent_trend.md",
+                "file": "_pages/1_3_hackathon_lightweight.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0_15_recsys_recent_trend"
+              "title": "1_3_hackathon_lightweight"
             }
           }
         ]
@@ -166,7 +166,6 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
-    "_pages/1_3_hackathon_lightweight.md",
     "_pages/1_2_hackathon_audiodata.md",
     "_pages/1_1_hackathon_baseline.md",
     "_pages/0_15_recsys_recent_trend.md",
@@ -178,6 +177,13 @@
     "_pages/0_9_recsys_basic.md",
     "_pages/0_8_ml_projects.md",
     "_pages/0_7_ml_technique.md",
+    "_pages/0_6_ml_in_practice.md",
+    "_pages/0_5_ml_recsys.md",
+    "_pages/0_4_basic_ai_development.md",
+    "_pages/0_3_matplotlib.md",
+    "_pages/0_2_ml_lifecycle.md",
+    "_pages/0_1_pytorch.md",
+    "_pages/1_3_hackathon_lightweight.md",
     "assets/css/sidebar.css",
     "test/2024-08-08-week1_8.md",
     "2024-08-08-week1_8.md",
@@ -187,12 +193,6 @@
     "_pages/1_1_hackathon_baseline copy.md",
     "_posts/2024-08-08-week1_8.md",
     "_posts/2024-08-08-week1_7.md",
-    "_posts/2024-08-07-week1_6.md",
-    "_posts/2024-08-07-week1_5.md",
-    "_posts/2024-08-06-week1_4.md",
-    "_posts/2024-08-06-week1_3.md",
-    "_posts/2024-08-05-week1_2.md",
-    "_posts/2024-08-05-week1_1.md",
     "ads.txt",
     "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.45.51.png",
     "notion_NAVER/Day 1 소프트 엔지니어링과 AI 엔지니어링 102a5ea4235480588988f57c0a343de2/image.png",

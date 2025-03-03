@@ -23,11 +23,44 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const entries = Array.from(entriesContainer.children);
     
-    // 날짜로 정렬 (오래된 순서)
+    // 날짜 + 파일명 순서로 정렬
     entries.sort(function(a, b) {
+      // 먼저 날짜로 정렬
       const dateA = new Date(a.querySelector('time').getAttribute('datetime'));
       const dateB = new Date(b.querySelector('time').getAttribute('datetime'));
-      return dateA - dateB;
+      
+      // 날짜가 다르면 날짜 순으로 정렬
+      if (dateA.getTime() !== dateB.getTime()) {
+        return dateA - dateB;
+      }
+      
+      // 날짜가 같으면 파일명의 숫자 부분 추출하여 정렬
+      // 링크에서 파일명 추출
+      const linkA = a.querySelector('a').getAttribute('href');
+      const linkB = b.querySelector('a').getAttribute('href');
+      
+      // week1_1, week1_2와 같은 패턴에서 숫자 추출
+      const numPatternA = linkA.match(/week\d+_(\d+)/);
+      const numPatternB = linkB.match(/week\d+_(\d+)/);
+      
+      // 숫자 패턴이 있으면 숫자로 정렬
+      if (numPatternA && numPatternB) {
+        return parseInt(numPatternA[1]) - parseInt(numPatternB[1]);
+      }
+      
+      // 제목에서 숫자 패턴 찾기 (대안)
+      const titleA = a.querySelector('h2').textContent;
+      const titleB = b.querySelector('h2').textContent;
+      
+      const titleNumA = titleA.match(/(\d+)\.\s/);
+      const titleNumB = titleB.match(/(\d+)\.\s/);
+      
+      if (titleNumA && titleNumB) {
+        return parseInt(titleNumA[1]) - parseInt(titleNumB[1]);
+      }
+      
+      // 파일명에서 숫자를 추출할 수 없는 경우 원래 순서 유지
+      return 0;
     });
     
     // 정렬된 요소 다시 추가
