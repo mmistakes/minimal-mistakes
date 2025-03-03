@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Multiple tasks(SALMONN: Paper Review)"
-categories: hackathon
+categories: hackathon_baseline
 tags:
   - AI
   - AudioLM

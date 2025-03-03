@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notion_NAVER/Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea.md",
+                "file": "_pages/1_2_hackathon_audiodata.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea"
+              "title": "1_2_hackathon_audiodata"
             }
           }
         ]
@@ -166,6 +166,16 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
+    "test/2024-08-08-week1_8.md",
+    "2024-08-08-week1_8.md",
+    "_pages/1_3_hackathon_lightweight.md",
+    "_pages/1_2_hackathon_audiodata.md",
+    "_pages/1_1_hackathon_baseline.md",
+    "_pages/0_12_generative_ai.md",
+    "notion_NAVER/Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea.md",
+    "_pages/1_2_hackathon_lightweight.md",
+    "_pages/1_2_hackathon_audiodata copy.md",
+    "_pages/1_1_hackathon_baseline copy.md",
     "_posts/2024-08-08-week1_8.md",
     "_posts/2024-08-08-week1_7.md",
     "_posts/2024-08-07-week1_6.md",
@@ -183,17 +193,7 @@
     "notion_NAVER/2024-08-05-week1_1.md",
     "notion_NAVER/2024-08-05-week1_2.md",
     "notion_NAVER/2024-08-06-week1_3.md",
-    "notion_NAVER/2024-08-06-week1_4.md",
-    "notion_NAVER/크리스마스 공휴일 164a5ea42354806a987ef43bcfb48c90.md",
-    "notion_NAVER/Day 1 강의소개 d29421eb4f45451d9e41419d1aa113a3.md",
-    "notion_NAVER/Day 1 데이터시각화 5bfa42d514b2490a94fe3a795b177392.md",
-    "notion_NAVER/Day 1 경진대회를 위한 모델 학습 파이프라인 11ba5ea42354800d9f1fef97e5961455.md",
-    "notion_NAVER/Day 1 Orientation11ba5ea423548026b6b9df883655ef89.md",
-    "notion_NAVER/기업 해커톤 개인회고 199a5ea4235480a5955ec5bc6ee02abc.md",
-    "notion_NAVER/경량화 BERT 모델 135a5ea42354801f85affc30662821ef.md",
-    "notion_NAVER/11 12 Server Setting 13da5ea423548097a22dde12187ced34.md",
     "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.45.51.png",
-    "notion_NAVER/SALMONN_경량화 가설 정리 18aa5ea42354804488a1d7cd9a8b67f5.md",
     "notion_NAVER/Day 1 소프트 엔지니어링과 AI 엔지니어링 102a5ea4235480588988f57c0a343de2/image.png",
     "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472/f851c803-00ee-443c-856e-02093a1282cf.png",
     "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-08_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.56.53.png",

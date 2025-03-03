@@ -42,10 +42,14 @@ docs:
         url: /model_compression/
       - title: "RecSys Recent Trend"
         url: /recsys_recent_trend/ 
-  - title: "기업 해커톤(NAVER AI Tech)"
+  - title: "기업 해커톤"
     children:
-      - title: "Company Hackathon"
-        url: /hackathon/
+      - title: "Baseline 정복"
+        url: /hackathon_baseline/
+      - title: "오디오 데이터 및 전처리"
+        url: /hackathon_audiodata/
+      - title: "오디오 언어모델 경량화"
+        url: /hackathon_lightweight/
   - title: "알고리즘 정복기"
     children:
       - title: "알고리즘 기초(Python)"

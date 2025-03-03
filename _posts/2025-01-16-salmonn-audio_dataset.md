@@ -2,7 +2,7 @@
 layout: single
 title: "Audio Benchmark Dataset(SALMONN: Paper Review)"
 categories:
-  - hackathon
+  - hackathon_audiodata
 tags:
   - AI
   - AudioLM
