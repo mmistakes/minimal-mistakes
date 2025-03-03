@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/1_2_hackathon_audiodata.md",
+                "file": "_pages/0_15_recsys_recent_trend.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_2_hackathon_audiodata"
+              "title": "0_15_recsys_recent_trend"
             }
           }
         ]
@@ -166,13 +166,21 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
-    "assets/css/sidebar.css",
-    "test/2024-08-08-week1_8.md",
-    "2024-08-08-week1_8.md",
     "_pages/1_3_hackathon_lightweight.md",
     "_pages/1_2_hackathon_audiodata.md",
     "_pages/1_1_hackathon_baseline.md",
+    "_pages/0_15_recsys_recent_trend.md",
+    "_pages/0_14_model_compression.md",
+    "_pages/0_13_product_serving.md",
     "_pages/0_12_generative_ai.md",
+    "_pages/0_11_recsys_projects.md",
+    "_pages/0_10_recsys_in_practice.md",
+    "_pages/0_9_recsys_basic.md",
+    "_pages/0_8_ml_projects.md",
+    "_pages/0_7_ml_technique.md",
+    "assets/css/sidebar.css",
+    "test/2024-08-08-week1_8.md",
+    "2024-08-08-week1_8.md",
     "notion_NAVER/Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea.md",
     "_pages/1_2_hackathon_lightweight.md",
     "_pages/1_2_hackathon_audiodata copy.md",
@@ -186,13 +194,6 @@
     "_posts/2024-08-05-week1_2.md",
     "_posts/2024-08-05-week1_1.md",
     "ads.txt",
-    "notion_NAVER/Day 5 Binary Classification 1 d02af3f3c448438f8e12c03711c211ec.md",
-    "notion_NAVER/2024-08-08-week1_8.md",
-    "notion_NAVER/2024-08-08-week1_7.md",
-    "notion_NAVER/2024-08-07-week1_6.md",
-    "notion_NAVER/2024-08-07-week1_5.md",
-    "notion_NAVER/2024-08-05-week1_1.md",
-    "notion_NAVER/2024-08-05-week1_2.md",
     "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.45.51.png",
     "notion_NAVER/Day 1 소프트 엔지니어링과 AI 엔지니어링 102a5ea4235480588988f57c0a343de2/image.png",
     "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472/f851c803-00ee-443c-856e-02093a1282cf.png",
@@ -206,7 +207,6 @@
     "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(틸다).pdf",
     "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(티빙).pdf",
     "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(옴니어스).pdf",
-    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(예스플리즈_에이아이).pdf",
     "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/image.png",
     "notion_NAVER/통계 기본개념 복습 157a5ea4235480629ad6c0d475883879/image.png",
     "notion_NAVER/통계 기본개념 복습 157a5ea4235480629ad6c0d475883879/image 1.png",

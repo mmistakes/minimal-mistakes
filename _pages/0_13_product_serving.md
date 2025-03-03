@@ -1,9 +1,9 @@
 ---
-title: 13. Product Serving
+title: Product Serving
 layout: category
 permalink: /recsys_basics/
 taxonomy: recsys_basics
-sort_order: "ascending"
+sort_order: ascending
 sidebar:
   nav: docs
 ---

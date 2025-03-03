@@ -1,5 +1,5 @@
 ---
-title: 3. EDA & DataViz
+title: EDA & DataViz
 layout: category
 permalink: /matplotlib/
 taxonomy: matplotlib

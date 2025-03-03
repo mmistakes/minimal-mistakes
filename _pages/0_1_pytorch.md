@@ -1,5 +1,5 @@
 ---
-title: 1. PyTorch
+title: PyTorch
 layout: category
 permalink: /pytorch/
 taxonomy: pytorch

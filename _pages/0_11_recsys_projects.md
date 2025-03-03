@@ -1,9 +1,9 @@
 ---
-title: 11. RecSys Projects
+title: RecSys Projects
 layout: category
 permalink: /recsys_projects/
 taxonomy: recsys_projects
-sort_order: "ascending"
+sort_order: ascending
 sidebar:
   nav: docs
 ---
