@@ -2,6 +2,8 @@
 Title: AI Beyond Efficiency - Redefining Purpose and Ethical Standards
 ---
 
+## AI Beyond Efficiency: Redefining Purpose and Ethical Standards
+
 Earlier today, I had a long chat with Chris, a client and friend of mine who has a unique perspective on artificial intelligence, especially since he was a whistleblower in a case where AI was used to manipulate public opinion.
 
 We agree on many points, perhaps holding a slightly (?) contrarian view compared to the mainstream Silicon Valley perspective right now. Chris made an interesting point that a core issue is the assumption that AI’s primary goal should be to increase efficiency. That feels like an empty goal and reflects a sad reality we've come to accept. AI itself is amoral (it is not “immoral”). It’s like money or a knife: both are technologies. Money can fund valuable projects or bribe officials. A knife can cut vegetables or harm someone. Similarly, AI can serve multiple purposes. The critical point is that we have the power to shape its purpose and direction.
