@@ -5,15 +5,6 @@ layout: archive
 {{ content }}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-
-{% if page.sort_order == "ascending" %}
-  {% assign posts = site.categories[page.taxonomy] | sort: 'date' %}
-{% else %}
-  {% assign posts = site.categories[page.taxonomy] | sort: 'date' | reverse %}
-{% endif %}
-
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+  {% include posts-category.html taxonomy=page.taxonomy type=entries_layout %}
 </div>
