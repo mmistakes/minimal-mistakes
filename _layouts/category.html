@@ -15,9 +15,38 @@ document.addEventListener('DOMContentLoaded', function() {
   const currentPath = window.location.pathname;
   
   // 여러 페이지에 적용하기 (OR 조건)
-  if (currentPath.includes('/pytorch/') || 
-      currentPath.includes('/baseline/') || 
-      currentPath.includes('/recsys_basic/')) {
+  if (
+    // PyTorch 관련
+    currentPath.includes('/pytorch/') || 
+    
+    // ML 라이프사이클, 기법 등
+    currentPath.includes('/ml_lifecycle/') ||
+    currentPath.includes('/ml_technique/') ||
+    currentPath.includes('/ml_in_practice/') ||
+    currentPath.includes('/ml_projects/') ||
+    currentPath.includes('/basic_ai_development/') ||
+    currentPath.includes('/ml_for_recsys/') ||
+    
+    // EDA 및 시각화
+    currentPath.includes('/matplotlib/') ||
+    currentPath.includes('/eda_datavis/') ||
+    
+    // 추천 시스템
+    currentPath.includes('/recsys_basic/') ||
+    currentPath.includes('/recsys_in_practice/') ||
+    currentPath.includes('/recsys_projects/') ||
+    currentPath.includes('/recsys_recent_trend/') ||
+    
+    // 기타 AI 관련
+    currentPath.includes('/generative_ai/') ||
+    currentPath.includes('/product_serving/') ||
+    currentPath.includes('/model_compression/') ||
+    
+    // 해커톤 관련
+    currentPath.includes('/baseline/') ||
+    currentPath.includes('/hackathon_audiodata/') ||
+    currentPath.includes('/hackathon_lightweight/')
+  ) {
     const entriesContainer = document.querySelector('.entries-list, .entries-grid');
     if (!entriesContainer) return;
     
