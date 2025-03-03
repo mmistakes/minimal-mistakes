@@ -39,7 +39,7 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
-## Open Call for pilot access to Helmi quantum computer now open
+## Coming Soon: New Quantum Computer
 
 <!-- [Read more here](posts/2022-10-31-Helmi-pilot/). -->
 
