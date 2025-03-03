@@ -1,8 +1,8 @@
 ---
-title: "Blog"
-permalink: /blog/
-layout: home
+title: "Certificates by Tag"
+permalink: /tags/
+layout: tags
 author_profile: true
 ---
 
-Welcome to my blog where I share insights, experiences, and tips related to my professional journey and certifications.
+Tags represent specific skills, technologies, or credentials I've acquired. Click on any tag to see related certificates and blog posts.
