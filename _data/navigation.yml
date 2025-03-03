@@ -1,12 +1,43 @@
-# main links
+# Main navigation links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Introduction"
+    url: /
+  - title: "Blog"
+    url: /blog/
+  - title: "Certificate Gallery"
+    url: /certificate-gallery/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+
+# Sidebar navigation for certificates with subcategories
+certificates:
+  - title: "Technical Certificates"
+    children:
+      - title: "Cloud Computing"
+        url: /certificates/category/technical/cloud/
+      - title: "Software Development"
+        url: /certificates/category/technical/software-development/
+      - title: "DevOps"
+        url: /certificates/category/technical/devops/
+      - title: "Data Science"
+        url: /certificates/category/technical/data-science/
+  
+  - title: "Professional Certificates"
+    children:
+      - title: "Project Management"
+        url: /certificates/category/professional/project-management/
+      - title: "Leadership"
+        url: /certificates/category/professional/leadership/
+      - title: "Marketing"
+        url: /certificates/category/professional/marketing/
+  
+  - title: "By Provider"
+    children:
+      - title: "AWS"
+        url: /certificates/provider/aws/
+      - title: "Microsoft"
+        url: /certificates/provider/microsoft/
+      - title: "Google"
+        url: /certificates/provider/google/
