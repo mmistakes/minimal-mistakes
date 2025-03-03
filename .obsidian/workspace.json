@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-06-python_day_2.md",
+                "file": "notion_NAVER/Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-06-python_day_2"
+              "title": "Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 258.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -160,25 +160,57 @@
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "37bf1aed25081d32",
+  "active": "e9c6c653669eafff",
   "lastOpenFiles": [
-    "_posts/2024-08-05-python_day_1.md",
-    "_posts/2024-08-06-python_day_2.md",
-    "_posts/2025-01-16-Audio_dataset.md",
-    "_posts/2025-01-16-salmonn-audio_dataset.md",
-    "_posts/2025-01-15-salmonn-multiple_task.md",
-    "_posts/2025-01-15-SALMONN.md",
-    "_posts/2025-01-16-audio_dataset.md",
-    "_posts/2025-01-15-salmonn.md",
-    "_posts/2025-01-15-multiple_task_salmonn.md",
-    "_posts/2024-08-05-python_day1.md",
-    "2025-02-25.md",
-    "_posts/2024-08-05-Python_Day1.md",
-    "_pages/python_algorithm.md",
-    "_posts/2024-08-05-Python-Day1.md",
-    "images/2025-01-15-SALMONN/Multiple_task.png"
+    "ads.txt",
+    "notion_NAVER/Day 5 Binary Classification 1 d02af3f3c448438f8e12c03711c211ec.md",
+    "notion_NAVER/2024-08-08-week1_8.md",
+    "notion_NAVER/2024-08-08-week1_7.md",
+    "notion_NAVER/2024-08-07-week1_6.md",
+    "notion_NAVER/2024-08-07-week1_5.md",
+    "notion_NAVER/2024-08-05-week1_1.md",
+    "notion_NAVER/2024-08-05-week1_2.md",
+    "notion_NAVER/2024-08-06-week1_3.md",
+    "notion_NAVER/2024-08-06-week1_4.md",
+    "notion_NAVER/크리스마스 공휴일 164a5ea42354806a987ef43bcfb48c90.md",
+    "notion_NAVER/Day 1 강의소개 d29421eb4f45451d9e41419d1aa113a3.md",
+    "notion_NAVER/Day 1 데이터시각화 5bfa42d514b2490a94fe3a795b177392.md",
+    "notion_NAVER/Day 1 경진대회를 위한 모델 학습 파이프라인 11ba5ea42354800d9f1fef97e5961455.md",
+    "notion_NAVER/Day 1 Orientation11ba5ea423548026b6b9df883655ef89.md",
+    "notion_NAVER/기업 해커톤 개인회고 199a5ea4235480a5955ec5bc6ee02abc.md",
+    "notion_NAVER/경량화 BERT 모델 135a5ea42354801f85affc30662821ef.md",
+    "notion_NAVER/11 12 Server Setting 13da5ea423548097a22dde12187ced34.md",
+    "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.45.51.png",
+    "notion_NAVER/SALMONN_경량화 가설 정리 18aa5ea42354804488a1d7cd9a8b67f5.md",
+    "notion_NAVER/Q-former in SALMONN 17da5ea42354808c91b3f35e27891589.md",
+    "notion_NAVER/Wrap-up Report 110a5ea423548099b2f0ff76bed82b1f.md",
+    "notion_NAVER/RecSys 구인구팀데이 131a5ea423548049a16becb22917bce6.md",
+    "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472.md",
+    "notion_NAVER/Whisper(speech Encoder) 17da5ea423548075b396facf3bf044cc.md",
+    "notion_NAVER/Week 4 ~ 5 ML for Recsys 4f2c067b13ac4d889a2c2c5e65f49276.md",
+    "notion_NAVER/Week 1 팀 회고 2e1788dfe450458d947aaf44c01d988e.md",
+    "notion_NAVER/Day 1 소프트 엔지니어링과 AI 엔지니어링 102a5ea4235480588988f57c0a343de2/image.png",
+    "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472/f851c803-00ee-443c-856e-02093a1282cf.png",
+    "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-08_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.56.53.png",
+    "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.46.13.png",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서_(제닉스주식회사).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서_(네이버클라우드).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(플레이오니).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(프로메디우스).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(펀진).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(틸다).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(티빙).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(옴니어스).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(예스플리즈_에이아이).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(업스테이지).pdf",
+    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/image.png",
+    "notion_NAVER/통계 기본개념 복습 157a5ea4235480629ad6c0d475883879/image.png",
+    "notion_NAVER/통계 기본개념 복습 157a5ea4235480629ad6c0d475883879/image 1.png",
+    "notion_NAVER/통계 기본개념 복습 157a5ea4235480629ad6c0d475883879/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-29_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.02.42.png",
+    "notion_NAVER/통계 기본개념 복습 157a5ea4235480629ad6c0d475883879/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-29_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.10.53.png"
   ]
 }

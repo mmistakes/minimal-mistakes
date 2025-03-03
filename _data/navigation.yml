@@ -10,20 +10,46 @@ main:
 docs:
   # - title: "안녕하세요! Welcome to PM_AI_LAB🙋"
   #   url: /first/
-  - title: "NAVER AI Tech"
+  - title: "NAVER AI Tech - 정규(RecSys)"
     children:
-      - title: "AI Basic"
-        url: /ai_basic/
-      - title: "코테 공부 기록(Python)"
-        url: /python_algorithm/
-      - title: "CV(Computer Vision)"
-        url: /cv/
-      - title: "RecSys"
-        url: /recsys/
-      - title: "최적화 및 경량화"
+      - title: "PyTorch"
+        url: /pytorch/
+      - title: "ML Lifecycle"
+        url: /ml_lifecycle/
+      - title: "EDA & DataViz"
+        url: /matplotlib/
+      - title: "Basic AI Development"
+        url: /basic_ai_development/
+      - title: "ML for RecSys"
+        url: /ml_recsys/
+      - title: "ML in Practice"
+        url: /ml_in_practice/
+      - title: "ML Technique"
+        url: /ml_technique/
+      - title: "ML Projects"
+        url: /ml_projects/
+      - title: "RecSys Basic"
+        url: /recsys_basic/
+      - title: "RecSys in Practice"
+        url: /recsys_in_practice/
+      - title: "RecSys Projects"
+        url: /recsys_projects/
+      - title: "Generative AI"
+        url: /generative_ai/
+      - title: "Product Serving"
+        url: /product_serving/
+      - title: "모델 최적화 및 경량화"
         url: /model_compression/
+      - title: "RecSys Recent Trend"
+        url: /recsys_recent_trend/ 
+  - title: "NAVER AI Tech - 기업 해커톤(AudioLM 경량화)"
+    children:
       - title: "Company Hackathon"
         url: /hackathon/
+  - title: "NAVER AI Tech - Post AI-Tech"
+    children:
+      - title: "AI Basic"
+        url: /python_algorithm/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

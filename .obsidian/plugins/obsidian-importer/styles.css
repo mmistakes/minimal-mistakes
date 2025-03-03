@@ -1,0 +1,87 @@
+.modal.mod-importer {
+	max-height: var(--modal-height);
+	padding: var(--size-4-4) 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+.modal.mod-importer .modal-title {
+	padding: 0 var(--size-4-4);
+}
+.modal.mod-importer .modal-content {
+	overflow: auto;
+	padding: var(--size-4-4);
+	margin-bottom: calc(var(--input-height) + var(--size-4-8));
+	border-top: var(--border-width) solid var(--background-modifier-border);
+}
+.modal.mod-importer .modal-button-container {
+	margin: 0 0 0 calc(var(--size-4-4) * -1);
+	padding: var(--size-4-4);
+	gap: var(--size-4-2);
+	position: absolute;
+	bottom: 0;
+	background-color: var(--background-primary);
+	border-top: var(--border-width) solid var(--background-modifier-border);
+	width: 100%;
+}
+
+.importer-progress-bar {
+	width: 100%;
+	height: 8px;
+	background-color: var(--background-secondary);
+	overflow: hidden;
+	box-shadow: inset 0px 0px 0px 1px var(--background-modifier-border);
+	border-radius: var(--radius-s);
+}
+
+.importer-progress-bar-inner {
+	width: 0;
+	height: 100%;
+	background-color: var(--interactive-accent);
+}
+
+.importer-status {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: var(--size-4-2) 0;
+}
+
+.importer-stats-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: var(--size-4-5);
+	margin-bottom: var(--size-4-5);
+}
+
+.importer-stat {
+	text-align: center;
+}
+
+.importer-stat-count {
+	font-size: var(--font-ui-large);
+}
+
+.importer-log {
+	overflow: auto;
+	flex-grow: 1;
+	font-family: var(--font-monospace);
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	border: 1px solid var(--background-modifier-border);
+	padding: var(--size-4-4);
+	background-color: var(--background-secondary);
+	border-radius: var(--radius-s);
+	max-height: 300px;
+	user-select: text;
+}
+
+.importer-log .list-item {
+	display: inline-block;
+	line-height: var(--line-height-normal);
+	white-space: pre;
+	margin: var(--size-2-1);
+}
+
+.importer-error {
+	color: var(--text-error);
+}
