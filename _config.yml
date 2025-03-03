@@ -363,9 +363,31 @@ date_format: "%Y-%m-%d"
 
 # Breadcrumb title mappings
 breadcrumb_titles:
-  ai_basic: "AI Basic"
-  python_algorithm: "코테 공부 기록(Python)"
-  cv: "CV(Computer Vision)"
-  recsys: "RecSys"
-  model_compression: "최적화 및 경량화"
+  # NAVER AI Tech - 정규(RecSys)
+  pytorch: "PyTorch"
+  ml_lifecycle: "ML Lifecycle" 
+  matplotlib: "EDA & DataViz"
+  basic_ai_development: "Basic AI Development"
+  ml_recsys: "ML for RecSys"
+  ml_in_practice: "ML in Practice"
+  ml_technique: "ML Technique"
+  ml_projects: "ML Projects"
+  recsys_basic: "RecSys Basic"
+  recsys_in_practice: "RecSys in Practice"
+  recsys_projects: "RecSys Projects"
+  generative_ai: "Generative AI"
+  product_serving: "Product Serving"
+  model_compression: "모델 최적화 및 경량화"
+  recsys_recent_trend: "RecSys Recent Trend"
+  
+  # NAVER AI Tech - 기업 해커톤
   hackathon: "Company Hackathon"
+  
+  # 알고리즘 정복기
+  python_algorithm_basic: "알고리즘 기초"
+  python_algorithm: "알고리즘 스터디"
+  
+  # # Kept from original (may still be in use elsewhere)
+  # ai_basic: "AI Basic"
+  # cv: "Computer Vision"
+  # recsys: "RecSys"

@@ -1,8 +1,8 @@
 ---
 title: 코테 공부 기록(Python)
 layout: category
-permalink: /python_algorithm/
-taxonomy: python_algorithm
+permalink: /python_algorithm_basic/
+taxonomy: python_algorithm_basic
 sidebar:
   nav: docs
 ---
