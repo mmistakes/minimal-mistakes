@@ -8,17 +8,81 @@ layout: single
 # gallery:
 #   - url: /assets/images/about-icon.jpg
 #     image_path: /assets/images/about-icon.jpg
-#     title: Before and after comparison
+#     title: About icon
 tags:
-  - helmi
+  - Q50
 ---
 
 <!-- # Open Call for pilot projects for access to the Helmi quantum computer -->
 
-*Coming soon*
+*The first Call for access to the VTT Q50 quantum computer is now open for users from Finnish higher-education institutions and research institutes.
+This marks a significant boost for the Finnish Quantum-Computing Infrastructure FiQCI, maintained and developed by VTT, CSC, and Aalto University.
+VTT Q50, the Finnish quantum computer operated by VTT is accessible through the LUMI supercomputer environment, provided by CSC.*
 
-Coming soon
+Through this Call, accepted projects will get access to a true hybrid high-performance computing / quantum computing (HPC+QC) environment,
+with a quantum computing resource that exceeds the capacity of full emulation on supercomputers.
+
+This opens exciting avenues in both software development and end-user applications.
+For a software development perspective, this setup enables the development of, for example, quantum-classical hybrid algorithms,
+error mitigation techniques, and quantum compilers that optimise circuit execution based on real hardware features.
+
+For end-users, applications such as quantum-enhanced optimisation, simulation of molecular systems and materials science,
+and machine learning acceleration through hybrid quantum-classical AI models becomes possible.
+
+The LUMI HPC backbone ensures that computationally demanding pre- and post-processing tasks can be seamlessly incorporated.
+Thus, quantum computing becomes a practical enhancement to supercomputing, and vice versa.
+The update to the FiQCI infrastructure creates a unique environment across classical, quantum, and hybrid HPC+QC software solutions.
+
+With the addition of the VTT Q50 quantum computer to FiQCI, also parallel quantum computing directly within a supercomputer
+environment can be explored.
 
 ## How to apply
 
-Coming soon
+Access to the VTT Q50 machine is organised through regular Calls, of which this is the first one. Calls will be announeced four times per year.
+
+**The deadline for Call 1/2025 is 1 April 2025**
+
+The application form is available here: [Application form for FiQCI / VTT Q50 Academic Project 1/2025](https://link.webropolsurveys.com/S/EC707D2388673638)
+
+**Please fill in all the applicable fields** in the application form, including Abstract, key scientific/societal/technological contribution,
+Justification for the importance, and References.
+
+### Requested computing time
+
+**Carefully estimate the total need of computational resources required for your project!**
+
+As a guideline, execution of a single circuit, using 10.000 shots consumes roughly 10 QPU-seconds. The execution time will naturally depend on the
+exact circuit being executed. Initialisation time for each circuit, included in this estimate, is roughly 4 seconds.
+
+The amount of resources applied for should be justified in the application. The following example resource application serves as a guideline;
+both smaller and larger resources can be granted based on the application.
+Note, however, that the total available QPU time available per Call is 20-40 QPU-hours.
+
+Resource allocation example:
+  - VTT Q50 QPU hours: 2
+  - LUMI CPU-core hours (in thousands of CPUh): 4
+  - LUMI GPU-core hours (in thousands of GPUh): 0
+  - LUMI Storage TiB hours (in thousands of TiBh): 5
+
+
+## Terms of Use
+
+Accepted Projects must accept the Terms of Use for both the LUMI supercomputing environment and the VTT Q50 system.
+Full Terms of Use will be communicated to the Principal Investigators before start of the projects.
+
+The main restrictions are:
+  - Only academic research purposes are eligible
+  - Use is restricted to users affiliated with a Finnish University, an University of Applied Sciences, a state owned research institute, and the National Archives of Finland
+  - No commercial purposes are allowed
+  - No sensitive or specific category data can be handled
+  - Access is allowed only from within Finland
+
+## Acknowledgement
+
+When publishing the results that utilise VTT Q50, users have to acknowledge the use of VTT Quantum and FiQCI, preferably in the format: 
+  - "These [results] have been acquired by VTT's quantum computer VTT Quantum.". Users should use "VTT Q50" when referring to the quantum computer.
+  - "The authors acknowledge the use of the Finnish Quantum-Computing Infrastructure FiQCI."
+
+
+
+
