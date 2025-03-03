@@ -8,3 +8,30 @@ layout: archive
 <div class="entries-{{ entries_layout }}">
   {% include posts-category.html taxonomy=page.taxonomy type=entries_layout %}
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 현재 페이지 URL 확인
+  const currentPath = window.location.pathname;
+  
+  // 여러 페이지에 적용하기 (OR 조건)
+  if (currentPath.includes('/pytorch/') || 
+      currentPath.includes('/baseline/') || 
+      currentPath.includes('/recsys_basic/')) {
+    const entriesContainer = document.querySelector('.entries-list, .entries-grid');
+    if (!entriesContainer) return;
+    
+    const entries = Array.from(entriesContainer.children);
+    
+    // 날짜로 정렬 (오래된 순서)
+    entries.sort(function(a, b) {
+      const dateA = new Date(a.querySelector('time').getAttribute('datetime'));
+      const dateB = new Date(b.querySelector('time').getAttribute('datetime'));
+      return dateA - dateB;
+    });
+    
+    // 정렬된 요소 다시 추가
+    entries.forEach(entry => entriesContainer.appendChild(entry));
+  }
+});
+</script>
