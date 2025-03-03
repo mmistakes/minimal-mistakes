@@ -15,14 +15,14 @@ main:
 certificates:
   - title: "Technical Certificates"
     children:
-      - title: "Cloud Computing"
-        url: /certificates/category/technical/cloud/
+      - title: "Computer Literacy"
+        url: /certificates/category/technical/computer-literacy/
       - title: "Software Development"
         url: /certificates/category/technical/software-development/
-      - title: "DevOps"
-        url: /certificates/category/technical/devops/
-      - title: "Data Science"
-        url: /certificates/category/technical/data-science/
+      - title: "Backend"
+        url: /certificates/category/technical/frontend/
+      - title: "Frontend"
+        url: /certificates/category/technical/backend/
   
   - title: "Professional Certificates"
     children:
