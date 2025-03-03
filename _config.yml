@@ -9,9 +9,9 @@ title_separator          : "⚡"
 subtitle                 : "Where Achievements Glow"
 name                     : "Your Name"
 description              : "A luminous collection of professional certifications, achievements, and digital learning adventures."
-url                      : # your github.io URL here
-baseurl                  : # leave blank for github.io sites
-repository               : # username/repo-name
+url                      : "https://gerryjekova.github.io"
+baseurl                  : "/minimal-mistakes-certifications-gallery"
+repository               : "gerryjekova/minimal-mistakes-certifications-gallery"
 teaser                   : # fallback teaser image
 logo                     : # path of logo for masthead
 masthead_title           : # override masthead title
@@ -43,20 +43,26 @@ author:
       # url: "https://linkedin.com/in/yourprofile"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/yourusername"
+      # url: "https://github.com/gerryjekova"
 
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      # url: "https://linkedin.com/in/yourprofile"
+      url: "https://linkedin.com/in/yourprofile"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/yourusername"
+      url: "https://github.com/gerryjekova"
+    - label: "Substack"
+      icon: "fas fa-fw fa-newspaper"
+      url: "https://yourname.substack.com"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com/@yourchannel"
     - label: "Twitch"
       icon: "fab fa-fw fa-twitch"
-      # url: "https://twitch.tv/yourchannel"
+      url: "https://twitch.tv/yourchannel"
 
 # Collections - This is the magic that creates our certificate gallery! ✨
 collections:
