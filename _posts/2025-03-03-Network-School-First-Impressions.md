@@ -52,7 +52,7 @@ Balaji’s concept of creating a “network state” is compelling, reminiscent 
 
 ### Speakers
 
-The high caliber of speakers at network school is impressive, though likely challenging to sustain. Balaji leverages his extensive personal network to attract globally recognized figures. Today, for example, we’ll hear from the first investor in ByteDance, the company behind TikTok—an extraordinary opportunity considering the small audience size.
+The high caliber of speakers at NS is impressive, though likely challenging to sustain. Balaji leverages his extensive personal network to attract globally recognized figures. Today, for example, we’ll hear from the first investor in ByteDance, the company behind TikTok—an extraordinary opportunity considering the small audience size.
 
 ### My pears first impressions
 
