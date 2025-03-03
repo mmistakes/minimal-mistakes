@@ -17,6 +17,7 @@ logo                     : # path of logo for masthead
 masthead_title           : # override masthead title
 breadcrumbs              : true
 words_per_minute         : 200
+permalink                : /blog/:title/ 
 
 # SEO Related
 google_site_verification : # Your verification code
