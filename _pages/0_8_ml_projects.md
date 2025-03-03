@@ -3,6 +3,7 @@ title: 8. ML Projects
 layout: category
 permalink: /ml_projects/
 taxonomy: ml_projects
+sort_order: "ascending"
 sidebar:
   nav: docs
 ---

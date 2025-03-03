@@ -3,6 +3,7 @@ title: "Baseline 정복"
 layout: category
 permalink: /hackathon_baseline/
 taxonomy: hackathon_baseline    # categories 값과 일치해야 함
+sort_order: "ascending"
 sidebar:
     nav: "docs"
 ---

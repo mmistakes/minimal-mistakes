@@ -3,6 +3,7 @@ title: "오디오 언어모델 경량화"
 layout: category
 permalink: /hackathon_lightweight/
 taxonomy: hackathon_lightweight    # categories 값과 일치해야 함
+sort_order: "ascending"
 sidebar:
     nav: "docs"
 ---
