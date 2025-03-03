@@ -3,7 +3,7 @@ name: Deploy Jekyll Site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - claude-changes-2
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
