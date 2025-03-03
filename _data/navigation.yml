@@ -42,7 +42,7 @@ docs:
         url: /model_compression/
       - title: "RecSys Recent Trend"
         url: /recsys_recent_trend/ 
-  - title: "NAVER AI Tech - 기업 해커톤(AudioLM 경량화)"
+  - title: "NAVER AI Tech_기업 해커톤"
     children:
       - title: "Company Hackathon"
         url: /hackathon/
