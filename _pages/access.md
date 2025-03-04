@@ -17,11 +17,16 @@ excerpt: >
 
 ## Accessing the FiQCI infrastructure
 
-The main access portal to the real quantum computing resources is through the LUMI supercomputer environment. Kvasi, the Quantum Learning Machine can be accessed directly.
+The main access portal to the physical quantum computing resources is through the LUMI supercomputer environment.
+Kvasi, the Quantum Learning Machine can be accessed directly.
 
-### Access to Helmi
+### Access to VTT Q50
 
-The pilot phase for Helmi access is now running! [More details here](_posts/2022-11-01-Helmi-pilot/), with instructions on how to apply for a pilot project.
+Coming soon!
+
+### Access to Helmi VTT Q5
+
+Helmi is accessible through LUMI. [More details here](_posts/2022-11-01-Helmi-pilot/), with instructions on how to apply for a project.
 
 Getting started [here](_posts/2024-08-23-Lumi_web_introduction/) with instructions how to interact with Helmi though LUMI web interface.
 
