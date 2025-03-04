@@ -54,7 +54,7 @@ Balaji’s concept of creating a “network state” is compelling, reminiscent 
 
 The high caliber of speakers at NS is impressive, though likely challenging to sustain. Balaji leverages his extensive personal network to attract globally recognized figures. Today, for example, we’ll hear from the first investor in ByteDance, the company behind TikTok—an extraordinary opportunity considering the small audience size.
 
-### 9. My pears first impressions
+### 9. My peers first impressions
 
 Colleagues have varied experiences. Tim from the USA  shares my satisfaction with the gym, accommodations, and food. Fei from Singapore finds the environment healing, equating it to a boot camp due to early gym sessions and although she finds the food bland compared to her typical diet. Our Egyptian colleagues observing Ramadan encountered practical challenges around meal timings, food availability, and gym schedules incompatible with fasting hours, but are enjoying it otherwise.
 
