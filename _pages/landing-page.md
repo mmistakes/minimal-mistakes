@@ -39,10 +39,9 @@ feature_row:
 
 {% include feature_row id="intro" type="center" %}
 
-## Call for Academic Projects on the 50-qubit VTT Q50 [Open]({% post_url 2025-03-04-Q50-Call-1_2025 %})
-## Coming Soon: New Quantum Computer
-
-<!-- [Read more here](posts/2022-10-31-Helmi-pilot/). -->
+<p style="text-align:center;">
+## [Call for Academic Projects on the fifty qubit VTT Q50 Open]({% post_url 2025-03-04-Q50-Call-1_2025 %})
+</p>
 
 {% include feature_row %}
 
