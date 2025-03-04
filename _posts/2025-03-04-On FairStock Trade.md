@@ -2,7 +2,7 @@
 Title: FairStock.Trade
 ---
 
-I'm the CEO of both [bld.ai](https://www.bld.ai) and [FairStock.Trade](https://www.bld.ai), companies that complement each other in powerful ways. Through bld.ai, I've overseen more than 500 projects generating over $50 million in revenue, primarily serving enterprises through professional services in engineering, design, data science, and consulting. This experience has given me deep insights into how innovation is funded and executed at both enterprises and startups.
+I'm the CEO of both [bld.ai](https://www.bld.ai) and [FairStock.Trade](https://fairstock.trade), companies that complement each other in powerful ways. Through bld.ai, I've overseen more than 500 projects generating over $50 million in revenue, primarily serving enterprises through professional services in engineering, design, data science, and consulting. This experience has given me deep insights into how innovation is funded and executed at both enterprises and startups.
 
 ### 1. Funding Humanity’s Kardashev Future
 
