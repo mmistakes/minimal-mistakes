@@ -34,6 +34,9 @@ intro:
 Helmi is accessible through the LUMI environment daily.
 {: .notice--info}
 
+The system is undergoing changes and there might some inconsistencies with the actual status
+{: .notice--info}
+
 <center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -58,7 +61,7 @@ Helmi is accessible through the LUMI environment daily.
 <tbody>
   <tr>
     <td class="tg-tbqi">LUMI-Helmi</td>
-    <td class="tg-49rs" id="helmi_status"></td>
+    <td class="tg-49rs">🟢</td>
   </tr>
 </tbody>
 </table>
