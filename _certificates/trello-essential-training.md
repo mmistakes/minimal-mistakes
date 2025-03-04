@@ -25,6 +25,7 @@ gallery:
 **Duration:** 2 hours 29 minutes  
 **Issued By:** LinkedIn Learning  
 **Certificate ID:** eb8eb0b720531fe28edfbcf5b8214fb57212eb44af5c806db62b7327b0802393
+**Certificate Link:** 
 
 This course equipped me with the skills to leverage Trello's visual project management capabilities for better team organization and workflow management.
 
