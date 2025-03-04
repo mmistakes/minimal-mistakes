@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_pages/1_3_hackathon_lightweight.md",
+                "file": "notion_NAVER/Wrap-up Report 110a5ea423548099b2f0ff76bed82b1f.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_3_hackathon_lightweight"
+              "title": "Wrap-up Report 110a5ea423548099b2f0ff76bed82b1f"
             }
           }
         ]
@@ -166,10 +166,13 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
+    "_includes/mathjax-support.html",
+    "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472.md",
+    "_pages/1_1_hackathon_baseline.md",
+    "_pages/1_2_hackathon_audiodata.md",
+    "_pages/1_3_hackathon_lightweight.md",
     "_posts/2025-01-15-2_salmonn-multiple_task.md",
     "_posts/2025-01-15-1_salmonn.md",
-    "_pages/1_2_hackathon_audiodata.md",
-    "_pages/1_1_hackathon_baseline.md",
     "_pages/0_15_recsys_recent_trend.md",
     "_pages/0_14_model_compression.md",
     "_pages/0_13_product_serving.md",
@@ -185,14 +188,11 @@
     "_pages/0_3_matplotlib.md",
     "_pages/0_2_ml_lifecycle.md",
     "_pages/0_1_pytorch.md",
-    "_pages/1_3_hackathon_lightweight.md",
     "assets/css/sidebar.css",
     "test/2024-08-08-week1_8.md",
     "2024-08-08-week1_8.md",
     "notion_NAVER/Day 5 Binary Classification 2 1788bf09140941a294eb35ccec7a4cea.md",
     "_pages/1_2_hackathon_lightweight.md",
-    "_pages/1_2_hackathon_audiodata copy.md",
-    "_pages/1_1_hackathon_baseline copy.md",
     "ads.txt",
     "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.45.51.png",
     "notion_NAVER/Day 1 소프트 엔지니어링과 AI 엔지니어링 102a5ea4235480588988f57c0a343de2/image.png",
