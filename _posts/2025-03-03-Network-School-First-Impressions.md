@@ -6,7 +6,7 @@ I’m on day two of [network school](https://ns.com/). It’s 6 a.m. and I’m w
 
 I’m here with a few colleagues from [bld.ai](https://www.bld.ai/) who, like me, didn’t know until recently about [Balaji’s book](https://thenetworkstate.com/). None of us arrived primed; instead, we came without preconceived notions, offering perhaps a unique perspective on the experience.
 
-Initially, I visited NS because my friend Grace was attending the V1 session in the fall. I’d only heard of Balaji from [X](https://x.com/balajis). Our conversations revolved mostly around her startup rather than NS itself. My initial observation was that NS didn’t seem family-oriented, but Grace corrected me, explaining that Balaji and Boonsri have five kids and encourage family participation. Soon after, I returned with my own 3 children and participated in a hackathon.
+Initially, I visited NS because my friend Grace was attending the V1 session in the fall. I’d only heard of Balaji from [X](https://x.com/balajis). Our conversations revolved mostly around her startup rather than NS itself. My initial observation was that NS didn’t seem family-oriented, but Grace corrected me, explaining that NS encourages family participation. Soon after, I returned with my own 3 children and participated in a hackathon.
 
 Allow me a small digression here to set the context
 
