@@ -22,7 +22,7 @@ Kvasi, the Quantum Learning Machine can be accessed directly.
 
 ### Access to VTT Q50
 
-Coming soon!
+VTT Q50 is accessible through LUMI. [More details on the first Call for academic use here](_posts/2025-03-04-Q50-Call-1_2025/).
 
 ### Access to Helmi VTT Q5
 
