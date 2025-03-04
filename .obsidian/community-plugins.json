@@ -1,4 +1,7 @@
 [
-  "obsidian-importer",
-  "code-styler"
+  "table-editor-obsidian",
+  "codeblock-tabs",
+  "code-styler",
+  "templater-obsidian",
+  "obsidian-paste-image-rename"
 ]
