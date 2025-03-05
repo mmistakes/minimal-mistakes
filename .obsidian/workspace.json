@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "a9dc2ad4a8a895c7",
+        "id": "a688ffe87bd99057",
         "type": "tabs",
         "children": [
           {
-            "id": "b786e66830e197d9",
+            "id": "e9c6c653669eafff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-05-week1_1.md",
+                "file": "_posts/2024-08-08-week1_8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-05-week1_1"
-            }
-          },
-          {
-            "id": "64815f7aead55316",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-08-06-week1_4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2024-08-06-week1_4"
+              "title": "2024-08-08-week1_8"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 258.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -109,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_posts/2025-01-15-SALMONN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "2025-01-15-SALMONN의 백링크"
             }
           },
           {
@@ -159,19 +145,8 @@
               "icon": "lucide-list",
               "title": "2025-01-15-SALMONN 개요"
             }
-          },
-          {
-            "id": "ac87c5e546195a61",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,57 +161,56 @@
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "64815f7aead55316",
+  "active": "e9c6c653669eafff",
   "lastOpenFiles": [
-    "_posts/2024-08-05-week1_2.md",
-    "_posts/2024-08-05-week1_1.md",
+    "_posts/2024-08-08-week1_7.md",
+    "_posts/2024-08-08-week1_8.md",
+    "_posts/2024-08-08-week1_7 copy.md",
+    "notion_NAVER/Wrap-up Report 110a5ea423548099b2f0ff76bed82b1f.md",
     "_templates/AddRelativePathToImages.md.md",
+    "_templates/무제.md",
+    "무제.md",
     "_templates",
-    "images/2024-08-07-week1_6/image 1.png",
-    "images/2024-08-07-week1_6/image.png",
-    "_posts/2024-08-07-week1_5.md",
-    "_posts/2024-08-07-week1_6.md",
+    "_template",
+    "무제",
     "images/2024-08-07-week1_5/image2.png",
     "images/2024-08-07-week1_5/image1.png",
-    "_posts/2024-08-08-week1_7.md",
-    "_posts/2024-08-06-week1_4.md",
-    "images/2024-08-06-week1_4/image1.png",
     "images/2024-08-06-week1_4/image3.png",
     "images/2024-08-06-week1_4/image2.png",
-    "images/2024-08-05-week1_1/image1.png",
-    "images/2024-08-05-week1_1/image2.png",
+    "images/2024-08-06-week1_4/image1.png",
+    "images/2024-08-07-week1_6/image.png",
+    "images/2024-08-07-week1_6/image 9.png",
+    "images/2024-08-07-week1_6/image 1.png",
+    "images/2024-08-07-week1_6/image 8.png",
+    "images/2024-08-06-week1_4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-09_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.36.13.png",
+    "images/2024-08-05-week1_1",
+    "images/2024-08-06-week1_4",
     "images/2024-08-07-week1_6",
     "images/2024-08-07-week1_5",
-    "images/2024-08-06-week1_4",
-    "images/2024-08-05-week1_1",
-    "_posts/2024-08-06-week1_3.md",
-    "_posts/2025-01-15-1_salmonn.md",
+    "_includes/mathjax-support.html",
+    "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472.md",
     "_pages/1_1_hackathon_baseline.md",
+    "_pages/1_2_hackathon_audiodata.md",
+    "_pages/1_3_hackathon_lightweight.md",
     "_posts/2025-01-15-2_salmonn-multiple_task.md",
-    "_pages/0_4_basic_ai_development.md",
+    "_posts/2025-01-15-1_salmonn.md",
+    "_pages/0_15_recsys_recent_trend.md",
     "_pages/0_14_model_compression.md",
-    "assets/css/sidebar.css",
-    "_posts/2024-11-29-naver_aitech_week15.md",
-    "_posts/2024-11-01-naver_aitech_week11.md",
-    "_posts/2024-08-09-naver_aitech_week01.md",
     "_pages/0_13_product_serving.md",
+    "_pages/0_12_generative_ai.md",
+    "_pages/0_11_recsys_projects.md",
     "_pages/0_10_recsys_in_practice.md",
     "_pages/0_9_recsys_basic.md",
-    "_posts/2024-12-20-naver_aitech_week18.md",
-    "_pages/0_5_ml_recsys.md",
+    "_pages/0_8_ml_projects.md",
+    "_pages/0_7_ml_technique.md",
     "_pages/0_6_ml_in_practice.md",
-    "_posts/2024-11-08-naver_aitech_week12.md",
-    "_posts/2024-11-22-naver_aitech_week14.md",
-    "_pages/0_0_ computer_science.md",
-    "notion_NAVER/피어세션 79d5681bfa644df1bb628cf900e1d131/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-08_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.56.53.png",
-    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서_(제닉스주식회사).pdf",
-    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서_(네이버클라우드).pdf",
-    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(플레이오니).pdf",
-    "notion_NAVER/파트너 기업 채용 공고 정리 1a1a5ea4235480bbad66fd1aecc39381/소개문서(프로메디우스).pdf",
-    "notion_NAVER/Python Pandas 함수 정리 메서드 정리 13ea5ea4235480d0b2b8c1413d632bf8/Series method VS DataFrame method 13ea5ea423548072b5b1d96493dd9bfe.md"
+    "_pages/0_5_ml_recsys.md",
+    "_pages/0_4_basic_ai_development.md",
+    "_pages/0_3_matplotlib.md",
+    "assets/css/sidebar.css",
+    "ads.txt"
   ]
 }
