@@ -166,6 +166,7 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
+    "_includes/katex_render.html",
     "_posts/2024-08-08-week1_7.md",
     "_posts/2024-08-08-week1_8.md",
     "_posts/2024-08-08-week1_7 copy.md",
@@ -209,7 +210,6 @@
     "_pages/0_6_ml_in_practice.md",
     "_pages/0_5_ml_recsys.md",
     "_pages/0_4_basic_ai_development.md",
-    "_pages/0_3_matplotlib.md",
     "assets/css/sidebar.css",
     "ads.txt"
   ]
