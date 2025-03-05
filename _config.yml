@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jeongyeon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "데이터로 미래를 보고, 언어로 세계를 넓힌다"
   location         : "Somewhere"
   email            :
   links:
