@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-08-week1_8.md",
+                "file": "_posts/2024-08-05-week1_1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-08-week1_8"
+              "title": "2024-08-05-week1_1"
             }
           }
         ]
@@ -166,9 +166,11 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
+    "images/2024-08-05-week1_1/image1.png",
+    "_posts/2024-08-05-week1_1.md",
+    "_posts/2024-08-08-week1_8.md",
     "_includes/katex_render.html",
     "_posts/2024-08-08-week1_7.md",
-    "_posts/2024-08-08-week1_8.md",
     "_posts/2024-08-08-week1_7 copy.md",
     "notion_NAVER/Wrap-up Report 110a5ea423548099b2f0ff76bed82b1f.md",
     "_templates/AddRelativePathToImages.md.md",
@@ -209,8 +211,6 @@
     "_pages/0_7_ml_technique.md",
     "_pages/0_6_ml_in_practice.md",
     "_pages/0_5_ml_recsys.md",
-    "_pages/0_4_basic_ai_development.md",
-    "assets/css/sidebar.css",
-    "ads.txt"
+    "assets/css/sidebar.css"
   ]
 }
