@@ -19,7 +19,7 @@ locale                   : "en-AU"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Dae's blog"
 title_separator          : "|"
-subtitle                 : "A personal blog for my learning journey, notes, and more."
+subtitle                 : "A Github blog for my learning journey, notes, and more."
 name                     : "Dae"
 description              : "Dae's blog"
 url                      : "https://Dae-Y.github.io"
@@ -36,7 +36,7 @@ copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : "disqus" # false(default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "daesblog"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
