@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A8 - Ausflug in die Bücherei",
-    "title": "A8 - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NmwxNDN1b3IwNGRrOThtYWQ0M21yNTNsbnAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-05T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-05T13:30:00+01:00"
-    },
-    "created": "2025-02-26T06:31:55.000Z",
-    "updated": "2025-02-26T06:31:55.363Z"
-  },
-  {
-    "image_path": null,
     "alt": "A1 - Ausflug ins Planetarium",
     "title": "A1 - Ausflug ins Planetarium",
     "excerpt": null,
@@ -83,6 +66,23 @@
     },
     "created": "2025-02-10T07:38:15.000Z",
     "updated": "2025-02-21T06:34:09.382Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Lesepatentreffen",
+    "title": "Lesepatentreffen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=aGE2YzZrZHA4OGE3M3U2aDhrZnVwNnV0dTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-20T14:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-20T16:00:00+01:00"
+    },
+    "created": "2025-03-05T05:33:43.000Z",
+    "updated": "2025-03-05T05:33:44.131Z"
   },
   {
     "image_path": null,
