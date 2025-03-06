@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-07-python_study_week1_11399.md",
+                "file": "_posts/2024-08-05-week1_2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-07-python_study_week1_11399"
+              "title": "2024-08-05-week1_2"
             }
           }
         ]
@@ -166,9 +166,9 @@
   },
   "active": "e9c6c653669eafff",
   "lastOpenFiles": [
-    "_posts/2025-03-06-python_study_week1_2839.md",
-    "_posts/2025-03-07-python_study_week1_11399.md",
     "_pages/0_1_pytorch.md",
+    "_posts/2025-03-07-python_study_week1_11399.md",
+    "_posts/2025-03-06-python_study_week1_2839.md",
     "_posts/2024-08-06-python_day_2.md",
     "_pages/2_2_python_algorithm_study.md",
     "_posts/2024-08-05-python_day_1.md",
