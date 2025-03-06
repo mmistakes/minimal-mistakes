@@ -1,0 +1,14 @@
+{
+  "id": "obsidian-underline",
+  "name": "Underline",
+  "version": "1.3.0",
+  "description": "Add underline(`<u>xxx</u>`) with shortcut, and `<center>xxx</center>`, `[[#xxx]]`, `[[#^xxx]]`",
+  "author": "Benature",
+  "authorUrl": "https://github.com/Benature",
+  "fundingUrl": {
+    "Buy Me a Coffee": "https://www.buymeacoffee.com/benature",
+    "爱发电": "https://afdian.net/a/Benature-K",
+    "微信/支付宝": "https://s2.loli.net/2024/01/30/jQ9fTSyBxvXRoOM.png"
+  },
+  "isDesktopOnly": false
+}

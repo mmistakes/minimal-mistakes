@@ -1,7 +1,8 @@
 [
   "table-editor-obsidian",
-  "codeblock-tabs",
   "code-styler",
   "templater-obsidian",
-  "obsidian-paste-image-rename"
+  "obsidian-paste-image-rename",
+  "obsidian-underline",
+  "obsidian-markdown-formatting-assistant-plugin"
 ]

@@ -1,0 +1,62 @@
+/* Sets all the text color to red! */
+.nav-action-button {
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.nav-action-text-button {
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 5px;
+  margin: 4px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid;
+}
+.nav-action-text-button.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.nav-action-text-button.is-active:hover {
+  color: var(--text-on-accent);
+}
+.nav-action-text-button:hover {
+  color: var(--text-accent);
+}
+
+.color-icon {
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  height: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  margin: 3px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.command-list-view-row {
+  display: flex;
+}
+.command-list-view-container {
+  min-width: 60px;
+  display: flex;
+}
+
+.command-list-view-icon {
+  height: 24px;
+  max-height: 24px;
+  border: 1px solid gray;
+  margin-right: auto;
+}
+
+.command-list-view-text {
+  padding-left: 12px;
+  color: #c7254e;
+}

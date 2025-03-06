@@ -164,9 +164,21 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "e9c6c653669eafff",
+  "active": "37bf1aed25081d32",
   "lastOpenFiles": [
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images/${filename}/Apple.jpeg",
+    "images/2024-08-05-week1_1/image5.png",
+    "images/image5.png",
+    "images/스크린샷 2025-03-06 오후 7.14.19.png",
+    "images/2024-08-05-week1_1/image4.png",
+    "images/image4.png",
+    "images/스크린샷 2025-03-06 오후 7.14.15.png",
+    "images/${notename}.png",
+    "images/{filename}",
+    "images/2024-08-05-week1_1/스크린샷 2025-03-06 오후 7.14.15.png",
+    "스크린샷.md",
+    "images/2024-08-05-week1_1/image3.png",
+    "images/2024-08-05-week1_1/스크린샷 2025-03-06 오후 7.03.26.png",
+    "images/스크린샷 2025-03-06 오후 7.02.10.png",
     "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images/${filename}",
     "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images",
     "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io",
@@ -176,8 +188,6 @@
     "Users/kwangjinpark/Library/Mobile Documents",
     "Users/kwangjinpark/Library",
     "Users/kwangjinpark",
-    "Users",
-    "images/2024-08-05-week1_1/image1.png",
     "_posts/2024-08-05-week1_1.md",
     "_posts/2024-08-08-week1_8.md",
     "_posts/2024-08-08-week1_7.md",
@@ -186,15 +196,6 @@
     "_templates/AddRelativePathToImages.md.md",
     "_templates/무제.md",
     "무제.md",
-    "images/2024-08-07-week1_5/image2.png",
-    "images/2024-08-07-week1_5/image1.png",
-    "images/2024-08-06-week1_4/image3.png",
-    "images/2024-08-06-week1_4/image2.png",
-    "images/2024-08-06-week1_4/image1.png",
-    "images/2024-08-07-week1_6/image.png",
-    "images/2024-08-07-week1_6/image 9.png",
-    "images/2024-08-07-week1_6/image 1.png",
-    "images/2024-08-07-week1_6/image 8.png",
     "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472.md",
     "_pages/1_1_hackathon_baseline.md",
     "_pages/1_2_hackathon_audiodata.md",
@@ -210,7 +211,6 @@
     "_pages/0_9_recsys_basic.md",
     "_pages/0_8_ml_projects.md",
     "_pages/0_7_ml_technique.md",
-    "_pages/0_6_ml_in_practice.md",
-    "_pages/0_5_ml_recsys.md"
+    "_pages/0_6_ml_in_practice.md"
   ]
 }
