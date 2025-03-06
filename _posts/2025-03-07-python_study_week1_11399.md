@@ -2,7 +2,7 @@
 layout: single
 title: "[Python/파이썬][Greedy/그리디] 백준 11399번 - ATM"
 categories:
-  - python_algorithm_basic
+  - python_algorithm_study
 tags:
   - python
   - 백준

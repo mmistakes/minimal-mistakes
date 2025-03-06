@@ -55,7 +55,7 @@ docs:
       - title: "알고리즘 기초(Python)"
         url: /python_algorithm_basic/
       - title: "알고리즘 스터디(Python)"
-        url: /python_algorithm/
+        url: /python_algorithm_study/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

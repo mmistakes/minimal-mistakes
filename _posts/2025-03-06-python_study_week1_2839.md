@@ -2,7 +2,7 @@
 layout: single
 title: "[Python/파이썬][Greedy/그리디] 백준 2839번 - 모음의 개수"
 categories:
-  - python_algorithm_basic
+  - python_algorithm_study
 tags:
   - python
   - 백준
