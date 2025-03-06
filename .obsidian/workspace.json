@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-05-week1_1.md",
+                "file": "_pages/2_2_python_algorithm_study.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-05-week1_1"
+              "title": "2_2_python_algorithm_study"
             }
           }
         ]
@@ -164,8 +164,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "37bf1aed25081d32",
+  "active": "e9c6c653669eafff",
   "lastOpenFiles": [
+    "_posts/2024-08-05-week1_1.md",
+    "_pages/2_2_python_algorithm_study.md",
+    "_pages/2_1_python_algorithm copy.md",
+    "_pages/2_1_python_algorithm.md",
+    "images/2024-08-05-week1_1/image3.png",
     "images/2024-08-05-week1_1/image5.png",
     "images/image5.png",
     "images/스크린샷 2025-03-06 오후 7.14.19.png",
@@ -176,9 +181,7 @@
     "images/{filename}",
     "images/2024-08-05-week1_1/스크린샷 2025-03-06 오후 7.14.15.png",
     "스크린샷.md",
-    "images/2024-08-05-week1_1/image3.png",
     "images/2024-08-05-week1_1/스크린샷 2025-03-06 오후 7.03.26.png",
-    "images/스크린샷 2025-03-06 오후 7.02.10.png",
     "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images/${filename}",
     "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images",
     "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io",
@@ -188,7 +191,6 @@
     "Users/kwangjinpark/Library/Mobile Documents",
     "Users/kwangjinpark/Library",
     "Users/kwangjinpark",
-    "_posts/2024-08-05-week1_1.md",
     "_posts/2024-08-08-week1_8.md",
     "_posts/2024-08-08-week1_7.md",
     "_posts/2024-08-08-week1_7 copy.md",
@@ -209,8 +211,6 @@
     "_pages/0_11_recsys_projects.md",
     "_pages/0_10_recsys_in_practice.md",
     "_pages/0_9_recsys_basic.md",
-    "_pages/0_8_ml_projects.md",
-    "_pages/0_7_ml_technique.md",
-    "_pages/0_6_ml_in_practice.md"
+    "_pages/0_8_ml_projects.md"
   ]
 }
