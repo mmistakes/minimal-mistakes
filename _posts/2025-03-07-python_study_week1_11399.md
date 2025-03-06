@@ -34,7 +34,7 @@ use_math: true
 		2. 이중 반복문을 적용하여, 1번 사람~5번 사람까지 걸리는 시간을 각각 계산해서 더함
 
 - 1번 방법
-~~~
+```
 n = int(input())
 a, b, c, d, e = map(int, input().split())
 
@@ -45,10 +45,10 @@ for i in range(n):
 	min_total += sorted_time[i] * (n - i)
 
 print(min_total)
-~~~
+```
 
 - 2번 방법
-~~~
+```
 n = int(input())
 a, b, c, d, e = map(int, input().split())
 
@@ -60,7 +60,7 @@ for i in range(n):
 	min_total += current_sum
 
 print(min_total)
-~~~
+```
 
 
 - 위와 같이 적용하여 제출하니, 계속 런타임 에러가 발생하여 아래와 같은 시도를 해봄
@@ -88,7 +88,7 @@ print(min_total)
 ```
 
 풀이 2
-~~~
+```
 n = int(input())
 sorted_time = sorted(list(map(int, input().split())))
 min_total = 0
@@ -98,5 +98,5 @@ for i in range(n):
 	min_total += current_sum
 
 print(min_total)
-~~~
+```
 

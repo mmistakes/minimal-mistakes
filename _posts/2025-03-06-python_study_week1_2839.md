@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Python/파이썬][Greedy/그리디] 백준 2839번 - 모음의 개수"
+title: "[Python/파이썬][Greedy/그리디] 백준 2839번 - 설탕 배달"
 categories:
   - python_algorithm_study
 tags:
@@ -34,7 +34,7 @@ use_math: true
 		  **"정확한 N킬로그램"** 가능
 		- "정확한 N킬로그램"을 맞출 수 없는 경우, **min_bags는 그대로 inf 값으로 유지**되어 -1 출력
 
-### 코드
+## 코드
 ```
 n = int(input())
 min_bags = float('inf') # 조합 가능한 경우가 없는 경우, -1 출력을 위한 장치
