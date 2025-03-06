@@ -33,7 +33,7 @@ use_math: true
 		1. `sorted_time`의 0번 원소는 n번 등장, 1번 원소는 $n-1$번 등장, 2번 원소는 $n-2$번 등장...의 식으로 모두 더함
 		2. 이중 반복문을 적용하여, 1번 사람~5번 사람까지 걸리는 시간을 각각 계산해서 더함
 
-- 1번 방법
+1번 방법
 ```
 n = int(input())
 a, b, c, d, e = map(int, input().split())
@@ -48,7 +48,7 @@ print(min_total)
 ```
 
 
-- 2번 방법
+2번 방법
 ```
 n = int(input())
 a, b, c, d, e = map(int, input().split())
@@ -86,6 +86,8 @@ for i in range(n):
 
 print(min_total)
 ```
+
+
 
 풀이 2
 ```
