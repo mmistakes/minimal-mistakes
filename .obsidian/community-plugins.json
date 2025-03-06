@@ -1,8 +1,5 @@
 [
-  "table-editor-obsidian",
+  "obsidian-importer",
   "code-styler",
-  "templater-obsidian",
-  "obsidian-paste-image-rename",
-  "obsidian-underline",
-  "obsidian-markdown-formatting-assistant-plugin"
+  "obsidian-underline"
 ]
