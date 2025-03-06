@@ -47,6 +47,7 @@ for i in range(n):
 print(min_total)
 ```
 
+
 - 2번 방법
 ```
 n = int(input())
