@@ -11,10 +11,14 @@
             "id": "35e12db421a6c09f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-08-06-week1_3.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "2024-08-06-week1_3"
             }
           }
         ]
@@ -163,9 +167,10 @@
   "active": "35e12db421a6c09f",
   "lastOpenFiles": [
     "_posts/2024-08-05-week1_2.md",
-    "_pages/0_1_pytorch.md",
     "_posts/2025-03-07-python_study_week1_11399.md",
     "_posts/2025-03-06-python_study_week1_2839.md",
+    "_posts/2025-01-16-salmonn-audio_dataset.md",
+    "_pages/0_1_pytorch.md",
     "_posts/2024-08-06-python_day_2.md",
     "_pages/2_2_python_algorithm_study.md",
     "_posts/2024-08-05-python_day_1.md",
@@ -206,7 +211,6 @@
     "_pages/1_3_hackathon_lightweight.md",
     "_posts/2025-01-15-2_salmonn-multiple_task.md",
     "_posts/2025-01-15-1_salmonn.md",
-    "_pages/0_15_recsys_recent_trend.md",
-    "_pages/0_14_model_compression.md"
+    "_pages/0_15_recsys_recent_trend.md"
   ]
 }

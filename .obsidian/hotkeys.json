@@ -1,18 +1,34 @@
 {
-  "editor:insert-codeblock": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "`"
-    }
-  ],
   "editor:insert-mathblock": [
     {
       "modifiers": [
         "Shift"
       ],
       "key": "4"
+    }
+  ],
+  "workspace:new-tab": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "editor:insert-table": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "`"
     }
   ]
 }
