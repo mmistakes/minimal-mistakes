@@ -7,6 +7,8 @@ tags:
   - python
   - 백준
   - solved
+  - 그리디
+  - greedy
 author_profile: false
 use_math: true
 ---
@@ -46,7 +48,7 @@ for i in range(n):
 
 print(min_total)
 ```
-
+  
 
 2번 방법
 ```
