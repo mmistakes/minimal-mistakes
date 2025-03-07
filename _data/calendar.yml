@@ -69,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "Fachkonferenz Mathematik",
+    "title": "Fachkonferenz Mathematik",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Y3A3bGtrbTY2NXE4YmEzMXFza2NpMHVvN2MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-18T15:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-18T16:30:00+01:00"
+    },
+    "created": "2025-03-06T17:16:04.000Z",
+    "updated": "2025-03-06T17:16:04.403Z"
+  },
+  {
+    "image_path": null,
     "alt": "Lesepatentreffen",
     "title": "Lesepatentreffen",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2025-03-05T05:33:43.000Z",
     "updated": "2025-03-05T05:33:44.131Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A3 - Ausflug zum Planetarium",
-    "title": "A3 - Ausflug zum Planetarium",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGdsdGNyb2tzc3J2cXF0OGNnNjJpbXJqaGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-21T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-21T13:30:00+01:00"
-    },
-    "created": "2025-02-18T12:56:57.000Z",
-    "updated": "2025-02-18T12:56:57.267Z"
   }
 ]
