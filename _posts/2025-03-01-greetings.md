@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Greetings!"
+toc: true
 ---
 # <center>Hello World!</center> 
   
