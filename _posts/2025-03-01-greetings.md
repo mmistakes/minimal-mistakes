@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: "Greetings!"
-
+toc: true
+categories: post
 ---
 # <center>Hello World!</center> 
   
