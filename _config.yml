@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Juhyun Lee"
-  avatar           : "/assets/하트프사.png" 
+  avatar           : "/assets/하트프사.png"
   bio              : "Hard working, devoting Junior student majoring Computational & Data Sciences(BS) at George Mason University Korea."
   location         : "Seoul, South Korea"
   email            : 
@@ -123,8 +123,8 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto: jhleenk@gmail.com"
     - label: "Website"
-     icon: "fas fa-fw fa-link"
-     url: "https://juhyunnikkilee.my.canva.site/"
+      icon: "fas fa-fw fa-link"
+      url: "https://juhyunnikkilee.my.canva.site/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jlee400"
