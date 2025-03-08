@@ -1,4 +1,10 @@
-
+--- 
+layout: post
+title: "Greetings!"
+toc: true
+categories: post
+tag: greetings
+---
 # <center>Hello World!</center> 
   
 <center>This is my first post ever!</center>
