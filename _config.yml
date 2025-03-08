@@ -26,7 +26,7 @@ url                      : "https://jlee400.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/하트프사사.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Juhyun Lee"
-  avatar           : "/assets/새짹짹이프사.png" 
+  avatar           : "/assets/하트프사.png" 
   bio              : "Hard working, devoting Junior student majoring Computational & Data Sciences(BS) at George Mason University Korea."
   location         : "Seoul, South Korea"
   email            : 
