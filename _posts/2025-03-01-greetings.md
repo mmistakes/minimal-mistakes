@@ -2,7 +2,7 @@
 layout: post
 title: "Greetings!"
 toc: true
-comments: true
+categories: post
 ---
 # <center>Hello World!</center> 
   
