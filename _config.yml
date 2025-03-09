@@ -19,7 +19,7 @@ locale                   : "en-AU"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Dae's blog"
 title_separator          : "|"
-subtitle                 : "A Github blog for my learning journey, notes, and more."
+subtitle                 : "A Github blog for my learning journey, and more."
 name                     : "Dae"
 description              : "Dae's blog"
 url                      : "https://Dae-Y.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Daehwan Yeo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A final-year Comp-Sci student at Curtin Uni, created this blog to document the valuable insights I've gained throughout my studies."
+  bio              : "A final-year Comp-Sci student at Curtin Uni, created this blog to document valuable insights I've gained throughout my studies."
   location         : "Australia"
   email            : 
   links:
