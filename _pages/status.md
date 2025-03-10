@@ -34,7 +34,7 @@ intro:
 Helmi is accessible through the LUMI environment daily.
 {: .notice--info}
 
-The system is undergoing changes and there might some inconsistencies with the actual status
+The system is undergoing changes and there might be some inconsistencies with the actual status
 {: .notice--info}
 
 <center>
