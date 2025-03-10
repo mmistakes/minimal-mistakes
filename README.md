@@ -1,3 +1,3 @@
-This is a repository that stores what you study about deep learning and machine learning.
+This is a repository where I store what I have studied.
 
 https://snagjincha.github.io/
