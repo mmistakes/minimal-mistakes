@@ -21,10 +21,16 @@ layout: default
   </article>
 </div>
 
-<!-- In your Jekyll layout file (e.g., _layouts/default.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
 <body>
-  <!-- Your content -->
-  <img id="fire" src="/assets/images/image.png" alt="Fire">
-  <!-- Include the JS file -->
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <img id="fire" src="{{ '/assets/images/image.png' | relative_url }}" alt="Flickering Fire">
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
+</html>
