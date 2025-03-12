@@ -7,10 +7,10 @@ toc: true
 author_profile: false
 ---
 
-**[공지사항]** [본 블로그에 포함된 모든 정보는 교육 목적으로만 제공됩니다.](https://weoooo.github.io/notice/notice/)
+**[공지사항]** [본 블로그에 포함된 모든 정보는 교육 목적으로만 제공됩니다.](https://weo0o0.github.io/notice/notice/)
 {: .notice--danger}
 
-**[SQLi-sqlma 옵션 리스트 01]**[SQLi-sqlma 옵션 리스트 01로 이동 합니다.](https://weoooo.github.io/sqli/SQLi-sqlmap-otion-01/)
+**[SQLi-sqlma 옵션 리스트 01]**[SQLi-sqlma 옵션 리스트 01로 이동 합니다.](https://weo0o0.github.io/sqli/SQLi-sqlmap-otion-01/)
 {: .notice--success}
 
 ## 운영 체제 접근(Operating system access)

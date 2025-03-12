@@ -6,10 +6,10 @@ tag: [bee-box, 설정]
 toc: true
 author_profile: false
 ---
-**[공지사항]** [본 블로그에 포함된 모든 정보는 교육 목적으로만 제공됩니다.](https://weoooo.github.io/notice/notice/)
+**[공지사항]** [본 블로그에 포함된 모든 정보는 교육 목적으로만 제공됩니다.](https://weo0o0.github.io/notice/notice/)
 {: .notice--danger}
 
-**[bee-box란?]** [bee-box를 모르신다면 클릭!](https://weoooo.github.io/bee-box/bee-box/)
+**[bee-box란?]** [bee-box를 모르신다면 클릭!](https://weo0o0.github.io/bee-box/bee-box/)
 {: .notice--success}
 
 ## bee-box의 키보드 설정 변경
