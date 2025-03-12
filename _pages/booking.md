@@ -1,9 +1,10 @@
 ---
-title: "Ihr spielt bei ums !?"
+title: "Ihr spielt bei uns!?"
 excerpt: "Wir bieten eine Bühne für Euch"
 sitemap: false
 permalink: /booking/
 ---
+
 
 # Ihr spielt bei uns!?
 
@@ -19,4 +20,4 @@ Das Bergwerk wurde schon von sehr vielen Bands besucht, darunter auch die eine o
 - Eine Liste mit möglichen Terminen
 - Verhandlungsbasis für die Gage
 
-Am Besten ist es, Ihr schickt das ganze an [booking@jims-bergwerk.de](mailto:booking@jims-bergwerk.de).
+Am Besten ist es, Ihr schickt das Ganze an [booking@jims-bergwerk.de](mailto:booking@jims-bergwerk.de).
