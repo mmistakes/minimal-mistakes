@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: "Ihr spielt bei uns!?"
 excerpt: "Wir bieten eine Bühne für Euch"
 sitemap: false
