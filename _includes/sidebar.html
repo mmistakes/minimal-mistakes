@@ -4,19 +4,8 @@
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>{{ page.title }}</title>
-          <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-      </head>
-      <body>
-          <img id="fire" src="{{ s.image' | relative_url }}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-          <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-      </body>
-      </html>
+        <img src="{{ s.image | relative_url }}"
+             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
