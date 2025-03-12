@@ -1,8 +1,6 @@
 # main links
 main:
-  - title: "404rer"
-    url: /404/
-  - title: "Booking"
-    url: /booking/
   - title:  "Über uns"
     url: /about/
+  - title: "Booking"
+    url: /booking/
