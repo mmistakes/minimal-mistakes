@@ -232,27 +232,3 @@ $(document).ready(function () {
       });
   }
 });
-
-const fire = document.getElementById('fire');
-
-document.addEventListener("DOMContentLoaded", function() {
-  const fire = document.getElementById('fire');
-  
-  function flicker() {
-    // Random brightness (0.8 to 1.8 for more dramatic dips/spikes)
-    const brightness = 0.8 + Math.random() * 1.0; 
-    
-    // Random transition speed (30ms to 120ms for erratic movement)
-    const speed = 30 + Math.random() * 90;
-    
-    // Apply the effect
-    fire.style.transition = `filter ${speed}ms linear`;
-    fire.style.filter = `brightness(${brightness})`;
-    
-    // Random delay for next flicker (50ms to 300ms)
-    setTimeout(flicker, 50 + Math.random() * 250);
-  }
-
-  // Start the flicker loop
-  flicker();
-});
