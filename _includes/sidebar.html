@@ -1,4 +1,21 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
+<head>
+  <style>
+    @keyframes flicker {
+      0% { opacity: 1; filter: hue-rotate(0deg); }
+      20% { opacity: 0.8; filter: hue-rotate(-10deg); }
+      40% { opacity: 0.6; filter: hue-rotate(10deg); }
+      60% { opacity: 0.7; filter: hue-rotate(-5deg); }
+      80% { opacity: 0.9; filter: hue-rotate(5deg); }
+      100% { opacity: 1; filter: hue-rotate(0deg); }
+    }
+
+    .sidebar.sticky img {
+      animation: flicker 2s infinite ease-in-out;
+      will-change: opacity, filter;
+    }
+  </style>
+</head>
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}

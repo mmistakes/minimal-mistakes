@@ -4,6 +4,10 @@ title: "Ihr spielt bei uns!?"
 excerpt: "Wir bieten eine Bühne für Euch"
 sitemap: false
 permalink: /booking/
+sidebar:
+  - title: ""
+    image: assets/images/image.png
+
 ---
 
 
