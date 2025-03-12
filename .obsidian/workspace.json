@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-08-06-week1_3.md",
+                "file": "_posts/2025-03-11-python_study_week1_1026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-08-06-week1_3"
+              "title": "2025-03-11-python_study_week1_1026"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5
+    "width": 345.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -166,9 +166,11 @@
   },
   "active": "35e12db421a6c09f",
   "lastOpenFiles": [
-    "_posts/2024-08-05-week1_2.md",
     "_posts/2025-03-07-python_study_week1_11399.md",
+    "_posts/2025-03-11-python_study_week1_1026.md",
     "_posts/2025-03-06-python_study_week1_2839.md",
+    "_posts/2024-08-06-week1_3.md",
+    "_posts/2024-08-05-week1_2.md",
     "_posts/2025-01-16-salmonn-audio_dataset.md",
     "_pages/0_1_pytorch.md",
     "_posts/2024-08-06-python_day_2.md",
@@ -209,8 +211,6 @@
     "_pages/1_1_hackathon_baseline.md",
     "_pages/1_2_hackathon_audiodata.md",
     "_pages/1_3_hackathon_lightweight.md",
-    "_posts/2025-01-15-2_salmonn-multiple_task.md",
-    "_posts/2025-01-15-1_salmonn.md",
-    "_pages/0_15_recsys_recent_trend.md"
+    "_posts/2025-01-15-2_salmonn-multiple_task.md"
   ]
 }

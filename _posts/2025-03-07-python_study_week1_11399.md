@@ -33,14 +33,12 @@ use_math: true
 - 적용해본 알고리즘 2가지
 	- 먼저, `sorted_time` 리스트에 입력받은 $P_i$를 오름차순으로 정렬해준 이후
 		1. `sorted_time`의 0번 원소는 n번 등장, 1번 원소는 $n-1$번 등장, 2번 원소는 $n-2$번 등장...의 식으로 모두 더함
-		2. 이중 반복문을 적용하여, 1번 사람~5번 사람까지 걸리는 시간을 각각 계산해서 더함
+		2. 이중 반복문을 적용하여, 1번 사람~n번 사람까지 걸리는 시간을 각각 계산해서 더함
 
 1번 방법
 ```
 n = int(input())
-a, b, c, d, e = map(int, input().split())
-
-sorted_time = sorted(list([a, b, c, d, e]))
+sorted_time = sorted(list(map(int, input().split())))
 min_total = 0
 
 for i in range(n):
@@ -53,9 +51,7 @@ print(min_total)
 2번 방법
 ```
 n = int(input())
-a, b, c, d, e = map(int, input().split())
-
-sorted_time = sorted(list([a, b, c, d, e]))
+sorted_time = sorted(list(map(int, input().split())))
 min_total = 0
 
 for i in range(n):

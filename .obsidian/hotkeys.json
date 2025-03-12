@@ -1,12 +1,4 @@
 {
-  "editor:insert-mathblock": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "4"
-    }
-  ],
   "workspace:new-tab": [
     {
       "modifiers": [
