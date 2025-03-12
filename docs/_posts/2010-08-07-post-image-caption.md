@@ -7,9 +7,9 @@ tags:
   - Post Formats
 ---
 
-{% capture fig_img %}
+{%- capture fig_img -%}
 ![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | relative_url }})
-{% endcapture %}
+{%- endcapture -%}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}

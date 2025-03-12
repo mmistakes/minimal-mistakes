@@ -14,7 +14,7 @@ toc: false
   See Rakefile `task :changelog` for details
 -->
 
-{% raw %}
+{%- raw -%}
 ## Unreleased
 
 ### Enhancements
@@ -89,7 +89,7 @@ toc: false
 - Replace "hidden" check in Liquid templates with `where_exp: "item", "item.hidden != true"`.
 - Remove deprecated `page.header.cta_url` setting. [#4821](https://github.com/mmistakes/minimal-mistakes/pull/4821)
 - Allow multiple nav lists in sidebar. [#2843](https://github.com/mmistakes/minimal-mistakes/pull/2843)
-- Add popup parameter to `{% include figure %}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
+- Add popup parameter to `{%- include figure -%}` to enable Magnific Popup. [#3119](https://github.com/mmistakes/minimal-mistakes/pull/3119)
 - Add target attribute for navigation link. [#3056](https://github.com/mmistakes/minimal-mistakes/pull/3056)
 - Split schema to a separate include file. [#3085](https://github.com/mmistakes/minimal-mistakes/pull/3085)
 - Cleanup `_includes/seo.html`.
@@ -1232,18 +1232,18 @@ toc: false
 
 ### Enhancements
 
-- Improve line numbered code block styling when using `{% highlight linenos %}` tag. [#513](https://github.com/mmistakes/minimal-mistakes/issues/513)
+- Improve line numbered code block styling when using `{%- highlight linenos -%}` tag. [#513](https://github.com/mmistakes/minimal-mistakes/issues/513)
 - Add English fallback to "Follow" button label. [#496](https://github.com/mmistakes/minimal-mistakes/pull/496)
 
 ### Bug Fixes
 
-- Fix Firefox alignment issues with code blocks generated with the `{% highlight %}` tag. [#512](https://github.com/mmistakes/minimal-mistakes/issues/512)
+- Fix Firefox alignment issues with code blocks generated with the `{%- highlight -%}` tag. [#512](https://github.com/mmistakes/minimal-mistakes/issues/512)
 
 ### Maintenance
 
 - Clarified comment for `author.stackoverflow` value used in author sidebar links. [#487](https://github.com/mmistakes/minimal-mistakes/pull/487)
 - Add list of localized text strings. [#488](https://github.com/mmistakes/minimal-mistakes/pull/488)
-- Add `{% highlight %}` code block examples to demo site.
+- Add `{%- highlight -%}` code block examples to demo site.
 - Add documentation for using custom sidebar navigation menus. [#476](https://github.com/mmistakes/minimal-mistakes/issues/476)
 
 ## [3.4.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.4)
@@ -1763,4 +1763,4 @@ toc: false
 - Google Analytics, Google Authorship, webmaster verifies, and Twitter card meta are now optional.
 
 ## [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1)
-{% endraw %}
+{%- endraw -%}

@@ -213,6 +213,6 @@ Still sticking with science and Albert Einstein's E = MC<sup>2</sup>, which shou
 
 This allows you to denote <var>variables</var>.
 
-{% for post in site.pages %}
-{% include archive-single.html %}
-{% endfor %}
+{%- for post in site.pages -%}
+{%- include archive-single.html -%}
+{%- endfor -%}

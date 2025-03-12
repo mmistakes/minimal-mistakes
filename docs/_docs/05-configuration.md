@@ -51,10 +51,10 @@ Easily change the color scheme of the theme using one of the provided "skins":
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 ```
 
-**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include {% raw %}`@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin`{% endraw %} before the `minimal-mistakes` import.
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include {%- raw -%}`@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin`{%- endraw -%} before the `minimal-mistakes` import.
 {: .notice--warning}
 
-{% for skin in page.skins %}
+{%- for skin in page.skins -%}
 #### {{ skin.name | capitalize }} skin: `{{ skin.name }}`
 {:.no_toc}
 
@@ -73,7 +73,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
   </a>
   <figcaption>{{ skin.description }}</figcaption>
 </figure>
-{% endfor %}
+{%- endfor -%}
 
 ### Site locale
 
@@ -171,7 +171,7 @@ head_scripts:
   - /assets/js/your-custom-head-script.js
 ```
 
-Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.
+Consult the [JavaScript documentation]({{ site.baseurl }}{%- link _docs/17-javascript.md -%}) for more information on working with theme scripts.
 {: .notice--info}
 
 ### Site default teaser image
@@ -823,25 +823,25 @@ For pages that don't have a `header.image` assigned in their YAML Front Matter, 
 og_image: /assets/images/site-logo.png
 ```
 
-{% include figure
+{%- include figure
    image_path="/assets/images/mm-twitter-card-summary-image.jpg"
    alt="Twitter Card summary example"
    caption="Example of an image placed in a Summary Card."
-%}
+-%}
 
 Documents who have a `header.image` assigned in their YAML Front Matter will appear like this when shared on Twitter and Facebook.
 
-{% include figure
+{%- include figure
    image_path="/assets/images/mm-twitter-card-summary-large.jpg"
    alt="page shared on Twitter"
    caption="Shared page on Twitter with header image assigned."
-%}
+-%}
 
-{% include figure
+{%- include figure
    image_path="/assets/images/facebook-share-example.jpg"
    alt="page shared on Facebook"
    caption="Shared page on Facebook with header image assigned."
-%}
+-%}
 
 ##### Include your social profile in search results
 

@@ -26,7 +26,7 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
 }
 ```
 
-{% highlight scss %}
+{%- highlight scss -%}
 .highlight {
   margin: 0;
   padding: 1em;
@@ -34,17 +34,17 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
   font-size: $type-size-7;
   line-height: 1.8;
 }
-{% endhighlight %}
+{%- endhighlight -%}
 
 ```html
-{% raw %}<nav class="pagination" role="navigation">
-  {% if page.previous %}
+{%- raw -%}<nav class="pagination" role="navigation">
+  {%- if page.previous -%}
     <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
+  {%- endif -%}
+  {%- if page.next -%}
     <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
+  {%- endif -%}
+</nav><!-- /.pagination -->{%- endraw -%}
 ```
 
 ```ruby
@@ -86,9 +86,9 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
 
 ### Jekyll Highlight Tag
 
-An example of a code blocking using Jekyll's [`{% raw %}{% highlight %}{% endraw %}` tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting).
+An example of a code blocking using Jekyll's [`{%- raw -%}{%- highlight -%}{%- endraw -%}` tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting).
 
-{% highlight javascript linenos %}
+{%- highlight javascript linenos -%}
 // 'gulp html' -- does nothing
 // 'gulp html --prod' -- minifies and gzips HTML files for production
 gulp.task('html', () => {
@@ -111,14 +111,14 @@ gulp.task('html', () => {
     })))
     .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
 });
-{% endhighlight %}
+{%- endhighlight -%}
 
-{% highlight wl linenos %}
+{%- highlight wl linenos -%}
 Module[{},
   Sqrt[2]
   4
 ]
-{% endhighlight %}
+{%- endhighlight -%}
 
 ### GitHub Gist Embed
 

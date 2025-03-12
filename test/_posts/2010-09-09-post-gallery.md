@@ -99,10 +99,10 @@ gallery:
 And then drop-in the gallery include --- gallery `caption` is optional.
 
 ```liquid
-{% raw %}{% include gallery caption="This is a sample gallery with **Markdown support**." %}{% endraw %}
+{%- raw -%}{%- include gallery caption="This is a sample gallery with **Markdown support**." -%}{%- endraw -%}
 ```
 
-{% include gallery caption="This is a sample gallery with **Markdown support**." %}
+{%- include gallery caption="This is a sample gallery with **Markdown support**." -%}
 
 This is some text after the gallery just to make sure that everything aligns properly.
 
@@ -124,19 +124,19 @@ gallery2:
 And place it like so: 
 
 ```liquid
-{% raw %}{% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}{% endraw %}
+{%- raw -%}{%- include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." -%}{%- endraw -%}
 ```
 
-{% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
+{%- include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." -%}
 
 And for giggles one more gallery just to make sure this works. To fill page content container add `class="full"`.
 
-{% include gallery id="gallery3" class="full" caption="This is a third gallery example with two images and fills the entire content container." %}
+{%- include gallery id="gallery3" class="full" caption="This is a third gallery example with two images and fills the entire content container." -%}
 
 Gallery column layout can be overrided by setting a `layout`.
 
 ```liquid
-{% raw %}{% include gallery id="gallery" layout="half" caption="This is a half gallery layout example." %}{% endraw %}
+{%- raw -%}{%- include gallery id="gallery" layout="half" caption="This is a half gallery layout example." -%}{%- endraw -%}
 ```
 
-{% include gallery id="gallery" layout="half" caption="This is a half gallery layout example." %}
+{%- include gallery id="gallery" layout="half" caption="This is a half gallery layout example." -%}

@@ -164,12 +164,12 @@ Call attention to a block of text.
 **Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--danger}` class.
 {: .notice--danger}
 
-{% capture notice-text %}
+{%- capture notice-text -%}
 You can also add the `.notice` class to a `<div>` element.
 
 * Bullet point 1
 * Bullet point 2
-{% endcapture %}
+{%- endcapture -%}
 
 <div class="notice--info">
   <h4 class="no_toc">Notice Headline:</h4>

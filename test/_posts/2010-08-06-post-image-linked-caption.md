@@ -7,13 +7,13 @@ tags:
   - Post Formats
 ---
 
-{% capture fig_img %}
+{%- capture fig_img -%}
 [![Foo](https://images.unsplash.com/photo-1541943869728-4bd4f450c8f5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjF9)](https://unsplash.com/)
-{% endcapture %}
+{%- endcapture -%}
 
-{% capture fig_caption %}
+{%- capture fig_caption -%}
 Stairs? Were we're going we don't need no stairs.
-{% endcapture %}
+{%- endcapture -%}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}

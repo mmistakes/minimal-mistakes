@@ -105,7 +105,7 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
     f.puts ""
     f.puts "<!--\n  Sourced from CHANGELOG.md\n  See Rakefile `task :changelog` for details\n-->"
     f.puts ""
-    f.puts "{% raw %}"
+    f.puts "{%- raw -%}"
     # Remove H1
     changelog = File.read(t.prerequisites.first)
       .gsub(/^# [^\n]*$/m, "")
@@ -113,7 +113,7 @@ file "docs/_docs/18-history.md" => "CHANGELOG.md" do |t|
       .strip
     f.write changelog
     f.puts ""
-    f.puts "{% endraw %}"
+    f.puts "{%- endraw -%}"
   end
 end
 

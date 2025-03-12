@@ -21,7 +21,7 @@ The base layout all other layouts inherit from. There's not much to this layout 
 
 * `<head>` elements
 * masthead navigation links
-* {% raw %}`{{ content }}`{% endraw %}
+* {%- raw -%}`{{ content }}`{%- endraw -%}
 * page footer
 * scripts
 
@@ -103,7 +103,7 @@ The layout you'll likely use the most --- sidebar and main content combo.
 * Optional related posts module
 * Wide page variant
 
-{% include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" %}
+{%- include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" -%}
 
 Assign with `layout: single` , or better yet apply as a [Front Matter default]({{ "/docs/configuration/#front-matter-defaults" | relative_url }}) in `_config.yml`.
 
@@ -141,7 +141,7 @@ toc_icon: "cog"
 ---
 ```
 
-{% capture notice-text %}
+{%- capture notice-text -%}
 **Note:** You need to use contiguous levels of headings for the TOC to generate properly. For example:
 
 ```markdown
@@ -160,7 +160,7 @@ Bad headings:
 ### Heading (skipped H2)
 ##### Heading (skipped H4)
 ```
-{% endcapture %}
+{%- endcapture -%}
 
 <div class="notice--warning">
   {{ notice-text | markdownify }}
@@ -771,7 +771,7 @@ If you'd like to add, remove, or change the order of these default links you can
 Let's say you wanted to replace the LinkedIn button with a Reddit one. Simply replace the HTML with the following:
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{%- raw -%}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{%- endraw -%}
 ```
 
 The important parts to change are:
@@ -801,7 +801,7 @@ $buttoncolors:
 Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" | relative_url }}) and away you go.
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{%- raw -%}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{%- endraw -%}
 ```
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | relative_url }})
@@ -817,13 +817,13 @@ The `default` layout includes a number of custom templates, which provide ways f
 `_includes/head/custom.html` is included at the end of the `<head>` tag. An example use of this include is to add custom CSS per page:
 
 Add some Liquid tags for the new configuration to `_includes/head/custom.html`.
-{% raw %}```html
-{% if page.page_css %}
-  {% for stylesheet in page.page_css %}
+{%- raw -%}```html
+{%- if page.page_css -%}
+  {%- for stylesheet in page.page_css -%}
     <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-  {% endfor %}
-{% endif %}
-```{% endraw %}
+  {%- endfor -%}
+{%- endif -%}
+```{%- endraw -%}
 
 Next, add `page_css` to any page's YAML Front Matter to have your CSS loaded for that page.
 ```yaml
@@ -836,13 +836,13 @@ page_css:
 `_includes/footer/custom.html` is included at the beginning of the `<footer>` tag. An example use of this include is to add custom JavaScript per page:
 
 Add some Liquid tags for the new configuration to `_includes/footer/custom.html`.
-{% raw %}```html
-{% if page.page_js %}
-  {% for script in page.page_js %}
+{%- raw -%}```html
+{%- if page.page_js -%}
+  {%- for script in page.page_js -%}
     <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
-```{% endraw %}
+  {%- endfor -%}
+{%- endif -%}
+```{%- endraw -%}
 
 Next, add `page_js` to any page's YAML Front Matter to have your JavaScript loaded for that page.
 ```yaml

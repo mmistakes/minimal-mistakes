@@ -20,11 +20,11 @@
     return false;
   }
 
-  {% if site.google.instant_search %}
+  {%- if site.google.instant_search -%}
     $(document).ready(function () {
       $('input#cse-search-input-box-id').on('keyup', function () {
         googleCustomSearchExecute();
       });
     });
-  {% endif %}
+  {%- endif -%}
 </script>
