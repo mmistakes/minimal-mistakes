@@ -235,8 +235,24 @@ $(document).ready(function () {
 
 const fire = document.getElementById('fire');
 
-// Randomize the flicker effect for a more natural look
-setInterval(() => {
-    const brightness = 1 + Math.random() * 0.5; // Random brightness between 1 and 1.5
+document.addEventListener("DOMContentLoaded", function() {
+  const fire = document.getElementById('fire');
+  
+  function flicker() {
+    // Random brightness (0.8 to 1.8 for more dramatic dips/spikes)
+    const brightness = 0.8 + Math.random() * 1.0; 
+    
+    // Random transition speed (30ms to 120ms for erratic movement)
+    const speed = 30 + Math.random() * 90;
+    
+    // Apply the effect
+    fire.style.transition = `filter ${speed}ms linear`;
     fire.style.filter = `brightness(${brightness})`;
-}, 200); // Adjust the interval for faster or slower flickering
+    
+    // Random delay for next flicker (50ms to 300ms)
+    setTimeout(flicker, 50 + Math.random() * 250);
+  }
+
+  // Start the flicker loop
+  flicker();
+});
