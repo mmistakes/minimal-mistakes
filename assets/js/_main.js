@@ -233,10 +233,13 @@ $(document).ready(function () {
   }
 });
 
-const fire = document.getElementById('fire');
-
-// Randomize the flicker effect for a more natural look
-setInterval(() => {
-    const brightness = 1 + Math.random() * 0.5; // Random brightness between 1 and 1.5
+// assets/js/main.js
+document.addEventListener("DOMContentLoaded", function() {
+  const fire = document.getElementById('fire');
+  
+  // Randomize flicker brightness
+  setInterval(() => {
+    const brightness = 1 + Math.random() * 0.5; // 1 to 1.5
     fire.style.filter = `brightness(${brightness})`;
-}, 200); // Adjust the interval for faster or slower flickering
+  }, 200);
+});

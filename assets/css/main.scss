@@ -8,25 +8,22 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
 }
 
 #fire {
-    width: 300px; /* Adjust as needed */
-    height: auto;
-    animation: flicker 1s infinite;
+  width: 300px;
+  height: auto;
+  animation: flicker 1s infinite; /* Ensure this animation is defined */
 }
 
 @keyframes flicker {
-    0%, 100% {
-        filter: brightness(1);
-    }
-    50% {
-        filter: brightness(1.5);
-    }
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
 }
