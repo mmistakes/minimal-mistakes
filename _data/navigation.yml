@@ -2,5 +2,7 @@
 main:
   - title:  "Über uns"
     url: /about/
+  - title: "Kalender"
+    url: /calendar/
   - title: "Booking"
     url: /booking/
