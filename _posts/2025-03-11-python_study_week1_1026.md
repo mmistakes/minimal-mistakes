@@ -40,8 +40,11 @@ $S$의 최솟값을 출력하는 프로그램을 작성하시오.
 	- B의 최댓값을 하나씩 불러내어
 	- A를 오름차순으로 정렬시킨 후, 하나씩 불러낸 B의 최댓값과 곱해줌
 	- 곱한 값을 결과로 할당
+
+
 ## 코드
 B를 재배열 시킨 풀이(문제 조건 X)
+
 ```
 n = int(input())
 a_list = list(map(int, input().split()))
@@ -58,6 +61,7 @@ print(total)
 ```
 
 B를 재배열 시키지 않은 풀이(문제 조건 O)
+
 ```
 n = int(input())
 a_list = list(map(int, input().split()))
