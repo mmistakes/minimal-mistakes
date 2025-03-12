@@ -11,8 +11,6 @@ sidebar:
 ---
 
 
-# Ihr spielt bei uns!?
-
 Wir sind eigentlich ständig auf der Suche nach guten Live-Bands. Außerdem haben wir es uns zur Aufgabe gemacht, Nachwuchsbands (besonders aus der Region) zu unterstützen, indem wir sie bei uns im Bergwerk auftreten lassen.  
 
 Durch einen Auftritt im Bergwerk wird man sicherlich nicht reich. Viele Bands spielen bei uns einfach für ein warmes Essen und kühles Bier, also wegen der Freude an der Musik. Manchmal sind auch noch “ein paar Euro” Gage drin, gerade für Bands mit hohen Anfahrtskosten.   
