@@ -11,7 +11,7 @@ sidebar:
 ---
 
 Wenn ihr Vorschläge für Events und Aktionen habt, schreibt uns die gerne oder bringt sie zur nächsten öffentlichen Sitzung mit.
-Generell sind wir für jegliches Eigenengagement dankbar - und Ihr habt einen Raum, um Eure Wunschaktionen zu starten.
+Generell sind wir für jegliches Eigenengagement dankbar - und ihr habt einen Raum, um eure Wunschaktionen zu starten.
 Klassische Win-Win-Situation.
 
 <style>
