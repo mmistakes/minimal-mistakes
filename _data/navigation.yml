@@ -54,7 +54,7 @@ docs:
         url: /model_compression/
       # - title: "RecSys Recent Trend"
       #   url: /recsys_recent_trend/
-  - title: "Hackathon-AudioLM 경량화"
+  - title: "Hackathon-NOTA AI"
     children:
       - title: "Baseline 정복"
         url: /hackathon_baseline/
