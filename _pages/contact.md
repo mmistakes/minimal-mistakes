@@ -17,4 +17,5 @@ Ebenfalls erreichbar sind wir über unsere Social Media Kanäle.
 Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
 
 [Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)  
-![Instagram QR Code](/assets/images/qr-insta.png)
+
+<img src="/assets/images/qr-insta.png" alt="Instagram QR Code" />
