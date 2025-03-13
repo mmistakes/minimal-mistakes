@@ -7,7 +7,7 @@ sitemap: false
 permalink: /calendar/
 sidebar:
   - title: ""
-    image: assets/images/logo-alt.png
+    image: assets/images/logo-berg.png
 ---
 
 
