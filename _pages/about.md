@@ -7,7 +7,7 @@ sitemap: false
 permalink: /about/
 sidebar:
   - title: ""
-    image: assets/images/logo-alt.png"
+    image: assets/images/logo-alt.png
 ---
 
 ## Wer ist Jim, und warum hat er ein Bergwerk?
