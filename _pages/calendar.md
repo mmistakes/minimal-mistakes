@@ -36,13 +36,13 @@ Klassische Win-Win-Situation.
 </div>
 
 <style>
-.calendar-container {
+.dark-mode-calendar {
   position: relative;
   padding-bottom: 75%; /* Aspect ratio (e.g., 4:3) */
   height: 0;
   overflow: hidden;
 }
-.calendar-container iframe {
+.dark-mode-calendar iframe {
   position: absolute;
   top: 0;
   left: 0;
