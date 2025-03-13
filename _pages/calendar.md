@@ -10,7 +10,9 @@ sidebar:
     image: assets/images/logo-berg.png
 ---
 
-
+Wenn ihr Vorschläge für Events und Aktionen habt, schreibt uns die gerne oder bringt sie zur nächsten öffentlichen Sitzung mit.
+Generell sind wir für jegliches Eigenengagement dankbar - und Ihr habt einen Raum, um Eure Wunschaktionen zu starten.
+Klassische Win-Win-Situation.
 
 <style>
   .dark-mode-calendar {
