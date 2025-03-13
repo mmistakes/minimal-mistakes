@@ -25,4 +25,4 @@ Wie kann ich das Bergwerk und die JiM unterstützen?
 Wir freuen uns natürlich, wie jeder andere Verein, über finanzielle Zuwendungen, sind aber auch für brauchbare Sachspenden dankbar.
 Da wir ein gemeinütziger Verein sind, ist jede Spende auch steuerlich absetzbar.
 Außerdem steht die Mitgliedschaft bei der JiM jedem offen, egal ob als aktives Mitglied (bis Vollendung des 25. Lebensjahrs) oder danach als Fördermitglied.  
-Fülle dazu einen Mitgliedsantrag vor Ort aus oder [drucke ihn selbst und bring ihn ausgefüllt mit](/assets/docs/Mitgliedsantrag.pdf). 
+Fülle dazu einen Mitgliedsantrag vor Ort aus oder [drucke ihn selbst und bring ihn ausgefüllt mit]({{ site.url }}{{ site.baseurl }}/assets/docs/Mitgliedsantrag.pdf)

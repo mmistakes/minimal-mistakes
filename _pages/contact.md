@@ -10,7 +10,7 @@ sidebar:
 ---
 
 Generelle Anliegen: [info@jims-bergwerk.de](mailto:info@jims-bergwerk.de)  
-Booking Anglegenheiten: [booking@jims-bergwerk.de](mailto:booking@jims-bergwerk.de)
+Booking Angelegenheiten: [booking@jims-bergwerk.de](mailto:booking@jims-bergwerk.de)
 
 Ebenfalls erreichbar sind wir über unsere Social Media Kanäle.
 Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
