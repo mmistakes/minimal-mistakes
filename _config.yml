@@ -19,14 +19,14 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Weo0o0-Note"
 title_separator          : "|"
-subtitle                 : "다양한 프로젝트를 소개하는 및 개발하는 블로그"
+subtitle                 : "다양한 프로젝트 소개 및 개발하는 블로그"
 name                     : "Weo0o0-Note"
 description              : "Weo0o0-Note의 블로그 입니다."
 url                      : "https://weo0o0.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "assets/images/logooo.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -253,6 +253,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -315,3 +316,6 @@ defaults:
       related: true
       show_date: true
       date_format: "%Y-%m-%d"
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
