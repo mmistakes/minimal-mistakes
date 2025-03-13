@@ -18,4 +18,4 @@ Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
 
 [Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)    
 
-![Instagram QR Code]({{ site.url }}{{ site.baseurl }}/assets/images/stage/image-1.jpg){: .align-center}
+![Instagram QR Code]({{ site.url }}{{ site.baseurl }}/assets/images/qr-insta-2.png){: .align-center}
