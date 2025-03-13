@@ -6,3 +6,4 @@ gallery:
   - image_path: assets/images/stage/IMG-20250312-WA0024.jpg
 ---
 
+{% include gallery caption="" %}
