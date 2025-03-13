@@ -14,7 +14,15 @@ The detailed analysis below estimates the hourly cost of GPT-4.5 inference, care
 
 Here’s the detailed analysis (generated using GPT-4.5 deep research), starting with the conclusion first.
 
-Running a one-hour GPT-4.5 conversation on dedicated hardware could easily cost on the order of $40-70 in a straightforward setup. With optimized deployment – sharing GPUs across many sessions, bulk pricing, or owning hardware – the **effective cost might drop to the low double-digits or even single-digit dollars per hour**. This **cost estimate includes** the GPU rental or depreciation, power (~$1 or less/hr), cooling/infra (perhaps another ~$1/hr), and maintenance (a few cents to a dollar/hr). Given all these factors, a reasonable **estimate** is that **GPT-4.5 costs on the order of **$50** per hour** of conversation if using cloud on-demand, whereas a well-utilized in-house system might handle it for **perhaps $5–$15 per hour** in incremental costs. In practice, exact figures will vary, but it’s clear that supporting even a single GPT-4.5 chat session for an hour is **quite expensive** – likely *two orders of magnitude more costly* than running a smaller model (like GPT-3.5) and a key reason why such powerful models command high usage prices.
+Running a one-hour GPT-4.5 conversation on dedicated hardware could easily cost on the order of $40-70 in a straightforward setup. With optimized deployment (sharing GPUs across many sessions, bulk pricing, or owning hardware) the effective cost might drop to the low double-digits or even single-digit dollars per hour. This cost estimate includes the GPU rental or depreciation, power (~$1 or less/hr), cooling/infra (perhaps another ~$1/hr), and maintenance (a few cents to a dollar/hr).
+
+Given all these factors, a reasonable estimate is that GPT-4.5 costs on the order of $50 per hour of conversation if using cloud on-demand, whereas a well-utilized in-house system might handle it for maybe half. In practice, exact figures will vary, but it’s clear that supporting even a single GPT-4.5 chat session for an hour is quite expensive, more so than most data scientists or machine learning engineers around the world.
+
+--
+
+Below is the research returned by GPT-4.5
+
+--
 
 # Cost Analysis for Running a GPT‑4.5 Conversation (1 Hour)
 
