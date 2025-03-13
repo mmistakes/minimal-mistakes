@@ -7,3 +7,4 @@ taxonomy: data_structure
 sidebar:
   nav: docs
 ---
+Refer to the book 《이것이 컴퓨터 과학이다》

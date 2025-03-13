@@ -14,14 +14,14 @@ docs:
     children:
       - title: "컴퓨터 구조"
         urL: /computer_architecture/
-      - title: "운영체제"
-        urL: /os/
-      - title: "자료구조"
-        urL: /data_structure/
-      - title: "네트워크"
-        urL: /network/
-      - title: "데이터베이스"
-        urL: /database/
+      # - title: "운영체제"
+      #   urL: /os/
+      # - title: "자료구조"
+      #   urL: /data_structure/
+      # - title: "네트워크"
+      #   urL: /network/
+      # - title: "데이터베이스"
+      #   urL: /database/
   - title: "NAVER AI Tech"
     children:
       - title: "PyTorch"
