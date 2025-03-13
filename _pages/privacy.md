@@ -3,7 +3,7 @@ layout: splash
 title: "Datenschutzerklärung"
 excerpt: "Datenschutzerklärung"
 sitemap: false
-permalink: /privacy
+permalink: /privacy/
 ---
 
 
