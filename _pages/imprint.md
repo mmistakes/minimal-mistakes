@@ -17,7 +17,7 @@ Rosenheimerstraße 15A
 Postfachnummer 1137  
 83053 Kolbermoor
 
-Telefonnummer: +49 176 83259147
+Telefonnummer: +49 176 83259147  
 E-mail: info@jims-bergwerk.de
 
 

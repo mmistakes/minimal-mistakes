@@ -16,7 +16,7 @@ Wir sind eigentlich ständig auf der Suche nach guten Live-Bands. Außerdem habe
 
 Durch einen Auftritt im Bergwerk wird man sicherlich nicht reich. Viele Bands spielen bei uns einfach für ein warmes Essen und kühles Bier, also wegen der Freude an der Musik. Manchmal sind auch noch “ein paar Euro” Gage drin, gerade für Bands mit hohen Anfahrtskosten.   
 
-Das Bergwerk wurde schon von sehr vielen Bands besucht, darunter auch die eine oder andere, die sich mittlerweile einer gewissen Berühmtheit erfreut (Blumentopf, Tex, Die Schweisser, Astra Kid, Anajo, Kain, uvm.). Für größere Aktionen ist es sogar möglich, unsere Freiluftbühne im Innenhof zu aktivieren.
+Das Bergwerk wurde schon von sehr vielen Bands besucht, darunter auch die eine oder andere, die sich mittlerweile einer gewissen Berühmtheit erfreut (Blumentopf, Tex, Die Schweisser, Astra Kid, Anajo, Kain, uvm.). Für größere Aktionen ist es sogar möglich, unsere [Freiluftbühne im Innenhof](/assets/images/galleries/stage) zu aktivieren.
     Wenn ihr Interesse habt, dann benötigen wir folgendes:
 
 - Eine Demo-CD, Aufnahmen als Audiodatei oder einen Link, wo diese zu finden sind
