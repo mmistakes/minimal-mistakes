@@ -148,7 +148,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jims_bergwerk/"
     - label: "Datenschutz"
-      url: "/privacy/"
+      url: "/minimal-mistakes/privacy/"
 
 
 # Reading Files
