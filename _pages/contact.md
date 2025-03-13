@@ -13,9 +13,10 @@ sidebar:
 Generelle Anliegen: [info@jims-bergwerk.de](mailto:info@jims-bergwerk.de)  
 Booking Anglegenheiten: [booking@jims-bergwerk.de](mailto:booking@jims-bergwerk.de)
 
-Neueste Infos gibts stets auf unseren Social Media Kanälen:
+Ebenfalls erreichbar sind wir über unsere Social Media Kanäle.
+Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
 
-[Insagram](https://www.instagram.com/jims_bergwerk/)
+[Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)
 
 
 <img src= "/assest/images/qr-insta.png"
