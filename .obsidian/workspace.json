@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a688ffe87bd99057",
+        "id": "dea30ff056c52d66",
         "type": "tabs",
         "children": [
           {
-            "id": "e9c6c653669eafff",
+            "id": "35e12db421a6c09f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-01-15-1_salmonn.md",
+                "file": "_posts/2025-03-11-python_study_week1_1026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-15-1_salmonn"
+              "title": "2025-03-11-python_study_week1_1026"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5
+    "width": 345.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -155,62 +155,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-importer:Open Importer": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "e9c6c653669eafff",
+  "active": "35e12db421a6c09f",
   "lastOpenFiles": [
-    "_posts/2024-09-04-aitech-week4-5_8.md",
-    "_posts/2024-09-13-aitech-week6-7_3.md",
-    "_posts/2024-09-13-aitech-week6-7_4.md",
-    "_posts/2025-03-11-python_study_week1_1026.md",
-    "_posts/2024-10-29-aitech-week11-12_7.md",
-    "_posts/2024-10-28-aitech-week11-12_2.md",
+    "_posts/2024-08-07-python_day_3.md",
+    "_posts/2024-08-06-python_day_2 1.md",
     "_posts/2024-11-15-aitech-week13-15_5.md",
-    "_posts/2024-10-28-aitech-week11-12_1.md",
-    "_posts/2024-09-06-aitech-week4-5_9.md",
-    "_posts/2024-08-08-aitech-week1_7.md",
-    "images/2024-09-15-aitech-week6-7_4/image.png",
-    "images/2024-09-15-aitech-week6-7_4",
-    "_posts/2024-09-02-aitech-week4-5_5.md",
-    "_posts/2024-09-19-aitech-week6-7_6.md",
-    "_posts/2024-08-26-aitech-week3_8.md",
-    "_posts/2024-09-20-aitech-week6-7_8.md",
-    "_posts/2024-08-06-aitech-week1_3.md",
-    "_posts/2024-08-20-aitech-week3_1.md",
-    "images/2024-09-11-aitech-week6-7_1/image.png",
-    "images/2024-09-11-aitech-week6-7_1/image 6.png",
-    "images/2024-09-11-aitech-week6-7_1/image 1.png",
-    "images/2024-09-11-aitech-week6-7_1/image 2.png",
-    "images/2024-09-11-aitech-week6-7_1/image 5.png",
-    "images/2024-09-11-aitech-week6-7_1/image 3.png",
-    "images/2024-09-11-aitech-week6-7_1/image 4.png",
-    "images/2024-09-11-aitech-week6-7_1",
-    "_posts/2024-08-19-aitech-week2_10.md",
-    "_posts/2024-09-30-aitech-week8-10_3.md",
-    "images/2024-08-23-aitech-week3_6/d273fccc-2633-413a-9a96-aa048b39963e.png",
-    "images/2024-08-23-aitech-week3_6/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-23_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.53.41.png",
-    "images/2024-08-23-aitech-week3_6",
-    "_posts/2024-08-14-aitech-week2_5.md",
-    "_posts/2024-08-12-aitech-week2_2.md",
-    "_posts/2024-10-14-aitech-week8-10_6.md",
-    "images/2024-08-29-aitech-week4-5_3",
-    "_posts/2024-09-14-aitech-week6-7_2.md",
-    "images/2024-09-12-aitech-week6-7_2",
-    "images/2024-09-06-aitech-week4-5_9",
-    "images/2024-10-28-aitech-week11-12_1",
-    "_posts/2024-09-22-aitech-week6-7_9.md",
-    "images/2024-09-14-aitech-week6-7_1",
-    "_posts/2024-09-15-aitech-week6-7_4.md",
+    "_posts/Day 5 Recommendations with Side-information 13fa5ea423548009a23bdb4e8ecee1bc.md",
+    "_posts/2024-11-15-aitech-week13-15_4.md",
+    "_posts/2024-11-13-aitech-week13-15_3.md",
+    "_posts/Day 5 Collaborative Filtering (2) 13fa5ea4235480d3be44fc80cfc9ed59.md",
+    "_posts/Day 3 Collaborative Filtering (1) 13fa5ea4235480ad8261e710d9e4bb8e.md",
+    "_posts/2024-11-12-aitech-week13-15_2.md",
+    "_posts/2024-11-12-aitech-week13-15_1.md",
+    "_posts/Day 2 Research Directions and Resources 13fa5ea423548001ad2fc365bc6013ca.md",
+    "_posts/Day 2 추천 시스템 개요 및 대회 소개 13fa5ea4235480ed9e30cf1f4196d059.md",
+    "_posts/2024-11-08-aitech-week11-12_11.md",
+    "_posts/2024-11-04-aitech-week11-12_10.md",
+    "_posts/Day 5 RecSys Competition 131a5ea4235480bc994df3c3ef4c4d01.md",
+    "_posts/Day 1 Bandit for Recommendation 138a5ea4235480ec9b32ffa78ca9a131.md",
+    "_posts/2024-10-30-aitech-week11-12_9.md",
+    "_posts/2024-10-30-aitech-week11-12_8.md",
+    "_posts/2024-10-29-aitech-week11-12_8.md",
+    "_posts/Day 3 DeepCTR 131a5ea423548009bad1fb457da754ab.md",
+    "_posts/Day 3 Context-aware Recommendation 131a5ea4235480428431c9d1ae674cb5.md",
+    "_posts/2024-10-29-aitech-week11-12_7.md",
+    "_posts/2024-10-29-aitech-week11-12_6.md",
+    "_posts/Day 2 Recommendation System with DL 2 13fa5ea423548044b7fdd55432e606e2.md",
+    "_posts/Day 2 Recommendation System with DL 1 131a5ea4235480c89318cfbb4a0c0ad7.md",
+    "_posts/2024-10-29-aitech-week11-12_5.md",
+    "images/2024-10-28-aitech-week11-12_3/image.png",
+    "images/2024-10-28-aitech-week11-12_3/ce90c495-31b1-48f4-a10d-b49323abd78f.png",
+    "images/2024-10-28-aitech-week11-12_3/image 4.png",
+    "images/2024-10-28-aitech-week11-12_3/image 9.png",
+    "images/2024-10-28-aitech-week11-12_3/image 7.png",
+    "images/2024-10-28-aitech-week11-12_3/image 8.png",
+    "images/2024-10-28-aitech-week11-12_3/image 6.png",
+    "images/2024-10-28-aitech-week11-12_3/image 5.png",
+    "images/2024-10-28-aitech-week11-12_3/image 13.png",
+    "images/2024-10-28-aitech-week11-12_3/image 3.png",
+    "images/2024-10-28-aitech-week11-12_3",
+    "_posts/2024-10-28-aitech-week11-12_3",
+    "_posts/Day 1 Collaborative Filtering 1 131a5ea4235480c49f20f48b0005ae42",
     "images/2024-10-28-aitech-week11-12_2",
-    "_posts/2024-08-20-aitech-week3_2.md",
-    "images/2024-08-22-aitech-week3_5",
-    "_posts/2024-08-05-aitech-week1_1.md"
+    "images/2024-10-28-aitech-week11-12_1",
+    "images/2024-09-15-aitech-week11-12_1",
+    "images/Day 1 추천 시스템 Basic 2 131a5ea4235480b18bb2fcb42afead92",
+    "images/Day 1 추천 시스템 Basic 1 12ea5ea42354808783aedf4437a634e4",
+    "images/2024-09-15-aitech-week6-7_4",
+    "images/2024-09-15-aitech-week6-7_3"
   ]
 }
