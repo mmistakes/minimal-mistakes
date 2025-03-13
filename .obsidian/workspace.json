@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dea30ff056c52d66",
+        "id": "a688ffe87bd99057",
         "type": "tabs",
         "children": [
           {
-            "id": "35e12db421a6c09f",
+            "id": "e9c6c653669eafff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-11-python_study_week1_1026.md",
+                "file": "_posts/2025-01-15-1_salmonn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-11-python_study_week1_1026"
+              "title": "2025-01-15-1_salmonn"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 258.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -155,62 +155,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-importer:Open Importer": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "obsidian-importer:Open Importer": false
+      "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "35e12db421a6c09f",
+  "active": "e9c6c653669eafff",
   "lastOpenFiles": [
-    "_posts/2025-03-06-python_study_week1_2839.md",
+    "_posts/2024-09-04-aitech-week4-5_8.md",
+    "_posts/2024-09-13-aitech-week6-7_3.md",
+    "_posts/2024-09-13-aitech-week6-7_4.md",
     "_posts/2025-03-11-python_study_week1_1026.md",
-    "_posts/2025-03-07-python_study_week1_11399.md",
-    "_posts/2024-08-06-week1_3.md",
-    "_posts/2024-08-05-week1_2.md",
-    "_posts/2025-01-16-salmonn-audio_dataset.md",
-    "_pages/0_1_pytorch.md",
-    "_posts/2024-08-06-python_day_2.md",
-    "_pages/2_2_python_algorithm_study.md",
-    "_posts/2024-08-05-python_day_1.md",
-    "_posts/2024-08-05-week1_1.md",
-    "_pages/2_1_python_algorithm copy.md",
-    "_pages/2_1_python_algorithm.md",
-    "images/2024-08-05-week1_1/image3.png",
-    "images/2024-08-05-week1_1/image5.png",
-    "images/image5.png",
-    "images/스크린샷 2025-03-06 오후 7.14.19.png",
-    "images/2024-08-05-week1_1/image4.png",
-    "images/image4.png",
-    "images/스크린샷 2025-03-06 오후 7.14.15.png",
-    "images/${notename}.png",
-    "images/{filename}",
-    "images/2024-08-05-week1_1/스크린샷 2025-03-06 오후 7.14.15.png",
-    "스크린샷.md",
-    "images/2024-08-05-week1_1/스크린샷 2025-03-06 오후 7.03.26.png",
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images/${filename}",
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io/images",
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io/CroinDA.github.io",
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career/5. GitHub.io",
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs/0. My Career",
-    "Users/kwangjinpark/Library/Mobile Documents/com~apple~CloudDocs",
-    "Users/kwangjinpark/Library/Mobile Documents",
-    "Users/kwangjinpark/Library",
-    "Users/kwangjinpark",
-    "_posts/2024-08-08-week1_8.md",
-    "_posts/2024-08-08-week1_7.md",
-    "_posts/2024-08-08-week1_7 copy.md",
-    "notion_NAVER/Wrap-up Report 110a5ea423548099b2f0ff76bed82b1f.md",
-    "_templates/AddRelativePathToImages.md.md",
-    "_templates/무제.md",
-    "무제.md",
-    "notion_NAVER/Wrap-up Report_요약 (데이터셋 소개) 10fa5ea4235480e6a234c4e1d4975472.md",
-    "_pages/1_1_hackathon_baseline.md",
-    "_pages/1_2_hackathon_audiodata.md",
-    "_pages/1_3_hackathon_lightweight.md",
-    "_posts/2025-01-15-2_salmonn-multiple_task.md"
+    "_posts/2024-10-29-aitech-week11-12_7.md",
+    "_posts/2024-10-28-aitech-week11-12_2.md",
+    "_posts/2024-11-15-aitech-week13-15_5.md",
+    "_posts/2024-10-28-aitech-week11-12_1.md",
+    "_posts/2024-09-06-aitech-week4-5_9.md",
+    "_posts/2024-08-08-aitech-week1_7.md",
+    "images/2024-09-15-aitech-week6-7_4/image.png",
+    "images/2024-09-15-aitech-week6-7_4",
+    "_posts/2024-09-02-aitech-week4-5_5.md",
+    "_posts/2024-09-19-aitech-week6-7_6.md",
+    "_posts/2024-08-26-aitech-week3_8.md",
+    "_posts/2024-09-20-aitech-week6-7_8.md",
+    "_posts/2024-08-06-aitech-week1_3.md",
+    "_posts/2024-08-20-aitech-week3_1.md",
+    "images/2024-09-11-aitech-week6-7_1/image.png",
+    "images/2024-09-11-aitech-week6-7_1/image 6.png",
+    "images/2024-09-11-aitech-week6-7_1/image 1.png",
+    "images/2024-09-11-aitech-week6-7_1/image 2.png",
+    "images/2024-09-11-aitech-week6-7_1/image 5.png",
+    "images/2024-09-11-aitech-week6-7_1/image 3.png",
+    "images/2024-09-11-aitech-week6-7_1/image 4.png",
+    "images/2024-09-11-aitech-week6-7_1",
+    "_posts/2024-08-19-aitech-week2_10.md",
+    "_posts/2024-09-30-aitech-week8-10_3.md",
+    "images/2024-08-23-aitech-week3_6/d273fccc-2633-413a-9a96-aa048b39963e.png",
+    "images/2024-08-23-aitech-week3_6/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-08-23_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.53.41.png",
+    "images/2024-08-23-aitech-week3_6",
+    "_posts/2024-08-14-aitech-week2_5.md",
+    "_posts/2024-08-12-aitech-week2_2.md",
+    "_posts/2024-10-14-aitech-week8-10_6.md",
+    "images/2024-08-29-aitech-week4-5_3",
+    "_posts/2024-09-14-aitech-week6-7_2.md",
+    "images/2024-09-12-aitech-week6-7_2",
+    "images/2024-09-06-aitech-week4-5_9",
+    "images/2024-10-28-aitech-week11-12_1",
+    "_posts/2024-09-22-aitech-week6-7_9.md",
+    "images/2024-09-14-aitech-week6-7_1",
+    "_posts/2024-09-15-aitech-week6-7_4.md",
+    "images/2024-10-28-aitech-week11-12_2",
+    "_posts/2024-08-20-aitech-week3_2.md",
+    "images/2024-08-22-aitech-week3_5",
+    "_posts/2024-08-05-aitech-week1_1.md"
   ]
 }
