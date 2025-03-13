@@ -4,7 +4,9 @@ Title: Cost of AI
 
 I was curious about the cost of GPT-4.5 inference compared to the cost of meat brains (“hooomans”), such as data scientists or machine learning engineers in Shenzhen, Manila, Cairo, or Bogota, who might earn $10–50/hr, or 4X as much in SF, London, or Singapore. I’m ignoring training costs since those can scale to billions of users (unlike inference).
 
-When you interact with ChatGPT (or similar generative AI), your input (text, image, sound) is ultimately represented as numbers (“tokens”). The neural network analyzes token relationships through layers of abstraction and encodes meaning using “attention” (see Google’s paper “[Attention Is All You Need](https://arxiv.org/abs/1706.03762)”). Punchline: Attention lets neural networks grasp context by relating tokens to each other.
+When you interact with ChatGPT (or similar generative AI), your input (text, image, sound) is ultimately represented as numbers (“tokens”). The neural network analyzes token relationships through layers of abstraction and encodes meaning using “attention” (see Google’s paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762)).
+
+Punchline: Attention lets neural networks grasp context by relating tokens to each other.
 
 Once trained, the network generates output by predicting the next token based on patterns it learned. But generative AI isn’t creating genuinely new knowledge; it just predicts what’s statistically likely based on previous data using the backpropagation algorithm. If it had been trained on data from 30 years ago, it couldn’t predict discoveries made since, like those from the Hubble telescope. This highlights a fundamental limitation: neural nets iteratively encode existing knowledge rather than creating fundamentally new insights. I don’t believe this approach will achieve Artificial General Intelligence. Our meat brains remain superior at that.
 
