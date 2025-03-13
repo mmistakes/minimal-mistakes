@@ -7,7 +7,9 @@ sitemap: false
 permalink: /about/
 sidebar:
   - title: ""
-    image: assets/images/logo-alt.png
+    image: assets/images/logo-alt.png"
+  - title: "Mitgliedsantrag"
+    url: /assets/docs/Mitgliedsantrag.pdf
 ---
 
 ## Wer ist Jim, und warum hat er ein Bergwerk?
