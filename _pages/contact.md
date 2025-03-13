@@ -1,6 +1,5 @@
 ---
 layout: single
-classes: wide
 title: "Kontakt"
 excerpt: "Kontakt"
 permalink: /contact/
