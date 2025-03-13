@@ -18,4 +18,7 @@ Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
 
 [Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)    
 
-<img src="/assets/images/qr-insta.png" alt="Instagram QR Code" />
+<figure class="half">
+    <a href="/assets/images/qr-insta.png"><img src="/assets/images/qr-insta.png"></a>
+    <figcaption> Instagram QR Code </figcaption>
+</figure>
