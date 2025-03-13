@@ -14,19 +14,19 @@ Jugendinitiative Mangfalltal e.V.
 Rosenheimerstraße 15A  
 83043 Bad Aibling
 
-Postfachnummer 1137
+Postfachnummer 1137  
 83053 Kolbermoor
 
 Telefonnummer: +49 176 83259147
 E-mail: info@jims-bergwerk.de
 
 
-Vertreten durch:
-Marinus Halbig
-Anton-Fahrner-Straße 14B
-83059 Kolbermoor
-Telefonnummer: +49 176 83259147
-E-mail: info@jims-bergwerk.de
+Vertreten durch:  
+Marinus Halbig  
+Anton-Fahrner-Straße 14B   
+83059 Kolbermoor  
+Telefonnummer: +49 176 83259147  
+E-mail: info@jims-bergwerk.de  
 
 
 
