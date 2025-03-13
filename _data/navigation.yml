@@ -10,39 +10,51 @@ main:
 docs:
   # - title: "안녕하세요! Welcome to PM_AI_LAB🙋"
   #   url: /first/
+  - title: "CS Basic"
+    children:
+      - title: "컴퓨터 구조"
+        urL: /computer_architecture/
+      - title: "운영체제"
+        urL: /os/
+      - title: "자료구조"
+        urL: /data_structure/
+      - title: "네트워크"
+        urL: /network/
+      - title: "데이터베이스"
+        urL: /database/
   - title: "NAVER AI Tech"
     children:
       - title: "PyTorch"
         url: /pytorch/
       - title: "ML Lifecycle"
         url: /ml_lifecycle/
-      - title: "EDA & DataViz"
-        url: /matplotlib/
-      - title: "Basic AI Development"
-        url: /basic_ai_development/
-      - title: "ML for RecSys"
-        url: /ml_recsys/
-      - title: "ML in Practice"
-        url: /ml_in_practice/
-      - title: "ML Technique"
-        url: /ml_technique/
-      - title: "ML Projects"
-        url: /ml_projects/
-      - title: "RecSys Basic"
-        url: /recsys_basic/
-      - title: "RecSys in Practice"
-        url: /recsys_in_practice/
-      - title: "RecSys Projects"
-        url: /recsys_projects/
-      - title: "Generative AI"
-        url: /generative_ai/
-      - title: "Product Serving"
-        url: /product_serving/
+      # - title: "EDA & DataViz"
+      #   url: /matplotlib/
+      # - title: "Basic AI Development"
+      #   url: /basic_ai_development/
+      # - title: "ML for RecSys"
+      #   url: /ml_recsys/
+      # - title: "ML in Practice"
+      #   url: /ml_in_practice/
+      # - title: "ML Technique"
+      #   url: /ml_technique/
+      # - title: "ML Projects"
+      #   url: /ml_projects/
+      # - title: "RecSys Basic"
+      #   url: /recsys_basic/
+      # - title: "RecSys in Practice"
+      #   url: /recsys_in_practice/
+      # - title: "RecSys Projects"
+      #   url: /recsys_projects/
+      # - title: "Generative AI"
+      #   url: /generative_ai/
+      # - title: "Product Serving"
+      #   url: /product_serving/
       - title: "모델 최적화 및 경량화"
         url: /model_compression/
-      - title: "RecSys Recent Trend"
-        url: /recsys_recent_trend/ 
-  - title: "기업 해커톤"
+      # - title: "RecSys Recent Trend"
+      #   url: /recsys_recent_trend/
+  - title: "Hackathon-AudioLM 경량화"
     children:
       - title: "Baseline 정복"
         url: /hackathon_baseline/
