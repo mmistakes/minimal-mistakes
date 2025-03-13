@@ -16,6 +16,6 @@ Booking Anglegenheiten: [booking@jims-bergwerk.de](mailto:booking@jims-bergwerk.
 Ebenfalls erreichbar sind wir über unsere Social Media Kanäle.
 Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
 
-[Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)  
+[Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)    
 
 <img src="/assets/images/qr-insta.png" alt="Instagram QR Code" />
