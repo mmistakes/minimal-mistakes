@@ -69,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "4b - Ausflug zum Brandenburger Tor, Siegessäule und Tiergarten",
+    "title": "4b - Ausflug zum Brandenburger Tor, Siegessäule und Tiergarten",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzM4dW5uZ3RoYXNsZjAwMjVlajdnMzhzcmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-03-24T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-03-24T13:30:00+01:00"
+    },
+    "created": "2025-03-12T12:12:26.000Z",
+    "updated": "2025-03-12T12:12:26.651Z"
+  },
+  {
+    "image_path": null,
     "alt": "Studientag Schule+ Hort geschlossen",
     "title": "Studientag Schule+ Hort geschlossen",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2025-01-14T09:24:43.000Z",
     "updated": "2025-03-06T18:55:31.467Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A5 - Ausflug in die Bücherei",
-    "title": "A5 - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-04-04T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-04-04T11:30:00+02:00"
-    },
-    "created": "2024-12-13T11:14:40.000Z",
-    "updated": "2024-12-13T11:14:40.459Z"
   }
 ]
