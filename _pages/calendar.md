@@ -7,7 +7,7 @@ sitemap: false
 permalink: /calendar/
 sidebar:
   - title: ""
-    image: assets/images/logo-alt.jpg
+    image: assets/images/logo-alt.png
 ---
 
 
