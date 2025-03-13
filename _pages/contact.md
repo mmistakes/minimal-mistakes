@@ -17,4 +17,4 @@ Weil dort auch die neuesten Infos landen, lohnt sich ein Auschecken sowieso.
 
 [Unser Instagram Kanal](https://www.instagram.com/jims_bergwerk/)    
 
-![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/qr-insta.png)
+![no-alignment]({{ site.url }}{{ site.baseurl }}/assets/images/jims_bergwerk_qr.png)
