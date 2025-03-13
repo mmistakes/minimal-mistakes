@@ -18,5 +18,5 @@ Neueste Infos gibts stets auf unseren Social Media Kanälen:
 [Insagram](https://www.instagram.com/jims_bergwerk/)
 
 
-<img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https://www.instagram.com/jims_bergwerk/" 
+<img src= "/assest/images/qr-insta.png"
      alt="Instagram QR Code" />
