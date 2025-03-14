@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-14-cs_basic-1_2_1.md",
+                "file": "_posts/2025-03-13-cs_basic-1_1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-14-cs_basic-1_2_1"
+              "title": "2025-03-13-cs_basic-1_1"
             }
           }
         ]
@@ -179,8 +179,8 @@
   },
   "active": "989e2911051636d5",
   "lastOpenFiles": [
-    "_posts/2025-03-13-cs_basic-1_1.md",
     "_posts/2025-03-14-cs_basic-1_2_1.md",
+    "_posts/2025-03-13-cs_basic-1_1.md",
     "images/2025-03-14-cs_basic-1_2/image2.png",
     "images/2025-03-14-cs_basic-1_2/image1.png",
     "images/2025-03-14-cs_basic-1_2",
