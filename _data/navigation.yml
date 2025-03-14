@@ -13,15 +13,15 @@ docs:
   - title: "CS Basic"
     children:
       - title: "컴퓨터 구조"
-        urL: /computer_architecture/
+        url: /computer_architecture/
       # - title: "운영체제"
-      #   urL: /os/
+      #   url: /os/
       # - title: "자료구조"
-      #   urL: /data_structure/
+      #   url: /data_structure/
       # - title: "네트워크"
-      #   urL: /network/
+      #   url: /network/
       # - title: "데이터베이스"
-      #   urL: /database/
+      #   url: /database/
   - title: "NAVER AI Tech"
     children:
       - title: "PyTorch"
