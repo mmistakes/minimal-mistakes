@@ -39,5 +39,21 @@
       ],
       "key": "Enter"
     }
+  ],
+  "templater-obsidian:_templates/arrow.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
+    }
+  ],
+  "templater-obsidian:_templates/double_arrow.md": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "."
+    }
   ]
 }

@@ -29,7 +29,9 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "_templates/change_line.md"
+    "_templates/change_line.md",
+    "_templates/arrow.md",
+    "_templates/double_arrow.md"
   ],
   "startup_templates": [
     ""
