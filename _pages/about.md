@@ -3,7 +3,6 @@ layout: single
 classes: wide
 title: "Über uns"
 excerpt: "Wer wir sind"
-sitemap: false
 permalink: /about/
 sidebar:
   - title: ""

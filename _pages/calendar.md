@@ -3,7 +3,6 @@ layout: single
 classes: wide
 title: "Kalender"
 excerpt: "Kalender"
-sitemap: false
 permalink: /calendar/
 sidebar:
   - title: ""
