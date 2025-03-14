@@ -31,5 +31,13 @@
       ],
       "key": "Enter"
     }
+  ],
+  "templater-obsidian:_templates/change_line.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    }
   ]
 }

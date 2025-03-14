@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-13-cs_basic-1_1.md",
+                "file": "_posts/2025-03-14-cs_basic-1_2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-13-cs_basic-1_1"
+              "title": "2025-03-14-cs_basic-1_2"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 299.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -145,8 +145,19 @@
               "icon": "lucide-list",
               "title": "2025-01-15-SALMONN 개요"
             }
+          },
+          {
+            "id": "f029a3cb2a624a07",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -162,13 +173,18 @@
       "canvas:새 캔버스 만들기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "obsidian-importer:Open Importer": false
+      "obsidian-importer:Open Importer": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "35e12db421a6c09f",
   "lastOpenFiles": [
-    "_posts/2025-03-13-cs_basic-1_2.md",
     "_posts/2025-03-13-cs_basic-1_1.md",
+    "_posts/2025-03-14-cs_basic-1_2.md",
+    "_templates/change_line.md",
+    "Untitled.md",
+    "change_line.md.md",
+    "_templates",
     "images/2025-03-13-cs_basic-1_1/image1.png",
     "images/2025-03-13-cs_basic-1_1",
     "_posts/2024-08-05-python_day_1.md",
@@ -192,9 +208,6 @@
     "_pages/1_2_ml_lifecycle.md",
     "_pages/1_3_matplotlib.md",
     "_pages/1_4_basic_ai_development.md",
-    "_pages/1_5_ml_recsys.md",
-    "_pages/1_6_ml_in_practice.md",
-    "_pages/1_7_ml_technique.md",
     "images/2024-08-07-aitech-week1_6/image3.png",
     "images/2024-08-07-aitech-week1_6/image4.png",
     "images/2024-08-07-aitech-week1_6/image.png",
@@ -211,7 +224,6 @@
     "images/2024-10-28-aitech-week11-12_1",
     "images/2024-09-15-aitech-week11-12_1",
     "images/Day 1 추천 시스템 Basic 2 131a5ea4235480b18bb2fcb42afead92",
-    "images/Day 1 추천 시스템 Basic 1 12ea5ea42354808783aedf4437a634e4",
-    "images/2024-09-15-aitech-week6-7_4"
+    "images/Day 1 추천 시스템 Basic 1 12ea5ea42354808783aedf4437a634e4"
   ]
 }
