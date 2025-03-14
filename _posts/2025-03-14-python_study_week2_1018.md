@@ -59,7 +59,7 @@ min_repaints = float('inf')
 
 from itertools import product
 
-# NxM 크기의 보드에서, 
+# NxM 크기의 보드에서, 8x8 크기의 보드를 슬라이딩하여 찍어내 정답 케이스와 비교
 for i, j in product(range(n - 7), range(m - 7)):  # 0부터 n-8, m-8까지
     repaint_count_white = 0
     repaint_count_black = 0
