@@ -22,5 +22,14 @@
       ],
       "key": "`"
     }
+  ],
+  "editor:open-link-in-new-leaf": [],
+  "templater-obsidian:create-<br>": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    }
   ]
 }

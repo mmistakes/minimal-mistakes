@@ -1,4 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "images"
+  "attachmentFolderPath": "../../images",
+  "useMarkdownLinks": true,
+  "strictLineBreaks": false
 }
