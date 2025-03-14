@@ -39,7 +39,7 @@ use_math: true
 		- 8x8 크기로 찍어낸 보드를 하나씩 잘라내어,
 		- 앞서 받아놓은 `white_start`, `black_start`와 요소별로 비교하며 다를 경우 카운트하여 `repaint_count_white`, `repaint_count_black`에 누적해준다.
 		- `min_repaints`에 각 슬라이딩 보드 당 min값을 할당해 주어, 
-		- 최종 최솟값을 출력해준다.<br><br>
+		- 최종 최솟값을 출력해준다.
 
 ## 코드
 ```
