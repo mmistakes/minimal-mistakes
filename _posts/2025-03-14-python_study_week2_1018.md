@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Python/파이썬][Greedy/그리디] 백준 1018번 - 체스판 다시 칠하기"
+title: "[Python/파이썬][완전탐색] 백준 1018번 - 체스판 다시 칠하기"
 categories:
   - python_algorithm_study
 tags:
