@@ -148,9 +148,11 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/jims_bergwerk/"
     - label: "Datenschutz"
-      url: "{{ site.baseurl }}/privacy/"
+      icon: "fa-solid fa-shield-halved"
+      url: "/minimal-mistakes/privacy/"
     - label: "Impressum"
-      url: "{{ site.baseurl }}/imprint/"
+      icon: "fa-solid fa-stamp"
+      url: "/minimal-mistakes/imprint/"
 
 
 # Reading Files

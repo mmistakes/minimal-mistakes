@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Wilkommen
+title: Willkommen
 permalink: /
 ---
 
