@@ -55,5 +55,22 @@
       ],
       "key": "."
     }
+  ],
+  "highlightr-plugin:Yellow": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "="
+    }
+  ],
+  "highlightr-plugin:highlighter-plugin-menu": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "="
+    }
   ]
 }

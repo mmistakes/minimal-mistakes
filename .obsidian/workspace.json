@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d4950b4e655d4013",
+        "id": "ae140111e61b8696",
         "type": "tabs",
         "children": [
           {
-            "id": "397772022c8dd220",
+            "id": "989e2911051636d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-03-13-cs_basic-1_1.md",
+                "file": "_posts/2025-03-14-cs_basic-1_2_1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-13-cs_basic-1_1"
+              "title": "2025-03-14-cs_basic-1_2_1"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 299.5
   },
   "right": {
     "id": "231b5e00ff94988c",
@@ -145,8 +145,19 @@
               "icon": "lucide-list",
               "title": "2025-01-15-SALMONN 개요"
             }
+          },
+          {
+            "id": "f029a3cb2a624a07",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -155,6 +166,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "switcher:빠른 전환기 열기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
@@ -162,56 +174,55 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "obsidian-importer:Open Importer": false,
-      "templater-obsidian:Templater": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "397772022c8dd220",
+  "active": "989e2911051636d5",
   "lastOpenFiles": [
-    "images/2025-03-14-cs_basic-1_2/image2.png",
-    "images/2025-03-14-cs_basic-1_2/스크린샷 2025-03-14 오후 6.56.40.png",
-    "images/스크린샷 2025-03-14 오후 6.56.40.png",
-    "images/2025-03-14-cs_basic-1_2/image1.png",
-    "images/2025-03-14-cs_basic-1_2/스크린샷 2025-03-14 오후 6.22.12.png",
-    "images/2025-03-14-cs_basic-1_2",
-    "images/2025-03-14-cs-ba",
-    "images/2025-03-13-cs_basic-1_1/2025-03-14-cs-ba",
-    "images/2025-03-13-cs_basic-1_1/무제",
-    "images/스크린샷 2025-03-14 오후 6.23.06.png",
-    "스크린샷 2025-03-14 오후 6.22.12.png",
-    "_templates/double_arrow.md",
-    "_templates/arrow 1.md",
-    "_templates/arrow.md",
-    "_templates/change_line 1.md",
-    "_templates/change_line.md",
-    "_templates",
-    "change_line.md.md",
-    "_posts/2025-03-14-cs_basic-1_2.md",
-    "_posts/2025-03-13-cs_basic-1_2.md",
     "_posts/2025-03-13-cs_basic-1_1.md",
-    "_posts/2024-08-06-python_day_2.md",
+    "_posts/2025-03-14-cs_basic-1_2_1.md",
+    "images/2025-03-14-cs_basic-1_2/image2.png",
+    "images/2025-03-14-cs_basic-1_2/image1.png",
+    "images/2025-03-14-cs_basic-1_2",
+    "images/스크린샷 2025-03-14 오후 6.23.06.png",
+    "_templates/double_arrow.md",
+    "_templates/arrow.md",
+    "_templates/change_line.md",
+    "Untitled.md",
+    "change_line.md.md",
+    "_templates",
     "images/2025-03-13-cs_basic-1_1/image1.png",
-    "_posts/2024-08-07-aitech-week1_6.md",
     "images/2025-03-13-cs_basic-1_1",
-    "_posts/2025-03-11-python_study_week1_1026.md",
-    "_posts/2025-03-11-python_study_week1_1026 1.md",
+    "_posts/2024-08-05-python_day_1.md",
     "_pages/0_1_computer_architecture.md",
-    "_pages/1_9_recsys_basic.md",
-    "_pages/0_4_network.md",
-    "_pages/1_15_recsys_recent_trend.md",
-    "_pages/0_3_data_structure.md",
-    "_pages/1_6_ml_in_practice.md",
-    "_pages/2_3_hackathon_lightweight.md",
-    "_pages/1_13_product_serving.md",
-    "_pages/1_8_ml_projects.md",
-    "_pages/1_5_ml_recsys.md",
     "_pages/0_5_database.md",
-    "_pages/1_3_matplotlib.md",
+    "_pages/0_4_network.md",
+    "_pages/0_3_data_structure.md",
+    "_pages/0_2_os.md",
+    "_pages/2_1_hackathon_baseline.md",
+    "_posts/2025-03-11-python_study_week1_1026.md",
+    "_posts/2024-08-05-aitech-week1_1.md",
+    "_pages/0_1_computer_architecture copy 4.md",
+    "_pages/0_1_computer_architecture copy 3.md",
+    "_pages/0_1_computer_architecture copy 2.md",
+    "_pages/0_1_computer_architecture copy.md",
+    "_pages/3_2_python_algorithm_study.md",
+    "_pages/3_1_python_algorithm.md",
+    "_pages/2_3_hackathon_lightweight.md",
+    "_pages/3_3_hackathon_lightweight.md",
+    "_pages/2_2_hackathon_audiodata.md",
     "images/2024-08-07-aitech-week1_6/image3.png",
     "images/2024-08-07-aitech-week1_6/image4.png",
     "images/2024-08-07-aitech-week1_6/image.png",
+    "images/2024-08-07-aitech-week1_6/image1.png",
+    "images/2024-08-07-aitech-week1_6/image5.png",
+    "images/2024-08-07-aitech-week1_6/image6.png",
     "images/2024-10-28-aitech-week11-12_3",
     "_posts/2024-10-28-aitech-week11-12_3",
     "_posts/Day 1 Collaborative Filtering 1 131a5ea4235480c49f20f48b0005ae42",
-    "images/2024-10-28-aitech-week11-12_2"
+    "images/2024-10-28-aitech-week11-12_2",
+    "images/2024-10-28-aitech-week11-12_1",
+    "images/2024-09-15-aitech-week11-12_1",
+    "images/Day 1 추천 시스템 Basic 2 131a5ea4235480b18bb2fcb42afead92"
   ]
 }
