@@ -10,7 +10,7 @@ content:
         label: Layout
         type: select
         options:
-          values: [ Tech, News, Sports ]
+          values: [ splash, single ]
         default: single
         required: true
         description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
