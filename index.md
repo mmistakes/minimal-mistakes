@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 classes: wide
 header:
   overlay_color: "#147ea8"
