@@ -41,7 +41,7 @@ content:
         type: string
         required: true
         description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen!
-      - name: imagelist
+      - name: gallery
         label: Bilderliste
         type: object
         list: true
