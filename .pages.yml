@@ -27,6 +27,20 @@ content:
               label: ja (nur bei Layout single sinnvoll)
             - value: 
               label: nein
+      - name: header
+        label: Header (optional)
+        type: object
+        fields:
+          - name: overlay_color
+            label: Overlay Color (färbt das Bild)
+            type: string
+            description: hex Wert mit hashtag, google "color picker"
+          - name: overlay_image
+            label: schön großes, breites Bild
+            type: image
+          - name: excerpt
+            label: Text auf Bild
+            type: text
       - name: sidebar
         label: Bilder in der linken Spalte (nur bei Layout single sinnvoll)
         type: object
