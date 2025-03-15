@@ -163,7 +163,7 @@ include:
   - _galleries
   - _posts
   - _specials
-  - assets/docs/
+  - assets
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
