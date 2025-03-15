@@ -28,12 +28,11 @@ content:
             - value: 
               label: nein
       - name: sidebar
-        label: Bild in der linken Spalte
+        label: Bilder in der linken Spalte (nur bei Layout single sinnvoll)
         type: object
         list: true
         fields:
           - name: image
-            label: nur bei Layout single sinnvoll
             type: image
       - name: title
         label: Titel
