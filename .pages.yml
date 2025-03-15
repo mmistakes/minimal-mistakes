@@ -115,6 +115,7 @@ content:
       - name: classes
         label: rechte Spalte verwenden
         type: select
+        default: ""
         options:
           values: 
             - value: wide
