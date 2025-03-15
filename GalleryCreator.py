@@ -29,7 +29,7 @@ def create_gallery():
         os.rename(old_path, new_path)
 
         full_path = f"assets/images/{folder_name}/{new_name}"
-        url = f"images/{folder_name}/{new_name}"
+        url = f"asstes/images/{folder_name}/{new_name}"
         gallery.append({"url": url, "image_path": full_path})
 
     page_content = (
@@ -40,7 +40,8 @@ def create_gallery():
     )
 
     for item in gallery:
-        page_content += f"  - image_path: {item['image_path']}\n"
+        page_content += f"  - url: {item['url']}\n"
+        page_content += f"    image_path: {item['image_path']}\n"
 
     page_content += "---\n\n{% include gallery %}\n"
 
