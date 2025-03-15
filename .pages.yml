@@ -8,7 +8,9 @@ content:
     fields:
       - name: layout
         label: Layout
-        type: string
+        type: select
+        options:
+          values: [ Tech, News, Sports ]
         default: single
         required: true
         description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
