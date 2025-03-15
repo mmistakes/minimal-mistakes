@@ -161,6 +161,7 @@ include:
   - _pages
   - _galleries
   - _posts
+  - _specials
   - assets/docs/
 exclude:
   - "*.sublime-project"
