@@ -81,6 +81,8 @@ content:
         type: rich-text
         options:
           image:
+            input: assets/images
+            output: assets/images
             path: assets/images
             extensions: [ jpg, jpeg, png ]
             
@@ -148,7 +150,10 @@ content:
         type: rich-text
         options:
           image:
-            path: /minimal-mistakes/assets/images
+            input: assets/images
+            output: minimal-mistakes/assets/images
+            path: assets/images
+            extensions: [ jpg, jpeg, png ]
 
   - name: images
     label: Bilder
