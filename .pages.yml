@@ -108,3 +108,49 @@ content:
       - name: body
         label: Inhalt
         type: rich-text
+  - name: images
+    label: Bilder
+    type: file
+    path: _pages/images.md
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        hidden: true
+      - name: permalink
+        label: Link
+        type: string
+      - name: feature_row
+        label: Gallerienliste
+        type: object
+        list: true
+        fields:
+          - name: image_path
+            label: Display Bild
+            type: image
+            required: true
+          - name: alt 
+            type: string
+            default: ""
+            hidden: true
+          - name: title
+            label: Titel
+            type: string
+            required: true
+          - name: excerpt
+            label: Beschreibung
+            type: string
+          - name: url
+            label: Link zu Gallerie
+            type: string
+            required: true
+          - name: btn_class
+            type: string
+            default: "btn--primary"
+            hidden: true
+          - name: btn_label
+            type: string
+            default: "Ansehen"
+            hidden: true
+            
+            
