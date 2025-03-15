@@ -41,7 +41,7 @@ def create_gallery():
     )
 
     for item in gallery:
-        page_content += f"  - image_path: {item['image_path']}\n"
+        page_content += f"  - image_path: /{item['image_path']}\n"
 
     page_content += "---\n\n{% include gallery %}\n"
 
