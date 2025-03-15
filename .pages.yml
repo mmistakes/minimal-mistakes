@@ -83,6 +83,11 @@ content:
           - name: url
             label: Bild beim draufklicken (dasselbe => Vergrößerung, optional)
             type: image
+      - name: body
+        label: Inhalt
+        type: rich-text
+        default: "{% include gallery %}"
+        hidden: true
   - name: imprint
     label: Impressum
     type: file
