@@ -46,9 +46,7 @@ content:
         label: Link
         type: string
         required: true
-        default: '/images/{fields.name}/'
-        hidden: true
-        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen!
+        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen! Am Besten ist /images/<Name>/ 
       - name: gallery
         label: Bilderliste
         type: object
