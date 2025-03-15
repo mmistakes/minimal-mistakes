@@ -34,6 +34,7 @@ def create_gallery():
 
     page_content = (
         f"---\n"
+        f"name: {folder_name}\n"
         f"layout: splash\n"
         f"permalink: /images/{folder_name}/\n"
         f"gallery:\n"
