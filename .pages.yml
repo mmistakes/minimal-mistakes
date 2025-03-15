@@ -26,7 +26,8 @@ content:
         type: rich-text
         options:
           image:
-            path: assets/images
+            path: src/media/posts
+            extensions: [ jpg, jpeg, png ]
   - name: galleries
     label: Gallerien
     type: collection
