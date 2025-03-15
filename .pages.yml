@@ -31,6 +31,7 @@ content:
     label: Gallerien
     type: collection
     path: _galleries
+    filename: fields.name
     fields:
       - name: name
         label: Name der Datei
