@@ -27,6 +27,19 @@ content:
               label: ja (nur bei Layout single sinnvoll)
             - value: 
               label: nein
+      - name: sidebar
+        label: Bild in der linken Spalte
+        type: object
+        description: nur bei Layout single sinnvoll
+        fields:
+          - name: title
+            label: titel
+            type: string
+            default: ""
+            hidden: true
+          - name: image
+            label: Bild
+            type: image
       - name: title
         label: Titel
         type: string  
