@@ -59,7 +59,7 @@ content:
       - name: name
         label: Name
         type: string
-        description: Name der Datei
+        description: Name der Datei. Am Besten gleich wie der Name des Bildordners (falls existent, zur Übersicht)
         required: true
       - name: layout
         label: Layout
