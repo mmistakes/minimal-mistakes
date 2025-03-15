@@ -55,6 +55,8 @@ content:
     type: collection
     path: _galleries
     filename: '{fields.name}.md'
+    view:
+      fields: [ name, permalink ]
     fields:
       - name: name
         label: Name
