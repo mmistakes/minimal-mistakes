@@ -46,7 +46,7 @@ content:
         label: Link
         type: string
         required: true
-        default: 'images/{name}/'
+        default: '/images/{fields.name}/'
         hidden: true
         description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen!
       - name: gallery
