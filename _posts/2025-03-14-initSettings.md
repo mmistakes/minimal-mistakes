@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Init Settings!"
+comments: true
 ---
 
 # Welcome
@@ -18,5 +19,3 @@ local환경 테스트 : bundle exec jekyll serve
 Jekyll \_site 초기화 후 다시 실행
 rm -rf \_site
 bundle exec jekyll serve
-
-![man](../images/2025-03-14-first/man.jpeg)
