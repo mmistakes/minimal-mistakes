@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Kontakt"
+classes: 
 permalink: /contact/
 sidebar:
   - title: ""
