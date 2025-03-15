@@ -36,10 +36,6 @@ content:
         label: Layout
         type: string
         hidden: true
-      - name: title
-        label: Titel
-        type: string  
-        required: true
       - name: permalink
         label: Link
         type: string
