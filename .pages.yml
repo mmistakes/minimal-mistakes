@@ -1,5 +1,24 @@
 media: assets/images
 content: 
+  - name: navigation
+    label: Navigation
+    type: file
+    path: _data/navigation.yml
+    fields:
+      - name: main
+        label: Navigation im Header
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
+            required: true
+          - name: url
+            label: Link
+            type: string
+            required: true
+            
   - name: home
     label: Home
     type: file
@@ -64,122 +83,12 @@ content:
           image:
             path: assets/images
             extensions: [ jpg, jpeg, png ]
-  - name: galleries
-    label: Gallerien
-    type: collection
-    path: _galleries
-    filename: '{fields.name}.md'
-    view:
-      fields: [ name, permalink ]
-    fields:
-      - name: name
-        label: Name
-        type: string
-        description: Name der Datei. Am Besten gleich wie der Name des Bildordners (falls existent, zur Übersicht)
-        required: true
-      - name: layout
-        label: Layout
-        type: string
-        default: "splash"
-        hidden: true
-      - name: permalink
-        label: Link
-        type: string
-        required: true
-        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen! Am Besten ist /images/<Name>/ 
-      - name: gallery
-        label: Bilderliste
-        type: object
-        list: true
-        fields:
-          - name: image_path
-            label: Bild
-            type: image
-            required: true
-      - name: body
-        label: Inhalt
-        type: rich-text
-        default: "{% include gallery %}"
-        hidden: true
-  - name: images
-    label: Bilder
-    type: file
-    path: _specials/images.md
-    fields:
-      - name: layout
-        label: Layout
-        type: string
-        default: splash
-        hidden: true
-      - name: permalink
-        label: Link
-        type: string
-      - name: feature_row
-        label: Gallerienliste
-        type: object
-        list: true
-        fields:
-          - name: image_path
-            label: Display Bild
-            type: image
-            required: true
-          - name: alt 
-            type: string
-            default: ""
-            hidden: true
-          - name: title
-            label: Titel
-            type: string
-            required: true
-          - name: excerpt
-            label: Beschreibung
-            type: string
-          - name: url
-            label: Link zu Gallerie
-            type: string
-            required: true
-          - name: btn_class
-            type: string
-            default: "btn--primary"
-            hidden: true
-          - name: btn_label
-            type: string
-            default: "Ansehen"
-            hidden: true
-      - name: body
-        type: string
-        default: "{% include feature_row %}"
-        hidden: true
-  - name: navigation
-    label: Navigation
-    type: file
-    path: _data/navigation.yml
-    fields:
-      - name: main
-        label: Navigation im Header
-        type: object
-        list: true
-        fields:
-          - name: title
-            label: Titel
-            type: string
-            required: true
-          - name: url
-            label: Link
-            type: string
-            required: true
-  - name: styles
-    label: Styles
-    type: file
-    path: _sass/minimal-mistakes/skins/_neon.scss
-    fields:
-      - name: body
-        label: CSS Code
-        type: text
+            
   - name: pages
     label: Seiten
     type: collection
     path: _pages
+    filename: "{fields.title}.md"
     view:
       fields: [ title, permalink ]
     fields:
@@ -233,8 +142,104 @@ content:
         fields:
           - name: image
             type: image
+
+  - name: images
+    label: Bilder
+    type: file
+    path: _specials/images.md
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        default: splash
+        hidden: true
+      - name: permalink
+        label: Link
+        type: string
+      - name: feature_row
+        label: Gallerienliste
+        type: object
+        list: true
+        fields:
+          - name: image_path
+            label: Display Bild
+            type: image
+            required: true
+          - name: alt 
+            type: string
+            default: ""
+            hidden: true
+          - name: title
+            label: Titel
+            type: string
+            required: true
+          - name: excerpt
+            label: Beschreibung
+            type: string
+          - name: url
+            label: Link zu Gallerie
+            type: string
+            required: true
+          - name: btn_class
+            type: string
+            default: "btn--primary"
+            hidden: true
+          - name: btn_label
+            type: string
+            default: "Ansehen"
+            hidden: true
+      - name: body
+        type: string
+        default: "{% include feature_row %}"
+        hidden: true 
         
-      
+  - name: galleries
+    label: Gallerien
+    type: collection
+    path: _galleries
+    filename: '{fields.name}.md'
+    view:
+      fields: [ name, permalink ]
+    fields:
+      - name: name
+        label: Name
+        type: string
+        description: Name der Datei. Am Besten gleich wie der Name des Bildordners (falls existent, zur Übersicht)
+        required: true
+      - name: layout
+        label: Layout
+        type: string
+        default: "splash"
+        hidden: true
+      - name: permalink
+        label: Link
+        type: string
+        required: true
+        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen! Am Besten ist /images/<Name>/ 
+      - name: gallery
+        label: Bilderliste
+        type: object
+        list: true
+        fields:
+          - name: image_path
+            label: Bild
+            type: image
+            required: true
+      - name: body
+        label: Inhalt
+        type: rich-text
+        default: "{% include gallery %}"
+        hidden: true
+
+  - name: styles
+    label: Styles
+    type: file
+    path: _sass/minimal-mistakes/skins/_neon.scss
+    fields:
+      - name: body
+        label: CSS Code
+        type: text
+ 
       
       
         
