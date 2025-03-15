@@ -17,4 +17,6 @@ Unser [Instagram Kanal](https://www.instagram.com/jims_bergwerk/) und unsere [Wh
 Unser Jugendtreff, das Bergwerk, steht in der [Rosenheimerstraße 15A, 83043 Bad Aibling](https://maps.app.goo.gl/6sxZddo4cDtbgkyWA)  
 Unser Postfach hat die Nummer 1137 und liegt in 83053 Kolbermoor.
 
-<p style="text-align: right">sfghsfghs<img src="/assets/images/zitat.png"></p>
+![](/assets/images/jims_bergwerk_qr.png)
+
+![](/assets/images/gruppe-qr.jpg)
