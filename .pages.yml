@@ -1,5 +1,29 @@
 media: assets/images
 content: 
+  - name: home
+    label: Home
+    type: file
+    path: index.md
+    icon: house
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        default: single
+        required: true
+        description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
+      - name: title
+        label: Titel
+        type: string  
+        required: true
+      - name: permalink
+        label: Link
+        type: string
+        required: true
+        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
+      - name: body
+        label: Inhalt
+        type: rich-text
   - name: imprint
     label: Impressum
     type: file
@@ -9,13 +33,16 @@ content:
       - name: layout
         label: Layout
         type: string
-        default: splash
+        required: true
+        description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
       - name: title
         label: Titel
         type: string  
+        required: true
       - name: permalink
         label: Link
         type: string
+        required: true
         description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
       - name: body
         label: Inhalt
