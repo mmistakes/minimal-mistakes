@@ -4,9 +4,9 @@ permalink: /images/
 feature_row:
   - image_path: /assets/images/stage/image-15.jpg
     title: Kulturbühne
-    excerpt: Unsere Freiluftbühne im Innenhof direkt unterhalb des Bergwerks
+    excerpt: Unsere Freiluftbühne im Innenhof direkt unterhalb des Bergwerks.
     url: /images/stage/
     btn_class: btn--primary
     btn_label: Ansehen
-    body: "{% include feature\\_row %}"
 ---
+{% include feature\_row %}
