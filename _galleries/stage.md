@@ -22,6 +22,6 @@ gallery:
   - image_path: /assets/images/stage/image-7.jpg
   - image_path: /assets/images/stage/image-8.jpg
   - image_path: /assets/images/stage/image-9.jpg
+  - image_path: /assets/images/logo.png
 ---
-
 {% include gallery %}
