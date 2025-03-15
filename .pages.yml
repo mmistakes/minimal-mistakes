@@ -2,7 +2,7 @@ media: assets/images
 content: 
   - name: imprint
     label: Impressum
-    icon: stamp
+    icon: Stamp
     type: file
     path: _pages/imprint.md
     fields:
