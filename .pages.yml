@@ -27,6 +27,10 @@ content:
               label: ja (nur bei Layout single sinnvoll)
             - value: 
               label: nein
+      - name: title
+        label: Titel
+        type: string  
+        required: true
       - name: header
         label: Header (nur bei Layout splash sinvoll)
         type: object
@@ -48,10 +52,6 @@ content:
         fields:
           - name: image
             type: image
-      - name: title
-        label: Titel
-        type: string  
-        required: true
       - name: permalink
         label: Link
         type: string
