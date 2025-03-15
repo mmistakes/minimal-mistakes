@@ -21,11 +21,4 @@ Unser Postfach hat die Nummer 1137 und liegt in 83053 Kolbermoor.
 
 !\[no-alignment\]({{ site.url }}{{ site.baseurl }}/assets/images/gruppe-qr.jpg)
 
-<p style="text-align: right">
-  Text neben dem Bild
-  <img 
-    src="{{ '/assets/images/logo-berg.png' | relative_url }}" 
-    alt="Logo"
-    style="width: 150px; height: auto;"
-  >
-</p>
+![](/assets/images/gruppe-qr.jpg)
