@@ -1,0 +1,31 @@
+name: Jekyll Build and Deploy
+on:
+  push:
+    branches: [main] # or your default branch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-ruby@v2
+      with:
+        ruby-version: '3.1'
+    - run: gem install bundler
+    - run: bundle install
+    - run: bundle exec jekyll build --verbose
+    - uses: actions/upload-pages-artifact@v2
+      with:
+        path: ./_site
+deploy:
+  needs: build
+  permissions:
+    pages: write
+    id-token: write
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  runs-on: ubuntu-latest
+  steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
