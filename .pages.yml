@@ -80,11 +80,8 @@ content:
             type: image
             required: true
           - name: url
-            label: Link
-            type: string
-            default: '{fields.tags[3].image_path}'
-            required: true
-            hidden: true
+            label: Bild beim draufklicken (dasselbe => Vergrößerung, optional)
+            type: image
   - name: imprint
     label: Impressum
     type: file
