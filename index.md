@@ -5,8 +5,6 @@ header:
   overlay_color: "#147ea8"
   overlay_image: /assets/images/stage/image-15.jpg
 excerpt: Wir sind ein Unabhängiger Jugendtreff.
-sidebar:
-  - image: /assets/images/jims_bergwerk_qr.png
 title: Willkommen
 permalink: /
 ---
