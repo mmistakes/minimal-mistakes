@@ -29,7 +29,7 @@ def create_gallery():
         os.rename(old_path, new_path)
 
         full_path = f"assets/images/{folder_name}/{new_name}"
-        url = f"asstes/images/{folder_name}/{new_name}"
+        url = f"assets/images/{folder_name}/{new_name}"
         gallery.append({"url": url, "image_path": full_path})
 
     page_content = (
