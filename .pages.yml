@@ -57,7 +57,7 @@ content:
           - name: overlay_color
             label: Overlay Color (färbt das Bild)
             type: string
-            description: hex Wert mit hashtag, google "color picker"
+            description: hex Wert mit hashtag, google color picker
           - name: overlay_image
             label: schön großes, breites Bild
             type: image
@@ -146,6 +146,9 @@ content:
       - name: body
         label: inhalt
         type: rich-text
+        options:
+          image:
+            path: /minimal-mistakes/assets/images
 
   - name: images
     label: Bilder
