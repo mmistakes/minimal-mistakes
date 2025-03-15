@@ -31,7 +31,7 @@ content:
     label: Gallerien
     type: collection
     path: _galleries
-    filename: fields.name
+    filename: '{fields.name}.md'
     fields:
       - name: name
         label: Name der Datei
