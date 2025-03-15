@@ -1,5 +1,6 @@
 ---
 name: stage
+layout: splash
 permalink: /images/stage/
 gallery:
   - image_path: /assets/images/stage/image-1.jpg
@@ -7,7 +8,7 @@ gallery:
   - image_path: /assets/images/stage/image-10.jpg
     url: "{fields.tags[3].image_path}"
   - image_path: /assets/images/stage/image-11.jpg
-    url: "{fields.tags[3].image_path}"
+    url: /assets/images/stage/image-11.jpg
   - image_path: /assets/images/stage/image-12.jpg
     url: "{fields.tags[3].image_path}"
   - image_path: /assets/images/stage/image-13.jpg
