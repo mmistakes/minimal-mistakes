@@ -34,7 +34,7 @@ content:
           - name: title
             label: titel
             type: string
-            default: ""
+            default:
             hidden: true
           - name: image
             label: nur bei Layout single sinnvoll
