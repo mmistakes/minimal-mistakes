@@ -2,9 +2,9 @@ media: assets/images
 content: 
   - name: imprint
     label: Impressum
-    icon: Stamp
     type: file
     path: _pages/imprint.md
+    icon: map-pinned
     fields:
       - name: layout
         label: Layout
