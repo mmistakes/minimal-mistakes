@@ -2,7 +2,8 @@
 layout: single
 classes: wide
 sidebar:
-  image: /assets/images/logo.png
+  - title: ""
+    image: 
 title: Willkommen
 permalink: /
 ---
