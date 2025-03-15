@@ -7,4 +7,7 @@ content:
     fields:
       - name: title
         label: Titel
-        type: string      
+        type: string  
+      - name: content
+        label: Inhalt
+        type: rich-text
