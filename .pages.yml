@@ -47,8 +47,8 @@ content:
       - name: permalink
         label: Link
         type: string
-        required: true
-        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
+        default: /
+        hidden: true
       - name: body
         label: Inhalt
         type: rich-text
