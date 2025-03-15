@@ -31,9 +31,10 @@ content:
     label: Gallerien
     type: collection
     path: _galleries
-    view:
-      primary: permalink
     fields:
+      - name: name
+        label: Name der Datei
+        type: string
       - name: layout
         label: Layout
         type: string
