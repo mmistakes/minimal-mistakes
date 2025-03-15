@@ -176,6 +176,65 @@ content:
       - name: body
         label: CSS Code
         type: text
+  - name: pages
+    label: Seiten
+    type: collection
+    path: _pages
+    view:
+      fields: [ title, permalink ]
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: layout
+        label: Layout
+        type: select
+        options:
+          values:
+            - value: single 
+              label: single (Mittelspalte)
+            - value: splash
+              label: splash (volle Breite)
+        default: single
+        required: true
+      - name: permalink
+        label: Link
+        type: string
+        required: true
+        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
+      - name: classes
+        label: rechte Spalte verwenden
+        type: select
+        options:
+          values: 
+            - value: wide
+              label: ja (nur bei Layout single sinnvoll)
+            - value: 
+              label: nein
+      - name: header
+        label: Header (nur bei Layout splash sinvoll)
+        type: object
+        fields:
+          - name: overlay_color
+            label: Overlay Color (färbt das Bild)
+            type: string
+            description: hex Wert mit hashtag, google "color picker"
+          - name: overlay_image
+            label: schön großes, breites Bild
+            type: image
+      - name: excerpt
+        label: Text auf Header Bild
+        type: text
+      - name: sidebar
+        label: Bilder in der linken Spalte (nur bei Layout single sinnvoll)
+        type: object
+        list: true
+        fields:
+          - name: image
+            type: image
+        
+      
       
       
         
