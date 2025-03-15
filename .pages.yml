@@ -30,7 +30,6 @@ content:
       - name: sidebar
         label: Bild in der linken Spalte
         type: object
-        description: nur bei Layout single sinnvoll
         fields:
           - name: title
             label: titel
@@ -38,7 +37,7 @@ content:
             default: ""
             hidden: true
           - name: image
-            label: Bild
+            label: nur bei Layout single sinnvoll
             type: image
       - name: title
         label: Titel
