@@ -1,7 +1,6 @@
 ---
 layout: splash
 title: "Impressum"
-excerpt: "Impressum"
 permalink: /imprint/
 ---
 

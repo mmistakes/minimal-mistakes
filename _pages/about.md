@@ -2,7 +2,6 @@
 layout: single
 classes: wide
 title: "Über uns"
-excerpt: "Wer wir sind"
 permalink: /about/
 sidebar:
   - title: ""

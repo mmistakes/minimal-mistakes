@@ -1,7 +1,6 @@
 ---
 layout: splash
 title: "Datenschutzerklärung"
-excerpt: "Datenschutzerklärung"
 permalink: /privacy/
 ---
 

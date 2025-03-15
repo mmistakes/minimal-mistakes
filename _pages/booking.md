@@ -2,7 +2,6 @@
 layout: single
 classes: wide
 title: "Ihr spielt bei uns!?"
-excerpt: "Wir bieten eine Bühne für Euch"
 permalink: /booking/
 sidebar:
   - title: ""
