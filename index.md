@@ -1,6 +1,5 @@
 ---
 layout: splash
-classes: wide
 header:
   overlay_color: "#147ea8"
   overlay_image: /assets/images/stage/image-15.jpg
