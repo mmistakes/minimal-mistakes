@@ -24,6 +24,9 @@ content:
       - name: body
         label: Inhalt
         type: rich-text
+        options:
+          image:
+            path: src/media/posts
   - name: imprint
     label: Impressum
     type: file
