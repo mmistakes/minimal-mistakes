@@ -34,6 +34,9 @@ content:
           - name: image
             label: nur bei Layout single sinnvoll
             type: image
+          - name: title
+            label: Titel unter dem Bild
+            type: string
       - name: title
         label: Titel
         type: string  
