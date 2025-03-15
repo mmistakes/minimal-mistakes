@@ -77,12 +77,9 @@ content:
         list: true
         fields:
           - name: image_path
-            label: Pfad zum Bild
+            label: Bild
             type: image
             required: true
-          - name: url
-            label: Bild beim draufklicken (dasselbe => Vergrößerung, optional)
-            type: image
       - name: body
         label: Inhalt
         type: rich-text
