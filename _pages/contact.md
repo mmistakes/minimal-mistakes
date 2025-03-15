@@ -20,3 +20,5 @@ Unser Postfach hat die Nummer 1137 und liegt in 83053 Kolbermoor.
 !\[no-alignment\]({{ site.url }}{{ site.baseurl }}/assets/images/jims\_bergwerk\_qr.png)
 
 !\[no-alignment\]({{ site.url }}{{ site.baseurl }}/assets/images/gruppe-qr.jpg)
+
+<p style="text-align: right">Text neben dem Bild<img src="/assets/images/logo-berg.png"></p>
