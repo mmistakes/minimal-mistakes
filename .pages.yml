@@ -32,7 +32,7 @@ content:
         type: object
         fields:
           - name: title
-            label: titel
+            label: Titel
             type: string
             default: ''
             hidden: true
