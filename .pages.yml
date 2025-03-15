@@ -1,2 +1,10 @@
 media: assets/images
-  
+content: 
+  - name: imprint
+    label: Impressum
+    type: file
+    path: _pages/imprint.md
+    fields:
+      - name: title
+        label: Titel
+        type: string      
