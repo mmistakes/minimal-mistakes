@@ -15,7 +15,7 @@ content:
             type: string
             required: true
           - name: url
-            label: Link
+            label: Link (vermutlich einer Datei aus "Seiten")
             type: string
             required: true
             
