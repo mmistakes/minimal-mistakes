@@ -177,6 +177,14 @@ content:
             label: Link
             type: string
             required: true
+  - name: styles
+    label: Styles
+    type: file
+    path: _sass/minimal-mistakes/skins/neon.scss
+    fields:
+      - name: body
+        label: CSS Code
+        type: string
       
       
         
