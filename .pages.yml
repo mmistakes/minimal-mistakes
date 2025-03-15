@@ -31,11 +31,6 @@ content:
         label: Bild in der linken Spalte
         type: object
         fields:
-          - name: title
-            label: Titel
-            type: string
-            default: ''
-            hidden: true
           - name: image
             label: nur bei Layout single sinnvoll
             type: image
