@@ -150,7 +150,7 @@ content:
         type: rich-text
         options:
           image:
-            input: assets/images
+            input: minimal-mistakes/assets/images
             output: minimal-mistakes/assets/images
             path: assets/images
             extensions: [ jpg, jpeg, png ]
