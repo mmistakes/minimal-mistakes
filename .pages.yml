@@ -25,7 +25,7 @@ content:
           values: 
             - value: wide
               label: ja (nur bei Layout single sinnvoll)
-            - value: 
+            - value: ''
               label: nein
       - name: sidebar
         label: Bild in der linken Spalte
