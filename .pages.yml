@@ -184,7 +184,7 @@ content:
     fields:
       - name: body
         label: CSS Code
-        type: string
+        type: text
       
       
         
