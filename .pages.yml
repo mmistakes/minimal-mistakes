@@ -64,6 +64,7 @@ content:
       - name: layout
         label: Layout
         type: string
+        default: "splash"
         hidden: true
       - name: permalink
         label: Link
