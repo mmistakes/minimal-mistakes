@@ -120,7 +120,7 @@ content:
           values: 
             - value: wide
               label: ja (nur bei Layout single sinnvoll)
-            - value: ""
+            - value: " "
               label: nein
       - name: header
         label: Header (nur bei Layout splash sinvoll)
