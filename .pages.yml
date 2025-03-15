@@ -10,7 +10,11 @@ content:
         label: Layout
         type: select
         options:
-          values: [ splash, single ]
+          values:
+            - value: single 
+              label: single (Mittelspalte)
+            - value: splash
+              label: splash (volle Breite)
         default: single
         required: true
         description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
