@@ -4,7 +4,7 @@ content:
     label: Impressum
     type: file
     path: _pages/imprint.md
-    icon: map-pinned
+    icon: Stamp
     fields:
       - name: layout
         label: Layout
@@ -13,6 +13,10 @@ content:
       - name: title
         label: Titel
         type: string  
+      - name: link
+        label: Link
+        type: string
+        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
       - name: body
         label: Inhalt
         type: rich-text
