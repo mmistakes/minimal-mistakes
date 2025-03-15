@@ -142,6 +142,9 @@ content:
         fields:
           - name: image
             type: image
+      - name: body
+        label: inhalt
+        type: rich-text
 
   - name: images
     label: Bilder
