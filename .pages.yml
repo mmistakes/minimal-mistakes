@@ -155,5 +155,8 @@ content:
             type: string
             default: "Ansehen"
             hidden: true
-            
+      - name: body
+        type: rich-text
+        
+      
             
