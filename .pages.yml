@@ -34,8 +34,10 @@ content:
     filename: '{fields.name}.md'
     fields:
       - name: name
-        label: Name der Datei
+        label: Name
         type: string
+        description: Name der Datei
+        required: true
       - name: layout
         label: Layout
         type: string
