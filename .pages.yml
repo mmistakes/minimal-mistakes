@@ -155,5 +155,9 @@ content:
             type: string
             default: "Ansehen"
             hidden: true
+          - name: body
+            type: rich-text
+            default: "{% include feature_row %}"
+            hidden: true
             
             
