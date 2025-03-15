@@ -31,6 +31,8 @@ content:
     label: Gallerien
     type: collection
     path: _galleries
+    view:
+      primary: permalink
     fields:
       - name: layout
         label: Layout
