@@ -13,6 +13,6 @@ content:
       - name: title
         label: Titel
         type: string  
-      - name: content
+      - name: body
         label: Inhalt
         type: rich-text
