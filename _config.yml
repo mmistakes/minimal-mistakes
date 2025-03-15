@@ -155,6 +155,7 @@ footer:
       url: "/minimal-mistakes/imprint/"
 
 
+
 # Reading Files
 include:
   - .htaccess
