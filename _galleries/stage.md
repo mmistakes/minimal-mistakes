@@ -1,4 +1,5 @@
 ---
+name: stage
 layout: splash
 permalink: /images/stage/
 gallery:
