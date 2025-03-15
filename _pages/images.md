@@ -9,4 +9,4 @@ feature_row:
     btn_class: btn--primary
     btn_label: Ansehen
 ---
-{% include feature\_row %}
+{% include feature_row %}
