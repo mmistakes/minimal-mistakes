@@ -159,6 +159,26 @@ content:
         type: string
         default: "{% include feature_row %}"
         hidden: true
+  - name: navigation
+    label: Navigation
+    type: file
+    path: _data/navigation.yml
+    fields:
+      - name: main
+        label: Navigation im Header
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
+            required: true
+          - name: url
+            label: Link
+            type: string
+            required: true
+      
+      
         
       
             
