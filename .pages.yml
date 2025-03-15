@@ -87,33 +87,10 @@ content:
         type: rich-text
         default: "{% include gallery %}"
         hidden: true
-  - name: imprint
-    label: Impressum
-    type: file
-    path: _pages/imprint.md
-    icon: Stamp
-    fields:
-      - name: layout
-        label: Layout
-        type: string
-        required: true
-        description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
-      - name: title
-        label: Titel
-        type: string  
-        required: true
-      - name: permalink
-        label: Link
-        type: string
-        required: true
-        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
-      - name: body
-        label: Inhalt
-        type: rich-text
   - name: images
     label: Bilder
     type: file
-    path: _pages/images.md
+    path: _specials/images.md
     fields:
       - name: layout
         label: Layout
