@@ -18,6 +18,15 @@ content:
         default: single
         required: true
         description: siehe https://mmistakes.github.io/minimal-mistakes/docs/layouts/
+      - name: classes
+        label: rechte Spalte verwenden
+        type: select
+        options:
+          values: 
+            - value: wide
+              label: ja (nur bei Layout single sinnvoll)
+            - value: 
+              label: nein
       - name: title
         label: Titel
         type: string  
