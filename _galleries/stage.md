@@ -1,7 +1,7 @@
 ---
 permalink: /images/stage/
 gallery:
-  - url: sgsgfn
+  - url: bild.jpg
     image_path: /assets/images/stage/image-1.jpg
   - url: assets/images/stage/image-2.jpg
     image_path: /assets/images/stage/image-2.jpg
