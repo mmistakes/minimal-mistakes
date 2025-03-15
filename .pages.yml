@@ -180,7 +180,7 @@ content:
   - name: styles
     label: Styles
     type: file
-    path: _sass/minimal-mistakes/skins/neon.scss
+    path: _sass/minimal-mistakes/skins/_neon.scss
     fields:
       - name: body
         label: CSS Code
