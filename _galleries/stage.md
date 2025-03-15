@@ -3,7 +3,7 @@ name: stage
 permalink: /images/stage/
 gallery:
   - image_path: /assets/images/stage/image-1.jpg
-    url: "{fields.tags[3].image_path}"
+    url: /assets/images/stage/image-1.jpg
   - image_path: /assets/images/stage/image-10.jpg
     url: "{fields.tags[3].image_path}"
   - image_path: /assets/images/stage/image-11.jpg
