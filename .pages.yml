@@ -5,6 +5,10 @@ content:
     type: file
     path: _pages/imprint.md
     fields:
+      - name: layout
+        label: Layout
+        type: string
+        default: splash
       - name: title
         label: Titel
         type: string  
