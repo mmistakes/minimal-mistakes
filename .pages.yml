@@ -27,6 +27,38 @@ content:
         options:
           image:
             path: assets/images
+  - name: galleries
+    label: Gallerien
+    type: collection
+    path: _galleries
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        hidden: true
+      - name: title
+        label: Titel
+        type: string  
+        required: true
+      - name: permalink
+        label: Link
+        type: string
+        required: true
+        description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/, Eintrag in Bilder nicht vergessen!
+      - name: imagelist
+        label: Bilderliste
+        type: object
+        list: true
+        fields:
+          - name: url
+            label: Link
+            type: string
+            required: true
+            description: wo das Bild erreichbar sein wird
+          - name: image_path
+            label: Pfad zum Bild
+            type: image
+            required: true
   - name: imprint
     label: Impressum
     type: file
