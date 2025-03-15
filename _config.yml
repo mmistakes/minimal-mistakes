@@ -25,7 +25,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "JiMs Bergwerk"
 description              : "Schafft Raum für Jugend"
 url                      : "https://lorenzgartmeier.github.io"
-baseurl                  : "/minimal-mistakes"
+baseurl                  : ""
 repository               : "LorenzGartmeier/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/logo.png
@@ -149,10 +149,10 @@ footer:
       url: "https://www.instagram.com/jims_bergwerk/"
     - label: "Datenschutz"
       icon: "fa-solid fa-shield-halved"
-      url: "/minimal-mistakes/privacy/"
+      url: "/privacy/"
     - label: "Impressum"
       icon: "fa-solid fa-stamp"
-      url: "/minimal-mistakes/imprint/"
+      url: "/imprint/"
 
 
 
