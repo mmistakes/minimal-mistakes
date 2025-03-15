@@ -40,6 +40,4 @@ gallery:
     url: "{fields.tags[3].image_path}"
   - image_path: /assets/images/stage/image-9.jpg
     url: "{fields.tags[3].image_path}"
-  - image_path: /assets/images/logo.png
-    url: "{fields.tags[3].image_path}"
 ---
