@@ -13,7 +13,7 @@ content:
       - name: title
         label: Titel
         type: string  
-      - name: link
+      - name: permalink
         label: Link
         type: string
         description: z.B. /imprint/ => erreichbar unter deinedomain.de/imprint/
