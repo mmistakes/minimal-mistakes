@@ -4,16 +4,27 @@ import os
 def compress_image(input_path, quality=85):
     try:
         with Image.open(input_path) as image:
-            # Convert image to RGB if it has an alpha channel
+            # Handle transparency and convert to RGB
             if image.mode in ('RGBA', 'LA'):
                 background = Image.new('RGB', image.size, (255, 255, 255))
                 background.paste(image, mask=image.split()[-1])
                 image = background
             elif image.mode != 'RGB':
                 image = image.convert('RGB')
+
+            # Resize if necessary
+            max_width = 2000
+            width, height = image.size
             
-            # Overwrite the original file with JPEG format
-            image.save(input_path, "JPEG", quality=quality)
+            if width > max_width:
+                # Calculate scaling ratio while maintaining aspect ratio
+                ratio = max_width / width
+                new_size = (int(width * ratio), int(height * ratio))
+                # Use high-quality downsampling filter
+                image = image.resize(new_size, resample=Image.LANCZOS)
+
+            # Save as JPEG overwriting original
+            image.save(input_path, "JPEG", quality=quality, optimize=True)
             print(f"Successfully processed: {input_path}")
     
     except FileNotFoundError:
