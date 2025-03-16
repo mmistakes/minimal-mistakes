@@ -35,7 +35,7 @@ figure.highlight {
     width: calc(100% - 1em);
     border: 0;
 
-    /* line numbers*/
+    /* line numbers */
     &.gutter,
     &.rouge-gutter {
       padding-inline-end: 1em;
@@ -67,51 +67,51 @@ figure.highlight {
 .highlight {
   .c {
     /* Comment */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
   }
   .err {
     /* Error */
-    color: $base08;
+    color: #f00; /* 빨간색으로 강조 */
   }
   .k {
     /* Keyword */
-    color: $base0e;
+    color: #000; /* 검정색 */
   }
   .l {
     /* Literal */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .n {
     /* Name */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .o {
     /* Operator */
-    color: $base0c;
+    color: #000; /* 검정색 */
   }
   .p {
     /* Punctuation */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .cm {
     /* Comment.Multiline */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
   }
   .cp {
     /* Comment.Preproc */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
   }
   .c1 {
     /* Comment.Single */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
   }
   .cs {
     /* Comment.Special */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
   }
   .gd {
     /* Generic.Deleted */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .ge {
     /* Generic.Emph */
@@ -119,16 +119,16 @@ figure.highlight {
   }
   .gh {
     /* Generic.Heading */
-    color: $base05;
+    color: #333; /* 어두운 색 */
     font-weight: bold;
   }
   .gi {
     /* Generic.Inserted */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .gp {
     /* Generic.Prompt */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
     font-weight: bold;
   }
   .gs {
@@ -137,188 +137,188 @@ figure.highlight {
   }
   .gu {
     /* Generic.Subheading */
-    color: $base0c;
+    color: #000; /* 검정색 */
     font-weight: bold;
   }
   .kc {
     /* Keyword.Constant */
-    color: $base0e;
+    color: #000; /* 검정색 */
   }
   .kd {
     /* Keyword.Declaration */
-    color: $base0e;
+    color: #000; /* 검정색 */
   }
   .kn {
     /* Keyword.Namespace */
-    color: $base0c;
+    color: #000; /* 검정색 */
   }
   .kp {
     /* Keyword.Pseudo */
-    color: $base0e;
+    color: #000; /* 검정색 */
   }
   .kr {
     /* Keyword.Reserved */
-    color: $base0e;
+    color: #000; /* 검정색 */
   }
   .kt {
     /* Keyword.Type */
-    color: $base0a;
+    color: #000; /* 검정색 */
   }
   .ld {
     /* Literal.Date */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .m {
     /* Literal.Number */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .s {
     /* Literal.String */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .na {
     /* Name.Attribute */
-    color: $base0d;
+    color: #0080ff; /* 파란색 */
   }
   .nb {
     /* Name.Builtin */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .nc {
     /* Name.Class */
-    color: $base0a;
+    color: #000; /* 검정색 */
   }
   .no {
     /* Name.Constant */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .nd {
     /* Name.Decorator */
-    color: $base0c;
+    color: #000; /* 검정색 */
   }
   .ni {
     /* Name.Entity */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .ne {
     /* Name.Exception */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .nf {
     /* Name.Function */
-    color: $base0d;
+    color: #0080ff; /* 파란색 */
   }
   .nl {
     /* Name.Label */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .nn {
     /* Name.Namespace */
-    color: $base0a;
+    color: #000; /* 검정색 */
   }
   .nx {
     /* Name.Other */
-    color: $base0d;
+    color: #0080ff; /* 파란색 */
   }
   .py {
     /* Name.Property */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .nt {
     /* Name.Tag */
-    color: $base0c;
+    color: #000; /* 검정색 */
   }
   .nv {
     /* Name.Variable */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .ow {
     /* Operator.Word */
-    color: $base0c;
+    color: #333; /* 어두운 색 */
   }
   .w {
     /* Text.Whitespace */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .mf {
     /* Literal.Number.Float */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .mh {
     /* Literal.Number.Hex */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .mi {
     /* Literal.Number.Integer */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .mo {
     /* Literal.Number.Oct */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .sb {
     /* Literal.String.Backtick */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .sc {
     /* Literal.String.Char */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .sd {
     /* Literal.String.Doc */
-    color: $base04;
+    color: #555; /* 어두운 회색 */
   }
   .s2 {
     /* Literal.String.Double */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .se {
     /* Literal.String.Escape */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .sh {
     /* Literal.String.Heredoc */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .si {
     /* Literal.String.Interpol */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
   .sx {
     /* Literal.String.Other */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .sr {
     /* Literal.String.Regex */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .s1 {
     /* Literal.String.Single */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .ss {
     /* Literal.String.Symbol */
-    color: $base0b;
+    color: #00b300; /* 초록색 */
   }
   .bp {
     /* Name.Builtin.Pseudo */
-    color: $base05;
+    color: #333; /* 어두운 색 */
   }
   .vc {
     /* Name.Variable.Class */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .vg {
     /* Name.Variable.Global */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .vi {
     /* Name.Variable.Instance */
-    color: $base08;
+    color: #f00; /* 빨간색 */
   }
   .il {
     /* Literal.Number.Integer.Long */
-    color: $base09;
+    color: #333; /* 어두운 색 */
   }
 }
 
