@@ -17,12 +17,12 @@ minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale: "ko-KR"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
-title: "MK Blog"
+title: "MK Tech Blog"
 title_separator: "-"
 # title_separator: "-"
 subtitle: "Que Sera Sera"
 name: "Munkyu"
-description: "문규의 블로그 입니다."
+description: # "문규의 블로그 입니다."
 url: "https://munkyu87.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,9 +114,9 @@ analytics:
 # Site Author
 author:
   name: "문규 노트"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/Profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "문규 노트의 샘플 블로그"
-  location: "south korea"
+  location: # "south korea"
   email:
   links:
     - label: "Email"
