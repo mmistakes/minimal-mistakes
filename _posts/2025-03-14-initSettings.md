@@ -1,7 +1,13 @@
 ---
 layout: post
 title: "Init Settings!"
-comments: true
+categories: coding
+tag: [python, blog, jekyll]
+toc: true
+author_profile: true
+sidebar:
+  nav: "docs"
+search: false
 ---
 
 # Welcome
