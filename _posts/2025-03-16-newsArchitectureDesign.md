@@ -80,13 +80,14 @@ TBD
 4️⃣ TTS API를 호출하여 뉴스 내용을 음성으로 변환
 5️⃣ 사용자가 뉴스 저장 또는 공유 가능
 
+```mermaid
 sequenceDiagram
-participant User as 사용자
-participant Frontend as React Native
-participant Backend as Spring Boot API
-participant NewsAPI as 뉴스 API
-participant AI as OpenAI (GPT 요약)
-participant TTS as TTS API (Google/Amazon)
+    participant User as 사용자
+    participant Frontend as React Native
+    participant Backend as Spring Boot API
+    participant NewsAPI as 뉴스 API
+    participant AI as OpenAI (GPT 요약)
+    participant TTS as TTS API (Google/Amazon)
 
     User ->> Frontend: 뉴스 요청
     Frontend ->> Backend: 뉴스 데이터 요청
@@ -98,29 +99,32 @@ participant TTS as TTS API (Google/Amazon)
     TTS ->> Backend: 음성 파일 반환
     Backend ->> Frontend: 요약 뉴스 + 오디오 URL 반환
     Frontend ->> User: 뉴스 & 오디오 재생
+```
 
 ---
 
 ## 🔹 6. MVP 개발 계획 (MVP Development Plan)
 
-🎯 1차 목표 (MVP)
-✅ 뉴스 데이터 수집 (네이버 뉴스 API / RSS)
-✅ AI 요약 기능 (OpenAI API 활용)
-✅ TTS 변환 기능 (Google Cloud TTS 또는 Amazon Polly)
+### 🎯 1차 목표 (MVP)
+
+✅ 뉴스 데이터 수집 (네이버 뉴스 API / RSS) <br>
+✅ AI 요약 기능 (OpenAI API 활용) <br>
+✅ TTS 변환 기능 (Google Cloud TTS 또는 Amazon Polly) <br>
 ✅ React Native 앱 개발 (기본 UI 구현)
 
-🚀 2차 목표
-🔹 개인 맞춤형 뉴스 추천
-🔹 오디오 뉴스 재생 속도 조절
+### 🚀 2차 목표
+
+🔹 개인 맞춤형 뉴스 추천 <br>
+🔹 오디오 뉴스 재생 속도 조절 <br>
 🔹 북마크 & 공유 기능
 
 ---
 
 ## 🔹 7. 결론 및 차별점
 
-✅ AI 기반 뉴스 요약 + 오디오 변환 기능 제공
-✅ 출퇴근길, 운동 중에도 "듣는 뉴스" 소비 가능
-✅ 무료 API 활용으로 초기 개발 비용 절감
+✅ AI 기반 뉴스 요약 + 오디오 변환 기능 제공 <br>
+✅ 출퇴근길, 운동 중에도 "듣는 뉴스" 소비 가능 <br>
+✅ 무료 API 활용으로 초기 개발 비용 절감 <br>
 ✅ 단순 뉴스 요약이 아닌 맞춤형 피드 제공 (추천 뉴스)
 
 ## 🔹 8. 관련링크 & 참고자료
