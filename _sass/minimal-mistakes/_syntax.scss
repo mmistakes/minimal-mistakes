@@ -9,9 +9,9 @@ figure.highlight {
   background: #f9f9f9;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   line-height: 1.6;
-  border-radius: $border-radius;
+  border-radius: 4px;
 
   [dir=rtl] & {
     direction: ltr;
@@ -333,8 +333,7 @@ figure.highlight {
 pre, code {
   color: #333 !important;  /* 기본 텍스트 색상 */
   background-color: #f5f5f5 !important;  /* 배경색 */
-  padding: 0.5em;
-  border-radius: $border-radius;  /* 테두리 반경 */
+  border-radius: 4px;
   line-height: 1.4;  /* 줄 간격 */
 }
 
