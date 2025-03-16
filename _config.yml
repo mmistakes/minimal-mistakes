@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "doi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Doing Something"
+  avatar           : "/assets/profile/sheep.jpeg"
+  bio              : "doing something"
   location         : "Seoul, Korea & Tokyo, Japan"
   email            :
   links:
