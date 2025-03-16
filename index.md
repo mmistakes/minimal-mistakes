@@ -3,7 +3,7 @@ layout: splash
 classes: " "
 title: Willkommen
 header:
-  overlay_color: "#147ea8"
+  overlay_color: "#ff0000"
   overlay_image: /assets/images/stage/image-15.jpg
 excerpt: Wir sind ein Unabhängiger Jugendtreff.
 sidebar:
