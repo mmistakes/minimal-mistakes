@@ -327,3 +327,25 @@ figure.highlight {
     border-bottom: 0;
   }
 }
+
+
+/* 기본 코드 스타일 */
+pre, code {
+  font-family: 'Courier New', Courier, monospace;  /* 폰트 변경 */
+  font-size: 1rem !important;  /* 폰트 크기 */
+  color: #333 !important;  /* 기본 텍스트 색상 */
+  background-color: #f5f5f5 !important;  /* 배경색 */
+  padding: 1em;
+  border-radius: 4px;  /* 테두리 반경 */
+  line-height: 1.5;  /* 줄 간격 */
+}
+
+/* 강조된 텍스트 (예: 키워드, 에러 등) 색상 변경 */
+.highlight .k, 
+.highlight .err {
+  color: #e74c3c !important;  /* 어두운 색으로 변경 */
+}
+
+.highlight .n {
+  color: #3498db !important;  /* 변수 이름 등 다른 텍스트에 색상 변경 */
+}
