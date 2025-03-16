@@ -149,7 +149,7 @@ footer:
       url: "https://www.instagram.com/jims_bergwerk/"
     - label: "GitHub"
       icon: "fa-brands fa-github"
-      url: "https://github.com/LorenzGartmeier/lorenzgartmeier.github.io
+      url: "https://github.com/LorenzGartmeier/lorenzgartmeier.github.io"
     - label: "Datenschutz"
       icon: "fa-solid fa-shield-halved"
       url: "/privacy/"
