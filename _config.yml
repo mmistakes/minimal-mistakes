@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "YTnote"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Black & White Minimalist Business Logo.png"
   bio              : "YT life note"
   location         : "USA"
   email            : "davidpark0851@gmail.com"
@@ -137,6 +137,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -158,6 +161,9 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
+      # url:
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
       # url:
 
 
@@ -263,6 +269,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -271,6 +278,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # - jekyll-redirect-from
 
 
 # Archives
@@ -310,7 +318,7 @@ compress_html:
     envs: development
 
 
-# Defaults
+# Defaults : default로 TOC등 넣을 수 있음. (전체적용)
 defaults:
   # _posts
   - scope:
