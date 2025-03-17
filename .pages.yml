@@ -251,18 +251,5 @@ content:
       - name: body
         label: CSS Code
         type: text
-
-  - name: configuration
-    label: Konfiguration
-    type: file
-    path: _config.yml
-    fields:
-      - name: body
-        label: Inhalt
-        type: text
- 
-      
-      
-        
       
             
