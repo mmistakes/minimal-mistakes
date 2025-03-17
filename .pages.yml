@@ -309,6 +309,15 @@ content:
       - name: masthead-title
         label: "Titel in der Navigation Bar (wenn leer: Titel)"
         type: string
+
+  - name: favicon
+    label: Favicon
+    type: file
+    path: _includes/head/custom.html
+    fields:
+      - name: body
+        label: Inhalt
+        type: text
         
         
         
