@@ -4,7 +4,7 @@ classes: " "
 title: Willkommen
 header:
   overlay_color: "#ff0000"
-  overlay_filter: "0.5"
+  overlay_filter: "1"
   overlay_image: /assets/images/house/IMG_20220831_123125.jpg
 excerpt: Wir sind ein Unabhängiger Jugendtreff.
 sidebar:
