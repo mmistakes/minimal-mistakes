@@ -44,6 +44,10 @@ flowchart TD
     Backend -->|TTS 변환 요청| TTS_API[🎤 TTS 변환 API]
 ```
 
+<img src="/assets/images/NewsApp_FlowChart.png" alt="flowChart" width="70%">
+
+<!-- ![flowChart](/assets/images/NewsApp_FlowChart.png) -->
+
 ---
 
 ## 🔹 3. 기술 스택 선정 (Tech Stack Selection)
@@ -74,10 +78,10 @@ TBD
 
 ## 🔹 5. 데이터 흐름 (Data Flow)
 
-1️⃣ 사용자가 앱을 실행하면 최신 뉴스 데이터를 불러옴
-2️⃣ 뉴스 데이터는 네이버 뉴스 API 또는 RSS에서 가져옴
-3️⃣ AI 요약 API를 호출해 뉴스 내용을 요약
-4️⃣ TTS API를 호출하여 뉴스 내용을 음성으로 변환
+1️⃣ 사용자가 앱을 실행하면 최신 뉴스 데이터를 불러옴 <br>
+2️⃣ 뉴스 데이터는 네이버 뉴스 API 또는 RSS에서 가져옴 <br>
+3️⃣ AI 요약 API를 호출해 뉴스 내용을 요약 <br>
+4️⃣ TTS API를 호출하여 뉴스 내용을 음성으로 변환 <br>
 5️⃣ 사용자가 뉴스 저장 또는 공유 가능
 
 ```mermaid
@@ -85,21 +89,44 @@ sequenceDiagram
     participant User as 사용자
     participant Frontend as React Native
     participant Backend as Spring Boot API
+    participant DB as MySQL (뉴스 DB)
     participant NewsAPI as 뉴스 API
     participant AI as OpenAI (GPT 요약)
     participant TTS as TTS API (Google/Amazon)
 
+    %% 1. 기본 기사 조회 흐름
     User ->> Frontend: 뉴스 요청
     Frontend ->> Backend: 뉴스 데이터 요청
-    Backend ->> NewsAPI: 뉴스 기사 요청
-    NewsAPI ->> Backend: 기사 데이터 반환
-    Backend ->> AI: AI 요약 요청
-    AI ->> Backend: 요약된 뉴스 반환
-    Backend ->> TTS: 텍스트 음성 변환 요청
-    TTS ->> Backend: 음성 파일 반환
-    Backend ->> Frontend: 요약 뉴스 + 오디오 URL 반환
-    Frontend ->> User: 뉴스 & 오디오 재생
+    Backend ->> DB: DB에서 뉴스 조회
+    alt 뉴스가 DB에 없음
+        Backend ->> NewsAPI: 뉴스 기사 요청
+        NewsAPI ->> Backend: 기사 데이터 반환
+        Backend ->> AI: AI 요약 요청
+        AI ->> Backend: 요약된 뉴스 반환
+        Backend ->> DB: 뉴스 + 요약 데이터 저장
+    end
+    Backend ->> Frontend: 요약 뉴스 & 전체 기사 URL 반환
+    Frontend ->> User: 요약 뉴스 목록 표시
+
+    %% 2. 사용자가 오디오 변환 요청하는 흐름
+    User ->> Frontend: 특정 뉴스 오디오 변환 요청 (체크한 기사)
+    Frontend ->> Backend: 선택한 기사 TTS 요청
+    Backend ->> DB: DB에서 해당 기사 오디오 존재 여부 확인
+    alt 오디오가 DB에 없음
+        Backend ->> AI: AI 요약 요청 (오디오용 요약)
+        AI ->> Backend: 오디오용 요약 뉴스 반환
+        Backend ->> TTS: 텍스트 음성 변환 요청
+        TTS ->> Backend: 음성 파일 반환
+        Backend ->> DB: 변환된 오디오 저장
+    end
+    Backend ->> Frontend: 오디오 URL 반환
+    Frontend ->> User: 선택된 뉴스 오디오 재생
+
 ```
+
+<img src="/assets/images/NewsApp_SequenceDiagram.png" alt="sequenceDiagram" width="80%">
+
+<!-- ![sequenceDiagram](/assets/images/NewsApp_SequenceDiagram.png) -->
 
 ---
 
