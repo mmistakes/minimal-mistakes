@@ -4,7 +4,7 @@ classes: " "
 title: Willkommen
 header:
   overlay_color: "#ff0000"
-  overlay_image: /assets/images/stage/image-15.jpg
+  overlay_image: /assets/images/house/1434912560-990_0900_951509_aib_bergwerk_el-2oea.jpg
 excerpt: Wir sind ein Unabhängiger Jugendtreff.
 sidebar:
   - image: /assets/images/jims_bergwerk_qr.png
