@@ -61,7 +61,7 @@ content:
           - name: overlay_filter
             label: Overlay Farbe im rgba format, z.B. rgba(23, 225, 176, 0.5)
             type: string
-            description: format: rgba(red, green, blue, alpha), farben zwischen 0 und 255, alpha zwischen 0 (= nur Bild) und 1 (= nur Overlay Farbe)
+            description: "format: rgba(red, green, blue, alpha), farben zwischen 0 und 255, alpha zwischen 0 (= nur Bild) und 1 (= nur Overlay Farbe)"
           - name: overlay_image
             label: schön großes, breites Bild
             type: image
