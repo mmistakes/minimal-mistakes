@@ -268,13 +268,15 @@ content:
             fields:
               - name: label
                 label: Label
-                type: String
+                type: string
+                required: true
               - name: icon
                 label: Icon aus https://fontawesome.com/v6/search
                 type: string
-              - name: link
-                label: Link
+              - name: url
+                label: URL
                 type: string
+                required: true
             
       
             
