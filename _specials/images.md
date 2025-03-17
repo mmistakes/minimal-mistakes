@@ -5,7 +5,7 @@ feature_row:
   - image_path: /assets/images/house/1434912560-990_0900_951509_aib_bergwerk_el-2oea.jpg
     title: Bergwerk
     excerpt: Der Raum, den die Jugend braucht
-    url: images/house
+    url: /images/house
     btn_class: btn--primary
     btn_label: Ansehen
   - image_path: /assets/images/stage/image-15.jpg
