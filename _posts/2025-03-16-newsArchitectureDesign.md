@@ -34,15 +34,15 @@ MVP 개발을 위해 필요한 **기획, 기술 검토, API 조사**를 포함�
 
 ### 📌 **아키텍처 다이어그램**
 
-```mermaid
-flowchart TD
-    User[📱 사용자] -->|요청| Frontend[🌐 React Native]
-    Frontend -->|API 요청| Backend[🖥️ Spring Boot API]
-    Backend -->|데이터 요청| Database[(🗄️ MySQL)]
-    Backend -->|뉴스 데이터 요청| NewsAPI[📰 뉴스 API / RSS]
-    Backend -->|AI 요약 요청| OpenAI[🤖 AI 요약 API]
-    Backend -->|TTS 변환 요청| TTS_API[🎤 TTS 변환 API]
-```
+<!-- ```mermaid -->
+<!-- flowchart TD
+    User[📱 사용자] ->|요청| Frontend[🌐 React Native]
+    Frontend ->|API 요청| Backend[🖥️ Spring Boot API]
+    Backend ->|데이터 요청| Database[(🗄️ MySQL)]
+    Backend ->|뉴스 데이터 요청| NewsAPI[📰 뉴스 API / RSS]
+    Backend ->|AI 요약 요청| OpenAI[🤖 AI 요약 API]
+    Backend ->|TTS 변환 요청| TTS_API[🎤 TTS 변환 API] -->
+<!-- ``` -->
 
 <img src="/assets/images/NewsApp_FlowChart.png" alt="flowChart" width="70%">
 
@@ -84,8 +84,8 @@ TBD
 4️⃣ TTS API를 호출하여 뉴스 내용을 음성으로 변환 <br>
 5️⃣ 사용자가 뉴스 저장 또는 공유 가능
 
-```mermaid
-sequenceDiagram
+<!-- ```mermaid -->
+<!-- sequenceDiagram
     participant User as 사용자
     participant Frontend as React Native
     participant Backend as Spring Boot API
@@ -120,9 +120,9 @@ sequenceDiagram
         Backend ->> DB: 변환된 오디오 저장
     end
     Backend ->> Frontend: 오디오 URL 반환
-    Frontend ->> User: 선택된 뉴스 오디오 재생
+    Frontend ->> User: 선택된 뉴스 오디오 재생 -->
 
-```
+<!-- ``` -->
 
 <img src="/assets/images/NewsApp_SequenceDiagram.png" alt="sequenceDiagram" width="80%">
 
