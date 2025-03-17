@@ -255,9 +255,9 @@ content:
   - name: configuration
     label: Konfiguration
     type: file
-    path: _config.yml
+    path: _sass/minimal-mistakes/skins/_neon.scss
     fields:
-      - name: content
+      - name: body
         label: Inhalt
         type: text
  
