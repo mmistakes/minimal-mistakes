@@ -253,7 +253,7 @@ content:
         type: text
 
   - name: configuration
-    label: Styles
+    label: Konfiguration
     type: file
     path: config.yaml
     fields:
