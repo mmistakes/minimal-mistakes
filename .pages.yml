@@ -54,12 +54,8 @@ content:
         label: Header (nur bei Layout splash sinvoll)
         type: object
         fields:
-          - name: overlay_color
-            label: Overlay Color (färbt das Bild)
-            type: string
-            description: hex Wert mit hashtag, google color picker
           - name: overlay_filter
-            label: Overlay Farbe im rgba format, z.B. rgba(23, 225, 176, 0.5)
+            label: Overlay Farbe im rgba format (google color picker)
             type: string
             description: "format: rgba(red, green, blue, alpha), farben zwischen 0 und 255, alpha zwischen 0 (= nur Bild) und 1 (= nur Overlay Farbe)"
           - name: overlay_image
@@ -132,10 +128,10 @@ content:
         label: Header (nur bei Layout splash sinvoll)
         type: object
         fields:
-          - name: overlay_color
-            label: Overlay Color (färbt das Bild)
+          - name: overlay_filter
+            label: Overlay Farbe im rgba format (google color picker) 
             type: string
-            description: hex Wert mit hashtag, google "color picker"
+            description: "format: rgba(red, green, blue, alpha), farben zwischen 0 und 255, alpha zwischen 0 (= nur Bild) und 1 (= nur Overlay Farbe)"
           - name: overlay_image
             label: schön großes, breites Bild
             type: image
