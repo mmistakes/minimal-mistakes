@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-def compress_image(input_path, quality=85):
+def compress_image(input_path, quality=70):
     try:
         with Image.open(input_path) as image:
             # Handle transparency and convert to RGB
@@ -14,11 +14,12 @@ def compress_image(input_path, quality=85):
 
             # Resize if necessary
             max_width = 2000
+            max_height = 1200
             width, height = image.size
             
-            if width > max_width:
+            if width > max_width or height > max_height:
                 # Calculate scaling ratio while maintaining aspect ratio
-                ratio = max_width / width
+                ratio = min(max_width / width, max_height / height)
                 new_size = (int(width * ratio), int(height * ratio))
                 # Use high-quality downsampling filter
                 image = image.resize(new_size, resample=Image.LANCZOS)
