@@ -3,6 +3,8 @@ name: stage
 layout: splash
 permalink: /images/stage/
 gallery:
+  - image_path: /assets/images/stage/1662201034997.jpg
+  - image_path: /assets/images/stage/1662201035010.jpg
   - image_path: /assets/images/stage/image-1.jpg
   - image_path: /assets/images/stage/image-10.jpg
   - image_path: /assets/images/stage/image-11.jpg
@@ -23,4 +25,5 @@ gallery:
   - image_path: /assets/images/stage/image-8.jpg
   - image_path: /assets/images/stage/image-9.jpg
 ---
+
 {% include gallery %}
