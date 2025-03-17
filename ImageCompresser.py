@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-def compress_image(input_path, quality=70):
+def compress_image(input_path, quality=85):
     try:
         with Image.open(input_path) as image:
             # Handle transparency and convert to RGB
