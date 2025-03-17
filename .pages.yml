@@ -251,6 +251,15 @@ content:
       - name: body
         label: CSS Code
         type: text
+
+  - name: configuration
+    label: Styles
+    type: file
+    path: config.yaml
+    fields:
+      - name: body
+        label: CSS Code
+        type: text
  
       
       
