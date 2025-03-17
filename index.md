@@ -3,7 +3,7 @@ layout: splash
 classes: " "
 title: Willkommen
 header:
-  overlay_color: rgba(255, 0, 0, 1)
+  overlay_filter: rgba(255, 0, 0, 1)
   overlay_image: /assets/images/house/IMG_20220831_123125.jpg
 excerpt: Wir sind ein Unabhängiger Jugendtreff.
 sidebar:
