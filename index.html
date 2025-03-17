@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sam Newman - Machine Learning Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
         // Smooth scroll
@@ -17,6 +20,7 @@
         });
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('mainNav');
+            const navName = document.querySelector('.nav-name');
             const hero = document.querySelector('.hero');
             const heroHeight = hero.getBoundingClientRect().height;
 
@@ -42,15 +46,17 @@
                 observer.observe(item);
             });
         });
-      </script>
+    </script>
 </head>
 <body>
     <nav id="mainNav">
         <div class="container">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#oss">Open Source</a>
+            </div>
             <div class="nav-name"><h1>Sam Newman</h1></div>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#oss">Open Source</a>
         </div>
     </nav>
 
@@ -67,7 +73,7 @@
             <div class="profile-img-container">
                 <picture>
                     <img src="assets/images/headshot.JPEG"
-                         alt="Your Name - Machine Learning Engineer"
+                         alt="Sam Newman - Machine Learning Engineer"
                          class="profile-img"
                          width="400"
                          height="400"
@@ -77,10 +83,10 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
-                  I'm finishing my Master’s in Computational Linguistics at Brandeis and and my internship at Babel Street.
-Throughout my time at Babel Street, I've progressively taken on more responsibilities, from owning data projects to building production evaluation rigs. In my academic studies, I regularly break down complex concepts and ask questions that facilitate
-deeper understanding among my peers. My research and work during my master’s has been focused on content understanding, information extraction,
-and meaning representations.
+                  I'm finishing my Master's in Computational Linguistics at Brandeis and my internship at Babel Street.
+                  Throughout my time at Babel Street, I've progressively taken on more responsibilities, from owning data projects to building production evaluation rigs. In my academic studies, I regularly break down complex concepts and ask questions that facilitate
+                  deeper understanding among my peers. My research and work during my master's has been focused on content understanding, information extraction,
+                  and meaning representations.
                 </p>
             </div>
         </div>
@@ -123,7 +129,7 @@ and meaning representations.
           <ul>
             <li>Designing and implementing evaluation rig for LLM-based risk extraction
               <ul>
-              <li>Deploying evaluation rig evalutating accuracy, robustness, cost, and speed</li>
+              <li>Deploying evaluation rig evaluating accuracy, robustness, cost, and speed</li>
               </ul>
             </li>
             <li>Improved Arabic name matcher using error analysis and introduction of lexicon-based transcription</li>
@@ -131,7 +137,7 @@ and meaning representations.
             resolution</li>
           </ul>
       </div>
-  </section>
+    </section>
 
     <section id="oss" class="container">
         <h2>Open Source Contributions</h2>
@@ -150,10 +156,9 @@ and meaning representations.
                     <li><a href="https://github.com/clamsproject/app-clipsearch">CLIP Search</a></li>
                   </ul>
                 </li>
-                <li>Created Docker containers for deployment of CLAMS apps on GBH’s Kubernetes platform</li>
+                <li>Created Docker containers for deployment of CLAMS apps on GBH's Kubernetes platform</li>
                 <li>Devised credits annotation project and created specialized annotation environment</li>
             </ul>
-
         </div>
     </section>
 </body>
