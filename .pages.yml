@@ -252,13 +252,29 @@ content:
         label: CSS Code
         type: text
 
-  - name: config
-    label: Konfiguration
+  - name: footer
+    label: Footer
     type: file
     path: _config.yml
     fields:
-      - name: body
-        label: Inhalt
-        type: text
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: links
+            label: Links
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: Label
+                type: String
+              - name: icon
+                label: Icon aus https://fontawesome.com/v6/search
+                type: string
+              - name: link
+                label: Link
+                type: string
+            
       
             
