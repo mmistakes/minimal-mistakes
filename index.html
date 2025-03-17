@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Newman - Machine Learning Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            const hero = document.querySelector('.hero');
+            const heroHeight = hero.getBoundingClientRect().height;
+
+            if (window.scrollY > heroHeight) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const listItems = entry.target.querySelectorAll('li');
+                        listItems.forEach((item, index) => {
+                            item.style.animationDelay = `${index * 0.1}s`;
+                        });
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.experience-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+      </script>
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="container">
+            <div class="nav-name"><h1>Sam Newman</h1></div>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#oss">Open Source</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Sam Newman</h1>
+            <p>Machine Learning Engineer</p>
+            <p>NLP Research Scientist</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-content">
+            <div class="profile-img-container">
+                <picture>
+                    <img src="assets/images/headshot.JPEG"
+                         alt="Your Name - Machine Learning Engineer"
+                         class="profile-img"
+                         width="400"
+                         height="400"
+                         loading="eager">
+                </picture>
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                  I'm finishing my Master’s in Computational Linguistics at Brandeis and and my internship at Babel Street.
+Throughout my time at Babel Street, I've progressively taken on more responsibilities, from owning data projects to building production evaluation rigs. In my academic studies, I regularly break down complex concepts and ask questions that facilitate
+deeper understanding among my peers. My research and work during my master’s has been focused on content understanding, information extraction,
+and meaning representations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="container">
+        <div class="tech-grid">
+            <div class="tech-item">
+              <img src="assets/icons/python.svg" alt="Python" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/pytorch.svg" alt="PyTorch" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/git.svg" alt="Git" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/huggingface.svg" alt="HuggingFace" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/numpy.svg" alt="Numpy" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/scikitlearn.svg" alt="sklearn" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/flask.svg" alt="Flask" width="50" height="50">
+            </div>
+            <div class="tech-item">
+              <img src="assets/icons/sqlite.svg" alt="sqlite" width="50" height="50">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+          <h3>Machine Learning Intern</h3>
+          <p class="text-muted">Babel Street | May 2024 - May 2025</p>
+          <ul>
+            <li>Designing and implementing evaluation rig for LLM-based risk extraction
+              <ul>
+              <li>Deploying evaluation rig evalutating accuracy, robustness, cost, and speed</li>
+              </ul>
+            </li>
+            <li>Improved Arabic name matcher using error analysis and introduction of lexicon-based transcription</li>
+            <li>Engineered data pipelines for tasks including NER, span classification, entity linking, and coreference
+            resolution</li>
+          </ul>
+      </div>
+  </section>
+
+    <section id="oss" class="container">
+        <h2>Open Source Contributions</h2>
+        <div class="experience-item">
+            <h3><a href="https://github.com/clamsproject">CLAMS Project</a></h3>
+            <ul>
+                <li>
+                  Developed OCR-based algorithms to automatically extract credits metadata for the American Archive of
+                  Public Broadcasting, improving digitization and cataloging efficiency
+                </li>
+                <li>
+                  Designed pipeline to extract structured metadata from credits and lower thirds
+                  <ul>
+                    <li><a href="https://github.com/clamsproject/app-doctr-wrapper">OCR</a></li>
+                    <li><a href="https://github.com/clamsproject/app-fewshotclassifier">Fewshot Scene Classifier</a></li>
+                    <li><a href="https://github.com/clamsproject/app-clipsearch">CLIP Search</a></li>
+                  </ul>
+                </li>
+                <li>Created Docker containers for deployment of CLAMS apps on GBH’s Kubernetes platform</li>
+                <li>Devised credits annotation project and created specialized annotation environment</li>
+            </ul>
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,201 @@
+:root {
+    --base: #303446;
+    --crust: #232634;
+    --overlay: #737994;
+    --overlay1: #838ba7;
+    --laveder:#babbf1;
+    --mauve: #ca9ee6;
+    --sapphire: #85c1dc;
+    --text: #c6d0f5;
+    --subtext: #b5bfe2;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--base)
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+nav {
+    background: var(--crust);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.nav-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: bold;
+    color: var(--text) !important;
+}
+
+nav.scrolled .nav-name {
+    opacity: 1;
+}
+
+nav.scrolled {
+    background: var(--overlay);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+section { padding: 4rem 0; }
+
+.hero {
+    color: var(--text);
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--overlay);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tech-item {
+    text-align: center;
+    padding: 1rem;
+    -webkit-filter: invert(90%);
+    filter: invert(90%);
+}
+
+.experience-item {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+}
+
+#experience .experience-item {
+    border-left: 3px solid var(--laveder);
+}
+
+#oss .experience-item {
+    border-left: 3px solid;
+    border-image: linear-gradient(to bottom, var(--laveder), var(--mauve) 20%) 1;
+}
+
+/* Experience Lists */
+.experience-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    position: relative;
+}
+
+.experience-item li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    transition: all 0.3s ease;
+}
+
+.experience-item li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 8px;
+    height: 8px;
+    background: var(--laveder);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.experience-item li:hover {
+    transform: translateX(5px);
+}
+
+@keyframes listEntry {
+    from {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experience-item li {
+    animation: listEntry 0.6s ease forwards;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .experience-item li {
+        padding-left: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .experience-item li::before {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+.about-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about-content a:link, a:visited {
+    color: var(--sapphire)
+}
+
+.about-content a:hover, a:active {
+    color: var(--mauve)
+}
+
+.profile-img-container {
+    flex: 0 0 250px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--laveder);
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img-container {
+        flex: 0 0 auto;
+        width: 200px;
+    }
+}

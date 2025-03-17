@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.editorconfig
+.DS_Store
+*.idea
