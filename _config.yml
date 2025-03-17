@@ -23,7 +23,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "JiMs Bergwerk"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "JiMs Bergwerk"
+name                     : "JiM's Bergwerk"
 description              : "Schafft Raum für Jugend"
 url                      : "https://lorenzgartmeier.github.io"
 baseurl                  : ""
