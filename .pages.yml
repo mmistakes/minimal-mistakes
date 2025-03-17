@@ -308,7 +308,10 @@ content:
         type: image
       - name: masthead-title
         label: "Titel in der Navigation Bar (wenn leer: Titel)"
-        type: string 
+        type: string
+      - name: copyright
+        label: Copyright
+        type: string
         
         
         
