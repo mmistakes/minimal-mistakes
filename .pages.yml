@@ -257,7 +257,7 @@ content:
     type: file
     path: _config.yml
     fields:
-      - name: body
+      - name: content
         label: Inhalt
         type: text
  
