@@ -68,7 +68,7 @@ plt.show()
 
 
     
-![png](output_7_0.png)
+![png](https://github.com/snagjincha/snagjincha.github.io/blob/master/assets/pictures/output_7_0.png)
     
 
 
@@ -182,9 +182,8 @@ plt.tight_layout()
 
 
     
-![png](output_16_0.png)
+![png](https://github.com/snagjincha/snagjincha.github.io/blob/master/assets/pictures/output_16_0.png)
     
-
 
 
 ```python
