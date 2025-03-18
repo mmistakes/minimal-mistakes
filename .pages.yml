@@ -18,6 +18,32 @@ content:
             label: Link (vermutlich einer Datei aus "Seiten")
             type: string
             required: true
+
+  - name: footer
+    label: Footer
+    type: file
+    path: _data/footer.yml
+    fields:
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - name: links
+            label: Links
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: Label
+                type: string
+                required: true
+              - name: icon
+                label: Icon aus https://fontawesome.com/v6/search
+                type: string
+              - name: url
+                label: URL
+                type: string
+                required: true
                         
   - name: home
     label: Home
@@ -251,32 +277,6 @@ content:
       - name: body
         label: CSS Code
         type: text
-
-  - name: footer
-    label: Footer
-    type: file
-    path: _config.yml
-    fields:
-      - name: footer
-        label: Footer
-        type: object
-        fields:
-          - name: links
-            label: Links
-            type: object
-            list: true
-            fields:
-              - name: label
-                label: Label
-                type: string
-                required: true
-              - name: icon
-                label: Icon aus https://fontawesome.com/v6/search
-                type: string
-              - name: url
-                label: URL
-                type: string
-                required: true
                 
   - name: favicon
     label: Favicon
