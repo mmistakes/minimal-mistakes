@@ -97,6 +97,31 @@ content:
         fields:
           - name: image
             type: image
+      - name: feature_row
+        label: feature row (nur bei Layout splash)
+        description: "WICHTIG: wenn verwendet, dann muss an richtige stelle im Text folgendes: {% include feature_row %}"
+        type: object
+        list: true
+        fields:
+          - name: image_path
+            type: image
+            label: Bild
+          - name: title
+            label: Titel
+            type: string
+          - name: excerpt
+            type: text
+            label: Beschreibung
+          - name: url
+            label: Link
+            type: string
+          - name: btn_class
+            type: string
+            hidden: true
+            default: "btn--inverse"
+          - name: btn_label
+            type: string
+            label: Text auf Button
       - name: permalink
         label: Link
         type: string
@@ -171,6 +196,31 @@ content:
         fields:
           - name: image
             type: image
+      - name: feature_row
+        label: feature row (nur bei Layout splash)
+        description: "WICHTIG: wenn verwendet, dann muss an richtige stelle im Text folgendes: {% include feature_row %}"
+        type: object
+        list: true
+        fields:
+          - name: image_path
+            type: image
+            label: Bild
+          - name: title
+            label: Titel
+            type: string
+          - name: excerpt
+            type: text
+            label: Beschreibung
+          - name: url
+            label: Link
+            type: string
+          - name: btn_class
+            type: string
+            hidden: true
+            default: "btn--inverse"
+          - name: btn_label
+            type: string
+            label: Text auf Button
       - name: body
         label: inhalt
         type: rich-text
