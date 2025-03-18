@@ -65,7 +65,6 @@ include:
   - _posts
   - _specials
   - assets
-  - _footer.yml
 exclude:
 
   - "*.sublime-project"
