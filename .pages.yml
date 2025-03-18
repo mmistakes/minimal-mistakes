@@ -294,12 +294,15 @@ content:
     fields:
       - name: minimal_mistakes_skin
         type: string
+        hidden: true
       - name: locale
         type: string
+        hidden: true
       - name: title
         type: string
       - name: title_separator
         type: string
+        hidden: true
       - name: subtitle
         type: string
       - name: name
@@ -322,6 +325,7 @@ content:
         type: string
       - name: atom_feed
         type: object
+        hidden: true
         fields: 
           - name: path
             type: string
@@ -329,15 +333,19 @@ content:
             type: boolean
       - name: search
         type: boolean
+        hidden: true
       - name: search_full_content
         type: boolean
+        hidden: true
       - name: lunr
         type: object
+        hidden: true
         fields:
           - name: search_within_pages
             type: boolean
       - name: analytics
         type: object
+        hidden: true
         fields:
           - name: provider
             type: string
@@ -350,29 +358,40 @@ content:
                 type: boolean
       - name: include
         type: string
+        hidden: true
         list: true
       - name: exclude
         type: string
+        hidden: true
         list: true
       - name: keep_files
         type: string
+        hidden: true
         list: true
       - name: encoding
         type: string
+        hidden: true
       - name: markdown_ext
         type: string
+        hidden: true
       - name: markdown
         type: string
+        hidden: true
       - name: highlighter
         type: string
+        hidden: true
       - name: lsi
         type: boolean
+        hidden: true
       - name: excerpt_separator
         type: string
+        hidden: true
       - name: incremental
         type: boolean
+        hidden: true
       - name: kramdown
         type: object
+        hidden: true
         fields:
           - name: input
             type: string
@@ -392,6 +411,7 @@ content:
             type: boolean
       - name: sass
         type: object
+        hidden: true
         fields: 
           - name: sass_dir
             type: string
@@ -399,16 +419,21 @@ content:
             type: string
       - name: permalink
         type: string
+        hidden: true
       - name: timezone
         type: string
+        hidden: true
       - name: plugins
         type: string
         list: true
+        hidden: true
       - name: whitelist
         type: string
         list: true
+        hidden: true
       - name: category_archive
         type: object
+        hidden: true
         fields:
           - name: type
             type: string
@@ -416,6 +441,7 @@ content:
             type: string
       - name: tag_archive
         type: object
+        hidden: true
         fields:
           - name: type
             type: string
@@ -423,6 +449,7 @@ content:
             type: string
       - name: compress_html
         type: object
+        hidden: true
         fields: 
           - name: clippings
             type: string
@@ -434,6 +461,7 @@ content:
       - name: defaults
         type: object
         list: true
+        hidden: true
         fields: 
           - name: scope
             type: object
