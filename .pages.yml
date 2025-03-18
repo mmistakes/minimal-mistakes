@@ -292,14 +292,192 @@ content:
     type: file
     path: _config.yml
     fields:
+      - name: minimal-mistakes-skin
+        type: string
+      - name: locale
+        type: string
+      - name: title
+        type: string
+      - name: title_separator
+        type: string
+      - name: subtitle
+        type: string
+      - name: name
+        type: string
       - name: description
         type: string
+      - name: url
+        type: string
+      - name: baseurl
+        type: string
+      - name: repository
+        type: string
+      - name: teaser
+        type: image
+      - name: logo
+        type: image
+      - name: masthead_title
+        type: string
+      - name: copyright
+        type: string
+      - name: atom_feed
+        type: object
+        fields: 
+          - name: path
+            type: string
+          - name: hide
+            type: boolean
+      - name: search
+        type: boolean
+      - name: search_full_content
+        type: boolean
+      - name: lunr
+        type: object
+        fields:
+          - name: search_within_pages
+            type: boolean
+      - name: analytics
+        type: object
+        fields:
+          - name: provider
+            type: string
+          - name: google
+            type: object
+            fields:
+              - name: tracking_id
+                type: string
+              - name: anonymize_ip
+                type: string
       - name: include
         type: string
         list: true
-        hidden: true
-        
+      - name: exclude
+        type: string
+        list: true
+      - name: keep_files
+        type: string
+        list: true
+      - name: encoding
+        type: string
+      - name: markdown_text
+        type: string
+      - name: markdown
+        type: string
+      - name: highlighter
+        type: string
+      - name: lsi
+        type: boolean
+      - name: excerpt_separator
+        type: string
+      - name: incremental
+        type: boolean
+      - name: kramdown
+        type: object
+        fields:
+          - name: input
+            type: string
+          - name: hard_wrap
+            type: boolean
+          - name: auto_ids
+            type: boolean
+          - name: footnote_nr
+            type: number
+          - name: entity_output
+            type: string
+          - name: toc_levels
+            type: string
+          - name: smart_quotes
+            type: string
+          - name: enable_coderay
+            type: boolean
+      - name: sass
+        type: object
+        fields: 
+          - name: sass_dir
+            type: string
+          - name: style
+            type: string
+      - name: permalink
+        type: string
+      - name: timezone
+        type: string
+      - name: plugins
+        type: string
+        list: true
+      - name: whitelist
+        type: string
+        list: true
+      - name: category_archive
+        type: object
+        fields:
+          - name: type
+            type: string
+          - name: path
+            type: string
+      - name: tag_archive
+        type: object
+        fields:
+          - name: type
+            type: string
+          - name: path
+            type: string
+      - name: compress_html
+        type: object
+        fields: 
+          - name: clippings
+            type: string
+          - name: ignore
+            type: object
+            fields: 
+              - name: envs
+                type: string
+      - name: defaults
+        type: object
+        list: true
+        fields: 
+          - name: scope
+            type: object
+            fields:
+              - name: path
+                type: string
+              - name: type
+                type: string
+          - name: values
+            type: object
+            fields:
+              - name: layout
+                type: string
+              - name: author_profile
+                type: boolean
+              - name: read_time
+                type: boolean
+          
+            
         
             
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
