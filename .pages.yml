@@ -359,7 +359,7 @@ content:
         list: true
       - name: encoding
         type: string
-      - name: markdown_text
+      - name: markdown_ext
         type: string
       - name: markdown
         type: string
