@@ -18,32 +18,7 @@ content:
             label: Link (vermutlich einer Datei aus "Seiten")
             type: string
             required: true
-            
-  - name: footer
-    type: file
-    label: Footer
-    path: _data/footer.yml
-    fields:
-      - name: footer
-        label: Footer
-        type: object
-        fields:
-          - name: links
-            type: object
-            label: Links
-            list: true
-            fields:
-              - name: label
-                label: Label
-                type: string
-              - name: icon
-                label: Icon
-                type: string
-              - name: url
-                label: URL
-                type: string
-          
-            
+                        
   - name: home
     label: Home
     type: file
