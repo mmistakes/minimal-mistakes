@@ -137,6 +137,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mk_choi87"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@%EC%8B%AC%EC%B7%A8-h7z"
 
 # Site Footer
 footer:
@@ -159,6 +162,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mk_choi87"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@%EC%8B%AC%EC%B7%A8-h7z"
 
 # Reading Files
 include:
