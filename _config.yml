@@ -113,9 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name: "문규 노트"
+  # name: "문규 노트"
   avatar: "/assets/images/Profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "문규 노트의 샘플 블로그"
+  bio: "기록이 자산!"
   location: # "south korea"
   email:
   links:
