@@ -292,7 +292,7 @@ content:
     type: file
     path: _config.yml
     fields:
-      - name: minimal-mistakes-skin
+      - name: minimal_mistakes_skin
         type: string
       - name: locale
         type: string
