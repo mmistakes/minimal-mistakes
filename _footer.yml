@@ -1,0 +1,14 @@
+footer:
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/jims_bergwerk/"
+    - label: "GitHub"
+      icon: "fa-brands fa-github"
+      url: "https://github.com/LorenzGartmeier/lorenzgartmeier.github.io"
+    - label: "Datenschutz"
+      icon: "fa-solid fa-shield-halved"
+      url: "/privacy/"
+    - label: "Impressum"
+      icon: "fa-solid fa-stamp"
+      url: "/imprint/"

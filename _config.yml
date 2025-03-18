@@ -142,21 +142,6 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-# Site Footer
-footer:
-  links:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/jims_bergwerk/"
-    - label: "GitHub"
-      icon: "fa-brands fa-github"
-      url: "https://github.com/LorenzGartmeier/lorenzgartmeier.github.io"
-    - label: "Datenschutz"
-      icon: "fa-solid fa-shield-halved"
-      url: "/privacy/"
-    - label: "Impressum"
-      icon: "fa-solid fa-stamp"
-      url: "/imprint/"
 
 
 
@@ -168,7 +153,9 @@ include:
   - _posts
   - _specials
   - assets
+  - _footer.yml
 exclude:
+
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
