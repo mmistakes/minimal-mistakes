@@ -347,7 +347,7 @@ content:
               - name: tracking_id
                 type: string
               - name: anonymize_ip
-                type: string
+                type: boolean
       - name: include
         type: string
         list: true
