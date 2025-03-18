@@ -292,6 +292,8 @@ content:
     type: file
     path: _config.yml
     fields:
+      - name: description
+        type: string
       - name: include
         type: string
         list: true
