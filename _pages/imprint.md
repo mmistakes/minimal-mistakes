@@ -12,6 +12,8 @@ Jugendinitiative Mangfalltal e.V.
 Rosenheimerstraße 15A  
 83043 Bad Aibling
 
+eingetragen im Vereinsregister am Amtsgericht Traunstein: VR 40922
+
 Postfachnummer 1137  
 83053 Kolbermoor
 
