@@ -1,11 +1,10 @@
 ---
-# layout: post
+layout: single
 title: "OpenSearch 가이드"
 categories: TechNote
 tags: [OpenSearch, 검색 엔진, 데이터 분석, Elasticsearch]
 toc: true
 author_profile: true
-show_sidebar: true # 🟢 추가 필요
 ---
 
 ## 📌 OpenSearch란?
