@@ -10,3 +10,6 @@ gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin]
 gem 'tzinfo'
 gem 'tzinfo-data'
 gem "jekyll-redirect-from"
+gem 'google-protobuf', '~> 3.21.0'
+gem 'bigdecimal'
+
