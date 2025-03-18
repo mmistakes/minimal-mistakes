@@ -298,7 +298,7 @@ content:
         type: string
         required: true
       - name: baseurl
-        label: base URL (z.B. wenn Website in deinewebsite.de/subfolder) liegt, dann /subfolder
+        label: base URL (z.B. wenn Website in deinewebsite.de/subfolder liegt, dann /subfolder)
         type: string
       - name: repository
         label: remote Repository, format username/repo-name
@@ -309,6 +309,237 @@ content:
       - name: masthead-title
         label: "Titel in der Navigation Bar (wenn leer: Titel)"
         type: string
+      - name: name
+        type: string
+        hidden: true
+      - name: copyright
+        label: copyright
+        type: string
+      - name: atom_feed
+        type: object
+        hidden: true
+        fields:
+          - name: hide
+            type: boolean
+            hidden: true
+      - name: search
+        type: boolean
+        hidden: true
+      - name: search_full_content
+        type: boolean
+        hidden: true
+      - name: lunr
+        type: object
+        hidden: true
+        fields:
+          - name: search_within_pages
+            type: boolean
+            hidden: true
+      - name: analytics
+        type: object
+        hidden: true
+        fields: 
+          - name: provider
+            type: string
+            hidden: true
+          - name: google
+            type: object
+            hidden: true
+            fields:
+              - name: tracking_id
+                type: string
+                hidden: true
+      - name: footer
+        type: object
+        hidden: true
+        fields:
+          - name: links
+            type: object
+            list: true
+            hidden: true
+            fields:
+              - name: label
+                type: string
+                hidden: true
+              - name: icon
+                type: string
+                hidden: true
+              - name: url
+                type: string
+                hidden: true
+      - name: include
+        type: object
+        list: true
+        hidden: true
+      - name: exclude
+        type: object
+        list: true
+        hidden: true
+      - name: keep_files
+        type: object
+        list: true
+        hidden: true
+      - name: encoding
+        type: string
+        hidden: true
+      - name: markdown_ext
+        type: string
+        hidden: true
+      - name: markdown
+        type: string
+        hidden: true
+      - name: highlighter
+        type: string
+        hidden: true
+      - name: encoding
+        type: boolean
+        hidden: true
+      - name: excerpt_separator
+        type: string
+        hidden: true
+      - name: incremental
+        type: false
+        hidden: true
+      - name: kramdown
+        type: object
+        hidden: true
+        fields:
+          - name: input
+            type: string
+            hidden: true
+          - name: hard_wrap
+            type: string
+            hidden: true
+          - name: auto_ids
+            type: string
+            hidden: true
+          - name: footnote_nr
+            type: string
+            hidden: true
+          - name: entity_output
+            type: string
+            hidden: true        
+          - name: toc_levels
+            type: string
+            hidden: true
+          - name: smart_quotes
+            type: string
+            hidden: true
+          - name: enable_coderay
+            type: string
+            hidden: true
+      - name: sass
+        type: object
+        hidden: true
+        fields:
+          - name: sass_dir
+            type: string
+            hidden: true
+          - name: style
+            type: string
+            hidden: true
+      - name: permalink
+        type: string
+        hidden: true
+      - name: timezone
+        type: string
+        hidden: true
+      - name: plugins
+        type: object
+        list: true
+        hidden: true
+      - name: whitelist
+        type: object
+        list: true
+        hidden: true
+      - name: category_archive
+        type: object
+        hidden: true
+        fields:
+          - name: type
+            type: string
+            hidden: true
+          - name: path
+            type: string
+            hidden: true
+      - name: tag_archive
+        type: object
+        hidden: true
+        fields:
+          - name: type
+            type: string
+            hidden: true
+          - name: path
+            type: string
+            hidden: true
+      - name: compress_html
+        type: object
+        hidden: true
+        fields:
+          - name: clippings
+            type: string
+            hidden: true
+          - name: ignore
+            type: object
+            hidden: true
+            fields:
+              - name: envs
+                type: string
+                hidden: true
+      - name: defaults
+        type: object
+        list: true
+        hidden: true
+        fields:
+          - name: scope
+            type: object
+            hidden: true
+            fields:
+              - name: path
+                type: string
+                hidden: true
+              - name: type
+                type: string
+                hidden: true
+          - name: values
+            type: object
+            hidden: true
+            fields: 
+              - name: layout
+                label: Default layout (single /splash)
+                type: string
+              - name: author_profile
+                type: boolean
+                hidden: true
+              - name: read_time
+                type: string
+                hidden: true
+                
+                
+          
+            
+        
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+          
+            
+      
+        
+      
 
   - name: favicon
     label: Favicon
