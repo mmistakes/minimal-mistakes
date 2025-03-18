@@ -1,13 +1,14 @@
 ---
-layout: post
+# layout: post
 title: "OpenSearch 가이드"
 categories: TechNote
 tags: [OpenSearch, 검색 엔진, 데이터 분석, Elasticsearch]
 toc: true
 author_profile: true
+show_sidebar: true # 🟢 추가 필요
 ---
 
-# 📌 OpenSearch란?
+## 📌 OpenSearch란?
 
 💡 **OpenSearch**는 **Elasticsearch 7.10을 기반으로 Amazon에서 개발한 오픈소스 검색 및 분석 엔진**입니다.  
 Elasticsearch와 Kibana가 오픈소스 라이선스 변경을 발표한 이후, AWS에서 이를 **OpenSearch 프로젝트**로 분리하여 운영하고 있습니다.
@@ -30,7 +31,7 @@ Elasticsearch와 Kibana가 오픈소스 라이선스 변경을 발표한 이후,
 
 ---
 
-# 📌 OpenSearch vs. Elasticsearch 차이점
+## 📌 OpenSearch vs. Elasticsearch 차이점
 
 | 기능                | OpenSearch | Elasticsearch       |
 | ------------------- | ---------- | ------------------- |
@@ -44,7 +45,7 @@ Elasticsearch와 Kibana가 오픈소스 라이선스 변경을 발표한 이후,
 
 ---
 
-# 📌 OpenSearch 아키텍처
+## 📌 OpenSearch 아키텍처
 
 OpenSearch는 **분산형 검색 및 데이터 저장 시스템**으로, 아래와 같은 구조를 가집니다.
 
@@ -103,9 +104,9 @@ OpenSearch는 **분산형 검색 및 데이터 저장 시스템**으로, 아래�
 
 ---
 
-# 📌 OpenSearch 서버 생성방법
+## 📌 OpenSearch 서버 생성방법
 
-### 🚀 \*\*옵션 1: Docker로 OpenSearch 실행
+### 🚀 옵션 1: Docker로 OpenSearch 실행
 
 **빠르고 간단한 방법**으로, **Docker를 사용**해서 OpenSearch 서버를 실행할 수 있음
 
@@ -118,7 +119,7 @@ OpenSearch는 **분산형 검색 및 데이터 저장 시스템**으로, 아래�
 
 아래 `docker-compose.yml`을 생성 후 실행하면 됨.
 
-#### 📌 `docker-compose.yml` 파일 생성
+#### `docker-compose.yml` 파일 생성
 
 - docker-compose.yml 파일을 원하는 폴더에 만들고 내용을 추가
 
@@ -181,21 +182,21 @@ curl -X GET "https://your-opensearch-domain.region.es.amazonaws.com"
 
 ---
 
-# 📌 OpenSearch 기본 API 사용법
+## 📌 OpenSearch 기본 API 사용법
 
-## 1️⃣ 클러스터 상태 확인
+### 1️⃣ 클러스터 상태 확인
 
 ```bash
 curl -X GET "http://localhost:9200/\_cluster/health?pretty"
 ```
 
-## 2️⃣ 인덱스 생성
+### 2️⃣ 인덱스 생성
 
 ```bash
 curl -X PUT "http://localhost:9200/my-index?pretty"
 ```
 
-## 3️⃣ 문서 추가
+### 3️⃣ 문서 추가
 
 ```bash
 curl -X POST "http://localhost:9200/my-index/\_doc/1?pretty" -H "Content-Type: application/json" -d'
@@ -205,37 +206,39 @@ curl -X POST "http://localhost:9200/my-index/\_doc/1?pretty" -H "Content-Type: a
 }'
 ```
 
-## 4️⃣ 문서 검색
+### 4️⃣ 문서 검색
 
 ```bash
 curl -X GET "http://localhost:9200/my-index/\_search?q=title:OpenSearch&pretty"
 ```
 
-## 5️⃣ 문서 삭제
+### 5️⃣ 문서 삭제
 
 ```bash
 curl -X DELETE "http://localhost:9200/my-index/\_doc/1?pretty"
 ```
 
-# 📌 OpenSearch Dashboards 사용법
+---
+
+## 📌 OpenSearch Dashboards 사용법
 
 💡 OpenSearch Dashboards는 Kibana와 유사한 UI를 제공하며, 시각화를 지원합니다.
 
-## 1️⃣ 웹 브라우저에서 실행
+### 1️⃣ 웹 브라우저에서 실행
 
 1. http://localhost:5601 접속
 2. opensearch 사용자 로그인 (기본 ID/PW: admin/admin)
 3. 데이터 시각화 대시보드 구성
 
-## 2️⃣ 시각화(Vizualization) 구성
+### 2️⃣ 시각화(Vizualization) 구성
 
 - Discover: 문서 검색
 - Dashboards: 차트 및 그래프 생성
 - Machine Learning: 이상 탐지 모델 사용 가능
 
-# 📌 OpenSearch 고급 기능
+## 📌 OpenSearch 고급 기능
 
-## 1️⃣ SQL 쿼리 지원
+### 1️⃣ SQL 쿼리 지원
 
 💡 OpenSearch는 SQL을 사용하여 데이터를 검색할 수 있습니다.
 
@@ -243,7 +246,7 @@ curl -X DELETE "http://localhost:9200/my-index/\_doc/1?pretty"
 SELECT title, content FROM my-index WHERE title = 'OpenSearch 개요'
 ```
 
-## 2️⃣ 머신 러닝 (ML)
+### 2️⃣ 머신 러닝 (ML)
 
 💡 OpenSearch는 이상 탐지(Anomaly Detection) 기능을 제공합니다.
 
@@ -251,7 +254,7 @@ SELECT title, content FROM my-index WHERE title = 'OpenSearch 개요'
 curl -X POST "http://localhost:9200/\_plugins/\_ml/models/\_search"
 ```
 
-## 3️⃣ OpenSearch Security (보안 설정)
+### 3️⃣ OpenSearch Security (보안 설정)
 
 💡 기본적으로 HTTPS 및 Role-based Access Control(RBAC)을 지원합니다.
 
@@ -259,15 +262,15 @@ curl -X POST "http://localhost:9200/\_plugins/\_ml/models/\_search"
 curl -X POST "http://localhost:9200/\_opendistro/\_security/api/roles"
 ```
 
-# 📌 OpenSearch Java 연동 가이드
+## 📌 OpenSearch Java 연동 가이드
 
 💡 Java에서 OpenSearch에 연결하고 데이터를 추가, 검색하는 방법을 소개합니다.
 
-## 1️⃣ **OpenSearch Java 클라이언트 추가**
+### 1️⃣ **OpenSearch Java 클라이언트 추가**
 
 💡 **Gradle 또는 Maven을 사용하여 OpenSearch Java 클라이언트를 프로젝트에 추가합니다.**
 
-### **Gradle (build.gradle.kts)**
+#### **Gradle (build.gradle.kts)**
 
 ```kotlin
 dependencies {
@@ -275,7 +278,7 @@ dependencies {
 }
 ```
 
-### Maven (pom.xml)
+#### Maven (pom.xml)
 
 ```xml
 <dependency>
@@ -285,7 +288,7 @@ dependencies {
 </dependency>
 ```
 
-## 2️⃣ **OpenSearch 클라이언트 연결**
+### 2️⃣ **OpenSearch 클라이언트 연결**
 
 💡 **Java에서 OpenSearch 서버에 연결하는 방법합니다.**
 
@@ -316,7 +319,7 @@ public class OpenSearchClientExample {
 }
 ```
 
-## 3️⃣ Java에서 OpenSearch에 데이터 추가\*\*
+### 3️⃣ Java에서 OpenSearch에 데이터 추가\*\*
 
 💡 **OpenSearch에 문서를 추가하는 예제**
 
@@ -356,7 +359,7 @@ public class OpenSearchAddDocument {
 }
 ```
 
-# **4️⃣ Java에서 OpenSearch에 데이터 검색**
+### **4️⃣ Java에서 OpenSearch에 데이터 검색**
 
 💡 **OpenSearch에서 데이터를 검색하는 방법**
 
