@@ -124,7 +124,7 @@ author:
       url: "sw0923777@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      : "https://lshwa.github.io/"
+      url : "https://lshwa.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lshwa"
