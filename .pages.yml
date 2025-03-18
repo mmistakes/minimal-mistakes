@@ -286,7 +286,15 @@ content:
       - name: body
         label: Inhalt
         type: text
-        
+
+  - name: config
+    label: Konfiguration
+    type: file
+    path: _config.yml
+    fields:
+      - name: include
+        type: string
+        list: true
         
         
             
