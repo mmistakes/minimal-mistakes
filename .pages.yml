@@ -289,6 +289,7 @@ content:
 
   - name: config
     label: Konfiguration
+    description: siehe dokumentation auf https://mmistakes.github.io/minimal-mistakes/docs/configuration/
     type: file
     path: _config.yml
     fields:
