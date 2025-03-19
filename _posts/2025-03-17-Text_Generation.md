@@ -1,5 +1,5 @@
 ---
-title: [NLP] Text generation
+title: '[NLP] Text generation'
 author: 차상진
 date: '2025-03-17'
 ---
