@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>웹페이지 첫 게시물!</title>
+</head>
+<body>
+    <h1>안녕하세요! 저는 [이원]입니다.</h1>
+    <p>이것은 나의 첫 번째 HTML 웹페이지입니다~~ </p>
+    <img src="profile.jpg" alt="내 사진">
+    <p>저의 전공은 <strong>심리학이고, 임상신경심리대학원 진학 예정</strong>입니다.</p>
+    
+    <h2>내 소개 영상</h2>
+    <video width="640" height="360" controls>
+        <source src="my_video.mp4" type="video/mp4">
+    </video>
+
+    <h2>더 많은 정보</h2>
+    <a href="https://example.com">더 알아보기</a>
+</body>
+</html>
