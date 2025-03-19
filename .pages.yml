@@ -98,7 +98,7 @@ content:
           - name: image
             type: image
       - name: feature_row
-        label: feature row (nur bei Layout splash)
+        label: feature row (nur bei Layout splash), {% include feature_row %} muss in den Text!
         description: "WICHTIG: wenn verwendet, dann muss an richtige stelle im Text folgendes: {% include feature_row %}"
         type: object
         list: true
