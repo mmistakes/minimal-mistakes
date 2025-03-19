@@ -23,9 +23,16 @@ feature_row:
     url: https://jim-archiv.de/
     btn_class: btn--inverse
     btn_label: Ansehen
+  - image_path: /assets/images/nonfifki.png
+    title: Nonfiktionale
+    excerpt: Das Bergwerk beteiligt sich auch dieses Jahr wieder an der
+      Nonfiktionale, diesmal mit dem Motto "ans Licht"
+    url: https://www.nonfiktionale.de/bergwerk
+    btn_class: btn--inverse
+    btn_label: Details
 permalink: /
 ---
-{% include feature_row %}
+{% include feature\_row %}
 
 Das Bergwerk ist ein von ehrenamtlichen Jugendlichen und jungen Erwachsenen verwalteter Jugendtreff in Bad Aibling. Hier werdet ihr keine Jugendbeamten finden, denn Pädagogen gibt es schon genügend in der Schule. Die einzigen Regeln, die hier gelten, setzen wir uns selbst oder das Gesetz (Stichwort Jugendschutz). Das heißt: Das Bergwerk ist der ideale Ort, um kreativ zu werden, Ideen umzusetzen, Aktionen zu starten, sich an Aktionen anderer zu beteiligen, Verantwortung zu übernehmen., Spaß zu haben
 
