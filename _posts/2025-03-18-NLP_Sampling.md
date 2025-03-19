@@ -68,7 +68,7 @@ plt.show()
 
 
     
-![이미지](assets/pictures/NLP_output_7_0.png)
+![이미지](/assets/pictures/NLP_output_7_0.png)
     
 
 
@@ -182,7 +182,7 @@ plt.tight_layout()
 
 
     
-![이미지](assets/pictures/NLP_output_16_0.png))
+![이미지](/assets/pictures/NLP_output_16_0.png))
     
 
 
