@@ -116,10 +116,10 @@ author:
   name             : "김재현"
   avatar           : "/assets/profile.gif"
   bio              : "안녕하세요?"
-  location         : "대한민국"
+  location         : "Republic of Korea"
   email            : jeaha03@gmail.com
   links:
-    - label: "Email"
+    - label: "jeaha03@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
     - label: "Website"
