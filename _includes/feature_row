@@ -32,8 +32,9 @@
           {% endif %}
 
           {% if f.url %}
-            {% comment %} Remove leading slash before using relative_url {% endcomment %}
-            <p><a href="{{ f.url | remove_first: '/' | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            {% comment %} Check if URL is absolute HTTPS {% endcomment %}
+            {% assign protocol = f.url | split: '://' | first %}
+            <p><a href="{% if protocol == 'https' %}{{ f.url }}{% else %}{{ f.url | remove_first: '/' | relative_url }}{% endif %}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
       </div>
