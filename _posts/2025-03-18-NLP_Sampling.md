@@ -40,9 +40,9 @@ input_ids = tokenizer(input_txt, return_tensors="pt")["input_ids"].to(device)
 `-` 온도?
 
 
-```python
-$P(yi​)\=∑j​exp(zj​/T)exp(zi​/T)​$
-```
+$$
+P(yi​)\=∑j​exp(zj​/T)exp(zi​/T)​
+$4
 
 
 ```python
@@ -68,7 +68,7 @@ plt.show()
 
 
     
-![png](https://github.com/snagjincha/snagjincha.github.io/blob/master/assets/pictures/output_7_0.png)
+![이미지](assets/pictures/NLP_output_7_0.png)
     
 
 
@@ -182,7 +182,7 @@ plt.tight_layout()
 
 
     
-![png](https://github.com/snagjincha/snagjincha.github.io/blob/master/assets/pictures/output_16_0.png)
+![이미지](assets/pictures/NLP_output_16_0.png))
     
 
 
