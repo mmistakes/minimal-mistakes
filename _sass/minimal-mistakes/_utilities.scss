@@ -198,32 +198,36 @@ $text-alignments: left, right, start, end, center, justify;
     color: $text-color;
   }
 
-  @each $color, $icons in (
-    $behance-color: ".fa-behance, .fa-behance-square",
-    $bitbucket-color: ".fa-bitbucket",
-    $dribbble-color: ".fa-dribbble, .fa-dribbble-square",
-    $facebook-color: ".fa-facebook, .fa-facebook-square, .fa-facebook-f",
-    $flickr-color: ".fa-flickr",
-    $foursquare-color: ".fa-foursquare",
-    $github-color: ".fa-github, .fa-github-alt, .fa-github-square",
-    $gitlab-color: ".fa-gitlab",
-    $instagram-color: ".fa-instagram",
-    $keybase-color: ".fa-keybase",
-    $lastfm-color: ".fa-lastfm, .fa-lastfm-square",
-    $linkedin-color: ".fa-linkedin, .fa-linkedin-in",
-    $mastodon-color: ".fa-mastodon, .fa-mastodon-square",
-    $pinterest-color: ".fa-pinterest, .fa-pinterest-p, .fa-pinterest-square",
-    $reddit-color: ".fa-reddit",
-    $rss-color: ".fa-rss, .fa-rss-square",
-    $soundcloud-color: ".fa-soundcloud",
-    $stackoverflow-color: ".fa-stack-exchange, .fa-stack-overflow",
-    $tumblr-color: ".fa-tumblr, .fa-tumblr-square",
-    $twitter-color: ".fa-twitter, .fa-twitter-square",
-    $vimeo-color: ".fa-vimeo, .fa-vimeo-square, .fa-vimeo-v",
-    $vine-color: ".fa-vine",
-    $xing-color: ".fa-xing, .fa-xing-square",
-    $youtube-color: ".fa-youtube",
-  ) {
+  @each $color,
+    $icons
+      in (
+        $behance-color: ".fa-behance, .fa-behance-square",
+        $bitbucket-color: ".fa-bitbucket",
+        $dribbble-color: ".fa-dribbble, .fa-dribbble-square",
+        $facebook-color: ".fa-facebook, .fa-facebook-square, .fa-facebook-f",
+        $flickr-color: ".fa-flickr",
+        $foursquare-color: ".fa-foursquare",
+        $github-color: ".fa-github, .fa-github-alt, .fa-github-square",
+        $gitlab-color: ".fa-gitlab",
+        $instagram-color: ".fa-instagram",
+        $keybase-color: ".fa-keybase",
+        $lastfm-color: ".fa-lastfm, .fa-lastfm-square",
+        $linkedin-color: ".fa-linkedin, .fa-linkedin-in",
+        $mastodon-color: ".fa-mastodon, .fa-mastodon-square",
+        $pinterest-color:
+          ".fa-pinterest, .fa-pinterest-p, .fa-pinterest-square",
+        $reddit-color: ".fa-reddit",
+        $rss-color: ".fa-rss, .fa-rss-square",
+        $soundcloud-color: ".fa-soundcloud",
+        $stackoverflow-color: ".fa-stack-exchange, .fa-stack-overflow",
+        $tumblr-color: ".fa-tumblr, .fa-tumblr-square",
+        $twitter-color: ".fa-twitter, .fa-twitter-square",
+        $vimeo-color: ".fa-vimeo, .fa-vimeo-square, .fa-vimeo-v",
+        $vine-color: ".fa-vine",
+        $xing-color: ".fa-xing, .fa-xing-square",
+        $youtube-color: ".fa-youtube"
+      )
+  {
     #{$icons} {
       color: $color;
     }
@@ -292,7 +296,7 @@ $text-alignments: left, right, start, end, center, justify;
 .greedy-nav__toggle {
   &:before {
     @supports (pointer-events: none) {
-      content: '';
+      content: "";
       position: fixed;
       top: 0;
       inset-inline-start: 0;
@@ -533,7 +537,7 @@ pre {
     transition: color 0.25s linear -0.25s, opacity 0.25s linear;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       inset: 0;
       z-index: 2;
@@ -565,4 +569,9 @@ pre {
   &:hover .clipboard-copy-button {
     opacity: 1;
   }
+}
+
+// Custom
+.img-width-half {
+  width: 50%;
 }

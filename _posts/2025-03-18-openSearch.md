@@ -4,6 +4,7 @@ title: "OpenSearch 가이드"
 categories: TechNote
 tags: [OpenSearch, 검색 엔진, 데이터 분석, Elasticsearch]
 toc: true
+toc_sticky: true
 author_profile: true
 ---
 

@@ -1,11 +1,13 @@
 ---
-# layout: post
+layout: single
 title: "AI 오디오 뉴스 앱 아키텍처 설계"
 categories: SideProject
 tags: [AI, TTS, 뉴스 앱, React Native, Spring Boot, Architecture]
-toc: true
+# toc_label: 목차
 author_profile: true
 search: true
+sidebar:
+  nav: "counts"
 ---
 
 # 🏗️ 뉴스 앱 아키텍처 설계 및 기술 조사
@@ -44,9 +46,9 @@ MVP 개발을 위해 필요한 **기획, 기술 검토, API 조사**를 포함�
     Backend ->|TTS 변환 요청| TTS_API[🎤 TTS 변환 API] -->
 <!-- ``` -->
 
-<img src="/assets/images/NewsApp_FlowChart.png" alt="flowChart" width="70%">
+<img src="/assets/images/NewsApp_FlowChart.png" alt="flowChart" width="70%">{: .align-center}
 
-<!-- ![flowChart](/assets/images/NewsApp_FlowChart.png) -->
+<!-- ![flowChart](/assets/images/NewsApp_FlowChart.png){: .img-width-half .align-center} -->
 
 ---
 
@@ -124,7 +126,7 @@ TBD
 
 <!-- ``` -->
 
-<img src="/assets/images/NewsApp_SequenceDiagram.png" alt="sequenceDiagram" width="80%">
+<img src="/assets/images/NewsApp_SequenceDiagram.png" alt="sequenceDiagram" width="80%">{: .align-center}
 
 <!-- ![sequenceDiagram](/assets/images/NewsApp_SequenceDiagram.png) -->
 
