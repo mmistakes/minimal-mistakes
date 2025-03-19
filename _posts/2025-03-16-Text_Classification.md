@@ -1,5 +1,5 @@
 ---
-title: "NLP Text Classification Fine Tuning"
+title: "[NLP] Text Classification Fine Tuning"
 author: "차상진"
 date: "2025-03-16"
 ---
