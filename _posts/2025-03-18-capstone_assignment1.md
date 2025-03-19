@@ -80,7 +80,7 @@ ggplot(prob_dist, aes(x = number, y = probability)) +
 
 
     
-![png](2025_03_18_capstone_assignment1_files/2025_03_18_capstone_assignment1_5_0.png)
+![그래프1](/assets/images/2025_03_18_capstone_assignment1_5_0 (1).png)
     
 
 
@@ -247,7 +247,7 @@ ggplot(df2, aes(x = number_4)) +
 
 
     
-![png](2025_03_18_capstone_assignment1_files/2025_03_18_capstone_assignment1_14_1.png)
+![png](/assets/images/2025_03_18_capstone_assignment1_5_0 (2).png)
     
 
 
