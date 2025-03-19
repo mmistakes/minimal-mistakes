@@ -1,11 +1,11 @@
 ---
 layout: splash
 classes: " "
-title: " - Das Bergwerk -"
+title: Das Bergwerk
 header:
   overlay_filter: rgba(255, 255, 255, 0)
   overlay_image: /assets/images/hero.png
-excerpt: Jugendtreff, selbstverwaltet, Raum für Ideen und Aktionen
+excerpt: Jugendtreffin Bad Aibling, selbstverwaltet
 sidebar:
   - {}
 feature_row:
