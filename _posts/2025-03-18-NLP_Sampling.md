@@ -1,5 +1,5 @@
 ---
-title: NLP Sampling
+title: '[NLP] Sampling'
 author: 차상진
 date: '2025-03-18'
 ---
