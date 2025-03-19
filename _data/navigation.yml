@@ -8,8 +8,8 @@ main:
   - title: "Posts"
     url: /posts/
 
-  - title: "카테고리"
+  - title: "categories"
     url: /categories/
 
-  - title: "태그"
+  - title: "tags"
     url: /tags/
