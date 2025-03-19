@@ -41,7 +41,7 @@ input_ids = tokenizer(input_txt, return_tensors="pt")["input_ids"].to(device)
 
 
 $$
-P(yi​)\=∑j​exp(zj​/T)exp(zi​/T)​
+P(y_i) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
 $$
 
 
