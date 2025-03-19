@@ -5,11 +5,8 @@ main:
   - title: "Portfolio"
     url: /portfolio/
 
-  - title: "프로젝트"
-    url: /categories/프로젝트/
-
-  - title: "경력"
-    url: /categories/경력/
+  - title: "Posts"
+    url: /posts/
 
   - title: "카테고리"
     url: /categories/
