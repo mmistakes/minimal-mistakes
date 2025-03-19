@@ -247,7 +247,7 @@ ggplot(df2, aes(x = number_4)) +
 
 
     
-![png](/assets/images/2025_03_18_capstone_assignment1_5_0 (2).png)
+![그래프2](/assets/images/2025_03_18_capstone_assignment1_5_0 (2).png)
     
 
 
