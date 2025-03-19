@@ -16,8 +16,8 @@ docs:
         url: /computer_architecture/
       # - title: "운영체제"
       #   url: /os/
-      # - title: "자료구조"
-      #   url: /data_structure/
+      - title: "자료구조"
+        url: /data_structure/
       # - title: "네트워크"
       #   url: /network/
       # - title: "데이터베이스"
