@@ -14,5 +14,11 @@ feature_row:
     url: /images/stage/
     btn_class: btn--primary
     btn_label: Ansehen
+  - image_path: /assets/images/aibling_kain.sized.jpg
+    title: Archiv
+    excerpt: von kürzlichen Aktionen bis hin zu alten Zeiten
+    url: https://archiv.jims-bergwerk.de
+    btn_class: btn--primary
+    btn_label: Ansehen
 ---
 {% include feature_row %}
