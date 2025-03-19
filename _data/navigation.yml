@@ -8,8 +8,8 @@ main:
   - title: "Posts"
     url: /posts/
 
-  - title: "categories"
+  - title: "Categories"
     url: /categories/
 
-  - title: "tags"
+  - title: "Tags"
     url: /tags/
