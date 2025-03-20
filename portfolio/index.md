@@ -42,12 +42,12 @@ share: false
 - 기존 ITO 전극의 느린 응답 속도 및 유연기판 부적합 문제 해결<br>
 - Metal Mesh 전극 구조 설계 및 Photolithography 공정 조건 최적화<br>
 - 고해상도 / 고주사율 / 플렉서블 디스플레이 제품 적용 가능성 확보<br><br>
-![image](https://github.com/user-attachments/assets/34b76185-33e5-46f0-942c-340f2ddd1f65)
+<img src="https://github.com/user-attachments/assets/34b76185-33e5-46f0-942c-340f2ddd1f65" alt="설명 텍스트" style="max-width:100%; height:auto;" />
 
 <strong>(2) 거울형 터치 패널 개발</strong><br>
 - Metal Mesh 전극 기반 Mirror Display용 터치 패널 설계 및 공정 개발<br>
 - 고투과율·고반사율을 동시에 확보한 구조 설계<br><br>
-![image](https://github.com/user-attachments/assets/ab6cbb10-c2e8-4983-9289-3c0e2fff72ae)
+<img src="https://github.com/user-attachments/assets/ab6cbb10-c2e8-4983-9289-3c0e2fff72ae" alt="거울형 터치패널 이미지" style="max-width:100%; height:auto;" />
 
 <strong>(3) Stylus Pen + 손 인식 단일 Layer 터치 패널 개발</strong><br>
 - Stylus Pen + 손 인식 가능한 단일 Layer 터치 패널 설계<br>
