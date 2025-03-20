@@ -42,16 +42,27 @@ share: false
 
 ## ≪주요 역량≫
 
-- TensorFlow, PyTorch 기반 AI 모델 구현 및 TorchServe·Docker 배포 환경 구성 역량  
-- ROS2 기반 로봇 제어 및 통신 시스템 설계 (HTTP, TCP, UDP) 역량 
-- Selenium, BeautifulSoup 기반 웹 자동화 및 데이터 수집 역량  
-- Pandas, NumPy, Matplotlib 등 활용 데이터 분석·시각화 역량  
-- PyQt 기반 GUI 설계 및 구현 경험
-- Git/GitHub 기반 버전 관리 및 Jira, Confluence, Slack 협업 역량
-- 터치 패널 설계 및 구조 최적화 역량  
-- Photolithography 공정 조건 최적화 및 응용 기술  
-- AutoCAD, CATIA, SolidWorks, NX 기반 기구 설계 역량  
-- 기구 정적 해석, 유동 해석 경험
+- AI 모델 구현 및 서비스화<br>
+  → TensorFlow, PyTorch 기반 모델 개발 및 TorchServe·Docker로 환경 구성 및 서비스<br><br>
+- 자율주행 로봇 시스템 개발<br>
+  → ROS2 기반 로봇 제어, 통신 (HTTP, TCP, UDP) 시스템 설계 및 구현<br><br>
+- 웹 자동화 및 데이터 수집 기술<br>
+  → Selenium, BeautifulSoup을 활용한 자동 크롤링 시스템 구축<br><br>
+- 데이터베이스 설계 및 운영<br>
+  → Amazon RDS 기반 관계형 DB 설계 및 관리 경험<br><br>
+- 데이터 분석 및 시각화 역량<br>
+  → Pandas, NumPy, Matplotlib을 활용한 데이터 처리 및 시각화 대시보드 제작<br><br>
+- 사용자 인터페이스(UI) 개발<br>
+  → PyQt 기반 데스크탑 프로그램 설계 및 구현<br><br>
+- 협업 및 프로젝트 관리 도구 활용<br>
+  → Git/GitHub 버전관리 및 Jira, Confluence, Slack 통한 협업 경험<br><br>
+- 터치 디스플레이 기술 연구<br>
+  → 터치 패널 설계, 포토리소그래피 공정 최적화, 테스트 및 튜닝<br><br>
+- 기계 설계 및 해석<br>
+  → AutoCAD, CATIA, SolidWorks, NX 기반 설계 및 구조·유동 해석 경험<br><br>
+- 기술 문서 작성 및 정부 과제 보고 경험<br>
+  → 기술 자료, 정부 과제 보고서 작성<br>
+
 
 ---
 
