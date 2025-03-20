@@ -12,19 +12,25 @@ share: false
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
   .image-grid .image-box {
     width: 48%;
+    height: 200px; /* 높이 통일을 위해 수정 */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
     overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
   .image-grid .image-box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* cover 대신 contain으로 이미지 왜곡 방지 */
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 </style>
 
