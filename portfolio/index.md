@@ -141,8 +141,6 @@ share: false
 </div>
 </details>
 
-</details>
-
 ---
 
 <details>
