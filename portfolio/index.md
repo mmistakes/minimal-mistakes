@@ -82,7 +82,6 @@ share: false
 <div class="image-grid">
   <div class="image-box"><img src="https://github.com/user-attachments/assets/f6c14137-960b-4d25-9808-6596c4ad23b1"></div>
   <div class="image-box"><img src="https://github.com/user-attachments/assets/275d2b98-82fa-4c2e-8ed6-496b03551b5f"></div>
-  <div class="image-box"></div>
 </div>
 <br>
 
@@ -107,7 +106,6 @@ share: false
 <div class="image-grid">
   <div class="image-box"><img src="https://github.com/user-attachments/assets/34b76185-33e5-46f0-942c-340f2ddd1f65"></div>
   <div class="image-box"><img src="https://github.com/user-attachments/assets/dd4082d3-6fd3-40ca-ba09-ff6527ff5f9f"></div>
-  <div class="image-box"></div>
 </div>
 <br>
 
