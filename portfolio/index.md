@@ -42,6 +42,28 @@ share: false
 - 기존 ITO 전극의 느린 응답 속도 및 유연기판 부적합 문제 해결<br>
 - Metal Mesh 전극 구조 설계 및 Photolithography 공정 조건 최적화<br>
 - 고해상도 / 고주사율 / 플렉서블 디스플레이 제품 적용 가능성 확보<br><br>
+![image](https://github.com/user-attachments/assets/e56125d7-9042-4306-92e0-72db2b6a0070)
+![image](https://github.com/user-attachments/assets/8db5a55b-8fc4-4c98-9f78-537a87ca65ab)
+![image](https://github.com/user-attachments/assets/b56ba3ac-6b44-48a7-8ffe-84e9f0cae71d)
+![image](https://github.com/user-attachments/assets/01d3dcad-d0d4-4a4c-8047-01ec31abe351)
+![image](https://github.com/user-attachments/assets/30e0f92d-a719-4d87-ac27-a5ff3c6addbb)
+![image](https://github.com/user-attachments/assets/6b681b35-43e0-47d4-837f-1ae2d26415c3)
+![image](https://github.com/user-attachments/assets/940f9320-2872-4caa-9e18-9e678e62ed96)
+![image](https://github.com/user-attachments/assets/4fa87b1d-596f-4fd6-9f7d-cd98e40efe96)
+![image](https://github.com/user-attachments/assets/48e3a6dc-f175-4932-bc23-a782fdfd554b)
+![image](https://github.com/user-attachments/assets/dd4082d3-6fd3-40ca-ba09-ff6527ff5f9f)
+![image](https://github.com/user-attachments/assets/3fd5f139-4bb7-4c7a-a0cc-d23bb1908cb9)
+![image](https://github.com/user-attachments/assets/e5a2b880-6af9-43e9-b9be-cd972bfe2829)
+![image](https://github.com/user-attachments/assets/deb2e8f5-a1c7-4689-9a37-3d3945dc5915)
+![image](https://github.com/user-attachments/assets/60a43e2d-b4ed-4068-ad44-b8aa3f15fcbd)
+![image](https://github.com/user-attachments/assets/cc5aec11-6805-431c-b62d-e324a7202e9d)
+![image](https://github.com/user-attachments/assets/e338f865-4198-41f5-9173-77bd0411c79f)
+![image](https://github.com/user-attachments/assets/275d2b98-82fa-4c2e-8ed6-496b03551b5f)
+![image](https://github.com/user-attachments/assets/d2a36842-37bd-45ab-a67a-6a1ccc3a5cd8)
+![image](https://github.com/user-attachments/assets/7c81d0c2-31fb-470d-a0f7-127ff5dd7e7c)
+![image](https://github.com/user-attachments/assets/25a559b2-7bdf-4bf5-ab7b-12f32255bb35)
+![image](https://github.com/user-attachments/assets/f6c14137-960b-4d25-9808-6596c4ad23b1)
+
 <img src="https://github.com/user-attachments/assets/34b76185-33e5-46f0-942c-340f2ddd1f65" alt="설명 텍스트" style="max-width:100%; height:auto;" />
 
 <strong>(2) 거울형 터치 패널 개발</strong><br>
