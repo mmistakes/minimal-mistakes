@@ -7,6 +7,27 @@ read_time: false
 share: false
 ---
 
+<style>
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .image-grid .image-box {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    overflow: hidden;
+  }
+  .image-grid .image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+</style>
+
 
 ## ≪학력≫
 - 중앙대학교 서울캠퍼스 (전자전기공학부) / 2009.03 ~ 2016.02
@@ -42,23 +63,18 @@ share: false
 - 기존 ITO 전극의 느린 응답 속도 및 유연기판 부적합 문제 해결<br>
 - Metal Mesh 전극 구조 설계 및 Photolithography 공정 조건 최적화<br>
 - 고해상도 / 고주사율 / 플렉서블 디스플레이 제품 적용 가능성 확보<br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/e56125d7-9042-4306-92e0-72db2b6a0070" alt="Metal Mesh1" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/8db5a55b-8fc4-4c98-9f78-537a87ca65ab" alt="Metal Mesh2" style="width:100%; height:auto;">
-  </div>
+<div class="image-grid">
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/e56125d7-9042-4306-92e0-72db2b6a0070"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/8db5a55b-8fc4-4c98-9f78-537a87ca65ab"></div>
 </div>
 <br>
 
 <strong>(2) 거울형 터치 패널 개발</strong><br>
 - Metal Mesh 전극 기반 Mirror Display용 터치 패널 설계 및 공정 개발<br>
 - 고투과율·고반사율을 동시에 확보한 구조 설계<br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/ab6cbb10-c2e8-4983-9289-3c0e2fff72ae" alt="거울형 터치패널" style="width:100%; height:auto;">
-  </div>
+<div class="image-grid">
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/ab6cbb10-c2e8-4983-9289-3c0e2fff72ae"></div>
+  <div class="image-box"></div>
 </div>
 <br>
 
@@ -66,26 +82,20 @@ share: false
 - Stylus Pen + 손 인식 가능한 단일 Layer 터치 패널 설계<br>
 - Layer 축소로 공정 간소화 및 생산성 향상<br>
 - 정부 과제 목표 성과 달성<br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/e338f865-4198-41f5-9173-77bd0411c79f" alt="Stylus 1" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/f6c14137-960b-4d25-9808-6596c4ad23b1" alt="Stylus 2" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/275d2b98-82fa-4c2e-8ed6-496b03551b5f" alt="Stylus 3" style="width:100%; height:auto;">
-  </div>
+<div class="image-grid">
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/e338f865-4198-41f5-9173-77bd0411c79f"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/f6c14137-960b-4d25-9808-6596c4ad23b1"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/275d2b98-82fa-4c2e-8ed6-496b03551b5f"></div>
+  <div class="image-box"></div>
 </div>
 <br>
 
 <strong>(4) 햅틱 디바이스 연구</strong><br>
 - 전극 패턴 / 입력 파형 / 주파수 변화에 따른 감각 반응 실험 설계<br>
 - 자극 조건에 따라 사용자별 인지 감도 및 반응 다양성 확인<br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/b56ba3ac-6b44-48a7-8ffe-84e9f0cae71d" alt="햅틱" style="width:100%; height:auto;">
-  </div>
+<div class="image-grid">
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/b56ba3ac-6b44-48a7-8ffe-84e9f0cae71d"></div>
+  <div class="image-box"></div>
 </div>
 <br>
 
@@ -93,16 +103,15 @@ share: false
 - Reverse Engineering<br>
 - 디바이스 구조 / 소재 분석, 외부 의뢰 샘플 분석<br>
 - 시험 결과 보고서 및 정부 과제 보고서 작성<br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/deb2e8f5-a1c7-4689-9a37-3d3945dc5915" alt="RE 1" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/60a43e2d-b4ed-4068-ad44-b8aa3f15fcbd" alt="RE 2" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/cc5aec11-6805-431c-b62d-e324a7202e9d" alt="RE 3" style="width:100%; height:auto;">
-  </div>
+<div class="image-grid">
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/deb2e8f5-a1c7-4689-9a37-3d3945dc5915"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/60a43e2d-b4ed-4068-ad44-b8aa3f15fcbd"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/cc5aec11-6805-431c-b62d-e324a7202e9d"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/34b76185-33e5-46f0-942c-340f2ddd1f65"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/dd4082d3-6fd3-40ca-ba09-ff6527ff5f9f"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/3fd5f139-4bb7-4c7a-a0cc-d23bb1908cb9"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/e5a2b880-6af9-43e9-b9be-cd972bfe2829"></div>
+  <div class="image-box"></div>
 </div>
 <br>
 
@@ -124,17 +133,13 @@ share: false
   </tbody>
 </table>
 
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/940f9320-2872-4caa-9e18-9e678e62ed96" alt="SEM" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/4fa87b1d-596f-4fd6-9f7d-cd98e40efe96" alt="AFM" style="width:100%; height:auto;">
-  </div>
-  <div style="flex: 1; min-width: 45%;">
-    <img src="https://github.com/user-attachments/assets/48e3a6dc-f175-4932-bc23-a782fdfd554b" alt="LFA" style="width:100%; height:auto;">
-  </div>
+<div class="image-grid">
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/940f9320-2872-4caa-9e18-9e678e62ed96"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/4fa87b1d-596f-4fd6-9f7d-cd98e40efe96"></div>
+  <div class="image-box"><img src="https://github.com/user-attachments/assets/48e3a6dc-f175-4932-bc23-a782fdfd554b"></div>
+  <div class="image-box"></div>
 </div>
+</details>
 
 </details>
 
