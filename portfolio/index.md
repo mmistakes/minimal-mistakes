@@ -130,7 +130,6 @@ share: false
 <div class="image-grid">
   <div class="image-box"><img src="https://github.com/user-attachments/assets/4fa87b1d-596f-4fd6-9f7d-cd98e40efe96"></div>
   <div class="image-box"><img src="https://github.com/user-attachments/assets/48e3a6dc-f175-4932-bc23-a782fdfd554b"></div>
-  <div class="image-box"></div>
 </div>
 </details>
 
