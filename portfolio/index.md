@@ -18,7 +18,7 @@ share: false
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 150px;
     overflow: hidden;
   }
   .image-grid .image-box img {
