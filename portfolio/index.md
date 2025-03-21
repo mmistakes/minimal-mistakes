@@ -42,7 +42,7 @@ share: false
 
 ## ≪주요 역량≫
 
-- **AI 모델 개발 및 서비스화**
+- **AI 모델 개발 및 서빙**
   - TensorFlow, PyTorch, TorchServe, Docker  
 - **로봇 제어 및 통신 시스템 개발**
   - ROS2, HTTP, TCP, UDP  
