@@ -175,27 +175,27 @@ share: false
 
 ## ≪프로젝트≫
 
-- [ROS 기반 재난 구조 로봇 시스템](https://github.com/addinedu-ros-7th/ros-repo-4)  
+- [**ROS 기반 재난 구조 로봇 시스템**](https://github.com/addinedu-ros-7th/ros-repo-4)  
   - **개요:** 화재 및 재난 현장에서 장애물 및 위험도 분석, 실시간 구조 지도 생성, 구조 대상 탐지 및 대피 유도를 수행하는 자율주행 로봇 시스템 개발  
   - **역할:**  
     - 딥러닝 기반 구조 대상과 객체 탐지 및 거리 추정, 구조자 자세 추정, 성별 및 나이 추정, 화재 탐지, 로봇 위치 보정 모델 개발
     - 모델 배포 및 운영 환경 구축
     - AI 기능 통합 관리 시스템 개발
 
-- [AI 기반 헬스케어 시스템](https://github.com/addinedu-ros-7th/deeplearning-repo-5)  
+- [**AI 기반 헬스케어 시스템**](https://github.com/addinedu-ros-7th/deeplearning-repo-5)  
   - **개요:** 운동, 식단, 위험 상황 관리를 통합하여 개인의 건강을 AI로 관리하는 서비스 개발  
   - **역할:**  
     - 딥러닝 기반 운동 동작 인식 모델 개발 및 실시간 자세 피드백 기능 개발  
     - 사용자 맞춤 식단 및 운동 추천 알고리즘 구현  
     - 딥러닝 기반 체성분 예측 기능 개발
 
-- [IoT 스마트 펫시터 시스템](https://github.com/addinedu-ros-7th/iot-repo-1)  
+- [**IoT 스마트 펫시터 시스템**](https://github.com/addinedu-ros-7th/iot-repo-1)  
   - **개요:** IoT 기술을 활용하여 반려동물의 건강과 생활을 관리할 수 있는 스마트 펫 관리 시스템 개발  
   - **역할:**  
     - 자동 급식기 기구 설계 및 프로토타입 제작  
     - 반려동물 상태 체크를 위한 목걸이 개발
       
-- [AI 기업 분석 및 시각화 프로젝트](https://github.com/addinedu-ros-7th/eda-repo-4)  
+- [**AI 기업 분석 및 시각화 프로젝트**](https://github.com/addinedu-ros-7th/eda-repo-4)  
   - **개요:** 구직자들에게 AI 관련 기업과 채용에 관련된 데이터 및 정보 제공 서비스 개발  
   - **역할:**  
     - 기업 정보 수집 및 EDA 분석  
