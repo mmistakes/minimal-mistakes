@@ -194,7 +194,7 @@ share: false
 </div>
 </details>
 
----
+<br>
 
 <details>
 <summary><strong>가원에이앤디</strong> (2017.02 ~ 2017.12 / 2020.11 ~ 2023.02 / 부동산 개발·시행)</summary>
@@ -211,3 +211,5 @@ share: false
 - 각종 인허가 진행 업무 (지자체 협의, 서류 제출 등)<br>
 
 </details>
+
+---
