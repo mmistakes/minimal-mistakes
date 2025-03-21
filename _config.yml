@@ -115,9 +115,10 @@ analytics:
 author:
   name             : "김재현"
   avatar           : "/assets/profile.gif"
-  bio              : "안녕하세요?"
-  location         : "Republic of Korea"
-  email            : "jeaha03@gmail.com"
+  bio       : |
+    Email: [jeaha03@gmail.com](mailto:jeaha03@gmail.com)  
+    GitHub: [myneighborh](https://github.com/myneighborh)  location         : "Republic of Korea"
+  # email            : "jeaha03@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
