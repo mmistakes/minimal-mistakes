@@ -42,16 +42,26 @@ share: false
 
 ## ≪주요 역량≫
 
-- **AI 모델 개발 및 서비스화**: TensorFlow, PyTorch, TorchServe, Docker  
-- **로봇 제어 및 통신 시스템 개발**: ROS2, HTTP, TCP, UDP  
-- **웹 자동화 및 데이터 수집**: Selenium, BeautifulSoup  
-- **데이터베이스 설계 및 운영**: Amazon RDS, MySQL  
-- **데이터 분석 및 시각화**: Pandas, NumPy, Matplotlib  
-- **GUI 애플리케이션 개발**: PyQt  
-- **버전 관리 및 협업 도구 활용**: Git, GitHub, Jira, Confluence  
-- **터치 디스플레이 기술 연구**: 설계, 공정 최적화, 테스트  
-- **기계 설계 및 해석**: AutoCAD, SolidWorks, CATIA, NX  
-- **기술 문서 작성 및 보고 역량**: 과제 보고서, 기술 분석 자료
+- **AI 모델 개발 및 서비스화**
+  - TensorFlow, PyTorch, TorchServe, Docker  
+- **로봇 제어 및 통신 시스템 개발**
+  - ROS2, HTTP, TCP, UDP  
+- **웹 자동화 및 데이터 수집**
+  - Selenium, BeautifulSoup  
+- **데이터베이스 설계 및 운영**
+  - Amazon RDS, MySQL  
+- **데이터 분석 및 시각화**
+  - Pandas, NumPy, Matplotlib  
+- **GUI 애플리케이션 개발**
+  - PyQt  
+- **버전 관리 및 협업 도구 활용**
+  - Git, GitHub, Jira, Confluence  
+- **터치 디스플레이 기술 연구**
+  - 설계, 공정 최적화, 테스트  
+- **기계 설계 및 해석**
+  - AutoCAD, SolidWorks, CATIA, NX  
+- **기술 문서 작성 및 보고 역량**
+  - 과제 보고서, 기술 분석 자료
 
 ---
 
