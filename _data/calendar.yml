@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Lesepatentreffen",
-    "title": "Lesepatentreffen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=aGE2YzZrZHA4OGE3M3U2aDhrZnVwNnV0dTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-20T14:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-20T16:00:00+01:00"
-    },
-    "created": "2025-03-05T05:33:43.000Z",
-    "updated": "2025-03-05T05:33:44.131Z"
-  },
-  {
-    "image_path": null,
     "alt": "A3 - Ausflug zum Planetarium",
     "title": "A3 - Ausflug zum Planetarium",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-01-14T09:24:43.000Z",
     "updated": "2025-03-06T18:55:31.467Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A2 - Ausflug zum Jonas Haus ",
+    "title": "A2 - Ausflug zum Jonas Haus ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWV1OXQwazhoNjZoNjA2dmFocW5iN3BnYjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-01T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-01T13:00:00+02:00"
+    },
+    "created": "2025-03-18T08:24:39.000Z",
+    "updated": "2025-03-18T08:24:39.975Z"
   }
 ]
