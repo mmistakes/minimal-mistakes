@@ -4,7 +4,7 @@
   {% if site.social.type == "Organization" -%}
     "@type": "Organization",
     "url": {{ '/' | absolute_url | jsonify }}{% if site.og_image %},
-    "logo": {{ site_og_image | jsonify }}{% endif %}{% if site.social.links %},
+    "logo": {{ site.og_image | jsonify }}{% endif %}{% if site.social.links %},
     "sameAs": {{ site.social.links | jsonify }}{% endif %}
   {%- else -%}
     "@type": "Person",
