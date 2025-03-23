@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yy-ning.github.io/sitemap.xml
