@@ -17,6 +17,15 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 mathjax: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: "main"
+
+
+
 # Enable sidebar
 defaults:
   - scope:
