@@ -20,6 +20,9 @@ mathjax: true
 # SEO & Sitemap
 plugins:
   - jekyll-sitemap
+  
+include:
+  - google581793296c115cfe.html
 
 # Site Settings
 locale                   : "en-US"
