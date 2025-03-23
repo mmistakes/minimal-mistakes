@@ -346,11 +346,3 @@ defaults:
       share: true
       related: true
       
-sass:
-  style: compressed
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      css: "/assets/css/main.css"
