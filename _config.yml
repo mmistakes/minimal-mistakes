@@ -17,6 +17,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 mathjax: true
 
+sass:
+  style: compressed
+
 defaults:
   - scope:
       path: ""
