@@ -2,6 +2,12 @@
 main:
   - title: "Home"
     url: https://yy-ning.github.io/
+main:
+  - title: "Home"
+    url: /
+  - title: "CD"
+    url: /categories/cd/
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
