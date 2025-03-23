@@ -17,6 +17,17 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 mathjax: true
 
+google_fonts:
+  - family: Cute Font
+  - family: IBM Plex Mono
+    weights: "400"
+
+font:
+  body: "Cute Font"
+  heading: "Cute Font"
+  monospace: "IBM Plex Mono"
+
+
 
 # Enable sidebar
 defaults:
