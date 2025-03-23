@@ -17,15 +17,6 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 mathjax: true
 
-sass:
-  style: compressed
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      css: "/assets/css/main.css"
-
 
 # Enable sidebar
 defaults:
@@ -354,3 +345,12 @@ defaults:
       show_date: true
       share: true
       related: true
+      
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      css: "/assets/css/main.css"
