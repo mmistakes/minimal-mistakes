@@ -1,0 +1,57 @@
+/* ===== 다크모드 기본 배경 & 텍스트 ===== */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Jua', sans-serif;  // 귀여운 폰트 예시
+}
+
+/* ===== 본문, 포스트 ===== */
+.page, .post {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* ===== 제목 색상 ===== */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+/* ===== 링크 색상 ===== */
+a {
+  color: #80cbc4; // 민트빛 계열
+  text-decoration: none;
+}
+a:hover {
+  color: #4dd0e1;
+}
+
+/* ===== 사이드바 ===== */
+.sidebar {
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+
+.sidebar a {
+  color: #f48fb1; // 핑크 포인트
+}
+.sidebar a:hover {
+  color: #f06292;
+}
+
+/* ===== 태그/카테고리 박스 ===== */
+.entry-meta .label,
+.page__taxonomy .label {
+  background-color: #333;
+  color: #eee;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+}
+
+/* ===== 푸터 ===== */
+.site-footer {
+  background-color: #111;
+  color: #aaa;
+}
