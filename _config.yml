@@ -39,7 +39,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "데이터 분석 & 통계 공부 기록"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "승냥이"
+name                     : "정채연"
 description              : "천천히 적어나가는 공부 기록"
 url                      : "https://YY-ning.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -132,7 +132,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "승냥이"
+  name             : "정채연"
   avatar           : /assets/images/바다.jpg
   bio              : "안녕하세요 :)"
   location         : "South Korea "
