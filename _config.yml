@@ -17,6 +17,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 mathjax: true
 
+# SEO & Sitemap
+plugins:
+  - jekyll-sitemap
+
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
