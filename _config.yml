@@ -30,7 +30,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "데이터 분석 & 통계 공부 기록"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "정채연"
+name                     : "승냥이"
 description              : "천천히 적어나가는 공부 기록"
 url                      : "https://YY-ning.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -123,9 +123,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "정채연"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개인블로그 입니다"
+  name             : "승냥이"
+  avatar           : /assets/images/KakaoTalk_20250323_222310262.png
+  bio              : "데이터 분석 & 통계 공부 기록"
   location         : "South Korea "
   email            :
   links:
