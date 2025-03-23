@@ -353,4 +353,4 @@ defaults:
   - scope:
       path: ""
     values:
-      css: "/assets/css/main.scss"
+      css: "/assets/css/main.css"
