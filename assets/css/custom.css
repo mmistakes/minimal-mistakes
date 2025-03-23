@@ -1,0 +1,12 @@
+body {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+code, pre {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #fff5f8;
+  color: #ff4081;
+  border-radius: 6px;
+  padding: 2px 4px;
+}
