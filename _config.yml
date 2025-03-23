@@ -17,6 +17,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 mathjax: true
 
+# Enable sidebar
+defaults:
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: "docs"
+
 # SEO & Sitemap
 plugins:
   - jekyll-sitemap
