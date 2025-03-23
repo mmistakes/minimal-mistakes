@@ -21,7 +21,7 @@ title                    : "Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "21"
-description              : "과제블로그."
+description              : "과제블로그"
 url                      : "https://frismaugment.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
