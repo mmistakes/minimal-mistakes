@@ -125,16 +125,16 @@ analytics:
 author:
   name             : "승냥이"
   avatar           : /assets/images/KakaoTalk_20250323_222310262.png
-  bio              : "데이터 분석 & 통계 공부 기록"
+  bio              : "안녕하세요 :)"
   location         : "South Korea "
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "sg897652@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/YY-ning"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
