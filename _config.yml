@@ -148,7 +148,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "sg897652@gmail.com"
+      url: "mailto:sg897652@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/YY-ning"
