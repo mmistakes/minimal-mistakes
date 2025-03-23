@@ -24,9 +24,7 @@ defaults:
   - scope:
       path: ""
     values:
-      sidebar:
-        nav: "main"
-
+      css: "/assets/css/main.css"
 
 
 # Enable sidebar
