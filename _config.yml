@@ -20,11 +20,11 @@ mathjax: true
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "승냥이의 블로그"
+title                    : "데이터 분석 & 통계 공부 기록"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "승냥이"
-description              : "데이터 분석 & 통계 공부 기록"
+name                     : "정채연"
+description              : "천천히 적어나가는 공부 기록"
 url                      : "https://YY-ning.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
