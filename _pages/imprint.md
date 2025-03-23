@@ -4,7 +4,9 @@ layout: splash
 permalink: /imprint/
 classes: " "
 sidebar:
-  - {}
+  - image: /assets/images/logo-stellwerk.png
+feature_row:
+  - btn_class: btn--inverse
 ---
 # Impressum
 
