@@ -5,11 +5,6 @@ main:
   - title: "Categories"
     url: /categories/
     
-main2:
-  - title: "📌 분류 전체보기 (3)"
-    url: /categories/
-  - title: "🌈 [CD] (3)"
-    url: /categories/[CD]
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
