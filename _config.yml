@@ -116,8 +116,8 @@ author:
   name             : "jsj99"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Just do it."
-  location         : "Somewhere"
-  email            :
+  location         : #
+  email            : "990711jsj@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
