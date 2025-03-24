@@ -77,13 +77,21 @@
 </head>
 <body>
 
-    <h1>안녕하세요! 저는 [이원]입니다.</h1>
+    <h1>webpage 이원</h1>
 
     <!-- 사진 -->
     <img src="me.jpg" alt="내 사진" width="300">
 
     <p>나의 전공은 <strong>심리학</strong>이고 <strong>임상신경심리대학원</strong> 전공 예정입니다.</p>
-    
+
+    <!-- 관심 분야 --> 
+    <h2>interested</h2>
+    <ul>
+      <li>neuropsychology</li>
+      <li>clinical psychology</li>
+      <li>statistic</li>
+    </ul>
+  
     <!-- 유튜브 소개 영상 -->
     <h2>좋아하는 것</h2>
     <iframe width="640" height="360" 
@@ -110,5 +118,16 @@
         </p>
     </div>
 
+    <!-- 방명록 -->
+    <h2>방명록 남기기</h2>
+    <form action="/submit" method="POST">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="message">메시지:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">제출</button>
+    </form>
 </body>
 </html>
