@@ -1,10 +1,10 @@
 ---
 title: Impressum
-layout: single
+layout: splash
 permalink: /imprint/
 classes: wide
 sidebar:
-  - image: /assets/images/logo-stellwerk.png
+  - {}
 feature_row:
   - btn_class: btn--inverse
 ---
