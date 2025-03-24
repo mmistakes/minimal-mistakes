@@ -32,7 +32,7 @@ feature_row:
     btn_label: Details
 permalink: /
 ---
-{% include feature_row %}
+{% include feature-row %}
 
 Das Bergwerk ist ein von ehrenamtlichen Jugendlichen und jungen Erwachsenen verwalteter Jugendtreff in Bad Aibling. Hier werdet ihr keine Jugendbeamten finden, denn Pädagogen gibt es schon genügend in der Schule. Die einzigen Regeln, die hier gelten, setzen wir uns selbst oder das Gesetz (Stichwort Jugendschutz). Das heißt: Das Bergwerk ist der ideale Ort, um kreativ zu werden, Ideen umzusetzen, Aktionen zu starten, sich an Aktionen anderer zu beteiligen, Verantwortung zu übernehmen, Spaß zu haben.
 
