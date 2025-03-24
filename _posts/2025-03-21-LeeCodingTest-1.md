@@ -47,7 +47,7 @@ result = [i for in a if i not in remove_set]
 ### 문자열
 - **튜플 자료형 tuple**: 리스트와 비슷하나, 한 번 선언한 값을 변경할 수 없고 소괄호를 이용한다는 차이가 있다. 그**래프 알고리즘의 구현**에 자주 사용된다. 최단 경로 알고리즘의 내부에서는 우선순위 큐를 이용하는데, 이때 우선순위 큐에 한 번 들어간 데이터의 값은 변경되지 않는다. 해당 데이터를 튜플로 작성하면 작성 실수로 인해 변경하면 안 되는 값이 변경되고 있지는 않은지 확인할 수 있다. 또 리스트에 비해 공간 효율적이다. 각 원소의 성질이 다를 때 주로 이용한다.
 - **사전 자료형 dictionary**: 파이썬의 사전 자료형은 내부적으로 **해시 테이블**을 이용하므로, 데이터의 검색 및 수정에 있어 O(1)의 시간 복잡도를 가진다. 키-값의 쌍으로 구성된 데이터의 처리에 있어, 리스트보다 훨씬 빠르게 동작한다. 사전 자료형에 특정한 원소가 있는지 검사할 때는 `원소 in 사전`의 형태로 검사한다. 이는 리스트 또는 튜플에서도 동일하게 사용 가능하다. 키 데이터만 뽑아서 리스트로 이용할 때는 `keys()` 함수를, 값 데이터만 뽑아서 리스트로 이용할 때는 `values()` 함수를 사용한다.
-- 리스트, 튜플 등 원소를 차례대로 반복할 수 있는 자료형을 literable 자료형이라고 한다. 대부분 `in`, `not in` 문법도 동일하게 사용이 가능하다.
+- 리스트, 튜플 등 원소를 차례대로 반복할 수 있는 자료형을 literable 자료형이라고 한다. 대부분 `in`, `not in` 문법도 동일하게 사용이 가능하다. iterable 객체는 `sort()`를 사용하여 정렬할 수 있다.
 - **집합 자료형 set**: 중복을 허용하지 않고, 순서가 없다는 특징이 있다. 따라서 인덱스로 값을 얻을 수 없으며, 키가 존재하지 않는다. **특정한 데이터가 이미 등장한 적이 있는지를 체크할 때** 효과적이다. 리스트 또는 문자열을 이용해 생성하며, 초기화 시에는 `set()` 함수를 이용하거나 중괄호 안에 각 원소를 콤마 기준으로 구분해 넣는다.
 - 집합 자료형의 합집한 연산에는 `|`를, 교집합 연산에는 `&`를, 차집합 연산에는 `-`를 사용한다.
 - 자주 사용되는 함수로는 `add()`, `update()`, `remove()`가 있다.
@@ -100,10 +100,159 @@ print(f"정답은 {answer}입니다.")
 ```
 
 ## 6. 주요 라이브러리의 문법과 유의점
-- **표준 라이브러리**: 특정 프로그래밍 언어에서 자주 사용되는 표준 소스코드를 미리 구현해 놓은 라이브러리. 코딩 테스트를 위해 알아야 하는 라이브러리는 6가지 정도로, 아래와 같다.
-  - **내장 함수**: `print()`, `input()`과 같은 기본 입출력 기능부터 `sorted()`와 같은 정렬 기능을 포함한 기본 내장 라이브러리.
-  - **itertools**: 반복되는 형태의 데이터를 처리하는 기능을 제공하는 라이브러리. 순열과 조합 라이브러리를 제공.
-  - **heapq**: 힙 기능을 제공하는 라이브러리로, 우선순위 큐 기능을 구현하기 위해 사용.
-  - **bisect**: 이진 탐색 가능을 제공하는 라이브러리.
-  - **collections**: 덱, 카운터 등의 자료구조를 포함하고 있는 라이브러리.
-  - **math**: 팩토리얼, 제곱근, 최대공약수, 삼각함수 관련 함수와 파이 등의 상수를 포함하는 라이브러리.
+**표준 라이브러리**란 특정 프로그래밍 언어에서 자주 사용되는 표준 소스코드를 미리 구현해 놓은 라이브러리를 말한다. 코딩 테스트를 위해 알아야 하는 라이브러리는 6가지 정도로, 아래와 같다.
+
+### 내장 함수
+- `print()`, `input()`과 같은 기본 입출력 기능부터 `sorted()`와 같은 정렬 기능을 포함한 기본 내장 라이브러리. `import` 명령어 없이 바로 사용할 수 있다. 
+- `sum()`, `max()`, `min()`, `eval()`, `sorted()` 등이 포함된다.
+  
+### itertools
+- 반복되는 형태의 데이터를 처리하는 기능을 제공하는 라이브러리. 
+- 코딩 테스트에서 유용하게 사용할 수 있는 클래스는 **permutations**와 **combinations**로, 각각 순열과 조합을 가리킨다. 둘 모두 클래스이므로 객체 초기화 이후 **리스트로 변환해 사용**하여야 한다.
+
+```python
+from itertools import permutations
+
+data = ['a', 'b', 'c']
+
+# 모든 순열 구하기 -> r개의 데이터를 뽑아 순서를 고려하여 나열하는 모든 경우를 계산
+result = list(permutations(data, 3))
+```
+```python
+from itertools import combinations
+
+data = ['a', 'b', 'c']
+
+# 모든 조합 구하기 -> r개의 데이터를 뽑아 순서를 고려하지 않고 나열하는 모든 경우를 계산
+result = list(combinations(data, 3))
+```
+
+- **product**는 permutations와 같이 iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하여 나열하는 모든 경우를 계산하나, 원소를 **중복**하여 뽑는다. 초기화할 때 뽑고자 하는 데이터의 수를 repeat 속성으로 넣어 준다. 동일하게 **리스트로 변환해 사용**한다.
+
+```python
+from itertools import product
+
+data = ['a', 'b', 'c']
+
+# 중복을 허용해 2개를 뽑는 모든 순열을 계산
+result = list(product(data, repeat=2))
+```
+- **combinations_with_replacement**는 combinations와 같이 iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하지 않고 나열하는 모든 경우를 계산하나, 원소를 **중복**하여 뽑는다. 초기화할 때 뽑고자 하는 데이터의 수를 repeat 속성으로 넣어 준다. 동일하게 **리스트로 변환해 사용**한다.
+```python
+from itertools import combinations_with_replacement
+
+data = ['a', 'b', 'c']
+
+# 중복을 허용해 2개를 뽑는 모든 순열을 계산
+result = list(combinations_with_replacement(data, repeat=2))
+```
+
+### heapq
+- 힙 기능을 제공하는 라이브러리로, 다익스트라 최단 경로 알고리즘과 같은 다양한 알고리즘에서 우선순위 큐 기능을 구현하기 위해 사용한다.
+- 파이썬의 힙은 **최소 힙**으로 구성되어 있다(최대 힙은 제공하지 않음). 따라서 단순히 원소를 힙에 전부 넣었다 빼는 것만으로도 **O(NlogN)의 시간 복잡도를 가진 오름차순 정렬**이 완료된다. 보통 최소 힙의 최상단 원소는 항상 가장 작은 원소이기 때문이다.
+- 원소를 삽입할 때는 `heapq.heappush()` 메소드를 이용하고, 원소를 꺼낼 때는 `heapq.heappop()` 메소드를 이용한다. 
+
+```python
+# 힙 정렬 예제
+import heapq
+
+def heapsort(iterable):
+	h = []
+	result = []
+
+	# 모든 원소를 하나씩 힙에 삽입
+	for value in iterable:
+		heapq.heappush(h, value)
+	# 힙에 삽입된 모든 원소를 차례로 꺼내어 result에 담기
+	for _ in range (len(h)):
+		result.append(heapq.heappop(h))
+	return result
+
+result = heapsort([1, 3, 5, 9, 2, 4, 6, 7])
+print(result)
+```
+
+- 최대 힙은 제공되지 않으므로, 파이썬에서 최대 힙을 구현해야 할 때는 원소의 부호를 반대로 바꾼 후 힙에서 원소를 꺼내 다시 원소의 부호를 바꿔 주는 방식을 이용한다. 
+
+```python
+# 힙을 이용한 내림차순 정렬
+import heapq
+
+def heapsort(iterable):
+	h = []
+	result = []
+	for value in iterable:
+		heapq.heappush(h, -value)
+	for _ in range (len(h)):
+		result.append(-heapq.heappop(h))
+
+result = heapsort([1, 3, 5, 9, 2, 4, 6, 7])
+print(result)
+```
+
+### bisect
+- 이진 탐색 가능을 제공하는 라이브러리. **정렬된 배열에서 특정 원소를 찾아야 할 때** 효과적이다. 
+- `bisect_left()` 함수와 `bisect_right()` 함수가 가장 중요하게 사용되고, 두 함수의 시간 복잡도는 **O(logN)**이다. bisect_left(a, x)는 정렬된 순서를 유지하며 리스트 a에 데이터 x를 삽입할 가장 왼쪽 인덱스를 찾는 메소드이며, bisect_right(a, x)도 동일하게 작동한다. 이 두 함수는 **정렬된 리스트에서 특정 범위에 속하는 값을 가지는 원소의 개수를 구할 때**도 효과적으로 사용된다.
+
+```python
+from bisect import bisect_left, bisect_right
+
+# 값이 [left_value, right_value]인 데이터의 개수를 반환하는 함수
+def count_by_range(a, left_value, right_value):
+	right_index = bisect_right(a, right_value)
+	left_index = bisect_left(a, left_value)
+	return right_index - left_index
+
+a = [1, 2, 3, 3, 3, 3, 4, 4, 4, 5, 9]
+
+print(count_by_range(a, 4, 4))
+
+print(count_by_range(a, -1, 3))
+```
+
+### collections
+- **덱(deque)**, **카운터(Counter)** 등의 자료구조를 포함하고 있는 라이브러리.
+- 파이썬에서 큐를 구현할 때는 deque를 사용해야 한다. 
+- 파이썬에서 리스트는 가장 뒤쪽 원소를 기준으로 데이터를 추가하거나 삭제하기 때문에, 앞쪽 원소에 대해 처리할 때는 데이터의 개수에 따라 많은 시간이 소요될 가능성이 있다. 이때의 시간 복잡도는 **O(N)**이다. 반면 deque의 시간 복잡도는 어느 경우에도 O(1)이다.
+- deque는 인덱싱, 슬라이싱 등의 기능은 사용할 수 없으나, **나열된 데이터의 시작이나 끝 부분에 데이터를 삽입하거나 삭제해야 할 때** 효과적이다. **스택**이나 **큐**의 기능을 모두 포함한다고도 볼 수 있어, 해당 자료구조들의 대용으로써 사용될 수 있다.
+- deque를 **큐 자료구조**로 이용할 경우, 원소를 삽입할 때는 `append()`를, 원소를 삭제할 때는 `popleft()`를 사용한다. 이렇게 사용하면 먼저 들어온 원소가 항상 먼저 나가는 **선입선출** 구조가 된다.
+
+```python
+from collections import deque
+
+data = deque([2, 3, 4])
+data.appendleft(1)
+data.append(5)
+
+print(data)
+print(list(data))
+```
+
+- Counter는 등장 횟수를 세는 기능을 제공한다. 원소별 등장 횟수를 세야 할 때 짧은 코드로 이를 구현할 수 있다.
+```python
+from collections import Counter
+
+counter = Counter(['red', 'blue', 'red', 'green', 'red'])
+
+print(counter['red'])
+```
+
+### math
+- 팩토리얼, 제곱근, 최대공약수(GDC), 삼각함수 관련 함수와 파이 등의 상수를 포함하는 라이브러리.
+
+```python
+import math
+
+# 5 팩토리얼을 출력
+print(math.factorial(5))
+
+# 7의 제곱근을 출력
+print(math.sqrt(7))
+
+# 21과 14의 최대공약수를 출력
+print(math.gcd(21, 14))
+
+# 파이 pi와 자연상수 e를 출력
+print(math.pi)
+print(math.e)
+```
