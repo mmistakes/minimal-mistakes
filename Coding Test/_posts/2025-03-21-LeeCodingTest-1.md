@@ -4,7 +4,7 @@ title: "[이코테 파이썬] 부록 A 내용 정리"
 categories:
   - Coding Test
 tags:
-  - ["2025", Coding Test, Python]
+  - [Coding Test, Python]
 
 date: 2025-03-21
 last_modified_at: 2025-03-21
