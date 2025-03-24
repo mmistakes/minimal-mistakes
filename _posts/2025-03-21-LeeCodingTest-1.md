@@ -138,6 +138,7 @@ data = ['a', 'b', 'c']
 result = list(product(data, repeat=2))
 ```
 - **combinations_with_replacement**는 combinations와 같이 iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하지 않고 나열하는 모든 경우를 계산하나, 원소를 **중복**하여 뽑는다. 초기화할 때 뽑고자 하는 데이터의 수를 repeat 속성으로 넣어 준다. 동일하게 **리스트로 변환해 사용**한다.
+
 ```python
 from itertools import combinations_with_replacement
 
@@ -229,6 +230,7 @@ print(list(data))
 ```
 
 - Counter는 등장 횟수를 세는 기능을 제공한다. 원소별 등장 횟수를 세야 할 때 짧은 코드로 이를 구현할 수 있다.
+
 ```python
 from collections import Counter
 
