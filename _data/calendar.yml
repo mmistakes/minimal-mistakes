@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "5b - Ausflug ins Islamische Museum",
-    "title": "5b - Ausflug ins Islamische Museum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2UwODl2b3VkamI5Yzd2cjIzZTNwYWxlOXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-24T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-24T14:30:00+01:00"
-    },
-    "created": "2025-03-06T10:07:05.000Z",
-    "updated": "2025-03-06T10:07:05.638Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4b - Ausflug zum Brandenburger Tor, Siegessäule und Tiergarten",
-    "title": "4b - Ausflug zum Brandenburger Tor, Siegessäule und Tiergarten",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzM4dW5uZ3RoYXNsZjAwMjVlajdnMzhzcmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-24T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-24T13:30:00+01:00"
-    },
-    "created": "2025-03-12T12:12:26.000Z",
-    "updated": "2025-03-12T12:12:26.651Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A4 - Ausflug zum Museum Hermsdorf",
-    "title": "A4 - Ausflug zum Museum Hermsdorf",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDVsYTVxdTdhYmR0bmJiaDRjN2g3MjlyMTcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-24T09:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-24T13:30:00+01:00"
-    },
-    "created": "2025-03-18T08:25:45.000Z",
-    "updated": "2025-03-18T08:25:45.109Z"
-  },
-  {
-    "image_path": null,
     "alt": "A6 - Ausflug zum Grips-Theater",
     "title": "A6 - Ausflug zum Grips-Theater",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2025-03-18T08:24:39.000Z",
     "updated": "2025-03-18T08:24:39.975Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Bücherei",
+    "title": "A5 - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-04T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-04T11:30:00+02:00"
+    },
+    "created": "2024-12-13T11:14:40.000Z",
+    "updated": "2024-12-13T11:14:40.459Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz",
+    "title": "3. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Z3ZyM2ViaG9zYnVtYXVwaGxiazQydHVvdG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-09T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-09T16:00:00+02:00"
+    },
+    "created": "2025-03-08T17:45:15.000Z",
+    "updated": "2025-03-08T17:45:15.980Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A2 - Ausflug zur Wilden Welt ",
+    "title": "A2 - Ausflug zur Wilden Welt ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mm84ZTk2cTZ2N2Vxc3JkcW9wc2IxZ3I5bnIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-11T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-11T12:30:00+02:00"
+    },
+    "created": "2025-03-18T08:26:46.000Z",
+    "updated": "2025-03-18T08:26:46.564Z"
   }
 ]
