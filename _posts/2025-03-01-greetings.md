@@ -1,5 +1,5 @@
 --- 
-layout: post
+layout: default
 title: "Greetings!"
 toc: true
 categories: post
