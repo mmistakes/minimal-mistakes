@@ -36,7 +36,7 @@ copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : "disqus" # false book", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus: 
-    shortname            : "juhyuns-learning-hub"
+    shortname            : "jlee400-github-io"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
