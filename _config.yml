@@ -143,6 +143,7 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.linkedin.com/in/juhyunnikkilee/"
+      custom: footer_custom.html
 
     - label: "Website"
       icon: "fas fa-fw fa-link"
