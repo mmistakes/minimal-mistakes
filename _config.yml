@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
 name                     : "Danny Castonguay"
-description              : "Product Leader."
+description              : "Direct, driven (and mostly tolerable)."
 url                      : https://blog.dannycastonguay.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,13 +107,13 @@ analytics:
 author:
   name             : "Danny Castonguay"
   avatar           : https://avatars0.githubusercontent.com/u/641370?s=400&v=4 # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Product leader."
+  bio              : "Direct, driven (and mostly tolerable)."
   location         : "US"
-  email            : "danny@talented.app"
+  email            : "d@bld.ai"
   links:
-    - label: "Work"
+    - label: "bld.ai"
       icon: "fas fa-fw fa-link"
-      url: "https://talented.app"
+      url: "https://bld.ai/?utm_source=dannycastonguay.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/dannycast0nguay"
@@ -133,9 +133,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Work"
+    - label: "bld.ai"
       icon: "fas fa-fw fa-link"
-      url: "https://talented.app"
+      url: "https://bld.ai/?utm_source=dannycastonguay.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/dannycast0nguay"
