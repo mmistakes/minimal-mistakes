@@ -1,0 +1,19 @@
+<button id="like-button">❤️ like (<span id="like-count">0</span>)</button>
+
+<script>
+  const likeBtn = document.getElementById('like-button');
+  const likeCountEl = document.getElementById('like-count');
+  const likesRef = firebase.database().ref('likes/global'); // 경로를 페이지별로 커스터마이즈 가능
+
+  // 실시간으로 좋아요 수 불러오기
+  likesRef.on('value', (snapshot) => {
+    const count = snapshot.val() || 0;
+    likeCountEl.textContent = count;
+  });
+
+  likeBtn.addEventListener('click', () => {
+    likesRef.transaction((currentLikes) => {
+      return (currentLikes || 0) + 1;
+    });
+  });
+</script>
