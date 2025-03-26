@@ -1,5 +1,5 @@
 ---
-Title: Cost of AI
+Title: Singapore school
 ---
 
 Today we had a parent-teacher meeting at the kids' school, and we exchanged thoughts about what we observed. Overall, the experience was better than what we've seen in the U.S., definitely more rigorous, though lacking in innovation.
