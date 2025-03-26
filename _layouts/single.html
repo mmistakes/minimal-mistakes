@@ -63,8 +63,8 @@ layout: default
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
-    </div>
+               {% include post_pagination.html %}
+    </div> <!-- page__inner-wrap 끝 -->
 
     {% if site.comments.provider and page.comments %}
       {% if jekyll.environment == 'production' %}
@@ -76,7 +76,9 @@ layout: default
         </p>
       {% endif %}
     {% endif %}
-  </article>
+  </article> <!-- ✅ article 여기서만 한 번 닫힘 -->
+
+
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
