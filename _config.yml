@@ -34,7 +34,7 @@ enable_copy_code_button  : "false"
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : "disquis" # false book", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false book", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : "jlee400.github.io"
   discourse:
