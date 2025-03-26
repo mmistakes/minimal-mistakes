@@ -1,11 +1,27 @@
-<button id="like-button">❤️ like (<span id="like-count">0</span>)</button>
+<!-- like_button.html -->
+<button id="like-button">❤️ 좋아요 (<span id="like-count">0</span>)</button>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
 
 <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDXB4ilHCdpWzc93i_ZuXy28XF0WD5sRmw",
+    authDomain: "csi500.firebaseapp.com",
+    projectId: "csi500",
+    storageBucket: "csi500.firebasestorage.app",
+    messagingSenderId: "156115395881",
+    appId: "1:156115395881:web:9b02926e36e8cec3564338",
+    measurementId: "G-M76XFGXLWD"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+
   const likeBtn = document.getElementById('like-button');
   const likeCountEl = document.getElementById('like-count');
-  const likesRef = firebase.database().ref('likes/global'); // 경로를 페이지별로 커스터마이즈 가능
+  const likesRef = firebase.database().ref('likes/global');
 
-  // 실시간으로 좋아요 수 불러오기
   likesRef.on('value', (snapshot) => {
     const count = snapshot.val() || 0;
     likeCountEl.textContent = count;
