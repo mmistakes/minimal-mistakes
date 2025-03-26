@@ -1,7 +1,5 @@
 ---
 title: "oopsdead.com: AI Driven Game Development"
-date: 2025-03-23
-layout: post
 ---
 
 I recently launched [oopsdead.com](https://oopsdead.com) a pirate themed, browser based roguelike that combines party management with ship building mechanics. While the game itself is exciting, the real story is how it was built using modern AI tools.
@@ -57,4 +55,4 @@ For those interested in scaling similar projects, platforms like [bld.ai](https:
 
 ## Try It Yourself
 
-Experience the game at [oopsdead.com](https://oopsdead.com) and see how AI driven development can create engaging, complex games with minimal traditional coding. 
+Experience the game at [oopsdead.com](https://oopsdead.com) and see how AI driven development can create engaging, complex games with minimal traditional coding.
