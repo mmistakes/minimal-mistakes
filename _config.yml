@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "김재현"
-  avatar           : "/assets/profile.gif"
+  avatar           : "/assets/images/profile.gif"
   bio: "jeaha03@gmail.com<br>github.com/myneighborh"
   location         : "Republic of Korea"
   # email            : "jeaha03@gmail.com"
