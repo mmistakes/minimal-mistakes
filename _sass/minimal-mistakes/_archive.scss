@@ -178,15 +178,24 @@
   
     .archive__item-teaser {
       position: relative;
-      border-radius: $border-radius;
       overflow: hidden;
-      height: 180px; // 💡 높이 고정 추가
+      border-radius: $border-radius;
+    
+      min-height: 180px;
+      aspect-ratio: 16 / 9;
     
       img {
         width: 100%;
-        height: 100%; // 💡 이미지도 강제 고정
-        object-fit: cover; // 💡 비율 유지한 채 꽉 채움
+        height: 100%;
+        object-fit: cover;
         display: block;
+      }
+    
+      &::after {
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
       }
     }
   }
