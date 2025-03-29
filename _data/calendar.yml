@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A6 - Ausflug zum Grips-Theater",
-    "title": "A6 - Ausflug zum Grips-Theater",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MTN1MTBnNjI4cnMyY2VuaWNsNTNwcG1mZ2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-03-28T08:45:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-03-28T13:45:00+01:00"
-    },
-    "created": "2025-03-21T07:48:14.000Z",
-    "updated": "2025-03-21T07:48:14.191Z"
-  },
-  {
-    "image_path": null,
     "alt": "Studientag Schule+ Hort geschlossen",
     "title": "Studientag Schule+ Hort geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-03-18T08:26:46.000Z",
     "updated": "2025-03-18T08:26:46.564Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Gleiche Mathe-Arbeit in Klasse 5a, 5b, 5c",
+    "title": "Gleiche Mathe-Arbeit in Klasse 5a, 5b, 5c",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Z2hkOWp1ZmtwNGd0dHBzaWtpMzY0Y2FhdmsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-06T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-06T09:30:00+02:00"
+    },
+    "created": "2025-03-25T18:51:20.000Z",
+    "updated": "2025-03-25T18:51:20.592Z"
   }
 ]
