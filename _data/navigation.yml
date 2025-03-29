@@ -5,9 +5,6 @@ main:
   - title: "Portfolio"
     url: /portfolio/
 
-  - title: "Posts"
-    url: /posts/
-
   - title: "Categories"
     url: /categories/
 
