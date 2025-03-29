@@ -149,47 +149,47 @@
 .grid__item {
   margin-bottom: 2em;
 
-  @include breakpoint($small) {
-    float: inline-start;
-    width: span(5 of 10);
+  // @include breakpoint($small) {
+  //   float: inline-start;
+  //   width: span(5 of 10);
 
-    &:nth-child(2n + 1) {
-      clear: both;
-      margin-inline-start: 0;
-    }
+  //   &:nth-child(2n + 1) {
+  //     clear: both;
+  //     margin-inline-start: 0;
+  //   }
 
-    &:nth-child(2n + 2) {
-      clear: none;
-      margin-inline-start: gutter(of 10);
-    }
-  }
+  //   &:nth-child(2n + 2) {
+  //     clear: none;
+  //     margin-inline-start: gutter(of 10);
+  //   }
+  // }
 
-  @include breakpoint($medium) {
-    margin-inline: 0; /* override margin*/
-    width: span(6 of 12);
+  // @include breakpoint($medium) {
+  //   margin-inline: 0; /* override margin*/
+  //   width: span(6 of 12);
 
-    &:nth-child(2n + 1) {
-      clear: none;
-    }
+  //   &:nth-child(2n + 1) {
+  //     clear: none;
+  //   }
 
-    &:nth-child(4n + 1) {
-      clear: both;
-    }
+  //   &:nth-child(4n + 1) {
+  //     clear: both;
+  //   }
 
-    &:nth-child(4n + 2) {
-      clear: none;
-      margin-inline-start: gutter(1 of 12);
-    }
+  //   &:nth-child(4n + 2) {
+  //     clear: none;
+  //     margin-inline-start: gutter(1 of 12);
+  //   }
 
-    &:nth-child(4n + 3) {
-      clear: none;
-      margin-inline-start: gutter(1 of 12);
-    }
+  //   &:nth-child(4n + 3) {
+  //     clear: none;
+  //     margin-inline-start: gutter(1 of 12);
+  //   }
 
-    &:nth-child(4n + 4) {
-      clear: none;
-      margin-inline-start: gutter(1 of 12);
-    }
+  //   &:nth-child(4n + 4) {
+  //     clear: none;
+  //     margin-inline-start: gutter(1 of 12);
+  //   }
   }
 
   .page__meta {
@@ -428,4 +428,22 @@
 	.feature__wrapper {
 		display: inline-block;
 	}
+}
+
+.entries-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 💡 2열
+  gap: 2rem;
+  align-items: start; // 💡 줄 정렬
+}
+.archive__item-teaser {
+  height: 180px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
