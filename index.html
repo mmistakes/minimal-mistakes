@@ -1,5 +1,5 @@
 ---
 layout: home
 author_profile: true
-entries_layout: list
+entries_layout: grid
 ---
