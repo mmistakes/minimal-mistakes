@@ -10,25 +10,15 @@ search: false
 
 .entries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  align-items: start;
+  max-width: 100% !important;
 }
 
-/* 그리드 내부 각 카드 아이템 스타일 */
-.entries-grid > .grid__item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+.page__content {
+  max-width: 100% !important;
 }
 
-.entries-grid > .grid__item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+.grid__item {
+  width: 100%;
 }
