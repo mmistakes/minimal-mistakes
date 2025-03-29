@@ -86,9 +86,14 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+  height: 160px; // 💡 높이 고정
+  margin-bottom: 1rem;
 
   img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; // 💡 꽉 채우되 비율 유지
+    display: block;
   }
 }
 
