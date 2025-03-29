@@ -166,7 +166,7 @@
 
   @include breakpoint($medium) {
     margin-inline: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(6 of 12);
 
     &:nth-child(2n + 1) {
       clear: none;
