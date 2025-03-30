@@ -1,0 +1,105 @@
+/* 전체 body 스타일 */
+body {
+    background-color: #f0f8ff; /* 부드러운 하늘색 배경 */
+    color: #333; /* 어두운 회색 글자색 */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* 모든 h2 제목 가운데 정렬 및 박스 스타일링 */
+h2 {
+    text-align: center;
+    background-color: #4682b4; /* 스틸블루 배경색 */
+    color: #ffffff; /* 흰색 글자색 */
+    padding: 10px;
+    border: 2px solid #1e90ff; /* 파란색 테두리 */
+    border-radius: 8px; /* 테두리 둥글게 처리 */
+    margin-bottom: 15px;
+}
+
+/* 문단(p) 스타일 */
+p {
+    background-color: #ffffff; /* 흰색 배경색 */
+    padding: 10px;
+    border: 1px solid #ccc; /* 연한 회색 테두리 */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* 링크(a) 스타일 */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/* 이미지 스타일 */
+img {
+    display: block;
+    margin: 15px auto; /* 이미지를 가운데 정렬 */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 순서 목록 스타일 */
+ol {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #4682b4;
+    padding: 10px;
+}
+
+th {
+    background-color: #4682b4;
+    color: #ffffff;
+}
+
+/* 폼(form) 스타일 */
+form {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e90ff;
+}
