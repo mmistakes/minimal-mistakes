@@ -26,7 +26,7 @@ I argue that the school’s concept of leadership, exemplified by being a prefec
 
 Counterargument: Schools might argue that structured leadership roles like prefects instill discipline, collective responsibility, and provide introductory leadership training.
 
-Counter-counterargument: Real leadership is contrarian, bold, and risk-taking, qualities exemplified by Lee Kuan Yew himself, who was originally a Malaysian rebel, not conforming to traditional expectations. The school’s current system does not cultivate such leadership qualities effectively.
+Counter-counterargument: Real leadership is contrarian, bold, and risk-taking, qualities exemplified by Lee Kuan Yew himself, who was originally a Malaysian Anti-federal dissenter, not conforming to traditional expectations. The school’s current system does not cultivate such leadership qualities effectively.
 
 ## 3. Entrepreneurship Education is Almost Completely Missing
 
