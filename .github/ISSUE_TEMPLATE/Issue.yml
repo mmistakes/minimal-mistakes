@@ -1,7 +1,4 @@
 name: "Bug Report"
-
-about: "문제를 설명해 주세요."
-
 title: "버그 보고"
 labels:
   - bug
@@ -14,16 +11,27 @@ body:
       value: |
         ## 문제 설명
         - 버그 또는 문제가 발생한 상황을 상세히 설명해 주세요.
-        
+
         ## 재현 방법
         1. 이 명령을 실행합니다.
         2. 발생한 오류 메시지를 제공합니다.
-        
+
         ## 기대한 결과
         정상적으로 작동해야 합니다.
-        
-        ## 환경 정보
-        - OS: Ubuntu 22.04
-        - 버전: 4.1.2
+
+  - type: "input"
+    attributes:
+      label: "환경 정보"
+      description: "사용 중인 운영 체제와 버전 등을 입력해 주세요."
+      placeholder: "예: Ubuntu 22.04"
+      required: true
+
+  - type: "textarea"
+    attributes:
+      label: "추가 설명"
+      description: "버그와 관련된 추가 설명을 입력해 주세요."
+      placeholder: "문제를 해결하는 데 필요한 다른 정보."
+      required: false
+
 
 
