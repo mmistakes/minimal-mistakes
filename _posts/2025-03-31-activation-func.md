@@ -6,14 +6,10 @@ header:
   teaser: https://github.com/user-attachments/assets/94ab4e96-a7c0-4408-bba1-56fb254cc19e
 ---
 
-# Activation functions 
-
 ## 🔹 1. Sigmoid
 ![image](https://github.com/user-attachments/assets/67fa2cdb-984d-4f10-a7cb-c95a352484cf)
+<img width="162" alt="image" src="https://github.com/user-attachments/assets/d4f1393b-35b3-49d0-9f65-c563a7b1f611" />
 
-\[
-\sigma(x) = \frac{1}{1 + e^{-x}}
-\]
 
 ### ✅ 특징
 - 출력: 0 ~ 1
@@ -32,10 +28,7 @@ header:
 
 ## 🔹 2. Tanh
 ![image](https://github.com/user-attachments/assets/4f42b233-edb4-43c1-a643-74336b0bd8fa)
-
-\[
-\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
-\]
+<img width="193" alt="image" src="https://github.com/user-attachments/assets/61c33b67-d3f4-478c-ba8f-d47af87b6353" />
 
 ### ✅ 특징
 - 출력: -1 ~ 1
@@ -49,10 +42,7 @@ header:
 
 ## 🔹 3. ReLU
 ![image](https://github.com/user-attachments/assets/0354288e-6781-4b15-af36-14b626366d55)
-
-\[
-f(x) = \max(0, x)
-\]
+<img width="176" alt="image" src="https://github.com/user-attachments/assets/22282230-934e-4685-b949-1f1e7fb2ea3c" />
 
 ### ✅ 특징
 - 간단하고 빠름
@@ -74,14 +64,8 @@ f(x) = \max(0, x)
 
 ## 🔹 4. Leaky ReLU / PReLU
 ![image](https://github.com/user-attachments/assets/ad0cf20e-845f-4019-8ce1-35f536e8673e)
+<img width="206" alt="image" src="https://github.com/user-attachments/assets/bad012b5-1841-4ce2-98b5-a8aa7736d970" />
 
-\[
-f(x) = 
-\begin{cases}
-x & x > 0 \\
-\alpha x & x \leq 0
-\end{cases}
-\]
 
 ### ✅ Leaky ReLU
 - 음수 입력도 약간 통과 (보통 \(\alpha = 0.01\))
@@ -100,14 +84,8 @@ x & x > 0 \\
 
 ## 🔹 5. ELU
 ![image](https://github.com/user-attachments/assets/7c49bceb-5bfd-4945-861e-b54777f6687d)
+<img width="273" alt="image" src="https://github.com/user-attachments/assets/760a26d6-407f-4fdf-ad0b-fd5b7fd46a6f" />
 
-\[
-f(x) = 
-\begin{cases}
-x & x > 0 \\
-\alpha(e^x - 1) & x \leq 0
-\end{cases}
-\]
 
 ### ✅ 특징
 - 음수도 부드럽게 처리
@@ -118,10 +96,8 @@ x & x > 0 \\
 
 ## 🔹 6. Swish (Google 제안)
 ![image](https://github.com/user-attachments/assets/605d3b35-7164-41ba-b439-eec2c4ebbc0c)
+<img width="198" alt="image" src="https://github.com/user-attachments/assets/3ac99f8b-8286-4426-8a92-d0a3905019ed" />
 
-\[
-\text{Swish}(x) = x \cdot \sigma(x)
-\]
 
 ### ✅ 특징
 - 입력값이 클수록 잘 켜지고, 작으면 천천히 꺼짐
@@ -140,10 +116,8 @@ x & x > 0 \\
 
 ## 🔹 7. GELU (BERT, GPT 사용)
 ![image](https://github.com/user-attachments/assets/36f7aecc-7007-45f8-9cc3-5af132737d07)
+<img width="411" alt="image" src="https://github.com/user-attachments/assets/6af0d5d2-edc0-4a96-8a75-58cf47603f40" />
 
-\[
-f(x) = 0.5x(1 + \tanh(\sqrt{2/\pi}(x + 0.044715x^3)))
-\]
 
 ### ✅ 특징
 - 입력값이 **의미 있을 확률 × 입력값** 구조
