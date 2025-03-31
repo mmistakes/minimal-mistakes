@@ -1,0 +1,36 @@
+## 이슈 리포트 
+
+### 문제 설명
+1. RMarkdown에서 pdf로의 knit가 작동하지 않음
+- 발생한 오류 메시지 : 
+```
+Try other LaTeX engines instead (e.g., xelatex) if you are using pdflatex. See https://bookdown.org/yihui/rmarkdown-cookbook/latex-unicode.html
+에러: LaTeX failed to compile RMarkdown.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See RMarkdown.log for more info.
+실행이 정지되었습니다
+
+No LaTeX installation detected (LaTeX is required to create PDF output). You should install a LaTeX distribution for your platform: https://www.latex-project.org/get/
+
+  If you are not sure, you may install TinyTeX in R: tinytex::install_tinytex()
+
+  Otherwise consider MiKTeX on Windows - http://miktex.org
+
+  MacTeX on macOS - https://tug.org/mactex/
+  (NOTE: Download with Safari rather than Chrome _strongly_ recommended)
+
+  Linux: Use system package manager
+  
+  ```
+  2. RMarkdown에서 word로의 knit가 작동하지 않음
+  - 발생한 오류 메시지 : 
+```
+processing file: RMarkdown.Rmd
+                                                                                                            
+"C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/pandoc" +RTS -K512m -RTS RMarkdown.knit.md --to docx --from markdown+autolink_bare_uris+tex_math_single_backslash --output RMarkdown.docx --lua-filter "C:\Users\751mb\AppData\Local\R\win-library\4.4\rmarkdown\rmarkdown\lua\pagebreak.lua" --highlight-style tango 
+output file: RMarkdown.knit.md
+
+pandoc.exe: RMarkdown.docx: withBinaryFile: permission denied (Permission denied)
+에러: pandoc document conversion failed with error 1
+실행이 정지되었습니다
+
+```
+
