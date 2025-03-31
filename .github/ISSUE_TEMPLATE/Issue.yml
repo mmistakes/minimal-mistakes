@@ -1,35 +1,29 @@
-my_name: Bug Report
+name: "Bug Report"
 
-my_on:
-  issues:
-    types:
-      - opened
+about: "문제를 설명해 주세요."
 
-my_jobs:
-  bug-report:
-    runs-on: ubuntu-latest
-    my_steps:
-      - my_name: Create Bug Report
-        uses: actions/checkout@v2
-        with:
-          issue-template:
-            name: "Bug Report Template"
-            description: |
-              ## 문제 설명
-              - 예상한 동작과 다르게 동작함
-              - 특정 기능이 작동하지 않음
+title: "버그 보고"
+labels:
+  - bug
+  - help wanted
+assignees: []
 
-              ## 재현 방법
-              1. 이 명령을 실행합니다: `python script.py`
-              2. 발생한 오류 메시지:
-                 ```
-                 Error: File not found.
-                 ```
+body:
+  - type: "markdown"
+    attributes:
+      value: |
+        ## 문제 설명
+        - 버그 또는 문제가 발생한 상황을 상세히 설명해 주세요.
+        
+        ## 재현 방법
+        1. 이 명령을 실행합니다.
+        2. 발생한 오류 메시지를 제공합니다.
+        
+        ## 기대한 결과
+        정상적으로 작동해야 합니다.
+        
+        ## 환경 정보
+        - OS: Ubuntu 22.04
+        - 버전: 4.1.2
 
-              ## 기대한 결과
-              정상적으로 실행되어야 합니다.
-
-              ## 환경 정보
-              - OS: Ubuntu 22.04
-              - R 버전: 4.1.2
 
