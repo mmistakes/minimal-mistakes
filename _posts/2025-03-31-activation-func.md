@@ -6,11 +6,11 @@ header:
   teaser: https://github.com/user-attachments/assets/94ab4e96-a7c0-4408-bba1-56fb254cc19e
 ---
 ## Activation Function
-뉴런(노드)에서 나온 출력값을 비선형 함수에 통과시켜주는 함수.
+- 뉴런(노드)에서 나온 출력값을 비선형 함수에 통과시켜주는 함수.
 
-### 왜 Activation Function이 필요할까?
-만약 activation function 없이 뉴런을 쌓으면, 아무리 여러 층(layer)을 쌓아도 전체는 선형 함수가 되는데. 그러면 복잡한 문제(예: 이미지 인식, 음성 분석 등)를 해결할 수 없음.
-즉, activation function은 모델에 "비선형성"을 넣어줘서 복잡한 문제를 풀 수 있게 해줌.
+- 왜 Activation Function이 필요할까?
+  - 만약 activation function 없이 뉴런을 쌓으면, 아무리 여러 층을 쌓아도 전체는 선형 함수가 되어 복잡한 문제를 해결할 수 없음.
+  - 즉, activation function은 모델에 '비선형성'을 넣어줘서 복잡한 문제를 풀 수 있게 해줌.
 
 ---
 
