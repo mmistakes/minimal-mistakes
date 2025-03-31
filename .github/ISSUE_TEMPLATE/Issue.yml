@@ -1,15 +1,15 @@
-name: Bug Report
+my_name: Bug Report
 
-on:
+my_on:
   issues:
     types:
       - opened
 
-jobs:
+my_jobs:
   bug-report:
     runs-on: ubuntu-latest
-    steps:
-      - name: Create Bug Report
+    my_steps:
+      - my_name: Create Bug Report
         uses: actions/checkout@v2
         with:
           issue-template:
