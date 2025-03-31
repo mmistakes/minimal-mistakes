@@ -3,12 +3,13 @@ title: "Activation functions"
 date: 2024-03-29
 category: [deeplearning]
 header:
-  teaser: https://github.com/user-attachments/assets/afb4e176-122f-445c-a639-daf01301c5b9
+  teaser: https://github.com/user-attachments/assets/94ab4e96-a7c0-4408-bba1-56fb254cc19e
 ---
 
 # Activation functions 
 
 ## 🔹 1. Sigmoid
+![image](https://github.com/user-attachments/assets/67fa2cdb-984d-4f10-a7cb-c95a352484cf)
 
 \[
 \sigma(x) = \frac{1}{1 + e^{-x}}
@@ -30,6 +31,7 @@ header:
 ---
 
 ## 🔹 2. Tanh
+![image](https://github.com/user-attachments/assets/4f42b233-edb4-43c1-a643-74336b0bd8fa)
 
 \[
 \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
@@ -46,6 +48,7 @@ header:
 ---
 
 ## 🔹 3. ReLU
+![image](https://github.com/user-attachments/assets/0354288e-6781-4b15-af36-14b626366d55)
 
 \[
 f(x) = \max(0, x)
@@ -70,6 +73,7 @@ f(x) = \max(0, x)
 ---
 
 ## 🔹 4. Leaky ReLU / PReLU
+![image](https://github.com/user-attachments/assets/ad0cf20e-845f-4019-8ce1-35f536e8673e)
 
 \[
 f(x) = 
@@ -95,6 +99,7 @@ x & x > 0 \\
 ---
 
 ## 🔹 5. ELU
+![image](https://github.com/user-attachments/assets/7c49bceb-5bfd-4945-861e-b54777f6687d)
 
 \[
 f(x) = 
@@ -112,6 +117,7 @@ x & x > 0 \\
 ---
 
 ## 🔹 6. Swish (Google 제안)
+![image](https://github.com/user-attachments/assets/605d3b35-7164-41ba-b439-eec2c4ebbc0c)
 
 \[
 \text{Swish}(x) = x \cdot \sigma(x)
@@ -133,6 +139,7 @@ x & x > 0 \\
 ---
 
 ## 🔹 7. GELU (BERT, GPT 사용)
+![image](https://github.com/user-attachments/assets/36f7aecc-7007-45f8-9cc3-5af132737d07)
 
 \[
 f(x) = 0.5x(1 + \tanh(\sqrt{2/\pi}(x + 0.044715x^3)))
@@ -177,6 +184,7 @@ f(x) = 0.5x(1 + \tanh(\sqrt{2/\pi}(x + 0.044715x^3)))
 ---
 
 ## 📊 최종 비교표
+![image](https://github.com/user-attachments/assets/94ab4e96-a7c0-4408-bba1-56fb254cc19e)
 
 | 함수 | 출력 범위 | 중심 | 기울기 소실 | 특징 |
 |------|------------|--------|---------------|--------|
