@@ -1,20 +1,35 @@
-## 이슈 리포트 
+name: Bug Report
 
-### 문제 설명
-- [ ] 예상한 동작과 다르게 동작함
-- [ ] 특정 기능이 작동하지 않음
+on:
+  issues:
+    types:
+      - opened
 
-### 재현 방법
-1. 이 명령을 실행합니다: `python script.py`
-2. 발생한 오류 메시지:
-   ```
-   Error: File not found.
-   ```
+jobs:
+  bug-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Bug Report
+        uses: actions/checkout@v2
+        with:
+          issue-template:
+            name: "Bug Report Template"
+            description: |
+              ## 문제 설명
+              - 예상한 동작과 다르게 동작함
+              - 특정 기능이 작동하지 않음
 
-### 기대한 결과
-정상적으로 실행되어야 합니다.
+              ## 재현 방법
+              1. 이 명령을 실행합니다: `python script.py`
+              2. 발생한 오류 메시지:
+                 ```
+                 Error: File not found.
+                 ```
 
-### 환경 정보
-- OS: Ubuntu 22.04
-- R 버전: 4.1.2
+              ## 기대한 결과
+              정상적으로 실행되어야 합니다.
+
+              ## 환경 정보
+              - OS: Ubuntu 22.04
+              - R 버전: 4.1.2
 
