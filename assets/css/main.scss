@@ -7,3 +7,11 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__content,
+.archive,
+.page,
+.post {
+  max-width: 1000px !important;
+  margin: 0 auto;
+}
