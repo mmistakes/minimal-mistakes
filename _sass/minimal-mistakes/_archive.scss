@@ -3,20 +3,10 @@
      ========================================================================== */
   
   .archive {
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin: 0 auto;
+    max-width: 791px !important;
   
-    @include breakpoint($large) {
-      float: inline-end;
-      width: calc(100% - #{$right-sidebar-width-narrow});
-      padding-inline-end: $right-sidebar-width-narrow;
-    }
-  
-    @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
-      padding-inline-end: $right-sidebar-width;
-    }
-  }
+
   
   .archive__item {
     position: relative;
