@@ -1,18 +1,18 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter
 search: false
 ---
 
 @charset "utf-8";
 
-/* 직접 스킨 명시 → 예: default, dark, contrast 등 */
-@import "minimal-mistakes/skins/default"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
 
-.page__content,
-.page,
-.post,
-.archive {
+/* ✅ 커스터마이징 */
+.container .page__content,
+.container .page,
+.container .post,
+.container .archive {
   max-width: 1000px !important;
   margin: 0 auto;
 }
