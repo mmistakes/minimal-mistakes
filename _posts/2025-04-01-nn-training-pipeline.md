@@ -1,6 +1,6 @@
 ---
 title: "A Structured Overview of the Neural Network Training Pipeline"
-date: 2024-03-29
+date: 2024-04-01
 category: [deeplearning]
 header:
   teaser: https://github.com/user-attachments/assets/19e141f0-cce3-47a3-8420-fb8d226cb223
