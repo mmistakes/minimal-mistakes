@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Studientag Schule+ Hort geschlossen",
-    "title": "Studientag Schule+ Hort geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=am4xNHRnczIyYWtvMGswdDloY3U5dHNtMHMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2025-03-31",
-      "date_time": null
-    },
-    "end": {
-      "date": "2025-04-01",
-      "date_time": null
-    },
-    "created": "2025-01-14T09:24:43.000Z",
-    "updated": "2025-03-06T18:55:31.467Z"
-  },
-  {
-    "image_path": null,
     "alt": "A2 - Ausflug zum Jonas Haus ",
     "title": "A2 - Ausflug zum Jonas Haus ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-03-25T18:51:20.000Z",
     "updated": "2025-03-25T18:51:20.592Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=c21lMXVpbWo5NmJpMzUwZG1jdHVxaWtvbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-06-10",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-06-11",
+      "date_time": null
+    },
+    "created": "2024-10-11T03:48:29.000Z",
+    "updated": "2024-10-11T03:48:49.755Z"
   }
 ]
