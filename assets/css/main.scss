@@ -7,3 +7,41 @@ search: false
 
 @import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
+
+
+.page {
+  width: 100%;
+  padding-right: 0;
+}
+
+.page__inner-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page__content {
+  width: 100%;
+  padding: 0 2em;
+}
+
+.archive {
+  width: 100%;
+  padding-right: 0;
+}
+
+.archive__item-teaser img {
+  width: 100%;
+  max-width: 100%;
+}
+
+// 특별히 Recent posts 섹션을 위한 스타일
+.list__item {
+  width: 100%;
+  max-width: 100%;
+}
+
+// 이미지가 넘치지 않도록 설정
+.page__content img {
+  max-width: 100%;
+  height: auto;
+}
