@@ -15,6 +15,6 @@ search: true
 
 .grid__item {
   grid-column: 1 / -1 !important;
-  max-width: 1000px !important;
+  max-width: 790px !important;
   margin: 0 auto !important;
 }
