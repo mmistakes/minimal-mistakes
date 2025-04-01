@@ -1,0 +1,7 @@
+.page__content,
+.page,
+.post,
+.archive {
+  max-width: 1000px !important;
+  margin: 0 auto;
+}
