@@ -104,7 +104,6 @@ This table shows the hardware resources available <a href="#references">[3]</a> 
 
 </div>
 
-
 ## Surpassing simulation limits of a single node
 
 To overcome the memory limitations imposed by large qubit counts requires utilizing the *distributed* memory spaces across many nodes by leveraging MPI (Message Passing Interface). MPI is a portable message-passing standard designed to function on parallel computing architectures, and allows for utilizing both the CPUs/GPUs and their distributed memory across many compute nodes. 
@@ -136,9 +135,6 @@ Using MPI we can aggregate the system memory of many nodes for our simulation. B
 </table>
 
 </div>
-
-
-
 
 ## Using GPUs to accelerate Quantum simulations
 
@@ -172,8 +168,6 @@ To speed up simulations, we employed a technique called cache blocking, in which
 
 By strategically rerouting quantum operations using simulated noiseless SWAP gates, frequently interacting qubits are grouped together in memory on a single node; thereby reducing the need for slow data transfers between different distributed memory spaces spread out across the nodes of the supercomputer. This optimization technique draws inspiration from classical cache blocking methods and is implemented within Qiskit Aer to improve its performance, especially when dealing with large, complex quantum circuits. Also, by utilizing additional memory spaces for buffering, the data exchange between chunks can be decreased, making the simulation more efficient.  <a href="#references">[4]</a> <a href="#references">[5]</a>.
 
-
-
 ## Example connectivity graphs showing network traffic between LUMI-G nodes
 In the LUMI-G partition, nodes are connected to each other by switches. Each node has 4 network connections, and single switch can have maximum of 16 nodes connected.
 In image below, the compute nodes are marked as purple dots and slingshot switches as orange dots. 
@@ -183,9 +177,6 @@ The maximum hops that any network traffic can take between nodes on the LUMI-G s
 
 The example graphs below demonstrate the minimum possible data exchange paths for 2 different simulations that may take place between 16 nodes (38 qubits) and 32 nodes (39 qubits) over the Cray/HPE Slingshot network. This demonstrates the utility of trying to use the local memory space of a nodes before accessing distributed memory spaces.
 Localized computations take place within the nodes before having to transfer data across the network, a requirement for data exhange between caches. For example, when using 16 nodes connected by single switch, any data exhange between nodes goes through a maximum of 2 hops. 
-
-<br>
-<br>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="margin-right: 10px; text-align: center; margin-bottom: 20px;">
@@ -198,9 +189,6 @@ Localized computations take place within the nodes before having to transfer dat
     </div>
 </div>
 
-<br>
-<br>
-
 ## "Necessity is the mother of invention" - Building a container for scaling simulations
 
 When our users inquired about running multinode simulations with Qiskit, we took the task of building a Qiskit Aer singularity container with support for the AMD ROCm GPUs using Native HPE Cray MPI as suggested by the LUMI documentation.
@@ -208,9 +196,6 @@ When our users inquired about running multinode simulations with Qiskit, we took
 [Qiskit documentation on CSC](https://docs.csc.fi/apps/qiskit/)
 
 Multiple container build iterations took place before arriving at the latest version of qiskit/qiskit-aer. The biggest performance improvements in the qiskit-aer container comes from the usage of the same Native HPE Cray MPI software that is built on the node.
-
-<br>
-<br>
 
 <div style="text-align: center;">
   <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/singularity_container_arranged_size.png" alt="Singularity Container" width="900px"/>
@@ -221,9 +206,6 @@ Multiple container build iterations took place before arriving at the latest ver
     </em></small>
   </div>
 </div>
-
-<br>
-<br>
 
 ## In order to build a performant container, some tradeoffs were made.
 
@@ -369,9 +351,6 @@ Assess the performance limits of simulating quantum circuits on a single LUMI *s
 
 ---
 
-<br>
-<br>
-
 **Quantum Volume - Single Node execution time results table**
 
 <div align="center">
@@ -404,14 +383,9 @@ Assess the performance limits of simulating quantum circuits on a single LUMI *s
 
 </div>
 
-<br>
-<br>
-
 **GPU Statistics for a 32 Qubit Simulation on a single LUMI-G node** 
 
 notice the GPU VRAM usage (38%), and not all GPUs are at a constant 100% utilization
-<br>
-<br>
 
 ```sh
 > srun --interactive --pty --jobid=<SLURM_JOBID> rocm-smi
@@ -442,14 +416,10 @@ Device  [Model : Revision]    Temp    Power   Partitions      SCLK     MCLK     
 ============================================== End of ROCm SMI Log ===============================================
 
 ```
-<br>
-<br>
 
 **GPU Statistics for a 34 Qubit Simulation on a single LUMI-G node**
 
 notice the increased GPU VRAM usage (63%) and all GPUs at 100% utilization
-<br>
-<br>
 
 ```sh
 > srun --interactive --pty --jobid=<SLURM_JOBID> rocm-smi
@@ -479,26 +449,18 @@ Device  [Model : Revision]    Temp    Power   Partitions      SCLK     MCLK     
 ==================================================================================================================
 ============================================== End of ROCm SMI Log ===============================================
 ```
-<br>
-<br>
 
 **Quantum Volume - Single Node execution time results - chart**
-
-<br>
-<br>
 
 <div style="text-align: center;">
   <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/Single-Node-Quantum-Volume.png" alt=Single Node execution time results" width="900px"/>
   <br>
-  <div style="width: 800px; display: inline-block;">
+  <div style="display: inline-block;">
     <small><em>
         Figure 3: Chart displaying the execution time of a range of qubits for Quantum Volume depth 10 and depth 30 that were run on a single LUMI standard-g node. 
     </em></small>
   </div>
 </div>
-
-<br>
-<br>
 
 ---
 
@@ -544,21 +506,23 @@ Evaluate how simulation time decreases as the number of compute nodes increases 
 
 ---
 
-<br>
-<br>
-
 **Calculating Max Nodes for our tests**
 
 Before running the tests, some awareness about the test parameteres that can and can not be used is needed, based on some initial assumptions and quick math. To obtain an estimate of the maximum number of nodes for error-free execution of a job, the formula below provides some guidance.
 
-<br>
-<br>
+$$
+\begin{aligned}
+\text{mem[statevec]}  &\quad = \quad \text{precision} \times 2^n
+\\
+\text{mem[cache]}  &\quad = \quad \text{precision} \times 2^{c}
+\\
+\end{aligned}
+$$
+
+, where n is number of qubits and c is the number of cache blocking qubits
 
 $$
 \begin{aligned}
-\text{mem[statevec]}  &\quad = \quad \text{precision} \times 2^n \qquad \text{where } n \text{ is number of qubits} \\
-\text{mem[cache]}  &\quad = \quad \text{precision} \times 2^{c} \qquad \text{ where }c \text{ is number of cache blocking qubits} \\
-\\
 \text{Max MPI Ranks} &\quad = \quad \frac{\text{mem[statevec]}}{\text{mem[cache]}} \\
 
  %&\quad = \quad \frac{\text{precision} \times 2^n}{\text{precision} \times 2^{c}} \\
@@ -567,10 +531,6 @@ $$
 \text{Max Nodes} &\quad = \quad \frac{\text{Max MPI Ranks}}{\text{Tasks Per Node}}
 \end{aligned}
 $$
-
-
-
-
 
 
 Using the above formulas to calculate *Max Nodes* with respect to our chosen value for *n* qubits and *c* cache-blocking qubits we can compare the results of the formula to the error message
@@ -647,10 +607,7 @@ n &\quad = \quad \text{34} \\
 \end{aligned}
 $$
 
-
 Equipped with the tools needed to estimate the resource needs before submitting jobs, we proceed with the Strong Scaling tests.
-
-
 
 **Quantum Volume - Strong Scaling execution time results table**
 
@@ -683,9 +640,6 @@ Equipped with the tools needed to estimate the resource needs before submitting 
 
 </div>
 
-<br>
-<br>
-
 **Quantum Volume - Strong Scaling execution time results - chart**
 
 <p align="center">
@@ -695,9 +649,6 @@ Equipped with the tools needed to estimate the resource needs before submitting 
       Figure 4: Chart displaying the execution time of Quantum Volume depth 10, 30, 100, and 300 on a range of nodes.
   </em></small>
 </p>
-
-<br>
-<br>
 
 
 ### Figuring out the optimal size for cache-blocking qubits for the Strong Scaling tests
@@ -763,13 +714,8 @@ $$
 
 ---
 
-<br>
-<br>
-
 **Quantum Volume - Weak Scaling - network complexity scales with allocated resources (nodes)**
 
-<br>
-<br>
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="margin-right: 10px; text-align: center; margin-bottom: 20px;">
@@ -785,9 +731,6 @@ $$
         <div>Figure 8. Network traffic - 128 nodes</div>
     </div>
 </div>
-
-<br>
-<br>
 
 **Quantum Volume - Weak Scaling execution time result tables**
 
@@ -831,7 +774,6 @@ $$
 </p>
 
 These three tests together provide a comprehensive assessment of how state-vector quantum simulations scale in a high-performance computing environment, highlighting both capabilities and limitations in practical large-qubit simulations.
-
 
 ## Summary
 
