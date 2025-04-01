@@ -9,10 +9,12 @@ search: true
 @import "minimal-mistakes/skins/default"; // skin
 @import "minimal-mistakes"; // main partials
 
-.page__content,
-.page,
-.post,
-.archive {
+.entries__grid {
+  grid-template-columns: 1fr !important;
+}
+
+.grid__item {
+  grid-column: 1 / -1 !important;
   max-width: 1000px !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
