@@ -180,11 +180,11 @@ Localized computations take place within the nodes before having to transfer dat
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="margin-right: 10px; text-align: center; margin-bottom: 20px;">
-        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/16_nodes_connectivity_graph-updated.png" alt="32" style="height: 350px; display: block; margin-left: auto; margin-right: auto;">
+        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/16_nodes_connectivity_graph-updated.png" alt="32" style="display: block; margin-left: auto; margin-right: auto;">
         <div>Figure 1. Network traffic - 16 nodes</div>
     </div>
     <div style="margin-right: 10px; text-align: center; margin-bottom: 20px;">
-        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/32_nodes_connectivity_graph-seperate.png" alt="64" style="height: 350px; display: block; margin-left: auto; margin-right: auto;">
+        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/32_nodes_connectivity_graph-seperate.png" alt="64" style="display: block; margin-left: auto; margin-right: auto;">
         <div>Figure 2. Network traffic - 32 nodes</div>
     </div>
 </div>
@@ -597,11 +597,13 @@ n &\quad = \quad \text{34} \\
 \text{Max Nodes} &\quad = \quad \text{8} \\
 \text{Tasks per Node} &\quad = \quad \text{8} \\
 \\
-\text{Max MPI Ranks} &\quad = \quad \text{Max Nodes} \times \text{Tasks Per Node} \\
+\text{Max MPI Ranks} &\quad = \quad (\text{Max Nodes} \times \\
+                                    &\quad\quad\quad\text{Tasks Per Node}) \\
                      &\quad = \quad \text{64} \\
 \\ \\ 
 \text{Max MPI Ranks} &\quad = \quad 2^{n-c} \\ \\
-\Rightarrow c &\quad = \quad n - \log_2(\text{Max MPI Ranks}) \\
+\Rightarrow c &\quad = \quad n - \log_2(\text{Max MPI} \\
+                                          &\quad\quad\quad\quad\quad\quad\quad \text{Ranks}) \\
 &\quad = \quad 34 - \log_2 (\text{64}) \\
 &\quad = \quad 28
 \end{aligned}
@@ -672,9 +674,11 @@ $$
 n &\quad = \quad 34 \\
 \text{Max Nodes} &\quad = \quad 32 \\
 \text{Tasks per Node} &\quad = \quad 8 \\ \\
-\text{Max MPI ranks} &\quad = \quad \text{Max Nodes} \times \text{Tasks Per Node} \\
+\text{Max MPI Ranks} &\quad = \quad (\text{Max Nodes} \times \\
+                                    &\quad\quad\quad\text{Tasks Per Node}) \\
 &\quad = \quad 256 \\ \\
-\Rightarrow c &\quad = \quad n - \log_2(\text{Max MPI ranks}) \\
+\Rightarrow c &\quad = \quad n - \log_2(\text{Max MPI} \\
+                                          &\quad\quad\quad\quad\quad\quad\quad \text{Ranks}) \\
 &\quad = \quad 34 - \log_2 (256) \\
 &\quad = \quad 26
 \end{aligned}
@@ -719,15 +723,15 @@ $$
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <div style="margin-right: 10px; text-align: center; margin-bottom: 20px;">
-        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/weak-scaling-32-nodes-network-complexity.png" alt="32" style="height: 350px; display: block; margin-left: auto; margin-right: auto;">
+        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/weak-scaling-32-nodes-network-complexity.png" alt="32" style="display: block; margin-left: auto; margin-right: auto;">
         <div>Figure 6. Network traffic - 32 nodes</div>
     </div>
     <div style="margin-right: 10px; text-align: center; margin-bottom: 20px;">
-        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/weak-scaling-64-nodes-network-complexity.png" alt="64" style="height: 350px; display: block; margin-left: auto; margin-right: auto;">
+        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/weak-scaling-64-nodes-network-complexity.png" alt="64" style="display: block; margin-left: auto; margin-right: auto;">
         <div>Figure 7. Network traffic - 64 nodes</div>
     </div>
     <div style="text-align: center; margin-bottom: 20px;">
-        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/weak-scaling-128-nodes-network-complexity.png" alt="128" style="height: 350px; display: block; margin-left: auto; margin-right: auto;">
+        <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/weak-scaling-128-nodes-network-complexity.png" alt="128" style="display: block; margin-left: auto; margin-right: auto;">
         <div>Figure 8. Network traffic - 128 nodes</div>
     </div>
 </div>
