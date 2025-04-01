@@ -309,7 +309,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -323,9 +322,15 @@ defaults:
       comments: # true
       share: true
       related: true
-
+  # _pages (archives)
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: archive
+      author_profile: true
+      classes: wide  # 또는 full로 설정하면 더 넓어집니다
 collections:
   portfolio:
     output: true
     permalink: /portfolio/:title/
-
