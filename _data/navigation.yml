@@ -26,8 +26,8 @@ docs:
     children:
       - title: "PyTorch"
         url: /pytorch/
-      - title: "ML Lifecycle"
-        url: /ml_lifecycle/
+      # - title: "ML Lifecycle"
+      #   url: /ml_lifecycle/
       # - title: "EDA & DataViz"
       #   url: /matplotlib/
       # - title: "Basic AI Development"
@@ -50,8 +50,8 @@ docs:
       #   url: /generative_ai/
       # - title: "Product Serving"
       #   url: /product_serving/
-      - title: "모델 최적화 및 경량화"
-        url: /model_compression/
+      # - title: "모델 최적화 및 경량화"
+      #   url: /model_compression/
       # - title: "RecSys Recent Trend"
       #   url: /recsys_recent_trend/
   - title: "Hackathon-NOTA AI"
