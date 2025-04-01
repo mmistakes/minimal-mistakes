@@ -1,20 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: true
----
-
-@charset "utf-8";
-
-/* 직접 스킨 명시 → 예: default, dark, contrast 등 */
-@import "minimal-mistakes/skins/default"; // skin
-@import "minimal-mistakes"; // main partials
-
-.entries__grid {
-  grid-template-columns: 1fr !important;
-}
-
+.archive,
+.entries__grid,
 .grid__item {
-  grid-column: 1 / -1 !important;
-  max-width: 790px !important;
+  max-width: 791px !important;
   margin: 0 auto !important;
 }
