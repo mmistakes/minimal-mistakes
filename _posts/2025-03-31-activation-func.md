@@ -1,6 +1,6 @@
 ---
 title: "Activation functions"
-date: 2024-03-29
+date: 2024-03-31
 category: [deeplearning]
 header:
   teaser: https://github.com/user-attachments/assets/94ab4e96-a7c0-4408-bba1-56fb254cc19e
