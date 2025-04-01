@@ -3,9 +3,9 @@ title: "A Structured Overview of the Neural Network Training Pipeline"
 date: 2024-03-29
 category: [deeplearning]
 header:
-  teaser: https://github.com/user-attachments/assets/d161e7d1-c2a0-40b1-8e17-852eef499b2b
+  teaser: https://github.com/user-attachments/assets/19e141f0-cce3-47a3-8420-fb8d226cb223
 ---
-<img src="https://github.com/user-attachments/assets/d161e7d1-c2a0-40b1-8e17-852eef499b2b" width="300"/>
+<img src="https://github.com/user-attachments/assets/19e141f0-cce3-47a3-8420-fb8d226cb223" width="300"/>
 
 ## 1. 처음에는 **무작위 가중치(W, b)로 시작**
 - 모델은 초기 상태에서 아무것도 모르므로, 가중치 `W`와 편향 `b`를 **랜덤하게 설정**.
