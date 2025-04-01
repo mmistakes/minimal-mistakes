@@ -5,9 +5,11 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+/* 직접 스킨 명시 → 예: default, dark, contrast 등 */
+@import "minimal-mistakes/skins/default"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* 너비 커스터마이징 */
 .page__content,
 .archive,
 .page,
