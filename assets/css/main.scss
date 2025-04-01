@@ -8,3 +8,11 @@ search: false
 /* 직접 스킨 명시 → 예: default, dark, contrast 등 */
 @import "minimal-mistakes/skins/default"; // skin
 @import "minimal-mistakes"; // main partials
+
+.page__content,
+.page,
+.post,
+.archive {
+  max-width: 1000px !important;
+  margin: 0 auto;
+}
