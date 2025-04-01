@@ -11,13 +11,6 @@ search: false
 
 .entries__grid .grid__item {
   grid-column: 1 / -1;
-}
-
-/* ✅ 커스터마이징 */
-.container .page__content,
-.container .page,
-.container .post,
-.container .archive {
-  max-width: 1000px !important;
+  max-width: 1000px;
   margin: 0 auto;
 }
