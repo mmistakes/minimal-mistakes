@@ -323,6 +323,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      css: "/assets/css/custom.css"
 
 collections:
   portfolio:
