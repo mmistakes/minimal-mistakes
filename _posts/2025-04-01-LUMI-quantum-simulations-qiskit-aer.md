@@ -200,7 +200,7 @@ Multiple container build iterations took place before arriving at the latest ver
 <div style="text-align: center;">
   <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/singularity_container_arranged_size.png" alt="Singularity Container" width="900px"/>
   <br>
-  <div style="width: 600px; display: inline-block;">
+  <div style="display: inline-block;">
     <small><em>
         Figure 4: A layered Singularity container approach similar to nested dolls, where each container is built using the previous one as a bootstrap image. The base container serves as the foundation, with additional software installed at each stage, culminating in the final specialized qiskit-aer container. 
     </em></small>
