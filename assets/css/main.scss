@@ -9,3 +9,12 @@ search: false
 @import "minimal-mistakes";
 @import "custom";            // <- 여기에 custom.scss가 있다면 추가
 
+.entries__grid {
+  grid-template-columns: 1fr !important;
+}
+
+.grid__item {
+  grid-column: 1 / -1 !important;
+  max-width: 790px !important;
+  margin: 0 auto !important;
+}
