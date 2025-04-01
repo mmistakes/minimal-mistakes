@@ -7,10 +7,5 @@ search: false
 
 @import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
+@import "custom";            // <- 여기에 custom.scss가 있다면 추가
 
-
-.entries__grid .grid__item {
-  grid-column: 1 / -1;
-  max-width: 1000px;
-  margin: 0 auto;
-}
