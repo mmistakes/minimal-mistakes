@@ -453,7 +453,7 @@ Device  [Model : Revision]    Temp    Power   Partitions      SCLK     MCLK     
 **Quantum Volume - Single Node execution time results - chart**
 
 <div style="text-align: center;">
-  <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/Single-Node-Quantum-Volume.png" alt=Single Node execution time results" width="900px"/>
+  <img src="/assets/images/LUMI-Quantum-Simulations-qiskit-aer/Single-Node-Quantum-Volume.png" alt=Single Node execution time results width="900px"/>
   <br>
   <div style="display: inline-block;">
     <small><em>
