@@ -1,7 +1,7 @@
 ---
 title: 'Breaking New Ground: Simulating Quantum Algorithms Up to 44 Qubits on LUMI'
 date: 2025-04-01
-permalink: /_posts/2025-04-01-LUMI-quantum-simulations-qiskit-aer.md
+permalink: /_posts/2025-04-01-LUMI-quantum-simulations-qiskit-aer/
 header:
   teaser: /assets/images/LUMI-Quantum-simulations-thumbnail.png
 published: true
@@ -16,11 +16,7 @@ tags:
   - GPU
 ---
 
-# Breaking New Ground: Simulating Quantum Algorithms Up to 44 Qubits on LUMI
-
-## Introduction:
-
-The EuroHPC LUMI supercomputer, hosted by CSC - IT Center for Science in Kajaani, Finland, supports a wide range of world-leading research and development, from digital twins of the Earth to the formation of cosmic strings in the early universe. Now, large quantum algorithms can be efficiently simulated, pushing the frontiers for the next generation of science and discovery.
+*The EuroHPC LUMI supercomputer, hosted by CSC - IT Center for Science in Kajaani, Finland, supports a wide range of world-leading research and development, from digital twins of the Earth to the formation of cosmic strings in the early universe. Now, large quantum algorithms can be efficiently simulated, pushing the frontiers for the next generation of science and discovery.*
 
 ## Why bother with quantum simulations when real quantum computers already exist?
 
@@ -55,18 +51,24 @@ High end laptops / desktops are typically available with memory configurations o
 The Table below illustrates the amount of memory required for running state-vector simulation data using double precision. Every time the number of qubits is increased by one, the qubit memory requirements for a state-vector simulation is doubled. To simulate more than 34 qubits requires breaking beyond the limits of the local memory space within a single node -- we need to parallelize across the nodes of the supercomputer.
 
 <div align="center">
-
-| # of Qubits | Memory requirements |
-|-------------|---------------------|
-| 32          | 64 GB               |
-| 33          | 128 GB              |
-| 34          | 256 GB              |
-| 36          | 1024 GB             |
-| 38          | 4 TB                |
-| 40          | 16 TB               |
-| 42          | 64 TB               |
-| 44          | 256 TB              |
-
+  <table>
+    <thead>
+      <tr>
+        <th># of Qubits</th>
+        <th>Memory requirements</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>32</td><td>64 GB</td></tr>
+      <tr><td>33</td><td>128 GB</td></tr>
+      <tr><td>34</td><td>256 GB</td></tr>
+      <tr><td>36</td><td>1024 GB</td></tr>
+      <tr><td>38</td><td>4 TB</td></tr>
+      <tr><td>40</td><td>16 TB</td></tr>
+      <tr><td>42</td><td>64 TB</td></tr>
+      <tr><td>44</td><td>256 TB</td></tr>
+    </tbody>
+  </table>
 </div>
 
 ### Hardware Specifications for a single node
@@ -75,19 +77,30 @@ This table shows the hardware resources available <a href="#references">[3]</a> 
 
 <div align="center">
 
-| LUMI single GPU accelerated node | Specifications             |
-|----------------------------------|----------------------------|
-| LUMI Partition                   | standard-g                 |
-| Model of node                    | HPE Cray EX                |
-| CPU Model                        | AMD EPYC Trento            |
-| # of CPU sockets                 | 1                          |
-| # of CPU cores                   | 64                         |
-| GPU Model                        | AMD Instinct MI250X GPU    |
-| AMD Rocm version                 | 6.1.2                      |
-| # of GPUs (GCDs)                 | 8                          |
-| Amount of memory per GPU         | 64 GB                      |
-| Amount of Useable system memory  | 480 GB                     |
-| Network                          | HPE Cray Slingshot-11 200 Gbps NIC using Dragonfly topology |
+<table>
+  <thead>
+    <tr>
+      <th>LUMI single GPU accelerated node</th>
+      <th>Specifications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>LUMI Partition</td><td>standard-g</td></tr>
+    <tr><td>Model of node</td><td>HPE Cray EX</td></tr>
+    <tr><td>CPU Model</td><td>AMD EPYC Trento</td></tr>
+    <tr><td># of CPU sockets</td><td>1</td></tr>
+    <tr><td># of CPU cores</td><td>64</td></tr>
+    <tr><td>GPU Model</td><td>AMD Instinct MI250X GPU</td></tr>
+    <tr><td>AMD Rocm version</td><td>6.1.2</td></tr>
+    <tr><td># of GPUs (GCDs)</td><td>8</td></tr>
+    <tr><td>Amount of memory per GPU</td><td>64 GB</td></tr>
+    <tr><td>Amount of Useable system memory</td><td>480 GB</td></tr>
+    <tr>
+      <td>Network</td>
+      <td>HPE Cray Slingshot-11 200 Gbps NIC using Dragonfly topology</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -102,15 +115,25 @@ Using MPI we can aggregate the system memory of many nodes for our simulation. B
 
 <div align="center">
 
-| *n* # of Qubits | Memory requirements | Number of nodes | Available system memory |
-|-----------------|---------------------|-----------------|-------------------------|
-| 34              | 256 GB              | 1               | 480 GB                  |
-| 35              | 512 GB              | 2               | 960 GB                  |
-| 36              | 2048 GB             | 4               | 1920 GB                 |
-| 38              | 4 TB                | 16              | 7.5 TB                  |
-| 40              | 16 TB               | 64              | 30 TB                   |
-| 42              | 64 TB               | 256             | 120 TB                  |
-| 44              | 256 TB              | 1024            | 480 TB                  |
+<table>
+  <thead>
+    <tr>
+      <th><em>n</em> # of Qubits</th>
+      <th>Memory requirements</th>
+      <th>Number of nodes</th>
+      <th>Available system memory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>34</td><td>256 GB</td><td>1</td><td>480 GB</td></tr>
+    <tr><td>35</td><td>512 GB</td><td>2</td><td>960 GB</td></tr>
+    <tr><td>36</td><td>2048 GB</td><td>4</td><td>1920 GB</td></tr>
+    <tr><td>38</td><td>4 TB</td><td>16</td><td>7.5 TB</td></tr>
+    <tr><td>40</td><td>16 TB</td><td>64</td><td>30 TB</td></tr>
+    <tr><td>42</td><td>64 TB</td><td>256</td><td>120 TB</td></tr>
+    <tr><td>44</td><td>256 TB</td><td>1024</td><td>480 TB</td></tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -182,7 +205,7 @@ Localized computations take place within the nodes before having to transfer dat
 
 When our users inquired about running multinode simulations with Qiskit, we took the task of building a Qiskit Aer singularity container with support for the AMD ROCm GPUs using Native HPE Cray MPI as suggested by the LUMI documentation.
 
-https://docs.csc.fi/apps/qiskit/
+[Qiskit documentation on CSC](https://docs.csc.fi/apps/qiskit/)
 
 Multiple container build iterations took place before arriving at the latest version of qiskit/qiskit-aer. The biggest performance improvements in the qiskit-aer container comes from the usage of the same Native HPE Cray MPI software that is built on the node.
 
@@ -253,7 +276,7 @@ These results clearly justify the additional effort.
 
 For instructions on how to carry out simulations using our containers, on LUMI, visit this link:
 
-https://docs.csc.fi/apps/qiskit/
+[Qiskit documentation on CSC](https://docs.csc.fi/apps/qiskit/)
 
 
 **Container information used in tests**
@@ -353,18 +376,31 @@ Assess the performance limits of simulating quantum circuits on a single LUMI *s
 
 <div align="center">
 
-| Qubits | Blocking Qubits | Allocated Nodes | Allocated GPUs | Tasks Per Node | Circuit Execution Time (Depth 10) - Seconds | Circuit Execution Time (Depth 30) - Seconds |
-|--------|-----------------|-----------------|----------------|----------------|---------------------------------------------|---------------------------------------------|
-| 25     | 0               | 1               | 8              | 1              | 2.147                                       | 2.349                                       |
-| 26     | 0               | 1               | 8              | 1              | 2.193                                       | 2.598                                       |
-| 27     | 0               | 1               | 8              | 1              | 2.436                                       | 3.156                                       |
-| 28     | 0               | 1               | 8              | 1              | 2.854                                       | 4.329                                       |
-| 29     | 0               | 1               | 8              | 1              | 3.463                                       | 6.577                                       |
-| 30     | 29              | 1               | 8              | 1              | 4.352                                       | 7.656                                       |
-| 31     | 29              | 1               | 8              | 1              | 5.890                                       | 10.536                                      |
-| 32     | 29              | 1               | 8              | 1              | 9.183                                       | 19.993                                      |
-| 33     | 29              | 1               | 8              | 1              | 15.656                                      | 37.115                                      |
-| 34     | 29              | 1               | 8              | 1              | 32.371                                      | 71.462                                      |
+<table>
+  <thead>
+    <tr>
+      <th>Qubits</th>
+      <th>Blocking Qubits</th>
+      <th>Allocated Nodes</th>
+      <th>Allocated GPUs</th>
+      <th>Tasks Per Node</th>
+      <th>Circuit Execution Time (Depth 10) - Seconds</th>
+      <th>Circuit Execution Time (Depth 30) - Seconds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>25</td><td>0</td><td>1</td><td>8</td><td>1</td><td>2.147</td><td>2.349</td></tr>
+    <tr><td>26</td><td>0</td><td>1</td><td>8</td><td>1</td><td>2.193</td><td>2.598</td></tr>
+    <tr><td>27</td><td>0</td><td>1</td><td>8</td><td>1</td><td>2.436</td><td>3.156</td></tr>
+    <tr><td>28</td><td>0</td><td>1</td><td>8</td><td>1</td><td>2.854</td><td>4.329</td></tr>
+    <tr><td>29</td><td>0</td><td>1</td><td>8</td><td>1</td><td>3.463</td><td>6.577</td></tr>
+    <tr><td>30</td><td>29</td><td>1</td><td>8</td><td>1</td><td>4.352</td><td>7.656</td></tr>
+    <tr><td>31</td><td>29</td><td>1</td><td>8</td><td>1</td><td>5.890</td><td>10.536</td></tr>
+    <tr><td>32</td><td>29</td><td>1</td><td>8</td><td>1</td><td>9.183</td><td>19.993</td></tr>
+    <tr><td>33</td><td>29</td><td>1</td><td>8</td><td>1</td><td>15.656</td><td>37.115</td></tr>
+    <tr><td>34</td><td>29</td><td>1</td><td>8</td><td>1</td><td>32.371</td><td>71.462</td></tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -620,14 +656,30 @@ Equipped with the tools needed to estimate the resource needs before submitting 
 
 <div align="center">
 
-| # of Qubits | Blocking Qubits | Allocated Nodes | Allocated GPUs | Tasks Per Node | Total Tasks (MPI Ranks) | Circuit Execution Time (Depth 10) - seconds | Circuit Execution Time (Depth 30) - seconds | Circuit Execution Time (Depth 100) - seconds | Circuit Execution Time (Depth 300) - seconds |
-|-------------|-----------------|-----------------|----------------|----------------|-------------------------|---------------------------------------------|---------------------------------------------|----------------------------------------------|----------------------------------------------|
-| 34          | 26              | 1               | 8              | 8              | 8                       | 17.704                                      | 53.813                                      | 157.277                                      | 451.620                                      |
-| 34          | 26              | 2               | 8              | 8              | 16                      | 14.196                                      | 40.388                                      | 118.691                                      | 338.842                                      |
-| 34          | 26              | 4               | 8              | 8              | 32                      | 9.117                                       | 23.768                                      | 73.050                                       | 200.675                                      |
-| 34          | 26              | 8               | 8              | 8              | 64                      | 5.721                                       | 13.236                                      | 41.134                                       | 113.088                                      |
-| 34          | 26              | 16              | 8              | 8              | 128                     | 3.536                                       | 7.980                                       | 22.074                                       | 59.613                                       |
-| 34          | 26              | 32              | 8              | 8              | 256                     | 2.645                                       | 5.232                                       | 13.063                                       | 35.655                                       |
+<table>
+  <thead>
+    <tr>
+      <th># of Qubits</th>
+      <th>Blocking Qubits</th>
+      <th>Allocated Nodes</th>
+      <th>Allocated GPUs</th>
+      <th>Tasks Per Node</th>
+      <th>Total Tasks (MPI Ranks)</th>
+      <th>Circuit Execution Time (Depth 10) - seconds</th>
+      <th>Circuit Execution Time (Depth 30) - seconds</th>
+      <th>Circuit Execution Time (Depth 100) - seconds</th>
+      <th>Circuit Execution Time (Depth 300) - seconds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>34</td><td>26</td><td>1</td><td>8</td><td>8</td><td>8</td><td>17.704</td><td>53.813</td><td>157.277</td><td>451.620</td></tr>
+    <tr><td>34</td><td>26</td><td>2</td><td>8</td><td>8</td><td>16</td><td>14.196</td><td>40.388</td><td>118.691</td><td>338.842</td></tr>
+    <tr><td>34</td><td>26</td><td>4</td><td>8</td><td>8</td><td>32</td><td>9.117</td><td>23.768</td><td>73.050</td><td>200.675</td></tr>
+    <tr><td>34</td><td>26</td><td>8</td><td>8</td><td>8</td><td>64</td><td>5.721</td><td>13.236</td><td>41.134</td><td>113.088</td></tr>
+    <tr><td>34</td><td>26</td><td>16</td><td>8</td><td>8</td><td>128</td><td>3.536</td><td>7.980</td><td>22.074</td><td>59.613</td></tr>
+    <tr><td>34</td><td>26</td><td>32</td><td>8</td><td>8</td><td>256</td><td>2.645</td><td>5.232</td><td>13.063</td><td>35.655</td></tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -739,19 +791,34 @@ $$
 
 **Quantum Volume - Weak Scaling execution time result tables**
 
-| Qubits | Blocking Qubits | Number of Nodes | Tasks Per Node | Total Tasks (MPI Ranks) | Minimum Memory Requirements (GB) | Total Usable Memory Across Nodes (GB) | Circuit Execution Time (Depth 10) - seconds | Circuit Execution Time (Depth 30) - seconds |
-|--------|-----------------|-----------------|----------------|-------------------------|-----------------------------------|----------------------------------------|---------------------------------------------|---------------------------------------------|
-| 34     | 29              | 1               | 8              | 8                       | 256 GB                            | 480 GB                                 | 17.723                                      | 47.683                                      |
-| 35     | 29              | 2               | 8              | 16                      | 512 GB                            | 960 GB                                 | 28.355                                      | 63.231                                      |
-| 36     | 29              | 4               | 8              | 32                      | 1024 GB                           | 1920 GB                                | 31.728                                      | 88.154                                      |
-| 37     | 29              | 8               | 8              | 64                      | 2 TB                              | 4 TB                                   | 32.785                                      | 94.958                                      |
-| 38     | 29              | 16              | 8              | 128                     | 4 TB                              | 8 TB                                   | 39.217                                      | 106.818                                     |
-| 39     | 29              | 32              | 8              | 256                     | 8 TB                              | 15 TB                                  | 46.092                                      | 120.872                                     |
-| 40     | 29              | 64              | 8              | 512                     | 16 TB                             | 31 TB                                  | 48.920                                      | 170.657                                     |
-| 41     | 29              | 128             | 8              | 1024                    | 32 TB                             | 61 TB                                  | 63.667                                      | 185.674                                     |
-| 42     | 29              | 256             | 8              | 2048                    | 64 TB                             | 123 TB                                 | 97.119                                      | 259.823                                     |
-| 43     | 29              | 512             | 8              | 4096                    | 128 TB                            | 246 TB                                 | 135.397                                     | 420.243                                     |
-| 44     | 29              | 1024            | 8              | 8192                    | 256 TB                            | 492 TB                                 | 286.414                                     | 649.876                                     |
+<table>
+  <thead>
+    <tr>
+      <th>Qubits</th>
+      <th>Blocking Qubits</th>
+      <th>Number of Nodes</th>
+      <th>Tasks Per Node</th>
+      <th>Total Tasks (MPI Ranks)</th>
+      <th>Minimum Memory Requirements (GB)</th>
+      <th>Total Usable Memory Across Nodes (GB)</th>
+      <th>Circuit Execution Time (Depth 10) - seconds</th>
+      <th>Circuit Execution Time (Depth 30) - seconds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>34</td><td>29</td><td>1</td><td>8</td><td>8</td><td>256 GB</td><td>480 GB</td><td>17.723</td><td>47.683</td></tr>
+    <tr><td>35</td><td>29</td><td>2</td><td>8</td><td>16</td><td>512 GB</td><td>960 GB</td><td>28.355</td><td>63.231</td></tr>
+    <tr><td>36</td><td>29</td><td>4</td><td>8</td><td>32</td><td>1024 GB</td><td>1920 GB</td><td>31.728</td><td>88.154</td></tr>
+    <tr><td>37</td><td>29</td><td>8</td><td>8</td><td>64</td><td>2 TB</td><td>4 TB</td><td>32.785</td><td>94.958</td></tr>
+    <tr><td>38</td><td>29</td><td>16</td><td>8</td><td>128</td><td>4 TB</td><td>8 TB</td><td>39.217</td><td>106.818</td></tr>
+    <tr><td>39</td><td>29</td><td>32</td><td>8</td><td>256</td><td>8 TB</td><td>15 TB</td><td>46.092</td><td>120.872</td></tr>
+    <tr><td>40</td><td>29</td><td>64</td><td>8</td><td>512</td><td>16 TB</td><td>31 TB</td><td>48.920</td><td>170.657</td></tr>
+    <tr><td>41</td><td>29</td><td>128</td><td>8</td><td>1024</td><td>32 TB</td><td>61 TB</td><td>63.667</td><td>185.674</td></tr>
+    <tr><td>42</td><td>29</td><td>256</td><td>8</td><td>2048</td><td>64 TB</td><td>123 TB</td><td>97.119</td><td>259.823</td></tr>
+    <tr><td>43</td><td>29</td><td>512</td><td>8</td><td>4096</td><td>128 TB</td><td>246 TB</td><td>135.397</td><td>420.243</td></tr>
+    <tr><td>44</td><td>29</td><td>1024</td><td>8</td><td>8192</td><td>256 TB</td><td>492 TB</td><td>286.414</td><td>649.876</td></tr>
+  </tbody>
+</table>
 
 **Quantum Volume - Weak Scaling execution time results**
 
