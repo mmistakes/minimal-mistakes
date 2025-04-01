@@ -7,16 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
-
-
-.page__content,
-.archive,
-.grid__wrapper,
-.page__inner-wrap,
-.search-results__content {
-  max-width: 760px; /* 원하는 최대 너비 */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
