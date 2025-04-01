@@ -1,12 +1,11 @@
 ---
-layout: post
 title: "Activation functions"
 date: 2024-03-31
 category: [deeplearning]
 header:
   teaser: https://github.com/user-attachments/assets/94ab4e96-a7c0-4408-bba1-56fb254cc19e
-excerpt:
 ---
+<!--more-->
 
 ## Activation Function
 - 뉴런(노드)에서 나온 출력값을 비선형 함수에 통과시켜주는 함수.
