@@ -1,4 +1,136 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>magobbing blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+            color: #34495e;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        iframe {
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+
+        .publications {
+            margin-top: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .publications h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .publications p {
+            font-size: 16px;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .publications a {
+            color: #3498db;
+            background-color: transparent;
+            padding: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>webpage 이원</h1>
+
+    <!-- 사진 -->
+    <img src="me.jpg" alt="내 사진" width="300">
+
+    <p>나의 전공은 <strong>심리학</strong>이고 <strong>임상신경심리대학원</strong> 전공 예정입니다.</p>
+
+    <!-- 관심 분야 -->
+    <section class="interests">
+      <h2>Interested</h2>
+      <ul>
+        <li><span>🧠</span>Neuropsychology</li>
+        <li><span>🩺</span> Clinical Psychology</li>
+        <li><span>📊</span> Statistics</li>
+      </ul>
+    </section>
+
+  
+    <!-- 유튜브 소개 영상 -->
+    <h2>좋아하는 것</h2>
+    <iframe width="640" height="360" 
+        src="https://www.youtube.com/embed/5l8gIRUfhjc" 
+        frameborder="0" allowfullscreen>
+    </iframe>
+
+    <!-- 노션 링크 -->
+    <h2>Notion</h2>
+    <a href="https://www.notion.so/b8b512d45f214d69be0c6b680fa541b8?pvs=4" class="button">Notion</a>
+
+    <!-- 블로그 버튼 추가 -->
+    <h2>Blog</h2>
+    <a href="/blog/" class="button">📚 Blog</a>
+  
+    <!-- Publications -->
+    <div class="publications">
+        <h2>Publications</h2>
+        <p>
+            Yang, I., Kim, I., Kim, J. (2024). Classifying and Representing Emotions based on EEG Data Collected with Wearable Devices. 
+            <em>Korean Society for Emotion and Sensibility, 27(4), 65-74.</em> 
+            <br>
+            DOI: <a href="https://doi.org/10.14695/KJSOS.2024.27.4.63" target="_blank">https://doi.org/10.14695/KJSOS.2024.27.4.63</a>
+        </p>
+    </div>
+
+    <!-- 방명록 -->
+    <h2>방명록 남기기</h2>
+    <form action="/submit" method="POST">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="message">메시지:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>

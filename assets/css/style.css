@@ -1,0 +1,67 @@
+/* 버튼 기본 스타일 */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4CAF50;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 마우스 올렸을 때 효과 */
+.button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* 클릭했을 때 */
+.button:active {
+  transform: scale(0.98);
+}
+
+/* 관심 분야 섹션 스타일 */
+.interests {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.interests h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* 리스트 스타일 */
+.interests ul {
+  list-style: none;
+  padding: 0;
+}
+
+.interests li {
+  font-size: 18px;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 마우스 호버 시 효과 */
+.interests li:hover {
+  background-color: #e6f7ff;
+  transform: translateY(-2px);
+}
+
