@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "EncryH.Blog"
 title_separator          : "|"
 subtitle                 : # "의미있는 학습을 기록하는 공간"
-name                     : "강후민"
+name                     : "Kang Humin"
 description              : "보안 학습을 기록하는 블로그입니다"
 url                      : "https://EncryH.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
