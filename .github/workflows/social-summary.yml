@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       post_path:
-        description: 'Path to blog post markdown (e.g., _posts/2024-03-25-my-post.md)'
+        description: 'Path to blog post markdown (e.g., _posts/2019-06-15-visit-a-tea-shop-to-gift-feedback.md)'
         required: true
 
 jobs:
