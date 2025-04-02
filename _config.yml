@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "EncryH.Blog"
 title_separator          : "|"
-subtitle                 : "의미있는 학습을 기록하는 공간"
+subtitle                 : #"의미있는 학습을 기록하는 공간"
 name                     : "Kang Humin"
 description              : "보안학습"
 url                      : "https://EncryH.github.io"
