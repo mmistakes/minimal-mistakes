@@ -1,5 +1,5 @@
 ---
-title: On winning
+title: On Winning
 ---
 
 This morning, I noticed that my daughter was crying in her room. She informed me that she had crushed her pinky finger in a drawer and it hurt badly.
