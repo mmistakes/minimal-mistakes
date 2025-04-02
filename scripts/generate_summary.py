@@ -1,7 +1,10 @@
 import sys
-import openai
+from openai import OpenAI
 import markdown
 import yaml
+import os
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def extract_markdown_content(filepath):
     with open(filepath, 'r') as f:
@@ -13,7 +16,7 @@ def extract_markdown_content(filepath):
 def generate_summary(content):
     prompt = f"Summarize the following blog post into one concise tweet:\n\n{content}"
     
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4-turbo",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=50,
