@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Kang Humin"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/computerpepe.jpg"
   bio              : "보안 학습을 기록하는 블로그입니다"
   location         : "South Korea"
   email            : "khm037723@gmail.com"
