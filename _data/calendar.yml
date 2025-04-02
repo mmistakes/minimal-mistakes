@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A2 - Ausflug zum Jonas Haus ",
-    "title": "A2 - Ausflug zum Jonas Haus ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWV1OXQwazhoNjZoNjA2dmFocW5iN3BnYjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-04-01T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-04-01T13:00:00+02:00"
-    },
-    "created": "2025-03-18T08:24:39.000Z",
-    "updated": "2025-03-18T08:24:39.975Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug in die Bücherei",
     "title": "A5 - Ausflug in die Bücherei",
     "excerpt": null,
@@ -69,36 +52,53 @@
   },
   {
     "image_path": null,
-    "alt": "Gleiche Mathe-Arbeit in Klasse 5a, 5b, 5c",
-    "title": "Gleiche Mathe-Arbeit in Klasse 5a, 5b, 5c",
+    "alt": "6b - Ausflug in die Bücherei",
+    "title": "6b - Ausflug in die Bücherei",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Z2hkOWp1ZmtwNGd0dHBzaWtpMzY0Y2FhdmsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MGU5aDJ1cG9rMGZldGYyYjE0cGVqbW9xaDIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2025-06-06T08:00:00+02:00"
+      "date_time": "2025-05-21T08:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2025-06-06T09:30:00+02:00"
+      "date_time": "2025-05-21T12:45:00+02:00"
     },
-    "created": "2025-03-25T18:51:20.000Z",
-    "updated": "2025-03-25T18:51:20.592Z"
+    "created": "2025-04-01T09:22:36.000Z",
+    "updated": "2025-04-01T09:22:36.664Z"
   },
   {
     "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
+    "alt": "6b - Ausflug in die Bücherei ",
+    "title": "6b - Ausflug in die Bücherei ",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=c21lMXVpbWo5NmJpMzUwZG1jdHVxaWtvbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NGMzcjBtNDZoZWhhcDZmczgxMzZzbW5wbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2025-06-10",
-      "date_time": null
+      "date": null,
+      "date_time": "2025-05-26T08:00:00+02:00"
     },
     "end": {
-      "date": "2025-06-11",
-      "date_time": null
+      "date": null,
+      "date_time": "2025-05-26T12:45:00+02:00"
     },
-    "created": "2024-10-11T03:48:29.000Z",
-    "updated": "2024-10-11T03:48:49.755Z"
+    "created": "2025-04-01T09:23:11.000Z",
+    "updated": "2025-04-01T09:23:11.063Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei ",
+    "title": "6b - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWwxbzZuODAyNmJobTQ5Z3YxZmhvN2s2dHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-28T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-28T12:45:00+02:00"
+    },
+    "created": "2025-04-01T09:23:54.000Z",
+    "updated": "2025-04-01T09:23:54.627Z"
   }
 ]
