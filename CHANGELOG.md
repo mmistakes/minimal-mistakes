@@ -25,6 +25,7 @@
 - Fix extra newline generated in `_includes/post_pagination.html`.
 - Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
 - Fix typo in "Configuration" (#5106)
+- bundle exec jekyll serve will fail if more than once (#5193)
 
 ### Documentation & Maintenance
 
