@@ -1,0 +1,35 @@
+name: Social Summary Generator
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_path:
+        description: 'Path to blog post markdown (e.g., _posts/2024-03-25-my-post.md)'
+        required: true
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install openai pyyaml markdown
+
+      - name: Generate Tweet-sized summary
+        run: python scripts/generate_summary.py "${{ github.event.inputs.post_path }}"
+
+      - name: Upload summary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tweet-summary
+          path: summary.txt
