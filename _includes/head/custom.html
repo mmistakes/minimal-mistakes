@@ -2,4 +2,17 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+<!-- MathJax for LaTeX rendering -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+
 <!-- end custom head snippets -->
