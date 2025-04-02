@@ -116,7 +116,7 @@ author:
   name             : "Kang Humin"
   avatar           : "/assets/images/computerpepe.png"
   bio              : "보안 학습을 기록하는 블로그입니다"
-  location         : "South Korea"
+  location         : # "South Korea"
   email            : # "khm037723@gmail.com"
   links:
     - label: "Email"
