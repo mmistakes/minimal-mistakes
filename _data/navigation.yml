@@ -12,7 +12,7 @@ docs:
         url: /categories/
       - title: "tag"
         url: /tags/
-docs:
+        
   - title: "대목차 2"
     children: 
       - title: "Category"
