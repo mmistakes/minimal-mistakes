@@ -14,6 +14,9 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  max-width: 1400px; /* Set the maximum width */
+  margin-left: auto; /* Center alignment */
+  margin-right: auto; /* Center alignment */
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
