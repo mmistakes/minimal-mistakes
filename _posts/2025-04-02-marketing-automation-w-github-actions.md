@@ -1,4 +1,6 @@
-**My Intern Automated Our Social Media in One Afternoon**
+---
+title: marketing automation with github actions
+---
 
 Yesterday, my intern went from minimal coding experience to deploying a powerful automation tool—all within a single afternoon. Using GitHub Actions and GPT-4, she built a workflow that summarizes and synthesizes my 20,000-token blog posts into customized messages for social media platforms, automatically posting via API.
 
