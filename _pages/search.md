@@ -1,5 +1,5 @@
 ---
 title: Search
-layout: Search
+layout: search
 permalink: /Search/
 ---
