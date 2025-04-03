@@ -184,6 +184,7 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
+  - minimal-mistakes-jekyll.gemspec
   - node_modules
   - package.json
   - package-lock.json
