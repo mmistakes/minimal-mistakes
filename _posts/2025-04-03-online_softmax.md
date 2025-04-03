@@ -10,13 +10,16 @@ typora-root-url: ./
 
 FlashAttention 알고리즘이 어떻게 작동하는지를 온라인 소프트맥스(Online Softmax) 기법을 통해 단계적으로 유도하는 것을 목표로 합니다. 
 
-### The Self-Attention 
+## The Self-Attention 
 
 Self-Attention의 계산은 다음과 같이 요약할 수 있습니다. 
+
 $$
 O = \text{softmax}(QK^T)V
 $$
+
  Self-Attention을 계산하는 일반적인 접근 방식은 여러 단계로 계산을 분해하는 것입니다. 여기서 $ X $ 는 pre-softmax logits, $ A $ 는 attention score, $ O $는 output 입니다.
+
 $$
 X = QK^T
 $$
@@ -39,7 +42,7 @@ FlashAttention의 주요 특징은 기존 어텐션 메커니즘과 달리 $X$ �
 
 ![matrix](./../images/2025-04-03-online_softmax/matrix.png)
 
-### (safe) softmax
+## (safe) softmax
 
 소프트맥스 계산의 일반적인 공식은 다음과 같습니다. 
 
@@ -59,7 +62,7 @@ $$
 
 ### Algorithm 3-pass safe softmax 
 
-이 알고리즘은 [1, N]을 3번 반복해야 합니다. 트랜스포머의 Self-Attention과 관련하여 $\{x_i\}$는  $QK^T$ 로 계산된 pre-softmax logits 입니다. 이는 SRAM이 충분히 크지 않아 모든 logits을  저장할 수 없다면, $Q$와 $K$ 에 세 번 접근해야 함을 의미합니다. 이는 I/O 측면에서 효율적이지 않습니다.
+이 알고리즘은 [1, N]을 3번 반복해야 합니다. 트랜스포머의 Self-Attention과 관련하여 $\{x_i\}$는  $QK^T$ 로 계산된 pre-softmax logits 입니다. 이는 SRAM이 충분히 크지 않아 모든 logits을  저장할 수 없다면, 재계산을 위해 $Q$와 $K$ 에 세 번 접근해야 함을 의미합니다. 이는 I/O 측면에서 효율적이지 않습니다.
 
 **NOTIONS**
 
@@ -74,7 +77,7 @@ $\{a_i\}:$ the final softmax value
 $\text{for i} \leftarrow 1, \text{N do}$
 
 $$
-m_i \leftarrow \text{max}(m_{i-1}, x_i)
+m_i \leftarrow \max(m_{i-1}, x_i), \quad \text{for } i = 1, \dots, N
 $$
 
 $\text{end}$
@@ -95,14 +98,178 @@ $$
 
 $\text{end}$
 
-### Online Softmax 
+## Online Softmax 
 
-3 루프를 단일 루프로 융합하면, 글로벌 메모리 접근 시간을 1/3 로 줄일 수 있습니다. 
-
+3-pass safe softmax에서 $d_i$는 $m_N$에 의존합니다. 이를 $d_i$ 와 $d_{i-1}$ 간의 재귀 관계를 통해 $N$에 대한 의존성을 제거할 수 있습니다.
 
 $$
 \begin{align*}
 d_i' &= \sum_{j=1}^{i}e^{x_j - m_i} \\
-     &= \left(\sum_{j=1}^{i-1}e^{x_j - m_i} \right) + e^{x_i - m_i}
+     &= \left(\sum_{j=1}^{i-1}e^{x_j - m_i} \right) + e^{x_i - m_i} \\ 
+     &= \left( \sum_{j=1}^{i-1}e^{x_j-m_{i-1}} \right) e^{m_{i-1} - m_i}
+     + e^{x_i-m_i} \\
+     &= d^{'}_{i-1} e^{m_{i-1}-m_i} + e^{x_i - m_i}
 \end{align*}
 $$
+
+### Algorithm 2-pass online softmax 
+
+$\text{for i} \leftarrow 1, \text{N do}$
+
+$$
+\begin{align*}
+m_i &\leftarrow \text{max}(m_{i-1}, x_i)\\
+d_{i}^{'} &\leftarrow d_{i-1}^{'} e^{m_{i-1}-m_i} + e^{x_i - m_i}
+\end{align*}
+$$
+
+$\text{end}$
+
+$\text{for i} \leftarrow 1, \text{N do}$
+
+$$
+a_i \leftarrow \frac{e^{x_i - m_N}}{d_N^{'}}
+$$
+
+$\text{end}$
+
+해당 알고리즘은 [온라인 소프트맥스 논문](https://arxiv.org/pdf/1805.02867)에서 제안되었습니다. 그러나 여전히 소프트맥스 계산을 완료하는데 두 번의 패스가 필요합니다. 소프트맥스에서는 이를 1개의 패스로 줄일 수는 없습니다.
+
+## FlashAttention 
+
+Self-Attention에 온라인 소프트맥스를 적용하면 다음과 같습니다.
+
+**NOTATIONS**
+
+$Q[k, :]$ : $Q$ 행렬의 $k$ 번째 행 벡터 
+
+$K^{T}[:, i]$ : $K^T$ 행렬의 i 번째 열 벡터 
+
+$V[:, i]$ : $V$ 행렬의 i 번째 열 벡터 
+
+$O[k, :]$ : $O$ 행렬의 $k$ 번째 행 벡터 
+
+$\{o_i\}$ : $\sum_{j=1}^{i} a_j V[j, :]$ , 부분 집합 결과를 저장하는 행 벡터 
+
+**BODY**
+
+$\text{for i} \leftarrow 1, \text{N do}$
+
+$$
+\begin{align*}
+x_i &\leftarrow Q[k, :]K^T[:, i] \\
+m_i &\leftarrow \text{max}(m_{i-1}, x_i)\\
+d_i^{'} &\leftarrow d_{i-1}^{'}e^{m_{i-1}-m_i} + e^{x_i-m_i}
+\end{align*}
+$$
+
+$\text{end}$
+
+$\text{for i} \leftarrow 1, \text{N do}$
+
+$$
+\begin{align*}
+x_i &\leftarrow Q[k, :]K^T[:, i] \\
+a_i &\leftarrow \frac{e^{x_i} - m_N}{d_N^{'}} \\
+o_i &\leftarrow o_{i-1} + a_iV[i,:]
+\end{align*}
+$$
+
+$\text{end}$
+
+$$
+O[k,:] \leftarrow o_N
+$$
+
+이제 2번의 패스를 1번의 패스로 줄입니다.  $o_i$ 는 다음과 같이 정의할 수 있습니다.
+
+$$
+o_i \coloneqq \sum_{j=1}^{i} \left( \frac{e^{x_j - m_N}}{d_N^{'}} V[j, :]\right)
+$$
+
+이는 여전히 $m_N$과 $d_N$에 의존성을 가지고 있습니다. 하지만 온라인 소프트맥스에서 제안하는 트릭을 다시 활용하여 표현할 수 있습니다. 
+
+$$
+o_i^{'} \coloneqq \left( \sum_{j=1}^{i} \frac{e^{x_j - m_i}}
+{d_i^{'}} V[j,:] \right)
+$$
+
+$o_N^{'} = o_N$ 이며, 여기서 $o_i$ 와 $o_{i-1}$ 사이의 재귀 관계를 찾으면 의존성을 제거 할 수 있습니다, 
+
+$$
+\begin{align*}
+o_i^{'} &= \sum_{j=1}^{i} \frac{e^{x_j - m_i}}{d_i^{'}}V[j,:] \\
+&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j - m_i}}{d_i^{'}} V[j,:] \right)
++ \frac{e^{x_i - m_i}}{d_i^{'}}V[i,:] \\
+&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j-m_i-1}}{d_{i-1}^{'}} 
+\frac{e^{x_j - m_i}}{e^{x_j-m_i-1}} 
+\frac{d_{i-1}^{'}}{d_i^{'}} V[j, :] \right) 
++ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:] \\ 
+&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j-m_i-1}}{d_{i-1}^{'}}V[j,:] \right)
+\frac{d_{i-1}^{'}}{d_i^{'}} e^{m_{i-1} - m_i}
++ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:] \\
+&= o_{i-1}^{'} \frac{d_{i-1}^{'} e^{m_{i-1}-m_i}}{d_i^{'}}
++ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:]
+\end{align*}
+$$
+위 수식에서  $d_i^{'}, d_{i-1}^{'}, m_i, m_{i-1}$ 는 $x_i$에만 의존한다. 따라서 Self-Attention의 모든 계산을 단일 루프에서 통합할 수 있다. 
+
+### Algorithm FlashAttention 
+
+상태 $x_i, m_i, d_i^{'}, o_i^{'}$ 는 SRAM에서만 처리할 수 있을 만큼 작은 크기를 가질 수 있습니다 
+
+$\text{for i} \leftarrow 1, \text{N do}$
+
+$$
+\begin{align*}
+x_i &\leftarrow Q[k,:]K^T[:,i] \\
+m_i &\leftarrow \text{max}(m_{i-1}, x_i) \\
+d_i^{'} &\leftarrow d_{i-1}^{'} e^{m_{i-1}-m_i} + e^{x_i-m_i} \\
+o_i^{'} &\leftarrow o_{i-1}^{'} 
+\frac{d_{i-1}^{'}e^{m_{i-1}-m_i}}{d_i^{'}} 
++ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:]
+\end{align*}
+$$
+
+$\text{end}$
+
+$$
+O[k,:] \leftarrow o_N^{'}
+$$
+
+### Algorithm FlashAttention (Tiling)
+
+단일 루프로 구현할 수 있게되어 타일링을 적용할 수 있습니다. 
+
+**NEW NOTATIONS**
+
+$b$ : the block size of the tile 
+
+$\text{\#tile}$ : number of tiles in the row, $N = b \times \text{\#tiles}$
+
+$x_i$ : a vector storing the $Q[k]K^T$ value of the $i$-th tile $[(i-1)b: ib]$
+
+$m_i^{(\text{local})}$ : the local maximum value inside  $x_i$
+
+**BODY**
+
+$\text{for i} \leftarrow 1, \text{N do}$
+
+$$
+\begin{align*}
+x_i &\leftarrow Q[k,:]K^T[:, (i-1)b:ib] \\ 
+m_i^{(\text{local})} &= \text{max}_{j=1}^{b}(x_i[j]) \\
+m_i &\leftarrow \text{max}(m_{i-1}, m_i^{\text{(local)}}) \\
+d_i^{'} &\leftarrow d_{i-1}^{'} e^{m_{i-1}-m_i} + \sum_{j=1}^{b} e^{x_i[j]-m_i} \\
+o_i^{'} &\leftarrow o_{i-1}^{'} \frac{d_{i-1}^{'}e^{m_{i-1}-m_i}}{d_i^{'}}
++ \sum_{j=1}^{b}\frac{e^{x_i[j]-m_i}}{d_i^{'}}V[j + (i-1)b. :]
+\end{align*}
+$$
+
+$\text{end}$
+
+$$
+O[k,:] \leftarrow o_{N/b}^{'}
+$$
+
+![flash_attention](./../images/2025-04-03-online_softmax/flash_attention.png)
