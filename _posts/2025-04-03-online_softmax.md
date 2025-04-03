@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "From Online Softmax to. Flash Attention"
+title:  "From Online Softmax to Flash Attention"
 typora-root-url: ./
 ---
 
@@ -96,6 +96,7 @@ $\text{end}$
 ### Online Softmax 
 
 3 루프를 단일 루프로 융합하면, 글로벌 메모리 접근 시간을 1/3 로 줄일 수 있습니다. 
+
 $$
 \begin{align*}
 d_i' &= \sum_{j=1}^{i}e^{x_j - m_i} \\
