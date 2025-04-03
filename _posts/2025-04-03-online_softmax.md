@@ -59,7 +59,9 @@ $$
 
 ### Algorithm 3-pass safe softmax 
 
-NOTIONS 
+이 알고리즘은 [1, N]을 3번 반복해야 합니다. 트랜스포머의 Self-Attention과 관련하여 $\{x_i\}$는  $QK^T$ 로 계산된 pre-softmax logits 입니다. 이는 SRAM이 충분히 크지 않아 모든 logits을  저장할 수 없다면, $Q$와 $K$ 에 세 번 접근해야 함을 의미합니다. 이는 I/O 측면에서 효율적이지 않습니다.
+
+**NOTIONS**
 
 ${m_i}: max_{j=1}^{i}\{x_j\}$, with initial value $m_0 = -\inf$
 
@@ -67,7 +69,7 @@ $\{d_i\}: \sum_{j=1}^{i} e^{x_j -m_N}$, with initial value $d_0 = 0, d_n$ is the
 
 $\{a_i\}:$ the final softmax value 
 
-BODY
+**BODY**
 
 $\text{for i} \leftarrow 1, \text{N do}$
 $$
@@ -91,3 +93,12 @@ $$
 
 $\text{end}$
 
+### Online Softmax 
+
+3 루프를 단일 루프로 융합하면, 글로벌 메모리 접근 시간을 1/3 로 줄일 수 있습니다. 
+$$
+\begin{align*}
+d_i' &= \sum_{j=1}^{i}e^{x_j - m_i} \\
+     &= \left(\sum_{j=1}^{i-1}e^{x_j - m_i} \right) + e^{x_i - m_i}
+\end{align*}
+$$
