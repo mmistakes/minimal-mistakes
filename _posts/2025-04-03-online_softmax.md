@@ -184,13 +184,13 @@ $$
 이제 2번의 패스를 1번의 패스로 줄입니다.  $o_i$ 는 다음과 같이 정의할 수 있습니다.
 
 $$
-o_i \coloneqq \sum_{j=1}^{i} \left( \frac{e^{x_j - m_N}}{d_N^{'}} V[j, :]\right)
+o_i := \sum_{j=1}^{i} \left( \frac{e^{x_j - m_N}}{d_N^{'}} V[j, :]\right)
 $$
 
 이는 여전히 $m_N$과 $d_N$에 의존성을 가지고 있습니다. 하지만 온라인 소프트맥스에서 제안하는 트릭을 다시 활용하여 표현할 수 있습니다. 
 
 $$
-o_i^{'} \coloneqq \left( \sum_{j=1}^{i} \frac{e^{x_j - m_i}}
+o_i^{'} := \left( \sum_{j=1}^{i} \frac{e^{x_j - m_i}}
 {d_i^{'}} V[j,:] \right)
 $$
 
@@ -212,6 +212,7 @@ o_i^{'} &= \sum_{j=1}^{i} \frac{e^{x_j - m_i}}{d_i^{'}}V[j,:] \\
 + \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:]
 \end{align*}
 $$
+
 위 수식에서  $d_i^{'}, d_{i-1}^{'}, m_i, m_{i-1}$ 는 $x_i$에만 의존한다. 따라서 Self-Attention의 모든 계산을 단일 루프에서 통합할 수 있다. 
 
 ### Algorithm FlashAttention 
