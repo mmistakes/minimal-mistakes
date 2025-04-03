@@ -29,8 +29,6 @@ $$
 O = AV
 $$
 
-
-
 FlashAttention의 주요 특징은 기존 어텐션 메커니즘과 달리 $X$ 와 $A$ 를 전부 메모리에 상주시킬 필요가 없다는 점입니다. 
 
 행렬 곱셈은 타일링을 사용하여 온칩 메모리가 하드웨어의 용량 한계를 넘지 않도록 설계합니다. 커널 실행 중에는 행렬의 형태와 관계없이 온칩에 저장되는 요소의 수를 $3T^2$ 개로 제한합니다. 
@@ -44,13 +42,17 @@ FlashAttention의 주요 특징은 기존 어텐션 메커니즘과 달리 $X$ �
 ### (safe) softmax
 
 소프트맥스 계산의 일반적인 공식은 다음과 같습니다. 
+
 $$
 \text{softmax}(\{x_1, \cdots, x_N\}) = \left\{ \frac{e^{x_i}}{\sum_{j=1}^{N} e^{x_j}} \right\}_{i=1}^{N}
 $$
+
 여기서 $x_i$ 값이 매우 클 경우, $e^{x_i}$는 쉽게 오버플로우 될 수 있습니다. 예를 들어, float16이 지원할 수 있는 최대 숫자는 65536인데, 이는 $x > 11$ 일 경우 $e^{x}$ 가 float16의 유효 범위를 넘어서게 됨을 것을 의미합니다. 이런 문제를 해결하기 위해 **"safe"** softmax 를 활용하여 오버플로우를 방지합니다. 
+
 $$
 \frac{e^{x_i}}{\sum_{j=1}^{N} e^{x_j}} = \frac{e^{x_i -m}}{\sum_{j=1}^{N} e^{x_j - m}}
 $$
+
 여기서 $m = \text{max}_{j=1}^{N} (x_j)$ 로 정의되며, $x_i - m \leq 0$ 이 성립함으로 지수 함수에는 항상 음수 또는 0이 입력됩니다. 이로 인해 오버플로우가 발생하지 않아 안전하게 계산할 수 있습니다. 
 
 이러한 **"safe"** softmax는 3-pass 알고리즘으로 요약할 수 있다. 
@@ -74,14 +76,18 @@ $$
 $\text{end}$
 
 $\text{for i} \leftarrow 1, \text{N do}$
+
 $$
 d_i \leftarrow d_{i-1} + e^{x_i - m_N}
 $$
+
 $\text{end}$
 
 $\text{for i} \leftarrow 1, \text{N do}$
+
 $$
 a_i \leftarrow \frac{e^{x_i - m_N}}{d_N}
 $$
+
 $\text{end}$
 
