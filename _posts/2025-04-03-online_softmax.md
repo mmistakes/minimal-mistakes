@@ -72,9 +72,11 @@ $\{a_i\}:$ the final softmax value
 **BODY**
 
 $\text{for i} \leftarrow 1, \text{N do}$
+
 $$
 m_i \leftarrow \text{max}(m_{i-1}, x_i)
 $$
+
 $\text{end}$
 
 $\text{for i} \leftarrow 1, \text{N do}$
@@ -96,6 +98,7 @@ $\text{end}$
 ### Online Softmax 
 
 3 루프를 단일 루프로 융합하면, 글로벌 메모리 접근 시간을 1/3 로 줄일 수 있습니다. 
+
 
 $$
 \begin{align*}
