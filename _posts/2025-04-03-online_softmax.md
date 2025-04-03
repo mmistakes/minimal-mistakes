@@ -104,11 +104,11 @@ $\text{end}$
 
 $$
 \begin{align*}
-d_i' &= \sum_{j=1}^{i}e^{x_j - m_i} \\
+d_i^{\prime} &= \sum_{j=1}^{i}e^{x_j - m_i} \\
      &= \left(\sum_{j=1}^{i-1}e^{x_j - m_i} \right) + e^{x_i - m_i} \\ 
      &= \left( \sum_{j=1}^{i-1}e^{x_j-m_{i-1}} \right) e^{m_{i-1} - m_i}
      + e^{x_i-m_i} \\
-     &= d^{'}_{i-1} e^{m_{i-1}-m_i} + e^{x_i - m_i}
+     &= d^{\prime}_{i-1} e^{m_{i-1}-m_i} + e^{x_i - m_i}
 \end{align*}
 $$
 
@@ -119,7 +119,7 @@ $\text{for i} \leftarrow 1, \text{N do}$
 $$
 \begin{align*}
 m_i &\leftarrow \text{max}(m_{i-1}, x_i)\\
-d_{i}^{'} &\leftarrow d_{i-1}^{'} e^{m_{i-1}-m_i} + e^{x_i - m_i}
+d_{i}^{\prime} &\leftarrow d_{i-1}^{\prime} e^{m_{i-1}-m_i} + e^{x_i - m_i}
 \end{align*}
 $$
 
@@ -128,7 +128,7 @@ $\text{end}$
 $\text{for i} \leftarrow 1, \text{N do}$
 
 $$
-a_i \leftarrow \frac{e^{x_i - m_N}}{d_N^{'}}
+a_i \leftarrow \frac{e^{x_i - m_N}}{d_N^{\prime}}
 $$
 
 $\text{end}$
@@ -159,7 +159,7 @@ $$
 \begin{align*}
 x_i &\leftarrow Q[k, :]K^T[:, i] \\
 m_i &\leftarrow \text{max}(m_{i-1}, x_i)\\
-d_i^{'} &\leftarrow d_{i-1}^{'}e^{m_{i-1}-m_i} + e^{x_i-m_i}
+d_i^{\prime} &\leftarrow d_{i-1}^{\prime}e^{m_{i-1}-m_i} + e^{x_i-m_i}
 \end{align*}
 $$
 
@@ -184,36 +184,36 @@ $$
 이제 2번의 패스를 1번의 패스로 줄입니다.  $o_i$ 는 다음과 같이 정의할 수 있습니다.
 
 $$
-o_i := \sum_{j=1}^{i} \left( \frac{e^{x_j - m_N}}{d_N^{'}} V[j, :]\right)
+o_i := \sum_{j=1}^{i} \left( \frac{e^{x_j - m_N}}{d_N^{\prime}} V[j, :]\right)
 $$
 
 이는 여전히 $m_N$과 $d_N$에 의존성을 가지고 있습니다. 하지만 온라인 소프트맥스에서 제안하는 트릭을 다시 활용하여 표현할 수 있습니다. 
 
 $$
-o_i^{'} := \left( \sum_{j=1}^{i} \frac{e^{x_j - m_i}}
-{d_i^{'}} V[j,:] \right)
+o_i^{\prime} := \left( \sum_{j=1}^{i} \frac{e^{x_j - m_i}}
+{d_i^{\prime}} V[j,:] \right)
 $$
 
 $o_N^{'} = o_N$ 이며, 여기서 $o_i$ 와 $o_{i-1}$ 사이의 재귀 관계를 찾으면 의존성을 제거 할 수 있습니다, 
 
 $$
 \begin{align*}
-o_i^{'} &= \sum_{j=1}^{i} \frac{e^{x_j - m_i}}{d_i^{'}}V[j,:] \\
-&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j - m_i}}{d_i^{'}} V[j,:] \right)
-+ \frac{e^{x_i - m_i}}{d_i^{'}}V[i,:] \\
-&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j-m_i-1}}{d_{i-1}^{'}} 
+o_i^{\prime} &= \sum_{j=1}^{i} \frac{e^{x_j - m_i}}{d_i^{'}}V[j,:] \\
+&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j - m_i}}{d_i^{\prime}} V[j,:] \right)
++ \frac{e^{x_i - m_i}}{d_i^{\prime}}V[i,:] \\
+&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j-m_i-1}}{d_{i-1}^{\prime}} 
 \frac{e^{x_j - m_i}}{e^{x_j-m_i-1}} 
-\frac{d_{i-1}^{'}}{d_i^{'}} V[j, :] \right) 
-+ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:] \\ 
-&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j-m_i-1}}{d_{i-1}^{'}}V[j,:] \right)
-\frac{d_{i-1}^{'}}{d_i^{'}} e^{m_{i-1} - m_i}
-+ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:] \\
-&= o_{i-1}^{'} \frac{d_{i-1}^{'} e^{m_{i-1}-m_i}}{d_i^{'}}
-+ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:]
+\frac{d_{i-1}^{\prime}}{d_i^{\prime}} V[j, :] \right) 
++ \frac{e^{x_i-m_i}}{d_i^{\prime}}V[i,:] \\ 
+&= \left( \sum_{j=1}^{i-1} \frac{e^{x_j-m_i-1}}{d_{i-1}^{\prime}}V[j,:] \right)
+\frac{d_{i-1}^{\prime}}{d_i^{\prime}} e^{m_{i-1} - m_i}
++ \frac{e^{x_i-m_i}}{d_i^{\prime}}V[i,:] \\
+&= o_{i-1}^{\prime} \frac{d_{i-1}^{\prime} e^{m_{i-1}-m_i}}{d_i^{\prime}}
++ \frac{e^{x_i-m_i}}{d_i^{\prime}}V[i,:]
 \end{align*}
 $$
 
-위 수식에서  $d_i^{'}, d_{i-1}^{'}, m_i, m_{i-1}$ 는 $x_i$에만 의존한다. 따라서 Self-Attention의 모든 계산을 단일 루프에서 통합할 수 있다. 
+위 수식에서  $d_i^{\prime}, d_{i-1}^{\prime}, m_i, m_{i-1}$ 는 $x_i$에만 의존한다. 따라서 Self-Attention의 모든 계산을 단일 루프에서 통합할 수 있다. 
 
 ### Algorithm FlashAttention 
 
@@ -225,17 +225,17 @@ $$
 \begin{align*}
 x_i &\leftarrow Q[k,:]K^T[:,i] \\
 m_i &\leftarrow \text{max}(m_{i-1}, x_i) \\
-d_i^{'} &\leftarrow d_{i-1}^{'} e^{m_{i-1}-m_i} + e^{x_i-m_i} \\
-o_i^{'} &\leftarrow o_{i-1}^{'} 
-\frac{d_{i-1}^{'}e^{m_{i-1}-m_i}}{d_i^{'}} 
-+ \frac{e^{x_i-m_i}}{d_i^{'}}V[i,:]
+d_i^{\prime} &\leftarrow d_{i-1}^{\prime} e^{m_{i-1}-m_i} + e^{x_i-m_i} \\
+o_i^{\prime} &\leftarrow o_{i-1}^{\prime} 
+\frac{d_{i-1}^{\prime}e^{m_{i-1}-m_i}}{d_i^{\prime}} 
++ \frac{e^{x_i-m_i}}{d_i^{\prime}}V[i,:]
 \end{align*}
 $$
 
 $\text{end}$
 
 $$
-O[k,:] \leftarrow o_N^{'}
+O[k,:] \leftarrow o_N^{\prime}
 $$
 
 ### Algorithm FlashAttention (Tiling)
@@ -261,16 +261,16 @@ $$
 x_i &\leftarrow Q[k,:]K^T[:, (i-1)b:ib] \\ 
 m_i^{(\text{local})} &= \text{max}_{j=1}^{b}(x_i[j]) \\
 m_i &\leftarrow \text{max}(m_{i-1}, m_i^{\text{(local)}}) \\
-d_i^{'} &\leftarrow d_{i-1}^{'} e^{m_{i-1}-m_i} + \sum_{j=1}^{b} e^{x_i[j]-m_i} \\
-o_i^{'} &\leftarrow o_{i-1}^{'} \frac{d_{i-1}^{'}e^{m_{i-1}-m_i}}{d_i^{'}}
-+ \sum_{j=1}^{b}\frac{e^{x_i[j]-m_i}}{d_i^{'}}V[j + (i-1)b. :]
+d_i^{\prime} &\leftarrow d_{i-1}^{\prime} e^{m_{i-1}-m_i} + \sum_{j=1}^{b} e^{x_i[j]-m_i} \\
+o_i^{\prime} &\leftarrow o_{i-1}^{\prime} \frac{d_{i-1}^{\prime}e^{m_{i-1}-m_i}}{d_i^{\prime}}
++ \sum_{j=1}^{b}\frac{e^{x_i[j]-m_i}}{d_i^{\prime}}V[j + (i-1)b. :]
 \end{align*}
 $$
 
 $\text{end}$
 
 $$
-O[k,:] \leftarrow o_{N/b}^{'}
+O[k,:] \leftarrow o_{N/b}^{\prime}
 $$
 
 ![flash_attention](./../images/2025-04-03-online_softmax/flash_attention.png)
