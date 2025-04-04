@@ -318,3 +318,6 @@ collections:
 
 header:
   nav: main
+
+custom_css:
+  - /assets/css/custom.css
