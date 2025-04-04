@@ -50,3 +50,5 @@ An AI learns to count apples in pictures. All training images contain between 1 
 It would not be healthy to practice yoga 12 or more hours a day in the same way that it is not healthy to practice intense math 12 or more hours a day. We also need plenty of rest.
 
 Ultimately, I am advocating for balance. Repetitive activities have their place, offering comfort and deep skill building. But exploring new movements, physically and mentally, is equally essential. Yoga and creative math are examples of how we can safely and effectively push beyond familiar limits to maintain overall health and mental agility. The key is to engage regularly with both the familiar and the unfamiliar, fostering a balanced approach to physical and intellectual wellness.
+
+Hi Mom!
