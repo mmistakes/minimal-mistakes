@@ -18,7 +18,7 @@ FlashAttention-2가 발표되면서 기존 FlashAttention에 비해 성능이 �
 
 각 어텐션 행을 여러 블록으로 나눠서 softmax를 정밀하게 계산하면서 정규화 상수(m, d)를 점진적으로 업데이트 하는 구조입니다.
 
-$\text{for i} \leftarrow 1, \text{N do}$
+$ \text{for i} \leftarrow 1, \text{N do} $
 
 $$
 \begin{align*}
@@ -31,12 +31,11 @@ o_i^{\prime} &\leftarrow o_{i-1}^{\prime}
 \end{align*}
 $$
 
-$\text{end}$
+$ \text{end} $
 
 $$
 O[k,:] \leftarrow o_N^{\prime}
 $$
-
 
 ```python
 @triton.jit
