@@ -1,6 +1,9 @@
 name: Social Summary Generator
 
 on:
+  push:
+    paths:
+      - '_posts/**/*.md'
   workflow_dispatch:
     inputs:
       post_path:
@@ -25,11 +28,33 @@ jobs:
         run: |
           pip install openai pyyaml markdown
 
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v42
+        with:
+          files: '_posts/**/*.md'
+
+      - name: Create social_media_posts directory
+        run: mkdir -p social_media_posts
+
       - name: Generate platform-specific summaries
-        run: python scripts/generate_summary.py "${{ github.event.inputs.post_path }}"
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            # Extract the base filename without extension and path
+            base_name=$(basename "$file" .md)
+            # Run the script and move the generated files to social_media_posts
+            python scripts/generate_summary.py "$file"
+            mv x_summary.txt "social_media_posts/${base_name}_x.txt"
+            mv linkedin_summary.txt "social_media_posts/${base_name}_linkedin.txt"
+            mv instagram_summary.txt "social_media_posts/${base_name}_instagram.txt"
+            mv tiktok_summary.txt "social_media_posts/${base_name}_tiktok.txt"
+            mv reddit_summary.txt "social_media_posts/${base_name}_reddit.txt"
+            mv email_list_summary.txt "social_media_posts/${base_name}_email.txt"
+            mv telegram_summary.txt "social_media_posts/${base_name}_telegram.txt"
+          done
 
       - name: Upload summaries artifact
         uses: actions/upload-artifact@v4
         with:
           name: platform-summaries
-          path: "*_summary.txt"
+          path: "social_media_posts/**"
