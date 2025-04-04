@@ -117,7 +117,7 @@ author:
   avatar           : # "/assets/images/dsg-logo.png"
   bio              : "Code Train Predict" # "I am an **amazing** person."
   location         : "Roorkee, India" # "Somewhere"
-  email            : #
+  email            : "dsg@iitr.ac.in"#
    links:
     - label: "GitHub"
       icon: "fab fa-github"
