@@ -2,6 +2,7 @@
 layout: single
 title:  "Online Softmax 개선: FlashAttention-2"
 typora-root-url: ./
+categories: "코딩"
 ---
 
 FlashAttention-2가 발표되면서 기존 FlashAttention에 비해 성능이 크게 향상되었습니다.
