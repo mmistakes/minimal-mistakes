@@ -14,7 +14,6 @@ Yoga challenges your body differently. It isn’t just about stretching or flexi
 
 Handstands are an excellent example. Since nobody naturally walks upside down, practicing handstands requires strength and flexibility in shoulders, wrists, and core muscles. It challenges your brain to learn new ways of balancing against gravity. This makes yoga an effective way to maintain overall physical health.
 
-
 ### Other activities are great too
 
 I do not mean to suggest yoga is superior to other activities. Tennis, for example, provides great cardio and develops coordination and competitive spirit. Repetition itself can also be valuable, such as finding comfort in routines like prayer, meditation, or ceremonial practice that brings consistency and peace.
@@ -28,7 +27,6 @@ Math, especially when approached creatively through puzzles or math Olympiads, f
 I am not saying that solving WSJ’s Wordle every day is bad, but if it becomes effortless, you may not be stretching your mind anymore.
 
 Writing can also be as effective as math to challenge your mind, as long as it is not overly repetitive and is itself challenging. After all, math can also be written using natural language, so math is a subset of writing.
-
 
 ### Math examples: solving 3 puzzles
 
