@@ -50,6 +50,5 @@ We reserve the right to modify these terms at any time. Continued use of the Blo
 
 ## Contact
 
-For any legal inquiries, please contact:
-- Email: [your-email@example.com]
+For any legal inquiries, please contact me at my email listed on my website
 - Website: https://blog.dannycastonguay.com 

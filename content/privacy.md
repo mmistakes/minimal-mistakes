@@ -59,8 +59,7 @@ You have the right to:
 
 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
-## Contact Us
+## Contact
 
-If you have any questions about this Privacy Policy, please contact us at:
-- Email: [your-email@example.com]
+For any legal inquiries, please contact me at my email listed on my website
 - Website: https://blog.dannycastonguay.com 
