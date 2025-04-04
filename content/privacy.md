@@ -1,6 +1,8 @@
 ---
-title: Privacy Policy
-date: 2025-04-04
+title: "Privacy Policy"
+permalink: /privacy/
+layout: single
+author_profile: false
 ---
 
 # Privacy Policy

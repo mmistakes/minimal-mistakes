@@ -1,5 +1,9 @@
 # main links
 main:
+  - title: "Legal"
+    url: /legal/
+  - title: "Privacy"
+    url: /privacy/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

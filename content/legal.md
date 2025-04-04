@@ -1,6 +1,8 @@
 ---
-title: Legal Agreement
-date: 2025-04-04
+title: "Legal Agreement"
+permalink: /legal/
+layout: single
+author_profile: false
 ---
 
 # Legal Agreement
