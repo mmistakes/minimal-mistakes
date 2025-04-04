@@ -1,14 +1,14 @@
 ---
 layout: single
-title:  "FLASHATTENTION2 Online Softmax"
+title:  "Online Softmax 개선: FlashAttention-2"
 typora-root-url: ./
 ---
 
-FLASHATTENTION-2가 발표되면서 기존 FLASHATTENTION에 비해 성능이 크게 향상되었다. 
+FlashAttention-2가 발표되면서 기존 FlashAttention에 비해 성능이 크게 향상되었습니다.
 
-원래는 하나의 어텐션 헤드를 단일 스레드 블록이 처리하도록 설계되었으나, 이 방식은 시퀀스 길이가 길어지면 GPU의 SM이 효율적으로 활용되지 않아 자원 낭비로 이어졌다. 이를 해결하기 위해 FLASHATTENTION-2에서는 시퀀스 길이 방향으로 병렬 처리를 도입하여 하나의 헤드를 여러 스레드 블록이 나누어 처리할 수 있도록 개선했다. 
+원래는 하나의 어텐션 헤드를 단일 스레드 블록이 처리하도록 설계되었으나, 이 방식은 시퀀스 길이가 길어지면 GPU의 SM이 효율적으로 활용되지 않아 자원 낭비로 이어졌습니다. 이를 해결하기 위해 FlashAttention-2에서는 시퀀스 길이 방향으로 병렬 처리를 도입하여 하나의 헤드를 여러 스레드 블록이 나누어 처리할 수 있도록 개선하였습니다. 
 
-이러한 변화와 함께 다양한 최적화가 추가되었는데, 이번 포스팅에서는 그중에서도 새롭게 제안된 온라인 소프트맥스 최적화 기법을 중심으로 살펴보고자 한다. 
+이러한 변화와 함께 다양한 최적화가 추가되었는데, 이번 포스팅에서는 그중에서도 새롭게 제안된 온라인 소프트맥스 최적화 기법을 중심으로 살펴보고자 합니다. 
 
 ## Advanced Online Softmax 
 
@@ -75,7 +75,7 @@ def flashatt_kernel(q_ptr, k_ptr, v_ptr, z_ptr, N0, T, B0: tl.constexpr):
 
 **FLASHATTENTION-2** 
 
-FlashAttention-2 은 online softmax는 max, div, exp 연산을 루프 내부에서 최소화하여 속도와 효율을 높였습니다. 
+FlashAttention-2에서 online softmax는 max, div, exp 연산을 루프 내부에서 최소화하여 속도와 효율을 높였습니다. 
 
 softmax는 다음과 같은 기본 성질이 있습니다. 
 
