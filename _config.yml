@@ -115,8 +115,8 @@ analytics:
 author:
   name             : # "Data Science Group, IIT Roorkee"
   avatar           : # "/assets/images/dsg-logo.png"
-  bio              : # "I am an **amazing** person."
-  location         : # "Somewhere"
+  bio              : "Code Train Predict" # "I am an **amazing** person."
+  location         : "Roorkee, India" # "Somewhere"
   email            : #
    links:
     - label: "GitHub"
