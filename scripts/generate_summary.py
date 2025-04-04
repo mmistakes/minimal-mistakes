@@ -15,15 +15,7 @@ def extract_markdown_content(filepath):
 
 def generate_summary(content, platform):
     prompt = f"""
-    Summarize the following blog post into a concise and engaging {platform} post. Match my personal writing style closely, which is direct, thoughtful, concise, and reflective. Include personal insights, thoughtful observations, or pose an engaging question. Here are detailed examples of my writing:
-
-    1. "Selling isn't part of my identity. I'm an individual contributor—I prefer solving problems hands-on and tinkering. So it surprises me when others seek my advice on how to sell."
-
-    2. "Yesterday, I visited a successful banker in Singapore who taught himself coding in his 50s. The experience reinforced that real ambition isn’t about age; it's about curiosity and willingness to reinvent oneself."
-
-    3. "Living in Singapore taught me a surprising paradox: more rules can actually create more freedom. When things are safe and predictable, you can truly enjoy your life."
-
-    4. "Clear thinking and decisive execution are competitive advantages. Complexity usually isn't. Focus on executing simple ideas exceptionally well."
+    Summarize the following blog post into an engaging, exciting, and adventurous {platform} post. Use a direct, thoughtful, concise, and reflective style. Start with an intriguing hook or bold statement. Include a short personal anecdote or surprising insight. End with a provocative question or actionable takeaway that encourages interaction.
 
     Blog Post:
     {content}
