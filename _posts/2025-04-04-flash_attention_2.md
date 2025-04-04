@@ -14,7 +14,7 @@ FlashAttention-2가 발표되면서 기존 FlashAttention에 비해 성능이 �
 
 ## Advanced Online Softmax 
 
-**FLASHATTENTION**
+**FlashAttention**
 
 각 어텐션 행을 여러 블록으로 나눠서 softmax를 정밀하게 계산하면서 정규화 상수(m, d)를 점진적으로 업데이트 하는 구조입니다.
 
