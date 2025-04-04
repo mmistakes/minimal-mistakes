@@ -1,6 +1,6 @@
 dsgiitr:
   name: "Data Science Group, IIT Roorkee"
-  avatar: "/assets/images/dsg-logo.png"
+  avatar: # "/assets/images/dsg-logo.png"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
