@@ -1,0 +1,7 @@
+tweepy==4.14.0
+linkedin-api==2.0.0a5
+praw==7.7.1
+python-telegram-bot==20.7
+openai==1.12.0
+pyyaml==6.0.1
+markdown==3.5.2 
