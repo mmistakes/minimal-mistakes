@@ -15,7 +15,11 @@ def extract_markdown_content(filepath):
 
 def generate_summary(content, platform):
     prompt = f"""
-    Summarize the following blog post into an engaging, exciting, and adventurous {platform} post. Use a direct, thoughtful, concise, and reflective style. Start with an intriguing hook or bold statement. Include a short personal anecdote or surprising insight. End with a provocative question or actionable takeaway that encourages interaction.
+    Summarize the following blog post into an engaging and exciting {platform} post. Use a direct, thoughtful, concise, and reflective style. Start with an intriguing hook or bold statement. Include a short personal anecdote or surprising insight. End with a provocative question or actionable takeaway that encourages interaction.
+
+    For LinkedIn, Email List, Reddit, and Telegram: Maintain a professional, wise, and thoughtful tone. Avoid emojis entirely.
+
+    For X (Twitter), TikTok, and Instagram: Be playful and adventurous. Emojis may be used sparingly.
 
     Blog Post:
     {content}
@@ -26,7 +30,7 @@ def generate_summary(content, platform):
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=120,
+        max_tokens=400,
         temperature=0.7
     )
 
