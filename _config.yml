@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/dsg-logo.png"
   bio              : # "I am an **amazing** person."
   location         : # "Somewhere"
-  email            : # 
+  email            : 
    links:
     - label: "GitHub"
       icon: "fab fa-github"
