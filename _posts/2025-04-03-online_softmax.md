@@ -378,7 +378,7 @@ $$
 
 ### **FlashAttention**
 
-![image-20250404151325102](/../images/2025-04-03-online_softmax/image-20250404151325102.png)
+![image-20250404151325102](./../images/2025-04-03-online_softmax/image-20250404151325102.png)
 
 ### **FlashAttention-2**
 
