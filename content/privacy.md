@@ -9,7 +9,7 @@ Last updated: April 4, 2025
 
 ## Introduction
 
-This Privacy Policy describes how Danny's Blog ("we", "us", or "our") handles information when you visit our website at https://dannycastonguay.com.
+This Privacy Policy describes how Danny's Blog ("we", "us", or "our") handles information when you visit our website at https://blog.dannycastonguay.com.
 
 ## Information We Collect
 
@@ -63,4 +63,4 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 If you have any questions about this Privacy Policy, please contact us at:
 - Email: [your-email@example.com]
-- Website: https://dannycastonguay.com 
+- Website: https://blog.dannycastonguay.com 

@@ -9,7 +9,7 @@ Last updated: April 4, 2025
 
 ## Terms of Service
 
-By accessing and using Danny's Blog ("the Blog"), you agree to be bound by these Terms of Service.
+By accessing and using Danny's Blog ("the Blog") at https://blog.dannycastonguay.com, you agree to be bound by these Terms of Service.
 
 ### Content Usage
 
@@ -52,4 +52,4 @@ We reserve the right to modify these terms at any time. Continued use of the Blo
 
 For any legal inquiries, please contact:
 - Email: [your-email@example.com]
-- Website: https://dannycastonguay.com 
+- Website: https://blog.dannycastonguay.com 
