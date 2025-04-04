@@ -17,12 +17,12 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : #
+title                    : "Data Science Research Group - IIT Roorkee"#
 title_separator          : "-"
 subtitle                 : "Code Train Predict" # site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://dsgiitr.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Data Science Group, IIT Roorkee"
-  avatar           : /assets/images/dsg-logo.png
+  avatar           : "/assets/images/dsg-logo.png"
   bio              : "Code Train Predict" # "I am an **amazing** person."
   location         : "Roorkee, India" # "Somewhere"
   email            : "dsg@iitr.ac.in"#
