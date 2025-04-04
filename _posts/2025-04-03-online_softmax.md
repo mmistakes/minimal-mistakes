@@ -32,6 +32,16 @@ $$
 O = AV
 $$
 
+```python
+def flashatt_spec(q: Float32[Tensor, "200"], k: Float32[Tensor, "200"], v: Float32[Tensor, "200"]) -> Float32[Tensor, "200"]:
+    x = q[:, None] * k[None, :]
+    x_max = x.max(1, keepdim=True)[0]
+    x = x - x_max
+    x_exp = x.exp()
+    soft =  x_exp  / x_exp.sum(1, keepdim=True)
+    return (v[None, :] * soft).sum(1)
+```
+
 FlashAttention의 주요 특징은 기존 어텐션 메커니즘과 달리 $X$ 와 $A$ 를 전부 메모리에 상주시킬 필요가 없다는 점입니다. 
 
 행렬 곱셈은 타일링을 사용하여 온칩 메모리가 하드웨어의 용량 한계를 넘지 않도록 설계합니다. 커널 실행 중에는 행렬의 형태와 관계없이 온칩에 저장되는 요소의 수를 $3T^2$ 개로 제한합니다. 
@@ -181,8 +191,54 @@ $$
 O[k,:] \leftarrow o_N
 $$
 
-이제 2번의 패스를 1번의 패스로 줄입니다.  $o_i$ 는 다음과 같이 정의할 수 있습니다.
+```python
+@triton.jit
+def flashatt_kernel(q_ptr, k_ptr, v_ptr, z_ptr, N0, T, B0: tl.constexpr):
+  pid = tl.program_id(0)
+  block_indices = pid * B0 + tl.arange(0, B0)
+  block_mask = block_indices < N0
+  q_val = tl.load(q_ptr + block_indices, mask=block_mask, other=0.0)
+  
+  m = tl.full((B0,), float("-inf"), dtype=tl.float32)
+  d = tl.zeros((B0,), dtype=tl.float32)
+  
+  for j in range(0, T, B0):
+    tile_indices = j + tl.arange(0, B0)
+    tile_mask = tile_indices < T
+    k_val = tl.load(k_ptr + tile_indices, mask=tile_mask, other=0.0)
+    
+    x = q_val[:, None] * k_val[None, :]
+    x = tl.where(tile_indices[None, :] < T, x, float("-inf"))
+    
+    tile_m = tl.max(x, axis=1)
+    tile_exp = tl.exp(x - tile_m[:, None])
+    tile_d = tl.sum(tile_exp, axis=1)
+    
+    new_m = tl.maximum(m, tile_m)
+    d = d * tl.exp(m - new_m) + tile_d * tl.exp(tile_m - new_m)
+    m = new_m
 
+  z = tl.zeros((B0,), dtype=tl.float32)
+  for j in range(0, T, B0):
+    tile_indices = j + tl.arange(0, B0)
+    tile_mask = tile_indices < T
+    k_val = tl.load(k_ptr + tile_indices, mask=tile_mask, other=0.0)
+    v_val = tl.load(v_ptr + tile_indices, mask=tile_mask, other=0.0)
+    
+    x = q_val[:, None] * k_val[None, :]
+    
+    a = tl.exp(x - m[:, None]) / d[:, None]
+    z += tl.sum(a * v_val[None, :], axis=1)
+
+  tl.store(z_ptr + block_indices, z, mask=block_mask)
+```
+
+$$
+z_i = \sum_j \text{softmax}(q_1k_1, \cdots, q_T k_T)_jv_j \quad \text{for } i =1 \cdots N_0
+$$
+
+
+이제 2번의 패스를 1번의 패스로 줄입니다.  $o_i$ 는 다음과 같이 정의할 수 있습니다.
 $$
 o_i := \sum_{j=1}^{i} \left( \frac{e^{x_j - m_N}}{d_N^{\prime}} V[j, :]\right)
 $$
@@ -238,6 +294,45 @@ $$
 O[k,:] \leftarrow o_N^{\prime}
 $$
 
+```python
+@triton.jit
+def flashatt_kernel(q_ptr, k_ptr, v_ptr, z_ptr, N0, T, B0: tl.constexpr):
+  pid = tl.program_id(0)
+  block_indices = pid * B0 + tl.arange(0, B0)
+  block_mask = block_indices < N0
+  q_val = tl.load(q_ptr + block_indices, mask=block_mask, other=0.0)
+  
+  m = tl.full((B0,), float("-inf"), dtype=tl.float32)
+  d = tl.zeros((B0,), dtype=tl.float32)
+  z = tl.zeros((B0,), dtype=tl.float32)
+  
+  for j in range(0, T, B0):
+    tile_indices = j + tl.arange(0, B0)
+    tile_mask = tile_indices < T
+    k_val = tl.load(k_ptr + tile_indices, mask=tile_mask, other=0.0)
+    v_val = tl.load(v_ptr + tile_indices, mask=tile_mask, other=0.0)
+    
+    x = q_val[:, None] * k_val[None, :]
+    x = tl.where(tile_indices[None, :] < T, x, float("-inf"))
+    
+    tile_m = tl.max(x, axis=1)
+    tile_exp = tl.exp(x - tile_m[:, None])
+    tile_d = tl.sum(tile_exp, axis=1)
+    
+    new_m = tl.maximum(m, tile_m)
+    new_d = d * tl.exp(m - new_m) + tile_d * tl.exp(tile_m - new_m)
+    
+    a = tl.exp(x - new_m[:, None]) / new_d[:, None]
+    z = z * (d * tl.exp(m - new_m) / new_d) + tl.sum(a * v_val[None, :], axis=1)
+    
+    m = new_m
+    d = new_d 
+
+  tl.store(z_ptr + block_indices, z, mask=block_mask)
+```
+
+
+
 ### Algorithm FlashAttention (Tiling)
 
 단일 루프로 구현할 수 있게되어 타일링을 적용할 수 있습니다. 
@@ -274,3 +369,17 @@ O[k,:] \leftarrow o_{N/b}^{\prime}
 $$
 
 ![flash_attention](./../images/2025-04-03-online_softmax/flash_attention.png)
+
+### 생각
+
+위 그림은 Query를 고정하고 Key, Value를 움직이는 방식으로 수식을 해석하고 있습니다. 그러나 [FlashAttention 논문](https://arxiv.org/pdf/2205.14135)에 따르면 Key, Value를 고정하고 Query를 움직이는 방식으로 설명하고 있습니다. 
+
+이는 SRAM 접근을 최소화하려는 목적을 가지고 있지만, 병렬화 측면에서 어려움이 따릅니다. 이를 개선하기 위해 [FlashAttention-2 논문](https://arxiv.org/pdf/2307.08691) 에서는 Query를 Outer Loop로 이동시켜 SRAM 접근이 다소 증가하더라도 병렬 처리가 가능하도록 설계하였습니다. 
+
+### **FlashAttention**
+
+![image-20250404151325102](/../images/2025-04-03-online_softmax/image-20250404151325102.png)
+
+### **FlashAttention-2**
+
+![image-20250404154807165](./../images/2025-04-03-online_softmax/image-20250404154807165.png)
