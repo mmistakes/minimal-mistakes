@@ -4,7 +4,6 @@ import sys
 from datetime import datetime
 from pathlib import Path
 import tweepy
-from linkedin_api import Linkedin
 import praw
 import requests
 import telegram
@@ -15,8 +14,10 @@ TWITTER_API_SECRET = os.getenv("TWITTER_API_SECRET")
 TWITTER_ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
 TWITTER_ACCESS_SECRET = os.getenv("TWITTER_ACCESS_SECRET")
 
-LINKEDIN_USERNAME = os.getenv("LINKEDIN_USERNAME")
-LINKEDIN_PASSWORD = os.getenv("LINKEDIN_PASSWORD")
+LINKEDIN_CLIENT_ID = os.getenv("LINKEDIN_CLIENT_ID")
+LINKEDIN_CLIENT_SECRET = os.getenv("LINKEDIN_CLIENT_SECRET")
+LINKEDIN_ACCESS_TOKEN = os.getenv("LINKEDIN_ACCESS_TOKEN")
+LINKEDIN_USER_ID = os.getenv("LINKEDIN_USER_ID")
 
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
 REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
@@ -53,14 +54,42 @@ def post_to_twitter(content):
         return False
 
 def post_to_linkedin(content):
-    if not all([LINKEDIN_USERNAME, LINKEDIN_PASSWORD]):
+    if not all([LINKEDIN_ACCESS_TOKEN, LINKEDIN_USER_ID]):
         print("LinkedIn credentials not found. Skipping LinkedIn post.")
         return False
     
     try:
-        linkedin = Linkedin(LINKEDIN_USERNAME, LINKEDIN_PASSWORD)
-        linkedin.post_share(content)
-        return True
+        api_url = "https://api.linkedin.com/v2/ugcPosts"
+        
+        post_data = {
+            "author": f"urn:li:person:{LINKEDIN_USER_ID}",
+            "lifecycleState": "PUBLISHED",
+            "specificContent": {
+                "com.linkedin.ugc.ShareContent": {
+                    "shareCommentary": {
+                        "text": content
+                    },
+                    "shareMediaCategory": "NONE"
+                }
+            },
+            "visibility": {
+                "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+            }
+        }
+        
+        headers = {
+            'Authorization': f'Bearer {LINKEDIN_ACCESS_TOKEN}',
+            'Content-Type': 'application/json',
+            'X-Restli-Protocol-Version': '2.0.0'
+        }
+        
+        response = requests.post(api_url, headers=headers, json=post_data)
+        if response.status_code == 201:
+            print("Successfully posted to LinkedIn")
+            return True
+        else:
+            print(f"LinkedIn API error: {response.status_code} - {response.text}")
+            return False
     except Exception as e:
         print(f"Error posting to LinkedIn: {e}")
         return False

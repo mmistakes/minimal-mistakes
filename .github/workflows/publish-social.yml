@@ -14,8 +14,10 @@ jobs:
       TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
       TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
       TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
-      LINKEDIN_USERNAME: ${{ secrets.LINKEDIN_USERNAME }}
-      LINKEDIN_PASSWORD: ${{ secrets.LINKEDIN_PASSWORD }}
+      LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+      LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+      LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+      LINKEDIN_USER_ID: ${{ secrets.LINKEDIN_USER_ID }}
       REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
       REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
       REDDIT_USERNAME: ${{ secrets.REDDIT_USERNAME }}
@@ -35,7 +37,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install tweepy linkedin-api praw python-telegram-bot
+          pip install tweepy praw python-telegram-bot requests
 
       - name: Get changed files
         id: changed-files
