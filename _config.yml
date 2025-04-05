@@ -298,12 +298,12 @@ compress_html:
     envs: development
 
 collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
   pages:
     output: true
     permalink: /:path/
-  projects:
-    output: true
-    permalink: /_projects/:name/
   research:
     output: true
     permalink: /research/:name/
