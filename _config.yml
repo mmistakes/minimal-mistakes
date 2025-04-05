@@ -297,20 +297,6 @@ compress_html:
   ignore:
     envs: development
 
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      # author_profile: true
-      # read_time: true
-      # comments: # true
-      # share: true
-      # related: true
 collections:
   pages:
     output: true
@@ -324,6 +310,20 @@ collections:
   members:
     output: true
     permalink: /members/:name/
+    
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      # author_profile: true
+      # read_time: true
+      # comments: # true
+      # share: true
+      # related: true
 
 header:
   nav: main
