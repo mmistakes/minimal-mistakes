@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Data Science Research Group - IIT Roorkee"#
+title                    : "Data Science Group - IIT Roorkee"#
 title_separator          : "-"
 subtitle                 : "Code Train Predict" # site tagline that appears below site title in masthead
 name                     : #"Your Name"
