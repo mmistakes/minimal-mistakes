@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5 - Ausflug in die Bücherei",
-    "title": "A5 - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2hmdGlhdm5zNWFsbjhsbHBpamxxb282YmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-04-04T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-04-04T11:30:00+02:00"
-    },
-    "created": "2024-12-13T11:14:40.000Z",
-    "updated": "2025-04-02T11:38:17.134Z"
-  },
-  {
-    "image_path": null,
     "alt": "A1 - Ausflug in die Bücherei",
     "title": "A1 - Ausflug in die Bücherei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-04-01T09:22:36.000Z",
     "updated": "2025-04-01T09:22:36.664Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug ins Theater Zitadelle",
+    "title": "A5 - Ausflug ins Theater Zitadelle",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M3RpZnB1NjRzaDFxMnVqbDVvODZrdWQwYzkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-21T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-21T13:30:00+02:00"
+    },
+    "created": "2025-04-02T11:39:09.000Z",
+    "updated": "2025-04-02T11:39:09.121Z"
   }
 ]
