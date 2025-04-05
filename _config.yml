@@ -315,6 +315,15 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  research:
+    output: true
+    permalink: /research/:name/
+  members:
+    output: true
+    permalink: /members/:name/
 
 header:
   nav: main
