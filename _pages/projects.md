@@ -55,12 +55,12 @@ permalink: /projects/
 <div class="project-grid">
 
   <div class="project-card">
-    <img src="/assets/images/projects/visualml.png" alt="Visual Ml">
+    <img src="https://github.com/advikasinha/dsg-website/blob/master/assets/images/projects/visualml.png" alt="Visual Ml">
     <h3>Visual ML</h3>
     <p>Interactive Visual Machine Learning Demos. Machine Learning in the browser powered by TF JS.</p>
     <div class="project-links">
       <a href="https://github.com/dsgiitr/VisualML" target="_blank">GitHub</a>
-      <a href="/projects/visual_ml/">Details</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/visual_ml/">Details</a>
     </div>
   </div>
 
