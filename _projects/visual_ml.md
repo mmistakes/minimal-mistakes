@@ -5,5 +5,5 @@ image: /assets/images/projects/visualml.png
 github: https://github.com/dsgiitr/VisualML
 layout: single
 collection: projects
-permalink: /projects/visual_ml/
+permalink: /_projects/visual_ml/
 ---
