@@ -303,7 +303,7 @@ collections:
     permalink: /:path/
   projects:
     output: true
-    permalink: /projects/:name/
+    permalink: /_projects/:name/
   research:
     output: true
     permalink: /research/:name/
