@@ -1,0 +1,25 @@
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.member-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.member-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.member-card img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
