@@ -326,11 +326,5 @@ defaults:
       related: true
       show_date: true
       
-
-
-      # toc: true
-      # toc_sticky: true
-      # toc_label: 목차
-      # toc_icon: "fa-sharp-duotone fa-solid fa-hashtag"
 date_format: "%Y-%m-%d"
 
