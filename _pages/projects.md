@@ -55,7 +55,7 @@ permalink: /projects/
 <div class="project-grid">
 
   <div class="project-card">
-    <img src="/assets/images/projects/visualml.png" alt="Visual Ml">
+    <img src="/assets/images/visualml.png" alt="Visual Ml">
     <h3>Visual ML</h3>
     <p>Interactive Visual Machine Learning Demos. Machine Learning in the browser powered by TF JS.</p>
     <div class="project-links">
