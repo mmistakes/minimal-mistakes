@@ -113,7 +113,7 @@ analytics:
 
 # Site Author
 author:
-  name             : '' #"Data Science Group, IIT Roorkee"
+  name             : "DSG, IIT Roorkee"
   avatar           : "/assets/images/dsg-logo.png"
   bio              : "Code Train Predict" # "I am an **amazing** person."
   location         : "Roorkee, India" # "Somewhere"
