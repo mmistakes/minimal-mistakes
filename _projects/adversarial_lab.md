@@ -3,7 +3,7 @@ title: "Adversarial Lab"
 layout: single
 permalink: /projects/adversarial_lab/
 ---
-![Adv_ex](/assets/images/adversarial_example.gif)
+![Adv_ex]({{ site.baseurl }}/assets/images/adversarial_example.gif)
 ## Adversarial Lab
 This project is a Web-based Tool for visualisation and generation of adversarial examples by attacking ImageNet Models like VGG, AlexNet, ResNet etc.
 
