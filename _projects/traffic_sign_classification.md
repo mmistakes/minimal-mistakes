@@ -3,7 +3,7 @@ title: "Beginner Friendly Project: Traffic Sign Classification"
 layout: single
 permalink: /projects/traffic_style_classification/
 ---
-![traffic_sign](/assets/images/Traffic_sign.jpg)
+![traffic_sign]({{ site.baseurl }}/assets/images/Traffic_sign.jpg)
 This project involves tackling a beginner friendly computer vision based Deep Learning problem based on the dataset [The German Traffic Sign Recognition Benchmark(GTSRB)](http://benchmark.ini.rub.de/?section=gtsrb&subsection=news). The problem is to to recognize the traffic sign from the images. Solving this problem is essential for self-driving cars to operate on roads.
 
 The dataset features 43 different signs under various sizes, lighting conditions, occlusions and is very similar to real-life data. Training set includes about 39000 images while test set has around 12000 images. Images are not guaranteed to be of fixed dimensions and the sign is not necessarily centered in each image.
