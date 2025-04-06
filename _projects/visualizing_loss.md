@@ -3,7 +3,7 @@ title: "Visualizing Loss Functions"
 layout: single
 permalink: /projects/visualizing_loss/
 ---
-![visualizing_loss](/assets/images/visualizing_loss.jpg)
+![visualizing_loss]({{ site.baseurl }}/assets/images/visualizing_loss.jpg)
 
 ## Visualising different loss and optimisation functions using Autoencoder.
 The aim of the project was to reconstruct images with the help of Autoencoders to visualise the difference in output when different loss or optimisation functions are used. A very simple dataset, MNIST dataset was used for this purpose.
