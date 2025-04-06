@@ -64,4 +64,128 @@ permalink: /projects/
     </div>
   </div>
 
+  <div class="project-card">
+    <img src="/assets/images/d2l_pytorch.svg" alt="d2l PyTorch">
+    <h3>d2l-pytorch</h3>
+    <p>This project reproduces the book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/d2l-pytorch" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/d2l-pytorch/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/graph_nets.svg" alt="Graph Nets">
+    <h3>Graph Representation Learning</h3>
+    <p>Implementation and Explanation Graph Representation Learning papers involving DeepWalk, GCN, GraphSAGE, ChebNet and GAT.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/graph_nets" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/graph_nets/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/rl2048.jpeg" alt="Visual Ml">
+    <h3>Reinforcement Learning 2048</h3>
+    <p>This project builds on a demo for playing the game 2048 using Reinforcement Learning.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/rl_2048" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/rl2048/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/visualml.png" alt="Sarcasm Detection">
+    <h3>Sarcasm Detection using BERT</h3>
+    <p>Implementation of BERT based Sarcasm Detection Classification model using Tensorflow.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/Sarcasm-Detection-Tensorflow" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/sarcasm_detection/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/adversarial_example.gif" alt="Adversarial Example">
+    <h3>Adversarial Lab</h3>
+    <p>This project builds on a demo for several Adversarial Attacks on ImageNet Classifier Models.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/adversarial_lab" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/adversarial_lab/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/np_detection.gif" alt="Number Plate Detection">
+    <h3>Number Plate Detection</h3>
+    <p>This is a step towards automating the vehicles entering IIT Roorkee campus using state of the art Deep learning & Computer Vision.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/np_detection" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/np_detection/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/eye_in_the_sky.svg" alt="Eye in the Sky">
+    <h3>Eye In The Sky: Image Segmentation Challenge Inter IIT 2018</h3>
+    <p>Winning Solution in the Inter IIT Tech Meet 2018 Machine Learning Challenge, "Eye In The Sky".</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/Eye-In-The-Sky-Image_Segmentation_Challenge" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/eye_in_the_sky/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/visualizing_loss.jpg" alt="Visualizing Loss">
+    <h3>Visualizing Loss Functions</h3>
+    <p>Visualising different loss and optimisation functions using Autoencoders.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/Visualizing-Loss-Functions" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/visualizing_loss/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/neural_style.gif" alt="Neural Style Transfer">
+    <h3>Neural Style Transfer</h3>
+    <p>Implementation of Neural Style Transfer described in the paper by Gatys et.al.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/Neural-Style-Transfer" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/neural_style/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="/assets/images/traffic_sign.jpg" alt="Traffic Sign">
+    <h3>Beginner Friendly Project: Traffic Sign Classification</h3>
+    <p>Using GTSRB dataset to build a CNN based Traffic Sign Classifier.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/Traffic-Sign-Classification" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/traffic_sign_classification/">Details</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
+  <div class="project-card">
+  </div>
+
 </div>
