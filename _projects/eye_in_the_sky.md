@@ -3,7 +3,7 @@ title: "Eye in the Sky: Image segmentation challenge Inter IIT 2018"
 layout: single
 permalink: /projects/eye_in_the_sky/
 ---
-![img_seg](/assets/images/Eye_In_The_Sky.svg)
+![img_seg]({{ site.baseurl }}/assets/images/Eye_In_The_Sky.svg)
 This is the winning code for “Eye In The Sky” Satellite Image Segmentation Competetion as a part of Inter-IIT Tech Meet 2018 hosted by IIT Bombay.
 ## Problem Statement
 We were provided with a satellite imagery dataset for semantic segmentation and the task was to propose and implement a satellite dense image classification technique.
@@ -24,7 +24,7 @@ Satellite imagery is a rich and structured source of information, yet it is less
 # Dataset/ Data Analysis
 The dataset contained 16 training images and 6 images were given as test data. Images were of varying resolution and contained Near InfraRed channel (NIR) along with regular RGB channels. Images given were saved in uint16 format. There are 8 different classes present in the data along with one none class. We observed the dataset is highly imbalanced as well as skewed in terms of the range of pixel values. We select three images as the validation set in all our experiments such that our validation has balanced class distribution. Images used for validation are 13.tif, 3.tif, 9.tif.
 
-![Data analysis](/assets/images/Eye_In_The_Sky2.jpg)
+![Data analysis]({{ site.baseurl }}/assets/images/Eye_In_The_Sky2.jpg)
 
 ## Methodology
 We decided to work on two different methods
@@ -45,7 +45,7 @@ We trained 8 different binary models on all the classes and then combined all th
 # Model Architecture
 We used encoder-decoder like Fully Convolutional Network inspired from Unet family of networks​​. Unet​ was originally developed for biomedical image segmentation.
 
-![U-net](/assets/images/u-net.png)
+![U-net]({{ site.baseurl }}/assets/images/u-net.png)
 # Why U-Net?
 In our case, using a U-Net is a good choice because of the lack of training data, and it also seems to be the choice of most researchers in other fields where image segmentation plays a major role. This neural network architecture has revealed to be very good in this situation. U-Nets have the ability to learn in environments of low to medium quantities of training data, and the amount of training data available in the problem statement is considered low. Also, a U-Net can be very easily adapted to recent research for tweaking the model according to the application.
 
@@ -56,15 +56,15 @@ We trained 1 model for each class. Six of them were basic Unets with slight modi
 We used different losses for the different set of classes. We started with Soft Dice Loss but we soon observed that the although dice loss could optimize the overlap the model do not predict sharp images and overall accuracy was still low. To increase the accuracy and sharpness we decided to use Binary cross entropy along with Soft Dice Loss. We used a combination of these losses as well as some variations were made to these loss function to best suit the class.
 
 The loss functions and architectures used are summarised in the table given below:
-![Table1](/assets/images/Eye_In_The_Sky3.jpg)
+![Table1]({{ site.baseurl }}/assets/images/Eye_In_The_Sky3.jpg)
 We introduced a novel variant of BCE loss Crude BCE, Which penalizes model predictions based on the expected probability of that class in the mini batch. This Highly reduced the chances of our model predicting some random class at some very unexpected location.
 
-![Table2](/assets/images/Eye_In_The_Sky5.jpg)
+![Table2]({{ site.baseurl }}/assets/images/Eye_In_The_Sky5.jpg)
 # Model Training
 Due to the memory constraints available on GPU, we did training in mini-batches of 16. We started with a learning rate of 1e-3 for 20-30 epochs and then fine-tuned the network for 5-10 more epochs with learning rate reduced to one-tenth of its previous value for proper convergence of network. Due to the class imbalance in the dataset, the classes with low representation like “pool”, “Soil”, “Railway”, One of the major problem encountered in Binary segmentation is the absence of positive class. We used patch sampling in data loader with weights assigned to each patch according to the class distribution of the patch. Final weights were calculated as the inverse frequency of a particular class in the training data. Since, classes like Pool and Soil were present in very less amount in training data as compared to other major classes like Building, Grass and None we suspected our model would not generalize very well on these classes. During training, we occasionally observed spurious predictions of these classes in unexpected places. Therefore, to counter this major problem we came up with a novel variant of binary cross entropy loss function namely crude BCE which is described above in the loss function section. We also observed that the binary model trained on water class was confusing with the shadows of buildings.
 
 We suspected the cause of the problem to be IR channel as the Infrared signature of both water and shadows are quite similar.
-![img](/assets/images/Eye_In_The_Sky6.jpg)
+![img]({{ site.baseurl }}/assets/images/Eye_In_The_Sky6.jpg)
 It is to be noted that water class is generally present as a large water body and therefore we penalize our model through crude BCE for small spurious predictions. We also used a simple morphological operation like erosion to remove very small patches of water.
 
 # Multi-class Image segmentation
@@ -76,9 +76,9 @@ In this methodology, we trained a single Multi-Class Segmentation Model for all 
 Loss Functions :
 
 Our Models was optimized for the combination of dice Loss, Cross Entropy​ and Focal Loss​ .
-![img](/assets/images/Eye_In_The_Sky7.jpg)
+![img]({{ site.baseurl }}/assets/images/Eye_In_The_Sky7.jpg)
 The main aim of dice loss is the optimization of intersection over union and can be used where we cannot guarantee equal distribution of classes.
-![img](/assets/images/Eye_In_The_Sky8.jpg)
+![img]({{ site.baseurl }}/assets/images/Eye_In_The_Sky8.jpg)
 The Dice Loss optimized the Intersection over Union however, small wrong predictions are not penalized because they have small intersection as compared to the union. So to counter that we also used the Focal Loss​ which was more focused on the per-pixel predictions. The focal loss was also more focused on the per-pixel loss optimizing the boundaries and can be used where we cannot guarantee equal distribution of classes.
 # Training:
 Training multi-class model is quite similar to the binary case except for the output of the model and ground truth are converted to multi-channel one-hot encoded mask, each channel belongs to one class. Multichannel probability maps are produced as output by using softmax​ the end of Unet​ where each channel belongs the confidence score assigned to each class by the model. Training patches of 256x256x4 and a relatively bigger batch size of 16 is used for removing noise in the training We used the same specs as mentioned in the binary case like the use of Adam​ optimizer. In the case of multi-class models due to the abundance of data belonging to a particular class the need for class balancing is less relatively. Here also we ensured that the underrepresented classes were oversampled through effective augmentations described above in ​augmentations​ section. Initially, we trained multi-class model considering the loss on ‘none’ class but later due to the decision of exclusion of ‘none’ class from the evaluation of final metrics we decided not to calculate the loss on ‘none’ channel in output mask and hence made the model ignore ‘none’ class entirely. We used Binary cross entropy and Soft dice loss for final training of network. We also tried experimenting with class weights and sampler in data loader as described in the binary case but we noticed that it didn’t affect the validation metrics much and hence to minimize the computational cost of computing dynamic weights at each training iteration we decided to drop this idea. In multi-class segmentation we noticed that the validation accuracy saturates pretty quickly. We suspected hard negatives as the major reason behind the problem and hence we decided to fine-tune our model for 5-10 epoch with the focal loss which penalizes the model more on hard examples. We tuned the gamma for focal loss and decided gamma=1 as its final value.
@@ -94,13 +94,13 @@ In this report, we analyzed the provided dataset and explained our approaches fo
 
 ## Results
 Kappa Score:-
-![img](/assets/images/Eye_In_The_Sky9.jpg)
+![img]({{ site.baseurl }}/assets/images/Eye_In_The_Sky9.jpg)
 Accuracy:- We achieved a training accuracy of 0.976 and a validation accuracy of 0.920
-![img](/assets/images/Eye_In_The_Sky10.jpg)
+![img]({{ site.baseurl }}/assets/images/Eye_In_The_Sky10.jpg)
 Confusion Matrix:-
 
 Here classes are numbered from 0 to 7 for classes Roads, Trees, Grass, Building, Soil, Pool, Water and Railways
-![img](/assets/images/Eye_In_The_Sky11.jpg)
+![img]({{ site.baseurl }}/assets/images/Eye_In_The_Sky11.jpg)
 
 ## References
 [Unet](https://arxiv.org/abs/1505.04597)
