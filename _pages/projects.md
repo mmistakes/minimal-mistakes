@@ -125,7 +125,7 @@ permalink: /projects/
   </div>
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/eye_in_the_sky.svg" alt="Eye in the Sky">
+    <img src="{{ site.baseurl }}/assets/images/Eye_In_The_Sky.svg" alt="Eye in the Sky">
     <h3>Eye In The Sky: Image Segmentation Challenge Inter IIT 2018</h3>
     <p>Winning Solution in the Inter IIT Tech Meet 2018 Machine Learning Challenge, "Eye In The Sky".</p>
     <div class="project-links">
@@ -155,7 +155,7 @@ permalink: /projects/
   </div>
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/traffic_sign.jpg" alt="Traffic Sign">
+    <img src="{{ site.baseurl }}/assets/images/Traffic_sign.jpg" alt="Traffic Sign">
     <h3>Beginner Friendly Project: Traffic Sign Classification</h3>
     <p>Using GTSRB dataset to build a CNN based Traffic Sign Classifier.</p>
     <div class="project-links">
