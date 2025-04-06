@@ -41,7 +41,7 @@ ChebNet is a formulation of CNNs in the context of spectral graph theory.
 - [Paper-> Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375)
 
 ## 5. Understanding Graph Attention Networks
-![GAT]({{ site.baseurl }}/assets/images/GAT_cover.jpg)
+![GAT]({{ site.baseurl }}/assets/images/GAT_Cover.jpg)
 GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront.
 
 - [GAT Blog](https://dsgiitr.com/blogs/gat)
