@@ -3,7 +3,7 @@ title: "Graph Representation Learning"
 layout: single
 permalink: /projects/graph_nets/
 ---
-![Graph Nets Project Banner]({{ site.baseurl }}/assets/images/graph_nets.png)
+![Graph Nets Project Banner]({{ site.baseurl }}/assets/images/graph_nets.svg)
 
 This project involves a simplified, yet exhaustive approach to implementation and explanation of various Graph Representation Learning techniques developed in the recent past. We cover major papers in the field as part of the review series and we aim to add blogs on many more significant papers in the field.
 
