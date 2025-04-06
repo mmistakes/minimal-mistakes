@@ -31,4 +31,4 @@ Adagrad is more preferrable for a sparse data set as it makes big updates for in
 Adam stands for Adaptive Moment Estimation. It also calculates different learning rate. Adam works well in practice, is faster, and outperforms other techniques.
 
 # Results of Optimizers
-![img](/assets/images/result_optimiser.jpg)
+![img]({{ site.baseurl }}/assets/images/result_optimiser.jpg)
