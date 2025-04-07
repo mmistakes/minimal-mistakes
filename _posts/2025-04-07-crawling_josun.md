@@ -39,6 +39,7 @@ print("모든 국왕의 위키백과 본문을 텍스트 파일로 저장 완료
 ```
 
 # 고전 db 사이트 도서 리스트 크롤링 (python)
+## 링크 : https://db.itkc.or.kr/dir/item?itemId=MO#/dir/list?qw=&q=&grpId=&itemId=MO&gubun=book&cate1=&cate2=&upSeoji=&listType=simple&sortField=&sortOrder=&pageIndex={i}&pageUnit=100
 ```{python}
 !pip install playwright
 !playwright install
@@ -87,4 +88,71 @@ async def run():
 await run()
 ```
 
+# 나무위키 미러 사이트 크롤링 (python)
+```
+import requests
+from bs4 import BeautifulSoup
+
+# 미러 사이트 URL (조선 군주)
+url = "https://namu.moe/w/태조(조선)"
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+}
+
+response = requests.get(url, headers=headers)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+text = soup.get_text()
+
+# 저장
+with open("joseon_kings_from_namu_mirror.txt", "w", encoding="utf-8") as f:
+    f.write(text)
+
+print("미러사이트에서 조선 국왕 정보 저장 완료!")
+
+import requests
+from bs4 import BeautifulSoup
+import os
+
+# 조선 국왕 리스트
+kings = [
+    "태조(조선)", "정종(조선)", "태종(조선)", "세종", "문종(조선)", "단종(조선)", "세조(조선)", "예종(조선)", "성종(조선)", "연산군",
+    "중종(조선)", "인종(조선)", "명종(조선)", "선조(조선)", "광해군", "인조", "효종(조선)", "현종(조선)", "숙종(조선)", "경종(조선)",
+    "영조(조선)", "정조(조선)", "순조", "헌종(조선)", "철종(조선)", "고종(조선)", "순종(조선)"
+]
+
+# 헤더
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+}
+
+# 저장 폴더 생성
+output_folder = "joseon_kings_txt"
+os.makedirs(output_folder, exist_ok=True)
+
+# 각 왕별 파일 저장
+for king in kings:
+    url_name = king.replace(" ", "_")  # 공백 URL 인코딩
+    url = f"https://namu.moe/w/{url_name}"
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        page_text = soup.get_text()
+
+        # 파일 이름 깨짐 방지용 (괄호 포함된 이름은 윈도우에서 에러날 수도 있어서 안전하게 처리)
+        safe_filename = king.replace("/", "_")
+
+        with open(f"{output_folder}/{safe_filename}.txt", "w", encoding="utf-8") as f:
+            f.write(page_text)
+
+        print(f"✅ {king} 저장 완료: {safe_filename}.txt")
+
+    except Exception as e:
+        print(f"❌ {king} 저장 실패: {e}")
+
+print("\n🎉 모든 조선 국왕 파일 저장 완료!")
+```
 
