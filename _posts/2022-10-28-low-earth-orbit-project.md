@@ -13,4 +13,4 @@ Built a web application for active low-earth orbit satellites using Python, Goog
 
 Tools:
 <i class="fab fa-python"></i> Python,
-<i class="fab fa-gcp"></i> GCP
+<i class="fas fa-cloud"></i> GCP.
