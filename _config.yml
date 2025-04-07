@@ -119,9 +119,6 @@ author:
   location         : "Belgium"
   email            : "nikkie.badsar@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:nikkie.badsar@gmail.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
