@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% comment %} Removed recent posts heading {% endcomment %}
+{% comment %}
+{% if page.url == "/" and site.posts.size > 0 %}
+  <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+{% endif %}
+{% endcomment %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="page__title">{{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+    {% endunless %}
+
+    {{ content }}  
+
+    {% comment %} Removed recent posts list and paginator {% endcomment %}
+    {% comment %}
+    {% if site.paginate %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    <div class="entries-{{ entries_layout }}">
+      {% include posts-layout.html type=entries_layout posts=posts %}
+    </div>
+
+    {% include paginator.html %}
+    {% endcomment %}
+
+  </div>
+</div>
