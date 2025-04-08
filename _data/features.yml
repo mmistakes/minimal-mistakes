@@ -1,0 +1,8 @@
+bio:
+  - image_path: /assets/images/Narges_Headshot.jpg
+    alt: "Nikkie Badsar"
+    title: "About Me"
+    excerpt: "English teacher based in Belgium. Passionate about literature, language, and inclusive education across borders."
+    url: "/about/"
+    btn_label: "More"
+    btn_class: "btn--primary"
