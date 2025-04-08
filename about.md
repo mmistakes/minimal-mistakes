@@ -1,6 +1,8 @@
-# Hello, I am Nikkie!
-
-**About me:** 
+---
+layout: single
+title: "About Me"
+permalink: /about/
+---
 
 After a master’s in social and cultural anthropology and three years in a phd program, I took a detour—into small business, programming, and eventually, education.
 
