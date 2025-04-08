@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Nikkie Badsar"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Teacher. Writer. Educator."
+  avatar           : "/assets/images/Narges_Headshot.jpg"
+  bio              : "English teacher | Classroom-grounded | Thinking through literature, culture & pedagogy | Learning across borders."
   location         : "Belgium"
   email            : "nikkie.badsar@gmail.com"
   links:
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/nikkie.badsar/"
 
 # Site Footer
 footer:
@@ -134,7 +134,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/nikkie.badsar/"
 
 
 # Reading Files
