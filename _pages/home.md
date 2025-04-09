@@ -6,10 +6,7 @@ author_profile: true
 author: dsgiitr
 ---
 
-
-## About Us
-
-The **Data Science Group (DSG)** at IIT Roorkee is a premier student-led research community focused on advancing the fields of Artificial Intelligence, Machine Learning, and Data-Driven Technologies.
+The **Data Science Group (DSG)** at IIT Roorkee is a student-led research community focused on advancing the fields of Artificial Intelligence, Machine Learning, and Data-Driven Technologies.
 
 Our work spans academic research, real-world applications, and active participation in national and international competitions. We strive to be at the forefront of innovation in data science among Indian technical institutes.
 
@@ -22,7 +19,7 @@ Our work spans academic research, real-world applications, and active participat
 - 10+ Ongoing Projects  
 - National Hackathon & AI Challenge Winners  
 - Collaborations with Academia and Industry
-
+  
 ---
 
 ## Our Focus
@@ -43,10 +40,6 @@ Our work spans academic research, real-world applications, and active participat
 > Stay updated via our [GitHub](https://github.com/DataScienceGroupIITR) and [LinkedIn](https://www.linkedin.com/) handles.
 
 ---
-
-## Join Us
-
-We welcome passionate individuals who are eager to learn, build, and research in AI and data science.
 
 👉 [Meet Our Members »](/members/)  
 📬 [Get in Touch »](/contact/)
