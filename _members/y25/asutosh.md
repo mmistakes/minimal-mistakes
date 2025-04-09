@@ -8,7 +8,7 @@ layout: splash
 
 # Asutosh Maharana
 
-<img src="{{ site.baseurl }}/assets/images/members/y25/Asutosh_PFP.png" width="200" height="200" alt="Asutosh Maharana">
+<img src="{{ site.baseurl }}/assets/images/members/y25/asutosh_PFP.jpg" width="200" height="200" alt="Asutosh Maharana">
 
 
 *Core Member, DSG IIT Roorkee*
