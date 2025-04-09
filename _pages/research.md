@@ -114,7 +114,8 @@ layout: splash
     <div class="research-links">
       <a href="https://arxiv.org/abs/2504.03850" target="_blank">Paper</a>
       <a href="https://github.com/dsgiitr/flux-watermarking" target="_blank">GitHub</a>
-  </div>
+     </div>
+    </div>
 
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 5">
@@ -126,6 +127,7 @@ Editing</h3>
       <a href="https://openreview.net/forum?id=Xvc3fyP19Y" target="_blank">Paper</a>
       <a href="https://github.com/dsgiitr/repo" target="_blank">GitHub</a>
   </div>
+</div>
 
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
@@ -135,6 +137,7 @@ Editing</h3>
       <a href="https://openreview.net/forum?id=qTDDGHvXiU&referrer=%5Bthe%20profile%20of%20Cherish%20Puniani%5D(%2Fprofile%3Fid%3D~Cherish_Puniani1)" 
       target="_blank">Paper</a>
       <a href="https://github.com/dsgiitr/repo" target="_blank">GitHub</a>
+  </div>
   </div>
    
 
