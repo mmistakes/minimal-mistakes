@@ -13,7 +13,7 @@ permalink: /projects/
 }
 
 .project-card {
-  background: #cccccc;
+  background: #e0e0e0;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
