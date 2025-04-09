@@ -1,10 +1,47 @@
+
+
+
 ---
-layout: home
-title: ""
-permalink: /
-author_profile: true
-author: dsgiitr
+layout: default
+title: Home
 ---
+
+<style>
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0.5rem;
+}
+
+.code { color: #000; }
+.train { color: #007bff; } /* Bluish tone */
+.predict { color: #000; }
+
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+</style>
+
+<div class="hero">
+  <h1><span class="code">CODE.</span> <span class="train">TRAIN.</span> <span class="predict">PREDICT.</span></h1>
+  <p>We are the Data Science Group at IIT Roorkee. Empowering students to innovate through machine learning, research, and collaboration.</p>
+</div>
+
+
+
 
 The **Data Science Group (DSG)** at IIT Roorkee is a student-led research community focused on advancing the fields of Artificial Intelligence, Machine Learning, and Data-Driven Technologies.
 
