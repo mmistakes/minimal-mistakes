@@ -8,7 +8,7 @@ layout: single
 
 # Jheel Maheshwari
 
-
+<img src="{{ site.baseurl }}/assets/images/members/y24/jheelmaheshwari.png" width="200" height="200" alt="Jheel Maheshwari">
 
 *Core Member, DSG IIT Roorkee*
 
