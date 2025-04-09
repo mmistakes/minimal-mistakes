@@ -29,8 +29,8 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y24/ojasv.jpg" alt="Ojasv Neema">
-    <h3><a href="{{ site.baseurl }}/members/y24/ojasv/">Ojasv Neema</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y24/ojasv.jpg" alt="Ojasva Nema">
+    <h3><a href="{{ site.baseurl }}/members/y24/ojasv/">Ojasva Nema</a></h3>
   </div>
 
   <div class="member-card">
