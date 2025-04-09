@@ -8,7 +8,7 @@ layout: single
 
 # Cherish Puniani
 
-<img src="{{ site.baseurl }}/assets/images/members/y24/cp.png" width="200" height="200" alt="Agam Pandey">
+<img src="{{ site.baseurl }}/assets/images/members/y24/cp.png" width="200" height="200" alt="Cherish Puniani">
 
 
 *Core Member, DSG IIT Roorkee*
