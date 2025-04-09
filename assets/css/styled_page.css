@@ -1,0 +1,53 @@
+/* custom.css */
+.member-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+.member-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.member-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.member-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eee;
+}
+
+.member-name {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.member-role,
+.member-affiliation {
+  margin: 0.3rem 0;
+  color: #555;
+  font-style: italic;
+}
+
+.member-content h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+.member-content a {
+  color: #1e90ff;
+  text-decoration: none;
+}
