@@ -2,14 +2,9 @@
 layout: archive
 ---
 
-<!-- Particle container (goes behind the content) -->
-<div id="particles-js"></div>
-
 {{ content }}
 
-<h3 class="archive__subtitle">
-  {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
-</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -23,50 +18,3 @@ layout: archive
 </div>
 
 {% include paginator.html %}
-
-<!-- Particle.js library -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-<!-- Particle config -->
-<script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-      "color": { "value": "#ffffff" },
-      "shape": { "type": "circle" },
-      "opacity": { "value": 0.5 },
-      "size": { "value": 3, "random": true },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 2,
-        "direction": "none",
-        "out_mode": "out"
-      }
-    },
-    "interactivity": {
-      "events": {
-        "onhover": { "enable": true, "mode": "grab" }
-      }
-    },
-    "retina_detect": true
-  });
-</script>
-
-<!-- Optional CSS to keep the background behind content -->
-<style>
-  #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-</style>
