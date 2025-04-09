@@ -49,12 +49,12 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/kaustubh.jpg.jpg" alt="Kaustubh Sharma">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/kaustubh.jpg.jpg" alt="Kaustubh Sharma">
     <h3><a href="{{ site.baseurl }}/members/kaustubh_sharma">Kaustubh Sharma</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/amritanshu.png" alt="amritanshu">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/amritanshu.png" alt="amritanshu">
     <h3><a href="{{ site.baseurl }}/members/amritanshu/">Amritanshu Tiwari</a></h3>
   </div>
 
