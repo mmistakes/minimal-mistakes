@@ -3,21 +3,20 @@ title: ""
 permalink: /members/swadeshswain
 layout: single
 ---
-# Swadesh N. Swain
-<img src="{{ site.baseurl }}/assets/images/members/y24/swadesh.png" width="200" height="200" alt="Swadesh N. Swain">
+# Swadesh Swain
+<img src="{{ site.baseurl }}/assets/images/members/y23/swadesh.png" width="200" height="200" alt="Swadesh N. Swain">
 *Joint Secretary, DSG IIT Roorkee*
 ---
 ## Education  
 - **B.Tech**, Electronics and Communication Engineering with Mathematics Minor, IIT Roorkee (2022–2026)  
-- Puna International School, Ahmedabad, Gujarat (2020-2022) - GPA: 96.4/100%
 ---
 ## Research Interests  
 - Machine Learning & Deep Learning
 - Interpretability in AI Models
-- Signal Processing
-- Computer Vision
-- Synthetic Data Generation
-- Image Processing and Compression
+- Alignment and Safety in AI 
+- Rienforcement Learning - Multi-Task RL, Generalization, Skill-Based Learning, World Models
+- Robustness in Multi-Modal Models
+- Diffusion Conditioning for Synthetic Data Generation
 ---
 ## Projects  
 - **[Re]Learning Hierarchical Image Segmentation For Recognition and by Recognition** (Jan 2025-Present)  
@@ -33,13 +32,10 @@ layout: single
   Research project focused on identifying AI generated text and enhancing robustness against artificial content.
 ---
 ## Publications  
-- Swain, S., Singhi, S., (2024). Riemann Sum Optimization for Accurate Integrated Gradients Computation. Accepted to Interpretable AI Workshop 2024 @ NeurIPS 2024. (Co-Author)
-- Mittal, A., Pandey, A., Tiwari, A., Jindal, S., Swain, S., (2025). Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in VLMs. Under Review in TMLR. (Co-Author)
+- Swain, S., Singhi, S., (2024). [Riemann Sum Optimization for Accurate Integrated Gradients Computation](https://arxiv.org/abs/2410.04118). Accepted to Interpretable AI Workshop 2024 @ NeurIPS 2024. (Co-Author)
+- Mittal, A., Pandey, A., Tiwari, A., Jindal, S., Swain, S., (2025). [Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in VLMs](https://openreview.net/forum?id=5L90cl0xtf&noteId=7yskfQI5KW). Under Review in TMLR. (Co-Author)
 ---
-## Roles at DSG  
-- Joint Secretary (Sep 2024-Present)
-- Working on open-source projects and research in Machine Learning, Deep Learning & Reinforcement Learning
-- Managing and organizing lectures, workshops, and hackathons in Data Science and AI
+
 ---
 ## Research Experience
 - **Deepfake Detection in the Wild** - IEEE Signal Processing Cup Team Member (Sep 2024-Feb 2024)
@@ -47,5 +43,5 @@ layout: single
 - **CANDLE Research Lab, IIT Roorkee** - Undergraduate Researcher (Dec 2023-Present)
 ---
 ## Follow
-[GitHub](https://github.com/swadeshswain) | [LinkedIn](https://linkedin.com/in/swadeshswain) | [Email](mailto:swadesh_s@ece.iitr.ac.in)
+[GitHub](https://github.com/Swadesh06/) | [LinkedIn](https://linkedin.com/in/swadeshswain) | [Email](mailto:swadesh_s@ece.iitr.ac.in)
 ---
