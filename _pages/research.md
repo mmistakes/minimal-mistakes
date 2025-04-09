@@ -59,11 +59,11 @@ layout: splash
 
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research1.png" alt="Paper 1">
-    <h3>Title of Research Paper 1</h3>
-    <p>Short description or abstract snippet goes here (1-2 lines max).</p>
+    <h3>[Re] CUDA: Curriculum of Data Augmentation for Long‐tailed Recognition</h3>
+    <p>Using classwise degree of data augmentation to tackle class imbalance in long tailed dataset</p>
     <div class="research-links">
-      <a href="https://arxiv.org/abs/yourpaper1" target="_blank">Paper</a>
-      <a href="https://github.com/yourrepo1" target="_blank">Code</a>
+      <a href="https://openreview.net/forum?id=Wm6d44I8St" target="_blank">Paper</a>
+      <a href="https://github.com/whitewhistle/CUDA-org-="_blank">Code</a>
     </div>
   </div>
 
