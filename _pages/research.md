@@ -97,4 +97,51 @@ layout: splash
     </div>
   </div>
 
+
+ <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/ImageAlchemy.png" alt="Paper 5">
+    <h3>Image-Alchemy: Advancing Subject Fidelity in Personalized Text-to-Image Generation</h3>
+    <p> A two-stage personalization pipeline for personalized image generation using LoRA-based attention fine-tuning and segmentation-guided Img2Img synthesis.</p>
+    <div class="research-links">
+      <a href="https://openreview.net/forum?id=wOh5cAM9qC" target="_blank">Paper</a>
+      <a href="https://github.com/kaustubh202/image-alchemy" target="_blank">GitHub</a>
+    </div>
+
+ <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/FluxWatermarking.png" alt="Paper 5">
+    <h3>Detection Limits and Statistical Separability of Tree Ring Watermarks in Rectified Flow-based Text-to-Image Generation Models</h3>
+    <p> Tree Ring Watermarks are harder to detect in modern rectified flow-based models compared to traditional diffusion models, especially under image attacks.</p>
+    <div class="research-links">
+      <a href="https://arxiv.org/abs/2504.03850" target="_blank">Paper</a>
+      <a href="https://github.com/dsgiitr/flux-watermarking" target="_blank">GitHub</a>
+    </div>
+
+ <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 5">
+    <h3>One Noise to Fool Them All: Universal Adversarial Defenses Against Image
+Editing</h3>
+    <p> Image immunization involves adding undetectable noise in images to prevent editing via diffusion models. We furthur extended this to multiple images using a single noise.
+</p>
+    <div class="research-links">
+      <a href="https://openreview.net/forum?id=Xvc3fyP19Y" target="_blank">Paper</a>
+      <a href="https://github.com/dsgiitr/repo" target="_blank">GitHub</a>
+    </div>
+
+ <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
+    <h3>Impact of Language Guidance: A Reproducibility Study</h3>
+    <p> A reproducability study of Language guidance on self-supervised learning frameworks</p>
+    <div class="research-links">
+      <a href="https://openreview.net/forum?id=qTDDGHvXiU&referrer=%5Bthe%20profile%20of%20Cherish%20Puniani%5D(%2Fprofile%3Fid%3D~Cherish_Puniani1)" target="_blank">Paper</a>
+      <a href="https://github.com/dsgiitr/repo" target="_blank">GitHub</a>
+    </div>
+   
+
+
+  </div>
+
+
+  
+
+
 </div>
