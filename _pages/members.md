@@ -15,52 +15,52 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/otterv.webp" alt="Atharv Mittal">
-    <h3><a href="{{ site.baseurl }}/members/atharvmittal/">Atharv Mittal</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/atharvmittal">Atharv Mittal</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/cp.jpeg" alt="Cherish Puniani">
-    <h3><a href="{{ site.baseurl }}/members/cherishpuniani/">Cherish Puniani</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/cherishpuniani">Cherish Puniani</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/jheelmaheshwari.png" alt="Jheel Maheshwari">
-    <h3><a href="{{ site.baseurl }}/members/JheelMaheshwari/">Jheel Maheshwari</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/JheelMaheshwari">Jheel Maheshwari</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/ojasv.jpg" alt="Ojasva Nema">
-    <h3><a href="{{ site.baseurl }}/members/ojasv/">Ojasva Nema</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/ojasv">Ojasva Nema</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/sukrit.JPG" alt="Sukrit Jindal">
-    <h3><a href="{{ site.baseurl }}/members/sukritjindal/">Sukrit Jindal</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/sukritjindal">Sukrit Jindal</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/swadesh.png" alt="Swadesh Swain">
-    <h3><a href="{{ site.baseurl }}/members/swadeshswain/">Swadesh Swain</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/swadeshswain">Swadesh Swain</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
