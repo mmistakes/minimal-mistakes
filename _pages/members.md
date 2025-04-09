@@ -49,7 +49,7 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y24/kaustubh.jpg.jpg" alt="Kaustubh Sharma">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/kaustubh.jpg" alt="Kaustubh Sharma">
     <h3><a href="{{ site.baseurl }}/members/kaustubh_sharma">Kaustubh Sharma</a></h3>
   </div>
 
