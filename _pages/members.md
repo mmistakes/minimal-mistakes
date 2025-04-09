@@ -9,7 +9,7 @@ permalink: /members/
 <div class="member-grid">
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y23/agum.png" alt="Agam Pandey">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" alt="Agam Pandey">
     <h3><a href="{{ site.baseurl }}/members/agampandey">Agam Pandey</a></h3>
   </div>
 
