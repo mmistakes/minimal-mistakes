@@ -1,10 +1,17 @@
-// main.scss 파일
+---
+search: false
+---
 
 @charset "utf-8";
 
+/* 1. 사용자 정의 변수 먼저 import */
+@import "custom/variables"; // 반드시 _sass/custom/variables.scss 파일이 존재해야 함
+
+/* 2. 스킨 및 테마 설정 */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* 3. 커스텀 웹폰트 정의 */
 @font-face {
   font-family: 'GowunBatang-Regular';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
@@ -12,7 +19,7 @@
   font-style: normal;
 }
 
-/* 폰트를 전체 본문과 헤더에 적용 */
+/* 4. 전체 텍스트와 헤더에 폰트 적용 */
 body {
   font-family: 'GowunBatang-Regular', serif;
 }
