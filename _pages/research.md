@@ -68,12 +68,12 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research2.png" alt="Paper 2">
-    <h3>Research Paper 2 Title</h3>
-    <p>Another short description of your contribution or topic.</p>
+    <img src="{{ site.baseurl }}/assets/images/RiemannSum.png" alt="Paper 2">
+    <h3>Riemann Sum Optimization for Accurate Integrated Gradients Computation</h3>
+    <p>A mathematical framework to reduce computational complexity of Integrated Gradients</p>
     <div class="research-links">
-      <a href="https://arxiv.org/abs/yourpaper2" target="_blank">Paper</a>
-      <a href="https://github.com/yourrepo2" target="_blank">Code</a>
+      <a href="https://arxiv.org/abs/2410.04118" target="_blank">Paper</a>
+      <a href="https://github.com/ShreeSinghi/RiemannOpt" target="_blank">GitHub</a>
     </div>
   </div>
 
