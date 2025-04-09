@@ -8,7 +8,7 @@ layout: single
 
 # Sukrit Jindal
 
-<img src="{{ site.baseurl }}/assets/images/members/y24/sukrit.jpg" width="200" height="200" alt="Sukrit Jindal">
+<img src="{{ site.baseurl }}/assets/images/members/y24/sukrit.JPG" width="200" height="200" alt="Sukrit Jindal">
 
 
 *Core Member, DSG IIT Roorkee*
