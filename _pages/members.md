@@ -9,37 +9,37 @@ permalink: /members/
 <div class="member-grid">
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" alt="Agam Pandey">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width= 200 height= 200 alt="Agam Pandey">
     <h3><a href="{{ site.baseurl }}/members/agampandey">Agam Pandey</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y24/otterv.webp" alt="Atharv Mittal">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/otterv.webp" width= 200 height= 200 alt="Atharv Mittal">
     <h3><a href="{{ site.baseurl }}/members/atharvmittal">Atharv Mittal</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y24/cp.jpeg" alt="Cherish Puniani">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/cp.jpeg" width= 200 height= 200 alt="Cherish Puniani">
     <h3><a href="{{ site.baseurl }}/members/cherishpuniani">Cherish Puniani</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y24/jheelmaheshwari.png" alt="Jheel Maheshwari">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/jheelmaheshwari.png" width= 200 height= 200 alt="Jheel Maheshwari">
     <h3><a href="{{ site.baseurl }}/members/JheelMaheshwari">Jheel Maheshwari</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y24/ojasv.jpg" alt="Ojasva Nema">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/ojasv.jpg" width= 200 height= 200  alt="Ojasva Nema">
     <h3><a href="{{ site.baseurl }}/members/ojasvanema">Ojasva Nema</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y23/sukrit.JPG" alt="Sukrit Jindal">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/sukrit.JPG" width= 200 height= 200 alt="Sukrit Jindal">
     <h3><a href="{{ site.baseurl }}/members/sukritjindal">Sukrit Jindal</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y23/swadesh.png" alt="Swadesh Swain">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/swadesh.png" width= 200 height= 200 alt="Swadesh Swain">
     <h3><a href="{{ site.baseurl }}/members/swadeshswain">Swadesh Swain</a></h3>
   </div>
 
