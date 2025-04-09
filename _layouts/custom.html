@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or
+page.header.image %} {% include page__hero.html %} {% elsif page.header.video.id
+and page.header.video.provider %} {% include page__hero_video.html %} {% endif
+%}
+
+<div id="main" role="main">
+  <article
+    class="page member-profile"
+    itemscope
+    itemtype="https://schema.org/Person"
+  >
+    <div class="page__inner-wrap">
+      <header class="profile-header">
+        <div class="profile-image">
+          {% if page.image %}
+          <img
+            src="{{ page.image | relative_url }}"
+            alt="{{ page.title }}"
+            itemprop="image"
+          />
+          {% endif %}
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-name" itemprop="name">{{ page.title }}</h1>
+          {% if page.role %}
+          <p class="profile-role">{{ page.role }}</p>
+          {% endif %} {% if page.affiliation %}
+          <p class="profile-affiliation" itemprop="affiliation">
+            {{ page.affiliation }}
+          </p>
+          {% endif %} {% if page.email %}
+          <p class="profile-contact">
+            <strong>Email:</strong>
+            <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+          </p>
+          {% endif %} {% if page.website %}
+          <p class="profile-contact">
+            <strong>Website:</strong>
+            <a href="{{ page.website }}" target="_blank">{{ page.website }}</a>
+          </p>
+          {% endif %}
+        </div>
+      </header>
+
+      <section class="profile-section" itemprop="description">
+        {% if page.bio %}
+        <h2>Biography</h2>
+        <p>{{ page.bio }}</p>
+        {% endif %}
+      </section>
+
+      {% if page.research %}
+      <section class="profile-section">
+        <h2>Research Interests</h2>
+        <ul>
+          {% for interest in page.research %}
+          <li>{{ interest }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %} {% if page.publications %}
+      <section class="profile-section">
+        <h2>Publications</h2>
+        <ul>
+          {% for pub in page.publications %}
+          <li>{{ pub }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %} {% if content %}
+      <section class="profile-section">{{ content }}</section>
+      {% endif %} {% if page.cv %}
+      <p>
+        <a
+          href="{{ page.cv | relative_url }}"
+          class="btn btn--primary"
+          target="_blank"
+          >View CV</a
+        >
+      </p>
+      {% endif %}
+    </div>
+  </article>
+</div>
