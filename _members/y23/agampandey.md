@@ -1,3 +1,11 @@
+---
+title: ""
+permalink: /members/agampandey
+layout: single
+---
+
+
+
 # Agam Pandey
 
 <img src=https://github.com/advikasinha/dsg-website/blob/master/assets/images/members/y24/agum.png height =200 width= 200>
