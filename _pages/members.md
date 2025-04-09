@@ -45,7 +45,7 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/adityachauhan.jpg" alt="Aditya Chauhan">
-    <h3><a href="{{ site.baseurl }}/members/adityachauhan">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/adityachauhan">Aditya Chauhan</a></h3>
   </div>
 
   <div class="member-card">
