@@ -1,0 +1,10 @@
+---
+title: "My First Post"
+date: 2025-04-09
+categories: [blog]
+tags: [intro, jaemin]
+---
+
+안녕하세요! 첫 포스트입니다 🎉  
+이제 minimal-mistakes 블로그로 내 기록을 남길 수 있어요.
+
