@@ -30,7 +30,7 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/ojasv.jpg" alt="Ojasva Nema">
-    <h3><a href="{{ site.baseurl }}/members/ojasv">Ojasva Nema</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/ojasvanema">Ojasva Nema</a></h3>
   </div>
 
   <div class="member-card">
