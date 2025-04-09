@@ -49,23 +49,13 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/kaustubh.jpg.jpg" alt="Kaustubh Sharma">
+    <h3><a href="{{ site.baseurl }}/members/kaustubh_sharma">Kaustubh Sharma</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
-  </div>
-
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
-  </div>
-
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/amritanshu.png" alt="amritanshu">
+    <h3><a href="{{ site.baseurl }}/members/amritanshu/">Amritanshu Tiwari</a></h3>
   </div>
 
   <div class="member-card">
