@@ -7,7 +7,7 @@ permalink: /contact/
 If you’d like to get in touch, feel free to use the form below.  
 You can also email me directly at [nikkie.badsar@gmail.com](mailto:nikkie.badsar@gmail.com).
 
-<form action="https://formspree.io/f/your_form_id" method="POST">
+<form action="https://formspree.io/f/maneaezj" method="POST">
   <label>
     Your Name:<br>
     <input type="text" name="name" required>
