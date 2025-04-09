@@ -58,12 +58,12 @@ layout: splash
 <div class="research-grid">
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research1.png" alt="Paper 1">
+    <img src="{{ site.baseurl }}/assets/images/research/ReCUDA.png" alt="Paper 1">
     <h3>[Re] CUDA: Curriculum of Data Augmentation for Long‐tailed Recognition</h3>
     <p>Using classwise degree of data augmentation to tackle class imbalance in long tailed dataset</p>
     <div class="research-links">
       <a href="https://openreview.net/forum?id=Wm6d44I8St" target="_blank">Paper</a>
-      <a href="https://github.com/whitewhistle/CUDA-org-="_blank">Code</a>
+      <a href="https://github.com/whitewhistle/CUDA-org-" target="_blank">GitHub</a>
     </div>
   </div>
 
