@@ -269,7 +269,7 @@ permalink: /members/
 }
 
 .member-card {
-  background: #f9f9f9;
+  background: #f2f2f2;
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
