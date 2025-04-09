@@ -55,17 +55,17 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/amritanshu.png" alt="amritanshu">
-    <h3><a href="{{ site.baseurl }}/members/amritanshu/">Amritanshu Tiwari</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/amritanshu">Amritanshu Tiwari</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/asutosh_PFP.jpg" alt="Asutosh Maharana">
+    <h3><a href="{{ site.baseurl }}/members/asutosh/">Asutosh Maharana</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/gaurav.jpg" alt="Jane Smith">
+    <h3><a href="{{ site.baseurl }}/members/gaurav">Gaurav Kumar</a></h3>
   </div>
 
   <div class="member-card">
