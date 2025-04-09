@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/agampandey
-layout: posts
+layout: splash
 ---
 
 
