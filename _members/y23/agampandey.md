@@ -8,7 +8,8 @@ layout: single
 
 # Agam Pandey
 
-<img src=https://github.com/advikasinha/dsg-website/blob/master/assets/images/members/y24/agum.png height =200 width= 200>
+
+![agum]({{ site.baseurl }}/assets/images/members/y24/agum.png) 
 
 *Core Member, DSG IIT Roorkee*
 
