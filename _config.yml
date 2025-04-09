@@ -81,6 +81,9 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+
+
+published: true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -324,3 +327,6 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+future: true
