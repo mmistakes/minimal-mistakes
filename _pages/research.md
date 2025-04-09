@@ -106,6 +106,7 @@ layout: splash
       <a href="https://openreview.net/forum?id=wOh5cAM9qC" target="_blank">Paper</a>
       <a href="https://github.com/kaustubh202/image-alchemy" target="_blank">GitHub</a>
   </div>
+   </div>
 
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/FluxWatermarking.png" alt="Paper 5">
