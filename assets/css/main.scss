@@ -12,4 +12,11 @@ search: false
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+  }
+  
+  /* 2. 커스텀 변수 */
+  @import "custom/variables";
+  
+  /* 3. 테마 스타일 */
+  @import "minimal-mistakes/skins/default";
+  @import "minimal-mistakes";
