@@ -16,7 +16,7 @@ layout: single
 ---
 
 ## Education  
-- **B.Tech**, Electrical Engineering, IIT Roorkee (2022–2026)  
+- **B.Tech**, Civil Engineering, IIT Roorkee (2022–2026)  
 - Minor in Data Science  
 
 ---
