@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/agampandey
-layout: single
+layout: splash
 ---
 
 
@@ -16,9 +16,7 @@ layout: single
 ---
 
 ## Education  
-- **B.Tech**, Civil Engineering, IIT Roorkee (2022–2026)  
-- Minor in Data Science  
-
+- **B.Tech**, Civil Engineering, IIT Roorkee (2022–2026)    
 ---
 
 ## Research Interests  
@@ -42,13 +40,6 @@ layout: single
 ## Publications  
 - *Doe, J., & Smith, A. (2024). Predicting Protein Structures with Transformers.* NeurIPS Workshop.  
 *(if none, write "N/A")*
-
----
-
-## Roles at DSG  
-- Content Head, Research Cohort 2025  
-- Co-lead, Paper Reading Group on Foundation Models  
-- Mentor, ML Beginner’s Track  
 
 ---
 
