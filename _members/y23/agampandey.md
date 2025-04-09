@@ -8,7 +8,7 @@ layout: splash
 
 # Agam Pandey
 
-<img src="{{ site.baseurl }}/assets/images/members/y24/agum.png" width="200" height="200" alt="Agam Pandey">
+<img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width="200" height="200" alt="Agam Pandey">
 
 
 *Core Member, DSG IIT Roorkee*
