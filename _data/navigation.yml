@@ -32,8 +32,8 @@ docs:
       #   url: /matplotlib/
       - title: "Basic AI Development"
         url: /basic_ai_development/
-      # - title: "ML for RecSys"
-      #   url: /ml_recsys/
+      - title: "ML for RecSys"
+        url: /ml_recsys/
       # - title: "ML in Practice"
       #   url: /ml_in_practice/
       # - title: "ML Technique"
