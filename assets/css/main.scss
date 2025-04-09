@@ -1,6 +1,4 @@
----
-search: false
----
+// main.scss 파일
 
 @charset "utf-8";
 
@@ -8,15 +6,17 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 @font-face {
-    font-family: 'GowunBatang-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  /* 2. 커스텀 변수 */
-  @import "custom/variables";
-  
-  /* 3. 테마 스타일 */
-  @import "minimal-mistakes/skins/default";
-  @import "minimal-mistakes";
+  font-family: 'GowunBatang-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 폰트를 전체 본문과 헤더에 적용 */
+body {
+  font-family: 'GowunBatang-Regular', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'GowunBatang-Regular', serif;
+}
