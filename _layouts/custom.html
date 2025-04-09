@@ -2,57 +2,21 @@
 layout: default
 ---
 
-<div class="member-container">
-  <div class="member-header">
-    {% if page.image %}
-      <img class="member-photo" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-    {% endif %}
-    <div class="member-header-text">
-      <h1 class="member-name">{{ page.title }}</h1>
-      {% if page.role %}<p class="member-role">{{ page.role }}</p>{% endif %}
-      {% if page.affiliation %}<p class="member-affiliation">{{ page.affiliation }}</p>{% endif %}
-      <div class="member-contact">
-        {% if page.email %}<p><strong>Email:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>{% endif %}
-        {% if page.website %}<p><strong>Website:</strong> <a href="{{ page.website }}" target="_blank">{{ page.website }}</a></p>{% endif %}
-        {% if page.cv %}<p><strong>CV:</strong> <a href="{{ page.cv | relative_url }}" target="_blank">Download</a></p>{% endif %}
+<div class="member-wrapper">
+  <div class="member-card">
+    <div class="member-info">
+      {% if page.image %}
+        <img src="{{ page.image | relative_url }}" class="member-photo" alt="{{ page.title }}">
+      {% endif %}
+      <div class="member-details">
+        <h1 class="member-name">{{ page.title }}</h1>
+        <p class="member-role">{{ page.role }}</p>
+        <p class="member-affiliation">{{ page.affiliation }}</p>
       </div>
     </div>
-  </div>
 
-  <div class="member-content">
-    {% if page.bio %}
-      <section>
-        <h2>About</h2>
-        <p>{{ page.bio }}</p>
-      </section>
-    {% endif %}
-
-    {% if page.research %}
-      <section>
-        <h2>Research Interests</h2>
-        <ul>
-          {% for item in page.research %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
-
-    {% if page.publications %}
-      <section>
-        <h2>Publications</h2>
-        <ul>
-          {% for pub in page.publications %}
-            <li>{{ pub }}</li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
-
-    {% if content %}
-      <section>
-        {{ content }}
-      </section>
-    {% endif %}
+    <div class="member-content">
+      {{ content }}
+    </div>
   </div>
 </div>
