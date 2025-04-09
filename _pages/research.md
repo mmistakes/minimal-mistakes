@@ -88,12 +88,12 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research4.png" alt="Paper 4">
-    <h3>Fourth Research Paper</h3>
-    <p>Brief overview — could be results, methods, or dataset focus.</p>
+    <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 4">
+    <h3>Rethinking Randomized Smoothing from the Perspective of Scalability</h3>
+    <p>A study on randomized smoothing, analysed from the perspective of scalability as a challenge to its continued application</p>
     <div class="research-links">
-      <a href="https://arxiv.org/abs/yourpaper4" target="_blank">Paper</a>
-      <a href="https://github.com/yourrepo4" target="_blank">Code</a>
+      <a href="https://openreview.net/forum?id=zkzo72ZQqF" target="_blank">Paper</a>
+      <a href="https://github.com/yourrepo4" target="_blank">GitHub</a>
     </div>
   </div>
 
