@@ -159,7 +159,13 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # URL:
+
+header_pages:
+  - _pages/about.md
+  - _pages/portfolio.md
+  - _pages/blog.md
+  - _pages/contact.md
 
 
 # Reading Files
