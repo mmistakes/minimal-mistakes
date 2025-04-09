@@ -16,39 +16,36 @@ layout: single
 ---
 
 ## Education  
-- **B.Tech**, Data Science and Artificial Intelligence, IIT Roorkee (2022–2026)   
-
+- **B.Tech**, Data Science and Artificial Intelligence, IIT Roorkee (2023–2027)   
 ---
 
 ## Research Interests  
-- Machine Learning  
-- Graph Neural Networks  
-- Reinforcement Learning  
-- AI for Healthcare and Scientific Discovery  
+- Adversarial Machine Learning
+- Machine Unlearning
+- Retrieval Augmented Generation
 
 ---
 
 ## Projects  
-- **AI for Drug Discovery**  
-  Developed a multi-modal GNN model for protein-ligand binding prediction.  
-- **Traffic Signal Optimization using DQNs**  
-  Reinforcement learning model for reducing city traffic congestion.  
-- **Climate Data Analysis Dashboard**  
-  Built an interactive dashboard using Streamlit and Plotly.  
+- **Image Colorizer**  
+Developed an auto image colorizer using a Cross Channel Encoder and applying transfer learning to a
+VGG16 model
 
 ---
 
 ## Publications  
-- *Miital, A., LeCun, Y., Bengio, Y. & Hinton, G. (2015). Deep learning*
--*Miital, A., A Vaswani, N Shazeer, N Parmar, J Uszkoreit, L Jones (2017). Attention Is All You Need*
+
+- *Mittal, A. (TMLR Under Review) Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-
+Prompt Adversarial Transferability in Vision-Language Models*
+- *Mittal, A. (AAAI 2025) LoRA Unlearns More and Retains More (Student Abstract)*
+- *Mittal, A.(AAAI 2025). Low Rank Adaptation for Effective Machine Unlearning*
+
 
 
 ---
 
 ## Roles at DSG  
-- Conten Head, Research Cohort 2025  
-- Co-lead, Paper Reading Group on Foundation Models  
-- Mentor, ML Beginner’s Track  
+- Kleptomania Head 
 
 ---
 
