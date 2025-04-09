@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 12px !default;
+$doc-font-size: 12px;  /*    !default;   */
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
@@ -37,22 +37,22 @@ $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
+$type-size-1: 2.2em !default; // ~35.2px → reduced from 2.441
+$type-size-2: 1.75em !default; // ~28px → reduced from 1.953
+$type-size-3: 1.4em !default; // ~22.4px → reduced from 1.563
+$type-size-4: 1.15em !default; // ~18.4px → reduced from 1.25
+$type-size-5: 0.95em !default; // ~15.2px → reduced from 1em
+$type-size-6: 0.75em !default;
 $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
-$h-size-6: 1em !default; // ~16px
+$h-size-1: 1.4em !default; 
+$h-size-2: 1.2em !default;
+$h-size-3: 1.05em !default;
+$h-size-4: 1em !default;
+$h-size-5: 0.95em !default;
+$h-size-6: 0.9em !default;
 
 /*
    Colors
