@@ -1,69 +1,53 @@
-.profile-container {
+/* custom.css */
+.member-wrapper {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+.member-card {
+  background: #fff;
+  padding: 2rem;
   border-radius: 12px;
-  font-family: "Helvetica Neue", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.profile-card {
+.member-info {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.profile-image img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+.member-photo {
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  border: 3px solid #eee;
 }
 
-.profile-info {
-  flex: 1;
-}
-
-.profile-info h1 {
-  margin-top: 0;
-  font-size: 2rem;
-  color: #222;
-}
-
-.role {
-  font-style: italic;
-  margin-bottom: 1rem;
-  color: #666;
-}
-
-.profile-info section {
-  margin-top: 1.5rem;
-}
-
-.profile-info h2 {
-  font-size: 1.3rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.profile-info ul {
-  padding-left: 1.25rem;
-  list-style-type: disc;
+.member-name {
   margin: 0;
+  font-size: 2rem;
 }
 
-.profile-info li {
-  margin-bottom: 0.5rem;
+.member-role,
+.member-affiliation {
+  margin: 0.3rem 0;
+  color: #555;
+  font-style: italic;
 }
 
-.social-links a {
-  color: #007acc;
+.member-content h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+.member-content a {
+  color: #1e90ff;
   text-decoration: none;
-  margin-right: 0.75rem;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
 }

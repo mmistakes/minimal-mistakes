@@ -1,13 +1,17 @@
 ---
-title: "Agam Pandey"
-layout: custom
+title: ""
 permalink: /members/agampandey
-image: /assets/images/members/y24/agum.png
+layout: posts
 ---
+
+
 
 # Agam Pandey
 
-_Core Member, DSG IIT Roorkee_
+<img src="{{ site.baseurl }}/assets/images/members/y24/agum.png" width="200" height="200" alt="Agam Pandey">
+
+
+*Core Member, DSG IIT Roorkee*
 
 ---
 

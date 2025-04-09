@@ -1,12 +1,21 @@
-{% include head.html %}
-<link rel="stylesheet" href="{{ '/assets/css/styled_page.css' | relative_url }}">
+---
+layout: default
+---
 
-<div class="profile-container">
-  <div class="profile-card">
-    <div class="profile-image">
-      <img src="{{ page.image | default: '/assets/images/default-avatar.png' | relative_url }}" alt="{{ page.title }}">
+<div class="member-wrapper">
+  <div class="member-card">
+    <div class="member-info">
+      {% if page.image %}
+        <img src="{{ page.image | relative_url }}" class="member-photo" alt="{{ page.title }}">
+      {% endif %}
+      <div class="member-details">
+        <h1 class="member-name">{{ page.title }}</h1>
+        <p class="member-role">{{ page.role }}</p>
+        <p class="member-affiliation">{{ page.affiliation }}</p>
+      </div>
     </div>
-    <div class="profile-info">
+
+    <div class="member-content">
       {{ content }}
     </div>
   </div>
