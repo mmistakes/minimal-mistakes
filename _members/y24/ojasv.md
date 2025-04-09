@@ -30,16 +30,14 @@ layout: custom
 
 ## Projects  
 - **Image Alchemy : Personalised Image Generation**  
-  Developed a two-stage pipeline using LoRA-based fine-tuning on SDXLs attention layers, followed by a segmentation-driven Img2Img
-  approach to insert personalized subjects while preserving the models generative capabilities.
+  Developed a pipeline for generating personalised images through diffusion.
 - **Survival Analysis of Cancer patients**  
   Predicted the probability of survival for colon cancer patients over a specified time duration
 
 ---
 
 ## Publications  
-- *Ojasva Nema , Kaustubh Sharma , Amritanshu Tiwari , Cherish Puniani. Image-Alchemy : Advancing Subject Fidelity in
-Personalized Text-to-Image Generation.* ICLR - International Conference on Learning Representations, 2025.  
+- Sharma, K., Nema, O., Tiwari, A., & Puniani, C. (2025). Image-Alchemy: Advancing Subject Fidelity in Personalized Text-to-Image Generation. ICLR DELTA Workshop
 
 
 
