@@ -68,7 +68,7 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/RiemannSum.png" alt="Paper 2">
+    <img src="{{ site.baseurl }}/assets/images/research/RiemannSum.png" alt="Paper 2">
     <h3>Riemann Sum Optimization for Accurate Integrated Gradients Computation</h3>
     <p>A mathematical framework to reduce computational complexity of Integrated Gradients</p>
     <div class="research-links">
@@ -78,12 +78,12 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research3.png" alt="Paper 3">
-    <h3>Third Paper Title</h3>
+    <img src="{{ site.baseurl }}/assets/images/research/StrengtheningInterpretability.png" alt="Paper 3">
+    <h3>A reproducability study of Important Direction Gradient Integration (IDGI)</h3>
     <p>Highlight key results or methods involved in 1-2 lines.</p>
     <div class="research-links">
-      <a href="https://arxiv.org/abs/yourpaper3" target="_blank">Paper</a>
-      <a href="https://github.com/yourrepo3" target="_blank">Code</a>
+      <a href="https://arxiv.org/abs/2409.09043" target="_blank">Paper</a>
+      <a href="https://github.com/ShreeSinghi/TMLR-IDGI" target="_blank">GitHub</a>
     </div>
   </div>
 
