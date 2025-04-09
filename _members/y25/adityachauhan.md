@@ -7,6 +7,8 @@ layout: single
 
 # Aditya Chauhan
 
+<img src="{{ site.baseurl }}/assets/images/members/y24/adityachauhan.jpg" width="200" height="200" alt="Aditya Chauhan">
+
 *Member, DSG IIT Roorkee*
 
 ---
