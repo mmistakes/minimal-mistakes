@@ -65,6 +65,11 @@ permalink: /members/
     <h3><a href="{{ site.baseurl }}/members/adityachauhan">Aditya Chauhan</a></h3>
   </div>
 
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/abhivansh.jpeg" width= 200 height= 200 alt="Abhivansh Gupta">
+    <h3><a href="{{ site.baseurl }}/members/abhivanshgupta">Abhivansh Gupta</a></h3>
+  </div>
+
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/kaustubh.jpg" alt="Kaustubh Sharma">
     <h3><a href="{{ site.baseurl }}/members/kaustubh_sharma">Kaustubh Sharma</a></h3>
