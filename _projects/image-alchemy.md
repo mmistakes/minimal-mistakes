@@ -7,9 +7,8 @@ permalink: /projects/image_alchemy/
 
 - Personalizing text-to-image diffusion models like Stable Diffusion XL (SDXL) often leads to issues like catastrophic
 forgetting, overfitting, or high computational costs.
-- In this project we developed a two-stage pipeline using LoRA-based fine-tuning on SDXLs attention layers, followed by a segmentation-driven Img2Img
-approach to insert personalized subjects while preserving the models generative capabilities.
-
+- We propose a pipeline for finetuning diffusion models using low rank adaptation using 3 to 4 images of the subject.
+  
 ## 1. Generative models
 ![DeepWalk Diagram]({{ site.baseurl }}/assets/images/understanding_deepwalk.png)
 A generative model could generate new photos of animals that look like real animals, while a discriminative model could tell a dog from a cat.
@@ -27,24 +26,20 @@ A class of generative AI models that create synthetic data, like images, by grad
 ![SAGE]({{ site.baseurl }}/assets/images/GraphSAGE_cover.jpg)
 DreamBooth is a fine-tuning technique that personalizes text-to-image diffusion models using just a few images of a subject.
 - [Dreambooth blog](https://dreambooth.github.io/)
-- [Paper](https://arxiv.org/abs/2208.12242)
 - [Code](https://github.com/huggingface/diffusers/tree/main/examples/dreambooth)
-- [Paper-> Inductive Representation Learning on Large Graphs]([https://arxiv.org](https://arxiv.org/abs/1706.02216))
+- [Paper-> Dreambooth](https://arxiv.org/abs/2208.12242)
 
-## 4. ChebNet: CNN on Graphs with Fast Localized Spectral Filtering
+
+## 4. Low Rank Adaptation(LoRA)
 ![ChebNet]({{ site.baseurl }}/assets/images/ChebNet.jpg)
-ChebNet is a formulation of CNNs in the context of spectral graph theory.
+LoRA is a parameter-efficient fine-tuning method that injects trainable low-rank matrices into a frozen pre-trained model.
+- [LoRA Blog](https://medium.com/@tayyibgondal2003/loralow-rank-adaptation-of-large-language-models-33f9d9d48984)
+- [Code](https://github.com/microsoft/LoRA)
+- [Paper-> Low-Rank adaptation](https://arxiv.org/abs/2106.09685)
 
-- [ChebNet Blog](https://dsgiitr.com/blogs/chebnet/)
-- [Jupyter Notebook](https://github.com/dsgiitr/graph_nets/blob/master/ChebNet/Chebnet_Blog%2BCode.ipynb)
-- [Code](https://github.com/dsgiitr/graph_nets/blob/master/ChebNet/coarsening.py)
-- [Paper-> Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375)
-
-## 5. Understanding Graph Attention Networks
+## 5. Our pipelinen
 ![GAT]({{ site.baseurl }}/assets/images/GAT_Cover.jpg)
-GAT is able to attend over their neighborhoods’ features, implicitly specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation or depending on knowing the graph structure upfront.
-
-- [GAT Blog](https://dsgiitr.com/blogs/gat)
-- [Jupyter Notebook](https://github.com/dsgiitr/graph_nets/blob/master/GAT/GAT_Blog%2BCode.ipynb)
-- [Code](https://github.com/dsgiitr/graph_nets/blob/master/GAT/GAT_PyG.py)
-- [Paper-> Graph Attention Networks](https://arxiv.org/abs/1710.10903)
+In this project we developed a two-stage pipeline using LoRA-based fine-tuning on SDXLs attention layers, followed by a segmentation-driven Img2Img
+approach to insert personalized subjects while preserving the models generative capabilities.
+- [Code](https://github.com/kaustubh202/image-alchemy)
+- [Paper-> Image-Alchemy](https://openreview.net/forum?id=wOh5cAM9qC)
