@@ -81,7 +81,7 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/y25/gaurav.jpg" alt="Jane Smith">
+    <img src="{{ site.baseurl }}/assets/images/members/y25/gaurav.jpg" alt="Gaurav Kumar">
     <h3><a href="{{ site.baseurl }}/members/gaurav">Gaurav Kumar</a></h3>
   </div>
 
@@ -96,23 +96,18 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/raj.jpg" width="200" height="200" alt="Raj Shekhar Singh">
+    <h3><a href="{{ site.baseurl }}/members/raj"> Raj Shekhar Singh</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/shreyansh.jpg" width="200" height="200" alt="Shreyansh Modi">
+    <h3><a href="{{ site.baseurl }}/members/shreyansh">Shreyansh Modi</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
-  </div>
-
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/akshat_tomar.jpg" width="200" height="200" alt="Akshat Tomar">
+    <h3><a href="{{ site.baseurl }}/members/akshat">Akshat Tomar</a></h3>
   </div>
 
   <div class="member-card">
