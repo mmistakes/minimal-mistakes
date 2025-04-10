@@ -77,7 +77,7 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/asutosh_PFP.jpg" alt="Asutosh Maharana">
-    <h3><a href="{{ site.baseurl }}/members/asutosh/">Asutosh Maharana</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/asutosh">Asutosh Maharana</a></h3>
   </div>
 
   <div class="member-card">
@@ -87,182 +87,182 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/anantjain.png" alt="Anant Jain">
-    <h3><a href="{{ site.baseurl }}/members/anantjain/">Anant Jain</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/anantjain">Anant Jain</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/tushar.jpeg" alt="Tushar">
-    <h3><a href="{{ site.baseurl }}/members/Tushar/">Tushar</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/Tushar">Tushar</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith/">Jane Smith</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
   </div>
 
 </div>
