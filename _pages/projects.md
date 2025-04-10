@@ -76,7 +76,7 @@ permalink: /projects/
   </div>
 
 <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/feedcode_demo.gif" alt="FeedCode">
+    <img src="{{ site.baseurl }}/assets/images/projects/feedcode.png" alt="FeedCode">
     <h3>FeedCode</h3>
     <p>FeedCode is an intelligent feedback tool that provides personalized code reviews based on your coding style and activity</p>
     <div class="project-links">
