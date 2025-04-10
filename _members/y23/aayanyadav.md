@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/aayanyadav
-layout: splash
+layout: single
 ---
 
 
