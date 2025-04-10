@@ -19,6 +19,11 @@ permalink: /members/
     <h3><a href="{{ site.baseurl }}/members/parthbadgujar">Parth Badgujar</a></h3>
   </div>
 
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y22/vedumrajkar.jpeg" width= 200 height= 200 alt="Ved Umrajkar">
+    <h3><a href="{{ site.baseurl }}/members/vedumrajkar">Ved Umrajkar</a></h3>
+  </div>
+
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width= 200 height= 200 alt="Agam Pandey">
