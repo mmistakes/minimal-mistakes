@@ -11,7 +11,7 @@ layout: splash
 <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width="200" height="200" alt="Agam Pandey">
 
 
-*Core Member, DSG IIT Roorkee*
+*Joint Secretary, DSG IIT Roorkee*
 
 ---
 
@@ -22,28 +22,26 @@ layout: splash
 ## Research Interests  
 - Machine Learning  
 - Graph Neural Networks  
-- Reinforcement Learning  
-- AI for Healthcare and Scientific Discovery  
-
----
-
-## Projects  
-- **AI for Drug Discovery**  
-  Developed a multi-modal GNN model for protein-ligand binding prediction.  
-- **Traffic Signal Optimization using DQNs**  
-  Reinforcement learning model for reducing city traffic congestion.  
-- **Climate Data Analysis Dashboard**  
-  Built an interactive dashboard using Streamlit and Plotly.  
+- Multi Agent systems
+- Computer Vision for Autonomous vehicles
+- RAG, Knowledge Graphs for V/LLMs
 
 ---
 
 ## Publications  
-- *Doe, J., & Smith, A. (2024). Predicting Protein Structures with Transformers.* NeurIPS Workshop.  
-*(if none, write "N/A")*
+- Mittal, A., Pandey, A., Tiwari, A., Jindal, S., Swain, S., (2025). Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in VLMs. Under Review in TMLR. (Co-Author).
+
+---
+
+## Projects  
+- **Knowledge Graph Embeddings for VLMs**  
+  Analysed impact of vector and graph embeddings on retrieval generation of VLMs on downstream tasks.
+- **FeedCode**  
+  FeedCode is an intelligent feedback tool that provides personalized code reviews based on your coding style and activity.
 
 ---
 
 ## Follow
-[GitHub](https://github.com/johndoe) | [LinkedIn](https://linkedin.com/in/johndoe) | [Portfolio](https://johndoe.dev)
+[GitHub](https://github.com/AGAMPANDEYY) | [LinkedIn](https://www.linkedin.com/in/agam-pandey-326161223/) 
 
 ---
