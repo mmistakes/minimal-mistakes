@@ -8,7 +8,7 @@ layout: splash
 
 # Aayan Yadav
 
-<img src="{{ site.baseurl }}/assets/images/members/y23/aayanyadav.jpeg" width="200" height="200" alt="Aayan Yadav">
+<img src="{{ site.baseurl }}/assets/images/members/y23/aayan.jpeg" width="200" height="200" alt="Aayan Yadav">
 
 
 *Joint Seceretary, DSG IIT Roorkee*
