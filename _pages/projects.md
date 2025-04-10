@@ -75,26 +75,15 @@ permalink: /projects/
     </div>
   </div>
 
-<div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/feedcode.png" alt="FeedCode">
-    <h3>FeedCode</h3>
-    <p>FeedCode is an intelligent feedback tool that provides personalized code reviews based on your coding style and activity</p>
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/Segmedit.png" alt="KGE">
+    <h3>Segmedit</h3>
+    <p>Segment parts of image and then perform inpainting or editing on specific object</p>
     <div class="project-links">
-      <a href="https://github.com/AbhishekPanwarr/feedCode" target="_blank">GitHub</a>
-      <a href="https://advikasinha.github.io/dsg-website/projects/visual_ml/">Details</a>
+      <a href="https://github.com/dsgiitr/segmedit" target="_blank">GitHub</a>
+      <a href="https://huggingface.co/spaces/aakashks/adv-photo-editing">Details</a>
     </div>
   </div>
-
-<div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">
-    <h3>Knowledge Graph Embeddings for VLMs</h3>
-    <p>Analysing impact of vector and graph embeddings on retrieval generation of VLMs on downstream tasks.</p>
-    <div class="project-links">
-      <a href="https://github.com/dsgiitr/kge-clip" target="_blank">GitHub</a>
-      <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/">Details</a>
-    </div>
-  </div>
-
 
   <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/research/ImageAlchemy.png" alt="ImageAlchemy">
@@ -107,13 +96,26 @@ permalink: /projects/
   </div>
 
 
-  <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/Segmedit.png" alt="KGE">
-    <h3>Segmedit</h3>
-    <p>Segment parts of image and then perform inpainting or editing on specific object</p>
+<div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">
+    <h3>Knowledge Graph Embeddings for VLMs</h3>
+    <p>Analysing impact of vector and graph embeddings on retrieval generation of VLMs on downstream tasks.</p>
     <div class="project-links">
-      <a href="https://github.com/dsgiitr/segmedit" target="_blank">GitHub</a>
-      <a href="https://huggingface.co/spaces/aakashks/adv-photo-editing">Details</a>
+      <a href="https://github.com/dsgiitr/kge-clip" target="_blank">GitHub</a>
+      <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/">Details</a>
+    </div>
+  </div>
+
+
+
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/feedcode.png" alt="FeedCode">
+    <h3>FeedCode</h3>
+    <p>FeedCode is an intelligent feedback tool that provides personalized code reviews based on your coding style and activity</p>
+    <div class="project-links">
+      <a href="https://github.com/AbhishekPanwarr/feedCode" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/visual_ml/">Details</a>
     </div>
   </div>
   
