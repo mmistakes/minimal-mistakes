@@ -54,6 +54,69 @@ permalink: /projects/
 
 <div class="project-grid">
 
+<div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/pikebotrl.png" alt="Pikabot-RL">
+    <h3>Pikabot-RL</h3>
+    <p>Using RL for training bots to play the online battle game Pokémon Showdown</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/PikaBot-RL" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/visual_ml/">Details</a>
+    </div>
+  </div>
+
+
+<div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">
+    <h3>Diffusion Everything</h3>
+    <p>Demos involving diffusion models : 1. Training and inference of diffusion on a custom 2D dataset. 2. Training and inference of VAE and latent diffusion models   3. Inference of large diffusion models with different reverse samplers</p>
+    <div class="project-links">
+      <a href="https://github.con/dsgiitr/diffusion-everything" target="_blank">GitHub</a>
+      <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/">Details</a>
+    </div>
+  </div>
+
+<div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/feedcode_demo.gif" alt="FeedCode">
+    <h3>FeedCode</h3>
+    <p>FeedCode is an intelligent feedback tool that provides personalized code reviews based on your coding style and activity</p>
+    <div class="project-links">
+      <a href="https://github.com/AbhishekPanwarr/feedCode" target="_blank">GitHub</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/visual_ml/">Details</a>
+    </div>
+  </div>
+
+<div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">
+    <h3>Knowledge Graph Embeddings for VLMs</h3>
+    <p>Analysing impact of vector and graph embeddings on retrieval generation of VLMs on downstream tasks.</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/kge-clip" target="_blank">GitHub</a>
+      <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/">Details</a>
+    </div>
+  </div>
+
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/research/ImageAlchemy.png" alt="ImageAlchemy">
+    <h3>Image-Alchemy</h3>
+    <p> A two-stage personalization pipeline for personalized image generation using LoRA-based attention fine-tuning and segmentation-guided Img2Img synthesis.</p>
+    <div class="project-links">
+      <a href="https://github.com/kaustubh202/image-alchemy" target="_blank">GitHub</a>
+      <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/">Details</a>
+    </div>
+  </div>
+
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/Segmedit.png" alt="KGE">
+    <h3>Segmedit</h3>
+    <p>Segment parts of image and then perform inpainting or editing on specific object</p>
+    <div class="project-links">
+      <a href="https://github.com/dsgiitr/segmedit" target="_blank">GitHub</a>
+      <a href="https://huggingface.co/spaces/aakashks/adv-photo-editing">Details</a>
+    </div>
+  </div>
+  
   <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/visualml.png" alt="Visual Ml">
     <h3>Visual ML</h3>
