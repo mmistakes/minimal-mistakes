@@ -1,7 +1,7 @@
 ---
 title: "Diffusion Everything"
 layout: single
-permalink: /projects/diffusion_everything/
+permalink: /projects/diffusion-everything/
 ---
 ![]({{ site.baseurl }}/assets/images/diffusion-everything/banner.png)
 
