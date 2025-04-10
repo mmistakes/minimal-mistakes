@@ -126,18 +126,18 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/manjot.jpg" width="200" height="200" alt="Manjot Singh">
+    <h3><a href="{{ site.baseurl }}/members/manjot">Manjot Singh</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/arya.jpg" width="200" height="200" alt="Arya Talera">
+    <h3><a href="{{ site.baseurl }}/members/arya">Arya Talera</a></h3>
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/aarush.jpg" width="200" height="200" alt="Aarush Aggarwal">
+    <h3><a href="{{ site.baseurl }}/members/aarush">Aarush Aggarwal</a></h3>
   </div>
 
   <div class="member-card">
