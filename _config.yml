@@ -19,6 +19,11 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Site Title"
 title_separator          : "-"
+header_pages:
+  - _pages/about.md
+  - _pages/portfolio.md
+  - _pages/blog.md
+  - _pages/contact.md
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "A feast for koalas."
@@ -161,11 +166,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # URL:
 
-header_pages:
-  - _pages/about.md
-  - _pages/portfolio.md
-  - _pages/blog.md
-  - _pages/contact.md
+
 
 
 # Reading Files
