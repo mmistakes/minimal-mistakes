@@ -5,8 +5,7 @@ layout: splash
 ---
 
 
-
-# Asutosh Maharana
+# Arnav Bendre
 
 <img src="{{ site.baseurl }}/assets/images/members/y25/arnav.png" width="200" height="200" alt="Arnav Bendre">
 

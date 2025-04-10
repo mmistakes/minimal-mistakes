@@ -141,8 +141,8 @@ permalink: /members/
   </div>
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
+    <img src="{{ site.baseurl }}/assets/images/members/y25/laabhanvi.jpg" width="200" height="200" alt="Laabhanvi Jain">
+    <h3><a href="{{ site.baseurl }}/members/laabhanvi">Laabhanvi Jain</a></h3>
   </div>
 
   <div class="member-card">
