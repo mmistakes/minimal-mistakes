@@ -66,12 +66,12 @@ permalink: /projects/
 
 
 <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/diffusion-everything/banner.png" alt="Diffusion-Everything">
+    <img src="{{ site.baseurl }}/assets/images/diffusion-everything/banner.png" alt="Diffusion-Everything">
     <h3>Diffusion Everything</h3>
     <p>Demos involving diffusion models : 1. Training and inference of diffusion on a custom 2D dataset. 2. Training and inference of VAE and latent diffusion models   3. Inference of large diffusion models with different reverse samplers</p>
     <div class="project-links">
       <a href="https://github.con/dsgiitr/diffusion-everything" target="_blank">GitHub</a>
-      <a href="https://advikasinha.github.io/dsg-website/projects/diffusion-everyting/">Details</a>
+      <a href="https://advikasinha.github.io/dsg-website/projects/diffusion-everything/">Details</a>
     </div>
   </div>
 
