@@ -3,9 +3,10 @@ title: "Diffusion Everything"
 layout: single
 permalink: /projects/diffusion-everything/
 ---
-![]({{ site.baseurl }}/assets/images/diffusion-everything/banner.png)
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/diffusion-everything/banner.png" alt="Centered Image"/>
+</p>
 
-# Diffusion Everything  
 Diffusion models are currently the go-to models in the field of Generative AI, be it images or video. This project aims to help users understand the process with three interactive demos. 
 1. Diffusion on CIFAR-10: We trained multiple variants of diffusion models and the option to choose from different reverse samplers from the DDPM sampler to the latest DPM2++ sampler. You will find code snippets as well as a simple description of all the reverse samples. 
 2. Latent Diffusion with MNIST: In this part, we first train a simple VAE on the MNIST dataset to map the dataset to a 2D distribution. Then we conditionally sample points from the 2D dataset using a diffusion model. 
