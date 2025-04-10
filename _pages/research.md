@@ -119,7 +119,7 @@ layout: splash
     </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/OneNoisetoFool.png" alt="Paper 5">
     <h3>One Noise to Fool Them All: Universal Adversarial Defenses Against Image
 Editing</h3>
     <p> Image immunization involves adding undetectable noise in images to prevent editing via diffusion models. We furthur extended this to multiple images using a single noise.
