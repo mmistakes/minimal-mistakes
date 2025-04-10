@@ -31,8 +31,6 @@ layout: single
   Developed a gradio app for editing specific parts of image, enabling fast inpainting of the area and replacing it with a new object.
 - **Multimodal RAG**  
   Implemented a CLIP aided Dynamic Database to store live information about the world and retrieve it using a Vision Language Model for question answering.
-- **Diffusion Transformer**  
-  Distributed Data Prallel Training of a Multimodal Diffusion Transformer Model on the ImageNet dataset based on Rectified Flow objective. 
 
 ---
 
