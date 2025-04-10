@@ -76,12 +76,13 @@ permalink: /projects/
   </div>
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/Segmedit.png" alt="KGE">
-    <h3>Segmedit</h3>
-    <p>Segment parts of image and then perform inpainting or editing on specific object</p>
+    <img src="{{ site.baseurl }}/assets/images/projects/segmedit-new.png" alt="segment-then-edit">
+    <h3>Segment-then-Edit</h3>
+    <p>Segment parts of image and then perform inpainting or editing on specific object.</p>
     <div class="project-links">
       <a href="https://github.com/dsgiitr/segmedit" target="_blank">GitHub</a>
-      <a href="https://huggingface.co/spaces/aakashks/adv-photo-editing">Details</a>
+      <!-- <a href="https://huggingface.co/spaces/aakashks/adv-photo-editing">HF Demo</a> -->
+      <a href="https://advikasinha.github.io/dsg-website/projects/segment-then-edit/">Details</a>
     </div>
   </div>
 
