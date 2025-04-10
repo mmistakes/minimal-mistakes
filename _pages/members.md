@@ -8,6 +8,18 @@ permalink: /members/
 
 <div class="member-grid">
 
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/aayan.jpeg" width= 200 height= 200 alt="Aayan Yadav">
+    <h3><a href="{{ site.baseurl }}/members/aayanyadav">Aayan Yadav</a></h3>
+  </div>
+
+
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/parth.jpg" width= 200 height= 200 alt="Parth Badgujar">
+    <h3><a href="{{ site.baseurl }}/members/parthbadgujar">Parth Badgujar</a></h3>
+  </div>
+
+
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width= 200 height= 200 alt="Agam Pandey">
     <h3><a href="{{ site.baseurl }}/members/agampandey">Agam Pandey</a></h3>
