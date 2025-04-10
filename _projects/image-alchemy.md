@@ -3,7 +3,7 @@ title: "Image-Alchemy"
 layout: single
 permalink: /projects/image_alchemy/
 ---
-![Image alchemy Banner]({{ site.baseurl }})
+![Image alchemy Banner]({{ site.baseurl }}/assets/images/image alchemy cover photo.png)
 
 - Personalizing text-to-image diffusion models like Stable Diffusion XL (SDXL) often leads to issues like catastrophic
 forgetting, overfitting, or high computational costs.
@@ -37,7 +37,7 @@ LoRA is a parameter-efficient fine-tuning method that injects trainable low-rank
 - [Code](https://github.com/microsoft/LoRA)
 - [Paper-> Low-Rank adaptation](https://arxiv.org/abs/2106.09685)
 
-## 5. Our pipelinen
+## 5. Our pipeline
 ![GAT]({{ site.baseurl }}/assets/images/research/ImageAlchemy.png)
 In this project we developed a two-stage pipeline using LoRA-based fine-tuning on SDXLs attention layers, followed by a segmentation-driven Img2Img
 approach to insert personalized subjects while preserving the models generative capabilities.
