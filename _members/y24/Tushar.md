@@ -6,9 +6,9 @@ layout: single
 
 
 
-# Jheel Maheshwari
+# Tushar
 
-<img src="{{ site.baseurl }}/assets/images/members/y24/tushar.png" width="200" height="200" alt="Tushar">
+<img src="{{ site.baseurl }}/assets/images/members/y24/tushar.jpeg" width="200" height="200" alt="Tushar">
 
 *Core Member, DSG IIT Roorkee*
 
