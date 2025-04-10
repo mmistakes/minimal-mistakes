@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-02-14T22:47:24+08:00'
+last_modified_at: '2025-04-02T23:07:42+08:00'
 toc: false
 ---
 
@@ -40,6 +40,7 @@ toc: false
 - Fix extra newline generated in `_includes/post_pagination.html`.
 - Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
 - Fix typo in "Configuration" [#5106](https://github.com/mmistakes/minimal-mistakes/issues/5106)
+- bundle exec jekyll serve will fail if more than once [#5193](https://github.com/mmistakes/minimal-mistakes/issues/5193)
 
 ### Documentation & Maintenance
 
