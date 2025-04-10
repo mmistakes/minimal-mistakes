@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "3. Schulkonferenz",
-    "title": "3. Schulkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Z3ZyM2ViaG9zYnVtYXVwaGxiazQydHVvdG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-04-09T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-04-09T16:00:00+02:00"
-    },
-    "created": "2025-03-08T17:45:15.000Z",
-    "updated": "2025-03-08T17:45:15.980Z"
-  },
-  {
-    "image_path": null,
     "alt": "A2 - Ausflug zur Wilden Welt ",
     "title": "A2 - Ausflug zur Wilden Welt ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-04-01T09:23:11.000Z",
     "updated": "2025-04-01T09:23:11.063Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei ",
+    "title": "6b - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWwxbzZuODAyNmJobTQ5Z3YxZmhvN2s2dHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-28T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-28T12:45:00+02:00"
+    },
+    "created": "2025-04-01T09:23:54.000Z",
+    "updated": "2025-04-01T09:23:54.627Z"
   }
 ]
