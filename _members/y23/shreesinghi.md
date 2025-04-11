@@ -9,7 +9,7 @@ layout: single
 <img src="{{ site.baseurl }}/assets/images/members/y23/shree.jpeg" width="200" height="200" alt="Shree Singhi">
 
 
-*Seceretary, DSG IIT Roorkee*
+*Secretary, DSG IIT Roorkee*
 
 ---
 
