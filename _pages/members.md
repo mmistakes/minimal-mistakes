@@ -76,6 +76,11 @@ permalink: /members/
     <h3><a href="{{ site.baseurl }}/members/adityachauhan">Aditya Chauhan</a></h3>
   </div>
 
+  <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/advika.jpg" width="200" height="200" alt="Advika Sinh">
+    <h3><a href="{{ site.baseurl }}/members/advika">Advika Sinha</a></h3>
+  </div>
+
  <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/abhivansh.jpeg" width= 200 height= 200 alt="Abhivansh Gupta">
     <h3><a href="{{ site.baseurl }}/members/abhivanshgupta">Abhivansh Gupta</a></h3>
@@ -161,10 +166,6 @@ permalink: /members/
     <h3><a href="{{ site.baseurl }}/members/laabhanvi">Laabhanvi Jain</a></h3>
   </div>
 
-  <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
-    <h3><a href="{{ site.baseurl }}/members/jane_smith">Jane Smith</a></h3>
-  </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/jane_smith.jpg" alt="Jane Smith">
