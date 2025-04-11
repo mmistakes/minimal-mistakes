@@ -6,7 +6,7 @@ layout: single
 
 # Advika Sinha
 
-<img src=""{{ site.baseurl }}/assets/images/members/y24/advika.jpeg width="200" height="200" alt="Advika Sinha">
+<img src="{{ site.baseurl }}/assets/images/members/y24/advika.jpeg" width="200" height="200" alt="Advika Sinha">
 
 _Core Member, DSG IIT Roorkee_
 
