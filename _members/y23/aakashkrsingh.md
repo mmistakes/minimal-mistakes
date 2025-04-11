@@ -19,18 +19,8 @@ layout: single
 
 ## Research Interests
 - Diffusion Models
-- Computer Vision
 - Machine Learning & Deep Learning
-- Generative Modelling 
 - Multimodal Large Language Models
-
----
-
-## Projects  
-- **Segment-then-edit**  
-  Developed a gradio app for editing specific parts of image, enabling fast inpainting of the area and replacing it with a new object.
-- **Multimodal RAG**  
-  Implemented a CLIP aided Dynamic Database to store live information about the world and retrieve it using a Vision Language Model for question answering.
 
 ---
 
@@ -42,7 +32,15 @@ layout: single
 ---
 
 ## Publications  
-- *Umrajkar, V., Singh A.K., (2025). [Detection Limits and Statistical Separability of Tree Ring Watermarks in Rectified Flow-based Text-to-Image Generation Models](https://arxiv.org/abs/2504.03850)*. 1st Workshop on GenAI Watermarking @ **ICLR Workshop 2025** (Co-Author)
+- *Umrajkar, V., Singh A.K., (2025). [Detection Limits and Statistical Separability of Tree Ring Watermarks in Rectified Flow-based Text-to-Image Generation Models](https://arxiv.org/abs/2504.03850)*. 1st Workshop on GenAI Watermarking @ **ICLR 2025** (Co-Author)
+
+---
+
+## Projects  
+- **Segment-then-edit**  
+  Developed a gradio app for editing specific parts of image, enabling fast inpainting of the area and replacing it with a new object.
+- **Multimodal RAG**  
+  Implemented a CLIP aided dynamic database to store live information about the world and retrieve it using a Vision Language Model via question answering.
 
 ---
 
