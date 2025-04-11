@@ -78,7 +78,7 @@ permalink: /members/
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/advika.JPG" width="200" height="200" alt="Advika Sinha">
-    <h3><a href="{{ site.baseurl }}/_members/y24/advika">Advika Sinha</a></h3>
+    <h3><a href="{{ site.baseurl }}/members/advika">Advika Sinha</a></h3>
   </div>
 
  <div class="member-card">
