@@ -8,7 +8,7 @@ layout: single
 
 # Shorya Singhal
 
-<img src="assets/images/members/y23/shorya.jpg" width="200" height="200" alt="Shorya Singhal">
+<img src="{{ site.baseurl }}/assets/images/members/y23/shorya.jpg" width="200" height="200" alt="Shorya Singhal">
 
 
 *Core Member, DSG IIT Roorkee*
