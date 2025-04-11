@@ -24,11 +24,22 @@ permalink: /members/
     <h3><a href="{{ site.baseurl }}/members/vedumrajkar">Ved Umrajkar</a></h3>
   </div>
 
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/shree.jpeg" width= 200 height= 200 alt="Shree Singhi">
+    <h3><a href="{{ site.baseurl }}/members/shreesinghi">Shree Singhi</a></h3>
+</div>
+
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/Screenshot 2025-03-28 175712.png" width= 200 height= 200 alt="Barath Chandran">
+    <h3><a href="{{ site.baseurl }}/members/barathchandran">Barath Chandran</a></h3>
+  </div>
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width= 200 height= 200 alt="Agam Pandey">
     <h3><a href="{{ site.baseurl }}/members/agampandey">Agam Pandey</a></h3>
   </div>
+
+  
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/otterv.webp" width= 200 height= 200 alt="Atharv Mittal">
