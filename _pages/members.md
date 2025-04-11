@@ -168,7 +168,7 @@ permalink: /members/
 
 
   <div class="member-card">
-    <img src="{{ site.baseurl }}/assets/images/members/sargam.jpg" alt="Sargam Goyal">
+    <img src="{{ site.baseurl }}/assets/images/members/y24/sargam.jpg" alt="Sargam Goyal">
     <h3><a href="{{ site.baseurl }}/members/SargamGoyal">Sargam Goyal</a></h3>
   </div>
 
