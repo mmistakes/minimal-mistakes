@@ -117,3 +117,35 @@ search: false
 .button-link:hover {
   background-color: #0059b3;
 }
+
+
+
+/*CONTACT PAGE CSS*/
+
+.contact-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.contact-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.contact-wrapper p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.form-container iframe {
+  border: none;
+  width: 100%;
+  height: 800px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
