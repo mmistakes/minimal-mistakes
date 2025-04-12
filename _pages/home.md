@@ -33,7 +33,7 @@ title: Home
 <section class="preview-section">
   <h2>Featured Research</h2>
   <div class="grid-container">
-    {% include_relative _includes/research-card.html %}
+    {% include research-card.html %}
   </div>
   <a href="/research/" class="button-link">Explore Research</a>
 </section>
@@ -41,7 +41,7 @@ title: Home
 <section class="preview-section">
   <h2>Projects</h2>
   <div class="grid-container">
-    {% include_relative _includes/project-card.html %}
+    {% include project-card.html %}
   </div>
   <a href="/projects/" class="button-link">See Projects</a>
 </section>
@@ -49,7 +49,7 @@ title: Home
 <section class="preview-section">
   <h2>Blog</h2>
   <div class="grid-container">
-    {% include_relative _includes/blog-card.html %}
+    {% include blog-card.html %}
   </div>
   <a href="/blogs/" class="button-link">View Blog</a>
 </section>
