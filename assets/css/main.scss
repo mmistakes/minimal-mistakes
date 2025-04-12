@@ -16,36 +16,40 @@ search: false
 }
 
 
+/* Announcement Box */
 .announcement-box {
   background-color: #e6f0ff;
   border-radius: 12px;
   padding: 10px 20px;
   font-size: 0.95rem;
-  display: inline-block;
-  margin: 1rem 0;
   color: #004080;
   font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Tagline */
 .tagline {
-  font-size: 2.4rem;
-  font-weight: bold;
+  font-size: 2.6rem;
+  font-weight: 800;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .highlight-train {
   color: #007bff; // DSG blue
 }
 
+/* Intro Text */
 .intro-text {
   font-size: 1.1rem;
   color: #444;
-  text-align: center;
-  margin: 0 auto 2rem;
   max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
 }
 
+/* Featured Research Cards */
 .preview-section {
   margin: 3rem 0;
   text-align: center;
@@ -64,7 +68,12 @@ search: false
   border-radius: 12px;
   overflow: hidden;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.grid-container .card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -77,8 +86,10 @@ search: false
   padding: 0.8rem;
   font-size: 1.1rem;
   text-align: left;
+  color: #111;
 }
 
+/* Button Links */
 .button-link {
   display: inline-block;
   margin-top: 1.5rem;
@@ -88,6 +99,7 @@ search: false
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
 .button-link:hover {
