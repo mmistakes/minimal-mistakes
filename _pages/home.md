@@ -6,41 +6,58 @@ title: Home
 
 
 <style>
+  .intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .announcement-box {
+    background-color: #e6f0ff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: #004080;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
   .tagline {
     font-size: 3rem;
     font-weight: 800;
-    text-align: center;
-    margin-top: 3rem;
-    padding: 2rem 1rem;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #111;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    line-height: 1.2;
   }
 
-  .tagline:hover {
-    transform: scale(1.02);
-  }
-
-  .tagline span {
+  .tagline .highlight-train {
     color: #007bff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-style: italic;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 1.5rem;
+    max-width: 700px;
   }
 
   @media (max-width: 768px) {
     .tagline {
-      font-size: 2rem;
-      padding: 1.5rem 1rem;
+      font-size: 2.2rem;
+    }
+
+    .intro-text {
+      font-size: 1rem;
     }
   }
 </style>
-
 
 <div class="intro-wrapper">
   <div class="announcement-box">
