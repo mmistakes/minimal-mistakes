@@ -72,9 +72,8 @@ title: Home
   <p class="intro-text">
     We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
   </p>
-</div>
 
-<div class="social-icons" style="margin-top: 20px;">
+  <div class="social-icons" style="margin-top: 20px;">
 
   <div style="margin-top: 20px;">
     <a href="https://github.com/dsgiitr" target="_blank" style="margin: 0 10px;">
@@ -90,6 +89,8 @@ title: Home
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" width="30" alt="Instagram">
     </a>
   </div>
+
+</div>
 
 </div>
 
