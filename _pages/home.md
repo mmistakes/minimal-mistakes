@@ -79,13 +79,13 @@ title: Home
   <a href="https://github.com/dsgiitr" target="_blank">
     <i class="fab fa-github fa-2x" style="color: black;"></i>
   </a>
-  <a href="https://linkedin.com/company/dsgiitr" target="_blank">
+  <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank">
     <i class="fab fa-linkedin fa-2x" style="color: #0a66c2;"></i>
   </a>
-  <a href="https://twitter.com/dsgiitr" target="_blank">
+  <a href="https://x.com/dsg_iitr" target="_blank">
     <i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i>
   </a>
-  <a href="https://instagram.com/dsgiitr" target="_blank">
+  <a href="https://www.instagram.com/dsgiitr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
     <i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i>
   </a>
 </div>
