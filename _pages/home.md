@@ -102,7 +102,7 @@ title: Home
   <div class="grid-container">
     {% include research-card.html %}
   </div>
-  <a href="/research/" class="button-link">Explore Research</a>
+  <a href="https://dsgiitr.github.io/dsg-website/research/" class="button-link">Explore Research</a>
 </section>
 
 <section class="preview-section">
@@ -110,7 +110,7 @@ title: Home
   <div class="grid-container">
     {% include project-card.html %}
   </div>
-  <a href="/projects/" class="button-link">See Projects</a>
+  <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
 </section>
 
 <section class="contact-section">
