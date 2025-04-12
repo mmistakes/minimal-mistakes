@@ -1,9 +1,7 @@
-
-
-
 ---
-layout: home
-title: Home
+layout: splash
+title: "Home"
+permalink: /
 ---
 
 <style>
