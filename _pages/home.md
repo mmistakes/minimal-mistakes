@@ -111,14 +111,6 @@ title: Home
   <a href="/projects/" class="button-link">See Projects</a>
 </section>
 
-<section class="preview-section">
-  <h2>Blog</h2>
-  <div class="grid-container">
-    {% include blog-card.html %}
-  </div>
-  <a href="/blogs/" class="button-link">View Blog</a>
-</section>
-
 <section class="contact-section">
   <div class="intro-wrapper">
       <h2>Contact Us</h2>
