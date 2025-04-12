@@ -5,6 +5,19 @@ title: Home
 ---
 
 
+<style>
+  .tagline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #ffffff, #eaeaea);
+    padding: 2rem 1rem;
+  }
+</style>
+
+
+
 <div class="announcement-box">
   📢 Latest: Applications open for Spring '25 recruitment!
 </div>
