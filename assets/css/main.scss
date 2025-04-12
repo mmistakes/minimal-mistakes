@@ -7,3 +7,83 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+
+.announcement-box {
+  background-color: #e6f0ff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin: 1rem 0;
+  color: #004080;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.highlight-train {
+  color: #007bff; // DSG blue
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 700px;
+}
+
+.preview-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.grid-container .card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button-link:hover {
+  background-color: #0059b3;
+}
