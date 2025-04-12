@@ -7,20 +7,45 @@ title: Home
 
 <style>
   .tagline {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 800;
     text-align: center;
-    margin-top: 2rem;
-    background: linear-gradient(to right, #ffffff, #eaeaea);
+    margin-top: 3rem;
     padding: 2rem 1rem;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #111;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tagline:hover {
+    transform: scale(1.02);
+  }
+
+  .tagline span {
+    color: #007bff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .tagline {
+      font-size: 2rem;
+      padding: 1.5rem 1rem;
+    }
   }
 </style>
+
 
 <div class="intro-wrapper">
   <div class="announcement-box">
     📢 Latest: Applications open for Spring '25 recruitment!
   </div>
-
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
     We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
