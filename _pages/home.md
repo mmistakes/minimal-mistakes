@@ -16,19 +16,17 @@ title: Home
   }
 </style>
 
+<div class="intro-wrapper">
+  <div class="announcement-box">
+    📢 Latest: Applications open for Spring '25 recruitment!
+  </div>
 
-
-<div class="announcement-box">
-  📢 Latest: Applications open for Spring '25 recruitment!
+  <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
+  <p class="intro-text">
+    We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
+  </p>
 </div>
 
-<h1 class="tagline">
-  Code <span class="highlight-train">Train</span> Predict
-</h1>
-
-<p class="intro-text">
-  We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
-</p>
 
 <section class="preview-section">
   <h2>Featured Research</h2>
