@@ -10,8 +10,8 @@ main:
     url: /projects/
   - title: "Blogs"
     url: /blogs/
-  - title: "Members"
-    url: /members/
+  #- title: "Members"
+     #url: /members/
   - title: "Events"
     url: /events/
   - title: "Contact"
