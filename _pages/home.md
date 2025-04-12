@@ -75,25 +75,25 @@ title: Home
 
   <div class="social-icons" style="margin-top: 20px;">
 
-  <div style="margin-top: 20px;">
-    <a href="https://github.com/dsgiitr" target="_blank" style="margin: 0 10px;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" width="30" alt="GitHub">
-    </a>
-    <a href="https://linkedin.com/company/dsgiitr" target="_blank" style="margin: 0 10px;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" width="30" alt="LinkedIn">
-    </a>
-    <a href="https://twitter.com/dsgiitr" target="_blank" style="margin: 0 10px;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg" width="30" alt="Twitter">
-    </a>
-    <a href="https://instagram.com/dsgiitr" target="_blank" style="margin: 0 10px;">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" width="30" alt="Instagram">
-    </a>
-  </div>
+  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 25px;">
+  <a href="https://github.com/dsgiitr" target="_blank">
+    <i class="fab fa-github fa-2x" style="color: black;"></i>
+  </a>
+  <a href="https://linkedin.com/company/dsgiitr" target="_blank">
+    <i class="fab fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+  </a>
+  <a href="https://twitter.com/dsgiitr" target="_blank">
+    <i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i>
+  </a>
+  <a href="https://instagram.com/dsgiitr" target="_blank">
+    <i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i>
+  </a>
+</div>
+
 
 </div>
 
 </div>
-
 
 <section class="preview-section">
   <h2>Featured Research</h2>
