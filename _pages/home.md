@@ -95,13 +95,15 @@ title: Home
 </section>
 
 <section class="contact-section">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:datasciencegroup.iitr@gmail.com">datasciencegroup.iitr@gmail.com</a></p>
-  <p>Location: IIT Roorkee</p>
-  <p>
-    Follow us: 
-    <a href="https://linkedin.com">LinkedIn</a> |
-    <a href="https://twitter.com">Twitter</a> |
-    <a href="https://instagram.com">Instagram</a>
-  </p>
+  <div class="intro-wrapper">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:datasciencegroup.iitr@gmail.com">datasciencegroup.iitr@gmail.com</a></p>
+      <p>Location: IIT Roorkee</p>
+      <p>
+        Follow us: 
+        <a href="https://linkedin.com">LinkedIn</a> |
+        <a href="https://twitter.com">Twitter</a> |
+        <a href="https://instagram.com">Instagram</a>
+      </p>
+  </div>
 </section>
