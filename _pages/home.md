@@ -1,80 +1,134 @@
 ---
-layout: single
-title: "Home"
+layout: splash
 permalink: /
+title: Home
 ---
 
-<style>
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+
+.announcement-box {
+  background-color: #e6f0ff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin: 1rem 0;
+  color: #004080;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hero h1 {
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 0.5rem;
+.highlight-train {
+  color: #007bff; // DSG blue
 }
 
-.code { color: #000; }
-.train { color: #007bff; } /* Bluish tone */
-.predict { color: #000; }
-
-.hero p {
-  font-size: 1.2rem;
+.intro-text {
+  font-size: 1.1rem;
   color: #444;
-  max-width: 600px;
-  margin-top: 1rem;
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 700px;
 }
-</style>
 
-<div class="hero">
-  <h1><span class="code">CODE.</span> <span class="train">TRAIN.</span> <span class="predict">PREDICT.</span></h1>
-  <p>We are the Data Science Group at IIT Roorkee. Empowering students to innovate through machine learning, research, and collaboration.</p>
+.preview-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.grid-container .card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button-link:hover {
+  background-color: #0059b3;
+}
+
+
+
+<div class="announcement-box">
+  📢 Latest: Applications open for Spring '25 recruitment!
 </div>
 
+<h1 class="tagline">
+  Code <span class="highlight-train">Train</span> Predict
+</h1>
 
+<p class="intro-text">
+  We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
+</p>
 
+<section class="preview-section">
+  <h2>Featured Research</h2>
+  <div class="grid-container">
+    {% include_relative _includes/research-card.html %}
+  </div>
+  <a href="/research/" class="button-link">Explore Research</a>
+</section>
 
-The **Data Science Group (DSG)** at IIT Roorkee is a student-led research community focused on advancing the fields of Artificial Intelligence, Machine Learning, and Data-Driven Technologies.
+<section class="preview-section">
+  <h2>Projects</h2>
+  <div class="grid-container">
+    {% include_relative _includes/project-card.html %}
+  </div>
+  <a href="/projects/" class="button-link">See Projects</a>
+</section>
 
-Our work spans academic research, real-world applications, and active participation in national and international competitions. We strive to be at the forefront of innovation in data science among Indian technical institutes.
+<section class="preview-section">
+  <h2>Blog</h2>
+  <div class="grid-container">
+    {% include_relative _includes/blog-card.html %}
+  </div>
+  <a href="/blogs/" class="button-link">View Blog</a>
+</section>
 
----
-
-## At a Glance
-
-- 40+ Active Members  
-- 20+ Research Publications  
-- 10+ Ongoing Projects  
-- National Hackathon & AI Challenge Winners  
-- Collaborations with Academia and Industry
-  
----
-
-## Our Focus
-
-- **Research**: Cutting-edge work in ML, CV, NLP, and Generative AI.  
-- **Projects**: Impact-driven solutions across industries and society.  
-- **Competitions**: Proven track record in data science contests.  
-- **Knowledge Sharing**: Technical talks, sessions, and community learning.
-
----
-
-## Recent Highlights
-
-- 📄 *Paper accepted at NeurIPS 2024 by DSG research team.*  
-- 🏆 *Winners at Flipkart GRID 5.0 AI Challenge.*  
-- 🤝 *New collaboration launched with Microsoft Research India.*
-
-> Stay updated via our [GitHub](https://github.com/DataScienceGroupIITR) and [LinkedIn](https://www.linkedin.com/) handles.
-
----
-
-👉 [Meet Our Members »](/members/)  
-📬 [Get in Touch »](/contact/)
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:datasciencegroup.iitr@gmail.com">datasciencegroup.iitr@gmail.com</a></p>
+  <p>Location: IIT Roorkee</p>
+  <p>
+    Follow us: 
+    <a href="https://linkedin.com">LinkedIn</a> |
+    <a href="https://twitter.com">Twitter</a> |
+    <a href="https://instagram.com">Instagram</a>
+  </p>
+</section>
