@@ -57,6 +57,11 @@ title: Home
       font-size: 1rem;
     }
   }
+  
+  .social-icons a img:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+  }
 </style>
 
 <div class="intro-wrapper">
@@ -67,6 +72,25 @@ title: Home
   <p class="intro-text">
     We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
   </p>
+</div>
+
+<div class="social-icons" style="margin-top: 20px;">
+
+  <div style="margin-top: 20px;">
+    <a href="https://github.com/dsgiitr" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" width="30" alt="GitHub">
+    </a>
+    <a href="https://linkedin.com/company/dsgiitr" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" width="30" alt="LinkedIn">
+    </a>
+    <a href="https://twitter.com/dsgiitr" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg" width="30" alt="Twitter">
+    </a>
+    <a href="https://instagram.com/dsgiitr" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" width="30" alt="Instagram">
+    </a>
+  </div>
+
 </div>
 
 
