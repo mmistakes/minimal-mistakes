@@ -14,6 +14,8 @@ title: Home
     padding: 3rem 1rem;
     max-width: 900px;
     margin: 0 auto;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
   }
 
   .announcement-box {
