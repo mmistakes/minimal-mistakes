@@ -10,12 +10,6 @@ We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbre
 
 
 
----
-layout: splash
-title: "Members"
-permalink: /members/
----
-
 ## Our Team
 
 <div class="member-grid">
