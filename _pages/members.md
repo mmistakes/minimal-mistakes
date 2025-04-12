@@ -30,9 +30,20 @@ permalink: /members/
 </div>
 
  <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/shorya.jpg" width= 200 height= 200 alt="Shorya Singhal">
+    <h3><a href="{{ site.baseurl }}/members/shroyasinghal">Shorya Singhal</a></h3>
+</div>
+
+ <div class="member-card">
+    <img src="{{ site.baseurl }}/assets/images/members/y23/anupriya_image.jpg" width= 200 height= 200 alt="Anupriya Kumari">
+    <h3><a href="{{ site.baseurl }}/members/anupriyakkumari">Anupriya Kumari</a></h3>
+  </div>
+
+ <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/Screenshot 2025-03-28 175712.png" width= 200 height= 200 alt="Barath Chandran">
     <h3><a href="{{ site.baseurl }}/members/barathchandran">Barath Chandran</a></h3>
   </div>
+
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width= 200 height= 200 alt="Agam Pandey">
