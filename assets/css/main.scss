@@ -11,43 +11,55 @@ search: false
 
 
 .intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-top: 2rem;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-
-/* Announcement Box */
 .announcement-box {
   background-color: #e6f0ff;
   border-radius: 12px;
   padding: 10px 20px;
   font-size: 0.95rem;
-  color: #004080;
-  font-weight: 600;
   display: inline-block;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #004080;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Tagline */
 .tagline {
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 700px;
+  transition: transform 0.3s ease;
+}
+
+.tagline:hover {
+  transform: scale(1.02);
 }
 
 .highlight-train {
-  color: #007bff; // DSG blue
+  color: #007bff;
+  font-style: italic;
 }
 
-/* Intro Text */
 .intro-text {
   font-size: 1.1rem;
   color: #444;
+  margin-top: 1rem;
   max-width: 700px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.6;
 }
+
 
 /* Featured Research Cards */
 .preview-section {
