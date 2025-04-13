@@ -4,163 +4,60 @@ permalink: /
 title: Home
 ---
 <style>
-  /* Global Styles */
-  :root {
-    --primary-color: #007bff;
-    --secondary-color: #0056b3;
-    --accent-color: #e6f0ff;
-    --text-dark: #111827;
-    --text-body: #4b5563;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --transition: all 0.3s ease;
-  }
-
-  /* Hero Section */
   .intro-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 1.5rem 2rem; /* Reduced padding */
-    max-width: 1100px;
+    padding: 3rem 1rem;
+    max-width: 900px;
     margin: 0 auto;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
   }
-
-  /* Announcement Banner */
   .announcement-box {
-    background-color: var(--accent-color);
-    border-left: 4px solid var(--primary-color);
-    border-radius: 8px;
-    padding: 14px 24px;
-    font-size: 1rem;
-    margin-bottom: 2rem; /* Reduced margin */
-    color: var(--secondary-color);
+    background-color: 
+#e6f0ff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    color: 
+#004080;
     font-weight: 600;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-    display: inline-flex;
-    align-items: center;
-    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
-  
-  .announcement-box:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .announcement-icon {
-    margin-right: 10px;
-    font-size: 1.2rem;
-  }
-
-  /* Main Tagline */
-  .tagline-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  }
-  
   .tagline {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
-    color: #0a2559; /* Dark blue for "Code" and "Predict" */
+    color: #111;
     margin: 0;
-    line-height: 1.1;
+    line-height: 1.2;
   }
-
-  .train-text {
-    color: #007bff; /* Ensure Train is clearly visible */
+  .tagline .highlight-train {
+    color: 
+#007bff;
     font-weight: 800;
-    font-size: 4rem;
-    margin: 0 10px;
-    position: relative;
+    font-style: normal;
   }
-  
-  .train-underline {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: #a7ceff; /* Light blue underline */
-    z-index: -1;
-    border-radius: 4px;
-  }
-
-  /* Introduction Text */
   .intro-text {
-    font-size: 1.25rem;
-    color: var(--text-body);
+    font-size: 1.1rem;
+    color: #444;
     margin-top: 1.5rem;
     max-width: 700px;
-    line-height: 1.6;
+  }
+  @media (max-width: 768px) {
+    .tagline {
+      font-size: 2.2rem;
+    }
+    .intro-text {
+      font-size: 1rem;
+    }
   }
 
-  /* Social Icons */
-  .social-icons {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-  }
-
-  .social-icons a {
-    transition: var(--transition);
-    opacity: 0.85;
-  }
-
-  .social-icons a:hover {
-    transform: translateY(-3px) scale(1.1);
-    opacity: 1;
-  }
-
-  /* Preview Sections */
-  .preview-section {
-    padding: 2.5rem 2rem; /* Reduced padding */
-    background-color: #fafafa;
-    margin-top: 2rem; /* Reduced margin */
-    border-top: 1px solid #eaeaea;
-  }
-
-  .preview-section h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 2rem; /* Reduced margin */
-    color: var(--text-dark);
-    position: relative;
-  }
-
-  .preview-section h2::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: var(--primary-color);
-  }
-
-  .button-link {
-    display: inline-block;
-    margin: 1.5rem auto 0; /* Reduced margin */
-    padding: 0.8rem 2rem;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: var(--transition);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .button-link:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+  .social-icons a img:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
   }
 
   /* Contact Section */
@@ -275,76 +172,35 @@ title: Home
     transform: translateY(-3px);
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
   }
-
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .intro-wrapper {
-      padding: 2rem 1rem; /* Reduced padding */
-    }
-    
-    .tagline, .train-text {
-      font-size: 2.5rem;
-    }
-    
-    .intro-text {
-      font-size: 1.1rem;
-    }
-    
-    .contact-details {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    
-    .contact-card {
-      width: 100%;
-    }
-
-    .preview-section {
-      padding: 2rem 1rem; /* Reduced padding */
-    }
-    
-    .train-underline {
-      height: 6px;
-      bottom: 6px;
-    }
-  }
 </style>
-
 <div class="intro-wrapper">
   <div class="announcement-box">
-    <span class="announcement-icon">🚀</span>
-    Applications open for Spring '25 recruitment! Apply by April 30th
+    📢 Latest: Applications open for Spring '25 recruitment!
   </div>
-  
-  <div class="tagline-container">
-    <span class="tagline">Code</span>
-    <span class="train-text">
-      Train
-      <span class="train-underline"></span>
-    </span>
-    <span class="tagline">Predict</span>
-  </div>
-  
+  <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
-    We are a student-led research community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning through innovative projects and collaborative research.
+    We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
   </p>
-  
-  <div class="social-icons">
-    <a href="https://github.com/dsgiitr" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github fa-2x" style="color: #24292e;"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank" aria-label="LinkedIn">
-      <i class="fab fa-linkedin fa-2x" style="color: #0a66c2;"></i>
-    </a>
-    <a href="https://x.com/dsg_iitr" target="_blank" aria-label="Twitter/X">
-      <i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i>
-    </a>
-    <a href="https://www.instagram.com/dsgiitr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i>
-    </a>
-  </div>
+  <div class="social-icons" style="margin-top: 20px;">
+  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 25px;">
+  <a href="https://github.com/dsgiitr" target="_blank">
+    <i class="fab fa-github fa-2x" style="color: black;"></i>
+  </a>
+  <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank">
+    <i class="fab fa-linkedin fa-2x" style="color: 
+#0a66c2;"></i>
+  </a>
+  <a href="https://x.com/dsg_iitr" target="_blank">
+    <i class="fab fa-twitter fa-2x" style="color: 
+#1da1f2;"></i>
+  </a>
+  <a href="https://www.instagram.com/dsgiitr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+    <i class="fab fa-instagram fa-2x" style="color: 
+#e4405f;"></i>
+  </a>
 </div>
-
+</div>
+</div>
 <section class="preview-section">
   <h2>Featured Research</h2>
   <div class="grid-container">
@@ -352,7 +208,6 @@ title: Home
   </div>
   <a href="https://dsgiitr.github.io/dsg-website/research/" class="button-link">Explore Research</a>
 </section>
-
 <section class="preview-section">
   <h2>Projects</h2>
   <div class="grid-container">
@@ -360,6 +215,14 @@ title: Home
   </div>
   <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
 </section>
+<section class="contact-section">
+  <div class="intro-wrapper">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
+      <p>Location: IIT Roorkee</p>
+  </div>
+</section>
+
 
 <section class="contact-section">
   <div class="contact-container">
@@ -374,7 +237,7 @@ title: Home
       <h3>Email</h3>
       <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
     </div>
-  
+    
   <div class="contact-card">
     <i class="fas fa-map-marker-alt contact-icon"></i>
     <h3>Location</h3>
@@ -389,7 +252,7 @@ title: Home
   </div>
   
   <a href="https://forms.gle/exampleRecruitmentForm" class="join-button">
-    Join Our Team
+   Contact Us
   </a>
   </div>
 </section>
