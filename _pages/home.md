@@ -209,7 +209,7 @@ title: Home
   <a href="https://dsgiitr.github.io/dsg-website/research/" class="button-link">Explore Research</a>
 </section>
 <section class="preview-section">
-  <h2>Projects</h2>
+  <h2>Featured Project and Blog</h2>
   <div class="grid-container">
     {% include project-card.html %}
   </div>
