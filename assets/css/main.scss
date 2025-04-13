@@ -100,23 +100,26 @@ search: false
   color: #111;
 }
 
-/* Button Links */
 .button-link {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  background-color: #004080;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: #007bff;
   color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
 }
 
 .button-link:hover {
-  background-color: #339dff; /* Lighter blue on hover */
+  background-color: #339dff;
   transform: translateY(-3px);
-  box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4); /* Stronger glow */
+  box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4);
 }
 
 
