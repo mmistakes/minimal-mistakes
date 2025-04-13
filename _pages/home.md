@@ -22,7 +22,7 @@ title: Home
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5rem 1.5rem 3rem;
+    padding: 3rem 1.5rem 2rem; /* Reduced padding */
     max-width: 1100px;
     margin: 0 auto;
   }
@@ -34,7 +34,7 @@ title: Home
     border-radius: 8px;
     padding: 14px 24px;
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem; /* Reduced margin */
     color: var(--secondary-color);
     font-weight: 600;
     box-shadow: var(--shadow-md);
@@ -55,34 +55,38 @@ title: Home
   }
 
   /* Main Tagline */
+  .tagline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
   .tagline {
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(to right, var(--text-dark) 0%, var(--primary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0 0 0.5rem;
+    color: #0a2559; /* Dark blue for "Code" and "Predict" */
+    margin: 0;
     line-height: 1.1;
-    letter-spacing: -0.02em;
   }
 
-  .tagline .highlight-train {
-    color: var(--primary-color);
-    font-weight: 900;
-    font-style: normal;
+  .train-text {
+    color: #007bff; /* Ensure Train is clearly visible */
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0 10px;
     position: relative;
-    display: inline-block;
   }
-
-  .tagline .highlight-train::after {
-    content: "";
+  
+  .train-underline {
     position: absolute;
-    bottom: 8px;
+    bottom: 10px;
     left: 0;
     width: 100%;
-    height: 8px;
-    background-color: rgba(0, 123, 255, 0.2);
+    height: 10px;
+    background-color: #a7ceff; /* Light blue underline */
     z-index: -1;
+    border-radius: 4px;
   }
 
   /* Introduction Text */
@@ -96,7 +100,7 @@ title: Home
 
   /* Social Icons */
   .social-icons {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -114,9 +118,9 @@ title: Home
 
   /* Preview Sections */
   .preview-section {
-    padding: 4rem 2rem;
+    padding: 2.5rem 2rem; /* Reduced padding */
     background-color: #fafafa;
-    margin-top: 3rem;
+    margin-top: 2rem; /* Reduced margin */
     border-top: 1px solid #eaeaea;
   }
 
@@ -124,7 +128,7 @@ title: Home
     text-align: center;
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem; /* Reduced margin */
     color: var(--text-dark);
     position: relative;
   }
@@ -142,7 +146,7 @@ title: Home
 
   .button-link {
     display: inline-block;
-    margin: 2.5rem auto 0;
+    margin: 1.5rem auto 0; /* Reduced margin */
     padding: 0.8rem 2rem;
     background-color: var(--primary-color);
     color: white;
@@ -162,8 +166,9 @@ title: Home
   /* Contact Section */
   .contact-section {
     background-color: #f8fafc;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem; /* Reduced padding */
     border-top: 1px solid #eaeaea;
+    margin-top: 0; /* Remove margin */
   }
 
   .contact-container {
@@ -176,7 +181,7 @@ title: Home
 
   .contact-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem; /* Reduced margin */
   }
 
   .contact-header h2 {
@@ -197,7 +202,7 @@ title: Home
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem; /* Reduced gap */
     margin-top: 1rem;
     width: 100%;
   }
@@ -251,7 +256,7 @@ title: Home
 
   /* Join Us Button */
   .join-button {
-    margin-top: 3rem;
+    margin-top: 2rem; /* Reduced margin */
     padding: 1rem 2.5rem;
     background-color: var(--primary-color);
     color: white;
@@ -274,11 +279,11 @@ title: Home
   /* Responsive Styles */
   @media (max-width: 768px) {
     .intro-wrapper {
-      padding: 3rem 1rem;
+      padding: 2rem 1rem; /* Reduced padding */
     }
     
-    .tagline {
-      font-size: 2.8rem;
+    .tagline, .train-text {
+      font-size: 2.5rem;
     }
     
     .intro-text {
@@ -295,7 +300,12 @@ title: Home
     }
 
     .preview-section {
-      padding: 3rem 1rem;
+      padding: 2rem 1rem; /* Reduced padding */
+    }
+    
+    .train-underline {
+      height: 6px;
+      bottom: 6px;
     }
   }
 </style>
@@ -306,7 +316,14 @@ title: Home
     Applications open for Spring '25 recruitment! Apply by April 30th
   </div>
   
-  <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
+  <div class="tagline-container">
+    <span class="tagline">Code</span>
+    <span class="train-text">
+      Train
+      <span class="train-underline"></span>
+    </span>
+    <span class="tagline">Predict</span>
+  </div>
   
   <p class="intro-text">
     We are a student-led research community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning through innovative projects and collaborative research.
@@ -357,7 +374,7 @@ title: Home
       <h3>Email</h3>
       <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
     </div>
-    
+  
   <div class="contact-card">
     <i class="fas fa-map-marker-alt contact-icon"></i>
     <h3>Location</h3>
@@ -373,6 +390,6 @@ title: Home
   
   <a href="https://forms.gle/exampleRecruitmentForm" class="join-button">
     Join Our Team
-    </a>
+  </a>
   </div>
 </section>
