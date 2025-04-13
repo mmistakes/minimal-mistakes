@@ -104,7 +104,7 @@ search: false
   margin-top: 2rem;
   padding: 1rem 2.5rem;
   background-color: #007bff;
-  color: white;
+  color: white !important; /* ← ensures text is white */
   font-weight: 600;
   font-size: 1.1rem;
   border: none;
