@@ -233,7 +233,7 @@ title: Home
   <div class="contact-card">
     <i class="fas fa-map-marker-alt contact-icon"></i>
     <h3>Location</h3>
-    <p>Data Science Group<br>IIT Roorkee<br>Uttarakhand, India</p>
+    <p>Ground Floor, SAC building<br>IIT Roorkee<br>Uttarakhand, India</p>
   </div>
   
   <div class="contact-card">
