@@ -35,8 +35,7 @@ title: Home
     line-height: 1.2;
   }
   .tagline .highlight-train {
-    color: 
-#007bff;
+    color: #007bff;
     font-weight: 800;
     font-style: normal;
   }
@@ -151,27 +150,28 @@ title: Home
     color: var(--primary-color);
   }
 
-  /* Join Us Button */
-  .join-button {
-    margin-top: 2rem; /* Reduced margin */
-    padding: 1rem 2.5rem;
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: 600;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: var(--transition);
-    text-decoration: none;
-    display: inline-block;
-  }
+ .join-button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: #007bff; /* Blue */
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4); /* Subtle glow */
+}
 
-  .join-button:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-  }
+.join-button:hover {
+  background-color: #339dff; /* Lighter blue on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4); /* Stronger glow */
+}
+
 </style>
 <div class="intro-wrapper">
   <div class="announcement-box">
@@ -215,14 +215,6 @@ title: Home
   </div>
   <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
 </section>
-<section class="contact-section">
-  <div class="intro-wrapper">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
-      <p>Location: IIT Roorkee</p>
-  </div>
-</section>
-
 
 <section class="contact-section">
   <div class="contact-container">
