@@ -97,7 +97,7 @@ search: false
   padding: 0.8rem;
   font-size: 1.1rem;
   text-align: left;
-  color: #111;
+  color: #007bff;
 }
 
 /* Button Links */
@@ -114,9 +114,10 @@ search: false
 }
 
 .button-link:hover {
-  background-color: #0059b3;
+  background-color: #339dff; /* Lighter blue on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4); /* Stronger glow */
 }
-
 
 
 /*CONTACT PAGE CSS*/
