@@ -560,35 +560,9 @@
     }
   }
 
-/* MathJax 수식 스타일링 */
-.MathJax {
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  max-width: 100% !important;
-  display: inline-block !important;
-}
-
-.MathJax_Display {
-  overflow-x: auto !important;
-  max-width: 100% !important;
-}
-
-/* 이 부분 추가 - 중요! */
-mjx-container {
-  overflow-x: auto !important;
-  display: inline-block !important;
-  max-width: 100% !important;
-  min-width: auto !important;
-}
-
-p {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-.page__content p, 
-.page__content li {
-  text-align: justify;
-  word-break: keep-all;
-  overflow-wrap: break-word;
+/* KaTeX 수식 스타일링 */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
 }
