@@ -559,3 +559,22 @@
       }
     }
   }
+
+/* MathJax 수식 스타일링 */
+.MathJax {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.page__content p, 
+.page__content li {
+  text-align: justify;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
