@@ -4,7 +4,7 @@ permalink: /members/aasthakhaitan
 layout: single
 ---
 # Aastha Khaitan
-<img src="{{ site.baseurl }} assets\images\members\y22\aasthakhaitan.jpeg" width="200" height="200" alt="Aastha Khaitan">
+<img src="{{ site.baseurl }} assets/images/members/y22/aasthakhaitan.jpeg" width="200" height="200" alt="Aastha Khaitan">
 
 
 *Executive Member, DSG IIT Roorkee*
