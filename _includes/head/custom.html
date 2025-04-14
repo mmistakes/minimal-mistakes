@@ -10,3 +10,7 @@
 <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo/web-app-manifest-512x512.png">
 
 <!-- end custom head snippets -->
+
+{% if page.use_math %}
+    {% include mathjax-support.html %}
+{% endif %}

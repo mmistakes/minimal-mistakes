@@ -562,9 +562,23 @@
 
 /* MathJax 수식 스타일링 */
 .MathJax {
-  overflow-x: auto;
-  overflow-y: hidden;
-  max-width: 100%;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  max-width: 100% !important;
+  display: inline-block !important;
+}
+
+.MathJax_Display {
+  overflow-x: auto !important;
+  max-width: 100% !important;
+}
+
+/* 이 부분 추가 - 중요! */
+mjx-container {
+  overflow-x: auto !important;
+  display: inline-block !important;
+  max-width: 100% !important;
+  min-width: auto !important;
 }
 
 p {
