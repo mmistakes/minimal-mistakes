@@ -2,6 +2,8 @@
 layout: single
 title: "Christopher Motola"
 permalink: /
+sidebar:
+  nav: "main"
 author_profile: true
 ---
 ## Welcome!  
