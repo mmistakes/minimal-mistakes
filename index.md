@@ -2,9 +2,8 @@
 layout: single
 title: "Christopher Motola"
 permalink: /
-sidebar:
-  nav: "main"
-author_profile: true
+sidebar: false
+author_profile: false
 ---
 ## Welcome!  
 I’m a **data journalist, analyst, and writer** specializing in financial trends and business insights.  
