@@ -61,6 +61,13 @@
       bio: "Daria completed her BS in Neuroscience at King’s College London in 2023. During her undergraduate studies, she focused on investigating the neural correlates of aggression in Autism Spectrum Disorder (ASD), exploring the effects of Neuroligin-3 mutations in mice and analyzing fMRI data. At Nuttida lab, Daria is excited about uncovering the neural codes that drive efficient encoding and maintenance of short- and long-term memory. She aims to develop a comprehensive, data-driven theory integrating neural geometry and manifold concepts to deepen our understanding of memory dynamics, with potential implications for various disorders. Outside the lab, she has a passion for high-adrenaline sports like skydiving and skiing."
       avatar: "/assets/images/people/daria.jpg"
 
+    - name: "Kaitlyn Swayze"
+      title: false
+      position: "PhD Student in Biomedical Engineering"
+      email: "ks4037 [at] columbia.edu"
+      bio: "Kaitlyn earned her B.E. in Biomedical Engineering from Stony Brook University in 2022 and her M.S. in Biomedical Engineering from Columbia University in 2024. At Columbia, she joined Elizabeth Hillman’s lab, where she first used computational approaches to analyze single-cell RNA sequencing datasets and inform antibody selection for multiplexed imaging of human brain samples. She later shifted focus to widefield optical mapping, an in vivo imaging technique that captures neural and hemodynamic activity in the cortex of awake, behaving mice, to investigate neurovascular coupling and functional connectivity after drug perturbation. Kaitlyn now works jointly with the Nuttida lab as well as the labs of Elizabeth Hillman and Steven A. Siegelbaum. She is excited to combine in vivo imaging, behavior tracking, and computational techniques to study behavioral and neurological deficits of HCN1-linked developmental epileptic encephalopathy. Outside of the lab she enjoys photography, painting, and hiking."
+      avatar: "/assets/images/people/kaitlyn.jpg"
+
     - name: "Jared Winslow"
       title: false
       position: "MA Student in Statistics | Data Science Institute Scholar"
