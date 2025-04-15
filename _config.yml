@@ -14,10 +14,10 @@
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 header_pages:
-  - _pages/about.md
-  - _pages/portfolio.md
-  - _pages/blog.md
-  - _pages/contact.md
+  - about.md
+  - portfolio.md
+  - blog.md
+  - contact.md
 
 # Site Settings
 locale                   : "en-US"
