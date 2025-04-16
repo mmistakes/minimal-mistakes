@@ -109,8 +109,7 @@ permalink: /events/
     <h3>Competitions and Hackathon</h3>
     <p>Annual hackathons and tech competitions held at IITR, offering a platform for students to innovate and collaborate.</p>
     <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/p/C1chUrJP6-P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
     </div>
   </div>
 
@@ -121,40 +120,51 @@ permalink: /events/
     <p>Inter IIT Technical Meets bringing together the brightest minds from IITs to collaborate on technology projects.</p>
     <div class="event-links">
       <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+
     </div>
   </div>
 
   <!-- Event 3: BYOP (Bring Your Own Project) -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/byop.jpg" alt="BYOP">
-    <h3>BYOP</h3>
-    <p>A unique event where participants bring their own tech projects for a chance to showcase and get feedback from experts.</p>
+    <h3>Bring Your Own Project</h3>
+    <p>A unique event where participants bring their own tech projects for a chance to showcase, build and get feedback from DSG members to have a chance at getting recruited into DSG.</p>
     <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/p/DBEfOXDSesx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
     </div>
   </div>
 
-  <!-- Event 4: Blogathon -->
+    <!-- Event 4: BH (Beginners' Hypothesis) -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/bh.jpg" alt="BYOP">
+    <h3>Beginner's Hypothesis</h3>
+    <p>A Kaggle based challenge where participants wrack their brains to climb up the leaderboard in order to secure direct interviews for DSG recruitments.</p>
+    <div class="event-links">
+      <a href="https://www.instagram.com/p/DEiMi1ThHQW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
+    </div>
+  </div>
+
+  <!-- Event 5: Blogathon -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/blogathon.jpg" alt="Blogathon">
     <h3>Blogathon</h3>
-    <p>Participants write blogs on a variety of tech topics with a chance to win exciting prizes and recognition.</p>
+    <p>Participants write fascinating blogs on a variety of tech topics with a chance to secure direct interviews for DSG recruitments.</p>
     <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/p/DE8_DhvPy6h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
     </div>
   </div>
 
-  <!-- Event 5: WWT Talk (Workshop Talk) -->
+  <!-- Event 6: WWT Talk (Workshop Talk) -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/wwt-talk.jpg" alt="WWT Talk">
     <h3>WWT Talk</h3>
     <p>Workshops and talks conducted by industry experts, aimed at sharing knowledge on the latest trends in technology.</p>
     <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/posts/dsg-iitr_we-are-delighted-to-share-that-the-data-science-activity-7228720941470470144-qL41?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEw1IwABLy-Q1qawlBnaKH-pRr6c3hPiuno" target="_blank">Details</a>
+
     </div>
   </div>
 
@@ -164,8 +174,8 @@ permalink: /events/
     <h3>Techshila 2024 Workshop on Adversarial Attacks on LLMs</h3>
     <p>A workshop on understanding and mitigating adversarial attacks in Large Language Models (LLMs), featuring hands-on sessions.</p>
     <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/p/C5uubbOP_F3/?utm_source=ig_web_copy_link" target="_blank">Details</a>
+
     </div>
   </div>
 
@@ -173,10 +183,10 @@ permalink: /events/
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/srishti-2025.jpg" alt="Srishti 2025 Workshops">
     <h3>Srishti 2025 Workshops</h3>
-    <p>Workshops conducted as part of Srishti 2025, focusing on innovative tech and design thinking for students across disciplines.</p>
+    <p>Workshops conducted as part of Srishti 2025, focusing on innovative tech behind GANs and design thinking for students across disciplines.</p>
     <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-      <a href="https://github.com/example-repo" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/p/DIbpC1FoM5Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
     </div>
   </div>
 
