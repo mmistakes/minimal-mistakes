@@ -27,6 +27,14 @@ permalink: /events/
   /* height: 300px;  Keeps card size uniform */
 }
 
+  /* Exclusive DSG Events Section - 3 items per row */
+.specific-event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Force 3 items per row */
+  gap: 30px;
+  margin-top: 2rem;
+}
+
 .event-card:hover {
   transform: translateY(-5px); /* Subtle lift on hover */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
@@ -102,7 +110,7 @@ permalink: /events/
 
 <!-- Exclusive DSG Events Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">Exclusive DSG Events</h2>
-<div class="event-grid">
+<div class="specific-event-grid">
   
   <!-- Event 3: BYOP (Bring Your Own Project) -->
   <div class="event-card">
@@ -253,25 +261,3 @@ permalink: /events/
   
 </div>
 
-  <!-- Placeholder Event Cards -->
-  <div class="event-card placeholder">
-    <img alt="Placeholder">
-    <h3>Event Title</h3>
-    <p>Event description here</p>
-    <div class="event-links">
-      <a href="#">Details</a>
-      <a href="#">GitHub</a>
-    </div>
-  </div>
-
-  <div class="event-card placeholder">
-    <img alt="Placeholder">
-    <h3>Event Title</h3>
-    <p>Event description here</p>
-    <div class="event-links">
-      <a href="#">Details</a>
-      <a href="#">GitHub</a>
-    </div>
-  </div>
-
-</div>
