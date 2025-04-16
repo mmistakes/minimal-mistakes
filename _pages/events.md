@@ -24,7 +24,7 @@ permalink: /events/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 300px; /* Keeps card size uniform */
+  /* height: 300px;  Keeps card size uniform */
 }
 
 .event-card:hover {
@@ -100,10 +100,11 @@ permalink: /events/
 }
 </style>
 
-<!-- Event Grid -->
+<!-- External Hackathons Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">External Hackathons</h2>
 <div class="event-grid">
-
-  <!-- Event 1: Competitions and Hackathon -->
+  <!-- Add external hackathon cards here -->
+    <!-- Event 1: Competitions and Hackathon -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/hackathons.png" alt="Competitions and Hackathons">
     <h3>Competitions and Hackathon</h3>
@@ -113,6 +114,7 @@ permalink: /events/
     </div>
   </div>
 
+  
   <!-- Event 2: Inter IIT Tech Meet 11, 12, 13 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/inter-iit-tech-meet.jpg" alt="Inter IIT Tech Meet">
@@ -120,55 +122,32 @@ permalink: /events/
     <p>Inter IIT Technical Meets bringing together the brightest minds from IITs to collaborate on technology projects.</p>
     <div class="event-links">
       <a href="https://example-link.com" target="_blank">Details</a>
-
     </div>
   </div>
+  
+</div>
 
-  <!-- Event 3: BYOP (Bring Your Own Project) -->
-  <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/BYOP.png" alt="BYOP">
-    <h3>Bring Your Own Project</h3>
-    <p>A unique event where participants bring their own tech projects for a chance to showcase, build and get feedback from DSG members to have a chance at getting recruited into DSG.</p>
-    <div class="event-links">
-      <a href="https://www.instagram.com/p/DBEfOXDSesx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
-
-    </div>
-  </div>
-
-    <!-- Event 4: BH (Beginners' Hypothesis) -->
-  <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/BH.png" alt="BYOP">
-    <h3>Beginner's Hypothesis</h3>
-    <p>A Kaggle based challenge where participants wrack their brains to climb up the leaderboard in order to secure direct interviews for DSG recruitments.</p>
-    <div class="event-links">
-      <a href="https://www.instagram.com/p/DEiMi1ThHQW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
-
-    </div>
-  </div>
-
-  <!-- Event 5: Blogathon -->
-  <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/Blogathon.png" alt="Blogathon">
-    <h3>Blogathon</h3>
-    <p>Participants write fascinating blogs on a variety of tech topics with a chance to secure direct interviews for DSG recruitments.</p>
-    <div class="event-links">
-      <a href="https://www.instagram.com/p/DE8_DhvPy6h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
-
-    </div>
-  </div>
-
-  <!-- Event 6: WWT Talk (Workshop Talk) -->
+<!-- Industry Collaborations Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Industry Collaborations</h2>
+<div class="event-grid">
+  <!-- Add industry collaboration event cards here -->
+    <!-- Event 6: WWT Talk (Workshop Talk) -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/wwt.png" alt="WWT Talk">
     <h3>WWT Talk</h3>
     <p>Workshops and talks conducted by industry experts, aimed at sharing knowledge on the latest trends in technology.</p>
     <div class="event-links">
       <a href="https://www.linkedin.com/posts/dsg-iitr_we-are-delighted-to-share-that-the-data-science-activity-7228720941470470144-qL41?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEw1IwABLy-Q1qawlBnaKH-pRr6c3hPiuno" target="_blank">Details</a>
-
     </div>
   </div>
+</div>
 
-  <!-- Event 6: Techshila 2024 Workshop on Adversarial Attacks on LLMs -->
+
+<!-- Internal IITR Events Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Internal IITR Collaborations</h2>
+<div class="event-grid">
+  <!-- Add intra IITR event cards here -->
+    <!-- Event 6: Techshila 2024 Workshop on Adversarial Attacks on LLMs -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/techshila.png" alt="Techshila 2024 Workshop">
     <h3>Techshila 2024 Workshop on Adversarial Attacks on LLMs</h3>
@@ -176,7 +155,7 @@ permalink: /events/
     <div class="event-links">
       <a href="https://www.instagram.com/p/C5uubbOP_F3/?utm_source=ig_web_copy_link" target="_blank">Details</a>
 
-    </div>
+  </div>
   </div>
 
   <!-- Event 7: Srishti 2025 Workshops -->
@@ -187,8 +166,58 @@ permalink: /events/
     <div class="event-links">
       <a href="https://www.instagram.com/p/DIbpC1FoM5Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
 
-    </div>
   </div>
+  </div>
+</div>
+
+<!-- Exclusive DSG Events Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Exclusive DSG Events</h2>
+<div class="event-grid">
+  <!-- Add exclusive DSG event cards here -->
+  
+  <!-- Event 3: BYOP (Bring Your Own Project) -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/BYOP.png" alt="BYOP">
+    <h3>Bring Your Own Project</h3>
+    <p>A unique event where participants bring their own tech projects for a chance to showcase, build and get feedback from DSG members to have a chance at getting recruited into DSG.</p>
+    <div class="event-links">
+      <a href="https://www.instagram.com/p/DBEfOXDSesx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
+  </div>
+  </div>
+
+    <!-- Event 4: BH (Beginners' Hypothesis) -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/BH.png" alt="BYOP">
+    <h3>Beginner's Hypothesis</h3>
+    <p>A Kaggle based challenge where participants wrack their brains to climb up the leaderboard in order to secure direct interviews for DSG recruitments.</p>
+    <div class="event-links">
+      <a href="https://www.instagram.com/p/DEiMi1ThHQW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
+  </div>
+  </div>
+
+  <!-- Event 5: Blogathon -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/Blogathon.png" alt="Blogathon">
+    <h3>Blogathon</h3>
+    <p>Participants write fascinating blogs on a variety of tech topics with a chance to secure direct interviews for DSG recruitments.</p>
+    <div class="event-links">
+      <a href="https://www.instagram.com/p/DE8_DhvPy6h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
   <!-- Placeholder Event Cards -->
   <div class="event-card placeholder">
