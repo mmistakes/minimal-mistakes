@@ -105,7 +105,7 @@ permalink: /events/
 
   <!-- Event 1: Competitions and Hackathon -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/competitions-hackathon.jpg" alt="Competitions and Hackathons">
+    <img src="{{ site.baseurl }}/assets/images/events/hackathons.png" alt="Competitions and Hackathons">
     <h3>Competitions and Hackathon</h3>
     <p>Annual hackathons and tech competitions held at IITR, offering a platform for students to innovate and collaborate.</p>
     <div class="event-links">
@@ -126,7 +126,7 @@ permalink: /events/
 
   <!-- Event 3: BYOP (Bring Your Own Project) -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/byop.jpg" alt="BYOP">
+    <img src="{{ site.baseurl }}/assets/images/events/BYOP.png" alt="BYOP">
     <h3>Bring Your Own Project</h3>
     <p>A unique event where participants bring their own tech projects for a chance to showcase, build and get feedback from DSG members to have a chance at getting recruited into DSG.</p>
     <div class="event-links">
@@ -137,7 +137,7 @@ permalink: /events/
 
     <!-- Event 4: BH (Beginners' Hypothesis) -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/bh.jpg" alt="BYOP">
+    <img src="{{ site.baseurl }}/assets/images/events/BH.png" alt="BYOP">
     <h3>Beginner's Hypothesis</h3>
     <p>A Kaggle based challenge where participants wrack their brains to climb up the leaderboard in order to secure direct interviews for DSG recruitments.</p>
     <div class="event-links">
@@ -148,7 +148,7 @@ permalink: /events/
 
   <!-- Event 5: Blogathon -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/blogathon.jpg" alt="Blogathon">
+    <img src="{{ site.baseurl }}/assets/images/events/Blogathon.png" alt="Blogathon">
     <h3>Blogathon</h3>
     <p>Participants write fascinating blogs on a variety of tech topics with a chance to secure direct interviews for DSG recruitments.</p>
     <div class="event-links">
@@ -159,7 +159,7 @@ permalink: /events/
 
   <!-- Event 6: WWT Talk (Workshop Talk) -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/wwt-talk.jpg" alt="WWT Talk">
+    <img src="{{ site.baseurl }}/assets/images/events/wwt.png" alt="WWT Talk">
     <h3>WWT Talk</h3>
     <p>Workshops and talks conducted by industry experts, aimed at sharing knowledge on the latest trends in technology.</p>
     <div class="event-links">
@@ -170,7 +170,7 @@ permalink: /events/
 
   <!-- Event 6: Techshila 2024 Workshop on Adversarial Attacks on LLMs -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/techshila-2024.jpg" alt="Techshila 2024 Workshop">
+    <img src="{{ site.baseurl }}/assets/images/events/techshila.png" alt="Techshila 2024 Workshop">
     <h3>Techshila 2024 Workshop on Adversarial Attacks on LLMs</h3>
     <p>A workshop on understanding and mitigating adversarial attacks in Large Language Models (LLMs), featuring hands-on sessions.</p>
     <div class="event-links">
@@ -181,7 +181,7 @@ permalink: /events/
 
   <!-- Event 7: Srishti 2025 Workshops -->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/srishti-2025.jpg" alt="Srishti 2025 Workshops">
+    <img src="{{ site.baseurl }}/assets/images/events/srishti.png" alt="Srishti 2025 Workshops">
     <h3>Srishti 2025 Workshops</h3>
     <p>Workshops conducted as part of Srishti 2025, focusing on innovative tech behind GANs and design thinking for students across disciplines.</p>
     <div class="event-links">
