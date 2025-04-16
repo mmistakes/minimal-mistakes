@@ -4,7 +4,7 @@ permalink: /members/vedumrajkar
 layout: splash
 ---
 # Ved Umrajkar
-<img src="{{ site.baseurl }}assets/images/members/y22/vedumrajkar.jpeg" width="200" height="200" alt="Ved Umrajkar">
+<img src="{{ site.baseurl }}/assets/images/members/y22/vedumrajkar.jpeg" width="200" height="200" alt="Ved Umrajkar">
 
 
 *Joint Secretary, DSG IIT Roorkee*
