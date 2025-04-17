@@ -2,7 +2,7 @@
 layout: splash
 title: "Nikkie Badsar"
 header:
-  overlay_color: "#ffffff"
+  overlay_color: "#ffffffff"
   overlay_filter: "0.4"
   overlay_image: /assets/images/Narges_Headshot.jpg
   actions:
