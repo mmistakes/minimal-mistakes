@@ -1,5 +1,5 @@
 ---
-layout: Publications & Projects
-title: "My Blog Posts"
+layout: home
+title: "Publications and Projects"
 permalink: /blog/
 ---
