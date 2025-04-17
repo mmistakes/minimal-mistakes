@@ -8,7 +8,7 @@ header:
   actions:
     - label: "About Me"
       url: "/about/"
-excerpt: "English teacher | Literature & pedagogy | Learning across borders"
+excerpt: "Educator bridging classrooms and European policy"
 ---
 
 {% include feature_row id="bio" %}
