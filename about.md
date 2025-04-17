@@ -4,7 +4,7 @@ title: "About Me"
 permalink: /about/
 ---
 
-Grounded in classrooms. Curious about systems. Learning across borders.
+**Grounded in classrooms. Curious about systems. Learning across borders.**
 
 After a Master’s in Social and Cultural Anthropology and three years in a PhD program, I took a detour into small business, programming, and eventually, education.
 
