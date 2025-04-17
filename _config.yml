@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Storage for All"
+title                    : "Jing's LOG Book" # site title that appears in the masthead
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "ZhenBao"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "ZhenBao"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : # "I am an **amazing** person."
+  location         : "ChengDu"
+  email            : "931453014@qq.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
