@@ -6,7 +6,7 @@ main:
     url: /blog/
   - title: "About"
     url: /about/
-  - title: "Experiments"
-    url: /experiments/
+  - title: "Now"
+    url: /now/
   - title: "Contact"
     url: /contact/
