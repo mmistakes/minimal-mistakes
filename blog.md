@@ -1,5 +1,5 @@
 ---
 layout: home
 title: "My Blog Posts"
-permalink: /blog/
+permalink: /Publications & Projects/
 ---
