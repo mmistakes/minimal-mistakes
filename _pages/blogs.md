@@ -181,25 +181,90 @@ layout: splash
       <p class="excerpt">Learn about clustering techniques and how they're used to group similar data points in machine learning.</p>
     </div>
     <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/_blogs/cnn_with_tf.md">Convolutional Neural Network with TensorFlow Implementation</a></h3>
-      <p class="excerpt">Step-by-step guide on how to implement CNNs using TensorFlow.</p>
-    </div>
-    <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/_blogs/data_science_congress.md">Data Science Congress. Something legendary.</a></h3>
-      <p class="excerpt">A recap of the latest Data Science Congress and its impact on the industry.</p>
-    </div>
-    <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/_blogs/decision_trees.md">Decision Trees. Decoded.</a></h3>
-      <p class="excerpt">A comprehensive guide to decision trees and their role in machine learning.</p>
-    </div>
-    <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/_blogs/deepwalk.md">Understanding Deepwalk</a></h3>
-      <p class="excerpt">An overview of Deepwalk and its applications in graph-based machine learning tasks.</p>
-    </div>
-    <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/_blogs/gat.md">Understanding Graph Attention Networks (GAT)</a></h3>
-      <p class="excerpt">An introduction to Graph Attention Networks and their use in graph data analysis.</p>
-    </div>
+  <h3><a href="{{ site.baseurl }}/_blogs/cnn_with_tf.md">Convolutional Neural Network with TensorFlow Implementation</a></h3>
+  <p class="excerpt">Dive into the world of CNNs and discover how TensorFlow simplifies the implementation of deep learning models.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/data_science_congress.md">Data Science Congress. Something legendary.</a></h3>
+  <p class="excerpt">Get the highlights from the most anticipated Data Science Congress. The future of AI is here, and it's legendary.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/decision_trees.md">Decision Trees. Decoded.</a></h3>
+  <p class="excerpt">From theory to practice—unlock the secrets behind Decision Trees and how they power many machine learning algorithms.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/deepwalk.md">Understanding Deepwalk</a></h3>
+  <p class="excerpt">Step into the realm of graph-based machine learning and see how DeepWalk revolutionizes the way we understand relationships in data.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/gat.md">Understanding Graph Attention Networks (GAT)</a></h3>
+  <p class="excerpt">Explore the world of Graph Attention Networks, where attention mechanisms meet graph theory to create smarter, more accurate models.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/gcn.md">A Review : Graph Convolutional Networks (GCN)</a></h3>
+  <p class="excerpt">Uncover the power of Graph Convolutional Networks and their ability to learn from complex, structured data like never before.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/godnet.md">GodNet: A Neural Network Which Can Predict Your Future?</a></h3>
+  <p class="excerpt">Is this the next breakthrough or just a glimpse into AI’s potential to predict the unpredictable? GodNet—more than just hype.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/graph_sage.md">Graph SAGE(SAmple and aggreGatE) : Inductive Learning on Graphs</a></h3>
+  <p class="excerpt">Discover how Graph SAGE is transforming inductive learning and enabling scalable, dynamic learning on graphs.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/hugo.md">How To Setup Timer Hugo</a></h3>
+  <p class="excerpt">Struggling with your Hugo setup? Get the step-by-step guide for setting up Timer Hugo for a smoother experience.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/logistic.md">Logistic Regression. Simplified.</a></h3>
+  <p class="excerpt">Logistic Regression doesn’t have to be intimidating. Get a simple, clear breakdown of this powerful algorithm.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/loss_function_optimization.md">Loss Functions and Optimization Algorithms. Demystified.</a></h3>
+  <p class="excerpt">Ever wondered why loss functions matter? Unravel the mystery behind them and learn how optimization drives machine learning models.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/placement_experience.md">Placement Experience</a></h3>
+  <p class="excerpt">Curious about what it takes to crack data science placements? Here's a first-hand experience that reveals all the secrets!</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/regularization.md">Regularization. Clarified.</a></h3>
+  <p class="excerpt">Worried about overfitting? Learn how regularization techniques are the unsung heroes that make your models generalize better.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/roadmap.md">Roadmap To Data Science</a></h3>
+  <p class="excerpt">From novice to expert—this roadmap will guide you through the essentials of Data Science. Start your journey now!</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/style_transfer_cnn.md">Artistic Style Transfer with Convolutional Neural Network</a></h3>
+  <p class="excerpt">Ever wanted to turn your photos into art? Learn how to use CNNs for artistic style transfer and create masterpieces with AI.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/svd.md">Singular Value Decomposition. Elucidated.</a></h3>
+  <p class="excerpt">SVD might sound intimidating, but it’s actually one of the most useful techniques in data science. Let’s break it down and make it crystal clear.</p>
+</div>
+
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/word_embedding.md">Word Embedding</a></h3>
+  <p class="excerpt">Words are more than just words—discover how word embeddings turn text into numerical representations for smarter machine learning models.</p>
+</div>
+
   </div>
 
   <div class="categories">
