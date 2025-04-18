@@ -315,6 +315,9 @@ collections:
   members:
     output: true
     permalink: /members/:name/
+  blogs:
+    output: true
+    permalink: /blogs/:title/
     
 # Defaults
 defaults:
