@@ -21,11 +21,13 @@ layout: splash
     color: #333;
     font-weight: bold;
   }
-
   .intro-text {
     font-size: 18px;
     color: #555;
-    text-align: center;
+    text-align: center; /* Text aligned to the center */
+    margin: 0 auto; /* Center the block element */
+    width: 80%; /* Limit the width for better readability */
+    max-width: 800px; /* Optional: limit max width */
     margin-bottom: 40px;
     line-height: 1.6;
   }
