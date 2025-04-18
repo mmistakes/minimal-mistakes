@@ -108,6 +108,37 @@ permalink: /events/
 }
 </style>
 
+
+
+<!-- External Hackathons Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">External Hackathons</h2>
+<div class="event-grid">
+  <!-- Add external hackathon cards here -->
+    <!-- Event 1: Competitions and Hackathon -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/hackathons.png" alt="Competitions and Hackathons">
+    <h3>Competitions and Hackathon</h3>
+    <p>Annual hackathons and tech competitions held at IITR, offering a platform for students to innovate and collaborate.</p>
+    <div class="event-links">
+      <a href="https://www.instagram.com/p/C1chUrJP6-P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+    </div>
+  </div>
+
+  <!-- Event 2: Inter IIT Tech Meet 11, 12, 13 -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/interiit.png" alt="Inter IIT Tech Meet">
+    <h3>Inter IIT Tech Meet 11, 12, 13</h3>
+    <p>Inter IIT Technical Meets bringing together the brightest minds from IITs to collaborate on technology projects.</p>
+    <div class="event-links">
+      <a href="https://example-link.com" target="_blank">Details</a>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
 <!-- Exclusive DSG Events Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">Exclusive DSG Events</h2>
 <div class="specific-event-grid">
@@ -235,29 +266,4 @@ permalink: /events/
 
 </div>
 
-<!-- External Hackathons Section -->
-<h2 style="margin-top: 2rem; color: #007acc;">External Hackathons</h2>
-<div class="event-grid">
-  <!-- Add external hackathon cards here -->
-    <!-- Event 1: Competitions and Hackathon -->
-  <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/hackathons.png" alt="Competitions and Hackathons">
-    <h3>Competitions and Hackathon</h3>
-    <p>Annual hackathons and tech competitions held at IITR, offering a platform for students to innovate and collaborate.</p>
-    <div class="event-links">
-      <a href="https://www.instagram.com/p/C1chUrJP6-P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
-    </div>
-  </div>
-
-  <!-- Event 2: Inter IIT Tech Meet 11, 12, 13 -->
-  <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/interiit.png" alt="Inter IIT Tech Meet">
-    <h3>Inter IIT Tech Meet 11, 12, 13</h3>
-    <p>Inter IIT Technical Meets bringing together the brightest minds from IITs to collaborate on technology projects.</p>
-    <div class="event-links">
-      <a href="https://example-link.com" target="_blank">Details</a>
-    </div>
-  </div>
-  
-</div>
 
