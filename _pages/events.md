@@ -137,7 +137,20 @@ permalink: /events/
 </div>
 
 
-
+<!-- Industry Collaborations Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Industry Collaborations</h2>
+<div class="event-grid">
+  <!-- Add industry collaboration event cards here -->
+    <!-- Event 6: WWT Talk (Workshop Talk) -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/wwt-talk.jpg" alt="WWT Talk">
+    <h3>WWT Talk</h3>
+    <p>Workshops and talks conducted by industry experts, aimed at sharing knowledge on the latest trends in technology.</p>
+    <div class="event-links">
+      <a href="https://www.linkedin.com/posts/dsg-iitr_we-are-delighted-to-share-that-the-data-science-activity-7228720941470470144-qL41?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEw1IwABLy-Q1qawlBnaKH-pRr6c3hPiuno" target="_blank">Details</a>
+    </div>
+  </div>
+</div>
 
 <!-- Exclusive DSG Events Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">Exclusive DSG Events</h2>
@@ -212,20 +225,7 @@ permalink: /events/
 
 </div>
 
-<!-- Industry Collaborations Section -->
-<h2 style="margin-top: 2rem; color: #007acc;">Industry Collaborations</h2>
-<div class="event-grid">
-  <!-- Add industry collaboration event cards here -->
-    <!-- Event 6: WWT Talk (Workshop Talk) -->
-  <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/wwt-talk.jpg" alt="WWT Talk">
-    <h3>WWT Talk</h3>
-    <p>Workshops and talks conducted by industry experts, aimed at sharing knowledge on the latest trends in technology.</p>
-    <div class="event-links">
-      <a href="https://www.linkedin.com/posts/dsg-iitr_we-are-delighted-to-share-that-the-data-science-activity-7228720941470470144-qL41?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEw1IwABLy-Q1qawlBnaKH-pRr6c3hPiuno" target="_blank">Details</a>
-    </div>
-  </div>
-</div>
+
 
 <!-- Internal IITR Events Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">Internal IITR Collaborations</h2>
