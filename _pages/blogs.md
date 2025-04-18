@@ -1,7 +1,7 @@
 ---
 title: "Blogs"
 permalink: /blogs/
-layout: single
+layout: splash
 ---
 
 <!-- Include custom CSS -->
@@ -148,6 +148,11 @@ layout: single
 <!-- Page Content -->
 <div class="blogs-page">
   <div class="blogs-header"></div>
+
+  <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
+
+  <p class="intro-text">Here, you will find articles, tutorials, and insights on various topics related to Data Science, Machine Learning, Artificial Intelligence, Deep Learning, and much more. Stay tuned for updates and insightful posts from our talented team!</p>
+  
   <div class="blog-card">
   <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf1.md">Baby steps with Tensorflow #1</a></h3>
 </div>
