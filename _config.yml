@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Yu's Academic Page"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Metaphysics, or quit physics." # site tagline that appears below site title in masthead
 name                     : "Hongfei Yu"
 description              : "Personal homepage of Yu, undergraduate student in physics."
 url                      : "https://phiyu.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
