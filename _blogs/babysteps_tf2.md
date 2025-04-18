@@ -2,6 +2,8 @@
 
 *Saturday, Jun 17, 2017 | Tags: Deep Learning, NLP*
 
+<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" width="200" height="200" alt="cnntf">
+
 ---
 
 In this blog we will understand how to use Tensoflow for Linear and Logistic Regression. I hope you have read 1st blog of this series, if not please give it a read.
