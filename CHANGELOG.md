@@ -14,6 +14,7 @@
 - Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
 - Add provider and comments info to `single.html` layout for non-production. (#5068)
 - Tweak contrast skin $primary-color to adhere to WCAG guidelines. (#5126)
+- Update social share buttons to reflect Twitter rebranding to X (#5210)
 
 ### Bug Fixes
 
