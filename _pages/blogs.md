@@ -13,17 +13,6 @@ layout: single
     padding: 40px 20px;
   }
 
-  /* Header image style */
-  .blogs-header {
-    width: 100%;
-    height: 300px;
-    background-image: url("{{ site.baseurl }}/assets/images/blogs/blog-header.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    margin-bottom: 40px;
-  }
-
   /* Title and intro text */
   .blogs-title {
     font-size: 36px;
@@ -85,6 +74,7 @@ layout: single
     font-size: 16px;
     color: #777;
     line-height: 1.5;
+    margin-top: 10px;
   }
 
   /* Categories section */
@@ -133,70 +123,71 @@ layout: single
   .contribute a:hover {
     text-decoration: underline;
   }
-</style>
 
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .blog-card {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .blog-card {
+      width: 100%;
+    }
+
+    .blogs-title {
+      font-size: 28px;
+    }
+
+    .intro-text {
+      font-size: 16px;
+    }
+  }
+</style>
 <!-- Page Content -->
 <div class="blogs-page">
   <div class="blogs-header"></div>
-
-  <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
-  
-  <p class="intro-text">Here, you will find articles, tutorials, and insights on various topics related to Data Science, Machine Learning, Artificial Intelligence, Deep Learning, and much more. Stay tuned for updates and insightful posts from our talented team!</p>
-
-  <h2 class="section-title">Latest Blogs</h2>
-  <div class="blog-grid">
-
-   <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog1">Understanding the Basics of Machine Learning</a></h3>
-      <p class="excerpt">A beginner's guide to machine learning concepts and applications. Learn the fundamentals and start your journey in AI and ML!</p>
-    </div>
-
   <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog2">Deep Dive into Neural Networks</a></h3>
-      <p class="excerpt">An in-depth exploration of neural networks, their structure, and how they are used to solve complex problems in AI and Deep Learning.</p>
-    </div>
+  <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf1.md">Baby steps with Tensorflow #1</a></h3>
+</div>
 
-   <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog3">Reinforcement Learning: Concepts and Applications</a></h3>
-      <p class="excerpt">An introduction to reinforcement learning, its key components, and how it is revolutionizing industries like robotics, gaming, and healthcare.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf2.md">Baby steps with Tensorflow #2</a></h3>
+</div>
 
-  <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog4">Natural Language Processing with Python</a></h3>
-      <p class="excerpt">Learn how to work with text data using Python libraries such as NLTK, spaCy, and transformers for NLP tasks like sentiment analysis and text generation.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/boosting.md">Boosting</a></h3>
+</div>
 
-  <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog5">Data Preprocessing for Machine Learning</a></h3>
-      <p class="excerpt">A crucial step in any data science project: cleaning and preparing your data for machine learning models. Discover the techniques and tools that help.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/chebnet.md">ChebNet: CNN on Graphs with Fast Localized Spectral Filtering</a></h3>
+</div>
 
-  <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog6">Exploring Transfer Learning in Deep Learning</a></h3>
-      <p class="excerpt">How transfer learning can help you train models faster and more efficiently by leveraging pre-trained networks. Great for beginners and advanced practitioners alike!</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/clustering.md">Clustering Described</a></h3>
+</div>
 
-  <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog7">An Introduction to Time Series Forecasting</a></h3>
-      <p class="excerpt">Time series forecasting plays a crucial role in predicting future values based on historical data. This blog covers the basics and applications of time series analysis.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/cnn_with_tf.md">Convolutional Neural Network with TensorFlow Implementation</a></h3>
+</div>
 
-   <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog8">Building a Chatbot with Deep Learning</a></h3>
-      <p class="excerpt">Step-by-step tutorial on how to build a chatbot using deep learning techniques. Learn about sequence models and natural language understanding.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/data_science_congress.md">Data Science Congress. Something legendary.</a></h3>
+</div>
 
-  <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog9">Introduction to Computer Vision with OpenCV</a></h3>
-      <p class="excerpt">A guide to computer vision using OpenCV. Learn how to process images and videos to extract meaningful information and build vision applications.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/decision_trees.md">Decision Trees. Decoded.</a></h3>
+</div>
 
-  <div class="blog-card">
-      <h3><a href="{{ site.baseurl }}/blogs/blog10">Understanding Bias-Variance Tradeoff in Machine Learning</a></h3>
-      <p class="excerpt">A critical concept in model evaluation. Learn the difference between bias and variance and how to strike the right balance for better model performance.</p>
-    </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/deepwalk.md">Understanding Deepwalk</a></h3>
+</div>
 
-  </div>
+<div class="blog-card">
+  <h3><a href="{{ site.baseurl }}/_blogs/gat.md">Understanding Graph Attention Networks (GAT)</a></h3>
+</div>
+
 
   <div class="categories">
     <h2>Categories</h2>
