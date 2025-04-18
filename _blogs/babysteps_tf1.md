@@ -3,9 +3,15 @@
 *Thursday, Jun 1, 2017*  
 *Tags: Deep Learning, NLP*
 
+
+<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" width="200" height="200" alt="babysteps">
+
 > Deep Learning is a Mandate for Humans, Not Just Machines — Andrew Ng
 
 Yes, Deep learning is a next big thing. Yes, AI is changing the world. Yes, It will take over your jobs. All fuss aside, you need to sit down and write a code on your own to see things working. Practical knowledge is as much important as Theoretical knowledge.
+
+
+<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf12.jpg" width="200" height="200" alt="babysteps">
 
 **Fact:** I’m not a coder.
 
@@ -98,7 +104,11 @@ What are the main steps of any machine learning algorithm in Tensorflow?
 
 Here is vary simple example for multiply operation on two constants.
 
+<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf13.jpg" width="200" height="200" alt="babysteps">
+
 And here is other simple computation graph.
+
+<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf14.jpg" width="200" height="200" alt="babysteps">
 
 ---
 
