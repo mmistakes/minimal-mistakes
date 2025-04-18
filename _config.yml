@@ -119,12 +119,15 @@ author:
   location         : "Hefei, Anhui, China"
   email            : yuhongfei@mail.ustc.edu.cn
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yuhongfei@mail.ustc.edu.cn"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:yuhongfei@mail.ustc.edu.cn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/phiyu"
+    - label: "Zhihu"
+      icon: "fas fa-fw fa-globe"
+      url: "https://www.zhihu.com/people/ye-li-qing-feng-89"
     - label: "Homepage"
       icon: "fas fa-fw fa-link"
       url: "https://phiyu.github.io"
@@ -301,3 +304,6 @@ defaults:
       comments: # true
       share: true
       related: true
+    category_archive:
+      type: liquid
+      path: /categories/

@@ -1,11 +1,11 @@
 ---
 title: "Hello World"
 date: 2025-04-18
-categories:
-  - Blog
-tags:
-  - personal
-math: true   # 启用 MathJax 渲染
+categories: 
+  - blog
+tags: 
+  - test
+math: true
 ---
 
 欢迎来到我的博客！
