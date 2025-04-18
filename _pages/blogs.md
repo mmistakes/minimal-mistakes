@@ -44,10 +44,13 @@ layout: splash
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    width: 30%;
+    width: 22%; /* Adjust width to make them fill the space */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .blog-card:hover {
@@ -75,6 +78,7 @@ layout: splash
     color: #777;
     line-height: 1.5;
     margin-top: 10px;
+    flex-grow: 1;
   }
 
   /* Categories section */
@@ -145,54 +149,58 @@ layout: splash
     }
   }
 </style>
+
 <!-- Page Content -->
 <div class="blogs-page">
-  <div class="blogs-header"></div>
-
   <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
 
   <p class="intro-text">Here, you will find articles, tutorials, and insights on various topics related to Data Science, Machine Learning, Artificial Intelligence, Deep Learning, and much more. Stay tuned for updates and insightful posts from our talented team!</p>
   
+  <div class="blog-grid">
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf1.md">Baby steps with Tensorflow #1</a></h3>
+      <p class="excerpt">A beginner's guide to understanding TensorFlow and its application in deep learning.</p>
+    </div>
+
+   <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf2.md">Baby steps with Tensorflow #2</a></h3>
+      <p class="excerpt">Continuing the exploration of TensorFlow, we dive deeper into its functionalities and practical applications.</p>
+    </div>
+
   <div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf1.md">Baby steps with Tensorflow #1</a></h3>
-</div>
+      <h3><a href="{{ site.baseurl }}/_blogs/boosting.md">Boosting</a></h3>
+      <p class="excerpt">An introduction to boosting algorithms and how they improve model performance.</p>
+    </div>
 
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/babysteps_tf2.md">Baby steps with Tensorflow #2</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/boosting.md">Boosting</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/chebnet.md">ChebNet: CNN on Graphs with Fast Localized Spectral Filtering</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/clustering.md">Clustering Described</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/cnn_with_tf.md">Convolutional Neural Network with TensorFlow Implementation</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/data_science_congress.md">Data Science Congress. Something legendary.</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/decision_trees.md">Decision Trees. Decoded.</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/deepwalk.md">Understanding Deepwalk</a></h3>
-</div>
-
-<div class="blog-card">
-  <h3><a href="{{ site.baseurl }}/_blogs/gat.md">Understanding Graph Attention Networks (GAT)</a></h3>
-</div>
-
+  <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/chebnet.md">ChebNet: CNN on Graphs with Fast Localized Spectral Filtering</a></h3>
+      <p class="excerpt">Exploring ChebNet, a new approach to graph neural networks using fast localized spectral filtering.</p>
+    </div>
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/clustering.md">Clustering Described</a></h3>
+      <p class="excerpt">Learn about clustering techniques and how they're used to group similar data points in machine learning.</p>
+    </div>
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/cnn_with_tf.md">Convolutional Neural Network with TensorFlow Implementation</a></h3>
+      <p class="excerpt">Step-by-step guide on how to implement CNNs using TensorFlow.</p>
+    </div>
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/data_science_congress.md">Data Science Congress. Something legendary.</a></h3>
+      <p class="excerpt">A recap of the latest Data Science Congress and its impact on the industry.</p>
+    </div>
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/decision_trees.md">Decision Trees. Decoded.</a></h3>
+      <p class="excerpt">A comprehensive guide to decision trees and their role in machine learning.</p>
+    </div>
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/deepwalk.md">Understanding Deepwalk</a></h3>
+      <p class="excerpt">An overview of Deepwalk and its applications in graph-based machine learning tasks.</p>
+    </div>
+    <div class="blog-card">
+      <h3><a href="{{ site.baseurl }}/_blogs/gat.md">Understanding Graph Attention Networks (GAT)</a></h3>
+      <p class="excerpt">An introduction to Graph Attention Networks and their use in graph data analysis.</p>
+    </div>
+  </div>
 
   <div class="categories">
     <h2>Categories</h2>
