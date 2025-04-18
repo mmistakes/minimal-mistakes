@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Pädagogischer Austausch",
+    "title": "Pädagogischer Austausch",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZWI4ZHBiZ21tcnVwYXBxcmxtZjdmdDJrajAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-04-29T13:45:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-04-29T16:00:00+02:00"
+    },
+    "created": "2025-04-17T07:53:02.000Z",
+    "updated": "2025-04-17T07:53:02.544Z"
+  },
+  {
+    "image_path": null,
     "alt": "6b - Ausflug in die Bücherei",
     "title": "6b - Ausflug in die Bücherei",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2025-04-01T09:24:35.000Z",
     "updated": "2025-04-01T09:24:35.858Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzYxMDlvZTUzdjFlZWQ5czI0MjN0ZGpvYmwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-04T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-04T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:25:17.000Z",
-    "updated": "2025-04-01T09:25:17.843Z"
   }
 ]
