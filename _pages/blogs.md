@@ -161,7 +161,7 @@ layout: splash
 <div class="blogs-page">
   <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
 
-  <p class="intro-text">
+  <p>
     Dive into blogs and insights spanning Machine Learning, AI, Deep Learning, and Data Science.
     From beginner-friendly guides to deep technical explorations, discover content curated by the DSG. Stay tuned for updates and insightful posts from our talented team!
   </p>
