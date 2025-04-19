@@ -175,7 +175,7 @@ title: Home
 </style>
 <div class="intro-wrapper">
   <div class="announcement-box">
-    📢 Latest: Applications open for Spring '25 recruitment!
+    📢 Latest: Srishti Exhibition is live at SAC Ground Floor!
   </div>
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
