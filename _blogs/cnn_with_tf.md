@@ -1,3 +1,11 @@
+---
+title: ""
+layout: single
+permalink: /blogs/cnn_with_tf/
+---
+
+
+
 # Convolutional Neural Network with TensorFlow Implementation
 
 **Saturday, Jun 17, 2017**  
