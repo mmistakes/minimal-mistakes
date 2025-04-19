@@ -11,7 +11,7 @@ layout: single
 <img src="{{ site.baseurl }}/assets/images/members/y23/sukrit.JPG" width="200" height="200" alt="Sukrit Jindal">
 
 
-*Core Member, DSG IIT Roorkee*
+*Joint Secretary, DSG IIT Roorkee*
 
 ---
 
@@ -36,6 +36,8 @@ layout: single
   Trained battle bots using reinforcement learning algorithms like DDQN for an online Pokémon battle simulator.
 - **Steganography with GNNs**  
   Proposed an improved universal deep hiding technique using graph neural networks over traditional CNNs.
+- **Web-Based Saliency Demos**
+  Explore the interpretability offered by various saliency-map based models like IG, BlurIG and VG and their extensions (IDGI and SmoothGrad).
 
 ---
 
