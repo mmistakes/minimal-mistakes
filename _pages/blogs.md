@@ -4,71 +4,77 @@ permalink: /blogs/
 layout: splash
 ---
 
-<!-- Include custom CSS -->
+<!-- Custom CSS for Blog Page -->
 <style>
-  /* Main page styling */
   .blogs-page {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #f9f9f9;
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 
-  /* Title and intro text */
   .blogs-title {
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
-    font-weight: bold;
+    color: #222;
+    font-weight: 700;
   }
+
   .intro-text {
     font-size: 18px;
     color: #555;
-    text-align: center; /* Text aligned to the center */
-    margin: 0 auto; /* Center the block element */
-    width: 80%; /* Limit the width for better readability */
-    max-width: 800px; /* Optional: limit max width */
-    margin-bottom: 40px;
-    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto 50px;
+    max-width: 750px;
+    line-height: 1.7;
   }
 
-  /* Blog Grid styling */
   .blog-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
-    margin-top: 40px;
   }
 
-  /* Blog Card styling */
   .blog-card {
-    background-color: white;
-    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 270px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-    width: 22%; /* Adjust width to make them fill the space */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .blog-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .blog-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+  }
+
+  .blog-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   .blog-card h3 {
-    font-size: 22px;
-    color: #333;
-    font-weight: bold;
-    margin: 0;
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #222;
   }
 
   .blog-card h3 a {
+    color: inherit;
     text-decoration: none;
-    color: #333;
   }
 
   .blog-card h3 a:hover {
@@ -76,87 +82,34 @@ layout: splash
   }
 
   .excerpt {
-    font-size: 16px;
-    color: #777;
+    font-size: 15px;
+    color: #666;
     line-height: 1.5;
-    margin-top: 10px;
     flex-grow: 1;
   }
 
-  /* Categories section */
-  .categories {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .categories ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-  }
-
-  .categories li {
-    padding: 8px 15px;
-    background-color: #f1f1f1;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-  }
-
-  .categories li:hover {
-    background-color: #0073e6;
-    color: white;
-  }
-
-  /* Contribute section */
-  .contribute {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-  }
-
-  .contribute a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-
-  .contribute a:hover {
-    text-decoration: underline;
-  }
-
-  /* Mobile responsiveness */
   @media (max-width: 768px) {
+    .blog-grid {
+      justify-content: center;
+    }
+
     .blog-card {
-      width: 48%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .blog-card {
-      width: 100%;
-    }
-
-    .blogs-title {
-      font-size: 28px;
-    }
-
-    .intro-text {
-      font-size: 16px;
+      width: 90%;
+      max-width: 400px;
     }
   }
 </style>
+<!-- Page Content -->
 
 <!-- Page Content -->
 <div class="blogs-page">
   <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
 
-  <p class="intro-text">Here, you will find articles, tutorials, and insights on various topics related to Data Science, Machine Learning, Artificial Intelligence, Deep Learning, and much more. Stay tuned for updates and insightful posts from our talented team!</p>
+  <p class="intro-text">
+    Dive into blogs and insights spanning Machine Learning, AI, Deep Learning, and Data Science.
+    From beginner-friendly guides to deep technical explorations, discover content curated by the DSG. Stay tuned for updates and insightful posts from our talented team!
+  </p>
+
   
   <div class="blog-grid">
     <div class="blog-card">
