@@ -5,76 +5,72 @@ layout: splash
 ---
 
 <!-- Custom CSS for Blog Page -->
+
+<!-- Include custom CSS -->
 <style>
+  /* Main page styling */
   .blogs-page {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
+  /* Title and intro text */
   .blogs-title {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
-    color: #222;
-    font-weight: 700;
+    color: #333;
+    font-weight: bold;
   }
-
   .intro-text {
     font-size: 18px;
     color: #555;
-    text-align: center;
-    margin: 0 auto 50px;
-    max-width: 750px;
-    line-height: 1.7;
+    text-align: center; /* Text aligned to the center */
+    margin: 0 auto; /* Center the block element */
+    width: 80%; /* Limit the width for better readability */
+    max-width: 800px; /* Optional: limit max width */
+    margin-bottom: 40px;
+    line-height: 1.6;
   }
 
+  /* Blog Grid styling */
   .blog-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
+    margin-top: 40px;
   }
 
+  /* Blog Card styling */
   .blog-card {
-    background-color: #fff;
-    border-radius: 12px;
-    width: 270px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blog-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-
-  .blog-image {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    background-color: #e0e0e0;
-  }
-
-  .blog-card-content {
+    width: 22%; /* Adjust width to make them fill the space */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-10px);
   }
 
   .blog-card h3 {
-    font-size: 20px;
-    margin: 0 0 10px;
-    color: #222;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
   }
 
   .blog-card h3 a {
-    color: inherit;
     text-decoration: none;
+    color: #333;
   }
 
   .blog-card h3 a:hover {
@@ -82,23 +78,83 @@ layout: splash
   }
 
   .excerpt {
-    font-size: 15px;
-    color: #666;
+    font-size: 16px;
+    color: #777;
     line-height: 1.5;
+    margin-top: 10px;
     flex-grow: 1;
   }
 
+  /* Categories section */
+  .categories {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .categories ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .categories li {
+    padding: 8px 15px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .categories li:hover {
+    background-color: #0073e6;
+    color: white;
+  }
+
+  /* Contribute section */
+  .contribute {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .contribute a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+
+  .contribute a:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobile responsiveness */
   @media (max-width: 768px) {
-    .blog-grid {
-      justify-content: center;
+    .blog-card {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .blog-card {
+      width: 100%;
     }
 
-    .blog-card {
-      width: 90%;
-      max-width: 400px;
+    .blogs-title {
+      font-size: 28px;
+    }
+
+    .intro-text {
+      font-size: 16px;
+      text-align: center;
     }
   }
 </style>
+
 <!-- Page Content -->
 
 <!-- Page Content -->
