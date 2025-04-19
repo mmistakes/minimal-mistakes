@@ -1,3 +1,10 @@
+---
+title: ""
+layout: single
+permalink: /blogs/placement_experience/
+---
+
+
 # Placement Experience
 
 **Wednesday, May 24, 2017**  
