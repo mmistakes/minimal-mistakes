@@ -1,3 +1,10 @@
+---
+title: ""
+layout: single
+permalink: /blogs/loss_function_optimization/
+---
+
+
 # Loss Functions and Optimization Algorithms. Demystified.
 
 *Friday, Sep 29, 2017 | Tags: Loss Functions, Deep Learning*
