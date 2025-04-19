@@ -201,13 +201,14 @@ $text-alignments: left, right, start, end, center, justify;
   @each $color, $icons in (
     $behance-color: ".fa-behance, .fa-behance-square",
     $bitbucket-color: ".fa-bitbucket",
+    $bluesky-color: ".fa-bluesky, .fa-square-bluesky",
     $dribbble-color: ".fa-dribbble, .fa-dribbble-square",
     $facebook-color: ".fa-facebook, .fa-facebook-square, .fa-facebook-f",
     $flickr-color: ".fa-flickr",
     $foursquare-color: ".fa-foursquare",
     $github-color: ".fa-github, .fa-github-alt, .fa-github-square",
     $gitlab-color: ".fa-gitlab",
-    $instagram-color: ".fa-instagram",
+    $instagram-color: ".fa-instagram, .fa-square-instagram",
     $keybase-color: ".fa-keybase",
     $lastfm-color: ".fa-lastfm, .fa-lastfm-square",
     $linkedin-color: ".fa-linkedin, .fa-linkedin-in",
@@ -223,6 +224,7 @@ $text-alignments: left, right, start, end, center, justify;
     $vine-color: ".fa-vine",
     $xing-color: ".fa-xing, .fa-xing-square",
     $youtube-color: ".fa-youtube",
+    $black-color: ".fa-x-twitter, .fa-square-x-twitter, .fa-threads, .fa-square-treads, .fa-tiktok",    
   ) {
     #{$icons} {
       color: $color;
