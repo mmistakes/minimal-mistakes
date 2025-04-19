@@ -57,6 +57,13 @@ layout: splash
     transform: translateY(-10px);
   }
 
+  .blog-img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* This will crop the image to fit the container without stretching */
+  margin-bottom: 15px; /* Add space below the image */
+}
+
   .blog-card h3 {
     font-size: 22px;
     color: #333;
