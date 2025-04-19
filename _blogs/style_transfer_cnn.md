@@ -1,3 +1,11 @@
+
+---
+title: ""
+layout: single
+permalink: /blogs/style_transfer_cnn/
+---
+
+
 # Artistic Style Transfer with Convolutional Neural Network
 
 *Monday, Sep 4, 2017 | Tags: Deep Learning, Computer Vision*
