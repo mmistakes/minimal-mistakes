@@ -1,3 +1,11 @@
+---
+title: "Baby steps with Tensorflow #2"
+layout: single
+permalink: /blogs/babysteps_tf2/
+---
+
+
+
 # Baby steps with Tensoflow #2
 
 *Saturday, Jun 17, 2017 | Tags: Deep Learning, NLP*
