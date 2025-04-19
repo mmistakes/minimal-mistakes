@@ -27,10 +27,6 @@ layout: splash
     font-size: 18px;
     color: #555;
     text-align: center; /* Text aligned to the center */
-    margin: 0 auto; /* Center the block element */
-    width: 80%; /* Limit the width for better readability */
-    max-width: 800px; /* Optional: limit max width */
-    margin-bottom: 40px;
     line-height: 1.6;
   }
 
@@ -161,7 +157,7 @@ layout: splash
 <div class="blogs-page">
   <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
 
-  <p>
+  <p class="intro-text">
     Dive into blogs and insights spanning Machine Learning, AI, Deep Learning, and Data Science.
     From beginner-friendly guides to deep technical explorations, discover content curated by the DSG. Stay tuned for updates and insightful posts from our talented team!
   </p>
