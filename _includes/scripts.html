@@ -15,6 +15,8 @@
       {% include_cached search/google-search-scripts.html %}
     {%- when "algolia" -%}
       {% include_cached search/algolia-search-scripts.html %}
+    {%- when "pagefind" -%}
+      {% include_cached search/pagefind-search-scripts.html %}
   {%- endcase -%}
 {% endif %}
 
