@@ -1,3 +1,10 @@
+---
+title: "Baby steps with Tensorflow #1"
+layout: single
+permalink: /blogs/babysteps_tf1/
+---
+
+
 # Baby steps with Tensorflow #1
 
 *Thursday, Jun 1, 2017*  
