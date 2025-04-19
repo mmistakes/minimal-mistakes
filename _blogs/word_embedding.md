@@ -1,3 +1,9 @@
+---
+title: ""
+layout: single
+permalink: /blogs/word_embedding/
+---
+
 # Word Embedding
 
 *Sunday, Oct 15, 2017 | Tags: Deep Learning, NLP*
