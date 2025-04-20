@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Kolmogorov Theory References (with Abstract Summaries)"
-permalink: /kt-references/
+permalink: /kt/
 ---
 
 # Kolmogorov Theory References
