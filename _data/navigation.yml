@@ -1,11 +1,13 @@
 # main links
 main:
+  - title: "Kolmogorov Theory"
+    url: /kt/
+  - title: "Comp. Neuroscience"
+    url: /lanmm/  
   - title: "tES"
     url: /tES/
-  - title: "KT"
-    url: /kt/
-  - title: "Comp. Neurosc."
-    url: /lanmm/
+
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
