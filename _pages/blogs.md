@@ -3,9 +3,6 @@ title: "Blogs"
 permalink: /blogs/
 layout: splash
 ---
-
-<!-- Custom CSS for Blog Page -->
-
 <!-- Include custom CSS -->
 <style>
   /* Main page styling */
@@ -23,6 +20,7 @@ layout: splash
     color: #333;
     font-weight: bold;
   }
+
   .intro-text {
     font-size: 18px;
     color: #555;
@@ -30,56 +28,56 @@ layout: splash
     line-height: 1.6;
   }
 
-  /* Blog Grid styling */
-  .blog-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+  /* List layout styling for blog items */
+  .blog-list {
     margin-top: 40px;
   }
 
-  /* Blog Card styling */
-  .blog-card {
+  /* Blog Item styling */
+  .blog-item {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    width: 22%; /* Adjust width to make them fill the space */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 30px; /* Space between each blog item */
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    transition: all 0.3s ease;
   }
 
-  .blog-card:hover {
-    transform: translateY(-10px);
+  .blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
 
+  /* Image styling for blog item */
   .blog-img {
-  width: 100%;
-  height: 200px; /* Fixed height */
-  object-fit: cover; /* This will crop the image to fit the container without stretching */
-  margin-bottom: 15px; /* Add space below the image */
-}
+    width: 100%;
+    height: 250px; /* Larger height for better visibility */
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
 
-  .blog-card h3 {
+  /* Title styling */
+  .blog-item h3 {
     font-size: 22px;
     color: #333;
     font-weight: bold;
     margin: 0;
   }
 
-  .blog-card h3 a {
+  .blog-item h3 a {
     text-decoration: none;
     color: #333;
   }
 
-  .blog-card h3 a:hover {
+  .blog-item h3 a:hover {
     color: #0073e6;
   }
 
+  /* Excerpt styling */
   .excerpt {
     font-size: 16px;
     color: #777;
@@ -137,16 +135,12 @@ layout: splash
 
   /* Mobile responsiveness */
   @media (max-width: 768px) {
-    .blog-card {
-      width: 48%;
+    .blog-item {
+      width: 100%;
     }
   }
 
   @media (max-width: 480px) {
-    .blog-card {
-      width: 100%;
-    }
-
     .blogs-title {
       font-size: 28px;
     }
@@ -157,7 +151,6 @@ layout: splash
     }
   }
 </style>
-
 <!-- Page Content -->
 
 <!-- Page Content -->
