@@ -4,12 +4,12 @@ title: "Welcome"
 author_profile: true
 ---
 
-I am a theoretical physicist and a researcher in computational neuroscience and the neuroscience of consciousness.
-I am deeply interested in the algorithmic  perspective on human experience and its implications for other lifeforms and AI.
-My work involves developing advanced models for understanding brain dynamics, consciousness, and related clinical applications, especially regarding brain stimulation.
+I am a theoretical physicist and computational neuroscientist researching consciousness through the lens of algorithmic information theory. My work involves creating advanced biophysical models to understand brain dynamics and structured experience, and translating these insights into clinical applications—particularly in the field of noninvasive brain stimulation, where computational neuropsychiatry and computational neurophenomenology will play a key role. I’m especially interested in how these models illuminate human experience and their broader implications for artificial intelligence and other life forms.
 
 Feel free to explore:
 - [Kolmogorov theory / algorithmic neuroscience (KT)](/kt/)
 - [Computational neuroscience / neurotwins / LaNMM related papers](/lanmm/)
 - [tES (brain stimulation)](/tES/)
 - [GitHub Profile](https://github.com/giulioruffini)
+- [Substack](https://platoniapirate.substack.com)
+
