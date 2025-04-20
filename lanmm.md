@@ -4,8 +4,6 @@ title: "Laminar Neural Mass Model (LaNMM)"
 permalink: /lanmm/
 ---
 
-# Laminar Neural Mass Model (LaNMM)
-
 ## Introduction
 
 The Laminar Neural Mass Model (LaNMM) is a computational framework developed to link circuit-level mechanisms to EEG/MEG biomarkers across various brain states, encompassing healthy function, disease, and altered consciousness.
