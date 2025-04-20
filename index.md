@@ -4,9 +4,7 @@ title: "Welcome"
 author_profile: true
 ---
 
-# Welcome to Giulio Ruffini's Lab!
-
-I’m Giulio Ruffini, a theoretical physicist and a researcher in computational neuroscience and the neuroscience of consciousness.
+I am a theoretical physicist and a researcher in computational neuroscience and the neuroscience of consciousness.
 I am deeply interested in the algorithmic  perspective on human experience and its implications for other lifeforms and AI.
 My work involves developing advanced models for understanding brain dynamics, consciousness, and related clinical applications, especially regarding brain stimulation.
 
