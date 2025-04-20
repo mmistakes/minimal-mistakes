@@ -121,22 +121,22 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:giulio.ruffini@mac.com"
+      url: "mailto:giulio.ruffini@mac.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-       url: "https://twitter.com/ruffini"
+      url: "https://twitter.com/ruffini"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/giulioruffini"
+      url: "https://github.com/giulioruffini"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://www.instagram.com/k.and.ai"
+      url: "https://www.instagram.com/k.and.ai"
 
 # Site Footer
 footer:
