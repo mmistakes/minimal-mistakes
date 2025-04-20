@@ -1,7 +1,7 @@
 ---
 title: "Blogs"
 permalink: /blogs/
-layout: posts
+layout: splash
 ---
 
 <!-- Custom CSS for Blog Page -->
