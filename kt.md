@@ -4,7 +4,6 @@ title: "Kolmogorov Theory References (with Abstract Summaries)"
 permalink: /kt/
 ---
 
-# Kolmogorov Theory References
 
 ## 2007 – [Information, complexity, brains, and reality (Kolmogorov Manifesto)](https://arxiv.org/abs/0704.1147) (arXiv)  
 **Abstract summary:** Proposes that cognition can be understood as the search for programs approaching the Solomonoff–Kolmogorov–Chaitin complexity limit.  Introduces “reality” as a mental model constructed by compressing and interpreting coherent sensory inputs.
