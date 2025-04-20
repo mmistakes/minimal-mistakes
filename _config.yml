@@ -115,8 +115,7 @@ analytics:
 author:
   name             : "Nikkie Badsar"
   avatar           : "/assets/images/Narges_Headshot.jpg"
-  bio              : "English teacher | Classroom-grounded | Thinking through literature, culture & pedagogy | Learning across borders."
-  location         : "Belgium"
+  bio              : ""
   email            : "nikkie.badsar@gmail.com"
   links:
     - label: "Facebook"
@@ -125,6 +124,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/nikkie.badsar/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/nikkie-badsar/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@NikkieBadsar"
 
 # Site Footer
 footer:
@@ -135,6 +140,12 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/nikkie.badsar/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/nikkie-badsar/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@NikkieBadsar"
 
 
 # Reading Files
