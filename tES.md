@@ -1,4 +1,4 @@
- ---
+---
 layout: single
 title: "All Publications"
 permalink: /all-publications/
