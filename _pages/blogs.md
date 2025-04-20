@@ -3,13 +3,14 @@ title: "Blogs"
 permalink: /blogs/
 layout: splash
 ---
-<!-- Include custom CSS -->
 <style>
   /* Main page styling */
   .blogs-page {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   /* Title and intro text */
@@ -19,32 +20,70 @@ layout: splash
     margin-bottom: 20px;
     color: #333;
     font-weight: bold;
+    width: 100%;
   }
 
   .intro-text {
     font-size: 18px;
     color: #555;
-    text-align: center; /* Text aligned to the center */
+    text-align: center;
     line-height: 1.6;
+    margin-bottom: 30px;
   }
 
-  /* List layout styling for blog items */
+  /* Sidebar Styling */
+  .sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+  }
+
+  .sidebar h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .sidebar ul li a:hover {
+    color: #0073e6;
+  }
+
+  /* Blog List container */
   .blog-list {
-    margin-top: 40px;
+    width: 70%; /* Take up the remaining space */
   }
 
-  /* Blog Item styling */
+  /* Blog Item Styling */
   .blog-item {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin-bottom: 30px; /* Space between each blog item */
+    margin-bottom: 30px;
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
   .blog-item:hover {
@@ -52,15 +91,16 @@ layout: splash
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
 
-  /* Image styling for blog item */
+  /* Image styling */
   .blog-img {
-    width: 100%;
-    height: 250px; /* Larger height for better visibility */
+    width: 150px; /* Small image size */
+    height: 100px; /* Fixed height */
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    border-radius: 8px;
   }
 
-  /* Title styling */
+  /* Title Styling */
   .blog-item h3 {
     font-size: 22px;
     color: #333;
@@ -77,7 +117,7 @@ layout: splash
     color: #0073e6;
   }
 
-  /* Excerpt styling */
+  /* Excerpt Styling */
   .excerpt {
     font-size: 16px;
     color: #777;
@@ -86,7 +126,7 @@ layout: splash
     flex-grow: 1;
   }
 
-  /* Categories section */
+  /* Categories Section */
   .categories {
     text-align: center;
     margin-top: 60px;
@@ -115,7 +155,7 @@ layout: splash
     color: white;
   }
 
-  /* Contribute section */
+  /* Contribute Section */
   .contribute {
     text-align: center;
     margin-top: 60px;
@@ -133,10 +173,25 @@ layout: splash
     text-decoration: underline;
   }
 
+  /* Responsive Design: Two blogs per row */
+  .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .blog-item {
+    width: 48%; /* Two items per row */
+  }
+
   /* Mobile responsiveness */
   @media (max-width: 768px) {
+    .sidebar {
+      width: 25%;
+    }
+
     .blog-item {
-      width: 100%;
+      width: 100%; /* Stack the blogs vertically on smaller screens */
     }
   }
 
@@ -148,6 +203,11 @@ layout: splash
     .intro-text {
       font-size: 16px;
       text-align: center;
+    }
+
+    .sidebar {
+      width: 100%; /* Sidebar takes full width on small screens */
+      margin-top: 30px;
     }
   }
 </style>
