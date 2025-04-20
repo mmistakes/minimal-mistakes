@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "All Publications"
-permalink: /all-publications/
+title: "Brain stimulation publications (tES) and more..."
+permalink: /tES/
 ---
 
 # All Publications
