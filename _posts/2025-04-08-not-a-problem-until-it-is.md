@@ -44,7 +44,5 @@ Travel didn’t give me all the answers. But it gave me perspective. And sometim
 
 </div>
 
-You can read the full article here:  
+You can also read the article here:  
 👉 [It’s not a problem until it is: What Finland taught me about teaching](https://medium.com/@nikkie.badsar/its-not-a-problem-until-it-is-what-finland-taught-me-about-teaching-9464dd5ad42f)
-
-_(This post originally appeared on Medium.)_

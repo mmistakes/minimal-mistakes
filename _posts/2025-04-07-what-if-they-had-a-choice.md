@@ -48,8 +48,5 @@ Make sure the answer is yes.
 
 </div>
 
-  You can read the full article here:  
+You can also read the article here:  
 👉 [What If They Had a Choice?](https://medium.com/@nikkie.badsar/what-if-they-had-a-choice-bdf3bd342859)
-
-_(This post originally appeared on Medium.)_
-

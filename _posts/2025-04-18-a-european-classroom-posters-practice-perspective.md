@@ -73,7 +73,5 @@ But what really matters is learning to make things click for someone else. Thatâ
 
 </div>
 
-You can read the full article here:  
+You can also read the article here:  
 ðŸ‘‰ [A European Classroom: Posters, Practice, Perspective](https://medium.com/@nikkie.badsar/a-european-classroom-posters-practice-perspective-4a8539a8f0f6)
-
-_(This post originally appeared on Medium.)_
