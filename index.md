@@ -6,11 +6,12 @@ author_profile: true
 
 # Welcome to Giulio Ruffini's Lab!
 
-I’m Giulio Ruffini, a researcher in computational neuroscience and the neuroscience of consciousness. 
-My work involves developing advanced models for understanding brain dynamics, consciousness, and related clinical applications.
+I’m Giulio Ruffini, a theoretical physicist and a researcher in computational neuroscience and the neuroscience of consciousness.
+I am deeply interested in the algorithmic  perspective on human experience and its implications for other lifeforms and AI.
+My work involves developing advanced models for understanding brain dynamics, consciousness, and related clinical applications, especially regarding brain stimulation.
 
 Feel free to explore:
 - [Kolmogorov theory / algorithmic information theory (KT)](/kt/)
-- [Computational neuroscience / LaNMM related papers](/lanmm/)
+- [Computational neuroscience / neurotwins / LaNMM related papers](/lanmm/)
 - [tES (brain stimulation)](/tES/)
 - [GitHub Profile](https://github.com/giulioruffini)
