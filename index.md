@@ -13,3 +13,8 @@ Feel free to explore:
 - [GitHub Profile](https://github.com/giulioruffini)
 - [Substack](https://platoniapirate.substack.com)
 
+Other:
+- [Neuroelectrics](https://neuroelectrics.com)
+- [Starlab](https://starlab.es)
+- [Neurotwin EU project](https://neurotwin.eu)
+- [Galvani ERC Synergy project](https://galvani-lab.eu)
