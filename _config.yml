@@ -13,7 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-favicon                  : "/assets/images/Kfav.png"
+
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
@@ -230,9 +230,17 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+# ────────────────────────────────────────────────────────────────────────────
+# make all external links open in a new tab with noopener for security
+external_links:
   target: "_blank"
   rel: "noopener"
+# ────────────────────────────────────────────────────────────────────────────
 
+# ────────────────────────────────────────────────────────────────────────────
+favicon: "/assets/images/Kfav.png"
+# ────────────────────────────────────────────────────────────────────────────
 
 # Sass/SCSS
 sass:
