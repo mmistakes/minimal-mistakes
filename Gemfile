@@ -1,6 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 4.0"
-gem "jekyll-remote-theme"
-gem "minimal-mistakes-jekyll"
+gem "github-pages", group: :jekyll_plugins
+
 # (plus any other gems you need)
 gemspec
