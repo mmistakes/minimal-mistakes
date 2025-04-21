@@ -235,6 +235,9 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  link_attrs:
+    target: "_blank"
+    rel: "noopener"
 
 # ────────────────────────────────────────────────────────────────────────────
 # make all external links open in a new tab with noopener for security
@@ -295,6 +298,7 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
