@@ -1,5 +1,7 @@
 <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
-<link rel="icon" type="image/png" href="{{ '/assets/images/Kfav.png' | relative_url }}">
+{% if site.favicon %}
+<link rel="icon" type="image/png" href="{{ site.favicon | relative_url }}">
+{% endif %}
 <!-- end custom head snippets -->
