@@ -67,7 +67,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
+  hide                   : true # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -80,7 +80,7 @@ algolia:
   powered_by             : # true (default), false
 google:
   search_engine_id       : e398c45eecd854859 # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  instant_search         : true # false (default), true
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -128,7 +128,7 @@ author:
     - label: "Bluesky"
       icon: "fas fa-fw fa-link"
       url: "https://bsky.app/profile/did:plc:37bwtlke7dplqitxkzqule6e"
-    - label: "Twitter"
+    - label: "Twitter/X"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ruffini"
     #- label: "Facebook"
@@ -138,7 +138,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/giulioruffini"
     - label: "Substack"
-      icon: "fab fa-fw fa-substack"
+      icon: "fab fa-fw fa-link"
       url: "https://platoniapirate.substack.com"
       
 # Site Footer
@@ -153,7 +153,7 @@ footer:
     - label: "Bluesky"
       icon: "fas fa-fw fa-link"
       url: "https://bsky.app/profile/did:plc:37bwtlke7dplqitxkzqule6e"
-    - label: "Twitter"
+    - label: "Twitter/X"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/ruffini"
     #- label: "Facebook"
@@ -166,7 +166,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/k.and.ai"
     - label: "Substack"
-      icon: "fab fa-fw fa-substack"
+      icon: "fab fa-fw fa-link"
       url: "https://platoniapirate.substack.com"
     - label: "Spotify"
       icon: "fab fa-fw fa-spotify"
