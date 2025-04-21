@@ -2,9 +2,9 @@
 main:
   - title: "Kolmogorov Theory"
     url: /kt/
-  - title: "Comp. Neuroscience"
+  - title: "Computational Neuroscience"
     url: /lanmm/  
-  - title: "tES"
+  - title: "Brain Stimulation"
     url: /tES/
 
 
