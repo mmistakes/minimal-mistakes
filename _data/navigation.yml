@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: /
 
   - title: "Research"
     url: /research/
@@ -8,10 +10,32 @@ main:
     url: /honors/
 
   - title: "TA Archive"
-    url: /teaching/
+    url: /teaching-assistant/
 
   - title: "Blog"
     url: /blog/
 
   - title: "CV"
     url: /cv/
+
+  - title: "中文 🇨🇳"
+    url: /zh/
+
+zh:
+  - title: "首页"
+    url: /zh/
+
+  - title: "科研经历"
+    url: /zh/research/
+
+  - title: "获奖与文章"
+    url: /zh/honors/
+
+  - title: "学习资料"
+    url: /zh/resources/
+
+  - title: "博客"
+    url: /zh/blog/
+
+  - title: "English 🇺🇸"
+    url: /

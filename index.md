@@ -1,8 +1,10 @@
 ---
 layout: single
-title: "About Me"
+title: "About me"
 author_profile: true
 permalink: /
 ---
 
-👋 Hi everyone!
+👋 Hi, welcome to my homepage~
+
+[切换到中文](/zh/)

@@ -7,7 +7,9 @@ tags:
 math: true
 ---
 
-Welcome to my blog! This is just a test for the function.
+欢迎来到我的博客！
+
+这里是我的第一篇文章，支持 LaTeX 渲染，比如：
 
 \[
     e^{i\\pi} + 1 = 0

@@ -1,8 +1,9 @@
 ---
 layout: single
-title: "TA Notes & Resources"
-permalink: /teaching-assistant/
+title: "学习资料"
+permalink: /zh/resources/
 author_profile: true
+nav: zh
 ---
 
 Some notes:
