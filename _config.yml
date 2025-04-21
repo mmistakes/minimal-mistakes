@@ -23,7 +23,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  #- jekyll-include-cache
 
 # (Optional) Run in safe mode, like GitHub Pages
 safe: true
@@ -86,7 +86,7 @@ atom_feed:
   hide                   : true # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : google # lunr (default), algolia, google
 lunr:
   search_within_pages    : true # true, false (default)
 algolia:
