@@ -8,9 +8,9 @@ I am a theoretical physicist and computational neuroscientist researching consci
 
 Feel free to explore:
 - [Kolmogorov theory / algorithmic neuroscience (KT)](/kt/)
-- [Computational neuroscience / neurotwins / LaNMM related papers](/lanmm/)
-- [tES (brain stimulation)](/tES/)
-- [GitHub Profile](https://github.com/giulioruffini)
+- [Computational neuroscience (neurotwins, LaNMM)](/lanmm/)
+- [tES (brain stimulation, tDCS, tACS, tRNS)](/tES/)
+- [GitHub](https://github.com/giulioruffini)
 - [Substack](https://platoniapirate.substack.com)
 
 Other:
