@@ -10,11 +10,11 @@
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
     {%- when "lunr" -%}
-      {% include_cached search/lunr-search-scripts.html %}
+      {% include search/lunr-search-scripts.html %}
     {%- when "google" -%}
-      {% include_cached search/google-search-scripts.html %}
+      {% include search/google-search-scripts.html %}
     {%- when "algolia" -%}
-      {% include_cached search/algolia-search-scripts.html %}
+      {% include search/algolia-search-scripts.html %}
   {%- endcase -%}
 {% endif %}
 
