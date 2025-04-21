@@ -18,3 +18,4 @@ Other:
 - [Starlab](https://starlab.es)
 - [Neurotwin EU project](https://neurotwin.eu)
 - [Galvani ERC Synergy project](https://galvani-lab.eu)
+- [Slides](https://giulioruffini.github.io/slides/)
