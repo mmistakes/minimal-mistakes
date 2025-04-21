@@ -15,13 +15,7 @@
 # ────────────────────────────────────────────────────────────────────────────
 # Tell Jekyll to use Minimal Mistakes
 remote_theme: "mmistakes/minimal-mistakes"  
-plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
+
 # ────────────────────────────────────────────────────────────────────────────
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
