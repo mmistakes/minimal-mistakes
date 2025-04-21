@@ -117,11 +117,11 @@ author:
   avatar           : "/assets/images/GIULIO.jpg"
   bio              : "Theoretical physicist turned computational/algorithmic neuroscientist"
   location         : "Barcelona"
-  email            : "giulio.ruffini(at)mac.com"
+  email            : "giulio.ruffini@mac.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:giulio.ruffini@mac.com"
+    #- label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: "mailto:giulio.ruffini@mac.com"
   # - label: "Website"
   #    icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -230,6 +230,8 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  target: "_blank"
+  rel: "noopener"
 
 
 # Sass/SCSS
