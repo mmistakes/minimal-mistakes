@@ -1,5 +1,5 @@
 ---
-title: "노코딩 프로젝트 리스트 Non-coding Prjoect - 아이폰으로 빠른 음성메모를 Obsidiand에 저장하기"
+title: "노코딩 프로젝트 - 아이폰으로 빠른 음성메모 그리고 Obsidiand에 저장"
 categories:
   - Non-coding
   - PKM(Personal Knowledge Mangement)
