@@ -13,11 +13,11 @@ last_modified_at: 2024-04-22T11:00:00+11:30
 ---
 
 
-### n8n에서 RAG 구축
-[![RAG기반 AI 챗봇 직접 만들어쓰기. 무제한 확장은 기본, Supabase 활용은 덤!](http://img.youtube.com/vi/oHWtm_Z6YmhqiHu2/0.jpg)](https://youtu.be/Fk5pQ0fQkJ0?si=oHWtm_Z6YmhqiHu2) 
+### n8n에서 RAG 구축(개발 중)
+[![RAG기반 AI 챗봇 직접 만들어쓰기. 무제한 확장은 기본, Supabase 활용은 덤!](http://img.youtube.com/vi/Fk5pQ0fQkJ0/0.jpg)](https://youtu.be/Fk5pQ0fQkJ0) 
 
-### 제품안전관리 품목 찾기 web application 
-
+### 제품안전관리 품목 찾기 web application (개발중)
+https://product-items-viewer-app.web.app/
 
 ### 업무자동화(n8n)
 
