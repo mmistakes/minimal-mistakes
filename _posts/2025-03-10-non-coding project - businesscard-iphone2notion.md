@@ -5,7 +5,6 @@ categories:
 tags:
   - AI
   - IOS
-  - n8n
   - Make
   - Gemini
   - 카톡

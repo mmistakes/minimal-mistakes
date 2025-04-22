@@ -4,8 +4,6 @@ categories:
   - Non-coding
 tags:
   - AI
-  - IOS
-  - n8n
   - Make
   - Gemini
   - Slack
