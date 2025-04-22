@@ -1,5 +1,7 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
+{% assign nav_links = site.data.navigation[page.nav] | default: site.data.navigation.main %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -12,7 +14,7 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
+          {%- for link in nav_links -%}
             <li class="masthead__menu-item">
               <a
                 href="{{ link.url | relative_url }}"
