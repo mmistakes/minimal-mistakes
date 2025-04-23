@@ -26,6 +26,11 @@ plugins:
   - jekyll-feed
   #- jekyll-include-cache
 
+# (near where you put your old custom.html)
+head:
+  include:
+    - custom_favicons.html
+    
 # (Optional) Run in safe mode, like GitHub Pages
 safe: true
 # ────────────────────────────────────────────────────────────────────────────
