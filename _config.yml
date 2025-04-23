@@ -15,6 +15,7 @@
 # ────────────────────────────────────────────────────────────────────────────
 # Tell Jekyll to use Minimal Mistakes
 # Tell Jekyll which theme to load
+testing_flag: "MY_CONFIG_IS_LOADED"
 remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
