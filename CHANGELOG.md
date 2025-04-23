@@ -4,6 +4,12 @@
 
 ### Enhancements
 
+- Add a "Share on Bluesky" button (#5179)
+
+## [4.27.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.0)
+
+### Enhancements
+
 - Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
 - Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
 - Rewrite most directions with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
