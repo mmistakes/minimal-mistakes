@@ -10,7 +10,7 @@ toc: true
 ---
 
 ## Overview  
-At National Business Capital, I led a data journalism initiative focused on analyzing **U.S. small business lending trends** post-COVID. The goal was to produce original research that both educated readers and improved SEO/domain authority.
+At National Business Capital, I led a data journalism initiative focused on analyzing **U.S. small business lending trends**. The goal was to produce original research that both educated readers and improved SEO/domain authority.
 
 ---
 
@@ -23,19 +23,19 @@ The client needed original, data-backed content that could:
 ---
 
 ## 🔍 My Role  
-- Led research and wrote article drafts  
+- Performed research and wrote article drafts  
 - Queried datasets from government (SBA, BLS) and private APIs  
 - Cleaned and analyzed data using **R, Excel, and SQL**  
 - Created visualizations using **Datawrapper and Tableau**  
-- Wrote engaging, technically accurate content
+- Worked with public relations to answer media queries
 
 ---
 
 ## 🔧 Tools & Technologies  
-- **Languages:** R, SQL  
+- **Languages:** R, SQL, AppScript (JavaScript)  
 - **Data Sources:** BLS, SBA, Census Bureau  
-- **Visualization:** Tableau, Datawrapper  
-- **Collab Tools:** Google Docs, Slack, Trello
+- **Visualization:** Datawrapper  
+- **Collab Tools:** Google Docs, Google Sheets, Slack, Trello
 
 ---
 
@@ -48,7 +48,7 @@ The client needed original, data-backed content that could:
 
 ## 📎 Links & Samples  
 - [View Published Article](#)  
-- [Download Full Report PDF](#) *(optional)*
+-
 
 ---
 
