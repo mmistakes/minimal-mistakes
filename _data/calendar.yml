@@ -18,6 +18,40 @@
   },
   {
     "image_path": null,
+    "alt": "Brückentag: Unterrichtsfrei - Schule und Hort geschlossen",
+    "title": "Brückentag: Unterrichtsfrei - Schule und Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZTc2ZGhkdTBybDVhMDUxa3Zta3I4ZGxoMm8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-05-02",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-05-03",
+      "date_time": null
+    },
+    "created": "2025-04-24T07:39:56.000Z",
+    "updated": "2025-04-24T07:39:56.887Z"
+  },
+  {
+    "image_path": null,
+    "alt": "80. Jahrestag der Befreiung - Feiertag: Schule und Hort geschlossen!",
+    "title": "80. Jahrestag der Befreiung - Feiertag: Schule und Hort geschlossen!",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=cDdnaWk5djU2Z2lhbGJpdmV0cDhvaGVycTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-05-08",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-05-09",
+      "date_time": null
+    },
+    "created": "2025-04-24T07:39:13.000Z",
+    "updated": "2025-04-24T07:39:13.673Z"
+  },
+  {
+    "image_path": null,
     "alt": "6b - Ausflug in die Bücherei",
     "title": "6b - Ausflug in die Bücherei",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2025-04-01T09:23:11.000Z",
     "updated": "2025-04-01T09:23:11.063Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei ",
-    "title": "6b - Ausflug in die Bücherei ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWwxbzZuODAyNmJobTQ5Z3YxZmhvN2s2dHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-28T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-28T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:23:54.000Z",
-    "updated": "2025-04-01T09:23:54.627Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmNmcGs4NXI0ZjR2Yzl2YmlpZzA4MWtwdnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-02T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-02T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:24:35.000Z",
-    "updated": "2025-04-01T09:24:35.858Z"
   }
 ]
