@@ -30,8 +30,8 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ### 🎮 Procedural Game Design: *String Theory*
 **Role:** Lead Developer / Co-designer  
-**Skills:** C#, Unity, project management  
-**Summary:** Developed a puzzle game based on musical logic. Built 90% of the codebase and managed an agile indie team.  
+**Skills:** Programming, scripting, systems design, project management  
+**Summary:** Developed a procedural music puzzle game designed to train the player's ear to recognize chords. Built 90% of the codebase.  
 [→ Learn More](#)
 
 ---
