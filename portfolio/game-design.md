@@ -9,7 +9,7 @@ read_time: true
 toc: true
 ---
 ## Overview  
-At National Business Capital, I led a data journalism initiative focused on analyzing **U.S. small business lending trends**. The goal was to produce original research that both educated readers and improved SEO/domain authority.
+Derp
 
 ---
 
