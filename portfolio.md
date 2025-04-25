@@ -32,7 +32,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Role:** Lead Developer / Co-designer  
 **Skills:** Programming, scripting, systems design, project management  
 **Summary:** Developed a procedural music puzzle game designed to train the player's ear to recognize chords. Built 90% of the codebase.  
-[→ Learn More](#)
+[→ Learn More](/portfolio/game-design/)
 
 ---
 
