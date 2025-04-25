@@ -12,7 +12,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ## 🔍 Featured Projects
 
-### 📊 Economic Trend Reporting
+### 📊 Data Journalism: Economic Trends
 **Client:** National Business Capital  
 **Skills:** Data scraping, R, SQL, Tableau, writing  
 **Summary:** Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.  
