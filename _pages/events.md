@@ -253,9 +253,9 @@ permalink: /events/
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/srishti-exhibition.png" alt="Srishti 2025 Exhibition">
     <h3>Srishti Tech Exhibition 2025</h3>
-    <p>At the Srishti Tech Exhibition 2025, our Data Science Group showcased cutting-edge research at top venues like CVPR and NeurIPS, alongside interactive demos like Diffusion Everything and Pokémon Showdown RL Bot. Visitors explored innovative AI applications in real-time, with hands-on experiences and technical insights from our team.</p>
+    <p>This exhibtion offered visitors hands-on experiences and technical insights from our team, featuring groundbreaking research and interactive demo of our innovative projects, all from 2024-2025.</p>
     <div class="event-links">
-      <a href="https://www.instagram.com/p/C5uubbOP_F3/?utm_source=ig_web_copy_link" target="_blank">Details</a>
+      <a href="https://www.instagram.com/p/DId-5t_BTNT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
 
   </div>
   </div>
