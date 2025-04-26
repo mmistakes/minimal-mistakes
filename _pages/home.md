@@ -150,6 +150,18 @@ title: Home
     color: var(--primary-color);
   }
 
+  .events-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates flexible columns */
+   gap: 2rem; /* Space between the cards */
+   margin-bottom: 2rem;
+}
+  @media (max-width: 768px) {
+   .events-grid {
+      grid-template-columns: 1fr; 
+   }
+}
+
  .join-button {
   margin-top: 2rem;
   padding: 1rem 2.5rem;
@@ -208,12 +220,21 @@ title: Home
   </div>
   <a href="https://dsgiitr.github.io/dsg-website/research/" class="button-link">Explore Research</a>
 </section>
+
 <section class="preview-section">
   <h2>Featured Project and Blog</h2>
   <div class="grid-container">
     {% include project-card.html %}
   </div>
   <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
+</section>
+
+<section class="preview-section events-section">
+   <h2>Featured Events</h2>
+    <div class="grid-container events-grid">
+    {% include events-card.html %}
+      </div>
+  <a href="https://dsgiitr.github.io/dsg-website/events/" class="button-link">Check Out Our Events</a>
 </section>
 
 <section class="contact-section">
