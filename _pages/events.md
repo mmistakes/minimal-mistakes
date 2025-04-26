@@ -108,8 +108,6 @@ permalink: /events/
 }
 </style>
 
-
-
 <!-- External Hackathons Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">External Hackathons</h2>
 <div class="event-grid">
@@ -135,7 +133,6 @@ permalink: /events/
   </div>
   
 </div>
-
 
 <!-- Industry Collaborations Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">Industry Collaborations</h2>
@@ -225,13 +222,23 @@ permalink: /events/
 
 </div>
 
-
-
 <!-- Internal IITR Events Section -->
 <h2 style="margin-top: 2rem; color: #007acc;">Internal IITR Collaborations</h2>
 <div class="event-grid">
   <!-- Add intra IITR event cards here -->
-    <!-- Event 6: Techshila 2024 Workshop on Adversarial Attacks on LLMs -->
+
+  <!-- Event 7: Srishti 2025 Workshops -->
+  <div class="event-card">
+    <img src="{{ site.baseurl }}/assets/images/events/srishti.png" alt="Srishti 2025 Workshops">
+    <h3>Srishti 2025 Workshops</h3>
+    <p>Workshops conducted as part of Srishti 2025, focusing on innovative tech behind GANs and design thinking for students across disciplines.</p>
+    <div class="event-links">
+      <a href="https://www.instagram.com/p/DIbpC1FoM5Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+
+  </div>
+  </div>
+
+  <!-- Event 6: Techshila 2024 Workshop on Adversarial Attacks on LLMs -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/techshila.png" alt="Techshila 2024 Workshop">
     <h3>Techshila 2024 Workshop on Adversarial Attacks on LLMs</h3>
@@ -242,13 +249,13 @@ permalink: /events/
   </div>
   </div>
 
-  <!-- Event 7: Srishti 2025 Workshops -->
+  <!-- Event 7: Srishti Tech Exhibition 2025-->
   <div class="event-card">
-    <img src="{{ site.baseurl }}/assets/images/events/srishti.png" alt="Srishti 2025 Workshops">
-    <h3>Srishti 2025 Workshops</h3>
-    <p>Workshops conducted as part of Srishti 2025, focusing on innovative tech behind GANs and design thinking for students across disciplines.</p>
+    <img src="{{ site.baseurl }}/assets/images/events/srishti-exhibition.png" alt="Srishti 2025 Exhibition">
+    <h3>Srishti Tech Exhibition 2025</h3>
+    <p>At the Srishti Tech Exhibition 2025, our Data Science Group showcased cutting-edge research at top venues like CVPR and NeurIPS, alongside interactive demos like Diffusion Everything and Pokémon Showdown RL Bot. Visitors explored innovative AI applications in real-time, with hands-on experiences and technical insights from our team.</p>
     <div class="event-links">
-      <a href="https://www.instagram.com/p/DIbpC1FoM5Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
+      <a href="https://www.instagram.com/p/C5uubbOP_F3/?utm_source=ig_web_copy_link" target="_blank">Details</a>
 
   </div>
   </div>
@@ -265,5 +272,3 @@ permalink: /events/
   </div>
 
 </div>
-
-
