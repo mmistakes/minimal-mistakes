@@ -151,47 +151,42 @@ title: Home
     color: var(--primary-color);
   }
 
-  .events-grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates flexible columns */
-   gap: 2rem; /* Space between the cards */
-   margin-bottom: 2rem;
-}
-
-/* Carousel grid layout for event images */
-.carousel {
+ /* Events Grid */
+.events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-  gap: 1rem;
-  animation: shuffleGrid 5s infinite; /* Apply random grid layout animation */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible columns */
+  gap: 1rem; /* Space between the images */
+  margin-bottom: 2rem;
 }
 
-/* Keyframe animation to simulate random grid layout */
-@keyframes shuffleGrid {
-  0% { grid-template-columns: repeat(4, 1fr); }
-  25% { grid-template-columns: repeat(3, 1fr); }
-  50% { grid-template-columns: repeat(5, 1fr); }
-  75% { grid-template-columns: repeat(2, 1fr); }
-  100% { grid-template-columns: repeat(4, 1fr); }
+/* Styling for each Event Card */
+.event-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.carousel img {
-  width: 100%;
-  height: auto;
+.event-images img {
+  width: 100%; /* Makes sure images fit inside the container */
+  height: auto; /* Maintains the aspect ratio */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.carousel img:hover {
+.event-images img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-  @media (max-width: 768px) {
-   .events-grid {
-      grid-template-columns: 1fr; 
-   }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
 }
+
 
  .join-button {
   margin-top: 2rem;
