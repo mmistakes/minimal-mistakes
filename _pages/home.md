@@ -150,13 +150,14 @@ title: Home
   .contact-card a:hover {
     color: var(--primary-color);
   }
-
 /* Event Grid Layout */
 .events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible columns */
+  display: flex;
+  justify-content: space-evenly; /* Space between cards */
   gap: 1rem; /* Space between the cards */
   margin-bottom: 2rem;
+  overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+  padding: 0 1rem; /* Optional: Add padding to the left and right */
 }
 
 /* Styling for each Event Card */
@@ -166,6 +167,8 @@ title: Home
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 250px; /* Fixed width for each card */
+  flex-shrink: 0; /* Prevent cards from shrinking */
 }
 
 /* Event Image Container */
@@ -178,68 +181,23 @@ title: Home
 }
 
 /* Images inside the event images container */
-.event-images .event-image {
-  position: absolute;
-  top: 0;
-  left: 0;
+.event-images img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the images fill the container */
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Smooth transition */
+  object-fit: cover; /* Ensures the image fills the container */
+  border-radius: 8px;
 }
 
-/* Keyframe animation for fading images in and out */
-@keyframes fadeInOut {
-  0%, 100% {
-    opacity: 0;
-  }
-  20%, 80% {
-    opacity: 1;
-  }
-}
-
-/* Apply animation to cards with 2+ images */
-.event-images .event-image:nth-child(1) {
-  animation: fadeInOut 12s infinite;
-  animation-delay: 0s;
-}
-
-.event-images .event-image:nth-child(2) {
-  animation: fadeInOut 12s infinite;
-  animation-delay: 4s;
-}
-
-.event-images .event-image:nth-child(3) {
-  animation: fadeInOut 12s infinite;
-  animation-delay: 8s;
-}
-
-/* Additional CSS for event cards with more than 3 images */
-.event-images .event-image:nth-child(4) {
-  animation: fadeInOut 12s infinite;
-  animation-delay: 12s;
-}
-
-.event-images .event-image:nth-child(5) {
-  animation: fadeInOut 12s infinite;
-  animation-delay: 16s;
-}
-
-.event-images .event-image:nth-child(6) {
-  animation: fadeInOut 12s infinite;
-  animation-delay: 20s;
-}
-
-/* Ensure that if there is only one image, it doesn't fade */
-.event-images .event-image:nth-child(1):only-child {
-  opacity: 1; /* No animation for single image */
-}
-
-/* Responsive design for smaller screens */
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
   .events-grid {
-    grid-template-columns: 1fr; /* Single column layout */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    justify-content: center; /* Center cards in smaller rows */
+  }
+
+  .event-card {
+    width: 80%; /* Make the cards smaller on mobile */
+    margin-bottom: 1rem; /* Add some space between cards */
   }
 }
 
