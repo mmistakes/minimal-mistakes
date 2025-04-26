@@ -151,11 +151,11 @@ title: Home
     color: var(--primary-color);
   }
 
- /* Events Grid */
+/* Event Grid Layout */
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible columns */
-  gap: 1rem; /* Space between the images */
+  gap: 1rem; /* Space between the cards */
   margin-bottom: 2rem;
 }
 
@@ -168,25 +168,80 @@ title: Home
   text-align: center;
 }
 
-.event-images img {
-  width: 100%; /* Makes sure images fit inside the container */
-  height: auto; /* Maintains the aspect ratio */
+/* Event Image Container */
+.event-images {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Fixed height for the container */
+  overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.event-images img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+/* Images inside the event images container */
+.event-images .event-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the images fill the container */
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .events-grid {
-    grid-template-columns: 1fr; /* One column on smaller screens */
+/* Keyframe animation for fading images in and out */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
   }
 }
 
+/* Apply animation to cards with 2+ images */
+.event-images .event-image:nth-child(1) {
+  animation: fadeInOut 12s infinite;
+  animation-delay: 0s;
+}
+
+.event-images .event-image:nth-child(2) {
+  animation: fadeInOut 12s infinite;
+  animation-delay: 4s;
+}
+
+.event-images .event-image:nth-child(3) {
+  animation: fadeInOut 12s infinite;
+  animation-delay: 8s;
+}
+
+/* Additional CSS for event cards with more than 3 images */
+.event-images .event-image:nth-child(4) {
+  animation: fadeInOut 12s infinite;
+  animation-delay: 12s;
+}
+
+.event-images .event-image:nth-child(5) {
+  animation: fadeInOut 12s infinite;
+  animation-delay: 16s;
+}
+
+.event-images .event-image:nth-child(6) {
+  animation: fadeInOut 12s infinite;
+  animation-delay: 20s;
+}
+
+/* Ensure that if there is only one image, it doesn't fade */
+.event-images .event-image:nth-child(1):only-child {
+  opacity: 1; /* No animation for single image */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+}
 
  .join-button {
   margin-top: 2rem;
