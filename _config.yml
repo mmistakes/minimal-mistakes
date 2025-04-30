@@ -18,12 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rudramani Singha
+title: NuttidaLab
 email: rgs2151@columbia.edu
-author: Rudramani Singha
-description: >- # this means to ignore newlines until "baseurl:"
-  Hey there! I’m a researcher based in New York City. 
-  I build probabilistic models and reverse engineer the brain.
+author: NuttidaLab
+description: We develop experimental and computational frameworks to investigate the neural computations that underlie complex cognitive functions in health and disease.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://nuttidalab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-XWEJZKE72S
