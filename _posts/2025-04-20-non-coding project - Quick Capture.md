@@ -22,8 +22,10 @@ last_modified_at: 2024-04-22T14:00:00+11:30
 ### 1. 아이폰에서 음성을 통해 text로 변화
   * 아이폰 단축기 설정
     ![아이폰 단축기 설정](/assets/images/quick%20captuer.jpeg){: width="50%" height="50%"}
+
 ### 2. 메모 글을 옵시디언으로 옮김
  - icloud로 Obosidan이 동기화 되어 있어야 좋음
+ - 
 ### 3. 옵시디언에서 메모글들을 추후 보완/정리
 
 
