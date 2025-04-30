@@ -14,7 +14,11 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
 ---
 
 ## Concept
-We needed a novel design concept for a music-based game. At the time, most music games were effectively rhythm games that challenged players to identify and sync with a beat. We decided to test out the concept of a chord-based game that would help train the player's ear. In each level, a musical chord plays in the background. Players are then presented with a series of strings, each of which plays a note when touched. To pass the level, players need to cut the strings that play notes incongruent with the background music. 
+We needed a novel design concept for a music-based game. At the time, most music games were effectively rhythm games that challenged players to identify and sync with a beat. 
+
+We decided to test out the concept of a chord-based game that would help train the player's ear. 
+
+In each level, a musical chord plays in the background. Players are then presented with a series of strings, each of which plays a note when touched. To pass the level, players need to cut the strings that play notes incongruent with the background music. 
 
 ---
 
@@ -28,24 +32,15 @@ We needed a novel design concept for a music-based game. At the time, most music
 
 ## 🔧 Tools & Technologies  
 - **Languages:** GML
-- **Game Engine:** BLS, SBA, Census Bureau  
-- **Visualization:** Datawrapper  
-- **Collab Tools:** Google Docs, Google Sheets, Slack, Trello
-
----
-
-## 📈 Outcome
-- Articles contributed to an **8% increase in domain authority**
-- Drove over **10,000 organic visits** in the first 3 months
-- Cited by other financial publications and blogs
+- **Game Engine:** GameMaker Studio 
+- **Platform:** PC (Steam) 
+- **Collab Tools:** Git
 
 ---
 
 ## 📎 Links & Samples  
-- [View Published Article](#)  
--
+- [Steam release](https://store.steampowered.com/app/402150/String_Theory/)  
 
----
 
 ## 💬 Notes / Reflections
-I learned a lot about balancing **data depth and accessibility**. The most engaging stories often started with a compelling visual — and then backed it up with solid research.
+Resource constraints encouraged the small team to come up with novel solutions to challenges that arose during development. To this day it remains the only project I've worked on that was primarily sound-driven, which provided a unique opportunity to make the sound designer a core part of the system design process. 
