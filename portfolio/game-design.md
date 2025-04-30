@@ -9,7 +9,7 @@ read_time: true
 toc: true
 ---
 ## Overview  
-Derp
+A music puzzle game built in [collaboration with chiptune artist Shael Riley](https://www.destructoid.com/chiptune-artist-shael-riley-wants-to-train-your-ears-with-new-game/) for PC.
 
 ---
 
