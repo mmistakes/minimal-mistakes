@@ -1,0 +1,100 @@
+// make the container allow overflow on tiny screens
+.pub-table-container
+  width: 100%
+  overflow-x: auto
+  margin-bottom: 2rem
+
+.pub-table
+  width: 100%
+  // separate rows vertically by 1rem; no horizontal gutters
+  border-collapse: separate
+  border-spacing: 0 1rem
+  margin-bottom: 0
+
+  // remove all default cell borders
+  th, td
+    border: none
+    padding: 0.75rem 1rem
+    text-align: left
+
+  // style the header row
+  thead
+    th
+      font-weight: var(--bold)
+      color: var(--text-light)
+      // add a subtle underline if you like:
+      border-bottom: 1px solid var(--bg-alt)
+      padding-bottom: 0.5rem
+
+  // each body row gets its own “card” look via background
+  tbody
+    tr
+      // background: var(--bg-alt)
+      // round the corners
+      border-radius: 12px
+      // ensure the <tr> respects border-radius
+      overflow: hidden
+
+  // on really small screens, let it scroll horizontally
+  @media (max-width: 600px)
+    .pub-table
+      // keep the header visible if you want:
+      // you can also hide the header and use data-labels for each cell
+      min-width: 500px
+
+
+// make the links container a vertically-centered column
+.pub-links
+  display: flex
+  flex-direction: column
+  justify-content: center    // vertical centering within the table cell
+  align-items: center        // horizontal centering
+  gap: 0.5rem                // space between PDF / BIB / DOI
+
+
+
+.pub-links 
+  .pub-links__item
+    &--pdf
+      color: #216976 // Teal
+
+    &--bib
+      color: #48bea3 // Mint
+
+    &--doi
+      color: #6e419a // Purple
+
+
+.pub-links a
+  text-decoration: none
+  font-weight: var(--bold)
+  transition: color .2s
+
+  position: relative
+  display: inline-block
+  z-index: 0
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: var(--selection-bg)
+    transform: scaleX(0)
+    transform-origin: left
+    transition: transform .3s ease
+    z-index: -1
+
+  @media (hover: hover) and (pointer: fine)
+    &:hover
+      color: var(--selection-text)
+    &:hover::before
+      transform: scaleX(1)
+
+.pub-links__item
+
+
+  // if you want each link to take its own width, nothing more is needed
+  // otherwise you can set a fixed width or min-width here

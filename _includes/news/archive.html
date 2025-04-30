@@ -1,0 +1,48 @@
+{%- if site.posts.size > 0 -%}
+
+<div class="postslist mf-container">
+  {%- assign posts = site.posts | sort: 'date' | reverse -%}
+  {%- assign date_fmt = "%b, %Y" -%}
+  {%- for post in posts -%}
+    {%- assign typ = post.type | default: "story" -%}
+    {%- if typ == "story" -%}
+      <a class="postslist__item postslist__item--story"
+         href="{{ post.url | relative_url }}"
+         data-cursor-img="{{ post.image | relative_url }}">
+    {%- elsif typ == "press" -%}
+      <a class="postslist__item postslist__item--press"
+         href="{{ post.link }}"
+         target="_blank"
+         rel="noopener"
+         data-cursor-img="{{ post.image | relative_url }}">
+    {%- else -%}
+      <a class="postslist__item postslist__item--announcement"
+         href="javascript:void(0)">
+    {%- endif -%}
+
+        <span class="postslist__link">
+          <span class="postslist__date">
+            {{ post.date | date: date_fmt }}
+          </span>
+          <span class="postslist__title">
+            {{ post.title | escape }}
+          </span>
+        </span>
+      </a>
+  {%- endfor -%}
+</div>
+
+
+<div class="postslist-legend">
+  <span class="legend-item legend-item--story">
+    <span class="dot"></span>Story
+  </span>
+  <span class="legend-item legend-item--press">
+    <span class="dot"></span>Press
+  </span>
+  <span class="legend-item legend-item--announcement">
+    <span class="dot"></span>Announcement
+  </span>
+</div>
+
+{%- endif -%}

@@ -1,0 +1,13 @@
+@article{RUNGRATSAMEETAWEEMANA2019181,
+title = {Dissociating the impact of attention and expectation on early sensory processing},
+journal = {Current Opinion in Psychology},
+volume = {29},
+pages = {181-186},
+year = {2019},
+note = {Attention & Perception},
+issn = {2352-250X},
+doi = {https://doi.org/10.1016/j.copsyc.2019.03.014},
+url = {https://www.sciencedirect.com/science/article/pii/S2352250X18301751},
+author = {Nuttida Rungratsameetaweemana and John T Serences},
+abstract = {Most studies that focus on understanding how top-down knowledge influences behavior attempt to manipulate either ‘attention’ or ‘expectation’ and often use the terms interchangeably. However, having expectations about statistical regularities in the environment and the act of willfully allocating attention to a subset of relevant sensory inputs are logically distinct processes that could, in principle, rely on similar neural mechanisms and influence information processing at the same stages. In support of this framework, several recent studies attempted to isolate expectation from attention, and advanced the idea that expectation and attention both modulate early sensory processing. Here, we argue that there is currently insufficient empirical evidence to support this conclusion, because previous studies have not fully isolated the effects of expectation and attention. Instead, most prior studies manipulated the relevance of different sensory features, and as a result, few existing findings speak directly to the potentially separable influences of expectation and attention on early sensory processing. Indeed, recent studies that attempt to more strictly isolate expectation and attention suggest that expectation has little influence on early sensory responses and primarily influences later ‘decisional’ stages of information processing.}
+}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="page__content">
+  <div class="postcontent">
+    <div id="pizzazz_container">
+      <canvas id="raster" width="350px" height="50px"></canvas>
+      <img id="neurons" src="{{ "/assets/images/axis.svg" | relative_url}}"></svg>
+    </div>
+    <p></p>
+    
+    {{ content }}
+  </div>
+</div>
+
+{% include news/highlights.html %}
+{% include mouse_follower.html %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+{% include pizzazz.html %}

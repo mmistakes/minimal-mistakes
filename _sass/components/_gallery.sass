@@ -1,0 +1,31 @@
+.gallery
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-auto-rows: auto
+  grid-gap: 1rem
+  justify-content: center    // centers grid if narrower than container
+  margin-bottom: 2rem
+
+.gallery_img_container
+  // Masonry will absolutely position these, but grid acts as a fallback
+  width: 33.33%
+  position: relative
+
+  border: 2px solid var(--bg)
+  // margin-bottom: 10px
+
+  a
+    display: block
+
+.gallery_img
+  display: block
+  width: 100%
+  height: auto
+  border-radius: 12px
+  object-fit: cover
+
+.gallery_caption
+  margin-top: 0.5rem
+  text-align: center
+  font-size: 0.9rem
+  color: var(--text-light)

@@ -1,0 +1,45 @@
+.page
+  width: var(--container-page)
+  max-width: var(--container-max)
+  margin: 3rem auto
+  // add a little padding so gutters never collapse completely
+  padding: 0 1rem
+
+    // tablet / small-desktop
+  @media (max-width: 992px)
+    // fill 100% of the screen (with the 1rem gutters from above)
+    width: 100%
+    padding: 0 1rem
+    margin: 3rem auto
+
+  // switch to “mobile” layout at 768px and below
+  @media (max-width: 768px)
+    // maybe reduce top/bottom margin
+    margin: 2rem auto
+    // you can also tweak font-sizes, nav layout, etc. here:
+    // .nav__holder
+    //   justify-content: space-around !important
+    //   margin-bottom: 2rem
+
+// Mobile adjustments
+@media (max-width: 768px)
+  .nav
+    // allow wrapping if needed, or tighten spacing
+    flex-wrap: wrap
+    justify-content: center
+
+  .nav__item
+    // smaller touch targets
+    padding: 0.25rem 0.5rem
+
+    svg
+      width: 1rem      // shrink icons
+      height: 1rem
+      margin-bottom: 0.125rem
+
+    .nav__label
+      font-size: 0.6rem // shrink text
+
+    // if you still need more room, you can hide labels entirely:
+    // .nav__label
+    //   display: none

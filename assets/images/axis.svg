@@ -1,0 +1,32 @@
+<svg id="neurons" width="25" height="50" fill="#6e419a" xmlns="http://www.w3.org/2000/svg">
+  <!-- vertical axis line -->
+  <line x1="5" y1="2.25"  x2="5" y2="47.25" stroke="#6e419a" stroke-width="1"/>
+
+  <!-- ten ticks, spaced every 5px -->
+  <g stroke="#6e419a" stroke-width="1">
+    <line x1="0" y1="02.25" x2="5" y2="02.25"/>
+    <line x1="0" y1="07.25" x2="5" y2="07.25"/>
+    <line x1="0" y1="12.25" x2="5" y2="12.25"/>
+    <line x1="0" y1="17.25" x2="5" y2="17.25"/>
+    <line x1="0" y1="22.25" x2="5" y2="22.25"/>
+    <line x1="0" y1="27.25" x2="5" y2="27.25"/>
+    <line x1="0" y1="32.25" x2="5" y2="32.25"/>
+    <line x1="0" y1="37.25" x2="5" y2="37.25"/>
+    <line x1="0" y1="42.25" x2="5" y2="42.25"/>
+    <line x1="0" y1="47.25" x2="5" y2="47.25"/>
+  </g>
+
+  <!-- labels -->
+  <text x="10" y="45"
+        font-size="12"
+        text-anchor="start"
+        alignment-baseline="middle">
+    n₀
+  </text>
+  <text x="10" y="5"
+        font-size="12"
+        text-anchor="start"
+        alignment-baseline="middle">
+    n₉
+  </text>
+</svg>

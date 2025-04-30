@@ -1,0 +1,83 @@
+<script>
+	window.addEventListener("DOMContentLoaded", () => {
+		const canvas = document.getElementById("raster"),
+					ctx    = canvas.getContext("2d");
+		ctx.imageSmoothingEnabled = false;
+
+		const W = 350,
+					H = 50,
+					N_NEURONS   = 10,
+					N_TIMESTEPS = 100,
+					STEP_MS     = 10,
+					P_MIN       = 0.05,
+					P_MAX       = 0.5,
+					DECAY_K     = 200;
+		
+		const cellW = Math.floor(W  / N_TIMESTEPS),
+					cellH = Math.floor(H  / N_NEURONS);
+	
+		// sample one column of spikes at probability p
+		function sampleCol(p) {
+			return Array.from({ length: N_NEURONS },
+				() => Math.random() < p ? 1 : 0
+			);
+		}
+	
+		// 1) Pre-fill data at P_MIN
+		let data = Array.from({ length: N_TIMESTEPS },
+			() => sampleCol(P_MIN)
+		);
+	
+		// 2) One-time full draw (white bg + blacks)
+		(function fullDraw() {
+			// white background
+			ctx.fillStyle = "white";
+			ctx.fillRect(0, 0, W, H);
+	
+			// draw all blacks
+			ctx.fillStyle = "black";
+			for (let t = 0; t < N_TIMESTEPS; t++) {
+				const x = (N_TIMESTEPS - 1 - t) * cellW;
+				for (let i = 0; i < N_NEURONS; i++) {
+					if (data[t][i]) {
+						ctx.fillRect(x, i * cellH, cellW, cellH);
+					}
+				}
+			}
+		})();
+	
+		// track mouse
+		let mouseX = -1, mouseY = -1;
+		document.addEventListener("mousemove", e => {
+			mouseX = e.clientX;
+			mouseY = e.clientY;
+		});
+	
+		// 3) Incremental update: shift + explicit white/black draw
+		d3.interval(() => {
+			// compute pFire
+			const rect = document.getElementById("pizzazz_locator")
+												.getBoundingClientRect(),
+						cx   = rect.left   + rect.width/2,
+						cy   = rect.top    + rect.height/2,
+						dist = Math.hypot(mouseX - cx, mouseY - cy),
+						pFire= P_MIN + (P_MAX - P_MIN) * Math.exp(-dist / DECAY_K);
+	
+			// roll data
+			data.shift();
+			data.push(sampleCol(pFire));
+	
+			// SHIFT entire canvas left by one column
+			ctx.drawImage(canvas, -cellW, 0);
+	
+			// DRAW the new column row-by-row
+			const newCol = data[data.length - 1];
+			for (let i = 0; i < N_NEURONS; i++) {
+				const y = i * cellH;
+				// choose color: white for 0, black for 1
+				ctx.fillStyle = newCol[i] ? "black" : "white";
+				ctx.fillRect(W - cellW, y, cellW, cellH);
+			}
+		}, STEP_MS);
+	});
+</script>

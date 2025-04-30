@@ -1,0 +1,13 @@
+{% for member in site.data.people %}
+<div class="team__member">
+    <div class="team__image">
+        <img src="{{ member.avatar | relative_url }}" alt="{{ member.name }}"/>
+    </div>
+    <div class="team__content">
+        <h2>{{ member.name }}</h2>
+        <p>{{ member.position }}</p>
+        <p>{{ member.bio }}</p>
+    </div>
+</div>
+<div class="divider"></div>
+{% endfor %}

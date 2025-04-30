@@ -1,0 +1,10 @@
+@article{rungratsameetaweemanaPreservedCapacityFor2018,
+  title = {Preserved Capacity for Scene Construction and Shifts in Perspective After Hippocampal Lesions},
+  author = {Rungratsameetaweemana, Nuttida and Squire, Larry R.},
+  journal = {Learning & Memory},
+  volume = {25},
+  number = {8},
+  year = {2018},
+  doi = {10.1101/lm.047340.118},
+  url = {https://pubmed.ncbi.nlm.nih.gov/30012879}
+}

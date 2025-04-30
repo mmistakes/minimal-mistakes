@@ -1,0 +1,166 @@
+<script>
+	window.addEventListener("DOMContentLoaded", () => {
+		const canvas = document.getElementById("pizzazz"),
+					ctx    = canvas.getContext("2d");
+		ctx.imageSmoothingEnabled = false;
+	
+		const W = canvas.width,
+					H = canvas.height,
+					N_NEURONS   = 10,
+					N_TIMESTEPS = 100,
+					STEP_MS     = 10,
+					P_MIN       = 0.1,
+					P_MAX       = 0.5,
+					DECAY_K     = 200;
+	
+		const cellW = Math.floor(W  / N_TIMESTEPS),
+					cellH = Math.floor(H  / N_NEURONS);
+	
+		// sample one column of spikes at probability p
+		function sampleCol(p) {
+			return Array.from({ length: N_NEURONS },
+				() => Math.random() < p ? 1 : 0
+			);
+		}
+	
+		// 1) Pre-fill data at P_MIN
+		let data = Array.from({ length: N_TIMESTEPS },
+			() => sampleCol(P_MIN)
+		);
+	
+		// 2) One-time full draw (white bg + blacks)
+		(function fullDraw() {
+			// white background
+			ctx.fillStyle = "white";
+			ctx.fillRect(0, 0, W, H);
+	
+			// draw all blacks
+			ctx.fillStyle = "gray";
+			for (let t = 0; t < N_TIMESTEPS; t++) {
+				const x = (N_TIMESTEPS - 1 - t) * cellW;
+				for (let i = 0; i < N_NEURONS; i++) {
+					if (data[t][i]) {
+						ctx.fillRect(x, i * cellH, cellW, cellH);
+					}
+				}
+			}
+		})();
+	
+		// track mouse
+		let mouseX = -1, mouseY = -1;
+		document.addEventListener("mousemove", e => {
+			mouseX = e.clientX;
+			mouseY = e.clientY;
+		});
+	
+		// 3) Incremental update: shift + explicit white/black draw
+		d3.interval(() => {
+			// compute pFire
+			const rect = document.getElementById("pizzazz_locator")
+												.getBoundingClientRect(),
+						cx   = rect.left   + rect.width/2,
+						cy   = rect.top    + rect.height/2,
+						dist = Math.hypot(mouseX - cx, mouseY - cy),
+						pFire= P_MIN + (P_MAX - P_MIN) * Math.exp(-dist / DECAY_K);
+	
+			// roll data
+			data.shift();
+			data.push(sampleCol(pFire));
+	
+			// SHIFT entire canvas left by one column
+			ctx.drawImage(canvas, -cellW, 0);
+	
+			// DRAW the new column row-by-row
+			const newCol = data[data.length - 1];
+			for (let i = 0; i < N_NEURONS; i++) {
+				const y = i * cellH;
+				// choose color: white for 0, black for 1
+				ctx.fillStyle = newCol[i] ? "gray" : "white";
+				ctx.fillRect(W - cellW, y, cellW, cellH);
+			}
+		}, STEP_MS);
+	});
+</script>
+
+
+
+<!-- <script>
+	
+	const axes = document.getElementById("axes"),
+	ctxA = axes.getContext("2d");
+
+	const W = 325,
+				H = 50,
+				N_NEURONS   = 10,
+				N_TIMESTEPS = 100,
+				STEP_MS     = 10,
+				P_MIN       = 0.1,
+				P_MAX       = 0.5,
+				DECAY_K     = 200;
+		
+	const cellW = Math.floor(W  / N_TIMESTEPS),
+	cellH = Math.floor(H  / N_NEURONS);
+
+
+	// 1) draw static axes once
+	(function drawAxes() {
+		ctxA.lineWidth = 2;
+		ctxA.strokeStyle = ctxA.fillStyle = "black";
+		ctxA.save();
+		ctxA.strokeStyle = "black";
+		ctxA.fillStyle   = "black";
+		ctxA.lineWidth   = 2;
+
+		// — X axis —
+		ctxA.beginPath();
+		ctxA.moveTo(0, H);
+		ctxA.lineTo(W, H);
+		ctxA.stroke();
+		// arrow at left end → pointing left
+		ctxA.beginPath();
+		ctxA.moveTo(0, H);
+		ctxA.lineTo(10, H - 5);
+		ctxA.lineTo(10, H + 5);
+		ctxA.closePath();
+		ctxA.fill();
+
+		// — Y axis —
+		ctxA.beginPath();
+		ctxA.moveTo(W, H);
+		ctxA.lineTo(W, 0);
+		ctxA.stroke();
+		// arrow at top end → pointing up
+		ctxA.beginPath();
+		ctxA.moveTo(W, 0);
+		ctxA.lineTo(W - 5, 10);
+		ctxA.lineTo(W + 5, 10);
+		ctxA.closePath();
+		ctxA.fill();
+
+		// — labels —
+		ctxA.font = `${cellH}px sans-serif`;
+
+		// t_{now} at right end of X axis
+		ctxA.textAlign    = "center";
+		ctxA.textBaseline = "bottom";
+		ctxA.fillText("t_now", W - cellW/2, H - 2);
+
+		// neuron labels along Y axis
+		ctxA.textAlign    = "left";
+		ctxA.textBaseline = "middle";
+		for (let i = 0; i < N_NEURONS; i++) {
+			const y = i * cellH + cellH/2;
+			ctxA.fillText(`n_${i+1}`, W - cellW + 2, y);
+		}
+	})();
+</script> -->
+
+
+<!-- <p>
+<div id="pizzazz_container" style="position:relative; width:350px; height:50px;">
+	<canvas id="raster" width="350" height="50"
+			style="position:absolute; top:0; left:0; z-index:1;"></canvas>
+	<canvas id="axes"   width="350" height="50"
+			style="position:absolute; top:0; left:0; z-index:2; pointer-events:none;"></canvas>
+</div>
+</p> -->

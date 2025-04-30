@@ -1,0 +1,106 @@
+.postslist__item--announcement
+  cursor: default !important
+  
+.postslist
+  margin-bottom: 4rem
+
+  &__item
+    position: relative
+    display: flex
+    align-items: center                  // vertically center bullet vs content
+    padding-left: 2.5rem                 // space for the dot
+    margin-bottom: 1rem
+    text-decoration: none                // remove underline
+
+    // the colored bullet
+    &::before
+      content: '•'
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)        // perfectly center
+      font-size: 2rem
+
+    // color by type
+    &--story::before
+      color: #216976
+
+    &--press::before
+      color: #48bea3
+
+    &--announcement::before
+      color: #6e419a
+
+  /////////////////////////////////
+  // highlight only date+title //
+  /////////////////////////////////
+  .postslist__link
+    position: relative
+    display: flex
+    flex: 1
+    z-index: 1                // <<< add this
+    color: var(--text)
+
+    &::before
+      content: ""
+      position: absolute
+      top: -0.5rem
+      left: -1rem
+      right: -0rem
+      bottom: -0.5rem
+      background: var(--selection-bg)
+      transform: scaleX(0)
+      transform-origin: left
+      transition: transform .3s ease
+      z-index: -1             // now sits above the parent, below the text
+
+    @media (hover: hover) and (pointer: fine)
+      &:hover
+        color: var(--selection-text)
+      &:hover::before
+        transform: scaleX(1)
+
+    // On mobile, the flex-direction is column
+    @media (max-width: 768px)
+      flex-direction: column
+
+  ///////////////////
+  // date & title //
+  ///////////////////
+  &__date
+    font-weight: var(--bold)
+    margin-right: 0.5rem
+  &__title
+    font-weight: var(--normal)
+    line-height: 1.3                   // better multi-line spacing
+  
+
+// legend wrapper
+.postslist-legend
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 2rem        // space between each “dot name”
+  margin-bottom: 2rem
+
+  .legend-item
+    display: flex
+    align-items: center
+    font-size: 0.9rem
+
+    .dot
+      display: inline-block
+      width: 0.4em
+      height: 0.4em
+      border-radius: 50%
+      margin-right: 0.4em
+
+  // match your bullet colors
+  & .legend-item--story .dot
+    background-color: #216976
+
+  & .legend-item--press .dot
+    background-color: #48bea3
+
+  & .legend-item--announcement .dot
+    background-color: #6e419a

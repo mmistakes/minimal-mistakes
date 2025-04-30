@@ -1,0 +1,12 @@
+@article{RUNGRATSAMEETAWEEMANA202185,
+title = {Understanding Motor Abnormalities in Psychiatric Disorders as Altered Sensorimotor Processing},
+journal = {Biological Psychiatry Global Open Science},
+volume = {1},
+number = {2},
+pages = {85-86},
+year = {2021},
+issn = {2667-1743},
+doi = {https://doi.org/10.1016/j.bpsgos.2021.06.006},
+url = {https://www.sciencedirect.com/science/article/pii/S2667174321000525},
+author = {Nuttida Rungratsameetaweemana}
+}

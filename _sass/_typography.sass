@@ -1,0 +1,71 @@
+body, html
+  background: var(--bg)
+  -moz-osx-font-smoothing: grayscale
+  font-feature-settings: "liga" 1
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  margin: 0
+  padding: 0
+  font-size: 1.1rem
+  font-family: Roboto, -apple-system, sans-serif
+  color: var(--text)
+  font-weight: var(--normal)
+  // letter-spacing: -0.015rem
+
+*, body, html
+  box-sizing: border-box
+
+html
+  // always reserve space for the vertical scrollbar
+  overflow-y: scroll
+
+  // if the browser supports it, keep gutters stable on both edges
+  @supports (scrollbar-gutter: stable)
+    scrollbar-gutter: stable
+
+body
+  line-height: 1.2
+  text-align: justify
+
+
+::selection
+  background: var(--selection-bg)
+  color: var(--selection-text)
+
+button:focus
+  outline: 1px dotted
+  outline: 5px auto -webkit-focus-ring-color
+
+h1
+  font-size: 1.5rem
+  font-weight: var(--bold)
+  margin: 0rem 0 1.5rem
+  line-height: 1.25
+
+h2
+  font-size: 1.3rem
+  font-weight: var(--bold)
+  margin: 0rem 0 1.5rem
+  line-height: 1.25
+
+h3
+  font-size: 1.1rem
+  font-weight: var(--bold)
+  margin: 0rem 0 1rem
+  color: var(--text-light)
+  line-height: 1.25
+
+strong
+  font-weight: var(--bold)
+
+p
+  margin-bottom: 1.5rem
+
+p:last-of-type
+  margin-bottom: 0
+
+a
+  color: inherit
+  text-decoration: none
+
+

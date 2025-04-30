@@ -1,0 +1,12 @@
+@article {Rungratsameetaweemana2022.10.14.512301,
+	author = {Rungratsameetaweemana, Nuttida and Kim, Robert and Chotibut, Thiparat and Sejnowski, Terrence J.},
+	title = {Random noise promotes slow heterogeneous synaptic dynamics important for robust working memory computation},
+	elocation-id = {2022.10.14.512301},
+	year = {2023},
+	doi = {10.1101/2022.10.14.512301},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Recurrent neural networks (RNNs) based on model neurons that communicate via continuous signals have been widely used to study how cortical neurons perform cognitive tasks. Training such networks to perform tasks that require information maintenance over a brief period (i.e., working memory tasks) remains a challenge. Critically, the training process becomes difficult when the synaptic decay time constant is not fixed to a large constant number for all the model neurons. We hypothesize that the brain utilizes intrinsic cortical noise to generate a reservoir of heterogeneous synaptic decay time constants optimal for maintaining information. Here, we show that introducing random, internal noise to the RNNs not only speeds up the training but also produces stable models that can maintain information longer than the RNNs trained without internal noise. Importantly, this robust working memory performance induced by incorporation of internal noise during training is attributed to an increase in synaptic decay time constants of a distinct subset of inhibitory units. This increase leads to slower decay of stimulus-specific activity, which plays a critical role in memory maintenance.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2023/05/31/2022.10.14.512301},
+	eprint = {https://www.biorxiv.org/content/early/2023/05/31/2022.10.14.512301.full.pdf},
+	journal = {bioRxiv}
+}

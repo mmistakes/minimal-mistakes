@@ -1,0 +1,37 @@
+// .page__content
+//   a
+//     transition: opacity .3s
+//     @media (hover: hover) and (pointer: fine)
+//       &:hover
+//         opacity: .75
+
+.page__content
+  a
+    text-decoration: underline
+    text-decoration-color: var(--underline)
+    text-underline-offset: 3px
+    text-decoration-thickness: 1px
+
+    display: inline               // allow natural wrapping
+    color: var(--text)
+    background-image: linear-gradient(var(--selection-bg), var(--selection-bg))
+    background-repeat: no-repeat
+    background-size: 0% 100%
+    background-position: left bottom
+    box-decoration-break: clone
+    -webkit-box-decoration-break: clone
+    transition: background-size .3s ease, color .3s ease
+
+    @media (hover: hover) and (pointer: fine)
+      &:hover
+        background-size: 100% 100%
+        color: var(--selection-text)
+  
+  ul
+    list-style: disc inside
+    padding-left: 0
+    margin-top: 0
+
+  ol
+    padding-left: 0
+    margin-top: 0

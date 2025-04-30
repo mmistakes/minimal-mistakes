@@ -1,0 +1,12 @@
+@article {Nelli420430,
+	author = {Nelli, Stephanie and Itthipuripat, Sirawaj and Rungratsameetaweemana, Nuttida and Serences, John T.},
+	title = {The speed-accuracy tradeoff reveals flexible access to accumulating sensory evidence during human decision making},
+	elocation-id = {420430},
+	year = {2018},
+	doi = {10.1101/420430},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Decisions made about identical perceptual stimuli can be radically different under changing task demands. For example, the need to make a fast decision undermines the accuracy of that decision, a well-documented effect termed the speed-accuracy tradeoff (SAT). Models of the SAT are generally based on theories of decision making in which responses are triggered only after sensory evidence accumulation terminates at a set threshold. Within this accumulate-to-bound framework, speed pressure operates by lowering the response threshold, allowing for faster responses at the expense of accumulated sensory evidence. To empirically examine the mechanisms necessary for adaptively adjusting the speed and accuracy of decisions, we used an event-related potential that indexes sensory evidence accumulation in the human brain. Instead of lowering response thresholds, we found that speed pressure adaptively shifts responses to occur close to where the rate of evidence accumulation peaks. Moreover, responses are not triggered automatically by the termination of the accumulation process, as sensory evidence continues to build after speeded decisions. Together these results suggest that response processes adaptively access accumulating sensory evidence depending on task demands and support parallel over serial models of decision making.Author Contributions SN analyzed the data and wrote the manuscript. SI conceived and implemented the experiment, collected the data, analyzed the data, and co-wrote the manuscript. NR analyzed the data and co-wrote the manuscript. JTS conceived and supervised the project and co-wrote the manuscript},
+	URL = {https://www.biorxiv.org/content/early/2018/09/17/420430},
+	eprint = {https://www.biorxiv.org/content/early/2018/09/17/420430.full.pdf},
+	journal = {bioRxiv}
+}

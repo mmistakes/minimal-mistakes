@@ -1,0 +1,51 @@
+{%- assign papers = site.data.papers
+    | sort: "year"
+    | reverse -%}
+
+<div class="pub-table-container">
+<table class="pub-table">
+ <caption>
+   Notes: #Co-first or co-corresponding author; *Trainees; P - Pending
+ </caption>
+ <thead>
+   <tr>
+     <th>Year</th>
+     <th>Authors</th>
+     <th>Title</th>
+     <th>Publication</th>
+     <th>Links</th>
+   </tr>
+ </thead>
+ <tbody>
+    {%- for p in papers -%}
+    <tr>
+      <td>{{ p.year }}</td>
+      <td>{{ p.authors }}</td>
+      <td>{{ p.title }}</td>
+      <td>{{ p.venue }}</td>
+      <td>
+        <div class="pub-links">
+          {%- if p.pdf -%}
+            <div class="pub-links__item pub-links__item--pdf">
+              [<a href="{{ p.pdf }}">pdf</a>]
+            </div>
+          {%- endif -%}
+    
+          {%- if p.bib -%}
+            <div class="pub-links__item pub-links__item--bib">
+              [<a href="{{ p.bib }}">bib</a>]
+            </div>
+          {%- endif -%}
+    
+          {%- if p.doi -%}
+            <div class="pub-links__item pub-links__item--doi">
+              [<a href="{{ p.doi }}">doi</a>]
+            </div>
+          {%- endif -%}
+        </div>
+      </td>
+    </tr>
+    {%- endfor -%}
+ </tbody>
+</table>
+</div>

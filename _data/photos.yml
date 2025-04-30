@@ -1,0 +1,83 @@
+- image: "/assets/images/posts/hangouts/6flags.jpeg"
+  caption: "6flags"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Hike one.jpeg"
+  caption: "Hike one"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Jerald.jpg"
+  caption: "Jerald"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Normal Candid.jpg"
+  caption: "Normal Candid"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Posing front.png"
+  caption: "Posing front"
+  link: false
+
+- image: "/assets/images/posts/hangouts/White Elephant one.jpg"
+  caption: "White Elephant one"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Birthday_Housewarming.jpg"
+  caption: "Birthday Housewarming"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Hike two.jpeg"
+  caption: "Hike two"
+  link: false
+
+- image: "/assets/images/posts/hangouts/MalaTown.jpg"
+  caption: "MalaTown"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Pickle Ball.jpeg"
+  caption: "Pickle Ball"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Posing side.png"
+  caption: "Posing side"
+  link: false
+
+- image: "/assets/images/posts/hangouts/Red Carpet Two.jpg"
+  caption: "Red Carpet Two"
+  link: false
+
+- image: "/assets/images/posts/hangouts/White Elephant two.jpg"
+  caption: "White Elephant two"
+  link: false
+
+- image: "/assets/images/posts/bme_retreat.jpg"
+  caption: "BME Retreat 2023"
+  link: "/posts/hypothesis/"
+
+- image: "/assets/images/posts/bcs_young/host.jpg"
+  caption: "bcs_young host"
+  link: false
+
+- image: "/assets/images/posts/bcs_young/uni.jpg"
+  caption: "bcs_young uni"
+  link: false
+
+- image: "/assets/images/posts/lab_outing/lab_outing.jpg"
+  caption: "lab_outing"
+  link: false
+
+- image: "/assets/images/posts/lab_outing/outing_frisbee.jpg"
+  caption: "outing_frisbee"
+  link: false
+
+- image: "/assets/images/posts/manifolds/oist.jpg"
+  caption: "oist"
+  link: false
+
+- image: "/assets/images/posts/manifolds/oist_small.jpg"
+  caption: "oist_small"
+  link: false
+
+- image: "/assets/images/posts/tomas_zips/presents.jpg"
+  caption: "presents"
+  link: false

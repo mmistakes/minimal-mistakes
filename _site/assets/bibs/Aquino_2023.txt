@@ -1,0 +1,12 @@
+@article {Aquino2023.10.17.562828,
+	author = {Aquino, Tomas Gallo and Kim, Robert and Rungratsameetaweemana, Nuttida},
+	title = {Disinhibitory signaling enables flexible coding of top-down information},
+	elocation-id = {2023.10.17.562828},
+	year = {2024},
+	doi = {10.1101/2023.10.17.562828},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Recent studies have proposed employing biologically plausible recurrent neural networks (RNNs) to investigate flexible decision-making in the brain. However, the mechanisms underlying the integration of bottom-up sensory inputs and temporally varying top-down factors (such as task instructions and selective attention) remain poorly understood, both within the context of these models and the brain. To address this knowledge gap, we trained biologically inspired RNNs on complex cognitive tasks that require adaptive integration of these factors. Through comprehensive analyses of RNNs and neural activity from mouse primary visual cortex, we show that sensory neurons in low-level areas possess the remarkable ability to multiplex and dynamically combine both bottom-up and top-down information via local inhibitory-to-inhibitory connections. Our results shed light on the role of disinhibitory circuits in the intricate interplay between bottom-up and top-down factors to enable flexible decision processes.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2024/04/03/2023.10.17.562828},
+	eprint = {https://www.biorxiv.org/content/early/2024/04/03/2023.10.17.562828.full.pdf},
+	journal = {bioRxiv}
+}

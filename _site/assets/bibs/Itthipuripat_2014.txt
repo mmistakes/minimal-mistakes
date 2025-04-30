@@ -1,0 +1,15 @@
+@article {Itthipuripat112,
+	author = {Itthipuripat, Sirawaj and Garcia, Javier O. and Rungratsameetaweemana, Nuttida and Sprague, Thomas C. and Serences, John T.},
+	title = {Changing the Spatial Scope of Attention Alters Patterns of Neural Gain in Human Cortex},
+	volume = {34},
+	number = {1},
+	pages = {112--123},
+	year = {2014},
+	doi = {10.1523/JNEUROSCI.3943-13.2014},
+	publisher = {Society for Neuroscience},
+	abstract = {Over the last several decades, spatial attention has been shown to influence the activity of neurons in visual cortex in various ways. These conflicting observations have inspired competing models to account for the influence of attention on perception and behavior. Here, we used electroencephalography (EEG) to assess steady-state visual evoked potentials (SSVEP) in human subjects and showed that highly focused spatial attention primarily enhanced neural responses to high-contrast stimuli (response gain), whereas distributed attention primarily enhanced responses to medium-contrast stimuli (contrast gain). Together, these data suggest that different patterns of neural modulation do not reflect fundamentally different neural mechanisms, but instead reflect changes in the spatial extent of attention.},
+	issn = {0270-6474},
+	URL = {https://www.jneurosci.org/content/34/1/112},
+	eprint = {https://www.jneurosci.org/content/34/1/112.full.pdf},
+	journal = {Journal of Neuroscience}
+}

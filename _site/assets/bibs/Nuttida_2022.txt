@@ -1,0 +1,18 @@
+@article{10.1093/braincomms/fcac234,
+    author = {Rungratsameetaweemana, Nuttida and Lainscsek, Claudia and Cash, Sydney S and Garcia, Javier O and Sejnowski, Terrence J and Bansal, Kanika},
+    title = "{Brain network dynamics codify heterogeneity in seizure evolution}",
+    journal = {Brain Communications},
+    volume = {4},
+    number = {5},
+    pages = {fcac234},
+    year = {2022},
+    month = {09},
+    abstract = "{Dynamic functional brain connectivity facilitates adaptive cognition and behaviour. Abnormal alterations within such connectivity could result in disrupted functions observed across various neurological conditions. As one of the most common neurological disorders, epilepsy is defined by the seemingly random occurrence of spontaneous seizures. A central but unresolved question concerns the mechanisms by which extraordinarily diverse propagation dynamics of seizures emerge. Here, we applied a graph-theoretical approach to assess dynamic reconfigurations in the functional brain connectivity before, during and after seizures that display heterogeneous propagation patterns despite sharing similar cortical onsets. We computed time-varying functional brain connectivity networks from human intracranial recordings of 67 seizures (across 14 patients) that had a focal origin—49 of these focal seizures remained focal and 18 underwent a bilateral spread (focal to bilateral tonic-clonic seizures). We utilized functional connectivity networks estimated from interictal periods across patients as control. Our results characterize network features that quantify the underlying functional dynamics associated with the observed heterogeneity of seizure propagation across these two types of focal seizures. Decoding these network features demonstrate that bilateral propagation of seizure activity is an outcome of the imbalance of global integration and segregation in the brain prior to seizure onset. We show that there exist intrinsic network signatures preceding seizure onset that are associated with the extent to which an impending seizure will propagate throughout the brain (i.e. staying within one hemisphere versus spreading transcallosally). Additionally, these features characterize an increase in segregation and a decrease in excitability within the brain network (i.e. high modularity and low spectral radius). Importantly, seizure-type-specific differences in these features emerge several minutes prior to seizure onset, suggesting the potential utility of such measures in intervention strategies. Finally, our results reveal network characteristics after the onset that are unique to the propagation mechanisms of two most common focal seizure subtypes, indicative of distinct reconfiguration processes that may assist termination of each seizure type. Together, our findings provide insights into the relationship between the temporal evolution of seizure activity and the underlying functional connectivity dynamics. These results offer exciting avenues where graph-theoretical measures could potentially guide personalized clinical interventions for epilepsy and other neurological disorders in which extensive heterogeneity is observed across subtypes as well as across and within individual patients.}",
+    issn = {2632-1297},
+    doi = {10.1093/braincomms/fcac234},
+    url = {https://doi.org/10.1093/braincomms/fcac234},
+    eprint = {https://academic.oup.com/braincomms/article-pdf/4/5/fcac234/46320501/fcac234.pdf},
+}
+
+
+

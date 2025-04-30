@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="gallery mf-container">
+  {% for item in site.data.photos %}
+  <div class="gallery_img_container">
+    {% if item.link %}
+    <a href="{{ item.link }}" target="_blank" rel="noopener">
+    {% else %}
+    <a href="#">
+    {% endif %}
+    <img 
+      class="gallery_img" 
+      src="{{ item.image }}" 
+      alt="{{ item.caption }}" 
+      data-cursor-text="{{ item.caption }}">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+  
+  <script>
+    Promise.all(
+      Array.from(document.images)
+        .filter(img => !img.complete)
+        .map(img => new Promise(r => { img.onload = img.onerror = r; }))
+    ).then(() => {
+      var elem = document.querySelector('.gallery');
+      new Masonry(elem, {
+        columnWidth: '.gallery_img_container',
+        itemSelector: '.gallery_img_container',
+        // gutter: 5,
+        fitWidth: true
+      });
+    });
+  </script>
+
+{% include mouse_follower.html %}
