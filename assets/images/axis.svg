@@ -17,13 +17,13 @@
   </g>
 
   <!-- labels -->
-  <text x="10" y="45"
+  <text x="10" y="47"
         font-size="12"
         text-anchor="start"
         alignment-baseline="middle">
     n₀
   </text>
-  <text x="10" y="5"
+  <text x="10" y="10"
         font-size="12"
         text-anchor="start"
         alignment-baseline="middle">
