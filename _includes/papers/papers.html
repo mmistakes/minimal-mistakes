@@ -1,4 +1,6 @@
-{%- assign papers = site.data.papers -%}
+{%- assign papers = site.data.papers
+  | sort: "year"
+  | reverse -%}
 
 <div class="pub-table-container">
 <table class="pub-table">
