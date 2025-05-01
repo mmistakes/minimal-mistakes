@@ -1,0 +1,12 @@
+@article {Nett2025.01.17.633375,
+	author = {Nett, Laura and Guth, Tim A. and B{\"u}chel, Philipp K. and Rungratsameetaweemana, Nuttida and Kunz, Lukas},
+	title = {Behavioral investigation of allocentric and egocentric cognitive maps in human spatial memory},
+	elocation-id = {2025.01.17.633375},
+	year = {2025},
+	doi = {10.1101/2025.01.17.633375},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Spatial memory is a fundamental cognitive function that enables humans and other species to encode and recall the locations of items in their environments. Humans employ diverse strategies to support spatial memory, including the use of cognitive maps. Cognitive maps are mental representations of the environment that organize its content along two or more continuous dimensions. In allocentric cognitive maps, these dimensions form a Cartesian coordinate system referenced to the environment. In egocentric cognitive maps, the dimensions form a polar coordinate system centered on the subject. To better understand how humans employ allocentric and egocentric cognitive maps for spatial memory, we performed a behavioral study with a novel task designed to directly and explicitly assess both types of cognitive maps. During encoding periods, participants navigated through a virtual environment and encountered objects at different locations. During recall periods, participants aimed at remembering these locations in abstract allocentric and egocentric coordinate systems. Our results show that relationships between the objects and the environment, such as their distance to boundaries and corners, were associated with allocentric memory performance. Relationships between the objects and the participant, including their distance and orientation to the participant{\textquoteright}s starting position, were linked to egocentric memory performance. Spatial feedback during recall supported performance within allocentric and egocentric domains, but not across domains. These findings are compatible with the notion that allocentric and egocentric cognitive maps operate as (partially) independent systems for spatial memory, each specialized in processing specific types of spatial relationships.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2025/01/17/2025.01.17.633375},
+	eprint = {https://www.biorxiv.org/content/early/2025/01/17/2025.01.17.633375.full.pdf},
+	journal = {bioRxiv}
+}

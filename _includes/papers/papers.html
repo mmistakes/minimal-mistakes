@@ -1,6 +1,4 @@
-{%- assign papers = site.data.papers
-    | sort: "year"
-    | reverse -%}
+{%- assign papers = site.data.papers -%}
 
 <div class="pub-table-container">
 <table class="pub-table">
@@ -27,19 +25,19 @@
         <div class="pub-links">
           {%- if p.pdf -%}
             <div class="pub-links__item pub-links__item--pdf">
-              [<a href="{{ p.pdf }}">pdf</a>]
+              [<a href="{{ p.pdf }}" target="_blank" rel="noopener noreferrer">pdf</a>]
             </div>
           {%- endif -%}
     
           {%- if p.bib -%}
             <div class="pub-links__item pub-links__item--bib">
-              [<a href="{{ p.bib }}">bib</a>]
+              [<a href="{{ p.bib }}" target="_blank" rel="noopener noreferrer">bib</a>]
             </div>
           {%- endif -%}
     
           {%- if p.doi -%}
             <div class="pub-links__item pub-links__item--doi">
-              [<a href="{{ p.doi }}">doi</a>]
+              [<a href="{{ p.doi }}" target="_blank" rel="noopener noreferrer">doi</a>]
             </div>
           {%- endif -%}
         </div>

@@ -1,15 +1,129 @@
 - year: 2025
-  title: "Dynamic categorization rules alter representations in human visual cortex"
-  authors: "Henderson MM, Serences, JT, Rungratsameetaweemana N."
-  venue: "bioRxiv: 10.1101/2023.09.11.557257, 2023. In revision."
-  pdf: "/assets/papers/Henderson_2023.pdf"
-  bib: "/assets/bibs/Henderson_2023.txt"
-  doi: "10.1101/2023.09.11.557257"
+  title: "Learning and language in the unconscious human hippocampus."
+  authors: "Katlowitz KA, ..., Rungratsameetaweemana N, Hayden BY∗, Sheth SA∗"
+  venue: "bioRxiv: 10.1101/2025.04.09.648012, Submitted."
+  pdf: "/assets/papers/Katlowitz_2025.pdf"
+  bib: "/assets/bibs/Katlowitz_2025.txt"
+  doi: "https://doi.org/10.1101/2025.04.09.648012"
 
 - year: 2025
+  title: "Behavioral investigation of allo-centric and egocentric cognitive maps in human spatial memory"
+  authors: "Nett L, Guth TA, Buechel PK, Rungratsameetaweemana N, Kunz L. "
+  venue: "bioRxiv: 10.1101/2025.01.17.633375, Under review."
+  pdf: "/assets/papers/Nett_2025.pdf"
+  bib: "/assets/bibs/Nett_2025.txt"
+  doi: "https://doi.org/10.1101/2025.01.17.633375"
+
+- year: 2025
+  title: "Dynamic categorization rules alter representations in human visual cortex"
+  authors: "Henderson MM, Serences, JT, Rungratsameetaweemana N."
+  venue: "Nature Communications"
+  pdf: "/assets/papers/Henderson_2023.pdf"
+  bib: "/assets/bibs/Henderson_2023.txt"
+  doi: "https://doi.org/10.1038/s41467-025-58707-4"
+
+- year: 2025 
+  title: "Random noise promotes slow heterogeneous synaptic dynamics important for robust working memory computation"
+  authors: "Rungratsameetaweemana N*, Kim R*, Chotibut T, Sejnowski TJ."
+  venue: "The Proceedings of the National Academy of Sciences"
+  pdf: "/assets/papers/Nuttida_2023.pdf"
+  bib: "/assets/bibs/Nuttida_2023.txt"
+  doi: "https://doi.org/10.1073/pnas.2316745122"
+
+
+- year: 2024
   title: "Disinhibitory signaling enables flexible coding of top-down information"
   authors: "Aquino TG*, Kim R*, Rungratsameetaweemana N."
-  venue: "bioRxiv: 10.1101/2023.10.17.562828v2, 2023. Under Review."
+  venue: "bioRxiv: 10.1101/2023.10.17.562828, 2024. Submitted."
   pdf: "/assets/papers/Aquino_2023.pdf"
   bib: "/assets/bibs/Aquino_2023.txt"
   doi: "https://doi.org/10.1101/2023.10.17.562828"
+
+
+- year: 2022
+  title: "Brain network dynamics codify heterogeneity in seizure evolution"
+  authors: "Rungratsameetaweemana N, Lainscsek C, Cash SS, Garcia JO, Sejnowski TJ*, Bansal K*.""
+  venue: "Brain Communications"
+  pdf: "/assets/papers/Nuttida_2022.pdf"
+  bib: "/assets/bibs/Nuttida_2022.txt"
+  doi: "https://doi.org/10.1093/braincomms/fcac234"
+
+- year: 2022
+  title: "Intermittent brain network reconfigurations and the resistance to social media influence"
+  authors: "Pinto ILD, Rungratsameetaweemana N, Flaherty K, Periyannan A, Meghdadi A, Richard C, Berka C, Bansal K, Garcia JO."
+  venue: "Network Neuroscience"
+  pdf: "/assets/papers/Pinto_2022.pdf"
+  bib: "/assets/bibs/Pinto_2022.txt"
+  doi: "https://doi.org/10.1162/netn_a_00255"
+
+- year: 2021
+  title: "Understanding motor abnormalities in psychiatric disorders as alteredsensorimotor processing."
+  authors: "Rungratsameetaweemana N."
+  venue: "Biological Psychiatry: Global Open Science"
+  pdf: "/assets/papers/Nuttida_2021.pdf"
+  bib: "/assets/bibs/Nuttida_2021.txt"
+  doi: "https://doi.org/10.1016/j.bpsgos.2021.06.006"
+
+- year: 2021
+  title: "Experimentally testable whole brain manifolds that recapitulate behavior"
+  authors: "Pao G, Smoth C, Park J, Takahashi K, Watanakeesuntorn W, Natsukawa H, Chalasani SH, Lorimer T, Takano R, Rungratsameetaweemana N, Sugihara G. "
+  venue: "arXiv:2106.10627"
+  pdf: "/assets/papers/Pao_2021.pdf"
+  bib: "/assets/bibs/Pao_2021.txt"
+  doi: "https://doi.org/10.48550/arXiv.2106.10627"
+
+- year: 2019
+  title: "Cortical chimera states predict epileptic seizures"
+  authors: "Lainscsek C*, Rungratsameetaweemana N*, Cash SS, Sejnowski TJ."
+  venue: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+  pdf: "/assets/papers/Lainscsek_2019.pdf"
+  bib: "/assets/bibs/Lainscsek_2019.txt"
+  doi: "https://doi.org/10.1063/1.5139654"
+
+- year: 2019
+  title: "Preserved capacity for learning statistical regularities and directing selective attention after hippocampal lesions"
+  authors: "Rungratsameetaweemana N, Squire LR, Serences JT."
+  venue: "The Proceedings of the National Academy of Sciences"
+  pdf: "/assets/papers/Nuttida_2019.pdf"
+  bib: "/assets/bibs/Nuttida_2019.txt"
+  doi: "https://doi.org/10.1073/pnas.1904502116"
+
+- year: 2019
+  title: "Dissociating the impact of attention and expectation on early sensory processing"
+  authors: "Rungratsameetaweemana N, Serences JT."
+  venue: "Current Opinion in Psychology"
+  pdf: "/assets/papers/Nuttida_Serences_2019.pdf"
+  bib: "/assets/bibs/Nuttida_Serences_2019.txt"
+  doi: "https://doi.org/10.1016/j.copsyc.2019.03.014"
+
+- year: 2018
+  title: "The speed-accuracy tradeoff reveals flexible access to accumulating sensory evidence during human decision-making"
+  authors: "Nelli S, Itthipuripat S, Rungratsameetaweemana N, Serences JT."
+  venue: "bioRxiv: 10.1101/420430v1, 2018"
+  pdf: "/assets/papers/Nelli_2018.pdf"
+  bib: "/assets/bibs/Nelli_2018.txt"
+  doi: ""
+
+- year: 2018
+  title: "Expectations do not alter early sensory processing during perceptual decision-making"
+  authors: "Rungratsameetaweemana N*, Itthipuripat S*, Salazar A, Serences JT."
+  venue: "Journal of Neuroscience"
+  pdf: "/assets/papers/Nuttida_2018.pdf"
+  bib: "/assets/bibs/Nuttida_2018.txt"
+  doi: "https://doi.org/10.1523/JNEUROSCI.3638-17.2018"
+
+- year: 2018
+  title: "Preserved capacity for scene construction and shifts in perspective after hippocampal lesions"
+  authors: "Rungratsameetaweemana N, Squire, LR."
+  venue: "Learning & Memory"
+  pdf: "/assets/papers/Nuttida_Squire_2018.pdf"
+  bib: "/assets/bibs/Nuttida_Squire_2018.txt"
+  doi: "https://doi.org/10.1101/lm.047340.118"
+  
+- year: 2014
+  title: "Changing the spatial scope of attention alters patterns of neural gain in human cortex"
+  authors: "Itthipuripat S, Garcia, JO, Rungratsameetaweemana N, Sprague TC, Serences JT."
+  venue: "Journal of Neuroscience"
+  pdf: "/assets/papers/Itthipuripat_2014.pdf"
+  bib: "/assets/bibs/Itthipuripat_2014.txt"
+  doi: "https://doi.org/10.1523/jneurosci.3943-13.2014"
