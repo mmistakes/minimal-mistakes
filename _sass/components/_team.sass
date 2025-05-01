@@ -65,13 +65,15 @@
       object-position: center center
 
     &--nuttida
+      display: flex
+      align-items: center
       flex: 1                // or a fixed basis: 0 0 40%
       overflow: hidden       // hide the sides that overflow
       
       img
         display: block
         width: auto          // let width grow beyond container if needed
-        height: 100%         // always match container’s height
+        // height: 100%         // always match container’s height
         object-fit: cover    // crop left/right as needed
         object-position: center center
         border-radius: 12px
