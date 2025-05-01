@@ -21,6 +21,13 @@
   pdf: "/assets/papers/Henderson_2023.pdf"
   bib: "/assets/bibs/Henderson_2023.txt"
   doi: "https://doi.org/10.1038/s41467-025-58707-4"
+  news:
+  - label: "1"
+    url: "https://www.engineering.columbia.edu/about/news/how-thoughts-influence-what-eyes-see"
+  - label: "2"
+    url: "https://www.nei.nih.gov/about/news-and-events/news/nei-funded-study-explores-how-thoughts-influence-what-eyes-see"
+  - label: "3"
+    url: "https://bioengineer.org/how-our-thoughts-shape-visual-perception-the-science-behind-what-we-see/"
 
 - year: 2025 
   title: "Random noise promotes slow heterogeneous synaptic dynamics important for robust working memory computation"
@@ -29,6 +36,11 @@
   pdf: "/assets/papers/Nuttida_2023.pdf"
   bib: "/assets/bibs/Nuttida_2023.txt"
   doi: "https://doi.org/10.1073/pnas.2316745122"
+  news:
+  - label: "1"
+    url: "https://www.engineering.columbia.edu/about/news/harnessing-chaos-how-brain-turns-randomness-robust-memory"
+  - label: "2"
+    url: "https://www.technologynetworks.com/informatics/news/random-brain-activity-fluctuations-may-help-stabilize-memories-395709"
 
 - year: 2024
   title: "Disinhibitory signaling enables flexible coding of top-down information"

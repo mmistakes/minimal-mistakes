@@ -43,6 +43,18 @@
             </div>
           {%- endif -%}
         </div>
+
+        {%- if p.news -%}
+        <div class="pub-news">
+          Press:
+          {%- for item in p.news -%}
+            <div class="pub-news__item">
+              [<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.label }}</a>]
+            </div>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+        
       </td>
     </tr>
     {%- endfor -%}

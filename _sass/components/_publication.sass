@@ -46,7 +46,7 @@
 // make the links container a vertically-centered column
 .pub-links
   display: flex
-  flex-direction: column
+  flex-direction: row
   justify-content: center    // vertical centering within the table cell
   align-items: center        // horizontal centering
   gap: 0.5rem                // space between PDF / BIB / DOI
@@ -55,6 +55,9 @@
 
 .pub-links 
   .pub-links__item
+    display: flex
+    flex-direction: row
+    align-items: center
     &--pdf
       color: #216976 // Teal
 
@@ -98,3 +101,40 @@
 
   // if you want each link to take its own width, nothing more is needed
   // otherwise you can set a fixed width or min-width here
+.pub-news
+  display: flex
+  flex-direction: row
+  justify-content: center    // vertical centering within the table cell
+  align-items: center        // horizontal centering
+  gap: 0.1rem                // space between PDF / BIB / DOI
+  color: #003F80
+  margin-top: 0.5rem
+
+.pub-news a
+  text-decoration: none
+  font-weight: var(--bold)
+  transition: color .2s
+
+  position: relative
+  display: inline-block
+  z-index: 0
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: var(--selection-bg)
+    transform: scaleX(0)
+    transform-origin: left
+    transition: transform .3s ease
+    z-index: -1
+
+  @media (hover: hover) and (pointer: fine)
+    &:hover
+      color: var(--selection-text)
+    &:hover::before
+      transform: scaleX(1)
+
