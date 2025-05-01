@@ -1,5 +1,5 @@
 ---
-title: "노코딩 프로젝트 리스트 Non-coding Prjoects"
+title: "노코딩 프로젝트 리스트 - 제품안전관리 품목 찾기"
 categories:
   - Non-coding
   - Vibe-coding
@@ -23,16 +23,16 @@ last_modified_at: 2024-04-30T13:00:00+13:30
 </br>
 
 ### 배경
-- 제품안전관리법에 의해 규제받는 제품인지 아닌지 쉽게 인식시키기 위해 빠르게 만든 web application
+- 제품안전관리법에 의해 규제받는 제품인지 아닌지 쉽게 찾아주는 web application
 - firebase를 기초로, gemini 2.5 pro exp(https://aistudio.google.com)와 VScode copliot을 이용하여 만듬
   
   </br>
   
 ### 구현 단계 요약:
-0. 간단한 web app. 개발
-   -  index.html style.css script.js 를 같은 폴더에 넣고, index.html을 실행
-   - data는 index.html로 올리도록 함
-1.  **Firebase 프로젝트 생성:** Firebase 웹사이트에서 새 프로젝트를 만듭니다.
+0. (아주 초기단계) 간단한 web app. 우선 개발
+   - `index.html` `style.css` `script.js` 를 같은 폴더에 넣고, index.html을 실행
+   - data는 `index.html`로 올리도록 함
+1.  (심화단계) **Firebase 프로젝트 생성:** Firebase 웹사이트에서 새 프로젝트를 만듭니다.
 2.  **Firestore 설정:** 데이터베이스를 활성화합니다.
 3.  **Cloud Functions 작성 (Node.js):**
     *   관리자용 함수: 비밀번호와 엑셀 파일을 받아 Firestore에 저장하는 함수 (보안 적용)
