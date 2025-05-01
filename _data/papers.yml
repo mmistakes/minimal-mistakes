@@ -30,7 +30,6 @@
   bib: "/assets/bibs/Nuttida_2023.txt"
   doi: "https://doi.org/10.1073/pnas.2316745122"
 
-
 - year: 2024
   title: "Disinhibitory signaling enables flexible coding of top-down information"
   authors: "Aquino TG*, Kim R*, Rungratsameetaweemana N."
@@ -39,10 +38,9 @@
   bib: "/assets/bibs/Aquino_2023.txt"
   doi: "https://doi.org/10.1101/2023.10.17.562828"
 
-
 - year: 2022
   title: "Brain network dynamics codify heterogeneity in seizure evolution"
-  authors: "Rungratsameetaweemana N, Lainscsek C, Cash SS, Garcia JO, Sejnowski TJ*, Bansal K*.""
+  authors: "Rungratsameetaweemana N, Lainscsek C, Cash SS, Garcia JO, Sejnowski TJ*, Bansal K*."
   venue: "Brain Communications"
   pdf: "/assets/papers/Nuttida_2022.pdf"
   bib: "/assets/bibs/Nuttida_2022.txt"
@@ -102,7 +100,7 @@
   venue: "bioRxiv: 10.1101/420430v1, 2018"
   pdf: "/assets/papers/Nelli_2018.pdf"
   bib: "/assets/bibs/Nelli_2018.txt"
-  doi: ""
+  doi: "https://doi.org/10.1101/420430 "
 
 - year: 2018
   title: "Expectations do not alter early sensory processing during perceptual decision-making"

@@ -1,0 +1,12 @@
+@article {Katlowitz2025.04.09.648012,
+	author = {Katlowitz, Kalman A. and Shah, Shraddha and Franch, Melissa C. and Adkinson, Joshua and Belanger, James L. and Mathura, Raissa K. and Mesz{\'e}na, Domokos and Mickiewicz, Elizabeth A. and McGinley, Matthew and Mu{\~n}oz, William and Banks, Garrett P. and Cash, Sydney S. and Hsu, Chih-Wei and Paulk, Angelique C. and Provenza, Nicole R. and Watrous, Andrew and Williams, Ziv and Heilbronner, Sarah R. and Kim, Robert and Rungratsameetaweemana, Nuttida and Hayden, Benjamin Y. and Sheth, Sameer A.},
+	title = {Learning and language in the unconscious human hippocampus},
+	elocation-id = {2025.04.09.648012},
+	year = {2025},
+	doi = {10.1101/2025.04.09.648012},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Consciousness is a fundamental component of cognition,1 but the degree to which higher-order perception relies on it remains disputed.2,3 Here we demonstrate the persistence of learning, semantic processing, and online prediction in individuals under general anesthesia-induced loss of consciousness.4,5 Using high-density Neuropixels microelectrodes6 to record neural activity in the human hippocampus while playing a series of tones to anesthetized patients, we found that hippocampal neurons could reliably detect oddball tones. This effect size grew over the course of the experiment (\~{}10 minutes), consistent with learning effects. A biologically plausible recurrent neural network model showed that learning and oddball representation are an emergent property of flexible tone discrimination. Last, when we played language stimuli, single units and ensembles carried information about the semantic and grammatical features of natural speech, even predicting semantic information about upcoming words. Together these results indicate that in the hippocampus, which is anatomically and functionally distant from primary sensory cortices,7 complex processing of sensory stimuli occurs even in the unconscious state.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2025/04/09/2025.04.09.648012},
+	eprint = {https://www.biorxiv.org/content/early/2025/04/09/2025.04.09.648012.full.pdf},
+	journal = {bioRxiv}
+}
