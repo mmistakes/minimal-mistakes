@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-04-26T14:09:41+08:00'
+last_modified_at: '2025-05-02T15:17:55+08:00'
 toc: false
 ---
 
@@ -21,6 +21,10 @@ toc: false
 
 - Add a "Share on Bluesky" button [#5179](https://github.com/mmistakes/minimal-mistakes/issues/5179)
 - Add preset variables for modern font stack [#5033](https://github.com/mmistakes/minimal-mistakes/issues/5033)
+
+### Bug Fixes
+
+- Fix wrong icon and color for X share button.
 
 ## [4.27.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.0)
 

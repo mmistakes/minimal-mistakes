@@ -7,6 +7,10 @@
 - Add a "Share on Bluesky" button (#5179)
 - Add preset variables for modern font stack (#5033)
 
+### Bug Fixes
+
+- Fix wrong icon and color for X share button.
+
 ## [4.27.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.0)
 
 ### Enhancements
