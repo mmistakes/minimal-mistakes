@@ -1,8 +1,11 @@
 ---
 layout: single
-title: "Page Title"
-permalink: /page-url/
+title: "About Me"
+permalink: /about/
 author_profile: true
+sidebar:
+  nav: "main"
+toc: true
 ---
 This site exists to help explain what I do. I wear a fair number of different hats professionally, and it can be difficult to paint a coherent picture of my skill set and personality through my resume. Needless to say, sales is not my strong point.
 
