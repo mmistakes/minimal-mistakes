@@ -37,11 +37,13 @@
   (warning, $warning-color),
   (danger, $danger-color),
   (info, $info-color),
+  /* brands */
+  (bluesky, $bluesky-color),
   (facebook, $facebook-color),
-  (twitter, $twitter-color),
   (linkedin, $linkedin-color),
   (mastodon, $mastodon-color),
-  (bluesky, $bluesky-color);
+  (twitter, $twitter-color),
+  (x, $twitter-color);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
