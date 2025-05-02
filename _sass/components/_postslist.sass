@@ -35,8 +35,9 @@
   // highlight only date+title //
   /////////////////////////////////
   .postslist__link
-    position: relative
     display: flex
+    // align-items: center
+    position: relative
     flex: 1
     z-index: 1                // <<< add this
     color: var(--text)
@@ -63,14 +64,23 @@
     // On mobile, the flex-direction is column
     @media (max-width: 768px)
       flex-direction: column
+      align-items: flex-start
 
   ///////////////////
   // date & title //
   ///////////////////
   &__date
+    flex: 0 0 9ch
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    // align-self: center
+    // margin-right: 0.5rem
     font-weight: var(--bold)
-    margin-right: 0.5rem
+    line-height: 1.3  
   &__title
+    flex: 1
+    text-align: left
     font-weight: var(--normal)
     line-height: 1.3                   // better multi-line spacing
   

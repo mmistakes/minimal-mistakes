@@ -17,8 +17,7 @@
         <h1 class="page__title">{{ page.title }}</h1>
         {% endif %}
         {% if page.date %}
-        <div style="height: 1rem;"></div>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = "%b %Y" -%}
         <div class="postslist__item__date">{{ page.date | date: date_format }}</div>
         {% endif %}
 			</header>
