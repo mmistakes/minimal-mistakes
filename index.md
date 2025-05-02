@@ -4,6 +4,7 @@ title: "Christopher Motola"
 permalink: /
 sidebar: false
 author_profile: false
+read_time: false
 ---
 ## Welcome!  
 This site exists to help explain what I do. I wear a fair number of different hats professionally, and it can be difficult to paint a coherent picture of my skill set and personality through my resume. Needless to say, sales is not my strong point. 
