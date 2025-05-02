@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-05-02T15:17:55+08:00'
+last_modified_at: '2025-05-02T18:50:37+08:00'
 toc: false
 ---
 
@@ -15,7 +15,7 @@ toc: false
 -->
 
 {% raw %}
-## Unreleased
+## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
 
