@@ -6,9 +6,9 @@ layout: default
   {% for item in site.data.photos %}
   <div class="gallery_img_container">
     {% if item.link %}
-    <a href="{{ item.link }}" target="_blank" rel="noopener">
+    <a href="{{ item.link }}">
     {% else %}
-    <a href="#">
+    <a href="javascript:void(0);">
     {% endif %}
     <img 
       class="gallery_img" 

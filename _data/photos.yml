@@ -1,83 +1,120 @@
-- image: "/assets/images/posts/hangouts/6flags.jpeg"
-  caption: "6flags"
+- image: "/assets/images/posts/Posing front.jpg"
+  caption: "Everyone in the lab"
   link: false
-
-- image: "/assets/images/posts/hangouts/Hike one.jpeg"
-  caption: "Hike one"
+- image: "/assets/images/posts/daria_people1.jpg"
+  caption: "Daria wins People’s Choice Award"
+  link: /posts/daria-people/
+- image: "/assets/images/posts/Posing side.jpg"
+  caption: "Very serious lab photo"
   link: false
-
-- image: "/assets/images/posts/hangouts/Jerald.jpg"
-  caption: "Jerald"
+- image: "/assets/images/posts/host.jpg"
+  caption: "Seoul National University"
   link: false
-
-- image: "/assets/images/posts/hangouts/Normal Candid.jpg"
-  caption: "Normal Candid"
+- image: "/assets/images/posts/Jerald.jpg"
+  caption: "Gerald Pao came to visit us!"
   link: false
-
-- image: "/assets/images/posts/hangouts/Posing front.png"
-  caption: "Posing front"
+- image: "/assets/images/posts/MalaTown.jpg"
+  caption: "Hot pot at MalaTown!"
   link: false
-
-- image: "/assets/images/posts/hangouts/White Elephant one.jpg"
-  caption: "White Elephant one"
+- image: "/assets/images/posts/Normal Candid.jpg"
+  caption: "Sid and Rudra searching for meaning of life"
   link: false
-
-- image: "/assets/images/posts/hangouts/Birthday_Housewarming.jpg"
-  caption: "Birthday Housewarming"
+- image: "/assets/images/posts/oist_small.jpg"
+  caption: "Manifolds in Nature conference"
   link: false
-
-- image: "/assets/images/posts/hangouts/Hike two.jpeg"
-  caption: "Hike two"
+- image: "/assets/images/posts/oist.jpg"
+  caption: "Manifolds in Nature conference"
   link: false
-
-- image: "/assets/images/posts/hangouts/MalaTown.jpg"
-  caption: "MalaTown"
+- image: "/assets/images/posts/outing_frisbee.jpg"
+  caption: "Joint Lab Outing with Herbert Wu Lab"
+  link: /posts/trip_herbert/
+- image: "/assets/images/posts/outing_lab_team.jpg"
+  caption: "Joint Lab Outing with Herbert Wu Lab"
+  link: /posts/trip_herbert/
+- image: "/assets/images/posts/outing_selfie.jpg"
+  caption: "Joint Lab Outing with Herbert Wu Lab"
+  link: /posts/trip_herbert/
+- image: "/assets/images/posts/outing_turtle.jpg"
+  caption: "Joint Lab Outing with Herbert Wu Lab"
+  link: /posts/trip_herbert/
+- image: "/assets/images/posts/Birthday_Housewarming.jpg"
+  caption: "Daria's and Salma's Birthday & Housewarming"
   link: false
-
-- image: "/assets/images/posts/hangouts/Pickle Ball.jpeg"
-  caption: "Pickle Ball"
+- image: "/assets/images/posts/renee_cosyne2.jpg"
+  caption: "Renee at Cosyne"
+  link: /posts/renee-cosyne/
+- image: "/assets/images/posts/renee_cosyne.jpg"
+  caption: "Renee at Cosyne"
+  link: /posts/renee-cosyne/
+- image: "/assets/images/posts/renee_vps.jpg"
+  caption: "Renee at Vagelos College of Physicians and Surgeons (VP&S)"
+  link: posts/renee-vps/
+- image: "/assets/images/posts/renee_zucker.jpg"
+  caption: "Renee at Northeast Neuroscience Symposium "
+  link: /posts/renee-aans/
+- image: "/assets/images/posts/daria_people2.jpg"
+  caption: "Daria wins People’s Choice Award"
+  link: /posts/daria-people/
+- image: "/assets/images/posts/robert_sfn1.jpg"
+  caption: "Robert & Nuttida at SFN"
+  link: /posts/robert-sfn/
+- image: "/assets/images/posts/robert_sfn2.jpg"
+  caption: "Robert & Nuttida at SFN"
+  link: /posts/robert-sfn/
+- image: "/assets/images/posts/robert_sfn3.jpg"
+  caption: "Robert & Nuttida at SFN"
+  link: /posts/robert-sfn/
+- image: "/assets/images/posts/rudra_dsi.jpg"
+  caption: "Rudra at Data Science Day"
+  link: /posts/rudra-dsi/
+- image: "/assets/images/posts/rudra_fdsw.jpg"
+  caption: "Rudra Fdsw"
+  link: /posts/rudra_foundations/
+- image: "/assets/images/posts/summit_1.jpg"
+  caption: "Rudra at Columbia AI Summit"
+  link: /posts/ai-summit/
+- image: "/assets/images/posts/summit_2.jpg"
+  caption: "Tomas at Columbia AI Summit"
+  link: /posts/ai-summit/
+- image: "/assets/images/posts/summit_3.jpg"
+  caption: "Renee at Columbia AI Summit"
+  link: /posts/ai-summit/
+- image: "/assets/images/posts/summit_4.jpg"
+  caption: "Renee at Columbia AI Summit"
+  link: /posts/ai-summit/
+- image: "/assets/images/posts/tomas_presents.jpg"
+  caption: "Tomas gives a talk at the Zuckerman Postdoctoral Series"
+  link: /posts/tomas-zuck/
+- image: "/assets/images/posts/tomas_seminars.jpg"
+  caption: "Tomas gives a talk at the Zuckerman Postdoctoral Series"
+  link: /posts/tomas-zuck/
+- image: "/assets/images/posts/tomas_welcome.jpg"
+  caption: "Unboxing Doggee"
   link: false
-
-- image: "/assets/images/posts/hangouts/Posing side.png"
-  caption: "Posing side"
+- image: "/assets/images/posts/trip_6flags.jpg"
+  caption: "Lab Trip to 6flags"
+  link: /posts/lab-trip/
+- image: "/assets/images/posts/trip_hike_1.jpg"
+  caption: "Lab hiking event at Hudson Highlands State Park"
+  link: /posts/lab-trip/
+- image: "/assets/images/posts/trip_hike_2.jpg"
+  caption: "Lab hiking event at Hudson Highlands State Park"
+  link: /posts/lab-trip/
+- image: "/assets/images/posts/trip_pickle.jpg"
+  caption: "Lab Pickle ball contest"
+  link: /posts/lab-pickle/
+- image: "/assets/images/posts/uni.jpg"
+  caption: "Seoul National University"
   link: false
-
-- image: "/assets/images/posts/hangouts/Red Carpet Two.jpg"
-  caption: "Red Carpet Two"
-  link: false
-
-- image: "/assets/images/posts/hangouts/White Elephant two.jpg"
-  caption: "White Elephant two"
-  link: false
-
+- image: "/assets/images/posts/white_ele1.jpg"
+  caption: "End of year lab celebration with White Elephant"
+  link: /posts/white-elephant/
+- image: "/assets/images/posts/white_ele2.jpg"
+  caption: "End of year lab celebration with White Elephant"
+  link: /posts/white-elephant/
 - image: "/assets/images/posts/bme_retreat.jpg"
-  caption: "BME Retreat 2023"
-  link: "/posts/hypothesis/"
-
-- image: "/assets/images/posts/bcs_young/host.jpg"
-  caption: "bcs_young host"
+  caption: "BME Retreat"
   link: false
-
-- image: "/assets/images/posts/bcs_young/uni.jpg"
-  caption: "bcs_young uni"
-  link: false
-
-- image: "/assets/images/posts/lab_outing/lab_outing.jpg"
-  caption: "lab_outing"
-  link: false
-
-- image: "/assets/images/posts/lab_outing/outing_frisbee.jpg"
-  caption: "outing_frisbee"
-  link: false
-
-- image: "/assets/images/posts/manifolds/oist.jpg"
-  caption: "oist"
-  link: false
-
-- image: "/assets/images/posts/manifolds/oist_small.jpg"
-  caption: "oist_small"
-  link: false
-
-- image: "/assets/images/posts/tomas_zips/presents.jpg"
-  caption: "presents"
+- image: "/assets/images/posts/Red Carpet Two.jpg"
+  caption: "Fancy"
   link: false
