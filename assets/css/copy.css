@@ -1,0 +1,17 @@
+pre {
+    position: relative;
+  }
+  
+  .copy-code-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #797783; /* 인디고 색 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

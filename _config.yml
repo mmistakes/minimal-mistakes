@@ -112,13 +112,13 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "wnend1010@naver.com"
+      url: "mailto:wnend1010@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/duswntmd"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://github.com/duswntmd" # 채널 넣기
+      url: "https://www.youtube.com/@ecodingKR" # 채널 넣기
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   # url: "https://your-website.com"
@@ -140,7 +140,7 @@ footer:
       url: "https://github.com/duswntmd"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://github.com/duswntmd"
+      url: "https://www.youtube.com/@ecodingKR"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   # url:
@@ -237,6 +237,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-redirect-from
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:

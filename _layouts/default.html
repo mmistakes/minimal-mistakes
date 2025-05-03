@@ -12,6 +12,28 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link rel="stylesheet" href="../assets/css/copy.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const codeBlocks = document.querySelectorAll('pre');
+        codeBlocks.forEach(function (codeBlock) {
+          const button = document.createElement('button');
+          button.className = 'copy-code-button';
+          button.textContent = '복사';
+          const code = codeBlock.querySelector('code');
+          button.addEventListener('click', function () {
+            const textArea = document.createElement('textarea');
+            textArea.value = code.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('코드가 복사되었습니다.');
+          });
+          codeBlock.parentNode.insertBefore(button, codeBlock);
+        });
+      });
+    </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

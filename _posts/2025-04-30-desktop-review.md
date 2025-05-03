@@ -10,7 +10,7 @@ search: true # 검색기능에 나오게 할건지 여부
 
 ## 컴퓨터 리뷰 영상
 
-
+{% include video id="xN_vs_lwABg" provider="youtube" %}
 
 ## 왜 이 PC를 맞췄는가
 
