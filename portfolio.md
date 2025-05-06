@@ -17,7 +17,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Client:** National Business Capital  
 **Skills:** Data scraping, R, SQL, visualizations, writing  
 **Summary:** Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.  
-[→ View Article](#) | [→ Case Study](/portfolio/economic-trends/)
+[→ View Article](#) | [→ Description](/portfolio/economic-trends/)
 
 ---
 
@@ -25,7 +25,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Client:** Merchant Maverick  
 **Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis
 **Summary:** Wrote revenue-generating informational blog posts and product reviews on small business topics and products.
-[→ Report Series](#)
+[→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Description](/portfolio/small-business-writing/)
 
 ---
 
