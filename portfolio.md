@@ -11,27 +11,27 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-## 🔍 Featured Projects
+## 🔍 Featured Work
 
 ### 📊 Data Journalism: Economic Trends
 **Client:** National Business Capital  
-**Skills:** Data scraping, R, SQL, Tableau, writing  
+**Skills:** Data scraping, R, SQL, visualizations, writing  
 **Summary:** Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.  
 [→ View Article](#) | [→ Case Study](/portfolio/economic-trends/)
 
 ---
 
-### 💸 Small Business Funding Analysis
+### 💸 Small Business Funding & Payment Processing Analysis
 **Client:** Merchant Maverick  
-**Skills:** Python, BigQuery, Datawrapper  
-**Summary:** Built tools to analyze U.S. state-level lending data, translating findings into long-form content and visual reports.  
+**Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis
+**Summary:** Wrote revenue-generating informational blog posts and product reviews on small business topics and products.
 [→ Report Series](#)
 
 ---
 
 ### 🎮 Procedural Game Design: *String Theory*
 **Role:** Lead Developer / Co-designer  
-**Skills:** Programming, scripting, systems design, project management  
+**Skills:** Programming, scripting, systems design, project management, source control 
 **Summary:** Developed a procedural music puzzle game designed to train the player's ear to recognize chords. Built 90% of the codebase.  
 [→ Learn More](/portfolio/game-design/)
 
