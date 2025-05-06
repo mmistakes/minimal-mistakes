@@ -3,6 +3,7 @@ layout: single
 title: "Now"
 permalink: /now/
 author_profile: true
+read_time: false
 sidebar:
   nav: "main"
 ---
