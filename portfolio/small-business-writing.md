@@ -10,7 +10,9 @@ toc: true
 ---
 
 ## Overview  
-I've been writing about small business matters for a very long time, most recently at Merchant Maverick, a small business resources site. I wore a number of hats there, including senior staff writer, small business researcher and analyst, and occasionally tech advisor. My areas of focus were **small business payment processing and funding**. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
+I've been writing about small business matters for a very long time, most recently at Merchant Maverick, a small business resources site. I wore a number of hats there, including senior staff writer, small business researcher and analyst, and occasionally tech advisor. 
+
+My areas of focus were **small business payment processing and funding**. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
 
 ---
 
@@ -54,10 +56,12 @@ The client needed original, SEO-optimized content that:
 - [Report on credit card issuers](https://www.merchantmaverick.com/credit-card-issuers/)
 - [Guide to ACH processing fees](https://www.merchantmaverick.com/ach-processing-fees/)
 - [Report on best states for black entrepreneurs](https://www.merchantmaverick.com/2023-best-states-for-black-entrepreneurs/)
-- [How to find business grants](https://www.merchantmaverick.com/government-small-business-grants/)
+- [How to find business grants](https://www.merchantmaverick.com/government-small-business-grants/)  
 Feel free to click on my name on the site and see what else I've written.
 ---
 
 ## 💬 Notes / Reflections
-Payment processing is one of those things everyone takes for granted, but it has very complex billing and security structures. Just implementing it can be a huge challenge for small businesses, which has given rise to convenient but costly "third-party processors" that do most of the legwork for you. Similarly, small business financing has changed a lot from the days when the average owner would just walk into a bank and ask for a loan. Non-traditional lenders increasingly dominate the space, trading convenience for higher interest rates. It's a lot to navigate while running a business. 
+Payment processing is one of those things everyone takes for granted, but it has very complex billing and security structures. Just implementing it can be a huge challenge for small businesses, which has given rise to convenient but costly "third-party processors" that do most of the legwork for you. 
+
+Similarly, small business financing has changed a lot from the days when the average owner would just walk into a bank and ask for a loan. Non-traditional lenders increasingly dominate the space, trading convenience for higher interest rates. It's a lot to navigate while running a business. 
 
