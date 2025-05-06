@@ -10,48 +10,54 @@ toc: true
 ---
 
 ## Overview  
-At National Business Capital, I led a data journalism initiative focused on analyzing **U.S. small business lending trends**. The goal was to produce original research that both educated readers and improved SEO/domain authority.
+I've been writing about small business matters for a very long time, most recently at Merchant Maverick, a small business resources site. I wore a number of hats there, including senior staff writer, small business researcher and analyst, and occasionally tech advisor. My areas of focus were **small business payment processing and funding**. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
 
 ---
 
 ## 🧠 Problem
-The client needed original, data-backed content that could:
-- Boost domain authority
-- Demonstrate expertise in the small business lending space
-- Create long-tail traffic sources
+The client needed original, SEO-optimized content that:
+- Was visible on Google SERPs
+- Demonstrated expertise in the topics of small business financing and payments
+- Generated revenue via affiliate referrals
+- Helped boost domain authority
 
 ---
 
 ## 🔍 My Role  
 - Performed research and wrote article drafts  
-- Queried datasets from government (SBA, BLS) and private APIs  
-- Cleaned and analyzed data using **R, Excel, and SQL**  
+- Maintained and updated over 100 posts and reviews
+- Briefed the editorial team on new developments within my topic cluster
+- Produced a series of data reports and guides
+- Cleaned and analyzed data using **R, Python, Google Sheets, and SQL**  
 - Created visualizations using **Datawrapper and Tableau**  
 - Worked with public relations to answer media queries
 
 ---
 
 ## 🔧 Tools & Technologies  
-- **Languages:** R, SQL, AppScript (JavaScript)  
-- **Data Sources:** BLS, SBA, Census Bureau  
-- **Visualization:** Datawrapper  
-- **Collab Tools:** Google Docs, Google Sheets, Slack, Trello
+- **Editorial Tools:** WordPress CMS, Google Docs
+- **Data Tools:** Google Sheets, SQL, Python, R
+- **Visualizations:** Datawrapper, Tableau
+- **Collaboration Tools:** Slack, Asana, Google Suite
 
 ---
 
 ## 📈 Outcome
-- Articles contributed to an **8% increase in domain authority**
-- Drove over **10,000 organic visits** in the first 3 months
-- Cited by other financial publications and blogs
+- Maintained the highest number of articles and reviews in the company
+- Helped the company achieve record profits during the pandemic 
+- Cited by major financial publications and blogs
 
 ---
 
 ## 📎 Links & Samples  
-- [View Published Article](#)  
--
-
+- [Stripe review](https://www.merchantmaverick.com/reviews/stripe-review/)  
+- [Report on credit card issuers](https://www.merchantmaverick.com/credit-card-issuers/)
+- [Guide to ACH processing fees](https://www.merchantmaverick.com/ach-processing-fees/)
+- [Report on best states for black entrepreneurs](https://www.merchantmaverick.com/2023-best-states-for-black-entrepreneurs/)
+- [How to find business grants](https://www.merchantmaverick.com/government-small-business-grants/)
+Feel free to click on my name on the site and see what else I've written.
 ---
 
 ## 💬 Notes / Reflections
-I learned a lot about balancing **data depth and accessibility**. The most engaging stories often started with a compelling visual — and then backed it up with solid research.
+Payment processing is one of those things everyone takes for granted, but it has very complex billing and security structures. Just implementing it can be a huge challenge for small businesses, which has given rise to convenient but costly "third-party processors" that do most of the legwork for you. Similarly, small business financing has changed a lot from the days when the average owner would just walk into a bank and ask for a loan. Non-traditional lenders increasingly dominate the space, trading convenience for higher interest rates. It's a lot to navigate while running a business. 
 
