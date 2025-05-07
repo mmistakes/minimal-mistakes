@@ -42,4 +42,4 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 - **NY Health Feature Writing** – Monthly interviews with doctors  
 - **Data-Driven Event Calendars** – Automatically updated guides for NYC
 
-[→ View Experiments](/experiments/)
+[→ View Experiments](/now/)
