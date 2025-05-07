@@ -21,7 +21,7 @@ _Last updated: May 2025_
 
 - Game design prototyping, with an eye towards barcade audiences
 - Running over all of the major bridges in the Hudson Valley
-
+<img src="/assets/images/BearMountainBridge.jpg" alt="Bear Mountain Bridge" width="600" />
 ## 🛠 Tools I'm Using or Testing
 
 - [R Markdown](https://rmarkdown.rstudio.com/)
