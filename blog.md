@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Portfolio"
-permalink: /portfolio/
+permalink: /blog/
 author_profile: true
 sidebar:
   nav: "main"
