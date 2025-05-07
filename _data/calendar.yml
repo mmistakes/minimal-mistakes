@@ -18,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "6b - Ausflug ins Kino Spandau",
+    "title": "6b - Ausflug ins Kino Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzQ4ZGQ5aGZmaTRmNHZlcWRhbGM5ZjFvaWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-13T08:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-13T12:45:00+02:00"
+    },
+    "created": "2025-05-07T07:10:58.000Z",
+    "updated": "2025-05-07T07:10:59.076Z"
+  },
+  {
+    "image_path": null,
     "alt": "5b - Ausflug zur TU Berlin",
     "title": "5b - Ausflug zur TU Berlin",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2025-04-02T11:39:09.000Z",
     "updated": "2025-04-02T11:39:09.121Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei ",
-    "title": "6b - Ausflug in die Bücherei ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGMzcjBtNDZoZWhhcDZmczgxMzZzbW5wbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-26T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-26T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:23:11.000Z",
-    "updated": "2025-04-01T09:23:11.063Z"
   }
 ]
