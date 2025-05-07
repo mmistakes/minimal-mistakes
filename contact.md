@@ -1,7 +1,10 @@
 ---
 layout: single
-title: "Page Title"
-permalink: /page-url/
+title: "Contact"
+permalink: /contact/
 author_profile: true
 ---
-Page content goes here...
+
+Interested in working together? Feel free to connect with me on LinkedIn:
+
+- [LinkedIn](https://www.linkedin.com/in/cmotola/)
