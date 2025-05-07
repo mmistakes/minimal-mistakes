@@ -124,7 +124,7 @@ author:
   #avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Journalist | Analyst | Writer | Systems Designer"
   location         : "Greater NY"
-  email            : "Placeholder"
+  #email            : "Placeholder"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
