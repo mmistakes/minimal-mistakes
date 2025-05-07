@@ -17,7 +17,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Client:** National Business Capital    
 **Skills:** Data scraping, R, SQL, visualizations, writing    
 **Summary:** Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.    
-[→ View Article](#) | [→ Description](/portfolio/economic-trends/)  
+[→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Description](/portfolio/economic-trends/)  
 
 ---
 
