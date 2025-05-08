@@ -2,7 +2,7 @@
 layout: single
 title: "Analyzing U.S. Economic Lending Trends"
 permalink: /portfolio/economic-trends/
-author_profile: true
+author_profile: false
 sidebar:
   nav: "main"
 read_time: false
