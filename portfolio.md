@@ -2,7 +2,7 @@
 layout: single
 title: "Portfolio"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
 read_time: false
 sidebar:
   nav: "main"
