@@ -12,7 +12,12 @@ toc: true
 A music puzzle game built in [collaboration with chiptune artist Shael Riley](https://www.destructoid.com/chiptune-artist-shael-riley-wants-to-train-your-ears-with-new-game/) for PC. Released on [Steam](https://store.steampowered.com/app/402150/String_Theory/).  
 
 ---
-
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+  <img src="/assets/images/string-theory-1.png" alt="Gameplay 1" style="width: 45%; border-radius: 8px;" />
+  <img src="/assets/images/string-theory-2.png" alt="Gameplay 2" style="width: 45%; border-radius: 8px;" />
+  <img src="/assets/images/string-theory-3.png" alt="Gameplay 3" style="width: 45%; border-radius: 8px;" />
+  <img src="/assets/images/string-theory-4.png" alt="Gameplay 4" style="width: 45%; border-radius: 8px;" />
+</div>
 ## Concept
 We needed a novel design concept for a music-based game. At the time, most music games were effectively rhythm games that challenged players to identify and sync with a beat. 
 
