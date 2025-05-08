@@ -2,7 +2,7 @@
 layout: single
 title: "Writing & Research: Small Business Finance & Payment Processing"
 permalink: /portfolio/small-business-writing/
-author_profile: true
+author_profile: false
 sidebar:
   nav: "main"
 read_time: false
