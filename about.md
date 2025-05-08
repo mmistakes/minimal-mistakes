@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "About Me"
+title: "About Chris Motola"
 permalink: /about/
 author_profile: false
 read_time: false
