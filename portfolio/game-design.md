@@ -2,7 +2,7 @@
 layout: single
 title: "String Theory"
 permalink: /portfolio/game-design/
-author_profile: true
+author_profile: false
 sidebar:
   nav: "main"
 read_time: true
