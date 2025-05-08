@@ -2,7 +2,7 @@
 layout: single
 title: "Now"
 permalink: /now/
-author_profile: true
+author_profile: false
 read_time: false
 sidebar:
   nav: "main"
