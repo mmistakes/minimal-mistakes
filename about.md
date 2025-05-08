@@ -3,6 +3,7 @@ layout: single
 title: "About Me"
 permalink: /about/
 author_profile: true
+read_time: false
 sidebar:
   nav: "main"
 toc: true
