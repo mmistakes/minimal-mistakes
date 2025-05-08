@@ -2,7 +2,7 @@
 layout: single
 title: "Contact"
 permalink: /contact/
-author_profile: true
+author_profile: false
 ---
 
 Interested in working together? Feel free to connect with me on LinkedIn:
