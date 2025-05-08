@@ -18,6 +18,7 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
   <img src="/assets/images/string-theory-3.png" alt="Gameplay 3" style="width: 45%; border-radius: 8px;" />
   <img src="/assets/images/string-theory-4.png" alt="Gameplay 4" style="width: 45%; border-radius: 8px;" />
 </div>
+
 ## Concept
 We needed a novel design concept for a music-based game. At the time, most music games were effectively rhythm games that challenged players to identify and sync with a beat. 
 
