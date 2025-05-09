@@ -10,7 +10,7 @@ search: true # 검색기능에 나오게 할건지 여부
 
 ## Stable Diffusion 영상
 
-
+{% include video id="brcaIyprkZQ" provider="youtube" %}
 
 ## Stable Diffusion 설치
 
@@ -34,7 +34,7 @@ run.bat 설치 및 실행기능
 
 ## Ai 모델 다운로드
 
-[civitai.com](https://github.com/AUTOMATIC1111/stable-diffusion-webui?tab=readme-ov-file)
+[civitai.com](https://civitai.com/models)
 
 vram 사양 모델에 맞춰서 다운로드
 
