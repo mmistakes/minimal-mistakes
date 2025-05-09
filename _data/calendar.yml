@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "80. Jahrestag der Befreiung - Feiertag: Schule und Hort geschlossen!",
-    "title": "80. Jahrestag der Befreiung - Feiertag: Schule und Hort geschlossen!",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cDdnaWk5djU2Z2lhbGJpdmV0cDhvaGVycTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2025-05-08",
-      "date_time": null
-    },
-    "end": {
-      "date": "2025-05-09",
-      "date_time": null
-    },
-    "created": "2025-04-24T07:39:13.000Z",
-    "updated": "2025-04-24T07:39:13.673Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b - Ausflug ins Kino Spandau",
     "title": "6b - Ausflug ins Kino Spandau",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-04-02T11:39:09.000Z",
     "updated": "2025-04-02T11:39:09.121Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei ",
+    "title": "6b - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGMzcjBtNDZoZWhhcDZmczgxMzZzbW5wbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-26T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-26T12:45:00+02:00"
+    },
+    "created": "2025-04-01T09:23:11.000Z",
+    "updated": "2025-04-01T09:23:11.063Z"
   }
 ]
