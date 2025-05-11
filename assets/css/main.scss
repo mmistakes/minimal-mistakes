@@ -1,9 +1,17 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
+// In assets/css/main.scss
 
-@charset "utf-8";
+.dashboard-monthly-trends-container {
+  max-width: 1200px; /* Your desired specific width */
+  width: 100%;       /* Tries to be 100% of its parent, up to max-width */
+  margin-left: auto;  /* Centers the container */
+  margin-right: auto; /* Centers the container */
+  // border: 3px dashed blue !important; // For debugging container bounds
+}
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+.dashboard-monthly-trends-container iframe {
+  display: block;
+  width: 100%;    // This makes the iframe fill the 1200px (max) container
+  height: 950px;  // << YOUR ADJUSTED (TALLER) HEIGHT
+  border: none;
+  // border: 2px solid red !important; // For debugging iframe bounds
+}

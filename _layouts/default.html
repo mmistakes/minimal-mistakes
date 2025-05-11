@@ -1,12 +1,12 @@
 ---
+layout: default
 ---
 
 <!doctype html>
-{% include copyright.html %}
+{% comment %} {% include copyright.html %} {% endcomment %}
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    {% include head.html %} {% include head/custom.html %} <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
@@ -15,7 +15,7 @@
 
     <div class="initial-content">
       {{ content }}
-      {% include after-content.html %}
+      {% comment %} {% include after-content.html %} {% endcomment %}
     </div>
 
     {% if site.search == true %}
