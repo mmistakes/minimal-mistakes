@@ -14,16 +14,16 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
 ---
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
   <a href="/assets/images/string-theory-1.png" data-lightbox="game-gallery" data-title="Main menu and title screen">
-    <img src="/assets/images/string-theory-1.png" alt="Main menu" style="width: 45%; border-radius: 8px;" />
+    <img src="/assets/images/string-theory-1.png" alt="Main menu" style="flex: 1 1 45%; max-width: 45%; border-radius: 8px;" />
   </a>
   <a href="/assets/images/string-theory-2.png" data-lightbox="game-gallery" data-title="Puzzle interface with logic wires">
-    <img src="/assets/images/string-theory-2.png" alt="Puzzle interface" style="width: 45%; border-radius: 8px;" />
+    <img src="/assets/images/string-theory-2.png" alt="Puzzle interface" style="flex: 1 1 45%; max-width: 45%; border-radius: 8px;" />
   </a>
   <a href="/assets/images/string-theory-3.png" data-lightbox="game-gallery" data-title="Progression map and level design">
-    <img src="/assets/images/string-theory-3.png" alt="Progression map" style="width: 45%; border-radius: 8px;" />
+    <img src="/assets/images/string-theory-3.png" alt="Progression map" style="flex: 1 1 45%; max-width: 45%; border-radius: 8px;" />
   </a>
-  <a href="/assets/images/string-theory-4.png" data-lightbox="game-gallery" data-title="Settings and sound controls">
-    <img src="/assets/images/string-theory-4.png" alt="Settings screen" style="width: 45%; border-radius: 8px;" />
+  <a href="/assets/images/string-theory-4.png" data-lightbox="game-gallery" data-title="Gameplay">
+    <img src="/assets/images/string-theory-4.png" alt="Settings screen" style="flex: 1 1 45%; max-width: 45%; border-radius: 8px;" />
   </a>
 </div>
 
