@@ -6,7 +6,7 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
-This site exists to help explain what I do. I wear a fair number of different hats professionally, and it can be difficult to paint a coherent picture of my skill set and personality through my resume. Needless to say, sales is not my strong point.
+This site exists to help explain what I do. I wear a fair number of different hats professionally, and it can be difficult to paint a coherent picture of my skill set and personality through my resume.
 
 ### 📂 Featured Work  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
