@@ -8,13 +8,13 @@ categories: web
 excerpt: "Get과 Post의 차이?"
 tag: [web]
 ---
-# 📘 Get vs Post
+# Get vs Post
 
 ![image](https://velog.velcdn.com/images/soopy368/post/1eba5f07-d2f3-4239-abd5-627b9eff7008/image.png)
 
 ## 1️⃣ GET
 
-🔎 **서버로부터 정보를 요청할 때 사용하는 메서드**
+ **서버로부터 정보를 요청할 때 사용하는 메서드**
 
 ### ✅ 특징
 - 데이터가 **URL에 포함되어 전송**
@@ -26,7 +26,7 @@ tag: [web]
 
 ## 2️⃣ POST
 
-📝 **서버에 데이터를 생성/수정 요청할 때 사용하는 메서드**
+ **서버에 데이터를 생성/수정 요청할 때 사용하는 메서드**
 
 ### ✅ 특징
 - 데이터가 **HTTP Body**에 담겨 전송

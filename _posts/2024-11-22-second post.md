@@ -8,11 +8,10 @@ categories: web
 excerpt: "Styled Components 란?"
 tag: [web, Styled Components]
 ---
-# 📘 Styled Components에 대해서...
 
 ## 1️⃣ Styled Components란?
 
-✨ **Styled Components**는 `CSS-in-JS` 라이브러리입니다.  
+**Styled Components**는 `CSS-in-JS` 라이브러리입니다.  
 React 컴포넌트 내부에 **직접 스타일을 작성**할 수 있게 도와줍니다.
 
 ### 🔍 핵심 특징
@@ -38,7 +37,7 @@ yarn add styled-components
 
 ---
 
-## 3️⃣ 주요 장점 ✨
+## 3️⃣ 주요 장점 
 
 ### 💡 1. 컴포넌트 스타일 캡슐화
 - 스타일과 UI 로직이 **같은 파일**에 있어 유지보수가 쉬움

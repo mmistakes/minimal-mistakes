@@ -8,13 +8,13 @@ categories: web
 excerpt: "동기, 비동기기란?"
 tag: [web]
 ---
-# 📘 동기 vs 비동기
+# 동기 vs 비동기
 
 ![image](https://cdn.frontoverflow.com/document/first-met-redux/images/chapter_10/sync_and_async_in_redux.jpg)
 
 ## 1️⃣ Synchronous (동기 처리)
 
-🔁 **순차적 처리 방식**  
+**순차적 처리 방식**  
 요청을 보낸 후, 응답이 올 때까지 **기다린 뒤 다음 작업을 수행**합니다.
 
 ### ✅ 특징
@@ -42,7 +42,7 @@ taskB();
 ```
 
 ## 2️⃣ Asynchronous (비동기 처리)
-⚡ 비차단 방식, 비순차 처리 가능
+비차단 방식, 비순차 처리 가능
 요청을 보낸 후, 응답과 무관하게 다음 작업을 수행합니다.
 
 ### ✅ 특징
