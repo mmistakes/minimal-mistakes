@@ -13,8 +13,8 @@ This site exists to help explain what I do. I wear a fair number of different ha
 - **[Game Design](portfolio/game-design/)** – Experimental puzzle game based on musical chords
 - **[SEO-focused Writing](portfolio/small-business-writing/)** - Revenue-generating posts and reviews 
 
-### ✍️ Latest Blog Posts  #
-#{% for post in site.posts limit:3 %}
-#- [{{ post.title }}]({{ post.url }})
-#{% endfor %}
+# ### ✍️ Latest Blog Posts  
+{% for post in site.posts limit:3 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
