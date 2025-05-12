@@ -13,10 +13,18 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
 
 ---
 <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
-  <img src="/assets/images/string-theory-1.png" alt="Gameplay 1" style="width: 45%; border-radius: 8px;" />
-  <img src="/assets/images/string-theory-2.png" alt="Gameplay 2" style="width: 45%; border-radius: 8px;" />
-  <img src="/assets/images/string-theory-3.png" alt="Gameplay 3" style="width: 45%; border-radius: 8px;" />
-  <img src="/assets/images/string-theory-4.png" alt="Gameplay 4" style="width: 45%; border-radius: 8px;" />
+  <a href="/assets/images/string-theory-1.png" data-lightbox="game-gallery"
+    <img src="/assets/images/string-theory-1.png" alt="Gameplay 1" style="width: 45%; border-radius: 8px;" />
+  </a>
+  <a href="/assets/images/string-theory-2.png" data-lightbox="game-gallery">
+    <img src="/assets/images/string-theory-2.png" alt="Gameplay 2" style="width: 45%; border-radius: 8px;" />
+  </a>
+  <a href="/assets/images/string-theory-3.png" data-lightbox="game-gallery">
+    <img src="/assets/images/string-theory-3.png" alt="Gameplay 3" style="width: 45%; border-radius: 8px;" />
+  </a>
+  <a href="/assets/images/string-theory-4.png" data-lightbox="game-gallery">
+    <img src="/assets/images/string-theory-4.png" alt="Gameplay 4" style="width: 45%; border-radius: 8px;" />
+  </a>
 </div>
 
 ## Concept
