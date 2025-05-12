@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: web
 excerpt: "동기, 비동기기란?"
-tag: [web]
+tag: [web, python]
 ---
 # 동기 vs 비동기
 
@@ -18,61 +18,42 @@ tag: [web]
 요청을 보낸 후, 응답이 올 때까지 **기다린 뒤 다음 작업을 수행**합니다.
 
 ### ✅ 특징
-- 작업이 **직렬(serial)** 로 처리됨
-- 응답을 기다리는 동안 **다음 작업은 대기**
-- 코드가 **예측 가능하고 단순**
-- 하지만 **느림** (병목 발생 가능)
+- Django 기본 방식
+- 처리 흐름이 단순하고 직관적
+- 응답을 기다리는 동안 **다른 요청은 대기**
+- 많은 트래픽에선 **성능 저하** 발생 가능
 
 ### 📌 예시
 
-```js
-function taskA() {
-  console.log("A done");
-}
+```python
+import requests
+from django.http import JsonResponse
 
-function taskB() {
-  console.log("B done");
-}
-
-taskA();
-taskB();
-// 결과:
-// A done
-// B done
+def sync_view(request):
+    response = requests.get("https://api.example.com/data")
+    data = response.json()
+    return JsonResponse(data)
 ```
 
 ## 2️⃣ Asynchronous (비동기 처리)
-비차단 방식, 비순차 처리 가능
-요청을 보낸 후, 응답과 무관하게 다음 작업을 수행합니다.
+비차단 방식, 응답과 관계없이 다음 작업을 바로 실행할 수 있습니다.
 
 ### ✅ 특징
-응답을 기다리지 않고 다음 작업으로 넘어감
-
-자원을 효율적으로 활용
-
-복잡하지만 빠르고 유연
-
-Promise, async/await 등으로 처리
+- I/O 작업 중 다른 작업을 동시에 수행 가능
+- 높은 동시 처리량, 빠른 응답
+- 복잡한 흐름 제어 필요
 
 📌 예시
-```js
-function taskA(callback) {
-  setTimeout(() => {
-    console.log("A done");
-    callback();
-  }, 1000);
-}
+```python
+import httpx
+from django.http import JsonResponse
 
-function taskB() {
-  console.log("B done");
-}
+async def async_view(request):
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://api.example.com/data")
+    data = response.json()
+    return JsonResponse(data)
 
-taskA(() => {
-  taskB();
-});
-// 결과:
-// (1초 후) A done
-// B done
 ```
 
 ## 🔍 요약 비교
