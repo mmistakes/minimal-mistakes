@@ -12,22 +12,22 @@ toc: true
 A music puzzle game built in [collaboration with chiptune artist Shael Riley](https://www.destructoid.com/chiptune-artist-shael-riley-wants-to-train-your-ears-with-new-game/) for PC. Released on [Steam](https://store.steampowered.com/app/402150/String_Theory/).  
 
 ---
-<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
 
-  <a href="/assets/images/string-theory-1.jpg" data-lightbox="game-gallery" data-title="Main menu and title screen" style="flex: 1 1 45%; max-width: 45%;">
-    <img src="/assets/images/string-theory-1.jpg" alt="Main menu" style="width: 100%; border-radius: 8px;" />
+  <a href="/assets/images/string-theory-1.jpg" data-lightbox="game-gallery" data-title="Main menu and title screen">
+    <img src="/assets/images/string-theory-1.jpg" alt="Main menu" style="width: 45%; border-radius: 8px;" />
   </a>
 
-  <a href="/assets/images/string-theory-2.jpg" data-lightbox="game-gallery" data-title="Core puzzle interface with logic wires" style="flex: 1 1 45%; max-width: 45%;">
-    <img src="/assets/images/string-theory-2.jpg" alt="Puzzle interface" style="width: 100%; border-radius: 8px;" />
+  <a href="/assets/images/string-theory-2.jpg" data-lightbox="game-gallery" data-title="Puzzle interface with logic wires">
+    <img src="/assets/images/string-theory-2.jpg" alt="Puzzle interface" style="width: 45%; border-radius: 8px;" />
   </a>
 
-  <a href="/assets/images/string-theory-3.jpg" data-lightbox="game-gallery" data-title="Progression map and difficulty levels" style="flex: 1 1 45%; max-width: 45%;">
-    <img src="/assets/images/string-theory-3.jpg" alt="Progression map" style="width: 100%; border-radius: 8px;" />
+  <a href="/assets/images/string-theory-3.jpg" data-lightbox="game-gallery" data-title="Progression map and level design">
+    <img src="/assets/images/string-theory-3.jpg" alt="Progression map" style="width: 45%; border-radius: 8px;" />
   </a>
 
-  <a href="/assets/images/string-theory-4.jpg" data-lightbox="game-gallery" data-title="Settings screen with audio controls" style="flex: 1 1 45%; max-width: 45%;">
-    <img src="/assets/images/string-theory-4.jpg" alt="Settings screen" style="width: 100%; border-radius: 8px;" />
+  <a href="/assets/images/string-theory-4.jpg" data-lightbox="game-gallery" data-title="Settings and sound controls">
+    <img src="/assets/images/string-theory-4.jpg" alt="Settings screen" style="width: 45%; border-radius: 8px;" />
   </a>
 
 </div>
