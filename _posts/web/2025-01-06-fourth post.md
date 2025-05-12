@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: web
 excerpt: "Get과 Post의 차이?"
-tag: [web, python]
+tag: [web]
 ---
 # Get vs Post
 

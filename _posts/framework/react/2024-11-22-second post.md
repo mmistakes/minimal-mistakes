@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: web
 excerpt: "Styled Components 란?"
-tag: [react, Styled Components]
+tag: [react]
 ---
 
 ## 1️⃣ Styled Components란?

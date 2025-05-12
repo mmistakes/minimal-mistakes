@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: web
 excerpt: "동기, 비동기기란?"
-tag: [web, python]
+tag: [web]
 ---
 # 동기 vs 비동기
 

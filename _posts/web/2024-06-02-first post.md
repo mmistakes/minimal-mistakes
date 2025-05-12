@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "목차"
 categories: web
 excerpt: "API란 무엇이며, 왜 중요한가?"
-tag: [web, api]
+tag: [web]
 ---
 
 # API에 대해서...
