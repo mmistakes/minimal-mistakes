@@ -16,7 +16,6 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 header_pages:
   - about.md
   - portfolio.md
-  #- blog.md
   - now.md
   - contact.md
 
