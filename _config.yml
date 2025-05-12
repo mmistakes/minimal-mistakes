@@ -116,7 +116,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "github.io blog"
   location         : "Seoul, Korea"
-  email            : 
+  email            : sjlim1217@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
