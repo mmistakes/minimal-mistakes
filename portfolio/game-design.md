@@ -13,23 +13,18 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
 
 ---
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-
   <a href="/assets/images/string-theory-1.jpg" data-lightbox="game-gallery" data-title="Main menu and title screen">
     <img src="/assets/images/string-theory-1.jpg" alt="Main menu" style="width: 45%; border-radius: 8px;" />
   </a>
-
   <a href="/assets/images/string-theory-2.jpg" data-lightbox="game-gallery" data-title="Puzzle interface with logic wires">
     <img src="/assets/images/string-theory-2.jpg" alt="Puzzle interface" style="width: 45%; border-radius: 8px;" />
   </a>
-
   <a href="/assets/images/string-theory-3.jpg" data-lightbox="game-gallery" data-title="Progression map and level design">
     <img src="/assets/images/string-theory-3.jpg" alt="Progression map" style="width: 45%; border-radius: 8px;" />
   </a>
-
   <a href="/assets/images/string-theory-4.jpg" data-lightbox="game-gallery" data-title="Settings and sound controls">
     <img src="/assets/images/string-theory-4.jpg" alt="Settings screen" style="width: 45%; border-radius: 8px;" />
   </a>
-
 </div>
 
 ## Concept
