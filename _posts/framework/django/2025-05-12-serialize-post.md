@@ -4,7 +4,7 @@ title: "📘 [Django] Serialize란? "
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: python
+categories: django
 excerpt: "직렬화(Serialization)의 개념과 실제 Python 웹 개발에서의 활용"
 tag: [django]
 ---
