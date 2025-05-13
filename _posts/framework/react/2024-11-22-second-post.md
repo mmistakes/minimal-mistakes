@@ -4,7 +4,7 @@ title: "📘[REACT] Styled Components..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
-categories: web
+categories: react
 excerpt: "Styled Components 란?"
 tag: [react]
 ---
