@@ -1,5 +1,5 @@
 ---
-title: "노코딩 프로젝트 Non-coding Prjoects - Youtube 요약 -> Notion -> Slack (Make 이용)"
+title: "노코딩 프로젝트 Non-coding Prjoects - Youtube 요약 -> Notion -> Slack (Make 및 n8n 이용)"
 categories:
   - Non-coding
 tags:
@@ -7,15 +7,15 @@ tags:
   - Make
   - Gemini
   - Slack
-last_modified_at: 2024-04-22T11:00:00+11:30
+last_modified_at: 2024-05-13T11:00:00+11:30
 ---
 
 ## 아이폰에서 Youtube 스크립트 자동 요약 (Make 이용)
 
-### 1 아이폰에서 보고 있는 youtube 영상의 링크를 '공유' 기능을 통해 tally에 자동복사
+### 1. 아이폰에서 보고 있는 youtube 영상의 링크를 '공유' 기능을 통해 tally에 자동복사
 
 
-### 2 Make.com에서 
+### 2. Make.com에서 
   - Youtube 영상 스크립트 Text 뽑기 
   - Gemini로 요약
   - Notion에서 DB화
@@ -35,15 +35,16 @@ last_modified_at: 2024-04-22T11:00:00+11:30
 
 ## 아이폰에서 Youtube 스크립트 자동 요약 (n8n 이용)
 
-### 1 아이폰에서 보고 있는 youtube 영상의 링크를 '공유' 기능을 통해 tally에 자동복사
+### 1. 아이폰에서 보고 있는 youtube 영상의 링크를 '공유' 기능을 통해 tally에 자동복사
 
-### 2 n8n에서 trigger받아 요약 처리
+### 2. n8n에서 trigger받아 요약 처리
 ![](/assets/images/KmGGCvtknK.png)
 
 
-### 3 telegram으로 요약 결과를 bot을 통해 제공
+### 3. telegram으로 요약 결과를 bot을 통해 제공
 
-### 참고 
+
+## 참고 
 - https://n8n.io/workflows/2736-summarize-youtube-videos-from-transcript/
 - https://apify.com/streamers/youtube-scraper/input-schema
 
