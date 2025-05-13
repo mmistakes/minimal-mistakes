@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘[Web] 동기와 비동기에 대해서..."
+title: "📘 동기와 비동기에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘 [Django] Serialize란? "
+title: "📘 Serialize란? "
 toc: true
 toc_sticky: true
 toc_label: "목차"

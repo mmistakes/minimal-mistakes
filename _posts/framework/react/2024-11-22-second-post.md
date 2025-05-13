@@ -1,11 +1,11 @@
 ---
 layout: single
-title: "📘[REACT] Styled Components..."
+title: "📘 Styled Components..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
 categories: react
-excerpt: "Styled Components 란?"
+excerpt: "Styled Components?"
 tag: [react]
 ---
 

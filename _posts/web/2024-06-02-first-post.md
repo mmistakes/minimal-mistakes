@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "📘 [Web] API에 대해서..."
+title: "📘 API에 대해서..."
 toc: true
 toc_sticky: true
 toc_label: "목차"
