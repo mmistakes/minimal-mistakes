@@ -86,14 +86,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <!-- <span class="nav__sub-title">💾 DB</span>
+        <span class="nav__sub-title">💾 DB</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "db" %}
                         <li><a href="/categories/db" class="">DB({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul> -->
+            </ul>
         <!-- <span class="nav__sub-title">🛠️ DevOps</span>
             <ul>
                 {% for category in site.categories %}
