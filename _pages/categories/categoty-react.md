@@ -10,5 +10,5 @@ sidebar_main: true
 {% assign layout_type = page.entries_layout | default: "list" %}
 
 {% for post in posts %}
-  {% include archive-single2.html type=layout_type %}
+  {% include archive-single2.html %}
 {% endfor %}
