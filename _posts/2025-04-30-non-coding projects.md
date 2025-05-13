@@ -12,6 +12,7 @@ tags:
   - Gemini
   - MVP
   - 바이브코딩
+  - 업무자동화
 last_modified_at: 2024-04-30T13:00:00+13:30
 ---
 
@@ -20,7 +21,7 @@ last_modified_at: 2024-04-30T13:00:00+13:30
 [![RAG기반 AI 챗봇 직접 만들어쓰기. 무제한 확장은 기본, Supabase 활용은 덤!](http://img.youtube.com/vi/Fk5pQ0fQkJ0/0.jpg)](https://youtu.be/Fk5pQ0fQkJ0) 
 
 
-### [개발중] 번역-등록 업무 자동화(n8n) 
+### [개발중] 리콜공포문의 번역-등록 업무 자동화(n8n) 
 
 ##### - 수기 workflow
 ![수기 workflow](/assets/images/OECD%20등록%20수기%20업무%20절차1%20(2).png)

@@ -20,13 +20,13 @@ last_modified_at: 2024-04-30T13:00:00+13:30
 - [품목 찾기 관리자 웹사이트](https://product-items-viewer-app.web.app/admin)
   - 관리자용 webpage로 품목 데이터 업로드
 
-</br>
+
 
 ### 배경
 - 제품안전관리법에 의해 규제받는 제품인지 아닌지 쉽게 찾아주는 web application
 - firebase를 기초로, gemini 2.5 pro exp(https://aistudio.google.com)와 VScode copliot을 이용하여 만듬
   
-  </br>
+
   
 ### 구현 단계 요약:
 0. (아주 초기단계) 간단한 web app. 우선 개발
@@ -42,12 +42,12 @@ last_modified_at: 2024-04-30T13:00:00+13:30
     *   **관리자 페이지 (`admin.html`, `admin.js` 새로 만들기):** 파일 업로드와 비밀번호 입력 필드를 만들고, 관리자용 Cloud Function으로 데이터를 전송하는 JavaScript 코드를 작성합니다.
 5.  **Firebase Hosting 배포:** 사용자 페이지와 관리자 페이지 파일들을 Firebase Hosting에 배포합니다.
 
-</br>
+
 
 ### 걸린 시간:
 - 2일(대략 6시간 걸림)
 
-</br>
+
 
 ### 시사점
 - 어려운 용어들이 많아, firestore 등 백엔드 만들기가 쉽지 않았으나, 좋은 경험이 됨

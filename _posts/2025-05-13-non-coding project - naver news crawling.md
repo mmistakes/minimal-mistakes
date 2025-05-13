@@ -27,12 +27,15 @@ last_modified_at: 2024-05-13T10:00:00+11:30
 
 ## 주요 이슈사항
 
-### gemini가 코드블록으로 json 형식을 출력 -> AI Agent의 structured output paser 노드 활용
-### website contents 추출(Crawling) -> jian.ai로 활용
+### gemini가 코드블록으로 json 형식( ` ```json `)을 출력
+     AI Agent의 structured output paser 노드 활용
+### website contents 추출(Crawling)
+- jian.ai 활용하여 이슈 해결
+- apify.com의 actor([website-content-crawler](https://apify.com/apify/website-content-crawler))를 사용하여 해결 가능할 수 있음
 
 
 ## 참고 
-- [솔브잇Guide](https://youtube.com/watch?v=T5va0A7wvHk&si=5xEwNEqyGTzO_YdO)
+- [솔브잇 Youtube](https://youtube.com/watch?v=T5va0A7wvHk&si=5xEwNEqyGTzO_YdO)
 - https://n8n.io/workflows/2957-essential-multipage-website-scraper-with-jinaai
 - https://jina.ai/reader/
 
