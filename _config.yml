@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "SEUNGJE"
+title                    : "SEUNGJELOG"
 future                   : true
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -115,13 +115,13 @@ analytics:
 author:
   name             : "Lim Seungje"
   avatar           :  "/assets/images/profile.jpg"
-  bio              : "github.io blog"
+  bio              : "공부 기록 블로그🎶"
   location         : "Korea"
   email            : "sjlim1217@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "sjlim1217@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/seungje1217"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
