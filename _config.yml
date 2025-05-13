@@ -114,10 +114,10 @@ analytics:
 # Site Author
 author:
   name             : "Lim Seungje"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           :  "/assets/images/profile.jpg"
   bio              : "github.io blog"
-  location         : "Seoul, Korea"
-  email            : sjlim1217@naver.com
+  location         : "Korea"
+  email            : "sjlim1217@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
