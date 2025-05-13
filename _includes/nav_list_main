@@ -1,0 +1,137 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style>
+      </li>
+      <li>
+        <span class="nav__sub-title">💻 Language</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
+                {% for category in site.categories %}
+                    {% if category[0] == "java" %}
+                        <li><a href="/categories/java" class="">JAVA({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "python" %}
+                        <li><a href="/categories/python" class="">PYTHON({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "cs" %}
+                        <li><a href="/categories/cs" class="">C#({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "javascript" %}
+                        <li><a href="/categories/javascript" class="">JAVASCRIPT({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "jsp" %}
+                <li><a href="/categories/jsp" class="">JSP({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">🚀 Framework</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "spring" %}
+                        <li><a href="/categories/spring" class="">SPRING({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "django" %}
+                        <li><a href="/categories/django" class="">DJANGO({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "fastapi" %}
+                        <li><a href="/categories/fastapi" class="">FASTAPI({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "flask" %}
+                        <li><a href="/categories/flask" class="">FLASK({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">🧑‍💻 Coding Test</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "algorithms" %}
+                        <li><a href="/categories/algorithms" class="">ALGORITHMS({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "baekjoon" %}
+                        <li><a href="/categories/baekjoon" class="">BAEKJOON({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">🌐 Web</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "web" %}
+                        <li><a href="/categories/web" class="">WEB({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">💾 DB</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "db" %}
+                        <li><a href="/categories/db" class="">DB({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">🛠️ DevOps</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "docker" %}
+                        <li><a href="/categories/docker" class="">DOCKER({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">🤖 AI</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ai" %}
+                        <li><a href="/categories/ai" class="">AI({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">💡 ETC</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "etc" %}
+                        <li><a href="/categories/etc" class="">ETC({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+  </ul>
+</nav>
