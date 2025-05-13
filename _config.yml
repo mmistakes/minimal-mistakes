@@ -324,6 +324,4 @@ defaults:
       share: true
       related: true
       mathjax: true
-      sidebar:
-        nav: "category"
       sidebar_main: true
