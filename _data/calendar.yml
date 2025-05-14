@@ -1,20 +1,37 @@
 [
   {
     "image_path": null,
-    "alt": "6a, 6b und 6c - Ausflug ins Kino Spandau",
-    "title": "6a, 6b und 6c - Ausflug ins Kino Spandau",
+    "alt": "A6 - Ausflug in den Zoo",
+    "title": "A6 - Ausflug in den Zoo",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzQ4ZGQ5aGZmaTRmNHZlcWRhbGM5ZjFvaWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NTQzdGVqYnFmZzlobGRiOWJkNnFxaDh1ZXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2025-05-13T08:30:00+02:00"
+      "date_time": "2025-05-16T07:45:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2025-05-13T12:45:00+02:00"
+      "date_time": "2025-05-16T13:00:00+02:00"
     },
-    "created": "2025-05-07T07:10:58.000Z",
-    "updated": "2025-05-12T07:47:55.081Z"
+    "created": "2025-05-13T05:26:54.000Z",
+    "updated": "2025-05-13T05:26:54.107Z"
+  },
+  {
+    "image_path": null,
+    "alt": "5c - Ausflug zum Park am Gleisdreieck",
+    "title": "5c - Ausflug zum Park am Gleisdreieck",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmEwcGhyNDZpYnE5b241ZTcwa2xyNzYzbnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-16T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-16T13:00:00+02:00"
+    },
+    "created": "2025-05-13T05:26:02.000Z",
+    "updated": "2025-05-13T05:26:02.653Z"
   },
   {
     "image_path": null,
@@ -49,23 +66,6 @@
     },
     "created": "2025-04-28T09:40:36.000Z",
     "updated": "2025-04-28T09:40:36.821Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGU5aDJ1cG9rMGZldGYyYjE0cGVqbW9xaDIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-21T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-21T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:22:36.000Z",
-    "updated": "2025-04-01T09:22:36.664Z"
   },
   {
     "image_path": null,
