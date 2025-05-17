@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Welcome to Self Evidence (with Plotly)"
 date: 2025-05-10
 ---
