@@ -1,11 +1,20 @@
-{% comment %}
-  Repurposing this file as "after-scripts.html" snippet,
-  since the docs site isn't using comments anyway.
-{% endcomment %}
-<style>
-.google-auto-placed {
-  margin: 2em auto;
-}
-</style>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+{% if site.comments.provider and page.comments %}
+{% case site.comments.provider %}
+  {% when "disqus" %}
+    {% include /comments-providers/disqus.html %}
+  {% when "discourse" %}
+    {% include /comments-providers/discourse.html %}
+  {% when "facebook" %}
+    {% include /comments-providers/facebook.html %}
+  {% when "staticman" %}
+    {% include /comments-providers/staticman.html %}
+  {% when "staticman_v2" %}
+    {% include /comments-providers/staticman_v2.html %}
+  {% when "utterances" %}
+    {% include /comments-providers/utterances.html %}
+  {% when "giscus" %}
+    {% include /comments-providers/giscus.html %}
+  {% when "custom" %}
+    {% include /comments-providers/custom_scripts.html %}
+{% endcase %}
+{% endif %}
