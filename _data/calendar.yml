@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A6 - Ausflug in den Zoo",
-    "title": "A6 - Ausflug in den Zoo",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NTQzdGVqYnFmZzlobGRiOWJkNnFxaDh1ZXQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-16T07:45:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-16T13:00:00+02:00"
-    },
-    "created": "2025-05-13T05:26:54.000Z",
-    "updated": "2025-05-13T05:26:54.107Z"
-  },
-  {
-    "image_path": null,
-    "alt": "5c - Ausflug zum Park am Gleisdreieck",
-    "title": "5c - Ausflug zum Park am Gleisdreieck",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmEwcGhyNDZpYnE5b241ZTcwa2xyNzYzbnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-16T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-16T13:00:00+02:00"
-    },
-    "created": "2025-05-13T05:26:02.000Z",
-    "updated": "2025-05-13T05:26:02.653Z"
-  },
-  {
-    "image_path": null,
     "alt": "5b - Ausflug zur TU Berlin",
     "title": "5b - Ausflug zur TU Berlin",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2025-04-01T09:23:11.000Z",
     "updated": "2025-04-01T09:23:11.063Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A3 - Ausflug zum Spielplatz Kladow",
+    "title": "A3 - Ausflug zum Spielplatz Kladow",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWFobTN2ZTcwbXZ1YjBzYWkzZTU2dTVpc3EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-26T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-26T14:00:00+02:00"
+    },
+    "created": "2025-05-16T08:50:52.000Z",
+    "updated": "2025-05-16T08:50:52.234Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei ",
+    "title": "6b - Ausflug in die Bücherei ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWwxbzZuODAyNmJobTQ5Z3YxZmhvN2s2dHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-05-28T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-05-28T12:45:00+02:00"
+    },
+    "created": "2025-04-01T09:23:54.000Z",
+    "updated": "2025-04-01T09:23:54.627Z"
   }
 ]
