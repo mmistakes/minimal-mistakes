@@ -7,34 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-// Custom styles
-.layout--home {
-  .page__hero--overlay {
-    height: 50vh; // This makes the hero section 50% of the viewport height
-    min-height: 400px; // Minimum height of 400px
-    max-height: 600px; // Maximum height of 600px
-  }
-}
-
-// Increase masthead logo size
-.site-logo {
-  img {
-    max-height: 4.0rem; // Increased from default 2rem
-  }
-}
-
-// Keep masthead height fixed
-.masthead {
-  &__inner-wrap {
-    padding: 0.25em 0.25em; // Reduce padding
-  }
-}
-
-// Change search icon color
-.search__toggle {
-  color: #000 !important; // Change to black
-  &:hover {
-    color: #666 !important; // Lighter on hover
-  }
-}
