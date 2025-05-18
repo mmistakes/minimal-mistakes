@@ -7,3 +7,18 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// 统一首页特色图片大小
+.feature__item {
+    .archive__item-teaser {
+      height: 200px;      // 设置统一高度
+      overflow: hidden;   // 隐藏超出部分
+      
+      img {
+        width: 100%;      // 宽度100%
+        height: 200px;    // 设置统一高度
+        object-fit: cover; // 保持图片比例并填充容器
+        object-position: center; // 居中显示
+      }
+    }
+  }
