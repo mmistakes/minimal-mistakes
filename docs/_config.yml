@@ -15,7 +15,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Self Evidence"
 title_separator          : "-"
-subtitle                 : # "We hold this (publicly available, transparently analyzed) data to be self-evident." # site tagline that appears below site title in masthead
+subtitle                 : Public Data, Transparently Analyzed # site tagline that appears below site title in masthead
 name                     : "Anne Bode"
 description              : "Self Evidence is a platform for cleaning and analyzing publicly available data."
 url                      : "https://selfevidence.github.io"
