@@ -3,27 +3,30 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/home-banner.jpg
+  overlay_image: /assets/images/home-banner-1.jpg
   actions:
-    - label: "开始阅读"
-      url: "/posts/"
+    - label: "关于我"
+      url: "/about/"
 excerpt: >
-  欢迎来到本本的网络杂货铺<br />
+  欢迎来到本本的网络杂物间<br />
   <small>Welcome to BryceGo33's website!</small>
 feature_row:
-  - alt: "闲聊随笔"
+  - image_path: /assets/images/minecraft-house.png
+    alt: "闲聊随笔"
     title: "闲聊随笔"
     excerpt: "想到啥写啥"
     url: "/tags/#闲聊"
     btn_class: "btn--primary"
     btn_label: "查看文章"
-  - alt: "技术专区"
+  - image_path: /assets/images/tech-brain.jpg
+    alt: "技术专区"
     title: "技术专区"
-    excerpt: "有点技术在里头的闲聊plus版"
+    excerpt: "可能有点技术在里头的闲聊plus版"
     url: "/tags/#技术"
     btn_class: "btn--primary"
-    btn_label: "了解更多"
-  - alt: "占个位"
+    btn_label: "探索一下"
+  - image_path: /assets/images/minecraft-zombie.png
+    alt: "占个位"
     title: "没想好"
     excerpt: "占位符"
     url: "/tags/"
@@ -32,20 +35,3 @@ feature_row:
 ---
 
 {% include feature_row %}
-
-<h3 class="archive__subtitle">最新文章</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts | sort: 'date' | reverse %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts limit:5 %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
-
-<a href="/posts/" class="btn btn--info">查看全部文章</a>

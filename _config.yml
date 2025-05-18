@@ -17,15 +17,15 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "本本的网络杂货铺"
+title                    : "本本的网络杂物间"
 title_separator          : "-"
-subtitle                 : "Version 2.0"
+subtitle                 : "We’ll be counting stars."
 name                     : "BryceGo33"
-description              : "本本的网络杂货铺-全新2.0版本"
+description              : "本本的网络杂物间-全新2.0版本"
 url                      : "https://brycego33.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "BryceGo33/brycego33.github.io"
-teaser                   : "/assets/images/teaser-test.png"
+teaser                   : "/assets/images/teaser-default.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "BryceGo33"
   avatar           : "/assets/images/avatar-cat.png"
-  bio              : "I am an **amazing** person."
+  bio              : "**We'll be counting stars.**"
   location         : "Hangzhou, ZJ"
   email            : "wnb765853463@gmail.com"
 
@@ -309,3 +309,8 @@ defaults:
       share: false
       related: true
       show_last_modified: false
+      toc: true
+      toc_label: "On this page"
+      toc_levels: 1..2
+      toc_icon: "file-alt"
+      toc_sticky: true

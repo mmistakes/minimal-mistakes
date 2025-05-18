@@ -1,17 +1,17 @@
 ---
 title: "About"
 permalink: /about/
-layout: single
+layout: home
 author_profile: true
 ---
 
 ## 关于本站
 
-本本的网络杂货铺是一个记录个人学习笔记、技术探索和生活感悟的博客。
+本本的网络杂物间是一个整理随手记的博客。
 
 ## 关于我
 
-我是BryceGo33，居住在杭州，热爱编程与技术探索。
+我是本本，英文名Bryce，目前在杭州工作、生活。
 
 ## 联系方式
 
