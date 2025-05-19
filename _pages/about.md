@@ -15,7 +15,9 @@ author_profile: true
 
 ## 联系方式
 
-- Email: wnb765853463@gmail.com
+- Gmail: wnb765853463@gmail.com
+
+- NetEase Mail: wnb_bryce@163.com
 
 ## 本站技术
 
