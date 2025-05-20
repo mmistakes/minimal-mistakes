@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "5b - Ausflug zur TU Berlin",
-    "title": "5b - Ausflug zur TU Berlin",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnFzcmM1N3Jpcjgzczd0OGYwODk0aXBxZTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-19T07:50:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-19T14:00:00+02:00"
-    },
-    "created": "2025-04-28T09:38:24.000Z",
-    "updated": "2025-04-28T09:38:24.336Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4c - Ausflug zur Gartenarbeitsschule",
-    "title": "4c - Ausflug zur Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXE2M2phMGpzdHFxYTFxZHM4MW1kamlzdmUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-19T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-19T13:00:00+02:00"
-    },
-    "created": "2025-04-28T09:40:36.000Z",
-    "updated": "2025-04-28T09:40:36.821Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug ins Theater Zitadelle",
     "title": "A5 - Ausflug ins Theater Zitadelle",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2025-04-01T09:23:54.000Z",
     "updated": "2025-04-01T09:23:54.627Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Brückentag: Unterrichtsfrei - Schule und Hort geschlossen",
+    "title": "Brückentag: Unterrichtsfrei - Schule und Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bDdoaXFzcDgwb3BsdjhsdXIxNDJzM2RzMTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-05-30",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-05-31",
+      "date_time": null
+    },
+    "created": "2025-04-24T07:40:39.000Z",
+    "updated": "2025-04-24T07:40:39.938Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei",
+    "title": "6b - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmNmcGs4NXI0ZjR2Yzl2YmlpZzA4MWtwdnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-02T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-02T12:45:00+02:00"
+    },
+    "created": "2025-04-01T09:24:35.000Z",
+    "updated": "2025-04-01T09:24:35.858Z"
   }
 ]
