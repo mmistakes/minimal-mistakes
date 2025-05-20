@@ -98,14 +98,14 @@ analytics:
 
 # Site Author
 author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
+  name             : Kazuma Takakura
+  avatar           : "/assets/images/IMG_7355.jpg"
+  bio              : "Ph.D. Student in Economics"
+  location         : "College Park, MD"
   links:
-    - label: "Made Mistakes"
-      icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:takakura@umd.edu"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/mmistakes"
