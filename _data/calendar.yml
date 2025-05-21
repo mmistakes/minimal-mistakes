@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A4 - Ausflug in die Bücherei ",
-    "title": "A4 - Ausflug in die Bücherei ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHVnOGprYzFjcmc2b29mOGlscnJzY2pubjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-20T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-20T11:30:00+02:00"
-    },
-    "created": "2025-05-20T05:36:30.000Z",
-    "updated": "2025-05-20T05:36:30.245Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug ins Theater Zitadelle",
     "title": "A5 - Ausflug ins Theater Zitadelle",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-04-01T09:23:54.000Z",
     "updated": "2025-04-01T09:23:54.627Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Brückentag: Unterrichtsfrei - Schule und Hort geschlossen",
+    "title": "Brückentag: Unterrichtsfrei - Schule und Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bDdoaXFzcDgwb3BsdjhsdXIxNDJzM2RzMTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-05-30",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-05-31",
+      "date_time": null
+    },
+    "created": "2025-04-24T07:40:39.000Z",
+    "updated": "2025-04-24T07:40:39.938Z"
   }
 ]
