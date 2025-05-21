@@ -1,3 +1,8 @@
+---
+layout: single
+title: "1.염화물 응력 부식균열 (Chloride SCC)"
+---
+
 # 염화물 응력 부식균열 (Chloride SCC) – NACE & API 571 기준 정리
 
 **염화물 응력 부식균열(Cl-SCC, Chloride Stress Corrosion Cracking)**은 오스테나이트계 스테인리스강이 **염화물 이온(Cl⁻)**, **인장 응력**, **상대적으로 높은 온도** 조건이 동시에 존재할 때 발생하는 파괴 메커니즘입니다.

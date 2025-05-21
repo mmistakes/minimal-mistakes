@@ -1,3 +1,8 @@
+---
+layout: single
+title: "1.CUI (Corrosion Under Insulation)"
+---
+
 # CUI (Corrosion Under Insulation) – API 571 기준 정리
 
 **CUI(Corrosion Under Insulation, 보온재 하부 부식)**는 보온재 내부에 수분이 침투하면서 배관이나 장비 외부 표면에서 발생하는 국부적인 부식 현상입니다. API 571에서는 CUI를 주요 손상 메커니즘 중 하나로 분류하며, 주로 탄소강 및 저합금강에서 문제가 발생합니다.
