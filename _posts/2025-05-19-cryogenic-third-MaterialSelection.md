@@ -39,7 +39,7 @@ title: "3.  Cryogenic 재료(Material) 선정"
 - **PWHT(후열처리)** 여부에 따라 일정 및 시공 난이도 달라짐 (ex. ASME B31.3(2022) 의 331.1 및 Table 331.1.1 참조, P no.1 은 19mm 초과일 경우 )
 - Valve는 
   - Extended Bonnet (or Extended Stem)을 사용, 
-  - Ball valve 및 Gate valve는 Cavity Vent hole 있어야 함 (Cavity 구간의 기화 시 밸브 데이미 방지를 위해)
+  - Ball valve 및 Gate valve는 Cavity Vent hole 있어야 함 (Cavity 구간의 기화 시 밸브 데미지 방지를 위해)
 
 
 ---
