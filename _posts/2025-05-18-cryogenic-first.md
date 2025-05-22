@@ -1,6 +1,8 @@
 ---
 layout: single
 title:  "1.Cryogenic 개요 및 정의"
+categories: Piping Engineering
+tag: Austenite SS, PWHT
 ---
 # Cryogenic(극저온)이란?
 Cryogenic(극저온)이란 매우 낮은 온도를 나타내는 용어로, 일반적으로 영하 약 -150 ℃ (123 K 또는 -238 ℉) 이하의 온도를 의미합니다. 이는 물리적인 성질이 상온과 크게 달라지는 영역으로, 주로 기체 상태인 물질이 액체로 변환되는 온도 구간을 포함합니다.
