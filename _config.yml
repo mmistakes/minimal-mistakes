@@ -1,65 +1,14 @@
-# Site settings
-title: "Samuel Chinson"
-name: "Samuel Chinson"
-email: "samuel.chinson@gmail.com"
-description: >-
-  Personal portfolio website for Samuel Chinson — Data Analyst & Data Science enthusiast.
-baseurl: "" # Leave empty unless you're serving from a subdirectory
-url: "https://samuelchinson.github.io" # Your GitHub Pages URL
-repository: "samuelchinson/samuelchinson.github.io"
+title: "Portofolio Samuel"
+description: "Website portofolio saya"
+baseurl: "" # jika repo-nya bernama username.github.io, kosongkan
+url: "https://ch1ns0n.github.io" # ganti dengan URL GitHub Pages kamu
 
-# Build settings
-markdown: kramdown
-theme: minimal-mistakes-jekyll
+theme: "minimal-mistakes-jekyll"
+
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-include-cache
+  - jekyll-remote-theme
 
-# Author settings
-author:
-  name   : "Samuel Chinson"
-  avatar : "/assets/images/avatar.png" # Optional profile image
-  bio    : "Data Analyst | NLP & Machine Learning Enthusiast"
-  location: "Jakarta Timur, Indonesia"
-  email  : "samuel.chinson@gmail.com"
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/samuelchinson/"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/samuelchinson"
+remote_theme: mmistakes/minimal-mistakes
 
-# Navigation
-# These titles must match the filenames/permalinks in markdown
-navigation:
-  - title: "About"
-    url: /about/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Resume"
-    url: /resume/
-
-# Permalinks
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
+# opsional
+minimal_mistakes_skin: default
