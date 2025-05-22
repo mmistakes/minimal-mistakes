@@ -1,14 +1,10 @@
 title: "Portofolio Samuel"
-description: "Website portofolio saya"
-baseurl: "" # jika repo-nya bernama username.github.io, kosongkan
-url: "https://ch1ns0n.github.io" # ganti dengan URL GitHub Pages kamu
+description: "Selamat datang di portofolio saya"
+baseurl: "" 
+url: "https://samuelchinson.github.io"
 
-theme: "minimal-mistakes-jekyll"
-
+remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-remote-theme
 
-remote_theme: mmistakes/minimal-mistakes
-
-# opsional
-minimal_mistakes_skin: default
+minimal_mistakes_skin: "default"
