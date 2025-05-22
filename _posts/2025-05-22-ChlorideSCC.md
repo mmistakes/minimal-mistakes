@@ -2,6 +2,7 @@
 layout: single
 title: "1.염화물 응력 부식균열 (Chloride SCC)"
 categories: Piping
+tag: [Corrosion, SCC]
 ---
 
 # 염화물 응력 부식균열 (Chloride SCC) – NACE & API 571 기준 정리
