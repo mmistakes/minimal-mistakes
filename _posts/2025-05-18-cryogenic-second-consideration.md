@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "2.Cryogenic Service 설계 기준"
+title: "2.Cryogenic Service 설계 기준"
 categories: Piping
 tag: Cryogenic
 ---

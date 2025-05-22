@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "1.Cryogenic 개요 및 정의"
+title: "1.Cryogenic 개요 및 정의"
 categories: Piping
 tag: Cryogenic
 ---
