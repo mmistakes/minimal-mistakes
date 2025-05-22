@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "1.CUI (Corrosion Under Insulation)"
-categories: Piping Engineering
+categories: Piping
 ---
 
 # CUI (Corrosion Under Insulation) – API 571 기준 정리

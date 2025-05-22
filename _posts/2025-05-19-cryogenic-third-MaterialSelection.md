@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "3.Cryogenic 재료(Material) 선정"
-categories: Piping Engineering
+categories: Piping
 ---
 
 ✅ 재료 선정 시 고려사항

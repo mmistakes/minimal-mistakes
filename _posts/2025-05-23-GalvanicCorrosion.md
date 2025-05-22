@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "1. 갈바닉 부식(Galvanic Corrosion)"
-categories: Piping Engineering
+categories: Piping
 ---
 
 
