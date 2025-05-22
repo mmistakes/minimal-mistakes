@@ -1,14 +1,16 @@
+# Site settings
 title: "Samuel Chinson"
 name: "Samuel Chinson"
 email: "samuel.chinson@gmail.com"
 description: >-
-  Data Analyst Portfolio
+  Personal portfolio website for Samuel Chinson — Data Analyst & Data Science enthusiast.
+baseurl: "" # Leave empty unless you're serving from a subdirectory
+url: "https://samuelchinson.github.io" # Your GitHub Pages URL
+repository: "samuelchinson/samuelchinson.github.io"
 
-url: "https://samuelchinson.github.io"
-baseurl: ""
-
+# Build settings
+markdown: kramdown
 theme: minimal-mistakes-jekyll
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -16,7 +18,23 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
 
+# Author settings
+author:
+  name   : "Samuel Chinson"
+  avatar : "/assets/images/avatar.png" # Optional profile image
+  bio    : "Data Analyst | NLP & Machine Learning Enthusiast"
+  location: "Jakarta Timur, Indonesia"
+  email  : "samuel.chinson@gmail.com"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/samuelchinson/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/samuelchinson"
+
 # Navigation
+# These titles must match the filenames/permalinks in markdown
 navigation:
   - title: "About"
     url: /about/
@@ -25,10 +43,23 @@ navigation:
   - title: "Resume"
     url: /resume/
 
-# Footer
-author:
-  name   : "Samuel Chinson"
-  email  : "samuel.chinson@gmail.com"
-  links:
-    - label: "LinkedIn"
-      url: "https://www.linkedin.com/in/samuelchinson/"
+# Permalinks
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
