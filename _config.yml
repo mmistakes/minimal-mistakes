@@ -3,9 +3,4 @@ description: "Selamat datang di portofolio saya"
 baseurl: "" 
 url: "https://samuelchinson.github.io"
 
-remote_theme: "mmistakes/minimal-mistakes"
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-
-minimal_mistakes_skin: "default"
+theme: jekyll-theme-cayman
