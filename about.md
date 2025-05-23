@@ -38,6 +38,6 @@ I’m a **Data Science undergraduate** at **Bunda Mulia University** with a stro
 
 ## 📫 Let’s Connect!
 
-- 📍 Jakarta Timur, Indonesia  
+- 📍 Jakarta Timur, Indonesia
 - 📧 [samuel.chinson@gmail.com](mailto:samuel.chinson@gmail.com)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/samuelchinson/)
