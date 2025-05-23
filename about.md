@@ -1,8 +1,7 @@
 ---
-layout: single
-title: "About Me"
+layout: default
+title: "About me"
 permalink: /about/
-author_profile: true
 ---
 
 ## 👋 Hello, I’m Samuel Chinson
