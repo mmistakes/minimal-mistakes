@@ -5,6 +5,6 @@ title: Home
 
 # Selamat Datang di Portofolio Saya
 
-<a href="/about/">Tentang Saya</a> |
-<a href="/resume/">Resume</a> |
-<a href="/portfolio/">Portfolio</a>
+- [About Me](/about/)
+- [Resume](/resume/)
+- [Portfolio](/portfolio/)
