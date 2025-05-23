@@ -5,6 +5,6 @@ title: Home
 
 # Selamat Datang di Portofolio Saya
 
-📄 [Tentang Saya](/about/)  
-📌 [Resume](/resume/)  
-📁 [Portfolio](/portfolio/)
+<a href="/about/">Tentang Saya</a> |
+<a href="/resume/">Resume</a> |
+<a href="/portfolio/">Portfolio</a>
