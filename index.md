@@ -1,6 +1,10 @@
 ---
-layout: home
-title: "Selamat datang"
+layout: default
+title: Home
 ---
 
-Ini adalah portofolio saya.
+# Selamat Datang di Portofolio Saya
+
+📄 [Tentang Saya](/about/)  
+📌 [Resume](/resume/)  
+📁 [Portfolio](/portfolio/)
