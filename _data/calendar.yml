@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4b - Ausflug nach Berlin Mitte",
-    "title": "4b - Ausflug nach Berlin Mitte",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnJzYjNiOTBmMnNiZDY0Y3Q4YTFiaG0yc3EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-23T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-23T13:30:00+02:00"
-    },
-    "created": "2025-05-20T05:43:29.000Z",
-    "updated": "2025-05-20T05:43:29.926Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b - Ausflug in die Bücherei ",
     "title": "6b - Ausflug in die Bücherei ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-04-01T09:24:35.000Z",
     "updated": "2025-04-01T09:24:35.858Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A4 - Ausflug zur Feuerwehr Spandau",
+    "title": "A4 - Ausflug zur Feuerwehr Spandau",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NjBka2RxY2M4NDc2bGM2Z2s2Z2E1cjc1NjEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-03T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-03T13:30:00+02:00"
+    },
+    "created": "2025-05-20T05:44:11.000Z",
+    "updated": "2025-05-20T05:44:11.966Z"
   }
 ]
