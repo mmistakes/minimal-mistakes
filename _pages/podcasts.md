@@ -22,6 +22,7 @@ AFAIK there isn't a tool you can use to review podcasts (something à la goodrea
 * [The big steal](https://www.thebigstealpodcast.com/) (finished?): by G Esler, a very interesting reconstruction of the aftermath of the fall of the Soviet Union that led today's plutocracy
 * [Wind of change](https://crooked.com/podcast-series/wind-of-change/) (2020, finished): a bit out there but I went with it as it's by P Radden Keffe, whose investigative journalism work I read and appreciated. It follows a crazy rumour whereby Scorpion's "Wind of change" was written/commissioned by the CIA for propaganda. Interesting listen - I really hate conspiracy theories so would have never chosen this but despite the wild story you can learn a lot of things about those times
 * [Empire](https://www.goalhangerpodcasts.com/empire) - by A Anand & W Dalrymple, this is great. The history of empires, in seasons
+* [ITA] quelli della serie "Hai presente?": [Hai presente il 25 aprile?](https://choramedia.com/podcast/hai-presente-il-25-aprile/), [Hai presente la marcia su Roma?](https://choramedia.com/podcast/hai-presente-la-marcia-su-roma/), [Hai presente l'8 settembre?](https://choramedia.com/podcast/hai-presente-l8-settembre/)
 
 ### Science
 * [More or Less: behind the statistics](https://www.bbc.co.uk/programmes/p02nrss1/episodes/downloads): BBC Radio 4 show hosted by T Harford, it debunks statistical myths, talks about how to interpret data correctly in a very lighthearted way
