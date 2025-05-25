@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "5. WPS와 PQR (Feat. PWHT 대상유무는 필수변수)"
+title: "5.WPS와 PQR (Feat. PWHT 대상유무는 필수변수)"
 categories: Piping
 tag: [PWHT, WPS, PQR]
 toc: true

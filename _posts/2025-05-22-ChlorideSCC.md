@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "1.염화물 응력 부식균열 (Chloride SCC)"
+title: "2.염화물 응력 부식균열 (Chloride SCC)"
 categories: Piping
 tag: [Corrosion, SCC]
 toc: true

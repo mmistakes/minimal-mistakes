@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "1. PWHT(Post Weld Heat Treatment)의 조건과 효과"
+title: "1.PWHT(Post Weld Heat Treatment)의 조건과 효과"
 categories: Piping
 tag: [PWHTRequirement]
 toc: true

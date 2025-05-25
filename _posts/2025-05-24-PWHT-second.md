@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "2. 용접 시 잔류응력은 왜 생기는걸까?"
+title: "2.용접 시 잔류응력은 왜 생기는걸까?"
 categories: Piping
 tag: [PWHT, 잔류응력]
 toc: true
