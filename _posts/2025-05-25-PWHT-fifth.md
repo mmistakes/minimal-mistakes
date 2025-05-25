@@ -67,13 +67,11 @@ toc: true
 
 ### Essential · Non-Essential · Supplementary Essential 변수
 
-| 구분                        | 변경 시                         | 예시                                             |
-| --------------------------- | ------------------------------- | ------------------------------------------------ |
-| **Essential**               | **새 PQR 필요**                 | 모재 P-No., F-No., PWHT의 유무·조건, 열입력 범위 |
-| **Non-Essential**           | 문서 수정만으로 OK              | 용접 자세(1G/2G/5G), 후행 청소 방법              |
-| **Supplementary Essential** | 인성 요구 시 *Essential*로 승격 | 용접 금속 최소 온도, 충격시험 위치               |
-
-
+| 구분                                  | 변수 유형                                 | 대표 변수 예시                                               | 변경 시 재자격검증 필요 여부                  | ASME IX 조항 |
+| ------------------------------------- | ----------------------------------------- | ------------------------------------------------------------ | --------------------------------------------- | ------------ |
+| **Essential Variables**               | 기계적 성질(인장강도·경도 등)에 직접 영향 | • Base Metal P-Number • Filler Metal F-Number • Welding Process (SMAW, GMAW 등) • Base Metal Thickness (시험 범위 외) • Electrical Characteristics (AC/DC, Polarity) • **PWHT 시행 여부·온도·시간** • Joint Design (Root opening, Groove angle) • Backing 방식 (Strip ↔ Gas) | ▶ 변경 시 **PQR 재인증** 필요                 | QW-251.2     |
+| **Supplementary Essential Variables** | 충격시험(Impact Test) 요구 시만 필수      | • Minimum Preheat Temperature • Maximum Interpass Temperature • Heat Input limits • PWHT 유지조건 (충격시험용 시편) • Notch-toughness 시험편 치수·조건 | ▶ 충격시험 요건일 때만 **PQR 재인증** 필요    | QW-256       |
+| **Non-Essential Variables**           | 기계적 성질에 영향 미미                   | • Welding Position (1G, 2F 등) • Travel Speed & Heat Input (시험 범위 내) • Shielding Gas Flow Rate (시험 범위 내) • Electrode/Flux Trade Name • Root Opening Gap (시험 허용치 내) • Cleaning Method & 횟수 | ▶ 변경 시 **재인증 불필요**, 단 WPS 기록 필수 | QW-251.3     |
 
 > **코드 핵심(ASME IX QW-250)**
 >
@@ -81,6 +79,8 @@ toc: true
 > - PWHT 스킵 ↔ 실시 전환 = **새 PQR** 필수
 
 ------
+
+
 
 ### ✅PWHT와 관련된 실무 사례
 
