@@ -4,6 +4,8 @@ tags:
   - GenAI
   - agent
   - research
+  - llm
+  - AI
 categories: tech
 excerpt: Genesis and some considerations on agents' agency
 toc: true
