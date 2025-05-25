@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "3.용접 HAZ(Heat Affected Zone)이란?"
+title: "3. 용접 HAZ(Heat Affected Zone)이란?"
 categories: Piping
 tag: [PWHT, HAZ]
 toc: true

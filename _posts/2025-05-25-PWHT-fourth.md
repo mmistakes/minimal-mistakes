@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "4.용접 수소 유입 매커니즘(Feat. 수소 취성)"
+title: "4. 용접 수소 유입 매커니즘(Feat. 수소 취성)"
 categories: Piping
 tag: [PWHT, 수소취성]
 toc: true
