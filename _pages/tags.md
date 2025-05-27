@@ -10,5 +10,3 @@ header:
   cta_url: "/posts/"
   cta_class: "btn--primary"
 ---
-
-{% include page__hero.html %}

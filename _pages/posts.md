@@ -11,8 +11,6 @@ header:
   cta_class: "btn--primary"
 ---
 
-{% include page__hero.html %}
-
 <div class="feature__wrapper">
     <div class="feature__item">
         <div class="archive__item">

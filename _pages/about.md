@@ -11,8 +11,6 @@ header:
   cta_class: "btn--primary"
 ---
 
-{% include page__hero.html %}
-
 # Welcome! 👋
 
 This blog is your go-to source for **PowerPlatformTip** - practical insights, solutions, and best practices for Microsoft Power Platform technologies including Power Apps, Power Automate, Power BI, and more.
