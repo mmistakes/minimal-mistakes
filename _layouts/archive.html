@@ -17,9 +17,18 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <div class="archive">
+  <div class="archive" style="max-width: 1100px; margin: 0 auto;">
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
+      <div class="archive-banner" style="background:#38c9c3;color:#fff;padding:2rem 1rem 1.2rem 1rem;border-radius:12px;margin-bottom:2.5rem;text-align:center;">
+        <h1 id="page-title" class="page__title" style="margin-bottom:0.5rem;">{{ page.title }}</h1>
+        {% if page.layout == 'categories' %}
+          <p style="margin:0;font-size:1.15rem;">Browse all PowerPlatformTip categories and discover focused content for every topic.</p>
+        {% elsif page.layout == 'tags' %}
+          <p style="margin:0;font-size:1.15rem;">Browse all PowerPlatformTip tags and find posts by specific topics and keywords.</p>
+        {% elsif page.layout == 'posts' or page.url == '/posts/' %}
+          <p style="margin:0;font-size:1.15rem;">All Blog Posts<br>Discover all PowerPlatformTip tips, insights, and solutions. Each post follows a structured format with challenges, solutions, and practical implementation steps.</p>
+        {% endif %}
+      </div>
     {% endunless %}
     {{ content }}
   </div>

@@ -1,17 +1,13 @@
 ---
-layout: home
-author_profile: true
-header:
-  overlay_color: "#2dd4bf"
-  overlay_filter: "0.5"
-  image: /assets/images/header-bg.jpg
-excerpt: "Willkommen zu meinem Blog! Hier teile ich meine Gedanken, Erfahrungen und Entdeckungen in einem frischen mint-grünen Design. Einfach, elegant und automatisch organisiert."
-intro: 
-  - excerpt: 'Folgen Sie mir auf dieser Reise durch Ideen, Tutorials und persönliche Einblicke. Jeder Post wird automatisch kategorisiert und mit Tags versehen - Sie müssen nur schreiben! 🌿'
+layout: default
 ---
 
-<!-- Zeige nur die 5 aktuellsten Posts -->
-<ul class="post-list">
+<div class="home-header">
+  <h1>PowerPlatformTip</h1>
+  <p>Discover the latest PowerPlatformTip posts, insights, and solutions. Each post follows a structured format with challenges, solutions, and practical implementation steps.</p>
+</div>
+
+<ul class="post-list" style="max-width: 900px; margin: 0 auto;">
   {% for post in site.posts limit:5 %}
     <li>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
@@ -20,3 +16,37 @@ intro:
     </li>
   {% endfor %}
 </ul>
+
+<hr>
+
+<style>
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.home-header h1 {
+  font-size: 2.5rem;
+  color: #38c9c3;
+  margin-bottom: 0.5rem;
+}
+.home-header p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+.post-list li {
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(56,201,195,0.07);
+}
+.post-list h2 {
+  margin-top: 0;
+}
+</style>
