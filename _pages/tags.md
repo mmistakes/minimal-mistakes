@@ -2,7 +2,6 @@
 layout: tags
 title: "Tags"
 permalink: /tags/
-author_profile: false
 header:
   overlay_color: "#38c9c3"
   overlay_filter: "0.2"
