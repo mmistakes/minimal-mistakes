@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "PowerPlatform Tips"
 title_separator          : "-"
-subtitle                 : "Fresh insights in mint design" # site tagline that appears below site title in masthead
+subtitle                 : "learn and find tipps & tricks around the powerplatform" # site tagline that appears below site title in masthead
 name                     : "Marcel Lehmann"
 description              : "learn and find tipps & tricks around the powerplatform"
 url                      : "https://github.com/MarceLehmann"
@@ -98,18 +98,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Blog Autor"
+  name             : "Marcel Lehmann"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Willkommen in meinem **mint-grünen Blog**! Hier teile ich meine Gedanken und Erfahrungen."
-  location         : "Deutschland"
+  bio              : "BizzApps MVP from Switzerland 🇨🇭 | PowerPlatform Expert & Evangelist | Turning passion into expertise through **thepoweraddicts.ch**"
+  location         : "Switzerland"
   email            :
   links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://thepoweraddicts.ch"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
 
 
 # Site Footer
