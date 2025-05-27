@@ -22,11 +22,6 @@ toc: true
 toc_sticky: true
 ---
 
-### 
-
-**📧 Newsletter Anmeldung**  
-*If you don't want to miss out on any future #PowerPlatformTip posts, be sure to subscribe to my newsletter – you'll be the first to know whenever I publish a new tip!*
-
 💡 **Challenge**  
 Have you ever wondered how to optimize your Canvas Apps and you haven't a buddy that could help you? Now that you can access the YAML code directly from Canvas Apps, it's easier than ever to get insights. But here's the catch: while AI tools like ChatGPT can analyze the code, they often can't generate fully functional YAML until now (unless customized models are in use).
 
@@ -56,9 +51,13 @@ By leveraging AI tools, you'll gain actionable suggestions to make your Canvas A
 🔸 Better understanding of your app's YAML structure  
 🔸 Saves time on debugging and performance tuning
 
-### **Pro Tip:**
+---
 
-AI tools might not create flawless YAML, but they're great at highlighting inefficiencies and pointing you in the right direction.
+### Video Tutorial
+
+{% include video id="peY_3gmNYGg" provider="youtube" %}
+
+---
 
 🛠️ **FAQ**  
 **1. How can I copy YAML code from a Canvas App?**  
@@ -70,16 +69,4 @@ Not entirely. While AI can provide optimization suggestions and identify potenti
 **3. Is it safe to share my Canvas App's YAML code with AI tools?**  
 Always be cautious. Avoid sharing sensitive or confidential data. If you're unsure, anonymize data and focus on sharing code structure rather than user-specific information.
 
----
-
-### Video Tutorial
-
-{% include video id="peY_3gmNYGg" provider="youtube" %}
-
----
-
-**📧 Newsletter:** *If you don't want to miss out on any future #PowerPlatformTip posts, be sure to subscribe to my newsletter – you'll be the first to know whenever I publish a new tip!*
-
-**📚 Training:** *Interested in training or personalized coaching to enhance your PowerPlatform skills? 🚀 Book a package with me at [thepoweraddicts.ch](https://thepoweraddicts.ch/) and benefit from customized strategies for your success. 💡*
-
-***If you want to see the overview above all #PowerPlatformTip – [click here](https://lehmann.ws/powerplatformtip/)***
+***If you want to see the overview above all #PowerPlatformTip – [click here](https://powerplatformtip.com)***
