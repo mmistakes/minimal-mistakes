@@ -21,7 +21,7 @@ title                    : "PowerPlatform Tips"
 title_separator          : "-"
 subtitle                 : "Fresh insights in mint design" # site tagline that appears below site title in masthead
 name                     : "Marcel Lehmann"
-description              : "A beautiful blog in fresh mint design with automatic tagging and easy Markdown management for PowerPlatform tips and insights."
+description              : "learn and find tipps & tricks around the powerplatform"
 url                      : "https://github.com/MarceLehmann"
 baseurl                  : "/PowerPlatformTip"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

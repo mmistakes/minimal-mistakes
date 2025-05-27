@@ -1,5 +1,5 @@
 ---
-title: "Über diesen Blog"
+title: "About"
 permalink: /about/
 layout: single
 author_profile: false
@@ -14,7 +14,11 @@ This blog is your go-to source for **PowerPlatform Tips** - practical insights, 
 
 ## About Marcel Lehmann
 
-I'm passionate about helping organizations and individuals unlock the full potential of the Microsoft Power Platform. Through this blog, I share real-world tips, challenges, and solutions that I've encountered in my work.
+Hello, I'm Marcel Lehmann, a BizzApps MVP based in Switzerland with a deep passion for the PowerPlatform. As an enthusiast, expert, and evangelist, I've turned my hobby into a rewarding career. I'm not only devoted to advancing PowerApps and PowerAutomate but also to sharing my expertise.
+
+Through [thepoweraddicts.ch](https://thepoweraddicts.ch/), I offer coaching, consulting, and training services, focusing on project implementation and support.
+
+My goal is to inspire and empower others to fully leverage the PowerPlatform. Thank you for engaging with my content. Follow me for actionable insights and expert guidance on the Microsoft Power Platform.
 
 ## What You'll Find Here
 
