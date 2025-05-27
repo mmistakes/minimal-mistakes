@@ -53,7 +53,7 @@ By leveraging AI tools, you'll gain actionable suggestions to make your Canvas A
 
 ---
 
-### Video Tutorial
+## 🎥 Video Tutorial
 
 {% include video id="peY_3gmNYGg" provider="youtube" %}
 
@@ -68,5 +68,3 @@ Not entirely. While AI can provide optimization suggestions and identify potenti
 
 **3. Is it safe to share my Canvas App's YAML code with AI tools?**  
 Always be cautious. Avoid sharing sensitive or confidential data. If you're unsure, anonymize data and focus on sharing code structure rather than user-specific information.
-
-***If you want to see the overview above all #PowerPlatformTip – [click here](https://powerplatformtip.com)***

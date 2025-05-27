@@ -1,9 +1,92 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+# PowerPlatform Tips Blog 🌿
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
+A beautiful, mint-themed Jekyll blog for sharing PowerPlatform tips and insights. Features automatic tagging, easy Markdown management, and GitHub-integrated comments.
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+## 🚀 Features
+
+- **Mint Design**: Clean, fresh mint color theme
+- **Automatic Tagging**: Just write your posts, tags are handled automatically
+- **PowerPlatformTip Structure**: Follows the established format with sections for Challenge, Solution, How It's Done, Result, Key Advantages, Pro Tip, and FAQ
+- **GitHub Comments**: Integrated comment system using Giscus and GitHub Discussions
+- **Table of Contents**: Automatic TOC generation for all posts
+- **Responsive Design**: Looks great on all devices
+- **Easy Content Management**: Simply drop Markdown files in the `_posts` folder
+
+## 📁 Project Structure
+
+```
+PowerPlatformTip/
+├── _posts/                     # Your blog posts go here
+├── _pages/                     # Static pages (About, Categories, etc.)
+├── _data/navigation.yml        # Site navigation menu
+├── _config.yml                 # Main configuration file
+├── _post-template.md           # Template for new PowerPlatformTip posts
+├── GISCUS-SETUP-GUIDE.md      # Step-by-step guide for setting up comments
+└── POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md  # Template usage guide
+```
+
+## 🎯 Quick Start
+
+1. **Clone this repository**
+2. **Install dependencies**: `bundle install`
+3. **Start the development server**: `bundle exec jekyll serve`
+4. **Create your first post** using the template in `_post-template.md`
+
+## 💬 Setting Up Comments
+
+This blog uses Giscus for comments, which integrates with GitHub Discussions. Follow the step-by-step guide in [`GISCUS-SETUP-GUIDE.md`](GISCUS-SETUP-GUIDE.md) to:
+
+1. Enable GitHub Discussions in your repository
+2. Configure Giscus at [giscus.app](https://giscus.app)
+3. Update your `_config.yml` with the generated IDs
+4. Test your comment system
+
+## ✍️ Creating PowerPlatformTip Posts
+
+Use the template in `_post-template.md` or follow the guide in [`POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md`](POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md). Each post follows this structure:
+
+- **💡 Challenge**: Describe the problem or scenario
+- **✅ Solution**: Provide the solution overview
+- **🔧 How It's Done**: Step-by-step implementation
+- **🎯 Result**: Show the outcome
+- **⭐ Key Advantages**: List the benefits
+- **💡 Pro Tip**: Additional insights
+- **❓ FAQ**: Common questions and answers
+
+## 🎨 Customization
+
+- **Colors**: The mint theme is configured in `_config.yml`
+- **Navigation**: Edit `_data/navigation.yml` to modify the menu
+- **Styling**: Add custom CSS to `assets/css/main.scss`
+- **Site Info**: Update `_config.yml` with your details
+
+## 📝 Adding New Posts
+
+1. Create a new Markdown file in `_posts/` following the naming convention: `YYYY-MM-DD-title.md`
+2. Use the PowerPlatformTip template structure
+3. Add appropriate tags and categories in the front matter
+4. The site will automatically generate tag and category pages
+
+## 🛠️ Built With
+
+- [Jekyll](https://jekyllrb.com/) - Static site generator
+- [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) - Jekyll theme
+- [Giscus](https://giscus.app/) - Comment system
+- [GitHub Pages](https://pages.github.com/) - Hosting (compatible)
+
+## 📚 Documentation
+
+- [`GISCUS-SETUP-GUIDE.md`](GISCUS-SETUP-GUIDE.md) - Complete Giscus setup guide
+- [`POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md`](POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md) - Template usage guide
+- [`_post-template.md`](_post-template.md) - Ready-to-use post template
+
+## 🤝 Contributing
+
+Feel free to open issues or submit pull requests to improve the blog template!
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 :sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 

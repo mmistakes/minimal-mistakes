@@ -54,7 +54,7 @@ Here's how to do it:
 
 ---
 
-### Video Tutorial
+## 🎥 Video Tutorial
 
 {% include video id="[YOUTUBE_VIDEO_ID]" provider="youtube" %}
 
@@ -70,6 +70,6 @@ Here's how to do it:
 **3. [QUESTION 3]**  
 [ANSWER 3]
 
-**📚 Training:** *Interested in training or personalized coaching to enhance your PowerPlatform skills? 🚀 Book a package with me at [thepoweraddicts.ch](https://thepoweraddicts.ch/) and benefit from customized strategies for your success. 💡*
+---
 
-***If you want to see the overview above all #PowerPlatformTip – [click here](https://lehmann.ws/powerplatformtip/)***
+*Note: Training promotion and newsletter subscription sections are automatically added below this content - you don't need to include them in your posts!*

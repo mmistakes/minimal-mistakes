@@ -2,5 +2,5 @@
 title: Tags
 layout: tags
 permalink: /tags/
-author_profile: true
+author_profile: false
 ---

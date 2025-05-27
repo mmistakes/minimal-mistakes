@@ -2,7 +2,7 @@
 title: "Über diesen Blog"
 permalink: /about/
 layout: single
-author_profile: true
+author_profile: false
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"

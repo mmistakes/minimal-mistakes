@@ -9,25 +9,24 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
-   Custom CSS für den PowerPlatformTip Blog
+   Custom CSS for PowerPlatformTip Blog
    ========================================================================== */
 
-/* Breitere Inhaltsbreite für Posts ohne Author Profile */
+/* Wider content width for posts without Author Profile */
 .layout--single .page {
   float: left;
   width: 100%;
   clear: both;
 }
 
-/* Optimierung für das Content-Layout ohne Sidebar */
+/* Optimization for content layout without sidebar */
 @include breakpoint($large) {
   .layout--single .page {
     float: left;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
-  
-  /* Wenn keine Author-Profile angezeigt wird, nutze mehr Breite für Content */
+    /* If no Author Profile is displayed, use more width for content */
   .layout--single .page .page__content {
     max-width: none;
     margin-left: 0;
@@ -183,7 +182,7 @@ search: false
     margin-bottom: 2rem;
   }
   
-  /* Bessere mobile Darstellung ohne Sidebar */
+  /* Better mobile display without sidebar */
   .layout--single .page {
     width: 100%;
     padding-right: 0;
@@ -194,5 +193,239 @@ search: false
 .toc.toc--sticky {
   @include breakpoint($large) {
     top: 2em;
+  }
+}
+
+/* =========================================================================
+   Giscus Comments Styling
+   ========================================================================== */
+
+/* Comments section styling */
+.page__comments {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid mix(#fff, $primary-color, 75%);
+}
+
+.page__comments-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25em;
+  color: $primary-color;
+  font-weight: 600;
+}
+
+/* Giscus iframe styling */
+.giscus {
+  margin-top: 1rem;
+}
+
+.giscus-frame {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid mix(#fff, $primary-color, 85%);
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Mobile responsive comments */
+@include breakpoint($small) {
+  .page__comments {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+  
+  .giscus-frame {
+    border-radius: 4px;
+    margin: 0 -1rem;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* Dark mode support for comments */
+@media (prefers-color-scheme: dark) {
+  .giscus-frame {
+    background: #1a1a1a;
+    border-color: mix(#000, $primary-color, 75%);
+  }
+}
+
+/* ==========================================================================
+   Training Promotion & Newsletter Subscription Styling
+   ========================================================================== */
+
+/* Training Promotion Section */
+.training-promotion {
+  background: linear-gradient(135deg, mix(#fff, $primary-color, 95%) 0%, mix(#fff, $primary-color, 90%) 100%);
+  border: 2px solid mix(#fff, $primary-color, 85%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 3rem 0 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  h3 {
+    color: $primary-color;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+    
+    strong {
+      color: $text-color;
+    }
+  }
+  
+  a {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      border-bottom-color: $primary-color;
+      color: darken($primary-color, 10%);
+    }
+  }
+}
+
+/* Newsletter Subscription Section */
+.newsletter-subscription {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border: 2px solid #cbd5e0;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+  
+  h3 {
+    color: #2d3748;
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #4a5568;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Newsletter Form Styling */
+.newsletter-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  
+  @include breakpoint($small) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input[type="email"] {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.1);
+    }
+    
+    &::placeholder {
+      color: #a0aec0;
+    }
+  }
+  
+  button {
+    background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    
+    &:hover {
+      background: linear-gradient(135deg, darken($primary-color, 5%) 0%, darken($primary-color, 15%) 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Alternative button styles for external newsletter services */
+.newsletter-external .btn--primary,
+.newsletter-simple .btn--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+}
+
+/* Mobile Optimizations */
+@include breakpoint($small) {
+  .training-promotion,
+  .newsletter-subscription {
+    padding: 1.5rem;
+    margin: 2rem 0;
+    
+    h3 {
+      font-size: 1.3em;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  .newsletter-form {
+    max-width: 100%;
+  }
+}
+
+/* Responsive spacing improvements */
+@include breakpoint($medium) {
+  .training-promotion {
+    padding: 2.5rem;
+  }
+  
+  .newsletter-subscription {
+    padding: 2.5rem;
   }
 }
