@@ -9,24 +9,26 @@ header:
   cta_label: "All Blog Posts"
   cta_url: "/posts/"
   cta_class: "btn--primary"
-  actions:
-    - label: "Categories"
-      url: "/categories/"
-    - label: "Tags"
-      url: "/tags/"
 ---
 
 {% include page__hero.html %}
 
-<ul class="post-list" style="max-width: 900px; margin: 0 auto;">
-  {% for post in site.posts limit:5 %}
-    <li>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
-      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+  <div style="flex: 2 1 600px; min-width: 0;">
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+        <li>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <span class="post-meta">{{ post.date | date: '%B %d, %Y' }}</span>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <aside style="flex: 1 1 320px; min-width: 260px; max-width: 350px;">
+    {% include author-profile.html %}
+  </aside>
+</div>
 
 <hr>
 
@@ -44,5 +46,17 @@ header:
 }
 .post-list h2 {
   margin-top: 0;
+}
+@media (max-width: 900px) {
+  .post-list, aside {
+    max-width: 100%;
+  }
+  div[style*='display: flex'] {
+    flex-direction: column;
+    gap: 0;
+  }
+  aside {
+    margin-top: 2rem;
+  }
 }
 </style>

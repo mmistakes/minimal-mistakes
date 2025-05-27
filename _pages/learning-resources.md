@@ -4,15 +4,13 @@ permalink: /learning-resources/
 layout: single
 author_profile: false
 header:
-  overlay_color: "#2dd4bf"
+  overlay_color: "#38c9c3"
   overlay_filter: "0.5"
   overlay_image: "/assets/images/hero-bg.jpg"
   cta_label: "Home"
   cta_url: "/"
   cta_class: "btn--primary"
 ---
-
-{% include page__hero.html %}
 
 # Learning Resources 📚
 
