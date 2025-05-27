@@ -1,11 +1,22 @@
 ---
 layout: default
+title: "PowerPlatformTip"
+excerpt: "Discover the latest PowerPlatformTip posts, insights, and solutions. Each post follows a structured format with challenges, solutions, and practical implementation steps."
+header:
+  overlay_color: "#38c9c3"
+  overlay_filter: "0.2"
+  overlay_image: "/assets/images/hero-bg.jpg" # Optional: replace with your own image or remove this line for solid color
+  cta_label: "All Blog Posts"
+  cta_url: "/posts/"
+  cta_class: "btn--primary"
+  actions:
+    - label: "Categories"
+      url: "/categories/"
+    - label: "Tags"
+      url: "/tags/"
 ---
 
-<div class="home-header">
-  <h1>PowerPlatformTip</h1>
-  <p>Discover the latest PowerPlatformTip posts, insights, and solutions. Each post follows a structured format with challenges, solutions, and practical implementation steps.</p>
-</div>
+{% include page__hero.html %}
 
 <ul class="post-list" style="max-width: 900px; margin: 0 auto;">
   {% for post in site.posts limit:5 %}
@@ -20,21 +31,6 @@ layout: default
 <hr>
 
 <style>
-.home-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.home-header h1 {
-  font-size: 2.5rem;
-  color: #38c9c3;
-  margin-bottom: 0.5rem;
-}
-.home-header p {
-  font-size: 1.2rem;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto 1.5rem auto;
-}
 .post-list {
   list-style: none;
   padding: 0;
