@@ -4,40 +4,6 @@
     "alt": "6b - Ausflug in die Bücherei ",
     "title": "6b - Ausflug in die Bücherei ",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGMzcjBtNDZoZWhhcDZmczgxMzZzbW5wbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-26T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-26T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:23:11.000Z",
-    "updated": "2025-04-01T09:23:11.063Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A3 - Ausflug zum Spielplatz Kladow",
-    "title": "A3 - Ausflug zum Spielplatz Kladow",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWFobTN2ZTcwbXZ1YjBzYWkzZTU2dTVpc3EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-05-26T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-05-26T14:00:00+02:00"
-    },
-    "created": "2025-05-16T08:50:52.000Z",
-    "updated": "2025-05-16T08:50:52.234Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei ",
-    "title": "6b - Ausflug in die Bücherei ",
-    "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=NWwxbzZuODAyNmJobTQ5Z3YxZmhvN2s2dHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
@@ -100,5 +66,39 @@
     },
     "created": "2025-05-20T05:44:11.000Z",
     "updated": "2025-05-20T05:44:11.966Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei",
+    "title": "6b - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzYxMDlvZTUzdjFlZWQ5czI0MjN0ZGpvYmwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-04T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-04T12:45:00+02:00"
+    },
+    "created": "2025-04-01T09:25:17.000Z",
+    "updated": "2025-04-01T09:25:17.843Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in den Zoo",
+    "title": "A5 - Ausflug in den Zoo",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGNxOTRiNDMzdmlidG1tZHVrYTU2bWwyYnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-05T07:50:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-05T13:30:00+02:00"
+    },
+    "created": "2025-05-26T12:09:12.000Z",
+    "updated": "2025-05-26T12:09:12.878Z"
   }
 ]
