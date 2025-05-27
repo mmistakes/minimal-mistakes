@@ -1,12 +1,17 @@
 ---
-title: "About"
+layout: default
+title: "About PowerPlatformTip"
 permalink: /about/
-layout: single
-author_profile: false
 header:
-  overlay_color: "#2dd4bf"
-  overlay_filter: "0.5"
+  overlay_color: "#38c9c3"
+  overlay_filter: "0.2"
+  overlay_image: "/assets/images/hero-bg.jpg"
+  cta_label: "All Blog Posts"
+  cta_url: "/posts/"
+  cta_class: "btn--primary"
 ---
+
+{% include page__hero.html %}
 
 # Welcome! 👋
 

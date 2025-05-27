@@ -1,12 +1,17 @@
 ---
-layout: archive
-title: "Blog Posts"
+layout: posts
+title: "All Blog Posts"
 permalink: /posts/
-author_profile: false
 header:
-  overlay_color: "#2dd4bf"
-  overlay_filter: "0.5"
+  overlay_color: "#38c9c3"
+  overlay_filter: "0.2"
+  overlay_image: "/assets/images/hero-bg.jpg"
+  cta_label: "Home"
+  cta_url: "/"
+  cta_class: "btn--primary"
 ---
+
+{% include page__hero.html %}
 
 <div class="feature__wrapper">
     <div class="feature__item">
