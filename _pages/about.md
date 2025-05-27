@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: "About PowerPlatformTip"
 permalink: /about/
 header:
