@@ -4,17 +4,16 @@ title: "Blog Posts"
 permalink: /posts/
 author_profile: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/header-bg.jpg
+  overlay_color: "#2dd4bf"
+  overlay_filter: "0.5"
 ---
 
 <div class="feature__wrapper">
     <div class="feature__item">
         <div class="archive__item">
-            <div class="archive__item-body">
-                <h2 class="archive__item-title">Alle Blog Posts</h2>
+            <div class="archive__item-body">                <h2 class="archive__item-title">All Blog Posts</h2>
                 <div class="archive__item-excerpt">
-                    <p>Hier finden Sie alle Blog-Posts chronologisch sortiert.</p>
+                    <p>Discover all PowerPlatform tips, insights, and solutions. Each post follows a structured format with challenges, solutions, and practical implementation steps.</p>
                 </div>
             </div>
         </div>

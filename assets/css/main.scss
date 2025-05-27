@@ -7,3 +7,192 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Custom CSS für den PowerPlatformTip Blog
+   ========================================================================== */
+
+/* Breitere Inhaltsbreite für Posts ohne Author Profile */
+.layout--single .page {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+/* Optimierung für das Content-Layout ohne Sidebar */
+@include breakpoint($large) {
+  .layout--single .page {
+    float: left;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+  
+  /* Wenn keine Author-Profile angezeigt wird, nutze mehr Breite für Content */
+  .layout--single .page .page__content {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Sidebar (TOC) positioning */
+  .layout--single .page .page__related {
+    clear: both;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@include breakpoint($x-large) {
+  .layout--single .page {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
+  }
+}
+
+/* Verbesserung des Table of Contents Styling */
+.toc {
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  
+  .toc__title {
+    color: $primary-color;
+    font-size: $type-size-6;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .toc__menu a {
+    color: $text-color;
+    
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Mint-spezifische Anpassungen */
+.mint-highlight {
+  background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* Verbesserung der Emoji-Überschriften für bessere TOC-Darstellung */
+.page__content h2 {
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  
+  /* Emoji-Spacing */
+  &:first-child {
+    margin-top: 1rem;
+  }
+}
+
+/* Video-Embed responsive styling */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 2rem 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: $border-radius;
+}
+
+/* Improved FAQ styling */
+.page__content h2 + p strong {
+  color: $primary-color;
+  font-weight: 600;
+}
+
+/* Code block improvements */
+.highlight {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+/* Content spacing improvements */
+.page__content {
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-bottom: 1.2em;
+    line-height: 1.7;
+  }
+  
+  /* Bessere Lesbarkeit */
+  font-size: $type-size-5;
+  
+  @include breakpoint($medium) {
+    font-size: $type-size-4;
+  }
+}
+
+/* PowerPlatformTip specific styling */
+.page__content {
+  /* Challenge section styling */
+  h2:contains("Challenge") {
+    color: #f59e0b;
+  }
+  
+  /* Solution section styling */
+  h2:contains("Solution") {
+    color: #10b981;
+  }
+  
+  /* Result section styling */
+  h2:contains("Result") {
+    color: #8b5cf6;
+  }
+  
+  /* FAQ section styling */
+  h2:contains("FAQ") {
+    color: #ef4444;
+  }
+}
+
+/* Mobile optimizations */
+@include breakpoint($small) {
+  .page__content h2 {
+    font-size: $type-size-3;
+  }
+  
+  .toc {
+    position: static !important;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  /* Bessere mobile Darstellung ohne Sidebar */
+  .layout--single .page {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* Sticky TOC improvements */
+.toc.toc--sticky {
+  @include breakpoint($large) {
+    top: 2em;
+  }
+}

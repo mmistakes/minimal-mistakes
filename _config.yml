@@ -15,13 +15,13 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "de-DE"
+locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Mein Mint Blog"
+title                    : "PowerPlatform Tips"
 title_separator          : "-"
-subtitle                 : "Frische Gedanken in mint-grünem Design" # site tagline that appears below site title in masthead
-name                     : "Blog Autor"
-description              : "Ein wunderschöner Blog im frischen Mint-Design mit automatischem Tagging und einfacher Markdown-Verwaltung."
+subtitle                 : "Fresh insights in mint design" # site tagline that appears below site title in masthead
+name                     : "Marcel Lehmann"
+description              : "A beautiful blog in fresh mint design with automatic tagging and easy Markdown management for PowerPlatform tips and insights."
 url                      : "https://github.com/MarceLehmann"
 baseurl                  : "/PowerPlatformTip"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

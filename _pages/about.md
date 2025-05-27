@@ -8,40 +8,51 @@ header:
   overlay_filter: "0.5"
 ---
 
-# Willkommen! 👋
+# Welcome! 👋
 
-Herzlich willkommen zu meinem Blog im frischen Mint-Design! Hier ist der Ort, wo ich meine Gedanken, Erfahrungen und Entdeckungen teile.
+This blog is your go-to source for **PowerPlatform Tips** - practical insights, solutions, and best practices for Microsoft Power Platform technologies including Power Apps, Power Automate, Power BI, and more.
 
-## Was Sie hier finden 🌿
+## About Marcel Lehmann
 
-Dieser Blog ist darauf ausgelegt, einfach und elegant zu sein. Ich verwende Jekyll mit dem wunderschönen Minimal Mistakes Theme im Mint-Design, weil:
+I'm passionate about helping organizations and individuals unlock the full potential of the Microsoft Power Platform. Through this blog, I share real-world tips, challenges, and solutions that I've encountered in my work.
 
-- **Einfachheit**: Ich kann einfach Markdown-Dateien schreiben und sie werden automatisch zu schönen Blog-Posts
-- **Automatisches Tagging**: Tags und Kategorien werden automatisch organisiert
-- **Responsive Design**: Sieht auf allen Geräten perfekt aus
-- **Schnell**: Statische Seiten laden blitzschnell
+## What You'll Find Here
 
-## Die Technik dahinter ⚙️
+- **Practical Tips**: Step-by-step guides for common PowerPlatform challenges
+- **Best Practices**: Proven approaches for building robust solutions
+- **Performance Optimization**: Tips to make your apps faster and more efficient
+- **Real-World Examples**: Solutions from actual implementation scenarios
 
-- **Jekyll**: Statischer Site-Generator
-- **Minimal Mistakes**: Ein elegantes und funktionsreiches Theme
-- **Mint Theme**: Frische, beruhigende Farbpalette
-- **GitHub Pages**: Kostenloser Hosting (optional)
-- **Markdown**: Einfache Formatierung für alle Posts
+## Blog Features
 
-## Einfaches Bloggen 📝
+✅ **Automatic Tagging**: All posts are automatically categorized for easy discovery  
+✅ **Markdown-First**: Just drop your `.md` files and everything works  
+✅ **PowerPlatformTip Format**: Consistent structure with Challenge, Solution, Implementation, and Results  
+✅ **Table of Contents**: Navigate easily through longer posts  
+✅ **Responsive Design**: Looks great on desktop, tablet, and mobile  
 
-Das Beste an diesem Setup? Ich muss nur:
+## Technical Stack ⚙️
 
-1. Eine neue `.md` Datei im `_posts` Ordner erstellen
-2. Den YAML Front Matter mit Titel, Datum und Tags hinzufügen
-3. Den Content in Markdown schreiben
-4. Fertig! Jekyll kümmert sich um den Rest
+This blog runs on:
+- **Jekyll**: Static site generator
+- **Minimal Mistakes**: An elegant and feature-rich theme
+- **Mint Theme**: Fresh, calming color palette
+- **GitHub Pages**: Free hosting
+- **Markdown**: Simple formatting for all posts
 
-## Bleiben Sie in Verbindung 📫
+## Easy Content Creation 📝
 
-Falls Sie Fragen haben oder sich austauschen möchten, können Sie mich gerne kontaktieren!
+The best part about this setup? I just need to:
+
+1. Create a new `.md` file in the `_posts` folder
+2. Add YAML front matter with title, date, and tags
+3. Write content in Markdown using the PowerPlatformTip structure
+4. Done! Jekyll handles the rest
+
+## Connect
+
+If you have questions about any of the tips or want to share your own PowerPlatform experiences, feel free to reach out!
 
 ---
 
-*Erstellt mit ❤️ und Jekyll*
+*Ready to dive in? Check out the [latest posts](/posts/) or browse by [categories](/categories/) and [tags](/tags/).*

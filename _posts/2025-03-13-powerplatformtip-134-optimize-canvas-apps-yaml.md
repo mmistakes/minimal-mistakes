@@ -22,13 +22,13 @@ toc: true
 toc_sticky: true
 ---
 
-💡 **Challenge**  
+## 💡 Challenge
 Have you ever wondered how to optimize your Canvas Apps and you haven't a buddy that could help you? Now that you can access the YAML code directly from Canvas Apps, it's easier than ever to get insights. But here's the catch: while AI tools like ChatGPT can analyze the code, they often can't generate fully functional YAML until now (unless customized models are in use).
 
-✅ **Solution**  
+## ✅ Solution
 Copy the YAML code directly from your Canvas App and use your preferred AI tool to get suggestions for optimization. This can help you improve performance, structure, or user experience efficiently.
 
-🔧 **How It's Done**  
+## 🔧 How It's Done
 Here's how to do it:
 
 1. Open your Canvas App in the Studio.  
@@ -43,10 +43,10 @@ Here's how to do it:
 
 4. Implement and test the recommended changes in your app.
 
-🎉 **Result**  
+## 🎉 Result
 By leveraging AI tools, you'll gain actionable suggestions to make your Canvas Apps faster, cleaner, and more user-friendly. Plus, you'll deepen your understanding of app code structure.
 
-🌟 **Key Advantages**  
+## 🌟 Key Advantages
 🔸 Quick insights for improving your apps  
 🔸 Better understanding of your app's YAML structure  
 🔸 Saves time on debugging and performance tuning
@@ -59,7 +59,7 @@ By leveraging AI tools, you'll gain actionable suggestions to make your Canvas A
 
 ---
 
-🛠️ **FAQ**  
+## 🛠️ FAQ
 **1. How can I copy YAML code from a Canvas App?**  
 You can copy the YAML code directly within the Canvas App Studio. Simply open the component or screen, access the code view, and copy the YAML code manually—no export function is needed.
 
