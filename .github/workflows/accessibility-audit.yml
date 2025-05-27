@@ -1,7 +1,7 @@
 name: Accessibility Audit
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   pa11y-ci:
     runs-on: ubuntu-latest

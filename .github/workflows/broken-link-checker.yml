@@ -1,7 +1,7 @@
 name: Broken Link Checker
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   linkchecker:
     runs-on: ubuntu-latest

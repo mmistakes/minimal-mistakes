@@ -1,7 +1,7 @@
 name: Spelling and Grammar Linting
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   spelling:
     runs-on: ubuntu-latest

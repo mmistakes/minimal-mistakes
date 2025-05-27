@@ -1,7 +1,9 @@
 name: Sitemap Validation
 on:
+  push:
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   sitemap:
     runs-on: ubuntu-latest
@@ -11,6 +13,9 @@ jobs:
         uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Rebuild sitemap.xml
+        run: |
+          bundle exec jekyll build
       - name: Validate sitemap.xml
         run: |
           xmllint --noout _site/sitemap.xml
