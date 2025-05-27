@@ -1,5 +1,5 @@
 ---
-title: "PowerPlatformTip [NUMBER] – '[TITLE]'"
+title: "#PowerPlatformTip [NUMBER] – '[TITLE]'"
 date: 2025-05-27  # Insert current date
 categories:
   - Article

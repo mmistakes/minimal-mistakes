@@ -1,5 +1,5 @@
 ---
-title: "PowerPlatformTip 134 – 'Optimize Canvas Apps with YAML'"
+title: "#PowerPlatformTip 134 – 'Optimize Canvas Apps with YAML'"
 date: 2025-03-13
 categories:
   - Article
