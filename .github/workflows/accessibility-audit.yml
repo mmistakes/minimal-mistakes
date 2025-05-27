@@ -1,0 +1,22 @@
+name: Accessibility Audit
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  pa11y-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install pa11y-ci
+        run: npm install -g pa11y-ci
+      - name: Build Jekyll site
+        uses:  helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run accessibility tests with pa11y-ci
+        run: |
+          pa11y-ci --sitemap _site/sitemap.xml --sitemap-find "_site" --sitemap-replace "http://localhost:4000" --server "bundle exec jekyll serve --detach --port 4000" --concurrency 2 || true

@@ -1,0 +1,18 @@
+name: Broken Link Checker
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  linkchecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Jekyll site
+        uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install linkchecker
+        run: sudo apt-get update && sudo apt-get install -y linkchecker
+      - name: Run linkchecker
+        run: |
+          linkchecker --ignore-url=^mailto: --ignore-url=^tel: --no-status --file-output=csv/_site/linkchecker.csv _site/index.html || true

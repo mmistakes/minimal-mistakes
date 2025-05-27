@@ -1,0 +1,21 @@
+name: Spelling and Grammar Linting
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  spelling:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Vale
+        run: |
+          curl -fsSL https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_amd64.tar.gz | tar -xz -C /tmp
+          sudo mv /tmp/vale /usr/local/bin/vale
+      - name: Run Vale on Markdown files
+        run: |
+          vale . || true
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+      - name: Run markdownlint
+        run: |
+          markdownlint "**/*.md" || true

@@ -10,7 +10,7 @@ header:
 
 # Welcome! 👋
 
-This blog is your go-to source for **PowerPlatform Tips** - practical insights, solutions, and best practices for Microsoft Power Platform technologies including Power Apps, Power Automate, Power BI, and more.
+This blog is your go-to source for **PowerPlatformTip** - practical insights, solutions, and best practices for Microsoft Power Platform technologies including Power Apps, Power Automate, Power BI, and more.
 
 ## About Marcel Lehmann
 

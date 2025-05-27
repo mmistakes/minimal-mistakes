@@ -8,5 +8,7 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Learning Resources"
+    url: /learning-resources/
   - title: "About"
     url: /about/

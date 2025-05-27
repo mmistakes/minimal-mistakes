@@ -17,14 +17,14 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "PowerPlatform Tips"
+title                    : "PowerPlatformTip"
 title_separator          : "-"
-subtitle                 : "learn and find tipps & tricks around the powerplatform" # site tagline that appears below site title in masthead
+subtitle                 : "Learn and find tips & tricks around the PowerPlatformTip" # site tagline that appears below site title in masthead
 name                     : "Marcel Lehmann"
-description              : "learn and find tipps & tricks around the powerplatform"
-url                      : "https://github.com/MarceLehmann"
-baseurl                  : "/PowerPlatformTip"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+description              : "Learn and find tips & tricks around the Power Platform. Your go-to source for insights on Power Apps, Power Automate, and more, by Marcel Lehmann, BizzApps MVP."
+url                      : "https://github.com/MarceLehmann" # Update this to your actual blog URL when deployed
+baseurl                  : "/PowerPlatformTip" # Set to "" if hosting at the root of a domain
+repository               : "MarceLehmann/PowerPlatformTip" # Example: "username/repo-name"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -51,11 +51,11 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+  path                   : feed.xml # blank (default) uses feed.xml
+  hide                   : false
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -102,37 +102,38 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "BizzApps MVP from Switzerland 🇨🇭 - PowerPlatform Expert & Evangelist & MVP - Turning passion into expertise through **thepoweraddicts.ch**"
   location         : "Switzerland"
-  email            :
+  email            : # your-email@example.com
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://thepoweraddicts.ch"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-
+      # url: "mailto:your-email@example.com" # Uncomment and fill if you want to show email
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/MarceLehmann" # Your GitHub profile
+    # Add other social links like LinkedIn, Twitter if desired
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://linkedin.com/in/yourprofile"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/yourprofile"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/MarceLehmann/PowerPlatformTip" # Link to the blog's repository
+    - label: "Website" # Link to your main website
+      icon: "fas fa-fw fa-link"
+      url: "https://thepoweraddicts.ch"
+    # Add other relevant footer links
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/yourprofile"
 
 
 # Reading Files

@@ -80,9 +80,16 @@ Use the template in `_post-template.md` or follow the guide in [`POWERPLATFORMTI
 - [`POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md`](POWERPLATFORMTIP-TEMPLATE-GUIDE-EN.md) - Template usage guide
 - [`_post-template.md`](_post-template.md) - Ready-to-use post template
 
-## 🤝 Contributing
+## 🤝 How to Contribute
 
-Feel free to open issues or submit pull requests to improve the blog template!
+Contributions are welcome! If you have tips, corrections, or want to add new features:
+
+1. Fork this repository
+2. Create a new branch for your changes
+3. Make your edits and commit them
+4. Open a pull request with a clear description
+
+For questions or suggestions, feel free to open an issue.
 
 ## 📄 License
 

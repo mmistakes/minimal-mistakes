@@ -50,7 +50,7 @@ search: false
   }
 }
 
-/* Verbesserung des Table of Contents Styling */
+/* Improved Table of Contents Styling */
 .toc {
   background-color: $background-color;
   border: 1px solid $border-color;
@@ -76,7 +76,7 @@ search: false
   }
 }
 
-/* Mint-spezifische Anpassungen */
+/* Mint-specific Adjustments */
 .mint-highlight {
   background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
   -webkit-background-clip: text;
@@ -85,14 +85,14 @@ search: false
   font-weight: 600;
 }
 
-/* Verbesserung der Emoji-Überschriften für bessere TOC-Darstellung */
+/* Improved Emoji Headings for better TOC Display */
 .page__content h2 {
   border-bottom: 2px solid $primary-color;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   
-  /* Emoji-Spacing */
+  /* Emoji Spacing */
   &:first-child {
     margin-top: 1rem;
   }
@@ -139,7 +139,7 @@ search: false
     line-height: 1.7;
   }
   
-  /* Bessere Lesbarkeit */
+  /* Better Readability */
   font-size: $type-size-5;
   
   @include breakpoint($medium) {

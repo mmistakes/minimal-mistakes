@@ -1,0 +1,16 @@
+name: Sitemap Validation
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Jekyll site
+        uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate sitemap.xml
+        run: |
+          xmllint --noout _site/sitemap.xml
