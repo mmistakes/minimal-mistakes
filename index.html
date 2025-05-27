@@ -1,4 +1,37 @@
 ---
 layout: home
 author_profile: true
+header:
+  overlay_color: "#2dd4bf"
+  overlay_filter: "0.5"
+  image: /assets/images/header-bg.jpg
+excerpt: "Willkommen zu meinem Blog! Hier teile ich meine Gedanken, Erfahrungen und Entdeckungen in einem frischen mint-grünen Design. Einfach, elegant und automatisch organisiert."
+intro: 
+  - excerpt: 'Folgen Sie mir auf dieser Reise durch Ideen, Tutorials und persönliche Einblicke. Jeder Post wird automatisch kategorisiert und mit Tags versehen - Sie müssen nur schreiben! 🌿'
+feature_row:
+  - image_path: /assets/images/posts-feature.jpg
+    alt: "Blog Posts"
+    title: "Latest Posts"
+    excerpt: "Entdecken Sie meine neuesten Gedanken und Artikel."
+    url: "/posts/"
+    btn_label: "Alle Posts"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/categories-feature.jpg
+    alt: "Kategorien"
+    title: "Kategorien"
+    excerpt: "Durchstöbern Sie Posts nach Themenbereichen."
+    url: "/categories/"
+    btn_label: "Kategorien"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/tags-feature.jpg
+    alt: "Tags"
+    title: "Tags"
+    excerpt: "Finden Sie Posts zu spezifischen Themen."
+    url: "/tags/"
+    btn_label: "Tags"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
