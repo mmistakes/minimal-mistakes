@@ -2,7 +2,7 @@
 layout: single
 title: "4.Amine Corrosion"
 categories: Piping
-tag: [PWHT, HAZ]
+tag: [Corrosion, Amine]
 toc: true
 ---
 
