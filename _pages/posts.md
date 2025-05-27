@@ -2,7 +2,6 @@
 layout: posts
 title: "All Blog Posts"
 permalink: /posts/
-author_profile: false
 header:
   overlay_color: "#38c9c3"
   overlay_filter: "0.2"
@@ -11,6 +10,8 @@ header:
   cta_url: "/"
   cta_class: "btn--primary"
 ---
+
+{% include page__hero.html %}
 
 {% for post in site.posts %}
   {% include archive-single.html %}
