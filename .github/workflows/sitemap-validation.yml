@@ -1,10 +1,10 @@
 name: Sitemap Validation
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
 
 jobs:
   validate-sitemap:
