@@ -13,10 +13,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Install Vale
+      - name: Install Node.js (für markdownlint)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install Vale using package manager
         run: |
-          curl -fsSL https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_64-bit.tar.gz | tar -xz -C /tmp
+          wget -qO- https://github.com/errata-ai/vale/releases/latest/download/vale_Linux_x86_64.tar.gz | tar -xz -C /tmp
           sudo mv /tmp/vale /usr/local/bin/vale
+          vale --version
+      
+      - name: Create basic Vale config
+        run: |
+          cat > .vale.ini << 'EOF'
+          StylesPath = styles
+          MinAlertLevel = suggestion
+          [*.md]
+          BasedOnStyles = Vale
+          EOF
+          mkdir -p styles
       
       - name: Run Vale on Markdown files
         run: |
@@ -27,4 +43,4 @@ jobs:
       
       - name: Run markdownlint
         run: |
-          markdownlint "**/*.md" || true
+          markdownlint "**/*.md" --ignore node_modules || true
