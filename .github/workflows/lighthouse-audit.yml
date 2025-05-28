@@ -1,24 +1,32 @@
 name: Lighthouse SEO & Performance Audit
+
 on:
   workflow_run:
     workflows: ["Deploy Jekyll site to Pages"]
     types:
       - completed
+
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - uses: actions/checkout@v3
-      - name: Build Jekyll site
-        uses: helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+      
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
+      
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli
-      - name: Run Lighthouse CI
+      
+      - name: Wait for deployment
+        run: sleep 30  # Kurz warten bis Deployment vollständig propagiert ist
+      
+      - name: Run Lighthouse CI against live site
         run: |
-          npx lhci autorun --collect.url=http://localhost:4000 --collect.staticDistDir=_site --upload.target=temporary-public-storage || true
+          npx lhci autorun \
+            --collect.url="https://www.powerplatformtip.com" \
+            --upload.target=temporary-public-storage
+        continue-on-error: true
