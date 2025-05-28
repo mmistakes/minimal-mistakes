@@ -15,7 +15,9 @@ tags:
   - Development
   - Production
   - AppSecurity
-excerpt: "Automatically switch between test and user email addresses by checking if the app runs in Studio Mode."
+  - Environment Switching
+  - Security
+excerpt: "Automatically switch between test and production user emails in PowerApps Studio using environment detection for secure, automated app testing and deployment."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"

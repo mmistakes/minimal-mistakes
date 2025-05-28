@@ -10,7 +10,8 @@ tags:
   - PowerPlatform
   - PowerPlatformTip
   - SharePoint
-excerpt: "Need to fetch the highest, lowest, and total count of IDs in a SharePoint list to manage your data more efficiently?"
+  - List Analytics
+excerpt: "Efficiently retrieve the highest, lowest, and total item IDs from a SharePoint list in Power Automate for advanced list analytics and data management."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"

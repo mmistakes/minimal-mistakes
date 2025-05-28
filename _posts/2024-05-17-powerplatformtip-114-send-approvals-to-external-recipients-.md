@@ -5,14 +5,13 @@ categories:
   - Article
   - PowerPlatformTip
 tags:
-  - marcel-lehmann
-  - microsoft
-  - power-automate
-  - power-platform
-  - powerautomate
-  - powerplatform
-  - powerplatformtip
-excerpt: "Send approval requests to external recipients using simple email options or Adaptive Cards in Power Automate."
+  - Power Automate
+  - External Approvals
+  - Adaptive Cards
+  - Email Integration
+  - PowerPlatform
+  - Marcel Lehmann
+excerpt: "Send Power Automate approval requests to external recipients using Adaptive Cards or email, enabling secure, flexible workflows beyond your organization."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"

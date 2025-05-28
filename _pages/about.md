@@ -1,8 +1,14 @@
 ---
 layout: single
-title: "About PowerPlatformTip"
+title: "About PowerPlatformTip - Marcel Lehmann's Microsoft Power Platform Blog"
 permalink: /about/
+description: "Learn about Marcel Lehmann, Microsoft Power Platform MVP from Switzerland, and PowerPlatformTip blog featuring expert tips on Power Apps, Power Automate, Copilot Studio, and more."
+excerpt: "Discover PowerPlatformTip by Marcel Lehmann, BizzApps MVP providing expert guidance on Microsoft Power Platform including Power Apps, Power Automate, and Copilot Studio solutions."
+keywords: "Marcel Lehmann, Power Platform MVP, Power Apps expert, Power Automate consultant, Copilot Studio specialist, Microsoft MVP, Switzerland, PowerPlatform tips"
 author_profile: false
+sitemap:
+  priority: 0.8
+  changefreq: monthly
 header:
   overlay_color: "#38c9c3"
   overlay_filter: "0.2"
@@ -12,29 +18,57 @@ header:
   cta_class: "btn--primary"
 ---
 
-# Welcome! 👋
+# About PowerPlatformTip - Your Premier Microsoft Power Platform Resource 👋
 
-This blog is your go-to source for **PowerPlatformTip** - practical insights, solutions, and best practices for Microsoft Power Platform technologies including Power Apps, Power Automate, Power BI, and more.
+Welcome to **PowerPlatformTip**, your comprehensive source for expert insights, practical solutions, and proven best practices for Microsoft Power Platform technologies including Power Apps, Power Automate, and Copilot Studio (Power Virtual Agents).
 
-## About Marcel Lehmann
+## About Marcel Lehmann - Microsoft Power Platform MVP
 
-Hello, I'm Marcel Lehmann, a BizzApps MVP based in Switzerland with a deep passion for the PowerPlatform. As an enthusiast, expert, and evangelist, I've turned my hobby into a rewarding career. I'm not only devoted to advancing PowerApps and PowerAutomate but also to sharing my expertise.
+Hello, I'm **Marcel Lehmann**, a **Microsoft Business Applications (BizzApps) MVP** based in Switzerland with an unwavering passion for the Microsoft Power Platform ecosystem. As a recognized expert, evangelist, and consultant, I've successfully transformed my enthusiasm for Power Platform technologies into a thriving career dedicated to empowering organizations and individuals.
 
-Through [thepoweraddicts.ch](https://thepoweraddicts.ch/), I offer coaching, consulting, and training services, focusing on project implementation and support.
+My expertise spans across:
+- **Power Apps**: Custom application development and optimization
+- **Power Automate**: Workflow automation and process optimization  
+- **Copilot Studio (Power Virtual Agents)**: Conversational AI and chatbot development
+Through [thepoweraddicts.ch](https://thepoweraddicts.ch/), I provide professional coaching, consulting, and training services with a focus on:
+- Custom Power Platform solution implementation
+- Enterprise-grade application development
+- Process automation and digital transformation
+- Performance optimization and troubleshooting
+- Team training and skill development
 
-My goal is to inspire and empower others to fully leverage the PowerPlatform. Thank you for engaging with my content. Follow me for actionable insights and expert guidance on the Microsoft Power Platform.
+## What You'll Discover on PowerPlatformTip
 
-## What You'll Find Here
+### 🎯 **Practical Implementation Guides**
+Step-by-step tutorials for solving real-world Power Platform challenges with proven methodologies.
 
-- **Practical Tips**: Step-by-step guides for common PowerPlatform challenges
-- **Best Practices**: Proven approaches for building robust solutions
-- **Performance Optimization**: Tips to make your apps faster and more efficient
-- **Real-World Examples**: Solutions from actual implementation scenarios
+### 🏆 **Performance Best Practices**
+Expert-tested approaches for building scalable, robust, and efficient Power Platform solutions.
 
-## Connect
+### ⚡ **Optimization Techniques**
+Advanced tips to enhance application performance, reduce load times, and improve user experience.
 
-If you have questions about any of the tips or want to share your own PowerPlatform experiences, feel free to reach out!
+### 📈 **Real-World Case Studies**
+Solutions and insights from actual enterprise implementations and complex business scenarios.
+
+### 🔧 **Troubleshooting Guides**
+Common issues resolution and debugging techniques for Power Platform applications.
+
+## Why Choose PowerPlatformTip?
+
+- **MVP-Level Expertise**: Insights from a recognized Microsoft MVP with years of hands-on experience
+- **Practical Focus**: Solutions tested in real-world enterprise environments
+- **Regular Updates**: Fresh content covering the latest Power Platform features and updates
+- **Community-Driven**: Responsive to developer needs and industry trends
+
+## Connect & Collaborate
+
+Have questions about Power Platform implementation or want to discuss your specific use case? I'm here to help!
+
+📧 **Get in Touch**: [Contact Marcel Lehmann](https://thepoweraddicts.ch/)  
+🌐 **Professional Services**: [thepoweraddicts.ch](https://thepoweraddicts.ch/)  
+💼 **LinkedIn**: Connect for the latest Power Platform insights  
 
 ---
 
-*Ready to dive in? Check out the [latest posts](/posts/) or browse by [categories](/categories/) and [tags](/tags/).*
+*Ready to accelerate your Power Platform journey? Explore our [latest expert tips](/posts/), browse by [specialized categories](/categories/), or find specific solutions using our [comprehensive tags](/tags/).*

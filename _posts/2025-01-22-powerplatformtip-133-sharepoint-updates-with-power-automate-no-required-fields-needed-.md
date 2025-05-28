@@ -13,6 +13,7 @@ tags:
   - flows
   - update-item
   - automation
+  - Field Mapping
 excerpt: "Update specific SharePoint fields in Power Automate without HTTP requests or required fields."
 header:
   overlay_color: "#2dd4bf"

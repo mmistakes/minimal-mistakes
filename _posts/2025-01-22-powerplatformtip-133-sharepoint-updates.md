@@ -14,6 +14,7 @@ tags:
   - Automation
   - Dynamic Content
   - Flow Design
+  - Field Mapping
 excerpt: "Update SharePoint items with Power Automate without required fields—use dynamic JSON data for efficient and flexible updates."
 header:
   overlay_color: "#2dd4bf"

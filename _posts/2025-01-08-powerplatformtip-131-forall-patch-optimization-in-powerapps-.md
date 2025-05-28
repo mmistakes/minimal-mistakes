@@ -13,7 +13,8 @@ tags:
   - Optimization
   - Performance
   - BatchProcessing
-excerpt: "Batch updates in Power Apps using Patch with ForAll to reduce API calls and manage missing IDs."
+  - Bulk Update
+excerpt: "Optimize Power Apps performance by using ForAll and Patch for bulk updates—reduce API calls, speed up batch processing, and handle missing IDs efficiently."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"
