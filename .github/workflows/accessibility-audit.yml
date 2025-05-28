@@ -1,7 +1,10 @@
 name: Accessibility Audit
 on:
-  pull_request:
-    branches: [ master ]
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
+
 jobs:
   pa11y-ci:
     runs-on: ubuntu-latest
