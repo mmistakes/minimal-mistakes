@@ -1,7 +1,10 @@
 name: Spelling and Grammar Linting
 on:
-  pull_request:
-    branches: [ master ]
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
+
 jobs:
   spelling:
     runs-on: ubuntu-latest
