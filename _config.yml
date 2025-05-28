@@ -99,8 +99,8 @@ analytics:
 # Site Author
 author:
   name             : "Marcel Lehmann"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "BizzApps MVP from Switzerland 🇨🇭 - PowerPlatform Expert & Evangelist & MVP - Turning passion into expertise**"
+  avatar           : "/assets/images/bio-photo.jfif"
+  bio              : "BizzApps MVP from Switzerland 🇨🇭 - PowerPlatform Expert & Evangelist & MVP - Turning passion into expertise"
   location         : "Switzerland"
   email            : # your-email@example.com
   links:
@@ -109,14 +109,14 @@ author:
       url: "https://thepoweraddicts.ch"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your-email@example.com" # Uncomment and fill if you want to show email
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/MarceLehmann" # Your GitHub profile
+      url: "mailto:marcel.lehmann@thepoweraddicts.ch" # Uncomment and fill if you want to show email
+    #- label: "GitHub"
+    #  icon: "fab fa-fw fa-github"
+    #  url: "https://github.com/MarceLehmann" # Your GitHub profile
     # Add other social links like LinkedIn, Twitter if desired
-    # - label: "LinkedIn"
-    #   icon: "fab fa-fw fa-linkedin"
-    #   url: "https://linkedin.com/in/yourprofile"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/marcelehmann/"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/yourprofile"
@@ -124,9 +124,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/MarceLehmann/PowerPlatformTip" # Link to the blog's repository
+   # - label: "GitHub"
+   #   icon: "fab fa-fw fa-github"
+   #   url: "https://github.com/MarceLehmann/PowerPlatformTip" # Link to the blog's repository
     - label: "Website" # Link to your main website
       icon: "fas fa-fw fa-link"
       url: "https://thepoweraddicts.ch"

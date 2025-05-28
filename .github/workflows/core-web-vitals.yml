@@ -20,13 +20,17 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Install web-vitals CLI
-        run: npm install -g web-vitals-cli
+      - name: Install Lighthouse CI (richtige Web Vitals Messung)
+        run: npm install -g @lhci/cli
       
-      - name: Measure Core Web Vitals
+      - name: Wait for deployment
+        run: sleep 30
+      
+      - name: Run Lighthouse for Core Web Vitals
         run: |
-          npx @lhci/cli autorun \
+          npx lhci autorun \
             --collect.url="https://www.powerplatformtip.com" \
             --collect.settings.chromeFlags="--no-sandbox" \
+            --collect.numberOfRuns=3 \
             --assert.preset="lighthouse:no-pwa" \
             --upload.target=temporary-public-storage

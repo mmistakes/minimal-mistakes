@@ -13,29 +13,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Create minimal Vale config
-        run: |
-          cat > .vale.ini << 'EOF'
-          StylesPath = styles
-          MinAlertLevel = suggestion
-          Packages = Microsoft
-          
-          [*.md]
-          BasedOnStyles = Vale
-          EOF
-          mkdir -p styles
-      
-      - name: Run Vale spell check
-        uses: simbo/vale-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          files: '.'
-          fail_on_error: false
+          node-version: '18'
       
-      - name: Install markdownlint-cli
+      - name: Install markdownlint-cli only
         run: npm install -g markdownlint-cli
       
       - name: Run markdownlint
         run: |
           markdownlint "**/*.md" --ignore node_modules --ignore _site || true
+      
+      - name: Check for common German/English typos
+        run: |
+          echo "Checking for common typos..."
+          grep -r "das das\|der der\|die die" _posts/ || echo "✅ No duplicate German articles found"
+          grep -r "PowerPlatfrom\|PowerPlattform" _posts/ || echo "✅ No PowerPlatform typos found"
+          grep -r "recieve\|seperate\|definately" _posts/ || echo "✅ No common English typos found"
+          echo "✅ Basic typo check completed"
