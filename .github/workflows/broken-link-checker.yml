@@ -16,10 +16,20 @@ jobs:
       - name: Wait for deployment
         run: sleep 30
       
-      - name: Check for broken links
-        uses: celinekurpershoek/link-checker@v1.0.2
+      - name: Check links with modern action
+        uses: lycheeverse/lychee-action@v1
         with:
-          url: "https://www.powerplatformtip.com"
-          honorRobotExclusions: false
-          ignorePatterns: "github,google,linkedin"
-          recursiveLinks: true
+          args: |
+            --exclude-path ./_site
+            --exclude ".*feed\.xml.*"
+            --exclude ".*intent/.*"
+            --exclude ".*twitter\.com.*"
+            --exclude ".*x\.com.*"
+            --exclude ".*facebook\.com.*"
+            --exclude ".*linkedin\.com.*"
+            --exclude ".*bsky\.app.*"
+            --no-progress
+            --verbose
+            https://www.powerplatformtip.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
