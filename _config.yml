@@ -22,9 +22,9 @@ title_separator          : "-"
 subtitle                 : "Learn and find tips & tricks around the PowerPlatformTip" # site tagline that appears below site title in masthead
 name                     : "Marcel Lehmann"
 description              : "Learn and find tips & tricks around the Power Platform. Your go-to source for insights on Power Apps, Power Automate, and more, by Marcel Lehmann, BizzApps MVP."
-url                      : "https://github.com/MarceLehmann" # Update this to your actual blog URL when deployed
-baseurl                  : "/PowerPlatformTip" # Set to "" if hosting at the root of a domain
-repository               : "MarceLehmann/PowerPlatformTip" # Example: "username/repo-name"
+url: "https://www.powerplatformtip.com"
+baseurl: ""
+repository: "MarceLehmann/PowerPlatformTip"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
