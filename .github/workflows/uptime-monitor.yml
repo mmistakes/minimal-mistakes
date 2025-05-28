@@ -1,0 +1,22 @@
+name: Uptime Monitor
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Alle 30 Minuten
+
+jobs:
+  uptime-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check website availability
+        uses: srt32/uptime-monitor-action@v2
+        with:
+          url-to-hit: "https://www.powerplatformtip.com"
+          expected-statuses: "200,201,301,302"
+      
+      - name: Notify on failure
+        if: failure()
+        uses: 8398a7/action-slack@v3
+        with:
+          status: failure
+          text: "🚨 PowerPlatform Tip Website ist nicht erreichbar!"

@@ -1,0 +1,33 @@
+name: Comprehensive SEO Audit
+
+on:
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
+  schedule:
+    - cron: '0 3 * * 0'  # Sonntags um 3 Uhr
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Check meta tags
+        run: |
+          curl -s https://www.powerplatformtip.com | grep -i "<title\|<meta.*description\|<meta.*keywords" || true
+      
+      - name: Check structured data
+        run: |
+          curl -s "https://search.google.com/test/rich-results?url=https://www.powerplatformtip.com" || true
+      
+      - name: Check social media tags
+        run: |
+          curl -s https://www.powerplatformtip.com | grep -i "og:\|twitter:" || true

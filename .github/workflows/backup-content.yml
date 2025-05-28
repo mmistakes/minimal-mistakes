@@ -1,0 +1,23 @@
+name: Content Backup
+
+on:
+  schedule:
+    - cron: '0 1 * * 0'  # Sonntags um 1 Uhr
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Create backup archive
+        run: |
+          tar -czf content-backup-$(date +%Y%m%d).tar.gz _posts/ _pages/ _config.yml
+      
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-backup-$(date +%Y%m%d)
+          path: content-backup-*.tar.gz
+          retention-days: 90

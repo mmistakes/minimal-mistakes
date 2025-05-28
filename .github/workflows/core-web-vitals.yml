@@ -1,0 +1,32 @@
+name: Core Web Vitals Monitor
+
+on:
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
+  schedule:
+    - cron: '0 6 * * 1'  # Montags um 6 Uhr
+
+jobs:
+  web-vitals:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install web-vitals CLI
+        run: npm install -g web-vitals-cli
+      
+      - name: Measure Core Web Vitals
+        run: |
+          npx @lhci/cli autorun \
+            --collect.url="https://www.powerplatformtip.com" \
+            --collect.settings.chromeFlags="--no-sandbox" \
+            --assert.preset="lighthouse:no-pwa" \
+            --upload.target=temporary-public-storage
