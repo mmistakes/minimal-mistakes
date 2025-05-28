@@ -1,7 +1,10 @@
 name: Broken Link Checker
 on:
-  pull_request:
-    branches: [ master ]
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
+
 jobs:
   linkchecker:
     runs-on: ubuntu-latest
