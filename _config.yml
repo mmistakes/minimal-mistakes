@@ -30,7 +30,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
+enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -301,7 +301,7 @@ defaults:
       related: true
       show_date: true
       toc: true
-      toc_sticky: true
+      toc_sticky: false
   # _pages
   - scope:
       path: "_pages"
