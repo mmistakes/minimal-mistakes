@@ -19,6 +19,9 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
       
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      
       - name: Build Jekyll site
         run: bundle exec jekyll build
         env:
