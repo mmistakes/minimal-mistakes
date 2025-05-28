@@ -1,4 +1,5 @@
 name: Accessibility Audit
+
 on:
   workflow_run:
     workflows: ["Deploy Jekyll site to Pages"]
@@ -8,18 +9,23 @@ on:
 jobs:
   pa11y-ci:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
+      
       - name: Install pa11y-ci
         run: npm install -g pa11y-ci
-      - name: Build Jekyll site
-        uses:  helaili/jekyll-action@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Run accessibility tests with pa11y-ci
+      
+      - name: Wait for deployment
+        run: sleep 30
+      
+      - name: Run accessibility tests against live site
         run: |
-          pa11y-ci --sitemap _site/sitemap.xml --sitemap-find "_site" --sitemap-replace "http://localhost:4000" --server "bundle exec jekyll serve --detach --port 4000" --concurrency 2 || true
+          pa11y-ci https://www.powerplatformtip.com \
+            --sitemap https://www.powerplatformtip.com/sitemap.xml \
+            --concurrency 2 || true
