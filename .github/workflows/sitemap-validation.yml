@@ -1,21 +1,44 @@
 name: Sitemap Validation
+
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+
 jobs:
-  sitemap:
+  validate-sitemap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Build Jekyll site
-        uses: helaili/jekyll-action@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Rebuild sitemap.xml
+          ruby-version: '3.1'
+          bundler-cache: true
+      
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      
+      - name: Check if sitemap.xml exists
         run: |
-          bundle exec jekyll build
+          if [ ! -f "_site/sitemap.xml" ]; then
+            echo "❌ sitemap.xml not found in _site/"
+            exit 1
+          else
+            echo "✅ sitemap.xml found"
+          fi
+      
       - name: Validate sitemap.xml
         run: |
           xmllint --noout _site/sitemap.xml
+          echo "✅ sitemap.xml is valid XML"
+      
+      - name: Show sitemap content (first 20 lines)
+        run: |
+          echo "Sitemap content preview:"
+          head -20 _site/sitemap.xml
