@@ -11,7 +11,7 @@ header:
   cta_class: "btn--primary"
 ---
 
-{% include page__hero.html %}
+
 
 {% for post in site.posts %}
   {% include archive-single.html %}
