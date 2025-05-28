@@ -5,6 +5,7 @@ categories: Piping
 tag: [Corrosion, H2S, SSC]
 toc: true
 ---
+
 # H₂S 환경에서의 SCC (Sulfide Stress Cracking)
 
 **H₂S(Sulfide)**가 존재하는 환경에서는 금속 재질이 **응력 부식 균열(SCC)**에 매우 취약해집니다. 이러한 현상을 **Sulfide Stress Cracking (SSC)** 또는 넓은 의미에서 **HIC/SOHIC (수소 유기 균열)**로도 분류합니다.
@@ -94,8 +95,6 @@ H₂S 환경은 예측 불가능한 균열을 유발할 수 있는 **고위험 �
 
 
 # 코드별 Sour Service 정의
-
-
 
 ## ✅ 1. **NACE MR0175 / ISO 15156**
 
