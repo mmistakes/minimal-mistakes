@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check website availability
-        uses: srt32/uptime-monitor-action@v2
+        uses: gr2m/uptime-action@v1
         with:
-          url-to-hit: "https://www.powerplatformtip.com"
-          expected-statuses: "200,201,301,302"
+          url: "https://www.powerplatformtip.com"
+          expected_status: "200,201,301,302"
       
       - name: Notify on failure
         if: failure()
