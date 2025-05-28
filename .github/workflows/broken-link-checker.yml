@@ -1,4 +1,5 @@
 name: Broken Link Checker
+
 on:
   workflow_run:
     workflows: ["Deploy Jekyll site to Pages"]
@@ -8,14 +9,17 @@ on:
 jobs:
   linkchecker:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - uses: actions/checkout@v3
-      - name: Build Jekyll site
-        uses: helaili/jekyll-action@v2
+      - uses: actions/checkout@v4
+      
+      - name: Wait for deployment
+        run: sleep 30
+      
+      - name: Check for broken links
+        uses: celinekurpershoek/link-checker@v1.0.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install linkchecker
-        run: sudo apt-get update && sudo apt-get install -y linkchecker
-      - name: Run linkchecker
-        run: |
-          linkchecker --ignore-url=^mailto: --ignore-url=^tel: --no-status --file-output=csv/_site/linkchecker.csv _site/index.html || true
+          url: "https://www.powerplatformtip.com"
+          honorRobotExclusions: false
+          ignorePatterns: "github,google,linkedin"
+          recursiveLinks: true
