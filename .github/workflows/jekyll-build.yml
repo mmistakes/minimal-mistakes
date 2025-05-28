@@ -1,3 +1,5 @@
+# DEACTIVATED - using jekyll.yml instead
+
 name: Jekyll Build
 on:
   push:
