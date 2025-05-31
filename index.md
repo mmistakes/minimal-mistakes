@@ -9,7 +9,7 @@ read_time: false
 <div class="hero-intro">
   <h1>Christopher Motola</h1>
   <p>I turn data into stories and narratives into systems.<br>
-  <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
+  Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
 </div>
 
 ### 📂 Featured Work  
