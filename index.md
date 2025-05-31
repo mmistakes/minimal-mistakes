@@ -6,9 +6,8 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
-I turn data into stories and narratives into systems.
-
-Writing, analysis, and experimentation from the intersection of journalism and logic.
+> **I turn data into stories and narratives into systems.
+> Writing, analysis, and experimentation from the intersection of journalism and logic.
 
 ### 📂 Featured Work  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
