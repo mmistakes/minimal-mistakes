@@ -6,10 +6,10 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
-<p class="hero-intro">
-I turn data into stories and narratives into systems.
-Writing, analysis, and experimentation from the intersection of journalism and logic.
-</p>
+<div class="hero-intro">
+<h1></h1>I turn data into stories and narratives into systems.</h1>
+<p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
+</div>
 
 ### 📂 Featured Work  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
