@@ -7,6 +7,7 @@ author_profile: false
 read_time: false
 ---
 > **I turn data into stories and narratives into systems.
+
 > Writing, analysis, and experimentation from the intersection of journalism and logic.
 
 ### 📂 Featured Work  
