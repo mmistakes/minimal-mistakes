@@ -13,10 +13,4 @@ read_time: false
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
 - **[Game Design](portfolio/game-design/)** – Experimental puzzle game based on musical chords
 - **[SEO-focused Writing](portfolio/small-business-writing/)** - Revenue-generating posts and reviews 
-<!--
-### ✍️ Latest Blog Posts  
-{% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url }})
-{% endfor %}
 
--->
