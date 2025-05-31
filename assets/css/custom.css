@@ -1,7 +1,20 @@
 .hero-intro {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #1f2937;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-intro h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a202c; /* deep gray-blue */
+  margin-bottom: 0.5rem;
+}
+
+.hero-intro p {
+  font-size: 1.25rem;
+  color: #4a5568; /* lighter gray for contrast */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
 }
