@@ -7,7 +7,7 @@ author_profile: false
 read_time: false
 ---
 <div class="hero-intro">
-<h1></h1>I turn data into stories and narratives into systems.</h1>
+<h1>I turn data into stories and narratives into systems.</h1>
 <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
 </div>
 
