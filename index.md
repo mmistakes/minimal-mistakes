@@ -6,7 +6,9 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
-This site exists to help explain what I do. I wear a fair number of different hats professionally, and it can be difficult to paint a coherent picture of my skill set and personality through my resume.
+I turn data into stories and narratives into systems.
+
+Writing, analysis, and experimentation from the intersection of journalism and logic.
 
 ### 📂 Featured Work  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
