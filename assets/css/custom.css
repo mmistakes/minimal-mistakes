@@ -18,3 +18,18 @@
   max-width: 600px;
   margin: 0 auto;
 }
+
+.section-header {
+  background-color: #fef3c7;  /* soft orange tint */
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #fb923c;
+  margin-top: 2rem;
+}
+
+.callout-block {
+  background-color: #f0f9ff;
+  padding: 1rem;
+  border-left: 4px solid #3b82f6;
+  border-radius: 6px;
+  margin: 2rem 0;
+}
