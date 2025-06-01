@@ -11,9 +11,9 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-<h2 class="section-header">## 🔍 Featured Work</h2>
+<h2 class="section-header">🔍 Featured Work</h2>
 
-<div class="callout-bloack">
+<div class="callout-block">
   <strong>OMG OMG OMG GUILELESS ENTHUSIASM GUYS</strong>
 
 </div>
