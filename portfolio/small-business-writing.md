@@ -9,14 +9,15 @@ read_time: false
 toc: true
 ---
 
-## Overview  
+<h2 class="section-header">Overview  </h2>
 I've been writing about small business matters for a very long time, most recently at Merchant Maverick, a small business resources site. I wore a number of hats there, including senior staff writer, small business researcher and analyst, and occasionally tech advisor. 
-
+<div class="callout-block">
 My areas of focus were **small business payment processing and funding**. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
+</div>
 
 ---
 
-## 🧠 Problem
+<h2 class="section-header"> 🧠 Problem </h2>
 The client needed original, SEO-optimized content that:
 - Was visible on Google SERPs
 - Demonstrated expertise in the topics of small business financing and payments
@@ -25,7 +26,7 @@ The client needed original, SEO-optimized content that:
 
 ---
 
-## 🔍 My Role  
+<h2 class="section-header">🔍 My Role  </h2>
 - Performed research and wrote article drafts  
 - Maintained and updated over 100 posts and reviews
 - Briefed the editorial team on new developments within my topic cluster
@@ -36,7 +37,7 @@ The client needed original, SEO-optimized content that:
 
 ---
 
-## 🔧 Tools & Technologies  
+<h2 class="section-header"> 🔧 Tools & Technologies  </h2>
 - **Editorial Tools:** WordPress CMS, Google Docs
 - **Data Tools:** Google Sheets, SQL, Python, R
 - **Visualizations:** Datawrapper, Tableau
@@ -44,20 +45,21 @@ The client needed original, SEO-optimized content that:
 
 ---
 
-## 📈 Outcome
-- Maintained the highest number of articles and reviews in the company
+<h2 class="section-header"> 📈 Outcome </h2>
+- Maintained the highest number of articles and reviews in the company (over 100)
 - Helped the company achieve record profits during the pandemic 
 - Cited by major financial publications and blogs
 
 ---
 
-## 📎 Links & Samples  
+<h2 class="section-header"> 📎 Links & Samples </h2>
 - [Stripe review](https://www.merchantmaverick.com/reviews/stripe-review/)  
 - [Report on credit card issuers](https://www.merchantmaverick.com/credit-card-issuers/)
 - [Guide to ACH processing fees](https://www.merchantmaverick.com/ach-processing-fees/)
 - [Report on best states for black entrepreneurs](https://www.merchantmaverick.com/2023-best-states-for-black-entrepreneurs/)
 - [How to find business grants](https://www.merchantmaverick.com/government-small-business-grants/)  
 Feel free to click on my name on the site and see what else I've written.
+
 ---
 
 ## 💬 Notes / Reflections
