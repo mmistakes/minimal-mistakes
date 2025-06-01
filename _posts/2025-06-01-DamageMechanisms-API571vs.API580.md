@@ -57,4 +57,4 @@ flowchart LR
   B -- Yes --> C(API 571<br>메커니즘 세부 이해·검증)
   C --> D(API 580<br>PoF 등급 결정)
   D --> E(API 581<br>정량 계산 선택 가능)
-  ```
+```
