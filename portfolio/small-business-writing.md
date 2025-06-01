@@ -12,7 +12,7 @@ toc: true
 <h2 class="section-header">Overview  </h2>
 I've been writing about small business matters for a very long time, most recently at Merchant Maverick, a small business resources site. I wore a number of hats there, including senior staff writer, small business researcher and analyst, and occasionally tech advisor. 
 <div class="callout-block">
-My areas of focus were **small business payment processing and funding**. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
+My areas of focus were <strong>small business payment processing and funding</strong>. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
 </div>
 
 ---
