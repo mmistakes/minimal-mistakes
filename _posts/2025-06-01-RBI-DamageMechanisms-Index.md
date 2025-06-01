@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "0.Damage Mechanisms"
+title: "0.Damage Mechanisms(API580)"
 categories: Piping
 tag: [API580, DamageMechanisms, RBI]
 toc: true
@@ -28,10 +28,10 @@ toc: true
 | 손상 메커니즘        | 주요 조건                           | 적용 사례               | 식별 키워드         | 참조                                                         |
 | -------------------- | ----------------------------------- | ----------------------- | ------------------- | ------------------------------------------------------------ |
 | 염화물 SCC           | 오스테나이트계 SS + 고온 + Cl⁻ 존재 | 고온 증기배관, 열교환기 | 국부균열, 누설      | [2.염화물 응력 부식균열]({{ site.baseurl }}/piping/ChlorideSCC/) |
-| 아민 SCC             | 아민 시스템 + 고온 + 응력           | 가스 처리 유닛          | 길게 진행되는 균열  |                                                              |
-| 황화물 SCC (SSC)     | CS, 저합금강 + Wet H₂S              | 정유 HDS, 석유화학      | 수직 균열, 수소취성 |                                                              |
-| 수소 유기 균열 (HIC) | 내부 수소 확산                      | 저탄소강 압력용기       | 평행층 균열         |                                                              |
-| 수소 취성            | 고경도 합금강, PWHT 미실시          | 고강도 볼트, 밸브 부품  | 갑작스런 파단       |                                                              |
+| 아민 SCC             | 아민 시스템 + 고온 + 응력           | 가스 처리 유닛          | 길게 진행되는 균열  | [4.Amine Corrosion]({{ site.baseurl }}/piping/Corrosion-AMINE) |
+| 황화물 SCC (SSC)     | CS, 저합금강 + Wet H₂S              | 정유 HDS, 석유화학      | 수직 균열, 수소취성 | [5.Sulfide SCC Corrosion]({{ site.baseurl }}/piping/SulfideSCC) |
+| 수소 유기 균열 (HIC) | 내부 수소 확산                      | 저탄소강 압력용기       | 평행층 균열         | [8.수소 유기 균열(HIC, Hydrogen-Induced Cracking)]({{ site.baseurl }}/piping/ Cracking-HydrogenInducedCracking) |
+| 수소 취성            | 고경도 합금강, PWHT 미실시          | 고강도 볼트, 밸브 부품  | 갑작스런 파단       | [4.용접 수소 유입 매커니즘(Feat. 수소 취성)]({{ site.baseurl }}/piping/PWHT-fourth) |
 
 ---
 
