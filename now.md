@@ -10,19 +10,24 @@ sidebar:
 
 _Last updated: May 2025_
 
-## 🧠 What I’m Focused On
+<h2 class="section-header">🧠 What I’m Focused On</h2>
 
 - Building out this portfolio (and learning Jekyll as I go)
 - Experimenting with integrating AI/LLMs into my workflows
 - Helping [a local tech education company](https://openhubproject.com/) secure grant funding
 - Looking for new opportunities in writing, game design, and/or data analysis
 
-## 🧪 Side Projects & Experiments
+---
+
+<h2 class="section-header">🧪 Side Projects & Experiments</h2>
 
 - Game design prototyping, with an eye towards barcade audiences
 - Running over all of the major bridges in the Hudson Valley
 <img src="/assets/images/BearMountainBridge.jpg" alt="Bear Mountain Bridge" style="display:block; margin:auto; width:60%;" />
-## 🛠 Tools I'm Using or Testing
+
+---
+
+<h2 class="section-header"> 🛠 Tools I'm Using or Testing</h2>
 
 - [R Markdown](https://rmarkdown.rstudio.com/)
 - [ChatGPT](https://chatgpt.com/)
