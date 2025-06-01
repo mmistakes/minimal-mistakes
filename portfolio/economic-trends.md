@@ -9,12 +9,12 @@ read_time: false
 toc: true
 ---
 
-## Overview  
+<h2 class="section-header"> Overview  </h2>
 At National Business Capital, I led a data journalism initiative focused on analyzing **U.S. small business lending trends**. The goal was to produce original research that both educated readers and improved SEO/domain authority.
 
 ---
 
-## 🧠 Problem
+<h2 class="section-header">🧠 Problem </h2>
 The client needed original, data-backed content that could:
 - Boost domain authority
 - Demonstrate expertise in the small business lending space
@@ -22,7 +22,7 @@ The client needed original, data-backed content that could:
 
 ---
 
-## 🔍 My Role  
+<h2 class="section-header">🔍 My Role </h2>
 - Performed research and wrote article drafts  
 - Queried datasets from government (SBA, BLS) and private APIs  
 - Cleaned and analyzed data using **R, Excel, and SQL**  
@@ -31,7 +31,7 @@ The client needed original, data-backed content that could:
 
 ---
 
-## 🔧 Tools & Technologies  
+<h2 class="section-header">🔧 Tools & Technologies </h2> 
 - **Languages:** R, SQL, AppScript (JavaScript)  
 - **Data Sources:** BLS, SBA, Census Bureau  
 - **Visualization:** Datawrapper  
@@ -39,16 +39,15 @@ The client needed original, data-backed content that could:
 
 ---
 
-## 📈 Outcome
+<h2 class="section-header">📈 Outcome </h2>
 - Articles contributed to an **8% increase in domain authority**
 - Drove over **10,000 organic visits** in the first 3 months
 - Cited by other financial publications and blogs
 
 ---
 
-## 📎 Links & Samples  
-- [View Published Article](#)  
--
+<h2 class="section-header">📎 Links & Samples </h2>
+- [State Recession Readiness](#https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/)  
 
 ---
 
