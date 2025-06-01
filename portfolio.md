@@ -13,7 +13,10 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 <h2 class="section-header">## 🔍 Featured Work</h2>
 
-## 🔍 Featured Work
+<div class="callout-bloack">
+  <strong>OMG OMG OMG GUILELESS ENTHUSIASM GUYS</strong>
+
+</div>
 
 ### 📊 Data Journalism: Economic Trends
 **Client:** National Business Capital    
