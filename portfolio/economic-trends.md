@@ -51,5 +51,5 @@ The client needed original, data-backed content that could:
 
 ---
 
-## 💬 Notes / Reflections
+<h2>💬 Notes / Reflections</h2>
 I learned a lot about balancing **data depth and accessibility**. The most engaging stories often started with a compelling visual — and then backed it up with solid research.
