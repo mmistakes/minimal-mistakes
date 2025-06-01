@@ -11,6 +11,8 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
+<h2 class="section-header">## 🔍 Featured Work</h2>
+
 ## 🔍 Featured Work
 
 ### 📊 Data Journalism: Economic Trends
