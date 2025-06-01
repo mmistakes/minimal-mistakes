@@ -29,14 +29,10 @@ toc: true
 
 ## 2️⃣ 발생 메커니즘
 
-```mermaid
-graph TD
-  A[습식 H₂S 환경] --> B[부식 & H₂ 발생]
-  B --> C{H· 확산<br>→ MnS 개재물}
-  C --> D[블리스터 형성]
-  D --> E[블리스터 연결 → Laminar Crack]
-  E --> F[Step-Wise Crack<br>→ 관통]
-```
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/HIC_Mechanism.svg" alt="HIC 메커니즘">
+</p>
+
 
 1. **음극 반응:** H⁺ + e⁻ → H·
 2. **확산·트랩핑:** 수소 원자 → 개재물·밴드 주변 포집

@@ -50,11 +50,6 @@ toc: true
 ---
 
 ## 3️⃣ Workflow 상 위치
-
-```mermaid
-flowchart LR
-  A(API 580<br>§5 DM Identification) --> B{DM 존재?}
-  B -- Yes --> C(API 571<br>메커니즘 세부 이해·검증)
-  C --> D(API 580<br>PoF 등급 결정)
-  D --> E(API 581<br>정량 계산 선택 가능)
-```
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/images/API580_API571_Workflow.svg" alt="손상 메커니즘 워크플로우">
+</p>
