@@ -13,11 +13,6 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 <h2 class="section-header">🔍 Featured Work</h2>
 
-<div class="callout-block">
-  <strong>OMG OMG OMG GUILELESS ENTHUSIASM GUYS</strong>
-
-</div>
-
 ### 📊 Data Journalism: Economic Trends
 **Client:** National Business Capital    
 **Skills:** Data scraping, R, SQL, visualizations, writing    
@@ -30,16 +25,20 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 ### 💸 Small Business Funding & Payment Processing Analysis
 **Client:** Merchant Maverick    
 **Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis    
-**Summary:** Wrote revenue-generating informational blog posts and product reviews on small business topics and products.       
-[→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Learn More](/portfolio/small-business-writing/)  
-
+[→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Learn More](/portfolio/small-business-writing/) 
+<div class ="callout-block">
+  <strong>Summary: </strong>Wrote revenue-generating informational blog posts and product reviews on small business topics and products.   
+</div>
+ 
 ---
 
 ### 🎮 Procedural Game Design: *String Theory*
 **Role:** Lead Developer / Co-designer    
-**Skills:** Programming, scripting, systems design, project management, source control     
-**Summary:** Developed a procedural music puzzle game designed to train the player's ear to recognize chords. Built 90% of the codebase.    
+**Skills:** Programming, scripting, systems design, project management, source control  
 [→ Steam Page](https://store.steampowered.com/app/402150/String_Theory/) | [→ Learn More](/portfolio/game-design/)  
+<div class ="callout-block">
+  <strong>Summary: </strong>Developed a procedural music puzzle game designed to train the player's ear to recognize chords. Built 90% of the codebase.
+</div>
 
 ---
 
