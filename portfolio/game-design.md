@@ -5,10 +5,10 @@ permalink: /portfolio/game-design/
 author_profile: false
 sidebar:
   nav: "main"
-read_time: true
+read_time: false
 toc: true
 ---
-## Overview  
+<h2 class="section-header">Overview  </h2>
 A music puzzle game built in [collaboration with chiptune artist Shael Riley](https://www.destructoid.com/chiptune-artist-shael-riley-wants-to-train-your-ears-with-new-game/) for PC. Released on [Steam](https://store.steampowered.com/app/402150/String_Theory/).  
 
 ---
@@ -32,16 +32,17 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
 
 </div>
 
-## Concept
+<h2 class="section-header"> Concept</h2>
+<div class="callout-block">
 We needed a novel design concept for a music-based game. At the time, most music games were effectively rhythm games that challenged players to identify and sync with a beat. 
 
 We decided to test out the concept of a chord-based game that would help train the player's ear. 
 
-In each level, a musical chord plays in the background. Players are then presented with a series of strings, each of which plays a note when touched. To pass the level, players need to cut the strings that play notes incongruent with the background music. 
+In each level, a musical chord plays in the background. Players are then presented with a series of strings, each of which plays a note when touched. To pass the level, players need to cut the strings that play notes incongruent with the background music. </div>
 
 ---
 
-## 🔍 My Role  
+<h2 class="section-header"> 🔍 My Role </h2> 
 - Co-designed concept and system 
 - Served as lead programmer and wrote most of the code  
 - Implemented art and sound assets
@@ -49,7 +50,7 @@ In each level, a musical chord plays in the background. Players are then present
 
 ---
 
-## 🔧 Tools & Technologies  
+<h2 class="section-header"> 🔧 Tools & Technologies </h2>
 - **Languages:** GML
 - **Game Engine:** GameMaker Studio 
 - **Platform:** PC (Steam) 
