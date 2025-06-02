@@ -13,7 +13,7 @@ read_time: false
     <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
   </div>
 </div>
----
+
 <h2 class="section-header">📂 Featured Work</h2>  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
 - **[Game Design](portfolio/game-design/)** – Experimental puzzle game based on musical chords
