@@ -12,4 +12,4 @@ The developed model demonstrated strong performance, achieving approximately 93%
 [Repository](https://github.com/0ladayo/Surfaces-Classification-Machine-Learning-Project)
 
 Tools:
-<i class="fab fa-python"></i> Python(Pandas, Scikit-learn, NumPy, Matplotlib)
+<i class="fab fa-python"></i> Python (Pandas, Scikit-learn, NumPy, Matplotlib)
