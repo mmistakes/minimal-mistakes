@@ -24,8 +24,8 @@ author_profile: true
 
  {% for post in data_science_posts %}
   <div class="project data-science" style="display: none;">
-   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-   {{ post.content | strip_html | truncatewords: 50 }}
+   <h3>{{ post.title}}</h3>
+   {{ post.content | truncatewords: 250 }}
   </div>
  {% endfor %}
 </div>
