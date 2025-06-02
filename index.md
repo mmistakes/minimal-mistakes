@@ -13,8 +13,8 @@ read_time: false
     <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
   </div>
 </div>
-
-### 📂 Featured Work  
+---
+<h2 class="section-header">📂 Featured Work</h2>  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
 - **[Game Design](portfolio/game-design/)** – Experimental puzzle game based on musical chords
 - **[SEO-focused Writing](portfolio/small-business-writing/)** - Revenue-generating posts and reviews 
