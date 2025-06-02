@@ -1,22 +1,23 @@
 .hero-intro {
-  text-align: center;
-  margin-top: 2rem;
+  text-align: left;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
   margin-bottom: 3rem;
+  max-width: 700px;
 }
 
 .hero-intro h1 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #1a202c; /* deep gray-blue */
   margin-bottom: 0.5rem;
 }
 
 .hero-intro p {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #4a5568; /* lighter gray for contrast */
   line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto;
+  margin-top: 0.5rem;
 }
 
 .section-header {
