@@ -1,3 +1,10 @@
+.hero-block {
+  background-color: #f9fafb;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
 .hero-intro {
   text-align: left;
   margin: 2rem auto 3rem;
