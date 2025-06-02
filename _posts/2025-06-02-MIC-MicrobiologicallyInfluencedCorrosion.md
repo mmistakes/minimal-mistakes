@@ -113,7 +113,7 @@ MIC( **M**icrobiologically **I**nfluenced /**I**nduced **C**orrosion )은 **세�
 | **저유속(0.2 m/s)** | Wax·Water Drop-out, Biofilm 성장        | 국부 pitting → 穿孔 (최대 > 3 mm/y)        |
 | **Idle 기간**       | 잔류 Water Pocket, 산소 고갈 → 혐기조건 | SRB 활성, H₂S 포켓                         |
 | **지중 배관**       | 온도 일정·무산소 → SRB 성장 최적        | 내부·외부 MIC 동시 진행                    |
-| **Branch Dead-leg** | 30"→12" 관경 전이부 Flow Separation     | Mottling pitting, Erosion-Corrosion 시너지 |
+| **Branch Dead-leg** |" 관경 전이부 Flow Separation     | Mottling pitting, Erosion-Corrosion 시너지 |
 
 
 
@@ -123,13 +123,13 @@ MIC( **M**icrobiologically **I**nfluenced /**I**nduced **C**orrosion )은 **세�
    - Mechanical Pigging (Brush + BID) → High-Rate Flush > 2 m/s
    - *Chemical Cleaning* + Biocide (500–1000 ppm Glutaraldehyde for 6 h)
 2. **재질·보호 강화**
-   - 전이부 12" 스풀을 **03Cr-Duplex** 또는 **FBE Lined Pipe**로 교체
+   - 전이부 스풀을 **03Cr-Duplex** 또는 **FBE Lined Pipe**로 교체
    - 내부 코팅 완료 후 **Holiday Test < 5 V/µm**
 3. **운영 조건 재설계**
    - 정상 운전 **V ≥ 1 m/s** 및 **주 1회 고속 Flush 2 m/s, 1 h**
    - 연속 Biocide (Dual Program: Oxidizing + Non-Oxidizing) 투입
 4. **모니터링 체계 구축**
-   - 12" Branch 저점에 **Sampling Valve + Corrosion Coupon** 설치
+   - Branch 저점에 **Sampling Valve + Corrosion Coupon** 설치
    - 6 개월 주기로 **ILI-UT** 또는 **Smart Pig** 실시
    - KPI 알람 : pitting rate > 0.13 mm/y(5 mpy), SRB > 10⁴ CFU/mL
 
