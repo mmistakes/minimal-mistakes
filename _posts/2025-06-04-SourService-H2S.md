@@ -8,18 +8,18 @@ toc: true
 
 # NACE MR0103과 Sour Service 환경에서 Piping Engineer가 고려해야 할 사항
 
-석유화학 및 정유 플랜트에서는 황화수소(H₂S)가 포함된 유체를 다루는 배관이 빈번하게 존재하며, 이로 인해 **Sulfide Stress Cracking (SSC)**과 같은 균열 손상이 발생할 수 있다 [5.Sulfide SCC Corrosion]({{ site.baseurl }}/piping/Corrosion-SulfideSCC/). 이를 방지하기 위해 적용되는 대표적인 재료 규격이 **ASME MR0103**이며, 이와 같은 환경은 일반적으로 **Sour Service**로 분류된다.
+석유화학 및 정유 플랜트에서는 황화수소(H₂S)가 포함된 유체를 다루는 배관이 빈번하게 존재하며, 이로 인해 **Sulfide Stress Cracking (SSC)**과 같은 균열 손상이 발생할 수 있다 
+[5.Sulfide SCC Corrosion]({{ site.baseurl }}/piping/Corrosion-SulfideSCC/). 
 
-본 포스팅에서는 MR0103이란 무엇인지, Sour Service의 정의와 그에 따라 **Piping Engineer가 설계 시 고려해야 할 핵심사항**들을 정리하였다.
+본 포스팅에서는 NACE MR0103이란 무엇인지, Sour Service의 정의와 그에 따라 **Piping Engineer가 설계 시 고려해야 할 핵심사항**들을 정리하였다.
 
 ---
 
-## 1️⃣ ASME MR0103이란?
+## 1️⃣ NACE MR0103이란?
 
 - **정식 명칭**: *Materials Resistant to Sulfide Stress Cracking in Corrosive Petroleum Refining Environments*
-- **제정 기관**: ASME (American Society of Mechanical Engineers)
 - **주요 목적**: 황화수소(H₂S)가 존재하는 정유 환경에서 **Sulfide Stress Cracking (SSC)**에 저항성을 가지는 재료의 요구사항을 명시
-주의할 점은 MR0103은 **정유 및 석유화학 공정 (Downstream)**에 적용되며, **Upstream 설비**에는 **NACE MR0175**가 적용된다는 점이다.
+주의할 점은 NACE MR0103은 **정유 및 석유화학 공정 (Downstream)**에 적용되며, **Upstream 설비**에는 **NACE MR0175**가 적용된다는 점이다.
 
 ---
 
@@ -30,7 +30,7 @@ Sour Service는 황화수소(H₂S)가 포함된 유체를 다루는 환경으�
 - **H₂S의 Partial Pressure ≥ 0.0003 MPa (0.05 psi)**  
   → 이는 **NACE MR0103**에서 정의한 기준이다.
 
-Sour 환경에서는 유체 내 H₂S가 금속에 침투하여 수소취성(Hydrogen Embrittlement), 응력 부식균열(SSC)을 유발하므로, 별도의 재료관리 및 설계기준을 적용해야 한다.
+Sour Service에서는 유체 내 H₂S가 금속에 침투하여 수소취성(Hydrogen Embrittlement), 응력 부식균열(SSC)을 유발하므로, 별도의 재료관리 및 설계기준을 적용해야 한다.
 
 ---
 
@@ -39,17 +39,17 @@ Sour 환경에서는 유체 내 H₂S가 금속에 침투하여 수소취성(Hyd
 ### (1) 기준 적용 판단
 
 - 프로젝트가 **Sour Service** 환경인지 여부 확인
-- 해당 환경이 **MR0103 적용 대상(정유/석유화학)**인지 또는 **MR0175 적용 대상(Upstream, 생산설비)**인지 구분 필요
+- 해당 환경이 **NACE MR0103 적용 대상(정유/석유화학)**인지 또는 **MR0175 적용 대상(Upstream, 생산설비)**인지 구분 필요
 
 ### (2) 재료 선택 (Material Selection)
 
-- MR0103에 등재된 재료 사용 필요
+- NACE MR0103에서 다루는 재료 사용 필요
 - 특히 탄소강 및 저합금강은 **경도 제한**이 존재  
   → 일반적으로 **HRC 22 이하**
 
 ### (3) PWHT 요건 (Post Weld Heat Treatment)
 
-ASME MR0103에서는 특정 재질의 SSC 저항성을 확보하기 위해 **PWHT 적용을 요구**한다. 아래는 주요 재질군 별 요건이다:
+NACE MR0103에서는 특정 재질의 SSC 저항성을 확보하기 위해 **PWHT 적용을 요구**한다. 아래는 주요 재질군 별 요건이다:
 
 | 재질군 | PWHT 요구 여부 | 주요 요구 사항 |
 |--------|----------------|----------------|
@@ -63,7 +63,7 @@ ASME MR0103에서는 특정 재질의 SSC 저항성을 확보하기 위해 **PWH
 ### (4) 배관재료사양 관리
 
 - PMS(Piping Material Specification) 상 Sour Service 전용 Piping Class 별도 지정 필요
-- MR0103 대응 자재 및 벤더 리스트 관리 필수
+- NACE MR0103 대응 자재 및 벤더 리스트 관리 필수
 
 ### (5) 내식 및 부식여유
 
@@ -76,7 +76,7 @@ ASME MR0103에서는 특정 재질의 SSC 저항성을 확보하기 위해 **PWH
 
 | 항목 | 내용 |
 |------|------|
-| 기준 구분 | Downstream (정유/석유화학) → **ASME MR0103** 적용 |
+| 기준 구분 | Downstream (정유/석유화학) → **NACE MR0103** 적용 |
 | Sour 판단 기준 | **Partial Pressure of H₂S ≥ 0.0003 MPa (0.05 psi)** |
 | 재료 기준 | MR0103 등재 재료만 사용 가능, 경도 제한 필수 |
 | PWHT 요건 | 재질에 따라 적용 필요 (Carbon/Low Alloy는 일반적으로 필수) |
@@ -93,9 +93,8 @@ ASME MR0103에서는 특정 재질의 SSC 저항성을 확보하기 위해 **PWH
 
 3. 해당 **PIPING CLASS**는 **MR0103 등재 재료**를 적용해야 함.
 
-4. SOUR SERVICE 대상 라인은 "용접 및 검사" 시 **PROJECT SPEC**을 따라야 하며,  
-   - **PWHT 적용 및 경도시험 필수 수행**  
-   - **경도 기준: HRC 22 이하**
+4. SOUR SERVICE 대상 라인은 "용접 및 검사" 시 **PROJECT SPEC. Requirement**을 따라야 하며,  
+   - **PWHT 적용 및 경도시험 필수 수행** 등이 포함됨
 
 ➕ 즉, SOUR SERVICE 환경은 **SSC(Sulfide SCC) 방지**를 위해 별도 관리가 필요하며, **NACE MR0103을 반드시 준수해야 한다.**
 
