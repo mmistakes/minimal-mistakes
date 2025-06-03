@@ -50,6 +50,7 @@ Sour Service에서는 유체 내 H₂S가 금속에 침투하여 수소취성(Hy
 ### (3) PWHT 요건 (Post Weld Heat Treatment)
 
 NACE MR0103에서는 특정 재질의 SSC 저항성을 확보하기 위해 **PWHT 적용을 요구**한다. 아래는 주요 재질군 별 요건이다:
+출처 : NACE MR0103 Section 2.5 – Welding Requirements
 
 | 재질군 | PWHT 요구 여부 | 주요 요구 사항 |
 |--------|----------------|----------------|
