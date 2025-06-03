@@ -113,7 +113,7 @@ MIC( **M**icrobiologically **I**nfluenced /**I**nduced **C**orrosion )은 **세�
 | **저유속(0.2 m/s)** | Wax·Water Drop-out, Biofilm 성장        | 국부 pitting → 穿孔 (최대 > 3 mm/y)        |
 | **Idle 기간**       | 잔류 Water Pocket, 산소 고갈 → 혐기조건 | SRB 활성, H₂S 포켓                         |
 | **지중 배관**       | 온도 일정·무산소 → SRB 성장 최적        | 내부·외부 MIC 동시 진행                    |
-| **Branch Dead-leg** |" 관경 전이부 Flow Separation     | Mottling pitting, Erosion-Corrosion 시너지 |
+| **Branch Dead-leg** | 관경 전이부 Flow Separation     | Mottling pitting, Erosion-Corrosion 시너지 |
 
 
 
