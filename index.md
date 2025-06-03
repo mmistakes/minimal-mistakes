@@ -8,7 +8,7 @@ read_time: false
 ---
 <div class="hero-block">
   <div class="hero-intro">
-    <img src="/assets/images/Valissa-Logo-Orange.svg" alt="CAM logo" style="width: 64px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;" />
+    <img src="/assets/images/Valissa-Logo-Blue.svg" alt="CAM logo" style="width: 48px;" />
     <h1 style="text-align: center;">Christopher Motola</h1>
     <p>I turn data into stories and narratives into systems.</p>
     <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
