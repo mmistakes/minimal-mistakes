@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmNmcGs4NXI0ZjR2Yzl2YmlpZzA4MWtwdnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-02T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-02T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:24:35.000Z",
-    "updated": "2025-04-01T09:24:35.858Z"
-  },
-  {
-    "image_path": null,
     "alt": "A4 - Ausflug zur Feuerwehr Spandau",
     "title": "A4 - Ausflug zur Feuerwehr Spandau",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-05-07T07:13:43.000Z",
     "updated": "2025-05-07T07:13:43.531Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Gleiche Mathe-Arbeit in Klasse 5a, 5b, 5c",
+    "title": "Gleiche Mathe-Arbeit in Klasse 5a, 5b, 5c",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Z2hkOWp1ZmtwNGd0dHBzaWtpMzY0Y2FhdmsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-06T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-06T09:30:00+02:00"
+    },
+    "created": "2025-03-25T18:51:20.000Z",
+    "updated": "2025-03-25T18:51:20.592Z"
   }
 ]
