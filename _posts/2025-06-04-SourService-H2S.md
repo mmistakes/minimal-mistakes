@@ -9,7 +9,8 @@ toc: true
 # NACE MR0103과 Sour Service 환경에서 Piping Engineer가 고려해야 할 사항
 
 석유화학 및 정유 플랜트에서는 황화수소(H₂S)가 포함된 유체를 다루는 배관이 빈번하게 존재하며, 이로 인해 **Sulfide Stress Cracking (SSC)**과 같은 균열 손상이 발생할 수 있다 
-[5.Sulfide SCC Corrosion]({{ site.baseurl }}/piping/Corrosion-SulfideSCC/). 
+
+[참조 : 5.Sulfide SCC Corrosion]({{ site.baseurl }}/piping/Corrosion-SulfideSCC/). 
 
 본 포스팅에서는 NACE MR0103이란 무엇인지, Sour Service의 정의와 그에 따라 **Piping Engineer가 설계 시 고려해야 할 핵심사항**들을 정리하였다.
 
