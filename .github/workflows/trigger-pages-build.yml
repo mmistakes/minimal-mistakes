@@ -1,0 +1,21 @@
+name: Rebuild Pages daily
+on:
+  # 1) Geplanter Cron-Job: täglich um 06:05 Uhr Zürich-Zeit
+  schedule:
+    - cron: '5 4 * * *'   # GitHub läuft in UTC
+  # 2) Manueller Trigger im Actions-Tab / gh CLI
+  workflow_dispatch:      # <-- neu
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Empty commit to trigger Pages
+        run: |
+          git config user.name  "pages-bot"
+          git config user.email "actions@github.com"
+          git commit --allow-empty -m "Trigger rebuild" || echo "No changes"
+          git push
