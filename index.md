@@ -6,6 +6,7 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
+
 <!-- Hero Section with Visual Background -->
 <div style="position: relative; overflow: hidden; min-height: 300px;">
 
