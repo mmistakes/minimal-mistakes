@@ -1,5 +1,5 @@
 ---
-title: "PowerPlatformTip – Trigger Condition"
+title: "PowerPlatformTip 11 – Trigger Condition"
 date: 2022-12-20
 categories:
   - Article
