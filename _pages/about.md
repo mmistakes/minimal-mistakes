@@ -24,12 +24,24 @@ Welcome to **PowerPlatformTip**, your comprehensive source for expert insights, 
 
 ## About Marcel Lehmann - Microsoft Power Platform MVP
 
-Hello, I'm **Marcel Lehmann**, a **Microsoft Business Applications (BizzApps) MVP** based in Switzerland with an unwavering passion for the Microsoft Power Platform ecosystem. As a recognized expert, evangelist, and consultant, I've successfully transformed my enthusiasm for Power Platform technologies into a thriving career dedicated to empowering organizations and individuals.
+<img src="/assets/images/bio-photo.jfif" alt="Marcel Lehmann - Microsoft Power Platform MVP" style="float: right; margin: 0 0 1rem 2rem; width: 250px; border-radius: 50%;">
+
+Hello, I'm **Marcel Lehmann**, a **Microsoft Business Applications (BizzApps) MVP** based in Switzerland. My journey into the Power Platform world started in 2017 from a rather unexpected place – repetitive manual tasks that begged for automation.
+
+Coming from a commercial apprenticeship background, I discovered the Power Platform while searching for ways to escape the endless cycle of repetitive work. My first automation? A simple Power Automate flow that notified my supervisor whenever a Planner task was completed. That small victory opened my eyes to a world of possibilities – invest a little time upfront, save countless hours forever. This philosophy still drives my passion today.
+
+Since then, my career has taken an incredible trajectory:
+- 🏆 **Microsoft Switzerland Partner of the Year** - Achieved with my very first project at a consulting firm
+- 🎓 **Certified Expert** - PL-900, PL-100, PL-200, PL-500 certified
+- 🌍 **Diverse Experience** - Successfully delivered solutions for everything from one-person startups to corporations with 10,000+ employees
+- 🎤 **Active Speaker** - Regular presenter at various Microsoft Summits and conferences
+- 👥 **Community Leader** - Proud organizer of the [Power Platform User Group Switzerland (D-CH) - #PPUGS](https://www.linkedin.com/groups/12703022)
 
 My expertise spans across:
 - **Power Apps**: Custom application development and optimization
 - **Power Automate**: Workflow automation and process optimization  
 - **Copilot Studio (Power Virtual Agents)**: Conversational AI and chatbot development
+
 Through [thepoweraddicts.ch](https://thepoweraddicts.ch/), I provide professional coaching, consulting, and training services with a focus on:
 - Custom Power Platform solution implementation
 - Enterprise-grade application development
@@ -38,6 +50,8 @@ Through [thepoweraddicts.ch](https://thepoweraddicts.ch/), I provide professiona
 - Team training and skill development
 
 ## What You'll Discover on PowerPlatformTip
+
+This blog serves a dual purpose: it's my public notebook where I document solutions and learnings, but more importantly, it's a resource for the community. My vision? Simple – when someone thinks "How did that work again?", they can quickly check here and find the answer. No need to repeat the same mistakes or spend hours searching for solutions I've already discovered.
 
 ### 🎯 **Practical Implementation Guides**
 Step-by-step tutorials for solving real-world Power Platform challenges with proven methodologies.
@@ -56,18 +70,18 @@ Common issues resolution and debugging techniques for Power Platform application
 
 ## Why Choose PowerPlatformTip?
 
-- **MVP-Level Expertise**: Insights from a recognized Microsoft MVP with years of hands-on experience
-- **Practical Focus**: Solutions tested in real-world enterprise environments
-- **Regular Updates**: Fresh content covering the latest Power Platform features and updates
-- **Community-Driven**: Responsive to developer needs and industry trends
+- **Real-World Experience**: From my first automation to enterprise-scale implementations
+- **MVP-Level Expertise**: Recognized by Microsoft for community contributions and technical expertise
+- **Swiss Quality**: Precision, reliability, and attention to detail in every solution
+- **Community First**: Active in the Swiss Power Platform community and beyond
+- **Time-Saving Focus**: Every tip is designed to save you hours of trial and error
 
 ## Connect & Collaborate
 
 Have questions about Power Platform implementation or want to discuss your specific use case? I'm here to help!
 
-📧 **Get in Touch**: [Contact Marcel Lehmann](https://thepoweraddicts.ch/)  
 🌐 **Professional Services**: [thepoweraddicts.ch](https://thepoweraddicts.ch/)  
-💼 **LinkedIn**: Connect for the latest Power Platform insights  
+💼 **LinkedIn**: [Connect for the latest Power Platform insights](https://www.linkedin.com/in/marcelehmann/)
 
 ---
 
