@@ -7,7 +7,7 @@ author_profile: false
 read_time: false
 ---
 <div style="position: relative; overflow: hidden;">
-  <img src="/assets/images/dotted-background.svg"
+  <img src="/assets/images/dotted-pattern-art.svg"
        alt=""
        style="position: absolute; top: 0; left: 0; width: 100%; opacity: 0.08; z-index: 0;" />
 
