@@ -5,6 +5,7 @@ permalink: /categories/
 description: "Browse PowerPlatformTip posts organized by categories including Power Apps, Power Automate, Copilot Studio integration, data management, and performance optimization."
 excerpt: "Explore Power Platform expert tips organized by categories. Find specific solutions for Power Apps development, Power Automate workflows, Copilot Studio chatbots, and more."
 keywords: "Power Platform categories, Power Apps tips, Power Automate guides, Copilot Studio tutorials, SharePoint integration, data management, workflow automation"
+author_profile: false
 sitemap:
   priority: 0.9
   changefreq: weekly
