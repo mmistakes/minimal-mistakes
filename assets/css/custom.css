@@ -15,6 +15,7 @@
 
 .hero-intro h1 {
   font-size: 1.8rem;
+  text-align: center;
   font-weight: 600;
   color: #1a202c; /* deep gray-blue */
   margin-bottom: 0.5rem;
