@@ -8,7 +8,7 @@ read_time: false
 ---
 
 <!-- Hero Section with Visual Background -->
-<div style="position: relative; overflow: hidden; min-height: 300px; background-color:white;">
+<div style="position: relative; overflow: hidden; min-height: 300px;">
 
   <!-- Background SVG -->
   <img src="/assets/images/dotted-pattern-art.svg"
