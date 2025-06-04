@@ -5,7 +5,7 @@ permalink: /newsletter/
 description: "Subscribe to weekly Power Platform Tips and receive exclusive insights directly in your inbox."
 excerpt: "Stay updated with #PowerPlatformTips – weekly tips, tricks, and updates about the Power Platform."
 keywords: "PowerPlatformTips Newsletter, Power Platform, Marcel Lehmann, MVP, ThePowerAddicts"
-author_profile: true
+author_profile: false
 sitemap:
   priority: 0.7
   changefreq: monthly
