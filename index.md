@@ -6,20 +6,26 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
-<div style="position: relative; z-index: 0; overflow: hidden;">
+<!-- Hero Section with Full-Height Background -->
+<div style="position: relative; overflow: hidden;">
 
-  <!-- Background Image -->
+  <!-- Background SVG -->
   <img src="/assets/images/dotted-pattern-art.svg"
        alt=""
-       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.08; z-index: 0;" />
+       style="position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              opacity: 0.08;
+              z-index: 0;" />
 
-  <!-- Foreground Content -->
-  <div class="hero-block" style="position: relative; z-index: 1;">
-    <div class="hero-intro">
-      <h1>Christopher Motola</h1>
-      <p>I turn data into stories and narratives into systems.</p>
-      <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
-    </div>
+  <!-- Foreground Content (Hero Text) -->
+  <div style="position: relative; z-index: 1; padding: 3rem 1rem; max-width: 700px; margin: 0 auto;">
+    <h1>Christopher Motola</h1>
+    <p>I turn data into stories and narratives into systems.</p>
+    <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
   </div>
 
 </div>
