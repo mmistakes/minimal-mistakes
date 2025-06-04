@@ -1,4 +1,3 @@
-markdown
 ---
 title: "#PowerPlatformTip 11 – 'trigger condition'"
 date: 2022-12-20
