@@ -36,6 +36,9 @@ Don’t miss any #PowerPlatformTips! Subscribe now to receive weekly:
 
 ---
 
+*Thank you for your interest! Feel free to share this link so more developers can benefit from our weekly Power Platform Tips.*  
+---
+
 ## 📰 Latest PowerPlatformTip Posts
 
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
@@ -52,6 +55,4 @@ Don’t miss any #PowerPlatformTips! Subscribe now to receive weekly:
   </div>
 </div>
 
----
 
-*Thank you for your interest! Feel free to share this link so more developers can benefit from our weekly Power Platform Tips.*  
