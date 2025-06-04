@@ -5,6 +5,7 @@ permalink: /posts/
 description: "Browse all PowerPlatformTip blog posts featuring expert solutions for Power Apps, Power Automate, Copilot Studio, and Microsoft Power Platform development by MVP Marcel Lehmann."
 excerpt: "Complete collection of Power Platform expert blog posts including step-by-step guides, best practices, and real-world solutions for enterprise development."
 keywords: "Power Platform blog posts, Power Apps tutorials, Power Automate guides, Copilot Studio tips, Microsoft MVP blog, enterprise solutions, development guides"
+author_profile: false
 sitemap:
   priority: 1.0
   changefreq: daily
