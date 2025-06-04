@@ -6,11 +6,14 @@ sidebar: false
 author_profile: false
 read_time: false
 ---
-<div class="hero-block">
-  <div class="hero-intro">
-    <h1 style="text-align: center;">Christopher Motola</h1>
-    <p>I turn data into stories and narratives into systems.</p>
-    <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
+<div style="position: relative; overflow; hidden;">
+  <img src="/assets/images/dotted-pattern-art.svg" alt="style="position: absolute; top: 0; left: 0; width: 100%; opacity: 0.08; z-index: 0;"/>
+  <div class="hero-block">
+    <div class="hero-intro">
+      <h1 style="text-align: center;">Christopher Motola</h1>
+      <p>I turn data into stories and narratives into systems.</p>
+      <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
+    </div>
   </div>
 </div>
 
