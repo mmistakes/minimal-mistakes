@@ -13,7 +13,7 @@ tags:
   - usercontext
 excerpt: "Use Power Apps and Adaptive Cards to let everyone in your company trigger flows in their own context – without Outlook permission chaos or flow duplication."
 header:
-  overlay_color: "#4f46e5"
+  overlay_color: "#2dd4bf"
   overlay_filter: "0.5"
 toc: true
 toc_sticky: true
