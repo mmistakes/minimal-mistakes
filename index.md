@@ -7,7 +7,7 @@ author_profile: false
 read_time: false
 ---
 <!-- Hero Section with Full-Height Background -->
-<div style="position: relative; overflow: hidden;">
+<div style="position: relative; overflow: hidden; min-height: 300px;">
 
   <!-- Background SVG -->
   <img src="/assets/images/dotted-pattern-art.svg"
@@ -22,7 +22,7 @@ read_time: false
               z-index: 0;" />
 
   <!-- Foreground Content (Hero Text) -->
-  <div style="position: relative; z-index: 1; padding: 3rem 1rem; max-width: 700px; margin: 0 auto;">
+  <div class="hero-intro"; style="position: relative; z-index: 1; padding: 3rem 1rem; max-width: 700px; margin: 0 auto;">
     <h1>Christopher Motola</h1>
     <p>I turn data into stories and narratives into systems.</p>
     <p>Writing, analysis, and experimentation from the intersection of journalism and logic.</p>
