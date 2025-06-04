@@ -1,5 +1,5 @@
 ---
-title: "#PowerPlatformTip 11 – 'trigger condition'"
+title: "PowerPlatformTip – Trigger Condition"
 date: 2022-12-20
 categories:
   - Article
@@ -10,7 +10,7 @@ tags:
   - filterarray
   - flow-efficiency
   - automation
-excerpt: "Create precise trigger conditions in Power Automate: Use Filter Array and advanced expressions to streamline flow triggers and boost automation efficiency."
+excerpt: "Create precise trigger conditions in Power Automate using Filter Array and advanced expressions to streamline your flow and boost efficiency."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"
@@ -19,49 +19,47 @@ toc_sticky: true
 ---
 
 ## 💡 Challenge  
-Starting a flow with particular inputs can streamline processes, but setting up these conditions directly as trigger conditions might seem daunting. It’s like trying to solve a puzzle with pieces that don’t quite fit together!
+Ever had a flow trigger when it shouldn’t, or fail to trigger when it should? Setting up multiple start conditions directly in the trigger can be tricky. Without a clear approach, flows may run too often, waste resources, or not run at all because the conditions are misconfigured.
 
 ## ✅ Solution  
-Use a ‘Filter array’ action before defining your trigger condition, allowing you to evaluate multiple conditions effectively and extract the correct expression for your flow trigger.
+Insert a **Filter Array** action before the actual trigger. Define all of your conditions in the Filter Array interface, switch to **Advanced Mode** to reveal the underlying expression, copy it, and paste it into the flow’s *Trigger Condition* field. This leverages Power Automate’s logic engine to generate the correct JSON expression for you.
 
 ## 🔧 How It's Done  
-Here's how to do it:  
 1. Preparation  
-   🔸 Think about the conditions under which your flow should start.  
-   🔸 Approach it like planning your route before a journey.  
-2. Filter Array  
-   🔸 Use the ‘Filter array’ action to define multiple, intuitive conditions.  
-   🔸 Treat it as creating a checklist for your flow to follow.  
-3. Advanced Mode  
-   🔸 Switch to advanced mode to view the underlying expression.  
-   🔸 Copy the exact trigger syntax revealed behind the scenes.  
+   🔸 Identify the exact scenarios under which your flow should start. Think of it like making a checklist before going on a trip—everything must check out before departure.  
+   🔸 List the logic points (e.g., field value comparisons, status checks) that need to be true.  
+
+2. Add Filter Array  
+   🔸 After your trigger (for example, “When an item is created”), insert the **Filter array** action.  
+   🔸 Build all desired conditions using the visual interface. You’ll immediately see which items pass and which are filtered out.  
+
+3. Switch to Advanced Mode  
+   🔸 In the **Filter array** step, click “Edit in advanced mode.”  
+   🔸 Power Automate will display the JSON expression behind your conditions. Copy this expression—everything your trigger needs is already there.  
+
 4. Apply to Trigger  
-   🔸 Copy the generated condition expression.  
-   🔸 Paste it into your flow’s trigger condition field.  
+   🔸 Open the settings of your original **flow trigger** and locate the **Trigger Condition** field.  
+   🔸 Paste the copied JSON expression into that field and save your flow. Done!
 
 ## 🎉 Result  
-Your flow now starts only when it meets the specific conditions you’ve defined, making your automated process more efficient and tailored to your needs.
+Your flow now only fires when every defined Filter Array condition is met. No more unwanted triggers, no wasted runs—your automation runs lean and efficient.
 
 ## 🌟 Key Advantages  
-🔸 Precision: Ensures your flow triggers only under the right circumstances. No more false starts!  
-🔸 Efficiency: Reduces unnecessary flow executions, saving resources.
-🔸 Flexibility: Allows for complex conditions without complex coding.
-
----
+🔸 **Precision:** Your flow triggers only when the exact requirements are satisfied—no false starts.  
+🔸 **Efficiency:** Pre-filtering reduces unnecessary flow executions, saving time and resources.  
+🔸 **Flexibility:** Complex combinations of conditions can be implemented without writing code.
 
 ## 🎥 Video Tutorial  
 {% include video id="B2yLqiyQN9c" provider="youtube" %}
 
----
-
 ## 🛠️ FAQ  
 **1. What is a trigger condition in Power Automate?**  
-Trigger conditions are expressions evaluated before a flow runs to ensure it only starts when specified criteria are met, preventing unwanted executions.
+Trigger conditions are expressions evaluated before a flow runs. The flow only executes if they return true—everything else is ignored, preventing unwanted executions.
 
-**2. Why should I use a Filter array action before setting a trigger condition?**  
-Using Filter array lets you build and test multiple conditions in an intuitive interface, then extract the correct expression for the trigger, simplifying complex logic.
+**2. Why use Filter Array before writing the trigger condition directly?**  
+With **Filter Array**, you build rules in a clear, visual interface. In **Advanced Mode**, Power Automate automatically generates the correct JSON expression. You simply copy and paste it into the trigger—no manual expression writing or guesswork.
 
-**3. How can I verify that my trigger condition works as expected?**  
-Test your flow with different input data in the Filter array step, review the expression in advanced mode, then apply it to your trigger and confirm it fires only under intended scenarios.
-
----
+**3. How can I test if my trigger condition works correctly?**  
+➤ Run the flow with only the **Filter Array** step to see which items pass through.  
+➤ Copy the expression string and paste it into **Trigger Condition**.  
+➤ Test the flow with sample data: it should only proceed when all conditions are satisfied.
