@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzYxMDlvZTUzdjFlZWQ5czI0MjN0ZGpvYmwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-04T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-04T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:25:17.000Z",
-    "updated": "2025-04-01T09:25:17.843Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug in den Zoo",
     "title": "A5 - Ausflug in den Zoo",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-03-25T18:51:20.000Z",
     "updated": "2025-03-25T18:51:20.592Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=c21lMXVpbWo5NmJpMzUwZG1jdHVxaWtvbGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2025-06-10",
+      "date_time": null
+    },
+    "end": {
+      "date": "2025-06-11",
+      "date_time": null
+    },
+    "created": "2024-10-11T03:48:29.000Z",
+    "updated": "2024-10-11T03:48:49.755Z"
   }
 ]
