@@ -20,7 +20,8 @@ read_time: false
               height: 100%;
               object-fit: cover;
               opacity: 0.08;
-              z-index: 0;" />
+              z-index: 0;
+              border-radius: 200px / 100px;"/>
 
   <!-- Foreground Content -->
   <div class="hero-intro" style="position: relative; z-index: 1; max-width: 700px; margin: 0 auto; padding: 2rem 1rem;">
