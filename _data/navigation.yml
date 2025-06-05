@@ -4,9 +4,9 @@ main:
     url: /research/
   - title: "ex. Teaching"
     url: /teaching/
-  - title: "ex. Talks"
-    url: /talks/
-  - title: "ex. CV"
+  - title: "Papers and Talks"
+    url: /publications/
+  - title: "CV"
     url: /cv/
   - title: "Github Portfolio"
     url: /github/

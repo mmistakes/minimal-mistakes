@@ -2,7 +2,7 @@
 layout: single
 permalink: /
 
-hidden: false
+hidden: true
 header:
   #image: /assets/images/header.jpeg
 title: "  "
@@ -16,7 +16,7 @@ feature_row1:
     excerpt: "Enter a relatively short description here"
     url: "/research/" # note that these can also be full urls that take people to other sites
     btn_class: "btn--inverse" # feel free to change the button style!
-    btn_label: "Whatever you want your button to say"
+    btn_label: "Learn about my research"
 
 feature_row2:
   - image_path: path_to_your_image.png # no quotes this time
@@ -24,15 +24,15 @@ feature_row2:
     excerpt: "Enter a relatively short description here"
     url: "/teaching/" # note that these can also be full urls that take people to other sites
     btn_class: "btn--inverse" # feel free to change the button style!
-    btn_label: "Whatever you want your button to say"
+    btn_label: "See what I have taught"
 
 feature_row3:
   - image_path: path_to_your_image.png # no quotes this time
     alt: "Selected Publications and Presentations"
-    excerpt: "Enter a relatively short description here"
-    url: "/talks/" # note that these can also be full urls that take people to other sites
+    excerpt: "A few relevant papers and talks describing some of the work I have done"
+    url: "/publications/" # note that these can also be full urls that take people to other sites
     btn_class: "btn--inverse" # feel free to change the button style!
-    btn_label: "Whatever you want your button to say"
+    btn_label: "View my published work"
 
 feature_row4:
   - image_path: path_to_your_image.png # no quotes this time
@@ -40,7 +40,7 @@ feature_row4:
     excerpt: "Enter a relatively short description here"
     url: "/cv/" # note that these can also be full urls that take people to other sites
     btn_class: "btn--inverse" # feel free to change the button style!
-    btn_label: "Whatever you want your button to say"
+    btn_label: "Read my resume"
 
 feature_row4:
   - image_path: path_to_your_image.png # no quotes this time
@@ -48,7 +48,7 @@ feature_row4:
     excerpt: "Example of previous projects I have created or contributed to"
     url: "/github/" # note that these can also be full urls that take people to other sites
     btn_class: "btn--inverse" # feel free to change the button style!
-    btn_label: "Whatever you want your button to say"
+    btn_label: "Look at my code"
 ---
 
 Previous Member of the [Stasevich lab](https://stasevichlab.colostate.edu/) and [Rosenberg/Kading lab](https://labs.vetmedbiosci.colostate.edu/kading/)!
