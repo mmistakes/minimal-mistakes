@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "ex. Research"
+  - title: "Research"
     url: /research/
   - title: "ex. Teaching"
     url: /teaching/
@@ -8,3 +8,5 @@ main:
     url: /talks/
   - title: "ex. CV"
     url: /cv/
+  - title: "Github Portfolio"
+    url: /github/

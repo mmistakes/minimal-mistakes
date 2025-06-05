@@ -11,7 +11,7 @@ author_profile: true
 classes: wide
 
 feature_row1:
-  - image_path: /assets/HiddenHistone.jpg # no quotes this time
+  - image_path: path_to_your_image.png # no quotes this time
     alt: "Research"
     excerpt: "Enter a relatively short description here"
     url: "/research/" # note that these can also be full urls that take people to other sites
@@ -46,12 +46,12 @@ feature_row4:
   - image_path: path_to_your_image.png # no quotes this time
     alt: "Github Portfolio"
     excerpt: "Example of previous projects I have created or contributed to"
-    url: "/github/" # note that these can also be full urls that take people to other sites
+    url: "/cv/" # note that these can also be full urls that take people to other sites
     btn_class: "btn--inverse" # feel free to change the button style!
     btn_label: "Whatever you want your button to say"
 ---
 
-Previous Member of the [Stasevich lab](https://stasevichlab.colostate.edu/) and [Rosenberg/Kading lab](https://labs.vetmedbiosci.colostate.edu/kading/)!
+Previous Member of the [Stasevich lab](link to your lab's website) and [Rosenberg/Kading lab](https://labs.vetmedbiosci.colostate.edu/kading/)!
 
 # Reseach
 
