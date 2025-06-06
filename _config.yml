@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Community Blueprint Development" # site title that appears in the browser tab and masthead
+title                    : "Community Blueprint Development Foundation" # site title that appears in the browser tab and masthead
 title_separator          : "-"
 subtitle                 : "It takes a village." # site tagline that appears below site title in masthead
 name                     : "Serving the Metropolitan Atlanta Area"
@@ -27,7 +27,7 @@ baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "Community-Blueprint-Development/webs-minimal-theme" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "docs/assets/images/kids_front_world.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "docs/assets/images/kids_front_world.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Community Blueprint Development Organization" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Community Blueprint Development Foundation" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -113,11 +113,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Cristal Harris"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "."
-  location         : "Somewhere"
-  email            :
+  name             : "We strive to..."
+  avatar           : "docs/assets/images/kids_front_world.jpg"
+  bio              : "The Community Blueprint Development Foundation (CBDF) is an organization whose mission and vision involve expanding at-risk youth's horizons, dreams, and opportunities. We provide community youth with early Head Start education and charitable enrichment programs designed to enhance academic and social skills, promote self-esteem, build character, and support working parents of youth who find solace in knowing that their children are in safe and supportive environments in their absence.
+                    "
+  location         : "Atlanta, GA"
+  email            : "cbdf@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
