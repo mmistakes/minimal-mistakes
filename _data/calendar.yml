@@ -18,23 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "A6 - Ausflug zur Feuerwache Spandau",
-    "title": "A6 - Ausflug zur Feuerwache Spandau",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDUwNnNpMGhuZG05anN2ZmlnMzUxZzlrbzAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-06T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-06T13:00:00+02:00"
-    },
-    "created": "2025-06-03T07:33:15.000Z",
-    "updated": "2025-06-03T07:33:16.016Z"
-  },
-  {
-    "image_path": null,
     "alt": "unterrichtsfrei",
     "title": "unterrichtsfrei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-05-22T03:56:52.000Z",
     "updated": "2025-05-22T03:56:52.124Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A9 - Ausflug zum Schloss Charlottenburg",
+    "title": "A9 - Ausflug zum Schloss Charlottenburg",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NG90a3FkZ3Q5ZTgwNTNjbW9ub2s0OXVzdnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-12T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-12T13:30:00+02:00"
+    },
+    "created": "2025-06-05T06:52:39.000Z",
+    "updated": "2025-06-05T06:52:39.230Z"
   }
 ]
