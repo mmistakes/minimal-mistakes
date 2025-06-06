@@ -5,6 +5,6 @@ main:
   - title: "Events"
     url: /events/
   - title: "Donate"
-  url: /donate/
+    url: /donate/
   # - title: "Sitemap"
   #   url: /sitemap/
