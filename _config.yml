@@ -19,8 +19,8 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Community Blueprint Development Foundation" # site title that appears in the browser tab and masthead
 title_separator          : "-"
-subtitle                 : "It takes a village." # site tagline that appears below site title in masthead
-name                     : "Serving the Metropolitan Atlanta Area"
+subtitle                 : "Just for YOUth!" # site tagline that appears below site title in masthead
+name                     : "docs/assets/images/kids_front_world.jpg"
 description              : "Serving the Metropolitan Atlanta Area's children"
 url                      : "https://community-blueprint-development.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
