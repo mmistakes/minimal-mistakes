@@ -20,13 +20,13 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "Community Blueprint Development Foundation" # site title that appears in the browser tab and masthead
 title_separator          : "-"
 subtitle                 : "Just for YOUth!" # site tagline that appears below site title in masthead
-name                     : "docs/assets/images/kids_front_world.jpg"
+name                     : "docs/assets/images/kids-front-world.jpg"
 description              : "Serving the Metropolitan Atlanta Area's children"
 url                      : "https://community-blueprint-development.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "Community-Blueprint-Development/webs-minimal-theme" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "docs/assets/images/kids_front_world.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "docs/assets/images/kids_front_world.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "docs/assets/images/kids-front-world.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Community Blueprint Development Foundation" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
