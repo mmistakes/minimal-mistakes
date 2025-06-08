@@ -12,6 +12,8 @@
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
+    {% include figure popup=true image_path="/assets/images/kids_front_world.jpg" alt="kids with world" caption="Just for YOUth!." %}
+
 
     <div class="initial-content">
       {{ content }}
