@@ -13,7 +13,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 <h2 class="section-header">🔍 Featured Work</h2>
 
-### 📊 Data Journalism: Economic Trends
+### 📊 Data Journalism: Economic Trends   
 **Client:** National Business Capital    
 **Skills:** Data scraping, R, SQL, visualizations, writing    
 [→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Learn More](/portfolio/economic-trends/) 
@@ -32,7 +32,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
  
 ---
 
-### 🎮 Procedural Game Design: *String Theory*
+### 🎮 Procedural Game Design: *String Theory*   
 **Role:** Lead Developer / Co-designer    
 **Skills:** Programming, scripting, systems design, project management, source control  
 [→ Steam Page](https://store.steampowered.com/app/402150/String_Theory/) | [→ Learn More](/portfolio/game-design/)  
@@ -42,7 +42,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-### 🧠 Side Projects & Oddities
+### 🧠 Side Projects & Oddities   
 - **Grant Writing** – Helping [OpenHub](https://openhubproject.com/) secure funding for specialized tech education. 
 - **Meet Your Doctor** – Monthly Q&A feature where I interview physicians based in [Central New York](https://www.cnyhealth.com/) and [Rochester](https://www.gvhealthnews.com/).  
 - **Press Releases** – Helped a new [continuing medical education company](https://qdcme.com/) with media relations.  
