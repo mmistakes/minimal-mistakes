@@ -27,13 +27,6 @@
   margin-top: 0.5rem;
 }
 
-.section-header {
-  background-color: #fef3c7;  /* soft orange tint */
-  padding: 0.5rem 1rem;
-  border-left: 4px solid #fb923c;
-  margin-top: 2rem;
-}
-
 .callout-block {
   background-color: #f0f9ff;
   padding: 0.2rem;
@@ -50,3 +43,11 @@
   margin-top: 0.1rem!important;
   margin-bottom: 2rem;
 }
+.section-header {
+  background-color: #fef3c7;  /* soft orange tint */
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #fb923c;
+  margin-top: 2rem;
+}
+
+
