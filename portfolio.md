@@ -23,7 +23,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-### 💸 Small Business Funding & Payment Processing Analysis        
+### 💸 Small Business Funding/Payment Processing Analysis        
 **Client:** Merchant Maverick    
 **Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis    
 [→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Learn More](/portfolio/small-business-writing/) 
