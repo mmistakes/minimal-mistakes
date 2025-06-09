@@ -41,3 +41,11 @@
   border-radius: 6px;
   margin: 2rem 0;
 }
+
+.portfolio-callout-block {
+  background-color: #f0f9ff;
+  padding: 1rem;
+  border-left: 4px solid #3b82f6;
+  border-radius: 6px;
+  margin-top: 0.5rem 0 2rem 0!important;
+}
