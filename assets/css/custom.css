@@ -29,7 +29,7 @@
 
 .callout-block {
   background-color: #f0f9ff;
-  padding: 0.2rem;
+  padding: 1rem;
   border-left: 4px solid #3b82f6;
   border-radius: 6px;
   margin: 2rem 0;
@@ -43,6 +43,7 @@
   margin-top: 0;
   margin-bottom: 2rem;
 }
+
 .section-header {
   background-color: #fef3c7;  /* soft orange tint */
   padding: 0.5rem 1rem;
