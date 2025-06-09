@@ -18,11 +18,12 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Skills:** Data scraping, R, SQL, visualizations, writing    
 [→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Learn More](/portfolio/economic-trends/) 
 <div class="portfolio-callout-block">
-  <strong>Summary: </strong>Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority. </div>     
+  <strong>Summary: </strong>Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.
+</div>     
 
 ---
 
-### 💸 Small Business Funding & Payment Processing Analysis    
+### 💸 Small Business Funding & Payment Processing Analysis        
 **Client:** Merchant Maverick    
 **Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis    
 [→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Learn More](/portfolio/small-business-writing/) 
