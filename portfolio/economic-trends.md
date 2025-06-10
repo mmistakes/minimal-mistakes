@@ -52,4 +52,4 @@ The client needed original, data-backed content that could:
 ---
 
 <h2>💬 Notes / Reflections</h2>
-I learned a lot about balancing **data depth and accessibility**. The most engaging stories often started with a compelling visual — and then backed it up with solid research.
+I learned a lot about balancing **data depth and accessibility**. These projects involved working closely with public relations to create marketable reports. To quote my PR collaborator, I had to find the "zing" and "sizzle" in my research. 
