@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Writing & Research: Small Business Finance & Payment Processing"
-permalink: /portfolio/small-business-writing/
+title: "SEO-Based Marketing Copy"
+permalink: /portfolio/law-firm-seo/
 author_profile: false
 sidebar:
   nav: "main"
@@ -10,7 +10,7 @@ toc: true
 ---
 
 <h2 class="section-header">Overview  </h2>
-I've been writing about small business matters for a very long time, most recently at Merchant Maverick, a small business resources site. I wore a number of hats there, including senior staff writer, small business researcher and analyst, and occasionally tech advisor. 
+Search engine optimization (SEO) is one of the defining quirks of the last couple of decades when it comes to written content. AI summaries are currently altering the terrain around click-through rates and search engine results pages (SERP), but the demand for SEO-driven content to draw eyeballs to website-based marketing opportunities is still going strong. 
 <div class="callout-block">
 My areas of focus were <strong>small business payment processing and funding</strong>. This involved gaining in-depth knowledge of credit, debit, ACH, and crypto payment systems and conveying that information in a digestible form to our audience of small business owners.
 </div>
