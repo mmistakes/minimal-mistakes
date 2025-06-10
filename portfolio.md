@@ -19,7 +19,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 [→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Learn More](/portfolio/economic-trends/) 
 {: style="margin-bottom: 0;"}
 <div class="portfolio-callout-block">
-  <strong>Summary: </strong>Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.
+  <strong>Summary: </strong>I create and pitch data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.
 </div>     
 
 ---
@@ -28,7 +28,8 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Client:** Merchant Maverick    
 **Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis    
 [→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Learn More](/portfolio/small-business-writing/) 
-<div class ="callout-block">
+{: style="margin-bottom: 0;"}
+<div class ="portfolio-callout-block">
   <strong>Summary: </strong>Wrote revenue-generating informational blog posts and product reviews on small business topics and products.   
 </div>
  
@@ -38,7 +39,8 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 **Role:** Lead Developer / Co-designer    
 **Skills:** Programming, scripting, systems design, project management, source control  
 [→ Steam Page](https://store.steampowered.com/app/402150/String_Theory/) | [→ Learn More](/portfolio/game-design/)  
-<div class ="callout-block">
+{: style="margin-bottom: 0;"}
+<div class ="portfolio-callout-block">
   <strong>Summary: </strong>Developed a procedural music puzzle game designed to train the player's ear to recognize chords. Built 90% of the codebase.
 </div>
 
