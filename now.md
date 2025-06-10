@@ -8,7 +8,7 @@ sidebar:
   nav: "main"
 ---
 
-_Last updated: May 2025_
+_Last updated: June 2025_
 
 <h2 class="section-header">🧠 What I’m Focused On</h2>
 
