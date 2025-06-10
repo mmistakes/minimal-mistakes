@@ -11,6 +11,7 @@ toc: true
 
 <h2 class="section-header">Overview  </h2>
 Search engine optimization (SEO) is one of the defining quirks of the last couple of decades when it comes to written content. AI summaries are currently altering the terrain around click-through rates and search engine results pages (SERP), but the demand for SEO-driven content to draw eyeballs to website-based marketing opportunities is still going strong. 
+
 <div class="callout-block">
 My customer, a law firm experienced in mass torts, uses informational content to market its services to potential clients. I research and ghostwrite pages that serve the dual purpose of informing readers about environmental and product hazards, connecting the content to the firm's services. 
 </div>
@@ -58,4 +59,6 @@ The client needs original, SEO-optimized content that:
 ## 💬 Notes / Reflections
 I now know way too much about PFAS (forever chemicals) and have gotten in the habit of reviewing my municipality's water reports. 
 
-You may have noticed I wrote a piece on video game disorders and, elsewhere in my portfolio, also have [game development experience](portfolio/game-design). 
+You may have noticed I wrote a piece on video game disorders and, elsewhere in my portfolio, also have [game development experience](/game-design). Compulsion loops are the dark sorcery of game development, a means of teaching and rewarding behavior. My familiarity with game design theory, I believe, helped me craft a balanced overview of how the issue looks from the development side of things. 
+
+Finding the line between "engaging experience" and "cynical dopamine drip" is an important exercise for designers, and writing that page gave me a sense of the potential human cost of hacking reward systems.
