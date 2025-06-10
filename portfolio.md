@@ -20,6 +20,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 <div class="portfolio-callout-block">
   <strong>Summary: </strong>Created and pitched data-driven articles on small business lending trends, contributing to an 8% increase in domain authority.
 </div>     
+
 [→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Learn More](/portfolio/economic-trends/) 
 ---
 
