@@ -46,8 +46,8 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-### 🧠 Side Projects & Oddities   
+### 🧠 Additional Writing & Copy   
 - **Grant Writing** – Helping [OpenHub](https://openhubproject.com/) secure funding for specialized tech education. 
-- **Meet Your Doctor** – Monthly Q&A feature where I interview physicians based in [Central New York](https://www.cnyhealth.com/) and [Rochester](https://www.gvhealthnews.com/).  
+- **Meet Your Doctor** – Producing monthly Q&A feature where I interview physicians based in [Central New York](https://www.cnyhealth.com/) and [Rochester](https://www.gvhealthnews.com/).  
 - **Press Releases** – Helped a new [continuing medical education company](https://qdcme.com/) with media relations.  
-[→ View Current Experiments & Interests](/now/)
+[→ View Current Experiments, Activities & Interests](/now/)
