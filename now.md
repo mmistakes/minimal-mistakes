@@ -12,9 +12,11 @@ _Last updated: May 2025_
 
 <h2 class="section-header">🧠 What I’m Focused On</h2>
 
+- Helping [a local tech education company](https://openhubproject.com/) secure grant funding
+- Researching and writing [data reports](portfolio/economic-trends) for [a business loan company](https://www.nationalbusiness.capital.com)
 - Building out this portfolio (and learning Jekyll as I go)
 - Experimenting with integrating AI/LLMs into my workflows
-- Helping [a local tech education company](https://openhubproject.com/) secure grant funding
+- 
 - Looking for new opportunities in writing, game design, and/or data analysis
 
 ---
