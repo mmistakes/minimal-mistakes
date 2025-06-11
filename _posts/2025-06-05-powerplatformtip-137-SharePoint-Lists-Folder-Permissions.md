@@ -18,26 +18,26 @@ toc: true
 toc_sticky: true
 ---
 
-## Sentences Summary
+Sentences Summary
 By enabling folders in your SharePoint list’s Advanced Settings, you can create department-level folders and assign permissions directly to them, so every item inside inherits those permissions automatically. This eliminates the need for complex Power Automate flows that grant access on an item-by-item basis. You’ll streamline security management and boost performance.
 
-💡 Challenge  
+## 💡 Challenge  
 Teams often need granular, department-specific permissions on list items and end up building elaborate Power Automate flows to assign rights per item, which is time-consuming and hard to maintain.
 
-✅ Solution  
+## ✅ Solution  
 Activate the folder feature in your list’s Advanced Settings, create one folder per department, and set unique permissions at the folder level so that all contained items inherit them automatically.
 
-🔧 How It’s Done  
+## 🔧 How It’s Done  
 1. Go to your SharePoint list, click the gear icon → List settings.  
 2. Select Advanced settings → Folder: Enable “Make ‘New Folder’ command available” → OK.  
 🔸 Return to the list and use **New → Folder** to create department-named folders.  
 🔸 Click the folder’s “…” → Details pane → Manage access → Stop inheriting permissions.  
 🔸 Remove existing groups and grant the supervisor or department group the appropriate rights.
 
-🎉 Result  
+## 🎉 Result  
 You now have a folder-based structure where each department’s items automatically inherit the correct permissions, with no additional flows required—saving you setup and maintenance time and improving list performance.
 
-🌟 Key Advantages  
+## 🌟 Key Advantages  
 🔸 Quick setup using built-in list settings (no extra tools needed)  
 🔸 Automatic inheritance cuts down on manual effort and errors  
 🔸 Clear separation of access by department  
