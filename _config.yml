@@ -17,6 +17,7 @@ header_pages:
   - about.md
   - portfolio.md
   - now.md
+  - blog.md
   - contact.md
 
 # Site Settings
