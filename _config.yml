@@ -1,16 +1,13 @@
-# 필수 정보
 title: "clucker.blog"
 name: "정성호"
 description: "기술 블로그 - 개발 지식 정리 및 기록"
 url: "https://clucker12.github.io"
-baseurl: "" # 루트 도메인일 경우 공백
+baseurl: ""
 repository: "clucker12/clucker12.github.io"
 
-# 테마 및 스킨
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
 
-# 작성자 정보
 author:
   name: "정성호"
   bio: "Backend Developer. 기술을 기록하고 공유합니다."
@@ -24,7 +21,6 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:412jsh@naver.com"
 
-# 기본 레이아웃 설정
 defaults:
   - scope:
       path: ""
@@ -35,41 +31,45 @@ defaults:
       read_time: true
       share: true
 
-# 플러그인 (GitHub Pages 호환)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-archives  
 
-# Markdown & 하이라이팅
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+
+category_archive:
+  type: liquid
+  path: /categories/
+
 markdown: kramdown
 highlighter: rouge
 
-# 기본 출력 경로 스타일
 permalink: /:categories/:title/
 timezone: Asia/Seoul
 
-# Sass
 sass:
   sass_dir: _sass
   style: compressed
 
-# HTML 압축 최소화
 compress_html:
   clippings: all
   ignore:
     envs: development
 
-# 간단한 페이징
 paginate: 5
 paginate_path: /page:num/
 
-# 검색
 search: true
 search_full_content: true
 
-# 읽기 관련
 include:
   - _pages
 
