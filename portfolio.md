@@ -46,6 +46,17 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
+### ✍️ Copywriting/SEO-driven Content  
+**Role:** Writer    
+**Skills:** Writing, research, SEO, editing, analysis of studies
+[→ View Article](https://www.robertkinglawfirm.com/mass-torts/ultra-processed-foods-lawsuit/are-processed-foods-addictive-to-kids-and-teens/)) | [→ Learn More](/portfolio/law-firm-seo/)  
+{: style="margin-bottom: 0;"}
+<div class ="portfolio-callout-block">
+  <strong>Summary: </strong>Researching and writing articles on mass torts as part of a law firm's marketing/traffic-conversion strategy.
+</div>
+
+---
+
 ### 🧠 Additional Writing & Copy   
 - **Grant Writing** – Helping [OpenHub](https://openhubproject.com/) secure funding for specialized tech education. 
 - **Meet Your Doctor** – Producing monthly Q&A feature where I interview physicians based in [Central New York](https://www.cnyhealth.com/) and [Rochester](https://www.gvhealthnews.com/).  
