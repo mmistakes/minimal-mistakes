@@ -23,8 +23,10 @@ author:
 
 defaults:
   - scope:
-      path: ""
-      type: posts
+      path: "_pages/category"
+      type: pages
+    values:
+      layout: category
     values:
       layout: single
       author_profile: true
