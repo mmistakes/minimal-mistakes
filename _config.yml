@@ -36,7 +36,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-include-cache
-  - jekyll-archives  
+  - jekyll-archives
 
 jekyll-archives:
   enabled:
@@ -48,6 +48,17 @@ jekyll-archives:
 category_archive:
   type: liquid
   path: /categories/
+
+# ✅ navigation에 카테고리 추가
+navigation:
+  - title: "카테고리"
+    url: /categories/
+
+# ✅ _pages 폴더를 컬렉션으로 인식
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 markdown: kramdown
 highlighter: rouge
@@ -70,6 +81,7 @@ paginate_path: /page:num/
 search: true
 search_full_content: true
 
+# ✅ _pages 폴더 포함
 include:
   - _pages
 
