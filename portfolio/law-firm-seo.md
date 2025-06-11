@@ -13,7 +13,7 @@ toc: true
 Search engine optimization (SEO) is one of the defining quirks of the last couple of decades when it comes to written content. AI summaries are currently altering the terrain around click-through rates and search engine results pages (SERP), but the demand for SEO-driven content to draw eyeballs to website-based marketing opportunities is still going strong. 
 
 <div class="callout-block">
-My customer, a **law firm experienced in mass torts**, uses informational content to market its services to potential clients. I research and ghostwrite pages that serve the dual purpose of informing readers about environmental and product hazards, connecting the content to the firm's services. As a disclaimer, my work with the firm does not reflect my personal opinions on any particular lawsuit.
+My customer, a <strong>law firm experienced in mass torts</strong>, uses informational content to market its services to potential clients. I research and ghostwrite pages that serve the dual purpose of informing readers about environmental and product hazards, connecting the content to the firm's services. As a disclaimer, my work with the firm does not reflect my personal opinions on any particular lawsuit.
 </div>
 
 ---
