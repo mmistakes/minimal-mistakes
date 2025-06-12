@@ -39,6 +39,8 @@ defaults:
       layout: category
       author_profile: true
       show_date: true
+      
+date_format: "%Y-%m-%d"
 
 plugins:
   - jekyll-feed
