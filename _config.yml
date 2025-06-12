@@ -6,7 +6,7 @@ baseurl: ""
 repository: "clucker12/clucker12.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "default"
 
 author:
   name: "정성호"
