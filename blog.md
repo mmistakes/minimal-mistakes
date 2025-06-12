@@ -2,7 +2,7 @@
 layout: archive
 title: "Blog"
 permalink: /blog/
-author_profile: false
+author_profile: true
 ---
 
 This is a blog.
