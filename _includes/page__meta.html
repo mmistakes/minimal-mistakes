@@ -29,3 +29,21 @@
     {% endif %}
   </p>
 {% endif %}
+
+{% if document.categories and document.categories != empty %}
+  <p class="page__meta-categories">
+    <strong><i class="fas fa-folder-open"></i> Categories:</strong>
+    {% for category in document.categories %}
+      <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+{% endif %}
+
+{% if document.tags and document.tags != empty %}
+  <p class="page__meta-tags">
+    <strong><i class="fas fa-tags"></i> Tags:</strong>
+    {% for tag in document.tags %}
+      <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </p>
+{% endif %}
