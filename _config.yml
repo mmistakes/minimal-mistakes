@@ -329,8 +329,6 @@ defaults:
       type: pages
     values:
       layout: single
-      sidebar:
-        nav: "main"
       author_profile: false
       read_time: false
       comments: # true
