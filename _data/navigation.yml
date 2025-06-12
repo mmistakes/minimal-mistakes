@@ -2,11 +2,11 @@
 main:
   - title: "Portfolio"
     url: /portfolio/
- # - title: "Blog"
- #   url: /blog/
   - title: "About"
     url: /about/
   - title: "Now"
     url: /now/
+  - title: "Blog"
+    url: /blog/
   - title: "Contact"
     url: /contact/
