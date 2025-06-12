@@ -23,15 +23,21 @@ author:
 
 defaults:
   - scope:
-      path: "_pages/category"
-      type: pages
-    values:
-      layout: category
+      path: ""
+      type: "posts"
     values:
       layout: single
       author_profile: true
       read_time: true
       share: true
+      show_date: true
+
+  - scope:
+      path: "_pages/category"
+      type: "pages"
+    values:
+      layout: category
+      author_profile: true
       show_date: true
 
 plugins:
