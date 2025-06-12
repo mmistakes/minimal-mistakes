@@ -32,6 +32,7 @@ defaults:
       author_profile: true
       read_time: true
       share: true
+      show_date: true
 
 plugins:
   - jekyll-feed
