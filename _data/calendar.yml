@@ -1,42 +1,8 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWFudThyMDJqb25iYjZsZXNjczkxdW1xOWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-11T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-11T12:45:00+02:00"
-    },
-    "created": "2025-04-01T09:26:01.000Z",
-    "updated": "2025-04-01T09:26:01.776Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A1 - Ausflug zum Bienengarten",
-    "title": "A1 - Ausflug zum Bienengarten",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDZia2x0MmIydTEzdmhva29rM2ExajdjNzUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-11T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-11T13:30:00+02:00"
-    },
-    "created": "2025-06-04T05:40:39.000Z",
-    "updated": "2025-06-04T05:40:39.308Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Gleiche Arbeit Deutsch Klasse 5",
-    "title": "Gleiche Arbeit Deutsch Klasse 5",
+    "alt": "Gleiche Arbeit Mathe Klasse 5",
+    "title": "Gleiche Arbeit Mathe Klasse 5",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=b2xrczkzNDUycGdqZG4wYjExcHNocmJwMGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -48,7 +14,7 @@
       "date_time": null
     },
     "created": "2025-05-22T03:56:52.000Z",
-    "updated": "2025-05-22T03:56:52.124Z"
+    "updated": "2025-06-11T04:56:39.792Z"
   },
   {
     "image_path": null,
@@ -100,5 +66,39 @@
     },
     "created": "2025-06-04T05:39:05.000Z",
     "updated": "2025-06-04T05:39:05.215Z"
+  },
+  {
+    "image_path": null,
+    "alt": "5b - Ausflug zur Gartenarbeitsschule / Waldralley",
+    "title": "5b - Ausflug zur Gartenarbeitsschule / Waldralley",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWdjdDY5Zml0ZDZpdTkzNGxnMm00NWozcHUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-16T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-16T13:30:00+02:00"
+    },
+    "created": "2025-05-28T11:42:12.000Z",
+    "updated": "2025-05-28T11:42:12.863Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4c - Radfahrprüfung in der Jugendverkehrsschule",
+    "title": "4c - Radfahrprüfung in der Jugendverkehrsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M3NiMG0zbWwxZTY4bjAyMWtvaHBwaGo4MnUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-17T10:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-17T12:00:00+02:00"
+    },
+    "created": "2025-03-13T11:30:10.000Z",
+    "updated": "2025-03-13T11:30:10.642Z"
   }
 ]
