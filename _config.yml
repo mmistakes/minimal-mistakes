@@ -31,8 +31,9 @@ defaults:
       read_time: true
       share: true
       show_date: true
-      show_tags: true          
-      show_categories: true  
+      show_categories: false
+      show_tags: false
+
 
   - scope:
       path: "_pages/category"
