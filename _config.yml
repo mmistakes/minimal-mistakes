@@ -328,6 +328,8 @@ defaults:
       path: ""
       type: pages
     values:
+      sidebar:
+        nav: "main"
       layout: single
       author_profile: false
       read_time: false
