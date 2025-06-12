@@ -3,3 +3,5 @@ main:
     url: "/"
   - title: "카테고리"
     url: "/categories/"
+  - title: "태그"
+    url: "/tags/"
