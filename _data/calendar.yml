@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Gleiche Arbeit Mathe Klasse 5",
-    "title": "Gleiche Arbeit Mathe Klasse 5",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=b2xrczkzNDUycGdqZG4wYjExcHNocmJwMGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2025-06-12",
-      "date_time": null
-    },
-    "end": {
-      "date": "2025-06-13",
-      "date_time": null
-    },
-    "created": "2025-05-22T03:56:52.000Z",
-    "updated": "2025-06-11T04:56:39.792Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A9 - Ausflug zum Schloss Charlottenburg",
-    "title": "A9 - Ausflug zum Schloss Charlottenburg",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NG90a3FkZ3Q5ZTgwNTNjbW9ub2s0OXVzdnQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-12T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-12T13:30:00+02:00"
-    },
-    "created": "2025-06-05T06:52:39.000Z",
-    "updated": "2025-06-05T06:52:39.230Z"
-  },
-  {
-    "image_path": null,
-    "alt": "A3 - Ausflug zum Staakentreff",
-    "title": "A3 - Ausflug zum Staakentreff",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDM2N3Y0c3FoMDc4c2hlcTJvdTMzcHFuaWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-12T11:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-12T13:30:00+02:00"
-    },
-    "created": "2025-05-20T08:25:57.000Z",
-    "updated": "2025-05-20T08:25:57.687Z"
-  },
-  {
-    "image_path": null,
     "alt": "5a - Ausflug ins Deutschlandmuseum",
     "title": "5a - Ausflug ins Deutschlandmuseum",
     "excerpt": null,
@@ -65,7 +14,7 @@
       "date_time": "2025-06-16T13:30:00+02:00"
     },
     "created": "2025-06-04T05:39:05.000Z",
-    "updated": "2025-06-04T05:39:05.215Z"
+    "updated": "2025-06-13T02:31:50.120Z"
   },
   {
     "image_path": null,
@@ -100,5 +49,56 @@
     },
     "created": "2025-03-13T11:30:10.000Z",
     "updated": "2025-03-13T11:30:10.642Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4b - Radfahrprüfung in der Jugendverkehrsschule",
+    "title": "4b - Radfahrprüfung in der Jugendverkehrsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mm45bmxmMWFua2VzbDBjdjA0Mzcyb2luaTkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-17T11:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-17T13:30:00+02:00"
+    },
+    "created": "2025-03-13T11:30:17.000Z",
+    "updated": "2025-06-12T07:56:01.767Z"
+  },
+  {
+    "image_path": null,
+    "alt": "5a - Ausflug in den Zoo",
+    "title": "5a - Ausflug in den Zoo",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDNqOXBrcWVsOThja2JzcWZpbzdnZzVrNWwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-19T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-19T13:30:00+02:00"
+    },
+    "created": "2025-06-04T05:38:23.000Z",
+    "updated": "2025-06-13T02:31:50.120Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4a - Fahrradprüfung JVS",
+    "title": "4a - Fahrradprüfung JVS",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M25iYTQ5bjEyOWk5YmJrYmN1MWJjcnZrNTkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-20T12:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-20T13:30:00+02:00"
+    },
+    "created": "2025-04-01T09:20:23.000Z",
+    "updated": "2025-04-01T09:20:23.678Z"
   }
 ]
