@@ -257,6 +257,15 @@ Categories are just for keeping order and are continuously updated. The relation
 -- J Steinbeck, "East of Eden"
 
 
+## History 
+
+> Quando noi valutiamo oggi il militarismo nazifascista, lo facciamo dopo la sua sconfitta, con la sicurezza di chi ha combattuto e vinto. È difficile ricostruire lo stato d'animo di allora, di fronte al nazifascismo permanentemente vittorioso e trionfante, ...<br>
+-- J Lussu, "Portrait"
+
+> The scheming of Britain, France and the United States over oil, politics and power helped create and fuel the problems of the Middle East for decades afterwards. Nations and peoples were used as assets or weapons. Lines were drawn in the sand, blown away and drawn again. All of this was done with precious little foresight about where it might lead<br>
+-- A von Tunzelmann, "Blood and Sand" [talking about the Suez crisis of 1956]
+
+
 ## Human relations 
 
 > I have often thought that perhaps formal good manners may be a cushion against heartbreak.<br>
