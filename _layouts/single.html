@@ -52,11 +52,31 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        <footer class="page__meta">
+        {% if page.categories or page.tags %}
+          <div class="page__taxonomy">
+            {% if page.categories %}
+              <p>
+                <i class="fas fa-folder" aria-hidden="true"></i>
+                <strong>Categories:</strong>
+                {% for category in page.categories %}
+                  <a href="{{ '/categories/' | append: category | slugify | append: '/' | relative_url }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
+
+            {% if page.tags %}
+              <p>
+                <i class="fas fa-tags" aria-hidden="true"></i>
+                <strong>Tags:</strong>
+                {% for tag in page.tags %}
+                  <a href="{{ '/tags/' | append: tag | slugify | append: '/' | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
+          </div>
         {% endif %}
-        {% include page__taxonomy.html %}
+
         {% include page__date.html %}
       </footer>
 
