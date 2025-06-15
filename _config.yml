@@ -26,7 +26,7 @@ url                      : "https://community-blueprint-development.github.io" #
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "Community-Blueprint-Development/webs-minimal-theme" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "docs/assets/images/kids-front-world.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/kids-front-world.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Community Blueprint Development Foundation" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "We strive to..."
-  avatar           : "docs/assets/images/kids_front_world.jpg"
+  avatar           : "/assets/images/kids_front_world.png"
   bio              : "The Community Blueprint Development Foundation (CBDF) is an organization whose mission and vision involve expanding at-risk youth's horizons, dreams, and opportunities. We provide community youth with early Head Start education and charitable enrichment programs designed to enhance academic and social skills, promote self-esteem, build character, and support working parents of youth who find solace in knowing that their children are in safe and supportive environments in their absence.
                     "
   location         : "Atlanta, GA"
