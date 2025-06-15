@@ -6,6 +6,7 @@
 
 - Add a "Share on Bluesky" button (#5179)
 - Add preset variables for modern font stack (#5033)
+- Update X share button to match brand color (#5245)
 
 ### Bug Fixes
 
