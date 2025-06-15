@@ -26,8 +26,8 @@ url                      : "https://community-blueprint-development.github.io" #
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "Community-Blueprint-Development/webs-minimal-theme" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : " " # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "https://github.com/Community-Blueprint-Development/webs-minimal-theme/blob/d1f371c6f65dc86501d94c668d6803e715b2153c/docs/assets/images/kids-front-world.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Community Blueprint Development Foundation" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -140,7 +140,7 @@ author:
       # url: "https://instagram.com/"
 # Site Header
 header:
-  image: /assets/images/kids-front-world.jpg
+  image: https://github.com/Community-Blueprint-Development/webs-minimal-theme/blob/d1f371c6f65dc86501d94c668d6803e715b2153c/docs/assets/images/kids-front-world.png
 
 # Site Footer
 footer:
