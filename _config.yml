@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "Community Blueprint Development Foundation" # site title that appears in the browser tab and masthead
 title_separator          : "-"
 subtitle                 : "Just for YOUth!" # site tagline that appears below site title in masthead
-name                     : "/assets/images/kids-front-world.png"
+name                     : "/"
 description              : "Serving the Metropolitan Atlanta Area's children"
 url                      : "https://community-blueprint-development.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "We strive to..."
-  avatar           : "/assets/images/kids_front_world.png"
+  avatar           : "/"
   bio              : "The Community Blueprint Development Foundation (CBDF) is an organization whose mission and vision involve expanding at-risk youth's horizons, dreams, and opportunities. We provide community youth with early Head Start education and charitable enrichment programs designed to enhance academic and social skills, promote self-esteem, build character, and support working parents of youth who find solace in knowing that their children are in safe and supportive environments in their absence.
                     "
   location         : "Atlanta, GA"
