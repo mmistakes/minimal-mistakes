@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "Community Blueprint Development Foundation" # site title that appears in the browser tab and masthead
 title_separator          : "-"
 subtitle                 : "Just for YOUth!" # site tagline that appears below site title in masthead
-name                     : "docs/assets/images/kids-front-world.jpg"
+name                     : "/assets/images/kids-front-world.png"
 description              : "Serving the Metropolitan Atlanta Area's children"
 url                      : "https://community-blueprint-development.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
