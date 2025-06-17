@@ -28,7 +28,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       share: true
       show_date: true
       show_categories: false
