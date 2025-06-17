@@ -1,54 +1,20 @@
 [
   {
     "image_path": null,
-    "alt": "5a - Ausflug ins Deutschlandmuseum",
-    "title": "5a - Ausflug ins Deutschlandmuseum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGszN2hoOGg0cWxzcmZ0azBxcmpuNGowdWEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-16T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-16T13:30:00+02:00"
-    },
-    "created": "2025-06-04T05:39:05.000Z",
-    "updated": "2025-06-13T02:31:50.120Z"
-  },
-  {
-    "image_path": null,
-    "alt": "5b - Ausflug zur Gartenarbeitsschule / Waldralley",
-    "title": "5b - Ausflug zur Gartenarbeitsschule / Waldralley",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWdjdDY5Zml0ZDZpdTkzNGxnMm00NWozcHUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-16T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-16T13:30:00+02:00"
-    },
-    "created": "2025-05-28T11:42:12.000Z",
-    "updated": "2025-05-28T11:42:12.863Z"
-  },
-  {
-    "image_path": null,
     "alt": "4c - Radfahrprüfung in der Jugendverkehrsschule",
     "title": "4c - Radfahrprüfung in der Jugendverkehrsschule",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=M3NiMG0zbWwxZTY4bjAyMWtvaHBwaGo4MnUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2025-06-17T10:30:00+02:00"
+      "date_time": "2025-06-17T09:00:00+02:00"
     },
     "end": {
       "date": null,
       "date_time": "2025-06-17T12:00:00+02:00"
     },
     "created": "2025-03-13T11:30:10.000Z",
-    "updated": "2025-03-13T11:30:10.642Z"
+    "updated": "2025-06-16T09:57:54.219Z"
   },
   {
     "image_path": null,
@@ -69,6 +35,23 @@
   },
   {
     "image_path": null,
+    "alt": "3. Gesamtkonferenz",
+    "title": "3. Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bzdlYnNtNW41OHZsOXZqY2xtNzNrb3J1dTQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-17T16:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-17T18:00:00+02:00"
+    },
+    "created": "2025-06-16T21:20:42.000Z",
+    "updated": "2025-06-16T21:20:42.122Z"
+  },
+  {
+    "image_path": null,
     "alt": "5a - Ausflug in den Zoo",
     "title": "5a - Ausflug in den Zoo",
     "excerpt": null,
@@ -82,7 +65,7 @@
       "date_time": "2025-06-19T13:30:00+02:00"
     },
     "created": "2025-06-04T05:38:23.000Z",
-    "updated": "2025-06-13T02:31:50.120Z"
+    "updated": "2025-06-16T08:14:50.164Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-04-01T09:20:23.000Z",
     "updated": "2025-04-01T09:20:23.678Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A3 - Ausflug zum Spielplatz Kladow",
+    "title": "A3 - Ausflug zum Spielplatz Kladow",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWFobTN2ZTcwbXZ1YjBzYWkzZTU2dTVpc3EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-26T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-26T14:00:00+02:00"
+    },
+    "created": "2025-05-16T08:50:52.000Z",
+    "updated": "2025-05-26T06:17:48.694Z"
   }
 ]
