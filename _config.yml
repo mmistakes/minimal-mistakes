@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Community Blueprint Development Foundation" # site title that appears in the browser tab and masthead
+title                    : "/" # site title that appears in the browser tab and masthead
 title_separator          : "-"
-subtitle                 : "Just for YOUth!" # site tagline that appears below site title in masthead
+subtitle                 : "/" # site tagline that appears below site title in masthead
 name                     : "/"
 description              : "Serving the Metropolitan Atlanta Area's children"
 url                      : "https://community-blueprint-development.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
