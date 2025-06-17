@@ -35,3 +35,9 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+.masthead__menu-item.active > a {
+  font-weight: bold !important;
+  border-bottom: 2px solid white !important;
+}
+

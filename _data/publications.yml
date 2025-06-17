@@ -1,0 +1,21 @@
+# _data/publications.yml
+- title   : "Robust (Dopamine)_n-Polycarboxybetaine Coatings for Blood-Contacting Devices Reduce Non-Specific Protein Adsorption and Improve Anticoagulation"
+  authors : "C. Tang, D. Liu, S. Shin, **Z. Wang**, M. Salonic, L. Zheng, C. Sigda, K. Cook, S. Jiang*"
+  venue   : "AIChE Annual Meeting 2024, Paper 691849"
+  url_pdf : "https://aiche.confex.com/aiche/2024/meetingapp.cgi/Paper/691849"
+  # url_pdf : "/assets/files/355.pdf"
+  selected: true
+
+- title   : "Magnetic Sublattice Disorder Mediated Exchange Coupling at the Interfaces of Ho/Er Multilayers in Their Conical Phases"
+  authors : "X. Xiao, K. Zhao, Y. Cui, C. Qin, **Z. Wang**, Y. Yu, A. Paul*"
+  venue   : "Physical Review B 109, 224403 (2023)"
+  url_pdf : "https://doi.org/10.1103/PhysRevB.109.224403"
+  selected: true
+
+- title   : "Practicality of Deuterium Electrochemical Charging Method for Desorption Study in Low-Alloy Steel and Pure Zirconium"
+  authors : "**Z. Wang**, J. Fu, G. Lin, A. Baron*"
+  venue   : "ISFNT-15(15th International Symposium of Future Nuclear Technology), Las Palmas, Spain (Topic D • PS2-62 • P448), 2023"
+  url_pdf : "https://isfnt2023.com/wp-content/uploads/2023/09/Libro-V12-Comprimido.pdf"
+  selected: true
+
+

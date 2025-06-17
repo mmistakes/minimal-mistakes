@@ -1,45 +1,68 @@
+######################################################################
+#  Zuoming Wang · Personal Site                                       #
+#  ——— built with Jekyll + Minimal Mistakes theme                     #
+######################################################################
+
+############################
 # Theme Settings
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air"
+############################
+remote_theme           : "mmistakes/minimal-mistakes@4.24.0"   # 固定版本更稳定
+minimal_mistakes_skin  : "air"                                 # 同 kuanfang.github.io 配色
 
+############################
 # Site Settings
-locale: "en-US"
-title: "Zuoming Wang"
-title_separator: "-"
-name: "Zuoming Wang"
-description: "Materials Scientist | Cornell M.S."
-url: "https://zuomingwang.github.io"
-repository: "ZuomingWang/zuomingwang.github.io"
-breadcrumbs: true
-words_per_minute: 200
-search: true
+############################
+masthead_title: "Home"
+locale                 : "en-US"
+title                  : "Home"
+title_separator        : "-"
+name                   : "Zuoming Wang"
+description            : "Cornell M.S."
+url                    : "https://zuomingwang.github.io"       # 不要尾斜杠
+baseurl                : ""                                    # 为空—放根域名
+repository             : "ZuomingWang/zuomingwang.github.io"
+breadcrumbs            : true
+words_per_minute       : 200
 
+# 搜索
+search                 : true
+search_full_content    : true
+
+############################
 # Site Author
+############################
 author:
-  name: "Zuoming Wang"
-  avatar: "/assets/images/zuoming.jpg"
-  bio: "M.S. at Cornell University | Materials Science and Engineering"
-  location: "Ithaca, NY"
-  email: "zw765@cornell.edu"
+  name       : "Zuoming Wang"
+  avatar     : "/assets/images/zuoming.jpg"
+  bio        : "M.S. @ Cornell"
+  location   : "Ithaca, NY"
+  email      : "zw765@cornell.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:zw765@cornell.edu"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://zuomingwang.github.io"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ZuomingWang"
+      icon : "fab fa-fw fa-github"
+      url  : "https://github.com/ZuomingWang"
+    - label: "<i class='ai ai-orcid' aria-hidden='true'></i> ORCID"
+      icon : null
+      url  : "https://orcid.org/0009-0006-3696-9034"
+      
 
+############################
 # Site Footer
+############################
 footer:
   links:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ZuomingWang"
+      icon : "fab fa-fw fa-github"
+      url  : "https://github.com/ZuomingWang"
 
-# Reading Files
+############################
+# SEO / Social
+############################
+og_image : "assets/images/zuoming.jpg"   # 社交分享缩略图
+
+############################
+# Reading Files & Build
+############################
 include:
   - .htaccess
   - _pages
@@ -69,54 +92,75 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs
+  - /docs             # ignore Minimal Mistakes docs
   - /test
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding      : "utf-8"
+markdown_ext  : "markdown,mkdown,mkdn,mkd,md"
 
+############################
 # Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+############################
+markdown            : kramdown
+highlighter         : rouge
+excerpt_separator   : "\n\n"
+incremental         : false
 
+############################
 # Markdown Processing
+############################
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  input          : GFM
+  hard_wrap      : false
+  auto_ids       : true
+  footnote_nr    : 1
+  entity_output  : as_char
+  toc_levels     : 1..6
+  smart_quotes   : lsquo,rsquo,ldquo,rdquo
+  enable_coderay : false
 
+############################
 # Sass/SCSS
+############################
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir : _sass
+  style    : compressed
 
-# Outputting
-permalink: /:categories/:title/
-timezone: "America/New_York"
+############################
+# Outputting / Timezone
+############################
+permalink : /:categories/:title/
+timezone  : "America/New_York"
 
+############################
 # Plugins
+############################
 plugins:
+  - jekyll-remote-theme   # 本地调试 remote_theme 必备
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
+############################
 # Defaults
+############################
 defaults:
+  # 单页（_pages/ 与根目录 Markdown）
   - scope:
-      path: ""
-      type: pages
+      path : ""
+      type : pages
     values:
-      layout: single
-      author_profile: true
+      layout         : single
+      author_profile : true
+
+  # 博文（_posts/）
+  - scope:
+      path : "_posts"
+      type : posts
+    values:
+      layout         : single
+      author_profile : true
