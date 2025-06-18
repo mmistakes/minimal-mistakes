@@ -161,6 +161,12 @@ footer:
       # url:
 
 
+# Collections
+collections:
+  projects:
+    output: true
+
+
 # Reading Files
 include:
   - .htaccess
