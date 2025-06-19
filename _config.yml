@@ -34,7 +34,6 @@ defaults:
       show_categories: false
       show_tags: false
 
-
   - scope:
       path: "_pages/category"
       type: "pages"
@@ -42,7 +41,13 @@ defaults:
       layout: category
       author_profile: true
       show_date: true
-      
+
+# ✅ SEO Related
+google_site_verification: ""
+bing_site_verification: ""
+yandex_site_verification: ""
+naver_site_verification: "54d11364c73ed7869ad0d22c83f6f2450007bddc"
+
 date_format: "%Y-%m-%d"
 
 plugins:
