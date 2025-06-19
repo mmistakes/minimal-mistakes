@@ -101,7 +101,7 @@ compress_html:
 paginate: 5
 paginate_path: /page:num/
 
-search: true
+search: false
 search_full_content: true
 
 # ✅ _pages 폴더 포함
