@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "4c - Ausflug ins Musikmuseum",
+    "title": "4c - Ausflug ins Musikmuseum",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2Q1dWlmbjFsYmEwZzE1YjBjNzNsbW80czIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-26T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-26T14:00:00+02:00"
+    },
+    "created": "2025-06-18T08:05:27.000Z",
+    "updated": "2025-06-18T08:05:27.207Z"
+  },
+  {
+    "image_path": null,
     "alt": "A5 - Ausflug in die Bücherei",
     "title": "A5 - Ausflug in die Bücherei",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2025-05-27T19:26:23.000Z",
     "updated": "2025-05-27T19:26:23.755Z"
-  },
-  {
-    "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzBsbXRuOTJnbmJqdWVwMzZuMDZxbWhvMmQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-30T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-30T13:00:00+02:00"
-    },
-    "created": "2025-05-27T05:33:15.000Z",
-    "updated": "2025-05-27T05:33:15.797Z"
   }
 ]
