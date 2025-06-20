@@ -22,9 +22,9 @@ title_separator          : "-"
 subtitle                 : Tech, AI, and Life in Balance
 name                     : "Aarti Joshi"
 description              : "Experienced cloud platform engineer specializing in DevOps, AWS, Azure, Python, and Spring Boot. Sharing AI projects, automation tutorials, and real-world engineering insights."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "joshi-aarti/aarti"
+url                      : "https://aarti.github.io"
+baseurl                  : ""
+repository               : "joshi-aarti/aarti.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
