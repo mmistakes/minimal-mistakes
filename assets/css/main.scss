@@ -7,3 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Force taller header banner height
+.page__hero--overlay {
+  min-height: 470px;  // 🔁 You can change this to 700px or more if needed
+}
