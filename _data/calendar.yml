@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "5a - Ausflug in den Zoo",
-    "title": "5a - Ausflug in den Zoo",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDNqOXBrcWVsOThja2JzcWZpbzdnZzVrNWwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-19T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-19T13:30:00+02:00"
-    },
-    "created": "2025-06-04T05:38:23.000Z",
-    "updated": "2025-06-16T08:14:50.164Z"
-  },
-  {
-    "image_path": null,
     "alt": "4a - Fahrradprüfung JVS",
     "title": "4a - Fahrradprüfung JVS",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-05-27T19:26:23.000Z",
     "updated": "2025-05-27T19:26:23.755Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6b - Ausflug in die Bücherei",
+    "title": "6b - Ausflug in die Bücherei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzBsbXRuOTJnbmJqdWVwMzZuMDZxbWhvMmQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-06-30T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-06-30T13:00:00+02:00"
+    },
+    "created": "2025-05-27T05:33:15.000Z",
+    "updated": "2025-05-27T05:33:15.797Z"
   }
 ]
