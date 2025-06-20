@@ -19,8 +19,8 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "/" # site title that appears in the browser tab and masthead
 title_separator          : "-"
-subtitle                 : "/" # site tagline that appears below site title in masthead
-name                     : "/"
+subtitle                 : "Just for YOUth!" # site tagline that appears below site title in masthead
+name                     : "Community Blueprint Development Foundation"
 description              : "Serving the Metropolitan Atlanta Area's children"
 url                      : "https://community-blueprint-development.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/docs" # the subpath of your site, e.g. "/blog"
