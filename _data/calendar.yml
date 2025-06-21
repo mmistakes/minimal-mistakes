@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4a - Fahrradprüfung JVS",
-    "title": "4a - Fahrradprüfung JVS",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M25iYTQ5bjEyOWk5YmJrYmN1MWJjcnZrNTkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-20T12:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-20T13:30:00+02:00"
-    },
-    "created": "2025-04-01T09:20:23.000Z",
-    "updated": "2025-04-01T09:20:23.678Z"
-  },
-  {
-    "image_path": null,
     "alt": "A3 - Ausflug zum Spielplatz Kladow",
     "title": "A3 - Ausflug zum Spielplatz Kladow",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-05-27T05:33:15.000Z",
     "updated": "2025-05-27T05:33:15.797Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Gartenarbeitsschule",
+    "title": "A5 - Ausflug in die Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDlqNHFmYmFmYnAzODNtZWwxaTNycmlodTMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-10T07:40:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-10T13:00:00+02:00"
+    },
+    "created": "2025-04-02T11:40:53.000Z",
+    "updated": "2025-04-02T11:40:53.691Z"
   }
 ]
