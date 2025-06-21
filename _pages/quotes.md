@@ -26,6 +26,10 @@ Categories are just for keeping order and are continuously updated. The relation
 > When our food and clothing and housing all are born in the complication of mass production, mass method is bound to get into our thinking and to eliminate all other thinking. In our time mass or collective production has entered our economics, our politics, and even our religion, so that some nations have substituted the idea collective for the idea God.<br>
 -- J Steinbeck, "East of Eden"
 
+> In Southern California it didn't make any difference anyhow where you went: there was always the same McDonaldburger place over and over; like a circular strip that turned past you as you pretended to go somewhere. And when finally you got hungrey and went to the McDonaldburger place and bought a McDonald's hamburger, it was the one they sold you last time and the time before that and so forth, back to before you were born, and in addition bad people - liars - said it was made out of turkey gizzards anyhow. They had by now, according to theur sign, sold the same original burger fifty billion times. He wondered it if was to the same person. Life in Anaheim, California, was a commercial for itself, endlessly replayed. Nothing changed; it just spread out farther and farther in the form of neon ooze. What there was always more of had been congealed into permanence long ago, as if the automatic factory that cranked out these objects had jammed in the _on_ position. How the land became plastic, he thought, remembering the fairly tale "How the Sea became Salt.". SOmeday, he thought, it'll be mandatory that we all sell the McDonald's hamburger as well as buy it; we'll sell it back and forth to each other forever from our living room. That way we won't even have to go outside.<br>
+-- P K Dick, "A Scanner Darkly "
+
+
 
 ## Creativity
 
@@ -255,6 +259,15 @@ Categories are just for keeping order and are continuously updated. The relation
 
 > We think everybody is seeing into us. Then dirt is very dirty and purity is shining white.<br>
 -- J Steinbeck, "East of Eden"
+
+
+## History 
+
+> Quando noi valutiamo oggi il militarismo nazifascista, lo facciamo dopo la sua sconfitta, con la sicurezza di chi ha combattuto e vinto. È difficile ricostruire lo stato d'animo di allora, di fronte al nazifascismo permanentemente vittorioso e trionfante, ...<br>
+-- J Lussu, "Portrait"
+
+> The scheming of Britain, France and the United States over oil, politics and power helped create and fuel the problems of the Middle East for decades afterwards. Nations and peoples were used as assets or weapons. Lines were drawn in the sand, blown away and drawn again. All of this was done with precious little foresight about where it might lead<br>
+-- A von Tunzelmann, "Blood and Sand" [talking about the Suez crisis of 1956]
 
 
 ## Human relations 
