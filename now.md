@@ -22,7 +22,7 @@ _Last updated: June 2025_
 
 ---
 
-<h2 class="section-header"><span class="material-symbols-outlined" style="color: #fb923c;">experiment</span> Side Projects & Experiments</h2>
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">experiment</span> Side Projects & Experiments</h2>
 
 - Game design prototyping, with an eye towards barcade audiences
 - Running over all of the major bridges in the Hudson Valley
