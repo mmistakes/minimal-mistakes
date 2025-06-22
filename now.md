@@ -10,7 +10,7 @@ sidebar:
 
 _Last updated: June 2025_
 
-<h2 class="section-header"><span class="material-symbols-outlined">heart_check</span> What I’m Focused On</h2>
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #fb923c;">heart_check</span> What I’m Focused On</h2>
 
 - Helping [a local tech education company](https://openhubproject.com/) secure grant funding
 - Researching and writing [data reports](../portfolio/economic-trends) for [a business loan company](https://www.nationalbusinesscapital.com)
