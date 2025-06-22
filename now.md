@@ -13,7 +13,7 @@ _Last updated: June 2025_
 <h2 class="section-header">🧠 What I’m Focused On</h2>
 
 - Helping [a local tech education company](https://openhubproject.com/) secure grant funding
-- Researching and writing [data reports](../portfolio/economic-trends) for [a business loan company](https://www.nationalbusiness.capital.com)
+- Researching and writing [data reports](../portfolio/economic-trends) for [a business loan company](https://www.nationalbusinesscapital.com)
 - Writing traffic-driving copy on mass tort topics for a [law firm](https://www.robertkinglawfirm.com/personal-injury/pfas-class-action-lawsuit/pennsylvania-water-contamination-lawsuit/)
 - Producing a monthly [healthcare interview feature](https://www.gvhealthnews.com/).
 - Building out this portfolio (and learning Jekyll as I go)
