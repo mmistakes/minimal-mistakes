@@ -11,9 +11,9 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-<h2 class="section-header">🔍 Featured Work</h2>
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">flare</span> Featured Work</h2>
 
-### 📊 Data Journalism: Economic Trends   
+### <span class="material-symbols-outlined" style="color: #1e3a8a;">target</span> Data Journalism: Economic Trends   
 **Client:** National Business Capital    
 **Skills:** Data scraping, R, SQL, visualizations, writing    
 [→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Learn More](/portfolio/economic-trends/) 
