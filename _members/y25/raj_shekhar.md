@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/raj
-layout: splash
+layout: single
 ---
 
 

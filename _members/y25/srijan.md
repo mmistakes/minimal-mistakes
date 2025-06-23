@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/srijan
-layout: splash
+layout: single
 ---
 
 

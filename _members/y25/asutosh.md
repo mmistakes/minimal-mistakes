@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/asutosh
-layout: splash
+layout: single
 ---
 
 

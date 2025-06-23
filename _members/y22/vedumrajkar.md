@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/vedumrajkar
-layout: splash
+layout: single
 ---
 # Ved Umrajkar
 <img src="{{ site.baseurl }}/assets/images/members/y22/vedumrajkar.jpeg" width="200" height="200" alt="Ved Umrajkar">

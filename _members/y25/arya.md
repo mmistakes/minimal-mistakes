@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/arya
-layout: splash
+layout: single
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/akshat
-layout: splash
+layout: single
 ---
 
 

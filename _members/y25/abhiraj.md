@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/abhiraj
-layout: splash
+layout: single
 ---
 
 

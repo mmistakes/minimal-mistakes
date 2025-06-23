@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/arnav
-layout: splash
+layout: single
 ---
 
 

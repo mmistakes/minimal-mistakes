@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/gaurav
-layout: splash
+layout: single
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/aarush
-layout: splash
+layout: single
 ---
 
 

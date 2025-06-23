@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /members/advikasinha
+permalink: /members/advika
 layout: single
 ---
 

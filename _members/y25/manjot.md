@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/manjot
-layout: splash
+layout: single
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/shreyansh
-layout: splash
+layout: single
 ---
 
 

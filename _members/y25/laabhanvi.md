@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/laabhanvi
-layout: splash
+layout: single
 ---
 
 
