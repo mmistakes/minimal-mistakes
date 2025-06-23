@@ -97,24 +97,42 @@ layout: splash
     color: #333;
   }
 
+  .categories h2 {
+    margin-bottom: 18px;
+  }
+
   .categories ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 22px;
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
   }
 
   .categories li {
-    padding: 8px 15px;
-    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    min-height: 70px;
+    padding: 10px 18px;
+    background-color: #f5f5f5;
     border-radius: 20px;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+    line-height: 1.2;
   }
 
   .categories li:hover {
     background-color: #0073e6;
-    color: white;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0,115,230,0.12);
   }
 
   /* Contribute section */
@@ -139,6 +157,15 @@ layout: splash
   @media (max-width: 768px) {
     .blog-card {
       width: 48%;
+    }
+    .categories ul {
+      gap: 12px;
+    }
+    .categories li {
+      min-width: 110px;
+      min-height: 60px;
+      font-size: 0.98rem;
+      padding: 8px 10px;
     }
   }
 
@@ -239,7 +266,7 @@ layout: splash
    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/godnet/godnet_blog.jpg" alt="GodNet: Neural Network to Predict the Future" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/godnet">GodNet: A Neural Network Which Can Predict Your Future?</a></h3>
-      <p class="excerpt">Is this the next breakthrough or just a glimpse into AI’s potential to predict the unpredictable? GodNet—more than just hype.</p>
+      <p class="excerpt">Is this the next breakthrough or just a glimpse into AI's potential to predict the unpredictable? GodNet—more than just hype.</p>
     </div>
 
    <div class="blog-card">
@@ -257,7 +284,7 @@ layout: splash
    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/logistic/logistic_blog.jpg" alt="Logistic Regression Simplified" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/logistic">Logistic Regression. Simplified.</a></h3>
-      <p class="excerpt">Logistic Regression doesn’t have to be intimidating. Get a simple, clear breakdown of this powerful algorithm.</p>
+      <p class="excerpt">Logistic Regression doesn't have to be intimidating. Get a simple, clear breakdown of this powerful algorithm.</p>
     </div>
 
    <div class="blog-card">
@@ -293,7 +320,7 @@ layout: splash
    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/svd/svd_blog.png" alt="Singular Value Decomposition" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/svd">Singular Value Decomposition. Elucidated.</a></h3>
-      <p class="excerpt">SVD might sound intimidating, but it’s actually one of the most useful techniques in data science. Let’s break it down and make it crystal clear.</p>
+      <p class="excerpt">SVD might sound intimidating, but it's actually one of the most useful techniques in data science. Let's break it down and make it crystal clear.</p>
     </div>
 
    <div class="blog-card">
