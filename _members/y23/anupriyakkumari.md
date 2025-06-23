@@ -6,7 +6,7 @@ layout: single
 
 # Anupriya Kumari
 
-<img src="{{ site.baseurl }}assets/images/members/y23/anupriya_image.jpg" width="200" height="200" alt="Anupriya Kumari">
+<img src="{{ site.baseurl }}/assets/images/members/y23/anupriya_image.jpg" width="200" height="200" alt="Anupriya Kumari">
 
 _Core Member, DSG IIT Roorkee_
 

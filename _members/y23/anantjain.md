@@ -1,7 +1,7 @@
 ---
 title: ""
 permalink: /members/anantjain
-layout: splash
+layout: single
 ---
 
 
