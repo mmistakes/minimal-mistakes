@@ -7,3 +7,148 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.announcement-box {
+  background-color: #e6f0ff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #004080;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tagline {
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1rem 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 700px;
+  transition: transform 0.3s ease;
+}
+
+.tagline:hover {
+  transform: scale(1.02);
+}
+
+.highlight-train {
+  color: #007bff;
+  font-style: italic;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 1rem;
+  max-width: 700px;
+}
+
+
+/* Featured Research Cards */
+.preview-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.grid-container .card {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.grid-container .card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  text-align: left;
+  color: #111;
+}
+
+.button-link {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: #007bff;
+  color: white !important; /* ← ensures text is white */
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+}
+
+.button-link:hover {
+  background-color: #339dff;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4);
+}
+
+
+/*CONTACT PAGE CSS*/
+
+.contact-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.contact-wrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.contact-wrapper p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.form-container iframe {
+  border: none;
+  width: 100%;
+  height: 800px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}

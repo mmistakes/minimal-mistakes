@@ -14,6 +14,8 @@
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+mathjax: true
+
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
@@ -22,9 +24,9 @@ title_separator          : "-"
 subtitle                 : "Code Train Predict" # site tagline that appears below site title in masthead
 name                     : #"Your Name"
 description              : #"An amazing website"
-url                      : "https://advikasinha.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/dsg-website" # the subpath of your site, e.g. "/blog"
-repository               : "advikasinha/dsg-website" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://dsgiitr.in" #"https://dsgiitr.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" #"/dsg-website" # the subpath of your site, e.g. "/blog"
+repository               : "dsgiitr/dsg-website" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/dsg-logo.png
 masthead_title           : "Data Science Group IIT Roorkee"# overrides the website title displayed in the masthead, use " " for no title
@@ -95,13 +97,16 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/dsg-logo.png # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Organization # Person or Organization (defaults to Person)
+  name                   :  Data Science Group - IIT Roorkee # If the user or organization name differs from the site's name
+  links: 
+    - "https://github.com/dsgiitr"
+    - "https://x.com/dsg_iitr"
+    - "https://instagram.com/dsgiitr" # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -310,6 +315,9 @@ collections:
   members:
     output: true
     permalink: /members/:name/
+  blogs:
+    output: true
+    permalink: /blogs/:title/
     
 # Defaults
 defaults:
