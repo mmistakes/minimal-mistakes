@@ -230,28 +230,4 @@ permalink: /projects/
     </div>
   </div>
 
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
-  <div class="project-card">
-  </div>
-
 </div>
