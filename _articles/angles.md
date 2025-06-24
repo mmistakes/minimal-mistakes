@@ -10,7 +10,7 @@ header:
   teaser: /assets/img/angle_photos.png
 ---
 
-When two lines meet each other, they form an **angle**..
+When two lines meet each other, they form an **angle**.
 
 ![An example of an angle, made by two lines meeting each other]({{site.baseurl}}/assets/img/angles1.png "An angle")
 
