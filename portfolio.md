@@ -13,7 +13,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 <h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">flare</span> Featured Work</h2>
 
-### <span class="material-symbols-outlined" style="color: #1e3a8a;">target</span> Data Journalism: Economic Trends   
+### <span class="material-symbols-outlined" style="color: #1e3a8a;">area_chart</span> Data Journalism: Economic Trends   
 **Client:** National Business Capital    
 **Skills:** Data scraping, R, SQL, visualizations, writing    
 [→ View Article](https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/) | [→ Learn More](/portfolio/economic-trends/) 
@@ -24,7 +24,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-### 💸 Small Business Funding/Payment Processing Analysis        
+### <span class="material-symbols-outlined" style="color: #1e3a8a;">attach_money</span> Small Business Funding/Payment Processing Analysis        
 **Client:** Merchant Maverick    
 **Skills:** Research, writing, A/B testing, visualizations, SEO, data analysis    
 [→ View Article](https://www.merchantmaverick.com/reviews/stripe-review/) | [→ Learn More](/portfolio/small-business-writing/) 
@@ -35,7 +35,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
  
 ---
 
-### 🎮 Procedural Game Design: *String Theory*   
+### <span class="material-symbols-outlined" style="color: #1e3a8a;">joystick</span> Procedural Game Design: *String Theory*   
 **Role:** Lead Developer / Co-designer    
 **Skills:** Programming, scripting, systems design, project management, source control  
 [→ Steam Page](https://store.steampowered.com/app/402150/String_Theory/) | [→ Learn More](/portfolio/game-design/)  
@@ -46,7 +46,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-### ✍️ Copywriting/SEO-driven Content  
+### <span class="material-symbols-outlined" style="color: #1e3a8a;">target</span> Copywriting/SEO-driven Content  
 **Role:** Writer    
 **Skills:** Writing, research, SEO, editing, analysis of studies
 [→ View Article](https://www.robertkinglawfirm.com/mass-torts/ultra-processed-foods-lawsuit/are-processed-foods-addictive-to-kids-and-teens/)) | [→ Learn More](/portfolio/law-firm-seo/)  
@@ -57,7 +57,7 @@ Welcome to my work. I specialize in **data journalism, analysis, and system desi
 
 ---
 
-### 🧠 Additional Writing & Copy   
+### <span class="material-symbols-outlined" style="color: #1e3a8a;">edit</span> Additional Writing & Copy   
 - **Grant Writing** – Helping [OpenHub](https://openhubproject.com/) secure funding for specialized tech education. 
 - **Meet Your Doctor** – Producing monthly Q&A feature where I interview physicians based in [Central New York](https://www.cnyhealth.com/) and [Rochester](https://www.gvhealthnews.com/).  
 - **Press Releases** – Helped a new [continuing medical education company](https://qdcme.com/) with media relations.  
