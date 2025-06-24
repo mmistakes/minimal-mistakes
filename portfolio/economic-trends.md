@@ -14,7 +14,7 @@ At National Business Capital, I led a data journalism initiative focused on anal
 
 ---
 
-<h2 class="section-header">🧠 Problem </h2>     
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">question_exchange</span> Problem </h2>     
 The client needed original, data-backed content that could:  
 - Boost domain authority  
 - Demonstrate expertise in the small business lending space  
@@ -22,7 +22,7 @@ The client needed original, data-backed content that could:
 
 ---
 
-<h2 class="section-header">🔍 My Role </h2>     
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">account_circle</span> My Role </h2>     
 - Performed research and wrote article drafts    
 - Queried datasets from government (SBA, BLS) and private APIs    
 - Cleaned and analyzed data using **R, Excel, and SQL**    
@@ -31,7 +31,7 @@ The client needed original, data-backed content that could:
 
 ---
 
-<h2 class="section-header">🔧 Tools & Technologies </h2>     
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">build</span> Tools & Technologies </h2>     
 - **Languages:** R, SQL, AppScript (JavaScript)    
 - **Data Sources:** BLS, SBA, Census Bureau    
 - **Visualization:** Datawrapper    
@@ -39,17 +39,17 @@ The client needed original, data-backed content that could:
 
 ---
 
-<h2 class="section-header">📈 Outcome </h2>     
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">enable</span> Outcome </h2>     
 - Articles contributed to an **8% increase in domain authority**  
 - Drove over **10,000 organic visits** in the first 3 months  
 - Cited by other financial publications and blogs  
 
 ---
 
-<h2 class="section-header">📎 Links & Samples </h2>     
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">link</span> Links & Samples </h2>     
 - [State Recession Readiness](#https://www.nationalbusinesscapital.com/data-reports/states-least-likely-to-survive-recession/)    
 
 ---
 
-<h2>💬 Notes / Reflections</h2>
+<h2><span class="material-symbols-outlined" style="color: #1e3a8a;">psychology</span> Notes / Reflections</h2>
 I learned a lot about balancing **data depth and accessibility**. These projects involved working closely with public relations to create marketable reports. To quote my PR collaborator, I had to find the "zing" and "sizzle" in my research. 
