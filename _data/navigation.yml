@@ -1,12 +1,12 @@
 # main links
 main:
   - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+    url: https://levinergy.github.io/levinergy/docs/quick-start-guide/
+  - title: "About"
+    url: https://levinergy.github.io/levinergy/about/
+  - title: "Wine stories"
+    url: https://levinergy.github.io/levinergy/about/
+  - title: "Wine tasting events"
+    url: https://levinergy.github.io/levinergy/about/
   # - title: "Sitemap"
   #   url: /sitemap/
