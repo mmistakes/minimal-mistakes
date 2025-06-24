@@ -32,7 +32,7 @@ A music puzzle game built in [collaboration with chiptune artist Shael Riley](ht
 
 </div>
 
-<h2 class="section-header"> Concept</h2>
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">lightbulb</span> Concept</h2>
 <div class="callout-block">
 We needed a novel design concept for a music-based game. At the time, most music games were effectively rhythm games that challenged players to identify and sync with a beat. 
 
@@ -42,7 +42,7 @@ In each level, a musical chord plays in the background. Players are then present
 
 ---
 
-<h2 class="section-header"> 🔍 My Role </h2> 
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">account_circle</span> My Role </h2> 
 - Co-designed concept and system 
 - Served as lead programmer and wrote most of the code  
 - Implemented art and sound assets
@@ -50,7 +50,7 @@ In each level, a musical chord plays in the background. Players are then present
 
 ---
 
-<h2 class="section-header"> 🔧 Tools & Technologies </h2>
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">build</span> Tools & Technologies </h2>
 - **Languages:** GML
 - **Game Engine:** GameMaker Studio 
 - **Platform:** PC (Steam) 
@@ -58,5 +58,5 @@ In each level, a musical chord plays in the background. Players are then present
 
 ---
 
-## 💬 Notes / Reflections
+## <span class="material-symbols-outlined" style="color: #1e3a8a;">psychology</span> Notes / Reflections
 Resource constraints encouraged the small team to come up with novel solutions to challenges that arose during development. To this day it remains the only project I've worked on that was primarily sound-driven, which provided a unique opportunity to make the sound designer a core part of the system design process. 
