@@ -10,7 +10,7 @@ sidebar:
 
 _Last updated: June 2025_
 
-<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">target</span> What I’m Focused On</h2>
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">zoom_in</span> What I’m Focused On</h2>
 
 - Helping [a local tech education company](https://openhubproject.com/) secure grant funding
 - Researching and writing [data reports](../portfolio/economic-trends) for [a business loan company](https://www.nationalbusinesscapital.com)
