@@ -32,7 +32,7 @@ read_time: false
 
 </div>
 
-<h2 class="section-header">📂 Featured Work</h2>  
+<h2 class="section-header"><span class="material-symbols-outlined" style="color: #1e3a8a;">folder</span> Featured Work</h2>  
 - **[Data Journalism](portfolio/economic-trends/)** – Data analysis for mass audiences  
 - **[Game Design](portfolio/game-design/)** – Experimental puzzle game based on musical chords
 - **[SEO-focused Writing](portfolio/small-business-writing/)** - Revenue-generating posts and reviews 
