@@ -1,0 +1,71 @@
+// 전체 배경 그라데이션
+body {
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  min-height: 100vh;
+}
+
+// 카드(사이드바) 스타일
+.sidebar {
+  background: rgba(255,255,255,0.95);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(67,198,172,0.15);
+  padding: 24px 18px;
+  margin-top: 32px;
+}
+
+// 프로필 아바타 둥글게 + 그림자
+.author__avatar {
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(67,198,172,0.3);
+  border: 4px solid #43c6ac;
+}
+
+// 헤더 이미지 오버레이
+.page__hero--overlay {
+  background: linear-gradient(135deg, rgba(67,198,172,0.5), rgba(248,255,174,0.5));
+}
+
+// 포스트 제목 폰트/색상
+.page__title {
+  font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
+  color: #43c6ac;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+// 목차(TOC) 스타일
+.toc {
+  background: #fffbe7;
+  border-left: 4px solid #43c6ac;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+}
+
+// 코드 블록 강조
+.highlight, pre, code {
+  background: #232526 !important;
+  color: #f8ffae !important;
+  border-radius: 8px;
+  font-family: 'Fira Mono', 'Nanum Gothic Coding', monospace;
+}
+
+// 공지/인용/경고 박스 스타일
+.notice, blockquote {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+  background: #e0fff7;
+  border-left: 6px solid #43c6ac;
+  padding: 16px 24px;
+  color: #222;
+}
+
+// SNS 아이콘 컬러 강조
+.social-icons .fa {
+  color: #43c6ac;
+  transition: color 0.2s;
+}
+.social-icons .fa:hover {
+  color: #f8ffae;
+} 
