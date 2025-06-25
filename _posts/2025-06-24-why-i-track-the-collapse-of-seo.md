@@ -1,5 +1,5 @@
 ---
-title: "Why I Track the Collapse of SEO, AKA Header 1"
+title: "Why I Track the Collapse of SEO Or Header 1"
 excerpt: "Thoughts on the shift from search clicks to AI citations."
 date: 2025-06-25
 tags: [media, ai, seo]
