@@ -1,23 +1,29 @@
 // 전체 배경 그라데이션
 body {
-  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  background: linear-gradient(135deg, #c6aeff 0%, #9a43c6 100%);
   min-height: 100vh;
 }
 
 // 카드(사이드바) 스타일
-.sidebar {
-  background: rgba(255,255,255,0.95);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(67,198,172,0.15);
+.sidebar, .card {
+  background: #fff;
+  border: 2px solid #c6aeff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(154,67,198,0.10);
   padding: 24px 18px;
   margin-top: 32px;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.sidebar:hover, .card:hover {
+  border-color: #9a43c6;
+  box-shadow: 0 12px 36px rgba(154,67,198,0.18);
 }
 
 // 프로필 아바타 둥글게 + 그림자
 .author__avatar {
+  border: 4px solid #c6aeff;
+  box-shadow: 0 4px 16px #9a43c633;
   border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(67,198,172,0.3);
-  border: 4px solid #43c6ac;
 }
 
 // 헤더 이미지 오버레이
@@ -26,48 +32,56 @@ body {
 }
 
 // 포스트 제목 폰트/색상
-.page__title {
-  font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
-  color: #43c6ac;
+.page__title, .archive__item-title a, .post-title a {
+  color: #9a43c6;
+  border-bottom: 2px solid #c6aeff;
   font-weight: 700;
-  letter-spacing: 1px;
+}
+.page__title a:hover, .archive__item-title a:hover, .post-title a:hover {
+  color: #c6aeff;
+  border-bottom: 2px solid #9a43c6;
 }
 
 // 목차(TOC) 스타일
 .toc {
-  background: #fffbe7;
-  border-left: 4px solid #43c6ac;
+  background: #f7f3ff;
+  border-left: 4px solid #c6aeff;
   border-radius: 12px;
+  box-shadow: 0 2px 8px #c6aeff33;
   padding: 16px 20px;
   margin-bottom: 32px;
-  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
 }
 
 // 코드 블록 강조
 .highlight, pre, code {
-  background: #232526 !important;
-  color: #f8ffae !important;
-  border-radius: 8px;
+  background: #f7f3ff;
+  border-left: 5px solid #c6aeff;
+  color: #232526;
+  border-radius: 10px;
   font-family: 'Fira Mono', 'Nanum Gothic Coding', monospace;
 }
 
 // 공지/인용/경고 박스 스타일
 .notice, blockquote {
+  border-left: 5px solid #9a43c6;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(67,198,172,0.08);
   background: #e0fff7;
-  border-left: 6px solid #43c6ac;
   padding: 16px 24px;
   color: #222;
 }
 
 // SNS 아이콘 컬러 강조
 .social-icons .fa {
-  color: #9a43c6;
-  transition: color 0.2s;
+  background: linear-gradient(90deg, #c6aeff 0%, #9a43c6 100%);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: background 0.18s, color 0.18s;
 }
 .social-icons .fa:hover {
-  color: #c6aeff;
+  background: linear-gradient(90deg, #9a43c6 0%, #c6aeff 100%);
+  color: #fff;
 }
 
 // 포스트 리스트 <a> (카드/호버 효과, Chirpy 스타일 참고)
@@ -100,20 +114,22 @@ body {
 }
 .page__meta .tags a, .post-tags a, .tag-list a, .taxonomy__index .entry-tag a {
   display: inline-block;
-  background: #43c6ac;
+  background: #c6aeff;
   color: #fff;
   border-radius: 6px;
   padding: 0.2em 0.7em;
   font-size: 0.95em;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 0.2em;
   margin-bottom: 0.2em;
   text-decoration: none;
-  transition: background 0.18s;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  border: 1.5px solid #9a43c6;
 }
 .page__meta .tags a:hover, .post-tags a:hover, .tag-list a:hover, .taxonomy__index .entry-tag a:hover {
-  background: #232526;
-  color: #f8ffae;
+  background: #9a43c6;
+  color: #fff;
+  border-color: #c6aeff;
 }
 
 // 연도(year) 스타일 (아카이브/헤더)
@@ -157,10 +173,10 @@ body {
   gap: 1.2em;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #232526 0%, #43c6ac 100%);
+  background: linear-gradient(90deg, #c6aeff 0%, #9a43c6 100%);
   border-radius: 16px;
   padding: 0.7em 2em;
-  box-shadow: 0 4px 24px rgba(67,198,172,0.12);
+  box-shadow: 0 4px 24px rgba(154,67,198,0.12);
   margin: 1.2em auto 2em auto;
   font-family: 'Fira Mono', 'Nanum Gothic Coding', monospace;
 }
@@ -170,7 +186,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4em;
-  color: #f8ffae;
+  color: #fff;
   font-size: 1.08em;
   font-weight: 600;
   padding: 0.3em 1.1em;
@@ -178,21 +194,21 @@ body {
   text-decoration: none;
   letter-spacing: 0.02em;
   transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
-  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+  box-shadow: 0 2px 8px rgba(154,67,198,0.08);
 }
 
 .nav__list a:hover, .navigation__list a:hover, nav ul li a:hover, .masthead__menu a:hover {
-  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
-  color: #232526;
-  box-shadow: 0 4px 16px rgba(67,198,172,0.18);
+  background: linear-gradient(90deg, #9a43c6 0%, #c6aeff 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(154,67,198,0.18);
   transform: translateY(-2px) scale(1.06) skewX(-6deg);
-  text-shadow: 0 0 8px #43c6ac, 0 0 2px #fffbe7;
+  text-shadow: 0 0 8px #9a43c6, 0 0 2px #c6aeff;
 }
 
 // <nav> 메뉴에 코드 느낌 border
 .nav__list, .navigation__list, nav ul, .masthead__menu {
-  border: 2px solid #43c6ac;
-  border-bottom: 4px double #f8ffae;
+  border: 2px solid #9a43c6;
+  border-bottom: 4px double #c6aeff;
 }
 
 // <nav> 메뉴 아이템에 작은 네온 점
@@ -203,13 +219,32 @@ body {
   height: 0.5em;
   margin-right: 0.5em;
   border-radius: 50%;
-  background: radial-gradient(circle, #43c6ac 60%, #f8ffae 100%);
-  box-shadow: 0 0 8px #43c6ac, 0 0 2px #f8ffae;
+  background: radial-gradient(circle, #9a43c6 60%, #c6aeff 100%);
+  box-shadow: 0 0 8px #9a43c6, 0 0 2px #c6aeff;
   vertical-align: middle;
   transition: background 0.18s, box-shadow 0.18s;
 }
 
 .nav__list a:hover::before, .navigation__list a:hover::before, nav ul li a:hover::before, .masthead__menu a:hover::before {
-  background: radial-gradient(circle, #f8ffae 60%, #43c6ac 100%);
-  box-shadow: 0 0 12px #f8ffae, 0 0 4px #43c6ac;
+  background: radial-gradient(circle, #c6aeff 60%, #9a43c6 100%);
+  box-shadow: 0 0 12px #c6aeff, 0 0 4px #9a43c6;
+}
+
+// 버튼/공유/SNS
+.btn {
+  background: linear-gradient(90deg, #c6aeff 0%, #9a43c6 100%);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: background 0.18s, color 0.18s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #9a43c6 0%, #c6aeff 100%);
+  color: #fff;
+}
+
+// 스크롤바
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #c6aeff 0%, #9a43c6 100%);
+  border-radius: 8px;
 } 
