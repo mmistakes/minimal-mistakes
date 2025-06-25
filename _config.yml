@@ -114,10 +114,10 @@ analytics:
 # Site Author
 author:
   name             : "SEO GYUMIN"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "꾸준히 노력하는 개발자 입니다!"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "꾸준히 노력하는 개발자입니다! 데이터와 인공지능을 사랑합니다."
   location         : "South Korea"
-  email            :
+  email            : "your@email.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -134,9 +134,12 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Codgm"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com/yourchannel"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/yourid"
 
 # Site Footer
 footer:

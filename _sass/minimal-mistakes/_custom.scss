@@ -68,4 +68,84 @@ body {
 }
 .social-icons .fa:hover {
   color: #f8ffae;
+}
+
+// 포스트 리스트 <a> (카드/호버 효과, Chirpy 스타일 참고)
+.archive__item-title a, .post-list a, .post-title a, .page__title a {
+  display: inline-block;
+  position: relative;
+  padding: 0.2em 0.5em;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f8ffae 0%, #43c6ac 100%);
+  color: #232526;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+  transition: all 0.18s cubic-bezier(.4,0,.2,1);
+  text-decoration: none;
+}
+.archive__item-title a:hover, .post-list a:hover, .post-title a:hover, .page__title a:hover {
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  color: #222;
+  box-shadow: 0 4px 16px rgba(67,198,172,0.18);
+  transform: translateY(-2px) scale(1.04);
+  text-decoration: underline;
+}
+
+// 태그 스타일 (헤더, 포스트 내)
+.page__meta .tags, .post-tags, .tag-list, .taxonomy__index .entry-tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+.page__meta .tags a, .post-tags a, .tag-list a, .taxonomy__index .entry-tag a {
+  display: inline-block;
+  background: #43c6ac;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.2em 0.7em;
+  font-size: 0.95em;
+  font-weight: 500;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+.page__meta .tags a:hover, .post-tags a:hover, .tag-list a:hover, .taxonomy__index .entry-tag a:hover {
+  background: #232526;
+  color: #f8ffae;
+}
+
+// 연도(year) 스타일 (아카이브/헤더)
+.archive__item-year, .post-year, .page__meta .year {
+  display: inline-block;
+  background: #fffbe7;
+  color: #43c6ac;
+  border-radius: 6px;
+  padding: 0.1em 0.7em;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-right: 0.3em;
+  margin-bottom: 0.2em;
+}
+
+// About Me 스타일 (사이드바/헤더)
+.author__bio, .about-me {
+  background: linear-gradient(90deg, #f8ffae 0%, #43c6ac 100%);
+  color: #232526;
+  border-radius: 12px;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  font-size: 1.08em;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+}
+
+// 헤더 내 태그/연도/어바웃미 정렬
+.page__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7em;
+  margin-bottom: 0.7em;
 } 
