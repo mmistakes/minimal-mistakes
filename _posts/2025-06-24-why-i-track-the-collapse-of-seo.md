@@ -5,6 +5,10 @@ date: 2025-06-25
 tags: [media, ai, seo]
 ---
 
+<a href="/assets/images/stock-photo.png" data-featherlight="image">
+  <img src="/assets/images/stock-photo.png" alt="A free stock photo. I think it's nice." style="max-width: 100%; height: auto;" />
+</a>
+
 <h2>Header 2: The Words You Entered Into Your Search, Give Or Take</h2>
 
 Search Engine Optimization, or SEO, as the diviners who seek to decode the algorithmic whims of Google call it, rules over a kingdom we call Content. Regardless of whether your specialty is turning a phrase, constructing a perfectly grammatical sentence, evoking vivid imagery, cranking out thousands of words with ease, or simply describing a process with technical precision, you were united by one truth over the past decade or two. 
