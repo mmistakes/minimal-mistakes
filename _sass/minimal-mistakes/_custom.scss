@@ -63,11 +63,11 @@ body {
 
 // SNS 아이콘 컬러 강조
 .social-icons .fa {
-  color: #43c6ac;
+  color: #9a43c6;
   transition: color 0.2s;
 }
 .social-icons .fa:hover {
-  color: #f8ffae;
+  color: #c6aeff;
 }
 
 // 포스트 리스트 <a> (카드/호버 효과, Chirpy 스타일 참고)
@@ -76,7 +76,7 @@ body {
   position: relative;
   padding: 0.2em 0.5em;
   border-radius: 8px;
-  background: linear-gradient(90deg, #f8ffae 0%, #43c6ac 100%);
+  background: linear-gradient(90deg, #c6aeff 0%, #9a43c6 100%);
   color: #232526;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(67,198,172,0.08);
@@ -84,7 +84,7 @@ body {
   text-decoration: none;
 }
 .archive__item-title a:hover, .post-list a:hover, .post-title a:hover, .page__title a:hover {
-  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  background: linear-gradient(90deg, #9a43c6 0%, #c6aeff 100%);
   color: #222;
   box-shadow: 0 4px 16px rgba(67,198,172,0.18);
   transform: translateY(-2px) scale(1.04);
@@ -148,4 +148,68 @@ body {
   align-items: center;
   gap: 0.7em;
   margin-bottom: 0.7em;
+}
+
+// 헤더 <nav> 메뉴 개발자 스타일 (네온/그라데이션, 코드 느낌, 호버 애니메이션)
+.nav__list, .navigation__list, nav ul, .masthead__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #232526 0%, #43c6ac 100%);
+  border-radius: 16px;
+  padding: 0.7em 2em;
+  box-shadow: 0 4px 24px rgba(67,198,172,0.12);
+  margin: 1.2em auto 2em auto;
+  font-family: 'Fira Mono', 'Nanum Gothic Coding', monospace;
+}
+
+.nav__list a, .navigation__list a, nav ul li a, .masthead__menu a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  color: #f8ffae;
+  font-size: 1.08em;
+  font-weight: 600;
+  padding: 0.3em 1.1em;
+  border-radius: 8px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+}
+
+.nav__list a:hover, .navigation__list a:hover, nav ul li a:hover, .masthead__menu a:hover {
+  background: linear-gradient(90deg, #43c6ac 0%, #f8ffae 100%);
+  color: #232526;
+  box-shadow: 0 4px 16px rgba(67,198,172,0.18);
+  transform: translateY(-2px) scale(1.06) skewX(-6deg);
+  text-shadow: 0 0 8px #43c6ac, 0 0 2px #fffbe7;
+}
+
+// <nav> 메뉴에 코드 느낌 border
+.nav__list, .navigation__list, nav ul, .masthead__menu {
+  border: 2px solid #43c6ac;
+  border-bottom: 4px double #f8ffae;
+}
+
+// <nav> 메뉴 아이템에 작은 네온 점
+.nav__list a::before, .navigation__list a::before, nav ul li a::before, .masthead__menu a::before {
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background: radial-gradient(circle, #43c6ac 60%, #f8ffae 100%);
+  box-shadow: 0 0 8px #43c6ac, 0 0 2px #f8ffae;
+  vertical-align: middle;
+  transition: background 0.18s, box-shadow 0.18s;
+}
+
+.nav__list a:hover::before, .navigation__list a:hover::before, nav ul li a:hover::before, .masthead__menu a:hover::before {
+  background: radial-gradient(circle, #f8ffae 60%, #43c6ac 100%);
+  box-shadow: 0 0 12px #f8ffae, 0 0 4px #43c6ac;
 } 
