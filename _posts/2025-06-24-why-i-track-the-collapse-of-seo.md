@@ -52,6 +52,10 @@ If there's one thing human brains are particularly good at, it's smelling patter
 
 More important, perhaps, is the need for a trust or vetting system, which is ostensibly something Google's traditional algorithms provided. You still need that for AI summaries, especially given their penchant for hallucination and dubious citation.
 
+<a href="/assets/images/seo.jpg" data-featherlight="image">
+  <img src="/assets/images/seo.jpg" alt="A free stock photo. I think it's nice." style="max-width: 100%; height: auto;" />
+</a>
+
 <h2>Header 2: Conclusion, Since I've Reached The Requisite Word Count, Plus A Call To Action</h2>
 
 The internet needs a new bargain, one that can feed AI summaries and output without disincentivizing the creation of the content that they cite and train upon. There's an opportunity here to break away from the overly formulaic writing and formatting that's characterized the last decade ... or create a new algorithmic arms race where we all try to guess what the models want to see and write for them rather than human beings. Or maybe we engage in an all-out content turf war where we try to plant our branding deep within their corpora? 
