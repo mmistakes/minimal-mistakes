@@ -5,17 +5,17 @@ date: 2025-06-25
 tags: [media, ai, seo]
 ---
 
-<a href="/assets/images/stock-photo.png" data-featherlight="image">
-  <img src="/assets/images/stock-photo.png" alt="A free stock photo. I think it's nice." style="max-width: 100%; height: auto;" />
+<a href="/assets/images/stock-photo.jpg" data-featherlight="image">
+  <img src="/assets/images/stock-photo.jpg" alt="A free stock photo. I think it's nice." style="max-width: 100%; height: auto;" />
 </a>
 
 <h2>Header 2: The Words You Entered Into Your Search, Give Or Take</h2>
 
-Search Engine Optimization, or SEO, as the diviners who seek to decode the algorithmic whims of Google call it, rules over a kingdom we call Content. Regardless of whether your specialty is turning a phrase, constructing a perfectly grammatical sentence, evoking vivid imagery, cranking out thousands of words with ease, or simply describing a process with technical precision, you were united by one truth over the past decade or two. 
+Search Engine Optimization, or SEO, as the diviners who seek to decode the algorithmic whims of Google call it, rules over a kingdom we call Content. Whether your specialty is turning a phrase, evoking vivid imagery, describing a process with technical precision, or simply cranking out thousands of words with ease, you've labored under a singular truth for the past decade or two. 
 
-The Beast of Mountain View, CA, must be given its due.
+<strong>The <a href="https://google.com>Beast of Mountain View</a>, CA, must be given its due.</strong> It must be fed keywords and domain authority lest ye be crushed under its paws down to the third or fourth search results page. 
 
-But what's that on the air? A wounded howl? Is the Beast mortal? And if it should die, will my Content still be Helpful?
+But recently something's changed. The beast smells of fear. Is it mortal? And if it should die, will my Content still be Helpful?
 
 <h2>Header 2: An Answer To A Question I Hope You Asked Containing These Words</h2>
 
