@@ -194,7 +194,7 @@ When that happens:
 
 ---
 
-Let me know in the comments—how have you handled legacy code under deadline pressure? What survival strategies have helped you ship without shame?
+Have thoughts or want to share your experience? Feel free to reach out via [LinkedIn](www.linkedin.com/in/aarti-joshi-link) —I'd love to hear how others approach this challenge.
 
 
 
