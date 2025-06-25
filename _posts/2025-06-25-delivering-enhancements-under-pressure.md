@@ -194,7 +194,7 @@ When that happens:
 
 ---
 
-Have thoughts or want to share your experience? Feel free to reach out via [LinkedIn](www.linkedin.com/in/aarti-joshi-link) —I'd love to hear how others approach this challenge.
+Have thoughts or want to share your experience? Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/aarti-joshi-link/) —I'd love to hear how others approach this challenge.
 
 
 

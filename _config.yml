@@ -312,6 +312,7 @@ compress_html:
 
 # Defaults
 defaults:
+  # _projects
   - scope:
       path: ""
       type: projects
@@ -324,6 +325,18 @@ defaults:
       related: true
       show_date: true
       date_format: "%Y-%m-%d"
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
 
 collections:
   projects:
