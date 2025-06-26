@@ -113,10 +113,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Akash Sudhanshu"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "BS- MS student of mathematics in Indian Institute of Science(IISc), Bangalore"
   email            :
   links:
     - label: "Email"
@@ -165,6 +164,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - assets/css/custom.css
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
