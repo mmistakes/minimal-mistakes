@@ -71,19 +71,6 @@
     
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 헤더 서치토글 옆에 토글 버튼 삽입
-      var searchToggle = document.querySelector('.search__toggle, .search-toggle');
-      if (searchToggle) {
-        var btn = document.createElement('button');
-        btn.className = 'dark-light-toggle';
-        btn.id = 'darkLightToggle';
-        btn.title = '테마 변경';
-        btn.innerHTML = `
-          <span class="icon30 sun">☀️</span>
-          <span class="icon30 moon">🌙</span>
-        `;
-        searchToggle.parentNode.insertBefore(btn, searchToggle.nextSibling);
-      }
       // 테마 상태 관리
       const html = document.documentElement;
       const toggleBtn = document.getElementById('darkLightToggle');
