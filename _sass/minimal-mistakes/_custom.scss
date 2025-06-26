@@ -11,8 +11,6 @@ body[data-theme="dark"] {
     --code-bg: #1e1e2e;
     --code-text: #f8f8f2;
     --hover-bg: rgba(168,85,247,0.1);
-    --nav-hover-bg: var(--accent-primary);
-    --nav-hover-text: var(--bg-primary);
 }
 
 body[data-theme="light"] {
@@ -27,8 +25,6 @@ body[data-theme="light"] {
     --code-bg: #f7f7f7;
     --code-text: #2d3748;
     --hover-bg: rgba(124,58,237,0.08);
-    --nav-hover-bg: var(--accent-primary);
-    --nav-hover-text: #ffffff;
 }
 
 /* 전체 배경 - CSS 변수 사용 */
@@ -45,7 +41,7 @@ body {
 /* 카드/사이드바/포스트 - 더 높은 대비와 명확한 구분 */
 .card, .about-me, .notice, blockquote {
     background: var(--card-bg);
-    padding: auto;
+    padding: 1em;
     border-radius: 18px;
     box-shadow: 0 6px 32px rgba(0,0,0,0.15);
     border: 1px solid var(--border-color);
@@ -193,9 +189,9 @@ code:not(pre code) {
     text-decoration: none;
 }
 .greedy-nav a:hover, .masthead__menu a:hover {
-    background: var(--nav-hover-bg);
-    color: var(--nav-hover-text);
-    transform: translateY(-1px);
+    background: transparent;
+    color: var(--text-primary);
+    transform: none !important;
 }
 
 .btn, .button {
