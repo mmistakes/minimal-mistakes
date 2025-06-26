@@ -26,3 +26,37 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<!-- 테마 토글 버튼 -->
+<button class="theme-toggle" id="theme-toggle" title="테마 변경">
+  🌙
+</button>
+
+<script>
+// 테마 토글 기능
+document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  
+  // 저장된 테마 불러오기
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+  updateThemeIcon(savedTheme);
+  
+  // 토글 버튼 클릭 이벤트
+  themeToggle.addEventListener('click', function() {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+  });
+  
+  // 아이콘 업데이트 함수
+  function updateThemeIcon(theme) {
+    const icon = theme === 'light' ? '🌙' : '☀️';
+    themeToggle.textContent = icon;
+  }
+});
+</script>
