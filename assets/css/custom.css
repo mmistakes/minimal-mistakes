@@ -1,7 +1,7 @@
 /* Make avatar rectangular and larger */
 .sidebar .author__avatar img {
   border-radius: 0;        /* removes the circle (was 50%) */
-  width: 160px;            /* increase size (default ~100px) */
+  width: 229 px;            /* increase size (default ~100px) */
   height: auto;            /* maintain aspect ratio */
   box-shadow: none;        /* optional: remove shadow */
 }
