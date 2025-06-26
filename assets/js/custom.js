@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Function to apply theme
     function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+        document.body.setAttribute('data-theme', theme);
         if (themeSwitch) {
             themeSwitch.setAttribute('data-theme', theme);
         }
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function switchTheme(e) {
         let newTheme;
-        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        if (document.body.getAttribute('data-theme') === 'dark') {
             newTheme = 'light';
         } else {
             newTheme = 'dark';

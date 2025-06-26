@@ -1,5 +1,5 @@
 /* 전체 배경 - 다크/라이트 테마 변수 */
-html {
+body {
     --bg-primary: #181824;
     --bg-secondary: #23243a;
     --text-primary: #f3f3fa;
@@ -12,7 +12,7 @@ html {
     --code-text: #e8e8f8;
 }
 
-html[data-theme="light"] {
+body[data-theme="light"] {
     --bg-primary: #f8f9fa;
     --bg-secondary: #ffffff;
     --text-primary: #2c3e50;
