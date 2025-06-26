@@ -279,10 +279,12 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      color: var(--text-primary);
+      transition: color 0.2s, background 0.2s;
 
       &:hover {
-        color: $masthead-link-color-hover;
-        background: $navicon-link-color-hover;
+        color: var(--accent-primary);
+        background: var(--hover-bg);
       }
     }
 
