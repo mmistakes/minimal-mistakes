@@ -20,6 +20,12 @@
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
               >{{ link.title }}</a>
+              {% if link.title == 'Search' %}
+                <button class="dark-light-toggle" id="darkLightToggle" title="테마 변경">
+                  <span class="icon30 sun">☀️</span>
+                  <span class="icon30 moon">🌙</span>
+                </button>
+              {% endif %}
             </li>
           {%- endfor -%}
         </ul>

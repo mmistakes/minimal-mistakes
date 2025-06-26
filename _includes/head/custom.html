@@ -71,9 +71,9 @@
     
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 헤더 Search 메뉴 옆에 토글 버튼 삽입
-      var searchMenu = document.querySelector('.nav-search-link');
-      if (searchMenu) {
+      // 헤더 서치토글 옆에 토글 버튼 삽입
+      var searchToggle = document.querySelector('.search__toggle, .search-toggle');
+      if (searchToggle) {
         var btn = document.createElement('button');
         btn.className = 'dark-light-toggle';
         btn.id = 'darkLightToggle';
@@ -82,7 +82,7 @@
           <span class="icon30 sun">☀️</span>
           <span class="icon30 moon">🌙</span>
         `;
-        searchMenu.parentNode.insertBefore(btn, searchMenu.nextSibling);
+        searchToggle.parentNode.insertBefore(btn, searchToggle.nextSibling);
       }
       // 테마 상태 관리
       const html = document.documentElement;
