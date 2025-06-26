@@ -607,3 +607,76 @@ body.error404 .page__footer {
 .archive__subtitle {
   color: var(--text-secondary);
 }
+
+/* 상단 고정 검색바 */
+.search-bar-fixed {
+  position: fixed;
+  top: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1200;
+  width: 420px;
+  max-width: 90vw;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+  border: 1.5px solid var(--border-color);
+  padding: 0.5em 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  transition: all 0.3s;
+}
+
+.search-bar-fixed .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 1.1em;
+  width: 100%;
+  padding: 0.4em 0;
+}
+
+.search-bar-fixed .search-icon {
+  color: var(--accent-primary);
+  font-size: 1.3em;
+}
+
+@media (max-width: 600px) {
+  .search-bar-fixed {
+    width: 98vw;
+    padding: 0.3em 0.6em;
+  }
+}
+
+/* 검색 결과 카드 스타일 */
+.results {
+  margin-top: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.list__item {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  border: 1px solid var(--border-color);
+  padding: 1em 1.2em;
+  transition: box-shadow 0.2s;
+}
+.list__item:hover {
+  box-shadow: 0 6px 24px rgba(124,58,237,0.10);
+}
+
+.archive__item-title a {
+  color: var(--accent-primary) !important;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+.archive__item-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.98em;
+  margin-top: 0.3em;
+}
