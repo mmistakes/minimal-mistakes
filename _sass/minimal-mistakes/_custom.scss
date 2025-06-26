@@ -50,6 +50,9 @@ body {
 .sidebar {
   margin-top: 2.2em;
   padding: 2.2em 1.5em;
+  float: left;
+}
+.archive__item, .page__content {
 }
 
 /* 프로필 아바타 - 심플 원형, subtle border */
@@ -209,6 +212,12 @@ code:not(pre code) {
 
 /* 반응형 개선 */
 @media (max-width: 900px) {
+  .sidebar, .archive {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .sidebar, .card, .archive__item, .page__content, .about-me, .notice, blockquote {
     padding: 1.2em 0.8em;
   }
