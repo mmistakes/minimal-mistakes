@@ -6,7 +6,7 @@ body[data-theme="dark"] {
     --text-secondary: #d1d5db;
     --accent-primary: #a855f7;
     --accent-secondary: #7c3aed;
-    --card-bg: rgba(255,255,255,0.12);
+    --card-bg: rgba(255, 255, 255, 0.12);
     --border-color: rgba(200,200,255,0.15);
     --code-bg: #1e1e2e;
     --code-text: #f8f8f2;
@@ -21,7 +21,7 @@ body[data-theme="light"] {
     --text-secondary: #4a5568;
     --accent-primary: #7c3aed;
     --accent-secondary: #a855f7;
-    --card-bg: rgba(0,0,0,0.05);
+    --card-bg: rgba(255, 255, 255, 0.986);
     --border-color: rgba(0,0,0,0.12);
     --code-bg: #f7f7f7;
     --code-text: #2d3748;
@@ -97,6 +97,16 @@ body[data-theme="light"] .page__hero--overlay {
 .toc a:hover { 
     color: var(--accent-secondary);
     text-decoration: underline;
+}
+
+.toc__menu a {
+    border-bottom: 1.5px solid var(--border-color);
+    display: block;
+    padding: 0.3em 0;
+    transition: border-color 0.2s;
+}
+.toc__menu a:last-child {
+    border-bottom: none;
 }
 
 /* 코드 블록 - 더 높은 대비와 가독성 */
@@ -267,7 +277,9 @@ code:not(pre code) {
     float: inline-start;
     margin-inline: 0;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 0.8em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     color: var(--text-secondary);
     background: linear-gradient(90deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     border-top: 2px solid var(--border-color);
@@ -280,9 +292,9 @@ code:not(pre code) {
 .page__footer footer {
     @include clearfix;
     margin-inline: auto;
-    margin-top: 1em;
+    margin-top: 0.2em;
+    padding: 0 1em 0.5em;
     max-width: 100%;
-    padding: 0 1em 1em;
     @include breakpoint($x-large) { max-width: $x-large; }
 }
 
@@ -572,4 +584,22 @@ a, button, .greedy-nav a, .masthead__menu a, .theme-switch-vertical .switch-slid
 .pagination li:first-child a,
 .pagination li:last-child a {
   border-radius: 8px;
+}
+
+body.error404 .masthead,
+body.error404 .page__footer {
+  display: none !important;
+}
+
+.page__meta, .page__share, .page__comments {
+  color: var(--text-secondary);
+}
+
+.page__meta a, .page__share a, .page__comments a {
+  color: var(--accent-primary);
+  transition: color 0.2s;
+}
+
+.page__meta a:hover, .page__share a:hover, .page__comments a:hover {
+  color: var(--accent-secondary);
 }
