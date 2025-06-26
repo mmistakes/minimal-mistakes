@@ -177,7 +177,6 @@ code:not(pre code) {
 /* 네비게이션/버튼/링크 - 더 명확한 시각적 피드백 */
 .masthead, .greedy-nav {
     background: color-mix(in srgb, var(--bg-primary) 95%, transparent);
-    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     backdrop-filter: blur(12px);
 }
