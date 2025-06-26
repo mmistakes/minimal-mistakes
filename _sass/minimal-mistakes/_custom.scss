@@ -52,7 +52,10 @@ body {
   padding: 2.2em 1.5em;
   float: left;
 }
-.archive__item, .page__content {
+
+.archive {
+  float: right;
+  /* width는 _archive.scss에서 제어 */
 }
 
 /* 프로필 아바타 - 심플 원형, subtle border */
