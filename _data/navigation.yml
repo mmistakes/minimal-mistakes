@@ -9,7 +9,7 @@ main:
   - title: "Tags"
     url: /tags/
   - title: "Years"
-    url: /year-archive/
+    url: /year-archive-grid/
   - title: "Search"
     url: /search/
   # - title: "Sample Collections"
