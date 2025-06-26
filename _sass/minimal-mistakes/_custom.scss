@@ -44,7 +44,6 @@ body {
     border-radius: 18px;
     box-shadow: 0 6px 32px rgba(0,0,0,0.15);
     border: 1px solid var(--border-color);
-    padding: 2.2em 1.7em;
     margin-bottom: 2.2em;
     color: var(--text-primary);
     transition: all 0.3s ease;
@@ -58,19 +57,11 @@ body {
     backdrop-filter: blur(10px);
 }
 
-body[data-theme="light"] .sidebar,
-body[data-theme="light"] .card,
-body[data-theme="light"] .archive__item,
-body[data-theme="light"] .page__content,
-body[data-theme="light"] .about-me,
-body[data-theme="light"] .notice,
-body[data-theme="light"] blockquote {
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-}
-
 .sidebar {
     margin-top: 2.2em;
     padding: 2.2em 1.5em;
+    transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 /* 프로필 아바타 - 더 선명한 테두리 */
@@ -203,10 +194,11 @@ code:not(pre code) {
     transition: all 0.2s ease;
     text-decoration: none;
 }
-.greedy-nav a:hover {
-    background: var(--accent-primary);
-    color: var(--bg-primary);
-    transform: translateY(-1px);
+.greedy-nav a:hover, .masthead__menu a:hover {
+    background: transparent;
+    color: var(--text-primary);
+    text-decoration: underline;
+    transform: none !important;
 }
 
 .btn, .button {
