@@ -98,10 +98,6 @@ body[data-theme="light"] .page__hero--overlay {
 .toc {
     background: var(--card-bg);
     border-left: 4px solid var(--accent-primary);
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    padding: 1.2em 1.5em;
-    margin-bottom: 2em;
     font-size: 0.98em;
     backdrop-filter: blur(8px);
 }
