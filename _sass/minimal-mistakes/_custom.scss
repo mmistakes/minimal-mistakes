@@ -482,10 +482,7 @@ code:not(pre code) {
 }
 
 .masthead {
-  background: rgba(26,26,46,0.95);
-  border-bottom: 1.5px solid var(--accent-primary);
-  box-shadow: 0 2px 8px rgba(154,67,198,0.06);
-  padding: 0.5em 0 !important;
+  padding: 0 !important;
   min-height: auto !important;
 }
 
@@ -523,4 +520,86 @@ code:not(pre code) {
 .archive__item-title a:hover, .post-list a:hover, .post-title a:hover, .page__title a:hover {
   color: var(--accent-secondary) !important;
   text-decoration: underline;
+}
+
+/* archive 영역 우측 하단 고정 토글 스위치 */
+.theme-switch-vertical {
+  position: fixed;
+  right: 2.2rem;
+  bottom: 2.2rem;
+  z-index: 1200;
+  width: 60px;
+  height: 120px;
+  background: #44454a;
+  border-radius: 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  transition: background 0.3s;
+}
+.theme-switch-vertical .icon {
+  font-size: 2em;
+  color: #bdbde6;
+  transition: color 0.3s, filter 0.3s;
+}
+.theme-switch-vertical .switch-slider {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 8px #7c3aed55;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.theme-switch-vertical[data-theme="light"] .switch-slider {
+  background: #ffd700;
+  box-shadow: 0 2px 8px #ffd70055;
+}
+.theme-switch-vertical[data-theme="light"] .icon.sun {
+  color: #ffd700;
+  filter: drop-shadow(0 0 4px #ffd70088);
+}
+.theme-switch-vertical[data-theme="dark"] .icon.moon {
+  color: #c6aeff;
+  filter: drop-shadow(0 0 4px #7c3aed88);
+}
+.theme-switch-vertical .switch-slider .icon {
+  color: #fff;
+  font-size: 2em;
+  transition: color 0.3s;
+}
+
+/* 슬라이드 애니메이션 */
+.theme-switch-vertical .switch-slider {
+  transform: translateY(0);
+}
+.theme-switch-vertical[data-theme="light"] .switch-slider {
+  transform: translateY(-48px);
+}
+.theme-switch-vertical[data-theme="dark"] .switch-slider {
+  transform: translateY(48px);
+}
+
+@media (max-width: 900px) {
+  .theme-switch-vertical {
+    right: 1rem;
+    bottom: 1rem;
+    width: 48px;
+    height: 90px;
+    padding: 10px 0;
+  }
+  .theme-switch-vertical .icon, .theme-switch-vertical .switch-slider .icon {
+    font-size: 1.3em;
+  }
+  .theme-switch-vertical .switch-slider {
+    width: 32px;
+    height: 32px;
+  }
 }
