@@ -11,6 +11,8 @@ body[data-theme="dark"] {
     --code-bg: #1e1e2e;
     --code-text: #f8f8f2;
     --hover-bg: rgba(168,85,247,0.1);
+    --nav-hover-bg: var(--accent-primary);
+    --nav-hover-text: var(--bg-primary);
 }
 
 body[data-theme="light"] {
@@ -25,6 +27,8 @@ body[data-theme="light"] {
     --code-bg: #f7f7f7;
     --code-text: #2d3748;
     --hover-bg: rgba(124,58,237,0.08);
+    --nav-hover-bg: var(--accent-primary);
+    --nav-hover-text: #ffffff;
 }
 
 /* 전체 배경 - CSS 변수 사용 */
@@ -189,10 +193,9 @@ code:not(pre code) {
     text-decoration: none;
 }
 .greedy-nav a:hover, .masthead__menu a:hover {
-    background: transparent;
-    color: var(--text-primary);
-    text-decoration: underline;
-    transform: none !important;
+    background: var(--nav-hover-bg);
+    color: var(--nav-hover-text);
+    transform: translateY(-1px);
 }
 
 .btn, .button {
