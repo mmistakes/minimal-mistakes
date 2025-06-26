@@ -102,7 +102,7 @@ body[data-theme="light"] .page__hero--overlay {
 .toc__menu a {
     border-bottom: 1.5px solid var(--border-color);
     display: block;
-    padding: 0.3em 0;
+    padding: 0.3em 0.3em;
     transition: border-color 0.2s;
 }
 .toc__menu a:last-child {

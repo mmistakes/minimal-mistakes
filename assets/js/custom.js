@@ -44,4 +44,18 @@ document.addEventListener('DOMContentLoaded', function () {
             themeSwitch.addEventListener('click', switchTheme, false);
         }
     }
+
+    var navSearch = document.querySelector('.nav-search-link');
+    var overlay = document.getElementById('searchOverlay');
+    var input = document.querySelector('.search-overlay__form .search-input');
+    if(navSearch && overlay) {
+        navSearch.addEventListener('click', function(e) {
+            e.preventDefault();
+            overlay.style.display = 'flex';
+            setTimeout(function() {
+                input && input.focus();
+            }, 200);
+            document.body.style.overflow = 'hidden';
+        });
+    }
 }); 
