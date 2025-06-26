@@ -39,8 +39,9 @@ body {
 }
 
 /* 카드/사이드바/포스트 - 더 높은 대비와 명확한 구분 */
-.sidebar, .card, .archive__item, .about-me, .notice, blockquote {
+.card, .archive__item, .about-me, .notice, blockquote {
     background: var(--card-bg);
+    padding: auto;
     border-radius: 18px;
     box-shadow: 0 6px 32px rgba(0,0,0,0.15);
     border: 1px solid var(--border-color);
@@ -55,13 +56,6 @@ body {
     color: var(--text-primary);
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-}
-
-.sidebar {
-    margin-top: 2.2em;
-    padding: 2.2em 1.5em;
-    transition: all 0.2s ease;
-    text-decoration: none;
 }
 
 /* 프로필 아바타 - 더 선명한 테두리 */
