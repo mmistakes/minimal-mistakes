@@ -51,8 +51,6 @@ body {
   margin-top: 2.2em;
   padding: 2.2em 1.5em;
 }
-.archive__item, .page__content {
-}
 
 /* 프로필 아바타 - 심플 원형, subtle border */
 .author__avatar {
@@ -211,11 +209,8 @@ code:not(pre code) {
 
 /* 반응형 개선 */
 @media (max-width: 900px) {
-  .sidebar, .archive, .archive__item, .page__content {
-    width: 100% !important;
-    float: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .sidebar, .card, .archive__item, .page__content, .about-me, .notice, blockquote {
+    padding: 1.2em 0.8em;
   }
   .page__title { font-size: 1.3em; }
   .greedy-nav a, .masthead__menu a { padding: 0.5em 0.7em; font-size: 1em; }
@@ -607,20 +602,4 @@ code:not(pre code) {
     width: 32px;
     height: 32px;
   }
-}
-
-
-/* post(상세) 페이지에서만 .page__content 배경/테두리/그림자/여백 제거 */
-body.layout-single .page__content,
-body.layout-post .page__content {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* 주요 인터랙션에만 부드러운 전동 효과 */
-a, button, .greedy-nav a, .masthead__menu a, .theme-switch-vertical .switch-slider {
-  transition: color 0.18s, background 0.18s, box-shadow 0.18s, transform 0.18s;
 }
