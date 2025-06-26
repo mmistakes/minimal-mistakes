@@ -70,7 +70,7 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia, google
+search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "SEO GYUMIN"
-  avatar           : #"/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "꾸준히 노력하는 개발자입니다! 데이터와 인공지능을 사랑합니다."
   location         : "South Korea"
   email            : "your@email.com"
@@ -125,40 +125,25 @@ author:
     - label: "PortFolio Website"
       icon: "fas fa-fw fa-link"
       url: "https://codgm-portfolio.vercel.app/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Codgm"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/02_gyuO"
+      url: "https://instagram.com/02_gyu0"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Codgm"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url: "https://github.com/Codgm"
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/02_gyu0"
 
 
 # Reading Files

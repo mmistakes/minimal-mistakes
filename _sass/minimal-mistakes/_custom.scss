@@ -189,6 +189,7 @@ code:not(pre code) {
     border-radius: 8px;
     transition: all 0.2s ease;
     text-decoration: none;
+    font-size: 0.92em;
 }
 .greedy-nav a:hover, .masthead__menu a:hover {
     background: transparent;
@@ -213,7 +214,10 @@ code:not(pre code) {
 }
 
 /* SNS 아이콘 - 더 명확한 호버 효과 */
-.social-icons .fa {
+.social-icons .fab,
+.social-icons .fas,
+.social-icons .far,
+.social-icons .fal {
     color: var(--text-secondary);
     font-size: 1.3em;
     padding: 12px;
@@ -223,7 +227,10 @@ code:not(pre code) {
     transition: all 0.2s ease;
     border: 1px solid var(--border-color);
 }
-.social-icons .fa:hover {
+.social-icons .fab:hover,
+.social-icons .fas:hover,
+.social-icons .far:hover,
+.social-icons .fal:hover {
     color: var(--bg-primary);
     background: var(--accent-primary);
     transform: translateY(-2px);
@@ -274,7 +281,7 @@ code:not(pre code) {
     background: linear-gradient(90deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     border-top: 2px solid var(--border-color);
     box-shadow: 0 -2px 16px rgba(0,0,0,0.1);
-    font-size: 0.9em;
+    font-size: 0.85em;
     letter-spacing: 0.01em;
     transition: all 0.3s ease;
 }
