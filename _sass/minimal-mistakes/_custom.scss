@@ -36,6 +36,52 @@ body {
   transition: all 0.3s ease;
 }
 
+/* 사이드바 - sidebar에만 적용 */
+.sidebar {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,26,46,0.10);
+  border: 1px solid var(--border-color);
+  padding: 2.2em 1.5em;
+  margin-top: 2.2em;
+  margin-bottom: 2.2em;
+  width: 100%;
+}
+
+/* 포스트 카드 - archive__item에만 적용 */
+.archive__item {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,26,46,0.10);
+  border: 1px solid var(--border-color);
+  padding: 2.2em 1.7em;
+  margin-bottom: 2.2em;
+  color: var(--text-primary);
+  width: 100%;
+}
+
+/* 본문 - page__content에만 적용 */
+.page__content {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(26,26,46,0.10);
+  border: 1px solid var(--border-color);
+  padding: 2.2em 1.7em;
+  margin-bottom: 2.2em;
+  color: var(--text-primary);
+  width: 100%;
+}
+
+/* 상세 페이지에서만 .page__content 배경/테두리/그림자/여백 제거 */
+body.layout-single .page__content,
+body.layout-post .page__content {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* 카드/사이드바/포스트 - 밝은 반투명 배경, 그림자, 여백 */
 .sidebar, .card, .archive__item, .page__content, .about-me, .notice, blockquote {
   background: var(--card-bg);
@@ -602,16 +648,6 @@ code:not(pre code) {
     width: 32px;
     height: 32px;
   }
-}
-
-/* post(상세) 페이지에서만 .page__content 배경/테두리/그림자/여백 제거 */
-body.layout-single .page__content,
-body.layout-post .page__content {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
 /* 주요 인터랙션에만 부드러운 전동 효과 */
