@@ -39,12 +39,19 @@ body {
 }
 
 /* 카드/사이드바/포스트 - 더 높은 대비와 명확한 구분 */
-.sidebar, .card, .archive__item, .page__content, .about-me, .notice, blockquote {
+.sidebar, .card, .archive__item, .about-me, .notice, blockquote {
     background: var(--card-bg);
     border-radius: 18px;
     box-shadow: 0 6px 32px rgba(0,0,0,0.15);
     border: 1px solid var(--border-color);
     padding: 2.2em 1.7em;
+    margin-bottom: 2.2em;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.page__content blockquote {
     margin-bottom: 2.2em;
     color: var(--text-primary);
     transition: all 0.3s ease;
