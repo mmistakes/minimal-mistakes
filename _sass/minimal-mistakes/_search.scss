@@ -51,26 +51,32 @@
   }
 
   &__form {
-    background-color: transparent;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 1px solid var(--border-color);
+    padding: 0.3em 1em 0.3em 1em;
+    margin: 0.5em 0 0.7em 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    min-height: 38px;
+    transition: all 0.2s;
   }
 
   .search-input {
-    display: block;
-    margin-bottom: 0;
-    padding: 0;
+    background: transparent;
+    color: var(--text-primary);
     border: none;
     outline: none;
-    box-shadow: none;
-    background-color: transparent;
-    font-size: $type-size-3;
+    font-size: 1.05em;
+    width: 100%;
+    padding: 0.2em 0;
+  }
 
-    @include breakpoint($large) {
-      font-size: $type-size-2;
-    }
-
-    @include breakpoint($x-large) {
-      font-size: $type-size-1;
-    }
+  .search-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.8;
   }
 
   &.is--visible {
