@@ -43,7 +43,7 @@ body {
 }
 
 /* 카드/사이드바/포스트 - 더 높은 대비와 명확한 구분 */
-.card, .archive__item, .about-me, .notice, blockquote {
+.card, .about-me, .notice, blockquote {
     background: var(--card-bg);
     padding: auto;
     border-radius: 18px;
