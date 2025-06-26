@@ -1,71 +1,325 @@
-// 전체 배경 그라데이션
+/* 전체 배경 - 다크 모드 친화적 그라데이션 */
 body {
-  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   min-height: 100vh;
+  color: #e8e8e8;
+  font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-// 카드(사이드바) 스타일
+/* 카드(사이드바) - 글라스모피즘 효과 */
 .sidebar {
-  background: rgba(255,255,255,0.95);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(67,198,172,0.15);
-  padding: 24px 18px;
+  background: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  padding: 32px 24px;
   margin-top: 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// 프로필 아바타 둥글게 + 그림자
+.sidebar:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(100, 255, 218, 0.1);
+}
+
+/* 프로필 아바타 - 네온 효과 */
 .author__avatar {
   border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(67,198,172,0.3);
-  border: 4px solid #43c6ac;
+  box-shadow: 
+    0 0 20px rgba(100, 255, 218, 0.3),
+    0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(100, 255, 218, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-// 헤더 이미지 오버레이
+.author__avatar::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #64ffda, #7c4dff, #ff4081, #64ffda);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.author__avatar:hover::before {
+  opacity: 1;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 헤더 이미지 오버레이 - 코딩 테마 */
 .page__hero--overlay {
-  background: linear-gradient(135deg, rgba(67,198,172,0.5), rgba(248,255,174,0.5));
+  background: linear-gradient(
+    135deg, 
+    rgba(15, 15, 35, 0.9), 
+    rgba(124, 77, 255, 0.2),
+    rgba(100, 255, 218, 0.1)
+  );
+  position: relative;
 }
 
-// 포스트 제목 폰트/색상
+.page__hero--overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(100, 255, 218, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(124, 77, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* 포스트 제목 - 개발자 스타일 타이포그래피 */
 .page__title {
-  font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
-  color: #43c6ac;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', monospace;
+  background: linear-gradient(135deg, #64ffda 0%, #7c4dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 30px rgba(100, 255, 218, 0.5);
+  position: relative;
 }
 
-// 목차(TOC) 스타일
+.page__title::after {
+  content: '_';
+  animation: blink 1s infinite;
+  color: #64ffda;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* 목차(TOC) - 터미널 스타일 */
 .toc {
-  background: #fffbe7;
-  border-left: 4px solid #43c6ac;
+  background: rgba(15, 15, 35, 0.9);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-left: 4px solid #64ffda;
   border-radius: 12px;
-  padding: 16px 20px;
+  padding: 20px 24px;
   margin-bottom: 32px;
-  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
 }
 
-// 코드 블록 강조
+.toc::before {
+  content: '$ tree ./contents';
+  color: #64ffda;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.toc a {
+  color: #e8e8e8;
+  transition: color 0.2s ease;
+}
+
+.toc a:hover {
+  color: #64ffda;
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
+}
+
+/* 코드 블록 - VS Code 다크 테마 */
 .highlight, pre, code {
-  background: #232526 !important;
-  color: #f8ffae !important;
-  border-radius: 8px;
-  font-family: 'Fira Mono', 'Nanum Gothic Coding', monospace;
+  background: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  border-radius: 12px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', monospace;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
 }
 
-// 공지/인용/경고 박스 스타일
+.highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.highlight::after {
+  content: '●●●';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  color: #ff5f56;
+  font-size: 12px;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+/* 인라인 코드 */
+code:not(pre code) {
+  background: rgba(100, 255, 218, 0.1) !important;
+  color: #64ffda !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* 공지/인용/경고 박스 - 개발자 알림 스타일 */
 .notice, blockquote {
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(67,198,172,0.08);
-  background: #e0fff7;
-  border-left: 6px solid #43c6ac;
-  padding: 16px 24px;
-  color: #222;
+  background: rgba(26, 26, 46, 0.6);
+  border-left: 4px solid #ffd700;
+  padding: 20px 24px;
+  margin: 24px 0;
+  color: #e8e8e8;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
 }
 
-// SNS 아이콘 컬러 강조
-.social-icons .fa {
-  color: #43c6ac;
-  transition: color 0.2s;
+.notice::before {
+  content: '⚠️';
+  position: absolute;
+  top: 16px;
+  left: -2px;
+  font-size: 18px;
 }
+
+.notice--info {
+  border-left-color: #64ffda;
+}
+
+.notice--info::before {
+  content: 'ℹ️';
+}
+
+.notice--warning {
+  border-left-color: #ff9800;
+}
+
+.notice--danger {
+  border-left-color: #f44336;
+}
+
+.notice--danger::before {
+  content: '🚨';
+}
+
+/* SNS 아이콘 - 네온 효과 */
+.social-icons .fa {
+  color: #64ffda;
+  font-size: 1.4em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(100, 255, 218, 0.1);
+  margin: 4px;
+}
+
 .social-icons .fa:hover {
-  color: #f8ffae;
-} 
+  color: #ffffff;
+  background: rgba(100, 255, 218, 0.2);
+  box-shadow: 
+    0 0 20px rgba(100, 255, 218, 0.4),
+    0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* 네비게이션 개선 */
+.masthead {
+  background: rgba(15, 15, 35, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.greedy-nav a {
+  color: #e8e8e8;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.greedy-nav a:hover {
+  color: #64ffda;
+  background: rgba(100, 255, 218, 0.1);
+  text-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
+}
+
+/* 포스트 카드 효과 */
+.archive__item {
+  background: rgba(26, 26, 46, 0.6);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(100, 255, 218, 0.1);
+}
+
+/* 스크롤바 커스터마이징 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 35, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 255, 218, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 255, 218, 0.5);
+}
+
+/* 반응형 디자인 개선 */
+@media (max-width: 768px) {
+  .sidebar {
+    margin-top: 16px;
+    padding: 24px 20px;
+  }
+  
+  .page__title {
+    font-size: 1.8em;
+  }
+  
+  .social-icons .fa {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+}
