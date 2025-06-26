@@ -11,6 +11,7 @@ body[data-theme="dark"] {
     --code-bg: #1e1e2e;
     --code-text: #f8f8f2;
     --hover-bg: rgba(168,85,247,0.1);
+    --pagination-hover-text: var(--bg-primary);
 }
 
 body[data-theme="light"] {
@@ -25,6 +26,7 @@ body[data-theme="light"] {
     --code-bg: #f7f7f7;
     --code-text: #2d3748;
     --hover-bg: rgba(124,58,237,0.08);
+    --pagination-hover-text: #ffffff;
 }
 
 /* 전체 배경 - CSS 변수 사용 */
@@ -534,4 +536,42 @@ a, button, .greedy-nav a, .masthead__menu a, .theme-switch-vertical .switch-slid
 ::-moz-selection {
     background: var(--accent-primary);
     color: var(--bg-primary);
+}
+
+/* Pagination 테마 적용 */
+.pagination li a {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 0 0.2em;
+  transition: all 0.2s ease;
+}
+
+.pagination li a:hover {
+  background: var(--accent-primary);
+  color: var(--pagination-hover-text);
+  border-color: var(--accent-primary);
+}
+
+.pagination li a.current,
+.pagination li a.current.disabled {
+  background: var(--accent-primary);
+  color: var(--pagination-hover-text); /* Use the same as hover for consistency */
+  border-color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.pagination li a.disabled {
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* _navigation.scss의 radius 초기화 */
+.pagination li:first-child a,
+.pagination li:last-child a {
+  border-radius: 8px;
 }
