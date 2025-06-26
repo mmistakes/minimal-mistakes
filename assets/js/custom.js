@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function switchTheme(e) {
-        const target = e.currentTarget;
         let newTheme;
         if (document.documentElement.getAttribute('data-theme') === 'dark') {
             newTheme = 'light';
@@ -35,12 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     if (themeSwitch) {
-        // This is a more complex switch, let's assume clicking the container toggles it.
-        // I see a .switch-slider inside, maybe that's the real button
         const slider = themeSwitch.querySelector('.switch-slider');
         if (slider) {
             slider.addEventListener('click', (e) => {
-                e.stopPropagation(); // prevent double-triggering if event bubbles to container
+                e.stopPropagation();
                 switchTheme({ currentTarget: themeSwitch });
             });
         } else {
