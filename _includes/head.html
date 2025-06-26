@@ -67,11 +67,11 @@
 }
 .sun {
   animation: rise-animation 1s forwards;
-  transform-origin: 60% 150%
+  transform-origin: 50% 200%
 }
 .moon {
   animation: set-animation 1s forwards;
-  transform-origin: 60% 150%;
+  transform-origin: 50% 200%;
 }
 :root[color-theme='dark'] .dark-light-toggle .sun {
   animation: set-animation 1s forwards;
@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.id = 'darkLightToggle';
     btn.title = '테마 변경';
     btn.innerHTML = `
-      <span class="icon sun">☀️</span>
-      <span class="icon moon">🌙</span>
+      <span class="icon30 sun">☀️</span>
+      <span class="icon30 moon">🌙</span>
     `;
     searchToggle.parentNode.insertBefore(btn, searchToggle.nextSibling);
   }
