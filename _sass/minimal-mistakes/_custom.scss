@@ -1,5 +1,5 @@
 /* 전체 배경 - 다크/라이트 테마 변수 */
-:root {
+html {
     --bg-primary: #181824;
     --bg-secondary: #23243a;
     --text-primary: #f3f3fa;
@@ -12,7 +12,7 @@
     --code-text: #e8e8f8;
   }
   
-  [data-theme="light"] {
+  html[data-theme="light"] {
     --bg-primary: #f8f9fa;
     --bg-secondary: #ffffff;
     --text-primary: #2c3e50;
@@ -148,7 +148,8 @@
   
   /* 네비게이션/버튼/링크 - 심플, 포인트 컬러 */
   .masthead, .greedy-nav {
-    background: rgba(26,26,46,0.95);
+    background: rgba(26,26,46,0.95); /* Fallback */
+    background: color-mix(in srgb, var(--bg-primary) 95%, transparent);
     box-shadow: 0 2px 8px rgba(154,67,198,0.06);
     transition: all 0.3s ease;
   }
@@ -221,172 +222,6 @@
     .page__title { font-size: 1.3em; }
     .greedy-nav a, .masthead__menu a { padding: 0.5em 0.7em; font-size: 1em; }
     .theme-toggle { top: 0.5rem; right: 0.5rem; width: 35px; height: 35px; font-size: 1em; }
-  }
-  
-  .greedy-nav {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: $nav-height;
-    background: $background-color;
-  
-    a {
-      display: block;
-      margin: 0 1rem;
-      color: $masthead-link-color;
-      text-decoration: none;
-      -webkit-transition: none;
-      transition: none;
-  
-      &:hover {
-        color: $masthead-link-color-hover;
-      }
-  
-      &.site-logo {
-        margin-inline-start: 0;
-        margin-inline-end: 0.5rem;
-      }
-  
-      &.site-title {
-        margin-inline-start: 0;
-      }
-    }
-  
-    img {
-      -webkit-transition: none;
-      transition: none;
-    }
-  
-    &__toggle {
-      -ms-flex-item-align: center;
-      align-self: center;
-      height: $nav-toggle-height;
-      border: 0;
-      outline: none;
-      background-color: transparent;
-      cursor: pointer;
-    }
-  
-    .visible-links {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      overflow: hidden;
-  
-      li {
-        -webkit-box-flex: 0;
-        -ms-flex: none;
-        flex: none;
-      }
-  
-      a {
-        position: relative;
-  
-        &:before {
-          content: "";
-          position: absolute;
-          inset-inline-start: 0;
-          bottom: 0;
-          height: 4px;
-          background: $primary-color;
-          width: 100%;
-          -webkit-transition: $global-transition;
-          transition: $global-transition;
-          -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-          transform: scaleX(0) translate3d(0, 0, 0); // hide
-        }
-  
-        &:hover:before {
-          -webkit-transform: scaleX(1);
-          -ms-transform: scaleX(1);
-          transform: scaleX(1); // reveal
-        }
-      }
-    }
-  
-    .hidden-links {
-      position: absolute;
-      top: 100%;
-      inset-inline-end: 0;
-      margin-top: 15px;
-      padding: 5px;
-      border: 1px solid $border-color;
-      border-radius: $border-radius;
-      background: $background-color;
-      -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
-        0 2px 10px 0 rgba(#000, 0.12);
-      box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
-  
-      &.hidden {
-        display: none;
-      }
-  
-      a {
-        margin: 0;
-        padding: 10px 20px;
-        font-size: $type-size-5;
-  
-        &:hover {
-          color: $masthead-link-color-hover;
-          background: $navicon-link-color-hover;
-        }
-      }
-  
-      &::before {
-        content: "";
-        position: absolute;
-        top: -11px;
-        inset-inline-end: 10px;
-        width: 0;
-        border-style: solid;
-        border-width: 0 10px 10px;
-        border-color: $border-color transparent;
-        display: block;
-        z-index: 0;
-      }
-  
-      &::after {
-        content: "";
-        position: absolute;
-        top: -10px;
-        inset-inline-end: 10px;
-        width: 0;
-        border-style: solid;
-        border-width: 0 10px 10px;
-        border-color: $background-color transparent;
-        display: block;
-        z-index: 1;
-      }
-  
-      li {
-        display: block;
-        border-bottom: 1px solid $border-color;
-  
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-    }
-  }
-  
-  .no-js {
-    .greedy-nav {
-      .visible-links {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        overflow: visible;
-      }
-    }
   }
   
   .page__footer {
