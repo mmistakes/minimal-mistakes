@@ -1,5 +1,5 @@
 /* 전체 배경 - 다크/라이트 테마 변수 (가독성 개선) */
-body {
+body[data-theme="dark"] {
     --bg-primary: #0f0f1a;
     --bg-secondary: #1a1b2e;
     --text-primary: #ffffff;
