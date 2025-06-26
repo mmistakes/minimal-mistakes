@@ -196,7 +196,7 @@ code:not(pre code) {
     transition: all 0.2s ease;
     text-decoration: none;
 }
-.greedy-nav a:hover, .masthead__menu a:hover {
+.greedy-nav a:hover {
     background: var(--accent-primary);
     color: var(--bg-primary);
     transform: translateY(-1px);
