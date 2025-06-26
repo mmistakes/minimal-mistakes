@@ -3,6 +3,17 @@
     var disqus_config = function () {
       this.page.url = "{{ page.url | absolute_url }}";  /* Replace PAGE_URL with your page's canonical URL variable */
       this.page.identifier = "{{ page.id }}"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      // 테마 연동: 댓글 로드 시 현재 테마 전달
+      this.callbacks.onReady = [function() {
+        var theme = document.body.getAttribute('data-theme') || 'light';
+        var iframe = document.getElementById('disqus_thread')?.querySelector('iframe');
+        if (iframe) {
+          iframe.contentWindow.postMessage({
+            type: 'set-theme',
+            theme: theme
+          }, 'https://disqus.com');
+        }
+      }];
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
@@ -10,6 +21,21 @@
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
+    // 테마 변경 시에도 동기화
+    function updateDisqusTheme(theme) {
+      var iframe = document.getElementById('disqus_thread')?.querySelector('iframe');
+      if (iframe) {
+        iframe.contentWindow.postMessage({
+          type: 'set-theme',
+          theme: theme
+        }, 'https://disqus.com');
+      }
+    }
+    var observer = new MutationObserver(function() {
+      var theme = document.body.getAttribute('data-theme') || 'light';
+      updateDisqusTheme(theme);
+    });
+    observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] });
   </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}

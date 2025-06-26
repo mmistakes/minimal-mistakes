@@ -595,12 +595,12 @@ body.error404 .page__footer {
   color: var(--text-secondary);
 }
 
-.page__meta a, .page__share a, .page__comments a {
+.page__meta a, .page__comments a {
   color: var(--accent-primary);
   transition: color 0.2s;
 }
 
-.page__meta a:hover, .page__share a:hover, .page__comments a:hover {
+.page__meta a:hover, .page__comments a:hover {
   color: var(--accent-secondary);
 }
 
