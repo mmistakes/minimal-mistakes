@@ -1,88 +1,10 @@
-<!-- HTML content to help customize Akash's Minimal Mistakes Jekyll theme -->
-<!-- File: _includes/custom-head.html or use overrides in _layouts/home.html -->
-
-<style>
-/* Using Aptos Light font from Google Fonts (substitute with similar if unavailable) */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
-
-/* Header name styling */
-.hero-title {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 2.5em;
-  margin-bottom: 0.2em;
+/* Make avatar rectangular and larger */
+.sidebar .author__avatar img {
+  border-radius: 0;        /* removes the circle (was 50%) */
+  width: 229 px;            /* increase size (default ~100px) */
+  height: auto;            /* maintain aspect ratio */
+  box-shadow: none;        /* optional: remove shadow */
 }
-
-.hero-subtitle {
-  font-size: 1.1em;
-  color: #333;
+h1.site-title {
+  font-weight: 500;
 }
-
-.education-block {
-  margin-top: 2em;
-  font-size: 1em;
-}
-.education-block .icon {
-  margin-right: 5px;
-}
-
-.author__avatar img {
-  width: 230px !important;
-  height: auto;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-/* Social Icons */
-.page__footer-follow a:hover {
-  color: #007bff !important;
-  text-shadow: 0 0 5px #007bff;
-}
-
-.page__footer {
-  padding: 10px 0;
-  font-size: 0.8em;
-}
-
-/* Hide name in nav on home */
-.site-title {
-  display: none;
-}
-.page.home .site-title {
-  display: none;
-}
-.page:not(.home) .site-title {
-  display: inline-block;
-}
-
-/* Hover link style */
-a.subhojoy-link {
-  color: #0066cc;
-  text-decoration: none;
-}
-a.subhojoy-link:hover {
-  text-decoration: underline;
-}
-</style>
-
-<!-- Custom HTML in homepage layout (_layouts/home.html or _pages/index.md) -->
-<div class="hero">
-  <h1 class="hero-title">Akash Sudhanshu</h1>
-  <div class="hero-subtitle">
-    <p>Mathematics Master's student, Indian Institute of Science (IISc), Bangalore</p>
-    <p>Hi there! I’m Akash, a Master's candidate majoring in Mathematics at IISc, Bangalore, working in low-dimensional topology and geometry. I am being advised by <a href="https://math.iisc.ac.in/~sgupta/" class="subhojoy-link">Prof. Subhojoy Gupta</a>.</p>
-    <p>My research interest lies in Teichmüller spaces, their metric structures, and Riemann surfaces. I've worked on the Bounded Distortion Conjecture proposed by R.C. Penner, quasiconformal maps, and the Weil-Petersson metric. I am currently learning about various aspects of Teichmüller theory and computational methods in quasiconformal geometry.</p>
-  </div>
-  <div class="education-block">
-    <p>🎓 <strong>BSc. (Research), Major in Mathematics</strong><br>
-       Indian Institute of Science, Bangalore</p>
-  </div>
-</div>
-
-<!-- Social Icons Section -->
-<div style="margin-top: 20px;">
-  <a href="https://www.linkedin.com/in/akash-sudhanshu-b79408222/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/akashsudhanshu" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="mailto:akashsudhans@iisc.ac.in" target="_blank"><i class="fas fa-envelope"></i></a>
-  <a href="https://www.instagram.com/akash_sudhanshu/" target="_blank"><i class="fab fa-instagram"></i></a>
-</div>
