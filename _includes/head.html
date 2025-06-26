@@ -27,36 +27,102 @@
   {% endfor %}
 {% endif %}
 
-<!-- 테마 토글 버튼 -->
-<button class="theme-toggle" id="theme-toggle" title="테마 변경">
-  🌙
-</button>
+<!-- eggjini 스타일 테마 토글 스위치 -->
+<style>
+.theme-switch {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.theme-switch input {
+  display: none;
+}
+.theme-switch-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: var(--bg-secondary, #23243a);
+  border-radius: 999px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 1.5px solid var(--accent-primary, #c6aeff);
+  transition: background 0.3s, border 0.3s;
+}
+.theme-switch .icon {
+  font-size: 1.2em;
+  transition: transform 0.3s, color 0.3s;
+  margin: 0 2px;
+}
+.theme-switch .slider {
+  width: 32px;
+  height: 20px;
+  background: var(--bg-primary, #181824);
+  border-radius: 999px;
+  margin: 0 6px;
+  position: relative;
+  transition: background 0.3s;
+}
+.theme-switch .slider::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-primary, #c6aeff);
+  box-shadow: 0 2px 8px rgba(154,67,198,0.10);
+  transition: left 0.3s, background 0.3s;
+}
+.theme-switch input:checked + .theme-switch-label .slider::before {
+  left: 14px;
+  background: var(--accent-secondary, #9a43c6);
+}
+.theme-switch input:checked + .theme-switch-label .icon.sun {
+  color: var(--accent-secondary, #9a43c6);
+  transform: translateX(10px) scale(1.1);
+}
+.theme-switch input:checked + .theme-switch-label .icon.moon {
+  color: var(--accent-primary, #c6aeff);
+  transform: translateX(-10px) scale(0.95);
+}
+.theme-switch .icon.sun {
+  color: var(--accent-primary, #c6aeff);
+  transition: transform 0.3s, color 0.3s;
+}
+.theme-switch .icon.moon {
+  color: var(--accent-secondary, #9a43c6);
+  transition: transform 0.3s, color 0.3s;
+}
+</style>
+
+<div class="theme-switch">
+  <input type="checkbox" id="theme-toggle-switch" />
+  <label for="theme-toggle-switch" class="theme-switch-label">
+    <span class="icon sun">☀️</span>
+    <span class="slider"></span>
+    <span class="icon moon">🌙</span>
+  </label>
+</div>
 
 <script>
-// 테마 토글 기능
-document.addEventListener('DOMContentLoaded', function() {
-  const themeToggle = document.getElementById('theme-toggle');
+// eggjini 스타일 테마 토글 스위치 기능
+(function() {
   const html = document.documentElement;
-  
-  // 저장된 테마 불러오기
+  const toggle = document.getElementById('theme-toggle-switch');
+  // 초기 테마 적용
   const savedTheme = localStorage.getItem('theme') || 'dark';
   html.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
-  
-  // 토글 버튼 클릭 이벤트
-  themeToggle.addEventListener('click', function() {
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
+  toggle.checked = savedTheme === 'light';
+
+  toggle.addEventListener('change', function() {
+    const newTheme = toggle.checked ? 'light' : 'dark';
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
   });
-  
-  // 아이콘 업데이트 함수
-  function updateThemeIcon(theme) {
-    const icon = theme === 'light' ? '🌙' : '☀️';
-    themeToggle.textContent = icon;
-  }
-});
+})();
 </script>
