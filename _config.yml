@@ -313,7 +313,6 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -324,3 +323,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+  - scope:
+      path: "_pages"   # ← 이것만 추가
+      type: pages
+    values:
+      layout: single
+      author_profile: true
