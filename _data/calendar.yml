@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A3 - Ausflug zum Spielplatz Kladow",
-    "title": "A3 - Ausflug zum Spielplatz Kladow",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWFobTN2ZTcwbXZ1YjBzYWkzZTU2dTVpc3EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-26T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-26T14:00:00+02:00"
-    },
-    "created": "2025-05-16T08:50:52.000Z",
-    "updated": "2025-05-26T06:17:48.694Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4c - Ausflug ins Musikmuseum",
-    "title": "4c - Ausflug ins Musikmuseum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2Q1dWlmbjFsYmEwZzE1YjBjNzNsbW80czIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-26T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-26T14:00:00+02:00"
-    },
-    "created": "2025-06-18T08:05:27.000Z",
-    "updated": "2025-06-18T08:05:27.207Z"
-  },
-  {
-    "image_path": null,
     "alt": "A5 - Ausflug in die Bücherei",
     "title": "A5 - Ausflug in die Bücherei",
     "excerpt": null,
@@ -79,26 +45,60 @@
     },
     "end": {
       "date": null,
-      "date_time": "2025-06-30T13:00:00+02:00"
+      "date_time": "2025-06-30T12:45:00+02:00"
     },
     "created": "2025-05-27T05:33:15.000Z",
-    "updated": "2025-05-27T05:33:15.797Z"
+    "updated": "2025-06-26T07:47:50.675Z"
   },
   {
     "image_path": null,
-    "alt": "A5 - Ausflug in die Gartenarbeitsschule",
-    "title": "A5 - Ausflug in die Gartenarbeitsschule",
+    "alt": "5b - Ausflug in die Kunstbastion",
+    "title": "5b - Ausflug in die Kunstbastion",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDlqNHFmYmFmYnAzODNtZWwxaTNycmlodTMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=Nmw4aXFqbDdvdGlnbHU5cWNkcWgyMjBtM2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2025-07-10T07:40:00+02:00"
+      "date_time": "2025-06-30T08:00:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2025-07-10T13:00:00+02:00"
+      "date_time": "2025-06-30T13:00:00+02:00"
     },
-    "created": "2025-04-02T11:40:53.000Z",
-    "updated": "2025-04-02T11:40:53.691Z"
+    "created": "2025-06-26T07:48:32.000Z",
+    "updated": "2025-06-26T07:48:32.445Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend für neue Sonnen 17:00",
+    "title": "Elternabend für neue Sonnen 17:00",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjZmZjYzODdjM2lmNGN0ajJrMjduZmlkaG8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-03T17:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-03T18:00:00+02:00"
+    },
+    "created": "2025-06-26T09:48:22.000Z",
+    "updated": "2025-06-26T09:48:22.660Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6c - Ausflug zum Olympia-Schwimmbad",
+    "title": "6c - Ausflug zum Olympia-Schwimmbad",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDk5NDZzYTlhNHYyaWxvOWQ5YTF1cDY4NTMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-04T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-04T13:00:00+02:00"
+    },
+    "created": "2025-06-26T07:49:19.000Z",
+    "updated": "2025-06-26T07:49:19.287Z"
   }
 ]
