@@ -1,5 +1,5 @@
 ---
-layout: compress # default # home # posts # tag # splash # search # single
+layout: collection # compress # default # home # posts # tag # splash # search # single
 title: note1
 excerpt: 첫번째 노트
 toc: true
