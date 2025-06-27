@@ -25,32 +25,32 @@ To showcase the different types of graphs we will use the pretend data at the bo
 
 Firstly, we could create a pie chart of the children’s favourite animals, which is shown below. A pie chart is a popular way of illustrating qualitative data which can be grouped. We can also use pie charts to represent proportions. For example if I spent $$2$$ days in a week resting, $$3$$ days working on maths and $$2$$ days working on english, I could represent this in a pie chart with sections of sizes $$\frac{2}{7}$$, $$\frac{3}{7}$$ and $$\frac{2}{7}$$. Pie charts are a nice way for children to start comparing data as they can make conclusions using only the size of the sections. 
 
-![temp.]({{site.baseurl}}/assets/img/pie_chart_example.jpeg "temp")
+![A pie chart for the favourite animals of the children in the data.]({{site.baseurl}}/assets/img/pie_chart_example.jpeg "A pie chart")
 
 Next we could consider bar charts which are again very useful for comparing qualitative data. We can see a bar chart of the childrens favourite animals below. Bar charts can sometimes make comparisons between categories easier than pie charts as children can draw lines to compare the height of each bar. 
 
-![temp.]({{site.baseurl}}/assets/img/bar_chart_example.jpeg "temp")
+![A bar chart for the favourite animals of the children in the data.]({{site.baseurl}}/assets/img/bar_chart_example.jpeg "A bar chart")
 
 Another engaging way of displaying data is with a pictograph. Here by letting an image denote a set amount of objects children can visually represent the data in the same way a tally might be used. A pictograph for the childrens favourite animals is shown below. Children could make their own pictographs using objects in the nursery, it could be fun to make a pictograph to show the colours of different toys using the toys themselves.
 
-![temp.]({{site.baseurl}}/assets/img/pictograph_example.jpeg "temp")
+![A pictograph for the favourite animals of the children in the data.]({{site.baseurl}}/assets/img/pictograph_example.jpeg "A pictograph")
 
 If we want to display quantitative data there are some other methods we could use. The histogram is very similar to the bar chart, here we group the continuous data into **bins** so that we can visualise the trends.
 
  How wide we choose the bins can change the shape of the histogram and choosing the “best size” of the bins can actually require quite a lot of complex maths. For the purposes of classroom experimenting there are many reasonable choices that can be made for the binwidths, it could be a fun activity to try out a few. Below is a histogram for the heights of the children where the binwidth is $$2$$cm. 
 
-![temp.]({{site.baseurl}}/assets/img/histogram_example.jpeg "temp")
+![A histogram for the heights of the children in the data.]({{site.baseurl}}/assets/img/histogram_example.jpeg "A histogram")
 
-If we have two measurements of quantitative data such as height and shoe size we can plot both at the same time to see if there seems to be a relationship between the two. Below we can see a **scatter plot** with height on the y-axis and shoe size on the x-axis. Often a **line of best fit is drawn** to visualise the pattern in the data. A line of best fit trys to be as close to all the points as possible, again to plot the actual line of best fit some maths can be used behind the scenes but approximations are fine here.
+If we have two measurements of quantitative data such as height and shoe size we can plot both at the same time to see if there seems to be a relationship between the two. Below we can see a **scatterplot** with height on the y-axis and shoe size on the x-axis. Often a **line of best fit is drawn** to visualise the pattern in the data. A line of best fit trys to be as close to all the points as possible, again to plot the actual line of best fit some maths can be used behind the scenes but approximations are fine here.
 
-![temp.]({{site.baseurl}}/assets/img/scatter_example.jpeg "temp")
+![A scatterplot for the heights and the shoe sizes of the children in the data.]({{site.baseurl}}/assets/img/scatter_example.jpeg "A scatterplot")
 
-From the data and the line of best fit in the scatter graph we might think or **infer** that height and shoe size are **positively correlated** (meaning that as one increases so does the other). Sometimes it is tempting to say an increase in one variable **causes** an increase in another variable however, it is important to notice that this is not necessarily the case and there could be other factors affecting our measurements. A common phrase that sums this up is **correlation does not mean causation**.
+From the data and the line of best fit in the scatterplot, we might think or **infer** that height and shoe size are **positively correlated** (meaning that as one increases, so does the other). Sometimes it is tempting to say an increase in one variable **causes** an increase in another variable; however, it is important to notice that this is not necessarily the case, and there could be other factors affecting our measurements. A common phrase that sums this up is **correlation does not mean causation**.
 
 It could be interesting to see what other measurements children think should be considered when gathering data. Some extra measurements that might be interesting in this case could include the age of the children in the sample.
 If we are working with time data, it is common to use a line graph to show how a measurement changes over time. If we consider the time data shown in the table at the bottom of the page, we can plot how the height of a sunflower changes over $$11$$ weeks. The line graph for this data is shown below. We can see that, as expected, the height of the sunflower increased each week. Children could track the growth of plants, the monthly rainfall or even their heights throughout the school year.
 
-![temp.]({{site.baseurl}}/assets/img/time_data.jpeg "temp")
+![A line graph of the heights of a sunflower over time.]({{site.baseurl}}/assets/img/time_data.jpeg "A line graph")
  
 
 ## Data used
