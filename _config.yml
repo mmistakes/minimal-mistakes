@@ -348,4 +348,12 @@ defaults:
       layout: single
       author_profile: false
       share: true
+  # _notes
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
