@@ -1,5 +1,5 @@
 ---
-layout: splash # search # single
+layout: tag # splash # search # single
 title: note1
 excerpt: 첫번째 노트
 toc: true
