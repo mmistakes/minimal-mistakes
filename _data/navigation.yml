@@ -16,6 +16,8 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title : "Notes"
+    url : https://iregg.github.io/notes/
   
 # sidebar-sample links
 sidebar-sample:
