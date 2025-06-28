@@ -290,9 +290,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-note_archive:
-  type: liquid
-  path: /notes/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
   enabled:
