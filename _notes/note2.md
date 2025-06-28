@@ -1,6 +1,6 @@
 ---
 title: "Posts by Notes Category"
 layout: categories
-permalink: /categories/notes
+permalink: /categories/notes/
 author_profile: true
 ---
