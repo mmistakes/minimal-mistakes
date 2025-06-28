@@ -1,5 +1,5 @@
 ---
-excerpt: "준 & 문."
+excerpt: "welcome to the wedding of BYOUNGJOON and MOONYOUNG"
 header:
   overlay_image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
@@ -32,7 +32,7 @@ gallery:
 이 여정을 시작하는 첫 자리에 귀한 걸음으로 축복해 주신다면<br>
 그 마음 깊이 간직하겠습니다.
 
-{% include gallery caption="함께 해온 707일 (문♡준)" %}
+{% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %}
 
 Calendar <br>
 ![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg){: width="150%" height="50%"}{: .center}
