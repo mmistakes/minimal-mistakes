@@ -8,6 +8,6 @@ toc_icon: "book"  # corresponding Font Awesome icon name (without fa prefix)
 # sidebar:
  # title: "아침뉴스"
  # nav: sidebar-news
-notes:
-  - Woover
+categories:
+  - notes
 ---
