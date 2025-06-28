@@ -1,6 +1,6 @@
 ---
 title: "Posts by Notes Category"
-layout: categories
+layout: category
 permalink: /notes/
 author_profile: true
 ---
