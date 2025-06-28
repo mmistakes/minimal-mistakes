@@ -1,5 +1,7 @@
 # Changelog
 
+- Add optional `footer.since` for copyright time range.
+
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
