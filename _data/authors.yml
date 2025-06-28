@@ -17,6 +17,7 @@ BJ LIM:
       url: "https://twitter.com/extravagantman"
     - label: "Label"
       icon: "🔮"
+      url: "https://iregg.github.io/portfolio"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url: "https://iregg.github.io/portfolio"
