@@ -5,7 +5,7 @@ header:
   teaser: /assets/images/1732294709906.jpg
 sidebar:
   - title: "SAVE THE DATE"
-    image: http://placehold.it/350x250/assets/images/1732294094349.jpg
+    image: /assets/images/1732294094349.jpg
     image_alt: "logo"
     text: "2025년 11월 29일 (토) 오후 5시"
   - title: "LOCATION"
@@ -25,10 +25,12 @@ gallery:
     alt: "placeholder image 4"
 ---
 
-### [모시는 말씀]
-서로가 있기에 눈뜨는 매일이 행복했습니다.<br>
-이제 그 행복을 평생 곁에서 함께 하려 합니다.<br>
-저희의 시작하는 모습을 보여 드리고 싶습니다.<br>
+### [For Love]
+11월, 가을의 끝과 겨울이 맞닿은 계절<br>
+저희 두 사람이 결혼합니다.<br>
+삶의 모든 순간에 서로에게 따듯한 사람이 되어 같은 길을 걸어가려 합니다.<br>
+이 여정을 시작하는 첫 자리에 귀한 걸음으로 축복해 주신다면<br>
+그 마음 깊이 간직하겠습니다.
 
 {% include gallery caption="함께 해온 707일 (문♡준)" %}
 
