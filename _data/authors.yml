@@ -17,6 +17,9 @@ BJ LIM:
       url: "https://twitter.com/extravagantman"
     - label: "Label"
       icon: "🔮"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://
 
 Cornelius Fiddlebone:
   name        : "Cornelius Fiddlebone"
