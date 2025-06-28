@@ -16,7 +16,7 @@ BJ LIM:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/extravagantman"
     - label: "Label"
-      icon: "🔮"
+      icon: "https://symbl-cdn.com/i/webp/6f/a27f3a8db385d1543499f91ab27d47.webp" #"🔮"
       url: "https://iregg.github.io/portfolio"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
