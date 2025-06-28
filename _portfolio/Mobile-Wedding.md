@@ -6,7 +6,7 @@ header:
 sidebar:
   - title: "SAVE THE DATE"
     image: http://placehold.it/350x250
-    <!-- /assets/images/1732294094349.jpg -->
+/assets/images/1732294094349.jpg
     image_alt: "logo"
     text: "2025년 11월 29일 (토) 오후 5시"
   - title: "LOCATION"
