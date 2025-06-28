@@ -12,10 +12,10 @@ main:
     url: https://iregg.github.io/post%20formats/video-play/
   - title: "Categories"
     url: https://iregg.github.io/categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Sample Collections"
+    url: /collection-archive/
+  - title: "Sitemap"
+    url: /sitemap/
   - title : "Notes"
     url : https://iregg.github.io/notes/
   
