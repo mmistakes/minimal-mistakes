@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A5 - Ausflug in die Bücherei",
-    "title": "A5 - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGw4Y3RvbzJxZ2FhaWdjdXFnNDJwMHRldGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-27T07:50:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-27T11:30:00+02:00"
-    },
-    "created": "2024-12-13T11:15:12.000Z",
-    "updated": "2025-04-02T11:40:11.462Z"
-  },
-  {
-    "image_path": null,
     "alt": "Zeltaufbau Zirkus Fellini um 13:00",
     "title": "Zeltaufbau Zirkus Fellini um 13:00",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-06-26T07:49:19.000Z",
     "updated": "2025-06-26T07:49:19.287Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A5 - Ausflug in die Gartenarbeitsschule",
+    "title": "A5 - Ausflug in die Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDlqNHFmYmFmYnAzODNtZWwxaTNycmlodTMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-10T07:40:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-10T13:00:00+02:00"
+    },
+    "created": "2025-04-02T11:40:53.000Z",
+    "updated": "2025-04-02T11:40:53.691Z"
   }
 ]
