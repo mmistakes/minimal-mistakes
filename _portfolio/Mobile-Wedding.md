@@ -12,8 +12,8 @@ sidebar:
     text: "서울특별시 강남구 선릉로 757 <br> 더채플앳청담 커티지홀"
 gallery:
   - url: /assets/images/1732296602028.jpg
-    image_path: /assets/images/1732296602028.jpg
-    alt: "placeholder image 1"
+   # image_path: /assets/images/1732296602028.jpg
+   # alt: "placeholder image 1"
   - url: /assets/images/1732296589153.jpg
     image_path: /assets/images/1732296589153.jpg
     alt: "placeholder image 2"
