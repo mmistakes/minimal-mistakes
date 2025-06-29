@@ -1,6 +1,6 @@
 ---
-title: Wedding
-excerpt: "Welcome to the wedding of JUNO and HANA"
+title: THE Chaple
+excerpt: "welcome to THE WEDDING OF JUNO and HANA"
 header:
   overlay_image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
