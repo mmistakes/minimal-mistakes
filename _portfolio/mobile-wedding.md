@@ -4,7 +4,6 @@ excerpt: "welcome to! <br> THE WEDDING OF JUNO and HANA"
 
 header:
   overlay_image: /assets/images/1732295652283.jpg
-  width: "100%"
   teaser: /assets/images/1732294709906.jpg
   caption: "Photo credit: [**더채플앳청담**](https://unsplash.com)"
   actions:
@@ -30,7 +29,6 @@ gallery:
   #- url: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
     #image_path: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
     #alt: "캘린더"
-    #width: "30%"
   #- url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
    # alt: "엘베사진"
