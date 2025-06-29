@@ -1,6 +1,6 @@
 ---
 title: THE Chapel Wedding
-excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA"
+excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA <br> we invite you to witness the beginning of our forever"
 
 header:
   overlay_image: /assets/images/1732295652283.jpg
