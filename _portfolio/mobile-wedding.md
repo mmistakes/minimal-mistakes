@@ -26,9 +26,9 @@ gallery:
   - url: /assets/images/thechapel_chungdam_map.jpg
     image_path: /assets/images/thechapel_chungdam_map.jpg
     alt: "오시는 길"
-  - url: /assets/images/1732296602028.jpg
+  #- url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
-   # alt: "placeholder image 1"
+   # alt: "엘베사진"
   - url: /assets/images/1732296589153.jpg
    # image_path: /assets/images/1732296589153.jpg
    # alt: "placeholder image 2"
