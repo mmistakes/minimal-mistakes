@@ -1,9 +1,15 @@
----
+7---
 title: THE Chapel Wedding
 excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA"
+
 header:
   overlay_image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
+  caption: "Photo credit: [**더채플앳청담**](https://unsplash.com)"
+  actions:
+    - label: "Learn more"
+      url: "https://thechapel.co.kr/home/wedding1_3"
+
 sidebar:
   - title: "SAVE THE DATE"
     # image: /assets/images/1732294094349.jpg
