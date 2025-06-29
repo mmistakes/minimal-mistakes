@@ -1,5 +1,5 @@
 ---
-excerpt: "welcome to the wedding of BYOUNGJOON and MOONYOUNG"
+# excerpt: "welcome to the wedding of BYOUNGJOON and MOONYOUNG"
 header:
   overlay_image: /assets/images/1732295652283.jpg
   # teaser: /assets/images/1732294709906.jpg
