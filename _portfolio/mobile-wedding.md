@@ -29,6 +29,7 @@ gallery:
   - url: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
     image_path: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
     alt: "캘린더"
+    width: "30%"
   #- url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
    # alt: "엘베사진"
