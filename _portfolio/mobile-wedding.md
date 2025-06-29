@@ -37,7 +37,8 @@ gallery:
    # alt: "placeholder image 4"
 ---
 
-##### [we invite you to witness the beginning of our forever]
+##### [오시는 길]
+![roadmap](assets/images/thechapel_chungdam_map.jpg){: width="100%" height="10%"}{: .center}
 
 <!-- {% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %} -->
 
