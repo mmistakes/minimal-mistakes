@@ -39,13 +39,9 @@ gallery:
 
 ##### [we invite you to witness the beginning of our forever]
 
-##### [주차]
-1시간 30분 무료 (내부주차 200대, 외부주차 300대)
-
 <!-- {% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %} -->
 
-
-##### [Calendar] <br>
+##### [Calendar]
 ![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg){: width="100%" height="20%"}{: .center}
 
 <!-- ![pooh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0Z94iqO01RBz7uaesVFC5hG-J4y-ldNCHg&usqp=CAU) -->
