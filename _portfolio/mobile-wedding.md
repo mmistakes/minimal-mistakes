@@ -23,12 +23,13 @@ sidebar:
     text: "1시간 30분 무료 (내부주차 200대, 외부주차 300대)"
     
 gallery:
+  - url: /assets/images/thechapel_chungdam_map.jpg
   - url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
    # alt: "placeholder image 1"
   - url: /assets/images/1732296589153.jpg
-    image_path: /assets/images/1732296589153.jpg
-    alt: "placeholder image 2"
+   # image_path: /assets/images/1732296589153.jpg
+   # alt: "placeholder image 2"
   - url: /assets/images/1732296620307.jpg
    # image_path: /assets/images/1732296620307.jpg
    # alt: "placeholder image 3"
@@ -40,7 +41,7 @@ gallery:
 ##### [오시는 길]
 ![roadmap](/assets/images/thechapel_chungdam_map.jpg){: width="100%" height="50%"}{: .center}
 
-<!-- {% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %} -->
+{% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %}
 
 ##### [Calendar]
 ![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg){: width="100%" height="20%"}{: .center}
