@@ -1,7 +1,7 @@
 ---
 # excerpt: "welcome to the wedding of BYOUNGJOON and MOONYOUNG"
 header:
-  overlay_image: ![overlay_img](/assets/images/1732295652283.jpg){: width="100%" height="20%"}{: .center}
+  overlay_image: /assets/images/1732295652283.jpg
   teaser: /assets/images/1732294709906.jpg
 sidebar:
   - title: "SAVE THE DATE"
