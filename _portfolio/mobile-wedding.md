@@ -1,4 +1,4 @@
-7---
+---
 title: THE Chapel Wedding
 excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA"
 
