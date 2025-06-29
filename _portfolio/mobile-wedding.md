@@ -1,6 +1,6 @@
 ---
-title: THE Chapel Wedding anniversary and rarely have happened
-excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA <br> we invite you to witness the beginning of our forever"
+title: THE Chapel
+excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA
 
 header:
   overlay_image: /assets/images/1732295652283.jpg
@@ -31,6 +31,8 @@ gallery:
    # image_path: /assets/images/1732295652283.jpg
    # alt: "placeholder image 4"
 ---
+
+##### [we invite you to witness the beginning of our forever]
 
 ### [For Love]
 11월, 가을의 끝과 겨울이 맞닿은 계절<br>
