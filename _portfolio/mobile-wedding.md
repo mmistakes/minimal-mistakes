@@ -1,6 +1,6 @@
 ---
 title: "THE Chapel Wedding"
-excerpt: "welcome to THE WEDDING OF JUNO and HANA"
+excerpt: "welcome to! <br> THE WEDDING OF JUNO and HANA"
 
 header:
   overlay_image: /assets/images/1732295652283.jpg
@@ -18,7 +18,7 @@ sidebar:
   - title: "LOCATION"
     text: "서울특별시 강남구 선릉로 757 <br> 더채플앳청담 커티지홀"
   - title: For Love
-    text: "11월, 가을의 끝과 겨울이 맞닿은 계절 저희 두 사람이 결혼합니다.<br> 모든 순간에 서로에게 따듯한 사람이 되어 같은 길을 걸어가려 합니다.<br> 이 여정을 시작하는 자리를 귀한 걸음 하시어 축복해 주신다면 감사하겠습니다."
+    text: "11월, 가을의 끝과 겨울이 맞닿은 계절 저희 두 사람이 결혼합니다.<br> 모든 순간에 서로에게 따듯한 사람이 되어 같은 길을 걸어가려 합니다.<br> 이 여정을 시작하는 자리를 축복해 주신다면 감사하겠습니다."
     
 gallery:
   - url: /assets/images/1732296602028.jpg
