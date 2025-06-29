@@ -1,5 +1,5 @@
 ---
-title: THE Chapel Wedding
+title: THE Chapel Wedding anniversary and rarely have happened
 excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA <br> we invite you to witness the beginning of our forever"
 
 header:
