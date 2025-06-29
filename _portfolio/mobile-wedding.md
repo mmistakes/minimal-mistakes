@@ -18,7 +18,7 @@ sidebar:
   - title: "LOCATION"
     text: "서울특별시 강남구 선릉로 757 <br> 더채플앳청담 커티지홀"
   - title: For Love
-    text: "11월, 가을의 끝과 겨울이 맞닿은 계절 저희 두 사람이 결혼합니다.<br> 모든 순간에 서로에게 따듯한 사람이 되어 같은 길을 걸어가려 합니다.<br> 이 여정을 시작하는 자리를 축복해 주신다면 그 마음 깊이 간직하겠습니다."
+    text: "11월, 가을의 끝과 겨울이 맞닿은 계절 저희 두 사람이 결혼합니다.<br> 모든 순간에 서로에게 따듯한 사람이 되어 같은 길을 걸어가려 합니다.<br> 이 여정을 시작하는 자리를 귀한 걸음 하시어 축복해 주신다면 감사하겠습니다."
     
 gallery:
   - url: /assets/images/1732296602028.jpg
@@ -37,7 +37,8 @@ gallery:
 
 ##### [we invite you to witness the beginning of our forever]
 
-##### [For Love]
+##### [주차]
+1시간 30분 무료 (내부주차 200대, 외부주차 300대)
 
 <!-- {% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %} -->
 
