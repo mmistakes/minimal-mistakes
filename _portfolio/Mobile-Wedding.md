@@ -32,7 +32,8 @@ gallery:
 이 여정을 시작하는 첫 자리에 귀한 걸음으로 축복해 주신다면<br>
 그 마음 깊이 간직하겠습니다.
 
-{% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %}
+<!-- {% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %} -->
+
 
 Calendar <br>
 ![Wedding Calendar](/assets/images/Screenshot_20241123_030247_Receipt Manager.jpg){: width="100%" height="20%"}{: .center}
