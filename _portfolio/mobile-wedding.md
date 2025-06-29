@@ -38,7 +38,7 @@ gallery:
 ---
 
 ##### [오시는 길]
-![roadmap](/assets/images/thechapel_chungdam_map.jpg){: width="100%" height="10%"}{: .center}
+![roadmap](/assets/images/thechapel_chungdam_map.jpg){: width="100%" height="50%"}{: .center}
 
 <!-- {% include gallery caption="함께 해온 707일 (꾸꾸커플 결혼까지)" %} -->
 
