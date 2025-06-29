@@ -1,6 +1,6 @@
 ---
-title: THE Chapel
-excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA
+title: "THE Chapel"
+excerpt: "welcome to <br> THE WEDDING OF <br> JUNO and HANA"
 
 header:
   overlay_image: /assets/images/1732295652283.jpg
