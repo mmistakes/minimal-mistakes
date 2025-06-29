@@ -26,18 +26,21 @@ gallery:
   - url: /assets/images/thechapel_chungdam_map.jpg
     image_path: /assets/images/thechapel_chungdam_map.jpg
     alt: "오시는 길"
+  - url: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
+    image_path: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
+    alt: "캘린더"
   #- url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
    # alt: "엘베사진"
-  - url: /assets/images/1732296589153.jpg
+  #- url: /assets/images/1732296589153.jpg
    # image_path: /assets/images/1732296589153.jpg
-   # alt: "placeholder image 2"
-  - url: /assets/images/1732296620307.jpg
+   # alt: "산책사진"
+  #- url: /assets/images/1732296620307.jpg
    # image_path: /assets/images/1732296620307.jpg
-   # alt: "placeholder image 3"
-  - url: /assets/images/1732295652283.jpg
+   # alt: "채플홀"
+  #- url: /assets/images/1732295652283.jpg
    # image_path: /assets/images/1732295652283.jpg
-   # alt: "placeholder image 4"
+   # alt: "커티지홀"
 ---
 
 ##### [오시는 길]
