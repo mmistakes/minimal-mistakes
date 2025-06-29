@@ -4,6 +4,7 @@ excerpt: "welcome to! <br> THE WEDDING OF JUNO and HANA"
 
 header:
   overlay_image: /assets/images/1732295652283.jpg
+  width: "100%"
   teaser: /assets/images/1732294709906.jpg
   caption: "Photo credit: [**더채플앳청담**](https://unsplash.com)"
   actions:
@@ -23,13 +24,13 @@ sidebar:
     text: "1시간 30분 무료 (내부주차 200대, 외부주차 300대)"
     
 gallery:
-  - url: /assets/images/thechapel_chungdam_map.jpg
-    image_path: /assets/images/thechapel_chungdam_map.jpg
-    alt: "오시는 길"
-  - url: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
-    image_path: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
-    alt: "캘린더"
-    width: "30%"
+  #- url: /assets/images/thechapel_chungdam_map.jpg
+    #image_path: /assets/images/thechapel_chungdam_map.jpg
+    #alt: "오시는 길"
+  #- url: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
+    #image_path: /assets/images/Screenshot_20241123_030247_Receipt Manager.jpg
+    #alt: "캘린더"
+    #width: "30%"
   #- url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
    # alt: "엘베사진"
