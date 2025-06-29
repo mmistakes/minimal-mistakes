@@ -24,6 +24,8 @@ sidebar:
     
 gallery:
   - url: /assets/images/thechapel_chungdam_map.jpg
+    image_path: /assets/images/thechapel_chungdam_map.jpg
+    alt: "오시는 길"
   - url: /assets/images/1732296602028.jpg
    # image_path: /assets/images/1732296602028.jpg
    # alt: "placeholder image 1"
