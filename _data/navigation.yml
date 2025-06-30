@@ -102,3 +102,48 @@ sidebar-news:
         url: https://iregg.github.io/news/2024-12-02-news/
       - title: "2024-12-03(화)"
         url: https://iregg.github.io/news/2024-12-03-news/
+
+# sidebar-notes links
+sidebar-notes:
+  - title: "URL 노트"
+    children:
+      - title: "업무 URL"
+        url: https://iregg.github.io/news/2024-11-15-news/
+      - title: "TV URL"
+        url: 
+      - title: "만화 URL"
+        url: 
+      - title: "공부 URL"
+        url:
+      - title: "유투브 URL"
+        url:
+  - title: "로직 노트"
+    children:
+      - title: "업무 로직"
+        url: https://iregg.github.io/news/2024-11-18-news/
+      - title: "생활 로직"
+        url: https://iregg.github.io/news/2024-11-19-news/
+      - title: "금융 로직"
+        url: https://iregg.github.io/news/2024-11-20-news/
+      - title: "관계 로직"
+        url: https://iregg.github.io/news/2024-11-21-news/
+      - title: "소스 로직"
+        url: https://iregg.github.io/news/2024-11-22-news/
+  - title: "할일 노트"
+    children:
+      - title: "업무 할일"
+        url: https://iregg.github.io/news/2024-11-25-news/
+      - title: "일상 할일"
+        url: https://iregg.github.io/news/2024-11-26-news/
+      - title: "부동산 할일"
+        url: https://iregg.github.io/news/2024-11-27-news/
+      - title: "주식 할일"
+        url: https://iregg.github.io/news/2024-11-28-news/
+      - title: "자동차 할일"
+        url: https://iregg.github.io/news/2024-11-29-news/
+  - title: "해결방법 노트"
+    children:
+      - title: "현상/원인/조치방법"
+        url: https://iregg.github.io/news/2024-12-02-news/
+      - title: "일기"
+        url: https://iregg.github.io/news/2024-12-03-news/
