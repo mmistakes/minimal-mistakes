@@ -6,7 +6,7 @@ toc: true
 toc_label: "테이블 오브 콘텐츠"
 toc_icon: "book"  # corresponding Font Awesome icon name (without fa prefix)
 sidebar:
-  title: "노트 정리"
+  title: "다른 노트 더보기"
   nav: sidebar-note
 categories:
   - notelink
