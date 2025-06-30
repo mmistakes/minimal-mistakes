@@ -22,9 +22,9 @@ sidebar:
 <br>
 
 <br><br>
-# 정보시스템감리사 홈페이지
-## 한국지능정보사회진흥원
-● 응시자격/자격검정.<br><a href="https://auditor.nia.or.kr/front/main/main.do" class="btn btn--info">한국지능정보사회진흥원 바로가기</a>
+# 랩퍼블릭
+## 던밀스
+● 응시자격/자격검정.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">던밀스 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
