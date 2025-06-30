@@ -22,12 +22,12 @@ sidebar:
 <br><br>
 # 정보시스템감리사 홈페이지
 ## 한국지능정보사회진흥원
-● 응시자격.<br><a href="https://auditor.nia.or.kr/front/main/main.do class="btn btn--info">한국지능정보사회진흥원 바로가기</a>
+● 응시자격/자격검정.<br><a href="https://auditor.nia.or.kr/front/main/main.do class="btn btn--info">한국지능정보사회진흥원 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 광장
+## 라이지움
 ● 소지섭의 멋진 액션신. 주먹하나로 이 거리를 제패한다.<br><a href="https://tvwiki22.com/drama/4644/406539907" class="btn btn--info">광장 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
