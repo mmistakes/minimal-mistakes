@@ -36,7 +36,7 @@ sidebar:
 ## Famous
 ● 테디가 키운 아이돌그룹.<br><a href="https://youtu.be/VjvzYjU1mY0?si=FIzitVw28GdK_sSt" class="btn btn--info">Famous 바로가기</a>
 <br>
-<iframe width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/VjvzYjU1mY0" frameborder="0" allowfullscreen></iframe>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
