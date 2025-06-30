@@ -108,9 +108,9 @@ sidebar-notes:
   - title: "URL 노트"
     children:
       - title: "업무 URL"
-        url: https://iregg.github.io/news/2024-11-15-news/
+        url: https://iregg.github.io/notes/business_url_note/
       - title: "TV URL"
-        url: 
+        url: https://iregg.github.io/notes/tv_url_note/
       - title: "만화 URL"
         url: 
       - title: "공부 URL"
