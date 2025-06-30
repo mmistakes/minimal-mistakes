@@ -19,3 +19,10 @@ categories:
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
+
+## ZOOM
+● 최신 협업 솔루션을 사용하여 하이브리드 팀 전반에서 더욱 의미 있는 팀워크를 형성하세요.<a href="https://www.zoom.com/ko" class="btn btn--info">줌 바로가기</a>
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
