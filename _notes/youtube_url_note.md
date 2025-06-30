@@ -23,22 +23,11 @@ sidebar:
 
 <br><br>
 # 랩퍼블릭
-## 던밀스
-● 응시자격/자격검정.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">던밀스 바로가기</a>
+## 1블락 무대
+● 던밀스 트래비스 폴로다레드 갱갱갱.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">1블락 무대 바로가기</a>
 <br>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/HdIqeyahHOk" frameborder="0" allowfullscreen></iframe>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 정감완
-● 온라인 강의/교재.<br><a href="https://m.junggam.com/" class="btn btn--info">정감완 바로가기</a>
-<br>
-<a href="#" class="btn btn--success">Back to top</a>
-<br>
-
-## 라이지음
-● 개강 및 설명회.<br><a href="https://www.lyzeum.com/board/board_list.asp?Boar_code=MP1174&Clas_Code=CC1363" class="btn btn--info">라이지움 바로가기</a>
-<br>
-<a href="#" class="btn btn--success">Back to top</a>
-<br>
