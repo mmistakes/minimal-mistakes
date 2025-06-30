@@ -116,7 +116,7 @@ sidebar-notes:
       - title: "공부 URL"
         url: https://iregg.github.io/notes/study_url_note/
       - title: "유투브 URL"
-        url:
+        url: https://iregg.github.io/notes/youtube_url_note/
   - title: "로직 노트"
     children:
       - title: "업무 로직"
