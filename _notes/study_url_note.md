@@ -20,9 +20,9 @@ sidebar:
 <br>
 
 <br><br>
-# 정보시스템감리사
-## 
-● 온라인 강의.<br><a href="https://tvwiki22.com/drama/4966" class="btn btn--info">오징어게임3 바로가기</a>
+# 정보시스템감리사 홈페이지
+## 한국지능정보사회진흥원
+● 응시자격.<br><a href="https://auditor.nia.or.kr/front/main/main.do class="btn btn--info">한국지능정보사회진흥원 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
