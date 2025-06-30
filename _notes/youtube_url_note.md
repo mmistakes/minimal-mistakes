@@ -4,13 +4,13 @@ title: 유투브 URL
 excerpt: 다섯번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
-toc_icon: "file"
+toc_icon: "video"
 sidebar:
   title: "노트 더보기"
   nav: sidebar-notes
 ---
 
-유투브 재밌게 보기.
+▶️ 유투브 재밌게 보기.
 <br><br>
 # 비트펠라하우스
 ## Freaky Monday
