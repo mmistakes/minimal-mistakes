@@ -6,8 +6,8 @@ toc: true
 toc_label: "테이블 오브 콘텐츠"
 toc_icon: "book"  # corresponding Font Awesome icon name (without fa prefix)
 # sidebar:
- # title: "아침뉴스"
- # nav: sidebar-news
-categories:
-  - notelink
+   title: "아침뉴스"
+   nav: sidebar-news
+# categories:
+  #- notelink
 ---
