@@ -12,7 +12,7 @@ sidebar:
 
 📚 웹툰.
 ## 뉴토끼
-● 웹툰 소설.<br><a href="https://tvwiki22.com/movie/26405/406554139" class="btn btn--info">뉴토끼 바로가기</a>
+● 웹툰 소설.<br><a href="https://newtoki468.com/" class="btn btn--info">뉴토끼 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
