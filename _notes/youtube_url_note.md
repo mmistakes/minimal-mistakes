@@ -14,7 +14,7 @@ sidebar:
 <br><br>
 # 비트펠라하우스
 ## Freaky Monday
-● 이게 바로 뮤직.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">Freaky Monday 바로가기</a>
+● 이게 바로 뮤직 앤 매직.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">Freaky Monday 바로가기</a>
 <br>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/-PVofD2A9t8?controls=0" frameborder="0" allowfullscreen></iframe>
 <br>
@@ -23,8 +23,8 @@ sidebar:
 
 <br><br>
 # 랩퍼블릭
-## 1블락 무대
-● 던밀스 트래비스 폴로다레드 갱갱갱.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">1블락 무대 바로가기</a>
+## 1블록 무대
+● 던밀스 트래이비 폴로다레드 플리키뱅.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">1블록 무대 바로가기</a>
 <br>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/HdIqeyahHOk" frameborder="0" allowfullscreen></iframe>
 <br>
