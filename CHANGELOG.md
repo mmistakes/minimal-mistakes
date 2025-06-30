@@ -1,5 +1,7 @@
 # Changelog
 
+- Add HTML escaping for some titles, labels and metada that was missing.
+
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
