@@ -26,6 +26,8 @@ sidebar:
 ## 던밀스
 ● 응시자격/자격검정.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">던밀스 바로가기</a>
 <br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/HdIqeyahHOk" frameborder="0" allowfullscreen></iframe>
+<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
