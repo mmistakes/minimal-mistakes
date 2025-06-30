@@ -27,8 +27,8 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 라이지움
-● 소지섭의 멋진 액션신. 주먹하나로 이 거리를 제패한다.<br><a href="https://tvwiki22.com/drama/4644/406539907" class="btn btn--info">광장 바로가기</a>
+## 정감완
+● 온라인 강의/교재.<br><a href="https://m.junggam.com/" class="btn btn--info">정감완 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
