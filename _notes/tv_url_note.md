@@ -13,8 +13,8 @@ sidebar:
 🎥 킬링타임엔 영화 드라마가 딱이에요.
 <br><br>
 # 영화
-## 오징어게임3
-● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br><a href="https://tvwiki22.com/drama/4966" class="btn btn--info">오징어게임3 바로가기</a>
+## 승부
+● 사제간의 바둑 대결. 프로의 세계는 냉정하다.<br><a href="https://tvwiki22.com/movie/26405/406554139" class="btn btn--info">승부 바로가기</a>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
