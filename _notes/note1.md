@@ -9,5 +9,5 @@ toc_icon: "book"  # corresponding Font Awesome icon name (without fa prefix)
  # title: "아침뉴스"
  # nav: sidebar-news
 categories:
-  - notes
+  - notelink
 ---
