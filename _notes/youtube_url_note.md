@@ -14,7 +14,7 @@ sidebar:
 <br><br>
 # 비트펠라하우스
 ## Freaky Monday
-● 이게 바로 뮤직.<br><a href="https://youtu.be/f8NifgGccRs?si=hERnCneGb61wAQpq" class="btn btn--info">Freaky Monday 바로가기</a>
+● 이게 바로 뮤직.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">Freaky Monday 바로가기</a>
 <br>
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/-PVofD2A9t8?controls=0" frameborder="0" allowfullscreen></iframe>
 <br>
