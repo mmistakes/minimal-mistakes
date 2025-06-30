@@ -16,7 +16,7 @@ sidebar:
 ## Freaky Monday
 ● 이게 바로 뮤직 앤 매직.<br><a href="https://youtu.be/f8NifgGccRs?si=wWXkpXkAupWb-Xrz" class="btn btn--info">Freaky Monday 바로가기</a>
 <br>
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/-PVofD2A9t8?controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/f8NifgGccRs" frameborder="0" allowfullscreen></iframe>
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
