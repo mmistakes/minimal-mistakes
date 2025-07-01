@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 6.업무 로직
+title: 업무 로직
 excerpt: 여섯번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
@@ -15,22 +15,25 @@ sidebar:
 # 윈도우
 ## 환경변수 설정
 
-{: .notice--info}
-
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
+> {: .notice--info}
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
+> {: .notice}
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
+> {: .notice--primary}
 
 > [!WARNING]
 > Urgent info that needs immediate user attention to avoid problems.
+> {: .notice--warning}
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+> {: .notice--danger}
 
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
