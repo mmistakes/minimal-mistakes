@@ -21,6 +21,14 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
+## Candy Theif
+● 비트 매직.<br><a href="https://youtu.be/oJ492O5Z1f4?si=tInlmsWBSvAdsdTe" class="btn btn--info">Candy Theif 바로가기</a>
+<br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/oJ492O5Z1f4" frameborder="0" allowfullscreen></iframe>
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 <br><br>
 # 랩퍼블릭
 ## 1블록 무대
