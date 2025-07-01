@@ -1,7 +1,13 @@
 ---
 layout: post
-title: "Strava Stats: My Personal Fitness Analytics Lab"
+title: "Strava Data Pipeline Project"
 category: data-engineering
 ---
 
-This is currently a project in progress, check back soon for updates.
+This is currently a project in progress.
+
+[Repository](https://github.com/0ladayo/Low-Earth-Orbit-Satellites-Project)
+
+Tools:
+<i class="fab fa-python"></i> Python,
+<i class="fas fa-cloud"></i> GCP.
