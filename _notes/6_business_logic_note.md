@@ -56,6 +56,17 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
+## Quote(인용)문법
+> ⏰️ TIP <br>
+> >의 갯수에 따라 깊이가 달라져요.
+> {: .notice}
+> > 한개일때
+> > ```> 한개일때```
+> >> 두개일때
+> >> ```>> 두개일때```
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 <br><br>
 # ERP
 ## AP전표
