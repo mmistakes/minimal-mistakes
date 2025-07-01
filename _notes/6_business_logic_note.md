@@ -44,11 +44,11 @@ sidebar:
   ```
   ## 두번째 헤더
   ```
-> '### 세번째 헤더
+> <h3>세번째 헤더</h3>
   ```
   ### 세번째 헤더
   ```
-> '#### 네번째 헤더
+> <h4>네번째 헤더</h4>
   ```
   #### 네번째 헤더
   ```
@@ -122,14 +122,14 @@ select * from gl_je_lines;
 <br>
 
 ## 거래처
-### 매입(AP)
+- 매입(AP)
 >
   ```sql
   select * from po_vendors;
   select * from   po_vendor_sites_all;
   ```
 
-### 매출(AR)
+- 매출(AR)
 >
   ```sql
   select * from ra_customers;
