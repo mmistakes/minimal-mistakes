@@ -63,12 +63,12 @@ sidebar:
 > ">" 한개일때
 >
   ```
-  > 한개일때
+  ">" 한개일때
   ```
 >> ">>" 두개일때
 >>
   ```
-  >> 두개일때
+  ">>" 두개일때
   ```
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
