@@ -16,28 +16,21 @@ sidebar:
 ## 안내문구
  
 > 📓 NOTE <br>
-> Useful information that users should know, even when skimming content.
-> {: .notice--info}
+> Useful information that users should know, even when skimming content.{: .notice--info}
 > ⏰️ TIP <br>
-> Helpful advice for doing things better or more easily.
-> {: .notice}
+> Helpful advice for doing things better or more easily.{: .notice}
 > ❗️ IMPORTANT <br>
-> Key information users need to know to achieve their goal.
-> {: .notice--primary}
+> Key information users need to know to achieve their goal.{: .notice--primary}
 > ⛔️ WARNING <br>
-> Urgent info that needs immediate user attention to avoid problems.
-> {: .notice--warning}
+> Urgent info that needs immediate user attention to avoid problems.{: .notice--warning}
 > ⚠️ CAUTION <br>
-> Advises about risks or negative outcomes of certain actions.
-> {: .notice--danger}
-<br>
+> Advises about risks or negative outcomes of certain actions.{: .notice--danger}
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 ## 헤더문법
 > ⏰️ TIP <br>
-> #의 갯수에 따라 헤더의 크기가 달라져요.
-> {: .notice}
+> #의 갯수에 따라 헤더의 크기가 달라져요.{: .notice}
 > # 첫번째 헤더
   ```
   # 첫번째 헤더
@@ -54,7 +47,6 @@ sidebar:
   ```
   #### 네번째 헤더
   ```
-<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
