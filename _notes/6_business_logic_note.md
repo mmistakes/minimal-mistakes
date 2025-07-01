@@ -120,19 +120,16 @@ select * from gl_je_lines;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## AP거래처
-```sql
-select * from po_vendors;
-select * from po_vendor_sites_all;
-```
-<br>
-<a href="#" class="btn btn--success">Back to top</a>
-<br>
-
-## AR거래처
-```sql
-select * from ra_customers;
-```
+## 거래처
+### 매입(AP)
+  ```sql
+  select * from po_vendors;
+  select * from   po_vendor_sites_all;
+  ```
+### 매출(AR)
+  ```sql
+  select * from ra_customers;
+  ```
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
