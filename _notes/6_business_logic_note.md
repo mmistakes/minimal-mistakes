@@ -39,7 +39,7 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 헤더
+## 헤더 문법
 - 첫번째 헤더
   ```
   # 첫번째 헤더
