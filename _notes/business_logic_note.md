@@ -4,13 +4,13 @@ title: 업무 로직
 excerpt: 여섯번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
-toc_icon: "video"
+toc_icon: "business-time"
 sidebar:
   title: "노트 더보기"
   nav: sidebar-notes
 ---
 
-업무 로직.
+🏢 업무 로직을 정리해보았어요.
 <br><br><br>
 # 윈도우
 ## 환경변수 설정
