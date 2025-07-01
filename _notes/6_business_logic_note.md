@@ -36,11 +36,11 @@ sidebar:
 > ⏰️ TIP <br>
 > #의 갯수에 따라 헤더의 크기가 달라져요.
 > {: .notice}
-> '# 첫번째 헤더
+> <h1>첫번째 헤더</h1>
   ```
   # 첫번째 헤더
   ```
-> '## 두번째 헤더
+> <h2>두번째 헤더</h2>
   ```
   ## 두번째 헤더
   ```
@@ -128,11 +128,13 @@ select * from gl_je_lines;
   select * from po_vendors;
   select * from   po_vendor_sites_all;
   ```
+
 ### 매출(AR)
 >
   ```sql
   select * from ra_customers;
   ```
+
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
