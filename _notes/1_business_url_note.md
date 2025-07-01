@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 1.업무 URL
+title: 업무 URL
 excerpt: 첫번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
