@@ -96,7 +96,7 @@ sidebar:
 ## AP전표
 ```sql
 select * from ap_invoices_all;
-select * from   ap_invoice_distributions_all;
+select * from ap_invoice_distributions_all;
   ```
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
