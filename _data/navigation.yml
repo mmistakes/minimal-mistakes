@@ -108,19 +108,19 @@ sidebar-notes:
   - title: "URL 노트"
     children:
       - title: "업무 URL"
-        url: https://iregg.github.io/notes/business_url_note/
+        url: https://iregg.github.io/notes/1_business_url_note/
       - title: "TV URL"
-        url: https://iregg.github.io/notes/tv_url_note/
+        url: https://iregg.github.io/notes/2_tv_url_note/
       - title: "만화 URL"
-        url: https://iregg.github.io/notes/cartoon_url_note/
+        url: https://iregg.github.io/notes/3_cartoon_url_note/
       - title: "공부 URL"
-        url: https://iregg.github.io/notes/study_url_note/
+        url: https://iregg.github.io/notes/4_study_url_note/
       - title: "유투브 URL"
-        url: https://iregg.github.io/notes/youtube_url_note/
+        url: https://iregg.github.io/notes/5_youtube_url_note/
   - title: "로직 노트"
     children:
       - title: "업무 로직"
-        url: https://iregg.github.io/notes/business_logic_note/
+        url: https://iregg.github.io/notes/6_business_logic_note/
       - title: "생활 로직"
         url: https://iregg.github.io/news/2024-11-19-news/
       - title: "금융 로직"
