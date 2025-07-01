@@ -30,7 +30,6 @@ sidebar:
 > ⚠️ CAUTION <br>
 > Advises about risks or negative outcomes of certain actions.
 > {: .notice--danger}
-
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
@@ -55,7 +54,6 @@ sidebar:
   ```
   #### 네번째 헤더
   ```
-
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
