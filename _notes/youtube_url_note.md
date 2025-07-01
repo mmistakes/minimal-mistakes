@@ -94,3 +94,9 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
