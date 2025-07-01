@@ -121,7 +121,7 @@ select * from gl_je_lines;
 - 매입(AP)
   ```sql
   select * from po_vendors;
-  select * from   po_vendor_sites_all;
+  select * from po_vendor_sites_all;
   ```
 - 매출(AR)
   ```sql
