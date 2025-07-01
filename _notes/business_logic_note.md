@@ -14,6 +14,7 @@ sidebar:
 <br><br><br>
 # 윈도우
 ## 환경변수 설정
+{: .notice--info}
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
