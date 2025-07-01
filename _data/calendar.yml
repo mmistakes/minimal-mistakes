@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b - Ausflug in die Bücherei",
-    "title": "6b - Ausflug in die Bücherei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MzBsbXRuOTJnbmJqdWVwMzZuMDZxbWhvMmQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-30T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-30T12:45:00+02:00"
-    },
-    "created": "2025-05-27T05:33:15.000Z",
-    "updated": "2025-06-26T07:47:50.675Z"
-  },
-  {
-    "image_path": null,
-    "alt": "5b - Ausflug in die Kunstbastion",
-    "title": "5b - Ausflug in die Kunstbastion",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Nmw4aXFqbDdvdGlnbHU5cWNkcWgyMjBtM2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-06-30T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-06-30T13:00:00+02:00"
-    },
-    "created": "2025-06-26T07:48:32.000Z",
-    "updated": "2025-06-26T07:48:32.445Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend für neue Sonnen 17:00",
     "title": "Elternabend für neue Sonnen 17:00",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2025-06-26T12:39:37.000Z",
     "updated": "2025-06-26T12:39:37.924Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz",
+    "title": "3. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Z2o3a2hjYmtuOHZodmtudjFiZjVhM2drNXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-15T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-15T16:30:00+02:00"
+    },
+    "created": "2025-06-15T09:01:30.000Z",
+    "updated": "2025-06-15T09:01:48.908Z"
+  },
+  {
+    "image_path": null,
+    "alt": "6c - Ausflug in die Sandgrube",
+    "title": "6c - Ausflug in die Sandgrube",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDFqa3FvYWF0N2FnMzM3a2ZoN2ZjbDgwb2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-16T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-16T13:00:00+02:00"
+    },
+    "created": "2025-06-26T07:49:57.000Z",
+    "updated": "2025-06-26T07:49:57.470Z"
   }
 ]
