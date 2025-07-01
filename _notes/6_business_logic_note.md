@@ -14,7 +14,6 @@ sidebar:
 <br><br><br>
 # 마크다운
 ## 안내문구
- 
 > 📓 NOTE <br>
 > Useful information that users should know, even when skimming content.
 > {: .notice--info}
@@ -97,7 +96,51 @@ sidebar:
 ## AP전표
 ```sql
 select * from ap_invoices_all;
-select * from ap_invoice_distributions_all:
+select * from ap_invoice_distributions_all;
+```
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+## AR전표
+```sql
+select * from ra_customer_trx_all;
+select * from ra_customer_lines_all;
+```
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+## GL전표
+```sql
+select * from gl_je_headers;
+select * from gl_je_lines;
+```
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+## AP거래처
+```sql
+select * from po_vendors;
+select * from po_vendor_sites_all;
+```
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+## AR거래처
+```sql
+select * from ra_customers;
+```
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+## AR Receipt
+```sql
+select * from ar_cash_receipts_all;
+select * from ar_receipt_applications_all;
 ```
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
