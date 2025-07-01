@@ -19,19 +19,19 @@ sidebar:
 > Useful information that users should know, even when skimming content.
 > {: .notice--info}
 
-> [⏰️ TIP]
+> ⏰️ TIP <br>
 > Helpful advice for doing things better or more easily.
 > {: .notice}
 
-> [❗️ IMPORTANT]
+> ❗️ IMPORTANT <br>
 > Key information users need to know to achieve their goal.
 > {: .notice--primary}
 
-> [⛔️ WARNING]
+> ⛔️ WARNING <br>
 > Urgent info that needs immediate user attention to avoid problems.
 > {: .notice--warning}
 
-> [⚠️ CAUTION] <br>
+> ⚠️ CAUTION <br>
 > Advises about risks or negative outcomes of certain actions.
 > {: .notice--danger}
 
@@ -44,6 +44,7 @@ sidebar:
 ## AP전표
 ```sql
 select * from ap_invoices_all;
+select * from ap_invoice_distributions_all:
 ```
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
