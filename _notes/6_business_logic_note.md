@@ -87,7 +87,7 @@ sidebar:
   ```
 > <hr>
   ```
-  <hr>
+  "<hr>"
   ```
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
