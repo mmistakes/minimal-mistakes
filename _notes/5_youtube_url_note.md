@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 5.유투브 URL
+title: 유투브 URL
 excerpt: 다섯번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
