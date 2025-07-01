@@ -94,7 +94,6 @@ sidebar:
 <br><br>
 # ERP
 ## AP전표
->
   ```sql
   select * from ap_invoices_all;
   select * from   ap_invoice_distributions_all;
