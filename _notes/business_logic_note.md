@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 업무 로직
+title: 6.업무 로직
 excerpt: 여섯번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
