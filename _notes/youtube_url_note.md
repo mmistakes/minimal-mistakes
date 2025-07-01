@@ -82,6 +82,9 @@ public class BootSpringApplication{
 }
 ```
 
+```mermaid
+  info
+```
 Here is a simple flow chart:
 
 ```mermaid
