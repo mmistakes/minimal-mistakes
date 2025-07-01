@@ -10,28 +10,28 @@ sidebar:
   nav: sidebar-notes
 ---
 
-🏢 업무 로직을 정리해보았어요.
+🏢 업무 로직을 정리해보아요
 <br><br><br>
-# 윈도우
-## 환경변수 설정
+# 마크다운
+## 안내문구
  
-> [📓NOTE]
+> 📓 NOTE
 > Useful information that users should know, even when skimming content.
 > {: .notice--info}
 
-> [!TIP]
+> ⏰️ TIP
 > Helpful advice for doing things better or more easily.
 > {: .notice}
 
-> [!IMPORTANT]
+> ❗️ IMPORTANT
 > Key information users need to know to achieve their goal.
 > {: .notice--primary}
 
-> [!WARNING]
+> ⛔️ WARNING
 > Urgent info that needs immediate user attention to avoid problems.
 > {: .notice--warning}
 
-> [!CAUTION]
+> ⚠️ CAUTION
 > Advises about risks or negative outcomes of certain actions.
 > {: .notice--danger}
 
@@ -55,3 +55,10 @@ select * from ap_invoices_all;
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
+
+<br><br>
+# 윈도우
+## 환경변수
+
+
+
