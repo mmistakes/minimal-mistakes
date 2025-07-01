@@ -120,7 +120,7 @@ sidebar-notes:
   - title: "로직 노트"
     children:
       - title: "업무 로직"
-        url: https://iregg.github.io/news/2024-11-18-news/
+        url: https://iregg.github.io/notes/business_logic_note/
       - title: "생활 로직"
         url: https://iregg.github.io/news/2024-11-19-news/
       - title: "금융 로직"
