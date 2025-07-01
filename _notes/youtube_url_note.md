@@ -47,13 +47,13 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
-'''java
+```java
 public class BootSpringApplication{
   public static void main(String[] args){
     System.out.println("Hello, World");
   }
 }
-'''
+```
 
 ```geojson
 {
