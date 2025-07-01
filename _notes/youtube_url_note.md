@@ -41,6 +41,12 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 ```geojson
 {
   "type": "FeatureCollection",
