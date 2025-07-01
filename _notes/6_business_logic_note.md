@@ -10,12 +10,12 @@ sidebar:
   nav: sidebar-notes
 ---
 
-🏢 업무 로직을 정리해보아요
+🏢 업무 로직 정리!
 <br><br><br>
 # 마크다운
 ## 안내문구
  
-> [📓 NOTE]
+> 📓 NOTE <br>
 > Useful information that users should know, even when skimming content.
 > {: .notice--info}
 
@@ -31,7 +31,7 @@ sidebar:
 > Urgent info that needs immediate user attention to avoid problems.
 > {: .notice--warning}
 
-> [⚠️ CAUTION]<br>
+> [⚠️ CAUTION] <br>
 > Advises about risks or negative outcomes of certain actions.
 > {: .notice--danger}
 
