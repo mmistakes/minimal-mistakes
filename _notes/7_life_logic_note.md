@@ -15,7 +15,7 @@ sidebar:
 # 분리수거
   1. 매주 목요일
   2. 종이류, 프라스틱, 비닐 분류
-<br>
+     
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
@@ -23,7 +23,7 @@ sidebar:
 # 교회가기
   1. 매달 첫째주 일요일
   2. 가족들과 점심식사
-<br>
+     
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
@@ -31,7 +31,7 @@ sidebar:
 # 아침식사
   1. 프로틴 물에 타먹기
   2. 계란이나 선식으로 대체재 섭취 가능
-<br>
+
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
