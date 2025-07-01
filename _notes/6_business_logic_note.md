@@ -22,11 +22,14 @@ sidebar:
 > Helpful advice for doing things better or more easily.
 > {: .notice}
 > ❗️ IMPORTANT <br>
-> Key information users need to know to achieve their goal. {: .notice--primary}
+> Key information users need to know to achieve their goal.
+> {: .notice--primary}
 > ⛔️ WARNING <br>
-> Urgent info that needs immediate user attention to avoid problems. {: .notice--warning}
+> Urgent info that needs immediate user attention to avoid problems.
+> {: .notice--warning}
 > ⚠️ CAUTION <br>
-> Advises about risks or negative outcomes of certain actions. {: .notice--danger}
+> Advises about risks or negative outcomes of certain actions.
+> {: .notice--danger}
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
