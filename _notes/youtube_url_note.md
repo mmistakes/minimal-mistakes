@@ -10,7 +10,7 @@ sidebar:
   nav: sidebar-notes
 ---
 
-▶️ 유투브 재밌게 보기.
+▶️ 볼만한 유투브를 모아봤어요.
 <br><br><br>
 # 비트펠라하우스
 ## Freaky Monday
