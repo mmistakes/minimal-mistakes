@@ -39,6 +39,14 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
+## 2블록 무대
+● 루피 오선 JP.<br><a href="https://youtu.be/knV9CvEKPd0?si=oQIatdzYYq3Es5FO" class="btn btn--info">2블록 무대 바로가기</a>
+<br>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/knV9CvEKPd0" frameborder="0" allowfullscreen></iframe>
+<br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 <br><br>
 # ALLDAY PROJECT
 ## Famous
