@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 4.공부 URL
+title: 공부 URL
 excerpt: 네번째 노트
 toc: true
 toc_label: "테이블 오브 콘텐츠"
