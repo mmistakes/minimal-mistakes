@@ -6,7 +6,7 @@ category: data-engineering
 
 This is currently a project in progress.
 
-[Repository](https://github.com/0ladayo/Low-Earth-Orbit-Satellites-Project)
+[Repository](https://github.com/0ladayo/Strava-Data-Pipeline-Project)
 
 Tools:
 <i class="fab fa-python"></i> Python,
