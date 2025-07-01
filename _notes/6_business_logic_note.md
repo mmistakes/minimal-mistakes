@@ -99,7 +99,6 @@ sidebar:
   select * from ap_invoices_all;
   select * from   ap_invoice_distributions_all;
   ```
-<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
@@ -108,7 +107,6 @@ sidebar:
 select * from ra_customer_trx_all;
 select * from ra_customer_lines_all;
 ```
-<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
@@ -117,25 +115,19 @@ select * from ra_customer_lines_all;
 select * from gl_je_headers;
 select * from gl_je_lines;
 ```
-<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 ## 거래처
 - 매입(AP)
->
   ```sql
   select * from po_vendors;
   select * from   po_vendor_sites_all;
   ```
-
 - 매출(AR)
->
   ```sql
   select * from ra_customers;
   ```
-
-<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
@@ -144,7 +136,6 @@ select * from gl_je_lines;
 select * from ar_cash_receipts_all;
 select * from ar_receipt_applications_all;
 ```
-<br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
