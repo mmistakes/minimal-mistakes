@@ -1,5 +1,7 @@
 # Changelog
 
+- Hide page__footer-follow if there are no links nor atom feed.
+
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
