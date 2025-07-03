@@ -53,6 +53,4 @@ Most modern gateways keep everything before "@" intact; only rare legacy filters
 Yes. Use addresses like `projectX+finance@company.com` and `projectX+it@company.com` to separate streams.  
 
 **3. Are there security concerns?**  
-Avoid including sensitive information in the tag; use generic labels or numeric IDs instead.  
-
-#PowerPlatform #PowerAutomate #EmailManagement #BusinessEfficiency #SharingIsCaring
+Avoid including sensitive information in the tag; use generic labels or numeric IDs instead.
