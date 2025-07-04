@@ -34,7 +34,10 @@ Here's how to do it:
    🔸 Log error details for troubleshooting.  
 3. Add a Finally block for cleanup tasks executed after Try or Catch.  
    🔸 Perform cleanup actions, like deleting temporary data.  
-   🔸 Execute common post-processing steps.  
+   🔸 Execute common post-processing steps.
+
+Extratip: You can also use just this expression to get the current flow run 
+```concat('https://unitedkingdom.flow.microsoft.com/manage/environments/',workflow()?['tags']['environmentName'],'/flows/',workflow()?['name'],'/runs/',workflow()?['run']['name'])```
 
 ## 🎉 Result
 By implementing this pattern, you’ll gain better visibility into flow failures and more control over how your flows behave when things go wrong.
