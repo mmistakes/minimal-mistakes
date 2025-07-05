@@ -157,11 +157,11 @@ select * from ar_receipt_applications_all;
   ERP_IMPORT_FLAG 값이 'Y' ,
   JOURNAL_NAME이 NULL인 상태
   ```
-  ```
+  ```JAVA
   # 조치:
-  1. gl_interface 테이블에 내역 여부 확인
-  2. 내역 있으면 삭제
-  3. 인터페이스 초기화
+  --1. gl_interface 테이블에 내역 여부 확인
+  --2. 내역 있으면 삭제
+  --3. 인터페이스 초기화
     - (INTERFACE_FLAG = 'N' , ERP_IMPORT_FLAG = 'N')
     - 인터페이스 재실행 후 전표 생성
   ```
