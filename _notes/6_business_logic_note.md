@@ -143,6 +143,8 @@ select * from ar_receipt_applications_all;
 - Salesperson 미등록
   ```sql
   # 에러내역: Other Error : ORA-01403: no data found
+  ```
+  ```
   --1. 제품서비스 등록 여부 확인
   --2. 미등록 제품서비스인 경우 회계팀에 요청하여 등록
   --3. 인터페이스 재실행 후 전표 생성
@@ -150,6 +152,8 @@ select * from ar_receipt_applications_all;
 - 인터페이스 진행중 상태
   ```sql
   # 현상: INTERFACE_FLAG 값이 'P' , ERP_IMPORT_FLAG 값이 'Y' , JOURNAL_NAME이 NULL인 상태
+  ```
+  ```
   --1. gl_interface 테이블에 내역 여부 확인
   --2. 내역 있으면 삭제
   --3. 인터페이스 초기화 (INTERFACE_FLAG = 'N' , ERP_IMPORT_FLAG 값이 'N') 및 재실행 후 전표 생성
@@ -160,16 +164,26 @@ select * from ar_receipt_applications_all;
   ```sql
   # 출장보고서 내역 확인
   select * from eap_ep_ap_interface_history;
+  ```
+  ```sql
   # 출장전표번호 확인
   select * from EAP_BIZ_TRIP_INVOICES;
   select * from eap_biz_trip_invoices_line;
+  ```
+  ```sql
   # 인터페이스 확인
   select * from egl_interface_header;
   select * from egl_interface_line;
+  ```
+  ```sql
   # AP전표 확인
   select * from ap_invoices_all;
+  ```
+  ```sql
   # 법인카드 확인
   select * from eap_card_approve;
+  ```
+  ```
   --1. 법인카드 초기화
   --2. 출장전표번호 삭제
   ```
@@ -177,21 +191,32 @@ select * from ar_receipt_applications_all;
   ```sql
   # 출장보고서 내역 확인
   select * from eap_ep_ap_interface_history;
+  ```
+  ```sql
   # 출장전표번호 확인
   select * from EAP_BIZ_TRIP_INVOICES;
+  ```
   select * from eap_biz_trip_invoices_line;
+  ```
+  ```sql
   # 인터페이스 확인
   select * from egl_interface_header;
   select * from egl_interface_line;
+  ```
+  ```sql
   # AP전표 확인
   select * from ap_invoices_all;
+  ```
+  ```sql
   # 법인카드 확인
   select * from eap_card_approve;
   ```
   ```sql
   # AP 인터페이스 확인
   select * from ap_invoices_interface;
-  select * from ap_invoices_interface;
+  select * from ap_invoice_lines_interface;
+  ```
+  ```
   --1. AP 인터페이스 삭제
   --2. 법인카드 초기화
   --3. 인터페이스 초기화 및 재실행 후 AP전표 생성
