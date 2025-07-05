@@ -25,6 +25,7 @@ sidebar:
 <br>
 &emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>
+
 ### - 올드가드2
 &emsp;● 불멸자의 시조 그녀가 나타나다.<br>&emsp;<a href="https://tvwiki22.com/movie/28111" class="btn btn--info">올드가드2 바로가기</a>
 <br>
@@ -41,6 +42,11 @@ sidebar:
 <br>
 
 ### 오징어게임2
+&emsp;● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br>&emsp;<a href="https://tvwiki22.com/drama/1802" class="btn btn--info">오징어게임2 바로가기</a>
+<br>
+&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 ### 오징어게임3
 &emsp;● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br>&emsp;<a href="https://tvwiki22.com/drama/4966" class="btn btn--info">오징어게임3 바로가기</a>
 <br>
