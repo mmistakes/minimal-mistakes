@@ -184,8 +184,8 @@ select * from ar_receipt_applications_all;
   select * from eap_card_approve;
   ```
   ```
-  --1. 법인카드 초기화
-  --2. 출장전표번호 삭제
+  1. 법인카드 초기화
+  2. 출장전표번호 삭제
   ```
 - 출장보고서 결재완료 되었는데 법인카드는 결재중으로 뜬 경우
   ```sql
@@ -195,7 +195,6 @@ select * from ar_receipt_applications_all;
   ```sql
   # 출장전표번호 확인
   select * from EAP_BIZ_TRIP_INVOICES;
-  ```
   select * from eap_biz_trip_invoices_line;
   ```
   ```sql
@@ -217,9 +216,9 @@ select * from ar_receipt_applications_all;
   select * from ap_invoice_lines_interface;
   ```
   ```
-  --1. AP 인터페이스 삭제
-  --2. 법인카드 초기화
-  --3. 인터페이스 초기화 및 재실행 후 AP전표 생성
+  1. AP 인터페이스 삭제
+  2. 법인카드 초기화
+  3. 인터페이스 초기화 및 재실행 후 AP전표 생성
   ```
 
 <a href="#" class="btn btn--success">Back to top</a>
