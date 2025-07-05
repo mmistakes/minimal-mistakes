@@ -20,7 +20,7 @@ sidebar:
 <br>
 
 ## 올드가드
-### &emsp;- 올드가드1
+&emsp;### - 올드가드1
 &emsp;● 불멸자의 인생. 세계의 질서를 세운다.<br>&emsp;<a href="https://tvwiki22.com/movie/8295" class="btn btn--info">올드가드1 바로가기</a>
 <br>
 &emsp;<a href="#" class="btn btn--success">Back to top</a>
