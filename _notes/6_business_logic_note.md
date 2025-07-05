@@ -158,6 +158,7 @@ select * from ar_receipt_applications_all;
   JOURNAL_NAME이 NULL인 상태
   ```
   ```sql
+  # 조치:
   1. gl_interface 테이블에 내역 여부 확인
   2. 내역 있으면 삭제
   3. 인터페이스 초기화
@@ -190,6 +191,7 @@ select * from ar_receipt_applications_all;
   select * from eap_card_approve;
   ```
   ```sql
+  # 조치:
   1. 법인카드 초기화
   2. 출장전표번호 삭제
   ```
@@ -222,6 +224,7 @@ select * from ar_receipt_applications_all;
   select * from ap_invoice_lines_interface;
   ```
   ```sql
+  # 조치:
   1. AP 인터페이스 삭제
   2. 법인카드 초기화
   3. 인터페이스 초기화 및 재실행 후 AP전표 생성
