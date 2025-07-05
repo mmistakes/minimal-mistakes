@@ -145,6 +145,7 @@ select * from ar_receipt_applications_all;
   # 에러내역:
   Other Error : ORA-01403: no data found
   ```
+  {: .notice--info}
   ⏰️ TIP
   1. 제품서비스 등록 여부 확인
   2. 미등록 제품서비스인 경우 회계팀에 요청하여 등록
