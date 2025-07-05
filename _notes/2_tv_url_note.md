@@ -35,6 +35,11 @@ sidebar:
 # 드라마
 ## 오징어게임
 ### 오징어게임1
+&emsp;● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br>&emsp;<a href="https://tvwiki22.com/old_drama/1579" class="btn btn--info">오징어게임1 바로가기</a>
+<br>
+&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 ### 오징어게임2
 ### 오징어게임3
 &emsp;● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br>&emsp;<a href="https://tvwiki22.com/drama/4966" class="btn btn--info">오징어게임3 바로가기</a>
