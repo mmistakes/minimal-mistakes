@@ -118,12 +118,12 @@ select * from gl_je_lines;
 <br>
 
 ## 거래처
-### 매입(AP)
+- 매입(AP)
   ```sql
   select * from po_vendors;
   select * from po_vendor_sites_all;
   ```
-### 매출(AR)
+- 매출(AR)
   ```sql
   select * from ra_customers;
   ```
@@ -143,19 +143,58 @@ select * from ar_receipt_applications_all;
 - Salesperson 미등록
   ```sql
   # 에러내역: Other Error : ORA-01403: no data found
-  --1. 제품서비스 등록이 되어있는지 확인
+  --1. 제품서비스 등록 여부 확인
   --2. 미등록 제품서비스인 경우 회계팀에 요청하여 등록
   --3. 인터페이스 재실행 후 전표 생성
-  */
   ```
 - 인터페이스 진행중 상태
   ```sql
-  /*
   # 현상: INTERFACE_FLAG 값이 'P' , ERP_IMPORT_FLAG 값이 'Y' , JOURNAL_NAME이 NULL인 상태
-  --1. gl_interface 테이블에 내역이 있는지 확인
+  --1. gl_interface 테이블에 내역 여부 확인
   --2. 내역 있으면 삭제
   --3. 인터페이스 초기화 (INTERFACE_FLAG = 'N' , ERP_IMPORT_FLAG 값이 'N') 및 재실행 후 전표 생성
-  */
+  ```
+
+## 출장보고서 초기화
+- 출장보고서 반려된 경우
+  ```sql
+  # 출장보고서 내역 확인
+  select * from eap_ep_ap_interface_history;
+  # 출장전표번호 확인
+  select * from EAP_BIZ_TRIP_INVOICES;
+  select * from eap_biz_trip_invoices_line;
+  # 인터페이스 확인
+  select * from egl_interface_header;
+  select * from egl_interface_line;
+  # AP전표 확인
+  select * from ap_invoices_all;
+  # 법인카드 확인
+  select * from eap_card_approve;
+  --1. 법인카드 초기화
+  --2. 출장전표번호 삭제
+  ```
+- 출장보고서 결재완료 되었는데 법인카드는 결재중으로 뜬 경우
+  ```sql
+  # 출장보고서 내역 확인
+  select * from eap_ep_ap_interface_history;
+  # 출장전표번호 확인
+  select * from EAP_BIZ_TRIP_INVOICES;
+  select * from eap_biz_trip_invoices_line;
+  # 인터페이스 확인
+  select * from egl_interface_header;
+  select * from egl_interface_line;
+  # AP전표 확인
+  select * from ap_invoices_all;
+  # 법인카드 확인
+  select * from eap_card_approve;
+  ```
+  ```sql
+  # AP 인터페이스 확인
+  select * from ap_invoices_interface;
+  select * from ap_invoices_interface;
+  --1. AP 인터페이스 삭제
+  --2. 법인카드 초기화
+  --3. 인터페이스 초기화 및 재실행 후 AP전표 생성
   ```
 
 <a href="#" class="btn btn--success">Back to top</a>
