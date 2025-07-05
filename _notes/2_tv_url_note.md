@@ -20,7 +20,7 @@ sidebar:
 <br>
 
 ## 올드가드
-&emsp;### - 올드가드1
+### - 올드가드1
 &emsp;● 불멸자의 인생. 세계의 질서를 세운다.<br>&emsp;<a href="https://tvwiki22.com/movie/8295" class="btn btn--info">올드가드1 바로가기</a>
 <br>
 &emsp;<a href="#" class="btn btn--success">Back to top</a>
@@ -33,10 +33,13 @@ sidebar:
 
 <br><br>
 # 드라마
-## 오징어게임3
-● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br><a href="https://tvwiki22.com/drama/4966" class="btn btn--info">오징어게임3 바로가기</a>
+## 오징어게임
+### 오징어게임1
+### 오징어게임2
+### 오징어게임3
+&emsp;● 성기훈의 운명은? 456억원은 과연 누구에게로 갔을까.<br>&emsp;<a href="https://tvwiki22.com/drama/4966" class="btn btn--info">오징어게임3 바로가기</a>
 <br>
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 ## 광장
