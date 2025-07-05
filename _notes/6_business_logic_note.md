@@ -158,7 +158,7 @@ select * from ar_receipt_applications_all;
   JOURNAL_NAME이 NULL인 상태
   ```
   
-  ```
+  ```sql
   # 조치:
   1. gl_interface 테이블에 내역 여부 확인
   2. 내역 있으면 삭제
@@ -166,6 +166,8 @@ select * from ar_receipt_applications_all;
     - (INTERFACE_FLAG = 'N' , ERP_IMPORT_FLAG = 'N')
     - 인터페이스 재실행 후 전표 생성
   ```
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
 
 ## 출장보고서 초기화
 - 출장보고서 반려된 경우
