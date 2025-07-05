@@ -147,7 +147,7 @@ select * from ar_receipt_applications_all;
   ```
   
   ⏰️ TIP
-  ⏰️ TIP <br> 1. 제품서비스 등록 여부 확인
+  ⏰️ TIP 1. 제품서비스 등록 여부 확인
   2. 미등록 제품서비스인 경우 회계팀에 요청하여 등록
   3. 인터페이스 재실행 후 전표 생성
   {: .notice}
