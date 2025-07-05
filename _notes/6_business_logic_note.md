@@ -140,7 +140,7 @@ select * from ar_receipt_applications_all;
 <br>
 
 ## 인터페이스 에러
-### Type1
+### - Type1
 - Salesperson 미등록
   ```sql
   # 에러내역:
@@ -163,7 +163,7 @@ select * from ar_receipt_applications_all;
 <br>
 
 ## 출장보고서 초기화
-### 출장보고서 반려된 경우
+### - 출장보고서 반려된 경우
   ```sql
   --출장보고서 내역 확인
   select * from eap_ep_ap_interface_history;
@@ -192,7 +192,7 @@ select * from ar_receipt_applications_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
   
-### 출장보고서 완료후 법인카드 결재중인 경우
+### - 출장보고서 완료후 법인카드 결재중인 경우
   ```sql
   --출장보고서 내역 확인
   select * from eap_ep_ap_interface_history;
