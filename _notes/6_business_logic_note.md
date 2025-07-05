@@ -145,7 +145,6 @@ select * from ar_receipt_applications_all;
   # 에러내역:
   Other Error : ORA-01403: no data found
   ```
-  
   ⏰️ TIP <br> 1. 제품서비스 등록 여부 확인 <br> 2. 미등록 제품서비스인 경우 회계팀에 요청하여 등록<br> 3. 인터페이스 재실행 후 전표 생성
   {: .notice}
 
@@ -156,10 +155,8 @@ select * from ar_receipt_applications_all;
   ERP_IMPORT_FLAG 값이 'Y' ,
   JOURNAL_NAME이 NULL인 상태
   ```
-> ⏰️ TIP <br> 조치:
->  1. gl_interface 테이블에 내역 여부 확인
->  2. 내역 있으면 삭제
->  3. 인터페이스 초기화 <br> - (INTERFACE_FLAG = 'N' , ERP_IMPORT_FLAG = 'N') <br> - 인터페이스 재실행 후 전표 생성
+  ⏰️ TIP <br> 조치: <br> 1. gl_interface 테이블에 내역 여부 확인<br> 2. 내역 있으면 삭제 <br> 3. 인터페이스 초기화 <br> - (INTERFACE_FLAG = 'N' , ERP_IMPORT_FLAG = 'N') <br> - 인터페이스 재실행 후 전표 생성
+  {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
