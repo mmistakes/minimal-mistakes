@@ -191,23 +191,23 @@ select * from ar_receipt_applications_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
   
-- 출장보고서 결재완료 되었는데 법인카드는 결재중으로 뜬 경우
+- 출장보고서 완료후 법인카드 결재중인 경우
   ```sql
-  # 출장보고서 내역 확인
+  --출장보고서 내역 확인
   select * from eap_ep_ap_interface_history;
   ```
   ```sql
-  # 출장전표번호 확인
+  --출장전표번호 확인
   select * from EAP_BIZ_TRIP_INVOICES;
   select * from eap_biz_trip_invoices_line;
   ```
   ```sql
-  # 인터페이스 확인
+  --인터페이스 확인
   select * from egl_interface_header;
   select * from egl_interface_line;
   ```
   ```sql
-  # AP전표 확인
+  --AP전표 확인
   select * from ap_invoices_all;
   ```
   ```sql
@@ -215,7 +215,7 @@ select * from ar_receipt_applications_all;
   select * from eap_card_approve;
   ```
   ```sql
-  # AP 인터페이스 확인
+  --AP 인터페이스 확인
   select * from ap_invoices_interface;
   select * from ap_invoice_lines_interface;
   ```
