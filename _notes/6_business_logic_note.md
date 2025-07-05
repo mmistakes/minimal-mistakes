@@ -151,11 +151,11 @@ select * from ar_receipt_applications_all;
 - 인터페이스 진행중 상태
   ```sql
   # 현상:
-  INTERFACE_FLAG 값이 'P' ,
-  ERP_IMPORT_FLAG 값이 'Y' ,
+  INTERFACE_FLAG 값이 'P',
+  ERP_IMPORT_FLAG 값이 'Y',
   JOURNAL_NAME이 NULL인 상태
   ```
-  ⏰️ TIP <br> 1. gl_interface 테이블에 내역 여부 확인<br> 2. 내역 있으면 삭제 <br> 3. 인터페이스 초기화 <br> &nbsp;&nbsp;- INTERFACE_FLAG = 'N' <br> &nbsp;&nbsp;ERP_IMPORT_FLAG = 'N' <br> &nbsp;&nbsp;- 인터페이스 재실행 후 전표 생성
+  ⏰️ TIP <br> 1. gl_interface 테이블에 내역 여부 확인<br> 2. 내역 있으면 삭제 <br> 3. 인터페이스 초기화 <br> &nbsp;&nbsp;- INTERFACE_FLAG = 'N' <br> &nbsp;&nbsp;- ERP_IMPORT_FLAG = 'N' <br> &nbsp;&nbsp;- 인터페이스 재실행 후 전표 생성
   {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
@@ -185,11 +185,9 @@ select * from ar_receipt_applications_all;
   # 법인카드 확인
   select * from eap_card_approve;
   ```
-  ```sql
-  # 조치:
-  1. 법인카드 초기화
-  2. 출장전표번호 삭제
-  ```
+  ⏰️ TIP <br> 1. 법인카드 초기화 <br> 2. 출장전표번호 삭제
+  {: .notice}
+  
 - 출장보고서 결재완료 되었는데 법인카드는 결재중으로 뜬 경우
   ```sql
   # 출장보고서 내역 확인
