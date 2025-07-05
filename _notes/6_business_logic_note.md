@@ -219,12 +219,9 @@ select * from ar_receipt_applications_all;
   select * from ap_invoices_interface;
   select * from ap_invoice_lines_interface;
   ```
-  ```sql
-  # 조치:
-  1. AP 인터페이스 삭제
-  2. 법인카드 초기화
-  3. 인터페이스 초기화 및 재실행 후 AP전표 생성
-  ```
+  ⏰️ TIP <br> 1. AP 인터페이스 삭제 <br> 2. 법인카드 초기화 <br> 3. 인터페이스 초기화 및 재실행 후 AP전표 생성
+  {: .notice}
+
 
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
