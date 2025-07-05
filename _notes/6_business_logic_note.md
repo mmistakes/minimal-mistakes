@@ -139,6 +139,18 @@ select * from ar_receipt_applications_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
+## 인터페이스 에러
+- Salesperson 미등록
+```sql
+에러내역: Other Error : ORA-01403: no data found
+1. 제품서비스 등록이 되어있는지 확인
+2. 미등록 제품서비스인 경우 회계팀에 요청하여 등록
+3. 인터페이스 재실행 후 전표 생성
+```
+
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 <br><br>
 # 그룹웨어
 ## 메일 보내기
