@@ -5,7 +5,7 @@ Welcome to the official repository for the **Data Science Group (DSG)** at **IIT
 We are a student-led community dedicated to exploring the frontiers of **Data Science**, **Artificial Intelligence**, and **Machine Learning**. Our goal is to promote the learning, research, and application of cutting-edge technologies in these fields, and to create a vibrant environment for both students and professionals.
 
 **Current Website:** [DSG IIT Roorkee](https://dsgiitr.in/)
-![Website Home Page Screenshot](assets/images/.png)
+![Website Home Page Screenshot](assets/images/dsg-website.png)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
