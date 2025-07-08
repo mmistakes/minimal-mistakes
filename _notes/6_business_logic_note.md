@@ -106,12 +106,12 @@ select * from ap_invoice_distributions_all;
 <br>
 
 ### - 선급금 반제
-- 선급금 전표에 Tax라인이 있는 경우
+- 선급금 전표 Tax라인 있는 경우
   
-  ❗️IMPORTANT <br> 1. 원전표에 선급금 반제 시 Tax라인 생성됨 <br> 2. TAX라인 없애려면 선급금 반제전 선급금 전표의 Tax Calculation 변경 필요 <br> &emsp;- 화면) Header → Line 또는 None <br> &emsp;- DB) TAX_CALCULATION_FLAG 변경: Y → L 또는 N
+  ❗️IMPORTANT <br> 1. 선급금 반제시 원전표에 Tax라인 생성됨 <br> 2. Tax라인 불필요시 선급금 반제전 선급금 Tax Calculation 변경 필요 <br> &emsp;- 화면) Header → Line 또는 None <br> &emsp;- DB) TAX_CALCULATION_FLAG: Y → L 또는 N
   {: .notice--primary}
 
-- 선급금 반제 후 원전표가 회계생성 안된 경우
+- 선급금 반제 후 원전표 회계생성 안된 경우
 
   ❗️IMPORTANT <br> 1. 5)View Prepayment Application 내역 확인 <br> 2. 원전표 Status가 Partial이면 테이블 확인 <br> &emsp;- ap_invoice_distributions_all <br> &emsp;- ap_accounting_evnets_all
   {: .notice--primary}
