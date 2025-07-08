@@ -164,6 +164,7 @@ select * from ar_receipt_applications_all;
 
 ### - Type2
 - 인터페이스 진행중 상태 (AR)
+  ```sql
   INTERFACE_FLAG 값이 'P',
   ERP_IMPORT_FLAG 값이 'Y',
   TRX_NUMBER가 생성된 상태
