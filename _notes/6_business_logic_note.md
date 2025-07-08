@@ -16,19 +16,19 @@ sidebar:
 ## 안내문구
 > 📓 NOTE <br>
 > Useful information that users should know, even when skimming content.
-> {: .notice--info}
+> {: .notice--info} <br>
 > ⏰️ TIP <br>
 > Helpful advice for doing things better or more easily.
-> {: .notice}
+> {: .notice} <br>
 > ❗️ IMPORTANT <br>
 > Key information users need to know to achieve their goal.
-> {: .notice--primary}
+> {: .notice--primary} <br>
 > ⛔️ WARNING <br>
 > Urgent info that needs immediate user attention to avoid problems.
-> {: .notice--warning}
+> {: .notice--warning} <br>
 > ⚠️ CAUTION <br>
 > Advises about risks or negative outcomes of certain actions.
-> {: .notice--danger}
+> {: .notice--danger} <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
