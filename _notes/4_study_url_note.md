@@ -48,8 +48,8 @@ sidebar:
 <a href="https://kurly.career.greetinghr.com/ko/o/160303" class="btn btn--info">WCS 개발자 채용 바로가기</a> <br>
 
 > 📓 NOTE <br>
-> WMS와 WCS의 차이점
-> <a href="https://blog.naver.com/PostView.naver?blogId=prioprio2&logNo=222575497699" class="btn btn--info">물류용어 바로가기</a>
+> WMS와 WCS의 차이점 <br>
+> <a href="https://blog.naver.com/PostView.naver?blogId=prioprio2&logNo=222575497699" class="btn btn--note">물류용어 바로가기</a>
 > {: .notice--info}
 
 <a href="#" class="btn btn--success">Back to top</a> <br>
