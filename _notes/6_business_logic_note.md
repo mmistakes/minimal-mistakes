@@ -178,7 +178,7 @@ select * from ar_receipt_applications_all;
   ERP_IMPORT_FLAG 값이 'Y',
   INVOICE_NUM이 생성된 상태
   ```
-  ⏰️ TIP <br> 1. AP 인터페이스 확인 <br> &emsp;- ap_invoices_interface <br> &emsp;- ap_invoice_lines_interface <br> 2. FCM에 AP전표 없는 경우 AP 인터페이스 내역 삭제 <br> 3. 인터페이스 초기화 <br> &ensp;- INTERFACE_FLAG = 'N' <br> &ensp;- ERP_IMPORT_FLAG = 'N' <br> &ensp;- INVOICE_NUM = NULL <br> 4. 인터페이스 재실행 후 전표 생성
+  ⏰️ TIP <br> 1. AP 인터페이스 내역 확인 <br> &emsp;- ap_invoices_interface <br> &emsp;- ap_invoice_lines_interface <br> 2. FCM에 AP전표 미생성된 경우 AP 인터페이스 내역 삭제 <br> 3. 인터페이스 초기화 <br> &ensp;- INTERFACE_FLAG = 'N' <br> &ensp;- ERP_IMPORT_FLAG = 'N' <br> &ensp;- INVOICE_NUM = NULL <br> 4. 인터페이스 재실행 후 전표 생성
   {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
