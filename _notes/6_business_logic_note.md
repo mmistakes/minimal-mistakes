@@ -169,7 +169,16 @@ select * from ar_receipt_applications_all;
   ERP_IMPORT_FLAG 값이 'Y',
   TRX_NUMBER가 생성된 상태
   ```
-  ⏰️ TIP <br> 1. FCM에서 trx_number 확인 <br> 2. 전자세금계산서 발행여부 확인 <br> 3. 인터페이스 초기화 <br> &ensp;- INTERFACE_FLAG = 'Y' <br> &ensp;- ERP_IMPORT_FLAG = 'C' <br> &ensp;- 전자세금계산서 인터페이스 실행
+  ⏰️ TIP <br> 1. FCM에서 trx_number 확인 <br> 2. 전자세금계산서 발행여부 확인 <br> 3. 인터페이스 완료처리 <br> &ensp;- INTERFACE_FLAG = 'Y' <br> &ensp;- ERP_IMPORT_FLAG = 'C' <br> &ensp;- 전자세금계산서 인터페이스 실행
+  {: .notice}
+
+- 인터페이스 진행중 상태 (AP)
+  ```sql
+  INTERFACE_FLAG 값이 'P',
+  ERP_IMPORT_FLAG 값이 'Y',
+  INVOICE_NUM이 생성된 상태
+  ```
+  ⏰️ TIP <br> 1. AP 인터페이스 확인 <br> &emsp;- ap_invoices_interface <br> &emsp;- ap_invoice_lines_interface <br> 2. AP 인터페이스 내역 삭제 <br> 3. 인터페이스 초기화 <br> &ensp;- INTERFACE_FLAG = 'N' <br> &ensp;- ERP_IMPORT_FLAG = 'N' <br> &ensp;- INVOICE_NUM = NULL <br> 인터페이스 재실행 후 전표 생성
   {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
