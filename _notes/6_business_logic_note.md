@@ -156,7 +156,7 @@ select * from ar_receipt_applications_all;
   ERP_IMPORT_FLAG 값이 'Y',
   JOURNAL_NAME이 NULL인 상태
   ```
-  ⏰️ TIP <br> 1. gl_interface 테이블에 내역 여부 확인<br> 2. 내역 있으면 삭제 <br> 3. 인터페이스 초기화 <br> &nbsp;&nbsp;- INTERFACE_FLAG = 'N' <br> &nbsp;&nbsp;- ERP_IMPORT_FLAG = 'N' <br> &nbsp;&nbsp;- 인터페이스 재실행 후 전표 생성
+  ⏰️ TIP <br> 1. gl_interface 테이블에 내역 확인<br> 2. 내역 있으면 삭제 <br> 3. 인터페이스 초기화 <br> &nbsp;&nbsp;- INTERFACE_FLAG = 'N' <br> &nbsp;&nbsp;- ERP_IMPORT_FLAG = 'N' <br> &nbsp;&nbsp;- 인터페이스 재실행 후 전표 생성
   {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
@@ -208,7 +208,7 @@ select * from ar_receipt_applications_all;
   --법인카드 확인
   select * from eap_card_approve;
   ```
-  ⏰️ TIP <br> 1. 법인카드 초기화 <br> 2. 출장전표번호 삭제
+  ⏰️ TIP <br> 1. 법인카드 내역 초기화 <br> 2. 출장전표번호 삭제
   {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
@@ -242,7 +242,7 @@ select * from ar_receipt_applications_all;
   select * from ap_invoices_interface;
   select * from ap_invoice_lines_interface;
   ```
-  ⏰️ TIP <br> 1. AP 인터페이스 삭제 <br> 2. 법인카드 초기화 <br> 3. 인터페이스 초기화 및 재실행 후 AP전표 생성
+  ⏰️ TIP <br> 1. AP 인터페이스 내역 삭제 <br> 2. 법인카드 내역 초기화 <br> 3. 인터페이스 초기화 및 재실행 후 AP전표 생성
   {: .notice}
 
 
