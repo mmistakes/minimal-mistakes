@@ -49,7 +49,7 @@ sidebar:
 
 > 📓 NOTE <br>
 > WMS와 WCS의 차이점 <br>
-> <a href="https://blog.naver.com/PostView.naver?blogId=prioprio2&logNo=222575497699" class="btn btn--note">물류용어 바로가기</a>
+> <a href="https://blog.naver.com/PostView.naver?blogId=prioprio2&logNo=222575497699" class="btn btn--warning">물류용어 바로가기</a>
 > {: .notice--info}
 
 <a href="#" class="btn btn--success">Back to top</a> <br>
