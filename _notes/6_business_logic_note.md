@@ -100,9 +100,10 @@ select * from ap_invoice_distributions_all;
 ```
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
+
 ### - 선급금 반제
 - 선급금 전표 Distributions에 Tax라인이 있는 경우
-❗️ IMPORTANT <br> 1. 원전표에 선급금 반제하면 Tax라인 생성됨 <br> 2. TAX라인 없애려면 선급금 반제전에 Tax Calculation 변경 필요 <br> &emsp;- Header → Line 또는 None <br> &emsp;- TAX_CALCULATION_FLAG 변경: Y → L 또는 N
+  ❗️ IMPORTANT <br> 1. 원전표에 선급금 반제하면 Tax라인 생성됨 <br> 2. TAX라인 없애려면 선급금 반제전에 Tax Calculation 변경 필요 <br> &emsp;- Header → Line 또는 None <br> &emsp;- TAX_CALCULATION_FLAG 변경: Y → L 또는 N
   {: .notice}
 
 ## AR전표
