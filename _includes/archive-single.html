@@ -12,7 +12,7 @@
 
 <div class="{{ include.type | default: 'list' }}__item" topics="{{ post.topics | join: '_' }}">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
+    {% if (include.type == "grid" or include.type == "grid-recent") and teaser %}
       <div class="archive__item-teaser">
         <img src="{{ teaser | relative_url }}" alt="">
       </div>
@@ -24,6 +24,9 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+    {% if page.layout == "home" %}
+    <p class="archive__item-excerpt">Submitted: {{ post.sub_date | date: "%d %b '%y" }}</p>
+    {% endif %}
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>

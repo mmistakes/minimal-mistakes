@@ -9,7 +9,7 @@ layout: archive
 {% if paginator %}
   {% assign allarticles = paginator.articles %}
 {% else %}
-  {% assign allarticles = site.articles %}
+  {% assign allarticles = site.articles | slice: 0,8 %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
@@ -18,7 +18,6 @@ layout: archive
     {% if all_topics %}
       {% include archive-single.html type=entries_layout %}
     {% else %}
-    <p>{{ post.sub_date  }}</p>
       {% include archive-single.html type=entries_layout %}
     {% endif %}
   {% endfor %}
