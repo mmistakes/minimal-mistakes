@@ -5,6 +5,7 @@ related: patterns
 nurseries: HCNS
 author: Rachel Oughton
 title: "Symmetry"
+sub_date: 31-08-2023
 header:
   teaser: /assets/img/symmetry_peacock.jpg
 ---
@@ -41,3 +42,12 @@ There are shapes that have rotational symmetry but not reflectional symmetry, su
 ![The Isle of Man flag: A shape with rotational, but not reflectional, symmetry]({{site.baseurl}}/assets/img/isle_of_man.png "Isle of Man flag")
 
 These sorts of shapes are not easy to find in nature.
+
+<details>
+<summary>Click here for some examples</summary>
+
+One example of this is ...
+
+Another example of this is ...
+
+</details>
