@@ -9,10 +9,9 @@ sub_date: 2025-07-10
 header:
   teaser: /assets/img/approx_golden_spiral.jpeg
 ---
+One fascinating thing about nature is the occurrence of the **Fibonacci numbers**. The Fibonacci numbers are a sequence of numbers starting $$0,1,1,2,3,5,8,...$$. 
 
 [update the cover picture]:#
-
-One fascinating thing about nature is the occurrence of the **Fibonacci numbers**. The Fibonacci numbers are a sequence of numbers starting $$0,1,1,2,3,5,8,...$$. 
 
 We can construct the Fibonacci numbers by first starting with $$0,1$$ and then adding the last digit and the second to last digit to get the next digit. For example, to get the next digit here we would add $$0$$ and $$1$$ to get $$1$$. To get the next digit, we would add $$1$$ and $$1$$ to get $$2$$ and so on. 
 
