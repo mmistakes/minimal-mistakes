@@ -34,12 +34,6 @@
   bio: "Renee completed her BS in Neuroscience with a certificate in Statistics & Data Science at Yale University in 2021, where she studied the neural mechanisms of behavioral impairment in a rat model of absence epilepsy in Hal Blumenfeld's lab. She then spent a year working with Carsen Stringer at Janelia using computational methods to study neural representations of behavior in mouse recordings of tens of thousands of neurons with behavioral keypoint tracking. In the Nuttida lab, she is interested in using modeling in combination with experimental data to better understand the neural mechanisms underlying the effects of neurostimulation on cognition in humans. Outside of lab, she enjoys playing [card, board, video] games, walking in parks, and exploring the city."
   avatar: "/assets/images/people/renee.jpg"
 
-- name: "Salma Elhassa"
-  position: "PhD Student in Biomedical Engineering"
-  email: "salma.elhassa [at] columbia.edu"
-  bio: "Salma received her BS in Biology Bioinformatics from CUNY Hunter College in 2022. During her undergraduate studies, she worked in the lab of Eric Nestler at Icahn School of Medicine Mount Sinai. Salma then took part in the NIH Postbaccalaureate Research Education Program as a research scholar at Baylor College of Medicine in Kelly Bijanki’s lab and in collaboration with Sameer Sheth, where she studied the change in depression symptom severity of inpatient deep brain stimulation treatment. Currently, Salma is interested in exploring the neural mechanisms of perceptual and cognitive flexibility. Her project leverages single-neuron recordings in humans with methods from statistics and computational neuroscience. Outside the lab she enjoys reading, writing creative pieces, and exploring places in her hometown in Queens."
-  avatar: "/assets/images/people/salma.jpg"
-
 - name: "Daria Kussovska"
   position: "PhD Student in Biomedical Engineering"
   email: "dnk2118 [at] columbia.edu"
