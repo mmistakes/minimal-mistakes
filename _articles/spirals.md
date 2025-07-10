@@ -25,13 +25,12 @@ We can approximate an Archimedean spiral using triangles; this is called the **S
 ## Fermat spirals 
 A type of spiral that gets tighter as we move away from the centre is a **Fermat spiral**, which can be seen in the image below. Fermat spirals can sometimes be seen in the arrangement of leaves and seeds in plants. 
 
- ![A Fermat spiral.]({{site.baseurl}}/assets/img/fermats_spiral.jpeg "A Fermat spiral")
+![A Fermat spiral.]({{site.baseurl}}/assets/img/fermats_spiral.jpeg "A Fermat spiral")
 ![A sunflower.]({{site.baseurl}}/assets/img/sunflower_spiral_pixabay.jpeg "A sunflower")
 
 If we zoom in on the centre of the sunflower, we can see the spiral pattern.
 
 ![Spirals on a sunflower.]({{site.baseurl}}/assets/img/spirals_in_center_of_sunflower_pixabay.jpeg "Spirals on a sunflower")
-
 
 [note on infinity if I can find anything about this]:#
 
@@ -59,5 +58,3 @@ If we draw two squares with side length $$1$$ on top of each other, we can then 
 
 [will sketch the spirals over these images and put in the same image in Canva]:#
 [go through and find some class photos of spirals]:#
-
-

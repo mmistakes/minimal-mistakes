@@ -22,7 +22,7 @@ subtitle                 : "A collection of connections, and ideas to inspire."
 name                     : #"Your Name"
 description              : "The website for the Young Minds Big Maths project. Short articles on the mathematics that nursery children may naturally start to explore, highlighting connections between topics and activities, to help Early Years teachers plan an engaging explorative curriculum."
 url                      : "https://samfearn.github.io" # the base hostname & protocol for your site
-baseurl                  : "/ymbmweb"
+# baseurl                  : "/ymbmweb"
 repository               : "samfearn/ymbmweb" # GitHub username/repo-name
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/img/YMBM-Logo-200x240.png" # path of logo image to display in the masthead

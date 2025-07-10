@@ -4,18 +4,22 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Articles" }}</h3>
 
 {% if paginator %}
-  {% assign posts = paginator.posts %}
+  {% assign allarticles = paginator.articles %}
 {% else %}
-  {% assign posts = site.posts %}
+  {% assign allarticles = site.articles | sort: "sub_date" | slice: 0,8 %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+  {% for post in allarticles %}
+    {% if all_topics %}
+      {% include archive-single.html type=entries_layout %}
+    {% else %}
+      {% include archive-single.html type=entries_layout %}
+    {% endif %}
   {% endfor %}
 </div>
 

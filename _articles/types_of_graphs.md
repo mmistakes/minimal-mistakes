@@ -11,7 +11,8 @@ header:
 
 Once children become excited by an idea, they often want to test and compare it, which can involve collecting some data. An example is measuring the distances travelled by rolling cars down ramps. Once the children have collected data, there are many ways for them to display it. 
 
-There are many ways of displaying data; the preferred method will depend on the type of data collected. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, see our article on different types of data or click on the section below for a summary.
+<<<<<<< HEAD
+There are many ways of displaying data; the preferred method will depend on the type of data collected. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, [see our article on different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
 
 <details markdown ="1">
 <summary markdown="span">**Click here to learn about the different types of data**</summary>

@@ -14,11 +14,17 @@ A common playtime activity is stacking blocks. Most of the time, children want t
 
 One way of making a tower more stable is by using a larger base. Why does this work? Making the base of the tower larger means that the centre of mass of the tower can move further. A tower will topple if the centre of mass of the tower is not over the base. 
 
+<<<<<<< HEAD
 **Mass** is a word we use to describe the material of an object. The words mass and weight are often used interchangeably, even though they have slightly different scientific meanings.
 
 The **centre of mass** is the point where we model all of the mass of an object to act from. Looking around the classroom, children can find many objects with a wide base. If some of these objects were flipped upside down, they might not balance.
 
 If we think about a game of Jenga, we can see how the centre of mass affects the stability of the tower. On the left-hand side of the diagram below, we can see how the centre of mass of the top Jenga block is above the base of the tower. On the right-hand side of the diagram, we can see that the centre of mass of the top Jenga block is not above the base of the tower; this would mean that this top Jenga block would fall off the base. Here we have only looked at the centre of mass for the top block of the tower, not the whole tower. Finding the centre of mass for the tower would require some more complex geometry, which is not necessary for this discussion.
+=======
+The **centre of mass** is the point where we model all of the mass of an object to act from. Looking around the classroom, children can find many objects with a wide base. If some of these objects were flipped upside down, they might not balance.
+
+If we consider a game of Jenga, we can see how the centre of mass affects the stability of the tower. On the left-hand side of the diagram below, we can see how the centre of mass of the top Jenga block is above the base of the tower. On the right-hand side of the diagram, we can see that the centre of mass of the top Jenga block is not above the base of the tower; this would mean that this top Jenga block would fall off the base. Here we have only looked at the centre of mass for the top block of the tower, not the whole tower. Finding the centre of mass for the tower would require some more complex geometry, which is not necessary for this discussion.
+>>>>>>> master
 
 ![Two Jenga towers with different base sizes.]({{site.baseurl}}/assets/img/jenga_com.jpeg "Two Jenga towers")
 
@@ -40,7 +46,11 @@ A toy that showcases the use of the centre of mass is the balancing bird; this b
 
 ![Demonstration of finding the centre of mass of a 2D object.]({{site.baseurl}}/assets/img/plumb_lines.jpeg "Finding the centre of mass of a 2D object")
 
+<<<<<<< HEAD
 There are many examples of making things more stable by increasing the base size, for instance, stabilisers on bikes. Whilst the stabilisers should not touch the ground when the bike is balanced perfectly upright, they will when the bike begins to lean. This extra contact point widens the base of the bike, meaning it stays upright. In the image below, we can see the difference in the base size when the stabiliser comes in contact with the ground.
+=======
+There are many examples of making things more stable by increasing the base size, for instance, consider stabilisers on bikes. Whilst the stabilisers should not touch the ground when the bike is balanced perfectly upright, they will when the bike begins to lean. This extra contact point widens the base of the bike, meaning it stays upright. In the image below, we can see the difference in the base size when the stabiliser comes in contact with the ground.
+>>>>>>> master
 
 ![Two diagrams of the wheels of a bike with stabilisers, in the right hand diagram the stabiliser is in contact with the ground widening the base of the bike.]({{site.baseurl}}/assets/img/bike_stability.jpeg "Diagram of the wheels of a bike with stabilisers")
 
