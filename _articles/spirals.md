@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: fibonacci, nature
 author: Molly Ireland
+sub_date: 2025-07-02
 header:
   teaser: /assets/img/approx_golden_spiral.jpeg
 ---

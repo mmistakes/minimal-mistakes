@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: 
 author: Molly Ireland
+sub_date: 2025-07-10
 header:
   teaser: /assets/img/four_colour_theorem.jpeg
 ---

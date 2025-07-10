@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: ordering
 author: Molly Ireland
+sub_date: 2025-06-25
 header:
   teaser: /assets/img/All_permutations.jpeg
 ---

@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: graphs
 author: Molly Ireland
+sub_date: 2025-07-10
 header:
   teaser: /assets/img/stem_and_leaf.jpeg
 ---

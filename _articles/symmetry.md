@@ -5,7 +5,7 @@ related: patterns
 nurseries: HCNS
 author: Rachel Oughton, Molly Ireland
 title: "Symmetry"
-sub_date: 31-08-2023
+sub_date: 2023-08-31
 header:
   teaser: /assets/img/symmetry_peacock.jpg
 ---

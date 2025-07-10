@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: spirals, nature, sequences, fractals
 author: Molly Ireland
+sub_date: 2025-07-10
 header:
   teaser: /assets/img/approx_golden_spiral.jpeg
 ---
