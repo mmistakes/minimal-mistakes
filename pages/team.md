@@ -13,6 +13,7 @@ post_list: false
 
 ## Alumni
 
+- Salma Elhassa, MS student in Biomedical Engineering (2024-2025)
 - Jet Li, CS senior undergraduate student (Summer@SEAS)
 - Leon Dietrich Gruber, CS senior undergraduate student (Summer@SEAS)
 - James Yu, Physics & CS senior undergraduate student (Summer@SEAS)
