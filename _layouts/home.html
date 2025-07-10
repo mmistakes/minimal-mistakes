@@ -9,7 +9,7 @@ layout: archive
 {% if paginator %}
   {% assign allarticles = paginator.articles %}
 {% else %}
-  {% assign allarticles = site.articles | sort: "sub_date" | slice: 0,8 %}
+  {% assign allarticles = site.articles | sort: "sub_date" | reverse | slice: 0,8 %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
