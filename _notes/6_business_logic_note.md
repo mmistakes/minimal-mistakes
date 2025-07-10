@@ -210,7 +210,7 @@ select * from ar_receipt_applications_all;
   ORA-06512: at "APPS.RA_CUST_TRX_LINE_GL_DIST_BRI", line 75
   ORA-04088: error during execution of trigger 'APPS.RA_CUST_TRX_LINE_GL_DIST_BRI'
   ```
-  ⏰️ TIP <br> 1. db-lock 확인하기 <br> 2. gl_interface 내역 삭제 <br> 3. 인터페이스 초기화 <br> &emsp;- gl → INTERFACE_FLAG = 'N', ERP_IMPORT_FLAG = 'N', JOURNAL_NAME = NULL <br> &emsp;- ar -> ERP_IMPORT_FLAG = 'C' <br> 4. 인터페이스 재실행 후 전표 생성
+  ⏰️ TIP <br> 1. db-lock 확인하기 <br> 2. gl_interface 내역 삭제 <br> 3. 인터페이스 초기화 <br> &emsp;- gl → INTERFACE_FLAG = 'N', <br> &emsp;&emsp;ERP_IMPORT_FLAG = 'N', <br> &emsp;&emsp;JOURNAL_NAME = NULL <br> &emsp;- ar -> ERP_IMPORT_FLAG = 'C' <br> 4. 인터페이스 재실행 후 전표 생성
   {: .notice}
 
 <a href="#" class="btn btn--success">Back to top</a>
