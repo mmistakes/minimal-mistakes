@@ -1,0 +1,9 @@
+@misc{aquino2025brain2modeltransfertrainingsensory,
+      title={Brain2Model Transfer: Training sensory and decision models with human neural activity as a teacher}, 
+      author={Tomas Gallo Aquino and Victoria Liu and Habiba Azab and Raissa Mathura and Andrew J Watrous and Eleonora Bartoli and Benjamin Y Hayden and Paul Sajda and Sameer A Sheth and Nuttida Rungratsameetaweemana},
+      year={2025},
+      eprint={2506.20834},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE},
+      url={https://arxiv.org/abs/2506.20834}, 
+}
