@@ -8,6 +8,7 @@ topics:
 related: addition, subtraction
 nurseries: Group 1
 author: Milly McGowan
+sub_date: 2023-08-31
 header:
   teaser: /assets/img/count1.png
 ---

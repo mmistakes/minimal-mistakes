@@ -9,6 +9,7 @@ topics:
 related: addition, subtraction,
 nurseries:
 author: Milly McGowan
+sub_date: 2023-08-31
 header:
   teaser: /assets/img/numicon3.png
 ---

@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: gravity, ramps
 author: Molly Ireland
+sub_date: 2025-07-02
 header:
   teaser: /assets/img/rolling_pentagons_2.jpeg
 ---
