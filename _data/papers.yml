@@ -5,6 +5,9 @@
   pdf: "/assets/papers/Tomas_2025.pdf"
   bib: "/assets/bibs/Tomas_2025.txt"
   doi: "https://doi.org/10.48550/arXiv.2506.20834"
+  news:
+  - label: "1"
+    url: "https://www.instagram.com/p/DL6eA1TM63t/"
 
 - year: 2025
   title: "Learning and language in the unconscious human hippocampus."
