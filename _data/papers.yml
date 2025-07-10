@@ -1,4 +1,12 @@
 - year: 2025
+  title: "Brain2Model Transfer: Training sensory and decision models with human neural activity as a teacher"
+  authors: "Aquino TG, ..., Sajda P, Sheth SA*, Rungratsameetaweemana N*"
+  venue: "NeurIPS, Submitted."
+  pdf: "/assets/papers/Tomas_2025.pdf"
+  bib: "/assets/bibs/Tomas_2025.txt"
+  doi: "https://doi.org/10.48550/arXiv.2506.20834"
+
+- year: 2025
   title: "Learning and language in the unconscious human hippocampus."
   authors: "Katlowitz KA, ..., Rungratsameetaweemana N, Hayden BY∗, Sheth SA∗"
   venue: "bioRxiv: 10.1101/2025.04.09.648012, Submitted."
