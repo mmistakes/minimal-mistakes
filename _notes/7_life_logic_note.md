@@ -44,9 +44,16 @@ sidebar:
   ```
   2020.09 ~ 재직중 (4년 11개월)
   ```
+  
 ### 프로그램 운영 및 유지보수 관리
-- [ERP 프로그램]
-  &emsp;- AP, AR, GL, TR, 예산, Extension(커스텀) 모듈 관련 이슈사항 처리 <br> &emsp;- ERP 시스템과 I/F된 프로시저 및 테이블 모니터링 및 조치 <br> &emsp;- 출장품의/출장보고서 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹 및 전자세금계산서 시스템 모니터링
+- [ERP 프로그램] <br>
+  &emsp;- AP, AR, GL, TR, 예산, Extension(커스텀) 모듈 관련 이슈사항 처리 <br>
+  &emsp;- ERP 시스템과 I/F된 프로시저 및 테이블 모니터링 및 조치 <br>
+  &emsp;- 출장품의/출장보고서 전표발행 가이드 및 유지보수 <br>
+  &emsp;- 펌뱅킹 및 전자세금계산서 시스템 모니터링 <br>
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+  
 ## 학력
 ## 스킬
 ## 수상/자격증/기타
