@@ -53,7 +53,7 @@ sidebar:
 
 - [IT 계약]
 
-  📓 신규/기존 계약 체결을 합니다. <br> &emsp;- EDI 무역 관리 <br> &emsp;- IT 통합 유지보수 <br> &emsp;- 리모트뷰(원격제어)  <br> &emsp;- 리모트콜(원격지원) <br> &emsp;- 그룹웨어 <br> &emsp;- 인사시스템 <br> &emsp;- 장비렌탈 <br> &emsp;- 출입보안 <br> &emsp;- 자사주 정보 이용 <br> &emsp;- 내부회계관리 <br> &emsp;- AWS  <br> &emsp;- 화상회의(ZOOM) <br> &emsp;- 메일 아카이빙 <br> &emsp;- 어도비 제품(프리미어프로, 포토샵, 일러스트레이터, 아크로뱃프로) <br> &emsp;- ChatGPT
+  📓 신규/기존 계약 체결을 합니다. <br> &emsp;- EDI 무역 관리 <br> &emsp;- IT 통합 유지보수 <br> &emsp;- 리모트뷰(원격제어)  <br> &emsp;- 리모트콜(원격지원) <br> &emsp;- 그룹웨어 <br> &emsp;- 인사시스템 <br> &emsp;- 장비렌탈 <br> &emsp;- 출입보안 <br> &emsp;- 자사주 정보 이용 <br> &emsp;- 내부회계관리 <br> &emsp;- AWS  <br> &emsp;- 화상회의(ZOOM) <br> &emsp;- 메일 아카이빙 <br> &emsp;- 어도비 제품(동영상편집, 포토샵, 일러스트레이터 등) <br> &emsp;- ChatGPT
   {: .notice--info}
 
 <a href="#" class="btn btn--success">Back to top</a>
