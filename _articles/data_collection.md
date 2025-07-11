@@ -10,12 +10,12 @@ header:
   teaser: /assets/img/stem_and_leaf.jpeg
 ---
 
-Classroom experiments can not only be a fun way for children to learn about the world around them, but also a great opportunity to develop data collection techniques. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, see our article on different types of data or click on the section below for a summary.
+Classroom experiments can not only be a fun way for children to learn about the world around them, but also a great opportunity to develop data collection techniques. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, [see our article on different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
 
 <details markdown ="1">
 <summary markdown="span">**Click here to learn about the different types of data**</summary>
 <p></p>
-**Quantitative** data can be recorded using a number. This data could be **discrete**, taking only specific values from the real numbers, such as whole numbers. This data could instead be **continuous**, taking any value from the real numbers. 
+**Quantitative** data can be recorded using a number. This data could be **discrete**, taking only specific values from the real numbers, such as whole numbers. Some quantitative data can be **continuous**, taking any value from the real numbers. 
 
 The other type of data we can collect is **qualitative** data. This is non-numerical data, such as a person's favourite animal or the colour of a car.
 
@@ -94,9 +94,8 @@ If we have more than one category we want to count, we can do so with a **table*
 | Total                           | 9                               | 11        | 20        |
 
 ## Stem and Leaf Plots
-A more complex method for recording quantitative data is **stem and leaf plots**. In the stem and leaf plot below, we record the shoe sizes of the children in our data. Here $$109|3$$ means $$109.3$$. 
+A more complex method for recording quantitative data is **stem and leaf plots**. In the stem and leaf plot below, we record the heights of the children in our data. Here $$109|3$$ means $$109.3$$. 
 
 ![A stem and leaf plot.]({{site.baseurl}}/assets/img/stem_and_leaf.jpeg "A stem and leaf plot")
 
 Once collected, data can then be displayed in different ways. To see some of these ways, see our article on different types of graphs. 
-
