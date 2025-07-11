@@ -41,9 +41,7 @@ sidebar:
   
 ## 경력
   > ⚠️ 주식회사STX <br>
-  > {: .notice--danger}
-  
-  > ⚠️ ERP 개발자로 일하는 중입니다. <br>
+  > ERP 개발자로 일하는 중입니다. <br>
   > 2020.09 ~ 재직중 (4년 11개월)
   > {: .notice--danger}
   
