@@ -48,7 +48,7 @@ sidebar:
 ### - 프로그램 운영 및 유지보수 관리 
 - [ERP 프로그램]
   
-  📓 문의 접수 후 안내를 합니다. <br> &emsp;- AP, AR, GL 모듈 관련 이슈사항 처리 <br> &emsp;- TR(예적금, 유가증권, 미수수익, 대여금, 수금생성, B/L인수) 프로세스 점검 및 안내 <br> &emsp;- 예산 업로드 실행 및 내역 관련 검증 <br> &emsp;- Extension(명세서, 부가세, Concurrent) 검증 및 모니터링 <br> &emsp;- ERP와 I/F된 프로시저 모니터링 및 에러 조치 <br> &emsp;- 출장 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹/전자세금계산서/EDI 시스템 모니터링
+  📓 문의 접수 후 안내를 합니다. <br> &emsp;- AP, AR, GL 모듈 관련 이슈사항 처리 <br> &emsp;- TR(예적금, 유가증권, 수금생성, B/L인수) 프로세스 점검 및 안내 <br> &emsp;- 예산 업로드 실행 및 내역 관련 검증 <br> &emsp;- 명세서, 부가세, Concurrent 검증 및 모니터링 <br> &emsp;- ERP와 I/F된 프로시저 모니터링 및 에러 조치 <br> &emsp;- 출장 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹/전자세금계산서/EDI 시스템 모니터링
   {: .notice--info}
 
 - [IT 계약]
