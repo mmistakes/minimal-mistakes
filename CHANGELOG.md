@@ -6,6 +6,7 @@
 
 - Hide page__footer-follow if there are no links nor atom feed. (#5279)
 - Add HTML escaping for some titles, labels and metada that was missing. (#5276)
+- Add optional `footer.since` for copyright time range. (#5275)
 
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
