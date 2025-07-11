@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-06-16T00:55:04+08:00'
+last_modified_at: '2025-07-11T09:48:51+08:00'
 toc: false
 ---
 
@@ -15,6 +15,14 @@ toc: false
 -->
 
 {% raw %}
+## Unreleased
+
+### Enhancements
+
+- Hide page__footer-follow if there are no links nor atom feed. [#5279](https://github.com/mmistakes/minimal-mistakes/issues/5279)
+- Add HTML escaping for some titles, labels and metada that was missing. [#5276](https://github.com/mmistakes/minimal-mistakes/issues/5276)
+- Add optional `footer.since` for copyright time range. [#5275](https://github.com/mmistakes/minimal-mistakes/issues/5275)
+
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
