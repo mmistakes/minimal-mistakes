@@ -47,14 +47,14 @@ sidebar:
   
 ### - 프로그램 운영 및 유지보수 관리 
 - [ERP 프로그램]
-  ***
-  ❗️IMPORTANT <br> &emsp;- AP, AR, GL, TR, 예산, Extension(커스텀) 모듈 관련 이슈사항 처리 <br> &emsp;- ERP 시스템과 I/F된 프로시저 및 테이블 모니터링 및 조치 <br> &emsp;- 출장품의/출장보고서 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹 및 전자세금계산서 시스템 모니터링
-  {: .notice--primary}
+  
+  📓 <br> &emsp;- AP, AR, GL, TR, 예산, Extension(커스텀) 모듈 관련 이슈사항 처리 <br> &emsp;- ERP 시스템과 I/F된 프로시저 및 테이블 모니터링 및 조치 <br> &emsp;- 출장품의/출장보고서 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹/전자세금계산서/EDI 시스템 모니터링
+  {: .notice--info}
 
-- 선급금 반제 후 원전표 회계생성 안된 경우
+- [IT 계약]
 
-  ❗️IMPORTANT <br> 1. 5)View Prepayment Application 내역 확인 <br> 2. 원전표 Status가 Partial이면 테이블 확인 <br> &emsp;- ap_invoice_distributions_all <br> &emsp;- ap_accounting_evnets_all
-  {: .notice--primary}
+  📓 <br> &emsp;- EDI 무역 관리 <br> &emsp;- IT 통합 유지보수 <br> &emsp;- 리모트뷰(원격제어)/리모트콜(원격지원) <br> &emsp;- 그룹웨어 <br> &emsp;- 인사시스템 <br> &emsp;- 장비렌탈 <br> &emsp;- 출입보안 <br> &emsp;- 자사주 정보 이용 <br> &emsp;- 내부회계관리 <br> &emsp;- AWS
+  {: .notice--info}
 
 <a href="#" class="btn btn--success">Back to top</a>
 <br>  
