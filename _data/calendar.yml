@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A9 - Projekt mit dem Staaken Treff",
-    "title": "A9 - Projekt mit dem Staaken Treff",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmIyYm1kOGw2NDBua2djdGl1N2ZtdTl0dW4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2025-07-11T11:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2025-07-11T14:00:00+02:00"
-    },
-    "created": "2025-07-01T08:11:23.000Z",
-    "updated": "2025-07-01T08:11:23.459Z"
-  },
-  {
-    "image_path": null,
     "alt": "A4 - Ausflug zum Instrumentenmuseum",
     "title": "A4 - Ausflug zum Instrumentenmuseum",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2025-06-26T12:39:37.000Z",
     "updated": "2025-06-26T12:39:37.924Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz",
+    "title": "3. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Z2o3a2hjYmtuOHZodmtudjFiZjVhM2drNXMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2025-07-15T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2025-07-15T16:30:00+02:00"
+    },
+    "created": "2025-06-15T09:01:30.000Z",
+    "updated": "2025-06-15T09:01:48.908Z"
   }
 ]
