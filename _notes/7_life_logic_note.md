@@ -106,8 +106,9 @@ sidebar:
 > - 운송용역 매출
   - TMS -> GL로 가는 인터페이스 보완개발(JE_SOURCE : TMS , JE_CATEGORY : 운송용역)
 > - 운송진행률
-  - 원가 -> GL로 가는 인터페이스 보완개발 (JE_SOURCE : Costing , JE_CATEGORY : 운송진행률)
+  - 원가 -> GL로 가는 인터페이스 보완개발(JE_SOURCE : Costing , JE_CATEGORY : 운송진행률)
 > - 운송용역 관련 B/L번호가 중복되지 않도록 보완개발
+> - 상품 매출 시점부터 운송진행률, 운송용역까지의 회계/원가 분개처리 프로세스 보완개발(IFRS15)
     
 #### 2024년 7월
 > <h4> 트롤리고 거래 실적 구분 위한 FCM 보완개발 </h4> <br>
