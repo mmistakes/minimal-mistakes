@@ -132,12 +132,12 @@ sidebar:
 <br> 
 
 ### - 2.2.유지보수 관리 
-> #### [IT 계약]
+> #### 1️⃣ IT 계약
 
 > 📓 신규/기존 계약 체결을 합니다. <br> &emsp;- EDI 무역 관리 <br> &emsp;- IT 통합 유지보수 <br> &emsp;- 리모트뷰(원격제어)  <br> &emsp;- 리모트콜(원격지원) <br> &emsp;- 그룹웨어 <br> &emsp;- 인사시스템 <br> &emsp;- 장비렌탈 <br> &emsp;- 출입보안 <br> &emsp;- 자사주 정보 이용 <br> &emsp;- 내부회계관리 <br> &emsp;- AWS  <br> &emsp;- 화상회의(ZOOM) <br> &emsp;- 메일 아카이빙 <br> &emsp;- 어도비 제품(동영상편집, 포토샵, 일러스트레이터 등) <br> &emsp;- ChatGPT
 > {: .notice--info}
 
-> #### [거래처]
+> #### 2️⃣ 거래처
 
 > 📓 유지보수를 위해 기술적으로 도와줍니다. <br> &emsp;- 엠투엠글로벌 <br> &emsp;- 시큐인프라 <br> &emsp;- 알서포트  <br> &emsp;- 헬프유 <br> &emsp;- 다우기술 <br> &emsp;- 이수시스템 <br> &emsp;- 한국렌탈 <br> &emsp;- 케이티텔레캅 <br> &emsp;- 코스콤 <br> &emsp;- 씨에이에스 <br> &emsp;- 메가존클라우드 <br> &emsp;- ZOOM <br> &emsp;- 이노탭 <br> &emsp;- Adobe <br> &emsp;- ChatGPT
 > {: .notice--info}
