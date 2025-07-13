@@ -48,7 +48,7 @@ sidebar:
   > {: .notice--danger}
   
 ### - 프로그램 운영
-  #### &emsp;[ERP 프로그램 운영]
+> #### &emsp;[ERP 프로그램 운영]
   
   > 📓 문의 접수 후 안내를 합니다. <br> &emsp;- AP, AR, GL 모듈 관련 이슈사항 처리 <br> &emsp;- TR(예적금, 유가증권, 수금생성, B/L인수) 프로세스 점검 및 안내 <br> &emsp;- 예산 업로드 실행 및 내역 관련 검증 <br> &emsp;- 명세서, 부가세, Concurrent 검증 및 모니터링 <br> &emsp;- 원가 모니터링 후 미착상품과 상품대체 사후조치 <br> &emsp;- ERP와 I/F된 프로시저 모니터링 및 에러 조치 <br> &emsp;- 출장 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹/전자세금계산서/EDI 시스템 모니터링 <br> &emsp;- Web Adi 관련 매크로 설정 및 기능 안내 <br> &emsp;- 프로그램 보완개발 및 신규개발 진행 <br> &emsp;- 사용자 계정 생성 및 권한 관리 <br> &emsp;- 데이터 추출 및 전달 <br> &emsp;- 프로세스 안내 및 데이터 의미 설명 
   > {: .notice--info}
