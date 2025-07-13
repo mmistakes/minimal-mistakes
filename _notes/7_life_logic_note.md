@@ -56,7 +56,7 @@ sidebar:
 &emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### &emsp;&emsp;2025년 6월
+##### 2025년 6월
   
 > <h4>예산 업로드 관련 사용자 정보 입력 보완개발</h4> <br>
 > 2025.06.25 ~ 2025.06.27
@@ -73,7 +73,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### 2025년 5월
+#### 2025년 5월
   
 > <h4>TMS 전표번호 조회 화면 신규 개발</h4> <br>
 > 2025.05.13 ~ 2025.06.05
@@ -84,7 +84,7 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### 2025년 1월
+#### 2025년 1월
   
 > <h4>유가증권 평가처리 보완개발</h4> <br>
 > 2025.01.02 ~ 2025.01.03
