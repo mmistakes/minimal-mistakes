@@ -12,8 +12,8 @@ sidebar:
 
 🏢 업무 로직 정리!
 <br><br><br>
-# 마크다운
-## 안내문구
+# 1.마크다운
+## 1.1.안내문구
 > 📓 NOTE <br>
 > Useful information that users should know, even when skimming content.
 > {: .notice--info}
@@ -36,7 +36,7 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 헤더문법
+## 1.2.헤더문법
 > ⏰️ TIP <br>
 > #의 갯수에 따라 헤더의 크기가 달라져요.
 > {: .notice}
@@ -59,7 +59,7 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## Quote(인용)문법
+## 1.3.Quote(인용)문법
 > ⏰️ TIP <br>
 > ">"의 갯수에 따라 깊이가 달라져요.
 > {: .notice}
@@ -76,7 +76,7 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 수평선
+## 1.4.수평선
 > ⏰️ TIP <br>
 > *** 또는 - - - 또는 <hr> 로 표현.
 > {: .notice}
@@ -96,8 +96,8 @@ sidebar:
 <br>
 
 <br><br>
-# ERP
-## AP전표
+# 2.ERP
+## 2.1.AP전표
 ```sql
 select * from ap_invoices_all;
 select * from ap_invoice_distributions_all;
@@ -119,7 +119,7 @@ select * from ap_invoice_distributions_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## AR전표
+## 2.2.AR전표
 ```sql
 select * from ra_customer_trx_all;
 select * from ra_customer_lines_all;
@@ -127,7 +127,7 @@ select * from ra_customer_lines_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## GL전표
+## 2.3.GL전표
 ```sql
 select * from gl_je_headers;
 select * from gl_je_lines;
@@ -135,7 +135,7 @@ select * from gl_je_lines;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 거래처
+## 2.4.거래처
 - 매입(AP)
   ```sql
   select * from po_vendors;
@@ -149,7 +149,7 @@ select * from gl_je_lines;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## AR Receipt
+## 2.5.AR Receipt
 ```sql
 select * from ar_cash_receipts_all;
 select * from ar_receipt_applications_all;
@@ -157,7 +157,7 @@ select * from ar_receipt_applications_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 인터페이스 에러
+## 2.6.인터페이스 에러
 ### - Type1
 - Salesperson 미등록
   ```sql
@@ -216,7 +216,7 @@ select * from ar_receipt_applications_all;
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
-## 출장보고서 초기화
+## 2.7.출장보고서 초기화
 ### - 출장보고서 반려된 경우
   ```sql
   --출장보고서 내역 확인
@@ -281,22 +281,22 @@ select * from ar_receipt_applications_all;
 <br>
 
 <br><br>
-# 그룹웨어
-## 메일 보내기
+# 3.그룹웨어
+## 3.1.메일 보내기
 <br>
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 <br><br>
-# 윈도우
-## 환경변수
+# 4.윈도우
+## 4.1.환경변수
 
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 <br><br>
-# 출입증
-## 출입카드 등록
+# 5.출입증
+## 5.1.출입카드 등록
 > ```
 > jai
 > ```
@@ -304,7 +304,7 @@ select * from ar_receipt_applications_all;
 ### - Step1. 방재실 스피드게이트 등록
 ### - Step2. 출입시스템 단말기 등록
 ### - Step3. 복합기 UID 등록
-## 출입카드 전달
+## 5.2.출입카드 전달
 ### - Step1. 총무팀 담당자에게 전달
 ### - Step2. 임직원 출입증 사용
 ## 출입카드 회수
