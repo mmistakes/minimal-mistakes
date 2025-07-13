@@ -12,6 +12,7 @@ sidebar:
 
 🏡 생활 로직 정리!
 <br><br><br>
+<!--
 # 분리수거
   1. 매주 목요일
   2. 종이류, 프라스틱, 비닐 분류
@@ -34,6 +35,7 @@ sidebar:
 
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
+-->
 
 # 이력서
 ## 1.소개
