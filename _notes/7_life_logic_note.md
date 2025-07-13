@@ -48,15 +48,15 @@ sidebar:
   > {: .notice--danger}
   
 ### - 프로그램 운영
-#### [ERP 프로그램 운영]
+#### &emsp;[ERP 프로그램 운영]
   
   > 📓 문의 접수 후 안내를 합니다. <br> &emsp;- AP, AR, GL 모듈 관련 이슈사항 처리 <br> &emsp;- TR(예적금, 유가증권, 수금생성, B/L인수) 프로세스 점검 및 안내 <br> &emsp;- 예산 업로드 실행 및 내역 관련 검증 <br> &emsp;- 명세서, 부가세, Concurrent 검증 및 모니터링 <br> &emsp;- 원가 모니터링 후 미착상품과 상품대체 사후조치 <br> &emsp;- ERP와 I/F된 프로시저 모니터링 및 에러 조치 <br> &emsp;- 출장 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹/전자세금계산서/EDI 시스템 모니터링 <br> &emsp;- Web Adi 관련 매크로 설정 및 기능 안내 <br> &emsp;- 프로그램 보완개발 및 신규개발 진행 <br> &emsp;- 사용자 계정 생성 및 권한 관리 <br> &emsp;- 데이터 추출 및 전달 <br> &emsp;- 프로세스 안내 및 데이터 의미 설명 
   > {: .notice--info}
 
-&emsp;<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### 2025년 6월
+##### &emsp;2025년 6월
   
 > <h4>예산 업로드 관련 사용자 정보 입력 보완개발</h4> <br>
 > 2025.06.25 ~ 2025.06.27
@@ -73,7 +73,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### 2025년 5월
+##### &emsp;2025년 5월
   
 > <h4>TMS 전표번호 조회 화면 신규 개발</h4> <br>
 > 2025.05.13 ~ 2025.06.05
@@ -81,10 +81,10 @@ sidebar:
 > - 회계전표 리포트, 전표번호 검색, 레코드 음영 및 전표 화면 팝업 기능 제공
 > - 회계팀 사용자에게 정확한 전표번호 제공, 회계 업무 처리의 속도 향상
 
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### 2025년 1월
+##### &emsp;2025년 1월
   
 > <h4>유가증권 평가처리 보완개발</h4> <br>
 > 2025.01.02 ~ 2025.01.03
@@ -98,10 +98,10 @@ sidebar:
 > - 작성자와 검토자의 각 화면에서 예산 검증시 돌아가는 로직이 상이하여 동일한 로직으로 적용
 > - 사용자에게 명확한 예산 초과 경고 메세지를 제공, 예산 관리 프로세스의 신뢰성 향상
 
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-##### 2024년 8월
+##### &emsp;2024년 8월
 
 > <h4> 트롤리고 거래 실적 구분 위한 FCM 보완개발 요청의 건 (추가사항) </h4> <br>
 > 2024.08.23 ~ 2024.08.30
@@ -112,7 +112,7 @@ sidebar:
 > - 운송용역 관련 B/L번호가 중복되지 않도록 보완개발
 > - 상품 매출 시점부터 운송진행률, 운송용역까지의 회계/원가 분개처리 프로세스 보완개발(IFRS15)
     
-##### 2024년 7월
+##### &emsp;2024년 7월
 
 > <h4> 트롤리고 거래 실적 구분 위한 FCM 보완개발 </h4> <br>
 > 2024.07.02 ~ 2024.07.29
@@ -120,7 +120,7 @@ sidebar:
 > - FCM 전표 생성 → GL 이전 → 계정별원장 조회 가능하도록 프로세스 보완개발
 > - 트롤리고 거래건을 구분하여 내역 제공, 원장 관리 편의성 향상
 
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
 #### [서버 및 OA 운영]
