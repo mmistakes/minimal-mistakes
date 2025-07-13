@@ -297,6 +297,9 @@ select * from ar_receipt_applications_all;
 <br><br>
 # 출입증
 ## 출입카드 등록
+> ```
+> jai
+> ```
 ### - Step1. 방재실 스피드게이트 등록
 ### - Step2. 출입시스템 단말기 등록
 ### - Step3. 복합기 UID 등록
@@ -306,6 +309,9 @@ select * from ar_receipt_applications_all;
 ## 출입카드 회수
 ### - Step1. 임직원 출입증 반납
 ### - Step2. 출입권한 해제
+> ```
+> kkr
+> ```
 ### - Step3. 복합기 UID 삭제
 
 <a href="#" class="btn btn--success">Back to top</a>
