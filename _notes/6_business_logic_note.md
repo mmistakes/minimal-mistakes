@@ -277,7 +277,6 @@ select * from ar_receipt_applications_all;
   ⏰️ TIP <br> 1. AP 인터페이스 내역 삭제 <br> 2. 법인카드 내역 초기화 <br> 3. 인터페이스 초기화 및 재실행 후 AP전표 생성
   {: .notice}
 
-
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
@@ -291,6 +290,32 @@ select * from ar_receipt_applications_all;
 <br><br>
 # 윈도우
 ## 환경변수
+
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+<br><br>
+# 출입증
+## 출입카드 등록
+### - Step1. 방재실 스피드게이트 등록
+### - Step2. 출입시스템 단말기 등록
+### - Step3. 복합기 UID 등록
+## 출입카드 전달
+### - Step1. 총무팀 담당자에게 전달
+### - Step2. 임직원 출입증 사용
+## 출입카드 회수
+### - Step1. 임직원 출입증 반납
+### - Step2. 출입권한 해제
+### - Step3. 복합기 UID 삭제
+
+<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+<br><br>
+# PC
+## 노트북 렌탈 신청
+## 노트북 반납
+
 
 
 
