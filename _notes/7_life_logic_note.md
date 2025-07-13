@@ -11,32 +11,30 @@ sidebar:
 ---
 
 🏡 생활 로직 정리!
-<br><br><br>
-<!--
+<!--<br><br><br>
 # 분리수거
   1. 매주 목요일
   2. 종이류, 프라스틱, 비닐 분류
--->
+     
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 <br><br>
-<!--
 # 교회가기
   1. 매달 첫째주 일요일
   2. 가족들과 점심식사
--->
+
 <a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 <br><br>
-<!--
+
 # 아침식사
   1. 프로틴 물에 타먹기
   2. 계란이나 선식으로 대체재 섭취 가능
--->
+
 <a href="#" class="btn btn--success">Back to top</a>
-<br>
+<br>-->
 
 # 이력서
 ## 1.소개
