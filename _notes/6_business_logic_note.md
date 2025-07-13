@@ -300,6 +300,7 @@ select * from ar_receipt_applications_all;
 > ```
 > jai
 > ```
+
 ### - Step1. 방재실 스피드게이트 등록
 ### - Step2. 출입시스템 단말기 등록
 ### - Step3. 복합기 UID 등록
@@ -312,6 +313,7 @@ select * from ar_receipt_applications_all;
 > ```
 > kkr
 > ```
+
 ### - Step3. 복합기 UID 삭제
 
 <a href="#" class="btn btn--success">Back to top</a>
