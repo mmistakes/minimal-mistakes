@@ -86,9 +86,6 @@ sidebar:
 > - 회계팀 사용자에게 정확한 전표번호 제공, 회계 업무 처리의 속도 향상
 > {: .notice}
 
-&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
-<br> 
-
 - 2025년 1월
   
 > <h4>유가증권 평가처리 보완개발</h4> <br>
@@ -108,7 +105,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-> - 2024년 8월
+- 2024년 8월
 
 > <h4> 트롤리고 거래 실적 구분 위한 FCM 보완개발 요청의 건 (추가사항) </h4> <br>
 > 2024.08.23 ~ 2024.08.30
@@ -119,9 +116,6 @@ sidebar:
 > - 운송용역 관련 B/L번호가 중복되지 않도록 보완개발
 > - 상품 매출 시점부터 운송진행률, 운송용역까지의 회계/원가 분개처리 프로세스 보완개발(IFRS15)
 > {: .notice}
-
-&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
-<br> 
     
 - 2024년 7월
 
