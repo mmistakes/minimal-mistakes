@@ -7,19 +7,21 @@ related: spirals, nature, sequences, fractals
 author: Molly Ireland
 sub_date: 2025-07-10
 header:
-  teaser: /assets/img/approx_golden_spiral.jpeg
+  teaser: /assets/img/fibonacci_pompoms.jpeg
 ---
 One fascinating thing about nature is the occurrence of the **Fibonacci numbers**. The Fibonacci numbers are a sequence of numbers starting $$0,1,1,2,3,5,8,...$$. 
-
-[update the cover picture]:#
 
 We can construct the Fibonacci numbers by first starting with $$0,1$$ and then adding the last digit and the second to last digit to get the next digit. For example, to get the next digit here we would add $$0$$ and $$1$$ to get $$1$$. To get the next digit, we would add $$1$$ and $$1$$ to get $$2$$ and so on. 
 
  ![The construction of the Fibonacci numbers.]({{site.baseurl}}/assets/img/fibonacci_sequence.jpeg "The construction of the Fibonacci numbers")
 
-The first $$20$$ Fibonacci numbers are: $$0,1,1,2,3,5,8,13,21,34,55,89,144, 233, 377, 610, 987, 1597, 2584$$ and $$4181$$. These numbers are a good example of the use of a repeated mathematical rule and also occur in nature, making them interesting to talk about with children. 
+The first $$20$$ Fibonacci numbers are: $$0,1,1,2,3,5,8,13,21,34,55,89,144, 233, 377, 610, 987, 1597, 2584$$ and $$4181$$. These numbers are a good example of the use of a repeated mathematical rule and also occur in nature, making them interesting to talk about with children. In the image below, we can see how children have explored the Fibonacci numbers using different coloured pompoms. 
 
-The Fibonacci numbers can be found in plants. [[In the image below, we can see that … ]]
+ ![Exploring the Fibonacci numbers with pompoms.]({{site.baseurl}}/assets/img/fibonacci_pompoms.jpeg "Exploring the Fibonacci numbers with pompoms")
+
+The Fibonacci numbers can also be found in plants. In the image below, we can see that the sunflower has $$21$$ spirals coming from the centre in one direction. In the other direction, the sunflower has $$34$$ spirals. The numbers $$21$$ and $$34$$ are consecutive Fibonacci numbers. The sunflower uses large Fibonacci numbers, but spirals occurring in smaller consecutive Fibonacci numbers can be found elsewhere in nature, for example, in pinecones. Children could try to count the spirals in pinecones using tape to make the spirals easier to see.
+
+ ![Two images side by side showing the spirals in both directions in the centre of a sunflower.]({{site.baseurl}}/assets/img/fibonacci_spirals_21_34.jpeg "Spirals in a sunflower")
 
 The Fibonacci numbers can also be used to construct the **golden spiral**. The golden spiral can be seen throughout nature, in the snail shells, for example. The Fibonacci numbers can be used to construct an approximation of the golden spiral as they approximate an important number called the **golden ratio**. The golden ratio $$1.618033…$$ is used throughout mathematics but also in other areas such as art and architecture. The golden ratio can be approximated by the Fibonacci numbers by taking one number in the sequence and dividing it by the previous number in the sequence. As the Fibonacci numbers become larger, this number becomes closer to the golden ratio. We can see this from the table below.
 
@@ -45,3 +47,4 @@ An approximation of the golden spiral can be seen below. If you haven’t alread
 
 ![An approximation of the Golden spiral.]({{site.baseurl}}/assets/img/approx_golden_spiral.jpeg "An approximation of the Golden spiral")
 ![A snail shell.]({{site.baseurl}}/assets/img/snail_spiral.jpeg "A snail shell")
+
