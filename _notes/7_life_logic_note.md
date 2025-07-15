@@ -186,7 +186,7 @@ sidebar:
   - 근무지: 대구
   - 유지보수 운영관리 경험
   ```
-  > ⏰️ 근무내용:
+  ⏰️ 업무: <br>
   1. ITSM 시스템을 통한 업무협의 및 사용자 요구사항 처리
   2. 프로세스 결함에 대한 조치계획(일정,담당자 등)을 수립하여 처리
   {: .notice}
@@ -198,7 +198,7 @@ sidebar:
   - 근무지: 용산
   - SI프로젝트 개발 환경 경험
   ```
-  - ⏰️ 근무내용:
+  ⏰️ 업무: <br>
   1. 사업괸리, 중기계획관리, 예산편성관리 담당
   2. 군수 데이터 표준화 및 오류 식별 후 코드 재정립
   3. 군수 보급품(1~9종) 관련된 예산 프로세스 개발 및 테스트
@@ -210,7 +210,19 @@ sidebar:
 <br><br>
 # 3. 학력
 ## 3.1. 충남대학교
+- 2015년 3월 ~ 2017년 2월
+  ```
+  전공: 경제학
+  학점
+  ```
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br> 
+
 ## 3.2. California State University, Long Beach
+
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
+
 ## 3.3. El Camino Community College
 ## 3.4. Mary Star of the Sea High School
 ## 3.5. St. Joseph High School
