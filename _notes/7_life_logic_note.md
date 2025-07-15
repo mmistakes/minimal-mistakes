@@ -198,6 +198,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
+<br><br>
 # 3. 학력
 ## 3.1. 충남대학교
 ## 3.2. California State University, Long Beach
@@ -209,7 +210,10 @@ sidebar:
 ## 3.8. 상갈중학교
 ## 3.9. 상갈초등학교
 ## 3.10. 돌마초등학교
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
 
+<br><br>
 # 4. 스킬
 # 5. 수상/자격증/기타
 # 6. 외국어
