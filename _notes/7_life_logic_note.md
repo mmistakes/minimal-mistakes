@@ -197,6 +197,17 @@ sidebar:
 <br>  
 
 # 3. 학력
+## 3.1. 충남대학교
+## 3.2. California State University, Long Beach
+## 3.3. El Camino Community College
+## 3.4. Mary Star of the Sea High School
+## 3.5. St. Joseph High School
+## 3.6. 중앙고등학교
+## 3.7. 불곡중학교
+## 3.8. 상갈중학교
+## 3.9. 상갈초등학교
+## 3.10. 돌마초등학교
+
 # 4. 스킬
 # 5. 수상/자격증/기타
 # 6. 외국어
