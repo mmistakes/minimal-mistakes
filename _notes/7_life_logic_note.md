@@ -12,7 +12,7 @@ sidebar:
 
 🏡 생활 로직 정리!
 
-# 1.소개
+# 1. 소개
 - 안녕하세요.
 - 8년차 소프트웨어 개발자 입니다.
 - ERP 개발자로 일하는 중 입니다.
@@ -20,7 +20,7 @@ sidebar:
 &emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
   
-# 2.경력
+# 2. 경력
 > ⚠️ 주식회사STX <br>
 > 2020.09 ~ 재직중 (4년 11개월)
 > {: .notice--danger}
@@ -31,7 +31,7 @@ sidebar:
 
 
   
-## 2.1.프로그램 운영
+## 2.1. 프로그램 운영
 ### - ERP 프로그램 운영
   
 📓 문의 접수 후 안내를 합니다. <br> &emsp;- AP, AR, GL 모듈 관련 이슈사항 처리 <br> &emsp;- TR(예적금, 유가증권, 수금생성, B/L인수) 프로세스 확인 <br> &emsp;- 예산 업로드 실행 및 내역 관련 검증 <br> &emsp;- 명세서, 부가세, Concurrent 검증 및 모니터링 <br> &emsp;- 원가 모니터링 후 미착상품과 상품대체 사후조치 <br> &emsp;- ERP와 I/F된 프로시저 모니터링 및 에러 조치 <br> &emsp;- 출장 전표발행 가이드 및 유지보수 <br> &emsp;- 펌뱅킹/전자세금계산서/EDI 시스템 모니터링 <br> &emsp;- Web Adi 관련 매크로 설정 및 기능 안내 <br> &emsp;- 프로그램 보완개발 및 신규개발 진행 <br> &emsp;- 사용자 계정 생성 및 권한 관리 <br> &emsp;- 데이터 추출 및 전달 <br> &emsp;- 프로세스 안내 및 데이터 의미 설명 
@@ -146,7 +146,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-## 2.2.유지보수 관리 
+## 2.2. 유지보수 관리 
 ### - IT 계약
 
 📓 신규/기존 계약 체결을 합니다. <br> &emsp;- EDI 무역 관리 <br> &emsp;- IT 통합 유지보수 <br> &emsp;- 리모트뷰(원격제어)  <br> &emsp;- 리모트콜(원격지원) <br> &emsp;- 그룹웨어 <br> &emsp;- 인사시스템 <br> &emsp;- 장비렌탈 <br> &emsp;- 출입보안 <br> &emsp;- 자사주 정보 이용 <br> &emsp;- 내부회계관리 <br> &emsp;- AWS  <br> &emsp;- 화상회의(ZOOM) <br> &emsp;- 메일 아카이빙 <br> &emsp;- 어도비 제품(동영상편집, 포토샵, 일러스트레이터 등) <br> &emsp;- ChatGPT
@@ -160,7 +160,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
-## 2.3.내부통제
+## 2.3. 내부통제
 ### - IT 일반 통제(ITGC)
 
 📓 감사인 요구사항을 대응 합니다. <br> &emsp;- IT개요 및 환경에 대한 이해 <br> &emsp;- FCM 및 SSO 관련 요청자료 <br> &emsp;- FCM 프로그램 및 데이터 변경 모집단 추출 <br> &emsp;- FCM 및 그룹웨어 계정 권한 부여와 회수 모니터링 <br> &emsp;- 재해복구 훈련 계획 <br> &emsp;- OS 계정 사용 여부 확인 <br> &emsp;- DB 및 서버 시스템 보고서 제출 <br> &emsp;- 그룹웨어 관리자 계정 모니터링 <br> &emsp;- 네트워크 및 서버 구성도 <br> &emsp;- ITGC 설계 및 운영평가 후 개선방안 도출
@@ -169,7 +169,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
-## 2.4.SI
+## 2.4. SI 프로젝트
 ### - 한국교육학술정보원 서비스 운영
 - 2020.02 ~ 2020.09
   
@@ -196,9 +196,9 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
-# 3.학력
-# 4.스킬
-# 5.수상/자격증/기타
-# 6.외국어
+# 3. 학력
+# 4. 스킬
+# 5. 수상/자격증/기타
+# 6. 외국어
 
 
