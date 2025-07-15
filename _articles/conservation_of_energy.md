@@ -1,7 +1,7 @@
 ---
 title: "Conservation of Energy"
 topics: 
-  - Energy
+  - energy
 topic_overview: true
 related: physics, balls, swings
 author: Molly Ireland
