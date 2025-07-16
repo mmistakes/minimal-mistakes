@@ -17,7 +17,7 @@ There are many ways of displaying data; the preferred method will depend on the 
 <details markdown ="1">
 <summary markdown="span">**Click here to learn about the different types of data**</summary>
 <p></p>
-**Quantitative** data can be recorded using a number. This data could be **discrete**, taking only specific values from the real numbers, such as whole numbers. This data could instead be **continuous**, taking any value from the real numbers. 
+**Quantitative** data can be recorded using a number. This data could be **discrete**, taking only specific values from the real numbers, such as whole numbers. Some quantitative data can be **continuous**, taking any value from the real numbers. 
 
 The other type of data we can collect is **qualitative** data. This is non-numerical data, such as a person's favourite animal or the colour of a car.
 

@@ -20,7 +20,13 @@ Corrugated cardboard is a lot harder to fold in one direction than the other. It
 
 ![An image showing the different directions of folding the accordion layer of paper.]({{site.baseurl}}/assets/img/different_fold_directions.jpeg "The different folding directions")
 
-Mathematically, this is explained by Gauss’s Remarkable Theorem (Gauss was a famous mathematician from the 1700s). Essentially, if a very small section of the cardboard is bending in one direction, the same section of cardboard cannot bend in the direction perpendicular to the first (as the cardboard is originally a flat surface). This means that if we want to create a fold perpendicular to the peaks of the corrugated layer, we need to flatten all the peaks and valleys along the fold line first. Try it out for yourself!
+Mathematically, this is explained by Gauss’s Remarkable Theorem (Gauss was a famous mathematician from the 1700s). If a surface is originally flat, this determines how the surface can bend. This means that if a small section of the surface is bent upwards, the same section must be flat in another direction, and the same section cannot bend downwards. A key assumption that is made here is that the surface cannot be deformed (streched or broken).
+
+As we are curving the paper upwards in the direction of the red line in the image below, the paper must remain flat in one direction, this is along the blue line. 
+
+![An image showing the curve lines on a flat sheet of paper.]({{site.baseurl}}/assets/img/gauss_demo.jpeg "Curving paper")
+
+In corrugated cardboard, a very small section of the cardboard is bent in one direction (to make the peaks).  This means that if we want to create a fold perpendicular (at $$90$$ degrees) to the peaks of the corrugated layer, we need to flatten all the peaks and valleys along the fold line first. Try it out for yourself!
 
 We also often make use of this mathematical trick when eating pizza. By folding the sides of the pizza up towards us, we can stop the pizza from flopping and make it easier to eat. When we fold a slice of pizza, we prevent it from flopping in the direction perpendicular to the fold for every point along the fold line. This means that the end of the pizza will stay closer to the horizontal, and your toppings won't slide off. Sometimes the end of the pizza still bends if the pizza slice is especially large or thin. This is because the forces of gravity at the end of the pizza are larger than the forces we apply to try to bend the pizza.
 
@@ -28,5 +34,4 @@ We also often make use of this mathematical trick when eating pizza. By folding 
 
 It could be an interesting experiment for the children to see how much more weight a bridge of their corrugated paper could hold in comparison to just using the three sheets of flat paper. They could also try holding some paper in the different ways above, like a pizza slice and see if they can support objects on it. 
 
-For more discussion about the strength of different shapes, see our article on triangles in construction. 
-
+For more discussion about the strength of different shapes, see our article on triangles in construction.
