@@ -231,10 +231,14 @@ sidebar:
 - 코스콤
 
 > <h6>담당자</h6> 
-> 김현준
+> 김현준(영업)
 > - 📞 
 > <a href="tel:01012345678">전화걸기</a>
-> {: .notice}
+> {: .notice--warning}
+> 김똥똘(세금계산서)
+> - 📞 
+> <a href="tel:01012345678">전화걸기</a>
+> {: .notice--warning}
 
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
