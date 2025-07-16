@@ -228,7 +228,13 @@ sidebar:
 📓 유지보수를 위해 기술적으로 도와줍니다. <br> &emsp;- 엠투엠글로벌 <br> &emsp;- 시큐인프라 <br> &emsp;- 알서포트  <br> &emsp;- 헬프유 <br> &emsp;- 다우기술 <br> &emsp;- 이수시스템 <br> &emsp;- 한국렌탈 <br> &emsp;- 케이티텔레캅 <br> &emsp;- 코스콤 <br> &emsp;- 씨에이에스 <br> &emsp;- 메가존클라우드 <br> &emsp;- ZOOM <br> &emsp;- 이노탭 <br> &emsp;- Adobe <br> &emsp;- ChatGPT
 {: .notice--info}
 
-<a href="tel:01012345678">📞 010-1234-5678 전화걸기</a>
+- 코스콤
+
+> <h6>담당자</h6> 
+> 김현준
+> - 📞 
+> <a href="tel:01012345678">전화걸기</a>
+> {: .notice}
 
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
