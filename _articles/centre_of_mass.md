@@ -12,7 +12,7 @@ header:
 
 A common playtime activity is stacking blocks. Most of the time, children want to build the tallest towers, which leads them to question how to make their tower taller. To make the towers taller, the biggest problem is usually stability. How can they make their towers more stable?
 
-  One way of making a tower more stable is by using a larger base. Why does this work? Making the base of the tower larger means that the centre of mass of the tower can move further. A tower will topple if the centre of mass of the tower is not over the base. 
+One way of making a tower more stable is by using a larger base. Why does this work? Making the base of the tower larger means that the centre of mass of the tower can move further. A tower will topple if the centre of mass of the tower is not over the base. 
 
 **Mass** is a word we use to describe the material of an object. The words mass and weight are often used interchangeably, even though they have slightly different scientific meanings.
 
