@@ -9,20 +9,19 @@ sub_date: 2025-06-26
 header:
   teaser: /assets/img/corregated_building.jpeg
 ---
-
 Corrugated cardboard is often accessible to many children, and one common question is, Why is it so strong? This can spark an interesting conversation about how to make materials stronger. 
 
 Corrugated cardboard gets a lot of its strength from the triangular folds between the layers of cardboard. Children can make their own corrugated cardboard by first folding a sheet of paper in an accordion style and then attaching a layer of paper to either side. This is shown in the image below.
 
 ![A paper model of corrugated cardboard.]({{site.baseurl}}/assets/img/corregated_building.jpeg "A paper model of corrugated cardboard")
 
-Corrugated cardboard is a lot harder to fold in one direction than the other. It is a lot easier to fold the cardboard so that the fold is going in the same direction as the peaks and valleys in the corrugated layer. This is because here we only need to fold the top and bottom layers of the cardboard and follow the creasing pattern in the corrugated layer. If we wanted to fold the cardboard in the direction perpendicular (at $$90$$ degrees) to the peaks and valleys, we have to try a lot harder. This is because we need to flatten all the peaks and valleys along this line to bend the cardboard, which requires a lot more energy. These two folding directions are shown in the image below.
+Corrugated cardboard is a lot harder to fold in one direction than the other. It is a lot easier to fold the cardboard so that the fold is going in the same direction as the peaks and valleys in the corrugated layer. This is because here we only need to fold the top and bottom layers of the cardboard and follow the creasing pattern in the corrugated layer. If we wanted to fold the cardboard in the direction perpendicular (at $$90$$ degrees) to the peaks and valleys, we would have to try a lot harder. This is because we need to flatten all the peaks and valleys along this line to bend the cardboard, which requires a lot more energy. These two folding directions are shown in the image below.
 
 ![An image showing the different directions of folding the accordion layer of paper.]({{site.baseurl}}/assets/img/different_fold_directions.jpeg "The different folding directions")
 
-Mathematically, this is explained by Gauss’s Remarkable Theorem (Gauss was a famous mathematician from the 1700s). If a surface is originally flat, this determines how the surface can bend. This means that if a small section of the surface is bent upwards, the same section must be flat in another direction, and the same section cannot bend downwards. A key assumption that is made here is that the surface cannot be deformed (streched or broken).
+Mathematically, this is explained by Gauss’s Remarkable Theorem (Gauss was a famous mathematician from the 1700s). If a surface is originally flat, this determines how the surface can bend. This means that if a small section of the surface is bent upwards, the same section must be flat in another direction, and the same section cannot bend downwards. A key assumption that is made here is that the surface cannot be deformed (stretched or broken).
 
-As we are curving the paper upwards in the direction of the red line in the image below, the paper must remain flat in one direction, this is along the blue line. 
+As we are curving the paper upwards in the direction of the red line in the image below, the paper must remain flat in one direction, which is along the blue line. 
 
 ![An image showing the curve lines on a flat sheet of paper.]({{site.baseurl}}/assets/img/gauss_demo.jpeg "Curving paper")
 
@@ -34,4 +33,4 @@ We also often make use of this mathematical trick when eating pizza. By folding 
 
 It could be an interesting experiment for the children to see how much more weight a bridge of their corrugated paper could hold in comparison to just using the three sheets of flat paper. They could also try holding some paper in the different ways above, like a pizza slice and see if they can support objects on it. 
 
-For more discussion about the strength of different shapes, see our article on triangles in construction.
+For more discussion about the strength of different shapes, see our article on triangles in construction. 
