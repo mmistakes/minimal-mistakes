@@ -25,4 +25,4 @@ In the image below, we can see that the height of the ball at the top of each bo
 
 Similarly, the height a swing reaches will reduce over time until the swing comes to a stop. This is because energy is transferred from the swing to the surrounding air particles. 
 
-[To read more about the effects of air resistance, please read our corresponding article.]:#
+[To read more about the effects of air resistance, please read our corresponding article on air resistance.]({{site.baseurl}}/articles/air_resistance)

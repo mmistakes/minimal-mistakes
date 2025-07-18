@@ -31,4 +31,3 @@ Questions that children may ask could include, what happens when there are a dif
 | 4 | 24 |
 | 5 | 120 |
 | 6 | 720 |
-

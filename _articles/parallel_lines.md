@@ -25,13 +25,12 @@ A nice example of parallel curves is concentric circles, as shown in the image b
 
 ![Concentric circles on a grid.]({{site.baseurl}}/assets/img/concentric_circles.jpeg "Concentric circles")
 
-Children can explore drawing parallel curves by keeping the distance between curves the same at all points. One way of finding these parallel curves is to use a compass to draw circles and then joining up the furthest point on the edges of all the circles. In the image below, this technique has been used to find some parallel curves of the black shape. 
+Children can explore drawing parallel curves by keeping the distance between curves the same at all points. One way of finding these parallel curves is to use a compass to draw circles and then join up the furthest point on the edges of all the circles. In the image below, this technique has been used to find some parallel curves of the black shape. 
 
 ![A shape and some parallel curves, one larger (outside) and one smaller (inside).]({{site.baseurl}}/assets/img/parallel_curves.jpeg "A shape and some parallel curves")
 
 Whilst a compass is sharp, and not appropriate in all settings, a similar effect can be achieved by tracing around a transparent circular object. Perhaps a lid, or a cardboard tube, could be used by children wanting to draw their own curves. 
 
-[When drawing parallel curves for shapes that do not have smooth corners, we ]:#
-
+[technicality with corners ]:#
 
 Another pair of lines that are defined by their gradient are perpendicular lines. [To learn more about perpendicular lines, you can read our article on them. ]({{site.baseurl}}/articles/perpendicular_lines/)

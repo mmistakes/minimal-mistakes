@@ -9,10 +9,9 @@ sub_date: 2025-07-14
 header:
   teaser: /assets/img/example_equation_of_a_line.jpeg
 ---
+There are straight lines all around us, but how can we describe them mathematically? This is an important question if we want to compare the lines that we see around us.
 
-We see straight lines all around us, but how can we describe them mathematically? This is an important question if we want to compare the lines that we see around us.
-
-Every straight line can be determined by two points. If you draw two points on a piece of paper, there is a unique straight line that passes through the two points. This is a fun doodling game that children can try. First, they can draw the points, and they can use a straight edge (such as a ruler) to find the straight line that passes through the two points. 
+Every straight line can be determined by two points. If you draw two points on a piece of paper, there is a unique straight line that passes through them. This is a fun doodling game that children can try. First, they can draw the points, and they can use a straight edge (such as a ruler) to find the straight line that passes through the two points. 
 
 How else can we define a line? When describing a straight line mathematically, we normally use an equation; this serves the same purpose as writing down the two points that the line passes through. By describing the line as an equation, we can encode more information about how the line behaves.  
 
@@ -34,7 +33,7 @@ We can calculate the gradient by comparing how many units up (or down) a line go
 ![An example of calculating the gradient of a line.]({{site.baseurl}}/assets/img/gradient_demo.jpeg "An example of calculating the gradient of a line")
 
 ## The Intercept
-The **intercept** of a line describes its position. If we think about the position of straight lines with respect to some axis (as shown in the image below) we can describe where each of the straight lines intersects the vertical axis (this is normally called the y-axis). 
+The **intercept** of a line describes its position. If we think about the position of straight lines with respect to some axis (as shown in the image below), we can describe where each of the straight lines intersects the vertical axis (this is normally called the y-axis). 
 
 In the image below, we can see an example of lines with the same gradient but with different intercepts.  
 

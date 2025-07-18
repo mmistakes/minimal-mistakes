@@ -9,7 +9,6 @@ sub_date: 2025-06-27
 header:
   teaser: /assets/img/histogram_example.jpeg
 ---
-
 Once children become excited by an idea, they often want to test and compare it, which can involve collecting some data. An example is measuring the distances travelled by rolling cars down ramps. Once the children have collected data, there are many ways for them to display it. 
 
 There are many ways of displaying data; the preferred method will depend on the type of data collected. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, [see our article on different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
@@ -97,7 +96,7 @@ If we want to display quantitative data, there are some other methods we could u
 <details markdown ="1">
 <summary markdown="span">How wide should the bins be?</summary>
 <p></p>
-How wide we choose the bins can change the shape of the histogram, and choosing the “best size” of the bins can actually require quite a lot of complex maths. For the purposes of classroom experimenting, there are many reasonable choices that can be made for the binwidths; it could be a fun activity to try out a few. Below is a histogram for the heights of the children where the binwidth is $$2$$cm. 
+How wide we choose the bins can change the shape of the histogram, and choosing the “best size” of the bins can require quite a lot of complex maths. For classroom experimenting, many reasonable choices can be made for the binwidths; it could be a fun activity to try out a few. Below is a histogram for the heights of the children where the binwidth is $$2$$cm. 
 </details>
 <p></p>
 
