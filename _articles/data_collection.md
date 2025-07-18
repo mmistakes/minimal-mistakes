@@ -9,8 +9,7 @@ sub_date: 2025-07-10
 header:
   teaser: /assets/img/stem_and_leaf.jpeg
 ---
-
-Classroom experiments can not only be a fun way for children to learn about the world around them, but also a great opportunity to develop data collection techniques. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, [see our article on different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
+Classroom experiments can not only be a fun way for children to learn about the world around them, but also a great opportunity to develop data collection techniques. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, see our article on [different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
 
 <details markdown ="1">
 <summary markdown="span">**Click here to learn about the different types of data**</summary>
@@ -67,7 +66,7 @@ Qualitative (not a number) data is often recorded using tallies or tables. A **t
 
 We have added an extra column to record the frequency, which is the sum of the tallies and can be filled in once we have finished collecting the data. A table with just the frequency column is called a **frequency chart**. 
 
-Quantitative data can be recorded in this way too, if it is grouped into bins. Below is an example of this where the heights of the children in the data have been grouped into categories $$2$$cm wide. 
+Quantitative data can be recorded in this way, too, if it is grouped into bins. Below is an example of this where the heights of the children in the data have been grouped into categories $$2$$cm wide. 
 
 | Height (cm) | Tally              | Frequency |
 | ----------- | ------------------ | --------- |
