@@ -283,7 +283,8 @@ sidebar:
 
 <br><br>
 # 3. 학력
-## 3.1. 충남대학교
+## 3.1. 대학교
+### - 충남대학교
 - 2015년 3월 ~ 2017년 2월
   
   ```
@@ -298,26 +299,31 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
 
-## 3.2. California State University, Long Beach
+### - California State University, Long Beach
 
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
-## 3.3. El Camino Community College
-## 3.4. Mary Star of the Sea High School
-## 3.5. St. Joseph High School
-## 3.6. 중앙고등학교
-## 3.7. 불곡중학교
-## 3.8. 상갈중학교
-## 3.9. 상갈초등학교
-## 3.10. 돌마초등학교
+### - El Camino Community College
+
+## 고등학교
+### - Mary Star of the Sea High School
+### - St. Joseph High School
+### - 중앙고등학교
+### - 불곡중학교
+
+## 중학교
+### - 상갈중학교
+### - 상갈초등학교
+### - 돌마초등학교
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
 <br><br>
 # 4. 스킬
-# 5. 수상/자격증/기타
-## 5.1. 머신러닝, 딥러닝 실무능력 향상과정
+# 5. 교육/자격증/기타
+## 5.1. 교육
+### - 머신러닝, 딥러닝 실무능력 향상과정
 - 2019년 7월 ~ 2019년 8월
   
   ```
@@ -331,6 +337,9 @@ sidebar:
   
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br> 
+
+## 5.2. 자격증
+## 5.3. 기타
 
 <br><br>
 # 6. 외국어
