@@ -289,7 +289,8 @@ sidebar:
   
   ```
   전공: 경제학
-  학점: 3.4
+  학점: 3.4/4.5
+  지역: 대전
   ```
   - 🏫 활동
   - 경제연구회 대회 2등 (상금 30만원)
@@ -300,6 +301,17 @@ sidebar:
 <br> 
 
 ### - California State University, Long Beach
+- 2012년 8월 ~ 2012년 12월
+  
+  ```
+  전공: Economics
+  학점: 3.1/4.0
+  지역: 미국
+  ```
+  - 🏫 활동
+  - Educational Leave for Military Service
+  - Tennis Club
+  {: .notice}
 
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
@@ -348,6 +360,35 @@ sidebar:
   - 🏫 교육내용
   - 시큐어코딩
   - OWASP Top 10 취약점 진단
+  {: .notice}
+  
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+### - 데이터베이스 프로그래밍 초급
+- 2018년 2월
+  
+  ```
+  주관: KOSTA
+  일정: 3일 (총 24시간)
+  ```
+  - 🏫 교육내용
+  - SQL CRUD
+  - SQL JOIN 구문
+  {: .notice}
+  
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+### - 전자정부 표준프레임워크 4.0 통합구현 활용실무 향상과정
+- 2018년 1월
+  
+  ```
+  주관: 쌍용강북교육센터
+  일정: 5일 (총 40시간)
+  ```
+  - 🏫 교육내용
+  - Spring 프레임워크의 이해
   {: .notice}
   
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
