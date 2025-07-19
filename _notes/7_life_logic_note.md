@@ -306,13 +306,13 @@ sidebar:
 
 ### - El Camino Community College
 
-## 고등학교
+## 3.2. 고등학교
 ### - Mary Star of the Sea High School
 ### - St. Joseph High School
 ### - 중앙고등학교
 ### - 불곡중학교
 
-## 중학교
+## 3.3. 중학교
 ### - 상갈중학교
 ### - 상갈초등학교
 ### - 돌마초등학교
