@@ -285,11 +285,11 @@ sidebar:
 # 3. 학력
 ## 3.1. 대학교
 ### - 충남대학교
-- 2015년 3월 ~ 2017년 2월
+- 2015년 3월 2일 ~ 2017년 2월 28일
   
   ```
   전공: 경제학
-  학점: 3.4/4.5
+  성적: 3.457/4.5점
   지역: 대전
   ```
   - 🏫 활동
@@ -301,11 +301,11 @@ sidebar:
 <br> 
 
 ### - California State University, Long Beach
-- 2012년 8월 ~ 2012년 12월
+- 2012년 8월 27일 ~ 2012년 12월 14일
   
   ```
   전공: Economics
-  학점: 3.1/4.0
+  학점: 3.061/4점
   지역: 미국
   ```
   - 🏫 활동
@@ -317,10 +317,51 @@ sidebar:
 <br>  
 
 ### - El Camino Community College
+- 2010년 7월 5일 ~ 2012년 6월 8일
+  
+  ```
+  전공: Business Economics
+  학점: 3.164/4점
+  지역: 미국
+  ```
+  - 🏫 활동
+  - Graduated
+  - Transfer to California State University, Long Beach
+  {: .notice}
+
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
 
 ## 3.2. 고등학교
 ### - Mary Star of the Sea High School
+- 2008년 8월 25일 ~ 2010년 6월 10일
+  
+  ```
+  성적: 3.4/4점
+  지역: 미국
+  ```
+  - 🏫 활동
+  - Graduated
+  {: .notice}
+
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
+
 ### - St. Joseph High School
+- 2007년 8월 27일 ~ 2008년 6월 13일
+  
+  ```
+  학점: 3.8/4점
+  지역: 미국
+  ```
+  - 🏫 활동
+  - Graduated
+  - Transfer to Mary Star of the Sea High School
+  {: .notice}
+
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
+
 ### - 중앙고등학교
 ### - 불곡중학교
 
@@ -399,7 +440,23 @@ sidebar:
   
   ```
   기관: 더조은아카데미학원
-  일정: 매주 월~금 (총 659시간)
+  일정: 매주 월~금, 오전9시~오후6시 (총 840시간)
+  ```
+  - 🏫 교육내용
+  - 네트워크 구축 및 보안
+  - 시스템 구축 및 보안
+  - OWASP Top 10 기반 취약점 진단
+  {: .notice}
+  
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+### - 정부 3.0기반의 JAVA 개발자 양성과정
+- 2016년 9월 1일 ~ 2017년 2월 28일
+  
+  ```
+  기관: 한국IT비즈니스진흥협회
+  일정: 가을학기 매주 월~금, 오후6시~10시 / 겨울방학 매주 월~금, 오전9시~오후6시 (총 621시간)
   ```
   - 🏫 교육내용
   - 네트워크 구축 및 보안
