@@ -470,6 +470,28 @@ sidebar:
 <br>
 
 ## 5.2. 자격증
+### - 정보처리기사
+- 2017년 8월 1일
+  
+  ```
+  등록번호: 17202240549A
+  발급기관: 한국산업인력공단
+  ```
+  
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
+### - 네트워크관리사2급
+- 2017년 6월 1일
+  
+  ```
+  등록번호: NT2037461
+  발급기관: 한국정보통신자격협회
+  ```
+  
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>
+
 ## 5.3. 기타
 
 <br><br>
