@@ -60,6 +60,6 @@ sidebar:
 <a href="#" class="btn btn--success">Back to top</a> <br>
 
 ## [컬리_테크]
-<a htef="https://naver.me/F7Izp4k2" class="btn btn--info">컬리 기술 블로그</a>
+<a href="https://naver.me/F7Izp4k2" class="btn btn--info">컬리 기술 블로그</a>
 
 <a href="#" class="btn btn--success">Back to top</a> <br>
