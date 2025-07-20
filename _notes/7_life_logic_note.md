@@ -459,9 +459,9 @@ sidebar:
   일정: 가을학기 매주 월~금, 오후6시~10시 / 겨울방학 매주 월~금, 오전9시~오후6시 (총 621시간)
   ```
   - 🏫 교육내용
-  - 네트워크 구축 및 보안
-  - 시스템 구축 및 보안
-  - OWASP Top 10 기반 취약점 진단
+  - Java(Eclipse), SQL(Oracel DB), HTML, CSS
+  - Javascript, jQuery, Spring, Hadoop
+  - 준코토미컴퍼니 현장실습(4주)
   {: .notice}
   
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
