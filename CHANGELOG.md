@@ -8,6 +8,10 @@
 - Add HTML escaping for some titles, labels and metada that was missing. (#5276)
 - Add optional `footer.since` for copyright time range. (#5275)
 
+### Bug Fixes
+
+- Add `escape_once` to gallery title and alt text.
+
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
