@@ -1,4 +1,4 @@
-{% assign author = page.author | default: page.authors[0] | default: include.author | default: site.author %}
+{% assign author = include.theauthor | default: page.author | default: page.authors[0] | default: include.author | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card" id="{{author.name}}">
