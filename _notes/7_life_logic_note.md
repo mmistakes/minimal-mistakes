@@ -388,7 +388,7 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
-##4.2. Oracle DB
+## 4.2. Oracle DB
 <h3>- 문법</h3>
 - CRUD
 
