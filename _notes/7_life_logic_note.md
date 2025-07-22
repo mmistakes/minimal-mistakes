@@ -379,13 +379,30 @@ sidebar:
 ## 4.1. JAVA
 <h3>- 문법</h3>
 - 형변환
+
   - 💻
   - ServiceImpl
   - Function 
   {: .notice--warning}
+
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
+##4.2. Oracle DB
+<h3>- 문법</h3>
+- CRUD
+
+  - 💻
+  - Insert
+  - Update
+  - retrieve
+  - delete
+  {: .notice--warning}
+
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
+
+<br><br>
 # 5. 교육/자격증/기타
 ## 5.1. 교육
 <h3>- 머신러닝, 딥러닝 실무능력 향상과정</h3>
