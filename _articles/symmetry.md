@@ -3,7 +3,7 @@ topic_overview: true
 topics: symmetry
 related: patterns
 nurseries: HCNS
-author: Rachel Oughton, Molly Ireland
+author: Rachel Oughton
 title: "Symmetry"
 sub_date: 2023-08-31
 header:
