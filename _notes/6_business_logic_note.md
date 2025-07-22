@@ -306,34 +306,44 @@ select * from ar_receipt_applications_all;
   ⏰️ TIP <br> 1. 담당자 부재 시 회사,층수,연락처 기재 <br> 2. 등록 완료 후 담당자가 메시지 발송 <br> 3. 출입증 픽업
   {: .notice}
 
-- 출입시스템 단말기 등록
+- 단말기에 사용자 등록
   ```
   마지막 사용자 번호: 404
   마스터 카드로 시퀀스 번호+1 하여 사용자 등록
   다음 사용자 번호: 405
   ```
-  ⏰️ TIP <br> 1. 단말기에 등록된 사용자 출입관리시스템 서버로 가져오기 <br> 2. 사용자 정보 수정 <br> 3. 지정된 단말기로 사용자 정보 뿌리기
+  ⏰️ TIP <br> 1. 단말기에서 출입서버로 사용자 번호 가져오기 <br> 2. 사용자 정보 수정 <br> 3. 지정된 단말기로 사용자 정보 뿌리기
   {: .notice}
 
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 ## 5.2.사용
 - 임직원 출입증 사용
-  
+  ```
+  사용 가능한 임직원
+  - 신규 입사자
+  - 출입증 분실로 재발급
+  - 임시 발급
+  ```
   ⏰️ TIP <br> 1. 총무담당자가 임직원에게 출입증 전달 <br> 2. 임직원 출퇴근시 출입증 사용 <br> 3. 지정된 단말기에 출입증 태그
   {: .notice}
 
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 ## 5.3.회수
-- 퇴사자 출입증 반납
-  
+- 출입증 반납
+  ```
+  1.퇴사자
+  - 출입증 권한정지
+  2.채용형태 변경
+  - 사번변경으로 기존 출입증 권한정지
+  ```
   ⏰️ TIP <br> 1. 출입증 총무담당자에게 반납 <br> 2. 출입권한 해제 <br> 3. 복합기 UID 삭제
   {: .notice}
 
-<a href="#" class="btn btn--success">Back to top</a>
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>
 
 <br><br>
