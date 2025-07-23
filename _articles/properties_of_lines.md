@@ -3,7 +3,8 @@ title: "Properties of Straight Lines"
 topics: 
   - lines
 topic_overview: true
-related: geometry
+related: 
+  - geometry
 author: Molly Ireland
 sub_date: 2025-07-14
 header:

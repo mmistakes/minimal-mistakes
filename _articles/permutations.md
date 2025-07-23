@@ -3,7 +3,8 @@ title: "Permutations"
 topics: 
   - permutations
 topic_overview: true
-related: ordering
+related: 
+  - ordering
 author: Molly Ireland
 sub_date: 2025-06-25
 header:

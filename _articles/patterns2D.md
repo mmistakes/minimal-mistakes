@@ -6,7 +6,8 @@ topics:
   - wallpaper
   - 2d
   - symmetry
-related: transformations
+related: 
+  - transformations
 nurseries: Group 1
 author: Milly McGowan, Rachel Oughton
 sub_date: 2023-08-31

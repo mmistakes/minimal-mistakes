@@ -3,7 +3,8 @@ title: "Corrugated Cardboard"
 topics: 
   - triangles
 topic_overview: true
-related: building
+related: 
+  - building
 author: Molly Ireland
 sub_date: 2025-06-26
 header:

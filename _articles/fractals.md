@@ -4,7 +4,8 @@ topics:
   - fractals
   - patterns in nature
   - patterns
-related: same and different    
+related: 
+  - same and different    
 nurseries: Group 5 
 author: Lexie Newbery
 # excerpt: test #

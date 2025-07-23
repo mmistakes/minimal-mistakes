@@ -3,7 +3,8 @@ title: "Circles"
 topics: 
   - circles
 topic_overview: true
-related: geometry
+related: 
+  - geometry
 author: Molly Ireland
 sub_date: 2025-07-17
 header:

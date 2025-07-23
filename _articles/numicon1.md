@@ -6,7 +6,9 @@ topics:
   - multiples
   - patterns
   - numicon
-related: addition, subtraction,
+related: 
+  - addition
+  - subtraction,
 nurseries:
 author: Milly McGowan
 sub_date: 2023-08-31

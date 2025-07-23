@@ -6,7 +6,9 @@ topics:
   - triangles
   - circles
   - 2d
-related: area,triangle
+related: 
+  - area
+  - triangle
 nurseries: Group 1
 author: Milly McGowan
 sub_date: 2023-08-31

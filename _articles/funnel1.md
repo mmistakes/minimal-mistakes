@@ -5,7 +5,9 @@ topics:
   - shapes
   - funnels
   - water
-related: sand, equivalence
+related: 
+  - sand
+  - equivalence
 nurseries: Group 1
 author: Milly McGowan
 sub_date: 2023-08-31
