@@ -3,7 +3,7 @@ title: About Young Minds Big Maths
 layout: single
 share: false
 author_profile: false
-permalink: /aboutYMBM/
+permalink: /about/
 classes: wide authorpage
 toc: false
 toc_label: All site authors
