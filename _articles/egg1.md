@@ -3,7 +3,8 @@ title: "Eggs and spaces"
 topics: 
   - shapes
   - circles
-related: numbers
+related: 
+  - numbers
 nurseries: Group 1
 author: Milly McGowan
 sub_date: 2023-08-31

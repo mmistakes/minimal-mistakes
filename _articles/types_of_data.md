@@ -3,7 +3,8 @@ title: "Types of Data"
 topics: 
   - data
 topic_overview: true
-related: graphs
+related: 
+  - graphs
 author: Molly Ireland
 sub_date: 2025-07-10
 header:

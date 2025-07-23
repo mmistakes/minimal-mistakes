@@ -3,7 +3,10 @@ title: "Gravity"
 topics: 
   - gravity
 topic_overview: true
-related: physics, air resistance, energy
+related: 
+  - physics
+  - air resistance
+  - energy
 author: Molly Ireland
 sub_date: 2025-07-16
 header:

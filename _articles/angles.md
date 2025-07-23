@@ -3,7 +3,10 @@ title: "Angles"
 topics: 
   - angles
 topic_overview: true
-related: ramps, circles, triangles
+related: 
+  - ramps
+  - circles
+  - triangles
 nurseries: HCNS
 author: Rachel Oughton
 sub_date: 2023-08-31

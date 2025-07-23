@@ -3,7 +3,12 @@ title: "Experiments with Playdough"
 topics: 
   - playdough
 topic_overview: true
-related: mass, order, comparison, addition, multiplication
+related: 
+  - mass
+  - order
+  - comparison
+  - addition
+  - multiplication
 author: Molly Ireland, Milly McGowan, Lexie Newbery
 sub_date: 2025-07-11
 header:

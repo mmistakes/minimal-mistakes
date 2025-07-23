@@ -5,7 +5,8 @@ topics:
   - sequences
   - paint
   - caterpillars
-related: transformations
+related: 
+  - transformations
 nurseries: Group 1
 author: Milly McGowan
 sub_date: 2023-08-31

@@ -3,7 +3,10 @@ title: "Experiments with Air Resistance"
 topics: 
   - air resistance
 topic_overview: true
-related: physics, gravity, energy
+related: 
+  - physics
+  - gravity
+  - energy
 author: Molly Ireland
 sub_date: 2025-07-16
 header:

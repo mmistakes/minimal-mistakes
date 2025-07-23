@@ -5,7 +5,8 @@ topics:
   - spirals
   - drawing
   - equivalence              
-related: spirals    
+related: 
+  - spirals    
 nurseries:    
 author: Lexie Newbery
 sub_date: 2023-08-26
