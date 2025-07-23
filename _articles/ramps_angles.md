@@ -4,7 +4,9 @@ topics:
   - ramps
   - angles
   - triangles
-related: speed, experiments
+related: 
+  - speed
+  - experiments
 nurseries: HCNS
 author: Rachel Oughton
 sub_date: 2023-08-31

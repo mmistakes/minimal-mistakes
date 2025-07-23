@@ -6,7 +6,8 @@ topics:
   - playdough
   - equivalence
   - same
-related: ratio
+related: 
+  - ratio
 nurseries: Group 1, Group 5
 author: Milly McGowan
 sub_date: 2023-08-31

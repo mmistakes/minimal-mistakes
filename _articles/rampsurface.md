@@ -4,7 +4,8 @@ topics:
   - ramps
   - surface
   - friction               
-related: experiments     
+related: 
+  - experiments     
 nurseries: Group 3   
 author: Lexie Newbery
 sub_date: 2023-08-26

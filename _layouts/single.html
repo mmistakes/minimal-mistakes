@@ -75,14 +75,14 @@ layout: default
     <div class="grid__wrapper">
       {% assign related_articles = '' | split: '' %}
       {% assign recent_articles = site.articles | sort: "sub_date" | reverse | slice: 0,5 | where_exp:"post", "post.id != page.id" %}
-      {% assign related_topics = page.related | split:", " %}
+      {% assign related_topics = page.related %}
       {% if page.related and related_topics.size > 0 %}
           {% for topic in related_topics %}
               {% assign articles_to_add = site.articles | where_exp:"post", "post.topics contains topic" %}
               {% assign related_articles = related_articles | concat: articles_to_add %}
           {% endfor %}
-          {% if related_articles.size < 4 %}
-              {% assign related_articles = related_articles | concat: recent_articles | slice: 0,4 %}
+          {% if related_articles.size < 3 %}
+              {% assign related_articles = related_articles | concat: recent_articles | slice: 0,3 %}
           {% endif %}
           {% for post in related_articles %}
               {% include archive-single.html type="grid" %}

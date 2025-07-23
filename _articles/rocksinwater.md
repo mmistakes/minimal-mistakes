@@ -6,7 +6,8 @@ topics:
   - splashes
   - relationships
   - models
-related: patterns in nature     
+related: 
+  - patterns in nature     
 nurseries:   unsure 
 author: Lexie Newbery
 sub_date: 2023-08-26

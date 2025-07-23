@@ -3,7 +3,9 @@ title: "Melting ice"
 topics: 
   - surface area
 topic_overview: true
-related: volume, ice
+related: 
+  - volume
+  - ice
 author: Lexie Newbery
 nurseries:  Group 1 
 sub_date: 2023-08-26

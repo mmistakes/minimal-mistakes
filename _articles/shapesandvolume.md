@@ -11,10 +11,13 @@ sub_date: 2023-08-26
 header:
   teaser: /assets/img/dough.png
 ---
+As one group activity, some of the children spent their time making lots of different sized balls out of dough. This then allowed them to spend the time exploring the idea of increasing and decreasing sizes, by placing them into order and having conversations about how to increase or decrease the sizes/masses of the balls. 
 
 ![A child making different sized balls from playdough and arranging them in size order]({{site.baseurl}}/assets/img/dough.png "Playdough balls")
 
-As one group activity, some of the children spent their time making lots of different sized balls out of dough. This then allowed them to spend the time exploring the idea of increasing and decreasing sizes, by placing them into order and having conversations about how to increase or decrease the sizes/masses of the balls. From here, the children were able to develop their mathematical thinking skills by experimenting with putting the different sizes together or taking some small pieces of the ball away and seeing how this affects its size or mass, deepening their previous knowledge on addition and subtraction.  This can also link with the idea that the mass of two balls added together will be equal to the mass of the one ball when those two balls are combined. Although this may be something that seems almost obvious to many people, it is often quite difficult for young children to understand and so, offering a more visual representation of this will make it a lot easier for them to get their heads around. 
+From here, the children were able to develop their mathematical thinking skills by experimenting with putting the different sizes together or taking some small pieces of the ball away and seeing how this affects its size or mass, deepening their previous knowledge on addition and subtraction.  
+
+This can also link with the idea that the mass of two balls added together will be equal to the mass of the one ball when those two balls are combined. Although this may be something that seems almost obvious to many people, it is often quite difficult for young children to understand and so, offering a more visual representation of this will make it a lot easier for them to get their heads around. 
 
 ![Addition of two numbers, shown by adding two balls of playdough.]({{site.baseurl}}/assets/img/doughaddition.png "Playdough addition")
 

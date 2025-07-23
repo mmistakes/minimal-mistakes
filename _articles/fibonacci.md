@@ -3,7 +3,11 @@ title: "The Fibonacci Numbers"
 topics: 
   - Fibonacci
 topic_overview: true
-related: spirals, nature, sequences, fractals
+related: 
+  - spirals
+  - nature
+  - sequences
+  - fractals
 author: Molly Ireland
 sub_date: 2025-07-10
 header:

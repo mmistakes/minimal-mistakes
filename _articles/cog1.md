@@ -3,7 +3,8 @@ title: "Stacking cogs"
 topics: 
   - shapes
   - sizes
-related: area
+related: 
+  - area
 nurseries: Group 1
 author: Milly McGowan
 sub_date: 2023-08-31

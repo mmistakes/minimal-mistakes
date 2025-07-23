@@ -5,7 +5,9 @@ topics:
   - counting
   - addition
   - subtraction
-related: addition, subtraction
+related: 
+  - addition
+  - subtraction
 nurseries: Group 1
 author: Milly McGowan
 sub_date: 2023-08-31
