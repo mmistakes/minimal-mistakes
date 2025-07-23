@@ -15,8 +15,13 @@ This document covers the following:
 
 ## Website Framework
 [Here it would be nice if Sam put a summary about how the website works and is built.]
+This is a GitHub pages site, built using [Jekyll](jekyllrb.com). The main content of the website is the collection of articles. Each article on the website corresponds to one of the files in the `_articles` folder. Every time a new file (satisfying some basic requirements, as [detailed below](#/how)) is added to the `_articles` folder, or an existing file is changed, Jekyll re-builds the website to reflect the changes. These changes can then be viewed in [the live site](youngmindsbigmaths.co.uk).
 
-The website’s structure follows the Minimal Mistakes repository, which can be found at [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes). The documentation for the Minimal Mistakes repository can be found at [https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+Using Jekyll and GitHub pages allows anyone with an idea for an article to contribute by simply [writing a file with the articles content (and some basic metadata)](#/how). These can then be submitted by making a 'pull-request', which enables one of the website maintainers to check the submission, before approving it for the site. New authors should feel confident making submissions, knowing that there's an opportunity for them to be reviewed before they get added to the site, and all submissions are greatfully received.
+
+Aside from the `_articles` folder, images which need hosting as part of the site are stored in the `assets/img` folder. Most contributors won't need to interact with any of the other folders, but those who are interested should follow the link below to a more complete description of the project structure.
+
+The website uses the Minimal Mistakes Jekyll theme, which can be found at [https://github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes). The documentation for the Minimal Mistakes theme can be found at [https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
 ## How you can collaborate
 Collaboration is greatly encouraged, and you can do so in two main ways:
