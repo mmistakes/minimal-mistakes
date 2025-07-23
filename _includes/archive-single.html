@@ -10,7 +10,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item" topics="{{ post.topics | join: '_' }}">
+<div class="{{ include.type | default: 'list' }}__item grid-card grid-card--inverse" topics="{{ post.topics | join: '_' }}">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if (include.type == "grid" or include.type == "grid-recent") and teaser %}
       <div class="archive__item-teaser">
@@ -25,9 +25,16 @@
       {% endif %}
     </h2>
     {% if page.layout == "home" %}
-    <p class="archive__item-excerpt">Submitted: {{ post.sub_date | date: "%d %b '%y" }}</p>
+    <p class="archive__item-excerpt" style="font-weight:400 text-align:left">Submitted: {{ post.sub_date | date: "%d %b '%y" }}</p>
     {% endif %}
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" style="font-weight:400; text-align:left" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if page.layout == "single" and post.topics %}
+        <div class="topics">
+        {% for topic in post.topics %}
+            <div class="btn btn--small text-justify" style="background-color: #35a8ad; color: white;">{{topic}}</div>
+        {% endfor %}
+        </div>
+    {% endif %}
   </article>
 </div>
