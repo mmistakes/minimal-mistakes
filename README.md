@@ -15,6 +15,7 @@ This document covers the following:
 
 ## Website Framework
 [Here it would be nice if Sam put a summary about how the website works and is built.]
+
 This is a GitHub pages site, built using [Jekyll](jekyllrb.com). The main content of the website is the collection of articles. Each article on the website corresponds to one of the files in the `_articles` folder. Every time a new file (satisfying some basic requirements, as [detailed below](#how-you-can-collaborate)) is added to the `_articles` folder, or an existing file is changed, Jekyll re-builds the website to reflect the changes. These changes can then be viewed in [the live site](youngmindsbigmaths.co.uk).
 
 Using Jekyll and GitHub pages allows anyone with an idea for an article to contribute by simply [writing a file with the articles content (and some basic metadata)](#how-you-can-collaborate). These can then be submitted by making a 'pull-request', which enables one of the website maintainers to check the submission, before approving it for the site. New authors should feel confident making submissions, knowing that there's an opportunity for them to be reviewed before they get added to the site, and all submissions are greatfully received.
