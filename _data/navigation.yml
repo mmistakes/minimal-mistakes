@@ -2,6 +2,8 @@
 main:
   - title: "All Articles"
     url: /articles/
+  - title: "About YMBM"
+    url: /aboutYMBM/
   - title: "Authors"
     url: /authors/
   # - title: "About"
