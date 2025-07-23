@@ -2,6 +2,7 @@
 title: "Concentric Circles"
 topics: 
   - circles
+  - concentric circles
 topic_overview: true
 related: 
   - geometry
