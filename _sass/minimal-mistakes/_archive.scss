@@ -524,6 +524,18 @@
 			color: white;
 			background-color: darken($primary-color,10%);
 		}
+        &#clearFilterButton {
+            position: absolute;
+            right: calc(1em + 15px);
+            border: 1px solid $danger-color;
+            color: $danger-color;
+            &:hover{
+                background-color: scale-color($danger-color,$alpha: -90%);
+            };
+            &:active{
+                background-color: #fff;
+            };
+        }
 	}
 	.topics {
 		background-color: scale-color($primary-color,$alpha: -80%);

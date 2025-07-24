@@ -16,9 +16,11 @@ This is the collection of all articles currently written for the Young Minds Big
 {% assign all_topics = all_topics | split: "," | uniq | sort_natural  %}
 <div class="topicFilterMenu">
   <button id="topicFilter" onclick="displayMenu(this)" style="display:none">Topic Filter</button>
+  <button id="clearFilterButton" onclick="clearFilters()" class="menuHidden" style="display:none">Clear</button>
   <div class="topics menuHidden">
 	{% for topic in all_topics %}
 	<button onclick="toggleTopic(this,'{{topic}}')" class="buttonHidden">{{topic}}</button>
 	{% endfor %}
   </div>
+  
 </div>

@@ -144,8 +144,10 @@ var displayedTopics = [];
 var noarticle = document.querySelector("#noarticles");
 var topicFilterButton = document.querySelector("#topicFilter");
 topicFilterButton.style.display = "inline-block"
+var clearFilterButton = document.querySelector("#clearFilterButton");
 var buttonsContainer = document.querySelector(".topics");
 var topicButtons = document.querySelectorAll(".topics button");
+let topicButtonsArray = Array.from(topicButtons);
 
 function displayMenu(elt) {
 	elt.classList.toggle("toggled")
@@ -154,6 +156,10 @@ function displayMenu(elt) {
 		buttonsContainer.style.display = "block";
 		buttonsContainer.classList.remove("menuHidden");
 		buttonsContainer.classList.add("menuVisible");
+        clearFilterButton.setAttribute("aria-hidden","false");
+        clearFilterButton.style.display = "inline-block";
+		clearFilterButton.classList.remove("menuHidden");
+		clearFilterButton.classList.add("menuVisible");
 		for (var button of topicButtons) {
 			button.classList.remove("buttonHidden");
 			button.classList.add("buttonVisible");
@@ -162,6 +168,8 @@ function displayMenu(elt) {
 		buttonsContainer.setAttribute("aria-hidden","true");
 		buttonsContainer.classList.add("menuHidden");
 		buttonsContainer.classList.remove("menuVisible");
+        clearFilterButton.setAttribute("aria-hidden","true");
+		clearFilterButton.style.display = "none";
 		for (var button of topicButtons) {
 			button.classList.add("buttonHidden");
 			button.classList.remove("buttonVisible");
@@ -188,7 +196,7 @@ function topicSort(a,b) {
 
 function toggleTopic(elt,topicToggle) {
 	var noarticles = true;
-	var topicButton = elt;
+	let topicButton = elt;
     const articleNodes = {}
     allArticles = articlesContainer.children;
     [...allArticles].forEach(article=>{articleNodes[article.id] = article;});
@@ -198,9 +206,7 @@ function toggleTopic(elt,topicToggle) {
 	} else {
 		displayedTopics.push(topicToggle)
 	}
-    console.log(displayedTopics);
     articlesArray.sort((a,b)=>topicSort(a,b));
-    console.log(articlesArray);
     articlesArray.forEach(article => {
         article = articleNodes[article.id];
         articlesContainer.append(article);
@@ -228,3 +234,13 @@ function toggleTopic(elt,topicToggle) {
 //         noarticle.style.display = "none";
 //     }
 }
+
+function clearFilters() {
+    for (topicButton of topicButtonsArray) {
+        topicButton.classList.remove("toggled");
+    };
+    for (article of articlesArray) {
+        article.style.display = "block"
+    }
+    displayedTopics = [];
+};
