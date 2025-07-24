@@ -136,99 +136,25 @@
 /*
    Grid view
    ========================================================================== */
-
-.archive {
-  .grid__wrapper {
+.grid__wrapper {
     /* extend grid elements to the right */
-
-    @include breakpoint($large) {
-      margin-right: -1 * $right-sidebar-width-narrow;
+    display: grid;
+    gap: 1em 0;
+    grid-template-columns: auto;
+    @include breakpoint($small) {
+        column-gap: 1em;
+        grid-template-columns: auto auto;
     }
-
-    @include breakpoint($x-large) {
-      margin-right: -1 * $right-sidebar-width;
+    @include breakpoint($medium) {
+        grid-template-columns: auto auto auto;
     }
-  }
+}
+
+.entries-grid{
+    @extend .grid__wrapper;
 }
 
 .grid__item {
-  margin-bottom: 2em;
-
-  @include breakpoint($small) {
-    float: left;
-    width: span(5 of 10);
-
-    &:nth-child(2n + 1) {
-      clear: both;
-      margin-left: 0;
-    }
-
-    &:nth-child(2n + 2) {
-      clear: none;
-      margin-left: gutter(of 10);
-    }
-  }
-
-  @include breakpoint($medium) {
-    margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
-    width: span(4 of 12);
-
-    &:nth-child(2n + 1) {
-      clear: none;
-    }
-
-    &:nth-child(3n + 1) {
-      clear: both;
-      margin-left:0;
-    }
-
-    &:nth-child(3n + 2) {
-      clear: none;
-      margin-left: gutter(1 of 12);
-    }
-
-    &:nth-child(3n + 3) {
-      clear: none;
-      margin-left: gutter(1 of 12);
-    }
-
-    //&:nth-child(4n + 4) {
-//      clear: none;
-//      margin-left: gutter(1 of 12);
-//    }
-  }
-  
-  //@include breakpoint($x-large) {
-//      margin-left: 0; /* override margin*/
-//      margin-right: 0; /* override margin*/
-//      width: span(3 of 12);
-//
-//      &:nth-child(2n + 1) {
-//        clear: none;
-//      }
-//
-//      &:nth-child(4n + 1) {
-//        clear: both;
-//        margin-left:0;
-//      }
-//
-//      &:nth-child(4n + 2) {
-//        clear: none;
-//        margin-left: gutter(1 of 12);
-//      }
-//
-//      &:nth-child(4n + 3) {
-//        clear: none;
-//        margin-left: gutter(1 of 12);
-//      }
-//
-//      &:nth-child(4n + 4) {
-//        clear: none;
-//        margin-left: gutter(1 of 12);
-//      }
-//    }
-
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
@@ -257,12 +183,16 @@
   }
 
   .archive__item-teaser {
-    @include breakpoint($small) {
-      max-height: 200px;
-    }
-
+//    max-height: 200px;
+    height:200px;
+      
     @include breakpoint($medium) {
-      max-height: 120px;
+//    max-height:120px;
+      height: 120px;
+    }
+    img {
+        height:100%;
+        object-fit:contain;
     }
   }
 }
