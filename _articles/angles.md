@@ -12,6 +12,8 @@ author: Rachel Oughton
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/angle_photos.png
+  teaser_alt: some description
+  teaser_pos: mid
 ---
 
 When two lines meet each other, they form an **angle**.
