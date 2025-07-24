@@ -10,6 +10,8 @@ author: Molly Ireland
 sub_date: 2025-07-02
 header:
   teaser: /assets/img/rolling_pentagons_2.jpeg
+  teaser_alt: Two diagrams of pentagons on ramps, the ramp on the right is steeper. Vertical dotted lines show that the centre of mass of the pentagon on the steeper slope will fall outside of the base.
+  teaser_pos: mid
 ---
 A common playtime activity is stacking blocks. Most of the time, children want to build the tallest towers, which leads them to question how to make their tower taller. To make the towers taller, the biggest problem is usually stability. How can they make their towers more stable?
 
@@ -47,7 +49,7 @@ There are many examples of making things more stable by increasing the base size
 
 The position of the centre of mass is also important when rolling objects on ramps. In the diagrams below, we can see that the pentagon will only roll down the ramp when the ramp is steep enough. The ramp needs to be steep enough that the centre of mass is not above the base of the pentagon, as shown on the right-hand side of the diagram. Children can experiment with this using pencils on a cardboard ramp, increasing the angle of the cardboard until the pencil rolls.
 
-![Two diagrams of pentagons on ramps, the ramp on the right is steeper.]({{site.baseurl}}/assets/img/rolling_pentagons_2.jpeg "Pentagons on ramps")
+![Two diagrams of pentagons on ramps, the ramp on the right is steeper. Vertical dotted lines show that the centre of mass of the pentagon on the steeper slope will fall outside of the base.]({{site.baseurl}}/assets/img/rolling_pentagons_2.jpeg "Pentagons on ramps")
 
 As we increase the number of sides the polygon has, the centre of mass no longer lies above the base. As the number of sides of the polygon tends to infinity, our polygon approximates a circle, which will roll on any non-flat ramp. A circle has a base of a single point, and so the centre of mass is not above the base unless the ramp is perfectly flat. 
 

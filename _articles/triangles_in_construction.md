@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-06-27
 header:
   teaser: /assets/img/tyne_bridge_unsplash.jpeg
+  teaser_alt: The Tyne Bridge.
+  teaser_pos: top
 ---
 
 A popular activity in nurseries is building structures. Many interesting questions can arise when children experiment with building specifically, why are triangles stronger than squares? 

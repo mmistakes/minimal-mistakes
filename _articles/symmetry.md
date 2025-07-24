@@ -10,6 +10,8 @@ title: "Symmetry"
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/symmetry_peacock.jpg
+  teaser_alt: A peacock butterfly, with the line of symmetry shown
+  teaser_pos: fit
 ---
 The word **symmetry** stems from Greek, meaning (very roughly) 'having the same measure' or 'being in agreement'. Put simply, symmetry is concerned with whether a shape still looks the same if you move it in some way, and if so, how. There several types of symmetry, but the two that come up most often are **reflectional** and **rotatational**.
 

@@ -13,6 +13,8 @@ author: Lexie Newbery
 sub_date: 2023-08-26
 header:
   teaser: /assets/img/rockpuddle.png
+  teaser_alt: A rock falling into water, creating a splash
+  teaser_pos: fit
 ---
 Many of the children enjoyed dropping rocks into the river water and watching the splashes. After a few goes of dropping the rocks, we are able to identify a pattern between both the rock and splash sizes, and the height at which the rock has been dropped and the size of the splash in the water it makes. 
 

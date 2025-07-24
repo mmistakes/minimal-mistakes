@@ -11,6 +11,8 @@ author: Molly Ireland
 sub_date: 2025-07-16
 header:
   teaser: /assets/img/difference_in_surface_area.jpeg
+  teaser_alt: A diagram of how air interacts with a paper ball and a sheet of paper.
+  teaser_pos: mid
 ---
 In our article on [gravity]({{site.baseurl}}/articles/gravity/), we discussed how all objects have the same acceleration due to gravity. Some objects fall slower than others when dropped, due to **air resistance**. 
 

@@ -11,6 +11,8 @@ author: Molly Ireland
 sub_date: 2025-07-14
 header:
   teaser: /assets/img/conservation_of_energy_ball_losing_height.jpeg
+  teaser_alt: A diagram showing how a bouncy ball loses height on each bounce.
+  teaser_pos: fit
 ---
 Conservation of energy is a key idea in physics, and we can explore this using common items. 
 

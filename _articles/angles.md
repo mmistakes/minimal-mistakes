@@ -12,7 +12,7 @@ author: Rachel Oughton
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/angle_photos.png
-  teaser_alt: some description
+  teaser_alt: Children using various objects (sticks, their bodies, their fingers and rulers) to form angles
   teaser_pos: mid
 ---
 

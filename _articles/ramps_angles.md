@@ -12,6 +12,8 @@ author: Rachel Oughton
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/rampsangles3.png
+  teaser_alt: Several children building a ramp from wooden blocks and planks. Again, the angles are marked.
+  teaser_pos: mid
 ---
 Many of the children built ramps with objects like planks of wood or sheets of carboard. The angle between the ramp/board/plank and the floor changes as the children change their ramp set-up. 
 

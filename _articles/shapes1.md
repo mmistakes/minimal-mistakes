@@ -10,6 +10,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/shape1.png
+  teaser_alt: A child cutting playdough
+  teaser_pos: fit
 ---
 Play dough is another activity that can engage children with mathematics, mainly when it comes to making and creating shapes.
 

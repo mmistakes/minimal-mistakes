@@ -10,6 +10,8 @@ author: Lexie Newbery
 sub_date: 2023-08-26
 header:
   teaser: /assets/img/dough.png
+  teaser_alt: A child making different sized balls from playdough and arranging them in size order
+  teaser_pos: bottom
 ---
 As one group activity, some of the children spent their time making lots of different sized balls out of dough. This then allowed them to spend the time exploring the idea of increasing and decreasing sizes, by placing them into order and having conversations about how to increase or decrease the sizes/masses of the balls. 
 

@@ -8,6 +8,8 @@ author: Lexie Newbery
 sub_date: 2023-08-26
 header:
   teaser: /assets/img/couchlength.png
+  teaser_alt: A sofa, measured in units of cushions and books
+  teaser_pos: fit
 ---
 
 Some of the children were experimenting with different ways of measuring the lengths of objects, using different units. Naturally, many children and adults will automatically jump to grab a ruler when being told to measure something, however that is not the only unit that is available. 

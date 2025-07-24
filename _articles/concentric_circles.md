@@ -10,6 +10,8 @@ author: Molly Ireland, Lexie Newbery
 sub_date: 2025-07-17
 header:
   teaser: /assets/img/concentric_circles.jpeg
+  teaser_alt: Concentric circles on a grid.
+  teaser_pos: fit
 ---
 Concentric circles are all around us, in things we make, like tin cans and in nature, inside trees. They are a type of parallel curve, [you can learn more about parallel curves in our article about them]({{site.baseurl}}/articles/parallel_lines/#parallel-curves). 
 

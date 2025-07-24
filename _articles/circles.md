@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-17
 header:
   teaser: /assets/img/finding_the_centre.jpeg
+  teaser_alt: A diagram showing the process for finding the centre of a circle.
+  teaser_pos: fit
 ---
 Circles are a shape that is of particular interest to nursery school children, recurring in many discussions. The roundness of circles makes them ideal for use in toys and can lead to a lot of mathematical exploration. Below, we discuss some of the main features of circles and some practical activities children could try. 
 
