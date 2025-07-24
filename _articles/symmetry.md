@@ -1,6 +1,7 @@
 ---
 topic_overview: true
-topics: symmetry
+topics:
+  - symmetry
 related: 
   - patterns
 nurseries: HCNS
