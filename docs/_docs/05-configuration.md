@@ -962,6 +962,15 @@ footer:
 
 To change "Follow:" text that precedes footer links, edit the `follow_label` key in `_data/ui-text.yml`.
 
+The copyright notice in the footer shows the year the site has been generated. This can be overridden with `time` in `_config.yml`. If `footer.since` is added and the value is not equal to the current year or the optional value of `time`, then a time range will be shown.
+
+```yaml
+footer:
+  since: "2013"
+```
+
+The above will result for example in `© 2013 - 2025 Minimal ...`. Note that `time` and `footer.since` also support values other than year numbers.
+
 ## Reading files
 
 Nothing out of the ordinary here. `include` and `exclude` may be the only things you need to alter.
@@ -1232,7 +1241,7 @@ If you care at all about performance (and really who doesn't) compressing the HT
 
 If you're hosting with GitHub Pages there aren't many options afforded to you for optimizing the HTML Jekyll generates. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments to reduce file size.
 
-There's a variety of configurations and caveats to using the `compress` layout, so be sure to read through the [documentation](http://jch.penibelst.de/) if you decide to make change the defaults set in the theme's `_config.yml`.
+There's a variety of configurations and caveats to using the `compress` layout, so be sure to read through the [documentation](http://jch.penibelst.de/) if you decide to change the defaults set in the theme's `_config.yml`.
 
 ```yaml
 compress_html:
