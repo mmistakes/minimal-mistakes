@@ -5,6 +5,8 @@ permalink: /articles/
 collection: articles
 entries_layout: grid
 classes: wide
+sort_by: sub_date
+sort_order: reverse
 ---
 This is the collection of all articles currently written for the Young Minds Big Maths site. Open the filter menu below to filter to articles matching (all of) the selected topics.
 <!-- This category filter menu is JS based, and so is hidden if JS is disabled -->

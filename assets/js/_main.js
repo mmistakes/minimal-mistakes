@@ -137,6 +137,8 @@ $(function() {
 });
 
 var articles = document.querySelectorAll("div.grid__item:not(#noarticles),div.list__item:not(#noarticles)");
+let articlesArray = Array.from(articles);
+let articlesContainer = document.getElementById("articles-container");
 var article;
 var displayedTopics = [];
 var noarticle = document.querySelector("#noarticles");
@@ -167,29 +169,62 @@ function displayMenu(elt) {
 	}
 }
 
+function topicSort(a,b) {
+    // We sort the article divs based on how many topics they share with the topics selected in the filter list, in decreasing order.
+    if (displayedTopics.length == 0) {
+        a.setAttribute("filterMatch",1);
+        b.setAttribute("filterMatch",1);
+        return 0;
+    }
+    const atopics = a.getAttribute('topics').split('_');
+    const btopics = b.getAttribute('topics').split('_');
+    const commonTopicsA = displayedTopics.filter(top => atopics.includes(top)).length;
+    const commonTopicsB = displayedTopics.filter(top => btopics.includes(top)).length;
+    // Set/Update the filterMatch attribute so we can hide non-fitting articles
+    a.setAttribute("filterMatch",commonTopicsA);
+    b.setAttribute("filterMatch",commonTopicsB);
+    return (commonTopicsB - commonTopicsA);
+}
+
 function toggleTopic(elt,topicToggle) {
 	var noarticles = true;
 	var topicButton = elt;
+    const articleNodes = {}
+    allArticles = articlesContainer.children;
+    [...allArticles].forEach(article=>{articleNodes[article.id] = article;});
 	topicButton.classList.toggle("toggled");
 	if (displayedTopics.includes(topicToggle)) {
 		displayedTopics = displayedTopics.filter(e => e!=topicToggle);
 	} else {
 		displayedTopics.push(topicToggle)
 	}
-	for (article of articles){
-		var topics = article.getAttribute('topics').split('_');
-		var hide = true;
-		var overlapTopics = displayedTopics.filter(top => !topics.includes(top));
-		if (overlapTopics.length > 0) {
-			article.style.display = "none";
-		} else {
-			article.style.display = "block";
-			noarticles = false;
-		}
-	}
-	if (noarticles) {
-		noarticle.style.display = "block";
-	} else {
-		noarticle.style.display = "none";
-	}
+    console.log(displayedTopics);
+    articlesArray.sort((a,b)=>topicSort(a,b));
+    console.log(articlesArray);
+    articlesArray.forEach(article => {
+        article = articleNodes[article.id];
+        articlesContainer.append(article);
+        if (article.getAttribute("filterMatch")==0) {
+            article.style.display = "none";
+        } else {
+            article.style.display = "block";
+        };
+        
+    });
+	// for (article of articles){
+//         var topics = article.getAttribute('topics').split('_');
+//         var hide = true;
+//         var overlapTopics = displayedTopics.filter(top => !topics.includes(top));
+//         if (overlapTopics.length > 0) {
+//             article.style.display = "none";
+//         } else {
+//             article.style.display = "block";
+//             noarticles = false;
+//         }
+//     }
+//     if (noarticles) {
+//         noarticle.style.display = "block";
+//     } else {
+//         noarticle.style.display = "none";
+//     }
 }

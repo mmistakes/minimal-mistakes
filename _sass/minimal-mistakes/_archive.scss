@@ -269,6 +269,13 @@
       }
     }
   }
+  
+  article {
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }  
 }
 
 /*
@@ -539,7 +546,7 @@
 	.menuVisible {
 		height: auto;
         max-height: 230px;
-        overflow: scroll;
+        overflow: auto;
 		transition: max-height 1000ms, opacity 300ms ease-out;
         opacity:1;
         @include breakpoint($small) {
