@@ -79,7 +79,8 @@ layout: default
       {% if page.related and related_topics.size > 0 %}
       {% assign match_topics = related_topics | concat: page.topics %}
           {% for topic in match_topics %}
-              {% assign articles_to_add = site.articles | where_exp:"post", "post.topics contains topic" %}
+          {% comment %} <!-- GitHub pages is currently using Jekyll 3.10.0, so doesn't support and in where_exp --> {% endcomment %}
+              {% assign articles_to_add = site.articles | where_exp:"post", "post.topics contains topic" |  where_exp:"post", "post.id != page.id"%}
               {% assign related_articles = related_articles | concat: articles_to_add %}
           {% endfor %}
           {% assign related_articles = related_articles | uniq %}
