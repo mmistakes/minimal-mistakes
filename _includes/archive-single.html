@@ -1,7 +1,14 @@
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+  {% capture teaser_alt %}{{ post.header.teaser_alt }}{% endcapture %}
 {% else %}
   {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.header.teaser_pos %}
+    {% capture teaser_pos %}{{ post.header.teaser_pos }}{% endcapture %}
+{% else %}
+  {% assign teaser_pos = "fit" %}
 {% endif %}
 
 {% if post.id %}
@@ -13,8 +20,8 @@
 <div class="{{ include.type | default: 'list' }}__item grid-card grid-card--inverse" topics="{{ post.topics | join: '_' }}">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if (include.type == "grid" or include.type == "grid-recent") and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
+      <div class="archive__item-teaser--{{ teaser_pos }}">
+        <img src="{{ teaser | relative_url }}" alt="{{ teaser_alt }}">
       </div>
     {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">

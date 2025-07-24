@@ -185,14 +185,33 @@
   .archive__item-teaser {
 //    max-height: 200px;
     height:200px;
+    display:flex;
+    flex-direction: column;
       
     @include breakpoint($medium) {
 //    max-height:120px;
       height: 120px;
     }
     img {
-        height:100%;
         object-fit:contain;
+    }
+    &--top {
+        @extend .archive__item-teaser;
+        justify-content: start;
+    }
+    &--bottom {
+        @extend .archive__item-teaser;
+        justify-content: end;
+    }
+    &--mid {
+        @extend .archive__item-teaser;
+        justify-content: center;
+    }
+    &--fit {
+        @extend .archive__item-teaser;
+        img {
+            height:100%;
+        }
     }
   }
 }
