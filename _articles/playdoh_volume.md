@@ -13,6 +13,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/playdoughvol1.png
+  teaser_alt: A child making different sized balls from playdough
+  teaser_pos: mid
 ---
 Playdough is another activity that can engage children with mathematics, mainly when it comes to making and creating shapes.
 

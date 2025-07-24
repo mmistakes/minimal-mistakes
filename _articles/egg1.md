@@ -10,6 +10,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/egg1.png
+  teaser_alt: A child standing next to two egg boxes, each with some plastic egg shells sitting in the holes
+  teaser_pos: mid
 ---
 One of the children was interested in the open eggs that sit in the egg cartons. They were easily able to tell their teacher the different colours of the eggs as well as the sizes of the eggs.
 

@@ -10,6 +10,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/cog1.png
+  teaser_alt: A child stacking differently sized cogs onto a threaded pole, almost in size order.
+  teaser_pos: mid
 ---
 One of the games that the children can play is stacking a set of cogs on top of one another. These cogs are different shapes, colours and sizes which means that you could do this in a sequence (pattern) or the children could simply stack them however they wanted.
 

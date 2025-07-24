@@ -14,6 +14,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/numicon3.png
+  teaser_alt: A child showing a pattern they had made from Numicon pieces
+  teaser_pos: fit
 ---
 
 Numicons is a new approach to teaching maths to early years that can help children see the connection between numbers. These are flat plastic tiles that represent numbers from 1 to 10.

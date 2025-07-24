@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-10
 header:
   teaser: /assets/img/four_colour_theorem.jpeg
+  teaser_alt: An image coloured with four colours.
+  teaser_pos: fit
 ---
 One popular classroom activity is colouring, and an interesting mathematical property is the **four colour theorem**. If we have at least four colours, we can fill in a drawing or map so that no sections that are next to each other (share an edge) are the same colour. We call sections that share an edge **adjacent**. In the images below, we can see that the drawing has been coloured in using four colours, and no adjacent sections are the same colour. We are not worried about sections that meet at a point here. You can try the colouring yourself by printing a copy of the blank image, or you could try with a picture of your own. 
 

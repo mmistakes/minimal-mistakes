@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-06-26
 header:
   teaser: /assets/img/corregated_building.jpeg
+  teaser_alt: A paper model of corrugated cardboard.
+  teaser_pos: mid
 ---
 Corrugated cardboard is often accessible to many children, and one common question is, Why is it so strong? This can spark an interesting conversation about how to make materials stronger. 
 

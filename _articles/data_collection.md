@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-10
 header:
   teaser: /assets/img/stem_and_leaf.jpeg
+  teaser_alt: A stem and leaf plot.
+  teaser_pos: top
 ---
 Classroom experiments can not only be a fun way for children to learn about the world around them, but also a great opportunity to develop data collection techniques. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, see our article on [different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
 

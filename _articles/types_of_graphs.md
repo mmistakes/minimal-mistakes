@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-06-27
 header:
   teaser: /assets/img/histogram_example.jpeg
+  teaser_alt: A histogram for the heights of the children in the data.
+  teaser_pos: fit
 ---
 Once children become excited by an idea, they often want to test and compare it, which can involve collecting some data. An example is measuring the distances travelled by rolling cars down ramps. Once the children have collected data, there are many ways for them to display it. 
 

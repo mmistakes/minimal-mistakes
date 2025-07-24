@@ -13,7 +13,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/funnel1.png
-
+  teaser_alt: Two children filling a water bottle through a funnel at an outdoor tap
+  teaser_pos: mid
 ---
 
 At one of the nurseries there was an outdoor tap, where the children could fill up whatever they wanted to with water. One of the children enjoyed filling up an empty water bottle with water. However, during this activity they struggled to fill the bottle through the small opening at the top without it spilling out at the sides.

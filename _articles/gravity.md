@@ -11,6 +11,8 @@ author: Molly Ireland
 sub_date: 2025-07-16
 header:
   teaser: /assets/img/acceleration_due_to_gravity.jpeg
+  teaser_alt: An object accelerating under gravity.
+  teaser_pos: top
 ---
 “Why do things fall?” is a common question we all have when growing up. The short answer, **gravity**. Gravity is the force that acts on an object, pulling it towards the Earth. It acts on us, keeping our feet on the floor. Children can experiment in the classroom by dropping objects to learn about gravity. 
 

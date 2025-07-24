@@ -13,6 +13,8 @@ author: Molly Ireland, Milly McGowan, Lexie Newbery
 sub_date: 2025-07-11
 header:
   teaser: /assets/img/playdough_multiplication.jpeg
+  teaser_alt: Three images of playdough on a set of scales. In the first image, there is a ball of playdough weighing 100g. In the second image, there are two balls of playdough, together weighing 100g. In the third image, there are four balls of playdough, together weighing 100g.
+  teaser_pos: fit
 ---
 One common playtime toy is playdough, which allows children to experiment with many mathematical concepts. 
 
