@@ -32,11 +32,11 @@ We have tried to keep the articles very specific to one idea or connection each,
 
 ### IAA funding
 
-Earlier this year we were successful in applying for an ESRC Impact Accelerator grant, with an aim to developing this website and writing  a book (aimed at EY educators) all about exploring maths with young children through ramp play. The book will be freely available later in the year.
+Earlier this year we were successful in applying for an ESRC Impact Accelerator grant, with an aim to developing this website and writing a book (aimed at EY educators) all about exploring maths with young children through ramp play. The book will be freely available later in the year.
 
 ### Education Durham collaboration
 
-We're delighted that Education Durham (Durham County Council) are now on board as collaborators. As well as giving us some much needed orgnisational support, this collaboration has also given us reach to many more local early years settings. We're excited to have 10 new participating settings starting in September 2025.
+We're delighted that Education Durham (Durham County Council) are now on board as collaborators. As well as giving us some much needed organisational support, this collaboration has also given us reach to many more local early years settings. We're excited to have 10 new participating settings starting in September 2025.
 
 
 ## Publications
