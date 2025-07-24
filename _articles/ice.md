@@ -11,6 +11,8 @@ nurseries:  Group 1
 sub_date: 2023-08-26
 header:
   teaser: /assets/img/cupice.png
+  teaser_alt: An ice cube placed in a vessel of warm water
+  teaser_pos: fit
 ---
 
 Some of the children were experimenting with warm water and ice cubes. The time it took for the ice to melt depended on the ways they tried to melt the ice with the water. 

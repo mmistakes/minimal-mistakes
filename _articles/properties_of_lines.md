@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-14
 header:
   teaser: /assets/img/example_equation_of_a_line.jpeg
+  teaser_alt: The line $$y = -\frac{3}{5}x + 1$$.
+  teaser_pos: fit
 ---
 There are straight lines all around us, but how can we describe them mathematically? This is an important question if we want to compare the lines that we see around us.
 

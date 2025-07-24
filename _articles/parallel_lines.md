@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-14
 header:
   teaser: /assets/img/parallel_lines.jpeg
+  teaser_alt: Two parallel straight lines.
+  teaser_pos: fit
 ---
 We can see parallel lines all around us, on radiators, railway tracks and pieces of paper. What properties do lines need to have to be parallel? 
 

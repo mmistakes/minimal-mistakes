@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-10
 header:
   teaser: /assets/img/time_data.jpeg
+  teaser_alt: A line graph of the heights of a sunflower over time.
+  teaser_pos: fit
 ---
 Collecting data in the classroom can be a great way for children to learn about the things around them and statistics at the same time. There are two main types of data that the children can collect: **quantitative** and **qualitative**.
 

@@ -4,14 +4,16 @@ topics:
   - fractals
   - patterns in nature
   - patterns
+topic_overview: true
 related: 
   - same and different    
 nurseries: Group 5 
 author: Lexie Newbery
-# excerpt: test #
 sub_date: 2023-08-25
 header:
   teaser: /assets/img/lookingatcauliflower.png
+  teaser_alt: A photo showing nursery children looking at a cauliflower
+  teaser_pos: fit
 ---
 A group of the children were analysing cauliflower and noticed that the smaller parts of the cauliflower that we are able to remove from it, are much like the larger branch of cauliflower, just much smaller. This is a great example of fractals, which are "infinite patterns in which that each section of the pattern is almost identical to the pattern as a whole".  
 

@@ -14,6 +14,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/tile1.png
+  teaser_alt: A child making representations of houses with 2D shaped tiles
+  teaser_pos: mid
 ---
 
 One of the children used different shaped tiles to build a house. For example, they used a square-shaped tile as the main part of the house and a triangular-shaped tile as the roof of a house.

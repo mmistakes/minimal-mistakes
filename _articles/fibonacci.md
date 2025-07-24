@@ -12,6 +12,8 @@ author: Molly Ireland
 sub_date: 2025-07-10
 header:
   teaser: /assets/img/fibonacci_pompoms.jpeg
+  teaser_alt: Exploring the Fibonacci numbers with pompoms to show how addition of the previous two numbers is used to get the current number.
+  teaser_pos: top
 ---
 One fascinating thing about nature is the occurrence of the **Fibonacci numbers**. The Fibonacci numbers are a sequence of numbers starting $$0,1,1,2,3,5,8,...$$. 
 

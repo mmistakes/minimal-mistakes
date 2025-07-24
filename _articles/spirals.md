@@ -10,6 +10,8 @@ author: Molly Ireland
 sub_date: 2025-07-02
 header:
   teaser: /assets/img/approx_golden_spiral.jpeg
+  teaser_alt: An approximation of the Golden spiral.
+  teaser_pos: fit
 ---
 An interesting shape that occurs in nature is the spiral. Children can find spirals all around them, on the shells of snails, in flowers and animal horns. There are many types of spirals, which are defined by different mathematical equations; a few key examples of spirals are given below. Knowing the names of the spirals can be nice, but it is more interesting to think about how the spirals look different. 
 

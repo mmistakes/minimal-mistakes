@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-07-14
 header:
   teaser: /assets/img/perpendicular_lines.jpeg
+  teaser_alt: Two perpendicular lines.
+  teaser_pos: fit
 ---
 Two lines are perpendicular to each other if they meet at a right angle ($$90$$ degrees). We can see examples of perpendicular lines everywhere, where walls meet the floor, in grids and the corners of paper. An example of two perpendicular lines is shown in the image below. 
 

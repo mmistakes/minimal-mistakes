@@ -11,6 +11,8 @@ author: Milly McGowan
 sub_date: 2023-08-30
 header:
   teaser: /assets/img/cake2.png
+  teaser_alt: Using ratios to keep a mudcake consistent
+  teaser_pos: mid
 ---
 Some of the children enjoy making their own "cakes" and following recipe cards when doing so. They discovered that the consistency of these cakes can be changed by adding more of one type of ingredient.
 

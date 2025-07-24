@@ -13,6 +13,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/count1.png
+  teaser_alt: A child lining up cartons of milk
+  teaser_pos: mid
 ---
 
 One of the children enjoyed counting the amount of milk cartons needed for the group. This activity was understandably difficult for this child as they had to count the number of milk cartons and then the number of children, and the children were moving. This way of thinking is arguably quite systematic and natural. 

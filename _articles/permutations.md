@@ -9,6 +9,8 @@ author: Molly Ireland
 sub_date: 2025-06-25
 header:
   teaser: /assets/img/All_permutations.jpeg
+  teaser_alt: All six possible permutations of three objects.
+  teaser_pos: fit
 ---
 Many children are interested in ordering objects by size or some other property; this can lead to a discussion about permutations. A **permutation** is a reordering of a group of objects. This can be explored using items around the classroom or by the children organising themselves in a line. In the image below, we can see that the original order of the objects has been rearranged to give another permutation of the objects.
 

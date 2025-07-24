@@ -11,6 +11,8 @@ author: Lexie Newbery
 sub_date: 2023-08-26
 header:
   teaser: /assets/img/3ramps.png
+  teaser_alt: Three ramps made from drainpipe. One is lined with sequinned fabric and another with bubblewrap.
+  teaser_pos: fit
 ---
 Some of the children wanted to make ramps that had different surfaces, which changed how the object went down the ramps. 
 

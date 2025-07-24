@@ -12,6 +12,8 @@ author: Milly McGowan
 sub_date: 2023-08-31
 header:
   teaser: /assets/img/pattern2.png
+  teaser_alt: A child continuing a repeating pattern using fingerprint paint
+  teaser_pos: fit
 ---
 
 One day at a participating nursery, some of the children were finger-painting pictures of worms. Whilst this activity is simple and fun, there is an underlying part of mathematics that links with repeating patterns and transformations. For example, this child was painting one of their pictures with lines that went red, blue, blue, red, blue, blue...etc. Thus, the repeating pattern of red, blue, blue is a sequence. There are many repititons like this all around, like in music, songs and poetry.
