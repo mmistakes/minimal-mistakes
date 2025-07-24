@@ -402,6 +402,20 @@ sidebar:
 &emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
 <br>  
 
+## 4.3. Javascript
+<h3>- 문법</h3>
+- 기본
+
+  - 💻
+  - var
+  - console.log
+  - const
+  - function
+  {: .notice--warning}
+
+&emsp;&emsp;<a href="#" class="btn btn--success">Back to top</a>
+<br>  
+
 <br><br>
 # 5. 교육/자격증/기타
 ## 5.1. 교육
