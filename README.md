@@ -7,9 +7,12 @@ This repository generates the Young Minds Big Maths website, available at [https
 ## Contents
 This document covers the following:
 * Website framework
-* How can you collaborate
-* How to add an article 
+* How to collaborate
+* How to write an article 
 * How to locally compile the website 
+* Summary of how to submit an article 
+* What happens after you submit an article
+* How to add something from our wishlist
 * Who to contact with further questions
 
 ## Website Framework
@@ -24,41 +27,43 @@ The website uses the Minimal Mistakes Jekyll theme, which can be found at [https
 ## How you can collaborate
 Collaboration is greatly encouraged, and you can do so in two main ways:
 
-* Write you're own article 
+* Write your own article 
 * Add a feature from our wishlist 
 
 All collaborations are submitted through GitHub and require approval from one of the admins before they become part of the website. This means that you do not need to worry if you get a technical detail wrong; we can help double-check.
 
 ### How to write an article 
 
-All articles on the website are stored as Markdown (.md) files. When submitting your article, we ask that you use this form. It can be helpful to write the content of your article in Word, Google Docs or another writing software first, then format the text as a Markdown document once you are happy with the content. 
+All articles on the website are stored as Markdown (.md) files. When submitting your article, we ask that you use this form. It can be helpful to write the content of your article in Word, Google Docs or other writing software first, then format the text as a Markdown document once you are happy with the content. 
 
 To add extra features such as images, links and tables, please refer to our quick guide below. 
 
 ### Metadata
 
-For the website to process an article, some metadata must be included at the start of the document. This metadata has the following form (the sections in italics are yours to fill in):
+For the website to process an article, some metadata must be included at the start of the document. This metadata has the following form:
 ```
 ---
-title: "*Article Title*"
+title: "*Your Article Topic*"
 topics: 
-  - *add your key topics here*
+  - *topic 1*
+  - *topic 2*
 topic_overview: *true*
 related: 
-  - *add related topics here*
-author: *add your name as given in your author profile here*
+  - *related topic 1*
+  - *related topic 2*
+author: *your name as given in your author profile*
 sub_date: *yyyy-mm-dd*
 header:
-  teaser: *add an image*
-  teaser_alt: *add alt text*
-  teaser_pos: *choose from list*
+  teaser: *image*
+  teaser_alt: *alt text*
+  teaser_pos: *choose from options given below*
 ---
 ```
 The`title` section gives the title your article will appear with on the website.
 
-The `topics` section gives the sections where your article will appear when readers use the topic filter to search. Inputs for topics are taken as a list. 
+The `topics` section gives the sections where your article will appear when readers use the topic filter to search. Inputs for topics are taken as a list. You can look at the topics filter to see which topics are in use. You can add your own topics if appropriate but we suggest you use the existing topics where possible. 
 
-The `topic_overview` section means that the start of your article will be visible to readers as a description as they search through articles. If this is true, but anything other than text is the first line of your article, this will not appear. 
+The `topic_overview` section is usually set to true and means that the start of your article will be visible to readers as a description as they search through articles. When this is true, but anything other than text is the first line of your article, this will not appear. 
 
 The `related` section helps suggest articles related to the one being read. Please fill this in using broad topic terms, i.e. geometry to describe the areas of maths your article relates to. You can use the topic filter on the website for inspiration. Entries should be filled in as a list.  
 
@@ -123,19 +128,13 @@ It is especially important to have the correct spacing here. Please use existing
 
 ### Checking your submission and locally compiling the website
 
-To check your article is being displayed correctly (all figures are loading, etc), you should compile the website locally on your device first. When you do this for the first time, you will need to install the required software. You can do this by following the steps below:
+To check your article is being displayed correctly (all figures are loading, etc), you may wish to compile the website locally on your device first. When you do this for the first time, you will need to install the required software. You can do this by following the steps below:
 
-1. Install Jekyll. It is a good idea to follow their installation guide, which can be found at [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/). This can require installing a few different bits of software, such as Homebrew and Chruby.
+1. Install Jekyll. It is a good idea to follow their installation guide, which can be found at [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/). Note that this can require installing a few pre-requisites.
 2. Download git GitHub Desktop to your device and sign in with your GitHub account. 
 3. Download the repository to your device. This can either be done using git clone in your terminal or via GitHub Desktop. Make sure you are working in your own branch of the repository in GitHub Desktop, not the master branch.
 4. Select the repository to be your working directory using the cd command. You may need to locate where the repository has been saved to on your device first.
 5. Use the command `bundle exec jekyll serve` in your terminal to locally serve the website. Now you should be able to use the link provided in your terminal to view your version of the website generated by your local files.
-
-Once you are happy with all your changes and are ready to submit them to the website, you can do so by committing all changes you have made in your branch with appropriate descriptions and then submitting a pull request to the master branch of the repository. Make sure to leave appropriate comments on your commits and pull requests, as this makes it easier to track all the changes you have made. 
-
-### How to add something from our wishlist 
-
-Take a look through the issues labelled as wishlist in the repository issues. If you feel you know how to add the desired feature to our website, please have a go. First, create your branch of this repository. Next, make your updates. Before submitting these changes via a pull request, please check that they compile locally on your device. To locally compile the website, please see the section above. When submitting changes via a pull request, please give a description of your changes to make it easy for admins to understand what you have done. 
 
 ### Key things to check before you upload your article
 
@@ -144,20 +143,26 @@ Take a look through the issues labelled as wishlist in the repository issues. If
 * Check all image descriptions have been meaningfully filled in, in both the alt text and the tooltip sections. 
 * Any images of people must have permission from the individual to be included and should be anonymised. 
 
-### What happens when you submit an article or update to us
-
-When you submit your pull request containing your article or updates, one of our team members will be able to see what you have added. If everything is fine, we will merge the changes and your work will be visible on the website. If we have questions for you, we will reply to the pull request with these. 
-
-Don’t worry if you are unsure about some of the technical details; just copy the structure of the existing articles. We are able to check your submissions before they interact with the website, so we can make sure everything is working. 
 ### Summary of how to submit an article
 
 Write your article as a Markdown document
 Create your own branch in GitHub from the master branch
 Add your images (if you have any) to the [images folder](assets/img)
 Add your article to the [article folder](_articles/)
-Commit your changes 
-Submit a pull request to the master branch 
-Wait for our feedback
+
+Once you are happy with all your changes and are ready to submit them to the website, you can do so by committing the relevent changes you have made in your branch (normally adding articles and images) with appropriate descriptions and then submitting a pull request to the master branch of the repository. Make sure to leave appropriate comments on your commits and pull requests, as this makes it easier to track all the changes you have made. Note that the _site folder will change during the process of running jekyll serve but this should not be commited to the repository. When you have commited your changes you can then submit a pull request to the master branch. 
+
+Whilst we have tried to keep the submission process as straightforward as possible, we appreciate that it can be a daunting the first time. If you have any questions please feel free to reach out to either Sam Fearn at *s.m.fearn@durham.ac.uk* or Rachel Oughton at *r.h.oughton@durham.ac.uk*. 
+
+### What happens when you submit an article or update to us
+
+When you submit your pull request containing your article or updates, one of our team members will be able to see what you have added. If everything is fine, we will merge the changes and your work will be visible on the website. If we have questions for you, we will reply to the pull request with these. 
+
+Don’t worry if you are unsure about some of the technical details; just copy the structure of the existing articles. We are able to check your submissions before they interact with the website, so we can make sure everything is working. 
+
+### How to add something from our wishlist 
+
+To add something from our wishlist, take a look through the issues labelled as wishlist in the repository issues. If you feel you know how to add the desired feature to our website, please have a go. First, create your branch of this repository. Next, make your updates. Before submitting these changes via a pull request, please check that they compile locally on your device. To locally compile the website, please see the section on locally compiling. When submitting changes via a pull request, please give a description of your changes to make it easy for admins to understand what you have done. 
 
 ### Who to contact with questions that aren't answered here
 
