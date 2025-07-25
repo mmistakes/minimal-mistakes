@@ -2,7 +2,17 @@
 
 This repository generates the Young Minds Big Maths website, available at [https://youngmindsbigmaths.co.uk/.](https://youngmindsbigmaths.co.uk/)
 
-[A brief overview of YMBM here and the goal for articles.]
+The aim of these articles is to equip early years educators (and other people working with young children) to see the maths in what the children are doing, and to be able to support and extend the children's mathematical exploration. Some articles focus on a mathematical aspect of a specific activity, or thing in the world (for example [Experiments with Playdough](https://youngmindsbigmaths.co.uk/articles/playdough/) or [Triangles in construction](https://youngmindsbigmaths.co.uk/articles/triangles_in_construction/)) while others are intended as an introduction to a mathematical concept (like [Circles](https://youngmindsbigmaths.co.uk/articles/circles/) or [Types of graphs](https://youngmindsbigmaths.co.uk/articles/types_of_graphs/)). Before you write an article it might be useful to read a few that are a similar type to yours. 
+
+The aim is not to instruct educators about what maths they should be exploring with the children, but to equip them as they support the children to explore the maths they are interested in, or to gently provide opportunities to introduce some maths in a popular activity. This ethos is the same as for the Young Minds Big Maths project, which you can read about at [https://youngmindsbigmaths.co.uk/about/.](https://youngmindsbigmaths.co.uk/about/). 
+
+When writing your article, please bear the following in mind:
+
+  - **There should be one key idea.** This might be one mathematical concept, or the connection between a mathematical idea and an 'application'. If you find the article getting a bit long, it may be that you can split it up into two or more smaller articles, with distinct focusses. Ideally no article should take more than a couple of minutes to read.
+  - **The style should be clear and approachable, but not patronising.** If you use a mathematical word, please explain what it means, and consider including a picture. Avoid words like 'clearly', 'obviously', 'simple' etc. We want this website to be approachable even to people who are very apprehensive about maths. 
+  - **Illustrate your point**. Pictures / diagrams can be so helpful in clarifying an idea, so please include lots!
+
+Above all, thank you for considering writing an article for this site. We really hope that it will help people to see how much maths there is around us, and to feel more confident and able to share it with the children in their care.
 
 #### Contents
 This document covers the following:
