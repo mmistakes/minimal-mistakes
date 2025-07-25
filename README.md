@@ -11,6 +11,7 @@ When writing your article, please bear the following in mind:
   - **There should be one key idea.** This might be one mathematical concept, or the connection between a mathematical idea and an 'application'. If you find the article getting a bit long, it may be that you can split it up into two or more smaller articles, with distinct focusses. Ideally no article should take more than a couple of minutes to read.
   - **The style should be clear and approachable, but not patronising.** If you use a mathematical word, please explain what it means, and consider including a picture. Avoid words like 'clearly', 'obviously', 'simple' etc. We want this website to be approachable even to people who are very apprehensive about maths. 
   - **Illustrate your point**. Pictures / diagrams can be so helpful in clarifying an idea, so please include lots!
+  - **Focus on the children**. The aim is to draw attention to, and elaborate on, children's mathematical thinking. So, any examples of children's drawing, quotes, activities and so on are extremely useful.
 
 Above all, thank you for considering writing an article for this site. We really hope that it will help people to see how much maths there is around us, and to feel more confident and able to share it with the children in their care.
 
