@@ -31,7 +31,4 @@ The angles in the triangle determine whether it is a steep ramp or a shalllow ra
 
 {% include figure image_path="/assets/img/rampsangles1.png" alt="Diagrams to show how the steepness of a ramp and the angles it makes  with the floor / vertical are related." title="Angles in ramps" %}
 
-<img src="image/rampsangles1.png", alt = "Two different ramps", width = "100%">
-![Diagrams to show how the steepness of a ramp and the angles it makes  with the floor / vertical are related.]({{site.baseurl}}/assets/img/rampsangles1.png "Angles in ramps")
-
 Mathematicians would almost always focus on the angle to the floor (or horizontal), but we found that the children would nearly always focus on the angle to the vertical - this is absolutely fine!

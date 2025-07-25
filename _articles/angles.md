@@ -22,9 +22,10 @@ When two lines meet each other, they form an **angle**.
 
 Children can use all sorts of materials to form angles...
 
-{% include figure image_path="/assets/img/angles_photos.png" alt="Children using various objects (sticks, their bodies, their fingers and rulers) to form angles" title = "Making angles" %}
+{% include figure image_path="/assets/img/angle_photos.png" alt="Children using various objects (sticks, their bodies, their fingers and rulers) to form angles" title = "Making angles" %}
 
-"I will use my body. Look, me and E can do it! We are an angle, a right angle."
+
+**"I will use my body. Look, me and E can do it! We are an angle, a right angle."**
 
 The size of an angle is determined by *how far around* we have to go from one line to the other.
 
