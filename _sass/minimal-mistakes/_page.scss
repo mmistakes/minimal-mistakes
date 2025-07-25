@@ -36,8 +36,9 @@ body {
 }
 
 .page {
+    margin: auto;
   @include breakpoint($large) {
-    float: right;
+//    float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
@@ -45,6 +46,9 @@ body {
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
+  }
+  &.with-author{
+    float: right;  
   }
 
   .page__inner-wrap {
