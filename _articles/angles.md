@@ -18,28 +18,28 @@ header:
 
 When two lines meet each other, they form an **angle**.
 
-{% include figure image_path="/assets/img/angles1.png" alt="An example of an angle, made by two lines meeting each other" %}
+{% include figure image_path="/assets/img/angles1.png" alt="An example of an angle, made by two lines meeting each other", title = "An angle" %}
 
 Children can use all sorts of materials to form angles...
 
-{% include figure image_path="/assets/img/angles_photos.png" alt="Children using various objects (sticks, their bodies, their fingers and rulers) to form angles" %}
+{% include figure image_path="/assets/img/angles_photos.png" alt="Children using various objects (sticks, their bodies, their fingers and rulers) to form angles", title = "Making angles" %}
 
 "I will use my body. Look, me and E can do it! We are an angle, a right angle."
 
 The size of an angle is determined by *how far around* we have to go from one line to the other.
 
-{% include figure image_path="/assets/img/angles_around.png" alt="The size of the angle is determined by how far around you have to go to get from one line to the other" %}
+{% include figure image_path="/assets/img/angles_around.png" alt="The size of the angle is determined by how far around you have to go to get from one line to the other", title = "How far around" %}
 
 In the image above, angle A is bigger than angle  B, because you have to go further round to get from one line to the other.
 
 Engineers and scientists tend to measure angles in degrees, in which case there are 360 degrees all the way around the point. Mathematicians tend to use Radians, in which case there are $$2\pi$$ (where $$\pi$$ is the Greek letter 'pi', and represents the number 3.141592...).
 
-{% include figure image_path="/assets/img/full_angle.png" alt="All the way around is 360 degrees, or $$2pi$$ radians" %}
+{% include figure image_path="/assets/img/full_angle.png" alt="All the way around is 360 degrees, or $$2pi$$ radians", title = "All around the circle" %}
 
 Neither of these measuring systems is very suitable for young children, since degrees involve very large numbers, and Radians involve strange decimal numbers (like $$\pi$$). One way that is simpler is to think of 'how many of this angle fit into a circle?'.
 
 
-{% include figure image_path="/assets/img/angles_howmany.png" alt="Examples of how many of a certain angle fit into a circle. For the largest angle, only four fit together. For the smallest, eight can fit together." %}
+{% include figure image_path="/assets/img/angles_howmany.png" alt="Examples of how many of a certain angle fit into a circle. For the largest angle, only four fit together. For the smallest, eight can fit together.", title = "How many angles fit?" %}
 
 In the picture above, the left-most diagram shows the largest angle; only four will fit into a circle. The angle in the middle diagram is slightly smaller, and six will fit together. The angle to the right is smaller still, with eight filling the circle.
 
