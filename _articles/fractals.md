@@ -11,8 +11,8 @@ nurseries: Group 5
 author: Lexie Newbery, Rachel Oughton
 sub_date: 2025-07-25
 header:
-  teaser: /assets/img/lookingatcauliflower.png
-  teaser_alt: A photo showing nursery children looking at a cauliflower
+  teaser: /assets/img/cauli_hands.png
+  teaser_alt: A child cauliflower breaking a cauliflower into smaller pieces
   teaser_pos: fit
 ---
 A group of the children were analysing cauliflower and noticed that the smaller parts of the cauliflower that we are able to remove from it, are much like the larger branch of cauliflower, just much smaller. This is a great example of fractals, which are "infinite patterns in which that each section of the pattern is almost identical to the pattern as a whole".  
