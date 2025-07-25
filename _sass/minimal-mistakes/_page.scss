@@ -178,6 +178,18 @@ body {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+  .figure_container{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      figure {
+          img {
+              max-height:500px;
+              object-fit:contain;
+              width:auto;
+          }
+      }
+  }
 }
 
 .page__hero {

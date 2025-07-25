@@ -17,7 +17,8 @@ Concentric circles are all around us, in things we make, like tin cans and in na
 
 For circles to be concentric, they must have a constant distance between them, which is the same as them having the same [centre]({{site.baseurl}}/articles/circles_/# centre). In the image below, we can see some concentric circles on a grid.
 
-![Concentric circles on a grid.]({{site.baseurl}}/assets/img/concentric_circles.jpeg "Concentric circles")
+{% include figure image_path="/assets/img/concentric_circles.jpeg" alt="Concentric circles on a grid." title="Concentric circles" %}
+
 
 Identifying and drawing concentric circles can be a fun activity for children to try. There are lots of examples of concentric circles that children can find; some are shown in the images below.
 
