@@ -26,7 +26,7 @@ The project equips EY educators to explore and extend maths with children 'where
 
 In this website, we aim to re-create some of the open-ended, child-led nature of the Young Minds Big Maths meetings. By finding articles using the topic filters you can hopefully find some maths that is relevant to the interests of the children you work with, and some ideas of how to explore that maths in a number of ways. Although the project is focussed on early years children, we hope it might be useful for those working with children of all ages.
 
-We have tried to keep the articles very specific to one idea or connection each, but the topics mean it should be easy to find collections of related articles.
+We have tried to keep the articles very specific to one idea or connection each, but the topics mean it should be easy to find collections of related articles. If you'd like to contribute an article, you can find out how to do so [here](https://github.com/samfearn/ymbmweb).
 
 ## Recent news
 
