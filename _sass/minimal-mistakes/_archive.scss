@@ -5,12 +5,13 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-
+  margin-left: auto;
+  margin-right: auto;
   @include breakpoint($large) {
-    float: right;
+//    float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-left: 10%;
-    padding-right: 10%;
+//    padding-left: 10%;
+//    padding-right: 10%;
 //    padding-right: $right-sidebar-width-narrow;
   }
 
@@ -513,6 +514,7 @@
 .topicFilterMenu {
     text-align: center;
     padding: 15px;
+    position: relative;
 	button {
 		padding: 10px;
 		text-align: center;
@@ -526,7 +528,7 @@
 		}
         &#clearFilterButton {
             position: absolute;
-            right: calc(1em + 15px);
+            right: 15px;
             border: 1px solid $danger-color;
             color: $danger-color;
             &:hover{
