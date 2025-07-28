@@ -31,3 +31,6 @@ ehthumbs.db
 .sass-cache
 _asset_bundler_cache
 _site
+
+# R files
+.Rhistory
