@@ -22,14 +22,14 @@ For circles to be concentric, they must have a constant distance between them, w
 
 Identifying and drawing concentric circles can be a fun activity for children to try. There are lots of examples of concentric circles that children can find; some are shown in the images below.
 
-![A collection of objects showing concentric circles.]({{site.baseurl}}/assets/img/concentric_circles_objects.jpeg "A collection of objects showing concentric circles")
+{% include figure image_path="/assets/img/concentric_circles_objects.jpeg" alt="A collection of objects showing concentric circles." title="A collection of objects showing concentric circles" %}
 
-![Prints made from concentric circles.]({{site.baseurl}}/assets/img/printing_concentric_circles.jpeg "Prints made from concentric circles")
+{% include figure image_path="/assets/img/printing_concentric_circles.jpeg" alt="Prints made from concentric circles." title="Prints made from concentric circles" %}
 
 In the image below, we can see some beetroot slices where we can see the individual xylem and phloem “ring” shapes, forming concentric circles.
 
-![Beetroot slices showing concentric circles.]({{site.baseurl}}/assets/img/beetroot.jpeg "Beetroot slices showing concentric circles")
+{% include figure image_path="/assets/img/beetroot.jpeg" alt="Beetroot slices showing concentric circles." title="Beetroot slices showing concentric circles" %}
 
 In the image below, we can see a tree slice with concentric circles. These circles are irregular and not perfect, so it may be slightly more difficult for the children to see the separation between the lines.
 
-![A wood slice showing concentric circles.]({{site.baseurl}}/assets/img/wood_concentric_circles.jpeg "A wood slice showing concentric circles")
+{% include figure image_path="/assets/img/wood_concentric_circles.jpeg" alt="A wood slice showing concentric circles." title="A wood slice showing concentric circles" %}

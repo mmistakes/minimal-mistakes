@@ -98,6 +98,6 @@ If we have more than one category we want to count, we can do so with a **table*
 ## Stem and Leaf Plots
 A more complex method for recording quantitative data is **stem and leaf plots**. In the stem and leaf plot below, we record the heights of the children in our data. Here $$109|3$$ means $$109.3$$. 
 
-![A stem and leaf plot.]({{site.baseurl}}/assets/img/stem_and_leaf.jpeg "A stem and leaf plot")
+{% include figure image_path="/assets/img/stem_and_leaf.jpeg" alt="A stem and leaf plot." title="A stem and leaf plot" %}
 
 Once collected, data can then be displayed in different ways. To see some of these ways, see our article on different types of graphs. 

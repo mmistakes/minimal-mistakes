@@ -20,7 +20,7 @@ A famous experiment was performed by Galileo (an astronomer born in the 1500s). 
 
 In the image below, we can see a model of how an object falls. When we drop an object, it starts still and its speed is $$0m/s$$. After it has fallen $$10m$$, its speed has increased to $$14m/s$$. As the object continues to fall, it continues to accelerate until it hits the floor.
 
-![An object accelerating under gravity.]({{site.baseurl}}/assets/img/acceleration_due_to_gravity.jpeg "An object accelerating under gravity")
+{% include figure image_path="/assets/img/acceleration_due_to_gravity.jpeg" alt="An object accelerating under gravity." title="An object accelerating under gravity" %}
 
 So why do some objects fall slower than others? When we drop an object, it accelerates towards the ground due to gravity. The acceleration can be noticeably decreased if the object experiences enough **air resistance**.  
 

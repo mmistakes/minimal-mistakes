@@ -29,7 +29,7 @@ As neither the mass nor the density of the playdough changes, the volume of the 
 
 In the image below, we can see that the weight of the playdough recorded by the scales does not change as the shape of the playdough changes. 
 
-![Three images of playdough on a set of scales. In each image, the playdough is in a different shape and the playdough weights the same.]({{site.baseurl}}/assets/img/playdough_mass_conservation.jpeg "Mass conservation of playdough")
+{% include figure image_path="/assets/img/playdough_mass_conservation.jpeg" alt="Three images of playdough on a set of scales. In each image, the playdough is in a different shape and the playdough weights the same." title="Mass conservation of playdough" %}
 
 [For more information about mass conservation and volume, see our other articles, linking to water experiments]:#
 
@@ -39,13 +39,13 @@ Playdough can be a great tool for exploring addition and multiplication. By maki
 
 In the image below, we can see that when we weigh the blue ball of playdough ($$10$$g) and the orange ball of playdough ($$20$$g) simultaneously, the total weight is $$30$$g. This demonstrates $$10+20=30$$.
 
-![Three images of playdough on a set of scales. In the first image, there is a blue ball of playdough weighing 10g. In the second image, there is an orange ball of playdough weighing 20g. In the third image, the blue and orange balls are on the scale together weighing 30g.]({{site.baseurl}}/assets/img/playdough_addition.jpeg "Addition of playdough")
+{% include figure image_path="/assets/img/playdough_addition.jpeg" alt="Three images of playdough on a set of scales. In the first image, there is a blue ball of playdough weighing 10g. In the second image, there is an orange ball of playdough weighing 20g. In the third image, the blue and orange balls are on the scale together weighing 30g." title="Addition of playdough" %}
 
 Similarly, if the children made many balls of the same weight, they could see how the total weight increases as they add differing amounts of the balls to the scales. This allows them to simulate multiplication tables.
 
 In the image below, we can see the same amount of playdough represented as $$1$$ ball of $$100$$g, $$2$$ balls of $$50$$g and $$4$$ balls of $$25$$g. This illustrates how $$4\times25=2\times50=100$$. 
 
-![Three images of playdough on a set of scales. In the first image, there is a ball of playdough weighing 100g. In the second image, there are two balls of playdough, together weighing 100g. In the third image, there are four balls of playdough, together weighing 100g.]({{site.baseurl}}/assets/img/playdough_multiplication.jpeg "Different representations of the same amount of playdough")
+{% include figure image_path="/assets/img/playdough_multiplication.jpeg" alt="Three images of playdough on a set of scales. In the first image, there is a ball of playdough weighing 100g. In the second image, there are two balls of playdough, together weighing 100g. In the third image, there are four balls of playdough, together weighing 100g." title="Different representations of the same amount of playdough" %}
 
 ### Spatial Reasoning 
 
@@ -53,7 +53,7 @@ The children can also use playdough to explore spatial reasoning problems. They 
 
 In the image below, we can see an example of this experiment. On the right-hand side, more of the playdough fits in the glass. 
 
-![Two images of playdough in a glass. In the first image, there are two large balls of playdough which are stacked on top of each other in a glass and rise out of the top of the glass. In the second image, there are several smaller balls of playdough in the same glass; the smaller balls rise out of the glass less.]({{site.baseurl}}/assets/img/playdough_in_glass.jpeg "Playdough in a glass")
+{% include figure image_path="/assets/img/playdough_in_glass.jpeg" alt="Two images of playdough in a glass. In the first image, there are two large balls of playdough which are stacked on top of each other in a glass and rise out of the top of the glass. In the second image, there are several smaller balls of playdough in the same glass; the smaller balls rise out of the glass less." title="Playdough in a glass" %}
 
 ### Ordering 
 
