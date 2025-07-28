@@ -4,6 +4,7 @@ topics:
   - fractals
   - patterns in nature
   - patterns
+  - vegetables
 topic_overview: true
 related: 
   - same and different    
