@@ -83,7 +83,7 @@ For an example of how to fill in this metadata, see the article file [properties
 When writing your article, you may want to add some extra features. Here is how to include a few of these. 
 
 #### Images 
-One way to include an image in your article is to add your image to the repository and then call it in your Markdown document. To do this, first save your images to the folder `/assets/img/`. Then, you can use the code `![alt text]({{site.baseurl}}/assets/img/image_name.jpeg "tooltip")` to place your image in your markdown file. The location of this line is the location where your image will appear. 
+One way to include an image in your article is to add your image to the repository and then call it in your Markdown document. To do this, first save your images to the folder `/assets/img/`. Then, you can use the code `{% include figure image_path="/assets/img/image_name.jpeg" alt="alt text" title="tooltip" %}` to place your image in your markdown file. The location of this line is the location where your image will appear. We recommend placing this line of code on its own line. 
 
 Here, you need to replace the `alt text` with a meaningful description of the image you are including. The purpose of this text is to help inform readers who are using screen readers what is in the image. This improves the accessibility of the article for people with visual impairments. 
 
