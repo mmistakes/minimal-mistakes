@@ -43,7 +43,7 @@ To add extra features such as images, links and tables, please refer to our quic
 For the website to process an article, some metadata must be included at the start of the document. This metadata has the following form:
 ```
 ---
-title: "*Your Article Topic*"
+title: "*Your Article Title*"
 topics: 
   - *topic 1*
   - *topic 2*
@@ -145,10 +145,10 @@ To check your article is being displayed correctly (all figures are loading, etc
 
 ### Summary of how to submit an article
 
-Write your article as a Markdown document
-Create your own branch in GitHub from the master branch
-Add your images (if you have any) to the [images folder](assets/img)
-Add your article to the [article folder](_articles/)
+* Write your article as a Markdown document
+* Create your own branch in GitHub from the master branch
+* Add your images (if you have any) to the [images folder](assets/img)
+* Add your article to the [article folder](_articles/)
 
 Once you are happy with all your changes and are ready to submit them to the website, you can do so by committing the relevent changes you have made in your branch (normally adding articles and images) with appropriate descriptions and then submitting a pull request to the master branch of the repository. Make sure to leave appropriate comments on your commits and pull requests, as this makes it easier to track all the changes you have made. Note that the _site folder will change during the process of running jekyll serve but this should not be commited to the repository. When you have commited your changes you can then submit a pull request to the master branch. 
 
