@@ -18,10 +18,10 @@ Some of the children wanted to make ramps that had different surfaces, which cha
 
 They understood that the surfaces that were a lot rougher made the objects go a lot slower than those that were smooth, which is a great example of understanding friction. The images below gives a few examples of what we can use to demonstrate this: 
 
-![Two ramps made from drainpipe. One is lined with a bumpy surface]({{site.baseurl}}/assets/img/2ramps.png "Bumpy ramp")
-![Three ramps made from drainpipe. One is lined with sequinned fabric and another with bubblewrap.]({{site.baseurl}}/assets/img/3ramps.png "Textured ramps")
-![A conch shell on a ramp lined with hessian]({{site.baseurl}}/assets/img/shellramp.png "Shell on hessian ramp")
-![A car travelling down a ramp lined with hessian.]({{site.baseurl}}/assets/img/carramp.png "Car on hessian ramp")
+{% include figure image_path="/assets/img/2ramps.png" alt="Two ramps made from drainpipe. One is lined with a bumpy surface" title="Bumpy ramp" %}
+{% include figure image_path="/assets/img/3ramps.png" alt="Three ramps made from drainpipe. One is lined with sequinned fabric and another with bubblewrap." title="Textured ramps" %}
+{% include figure image_path="/assets/img/shellramp.png" alt="A conch shell on a ramp lined with hessian" title="Shell on hessian ramp" %}
+{% include figure image_path="/assets/img/carramp.png" alt="A car travelling down a ramp lined with hessian." title="Car on hessian ramp" %}
 
 
 A rougher surface will have a much larger friction on an object than one that is smooth and so, will either slow the object down on the ramp, or make it stop completely due to there being more force "holding the object back", rather than weight (force) of the object pulling it down the ramp. 

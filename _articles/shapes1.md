@@ -17,12 +17,11 @@ Play dough is another activity that can engage children with mathematics, mainly
 
 One of the children enjoyed making the play dough itself by measuring out and mixing the ingredients. This activity links with the basics of ratios, which also is similar to another child who enjoyed making cakes by mixing ingredients together. In both cases, the children are developing their independence by doing these activities.
 
-
-![A child cutting playdough]({{site.baseurl}}/assets/img/shape1.png "Cutting playdough")
+{% include figure image_path="/assets/img/shape1.png" alt="A child cutting playdough" title="Cutting playdough" %}
 
 Using a cutter, they cut the play dough into a circle and were able to identify the name of the shape they had cut. They were then encouraged by their teacher to try and make circles which were equal in size, although one came out larger than the other. The teacher asked them whether these circles were equivalent and they did understand that their play dough circles were not equivalent, which shows that they can identify what equal shapes look like. We can also interpet from this interaction that this child has an understanding of what the word "equal" means. After discussing the idea of equivalence further with their teacher, this child did try to create two equal sized pieces with some success. Afterwards, they communicated that they had created a large circle and a small circle, which further shows their differntiation between different sized shapes and equality.
 
-![A child cutting playdough into circles]({{site.baseurl}}/assets/img/shape2.png "Playdough circles")
+{% include figure image_path="/assets/img/shape2.png" alt="A child cutting playdough into circles" title="Playdough circles" %}
 
 In mathematics, equal is the same as saying "congruent", "equivalent" or "isomorphic". When it comes to equality we ask ourselves which sides/lengths can be the same and what can be different. For example, two lines can be equal when they are the same length, even if they point in different directions. In terms of what is parallel, two lines may not be the exact same length but they would have to be pointing in the same direction. Two triangles are similar if they have the same shape (thus the same angles) but are different in size and/or are standing a different way up. However, those triangles are simply similar and are not equal because their lengths are not the same even if their angles are.
 

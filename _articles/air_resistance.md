@@ -33,11 +33,12 @@ Children can perform their own version of the feather experiment using a feather
 [To learn more about surface area, see our article about it.]:# 
 
 In the image below, we can see a visualisation of the paper experiment. 
-![A diagram of a paper ball falling and a sheet of paper falling.]({{site.baseurl}}/assets/img/paper_falling_diagram.jpeg "A paper ball falling and a sheet of paper falling")
+
+{% include figure image_path="/assets/img/paper_falling_diagram.jpeg" alt="A diagram of a paper ball falling and a sheet of paper falling." title="A paper ball falling and a sheet of paper falling" %}
 
 In the image below, we can see a visualisation of how the air pushes on the different paper shapes. 
 
-![A diagram of how air interacts with a paper ball and a sheet of paper.]({{site.baseurl}}/assets/img/difference_in_surface_area.jpeg "How air interacts with a paper ball and a sheet of paper")
+{% include figure image_path="/assets/img/difference_in_surface_area.jpeg" alt="A diagram of how air interacts with a paper ball and a sheet of paper." title="How air interacts with a paper ball and a sheet of paper" %}
 
 [Links to experiment techniques]:# 
 </details>

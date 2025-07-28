@@ -26,7 +26,7 @@ When the ball strikes the ground, some of the energy is transferred to sound and
 
 In the image below, we can see that the height of the ball at the top of each bounce decreases as some energy is transferred to heat and sound energy as the ball hits the floor.
 
-![A diagram showing how a bouncy ball loses height on each bounce.]({{site.baseurl}}/assets/img/conservation_of_energy_ball_losing_height.jpeg "A bouncy ball losing height")
+{% include figure image_path="/assets/img/conservation_of_energy_ball_losing_height.jpeg" alt="A diagram showing how a bouncy ball loses height on each bounce." title="A bouncy ball losing height" %}
 
 Similarly, the height a swing reaches will reduce over time until the swing comes to a stop. This is because energy is transferred from the swing to the surrounding air particles. 
 
