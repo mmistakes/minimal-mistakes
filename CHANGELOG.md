@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Enhancements
+
+- Updated Traditional Chinese translation (#5250)
+
 ## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
 
 ### Bug Fixes
