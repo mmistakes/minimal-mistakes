@@ -31,6 +31,5 @@ The piece of equipment normally used for this experiment is an eureka can. Eurek
 
 Another fun experiment for children to explore is filling up containers with changing cross-sectional areas. For example, bottles are usually narrower at the top and will fill slowly at first and then quickly as the neck of the bottle is reached. Experimenting with filling different containers in this way could lead to discussions about cross-sectional area and how this affects the speed at which the water level rises.
 
-[for more experiments with water see our article on buoyancy]:#
-[didn’t mention anything about jugs]:#
-[Funnels could maybe be a separate article]:#
+For more experiments with water, please see our article on [buoyancy.]({{site.baseurl}}/articles/buoyancy/)
+
