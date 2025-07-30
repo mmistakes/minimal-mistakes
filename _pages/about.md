@@ -13,6 +13,9 @@ toc_sticky: true
 
 This webpage came about because of a project involving some mathematicians from Durham University and some early years educators from Houghton Community Nursery School, which came to be known as 'Young Minds Big Maths'.
 
+{% include figure image_path="/assets/img/ymbm_group.jpeg" alt="A group of university mathematicians and early years educators outside the Mathematical Sciences building in Durham." title = "Some of the YMBM group" %}
+
+
 ## What is Young Minds Big Maths?
 
 Each half term, early years (EY) educators from participating settings meet with some Durham University mathematicians to discuss the ideas the children in each setting have been exploring and the sorts of activities that have been taking place. The mathematicians suggest links that can be made to mathematics, or ways to extend mathematical explorations or make mathematical links between topics. They also draw attention to times where the children are thinking about things in a mathematical way. 
@@ -22,11 +25,17 @@ The aim of the project is to be child-led. The content of the meetings is determ
 The project equips EY educators to explore and extend maths with children 'where they are at', allowing them to pose their own questions and choose the direction they take their investigations. 
 
 
+{% include figure image_path="/assets/img/cc_beetroot_quote.png" alt="A photo of some sliced beetroot, revealing concentric circles. Alongside are quotes from children: 'I know it's separate circles in the beetroot! Did you know that Kathryn?' 'Like in the wood' 'Concentric circles'" title = "Concentric circles in beetroot" %}
+
+
 ### This website
 
 In this website, we aim to re-create some of the open-ended, child-led nature of the Young Minds Big Maths meetings. By finding articles using the topic filters you can hopefully find some maths that is relevant to the interests of the children you work with, and some ideas of how to explore that maths in a number of ways. Although the project is focussed on early years children, we hope it might be useful for those working with children of all ages.
 
 We have tried to keep the articles very specific to one idea or connection each, but the topics mean it should be easy to find collections of related articles. If you'd like to contribute an article, you can find out how to do so [here](https://github.com/samfearn/ymbmweb).
+
+{% include figure image_path="/assets/img/heart_shape_quote.png" alt="A summary of investigations by children about whether a heart can have a right angle. This culminated in a child formulating a new type of shape, the 'mountain heart'" title = "Does a heart have a right angle?" %}
+
 
 ## Recent news
 
