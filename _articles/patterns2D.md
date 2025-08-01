@@ -1,10 +1,10 @@
 ---
-title: "Patterns in 2 dimensions"
+title: "Patterns in 2 Dimensions"
 topics:
   - patterns
   - sequences
   - wallpaper
-  - 2d
+  - 2D
   - symmetry
 related: 
   - transformations
