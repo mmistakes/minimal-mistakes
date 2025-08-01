@@ -11,7 +11,7 @@ nurseries: Group 1
 author: Milly McGowan, Molly Ireland
 sub_date: 2025-08-01
 header:
-  teaser: /assets/img/count1.png
+  teaser: /assets/img/lining_up_milk.jpeg
   teaser_alt: A child lining up cartons of milk
   teaser_pos: mid
 ---
