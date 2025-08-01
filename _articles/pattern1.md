@@ -1,34 +1,26 @@
 ---
-title: "Repeating patterns"
+title: "Finger Painting Patterns"
 topics:
   - patterns
   - sequences
-  - paint
-  - caterpillars
+  - colouring
 related: 
   - transformations
+  - symmetry
 nurseries: Group 1
-author: Milly McGowan
-sub_date: 2023-08-31
+author: Milly McGowan, Molly Ireland
+sub_date: 2025-08-01
 header:
-  teaser: /assets/img/pattern2.png
-  teaser_alt: A child continuing a repeating pattern using fingerprint paint
+  teaser: /assets/img/finger_painting_patterns.jpeg
+  teaser_alt: A child painting a repeating pattern on a wiggly worm picture
   teaser_pos: fit
 ---
+One child enjoyed finger painting a repeating pattern on a template of a worm. This allowed her to develop her own strategy for repeating a sequence. This child used an “AB” pattern, repeating the sequence “red, blue”. Repetitions like this are used throughout music and poetry. 
 
-One day at a participating nursery, some of the children were finger-painting pictures of worms. Whilst this activity is simple and fun, there is an underlying part of mathematics that links with repeating patterns and transformations. For example, this child was painting one of their pictures with lines that went red, blue, blue, red, blue, blue...etc. Thus, the repeating pattern of red, blue, blue is a sequence. There are many repititons like this all around, like in music, songs and poetry.
+{% include figure image_path="/assets/img/finger_painting_patterns.jpeg" alt="A child pointing to a repeating pattern on a wiggly worm picture" title="Patterns on worms" %}
 
-{% include figure image_path="/assets/img/pattern1.png" alt="A child pointing to a repeating pattern on a wiggly worm picture" title="Patterns on worms" %}
+We can think of the two “red, blue” dots as one unit. By stacking these units together end to end, we can get this repeating pattern. We can call this unit the “unit of repeat”; stacking units of repeat together in this way also works in 2D. See our article on [2D patterns]({{site.baseurl}}/articles/patterns2D/) to learn more. We could think of units of repeat as stamps. Children could make their own stamps and then use these to create a pattern. 
 
-A repeating pattern can be described in two ways. One way is to find a chunk of the pattern from which you could make the whole pattern (we call this the *unit of repeat*). In the example above, the unit of repeat is **red blue blue**. You could demonstrate this by for example printing using a cut potato with the unit of repeat on, and creating the pattern from that single block. The other way of describing this is by looking at the whole pattern (mathematicians would generally treat the sequence as though it continues repeating forever) and then see if it would be possible to slide this repeating pattern so that it "fits" exactly on top of itself. This could be demonstrated by using transparent plastic, tracing paper or by using a light-table.
+We can also check whether something is a pattern without using a unit of repeat. If we are able to lay a copy of the pattern over itself (imagine having one on tracing paper), we could slide this pattern along until the two copies match up. 
 
-To describe this to this child, you could slide the snake along itself, even though the dots may not be the same size due to finger-painting the same idea can be conveyed nonetheless. This snake has a one-dimensional pattern.
-
-{% include figure image_path="/assets/img/pattern2.png" alt="A child continuing a repeating pattern using fingerprint paint" title="Fingerprint painting" %}
-
-
-
-
-
-
-
+Patterns have **translational symmetry**, meaning if we slide a copy of a pattern along by a fixed amount, it will look the same as it did before. The other types of symmetry are **rotational symmetry** and **reflective symmetry**. Both of these types of symmetry are discussed in our article on [symmetry]({{site.baseurl}}/articles/symmetry/).  

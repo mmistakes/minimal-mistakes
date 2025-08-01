@@ -3,46 +3,47 @@ title: "Numicon"
 topics: 
   - numbers
   - shapes
-  - multiples
   - patterns
   - numicon
 related: 
   - addition
-  - subtraction,
+  - subtraction
+  - multiplication
 nurseries:
-author: Milly McGowan
-sub_date: 2023-08-31
+author: Milly McGowan, Molly Ireland
+sub_date: 2025-08-01
 header:
   teaser: /assets/img/numicon3.png
   teaser_alt: A child showing a pattern they had made from Numicon pieces
   teaser_pos: fit
 ---
+Numicon is a great resource, allowing children to learn about the partitions of different numbers. Numicon are tiles representing the numbers $$1$$ to $$10$$ and can be stacked on top of each other. In the image below, we can see a child comparing two tiles made of $$3$$ squares to one tile made of $$6$$ squares. “Four ones is equals four”, “two ones equals two”, “three plus three is six” are some of the observations that the child made with the help of a nursery practitioner. 
 
-Numicons is a new approach to teaching maths to early years that can help children see the connection between numbers. These are flat plastic tiles that represent numbers from 1 to 10.
+{% include figure image_path="/assets/img/comparing_numbers_numicon.jpeg" alt="A child concentrating on a 2x3 Numicon tile" title="2x3 Numicon piece" %}
 
-One of the children took a keen interest in this activity, which began with them copying a pattern. During this activity, this child was interested in a pattern which the teacher was making.
+Here, the child has explored one **partition** of the number $$6$$. The number $$6$$ has eleven partitions, which are represented in the image below. 
 
-{% include figure image_path="/assets/img/numicon1.png" alt="A child following a pattern using Numicon pieces" title="Making a pattern" %}
+{% include figure image_path="/assets/img/partitions_diagram.jpeg" alt="The eleven partitions of six." title="The eleven partitions of six" %}
 
-Following this, the child and teacher worked as a team to create a numicon pattern together. Whilst this child's indpendent maths skills were clearly demonstrated previous to them wanting to join in with their teacher, it can also be highlighted that their interest in working as a team is also a great skill to be building at their age.
+It could be a fun activity for children to try to find the partitions of numbers for themselves. In the table below, the number of partitions for the numbers $$1$$ to $$10$$ are given, these get large quite quickly.
 
-This child sometimes did struggle with the orientation of the shapes. The topic of horizontal and vertical shapes and tiles were discussed and they were able to model this back to their teacher using the tiles. The teacher also supported this child when finding empty spaces to place their tiles.
+| Number | Number of partitions |
+|--------|----------------------|
+| 1      | 1                    |
+| 2      | 2                    |
+| 3      | 3                    |
+| 4      | 5                    |
+| 5      | 7                    |
+| 6      | 11                   |
+| 7      | 15                   |
+| 8      | 22                   |
+| 9      | 30                   |
+| 10     | 42                   |
 
-This child was able to complete the pattern and was able to solve tricky probelms with minimal support.
+By its modular nature, Numicon can also be used to make patterns, the same child used Numicon to recreate a pattern. This sparked a conversation about how to orient shapes with the practitioner. As some of the blocks can be placed in two distinct ways on the grid, this meant that the terminology of horizontal and vertical could be used. When recreating the pattern, the child said, “the blue one is ten, I need to put it near non four.” “Non four” refers to a blank space of size four. Here, by trying to make a pattern, lots of mathematical vocabulary and reasoning is being used. 
 
-{% include figure image_path="/assets/img/numicon2.png" alt="A child concentrating on a 2x3 Numicon tile" title="2x3 Numicon piece" %}
+{% include figure image_path="/assets/img/finished_numicon.jpeg" alt="A child following a pattern using Numicon pieces" title="Making a pattern" %}
 
-As they were making the pattern, this child was able to make links on their own between how a tile with four holes would take up the same amount of space as two tiles with two holes. This then led to the teacher and this child discussing how 3+3=6 and that this activity, numicon, is a great way of combining numbers and seeing what they are equal to. This led to the image above where this child was able to understand that a tile with 6 holes is equal to two tiles with 3 holes.
+This resource could also be useful for exploring multiplication by having multiple copies of the numicon blocks, the children might be able to see that five lots of the four numicon blocks sum to twenty.  
 
-This resource can be used in mutiple different ways. For exmaple, 6 is 3+3 but it is also 2+2+2 and this can also be seen as 2x3 or 3x2. Numicons can be useful to older children when it comes to multiplcations, and for proving that these statements are true rather than multiplication and addition facts that need to be accepted. The different ways in which you can add numbers together to make 10 led to the discussion of the famous mathemetician Gauss. As a punishment in school, Gauss was made to add up the first 100 integers (e.g 1+2+3+4+5+6...+99+100). He did this very quickly by realising that 1+100=101, 2+99=101, ... , 50+51=101. 
-
-Similarly, the numicon pairing all together make 5x10=50 and this can also be split into 1+2+3+4+5+5+6+7+8+9. So, if you were to take out the extra 5, then this sum would equal 45.
-
-You can also talk about how many different ways you can make a given number by adding up smaller numbers. For example, 5 can be added up by doing 4+1, 3+2, 3+1+1, 2+2+1, 2+1+1+1 or 1+1+1+1+1. These are known as partitions, for example 5 would have seven partions (since 5 itself counts as a partition). This simpler mathematical thinking can become harder as the numbers get larger. For example, there are 101 partions of 13 and 10,143 partions of 33.
-
-{% include figure image_path="/assets/img/numicon3.png" alt="A child showing a pattern they had made from Numicon pieces" title="Numicon pattern" %}
-
-
-
-
-
+Numicon is designed so that children can easily make pairs of numbers sum to ten. Pairs summing to the same number is a useful feature to be able to identify. There is a famous story about how the mathematician Gauss impressed his teacher by very quickly adding together every digit from $$1$$ to $$100$$. Gauss was able to do this so quickly as he recognised the importance of number pairs. He realised that by pairing numbers together ($$1$$ with $$100$$, $$2$$ with $$99$$) the sum became $$101 \times 50 = 5050$$.  

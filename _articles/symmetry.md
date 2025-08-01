@@ -47,11 +47,3 @@ There are shapes that have rotational symmetry but not reflectional symmetry, su
 
 These sorts of shapes are not easy to find in nature.
 
-<details>
-<summary>Click here for some examples</summary>
-
-One example of this is ...
-
-Another example of this is ...
-
-</details>

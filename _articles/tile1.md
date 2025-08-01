@@ -2,41 +2,32 @@
 title: "Shapes in 2D"
 topics:
   - shapes
-  - tiles
   - triangles
   - circles
-  - 2d
+  - 2D
 related: 
   - area
   - triangle
 nurseries: Group 1
-author: Milly McGowan
-sub_date: 2023-08-31
+author: Milly McGowan, Molly Ireland
+sub_date: 2025-08-01
 header:
-  teaser: /assets/img/tile1.png
+  teaser: /assets/img/single_shapes_teaser.jpeg
   teaser_alt: A child making representations of houses with 2D shaped tiles
   teaser_pos: mid
 ---
+Tiles in the nursery are a great tool for allowing children to explore 2D shapes. Often, 2D shapes can be used to represent 3D concepts. In the images below, you can see a child's representation of a house using 2D tiles. 
 
-One of the children used different shaped tiles to build a house. For example, they used a square-shaped tile as the main part of the house and a triangular-shaped tile as the roof of a house.
+{% include figure image_path="/assets/img/triple_shapes_teaser.jpeg" alt="A child making representations of houses with 2D shaped tiles" title="Houses" %}
 
-The picture below depicts how they were thinking of 3D objects (a house) in 2D and can infer that this child was comfortable with the difference between adding and taking away a dimension to represent what they wanted to create.
+The house on the right-hand side of the table makes use of a triangle for the roof and squares and hexagons for the building itself. As the representation is 2D the child has represented a silhouette of a 3D house. It could be interesting to discuss with the child how they would have to alter their representation of the house if they viewed it from a different direction. 
 
-{% include figure image_path="/assets/img/tile1.png" alt="A child making representations of houses with 2D shaped tiles" title="Houses" %}
+If we were to view a triangular prism end-on, then we could represent its silhouette with a triangle. If we were to view the prism from the side, we would need a rectangle instead. This is illustrated in the image below. Children could experiment with viewing these silhouettes by shining light at various shapes and observing the shadow they create. 
 
-These ideas then led to the question of whether this child would need to be older to have the dexterity to be comfortable with creating a 3D version of her house by slotting these shapes together. She is already happy to create 3D objects in 2D and thus this question is arguably significant to how far her mathematical thinking is able to take her at this stage.
+{% include figure image_path="/assets/img/prism_diagram.jpeg" alt="A triangular prism with the front view of a triangle and the side view of a rectangle below the prism." title="Viewing a Prism" %}
 
-Some shapes that are the same as each other (for example, they are equilateral triangles) are larger than others. It was discussed how this can be shown, whether by placing the smaller triangle on top of the larger one or how the corners are the same and fit into one another. This type of thinking can border onto more complex, mathematical ideas (for an early years student) of area and how depending on the length and height of the shape, there can be different sized areas.
+Using shadows, we can view 3D objects as 2D objects. We can also create nets of these 3D objects using 2D objects. It might be interesting for the children to make the comparison between building a 3D structure from 2D shapes and then seeing how the shadows of this structure give the same 2D shapes. 
 
-By further going down this train of thought, we can bring in the idea of circles and how this is a shape that, arguably, has an infinite number of tiny sides and an infinite number of "straight" corners. For exmaple, if you draw different shapes inside the circle (e.g a triangle, then a square, then a hexagon) then each shape has less area than the circle. It takes up an amount of the circle but there are still bits around the edge that are being left out. This idea is depicted in the image below.
+The tiles are different shapes and colours, and so could be sorted into groups by either colour or number of sides. Counting the number of objects in each group could be a good opportunity for data collection. See our article on [data collection]({{site.baseurl}}/articles/data_collection/) to read more about this.  
 
-{% include figure image_path="/assets/img/tile2.png" alt="A circle, containing a triangle, a rectangle and a hexagon" title="Partially filled circle" %}
-
-Each time another shape is added into the circle more of its area is taken up. However, if you were to have another circle and you put a shape in that had twenty sides then you can say that this shape leaves less area (edges) of the circle than the triangle, hexagon and square that can be viewed in the image.
-
-This type of thinking can then pose the idea of how we talk and think of infinity. It can often be shown as continuing a pattern (e.g. 1/2, 1/3, 1/4, 1/5, and so on). As you can see, this pattern of numbers are getting smaller and smaller and so one could argue that if you were to go on forever, then you would eventually get to zero.
-
-This idea links to how if you were to go on forever adding more and more sides to a shape then you would eventually have a circle. This also shows how if you were to continue to go on finding thinner, smaller, triangular areas then you would eventually also find the area of the circle.
-
-Whilst these ideas have became complex, they have began at the same premise, which is 2D shapes and how they can be arranged. So whilst this child's mathematical thinking may be basic to began with, it is arguably a doorway towards my complex ideas which she will be taught much later on in her education.
-
+If children were to group the tiles by shape, they may ask if any of the shapes are the same. Even if two shapes have the same number of sides, they are not necessarily the same. The children could compare the number of sides, the angles of the shapes and the side lengths of the shapes.
