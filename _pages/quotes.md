@@ -30,7 +30,6 @@ Categories are just for keeping order and are continuously updated. The relation
 -- P K Dick, "A Scanner Darkly "
 
 
-
 ## Creativity
 
 > Our species is the only creative species, and it has only one creative instrument, the individual mind and spirit of a man. Nothing was ever created by two men. There are no good collaborations, whether in music, in art, in poetry, in mathematics, in philosophy. Once the miracle of creation has taken place, the group can build and extend it, but the group never invents anything. The preciousness lies in the lonely mind of a man.<br>
@@ -269,6 +268,9 @@ Categories are just for keeping order and are continuously updated. The relation
 > The scheming of Britain, France and the United States over oil, politics and power helped create and fuel the problems of the Middle East for decades afterwards. Nations and peoples were used as assets or weapons. Lines were drawn in the sand, blown away and drawn again. All of this was done with precious little foresight about where it might lead<br>
 -- A von Tunzelmann, "Blood and Sand" [talking about the Suez crisis of 1956]
 
+> The United States and the Soviet Union were two nations themselves formed by revolution, each of which revered its revolutionary forebears. Yet now that their founding revolutions had settled into power and were beginning to expand, neither seemed able to imagine that new revolutions might spring up against them. The believed they were different from the old European empires. They believed they were exceptional.
+-- A von Tunzelmann, "Blood and Sand"
+
 
 ## Human relations 
 
@@ -417,6 +419,9 @@ Categories are just for keeping order and are continuously updated. The relation
 
 > Has there ever been another time, in the full sweep of human history, when so many people had so much and yet felt so deprived and anxious?<br>
 -- M Desmond, "Poverty, by America"
+
+> The truth can cause a lot of trouble for those who are not supposed to know it.<br>
+-- M Atwood, "The Testaments"
 
 ## Time
 
