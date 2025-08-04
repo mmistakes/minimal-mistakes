@@ -21,11 +21,22 @@ We can construct the Fibonacci numbers by first starting with $$0,1$$ and then a
 
 {% include figure image_path="/assets/img/fibonacci_sequence.jpeg" alt="The construction of the Fibonacci numbers, with arrows between numbers to show the addition." title="The construction of the Fibonacci numbers" %}
 
-The first $$20$$ Fibonacci numbers are: $$0,1,1,2,3,5,8,13,21,34,55,89,144, 233, 377, 610, 987, 1597, 2584$$ and $$4181$$. These numbers are a good example of the use of a repeated mathematical rule, and they also occur in nature, making them interesting to talk about with children. In the image below, we can see how children have explored the Fibonacci numbers using different coloured pompoms. 
+The first $$20$$ Fibonacci numbers are: $$0,1,1,2,3,5,8,13,21,34,55,89,144, 233, 377, 610, 987, 1597, 2584$$ and $$4181$$. These numbers are a good example of the use of a repeated mathematical rule, and they also occur in nature, making them interesting to talk about with children. In the images below, we can see how children have explored the Fibonacci numbers using different coloured pompoms. Some of the comments made by the children are given below:
+<br>***“I can do adds, I can write them numbers and it makes the sum. The balls mean you add them together.”***
+<br>***“This number 8 is like a snowman. My have 8 balls cos that 5 and that 3 makes that 8”***
+<br>***“These sums equal and then you add them onto the next one”***
+<br>***“2 and 1 is 3”***
+<br>***“These sums equal and then you add them onto the next one”*** 
+
+{% include figure image_path="/assets/img/fibonacci_in_process.jpeg" alt="A child writing three plus five equals eight, they have pompoms to show the numbers." title="Exploring a Fibonacci sum" %}
 
 {% include figure image_path="/assets/img/fibonacci_pompoms.jpeg" alt="Exploring the Fibonacci numbers with pompoms to show how addition of the previous two numbers is used to get the current number." title="Exploring the Fibonacci numbers with pompoms" %}
 
 The Fibonacci numbers can also be found in plants. When we look at plants with visible seeds, these seeds are often arranged in spirals, and the number of spirals is often a Fibonacci number. Spirals can be seen in two directions on plants, and the number of spirals in one direction is often a consecutive (next in the sequence) Fibonacci number to the number of spirals in the other direction.
+
+In the image below we can see children exploring the spirals in pinecones.
+
+{% include figure image_path="/assets/img/pinecone_spirals.jpeg" alt="Three images of a child drawing the seeds of a pinecone in a spiral pattern." title="Exploring spirals in a pinecone" %}
 
 In the image below, we can see that the sunflower has $$21$$ spirals in one direction and $$34$$ spirals in the opposite direction, which are consecutive Fibonacci numbers. The sunflower uses relatively large Fibonacci numbers, but spirals occurring in smaller Fibonacci numbers can be found elsewhere in nature, for example, in pinecones. Children could try to count the spirals in pinecones using tape to make the spirals easier to see.
 
