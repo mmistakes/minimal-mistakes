@@ -8,8 +8,8 @@ related:
 author: Molly Ireland
 sub_date: 2025-07-10
 header:
-  teaser: /assets/img/stem_and_leaf.jpeg
-  teaser_alt: A stem and leaf plot.
+  teaser: /assets/img/child_making_tally_marks.jpeg
+  teaser_alt: A child making tally marks.
   teaser_pos: top
 ---
 Classroom experiments can not only be a fun way for children to learn about the world around them, but also a great opportunity to develop data collection techniques. There are two main types of data: **quantitative** and **qualitative**. To learn more about these types of data, see our article on [different types of data]({{site.baseurl}}/articles/types_of_data/) or click on the section below for a summary.
@@ -84,6 +84,10 @@ Quantitative data can be recorded in this way, too, if it is grouped into bins. 
 | 109 - 111   | $$/// $$           | 4         |
 
 Here, a value of $$99$$ would have to be treated carefully as it is on the boundary of two categories. Normally, we round up and would include this in the category $$99-101$$. 
+
+In the image below a child has made their own tally marks. 
+
+{% include figure image_path="/assets/img/child_making_tally_marks.jpeg" alt="A child making tally marks." title="Tally marks" %}
 
 ## Tables 
 If we have more than one category we want to count, we can do so with a **table**. In the table below, we record both the shoe sizes of the children and their favourite animal. This is called a two-way table. Often, including row and column totals can help check that all the data has been included correctly; the sum of the rows should equal the sum of the columns.
