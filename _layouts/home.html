@@ -116,6 +116,88 @@ sidebar:
     display: none;
   }
 
+  /* Research dropdown styles */
+  .research-dropdown {
+    margin-bottom: 0.25rem;
+  }
+
+  .research-dropdown summary {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    list-style: none;
+    position: relative;
+    padding-left: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .research-dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .research-dropdown summary::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    font-size: 0.7rem;
+    transition: transform 0.2s ease;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .research-dropdown[open] summary::before {
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  .research-dropdown .dropdown-content {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    padding: 0.75rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+
+  .research-dropdown .dropdown-content h4 {
+    margin: 0 0 0.5rem 0;
+    padding-bottom: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    font-family: Georgia, Times, "Times New Roman", serif;
+  }
+
+  .research-dropdown .dropdown-content ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .research-dropdown .dropdown-content li {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .research-dropdown .dropdown-content li:last-child {
+    margin-bottom: 0;
+  }
+
+  .research-dropdown .dropdown-content a {
+    color: navy;
+    text-decoration: none;
+  }
+
+  .research-dropdown .dropdown-content a:hover {
+    text-decoration: underline;
+  }
+
+  .research-interests {
+    margin-top: 1rem;
+  }
+
   @media (max-width: 768px) {
     .custom-grid {
       grid-template-columns: 1fr;
@@ -154,16 +236,11 @@ sidebar:
 
 <h1>Jacob Morrison</h1>
 Hi! I'm a <a href="https://allenai.org/predoctoral-young-investigators">predoctoral researcher</a> on the
-<a href="https://allennlp.org/">AllenNLP</a> team at <a href="https://allenai.org/">Ai2</a>, and I'm advised by <a href="https://pdasigi.github.io/">Pradeep Dasigi</a> and <a
-href="https://jessedodge.github.io/">Jesse Dodge</a>. I'm also an incoming NLP PhD student at UW, where I'll be working with <a href="https://people.eecs.berkeley.edu/~banghua/">Banghua Zhu</a>, and I'll be supported by an <a href="https://cra.org/csgrad4us/">NSF Computer Science Graduate Fellowship</a>.
+<a href="https://allennlp.org/">AllenNLP</a> team at <a href="https://allenai.org/">Ai2</a>. I'm also an incoming NLP PhD student at UW, where I'll be working with <a href="https://banghua.me/">Banghua Zhu</a>, and I'll be supported by an <a href="https://cra.org/csgrad4us/">NSF Computer Science Graduate Fellowship</a>.
 <!-- I received my masters in computational linguistics and bachelors in computer science from the University of Washington, where I was advised by <a href="https://nasmith.github.io/">Noah Smith</a>. -->
 <br>
 <br>    
-I've previously worked on code & program synthesis at <a href="https://x.company/">Google [x]</a>, language + vision models at Ai2,
-  and platform health at Twitter, and in a previous life I also spent a few years as a software engineer at <a
-    href="https://www.tableau.com/">Tableau</a> and <a
-    href="https://marketingplatform.google.com/about/display-video-360/">Google</a>. See my
-  <a href="/assets/cv-12.12.24.pdf">CV</a> for more details.
+I've previously worked on code generation at <a href="https://x.company/">Google [x]</a> and platform health at Twitter, and in a previous life I was a software engineer at <a href="https://www.tableau.com/">Tableau</a> and <a href="https://marketingplatform.google.com/about/display-video-360/">Google</a>. See my <a href="/assets/cv-12.12.24.pdf">CV</a> for more details.
 
   <!-- <br>
   <br> -->
@@ -171,15 +248,67 @@ I've previously worked on code & program synthesis at <a href="https://x.company
     
 <h2>Research</h2>
 <br>
-My research is generally focused on making modern language models broadly useful and reliable, and I've recently been focused on improving model capabilities through post-training. I'm also a strong supporter of open science, and I've contributed to openly released artefacts including <a href="https://allenai.org/blog/tulu-3">Tulu 3</a>, <a href="https://huggingface.co/spaces/allenai/reward-bench">RewardBench</a>, <a href="https://arxiv.org/abs/2402.00159">Dolma</a>, and <a href="https://arxiv.org/abs/2402.00838">OLMo</a>, <a href="https://allenai.org/olmo">OLMo 2</a>, and <a href="https://arxiv.org/abs/2409.02060">OLMoE</a>, with more coming soon.
-<br><br>
-I also spend a portion of my time helping policymakers understand and address the societal impacts of advances in AI, and I regularly engage with policymakers at the local, state, and federal levels. I previously served on the City of Seattle's Generative AI Policy Advisory Group, and I'm currently serving on the Education and Workforce Development Subcommittee of the Washington State AI Task Force.
+<!-- My research is generally focused on making modern language models broadly useful and reliable, and I've recently been focused on improving model capabilities through post-training. I'm also a strong supporter of open science, and I've contributed to openly released artefacts including <a href="https://allenai.org/blog/tulu-3">Tulu 3</a>, <a href="https://huggingface.co/spaces/allenai/reward-bench">RewardBench</a>, <a href="https://arxiv.org/abs/2402.00159">Dolma</a>, and <a href="https://arxiv.org/abs/2402.00838">OLMo</a>, <a href="https://allenai.org/olmo">OLMo 2</a>, and <a href="https://arxiv.org/abs/2409.02060">OLMoE</a>, with more coming soon. -->
+My research is generally focused on making language models broadly useful and reliable, and understanding their downstream societal impacts.
+In addition to my research I also spend a portion of my time helping policymakers understand and address the societal impacts of AI.
+<!-- I previously served on the City of Seattle's Generative AI Policy Advisory Group, and I'm currently serving on the Education and Workforce Development Subcommittee of the Washington State AI Task Force. -->
 
-<h2>Awards & Fellowships</h2>
+<br><br>
+A few selected interests of mine and relevant publications:
+
+<div class="research-interests">
+  <details class="research-dropdown">
+    <summary>data-centric methods for improving model capabilities</summary>
+    <div class="dropdown-content">
+      <h4><i>Selected Work</i></h4>
+      <ul>
+        <li><i>Developing new post-training recipes and methods: </i><a href="https://arxiv.org/abs/2411.15124">Tülu 3</a>, <a href="https://arxiv.org/abs/2410.12937">Merge to Learn</a></li>
+        <li><i>New and interesting model evaluations: </i><a href="https://huggingface.co/spaces/allenai/reward-bench">RewardBench</a>, <a href="https://arxiv.org/abs/2506.01937">RewardBench 2</a>, <a href="https://arxiv.org/abs/2112.04139">Bidimensional Leaderboards</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="research-dropdown">
+    <summary>open science and democratizing access to large models</summary>
+    <div class="dropdown-content">
+      <h4><i>Selected Work</i></h4>
+      <ul>
+        <li><i>Openly releasing large(-ish) models and datasets:</i> <a href="https://arxiv.org/abs/2402.00838">OLMo</a>, <a href="https://arxiv.org/abs/2501.00656">OLMo 2</a>, <a href="https://arxiv.org/abs/2402.00159">Dolma</a></li>
+        <li><i>Exploring alternative model architectures: </i> <a href="https://arxiv.org/abs/2409.02060">OLMoE</a>, <a href="https://arxiv.org/abs/2507.07024">FlexOLMo</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="research-dropdown">
+    <summary>environmental and societal impacts of AI systems</summary>
+    <div class="dropdown-content">
+      <h4><i>Selected Work</i></h4>
+      <ul>
+        <li><i>Measuring the environmental impact of training LLMs: </i> <a href="https://arxiv.org/abs/2503.05804">[1] (ICLR 2025 Spotlight)</a>, <a href="">[2]</a>, <a href="">[3]</a></li>
+        <li><i>Exploring AI legal risks and questions: </i> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4964912">[1]</a>, <a href="https://arxiv.org/abs/2407.01968">[2]</a>, <a href="https://arxiv.org/abs/2404.09479">[3]</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- <details class="research-dropdown">
+    <summary>Improving evaluation methods for language models</summary>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="https://arxiv.org/abs/2112.04139">Bidimensional Leaderboards</a> - Generate and evaluate language models hand in hand</li>
+        <li><a href="https://arxiv.org/abs/2111.08940">Transparent Human Evaluation for Image Captioning</a> - Methods for more reliable human evaluation</li>
+        <li><a href="https://arxiv.org/abs/2406.07835">SciRIFF</a> - Resource to enhance instruction-following over scientific literature</li>
+      </ul>
+    </div>
+  </details> -->
+</div>
+
+<h2>Selected Awards & Fellowships</h2>
 <ul>
-  <li>Aug. 2024: ACL Theme Paper Award</li>
-  <li>Aug. 2024: ACL Best Resource Paper Award</li>
-  <li>Aug. 2023: NSF Computer Science Graduate Fellowship</li>
+  <li>May 2025: Mercor Graduate Fellowship Finalist</li>
+  <li>August 2024: ACL Theme Paper Award</li>
+  <li>August 2024: ACL Best Resource Paper Award</li>
+  <li>April 2024: GeekWire Innovation of the Year</li>
+  <li>August 2023: NSF Computer Science Graduate Fellowship</li>
 </ul>
 <!-- <h2>Service</h2>
 <br>

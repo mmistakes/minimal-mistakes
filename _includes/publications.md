@@ -34,7 +34,7 @@
     </li>
 
     <li class="publication-item">
-      <span class="publication-title">Holistically Evaluating the Environmental Impact of Creating Language Models</span>
+      <a href="https://arxiv.org/abs/2503.05804" class="publication-title">Holistically Evaluating the Environmental Impact of Creating Language Models</a>
       <div class="authors"><strong>Jacob Morrison</strong>, Clara Na, Jared Fernandez, Tim Dettmers, Emma Strubell, Jesse Dodge</div>
       <div class="venue">
         <em>ICLR 2025</em>
