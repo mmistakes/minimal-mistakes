@@ -2,35 +2,28 @@
 title: "Rulers"
 topics: 
   - rulers
+  - numbers
 related: 
 nurseries: Group 6
-author: Lexie Newbery
-sub_date: 2023-08-26
+author: Lexie Newbery, Molly Ireland
+sub_date: 2025-08-04
 header:
-  teaser: /assets/img/couchlength.png
-  teaser_alt: A sofa, measured in units of cushions and books
+  teaser: /assets/img/ruler_teaser.jpeg
+  teaser_alt: A ruler made by a child being used to measure a hand.
   teaser_pos: fit
 ---
+When we want to know how tall something is or how far something has travelled, we normally use standard units of measurement such as centimetres. To compare two heights or measurements, we don’t need to use any specific unit of measurement and can instead make our own. This is what some children decided to do. In the image below, we can see a child being measured against a scale of numbers that the children devised themselves.
 
-Some of the children were experimenting with different ways of measuring the lengths of objects, using different units. Naturally, many children and adults will automatically jump to grab a ruler when being told to measure something, however that is not the only unit that is available. 
+{% include figure image_path="/assets/img/child_being_measured.jpeg" alt="An image of a child lying on a piece of paper where numbers have been written along one side to let them compare each other's heights." title="Comparing heights" %}
 
-For example, it is possible to use something like a pen, or remote control to measure how long a pillow is or how wide a couch is. They could also measure the same object, using different units of measurement and comparing the results. For example, the length of couch in cushions, compared to the length of the same couch in books or in crisp packets. This allows the children to deepen their creative mathematical thinking skills and hence, develop their cognitive skills as they will begin to understand the importance of knowing what unit was used to measure an item. This is particularly helpful when it comes to maths later in life and life as a whole because there are so many units of measurement to use for one task. Not only this, but we may also allow them to develop analytical skills, by asking the after comparing the measurements of the same object, which unit was more efficient. 
+In the image below, some children have made their own rulers (using their own units, i.e. not centimetres). The children went on to measure objects around the classroom and the distances travelled by toy cars.
 
-For example, in cushions, a couch's length is 3, but when it comes to the couch's length in books, it is 9. Therefore, it may be more useful to use the length in books as, when comparing it to, for example, a  small chair, a unit of cushions may be too big. However, if we were comparing a cushion's length to the length of the couch, then the unit of cushions would work as, one cushion is 1 unit long and the couch is 3 units. Therefore, the couch is 3 times the size as the cushion.  
+{% include figure image_path="/assets/img/ruler_photos.jpeg" alt="Four photos of children adding numbers to their rulers and measuring items around the classroom." title="Making rulers" %}
 
-The image below gives a visual example of above: 
+Some units of measurement can be better suited to one task than another. If we were thinking about how far a toy car had travelled, centimetres might be appropriate; however, if we wanted to measure how far a real car had travelled, kilometres might be more sensible. These are formal units of measurement, but the same idea holds with more unusual units. In the toy car example, pen lids are probably going to be more suitable than shoes, as they are smaller, so we will not have to use half units so much.
+
+We can describe the dimensions of objects using many different units of measurement. For example, the length of a sofa in cushions, compared to the length of the same sofa in books. The image below shows a visualisation of this. 
 
 {% include figure image_path="/assets/img/couchlength.png" alt="A sofa, measured in units of cushions and books" title="How long is a sofa?" %}
 
-In order to gain a full understanding of the importance of units, it may be helpful to have this repeated with many different objects. 
-
-It may also be useful to try using the larger unit, in this case the cushion, as a way of measuring a larger object in the unit of books, by creating a  compound unit. This would be done by stating that "One cushion unit is 3 book units", then, if something was 11 cushions long, then it would be 33 books long. This is incredibly useful when it comes to measuring larger objects as it is more time efficient and also a lot easier to do in terms of equipment. 
-
-The children may also wish to make their own "rulers" using a bit of paper or cardboard, which is also another way of measuring something, without using a regular ruler, so this is still going to push their cognitive and creative thinking skills. Some examples of this are below: 
-
-{% include figure image_path="/assets/img/makingruler.png" alt="A child making a ruler by writing numbers on a piece of cardboard" title="Making a ruler" %}
-{% include figure image_path="/assets/img/orderedwood.png" alt="A child putting  numbers in order" title="Ordering numbers" %}
-{% include figure image_path="/assets/img/ruler.png" alt="A ruler, made by a child by writing numbers on a piece of card" title="Cardboard ruler" %}
-{% include figure image_path="/assets/img/measuringcar.png" alt="A child measuring a small green car using a cardboard ruler" title="How long is a car?" %}
-{% include figure image_path="/assets/img/measuringhand.png" alt="Children measuring their hands using their cardboard rulers" title="How long is my hand?" %}
-
+It could be a fun activity for children to choose different units of measurement and compare the relative lengths of items around the classroom. Children could also combine objects to form a measuring system, for example, a piece of paper could be one straw and three marbles long. 
