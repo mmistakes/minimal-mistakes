@@ -2,10 +2,19 @@
   <h3 class="year-header">2025</h3>
   <ul class="publications-list">
     <li class="publication-item">
+      <a href="https://arxiv.org/abs/2507.07024" class="publication-title">FlexOlmo: Open Language Models for Flexible Data Use</a>
+      <div class="authors">Weijia Shi, Akshita Bhagia, Kevin Farhat, Niklas Muennighoff, Pete Walsh, <strong>Jacob Morrison</strong>, Dustin Schwenk, Shayne Longpre, Jake Poznanski, Allyson Ettinger, Daogao Liu, Margaret Li, Dirk Groeneveld, Mike Lewis, Wen-tau Yih, Luca Soldaini, Kyle Lo, Noah A. Smith, Luke Zettlemoyer, Pang Wei Koh, Hannaneh Hajishirzi, Ali Farhadi, Sewon Min</div>
+      <div class="venue">
+        <em>Under review</em>
+        <a href="https://arxiv.org/pdf/2507.07024">paper</a>
+        <a href="https://allenai.org/blog/flexolmo">blog</a>
+      </div>
+    </li>
+    <li class="publication-item">
       <a href="https://arxiv.org/abs/2501.00656" class="publication-title">2 OLMo 2 Furious</a>
       <div class="authors">OLMo Team, Pete Walsh, Luca Soldaini, Dirk Groeneveld, Kyle Lo, Shane Arora, Akshita Bhagia, Yuling Gu, Shengyi Huang, Matt Jordan, Nathan Lambert, Dustin Schwenk, Oyvind Tafjord, Taira Anderson, David Atkinson, Faeze Brahman, Christopher Clark, Pradeep Dasigi, Nouha Dziri, Michal Guerquin, Hamish Ivison, Pang Wei Koh, Jiacheng Liu, Saumya Malik, William Merrill, Lester James V. Miranda, <strong>Jacob Morrison</strong>, Tyler Murray, Crystal Nam, Valentina Pyatkin, Aman Rangapur, Michael Schmitz, Sam Skjonsberg, David Wadden, Christopher Wilhelm, Michael Wilson, Luke Zettlemoyer, Ali Farhadi, Noah A. Smith, Hannaneh Hajishirzi</div>
       <div class="venue">
-        <em>arXiv</em>
+        <em>COLM 2025</em>
         <a href="https://arxiv.org/pdf/2501.00656">paper</a>
         <a href="https://allenai.org/blog/olmo2">blog</a>
       </div>
@@ -18,7 +27,7 @@
       <a href="https://arxiv.org/abs/2411.15124" class="publication-title">Tülu 3: Pushing Frontiers in Open Language Model Post-Training</a>
       <div class="authors">Nathan Lambert, <strong>Jacob Morrison</strong>, Valentina Pyatkin, Shengyi Huang, Hamish Ivison, Faeze Brahman, Lester James V. Miranda, Alisa Liu, Nouha Dziri, Shane Lyu, Yuling Gu, Saumya Malik, Victoria Graf, Jena D. Hwang, Jiangjiang Yang, Ronan Le Bras, Oyvind Tafjord, Chris Wilhelm, Luca Soldaini, Noah A. Smith, Yizhong Wang, Pradeep Dasigi, Hannaneh Hajishirzi</div>
       <div class="venue">
-        <em>arXiv</em>
+        <em>COLM 2025</em>
         <a href="https://arxiv.org/pdf/2411.15124">paper</a>
         <a href="https://allenai.org/tulu">blog</a>
       </div>
