@@ -1,5 +1,5 @@
 ---
-title: "Making equal shapes in playdough"
+title: "Making Equal Shapes in Playdough"
 topics: 
   - shapes
   - volume
