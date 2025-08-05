@@ -1,5 +1,5 @@
 ---
-title: "Angles in ramps"
+title: "Angles in Ramps"
 topics:
   - ramps
   - angles

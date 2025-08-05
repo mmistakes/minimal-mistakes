@@ -1,5 +1,5 @@
 ---
-title: "Concentric circles and spirals"
+title: "Concentric Circles and Spirals"
 topics: 
   - concentric circles
   - spirals

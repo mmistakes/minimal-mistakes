@@ -1,5 +1,5 @@
 ---
-title: "Ramps and their surfaces"
+title: "Ramps and Their Surfaces"
 topics:
   - ramps
   - surface
