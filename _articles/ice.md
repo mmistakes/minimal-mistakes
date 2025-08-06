@@ -1,30 +1,35 @@
 ---
-title: "Melting ice"
+title: "Melting Ice"
 topics: 
   - surface area
 topic_overview: true
 related: 
   - volume
   - ice
-author: Lexie Newbery
+author: Lexie Newbery, Molly Ireland
 nurseries:  Group 1 
-sub_date: 2023-08-26
+sub_date: 2025-08-05
 header:
   teaser: /assets/img/cupice.png
   teaser_alt: An ice cube placed in a vessel of warm water
   teaser_pos: fit
 ---
+Some children were experimenting with warm water and ice cubes. The time it took for the ice to melt depended on the ways they tried to melt the ice with the water. The first child poured warm water over their ice, and the second child put their ice in a container with warm water. The children soon realised that putting the ice in the container meant it melted quicker. Below are some of the comments the children made while carrying out this activity.
 
-Some of the children were experimenting with warm water and ice cubes. The time it took for the ice to melt depended on the ways they tried to melt the ice with the water. 
+***“We need warm water”***
+<br>***“Bring water over, fill it right up!”***
+<br>***"Oh, it's melted!"***
+<br>***“It's in the water now"***
 
-The image below shows the outside area of an ice cube (the surface area), which is the area of each square face. This allows us to see the ice as the cube shape, rather than just ice. Although ice is not always cube shaped, it will still have the same surface area concept. 
+The ice in the container melted quicker as all of the surface area of the ice was in contact with the warm water. This meant that the melting could occur all over the ice and not just in one area. The more surface area in contact with the warm water, the faster the ice can melt. We can use this to find ways to make the ice melt even faster. 
 
-{% include figure image_path="/assets/img/icecube.png" alt="An ice cube shape" title="Ice cube" %}
+If we were to cut an ice cube in half, we would now have two small ice cubes with the same combined volume as the original large ice cube. The two smaller ice cubes (these do not actually have cube dimensions anymore) would have a larger combined surface area than the large ice cube. This means that the two smaller ice cubes would melt quicker than the large ice cube. In the image below, we can see a cube with side lengths of $$4\text{cm}$$ and two rectangular prisms with side lengths of $$4\text{cm}$$, $$4\text{cm}$$ and $$2\text{cm}$$. The volume of the cube is $$64\text{cm}^{3}$$ and the surface area is $$96\text{cm}^{2}$$. The volume of the two rectangular prisms combined is still $$64\text{cm}^{3}$$ but the combined surface area is now $$128\text{cm}^{2}$$. 
 
-How much ice surface area is being covered by the warm water will determine the speed in which the ice melts. For example, an ice cube in a tub of warm water will have its surface area completely surrounded in warm water, whereas just pouring some warm water onto the ice means it will melt slowly. This is due to only a small amount of the ice's surface area being in contact with the warm water. Both examples are demonstrated in the images below:  
+{% include figure image_path="/assets/img/splitting_a_cube.jpeg" alt="A cube with a side length of 4 and two rectangular prisms with side lengths of 4,4,2 on a grid." title="Spliting a cube" %}
 
-{% include figure image_path="/assets/img/pour2.png" alt="Pouring warm water onto an ice cube" title="Pouring water on to an ice cube" %}
-{% include figure image_path="/assets/img/cupice.png" alt="An ice cube placed in a vessel of warm water" title="Submerged ice cube" %}
+To alter the surface area of the ice, we could freeze the same volume of water into different shapes. Changing the shape of the ice changes the surface area to volume ratio. The greater the surface area to volume ratio, the quicker the ice will melt. 
 
-The children were very quick to realise that pouring the water was resulting in a lot slower melting process and that covering the ice with the warm water would be a lot faster, which is a clear demonstration of them understanding that the more surface area covered, the more of the ice being warmed and so a quicker melting process.   
+A sphere has the lowest surface area to volume ratio, meaning that if we froze a volume of water into a sphere, it would melt the slower than any other shape. When we freeze water into a cube shape, the corners of the ice cube melt quicker than the rest of the ice, as the surface area to volume ratio is higher there. This means that as the ice melts, it becomes a more rounded shape. Children could observe this for themselves in the classroom and carry out some experiments to deepen their understanding.
 
+[it would be good to find some images for this]:#
+[table of the different surface areas for a fixed volume to put it in perspective]:#
