@@ -38,13 +38,17 @@ In the image below, we have drawn the diameter of the circle in red.
 
 {% include figure image_path="/assets/img/circle_diameter.jpeg" alt="An image showing a circle with the diameter highlighted in red." title="The diameter of a circle" %}
 
+In the image below, children are measuring the diameter of some [concentric circles]({{site.baseurl}}/articles/concentric_circles/) they have made out of stones. When asked to describe the diameter of a circle one child responded ***“the wide of the circle”***.
+
+{% include figure image_path="/assets/img/measuring_the_diameter.jpeg" alt="Children measuring the diameter of some concentric circles they have made out of stones." title="Measuring the diameter" %}
+
 ## Circumference
 The circumference of a circle is the name for the outer edge of the circle. The length of the circumference is determined by the length of the radius and the number $$\pi$$ (pi). The length of the circumference is given by the equation:
 \begin{equation}
 \text{circumference} = 2 \times \pi \times \text{radius}.
 \end{equation}
 
-If we double the length of the radius of the circle, the length of the circumference is doubled too. Children could experiment with this, using a measuring tape or a length of string to measure the circumference of the circle. 
+If we double the length of the radius of the circle, the length of the circumference is doubled too. Children could experiment with this, using a measuring tape or a length of string to measure the circumference of the circle. To learn more about pi please see [our article on pi]({{site.baseurl}}/articles/pi/). 
 
 In the image below, we have drawn the circumference of the circle in red. 
 
@@ -57,6 +61,11 @@ We call a line tangent to a circle if it only touches the circle at exactly one 
 In the image below, we have drawn a tangent to the circle in red. 
 
 {% include figure image_path="/assets/img/circle_tangent.jpeg" alt="An image showing a circle with a tangent highlighted in red." title="A tangent to the circle" %}
+
+In the image below, children have drawn some circles and some tangent lines. 
+
+{% include figure image_path="/assets/img/tangent_lines.jpeg" alt="An image showing some circles and tangent lines." title="Some circles and tangent lines" %}
+
 ## Chord
 A chord is a straight line that is inside the circle with both of its endpoints touching the edges of the circle. The diameter is a special chord that passes through the centre.
 
@@ -77,6 +86,7 @@ In the image below, a child has used a string and this method to find the centre
 {% include figure image_path="/assets/img/finding_the_centre_of_a_circle.jpeg" alt="A child finding the centre of a circle." title="A child finding the centre of a circle" %}
 
 Another way to roughly find the centre of a paper circle could be to cut it out and use the [centre of mass method]({{site.baseurl}}/articles/centre_of_mass/) to find the centre.
+
 ## Area
 The area of a circle is dependent on how large the radius is and the mathematical constant $$\pi$$ (pi). We can calculate the area using the equation:
 \begin{equation}
@@ -99,4 +109,4 @@ If we draw three points (that cannot be joined on one straight line), then there
 ## Stories About Circles
 One famous mathematical story about circles is the story of the Queen of Dido. Dido was, according to old Greek accounts, the first queen of Carthage. She fled her home and asked for refuge in Northwest Africa. She asked for a bit of land that could be hers, and was allowed as much land as she could fit within an oxhide. She cleverly decided to cut the hide into thin strips and tie them together to make a large rope. With this done, she needed to determine the largest amount of land that could fit within the rope. 
 
-Trying to fit the largest amount of area inside a set amount of rope could be a fun activity that children could try in the classroom. They could use sand or different objects to fill the inside of the rope to compare the sizes of the area. They might be able to work out that the shape which contains the most area using the string is a circle. This is what Dido worked out. 
+Trying to fit the largest amount of area inside a set amount of rope could be a fun activity that children could try in the classroom. They could use sand or different objects to fill the inside of the rope to compare the sizes of the area. They might be able to work out that the shape which contains the most area using the string is a circle. This is what Dido worked out.

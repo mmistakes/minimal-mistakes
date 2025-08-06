@@ -13,7 +13,7 @@ nurseries:
 author: Milly McGowan, Molly Ireland
 sub_date: 2025-08-01
 header:
-  teaser: /assets/img/numicon3.png
+  teaser: /assets/img/finished_numicon.jpeg
   teaser_alt: A child showing a pattern they had made from Numicon pieces
   teaser_pos: fit
 ---

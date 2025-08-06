@@ -57,9 +57,9 @@ In the image below, we can see an example of this experiment. On the right-hand 
 
 ### Ordering 
 
-The children can explore ordering sequences by using different-sized balls of playdough. They can come up with their own rules for how the sequence should be ordered, e.g. largest to smallest. 
+The children can explore ordering sequences by using different-sized balls of playdough. They can come up with their own rules for how the sequence should be ordered, e.g. largest to smallest. In the image below, we can see a child creating different sized balls of playdough and placing them in order.
 
-[There is an image for this somewhere, but it is difficult to find]:#
+{% include figure image_path="/assets/img/different_sized_balls_of_playdough.jpeg" alt="Different sized balls of playdough placed in order on a table." title="Ordering playdough" %}
 
 ### Centre of Mass
 

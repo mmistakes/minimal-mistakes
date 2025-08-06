@@ -9,8 +9,8 @@ related:
 author: Molly Ireland
 sub_date: 2025-07-02
 header:
-  teaser: /assets/img/rolling_pentagons_2.jpeg
-  teaser_alt: Two diagrams of pentagons on ramps, the ramp on the right is steeper. Vertical dotted lines show that the centre of mass of the pentagon on the steeper slope will fall outside of the base.
+  teaser: /assets/img/com_teaser.jpeg
+  teaser_alt: A tower built by children.
   teaser_pos: mid
 ---
 A common playtime activity is stacking blocks. Most of the time, children want to build the tallest towers, which leads them to question how to make their tower taller. To make the towers taller, the biggest problem is usually stability. How can they make their towers more stable?
@@ -24,6 +24,10 @@ The **centre of mass** is the point where we model all of the mass of an object 
 If we think about a game of Jenga, we can see how the centre of mass affects the stability of the tower. On the left-hand side of the diagram below, we can see how the centre of mass of the top Jenga block is above the base of the tower. On the right-hand side of the diagram, we can see that the centre of mass of the top Jenga block is not above the base of the tower; this would mean that this top Jenga block would fall off the base. Here we have only looked at the centre of mass for the top block of the tower, not the whole tower. Finding the centre of mass for the tower would require some more complex geometry, which is not necessary for this discussion.
 
 {% include figure image_path="/assets/img/jenga_com.jpeg" alt="Two Jenga towers with different base sizes." title="Two Jenga towers" %}
+
+In the images below we can see some examples of towers that children have built. One child said ***“The blocks have to be in the middle and they don’t tip over”***.
+
+{% include figure image_path="/assets/img/collage_of_towers.jpeg" alt="A collage of towers built by children." title="Towers built by children." %}
 
 A mathematical problem involving stacking blocks is called the *Leaning Tower of Lire* and was discussed by Paul Johnson in 1950. He wanted to learn about how far the top block could be pushed from a stack of blocks to create an overhang before the tower toppled. 
 
