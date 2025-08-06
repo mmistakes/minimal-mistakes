@@ -10,8 +10,8 @@ author: Lexie Newbery, Molly Ireland
 nurseries:  Group 1 
 sub_date: 2025-08-05
 header:
-  teaser: /assets/img/cupice.png
-  teaser_alt: An ice cube placed in a vessel of warm water
+  teaser: /assets/img/splitting_a_cube.jpeg
+  teaser_alt: A cube with a side length of 4 and two rectangular prisms with side lengths of 4,4,2 on a grid.
   teaser_pos: fit
 ---
 Some children were experimenting with warm water and ice cubes. The time it took for the ice to melt depended on the ways they tried to melt the ice with the water. The first child poured warm water over their ice, and the second child put their ice in a container with warm water. The children soon realised that putting the ice in the container meant it melted quicker. Below are some of the comments the children made while carrying out this activity.
