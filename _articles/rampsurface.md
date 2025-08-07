@@ -7,29 +7,49 @@ topics:
 related: 
   - experiments     
 nurseries: Group 3   
-author: Lexie Newbery
-sub_date: 2023-08-26
+author: Lexie Newbery, Molly Ireland
+sub_date: 2025-08-06
 header:
-  teaser: /assets/img/3ramps.png
-  teaser_alt: Three ramps made from drainpipe. One is lined with sequinned fabric and another with bubblewrap.
+  teaser: /assets/img/shell_ramp_comparision.jpeg
+  teaser_alt: Two images of two ramps made from drainpipe. One is lined with sandpaper. In the first image, a shell is travelling down the smooth drainpipe. In the other, the same shell is travelling down the pipe lined with sandpaper.
   teaser_pos: fit
 ---
-Some of the children wanted to make ramps that had different surfaces, which changed how the object went down the ramps. 
+Some children wanted to investigate what happened to objects travelling down a ramp when they changed the ramp surface. They began by fixing sandpaper to one pipe and leaving the other uncovered. The children made predictions about what they thought would happen.
 
-They understood that the surfaces that were a lot rougher made the objects go a lot slower than those that were smooth, which is a great example of understanding friction. The images below gives a few examples of what we can use to demonstrate this: 
+A:***“It feels funny, it hurts my hands, the car might not go down.”***
+<br>K:***“It’s rough, sandpaper, the wheels will make the car go down, but if it has no wheels I’ll have to push it down the sandpaper.”***
 
-{% include figure image_path="/assets/img/2ramps.png" alt="Two ramps made from drainpipe. One is lined with a bumpy surface" title="Bumpy ramp" %}
-{% include figure image_path="/assets/img/3ramps.png" alt="Three ramps made from drainpipe. One is lined with sequinned fabric and another with bubblewrap." title="Textured ramps" %}
-{% include figure image_path="/assets/img/shellramp.png" alt="A conch shell on a ramp lined with hessian" title="Shell on hessian ramp" %}
-{% include figure image_path="/assets/img/carramp.png" alt="A car travelling down a ramp lined with hessian." title="Car on hessian ramp" %}
+They then tried letting objects go down the sandpaper and commented on what happened.
 
+A:***“The car still goes down fast, I don’t have to push it.”***
+<br>K:***“It is the wheels that make it go down fast but I’ll try the shell it has no wheels, I had to push it to make it go and it still went slow.”***
 
-A rougher surface will have a much larger friction on an object than one that is smooth and so, will either slow the object down on the ramp, or make it stop completely due to there being more force "holding the object back", rather than weight (force) of the object pulling it down the ramp. 
+Here, the children realised that because the car had wheels, the friction from the sandpaper had little effect on the car's speed. There are two main reasons for this. Friction can only act on an object where it is in contact with the surface. The wheels of the car have a small surface area, so the force of friction acting on the car from the sandpaper is small compared to the weight of the car. If the wheels of the car are free to rotate, they also experience friction differently to an immobile surface of an object, such as the shell in the children's example. As the wheels can rotate in this case, the car is not slowed down too much by the change in surface.
 
-This friction also depends on the object itself as, an object with wheels, such as a toy car, will generally go down a ramp quicker than something that doesn't have wheels (such as the shell in the above pictures). This is due to the fact that the wheels will have a reduced friction and have a greater force pushing it down the ramp, making it easier to move the weight at a quicker speed on a rough surface however, friction still acts on the car. 
+The children rightly realised that an object without wheels would likely be slowed down more by the sandpaper. They found a large shell to test out their theory. They found that the shell required a push to start it moving and that it travelled a lot slower than the car. In the images below, we can see the experiment the children performed.
 
-The condition of the ramp may also effect the speed of the object going down the ramp, such as a smooth surface ramp that may have had water poured onto it, may allow objects to move a lot quicker down the ramp as the water acts as a coating between the ramps surface and the object. This then reduces or removes the friction and so the only force acting on the object is the weight of the object. 
+{% include figure image_path="/assets/img/shell_ramp_comparision.jpeg" alt="Two images of two ramps made from drainpipe. One is lined with sandpaper. In the first image, a shell is travelling down the smooth drainpipe. In the other, the same shell is travelling down the pipe lined with sandpaper." title="Ramp experiment with a shell" %}
 
-The idea of forces and friction also works when going up a ramp rather than down. An object on a smoother ramp may require a lot more force to push it up the ramp due to the lack of friction. This is because the weight of the object will be pulling it down the ramp and there will be no or less friction to stop it from going back down the ramp. The children would then likely indicate that for the object to go up the ramp they would need to move it themselves (demonstrated both physically and verbally).
+The children also experimented with using hessian to cover the pipe. Here, the fabric does exert friction on the objects, but the bumps in the fabric might actually hook onto the objects too. When this happens, it is not friction stopping the objects from moving, but tension in the fabric. 
 
+A:***“This has funny bits on, its like my clothes.”***
+<br>K:***“I think the car will STOP on this one and the shell.”***
 
+Below is a photo showing the children's experiment with hessian. 
+{% include figure image_path="/assets/img/hessian_experiment.jpeg" alt="Two images of ramps made from pipe. In the first image, a shell is on a pipe lined with hessian. In the second image, a car rolls down a ramp with hessian, and there is a ramp lined with sandpaper off to the side." title="A car and a shell on a hessian ramp" %}
+
+The children also experimented by covering the pipe with bubble wrap. Whilst this can change the friction the objects experience, the biggest change here is the bumps in the bubble wrap. These bumps mean that the object must be travelling fast enough to avoid coming to a stop when travelling over the bump. This experiment and the children's discussion are shown below.
+
+J:***“What about this plastic, it has circles in it, I think everything will get stuck in here, nothing will move down the ramp.”***
+<br>J:***“It is still moving the car, I have to give it a little push to make it start to move but then my pushing makes it go even down the holes, it’s a bit bumpy though.”***
+<br>J:***“What can we put on the ramp to stop things moving, I think it will have to be something really really bumpy.”***
+
+{% include figure image_path="/assets/img/bubble_wrap_ramp.jpeg" alt="Two images of ramps made from pipe. In the first image, a shell is on a pipe lined with hessian. In the second image, a car rolls down a ramp with hessian, and there is a ramp lined with sandpaper off to the side." title="A car and a shell on a hessian ramp" %}
+
+This child was surprised that the car would move down the ramp if he gave it a big enough push. This is because once the car has enough kinetic energy, it is able to move to the top of each of the bumps on the bubble wrap. From there, it is able to accelerate down to the next bump, gaining enough energy to make it over. The child also noticed that the cars movement over the bumps was not very smooth, this could lead to a nice conversation about suspension in cars. 
+
+In their experiment, the children explored several variables that can change the speed an object travels down a ramp. These include friction, having a material that can catch on an object, like the hessian and changing the gradient of the surface, like the bubble wrap. In order to compare the effect each material has on the movement of the objects, the children rightfully used the same objects throughout. For some discussion about variables in experiments, please see our article on [experimenting with rocks and water]({{site.baseurl}}/articles/rocksinwater/)
+
+Another method the children could have explored is using an oil to lubricate the surface of the pipe. The oil creates a barrier between the object and the surface of the pipe, allowing the object to move more freely over the surface.
+
+[separate article summarising friction]:#
