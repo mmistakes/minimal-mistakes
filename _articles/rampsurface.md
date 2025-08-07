@@ -44,7 +44,7 @@ J:***“What about this plastic, it has circles in it, I think everything will g
 <br>J:***“It is still moving the car, I have to give it a little push to make it start to move but then my pushing makes it go even down the holes, it’s a bit bumpy though.”***
 <br>J:***“What can we put on the ramp to stop things moving, I think it will have to be something really really bumpy.”***
 
-{% include figure image_path="/assets/img/bubble_wrap_ramp.jpeg" alt="Two images of ramps made from pipe. In the first image, a shell is on a pipe lined with hessian. In the second image, a car rolls down a ramp with hessian, and there is a ramp lined with sandpaper off to the side." title="A car and a shell on a hessian ramp" %}
+{% include figure image_path="/assets/img/bubble_wrap_ramp.jpeg" alt="Two ramps one with nothing on it and on with bubble wrap on it and a car moving down it." title="Two ramps, one with bubble wrap" %}
 
 This child was surprised that the car would move down the ramp if he gave it a big enough push. This is because once the car has enough kinetic energy, it is able to move to the top of each of the bumps on the bubble wrap. From there, it is able to accelerate down to the next bump, gaining enough energy to make it over. The child also noticed that the cars movement over the bumps was not very smooth, this could lead to a nice conversation about suspension in cars. 
 
