@@ -2,6 +2,7 @@
 title: "Tessellation"
 topics: 
  - drawing
+ - tessellation
  - shape
 related: 
  - colouring
