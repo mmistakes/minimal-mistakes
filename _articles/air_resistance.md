@@ -40,6 +40,33 @@ In the image below, we can see a visualisation of how the air pushes on the diff
 
 {% include figure image_path="/assets/img/difference_in_surface_area.jpeg" alt="A diagram of how air interacts with a paper ball and a sheet of paper." title="How air interacts with a paper ball and a sheet of paper" %}
 
+Children in a nursery carried this experiment out for themselves; the images of this are shown below. 
+
+{% include figure image_path="/assets/img/air_resistance_experiment.jpeg" alt="Two children standing next to each other. One has dropped a ball of paper which is now on the ground, the other has dropped a flat sheet of paper which is still in the air." title="A classroom experiment" %}
+
+***“Ball will drop first and that (flat piece of paper) will go second. Ball go fast and this one (flat paper) slow.”***
+<br>***“Bcos a ball drop faster n paper drop slower”***
+
+The children, eager to experiment more tried dropping a much larger sheet of paper together, this is shown below. 
+
+{% include figure image_path="/assets/img/large_paper_drop.jpeg" alt="A group of children hold a large piece of paper, ready to drop it." title="Another classroom experiment" %}
+
+***“This is a bigger bit! Let’s try this!”***
+<br>***“THREE, TWO, ONE, DROP!”***
+<br>***“It fell slowly like we said!”***
+
+Another child decided to punch holes in some paper as they predicted this would reduce the air resistance and make the paper fall quicker. This experiment is shown below. 
+
+{% include figure image_path="/assets/img/holes_in_paper.jpeg" alt="A child holding up a piece of paper with holes punched in it." title="Punching holes for the air" %}
+
+***“Need a hole in it so the air can go through the hole! If a poke a hole in it, the air can go through it. Doin’ this, pushin’ it in, I'll show ya”***
+<br>***“Fifteen holes in, right there! N’ now I'll get a normal piece of paper.”***
+<br>***“I think the sheet with the holes will go faster cos got holes in!”***
+<br>(after making bigger holes with a hole puncher)***“Got bigger holes, so the air will definitely fit through them now. I think will make it go really fast now.”***
+<br>***“Three, two, one, go!”***
+<br>***“It went faster! It really did! Went really fast it did!”***
+
+
 [Links to experiment techniques]:# 
 </details>
 <p></p>
