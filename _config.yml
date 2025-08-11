@@ -1,19 +1,23 @@
-cat > _config.yml <<'YML'
-minimal_mistakes_skin: "default"
+# _config.yml — Minimal Mistakes (Remote Theme) for USER PAGE (cicada31113.github.io)
+# -----------------------------------------------------------------------------------
 
+# --- Theme (Remote) ---
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"  # 버전 고정 권장
+minimal_mistakes_skin: "default"                   # "air","aqua","contrast","dark","dirt","neon","mint","plum","sunrise"
+
+# --- Site ---
 locale: "ko"
 title: "권덕현의 비밀스런 공간"
 name: "권덕현"
 description: "반갑다 인사 씨게박는다."
-url: "https://cicada31113.github.io"
-baseurl: ""
-
+url: "https://cicada31113.github.io"   # 사용자 페이지는 도메인만
+baseurl: ""                             # 반드시 빈 문자열
 timezone: "Asia/Seoul"
 
+# --- Author / Footer (옵션) ---
 author:
   name: "권덕현"
   bio: "기술과 이야기가 있는 공간"
-  location: "대한민국"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -26,17 +30,15 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cicada31113"
 
-# 레포에 테마 소스가 이미 포함된 Fork 구조라면 theme/remote_theme 불필요.
-# 만약 테마 소스가 없다면 아래 줄 주석 해제:
-# remote_theme: "mmistakes/minimal-mistakes"
-
+# --- Plugins (GitHub Pages 호환) ---
 plugins:
-  # - jekyll-paginate   # 문제시 비활성 유지
+  - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  # - jekyll-paginate   # 필요 시만 활성(초기 설정에서는 비활성 권장)
 
+# --- Defaults: 포스트 공통 옵션 ---
 defaults:
   - scope:
       path: ""
@@ -47,7 +49,9 @@ defaults:
       read_time: true
       share: true
       related: true
+      # comments: true    # 댓글 시스템 연결 시 활성 (provider 설정 필요)
 
+# --- Markdown / Build ---
 permalink: /:categories/:title/
 markdown: kramdown
 highlighter: rouge
@@ -59,20 +63,21 @@ kramdown:
 
 encoding: "utf-8"
 
+# --- Build includes/excludes ---
 include:
   - _pages
 exclude:
   - node_modules
   - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - README
+  - LICENSE
   - Gemfile
   - Gemfile.lock
   - package.json
   - package-lock.json
-  - README
-  - LICENSE
-  - .sass-cache
-  - .jekyll-cache
-  - .gitignore
+
 keep_files:
   - .git
-YML
+
