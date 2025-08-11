@@ -2,7 +2,7 @@
 layout: single
 title:  "Wireshark를 활용한 패킷 흐름 살펴보기"
 categories: 패킷
-tag: [wireshark, 패킷, 네트워크, 보안, 통신]
+tag: [wireshark, 패킷, 네트워크,  통신]
 toc: true
 toc_label: 목차
 author_profile: false
