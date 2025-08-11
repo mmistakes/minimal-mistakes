@@ -1,26 +1,17 @@
-# _config.yml (minimal-mistakes 깔끔 버전 / 사용자 페이지용)
-# ------------------------------------------------------------
+cat > _config.yml <<'YML'
+minimal_mistakes_skin: "default"
 
-# --- Skin / Theme ---
-minimal_mistakes_skin: "default"   # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-# theme: "minimal-mistakes-jekyll" # 전체 테마 포함 시
-# remote_theme: "mmistakes/minimal-mistakes" # 원격 테마 방식 사용 시 (둘 중 하나만 사용)
-
-# --- Site Settings ---
 locale: "ko"
 title: "권덕현의 비밀스런 공간"
 name: "권덕현"
 description: "반갑다 인사 씨게박는다."
 url: "https://cicada31113.github.io"
-baseurl: ""    # 사용자 페이지는 반드시 빈 문자열
+baseurl: ""
 
-# --- Timezone ---
 timezone: "Asia/Seoul"
 
-# --- Author Info ---
 author:
   name: "권덕현"
-  avatar: "/assets/images/bio-photo.jpg" # 아바타 이미지 경로 (없으면 비움)
   bio: "기술과 이야기가 있는 공간"
   location: "대한민국"
   links:
@@ -28,7 +19,6 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cicada31113"
 
-# --- Footer ---
 footer:
   since: "2025"
   links:
@@ -36,15 +26,17 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cicada31113"
 
-# --- Plugins (GitHub Pages 호환만) ---
+# 레포에 테마 소스가 이미 포함된 Fork 구조라면 theme/remote_theme 불필요.
+# 만약 테마 소스가 없다면 아래 줄 주석 해제:
+# remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
-  # - jekyll-paginate   # GitHub Pages에서 가끔 문제 발생, 필요 시만 활성
+  # - jekyll-paginate   # 문제시 비활성 유지
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
-# --- Defaults ---
 defaults:
   - scope:
       path: ""
@@ -56,23 +48,17 @@ defaults:
       share: true
       related: true
 
-# --- Markdown / Highlighter ---
+permalink: /:categories/:title/
 markdown: kramdown
 highlighter: rouge
-
 kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
   toc_levels: 1..6
 
-# --- Permalink ---
-permalink: /:categories/:title/
-
-# --- Output ---
 encoding: "utf-8"
 
-# --- Build Options ---
 include:
   - _pages
 exclude:
@@ -89,3 +75,4 @@ exclude:
   - .gitignore
 keep_files:
   - .git
+YML
