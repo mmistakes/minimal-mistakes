@@ -8,7 +8,7 @@ related:
   - angles
   - tessellation
 author: Molly Ireland
-sub_date: 2025-08-08
+sub_date: 2025-08-11
 header:
   teaser: /assets/img/two_triangles_to_get_a_square.jpeg
   teaser_alt: 
