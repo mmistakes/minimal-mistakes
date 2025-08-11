@@ -11,7 +11,7 @@ author: Molly Ireland
 sub_date: 2025-08-11
 header:
   teaser: /assets/img/two_triangles_to_get_a_square.jpeg
-  teaser_alt: 
+  teaser_alt: "A child putting two triangles together to get a square"
   teaser_pos: mid
 ---
 Triangles are one of the most useful shapes, occurring throughout maths. There are several different types of triangles, each having its own unique properties. Some of the general features of triangles and the features for each specific type of triangle are discussed below.
@@ -96,7 +96,7 @@ As every triangle can be split into a right-angled triangle, we can also split e
 {% include figure image_path="/assets/img/right_angles_in_octogon.jpeg" alt="Spliting a polygon into right-angled triangles." title="Spliting a polygon into right-angled triangles" %}
 
 In the image below, a child experimented with making a square using two right-angled triangles. 
-{% include figure image_path="/assets/img/two_triangles_to_get_a_square.jpeg" alt="Spliting a polygon into right-angled triangles." title="Spliting a polygon into right-angled triangles" %}
+{% include figure image_path="/assets/img/two_triangles_to_get_a_square.jpeg" alt="A child putting two triangles together to get a square" title="Two triangles make a square" %}
 
 ## Scaling triangles 
 When we scale the size of a shape up or down, we keep the same angles but change the side lengths. This means that each side of a triangle will have to increase by the same factor (not the same amount) when we scale up the size of a triangle. 
