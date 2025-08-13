@@ -1,49 +1,48 @@
 /* assets/css/custom.css */
 .intro-text {
-    font-size: 0.7em;
-    text-align: justify;
-    margin: 20px auto;
-    max-width: 800px;
-  }
-  
-  .archive {
-    padding-left: 20px;
-  }
-  
-  .author_content {
-    padding-right: 10px
-  }
+  font-size: 0.7em;
+  text-align: justify;
+  margin: 20px auto;
+  max-width: 800px;
+}
 
-  .tabs {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .tab-button {
-    flex: 1;
-    text-align: center;
-    padding: 12px 20px; /* Increased padding */
-    border: 1px solid #ccc;
-    background-color: #f8f8f8; /* Slightly lighter background */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
-    border-radius: 5px 5px 0 0; /* Rounded corners on top */
-  }
-  
-  .tab-button:hover {
-    background-color: #f0f0f0; /* Hover effect */
-  }
-  
-  .tab-button.active {
-    background-color: #e0e0e0; /* More distinct active color */
-    font-weight: 600; /* Bolder font */
-  }
+.archive {
+  padding-left: 20px;
+}
 
-  .project {
-    font-size: 0.7em; /* Same font size as intro-text */
-    text-align: justify; /* Justify text */
-    margin: 20px auto; /* Same margin as intro-text */
-    max-width: 800px; /* Same max-width as intro-text */
-  }
+.author_content {
+  padding-right: 10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.arrow-link {
+  align-self: flex-end;
+  font-size: 24px;
+  line-height: 1;
+}

@@ -21,7 +21,7 @@ title                    : "Oladayo Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Oladayo Siyanbola"
-description              : "Welcome to my portfolio! I am exploring opportunies in data analytics, data engineering, and data science."
+description              : "A portfolio of data engineering projects."
 url                      : "https://0ladayo.github.io"
 baseurl                  : ""
 repository               : "0ladayo/0ladayo.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Oladayo Siyanbola"
   avatar           : "/assets/images/Oladayo.jpg"
-  bio              : "Data Enthusiast exploring the world of analytics, science and engineering"
+  bio              : "Data Engineer passionate about building and maintaining data pipelines."
   location         : "United Kingdom"
   links:
     - label: "Email"
