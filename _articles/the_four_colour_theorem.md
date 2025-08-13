@@ -5,6 +5,7 @@ topics:
 topic_overview: true
 related: 
   - drawing
+  - art
 author: Molly Ireland
 sub_date: 2025-07-10
 header:
