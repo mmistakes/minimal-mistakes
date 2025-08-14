@@ -7,7 +7,7 @@ topic_overview: true
 related: 
   - triangles
 author: Molly Ireland
-sub_date: 2025-08-13
+sub_date: 2025-08-14
 header:
   teaser: /assets/img/bridge_collage.jpeg
   teaser_alt: Five photos showing children making bridges in some of the photos, the children walk across bridges they have made out of crates and planks of wood.
