@@ -1,8 +1,6 @@
 ---
 title: "Water and Funnels"
 topics: 
-  - volume
-  - shapes
   - water
 related: 
   - equivalence

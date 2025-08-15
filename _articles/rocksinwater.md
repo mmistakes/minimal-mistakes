@@ -1,13 +1,12 @@
 ---
 title: "Rocks in Water"
 topics:
-  - rocks
   - water
-  - splashes
-  - relationships
-  - models
+  - experimenting
 related: 
-  - patterns in nature     
+  - patterns in nature 
+  - gravity
+  - data
 nurseries:   unsure 
 author: Lexie Newbery, Molly Ireland
 sub_date: 2025-08-05

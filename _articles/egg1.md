@@ -1,10 +1,9 @@
 ---
 title: "Eggs and Spaces"
 topics: 
-  - shapes
-  - circles
-related: 
+  - ordering
   - numbers
+related: 
 nurseries: Group 1
 author: Milly McGowan, Molly Ireland
 sub_date: 2025-08-05

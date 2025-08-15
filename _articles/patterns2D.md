@@ -8,6 +8,7 @@ topics:
   - symmetry
 related: 
   - transformations
+  - tessellation
 nurseries: Group 1
 author: Milly McGowan, Rachel Oughton
 sub_date: 2023-08-31

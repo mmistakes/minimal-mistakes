@@ -2,9 +2,10 @@
 title: "Perpendicular Lines"
 topics: 
   - lines
+  - geometry
 topic_overview: true
 related: 
-  - geometry
+  - properties of lines
 author: Molly Ireland
 sub_date: 2025-07-14
 header:

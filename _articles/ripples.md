@@ -5,9 +5,11 @@ topics:
   - circles
   - waves
   - patterns in nature
+  - nature
+  - water
 topic_overview: true
 related: 
-  - 
+  - physics
 author: Molly Ireland
 sub_date: 2025-08-14
 header:

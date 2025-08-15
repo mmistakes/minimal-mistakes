@@ -2,6 +2,7 @@
 title: "Conservation of Energy"
 topics: 
   - energy
+  - experimenting
 topic_overview: true
 related: 
   - physics

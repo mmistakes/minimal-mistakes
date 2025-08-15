@@ -2,6 +2,7 @@
 title: "Data Collection"
 topics: 
   - data
+  - experimenting
 topic_overview: true
 related: 
   - graphs

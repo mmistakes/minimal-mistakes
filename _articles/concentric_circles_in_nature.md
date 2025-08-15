@@ -3,11 +3,11 @@ title: "Concentric Circles in Nature"
 topics: 
   - concentric circles 
   - circles
-  - waves
   - patterns in nature
+  - nature
 topic_overview: true
 related: 
-  - 
+  - waves
 author: Molly Ireland
 sub_date: 2025-08-13
 header:

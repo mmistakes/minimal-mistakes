@@ -4,10 +4,11 @@ topics:
   - fractals
   - patterns in nature
   - patterns
-  - vegetables
+  - nature
+  - food 
 topic_overview: true
 related: 
-  - same and different    
+  -     
 nurseries: Group 5 
 author: Lexie Newbery, Rachel Oughton
 sub_date: 2025-07-25

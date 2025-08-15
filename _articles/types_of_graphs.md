@@ -2,9 +2,10 @@
 title: "Types of Graphs"
 topics: 
   - graphs
+  - data
+  - experimenting
 topic_overview: true
 related: 
-  - data
 author: Molly Ireland
 sub_date: 2025-06-27
 header:

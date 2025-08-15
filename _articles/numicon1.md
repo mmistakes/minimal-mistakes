@@ -2,7 +2,7 @@
 title: "Numicon"
 topics: 
   - numbers
-  - shapes
+  - shape
   - patterns
   - numicon
 related: 
