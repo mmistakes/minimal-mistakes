@@ -325,3 +325,6 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# default setting(for ink)
+furture: ture
