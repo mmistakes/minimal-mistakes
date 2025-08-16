@@ -14,6 +14,9 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+# default setting(for ink)
+future: true
+
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
@@ -327,5 +330,4 @@ defaults:
       share: true
       related: true
 
-# default setting(for ink)
-furture: true
+
