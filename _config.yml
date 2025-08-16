@@ -256,6 +256,7 @@ pagination:
   trail:
     before: 2
     after: 2
+  published: true
 
 
 # Plugins (previously gems:)
