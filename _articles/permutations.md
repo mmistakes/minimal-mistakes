@@ -1,10 +1,11 @@
 ---
 title: "Permutations"
 topics: 
-  - permutations
+  - ordering
+  - sequences
 topic_overview: true
 related: 
-  - ordering
+  - sequences
 author: Molly Ireland
 sub_date: 2025-06-25
 header:

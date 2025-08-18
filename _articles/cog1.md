@@ -1,10 +1,9 @@
 ---
 title: "Stacking Cogs"
 topics: 
-  - shapes
-  - sizes
-related: 
-  - area
+  - ordering
+  - sequences
+related:
 nurseries: Group 1
 author: Milly McGowan, Molly Ireland
 sub_date: 2025-08-01

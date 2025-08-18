@@ -2,6 +2,7 @@
 title: "Circles"
 topics: 
   - circles
+  - shape
 topic_overview: true
 related: 
   - geometry

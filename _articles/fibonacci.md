@@ -2,10 +2,10 @@
 title: "The Fibonacci Numbers"
 topics: 
   - Fibonacci
-topic_overview: true
-related: 
   - spirals
   - nature
+topic_overview: true
+related: 
   - sequences
   - fractals
 author: Molly Ireland

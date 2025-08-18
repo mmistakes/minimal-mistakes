@@ -8,6 +8,7 @@ related:
  - colouring
  - angles
  - art
+ - patterns
 nurseries:    
 author: Molly Ireland
 sub_date: 2025-08-07

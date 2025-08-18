@@ -1,13 +1,11 @@
 ---
 title: "Shapes in 2D"
 topics:
-  - shapes
-  - triangles
+  - shape
   - circles
   - 2D
 related: 
-  - area
-  - triangle
+  - 
 nurseries: Group 1
 author: Milly McGowan, Molly Ireland
 sub_date: 2025-08-01

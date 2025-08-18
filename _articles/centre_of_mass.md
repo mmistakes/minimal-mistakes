@@ -2,10 +2,10 @@
 title: "Centre of Mass"
 topics: 
   - building
+  - ramps
 topic_overview: true
 related: 
   - gravity
-  - ramps
 author: Molly Ireland
 sub_date: 2025-07-02
 header:

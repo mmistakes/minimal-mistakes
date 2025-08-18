@@ -2,10 +2,11 @@
 title: "Melting Ice"
 topics: 
   - surface area
+  - experimenting
+  - water
 topic_overview: true
 related: 
   - volume
-  - ice
 author: Lexie Newbery, Molly Ireland
 nurseries:  Group 1 
 sub_date: 2025-08-05

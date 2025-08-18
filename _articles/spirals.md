@@ -2,10 +2,11 @@
 title: "Spirals"
 topics: 
   - spirals
+  - nature
+  - patterens in nature
 topic_overview: true
 related: 
   - fibonacci
-  - nature
 author: Molly Ireland
 sub_date: 2025-07-02
 header:
