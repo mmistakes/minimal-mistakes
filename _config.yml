@@ -24,11 +24,7 @@ title                    : "ink's devlog"
 title_separator          : "|"
 subtitle                 : "처음부터 시작하는 개발공부" # site tagline that appears below site title in masthead
 name                     : "ink"
-<<<<<<< HEAD
 description              : "ink의 블로그입니다."
-=======
-description              : "2025/08/16 ing"
->>>>>>> c4b6cfd3534386aa17670497ec224b1f1c4ee3d2
 url                      : "jeong1nk.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
