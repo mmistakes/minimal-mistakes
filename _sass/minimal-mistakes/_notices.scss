@@ -74,36 +74,42 @@
 
 /* Default notice */
 
-.notice {
+.notice,
+.markdown-alert {
   @include notice($light-gray);
 }
 
 /* Primary notice */
 
-.notice--primary {
+.notice--primary,
+.markdown-alert-important {
   @include notice($primary-color);
 }
 
 /* Info notice */
 
-.notice--info {
+.notice--info,
+.markdown-alert-note {
   @include notice($info-color);
 }
 
 /* Warning notice */
 
-.notice--warning {
+.notice--warning,
+.markdown-alert-warning {
   @include notice($warning-color);
 }
 
 /* Success notice */
 
-.notice--success {
+.notice--success,
+.markdown-alert-tip {
   @include notice($success-color);
 }
 
 /* Danger notice */
 
-.notice--danger {
+.notice--danger,
+.markdown-alert-caution {
   @include notice($danger-color);
 }
