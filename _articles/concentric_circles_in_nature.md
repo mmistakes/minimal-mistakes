@@ -55,20 +55,3 @@ One of the nursery practitioners took some photos of the ripples made in the wat
 {% include figure image_path="/assets/img/child_pointing_to_splash.jpeg" alt="A photo of a child pointing at ripples in a photo of a rock splash." title="A child pointing to the ripples in the water" %}
 
 If the children wanted to, they could experiment more with making concentric circle ripples. They could try repeatedly dipping a circular object into a tub of water and seeing the waves form. To read more about experiments with ripples, you can read our article on [ripples]({{site.baseurl}}/articles/ripples).
-
-## Making Concentric Circles
-Inspired by their discussion about concentric circles, the nursery practitioners encouraged the children to create some concentric circles. Some of their discussion and results are given below. 
-
-Teacher: **What do we have on the floor?**
-<br>***“Circle”***
-<br>***“One”***
-<br>Teacher: **Does a circle have a centre point?**
-<br>***“There”*** A child takes a rock and places it at the centre of the circle
-<br>Teacher: **Is it a concentric circle?** 
-<br>This got a mixture of answers, some yes and some no. The children who said no, said the circle wasn’t a concentric circle ***“because only one circle”***. 
-<br> Teacher: **What could we do to make it a concentric circle?**
-<br>***“Put more there”***
-
-The children then worked to add more circles inside the first one to create a set of concentric circles. 
-
-{% include figure image_path="/assets/img/measuring_the_diameter.jpeg" alt="A photo of children measuring the diameter of the concentric circles they have made." title="Making concentric circles" %}
