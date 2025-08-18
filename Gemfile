@@ -4,4 +4,6 @@ gemspecs
 gem "minimal-mistakes-jekyll"
 gem 'tzinfo'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+#gem "webrick", "~> 1.9"
+
 gem "webrick", "~> 1.9"
