@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "KOMPLEK SUARA"
+title_separator          : "Media Informasi & Diskusi"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "komplek Suara"
+description              : "Media Informasi & Diskusi"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "KOMPLEK SUARA"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "KOMPLEK SUARA adalah ruang kreatif yang hadir sebagai wadah untuk menyalurkan ide, gagasan, dan ekspresi dalam berbagai bentuk suara—baik itu tulisan, karya seni, diskusi, hingga konten digital. Kami percaya bahwa setiap suara memiliki kekuatan untuk menginspirasi perubahan, membuka wawasan, dan menghubungkan manusia dengan perspektif yang lebih luas."
+  location         : "Masjid/Perpustakaan Nurul Iman, Tagangser Daya, Pasean, Pamekasa, Jawa Timur, 69356"
   email            :
   links:
     - label: "Email"
