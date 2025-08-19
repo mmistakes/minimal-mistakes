@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 141 - Text to Array"
-date: 2025-08-20
+date: 2025-08-19
 categories:
   - Article
   - PowerPlatformTip
