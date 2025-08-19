@@ -117,10 +117,10 @@ analytics:
 # Site Author
 author:
   name             : "ink"
-  avatar           : "/assets/images/2023-09-15 224850.jpg"
+  avatar           : "/assets/images/2023-09-15 224850.png"
   bio              : "연습중입니다."
   location         : "South Korea"
-  email            :
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -140,6 +140,8 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+  #sidebar:
+    #nav: "docs"
 
 # Site Footer
 footer:
@@ -162,7 +164,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2025"
+
+
 
 
 # Reading Files
@@ -330,7 +334,14 @@ defaults:
       share: true
       related: true
       show_date: true
-      
+
+      sidebar_main: true
+      sidebar:
+          nav: "docs"
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fa-regular fa-font-awesome"
+
       
 date_format: "%Y-%m-%d"
 

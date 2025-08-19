@@ -6,21 +6,27 @@ main:
     url: /tags/
   - title: "Search"
     url: /search/
+  - title: "Aboutme"
+    url: /aboutme/
 
 docs:
-  - title: "대목차1"
+  - title: "PROJECT"
+    use: true 
+    url: /project/
+    category_name: "project"
     children: 
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "OTT선택 테스트"
+        url: /project/choose_ott
+      - title: "식물 분류"
+        url: /project/green
 
-  - title: "대목차2"
+  - title: "STUDY"
+    use: true 
     children: 
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "jekyll"
+        url: /STUDY/jekyll
+      - title: "programming"
+        url: /STUDY/programming
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -29,3 +35,9 @@ docs:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+counts:
+  - title: "CATEGORY"
+    use: true
+  - title: "TAG"
+    use: false
