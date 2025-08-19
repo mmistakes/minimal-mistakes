@@ -117,7 +117,7 @@ analytics:
 # Site Author
 author:
   name             : "ink"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/2023-09-15 224850.jpg"
   bio              : "연습중입니다."
   location         : "South Korea"
   email            :
