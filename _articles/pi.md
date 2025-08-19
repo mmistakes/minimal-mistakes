@@ -9,15 +9,15 @@ related:
 author: Molly Ireland
 sub_date: 2025-07-25
 header:
-  teaser: /assets/img/2_pi_radians.jpeg
-  teaser_alt: An angle of 2 pi radians shown on a grid.
+  teaser: /assets/img/selotape_pi.jpeg
+  teaser_alt: Two images showing a roll of sellotape. In the first image, three pieces of string lie on top of the roll, showing that they are the same length as the diameter. In the second image, the pieces of string are placed around the roll, showing that they nearly equal the length of the circumference.
   teaser_pos: fit
 ---
 Pi ($$\pi$$) is an irrational number that is very important in maths, especially in the maths of circles. 
 
 An irrational number is a number that cannot be neatly expressed as a fraction; this means that it goes on forever. This means that $$\pi$$ has an infinite number of digits. 	
 
-In maths $$\pi$$ is a very important number because of its links to circles. Both the circumference and the area of a circle are calculated using $$\pi$$; the equations for this are given below. 
+In maths $$\pi$$ is so important because of its links to circles. Both the circumference and the area of a circle are calculated using $$\pi$$; the equations for this are given below. 
 
 \begin{equation}
 \text{area }= \text{ radius}^{2}\times \pi
@@ -33,14 +33,16 @@ From the first equation, we can learn that $$2\times \pi$$ is the number of meas
 
 {% include figure image_path="/assets/img/radius_pi_comparison _to_circumference.jpeg" alt="Straight lines on a grid. There is one red straight line at the top, which is the length of the circumference of a circle with a radius of three. Below, on separate lines, are six black lines representing the length of the radius. The start of one line is in line with the end of the previous line." title="The circumference is just over six times the length of the radius" %}
 
-Children could explore the ratio between the radius of a circle and the circumference by wrapping pieces of string the same length as the radius of a circle around the outside of the circle. They should find that they need just more than $$6$$ for each different circle, and that this is the same no matter what size the circle is. An example of this is shown with a roll of selotape below, where lengths of the diameter (twice the radius) have been used. Just over three copies of the diameter are needed to get all the way around the circumference of the roll.
-
+Children could explore the ratio between the radius of a circle and the circumference by wrapping pieces of string the same length as the radius of a circle around the outside of the circle. They should find that they need just more than $$6$$ for each different circle, and that this is the same no matter what size the circle is. Similarly if they use sting the same length as the diameter, they should find that they need just more than $$3$$ pieces to go round the circle. Some examples of this from different nurseries are given below. 
 {% include figure image_path="/assets/img/selotape_pi.jpeg" alt="Two images showing a roll of sellotape. In the first image, three pieces of string lie on top of the roll, showing that they are the same length as the diameter. In the second image, the pieces of string are placed around the roll, showing that they nearly equal the length of the circumference." title="The circumference is just over three times the length of the diameter" %}
 
-Pi can also be used to help measure angles. Instead of measuring angles with degrees, we can measure them with radians. Radians are another measurement of angle given in terms of pi. One radian is the angle we get from travelling the length of a radius around the circle. An image showing a measurement of one radian can be shown below. 
+***“Three bits of string go round”***
+{% include figure image_path="/assets/img/comparing_lengths_of_string.jpeg" alt="A child comparing some lengths of string" title="Comparing lengths of string" %}
 
-{% include figure image_path="/assets/img/one_radian.jpeg" alt="A circle on a grid with an angle of one radian shown." title="One radian" %}
+Pi can also be used to help measure angles. Instead of measuring angles in degrees, we can measure them in radians. Radians are another measurement of angle given in terms of pi. One radian is the angle we get from travelling the length of a radius around the circle. An image showing a measurement of one radian can be shown below. 
+
+{% include figure image_path="/assets/img/one_radian.jpeg" alt=" A circle on a grid with an angle of one radian shown." title="One radian" %}
 
 In a full circle, there are $$2\pi$$ radians. This is shown in the image below. 
 
-{% include figure image_path="/assets/img/2_pi_radians.jpeg" alt="An angle of 2 pi radians shown on a grid." title="2 pi radians" %}
+{% include figure image_path="/assets/img/2_pi_radians.jpeg" alt= "An angle of 2 pi radians shown on a grid." title="2 pi radians" %}

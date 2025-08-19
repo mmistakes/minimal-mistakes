@@ -46,3 +46,13 @@ Tower Bridge is a bascule bridge where two parts of the centre of the bridge lif
 {% include figure image_path="/assets/img/tower_bridge_unsplash_and_millenium_bridge_pixabay.jpeg" alt=" Two images, one of Tower Bridge (sourced from unsplash) and one of the Gateshead Millennium Bridge (sourced from pixabay). In the image of Tower Bridge, the bridge is parted and a ship is passing through." title=" The Tyne Bridge and the Gateshead Millennium Bridge" %}
 
 The River Tyne Swing Bridge is an example of a swing bridge. These types of bridges move horizontally so that a section of the bridge points parallel to the river, and ships can move past. Children could spend some time categorising the types of bridges into groups and thinking about the different purposes of each bridge. Some bridges cross water, and some cross traffic; some bridges transport people, others transport trains, and some bridges let cars and people cross at the same time.  Bridges are designed for specific purposes; for example, the River Tyne Swing Bridge could, in theory, allow a ship of any height to pass through, whereas the Millennium Bridge can only let ships of a certain height underneath, as the walkway only lifts up and doesn’t split. Thinking about the similarities and differences between types of bridges and the different categories they can be sorted into might be a fun comparison exercise for children to try.
+
+In one nursery, the children became particularly interested in Tower Bridge and spent some time learning about the mechanisms that make the bridge move and also making their own imitations of the bridge. Some of their comments and models can be seen below. 
+
+A: ***"It's got a bit that opens and closes"***
+<br>Teacher: Why does it do this?
+<br>B: ***"To let the boats through"***
+
+{% include figure image_path="/assets/img/learning_about_bridges.jpeg" alt=" Three images. In the first image, the children look at pictures of different bridges. In the second is a piece of cardboard a child has folded to mimic the motion of Tower Bridge. In the third image, a child has built a model of Tower Bridge out of wooden blocks." title=" Learning about bridges" %}
+
+The children were intrigued by how the bridge worked and so watched some videos of the mechanism. Learning about the engine that powers the bridge led them to start investigating cogs. 
