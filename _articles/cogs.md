@@ -47,7 +47,7 @@ If we had a 5-toothed cog and a 12-toothed cog, their lowest common multiple wou
 
 {% include figure image_path="/assets/img/four_cog_system.jpeg" alt=" Three cogs with 4,5 and 6 teeth respectively, all connected to just one central cog with 12 teeth." title= "Four cog system" %}
 
-In the table below, we can see the number of rotations it would take for the system of 4 cogs shown above to be facing upright at the same time. We can see that the smaller the cog, the more turns it will complete. It could be fun for the children to learn about these ratios by assigning a group of children to each cog. Each time thier cog is facing upright, the children could shout the colour of their cog, this way, the children could hear the comparitive speeds of the cogs and when their positions align. 
+In the table below, we can see the number of rotations it would take for the system of 4 cogs shown above to be facing upright at the same time. We can see that the smaller the cog, the more turns it will complete. It could be fun for the children to learn about these ratios by assigning a group of children to each cog. Each time their cog is facing upright, the children could shout the colour of their cog. This way, the children could hear the comparative speeds of the cogs and when their positions align. 
 
 | Number of Teeth | Number of Rotations Until Whole System is Upright Again |
 |-----------------|---------------------------------------------------------|
