@@ -8,7 +8,7 @@ related:
   - colouring
   - triangles
 author: Molly Ireland
-sub_date: 2025-08-20
+sub_date: 2025-08-21
 header:
   teaser: /assets/img/tri_faces.jpeg
   teaser_alt: Six images of a hexagon like shape, there are two images where the patten on the surface is green and also two where it is purple and two where it is blue. For each colour there is one image of the pattern being a circle and one image of the pattern being a split circle.
