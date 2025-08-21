@@ -148,3 +148,4 @@ If we were to roll two biased dice with the probabilities as given in the table 
 
 
 [should probably write an article on the basics of probability]:#
+[could also add a little bit about how these graphs do not always look like this for small numbers of rolls]:#
