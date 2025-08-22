@@ -19,7 +19,7 @@ Dice are a great tool for learning about probability and distributions. Here are
 
 ## Investigating Fair and Unfair Dice
 
-If a die is fair, we can roll it multiple times and record how many times each number is rolled in a [bar chart]({{site.baseulr}}/articles/types_of_graphs/#bar-charts). For a fair die and a large number of rolls, the bars should be approximately equal. In the graph below, we have simulated rolling a fair die 10,000 times and counted the number of times each value was rolled. Below the graph is a table giving the probability of rolling each number using the fair die.
+To test if a die is fair, we can roll it multiple times and record how many times each number is rolled in a [bar chart]({{site.baseulr}}/articles/types_of_graphs/#bar-charts). For a fair die and a large number of rolls, the bars should be approximately equal. In the graph below, we have simulated rolling a fair die 10,000 times and counted the number of times each value was rolled. Below the graph is a table giving the probability of rolling each number using the fair die.
 
 {% include figure image_path="/assets/img/fair_die_roll.jpeg" alt=" A bar chart with relatively equal bars showing the number of times each number was rolled on a fair die." title= " Rolling a fair die" %}
 
@@ -146,6 +146,15 @@ If we were to roll two biased dice with the probabilities as given in the table 
 </details>
 <p></p>
 
+## In the Classroom
+
+In the classroom, children can experiment with rolling a die and counting the number of times each value appears, to see if they think the die is fair or not. The graphs below are 6 experiments of 20 rolls on the same die; in this case, the die was simulated to be fair. These could be the results we would get if 6 children tested the same die with 20 rolls each. 
+
+{% include figure image_path="/assets/img/6_tests.jpeg" alt=" 6 different bar charts showing a simulation of rolling a fair dice 20 times" title= "6 children's experiments" %}
+
+Some of these graphs might make us think that the die is not fair, for example, in the bottom right graph, the die seems to be biased toward the number 4. A big part of statistics is determining how unlikely a result is, for instance, how likely are we to get the results in the bottom right graph if the die really is fair. Whilst this can involve some more complex maths (called **hypothesis testing**), the message behind it is that statisticians have to be aware that we can get unlikely results, such as the die appearing biased even when the die is fair. Performing more rolls of the die can make the behaviour of the die more obvious, so the children could discuss how many rolls they think are needed and how likely they think their results are if the die is fair.
 
 [should probably write an article on the basics of probability]:#
-[could also add a little bit about how these graphs do not always look like this for small numbers of rolls]:#
+
+
+
