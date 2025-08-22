@@ -43,7 +43,7 @@ The butterfly does not have rotational symmetry, because if we spin it round all
 
 There are shapes that have rotational symmetry but not reflectional symmetry, such as the icon on the Isle of Man flag, which has rotational symmetry of order three.
 
-{% include figure image_path="/assets/img/isle_of_man.png" alt="The Isle of Man flag: A shape with rotational, but not reflectional, symmetry" title="Isle of Man flag" %}
+{% include figure image_path="/assets/img/isle_of_man.jpeg" alt="The Isle of Man flag: A shape with rotational, but not reflectional, symmetry" title="Isle of Man flag" %}
 
 These sorts of shapes are not easy to find in nature.
 
