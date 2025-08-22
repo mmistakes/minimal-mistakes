@@ -55,4 +55,4 @@ A: ***"It's got a bit that opens and closes"***
 
 {% include figure image_path="/assets/img/learning_about_bridges.jpeg" alt=" Three images. In the first image, the children look at pictures of different bridges. In the second is a piece of cardboard a child has folded to mimic the motion of Tower Bridge. In the third image, a child has built a model of Tower Bridge out of wooden blocks." title=" Learning about bridges" %}
 
-The children were intrigued by how the bridge worked and so watched some videos of the mechanism. Learning about the engine that powers the bridge led them to start investigating cogs. 
+The children were intrigued by how the bridge worked and so watched some videos of the mechanism. Learning about the engine that powers the bridge led them to start investigating cogs, you can read about this in our article [cogs]({{site.baseulr}}/articles/cogs). 

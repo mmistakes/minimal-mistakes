@@ -24,3 +24,9 @@ We can think of the two “red, blue” dots as one unit. By stacking these unit
 We can also check whether something is a pattern without using a unit of repeat. If we are able to lay a copy of the pattern over itself (imagine having one on tracing paper), we could slide this pattern along until the two copies match up. 
 
 Patterns have **translational symmetry**, meaning if we slide a copy of a pattern along by a fixed amount, it will look the same as it did before. The other types of symmetry are **rotational symmetry** and **reflective symmetry**. Both of these types of symmetry are discussed in our article on [symmetry]({{site.baseurl}}/articles/symmetry/).  
+
+Below, is an example of a child at a different nursery making a pattern. This pattern, made using different colored beads, is an ABC pattern. 
+
+{% include figure image_path="/assets/img/ABC_pattern.jpeg" alt="An ABC pattern made using yellow, orange and green beads on a string." title="A pattern with beads" %}
+
+
