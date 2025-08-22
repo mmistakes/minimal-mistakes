@@ -11,7 +11,7 @@ related:
 author: Molly Ireland
 sub_date: 2025-08-21
 header:
-  teaser: /assets/img/dice_teaser.jpeg
+  teaser: /assets/img/dice_teaser.png
   teaser_alt: Two dice showing a 6 and a 3 on a pale green background.
   teaser_pos: fit
 ---
