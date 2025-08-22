@@ -43,7 +43,7 @@ To make a hexahexaflexagon, you again need to draw some equilateral triangles on
 
 {% include figure image_path="/assets/img/folding_hex.jpeg" alt=" Two images showing how to colour the faces of a hexahexaflexagon before it is folded." title= " Colouring the faces of a hexahexaflexagon" %}
 
-To see a demonstration of how to use flexagons, you can view the youtube video below.
+To see a demonstration of how to use flexagons, you can view the video below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UOMPE5R8J9Y?si=fu8ol89oR2BfLokl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p><p/>
