@@ -68,9 +68,9 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : true
-search_full_content      : true
-search_provider          : google
+search                   : #true
+search_full_content      : #true
+search_provider          : #google
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
@@ -105,9 +105,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal",  "custom"
   google:
-    tracking_id          :
+    tracking_id          : G-LCFSK48QYT
     anonymize_ip         : # true, false (default)
 
 
