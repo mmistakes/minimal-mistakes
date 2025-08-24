@@ -1,11 +1,18 @@
 ---
 layout: single
-title: "About Me"
+title: "I am Minh Dawson Vu"
 permalink: /about/
 author_profile: true
 ---
 
-I'm **Minh Dawson Vu**, an **Automation Test Engineer** with more than **6 years of experience** in automation testing. I specialize in **mobile & web** test automation, and seamlessly integrate automated tests into **CI/CD pipelines**. I also have strong skills in **performance testing** with K6. Currently, I am a **Team Lead** (managing 10 members), as well as a **trainer and mentor**.
+An **Automation Test Engineer** with more than **6 years of experience** in automation testing.  
+I specialize in **mobile & web** test automation, and seamlessly integrate automated tests into **CI/CD pipelines**.  
+I also have strong skills in **performance testing** with K6.  
+Currently, I am a **Team Lead** (managing 10 members), as well as a **trainer and mentor**.
 
+---
 
-<!-- Bạn có thể viết thêm về bản thân, kinh nghiệm, mục tiêu chia sẻ blog, v.v... -->
+## Certificates
+
+- ![ISTQB Logo](https://www.istqb.org/images/istqb-logo-80.png) [ISTQB Certified Tester Foundation Level](https://www.istqb.org/certification-path-root/foundation-level-certification.html)
+- ![K6 Logo](https://k6.io/img/favicon-32x32.png) [K6 Performance Testing Certificate](https://k6.io/certification/your-certificate-link)
