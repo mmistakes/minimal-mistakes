@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Minh Dawson Vu"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/HAT00815.jpg"
   bio              : "I am an **Automation Test Engineer**."
   location         : "VietNam"
   email            :
