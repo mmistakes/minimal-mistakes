@@ -58,6 +58,16 @@ layout: splash
 <div class="research-grid">
 
   <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/Revisiting_CroPA.png" alt="Paper 1">
+    <h3>Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in Vision-Language Models</h3>
+    <p>In this study, we conduct a comprehensive reproducibility study of "An Image is Worth 1000 Lies: Adversarial Transferability Across Prompts on Vision-Language Models" validating the Cross-Prompt Attack (CroPA), and also proposing several key improvements to the framework.</p>
+    <div class="research-links">
+      <a href="https://openreview.net/forum?id=5L90cl0xtf" target="_blank">Paper</a>
+      <a href="https://github.com/Swadesh06/Revisting_CroPA" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/ReCUDA.png" alt="Paper 1">
     <h3>[Re] CUDA: Curriculum of Data Augmentation for Long‐tailed Recognition</h3>
     <p>Using classwise degree of data augmentation to tackle class imbalance in long tailed dataset</p>
