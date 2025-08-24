@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/HAT00815.jpg"
   bio              : "**Automation Test Engineer**"
   location         : "Viet Nam"
-  email            : "minhvu890yahoo@gmail.com"
+  # email            : "minhvu890yahoo@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
