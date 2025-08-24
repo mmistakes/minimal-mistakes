@@ -14,5 +14,5 @@ Currently, I am a **Team Lead** (managing 10 members), as well as a **trainer an
 
 ## Certificates
 
-- ![ISTQB Logo](https://www.it-training.pro/wp-content/uploads/2020/02/ISTQB.png) [ISTQB Certified Tester Foundation Level](https://www.istqb.org/certification-path-root/foundation-level-certification.html)
-- ![K6 Logo](https://image.pngaaa.com/270/5049270-middle.png) [K6 Performance Testing Certificate](https://k6.io/certification/your-certificate-link)
+- [ISTQB Certified Tester Foundation Level](https://www.istqb.org/certification-path-root/foundation-level-certification.html)
+- [K6 Performance Testing Certificate](https://k6.io/certification/your-certificate-link)
