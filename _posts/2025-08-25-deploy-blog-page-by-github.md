@@ -14,14 +14,14 @@ This topic will help you deploy your blog site (FREE)
 
 ### Init github repository
 *Choose 1 of those options*
-  1. Fork my repository
-  2. Clone my repository
+  1. Fork [my repository](https://github.com/minhvl1/minimal-mistakes)
+  2. Clone [my repository](https://github.com/minhvl1/minimal-mistakes)
 
 ### Deploy github page
   1. After push or fork repo, github page is auto deploy 
   2. in: `Setting` -> `Pages`
   3. `Deploy from branch` -> `master`
-    *If you haven't own custom domain, your github url like: github.minhvl1.io*
+    *If you haven't own custom domain, your github url like:* [https://github.minhvl1.io](https://github.minhvl1.io)
 
   4. Add custom domain(optinal)
     * Config your CNAME point to your github page url
