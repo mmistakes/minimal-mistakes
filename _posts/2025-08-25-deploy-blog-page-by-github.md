@@ -33,6 +33,7 @@ This topic will help you deploy your blog site (FREE)
   2. Example naming convention: 
   `YYYY-mm-dd-title.md`
   `2025-08-25-deploy-blog-page-by-github.md`
+  
 ### Custom author
   1. Custom in `_config.yml`
 
