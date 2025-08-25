@@ -10,7 +10,7 @@ tags:
 This topic will help you deploy your blog site (FREE)
 
 * Own your custom domain(paid), If not use github page domain default like: github.minhvl1.io 
-* Use minimal-mistake themes: https://mademistakes.com/
+* Use minimal-mistake themes: [Here](https://mademistakes.com/)
 
 ### Init github repository
 *Choose 1 of those options*
@@ -23,7 +23,7 @@ This topic will help you deploy your blog site (FREE)
   3. `Deploy from branch` -> `master`
      <img width="2332" height="1202" alt="image" src="https://github.com/user-attachments/assets/475f5485-d4f0-4e75-844d-790a09d81ff0" />
 
-      * If you haven't own custom domain, your github url like:* [https://github.minhvl1.io](https://github.minhvl1.io)
+      * If you haven't own custom domain, your github url like: [https://username.github.io/yourepository](https://minhvl1.github.io//minimal-mistakes)
 
   5. Add custom domain(optinal)
       Config your CNAME point to your github page url*
