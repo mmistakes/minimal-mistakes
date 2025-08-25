@@ -29,7 +29,10 @@ This topic will help you deploy your blog site (FREE)
     * Enforce HTTPS
 
 ### Create post
-  1. Create `.md` file in `_posts` folder
+  1. Create `.md` post file in `_posts` folder
+  2. Example naming convention: 
+  `YYYY-mm-dd-title.md`
+  `2025-08-25-deploy-blog-page-by-github.md`
 ### Custom author
   1. Custom in `_config.yml`
 
