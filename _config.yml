@@ -130,7 +130,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/BlueShine.in.sky?locale=vi_VN"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/minhvl1"
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/BlueShine.in.sky?locale=vi_VN"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/minhvl1"
