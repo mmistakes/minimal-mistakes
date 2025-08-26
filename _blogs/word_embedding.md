@@ -55,8 +55,7 @@ Now, we count the number of times each word occurs in each document. In Document
 `{ the, cat, sat, on, hat, dog, ate, and }`
 
 so the count vector matrix is :-
-
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding1.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding1.png)
 
 Now, a column can also be understood as word vector for the corresponding word in the matrix M. For example, the word vector for ‘cat’ in the above matrix is [1,1] and so on. Here, the rows correspond to the documents in the corpus and the columns correspond to the tokens in the dictionary. The second row in the above matrix may be read as — Document 2 contains ‘hat’: once, ‘dog’: once and ‘the’ thrice and so on.
 
@@ -87,7 +86,7 @@ Words co-occurrence matrix describes how words occur together that in turn captu
 
 Letting count(w(next)|w(current)) represent how many times word *w(next)* follows the word w(current), we can summarize co-occurrence statistics for words “a” and “penny” as:... 
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding2.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding2.png)
 
 The above table shows that “a” is followed twice by “penny” while words “earned”, “saved”, and “wise” each follows “penny” once in our corpus. Thus, “earned” is one out of three times probable to appear after “penny.” The count shown above is called bigram frequency; it looks into only the next word from a current word. Given a corpus of N words, we need a table of size NxN to represent bigram frequencies of all possible word-pairs. Such a table is highly sparse as most frequencies are equal to zero. In practice, the co-occurrence counts are converted to probabilities. This results in row entries for each row adding up to one in the co-occurrence matrix.
 
@@ -99,7 +98,7 @@ And, a single word, instead of being represented in N dimensions will be represe
 
 So, what PCA does at the back is decompose Co-Occurrence matrix into three matrices, U,S and V where U and V are both orthogonal matrices. What is of importance is that dot product of U and S gives the word vector representation and V gives the word context representation.
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding3.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding3.png)
 
 ---
 
@@ -137,11 +136,11 @@ So one approach is to treat {“The”, “cat”, ’over”, “the’, “pud
 Let’s say, for example, we represent the word “python” as one-hot representation. Here, the vocabulary which is a set of words is five words (nlp, python, word, ruby, one-hot). Then the following vector expresses the word “python”:
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding4.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding4.png)
 
-Although one-hot representation is simple, there are weak points: it is impossible to obtain meaningful results with arithmetic between vectors. Let’s say we take an inner product to calculate similarity between words. In one-hot representation, different words are 1 in different places and the other elements are 0. Thus, the result of taking the dot product between the different words is 0. This is not a useful result.... 
+Although one-hot representation is simple, there are weak points: it is impossible to obtain meaningful results with arithmetic between vectors. Let’s say we take an inner product to calculate similarity between words. In one-hot representation, different words are 1 in different places and the other elements are 0. Thus, the result of taking the dot product between the different words is 0. This is not a useful result....
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding5.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding5.png)
 
 Another weak point is the vector tend to become very high dimension. Since one dimension is assigned to one word, as the number of vocabularies increases, it becomes very high dimension.
 
@@ -158,13 +157,13 @@ We breakdown the way this model works in these steps:
 - Error between output and target is calculated and propagated back to re-adjust the weights.
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding6.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding6.png)
 
 **CBOW Architecture**
 
 The loss function used is Cross entropy.
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding7.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding7.png)
 
 Formula for cross entropy
 
@@ -192,7 +191,7 @@ We breakdown the way this model works in these steps:
 - We desire our probabilities generated, yˆ(i), to match the true probabilities, y(i), which also happens to be the one hot vector of the actual words.
 - Error between output and target is calculated and propagated back to re-adjust the weights.
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding8.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding8.png)
 
 One can ask that all the yˆ are same so how will they help?
 
@@ -215,11 +214,11 @@ There are various NLP based tasks where these word embeddings used in deep learn
 We can visualize the learned vectors by projecting them down to 2 dimensions using for instance something like the t-SNE dimensionality reduction technique. When we inspect these visualizations it becomes apparent that the vectors capture some general, and in fact quite useful, semantic information about words and their relationships to one another. It was very interesting when we first discovered that certain directions in the induced vector space specialize towards certain semantic relationships, e.g. male-female, verb tense and even *country-capital* relationships between words, as illustrated in the figure below.
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding9.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding9.png)
 
 This explains why these vectors are also useful as features for many canonical NLP prediction tasks, such as part-of-speech tagging or named entity recognition.
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding10.png" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding10.png)
 
 **t-SNE of Word2Vec**
 
@@ -230,7 +229,7 @@ As we can see all the similar words are in together. We can perform some amazing
 - Amazing things like woman+king-man = queen `model.most_similar(positive=['woman','king'],negative=['man'],topn=1) queen: 0.508`
 - Probability of a text under the model `model.score(['The fox jumped over the lazy dog'.split()]) 0.21`
 
-<img src="{{ site.baseurl }}assets/images/blogs/word_embedding/word_embedding11.jpg" width="200" height="200" alt="wordemb">
+![wordEmb]({{ site.baseurl }}/assets/images/blogs/word_embedding/word_embedding11.jpg)
 
 ---
 

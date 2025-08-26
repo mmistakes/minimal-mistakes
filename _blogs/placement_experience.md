@@ -4,13 +4,10 @@ layout: single
 permalink: /blogs/placement_experience/
 ---
 
-
-# Placement Experience
-
 **Wednesday, May 24, 2017**  
 *Tags: Experience*
 
-<img src="{{ site.baseurl }}assets/images/blogs/placement_experience/placement_experience.jpg" width="200" height="200" alt="Placement experience">
+![Placements]({{ site.baseurl }}/assets/images/blogs/placement_experience/placement_experience.jpg)
 
 Placement season is like GOT, you never know what will happen in the next episode. Sometimes it’s quite random. But if you apply pragmatic approach you might find some spoilers :P
 
