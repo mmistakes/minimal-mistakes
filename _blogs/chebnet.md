@@ -11,7 +11,8 @@ As a part of this blog series, this time we’ll be looking at a spectral convol
 As mentioned in our previous blog on [A Review : Graph Convolutional Networks (GCN)](https://dsgiitr.com/blogs/gcn/), the spatial convolution and pooling operations are well-defined only for the Euclidean domain. Hence, we cannot apply the convolution directly on the irregular structured data such as graphs.
 
 The technique proposed in this paper provide us with a way to perform convolution on graph like data, for which they used convolution theorem. According to which, Convolution in spatial domain is equivalent to multiplication in Fourier domain. Hence, instead of performing convolution explicitly in the spatial domain, we will transform the graph data and the filter into Fourier domain. Do element-wise multiplication and the result is converted back to spatial domain by performing inverse Fourier transform. Following figure illustrates the proposed technique:
-![Chebnet2]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog2.jpg)
+
+![Chebnet2]({{ site.baseurl }}/assets/images/blogs/chebnet/Chebnet_blog2.jpg)
 
 ## But How to Take This Fourier Transform?
 As mentioned we have to take a fourier transform of graph signal. In spectral graph theory, the important operator used for Fourier analysis of graph is the Laplacian operator. For the graph G=(V,E), with set of vertices V of size n and set of edges E. The Laplacian is given by
@@ -77,42 +78,43 @@ The filtering operation can now be written as $y=g_θ(Δ)x=\sum_{k=0}^{K-1}θ_kT
 In case of images, the pooling operation consists of taking a fixed size patch of pixels, say 2x2, and keeping only the pixel with max value (assuming you apply max pooling) and discarding the other pixels from the patch. Similar concept of pooling can be applied to graphs.
 
 Defferrard  et  al.  address  this  issue  by using the coarsening phase of the Graclus multilevel clustering algorithm. Graclus’ greedy rule consists, at each coarsening level, in picking an unmarked vertex $i$ and matching it with one of its unmarked neighbors $j$ that maximizes the local normalized cut $Wij(1/di+ 1/dj)$.  The two matched vertices are then marked and the coarsened weights are set as the sum of their weights.  The matching is repeated until all nodes have been explored. This is an very fast coarsening scheme which divides the number of nodes by approximately two from one level to the next coarser level. After coarsening, the nodes of the input graph and its coarsened version are rearranged into a balanced binary tree.  Arbitrarily  aggregating  the  balanced  binary  tree  from bottom to top will arrange similar nodes together. Pooling such a  rearranged  signal  is  much  more  efficient  than  pooling  the original. The following figure shows the example of graph coarsening and pooling.
-![Chebnet3]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog3.jpg)
+
+![Chebnet3]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog3.png)
 
 ## Implementing ChebNET in PyTorch
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog4.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog5.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog4.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog5.png)
 cuda available
 
 # Data Preparation
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog6.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog7.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog6.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog7.png)
 nb edges:  6396
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog8.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog8.png)
 Heavy Edge Matching coarsening with Xavier version
 Layer 0: M_0 = |V| = 976 nodes (192 added), |E| = 3198 edges
 Layer 1: M_1 = |V| = 488 nodes (83 added), |E| = 1619 edges
 Layer 2: M_2 = |V| = 244 nodes (29 added), |E| = 794 edges
 Layer 3: M_3 = |V| = 122 nodes (7 added), |E| = 396 edges
 Layer 4: M_4 = |V| = 61 nodes (0 added), |E| = 194 edges
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog9.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog9.png)
 lmax: [1.3857538, 1.3440963, 1.1994357, 1.0239158]
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog10.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog10.png)
 (55000, 976)
 (5000, 976)
 (10000, 976)
 Execution time: 4.18s
 
 # Model
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog11.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog12.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog13.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog14.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog15.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog16.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog17.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog18.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog19.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog11.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog12.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog13.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog14.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog15.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog16.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog17.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog18.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog19.png)
 Graph ConvNet: LeNet5
 nb of parameters= 2056586
 Graph_ConvNet_LeNet5(
@@ -121,17 +123,17 @@ Graph_ConvNet_LeNet5(
   (fc1): Linear(in_features=3904, out_features=512, bias=True)
   (fc2): Linear(in_features=512, out_features=10, bias=True)
 )
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog20.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog20.png)
 
 # Hyper parameters setting
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog21.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog21.png)
 num_epochs= 20 , train_size= 55000 , nb_iter= 11000
 
 # Training & Evaluation
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog22.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog23.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog24.jpg)
-![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog25.jpg)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog22.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog23.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog24.png)
+![Chebnet]({{ site.baseurl }}/assets/images/blogs/chebnet/ChebNet_blog25.png)
 
 You can find our implementation made using PyTorch at [ChebNet](https://github.com/dsgiitr/graph_nets/blob/master/ChebNet/Chebnet_Blog+Code.ipynb).
 
