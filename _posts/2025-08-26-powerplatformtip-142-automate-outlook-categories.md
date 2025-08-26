@@ -19,6 +19,8 @@ toc: true
 toc_sticky: true
 ---
 
+Tired of manually categorizing your Outlook meetings? This simple tip shows how to use Power Automate to automatically set categories for calendar events. This keeps you organized with almost no effort.
+
 ## 💡 Challenge
 How can you ensure all important meetings in your Outlook calendar are consistently categorized without doing it by hand? Manually adding categories takes time and you might forget sometimes, especially when you have a busy schedule. This can lead to an unorganized calendar.
 
