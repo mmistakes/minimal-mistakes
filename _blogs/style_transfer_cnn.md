@@ -10,9 +10,7 @@ permalink: /blogs/style_transfer_cnn/
 *Monday, Sep 4, 2017 | Tags: Deep Learning, Computer Vision*
 
 
-
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn1.gif" width="200" height="200" alt="stylecnn">
-
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn1.gif)
 ---
 
 We all have used apps like Prisma and Lucid, but ever wondered how these things works? Like we give a photo from our camera roll and select a design to mix both the images and we get a new image which has the content of our input image and style of the design image. In the world of deep learning this is called style transfer.
@@ -21,7 +19,7 @@ Style transfer is the technique of recomposing images in the style of other imag
 
 Here are some examples :
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn2.jpg" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn2.jpg)
 
 Landscape (content) + Scream (style)
 
@@ -38,14 +36,13 @@ CNN is shown to be able to well replicate and optimize these key steps in a unif
 Here is an example of CNN hierarchy from VGG net where shallow layers learns low level features and as we go deeper into the network these convolutional layers are able to represent much larger scale features and thus have a higher-level representation of the image content.
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn3.jpg" width="200" height="200" alt="stylecnn">
-
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn3.jpg)
 ---
 
 ## VGG Network
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn4.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn4.png)
 
 VGG-19 — It consists of 16 layers of convolution and ReLU non-linearity, separated by 5 pooling layers and ending in 3 fully connected layers.
 
@@ -61,8 +58,7 @@ We can construct images whose feature maps at a chosen convolution layer match t
 
 Given a chosen content layer l, the content loss is defined as the Mean Squared Error between the feature map F of our content image C and the feature map P of our generated image Y.
 
-
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn5.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn5.png)
 
 When this content-loss is minimized, it means that the mixed-image has feature activation in the given layers that are very similar to the activation of the content-image. Depending on which layers we select, this should transfer the contours from the content-image to the mixed-image.
 
@@ -79,17 +75,17 @@ If an entry in the Gram-matrix has a value close to zero then it means the two f
 If the feature map is a matrix F, then each entry in the Gram matrix G can be given by:
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn6.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn6.png)
 
 The loss function for style is quite similar to our content loss, except that we calculate the Mean Squared Error for the Gram-matrices instead of the raw tensor-outputs from the layers.
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn7.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn7.png)
 
 As with the content representation, if we had two images whose feature maps at a given layer produced the same Gram matrix we would expect both images to have the same style, but not necessarily the same content. Applying this to early layers in the network would capture some of the finer textures contained within the image whereas applying this to deeper layers would capture more higher-level elements of the image’s style. Gatys et. al found that the best results were achieved by taking a combination of shallow and deep layers as the style representation for an image.
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn8.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn8.png)
 
 We can see that the best results are achieved by a combination of many different layers from the network, which capture both the finer textures and the larger elements of the original image.
 
@@ -100,18 +96,15 @@ We can see that the best results are achieved by a combination of many different
 Using a pre-trained neural network such as VGG-19, an input image (i.e. an image which provides the content), a style image (a painting with strong style elements) and a random image (output image), one could minimize the losses in the network such that the style loss (loss between the output image style and style of ‘style image’), content loss (loss between the content image and the output image) and the total variation loss (which ensured pixel wise smoothness) were at a minimum. In such cases, the output image generated from such a network, resembled the input image and had the stylist attributes of the style image.
 
 
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn9.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn9.png)
 
 The total loss can then be written as a weighted sum of the both the style and content losses.
 
-
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn10.png" width="200" height="200" alt="stylecnn">
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn10.png)
 
 we will minimize our total loss by Adam optimizer. As our loss go down we will go close to our goal of producing a style transfer image Y.
 
-
-<img src="{{ site.baseurl }}assets/images/blogs/style_with_cnn/style_transfer_with_cnn11.gif" width="200" height="200" alt="stylecnn">
-
+![StyleCNN]({{ site.baseurl }}/assets/images/blogs/style_with_cnn/style_transfer_with_cnn11.gif)
 ---
 
 ## Application of Style Transfer
