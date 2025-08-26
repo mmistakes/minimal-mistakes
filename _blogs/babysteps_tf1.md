@@ -10,7 +10,7 @@ permalink: /blogs/babysteps_tf1/
 *Thursday, Jun 1, 2017*  
 *Tags: Deep Learning, NLP*
 
-
+![Babysteps]({{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg)
 <img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" width="200" height="200" alt="babysteps">
 
 > Deep Learning is a Mandate for Humans, Not Just Machines — Andrew Ng
