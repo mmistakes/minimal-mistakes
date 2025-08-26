@@ -5,8 +5,6 @@ permalink: /blogs/babysteps_tf1/
 ---
 
 
-# Baby steps with Tensorflow #1
-
 *Thursday, Jun 1, 2017*  
 *Tags: Deep Learning, NLP*
 

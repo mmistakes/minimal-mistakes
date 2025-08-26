@@ -5,12 +5,8 @@ permalink: /blogs/babysteps_tf2/
 ---
 
 
-
-# Baby steps with Tensoflow #2
-
 *Saturday, Jun 17, 2017 | Tags: Deep Learning, NLP*
-
-<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" width="200" height="200" alt="cnntf">
+![Boosting]({{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg)
 
 ---
 
@@ -33,14 +29,10 @@ Equation of Y in terms of X_data
 Y_data = 0.5 * X_data[:, 0] - 52 * X_data[:, 1] +12*X_data[:, 2] - X_data[:, 3]
 Y_data = Y_data.reshape(-1,1)
 
-text
-
 Now, to start with we need to define Place holders for the data feeding while training. We have seen what placeholders do in the last blog.
 
 x = tf.placeholder(tf.float32, shape=[None, 4])
 y = tf.placeholder(tf.float32, shape = [None,1])
-
-text
 
 Here shape is [None, 4]. What does this mean? It means we can provide any value in place of None. So while feeding we can provide as many examples we want. This is very useful in mini batch training, which we will see in the subsequent blogs. So, basically we feed training data through placeholders.
 
@@ -49,26 +41,23 @@ Now we will define weight variable and intercept term. This will be tf.Variable 
 W = tf.Variable(tf.random_normal(), name="Weight")
 b = tf.Variable(tf.random_normal(), name="Intercept")
 
-text
 
 Next we generate our hypothesis. Read more about more matrix functions like matmul here.
 
 hypothesis = tf.matmul(x, W) + b
 
-text
 
 Now we will define our loss function. We will be using RMSE (reduced mean squared error) loss.
 
 Loss = tf.reduce_mean(tf.square(y - hypothesis))
 
-text
 
 Next we will use Stochastic Gradient Optimizer to minimize this loss. If you don’t know how this optimization is carried out, I strongly suggest you to read this great blog on gradient descent optimization.
 
 optimizer = tf.train.GradientDescentOptimizer(learning_rate= 0.0001)
 train = optimizer.minimize(Loss)
 
-text
+
 
 Now as we’ve seen in previous blog, tensorflow is Static graph. We need to start Tensorflow session to pass data through this graph.
 
@@ -76,8 +65,6 @@ sess = tf.Session()
 
 Initialize all the variables
 sess.run(tf.global_variables_initializer())
-
-text
 
 Now everything is set. We need to feed data to the graph and find the optimal values for W and b
 
@@ -98,7 +85,7 @@ Here is how you import data using tensorflow. We have two files iris_training.cs
 iris_training = "iris_training.csv"
 iris_testing = "iris_test.csv"
 
-text
+
 
 Now to import data from these csv. More about reading data in tensorflow here.
 
@@ -114,7 +101,6 @@ X_test_data = testing_set.data
 Y_test = testing_set.target
 Y_test[Y_test > 1] = 1
 
-text
 
 Again it’s the same as before. Define placeholders, variables, Hypothesis, Loss function and Optimizer.
 
@@ -136,7 +122,7 @@ We will define an optimizer (Gradient Descent Optimizer)
 optimizer = tf.train.GradientDescentOptimizer(learning_rate= 0.001)
 train = optimizer.minimize(cost)
 
-text
+
 
 This all steps are self explaining. Here loss in categorical cross entropy loss, you can read about it here
 
@@ -148,7 +134,7 @@ predicted = tf.cast(hypothesis > 0.5, dtype= tf.float32)
 #Define accuracy
 accuracy = tf.reduce_mean(tf.cast(tf.equal(predicted, Y), dtype = tf.float32))
 
-text
+
 
 Let’s train:
 
@@ -158,7 +144,7 @@ _, acc_test = sess.run([predicted, accuracy], feed_dict = {X: X_test_data, Y: Y_
 
 print(acc_test)
 
-text
+
 
 Let’s check the result with sklearn Logistic Regression
 
@@ -173,7 +159,7 @@ logistic_regression.fit(X_train_data, Y_train)
 
 print("test accuracy using sklearn is ", logistic_regression.score(X_test_data, Y_test))
 
-text
+
 
 Both accuracies are comparable, but sklearn is surprisingly fast. I have to look into it.
 
