@@ -230,7 +230,7 @@ title: Home
 </style>
 <div class="intro-wrapper">
   <div class="announcement-box">
-    📢 Latest: Srishti Exhibition is live at SAC Ground Floor!
+    📢 Latest: Revisiting CroPA wins BEST PAPER AWARD at MLRC 2025!
   </div>
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
