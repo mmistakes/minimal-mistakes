@@ -138,7 +138,7 @@ With minimal efforts, we managed to reach an accuracy of 99% which is not that b
 
 See the results of our Convolutional Neural Network on some validation examples:
 
-![CNNwTF]({{ site.baseurl }}/assets/images/blogs/cnn_with_tf/cnn_with_tf8.png)
+![CNNwTF]({{ site.baseurl }}/assets/images/blogs/cnn_with_tf/cnn_with_tf9.png)
 
 #### MNIST Sample Classifications
 
