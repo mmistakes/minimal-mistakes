@@ -139,7 +139,7 @@ author:
       # url: "https://instagram.com/"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourlinkedin"
+      url: "https://www.linkedin.com/in/dawsonvu/"
 
 # Site Footer
 footer:
@@ -164,7 +164,7 @@ footer:
       # url:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourlinkedin"
+      url: "https://www.linkedin.com/in/dawsonvu/"
   since: "2019"
 
 
