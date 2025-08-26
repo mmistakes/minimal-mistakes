@@ -11,14 +11,12 @@ permalink: /blogs/babysteps_tf1/
 *Tags: Deep Learning, NLP*
 
 ![Babysteps]({{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg)
-<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" width="200" height="200" alt="babysteps">
 
 > Deep Learning is a Mandate for Humans, Not Just Machines — Andrew Ng
 
 Yes, Deep learning is a next big thing. Yes, AI is changing the world. Yes, It will take over your jobs. All fuss aside, you need to sit down and write a code on your own to see things working. Practical knowledge is as much important as Theoretical knowledge.
 
-
-<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf12.jpg" width="200" height="200" alt="babysteps">
+![Babysteps]({{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf12.jpg)
 
 **Fact:** I’m not a coder.
 
@@ -37,7 +35,6 @@ Here constants has same meaning as in any other programming language. They store
 c1 = tf.constant(value = 32, dtype = tf.float32, name = 'a')
 c2 = tf.constant(value = 20, dtype = tf.float32, name = 'b')
 
-text
 
 Where will you be using constants? Value which are not supposed to change! Like number of layers, shape of the weight vectors, shape of each layer, etc. Some of the great constant initializers are here (most like numpy). Thing to notice is that you can not even get a value of tensor until you initialize a session. What is session? We will get to it.
 
@@ -51,7 +48,6 @@ v1 = tf.Variable(initial_value=, name = 'v1')
 variable 3 with initial value initialized by a constant
 v3 = tf.Variable(initial_value= tf.random_normal(shape= [100 , 4], mean= 0.0, stddev= 1), name = 'v3')
 
-text
 
 ### Placeholders
 
@@ -63,7 +59,6 @@ MNIST digits are 28*28 pixels, so you need to specify this
 #Here shape = [None, 2828], where None can take any value.
 ph1 = tf.placeholder(dtype= tf.float32, shape= [None, 2828])
 
-text
 
 ### Operations
 
@@ -75,7 +70,6 @@ o1 = tf.multiply(c1, c2)
 sum of elements of v3
 o4 =tf.reduce_sum(v3)
 
-text
 
 ---
 
@@ -96,7 +90,6 @@ sess.run(tf.global_variables_initializer())
 Now we can evaluate operation on variables
 print(sess.run(o4))
 
-text
 
 ---
 
@@ -111,11 +104,13 @@ What are the main steps of any machine learning algorithm in Tensorflow?
 
 Here is vary simple example for multiply operation on two constants.
 
-<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf13.jpg" width="200" height="200" alt="babysteps">
+![Babysteps]({{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf13.jpg)
+
 
 And here is other simple computation graph.
 
-<img src="{{ site.baseurl }}assets/images/blogs/babysteps_with_tf/babysteps_tf14.jpg" width="200" height="200" alt="babysteps">
+![Babysteps]({{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf14.jpg)
+
 
 ---
 
