@@ -52,6 +52,9 @@ Your Power Automate flow now runs in the background, applying your designated ca
 - Time-Saving: It frees you from the boring task of manually updating calendar entries.
 - Powerful Customization: Using the Graph API through this action allows for more advanced updates than standard actions permit.
 
+## 🎥 Video Tutorial
+{% include video id="2Xj99XQK-5A" provider="youtube" %}
+
 ## 🛠️ FAQ
 
 **Is this really not a premium feature?**  
