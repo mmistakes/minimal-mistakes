@@ -43,10 +43,6 @@ By diversifying your variable toolkit, you’ll create more dynamic, flexible, a
 🔸 Efficiency: Optimize performance by choosing the right variable type for each scenario.  
 🔸 Skill Growth: Enhance your PowerApps development skills by mastering a wider range of variables.
 
----
-
-## 🎥 Video Tutorial
-{% include video id="" provider="youtube" %}
 
 ---
 
