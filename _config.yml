@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name: "김민주"
-  avatar: "/self_assets/author_avatar.png"
+  avatar: "/assets/images/author_avatar.png"
   bio: ".o(따흐흑..)"
   location: "서울, 대한민국"
   email:
@@ -132,10 +132,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/891km"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/891.33km"
 
 # Site Footer
 footer:
