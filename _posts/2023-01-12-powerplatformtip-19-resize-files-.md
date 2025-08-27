@@ -41,7 +41,7 @@ Effortlessly resize large images to more manageable sizes without complex proces
 ---
 
 ## 🎥 Video Tutorial
-{% include video id="" provider="youtube" %}
+{% include video id="Tvs99nvb2L0" provider="youtube" %}
 
 ---
 
