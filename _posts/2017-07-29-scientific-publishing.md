@@ -2,7 +2,6 @@
 title: Scientific publishing, the slow death of academic appeal and what to change
 tags:
   - research
-  - publishing
 excerpt: "Scientific publishing is broken and academia is doing very little to fix it"
 ---
 

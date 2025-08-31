@@ -15,9 +15,6 @@ main:
   - title: 📚 Excursus
     url: /categories/#excursus/
 
-  - title: ⏳ Now 
-    url: /now/
-
   - title: ✨ Awesome Material
     url: /material/
 
@@ -26,3 +23,6 @@ main:
 
   - title: 🎶 Things I like
     url: /things-i-like/
+  
+  - title: ⏳ Now 
+    url: /now/

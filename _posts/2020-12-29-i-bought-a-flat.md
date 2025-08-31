@@ -2,7 +2,6 @@
 title: I bought a flat
 tags:
   - life
-  - mortgage
 excerpt: Some considerations on property-buying and the whole process
 ---
 
