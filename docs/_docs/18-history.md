@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-07-29T13:13:14+08:00'
+last_modified_at: '2025-08-31T11:43:03+08:00'
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 ### Enhancements
 
 - Updated Traditional Chinese translation [#5250](https://github.com/mmistakes/minimal-mistakes/issues/5250)
+- Add built-in support for jekyll-gfm-admonitions [#5312](https://github.com/mmistakes/minimal-mistakes/issues/5312)
 
 ## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
 
