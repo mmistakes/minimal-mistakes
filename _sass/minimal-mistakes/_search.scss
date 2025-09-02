@@ -47,30 +47,31 @@
     @include breakpoint($x-large) {
       max-width: $max-width;
     }
-
   }
 
   &__form {
+    padding: 1em 0;
     background-color: transparent;
   }
 
   .search-input {
     display: block;
     margin-bottom: 0;
-    padding: 0;
-    border: none;
+    // padding: 0;
+    padding: 18px 24px;
+    border: 2px solid rgb(215, 215, 215);
     outline: none;
     box-shadow: none;
     background-color: transparent;
-    font-size: $type-size-3;
+    font-size: $type-size-5;
 
-    @include breakpoint($large) {
-      font-size: $type-size-2;
-    }
+    // @include breakpoint($large) {
+    //   font-size: $type-size-3;
+    // }
 
-    @include breakpoint($x-large) {
-      font-size: $type-size-1;
-    }
+    // @include breakpoint($x-large) {
+    //   font-size: $type-size-3;
+    // }
   }
 
   &.is--visible {
@@ -81,6 +82,10 @@
       content: "";
       display: block;
     }
+  }
+
+  .results {
+    padding: 0 18px;
   }
 
   .results__found {
