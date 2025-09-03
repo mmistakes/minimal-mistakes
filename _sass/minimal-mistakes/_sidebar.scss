@@ -8,13 +8,13 @@
 
 .sidebar {
   @include clearfix();
-  // @include breakpoint(max-width $large) {
-  //   /* fix z-index order of follow links */
-  //   position: relative;
-  //   z-index: 10;
-  //   -webkit-transform: translate3d(0, 0, 0);
-  //   transform: translate3d(0, 0, 0);
-  // }
+  @include breakpoint(max-width $large) {
+    /* fix z-index order of follow links */
+    position: relative;
+    z-index: 10;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
   @include breakpoint($large) {
     float: inline-start;
@@ -135,10 +135,11 @@
 
   img {
     max-width: 110px;
-    border-radius: 50%;
+    border-radius: 4px;
 
     @include breakpoint($large) {
       padding: 5px;
+      border-radius: 10px;
       border: 1px solid $border-color;
     }
   }
@@ -192,6 +193,13 @@
   z-index: 20;
   cursor: pointer;
 
+  li {
+    a {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
   li:last-child {
     a {
       margin-bottom: 0;
@@ -201,6 +209,12 @@
   .author__urls {
     span.label {
       padding-inline-start: 5px;
+    }
+
+    li:last-child {
+      a {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -214,7 +228,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         inset-inline-start: 0;

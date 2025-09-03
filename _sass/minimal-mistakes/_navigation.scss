@@ -237,7 +237,8 @@
       position: relative;
       height: 100%;
       border-radius: 6px;
-      padding: 0.4em 0.75em;
+      // border: 2px solid transparent;
+      padding: 0.4em 0.75em 0.55em;
       margin: 0 calc(20px - 0.75em);
       -webkit-transition: $global-transition;
       transition: $global-transition;
@@ -259,7 +260,8 @@
 
     a:hover {
       color: $masthead-link-color-hover;
-      background-color: rgba(211, 236, 191, 0.3);
+      // border-color: $background-blue;
+      background-color: rgba(255, 255, 255, 0.9);
     }
   }
 
@@ -518,7 +520,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: $dark-blue; // $primary-color;
     border-start-start-radius: $border-radius;
     border-start-end-radius: $border-radius;
   }

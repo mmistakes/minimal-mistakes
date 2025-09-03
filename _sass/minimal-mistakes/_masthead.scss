@@ -38,6 +38,15 @@
   }
 }
 
+// custom - backgroundColor
+.masthead {
+  background: linear-gradient(to bottom, $background-blue, #fff);
+}
+
+#site-nav {
+  background: transparent;
+}
+
 .site-logo img {
   max-height: 2rem;
 }

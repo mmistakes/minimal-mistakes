@@ -105,6 +105,21 @@ $h-size-6: 1em !default; // ~16px
    Colors
    ========================================================================== */
 
+$primary-color: #424648 !default; // #6f777d !default;
+$success-color: #3fa63f !default;
+$warning-color: #d67f05 !default;
+$danger-color: #ee5f5b !default;
+$info-color: #3b9cba !default;
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
+
+// custom
+$green: #d3ecbf;
+$background-green: mix(#fff, $green, 20%);
+$blue: #a9e2eb;
+$background-blue: mix(#fff, $blue, 50%);
+$dark-blue: mix($primary-color, $blue, 50%);
+
 $gray: #7a8288 !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
@@ -118,15 +133,7 @@ $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
-$footer-background-color: $lighter-gray !default;
-
-$primary-color: #6f777d !default;
-$success-color: #3fa63f !default;
-$warning-color: #d67f05 !default;
-$danger-color: #ee5f5b !default;
-$info-color: #3b9cba !default;
-$focus-color: $primary-color !default;
-$active-color: mix(#fff, $primary-color, 80%) !default;
+$footer-background-color: $background-green; // $lighter-gray !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
@@ -144,7 +151,7 @@ $flickr-color: #ff0084 !default;
 $foursquare-color: #0072b1 !default;
 $github-color: #171516 !default;
 $gitlab-color: #e24329 !default;
-$instagram-color: #517fa4 !default;
+$instagram-color: #ff0069; // #517fa4 !default;
 $keybase-color: #ef7639 !default;
 $lastfm-color: #d51007 !default;
 $linkedin-color: #007bb6 !default;
@@ -216,7 +223,7 @@ $right-sidebar-width-wide: 400px !default;
    ========================================================================== */
 
 $border-radius: 4px !default;
-$box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+$box-shadow: 0 1px 10px rgba(85, 85, 85, 0.125) !default;
 $nav-height: 2em !default;
 $nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;

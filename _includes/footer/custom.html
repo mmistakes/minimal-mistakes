@@ -1,3 +1,36 @@
 <!-- start custom footer snippets -->
 
+<style>
+  #canvas {
+    position: absolute;
+    right: 0;
+    top: -75%;
+    width: 120px;
+    height: 120px;
+    margin-right: 60px;
+    opacity: 0.8;
+  }
+
+  #canvas:hover {
+    opacity: 1;
+  }
+</style>
+
+<canvas
+  id="canvas"
+  data-model="{{ site.baseurl }}/assets/js/footer-three/model/ddg.glb"
+></canvas>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
+    }
+  }
+</script>
+<script
+  type="module"
+  src="{{ site.baseurl }}/assets/js/footer-three/footer-three.js"
+></script>
+
 <!-- end custom footer snippets -->
