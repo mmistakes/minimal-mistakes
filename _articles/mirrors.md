@@ -9,7 +9,7 @@ related:
   - shape
   - physics
 author: Molly Ireland
-sub_date: 2025-08-26
+sub_date: 2025-09-03
 header:
   teaser: /assets/img/four_circles.jpeg
   teaser_alt: A child using one circle to get three reflections of the circle, using two mirrors placed at 90 degrees from each other.
