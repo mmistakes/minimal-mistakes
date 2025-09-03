@@ -25,7 +25,7 @@ Children can make a trihexaflexagon by folding equilateral triangles on a strip 
 
 Once you have the above strip of paper, you can twist it around so that it looks like the image below. We need two flat faces and then a twist, then another two flat faces and a twist and so on. Once the strip is twisted in this way, you can use tape to secure the two end triangles together along the outside edge. Now you are ready to start experimenting! 
 
-{% include figure image_path="/assets/img/folding_tri.jpeg" alt=" An image of a hexagon shape labelled to show where the folds in the surface are. There are two triangles and then a fold, this pattern then repeats and all the folds are orientated in the same way." title= " How to fold a flexagon" %}
+{% include figure image_path="/assets/img/folding_tri.png" alt=" An image of a hexagon shape labelled to show where the folds in the surface are. There are two triangles and then a fold, this pattern then repeats and all the folds are orientated in the same way." title= " How to fold a flexagon" %}
 
 Children might find it interesting to mark the model with different colours to discover how there are actually three surfaces. If they use a pattern like circles in the centre of the model, they will be able to see that the circles split up when they turn the model over.  
 
@@ -43,4 +43,8 @@ To make a hexahexaflexagon, you again need to draw some equilateral triangles on
 
 {% include figure image_path="/assets/img/folding_hex.jpeg" alt=" Two images showing how to colour the faces of a hexahexaflexagon before it is folded." title= " Colouring the faces of a hexahexaflexagon" %}
 
+To see a demonstration of how to use flexagons, you can view the video below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UOMPE5R8J9Y?si=fu8ol89oR2BfLokl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><p/>
 Flexagons were of great interest to some mathematicians and scientists from the late 1930s to the early 1940s at Princeton University, and they even formed a committee to investigate flexagons. One member of the committee was the famous physicist Richard Feynman.
