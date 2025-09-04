@@ -11,7 +11,7 @@ toc_icon: user-edit
 toc_sticky: true
 ---
 
-A theme that came up in many settings was ramps - children loved to build ramps and roll things down them, and this led to some rich mathematical exploration covering a broad range of areas. 
+A popular activity among early years children is playing with ramps - children love to build ramps and roll things down them, and this can lead to some rich mathematical exploration covering a broad range of areas. 
 
 The ramp play booklet is a guide for practitioners, all about exploring maths through ramp play. It contains lots of examples of children's play, reflections from practitioners, insight from mathematicians and practical things like new words to introduce and advice about getting started. 
 
