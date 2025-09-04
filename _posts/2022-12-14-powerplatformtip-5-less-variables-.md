@@ -44,7 +44,8 @@ By using ‘Parse JSON’ for static parameters, you’ll make your flow more ef
 🔸 Efficiency: Saves API calls, which can be crucial in flows with many actions.  
 🔸 Best Practices: Aligns your flow with the intended uses of variables and JSON parsing, making it easier to maintain and troubleshoot.
 
----
+## 🎥 Video Tutorial
+{% include video id="5sVpg6yT-5I" provider="youtube" %}
 
 ## 🛠️ FAQ
 **1. When should I use Parse JSON instead of Initialize Variable?**  
