@@ -34,8 +34,8 @@
       position: absolute;
       right: 0;
       top: -100%;
-      width: 100px !important;
-      height: 100px !important;
+      width: clamp(80px, 18vw, 100px) !important;
+      height: clamp(80px, 18vw, 100px) !important;
       margin-right: clamp(14px, 6vw, 50px);
       opacity: 0.8;
 
