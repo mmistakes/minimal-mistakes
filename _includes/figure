@@ -1,14 +1,23 @@
 <div class="figure_container">
-    <figure class="{{ include.class }}">
+  <figure class="{{ include.class }}">
+    {% if include.url %}
+      <a href="{{ include.url }}" target="_blank" rel="noopener">
+        <img src="{{ include.image_path | relative_url }}"
+             alt="{% if include.alt %}{{ include.alt }}{% endif %}"
+             title="{% if include.title %}{{ include.title }}{% endif %}">
+      </a>
+    {% else %}
       <a href="{{ include.image_path | relative_url }}">
         <img src="{{ include.image_path | relative_url }}"
-           alt="{% if include.alt %}{{ include.alt }}{% endif %}"
-           title="{% if include.title %}{{ include.title }}{% endif %}">
+             alt="{% if include.alt %}{{ include.alt }}{% endif %}"
+             title="{% if include.title %}{{ include.title }}{% endif %}">
       </a>
-      {%- if include.caption -%}
-        <figcaption>
-          {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
-        </figcaption>
-      {%- endif -%}
-    </figure>
+    {% endif %}
+
+    {%- if include.caption -%}
+      <figcaption>
+        {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+      </figcaption>
+    {%- endif -%}
+  </figure>
 </div>
