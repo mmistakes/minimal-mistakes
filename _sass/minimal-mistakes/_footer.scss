@@ -22,11 +22,32 @@
     max-width: 100%;
     padding: 0 1em 2em;
 
+    // custom
     position: relative;
-    overflow: none;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
+    }
+
+    // footer > custom.html
+    #canvas {
+      position: absolute;
+      right: 0;
+      top: -100%;
+      width: 100px !important;
+      height: 100px !important;
+      margin-right: clamp(14px, 6vw, 50px);
+      opacity: 0.8;
+
+      @include breakpoint($medium) {
+        top: -75%;
+        width: 130px !important;
+        height: 130px !important;
+      }
+    }
+
+    #canvas:hover {
+      opacity: 1;
     }
   }
 

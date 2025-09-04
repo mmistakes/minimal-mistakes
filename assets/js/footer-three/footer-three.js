@@ -5,6 +5,7 @@ import setRaycaster from "./setRaycaster.js";
 
 // Renderer
 const canvas = document.getElementById("canvas");
+
 const renderer = new THREE.WebGLRenderer({
   canvas,
   antialias: true,
@@ -18,10 +19,8 @@ const scene = new THREE.Scene();
 scene.background = null;
 
 // Camera
-const width = canvas.clientWidth;
-const height = canvas.clientHeight;
 const aspect = canvas.clientWidth / canvas.clientHeight;
-const frustumSize = 3;
+const frustumSize = 3.25;
 const camera = new THREE.OrthographicCamera(
   (-frustumSize * aspect) / 2,
   (frustumSize * aspect) / 2,
@@ -110,9 +109,7 @@ function animate() {
 }
 
 function setSize() {
-  const width = canvas.clientWidth;
-  const height = canvas.clientHeight;
-  const aspect = width / height;
+  const aspect = canvas.clientWidth / canvas.clientHeight;
 
   camera.left = (-frustumSize * aspect) / 2;
   camera.right = (frustumSize * aspect) / 2;
