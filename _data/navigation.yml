@@ -2,6 +2,8 @@
 main:
   - title: "All Articles"
     url: /articles/
+  - title: "Ramp Play Booklet"
+    url: /ramp_play/ 
   - title: "About YMBM"
     url: /about/
   - title: "Authors"
