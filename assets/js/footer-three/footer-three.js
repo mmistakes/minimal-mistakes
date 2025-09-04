@@ -109,7 +109,9 @@ function animate() {
 }
 
 function setSize() {
-  const aspect = canvas.clientWidth / canvas.clientHeight;
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  const aspect = width / height;
 
   camera.left = (-frustumSize * aspect) / 2;
   camera.right = (frustumSize * aspect) / 2;
