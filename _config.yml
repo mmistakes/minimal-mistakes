@@ -329,6 +329,14 @@ defaults:
       show_date: true
       toc: true
 
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "sidebar"
+
   # _portfolio
   - scope:
       path: ""

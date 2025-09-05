@@ -1,3 +1,7 @@
+gem "csv"
+gem "logger"
+gem "bigdecimal"
+
 source "https://rubygems.org"
 gem "jekyll"
 gem "minimal-mistakes-jekyll"

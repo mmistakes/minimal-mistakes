@@ -22,6 +22,8 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-liquid": "^0.0.1-security",
     "uglify-js": "^3.17.4"
   }
 }
