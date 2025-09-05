@@ -20,7 +20,7 @@ rtl: # true, false (default) # turns direction of the page into right to left fo
 title: "Hong's Note"
 title_separator: "|"
 subtitle: "バタバタ開発者成長期"
-name: "Hong"
+name: "AHH"
 description: #"勉強しながら記録する空間です。"
 url: "https://honghyunAhn.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
@@ -112,7 +112,7 @@ analytics:
 
 # Site Author
 author:
-  name: "Hong"
+  name: "AHH"
   avatar: #"/assets/images/icon.png"
   bio: " "
   location: "Japan, Tokyo"

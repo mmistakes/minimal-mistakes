@@ -6,6 +6,8 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+  - title: "AboutMe"
+    url: https://honghyunahn.github.io/portfolio/
 
 doc:
   - title: "Category"
