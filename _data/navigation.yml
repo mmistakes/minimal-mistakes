@@ -8,12 +8,17 @@ main:
     url: /tags/
   - title: "AboutMe"
     url: https://honghyunahn.github.io/portfolio/
+# doc:
+#   - title: "Category"
+#     children:
+#       - title: "Daily"
+#         url: /categories/#daily/
 
-    # - title: "About"
-    #   url: https://mmistakes.github.io/minimal-mistakes/about/
-    # - title: "Sample Posts"
-    #   url: /year-archive/
-    # - title: "Sample Collections"
-    #   url: /collection-archive/
-    # - title: "Sitemap"
-    #   url: /sitemap/
+# - title: "About"
+#   url: https://mmistakes.github.io/minimal-mistakes/about/
+# - title: "Sample Posts"
+#   url: /year-archive/
+# - title: "Sample Collections"
+#   url: /collection-archive/
+# - title: "Sitemap"
+#   url: /sitemap/
