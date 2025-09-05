@@ -19,9 +19,9 @@ locale: "ja-JP"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
 title: "Hong's Note"
 title_separator: "|"
-subtitle: "small positive action"
-name: "AHN HONGHYUN"
-description: "勉強しながら記録する空間です。"
+subtitle: "バタバタ開発者成長期"
+name: "Hong"
+description: #"勉強しながら記録する空間です。"
 url: "https://honghyunAhn.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -112,9 +112,9 @@ analytics:
 
 # Site Author
 author:
-  name: "AHN HONGHYUN"
+  name: "Hong"
   avatar: #"/assets/images/icon.png"
-  bio: "日本で住んでいる<br>韓国人の開発者です!<br>勉強しながら記録する空間です。"
+  bio: #"日本で住んでいる<br>韓国人の開発者です!<br>勉強しながら記録する空間です。"
   location: "Japan, Tokyo"
   email: #"anh2073@gmail.com"
   links:
