@@ -12,6 +12,12 @@
 | `assets`        | CSS, JS, 이미지 같은 정적 파일 |
 | `_site`         | 빌드 결과 (배포용)             |
 
+- _pages > _layouts > _includes
+  - `_pages/**.md` 파일 생성 > `layout: --` 설정
+    - `_layouts/--.html` 파일과 연결
+  - `_layouts/--.html` 파일 내에 `{% include ++.html %}`
+    - `_includes/++html` 파일과 연결
+
 <br>
 
 ## 1️⃣ 최상위 관련 폴더

@@ -24,10 +24,9 @@
         {% endif %}
       {% endfor %}
 
-    {% endif %}
-
-    {% if page.sidebar_custom %}
-      {% include nav_list %}
+      {% if page.sidebar.nav %}
+        {% include nav_list nav=page.sidebar.nav %}
+      {% endif %}
     {% endif %}
   </div>
 {% endif %}
