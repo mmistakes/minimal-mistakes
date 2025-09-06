@@ -6,13 +6,22 @@
 {% endfor %}
 
 <ul class="taxonomy__index">
+  <li>
+    <a href="{{ site.baseurl }}/tags/" class="taxonomy-link">
+      <strong>전체</strong> 
+      <span class="axonomy__count">
+        {{ site.posts | size }}
+      </span>
+    </a>
+  </li>
   {% for i in (1..items_max) reversed %}
     {% for item in include.taxonomies %}
       {% if item[1].size == i %}
         <li>
           <a href="#{{ item[0] | slugify }}" class="taxonomy-link">
             
-            <strong>{{ item[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+            <strong>{{ item[0] }}</strong> 
+            <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
       {% endif %}

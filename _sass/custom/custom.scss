@@ -1,0 +1,40 @@
+// home > categories-tabs
+.categories-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+
+  .category-tab {
+    a {
+      cursor: pointer;
+      padding: 6px 12px;
+      display: inline-block;
+      color: #555;
+      text-decoration: none;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    &.active {
+      a {
+        font-weight: 600;
+        border-bottom: 2px solid #000;
+        color: #000;
+      }
+    }
+  }
+}
+
+.categories-posts {
+  .category-post {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

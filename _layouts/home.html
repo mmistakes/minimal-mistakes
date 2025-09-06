@@ -2,15 +2,38 @@
 layout: archive
 ---
 
-<h3 class="archive__subtitle">
-  {{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}
-</h3>
+<h3 class="archive__subtitle">포스트</h3>
 
-{% if paginator %} {% assign posts = paginator.posts %} {% else %} {% assign
-posts = site.posts %} {% endif %} {% assign entries_layout = page.entries_layout
-| default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+<!-- 카테고리 탭 -->
+<ul class="categories-tabs">
+  <li class="category-tab active" data-target="all"><a href="">전체</a></li>
+  {% assign categories_list = site.categories | sort %}
+  {% for category in categories_list %}
+    <li class="category-tab" data-target="{{ category[0] | slugify }}">
+      <a href="#{{ category[0] | slugify }}">{{ category[0] }} ({{ category[1].size }})</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- 카테고리별 포스트 -->
+<div class="categories-posts">
+  <!-- 전체 포스트 -->
+  <div class="category-post active" id="all">
+  {% if paginator %} 
+    {% assign posts = paginator.posts %} 
+  {% else %} 
+    {% assign posts = site.posts %}
+  {% endif %} 
+  {% include documents-collection.html entries=posts type="list" %}
+  </div>
+
+  <!-- 카테고리별 포스트 -->
+  {% for category in categories_list %}
+    <div class="category-post" id="{{ category[0] | slugify }}">
+      {% assign posts = category[1] %}
+      {% include documents-collection.html entries=posts type="list" %}
+    </div>
+  {% endfor %}
 </div>
 
 {% include paginator.html %}

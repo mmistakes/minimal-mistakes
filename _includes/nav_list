@@ -1,5 +1,5 @@
 <nav class="nav__list">
-  <h3 class="nav__title" style="padding-left: 0">카테고리</h3>
+  <h3 class="nav__title" style="padding-left: 0">태그</h3>
 
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">
@@ -7,12 +7,12 @@
   </label>
 
   <ul class="nav__items">
-    {% assign categories_list = site.categories | sort %}
-    {% for category in categories_list %}
+    {% assign tags_list = site.tags | sort %}
+    {% for tag in tags_list %}
       <li>
-        <a href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}">
+        <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
           <span class="nav__sub-title">
-            {{ category[0] }} ({{ category[1].size }})
+            {{ tag[0] }} ({{ tag[1].size }})
           </span>
         </a>
       </li>
