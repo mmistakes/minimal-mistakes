@@ -135,7 +135,7 @@ plt.show()
 ```
 
 resulting plot:
-<img src="/assets/images/Linear Regression/physics_linear_regression.png" alt="Linear Regression Plot" style="max-width:100%;height:auto;">
+<img src="../assets/images/Linear Regression/physics_linear_regression.png" alt="Linear Regression Plot" style="max-width:100%;height:auto;">
 
 ## Regression with train/test split
 To ensure your linear regression model generalizes well to unseen data, it's important to split your dataset into training and testing sets. This allows you to train the model on one portion of the data and evaluate its performance on another portion that it hasn't seen before. Here's how you can do this using scikit-learn's `train_test_split` function:
