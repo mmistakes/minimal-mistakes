@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
+gem "google-protobuf", "~> 3.23", platform: :ruby
 
 #   gem "jekyll-paginate"
 #   gem "jekyll-sitemap"
