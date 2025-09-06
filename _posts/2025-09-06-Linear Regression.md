@@ -5,7 +5,7 @@ tag: Programming
 toc: true
 ---
 
-This article is a simple and practical guide to implementing linear regression using Python 🩵. It covers importing libraries, preparing data, building the model, evaluating it, and visualizing the results — documented here for my personal note.
+Just a personal note 🩵 on how to implement linear regression in Python — from loading data to training, evaluating, and plotting the model. Just a reminder for my self in case gue lupa dan pikun XD
 
 ## Python vs Excel for Linear Regression
 - **Python**: More flexible, better for large datasets, and integrates well with other data science tools.
