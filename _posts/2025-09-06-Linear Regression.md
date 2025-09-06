@@ -78,21 +78,6 @@ r_squared = model.score(X, y)
 print("R²:", r_squared)
 ```
 
-Explanation:
-- R² (coefficient of determination) measures the proportion of variance in the target y that is explained by the linear model.
-- Mathematical formula: R² = 1 - (SS_res / SS_tot)
-  - SS_res = sum((y - y_pred) ** 2)  # residual sum of squares
-  - SS_tot = sum((y - y.mean()) ** 2)  # total sum of squares around the mean
-- Interpretation:
-  - R² = 1 → the model explains all variation (perfect fit)
-  - R² = 0 → the model is no better than predicting the mean of y
-  - R² < 0 → the model performs worse than predicting the mean (can occur if the model is poorly specified or data is very small)
-
-Caveats / tips:
-- A high R² does not necessarily mean the model is valid (overfitting is possible). Always use a train/test split for realistic evaluation.
-- For multiple features, use adjusted R² when comparing different models.
-- R² is sensitive to outliers and does not indicate causation.
-
 Manual calculation example (should match `model.score` in scikit-learn):
 
 ```python
