@@ -152,3 +152,4 @@ For very small datasets, it may be better to train on the full data instead of s
 - [scikit-learn Linear Regression Documentation](https://scikit-learn.org/stable/user_guide.html)
 - [Linear Regression (Python Implementation)](https://www.geeksforgeeks.org/machine-learning/linear-regression-python-implementation/)
 - [Kaggle: Learn Pandas](https://www.kaggle.com/learn/pandas)
+- [Pyplot tutorial](https://matplotlib.org/stable/tutorials/pyplot.html#sphx-glr-tutorials-pyplot-py)
