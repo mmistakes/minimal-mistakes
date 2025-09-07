@@ -8,13 +8,6 @@
 
   @include breakpoint($large) {
     float: inline-end;
-    width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-inline-end: $right-sidebar-width-narrow;
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
-    padding-inline-end: $right-sidebar-width;
   }
 }
 
@@ -318,7 +311,7 @@
 
       .archive__item-body {
         float: inline-end;
-        width: span(7 of 12);
+        width: span(10 of 12);
         padding-inline-start: gutter(0.5 of 12);
         padding-inline-end: gutter(1 of 12);
       }

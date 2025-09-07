@@ -17,6 +17,11 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
+  <!-- 사이드바 : 태그별 내비게이션 -->
+  {% if page.sidebar_custom %}
+    {% include sidebar__tag.html %}
+  {% endif %}
+
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>

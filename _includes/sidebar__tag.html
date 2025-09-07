@@ -1,0 +1,16 @@
+<aside class="sidebar__tag">
+  <h3 class="sidebar__tag__title" style="padding-left: 0">태그</h3>
+
+  <ul class="tag_nav__items">
+    {% assign tags_list = site.tags | sort %}
+    {% for tag in tags_list %}
+      <li>
+        <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}">
+          <span class="tag_nav__sub-title">
+            {{ tag[0] }} ({{ tag[1].size }})
+          </span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>

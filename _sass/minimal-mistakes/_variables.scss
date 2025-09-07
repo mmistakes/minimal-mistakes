@@ -7,9 +7,9 @@
    ========================================================================== */
 
 $doc-font-size: 16px !default;
-$doc-font-size-medium: $doc-font-size * 1.125 !default;
-$doc-font-size-large: $doc-font-size * 1.25 !default;
-$doc-font-size-x-large: $doc-font-size * 1.375 !default;
+$doc-font-size-medium: $doc-font-size !default; // $doc-font-size * 1.125
+$doc-font-size-large: $doc-font-size !default; // $doc-font-size * 1.25
+$doc-font-size-x-large: $doc-font-size !default; // $doc-font-size * 1.375
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -64,7 +64,7 @@ $handwritten: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
   cursive;
 
 /* Defaults used in Minimal mistakes */
-$default-sans-serif: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$default-sans-serif: "Pretendard", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $default-serif: Georgia, Times, serif;
 $default-monospace: Monaco, Consolas, "Lucida Console", monospace;
 
@@ -88,9 +88,9 @@ $type-size-2: 1.953em !default; // ~31.248px
 $type-size-3: 1.563em !default; // ~25.008px
 $type-size-4: 1.25em !default; // ~20px
 $type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
+$type-size-6: 1em !default; // 0.75em ~12px
+$type-size-7: 0.75em !default; // 0.6875em ~11px
+$type-size-8: 0.6875em !default; // 0.625em ~10px
 
 /* headline scale */
 $h-size-1: 1.563em !default; // ~25.008px
@@ -206,16 +206,16 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
-$x-large: 1280px !default;
+$x-large: 1152px !default; // 1280px 
 $max-width: $x-large !default;
 
 /*
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default;
-$right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
+$right-sidebar-width-narrow: 150px !default; // 200px 
+$right-sidebar-width:  200px !default; // 300px
+$right-sidebar-width-wide:  300px !default; // 400px
 
 /*
    Other
