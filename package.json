@@ -5,7 +5,7 @@
   "description": "Minimal Mistakes 2 column Jekyll theme.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git+https://github.com/mmistakes/minimal-mistakes.git"
   },
   "keywords": [
     "jekyll",
@@ -25,5 +25,13 @@
     "prettier": "^3.6.2",
     "prettier-plugin-liquid": "^0.0.1-security",
     "uglify-js": "^3.17.4"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs"
 }
