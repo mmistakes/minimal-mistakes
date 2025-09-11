@@ -19,16 +19,16 @@ sidebar:
 
 <!-- {% include outdated.md %} -->
 
-Die wichtigsten Daten zum Schuljahr **2025/26** in einem Überblick.
+Die wichtigsten Daten zum Schuljahr **2026/27** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
-| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2018 bis zum 30. September 2019 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Montag, 07.10.2024 bis Freitag, 18.10.2024  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. Sie erhalten einen Termin per Post. |
+| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2019 bis zum 30. September 2020 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
+| Montag, 06.10.2025 bis Freitag, 17.10.2025  | {% include icon_link text="<b>Anmeldung</b>" icon="fa-file-text-o" url="#anmeldung" %} der Schulanfänger*innen im Sekretariat. Sie erhalten einen Termin per Post. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
-| Dienstag, 31.07.2025 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2025 von unserem Hort betreut werden kann.  |
-| Samstag, 13.09.2025 | Endlich! Wir feiern die Einschulung in der Sporthalle |
-| Montag, 15.09.2025 | Der **erste Schultag.** |
+| Freitag, 31.07.2026 | Melden Sie Ihr Kind rechtzeitig zur {% include icon_link text="<b>Hortbetreuung (eFöB)</b>" icon="fa-child" url="#hort" %} an, so dass Ihr Kind am 01.08.2025 von unserem Hort betreut werden kann.  |
+| Samstag, 29.08.2026 | Endlich! Wir feiern die Einschulung in der Sporthalle |
+| Montag, 31.08.2026 | Der **erste Schultag.** |
 
 {{comment}}<!--
 **TODO**:
@@ -109,7 +109,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 
 <!-- {% include outdated.md %} -->
 
-In der Zeit vom 07. Oktober bis 18. Oktober 2024 melden Sie ihr
+In der Zeit vom 06. Oktober bis 17. Oktober 2025 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 Sie bekommen von uns einen Termin per Post zugeschickt.
@@ -118,6 +118,7 @@ Sie müssen zur Anmeldung folgende Dokumente mitbringen:
 
 * Ihre eigenen Personalpapiere (Ausweis oder Pass)
 * Geburtsurkunde des Kindes
+* persönliches Erscheinen der Schulanfängerinnen erforderlich
 
 Sie können entscheiden, ob Ihr Kind am Religionsunterricht (evangelisch/katholisch)
 teilnehmen soll oder nicht.
