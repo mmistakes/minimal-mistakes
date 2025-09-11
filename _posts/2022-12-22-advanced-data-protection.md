@@ -1,5 +1,5 @@
 ---
-title: "Mximiazing Privacy and Security with iCloud's Advanced Data Protection"
+title: "Maximizing Privacy and Security with iCloud's Advanced Data Protection"
 categories: [privacy,security,apple]
 ---
 Last week, Apple [released](https://appleinsider.com/articles/22/12/13/apples-advanced-data-protection-feature-is-here---what-you-need-to-know) Advanced Data Protection, a new way to fully encrypt iCloud data end-to-end (E2EE). This new feature will make your account data so secure that not even Apple can read it. It provides an extra layer of privacy by reducing the data that Apple knows about you and what is accessible through government requests and warrants. [Additional data protected](https://support.apple.com/en-us/HT202303) with the highest level of cloud security in the industry include photos, notes, backups, messages, and more. The only data not end-to-end encrypted are contacts, calendars, and email.
