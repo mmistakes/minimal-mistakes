@@ -5,6 +5,70 @@ layout: archive
 {{ content }}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
-</div>
+
+{%- if page.collection == "people" -%}
+
+  {%- assign faculty = site.people  | where: "role", "faculty" | sort: "title" -%}
+  {%- assign students = site.people | where: "role", "student" | sort: "title" -%}
+  {%- assign guests  = site.people  | where: "role", "guest"   | sort: "title" -%}
+  {%- assign alumni  = site.people  | where: "role", "alumni"  | sort: "title" -%}
+
+  {%- if faculty and faculty.size > 0 -%}
+    <h2 id="faculty">Faculty</h2>
+    <div class="people-grid">
+      {%- for post in faculty -%}
+        {% include person-card.html %}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {%- if students and students.size > 0 -%}
+    <h2 id="students">Students</h2>
+    <div class="people-grid">
+      {%- for post in students -%}
+        {% include person-card.html %}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {%- if guests and guests.size > 0 -%}
+    <h2 id="guests">Guests</h2>
+    <div class="people-grid">
+      {%- for post in guests -%}
+        {% include person-card.html %}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+{%- if alumni and alumni.size > 0 -%}
+  <h2 id="alumni">Alumni</h2>
+  <ul class="alumni-list">
+    {%- assign alumni_sorted = alumni | sort: "grad_year" | reverse -%}
+    {%- for post in alumni_sorted -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.first_name }} {{ post.last_name }}</a>
+        {%- if post.role_title %} — {{ post.role_title }}{%- endif -%}
+        {%- if post.grad_year %} (graduated {{ post.grad_year }}){%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+  
+
+{%- elsif page.collection == "publications" -%}
+
+  {%- assign items = site.publications | sort: "year" | reverse -%}
+  {%- for post in items -%}
+    {% include archive-single.html type=entries_layout %}
+  {%- endfor -%}
+
+{%- else -%}
+
+  <div class="entries-{{ entries_layout }}">
+    {%- assign items = site[page.collection] -%}
+    {%- for post in items -%}
+      {% include archive-single.html type=entries_layout %}
+    {%- endfor -%}
+  </div>
+
+{%- endif -%}

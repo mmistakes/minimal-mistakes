@@ -1,0 +1,26 @@
+<div class="archive__item">
+  {%- if post.image and post.image != "" -%}
+      <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.first_name | escape }}">
+  {%- else -%}
+      <img src="{{ '/assets/images/portraits-team/default.jpg' | relative_url }}" alt="Default portrait">
+  {%- endif -%}
+
+  <div class="archive__item-body">
+    <h2 class="archive__item-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+
+    {% if post.role_title %}
+      <p class="archive__item-excerpt"><strong>{{ post.role_title }}</strong></p>
+    {% endif %}
+
+    {% if post.interest %}
+      <p class="archive__item-excerpt">{{ post.interest }}</p>
+    {% endif %}
+
+    <p class="archive__item-meta">
+      {% if post.email %}<a href="mailto:{{ post.email }}">{{ post.email }}</a>{% endif %}
+      {% if post.website %}{% if post.email %} · {% endif %}<a href="{{ post.website }}">website</a>{% endif %}
+    </p>
+  </div>
+</div>

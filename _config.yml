@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "VID Lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Visualization and Interaction Design Lab" # &name is a YAML anchor which can be *referenced later
+description              : "Lab"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -68,7 +68,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -220,6 +220,42 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  people:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts (news)
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
+  # _people (each person gets a page at /team/:name/)
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: single
+      author_profile: false
+  # _publications (each pub gets a page at /publications/:title/)
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: false
 
 # Sass/SCSS
 sass:
@@ -312,16 +348,41 @@ compress_html:
     envs: development
 
 
+# Collections
+collections:
+  people:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+
 # Defaults
 defaults:
-  # _posts
+  # _posts (news)
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
+
+  # _people (each person gets a page at /team/:name/)
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: single
+      author_profile: false
+
+  # _publications (each pub gets a page at /publications/:title/)
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: false

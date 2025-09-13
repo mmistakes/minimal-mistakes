@@ -7,3 +7,21 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// --- Custom overrides below ---
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.people-grid .archive__item {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+}
