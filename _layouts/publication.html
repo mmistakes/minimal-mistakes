@@ -1,0 +1,139 @@
+---
+layout: single
+---
+
+<article class="pub" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+  <header class="pub__header">
+    {%- comment -%}
+      Title is already rendered by layout: single, so we do NOT add another <h1>.
+    {%- endcomment -%}
+
+    {%- comment -%} Authors (supports mixed strings and person keys) {%- endcomment -%}
+    <p class="pub__authors">
+      {%- for a in page.authors -%}
+        {%- assign match = nil -%}
+        {%- for p in site.people -%}
+          {%- if a == p.key -%}{% assign match = p %}{% break %}{%- endif -%}
+        {%- endfor -%}
+
+        {%- if match -%}
+          {%- assign author_label = "" -%}
+          {%- if match.title and match.title != "" -%}
+            {%- assign author_label = match.title -%}
+          {%- elsif match.first_name and match.last_name -%}
+            {%- assign author_label = match.first_name | append: " " | append: match.last_name -%}
+          {%- else -%}
+            {%- assign author_label = a -%}
+          {%- endif -%}
+          <a href="{{ match.url | relative_url }}">{{ author_label }}</a>
+        {%- else -%}
+          {{ a }}
+        {%- endif -%}
+
+        {%- unless forloop.last -%}
+          {%- if forloop.index == page.authors.size - 1 -%}
+            &nbsp;&amp;&nbsp;
+          {%- else -%}
+            ,&nbsp;
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    </p>
+
+    <p class="pub__venue">
+      {%- if page['journal-short'] %}{{ page['journal-short'] }}{% endif -%}
+      {%- if page.venue and page['journal-short'] %} · {% endif -%}
+      {%- if page.venue %}{{ page.venue }}{% endif -%}
+      {%- if page.year %} ({{ page.year }}){% endif -%}
+      {%- if page.type %} · <span class="pub__type">{{ page.type | capitalize }}</span>{% endif -%}
+    </p>
+
+    {%- if page.award %}
+      <p class="pub__badge"><span class="label label--success">{{ page.award }}</span></p>
+    {%- endif %}
+  </header>
+
+  <div class="pub__body">
+    {%- if page.image %}
+      <figure class="pub__thumb">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.shortname | default: page.title }}">
+      </figure>
+    {%- endif %}
+
+    {%- if page.abstract %}
+      <h2>Abstract</h2>
+      <div class="pub__abstract" itemprop="description">
+        {{ page.abstract | markdownify }}
+      </div>
+    {%- endif %}
+
+    <div class="pub__links">
+      {%- if page.pdf %}<a class="btn btn--primary" href="{{ page.pdf | relative_url }}">PDF</a>{% endif -%}
+      {%- if page.preprint_server %}<a class="btn" href="{{ page.preprint_server }}">Preprint</a>{% endif -%}
+      {%- if page.project %}<a class="btn" href="{{ page.project | relative_url }}">Project</a>{% endif -%}
+      {%- if page['external-project'] %}<a class="btn" href="{{ page['external-project'] }}">Project</a>{% endif -%}
+      {%- if page.code %}<a class="btn" href="{{ page.code }}">Code</a>{% endif -%}
+      {%- if page.bib and page.bib.doi %}<a class="btn" href="{{ page.bib.doi }}">DOI</a>{% endif -%}
+    </div>
+
+    {%- if page.videos and page.videos.size > 0 -%}
+      <h2>Video</h2>
+      <ul class="pub__videos">
+        {%- for v in page.videos -%}
+          <li>
+            {%- if v.youtube-id -%}
+              <a href="https://www.youtube.com/watch?v={{ v.youtube-id }}">{{ v.name | default: "YouTube video" }}</a>
+            {%- elsif v.vimeo-id -%}
+              <a href="https://vimeo.com/{{ v.vimeo-id }}">{{ v.name | default: "Vimeo video" }}</a>
+            {%- endif -%}
+            {%- if v.file -%} · <a href="{{ v.file | relative_url }}">download</a>{%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if page.supplements and page.supplements.size > 0 -%}
+      <h2>Supplemental</h2>
+      <ul class="pub__supplements">
+        {%- for s in page.supplements -%}
+          <li><a href="{{ s.link | relative_url }}">{{ s.name }}</a></li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if page.images and page.images.size > 0 -%}
+      <div class="pub__images">
+        {%- for img in page.images -%}
+          <figure>
+            <img src="{{ img.path | relative_url }}" alt="{{ img.caption | default: page.shortname }}">
+            {%- if img.caption -%}<figcaption>{{ img.caption }}</figcaption>{%- endif -%}
+          </figure>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if page.bib %}
+      <h2>Citation</h2>
+      <pre class="pub__bib">{% assign t = page.bibentry | default: "article" -%}@{{ t }}{ {% if page.key %}{{ page.key }}{% else %}key{% endif %},
+{% if page.authors %}  author = {{ page.authors | join: " and " }},{% endif %}
+{% if page.title %}  title = {{ page.title | jsonify }},{% endif %}
+{% if page.year %}  year = {{ page.year }},{% endif %}
+{% if page.bib.booktitle %}  booktitle = {{ page.bib.booktitle | jsonify }},{% endif %}
+{% if page.bib.publisher %}  publisher = {{ page.bib.publisher | jsonify }},{% endif %}
+{% if page.bib.pages %}  pages = {{ page.bib.pages | jsonify }},{% endif %}
+{% if page.bib.doi %}  doi = {{ page.bib.doi | jsonify }},{% endif %}
+}</pre>
+    {%- endif %}
+  </div>
+</article>
+
+<style>
+/* local tweaks; move to main.scss later if you prefer */
+.pub__thumb { max-width: 520px; margin: 0 0 1rem 0; }
+.pub__thumb img { width: 100%; height: auto; display: block; border-radius: .5rem; }
+.pub__links .btn { margin-right: .5rem; margin-bottom: .5rem; }
+.pub__images { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin-top: 1rem; }
+.pub__images img { width: 100%; height: auto; display: block; border-radius: .25rem; }
+@media (max-width: 700px){ .pub__images { grid-template-columns: 1fr; } }
+</style>
