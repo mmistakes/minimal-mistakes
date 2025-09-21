@@ -65,6 +65,7 @@ Explanation:
 
 Mathematically the model predicts y ≈ X · b + c. For example, with one feature the prediction is y ≈ x * b + c.
 
+
 Notes / tips:
 - For a single feature be careful to pass `X` as 2D (use `reshape(-1, 1)`) or scikit-learn will complain.
 - Inspect residuals and R^2 (`model.score(X, y)`) to judge fit quality.
@@ -87,6 +88,17 @@ ss_res = ((y - y_pred) ** 2).sum()
 ss_tot = ((y - y.mean()) ** 2).sum()
 r2_manual = 1 - ss_res / ss_tot
 print('R² (manual):', r2_manual)
+```
+
+## Calculate Standard Error (Delta M)
+
+```python
+n = len(y)
+p = X.shape[1]
+residuals = y - y_pred
+ss_res = np.sum(residuals**2)
+std_error = np.sqrt(ss_res / (n - p - 1))
+print("Standard Error of the Estimate:", std_error)
 ```
 
 ## Visualize the results
