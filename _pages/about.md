@@ -1,58 +1,70 @@
 ---
 permalink: /about/
-title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-# layouts_gallery:
-#   - url: /assets/images/mm-layout-splash.png
-#     image_path: /assets/images/mm-layout-splash.png
-#     alt: "splash layout example"
-#   - url: /assets/images/mm-layout-single-meta.png
-#     image_path: /assets/images/mm-layout-single-meta.png
-#     alt: "single layout with comments and related posts"
-#   - url: /assets/images/mm-layout-archive.png
-#     image_path: /assets/images/mm-layout-archive.png
-#     alt: "archive layout example"
+title: About
+excerpt: Minimal Mistakes is a flexible two-column Jekyll theme.
 layout: single
-last_modified_at: 2023-12-08T13:30:26-04:00
-# toc: true
+last_modified_at: 2025-09-30T13:30:26-04:00
 author_profile: true
 ---
 
 ## EDUCATION: 
 
-#### Gwangju Institute of Science and Technology (GIST), Korea, 2004 – 2006
+### Gwangju Institute of Science and Technology (GIST), Korea, 2004 – 2006
 * M.S. in Information and Communications
 * Thesis : Empirical Strategies based on the Histogram Information for Decentralized Detection in Wireless Sensor Networks
 * Supervisor: Kiseon Kim 
 
-####	Ajou University, Korea, 1997 – 2004 
+### Ajou University, Korea, 1997 – 2004 
 * B.S. in Electronics Engineering
 
 
+
 ## WORK EXPERIENCE<em>( to be updated ) </em>
-###	KATS(Korean Agency for Technology and Standards)
 
-#### <strong> Deputy Director </strong>, December 2021 – Present
+### KATS(Korean Agency for Technology and Standards)
 
-Product Safety Surveillance Division  <em>(to be updated) </em>
+#### <strong> Deputy Director </strong>(공업연구관), December 2021 – Present
+
+Product Safety Information Division(제품안전정보과) 
+
+> 제품안전 정보시스템 고도화
+> AI기반 제품안전 관리업무 자동화
+> 제품안전 정보 오픈포럼 구성 및 운영
+> 제품 사고조사   
+
+
+Product Safety Surveillance Division (제품시장관리과)
+
+> 불법제품 조사 정책
+> 리콜 사업자 이행 지원 정책
+> 불법, 불량제품 유통 모니터링 정책
 
 * Cowork with civil society groups, autority agency and product retailers [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=166668&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+
 * Cowork with local government [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=167451&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
 * 국내 주요 15개 온라인쇼핑몰 협의체 운영
   * 자발적 위해제품 유통 관리 역량 지원(콜센터 구축, 전문 교육 체계 구축)
   * 매월 예상 불법제품 유통 정보 제공
+
 * 과태료 부과 등 행정조치에 대한 사업자의 이의제기 대응(과태료 재판 등)
     * 법률자문을 통해, 대응논리 마련
     * 제품안전관리원, 지자체 등과 대응체계 구축
+
 * 기술적 조치 가이드라인 등 온라인쇼핑몰 및 seller Tool 플랫폼 사업자 자율규제 방안 마련
+
 * 불법제품 기획조사 체계 마련
   * 품목 선정 및 법률 자문 등을 위해 '불법제품 단속 자문 체계' 구축
 
-#### <strong> Technical Research Officer </strong>, February 2013 – December 2021
+#### <strong> Technical Research Officer </strong>(공업연구사), February 2013 – December 2021
 
-Technical Regulation Policy Division<em>(to be updated) </em>
+Technical Regulation Policy Division(기술규제정책과)
+
+> 해외 기술규제(TBT) 정보시스템 운영 및 고도화
+> 해외 기술규제 정책 지원
+
 * Overhaul TBT[^1] information system(www.knowTBT.kr, operated from 2008) and then secured implementation budget(<em>Ministry of Science and ICT ‘Digital Public Service Innovation Project’, ***1,560 million won***</em>), December 2021
+
 * 전세계 기술규제(인증제도, 기술기준 등) 맵 서비스 개시
 
 
@@ -61,47 +73,71 @@ Technical Regulation Policy Division<em>(to be updated) </em>
 * Initiated and Leaded in opening the World-wide information Map service of Mandatory Technical Regulations, April 2021, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=163984&bbs_cd_n=81&currentPage=1&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
 
 
-Metrology & Measurement Division <em>(to be updated) </em>
+Metrology & Measurement Division (계량측정제도과)
+
+> 법정 계량 정보시스템 운영 및 고도화 
+> 스마트미터링(융복합 계량 시스템) 대응 및 포럼 구축
+> 가스미터 안전기준 운영
+> 법정 단위 정책 
+
 * Organized ‘Smart Metering Forum’ with participation of overt 100 industry, academia, and research institutes as a private voluntary forum, July 2017, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=159457&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=1&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+
 * Cowork with gas-meter(utility) manufactures, repair companies and testing-lab. [Press Release](http://www.gasnews.com/news/articleView.html?idxno=82528)
+
 * 업무 디지털 전환 
   * 계량정보 시스템 클라우드 전환을 위한 기획 및 구축 예산 확보
   * 수입계량기(저울)에 대해 통관 승인/확인 정보시스템 구축(관세청 시스템 연계)
   * 비법정단위(야드, 평 등) 사용 식별 시스템 구축: 인터넷사이트(상품판매 및 언론매채 기사 등)에서 사용되는 비법정 측정단위 추출(Text mining 기술 활용) 기술 활용
-* 국제법정계량기구 상호인증 인정 프로그램 국가 대표 활동
-  * 저울 수출 체계 구축
 
-Electronics & Information Standards Division<em>(to be updated) </em>
+* 국제법정계량기구 상호인증 인정 프로그램 국가 대표 활동
+  * 저울 수출 지원을 위한 국제상호인정([OIML](https://www.oiml.org/en/oiml-cs)) 체계 구축
+
+Electronics & Information Standards Division(전저정보표준과)
+
+> 국제(공적), 국가 표준화 정책
+> 	스마트 공장(제조)
+> 	스마트 의료  
+>
 * Establishment of the Standardization Strategies 
-  -	‘The National Standardization Strategy for Health Informatics’, June 2014,  [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=156561&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
-  -	‘The Standardization Promotion Strategy to support the spread of Smart Factory(manufacturing innovation), July 2015, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=157412&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8) 
+  - ‘The National Standardization Strategy for Health Informatics’, June 2014,  [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=156561&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8)
+  - ‘The Standardization Promotion Strategy to support the spread of Smart Factory(manufacturing innovation), July 2015, [Press Release](https://www.motie.go.kr/motie/ne/presse/press2/bbs/bbsView.do?bbs_seq_n=157412&bbs_cd_n=81&currentPage=11&search_key_n=user_nm_v&cate_n=&dept_v=&search_val_v=%EB%B0%B0%EC%8A%B9%ED%98%B8) 
+
 * Official of mirror TCs/SCs/WGs related to international IT Standardization committees or working groups:
-  -	JTC 1 : SC 6, SC 27, SC 31, SC 34, SC 38, WG 7, WG 9, WG 10
-  -	ISO : TC 184/SC 4 and SC 5
-  -	IEC : TC 65, TC 80, TC 86, SyC AAL
+  - JTC 1 : SC 6, SC 27, SC 31, SC 34, SC 38, WG 7, WG 9, WG 10
+  - ISO : TC 184/SC 4 and SC 5
+  - IEC : TC 65, TC 80, TC 86, SyC AAL
+
 * Official of domestic standardization study groups:
-  -	Power Line Communication
-  -	Smart manufacturing(corresponding with IEC/SMB/SG 8)
+  - Power Line Communication
+  - Smart manufacturing(corresponding with IEC/SMB/SG 8)
 
 ### TTA (Telecommunications Technology Associations)
 
-<strong> Senior Research Engineer </Strong>, April 2006 - February 2013
+> 이동통신분야 
+> 	표준화(standardization)
+> 	장비 및 시험규격  검증(validation) 
+> 	단말,기지국 인증(certificaton)
+
+<strong> Senior Research Engineer </Strong>(선임연구원), April 2006 - February 2013
 
 * GSM/WCDMA testing(3GPP and ETSI)
-  -	Protocol(Data link layer(2) ~ Application layer(7)) testing and certification
+  - Protocol(Data link layer(2) ~ Application layer(7)) testing and certification
+
 * Mobile WiMAX Validation(IEEE 802.16e and ETSI)
-  -	November 2006 – April 2008, <strong> <em> Dispatched to AT4wireless Headquarter in Spain</em></strong>
-  -	Validation of Mobile WiMAX testing equipments(Agilent, Anite)
-  -	Validation of IEEE standards, Mobile WiMAX testing procedures and specifications 
-  -	Validation of ETSI test suite and executable test cases(TTCN-3)
+  - November 2006 – April 2008, <strong> <em> Dispatched to AT4wireless Headquarter in Spain</em></strong>
+  - Validation of Mobile WiMAX testing equipments(Agilent, Anite)
+  - Validation of IEEE standards, Mobile WiMAX testing procedures and specifications 
+  - Validation of ETSI test suite and executable test cases(TTCN-3)
+
 * Mobile WiMAX testing (IEEE 802.16e)
-  -	May 2008 – December 2010 
-  -	Protocol testing and certification (Mobile Station, Base Station and network system)
-  -	Interoperability testing by setting up the test-bed consisted of Base Station, Mobile Station, Network servers
+  - May 2008 – December 2010 
+  - Protocol testing and certification (Mobile Station, Base Station and network system)
+  - Interoperability testing by setting up the test-bed consisted of Base Station, Mobile Station, Network servers
+
 * LTE  testing and standardization(3GPP and ETSI)
-  -	January 2011 – February 2013
-  -	3GPP RAN5(Radio Assess Network 5) Standardization
-  -	Protocol testing and Certification
+  - January 2011 – February 2013
+  - 3GPP RAN5(Radio Assess Network 5) Standardization
+  - Protocol testing and Certification
 
 
 ## RESEARCH PROJECTS<em>(to be updated) </em>
@@ -113,42 +149,59 @@ Provision of measures assisting in international standardization and certificati
 
 Quality assessment of Korea’s mobile(cellular) communication services
   - March 2012 – December 2012
-  -	Sponsor: Korea Communications Commission
-  -	Keywords: mobile communication, WCDMA, Voice Quality, Quality of Service 
+  - Sponsor: Korea Communications Commission
+  - Keywords: mobile communication, WCDMA, Voice Quality, Quality of Service 
 
 Distributed detection method based on value of information for wireless sensor network
-  -	July 2005 – February 2006,
-  -	Sponsor: Korea Research Foundation
-  -	Keywords: Wireless Sensor networks, Distributed detection, Data fusion, information theory
+  - July 2005 – February 2006,
+  - Sponsor: Korea Research Foundation
+  - Keywords: Wireless Sensor networks, Distributed detection, Data fusion, information theory
 
 Study on the lower power communications and networking techniques for Massively Distributed Sensor Networks (MDSNs)
-  -	March 2004 –December 2005, 
-  -	Sponsor: Gwangju Institute of Science and Technology (GIST)
-  -	Keywords: Wireless Sensor networks, Distributed detection, fusion techniques, data fusion algorithms
+  - March 2004 –December 2005, 
+  - Sponsor: Gwangju Institute of Science and Technology (GIST)
+  - Keywords: Wireless Sensor networks, Distributed detection, fusion techniques, data fusion algorithms
+
 
 
 ## CURRENT INTERESTS 
+
+* AGI
+ 
+*  Integration Platform as a Service (iPaaS) :  Workflow Automation
+
 * Certification/validation Framework for reliable/Safety AI products/architecture
-* AGI, Clouding Computing(AWS etc.)
 * Smart Manufacturing(Industrie 4.0)
+
 * Mobile(cellular) / wireless communication Protocol
 * IoT, Ubiquitous communication techniques, wireless sensor networks 
+
 * Statistics
 * Information theory
 
-<!-- * IT security  -->
+PKM(Personal Knowledge Management)
+- Obsidian
 
 
 ## SPECIALTIES
-*	Regulation: surveillance, investigation of illegal products and products with potential risks at the stages of their distribution for the Product Safety 
-*	Standards: IEEE 802.16e(Mobile WiMAX) Protocol layer, 3GPP(WCDMA, LTE) Protocol layer(L2~L7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
-*	Design Applications: MATLAB
-*	Programming: C/C++, VHDL
-*	**Swimming** 🏊(😏[생활스포츠지도사](https://sqms.kspo.or.kr/index.kspo) 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
-*	Tennis🎾(🙂intermediate level)
+
+* Regulation:  Product Safety/Confimity
+	* Marekt Surveillance, investigation of illegal products and products with potential risks at the stages of their distribution
+	* Product Incident Investigation
+* Standards: IEEE 802.16e(Mobile WiMAX) Protocol layer, 3GPP(WCDMA, LTE) Protocol layer(L2~L7), IETF RFCs(TCP, IP, HTTP, Authentication, Authorization, and Accounting etc.), OMA(Over The Air Device Management)
+* Design Applications: MATLAB
+* Programming lanague : C/C++, VHDL, Python, SQL
+
+* Workflow Automation tool :  [n8n](https://n8n.io), [make](https://www.make.com/en)
+- DB : Prostgres([supabase](https://supabase.com/))
+
+* **Swimming** 🏊(😏[생활스포츠지도사](https://sqms.kspo.or.kr/index.kspo) 2급 수영, Lifetime sports instructor, Level 2, 문화체육관광부, 2021년 12월)
+* Tennis🎾(🙂intermediate level)
+
 
 
 ## PERSONAL PARTICULARS
+
 *	Date of Birth: December 19, 1978
 *	Citizenship: Korea
 *	Gender: Male
@@ -156,16 +209,18 @@ Study on the lower power communications and networking techniques for Massively 
 *	Military Service: Completed with honorable discharge from Republic of Korea Army (26 months)
 
 
+
 ## HONORS AND AWARDS 
-*	Commendation for the Exemplary Official of the year 2021(The Prime Minister’s Office, June 2021)
 
-*	Commendation for the Excellent Official of the year 2018(Ministry of Trade, Industry and Energy, December 2018)
+* Commendation for the Exemplary Official of the year 2021(The Prime Minister’s Office, June 2021)
 
-*	Commendation for KATS standardization person of the year 2014(Korean Agency for Technology and Standards (KATS), December 2014)
+* Commendation for the Excellent Official of the year 2018(Ministry of Trade, Industry and Energy, December 2018)
 
-*	Government scholarship of 2 years of M.S. course (Ministry of Science and Technology, March 2004 – February 2006)
+* Commendation for KATS standardization person of the year 2014(Korean Agency for Technology and Standards (KATS), December 2014)
 
-*	A series of 5 merit-based scholarships (Ajou university, August 2001 – July 2003)
+* Government scholarship of 2 years of M.S. course (Ministry of Science and Technology, March 2004 – February 2006)
+
+* A series of 5 merit-based scholarships (Ajou university, August 2001 – July 2003)
 
 
 
