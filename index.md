@@ -1,6 +1,7 @@
 ---
 layout: home
 author_profile: true
+header:
+  image: /assets/images/cover-photo.jpeg
+  caption: "Bad Hindelang"
 ---
-
-<img src="/assets/images/cover-photo.jpg" alt="Bad Hindelang" height="400">
