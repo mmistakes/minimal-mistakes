@@ -8,9 +8,9 @@ Algumas expressões típicas são:
 
 Das ist mir wurst-"Isso pra mim é linguiça" quer dizer que algo é indiferente, que tanto faz, que não tem importância. Afinal, é isso é só uma linguiça. 
 
-Das ist sau lustig - "Isso é divertido como um porco" é algo muito divertido,extremamente engraçado. Pessoalmente acho meio estranha essa expressão, imagino que tenha a ver com o porco ser um animal "sujo", assim como o humor também pode ser.
+Das ist sau lustig - "Isso é divertido como um porco" é algo muito divertido, extremamente engraçado. Pessoalmente acho meio estranha essa expressão, imagino que tenha a ver com o porco ser um animal "sujo", assim como o humor também pode ser.
 
-Kuh auf dem Eis-"Vaca no gelo" só pode ser um problemão, imagina! "Temos que tirar a vaca do gelo" quer dizer "temos que resolver isso". Espero que nunca tenha havido de fato uma vaca em cima de um lago congelado, mas se a expressão existe, é porque já teve ter acontecido.
+Kuh auf dem Eis-"Vaca no gelo" só pode ser um problemão, imagina! "Temos que tirar a vaca do gelo" quer dizer "temos que resolver isso". Espero que nunca tenha havido de fato uma vaca em cima de um lago congelado, mas se a expressão existe, é porque já deve ter acontecido.
 Essa última escutei só no Allgäu mesmo. Como seria essa expressão no Brasil? Desatolar a vaca?
 
 Aus der Schublade ziehen -  "desengavetar". Essa é igual a expressão em Português "tirar da gaveta".
