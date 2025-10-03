@@ -10,21 +10,72 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
-    {% endif %}
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+{%- if post.collection == "publications" -%}
+  <div class="{{ include.type | default: 'list' }}__item pub-bibl" data-year="{{ post.year | default: '' }}" data-type="{{ post.type | default: '' }}">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
+      {%- comment -%} Bibliography-style single-line entry: Title. Authors. Venue, Year. {%- endcomment -%}
+
+      <p class="bibl-entry">
+        {%- comment -%} Title (only title links to the publication page) {%- endcomment -%}
+  <span class="bibl-title">{% if post.link %}<a class="bibl-link" href="{{ post.link }}">{{ title }}</a>{% else %}<a class="bibl-link" href="{{ post.url | relative_url }}">{{ title }}</a>{% endif %}</span>
+
+        {%- comment -%} Authors: support person keys and strings; render as a human-readable list {%- endcomment -%}
+        <span class="bibl-authors">
+        {%- for a in post.authors -%}
+          {%- assign match = nil -%}
+          {%- for p in site.people -%}
+            {%- if a == p.key -%}{% assign match = p %}{% break %}{%- endif -%}
+          {%- endfor -%}
+
+          {%- if match -%}
+            {%- if match.first_name and match.last_name -%}
+              <a href="{{ match.url | relative_url }}">{{ match.first_name }} {{ match.last_name }}</a>
+            {%- elsif match.title and match.title != "" -%}
+              <a href="{{ match.url | relative_url }}">{{ match.title }}</a>
+            {%- else -%}
+              <a href="{{ match.url | relative_url }}">{{ a }}</a>
+            {%- endif -%}
+          {%- else -%}
+            {{ a }}
+          {%- endif -%}
+
+          {%- unless forloop.last -%}
+            {%- if forloop.index == post.authors.size - 1 -%}
+              &nbsp;&amp;&nbsp;
+            {%- else -%}
+              ,&nbsp;
+            {%- endif -%}
+          {%- endunless -%}
+        {%- endfor -%}
+        </span>.
+
+        {%- comment -%} Venue and year: venue in italic, year after comma {%- endcomment -%}
+  <span class="bibl-venue">{%- if post['journal-short'] %}<em>{{ post['journal-short'] }}</em>{% elsif post.venue %}<em>{{ post.venue }}</em>{% endif -%}</span>{% if post.year %}, <span class="bibl-year">{{ post.year }}</span>{% endif %}.{% if post.award and post.award != "" %} <span class="pub-award" role="note" aria-label="award">⭐&nbsp;{{ post.award }}</span>{% endif %}
+      </p>
+
+    </article>
+  </div>
+
+  {%- comment -%} Styles migrated to `_sass/_publications.scss` {%- endcomment -%}
+
+{%- else -%}
+  {%- comment -%} Fallback: render the default archive item for non-publication collections {%- endcomment -%}
+  <div class="{{ include.type | default: 'list' }}__item" data-year="{{ post.year | default: '' }}" data-type="{{ post.type | default: '' }}">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %} data-year="{{ post.year | default: '' }}" data-type="{{ post.type | default: '' }}">
+      {% if include.type == "grid" and teaser %}
+        <div class="archive__item-teaser">
+          <img src="{{ teaser | relative_url }}" alt="">
+        </div>
       {% endif %}
-    </h2>
-    {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
-  </article>
-</div>
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
+      {% include page__meta.html type=include.type %}
+      {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    </article>
+  </div>
+{%- endif -%}
