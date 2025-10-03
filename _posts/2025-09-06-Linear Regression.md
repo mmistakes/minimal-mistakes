@@ -35,6 +35,11 @@ y = np.array([2.1, 4.3, 5.8, 8.2, 9.5])
 # path to your CSV file
 data = pd.read_csv('/data.csv')
 
+# you can also load from Excel
+data = pd.read_excel('/data.xlsx')
+
+# you must choose between excel or csv, not both
+
 x = data['column 1'].values.reshape(-1, 1)
 y = data['column 2'].values
 ```
