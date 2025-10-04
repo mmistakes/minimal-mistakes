@@ -5,6 +5,7 @@
 ### Enhancements
 
 - Updated Traditional Chinese translation (#5250)
+- Add built-in support for jekyll-gfm-admonitions (#5312)
 
 ## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
 
