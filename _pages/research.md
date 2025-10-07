@@ -56,6 +56,26 @@ layout: splash
 
 
 <div class="research-grid">
+
+<div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
+    <h3>DINOHash: Learning Adversarially Robust Perceptual Hashes from Self-Supervised Features</h3>
+    <p> An open-source framework for robust perceptual image hashing, DINOHash enables secure and transformation-resilient provenance detection of AI-generated images.</p>
+    <div class="research-links">
+      <a href="https://openreview.net/pdf?id=HrGa8Mq2NE" 
+      target="_blank">Paper</a>
+  </div>
+  </div>
+
+<div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
+    <h3>SPD Attack - Prevention of AI Powered Image Editing by Image Immunization</h3>
+    <p> An analysis of methods to safeguard images against misuse in image-to-image editing models through reproduction and extension of existing research across various models and datasets.</p>
+    <div class="research-links">
+      <a href="https://iclr-blogposts.github.io/2025/blog/spd/" 
+      target="_blank">Paper</a>
+  </div>
+  </div>
   
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
