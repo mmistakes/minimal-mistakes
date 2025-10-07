@@ -143,7 +143,8 @@ We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbre
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/tushar.jpeg" alt="Tushar">
     <h3><a href="{{ site.baseurl }}/members/Tushar">Tushar</a></h3>
-
+  </div>
+  
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/akshat_tomar.jpg" width="200" height="200" alt="Akshat Tomar">
     <h3><a href="{{ site.baseurl }}/members/akshat">Akshat Tomar</a></h3>
