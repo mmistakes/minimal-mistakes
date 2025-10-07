@@ -56,13 +56,23 @@ layout: splash
 
 
 <div class="research-grid">
-
+  
+  <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
+    <h3>From Teacher to Student: Tracking Memorization Through Model Distillation</h3>
+    <p> An analysis of knowledge distillation effects on memorization in fine-tuned language models</p>
+    <div class="research-links">
+      <a href="https://aclanthology.org/2025.l2m2-1.6/" 
+      target="_blank">Paper</a>
+  </div>
+  </div>
+  
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/Revisiting_CroPA.png" alt="Paper 1">
     <h3>Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in Vision-Language Models</h3>
     <p>In this study, we conduct a comprehensive reproducibility study of "An Image is Worth 1000 Lies: Adversarial Transferability Across Prompts on Vision-Language Models" validating the Cross-Prompt Attack (CroPA), and also proposing several key improvements to the framework.</p>
     <div class="research-links">
-      <a href="https://openreview.net/forum?id=5L90cl0xtf" target="_blank">Paper</a>
+      <a href="https://arxiv.org/abs/2506.22982" target="_blank">Paper</a>
       <a href="https://github.com/Swadesh06/Revisting_CroPA" target="_blank">GitHub</a>
     </div>
   </div>
@@ -150,6 +160,5 @@ Editing</h3>
       <a href="https://github.com/dsgiitr/repo" target="_blank">GitHub</a>
   </div>
   </div>
-   
 
 </div>
