@@ -49,6 +49,6 @@ layout: single
 ---
 
 ## Follow
-[GitHub](https://github.com/FireLord2005) | [LinkedIn](www.linkedin.com/in/amritanshu-tiwari-2569a7279) 
+[GitHub](https://github.com/FireLord2005) | [LinkedIn](https://www.linkedin.com/in/amritanshu-tiwari-2569a7279) 
 
 ---
