@@ -60,7 +60,7 @@ layout: splash
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
     <h3>From Teacher to Student: Tracking Memorization Through Model Distillation</h3>
-    <p> An analysis of knowledge distillation effects on memorization in fine-tuned language models</p>
+    <p> An analysis of knowledge distillation effects on memorization in fine-tuned language models, showing that distillation from large teachers to smaller students mitigates memorization risks while improving efficiency.</p>
     <div class="research-links">
       <a href="https://aclanthology.org/2025.l2m2-1.6/" 
       target="_blank">Paper</a>
