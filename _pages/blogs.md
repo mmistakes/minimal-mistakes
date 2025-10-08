@@ -200,7 +200,7 @@ layout: splash
     <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/activation/af.png" alt="Activation functions - Aayan Yadav" class="blog-img">
       <h3><a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3">Activation functions: Blogathon 2023</a></h3>
-      <p class="excerpt">Ever wondered how neural networks mimic the human brain to make decisions? Explore the role of activation functions in training these networks, and dive into popular functions that help improve accuracy and learning efficiency.</p>
+      <p class="excerpt">Find out how neural networks mimic the human brain to make decisions using activation functions, to help improve accuracy and learning efficiency.</p>
     </div>
     <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" alt="Baby steps with Tensorflow #1" class="blog-img">
@@ -324,8 +324,8 @@ layout: splash
 
   <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/randomized_smoothing/rs.png" alt="Randomized Smoothing" class="blog-img">
-      <h3><a href="https://stump-opal-f29.notion.site/Randomized-Smoothing-Smoothing-your-way-to-Certified-Robustness-a2e2a45134c9440bbfa0f951864c2f0f">Randomized Smoothing: Smoothing your way to Certified Robustness</a></h3>
-      <p class="excerpt">Just like white-hat hacking strengthens cybersecurity, adversarial machine learning is all about fortifying AI models against attacks-let's dive into how this critical field is shaping the future of safe, reliable AI.</p>
+      <h3><a href="https://stump-opal-f29.notion.site/Randomized-Smoothing-Smoothing-your-way-to-Certified-Robustness-a2e2a45134c9440bbfa0f951864c2f0f">Randomized Smoothing</a></h3>
+      <p class="excerpt">Smoothe your way to Certified Robustness using adversarial machine learning, which is all about fortifying AI models against attacks, critical in shaping the future of safe, reliable AI.</p>
     </div>
   
   <div class="blog-card">
@@ -359,15 +359,15 @@ layout: splash
     </div>
     
   <div class="blog-card">
-      <img src="{{ site.baseurl }}/assets/images/blogs/transformers/transformers.png" alt="Transformers like never before! - Parth Badgujar" class="blog-img">
-      <h3><a href="https://medium.com/@parthbadgujar/d1b670c79725">Transformers like never before!: Blogathon 2023</a></h3>
+      <img src="{{ site.baseurl }}/assets/images/blogs/transformers/transformers.png" alt="Transformers Like Never Before! - Parth Badgujar" class="blog-img">
+      <h3><a href="https://medium.com/@parthbadgujar/d1b670c79725">Transformers Like Never Before: Blogathon 2023</a></h3>
       <p class="excerpt">Discover how Attention in transformers helps neural networks focus on important information, improving performance through queries, keys, and values.</p>
     </div>
 
   <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/lora/lora.png" alt="Using LoRA to train LLMs efficiently" class="blog-img">
-      <h3><a href="https://medium.com/@advika9shilpi/using-lora-to-train-llms-efficiently-c339eafc7f47">Using LoRA to train LLMs efficiently</a></h3>
-      <p class="excerpt">LoRA revolutionizes fine-tuning for LLMs by reducing computational overhead and memory usage, making domain-specific training faster and more efficient without compromising performance. Click to find out how!</p>
+      <h3><a href="https://medium.com/@advika9shilpi/using-lora-to-train-llms-efficiently-c339eafc7f47">Using LoRA to Train LLMs efficiently</a></h3>
+      <p class="excerpt">Click to find out how LoRA revolutionizes fine-tuning for LLMs without compromising performance. </p>
     </div>
 
    <div class="blog-card">
