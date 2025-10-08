@@ -1,0 +1,57 @@
+/* Styles for publication bibliography entries */
+
+
+.pub-bibl { margin: 0 0 0.75rem 0; }
+.bibl-entry { margin: 0; line-height: 1.45; font-size: 0.99rem; color: inherit; }
+.bibl-title { font-weight: 600; }
+.bibl-link { color: inherit; text-decoration: none; border-bottom: none; }
+.bibl-link:focus, .bibl-link:hover { text-decoration: none; outline: 2px solid rgba(0,146,202,0.12); border-radius: 3px; }
+.bibl-authors { font-variant: small-caps; font-weight: 400; color: #444; margin-left: 0.25rem; }
+.bibl-venue { margin-left: 0.25rem; color: #333; }
+.bibl-year { font-weight: 600; }
+.pub-award { margin-left: .5rem; font-size: .85em; vertical-align: text-top; padding: 0 .25rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 3px; }
+
+/* Punctuation and spacing per Butterick: prefer periods between logical chunks and thin spaces around ampersands */
+.bibl-authors a { text-decoration: none; color: inherit; transition: color 150ms ease-in-out; }
+.bibl-authors a:hover,
+.bibl-authors a:focus {
+	color: var(--site-primary, #0092ca);
+	outline: none;
+}
+.bibl-authors a:focus-visible {
+	/* visible focus ring for keyboard users */
+	box-shadow: 0 0 0 3px rgba(0,146,202,0.18);
+	border-radius: 3px;
+}
+
+/* Use CSS variable fallbacks to avoid referencing Sass variables that may be undefined
+	 in different build environments. The site's skin can set `--site-primary` (CSS custom
+	 property) or the fallback color #0092ca will be used. */
+
+/* noUiSlider small overrides scoped to pub filters */
+.pub-filters {
+	/* prefer a CSS custom property so skins can override at runtime; fall back to hex */
+	.noUi-connect { background: var(--site-primary, #0092ca) !important; height: 6px; border-radius: 4px; }
+	/* handle border uses a neutral darker tint to ensure contrast; avoid mixing with CSS var */
+	.noUi-handle { border-color: rgba(0,0,0,0.15) !important; }
+	.noUi-handle { background: #fff !important; }
+	.noUi-tooltip { border-color: rgba(0,0,0,0.08); }
+}
+
+/* Use CSS custom property for award border and a subtle fallback background */
+.pub-award {
+	border-color: var(--site-primary, #0092ca);
+	background: rgba(0,146,202,0.04); /* subtle fallback tint */
+}
+
+/* Slider sizing and label placement for publications filter */
+.year-slider-row { width:100%; display:flex; align-items:center; }
+.year-slider-row .dual-range { flex:1 1 auto; max-width:520px; }
+.year-value { min-width:48px; text-align:center; color: #333; font-weight:600 }
+.year-value.year-min { text-align:left }
+.year-value.year-max { text-align:right }
+
+/* Make the noUi-target itself slimmer and vertically center handles */
+.pub-filters .noUi-target { height: 10px; padding: 6px 0; }
+.pub-filters .noUi-horizontal .noUi-handle { top: -6px; width: 14px; height: 14px; }
+
