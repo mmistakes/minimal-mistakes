@@ -50,7 +50,22 @@
         </span>.
 
         {%- comment -%} Venue and year: venue in italic, year after comma {%- endcomment -%}
-  <span class="bibl-venue">{%- if post['journal-short'] %}<em>{{ post['journal-short'] }}</em>{% elsif post.venue %}<em>{{ post.venue }}</em>{% endif -%}</span>{% if post.year %}, <span class="bibl-year">{{ post.year }}</span>{% endif %}.{% if post.award and post.award != "" %} <span class="pub-award" role="note" aria-label="award">⭐&nbsp;{{ post.award }}</span>{% endif %}
+  {%- assign venue_text = '' -%}
+  {%- if post['journal-short'] %}
+    {%- assign venue_text = '<em>' | append: post['journal-short'] | append: '</em>' -%}
+  {%- elsif post.venue %}
+    {%- assign venue_text = '<em>' | append: post.venue | append: '</em>' -%}
+  {%- endif -%}
+  {%- if venue_text != '' -%}
+    <span class="bibl-venue">{{ venue_text | strip_newlines }}</span>{% if post.year %}, <span class="bibl-year">{{ post.year }}</span>{% endif %}.
+  {%- else -%}
+    {%- if post.year %}
+      <span class="bibl-year">{{ post.year }}</span>.
+    {%- else -%}
+      <!-- no venue or year; nothing to show here -->
+    {%- endif -%}
+  {%- endif -%}
+  {%- if post.award and post.award != "" %} <span class="pub-award" role="note" aria-label="award">⭐&nbsp;{{ post.award }}</span>{% endif %}
       </p>
 
     </article>
