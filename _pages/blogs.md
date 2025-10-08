@@ -246,8 +246,8 @@ layout: splash
     </div>
 
     <div class="blog-card">
-      <img src="{{ site.baseurl }}/assets/images/blogs/dt/dt_blog.jpg" alt="Decision Trees: Blogathon 2025" class="blog-img">
-      <h3><a href="https://medium.com/@laabhanvi_j/decision-trees-7183a72c78d6">Decision Trees - Laabhanvi Jain</a></h3>
+      <img src="{{ site.baseurl }}/assets/images/blogs/dt2025/decision_trees_2025.png" alt="Decision Trees - Laabhanvi Jain" class="blog-img">
+      <h3><a href="https://medium.com/@laabhanvi_j/decision-trees-7183a72c78d6">Decision Trees: Blogathon 2025</a></h3>
       <p class="excerpt">A Blogathon 2025 submission that goes deep into the maths and theory behind how a machine pick the best decision for a given problem through a series of questions</p>
     </div>
 
@@ -306,9 +306,9 @@ layout: splash
     </div>
 
    <div class="blog-card">
-      <img src="{{ site.baseurl }}/assets/images/blogs/regularization/regularization_blog.png" alt="Regularization Clarified" class="blog-img">
-      <h3><a href="{{ site.baseurl }}/blogs/regularization">Regularization. Clarified.</a></h3>
-      <p class="excerpt">Worried about overfitting? Learn how regularization techniques are the unsung heroes that make your models generalize better.</p>
+      <img src="{{ site.baseurl }}/assets/images/blogs/pca/pca.png" alt="PCA - Advika Sinha" class="blog-img">
+      <h3><a href="https://medium.com/@advika9shilpi/principal-component-analysis-solution-to-dimensionality-curse-in-ml-fd318d763633">Principal Component Analysis: Blogathon 2024</a></h3>
+      <p class="excerpt">find out how PCA is like a data GPS, and the covariance matrix is the engine that drives it!</p>
     </div>
 
    <div class="blog-card">
