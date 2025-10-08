@@ -245,6 +245,12 @@ layout: splash
       <p class="excerpt">From theory to practice—unlock the secrets behind Decision Trees and how they power many machine learning algorithms.</p>
     </div>
 
+    <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/dt/dt_blog.jpg" alt="Decision Trees: Blogathon 2025" class="blog-img">
+      <h3><a href="https://medium.com/@laabhanvi_j/decision-trees-7183a72c78d6">Decision Trees - Laabhanvi Jain</a></h3>
+      <p class="excerpt">A Blogathon 2025 submission that goes deep into the maths and theory behind how a machine pick the best decision for a given problem through a series of questions</p>
+    </div>
+
    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/deepwalk/deepwalk_blog.png" alt="Understanding Deepwalk" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/deepwalk">Understanding Deepwalk</a></h3>
