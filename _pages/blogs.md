@@ -202,8 +202,6 @@ layout: splash
       <h3><a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3">Activation functions: Blogathon 2023</a></h3>
       <p class="excerpt">Ever wondered how neural networks mimic the human brain to make decisions? Explore the role of activation functions in training these networks, and dive into popular functions that help improve accuracy and learning efficiency.</p>
     </div>
-
-  <div class="blog-grid">
     <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" alt="Baby steps with Tensorflow #1" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/babysteps_tf1">Baby steps with Tensorflow #1</a></h3>
@@ -252,7 +250,7 @@ layout: splash
       <p class="excerpt">From theory to practice—unlock the secrets behind Decision Trees and how they power many machine learning algorithms.</p>
     </div>
 
-    <div class="blog-card">
+  <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/dt2025/decision_trees_2025.png" alt="Decision Trees - Laabhanvi Jain" class="blog-img">
       <h3><a href="https://medium.com/@laabhanvi_j/decision-trees-7183a72c78d6">Decision Trees: Blogathon 2025</a></h3>
       <p class="excerpt">A Blogathon 2025 submission that goes deep into the maths and theory behind how a machine pick the best decision for a given problem through a series of questions</p>
@@ -294,6 +292,12 @@ layout: splash
       <p class="excerpt">Struggling with your Hugo setup? Get the step-by-step guide for setting up Timer Hugo for a smoother experience.</p>
     </div>
 
+  <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/sgi/mesh_fairing.png" alt="Mesh Fairing - SGI 2025 at MIT" class="blog-img">
+      <h3><a href="https://summergeometry.org/sgi2025/ironing-out-wrinkles-with-mesh-fairing/">Ironing Out Wrinkles with Mesh Fairing</a></h3>
+      <p class="excerpt">Your triangle mesh looking wrinkled? Come explore how surface fairing smooths out those geometry wrinkles, making your meshes cleaner and more reliable for rendering and physics!</p>
+    </div>
+
    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/logistic/logistic_blog.jpg" alt="Logistic Regression Simplified" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/logistic">Logistic Regression. Simplified.</a></h3>
@@ -316,6 +320,12 @@ layout: splash
       <img src="{{ site.baseurl }}/assets/images/blogs/pca/pca.png" alt="PCA - Advika Sinha" class="blog-img">
       <h3><a href="https://medium.com/@advika9shilpi/principal-component-analysis-solution-to-dimensionality-curse-in-ml-fd318d763633">Principal Component Analysis: Blogathon 2024</a></h3>
       <p class="excerpt">Find out how PCA is like a data GPS, and the covariance matrix is the engine that drives it, crunching the numbers to reveal the hidden patterns!!</p>
+    </div>
+
+  <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/randomized_smoothing/rs.png" alt="Randomized Smoothing" class="blog-img">
+      <h3><a href="https://stump-opal-f29.notion.site/Randomized-Smoothing-Smoothing-your-way-to-Certified-Robustness-a2e2a45134c9440bbfa0f951864c2f0f">Randomized Smoothing: Smoothing your way to Certified Robustness</a></h3>
+      <p class="excerpt">Just like white-hat hacking strengthens cybersecurity, adversarial machine learning is all about fortifying AI models against attacks-let's dive into how this critical field is shaping the future of safe, reliable AI.</p>
     </div>
   
   <div class="blog-card">
@@ -352,6 +362,12 @@ layout: splash
       <img src="{{ site.baseurl }}/assets/images/blogs/transformers/transformers.png" alt="Transformers like never before! - Parth Badgujar" class="blog-img">
       <h3><a href="https://medium.com/@parthbadgujar/d1b670c79725">Transformers like never before!: Blogathon 2023</a></h3>
       <p class="excerpt">Discover how Attention in transformers helps neural networks focus on important information, improving performance through queries, keys, and values.</p>
+    </div>
+
+  <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/lora/lora.png" alt="Using LoRA to train LLMs efficiently" class="blog-img">
+      <h3><a href="https://medium.com/@advika9shilpi/using-lora-to-train-llms-efficiently-c339eafc7f47">Using LoRA to train LLMs efficiently</a></h3>
+      <p class="excerpt">LoRA revolutionizes fine-tuning for LLMs by reducing computational overhead and memory usage, making domain-specific training faster and more efficient without compromising performance. Click to find out how!</p>
     </div>
 
    <div class="blog-card">
