@@ -198,6 +198,13 @@ layout: splash
 
   <div class="blog-grid">
     <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/activation/af.png" alt="Activation functions - Aayan Yadav" class="blog-img">
+      <h3><a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3">Activation functions: Blogathon 2023</a></h3>
+      <p class="excerpt">Ever wondered how neural networks mimic the human brain to make decisions? Explore the role of activation functions in training these networks, and dive into popular functions that help improve accuracy and learning efficiency.</p>
+    </div>
+
+  <div class="blog-grid">
+    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/babysteps_with_tf/babysteps_tf1.jpg" alt="Baby steps with Tensorflow #1" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/babysteps_tf1">Baby steps with Tensorflow #1</a></h3>
       <p class="excerpt">A beginner's guide to understanding TensorFlow and its application in deep learning.</p>
@@ -308,7 +315,19 @@ layout: splash
    <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/pca/pca.png" alt="PCA - Advika Sinha" class="blog-img">
       <h3><a href="https://medium.com/@advika9shilpi/principal-component-analysis-solution-to-dimensionality-curse-in-ml-fd318d763633">Principal Component Analysis: Blogathon 2024</a></h3>
-      <p class="excerpt">find out how PCA is like a data GPS, and the covariance matrix is the engine that drives it!</p>
+      <p class="excerpt">Find out how PCA is like a data GPS, and the covariance matrix is the engine that drives it, crunching the numbers to reveal the hidden patterns!!</p>
+    </div>
+  
+  <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/regularization/regularization_blog.png" alt="Regularization Clarified" class="blog-img">
+      <h3><a href="{{ site.baseurl }}/blogs/regularization">Regularization. Clarified.</a></h3>
+      <p class="excerpt">Worried about overfitting? Learn how regularization techniques are the unsung heroes that make your models generalize better.</p>
+    </div>
+
+  <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/regularization2023/regularization.png" alt="Understanding Regularization Algorithms in Regression-Agam Pandey" class="blog-img">
+      <h3><a href="https://medium.com/@agam.pandeyy/understanding-regularization-regressions-ebb1fe928c0d">Regularization Algorithms in Regression: Blogathon 2023</a></h3>
+      <p class="excerpt">Regression models too rigid or too flexible? Learn how regularization strikes the perfect balance, enhancing model accuracy and generalization.</p>
     </div>
 
    <div class="blog-card">
@@ -327,6 +346,12 @@ layout: splash
       <img src="{{ site.baseurl }}/assets/images/blogs/svd/svd_blog.png" alt="Singular Value Decomposition" class="blog-img">
       <h3><a href="{{ site.baseurl }}/blogs/svd">Singular Value Decomposition. Elucidated.</a></h3>
       <p class="excerpt">SVD might sound intimidating, but it's actually one of the most useful techniques in data science. Let's break it down and make it crystal clear.</p>
+    </div>
+    
+  <div class="blog-card">
+      <img src="{{ site.baseurl }}/assets/images/blogs/transformers/transformers.png" alt="Transformers like never before! - Parth Badgujar" class="blog-img">
+      <h3><a href="https://medium.com/@parthbadgujar/d1b670c79725">Transformers like never before!: Blogathon 2023</a></h3>
+      <p class="excerpt">Discover how Attention in transformers helps neural networks focus on important information, improving performance through queries, keys, and values.</p>
     </div>
 
    <div class="blog-card">
