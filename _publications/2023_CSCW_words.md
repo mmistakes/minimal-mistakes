@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "words matter || mattering words"
+title: "words matter &#124;&#124; mattering words"
 key: 2023_CSCW_words
 type: abstract
 order: 2023-11

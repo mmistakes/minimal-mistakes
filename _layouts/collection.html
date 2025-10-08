@@ -150,6 +150,10 @@ layout: archive
           {%- endfor -%}
         </div>
       </div>
+      <div class="pub-order-control" style="margin-left:auto; display:flex; align-items:center; gap:.5rem">
+        <label for="pub-order-toggle" class="filter-label">Order:</label>
+        <button id="pub-order-toggle" class="btn" aria-pressed="false" title="Toggle publications order">Newest first</button>
+      </div>
     </div>
 
     <div class="pub-filter-year-row">
@@ -270,6 +274,8 @@ layout: archive
 
           // run initial pass to apply default slider range
           applyFilters(minYear, maxYear);
+          // expose for other scripts (ordering toggle) to call
+          window.applyFilters = applyFilters;
         } catch(e){
           // fallback: if slider fails, show all
           console.warn('noUiSlider init failed', e);
@@ -277,6 +283,58 @@ layout: archive
       }
       // ensure type selector still triggers filtering even if slider failed to load
       if(typeSel){ typeSel.addEventListener && typeSel.addEventListener('change', function(){ applyFilters(); }); }
+    })();
+  </script>
+
+  <script>
+    // Ordering toggle for publications list. This reverses the DOM children in-place
+    // and stores the state in the `order` query param (order=reverse). Default is newest-first.
+    (function(){
+      var btn = document.getElementById('pub-order-toggle');
+      var list = document.getElementById('publications-list');
+      if(!btn || !list) return;
+
+      function getQueryParam(name){
+        var params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+
+      function setQueryParam(name, value){
+        var url = new URL(window.location.href);
+        var params = url.searchParams;
+        if(value === null){ params.delete(name); } else { params.set(name, value); }
+        // Use pushState to avoid reload
+        window.history.pushState({}, '', url.pathname + (params.toString() ? ('?' + params.toString()) : '') + url.hash);
+      }
+
+      function reverseList(){
+        // Reverse only direct children to preserve structure
+        var children = Array.prototype.slice.call(list.children);
+        for(var i = children.length - 1; i >= 0; i--){
+          list.appendChild(children[i]);
+        }
+      }
+
+      function setButtonState(reversed){
+        btn.setAttribute('aria-pressed', reversed ? 'true' : 'false');
+        btn.textContent = reversed ? 'Oldest first' : 'Newest first';
+      }
+
+      // Initialize from URL
+      var isReverse = (getQueryParam('order') === 'reverse');
+      if(isReverse){ reverseList(); }
+      setButtonState(isReverse);
+
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        // Toggle
+        isReverse = !isReverse;
+        reverseList();
+        setButtonState(isReverse);
+        setQueryParam('order', isReverse ? 'reverse' : null);
+        // Re-apply filters to respect visibility rules after reordering
+        if(window.applyFilters) try{ window.applyFilters(); } catch(e){}
+      });
     })();
   </script>
 
