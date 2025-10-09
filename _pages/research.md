@@ -58,7 +58,7 @@ layout: splash
 <div class="research-grid">
 
 <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/DINOHash.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/DINOHash.png" alt="Paper 12">
     <h3>DINOHash: Learning Adversarially Robust Perceptual Hashes from Self-Supervised Features</h3>
     <p> An open-source framework for robust perceptual image hashing, DINOHash enables secure and transformation-resilient provenance detection of AI-generated images.</p>
     <div class="research-links">
@@ -68,7 +68,7 @@ layout: splash
   </div>
 
 <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/blogpost.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/blogpost.png" alt="Paper 11">
     <h3>SPD Attack - Prevention of AI Powered Image Editing by Image Immunization</h3>
     <p> An analysis of methods to safeguard images against misuse in image-to-image editing models through reproduction and extension of existing research across various models and datasets.</p>
     <div class="research-links">
@@ -78,7 +78,7 @@ layout: splash
   </div>
   
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/img-model-distillation.jpg" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/img-model-distillation.jpg" alt="Paper 10">
     <h3>From Teacher to Student: Tracking Memorization Through Model Distillation</h3>
     <p> An analysis of knowledge distillation effects on memorization in fine-tuned language models, showing that distillation from large teachers to smaller students mitigates memorization risks while improving efficiency.</p>
     <div class="research-links">
@@ -88,7 +88,7 @@ layout: splash
   </div>
   
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/Revisiting_CroPA.png" alt="Paper 1">
+    <img src="{{ site.baseurl }}/assets/images/research/Revisiting_CroPA.png" alt="Paper 9">
     <h3>Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in Vision-Language Models</h3>
     <p>In this study, we conduct a comprehensive reproducibility study of "An Image is Worth 1000 Lies: Adversarial Transferability Across Prompts on Vision-Language Models" validating the Cross-Prompt Attack (CroPA), and also proposing several key improvements to the framework.</p>
     <div class="research-links">
@@ -98,7 +98,7 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/ReCUDA.png" alt="Paper 1">
+    <img src="{{ site.baseurl }}/assets/images/research/ReCUDA.png" alt="Paper 8">
     <h3>[Re] CUDA: Curriculum of Data Augmentation for Long‐tailed Recognition</h3>
     <p>Using classwise degree of data augmentation to tackle class imbalance in long tailed dataset</p>
     <div class="research-links">
@@ -108,7 +108,7 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/RiemannSum.png" alt="Paper 2">
+    <img src="{{ site.baseurl }}/assets/images/research/RiemannSum.png" alt="Paper 7">
     <h3>Riemann Sum Optimization for Accurate Integrated Gradients Computation</h3>
     <p>A mathematical framework to reduce computational complexity of Integrated Gradients</p>
     <div class="research-links">
@@ -118,7 +118,7 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/StrengtheningInterpretability.png" alt="Paper 3">
+    <img src="{{ site.baseurl }}/assets/images/research/StrengtheningInterpretability.png" alt="Paper 6">
     <h3>A reproducability study of Important Direction Gradient Integration (IDGI)</h3>
     <p>Highlight key results or methods involved in 1-2 lines.</p>
     <div class="research-links">
@@ -128,7 +128,7 @@ layout: splash
   </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 4">
+    <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 5">
     <h3>Rethinking Randomized Smoothing from the Perspective of Scalability</h3>
     <p>A study on randomized smoothing, analysed from the perspective of scalability as a challenge to its continued application</p>
     <div class="research-links">
@@ -139,7 +139,7 @@ layout: splash
 
 
  <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/ImageAlchemy.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/ImageAlchemy.png" alt="Paper 4">
     <h3>Image-Alchemy: Advancing Subject Fidelity in Personalized Text-to-Image Generation</h3>
     <p> A two-stage personalization pipeline for personalized image generation using LoRA-based attention fine-tuning and segmentation-guided Img2Img synthesis.</p>
     <div class="research-links">
@@ -149,7 +149,7 @@ layout: splash
    </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/FluxWatermarking.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/FluxWatermarking.png" alt="Paper 3">
     <h3>Detection Limits and Statistical Separability of Tree Ring Watermarks in Rectified Flow-based Text-to-Image Generation Models</h3>
     <p> Tree Ring Watermarks are harder to detect in modern rectified flow-based models compared to traditional diffusion models, especially under image attacks.</p>
     <div class="research-links">
@@ -159,7 +159,7 @@ layout: splash
     </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/OneNoisetoFool.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/OneNoisetoFool.png" alt="Paper 2">
     <h3>One Noise to Fool Them All: Universal Adversarial Defenses Against Image
 Editing</h3>
     <p> Image immunization involves adding undetectable noise in images to prevent editing via diffusion models. We furthur extended this to multiple images using a single noise.
@@ -171,7 +171,7 @@ Editing</h3>
 </div>
 
   <div class="research-card">
-    <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 5">
+    <img src="{{ site.baseurl }}/assets/images/research/LanguageGuidance.png" alt="Paper 1">
     <h3>Impact of Language Guidance: A Reproducibility Study</h3>
     <p> A reproducability study of Language guidance on self-supervised learning frameworks</p>
     <div class="research-links">
