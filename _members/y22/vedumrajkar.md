@@ -4,7 +4,6 @@ permalink: /members/vedumrajkar
 layout: single
 ---
 
-# Ved Umrajkar
 <img src="{{ site.baseurl }}/assets/images/members/y22/vedumrajkar.jpeg" width="200" height="200" alt="Ved Umrajkar">
 
 *Joint Secretary, Data Science Group IIT Roorkee (2024-2025)*  
@@ -13,7 +12,7 @@ layout: single
 ---
 
 ## Education  
-- **BS-MS**, Mathematics and Computing, IIT Roorkee (2021–2026)  
+- **Bachelors and Masters**, Mathematics and Computing, IIT Roorkee (2021–2026)  
 
 ---
 
