@@ -47,7 +47,7 @@ This theme comes in 11 different skins (in addition to the default one).
 
 | `catppuccin_latte` | `catppuccin_mocha` |
 | --- | --- |
-| [catppuccin_latte skin](./assets/images/catppuccin_latte-skin-archive-large.png) | [catppuccin_mocha skin](./assets/images/catppuccin_mocha-skin-archive-large.png) |
+| ![catppuccin_latte skin](./assets/images/catppuccin_latte-skin-archive-large.png) | ![catppuccin_mocha skin](./assets/images/catppuccin_mocha-skin-archive-large.png) |
 ## Demo pages
 
 | Name                                        | Description                                           |
