@@ -54,6 +54,19 @@ layout: splash
 </style>
 
 
+<div class="research-grid">
+
+<div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/dac-lora.png" alt="Paper 13">
+    <h3>DAC-LoRA: Dynamic Adversarial Curriculum for Efficient and Robust Few-Shot Adaptation</h3>
+    <p>A generalized framework that uses a dynamic, adversarial curriculum to make Vision-Language Models (VLMs) more robust against attacks, improving efficiency and few-shot adaptation</p>
+    <div class="research-links">
+      <a href="https://arxiv.org/abs/2509.20792" 
+      target="_blank">Paper</a>
+  </div>
+  </div>
+
+
 
 <div class="research-grid">
 
