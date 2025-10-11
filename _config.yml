@@ -116,7 +116,7 @@ author:
   name             : "Kang Humin"
   avatar           : "/assets/images/computerpepe.png"
   bio              : "보안 학습을 기록하는 블로그"
-  bio              : "상명대학교 정보보안공학과"
+  bio2              : "상명대학교 정보보안공학과"
   location         : # "South Korea"
   email            : # "khm037723@gmail.com"
   links:
