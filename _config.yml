@@ -120,8 +120,8 @@ author:
   email            : "khm037723@gmail.com"
   links:
     - label: "Email"
-      icon: "khm037723@gmail.com"
-      # url: "mailto:your.name@email.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.khm037723@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
