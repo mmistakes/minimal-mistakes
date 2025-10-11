@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Toss Hacking"
+title:  "🔵 Toss Hacking"
 categories: Hacking
 tag: [해킹, Toss]
 toc: true
