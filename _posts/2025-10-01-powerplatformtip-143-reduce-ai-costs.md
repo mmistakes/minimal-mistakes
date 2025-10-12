@@ -1,5 +1,5 @@
 ---
-title: "PowerPlatformTip 143 - Reduce AI Costs with Thumbnail-First Document Processing"
+title: "#PowerPlatformTip 143 - Reduce AI Costs with Thumbnail-First Document Processing"
 date: 2025-10-01
 categories:
   - Article
