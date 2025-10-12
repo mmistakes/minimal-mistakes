@@ -32,7 +32,7 @@ Implement a thumbnail-first processing strategy in Power Automate. Whether docum
 
 ## 🔧 How it's done
 
-### 1. Configure document intake and save to SharePoint
+** 1. Configure document intake and save to SharePoint
 
 Power Apps scenario: User uploads document → Create file action to save in SharePoint library
 
@@ -40,7 +40,7 @@ Email attachment scenario: When new email arrives (with attachments) → Apply t
 
 Both scenarios require saving the document to SharePoint first before accessing thumbnails
 
-### 2. Get file properties to access thumbnail metadata
+** 2. Get file properties to access thumbnail metadata
 
 Add "Get file properties" action immediately after file creation
 
@@ -50,7 +50,7 @@ This action provides access to all file metadata including thumbnail URLs
 
 Critical: Thumbnail is only available after the file is saved to SharePoint, not during upload
 
-### 3. Extract thumbnail URL using the correct expression syntax
+** 3. Extract thumbnail URL using the correct expression syntax
 
 Use expression: `@{outputs('Get_file_properties')?['body/{Thumbnail}/Large']}`
 
@@ -60,7 +60,7 @@ No Parse JSON action required - direct access to thumbnail URL
 
 Alternative sizes: Replace "Large" with "Medium" or "Small" as needed
 
-### 4. Convert thumbnail to base64 and send to AI provider
+** 4. Convert thumbnail to base64 and send to AI provider
 
 HTTP GET request to thumbnail URL with SharePoint authentication headers
 
@@ -70,7 +70,7 @@ Or send to OpenAI Vision API (GPT-4o model with vision capabilities)
 
 Or send to Google Document AI (Document OCR Processor) or AI Builder (form processing)
 
-### 5. Validate extracted data completeness and confidence
+** 5. Validate extracted data completeness and confidence
 
 Check if all required fields are populated (invoice number, date, total amount, vendor name)
 
@@ -78,7 +78,7 @@ Verify AI confidence scores (Azure AI: >85%, OpenAI: high certainty responses)
 
 If validation passes → SUCCESS, stop here and save 70-95% costs
 
-### 6. Implement conditional fallback for incomplete extractions
+** 6. Implement conditional fallback for incomplete extractions
 
 Add "Condition" action: IF required fields missing OR confidence < 85%
 
@@ -88,7 +88,7 @@ ELSE proceed with thumbnail-extracted data only
 
 Log success/fallback ratio for continuous optimization
 
-### 7. Monitor cost savings and success rates
+** 7. Monitor cost savings and success rates
 
 Track thumbnail-only success rate (target: 85-95% for invoices)
 
