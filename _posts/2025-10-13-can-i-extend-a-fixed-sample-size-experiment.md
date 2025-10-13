@@ -22,7 +22,7 @@ comment: true
 
 실험에서 Peeking 이란 충분한 표본이 모이지 않았을 때 그 결과를 확인하는 행위를 말합니다. 보다 자세한 내용은 [What Is Peeking And How Do I Avoid It?](https://thegood.com/insights/what-is-peeking/) 에서 확인할 수 있습니다.
 
-여기에는 다양한 문제가 발생할 수 있는데, 그 중 하나는 편향 (bias)과 신기 효과 (novelty effect) 입니다. 잘 설계된 실험이더라도 새로 소개된 기능을 많이 이용할 수 있으며, 이에 따라 초반에는 실험군의 지표가 대조군의 지표보다 높게 나올 수 있습니다. 그리고 아래와 같이 데이터를 보는 날에 따라 통계적 유의성이 달라질 수도 있습니다.
+Peeking 으로 발생할 수 있는 문제 중 하나로는 데이터 수집에서 발생한 편향 (bias) 이나 신기 효과 (novelty effect) 가 나타나는 실험 초기의 데이터만으로 성급하게 결론을 내릴 위험이 높다는 것입니다. 잘 설계된 실험이더라도 새로 소개된 기능을 많이 이용할 수 있으며, 이에 따라 초반에는 실험군의 지표가 대조군의 지표보다 높게/낮게 나올 수 있습니다. 그리고 아래와 같이 데이터를 보는 날에 따라 통계적 유의성이 달라질 수도 있습니다.
 
 ![the-good-peeking-graph](https://thegood.com/wp-content/uploads/Peeking-Graph-2048x1536.png)
 
