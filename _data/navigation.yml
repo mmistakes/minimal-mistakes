@@ -1,12 +1,27 @@
-# main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Your Situation"
+    url: /your-situation/
+    children:
+      - title: "Path to Profitability"
+        url: /profitability/
+      - title: "Scaling Challenges"
+        url: /scaling/
+      - title: "Compliance & Security"
+        url: /compliance/
+  - title: "Our Solutions"
+    url: /solutions/
+    children:
+      - title: "Fractional CTO"
+        url: /fractional-cto/
+      - title: "Fractional CIO"
+        url: /fractional-cio/
+      - title: "Fractional CISO"
+        url: /fractional-ciso/
+  - title: "Results"
+    url: /results/
+#  - title: "Who We Are"
+#    url: /who-we-are/
+#  - title: "Resources"
+#    url: /resources/
+  - title: "Get Started"
+    url: /contact/
