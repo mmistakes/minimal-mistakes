@@ -11,27 +11,27 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "default, "dirt", "neon", "mint", "plum", "sunrise"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "SmartWave"
-title_separator          : " - "
-subtitle                 : "Fractional CIO/CTO/CISO and Consulting"
-name                     : "SmartWave"
-description              : "Fractional CIO/CTO/CISO for growing, scalaing or optimizing companies."
-url                      : "https://www.smartwave.biz"
-baseurl                  : ""
+title                    : "Site Title"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/sw-logo.png"
-masthead_title           : ""
-breadcrumbs              : true
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
-copyright                : "SmartWave"
+copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "SmartWave"
+  name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "United States"
+  location         : "Somewhere"
   email            :
   links:
     - label: "Email"
@@ -260,14 +260,11 @@ pagination:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-seo-tag
-  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -328,12 +325,3 @@ defaults:
       comments: # true
       share: true
       related: true
-    # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      related: false
