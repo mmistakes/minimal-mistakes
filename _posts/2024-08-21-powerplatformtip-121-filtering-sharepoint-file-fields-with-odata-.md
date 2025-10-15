@@ -1,6 +1,7 @@
 ---
 title: "#PowerPlatformTip 121 – 'Filtering SharePoint File Fields with OData'"
 date: 2024-08-21
+modified: 2025-10-15
 categories:
   - Article
   - PowerPlatformTip
@@ -12,7 +13,7 @@ tags:
   - FileRef
   - FileDirRef
   - PowerPlatformTip
-excerpt: "Use FileLeafRef, FileRef, and FileDirRef fields with OData filtering to efficiently query SharePoint files in PowerAutomate."
+excerpt: "Quickly and efficiently filter SharePoint files in Power Automate by using FileLeafRef (file name), FileRef (full path), and FileDirRef (folder) fields with simple OData filter expressions – even if you don’t know how these fields work yet."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"
@@ -21,7 +22,7 @@ toc_sticky: true
 ---
 
 ## 💡 Challenge
-When working with SharePoint in Power Automate, it’s often necessary to handle files efficiently but it’s not possible to filter by the normal file name.
+In Power Automate, you often need to find specific files in SharePoint. But you can't use normal file names or folders directly in filter queries, which makes it hard to select only the files you really want. Many users are also unsure which SharePoint fields work for filtering: What is FileLeafRef, FileRef, or FileDirRef – and how do you use them in OData queries to save time and speed up flows?
 
 ## ✅ Solution
 Use the FileLeafRef, FileRef, and FileDirRef fields in combination with OData filtering to streamline your SharePoint queries.
@@ -63,3 +64,12 @@ Yes. Use logical operators like `and` or `or` in your filter query, for example:
 
 **3. Are these fields supported in SharePoint on-premises?**  
 OData filtering with FileLeafRef, FileRef, and FileDirRef works in SharePoint Online and on-premises (2013+). Ensure your environment and connector version support OData queries.
+
+**4: What does FileLeafRef mean?**  
+It's the file name itself – for example, 'Invoice.pdf'.
+
+**5: What does FileRef mean?**  
+It's the full path of a file, including folders – for example, '/sites/demo/Shared Documents/Invoice.pdf'.
+
+**6: What does FileDirRef mean?**  
+It refers to a folder path only. Example: '/sites/demo/Shared Documents/'.
