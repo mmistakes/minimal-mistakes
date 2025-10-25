@@ -42,8 +42,9 @@ layout: single
 ## Follow
 [Portfolio]() |
 <a href="https://github.com/AGAMPANDEYY">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="20" alt="GitHub"/>
-</a> |
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="height:20px; width:20px; vertical-align:middle;" alt="GitHub"/>
+</a>
+|
 <a href="https://www.linkedin.com/in/agam-pandey-326161223/">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" height="20" alt="LinkedIn"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="height:20px; width:20px; vertical-align:middle;" alt="LinkedIn"/>
 </a>
