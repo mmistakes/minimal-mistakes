@@ -5,7 +5,6 @@ layout: single
 ---
 
 
-
 # Agam Pandey
 
 <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width="200" height="200" alt="Agam Pandey">
@@ -20,16 +19,20 @@ layout: single
 ---
 
 ## Research Interests  
-- Machine Learning  
+- Multimodal Models
+- Adversarial ML
+- Causal Reasoning in VLMs
 - Graph Neural Networks  
 - Multi Agent systems
 - Computer Vision for Autonomous vehicles
 - RAG, Knowledge Graphs for V/LLMs
-
 ---
 
 ## Publications  
-- Mittal, A., Pandey, A., Tiwari, A., Jindal, S., Swain, S., (2025). Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in VLMs. Under Review in TMLR. (Co-Author).
+- MLRC 2025 [Best Paper Award], TMLR: A. Mittal, A., Pandey, A., Tiwari, A., Jindal, S., Swain, S., (2025). Revisiting CroPA: A Reproducibility Study and Enhancements for Cross-Prompt Adversarial Transferability in VLMs.
+- NeurIPS Reliable ML Workshop: A., Pandey, A.Mittal, A., Tiwari, A., Jindal, S., Swain, S.,, CroPA++: Exposing Vulnerabilities in Vision Language Models and Enhancing Adversarial Transferability of Cross-Prompt Attacks
+- AAAI 2026 SAPP: TransPatch: Learning a Universal Adversarial Patch for ViT–CNN Cross-Architecture Transfer in Semantic Segmentation (Student Abstract) A.Pandey, S. Goyal, A. Tomar, A. Aggarwal, A. Tiwari.
+- AAAI 2026 SAPP: Zero-Shot Vision Language Reasoning via Dual-layer Scene Graph Chain of Thoughts (Student Abstract), A. Pandey, P. Kapoor, Y. Bansal
 
 ---
 
