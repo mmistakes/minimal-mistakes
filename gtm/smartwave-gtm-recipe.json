@@ -1,0 +1,341 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2025-10-31T00:00:00Z",
+  "containerVersion": {
+    "path": "accounts/0/containers/0/versions/1",
+    "container": {
+      "name": "SmartWave",
+      "publicId": "GTM-KPXMFDG6",
+      "usageContext": [
+        "WEB"
+      ]
+    },
+    "tag": [
+      {
+        "name": "GA4 - Configuration",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "key": "measurementId",
+            "type": "template",
+            "value": "G-LSWEFQ9GM6"
+          },
+          {
+            "key": "sendPageView",
+            "type": "boolean",
+            "value": "true"
+          }
+        ],
+        "firingTriggerId": [
+          "2147479558"
+        ]
+      },
+      {
+        "name": "GA4 - Event - cta_click",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "key": "eventName",
+            "type": "template",
+            "value": "cta_click"
+          },
+          {
+            "key": "measurementId",
+            "type": "template",
+            "value": "G-LSWEFQ9GM6"
+          },
+          {
+            "key": "eventParameters",
+            "type": "list",
+            "list": [
+              {
+                "type": "map",
+                "map": [
+                  {
+                    "key": "name",
+                    "type": "template",
+                    "value": "link_text"
+                  },
+                  {
+                    "key": "value",
+                    "type": "template",
+                    "value": "{{link_text}}"
+                  }
+                ]
+              },
+              {
+                "type": "map",
+                "map": [
+                  {
+                    "key": "name",
+                    "type": "template",
+                    "value": "link_url"
+                  },
+                  {
+                    "key": "value",
+                    "type": "template",
+                    "value": "{{link_url}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "1234567"
+        ]
+      },
+      {
+        "name": "GA4 - Event - resource_download",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "key": "eventName",
+            "type": "template",
+            "value": "resource_download"
+          },
+          {
+            "key": "measurementId",
+            "type": "template",
+            "value": "G-LSWEFQ9GM6"
+          },
+          {
+            "key": "eventParameters",
+            "type": "list",
+            "list": [
+              {
+                "type": "map",
+                "map": [
+                  {
+                    "key": "name",
+                    "type": "template",
+                    "value": "resource"
+                  },
+                  {
+                    "key": "value",
+                    "type": "template",
+                    "value": "{{resource}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "7654321"
+        ]
+      },
+      {
+        "name": "GA4 - Event - calendly_event_scheduled",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "key": "eventName",
+            "type": "template",
+            "value": "calendly_event_scheduled"
+          },
+          {
+            "key": "measurementId",
+            "type": "template",
+            "value": "G-LSWEFQ9GM6"
+          },
+          {
+            "key": "eventParameters",
+            "type": "list",
+            "list": [
+              {
+                "type": "map",
+                "map": [
+                  {
+                    "key": "name",
+                    "type": "template",
+                    "value": "cal_event"
+                  },
+                  {
+                    "key": "value",
+                    "type": "template",
+                    "value": "{{cal_event}}"
+                  }
+                ]
+              },
+              {
+                "type": "map",
+                "map": [
+                  {
+                    "key": "name",
+                    "type": "template",
+                    "value": "cal_invitee"
+                  },
+                  {
+                    "key": "value",
+                    "type": "template",
+                    "value": "{{cal_invitee}}"
+                  }
+                ]
+              },
+              {
+                "type": "map",
+                "map": [
+                  {
+                    "key": "name",
+                    "type": "template",
+                    "value": "cal_uri"
+                  },
+                  {
+                    "key": "value",
+                    "type": "template",
+                    "value": "{{cal_uri}}"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "firingTriggerId": [
+          "1111111"
+        ]
+      }
+    ],
+    "trigger": [
+      {
+        "name": "All Pages",
+        "type": "PAGEVIEW",
+        "triggerId": "2147479558"
+      },
+      {
+        "name": "DL - cta_click",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "key": "arg0",
+                "type": "template",
+                "value": "{{_event}}"
+              },
+              {
+                "key": "arg1",
+                "type": "template",
+                "value": "^cta_click$"
+              }
+            ]
+          }
+        ],
+        "triggerId": "1234567"
+      },
+      {
+        "name": "DL - resource_download",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "key": "arg0",
+                "type": "template",
+                "value": "{{_event}}"
+              },
+              {
+                "key": "arg1",
+                "type": "template",
+                "value": "^resource_download$"
+              }
+            ]
+          }
+        ],
+        "triggerId": "7654321"
+      },
+      {
+        "name": "DL - calendly_event_scheduled",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "key": "arg0",
+                "type": "template",
+                "value": "{{_event}}"
+              },
+              {
+                "key": "arg1",
+                "type": "template",
+                "value": "^calendly_event_scheduled$"
+              }
+            ]
+          }
+        ],
+        "triggerId": "1111111"
+      }
+    ],
+    "variable": [
+      {
+        "name": "link_text",
+        "type": "v",
+        "parameter": [
+          {
+            "key": "name",
+            "type": "template",
+            "value": "link_text"
+          }
+        ]
+      },
+      {
+        "name": "link_url",
+        "type": "v",
+        "parameter": [
+          {
+            "key": "name",
+            "type": "template",
+            "value": "link_url"
+          }
+        ]
+      },
+      {
+        "name": "resource",
+        "type": "v",
+        "parameter": [
+          {
+            "key": "name",
+            "type": "template",
+            "value": "resource"
+          }
+        ]
+      },
+      {
+        "name": "cal_event",
+        "type": "v",
+        "parameter": [
+          {
+            "key": "name",
+            "type": "template",
+            "value": "cal_event"
+          }
+        ]
+      },
+      {
+        "name": "cal_invitee",
+        "type": "v",
+        "parameter": [
+          {
+            "key": "name",
+            "type": "template",
+            "value": "cal_invitee"
+          }
+        ]
+      },
+      {
+        "name": "cal_uri",
+        "type": "v",
+        "parameter": [
+          {
+            "key": "name",
+            "type": "template",
+            "value": "cal_uri"
+          }
+        ]
+      }
+    ]
+  }
+}

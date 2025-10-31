@@ -1,0 +1,21 @@
+<div class="calendly-inline-widget" data-url="https://calendly.com/YOURHANDLE/20min-diagnosis" style="min-width:320px;height:720px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+// Listen for Calendly events and push to dataLayer + GA4
+window.addEventListener('message', function(e){
+  try{
+    var data = e.data;
+    if (typeof data === 'string'){ try { data = JSON.parse(e.data); } catch(_){} }
+    if (data && data.event && data.event === 'calendly.event_scheduled'){
+      var payload = {event: 'calendly_event_scheduled'};
+      if (data.payload){
+        payload.cal_event = (data.payload.event || {}).name || '';
+        payload.cal_invitee = (data.payload.invitee || {}).name || '';
+        payload.cal_uri = (data.payload.invitee || {}).uri || '';
+      }
+      if (window.dataLayer){ window.dataLayer.push(payload); }
+      if (window.gtag){ window.gtag('event','calendly_event_scheduled', payload); }
+    }
+  } catch(e){}
+}, false);
+</script>

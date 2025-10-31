@@ -1,0 +1,32 @@
+<div id="gate-wrapper">
+  <div id="gate-form">
+    <p><strong>Get the download</strong> — enter your email to receive access instantly.</p>
+    <form id="gate" onsubmit="gateSubmit(event)">
+      <input type="email" id="gateEmail" placeholder="you@company.com" required />
+      <button type="submit">Unlock</button>
+    </form>
+    <p class="text-small">We’ll also send a short guide to make the most of this template. Unsubscribe anytime.</p>
+  </div>
+  <div id="gate-success" style="display:none;">
+    <p>Thanks! Your download is ready:</p>
+    <p><a id="downloadLink" class="btn btn--primary" href="/assets/downloads/OPERATING-RHYTHM.pdf">Download now</a></p>
+  </div>
+</div>
+<script>
+function gateSubmit(e){
+  e.preventDefault();
+  const email = document.getElementById('gateEmail').value.trim();
+  if(!email) return;
+  // TODO: POST email to your marketing tool endpoint
+  localStorage.setItem('gate_ok_operating_rhythm', '1');
+  document.getElementById('gate-form').style.display='none';
+  document.getElementById('gate-success').style.display='block';
+  try{ if(window.dataLayer){dataLayer.push({event:'resource_unlock', resource:'OPERATING-RHYTHM.pdf'});} if(window.gtag){gtag('event','resource_unlock',{resource:'OPERATING-RHYTHM.pdf'});} }catch(e){}
+}
+(function(){
+  if(localStorage.getItem('gate_ok_operating_rhythm')==='1'){
+    document.getElementById('gate-form').style.display='none';
+    document.getElementById('gate-success').style.display='block';
+  }
+})();
+</script>

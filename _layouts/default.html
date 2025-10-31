@@ -1,36 +1,23 @@
----
----
-
 <!doctype html>
-{% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+<html lang="{{ site.locale | default: 'en-US' }}" class="no-js">
+  {% include head.html %}
+  <body class="{{ page.classes }}">
+    {% include gtm-body.html %}
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
+    {% include consent-banner.html %}
 
-    <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
+    <div id="main" role="main">
+      {% include sidebar.html %}
+      <div class="page__content">
+        {{ content }}
       </div>
-    {% endif %}
-
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
     </div>
 
+    {% include manage-cookies-link.html %}
+    {% include_cached footer.html %}
     {% include scripts.html %}
+    <script src="{{ "/assets/js/events.js" | relative_url }}"></script>
+
   </body>
 </html>

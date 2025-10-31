@@ -1,0 +1,45 @@
+<div id="sw-consent" class="sw-consent-banner" style="display:none">
+  <p>We use cookies to improve your experience and to measure what works. You can accept or reject analytics cookies at any time.</p>
+  <div class="actions">
+    <button class="sw-btn-secondary" onclick="SWConsent.reject()">Reject</button>
+    <button class="sw-btn-primary" onclick="SWConsent.accept()">Accept</button>
+  </div>
+</div>
+<link rel="stylesheet" href="{{ '/assets/css/consent.css' | relative_url }}">
+<script>
+// Consent Mode v2 lightweight helper
+(function(w){
+  var KEY='sw_consent_v1';
+  function apply(status){
+    var granted = status==='granted';
+    // Update GA4 & GTM consent
+    if (w.gtag){ w.gtag('consent', 'update', {
+      'ad_storage': granted ? 'granted' : 'denied',
+      'analytics_storage': granted ? 'granted' : 'denied',
+      'ad_user_data': granted ? 'granted' : 'denied',
+      'ad_personalization': granted ? 'granted' : 'denied'
+    }); }
+    if (w.dataLayer){ w.dataLayer.push({event:'consent_update', consent_status: status}); }
+  }
+  function set(status){
+    try{ localStorage.setItem(KEY, status); }catch(e){}
+    apply(status);
+    var el = document.getElementById('sw-consent'); if(el) el.style.display='none';
+  }
+  function showIfNeeded(){
+    var v=null; try{ v = localStorage.getItem(KEY);}catch(e){}
+    if(!v){ var el = document.getElementById('sw-consent'); if(el) el.style.display='flex'; }
+    else { apply(v); }
+  }
+  w.SWConsent = {accept: function(){ set('granted'); }, reject: function(){ set('denied'); }, open: function(){ var el=document.getElementById('sw-consent'); if(el) el.style.display='flex'; }};
+  // Default to denied until choice
+  if (w.gtag){ w.gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  }); }
+  if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', showIfNeeded); }
+  else { showIfNeeded(); }
+})(window);
+</script>
