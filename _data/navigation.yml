@@ -2,6 +2,8 @@
 main:
   - title: "Home"
     url: https://anupdsouza.com
+  - title: "Blog"
+    url: /blog
   # - title: "About"
   #  url: https://anupdsouza.com
   # - title: "Resume"
