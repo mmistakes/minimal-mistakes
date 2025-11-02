@@ -13,6 +13,8 @@ post_list: false
 
 ## Alumni
 
+- Rudramani Singha, MS student in Biomedical Engineering (2023-2024) and Research Technician (2024-2025)
+- Jared Winslow, MA Student in Statistics (2024-2025)
 - Salma Elhassa, MS student in Biomedical Engineering (2024-2025)
 - Jet Li, CS senior undergraduate student (Summer@SEAS)
 - Leon Dietrich Gruber, CS senior undergraduate student (Summer@SEAS)
