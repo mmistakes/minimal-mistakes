@@ -9,12 +9,6 @@
   email: "tg2863 [at] columbia.edu"
   bio: "Tomas received his BSc in Molecular Sciences from the University of São Paulo, Brazil in 2015. Subsequently, he did his PhD with John O'Doherty at Caltech, and was co-advised by Ueli Rutishauser at the Cedars-Sinai Medical Center in Los Angeles. His work focused on single-neuron correlates of value learning and decision-making in the human brain. He obtained his PhD in Computation and Neural Systems in 2022. Currently, Tomas works on the intersection between flexible decision making and recurrent neural network models of perception and decision, leveraging human single neuron recordings. Tomas also enjoys planting tomatoes and playing jazz/bossa nova guitar."
   avatar: "/assets/images/people/tomas.jpg"
-
-- name: "Rudramani Singha"
-  position: "Research Technician"
-  email: "rgs2151 [at] columbia.edu"
-  bio: "Rudra received his BEng in Information Technology from the University of Mumbai in 2022. He then pursued an MS in Biomedical Engineering at Columbia, graduating in 2024. Throughout his time at Columbia, Rudra worked closely with Nuttida, focusing on developing explainable machine-learning methods to model the dynamics of human perceptual decision-making. His research interests span representational similarity analysis, Bayesian inference, and dimensionality reduction techniques. After graduating, Rudra joined the Nuttida lab and continued his work on unraveling the neural mechanisms underlying higher cognitive functions through computational modeling and analysis of human electrophysiological data. Beyond academia, he loves to discuss startups, movies, and Dota2."
-  avatar: "/assets/images/people/rudra.jpg"
   
 - name: "Zelin Yu"
   position: "PhD Student in Electrical Engineering"
@@ -52,10 +46,10 @@
   bio: "Kahini received her B.A. in Psychology and Non-Fiction Writing from Brown University in 2021. She then spent several years at PennLINC, where she worked as a Data Analyst and Software Engineer, focusing on large-scale fMRI analysis and reproducibility in cognitive neuroscience. Kahini is broadly interested in human cognition and the neural encoding of decision variables, with a focus on combining computational models with single-neuron and imaging data. She is excited to be joining the Nuttida lab. Outside of research, she enjoys lifting weights, curating playlists, hanging out with cats, and listening to rock music."
   avatar: "/assets/images/people/kahini.jpg"
 
-- name: "Jared Winslow"
-  position: "MA Student in Statistics | Data Science Institute Scholar"
-  email: "jdw2218 [at] columbia.edu"
-  bio: "Jared received his BS in Mathematics from Indiana University in 2021, also minoring in psychology. After graduating, he tutored advanced math until he started his MA. At Columbia, his interests are in Bayesian methods and interpretable, biologically-inspired machine learning. He also works in the lab of Maya Mathur at Stanford University doing large-scale data and statistical methodology work related to plant-based proteins. At the Nuttida lab, he is excited to investigate the neural mechanisms behind reward learning through multi-agent reinforcement learning. Outside academics, Jared enjoys playing table tennis at Columbia, acting, rock climbing, and learning languages."
-  avatar: "/assets/images/people/jared.jpg"
+- name: "Sally Liu"
+  position: "BS Student in Computer Science | Harborview Engineering Health Research Fellow"
+  email: "bl3092 [at] columbia.edu"
+  bio: "Sally is a dual-degree student pursuing a BA in Mathematics at Middlebury College and a BS in Computer Science at Columbia University. At Nuttida Lab, she conducts research on biologically constrained recurrent neural networks and their alignment with spiking neural dynamics. Broadly, her interests lie at the intersection of artificial intelligence and science, with a focus on developing interpretable and human-aligned AI systems for scientific discovery. Previously, she has worked on projects involving reinforcement learning from human feedback (RLHF), neuro-symbolic AI for drug discovery, and human-in-the-loop agentic systems. Outside the lab, Sally enjoys baking, traveling, playing the cello, listening to classical music, brewing tea and coffee, and exploring art museums."
+  avatar: "/assets/images/people/sally.jpg"
 
       
