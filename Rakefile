@@ -205,3 +205,7 @@ file "docs/_pages/home.md" => "package.json" do |t|
   content = content.gsub(/(\breleases\/tag\/|Latest release v)[\d.]+/, '\1' + package_json["version"])
   File.write(t.name, content)
 end
+
+task :gem do
+  sh 'gem build minimal-mistakes-jekyll.gemspec'
+end

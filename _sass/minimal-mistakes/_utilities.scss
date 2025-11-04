@@ -29,13 +29,18 @@
 .visually-hidden,
 .screen-reader-text,
 .screen-reader-text span,
-.screen-reader-shortcut {
+.screen-reader-shortcut,
+.sr-only,
+.sr-only-focusable:not(:focus) {
   position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0, 0, 0, 0);
   height: 1px !important;
   width: 1px !important;
+  padding: 0 !important;
   border: 0 !important;
+  margin: -1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 body:hover .visually-hidden a,
@@ -219,6 +224,7 @@ $text-alignments: left, right, start, end, center, justify;
     $stackoverflow-color: ".fa-stack-exchange, .fa-stack-overflow",
     $tumblr-color: ".fa-tumblr, .fa-tumblr-square",
     $twitter-color: ".fa-twitter, .fa-twitter-square",
+    $x-color: ".fa-x-twitter, .fa-square-x-twitter",
     $vimeo-color: ".fa-vimeo, .fa-vimeo-square, .fa-vimeo-v",
     $vine-color: ".fa-vine",
     $xing-color: ".fa-xing, .fa-xing-square",

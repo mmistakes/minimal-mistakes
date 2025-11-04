@@ -17,6 +17,9 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: 'Type: Invalid'
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: 'Type: Spam'
       - uses: superbrothers/close-pull-request@v3
         with:
           # Optional. Post an issue comment just before closing a pull request.
