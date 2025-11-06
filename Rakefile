@@ -1,3 +1,8 @@
+# ==========================================================
+# Custom Rakefile – Modified by Bolagani Teja
+# Purpose: Enhanced logging and added info task
+# Date: November 2025
+# ==========================================================
 require "bundler/gem_tasks"
 require "jekyll"
 require "json"
@@ -27,10 +32,12 @@ def listen_handler(base, options)
     c = modified + added + removed
     n = c.length
     relative_paths = c.map{ |p| Pathname.new(p).relative_path_from(base).to_s }
-    print Jekyll.logger.message("Regenerating:", "#{relative_paths.join(", ")} changed... ")
+    print Jekyll.logger.message("Regenerating (Teja’s custom build):", "#{relative_paths.join(", ")} changed... ")
+
     begin
       Jekyll::Command.process_site(site)
-      puts "regenerated in #{Time.now - t} seconds."
+      puts puts "Regenerated successfully in #{(Time.now - t)} seconds — powered by Teja!"
+
     rescue => e
       puts "error:"
       Jekyll.logger.warn "Error:", e.message
@@ -209,3 +216,10 @@ end
 task :gem do
   sh 'gem build minimal-mistakes-jekyll.gemspec'
 end
+desc "Show custom build info"
+task :info do
+  puts "🔹 Minimal Mistakes Custom Version"
+  puts "🔹 Modified by: Bolagani Teja"
+  puts "🔹 Date: #{Time.now.strftime("%Y-%m-%d %H:%M:%S")}"
+end
+
