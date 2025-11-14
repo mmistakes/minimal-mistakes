@@ -1,16 +1,12 @@
 ---
-layout: single
-title: "Welcome"
-classes: wide
-author_profile: false
+layout: default
+image: '/images/01.jpg'
 ---
 
-<p>👋 Hey there! Thanks for stopping by.</p>
+{% include section-hero.html %}
 
-<p>This site is currently a <strong>work in progress</strong> - I’m redesigning it to better showcase my projects and writing.</p>
+{% include section-portfolio.html %}
 
-<p>In the meantime, you can check out my latest thoughts and tutorials on the blog.</p>
+{% include section-blog.html %}
 
-<p>
-    <a href="{{ '/blog/' | relative_url }}" class="btn btn--primary">Visit the Blog</a>
-</p>
+{% include section-subscribe.html %}

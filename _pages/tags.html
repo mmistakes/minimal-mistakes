@@ -1,0 +1,78 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
+
+<!-- begin tags -->
+<section class="tags">
+
+  <div class="tag__head">
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+
+          <h1 class="tag__title">Tags</h1>
+        
+          <ul class="tag__list list-reset">
+            {% for item in (0..site.tags.size) %}
+              {% unless forloop.last %}
+                {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+                <li class="tag__item"><a href="#{{ this_word | cgi_escape }}" class="tag__link">{{ this_word }}</a></li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+  {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+
+    <div class="tags__inner">
+    
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            
+            <div class="tag__info">
+              <h2 class="tag__name" id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+              <div class="tag__counter">
+                <span>{{ site.tags[this_word].size }}</span>
+                <small>{% if site.tags[page.tag].size < 2 %}Article{% else %}Articles{% endif %}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="row animate">
+            {% for post in site.tags[this_word] %}
+              {% if post.title != null %}
+                {% include article.html %}
+              {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {% endunless %}
+  {% endfor %}
+
+</section>
+<!-- end tags -->
+
+{% include section-subscribe.html %}

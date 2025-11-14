@@ -1,0 +1,29 @@
+/**
+ * Shared declarations for certain elements.
+ */
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: 32px;
+}
+
+
+/**
+ * Consistent indentation for lists.
+ */
+
+ul, ol,
+dd {
+  margin-left: $base-spacing-unit;
+}
+
+ul, ol {
+  li {
+    margin-bottom: 10px;
+  }
+}

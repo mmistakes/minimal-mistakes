@@ -1,0 +1,30 @@
+.top {
+  position: fixed;
+  bottom: 36px;
+  right: -100px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  font-size: 28px;
+  line-height: 39px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--heading-font-color);
+  background-color: var(--background-alt-color);
+  cursor: pointer;
+  transition: all .25s ease;
+
+  &.is-active {
+    right: 36px;
+  }
+}
+
+@media only screen and (max-width: $desktop) {
+  .top {
+    bottom: 24px;
+
+    &.is-active {
+      right: 28px;
+    }
+  }
+}

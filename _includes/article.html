@@ -1,0 +1,23 @@
+<div class="article col col-4 col-d-6 col-t-12">
+  <div class="article__inner">
+
+    <div class="article__head">
+      <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      {% if post.image %}
+      <a class="article__image" href="{{post.url | prepend: site.baseurl}}">
+        <img class="lazy" data-src="{{site.baseurl}}{{post.image}}" alt="{{post.title}}">
+      </a>
+      {% endif %}
+    </div>
+
+    <div class="article__content">
+
+      <h2 class="article__title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+
+      <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 80 }}{% endif %}</p>
+
+    </div>
+  </div>
+</div>

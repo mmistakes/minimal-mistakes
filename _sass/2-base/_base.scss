@@ -1,0 +1,231 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+*::selection {
+  color: var(--white);
+  background-color: var(--brand-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  letter-spacing: $heading-letter-spacing;
+  color: var(--heading-font-color);
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
+
+blockquote {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 26px;
+  font-size: 24px;
+  line-height: 1.7;
+  font-weight: 500;
+  border-left: 4px solid var(--heading-font-color);
+  color: var(--heading-font-color);
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  cite {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--heading-font-color);
+
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 21px;
+  }
+}
+
+pre {
+  overflow: auto;
+  padding: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: var(--heading-font-color);
+}
+
+img,
+.lightense-wrap {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+img,
+.lightense-wrap,
+.gallery {
+  &+em {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: var(--heading-font-color);
+  
+    a {
+      font-weight: 500;
+      border-bottom: 1px solid var(--border-color);
+      transition: $global-transition;
+
+      &:hover {
+        color: var(--link-color);
+        border-color: var(--link-color-hover);
+      }
+    }
+  
+    @media only screen and (max-width: $mobile) {
+      margin-top: 12px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  transition: $global-transition;
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin: 60px 0;
+  border: 0;
+  background: var(--background-alt-color);
+}
+
+.table-container {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  font-size: 12px;
+  color: var(--dark);
+  width: 100%;
+  border-width: 1px;
+  border-color: var(--background-alt-color);
+  border-collapse: collapse;
+  color: var(--heading-font-color);
+}
+
+table th {
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid var(--th-color);
+  color: var(--heading-font-color);
+  font-weight: 700;
+  background-color: var(--th-color);
+}
+
+table tr {
+  background-color: var(--tr-color);
+  transition: all .3s ease;
+  &:nth-child(even) {
+    background-color: transparent;
+  }
+}
+
+table td {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--background-alt-color);
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .25s;
+  color: var(--heading-font-color);
+  background: var(--background-alt-color);
+
+  &--primary {
+    color: var(--white);
+    background-color: var(--button-background-color);
+
+    &:hover {
+      background: var(--button-background-hover);
+    }
+  }
+}
+
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
+.lightense-backdrop {
+  background-color: var(--background-alt-color) !important;
+}

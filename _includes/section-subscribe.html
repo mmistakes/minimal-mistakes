@@ -1,0 +1,25 @@
+{% if site.data.settings.mailchimp %}
+<!-- begin subscribe -->
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <section class="subscribe">
+        <div class="subscribe__head">
+          <h2 class="subscribe__title">{{ site.data.settings.mailchimp.mailchimp__title }}</h2>
+        </div>
+        <div class="subscribe__inner">
+          <form class="subscribe__form validate" action="{% if site.data.settings.mailchimp.mailchimp__identifier %}//{{site.data.settings.mailchimp.mailchimp__identifier}}{% else %}#{% endif %}" method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+            <input class="subscribe__email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="Email address">
+            <button class="button button--primary subscribe__button" id="membedded-subscribe" type="submit" name="subscribe">{{ site.data.settings.mailchimp.mailchimp__button__text }}</button>
+          </form>
+        </div>
+        <div class="subscribe__bg">
+          <svg width="920" height="119" fill="{% if site.data.settings.mailchimp.mailchimp__bg__color %}{{ site.data.settings.mailchimp.mailchimp__bg__color }}{% else %}none{% endif %}" xmlns="http://www.w3.org/2000/svg"><path d="M429.599 14.348C207.922-27.515 50.834 66.674 0 119h920V0c-11.961 4.782-48.243 19.074-97.681 37.979-61.799 23.631-115.623 28.695-392.72-23.631z"/></svg>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- end subscribe -->
+{% endif %}

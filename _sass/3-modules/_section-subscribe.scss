@@ -1,0 +1,118 @@
+/* Subscribe */
+.subscribe {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 136px 68px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--background-alt-color);
+
+  @media only screen and (max-width: 1140px) {
+    padding: 136px 48px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    padding: 96px 48px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 80px 40px;
+  }
+}
+
+.subscribe__head {
+  max-width: 360px;
+
+  .subscribe__title {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 100%;
+
+    .subscribe__title {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    .subscribe__title {
+      font-size: 26px;
+    }
+  }
+}
+
+.subscribe__inner {
+  max-width: 460px;
+  width: 100%;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.subscribe__email {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  padding: 20px;
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 1;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: text;
+  color: var(--heading-font-color);
+  background: var(--background-color);
+  transition: border-color .15s;
+
+  &::placeholder {
+    color: var(--text-alt-color);
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.subscribe__button {
+  @media only screen and (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.subscribe__email,
+.subscribe__button {
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, .07);
+}
+
+.subscribe__bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
+
+  @media only screen and (max-width: $desktop) {
+    height: 80px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    height: 100px;
+  }
+}

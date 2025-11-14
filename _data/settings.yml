@@ -1,0 +1,115 @@
+#-------------------------------
+# Site Settings
+title: AD
+logo: # Example '/images/logo.png'.
+author: Anup D'Souza
+description: This is my personal portfolio & blog website.
+
+
+#-------------------------------
+# Menu Settings
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/'
+    - title: 'Blog'
+      url: '/blog/'
+    - title: 'About'
+      url: '/about/'
+    # - title: 'Contact'
+    #   url: '/contact/'
+    # - title: 'Elements'
+    #   url: '/elements/'
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  hero__title: Hello, my name’s Anup D'Souza. I’m a mobile application developer based in Mumbai.
+  hero__description: I've been developing mobile applications for the iOS platform for over a decade. Apart from coding, I love gaming, creating tutorials, blogging about my learnings and drinking coffee ☕️.
+
+
+#-------------------------------
+# Portfolio Settings
+# portfolio:
+#   portfolio__title: Portfolio
+#   portfolio__gallery:
+#     - image: /images/gallery-01.jpg
+#       title: Samantha Gades
+#       description: Brown photo frame beside wall <a href="https://unsplash.com/photos/8Od75hgzb9Y">Unsplash</a>
+
+#     - image: /images/gallery-02.jpg
+#       title: Paula Vermeulen
+#       description: Gray mountain covered by mountain <a href="https://unsplash.com/photos/_f2m3mEkaaU">Unsplash</a>
+
+#     - image: /images/gallery-03.jpg
+#       title: Bench Accounting
+#       description: White wooden table near brown chair <a href="https://unsplash.com/photos/nvzvOPQW0gc">Unsplash</a>
+
+#     - image: /images/gallery-04.jpg
+#       title: Nord Wood
+#       description: White ceramic mug <a href="https://unsplash.com/photos/nDd3dIkkOLo">Unsplash</a>
+
+#     - image: /images/gallery-05.jpg
+#       title: Luca Bravo
+#       description: White ribs in a facade against a white sky <a href="https://unsplash.com/photos/alS7ewQ41M8">Unsplash</a>
+
+#     - image: /images/gallery-06.jpg
+#       title: Isaac Benhesed
+#       description: Minimalist black coffee <a href="https://unsplash.com/photos/onLbXleIkds">Unsplash</a>
+
+#     - image: /images/gallery-07.jpg
+#       title: Water Journal
+#       description: Water Journal is a bi-annual publication exploring the beauty and complexity of all things water <a href="https://unsplash.com/photos/EbuaKnSm8Zw">Unsplash</a>
+
+#     - image: /images/gallery-08.jpg
+#       title: Luca Bravo
+#       description: Worms eye view of city buildings <a href="https://unsplash.com/photos/a6x7YPiNxwI">Unsplash</a>
+
+#     - image: /images/gallery-09.jpg
+#       title: Books and Laptop
+#       description: Silver laptop computer with two books on the top <a href="https://unsplash.com/photos/fFIAKABImf4">Unsplash</a>
+
+
+#-------------------------------
+# Subscribe Settings
+# mailchimp:
+#   mailchimp__title: Get updates and digital art inspiration # Add your Title
+#   mailchimp__identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+#   mailchimp__button__text: Subscribe # Add your button text.
+#   mailchimp__bg__color: "#f2eef8" # To change the color of the figure, add a hexadecimal color code (HEX). For example - "#f2eef8" (You can generate any color here - https://htmlcolorcodes.com/).
+
+
+#-------------------------------
+# Footer Settings
+social:
+- {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://x.com/areaswiftyone"}
+- {icon: "ion-logo-youtube", color: "#ff0000", label: YouTube, link: "https://www.youtube.com/@areaswiftyone"}
+- {icon: "ion-logo-github", color: "#24292e", label: GitHub, link: "https://github.com/anupdsouza"}
+- {icon: "", color: "#24292e", label: BuyMeACoffee, link: "https://www.buymeacoffee.com/adsouza" }
+- {icon: "", color: "#55acee", label: Patreon, link: "https://patreon.com/adsouza"}
+# - {icon: "ion-logo-facebook", color: "#3b5999", label: Facebook, link: "https://facebook.com"}
+# - {icon: "ion-logo-pinterest", color: "#bd081c", label: Pinterest, link: "https://pinterest.com"}
+# - {icon: "ion-logo-dribbble", color: "#ea4c89", label: Dribbble, link: "https://dribbble.com"}
+# - {icon: "ion-logo-instagram", color: "#e4405f", label: Instagram, link: "https://instagram.com"}
+# - {icon: "ion ion-logo-vimeo", color: "#1393cd", label: Vimeo, link: "https://vimeo.com"}
+
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Contact Settings
+# contact:
+#   email: email@email.com # Add your email for contact form
+#   description: Got a question? Use the form below! # Add a description of your form.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+
+disqus-identifier: anupdsouza # Shortname for Disqus Comment.
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: G-RV3QCE5GJ6 # GA Identifier.

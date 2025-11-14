@@ -1,0 +1,16 @@
+/* Animate */
+.animate {
+  animation: animateElement cubic-bezier(.300,.450,.450,.950) .75s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transition: transform .15s;
+
+  @keyframes animateElement {
+    0% {
+      transform:  translate(0px,50px);
+    }
+    100% {
+      transform:  translate(0px,0px);
+    }
+  }
+}

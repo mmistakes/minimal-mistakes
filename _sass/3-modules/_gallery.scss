@@ -1,0 +1,23 @@
+/* Gallery */
+.gallery-box {
+  margin: 40px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+
+  .gallery__image {
+    background: var(--background-color);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

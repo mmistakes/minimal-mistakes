@@ -1,0 +1,239 @@
+/* Post + Page */
+.post,
+.page {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  color: var(--text-color);
+
+  a {
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+
+    &:hover {
+      color: var(--link-color);
+      border-bottom-color: var(--link-color-hover);
+    }
+  }
+
+  img, .js-reframe {
+    border-radius: 8px;
+    overflow: hidden;
+
+    &.lightense-open {
+      border-radius: 0;
+    }
+  }
+
+  .button {
+    border: none;
+    text-decoration: none;
+  }
+}
+
+.post__info,
+.page__info {
+  max-width: 760px;
+  margin: 96px auto 48px;
+  text-align: center;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 100%;
+    margin: 40px auto;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin: 40px auto 32px;
+  }
+}
+
+.post__tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  
+  .post__tag {
+    padding: 12px 16px;
+    margin: 4px 8px 4px 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 8px;
+    color: var(--heading-font-color);
+    transition: none;
+    background-color: var(--background-alt-color);
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.post__title,
+.page__title {
+  margin-bottom: 20px;
+  font-size: 62px;
+  line-height: 1.2;
+
+  @media only screen and (max-width: 1140px) {
+    font-size: 64px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 48px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+}
+
+.post__meta {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--heading-font-color);
+
+  .post__author {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: var(--heading-font-color);
+    transition: text-decoration-color .35s;
+
+    &:hover {
+      text-decoration-color: var(--heading-font-color);
+    }
+  }
+}
+
+.post-image,
+.page-image {
+  position: relative;
+  padding-top: 56.25%;
+  margin-bottom: 48px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--background-alt-color);
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    user-select: none;
+  }
+  
+  @media only screen and (max-width: $desktop) {
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding-top: 62%;
+    margin-bottom: 32px;
+  }
+}
+
+.post__share {
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--background-alt-color);
+
+  .share__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .share__item {
+    margin-right: 4px;
+    margin-bottom: 0;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .share__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background: var(--background-alt-color);
+
+    i {
+      transition: transform .25s;
+      will-change: transform;
+    }
+
+    &:hover {
+      color: var(--heading-font-color);
+
+      i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* Related posts */
+.related-posts {
+  display: none;
+
+  &.is-related {
+    display: block;
+  }
+
+  .related-tag {
+    text-transform: capitalize;
+  }
+}
+
+/* Disqus */
+.show-comments {
+  margin: 60px 0;
+  text-align: center;
+}
+
+/* 404 */
+.error {
+  margin-bottom: 0;
+  text-align: center;
+
+  .error__title {
+    margin-bottom: 24px;
+    font-size: 100px;
+    line-height: 1;
+  }
+
+  .error__text {
+    margin-bottom: 48px;
+    color: var(--text-alt-color);
+  }
+  
+  @media only screen and (max-width: $mobile) {
+    .error__title {
+      font-size: 68px;
+    }
+
+    .error__title {
+      font-size: 80px;
+    }
+    .error__text {
+      margin-bottom: 24px;
+    }
+  }
+}

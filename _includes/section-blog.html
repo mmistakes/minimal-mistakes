@@ -1,0 +1,28 @@
+<!-- begin blog -->
+<section class="blog section">
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            <h2 class="section__title">Recent posts</h2>
+            <a class="section__link" href="{{ '/blog' | relative_url }}">View all posts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts offset:0 limit:3 %}
+          {% include article.html %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+
+</section>
+<!-- end blog -->

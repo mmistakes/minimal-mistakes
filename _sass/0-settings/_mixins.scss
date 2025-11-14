@@ -1,0 +1,26 @@
+// Clearfix
+@mixin clearfix() {
+  &::after,
+  ::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Reset list
+@mixin list-reset() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Screen reader text
+@mixin screen-reader() {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}

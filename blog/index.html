@@ -1,36 +1,38 @@
 ---
-layout: single
-title: "Blog"
-classes: wide
+layout: default
+title: Blog
+description: My corner of the internet to share what I’m working on, what I’m figuring out, and whatever I happen to be obsessed with at the moment.
 ---
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<p class="author">
-  <span class="date">{{ post.date }}</span>
-</p>
-<div class="content">
-  {{ post.excerpt }}
-  <p><a href="{{ post.url }}">Read more →</a></p>
-</div>
-{% endfor %}
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-10 col-d-12">
+        <div class="hero__inner">
+          {% if page.title %}
+          <h1 class="hero__title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.description %}
+          <p class="hero__description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous">
-    Previous
-  </a>
-  {% else %}
-  <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-  <span class="next ">Next</span>
-  {% endif %}
+<div class="container">
+  <div class="row animate">
+    {% if site.posts.size > 0 %}
+    {% for post in paginator.posts %}
+    {% include article.html %}
+    {% endfor %}
+    {% endif %}
+  </div>
 </div>
+
+{% include pagination.html %}
+
+{% include section-subscribe.html %}

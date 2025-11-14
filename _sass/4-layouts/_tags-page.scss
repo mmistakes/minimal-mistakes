@@ -1,0 +1,137 @@
+/* Tags */
+.tag__head {
+  margin: 96px 0 80px;
+
+  @media only screen and (max-width: $desktop) {
+    margin: 40px 0;
+  }
+}
+
+.tags__inner {
+  margin-bottom: 120px;
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.tag__title {
+  margin-bottom: 32px;
+  font-size: 68px;
+
+  @media only screen and (max-width: 1140px) {
+    font-size: 60px;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 32px;
+  }
+}
+
+.tag__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--border-color-alt);
+
+  .tag__item {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .tag__link {
+    display: block;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 8px;
+    transition: none;
+    background: var(--background-alt-color);
+
+    &:hover {
+      color: var(--heading-font-color);
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding-bottom: 48px;
+
+    .tag__item {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .tag__link {
+      font-size: 14px;
+    }
+  }
+}
+
+.tag__info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-color-alt);
+}
+
+.tag__counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 16px;
+  color: var(--heading-font-color);
+  background: var(--background-alt-color);
+
+  span {
+    font-family: $heading-font-family;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  small {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    span {
+      font-size: 28px;
+    }
+  }
+}
+
+.tag__name {
+  padding: 40px 0;
+  margin-right: 40px;
+  margin-bottom: 0;
+  font-size: 40px;
+  text-transform: capitalize;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 32px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-right: 28px;
+    font-size: 26px;
+  }
+}

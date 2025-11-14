@@ -1,0 +1,71 @@
+/* Sections */
+.section {
+  margin-bottom: 120px;
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.section__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--background-alt-color);
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.section__title {
+  padding-right: 20px;
+  margin-bottom: 0;
+  font-size: 32px;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 26px;
+  }
+}
+
+.section__link {
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  color: var(--link-color);
+
+  &:hover {
+    text-decoration-color: var(--heading-font-color);
+    color: var(--link-color-hover);
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding-left: 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.section__title,
+.section__link {
+  background: var(--background-color);
+}
