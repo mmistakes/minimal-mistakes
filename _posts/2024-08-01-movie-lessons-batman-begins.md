@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Why do we fall?"
 date: 2024-08-01 13:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/writing.jpg'
 description: "It is no secret, atleast to the people around me that I am a big Batman fan, but it wasn't always like this"
 excerpt: "It is no secret, atleast to the people around me that I am a big Batman fan, but it wasn't always like this"
 seo_title: "Why do we fall"
@@ -14,6 +14,9 @@ tags:
   - Movies
   - Batman
 ---
+<p align="center" style="font-size: 0.85rem;">
+  Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</p>
 
 It is no secret, atleast to the people around me that I am a big Batman fan, but it wasn't always like this. Growing up as a child I loved watching the Batman TV Series starring Adam West, while also being simultaneously terrified of the character due to the dark & noir nature of Batman: The Animated Series. Over the years though, Batman has grown on me having read the comics and watched the movies. Personally, my most favorite adaption of the caped crusader on the big screen would be 2008's `The Dark Knight` by Christopher Nolan. To me it is the best comic book movie adaptation of all time. Perhaps that explains why I've watched it probably close to a 100 times or more, I've lost count to be honest. A close favorite would have to be 2005's Batman Begins which set the ball rolling for movies to come. Although I don't think it gets as much love as it should, it's nonetheless a movie I love a close second to TDK. 
 
@@ -23,8 +26,8 @@ This post isn't meant to be a review of Batman Begins, there are tons of literar
 
 That is a strong statement at a time when a father could have just pacified his son in any other way or means such as caressing the wound, or telling him it wasn't his fault or by distracting him; trying to draw attention away from the incident. Parents especially in India often take the more drastic approach, asking their children to slap or hit back at the cause of their fall or hurt. And kids do as they are told. Often times parents do it themselves just to pacify the child by hitting or tapping the object, as a means to invoke a sense of having taken 'revenge'. And I find that disturbing. It's the way generations have been raised here that we choose not to teach a child an invaluable lesson that would build character or maybe we don't think that children are capable of understanding, that at times they will get hurt & it's okay. The same dialogue is seen playing out towards the end of the movie by Alfred Pennyworth, to the now grown up Bruce Wayne.
 
-> Alfred Pennyworth: Why do we fall sir? So we might learn to pick ourselves up.   
-> Bruce Wayne: You still haven't given up on me?   
+> Alfred Pennyworth: Why do we fall sir? So we might learn to pick ourselves up.  
+> Bruce Wayne: You still haven't given up on me?  
 > Alfred Pennyworth: Never.
 
 

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Drawing the Swift logo bird in SwiftUI"
 date: 2023-09-30 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "I decided to get the official logo than simply Googling for an image since you find so many variations online."
 excerpt: "I decided to get the official logo than simply Googling for an image since you find so many variations online. If you go to the resources section on Apple's developer website you'll find a .zip package at the bottom of the page that you can download along with guidelines. The guidelines are especially important if you plan to use the logo in your application"
 seo_title: "Drawing the Swift logo bird in SwiftUI"

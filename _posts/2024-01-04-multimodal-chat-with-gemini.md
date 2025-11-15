@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"
 date: 2024-01-04 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "In this post we will see how to perform multimodal (text-and-image) conversations using the `gemini-pro` & `gemini-pro-vision` models."
 excerpt: "In this post we will see how to perform multimodal (text-and-image) conversations using the `gemini-pro` & `gemini-pro-vision` models."
 seo_title: "Text & Image (multimodal) streaming chat with Gemini AI on iOS with SwiftUI"

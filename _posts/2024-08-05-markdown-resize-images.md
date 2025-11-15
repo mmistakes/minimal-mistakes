@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to resize images in Markdown posts"
 date: 2024-08-05 11:15:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "If like me you also write your website posts in markdown, the only way to link images is as follows..."
 excerpt: "If like me you also write your website posts in markdown, the only way to link images is as follows..."
 seo_title: "How to resize images in Markdown posts"

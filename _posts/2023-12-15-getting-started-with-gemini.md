@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to get started with Gemini AI on iOS with SwiftUI"
 date: 2023-12-15 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "So Google released the Gemini SDK for developers just a few days ago and in this post I'm going to show you how you can get started with it in just a few steps and lines of code."
 excerpt: "So Google released the Gemini SDK for developers just a few days ago and in this post I'm going to show you how you can get started with it in just a few steps and lines of code."
 seo_title: "How to get started with Gemini AI on iOS with SwiftUI"

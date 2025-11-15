@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to hide or unpublish markdown posts in Jekyll?"
 date: 2024-08-09 17:24:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "Previously, when I was using the Chirpy theme for my website, I was able to *draft* posts until I was ready to publish them by storing them in the `_drafts` folder"
 excerpt: "Previously, when I was using the Chirpy theme for my website, I was able to *draft* posts until I was ready to publish them by storing them in the `_drafts` folder"
 seo_title: "How to hide or unpublish markdown posts in Jekyll?"

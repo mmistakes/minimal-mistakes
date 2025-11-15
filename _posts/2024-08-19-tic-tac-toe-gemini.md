@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Challenging Gemini AI to Tic-Tac-Toe - SwiftUI Tutorial"
 date: 2024-08-19 09:45:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "Apart from all the stuff that you can do with a LLM like Gemini, did you know that you could also play games with it?"
 excerpt: "Apart from all the stuff that you can do with a LLM like Gemini, did you know that you could also play games with it?"
 seo_title: "Master Tic-Tac-Toe with Gemini AI: A SwiftUI Tutorial"

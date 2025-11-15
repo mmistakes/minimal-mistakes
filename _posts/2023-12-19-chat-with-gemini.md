@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"
 date: 2023-12-19 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "In the previous post we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient."
 excerpt: "In the previous post we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient."
 seo_title: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"

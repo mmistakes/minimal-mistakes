@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Creating Buttons with Depth in SwiftUI: Adding 3D Effects"
 date: 2024-10-03 14:19:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "Enhance your SwiftUI buttons with a custom style that adds depth and smooth animations, creating a 3D effect when pressed. Ideal for polished iOS app designs!"
 excerpt: "Enhance your SwiftUI buttons with a custom style that adds depth and smooth animations, creating a 3D effect when pressed. Ideal for polished iOS app designs!"
 seo_title: "Creating Buttons with Depth in SwiftUI: Adding 3D Effects"

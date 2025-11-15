@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to remove photo background in Preview on Mac OS"
 date: 2024-08-05 10:12:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/misc.jpg'
 description: "I've always relied on third party tools in order to remove the background from photos until recently when I realised that I could do it using `Preview` on a Mac."
 excerpt: "I've always relied on third party tools in order to remove the background from photos until recently when I realised that I could do it using `Preview` on a Mac."
 seo_title: "How to remove photo backgrounds in Preview on Mac OS"
@@ -18,7 +18,7 @@ tags:
   - Mac
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@jeffcaron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Caron-Robert</a> on <a href="https://unsplash.com/photos/a-wall-full-of-knives-0CCVIuAjORE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 # Remove photo background using Preview on Mac OS 

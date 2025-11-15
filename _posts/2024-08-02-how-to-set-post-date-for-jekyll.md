@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to set article dates for Jekyll sites"
 date: 2024-08-02 11:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "If you happen to publish multiple posts in markdown on the same day, only to find that Jekyll displays the posts out of order, then this post is for you."
 excerpt: "If you happen to publish multiple posts in markdown on the same day, only to find that Jekyll displays the posts out of order, then this post is for you."
 seo_title: "Markdown article date format for Jekyll sites"

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Generating Thumbnails for PDF Files in SwiftUI"
 date: 2024-11-12 14:55:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "Learn how to generate thumbnails for PDF files in SwiftUI by reading files with fileImporter and creating thumbnail images with PDFKit"
 excerpt: "Learn how to generate thumbnails for PDF files in SwiftUI by reading files with fileImporter and creating thumbnail images with PDFKit"
 seo_title: "SwiftUI PDF Thumbnail Generation Tutorial"

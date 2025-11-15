@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"
 date: 2024-03-20 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "In this post we'll once again harness the power of Gemini AI's data generation combining it with Dall-E's image generation capability to create a storybook app for kids."
 excerpt: "In this post we'll once again harness the power of Gemini AI's data generation combining it with Dall-E's image generation capability to create a storybook app for kids."
 seo_title: "Create a Storybook app powered by Gemini AI & Dall-E with SwiftUI"

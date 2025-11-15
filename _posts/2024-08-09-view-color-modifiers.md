@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Lighter or darker color shades from a single Color in SwiftUI"
 date: 2024-08-09 08:15:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "I was working on creating a custom button background for which I needed to apply a darker shade of the foreground view's `foregroundStyle`..."
 excerpt: "I was working on creating a custom button background for which I needed to apply a darker shade of the foreground view's `foregroundStyle`..."
 seo_title: "How to obtain lighter or darker color shades with a single Color in SwiftUI"

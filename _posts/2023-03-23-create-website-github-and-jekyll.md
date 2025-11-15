@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Create a website with GitHub & jekyll in 2023"
 date: 2023-03-23 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "If you have a GitHub account, you can create a static website using the GitHub Pages feature."
 excerpt: "If you have a GitHub account, you can create a static website using the GitHub Pages feature."
 seo_title: "Create a website with GitHub & jekyll in 2023"

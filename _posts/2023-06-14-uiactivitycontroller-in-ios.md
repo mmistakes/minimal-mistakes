@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "UIActivityViewController usage in iOS"
 date: 2023-06-14 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "Sharing content from your app across the system is made simple using the `UIActivityViewController` class on iOS."
 excerpt: "Sharing content from your app across the system is made simple using the `UIActivityViewController` class on iOS."
 seo_title: "UIActivityViewController usage in iOS"

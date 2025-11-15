@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Building a Horoscope app with Gemini AI & SwiftUI"
 date: 2024-01-22 10:02:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "In this post we'll look at one of the important capabilities of AI models i.e. Summarization. You may have seen this when browsing the reviews section of Amazon where before the actual reviews, you see an AI generated summary of the reviews posted for the given product."
 excerpt: "In this post we'll look at one of the important capabilities of AI models i.e. Summarization. You may have seen this when browsing the reviews section of Amazon where before the actual reviews, you see an AI generated summary of the reviews posted for the given product."
 seo_title: "Create a Dynamic Horoscope App with Gemini AI and SwiftUI"

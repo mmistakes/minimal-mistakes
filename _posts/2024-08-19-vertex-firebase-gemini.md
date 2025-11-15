@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Complete guide to building a Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK"
 date: 2024-08-19 09:50:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's."
 excerpt: "In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's."
 seo_title: "Complete Guide to Building a Multimodal Chatbot with Gemini API and Vertex AI for Firebase SDK"

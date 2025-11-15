@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Setting up Google Domains for static GitHub websites in 2023"
 date: 2023-08-13 15:30:00 +0530
-image:  '/images/coding.jpg'
+image:  '/images/featured/coding.jpg'
 description: "In the last post we learnt how you can create a static website using the GitHub Pages feature and apply themes to it using jekyll themes."
 excerpt: "In the last post we learnt how you can create a static website using the GitHub Pages feature and apply themes to it using jekyll themes."
 seo_title: "Setting up Google Domains for static GitHub websites in 2023"
