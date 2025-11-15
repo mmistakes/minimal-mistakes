@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Creating Buttons with Depth in SwiftUI: Adding 3D Effects"
 date: 2024-10-03 14:19:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "Enhance your SwiftUI buttons with a custom style that adds depth and smooth animations, creating a 3D effect when pressed. Ideal for polished iOS app designs!"
 excerpt: "Enhance your SwiftUI buttons with a custom style that adds depth and smooth animations, creating a 3D effect when pressed. Ideal for polished iOS app designs!"
 seo_title: "Creating Buttons with Depth in SwiftUI: Adding 3D Effects"
@@ -16,7 +16,7 @@ tags:
   - iOS Development
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/jpRAavqe8p8?controls=0" frameborder="0" allowfullscreen></iframe>

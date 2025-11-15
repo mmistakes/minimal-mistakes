@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to set article dates for Jekyll sites"
 date: 2024-08-02 11:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "If you happen to publish multiple posts in markdown on the same day, only to find that Jekyll displays the posts out of order, then this post is for you."
 excerpt: "If you happen to publish multiple posts in markdown on the same day, only to find that Jekyll displays the posts out of order, then this post is for you."
 seo_title: "Markdown article date format for Jekyll sites"
@@ -16,7 +16,7 @@ tags:
   - Jekyll
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 This site is created with `Jekyll` and displays posts written in `Markdown`. If you happen to publish multiple posts in markdown on the same day, only to find that Jekyll displays the articles out of order, then this post is for you.

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Why do we fall?"
 date: 2024-08-01 13:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "It is no secret, atleast to the people around me that I am a big Batman fan, but it wasn't always like this"
 excerpt: "It is no secret, atleast to the people around me that I am a big Batman fan, but it wasn't always like this"
 seo_title: "Why do we fall"

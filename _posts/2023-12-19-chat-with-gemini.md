@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"
 date: 2023-12-19 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "In the previous post we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient."
 excerpt: "In the previous post we saw how we could send some text-only input & get a response from Gemini AI's `gemini-pro` model. This is alright for simple tasks but to have a more conversational dialogue with the AI, this is not sufficient."
 seo_title: "Multi-turn Chat with Gemini AI on iOS with SwiftUI"
@@ -20,7 +20,7 @@ tags:
   - Google
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/VO3YGN2UuHc?controls=0" frameborder="0" allowfullscreen></iframe>

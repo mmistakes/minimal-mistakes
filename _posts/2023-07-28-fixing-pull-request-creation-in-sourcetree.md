@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Fixing pull request creation in Sourcetree"
 date: 2023-07-28 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "I recently had to setup a new machine & realised that I was not able to create pull requests from branches in Sourcetree. Turns out in the newest version 4.2.4(254) for Mac the `Host Type` is not automatically set"
 excerpt: "I recently had to setup a new machine & realised that I was not able to create pull requests from branches in Sourcetree. Turns out in the newest version 4.2.4(254) for Mac the `Host Type` is not automatically set"
 seo_title: "Fixing pull request creation in Sourcetree"
@@ -16,7 +16,7 @@ tags:
   - Sourcetree
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 I recently had to setup a new machine & realised that I was not able to create pull requests from branches in Sourcetree. Turns out in the newest version 4.2.4(254) for Mac the `Host Type` is not automatically set, well at least in my case it wasn't. As a result, right-clicking on a local branch & selecting the `Create Pull Request...` option did nothing.

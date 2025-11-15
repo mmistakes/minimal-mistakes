@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to clean a carrom board?"
 date: 2024-08-05 11:53:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "Carrom boards require a lot of care in order to maintain a smooth playing surface. However, despite your best efforts, boards do often run into issues & require regular cleaning."
 excerpt: "Carrom boards require a lot of care in order to maintain a smooth playing surface. However, despite your best efforts, boards do often run into issues & require regular cleaning."
 seo_title: "How to clean a carrom board"
@@ -16,7 +16,7 @@ tags:
   - Games
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 # Cleaning a carrom board  

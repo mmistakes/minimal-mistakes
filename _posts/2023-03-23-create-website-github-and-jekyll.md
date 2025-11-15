@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Create a website with GitHub & jekyll in 2023"
 date: 2023-03-23 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "If you have a GitHub account, you can create a static website using the GitHub Pages feature."
 excerpt: "If you have a GitHub account, you can create a static website using the GitHub Pages feature."
 seo_title: "Create a website with GitHub & jekyll in 2023"
@@ -16,7 +16,7 @@ tags:
   - Jekyll
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 If you have a GitHub account, you can create a static website using the [GitHub Pages](https://pages.github.com/) feature.

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "UIActivityViewController usage in iOS"
 date: 2023-06-14 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "Sharing content from your app across the system is made simple using the `UIActivityViewController` class on iOS."
 excerpt: "Sharing content from your app across the system is made simple using the `UIActivityViewController` class on iOS."
 seo_title: "UIActivityViewController usage in iOS"
@@ -15,7 +15,7 @@ tags:
   - iOS Development
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 Sharing content from your app across the system is made simple using the ```UIActivityViewController``` class on iOS. ```UIActivityViewController``` is capable of sharing text, urls, images etc as is or in combinations. In this post we will take a look at some examples of how to setup & share content with it. 

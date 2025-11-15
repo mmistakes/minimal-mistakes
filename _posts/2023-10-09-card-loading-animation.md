@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Creating a playing card loading animation in SwiftUI"
 date: 2023-10-09 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "The idea for this animation was a gif I had seen on the now defunct gfycat website when looking for inspiration for creating a loading view for a personal project I'd been working on."
 excerpt: "The idea for this animation was a gif I had seen on the now defunct gfycat website when looking for inspiration for creating a loading view for a personal project I'd been working on."
 seo_title: "Creating a playing card loading animation in SwiftUI"
@@ -16,7 +16,7 @@ tags:
   - iOS Development
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/jsMSFwhBryg?controls=0" frameborder="0" allowfullscreen></iframe>

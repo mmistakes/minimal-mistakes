@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Generating Thumbnails for PDF Files in SwiftUI"
 date: 2024-11-12 14:55:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "Learn how to generate thumbnails for PDF files in SwiftUI by reading files with fileImporter and creating thumbnail images with PDFKit"
 excerpt: "Learn how to generate thumbnails for PDF files in SwiftUI by reading files with fileImporter and creating thumbnail images with PDFKit"
 seo_title: "SwiftUI PDF Thumbnail Generation Tutorial"
@@ -16,7 +16,7 @@ tags:
   - iOS Development
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/L19GYmhJL7A?controls=0" frameborder="0" allowfullscreen></iframe>

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Voice & Video Calling app on iOS using ZEGOCLOUD API - Swift Tutorial"
 date: 2024-07-01 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "In this tutorial I will guide you on how to create a voice & video calling app using ZEGOCLOUD"
 excerpt: "In this tutorial I will guide you on how to create a voice & video calling app using ZEGOCLOUD"
 seo_title: "Voice & Video Calling app on iOS using ZEGOCLOUD API | Swift Tutorial"
@@ -18,7 +18,7 @@ tags:
   - Voice Calling
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6_zJ4I_xdKM?controls=0" frameborder="0" allowfullscreen></iframe>

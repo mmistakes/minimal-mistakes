@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to hide or unpublish markdown posts in Jekyll?"
 date: 2024-08-09 17:24:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "Previously, when I was using the Chirpy theme for my website, I was able to *draft* posts until I was ready to publish them by storing them in the `_drafts` folder"
 excerpt: "Previously, when I was using the Chirpy theme for my website, I was able to *draft* posts until I was ready to publish them by storing them in the `_drafts` folder"
 seo_title: "How to hide or unpublish markdown posts in Jekyll?"
@@ -17,7 +17,7 @@ tags:
   - Minimal Mistakes
 --- 
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 Previously, when I was using the [Chirpy](https://chirpy.cotes.page/) theme for my website, I was able to *draft* posts until I was ready to publish them by storing them in the `_drafts` folder. Having switched to the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme however, it didn't come with a `_drafts` folder. While I could create one, I wanted to avoid the pain of doing so, then adding the draft posts to it and then moving them to the `_posts` folder for `Jekyll` to publish them once I was ready.

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Lighter or darker color shades from a single Color in SwiftUI"
 date: 2024-08-09 08:15:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "I was working on creating a custom button background for which I needed to apply a darker shade of the foreground view's `foregroundStyle`..."
 excerpt: "I was working on creating a custom button background for which I needed to apply a darker shade of the foreground view's `foregroundStyle`..."
 seo_title: "How to obtain lighter or darker color shades with a single Color in SwiftUI"
@@ -16,7 +16,7 @@ tags:
   - iOS Development
 --- 
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 I was working on creating a custom button background for which I needed to apply a darker shade of the foreground view's `foregroundStyle`. Working in SwiftUI, there are no api's on `Color` out of the box that provide a solution to this problem. My search for a answers led me to StackOverflow which yielded a plethora of [solutions](https://stackoverflow.com/questions/11598043/get-slightly-lighter-and-darker-color-from-uicolor), each involving manipulating the *color components*. All the solutions were great but still seemed like an overkill so before I resorted to apply any of the solutions I decided to dig deeper one more time and see if there was another way to achieve what I wanted. Turns out there is not so much a way with `Color`, but with `View`. 

@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Editing iOS Simulator Screenshots with Device Bezels"
 date: 2023-11-22 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "Learn how to edit screenshots of the iOS simulator with device bezels & without the toolbar."
 excerpt: "Learn how to edit screenshots of the iOS simulator with device bezels & without the toolbar."
 seo_title: "iOS Simulator Screenshots with Device Bezels"
@@ -14,7 +14,7 @@ tags:
   - iOS Development
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/nHwepVSd7t4?controls=0" frameborder="0" allowfullscreen></iframe>

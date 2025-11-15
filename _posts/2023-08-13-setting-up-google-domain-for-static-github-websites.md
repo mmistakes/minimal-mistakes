@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Setting up Google Domains for static GitHub websites in 2023"
 date: 2023-08-13 15:30:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "In the last post we learnt how you can create a static website using the GitHub Pages feature and apply themes to it using jekyll themes."
 excerpt: "In the last post we learnt how you can create a static website using the GitHub Pages feature and apply themes to it using jekyll themes."
 seo_title: "Setting up Google Domains for static GitHub websites in 2023"
@@ -17,7 +17,7 @@ tags:
   - GitHub
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 In the [last post](https://www.anupdsouza.com/web/create-website-github-and-jekyll/) we learnt how you can create a static website using the [GitHub Pages](https://pages.github.com/) feature and apply themes to it using [jekyll](https://jekyllrb.com/) themes. In this post we will learn how to set up a Google Domain for your website so that users no longer have to visit `username.github.io` to view your website but rather visit your shiny `awesomewebsite.com` domain. Let's get started.

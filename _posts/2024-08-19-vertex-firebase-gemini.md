@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Complete guide to building a Multimodal Chatbot with Gemini API using the Vertex AI for Firebase SDK"
 date: 2024-08-19 09:50:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's."
 excerpt: "In this post we'll see yet another way to interact with Gemini API using Vertex AI for Firebase SDK's."
 seo_title: "Complete Guide to Building a Multimodal Chatbot with Gemini API and Vertex AI for Firebase SDK"
@@ -23,7 +23,7 @@ tags:
   - Prompt Engineering
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aEMGUF7Smro?controls=0" frameborder="0" allowfullscreen></iframe>

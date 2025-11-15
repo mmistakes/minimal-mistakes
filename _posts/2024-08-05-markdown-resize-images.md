@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "How to resize images in Markdown posts"
 date: 2024-08-05 11:15:00 +0530
-image:  '/images/feature-image.jpg'
+image:  '/images/coding.jpg'
 description: "If like me you also write your website posts in markdown, the only way to link images is as follows..."
 excerpt: "If like me you also write your website posts in markdown, the only way to link images is as follows..."
 seo_title: "How to resize images in Markdown posts"
@@ -17,7 +17,7 @@ tags:
   - Image sizing
 ---
 <p align="center" style="font-size: 0.85rem;">
-  Photo by <a href="https://unsplash.com/@cbpsc1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Patterson</a> on <a href="https://unsplash.com/photos/man-siting-facing-laptop-dYEuFB8KQJk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 </p>
 
 # How to resize images in Markdown posts  
