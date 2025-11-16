@@ -1,4 +1,5 @@
-{% assign lang = site.locale | slice: 0,2 | default: "en" %}
+{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
+{% assign lang = locale | slice: 0,2 | default: "en" %}
 {% case lang %}
 {% when "gr" %}
   {% assign lang = "gr" %}

@@ -1,14 +1,15 @@
+{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
 <nav class="pagination">
   <ul>
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ paginator.first_page_path | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+        <li><a href="{{ paginator.first_page_path | relative_url }}">{{ site.data.ui-text[locale].pagination_previous | default: "Previous" }}</a></li>
       {% else %}
-        <li><a href="{{ paginator.previous_page_path | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+        <li><a href="{{ paginator.previous_page_path | relative_url }}">{{ site.data.ui-text[locale].pagination_previous | default: "Previous" }}</a></li>
       {% endif %}
     {% else %}
-      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span></a></li>
+      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[locale].pagination_previous | default: "Previous" }}</span></a></li>
     {% endif %}
 
     {% comment %} Determine whether the first page and the last page are already included in trail {% endcomment %}
@@ -60,9 +61,9 @@
 
     {% comment %} Link next page {% endcomment %}
     {% if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path | remove: 'index.html' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
+      <li><a href="{{ paginator.next_page_path | remove: 'index.html' | relative_url }}">{{ site.data.ui-text[locale].pagination_next | default: "Next" }}</a></li>
     {% else %}
-      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span></a></li>
+      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[locale].pagination_next | default: "Next" }}</span></a></li>
     {% endif %}
   </ul>
 </nav>

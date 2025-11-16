@@ -1,7 +1,8 @@
+{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
 <nav class="skip-links">
   <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_primary_nav | default: 'Skip to primary navigation' }}</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_content | default: 'Skip to content' }}</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_footer | default: 'Skip to footer' }}</a></li>
+    <li><a href="#site-nav" class="screen-reader-shortcut">{{ site.data.ui-text[locale].skip_primary_nav | default: 'Skip to primary navigation' }}</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">{{ site.data.ui-text[locale].skip_content | default: 'Skip to content' }}</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">{{ site.data.ui-text[locale].skip_footer | default: 'Skip to footer' }}</a></li>
   </ul>
 </nav>

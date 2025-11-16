@@ -1,3 +1,4 @@
+{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
@@ -10,11 +11,11 @@
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
     {%- when "lunr" -%}
-      {% include_cached search/lunr-search-scripts.html %}
+      {% include_cached search/lunr-search-scripts.html locale=locale %}
     {%- when "google" -%}
       {% include_cached search/google-search-scripts.html %}
     {%- when "algolia" -%}
-      {% include_cached search/algolia-search-scripts.html %}
+      {% include_cached search/algolia-search-scripts.html locale=locale %}
   {%- endcase -%}
 {% endif %}
 

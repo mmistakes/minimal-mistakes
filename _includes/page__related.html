@@ -1,7 +1,8 @@
+{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
 {% assign posts = include.posts | where_exp: "post", "post.hidden != true" %}
 <div class="page__related">
   {% include before-related.html %}
-  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+  <h2 class="page__related-title">{{ site.data.ui-text[locale].related_label | default: "You May Also Enjoy" }}</h2>
   <div class="grid__wrapper">
     {% for post in posts limit:4 %}
       {% if post.id == page.id %}{% continue %}{% endif %}
