@@ -64,7 +64,7 @@ defaults:
       comments: true # 댓글 기능 활성화 여부
       share: true
       related: true
-      sidebar: right # ✅ 포스트에 사이드바 적용 (오른쪽)
+      sidebar: left
 
 # Reading Files
 include:
