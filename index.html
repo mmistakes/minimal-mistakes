@@ -4,3 +4,8 @@ author_profile: true
 sidebar: left # 왼쪽 사이드바 명시
 entries_layout: grid # 포스트 목록을 카드형(grid)으로 표시
 ---
+
+<div class="archive">
+  <h2 class="archive__subtitle">Recent Posts</h2>
+  {% include list-posts.html entries='site.posts' %}
+</div>
