@@ -1,0 +1,11 @@
+/* _sass/_custom.scss */
+
+// Minimal Mistakes의 사이트 제목 클래스를 강제 오렌지색으로 변경
+.masthead__title {
+    color: #ff6600 !important;
+}
+
+// 혹시 모를 a 태그 링크까지 포함하여 강제 적용
+.masthead__title a {
+    color: #ff6600 !important;
+}
