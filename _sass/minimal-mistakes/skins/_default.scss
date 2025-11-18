@@ -1,5 +1,41 @@
 /* ==========================================================================
-   Default skin
+   Default skin (Customized for Orange Tech blogs)
    ========================================================================== */
 
-// Intentionally left blank
+/* --------------------------------------------------------------------------
+   1. Colors & Backgrounds
+   -------------------------------------------------------------------------- */
+
+// 흰색 배경 및 진한 텍스트로 가독성 확보
+$background-color: #ffffff;
+$text-color: #333333; /* 본문 일반 텍스트 */
+$headline-color: #000000; /* 제목 (H1, H2 등) */
+
+// 브랜드 오렌지색 포인트 (ff6600)
+$primary-color: #ff6600; /* 버튼, 강조 표시 등에 사용될 핵심 오렌지색 */
+$link-color: #ff6600; /* 모든 하이퍼링크 색상 */
+$link-hover-color: mix(#fff, $link-color, 20%);
+$highlight-color: #ff6600; /* 하이라이트/선택 강조 색상 */
+
+// 상단 네비게이션바 (Masthead) 배경색을 흰색으로 설정
+$masthead-background: #ffffff;
+$masthead-link-color: $text-color; /* 메뉴 글자색을 본문과 동일하게 */
+$masthead-link-hover-color: $primary-color; /* 메뉴 호버 시 오렌지색 */
+$masthead-link-active-color: $primary-color; /* 메뉴 활성화 시 오렌지색 */
+
+// 테두리 및 구분선
+$border-color: #eeeeee;
+
+// 사이드바 배경색 (Minimal Mistakes 테마의 좌측 사이드바)
+$sidebar-color: #ffffff;
+$sidebar-text-color: $text-color;
+$sidebar-link-color: $text-color;
+$sidebar-link-hover-color: $primary-color;
+
+
+/* --------------------------------------------------------------------------
+   2. Fonts
+   -------------------------------------------------------------------------- */
+
+// 한글 웹폰트 우선 적용 (고딕/산세리프 계열)
+$sans-serif: "Noto Sans KR", "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", Dotum, "돋움", Helvetica, Arial, sans-serif;
