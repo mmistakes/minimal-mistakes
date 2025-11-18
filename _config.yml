@@ -52,19 +52,29 @@ plugins:
   - jekyll-include-cache
 
 # Defaults (포스트에 기본으로 적용되는 레이아웃)
+# Defaults (포스트에 기본으로 적용되는 레이아웃)
 defaults:
-  # 모든 포스트에 사이드바를 활성화합니다.
+  # 1. 포스트(type: posts)에 대한 설정 (사이드바 적용)
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: true # 댓글 기능 활성화 여부
+      comments: true
       share: true
       related: true
-      sidebar: left
+      sidebar: left # 포스트 페이지에도 왼쪽 사이드바 적용
+
+  # 2. 모든 페이지(type: pages)에 대한 설정 (메인 페이지 포함)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: archive # home 대신 archive 레이아웃을 사용하도록 강제 (사이드바 호환성 높음)
+      author_profile: true
+      sidebar: left # 메인 페이지에 왼쪽 사이드바 적용
 
 # Reading Files
 include:
