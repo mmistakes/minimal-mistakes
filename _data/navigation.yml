@@ -2,6 +2,18 @@
 main:
   - title: "About us"
     url: https://o5l3.notion.site/
+
+sidebar_menu:
+  - title: "🏠 홈"
+    url: /
+  - title: "📁 카테고리"
+    url: /categories/ 
+  - title: "🏷️ 태그"
+    url: /tags/ 
+  - title: "🗄️ 아카이브"
+    url: /year-archive/
+  - title: "ℹ️ 정보 (About us)"
+    url: /aboutus/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
