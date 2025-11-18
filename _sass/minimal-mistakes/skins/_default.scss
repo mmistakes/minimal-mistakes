@@ -21,10 +21,10 @@ $highlight-color: #ff6600; /* 하이라이트/선택 강조 색상 */
 $masthead-background: #ffffff;
 
 // ✅ 사이트 제목 (Orange Tech blogs)은 오렌지색
-$masthead-title-color: $primary-color; 
+$masthead-title-color: $primary-color !default; 
 
 // ✅ 메뉴 링크 (Quick-Start Guide 등)는 본문 색상 (회색/검정)
-$masthead-link-color: $text-color; 
+$masthead-link-color: $text-color !default; 
 $masthead-link-hover-color: $primary-color; /* 메뉴 호버 시 오렌지색 */
 $masthead-link-active-color: $primary-color; /* 메뉴 활성화 시 오렌지색 */
 
