@@ -71,7 +71,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: archive # 사이드바 호환성이 높은 archive 레이아웃 사용 강제
+      layout: home # 사이드바 호환성이 높은 archive 레이아웃 사용 강제
       sidebar: left # 왼쪽 사이드바 명시
       entries_layout: grid # 포스트 목록을 카드형(grid)으로 변경
 
