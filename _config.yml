@@ -9,7 +9,7 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Minimal Mistakes 테마 설정
-minimal_mistakes_skin: "default" # 원하는 스킨으로 변경 가능
+minimal_mistakes_skin: "default"
 # theme: "minimal-mistakes-jekyll"
 # remote_theme: "mmistakes/minimal-mistakes"
 
@@ -17,19 +17,19 @@ minimal_mistakes_skin: "default" # 원하는 스킨으로 변경 가능
 title: "Orange Tech blogs"
 title_separator: "-"
 # subtitle: "사이트를 설명하는 짧은 태그라인"
-url: "https://o5l3.github.io" # 사용자 계정 도메인으로 설정 (o5l3.github.io)
-baseurl: "/OrangeLabs_blog" # 저장소 이름과 동일하게 설정 (o5l3.github.io/OrangeLabs_blog)
-repository: "o5l3/OrangeLabs_blog" # GitHub 사용자명/저장소 이름
+url: "https://o5l3.github.io"
+baseurl: "/OrangeLabs_blog"
+repository: "o5l3/OrangeLabs_blog"
 
 # SEO Related
 # google_site_verification:
-naver_site_verification: # 네이버 검색 등록 시 필요
+naver_site_verification:
 
 # Analytics
 analytics:
-  provider: # "google-gtag", "google-universal" 등 선택
+  provider:
   google:
-    tracking_id: # 구글 애널리틱스 ID
+    tracking_id:
 
 # Site Footer
 footer:
@@ -41,7 +41,7 @@ footer:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: "Asia/Seoul" # 시간대 설정 (선택 사항)
+timezone: "Asia/Seoul"
 
 # Plugins
 plugins:
@@ -51,10 +51,9 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Defaults (포스트에 기본으로 적용되는 레이아웃)
-# Defaults (포스트에 기본으로 적용되는 레이아웃)
+# 🧱 Defaults (레이아웃 및 사이드바 설정)
 defaults:
-  # 1. 포스트(type: posts)에 대한 설정 (사이드바 적용)
+  # 1. 포스트(type: posts)에 대한 설정 (본문 페이지)
   - scope:
       path: ""
       type: posts
@@ -65,7 +64,16 @@ defaults:
       comments: true
       share: true
       related: true
-     # sidebar: left # 포스트 페이지에도 왼쪽 사이드바 적용
+      sidebar: left # 포스트 본문 페이지에도 왼쪽 사이드바 적용
+
+  # ✅ 2. 모든 페이지(type: pages)에 대한 설정 (메인 페이지 포함)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: archive # 사이드바 호환성이 높은 archive 레이아웃 사용 강제
+      sidebar: left # 왼쪽 사이드바 명시
+      entries_layout: grid # 포스트 목록을 카드형(grid)으로 변경
 
 # Reading Files
 include:
@@ -80,3 +88,29 @@ exclude:
   - package.json
   - Rakefile
   - README.md
+
+---
+# 🧱 사이드바 설정 (Saramin 스타일 구성)
+# -----------------
+sidebar:
+  # 사이드바 메뉴 그룹 지정
+  nav: "sidebar_menu"
+  
+  # 사이드바에 표시할 위젯 목록을 정의합니다.
+  entries:
+    # 1. 프로필/소개 섹션
+    - title: "기술 블로그"
+      image: "/assets/images/logo.png" # ⬅️ 로고 경로 (assets/images에 로고 파일이 있다고 가정)
+      image_alt: "Orange Tech Logo"
+      text: |
+        Orange Tech Blog입니다.
+        개발, 시스템 분석 기록을 공유합니다.
+    
+    # 2. 최근 포스트 목록
+    - title: "최신 글"
+      type: "posts"
+      limit: 5
+      
+    # 3. 인기 태그 목록
+    - title: "인기 태그"
+      type: "tags"
