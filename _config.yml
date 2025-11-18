@@ -65,16 +65,7 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar: left # 포스트 페이지에도 왼쪽 사이드바 적용
-
-  # 2. 모든 페이지(type: pages)에 대한 설정 (메인 페이지 포함)
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: archive # home 대신 archive 레이아웃을 사용하도록 강제 (사이드바 호환성 높음)
-      author_profile: true
-      sidebar: left # 메인 페이지에 왼쪽 사이드바 적용
+     # sidebar: left # 포스트 페이지에도 왼쪽 사이드바 적용
 
 # Reading Files
 include:
@@ -89,27 +80,3 @@ exclude:
   - package.json
   - Rakefile
   - README.md
-  
----
-# 🧱 사이드바 설정 (Saramin 스타일 구성)
-# -----------------
-sidebar:
-  # 사이드바에 표시할 네비게이션 그룹을 지정합니다. (아래 _data/navigation.yml에서 정의 필요)
-  nav: "sidebar_menu" 
-  
-  # 사이드바에 표시할 위젯 목록을 정의합니다.
-  entries:
-    # 1. 프로필 섹션 (Saramin 블로그 상단부)
-    - title: "기술 블로그"
-      text: |
-        Orange Tech Blog입니다.
-        개발, 시스템 분석 기록을 공유합니다.
-    
-    # 2. 최근 포스트 목록
-    - title: "최신 글"
-      type: "posts"
-      limit: 5
-      
-    # 3. 인기 태그 목록
-    - title: "인기 태그"
-      type: "tags"
