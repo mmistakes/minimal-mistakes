@@ -56,7 +56,7 @@ defaults:
   # 모든 포스트에 사이드바를 활성화합니다.
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
