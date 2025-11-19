@@ -1,11 +1,372 @@
 /* _sass/_custom.scss */
 
+// ========================================
+// Orange Tech Blog - 카드형 UI 스타일
+// ========================================
+
+// 전체 배경색을 밝은 회색으로 (카드가 돋보이게)
+body {
+    background-color: #f5f5f5 !important;
+}
+
+// 메인 컨텐츠 영역 배경
+.page {
+    background-color: #f5f5f5;
+}
+
+// ========================================
+// 헤더(Masthead) 스타일 개선
+// ========================================
+
+.masthead {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
 // Minimal Mistakes의 사이트 제목 클래스를 강제 오렌지색으로 변경
 .masthead__title {
     color: #ff6600 !important;
+    font-weight: 700 !important;
+    font-size: 1.3em !important;
 }
 
 // 혹시 모를 a 태그 링크까지 포함하여 강제 적용
 .masthead__title a {
     color: #ff6600 !important;
+}
+
+// ========================================
+// 카드형 그리드 레이아웃 스타일
+// ========================================
+
+// 카드 아이템 스타일 (사람인 기술블로그 스타일)
+.grid__item {
+    .archive__item {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.15);
+            border-color: rgba(255, 102, 0, 0.2);
+        }
+    }
+
+    // 카드 이미지 스타일
+    .archive__item-teaser {
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        background: #f8f8f8;
+        flex-shrink: 0;
+
+        img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+
+    // 카드 내부 컨텐츠 래퍼
+    .archive__item-content {
+        padding: 1.2em;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    // 메타 정보 스타일 (날짜, 카테고리 등) - 위로 이동
+    .page__meta {
+        color: #ff6600;
+        font-size: 0.75em !important;
+        margin-bottom: 0.5em;
+        font-weight: 500;
+
+        .page__meta-sep {
+            color: #ffaa66;
+        }
+
+        time {
+            color: #ff6600;
+        }
+    }
+
+    // 카드 제목 스타일
+    .archive__item-title {
+        padding: 0;
+        margin: 0.3em 0 0.5em 0 !important;
+        font-size: 1.15em !important;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #222;
+
+        a {
+            color: #222;
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #ff6600 !important;
+            }
+        }
+    }
+
+    // 카드 설명 스타일
+    .archive__item-excerpt {
+        padding: 0;
+        margin-top: auto;
+        color: #666;
+        font-size: 0.9em !important;
+        line-height: 1.6;
+    }
+}
+
+// ========================================
+// 리스트뷰도 카드형으로 개선
+// ========================================
+
+.list__item {
+    .archive__item {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        padding: 1.2em;
+        margin-bottom: 1em;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(255, 102, 0, 0.12);
+            border-color: rgba(255, 102, 0, 0.2);
+        }
+    }
+
+    .archive__item-title {
+        margin: 0 !important;
+
+        a {
+            color: #222;
+
+            &:hover {
+                color: #ff6600 !important;
+            }
+        }
+    }
+
+    .archive__item-excerpt {
+        color: #666;
+        margin-top: 0.5em;
+    }
+
+    .page__meta {
+        color: #ff6600;
+        font-weight: 500;
+    }
+}
+
+// ========================================
+// 페이지 제목 스타일
+// ========================================
+
+.archive__title {
+    color: #222 !important;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #ff6600;
+    display: inline-block;
+}
+
+.archive__subtitle {
+    color: #222 !important;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #ffaa66;
+}
+
+// ========================================
+// 링크 색상 통일 (주황색)
+// ========================================
+
+a {
+    color: #ff6600;
+
+    &:hover {
+        color: #ff8533;
+    }
+}
+
+// 네비게이션 링크
+.greedy-nav a {
+    color: #222;
+
+    &:hover {
+        color: #ff6600;
+    }
+}
+
+.greedy-nav .visible-links a:hover {
+    color: #ff6600;
+}
+
+// ========================================
+// 사이드바 스타일 개선
+// ========================================
+
+.sidebar {
+    background: transparent;
+
+    .author__avatar img {
+        border: 3px solid #ff6600;
+    }
+
+    .author__name {
+        color: #222;
+        font-weight: 700;
+    }
+
+    .author__bio {
+        color: #666;
+    }
+}
+
+// ========================================
+// 반응형 그리드 간격 조정
+// ========================================
+
+.grid__wrapper {
+    padding: 1em 0;
+}
+
+.grid__item {
+    margin-bottom: 2em !important;
+}
+
+// ========================================
+// 버튼 스타일
+// ========================================
+
+.btn {
+    background-color: #ff6600 !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #ff8533 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(255, 102, 0, 0.3);
+    }
+}
+
+// ========================================
+// 페이지네이션 스타일
+// ========================================
+
+.pagination {
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 1px solid #ddd;
+
+    .pagination--pager {
+        background-color: #ffffff;
+        color: #ff6600;
+        border: 2px solid #ff6600;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #ff6600;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        &.disabled {
+            background-color: #f5f5f5;
+            color: #ccc;
+            border-color: #ddd;
+            cursor: not-allowed;
+
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+}
+
+// ========================================
+// 태그 & 카테고리 스타일
+// ========================================
+
+.page__taxonomy-item {
+    background-color: #fff5e6;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    border-radius: 4px;
+    padding: 0.3em 0.8em;
+    font-size: 0.85em;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #ff6600;
+        color: #ffffff;
+    }
+}
+
+// ========================================
+// 푸터 스타일
+// ========================================
+
+.page__footer {
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: 3em;
+
+    a {
+        color: #ff6600;
+
+        &:hover {
+            color: #ff8533;
+        }
+    }
+}
+
+// ========================================
+// 반응형: 모바일 최적화
+// ========================================
+
+@media (max-width: 768px) {
+    .grid__item {
+        margin-bottom: 1.5em !important;
+
+        .archive__item-teaser img {
+            height: 180px;
+        }
+
+        .archive__item-title {
+            font-size: 1em !important;
+        }
+    }
+
+    .archive__title {
+        font-size: 1.5em;
+    }
 }
