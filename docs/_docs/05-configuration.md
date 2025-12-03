@@ -862,12 +862,13 @@ social:
 
 Analytics is disabled by default. To enable globally select one of the following:
 
-| Name                 | Analytics Provider                                              |
-| -------------------- | --------------------------------------------------------------- |
-| **google**           | [Google Standard Analytics](https://www.google.com/analytics/)  |
-| **google-universal** | [Google Universal Analytics](https://www.google.com/analytics/) |
+| Name                 | Analytics Provider                                                    |
+| -------------------- | --------------------------------------------------------------------- |
+| **google**           | [Google Standard Analytics](https://www.google.com/analytics/)        |
+| **google-universal** | [Google Universal Analytics](https://www.google.com/analytics/)       |
 | **google-gtag**      | [Google Analytics Global Site Tag](https://www.google.com/analytics/) |
-| **custom**           | Other analytics providers                                       |
+| **swetrix**          | [Swetrix](https://swetrix.com/) GDPR-compliant analytics              |
+| **custom**           | Other analytics providers                                             |
 
 For Google Analytics add your Tracking Code:
 
@@ -877,6 +878,15 @@ analytics:
   google:
     tracking_id: "UA-1234567-8"
     anonymize_ip: false # default
+```
+
+For Swetrix Analytics add your Tracking ID:
+
+```yaml
+analytics:
+  provider: "swetrix"
+  swetrix:
+    tracking_id: "xyz43567EF"
 ```
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
@@ -904,11 +914,11 @@ author:
 
 Author links are all optional, include the ones you want visible under the `author.links` array.
 
-| Name | Description |
-| --- | --- |
-| **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
+| Name      | Description                                                                                           |
+| --------- | ----------------------------------------------------------------------------------------------------- |
+| **label** | Link label (e.g. `"Twitter"`)                                                                         |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
+| **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                     |
 
 ```yaml
 author:
@@ -937,11 +947,11 @@ To customize the author sidebar, read the full [layout documentation]({{ "/docs/
 
 Footer links can be added under the `footer.links` array.
 
-| Name | Description |
-| --- | --- |
-| **label** | Link label (e.g. `"Twitter"`) |
-| **icon** | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url** | Link URL (e.g. `"https://twitter.com/mmistakes"`) |
+| Name      | Description                                                                                           |
+| --------- | ----------------------------------------------------------------------------------------------------- |
+| **label** | Link label (e.g. `"Twitter"`)                                                                         |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
+| **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                     |
 
 ```yaml
 footer:
@@ -1131,13 +1141,13 @@ timezone: America/New_York
 
 When hosting with GitHub Pages a small [set of gems](https://pages.github.com/versions/) have been whitelisted for use. The theme uses a few of them which can be found under `gems`. Additional settings and configurations are documented in the links below.
 
-| Plugin | Description                                                                               |
-| --- | --- |
-| [jekyll-paginate][jekyll-paginate] | Pagination Generator for Jekyll. |
-| [jekyll-sitemap][jekyll-sitemap] | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
-| [jekyll-gist][jekyll-gist] | Liquid tag for displaying GitHub Gists in Jekyll sites. |
-| [jekyll-feed][jekyll-feed] | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. |
-| [jekyll-include-cache][jekyll-include-cache] | Liquid tag that caches Liquid includes. |
+| Plugin                                       | Description                                                                               |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [jekyll-paginate][jekyll-paginate]           | Pagination Generator for Jekyll.                                                          |
+| [jekyll-sitemap][jekyll-sitemap]             | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
+| [jekyll-gist][jekyll-gist]                   | Liquid tag for displaying GitHub Gists in Jekyll sites.                                   |
+| [jekyll-feed][jekyll-feed]                   | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts.                 |
+| [jekyll-include-cache][jekyll-include-cache] | Liquid tag that caches Liquid includes.                                                   |
 
 [jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
