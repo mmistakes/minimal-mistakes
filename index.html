@@ -1,4 +1,37 @@
 ---
 layout: home
 author_profile: true
+header:
+  overlay_color: "#252a34"
+  overlay_filter: "0.5"
+  actions:
+    - label: "About Me"
+      url: "/about/"
+    - label: "View Posts"
+      url: "/year-archive/"
+excerpt: "AI Regulation & Product Safety Expert | Technology Standards Researcher | Knowledge Management Enthusiast"
+
+intro:
+  - excerpt: 'Welcome to my digital garden where I explore AI regulation, product safety, technology standards, and personal knowledge management. I share insights from my work at KATS and my continuous learning journey.'
+
+feature_row:
+  - title: "🤖 AI Regulation & Policy"
+    excerpt: "Exploring AI governance, safety frameworks, and regulatory approaches including EU AI Act, US AI Bill of Rights, and international standards."
+    url: "/categories/#ai-regulation"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - title: "🛡️ Product Safety Management"
+    excerpt: "Insights on product safety regulation, market surveillance, and digital transformation in safety management systems."
+    url: "/categories/#product-regulation"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - title: "💻 Coding & Automation"
+    excerpt: "Non-coding and vibe-coding projects using n8n, Make, Python, and AI APIs for workflow automation and productivity."
+    url: "/categories/#coding"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
