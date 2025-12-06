@@ -1,2 +1,5 @@
 source "https://rubygems.org"
-gemspec
+---
+layout: home
+author_profile: true
+---

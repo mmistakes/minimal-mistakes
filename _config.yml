@@ -17,14 +17,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Vijayakumar"'s Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Tech turned selfprenuer sharing my learnings on Software Development, Cloud, DevOps and more."
+url                      : "https://vijayakumarcnp.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "vijayakumarcnp/vijayakumarcnp.github.io" # the GitHub repository of your site
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -113,53 +113,47 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Vijayakumar Durairaj"
+  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  location         : "Tamilnadu, India"
+  email            : "vijayakumar_cnp@yahoo.co.in"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "Upwork"
+      icon: "fa-brands fa-upwork"
+      url: "https://www.upwork.com/freelancers/~0123f0ff4363cc2c87"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/vijayakumarcnp/"
+    - label: "Linkedin"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/vijayakumarcnp/"
+    - label: "Paypal"
+      icon: "fa-brands fa-paypal"
+      url: "https://www.paypal.com/paypalme/vijayakumarcnp/"
+    - label: "Buy Me a Coffee"
+      icon: "fa-solid fa-mug-saucer"
+      url: "https://buymeacoffee.com/vjdcnpw/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: "Upwork"
+      icon: "fa-brands fa-upwork"
+      url: "https://www.upwork.com/freelancers/~0123f0ff4363cc2c87"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-  since: "2013"
+      url: "https://github.com/vijayakumarcnp/"
+    - label: "Linkedin"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/vijayakumarcnp/"
+    - label: "Paypal"
+      icon: "fa-brands fa-paypal"
+      url: "https://www.paypal.com/paypalme/vijayakumarcnp"
+    - label: "buymeacoffee"
+      icon: "fa fa-buymeacoffee"
+      url: "https://buymeacoffee.com/vjdcnpw/"
+  since: "2024"
 
 
 # Reading Files
@@ -325,3 +319,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      mathjax: true
