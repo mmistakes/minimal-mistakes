@@ -1,7 +1,7 @@
 ---
 title: "Maths components"
 categories:
-  - Blog
+  - know-how
 tags:
   - link
   - Post Formats
