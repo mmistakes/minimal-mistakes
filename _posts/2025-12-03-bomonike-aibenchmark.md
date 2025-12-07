@@ -12,7 +12,7 @@ mathjax: true
 1. Add `mathjax: true` to the page (local to the page) or  _config.yml file (if you want globally) of the minimal mistakes theme.
 2. Add the content to the markdown file
 3. Create a file to the root _includes/head/custom.html with following content
-```
+`
 {% if page.mathjax or site.mathjax %}
 <script>
   window.MathJax = {
@@ -26,7 +26,7 @@ mathjax: true
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
-```
+`
 >
 {% if page.mathjax or site.mathjax %}
 <script>
