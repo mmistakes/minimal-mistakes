@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Vijayakumar Durairaj"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**Selfprenuer** developing apps using using Cloud Native technologies. Passionate about Open Source, DevOps, Kubernetes, Microservices and Serverless."
+  bio              : "**Selfprenuer** developing apps using using Cloud Native technologies. Passionate about Open Source, QA, Speaker and Blogger."
   location         : "Tamilnadu, India"
   email            : "vijayakumar_cnp@yahoo.co.in"
   links:

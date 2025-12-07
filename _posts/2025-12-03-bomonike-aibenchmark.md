@@ -43,9 +43,9 @@ mathjax: true
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
-Here is the **formula** rendered 
+This is how the **formula** is rendered 
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
-for using mathjax in place of 
+by using mathjax-minimal-mistakes theme as opposed to below format
 
 <pre>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</pre>
 
