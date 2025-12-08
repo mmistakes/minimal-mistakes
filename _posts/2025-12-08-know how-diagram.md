@@ -1,5 +1,11 @@
 ---
 title: "Post with Flowchart"
+categories:
+  - know-how
+tags:
+  - mermaid
+  - flowchart
+
 ---
 
 ## My Sample Diagram
