@@ -23,8 +23,6 @@ graph TD;
 ### Steps to generate using _minimal mistakes_ theme
 1.  Add the following codes to the custom.html under root/head folder (if not present, create it).
 >
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    {% endif %}
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <script>
       // Configuration block
