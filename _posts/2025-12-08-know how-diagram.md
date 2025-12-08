@@ -32,7 +32,6 @@ graph TD;
             theme: 'default', // Options: 'default', 'dark', 'forest', 'neutral'
             securityLevel: 'loose' 
           });
-
           // Function to process and render the diagrams after the page is loaded
           function initMermaid() {
             // Find all the code blocks marked with 'language-mermaid'
@@ -48,7 +47,6 @@ graph TD;
           // Replace the original code block with the new div
           codeElement.parentNode.replaceWith(wrapper);
         });
-
         // Render the diagrams found in the new divs
         mermaid.init(undefined, '.mermaid');
           }
@@ -56,3 +54,5 @@ graph TD;
             // Run the initialization function once the entire page is ready
             document.addEventListener('DOMContentLoaded', initMermaid);
           </script>
+
+2. Use the mermaid syntax to represent the diagrams
