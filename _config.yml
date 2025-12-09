@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-TW"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "雙語數學教學與學習"
+title                    : "Helen 的教學筆記"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "在 Cyber school 以學生為中心的創新教學"
 name                     : "Helen"
-description              : "An amazing website."
+description              : "專注將科技融入教學，陪伴學生發掘熱情、培養批判思考與解決問題的能力。"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Helen"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "您好！我是 Helen，目前任職於 Cyber school，擁有超過 15 年的教育經驗，致力於以學生為中心的創新教學。"
+  location         : "Taiwan"
   email            :
   links:
     - label: "Email"
