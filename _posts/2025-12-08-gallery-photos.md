@@ -11,7 +11,7 @@ The following block defines a gallery with 3 columns.
 The gallery tag must be closed with {% endgallery %}
 {% endcomment %}
 
-<div class="gallery gallery--3-col">
+<{% gallery class="3-col" %}
 
   {% include figure image_path="/assets/images/photo1.jpg" 
     alt="first image" 
@@ -28,4 +28,4 @@ The gallery tag must be closed with {% endgallery %}
     caption="This is the third photo." 
     title="Photo 3" %}
 
-</div>
+{% endgallery %}

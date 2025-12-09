@@ -1,0 +1,79 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Gallery RB\n"
+"POT-Creation-Date: 2017-06-29 12:18+0200\n"
+"PO-Revision-Date: 2017-06-29 12:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: gallery-rb.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: package.json\n"
+"X-Poedit-SearchPathExcluded-2: dist\n"
+
+#: class-gallert-rb.php:103 class-gallert-rb.php:133
+#: dist/disable-comments-rb/class_rb_disable-comments.php:114
+#: dist/disable-comments-rb/class_rb_disable-comments.php:144
+msgid "Comments are closed."
+msgstr ""
+
+#: class-gallert-rb.php:124
+#: dist/disable-comments-rb/class_rb_disable-comments.php:135
+#, php-format
+msgid ""
+"The <em>Disable Comments</em> plugin is active, but isn't configured to do "
+"anything yet. Visit the <a href=\"%s\">configuration page</a> to choose "
+"which post types to disable comments on."
+msgstr ""
+
+#: class-gallert-rb.php:185
+#: dist/disable-comments-rb/class_rb_disable-comments.php:196
+msgid "Settings"
+msgstr ""
+
+#: class-gallert-rb.php:194
+#: dist/disable-comments-rb/class_rb_disable-comments.php:205
+msgid "Rb Disable Comments"
+msgstr ""
+
+#: dist/disable-comments-rb/options.php:39
+msgid "Disable Comments RB"
+msgstr ""
+
+#: dist/disable-comments-rb/options.php:49 options.php:39
+msgid "Disable all comments"
+msgstr ""
+
+#: dist/disable-comments-rb/options.php:57 options.php:47
+msgid "Enable"
+msgstr ""
+
+#: dist/disable-comments-rb/options.php:64 options.php:54
+msgid "Save Changes"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: options.php:29
+msgid "Gallery RB"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://robosoft.co/wordpress-plugins/gallery-rb"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Robosoft Team"
+msgstr ""
