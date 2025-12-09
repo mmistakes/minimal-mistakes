@@ -55,3 +55,13 @@ graph TD;
 2. Use the mermaid syntax to represent the diagrams
 
 _follow this_ [link!](https://vijayakumarcnp.github.io/know-how/bomonike-aibenchmark/) if you want maths formulas to be displayed in your content
+
+#### Some more example
+<pre class="mermaid">
+     graph TD
+     A[Client] -->B[Load Balancer]
+     B-->C[Server01]
+     B-->D[Server02]
+</pre>
+
+ER Diagram 
