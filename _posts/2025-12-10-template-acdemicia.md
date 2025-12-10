@@ -14,6 +14,7 @@ mathjax: true
 # Main heading - Parabola
 
 **Introduction** about the topic and link to images if needed ![parabola](https://res.cloudinary.com/dafulvowb/image/upload/v1765331742/math_parabola_500x500_wyfqk6.png)
+>"I heave the basketball; I know it sails in a parabola, exhibiting perfect symmetry, which is interrupted by the basket. It's funny, but it is always interrupted by the basket." ~ Michael Jordan
 
 ** Steps to use mathjax** in jekyll
 ---
