@@ -1,6 +1,5 @@
 ---
 title: "Topic - mathematica"
-date: 2025-12-10T05:49:30-04:00
 categories:
   - Template
 tags:
