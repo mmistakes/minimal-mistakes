@@ -10,6 +10,9 @@ tags:
   - videos
   - links
 mathjax: true
+config:   
+    look: handDrawn
+    theme: neutral
 ---
 # Main heading - Parabola
 
