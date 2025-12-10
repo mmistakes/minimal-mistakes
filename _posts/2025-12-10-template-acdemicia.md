@@ -13,6 +13,8 @@ mathjax: true
 ---
 # Main heading - Parabola
 
+**Introduction** about the topic and link to images if needed ![parabola](https://res.cloudinary.com/dafulvowb/image/upload/v1765331742/math_parabola_500x500_wyfqk6.png)
+
 ** Steps to use mathjax** in jekyll
 ---
 1. Add `mathjax: true` to the page (local to the page) or  _config.yml file (if you want globally) of the minimal mistakes theme.
