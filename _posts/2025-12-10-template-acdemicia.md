@@ -8,7 +8,7 @@ tags:
   - diagram
   - images
   - videos
-  -links
+  - links
 mathjax: true
 ---
 # Main heading - Parabola
