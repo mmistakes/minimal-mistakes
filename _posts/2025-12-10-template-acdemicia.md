@@ -70,7 +70,7 @@ graph TD;
     C -- No --> B;
 ```
 _follow this_ [link!](https://vijayakumarcnp.github.io/know-how/bomonike-aibenchmark/) if you want maths formulas to be displayed in your content
-
+```mermaid
 mindmap
   root((mindmap))
     Origins
@@ -88,14 +88,15 @@ mindmap
     Tools
       Pen and paper
       Mermaid
-
+```
+```mermaid
 xychart
     title "Sales Revenue"
     x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
     y-axis "Revenue (in $)" 4000 --> 11000
     bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
     line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
-
+```
 
 {% include video id="wg-Cn5A8QKs" provider="youtube" %}
 
