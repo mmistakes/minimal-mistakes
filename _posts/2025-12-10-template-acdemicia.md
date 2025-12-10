@@ -1,5 +1,5 @@
 ---
-title: "Topic - mathematica"
+title: "Topic - Some mathematic topic"
 categories:
   - Template
 tags:
@@ -14,6 +14,7 @@ mathjax: true
 # Main heading - Parabola
 
 **Introduction** about the topic and link to images if needed ![parabola](https://res.cloudinary.com/dafulvowb/image/upload/v1765331742/math_parabola_500x500_wyfqk6.png)
+#### Sub-heading with a quote
 >"I heave the basketball; I know it sails in a parabola, exhibiting perfect symmetry, which is interrupted by the basket. It's funny, but it is always interrupted by the basket." ~ Michael Jordan
 
 ** Steps to use mathjax** in jekyll
@@ -22,35 +23,7 @@ mathjax: true
 2. Add the content to the markdown file
 3. Create a file to the root _includes/head/custom.html with following content
 
-{% highlight ruby %}
-{% if page.mathjax or site.mathjax %}
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-{% endif %}
-{% endhighlight %}
->
-{% if page.mathjax or site.mathjax %}
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-{% endif %}
+
 
 This is how the **formula** is rendered 
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
@@ -58,7 +31,7 @@ by using mathjax-minimal-mistakes theme as opposed to below format
 
 <pre>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</pre>
 
-## My Sample Diagram
+## Some sample visual aids needed to represent the working mechanism/proof for the topic
 
 Here is a simple **flowchart**:
 
@@ -89,6 +62,7 @@ mindmap
       Pen and paper
       Mermaid
 ```
+#### Sometime you may want to use bar graphs...
 ```mermaid
 xychart-beta
     title "Sales Revenue"
@@ -98,6 +72,7 @@ xychart-beta
     line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 
 ```
+#### Sometime you may want to place youtube video/video to your content
 
 {% include video id="wg-Cn5A8QKs" provider="youtube" %}
 
