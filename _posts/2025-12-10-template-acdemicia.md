@@ -10,10 +10,6 @@ tags:
   - videos
   - links
 mathjax: true
-config:   
-    look: handDrawn
-    theme: neutral
-xychart horizontal
 ---
 # Main heading - Parabola
 
@@ -100,6 +96,8 @@ xychart
     bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
     line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 
+
+{% include video id="wg-Cn5A8QKs" provider="youtube" %}
 
 Enter the link name which you want to [Reference] in the template and mention its path in in the below name .If you have questions, you can email @ vijayakumar_cnp@yahoo.co.in.
 
