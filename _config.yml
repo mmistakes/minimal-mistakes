@@ -15,23 +15,23 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-TW"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "股癌Gooaye"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "台灣財經Podcast霸主，獨到觀點，犀利解讀市場。"
+name                     : "謝孟恭"
+description              : "股癌（謝孟恭）不僅是財經專家，更是一位具備強大個人魅力的「觀點轉譯者」。他以「槓鈴策略」與「指數化投資為主，個股為輔」為核心理念，將枯燥的金融資訊轉化為現代人的精神食糧，深受年輕投資者喜愛。節目內容涵蓋投資、人生規劃、親子關係與職場建議，並常分享 AI、半導體等前沿科技趨勢。他強調對市場保持敬畏，不相信過度複雜的技術分析，更看重公司的產業地位與長期趨勢。"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "股癌 Gooaye" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
-copyright                : # "copyright" name, defaults to site.title
+copyright                : "股癌 Gooaye" # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -113,30 +113,24 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "謝孟恭"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "綽號「股癌」、「主委」。曾任培訓飛行員，後轉戰金融投資。2020年新冠肺炎期間，以獨特觀點、犀利口吻迅速走紅。投資理念為「槓鈴策略」與「指數化投資為主，個股為輔」。語言風格接地氣且真實，深受年輕投資者喜愛。台灣Podcast霸主、暢銷作家《灰階思考》、創投與推廣者。他去神話化，邏輯清晰，並傳遞人生價值觀，是位具強大個人魅力的「觀點轉譯者」。"
+  location         : "台灣"
+  email            : # your.name@email.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+    - label: "Podcast"
+      icon: "fas fa-fw fa-microphone"
+      url: "https://linktr.ee/gooaye" # Example podcast link
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://your-website.com" # Placeholder, update if there's an official site
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://www.facebook.com/Gooaye.tw" # Example Facebook link
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/gooaye_tw/" # Example Instagram link
 
 # Site Footer
 footer:
