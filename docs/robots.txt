@@ -1,0 +1,1 @@
+Sitemap: https://jlopez34-boop.github.io/minimal-mistakes/sitemap.xml

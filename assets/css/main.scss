@@ -7,3 +7,37 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+
+.two-column {display: flex; flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;}
+
+.column-text {
+  flex: 2 1 320px;}
+
+.column-image {
+  flex: 1 1 220px;
+  text-align: right;}
+
+.column-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1rem;}
+
+
+// youtube stuff
+
+.video-block {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid rgba(0, 0, 0, 0.15);
+  background: rgba(99, 33, 33, 0.03);
+  font-weight: 500;
+  line-height: 1.5;
+}
