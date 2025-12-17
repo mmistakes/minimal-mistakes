@@ -1,5 +1,5 @@
 ---
-title: "Topic - Some mathematic topic"
+title: "Topic - Some topic on mathematics/science/general"
 categories:
   - Template
 tags:

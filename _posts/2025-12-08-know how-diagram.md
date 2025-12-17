@@ -8,7 +8,7 @@ tags:
 
 ---
 
-## My Sample Diagram
+## Chitra
 
 Here is a simple **flowchart**:
 
