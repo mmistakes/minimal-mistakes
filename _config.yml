@@ -313,7 +313,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: page
     values:
       layout: single
       author_profile: true
