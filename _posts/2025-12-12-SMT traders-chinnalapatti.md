@@ -26,11 +26,14 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
 <a target="_blank"> <img src="https://res.cloudinary.com/dafulvowb/image/upload/v1766121548/smt-cardamom-500x500_scpmwq.jpg"/> </a>
 
 ##### Products
-| Product          | Cost  | Quantity | Status      |
+<div class="table-wrapper" markdown="block">
+| Product Name     | Cost  | Quantity | Status      |
 | :---             | :---: | :---:    | ---:        |
 | Green garden tea | $100  | 1        | **1 left**  |
 | Masala tea       | $100  | 2        | Available   |
 | Cardamom - green | $200  | 5        | Available   |
+
+</div>
 
 But our passion for flavor doesn't stop there. We believe that baking is an act of love, and every baker deserves the best tools. We carry a curated range of essential bakery raw materials, serving both the weekend hobbyist and the seasoned pro. Whether you are looking for the perfect flour, quality cocoa, or reliable yeasts, we have the building blocks for your next delicious masterpiece.
 
