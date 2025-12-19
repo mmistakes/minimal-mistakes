@@ -46,12 +46,12 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
     </tr>
   </thead>
   <tbody>
-    {% for product_name in site.data.products %}
+    {% for product in site.data.products %}
     <tr>
-      <td>{{ products.product_name }}</td>
-      <td>{{ products.price_inr }}</td>
-      <td>{{ products.qty }}</td>
-      <td>{{ products.status }}</td>
+      <td>{{ product.product_name }}</td>
+      <td>{{ product.price_inr }}</td>
+      <td>{{ product.qty }}</td>
+      <td>{{ product.status }}</td>
     </tr>
     {% endfor %}
   </tbody>
