@@ -33,8 +33,9 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
 | Masala tea       | $100  | 2        | Available   |
 | Cardamom - green | $200  | 5        | Available   |
 
-
+</div>
 ---
+<div class="table-wrapper" markdown="block">
 {% assign active_products = site.data.product_name | where: 'status', 'Active' %}
 
 | Name | Role | Department | Status |
