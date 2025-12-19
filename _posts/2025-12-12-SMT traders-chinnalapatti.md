@@ -46,8 +46,7 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
     </tr>
   </thead>
   <tbody>
-    {% assign active_products = site.data.product_name | where: 'status', 'Active' %}
-    {% for product_name in active_products %}
+    {% for product_name in site.data.products %}
     <tr>
       <td>{{ products.product_name }}</td>
       <td>{{ products.price_inr }}</td>
