@@ -34,7 +34,16 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
 | Cardamom - green | $200  | 5        | Available   |
 
 </div>
+---
+{% assign active_products = site.data.product_name | where: 'status', 'Active' %}
 
+| Name | Role | Department | Status |
+| :--- | :--- | :--- | :--- |
+{% for employee in active_products %}
+| {{ employee.product_name }} | {{ employee.price_inr }} | {{ employee.qty }} | {{ employee.status }} |
+{% endfor %}
+
+---
 But our passion for flavor doesn't stop there. We believe that baking is an act of love, and every baker deserves the best tools. We carry a curated range of essential bakery raw materials, serving both the weekend hobbyist and the seasoned pro. Whether you are looking for the perfect flour, quality cocoa, or reliable yeasts, we have the building blocks for your next delicious masterpiece.
 
 At SMT Traders, we aren't just selling ingredients; we are helping you create memories around the table. Come step inside, take a deep breath, and let your culinary journey begin.
