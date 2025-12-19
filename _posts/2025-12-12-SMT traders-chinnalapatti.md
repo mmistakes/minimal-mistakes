@@ -39,9 +39,9 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Role</th>
-      <th>Department</th>
+      <th>Product Name</th>
+      <th>Cost</th>
+      <th>Quantity</th>
       <th>Status</th>
     </tr>
   </thead>
