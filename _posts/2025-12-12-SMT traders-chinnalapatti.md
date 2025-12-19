@@ -36,14 +36,6 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
 </div>
 ---
 
-
-
-| Name | Role | Department | Status |
-| :--- | :--- | :--- | :--- |
-{% for product_name in active_products %}
-| {{ products.product_name }} | {{ products.price_inr }} | {{ products.qty }} | {{ products.status }} |
-{% endfor %}
-
 <table>
   <thead>
     <tr>
@@ -55,6 +47,7 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
   </thead>
   <tbody>
     {% assign active_products = site.data.product_name | where: 'status', 'Active' %}
+    {% for product_name in active_products %}
     <tr>
       <td>{{ products.product_name }}</td>
       <td>{{ products.price_inr }}</td>
