@@ -40,8 +40,8 @@ We know that the soul of good cooking lies in its aroma. That is why we have met
 
 | Name | Role | Department | Status |
 | :--- | :--- | :--- | :--- |
-{% for employee in active_products %}
-| {{ employee.product_name }} | {{ employee.price_inr }} | {{ employee.qty }} | {{ employee.status }} |
+{% for product_name in active_products %}
+| {{ products.product_name }} | {{ products.price_inr }} | {{ products.qty }} | {{ products.status }} |
 {% endfor %}
 </div>
 ---
