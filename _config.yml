@@ -21,7 +21,7 @@ title                    : "Helen 的教學筆記"
 title_separator          : "-"
 subtitle                 : "在 Cyber school 以學生為中心的創新教學"
 name                     : "Helen"
-description              : "專注將科技融入教學，陪伴學生發掘熱情、培養批判思考與解決問題的能力。"
+description              : "專注將科技融入教學，陪伴學生發掘熱情、培養批判思考與解決問題的能力。同時分享數學與文學的交會，探索書中的數字意涵。"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Helen"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "您好！我是 Helen，目前任職於 Cyber school，擁有超過 15 年的教育經驗，致力於以學生為中心的創新教學。"
+  bio              : "您好！我是 Helen，目前任職於 Cyber school，擁有超過 15 年的教育經驗，致力於以學生為中心的創新教學。我也熱愛閱讀，喜歡從文學作品中發現數學的蹤跡。"
   location         : "Taiwan"
   email            :
   links:
