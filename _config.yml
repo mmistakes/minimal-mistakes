@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Learner"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **learning** person."
+  bio              : "I am a **learning** person."
   location         : "South Korea"
   email            :
   links:
