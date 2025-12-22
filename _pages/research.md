@@ -64,6 +64,16 @@ layout: splash
 
 <div class="research-grid">
 
+  <!-- Paper 14 -->
+  <div class="research-card">
+    <img src="{{ site.baseurl }}/assets/images/research/verifiability-first.png" alt="Paper 14">
+    <h3>Verifiability-First Agents: Provable Observability and Lightweight Audit Agents for Controlling Autonomous LLM Systems</h3>
+    <p>An architecture with built-in attestations, audit agents, and challenge-response checks, alongside OPERA to benchmark detection and remediation of agent misalignment</p>
+    <div class="research-links">
+      <a href="https://arxiv.org/abs/2512.17259" target="_blank">Paper</a>
+    </div>
+  </div>
+
   <!-- Paper 13 -->
   <div class="research-card">
     <img src="{{ site.baseurl }}/assets/images/research/dac-lora.png" alt="Paper 13">

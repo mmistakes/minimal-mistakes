@@ -230,7 +230,7 @@ title: Home
 </style>
 <div class="intro-wrapper">
   <div class="announcement-box">
-    📢 Latest: Intro Talk on 28th October, 2025, See you there in MAC Audi at 6pm!
+    📢 Latest: Our Recruitment Tracks are open! Ongoing: BYOP for Freshers and Sophomores. Upcoming: Beginner's Hypothesis. Stay Tuned!
   </div>
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
