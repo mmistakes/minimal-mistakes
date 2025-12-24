@@ -6,8 +6,8 @@ main:
     url: /posts/
   - title: "Books"
     url: /books/
-  - title: "CV"
-    url: /files/CV.pdf
+  #- title: "CV"
+  #  url: /files/CV.pdf
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
