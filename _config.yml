@@ -23,7 +23,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : ""
 description              : "走走停停～"
 url                      : "https://lapixiaoxin.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : /blog # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "lapixiaoxin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Let's fight, lapixiaoxin!"
+  location         : "Hangzhou"
   email            :
   links:
     - label: "Email"
@@ -159,13 +159,15 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2025"
 
 
 # Reading Files
 include:
   - .htaccess
   - _pages
+  - _posts
+  - _portfolio
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
