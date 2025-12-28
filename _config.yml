@@ -21,7 +21,7 @@ title                    : "Lapixiaxin's Growth Diary"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : ""
-description              : "走走停停～"
+description              : "辣皮小新成长日记～"
 url                      : "https://lapixiaoxin.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
