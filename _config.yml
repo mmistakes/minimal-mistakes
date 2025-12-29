@@ -148,8 +148,8 @@ footer:
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url:
     - label: "Email"
-      icon: "fas fa-fw fa-link"
-      url: "https://github.com/kiseonghwang"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "ks.hwang.0313@gmail.com"
       
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
