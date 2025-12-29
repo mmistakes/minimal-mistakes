@@ -2,4 +2,16 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+{% if page.custom_css %}
+  {% for file in page.custom_css %}
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: file | relative_url }}">
+  {% endfor %}
+{% endif %}
+
+{% if page.custom_js %}
+  {% for file in page.custom_js %}
+    <script defer src="{{ '/assets/js/' | append: file | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
 <!-- end custom head snippets -->

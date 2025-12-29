@@ -1,0 +1,23 @@
+/* Make overall text slightly smaller */
+.page__content {
+  font-size: 0.75rem;   /* default is a bit larger (~1.05rem) */
+  line-height: 1.6;
+}
+
+/* Slightly smaller headings site-wide */
+.page__content h1 {
+  font-size: 2.1rem;
+}
+
+.page__content h2 {
+  font-size: 1.7rem;
+}
+
+.page__content h3 {
+  font-size: 1.4rem;
+}
+
+/* Optional: smaller list items too */
+.page__content li {
+  font-size: 0.95rem;
+}

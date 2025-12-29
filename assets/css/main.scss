@@ -6,3 +6,18 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+body {
+  font-size: 18px;
+}
+
+.tight-links {
+  display: block;
+  margin-top: 0.3rem;   /* less gap above the whole block */
+  line-height: 1.4;      /* tighter spacing between the lines */
+  font-size: 0.9em;      /* optional: slightly smaller text */
+}
+
+.page__content .feature__wrapper {
+  margin-bottom: 0.15rem;   /* default is much bigger; tweak to taste */
+}

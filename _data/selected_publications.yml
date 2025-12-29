@@ -1,0 +1,36 @@
+- image_path: /assets/images/pubs/masksdm.png
+  alt: "MaskSDM"
+  title: "MaskSDM with Shapley values to improve flexibility, robustness and explainability in species distribution modelling (2025)"
+  excerpt: "Published in Methods in Ecology and Evolution."
+  url: /publications/masksdm/
+  btn_label: "Project page"
+  btn_class: "btn--primary"
+  links:
+    - label: "PDF"
+      url: /assets/pdf/masksdm.pdf
+    - label: "Code"
+      url: https://github.com/USER/REPO
+
+- image_path: /assets/images/pubs/paper2.png
+  alt: "Paper 2"
+  title: "Paper Title Two (2024)"
+  excerpt: "Journal / Preprint."
+  url: /publications/paper-title-two/
+  btn_label: "Project page"
+  btn_class: "btn--primary"
+  links:
+    - label: "arXiv"
+      url: https://arxiv.org/abs/XXXX.XXXXX
+    - label: "Code"
+      url: https://github.com/USER/REPO
+
+- image_path: /assets/images/pubs/paper3.png
+  alt: "Paper 3"
+  title: "Paper Title Three (2023)"
+  excerpt: "Conference."
+  url: /publications/paper-title-three/
+  btn_label: "Project page"
+  btn_class: "btn--primary"
+  links:
+    - label: "Slides"
+      url: /assets/slides/paper-title-three-slides.pdf
