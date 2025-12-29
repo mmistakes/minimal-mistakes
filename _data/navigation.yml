@@ -12,7 +12,7 @@ docs:
       - title: "Category"
         url: /categories/
       - title: "Tag"
-         url: /tags/
+        url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
