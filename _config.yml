@@ -147,9 +147,9 @@ footer:
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "ks.hwang.0313@gmail.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "ks.hwang.0313@gmail.com"
       
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
