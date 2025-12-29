@@ -9,7 +9,7 @@ main:
 docs:
   - title: "목차"
     children:
-      - title: "category"
+      - title: "Category"
         url: /categories/
       - title: "Tag"
          url: /tags/
