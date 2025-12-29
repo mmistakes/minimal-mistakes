@@ -124,7 +124,7 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-       url: "https://www.notion.so/6d829d5c8faf45ea9a9c3344a5d1e1fc?source=copy_link"
+      # url: "https://www.notion.so/6d829d5c8faf45ea9a9c3344a5d1e1fc?source=copy_link"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -139,27 +139,27 @@ author:
       # url: "https://instagram.com/"
 
 # Site Footer
-# footer:
-#   links:
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       # url:
-#     - label: "Facebook"
-#       icon: "fab fa-fw fa-facebook-square"
-#       # url:
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       # url:
-#     - label: "GitLab"
-#       icon: "fab fa-fw fa-gitlab"
-#       # url:
-#     - label: "Bitbucket"
-#       icon: "fab fa-fw fa-bitbucket"
-#       # url:
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       # url:
-#   since: "2013"
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+  since: "2013"
 
 
 # Reading Files
