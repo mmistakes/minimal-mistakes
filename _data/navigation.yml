@@ -9,10 +9,10 @@ main:
 docs:
   - title: "목차"
     children:
-     - title: "category"
-       url: /categories/
+      - title: "category"
+        url: /categories/
       - title: "Tag"
-        url: /tags/
+         url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
