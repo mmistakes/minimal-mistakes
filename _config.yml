@@ -15,13 +15,13 @@
 minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR" # en_US
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "This site is a math for AI"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "My learning for AI"
+title_separator          : "|"
+subtitle                 :  "site tagline that appears below site title in masthead"
+name                     : "Kiseong Hwnag"
+description              : "My blog."
 url                      : "https://kiseonghwang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
