@@ -116,9 +116,11 @@ author:
   name             : "Kiseong Hwang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am learning for AI and MLOps"
-  location         : "KOREA"
+  location         : "South Korea"
   email            : "ks.hwang.0313@gmail.com"
   github           : "https://github.com/kiseonghwang"
+  website          : "https://www.notion.so/6d829d5c8faf45ea9a9c3344a5d1e1fc?source=copy_link"
+  notion           : "https://www.notion.so/6d829d5c8faf45ea9a9c3344a5d1e1fc?source=copy_link"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
