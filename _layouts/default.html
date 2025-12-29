@@ -7,11 +7,12 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
   </head>
   
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
   
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
