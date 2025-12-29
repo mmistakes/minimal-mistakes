@@ -329,4 +329,4 @@ defaults:
       comments: true
       share: false
       related: true
-      show_date: false
+      show_date: true
