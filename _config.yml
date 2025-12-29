@@ -118,6 +118,7 @@ author:
   bio              : "I am learning for AI and MLOps"
   location         : "KOREA"
   email            : "ks.hwang.0313@gmail.com"
+  github           : "https://github.com/kiseonghwang"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -133,7 +134,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/kiseonghwang"
+       # url: "https://github.com/kiseonghwang"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
