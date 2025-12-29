@@ -119,9 +119,9 @@ author:
   location         : "south Korea"
   email            : "ks.hwang.0313@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ks.hwang.0313@gmail.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:ks.hwang.0313@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.notion.so/6d829d5c8faf45ea9a9c3344a5d1e1fc?source=copy_link"
@@ -134,9 +134,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kiseonghwang"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/kiseong_07"
 
 # Site Footer
 footer:
