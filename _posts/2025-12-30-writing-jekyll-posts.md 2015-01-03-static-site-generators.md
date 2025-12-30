@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI를 위한 수학 블로그 입니다dddd."
+title: "AI를 위한 수학 블로그."
 categories: Math
 tag: plan
 toc: true
