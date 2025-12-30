@@ -21,3 +21,36 @@ body {
 .page__content .feature__wrapper {
   margin-bottom: 0.15rem;   /* default is much bigger; tweak to taste */
 }
+
+.author__avatar img {
+  max-width: 200px;
+  width: 200px;      /* adjust as you like */
+  height: auto;
+  border-radius: 20%;
+}
+
+/* Make feature_row type="left" use flex instead of floats */
+.feature__item--left .archive__item {
+  display: flex;
+  align-items: flex-start;    /* top-align instead of center */
+}
+
+/* image column */
+.feature__item--left .archive__item-teaser {
+  flex: 0 0 260px;            /* width of the image column; tweak */
+  margin-right: 0.5rem;      /* a bit more breathing room */
+  float: none;                /* <-- IMPORTANT: cancel theme float */
+  align-self: center;   /* <-- THIS centers the image vertically */
+}
+
+/* text column */
+.feature__item--left .archive__item-body > *:first-child {
+  margin-top: -0.1rem;   /* adjust to align title with image top */
+}
+
+/* optional: constrain image size nicely */
+.feature__item--left .archive__item-teaser img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

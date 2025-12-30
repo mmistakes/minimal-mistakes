@@ -57,10 +57,10 @@ custom_js:
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Robin Zbinden</a><sup>*</sup>,
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Robin Zbinden</a>,
               </span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Nina van Tiel</a><sup>*</sup>,
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Nina van Tiel</a>,
               </span>
               <span class="author-block">
                 <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Gencer Sumbul</a>
@@ -75,11 +75,8 @@ custom_js:
                 <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Devis Tuia</a>
               </span>
             </div>
-            <div class="is-size-6 publication-authors" style="margin-top: -0.5rem;">
-               <span class="eql-cntrb"><small><sup>*</sup>Equal Contribution</small></span>
-            </div>
             <div class="is-size-5 publication-authors" style="margin-top: -2rem;">
-              <span class="author-block"><br>Conference name and year</span>
+              <span class="author-block"><br>Methods in Ecology and Evolution (2025)</span>
             </div>
             </div>
             
@@ -98,17 +95,7 @@ custom_js:
                 </span>
 
                 <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Supplementary</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  <a href="https://github.com/zbirobin/MaskSDM-MEE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -128,7 +115,7 @@ custom_js:
                 </span>
 
                 <span class="link-block">
-                  <a href="https://zenodo.org/records/<ZENODO LINK>" target="_blank"
+                  <a href="https://zenodo.org/records/17314090" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-download"></i>
