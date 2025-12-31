@@ -42,7 +42,7 @@ selected_publications:
           rel="noopener noreferrer">Code</a> &nbsp;·&nbsp;**
           **💽 <a href="https://huggingface.co/cisosdm" target="_blank" 
           rel="noopener noreferrer">Data</a> &nbsp;·&nbsp;**
-          **🏞️ <a href="/assets/pdf/CISO/CISO_TIBS2025.pdf" target="_blank"
+          **🏞️ <a href="/assets/pdf/CISO/CISO_TIBS2026.pdf" target="_blank"
           rel="noopener noreferrer">Poster</a>**
         </span>
 

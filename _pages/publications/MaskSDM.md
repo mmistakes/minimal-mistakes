@@ -4,7 +4,6 @@ permalink: /publications/masksdm/
 author_profile: false
 layout: splash
 sidebar: false
-classes: wide
 
 custom_css:
   - "academic_template/bulma.min.css"
