@@ -1,7 +1,11 @@
 # main links
 main:
+  - title: "About me"
+    url: /
   - title: "Publications"
     url: /publications/
+  - title: "Teachings"
+    url: /teachings/
   #- title: "Blog"
   #  url: /posts/
   #- title: "Books"
