@@ -54,3 +54,19 @@ body {
   height: auto;
   display: block;
 }
+
+.author-block.stacked {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: .75rem;
+}
+
+.author-avatar {
+  width: 80px;         /* change size here */
+  height: 80px;
+  border-radius: 50%;  /* makes it round */
+  object-fit: cover;   /* crop nicely */
+  margin-right: .35rem;
+  border: 3px solid #ddd;  /* optional outline */
+}
