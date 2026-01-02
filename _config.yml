@@ -13,10 +13,12 @@ minimal_mistakes_skin: "default"
 # theme: "minimal-mistakes-jekyll"
 # remote_theme: "mmistakes/minimal-mistakes"
 
-# 🛑 사이트 필수 설정 (반드시 수정하세요!) 🛑
-title: "Orange Tech blogs"
+# 사이트 필수 설정
+title: "Orange Labs"
 title_separator: "-"
-# subtitle: "사이트를 설명하는 짧은 태그라인"
+subtitle: "Tech Blog"
+name: "Orange Labs"
+description: "개발, 시스템 분석, 기술 혁신을 공유하는 Orange Labs 기술 블로그입니다."
 url: "https://o5l3.github.io"
 baseurl: "/OrangeLabs_blog"
 repository: "o5l3/OrangeLabs_blog"
@@ -89,28 +91,13 @@ exclude:
   - Rakefile
   - README.md
 
----
-# 🧱 사이드바 설정 (Saramin 스타일 구성)
-# -----------------
-sidebar:
-  # 사이드바 메뉴 그룹 지정
-  nav: "sidebar_menu"
-  
-  # 사이드바에 표시할 위젯 목록을 정의합니다.
-  entries:
-    # 1. 프로필/소개 섹션
-    - title: "기술 블로그"
-      image: "/assets/images/logo.png" # ⬅️ 로고 경로 (assets/images에 로고 파일이 있다고 가정)
-      image_alt: "Orange Tech Logo"
-      text: |
-        Orange Tech Blog입니다.
-        개발, 시스템 분석 기록을 공유합니다.
-    
-    # 2. 최근 포스트 목록
-    - title: "최신 글"
-      type: "posts"
-      limit: 5
-      
-    # 3. 인기 태그 목록
-    - title: "인기 태그"
-      type: "tags"
+# 사이트 작성자 정보
+author:
+  name: "Orange Labs"
+  avatar: "/OrangeLabs_blog/assets/images/logo.svg"
+  bio: "Orange Labs Tech Blog"
+  location: "Seoul, Korea"
+  links:
+    - label: "Notion"
+      icon: "fas fa-fw fa-link"
+      url: "https://o5l3.notion.site/"

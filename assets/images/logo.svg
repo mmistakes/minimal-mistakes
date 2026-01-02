@@ -1,0 +1,7 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 주황색 원형 배경 -->
+  <circle cx="100" cy="100" r="90" fill="#ff6b35"/>
+
+  <!-- 하얀색 "O" 텍스트 -->
+  <text x="100" y="135" font-family="Arial, sans-serif" font-size="100" font-weight="bold" fill="#ffffff" text-anchor="middle">O</text>
+</svg>

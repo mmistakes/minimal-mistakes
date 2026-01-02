@@ -7,3 +7,247 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ============================================
+   Orange Tech Blog - Saramin Style Customization
+   ============================================ */
+
+/* 전역 배경 및 텍스트 색상 */
+html {
+  font-size: 16px;
+  background-color: #ffffff !important;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
+
+/* 페이지 전체 배경 */
+.page {
+  background-color: #ffffff !important;
+}
+
+/* 메인 컨텐츠 영역 */
+.page__content {
+  background-color: #ffffff !important;
+}
+
+/* ============================================
+   사이드바 스타일
+   ============================================ */
+.sidebar {
+  background-color: #ffffff !important;
+  border-right: 1px solid #e0e0e0;
+  padding: 2rem 1.5rem;
+}
+
+.sidebar__right {
+  background-color: #ffffff !important;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid #ff6b35 !important; /* 주황색 테두리 */
+}
+
+.author__name {
+  color: #222222 !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+}
+
+.author__bio {
+  color: #666666 !important;
+  font-size: 0.9rem !important;
+  margin-top: 0.5rem;
+}
+
+/* 사이드바 네비게이션 */
+.nav__list {
+  background-color: transparent !important;
+}
+
+.nav__list .nav__items {
+  background-color: transparent !important;
+}
+
+.nav__list a {
+  color: #222222 !important;
+  font-weight: 500 !important;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.nav__list a:hover {
+  background-color: #fff5f0 !important; /* 연한 주황색 배경 */
+  color: #ff6b35 !important; /* 주황색 텍스트 */
+  text-decoration: none;
+}
+
+/* ============================================
+   카드형 포스트 그리드 레이아웃
+   ============================================ */
+.grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.archive__item {
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  border-color: #ff6b35 !important; /* 주황색 테두리 */
+}
+
+.archive__item-teaser {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.archive__item-title {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #222222 !important;
+  margin: 1rem 1.5rem 0.5rem !important;
+  line-height: 1.4;
+}
+
+.archive__item-title a {
+  color: #222222 !important;
+  text-decoration: none !important;
+}
+
+.archive__item-title a:hover {
+  color: #ff6b35 !important; /* 주황색 */
+}
+
+.archive__item-excerpt {
+  color: #666666 !important;
+  font-size: 0.95rem !important;
+  margin: 0 1.5rem 1rem !important;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.archive__item-meta {
+  color: #999999 !important;
+  font-size: 0.85rem !important;
+  margin: 0 1.5rem 1rem !important;
+  padding-top: 0.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ============================================
+   페이지 타이틀 및 헤더
+   ============================================ */
+.page__title {
+  color: #222222 !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+  margin-bottom: 1rem;
+}
+
+.archive__title {
+  color: #222222 !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   링크 스타일
+   ============================================ */
+a {
+  color: #ff6b35 !important; /* 주황색 */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e65a28 !important; /* 진한 주황색 */
+  text-decoration: none;
+}
+
+/* ============================================
+   태그 및 카테고리
+   ============================================ */
+.page__taxonomy-item {
+  background-color: #fff5f0 !important; /* 연한 주황색 배경 */
+  color: #ff6b35 !important; /* 주황색 텍스트 */
+  border: 1px solid #ff6b35 !important;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.page__taxonomy-item:hover {
+  background-color: #ff6b35 !important; /* 주황색 배경 */
+  color: #ffffff !important; /* 하얀 텍스트 */
+}
+
+/* ============================================
+   검색 기능
+   ============================================ */
+.search-content {
+  background-color: #ffffff !important;
+}
+
+.search-input {
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 24px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ff6b35 !important; /* 주황색 테두리 */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1) !important;
+}
+
+/* ============================================
+   푸터
+   ============================================ */
+.page__footer {
+  background-color: #f8f8f8 !important;
+  border-top: 1px solid #e0e0e0;
+  color: #666666 !important;
+}
+
+.page__footer a {
+  color: #ff6b35 !important; /* 주황색 */
+}
+
+/* ============================================
+   반응형 디자인
+   ============================================ */
+@media (max-width: 768px) {
+  .grid__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
