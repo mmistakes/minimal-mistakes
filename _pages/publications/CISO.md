@@ -202,11 +202,11 @@ Species Observations</h2>
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{abdelwahed2025ciso,
+      <pre id="bibtex-code"><code>@article{abdelwahed2026ciso,
   title={CISO: Species Distribution Modeling Conditioned on Incomplete Species Observations},
   author={Abdelwahed, Hager Radi and Teng, M{\'e}lisande and Zbinden, Robin and Pollock, Laura and Larochelle, Hugo and Tuia, Devis and Rolnick, David},
   journal={Methods in Ecology and Evolution},
-  year={2025}
+  year={2026}
 }</code></pre>
     </div>
 </section>

@@ -32,7 +32,7 @@ selected_publications:
     title: "CISO: Species Distribution Modeling Conditioned on Incomplete Species Observations"
     excerpt: >
         Hager Radi Abdelwahed\*, Mélisande Teng\*, **Robin Zbinden**\*, Laura Pollock, Hugo Larochelle, Devis Tuia, David Rolnick <br>
-        *Methods in Ecology and Evolution* in press (2025) <br>
+        *Methods in Ecology and Evolution* in press (2026) <br>
         <span class="tight-links">
             **🌐 <a href="/publications/ciso/" target="_blank"
           rel="noopener noreferrer">Webpage</a> &nbsp;·&nbsp;**
@@ -81,7 +81,9 @@ selected_publications:
       </span>
 ---
 
-I am a **PhD candidate at [EPFL](https://www.epfl.ch/en/)**, Switzerland, under the supervision of [Devis Tuia](https://scholar.google.com/citations?user=p3iJiLIAAAAJ&hl=en). My research focuses on applying recent **machine learning** methods to **ecology and conservation**. In particular, I study how deep learning can support large-scale biodiversity monitoring by improving **species distribution models**. More broadly, while I remain critical of certain applications of AI, I am enthusiastic about the role it can play in monitoring the Earth and helping preserve its ecological diversity. In this regard, I am **one of the organizers of the [AI+Environment Summit](https://ai-environment-summit.com/)**, a full-day event designed to inspire, ignite, and innovate work in AI for the environment.
+I am a **PhD candidate at [EPFL](https://www.epfl.ch/en/){:target="_blank"}**, Switzerland, supervised by **[Devis Tuia](https://scholar.google.com/citations?user=p3iJiLIAAAAJ&hl=en){:target="_blank"}**. My research focuses on applying recent **machine learning** methods to **ecology and conservation**. In particular, I study how deep learning can support large-scale biodiversity monitoring by improving **species distribution models**. As part of this work, I developed **[MaskSDM](/publications/masksdm/){:target="_blank"}** and co-developed **[CISO](/publications/ciso/){:target="_blank"}**, two new deep learning frameworks for species distribution modeling. More broadly, while I remain critical of certain applications of AI, I am enthusiastic about the role it can play in monitoring the Earth and helping preserve its ecological diversity. In this regard, I am **one of the organizers of the [AI+Environment Summit](https://ai-environment-summit.com/){:target="_blank"}**, a full-day event designed to inspire, ignite, and innovate work in AI for the environment.
+
+Before starting my PhD, I completed a **Master's degree in Data Science** and a **Bachelor's degree in Communication Systems** at EPFL. During my studies, I worked with several research groups, including the [Data Science Lab (DLAB)](https://dlab.epfl.ch/){:target="_blank"} of **Robert West** on analyzing [food consumption](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1231070/full){:target="_blank"} at EPFL and the [Machine Learning and Optimization Lab (MLO)](https://www.epfl.ch/labs/mlo/){:target="_blank"} of **Martin Jaggi** on [text-to-image generation](https://arxiv.org/abs/2209.10948){:target="_blank"}. I also worked with the INDY Lab of **Patrick Thiran**, where I co-built the first version of [Climpact](https://climpact.ch/){:target="_blank"}, which led to a [publication](https://infoscience.epfl.ch/record/275472){:target="_blank"}. In addition, I interned at **Sony** in Stuttgart, working on [neural architecture search](https://openreview.net/forum?id=BIcg6iub1Z5){:target="_blank"}. I also served as a student assistant for several courses: see [Teachings](/teachings/){:target="_blank"}.
 
 ## News
 - **06 Jan 2026** — I will be presenting [CISO](/publications/ciso/) at the [TIBS conference](https://conferences.au.dk/tibs-aarhus-2026) in Aarhus 🇩🇰

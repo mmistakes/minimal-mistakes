@@ -20,7 +20,7 @@ title                    : "Robin Zbinden"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Robin Zbinden"
-description              : ""
+description              : "Robin Zbinden — PhD candidate at EPFL working on machine learning for ecology and biodiversity monitoring."
 url                      : "https://zbirobin.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

@@ -27,7 +27,7 @@ selected_publications:
     title: "CISO: Species Distribution Modeling Conditioned on Incomplete Species Observations"
     excerpt: >
         Hager Radi Abdelwahed\*, Mélisande Teng\*, **Robin Zbinden**\*, Laura Pollock, Hugo Larochelle, Devis Tuia, David Rolnick <br>
-        *Methods in Ecology and Evolution* in press (2025) <br>
+        *Methods in Ecology and Evolution* in press (2026) <br>
         <span class="tight-links">
             **🌐 <a href="/publications/ciso/" target="_blank"
           rel="noopener noreferrer">Webpage</a> &nbsp;·&nbsp;**
@@ -82,7 +82,7 @@ publications:
     title: "CISO: Species Distribution Modeling Conditioned on Incomplete Species Observations"
     excerpt: >
         Hager Radi Abdelwahed\*, Mélisande Teng\*, **Robin Zbinden**\*, Laura Pollock, Hugo Larochelle, Devis Tuia, David Rolnick <br>
-        *Methods in Ecology and Evolution* in press (2025) <br>
+        *Methods in Ecology and Evolution* in press (2026) <br>
         <span class="tight-links">
             **🌐 <a href="/publications/ciso/" target="_blank"
           rel="noopener noreferrer">Webpage</a> &nbsp;·&nbsp;**
@@ -215,7 +215,7 @@ publications:
     alt: "Measuring and Shaping the Nutritional Environment via Food Sales Logs: Case Studies of Campus-Wide Food Choice and a Call to Action"
     title: "Measuring and Shaping the Nutritional Environment via Food Sales Logs: Case Studies of Campus-Wide Food Choice and a Call to Action"
     excerpt: >
-        Kristina Gligorić, Robin Zbinden, Arnaud Chiolero, Emre Kiciman, Ryen W White, Eric Horvitz, Robert West <br>
+        Kristina Gligorić, **Robin Zbinden**, Arnaud Chiolero, Emre Kiciman, Ryen W White, Eric Horvitz, Robert West <br>
         *Frontiers in Nutrition* (2024) <br>
         <span class="tight-links">
             **📄 <a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1231070/full" target="_blank"
