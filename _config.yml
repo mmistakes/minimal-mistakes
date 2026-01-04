@@ -94,7 +94,6 @@ exclude:
 # 사이트 작성자 정보
 author:
   name: "Orange Labs"
-  avatar: "/OrangeLabs_blog/assets/images/Orange_logo.png"
   bio: "Orange Labs Tech Blog"
   location: "Seoul, Korea"
   links:
