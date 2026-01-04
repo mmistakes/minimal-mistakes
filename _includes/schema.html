@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {% if site.social.type == "Organization" -%}
+    "@type": "Organization",
+    "url": {{ '/' | absolute_url | jsonify }}{% if site.og_image %},
+    "logo": {{ site_og_image | jsonify }}{% endif %}{% if site.social.links %},
+    "sameAs": {{ site.social.links | jsonify }}{% endif %}
+  {%- else -%}
+    "@type": "Person",
+    "name": {{ site.social.name | default: site.name | jsonify }},
+    "url": {{ '/' | absolute_url | jsonify }}{% if site.social.links %},
+    "sameAs": {{ site.social.links | jsonify }}{% endif %}
+  {%- endif %}
+}
+</script>

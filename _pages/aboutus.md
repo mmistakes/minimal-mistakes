@@ -9,7 +9,7 @@ sidebar:
 
 ## Orange Labs 소개
 
-Orange Labs 기술 블로그입니다.
+Orange Labs는 개발, 시스템 분석, 기술 혁신을 공유하는 기술 블로그입니다.
 
 ### 주요 활동
 
