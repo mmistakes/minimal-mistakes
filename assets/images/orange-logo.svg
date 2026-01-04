@@ -1,0 +1,23 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange 통신사 스타일 로고 -->
+  <defs>
+    <style>
+      .orange-text {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        fill: #FF6600;
+      }
+    </style>
+  </defs>
+
+  <!-- 배경 원 -->
+  <circle cx="100" cy="100" r="90" fill="#FF6600" opacity="0.1"/>
+
+  <!-- 메인 원형 로고 -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#FF6600" stroke-width="8"/>
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#FF6600" stroke-width="6"/>
+  <circle cx="100" cy="100" r="15" fill="#FF6600"/>
+
+  <!-- Orange 텍스트 -->
+  <text x="100" y="180" class="orange-text" font-size="32" text-anchor="middle">Orange</text>
+</svg>
