@@ -15,14 +15,14 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-TW" # 設定語言為繁體中文
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "周大剛的 Vibecoding 筆記" # 網站標題
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : "在餐桌上 coding，在舞池中 swing" # 副標題
+name                     : "周大剛" # 您的名字
+description              : "這是關於周大剛的個人網站。曾任職於華碩、通量三維、BenQ APAC，目前專注於 Vibecoding 學習與 Lindy Hop 舞蹈生活。"
+url                      : https://tkchou.github.io/minimal-mistakes/
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "周大剛"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "2026 年初離職，目前在自家餐桌學習 **Vibecoding**。前科技業 PM/工程師，**Lindy Hop** 舞者。崇尚自由與不完美的創作過程。"
+  location         : "Taiwan"
   email            :
   links:
     - label: "Email"
