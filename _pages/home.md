@@ -4,424 +4,292 @@ permalink: /
 title: Home
 ---
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-  .intro-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 3rem 1rem 2rem 1rem;
-    max-width: 900px;
+  :root {
+    /* Academic Palette */
+    --font-heading: 'Libre Baskerville', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    --color-text: #1a1a1a;
+    --color-subtext: #555;
+    --color-accent: #0056b3; /* A serious, deep blue */
+    --color-border: #e0e0e0;
+    --bg-color: #ffffff;
+    --bg-secondary: #f9f9f9;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: #111;
+  }
+
+  /* --- HERO SECTION --- */
+  .hero-wrapper {
+    padding: 6rem 1rem 4rem 1rem;
+    max-width: 800px;
     margin: 0 auto;
+    text-align: left; /* Left align feels more formal/academic */
   }
-  
-  .announcement-box {
-    background-color: #e6f0ff;
-    border-radius: 12px;
-    padding: 10px 20px;
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
-    color: #004080;
-    font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-  
+
   .tagline {
     font-size: 3rem;
-    font-weight: 800;
-    color: #111;
-    margin: 0;
-    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
   }
-  
-  .tagline .highlight-train {
-    color: #007bff;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
+
   .intro-text {
-    font-size: 1.1rem;
-    color: #444;
-    margin-top: 1.5rem;
-    max-width: 700px;
-  }
-
-  .social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-  }
-
-  .social-icons a i:hover {
-    transform: scale(1.2);
-    transition: 0.3s ease;
-  }
-
-  /* Wrapped Section - Smaller */
-  .wrapped-section {
-    background-color: #f9fafb;
-    padding: 2.5rem 1rem;
+    font-size: 1.25rem;
+    color: var(--color-subtext);
+    font-weight: 300;
+    max-width: 650px;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .wrapped-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .wrapped-section h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 1rem;
-  }
-  
-  .wrapped-image-container {
-    max-width: 500px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .wrapped-image-container:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  }
-  
-  .wrapped-image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
   }
 
-  /* Preview Sections */
-  .preview-section {
-    padding: 3rem 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
+  /* Minimal Social Links */
+  .social-links {
+    display: flex;
+    gap: 20px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
   }
 
-  .preview-section h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #111;
-    text-align: center;
+  .social-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .social-links a:hover {
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
+  }
+
+  /* --- SECTIONS --- */
+  .section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     margin-bottom: 2.5rem;
   }
 
-  /* Unified Grid for all cards - 4 columns */
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+  .section-header h2 {
+    font-size: 1.8rem;
+    margin: 0;
   }
 
-  /* Universal card styling */
+  .view-all-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-subtext);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 2px;
+  }
+
+  .view-all-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  /* --- GRID (Clean, Wireframe style) --- */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  /* --- CARD STYLING (The "Paper" Look) --- */
+  /* This targets the content coming from your includes */
   .card {
-    background-color: #fff;
-    border-radius: 10px;
+    background: transparent;
+    border: 1px solid var(--color-border); /* Thin, clean border */
+    border-radius: 4px; /* Slight rounding, not pill-like */
     padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.2s;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    box-shadow: none !important; /* Force remove shadows */
   }
 
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-accent);
+    transform: none; /* No movement, just color change */
   }
 
-  .card-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+  .card img {
+    border-radius: 2px;
+    filter: grayscale(10%); /* Slight desaturation for seriousness */
+    transition: filter 0.3s;
+  }
+  
+  .card:hover img {
+    filter: grayscale(0%);
   }
 
   .card h3 {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #111;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
-  }
-
-  .card p {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.5;
-    flex-grow: 1;
-  }
-
-  .button-link {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0.9rem 2rem;
-    background-color: #007bff;
-    color: white;
+    font-family: var(--font-body); /* Keep card titles readable sans-serif */
     font-weight: 600;
-    font-size: 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
   }
 
-  .button-link:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
-  }
-
-  /* Contact Section */
-  .contact-section {
-    background-color: #f8fafc;
-    padding: 3rem 2rem;
-    border-top: 1px solid #eaeaea;
-    margin-top: 2rem;
-  }
-
-  .contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  /* --- WRAPPED SECTION (Journal Highlight) --- */
+  .wrapped-highlight {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--color-border);
+    padding: 2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-  }
-
-  .contact-header {
-    text-align: center;
+    gap: 2rem;
     margin-bottom: 2rem;
   }
 
-  .contact-header h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #111;
+  .wrapped-highlight img {
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .wrapped-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .wrapped-content p {
+    color: var(--color-subtext);
     margin-bottom: 1rem;
   }
 
-  .contact-header p {
-    font-size: 1.1rem;
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .contact-details {
+  /* --- FOOTER / CONTACT --- */
+  .footer-simple {
+    text-align: left;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--color-subtext);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 1000px;
   }
-
-  .contact-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  }
-
-  .contact-icon {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 1rem;
-  }
-
-  .contact-card h3 {
+  
+  .contact-email {
     font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    color: #111;
-  }
-
-  .contact-card p,
-  .contact-card a {
-    color: #666;
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
-
-  .contact-card a {
-    transition: color 0.3s ease;
+    color: var(--color-text);
     text-decoration: none;
-    border-bottom: 1px dashed #007bff;
-  }
-
-  .contact-card a:hover {
-    color: #007bff;
-  }
-
-  .join-button {
-    margin-top: 2rem;
-    padding: 1rem 2.5rem;
-    background-color: #007bff;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
-  }
-
-  .join-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4);
-  }
-
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    font-family: var(--font-heading);
+    border-bottom: 1px solid #ccc;
   }
 
   @media (max-width: 768px) {
-    .tagline {
-      font-size: 2.2rem;
-    }
-    
-    .intro-text {
-      font-size: 1rem;
-    }
-
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
-
-    .contact-details {
-      grid-template-columns: 1fr;
-    }
-
-    .wrapped-section {
-      padding: 2rem 1rem;
-    }
-
-    .wrapped-section h2 {
-      font-size: 1.3rem;
-    }
-
-    .preview-section {
-      padding: 2rem 1rem;
-    }
-
-    .preview-section h2 {
-      font-size: 1.75rem;
-    }
+    .hero-wrapper { padding-top: 3rem; }
+    .tagline { font-size: 2.2rem; }
+    .wrapped-highlight { flex-direction: column; text-align: left; }
+    .footer-simple { grid-template-columns: 1fr; }
   }
 </style>
 
-<div class="intro-wrapper">
-  <div class="announcement-box">
-    📢 Latest: Beginner's Hypothesis for Freshers and Sophomores is Live! 
+<div class="hero-wrapper">
+  <div style="font-size: 0.85rem; color: var(--color-accent); margin-bottom: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+    New Publication
   </div>
-  <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
+  
+  <h1 class="tagline">Beginner's Hypothesis for Freshers & Sophomores is Live.</h1>
+  
   <p class="intro-text">
-    We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
+    Code. Train. Predict. <br>
+    We are the Data Science Group at IIT Roorkee, a student-led community dedicated to research in Artificial Intelligence and Machine Learning.
   </p>
-  <div class="social-icons">
-    <a href="https://github.com/dsgiitr" target="_blank">
-      <i class="fab fa-github fa-2x" style="color: black;"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank">
-      <i class="fab fa-linkedin fa-2x" style="color: #0a66c2;"></i>
-    </a>
-    <a href="https://x.com/dsg_iitr" target="_blank">
-      <i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i>
-    </a>
-    <a href="https://www.instagram.com/dsgiitr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-      <i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i>
+
+  <div class="social-links">
+    <a href="https://github.com/dsgiitr" target="_blank">GitHub ↗</a>
+    <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank">LinkedIn ↗</a>
+    <a href="https://x.com/dsg_iitr" target="_blank">Twitter/X ↗</a>
+    <a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in ↗</a>
+  </div>
+</div>
+
+<div class="section-container" style="border-top: none; padding-top: 0;">
+  <div class="wrapped-highlight">
+    <div class="wrapped-content">
+      <h3>DSG Year in Review: 2025</h3>
+      <p>A comprehensive look at our publications, workshops, and community growth over the past year.</p>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" class="view-all-link">Read Full Report</a>
+    </div>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank">
+      <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="DSG 2025 Wrapped">
     </a>
   </div>
 </div>
 
-<section class="wrapped-section">
-  <div class="wrapped-container">
-    <h2>DSG 2025 Wrapped</h2>
-    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank" class="wrapped-image-container">
-      <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="DSG 2025 Year in Review">
-    </a>
+<section class="section-container">
+  <div class="section-header">
+    <h2>Selected Research</h2>
+    <a href="{{ site.baseurl }}/research/" class="view-all-link">View Archive &rarr;</a>
   </div>
-</section>
-
-<section class="preview-section">
-  <h2>Featured Research</h2>
   <div class="grid-container">
     {% include research-card.html %}
   </div>
-  <a href="https://dsgiitr.github.io/dsg-website/research/" class="button-link">Explore Research</a>
 </section>
 
-<section class="preview-section">
-  <h2>Featured Projects & Blogs</h2>
+<section class="section-container">
+  <div class="section-header">
+    <h2>Projects & Code</h2>
+    <a href="{{ site.baseurl }}/projects/" class="view-all-link">View Repository &rarr;</a>
+  </div>
   <div class="grid-container">
     {% include project-card.html %}
   </div>
-  <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
 </section>
 
-<section class="preview-section">
-  <h2>Featured Events</h2>
+<section class="section-container">
+  <div class="section-header">
+    <h2>Community Events</h2>
+    <a href="{{ site.baseurl }}/events/" class="view-all-link">View Calendar &rarr;</a>
+  </div>
   <div class="grid-container">
     {% include events-card.html %}
   </div>
-  <a href="https://dsgiitr.github.io/dsg-website/events/" class="button-link">Check Out Our Events</a>
 </section>
 
-<section class="contact-section">
-  <div class="contact-container">
-    <div class="contact-header">
-      <h2>Contact Us</h2>
-      <p>Have questions or interested in collaborating? Reach out to our team.</p>
+<section class="section-container">
+  <div class="footer-simple">
+    <div>
+      <p style="text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 1rem;">Contact</p>
+      <a href="mailto:dsg@iitr.ac.in" class="contact-email">dsg@iitr.ac.in</a>
+      <p style="margin-top: 1rem;">
+        SAC Building, Ground Floor<br>
+        IIT Roorkee, Uttarakhand
+      </p>
     </div>
-    
-    <div class="contact-details">
-      <div class="contact-card">
-        <i class="fas fa-envelope contact-icon"></i>
-        <h3>Email</h3>
-        <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
-      </div>
-      
-      <div class="contact-card">
-        <i class="fas fa-map-marker-alt contact-icon"></i>
-        <h3>Location</h3>
-        <p>Ground Floor, SAC building<br>IIT Roorkee<br>Uttarakhand, India</p>
-      </div>
-      
-      <div class="contact-card">
-        <i class="fas fa-comments contact-icon"></i>
-        <h3>Follow Us</h3>
-        <p>Stay updated with our latest research and events on social media</p>
+    <div>
+      <p style="text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 1rem;">Navigation</p>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="#" style="text-decoration: none; color: #555;">About DSG</a>
+        <a href="#" style="text-decoration: none; color: #555;">Team Members</a>
+        <a href="#" style="text-decoration: none; color: #555;">Publications</a>
       </div>
     </div>
-    
-    <a href="https://forms.gle/exampleRecruitmentForm" class="join-button">
-      Contact Us
-    </a>
   </div>
 </section>
