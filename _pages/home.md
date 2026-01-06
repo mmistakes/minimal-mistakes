@@ -139,8 +139,8 @@ title: Home
     display: grid;
     /* Changed 280px to 250px so 4 cards fit easily */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .button-link {
@@ -225,7 +225,7 @@ title: Home
 
 <div class="intro-wrapper">
   <div class="announcement-box">
-    📢 Latest: Beginner's Hypothesis for Freshers and Sophomores is Live! 
+    📢 Latest: Beginner's Hypothesis for Sophomores is Live! 
   </div>
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
@@ -244,7 +244,7 @@ title: Home
   <div class="wrapped-container">
     <div class="wrapped-content">
       <h2>DSG Wrapped 2025</h2>
-      <p>Our annual report covering 12 publications, 4 major hackathon wins, and 30+ workshops. Discover what our community achieved this year.</p>
+      <p>Our annual report covering 8 publications in A* conferences, multiple projects and collborations with world famous universities and institutes. Discover what our club achieved this year.</p>
       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank" class="wrapped-link">
         Read Report &rarr;
       </a>
