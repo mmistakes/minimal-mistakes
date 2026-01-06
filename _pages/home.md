@@ -283,7 +283,7 @@ title: Home
     <p>Check out our year in review! A look back at our achievements, events, and community highlights! from 2025.</p>
     <div class="twitter-embed-wrapper">
       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png)" alt="DSG 2025 Wrapped" style="width: 100%; border-radius: 8px; cursor: pointer; transition: transform 0.3s ease;">
+        <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="DSG 2025 Wrapped" style="width: 100%; border-radius: 8px; cursor: pointer; transition: transform 0.3s ease;">
       </a>
     </div>
   </div>
