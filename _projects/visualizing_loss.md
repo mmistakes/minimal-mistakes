@@ -2,13 +2,10 @@
 title: "Visualizing Loss Functions"
 layout: single
 permalink: /projects/visualizing_loss/
-date: 2025-04-06
 ---
-
 ![visualizing_loss]({{ site.baseurl }}/assets/images/visualizing_loss.jpg)
 
 ## Visualising different loss and optimisation functions using Autoencoder.
-
 The aim of the project was to reconstruct images with the help of Autoencoders to visualise the difference in output when different loss or optimisation functions are used. A very simple dataset, MNIST dataset was used for this purpose.
 
 While training a neural network, gradient is calculated according to a given loss function. I compared the results of three regression criterion functions.
@@ -34,5 +31,4 @@ Adagrad is more preferrable for a sparse data set as it makes big updates for in
 Adam stands for Adaptive Moment Estimation. It also calculates different learning rate. Adam works well in practice, is faster, and outperforms other techniques.
 
 # Results of Optimizers
-
 ![img]({{ site.baseurl }}/assets/images/result_optimiser.jpg)

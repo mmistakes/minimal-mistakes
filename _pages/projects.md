@@ -4,18 +4,55 @@ title: "Projects"
 permalink: /projects/
 ---
 
-<div class="page-hero">
-  <div>
-    <h1 class="page-hero__title">Projects</h1>
-    <p class="page-hero__lede">
-      A cross-section of club projects—from reproducibility efforts and research tooling to public educational demos.
-      Explore the repos, writeups, and hosted experiences below.
-    </p>
-  </div>
-</div>
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+}
 
-<section class="section-container section-container--flush">
-  <div class="project-grid">
+.project-card {
+  background: #f2f2f2;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 8px 10px 0;
+  padding: 6px 12px;
+  background: #007acc;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  background: #005eaa;
+}
+</style>
+
+<div class="project-grid">
 
 <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/projects/pikebotrl.png" alt="Pikabot-RL">
@@ -26,6 +63,7 @@ permalink: /projects/
       <a href="{{ site.baseurl }}/projects/visual_ml/">Details</a>
     </div>
   </div>
+
 
 <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/diffusion-everything/banner.png" alt="Diffusion-Everything">
@@ -58,6 +96,7 @@ permalink: /projects/
     </div>
   </div>
 
+
 <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">
     <h3>Knowledge Graph Embeddings for VLMs</h3>
@@ -67,6 +106,9 @@ permalink: /projects/
       <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/">Details</a>
     </div>
   </div>
+
+
+
 
   <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/projects/feedcode.png" alt="FeedCode">
@@ -188,5 +230,4 @@ permalink: /projects/
     </div>
   </div>
 
-  </div>
-</section>
+</div>

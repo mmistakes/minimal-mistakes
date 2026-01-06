@@ -4,27 +4,13 @@ permalink: /about/
 layout: splash
 ---
 
-<div class="page-hero">
-  <div class="page-hero__media">
-    <img src="{{ site.baseurl }}/assets/images/dsgteam25.jpeg" alt="Data Science Group Team" />
-  </div>
-  <div>
-    <h1 class="page-hero__title">About the Data Science Group</h1>
-    <p class="page-hero__lede">
-      We are Data Science Group, IIT Roorkee. A student organization under the Software Development Section, we build
-      innovative open-source projects spanning Machine Learning, Deep Learning, and Reinforcement Learning while
-      bridging the gap between research and industry. Along the way, we cultivate IIT Roorkee's technical community via
-      lectures, workshops, hackathons, and writing across data science and AI.
-    </p>
-  </div>
-</div>
+![Data Science Group Team]( {{ site.baseurl }}/assets/images/dsgteam25.jpeg )
 
-<section class="section-container">
-  <div class="section-header">
-    <h2>Our Team</h2>
-  </div>
+We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbrella organization Software Development Section. We aim to work on innovative open source projects in the domain of Machine Learning, Deep Learning & Reinforcement Learning, bridging the gap between research and industry. In the process, we fullfil our mission of cultivating and evolving the technical community at IIT Roorkee by organizing lectures, workshops, hackathons spanning the field of Data Science and AI.
 
-  <div class="member-grid">
+## Our Team
+
+<div class="member-grid">
 
  <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/aayan.jpeg" width= 200 height= 200 alt="Aayan Yadav">
@@ -203,5 +189,48 @@ layout: splash
     <h3><a href="{{ site.baseurl }}/members/SargamGoyal">Sargam Goyal</a></h3>
   </div>
 
-  </div>
-</section>
+</div>
+
+<style>
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.member-card {
+  background: #f2f2f2;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.member-card h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.member-card a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+</style>

@@ -1,10 +1,3 @@
----
-title: "Fortnite AI Agent Using DreamerV3"
-layout: single
-permalink: /projects/fort-n-ai/
-date: 2025-04-10
----
-
 # Fortnite AI Agent Using DreamerV3
 
 This project focuses on developing an AI agent capable of playing Fortnite by leveraging the DreamerV3 reinforcement learning algorithm. DreamerV3 is a model-based reinforcement learning approach that learns an internal model of the environment and uses it to simulate future scenarios, enabling the agent to plan and make informed decisions.
