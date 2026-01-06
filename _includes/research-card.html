@@ -1,35 +1,39 @@
-{% assign research_highlights = "" | split: "" %} {% assign research_highlights
-= research_highlights | push: { "date": "2025", "title": "Verifiability-First
-Agents: Provable Observability and Lightweight Audit Agents for Controlling
-Autonomous LLM Systems", "summary": "Exploring controllable autonomous LLM
-systems through verifiable audit agents.", "image":
-"/assets/images/research/verifiability-first.png" } %} {% assign
-research_highlights = research_highlights | push: { "date": "2025", "title":
-"DAC-LoRA: Dynamic Adversarial Curriculum for Efficient and Robust Few-Shot
-Adaptation", "summary": "A resilient LoRA training schedule that keeps
-adaptation lightweight without sacrificing robustness.", "image":
-"/assets/images/research/dac-lora.png" } %} {% assign research_highlights =
-research_highlights | push: { "date": "2025", "title": "DINOHash: Learning
-Adversarially Robust Perceptual Hashes from Self-Supervised Features",
-"summary": "Perceptual hashing that borrows the strength of DINO-style
-representations for safety-critical media.", "image":
-"/assets/images/research/DINOHash.png" } %} {% assign research_highlights =
-research_highlights | push: { "date": "2025", "title": "SPD Attack - Prevention
-of AI Powered Image Editing by Image Immunization", "summary": "Defensive
-immunization strategies that frustrate hostile diffusion-based image editors.",
-"image": "/assets/images/research/blogpost.png" } %} {% for item in
-research_highlights %}
-<article class="research-row">
-  <div class="research-date">{{ item.date }}</div>
-  <div>
-    <h3 class="research-title">{{ item.title }}</h3>
-    <p class="research-excerpt">{{ item.summary }}</p>
-    <figure class="research-media">
-      <img
-        src="{{ item.image | prepend: site.baseurl }}"
-        alt="{{ item.title }}"
-      />
-    </figure>
-  </div>
-</article>
-{% endfor %}
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/research/verifiability-first.png"
+    alt="2025 Research Paper"
+  />
+  <h3>
+    Verifiability-First Agents: Provable Observability and Lightweight Audit
+    Agents for Controlling Autonomous LLM Systems
+  </h3>
+</div>
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/research/dac-lora.png"
+    alt="2025 Research Paper"
+  />
+  <h3>
+    DAC-LoRA: Dynamic Adversarial Curriculum for Efficient and Robust Few-Shot
+    Adaptation
+  </h3>
+</div>
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/research/DINOHash.png"
+    alt="2025 Research Paper"
+  />
+  <h3>
+    DINOHash: Learning Adversarially Robust Perceptual Hashes from
+    Self-Supervised Features
+  </h3>
+</div>
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/research/blogpost.png"
+    alt="2025 Research Paper"
+  />
+  <h3>
+    SPD Attack - Prevention of AI Powered Image Editing by Image Immunization
+  </h3>
+</div>

@@ -4,18 +4,113 @@ title: "Events"
 permalink: /events/
 ---
 
-<div class="page-hero">
-  <div>
-    <h1 class="page-hero__title">Events</h1>
-    <p class="page-hero__lede">
-      Hackathons, workshops, recruitments, and collaborations that keep IIT Roorkee’s AI community energized all year.
-    </p>
-  </div>
-</div>
+<style>
+/* General Grid Setup */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+}
 
-<section class="section-container section-container--flush">
-  <h2>External Hackathons</h2>
-  <div class="event-grid">
+/* Event Card Container */
+.event-card {
+  background: #ffffff; /* White background for a clean look */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 300px;  Keeps card size uniform */
+}
+
+  /* Exclusive DSG Events Section - 3 items per row */
+.specific-event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Force 3 items per row */
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.event-card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Event Image */
+.event-card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* Limited height for images */
+  object-fit: cover;
+  border-radius: 8px;
+  background: #e0e0e0; /* Light grey background for placeholder effect */
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.event-card img:hover {
+  background: #bdbdbd; /* Slightly darker grey when hovered */
+}
+
+/* Title Text */
+.event-card h3 {
+  font-size: 1.25rem;
+  color: #333; /* Darker text for visibility */
+  margin: 10px 0;
+  font-weight: 600; /* Bold title for emphasis */
+}
+
+/* Event Description */
+.event-card p {
+  font-size: 1rem;
+  color: #666; /* Soft grey text for description */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Links Section */
+.event-links a {
+  display: inline-block;
+  margin: 8px 10px 0;
+  padding: 8px 16px;
+  background: #007acc; /* Matching blue */
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.event-links a:hover {
+  background: #005eaa; /* Darker blue for hover effect */
+}
+
+/* Placeholder Cards */
+.event-card.placeholder {
+  background: #f7f7f7; /* Very light background for placeholders */
+  border: 2px dashed #007acc; /* Blue dashed border for empty cards */
+}
+
+.event-card.placeholder img {
+  background: #e6f7ff; /* Light blue background for placeholders */
+}
+
+.event-card.placeholder h3 {
+  color: #bbb; /* Lighter grey for the title of the placeholder */
+}
+
+.event-card.placeholder p {
+  color: #bbb; /* Lighter grey for the description of the placeholder */
+}
+</style>
+
+<!-- External Hackathons Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">External Hackathons</h2>
+<div class="event-grid">
   <!-- Add external hackathon cards here -->
     <!-- Event 1: Competitions and Hackathon -->
   <div class="event-card">
@@ -37,10 +132,11 @@ permalink: /events/
     </div>
   </div>
   
-  </div>
+</div>
 
-  <h2>Industry Collaborations</h2>
-  <div class="event-grid">
+<!-- Industry Collaborations Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Industry Collaborations</h2>
+<div class="event-grid">
   <!-- Add industry collaboration event cards here -->
     <!-- Event 6: WWT Talk (Workshop Talk) -->
   <div class="event-card">
@@ -51,10 +147,11 @@ permalink: /events/
       <a href="https://www.linkedin.com/posts/dsg-iitr_we-are-delighted-to-share-that-the-data-science-activity-7228720941470470144-qL41?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEw1IwABLy-Q1qawlBnaKH-pRr6c3hPiuno" target="_blank">Details</a>
     </div>
   </div>
-  </div>
+</div>
 
-  <h2>Exclusive DSG Events</h2>
-  <div class="specific-event-grid">
+<!-- Exclusive DSG Events Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Exclusive DSG Events</h2>
+<div class="specific-event-grid">
   
   <!-- Event 3: BYOP (Bring Your Own Project) -->
   <div class="event-card">
@@ -123,10 +220,11 @@ permalink: /events/
   </div>
   </div>
 
-  </div>
+</div>
 
-  <h2>Internal IITR Collaborations</h2>
-  <div class="event-grid">
+<!-- Internal IITR Events Section -->
+<h2 style="margin-top: 2rem; color: #007acc;">Internal IITR Collaborations</h2>
+<div class="event-grid">
   <!-- Add intra IITR event cards here -->
   
 <!-- Event 6: ECELL E-SUMMIT COLLAB 2026-->
@@ -194,5 +292,5 @@ permalink: /events/
 
   </div>
   </div>
-  </div>
-</section>
+
+</div>

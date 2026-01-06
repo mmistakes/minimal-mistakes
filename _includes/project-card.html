@@ -1,39 +1,34 @@
-{% assign recent_projects = site.projects | sort: 'date' | reverse %} {% assign
-recent_projects = recent_projects | slice: 0, 4 %} {% if recent_projects and
-recent_projects.size > 0 %} {% for project in recent_projects %} {% assign
-project_image = project.image | default: project.header.teaser | default:
-project.thumbnail %} {% if project_image %} {% if project_image contains 'http'
-%} {% assign project_image_url = project_image %} {% else %} {% assign
-project_image_url = project_image | prepend: site.baseurl %} {% endif %} {% else
-%} {% assign project_image_url = nil %} {% endif %}
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/projects/visualml.png"
+    alt="Project"
+  />
+  <h3>Visual ML: Machine Learning in your browser powered by TF JS.</h3>
+</div>
 
-<article class="project-card">
-  <a href="{{ project.url | relative_url }}" class="project-card__link">
-    {% if project_image_url %}
-    <img
-      class="project-card__image"
-      src="{{ project_image_url }}"
-      alt="{{ project.title | escape }}"
-    />
-    {% else %}
-    <div class="project-card__placeholder" aria-hidden="true">DSG</div>
-    {% endif %}
-    <div class="project-card__body">
-      {% assign project_date = project.date %}
-      <p class="project-card__meta">
-        {% if project_date %} {{ project_date | date: "%b %Y" }} {% else %}
-        Latest {% endif %}
-      </p>
-      <h3 class="project-card__title">{{ project.title }}</h3>
-      <p class="project-card__excerpt">
-        {{ project.excerpt | strip_html | truncate: 140 }}
-      </p>
-    </div>
-  </a>
-</article>
-{% endfor %} {% else %}
-<p>
-  No projects found yet. Add entries under <code>_projects/</code> to populate
-  this section.
-</p>
-{% endif %}
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/blogs/sgi/mesh_fairing.png"
+    alt="Blog"
+  />
+  <h3>Ironing Out Wrinkles with Mesh Fairing</h3>
+</div>
+
+<div class="card">
+  <img
+    src="{{ site.baseurl }}/assets/images/diffusion-everything/banner.png"
+    alt="Project"
+  />
+  <h3>
+    Diffusion Everything: A comprehensive resource and visualisation of
+    diffusion models
+  </h3>
+</div>
+
+<div class="card">
+  <img src="{{ site.baseurl }}/assets/images/d2l_pytorch.svg" alt="Project" />
+  <h3>
+    d2l-pytorch: Reproductiong of the book Dive Into Deep Learning (www.d2l.ai)
+    in PyTorch.
+  </h3>
+</div>
