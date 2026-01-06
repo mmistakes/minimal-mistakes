@@ -121,9 +121,9 @@ title: Home
   }
 
   /* --- EXISTING PREVIEW SECTIONS --- */
-  .preview-section {
+.preview-section {
     padding: 3rem 1rem;
-    max-width: 1200px;
+    max-width: 1400px; /* Changed from 1200px to 1400px to fit 4 cards */
     margin: 0 auto;
     text-align: center;
   }
@@ -135,9 +135,10 @@ title: Home
     margin-bottom: 2rem;
   }
 
-  .grid-container {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Changed 280px to 250px so 4 cards fit easily */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
