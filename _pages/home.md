@@ -5,54 +5,6 @@ title: Home
 ---
 
 <style>
-  .wrapped-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 3rem 1rem;
-    margin-bottom: 2rem;
-    color: white;
-    text-align: center;
-  }
-  
-  .wrapped-container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .wrapped-section h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .wrapped-section p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-  }
-  
-  .twitter-embed-wrapper {
-    background: white;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .twitter-embed-wrapper a:hover img {
-    transform: scale(1.02);
-  }
-  
-  @media (max-width: 768px) {
-    .wrapped-section h2 {
-      font-size: 2rem;
-    }
-    .wrapped-section p {
-      font-size: 1rem;
-    }
-  }
-
   .intro-wrapper {
     display: flex;
     flex-direction: column;
@@ -65,14 +17,12 @@ title: Home
     padding-bottom: 0px !important;
   }
   .announcement-box {
-    background-color: 
-#e6f0ff;
+    background-color: #e6f0ff;
     border-radius: 12px;
     padding: 10px 20px;
     font-size: 0.95rem;
     margin-bottom: 2rem;
-    color: 
-#004080;
+    color: #004080;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
@@ -108,12 +58,62 @@ title: Home
     transition: 0.3s ease;
   }
 
+  /* Wrapped Section */
+  .wrapped-section {
+    background-color: #f9fafb;
+    padding: 4rem 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .wrapped-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .wrapped-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1.5rem;
+  }
+  
+  .wrapped-image-container {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .wrapped-image-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .wrapped-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .wrapped-section {
+      padding: 3rem 1rem;
+    }
+    .wrapped-section h2 {
+      font-size: 1.75rem;
+    }
+  }
+
   /* Contact Section */
   .contact-section {
     background-color: #f8fafc;
-    padding: 3rem 2rem; /* Reduced padding */
+    padding: 3rem 2rem;
     border-top: 1px solid #eaeaea;
-    margin-top: 0; /* Remove margin */
+    margin-top: 0;
   }
 
   .contact-container {
@@ -126,7 +126,7 @@ title: Home
 
   .contact-header {
     text-align: center;
-    margin-bottom: 2rem; /* Reduced margin */
+    margin-bottom: 2rem;
   }
 
   .contact-header h2 {
@@ -147,7 +147,7 @@ title: Home
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Reduced gap */
+    gap: 2rem;
     margin-top: 1rem;
     width: 100%;
   }
@@ -198,96 +198,85 @@ title: Home
   .contact-card a:hover {
     color: var(--primary-color);
   }
-/* Event Grid Layout */
-.events-grid {
-  display: flex;
-  justify-content: space-evenly; /* Space between cards */
-  gap: 1rem; /* Space between the cards */
-  margin-bottom: 2rem;
-  overflow-x: auto; /* Allows horizontal scrolling if content overflows */
-  padding: 0 1rem; /* Optional: Add padding to the left and right */
-}
 
-/* Styling for each Event Card */
-.event-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 250px; /* Fixed width for each card */
-  flex-shrink: 0; /* Prevent cards from shrinking */
-}
-.event-card:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1)
-}
-
-/* Event Image Container */
-.event-images {
-  position: relative;
-  width: 100%;
-  height: 200px; /* Fixed height for the container */
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-/* Images inside the event images container */
-.event-images img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image fills the container */
-  border-radius: 8px;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
+  /* Event Grid Layout */
   .events-grid {
-    flex-wrap: wrap; /* Wrap cards on smaller screens */
-    justify-content: center; /* Center cards in smaller rows */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding: 0 1rem;
   }
 
+  /* Styling for each Event Card */
   .event-card {
-    width: 80%; /* Make the cards smaller on mobile */
-    margin-bottom: 1rem; /* Add some space between cards */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    flex-shrink: 0;
   }
-}
+  
+  .event-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
 
- .join-button {
-  margin-top: 2rem;
-  padding: 1rem 2.5rem;
-  background-color: #007bff; /* Blue */
-  color: white;
-  font-weight: 600;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4); /* Subtle glow */
-}
+  /* Event Image Container */
+  .event-images {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
 
-.join-button:hover {
-  background-color: #339dff; /* Lighter blue on hover */
-  transform: translateY(-3px);
-  box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4); /* Stronger glow */
-}
+  /* Images inside the event images container */
+  .event-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .events-grid {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .event-card {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .join-button {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
+  }
+
+  .join-button:hover {
+    background-color: #339dff;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4);
+  }
 </style>
-
-<section class="wrapped-section">
-  <div class="wrapped-container">
-    <h2>🎉 DSG 2025 Wrapped</h2>
-    <p>Check out our year in review! A look back at our achievements, events, and community highlights! from 2025.</p>
-    <div class="twitter-embed-wrapper">
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="DSG 2025 Wrapped" style="width: 100%; border-radius: 8px; cursor: pointer; transition: transform 0.3s ease;">
-      </a>
-    </div>
-  </div>
-</section>
 
 <div class="intro-wrapper">
   <div class="announcement-box">
@@ -298,25 +287,32 @@ title: Home
     We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
   </p>
   <div class="social-icons" style="margin-top: 20px;">
-  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 25px;">
-  <a href="https://github.com/dsgiitr" target="_blank">
-    <i class="fab fa-github fa-2x" style="color: black;"></i>
-  </a>
-  <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank">
-    <i class="fab fa-linkedin fa-2x" style="color: 
-#0a66c2;"></i>
-  </a>
-  <a href="https://x.com/dsg_iitr" target="_blank">
-    <i class="fab fa-twitter fa-2x" style="color: 
-#1da1f2;"></i>
-  </a>
-  <a href="https://www.instagram.com/dsgiitr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-    <i class="fab fa-instagram fa-2x" style="color: 
-#e4405f;"></i>
-  </a>
+    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 25px;">
+      <a href="https://github.com/dsgiitr" target="_blank">
+        <i class="fab fa-github fa-2x" style="color: black;"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank">
+        <i class="fab fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+      </a>
+      <a href="https://x.com/dsg_iitr" target="_blank">
+        <i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i>
+      </a>
+      <a href="https://www.instagram.com/dsgiitr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i>
+      </a>
+    </div>
+  </div>
 </div>
-</div>
-</div>
+
+<section class="wrapped-section">
+  <div class="wrapped-container">
+    <h2>DSG 2025 Wrapped</h2>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank" class="wrapped-image-container">
+      <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="DSG 2025 Year in Review">
+    </a>
+  </div>
+</section>
+
 <section class="preview-section">
   <h2>Featured Research</h2>
   <div class="grid-container">
@@ -334,10 +330,10 @@ title: Home
 </section>
 
 <section class="preview-section events-section">
-   <h2>Featured Events</h2>
-    <div class="grid-container events-grid">
+  <h2>Featured Events</h2>
+  <div class="grid-container events-grid">
     {% include events-card.html %}
-      </div>
+  </div>
   <a href="https://dsgiitr.github.io/dsg-website/events/" class="button-link">Check Out Our Events</a>
 </section>
 
@@ -348,28 +344,28 @@ title: Home
       <p>Have questions or interested in collaborating? Reach out to our team.</p>
     </div>
     
-  <div class="contact-details">
-    <div class="contact-card">
-      <i class="fas fa-envelope contact-icon"></i>
-      <h3>Email</h3>
-      <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
+    <div class="contact-details">
+      <div class="contact-card">
+        <i class="fas fa-envelope contact-icon"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
+      </div>
+      
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt contact-icon"></i>
+        <h3>Location</h3>
+        <p>Ground Floor, SAC building<br>IIT Roorkee<br>Uttarakhand, India</p>
+      </div>
+      
+      <div class="contact-card">
+        <i class="fas fa-comments contact-icon"></i>
+        <h3>Follow Us</h3>
+        <p>Stay updated with our latest research and events on social media</p>
+      </div>
     </div>
     
-  <div class="contact-card">
-    <i class="fas fa-map-marker-alt contact-icon"></i>
-    <h3>Location</h3>
-    <p>Ground Floor, SAC building<br>IIT Roorkee<br>Uttarakhand, India</p>
-  </div>
-  
-  <div class="contact-card">
-    <i class="fas fa-comments contact-icon"></i>
-    <h3>Follow Us</h3>
-    <p>Stay updated with our latest research and events on social media</p>
-  </div>
-  </div>
-  
-  <a href="https://forms.gle/exampleRecruitmentForm" class="join-button">
-   Contact Us
-  </a>
+    <a href="https://forms.gle/exampleRecruitmentForm" class="join-button">
+      Contact Us
+    </a>
   </div>
 </section>
