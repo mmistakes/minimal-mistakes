@@ -227,10 +227,11 @@ title: Home
   box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4); /* Stronger glow */
 }
 
+/* TODO: add an anchor tag with href to the event */
 </style>
 <div class="intro-wrapper">
   <div class="announcement-box">
-    📢 Latest: Our Recruitment Tracks are open! Ongoing: BYOP for Freshers and Sophomores. Upcoming: Beginner's Hypothesis. Stay Tuned!
+    📢 Latest: Beginner's Hypothesis for Freshers and Sophomores is Live! 
   </div>
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">

@@ -1,4 +1,4 @@
----
+<!-- EX MEMBER ---
 title: ""
 permalink: /members/arya
 layout: single
@@ -16,21 +16,21 @@ layout: single
 
 ---
 
-## Education  
+## Education
 - **B. Tech**, Data Science and Artificial Intelligence, IIT Roorkee (2024–2028)
 ---
 
-## Research Interests  
+## Research Interests
 
 
 ---
 
-## Projects  
+## Projects
 
 
 
 ---
 
 ## Follow
-[GitHub](https://github.com/AryaTalera) | [LinkedIn](https://in.linkedin.com/in/arya-talera-90ab34313) 
----
+[GitHub](https://github.com/AryaTalera) | [LinkedIn](https://in.linkedin.com/in/arya-talera-90ab34313)
+--- -->

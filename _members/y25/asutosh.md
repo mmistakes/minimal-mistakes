@@ -1,4 +1,4 @@
----
+<!-- EX MEMBER ---
 title: ""
 permalink: /members/asutosh
 layout: single
@@ -15,19 +15,19 @@ layout: single
 
 ---
 
-## Education  
-- **BSMS**, Mathematics and Computing, IIT Roorkee (2024–2029)    
+## Education
+- **BSMS**, Mathematics and Computing, IIT Roorkee (2024–2029)
 ---
 
-## Research Interests  
-- Machine Learning  
-- Deep Learning 
+## Research Interests
+- Machine Learning
+- Deep Learning
 
 ---
 
-## Projects  
-- **Clickbait Highlighter**  
-  Used transformers and Regressors for Clickbait score geenration 
+## Projects
+- **Clickbait Highlighter**
+  Used transformers and Regressors for Clickbait score geenration
 
 
 ---
@@ -35,4 +35,4 @@ layout: single
 ## Follow
 [GitHub](https://github.com/asutosh29) | [LinkedIn](https://www.linkedin.com/in/asum6/) | [Portfolio](https://asutosh29.github.io/)
 
----
+--- -->
