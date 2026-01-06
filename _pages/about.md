@@ -4,13 +4,9 @@ permalink: /about/
 layout: splash
 ---
 
-
 ![Data Science Group Team]( {{ site.baseurl }}/assets/images/dsgteam25.jpeg )
 
-
 We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbrella organization Software Development Section. We aim to work on innovative open source projects in the domain of Machine Learning, Deep Learning & Reinforcement Learning, bridging the gap between research and industry. In the process, we fullfil our mission of cultivating and evolving the technical community at IIT Roorkee by organizing lectures, workshops, hackathons spanning the field of Data Science and AI.
-
-
 
 ## Our Team
 
@@ -55,13 +51,10 @@ We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbre
     <h3><a href="{{ site.baseurl }}/members/barathchandran">Barath Chandran</a></h3>
   </div>
 
-
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y23/Agam_PFP.png" width= 200 height= 200 alt="Agam Pandey">
     <h3><a href="{{ site.baseurl }}/members/agampandey">Agam Pandey</a></h3>
   </div>
-
-  
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/otterv.webp" width= 200 height= 200 alt="Atharv Mittal">
@@ -125,10 +118,11 @@ We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbre
     <h3><a href="{{ site.baseurl }}/members/aakashkrsingh">Aakash Kumar Singh</a></h3>
   </div>
 
-  <div class="member-card">
+  <!--EX MEMBER
+   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/asutosh_PFP.jpg" alt="Asutosh Maharana">
     <h3><a href="{{ site.baseurl }}/members/asutosh">Asutosh Maharana</a></h3>
-  </div>
+  </div> -->
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/gaurav.jpg" alt="Gaurav Kumar">
@@ -175,10 +169,10 @@ We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbre
     <h3><a href="{{ site.baseurl }}/members/manjot">Manjot Singh</a></h3>
   </div>
 
-  <div class="member-card">
+  <!-- EX MEMBER <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/arya.jpg" width="200" height="200" alt="Arya Talera">
     <h3><a href="{{ site.baseurl }}/members/arya">Arya Talera</a></h3>
-  </div>
+  </div> -->
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y25/aarush.jpg" width="200" height="200" alt="Aarush Aggarwal">
@@ -189,7 +183,6 @@ We are Data Science Group, IIT Roorkee. A student organizaton, part of the umbre
     <img src="{{ site.baseurl }}/assets/images/members/y25/laabhanvi.jpg" width="200" height="200" alt="Laabhanvi Jain">
     <h3><a href="{{ site.baseurl }}/members/laabhanvi">Laabhanvi Jain</a></h3>
   </div>
-
 
   <div class="member-card">
     <img src="{{ site.baseurl }}/assets/images/members/y24/sargam.jpg" alt="Sargam Goyal">
