@@ -4,65 +4,18 @@ permalink: /research/
 layout: splash
 ---
 
-<style>
-.research-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-  gap:30px;
-  margin-top:2rem;
-  align-items:stretch;          
-}
+<div class="page-hero">
+  <div>
+    <h1 class="page-hero__title">Research</h1>
+    <p class="page-hero__lede">
+      A snapshot of our publications, reproducibility studies, and technical reports covering safety, interpretability,
+      optimization, and cutting-edge generative modeling.
+    </p>
+  </div>
+</div>
 
-.research-card{
-  display:flex;                
-  flex-direction:column;
-  background:#f9f9f9;
-  padding:16px;
-  border-radius:12px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.05);
-  text-align:center;
-}
-
-.research-card img{
-  width:100%;
-  height:auto;
-  border-radius:10px;
-  aspect-ratio:16/9;           
-  object-fit:cover;
-}
-
-.research-card h3{
-  margin-top:1rem;
-  font-size:1.2rem;
-}
-
-.research-card p{
-  font-size:0.95rem;
-  color:#555;
-  flex:1;                       /* lets description stretch */
-}
-
-.research-links{
-  margin-top:auto;              /* pins buttons to bottom */
-}
-
-.research-links a{
-  display:inline-block;
-  margin:8px 10px 0;
-  padding:6px 12px;
-  background:#007acc;
-  color:#fff;
-  border-radius:5px;
-  font-size:0.9rem;
-  text-decoration:none;
-}
-
-.research-links a:hover{
-  background:#005eaa;
-}
-</style>
-
-<div class="research-grid">
+<div class="section-container section-container--flush">
+  <div class="research-grid">
 
   <!-- Paper 14 -->
   <div class="research-card">
@@ -212,5 +165,7 @@ layout: splash
       <a href="https://github.com/dsgiitr/repo" target="_blank">GitHub</a>
     </div>
   </div>
+
+</div>
 
 </div>
