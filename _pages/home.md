@@ -275,7 +275,7 @@ title: Home
 
 <section class="preview-section events-section">
   <h2>Featured Events</h2>
-  <div class="grid-container events-grid">
+  <div class="grid-container">
     {% include events-card.html %}
   </div>
   <a href="https://dsgiitr.github.io/dsg-website/events/" class="button-link">Check Out Our Events</a>
