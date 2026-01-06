@@ -5,6 +5,54 @@ title: Home
 ---
 
 <style>
+  .wrapped-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .wrapped-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .wrapped-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wrapped-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+  }
+  
+  .twitter-embed-wrapper {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .twitter-embed-wrapper a:hover img {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 768px) {
+    .wrapped-section h2 {
+      font-size: 2rem;
+    }
+    .wrapped-section p {
+      font-size: 1rem;
+    }
+  }
+
   .intro-wrapper {
     display: flex;
     flex-direction: column;
@@ -227,8 +275,20 @@ title: Home
   box-shadow: 0 7px 14px rgba(0, 123, 255, 0.4); /* Stronger glow */
 }
 
-/* TODO: add an anchor tag with href to the event */
 </style>
+
+<section class="wrapped-section">
+  <div class="wrapped-container">
+    <h2>🎉 DSG 2025 Wrapped</h2>
+    <p>Check out our year in review! A look back at our achievements, events, and community highlights! from 2025.</p>
+    <div class="twitter-embed-wrapper">
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank">
+        <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png)" alt="DSG 2025 Wrapped" style="width: 100%; border-radius: 8px; cursor: pointer; transition: transform 0.3s ease;">
+      </a>
+    </div>
+  </div>
+</section>
+
 <div class="intro-wrapper">
   <div class="announcement-box">
     📢 Latest: Beginner's Hypothesis for Freshers and Sophomores is Live! 
