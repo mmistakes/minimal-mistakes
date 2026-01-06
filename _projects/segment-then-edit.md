@@ -2,7 +2,9 @@
 title: "Diffusion Everything"
 layout: single
 permalink: /projects/segment-then-edit/
+date: 2025-04-10
 ---
+
 <p align="center">
   <img src="{{ site.baseurl }}/assets/images/projects/segmedit-new.png" alt="Centered Image"/>
 </p>

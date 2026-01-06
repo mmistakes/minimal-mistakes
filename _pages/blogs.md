@@ -4,199 +4,25 @@ permalink: /blogs/
 layout: splash
 ---
 
-<!-- Custom CSS for Blog Page -->
+<div class="page-hero">
+  <div>
+    <h1 class="page-hero__title">Blogs</h1>
+    <p class="page-hero__lede">
+      Dive into essays spanning machine learning, deep learning, interpretability, and community experiences—written by
+      our members for students everywhere.
+    </p>
+  </div>
+</div>
 
-<!-- Include custom CSS -->
-<style>
-  /* Main page styling */
-  .blogs-page {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-  }
+<section class="section-container section-container--flush">
+  <div class="blogs-page">
+    <p class="intro-text" style="text-align: center;">
+      Dive into blogs and insights spanning Machine Learning, AI, Deep Learning, and Data Science. From
+      beginner-friendly guides to deep technical explorations, discover content curated by the DSG. Stay tuned for
+      updates and insightful posts from our talented team!
+    </p>
 
-  /* Title and intro text */
-  .blogs-title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-    font-weight: bold;
-  }
-  .intro-text {
-    font-size: 18px;
-    color: #555;
-    text-align: center; /* Text aligned to the center */
-    line-height: 1.6;
-  }
-
-  /* Blog Grid styling */
-  .blog-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-  }
-
-  /* Blog Card styling */
-  .blog-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 22%; /* Adjust width to make them fill the space */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .blog-card:hover {
-    transform: translateY(-10px);
-  }
-
-  .blog-img {
-  width: 100%;
-  height: 200px; /* Fixed height */
-  object-fit: cover; /* This will crop the image to fit the container without stretching */
-  margin-bottom: 15px; /* Add space below the image */
-}
-
-  .blog-card h3 {
-    font-size: 22px;
-    color: #333;
-    font-weight: bold;
-    margin: 0;
-  }
-
-  .blog-card h3 a {
-    text-decoration: none;
-    color: #333;
-  }
-
-  .blog-card h3 a:hover {
-    color: #0073e6;
-  }
-
-  .excerpt {
-    font-size: 16px;
-    color: #777;
-    line-height: 1.5;
-    margin-top: 10px;
-    flex-grow: 1;
-  }
-
-  /* Categories section */
-  .categories {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .categories h2 {
-    margin-bottom: 18px;
-  }
-
-  .categories ul {
-    display: flex;
-    justify-content: center;
-    gap: 22px;
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-
-  .categories li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 140px;
-    min-height: 70px;
-    padding: 10px 18px;
-    background-color: #f5f5f5;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #222;
-    text-align: center;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-    margin-bottom: 10px;
-    line-height: 1.2;
-  }
-
-  .categories li:hover {
-    background-color: #0073e6;
-    color: #fff;
-    box-shadow: 0 4px 16px rgba(0,115,230,0.12);
-  }
-
-  /* Contribute section */
-  .contribute {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-  }
-
-  .contribute a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-
-  .contribute a:hover {
-    text-decoration: underline;
-  }
-
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    .blog-card {
-      width: 48%;
-    }
-    .categories ul {
-      gap: 12px;
-    }
-    .categories li {
-      min-width: 110px;
-      min-height: 60px;
-      font-size: 0.98rem;
-      padding: 8px 10px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .blog-card {
-      width: 100%;
-    }
-
-    .blogs-title {
-      font-size: 28px;
-    }
-
-    .intro-text {
-      font-size: 16px;
-      text-align: center;
-    }
-  }
-</style>
-
-<!-- Page Content -->
-
-<!-- Page Content -->
-<div class="blogs-page">
-  <h1 class="blogs-title">Welcome to the Data Science Group Blogs</h1>
-
-  <p style="text-align:center;">
-    Dive into blogs and insights spanning Machine Learning, AI, Deep Learning, and Data Science.
-    From beginner-friendly guides to deep technical explorations, discover content curated by the DSG. Stay tuned for updates and insightful posts from our talented team!
-  </p>
-
-  <div class="blog-grid">
+    <div class="blog-grid">
     <div class="blog-card">
       <img src="{{ site.baseurl }}/assets/images/blogs/activation/af.png" alt="Activation functions - Aayan Yadav" class="blog-img">
       <h3><a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3">Activation functions: Blogathon 2023</a></h3>
@@ -377,22 +203,30 @@ layout: splash
     </div>
   </div>
 
-  <div class="categories">
-    <h2>Categories</h2>
-    <ul>
-      <li>Machine Learning</li>
-      <li>Deep Learning</li>
-      <li>Natural Language Processing</li>
-      <li>Reinforcement Learning</li>
-      <li>Data Preprocessing</li>
-      <li>Computer Vision</li>
-      <li>Time Series Analysis</li>
-      <li>AI in Industry</li>
-    </ul>
-  </div>
+    </div>
 
-  <div class="contribute">
-    <p>If you're a Data Science enthusiast and want to contribute your knowledge and ideas, feel free to get in touch! We are always looking for new authors who can share their insights and experiences in the world of Data Science and AI.</p>
-    <p><a href="{{ site.baseurl }}/contact">Contact Us</a> to contribute!</p>
+    <div class="content-categories">
+      <h2>Categories</h2>
+      <div class="content-badges">
+        <span class="content-badge">Machine Learning</span>
+        <span class="content-badge">Deep Learning</span>
+        <span class="content-badge">Natural Language Processing</span>
+        <span class="content-badge">Reinforcement Learning</span>
+        <span class="content-badge">Data Preprocessing</span>
+        <span class="content-badge">Computer Vision</span>
+        <span class="content-badge">Time Series Analysis</span>
+        <span class="content-badge">AI in Industry</span>
+      </div>
+    </div>
+
+    <div class="contribute">
+      <p>
+        If you're a Data Science enthusiast and want to contribute your knowledge and ideas, feel free to get in touch!
+        We are always looking for new authors who can share their insights and experiences in the world of Data Science
+        and AI.
+      </p>
+      <p><a href="{{ site.baseurl }}/contact">Contact Us</a> to contribute!</p>
+    </div>
+
   </div>
-</div>
+</section>

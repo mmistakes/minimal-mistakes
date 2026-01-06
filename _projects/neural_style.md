@@ -2,7 +2,9 @@
 title: "Neural Style Transfer"
 layout: single
 permalink: /projects/neural_style/
+date: 2025-04-06
 ---
+
 ![style_transfer]({{ site.baseurl }}/assets/images/neural_style.gif)
 
 It’s all about cool stuff with Neural Style.
