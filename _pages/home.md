@@ -273,7 +273,7 @@ title: Home
   <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
 </section>
 
-<section class="preview-section events-section">
+<section class="preview-section">
   <h2>Featured Events</h2>
   <div class="grid-container">
     {% include events-card.html %}
