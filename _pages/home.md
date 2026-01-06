@@ -224,9 +224,10 @@ title: Home
 </style>
 
 <div class="intro-wrapper">
-  <div class="announcement-box">
-    📢 Latest: Beginner's Hypothesis for Sophomores is Live! 
-  </div>
+<div class="announcement-box">
+  📢 Latest: <a href="https://bh26-app-production.up.railway.app/competition" target="_blank" style="color: #007bff; font-weight: 600;">Beginner's Hypothesis for Sophomores is Live!</a>
+</div>
+
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
     We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
@@ -244,9 +245,9 @@ title: Home
   <div class="wrapped-container">
     <div class="wrapped-content">
       <h2>DSG Wrapped 2025</h2>
-      <p>Our annual report covering 8 publications in A* conferences, multiple projects and collborations with world famous universities and institutes. Discover what our club achieved this year.</p>
+      <p>Our annual report covering 8 publications in top-tier conferences, multiple projects and collborations with world famous universities and institutes. Discover what our club achieved this year.</p>
       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank" class="wrapped-link">
-        Read Report &rarr;
+        See Post &rarr;
       </a>
     </div>
     
