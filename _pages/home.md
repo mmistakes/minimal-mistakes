@@ -4,283 +4,306 @@ permalink: /
 title: Home
 ---
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-
 <style>
-  :root {
-    --font-heading: 'Libre Baskerville', Georgia, serif;
-    --font-body: 'Inter', sans-serif;
-    --font-mono: 'JetBrains Mono', monospace; /* New for Data vibe */
-    
-    --color-text: #111;
-    --color-subtext: #555;
-    --color-meta: #777;
-    --color-accent: #0056b3; 
-    --color-border: #e5e5e5;
-    --bg-secondary: #f8f9fa;
-  }
-
-  body {
-    background-color: #ffffff;
-    color: var(--color-text);
-    font-family: var(--font-body);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  h1, h2, h3 { font-family: var(--font-heading); color: #111; }
-  a { color: var(--color-text); text-decoration: none; transition: color 0.2s; }
-  a:hover { color: var(--color-accent); }
-
-  /* --- SUBTLE DATA PATTERN HERO --- */
-  .hero-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 7rem 2rem 5rem 2rem;
-    text-align: left;
-    /* Subtle dot grid pattern */
-    background-image: radial-gradient(#d1d5db 1px, transparent 1px);
-    background-size: 24px 24px;
-    /* Fade out the pattern at the bottom */
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  }
-
-  .announcement-pill {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    background: #eef2ff;
-    color: var(--color-accent);
-    padding: 6px 12px;
-    border-radius: 4px;
-    margin-bottom: 1.5rem;
-    display: inline-block;
-    border: 1px solid #dbeafe;
-  }
-
-  .tagline {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-    max-width: 900px;
-  }
-
-  .intro-text {
-    font-size: 1.2rem;
-    color: var(--color-subtext);
-    font-weight: 300;
-    max-width: 680px;
-    margin-bottom: 2rem;
-  }
-
-  /* --- SECTIONS --- */
-  .section-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 2.5rem;
-  }
-
-  .section-header h2 { font-size: 1.8rem; margin: 0; }
-
-  .view-all {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  /* --- COMPONENT 1: RESEARCH LIST (The "Scholar" Look) --- */
-  /* Replaces cards for research */
-  .research-list {
+  /* --- GENERAL STYLES --- */
+  .intro-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 0; /* No gap, using borders */
-  }
-
-  .research-item {
-    display: grid;
-    grid-template-columns: 120px 1fr; /* Date on left, content on right */
-    gap: 2rem;
-    padding: 2rem 0;
-    border-bottom: 1px solid var(--color-border);
-    transition: background 0.2s;
-  }
-
-  .research-item:first-child { border-top: 1px solid var(--color-border); }
-
-  .research-date {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--color-meta);
-    padding-top: 0.2rem;
-  }
-
-  .research-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0 0 0.5rem 0;
-    font-family: var(--font-heading);
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem; /* Added bottom padding back for spacing */
+    max-width: 900px;
+    margin: 0 auto;
   }
   
-  .research-excerpt {
+  .announcement-box {
+    background-color: #e6f0ff;
+    border-radius: 12px;
+    padding: 10px 20px;
     font-size: 0.95rem;
-    color: var(--color-subtext);
+    margin-bottom: 2rem;
+    color: #004080;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .tagline {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #111;
     margin: 0;
+    line-height: 1.2;
+  }
+  
+  .tagline .highlight-train {
+    color: #007bff;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .intro-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 1.5rem;
     max-width: 700px;
   }
 
-  /* --- COMPONENT 2: PROJECT GRID (The "Portfolio" Look) --- */
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+  /* --- REFACTORED WRAPPED SECTION (Smaller & Side-by-Side) --- */
+  .wrapped-section {
+    background-color: #f9fafb;
+    padding: 3rem 1rem;
+    margin-bottom: 3rem;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  .project-card {
-    border: 1px solid var(--color-border);
-    background: white;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
-    border-color: var(--color-text);
+  .wrapped-container {
+    max-width: 900px; /* Fits perfectly with your intro width */
+    margin: 0 auto;
+    display: flex; /* This makes it side-by-side */
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    text-align: left; /* Resets the center alignment */
   }
 
-  .project-img {
+  .wrapped-content {
+    flex: 1; /* Takes up remaining space */
+  }
+
+  .wrapped-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .wrapped-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .wrapped-link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .wrapped-link:hover {
+    text-decoration: underline;
+  }
+
+  /* The Image Container - Now constrained to a smaller size */
+  .wrapped-image-card {
+    flex-shrink: 0;
+    width: 320px; /* Fixed width prevents it from getting too big */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .wrapped-image-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .wrapped-image-card img {
     width: 100%;
-    height: 200px;
-    background-color: #f0f0f0; /* Placeholder color */
-    object-fit: cover;
-    border-bottom: 1px solid var(--color-border);
+    height: auto;
+    display: block;
   }
 
-  .project-content { padding: 1.5rem; }
-  .project-title { margin-top: 0; font-size: 1.1rem; font-weight: 600; }
-  .project-desc { font-size: 0.9rem; color: var(--color-subtext); }
+  /* --- EXISTING PREVIEW SECTIONS --- */
+  .preview-section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-  /* --- FOOTER --- */
-  .footer-grid {
+  .preview-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 2rem;
+  }
+
+  .grid-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 2rem;
-    padding-top: 2rem;
-    font-size: 0.9rem;
-    color: var(--color-subtext);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
   }
 
+  .button-link {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .button-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  /* --- CONTACT SECTION --- */
+  .contact-section {
+    background-color: #f8fafc;
+    padding: 3rem 2rem;
+    border-top: 1px solid #eaeaea;
+  }
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-header { text-align: center; margin-bottom: 2rem; }
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .contact-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 250px;
+    flex: 1;
+  }
+  .contact-icon { font-size: 2rem; color: #007bff; margin-bottom: 1rem; }
+  .join-button {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  /* --- RESPONSIVE --- */
   @media (max-width: 768px) {
-    .tagline { font-size: 2.5rem; }
-    .research-item { grid-template-columns: 1fr; gap: 0.5rem; }
-    .footer-grid { grid-template-columns: 1fr; }
+    .tagline { font-size: 2.2rem; }
+    
+    /* Wrap the flexbox on mobile so image stacks */
+    .wrapped-container {
+      flex-direction: column-reverse; /* Puts image above or below? Usually below text on mobile looks good, or above. Let's do column so Image is bottom or Text is top. */
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    
+    .wrapped-image-card {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .wrapped-content { padding-right: 0; }
   }
 </style>
 
-<div class="hero-wrapper">
-  <div class="announcement-pill">
-    UPDATE: 2025 RECRUITMENT LIVE
+<div class="intro-wrapper">
+  <div class="announcement-box">
+    📢 Latest: Beginner's Hypothesis for Freshers and Sophomores is Live! 
   </div>
-  
-  <h1 class="tagline">Code. Train. Predict.</h1>
-  
+  <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
   <p class="intro-text">
-    We are the Data Science Group at IIT Roorkee. We bridge the gap between academic theory and real-world AI applications.
+    We are a student-led community at IIT Roorkee exploring the frontiers of Data Science, Artificial Intelligence, and Machine Learning.
   </p>
-
-  <div style="display: flex; gap: 20px; font-family: var(--font-mono); font-size: 0.9rem;">
-    <a href="https://github.com/dsgiitr" style="border-bottom: 1px solid #ccc;">GitHub</a>
-    <a href="https://www.linkedin.com/company/dsg-iitr/" style="border-bottom: 1px solid #ccc;">LinkedIn</a>
-    <a href="mailto:dsg@iitr.ac.in" style="border-bottom: 1px solid #ccc;">Contact</a>
-  </div>
-</div>
-
-<div class="section-container" style="padding-top: 0;">
-  <div style="background: var(--bg-secondary); border: 1px solid var(--color-border); padding: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 3rem;">
-    <div style="flex: 1; min-width: 300px;">
-      <h3 style="font-size: 1.5rem; margin-top: 0;">DSG Wrapped 2025</h3>
-      <p style="color: var(--color-subtext);">Our annual report covering 12 publications, 4 major hackathon wins, and 30+ workshops.</p>
-      <a href="#" style="color: var(--color-accent); font-weight: 600;">Read Report &rarr;</a>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-       <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="Wrapped" style="width: 100%; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    </div>
-  </div>
-</div>
-
-<section class="section-container">
-  <div class="section-header">
-    <h2>Recent Publications</h2>
-    <a href="{{ site.baseurl }}/research/" class="view-all">Archive &rarr;</a>
-  </div>
   
-  <div class="research-list">
+  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 25px;">
+    <a href="https://github.com/dsgiitr" target="_blank"><i class="fab fa-github fa-2x" style="color: black;"></i></a>
+    <a href="https://www.linkedin.com/company/dsg-iitr/" target="_blank"><i class="fab fa-linkedin fa-2x" style="color: #0a66c2;"></i></a>
+    <a href="https://x.com/dsg_iitr" target="_blank"><i class="fab fa-twitter fa-2x" style="color: #1da1f2;"></i></a>
+    <a href="https://www.instagram.com/dsgiitr" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #e4405f;"></i></a>
+  </div>
+</div>
+
+<section class="wrapped-section">
+  <div class="wrapped-container">
+    <div class="wrapped-content">
+      <h2>DSG Wrapped 2025</h2>
+      <p>Our annual report covering 12 publications, 4 major hackathon wins, and 30+ workshops. Discover what our community achieved this year.</p>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank" class="wrapped-link">
+        Read Report &rarr;
+      </a>
+    </div>
     
-    <div class="research-item">
-      <div class="research-date">Dec 2025</div>
-      <div>
-        <h3 class="research-title"><a href="#">Optimizing Sparse Autoencoders for Vision Transformers</a></h3>
-        <p class="research-excerpt">Presented at NeurIPS 2025. Investigating the role of sparsity in interpretability of large vision models.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <div class="research-date">Oct 2025</div>
-      <div>
-        <h3 class="research-title"><a href="#">Graph Neural Networks in Molecular Discovery</a></h3>
-        <p class="research-excerpt">A comparative study on GNN architectures for predicting molecular properties in drug discovery.</p>
-      </div>
-    </div>
-
-     {% comment %} {% include research-list.html %} {% endcomment %}
-
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7414305796987056128/" target="_blank" class="wrapped-image-card">
+      <img src="{{ site.baseurl }}/assets/images/dsg_wrapped.png" alt="DSG 2025 Year in Review">
+    </a>
   </div>
 </section>
 
-<section class="section-container">
-  <div class="section-header">
-    <h2>Open Source Projects</h2>
-    <a href="{{ site.baseurl }}/projects/" class="view-all">GitHub &rarr;</a>
+<section class="preview-section">
+  <h2>Featured Research</h2>
+  <div class="grid-container">
+    {% include research-card.html %}
   </div>
+  <a href="https://dsgiitr.github.io/dsg-website/research/" class="button-link">Explore Research</a>
+</section>
 
-  <div class="project-grid">
+<section class="preview-section">
+  <h2>Featured Project and Blog</h2>
+  <div class="grid-container">
     {% include project-card.html %}
   </div>
+  <a href="https://dsgiitr.github.io/dsg-website/projects/" class="button-link">See Projects</a>
 </section>
 
-<footer class="section-container" style="padding-bottom: 2rem;">
-  <div class="footer-grid">
-    <div>
-      <h3 style="font-size: 1rem; margin-top: 0;">Data Science Group</h3>
-      <p>IIT Roorkee, Uttarakhand, India.</p>
-      <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
-    </div>
-    <div>
-      <h3 style="font-size: 0.9rem; margin-top: 0;">Research</h3>
-      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="#">Publications</a>
-        <a href="#">Blog</a>
-        <a href="#">Resources</a>
-      </div>
-    </div>
-    <div>
-      <h3 style="font-size: 0.9rem; margin-top: 0;">Social</h3>
-      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">GitHub</a>
-      </div>
-    </div>
+<section class="preview-section events-section">
+  <h2>Featured Events</h2>
+  <div class="grid-container events-grid">
+    {% include events-card.html %}
   </div>
-</footer>
+  <a href="https://dsgiitr.github.io/dsg-website/events/" class="button-link">Check Out Our Events</a>
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h2>Contact Us</h2>
+      <p>Have questions or interested in collaborating? Reach out to our team.</p>
+    </div>
+    
+    <div class="contact-details">
+      <div class="contact-card">
+        <i class="fas fa-envelope contact-icon"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:dsg@iitr.ac.in">dsg@iitr.ac.in</a></p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt contact-icon"></i>
+        <h3>Location</h3>
+        <p>Ground Floor, SAC building<br>IIT Roorkee<br>Uttarakhand, India</p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-comments contact-icon"></i>
+        <h3>Follow Us</h3>
+        <p>Stay updated with our latest research and events on social media</p>
+      </div>
+    </div>
+    
+    <a href="#" class="join-button">Contact Us</a>
+  </div>
+</section>
