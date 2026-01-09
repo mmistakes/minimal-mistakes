@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "single variable calculus_1"
-categories: Introduction to Derivatives
+categories: MIT_Challenge
 tag: 18.01SC
 toc: true
 author_profile: false
@@ -43,7 +43,8 @@ This works because the derivative is the slope of the tangent line, and the tang
 ### Try that $f(x) = frac{1}{x}$ and $f(x) = x^n$ where $n = 1, 2, 3...$
 
 
-This blog is a compilation of what I studied and learned in the MIT OCW course.
-[Prof. David Jerison]. [Single Variable Calculus]. [Fall 2010]. 
-Massachusetts Institute of Technology: MIT OpenCouseWare, https://ocw.mit.edu/.
+### END 
+This blog is a compilation of what I studied and learned in the MIT OCW course.<br>
+[Prof. David Jerison]. [Single Variable Calculus]. [Fall 2010]. <br>
+Massachusetts Institute of Technology: MIT OpenCouseWare, https://ocw.mit.edu/. <br>
 License: Creative Commons BY-NC-SA.
