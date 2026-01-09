@@ -30,18 +30,20 @@ because it is the straight line with slope $m$ passing through that point.
 
 ![graph_2](/images/2026-01-09/graph_2.jpeg)
 
-We can induce the derivative for Formula using this graph.
-each points P and Q is $(x_0, f(x_0)), (x_0 + \Delta x, f(x_0 + \Delta x)$.
-We can induce the formula $\displaystyle \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}$
-by using this derivative is the slope of the tangent line, and the tangent line is the limit of the secant line.
-
-Using the graph above, we can derive the formula for derivative. 
+Using the graph above, we can derive the formula for the derivative.
 The points $P$ and $Q$ are $(x_0, f(x_0))$ and $(x_0 + \Delta x, f(x_0 + \Delta x))$, respectively,
 so by the definition of the derivative we obtain
-$f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$
+$
+f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}.
+$
+This works because the derivative is the slope of the tangent line, and the tangent line is the limit of the secant line as \(\Delta x\) approaches zero.
 
 
 
+### Try that $f(x) = frac{1}{x}$ and $f(x) = x^n$ where $n = 1, 2, 3...$
 
 
-
+This blog is a compilation of what I studied and learned in the MIT OCW course.
+[Prof. David Jerison]. [Single Variable Calculus]. [Fall 2010]. 
+Massachusetts Institute of Technology: MIT OpenCouseWare, https://ocw.mit.edu/.
+License: Creative Commons BY-NC-SA.
