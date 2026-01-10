@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "single variable calculus_1"
+title: "single variable calculus 1"
 categories: [MIT_Challenge]
 tag: 18.01SC, Single_Variable_Calculus, Differentiation
 toc: true
