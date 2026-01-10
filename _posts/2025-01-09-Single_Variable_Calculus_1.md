@@ -35,7 +35,8 @@ Using the graph above, we can derive the formula for the derivative.
 The points $P$ and $Q$ are $(x_0, f(x_0))$ and $(x_0 + \Delta x, f(x_0 + \Delta x))$, respectively,
 so by the definition of the derivative we obtain
 
-$f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}.$
+$f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}.$ <br>
+it name is difference quotient.
 
 This works because the derivative is the slope of the tangent line, and the tangent line is the limit of the secant line as \(\Delta x\) approaches zero.
 
@@ -45,8 +46,27 @@ This works because the derivative is the slope of the tangent line, and the tang
 
 
 ### 2.1 Example 1: $y = \frac{1}{x}$
-Think about the geometric implication of this example.<br>
-It just 
+It example is just have to substitute the formula.<br>
+
+![pic1](/images/2026-01-09/pic1.jpeg) <br>
+if $\displaystyle \lim_{x \to \infty} $, then the slope is appoximate 0. <br>
+Therfore, $-\frac{x^2}{1}$ is true 
+
+
+### 2.2 Area of a triangle
+![pic2](/images/2026-01-09/pic2.jpeg)<br>
+
+### 2.3 Binomial Theroem
+![pic3](/images/2026-01-09/pic3.jpeg)<br>
+This formula is for $f(x) = x^n$.
+
+
+e.g. <br>
+If we differentiate $f(x) = x^3$
+![pic4](/images/2026-01-09/pic4.jpeg)<br>
+
+### 2.4 My solution in this section
+
 
 ### END 
 This blog is a compilation of what I studied and learned in the MIT OCW course(https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/).<br> 
