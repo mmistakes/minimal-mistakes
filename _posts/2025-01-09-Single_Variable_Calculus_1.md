@@ -43,6 +43,11 @@ This works because the derivative is the slope of the tangent line, and the tang
 [My solution](https://drive.google.com/drive/folders/1Cu6ZK2tf6CqR8lATkw5DeT05PbkEHO3Y?hl=ko)<br>
 [Actual solution](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-1-introduction-to-derivatives/)
 
+
+### 2.1 Example 1: $y = \frac{1}{x}$
+Think about the geometric implication of this example.<br>
+It just 
+
 ### END 
 This blog is a compilation of what I studied and learned in the MIT OCW course(https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/).<br> 
 <br>
