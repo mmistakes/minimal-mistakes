@@ -66,7 +66,8 @@ If we differentiate $f(x) = x^3$
 ![pic4](/images/2026-01-09/pic4.jpeg)<br>
 
 ### 2.4 My solution in this section
-
+[My solution](https://drive.google.com/drive/folders/1Cu6ZK2tf6CqR8lATkw5DeT05PbkEHO3Y?hl=ko)<br>
+[Actual solution](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/part-a-definition-and-basic-rules/session-2-examples-of-derivatives/)
 
 ### END 
 This blog is a compilation of what I studied and learned in the MIT OCW course(https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/).<br> 
