@@ -13,7 +13,7 @@ Avec 7 ans d'expérience hybride, je transforme des architectures de données co
 * **Data Engineering :** Migration Cloud (Azure/AWS), Pipelines ETL robustes.
 * **Computer Vision :** Détection d'anomalies industrielles (SNCF).
 
-[Voir mon CV complet](./assets/mon-cv.pdf) ou [Me contacter sur LinkedIn](https://www.linkedin.com/in/thierno-barry-data)
+[Voir mon CV complet](./assets/mon-cv.pdf) ou [Me contacter sur LinkedIn](https://www.linkedin.com/in/thierno-barry-28651099/)
 
 ---
 
