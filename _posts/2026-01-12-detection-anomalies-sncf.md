@@ -6,7 +6,7 @@ categories:
   - MLOps
 tags:
   - Python
-  - Azure
+  - AWS
   - YOLO
 header:
   teaser: /assets/images/logo-sncf.png # On mettra une image plus tard
