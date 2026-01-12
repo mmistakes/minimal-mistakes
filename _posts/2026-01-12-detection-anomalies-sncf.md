@@ -1,41 +1,53 @@
 ---
-title: "Computer Vision : Détection d'anomalies industrielles (SNCF)"
+title: "SNCF Réseau : Inventaire & Maintenance Prédictive par Vision Transformers"
 date: 2026-01-12
 categories:
   - Computer Vision
   - MLOps
 tags:
-  - Python
   - AWS
-  - YOLO
+  - Hugging Face
+  - Transformers
+  - PyTorch
 header:
-  teaser: /assets/images/logo-sncf.png # On mettra une image plus tard
-excerpt: "Industrialisation d'un modèle de Computer Vision pour sécuriser la maintenance ferroviaire. De la R&D au déploiement MLOps sur Azure."
+  teaser: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Logo_SNCF_R%C3%A9seau_2015.svg/1200px-Logo_SNCF_R%C3%A9seau_2015.svg.png
+excerpt: "Déploiement d'une architecture SOTA (DETR + OCR) sur AWS pour l'inventaire automatisé des actifs ferroviaires."
 ---
 
-## 🎯 Le Défi
-La maintenance préventive des voies ferrées est un enjeu critique pour la SNCF. L'objectif était d'automatiser la détection de défauts sur les caténaires à partir de flux vidéo haute résolution, pour réduire l'intervention humaine en zone dangereuse.
+## 🎯 Le Défi : Moderniser la Maintenance Ferroviaire
+SNCF Réseau doit inventorier et surveiller des milliers de kilomètres de voies. L'objectif était de passer d'une inspection manuelle à une **maintenance prédictive automatisée** capable d'identifier les actifs critiques (Traverses, Crocodiles, Signalisation) à partir de flux vidéo.
 
 ## 💡 La Solution Technique
 
-J'ai piloté le développement d'une pipeline de Vision par Ordinateur complète :
+J'ai conçu une architecture hybride alliant **Deep Learning de pointe** et **Cloud Engineering** :
 
-* **Modélisation :** Fine-tuning de modèles **YOLOv8** sur un dataset propriétaire annoté.
-* **Traitement d'images :** Pré-processing avec **OpenCV** (réduction de bruit, normalisation).
-* **Architecture Cloud :** Déploiement sur **Azure ML** avec utilisation de GPU pour l'inférence temps réel.
+### 1. Vision Transformers (SOTA)
+Au lieu des architectures classiques (CNN), j'ai opté pour l'état de l'art :
+* **Fine-tuning de modèles DETR** (Detection Transformer) via **Hugging Face**.
+* Détection robuste des objets complexes malgré les conditions extérieures (pluie, luminosité).
 
-### La Stack Technique
-* **Langage :** Python 3.9
-* **Frameworks :** PyTorch, Ultralytics (YOLO), FastAPI
-* **Ops :** Docker, Kubernetes (AKS), CI/CD GitHub Actions
+### 2. Pipeline MLOps sur AWS
+L'industrialisation est au cœur du projet :
+* Gestion du **Data Lake** via **AWS S3** piloté par **Boto3** (Python).
+* Pipeline automatisé pour le versionning des datasets et des modèles.
 
-## 🚀 Résultats & Impact
+### 3. Hybridation OCR
+Pour aller plus loin que la simple détection :
+* Intégration du moteur **EasyOCR** en post-traitement.
+* Lecture automatique et indexation des plaques de signalisation ferroviaire (TIV).
 
-> "Ce système a permis d'augmenter la couverture d'inspection de 40% tout en divisant par deux le temps d'analyse des vidéos."
+## 🛠️ Stack Technique
+* **Langages :** Python 3.9
+* **Frameworks IA :** PyTorch, Hugging Face (Transformers), EasyOCR
+* **Cloud & Ops :** AWS (S3, Boto3), Docker
+* **Data Eng :** Conversion automatique Excel vers COCO
 
-* **Précision (mAP) :** 92% sur les défauts critiques.
-* **Latence :** Traitement de 30 images/seconde en production.
-* **Scalabilité :** Déploiement automatisé via pipeline MLOps.
+## 🚀 Impact & Performance
+
+> "Un système capable de lire le réseau ferroviaire comme un livre ouvert."
+
+* **Performance :** Taux de détection **>97%** sur les objets critiques (Traverses, Crocodiles).
+* **Monitoring :** Développement de modules d'évaluation automatique (mAP, F1-Score) pour garantir la non-régression du modèle en production.
 
 ---
 [Retour à l'accueil](https://www.thiernobarry-ai.com)
