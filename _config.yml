@@ -113,14 +113,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Thierno Barry"
+  avatar           : "https://avatars.githubusercontent.com/u/122394548?v=4"
+  bio              : "Senior AI Engineer & Data Scientist"
+  location         : "Paris, France"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/thierno-barry-28651099/"
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -133,6 +134,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      url: "https://github.com/Thibarry"
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
