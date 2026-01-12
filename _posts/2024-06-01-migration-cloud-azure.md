@@ -1,6 +1,6 @@
 ---
 title: "Migration Cloud : De SAS Legacy vers Azure Databricks (Circana)"
-date: 2026-02-01
+date: 2024-06-01
 categories:
   - Data Engineering
   - Cloud Migration
