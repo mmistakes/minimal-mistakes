@@ -70,3 +70,34 @@ body {
   margin-right: .35rem;
   border: 3px solid #ddd;  /* optional outline */
 }
+
+/* Remove any dimming/grayscale effects applied to the entire sidebar */
+.sidebar,
+.sidebar__right {
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Also neutralize effects on anything inside the sidebar */
+.sidebar *,
+.sidebar__right * {
+  filter: none !important;
+  -webkit-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Disable any overlay pseudo-elements that could wash things out */
+.sidebar::before,
+.sidebar::after,
+.sidebar__right::before,
+.sidebar__right::after {
+  content: none !important;
+  display: none !important;
+}
