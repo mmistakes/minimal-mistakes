@@ -21,7 +21,7 @@ title                    : "Thierno Barry - AI Engineer"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Thierno Barry"
-description              : "Senior AI Engineer & Data Scientist. Expertise Hybride : Computer Vision, Cloud Data Engineering & Industrialisation MLOps."
+description              : "Senior Data Scientist & AI Engineer. Expertise Hybride : Computer Vision, Cloud Data Engineering & Industrialisation MLOps."
 url                      : "https://www.thiernobarry-ai.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Thierno Barry"
   avatar           : "https://avatars.githubusercontent.com/u/122394548?v=4"
-  bio              : "Senior AI Engineer & Data Scientist"
+  bio              : "Senior Data Scientist & AI Engineer"
   location         : "Paris, France"
   email            :
   links:
