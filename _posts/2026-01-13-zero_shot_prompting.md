@@ -2,6 +2,8 @@
 layout: post
 title:  "Zero Shot Reasoners"
 ---
+
+# Zero Shot Reasoners 
 ## 1. 들어가며: 인공지능의 '생각하는 법' 엿보기
 이 문서는 "Large Language Models are Zero-Shot Reasoners"라는 흥미로운 논문에 담긴 핵심 개념들을 여러분이 쉽게 이해할 수 있도록 돕기 위해 만들어졌습니다. 이 글을 통해 인공지능이 어떻게 복잡한 문제를 단계별로 풀어나가는지에 대한 깊이 있는 통찰을 얻게 될 것입니다.
 
