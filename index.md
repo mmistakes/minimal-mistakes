@@ -4,7 +4,7 @@ author_profile: true
 title: "Bienvenue."
 ---
 
-Je suis **Thierno Barry**, Senior Data Scientist & AI Engineer basé à Paris.
+Je suis **Thierno Barry**, Senior Data Scientist & AI Engineer basé en île-de-France.
 
 Avec 7 ans d'expérience hybride, je transforme des architectures de données complexes (Legacy SAS/Teradata) en systèmes d'Intelligence Artificielle modernes et scalables (Azure, MLOps, Computer Vision).
 
