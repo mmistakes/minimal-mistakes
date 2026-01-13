@@ -86,7 +86,8 @@ I am a **PhD candidate at [EPFL](https://www.epfl.ch/en/){:target="_blank"}**, S
 Before starting my PhD, I completed a **Master's degree in Data Science** and a **Bachelor's degree in Communication Systems** at EPFL. During my studies, I worked with several research groups, including the [Data Science Lab (DLAB)](https://dlab.epfl.ch/){:target="_blank"} of **Robert West** on analyzing [food consumption](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1231070/full){:target="_blank"} at EPFL and the [Machine Learning and Optimization Lab (MLO)](https://www.epfl.ch/labs/mlo/){:target="_blank"} of **Martin Jaggi** on [text-to-image generation](https://arxiv.org/abs/2209.10948){:target="_blank"}. I also worked with the INDY Lab of **Patrick Thiran**, where I co-built the first version of [Climpact](https://climpact.ch/){:target="_blank"}, which led to a [publication](https://infoscience.epfl.ch/record/275472){:target="_blank"}. In addition, I interned at **Sony** in Stuttgart, working on [neural architecture search](https://openreview.net/forum?id=BIcg6iub1Z5){:target="_blank"}. I also served as a student assistant for several courses: see [Teachings](/teachings/){:target="_blank"}.
 
 ## News
-- **06 Jan 2026** — I will be presenting [CISO](/publications/ciso/) at the [TIBS conference](https://conferences.au.dk/tibs-aarhus-2026) in Aarhus 🇩🇰
+- **13 Feb 2026** — I will present the role and career path of an AI enginneer to high school students at the [Forum Horizon](https://www.forum-horizon.ch/fr/) at [UNIL](https://www.unil.ch/) in Lausanne 🇨🇭
+- **06 Jan 2026** — I presented [CISO](/publications/ciso/) at the [TIBS conference](https://conferences.au.dk/tibs-aarhus-2026) in Aarhus 🇩🇰
 - **10 Dec 2025** — Our [CISO](/publications/ciso/) paper has been accepted at *Methods in Ecology and Evolution* 🎉
 - **26 Nov 2025** — Our [MaskSDM](/publications/masksdm/) paper is now published in *Methods in Ecology and Evolution* 🎉
 - **01 Oct 2025** — I helped organize the [AI+Environment Summit](https://ai-environment-summit.com/) in Zürich 🌿
@@ -104,4 +105,4 @@ Before starting my PhD, I completed a **Master's degree in Data Science** and a 
 
 ## Contact me
 
-Feel free to reach out to me at [robin.zbinden[hat]epfl.ch](mailto:robin.zbinden@epfl.ch), or come say hi at conferences. I’m always happy to discuss research ideas, potential collaborations, or anything related to machine learning and ecology — and I also enjoy chatting about sports, literature, films, music, or politics.
+Feel free to reach out to me at [robin.zbinden[at]epfl.ch](mailto:robin.zbinden@epfl.ch), or come say hi at conferences. I’m always happy to discuss research ideas, potential collaborations, or anything related to machine learning and ecology — and I also enjoy chatting about sports, literature, films, music, or politics.
