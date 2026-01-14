@@ -9,9 +9,9 @@ docs:
   - title: "Computer Science"
     children:
       - title: "Operating systems"
-        url: /categories/operating-systems/
+        url: /categories/Operating-Systems/
       - title: "Cloud Computing"
-        url: /categories/cloud-computing/
+        url: /categories/Cloud-Computing/
   - title: "Data Science"
     children:
       - title: "Data"
