@@ -1,7 +1,7 @@
 ---
 title: "Cloud Computing"
 layout: archive
-permalink: /categories/cloud-computing/
+permalink: /categories/Cloud-Computing/
 taxonomy: Cloud Computing
 sidebar:
   nav: "docs"
