@@ -2,6 +2,7 @@
 layout: post
 title:  "Few Shot Learning"
 categories: LLM
+tag: GPT
 ---
 
 # AI와 대화하는 새로운 방법: GPT-3와 '퓨샷 학습' 이야기

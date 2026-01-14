@@ -2,6 +2,7 @@
 layout: post
 title:  "Zero Shot Reasoners"
 categories: LLM
+tag: GPT
 ---
 
 # Zero Shot Reasoners 
