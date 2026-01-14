@@ -2,7 +2,10 @@
 ---
 title: "Starting My Technical Learning Blog"
 layout: single
-categories:[About]
+categories: - Diary
+tag : - Study
+sidebar:
+  nav: "docs"
 ---
 
 
