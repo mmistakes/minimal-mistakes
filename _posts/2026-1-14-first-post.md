@@ -1,4 +1,3 @@
-
 ---
 title: "Starting My Technical Learning Blog"
 layout: single
