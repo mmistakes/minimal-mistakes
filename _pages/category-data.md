@@ -1,7 +1,7 @@
 ---
 title: "Data"
 layout: archive
-permalink: /categories/data/
+permalink: /categories/Data/
 taxonomy: Data
 sidebar:
   nav: "docs"
