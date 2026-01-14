@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Zero Shot Reasoners"
 categories: LLM
 tag: GPT

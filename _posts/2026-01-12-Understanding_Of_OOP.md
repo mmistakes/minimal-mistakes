@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "객체 지향 이론의 이해"
 categories: coding
 tag: [python, 객체지향]
