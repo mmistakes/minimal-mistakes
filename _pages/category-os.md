@@ -1,8 +1,8 @@
 ---
 title: "Operating Systems"
 layout: archive
-permalink: /categories/operating-systems/
-taxonomy: Operating systems
+permalink: /categories/Operating-Systems/
+taxonomy: Operating Systems
 sidebar:
   nav: "docs"
 ---
