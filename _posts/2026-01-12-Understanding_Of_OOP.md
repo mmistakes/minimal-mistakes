@@ -2,7 +2,7 @@
 layout: post
 title:  "객체 지향 이론의 이해"
 categories: coding
-tag: python
+tag: [python, 객체지향]
 ---
 
 # 객체 지향이란?
