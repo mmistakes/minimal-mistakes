@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "객체 지향 이론의 이해"
+categories: Python
 ---
 
 # 객체 지향이란?
