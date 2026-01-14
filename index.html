@@ -1,4 +1,4 @@
 ---
-layout: home
+layout: archive
 author_profile: true
 ---
