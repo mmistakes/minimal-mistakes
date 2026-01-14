@@ -1,7 +1,7 @@
 # _data/navigation.yml 전체 내용
 main:
   - title: "About"
-    url: /about/
+    url: categories/About/
 
 docs:
   - title: "Diary"
