@@ -10,3 +10,21 @@ main:
     url: /collection-archive/
   - title: "Sitemap"
     url: /sitemap/
+
+docs:
+  - title: "Diary"
+    url: /categories/Diary/
+  - title: "Data"
+    url: /categories/Data/
+  - title: "Data Engineering"
+    url: /categories/Data Engineering/
+  - title: "AI"
+    url: /categories/AI/
+  - title: "MLOps"
+    url: /categories/MLOps/
+  - title: "Development"
+    url: /categories/Development/
+  - title: "ETC"
+    url: /categories/ETC/
+  - title: "About"
+    url: /categories/About
