@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Zero Shot Reasoners"
+categories: LLM
 ---
 
 # Zero Shot Reasoners 
