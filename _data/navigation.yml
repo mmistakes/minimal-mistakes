@@ -1,43 +1,22 @@
-# main links
-#main:
-  #- title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  #- title: "About"
-  #  url: https://mmistakes.github.io/minimal-mistakes/about/
-  #- title: "Robotics"
-  #  url: /categories/robotics
-  #- title: "Sample Collections"
-  #  url: /collection-archive/
-  #- title: "Sitemap"
-  #  url: /sitemap/
+# _data/navigation.yml 전체 내용
+main:
+  - title: "About"
+    url: /about/
 
 docs:
   - title: "Diary"
     url: /categories/Diary/
   - title: "Computer Science"
     children:
-    - title: "Operating systems"
-      url: /categories/operating systems
-    - title: " Cloud Computing"
-      url: /categories/cloud computing
-
+      - title: "Operating systems"
+        url: /categories/operating-systems/
+      - title: "Cloud Computing"
+        url: /categories/cloud-computing/
   - title: "Data Science"
-    children: 
-    - title: "Data"
-      url: /categories/Data/
-    - title: "Data Engineering"
-      url: /categories/Data Engineering/
-  
+    children:
+      - title: "Data"
+        url: /categories/Data/
+      - title: "Data Engineering"
+        url: /categories/Data-Engineering/
   - title: "AI"
     url: /categories/AI/
-  
-  - title: "MLOps"
-    url: /categories/MLOps/
-  
-  - title: "Development"
-    url: /categories/Development/
-  - title: "ETC"
-    url: /categories/ETC/
-  - title: "About"
-    url: /categories/About
-
