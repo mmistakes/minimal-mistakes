@@ -1,13 +1,16 @@
 ---
 title: "Starting My Technical Learning Blog"
 layout: single
-categories: - Diary
-tag : - Study
+categories:
+  - Diary
+tags:
+  - Study
 sidebar:
   nav: "docs"
 ---
 
-
+## Welcome
+여기서부터 본문 내용을 작성하세요.
 ## Welcome
 
 Hello! I'm Soo Young Kwon, a computer science student based in Melbourne, Australia. I'm starting this blog to document my learning journey as I complete my undergraduate studies and prepare for graduate school.
