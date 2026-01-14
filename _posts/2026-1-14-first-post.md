@@ -2,8 +2,7 @@
 ---
 title: "Starting My Technical Learning Blog"
 layout: single
-categories:
-  - About
+categories:[About]
 ---
 
 
