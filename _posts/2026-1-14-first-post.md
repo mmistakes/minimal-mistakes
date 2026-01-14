@@ -1,9 +1,11 @@
+
 ---
 title: "Starting My Technical Learning Blog"
-date: 2025-01-14 15:30:00 +1100
-categories: [Data]
-tags: [introduction, learning, portfolio]
+layout: single
+categories:
+  - About
 ---
+
 
 ## Welcome
 
