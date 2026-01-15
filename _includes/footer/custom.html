@@ -51,20 +51,26 @@ function setTheme(theme) {
   
   if (!searchInput || !searchResults) return;
   
-  let searchIndex = null;
   let searchData = null;
   
-  // 검색 데이터 로드
+  // 검색 데이터 로드 (Jekyll이 생성한 JSON)
   async function loadSearchData() {
     if (searchData) return;
     try {
-      const response = await fetch('/assets/js/lunr/lunr-store.js');
-      const text = await response.text();
-      // lunr-store.js에서 documents 배열 추출
-      const match = text.match(/var store = (\[[\s\S]*?\]);/);
-      if (match) {
-        searchData = JSON.parse(match[1]);
+      // lunr-store.js를 script로 로드하여 store 변수 가져오기
+      if (typeof store !== 'undefined') {
+        searchData = store;
+        return;
       }
+      // store가 없으면 동적으로 로드
+      const script = document.createElement('script');
+      script.src = '/assets/js/lunr/lunr-store.js';
+      script.onload = function() {
+        if (typeof store !== 'undefined') {
+          searchData = store;
+        }
+      };
+      document.head.appendChild(script);
     } catch (e) {
       console.error('검색 데이터 로드 실패:', e);
     }
@@ -80,7 +86,7 @@ function setTheme(theme) {
     const lowerQuery = query.toLowerCase();
     const results = searchData.filter(item => {
       return (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
-             (item.content && item.content.toLowerCase().includes(lowerQuery));
+             (item.excerpt && item.excerpt.toLowerCase().includes(lowerQuery));
     }).slice(0, 5);
     
     if (results.length === 0) {
@@ -90,7 +96,7 @@ function setTheme(theme) {
         <div class="search-result-item">
           <a href="${item.url}">
             <div class="result-title">${item.title}</div>
-            <div class="result-excerpt">${item.content ? item.content.substring(0, 100) + '...' : ''}</div>
+            <div class="result-excerpt">${item.excerpt ? item.excerpt.substring(0, 100) + '...' : ''}</div>
           </a>
         </div>
       `).join('');
@@ -126,6 +132,9 @@ function setTheme(theme) {
       searchResults.classList.remove('is-visible');
     }
   });
+  
+  // 페이지 로드 시 검색 데이터 미리 로드
+  loadSearchData();
 })();
 </script>
 
