@@ -60,10 +60,43 @@
     color: var(--text-color) !important;
   }
   
-  [data-theme="light"] .masthead,
   [data-theme="light"] .page__footer {
     background-color: var(--card-bg) !important;
     border-color: var(--border-color) !important;
+  }
+  
+  /* 라이트 모드 - 네비게이션바 */
+  [data-theme="light"] .masthead {
+    background-color: #fff !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  [data-theme="light"] .site-title,
+  [data-theme="light"] .site-subtitle {
+    color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav a {
+    color: #333 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav a:hover {
+    color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav .visible-links a::before {
+    background-color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav .search__toggle,
+  [data-theme="light"] .greedy-nav .hidden-links-toggle {
+    color: #333 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav .search__toggle:hover,
+  [data-theme="light"] .greedy-nav .hidden-links-toggle:hover {
+    color: #d10a50 !important;
   }
   
   [data-theme="light"] .sidebar,
