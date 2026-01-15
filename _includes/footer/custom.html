@@ -115,7 +115,7 @@ function setTheme(theme) {
     if (e.key === 'Enter') {
       e.preventDefault();
       if (this.value.trim()) {
-        window.location.href = '/search/?q=' + encodeURIComponent(this.value);
+        performSearch(this.value);
       }
     }
   });
