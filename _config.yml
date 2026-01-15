@@ -116,7 +116,7 @@ author:
   name             : "Comad.J"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "우주를 유영하는 기록입니다"
-  location         : "ROK"
+  location         : "Rep. of Korea"
   email            : "gentlebros.kjh@gmail.com"
   links:
     - label: "Email"
@@ -299,6 +299,7 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: true
       comments: true
@@ -306,7 +307,6 @@ defaults:
       related: true
       show_date: true
       toc: true
-      toc_sticky: true
       toc_label: "목차"
 
 date_format: "%Y-%m-%d"
