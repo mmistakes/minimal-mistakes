@@ -2,7 +2,14 @@
 
 <!-- 읽기 진행률 바 -->
 <div class="reading-progress-bar"></div>
+
+<!-- 다크/라이트 토글 버튼 -->
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+  <span id="theme-icon">🌙</span>
+</button>
+
 <script>
+// 읽기 진행률 바
 document.addEventListener('DOMContentLoaded', function() {
   const progressBar = document.querySelector('.reading-progress-bar');
   
@@ -14,7 +21,27 @@ document.addEventListener('DOMContentLoaded', function() {
       progressBar.style.width = scrollPercent + '%';
     });
   }
+  
+  // 저장된 테마 불러오기
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  setTheme(savedTheme);
 });
+
+// 테마 토글
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  setTheme(newTheme);
+  localStorage.setItem('theme', newTheme);
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const icon = document.getElementById('theme-icon');
+  if (icon) {
+    icon.textContent = theme === 'dark' ? '🌙' : '☀️';
+  }
+}
 </script>
 
 <!-- end custom footer snippets -->

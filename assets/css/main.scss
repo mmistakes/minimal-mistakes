@@ -23,13 +23,19 @@ html, body {
 /* 사이드바 (Author Profile) 개선 */
 .sidebar {
   .author__avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    
     img {
       border-radius: 50%;
-      border: 3px solid #f21368;  // 네온 핑크 테두리
-      transition: transform 0.3s ease;
+      border: 3px solid #f21368;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(242, 19, 104, 0.3);
       
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.08) rotate(3deg);
+        box-shadow: 0 0 30px rgba(242, 19, 104, 0.5);
       }
     }
   }
@@ -37,35 +43,66 @@ html, body {
   .author__name {
     font-family: "Pretendard Variable", sans-serif;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-top: 0.5em;
+    text-align: center;
+    background: linear-gradient(135deg, #f21368, #ff6b9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .author__bio {
     font-size: 0.85em;
     color: #aaa;
-    line-height: 1.5;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(242, 19, 104, 0.2);
+    margin-bottom: 1em;
+  }
+  
+  .author__urls-wrapper {
+    margin-top: 0.5em;
   }
   
   .author__urls {
     li {
-      margin-bottom: 0.3em;
+      margin-bottom: 0.5em;
       
       a {
         font-size: 0.85em;
-        transition: color 0.2s ease;
+        padding: 0.4em 0.8em;
+        border-radius: 20px;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
         
         &:hover {
-          color: #f21368;
+          color: #fff;
+          background: linear-gradient(135deg, #f21368, #ff6b9d);
+          transform: translateX(5px);
+        }
+        
+        .fas, .fab {
+          font-size: 1em;
         }
       }
     }
   }
 }
 
-/* 사이드바 위치 조정 (author profile) */
+/* 사이드바 위치 조정 */
 .sidebar__right {
   margin-bottom: 1em;
+  
+  @media (min-width: 64em) {
+    padding: 1em;
+    background: rgba(26, 26, 26, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(242, 19, 104, 0.1);
+  }
 }
 
 /* 본문 폰트 크기 조정 - 제목과 본문 텍스트 구분 강화 */
@@ -156,15 +193,87 @@ html, body {
   }
 }
 
-// 코드블록 배경색 통일 (네온 테마)
+/* ==========================================================================
+   코드블록 스타일 강화
+   ========================================================================== */
+
+// 코드블록 컨테이너
 div.highlighter-rouge,
 figure.highlight {
   background-color: #1a1a1a !important;
   border: 1px solid #333 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin: 1.5em 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  
+  // 언어 표시 (좌측 상단)
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    background: linear-gradient(180deg, #2d2d2d, #252525);
+    border-bottom: 1px solid #444;
+  }
+  
+  // 창 버튼 스타일 (macOS 스타일)
+  &::after {
+    content: '● ● ●';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: transparent;
+    text-shadow: 
+      0 0 0 #ff5f56,
+      20px 0 0 #ffbd2e,
+      40px 0 0 #27ca40;
+    z-index: 1;
+  }
 }
 
 pre.highlight {
   background-color: #1a1a1a !important;
+  margin: 0 !important;
+  padding: 45px 1em 1em 1em !important;
+  border-radius: 0 0 12px 12px !important;
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+}
+
+// 인라인 코드 스타일
+:not(pre) > code {
+  background-color: rgba(242, 19, 104, 0.15) !important;
+  color: #f21368 !important;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+}
+
+// 코드 복사 버튼 위치 조정
+.code-header {
+  position: absolute !important;
+  top: 5px !important;
+  right: 10px !important;
+  background: transparent !important;
+  border: none !important;
+  z-index: 2;
+  
+  button {
+    padding: 4px 10px !important;
+    font-size: 0.75em !important;
+    border-radius: 6px !important;
+  }
 }
 
 // 코드블록 내 텍스트 색상 조정 - 어두운 배경에서 가독성 향상
