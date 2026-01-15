@@ -3,7 +3,7 @@ layout: post
 published: true
 title: "Fixing WeatherKit JWT Authentication Errors in SwiftUI"
 date: 2026-01-15 10:30:00 +0530
-image: '/images/featured/coding.jpg'
+image: '/images/posts/weatherkit-jwt-auth-error/featured.jpg'
 description: "A step-by-step guide to fixing the common WeatherKit JWT authentication error caused by missing entitlements and App Services configuration."
 excerpt: "If you’re seeing a 'Failed to generate jwt token for com.apple.weatherkit.authservice' error, this guide walks through the exact configuration steps needed to fix it."
 seo_title: "WeatherKit JWT Error Fix in SwiftUI"
@@ -16,6 +16,9 @@ tags:
   - WeatherKit
   - iOS Development
 ---
+<p align="center" style="font-size: 0.85rem;">
+Photo by <a href="https://unsplash.com/@jbowersphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Bowers</a> on <a href="https://unsplash.com/photos/brown-grass-field-towards-trees-BqKdvJ8a5TI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</p>
 
 ## The Problem
 
