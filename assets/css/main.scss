@@ -114,9 +114,60 @@ pre.highlight {
   background-color: #1a1a1a !important;
 }
 
-// 코드블록 내 텍스트 색상 조정
+// 코드블록 내 텍스트 색상 조정 - 어두운 배경에서 가독성 향상
 .highlight {
+  color: #e0e0e0 !important;  // 밝은 회색 기본 텍스트
+  
   code {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+  }
+  
+  // 일반 텍스트
+  .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv,
+  .nx, .py, .p, .w {
+    color: #e0e0e0 !important;
+  }
+  
+  // 키워드/예약어 - 네온 핑크
+  .k, .kc, .kd, .kn, .kp, .kr, .kt, .o, .ow {
+    color: #f21368 !important;
+  }
+  
+  // 문자열 - 연두색
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss {
+    color: #98c379 !important;
+  }
+  
+  // 숫자 - 주황색
+  .m, .mf, .mh, .mi, .mo, .il {
+    color: #d19a66 !important;
+  }
+  
+  // 주석 - 연한 회색
+  .c, .c1, .cm, .cp, .cs, .ch {
+    color: #7f848e !important;
+    font-style: italic;
+  }
+  
+  // 함수/메서드 - 하늘색
+  .nf, .fm {
+    color: #61afef !important;
+  }
+  
+  // 클래스/타입 - 노란색
+  .nc, .nn {
+    color: #e5c07b !important;
+  }
+}
+
+// 마크다운 코드블록 (언어 지정 없는 경우)
+pre:not(.highlight) {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+  
+  code {
+    color: #e0e0e0 !important;
     background-color: transparent !important;
   }
 }
