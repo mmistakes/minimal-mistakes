@@ -54,34 +54,31 @@ search: false
   }
 }
 
-/* TOC (목차) - 기본 스타일 유지, 약간만 조정 */
+/* TOC (목차) - wide 레이아웃용 스타일 */
 .toc {
-  font-size: 0.75em;
+  font-size: 1em;  // 기본 크기로 복원
   
   .nav__title {
-    font-size: 0.9em;
-    padding: 0.4rem 0.6rem;
+    font-size: 1.1em;
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
   }
 }
 
 .toc__menu {
   a {
-    padding: 0.2rem 0.5rem;
-    line-height: 1.3;
-  }
-  
-  li ul > li a {
-    padding-inline-start: 1rem;
+    padding: 0.4rem 0.75rem;
+    line-height: 1.5;
     font-size: 0.95em;
   }
   
-  li ul li ul > li a {
-    padding-inline-start: 1.4rem;
+  li ul > li a {
+    padding-inline-start: 1.5rem;
     font-size: 0.9em;
   }
   
-  li ul li ul li ul > li a {
-    padding-inline-start: 1.8rem;
+  li ul li ul > li a {
+    padding-inline-start: 2rem;
     font-size: 0.85em;
   }
 }
