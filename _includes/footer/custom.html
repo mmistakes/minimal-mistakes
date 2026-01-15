@@ -120,9 +120,12 @@ function setTheme(theme) {
     }
   });
   
-  searchBtn.addEventListener('click', function() {
+  searchBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    searchInput.focus();
     if (searchInput.value.trim()) {
-      window.location.href = '/search/?q=' + encodeURIComponent(searchInput.value);
+      performSearch(searchInput.value);
     }
   });
   
