@@ -23,10 +23,14 @@
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
+        <div class="masthead__search">
+          <form class="search__form" action="{{ '/search/' | relative_url }}" method="get">
+            <input type="text" name="q" class="search__input" placeholder="검색어 입력..." aria-label="검색">
+            <button type="submit" class="search__submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>

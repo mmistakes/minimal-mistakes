@@ -26,7 +26,7 @@ url                      : "https://kinkos1234.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "kinkos1234/kinkos1234.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/Comad.J.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : # 텍스트 로고만 사용 (이미지는 Author에서 사용)
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Comad.J"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Comad.J.png"
   bio              : "우주를 유영하는 기록입니다"
   location         : "Rep. of Korea"
   email            : "gentlebros.kjh@gmail.com"
