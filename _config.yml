@@ -117,7 +117,6 @@ author:
   avatar           : "/assets/images/Comad.J.png"
   bio              : "우주를 유영하는 기록입니다"
   location         : "Rep. of Korea"
-  email            : "gentlebros.kjh@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

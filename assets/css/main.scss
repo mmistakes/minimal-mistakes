@@ -577,3 +577,79 @@ pre:not(.highlight) {
     }
   }
 }
+
+/* ==========================================================================
+   사이드바 Author 소셜 링크 - 아이콘만 한 줄로 표시
+   ========================================================================== */
+
+.author__urls-wrapper {
+  // 소셜 링크 컨테이너
+  .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    li {
+      display: inline-flex;
+      margin: 0 !important;
+      
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(242, 19, 104, 0.1);
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background: #f21368;
+          transform: scale(1.1);
+          
+          .svg-inline--fa,
+          i {
+            color: #fff !important;
+          }
+        }
+        
+        // 아이콘 크기 20x20px
+        .svg-inline--fa,
+        i {
+          font-size: 20px !important;
+          width: 20px !important;
+          height: 20px !important;
+          color: #f21368;
+          transition: color 0.3s ease;
+        }
+        
+        // 라벨 텍스트 숨기기
+        span:not(.svg-inline--fa):not([class*="fa-"]) {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+// 라이트 모드
+[data-theme="light"] .author__urls-wrapper {
+  .author__urls {
+    li a {
+      background: rgba(209, 10, 80, 0.1);
+      
+      &:hover {
+        background: #d10a50;
+      }
+      
+      .svg-inline--fa,
+      i {
+        color: #d10a50;
+      }
+    }
+  }
+}
