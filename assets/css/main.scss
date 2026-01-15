@@ -7,3 +7,82 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   커스텀 스타일 오버라이드
+   ========================================================================== */
+
+/* TOC (목차) 개선 - 폰트 크기 축소 및 여백 조정 */
+.toc {
+  font-size: 0.75em;  // 기본보다 작게
+  
+  .nav__title {
+    font-size: 0.85em;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+.toc__menu {
+  font-size: 0.8em;
+  
+  a {
+    padding: 0.2rem 0.5rem;
+    line-height: 1.4;
+  }
+  
+  // 하위 레벨 들여쓰기 축소
+  li ul > li a {
+    padding-inline-start: 1rem;
+  }
+  
+  li ul li ul > li a {
+    padding-inline-start: 1.4rem;
+  }
+  
+  li ul li ul li ul > li a {
+    padding-inline-start: 1.8rem;
+  }
+}
+
+// TOC 사이드바 너비 조정 (대형 화면)
+.sidebar__right {
+  @media (min-width: 80em) {
+    width: 280px;
+    margin-inline-end: -280px;
+  }
+}
+
+/* 코드 복사 버튼 스타일 - 네온 테마 대응 */
+.code-header {
+  background-color: #2d2d2d !important;  // 어두운 배경
+  border-bottom: 1px solid #444 !important;
+  
+  button {
+    color: #f21368 !important;  // 네온 핑크 (primary color)
+    background-color: transparent !important;
+    border: 1px solid #f21368 !important;
+    
+    &:hover {
+      background-color: #f21368 !important;
+      color: #fff !important;
+    }
+  }
+}
+
+// 코드블록 배경색 통일 (네온 테마)
+div.highlighter-rouge,
+figure.highlight {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333 !important;
+}
+
+pre.highlight {
+  background-color: #1a1a1a !important;
+}
+
+// 코드블록 내 텍스트 색상 조정
+.highlight {
+  code {
+    background-color: transparent !important;
+  }
+}
