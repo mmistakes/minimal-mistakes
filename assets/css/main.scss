@@ -12,9 +12,51 @@ search: false
    커스텀 스타일 오버라이드
    ========================================================================== */
 
-/* TOC (목차) 개선 - 폰트 크기 축소 및 계층 구분 강화 */
+/* 본문 폰트 크기 조정 - 제목과 본문 텍스트 구분 강화 */
+.page__content {
+  // 본문 기본 폰트 크기 축소
+  font-size: 0.9em;
+  line-height: 1.7;
+  
+  // 제목들은 상대적으로 크게 유지
+  h1 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1.3em;
+  }
+  
+  h3 {
+    font-size: 1.25em;
+    margin-top: 1.2em;
+  }
+  
+  h4 {
+    font-size: 1.1em;
+    margin-top: 1em;
+  }
+  
+  // 단락 간격
+  p {
+    margin-bottom: 1.2em;
+  }
+  
+  // 리스트 간격
+  ul, ol {
+    margin-bottom: 1em;
+    
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+}
+
+/* TOC (목차) - 기본 스타일 유지, 약간만 조정 */
 .toc {
-  font-size: 0.7em;
+  font-size: 0.75em;
   
   .nav__title {
     font-size: 0.9em;
@@ -23,51 +65,24 @@ search: false
 }
 
 .toc__menu {
-  // 1단계 (최상위) - 강조
-  > li > a {
-    font-size: 0.95em;
-    font-weight: 600;
-    padding: 0.3rem 0.5rem;
+  a {
+    padding: 0.2rem 0.5rem;
     line-height: 1.3;
   }
   
-  // 2단계 - 중간
-  li ul > li > a {
-    font-size: 0.85em;
-    font-weight: 500;
-    padding: 0.2rem 0.5rem 0.2rem 0.9rem;
-    line-height: 1.25;
+  li ul > li a {
+    padding-inline-start: 1rem;
+    font-size: 0.95em;
   }
   
-  // 3단계 이하 - 작게
   li ul li ul > li a {
-    font-size: 0.75em;
-    font-weight: 400;
-    padding: 0.15rem 0.5rem 0.15rem 1.3rem;
-    line-height: 1.2;
-    opacity: 0.85;
+    padding-inline-start: 1.4rem;
+    font-size: 0.9em;
   }
   
-  // 4단계 이하 - 더 작게
   li ul li ul li ul > li a {
-    font-size: 0.7em;
-    padding-inline-start: 1.6rem;
-    opacity: 0.8;
-  }
-  
-  // 5단계 이하
-  li ul li ul li ul li ul > li a {
-    font-size: 0.65em;
-    padding-inline-start: 1.9rem;
-    opacity: 0.75;
-  }
-}
-
-// TOC 사이드바 너비 조정 (대형 화면)
-.sidebar__right {
-  @media (min-width: 80em) {
-    width: 280px;
-    margin-inline-end: -280px;
+    padding-inline-start: 1.8rem;
+    font-size: 0.85em;
   }
 }
 
