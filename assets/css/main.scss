@@ -579,11 +579,10 @@ pre:not(.highlight) {
 }
 
 /* ==========================================================================
-   사이드바 Author 소셜 링크 - 아이콘만 한 줄로 표시
+   사이드바 Author 프로필 스타일
    ========================================================================== */
 
 .author__urls-wrapper {
-  // 소셜 링크 컨테이너
   .author__urls {
     display: flex !important;
     flex-wrap: wrap;
@@ -593,7 +592,45 @@ pre:not(.highlight) {
     margin: 0;
     list-style: none;
     
-    li {
+    // 첫 번째 항목 (위치 정보) - 전체 너비 사용, 별도 줄
+    li:first-child {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5em !important;
+      
+      a {
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        
+        &:hover {
+          background: transparent !important;
+          transform: none !important;
+        }
+        
+        // 위치 아이콘은 일반 크기로
+        .svg-inline--fa,
+        i {
+          font-size: 14px !important;
+          width: auto !important;
+          height: auto !important;
+          color: #f21368;
+          margin-right: 0.3em;
+        }
+        
+        // 위치 텍스트는 표시
+        span {
+          display: inline !important;
+          color: #ccc;
+          font-size: 0.85em;
+        }
+      }
+    }
+    
+    // 소셜 링크들 (2번째 이후) - 아이콘만 한 줄로
+    li:not(:first-child) {
       display: inline-flex;
       margin: 0 !important;
       
@@ -639,7 +676,18 @@ pre:not(.highlight) {
 // 라이트 모드
 [data-theme="light"] .author__urls-wrapper {
   .author__urls {
-    li a {
+    li:first-child a {
+      .svg-inline--fa,
+      i {
+        color: #d10a50;
+      }
+      
+      span {
+        color: #666;
+      }
+    }
+    
+    li:not(:first-child) a {
       background: rgba(209, 10, 80, 0.1);
       
       &:hover {
