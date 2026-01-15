@@ -65,23 +65,35 @@
     border-color: var(--border-color) !important;
   }
   
-  /* 라이트 모드 - 네비게이션바 */
-  [data-theme="light"] .masthead {
+  /* 라이트 모드 - 네비게이션바 (전체 영역) */
+  [data-theme="light"] .masthead,
+  [data-theme="light"] #site-nav,
+  [data-theme="light"] .greedy-nav,
+  [data-theme="light"] .masthead__inner-wrap,
+  [data-theme="light"] .masthead__menu {
     background-color: #fff !important;
+    background: #fff !important;
+  }
+  
+  [data-theme="light"] .masthead {
     border-bottom: 1px solid #e0e0e0 !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
   }
   
   [data-theme="light"] .site-title,
-  [data-theme="light"] .site-subtitle {
+  [data-theme="light"] .site-subtitle,
+  [data-theme="light"] .masthead .site-title {
     color: #d10a50 !important;
   }
   
-  [data-theme="light"] .greedy-nav a {
+  [data-theme="light"] .greedy-nav a,
+  [data-theme="light"] .greedy-nav .visible-links a,
+  [data-theme="light"] .masthead a {
     color: #333 !important;
   }
   
-  [data-theme="light"] .greedy-nav a:hover {
+  [data-theme="light"] .greedy-nav a:hover,
+  [data-theme="light"] .masthead a:hover {
     color: #d10a50 !important;
   }
   
@@ -90,12 +102,14 @@
   }
   
   [data-theme="light"] .greedy-nav .search__toggle,
-  [data-theme="light"] .greedy-nav .hidden-links-toggle {
+  [data-theme="light"] .greedy-nav .hidden-links-toggle,
+  [data-theme="light"] .search__toggle {
     color: #333 !important;
   }
   
   [data-theme="light"] .greedy-nav .search__toggle:hover,
-  [data-theme="light"] .greedy-nav .hidden-links-toggle:hover {
+  [data-theme="light"] .greedy-nav .hidden-links-toggle:hover,
+  [data-theme="light"] .search__toggle:hover {
     color: #d10a50 !important;
   }
   
