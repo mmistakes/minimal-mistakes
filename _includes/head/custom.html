@@ -1,5 +1,187 @@
 <!-- start custom head snippets -->
 
+<!-- Pretendard 한글 웹폰트 -->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+<!-- 커스텀 스타일 -->
+<style>
+  /* 읽기 진행률 바 */
+  .reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #f21368, #ff6b9d);
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+    box-shadow: 0 0 10px rgba(242, 19, 104, 0.5);
+  }
+  
+  /* 다크/라이트 토글 버튼 */
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #f21368;
+    background: rgba(26, 26, 26, 0.9);
+    color: #f21368;
+    font-size: 1.4em;
+    cursor: pointer;
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(242, 19, 104, 0.3);
+  }
+  
+  .theme-toggle:hover {
+    background: #f21368;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  /* 라이트 모드 스타일 */
+  [data-theme="light"] {
+    --bg-color: #f8f9fa;
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --code-bg: #f5f5f5;
+  }
+  
+  [data-theme="light"] body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+  }
+  
+  [data-theme="light"] .page__footer {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  /* 라이트 모드 - 네비게이션바 (전체 영역) */
+  [data-theme="light"] .masthead,
+  [data-theme="light"] #site-nav,
+  [data-theme="light"] .greedy-nav,
+  [data-theme="light"] .masthead__inner-wrap,
+  [data-theme="light"] .masthead__menu {
+    background-color: #fff !important;
+    background: #fff !important;
+  }
+  
+  [data-theme="light"] .masthead {
+    border-bottom: 1px solid #e0e0e0 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  [data-theme="light"] .site-title,
+  [data-theme="light"] .site-subtitle,
+  [data-theme="light"] .masthead .site-title {
+    color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav a,
+  [data-theme="light"] .greedy-nav .visible-links a,
+  [data-theme="light"] .masthead a {
+    color: #333 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav a:hover,
+  [data-theme="light"] .masthead a:hover {
+    color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav .visible-links a::before {
+    background-color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav .search__toggle,
+  [data-theme="light"] .greedy-nav .hidden-links-toggle,
+  [data-theme="light"] .search__toggle {
+    color: #333 !important;
+  }
+  
+  [data-theme="light"] .greedy-nav .search__toggle:hover,
+  [data-theme="light"] .greedy-nav .hidden-links-toggle:hover,
+  [data-theme="light"] .search__toggle:hover {
+    color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .sidebar,
+  [data-theme="light"] .page__content {
+    color: var(--text-color) !important;
+  }
+  
+  [data-theme="light"] .toc {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  [data-theme="light"] a {
+    color: #d10a50;
+  }
+  
+  [data-theme="light"] .nav__title {
+    background-color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .theme-toggle {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #d10a50;
+    color: #d10a50;
+  }
+  
+  [data-theme="light"] .theme-toggle:hover {
+    background: #d10a50;
+    color: #fff;
+  }
+  
+  /* 라이트 모드 - 테이블 스타일 */
+  [data-theme="light"] table {
+    background-color: #fff !important;
+    border-color: #ddd !important;
+  }
+  
+  [data-theme="light"] table thead {
+    background-color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] table thead th {
+    color: #fff !important;
+    border-color: #c00940 !important;
+  }
+  
+  [data-theme="light"] table tbody tr {
+    background-color: #fff !important;
+  }
+  
+  [data-theme="light"] table tbody tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+  }
+  
+  [data-theme="light"] table tbody td {
+    color: #333 !important;
+    border-color: #ddd !important;
+  }
+  
+  /* 라이트 모드 - 코드블록 */
+  [data-theme="light"] div.highlighter-rouge,
+  [data-theme="light"] figure.highlight,
+  [data-theme="light"] pre.highlight {
+    background-color: #2d2d2d !important;
+  }
+  
+  [data-theme="light"] .highlight code {
+    color: #e0e0e0 !important;
+  }
+</style>
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

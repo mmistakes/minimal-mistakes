@@ -1,3 +1,144 @@
 <!-- start custom footer snippets -->
 
+<!-- 읽기 진행률 바 -->
+<div class="reading-progress-bar"></div>
+
+<!-- 다크/라이트 토글 버튼 -->
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+  <span id="theme-icon">🌙</span>
+</button>
+
+<script>
+// 읽기 진행률 바
+document.addEventListener('DOMContentLoaded', function() {
+  const progressBar = document.querySelector('.reading-progress-bar');
+  
+  if (progressBar) {
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+  }
+  
+  // 저장된 테마 불러오기
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  setTheme(savedTheme);
+});
+
+// 테마 토글
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  setTheme(newTheme);
+  localStorage.setItem('theme', newTheme);
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const icon = document.getElementById('theme-icon');
+  if (icon) {
+    icon.textContent = theme === 'dark' ? '🌙' : '☀️';
+  }
+}
+
+// 네비게이션바 인라인 검색
+(function() {
+  const searchInput = document.getElementById('masthead-search-input');
+  const searchBtn = document.getElementById('masthead-search-btn');
+  const searchResults = document.getElementById('masthead-search-results');
+  
+  if (!searchInput || !searchResults) return;
+  
+  let searchData = null;
+  
+  // 검색 데이터 로드 (Jekyll이 생성한 JSON)
+  async function loadSearchData() {
+    if (searchData) return;
+    try {
+      // lunr-store.js를 script로 로드하여 store 변수 가져오기
+      if (typeof store !== 'undefined') {
+        searchData = store;
+        return;
+      }
+      // store가 없으면 동적으로 로드
+      const script = document.createElement('script');
+      script.src = '/assets/js/lunr/lunr-store.js';
+      script.onload = function() {
+        if (typeof store !== 'undefined') {
+          searchData = store;
+        }
+      };
+      document.head.appendChild(script);
+    } catch (e) {
+      console.error('검색 데이터 로드 실패:', e);
+    }
+  }
+  
+  // 검색 실행
+  function performSearch(query) {
+    if (!searchData || !query.trim()) {
+      searchResults.classList.remove('is-visible');
+      return;
+    }
+    
+    const lowerQuery = query.toLowerCase();
+    const results = searchData.filter(item => {
+      return (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
+             (item.excerpt && item.excerpt.toLowerCase().includes(lowerQuery));
+    }).slice(0, 5);
+    
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="no-results">검색 결과가 없습니다</div>';
+    } else {
+      searchResults.innerHTML = results.map(item => `
+        <div class="search-result-item">
+          <a href="${item.url}">
+            <div class="result-title">${item.title}</div>
+            <div class="result-excerpt">${item.excerpt ? item.excerpt.substring(0, 100) + '...' : ''}</div>
+          </a>
+        </div>
+      `).join('');
+    }
+    searchResults.classList.add('is-visible');
+  }
+  
+  // 이벤트 리스너
+  searchInput.addEventListener('focus', loadSearchData);
+  
+  searchInput.addEventListener('input', function() {
+    performSearch(this.value);
+  });
+  
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (this.value.trim()) {
+        performSearch(this.value);
+      }
+    }
+  });
+  
+  searchBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    searchInput.focus();
+    if (searchInput.value.trim()) {
+      performSearch(searchInput.value);
+    }
+  });
+  
+  // 외부 클릭시 결과 닫기
+  document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target) && !searchBtn.contains(e.target)) {
+      searchResults.classList.remove('is-visible');
+    }
+  });
+  
+  // 페이지 로드 시 검색 데이터 미리 로드
+  loadSearchData();
+})();
+</script>
+
 <!-- end custom footer snippets -->

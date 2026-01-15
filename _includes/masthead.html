@@ -23,10 +23,15 @@
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
+        <div class="masthead__search">
+          <div class="search__form">
+            <input type="text" id="masthead-search-input" class="search__input" placeholder="검색어 입력..." aria-label="검색">
+            <button type="button" id="masthead-search-btn" class="search__submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div id="masthead-search-results" class="search__results"></div>
+        </div>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>

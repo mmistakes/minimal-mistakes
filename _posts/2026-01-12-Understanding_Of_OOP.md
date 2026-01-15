@@ -134,7 +134,7 @@ Case 2 : 팽귄 is a 새
 - 포함의 목적 : 객체를 조립하고, 역할을 분리하여 변경에 유연한 구조를 만드는 것
 
 #### 파이썬 코드로 보는 Has-a
-``` Python
+``` python
 #1. 부품 클래스
 class Engine:
   def start(self):
@@ -209,7 +209,7 @@ my_car.drive()
 - 데이터는 금고에 숨기고 공개된 메서드를 통해서만 접근 가능. 외부에서 마이너스로 만들 수 없음
 
 * bank_account.py 예시
-``` Python
+``` python
 class Account:
   def __init__(self):
     self.__moeny = 0    #__변수명 : 비공개 변수
@@ -253,7 +253,7 @@ class Account:
 1. 데이터 보호 : 정보 은닉 (Private)
 2. 무결성 보장 : 유효하지 않은 값 차단
 
-``` Python
+``` python
 #1. 데이터 숨기기 (변수명 앞 __)
 def __init__(self):
   self.__money =0
@@ -280,7 +280,7 @@ def deposit(self, amount):
 "if-else 지옥에서 탈출하여 다형성의 천국으로!"
 
 - 절차지향의 경우 : 새 직업이 나오면 코드를 다 고쳐야 함
-  ``` Phython
+  ``` python
   def attack(character):
     if character.type == "Warrior":
       print("대검 배기")
@@ -291,7 +291,7 @@ def deposit(self, amount):
   # 직업잋 ㅜ가될 때마다 if문 계속 추가됨
   ```
 - 객체지향의 경우 : 코드를 수정할 필요 없음
-  ``` Python
+  ``` python
   def attack(character):
     #다형성 : 캐릭터가 누구든 알아서 공격
     character.attack()
@@ -306,7 +306,7 @@ def deposit(self, amount):
 
 ### 파이썬의 다형성 : Duck Typing
 "파이썬은 상속 없이도 다형성이 가능"
-``` Python
+``` python
 #상속을 받지 않음
 class Dog:
   def speak(self): print("멍멍!")

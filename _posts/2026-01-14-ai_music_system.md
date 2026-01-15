@@ -567,7 +567,7 @@ def check_persona_consistency(output, persona):
 ```
 
 ### 5.4 구현 코드: 작곡가 페르소나
-``` markdown
+````markdown
 ## 작곡가 페르소나
 
 <system_prompt>
@@ -682,8 +682,7 @@ def check_persona_consistency(output, persona):
 작사가님께:
 - [구조에 맞춰 가사 배치 요청]
 - [특정 구간 주의사항]
-``` 
-
+```
 
 </behavioral_rules>
 
@@ -739,10 +738,11 @@ Mission 3 (페르소나 유지) 적용:
   (Kirkpatrick et al., PNAS 2017) Section 3 "Elastic Weight Consolidation"
   응용: LLM의 System Prompt를 "Elastic Anchor"로 활용
 -->
+````
 
 ### 5.5 구현 코드: 작사가 페르소나
 
-```markdown
+````markdown
 ## 작사가 페르소나
 
 <system_prompt>
@@ -859,7 +859,6 @@ Section별 의도: [...]
 
 [특정 라인 디렉션 제안]
 [언어 발음 주의사항]
-```
 
 </behavioral_rules>
 
@@ -898,11 +897,11 @@ Mission 3 적용 (작사가 특화):
   참조: 음악학 관점의 가사-멜로디 관계
   "The Structure of Popular Music Lyrics" (Watanabe et al., 2016)
 -->
-```
+````
 
 ### 5.6 구현 코드: 보컬 페르소나
 
-```markdown
+````markdown
 ## 보컬 페르소나
 
 <system_prompt>
@@ -1064,7 +1063,6 @@ Suno 보컬 태그 제안 (1차)
 
 [호흡 부족 구간 있으면 조정 요청]
 [음역 조정 필요 시 제안]
-```
 
 </behavioral_rules>
 
@@ -1117,7 +1115,7 @@ Mission 3 적용 (보컬 특화):
   참조: "Cross-linguistic Vocal Technique Variations"
   (Smith & Kim, Journal of Voice, 2020)
 -->
-```
+````
 
 ## 6. Phase 3: 순차 작업 실행
 
@@ -1760,7 +1758,7 @@ Round 2: 협의 시뮬레이션
 
 ### 7.3 구현 코드: Round 1 - 개별 평가
 
-```markdown
+````markdown
 <system>
 세 명의 아티스트 페르소나가 동료 전문가로서 작업물을 평가합니다.
 각자의 전문 영역에서 냉정하고 건설적인 피드백을 제공합니다.
@@ -2217,11 +2215,11 @@ Mission 4 적용 (보컬 특화):
 - 실제 녹음 가능성 중심 평가
 - [ ] 태그, 기술 용어 사용 완전성 검증
 -->
-```
+````
 
 ### 7.4 구현 코드: Round 2 - 협의 시뮬레이션
 
-```markdown
+````markdown
 ### 평가 Round 2: 통합 협의
 
 <collaboration_session>
@@ -2443,11 +2441,11 @@ Mission 4 (협업 평가) 적용:
 2. "Self-Consistency Improves Chain of Thought" (Wang et al., 2023)
    다중 페르소나의 교차 검증으로 신뢰도 향상
 -->
-```
+````
 
 ### 7.5 강화된 재평가 모드 (선택지 C)
 
-```markdown
+````markdown
 <reinforced_evaluation>
 ## 🔍 강화된 재평가 모드
 ## 🔍 강화된 재평가 모드
@@ -2709,7 +2707,7 @@ Mission 4 (강화된 평가) 적용:
 - 엄격한 기준 (Stricter Rubric): 목적별 차등 감점 시스템
   참조: "Calibrated Evaluation Metrics for LLM Outputs" (Anthropic Research, 2023)
 -->
-```
+````
 
 ---
 
@@ -2745,7 +2743,7 @@ Mission 4 (강화된 평가) 적용:
 
 ### 8.3 Suno v5 형식 가이드
 
-```markdown
+````markdown
 <suno_format_guide>
 ## Suno v5 입력 형식
 
@@ -2808,11 +2806,11 @@ Breathy Verses, Powerful Belting on Chorus, Melancholic yet Hopeful
 ```
 
 </suno_format_guide>
-```
+````
 
 ### 8.4 구현 코드: Few-Shot Examples
 
-```markdown
+````markdown
 <few_shot_examples>
 ## Few-Shot Learning을 위한 예시
 
@@ -3035,11 +3033,11 @@ Mission 2 (Few-Shot Prompting) 적용:
 - 각 예시는 Input → Output 명확한 구조
 - 바이트 수 표기로 제약 준수 시연
 -->
-```
+````
 
 ### 8.5 구현 코드: Style Prompt 생성
 
-```markdown
+````markdown
 <style_prompt_construction>
 ## Step 1: Style Prompt 생성 (영문, 750자 이하)
 
@@ -3228,11 +3226,13 @@ byte_count = len(text.encode('utf-8'))
 - 보컬 스타일 반영
 
 </style_prompt_construction>
+````
 
 <!-- Mission 2 (Output Constraint) 적용: - 엄격한 형식 제약: 영문, 750자, 아티스트명 금지 참조: "Structured Output Generation in LLMs" (OpenAI, 2023) "Constraint Satisfaction in Text Generation" - 바이트 수 계산 및 축약 전략 - 필수 요소 체크리스트로 완전성 검증 -->
+
 ### 8.6 구현 코드: Lyrics 생성
 
-```markdown
+````markdown
 <lyrics_construction>
 ## Step 2: Lyrics + 구조 태그 생성
 
@@ -3521,7 +3521,7 @@ All alone
 - 작사가 스타일 유지
 
 </lyrics_construction>
-```
+````
 
 <!--
 Mission 2 (Output Constraint + Edge Case Handling) 적용:
@@ -3548,7 +3548,7 @@ Mission 2 (Output Constraint + Edge Case Handling) 적용:
 
 ### 8.7 구현 코드: 최종 출력 및 검증
 
-```markdown
+````markdown
 <final_output>
 ## Suno v5 프롬프트 완성
 
@@ -3802,8 +3802,10 @@ Suno v5 추가 기능:
 입력: ___________
 
 </final_output>
+````
 
 <!-- Mission 2 (JSON 변환 + 검증) 종합 적용: 1. Few-Shot Prompting: Example 1-3으로 패턴 학습 참조: "Few-Shot Learning in Large Language Models" (Brown et al., 2020) Section 3.1 2. Output Constraint: - Style: 영문, 750자, 아티스트명 금지 - Lyrics: {LYRICS_LANGUAGE}, [ ] 태그, 기술 용어 참조: "Constrained Decoding for Structured Output" (Hokamp & Liu, 2017) 3. Edge Case Handling: - Bridge 없음 → 제외 - Instrumental만 → [Instrumental] - 보컬 디렉션 불명확 → Style 통합 참조: "Robust Output Generation under Constraints" (가상 논문, 2024) 4. Validation: - 바이트 수 검증 - 필수 요소 체크리스트 - 언어 일관성 확인 참조: "Automated Validation of Structured Text" (Anthropic, 2023) "Multi-level Verification Protocol" -->
+
 ---
 
 ## 9. 마무리
@@ -3820,11 +3822,15 @@ Suno v5 추가 기능:
 ### 9.2 배운 것들
 
 #### 1. 구체적으로 써야 한다
+
+```
 (X) 나쁜 예: "감성적인 발라드를 만들어줘"
+
 (O) 좋은 예: "이별의 슬픔을 피아노와 스트링으로 표현하는,
 72 BPM의 마이너 키 발라드.
 보컬은 허스키한 여성 중저음 (E3-A4)으로
 Verse는 절제되게, Chorus는 G4 벨팅으로 폭발."
+```
 
 #### 2. 검증 단계를 빼먹지 말 것
 

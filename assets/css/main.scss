@@ -7,3 +7,697 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   커스텀 스타일 오버라이드
+   ========================================================================== */
+
+/* 한글 웹폰트 - Pretendard 적용 */
+html, body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", 
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", sans-serif;
+}
+
+/* 사이드바 (Author Profile) 개선 */
+.sidebar {
+  .author__avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    
+    img {
+      border-radius: 50%;
+      border: 3px solid #f21368;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(242, 19, 104, 0.3);
+      
+      &:hover {
+        transform: scale(1.08) rotate(3deg);
+        box-shadow: 0 0 30px rgba(242, 19, 104, 0.5);
+      }
+    }
+  }
+  
+  .author__name {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    text-align: center;
+    background: linear-gradient(135deg, #f21368, #ff6b9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .author__bio {
+    font-size: 0.85em;
+    color: #aaa;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(242, 19, 104, 0.2);
+    margin-bottom: 1em;
+  }
+  
+  .author__urls-wrapper {
+    margin-top: 0.5em;
+  }
+  
+  .author__urls {
+    li {
+      margin-bottom: 0.5em;
+      
+      a {
+        font-size: 0.85em;
+        padding: 0.4em 0.8em;
+        border-radius: 20px;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        
+        &:hover {
+          color: #fff;
+          background: linear-gradient(135deg, #f21368, #ff6b9d);
+          transform: translateX(5px);
+        }
+        
+        .fas, .fab {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+/* 사이드바 위치 조정 */
+.sidebar__right {
+  margin-bottom: 1em;
+  
+  @media (min-width: 64em) {
+    padding: 1em;
+    background: rgba(26, 26, 26, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(242, 19, 104, 0.1);
+  }
+}
+
+/* 본문 폰트 크기 조정 - 제목과 본문 텍스트 구분 강화 */
+.page__content {
+  // 본문 기본 폰트 크기 축소
+  font-size: 0.9em;
+  line-height: 1.7;
+  
+  // 제목들은 상대적으로 크게 유지
+  h1 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1.3em;
+  }
+  
+  h3 {
+    font-size: 1.25em;
+    margin-top: 1.2em;
+  }
+  
+  h4 {
+    font-size: 1.1em;
+    margin-top: 1em;
+  }
+  
+  // 단락 간격
+  p {
+    margin-bottom: 1.2em;
+  }
+  
+  // 리스트 간격
+  ul, ol {
+    margin-bottom: 1em;
+    
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+}
+
+/* TOC (목차) - wide 레이아웃용 스타일 */
+.toc {
+  font-size: 1em;  // 기본 크기로 복원
+  
+  .nav__title {
+    font-size: 1.1em;
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+  }
+}
+
+.toc__menu {
+  a {
+    padding: 0.4rem 0.75rem;
+    line-height: 1.5;
+    font-size: 0.95em;
+  }
+  
+  li ul > li a {
+    padding-inline-start: 1.5rem;
+    font-size: 0.9em;
+  }
+  
+  li ul li ul > li a {
+    padding-inline-start: 2rem;
+    font-size: 0.85em;
+  }
+}
+
+/* 코드 복사 버튼 스타일 - 네온 테마 대응 */
+.code-header {
+  background-color: #2d2d2d !important;  // 어두운 배경
+  border-bottom: 1px solid #444 !important;
+  
+  button {
+    color: #f21368 !important;  // 네온 핑크 (primary color)
+    background-color: transparent !important;
+    border: 1px solid #f21368 !important;
+    
+    &:hover {
+      background-color: #f21368 !important;
+      color: #fff !important;
+    }
+  }
+}
+
+/* ==========================================================================
+   코드블록 스타일 강화
+   ========================================================================== */
+
+// 코드블록 컨테이너
+div.highlighter-rouge,
+figure.highlight {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin: 1.5em 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  
+  // 언어 표시 (좌측 상단)
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    background: linear-gradient(180deg, #2d2d2d, #252525);
+    border-bottom: 1px solid #444;
+  }
+  
+  // 창 버튼 스타일 (macOS 스타일)
+  &::after {
+    content: '● ● ●';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: transparent;
+    text-shadow: 
+      0 0 0 #ff5f56,
+      20px 0 0 #ffbd2e,
+      40px 0 0 #27ca40;
+    z-index: 1;
+  }
+}
+
+pre.highlight {
+  background-color: #1a1a1a !important;
+  margin: 0 !important;
+  padding: 45px 1em 1em 1em !important;
+  border-radius: 0 0 12px 12px !important;
+  
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+}
+
+// 인라인 코드 스타일
+:not(pre) > code {
+  background-color: rgba(242, 19, 104, 0.15) !important;
+  color: #f21368 !important;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+}
+
+// 코드 복사 버튼 위치 조정
+.code-header {
+  position: absolute !important;
+  top: 5px !important;
+  right: 10px !important;
+  background: transparent !important;
+  border: none !important;
+  z-index: 2;
+  
+  button {
+    padding: 4px 10px !important;
+    font-size: 0.75em !important;
+    border-radius: 6px !important;
+  }
+}
+
+// 코드블록 내 텍스트 색상 조정 - 어두운 배경에서 가독성 향상
+.highlight {
+  color: #e0e0e0 !important;  // 밝은 회색 기본 텍스트
+  
+  code {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+  }
+  
+  // 일반 텍스트
+  .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv,
+  .nx, .py, .p, .w {
+    color: #e0e0e0 !important;
+  }
+  
+  // 키워드/예약어 - 네온 핑크
+  .k, .kc, .kd, .kn, .kp, .kr, .kt, .o, .ow {
+    color: #f21368 !important;
+  }
+  
+  // 문자열 - 연두색
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss {
+    color: #98c379 !important;
+  }
+  
+  // 숫자 - 주황색
+  .m, .mf, .mh, .mi, .mo, .il {
+    color: #d19a66 !important;
+  }
+  
+  // 주석 - 연한 회색
+  .c, .c1, .cm, .cp, .cs, .ch {
+    color: #7f848e !important;
+    font-style: italic;
+  }
+  
+  // 함수/메서드 - 하늘색
+  .nf, .fm {
+    color: #61afef !important;
+  }
+  
+  // 클래스/타입 - 노란색
+  .nc, .nn {
+    color: #e5c07b !important;
+  }
+}
+
+// 마크다운 코드블록 (언어 지정 없는 경우)
+pre:not(.highlight) {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+  
+  code {
+    color: #e0e0e0 !important;
+    background-color: transparent !important;
+  }
+}
+
+/* ==========================================================================
+   사이드바 카테고리 목록
+   ========================================================================== */
+
+.sidebar-categories {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(242, 19, 104, 0.2);
+  
+  .nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      margin-bottom: 0.3em;
+      
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 0.8em;
+        border-radius: 6px;
+        font-size: 0.85em;
+        color: #ccc;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background: rgba(242, 19, 104, 0.15);
+          color: #f21368;
+          transform: translateX(5px);
+        }
+        
+        .category-name {
+          font-weight: 500;
+        }
+        
+        .category-count {
+          font-size: 0.85em;
+          color: #888;
+          background: rgba(255, 255, 255, 0.1);
+          padding: 0.15em 0.5em;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   네비게이션바 검색창
+   ========================================================================== */
+
+.masthead__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  
+  .search__form {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(242, 19, 104, 0.3);
+    border-radius: 25px;
+    padding: 0.3em 0.5em 0.3em 1em;
+    transition: all 0.3s ease;
+    
+    &:focus-within {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #f21368;
+      box-shadow: 0 0 10px rgba(242, 19, 104, 0.3);
+    }
+  }
+  
+  .search__input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.85em;
+    width: 150px;
+    outline: none;
+    
+    &::placeholder {
+      color: #888;
+    }
+    
+    @media (max-width: 768px) {
+      width: 100px;
+    }
+  }
+  
+  .search__submit {
+    background: transparent;
+    border: none;
+    color: #f21368;
+    cursor: pointer;
+    padding: 0.3em 0.5em;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: #ff6b9d;
+      transform: scale(1.1);
+    }
+  }
+  
+  .search__results {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    margin-top: 0.5em;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    
+    &.is-visible {
+      display: block;
+    }
+    
+    .search-result-item {
+      padding: 0.8em 1em;
+      border-bottom: 1px solid #333;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        
+        &:hover {
+          color: #f21368;
+        }
+      }
+      
+      .result-title {
+        font-weight: 600;
+        font-size: 0.9em;
+        margin-bottom: 0.3em;
+      }
+      
+      .result-excerpt {
+        font-size: 0.8em;
+        color: #888;
+        line-height: 1.4;
+      }
+    }
+    
+    .no-results {
+      padding: 1em;
+      color: #888;
+      text-align: center;
+      font-size: 0.85em;
+    }
+  }
+}
+
+/* 라이트 모드 - 카테고리 사이드바 */
+[data-theme="light"] .sidebar-categories {
+  border-bottom-color: #e0e0e0;
+  
+  .nav__title {
+    background: linear-gradient(135deg, #d10a50, #f21368);
+  }
+  
+  .nav__items li a {
+    color: #555;
+    
+    &:hover {
+      background: rgba(209, 10, 80, 0.1);
+      color: #d10a50;
+    }
+    
+    .category-count {
+      color: #777;
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+/* 라이트 모드 - 검색창 */
+[data-theme="light"] .masthead__search {
+  .search__form {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(209, 10, 80, 0.3);
+    
+    &:focus-within {
+      background: rgba(0, 0, 0, 0.08);
+      border-color: #d10a50;
+    }
+  }
+  
+  .search__input {
+    color: #333;
+    
+    &::placeholder {
+      color: #999;
+    }
+  }
+  
+  .search__submit {
+    color: #d10a50;
+    
+    &:hover {
+      color: #f21368;
+    }
+  }
+  
+  .search__results {
+    background: #fff;
+    border-color: #e0e0e0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+    .search-result-item {
+      border-bottom-color: #e0e0e0;
+      
+      a {
+        color: #333;
+        
+        &:hover {
+          color: #d10a50;
+        }
+      }
+      
+      .result-excerpt {
+        color: #666;
+      }
+    }
+    
+    .no-results {
+      color: #666;
+    }
+  }
+}
+
+/* ==========================================================================
+   사이드바 Author 프로필 스타일
+   ========================================================================== */
+
+.author__urls-wrapper {
+  .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    // 첫 번째 항목 (위치 정보) - 전체 너비 사용, 별도 줄
+    li:first-child {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5em !important;
+      
+      a {
+        width: auto !important;
+        height: auto !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        
+        &:hover {
+          background: transparent !important;
+          transform: none !important;
+        }
+        
+        // 위치 아이콘은 일반 크기로
+        .svg-inline--fa,
+        i {
+          font-size: 14px !important;
+          width: auto !important;
+          height: auto !important;
+          color: #f21368;
+          margin-right: 0.3em;
+        }
+        
+        // 위치 텍스트는 표시
+        span {
+          display: inline !important;
+          color: #ccc;
+          font-size: 0.85em;
+        }
+      }
+    }
+    
+    // 소셜 링크들 (2번째 이후) - 아이콘만 한 줄로
+    li:not(:first-child) {
+      display: inline-flex;
+      margin: 0 !important;
+      
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(242, 19, 104, 0.1);
+        transition: all 0.3s ease;
+        
+        &:hover {
+          background: #f21368;
+          transform: scale(1.1);
+          
+          .svg-inline--fa,
+          i {
+            color: #fff !important;
+          }
+        }
+        
+        // 아이콘 크기 20x20px
+        .svg-inline--fa,
+        i {
+          font-size: 20px !important;
+          width: 20px !important;
+          height: 20px !important;
+          color: #f21368;
+          transition: color 0.3s ease;
+        }
+        
+        // 라벨 텍스트 숨기기
+        span:not(.svg-inline--fa):not([class*="fa-"]) {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+// 라이트 모드
+[data-theme="light"] .author__urls-wrapper {
+  .author__urls {
+    li:first-child a {
+      .svg-inline--fa,
+      i {
+        color: #d10a50;
+      }
+      
+      span {
+        color: #666;
+      }
+    }
+    
+    li:not(:first-child) a {
+      background: rgba(209, 10, 80, 0.1);
+      
+      &:hover {
+        background: #d10a50;
+      }
+      
+      .svg-inline--fa,
+      i {
+        color: #d10a50;
+      }
+    }
+  }
+}

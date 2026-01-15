@@ -1,5 +1,21 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
+  
+  <!-- 카테고리 목록 -->
+  <nav class="sidebar-categories">
+    <ul class="nav__items">
+      {% assign categories_sorted = site.categories | sort %}
+      {% for category in categories_sorted %}
+        <li>
+          <a href="{{ '/categories/#' | append: category[0] | downcase | replace: ' ', '-' | relative_url }}">
+            <span class="category-name">{{ category[0] }}</span>
+            <span class="category-count">({{ category[1].size }})</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
