@@ -343,23 +343,6 @@ pre:not(.highlight) {
   padding-bottom: 1em;
   border-bottom: 1px solid rgba(242, 19, 104, 0.2);
   
-  .nav__title {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    font-size: 1em;
-    font-weight: 700;
-    color: #fff;
-    background: linear-gradient(135deg, #f21368, #ff6b9d);
-    padding: 0.6em 1em;
-    border-radius: 8px;
-    margin-bottom: 0.8em;
-    
-    i {
-      font-size: 0.9em;
-    }
-  }
-  
   .nav__items {
     list-style: none;
     margin: 0;
@@ -406,6 +389,7 @@ pre:not(.highlight) {
    ========================================================================== */
 
 .masthead__search {
+  position: relative;
   display: flex;
   align-items: center;
   margin-left: 1em;
@@ -454,6 +438,64 @@ pre:not(.highlight) {
     &:hover {
       color: #ff6b9d;
       transform: scale(1.1);
+    }
+  }
+  
+  .search__results {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    margin-top: 0.5em;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    
+    &.is-visible {
+      display: block;
+    }
+    
+    .search-result-item {
+      padding: 0.8em 1em;
+      border-bottom: 1px solid #333;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        
+        &:hover {
+          color: #f21368;
+        }
+      }
+      
+      .result-title {
+        font-weight: 600;
+        font-size: 0.9em;
+        margin-bottom: 0.3em;
+      }
+      
+      .result-excerpt {
+        font-size: 0.8em;
+        color: #888;
+        line-height: 1.4;
+      }
+    }
+    
+    .no-results {
+      padding: 1em;
+      color: #888;
+      text-align: center;
+      font-size: 0.85em;
     }
   }
 }
@@ -506,6 +548,32 @@ pre:not(.highlight) {
     
     &:hover {
       color: #f21368;
+    }
+  }
+  
+  .search__results {
+    background: #fff;
+    border-color: #e0e0e0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+    .search-result-item {
+      border-bottom-color: #e0e0e0;
+      
+      a {
+        color: #333;
+        
+        &:hover {
+          color: #d10a50;
+        }
+      }
+      
+      .result-excerpt {
+        color: #666;
+      }
+    }
+    
+    .no-results {
+      color: #666;
     }
   }
 }

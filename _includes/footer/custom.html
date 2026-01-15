@@ -42,6 +42,91 @@ function setTheme(theme) {
     icon.textContent = theme === 'dark' ? '🌙' : '☀️';
   }
 }
+
+// 네비게이션바 인라인 검색
+(function() {
+  const searchInput = document.getElementById('masthead-search-input');
+  const searchBtn = document.getElementById('masthead-search-btn');
+  const searchResults = document.getElementById('masthead-search-results');
+  
+  if (!searchInput || !searchResults) return;
+  
+  let searchIndex = null;
+  let searchData = null;
+  
+  // 검색 데이터 로드
+  async function loadSearchData() {
+    if (searchData) return;
+    try {
+      const response = await fetch('/assets/js/lunr/lunr-store.js');
+      const text = await response.text();
+      // lunr-store.js에서 documents 배열 추출
+      const match = text.match(/var store = (\[[\s\S]*?\]);/);
+      if (match) {
+        searchData = JSON.parse(match[1]);
+      }
+    } catch (e) {
+      console.error('검색 데이터 로드 실패:', e);
+    }
+  }
+  
+  // 검색 실행
+  function performSearch(query) {
+    if (!searchData || !query.trim()) {
+      searchResults.classList.remove('is-visible');
+      return;
+    }
+    
+    const lowerQuery = query.toLowerCase();
+    const results = searchData.filter(item => {
+      return (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
+             (item.content && item.content.toLowerCase().includes(lowerQuery));
+    }).slice(0, 5);
+    
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div class="no-results">검색 결과가 없습니다</div>';
+    } else {
+      searchResults.innerHTML = results.map(item => `
+        <div class="search-result-item">
+          <a href="${item.url}">
+            <div class="result-title">${item.title}</div>
+            <div class="result-excerpt">${item.content ? item.content.substring(0, 100) + '...' : ''}</div>
+          </a>
+        </div>
+      `).join('');
+    }
+    searchResults.classList.add('is-visible');
+  }
+  
+  // 이벤트 리스너
+  searchInput.addEventListener('focus', loadSearchData);
+  
+  searchInput.addEventListener('input', function() {
+    performSearch(this.value);
+  });
+  
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (this.value.trim()) {
+        window.location.href = '/search/?q=' + encodeURIComponent(this.value);
+      }
+    }
+  });
+  
+  searchBtn.addEventListener('click', function() {
+    if (searchInput.value.trim()) {
+      window.location.href = '/search/?q=' + encodeURIComponent(searchInput.value);
+    }
+  });
+  
+  // 외부 클릭시 결과 닫기
+  document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target) && !searchBtn.contains(e.target)) {
+      searchResults.classList.remove('is-visible');
+    }
+  });
+})();
 </script>
 
 <!-- end custom footer snippets -->

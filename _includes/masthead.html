@@ -24,12 +24,13 @@
         </ul>
         {% if site.search == true %}
         <div class="masthead__search">
-          <form class="search__form" action="{{ '/search/' | relative_url }}" method="get">
-            <input type="text" name="q" class="search__input" placeholder="검색어 입력..." aria-label="검색">
-            <button type="submit" class="search__submit">
+          <div class="search__form">
+            <input type="text" id="masthead-search-input" class="search__input" placeholder="검색어 입력..." aria-label="검색">
+            <button type="button" id="masthead-search-btn" class="search__submit">
               <i class="fas fa-search"></i>
             </button>
-          </form>
+          </div>
+          <div id="masthead-search-results" class="search__results"></div>
         </div>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
