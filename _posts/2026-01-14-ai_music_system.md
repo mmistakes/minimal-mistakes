@@ -2215,11 +2215,11 @@ Mission 4 적용 (보컬 특화):
 - 실제 녹음 가능성 중심 평가
 - [ ] 태그, 기술 용어 사용 완전성 검증
 -->
-```
+````
 
 ### 7.4 구현 코드: Round 2 - 협의 시뮬레이션
 
-```markdown
+````markdown
 ### 평가 Round 2: 통합 협의
 
 <collaboration_session>
