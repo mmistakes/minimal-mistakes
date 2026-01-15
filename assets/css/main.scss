@@ -12,35 +12,54 @@ search: false
    커스텀 스타일 오버라이드
    ========================================================================== */
 
-/* TOC (목차) 개선 - 폰트 크기 축소 및 여백 조정 */
+/* TOC (목차) 개선 - 폰트 크기 축소 및 계층 구분 강화 */
 .toc {
-  font-size: 0.75em;  // 기본보다 작게
+  font-size: 0.7em;
   
   .nav__title {
-    font-size: 0.85em;
+    font-size: 0.9em;
     padding: 0.4rem 0.6rem;
   }
 }
 
 .toc__menu {
-  font-size: 0.8em;
-  
-  a {
-    padding: 0.2rem 0.5rem;
-    line-height: 1.4;
+  // 1단계 (최상위) - 강조
+  > li > a {
+    font-size: 0.95em;
+    font-weight: 600;
+    padding: 0.3rem 0.5rem;
+    line-height: 1.3;
   }
   
-  // 하위 레벨 들여쓰기 축소
-  li ul > li a {
-    padding-inline-start: 1rem;
+  // 2단계 - 중간
+  li ul > li > a {
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 0.2rem 0.5rem 0.2rem 0.9rem;
+    line-height: 1.25;
   }
   
+  // 3단계 이하 - 작게
   li ul li ul > li a {
-    padding-inline-start: 1.4rem;
+    font-size: 0.75em;
+    font-weight: 400;
+    padding: 0.15rem 0.5rem 0.15rem 1.3rem;
+    line-height: 1.2;
+    opacity: 0.85;
   }
   
+  // 4단계 이하 - 더 작게
   li ul li ul li ul > li a {
-    padding-inline-start: 1.8rem;
+    font-size: 0.7em;
+    padding-inline-start: 1.6rem;
+    opacity: 0.8;
+  }
+  
+  // 5단계 이하
+  li ul li ul li ul li ul > li a {
+    font-size: 0.65em;
+    padding-inline-start: 1.9rem;
+    opacity: 0.75;
   }
 }
 
