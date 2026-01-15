@@ -12,6 +12,62 @@ search: false
    커스텀 스타일 오버라이드
    ========================================================================== */
 
+/* 한글 웹폰트 - Pretendard 적용 */
+html, body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, 
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", 
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", sans-serif;
+}
+
+/* 사이드바 (Author Profile) 개선 */
+.sidebar {
+  .author__avatar {
+    img {
+      border-radius: 50%;
+      border: 3px solid #f21368;  // 네온 핑크 테두리
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  .author__name {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+  }
+  
+  .author__bio {
+    font-size: 0.85em;
+    color: #aaa;
+    line-height: 1.5;
+  }
+  
+  .author__urls {
+    li {
+      margin-bottom: 0.3em;
+      
+      a {
+        font-size: 0.85em;
+        transition: color 0.2s ease;
+        
+        &:hover {
+          color: #f21368;
+        }
+      }
+    }
+  }
+}
+
+/* 사이드바 위치 조정 (author profile) */
+.sidebar__right {
+  margin-bottom: 1em;
+}
+
 /* 본문 폰트 크기 조정 - 제목과 본문 텍스트 구분 강화 */
 .page__content {
   // 본문 기본 폰트 크기 축소

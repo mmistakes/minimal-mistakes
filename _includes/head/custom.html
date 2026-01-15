@@ -1,5 +1,23 @@
 <!-- start custom head snippets -->
 
+<!-- Pretendard 한글 웹폰트 -->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+<!-- 읽기 진행률 바 스타일 -->
+<style>
+  .reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #f21368, #ff6b9d);
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+    box-shadow: 0 0 10px rgba(242, 19, 104, 0.5);
+  }
+</style>
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

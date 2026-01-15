@@ -1,3 +1,20 @@
 <!-- start custom footer snippets -->
 
+<!-- 읽기 진행률 바 -->
+<div class="reading-progress-bar"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const progressBar = document.querySelector('.reading-progress-bar');
+  
+  if (progressBar) {
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+  }
+});
+</script>
+
 <!-- end custom footer snippets -->
