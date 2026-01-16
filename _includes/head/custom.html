@@ -180,6 +180,75 @@
   [data-theme="light"] .highlight code {
     color: #e0e0e0 !important;
   }
+  
+  /* 라이트 모드 - 목록 화면 게시물 메타 정보 */
+  [data-theme="light"] .archive__item-excerpt {
+    color: #555 !important;
+  }
+  
+  [data-theme="light"] .page__meta,
+  [data-theme="light"] .page__meta-readtime,
+  [data-theme="light"] .page__date,
+  [data-theme="light"] .archive__item time {
+    color: #666 !important;
+  }
+  
+  [data-theme="light"] .page__meta-sep {
+    color: #999 !important;
+  }
+  
+  /* 다크 모드 - 텍스트 선택(드래그) 색상 */
+  ::selection {
+    background-color: rgba(242, 19, 104, 0.5) !important;
+    color: #fff !important;
+  }
+  
+  ::-moz-selection {
+    background-color: rgba(242, 19, 104, 0.5) !important;
+    color: #fff !important;
+  }
+  
+  /* 라이트 모드 - 텍스트 선택 색상 */
+  [data-theme="light"] ::selection {
+    background-color: rgba(209, 10, 80, 0.3) !important;
+    color: #1a1a1a !important;
+  }
+  
+  [data-theme="light"] ::-moz-selection {
+    background-color: rgba(209, 10, 80, 0.3) !important;
+    color: #1a1a1a !important;
+  }
+  
+  /* 사이드바 팔로우 드롭다운 - 작은 화면에서 숨김 */
+  @media (max-width: 64em) {
+    .author__urls-wrapper .author__urls.social-icons {
+      display: none !important;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: #1a1a1a;
+      border: 1px solid rgba(242, 19, 104, 0.3);
+      border-radius: 12px;
+      padding: 1em;
+      min-width: 200px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons.is--visible {
+      display: flex !important;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    
+    /* 라이트 모드 드롭다운 */
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons {
+      background: #fff;
+      border-color: rgba(209, 10, 80, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+  }
 </style>
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->

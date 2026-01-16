@@ -701,3 +701,172 @@ pre:not(.highlight) {
     }
   }
 }
+
+/* ==========================================================================
+   라이트 모드 - 목록 화면 게시물 메타 정보 (날짜, 읽기 시간)
+   ========================================================================== */
+
+[data-theme="light"] {
+  // 아카이브 리스트 게시물 메타
+  .archive__item-excerpt,
+  .page__meta,
+  .page__meta-readtime,
+  .page__date {
+    color: #666 !important;
+  }
+  
+  .page__meta-sep {
+    color: #999 !important;
+  }
+  
+  // 홈/목록 페이지 게시물 정보
+  .archive__item {
+    time, 
+    .page__meta,
+    .read-time {
+      color: #666 !important;
+    }
+  }
+  
+  // 본문 하단 메타 정보
+  .page__footer-follow,
+  .page__footer-copyright {
+    color: #666 !important;
+  }
+}
+
+/* ==========================================================================
+   다크 모드 - 텍스트 선택(드래그) 색상
+   ========================================================================== */
+
+// 다크 모드 텍스트 선택 스타일
+::selection {
+  background-color: rgba(242, 19, 104, 0.5);
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: rgba(242, 19, 104, 0.5);
+  color: #fff;
+}
+
+// 라이트 모드 텍스트 선택 스타일
+[data-theme="light"] {
+  ::selection {
+    background-color: rgba(209, 10, 80, 0.3);
+    color: #1a1a1a;
+  }
+  
+  ::-moz-selection {
+    background-color: rgba(209, 10, 80, 0.3);
+    color: #1a1a1a;
+  }
+}
+
+/* ==========================================================================
+   사이드바 팔로우 드롭다운 - 반응형 & 디자인 개선
+   ========================================================================== */
+
+// 팔로우 버튼 드롭다운 컨테이너
+.author__urls-wrapper {
+  position: relative;
+  
+  // 팔로우 버튼 스타일
+  .author__urls.social-icons {
+    // 작은 화면에서는 기본적으로 숨김
+    @media (max-width: 64em) {
+      display: none !important;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: #1a1a1a;
+      border: 1px solid rgba(242, 19, 104, 0.3);
+      border-radius: 12px;
+      padding: 1em;
+      min-width: 200px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid rgba(242, 19, 104, 0.3);
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #1a1a1a;
+      }
+    }
+    
+    // 토글 시 표시
+    &.is--visible {
+      display: flex !important;
+    }
+  }
+  
+  // 팔로우 버튼
+  button.btn {
+    display: none;
+    
+    @media (max-width: 64em) {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      background: linear-gradient(135deg, #f21368, #ff6b9d);
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 0.5em 1.2em;
+      font-size: 0.85em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0 auto;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 20px rgba(242, 19, 104, 0.4);
+      }
+      
+      i, .fas, .far {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// 라이트 모드 - 팔로우 드롭다운
+[data-theme="light"] .author__urls-wrapper {
+  .author__urls.social-icons {
+    @media (max-width: 64em) {
+      background: #fff;
+      border-color: rgba(209, 10, 80, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      
+      &::before {
+        border-bottom-color: rgba(209, 10, 80, 0.2);
+      }
+      
+      &::after {
+        border-bottom-color: #fff;
+      }
+    }
+  }
+  
+  button.btn {
+    background: linear-gradient(135deg, #d10a50, #f21368);
+  }
+}
