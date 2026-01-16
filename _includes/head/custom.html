@@ -181,20 +181,166 @@
     color: #e0e0e0 !important;
   }
   
-  /* 라이트 모드 - 목록 화면 게시물 메타 정보 */
+  /* =====================================================
+     라이트 모드 - 텍스트 가독성 전체 점검 및 수정
+     ===================================================== */
+  
+  /* 기본 텍스트 색상 */
+  [data-theme="light"] p,
+  [data-theme="light"] li,
+  [data-theme="light"] span,
+  [data-theme="light"] div {
+    color: #333;
+  }
+  
+  /* 제목 색상 */
+  [data-theme="light"] h1,
+  [data-theme="light"] h2,
+  [data-theme="light"] h3,
+  [data-theme="light"] h4,
+  [data-theme="light"] h5,
+  [data-theme="light"] h6 {
+    color: #1a1a1a !important;
+  }
+  
+  /* 아카이브/목록 페이지 - "최근 포스트" 등 섹션 제목 */
+  [data-theme="light"] .archive__subtitle {
+    color: #444 !important;
+    border-bottom-color: #ddd !important;
+  }
+  
+  /* 게시물 제목 */
+  [data-theme="light"] .archive__item-title,
+  [data-theme="light"] .archive__item-title a {
+    color: #1a1a1a !important;
+  }
+  
+  [data-theme="light"] .archive__item-title a:hover {
+    color: #d10a50 !important;
+  }
+  
+  /* 게시물 요약/설명 */
   [data-theme="light"] .archive__item-excerpt {
     color: #555 !important;
   }
   
+  /* 게시물 메타 정보 (날짜, 읽기 시간) */
   [data-theme="light"] .page__meta,
   [data-theme="light"] .page__meta-readtime,
   [data-theme="light"] .page__date,
-  [data-theme="light"] .archive__item time {
+  [data-theme="light"] .archive__item time,
+  [data-theme="light"] .archive__item .page__meta {
     color: #666 !important;
   }
   
   [data-theme="light"] .page__meta-sep {
     color: #999 !important;
+  }
+  
+  /* 페이지 제목 */
+  [data-theme="light"] .page__title {
+    color: #1a1a1a !important;
+  }
+  
+  /* 브레드크럼 */
+  [data-theme="light"] .breadcrumbs,
+  [data-theme="light"] .breadcrumbs a,
+  [data-theme="light"] .breadcrumbs__list li {
+    color: #666 !important;
+  }
+  
+  [data-theme="light"] .breadcrumbs a:hover {
+    color: #d10a50 !important;
+  }
+  
+  /* 사이드바 */
+  [data-theme="light"] .sidebar .author__name {
+    background: linear-gradient(135deg, #d10a50, #f21368) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  [data-theme="light"] .sidebar .author__bio {
+    color: #666 !important;
+  }
+  
+  [data-theme="light"] .sidebar .author__urls li a {
+    color: #555 !important;
+  }
+  
+  /* 사이드바 카테고리 */
+  [data-theme="light"] .sidebar-categories .nav__items li a {
+    color: #555 !important;
+  }
+  
+  [data-theme="light"] .sidebar-categories .nav__items li a:hover {
+    color: #d10a50 !important;
+  }
+  
+  /* TOC (목차) */
+  [data-theme="light"] .toc .toc__menu a {
+    color: #555 !important;
+  }
+  
+  [data-theme="light"] .toc .toc__menu a:hover,
+  [data-theme="light"] .toc .toc__menu .active a {
+    color: #d10a50 !important;
+  }
+  
+  /* 페이지네이션 */
+  [data-theme="light"] .pagination,
+  [data-theme="light"] .pagination a,
+  [data-theme="light"] .pagination span {
+    color: #555 !important;
+  }
+  
+  /* 태그/카테고리 목록 */
+  [data-theme="light"] .taxonomy__section .taxonomy__count,
+  [data-theme="light"] .taxonomy__index a {
+    color: #555 !important;
+  }
+  
+  /* 관련 포스트 */
+  [data-theme="light"] .page__related-title {
+    color: #333 !important;
+  }
+  
+  /* Footer */
+  [data-theme="light"] .page__footer,
+  [data-theme="light"] .page__footer-follow li,
+  [data-theme="light"] .page__footer-copyright {
+    color: #666 !important;
+  }
+  
+  /* 본문 링크 구분 */
+  [data-theme="light"] .page__content a:not(.btn) {
+    color: #d10a50 !important;
+  }
+  
+  [data-theme="light"] .page__content a:not(.btn):hover {
+    text-decoration: underline;
+  }
+  
+  /* Blockquote */
+  [data-theme="light"] blockquote {
+    color: #555 !important;
+    border-left-color: #d10a50 !important;
+  }
+  
+  /* Figure caption */
+  [data-theme="light"] figcaption {
+    color: #666 !important;
+  }
+  
+  /* 공지/알림 박스 */
+  [data-theme="light"] .notice,
+  [data-theme="light"] .notice--primary,
+  [data-theme="light"] .notice--info,
+  [data-theme="light"] .notice--warning,
+  [data-theme="light"] .notice--success,
+  [data-theme="light"] .notice--danger {
+    color: #333 !important;
   }
   
   /* 다크 모드 - 텍스트 선택(드래그) 색상 */
@@ -238,8 +384,80 @@
     
     .author__urls-wrapper .author__urls.social-icons.is--visible {
       display: flex !important;
-      flex-direction: column;
-      gap: 0.5em;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8em;
+    }
+    
+    /* 드롭다운 내 첫 번째 항목 (위치 정보) - 전체 너비, 별도 줄 */
+    .author__urls-wrapper .author__urls.social-icons li:first-child {
+      flex-basis: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      margin-bottom: 0.5em !important;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid rgba(242, 19, 104, 0.2);
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:first-child a {
+      width: auto !important;
+      height: auto !important;
+      background: transparent !important;
+      border-radius: 0 !important;
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:first-child a .svg-inline--fa,
+    .author__urls-wrapper .author__urls.social-icons li:first-child a i {
+      font-size: 14px !important;
+      width: auto !important;
+      height: auto !important;
+      color: #f21368;
+      margin-right: 0.3em;
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:first-child a span {
+      display: inline !important;
+      color: #ccc;
+      font-size: 0.85em;
+    }
+    
+    /* 드롭다운 내 소셜 링크들 (2번째 이후) - 한 줄에 아이콘만 */
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) {
+      display: inline-flex !important;
+      margin: 0 !important;
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px !important;
+      height: 36px !important;
+      border-radius: 50% !important;
+      background: rgba(242, 19, 104, 0.1) !important;
+      transition: all 0.3s ease;
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a:hover {
+      background: #f21368 !important;
+      transform: scale(1.1);
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a:hover .svg-inline--fa,
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a:hover i {
+      color: #fff !important;
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a .svg-inline--fa,
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a i {
+      font-size: 20px !important;
+      width: 20px !important;
+      height: 20px !important;
+      color: #f21368;
+    }
+    
+    .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a span:not(.svg-inline--fa):not([class*="fa-"]) {
+      display: none !important;
     }
     
     /* 라이트 모드 드롭다운 */
@@ -247,6 +465,32 @@
       background: #fff;
       border-color: rgba(209, 10, 80, 0.2);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:first-child {
+      border-bottom-color: rgba(209, 10, 80, 0.15);
+    }
+    
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:first-child a .svg-inline--fa,
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:first-child a i {
+      color: #d10a50;
+    }
+    
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:first-child a span {
+      color: #666;
+    }
+    
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a {
+      background: rgba(209, 10, 80, 0.1) !important;
+    }
+    
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a:hover {
+      background: #d10a50 !important;
+    }
+    
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a .svg-inline--fa,
+    [data-theme="light"] .author__urls-wrapper .author__urls.social-icons li:not(:first-child) a i {
+      color: #d10a50;
     }
   }
 </style>
