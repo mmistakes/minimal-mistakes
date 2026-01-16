@@ -47,7 +47,6 @@ layout: default
 
     <div class="post__content">
       {{ content }}
-      {% include advertisements.html %}
     </div>
 
     <div class="post__share">
@@ -66,6 +65,8 @@ layout: default
         </li>
       </ul>
     </div>
+
+    {% include advertisements.html %}
 
     {% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
 
