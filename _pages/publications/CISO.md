@@ -159,7 +159,53 @@ Species Observations</h2>
   </section>
 </main>
 
+<div style="
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: left;
+">
+  <div>
+    <ul style="list-style-position: inside; padding: 0;">
+      <li>🌱 <strong>Biotic interactions</strong>  play a key role in shaping species distributions</li>
+      <li>📊 Incorporating biotic variables into <strong>species distribution models (SDMs)</strong> is therefore essential</li>
+      <li>⚠️ However, biotic data are often <strong>incomplete</strong> or <strong>inconsistently available</strong>  across species and locations</li>
+    </ul>
 
+    <p style="
+      font-size: 1.2em;
+      font-weight: 500;
+      margin-top: 20px;
+    ">
+      🎯<strong>Our goal:</strong> leverage incomplete biotic information during both training and inference
+    </p>
+  </div>
+
+  <img src="/assets/images/CISO/introduction.png"
+       alt="CISO illustration"
+       style="max-width: 32%;">
+</div>
+
+<p style="
+  max-width: 70%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+">
+  🚀 We propose <strong>CISO</strong>, a multi-species deep learning approach for SDMs that can be <strong>conditioned on any available species presence or absence</strong>
+</p>
+
+<div style="text-align:center; margin-top:1.5rem;">
+  <img src="/assets/images/CISO/CISO_overview_dataset.png" 
+      alt="CISO illustration"
+      style="max-width:70%;">
+</div>
+
+<br>
 
 <!-- TODO: Replace with your overview- -->
 <section class="section hero is-light">
@@ -173,19 +219,47 @@ Species Observations</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper overview -->
 <p>
-  Species distribution models (SDMs) are widely used to predict species' geographic distributions, serving as critical tools for ecological research and conservation planning. Typically, SDMs relate species occurrences to environmental variables representing abiotic factors, such as temperature, precipitation, and soil properties. However, species distributions are also strongly influenced by biotic interactions with other species, which are often overlooked in traditional models. While some methods, such as joint species distribution models (JSDMs), partially address this limitation by incorporating biotic interactions, they often assume symmetrical pairwise relationships between species and require consistent co-occurrence data. In practice, species observations are often sparse, and the availability of information about the presence or absence of other species varies significantly across locations. To address these challenges, we propose CISO, a deep learning-based method for species distribution modeling conditioned on incomplete species observations. CISO enables predictions to be conditioned on a flexible number of species observations alongside environmental variables, accommodating the variability and incompleteness of available biotic data. We demonstrate our approach using three datasets representing different species groups: sPlotOpen for plants, SatBird for birds, and a new dataset, SatButterfly, for butterflies. Our results show that including partial biotic information improves predictive performance on spatially separate test sets. When conditioned on a subset of species within the same dataset, CISO outperforms alternative methods in predicting the distribution of the remaining species, for plants and birds. Furthermore, we show that combining and conditioning on observations from multiple datasets can improve the prediction of species occurrences in scenarios with sufficient co-occurrences between datasets to train CISO effectively. Our results show that CISO is a promising ecological tool, capable of incorporating incomplete biotic information and identifying potential interactions between species from disparate taxa.
+  Species distribution models (SDMs) are widely used to predict species' geographic distributions, serving as critical tools for ecological research and conservation planning. Typically, SDMs relate species occurrences to environmental variables representing abiotic factors, such as temperature, precipitation, and soil properties. However, species distributions are also strongly influenced by biotic interactions with other species, which are often overlooked in traditional models. While some methods, such as joint species distribution models (JSDMs), partially address this limitation by incorporating biotic interactions, they often assume symmetrical pairwise relationships between species and require consistent co-occurrence data. In practice, species observations are often sparse, and the availability of information about the presence or absence of other species varies significantly across locations. To address these challenges, we propose <strong>CISO</strong>, a deep learning-based method for species distribution modeling <strong>C</strong>onditioned on <strong>I</strong>ncomplete <strong>S</strong>pecies <strong>O</strong>bservations. CISO enables predictions to be conditioned on a flexible number of species observations alongside environmental variables, accommodating the variability and incompleteness of available biotic data. We demonstrate our approach using three datasets representing different species groups: sPlotOpen for plants, SatBird for birds, and a new dataset, SatButterfly, for butterflies. Our results show that including partial biotic information improves predictive performance on spatially separate test sets. When conditioned on a subset of species within the same dataset, CISO outperforms alternative methods in predicting the distribution of the remaining species, for plants and birds. Furthermore, we show that combining and conditioning on observations from multiple datasets can improve the prediction of species occurrences in scenarios with sufficient co-occurrences between datasets to train CISO effectively. Our results show that CISO is a promising ecological tool, capable of incorporating incomplete biotic information and identifying potential interactions between species from disparate taxa.
 </p>
 
-<div style="text-align:center; margin-top:1.5rem;">
-  <img src="/assets/images/ciso/CISO_overview_dataset.png" 
-      alt="CISO illustration"
-      style="max-width:100%; height:auto; border-radius:10px;">
-</div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<div style="text-align: center; margin-top: 1.5rem;">
+  <img src="/assets/images/CISO/architecture.png" 
+       alt="CISO illustration"
+       style="max-width: 60%;">
+
+  <h5 class="subtitle" style="margin-top: 1.8rem;">
+    <strong>CISO architecture overview</strong>
+  </h5>
+
+  <ul style="
+    max-width: 70%;
+    margin: 0.8rem auto 0 auto;
+    text-align: left;
+    list-style-position: inside;
+  ">
+    <li>🧩 Environmental variables and available species observations are encoded as tokens and processed by a transformer, enabling <strong>non-linear combination of abiotic and biotic information</strong></li>
+    <li>🎭 During training, <strong>species observations are randomly masked</strong> to simulate incomplete observation scenarios (masked modeling). The model learns to predict the presence or absence of the remaining species</li>
+    <li>🔍 At inference time, CISO can be <strong>conditioned on any subset of available species observations</strong> to predict the occurrence of target species</li>
+  </ul>
+</div>
+
+<p style="
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+">
+  📄 Check out the <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70238" target="_blank"><strong>paper</strong></a> 
+  and 💻 <a href="https://github.com/RolnickLab/CISO-SDM" target="_blank"><strong>code</strong></a> for more details!
+</p>
+
 <!-- End paper overview -->
 
 
