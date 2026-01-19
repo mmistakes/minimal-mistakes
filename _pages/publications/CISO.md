@@ -93,7 +93,7 @@ Species Observations</h2>
   </span>
   </div>
   <div class="is-size-5 publication-authors" style="margin-top: -2rem;">
-  <span class="author-block"><br>Methods in Ecology and Evolution (2026), in press</span>
+  <span class="author-block"><br>Methods in Ecology and Evolution (2026)</span>
   </div>
 </div>
 
@@ -122,7 +122,7 @@ Species Observations</h2>
   </span>
 
   <span class="link-block">
-    <a href="https://arxiv.org/abs/2508.06704" target="_blank"
+    <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70238" target="_blank"
       class="external-link button is-normal is-rounded is-dark">
       <span class="icon">
         <i class="fas fa-file-alt"></i>

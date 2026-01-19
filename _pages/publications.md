@@ -27,11 +27,11 @@ selected_publications:
     title: "CISO: Species Distribution Modeling Conditioned on Incomplete Species Observations"
     excerpt: >
         Hager Radi Abdelwahed\*, Mélisande Teng\*, **Robin Zbinden**\*, Laura Pollock, Hugo Larochelle, Devis Tuia, David Rolnick <br>
-        *Methods in Ecology and Evolution* in press (2026) <br>
+        *Methods in Ecology and Evolution* (2026) <br>
         <span class="tight-links">
             **🌐 <a href="/publications/ciso/" target="_blank"
           rel="noopener noreferrer">Webpage</a> &nbsp;·&nbsp;**
-          **📄 <a href="https://arxiv.org/abs/2508.06704" target="_blank"
+          **📄 <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70238" target="_blank"
           rel="noopener noreferrer">Paper</a> &nbsp;·&nbsp;**
           **💻 <a href="https://github.com/RolnickLab/CISO-SDM" target="_blank"
           rel="noopener noreferrer">Code</a> &nbsp;·&nbsp;**
@@ -82,11 +82,11 @@ publications:
     title: "CISO: Species Distribution Modeling Conditioned on Incomplete Species Observations"
     excerpt: >
         Hager Radi Abdelwahed\*, Mélisande Teng\*, **Robin Zbinden**\*, Laura Pollock, Hugo Larochelle, Devis Tuia, David Rolnick <br>
-        *Methods in Ecology and Evolution* in press (2026) <br>
+        *Methods in Ecology and Evolution* (2026) <br>
         <span class="tight-links">
             **🌐 <a href="/publications/ciso/" target="_blank"
           rel="noopener noreferrer">Webpage</a> &nbsp;·&nbsp;**
-          **📄 <a href="https://arxiv.org/abs/2508.06704" target="_blank"
+          **📄 <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70238" target="_blank"
           rel="noopener noreferrer">Paper</a> &nbsp;·&nbsp;**
           **💻 <a href="https://github.com/RolnickLab/CISO-SDM" target="_blank"
           rel="noopener noreferrer">Code</a> &nbsp;·&nbsp;**
