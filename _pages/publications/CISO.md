@@ -110,6 +110,15 @@ Species Observations</h2>
       <span>Paper</span>
     </a>
   </span>-->
+  <span class="link-block">
+    <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70238" target="_blank"
+      class="external-link button is-normal is-rounded is-dark">
+      <span class="icon">
+        <i class="fas fa-file-pdf"></i>
+      </span>
+      <span>Paper</span>
+    </a>
+  </span>
 
   <span class="link-block">
     <a href="https://github.com/RolnickLab/CISO-SDM" target="_blank"
@@ -118,16 +127,6 @@ Species Observations</h2>
         <i class="fab fa-github"></i>
       </span>
       <span>Code</span>
-    </a>
-  </span>
-
-  <span class="link-block">
-    <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70238" target="_blank"
-      class="external-link button is-normal is-rounded is-dark">
-      <span class="icon">
-        <i class="fas fa-file-alt"></i>
-      </span>
-      <span>arXiv</span>
     </a>
   </span>
 
