@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "2026년 1월 생성형 AI 트렌드 - 헬스케어 AI, 에이전틱 AI, 그리고 엣지의 부상"
+title:  "2026년 1월 2주차 생성형 AI 트렌드 - 헬스케어 AI, 에이전틱 AI, 그리고 엣지의 부상"
 categories: GEN_AI
 tag: [ai, gen_ai, openai, gpt, aws, nova, nxp, agentic_ai, healthcare, edge_ai]
 ---
