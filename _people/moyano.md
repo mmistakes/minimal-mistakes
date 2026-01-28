@@ -11,7 +11,7 @@ role_title: "PhD Student"
 grad_year:
 
 # Contact & profiles
-email: "derya.akbaba@liu.se"
+email: "daniela.moyano-davila@liu.se"
 website: "https://dmoyanodavila.myportfolio.com/daniela-moyano-1"
 scholar: "https://scholar.google.com/citations?user=mcA9gUoAAAAJ"
 orcid: "0000-0002-3454-1070"
@@ -31,6 +31,7 @@ tags: ["feminist visualization ", "data feminism", "critical data visualization"
 
 # Media
 image: "/assets/images/portraits-team/moyano.jpeg"
-image_alt: "Photo of Daniela Moyano-D‡vila"
+image_alt: "Photo of Daniela Moyano-Davila"
 ---
+
 
