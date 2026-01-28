@@ -30,8 +30,9 @@ interest: "Feminist visualization, data feminism, critical data visualization."
 tags: ["feminist visualization ", "data feminism", "critical data visualization"]
 
 # Media
-image: "/assets/images/portraits-team/moyano.jpeg"
+image: "/assets/images/portraits-team/moyano.jpg"
 image_alt: "Photo of Daniela Moyano-Davila"
 ---
+
 
 
