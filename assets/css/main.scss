@@ -15,11 +15,19 @@ search: false
   visibility: visible !important;
 }
 
+.nave__list label {
+  display: none !important;
+}
+
 /* 토글 버튼 영역이 차지하던 공간 제거 */
 .nav__title {
   display: none !important;
 }
 
+/* 체크박스 숨기기 */
+#ac-toc {
+  display: none !important;
+}
 
 /* 사이드바 메뉴 강제 노출 설정 */
 .nav__items {
