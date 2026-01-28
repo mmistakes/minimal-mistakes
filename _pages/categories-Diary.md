@@ -1,8 +1,9 @@
 ---
 title: "Diary"
-layout: archive
+layout: category
 permalink: /categories/Diary/
 taxonomy: Diary
+author_profile: true
 sidebar:
   nav: "docs"
 ---
