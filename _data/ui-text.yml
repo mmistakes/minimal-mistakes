@@ -12,7 +12,7 @@ en: &DEFAULT_EN
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "Toggle menu"
+  menu_label                 : "MENU"
   search_label               : "Toggle search"
   toc_label                  : "On this page"
   ext_link_label             : "Direct link"
