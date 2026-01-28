@@ -8,3 +8,17 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* 사이드바 메뉴 강제 노출 설정 */
+.nav__items {
+  display: block !important; /* 숨겨진 리스트를 강제로 표시 */
+  visibility: visible !important;
+}
+
+/* 모바일 화면에서 사이드바가 너무 좁게 나오는 현상 방지 */
+@media (max-width: 63.9375em) {
+  .sidebar {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 2em;
+  }
+}
