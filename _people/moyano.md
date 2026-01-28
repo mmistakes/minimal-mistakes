@@ -2,8 +2,8 @@
 # Identity
 key: "moyano"
 first_name: "Daniela"
-last_name: "Akbaba"
-title: "Derya Akbaba"          # display name
+last_name: "Moyano-Dávila"
+title: "Daniela Moyano-Dávila"          # display name
 
 # Role & grouping
 role: student                  # faculty | student | guest | alumni
@@ -12,9 +12,9 @@ grad_year:
 
 # Contact & profiles
 email: "derya.akbaba@liu.se"
-website: "https://gotdairyya.github.io/"
+website: "https://dmoyanodavila.myportfolio.com/daniela-moyano-1"
 scholar: "https://scholar.google.com/citations?user=mcA9gUoAAAAJ"
-orcid: "0000-0001-9419-3402"
+orcid: "0000-0002-3454-1070"
 
 # Affiliation (optional but kept from your file)
 department: "ITN"
@@ -26,11 +26,10 @@ address: |
   601 74 Norrk√∂ping, Sweden
 
 # Meta
-interest: "Feminist epistemology, visualization, communicating science."
-tags: ["feminist epistemology", "visualization", "communicating science", "cats"]
+interest: "Feminist visualization, data feminism, critical data visualization."
+tags: ["feminist visualization ", "data feminism", "critical data visualization"]
 
 # Media
-image: "/assets/images/portraits-team/akbaba.jpg"
-image_alt: "Photo of Derya Akbaba"
+image: "/assets/images/portraits-team/moyano.jpeg"
+image_alt: "Photo of Daniela Moyano-Dávila"
 ---
-
