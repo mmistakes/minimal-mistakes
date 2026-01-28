@@ -1,8 +1,9 @@
 ---
 title: "Cloud Computing"
-layout: archive
+layout: category
 permalink: /categories/Cloud-Computing/
-taxonomy: Cloud Computing
+taxonomy: Cloud-Computing
+author_profile: true
 sidebar:
   nav: "docs"
 ---
