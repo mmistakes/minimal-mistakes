@@ -9,22 +9,19 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-
-// 커스텀 CSS
+/* 토글 버튼 완전히 숨기기 */
 .greedy-nav__toggle {
   display: none !important;
 }
 
+/* 모바일에서도 네비게이션 항상 보이기 */
 .greedy-nav .visible-links {
   display: flex !important;
 }
 
-// 사이드바 항상 보이기
-.sidebar {
-  position: sticky !important;
-  top: 2em;
-}
-
-.sidebar nav {
+.greedy-nav .hidden-links {
   display: block !important;
+  position: static !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
