@@ -1,15 +1,34 @@
-# _data/navigation.yml 전체 내용
+# 상단 메뉴 (기존)
 main:
   - title: "About"
-    url: categories/About/
+    url: /categories/About
+  - title: "Diary"
+    url: /categories/Diary/
+  - title: "Computer Science"
+    url: /categories/Computer-Science/
+    children:
+      - title: "Operating Systems"
+        url: /categories/Operating-System/
+      - title: "Cloud Computing"
+        url: /categories/Cloud-Computing/
+  - title: "Data Science"
+    url: /categories/Data-Science/
+    children:
+      - title: "Data"
+        url: /categories/Data/
+      - title: "Data Engineering"
+        url: /categories/Data-Engineering/
+  - title: "AI"
+    url: /categories/AI/
 
+# 왼쪽 사이드바 메뉴 (필요하면 유지, 아니면 삭제)
 docs:
   - title: "Diary"
     url: /categories/Diary/
   - title: "Computer Science"
     children:
-      - title: "Operating systems"
-        url: /categories/Operating-Systems/
+      - title: "Operating Systems"
+        url: /categories/Operating-System/
       - title: "Cloud Computing"
         url: /categories/Cloud-Computing/
   - title: "Data Science"
