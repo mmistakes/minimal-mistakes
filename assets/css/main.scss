@@ -7,28 +7,3 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-
-
-
-/* ====사이드바 항상 표시 및 토글 버튼 숨기기==== */
-.sidebar {
-  @media (max-width: 63.9375em) {
-    display: block !important;
-    width: 100% !important;
-    position: relative !important;
-    float: none !important;
-  }
-}
-
-.nav__title {
-  @media (max-width: 63.9375em) {
-    display: none !important; /* "Toggle menu" 버튼 숨기기 */
-  }
-}
-
-.nav__list {
-  @media (max-width: 63.9375em) {
-    display: block !important; /* 모바일에서도 리스트 펼치기 */
-  }
-}
