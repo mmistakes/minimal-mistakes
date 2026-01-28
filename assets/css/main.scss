@@ -8,3 +8,23 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* 사이드바 메뉴 항상 표시 - 강제 적용 */
+.nav__list {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+}
+
+.nav__title {
+  display: block !important;
+}
+
+.nav__items {
+  display: block !important;
+}
+
+/* 토글 버튼 완전히 제거 */
+button.greedy-nav__toggle {
+  display: none !important;
+}
