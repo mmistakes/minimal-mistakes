@@ -1,4 +1,3 @@
-
 ---
 title: "Baking"
 layout: category
