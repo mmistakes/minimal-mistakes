@@ -8,33 +8,3 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
-/* ===모바일 및 작은 화면에서도 메뉴 리스트를 항상 펼침 ===*/
-.nav__items {
-  display: block !important;
-}
-
-/* 토글 버튼(레이블) 영역이 남긴 여백 제거 */
-.nav__list label {
-  display: none !important;
-}
-
-/* 체크박스 숨기기 */
-#ac-toc {
-  display: none !important;
-}
-
-/* =======사이드바 메뉴 강제 노출 설정==== */
-.nav__items {
-  display: block !important; /* 숨겨진 리스트를 강제로 표시 */
-  visibility: visible !important;
-}
-
-/* 모바일 화면에서 사이드바가 너무 좁게 나오는 현상 방지 */
-@media (max-width: 63.9375em) {
-  .sidebar {
-    display: block !important;
-    width: 100% !important;
-    margin-bottom: 2em;
-  }
-}
