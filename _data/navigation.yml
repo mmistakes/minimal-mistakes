@@ -5,19 +5,9 @@ main:
   - title: "Diary"
     url: /categories/Diary/
   - title: "Computer Science"
-    url: /categories/Computer-Science/
-    children:
-      - title: "Operating Systems"
-        url: /categories/Operating-System/
-      - title: "Cloud Computing"
-        url: /categories/Cloud-Computing/
+    url: /computer-science/
   - title: "Data Science"
-    url: /categories/Data-Science/
-    children:
-      - title: "Data"
-        url: /categories/Data/
-      - title: "Data Engineering"
-        url: /categories/Data-Engineering/
+    url: /data-science/
   - title: "AI"
     url: /categories/AI/
 
