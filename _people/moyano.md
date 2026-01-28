@@ -2,8 +2,8 @@
 # Identity
 key: "moyano"
 first_name: "Daniela"
-last_name: "Moyano-D�vila"
-title: "Daniela Moyano-D�vila"          # display name
+last_name: "Moyano-Davila"
+title: "Daniela Moyano-Davila"          # display name
 
 # Role & grouping
 role: student                  # faculty | student | guest | alumni
@@ -21,9 +21,9 @@ department: "ITN"
 division: "MIT"
 organization: "LiU"
 address: |
-  Linköpings Universitet <br>
+  LinkÃ¶pings Universitet <br>
   Kopparhammaren 2, MIT/ITN <br>
-  601 74 Norrköping, Sweden
+  601 74 NorrkÃ¶ping, Sweden
 
 # Meta
 interest: "Feminist visualization, data feminism, critical data visualization."
@@ -31,5 +31,6 @@ tags: ["feminist visualization ", "data feminism", "critical data visualization"
 
 # Media
 image: "/assets/images/portraits-team/moyano.jpeg"
-image_alt: "Photo of Daniela Moyano-D�vila"
+image_alt: "Photo of Daniela Moyano-D‡vila"
 ---
+
