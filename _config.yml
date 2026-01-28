@@ -19,10 +19,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Lenn Dev's Tech Blog"
-title_separator          : #"-"
-subtitle                 : Learning & Development Journey # site tagline that appears below site title in masthead
-name                     : "Lenn"
-description              : "A technical blog documenting my learning experience in software development."
+title_separator          : "|"
+subtitle                 : "Learning & Development Journey" # site tagline that appears below site title in masthead
+name                     : "Lena Kwon"
+description              : "A technical blog documenting my learning experience."
 url                      : "https://lenn-dev.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "lenn-dev/lenn-dev.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,12 +114,12 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author 내 프로필
+# Author 내 프로필
 author:
   name             : "Lena"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Do small things in a great way."
-  location         : "Victoria,Australia"
+  location         : "Melbourne,Australia"
   email            : "lenn.dev.oo@gmail.com"
   links:
     - label: "Email"
@@ -315,9 +315,27 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 
 # Defaults
 defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
   - scope:
       path: "_pages"
       type: pages
