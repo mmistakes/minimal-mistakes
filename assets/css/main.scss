@@ -9,37 +9,45 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-/* 모바일 화면에서도 사이드바 메뉴를 항상 펼침 */
-.nav__list {
-  display: block !important;
-  visibility: visible !important;
-}
-
-.nave__list label {
-  display: none !important;
-}
-
-/* 토글 버튼 영역이 차지하던 공간 제거 */
-.nav__title {
-  display: none !important;
-}
-
-/* 체크박스 숨기기 */
-#ac-toc {
-  display: none !important;
-}
-
-/* 사이드바 메뉴 강제 노출 설정 */
-.nav__items {
-  display: block !important; /* 숨겨진 리스트를 강제로 표시 */
-  visibility: visible !important;
-}
-
-/* 모바일 화면에서 사이드바가 너무 좁게 나오는 현상 방지 */
-@media (max-width: 63.9375em) {
-  .sidebar {
-    display: block !important;
-    width: 100% !important;
-    margin-bottom: 2em;
+/* 사이드바 항상 표시 */
+.sidebar {
+  @include breakpoint($large) {
+    float: left;
+    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
   }
+
+  @include breakpoint($x-large) {
+    width: calc(#{$right-sidebar-width} - 1em);
+  }
+}
+
+/* 모바일에서도 사이드바 항상 표시 */
+.sidebar__right {
+  margin-bottom: 1em;
+  
+  @include breakpoint(max-width $large - 1px) {
+    position: relative !important;
+    float: none;
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* MENU 토글 버튼 숨기기 */
+.greedy-nav__toggle {
+  display: none !important;
+}
+
+/* 네비게이션 항상 표시 */
+.greedy-nav .visible-links {
+  display: flex !important;
+}
+
+.greedy-nav .hidden-links {
+  position: static !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
 }
