@@ -1,6 +1,6 @@
 ---
 # Identity
-key: "akbaba"
+key: "moyano"
 first_name: "Daniela"
 last_name: "Akbaba"
 title: "Derya Akbaba"          # display name
@@ -33,3 +33,4 @@ tags: ["feminist epistemology", "visualization", "communicating science", "cats"
 image: "/assets/images/portraits-team/akbaba.jpg"
 image_alt: "Photo of Derya Akbaba"
 ---
+
