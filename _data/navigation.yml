@@ -1,15 +1,17 @@
 # 상단 메뉴 (기존)
 main:
+  - title: "Home"
+    url: /
   - title: "About"
-    url: /categories/About
+    url: /about/
   - title: "Diary"
-    url: /categories/Diary/
-  - title: "Computer Science"
-    url: /computer-science/
-  - title: "Data Science"
-    url: /data-science/
-  - title: "AI"
-    url: /categories/AI/
+    url: /diary/
+  - title: "Blog"
+    url: /blog/
+  - title: "Projects"
+    url: /projects/
+  - title: "Studies"
+    url: /studies/
 
 # 왼쪽 사이드바 메뉴 (필요하면 유지, 아니면 삭제)
 docs:
