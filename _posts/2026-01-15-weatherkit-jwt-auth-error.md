@@ -33,9 +33,9 @@ Error Domain=WeatherDaemon.WDSJWTAuthenticatorServiceListener.Errors Code=2 "(nu
 At first glance, this feels like a bug in your networking or WeatherKit usage.  
 It isn’t.
 
-If your Swift code is almost certainly **correct**, there are other reasons for this error to crop up.
+Inspite of the Swift code being **correct**, there are other reasons for this error to crop up.
 
-This error is caused by a **missing configuration step** in Apple’s signing and entitlement pipeline and it’s one of the most common (and frustrating) WeatherKit setup issues.
+One such reason is a **missing configuration step** in Apple’s signing and entitlement pipeline and it’s one of the most common (and frustrating) WeatherKit setup issues.
 
 ---
 
@@ -53,9 +53,9 @@ If *any* part of this chain is missing, WeatherKit fails immediately, which is e
 
 In short:
 
-> ❌ This is **not a runtime bug**  
-> ❌ This is **not a simulator issue**  
-> ✅ This is a **capability + App Services configuration problem**
+> This is **not a runtime bug** since the code is pretty standard for simple requests.    
+> This is **not a simulator issue** as other's online will likely attribute it to i.e. not testing on a real device.   
+> ✅ This is a **capability + App Services configuration problem** which is not immediately clear!
 
 ---
 
@@ -135,9 +135,9 @@ Do a full reset to clear cached signing data:
 3. Restart the **Simulator**
 4. Relaunch Xcode and run again
 
-> **Strong recommendation:**  
-> Test on a **physical iOS device** for the first successful run.  
-> Simulators occasionally fail WeatherKit authentication even when everything is configured correctly.
+> **Note:**  
+> Simulators may occasionally fail WeatherKit authentication even when everything is configured correctly.    
+> Although it is recommended to test on a **physical iOS device** but in my experience I've had success with the simulator just as well.
 
 ---
 
@@ -165,9 +165,8 @@ Failed to generate jwt token for com.apple.weatherkit.authservice
 
 Remember this:
 
-> ✔️ Your Swift code is probably fine  
-> ✔️ This is a configuration issue  
-> ✔️ App Services **must** be enabled, not just capabilities
+> If your Swift code is probably fine, this is very likely a configuration issue.   
+> Ensure that App Services **must** be enabled, not just capabilities.   
 
 This checklist should save you hours of confusion the next time you wire up WeatherKit.
 

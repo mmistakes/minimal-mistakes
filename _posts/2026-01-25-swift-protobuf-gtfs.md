@@ -124,10 +124,10 @@ class TransitFetcher {
 
 Working with GTFS-Realtime might seem intimidating because of the binary format, but the workflow is standardized:
 
-> ✔️ **Install** `protoc` and the Swift plugin  
-> ✔️ **Generate** the `.swift` file from the standard `.proto` blueprint  
-> ✔️ **Import** the `SwiftProtobuf` package  
-> ✔️ **Decode** the data using the generated structs
+> **Install** `protoc` and the Swift plugin  
+> **Generate** the `.swift` file from the standard `.proto` blueprint  
+> **Import** the `SwiftProtobuf` package  
+> **Decode** the data using the generated structs
 
 Once this pipeline is set up, you can easily expand your app to handle trip updates (delays) and service alerts using the exact same logic.
 
