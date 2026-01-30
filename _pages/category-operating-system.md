@@ -1,6 +1,6 @@
 ---
 title: "Operating Systems"
-layout: single
+layout: page
 permalink: /categories/Operating-System/
 taxonomy: Operating-System
 author_profile: true

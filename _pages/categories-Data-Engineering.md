@@ -1,6 +1,6 @@
 ---
 title: "Data Engineering"
-layout: single  # page  → single로 변경
+layout: page
 permalink: /categories/Data-Engineering/
 taxonomy: Data Engineering
 author_profile: true

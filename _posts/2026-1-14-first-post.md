@@ -1,6 +1,6 @@
 ---
 title: "Starting My Technical Learning Blog"
-layout: single
+layout: single # pagination 나타나는 설정
 categories:
   - Diary
 tags:

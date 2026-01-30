@@ -1,6 +1,7 @@
 ---
 title: "Python 유용한 팁 10가지"
 date: 2026-01-28
+layout: single
 categories:
   - Blog
   - blog-tips

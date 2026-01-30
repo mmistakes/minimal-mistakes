@@ -1,6 +1,7 @@
 ---
 title: "첫 베이킹 도전기"
 date: 2026-01-28
+layout: single
 categories:
   - Diary
   - diary-baking

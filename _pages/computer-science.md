@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: page
 title: "Computer Science"
 permalink: /computer-science/
 author_profile: true

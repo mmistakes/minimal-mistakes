@@ -1,5 +1,6 @@
 ---
 title: "Kaggle Titanic Competition"
+layout: single
 date: 2026-01-28
 categories:
   - Projects

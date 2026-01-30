@@ -1,6 +1,6 @@
 ---
 title: "OMSCS - Systems"
-layout: single
+layout: page
 permalink: /categories/study-omscs-systems/
 taxonomy: study-omscs-systems
 author_profile: true

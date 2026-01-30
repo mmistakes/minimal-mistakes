@@ -1,6 +1,6 @@
 ---
 title: "knou - Statistics"
-layout: single
+layout: page
 permalink: /categories/study-knou-stats/
 taxonomy: study-knou-stats
 author_profile: true

@@ -1,6 +1,6 @@
 ---
 title: "Life in Australia"
-layout: single
+layout: page
 permalink: /categories/diary-australia/
 taxonomy: diary-australia
 author_profile: true

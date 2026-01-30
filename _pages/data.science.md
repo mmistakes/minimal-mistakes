@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: page
 title: "Data Science"
 permalink: /data-science/
 author_profile: true
