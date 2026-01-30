@@ -25,3 +25,14 @@ search: false
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+
+/* 페이지 타입에서 pagination 숨기기 */
+.page__content .pagination {
+  display: none;
+}
+
+/* 포스트에서만 pagination 표시 */
+.single .page__content .pagination {
+  display: block;
+}
