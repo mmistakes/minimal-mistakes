@@ -340,11 +340,12 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
 
   # _pages
   - scope:
-      path: ""
-      type: posts
+      path: "pages"
+      type: pages
     values:
       layout: single
       author_profile: true
