@@ -6,6 +6,7 @@ author_profile: true
 toc: true
 toc_label: "Contents"
 toc_icon: "user"
+pagination: false
 ---
 
 ## 👋 Hi, I'm Lena Kwon!

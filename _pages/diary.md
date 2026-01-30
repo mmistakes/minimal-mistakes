@@ -3,6 +3,7 @@ title: "Diary"
 layout: single
 permalink: /diary/
 author_profile: true
+pagination: false
 ---
 
 ## 📔 My Personal Diary

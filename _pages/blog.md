@@ -3,6 +3,7 @@ title: "Blog"
 layout: single
 permalink: /blog/
 author_profile: true
+pagination: false
 ---
 
 ## 📝 Technical Blog

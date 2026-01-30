@@ -5,6 +5,7 @@ permalink: /journey/
 author_profile: true
 toc: true
 toc_label: "Journey"
+pagination: false
 ---
 
 ## 🌱 From Setbacks to Growth

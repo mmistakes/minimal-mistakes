@@ -3,6 +3,7 @@ title: "Studies"
 layout: single
 permalink: /studies/
 author_profile: true
+pagination: false
 ---
 
 ## 📚 Academic Studies
