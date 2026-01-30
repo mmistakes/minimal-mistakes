@@ -1,6 +1,6 @@
 ---
 title: "Tips"
-layout: category
+layout: single
 permalink: /categories/blog-tips/
 taxonomy: blog-tips
 author_profile: true

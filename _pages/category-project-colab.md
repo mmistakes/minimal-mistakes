@@ -1,6 +1,6 @@
 ---
 title: "Colab Demos"
-layout: category
+layout: single
 permalink: /categories/project-colab/
 taxonomy: project-colab
 author_profile: true

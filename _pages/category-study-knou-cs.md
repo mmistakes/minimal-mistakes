@@ -1,6 +1,6 @@
 ---
 title: "knou - Computer Science"
-layout: category
+layout: single
 permalink: /categories/study-knou-cs/
 taxonomy: study-knou-cs
 author_profile: true

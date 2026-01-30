@@ -1,6 +1,6 @@
 ---
 title: "Cloud Computing"
-layout: category
+layout: single
 permalink: /categories/Cloud-Computing/
 taxonomy: Cloud-Computing
 author_profile: true

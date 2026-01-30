@@ -1,6 +1,6 @@
 ---
 title: "Data"
-layout: category
+layout: single
 permalink: /categories/Data/
 taxonomy: Data
 author_profile: true
