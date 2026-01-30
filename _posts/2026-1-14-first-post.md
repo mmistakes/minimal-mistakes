@@ -5,8 +5,6 @@ categories:
   - Diary
 tags:
   - Study
-sidebar:
-  nav: "docs"
 ---
 ## Welcome
 
