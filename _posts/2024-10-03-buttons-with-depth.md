@@ -38,7 +38,7 @@ Our goal here is to create a `DepthButtonStyle` that gives a unique pressed effe
 By encapsulating the button's visual behavior into a `ButtonStyle`, you can reuse it across your app with minimal effort. Additionally, the shape and visual effect are fully customizable, giving you control over the look and feel without cluttering the button's usage code.
 
 This pattern is powerful when building interfaces that need a consistent, polished look while remaining flexible for different types of buttons.
-You can check out the complete source code on my [Patreon](https://www.patreon.com/posts/duolingo-style-110627795) or my [BuyMeACoffee](https://buymeacoffee.com/adsouza/e/304663) page.
+You can check out the complete source code on my [Patreon](https://www.patreon.com/posts/duolingo-style-110627795) or my [BuyMeACoffee](https://buymeacoffee.com/anupdsouza/e/304663) page.
 
 ---
 Consider subscribing to my [YouTube channel](https://www.youtube.com/@areaswiftyone?sub_confirmation=1) & follow me on [X(Twitter)](https://x.com/areaswiftyone). Leave a comment if you have any questions. 

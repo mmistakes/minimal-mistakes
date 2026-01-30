@@ -86,8 +86,8 @@ social:
 - {icon: "ion-logo-twitter", color: "#55acee", label: Twitter, link: "https://x.com/areaswiftyone"}
 - {icon: "ion-logo-youtube", color: "#ff0000", label: YouTube, link: "https://www.youtube.com/@areaswiftyone"}
 - {icon: "ion-logo-github", color: "#24292e", label: GitHub, link: "https://github.com/anupdsouza"}
-- {icon: "", color: "#24292e", label: BuyMeACoffee, link: "https://www.buymeacoffee.com/adsouza" }
-- {icon: "", color: "#55acee", label: Patreon, link: "https://patreon.com/adsouza"}
+- {icon: "", color: "#24292e", label: BuyMeACoffee, link: "https://www.buymeacoffee.com/anupdsouza" }
+- {icon: "", color: "#55acee", label: Patreon, link: "https://patreon.com/anupdsouza"}
 # - {icon: "ion-logo-facebook", color: "#3b5999", label: Facebook, link: "https://facebook.com"}
 # - {icon: "ion-logo-pinterest", color: "#bd081c", label: Pinterest, link: "https://pinterest.com"}
 # - {icon: "ion-logo-dribbble", color: "#ea4c89", label: Dribbble, link: "https://dribbble.com"}
