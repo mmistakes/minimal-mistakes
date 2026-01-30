@@ -246,20 +246,20 @@ paginate_path: /page:num/
 pagination:
   # Set enabled to true to use paginate v2
   # enabled: true
-  debug: false
-  collection: 'posts'
+  #debug: false
+  #collection: 'posts'
   per_page: 10
   permalink: '/page/:num/'
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: ''
-  trail:
-    before: 2
-    after: 2
+  #title: ':title - page :num'
+  #limit: 0
+  #sort_field: 'date'
+  #sort_reverse: true
+  #category: 'posts'
+  #tag: ''
+  #locale: ''
+  #trail:
+  #  before: 2
+  #  after: 2
 
 
 # Plugins (previously gems:)
