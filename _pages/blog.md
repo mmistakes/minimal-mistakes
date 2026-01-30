@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-layout: single
+layout: page  # single → page로 변경
 permalink: /blog/
 author_profile: true
 pagination: false

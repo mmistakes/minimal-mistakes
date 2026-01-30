@@ -1,6 +1,6 @@
 ---
 title: "Studies"
-layout: single
+layout: page  # single → page로 변경
 permalink: /studies/
 author_profile: true
 pagination: false

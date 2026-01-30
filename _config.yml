@@ -327,7 +327,7 @@ collections:
     permalink: /:path/
 
 
-# Defaults
+# Defaults 페이지기본값
 defaults:
   # _posts
   - scope:
@@ -342,12 +342,12 @@ defaults:
       related: true
       show_date: true
 
-  # _pages
+  # _pages - page 레이아웃(pagination 없음)
   - scope:
       path: "pages"
       type: pages
     values:
-      layout: single
+      layout: page #single -> page로 변경
       author_profile: true
       read_time: false
       comments: false

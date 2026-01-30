@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-layout: single
+layout: page  # single → page로 변경
 permalink: /projects/
 author_profile: true
 pagination: false

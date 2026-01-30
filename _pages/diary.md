@@ -1,6 +1,6 @@
 ---
 title: "Diary"
-layout: single
+layout: page  # single → page로 변경
 permalink: /diary/
 author_profile: true
 pagination: false

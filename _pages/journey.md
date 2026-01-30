@@ -1,6 +1,6 @@
 ---
 title: "My Journey"
-layout: single
+layout: page  # single → page로 변경
 permalink: /journey/
 author_profile: true
 toc: true

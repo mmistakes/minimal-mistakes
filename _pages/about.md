@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: single
+layout: page  # single → page로 변경 (_layouts/page.html)
 permalink: /about/
 author_profile: true
 toc: true
