@@ -1,0 +1,33 @@
+---
+layout: default
+title: Projects
+description: Selected projects, experiments, and apps I've built.
+permalink: /projects/
+---
+
+<!-- begin hero (same as blog page) -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col col-10 col-d-12">
+                <div class="hero__inner">
+                    <h1 class="hero__title">{{ page.title }}</h1>
+                    <p class="hero__description">{{ page.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- begin grid -->
+<div class="container">
+    <div class="row animate">
+
+        {% assign projects = site.projects | sort: "order" %}
+
+        {% for post in projects %}
+        {% include article.html %}
+        {% endfor %}
+
+    </div>
+</div>

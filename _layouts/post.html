@@ -17,6 +17,7 @@ layout: default
 
         <h1 class="post__title">{{ page.title | escape }}</h1>
 
+        {% unless page.collection == "projects" %}
         <div class="post__meta">
           <a class="post__author" href="{{site.baseurl}}/about/">By {{site.data.settings.author}}</a> • <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
           •
@@ -24,6 +25,7 @@ layout: default
             {% include reading_time.html content=page.content %}
           </span>
         </div>
+        {% endunless %}
 
       </div>
     </div>

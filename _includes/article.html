@@ -2,7 +2,9 @@
   <div class="article__inner">
 
     <div class="article__head">
+      {% unless post.collection == "projects" %}
       <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      {% endunless %}
       {% if post.image %}
       <a class="article__image" href="{{post.url | prepend: site.baseurl}}">
         <img class="lazy" data-src="{{site.baseurl}}{{post.image}}" alt="{{post.title}}">
