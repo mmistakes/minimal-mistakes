@@ -22,7 +22,7 @@ Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_med
 
 ## The Challenge
 
-Over the past few years, I’ve accumulated a few repositories. Some are experiments, others are demo apps, and many support my [YouTube](https://www.youtube.com/@areaswiftyone) tutorials. As an occasional creator, I wanted all these public facing repositores to have the same standard information in the `README.md` in addition to the standard title and description:
+Over the past few years, I’ve accumulated a few repositories. Some are experiments, others are demo apps, and many support my [YouTube](https://www.youtube.com/@areaswiftyone) tutorials. As an occasional creator, I wanted all these public facing repositories to have the some additional information in the `README.md`:
 
 *   Support and donation links
 *   Contact information and social handles
@@ -70,16 +70,16 @@ This file contains the project-specific documentation plus placeholders for the 
 
 This is the specific description for this project.
 
-{{support}}
+{% raw %}{{support}}{% endraw %}
 
 ## Features
 - Feature A
 - Feature B
 
-{{contact}}
+{% raw %}{{contact}}{% endraw %}
 ```
 
-**Flexibility is key here.** Because the script looks for specific placeholders, the injection is entirely optional. If a specific project doesn't need a support section, I simply omit the {{support}} tag from the template. I can pick and choose exactly which shared blocks appear and where they sit in the layout.
+**Flexibility is key here.** Because the script looks for specific placeholders, the injection is entirely optional. If a specific project doesn't need a support section, I simply omit the `{% raw %}{{support}}{% endraw %}` tag from the template. I can pick and choose exactly which shared blocks appear and where they sit in the layout.
 
 ---
 
@@ -100,28 +100,28 @@ with open(TEMPLATE_README) as f:
     readme_content = f.read()
 
 # 2. Inject Support Section
-if "{{support}}" in readme_content:
+if "{% raw %}{{support}}{% endraw %}" in readme_content:
     with open(SUPPORT_FILE) as f:
-        readme_content = readme_content.replace("{{support}}", f.read())
+        readme_content = readme_content.replace("{% raw %}{{support}}{% endraw %}", f.read())
 
 # 3. Inject Contact Section & Dynamic Links
-if "{{contact}}" in readme_content:
+if "{% raw %}{{contact}}{% endraw %}" in readme_content:
     with open(CONTACT_FILE) as f:
         contact_content = f.read()
 
     # Dynamically insert the current repo URL
     repo_slug = os.getenv("GITHUB_REPOSITORY", "")
     repo_url = f"https://github.com/{repo_slug}"
-    contact_content = contact_content.replace("{{repo_url}}", repo_url)
+    contact_content = contact_content.replace("{% raw %}{{repo_url}}{% endraw %}", repo_url)
 
-    readme_content = readme_content.replace("{{contact}}", contact_content)
+    readme_content = readme_content.replace("{% raw %}{{contact}}{% endraw %}", contact_content)
 
 # 4. Write the final file
 with open("README.md", "w") as f:
     f.write(readme_content)
 ```
 
-**Extensibility:** This approach makes it incredibly easy to add future sections. If I decide later that I want a standardized "Contributing" or "License" section, I just add the file to the central repo, add a few lines to this script to check for a {{contributing}} tag, and I'm good to go.
+**Extensibility:** This approach makes it incredibly easy to add future sections. If I decide later that I want a standardized "Contributing" or "License" section, I just add the file to the central repo, add a few lines to this script to check for a `{% raw %}{{contributing}}{% endraw %}` tag, and I'm good to go.
 
 ---
 
