@@ -79,7 +79,7 @@ This is the specific description for this project.
 {{contact}}
 ```
 
-**Flexibility is key here.** Because the script looks for specific placeholders, the injection is entirely optional. If a specific project doesn't need a support section, I simply omit the `{{support}}` tag from the template. I can pick and choose exactly which shared blocks appear and where they sit in the layout.
+**Flexibility is key here.** Because the script looks for specific placeholders, the injection is entirely optional. If a specific project doesn't need a support section, I simply omit the *{{support}}* tag from the template. I can pick and choose exactly which shared blocks appear and where they sit in the layout.
 
 ---
 
@@ -121,7 +121,7 @@ with open("README.md", "w") as f:
     f.write(readme_content)
 ```
 
-**Extensibility:** This approach makes it incredibly easy to add future sections. If I decide later that I want a standardized "Contributing" or "License" section, I just add the file to the central repo, add a few lines to this script to check for a `{{contributing}}` tag, and I'm good to go.
+**Extensibility:** This approach makes it incredibly easy to add future sections. If I decide later that I want a standardized "Contributing" or "License" section, I just add the file to the central repo, add a few lines to this script to check for a *{{contributing}}* tag, and I'm good to go.
 
 ---
 
