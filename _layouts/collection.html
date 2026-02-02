@@ -61,51 +61,23 @@ layout: archive
 
 {%- elsif page.collection == "publications" -%}
 
-  {%- comment -%} Build filter controls: unique years and types from the publications collection {%- endcomment -%}
+  {%- comment -%} Build filter controls: unique types from the publications collection {%- endcomment -%}
   {%- assign all_pubs = site.publications -%}
-  {%- comment -%} Filter publications that have a year to avoid nil/integer comparison errors during sort {%- endcomment -%}
-  {%- assign pubs_with_year = all_pubs | where_exp: "item", "item.year" -%}
-  {%- assign years = pubs_with_year | map: 'year' | uniq | sort | reverse -%}
   {%- assign types = all_pubs | map: 'type' | uniq | sort -%}
-  {%- assign pubs_with_year_count = pubs_with_year | size -%}
-
-  {%- if pubs_with_year_count > 0 -%}
-    {%- assign min_year = years | last -%}
-    {%- assign max_year = years | first -%}
-  {%- else -%}
-    {%- assign min_year = site.time | date: "%Y" -%}
-    {%- assign max_year = site.time | date: "%Y" -%}
-  {%- endif -%}
 
   <style>
-    /* Small inline styles to keep the filter controls compact and on one row */
+    /* Filter controls styling */
     .pub-container{ margin-inline:auto; width:100%; max-width: var(--site-max-width, 1100px); }
     .pub-filters{ display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap; margin-bottom:1rem; width:100% }
     .pub-filters label{ margin-right:.5rem; font-weight:600 }
-  .pub-filter-type{ display:flex; align-items:center; gap:.5rem }
-  .pub-filter-type label{ margin:0 }
-  .pub-filter-type select{ min-width:160px }
+    .pub-filter-type{ display:flex; align-items:center; gap:.5rem }
+    .pub-filter-type label{ margin:0 }
 
-    /* Dual-range visual slider: two range inputs overlayed to appear as single slider with two handles */
-    .year-range{ display:flex; align-items:center; gap:.5rem }
-    .dual-range{ position:relative; width:260px; height:36px }
-    /* .dual-range container left intentionally for noUiSlider placement */
-
-    .year-range .year-value{ min-width:48px; text-align:center }
-    /* Move type + year inline on wide screens */
+    /* Move type + controls inline on wide screens */
     @media (min-width:640px){
       .pub-filters{ flex-wrap:nowrap }
       .pub-filter-type{ margin-right:1rem }
     }
-
-    /* noUiSlider color overrides to match site primary accent */
-    /* Use a visible accent; change this color if your site skin defines a different primary */
-  .pub-filters .noUi-target{ background: transparent; border-color: rgba(0,0,0,0.08); }
-  /* Color only here; thickness and sizing are defined in SASS to avoid duplicate/conflicting rules */
-  .pub-filters .noUi-connect{ background: var(--site-primary, #0092ca) !important; }
-    .pub-filters .noUi-handle{ border-color: #007bb3 !important; background: #ffffff !important; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
-    .pub-filters .noUi-handle:before, .pub-filters .noUi-handle:after{ background: rgba(0,0,0,0.08); }
-    .pub-filters .noUi-tooltip{ border-color: rgba(0,0,0,0.08); }
   </style>
 
   <style>
@@ -132,10 +104,6 @@ layout: archive
       .filter-checkboxes{ flex-wrap:wrap; gap:0.35rem }
       .pub-type-choice{ font-size:0.9rem }
     }
-    /* Make the year row sit on its own line and span the container */
-    .pub-filter-year-row{ width:100%; margin-top:0.5rem }
-    .pub-filter-year{ width:100%; display:flex; align-items:center; gap:0.75rem }
-    .pub-filter-year .dual-range{ flex: 1 1 auto; max-width: 480px }
   </style>
 
   <div class="pub-container wrapper">
@@ -156,19 +124,6 @@ layout: archive
       </div>
     </div>
 
-    <div class="pub-filter-year-row">
-      <div class="pub-filter-year year-range">
-        <label for="pub-filter-year-min">Year:</label>
-        <!-- noUiSlider single control (local vendored files) -->
-        <link rel="stylesheet" href="/assets/vendor/nouislider/nouislider.min.css">
-        <div class="year-slider-row" style="display:flex;align-items:center;gap:0.75rem;width:100%">
-          <span class="year-value year-min" id="pub-filter-year-min-val">{{ min_year }}</span>
-          <div id="pub-year-slider" class="dual-range" aria-label="Year range"></div>
-          <span class="year-value year-max" id="pub-filter-year-max-val">{{ max_year }}</span>
-        </div>
-      </div>
-    </div>
-
     <div id="publications-list">
     {%- comment -%} Output publications with a year first (sorted by year), then those without a year {%- endcomment -%}
     {%- assign with_year_items = all_pubs | where_exp: "p", "p.year" -%}
@@ -184,105 +139,39 @@ layout: archive
   </div>
 
   <script>
-    // Simple client-side filter for publications listing
+    // Simple client-side filter for publications listing by type only
     (function(){
-  var typeCheckboxes = Array.prototype.slice.call(document.querySelectorAll('input[name="pub-filter-type[]"]'));
-  var sliderEl = document.getElementById('pub-year-slider');
-  var yearMinVal = document.getElementById('pub-filter-year-min-val');
-  var yearMaxVal = document.getElementById('pub-filter-year-max-val');
+      var typeCheckboxes = Array.prototype.slice.call(document.querySelectorAll('input[name="pub-filter-type[]"]'));
       var list = document.getElementById('publications-list');
 
-      function toInt(v){ var n = parseInt(v,10); return isNaN(n) ? null : n; }
       function getSelectedTypes(){
         return typeCheckboxes.filter(function(cb){ return cb.checked; }).map(function(cb){ return cb.value; });
       }
 
-      function applyFilters(minYOverride, maxYOverride){
+      function applyFilters(){
         var selectedTypes = getSelectedTypes();
-        var minY = (typeof minYOverride !== 'undefined' && minYOverride !== null) ? toInt(minYOverride) : toInt(yearMinVal && yearMinVal.textContent);
-        var maxY = (typeof maxYOverride !== 'undefined' && maxYOverride !== null) ? toInt(maxYOverride) : toInt(yearMaxVal && yearMaxVal.textContent);
-  // Only inspect direct children of the publications list to avoid matching inner elements twice
-  var items = Array.prototype.slice.call(list.children).filter(function(el){ return el.hasAttribute && el.hasAttribute('data-year'); });
+        // Only inspect direct children of the publications list to avoid matching inner elements twice
+        var items = Array.prototype.slice.call(list.children).filter(function(el){ return el.hasAttribute && el.hasAttribute('data-year'); });
         items.forEach(function(el){
-          // guard: some items may not have year - treat as no-match unless filters allow
-          var rawYear = el.getAttribute('data-year');
-          var elYear = toInt(rawYear);
           var elType = (el.getAttribute('data-type') || '').toString();
           var match = true;
           // If there are selected types, require the element's type to be one of them
-          if(selectedTypes && selectedTypes.length > 0){ if(selectedTypes.indexOf(elType) === -1) match = false; }
-          if(minY !== null){ if(elYear === null || elYear < minY) match = false; }
-          if(maxY !== null){ if(elYear === null || elYear > maxY) match = false; }
+          if(selectedTypes && selectedTypes.length > 0){ 
+            if(selectedTypes.indexOf(elType) === -1) match = false; 
+          }
           el.style.display = match ? '' : 'none';
         });
       }
 
-      // create noUiSlider instance and wire up events
-      // Try local vendored script first; if it doesn't expose `noUiSlider`, fall back to CDN
-      function ensureNoUiSlider(cb){
-        if(window.noUiSlider !== undefined){ cb(); return; }
-        var local = document.createElement('script');
-        local.src = '/assets/vendor/nouislider/nouislider.min.js';
-        var tried = false;
-        local.onload = function(){
-          // short delay to allow script to attach to window
-          setTimeout(function(){
-            if(window.noUiSlider !== undefined){ tried = true; cb(); }
-            else { console.warn('Local noUiSlider did not initialize, falling back to CDN'); loadCdn(); }
-          }, 50);
-        };
-        local.onerror = function(){ console.warn('Failed to load local noUiSlider, falling back to CDN'); loadCdn(); };
-        document.head.appendChild(local);
-
-        function loadCdn(){
-          if(tried) return; tried = true;
-          var cdn = document.createElement('script');
-          cdn.src = 'https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.js';
-          cdn.onload = function(){ if(window.noUiSlider !== undefined) cb(); else { console.warn('CDN noUiSlider loaded but noUiSlider is not available'); cb(); } };
-          cdn.onerror = function(){ console.warn('Failed to load noUiSlider from CDN; slider will not initialize'); cb(); };
-          document.head.appendChild(cdn);
-        }
+      // Wire type checkboxes to filters
+      if(typeCheckboxes && typeCheckboxes.length > 0){
+        typeCheckboxes.forEach(function(cb){ 
+          cb.addEventListener('change', function(){ applyFilters(); }); 
+        });
       }
-      ensureNoUiSlider(initSlider);
 
-      function initSlider(){
-        if(!sliderEl) return;
-        var minYear = parseInt('{{ min_year }}',10);
-        var maxYear = parseInt('{{ max_year }}',10);
-        try{
-          noUiSlider.create(sliderEl, {
-            start: [minYear, maxYear],
-            connect: true,
-            step: 1,
-            range: { 'min': minYear, 'max': maxYear },
-            behaviour: 'drag-tap'
-          });
-
-          sliderEl.noUiSlider.on('update', function(values){
-            var a = Math.round(Number(values[0]));
-            var b = Math.round(Number(values[1]));
-            yearMinVal.textContent = a;
-            yearMaxVal.textContent = b;
-            applyFilters(a,b);
-          });
-
-          // wire type select to filters
-          // wire type select to filters
-          if(typeCheckboxes && typeCheckboxes.length > 0){
-            typeCheckboxes.forEach(function(cb){ cb.addEventListener('change', function(){ applyFilters(); }); });
-          }
-
-          // run initial pass to apply default slider range
-          applyFilters(minYear, maxYear);
-          // expose for other scripts (ordering toggle) to call
-          window.applyFilters = applyFilters;
-        } catch(e){
-          // fallback: if slider fails, show all
-          console.warn('noUiSlider init failed', e);
-        }
-      }
-      // ensure type selector still triggers filtering even if slider failed to load
-      if(typeSel){ typeSel.addEventListener && typeSel.addEventListener('change', function(){ applyFilters(); }); }
+      // Expose for other scripts (ordering toggle) to call
+      window.applyFilters = applyFilters;
     })();
   </script>
 
