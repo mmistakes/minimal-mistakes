@@ -56,8 +56,12 @@ layout: single
 
   <div class="pub__body">
     {%- if page.image %}
+      {%- assign image_src = page.image -%}
+      {%- unless page.image contains "/" -%}
+        {%- assign image_src = "assets/images/publication-images/" | append: page.image -%}
+      {%- endunless -%}
       <figure class="pub__thumb">
-        <img src="{{ page.image | relative_url }}" alt="{{ page.shortname | default: page.title }}">
+        <img src="{{ image_src | relative_url }}" alt="{{ page.shortname | default: page.title }}">
       </figure>
     {%- endif %}
 
