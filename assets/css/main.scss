@@ -12,8 +12,20 @@ search: false
 
 /* ==========================================================================
    Custom Styles for Enhanced Design - HouuYa's Blog
-   Version: 2.0.0
+   Version: 2.1.0
    ========================================================================== */
+
+// ============================================================================
+// FONT FAMILY (Pretendard for Korean optimization)
+// ============================================================================
+$font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+  system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+  "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", sans-serif;
+
+html, body {
+  font-family: $font-family-base;
+}
 
 // ============================================================================
 // VARIABLES
@@ -63,9 +75,9 @@ html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-// Intro section (Welcome message)
-.feature__item--center {
-  margin-bottom: $section-spacing !important;
+// Intro section (Welcome message) - using specific selectors instead of !important
+.feature__wrapper .feature__item--center {
+  margin-bottom: $section-spacing;
 
   .archive__item {
     background: linear-gradient(135deg, rgba(0, 173, 181, 0.08) 0%, rgba(0, 136, 163, 0.04) 100%);
@@ -74,8 +86,8 @@ html {
     padding: 2.5rem 2rem;
   }
 
-  .archive__item-excerpt {
-    font-size: 1.15rem !important;
+  .archive__item-body .archive__item-excerpt {
+    font-size: 1.15rem;
     line-height: 1.8;
     color: rgba(234, 234, 234, 0.9);
     max-width: 800px;
@@ -87,7 +99,8 @@ html {
 // FEATURE CARDS (3-column cards)
 // ============================================================================
 
-.feature__item {
+// Using .feature__wrapper for higher specificity instead of !important
+.feature__wrapper .feature__item {
   margin-bottom: $card-spacing;
   padding: 0;
   background: transparent;
@@ -117,17 +130,17 @@ html {
     }
   }
 
-  // Card body
-  .archive__item-body {
+  // Card body - using nested specificity
+  .archive__item .archive__item-body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 !important;
+    padding: 0;
   }
 
-  // Card title with emoji
-  .archive__item-title {
-    font-size: 1.35rem !important;
+  // Card title
+  .archive__item .archive__item-title {
+    font-size: 1.35rem;
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 1rem;
@@ -136,9 +149,9 @@ html {
   }
 
   // Card description
-  .archive__item-excerpt {
+  .archive__item .archive__item-excerpt {
     flex: 1;
-    font-size: 1rem !important;
+    font-size: 1rem;
     line-height: 1.7;
     color: rgba(234, 234, 234, 0.75);
     margin-bottom: 1.5rem;
@@ -162,7 +175,7 @@ html {
 // ARCHIVE/POST CARDS (Recent Posts)
 // ============================================================================
 
-// Section title
+// Section title - using Font Awesome icon instead of emoji for cross-platform consistency
 .archive__subtitle {
   font-size: 1.5rem;
   font-weight: 700;
@@ -173,7 +186,11 @@ html {
   letter-spacing: -0.02em;
 
   &::before {
-    content: "📝 ";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f15c";  // fa-file-alt icon
+    margin-right: 0.5em;
+    color: $primary-accent;
   }
 }
 
@@ -508,25 +525,27 @@ pre.highlight {
 // RESPONSIVE ADJUSTMENTS
 // ============================================================================
 
+// Responsive: Tablet
 @media (max-width: 1024px) {
-  .feature__item {
+  .feature__wrapper .feature__item {
     .archive__item {
       min-height: auto;
       padding: 1.5rem;
     }
 
-    .archive__item-title {
-      font-size: 1.2rem !important;
+    .archive__item .archive__item-title {
+      font-size: 1.2rem;
     }
 
-    .archive__item-excerpt {
-      font-size: 0.95rem !important;
+    .archive__item .archive__item-excerpt {
+      font-size: 0.95rem;
     }
   }
 }
 
+// Responsive: Mobile landscape
 @media (max-width: 768px) {
-  .feature__item {
+  .feature__wrapper .feature__item {
     margin-bottom: 1.5rem;
 
     .archive__item {
@@ -534,13 +553,13 @@ pre.highlight {
     }
   }
 
-  .feature__item--center {
+  .feature__wrapper .feature__item--center {
     .archive__item {
       padding: 1.5rem;
     }
 
-    .archive__item-excerpt {
-      font-size: 1rem !important;
+    .archive__item-body .archive__item-excerpt {
+      font-size: 1rem;
     }
   }
 
@@ -566,14 +585,15 @@ pre.highlight {
   h3 { font-size: 1.15rem; }
 }
 
+// Responsive: Mobile portrait
 @media (max-width: 480px) {
-  .feature__item {
+  .feature__wrapper .feature__item {
     .archive__item {
       padding: 1.25rem;
     }
 
-    .archive__item-title {
-      font-size: 1.1rem !important;
+    .archive__item .archive__item-title {
+      font-size: 1.1rem;
     }
 
     .btn {
