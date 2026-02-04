@@ -5,615 +5,219 @@ search: false
 
 @charset "utf-8";
 
-// @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
-   Custom Styles for Enhanced Design - HouuYa's Blog
-   Version: 2.1.0
+   Custom Styles - HouuYa's Blog v3.0
+   Minimal overrides to preserve theme's responsive layout
    ========================================================================== */
-
-// ============================================================================
-// FONT FAMILY (Pretendard for Korean optimization)
-// ============================================================================
-$font-family-base: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
-  system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
-  "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", sans-serif;
-
-html, body {
-  font-family: $font-family-base;
-}
 
 // ============================================================================
 // VARIABLES
 // ============================================================================
-$primary-accent: #00adb5;
-$primary-accent-light: #00c9d3;
-$primary-accent-dark: #0088a3;
-$card-bg: rgba(255, 255, 255, 0.04);
-$card-bg-hover: rgba(255, 255, 255, 0.08);
-$card-border: rgba(255, 255, 255, 0.08);
-$card-border-hover: rgba(0, 173, 181, 0.4);
-$section-spacing: 4rem;
-$card-spacing: 2rem;
-$card-radius: 16px;
-$transition-fast: 0.2s ease;
-$transition-normal: 0.3s ease;
+$accent: #00adb5;
+$accent-light: #00c9d3;
+$accent-dark: #0088a3;
 
 // ============================================================================
-// GLOBAL STYLES
+// FONTS (Pretendard)
 // ============================================================================
-
-// Smooth transitions (selective, not universal)
-a, .btn, .archive__item, .feature__item, .author__avatar {
-  transition: all $transition-normal;
-}
-
-// Improve base font rendering
-html {
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
 }
 
 // ============================================================================
-// LAYOUT & SPACING
+// MASTHEAD (Navigation bar)
 // ============================================================================
-
-// Main content area spacing
-.page__content {
-  padding-top: 1rem;
+.masthead {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba($accent, 0.2);
 }
 
-// Section spacing for homepage
+.greedy-nav a:hover {
+  color: $accent-light;
+}
+
+// ============================================================================
+// AUTHOR PROFILE (Sidebar)
+// ============================================================================
+.author__avatar {
+  img {
+    border-radius: 50%;
+    border: 2px solid rgba($accent, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.author__name {
+  font-weight: 700;
+}
+
+.author__bio {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+// ============================================================================
+// FEATURE ROW (3 Column Cards) - Keep theme layout, enhance visually
+// ============================================================================
 .feature__wrapper {
-  margin-bottom: $section-spacing;
-  padding-bottom: $section-spacing;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 2em;
+  padding-bottom: 1em;
 }
 
-// Intro section (Welcome message) - using specific selectors instead of !important
-.feature__wrapper .feature__item--center {
-  margin-bottom: $section-spacing;
-
+.feature__item {
   .archive__item {
-    background: linear-gradient(135deg, rgba(0, 173, 181, 0.08) 0%, rgba(0, 136, 163, 0.04) 100%);
-    border: 1px solid rgba(0, 173, 181, 0.15);
-    border-radius: $card-radius;
-    padding: 2.5rem 2rem;
-  }
-
-  .archive__item-body .archive__item-excerpt {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: rgba(234, 234, 234, 0.9);
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-
-// ============================================================================
-// FEATURE CARDS (3-column cards)
-// ============================================================================
-
-// Using .feature__wrapper for higher specificity instead of !important
-.feature__wrapper .feature__item {
-  margin-bottom: $card-spacing;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-
-  // Card container
-  .archive__item {
-    height: 100%;
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    background: $card-bg;
-    border: 1px solid $card-border;
-    border-radius: $card-radius;
-    padding: 2rem 1.75rem;
-    transition: all $transition-normal;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 1.25em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-      transform: translateY(-8px);
-      box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.3),
-        0 0 0 1px $card-border-hover,
-        0 0 30px rgba(0, 173, 181, 0.1);
-      background: $card-bg-hover;
-      border-color: $card-border-hover;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      border-color: rgba($accent, 0.3);
     }
   }
 
-  // Card body - using nested specificity
-  .archive__item .archive__item-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  // Card title
-  .archive__item .archive__item-title {
-    font-size: 1.35rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    letter-spacing: -0.02em;
-  }
-
-  // Card description
-  .archive__item .archive__item-excerpt {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: rgba(234, 234, 234, 0.75);
-    margin-bottom: 1.5rem;
-
-    p {
-      margin: 0;
-    }
-  }
-
-  // Card button
-  .btn {
-    align-self: flex-start;
-    margin-top: auto;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+  .archive__item-title {
+    font-size: 1.1em;
     font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: rgba(234, 234, 234, 0.8);
+  }
+}
+
+// Intro/Center feature row
+.feature__item--center {
+  .archive__item {
+    background: rgba($accent, 0.05);
+    border-color: rgba($accent, 0.15);
+  }
+
+  .archive__item-excerpt {
+    font-size: 1em;
   }
 }
 
 // ============================================================================
-// ARCHIVE/POST CARDS (Recent Posts)
+// ARCHIVE ITEMS (Post List)
 // ============================================================================
+.list__item {
+  .archive__item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 1.25em;
+    margin-bottom: 1em;
+    transition: all 0.2s ease;
 
-// Section title - using Font Awesome icon instead of emoji for cross-platform consistency
+    &:hover {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba($accent, 0.25);
+    }
+  }
+}
+
+.archive__item-title {
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $accent-light;
+    }
+  }
+}
+
+// Section subtitle
 .archive__subtitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin: $section-spacing 0 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 173, 181, 0.3);
-  letter-spacing: -0.02em;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #fff;
+  margin: 1.5em 0 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgba($accent, 0.3);
 
   &::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f15c";  // fa-file-alt icon
-    margin-right: 0.5em;
-    color: $primary-accent;
-  }
-}
-
-// Post list items
-.archive__item {
-  border-radius: $card-radius;
-  padding: 1.75rem;
-  margin-bottom: 1.25rem;
-  background: $card-bg;
-  border: 1px solid $card-border;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow:
-      0 12px 24px rgba(0, 0, 0, 0.2),
-      0 0 20px rgba(0, 173, 181, 0.08);
-    background: $card-bg-hover;
-    border-color: $card-border-hover;
-  }
-
-  // Post title
-  .archive__item-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-
-    a {
-      color: #ffffff;
-
-      &:hover {
-        color: $primary-accent-light;
-      }
-    }
-  }
-
-  // Post excerpt
-  .archive__item-excerpt {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: rgba(234, 234, 234, 0.7);
-  }
-
-  // Post meta (date, read time)
-  .page__meta {
-    font-size: 0.85rem;
-    color: rgba(234, 234, 234, 0.5);
-    margin-top: 0.75rem;
+    content: "\f15c";
+    margin-right: 0.4em;
+    color: $accent;
   }
 }
 
 // ============================================================================
 // BUTTONS
 // ============================================================================
+.btn--primary {
+  background: linear-gradient(135deg, $accent 0%, $accent-dark 100%);
+  border: none;
 
-.btn {
-  border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.9rem;
-  transition: all $transition-normal;
-
-  &--primary {
-    background: linear-gradient(135deg, $primary-accent 0%, $primary-accent-dark 100%);
-    border: none;
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 173, 181, 0.2);
-
-    &:hover {
-      background: linear-gradient(135deg, $primary-accent-light 0%, $primary-accent 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 173, 181, 0.35);
-      color: #ffffff;
-    }
+  &:hover {
+    background: linear-gradient(135deg, $accent-light 0%, $accent 100%);
   }
 }
 
 // ============================================================================
-// PAGE HEADER / HERO
+// PAGE TITLE
 // ============================================================================
-
-.page__hero {
-  &--overlay {
-    padding: 5rem 0 4rem;
-    background: linear-gradient(
-      135deg,
-      rgba(26, 31, 46, 0.95) 0%,
-      rgba(37, 42, 52, 0.9) 50%,
-      rgba(45, 51, 66, 0.95) 100%
-    );
-
-    .page__title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.75rem;
-    }
-
-    .page__lead {
-      font-size: 1.15rem;
-      line-height: 1.7;
-      opacity: 0.9;
-      max-width: 700px;
-    }
-  }
-}
-
-.page__hero-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5em 1em;
-  border-radius: 6px;
-  font-size: 0.85rem;
-}
-
-// ============================================================================
-// TYPOGRAPHY
-// ============================================================================
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.3;
-}
-
-h1 { font-size: 2.25rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.35rem; }
-
 .page__title {
-  background: linear-gradient(135deg, $primary-accent 0%, $primary-accent-light 100%);
+  background: linear-gradient(135deg, $accent 0%, $accent-light 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 800;
-}
-
-// Links
-a {
-  transition: color $transition-fast;
-
-  &:hover {
-    color: $primary-accent-light;
-  }
 }
 
 // ============================================================================
-// AUTHOR PROFILE (Sidebar)
+// LINKS
 // ============================================================================
-
-.sidebar {
-  opacity: 1;
-}
-
-.author__avatar {
-  border: 3px solid rgba(0, 173, 181, 0.4);
-  box-shadow:
-    0 8px 24px rgba(0, 0, 0, 0.3),
-    0 0 20px rgba(0, 173, 181, 0.15);
-  border-radius: 50%;
-  overflow: hidden;
-
-  img {
-    border-radius: 50%;
-    transition: transform $transition-normal;
-  }
-
-  &:hover img {
-    transform: scale(1.05);
-  }
-}
-
-.author__name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-top: 1rem;
-  color: #ffffff;
-}
-
-.author__bio {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: rgba(234, 234, 234, 0.8);
-  margin-top: 0.5rem;
-}
-
-.author__urls {
-  margin-top: 1rem;
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-
-  a {
-    font-size: 0.9rem;
-    color: rgba(234, 234, 234, 0.7);
-
-    &:hover {
-      color: $primary-accent-light;
-    }
-  }
+a:hover {
+  color: $accent-light;
 }
 
 // ============================================================================
-// MASTHEAD (Navigation)
+// CODE
 // ============================================================================
-
-.masthead {
-  border-bottom: 1px solid rgba(0, 173, 181, 0.2);
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  .site-title {
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: -0.02em;
-  }
-
-  .site-subtitle {
-    font-size: 0.8rem;
-    opacity: 0.7;
-  }
-}
-
-.greedy-nav {
-  a {
-    font-weight: 500;
-    font-size: 0.95rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    transition: all $transition-fast;
-
-    &:hover {
-      color: $primary-accent-light;
-      background: rgba(0, 173, 181, 0.1);
-    }
-  }
-
-  .visible-links a:before {
-    background: linear-gradient(135deg, $primary-accent 0%, $primary-accent-light 100%);
-    height: 3px;
-    border-radius: 2px;
-  }
-}
-
-// ============================================================================
-// FOOTER
-// ============================================================================
-
-.page__footer {
-  margin-top: $section-spacing;
-  padding: 2rem 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(0, 0, 0, 0.35) 100%
-  );
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-
-  .page__footer-follow,
-  .page__footer-copyright {
-    font-size: 0.85rem;
-    color: rgba(234, 234, 234, 0.6);
-  }
-}
-
-// ============================================================================
-// CODE BLOCKS
-// ============================================================================
-
 code.highlighter-rouge {
-  background: rgba(0, 173, 181, 0.08);
-  border: 1px solid rgba(0, 173, 181, 0.15);
-  border-radius: 4px;
-  padding: 0.15em 0.4em;
-  font-size: 0.9em;
-}
-
-pre.highlight {
-  border-radius: $card-radius;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba($accent, 0.1);
+  border: 1px solid rgba($accent, 0.15);
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
 }
 
 // ============================================================================
 // PAGINATION
 // ============================================================================
-
-.pagination {
-  margin-top: $section-spacing;
-  gap: 0.5rem;
-
-  a, span {
-    border-radius: 8px;
-    padding: 0.6rem 1rem;
-    font-weight: 500;
-    transition: all $transition-fast;
-
-    &:hover {
-      background: rgba(0, 173, 181, 0.15);
-      border-color: rgba(0, 173, 181, 0.3);
-      color: $primary-accent-light;
-    }
-  }
-
-  .current {
-    background: $primary-accent;
-    border-color: $primary-accent;
-    color: #ffffff;
-  }
+.pagination .current {
+  background: $accent;
+  border-color: $accent;
 }
 
 // ============================================================================
-// SEARCH
+// FOOTER
 // ============================================================================
-
-.search-content {
-  .archive__item {
-    background: rgba(255, 255, 255, 0.03);
-  }
-}
-
-.search__toggle {
-  color: rgba(234, 234, 234, 0.7);
-
-  &:hover {
-    color: $primary-accent-light;
-  }
+.page__footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 // ============================================================================
-// RESPONSIVE ADJUSTMENTS
+// SCROLLBAR
 // ============================================================================
-
-// Responsive: Tablet
-@media (max-width: 1024px) {
-  .feature__wrapper .feature__item {
-    .archive__item {
-      min-height: auto;
-      padding: 1.5rem;
-    }
-
-    .archive__item .archive__item-title {
-      font-size: 1.2rem;
-    }
-
-    .archive__item .archive__item-excerpt {
-      font-size: 0.95rem;
-    }
-  }
-}
-
-// Responsive: Mobile landscape
-@media (max-width: 768px) {
-  .feature__wrapper .feature__item {
-    margin-bottom: 1.5rem;
-
-    .archive__item {
-      padding: 1.5rem;
-    }
-  }
-
-  .feature__wrapper .feature__item--center {
-    .archive__item {
-      padding: 1.5rem;
-    }
-
-    .archive__item-body .archive__item-excerpt {
-      font-size: 1rem;
-    }
-  }
-
-  .archive__subtitle {
-    font-size: 1.25rem;
-    margin-top: 2rem;
-  }
-
-  .page__hero--overlay {
-    padding: 3rem 0 2.5rem;
-
-    .page__title {
-      font-size: 1.75rem;
-    }
-
-    .page__lead {
-      font-size: 1rem;
-    }
-  }
-
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.15rem; }
-}
-
-// Responsive: Mobile portrait
-@media (max-width: 480px) {
-  .feature__wrapper .feature__item {
-    .archive__item {
-      padding: 1.25rem;
-    }
-
-    .archive__item .archive__item-title {
-      font-size: 1.1rem;
-    }
-
-    .btn {
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  .archive__item {
-    padding: 1.25rem;
-  }
-}
-
-// ============================================================================
-// SCROLLBAR (Optional enhancement)
-// ============================================================================
-
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -621,24 +225,17 @@ pre.highlight {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 173, 181, 0.3);
-  border-radius: 5px;
+  background: rgba($accent, 0.3);
+  border-radius: 4px;
 
   &:hover {
-    background: rgba(0, 173, 181, 0.5);
+    background: rgba($accent, 0.5);
   }
 }
 
 // ============================================================================
 // SELECTION
 // ============================================================================
-
 ::selection {
-  background: rgba(0, 173, 181, 0.3);
-  color: #ffffff;
-}
-
-::-moz-selection {
-  background: rgba(0, 173, 181, 0.3);
-  color: #ffffff;
+  background: rgba($accent, 0.3);
 }
