@@ -9,49 +9,183 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
-   Custom Styles - HouuYa's Blog v3.1
-   Fixes: wider layout for large screens, card title truncation
+   HouuYa's Blog - Custom Styles v4.0
+   Clean, compact layout with proper card titles
    ========================================================================== */
 
-// ============================================================================
-// VARIABLES
-// ============================================================================
+// Variables
 $accent: #00adb5;
 $accent-light: #00c9d3;
 $accent-dark: #0088a3;
 
 // ============================================================================
-// FONTS (Pretendard)
+// HERO SECTION - Reduce excessive padding
 // ============================================================================
-html, body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
-    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
-}
+.page__hero--overlay {
+  padding: 2em 0;
+  margin-bottom: 0;
 
-// ============================================================================
-// WIDER LAYOUT FOR LARGE SCREENS
-// ============================================================================
-
-// Increase max-width for extra large screens
-@media (min-width: 1400px) {
-  .page {
-    max-width: 1400px;
-  }
-
-  .archive {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 1600px) {
-  .page {
-    max-width: 1600px;
+  .page__title,
+  .page__lead,
+  .page__meta {
+    margin-bottom: 0.5em;
   }
 }
 
 // ============================================================================
-// MASTHEAD (Navigation bar)
+// MAIN CONTENT - Tighter spacing
+// ============================================================================
+.page__content {
+  padding-top: 0;
+}
+
+.initial-content,
+.page__content {
+  margin-top: 0;
+}
+
+// ============================================================================
+// FEATURE ROW - Cards with FULL titles (no truncation)
+// ============================================================================
+.feature__wrapper {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// CRITICAL: Override title truncation with high specificity
+.feature__wrapper .feature__item .archive__item .archive__item-body .archive__item-title,
+.feature__item .archive__item .archive__item-title,
+.feature__item .archive__item-title {
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: normal !important;
+  display: block !important;
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 0.75em;
+}
+
+.feature__item {
+  margin-bottom: 1em;
+
+  .archive__item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.25em;
+    height: 100%;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      border-color: rgba($accent, 0.4);
+    }
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.9em;
+    line-height: 1.55;
+    color: rgba(234, 234, 234, 0.75);
+  }
+
+  .archive__item-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    p:last-child {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    margin-top: 0.75em;
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+  }
+}
+
+// Center intro section
+.feature__item--center {
+  .archive__item {
+    background: rgba($accent, 0.05);
+    border-color: rgba($accent, 0.2);
+    padding: 1.5em 2em;
+  }
+
+  .archive__item-excerpt {
+    font-size: 1em;
+    line-height: 1.6;
+    color: rgba(234, 234, 234, 0.85);
+  }
+}
+
+// ============================================================================
+// ARCHIVE / POST LIST - Compact cards
+// ============================================================================
+.archive__subtitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+  margin: 1em 0 0.75em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgba($accent, 0.3);
+}
+
+.list__item .archive__item,
+.archive .archive__item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  padding: 1em 1.25em;
+  margin-bottom: 0.75em;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba($accent, 0.3);
+  }
+
+  .archive__item-title {
+    font-size: 1.05em;
+    margin-bottom: 0.25em;
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-top: 0.5em;
+    color: rgba(234, 234, 234, 0.7);
+  }
+
+  .page__meta {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+}
+
+// ============================================================================
+// SIDEBAR / AUTHOR PROFILE
+// ============================================================================
+.sidebar {
+  padding-right: 1em;
+}
+
+.author__avatar img {
+  border: 2px solid rgba($accent, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.author__content {
+  padding-left: 0;
+}
+
+// ============================================================================
+// NAVIGATION
 // ============================================================================
 .masthead {
   background: rgba(0, 0, 0, 0.3);
@@ -62,138 +196,6 @@ html, body {
 
 .greedy-nav a:hover {
   color: $accent-light;
-}
-
-// ============================================================================
-// AUTHOR PROFILE (Sidebar)
-// ============================================================================
-.author__avatar {
-  img {
-    border-radius: 50%;
-    border: 2px solid rgba($accent, 0.4);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
-}
-
-.author__name {
-  font-weight: 700;
-}
-
-.author__bio {
-  font-size: 0.85em;
-  line-height: 1.5;
-}
-
-// ============================================================================
-// FEATURE ROW (3 Column Cards) - IMPORTANT FIXES
-// ============================================================================
-.feature__wrapper {
-  margin-bottom: 2em;
-  padding-bottom: 1em;
-}
-
-.feature__item {
-  // FIX: Remove title truncation - show full title
-  .archive__item-title {
-    overflow: visible;
-    text-overflow: clip;
-    white-space: normal;
-    font-size: 1.15em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
-    line-height: 1.3;
-  }
-
-  .archive__item {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 8px;
-    padding: 1.25em;
-    height: 100%;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-      border-color: rgba($accent, 0.3);
-    }
-  }
-
-  .archive__item-excerpt {
-    font-size: 0.9em;
-    line-height: 1.6;
-    color: rgba(234, 234, 234, 0.8);
-  }
-
-  // Better button positioning
-  .archive__item-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
-    p:last-child {
-      margin-top: auto;
-    }
-  }
-}
-
-// Intro/Center feature row
-.feature__item--center {
-  .archive__item {
-    background: rgba($accent, 0.05);
-    border-color: rgba($accent, 0.15);
-  }
-
-  .archive__item-excerpt {
-    font-size: 1em;
-  }
-}
-
-// ============================================================================
-// ARCHIVE ITEMS (Post List)
-// ============================================================================
-.list__item {
-  .archive__item {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 8px;
-    padding: 1.25em;
-    margin-bottom: 1em;
-    transition: all 0.2s ease;
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.04);
-      border-color: rgba($accent, 0.25);
-    }
-  }
-}
-
-.archive__item-title {
-  a {
-    color: #fff;
-
-    &:hover {
-      color: $accent-light;
-    }
-  }
-}
-
-// Section subtitle
-.archive__subtitle {
-  font-size: 1.25em;
-  font-weight: 600;
-  color: #fff;
-  margin: 1.5em 0 1em;
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid rgba($accent, 0.3);
-
-  &::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f15c";
-    margin-right: 0.4em;
-    color: $accent;
-  }
 }
 
 // ============================================================================
@@ -221,8 +223,12 @@ html, body {
 // ============================================================================
 // LINKS
 // ============================================================================
-a:hover {
-  color: $accent-light;
+.archive__item-title a {
+  color: #fff;
+
+  &:hover {
+    color: $accent-light;
+  }
 }
 
 // ============================================================================
@@ -238,17 +244,37 @@ code.highlighter-rouge {
 // ============================================================================
 // PAGINATION
 // ============================================================================
-.pagination .current {
-  background: $accent;
-  border-color: $accent;
+.pagination {
+  margin-top: 1.5em;
+
+  .current {
+    background: $accent;
+    border-color: $accent;
+  }
 }
 
 // ============================================================================
 // FOOTER
 // ============================================================================
 .page__footer {
+  margin-top: 2em;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(0, 0, 0, 0.2);
+}
+
+// ============================================================================
+// WIDE SCREENS - Use more space
+// ============================================================================
+@media (min-width: 1400px) {
+  .page {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page {
+    max-width: 1500px;
+  }
 }
 
 // ============================================================================
