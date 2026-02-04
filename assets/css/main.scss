@@ -11,166 +11,614 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
-   Custom Styles for Enhanced Design
+   Custom Styles for Enhanced Design - HouuYa's Blog
+   Version: 2.0.0
    ========================================================================== */
 
-// Smooth transitions for better UX
-* {
-  transition: all 0.3s ease;
+// ============================================================================
+// VARIABLES
+// ============================================================================
+$primary-accent: #00adb5;
+$primary-accent-light: #00c9d3;
+$primary-accent-dark: #0088a3;
+$card-bg: rgba(255, 255, 255, 0.04);
+$card-bg-hover: rgba(255, 255, 255, 0.08);
+$card-border: rgba(255, 255, 255, 0.08);
+$card-border-hover: rgba(0, 173, 181, 0.4);
+$section-spacing: 4rem;
+$card-spacing: 2rem;
+$card-radius: 16px;
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+
+// ============================================================================
+// GLOBAL STYLES
+// ============================================================================
+
+// Smooth transitions (selective, not universal)
+a, .btn, .archive__item, .feature__item, .author__avatar {
+  transition: all $transition-normal;
 }
 
-// Enhanced Archive/Post Cards
+// Improve base font rendering
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ============================================================================
+// LAYOUT & SPACING
+// ============================================================================
+
+// Main content area spacing
+.page__content {
+  padding-top: 1rem;
+}
+
+// Section spacing for homepage
+.feature__wrapper {
+  margin-bottom: $section-spacing;
+  padding-bottom: $section-spacing;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+// Intro section (Welcome message)
+.feature__item--center {
+  margin-bottom: $section-spacing !important;
+
+  .archive__item {
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.08) 0%, rgba(0, 136, 163, 0.04) 100%);
+    border: 1px solid rgba(0, 173, 181, 0.15);
+    border-radius: $card-radius;
+    padding: 2.5rem 2rem;
+  }
+
+  .archive__item-excerpt {
+    font-size: 1.15rem !important;
+    line-height: 1.8;
+    color: rgba(234, 234, 234, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+// ============================================================================
+// FEATURE CARDS (3-column cards)
+// ============================================================================
+
+.feature__item {
+  margin-bottom: $card-spacing;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+
+  // Card container
+  .archive__item {
+    height: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    background: $card-bg;
+    border: 1px solid $card-border;
+    border-radius: $card-radius;
+    padding: 2rem 1.75rem;
+    transition: all $transition-normal;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px $card-border-hover,
+        0 0 30px rgba(0, 173, 181, 0.1);
+      background: $card-bg-hover;
+      border-color: $card-border-hover;
+    }
+  }
+
+  // Card body
+  .archive__item-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+
+  // Card title with emoji
+  .archive__item-title {
+    font-size: 1.35rem !important;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+
+  // Card description
+  .archive__item-excerpt {
+    flex: 1;
+    font-size: 1rem !important;
+    line-height: 1.7;
+    color: rgba(234, 234, 234, 0.75);
+    margin-bottom: 1.5rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  // Card button
+  .btn {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+// ============================================================================
+// ARCHIVE/POST CARDS (Recent Posts)
+// ============================================================================
+
+// Section title
+.archive__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: $section-spacing 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 173, 181, 0.3);
+  letter-spacing: -0.02em;
+
+  &::before {
+    content: "📝 ";
+  }
+}
+
+// Post list items
 .archive__item {
-  border-radius: 8px;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: $card-radius;
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+  background: $card-bg;
+  border: 1px solid $card-border;
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 173, 181, 0.2);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(0, 173, 181, 0.3);
-  }
-}
-
-// Enhanced Feature Rows
-.feature__item {
-  margin-bottom: 2em;
-  padding: 2em;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 173, 181, 0.25);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(0, 173, 181, 0.4);
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.2),
+      0 0 20px rgba(0, 173, 181, 0.08);
+    background: $card-bg-hover;
+    border-color: $card-border-hover;
   }
 
+  // Post title
   .archive__item-title {
-    margin-top: 0;
-    font-size: 1.5em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: $primary-accent-light;
+      }
+    }
+  }
+
+  // Post excerpt
+  .archive__item-excerpt {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(234, 234, 234, 0.7);
+  }
+
+  // Post meta (date, read time)
+  .page__meta {
+    font-size: 0.85rem;
+    color: rgba(234, 234, 234, 0.5);
+    margin-top: 0.75rem;
   }
 }
 
-// Enhanced Buttons
+// ============================================================================
+// BUTTONS
+// ============================================================================
+
 .btn {
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  transition: all $transition-normal;
 
   &--primary {
-    background: linear-gradient(135deg, #00adb5 0%, #0088a3 100%);
+    background: linear-gradient(135deg, $primary-accent 0%, $primary-accent-dark 100%);
     border: none;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 173, 181, 0.2);
 
     &:hover {
-      background: linear-gradient(135deg, #00c9d3 0%, #00adb5 100%);
+      background: linear-gradient(135deg, $primary-accent-light 0%, $primary-accent 100%);
       transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 173, 181, 0.3);
+      box-shadow: 0 8px 20px rgba(0, 173, 181, 0.35);
+      color: #ffffff;
     }
   }
 }
 
-// Enhanced Page Header
+// ============================================================================
+// PAGE HEADER / HERO
+// ============================================================================
+
 .page__hero {
   &--overlay {
-    padding: 6em 0;
-    background: linear-gradient(135deg, #1a1f2e 0%, #252a34 50%, #2d3342 100%);
+    padding: 5rem 0 4rem;
+    background: linear-gradient(
+      135deg,
+      rgba(26, 31, 46, 0.95) 0%,
+      rgba(37, 42, 52, 0.9) 50%,
+      rgba(45, 51, 66, 0.95) 100%
+    );
+
+    .page__title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+    }
+
+    .page__lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      opacity: 0.9;
+      max-width: 700px;
+    }
   }
 }
 
 .page__hero-caption {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   padding: 0.5em 1em;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 0.85rem;
 }
 
-// Enhanced Typography
+// ============================================================================
+// TYPOGRAPHY
+// ============================================================================
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.35rem; }
+
 .page__title {
-  background: linear-gradient(135deg, #00adb5 0%, #00c9d3 100%);
+  background: linear-gradient(135deg, $primary-accent 0%, $primary-accent-light 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 800;
 }
 
-// Enhanced Links
+// Links
 a {
+  transition: color $transition-fast;
+
   &:hover {
-    color: #00c9d3;
+    color: $primary-accent-light;
   }
 }
 
-// Enhanced Author Profile
+// ============================================================================
+// AUTHOR PROFILE (Sidebar)
+// ============================================================================
+
+.sidebar {
+  opacity: 1;
+}
+
 .author__avatar {
-  border: 3px solid rgba(0, 173, 181, 0.5);
-  box-shadow: 0 4px 12px rgba(0, 173, 181, 0.2);
+  border: 3px solid rgba(0, 173, 181, 0.4);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 173, 181, 0.15);
+  border-radius: 50%;
+  overflow: hidden;
 
   img {
     border-radius: 50%;
+    transition: transform $transition-normal;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
   }
 }
 
-// Enhanced Masthead
+.author__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.author__bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(234, 234, 234, 0.8);
+  margin-top: 0.5rem;
+}
+
+.author__urls {
+  margin-top: 1rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+    color: rgba(234, 234, 234, 0.7);
+
+    &:hover {
+      color: $primary-accent-light;
+    }
+  }
+}
+
+// ============================================================================
+// MASTHEAD (Navigation)
+// ============================================================================
+
 .masthead {
-  border-bottom: 2px solid rgba(0, 173, 181, 0.3);
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 173, 181, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  .site-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .site-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
 }
 
 .greedy-nav {
   a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all $transition-fast;
+
     &:hover {
-      color: #00c9d3;
+      color: $primary-accent-light;
+      background: rgba(0, 173, 181, 0.1);
     }
   }
 
   .visible-links a:before {
-    background: linear-gradient(135deg, #00adb5 0%, #00c9d3 100%);
+    background: linear-gradient(135deg, $primary-accent 0%, $primary-accent-light 100%);
+    height: 3px;
+    border-radius: 2px;
   }
 }
 
-// Enhanced Footer
+// ============================================================================
+// FOOTER
+// ============================================================================
+
 .page__footer {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%);
+  margin-top: $section-spacing;
+  padding: 2rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+  .page__footer-follow,
+  .page__footer-copyright {
+    font-size: 0.85rem;
+    color: rgba(234, 234, 234, 0.6);
+  }
 }
 
-// Enhanced Code Blocks
+// ============================================================================
+// CODE BLOCKS
+// ============================================================================
+
 code.highlighter-rouge {
-  background: rgba(0, 173, 181, 0.1);
-  border: 1px solid rgba(0, 173, 181, 0.2);
+  background: rgba(0, 173, 181, 0.08);
+  border: 1px solid rgba(0, 173, 181, 0.15);
   border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
 }
 
-// Enhanced Pagination
+pre.highlight {
+  border-radius: $card-radius;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+// ============================================================================
+// PAGINATION
+// ============================================================================
+
 .pagination {
-  margin-top: 2em;
+  margin-top: $section-spacing;
+  gap: 0.5rem;
 
   a, span {
-    border-radius: 6px;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    transition: all $transition-fast;
 
     &:hover {
-      background: rgba(0, 173, 181, 0.2);
-      border-color: rgba(0, 173, 181, 0.4);
+      background: rgba(0, 173, 181, 0.15);
+      border-color: rgba(0, 173, 181, 0.3);
+      color: $primary-accent-light;
     }
+  }
+
+  .current {
+    background: $primary-accent;
+    border-color: $primary-accent;
+    color: #ffffff;
   }
 }
 
-// Smooth scroll behavior
-html {
-  scroll-behavior: smooth;
-}
+// ============================================================================
+// SEARCH
+// ============================================================================
 
-// Enhanced Search
 .search-content {
   .archive__item {
     background: rgba(255, 255, 255, 0.03);
   }
+}
+
+.search__toggle {
+  color: rgba(234, 234, 234, 0.7);
+
+  &:hover {
+    color: $primary-accent-light;
+  }
+}
+
+// ============================================================================
+// RESPONSIVE ADJUSTMENTS
+// ============================================================================
+
+@media (max-width: 1024px) {
+  .feature__item {
+    .archive__item {
+      min-height: auto;
+      padding: 1.5rem;
+    }
+
+    .archive__item-title {
+      font-size: 1.2rem !important;
+    }
+
+    .archive__item-excerpt {
+      font-size: 0.95rem !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .feature__item {
+    margin-bottom: 1.5rem;
+
+    .archive__item {
+      padding: 1.5rem;
+    }
+  }
+
+  .feature__item--center {
+    .archive__item {
+      padding: 1.5rem;
+    }
+
+    .archive__item-excerpt {
+      font-size: 1rem !important;
+    }
+  }
+
+  .archive__subtitle {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  .page__hero--overlay {
+    padding: 3rem 0 2.5rem;
+
+    .page__title {
+      font-size: 1.75rem;
+    }
+
+    .page__lead {
+      font-size: 1rem;
+    }
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.15rem; }
+}
+
+@media (max-width: 480px) {
+  .feature__item {
+    .archive__item {
+      padding: 1.25rem;
+    }
+
+    .archive__item-title {
+      font-size: 1.1rem !important;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .archive__item {
+    padding: 1.25rem;
+  }
+}
+
+// ============================================================================
+// SCROLLBAR (Optional enhancement)
+// ============================================================================
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 173, 181, 0.3);
+  border-radius: 5px;
+
+  &:hover {
+    background: rgba(0, 173, 181, 0.5);
+  }
+}
+
+// ============================================================================
+// SELECTION
+// ============================================================================
+
+::selection {
+  background: rgba(0, 173, 181, 0.3);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgba(0, 173, 181, 0.3);
+  color: #ffffff;
 }
