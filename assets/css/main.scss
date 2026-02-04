@@ -9,8 +9,8 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
-   Custom Styles - HouuYa's Blog v3.0
-   Minimal overrides to preserve theme's responsive layout
+   Custom Styles - HouuYa's Blog v3.1
+   Fixes: wider layout for large screens, card title truncation
    ========================================================================== */
 
 // ============================================================================
@@ -27,6 +27,27 @@ html, body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
     system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
+}
+
+// ============================================================================
+// WIDER LAYOUT FOR LARGE SCREENS
+// ============================================================================
+
+// Increase max-width for extra large screens
+@media (min-width: 1400px) {
+  .page {
+    max-width: 1400px;
+  }
+
+  .archive {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page {
+    max-width: 1600px;
+  }
 }
 
 // ============================================================================
@@ -64,7 +85,7 @@ html, body {
 }
 
 // ============================================================================
-// FEATURE ROW (3 Column Cards) - Keep theme layout, enhance visually
+// FEATURE ROW (3 Column Cards) - IMPORTANT FIXES
 // ============================================================================
 .feature__wrapper {
   margin-bottom: 2em;
@@ -72,11 +93,23 @@ html, body {
 }
 
 .feature__item {
+  // FIX: Remove title truncation - show full title
+  .archive__item-title {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+  }
+
   .archive__item {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
     padding: 1.25em;
+    height: 100%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
@@ -86,16 +119,21 @@ html, body {
     }
   }
 
-  .archive__item-title {
-    font-size: 1.1em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
-  }
-
   .archive__item-excerpt {
     font-size: 0.9em;
     line-height: 1.6;
     color: rgba(234, 234, 234, 0.8);
+  }
+
+  // Better button positioning
+  .archive__item-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    p:last-child {
+      margin-top: auto;
+    }
   }
 }
 
