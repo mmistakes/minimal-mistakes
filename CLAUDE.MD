@@ -89,7 +89,22 @@ author:
 ### assets/css/main.scss
 - 커스텀 스타일의 진입점
 - 테마 스킨 import 후 커스텀 CSS 추가
-- **현재 커스터마이징**: 카드 스타일, 버튼 그래디언트, 마스트헤드 효과
+- **현재 커스터마이징**:
+    - **Premium Dark Design**: Glassmorphism, Neon Glow, Smooth Animations
+    - **Layout**: Flexbox-based Responsive Grid (fluid width on large screens)
+    - **Typography**: Gradient headings, improved readability
+
+### UI/UX 디자인 가이드라인 (Premium Dark)
+- **Glassmorphism**: `background: rgba(30, 34, 45, 0.6); backdrop-filter: blur(12px);`
+- **Glow Effect**:
+    - Default: `box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);`
+    - Hover: `box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba($accent, 0.15);`
+- **Typography**:
+    - Headings: `background: linear-gradient(135deg, #fff 0%, $accent-light 100%);`
+- **Layout Rule**:
+    - Use `display: flex` for feature rows.
+    - `flex: 1 1 300px` to ensure items grow and shrink properly.
+    - Avoid fixed `max-width` on grid items to prevent shrinking on wide screens.
 
 ---
 
@@ -196,4 +211,4 @@ permalink: /page-url/
 
 ---
 
-*마지막 업데이트: 2026-02-04*
+*마지막 업데이트: 2026-02-05 (Premium Dark UI 적용)*
