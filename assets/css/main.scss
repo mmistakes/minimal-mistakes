@@ -1,15 +1,127 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
 ---
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+/* =========================================
+   THEME VARIABLES (must be BEFORE @import)
+   ========================================= */
 
-// --- Custom overrides below ---
+/* Fonts */
+$global-font-family: 'DM Sans', system-ui, sans-serif;
+$caption-font-family: 'DM Sans', system-ui, sans-serif;
+$header-font-family: 'Archivo', system-ui, sans-serif;
 
+/* Buttons (primary) */
+$primary-color: #D2DCC4;
+$focus-color: #D2DCC4;
+$active-color: #bfc9ad;
+
+/* Header / nav colors */
+$masthead-link-color: #043543;
+$masthead-link-color-hover: #043543;
+
+/* Link colors (content links) */
+$link-color: #043543;
+$link-color-hover: #021f28;
+$link-color-visited: #043543;
+
+/* =========================================
+   IMPORT THEME
+   ========================================= */
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* =========================================
+   CUSTOM CSS (must be AFTER @import)
+   ========================================= */
+
+/* Make home content full width so mosaic can reach edges */
+.page__content {
+  max-width: none;
+}
+
+/* HERO SPLIT: full-bleed right mosaic + aligned with text */
+.hero-split {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  display: grid;
+  grid-template-columns: minmax(320px, 560px) 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+
+  align-items: start;
+  padding: clamp(2rem, 4vw, 3rem) 0;
+}
+
+/* Left column spacing (controls where text starts) */
+.hero-split__left {
+  padding-left: clamp(2rem, 6vw, 6rem);
+  padding-right: 1.25rem;
+}
+
+/* Logo sizing */
+.hero-split__logo {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+/* Typography tuning for hero */
+.hero-split__title {
+  margin: 0 0 0.9rem 0;
+  line-height: 1.05;
+  font-size: clamp(2rem, 2.6vw, 2.4rem);
+}
+
+.hero-split__logo {
+  max-width: 300px; 
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+/* Right column (mosaic) */
+.hero-split__right {
+  display: flex;
+  justify-content: flex-end; /* pushes to the right edge */
+  align-items: flex-start;
+  padding-right: clamp(0rem, 3vw, 3rem); /* keep tiny breathing room if needed */
+}
+
+.hero-split__mosaic {
+  width: 100%;
+  max-width: none; /* allow it to grow */
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+  }
+
+  .hero-split__left {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .hero-split__right {
+    order: -1;
+    padding-right: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    justify-content: center;
+  }
+}
+
+/* People grid (your existing custom layout) */
 .people-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -19,6 +131,7 @@ search: false
 .people-grid .archive__item {
   margin: 0;
 }
+
 
 @media (max-width: 768px) {
   .people-grid {

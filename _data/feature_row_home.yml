@@ -1,0 +1,11 @@
+home_feature_row:
+  - title: "Latest Publications"
+    excerpt: "Read our most recent research outputs and papers."
+    url: "/publications/"
+    btn_label: "View Publications"
+    btn_class: "btn--primary"
+  - title: "News & Updates"
+    excerpt: "Stay up to date with our events, projects, and announcements."
+    url: "/news/"
+    btn_label: "Read News"
+    btn_class: "btn--primary"

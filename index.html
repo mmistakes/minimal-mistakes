@@ -1,32 +1,24 @@
 ---
-layout: splash
-title: "Visualization and Interaction Design (VID) Lab"
+layout: default
+title: ""
 permalink: /
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.4"
-  overlay_image: assets/images/Screenshot 2025-09-12 at 14.34.42.png
-  caption: 
-excerpt: "We explore creative, meaningful ways for people to interact with data, technology, and digital materials. "
-intro:
-  - excerpt: "Our work blends design, visualization, sound, and physical–digital experiences, guided by critical, feminist, and interdisciplinary perspectives.
-
-Through collaborations with museums, research labs, non-profits, and industry, we investigate how digital tools shape everyday life and imagine new possibilities for more ethical and inclusive technologies.
-
-📍 Based at the Department of Science & Technology, Linköping University, at the Visualization Center C in Norrköping, Sweden."
-feature_row:
-  - title: "Latest Publications"
-    excerpt: "Read our most recent research outputs and papers."
-    url: "/publications/"
-    btn_label: "View Publications"
-    btn_class: "btn--primary"
-  - title: "News & Updates"
-    excerpt: "Stay up to date with our events, projects, and announcements."
-    url: "/news/"
-    btn_label: "Read News"
-    btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
+<section class="hero-split">
+  <div class="hero-split__left">
+    <img class="hero-split__logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="VID Lab logo">
+    <h1 class="hero-split__title">Visualization &amp;<br>Interaction Design Lab</h1>
 
-{% include feature_row %}
+   
+    <p class="hero-split__text">
+    We explore new ways for people to interact with data, technology, and digital materials in meaningful ways. Our research is centered in real-world, situated contexts and draws from a plurality of approaches and disciplines in order to understand and (re)shape our digital lives.
+  </div>
+
+  <div class="hero-split__right">
+    <img class="hero-split__mosaic" src="{{ '/assets/images/mosaic.png' | relative_url }}" alt="VID Lab mosaic">
+  </div>
+</section>
+
+{% assign feature_row = site.data.feature_row_home | default: nil %}
+
+{% include feature_row id="home_feature_row" %}
