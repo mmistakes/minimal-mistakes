@@ -18,6 +18,13 @@
 - Fix grammar error in German localized UI text string. [#3063](https://github.com/mmistakes/minimal-mistakes/pull/3063)
 - Remove site.url from first breadcrumb link. [#3051](https://github.com/mmistakes/minimal-mistakes/pull/3051)
 
+### Enhancements (HouuYa's Blog)
+
+- **Homepage Design**: Applied "Premium Dark" theme with glassmorphism, neon glow effects, and smooth hover animations.
+- **Responsiveness**: Fixed layout shrinking on large screens (1600px+) by implementing a fluid Flexbox layout for feature cards.
+- **Typography**: Enhanced card titles with gradient text and improved legibility.
+- **Layout**: Increased page maximum width on ultra-wide monitors for better space utilization.
+
 ### Enhancements
 
 - Update breadcrumbs conditional to enable/disable them via Front Matter on pages using `layout: single`. [#3096](https://github.com/mmistakes/minimal-mistakes/pull/3096) [#3669](https://github.com/mmistakes/minimal-mistakes/pull/3669)
