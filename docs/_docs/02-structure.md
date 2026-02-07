@@ -16,7 +16,7 @@ minimal-mistakes
 |  ├── navigation.yml          # main navigation links
 |  └── ui-text.yml             # text used throughout the theme's UI
 ├── _includes
-|  ├── analytics-providers     # snippets for analytics (Google and custom)
+|  ├── analytics-providers     # snippets for analytics (Google, Swetrix, and custom)
 |  ├── comments-providers      # snippets for comments
 |  ├── footer
 |  |  └── custom.html          # custom snippets to add to site footer
