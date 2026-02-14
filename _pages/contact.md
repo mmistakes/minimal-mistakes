@@ -5,4 +5,4 @@ excerpt: "문의"
 toc: true
 ---
 
-E-mail: koder0205@gmail.com (박성훈)
+E-mail: chanchan01067@gmail.com (신찬영)
