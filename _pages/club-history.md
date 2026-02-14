@@ -13,9 +13,8 @@ toc: true
 
 | 년도         | 이름           | 직책          | BOJ핸들                                                                                            |
 | ------------ | -------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-
-| 2025,2026         | 장근서         | 동아리장      | [haru_101](https://www.acmicpc.net/user/haru_101)                                                |
-| 2023,2024         | 박성훈         | 동아리장      | [koder0205](https://www.acmicpc.net/user/koder0205)                                                |
+| 2025,2026         | 장근서         | 동아리장      | [haru_101](https://www.acmicpc.net/user/haru_101)                                              |
+| 2023,2024         | 박성훈         | 동아리장      | [koder0205](https://www.acmicpc.net/user/koder0205)                                              |
 | 2022년 2학기 | 박정현         | 동아리장      | [pjh9996](https://www.acmicpc.net/user/pjh9996)                                                    |
 | 2022년 1학기 | 박정현, 윤상건 | 공동 동아리장 | [pjh9996](https://www.acmicpc.net/user/pjh9996), [ggj06281](https://www.acmicpc.net/user/ggj06281) |
 | 2021         | 윤상건         | 동아리장      | [ggj06281](https://www.acmicpc.net/user/ggj06281)                                                  |
