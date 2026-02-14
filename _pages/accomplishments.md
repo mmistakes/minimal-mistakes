@@ -14,6 +14,21 @@ toc: true
 - SCPC - Samsung Collegiate Programming Competition
 - 국민대학교 교내 알고리즘 경진대회
 
+
+## 2025
+
+| 대회명                                                                                        | 팀명               | 팀 멤버 | #               |
+| --------------------------------------------------------------------------------------------- | ------------------ | ------- | ----------------|
+| [2025 KPSC Summer Algorithm Challenge Open Contest ](https://www.acmicpc.net/contest/view/1552) | -                  |         | 대회 개최  |
+| [2025 Centroid Cup Open Contest](https://www.acmicpc.net/contest/view/1556) | -                  |         | 연합 대회 개최  |
+
+## 2024
+
+| 대회명                                                                                        | 팀명               | 팀 멤버 | #               |
+| --------------------------------------------------------------------------------------------- | ------------------ | ------- | ----------------|
+| [KPSC Welcome Contest 2024](https://www.acmicpc.net/contest/view/1283) | -                  |         | 연합 대회 개최  |
+| [2024 국민대학교 & 중앙대학교 연합 프로그래밍 경진대회](https://www.acmicpc.net/contest/view/1407) | -                  |         | 연합 대회 개최  |
+
 ## 2023
 
 | 대회명                                                                                        | 팀명               | 팀 멤버 | #               |
