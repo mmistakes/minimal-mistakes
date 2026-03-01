@@ -4,9 +4,8 @@
 
 .page__footer {
   @include clearfix;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+  float: inline-start;
+  margin-inline: 0;
   width: 100%;
   margin-top: 3em;
   color: $muted-text-color;
@@ -18,8 +17,7 @@
 
   footer {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     margin-top: 2em;
     max-width: 100%;
     padding: 0 1em 2em;
@@ -67,13 +65,13 @@
     text-transform: uppercase;
   }
 
-  li + li:before {
+  li + li::before {
     content: "";
-    padding-right: 5px;
+    padding-inline-end: 5px;
   }
 
   a {
-    padding-right: 10px;
+    padding-inline-end: 10px;
     font-weight: bold;
   }
 

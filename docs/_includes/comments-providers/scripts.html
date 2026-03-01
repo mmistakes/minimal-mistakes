@@ -1,0 +1,11 @@
+{% comment %}
+  Repurposing this file as "after-scripts.html" snippet,
+  since the docs site isn't using comments anyway.
+{% endcomment %}
+<style>
+.google-auto-placed {
+  margin: 2em auto;
+}
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
