@@ -1,20 +1,18 @@
 source "https://rubygems.org"
 
-# Use Jekyll directly instead of github-pages to avoid native extension issues
-gem "jekyll", "~> 4.3.0"
-gem "jekyll-feed", "~> 0.12"
-gem "jekyll-sitemap"
-gem "jekyll-seo-tag"
-gem "jekyll-paginate"
+# Use github-pages gem for better GitHub Pages compatibility
+gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 
 # Theme
 gem "minimal-mistakes-jekyll"
 
-# Windows-specific gems (excluding wdm to avoid native compilation issues)
+# Windows-specific gems
 if Gem.win_platform?
   gem 'tzinfo-data'
 end
 
-gem 'jekyll-archives'
+# Additional gems for Ruby 3.4+ compatibility
+gem 'csv'
+gem 'base64'
 gem 'webrick'
