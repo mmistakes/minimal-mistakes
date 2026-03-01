@@ -1,18 +1,39 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
-search: false
 ---
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// 1. 폰트 설정 (Pretendard: 토스 폰트와 가장 유사한 무료 폰트)
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
+// 2. 토스 스타일 컬러 및 폰트 변수 재정의
+$system-font-family: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$global-font-family: $system-font-family !default;
+$header-font-family: $system-font-family !default;
+$caption-font-family: $system-font-family !default;
 
-// "Cafe24Oneprettynight"
-@font-face {
-    font-family: 'Cafe24Oneprettynight';
-    src: local('Cafe24Oneprettynight'), url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+// 색상 (Toss Blue)
+$primary-color: #3182f6 !default; 
+$text-color: #333d4b !default;       // 진한 회색 (가독성)
+$background-color: #ffffff !default;
+$code-background-color: #f9fafb !default; // 아주 연한 회색
+
+// 3. Minimal Mistakes 테마 가져오기
+@import "minimal-mistakes";
+
+// 4. 추가 커스텀 스타일 (테마 로드 후 덮어쓰기)
+body {
+  background-color: #f9fafb; // 배경을 완전 흰색보다는 아주 연한 회색으로 눈이 편안하게
+}
+
+// 버튼 둥글게 (토스 스타일)
+.btn {
+  border-radius: 8px !important;
+  font-weight: 600;
+}
+
+// 링크 색상 조정
+a {
+  text-decoration: none;
 }
