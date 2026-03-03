@@ -1,0 +1,109 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 페이지들 (about, archives 등) -->
+  {% for page in site.pages %}
+    {% if page.url contains '.xml' or page.url contains 'assets' or page.url contains '.json' %}
+      {% continue %}
+    {% endif %}
+    {% if page.url contains '.js' or page.url contains '.txt' or page.url contains '.html' %}
+      {% continue %}
+    {% endif %}
+    {% if page.url contains '/tags/' or page.url contains '/categories/' %}
+      {% continue %}
+    {% endif %}
+    {% if page.url contains 'norobots' %}
+      {% continue %}
+    {% endif %}
+    {% assign clean_url = page.url | remove: 'index.html' %}
+    {% if clean_url == '/' %}
+      {% continue %}
+    {% endif %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ clean_url }}</loc>
+      {% if page.lastmod %}
+        <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  {% endfor %}
+
+  <!-- 주요 페이지들 -->
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/archives/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Categories -->
+  {% for category in site.categories %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}/categories/{{ category[0] | slugify }}/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  {% endfor %}
+
+  <!-- Tags -->
+  {% for tag in site.tags %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  {% endfor %}
+
+  <!-- Posts -->
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
+</urlset>
