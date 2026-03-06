@@ -1,4 +1,4 @@
-{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
+{% assign locale = include.locale | default: site.locale %}
 {% assign author = page.author | default: page.authors[0] | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 

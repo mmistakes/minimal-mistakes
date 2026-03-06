@@ -1,4 +1,4 @@
-{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
+{% assign locale = include.locale | default: site.locale %}
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
   {% assign paginate_path_last = site.paginate_path | split: '/' | last %}

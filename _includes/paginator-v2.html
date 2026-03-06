@@ -1,4 +1,4 @@
-{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
+{% assign locale = include.locale | default: site.locale %}
 <nav class="pagination">
   <ul>
     {% comment %} Link for previous page {% endcomment %}

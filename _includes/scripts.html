@@ -1,4 +1,4 @@
-{% assign locale = include.locale | default: page.locale | default: layout.locale | default: site.locale %}
+{% assign locale = include.locale | default: site.locale %}
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
@@ -20,7 +20,7 @@
 {% endif %}
 
 {% include analytics.html %}
-{% include /comments-providers/scripts.html %}
+{% include /comments-providers/scripts.html locale=locale %}
 
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}

@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
+  {% include page__hero.html locale=locale %}
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
 {% endif %}

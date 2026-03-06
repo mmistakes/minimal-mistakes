@@ -6,7 +6,7 @@
 {% include copyright.html %}
 <html lang="{{ locale | replace: "_", "-" | default: "en" }}" class="no-js">
   <head>
-    {% include head.html %}
+    {% include head.html locale=locale %}
     {% include head/custom.html %}
   </head>
 
@@ -32,6 +32,6 @@
       </footer>
     </div>
 
-    {% include scripts.html %}
+    {% include scripts.html locale=locale %}
   </body>
 </html>

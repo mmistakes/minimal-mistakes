@@ -1,3 +1,4 @@
+{% assign locale = include.locale | default: site.locale %}
 {% if site.comments.provider and page.comments %}
 {% case site.comments.provider %}
   {% when "disqus" %}
@@ -7,9 +8,9 @@
   {% when "facebook" %}
     {% include /comments-providers/facebook.html %}
   {% when "staticman" %}
-    {% include /comments-providers/staticman.html %}
+    {% include /comments-providers/staticman.html locale=locale %}
   {% when "staticman_v2" %}
-    {% include /comments-providers/staticman_v2.html %}
+    {% include /comments-providers/staticman_v2.html locale=locale %}
   {% when "utterances" %}
     {% include /comments-providers/utterances.html %}
   {% when "giscus" %}
