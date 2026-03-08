@@ -821,7 +821,10 @@ For pages that don't have a `header.image` assigned in their YAML Front Matter, 
 
 ```yaml
 og_image: /assets/images/site-logo.png
+og_image_alt: "Site logo"
 ```
+
+`og_image_alt` sets the default alt text for `og:image:alt` and `twitter:image:alt` meta tags. This can be overridden per-page with `page.header.og_image_alt` in the YAML Front Matter. If no alt text is set, the tags are omitted.
 
 {% include figure
    image_path="/assets/images/mm-twitter-card-summary-image.jpg"
