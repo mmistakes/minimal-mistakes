@@ -702,6 +702,18 @@ Add a Google search box to your site.
 **Note:** If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results.
 {: .notice--info}
 
+#### Pagefind from Cloudcannon
+
+You can use [Pagefind](https://pagefind.app/) to add search for you static site also.
+
+First you build your site like normal, and then afterwards you run the following command.
+
+```bash
+npx -y pagefind --site public
+```
+
+It is important that you run the script after you have build your site (and everytime you rebuild). You can read more in the [Pagefind docs](https://pagefind.app/docs/).
+
 ### SEO, social sharing, and analytics settings
 
 All optional, but a good idea to take the time setting up to improve SEO and links shared from the site.

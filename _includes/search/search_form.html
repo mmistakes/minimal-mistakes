@@ -22,5 +22,12 @@
   {%- when "algolia" -%}
   <div class="search-searchbar"></div>
   <div class="search-hits"></div>
+  {%- when "pagefind" -%}
+  <div id="search"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+  </script>
   {%- endcase -%}
 </div>
