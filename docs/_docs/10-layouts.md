@@ -663,6 +663,8 @@ sidebar:
 **Note:** Custom sidebar content added to a post or page's YAML Front Matter will appear below the author profile if enabled with `author_profile: true`.
 {: .notice--info}
 
+For more advanced customization, create `_includes/sidebar-custom.html` in your site. Its contents are included at the bottom of the sidebar on every page, after the author profile, YAML-defined blocks, and navigation menu. This follows the same pattern as [`head/custom.html`](#custom-head-tags) and `author-profile-custom-links.html`.
+
 ### Custom sidebar navigation menu
 
 To create a sidebar menu[^sidebar-menu] similar to the one found in the theme's documentation pages you'll need to modify a `_data` file and some YAML Front Matter.
