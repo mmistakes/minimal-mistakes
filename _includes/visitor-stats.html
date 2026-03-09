@@ -1,7 +1,7 @@
 {% assign goatcounter_code = site.goatcounter.code | default: '' | strip %}
 {% if goatcounter_code != '' %}
-  <div><dt>Total Visitors</dt><dd id="gc-total">-</dd></div>
-  <div><dt>Today Visitors</dt><dd id="gc-today">-</dd></div>
+  <div class="stats-item"><dt>Total Visitors</dt><dd id="gc-total">0</dd></div>
+  <div class="stats-item"><dt>Today Visitors</dt><dd id="gc-today">0</dd></div>
 
   <script>
     (() => {
@@ -24,9 +24,9 @@
           const response = await fetch(url, { headers: { "Accept": "application/json" } });
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
-          element.textContent = data.count ?? "-";
+          element.textContent = data.count ?? "0";
         } catch {
-          element.textContent = "-";
+          element.textContent = "0";
         }
       }
 

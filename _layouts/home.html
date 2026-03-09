@@ -25,14 +25,11 @@ layout: default
   </article>
   <aside class="stats-card">
     <h2>Blog Stats</h2>
-    <dl>
-      <div><dt>Total Posts</dt><dd>{{ site.posts | size }}</dd></div>
+    <dl class="stats-grid">
+      <div class="stats-item"><dt>Total Posts</dt><dd>{{ site.posts | size }}</dd></div>
       {% include visitor-stats.html %}
-      <div><dt>Categories</dt><dd>{{ site.data.sidebar.items | size }}</dd></div>
-      <div>
-        <dt>Last Update</dt>
-        <dd>{% if site.posts.size > 0 %}{{ site.posts.first.date | date: "%Y-%m-%d" }}{% else %}-{% endif %}</dd>
-      </div>
+      <div class="stats-item"><dt>Categories</dt><dd>{{ site.data.sidebar.items | size }}</dd></div>
+      <div class="stats-item"><dt>Last Update</dt><dd>{% if site.posts.size > 0 %}{{ site.posts.first.date | date: "%Y-%m-%d" }}{% else %}-{% endif %}</dd></div>
     </dl>
   </aside>
 </section>
