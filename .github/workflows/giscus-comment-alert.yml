@@ -1,0 +1,42 @@
+name: Giscus Comment Alert
+
+on:
+  discussion_comment:
+    types: [created]
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: ${{ github.event.sender.type != 'Bot' && github.event.sender.login != github.repository_owner }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram alert
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          REPO: ${{ github.repository }}
+          COMMENTER: ${{ github.event.sender.login }}
+          DISCUSSION_TITLE: ${{ github.event.discussion.title }}
+          DISCUSSION_NUMBER: ${{ github.event.discussion.number }}
+        run: |
+          if [ -z "$TG_BOT_TOKEN" ] || [ -z "$TG_CHAT_ID" ]; then
+            echo "TG_BOT_TOKEN or TG_CHAT_ID is not set. Skip Telegram alert."
+            exit 0
+          fi
+
+          DISCUSSION_URL="https://github.com/${REPO}/discussions/${DISCUSSION_NUMBER}"
+
+          MSG=$(cat <<EOF
+💬 새 giscus 댓글
+작성자: ${COMMENTER}
+글: ${DISCUSSION_TITLE}
+링크: ${DISCUSSION_URL}
+EOF
+)
+
+          curl -sS -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TG_CHAT_ID}" \
+            --data-urlencode "text=${MSG}" \
+            --data-urlencode "disable_web_page_preview=true"

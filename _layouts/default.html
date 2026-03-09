@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
     <script defer src="{{ '/assets/site.js' | relative_url }}"></script>
+    {% assign goatcounter_code = site.goatcounter.code | default: '' | strip %}
+    {% if goatcounter_code != '' %}
+      <script
+        data-goatcounter="https://{{ goatcounter_code }}.goatcounter.com/count"
+        async
+        src="https://gc.zgo.at/count.js"></script>
+    {% endif %}
   </head>
   <body data-baseurl="{{ site.baseurl | default: '' }}">
     <div class="site-shell">

@@ -33,6 +33,7 @@ layout: default
         <dd>{% if site.posts.size > 0 %}{{ site.posts.first.date | date: "%Y-%m-%d" }}{% else %}-{% endif %}</dd>
       </div>
     </dl>
+    {% include visitor-stats.html %}
   </aside>
 </section>
 

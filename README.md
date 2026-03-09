@@ -21,17 +21,20 @@
 1. 저장소 시크릿/변수
 - `Settings -> Secrets and variables -> Actions`
 - `Repository secrets`에 `ANTHROPIC_API_KEY` 추가
+- `Repository secrets`에 `TG_BOT_TOKEN`, `TG_CHAT_ID` 추가 (댓글/실패 알림용)
 - 선택: `Repository variables`에 `ANTHROPIC_MODEL` 추가
   - 기본값: `claude-haiku-4-5-20251001`
 
 2. GitHub Pages
 - `Settings -> Pages`
 - Build and deployment -> Source: `GitHub Actions`
+- 기본 브랜치는 `main`으로 운영
 
 3. 배포
-- `main` 또는 `master` 브랜치에 push
+- `main` 브랜치에 push
 - `pages-deploy.yml`: 사이트 배포
 - `auto-post.yml`: 매일 `00:00 UTC` 자동 실행 (= KST 09:00) + 수동 실행 가능
+- `giscus-comment-alert.yml`: 새 giscus 댓글 발생 시 텔레그램 알림
 
 ## 댓글(giscus) 설정
 
@@ -43,8 +46,28 @@ giscus는 GitHub Discussions 기반 댓글입니다.
 - `comments.giscus.repo_id`
 - `comments.giscus.category`
 - `comments.giscus.category_id`
+4. 새 댓글 알림은 `.github/workflows/giscus-comment-alert.yml`이 담당합니다.
+   - `TG_BOT_TOKEN`, `TG_CHAT_ID`가 있어야 텔레그램 전송 가능
+   - `discussion_comment` 이벤트는 기본 브랜치(`main`)에 워크플로가 있어야 동작합니다.
 
 `category_id`가 비어 있으면 댓글 영역에 안내 문구가 표시됩니다.
+
+## 방문자 수(GoatCounter)
+
+정적 블로그이므로 방문자 수는 GoatCounter를 사용합니다.
+
+1. https://www.goatcounter.com/ 에서 사이트 생성
+2. 사이트 설정에서 **visitor counts 공개 사용 허용** 활성화
+3. 발급받은 코드(예: `example-blog`)를 `_config.yml`의 아래 값에 입력
+
+```yml
+goatcounter:
+  code: "example-blog"
+```
+
+적용 위치:
+- 추적 스크립트: `_layouts/default.html`
+- 홈 통계 표시: `_includes/visitor-stats.html`, `_layouts/home.html`
 
 ## 로컬 테스트
 

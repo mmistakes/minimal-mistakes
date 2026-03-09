@@ -1,0 +1,39 @@
+{% assign goatcounter_code = site.goatcounter.code | default: '' | strip %}
+{% if goatcounter_code != '' %}
+  <div class="visitor-stats" aria-label="방문자 통계">
+    <div><dt>Total Visitors</dt><dd id="gc-total">-</dd></div>
+    <div><dt>Today Visitors</dt><dd id="gc-today">-</dd></div>
+  </div>
+
+  <script>
+    (() => {
+      const code = {{ goatcounter_code | jsonify }};
+      const totalEl = document.getElementById("gc-total");
+      const todayEl = document.getElementById("gc-today");
+      if (!code || !totalEl || !todayEl) return;
+
+      const today = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Seoul",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).format(new Date());
+
+      const baseUrl = `https://${code}.goatcounter.com/counter/TOTAL.json`;
+
+      async function fillCount(element, url) {
+        try {
+          const response = await fetch(url, { headers: { "Accept": "application/json" } });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const data = await response.json();
+          element.textContent = data.count ?? "-";
+        } catch {
+          element.textContent = "-";
+        }
+      }
+
+      fillCount(totalEl, baseUrl);
+      fillCount(todayEl, `${baseUrl}?start=${today}&end=${today}`);
+    })();
+  </script>
+{% endif %}

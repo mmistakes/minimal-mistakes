@@ -13,6 +13,8 @@ kramdown:
   input: GFM
 show_excerpts: true
 future: true
+goatcounter:
+  code: ""
 comments:
   provider: giscus
   giscus:
