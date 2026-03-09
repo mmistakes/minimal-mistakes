@@ -304,7 +304,8 @@ a:hover {
 .stats-card dl {
   margin: 0;
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
 }
 
 .stats-card dt {
