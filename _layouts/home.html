@@ -27,13 +27,13 @@ layout: default
     <h2>Blog Stats</h2>
     <dl>
       <div><dt>Total Posts</dt><dd>{{ site.posts | size }}</dd></div>
+      {% include visitor-stats.html %}
       <div><dt>Categories</dt><dd>{{ site.data.sidebar.items | size }}</dd></div>
       <div>
         <dt>Last Update</dt>
         <dd>{% if site.posts.size > 0 %}{{ site.posts.first.date | date: "%Y-%m-%d" }}{% else %}-{% endif %}</dd>
       </div>
     </dl>
-    {% include visitor-stats.html %}
   </aside>
 </section>
 

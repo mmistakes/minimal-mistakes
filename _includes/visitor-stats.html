@@ -1,9 +1,7 @@
 {% assign goatcounter_code = site.goatcounter.code | default: '' | strip %}
 {% if goatcounter_code != '' %}
-  <div class="visitor-stats" aria-label="방문자 통계">
-    <div><dt>Total Visitors</dt><dd id="gc-total">-</dd></div>
-    <div><dt>Today Visitors</dt><dd id="gc-today">-</dd></div>
-  </div>
+  <div><dt>Total Visitors</dt><dd id="gc-total">-</dd></div>
+  <div><dt>Today Visitors</dt><dd id="gc-today">-</dd></div>
 
   <script>
     (() => {
