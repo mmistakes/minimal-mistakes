@@ -607,7 +607,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://mademistakes.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
