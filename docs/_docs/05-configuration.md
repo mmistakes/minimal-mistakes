@@ -1188,6 +1188,12 @@ tag_archive:
   path: /tags/
 ```
 
+To hide the tag and category lists displayed on each post, set `show_taxonomy: false` in `_config.yml`. The taxonomy archive pages themselves are unaffected — only the per-post lists are suppressed.
+
+```yaml
+show_taxonomy: false
+```
+
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
 **Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.md) (copy to `_pages/category-archive.md`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.md) (copy to `_pages/tag-archive.md`).
