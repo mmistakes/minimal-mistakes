@@ -1,5 +1,5 @@
 {% assign locale = include.locale | default: site.locale %}
-<nav class="skip-links">
+<nav class="skip-links" aria-label="Skip links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">{{ site.data.ui-text[locale].skip_primary_nav | default: 'Skip to primary navigation' }}</a></li>
     <li><a href="#main" class="screen-reader-shortcut">{{ site.data.ui-text[locale].skip_content | default: 'Skip to content' }}</a></li>

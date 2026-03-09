@@ -29,6 +29,7 @@
 {%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
 {%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
 {%- assign site_og_image = site.og_image | absolute_url | escape -%}
+{%- assign og_image_alt = page.header.og_image_alt | default: site.og_image_alt | escape -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
@@ -58,8 +59,14 @@
 
 {% if page_large_image %}
   <meta property="og:image" content="{{ page_large_image }}">
+  {% if og_image_alt %}
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
+  {% endif %}
 {% elsif page_teaser_image %}
   <meta property="og:image" content="{{ page_teaser_image }}">
+  {% if og_image_alt %}
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
+  {% endif %}
 {% endif %}
 
 {% if site.twitter.username %}
@@ -71,10 +78,16 @@
   {% if page_large_image %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ page_large_image }}">
+    {% if og_image_alt %}
+      <meta name="twitter:image:alt" content="{{ og_image_alt }}">
+    {% endif %}
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if page_teaser_image %}
       <meta name="twitter:image" content="{{ page_teaser_image }}">
+      {% if og_image_alt %}
+        <meta name="twitter:image:alt" content="{{ og_image_alt }}">
+      {% endif %}
     {% endif %}
   {% endif %}
 

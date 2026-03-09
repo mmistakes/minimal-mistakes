@@ -559,7 +559,10 @@ By default the large page header or overlay images are used for sharing previews
 header:
   image: /assets/images/your-page-image.jpg
   og_image: /assets/images/your-og-image.jpg
+  og_image_alt: "Description of the image"
 ```
+
+`og_image_alt` sets alt text for `og:image:alt` and `twitter:image:alt` meta tags. This overrides the site-wide `og_image_alt` set in `_config.yml`.
 
 **ProTip:** `og_image` is useful for setting OpenGraph images on pages that don't have a header or overlay image.
 {: .notice--info}

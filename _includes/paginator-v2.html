@@ -1,5 +1,5 @@
 {% assign locale = include.locale | default: site.locale %}
-<nav class="pagination">
+<nav class="pagination" aria-label="Pagination">
   <ul>
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}

@@ -13,7 +13,7 @@
   {% assign crumb_path = site.category_archive.path %}
 {% endif %}
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
   <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     {% assign crumbs = page.url | split: '/' %}
     {% assign i = 1 %}

@@ -1,6 +1,6 @@
 {% assign locale = include.locale | default: site.locale %}
 {% if paginator.total_pages > 1 %}
-<nav class="pagination">
+<nav class="pagination" aria-label="Pagination">
   {% assign paginate_path_last = site.paginate_path | split: '/' | last %}
   {% assign first_page_path = paginator.first_page_path | default: site.paginate_path | replace: paginate_path_last, '' | replace: '//', '/' | relative_url %}
   <ul>
