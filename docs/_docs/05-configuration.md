@@ -947,11 +947,12 @@ To customize the author sidebar, read the full [layout documentation]({{ "/docs/
 
 Footer links can be added under the `footer.links` array.
 
-| Name      | Description                                                                                           |
-| --------- | ----------------------------------------------------------------------------------------------------- |
-| **label** | Link label (e.g. `"Twitter"`)                                                                         |
-| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                     |
+| Name      | Description                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **label** | Link label (e.g. `"Twitter"`)                                                                                                                                 |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`)                                                         |
+| **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                                                                             |
+| **rel**   | Optional [link relation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel) appended to the default `nofollow noopener noreferrer` (e.g. `"me"` for [IndieWeb web sign-in](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)) |
 
 ```yaml
 footer:
@@ -962,6 +963,7 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mmistakes"
+      rel: "me"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mmistakes"
