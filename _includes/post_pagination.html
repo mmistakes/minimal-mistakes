@@ -1,5 +1,5 @@
 {% if page.previous or page.next %}
-  <nav class="pagination">
+  <nav class="pagination" aria-label="Post pagination">
     {% if page.previous %}
       <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html | strip}}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% else %}
