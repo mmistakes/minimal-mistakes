@@ -923,7 +923,7 @@ Author links are all optional, include the ones you want visible under the `auth
 | Name      | Description                                                                                           |
 | --------- | ----------------------------------------------------------------------------------------------------- |
 | **label** | Link label (e.g. `"Twitter"`)                                                                         |
-| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-square-x-twitter"`) |
 | **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                     |
 
 ```yaml
@@ -937,7 +937,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://mademistakes.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -956,7 +956,7 @@ Footer links can be added under the `footer.links` array.
 | Name      | Description                                                                                                                                                   |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **label** | Link label (e.g. `"Twitter"`)                                                                                                                                 |
-| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`)                                                         |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-square-x-twitter"`)                                                         |
 | **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                                                                             |
 | **rel**   | Optional [link relation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel) appended to the default `nofollow noopener noreferrer` (e.g. `"me"` for [IndieWeb web sign-in](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)) |
 
@@ -964,7 +964,7 @@ Footer links can be added under the `footer.links` array.
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

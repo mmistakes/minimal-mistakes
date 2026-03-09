@@ -28,7 +28,7 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
         </li>
       {% endif %}
 
@@ -52,7 +52,7 @@
         <li>
           <a href="mailto:{{ author.email }}" rel="me" class="u-email">
             <meta itemprop="email" content="{{ author.email }}" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[locale].email_label | default: "Email" }}</span>
+            <i class="fas fa-fw fa-square-envelope" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[locale].email_label | default: "Email" }}</span>
           </a>
         </li>
       {% endif %}
@@ -68,7 +68,7 @@
       {% if author.twitter %}
         <li>
           <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
+            <i class="fab fa-fw fa-square-x-twitter" aria-hidden="true"></i><span class="label">Twitter</span>
           </a>
         </li>
       {% endif %}
@@ -76,7 +76,7 @@
       {% if author.facebook %}
         <li>
           <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-            <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span>
+            <i class="fab fa-fw fa-square-facebook" aria-hidden="true"></i><span class="label">Facebook</span>
           </a>
         </li>
       {% endif %}
@@ -92,7 +92,7 @@
       {% if author.xing %}
         <li>
           <a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-            <i class="fab fa-fw fa-xing-square" aria-hidden="true"></i><span class="label">XING</span>
+            <i class="fab fa-fw fa-square-xing" aria-hidden="true"></i><span class="label">XING</span>
           </a>
         </li>
       {% endif %}
@@ -108,7 +108,7 @@
       {% if author.tumblr %}
         <li>
           <a href="https://{{ author.tumblr }}.tumblr.com" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-            <i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i><span class="label">Tumblr</span>
+            <i class="fab fa-fw fa-square-tumblr" aria-hidden="true"></i><span class="label">Tumblr</span>
           </a>
         </li>
       {% endif %}
@@ -148,7 +148,7 @@
       {% if author.lastfm %}
         <li>
           <a href="https://last.fm/user/{{ author.lastfm }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-            <i class="fab fa-fw fa-lastfm-square" aria-hidden="true"></i><span class="label">Last.fm</span>
+            <i class="fab fa-fw fa-square-lastfm" aria-hidden="true"></i><span class="label">Last.fm</span>
           </a>
         </li>
       {% endif %}
