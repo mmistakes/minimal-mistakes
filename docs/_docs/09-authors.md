@@ -18,6 +18,7 @@ Billy Rick:
   name        : "Billy Rick"
   bio         : "What do you want, jewels? I am a very extravagant man."
   avatar      : "/assets/images/bio-photo-2.jpg"
+  fediverse   : "@billyrick@instance.social"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
