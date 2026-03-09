@@ -83,6 +83,9 @@ _Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _Unit
 
 Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
 
+**Note:** Localization can also be overridden per page by specifying `locale` in the front matter.
+{: .notice--info}
+
 **Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
 {: .notice--warning}
 
