@@ -119,6 +119,7 @@ author:
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
+  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"

@@ -798,6 +798,18 @@ And if I assign `@mmistakes` as an author account it will appear in the Twitter 
 **Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they begin showing up.
 {: .notice--warning}
 
+##### Fediverse creator
+
+If the site author (or a per-page author override) has a `fediverse` value set, a `<meta name="fediverse:creator">` tag is emitted. This enables "by @user@instance" attribution on Mastodon, Pixelfed, Flipboard, and other fediverse platforms — the same role `twitter:creator` plays for Twitter Cards.
+
+The value is set in the `author` block of `_config.yml` (or in `_data/authors.yml` for multi-author sites):
+
+```yaml
+author:
+  name: "Your Name"
+  fediverse: "@you@instance.social"
+```
+
 ##### Facebook Open Graph
 
 If you have a Facebook ID or publisher page add them:
@@ -916,6 +928,7 @@ author:
   avatar   : "/assets/images/bio-photo.jpg"
   bio      : "My awesome biography constrained to a sentence or two goes here."
   location : "Somewhere, USA"
+  fediverse: "@you@instance.social"
 ```
 
 Author links are all optional, include the ones you want visible under the `author.links` array.
