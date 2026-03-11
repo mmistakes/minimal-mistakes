@@ -226,8 +226,6 @@ $text-alignments: left, right, start, end, center, justify;
     $soundcloud-color: ".fa-soundcloud",
     $stackoverflow-color: ".fa-stack-exchange, .fa-stack-overflow",
     $telegram-color: ".fa-telegram",
-    $threads-color: ".fa-threads, .fa-square-threads",
-    $tiktok-color: ".fa-tiktok",
     $tumblr-color: ".fa-tumblr, .fa-tumblr-square, .fa-square-tumblr",
     $twitter-color: ".fa-twitter, .fa-twitter-square",
     $x-color: ".fa-x-twitter, .fa-square-x-twitter",
@@ -236,6 +234,9 @@ $text-alignments: left, right, start, end, center, justify;
     $whatsapp-color: ".fa-whatsapp",
     $xing-color: ".fa-xing, .fa-xing-square, .fa-square-xing",
     $youtube-color: ".fa-youtube",
+
+    // Avoid "Duplicate key #000000 in map" error
+    $black-color: ".fa-threads, .fa-square-threads, .fa-tiktok",
   ) {
     #{$icons} {
       color: $color;

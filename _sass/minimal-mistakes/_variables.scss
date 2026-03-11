@@ -143,8 +143,6 @@ $signal-color: #3a76f0 !default;
 $soundcloud-color: #ff3300 !default;
 $stackoverflow-color: #fe7a15 !default;
 $telegram-color: #2aabee !default;
-$threads-color: #000000 !default;
-$tiktok-color: #000000 !default;
 $tumblr-color: #32506d !default;
 $twitter-color: #55acee !default;
 $x-color: #0f1419 !default;
@@ -153,6 +151,8 @@ $vine-color: #00bf8f !default;
 $whatsapp-color: #25d366 !default;
 $xing-color: #006567 !default;
 $youtube-color: #bb0000 !default;
+
+$black-color: #000000;
 
 /* links */
 $link-color: mix(#000, $info-color, 20%) !default;
