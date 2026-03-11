@@ -52,5 +52,8 @@ Many of the label based keys like `meta_label`, `categories_label`, `tags_label`
 
 ![UI text labels]({{ "/assets/images/mm-ui-text-labels.jpg" | relative_url }})
 
+**Note:** Localization can also be overridden per page by specifying `locale` in the front matter.
+{: .notice--info}
+
 **Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
 {: .notice--warning}

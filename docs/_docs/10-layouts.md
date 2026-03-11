@@ -559,7 +559,10 @@ By default the large page header or overlay images are used for sharing previews
 header:
   image: /assets/images/your-page-image.jpg
   og_image: /assets/images/your-og-image.jpg
+  og_image_alt: "Description of the image"
 ```
+
+`og_image_alt` sets alt text for `og:image:alt` and `twitter:image:alt` meta tags. This overrides the site-wide `og_image_alt` set in `_config.yml`.
 
 **ProTip:** `og_image` is useful for setting OpenGraph images on pages that don't have a header or overlay image.
 {: .notice--info}
@@ -604,7 +607,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://mademistakes.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -659,6 +662,8 @@ sidebar:
 
 **Note:** Custom sidebar content added to a post or page's YAML Front Matter will appear below the author profile if enabled with `author_profile: true`.
 {: .notice--info}
+
+For more advanced customization, create `_includes/sidebar-custom.html` in your site. Its contents are included at the bottom of the sidebar on every page, after the author profile, YAML-defined blocks, and navigation menu. This follows the same pattern as [`head/custom.html`](#custom-head-tags) and `author-profile-custom-links.html`.
 
 ### Custom sidebar navigation menu
 

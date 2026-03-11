@@ -1,6 +1,7 @@
+{% assign locale = include.locale | default: site.locale %}
 <meta charset="utf-8">
 
-{% include seo.html %}
+{% include seo.html locale=locale %}
 
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">

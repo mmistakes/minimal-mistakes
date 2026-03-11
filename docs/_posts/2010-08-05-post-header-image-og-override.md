@@ -3,6 +3,7 @@ title: "Post: Header Image with OpenGraph Override"
 header:
   image: /assets/images/page-header-image.png
   og_image: /assets/images/page-header-og-image.png
+  og_image_alt: "OpenGraph image description"
 categories:
   - Layout
   - Uncategorized
@@ -19,4 +20,5 @@ This post has a header image with an OpenGraph override.
 header:
   image: /assets/images/page-header-image.png
   og_image: /assets/images/page-header-og-image.png
+  og_image_alt: "OpenGraph image description"
 ```

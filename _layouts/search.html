@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
+  {% include page__hero.html locale=locale %}
 {% endif %}
 
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
-    {% include breadcrumbs.html %}
+    {% include breadcrumbs.html locale=locale %}
   {% endunless %}
 {% endif %}
 
 <div id="main" role="main">
-  {% include sidebar.html %}
+  {% include sidebar.html locale=locale %}
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -25,11 +26,11 @@ layout: default
     {%- assign search_provider = site.search_provider | default: "lunr" -%}
     {%- case search_provider -%}
       {%- when "lunr" -%}
-        <input type="text" id="search" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+        <input type="text" id="search" class="search-input" placeholder="{{ site.data.ui-text[locale].search_placeholder_text | default: 'Enter your search term...' }}" />
         <div id="results" class="results"></div>
       {%- when "google" -%}
         <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
-        <input type="text" id="cse-search-input-box-id" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+        <input type="text" id="cse-search-input-box-id" class="search-input" placeholder="{{ site.data.ui-text[locale].search_placeholder_text | default: 'Enter your search term...' }}" />
         </form>
         <div id="results" class="results">
           <gcse:searchresults-only></gcse:searchresults-only>

@@ -29,13 +29,18 @@
 .visually-hidden,
 .screen-reader-text,
 .screen-reader-text span,
-.screen-reader-shortcut {
+.screen-reader-shortcut,
+.sr-only,
+.sr-only-focusable:not(:focus) {
   position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0, 0, 0, 0);
   height: 1px !important;
   width: 1px !important;
+  padding: 0 !important;
   border: 0 !important;
+  margin: -1px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 body:hover .visually-hidden a,
@@ -199,32 +204,38 @@ $text-alignments: left, right, start, end, center, justify;
   }
 
   @each $color, $icons in (
-    $behance-color: ".fa-behance, .fa-behance-square",
+    $behance-color: ".fa-behance, .fa-behance-square, .fa-square-behance",
     $bitbucket-color: ".fa-bitbucket",
     $bluesky-color: ".fa-bluesky, .fa-square-bluesky",
-    $dribbble-color: ".fa-dribbble, .fa-dribbble-square",
-    $facebook-color: ".fa-facebook, .fa-facebook-square, .fa-facebook-f",
+    $discord-color: ".fa-discord",
+    $dribbble-color: ".fa-dribbble, .fa-dribbble-square, .fa-square-dribbble",
+    $facebook-color: ".fa-facebook, .fa-facebook-square, .fa-square-facebook, .fa-facebook-f",
     $flickr-color: ".fa-flickr",
     $foursquare-color: ".fa-foursquare",
-    $github-color: ".fa-github, .fa-github-alt, .fa-github-square",
+    $github-color: ".fa-github, .fa-github-alt, .fa-github-square, .fa-square-github",
     $gitlab-color: ".fa-gitlab",
     $instagram-color: ".fa-instagram, .fa-square-instagram",
     $keybase-color: ".fa-keybase",
-    $lastfm-color: ".fa-lastfm, .fa-lastfm-square",
+    $lastfm-color: ".fa-lastfm, .fa-lastfm-square, .fa-square-lastfm",
     $linkedin-color: ".fa-linkedin, .fa-linkedin-in",
-    $mastodon-color: ".fa-mastodon, .fa-mastodon-square",
-    $pinterest-color: ".fa-pinterest, .fa-pinterest-p, .fa-pinterest-square",
+    $mastodon-color: ".fa-mastodon",
+    $pinterest-color: ".fa-pinterest, .fa-pinterest-p, .fa-pinterest-square, .fa-square-pinterest",
     $reddit-color: ".fa-reddit",
-    $rss-color: ".fa-rss, .fa-rss-square",
+    $rss-color: ".fa-rss, .fa-rss-square, .fa-square-rss",
+    $signal-color: ".fa-signal-messenger",
     $soundcloud-color: ".fa-soundcloud",
     $stackoverflow-color: ".fa-stack-exchange, .fa-stack-overflow",
-    $tumblr-color: ".fa-tumblr, .fa-tumblr-square",
+    $telegram-color: ".fa-telegram",
+    $threads-color: ".fa-threads, .fa-square-treads",
+    $tiktok-color: ".fa-tiktok",
+    $tumblr-color: ".fa-tumblr, .fa-tumblr-square, .fa-square-tumblr",
     $twitter-color: ".fa-twitter, .fa-twitter-square",
-    $vimeo-color: ".fa-vimeo, .fa-vimeo-square, .fa-vimeo-v",
+    $x-color: ".fa-x-twitter, .fa-square-x-twitter",
+    $vimeo-color: ".fa-vimeo, .fa-vimeo-square, .fa-square-vimeo, .fa-vimeo-v",
     $vine-color: ".fa-vine",
-    $xing-color: ".fa-xing, .fa-xing-square",
+    $whatsapp-color: ".fa-whatsapp",
+    $xing-color: ".fa-xing, .fa-xing-square, .fa-square-xing",
     $youtube-color: ".fa-youtube",
-    $black-color: ".fa-x-twitter, .fa-square-x-twitter, .fa-threads, .fa-square-treads, .fa-tiktok",    
   ) {
     #{$icons} {
       color: $color;

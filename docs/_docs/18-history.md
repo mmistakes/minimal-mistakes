@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-01-02T02:21:49+08:00'
+last_modified_at: '2026-03-09T13:23:46+08:00'
 toc: false
 ---
 
@@ -19,6 +19,50 @@ toc: false
 
 ### Enhancements
 
+- Updated Traditional Chinese translation [#5250](https://github.com/mmistakes/minimal-mistakes/issues/5250)
+- Add built-in support for jekyll-gfm-admonitions [#5312](https://github.com/mmistakes/minimal-mistakes/issues/5312)
+- Add Latte and Mocha skins from Catppuccin project [#5341](https://github.com/mmistakes/minimal-mistakes/issues/5341)
+- Add support for Swetrix, a GDPR-compliant analytics provider [#5344](https://github.com/mmistakes/minimal-mistakes/issues/5344)
+- Support resolving `ui-text` using `page.locale` when available [#5439](https://github.com/mmistakes/minimal-mistakes/issues/5439)
+- Add `aria-label` to all nav elements for WCAG compliance [#5442](https://github.com/mmistakes/minimal-mistakes/issues/5442)
+- Add IndieWeb microformat support and configurable footer `rel` attribute [#5443](https://github.com/mmistakes/minimal-mistakes/issues/5443)
+- Add `og:image:alt` and `twitter:image:alt` support [#5444](https://github.com/mmistakes/minimal-mistakes/issues/5444)
+- Minor changes to the PR auto labeling GitHub Actions workflow
+
+## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
+
+### Bug Fixes
+
+- Add explicit CSS rules for `.sr-only` following Font Awesome 7's changes. [#5296](https://github.com/mmistakes/minimal-mistakes/issues/5296)
+
+## [4.27.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.2)
+
+### Enhancements
+
+- Hide `.page__footer-follow` if there are no links nor atom feed. [#5279](https://github.com/mmistakes/minimal-mistakes/issues/5279)
+- Add HTML escaping for some titles, labels and metada that was missing. [#5276](https://github.com/mmistakes/minimal-mistakes/issues/5276)
+- Add optional `footer.since` for copyright time range. [#5275](https://github.com/mmistakes/minimal-mistakes/issues/5275)
+
+### Bug Fixes
+
+- Add `escape_once` to gallery title and alt text.
+
+## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
+
+### Enhancements
+
+- Add a "Share on Bluesky" button [#5179](https://github.com/mmistakes/minimal-mistakes/issues/5179)
+- Add preset variables for modern font stack [#5033](https://github.com/mmistakes/minimal-mistakes/issues/5033)
+- Update X share button to match brand color [#5245](https://github.com/mmistakes/minimal-mistakes/issues/5245)
+
+### Bug Fixes
+
+- Fix wrong icon and color for X share button.
+
+## [4.27.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.0)
+
+### Enhancements
+
 - Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
 - Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
 - Rewrite most directions with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
@@ -28,6 +72,8 @@ toc: false
 - Use `documents-collection.html` partial in `home` layout.
 - Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
 - Add provider and comments info to `single.html` layout for non-production. [#5068](https://github.com/mmistakes/minimal-mistakes/issues/5068)
+- Tweak contrast skin $primary-color to adhere to WCAG guidelines. [#5126](https://github.com/mmistakes/minimal-mistakes/issues/5126)
+- Update social share buttons to reflect Twitter rebranding to X [#5210](https://github.com/mmistakes/minimal-mistakes/issues/5210)
 
 ### Bug Fixes
 
@@ -38,6 +84,8 @@ toc: false
 - Fix bad &lt;figure&gt; HTML if "alt" contains quotes.
 - Fix extra newline generated in `_includes/post_pagination.html`.
 - Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
+- Fix typo in "Configuration" [#5106](https://github.com/mmistakes/minimal-mistakes/issues/5106)
+- bundle exec jekyll serve will fail if more than once [#5193](https://github.com/mmistakes/minimal-mistakes/issues/5193)
 
 ### Documentation & Maintenance
 

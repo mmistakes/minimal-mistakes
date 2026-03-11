@@ -20,13 +20,13 @@ Billy Rick:
   avatar      : "/assets/images/bio-photo-2.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-square-envelope"
       url: "mailto:billyrick@rick.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://thewhip.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/extravagantman"
 
 Cornelius Fiddlebone:
@@ -35,10 +35,10 @@ Cornelius Fiddlebone:
   avatar      : "/assets/images/bio-photo.jpg"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-square-envelope"
       url: "mailto:cornelius@thewhip.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/rhymeswithsackit"
 ```
 

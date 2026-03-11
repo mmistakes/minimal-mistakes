@@ -1,4 +1,5 @@
+{% assign locale = include.locale | default: site.locale %}
 {% assign posts = site.tags[include.taxonomy] | where_exp: "post", "post.hidden != true" %}
 {%- for post in posts -%}
-  {% include archive-single.html %}
+  {% include archive-single.html locale=locale %}
 {%- endfor -%}

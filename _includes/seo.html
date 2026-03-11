@@ -1,3 +1,4 @@
+{% assign locale = include.locale | default: site.locale %}
 <!-- begin _includes/seo.html -->
 {%- assign title_separator = site.title_separator | default: '-' -%}
 
@@ -28,6 +29,7 @@
 {%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
 {%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
 {%- assign site_og_image = site.og_image | absolute_url | escape -%}
+{%- assign og_image_alt = page.header.og_image_alt | default: site.og_image_alt | escape -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
@@ -35,19 +37,19 @@
   {%- assign og_type = "website" -%}
 {%- endif -%}
 
-<title>{{ seo_title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+<title>{{ seo_title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
 
 {% if author.name %}
-  <meta name="author" content="{{ author.name | default: author }}">
+  <meta name="author" content="{{ author.name | default: author | escape_once | strip }}">
   {% if og_type == "article" %}
-  <meta property="article:author" content="{{ author.name | default: author }}">
+  <meta property="article:author" content="{{ author.name | default: author | escape_once | strip }}">
   {% endif %}
 {% endif %}
 
 <meta property="og:type" content="{{ og_type }}">
-<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ locale | replace: "-", "_" | default: "en_US" }}">
+<meta property="og:site_name" content="{{ site.title | escape_once | strip }}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:url" content="{{ canonical_url }}">
 
@@ -57,8 +59,14 @@
 
 {% if page_large_image %}
   <meta property="og:image" content="{{ page_large_image }}">
+  {% if og_image_alt %}
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
+  {% endif %}
 {% elsif page_teaser_image %}
   <meta property="og:image" content="{{ page_teaser_image }}">
+  {% if og_image_alt %}
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
+  {% endif %}
 {% endif %}
 
 {% if site.twitter.username %}
@@ -70,16 +78,26 @@
   {% if page_large_image %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ page_large_image }}">
+    {% if og_image_alt %}
+      <meta name="twitter:image:alt" content="{{ og_image_alt }}">
+    {% endif %}
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if page_teaser_image %}
       <meta name="twitter:image" content="{{ page_teaser_image }}">
+      {% if og_image_alt %}
+        <meta name="twitter:image:alt" content="{{ og_image_alt }}">
+      {% endif %}
     {% endif %}
   {% endif %}
 
   {% if author_twitter %}
     <meta name="twitter:creator" content="@{{ author_twitter }}">
   {% endif %}
+{% endif %}
+
+{% if author.fediverse %}
+  <meta name="fediverse:creator" content="{{ author.fediverse }}">
 {% endif %}
 
 {% if page.date %}
