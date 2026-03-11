@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 
 ### Enhancements
 
@@ -12,7 +12,18 @@
 - Add `aria-label` to all nav elements for WCAG compliance (#5442)
 - Add IndieWeb microformat support and configurable footer `rel` attribute (#5443)
 - Add `og:image:alt` and `twitter:image:alt` support (#5444)
+- Add `fediverse:creator` meta tag for link preview attribution (#5445)
+- Update hardcoded icon classes for Font Awesome 6 (#5446)
+- Add missing brand-color rules for newer social platforms (#5447)
+- Add custom sidebar content hook (#5448)
+- Add config toggle to suppress taxonomy display on posts (#5449)
 - Minor changes to the PR auto labeling GitHub Actions workflow
+
+Special thanks to @bexelbie for their contributions in this release.
+
+### Bug Fixes
+
+- Fix some social icon colors and missing Korean translations (#5103)
 
 ## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
 
