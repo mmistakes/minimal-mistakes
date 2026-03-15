@@ -60,7 +60,7 @@ permalink: /projects/
     <p>Using RL for training bots to play the online battle game Pokémon Showdown</p>
     <div class="project-links">
       <a href="https://github.com/dsgiitr/PikaBot-RL" target="_blank">GitHub</a>
-      <a href="{{ site.baseurl }}/projects/visual_ml/">Details</a>
+      <a href="{{ site.baseurl }}/projects/pikabot_rl/">Details</a>
     </div>
   </div>
 
