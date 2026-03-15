@@ -15,10 +15,11 @@ jobs:
     env:
       TZ: Asia/Seoul
     steps:
-      - name: Checkout
+      - name: Checkout (main only)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -44,14 +45,20 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
         run: python scripts/auto_post.py
 
-      - name: Commit and push if changed
+      - name: Commit and push if changed (main only)
         run: |
+          current_branch="$(git rev-parse --abbrev-ref HEAD)"
+          if [ "$current_branch" != "main" ]; then
+            echo "::error::This workflow is main-only. Current branch: $current_branch"
+            exit 1
+          fi
+
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "chore: auto-generate daily posts"
-            git push
+            git push origin HEAD:main
           else
             echo "No changes to commit."
           fi

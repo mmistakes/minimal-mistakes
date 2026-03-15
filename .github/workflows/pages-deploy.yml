@@ -7,6 +7,7 @@ on:
   workflow_run:
     workflows: ["Auto Generate Posts"]
     types: [completed]
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -22,8 +23,10 @@ jobs:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (main only)
         uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll

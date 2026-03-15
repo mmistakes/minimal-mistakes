@@ -36,6 +36,11 @@
 - `auto-post.yml`: 매일 `00:00 UTC` 자동 실행 (= KST 09:00) + 수동 실행 가능
 - `giscus-comment-alert.yml`: 새 giscus 댓글 발생 시 텔레그램 알림
 
+### 브랜치 운영 정책 (중요)
+- 블로그 운영/배포 기준 브랜치는 **main only** 입니다.
+- 자동화 워크플로(`auto-post.yml`, `pages-deploy.yml`)도 `main` 기준으로 동작합니다.
+- 예외적으로 `main`이 아닌 브랜치를 사용할 경우, PR/커밋/작업 지시에 **대상 브랜치를 명시**해야 합니다.
+
 ## 댓글(giscus) 설정
 
 giscus는 GitHub Discussions 기반 댓글입니다.
