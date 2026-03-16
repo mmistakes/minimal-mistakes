@@ -172,9 +172,9 @@ body {
   }
 
   /* vertical alignment for first content */
-  :first-child, 
+  *:first-child, 
   aside + :nth-child(2) {
-    margin-top: 0em;
+    margin-top: 0 !important;
   }
 }
 
