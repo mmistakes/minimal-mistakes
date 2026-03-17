@@ -225,7 +225,7 @@ title: Home
 
 <div class="intro-wrapper">
 <div class="announcement-box">
-  📢 Latest: <a href="https://bh26-app-production.up.railway.app/competition" target="_blank" style="color: #007bff; font-weight: 600;">Beginner's Hypothesis for Sophomores is Live!</a>
+  📢 Latest: <a href="https://www.instagram.com/p/DUNTVudAAU4/" target="_blank" style="color: #007bff; font-weight: 600;">Recruitment Post is Live!</a>
 </div>
 
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
