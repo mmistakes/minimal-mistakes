@@ -376,7 +376,7 @@ layout: splash
       <p class="excerpt">Words are more than just words—discover how word embeddings turn text into numerical representations for smarter machine learning models.</p>
     </div>
   </div>
-
+<!-- 
   <div class="categories">
     <h2>Categories</h2>
     <ul>
@@ -389,7 +389,7 @@ layout: splash
       <li>Time Series Analysis</li>
       <li>AI in Industry</li>
     </ul>
-  </div>
+  </div> -->
 
   <div class="contribute">
     <p>If you're a Data Science enthusiast and want to contribute your knowledge and ideas, feel free to get in touch! We are always looking for new authors who can share their insights and experiences in the world of Data Science and AI.</p>
