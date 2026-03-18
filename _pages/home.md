@@ -225,7 +225,7 @@ title: Home
 
 <div class="intro-wrapper">
 <div class="announcement-box">
-  📢 Latest: <a href="https://www.instagram.com/p/DUNTVudAAU4/" target="_blank" style="color: #007bff; font-weight: 600;">Recruitment Post is Live!</a>
+  📢 Latest: <a href="https://www.instagram.com/p/DUNTVudAAU4/" target="_blank" style="color: #007bff; font-weight: 600;">Our recruitment results for 2026 are out!</a>
 </div>
 
   <h1 class="tagline">Code <span class="highlight-train">Train</span> Predict</h1>
