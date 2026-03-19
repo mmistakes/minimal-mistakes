@@ -13,6 +13,15 @@
   --nav-ink: #2D2D2D;
   --chip: #FFFFFF33;
   --featured: #C53D43;
+
+  /* ── Category Colors ── */
+  --cat-ai-daily-news: #3D5A80;
+  --cat-ai:            #0EA5E9;
+  --cat-python:        #2563EB;
+  --cat-nextjs:        #7C3AED;
+  --cat-java:          #C53D43;
+  --cat-sql:           #10B981;
+  --cat-data-infra:    #F59E0B;
 }
 
 * {
@@ -180,10 +189,9 @@ a:hover {
 }
 
 .sidebar-link {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  display: flex;
   align-items: center;
-  column-gap: 8px;
+  gap: 6px;
   width: 100%;
   border: none;
   border-radius: 2px;
@@ -194,7 +202,8 @@ a:hover {
   font-weight: 400;
 }
 
-.sidebar-link > span:first-child {
+.sidebar-link .nav-label {
+  flex: 1;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -214,6 +223,10 @@ a:hover {
 
 .sidebar-link.is-active .count {
   color: #F7F6F3;
+}
+
+.sidebar-link.is-active .cat-dot {
+  background: rgba(255, 255, 255, 0.75) !important;
 }
 
 .count {
@@ -263,7 +276,7 @@ a:hover {
 /* ── Hero Grid ── */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr 310px;
   gap: 24px;
   margin-bottom: 24px;
 }
@@ -322,8 +335,8 @@ a:hover {
 .stats-card .stats-grid {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, max-content);
+  gap: 16px 28px;
 }
 
 .stats-card .stats-item {
@@ -333,9 +346,10 @@ a:hover {
 .stats-card dt {
   color: var(--muted);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .stats-card dd {
@@ -424,7 +438,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 2px;
   padding: 20px 24px;
-  background: transparent;
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -596,6 +610,84 @@ pre code {
 .comments-panel h2 {
   margin-bottom: 14px;
 }
+
+/* ── Category Color System ── */
+
+/* Sidebar category dot */
+.cat-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+/* Sidebar dot colors by category */
+[data-category="ai-daily-news"] .cat-dot { background: var(--cat-ai-daily-news); }
+[data-category="ai"]            .cat-dot { background: var(--cat-ai); }
+[data-category="python"]        .cat-dot { background: var(--cat-python); }
+[data-category="nextjs"]        .cat-dot { background: var(--cat-nextjs); }
+[data-category="java"]          .cat-dot { background: var(--cat-java); }
+[data-category="sql"]           .cat-dot { background: var(--cat-sql); }
+[data-category="data-infra"]    .cat-dot { background: var(--cat-data-infra); }
+
+/* Post card left border by category */
+[data-category="ai-daily-news"].grid-post { border-left: 3px solid var(--cat-ai-daily-news); }
+[data-category="ai"].grid-post            { border-left: 3px solid var(--cat-ai); }
+[data-category="python"].grid-post        { border-left: 3px solid var(--cat-python); }
+[data-category="nextjs"].grid-post        { border-left: 3px solid var(--cat-nextjs); }
+[data-category="java"].grid-post          { border-left: 3px solid var(--cat-java); }
+[data-category="sql"].grid-post           { border-left: 3px solid var(--cat-sql); }
+[data-category="data-infra"].grid-post    { border-left: 3px solid var(--cat-data-infra); }
+
+/* Featured panel left border & accent by category */
+[data-category="ai-daily-news"].featured-panel { border-left: 4px solid var(--cat-ai-daily-news); }
+[data-category="ai"].featured-panel            { border-left: 4px solid var(--cat-ai); }
+[data-category="python"].featured-panel        { border-left: 4px solid var(--cat-python); }
+[data-category="nextjs"].featured-panel        { border-left: 4px solid var(--cat-nextjs); }
+[data-category="java"].featured-panel          { border-left: 4px solid var(--cat-java); }
+[data-category="sql"].featured-panel           { border-left: 4px solid var(--cat-sql); }
+[data-category="data-infra"].featured-panel    { border-left: 4px solid var(--cat-data-infra); }
+
+/* Featured kicker color by category */
+[data-category="ai-daily-news"].featured-panel .kicker { color: var(--cat-ai-daily-news); }
+[data-category="ai"].featured-panel            .kicker { color: var(--cat-ai); }
+[data-category="python"].featured-panel        .kicker { color: var(--cat-python); }
+[data-category="nextjs"].featured-panel        .kicker { color: var(--cat-nextjs); }
+[data-category="java"].featured-panel          .kicker { color: var(--cat-java); }
+[data-category="sql"].featured-panel           .kicker { color: var(--cat-sql); }
+[data-category="data-infra"].featured-panel    .kicker { color: var(--cat-data-infra); }
+
+/* Featured title color by category */
+[data-category="ai-daily-news"].featured-panel .featured-title { color: var(--cat-ai-daily-news); }
+[data-category="ai"].featured-panel            .featured-title { color: var(--cat-ai); }
+[data-category="python"].featured-panel        .featured-title { color: var(--cat-python); }
+[data-category="nextjs"].featured-panel        .featured-title { color: var(--cat-nextjs); }
+[data-category="java"].featured-panel          .featured-title { color: var(--cat-java); }
+[data-category="sql"].featured-panel           .featured-title { color: var(--cat-sql); }
+[data-category="data-infra"].featured-panel    .featured-title { color: var(--cat-data-infra); }
+
+/* Post category badge */
+.post-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 2px;
+  color: #fff;
+  background: var(--muted);
+}
+
+[data-category="ai-daily-news"] .post-badge { background: var(--cat-ai-daily-news); }
+[data-category="ai"]            .post-badge { background: var(--cat-ai); }
+[data-category="python"]        .post-badge { background: var(--cat-python); }
+[data-category="nextjs"]        .post-badge { background: var(--cat-nextjs); }
+[data-category="java"]          .post-badge { background: var(--cat-java); }
+[data-category="sql"]           .post-badge { background: var(--cat-sql); }
+[data-category="data-infra"]    .post-badge { background: var(--cat-data-infra); }
 
 /* ── Responsive ── */
 @media (max-width: 980px) {

@@ -53,18 +53,19 @@
 
         <nav class="sidebar-nav">
           <a class="sidebar-link {% if page.url == '/' %}is-active{% endif %}" href="{{ '/' | relative_url }}">
-            <span>Home</span>
+            <span class="nav-label">Home</span>
             <span class="count">·</span>
           </a>
           {% for item in site.data.sidebar.items %}
             {% assign current_count = site.categories[item.key] | size %}
-            <a class="sidebar-link {% if page.category_key == item.key %}is-active{% endif %}" href="{{ item.path | relative_url }}">
-              <span>{{ item.label }}</span>
+            <a class="sidebar-link {% if page.category_key == item.key %}is-active{% endif %}" data-category="{{ item.key }}" href="{{ item.path | relative_url }}">
+              <span class="cat-dot"></span>
+              <span class="nav-label">{{ item.label }}</span>
               <span class="count">{{ current_count }}</span>
             </a>
           {% endfor %}
           <a class="sidebar-link {% if page.url == '/about/' %}is-active{% endif %}" href="{{ '/about/' | relative_url }}">
-            <span>About</span>
+            <span class="nav-label">About</span>
             <span class="count">·</span>
           </a>
         </nav>

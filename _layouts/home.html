@@ -29,7 +29,8 @@ layout: default
 </section>
 
 {% if featured %}
-  <section class="panel featured-panel">
+  {% assign featured_cat = featured.categories | first | downcase | replace: ' ', '-' %}
+  <section class="panel featured-panel" data-category="{{ featured_cat }}">
     <p class="kicker">Featured</p>
     <a class="featured-title" href="{{ featured.url | relative_url }}">{{ featured.title }}</a>
     <p class="featured-excerpt">{{ featured.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
@@ -55,7 +56,11 @@ layout: default
       {% endif %}
       {% if featured == nil or post.url != featured.url %}
         {% assign latest_count = latest_count | plus: 1 %}
-        <article class="grid-post">
+        {% assign post_cat = post.categories | first | downcase | replace: ' ', '-' %}
+        <article class="grid-post" data-category="{{ post_cat }}">
+          {% if post.categories and post.categories.size > 0 %}
+            <span class="post-badge">{{ post.categories | first }}</span>
+          {% endif %}
           <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 130 }}</p>
           <div class="post-meta">
