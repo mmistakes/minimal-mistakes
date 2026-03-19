@@ -3,6 +3,7 @@ $catppuccin-accent: "mauve" !default;
 
 $catppuccin-palette: (
   "latte": (
+    "light": true,
     "rosewater": #dc8a78,
     "flamingo": #dd7878,
     "pink": #ea76cb,
@@ -161,4 +162,17 @@ figure.highlight {
 
 pre.highlight .clipboard-copy-button {
   color: $text-color !important;
+}
+
+@if not _get("light") {
+  .author__urls.social-icons i,
+  .author__urls.social-icons .svg-inline--fa,
+  .page__footer-follow .social-icons i,
+  .page__footer-follow .social-icons .svg-inline--fa  {
+    color: inherit;
+  }
+
+  .ais-search-box .ais-search-box--input {
+    background-color: $form-background-color;
+  }
 }
