@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Harness Engineering: 에이전트 우선 소프트웨어 개발 방법론 실전 가이드"
+title: "Harness Engineering: 에이전트 우선 소프트웨어 개발 방법론"
 date: 2026-03-19 09:53:00 +0900
 categories: [ai-daily-news]
-tags: [ai, codex, harness-engineering, agent-first, software-engineering, architecture, methodology]
+tags: [harness-engineering, codex, ai-agent, software-engineering, architecture, methodology]
 ---
 
 > **원문**: [OpenAI - Harness Engineering: 에이전트 우선 세계에서 Codex 활용하기](https://openai.com/ko-KR/index/harness-engineering/) (2026.02.11)  
@@ -85,7 +85,6 @@ OpenAI는 "하나의 거대한 AGENTS.md" 접근 방식이 실패한 이유를 4
 ```text
 AGENTS.md ← ~100줄, 맵/목차 역할
 ARCHITECTURE.md ← 도메인·레이어 최상위 맵
-
 docs/
 ├── design-docs/
 │   ├── index.md ← 설계 문서 목차
@@ -103,13 +102,13 @@ docs/
 │   └── ...
 ├── generated/
 │   └── db-schema.md ← 자동 생성 문서
-├── DESIGN.md
-├── FRONTEND.md
-├── BACKEND.md
-├── QUALITY_SCORE.md
-├── PLANS.md
-├── RELIABILITY.md
-└── SECURITY.md
+├── DESIGN.md ← 디자인 시스템 규칙
+├── FRONTEND.md ← 프론트엔드 규칙
+├── BACKEND.md ← 백엔드 규칙
+├── QUALITY_SCORE.md ← 도메인별 품질 등급
+├── PLANS.md ← 마스터 플랜
+├── RELIABILITY.md ← 안정성 기준
+└── SECURITY.md ← 보안 규칙
 ```
 
 ### 원칙 3: 아키텍처 기계적 강제 (Mechanical Architecture Enforcement)
@@ -134,6 +133,11 @@ Types → Config → Repo → Service → Runtime → UI
 - **구조적 테스트** — 의존성 방향, 파일 크기, 네이밍 규칙을 CI에서 검증
 - **"취향 불변성"** — 구조화된 로깅, 스키마 네이밍, 플랫폼별 안정성 요구사항 등
 
+**핵심 통찰:**
+
+> 사람 중심 워크플로에서는 이런 규칙이 지나치게 세세하게 느껴질 수 있다.  
+> 에이전트를 사용하면 **한 번 인코딩하면 모든 곳에 즉시 적용**된다.
+
 ### 원칙 4: 에이전트 가독성 우선 (Agent Readability)
 
 사람이 아닌 **에이전트가 읽고 추론할 수 있는 형태**로 시스템을 구성한다.
@@ -156,6 +160,9 @@ Types → Config → Repo → Service → Runtime → UI
 **문제:**
 에이전트는 리포지터리에 이미 존재하는 패턴을 복제한다. 불균일하거나 최적이 아닌 패턴도 복제한다. 시간이 지나면 필연적으로 드리프트가 발생한다.
 
+**실패한 접근: 수동 정리**
+> 매주 금요일(20%)마다 "AI 슬로프" 정리 → 확장 불가
+
 **성공한 접근: 자동 가비지 컬렉션**
 1. **"황금 원칙"을 리포지터리에 인코딩** — `docs/design-docs/core-beliefs.md`
 2. **정기 cleanup 에이전트** 운영 — 편차 검사, 품질 등급 업데이트, 리팩터링 PR 생성
@@ -166,6 +173,8 @@ Types → Config → Repo → Service → Runtime → UI
 ## 3. 실행 가이드: 새 프로젝트에 적용하기
 
 ### Step 1: 리포지터리 기반 구조 생성
+
+프로젝트 루트에 다음 파일/디렉토리를 생성한다:
 
 ```bash
 mkdir -p docs/{design-docs,exec-plans/active,exec-plans/completed,product-specs,references,generated}
@@ -245,6 +254,8 @@ touch docs/{DESIGN.md,FRONTEND.md,BACKEND.md,QUALITY_SCORE.md,PLANS.md,RELIABILI
 
 ### Step 4: core-beliefs.md 작성 (황금 원칙)
 
+이 파일은 **에이전트의 의사결정 프레임워크**이다. 구체적이고 검증 가능해야 한다.
+
 ```markdown
 # Core Beliefs
 
@@ -288,7 +299,7 @@ touch docs/{DESIGN.md,FRONTEND.md,BACKEND.md,QUALITY_SCORE.md,PLANS.md,RELIABILI
 - [이슈 설명]
 ```
 
-완료 시 → `completed/`로 이동, 기술 부채 발견 시 → `tech-debt-tracker.md`에 기록.
+**완료 시 → `completed/`로 이동, 기술 부채 발견 시 → `tech-debt-tracker.md`에 기록**
 
 ### Step 6: QUALITY_SCORE.md 운영
 
@@ -314,6 +325,8 @@ touch docs/{DESIGN.md,FRONTEND.md,BACKEND.md,QUALITY_SCORE.md,PLANS.md,RELIABILI
 
 에이전트가 위반할 수 없도록 **에러 메시지에 수정 지침을 포함**한다.
 
+**ESLint 플러그인 예시 (프론트엔드):**
+
 ```javascript
 // eslint-rules/no-cross-feature-import.js
 module.exports = {
@@ -323,6 +336,7 @@ module.exports = {
         const source = node.source.value;
         const filename = context.getFilename();
 
+        // features/auth/는 features/shell/을 import 불가
         if (filename.includes('/features/auth/') && source.includes('/features/shell/')) {
           context.report({
             node,
@@ -338,20 +352,33 @@ module.exports = {
 };
 ```
 
+**Checkstyle/ArchUnit 예시 (백엔드 Java):**
+
 ```java
 @AnalyzeClasses(packages = "com.example.app")
 class ArchitectureTest {
 
   @ArchTest
   static final ArchRule controllers_should_not_access_mappers =
-    noClasses()
-      .that().resideInAPackage("..controller..")
-      .should().accessClassesThat().resideInAPackage("..mapper..")
-      .because("Controller는 반드시 Service를 경유해야 합니다. 참조: ARCHITECTURE.md");
+      noClasses()
+          .that().resideInAPackage("..controller..")
+          .should().accessClassesThat().resideInAPackage("..mapper..")
+          .because("Controller는 반드시 Service를 경유해야 합니다. " +
+                   "참조: ARCHITECTURE.md 레이어 모델");
+
+  @ArchTest
+  static final ArchRule shared_should_not_depend_on_features =
+      noClasses()
+          .that().resideInAPackage("..shared..")
+          .should().dependOnClassesThat().resideInAPackage("..features..")
+          .because("shared/는 features/에 의존할 수 없습니다. " +
+                   "참조: docs/design-docs/core-beliefs.md");
 }
 ```
 
 ### Step 8: 가비지 컬렉션 프로세스
+
+**자동 정리 에이전트 프롬프트 (주기적 실행):**
 
 ```text
 리포지터리를 검사하고 다음을 수행하세요:
@@ -367,95 +394,182 @@ class ArchitectureTest {
 
 ## 4. 병합 철학
 
-> **핵심 통찰:** 에이전트 처리량이 사람의 주의력을 초과하는 시스템에서는 수정 비용이 저렴하고 대기 비용이 비싸다.
+### 기존 방식 vs Harness Engineering
+
+| 기존 | Harness Engineering |
+|------|---------------------|
+| 2인 이상 리뷰 필수 | 에이전트 리뷰로 대체 가능 |
+| 모든 테스트 통과 필수 | 불안정 테스트는 후속 PR로 해결 |
+| 완벽한 PR 추구 | 빠른 병합 + Fix-Forward |
+| 큰 PR (수백 줄) | 작은 PR (에이전트 1회 실행 단위) |
+
+### 핵심 통찰
+
+> **"에이전트 처리량이 사람의 주의력을 훨씬 초과하는 시스템에서는 수정 비용이 저렴하고 대기 비용이 비싸다."**
 
 - PR은 수명이 짧아야 한다
-- 불안정 테스트는 후속 PR로 빠르게 Fix-Forward
-- 사람 리뷰는 구조적 결정에 집중
+- 테스트 불안정성은 진행을 무기한으로 막기보다는 후속 실행으로 해결
+- 사람의 리뷰는 **구조적 결정**에만 집중
 
 ---
 
 ## 5. 에이전트 자율성 수준 모델
 
-### Level 1: 코드 생성
+OpenAI는 시간이 지나면서 에이전트의 자율성이 단계적으로 증가했다:
+
+### Level 1: 코드 생성 (기본)
+
+```text
 사람 프롬프트 → 에이전트 코드 작성 → 사람 리뷰 → 사람 병합
+```
 
-### Level 2: 코드 + 리뷰
+### Level 2: 코드 + 리뷰 (중급)
+
+```text
 사람 프롬프트 → 에이전트 코드 작성 → 에이전트 자체 리뷰 → 사람 확인 → 병합
+```
 
-### Level 3: 코드 + 리뷰 + 검증
-사람 프롬프트 → 에이전트 코드 작성 → 자체 리뷰 → 앱 실행 검증 → PR 오픈 → 피드백 반영 → 병합
+### Level 3: 코드 + 리뷰 + 검증 (고급)
 
-### Level 4: 완전 자율
-버그 재현, 녹화, 수정, 검증, PR, 피드백 대응, CI 실패 수정, 병합까지 에이전트가 수행하고 판단 필요 시만 에스컬레이션.
+```text
+사람 프롬프트 → 에이전트 코드 작성 → 에이전트 자체 리뷰
+→ 에이전트 앱 실행 & 검증 → 에이전트 PR 오픈
+→ 에이전트 피드백 응답 → 에이전트 병합
+→ 판단 필요 시에만 사람에게 에스컬레이션
+```
 
----
+### Level 4: 완전 자율 (OpenAI 현재)
 
-## 6. 프로젝트 적용 체크리스트
-
-### Day 1
-- [ ] `AGENTS.md` 경량화 (~100줄)
-- [ ] `ARCHITECTURE.md` 작성
-- [ ] `docs/` 구조 생성
-- [ ] `core-beliefs.md` 작성
-- [ ] `QUALITY_SCORE.md` 초기화
-- [ ] 활성 작업을 `docs/exec-plans/active/`에 기록
-
-### 1주
-- [ ] 커스텀 린터 3개 이상
-- [ ] `docs/references/` llms.txt 정리
-- [ ] `docs/generated/` 자동 문서 생성 스크립트
-- [ ] CI docs 신선도 검증
-
-### 1개월
-- [ ] 에이전트 리뷰 워크플로 구축
-- [ ] 주 1회 cleanup 에이전트 자동화
-- [ ] 품질 등급 자동 업데이트
-- [ ] 자율성 Level 2 → 3 전환
+```text
+사람 프롬프트 하나로:
+1. 코드베이스 현재 상태 검증
+2. 버그 재현
+3. 실패 상황 동영상 녹화
+4. 수정사항 구현
+5. 앱 실행하여 수정 검증
+6. 해결 동영상 녹화
+7. PR 오픈
+8. 에이전트/사람 피드백 응답
+9. 빌드 실패 감지 & 수정
+10. 판단 필요 시만 에스컬레이션
+11. 병합
+```
 
 ---
 
-## 7. 안티패턴
+## 6. 체크리스트: 프로젝트 적용 시 확인 사항
 
-- ❌ 거대한 AGENTS.md(500줄+) → ✅ 짧은 맵 + 깊은 문서 포인터
-- ❌ 문서로만 규칙 강제 → ✅ 린터/테스트로 기계적 강제
-- ❌ 수동 정리 데이 → ✅ 주기적 자동 cleanup
-- ❌ Slack/회의 의존 지식 → ✅ 리포지터리 기록
-- ❌ 인간 문체 강요 → ✅ 정확성·유지보수성·에이전트 가독성 우선
+### 즉시 적용 (Day 1)
+
+- [ ] `AGENTS.md` 생성 또는 경량화 (~100줄, 맵 역할)
+- [ ] `ARCHITECTURE.md` 생성 (레이어 모델, 의존성 규칙, 도메인 맵)
+- [ ] `docs/` 디렉토리 구조 생성 (design-docs, exec-plans, product-specs, references)
+- [ ] `docs/design-docs/core-beliefs.md` 작성 (황금 원칙 3~7개)
+- [ ] `docs/QUALITY_SCORE.md` 초기 버전 작성
+- [ ] 현재 진행 중인 작업을 `docs/exec-plans/active/`에 기록
+
+### 1주 내 적용
+
+- [ ] 커스텀 린터 규칙 최소 3개 추가 (에러 메시지에 수정 지침 포함)
+- [ ] 외부 라이브러리 참조 문서를 `docs/references/`에 llms.txt로 정리
+- [ ] DB 스키마 문서를 `docs/generated/`에 자동 생성 스크립트 작성
+- [ ] CI에서 docs/ 신선도 검증 작업 추가
+
+### 1개월 내 적용
+
+- [ ] 에이전트 리뷰 워크플로 구축 (에이전트가 PR 리뷰 + 코멘트)
+- [ ] 가비지 컬렉션 프로세스 자동화 (주 1회 cleanup 에이전트 실행)
+- [ ] 품질 등급 자동 업데이트 스크립트
+- [ ] 에이전트 자율성 Level 2 → Level 3 전환
+
+### 분기별 점검
+
+- [ ] core-beliefs.md가 현재 팀 합의를 반영하는가?
+- [ ] exec-plans/active/에 낡은 계획이 남아있지 않은가?
+- [ ] QUALITY_SCORE.md가 실제 상태를 반영하는가?
+- [ ] 린터 규칙이 실제 위반 패턴을 커버하는가?
 
 ---
 
-## 8. 성과 지표 (OpenAI 사례)
+## 7. 안티패턴: 이것은 피하라
+
+### 안티패턴 1: 거대한 AGENTS.md
+- ❌ 500줄 이상의 상세 지침서
+- ✅ ~100줄의 맵 + 깊은 문서로의 포인터
+
+### 안티패턴 2: 문서로만 강제
+- ❌ "Controller에서 Mapper 직접 호출 금지"라고 문서에만 적기
+- ✅ 린터/테스트로 기계적 강제 + 에러 메시지에 수정 지침
+
+### 안티패턴 3: 수동 가비지 컬렉션
+- ❌ 매주 금요일 "AI 슬로프" 수동 정리
+- ✅ 정기 자동 cleanup 에이전트 운영
+
+### 안티패턴 4: 외부 지식 의존
+- ❌ "Slack에서 합의한 대로" 또는 "지난 미팅에서 결정한 대로"
+- ✅ 모든 결정을 리포지터리에 기록
+
+### 안티패턴 5: 인간 스타일 강요
+- ❌ 에이전트 코드가 인간의 문체와 다르다고 거부
+- ✅ 정확하고, 유지관리 가능하고, 에이전트가 읽기 쉬우면 OK
+
+### 안티패턴 6: 에이전트 실패 시 "더 분발"
+- ❌ 같은 프롬프트를 더 강하게 반복
+- ✅ "어떤 기능이 누락되어 있으며, 에이전트가 실행 가능하게 만들려면 어떻게 해야 할까?" 고민
+
+---
+
+## 8. 성과 지표
+
+OpenAI의 5개월 실험 결과:
 
 | 지표 | 수치 |
 |------|------|
-| 코드 라인 | ~1,000,000 |
-| 기간 | 5개월 |
-| 팀 규모 | 3명 → 7명 |
-| 총 PR | ~1,500개 |
-| 엔지니어 1인당 일 평균 PR | ~3.5개 |
-| 시간 절약 추정 | 수작업 대비 ~1/10 |
-| 사람이 직접 작성한 코드 | 0줄 |
+| **코드 라인** | ~1,000,000 |
+| **기간** | 5개월 |
+| **초기 팀 규모** | 3명 → 7명 |
+| **총 PR** | ~1,500개 |
+| **엔지니어 1인당 일 평균 PR** | ~3.5개 |
+| **시간 절약 추정** | 수작업 대비 ~1/10 |
+| **사용자** | 내부 수백 명 (일일 파워 유저 포함) |
+| **사람이 직접 작성한 코드** | 0줄 |
 
-핵심은 "출력을 위한 출력"이 아니라, **실사용 환경에서 반복 가능한 개발 체계**를 만들었다는 점이다.
+### 중요한 점
 
----
-
-## 9. 결론
-
-Harness Engineering의 본질은 단순히 "AI로 코딩하기"가 아니다.
-
-- 코드보다 **스캐폴딩(환경/제약/검증 루프)** 을 설계하고,
-- 사람은 의도·판단·우선순위에 집중하며,
-- 에이전트는 고속 실행과 반복 검증을 담당한다.
-
-결국 경쟁력은 모델 자체보다도, **리포지터리 구조 + 기계적 강제 + 피드백 루프 설계**에서 나온다.
+> "단지 출력을 위한 출력이 아니었다. 이 제품은 매일 사용하는 내부 파워 유저를 포함해 수백 명의 사용자가 사용해왔다."
 
 ---
 
-## 참고 자료
+## 9. 미해결 질문 (OpenAI도 아직 배우는 중)
 
-- OpenAI, *Harness Engineering* (2026.02.11)  
+1. **완전 에이전트 생성 시스템에서 아키텍처 일관성이 수년에 걸쳐 어떻게 진화하는가?**
+2. **사람의 판단이 가장 큰 영향력을 발휘하는 지점은 어디인가?**
+3. **모델 기능이 향상됨에 따라 이 시스템은 어떻게 발전하는가?**
+
+### OpenAI의 결론
+
+> "소프트웨어를 구축하는 데는 여전히 규율이 필요하지만, 규율은 코드보다는 **스캐폴딩**에서 더 많이 드러난다. 코드베이스의 일관성을 유지하는 **툴링, 추상화, 피드백 루프**는 점점 더 중요해지고 있다."
+
+---
+
+## 부록 A: 용어 사전
+
+| 용어 | 의미 |
+|------|------|
+| **Harness** | 마구(馬具). 에이전트를 올바른 방향으로 이끄는 환경·제약·도구의 총체 |
+| **System of Record** | 유일한 진실의 출처. Harness Engineering에서는 리포지터리 |
+| **Golden Rules** | 황금 원칙. 에이전트가 반드시 따라야 하는 핵심 불변조건 |
+| **Garbage Collection** | 기술 부채를 정기적·자동적으로 해소하는 프로세스 |
+| **Agent Readability** | 에이전트가 코드를 읽고 추론할 수 있는 정도 |
+| **Exec Plan** | 실행 계획. 진행 상황과 의사결정 로그가 포함된 일급 아티팩트 |
+| **Fix-Forward** | 롤백 대신 빠른 수정으로 전진하는 전략 |
+| **Progressive Disclosure** | 에이전트가 필요한 만큼만 점진적으로 깊은 정보를 탐색하는 패턴 |
+| **Ralph Wiggum Loop** | 에이전트가 자체 리뷰 → 수정 → 리뷰를 반복하는 루프 |
+| **llms.txt** | 외부 라이브러리·도구의 에이전트용 요약 참조 문서 |
+
+## 부록 B: 참고 자료
+
+- [원문] OpenAI - Harness Engineering (2026.02.11)  
   https://openai.com/ko-KR/index/harness-engineering/
-- OpenAI, *Codex 하네스 활용하기: OpenAI가 App Server를 구축한 방법* (2026.02.04)  
+- [관련] Codex 하네스 활용하기: OpenAI가 App Server를 구축한 방법 (2026.02.04)  
   https://openai.com/index/harnessing-codex/
