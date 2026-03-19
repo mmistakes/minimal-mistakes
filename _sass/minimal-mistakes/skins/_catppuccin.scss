@@ -122,7 +122,7 @@ $_flavor: map-get($catppuccin-palette, $catppuccin-flavor);
   @return map-get($_flavor, $name);
 }
 
-$gray: _get("mantle") !default;
+$gray: _get("subtext0") !default;
 
 $background-color: _get("base") !default;
 $code-background-color: _get("mantle") !default;
