@@ -1,13 +1,7 @@
 ---
 layout: default
 ---
-{% assign featured = nil %}
-{% for post in site.posts %}
-  {% unless post.categories contains 'english' %}
-    {% assign featured = post %}
-    {% break %}
-  {% endunless %}
-{% endfor %}
+{% assign featured = site.posts.first %}
 
 <section class="hero-grid">
   <article class="hero-card">
@@ -15,12 +9,9 @@ layout: default
     <h1>개발 기록 및 학습 블로그</h1>
     <p>매일 올라오는 AI 뉴스와 개발 관련 학습 글</p>
     <div class="hero-chips">
-      <span>AI Daily News</span>
-      <span>Python</span>
-      <span>Next.js</span>
-      <span>Java</span>
-      <span>SQL</span>
-      <span>Data Infra</span>
+      {% for item in site.data.sidebar.items %}
+        <span>{{ item.label }}</span>
+      {% endfor %}
     </div>
   </article>
   <aside class="stats-card">
@@ -29,8 +20,11 @@ layout: default
       <div class="stats-item"><dt>Total Posts</dt><dd>{{ site.posts | size }}</dd></div>
       {% include visitor-stats.html %}
       <div class="stats-item"><dt>Categories</dt><dd>{{ site.data.sidebar.items | size }}</dd></div>
-      <div class="stats-item"><dt>Last Update</dt><dd>{% if site.posts.size > 0 %}{{ site.posts.first.date | date: "%Y-%m-%d" }}{% else %}-{% endif %}</dd></div>
     </dl>
+    <div class="stats-footer">
+      <span class="stats-footer-label">Last Update</span>
+      <span class="stats-footer-date">{% if site.posts.size > 0 %}{{ site.posts.first.date | date: "%Y-%m-%d" }}{% else %}-{% endif %}</span>
+    </div>
   </aside>
 </section>
 
@@ -59,22 +53,20 @@ layout: default
       {% if latest_count >= 12 %}
         {% break %}
       {% endif %}
-      {% unless post.categories contains 'english' %}
-        {% if featured == nil or post.url != featured.url %}
-          {% assign latest_count = latest_count | plus: 1 %}
-          <article class="grid-post">
-            <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 130 }}</p>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-              {% if post.categories and post.categories.size > 0 %}
-                <span>·</span>
-                <span>{{ post.categories | first }}</span>
-              {% endif %}
-            </div>
-          </article>
-        {% endif %}
-      {% endunless %}
+      {% if featured == nil or post.url != featured.url %}
+        {% assign latest_count = latest_count | plus: 1 %}
+        <article class="grid-post">
+          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 130 }}</p>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+            {% if post.categories and post.categories.size > 0 %}
+              <span>·</span>
+              <span>{{ post.categories | first }}</span>
+            {% endif %}
+          </div>
+        </article>
+      {% endif %}
     {% endfor %}
   {% endcapture %}
   {% if latest_count > 0 %}

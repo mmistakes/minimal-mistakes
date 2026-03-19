@@ -2,6 +2,9 @@ items:
   - key: ai-daily-news
     label: AI Daily News
     path: /categories/ai-daily-news/
+  - key: ai
+    label: AI
+    path: /categories/ai/
   - key: python
     label: Python
     path: /categories/python/
@@ -17,7 +20,3 @@ items:
   - key: data-infra
     label: Data Infra
     path: /categories/data-infra/
-  - key: ai
-    label: AI
-    path: /categories/ai/
-

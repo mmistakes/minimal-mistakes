@@ -2,7 +2,7 @@
 layout: post
 title: "2026-03-06 AI 뉴스 데일리: 에이전트 실전 도입이 더 빨라진다"
 date: 2026-03-06 09:40:00 +0900
-categories: [ai]
+categories: [ai-daily-news]
 tags: [ai-news, daily, automation]
 ---
 
