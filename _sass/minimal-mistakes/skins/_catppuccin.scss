@@ -117,39 +117,39 @@ $catppuccin-palette: (
   )
 );
 
-$catppuccin_flavor: map-get($catppuccin-palette, $catppuccin-flavor-identifier);
+$catppuccin-flavor: map-get($catppuccin-palette, $catppuccin-flavor-identifier);
 
-$gray: map-get($catppuccin_flavor, "subtext0") !default;
+$gray: map-get($catppuccin-flavor, "subtext0") !default;
 
-$background-color: map-get($catppuccin_flavor, "base") !default;
-$code-background-color: map-get($catppuccin_flavor, "mantle") !default;
-$text-color: map-get($catppuccin_flavor, "text") !default;
-$border-color: map-get($catppuccin_flavor, "surface0") !default;
-$form-background-color: map-get($catppuccin_flavor, "mantle") !default;
-$footer-background-color: map-get($catppuccin_flavor, "crust") !default;
+$background-color: map-get($catppuccin-flavor, "base") !default;
+$code-background-color: map-get($catppuccin-flavor, "mantle") !default;
+$text-color: map-get($catppuccin-flavor, "text") !default;
+$border-color: map-get($catppuccin-flavor, "surface0") !default;
+$form-background-color: map-get($catppuccin-flavor, "mantle") !default;
+$footer-background-color: map-get($catppuccin-flavor, "crust") !default;
 
-$primary-color: map-get($catppuccin_flavor, $catppuccin-accent) !default;
-$success-color: map-get($catppuccin_flavor, "green") !default;
-$warning-color: map-get($catppuccin_flavor, "yellow") !default;
-$danger-color: map-get($catppuccin_flavor, "red") !default;
-$info-color: map-get($catppuccin_flavor, "blue") !default;
+$primary-color: map-get($catppuccin-flavor, $catppuccin-accent) !default;
+$success-color: map-get($catppuccin-flavor, "green") !default;
+$warning-color: map-get($catppuccin-flavor, "yellow") !default;
+$danger-color: map-get($catppuccin-flavor, "red") !default;
+$info-color: map-get($catppuccin-flavor, "blue") !default;
 
-$base00: map-get($catppuccin_flavor, "base") !default;
-$base01: map-get($catppuccin_flavor, "mantle") !default;
-$base02: map-get($catppuccin_flavor, "surface0") !default;
-$base03: map-get($catppuccin_flavor, "surface1") !default;
-$base04: map-get($catppuccin_flavor, "surface2") !default;
-$base05: map-get($catppuccin_flavor, "text") !default;
-$base06: map-get($catppuccin_flavor, "rosewater") !default;
-$base07: map-get($catppuccin_flavor, "lavender") !default;
-$base08: map-get($catppuccin_flavor, "red") !default;
-$base09: map-get($catppuccin_flavor, "peach") !default;
-$base0a: map-get($catppuccin_flavor, "yellow") !default;
-$base0b: map-get($catppuccin_flavor, "green") !default;
-$base0c: map-get($catppuccin_flavor, "teal") !default;
-$base0d: map-get($catppuccin_flavor, "blue") !default;
-$base0e: map-get($catppuccin_flavor, "mauve") !default;
-$base0f: map-get($catppuccin_flavor, "flamingo") !default;
+$base00: map-get($catppuccin-flavor, "base") !default;
+$base01: map-get($catppuccin-flavor, "mantle") !default;
+$base02: map-get($catppuccin-flavor, "surface0") !default;
+$base03: map-get($catppuccin-flavor, "surface1") !default;
+$base04: map-get($catppuccin-flavor, "surface2") !default;
+$base05: map-get($catppuccin-flavor, "text") !default;
+$base06: map-get($catppuccin-flavor, "rosewater") !default;
+$base07: map-get($catppuccin-flavor, "lavender") !default;
+$base08: map-get($catppuccin-flavor, "red") !default;
+$base09: map-get($catppuccin-flavor, "peach") !default;
+$base0a: map-get($catppuccin-flavor, "yellow") !default;
+$base0b: map-get($catppuccin-flavor, "green") !default;
+$base0c: map-get($catppuccin-flavor, "teal") !default;
+$base0d: map-get($catppuccin-flavor, "blue") !default;
+$base0e: map-get($catppuccin-flavor, "mauve") !default;
+$base0f: map-get($catppuccin-flavor, "flamingo") !default;
 
 div.highlighter-rouge,
 figure.highlight {
@@ -160,7 +160,7 @@ pre.highlight .clipboard-copy-button {
   color: $text-color !important;
 }
 
-@if not map-get($catppuccin_flavor, "light") {
+@if not map-get($catppuccin-flavor, "light") {
   .author__urls.social-icons i,
   .author__urls.social-icons .svg-inline--fa,
   .page__footer-follow .social-icons i,
