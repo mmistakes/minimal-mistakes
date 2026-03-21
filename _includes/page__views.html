@@ -1,0 +1,9 @@
+{% if site.busuanzi.enable %}
+  <span class="page__meta-sep"></span>
+  <span class="page__meta-views">
+    <i class="far fa-eye" aria-hidden="true"></i>
+    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+      <span id="busuanzi_value_page_pv"></span> {{ site.data.ui-text[site.locale].views_label | default: "次瀏覽" }}
+    </span>
+  </span>
+{% endif %}

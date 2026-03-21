@@ -91,6 +91,10 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+# Page View Counter (Busuanzi 不蒜子)
+busuanzi:
+  enable                 : true  # false (default), true
+
 
 # Site Author
 author:
