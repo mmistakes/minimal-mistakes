@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll 進階設定和調整"
-date:   2021-01-9 21:46:42 +0800
+date:   2021-01-09 21:46:42 +0800
 categories: 程式開發
 tags: [Jekyll, GitHub Pages, 教學]
 ---
