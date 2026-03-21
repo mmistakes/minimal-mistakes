@@ -26,5 +26,9 @@
         {% endif %}
       </span>
     {% endif %}
+
+    {% unless include.type == 'grid' %}
+      {% include page__views.html %}
+    {% endunless %}
   </p>
 {% endif %}

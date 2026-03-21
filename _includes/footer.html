@@ -16,4 +16,11 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+
+  {% if site.busuanzi.enable %}
+    <span id="busuanzi_container_site_pv" class="busuanzi-pv">
+      | {{ site.data.ui-text[site.locale].total_views_label | default: "本站總瀏覽量" }} <span id="busuanzi_value_site_pv"></span> {{ site.data.ui-text[site.locale].views_label | default: "次瀏覽" }}
+    </span>
+  {% endif %}
+</div>

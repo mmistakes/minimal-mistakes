@@ -21,6 +21,10 @@
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
 
+{% if site.busuanzi.enable %}
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+{% endif %}
+
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
