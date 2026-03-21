@@ -1,9 +1,10 @@
 ---
+layout: post
 title: Enable Google Page Views
 author: Dinesh Prasanth Moluguwan Krishnamoorthy
 date: 2021-01-03 18:32:00 -0500
-categories: [Blogging, Tutorial]
-tags: [google analytics, pageviews]
+categories: 程式開發
+tags: [google analytics, pageviews, 教學]
 ---
 
 

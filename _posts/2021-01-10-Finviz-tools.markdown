@@ -2,7 +2,8 @@
 layout: post
 title:  "【美股投資工具】美股常用投資網站介紹"
 date:   2021-01-10 21:55:42 +0800
-categories: Antony update
+categories: 投資理財
+tags: [美股, 投資工具, Finviz]
 ---
 # **【美股投資工具】美股常用投資網站介紹**
 

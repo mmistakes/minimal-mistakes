@@ -2,7 +2,8 @@
 layout: post
 title:  "Markdown 語法教學!"
 date:   2021-01-09 21:46:42 +0800
-categories: Antony update
+categories: 學習筆記
+tags: [Markdown, 教學, 寫作]
 ---
 在這裡，我將會教學如何使用基本的Markdown語法，來幫助剛進入遊戲中，不懂如何寫出漂亮的簡介。
 

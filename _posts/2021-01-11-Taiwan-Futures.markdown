@@ -2,7 +2,8 @@
 layout: post
 title:  "【台灣期貨市場】台指期基本介紹"
 date:   2021-01-11 21:00:00 +0800
-categories: Antony update
+categories: 投資理財
+tags: [台指期, 期貨, 台灣市場]
 ---
 # **【台灣期貨市場】台指期基本介紹**
 
