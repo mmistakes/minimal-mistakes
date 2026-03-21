@@ -2,7 +2,10 @@
 layout: post
 title:  "【台指期盤勢分析】近期走勢回顧與未來趨勢展望"
 date:   2026-03-20 14:00:00 +0800
-categories: Antony update
+categories: 投資理財
+tags: [台指期, 期貨分析, 技術分析]
+header:
+  teaser: "https://github.com/user-attachments/assets/407644d0-fda5-47d8-929d-7f8c742d420d"
 ---
 # **【台指期盤勢分析】近期走勢回顧與未來趨勢展望**
 

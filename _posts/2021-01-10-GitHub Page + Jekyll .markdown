@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Jekyll 進階設定和調整"
-date:   2021-01-9 21:46:42 +0800
-categories: Antony update
+date:   2021-01-09 21:46:42 +0800
+categories: 程式開發
+tags: [Jekyll, GitHub Pages, 教學]
 ---
 在這裡，我將會教學如何使用基本的Markdown語法，來幫助剛進入遊戲中，不懂如何寫出漂亮的簡介。
 

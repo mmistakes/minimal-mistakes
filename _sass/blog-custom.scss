@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Blog Custom Styles - Inspired by github.blog
+   ========================================================================== */
+
+/* ==================== Hero Featured Post ==================== */
+
+.hero-post {
+  margin-bottom: 2em;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+  &:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+    transform: translateY(-2px);
+  }
+}
+
+.hero-post__link {
+  display: block;
+  color: inherit;
+  text-decoration: none !important;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.hero-post__image {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0092ca;
+
+  @media (min-width: 768px) {
+    height: 320px;
+  }
+}
+
+.hero-post__body {
+  padding: 1.5em;
+  background: #fff;
+
+  @media (min-width: 768px) {
+    padding: 2em 2.5em;
+  }
+}
+
+.hero-post__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  margin-bottom: 0.6em;
+  flex-wrap: wrap;
+}
+
+.hero-post__category {
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  background: #0092ca;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hero-post__date {
+  font-size: 0.78em;
+  color: #777;
+  letter-spacing: 0.02em;
+}
+
+.hero-post__title {
+  margin: 0.2em 0 0.5em;
+  font-size: 1.5em;
+  line-height: 1.3;
+  color: #222831;
+
+  @media (min-width: 768px) {
+    font-size: 1.9em;
+  }
+}
+
+.hero-post__excerpt {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.hero-post__read-more {
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #0092ca;
+  letter-spacing: 0.02em;
+}
+
+/* ==================== Archive Card Grid ==================== */
+
+.grid__item {
+  .archive__item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.13);
+      transform: translateY(-3px);
+    }
+  }
+
+  .archive__item-teaser {
+    border-radius: 0;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .archive__item-body {
+    padding: 1em 1.2em 1.2em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .archive__item-title {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 0.4em;
+
+    a {
+      color: #222831;
+      text-decoration: none;
+
+      &:hover {
+        color: #0092ca;
+      }
+    }
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.8em;
+    color: #666;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .page__meta {
+    font-size: 0.65em;
+    color: #888;
+    margin-bottom: 0.4em;
+  }
+}
+
+/* ==================== List View ==================== */
+
+.list__item {
+  .archive__item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.2em;
+    margin-bottom: 1.2em;
+    transition: none;
+  }
+
+  .archive__item-body {
+    padding: 0;
+  }
+
+  .archive__item-title {
+    a {
+      &:hover {
+        color: #0092ca;
+      }
+    }
+  }
+}
+
+/* ==================== Category Badges ==================== */
+
+.archive__item-categories {
+  margin-bottom: 0.4em;
+}
+
+.archive__item-category-badge {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  background: #e8f4fb;
+  color: #0072a0;
+  border-radius: 12px;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.3em;
+}
+
+/* ==================== Archive Subtitle ==================== */
+
+.archive__subtitle {
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #393e46;
+  border-bottom: 2px solid #0092ca;
+  padding-bottom: 0.4em;
+  margin-bottom: 1.2em;
+  text-transform: uppercase;
+}
+
+/* ==================== Masthead / Navigation ==================== */
+
+.masthead {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+}
+
+.site-subtitle {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: inline;
+    opacity: 0.7;
+    font-size: 0.65em;
+    margin-left: 0.5em;
+  }
+}
+
+/* ==================== Single Post Page ==================== */
+
+.page__title {
+  line-height: 1.25;
+}
+
+.page__content {
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+}
+
+/* ==================== Pagination ==================== */
+
+.pagination {
+  margin-top: 2em;
+
+  .pagination--pager {
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 0.5em 1.2em;
+  }
+}
+
+/* ==================== Related Posts Section ==================== */
+
+.page__related-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  border-bottom: 2px solid #0092ca;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+  color: #393e46;
+}
+
+/* ==================== Sidebar / Author Profile ==================== */
+
+.author__bio {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* ==================== Footer ==================== */
+
+.page__footer {
+  margin-top: 3em;
+}

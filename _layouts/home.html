@@ -4,18 +4,46 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
 {% if paginator %}
   {% assign posts = paginator.posts %}
+  {% assign featured_post = paginator.posts.first %}
 {% else %}
   {% assign posts = site.posts %}
+  {% assign featured_post = site.posts.first %}
 {% endif %}
+
+{% if featured_post %}
+  {% assign fp_teaser = featured_post.header.teaser | default: site.teaser %}
+  <div class="hero-post">
+    <a href="{{ featured_post.url | relative_url }}" class="hero-post__link">
+      {% if fp_teaser %}
+        <div class="hero-post__image" style="background-image: url('{{ fp_teaser | relative_url }}');"></div>
+      {% endif %}
+      <div class="hero-post__body">
+        <div class="hero-post__meta">
+          {% if featured_post.categories.size > 0 %}
+            <span class="hero-post__category">{{ featured_post.categories | first }}</span>
+          {% endif %}
+          <span class="hero-post__date">{{ featured_post.date | date: "%Y · %m · %d" }}</span>
+        </div>
+        <h2 class="hero-post__title">{{ featured_post.title }}</h2>
+        {% if featured_post.excerpt %}
+          <p class="hero-post__excerpt">{{ featured_post.excerpt | markdownify | strip_html | truncate: 200 }}</p>
+        {% endif %}
+        <span class="hero-post__read-more">閱讀更多 →</span>
+      </div>
+    </a>
+  </div>
+{% endif %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+    {% unless page.entries_layout == 'grid' and forloop.first %}
+      {% include archive-single.html type=entries_layout %}
+    {% endunless %}
   {% endfor %}
 </div>
 
