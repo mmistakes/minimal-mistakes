@@ -6,3 +6,35 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.home-landing {
+  .page__inner-wrap {
+    margin-top: 0;
+  }
+
+  .page__content {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .page__meta,
+  .page__share,
+  .pagination,
+  .comment {
+    display: none;
+  }
+
+  .home-figure {
+    margin: 24px 0 0 0;
+    text-align: center;
+  }
+
+  .home-figure img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: calc(100vh - 193px);
+    width: auto;
+    height: auto;
+  }
+}
