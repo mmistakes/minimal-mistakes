@@ -1,0 +1,66 @@
+---
+title: "그린고 그건 디자인 패턴: Singleton 패턴"
+date: 2026-03-26 12:00:00 +0900
+layout: single
+categories:
+  - design-pattern
+tags:
+  - design-pattern
+  - singleton
+  - software-design
+sidebar:
+  - title: "English Study"
+    nav: ["main"]
+---
+
+<h2>그린고 그건 디자인 패턴</h2>
+<p>이 문서는 소프트웨어 디자인 패턴 중 하나를 설명합니다. 제목 그대로 "그린고 그건 디자인 패턴" 항목을 포함합니다.</p>
+
+<section>
+  <h3>디자인 패턴 선택: Singleton (싱글톤) 패턴</h3>
+  <p>Singleton 패턴은 애플리케이션에서 단 하나의 인스턴스만 만들어야 할 때 사용합니다. 예: 설정(설정 값), 로깅, 데이터베이스 연결 풀 등의 전역적 상태 관리.</p>
+
+  <h4>주요 목적</h4>
+  <ul>
+    <li>클래스 인스턴스를 하나로 제한</li>
+    <li>전역 접근점을 제공</li>
+    <li>자원 낭비 예방</li>
+  </ul>
+
+  <h4>특징</h4>
+  <ol>
+    <li>생성자를 private 로 제한</li>
+    <li>정적 메서드를 통해 객체 반환</li>
+    <li>객체가 이미 생성되어 있으면 재사용</li>
+  </ol>
+
+  <h4>장점</h4>
+  <ul>
+    <li>전역 상태를 중앙에서 관리</li>
+    <li>인스턴스 생성 비용을 줄임</li>
+    <li>동기화가 필요한 멀티스레드 환경에서 일관성 유지</li>
+  </ul>
+
+  <h4>단점</h4>
+  <ul>
+    <li>단위 테스트가 어려워질 수 있음</li>
+    <li>전역 상태가 의존성 숨김으로 이어질 수 있음</li>
+    <li>과도하게 사용 시 유연성 저하</li>
+  </ul>
+
+  <h4>간단한 예 (자바 스타일 의사코드)</h4>
+  <pre><code>public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() { }
+
+    public static synchronized Singleton getInstance() {
+      if (instance == null) {
+        instance = new Singleton();
+      }
+      return instance;
+    }
+  }</code></pre>
+
+  <p>이처럼 Singleton은 객체 생성 제어를 통해 애플리케이션 전역에 걸쳐 단일 인스턴스를 보장합니다.</p>
+</section>

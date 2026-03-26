@@ -2,6 +2,8 @@
 main:
   - title: "English Study"
     url: /english-study/
+  - title: "Design Pattern"
+    url: /categories/design-pattern/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
