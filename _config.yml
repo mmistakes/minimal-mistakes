@@ -218,6 +218,15 @@ kramdown:
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sidebar:
+        - title: "English Study"
+          nav: ["main"]
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
