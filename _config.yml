@@ -13,8 +13,8 @@ repository: "soenarjo/soenarjo.github.io"
 # Site Author
 author:
   name: "Aditya Soenarjo"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "Economist at the Federal Reserve Bank of Boston. Research interests: macroeconomics, macro-labor, and international economics."
+  avatar: "/assets/images/headshot.jpg"
+  bio: "Economist, Federal Reserve Bank of Boston"
   location: "Boston, MA"
   links:
     - label: "Email"
@@ -23,6 +23,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/adisoenarjo"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/soenarjo"
     - label: "CV"
       icon: "fas fa-fw fa-file-pdf"
       url: "https://nbviewer.org/github/soenarjo/website/blob/main/CV_Soenarjo.pdf"

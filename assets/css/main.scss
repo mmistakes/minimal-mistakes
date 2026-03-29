@@ -1,0 +1,173 @@
+---
+# Only the main styles. No front matter here, unless you want to.
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* Prevent scrollbar appearance from causing layout shift */
+html {
+  overflow-y: scroll;
+}
+
+/* Wider, larger sidebar */
+.sidebar {
+  font-size: 1em !important;
+
+  @include breakpoint($large) {
+    width: calc(#{$right-sidebar-width-narrow} + 60px) !important;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(#{$right-sidebar-width} + 60px) !important;
+  }
+}
+
+.page {
+  @include breakpoint($large) {
+    width: calc(100% - #{$right-sidebar-width-narrow} - 60px - 2em) !important;
+    margin-left: 2em !important;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width} - 60px - 2em) !important;
+    margin-left: 2em !important;
+  }
+}
+
+.author__avatar img {
+  max-width: 160px !important;
+}
+
+.author__name {
+  font-size: 1.2em !important;
+}
+
+/* Larger site title in nav bar */
+.site-title {
+  font-size: 1.4em;
+}
+
+/* Dark mode */
+html.dark-mode {
+  body {
+    background-color: #0d1b2a;
+    color: #cfd8e3;
+  }
+
+  .masthead {
+    background-color: #112240;
+    border-bottom: 1px solid #1d3557;
+  }
+
+  .greedy-nav {
+    background-color: #112240;
+
+    a, .site-title {
+      color: #e0e8f0 !important;
+    }
+
+    .visible-links a:before {
+      background: #64b5f6;
+    }
+  }
+
+  .initial-content, .page__footer-follow, .page__footer-copyright {
+    background-color: #0d1b2a;
+    color: #cfd8e3;
+  }
+
+  .page__footer {
+    background-color: #112240;
+    color: #a8b8c8;
+
+    a {
+      color: #a8b8c8;
+    }
+  }
+
+  .sidebar {
+    background-color: #0d1b2a;
+  }
+
+  .author__name a, .author__bio, .author__urls li {
+    color: #cfd8e3 !important;
+  }
+
+  .sidebar i {
+    color: #cfd8e3;
+  }
+
+  .author__urls-wrapper .btn {
+    border-color: #cfd8e3;
+    color: #cfd8e3;
+  }
+
+  .page__content {
+    color: #cfd8e3;
+
+    a {
+      color: #64b5f6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #e0e8f0;
+    }
+
+    hr {
+      border-color: #1d3557;
+    }
+
+    strong {
+      color: #e0e8f0;
+    }
+  }
+
+  .page__title,
+  .page__title a {
+    color: #ffffff !important;
+  }
+
+  details summary {
+    color: #64b5f6;
+  }
+
+  .btn--primary {
+    background-color: #1d3557;
+    border-color: #1d3557;
+    color: #e0e8f0;
+
+    &:hover {
+      background-color: #264773;
+      border-color: #264773;
+    }
+  }
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  display: block;
+  margin-top: 1em;
+  width: 100%;
+  padding: 0.4em 0.5em;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.75em;
+  text-align: center;
+
+  &:hover {
+    border-color: #555;
+  }
+}
+
+html.dark-mode .dark-mode-toggle {
+  border-color: #cfd8e3;
+  color: #cfd8e3;
+
+  &:hover {
+    border-color: #fff;
+    color: #fff;
+  }
+}
