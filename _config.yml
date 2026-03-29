@@ -16,6 +16,7 @@ remote_theme             : "mmistakes/minimal-mistakes@4.18.1"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+future                   : true
 locale                   : "zh-TW"
 title                    : "Antony's Blog"
 title_separator          : "-"
