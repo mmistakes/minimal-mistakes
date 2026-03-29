@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" font-family="'Noto Sans TC', 'Microsoft JhengHei', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="640" fill="#fafafa" rx="12" ry="12"/>
+
+  <!-- Grid lines (subtle) -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="640" fill="url(#grid)" rx="12" ry="12"/>
+
+  <!-- ===== HEADER TITLE ROW ===== -->
+  <!-- Sell Warning Arrow -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c0392b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e8c3c0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c8e6c9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sell Warning label + arrow -->
+  <rect x="30" y="16" width="390" height="44" rx="8" fill="url(#redGrad)" opacity="0.85"/>
+  <text x="200" y="45" text-anchor="middle" font-size="24" font-weight="bold" fill="white" letter-spacing="2">賣出警告</text>
+  <polygon points="42,38 30,38 36,32" fill="white"/>
+  <line x1="36" y1="38" x2="420" y2="38" stroke="white" stroke-width="2" marker-start="url(#arrowRed)"/>
+
+  <!-- Buy Warning label + arrow -->
+  <rect x="480" y="16" width="390" height="44" rx="8" fill="url(#greenGrad)" opacity="0.85"/>
+  <text x="680" y="45" text-anchor="middle" font-size="24" font-weight="bold" fill="white" letter-spacing="2">買入警告</text>
+  <line x1="480" y1="38" x2="858" y2="38" stroke="white" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Neutral center divider line -->
+  <line x1="450" y1="16" x2="450" y2="340" stroke="#aaa" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ===== PERCENTAGE ROW ===== -->
+  <!-- Sell side percentages -->
+  <text x="78"  y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">100%</text>
+  <text x="180" y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">80%</text>
+  <text x="295" y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">65%</text>
+  <text x="400" y="82" text-anchor="middle" font-size="13" fill="#888" font-weight="bold">50%</text>
+  <!-- Buy side percentages -->
+  <text x="505" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">65%</text>
+  <text x="618" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">80%</text>
+  <text x="730" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">100%</text>
+  <text x="835" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">100%</text>
+
+  <!-- ===== PATTERN ICONS ROW (y=90..170) ===== -->
+
+  <!-- 1. M頭(雙頂) - M shape -->
+  <g transform="translate(40,90)">
+    <polyline points="0,60 18,10 38,40 58,10 76,60" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="0" y1="60" x2="76" y2="60" stroke="#c0392b" stroke-width="1.5"/>
+    <!-- Neckline -->
+    <line x1="0" y1="45" x2="76" y2="45" stroke="#c0392b" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">M頭(雙頂)</text>
+  </g>
+
+  <!-- 2. 下跌旗形 -->
+  <g transform="translate(142,90)">
+    <line x1="38" y1="5" x2="15" y2="55" stroke="#c0392b" stroke-width="2.5"/>
+    <polyline points="18,10 52,18 20,28 54,36 22,46" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+    <!-- Flag pole and body -->
+    <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">下跌旗形</text>
+  </g>
+
+  <!-- 3. 菱形頂 -->
+  <g transform="translate(258,90)">
+    <polygon points="38,5 68,32 38,58 8,32" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+    <line x1="8" y1="32" x2="0" y2="65" stroke="#c0392b" stroke-width="2"/>
+    <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">菱形頂</text>
+  </g>
+
+  <!-- 4. 箱型盤整 (center) -->
+  <g transform="translate(365,90)">
+    <rect x="0" y="15" width="70" height="38" fill="none" stroke="#888" stroke-width="2"/>
+    <polyline points="5,25 18,35 30,22 45,38 60,28 68,32" fill="none" stroke="#555" stroke-width="1.5"/>
+    <text x="35" y="80" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">箱型盤整</text>
+  </g>
+
+  <!-- 5. W底(雙底) -->
+  <g transform="translate(468,90)">
+    <polyline points="0,10 18,60 38,30 58,60 76,10" fill="none" stroke="#27ae60" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="0" y1="10" x2="76" y2="10" stroke="#27ae60" stroke-width="1"/>
+    <line x1="0" y1="25" x2="76" y2="25" stroke="#27ae60" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">W底(雙底)</text>
+  </g>
+
+  <!-- 6. 上升旗形 -->
+  <g transform="translate(582,90)">
+    <line x1="8" y1="55" x2="32" y2="5" stroke="#27ae60" stroke-width="2.5"/>
+    <polyline points="28,10 62,18 30,26 64,34 32,42" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升旗形</text>
+  </g>
+
+  <!-- 7. 上升楔形 -->
+  <g transform="translate(693,90)">
+    <line x1="0" y1="60" x2="70" y2="10" stroke="#27ae60" stroke-width="2"/>
+    <line x1="0" y1="60" x2="70" y2="30" stroke="#27ae60" stroke-width="2"/>
+    <polyline points="5,55 20,38 35,42 50,28 65,20" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升楔形</text>
+  </g>
+
+  <!-- Extra: Second 上升楔形 at far right -->
+  <g transform="translate(800,90)">
+    <line x1="0" y1="58" x2="68" y2="5" stroke="#27ae60" stroke-width="2"/>
+    <line x1="0" y1="58" x2="68" y2="22" stroke="#27ae60" stroke-width="2"/>
+    <polyline points="5,52 18,35 35,38 50,24 63,15" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <text x="34" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升楔形②</text>
+  </g>
+
+  <!-- ===== ACTION LABELS ROW ===== -->
+  <!-- Sell side actions -->
+  <rect x="30"  y="200" width="100" height="60" rx="8" fill="#fdecea"/>
+  <text x="80"  y="222" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">防範</text>
+  <text x="80"  y="242" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">暴跌</text>
+  <text x="80"  y="258" text-anchor="middle" font-size="10" fill="#c0392b">⚠ 高危</text>
+
+  <rect x="140" y="200" width="100" height="60" rx="8" fill="#fdecea"/>
+  <text x="190" y="222" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">趕快</text>
+  <text x="190" y="242" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">賣出</text>
+  <text x="190" y="258" text-anchor="middle" font-size="10" fill="#c0392b">▼ 賣壓</text>
+
+  <rect x="252" y="200" width="100" height="60" rx="8" fill="#fef9e7"/>
+  <text x="302" y="222" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">緩慢</text>
+  <text x="302" y="242" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">下跌</text>
+  <text x="302" y="258" text-anchor="middle" font-size="10" fill="#c0392b">▼ 觀察</text>
+
+  <!-- Neutral center -->
+  <rect x="362" y="200" width="100" height="60" rx="8" fill="#f0f0f0"/>
+  <text x="412" y="218" text-anchor="middle" font-size="12" fill="#555" font-weight="bold">危險</text>
+  <text x="412" y="236" text-anchor="middle" font-size="12" fill="#555" font-weight="bold">別碰</text>
+  <text x="412" y="254" text-anchor="middle" font-size="10" fill="#555">⊘ 中性</text>
+
+  <!-- Buy side actions -->
+  <rect x="470" y="200" width="100" height="60" rx="8" fill="#eaf7ec"/>
+  <text x="520" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">趕緊</text>
+  <text x="520" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">買入</text>
+  <text x="520" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲ 訊號</text>
+
+  <rect x="580" y="200" width="100" height="60" rx="8" fill="#eaf7ec"/>
+  <text x="630" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">趕緊</text>
+  <text x="630" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">買入</text>
+  <text x="630" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲ 強訊號</text>
+
+  <rect x="690" y="200" width="100" height="60" rx="8" fill="#d5f5e3"/>
+  <text x="740" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">迎接</text>
+  <text x="740" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">暴漲</text>
+  <text x="740" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲▲ 高確信</text>
+
+  <rect x="798" y="200" width="100" height="60" rx="8" fill="#d5f5e3"/>
+  <text x="848" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">迎接</text>
+  <text x="848" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">暴漲</text>
+  <text x="848" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲▲ 高確信</text>
+
+  <!-- ===== SEPARATOR LINE ===== -->
+  <line x1="30" y1="280" x2="870" y2="280" stroke="#ccc" stroke-width="1.5"/>
+
+  <!-- ===== CANDLESTICK DEMONSTRATION SECTION ===== -->
+  <!-- Section label -->
+  <text x="450" y="303" text-anchor="middle" font-size="14" fill="#555" font-weight="bold">── 實際K線走勢示意 ──</text>
+
+  <!-- LEFT side candlestick chart (sell patterns: M-top -> flag -> diamond) -->
+  <!-- Simulate rising -> M-top -> descending flag -> diamond consolidation -> bottom -->
+  <g transform="translate(30, 315)">
+    <!-- Price path line -->
+    <polyline points="0,100 15,85 30,70 45,55 55,40 65,30 80,15 95,25 110,12 125,22 140,10 155,22 170,35 185,50 200,65 215,75 225,80 240,90 250,95 260,100" 
+              fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Candlestick bodies (simplified) -->
+    <!-- Rising phase -->
+    <rect x="12" y="80" width="5" height="15" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="27" y="65" width="5" height="15" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="42" y="50" width="5" height="15" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="57" y="35" width="5" height="15" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <!-- M top -->
+    <rect x="72" y="12" width="5" height="12" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="87" y="18" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="102" y="10" width="5" height="12" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <!-- M annotation -->
+    <path d="M 72,8 Q 92,-5 107,8" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="89" y="-2" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="bold">M頭</text>
+    <!-- Descending -->
+    <rect x="117" y="18" width="5" height="14" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="132" y="28" width="5" height="12" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="147" y="40" width="5" height="12" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <!-- Descending channel (flag) -->
+    <line x1="115" y1="15" x2="200" y2="60" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="115" y1="30" x2="200" y2="75" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="175" y="35" font-size="9" fill="#c0392b">旗形</text>
+    <!-- Bottom consolidation -->
+    <rect x="162" y="48" width="5" height="14" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="177" y="58" width="5" height="12" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="192" y="62" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="207" y="68" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="222" y="75" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="237" y="88" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <!-- Arrows -->
+    <path d="M 80,2 L 80,10" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+    <path d="M 155,45 L 160,52" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+    <path d="M 240,80 L 250,90" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+    <!-- Label at bottom -->
+    <text x="30" y="125" font-size="12" fill="#c0392b" font-weight="bold">防範暴跌</text>
+  </g>
+
+  <!-- CENTER area annotations -->
+  <text x="420" y="380" text-anchor="middle" font-size="11" fill="#888">← 趕快賣出</text>
+  <text x="420" y="396" text-anchor="middle" font-size="11" fill="#27ae60">趕緊買入 →</text>
+
+  <!-- RIGHT side candlestick chart (buy patterns) -->
+  <g transform="translate(560, 315)">
+    <!-- Bottom -> W shape -> ascending flag -> surge -->
+    <polyline points="0,100 20,95 40,80 55,90 70,80 85,65 100,55 115,45 125,50 140,38 155,28 168,20 180,12 195,5 210,10"
+              fill="none" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- Bottom candlesticks -->
+    <rect x="12" y="90" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="27" y="82" width="5" height="10" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="42" y="88" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <rect x="57" y="76" width="5" height="12" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="72" y="82" width="5" height="10" fill="#c0392b" stroke="#c0392b" stroke-width="0.5"/>
+    <!-- W annotation -->
+    <path d="M 14,87 Q 50,70 85,87" fill="none" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="49" y="68" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="bold">W底</text>
+    <!-- Rising -->
+    <rect x="87" y="60" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="102" y="48" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="117" y="40" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <!-- Ascending channel (flag) -->
+    <line x1="88" y1="75" x2="175" y2="20" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="88" y1="58" x2="175" y2="5" stroke="#27ae60" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="150" y="22" font-size="9" fill="#27ae60">旗形</text>
+    <!-- Strong surge -->
+    <rect x="132" y="33" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="147" y="22" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="162" y="14" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="177" y="8" width="5" height="14" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <rect x="192" y="3" width="5" height="12" fill="#27ae60" stroke="#27ae60" stroke-width="0.5"/>
+    <!-- Arrows -->
+    <path d="M 50,65 L 50,75" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <path d="M 120,35 L 125,42" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <path d="M 194,0 L 194,6" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+    <!-- Label at bottom -->
+    <text x="60" y="125" font-size="12" fill="#27ae60" font-weight="bold">迎接暴漲</text>
+    <text x="60" y="140" font-size="12" fill="#27ae60" font-weight="bold">迎接暴漲</text>
+  </g>
+
+  <!-- ===== BOTTOM LEGEND / KEY ===== -->
+  <rect x="30" y="580" width="840" height="50" rx="8" fill="#f5f5f5" stroke="#ddd"/>
+  <text x="450" y="598" text-anchor="middle" font-size="12" fill="#555" font-weight="bold">訊號強度說明</text>
+  <rect x="50"  y="606" width="12" height="12" fill="#c0392b" rx="2"/>
+  <text x="68"  y="618" font-size="11" fill="#333">100%：極高賣出確信</text>
+  <rect x="230" y="606" width="12" height="12" fill="#e67e22" rx="2"/>
+  <text x="248" y="618" font-size="11" fill="#333">80%：高賣出確信</text>
+  <rect x="390" y="606" width="12" height="12" fill="#888" rx="2"/>
+  <text x="408" y="618" font-size="11" fill="#333">50%：中性盤整</text>
+  <rect x="530" y="606" width="12" height="12" fill="#2ecc71" rx="2"/>
+  <text x="548" y="618" font-size="11" fill="#333">65%：買入確信</text>
+  <rect x="670" y="606" width="12" height="12" fill="#27ae60" rx="2"/>
+  <text x="688" y="618" font-size="11" fill="#333">80~100%：強烈買入確信</text>
+
+  <!-- ===== TITLE / FOOTER ===== -->
+  <text x="450" y="636" text-anchor="middle" font-size="10" fill="#aaa">技術形態K線警告參考圖 — 僅供學習使用，不構成投資建議</text>
+</svg>
