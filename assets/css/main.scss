@@ -70,6 +70,19 @@ html.dark-mode {
     .visible-links a:before {
       background: #64b5f6;
     }
+
+    .hidden-links {
+      background-color: #112240;
+      border-color: #1d3557;
+
+      a {
+        color: #e0e8f0 !important;
+      }
+
+      &:before, &:after {
+        border-bottom-color: #112240;
+      }
+    }
   }
 
   .initial-content, .page__footer-follow, .page__footer-copyright {
@@ -99,8 +112,26 @@ html.dark-mode {
   }
 
   .author__urls-wrapper .btn {
-    border-color: #cfd8e3;
-    color: #cfd8e3;
+    background-color: #64b5f6;
+    border-color: #64b5f6;
+    color: #ffffff;
+  }
+
+  .author__urls {
+    background-color: #112240;
+    border-color: #1d3557;
+
+    a {
+      color: #cfd8e3 !important;
+    }
+
+    &:before {
+      border-bottom-color: #1d3557;
+    }
+
+    &:after {
+      border-bottom-color: #112240;
+    }
   }
 
   .page__content {
