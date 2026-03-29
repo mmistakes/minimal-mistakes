@@ -77,8 +77,16 @@
 
   <!-- 3. 菱形頂 -->
   <g transform="translate(258,90)">
+    <!-- Diamond outline -->
     <polygon points="38,5 68,32 38,58 8,32" fill="none" stroke="#c0392b" stroke-width="2.5"/>
-    <line x1="8" y1="32" x2="0" y2="65" stroke="#c0392b" stroke-width="2"/>
+    <!-- Candlestick wicks crossing both diamond edges -->
+    <line x1="16" y1="18" x2="16" y2="46" stroke="#c0392b" stroke-width="1.5"/>
+    <line x1="26" y1="8"  x2="26" y2="56" stroke="#c0392b" stroke-width="1.5"/>
+    <line x1="38" y1="2"  x2="38" y2="61" stroke="#c0392b" stroke-width="1.5"/>
+    <line x1="50" y1="8"  x2="50" y2="56" stroke="#c0392b" stroke-width="1.5"/>
+    <line x1="60" y1="18" x2="60" y2="46" stroke="#c0392b" stroke-width="1.5"/>
+    <!-- M-top zigzag price line through wicks -->
+    <polyline points="16,38 26,14 38,28 50,11 60,36" fill="none" stroke="#c0392b" stroke-width="2"/>
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">菱形頂</text>
   </g>
 
