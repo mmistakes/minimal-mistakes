@@ -19,6 +19,9 @@
     <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
     </marker>
+    <marker id="arrowRedFwd" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c0392b"/>
+    </marker>
     <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#c0392b;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#e8c3c0;stop-opacity:1"/>
@@ -48,12 +51,11 @@
   <text x="78"  y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">100%</text>
   <text x="180" y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">80%</text>
   <text x="295" y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">65%</text>
-  <text x="400" y="82" text-anchor="middle" font-size="13" fill="#888" font-weight="bold">50%</text>
+  <text x="412" y="82" text-anchor="middle" font-size="13" fill="#888" font-weight="bold">50%</text>
   <!-- Buy side percentages -->
   <text x="505" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">65%</text>
   <text x="618" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">80%</text>
   <text x="730" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">100%</text>
-  <text x="835" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">100%</text>
 
   <!-- ===== PATTERN ICONS ROW (y=90..170) ===== -->
 
@@ -68,23 +70,30 @@
 
   <!-- 2. 下跌旗形 -->
   <g transform="translate(142,90)">
-    <line x1="38" y1="5" x2="15" y2="55" stroke="#c0392b" stroke-width="2.5"/>
-    <polyline points="18,10 52,18 20,28 54,36 22,46" fill="none" stroke="#c0392b" stroke-width="1.8"/>
-    <!-- Flag pole and body -->
+    <!-- Descending flag channel: parallel lines from upper-left to lower-right -->
+    <line x1="8" y1="5"  x2="62" y2="48" stroke="#c0392b" stroke-width="1.8"/>
+    <line x1="8" y1="18" x2="62" y2="60" stroke="#c0392b" stroke-width="1.8"/>
+    <!-- Zigzag price action oscillating inside channel -->
+    <polyline points="10,20 22,16 34,38 46,35 58,57" fill="none" stroke="#c0392b" stroke-width="2"/>
+    <!-- Downward breakout arrow (continues channel direction) -->
+    <line x1="58" y1="57" x2="66" y2="65" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRedFwd)"/>
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">下跌旗形</text>
   </g>
 
   <!-- 3. 菱形頂 -->
   <g transform="translate(258,90)">
-    <polygon points="38,5 68,32 38,58 8,32" fill="none" stroke="#c0392b" stroke-width="2.5"/>
-    <line x1="8" y1="32" x2="0" y2="65" stroke="#c0392b" stroke-width="2"/>
+    <!-- Tilted diamond (rotated ~20° clockwise): left, top, right, bottom corners -->
+    <polygon points="28,7 69,22 48,59 7,44" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+    <!-- W/M zigzag from left corner to right corner, peaks/valleys touching diamond boundary -->
+    <polyline points="7,44 22,18 32,53 45,13 58,41 69,22" fill="none" stroke="#c0392b" stroke-width="2"/>
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">菱形頂</text>
   </g>
 
   <!-- 4. 箱型盤整 (center) -->
-  <g transform="translate(365,90)">
+  <g transform="translate(377,90)">
     <rect x="0" y="15" width="70" height="38" fill="none" stroke="#888" stroke-width="2"/>
-    <polyline points="5,25 18,35 30,22 45,38 60,28 68,32" fill="none" stroke="#555" stroke-width="1.5"/>
+    <!-- 3 peaks touching box top (y≈17) and 2 valleys touching box bottom (y≈52) -->
+    <polyline points="0,52 12,17 24,52 36,17 48,52 60,17 68,35" fill="none" stroke="#555" stroke-width="1.5"/>
     <text x="35" y="80" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">箱型盤整</text>
   </g>
 
@@ -98,26 +107,29 @@
 
   <!-- 6. 上升旗形 -->
   <g transform="translate(582,90)">
-    <line x1="8" y1="55" x2="32" y2="5" stroke="#27ae60" stroke-width="2.5"/>
-    <polyline points="28,10 62,18 30,26 64,34 32,42" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <!-- Ascending flag channel: parallel lines from lower-left to upper-right -->
+    <line x1="8" y1="45" x2="62" y2="5"  stroke="#27ae60" stroke-width="1.8"/>
+    <line x1="8" y1="58" x2="62" y2="18" stroke="#27ae60" stroke-width="1.8"/>
+    <!-- Zigzag price action oscillating inside channel -->
+    <polyline points="10,56 22,35 34,39 46,17 58,21" fill="none" stroke="#27ae60" stroke-width="2"/>
+    <!-- Upward breakout arrow (continues channel direction) -->
+    <line x1="62" y1="5" x2="68" y2="-4" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升旗形</text>
   </g>
 
   <!-- 7. 上升楔形 -->
   <g transform="translate(693,90)">
-    <line x1="0" y1="60" x2="70" y2="10" stroke="#27ae60" stroke-width="2"/>
-    <line x1="0" y1="60" x2="70" y2="30" stroke="#27ae60" stroke-width="2"/>
-    <polyline points="5,55 20,38 35,42 50,28 65,20" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <!-- Upper boundary: nearly flat (gently ascending) — converges with lower at apex -->
+    <line x1="5" y1="15" x2="68" y2="12" stroke="#27ae60" stroke-width="2"/>
+    <!-- Lower boundary: steeply ascending — meets upper at apex (rising wedge) -->
+    <line x1="0" y1="65" x2="68" y2="12" stroke="#27ae60" stroke-width="2"/>
+    <!-- W/M zigzag inside the converging wedge, peaks on upper line, valleys on lower line -->
+    <polyline points="8,55 18,14 30,42 44,13 56,21 68,12" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <!-- Steep upward breakout arrow from apex -->
+    <line x1="68" y1="12" x2="78" y2="-2" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升楔形</text>
   </g>
 
-  <!-- Extra: Second 上升楔形 at far right -->
-  <g transform="translate(800,90)">
-    <line x1="0" y1="58" x2="68" y2="5" stroke="#27ae60" stroke-width="2"/>
-    <line x1="0" y1="58" x2="68" y2="22" stroke="#27ae60" stroke-width="2"/>
-    <polyline points="5,52 18,35 35,38 50,24 63,15" fill="none" stroke="#27ae60" stroke-width="1.8"/>
-    <text x="34" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升楔形②</text>
-  </g>
 
   <!-- ===== ACTION LABELS ROW ===== -->
   <!-- Sell side actions -->
@@ -157,11 +169,6 @@
   <text x="740" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">迎接</text>
   <text x="740" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">暴漲</text>
   <text x="740" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲▲ 高確信</text>
-
-  <rect x="798" y="200" width="100" height="60" rx="8" fill="#d5f5e3"/>
-  <text x="848" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">迎接</text>
-  <text x="848" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">暴漲</text>
-  <text x="848" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲▲ 高確信</text>
 
   <!-- ===== SEPARATOR LINE ===== -->
   <line x1="30" y1="280" x2="870" y2="280" stroke="#ccc" stroke-width="1.5"/>
@@ -250,7 +257,6 @@
     <path d="M 194,0 L 194,6" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
     <!-- Label at bottom -->
     <text x="60" y="125" font-size="12" fill="#27ae60" font-weight="bold">迎接暴漲</text>
-    <text x="60" y="140" font-size="12" fill="#27ae60" font-weight="bold">迎接暴漲</text>
   </g>
 
   <!-- ===== BOTTOM LEGEND / KEY ===== -->
