@@ -48,7 +48,7 @@
   <text x="78"  y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">100%</text>
   <text x="180" y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">80%</text>
   <text x="295" y="82" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="bold">65%</text>
-  <text x="400" y="82" text-anchor="middle" font-size="13" fill="#888" font-weight="bold">50%</text>
+  <text x="412" y="82" text-anchor="middle" font-size="13" fill="#888" font-weight="bold">50%</text>
   <!-- Buy side percentages -->
   <text x="505" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">65%</text>
   <text x="618" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">80%</text>
@@ -67,8 +67,10 @@
 
   <!-- 2. 下跌旗形 -->
   <g transform="translate(142,90)">
-    <line x1="38" y1="5" x2="15" y2="55" stroke="#c0392b" stroke-width="2.5"/>
-    <polyline points="18,10 52,18 20,28 54,36 22,46" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+    <g transform="rotate(90, 34, 30)">
+      <line x1="38" y1="5" x2="15" y2="55" stroke="#c0392b" stroke-width="2.5"/>
+      <polyline points="18,10 52,18 20,28 54,36 22,46" fill="none" stroke="#c0392b" stroke-width="1.8"/>
+    </g>
     <!-- Flag pole and body -->
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="bold">下跌旗形</text>
   </g>
@@ -81,7 +83,7 @@
   </g>
 
   <!-- 4. 箱型盤整 (center) -->
-  <g transform="translate(365,90)">
+  <g transform="translate(377,90)">
     <rect x="0" y="15" width="70" height="38" fill="none" stroke="#888" stroke-width="2"/>
     <polyline points="5,25 18,35 30,22 45,38 60,28 68,32" fill="none" stroke="#555" stroke-width="1.5"/>
     <text x="35" y="80" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">箱型盤整</text>
@@ -97,8 +99,10 @@
 
   <!-- 6. 上升旗形 -->
   <g transform="translate(582,90)">
-    <line x1="8" y1="55" x2="32" y2="5" stroke="#27ae60" stroke-width="2.5"/>
-    <polyline points="28,10 62,18 30,26 64,34 32,42" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    <g transform="rotate(90, 36, 30)">
+      <line x1="8" y1="55" x2="32" y2="5" stroke="#27ae60" stroke-width="2.5"/>
+      <polyline points="28,10 62,18 30,26 64,34 32,42" fill="none" stroke="#27ae60" stroke-width="1.8"/>
+    </g>
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升旗形</text>
   </g>
 
