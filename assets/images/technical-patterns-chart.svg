@@ -53,7 +53,6 @@
   <text x="505" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">65%</text>
   <text x="618" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">80%</text>
   <text x="730" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">100%</text>
-  <text x="835" y="82" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">100%</text>
 
   <!-- ===== PATTERN ICONS ROW (y=90..170) ===== -->
 
@@ -111,13 +110,6 @@
     <text x="38" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升楔形</text>
   </g>
 
-  <!-- Extra: Second 上升楔形 at far right -->
-  <g transform="translate(800,90)">
-    <line x1="0" y1="58" x2="68" y2="5" stroke="#27ae60" stroke-width="2"/>
-    <line x1="0" y1="58" x2="68" y2="22" stroke="#27ae60" stroke-width="2"/>
-    <polyline points="5,52 18,35 35,38 50,24 63,15" fill="none" stroke="#27ae60" stroke-width="1.8"/>
-    <text x="34" y="80" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="bold">上升楔形②</text>
-  </g>
 
   <!-- ===== ACTION LABELS ROW ===== -->
   <!-- Sell side actions -->
@@ -157,11 +149,6 @@
   <text x="740" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">迎接</text>
   <text x="740" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">暴漲</text>
   <text x="740" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲▲ 高確信</text>
-
-  <rect x="798" y="200" width="100" height="60" rx="8" fill="#d5f5e3"/>
-  <text x="848" y="222" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">迎接</text>
-  <text x="848" y="242" text-anchor="middle" font-size="13" fill="#27ae60" font-weight="bold">暴漲</text>
-  <text x="848" y="258" text-anchor="middle" font-size="10" fill="#27ae60">▲▲ 高確信</text>
 
   <!-- ===== SEPARATOR LINE ===== -->
   <line x1="30" y1="280" x2="870" y2="280" stroke="#ccc" stroke-width="1.5"/>
@@ -250,7 +237,6 @@
     <path d="M 194,0 L 194,6" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
     <!-- Label at bottom -->
     <text x="60" y="125" font-size="12" fill="#27ae60" font-weight="bold">迎接暴漲</text>
-    <text x="60" y="140" font-size="12" fill="#27ae60" font-weight="bold">迎接暴漲</text>
   </g>
 
   <!-- ===== BOTTOM LEGEND / KEY ===== -->
