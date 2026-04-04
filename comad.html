@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMAD — AI Agent Ecosystem</title>
+<meta name="description" content="2주 만에 구축한 6개 AI 에이전트 생태계. 수집, 지식 그래프, 시뮬레이션, 사진 보정, 메모리, 워크플로우 자동화.">
+<meta property="og:title" content="COMAD — AI Agent Ecosystem">
+<meta property="og:description" content="2주 만에, 혼자서, 6개 AI 에이전트 생태계를 구축했습니다. Claude Code 기반.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0c0f">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #0c0c0f;
+    --surface: #13131a;
+    --surface2: #1c1c28;
+    --border: #2a2a3e;
+    --text: #c8c8e8;
+    --text-dim: #6b6b8a;
+    --text-bright: #f0f0ff;
+    --accent: #7c6cfc;
+    --accent-dim: rgba(124,108,252,0.10);
+    --teal: #2dd4bf;
+    --teal-dim: rgba(45,212,191,0.10);
+    --green: #34d399;
+    --amber: #fbbf24;
+    --pink: #f472b6;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.7; font-size:16px;
+    overflow-x:hidden;
+  }
+  ::selection { background:var(--accent); color:var(--bg); }
+
+  /* Progress */
+  .scroll-progress { position:fixed; top:0; left:0; height:2px; background:linear-gradient(90deg,var(--accent),var(--teal)); z-index:10000; transition:width 0.1s; }
+
+  /* Reveal */
+  .reveal { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+
+  /* Nav */
+  nav {
+    position:sticky; top:0; z-index:100;
+    background:rgba(10,10,15,0.88); backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--border);
+    padding:0 2rem; display:flex; gap:0;
+    overflow-x:auto; justify-content:center; height:48px; align-items:center;
+  }
+  nav a {
+    color:var(--text-dim); text-decoration:none; font-size:0.8rem; font-weight:500;
+    padding:0.7rem 1rem; transition:color 0.2s; white-space:nowrap;
+    border-bottom:2px solid transparent;
+  }
+  nav a:hover { color:var(--text); }
+  nav a.active { color:var(--accent); border-bottom-color:var(--accent); }
+
+  /* Layout */
+  .container { max-width:960px; margin:0 auto; padding:0 2rem; }
+  section { padding:5rem 0; border-top:1px solid var(--border); }
+
+  /* Section Label */
+  .section-label { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); font-weight:600; margin-bottom:0.6rem; }
+  section h2 { font-size:clamp(1.5rem, 3vw, 2rem); font-weight:700; color:var(--text-bright); margin-bottom:0.8rem; letter-spacing:-0.02em; line-height:1.35; }
+  section h2 em { font-style:normal; color:var(--teal); }
+  .section-desc { font-size:0.95rem; color:var(--text-dim); max-width:600px; margin-bottom:2.5rem; line-height:1.8; }
+
+  /* === HERO === */
+  .hero {
+    min-height:90vh; display:flex; flex-direction:column;
+    justify-content:center; align-items:center;
+    text-align:center; padding:4rem 2rem 2rem;
+    position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
+    background:
+      radial-gradient(ellipse at 35% 50%, rgba(124,108,252,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse at 65% 50%, rgba(45,212,191,0.04) 0%, transparent 60%);
+    animation:float 25s ease-in-out infinite;
+  }
+  @keyframes float { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-1.5%,1.5%)} }
+  .hero > * { position:relative; z-index:1; }
+  .hero h1 {
+    font-size:clamp(2.5rem, 5.5vw, 4rem); font-weight:800; letter-spacing:-0.04em;
+    background:linear-gradient(135deg, var(--accent) 0%, var(--teal) 100%);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    margin-bottom:1.2rem;
+  }
+  .hero .tagline { font-size:clamp(1rem, 2.2vw, 1.35rem); color:var(--text-bright); font-weight:500; max-width:560px; margin-bottom:0.5rem; line-height:1.5; }
+  .hero .tagline strong { color:var(--teal); font-weight:700; }
+  .hero .sub-tagline { font-size:0.9rem; color:var(--text-dim); margin-bottom:2.5rem; }
+
+  .hero-stats { display:flex; gap:2.5rem; flex-wrap:wrap; justify-content:center; margin-bottom:2rem; }
+  .hero-stat .num { font-size:2rem; font-weight:800; color:var(--text-bright); font-variant-numeric:tabular-nums; }
+  .hero-stat .label { font-size:0.7rem; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.15rem; }
+
+  .hero-flow { display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap; justify-content:center; }
+  .flow-node { padding:0.45rem 0.9rem; border-radius:8px; font-size:0.82rem; font-weight:600; border:1px solid var(--border); background:var(--surface); transition:border-color 0.2s; }
+  .flow-node:hover { border-color:var(--accent); }
+  .flow-arrow { color:var(--text-dim); font-size:0.85rem; opacity:0.4; }
+  .flow-sep { color:var(--text-dim); opacity:0.2; }
+
+  /* === Quote Box (origin story) === */
+  .quote-box {
+    background:var(--surface); border-left:3px solid var(--accent);
+    border-radius:0 10px 10px 0; padding:1.5rem 1.8rem; margin:1.2rem 0;
+    font-size:0.95rem; color:var(--text-bright); line-height:1.7; font-style:italic;
+  }
+  .quote-attrib { display:block; font-style:normal; font-size:0.78rem; color:var(--text-dim); margin-top:0.8rem; }
+
+  /* === Before/After comparison === */
+  .compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.5rem 0; }
+  .compare-col {
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:10px; padding:1.5rem;
+  }
+  .compare-col.without { border-left:3px solid var(--pink); }
+  .compare-col.with { border-left:3px solid var(--green); }
+  .compare-label { font-size:0.78rem; font-weight:600; margin-bottom:0.6rem; text-transform:uppercase; letter-spacing:0.06em; }
+  .compare-col.without .compare-label { color:var(--pink); }
+  .compare-col.with .compare-label { color:var(--green); }
+  .compare-col p { font-size:0.88rem; line-height:1.7; }
+
+  /* === Why Grid === */
+  .why-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; }
+  .why-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem; transition:border-color 0.2s; }
+  .why-card:hover { border-color:var(--accent); }
+  .why-card .num { font-size:0.68rem; color:var(--accent); font-weight:700; letter-spacing:0.1em; margin-bottom:0.6rem; }
+  .why-card h3 { font-size:1rem; font-weight:700; color:var(--text-bright); margin-bottom:0.5rem; }
+  .why-card p { font-size:0.86rem; line-height:1.7; }
+
+  /* === Architecture === */
+  .arch-box {
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:2rem; font-family:'SF Mono','Fira Code',monospace; font-size:0.84rem; line-height:2.2;
+    overflow-x:auto;
+  }
+  .arch-layer { display:flex; align-items:baseline; gap:0.8rem; padding:2px 0; }
+  .arch-layer-name { color:var(--accent); min-width:70px; text-align:right; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; }
+  .arch-layer-node { color:var(--teal); font-weight:600; }
+  .arch-layer-desc { color:var(--text-dim); }
+  .arch-connector { padding-left:80px; color:var(--text-dim); opacity:0.3; font-size:0.8rem; }
+
+  /* === Project Card === */
+  .project-card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:2rem; margin-bottom:1.5rem; transition:border-color 0.2s; }
+  .project-card:hover { border-color:rgba(124,108,252,0.3); }
+  .card-header { display:flex; align-items:baseline; gap:0.8rem; margin-bottom:0.4rem; }
+  .project-card h3 { font-size:1.3rem; font-weight:700; color:var(--text-bright); }
+  .card-badge { font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.04em; }
+  .one-liner { font-size:0.92rem; color:var(--text-dim); margin-bottom:1.2rem; max-width:600px; }
+  .tag-row { display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1.2rem; }
+  .tag { display:inline-block; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.7rem; font-weight:500; background:var(--accent-dim); color:var(--accent); }
+
+  .sub-section { margin-top:1.5rem; padding-top:1.5rem; border-top:1px solid var(--border); }
+  .sub-section h4 { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); margin-bottom:0.8rem; font-weight:600; }
+
+  .code-flow { background:var(--surface2); border-radius:8px; padding:1.2rem; font-family:'SF Mono','Fira Code',monospace; font-size:0.82rem; line-height:2.2; color:var(--teal); overflow-x:auto; }
+  .code-flow .dim { color:var(--text-dim); }
+  .code-flow .hl { color:var(--amber); }
+
+  /* === Tables === */
+  table { width:100%; border-collapse:collapse; font-size:0.86rem; margin:0.8rem 0; }
+  th { text-align:left; padding:0.6rem 0.8rem; border-bottom:2px solid var(--border); color:var(--text-dim); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; }
+  td { padding:0.6rem 0.8rem; border-bottom:1px solid var(--border); }
+  tr:hover td { background:rgba(124,108,252,0.03); }
+  td code { background:var(--teal-dim); padding:0.1rem 0.4rem; border-radius:3px; font-size:0.8rem; color:var(--teal); }
+
+  /* === Borrow Cards === */
+  .borrow-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; }
+  .borrow-card { background:var(--surface2); border-radius:8px; padding:1rem; border-left:2px solid var(--accent); }
+  .borrow-card .origin { font-size:0.68rem; color:var(--accent); font-weight:600; text-transform:uppercase; letter-spacing:0.06em; }
+  .borrow-card .point { font-size:0.88rem; margin:0.3rem 0; color:var(--text-bright); }
+  .borrow-card .improve { font-size:0.82rem; color:var(--green); }
+
+  /* === Test Result === */
+  .test-result { background:linear-gradient(135deg, rgba(124,108,252,0.04), rgba(45,212,191,0.04)); border:1px solid var(--border); border-radius:10px; padding:1.5rem; margin-top:1.2rem; }
+  .test-result h4 { font-size:0.7rem; color:var(--green); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:0.8rem; font-weight:600; }
+
+  /* === Compact Grid === */
+  .compact-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  .compact-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem; transition:border-color 0.2s; }
+  .compact-card:hover { border-color:rgba(124,108,252,0.25); }
+  .compact-card h3 { font-size:1rem; font-weight:700; margin-bottom:0.3rem; }
+  .compact-card .one-liner { font-size:0.84rem; margin-bottom:0.8rem; line-height:1.6; }
+  .compact-card .detail { font-size:0.8rem; color:var(--text-dim); line-height:1.7; }
+  .compact-card .highlight { font-size:0.8rem; color:var(--green); margin-top:0.6rem; }
+
+  /* === KPI Grid === */
+  .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:1rem; }
+  .kpi { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:1.2rem; text-align:center; }
+  .kpi-val { font-size:1.8rem; font-weight:800; color:var(--text-bright); }
+  .kpi-label { font-size:0.68rem; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.3rem; }
+  .kpi-detail { font-size:0.7rem; color:var(--text-dim); margin-top:0.2rem; }
+
+  /* === Lens Grid === */
+  .lens-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(155px,1fr)); gap:0.5rem; }
+  .lens-card { background:var(--surface2); border-radius:6px; padding:0.6rem; text-align:center; }
+  .lens-card .lens-name { font-size:0.86rem; color:var(--text-bright); font-weight:600; }
+  .lens-card .lens-view { font-size:0.68rem; color:var(--accent); margin:0.1rem 0; }
+  .lens-card .lens-focus { font-size:0.74rem; color:var(--text-dim); }
+
+  /* === Issue Grid === */
+  .issue-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(290px,1fr)); gap:0.6rem; }
+  .issue-card { background:var(--surface2); border-radius:6px; padding:0.8rem 1rem; display:flex; gap:0.8rem; align-items:flex-start; }
+  .issue-card .badge { padding:0.12rem 0.4rem; border-radius:3px; font-size:0.62rem; font-weight:700; white-space:nowrap; text-transform:uppercase; }
+  .issue-card .badge.env { background:var(--teal-dim); color:var(--teal); }
+  .issue-card .badge.cost { background:rgba(251,191,36,0.10); color:var(--amber); }
+  .issue-card .badge.quality { background:var(--accent-dim); color:var(--accent); }
+  .issue-card .badge.stability { background:rgba(52,211,153,0.10); color:var(--green); }
+  .issue-card .badge.bias { background:rgba(244,114,182,0.10); color:var(--pink); }
+  .issue-card .problem { font-size:0.82rem; color:var(--text-bright); font-weight:600; }
+  .issue-card .solution { font-size:0.78rem; }
+  .issue-card .project-tag { font-size:0.68rem; color:var(--accent); }
+
+  /* === Role Grid === */
+  .role-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:2rem; }
+  .role-col { background:var(--surface); border-radius:12px; padding:1.5rem; border:1px solid var(--border); }
+  .role-col h4 { font-size:0.9rem; margin-bottom:0.8rem; }
+  .role-col.human { border-left:3px solid var(--amber); }
+  .role-col.human h4 { color:var(--amber); }
+  .role-col.ai { border-left:3px solid var(--teal); }
+  .role-col.ai h4 { color:var(--teal); }
+  .role-col ul { list-style:none; }
+  .role-col li { padding:0.35rem 0; font-size:0.86rem; border-bottom:1px solid var(--border); }
+  .role-col li:last-child { border:none; }
+
+  /* === Lesson === */
+  .lesson { background:var(--surface); border-left:2px solid var(--accent); border-radius:0 8px 8px 0; padding:1rem 1.2rem; margin-bottom:0.6rem; }
+  .lesson .title { font-weight:700; font-size:0.92rem; color:var(--text-bright); margin-bottom:0.2rem; }
+  .lesson .desc { font-size:0.86rem; line-height:1.7; }
+
+  /* === Timeline === */
+  .timeline { position:relative; padding-left:2rem; }
+  .timeline::before { content:''; position:absolute; left:0; top:0; bottom:0; width:1px; background:linear-gradient(to bottom, var(--accent), var(--teal)); }
+  .tl-item { position:relative; margin-bottom:1.5rem; padding-left:1.5rem; }
+  .tl-item::before { content:''; position:absolute; left:-2rem; top:0.45rem; width:8px; height:8px; border-radius:50%; background:var(--accent); border:2px solid var(--bg); }
+  .tl-date { font-size:0.75rem; color:var(--accent); font-weight:600; }
+  .tl-title { font-size:0.92rem; color:var(--text-bright); font-weight:500; margin-bottom:0.15rem; }
+  .tl-detail { font-size:0.78rem; color:var(--text-dim); }
+
+  /* Code Evolution */
+  .code-evolution { display:flex; gap:0.6rem; align-items:flex-end; flex-wrap:wrap; }
+  .code-step { text-align:center; flex:1; min-width:60px; }
+  .code-step .version { font-size:0.68rem; color:var(--text-dim); margin-bottom:0.2rem; }
+  .code-step .loc { font-size:1.4rem; font-weight:800; color:var(--text-dim); }
+  .code-step .loc.final { color:var(--green); }
+  .code-step-arrow { font-size:0.8rem; color:var(--text-dim); opacity:0.3; padding-bottom:0.5rem; }
+
+  /* Footer */
+  footer { text-align:center; padding:3rem 2rem; color:var(--text-dim); font-size:0.8rem; border-top:1px solid var(--border); }
+  footer .links { display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; margin-top:1rem; }
+  footer .links a {
+    display:inline-flex; align-items:center; gap:0.4rem; font-size:0.78rem; color:var(--text-dim);
+    text-decoration:none; border:1px solid var(--border); padding:0.4rem 1rem; border-radius:6px; transition:all 0.2s;
+  }
+  footer .links a:hover { border-color:var(--accent); color:var(--accent); }
+
+  /* Responsive */
+  @media (max-width:768px) {
+    .why-grid { grid-template-columns:1fr; }
+    .compact-grid { grid-template-columns:1fr; }
+    .role-grid { grid-template-columns:1fr; }
+    .borrow-grid { grid-template-columns:1fr; }
+    .compare-grid { grid-template-columns:1fr; }
+    .hero-stats { gap:1.5rem; }
+    .project-card { padding:1.5rem; }
+    nav { justify-content:flex-start; padding:0 1rem; }
+    .arch-layer { flex-direction:column; gap:0.2rem; }
+    .arch-layer-name { text-align:left; min-width:auto; }
+    .arch-connector { padding-left:0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="progress"></div>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>COMAD</h1>
+  <p class="tagline">2주 만에, 혼자서<br><strong>6개 AI 에이전트 생태계</strong>를 구축했습니다</p>
+  <p class="sub-tagline">Claude On My Automated Desktop</p>
+
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num" data-count="6">0</div><div class="label">Projects</div></div>
+    <div class="hero-stat"><div class="num" data-count="61000" data-display="61K+">0</div><div class="label">Graph Nodes</div></div>
+    <div class="hero-stat"><div class="num" data-count="40000" data-display="40K">0</div><div class="label">LOC</div></div>
+    <div class="hero-stat"><div class="num" data-count="1422" data-separator="true">0</div><div class="label">Tests</div></div>
+    <div class="hero-stat"><div class="num" data-count="87" data-suffix="%">0</div><div class="label">Cost Reduction</div></div>
+  </div>
+
+  <div class="hero-flow">
+    <div class="flow-node" style="color:var(--teal)">ear</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-node" style="color:var(--accent)">brain</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-node" style="color:var(--teal)">eye</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-node" style="color:var(--pink)">photo</div>
+    <span class="flow-sep">|</span>
+    <div class="flow-node" style="color:var(--green)">sleep</div>
+    <span class="flow-sep">|</span>
+    <div class="flow-node" style="color:var(--amber)">voice</div>
+  </div>
+</section>
+
+<!-- Nav -->
+<nav id="mainNav">
+  <a href="#spark">계기</a>
+  <a href="#why">문제</a>
+  <a href="#architecture">아키텍처</a>
+  <a href="#brain">brain</a>
+  <a href="#eye">eye</a>
+  <a href="#ecosystem">에코시스템</a>
+  <a href="#results">검증</a>
+  <a href="#methodology">방법론</a>
+  <a href="#challenges">챌린지</a>
+  <a href="#timeline">타임라인</a>
+</nav>
+
+<!-- ====== THE SPARK (origin story — Hugh Kim에서 배운 구성) ====== -->
+<section id="spark">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">The Spark</div>
+    <h2>시작: <em>하나의 불편함</em></h2>
+  </div>
+
+  <div class="quote-box reveal">
+    GeekNews에서 흥미로운 기사를 발견한다. 브라우저 탭에 띄워둔다. 나중에 정리하려고 한다. 정리하지 않는다. 한 달 뒤 같은 기사를 또 발견한다. "이거 어디서 본 것 같은데..."
+    <span class="quote-attrib">— 프로젝트를 시작하게 된 실제 경험</span>
+  </div>
+
+  <p class="reveal" style="font-size:0.95rem;margin-top:1.2rem;max-width:640px;line-height:1.8;">
+    수집 &rarr; 구조화 &rarr; 분석 &rarr; 실행. 이 파이프라인이 끊기는 지점마다 에이전트를 하나씩 만들었습니다.
+    기사 하나를 발견하면 자동으로 아카이브되고, 지식 그래프에 연결되고, 시뮬레이션 분석까지 흐르는 시스템.
+    그것이 COMAD입니다.
+  </p>
+
+  <!-- Before/After — Hugh Kim에서 배운 비교 프레이밍 -->
+  <div class="compare-grid reveal">
+    <div class="compare-col without">
+      <div class="compare-label">COMAD 없이</div>
+      <p>기사를 읽고 잊는다. 같은 주제를 반복 검색한다. 연결 고리를 머릿속에만 둔다. 분석은 "느낌"에 의존. 사진 보정은 매번 처음부터.</p>
+    </div>
+    <div class="compare-col with">
+      <div class="compare-label">COMAD와 함께</div>
+      <p>기사가 자동 수집, 61K 노드 그래프에 연결, 10개 렌즈로 분석, 사진은 33줄 에이전트가 보정. 모든 맥락이 축적되고, 잠자는 동안 메모리가 정리됨.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ====== WHY ====== -->
+<section id="why">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">The Problem</div>
+    <h2>AI 도구는 넘쳐나지만, <em>통합된 생태계</em>는 없었습니다</h2>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-card reveal"><div class="num">01</div><h3>파편화된 도구들</h3><p>뉴스 수집, 지식 관리, 분석, 사진 보정 &mdash; 각각 별도 도구를 쓰면 컨텍스트가 끊깁니다.</p></div>
+    <div class="why-card reveal"><div class="num">02</div><h3>수동 연결의 한계</h3><p>도구 간 데이터를 사람이 옮기면 자동화의 의미가 사라집니다.</p></div>
+    <div class="why-card reveal"><div class="num">03</div><h3>외부 의존성 리스크</h3><p>프레임워크를 통째로 쓰면 유지보수 부담. 아이디어만 차용, 자체 구현.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ====== ARCHITECTURE ====== -->
+<section id="architecture">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">System Architecture</div>
+    <h2>6개 에이전트, <em>하나의 파이프라인</em></h2>
+    <p class="section-desc">수집 &rarr; 구조화 &rarr; 분석 &rarr; 실행. 각 에이전트는 독립 배포 가능하되, 데이터는 자연스럽게 흐릅니다.</p>
+  </div>
+
+  <div class="arch-box reveal">
+    <div class="arch-layer"><span class="arch-layer-name">수집</span><span class="arch-layer-node">ear</span><span class="arch-layer-desc">&mdash; Discord 기술 뉴스 감지, 관련성 3단계 분류, 아카이브</span></div>
+    <div class="arch-connector">&darr;</div>
+    <div class="arch-layer"><span class="arch-layer-name">구조화</span><span class="arch-layer-node">brain</span><span class="arch-layer-desc">&mdash; 엔티티 추출 &rarr; Neo4j 그래프 &rarr; 커뮤니티 감지 &rarr; GraphRAG</span></div>
+    <div class="arch-connector">&darr;</div>
+    <div class="arch-layer"><span class="arch-layer-name">분석</span><span class="arch-layer-node">eye</span><span class="arch-layer-desc">&mdash; 전파 시뮬레이션 &rarr; 10개 분석 렌즈 &rarr; 종합 보고서</span></div>
+    <div class="arch-connector">&darr;</div>
+    <div class="arch-layer"><span class="arch-layer-name">실행</span><span class="arch-layer-node">photo</span><span class="arch-layer-desc">&mdash; 사진 분석 &rarr; 보정안 &rarr; Photoshop MCP 자동 실행</span></div>
+    <div class="arch-connector">&middot;&middot;&middot;</div>
+    <div class="arch-layer"><span class="arch-layer-name">유지</span><span class="arch-layer-node">sleep</span><span class="arch-layer-desc">&mdash; REM 수면식 메모리 스캔 &rarr; 중복 감지 &rarr; 통합</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">제어</span><span class="arch-layer-node">voice</span><span class="arch-layer-desc">&mdash; 6개 트리거 키워드로 워크플로우 자동 제어</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ====== BRAIN ====== -->
+<section id="brain">
+<div class="container">
+  <div class="project-card reveal">
+    <div class="card-header"><h3>comad-brain</h3><span class="card-badge" style="color:var(--accent)">Knowledge Graph & GraphRAG</span></div>
+    <p class="one-liner">기사, 논문, 레포에서 엔티티를 추출하고 Neo4j 온톨로지로 관리하며 GraphRAG로 질의응답 제공</p>
+    <div class="tag-row"><span class="tag">TypeScript</span><span class="tag">Bun</span><span class="tag">Neo4j 5</span><span class="tag">Claude API</span><span class="tag">MCP</span></div>
+
+    <div class="sub-section">
+      <h4>6-Layer Architecture</h4>
+      <div class="code-flow">
+        <span class="dim">[수집층]</span> HN API + <span class="hl">25개 RSS</span> + arXiv + GitHub + ear<br>
+        &nbsp;&nbsp;&darr;<br>
+        <span class="dim">[추출층]</span> Claude <span class="hl">Haiku</span>로 엔티티/관계/Claim 추출<br>
+        &nbsp;&nbsp;&darr;<br>
+        <span class="dim">[그래프층]</span> Neo4j: 13노드, 30관계, 22커뮤니티<br>
+        &nbsp;&nbsp;&darr;<br>
+        <span class="dim">[추론층]</span> MetaEdge <span class="hl">10</span>개 규칙<br>
+        &nbsp;&nbsp;&darr;<br>
+        <span class="dim">[검색층]</span> Dual-Retriever: <span class="hl">Local + Global + Temporal</span><br>
+        &nbsp;&nbsp;&darr;<br>
+        <span class="dim">[MCP층]</span> <span class="hl">15</span>개 도구
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>모노레포 (5개 패키지)</h4>
+      <table>
+        <tr><td><code>core</code></td><td>엔티티 추출, 중복 감지, Claim 추적, MetaEdge</td></tr>
+        <tr><td><code>crawler</code></td><td>HN/arXiv/GitHub 크롤러, 인제스트 파이프라인</td></tr>
+        <tr><td><code>graphrag</code></td><td>Dual-Retriever, 서브그래프 탐색, 답변 합성</td></tr>
+        <tr><td><code>ingester</code></td><td>ear 아카이브 &rarr; 그래프 임포터</td></tr>
+        <tr><td><code>mcp-server</code></td><td>MCP 프로토콜 서버 (15개 도구)</td></tr>
+      </table>
+    </div>
+
+    <div class="sub-section">
+      <h4>아이디어 차용 & 고도화</h4>
+      <div class="borrow-grid">
+        <div class="borrow-card"><div class="origin">LightRAG</div><div class="point">이중 검색 (Local + Global)</div><div class="improve">&rarr; Temporal 축 추가. Claim 스코어링. ear 필독 연동</div></div>
+        <div class="borrow-card"><div class="origin">GraphRAG (MS)</div><div class="point">커뮤니티 기반 요약</div><div class="improve">&rarr; Leiden 3단계 계층 (22개). 한국어 최적화</div></div>
+      </div>
+    </div>
+
+    <div class="test-result">
+      <h4>실제 시연 테스트</h4>
+      <p style="font-size:0.92rem;color:var(--text-bright);font-style:italic;margin-bottom:0.8rem;">"MCP란 무엇이고 어떤 기업들이 프로덕션에서 활용하고 있나?"</p>
+      <ul style="list-style:none;font-size:0.86rem;line-height:1.9;">
+        <li>정의: JSON-RPC 2.0 기반 오픈 표준, OAuth 2.0 통합</li>
+        <li>9개 기업 식별: Anthropic, OpenAI, Google, Microsoft, Block, Bloomberg, AWS, Cloudflare</li>
+        <li>8개 MCP 채택 제품 + 출처 인용 + "그래프에 없는 정보" 명시</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ====== EYE ====== -->
+<section id="eye">
+<div class="container">
+  <div class="project-card reveal">
+    <div class="card-header"><h3>comad-eye</h3><span class="card-badge" style="color:var(--teal)">Prediction Simulation Engine</span></div>
+    <p class="one-liner">텍스트에서 엔티티를 추출, 전파 시뮬레이션, 10개 분석 프레임워크로 종합 보고서 생성</p>
+    <div class="tag-row"><span class="tag">Python 3.13</span><span class="tag">FastAPI</span><span class="tag">Next.js 16</span><span class="tag">Neo4j 5</span><span class="tag">Ollama</span><span class="tag">BGE-M3</span></div>
+
+    <div class="sub-section">
+      <h4>Pipeline</h4>
+      <div class="code-flow">
+        텍스트 입력 <span class="dim">(뉴스, 보고서, 논문)</span><br>
+        &nbsp;&nbsp;<span class="hl">&rarr;</span> 인제스션 <span class="dim">(3-tier)</span> &rarr; 그래프 로딩 &rarr; 커뮤니티 감지<br>
+        &nbsp;&nbsp;<span class="hl">&rarr;</span> 시뮬레이션 <span class="dim">(N라운드)</span> &rarr; 6개 공간 분석<br>
+        &nbsp;&nbsp;<span class="hl">&rarr;</span> 렌즈 심층분석 <span class="dim">(10개 프레임워크)</span> &rarr; 보고서 + 품질 게이트
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <h4>10개 분석 렌즈</h4>
+      <div class="lens-grid">
+        <div class="lens-card"><div class="lens-name">손자병법</div><div class="lens-view">전략</div><div class="lens-focus">경쟁 우위, 허실</div></div>
+        <div class="lens-card"><div class="lens-name">마키아벨리</div><div class="lens-view">권력</div><div class="lens-focus">이해관계자 역학</div></div>
+        <div class="lens-card"><div class="lens-name">클라우제비츠</div><div class="lens-view">갈등</div><div class="lens-focus">마찰, 중심점</div></div>
+        <div class="lens-card"><div class="lens-name">애덤 스미스</div><div class="lens-view">경제</div><div class="lens-focus">시장, 분업</div></div>
+        <div class="lens-card"><div class="lens-name">탈레브</div><div class="lens-view">리스크</div><div class="lens-focus">블랙스완</div></div>
+        <div class="lens-card"><div class="lens-name">카너먼</div><div class="lens-view">인지</div><div class="lens-focus">시스템1/2</div></div>
+        <div class="lens-card"><div class="lens-name">헤겔</div><div class="lens-view">변증법</div><div class="lens-focus">정-반-합</div></div>
+        <div class="lens-card"><div class="lens-name">다윈</div><div class="lens-view">진화</div><div class="lens-focus">적응, 선택</div></div>
+        <div class="lens-card"><div class="lens-name">메도우스</div><div class="lens-view">시스템</div><div class="lens-focus">피드백 루프</div></div>
+        <div class="lens-card"><div class="lens-name">데카르트</div><div class="lens-view">분석</div><div class="lens-focus">분해, 회의</div></div>
+      </div>
+    </div>
+
+    <div class="test-result">
+      <h4>실제 시연 테스트</h4>
+      <p style="font-size:0.86rem;">입력 2문장 &rarr; 출력 <strong style="color:var(--green)">810줄, 15섹션 보고서</strong></p>
+      <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;">핵심: "MCP가 3개 커뮤니티의 브릿지 노드 (신뢰도 70%)"</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ====== ECOSYSTEM ====== -->
+<section id="ecosystem">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">Ecosystem</div>
+    <h2>나머지 에이전트들</h2>
+    <p class="section-desc">각자의 역할에 충실하면서 전체 시스템과 연결됩니다.</p>
+  </div>
+  <div class="compact-grid">
+    <div class="compact-card reveal">
+      <h3 style="color:var(--teal)">comad-ear</h3>
+      <p class="one-liner">Discord에서 기술 뉴스를 자동 감지하여 아카이브</p>
+      <div class="detail">관련성 3단계 분류 (필독 13% / 추천 65% / 참고 22%)<br>YAML frontmatter, brain 인제스터 자동 연동</div>
+      <div class="highlight">초기 필독 40% &rarr; 엄격 기준 후 13%</div>
+    </div>
+    <div class="compact-card reveal">
+      <h3 style="color:var(--pink)">comad-photo</h3>
+      <p class="one-liner">사진 분석 &rarr; 보정안 &rarr; Photoshop MCP 비파괴 보정</p>
+      <div class="detail">3단계: PIL &rarr; Camera Raw &rarr; 고급<br>MAE > 20 가드레일. 인물 15장 평균 92.2점.</div>
+      <div class="code-evolution" style="margin-top:0.8rem">
+        <div class="code-step"><div class="version">v0.1</div><div class="loc">82줄</div></div>
+        <div class="code-step-arrow">&rarr;</div>
+        <div class="code-step"><div class="version">v0.2</div><div class="loc">65줄</div></div>
+        <div class="code-step-arrow">&rarr;</div>
+        <div class="code-step"><div class="version">v0.4</div><div class="loc final">33줄</div></div>
+      </div>
+    </div>
+    <div class="compact-card reveal">
+      <h3 style="color:var(--green)">comad-sleep</h3>
+      <p class="one-liner">REM 수면처럼, 메모리를 자동 스캔/중복 감지/통합</p>
+      <div class="detail">MCP 서버 122줄. <code>info</code> + <code>history</code> 2개 도구.</div>
+      <div class="highlight">"dream" 또는 메모리 > 150줄 시 자동 트리거</div>
+    </div>
+    <div class="compact-card reveal">
+      <h3 style="color:var(--amber)">comad-voice</h3>
+      <p class="one-liner">비개발자를 위한 Claude Code 워크플로우 자동화</p>
+      <div class="detail">6개 키워드 트리거. CLAUDE.md 기반. 외부 의존성 0.</div>
+      <div class="highlight">자연어 한마디로 전체 프로세스 자동 제어</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ====== RESULTS ====== -->
+<section id="results">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">Verified Results</div>
+    <h2>모든 수치는 <em>실전 테스트</em>에서 나왔습니다</h2>
+  </div>
+  <div class="kpi-grid reveal">
+    <div class="kpi"><div class="kpi-val" style="color:var(--green)">1,422</div><div class="kpi-label">Tests</div><div class="kpi-detail">brain + eye + voice CI</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--amber)">92.2</div><div class="kpi-label">Photo Score</div><div class="kpi-detail">인물 15장 블라인드</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--teal)">181</div><div class="kpi-label">Ingested</div><div class="kpi-detail">기사/논문/레포</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--accent)">810줄</div><div class="kpi-label">Eye Output</div><div class="kpi-detail">2문장 &rarr; 15섹션</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--green)">$0.60</div><div class="kpi-label">Daily Cost</div><div class="kpi-detail">$4.50에서 87%↓</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ====== METHODOLOGY ====== -->
+<section id="methodology">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">Methodology</div>
+    <h2>사람은 설계, <em>AI는 실행</em></h2>
+  </div>
+  <div class="role-grid reveal">
+    <div class="role-col human"><h4>사람 (설계자)</h4><ul><li>시스템 아키텍처 설계</li><li>어떤 문제를 풀 것인지 결정</li><li>품질 기준 설정 (MAE 20, 필독 13%)</li><li>차용할 아이디어 선정</li><li>실전 테스트 결과 판단</li></ul></div>
+    <div class="role-col ai"><h4>AI (Claude Code)</h4><ul><li>코드 구현 + 테스트 작성</li><li>구체적인 해법 코딩</li><li>기준에 맞는 최적화 실행</li><li>차용 포인트 분석 + 자체 구현</li><li>테스트 자동화 + 배치 실행</li></ul></div>
+  </div>
+
+  <div class="section-label reveal">Lessons Learned</div>
+  <div class="lesson reveal"><div class="title">프롬프트는 짧을수록 좋다</div><div class="desc">comad-photo: 82줄&rarr;33줄. 에이전트가 오히려 더 나은 판단.</div></div>
+  <div class="lesson reveal"><div class="title">실전 테스트에서 규칙을 도출</div><div class="desc">50장 돌려보고 실패 패턴에서 규칙 추가. MAE 가드, CU 규칙, 스키마 고정 모두 이 방식.</div></div>
+  <div class="lesson reveal"><div class="title">이미 있는 것을 먼저 확인</div><div class="desc">brain: API 크롤러가 이미 있었지만 크론이 claude -p를 사용 중이었음.</div></div>
+  <div class="lesson reveal"><div class="title">외부 의존성 0으로 차용</div><div class="desc">LightRAG, ReMe, SimpleMem — 구조만 참고, 직접 구현.</div></div>
+  <div class="lesson reveal"><div class="title">비용은 사후에 최적화</div><div class="desc">먼저 동작하게, 이후 Sonnet&rarr;Haiku + 아키텍처 변경으로 87% 절감.</div></div>
+</div>
+</section>
+
+<!-- ====== CHALLENGES ====== -->
+<section id="challenges">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">Engineering Challenges</div>
+    <h2>13개의 문제, <em>직접 해결</em></h2>
+  </div>
+  <div class="issue-grid reveal">
+    <div class="issue-card"><div class="badge env">환경</div><div><div class="problem">CRLF &rarr; macOS cron 실패</div><div class="solution">전체 LF 변환</div><div class="project-tag">brain</div></div></div>
+    <div class="issue-card"><div class="badge env">환경</div><div><div class="problem">Python venv 깨짐</div><div class="solution">venv 재생성 + shebang 수정</div><div class="project-tag">eye</div></div></div>
+    <div class="issue-card"><div class="badge env">환경</div><div><div class="problem">Neo4j 포트 충돌</div><div class="solution">포트 분리 (7687/7688)</div><div class="project-tag">eye/brain</div></div></div>
+    <div class="issue-card"><div class="badge cost">비용</div><div><div class="problem">크롤링에 LLM 15K tok/일</div><div class="solution">기존 API 크롤러로 교체 (0 tok)</div><div class="project-tag">brain</div></div></div>
+    <div class="issue-card"><div class="badge cost">비용</div><div><div class="problem">Sonnet 추출 비용</div><div class="solution">Haiku 전환 (67%↓)</div><div class="project-tag">brain</div></div></div>
+    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">필독 40% 구별력 부족</div><div class="solution">4가지 엄격 기준 (13%)</div><div class="project-tag">ear</div></div></div>
+    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">스키마 드리프트</div><div class="solution">템플릿 고정 + 23건 소급</div><div class="project-tag">ear</div></div></div>
+    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">PIL+CameraRaw 이중 (58점)</div><div class="solution">상호 배타 규칙</div><div class="project-tag">photo</div></div></div>
+    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">과보정 MAE 35</div><div class="solution">MAE 20 강화 (72&rarr;90)</div><div class="project-tag">photo</div></div></div>
+    <div class="issue-card"><div class="badge stability">안정성</div><div><div class="problem">AppleScript+CU 충돌</div><div class="solution">CU 전용 저장 규칙</div><div class="project-tag">photo</div></div></div>
+    <div class="issue-card"><div class="badge stability">안정성</div><div><div class="problem">Discord 봇 오프라인</div><div class="solution">LAZY 제거 + 플러그인 해결</div><div class="project-tag">ear</div></div></div>
+    <div class="issue-card"><div class="badge stability">안정성</div><div><div class="problem">Stale lock 파일</div><div class="solution">자동 정리 로직</div><div class="project-tag">sleep</div></div></div>
+    <div class="issue-card"><div class="badge bias">편향</div><div><div class="problem">HN+OpenAI 편중</div><div class="solution">25 RSS 균등 + 30% 캡</div><div class="project-tag">brain</div></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ====== TIMELINE (상세화 — Hugh Kim에서 배운 구성) ====== -->
+<section id="timeline">
+<div class="container">
+  <div class="reveal">
+    <div class="section-label">Timeline</div>
+    <h2>2주간의 기록</h2>
+  </div>
+  <div class="timeline reveal">
+    <div class="tl-item"><div class="tl-date">2026-03-21</div><div class="tl-title">comad-eye 첫 커밋</div><div class="tl-detail">Python 3.13 + FastAPI + Neo4j &middot; 온톨로지 시뮬레이션 엔진 &middot; ~8,000 LOC</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-23</div><div class="tl-title">comad-brain 시작</div><div class="tl-detail">TypeScript + Bun &middot; 5 packages 모노레포 &middot; ~12,000 LOC &middot; Neo4j 지식 그래프</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-24</div><div class="tl-title">comad-voice 구현</div><div class="tl-detail">CLAUDE.md 기반 &middot; 6 triggers &middot; 외부 의존성 0</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-25</div><div class="tl-title">comad-sleep 구현</div><div class="tl-detail">Node.js MCP 서버 &middot; 122 LOC &middot; info + history 2 tools</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-30</div><div class="tl-title">comad-photo 구현</div><div class="tl-detail">Claude Agent &middot; Photoshop MCP + Computer Use &middot; 33 LOC (v0.4)</div></div>
+    <div class="tl-item"><div class="tl-date">2026-04-02~03</div><div class="tl-title">전수 검토 스프린트</div><div class="tl-detail">E2E 60건 &middot; 트렌딩 레포 내재화 5건 &middot; 1,422 tests 달성</div></div>
+    <div class="tl-item"><div class="tl-date">2026-04-04</div><div class="tl-title">고도화 완료</div><div class="tl-detail">비용 87%↓ ($4.50&rarr;$0.60) &middot; Haiku 전환 &middot; 25 RSS 균등배분</div></div>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>COMAD &mdash; Built with Claude Code in 2 weeks &middot; 2026-03-21 ~ 2026-04-04</p>
+  <div class="links">
+    <a href="https://github.com/kinkos1234" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub
+    </a>
+    <a href="https://github.com/kinkos1234/comad-voice" target="_blank">&rarr; voice</a>
+    <a href="https://github.com/kinkos1234/comad-sleep" target="_blank">&rarr; sleep</a>
+    <a href="https://github.com/kinkos1234/sos" target="_blank">&rarr; eye</a>
+  </div>
+</footer>
+
+<script>
+// Progress
+window.addEventListener('scroll', () => {
+  const p = document.getElementById('progress');
+  const h = document.documentElement.scrollHeight - window.innerHeight;
+  p.style.width = (window.scrollY / h * 100) + '%';
+}, { passive: true });
+
+// Reveal
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Count-up
+function countUp(el, target, duration) {
+  const start = performance.now();
+  const display = el.dataset.display, suffix = el.dataset.suffix || '', useSep = el.dataset.separator === 'true';
+  function fmt(n) {
+    if (display && n >= target) return display;
+    const r = Math.round(n);
+    if (useSep) return r.toLocaleString();
+    if (target >= 10000) { const k = r/1000; return (k>=10?Math.round(k):k.toFixed(1))+'K'; }
+    return r+'';
+  }
+  function step(now) {
+    const p = Math.min((now-start)/duration,1), ease = 1-Math.pow(1-p,3);
+    el.textContent = fmt(ease*target) + (display&&ease*target>=target?'':suffix);
+    if (p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const sObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.querySelectorAll('.num[data-count]').forEach((el,i) => { setTimeout(()=>countUp(el,parseInt(el.dataset.count),1600),i*100); }); sObs.unobserve(e.target); } });
+}, { threshold: 0.3 });
+document.querySelectorAll('.hero-stats').forEach(el => sObs.observe(el));
+
+// Nav active
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a');
+function updateNav() {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+  navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+}
+window.addEventListener('scroll', updateNav, { passive: true });
+</script>
+
+</body>
+</html>
