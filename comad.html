@@ -434,6 +434,20 @@
     </div>
 
     <div class="sub-section">
+      <h4>그래프 규모</h4>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:0.6rem;margin-bottom:1rem;">
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">60,827</div><div style="font-size:0.68rem;color:var(--text-dim)">총 노드</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">150,988</div><div style="font-size:0.68rem;color:var(--text-dim)">총 관계</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--teal)">153</div><div style="font-size:0.68rem;color:var(--text-dim)">arXiv 논문</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">23,084</div><div style="font-size:0.68rem;color:var(--text-dim)">Claim 노드</div></div>
+      </div>
+      <p style="font-size:0.84rem;line-height:1.8;">
+        <strong style="color:var(--text-bright)">핵심 논문:</strong> Attention Is All You Need, GPT-3/4, BERT, LLaMA 1~4, DeepSeek-R1/V3, Gemini, Chain-of-Thought, LoRA/QLoRA, FlashAttention, Mamba, DPO, GraphRAG, LightRAG, SAM, CLIP, ReAct, MemGPT 등 AI 전 분야 커버.<br>
+        <strong style="color:var(--text-bright)">수집 소스 28개:</strong> 25 RSS (OpenAI/Anthropic/Google/Meta/xAI/DeepSeek 블로그 + Simon Willison/Lilian Weng/Chip Huyen 등 연구자) + HN API + arXiv API + GitHub API
+      </p>
+    </div>
+
+    <div class="sub-section">
       <h4>아이디어 차용 & 고도화</h4>
       <div class="borrow-grid">
         <div class="borrow-card"><div class="origin">LightRAG</div><div class="point">이중 검색 (Local + Global)</div><div class="improve">&rarr; Temporal 축 추가. Claim 스코어링. ear 필독 연동</div></div>
@@ -550,7 +564,7 @@
   <div class="kpi-grid reveal">
     <div class="kpi"><div class="kpi-val" style="color:var(--green)">1,422</div><div class="kpi-label">Tests</div><div class="kpi-detail">brain + eye + voice CI</div></div>
     <div class="kpi"><div class="kpi-val" style="color:var(--amber)">92.2</div><div class="kpi-label">Photo Score</div><div class="kpi-detail">인물 15장 블라인드</div></div>
-    <div class="kpi"><div class="kpi-val" style="color:var(--teal)">181</div><div class="kpi-label">Ingested</div><div class="kpi-detail">기사/논문/레포</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--teal)">153</div><div class="kpi-label">arXiv Papers</div><div class="kpi-detail">AI 전 분야 커버</div></div>
     <div class="kpi"><div class="kpi-val" style="color:var(--accent)">810줄</div><div class="kpi-label">Eye Output</div><div class="kpi-detail">2문장 &rarr; 15섹션</div></div>
     <div class="kpi"><div class="kpi-val" style="color:var(--green)">$0.60</div><div class="kpi-label">Daily Cost</div><div class="kpi-detail">$4.50에서 87%↓</div></div>
   </div>
