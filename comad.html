@@ -295,6 +295,16 @@
   .hook-col.without ul { color:var(--text-dim); }
   .hook-col.with ul { color:var(--text); }
 
+  /* Language Toggle */
+  .lang-toggle {
+    position:fixed; top:56px; right:1.5rem; z-index:101;
+    background:var(--surface); border:1px solid var(--border); border-radius:6px;
+    padding:0.3rem 0.6rem; font-size:0.72rem; font-weight:600; color:var(--text-dim);
+    cursor:pointer; transition:all 0.2s; font-family:inherit;
+  }
+  .lang-toggle:hover { border-color:var(--accent); color:var(--accent); }
+  .lang-toggle .active { color:var(--accent); }
+
   /* Responsive */
   @media (max-width:768px) {
     .hook-grid { grid-template-columns:1fr; }
@@ -316,19 +326,20 @@
 <body>
 
 <div class="scroll-progress" id="progress"></div>
+<button class="lang-toggle" onclick="toggleLang()"><span id="langEn">EN</span> / <span id="langKo">KO</span></button>
 
 <!-- Hero -->
 <section class="hero">
   <h1>Comad World</h1>
-  <p class="tagline">Drowning in articles? Let AI agents <strong>crawl, organize &amp; analyze</strong> for you.</p>
-  <p class="sub-tagline">Personal knowledge system that builds a searchable graph from RSS, papers &amp; GitHub &mdash; updated daily, driven by one YAML config.</p>
+  <p class="tagline" data-i18n="hero.tagline">Drowning in articles? Let AI agents <strong>crawl, organize &amp; analyze</strong> for you.</p>
+  <p class="sub-tagline" data-i18n="hero.sub">Personal knowledge system that builds a searchable graph from RSS, papers &amp; GitHub &mdash; updated daily, driven by one YAML config.</p>
 
   <div class="hero-stats">
-    <div class="hero-stat"><div class="num" data-count="6">0</div><div class="label">Agents</div></div>
-    <div class="hero-stat"><div class="num" data-count="61000" data-display="61K+">0</div><div class="label">Graph Nodes</div></div>
-    <div class="hero-stat"><div class="num" data-count="40000" data-display="40K">0</div><div class="label">LOC</div></div>
-    <div class="hero-stat"><div class="num" data-count="1422" data-separator="true">0</div><div class="label">Tests</div></div>
-    <div class="hero-stat"><div class="num" data-count="87" data-suffix="%">0</div><div class="label">Cost Reduction</div></div>
+    <div class="hero-stat"><div class="num" data-count="6">0</div><div class="label" data-i18n="stat.agents">Agents</div></div>
+    <div class="hero-stat"><div class="num" data-count="61000" data-display="61K+">0</div><div class="label" data-i18n="stat.nodes">Graph Nodes</div></div>
+    <div class="hero-stat"><div class="num" data-count="40000" data-display="40K">0</div><div class="label" data-i18n="stat.loc">LOC</div></div>
+    <div class="hero-stat"><div class="num" data-count="1422" data-separator="true">0</div><div class="label" data-i18n="stat.tests">Tests</div></div>
+    <div class="hero-stat"><div class="num" data-count="87" data-suffix="%">0</div><div class="label" data-i18n="stat.cost">Cost Reduction</div></div>
   </div>
 
   <div class="hero-flow">
@@ -347,7 +358,7 @@
 
   <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener" class="btn-primary">
     <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-    Get Started
+    <span data-i18n="hero.btn">Get Started</span>
   </a>
 
   <div class="hero-demo">
@@ -359,24 +370,24 @@
 <section id="why" style="border-top:none;padding:3rem 0;">
 <div class="container">
   <div class="problem-hook reveal">
-    <h3>Sound familiar?</h3>
+    <h3 data-i18n="hook.title">Sound familiar?</h3>
     <div class="hook-grid">
       <div class="hook-col without">
-        <h4>Without Comad World</h4>
+        <h4 data-i18n="hook.without">Without Comad World</h4>
         <ul>
-          <li>Read an article, forget it, find it again a month later</li>
-          <li>Bookmarks pile up with no connections between them</li>
-          <li>Context lost every time you close a browser tab</li>
-          <li>Manual research across 20+ sites, every day</li>
+          <li data-i18n="hook.w1">Read an article, forget it, find it again a month later</li>
+          <li data-i18n="hook.w2">Bookmarks pile up with no connections between them</li>
+          <li data-i18n="hook.w3">Context lost every time you close a browser tab</li>
+          <li data-i18n="hook.w4">Manual research across 20+ sites, every day</li>
         </ul>
       </div>
       <div class="hook-col with">
-        <h4>With Comad World</h4>
+        <h4 data-i18n="hook.with">With Comad World</h4>
         <ul>
-          <li>Articles auto-collected from 22+ RSS feeds, arXiv, GitHub</li>
-          <li>Entities linked in a knowledge graph &mdash; searchable via natural language</li>
-          <li>Every insight preserved and connected, forever</li>
-          <li>Daily digest delivered; $0.60/day operating cost</li>
+          <li data-i18n="hook.c1">Articles auto-collected from 22+ RSS feeds, arXiv, GitHub</li>
+          <li data-i18n="hook.c2">Entities linked in a knowledge graph &mdash; searchable via natural language</li>
+          <li data-i18n="hook.c3">Every insight preserved and connected, forever</li>
+          <li data-i18n="hook.c4">Daily digest delivered; $0.60/day operating cost</li>
         </ul>
       </div>
     </div>
@@ -386,37 +397,37 @@
 
 <!-- Nav -->
 <nav id="mainNav">
-  <a href="#why">Why</a>
-  <a href="#architecture">Architecture</a>
+  <a href="#why" data-i18n="nav.why">Why</a>
+  <a href="#architecture" data-i18n="nav.arch">Architecture</a>
   <a href="#brain">brain</a>
   <a href="#eye">eye</a>
-  <a href="#ecosystem">Ecosystem</a>
-  <a href="#results">Results</a>
-  <a href="#presets">Presets</a>
-  <a href="#quickstart">Quick Start</a>
-  <a href="#timeline">Timeline</a>
+  <a href="#ecosystem" data-i18n="nav.eco">Ecosystem</a>
+  <a href="#results" data-i18n="nav.results">Results</a>
+  <a href="#presets" data-i18n="nav.presets">Presets</a>
+  <a href="#quickstart" data-i18n="nav.quickstart">Quick Start</a>
+  <a href="#timeline" data-i18n="nav.timeline">Timeline</a>
 </nav>
 
 <!-- ====== ARCHITECTURE ====== -->
 <section id="architecture">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">System Architecture</div>
-    <h2>6 agents, <em>one config-driven pipeline</em></h2>
-    <p class="section-desc">Collect &rarr; Structure &rarr; Analyze &rarr; Act. Each agent deploys independently, but data flows seamlessly between them. Swap one YAML config to retarget the entire system to a new domain.</p>
+    <div class="section-label" data-i18n="arch.label">System Architecture</div>
+    <h2 data-i18n="arch.title">6 agents, <em>one config-driven pipeline</em></h2>
+    <p class="section-desc" data-i18n="arch.desc">Collect &rarr; Structure &rarr; Analyze &rarr; Act. Each agent deploys independently, but data flows seamlessly between them. Swap one YAML config to retarget the entire system to a new domain.</p>
   </div>
 
   <div class="arch-box reveal">
-    <div class="arch-layer"><span class="arch-layer-name">Collect</span><span class="arch-layer-node">ear</span><span class="arch-layer-desc">&mdash; RSS/Discord feed monitoring, 3-tier relevance classification, archive</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.collect">Collect</span><span class="arch-layer-node">ear</span><span class="arch-layer-desc" data-i18n="arch.collect.desc">&mdash; RSS/Discord feed monitoring, 3-tier relevance classification, archive</span></div>
     <div class="arch-connector">&darr;</div>
-    <div class="arch-layer"><span class="arch-layer-name">Structure</span><span class="arch-layer-node">brain</span><span class="arch-layer-desc">&mdash; Entity extraction &rarr; Neo4j graph &rarr; Community detection &rarr; GraphRAG</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.structure">Structure</span><span class="arch-layer-node">brain</span><span class="arch-layer-desc" data-i18n="arch.structure.desc">&mdash; Entity extraction &rarr; Neo4j graph &rarr; Community detection &rarr; GraphRAG</span></div>
     <div class="arch-connector">&darr;</div>
-    <div class="arch-layer"><span class="arch-layer-name">Analyze</span><span class="arch-layer-node">eye</span><span class="arch-layer-desc">&mdash; Propagation simulation &rarr; 10 analysis lenses &rarr; Full report</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.analyze">Analyze</span><span class="arch-layer-node">eye</span><span class="arch-layer-desc" data-i18n="arch.analyze.desc">&mdash; Propagation simulation &rarr; 10 analysis lenses &rarr; Full report</span></div>
     <div class="arch-connector">&darr;</div>
-    <div class="arch-layer"><span class="arch-layer-name">Execute</span><span class="arch-layer-node">photo</span><span class="arch-layer-desc">&mdash; Image analysis &rarr; Correction plan &rarr; Photoshop MCP automation</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.execute">Execute</span><span class="arch-layer-node">photo</span><span class="arch-layer-desc" data-i18n="arch.execute.desc">&mdash; Image analysis &rarr; Correction plan &rarr; Photoshop MCP automation</span></div>
     <div class="arch-connector">&middot;&middot;&middot;</div>
-    <div class="arch-layer"><span class="arch-layer-name">Maintain</span><span class="arch-layer-node">sleep</span><span class="arch-layer-desc">&mdash; REM-style memory scan &rarr; Deduplication &rarr; Consolidation</span></div>
-    <div class="arch-layer"><span class="arch-layer-name">Control</span><span class="arch-layer-node">voice</span><span class="arch-layer-desc">&mdash; Natural-language triggers for workflow automation</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.maintain">Maintain</span><span class="arch-layer-node">sleep</span><span class="arch-layer-desc" data-i18n="arch.maintain.desc">&mdash; REM-style memory scan &rarr; Deduplication &rarr; Consolidation</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.control">Control</span><span class="arch-layer-node">voice</span><span class="arch-layer-desc" data-i18n="arch.control.desc">&mdash; Natural-language triggers for workflow automation</span></div>
   </div>
 </div>
 </section>
@@ -425,8 +436,8 @@
 <section id="brain">
 <div class="container">
   <div class="project-card reveal">
-    <div class="card-header"><h3>comad-brain</h3><span class="card-badge" style="color:var(--accent)">Knowledge Graph & GraphRAG</span></div>
-    <p class="one-liner">Extracts entities from articles, papers, and repos. Manages a Neo4j ontology and provides GraphRAG-powered Q&A.</p>
+    <div class="card-header"><h3>comad-brain</h3><span class="card-badge" style="color:var(--accent)" data-i18n="brain.badge">Knowledge Graph & GraphRAG</span></div>
+    <p class="one-liner" data-i18n="brain.desc">Extracts entities from articles, papers, and repos. Manages a Neo4j ontology and provides GraphRAG-powered Q&A.</p>
     <div class="tag-row"><span class="tag">TypeScript</span><span class="tag">Bun</span><span class="tag">Neo4j 5</span><span class="tag">Claude API</span><span class="tag">MCP</span></div>
 
     <div class="sub-section">
@@ -458,23 +469,23 @@
     </div>
 
     <div class="sub-section">
-      <h4>Knowledge Graph Visualization</h4>
+      <h4 data-i18n="brain.graphviz">Knowledge Graph Visualization</h4>
       <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);margin-bottom:1.2rem;">
         <img src="https://raw.githubusercontent.com/kinkos1234/comad-world/main/docs/graph-preview.png" alt="Knowledge Graph — Anthropic, OpenAI, Google, MCP, and 3,000+ connected entities" style="width:100%;display:block;" loading="lazy">
       </div>
     </div>
 
     <div class="sub-section">
-      <h4>Graph Scale</h4>
+      <h4 data-i18n="brain.scale">Graph Scale</h4>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:0.6rem;margin-bottom:1rem;">
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">60,827</div><div style="font-size:0.68rem;color:var(--text-dim)">Total Nodes</div></div>
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">150,988</div><div style="font-size:0.68rem;color:var(--text-dim)">Total Relations</div></div>
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--teal)">153</div><div style="font-size:0.68rem;color:var(--text-dim)">arXiv Papers</div></div>
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">23,084</div><div style="font-size:0.68rem;color:var(--text-dim)">Claim Nodes</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">60,827</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.nodes">Total Nodes</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">150,988</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.rels">Total Relations</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--teal)">153</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.papers">arXiv Papers</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">23,084</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.claims">Claim Nodes</div></div>
       </div>
       <p style="font-size:0.84rem;line-height:1.8;">
-        <strong style="color:var(--text-bright)">Key papers indexed:</strong> Attention Is All You Need, GPT-3/4, BERT, LLaMA 1~4, DeepSeek-R1/V3, Gemini, Chain-of-Thought, LoRA/QLoRA, FlashAttention, Mamba, DPO, GraphRAG, LightRAG, SAM, CLIP, ReAct, MemGPT, and more.<br>
-        <strong style="color:var(--text-bright)">28 sources (default AI/ML preset):</strong> 25 RSS feeds (OpenAI/Anthropic/Google/Meta/xAI/DeepSeek blogs + researcher feeds) + HN API + arXiv API + GitHub API
+        <strong style="color:var(--text-bright)" data-i18n="brain.keypaper">Key papers indexed:</strong> Attention Is All You Need, GPT-3/4, BERT, LLaMA 1~4, DeepSeek-R1/V3, Gemini, Chain-of-Thought, LoRA/QLoRA, FlashAttention, Mamba, DPO, GraphRAG, LightRAG, SAM, CLIP, ReAct, MemGPT, and more.<br>
+        <strong style="color:var(--text-bright)" data-i18n="brain.sources28">28 sources (default AI/ML preset):</strong> 25 RSS feeds (OpenAI/Anthropic/Google/Meta/xAI/DeepSeek blogs + researcher feeds) + HN API + arXiv API + GitHub API
       </p>
     </div>
 
@@ -487,8 +498,8 @@
     </div>
 
     <div class="test-result">
-      <h4>Live Demo</h4>
-      <p style="font-size:0.92rem;color:var(--text-bright);font-style:italic;margin-bottom:0.8rem;">"What is MCP and which companies are using it in production?"</p>
+      <h4 data-i18n="brain.demo">Live Demo</h4>
+      <p style="font-size:0.92rem;color:var(--text-bright);font-style:italic;margin-bottom:0.8rem;" data-i18n="brain.demoq">"What is MCP and which companies are using it in production?"</p>
       <ul style="list-style:none;font-size:0.86rem;line-height:1.9;">
         <li>Definition: JSON-RPC 2.0 open standard with OAuth 2.0 integration</li>
         <li>9 companies identified: Anthropic, OpenAI, Google, Microsoft, Block, Bloomberg, AWS, Cloudflare</li>
@@ -503,8 +514,8 @@
 <section id="eye">
 <div class="container">
   <div class="project-card reveal">
-    <div class="card-header"><h3>comad-eye</h3><span class="card-badge" style="color:var(--teal)">Prediction Simulation Engine</span></div>
-    <p class="one-liner">Extracts entities from text, runs propagation simulations, generates comprehensive reports through 10 analysis frameworks.</p>
+    <div class="card-header"><h3>comad-eye</h3><span class="card-badge" style="color:var(--teal)" data-i18n="eye.badge">Prediction Simulation Engine</span></div>
+    <p class="one-liner" data-i18n="eye.desc">Extracts entities from text, runs propagation simulations, generates comprehensive reports through 10 analysis frameworks.</p>
     <div class="tag-row"><span class="tag">Python 3.13</span><span class="tag">FastAPI</span><span class="tag">Next.js 16</span><span class="tag">Neo4j 5</span><span class="tag">Ollama</span><span class="tag">BGE-M3</span></div>
 
     <div class="sub-section">
@@ -534,7 +545,7 @@
     </div>
 
     <div class="test-result">
-      <h4>Live Demo</h4>
+      <h4 data-i18n="eye.demo">Live Demo</h4>
       <p style="font-size:0.86rem;">Input: 2 sentences &rarr; Output: <strong style="color:var(--green)">810-line, 15-section report</strong></p>
       <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;">Key finding: "MCP serves as bridge node across 3 communities (confidence 70%)"</p>
     </div>
@@ -546,9 +557,9 @@
 <section id="ecosystem">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Ecosystem</div>
-    <h2>Supporting agents</h2>
-    <p class="section-desc">Each agent focuses on its role while connecting seamlessly to the rest of the system.</p>
+    <div class="section-label" data-i18n="eco.label">Ecosystem</div>
+    <h2 data-i18n="eco.title">Supporting agents</h2>
+    <p class="section-desc" data-i18n="eco.desc">Each focused on its role, all connected to the whole system.</p>
   </div>
   <div class="compact-grid">
     <div class="compact-card reveal">
@@ -589,8 +600,8 @@
 <section id="results">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Verified Results</div>
-    <h2>Every number comes from <em>real-world testing</em></h2>
+    <div class="section-label" data-i18n="results.label">Verified Results</div>
+    <h2 data-i18n="results.title">All numbers from <em>real deployments</em></h2>
   </div>
   <div class="kpi-grid reveal">
     <div class="kpi"><div class="kpi-val" style="color:var(--green)">1,422</div><div class="kpi-label">Tests</div><div class="kpi-detail">brain + eye + voice CI</div></div>
@@ -606,9 +617,9 @@
 <section id="presets">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Customization</div>
-    <h2>One config file, <em>any domain</em></h2>
-    <p class="section-desc">Comad World ships with ready-made presets. Swap one file to retarget the entire knowledge pipeline to your field.</p>
+    <div class="section-label" data-i18n="presets.label">Customization</div>
+    <h2 data-i18n="presets.title">One config file, <em>any domain</em></h2>
+    <p class="section-desc" data-i18n="presets.desc">Comad World ships with ready-made presets. Swap one file to retarget the entire knowledge pipeline to your field.</p>
   </div>
 
   <div class="preset-grid reveal">
@@ -657,8 +668,8 @@
 <section id="quickstart">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Quick Start</div>
-    <h2>Up and running in <em>4 commands</em></h2>
+    <div class="section-label" data-i18n="qs.label">Quick Start</div>
+    <h2 data-i18n="qs.title">Up and running in <em>4 commands</em></h2>
   </div>
 
   <div class="code-flow reveal">
@@ -676,7 +687,7 @@
   </div>
 
   <p class="reveal" style="font-size:0.88rem;color:var(--text-dim);margin-top:1.2rem;max-width:640px;line-height:1.8;">
-    Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup, Neo4j schema initialization, and cron configuration. See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> for detailed instructions.
+    <span data-i18n="qs.req">Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup, Neo4j schema initialization, and cron configuration. See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> for detailed instructions.</span>
   </p>
 </div>
 </section>
@@ -685,22 +696,22 @@
 <section id="timeline">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Timeline</div>
-    <h2>Major milestones</h2>
+    <div class="section-label" data-i18n="tl.label">Timeline</div>
+    <h2 data-i18n="tl.title">Major milestones</h2>
   </div>
   <div class="timeline reveal">
-    <div class="tl-item"><div class="tl-date">2026-03-21</div><div class="tl-title">comad-eye first commit</div><div class="tl-detail">Python 3.13 + FastAPI + Neo4j &middot; Simulation engine &middot; ~8,000 LOC</div></div>
-    <div class="tl-item"><div class="tl-date">2026-03-23</div><div class="tl-title">comad-brain started</div><div class="tl-detail">TypeScript + Bun &middot; 5-package monorepo &middot; ~12,000 LOC &middot; Neo4j knowledge graph</div></div>
-    <div class="tl-item"><div class="tl-date">2026-03-30</div><div class="tl-title">Ecosystem complete</div><div class="tl-detail">voice + sleep + photo &middot; All 6 agents operational</div></div>
-    <div class="tl-item"><div class="tl-date">2026-04-03</div><div class="tl-title">Full review sprint</div><div class="tl-detail">E2E 60 tests &middot; 1,422 total tests &middot; Cost 87% reduction</div></div>
-    <div class="tl-item"><div class="tl-date">2026-04-05</div><div class="tl-title">Open source launch</div><div class="tl-detail">comad-world public repo &middot; Config presets &middot; MIT License</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-21</div><div class="tl-title" data-i18n="tl.1">comad-eye first commit</div><div class="tl-detail" data-i18n="tl.1d">Python 3.13 + FastAPI + Neo4j &middot; Simulation engine &middot; ~8,000 LOC</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-23</div><div class="tl-title" data-i18n="tl.2">comad-brain started</div><div class="tl-detail" data-i18n="tl.2d">TypeScript + Bun &middot; 5-package monorepo &middot; ~12,000 LOC &middot; Neo4j knowledge graph</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-30</div><div class="tl-title" data-i18n="tl.3">Ecosystem complete</div><div class="tl-detail" data-i18n="tl.3d">voice + sleep + photo &middot; All 6 agents operational</div></div>
+    <div class="tl-item"><div class="tl-date">2026-04-03</div><div class="tl-title" data-i18n="tl.4">Full review sprint</div><div class="tl-detail" data-i18n="tl.4d">E2E 60 tests &middot; 1,422 total tests &middot; Cost 87% reduction</div></div>
+    <div class="tl-item"><div class="tl-date">2026-04-05</div><div class="tl-title" data-i18n="tl.5">Open source launch</div><div class="tl-detail" data-i18n="tl.5d">comad-world public repo &middot; Config presets &middot; MIT License</div></div>
   </div>
 </div>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>Comad World &mdash; Open Source AI Agent System &middot; MIT License</p>
+  <p data-i18n="footer.main">Comad World &mdash; Open Source AI Agent System &middot; MIT License</p>
   <p style="font-size:0.75rem;margin-top:0.4rem;">Built with <a href="https://docs.anthropic.com/en/docs/claude-code" style="color:var(--accent);text-decoration:none;">Claude Code</a> and the <a href="https://modelcontextprotocol.io/" style="color:var(--accent);text-decoration:none;">Model Context Protocol</a></p>
   <div class="links">
     <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener">
@@ -758,6 +769,196 @@ function updateNav() {
   navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
 }
 window.addEventListener('scroll', updateNav, { passive: true });
+
+// i18n
+const i18n = {
+  en: {
+    'hero.tagline': 'Drowning in articles? Let AI agents <strong>crawl, organize &amp; analyze</strong> for you.',
+    'hero.sub': 'Personal knowledge system that builds a searchable graph from RSS, papers &amp; GitHub \u2014 updated daily, driven by one YAML config.',
+    'hero.btn': 'Get Started',
+    'stat.agents': 'Agents',
+    'stat.nodes': 'Graph Nodes',
+    'stat.loc': 'LOC',
+    'stat.tests': 'Tests',
+    'stat.cost': 'Cost Reduction',
+    'hook.title': 'Sound familiar?',
+    'hook.without': 'Without Comad World',
+    'hook.with': 'With Comad World',
+    'hook.w1': 'Read an article, forget it, find it again a month later',
+    'hook.w2': 'Bookmarks pile up with no connections between them',
+    'hook.w3': 'Context lost every time you close a browser tab',
+    'hook.w4': 'Manual research across 20+ sites, every day',
+    'hook.c1': 'Articles auto-collected from 22+ RSS feeds, arXiv, GitHub',
+    'hook.c2': 'Entities linked in a knowledge graph \u2014 searchable via natural language',
+    'hook.c3': 'Every insight preserved and connected, forever',
+    'hook.c4': 'Daily digest delivered; $0.60/day operating cost',
+    'nav.why': 'Why',
+    'nav.arch': 'Architecture',
+    'nav.eco': 'Ecosystem',
+    'nav.results': 'Results',
+    'nav.presets': 'Presets',
+    'nav.quickstart': 'Quick Start',
+    'nav.timeline': 'Timeline',
+    'arch.label': 'System Architecture',
+    'arch.title': '6 agents, <em>one config-driven pipeline</em>',
+    'arch.desc': 'Collect \u2192 Structure \u2192 Analyze \u2192 Act. Each agent deploys independently, but data flows seamlessly between them. Swap one YAML config to retarget the entire system to a new domain.',
+    'arch.collect': 'Collect',
+    'arch.collect.desc': '\u2014 RSS/Discord feed monitoring, 3-tier relevance classification, archive',
+    'arch.structure': 'Structure',
+    'arch.structure.desc': '\u2014 Entity extraction \u2192 Neo4j graph \u2192 Community detection \u2192 GraphRAG',
+    'arch.analyze': 'Analyze',
+    'arch.analyze.desc': '\u2014 Propagation simulation \u2192 10 analysis lenses \u2192 Full report',
+    'arch.execute': 'Execute',
+    'arch.execute.desc': '\u2014 Image analysis \u2192 Correction plan \u2192 Photoshop MCP automation',
+    'arch.maintain': 'Maintain',
+    'arch.maintain.desc': '\u2014 REM-style memory scan \u2192 Deduplication \u2192 Consolidation',
+    'arch.control': 'Control',
+    'arch.control.desc': '\u2014 Natural-language triggers for workflow automation',
+    'brain.badge': 'Knowledge Graph & GraphRAG',
+    'brain.desc': 'Extracts entities from articles, papers, and repos. Manages a Neo4j ontology and provides GraphRAG-powered Q&A.',
+    'brain.graphviz': 'Knowledge Graph Visualization',
+    'brain.scale': 'Graph Scale',
+    'brain.nodes': 'Total Nodes',
+    'brain.rels': 'Total Relations',
+    'brain.papers': 'arXiv Papers',
+    'brain.claims': 'Claim Nodes',
+    'brain.keypaper': 'Key papers indexed:',
+    'brain.sources28': '28 sources (default AI/ML preset):',
+    'brain.demo': 'Live Demo',
+    'brain.demoq': '"What is MCP and which companies are using it in production?"',
+    'eye.badge': 'Prediction Simulation Engine',
+    'eye.desc': 'Extracts entities from text, runs propagation simulations, generates comprehensive reports through 10 analysis frameworks.',
+    'eye.demo': 'Live Demo',
+    'eco.label': 'Ecosystem',
+    'eco.title': 'Supporting agents',
+    'eco.desc': 'Each focused on its role, all connected to the whole system.',
+    'results.label': 'Verified Results',
+    'results.title': 'All numbers from <em>real deployments</em>',
+    'presets.label': 'Customization',
+    'presets.title': 'One config file, <em>any domain</em>',
+    'presets.desc': 'Comad World ships with ready-made presets. Swap one file to retarget the entire knowledge pipeline to your field.',
+    'qs.label': 'Quick Start',
+    'qs.title': 'Up and running in <em>4 commands</em>',
+    'qs.req': 'Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup, Neo4j schema initialization, and cron configuration. See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> for detailed instructions.',
+    'tl.label': 'Timeline',
+    'tl.title': 'Major milestones',
+    'tl.1': 'comad-eye first commit',
+    'tl.1d': 'Python 3.13 + FastAPI + Neo4j \u00b7 Simulation engine \u00b7 ~8,000 LOC',
+    'tl.2': 'comad-brain started',
+    'tl.2d': 'TypeScript + Bun \u00b7 5-package monorepo \u00b7 ~12,000 LOC \u00b7 Neo4j knowledge graph',
+    'tl.3': 'Ecosystem complete',
+    'tl.3d': 'voice + sleep + photo \u00b7 All 6 agents operational',
+    'tl.4': 'Full review sprint',
+    'tl.4d': 'E2E 60 tests \u00b7 1,422 total tests \u00b7 Cost 87% reduction',
+    'tl.5': 'Open source launch',
+    'tl.5d': 'comad-world public repo \u00b7 Config presets \u00b7 MIT License',
+    'footer.main': 'Comad World \u2014 Open Source AI Agent System \u00b7 MIT License'
+  },
+  ko: {
+    'hero.tagline': '\uae30\uc0ac\uc5d0 \ud30c\ubb3b\ud788\uace0 \uacc4\uc2e0\uac00\uc694? AI \uc5d0\uc774\uc804\ud2b8\uac00 <strong>\uc218\uc9d1, \uc815\ub9ac, \ubd84\uc11d</strong>\ud574\ub4dc\ub9bd\ub2c8\ub2e4.',
+    'hero.sub': 'RSS, \ub17c\ubb38, GitHub\uc5d0\uc11c \uac80\uc0c9 \uac00\ub2a5\ud55c \uc9c0\uc2dd \uadf8\ub798\ud504\ub97c \uad6c\ucd95\ud558\ub294 \uac1c\uc778 \uc9c0\uc2dd \uc2dc\uc2a4\ud15c \u2014 \ub9e4\uc77c \uc5c5\ub370\uc774\ud2b8, YAML \uc124\uc815 \ud558\ub098\ub85c \uad6c\ub3d9.',
+    'hero.btn': '\uc2dc\uc791\ud558\uae30',
+    'stat.agents': '\uc5d0\uc774\uc804\ud2b8',
+    'stat.nodes': '\uadf8\ub798\ud504 \ub178\ub4dc',
+    'stat.loc': '\ucf54\ub4dc \ub77c\uc778',
+    'stat.tests': '\ud14c\uc2a4\ud2b8',
+    'stat.cost': '\ube44\uc6a9 \uc808\uac10',
+    'hook.title': '\uc774\ub7f0 \uacbd\ud5d8, \uc788\uc73c\uc2dc\uc8e0?',
+    'hook.without': 'Comad World \uc5c6\uc774',
+    'hook.with': 'Comad World\uc640 \ud568\uaed8',
+    'hook.w1': '\uae30\uc0ac\ub97c \uc77d\uace0, \uae4c\uba39\uace0, \ud55c \ub2ec \ub4a4 \uac19\uc740 \uae30\uc0ac\ub97c \ub610 \ubc1c\uacac',
+    'hook.w2': '\ubd81\ub9c8\ud06c\ub9cc \uc313\uc774\uace0 \uc5f0\uacb0 \uace0\ub9ac\ub294 \uc5c6\uc74c',
+    'hook.w3': '\ud0ed\uc744 \ub2eb\uc744 \ub54c\ub9c8\ub2e4 \ub9e5\ub77d\uc774 \uc0ac\ub77c\uc9d0',
+    'hook.w4': '\ub9e4\uc77c 20\uac1c \uc774\uc0c1 \uc0ac\uc774\ud2b8\ub97c \uc218\ub3d9 \uac80\uc0c9',
+    'hook.c1': '22\uac1c \uc774\uc0c1 RSS, arXiv, GitHub\uc5d0\uc11c \uc790\ub3d9 \uc218\uc9d1',
+    'hook.c2': '\uc9c0\uc2dd \uadf8\ub798\ud504\ub85c \uc5d4\ud2f0\ud2f0 \uc5f0\uacb0 \u2014 \uc790\uc5f0\uc5b4\ub85c \uac80\uc0c9',
+    'hook.c3': '\ubaa8\ub4e0 \uc778\uc0ac\uc774\ud2b8\uac00 \uc601\uad6c \ubcf4\uc874\ub418\uace0 \uc5f0\uacb0\ub428',
+    'hook.c4': '\ub9e4\uc77c \ub2e4\uc774\uc81c\uc2a4\ud2b8 \uc804\ub2ec; \ud558\ub8e8 $0.60 \uc6b4\uc601 \ube44\uc6a9',
+    'nav.why': '\uc65c?',
+    'nav.arch': '\uc544\ud0a4\ud14d\ucc98',
+    'nav.eco': '\uc5d0\ucf54\uc2dc\uc2a4\ud15c',
+    'nav.results': '\uac80\uc99d \uacb0\uacfc',
+    'nav.presets': '\ud504\ub9ac\uc14b',
+    'nav.quickstart': '\uc2dc\uc791\ud558\uae30',
+    'nav.timeline': '\ud0c0\uc784\ub77c\uc778',
+    'arch.label': '\uc2dc\uc2a4\ud15c \uc544\ud0a4\ud14d\ucc98',
+    'arch.title': '6\uac1c \uc5d0\uc774\uc804\ud2b8, <em>\uc124\uc815 \ud30c\uc77c \ud558\ub098\ub85c \uad6c\ub3d9</em>',
+    'arch.desc': '\uc218\uc9d1 \u2192 \uad6c\uc870\ud654 \u2192 \ubd84\uc11d \u2192 \uc2e4\ud589. \uac01 \uc5d0\uc774\uc804\ud2b8\ub294 \ub3c5\ub9bd \ubc30\ud3ec \uac00\ub2a5\ud558\ub418, \ub370\uc774\ud130\ub294 \uc790\uc5f0\uc2a4\ub7fd\uac8c \ud750\ub985\ub2c8\ub2e4. YAML \uc124\uc815 \ud558\ub098\ub97c \ubc14\uafb8\uba74 \uc804\uccb4 \uc2dc\uc2a4\ud15c\uc774 \uc0c8 \ub3c4\uba54\uc778\uc5d0 \ub9de\ucdb0\uc9d1\ub2c8\ub2e4.',
+    'arch.collect': '\uc218\uc9d1',
+    'arch.collect.desc': '\u2014 RSS/Discord \ud53c\ub4dc \ubaa8\ub2c8\ud130\ub9c1, 3\ub2e8\uacc4 \uad00\ub828\uc131 \ubd84\ub958, \uc544\uce74\uc774\ube0c',
+    'arch.structure': '\uad6c\uc870\ud654',
+    'arch.structure.desc': '\u2014 \uc5d4\ud2f0\ud2f0 \ucd94\ucd9c \u2192 Neo4j \uadf8\ub798\ud504 \u2192 \ucee4\ubba4\ub2c8\ud2f0 \uac10\uc9c0 \u2192 GraphRAG',
+    'arch.analyze': '\ubd84\uc11d',
+    'arch.analyze.desc': '\u2014 \uc804\ud30c \uc2dc\ubbac\ub808\uc774\uc158 \u2192 10\uac1c \ubd84\uc11d \ub80c\uc988 \u2192 \uc885\ud569 \ubcf4\uace0\uc11c',
+    'arch.execute': '\uc2e4\ud589',
+    'arch.execute.desc': '\u2014 \uc774\ubbf8\uc9c0 \ubd84\uc11d \u2192 \ubcf4\uc815 \uacc4\ud68d \u2192 Photoshop MCP \uc790\ub3d9 \uc2e4\ud589',
+    'arch.maintain': '\uc720\uc9c0',
+    'arch.maintain.desc': '\u2014 REM \uc218\uba74\uc2dd \uba54\ubaa8\ub9ac \uc2a4\uce94 \u2192 \uc911\ubcf5 \uac10\uc9c0 \u2192 \ud1b5\ud569',
+    'arch.control': '\uc81c\uc5b4',
+    'arch.control.desc': '\u2014 \uc790\uc5f0\uc5b4 \ud0a4\uc6cc\ub4dc\ub85c \uc6cc\ud06c\ud50c\ub85c\uc6b0 \uc790\ub3d9 \uc81c\uc5b4',
+    'brain.badge': '\uc9c0\uc2dd \uadf8\ub798\ud504 & GraphRAG',
+    'brain.desc': '\uae30\uc0ac, \ub17c\ubb38, \ub808\ud3ec\uc5d0\uc11c \uc5d4\ud2f0\ud2f0\ub97c \ucd94\ucd9c. Neo4j \uc628\ud1a8\ub85c\uc9c0\ub97c \uad00\ub9ac\ud558\uba70 GraphRAG \uae30\ubc18 \uc9c8\uc758\uc751\ub2f5 \uc81c\uacf5.',
+    'brain.graphviz': '\uc9c0\uc2dd \uadf8\ub798\ud504 \uc2dc\uac01\ud654',
+    'brain.scale': '\uadf8\ub798\ud504 \uaddc\ubaa8',
+    'brain.nodes': '\ucd1d \ub178\ub4dc',
+    'brain.rels': '\ucd1d \uad00\uacc4',
+    'brain.papers': 'arXiv \ub17c\ubb38',
+    'brain.claims': 'Claim \ub178\ub4dc',
+    'brain.keypaper': '\uc8fc\uc694 \ub17c\ubb38 \uc0c9\uc778:',
+    'brain.sources28': '28\uac1c \uc218\uc9d1 \uc18c\uc2a4 (\uae30\ubcf8 AI/ML \ud504\ub9ac\uc14b):',
+    'brain.demo': '\uc2e4\uc81c \uc2dc\uc5f0',
+    'brain.demoq': '"MCP\ub780 \ubb34\uc5c7\uc774\uace0 \uc5b4\ub5a4 \uae30\uc5c5\ub4e4\uc774 \ud504\ub85c\ub355\uc158\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\ub098?"',
+    'eye.badge': '\uc608\uce21 \uc2dc\ubbac\ub808\uc774\uc158 \uc5d4\uc9c4',
+    'eye.desc': '\ud14d\uc2a4\ud2b8\uc5d0\uc11c \uc5d4\ud2f0\ud2f0\ub97c \ucd94\ucd9c, \uc804\ud30c \uc2dc\ubbac\ub808\uc774\uc158, 10\uac1c \ubd84\uc11d \ud504\ub808\uc784\uc6cc\ud06c\ub85c \uc885\ud569 \ubcf4\uace0\uc11c \uc0dd\uc131.',
+    'eye.demo': '\uc2e4\uc81c \uc2dc\uc5f0',
+    'eco.label': '\uc5d0\ucf54\uc2dc\uc2a4\ud15c',
+    'eco.title': '\uc9c0\uc6d0 \uc5d0\uc774\uc804\ud2b8\ub4e4',
+    'eco.desc': '\uac01\uc790\uc758 \uc5ed\ud560\uc5d0 \ucda9\uc2e4\ud558\uba74\uc11c \uc804\uccb4 \uc2dc\uc2a4\ud15c\uacfc \uc5f0\uacb0\ub429\ub2c8\ub2e4.',
+    'results.label': '\uac80\uc99d\ub41c \uacb0\uacfc',
+    'results.title': '\ubaa8\ub4e0 \uc218\uce58\ub294 <em>\uc2e4\uc804 \ud14c\uc2a4\ud2b8</em>\uc5d0\uc11c \ub098\uc654\uc2b5\ub2c8\ub2e4',
+    'presets.label': '\ucee4\uc2a4\ud130\ub9c8\uc774\uc9d5',
+    'presets.title': '\uc124\uc815 \ud30c\uc77c \ud558\ub098\ub85c, <em>\uc5b4\ub5a4 \ub3c4\uba54\uc778\uc774\ub4e0</em>',
+    'presets.desc': 'Comad World\ub294 \ubbf8\ub9ac \ub9cc\ub4e4\uc5b4\uc9c4 \ud504\ub9ac\uc14b\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4. \ud30c\uc77c \ud558\ub098\ub97c \ubc14\uaff0 \uc804\uccb4 \uc9c0\uc2dd \ud30c\uc774\ud504\ub77c\uc778\uc744 \uc6d0\ud558\ub294 \ubd84\uc57c\ub85c \uc804\ud658\ud558\uc138\uc694.',
+    'qs.label': '\uc2dc\uc791\ud558\uae30',
+    'qs.title': '<em>4\uac1c \uba85\ub839\uc5b4</em>\ub85c \uc2dc\uc791',
+    'qs.req': '\ud544\uc694: Node.js 20+, Python 3.13+, Neo4j 5, Bun. \uc124\uce58 \uc2a4\ud06c\ub9bd\ud2b8\uac00 \uc758\uc874\uc131 \uc124\uc815, Neo4j \uc2a4\ud0a4\ub9c8 \ucd08\uae30\ud654, cron \uc124\uc815\uc744 \ucc98\ub9ac\ud569\ub2c8\ub2e4. \uc790\uc138\ud55c \ub0b4\uc6a9\uc740 <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a>\ub97c \ucc38\uc870\ud558\uc138\uc694.',
+    'tl.label': '\ud0c0\uc784\ub77c\uc778',
+    'tl.title': '\uc8fc\uc694 \ub9c8\uc77c\uc2a4\ud1a4',
+    'tl.1': 'comad-eye \uccab \ucee4\ubc0b',
+    'tl.1d': 'Python 3.13 + FastAPI + Neo4j \u00b7 \uc2dc\ubbac\ub808\uc774\uc158 \uc5d4\uc9c4 \u00b7 ~8,000 LOC',
+    'tl.2': 'comad-brain \uc2dc\uc791',
+    'tl.2d': 'TypeScript + Bun \u00b7 5\uac1c \ud328\ud0a4\uc9c0 \ubaa8\ub178\ub808\ud3ec \u00b7 ~12,000 LOC \u00b7 Neo4j \uc9c0\uc2dd \uadf8\ub798\ud504',
+    'tl.3': '\uc5d0\ucf54\uc2dc\uc2a4\ud15c \uc644\uc131',
+    'tl.3d': 'voice + sleep + photo \u00b7 6\uac1c \uc5d0\uc774\uc804\ud2b8 \uac00\ub3d9',
+    'tl.4': '\uc804\uc218 \uac80\ud1a0 \uc2a4\ud504\ub9b0\ud2b8',
+    'tl.4d': 'E2E 60\uac74 \u00b7 \ucd1d 1,422 \ud14c\uc2a4\ud2b8 \u00b7 \ube44\uc6a9 87% \uc808\uac10',
+    'tl.5': '\uc624\ud508\uc18c\uc2a4 \ub7f0\uce58',
+    'tl.5d': 'comad-world \uacf5\uac1c \ub808\ud3ec \u00b7 \uc124\uc815 \ud504\ub9ac\uc14b \u00b7 MIT \ub77c\uc774\uc120\uc2a4',
+    'footer.main': 'Comad World \u2014 \uc624\ud508\uc18c\uc2a4 AI \uc5d0\uc774\uc804\ud2b8 \uc2dc\uc2a4\ud15c \u00b7 MIT \ub77c\uc774\uc120\uc2a4'
+  }
+};
+
+let currentLang = localStorage.getItem('comad-lang') || (navigator.language.startsWith('ko') ? 'ko' : 'en');
+
+function applyLang(lang) {
+  const dict = i18n[lang];
+  if (!dict) return;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.getElementById('langKo').classList.toggle('active', lang === 'ko');
+  document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+}
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ko' : 'en';
+  localStorage.setItem('comad-lang', currentLang);
+  applyLang(currentLang);
+}
+
+applyLang(currentLang);
 </script>
 
 </body>
