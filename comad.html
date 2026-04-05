@@ -280,8 +280,24 @@
   }
   footer .links a:hover { border-color:var(--accent); color:var(--accent); }
 
+  /* Demo visual */
+  .hero-demo { margin-top:2.5rem; border-radius:12px; border:1px solid var(--border); overflow:hidden; max-width:720px; box-shadow:0 8px 32px rgba(0,0,0,0.3); }
+  .hero-demo img { width:100%; display:block; }
+
+  /* Problem hook */
+  .problem-hook { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:2rem; margin:2rem 0; }
+  .problem-hook h3 { color:var(--text-bright); font-size:1.1rem; margin-bottom:1rem; }
+  .hook-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+  .hook-col h4 { font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.6rem; }
+  .hook-col.without h4 { color:var(--pink); }
+  .hook-col.with h4 { color:var(--green); }
+  .hook-col ul { list-style:none; font-size:0.86rem; line-height:1.8; }
+  .hook-col.without ul { color:var(--text-dim); }
+  .hook-col.with ul { color:var(--text); }
+
   /* Responsive */
   @media (max-width:768px) {
+    .hook-grid { grid-template-columns:1fr; }
     .why-grid { grid-template-columns:1fr; }
     .compact-grid { grid-template-columns:1fr; }
     .role-grid { grid-template-columns:1fr; }
@@ -304,8 +320,8 @@
 <!-- Hero -->
 <section class="hero">
   <h1>Comad World</h1>
-  <p class="tagline">Your interests, your agents, <strong>your knowledge graph.</strong></p>
-  <p class="sub-tagline">Change one YAML file, get a whole new knowledge system.</p>
+  <p class="tagline">Drowning in articles? Let AI agents <strong>crawl, organize &amp; analyze</strong> for you.</p>
+  <p class="sub-tagline">Personal knowledge system that builds a searchable graph from RSS, papers &amp; GitHub &mdash; updated daily, driven by one YAML config.</p>
 
   <div class="hero-stats">
     <div class="hero-stat"><div class="num" data-count="6">0</div><div class="label">Agents</div></div>
@@ -333,10 +349,44 @@
     <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
     Get Started
   </a>
+
+  <div class="hero-demo">
+    <img src="https://raw.githubusercontent.com/kinkos1234/comad-world/main/docs/demo.gif" alt="Comad World Demo — clone, configure, crawl, query" loading="lazy">
+  </div>
+</section>
+
+<!-- Problem Hook -->
+<section id="why" style="border-top:none;padding:3rem 0;">
+<div class="container">
+  <div class="problem-hook reveal">
+    <h3>Sound familiar?</h3>
+    <div class="hook-grid">
+      <div class="hook-col without">
+        <h4>Without Comad World</h4>
+        <ul>
+          <li>Read an article, forget it, find it again a month later</li>
+          <li>Bookmarks pile up with no connections between them</li>
+          <li>Context lost every time you close a browser tab</li>
+          <li>Manual research across 20+ sites, every day</li>
+        </ul>
+      </div>
+      <div class="hook-col with">
+        <h4>With Comad World</h4>
+        <ul>
+          <li>Articles auto-collected from 22+ RSS feeds, arXiv, GitHub</li>
+          <li>Entities linked in a knowledge graph &mdash; searchable via natural language</li>
+          <li>Every insight preserved and connected, forever</li>
+          <li>Daily digest delivered; $0.60/day operating cost</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 <!-- Nav -->
 <nav id="mainNav">
+  <a href="#why">Why</a>
   <a href="#architecture">Architecture</a>
   <a href="#brain">brain</a>
   <a href="#eye">eye</a>
@@ -405,6 +455,13 @@
         <tr><td><code>ingester</code></td><td>ear archive &rarr; graph importer</td></tr>
         <tr><td><code>mcp-server</code></td><td>MCP protocol server (15 tools)</td></tr>
       </table>
+    </div>
+
+    <div class="sub-section">
+      <h4>Knowledge Graph Visualization</h4>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);margin-bottom:1.2rem;">
+        <img src="https://raw.githubusercontent.com/kinkos1234/comad-world/main/docs/graph-preview.png" alt="Knowledge Graph — Anthropic, OpenAI, Google, MCP, and 3,000+ connected entities" style="width:100%;display:block;" loading="lazy">
+      </div>
     </div>
 
     <div class="sub-section">
@@ -558,22 +615,26 @@
     <div class="preset-card">
       <h3>AI / Machine Learning</h3>
       <div class="preset-file">presets/ai-ml.yaml</div>
-      <div class="preset-desc">22 RSS feeds (OpenAI, Anthropic, Google, Meta, xAI, DeepSeek blogs + top researchers) + 10 arXiv categories (cs.AI, cs.CL, cs.LG, cs.CV...)</div>
+      <div class="preset-desc">Track LLM releases, paper trends, and framework updates. 22 RSS feeds + 10 arXiv categories.</div>
+      <div style="font-size:0.78rem;color:var(--teal);margin-top:0.5rem;">"Which companies adopted MCP in production?" &rarr; 9 orgs identified</div>
     </div>
     <div class="preset-card">
       <h3>Web Development</h3>
       <div class="preset-file">presets/web-dev.yaml</div>
-      <div class="preset-desc">15 RSS feeds (V8 blog, web.dev, CSS-Tricks, Smashing Magazine, MDN, framework blogs)</div>
+      <div class="preset-desc">Monitor framework releases, browser APIs, and CSS specs. 15 RSS feeds from V8, web.dev, MDN, and more.</div>
+      <div style="font-size:0.78rem;color:var(--teal);margin-top:0.5rem;">"What's the current state of Web Components vs React?" &rarr; graph-backed answer</div>
     </div>
     <div class="preset-card">
       <h3>Finance / Fintech</h3>
       <div class="preset-file">presets/finance.yaml</div>
-      <div class="preset-desc">10 RSS feeds (FT, Bloomberg, a16z fintech, Stripe blog) + 6 arXiv categories (q-fin.*)</div>
+      <div class="preset-desc">Track regulatory changes, DeFi protocols, and market analysis. 10 RSS feeds + 6 arXiv categories.</div>
+      <div style="font-size:0.78rem;color:var(--teal);margin-top:0.5rem;">"How does Basel III affect stablecoin regulations?" &rarr; cross-source analysis</div>
     </div>
     <div class="preset-card">
       <h3>Biotech / Life Sciences</h3>
       <div class="preset-file">presets/biotech.yaml</div>
-      <div class="preset-desc">8 RSS feeds (Nature, Science, biorxiv highlights) + 5 arXiv categories (q-bio.*)</div>
+      <div class="preset-desc">Follow CRISPR advances, drug trials, and genomics papers. 8 RSS feeds + 5 arXiv categories.</div>
+      <div style="font-size:0.78rem;color:var(--teal);margin-top:0.5rem;">"What gene therapy approaches target sickle cell disease?" &rarr; literature-backed</div>
     </div>
   </div>
 
@@ -640,11 +701,14 @@
 <!-- Footer -->
 <footer>
   <p>Comad World &mdash; Open Source AI Agent System &middot; MIT License</p>
+  <p style="font-size:0.75rem;margin-top:0.4rem;">Built with <a href="https://docs.anthropic.com/en/docs/claude-code" style="color:var(--accent);text-decoration:none;">Claude Code</a> and the <a href="https://modelcontextprotocol.io/" style="color:var(--accent);text-decoration:none;">Model Context Protocol</a></p>
   <div class="links">
     <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-      GitHub &mdash; comad-world
+      GitHub
     </a>
+    <a href="https://github.com/kinkos1234/comad-world/issues" target="_blank" rel="noopener">&rarr; Issues</a>
+    <a href="https://github.com/kinkos1234/comad-world/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">&rarr; Contributing</a>
   </div>
 </footer>
 
