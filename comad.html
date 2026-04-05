@@ -428,6 +428,7 @@
     <div class="arch-connector">&middot;&middot;&middot;</div>
     <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.maintain">Maintain</span><span class="arch-layer-node">sleep</span><span class="arch-layer-desc" data-i18n="arch.maintain.desc">&mdash; REM-style memory scan &rarr; Deduplication &rarr; Consolidation</span></div>
     <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.control">Control</span><span class="arch-layer-node">voice</span><span class="arch-layer-desc" data-i18n="arch.control.desc">&mdash; Natural-language triggers for workflow automation</span></div>
+    <div class="arch-layer"><span class="arch-layer-name" data-i18n="arch.render">Render</span><span class="arch-layer-node" style="color:var(--amber)">browse</span><span class="arch-layer-desc" data-i18n="arch.render.desc">&mdash; Headless browser with anti-bot stealth &mdash; auto-fallback for JS pages</span></div>
   </div>
 </div>
 </section>
@@ -589,7 +590,7 @@
     <div class="compact-card reveal">
       <h3 style="color:var(--amber)">comad-voice</h3>
       <p class="one-liner" data-i18n="voice.desc">Natural-language workflow automation for Claude Code</p>
-      <div class="detail" data-i18n="voice.detail">Keyword triggers. CLAUDE.md-based. Zero external dependencies.</div>
+      <div class="detail" data-i18n="voice.detail">Keyword triggers. CLAUDE.md-based. Zero external dependencies.<br>Review Army (5 specialist reviewers) + Browser QA included.</div>
       <div class="highlight" data-i18n="voice.highlight">One sentence controls the entire process</div>
     </div>
   </div>
@@ -814,6 +815,8 @@ const i18n = {
     'arch.maintain.desc': '\u2014 REM-style memory scan \u2192 Deduplication \u2192 Consolidation',
     'arch.control': 'Control',
     'arch.control.desc': '\u2014 Natural-language triggers for workflow automation',
+    'arch.render': 'Render',
+    'arch.render.desc': '\u2014 Headless browser with anti-bot stealth \u2014 auto-fallback for JS pages',
     'brain.badge': 'Knowledge Graph & GraphRAG',
     'brain.desc': 'Extracts entities from articles, papers, and repos. Manages a Neo4j ontology and provides GraphRAG-powered Q&A.',
     'brain.graphviz': 'Knowledge Graph Visualization',
@@ -856,7 +859,7 @@ const i18n = {
     'sleep.detail': 'MCP server, 122 LOC. <code>info</code> + <code>history</code> 2 tools.',
     'sleep.highlight': 'Auto-triggers on "dream" or when memory exceeds 150 lines',
     'voice.desc': 'Natural-language workflow automation for Claude Code',
-    'voice.detail': 'Keyword triggers. CLAUDE.md-based. Zero external dependencies.',
+    'voice.detail': 'Keyword triggers. CLAUDE.md-based. Zero external dependencies.<br>Review Army (5 specialist reviewers) + Browser QA included.',
     'voice.highlight': 'One sentence controls the entire process',
     'results.label': 'Verified Results',
     'results.title': 'All numbers from <em>real deployments</em>',
@@ -922,6 +925,8 @@ const i18n = {
     'arch.maintain.desc': '\u2014 REM \uc218\uba74\uc2dd \uba54\ubaa8\ub9ac \uc2a4\uce94 \u2192 \uc911\ubcf5 \uac10\uc9c0 \u2192 \ud1b5\ud569',
     'arch.control': '\uc81c\uc5b4',
     'arch.control.desc': '\u2014 \uc790\uc5f0\uc5b4 \ud0a4\uc6cc\ub4dc\ub85c \uc6cc\ud06c\ud50c\ub85c\uc6b0 \uc790\ub3d9 \uc81c\uc5b4',
+    'arch.render': '\ub80c\ub354\ub9c1',
+    'arch.render.desc': '\u2014 \uc548\ud2f0\ubd07 \uc2a4\ud154\uc2a4 \ud5e4\ub4dc\ub9ac\uc2a4 \ube0c\ub77c\uc6b0\uc800 \u2014 JS \ud398\uc774\uc9c0 \uc790\ub3d9 fallback',
     'brain.badge': '\uc9c0\uc2dd \uadf8\ub798\ud504 & GraphRAG',
     'brain.desc': '\uae30\uc0ac, \ub17c\ubb38, \ub808\ud3ec\uc5d0\uc11c \uc5d4\ud2f0\ud2f0\ub97c \ucd94\ucd9c. Neo4j \uc628\ud1a8\ub85c\uc9c0\ub97c \uad00\ub9ac\ud558\uba70 GraphRAG \uae30\ubc18 \uc9c8\uc758\uc751\ub2f5 \uc81c\uacf5.',
     'brain.graphviz': '\uc9c0\uc2dd \uadf8\ub798\ud504 \uc2dc\uac01\ud654',
@@ -964,7 +969,7 @@ const i18n = {
     'sleep.detail': 'MCP \uc11c\ubc84 122\uc904. <code>info</code> + <code>history</code> 2\uac1c \ub3c4\uad6c.',
     'sleep.highlight': '"dream" \ub610\ub294 \uba54\ubaa8\ub9ac > 150\uc904 \uc2dc \uc790\ub3d9 \ud2b8\ub9ac\uac70',
     'voice.desc': '\ube44\uac1c\ubc1c\uc790\ub97c \uc704\ud55c Claude Code \uc6cc\ud06c\ud50c\ub85c\uc6b0 \uc790\ub3d9\ud654',
-    'voice.detail': '\ud0a4\uc6cc\ub4dc \ud2b8\ub9ac\uac70. CLAUDE.md \uae30\ubc18. \uc678\ubd80 \uc758\uc874\uc131 0.',
+    'voice.detail': '\ud0a4\uc6cc\ub4dc \ud2b8\ub9ac\uac70. CLAUDE.md \uae30\ubc18. \uc678\ubd80 \uc758\uc874\uc131 0.<br>Review Army (5\uac1c \uc2a4\ud398\uc15c\ub9ac\uc2a4\ud2b8 \ub9ac\ubdf0) + \ube0c\ub77c\uc6b0\uc800 QA \ud3ec\ud568.',
     'voice.highlight': '\uc790\uc5f0\uc5b4 \ud55c\ub9c8\ub514\ub85c \uc804\uccb4 \ud504\ub85c\uc138\uc2a4 \uc790\ub3d9 \uc81c\uc5b4',
     'results.label': '\uac80\uc99d\ub41c \uacb0\uacfc',
     'results.title': '\ubaa8\ub4e0 \uc218\uce58\ub294 <em>\uc2e4\uc804 \ud14c\uc2a4\ud2b8</em>\uc5d0\uc11c \ub098\uc654\uc2b5\ub2c8\ub2e4',
