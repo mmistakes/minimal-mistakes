@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>COMAD — AI Agent Ecosystem</title>
-<meta name="description" content="2주 만에 구축한 6개 AI 에이전트 생태계. 수집, 지식 그래프, 시뮬레이션, 사진 보정, 메모리, 워크플로우 자동화.">
-<meta property="og:title" content="COMAD — AI Agent Ecosystem">
-<meta property="og:description" content="2주 만에, 혼자서, 6개 AI 에이전트 생태계를 구축했습니다. Claude Code 기반.">
+<title>Comad World — Modular AI Agent System</title>
+<meta name="description" content="Open-source modular AI agent system. Config-driven, domain-agnostic. Change one YAML file, get a whole new knowledge system.">
+<meta property="og:title" content="Comad World — Modular AI Agent System">
+<meta property="og:description" content="Your interests, your agents, your knowledge graph. An open-source modular AI agent ecosystem you can configure for any domain.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0c0c0f">
@@ -100,11 +100,22 @@
   .hero-stat .num { font-size:2rem; font-weight:800; color:var(--text-bright); font-variant-numeric:tabular-nums; }
   .hero-stat .label { font-size:0.7rem; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; margin-top:0.15rem; }
 
-  .hero-flow { display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap; justify-content:center; }
+  .hero-flow { display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap; justify-content:center; margin-bottom:2rem; }
   .flow-node { padding:0.45rem 0.9rem; border-radius:8px; font-size:0.82rem; font-weight:600; border:1px solid var(--border); background:var(--surface); transition:border-color 0.2s; }
   .flow-node:hover { border-color:var(--accent); }
   .flow-arrow { color:var(--text-dim); font-size:0.85rem; opacity:0.4; }
   .flow-sep { color:var(--text-dim); opacity:0.2; }
+
+  /* === Button === */
+  .btn-primary {
+    display:inline-flex; align-items:center; gap:0.5rem;
+    padding:0.75rem 1.8rem; border-radius:8px; font-size:0.9rem; font-weight:600;
+    background:linear-gradient(135deg, var(--accent), var(--teal));
+    color:var(--bg); text-decoration:none;
+    transition:transform 0.2s, box-shadow 0.2s;
+    border:none; cursor:pointer;
+  }
+  .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(124,108,252,0.3); }
 
   /* === Quote Box (origin story) === */
   .quote-box {
@@ -252,6 +263,14 @@
   .code-step .loc.final { color:var(--green); }
   .code-step-arrow { font-size:0.8rem; color:var(--text-dim); opacity:0.3; padding-bottom:0.5rem; }
 
+  /* === Preset Card === */
+  .preset-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  .preset-card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem; transition:border-color 0.2s; }
+  .preset-card:hover { border-color:var(--accent); }
+  .preset-card h3 { font-size:1rem; font-weight:700; color:var(--text-bright); margin-bottom:0.3rem; }
+  .preset-card .preset-file { font-family:'SF Mono','Fira Code',monospace; font-size:0.78rem; color:var(--teal); margin-bottom:0.5rem; }
+  .preset-card .preset-desc { font-size:0.84rem; color:var(--text-dim); line-height:1.7; }
+
   /* Footer */
   footer { text-align:center; padding:3rem 2rem; color:var(--text-dim); font-size:0.8rem; border-top:1px solid var(--border); }
   footer .links { display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; margin-top:1rem; }
@@ -268,6 +287,7 @@
     .role-grid { grid-template-columns:1fr; }
     .borrow-grid { grid-template-columns:1fr; }
     .compare-grid { grid-template-columns:1fr; }
+    .preset-grid { grid-template-columns:1fr; }
     .hero-stats { gap:1.5rem; }
     .project-card { padding:1.5rem; }
     nav { justify-content:flex-start; padding:0 1rem; }
@@ -283,12 +303,12 @@
 
 <!-- Hero -->
 <section class="hero">
-  <h1>COMAD</h1>
-  <p class="tagline">2주 만에, 혼자서<br><strong>6개 AI 에이전트 생태계</strong>를 구축했습니다</p>
-  <p class="sub-tagline">Claude On My Automated Desktop</p>
+  <h1>Comad World</h1>
+  <p class="tagline">Your interests, your agents, <strong>your knowledge graph.</strong></p>
+  <p class="sub-tagline">Change one YAML file, get a whole new knowledge system.</p>
 
   <div class="hero-stats">
-    <div class="hero-stat"><div class="num" data-count="6">0</div><div class="label">Projects</div></div>
+    <div class="hero-stat"><div class="num" data-count="6">0</div><div class="label">Agents</div></div>
     <div class="hero-stat"><div class="num" data-count="61000" data-display="61K+">0</div><div class="label">Graph Nodes</div></div>
     <div class="hero-stat"><div class="num" data-count="40000" data-display="40K">0</div><div class="label">LOC</div></div>
     <div class="hero-stat"><div class="num" data-count="1422" data-separator="true">0</div><div class="label">Tests</div></div>
@@ -308,91 +328,45 @@
     <span class="flow-sep">|</span>
     <div class="flow-node" style="color:var(--amber)">voice</div>
   </div>
+
+  <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener" class="btn-primary">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    Get Started
+  </a>
 </section>
 
 <!-- Nav -->
 <nav id="mainNav">
-  <a href="#spark">계기</a>
-  <a href="#why">문제</a>
-  <a href="#architecture">아키텍처</a>
+  <a href="#architecture">Architecture</a>
   <a href="#brain">brain</a>
   <a href="#eye">eye</a>
-  <a href="#ecosystem">에코시스템</a>
-  <a href="#results">검증</a>
-  <a href="#methodology">방법론</a>
-  <a href="#challenges">챌린지</a>
-  <a href="#timeline">타임라인</a>
+  <a href="#ecosystem">Ecosystem</a>
+  <a href="#results">Results</a>
+  <a href="#presets">Presets</a>
+  <a href="#quickstart">Quick Start</a>
+  <a href="#timeline">Timeline</a>
 </nav>
-
-<!-- ====== THE SPARK (origin story — Hugh Kim에서 배운 구성) ====== -->
-<section id="spark">
-<div class="container">
-  <div class="reveal">
-    <div class="section-label">The Spark</div>
-    <h2>시작: <em>하나의 불편함</em></h2>
-  </div>
-
-  <div class="quote-box reveal">
-    GeekNews에서 흥미로운 기사를 발견한다. 브라우저 탭에 띄워둔다. 나중에 정리하려고 한다. 정리하지 않는다. 한 달 뒤 같은 기사를 또 발견한다. "이거 어디서 본 것 같은데..."
-    <span class="quote-attrib">— 프로젝트를 시작하게 된 실제 경험</span>
-  </div>
-
-  <p class="reveal" style="font-size:0.95rem;margin-top:1.2rem;max-width:640px;line-height:1.8;">
-    수집 &rarr; 구조화 &rarr; 분석 &rarr; 실행. 이 파이프라인이 끊기는 지점마다 에이전트를 하나씩 만들었습니다.
-    기사 하나를 발견하면 자동으로 아카이브되고, 지식 그래프에 연결되고, 시뮬레이션 분석까지 흐르는 시스템.
-    그것이 COMAD입니다.
-  </p>
-
-  <!-- Before/After — Hugh Kim에서 배운 비교 프레이밍 -->
-  <div class="compare-grid reveal">
-    <div class="compare-col without">
-      <div class="compare-label">COMAD 없이</div>
-      <p>기사를 읽고 잊는다. 같은 주제를 반복 검색한다. 연결 고리를 머릿속에만 둔다. 분석은 "느낌"에 의존. 사진 보정은 매번 처음부터.</p>
-    </div>
-    <div class="compare-col with">
-      <div class="compare-label">COMAD와 함께</div>
-      <p>기사가 자동 수집, 61K 노드 그래프에 연결, 10개 렌즈로 분석, 사진은 33줄 에이전트가 보정. 모든 맥락이 축적되고, 잠자는 동안 메모리가 정리됨.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- ====== WHY ====== -->
-<section id="why">
-<div class="container">
-  <div class="reveal">
-    <div class="section-label">The Problem</div>
-    <h2>AI 도구는 넘쳐나지만, <em>통합된 생태계</em>는 없었습니다</h2>
-  </div>
-
-  <div class="why-grid">
-    <div class="why-card reveal"><div class="num">01</div><h3>파편화된 도구들</h3><p>뉴스 수집, 지식 관리, 분석, 사진 보정 &mdash; 각각 별도 도구를 쓰면 컨텍스트가 끊깁니다.</p></div>
-    <div class="why-card reveal"><div class="num">02</div><h3>수동 연결의 한계</h3><p>도구 간 데이터를 사람이 옮기면 자동화의 의미가 사라집니다.</p></div>
-    <div class="why-card reveal"><div class="num">03</div><h3>외부 의존성 리스크</h3><p>프레임워크를 통째로 쓰면 유지보수 부담. 아이디어만 차용, 자체 구현.</p></div>
-  </div>
-</div>
-</section>
 
 <!-- ====== ARCHITECTURE ====== -->
 <section id="architecture">
 <div class="container">
   <div class="reveal">
     <div class="section-label">System Architecture</div>
-    <h2>6개 에이전트, <em>하나의 파이프라인</em></h2>
-    <p class="section-desc">수집 &rarr; 구조화 &rarr; 분석 &rarr; 실행. 각 에이전트는 독립 배포 가능하되, 데이터는 자연스럽게 흐릅니다.</p>
+    <h2>6 agents, <em>one config-driven pipeline</em></h2>
+    <p class="section-desc">Collect &rarr; Structure &rarr; Analyze &rarr; Act. Each agent deploys independently, but data flows seamlessly between them. Swap one YAML config to retarget the entire system to a new domain.</p>
   </div>
 
   <div class="arch-box reveal">
-    <div class="arch-layer"><span class="arch-layer-name">수집</span><span class="arch-layer-node">ear</span><span class="arch-layer-desc">&mdash; Discord 기술 뉴스 감지, 관련성 3단계 분류, 아카이브</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">Collect</span><span class="arch-layer-node">ear</span><span class="arch-layer-desc">&mdash; RSS/Discord feed monitoring, 3-tier relevance classification, archive</span></div>
     <div class="arch-connector">&darr;</div>
-    <div class="arch-layer"><span class="arch-layer-name">구조화</span><span class="arch-layer-node">brain</span><span class="arch-layer-desc">&mdash; 엔티티 추출 &rarr; Neo4j 그래프 &rarr; 커뮤니티 감지 &rarr; GraphRAG</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">Structure</span><span class="arch-layer-node">brain</span><span class="arch-layer-desc">&mdash; Entity extraction &rarr; Neo4j graph &rarr; Community detection &rarr; GraphRAG</span></div>
     <div class="arch-connector">&darr;</div>
-    <div class="arch-layer"><span class="arch-layer-name">분석</span><span class="arch-layer-node">eye</span><span class="arch-layer-desc">&mdash; 전파 시뮬레이션 &rarr; 10개 분석 렌즈 &rarr; 종합 보고서</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">Analyze</span><span class="arch-layer-node">eye</span><span class="arch-layer-desc">&mdash; Propagation simulation &rarr; 10 analysis lenses &rarr; Full report</span></div>
     <div class="arch-connector">&darr;</div>
-    <div class="arch-layer"><span class="arch-layer-name">실행</span><span class="arch-layer-node">photo</span><span class="arch-layer-desc">&mdash; 사진 분석 &rarr; 보정안 &rarr; Photoshop MCP 자동 실행</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">Execute</span><span class="arch-layer-node">photo</span><span class="arch-layer-desc">&mdash; Image analysis &rarr; Correction plan &rarr; Photoshop MCP automation</span></div>
     <div class="arch-connector">&middot;&middot;&middot;</div>
-    <div class="arch-layer"><span class="arch-layer-name">유지</span><span class="arch-layer-node">sleep</span><span class="arch-layer-desc">&mdash; REM 수면식 메모리 스캔 &rarr; 중복 감지 &rarr; 통합</span></div>
-    <div class="arch-layer"><span class="arch-layer-name">제어</span><span class="arch-layer-node">voice</span><span class="arch-layer-desc">&mdash; 6개 트리거 키워드로 워크플로우 자동 제어</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">Maintain</span><span class="arch-layer-node">sleep</span><span class="arch-layer-desc">&mdash; REM-style memory scan &rarr; Deduplication &rarr; Consolidation</span></div>
+    <div class="arch-layer"><span class="arch-layer-name">Control</span><span class="arch-layer-node">voice</span><span class="arch-layer-desc">&mdash; Natural-language triggers for workflow automation</span></div>
   </div>
 </div>
 </section>
@@ -402,66 +376,66 @@
 <div class="container">
   <div class="project-card reveal">
     <div class="card-header"><h3>comad-brain</h3><span class="card-badge" style="color:var(--accent)">Knowledge Graph & GraphRAG</span></div>
-    <p class="one-liner">기사, 논문, 레포에서 엔티티를 추출하고 Neo4j 온톨로지로 관리하며 GraphRAG로 질의응답 제공</p>
+    <p class="one-liner">Extracts entities from articles, papers, and repos. Manages a Neo4j ontology and provides GraphRAG-powered Q&A.</p>
     <div class="tag-row"><span class="tag">TypeScript</span><span class="tag">Bun</span><span class="tag">Neo4j 5</span><span class="tag">Claude API</span><span class="tag">MCP</span></div>
 
     <div class="sub-section">
       <h4>6-Layer Architecture</h4>
       <div class="code-flow">
-        <span class="dim">[수집층]</span> HN API + <span class="hl">25개 RSS</span> + arXiv + GitHub + ear<br>
+        <span class="dim">[Collect]</span> HN API + <span class="hl">Configurable RSS</span> + arXiv + GitHub + ear<br>
         &nbsp;&nbsp;&darr;<br>
-        <span class="dim">[추출층]</span> Claude <span class="hl">Haiku</span>로 엔티티/관계/Claim 추출<br>
+        <span class="dim">[Extract]</span> Claude <span class="hl">Haiku</span> for entity/relation/claim extraction<br>
         &nbsp;&nbsp;&darr;<br>
-        <span class="dim">[그래프층]</span> Neo4j: 13노드, 30관계, 22커뮤니티<br>
+        <span class="dim">[Graph]</span> Neo4j: 13 node types, 30 relation types, 22 communities<br>
         &nbsp;&nbsp;&darr;<br>
-        <span class="dim">[추론층]</span> MetaEdge <span class="hl">10</span>개 규칙<br>
+        <span class="dim">[Infer]</span> MetaEdge <span class="hl">10</span> rules<br>
         &nbsp;&nbsp;&darr;<br>
-        <span class="dim">[검색층]</span> Dual-Retriever: <span class="hl">Local + Global + Temporal</span><br>
+        <span class="dim">[Search]</span> Dual-Retriever: <span class="hl">Local + Global + Temporal</span><br>
         &nbsp;&nbsp;&darr;<br>
-        <span class="dim">[MCP층]</span> <span class="hl">15</span>개 도구
+        <span class="dim">[MCP]</span> <span class="hl">15</span> tools
       </div>
     </div>
 
     <div class="sub-section">
-      <h4>모노레포 (5개 패키지)</h4>
+      <h4>Monorepo (5 packages)</h4>
       <table>
-        <tr><td><code>core</code></td><td>엔티티 추출, 중복 감지, Claim 추적, MetaEdge</td></tr>
-        <tr><td><code>crawler</code></td><td>HN/arXiv/GitHub 크롤러, 인제스트 파이프라인</td></tr>
-        <tr><td><code>graphrag</code></td><td>Dual-Retriever, 서브그래프 탐색, 답변 합성</td></tr>
-        <tr><td><code>ingester</code></td><td>ear 아카이브 &rarr; 그래프 임포터</td></tr>
-        <tr><td><code>mcp-server</code></td><td>MCP 프로토콜 서버 (15개 도구)</td></tr>
+        <tr><td><code>core</code></td><td>Entity extraction, dedup detection, claim tracking, MetaEdge</td></tr>
+        <tr><td><code>crawler</code></td><td>HN/arXiv/GitHub crawlers, ingest pipeline</td></tr>
+        <tr><td><code>graphrag</code></td><td>Dual-Retriever, subgraph exploration, answer synthesis</td></tr>
+        <tr><td><code>ingester</code></td><td>ear archive &rarr; graph importer</td></tr>
+        <tr><td><code>mcp-server</code></td><td>MCP protocol server (15 tools)</td></tr>
       </table>
     </div>
 
     <div class="sub-section">
-      <h4>그래프 규모</h4>
+      <h4>Graph Scale</h4>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:0.6rem;margin-bottom:1rem;">
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">60,827</div><div style="font-size:0.68rem;color:var(--text-dim)">총 노드</div></div>
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">150,988</div><div style="font-size:0.68rem;color:var(--text-dim)">총 관계</div></div>
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--teal)">153</div><div style="font-size:0.68rem;color:var(--text-dim)">arXiv 논문</div></div>
-        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">23,084</div><div style="font-size:0.68rem;color:var(--text-dim)">Claim 노드</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">60,827</div><div style="font-size:0.68rem;color:var(--text-dim)">Total Nodes</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">150,988</div><div style="font-size:0.68rem;color:var(--text-dim)">Total Relations</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--teal)">153</div><div style="font-size:0.68rem;color:var(--text-dim)">arXiv Papers</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">23,084</div><div style="font-size:0.68rem;color:var(--text-dim)">Claim Nodes</div></div>
       </div>
       <p style="font-size:0.84rem;line-height:1.8;">
-        <strong style="color:var(--text-bright)">핵심 논문:</strong> Attention Is All You Need, GPT-3/4, BERT, LLaMA 1~4, DeepSeek-R1/V3, Gemini, Chain-of-Thought, LoRA/QLoRA, FlashAttention, Mamba, DPO, GraphRAG, LightRAG, SAM, CLIP, ReAct, MemGPT 등 AI 전 분야 커버.<br>
-        <strong style="color:var(--text-bright)">수집 소스 28개:</strong> 25 RSS (OpenAI/Anthropic/Google/Meta/xAI/DeepSeek 블로그 + Simon Willison/Lilian Weng/Chip Huyen 등 연구자) + HN API + arXiv API + GitHub API
+        <strong style="color:var(--text-bright)">Key papers indexed:</strong> Attention Is All You Need, GPT-3/4, BERT, LLaMA 1~4, DeepSeek-R1/V3, Gemini, Chain-of-Thought, LoRA/QLoRA, FlashAttention, Mamba, DPO, GraphRAG, LightRAG, SAM, CLIP, ReAct, MemGPT, and more.<br>
+        <strong style="color:var(--text-bright)">28 sources (default AI/ML preset):</strong> 25 RSS feeds (OpenAI/Anthropic/Google/Meta/xAI/DeepSeek blogs + researcher feeds) + HN API + arXiv API + GitHub API
       </p>
     </div>
 
     <div class="sub-section">
-      <h4>아이디어 차용 & 고도화</h4>
+      <h4>Built On</h4>
       <div class="borrow-grid">
-        <div class="borrow-card"><div class="origin">LightRAG</div><div class="point">이중 검색 (Local + Global)</div><div class="improve">&rarr; Temporal 축 추가. Claim 스코어링. ear 필독 연동</div></div>
-        <div class="borrow-card"><div class="origin">GraphRAG (MS)</div><div class="point">커뮤니티 기반 요약</div><div class="improve">&rarr; Leiden 3단계 계층 (22개). 한국어 최적화</div></div>
+        <div class="borrow-card"><div class="origin">LightRAG</div><div class="point">Dual retrieval (Local + Global)</div><div class="improve">&rarr; Added Temporal axis, Claim scoring, ear integration</div></div>
+        <div class="borrow-card"><div class="origin">GraphRAG (MS)</div><div class="point">Community-based summarization</div><div class="improve">&rarr; Leiden 3-level hierarchy (22 communities)</div></div>
       </div>
     </div>
 
     <div class="test-result">
-      <h4>실제 시연 테스트</h4>
-      <p style="font-size:0.92rem;color:var(--text-bright);font-style:italic;margin-bottom:0.8rem;">"MCP란 무엇이고 어떤 기업들이 프로덕션에서 활용하고 있나?"</p>
+      <h4>Live Demo</h4>
+      <p style="font-size:0.92rem;color:var(--text-bright);font-style:italic;margin-bottom:0.8rem;">"What is MCP and which companies are using it in production?"</p>
       <ul style="list-style:none;font-size:0.86rem;line-height:1.9;">
-        <li>정의: JSON-RPC 2.0 기반 오픈 표준, OAuth 2.0 통합</li>
-        <li>9개 기업 식별: Anthropic, OpenAI, Google, Microsoft, Block, Bloomberg, AWS, Cloudflare</li>
-        <li>8개 MCP 채택 제품 + 출처 인용 + "그래프에 없는 정보" 명시</li>
+        <li>Definition: JSON-RPC 2.0 open standard with OAuth 2.0 integration</li>
+        <li>9 companies identified: Anthropic, OpenAI, Google, Microsoft, Block, Bloomberg, AWS, Cloudflare</li>
+        <li>8 MCP-adopting products + source citations + explicit "not in graph" markers</li>
       </ul>
     </div>
   </div>
@@ -473,39 +447,39 @@
 <div class="container">
   <div class="project-card reveal">
     <div class="card-header"><h3>comad-eye</h3><span class="card-badge" style="color:var(--teal)">Prediction Simulation Engine</span></div>
-    <p class="one-liner">텍스트에서 엔티티를 추출, 전파 시뮬레이션, 10개 분석 프레임워크로 종합 보고서 생성</p>
+    <p class="one-liner">Extracts entities from text, runs propagation simulations, generates comprehensive reports through 10 analysis frameworks.</p>
     <div class="tag-row"><span class="tag">Python 3.13</span><span class="tag">FastAPI</span><span class="tag">Next.js 16</span><span class="tag">Neo4j 5</span><span class="tag">Ollama</span><span class="tag">BGE-M3</span></div>
 
     <div class="sub-section">
       <h4>Pipeline</h4>
       <div class="code-flow">
-        텍스트 입력 <span class="dim">(뉴스, 보고서, 논문)</span><br>
-        &nbsp;&nbsp;<span class="hl">&rarr;</span> 인제스션 <span class="dim">(3-tier)</span> &rarr; 그래프 로딩 &rarr; 커뮤니티 감지<br>
-        &nbsp;&nbsp;<span class="hl">&rarr;</span> 시뮬레이션 <span class="dim">(N라운드)</span> &rarr; 6개 공간 분석<br>
-        &nbsp;&nbsp;<span class="hl">&rarr;</span> 렌즈 심층분석 <span class="dim">(10개 프레임워크)</span> &rarr; 보고서 + 품질 게이트
+        Text input <span class="dim">(news, reports, papers)</span><br>
+        &nbsp;&nbsp;<span class="hl">&rarr;</span> Ingestion <span class="dim">(3-tier)</span> &rarr; Graph loading &rarr; Community detection<br>
+        &nbsp;&nbsp;<span class="hl">&rarr;</span> Simulation <span class="dim">(N rounds)</span> &rarr; 6-space analysis<br>
+        &nbsp;&nbsp;<span class="hl">&rarr;</span> Lens deep-analysis <span class="dim">(10 frameworks)</span> &rarr; Report + quality gate
       </div>
     </div>
 
     <div class="sub-section">
-      <h4>10개 분석 렌즈</h4>
+      <h4>10 Analysis Lenses</h4>
       <div class="lens-grid">
-        <div class="lens-card"><div class="lens-name">손자병법</div><div class="lens-view">전략</div><div class="lens-focus">경쟁 우위, 허실</div></div>
-        <div class="lens-card"><div class="lens-name">마키아벨리</div><div class="lens-view">권력</div><div class="lens-focus">이해관계자 역학</div></div>
-        <div class="lens-card"><div class="lens-name">클라우제비츠</div><div class="lens-view">갈등</div><div class="lens-focus">마찰, 중심점</div></div>
-        <div class="lens-card"><div class="lens-name">애덤 스미스</div><div class="lens-view">경제</div><div class="lens-focus">시장, 분업</div></div>
-        <div class="lens-card"><div class="lens-name">탈레브</div><div class="lens-view">리스크</div><div class="lens-focus">블랙스완</div></div>
-        <div class="lens-card"><div class="lens-name">카너먼</div><div class="lens-view">인지</div><div class="lens-focus">시스템1/2</div></div>
-        <div class="lens-card"><div class="lens-name">헤겔</div><div class="lens-view">변증법</div><div class="lens-focus">정-반-합</div></div>
-        <div class="lens-card"><div class="lens-name">다윈</div><div class="lens-view">진화</div><div class="lens-focus">적응, 선택</div></div>
-        <div class="lens-card"><div class="lens-name">메도우스</div><div class="lens-view">시스템</div><div class="lens-focus">피드백 루프</div></div>
-        <div class="lens-card"><div class="lens-name">데카르트</div><div class="lens-view">분석</div><div class="lens-focus">분해, 회의</div></div>
+        <div class="lens-card"><div class="lens-name">Sun Tzu</div><div class="lens-view">Strategy</div><div class="lens-focus">Competitive advantage</div></div>
+        <div class="lens-card"><div class="lens-name">Machiavelli</div><div class="lens-view">Power</div><div class="lens-focus">Stakeholder dynamics</div></div>
+        <div class="lens-card"><div class="lens-name">Clausewitz</div><div class="lens-view">Conflict</div><div class="lens-focus">Friction, center of gravity</div></div>
+        <div class="lens-card"><div class="lens-name">Adam Smith</div><div class="lens-view">Economy</div><div class="lens-focus">Markets, division of labor</div></div>
+        <div class="lens-card"><div class="lens-name">Taleb</div><div class="lens-view">Risk</div><div class="lens-focus">Black swan events</div></div>
+        <div class="lens-card"><div class="lens-name">Kahneman</div><div class="lens-view">Cognition</div><div class="lens-focus">System 1/2</div></div>
+        <div class="lens-card"><div class="lens-name">Hegel</div><div class="lens-view">Dialectics</div><div class="lens-focus">Thesis-antithesis-synthesis</div></div>
+        <div class="lens-card"><div class="lens-name">Darwin</div><div class="lens-view">Evolution</div><div class="lens-focus">Adaptation, selection</div></div>
+        <div class="lens-card"><div class="lens-name">Meadows</div><div class="lens-view">Systems</div><div class="lens-focus">Feedback loops</div></div>
+        <div class="lens-card"><div class="lens-name">Descartes</div><div class="lens-view">Analysis</div><div class="lens-focus">Decomposition, doubt</div></div>
       </div>
     </div>
 
     <div class="test-result">
-      <h4>실제 시연 테스트</h4>
-      <p style="font-size:0.86rem;">입력 2문장 &rarr; 출력 <strong style="color:var(--green)">810줄, 15섹션 보고서</strong></p>
-      <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;">핵심: "MCP가 3개 커뮤니티의 브릿지 노드 (신뢰도 70%)"</p>
+      <h4>Live Demo</h4>
+      <p style="font-size:0.86rem;">Input: 2 sentences &rarr; Output: <strong style="color:var(--green)">810-line, 15-section report</strong></p>
+      <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;">Key finding: "MCP serves as bridge node across 3 communities (confidence 70%)"</p>
     </div>
   </div>
 </div>
@@ -516,39 +490,39 @@
 <div class="container">
   <div class="reveal">
     <div class="section-label">Ecosystem</div>
-    <h2>나머지 에이전트들</h2>
-    <p class="section-desc">각자의 역할에 충실하면서 전체 시스템과 연결됩니다.</p>
+    <h2>Supporting agents</h2>
+    <p class="section-desc">Each agent focuses on its role while connecting seamlessly to the rest of the system.</p>
   </div>
   <div class="compact-grid">
     <div class="compact-card reveal">
       <h3 style="color:var(--teal)">comad-ear</h3>
-      <p class="one-liner">Discord에서 기술 뉴스를 자동 감지하여 아카이브</p>
-      <div class="detail">관련성 3단계 분류 (필독 13% / 추천 65% / 참고 22%)<br>YAML frontmatter, brain 인제스터 자동 연동</div>
-      <div class="highlight">초기 필독 40% &rarr; 엄격 기준 후 13%</div>
+      <p class="one-liner">Monitors feeds and auto-archives relevant content</p>
+      <div class="detail">3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration</div>
+      <div class="highlight">Configurable RSS sources via YAML preset</div>
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--pink)">comad-photo</h3>
-      <p class="one-liner">사진 분석 &rarr; 보정안 &rarr; Photoshop MCP 비파괴 보정</p>
-      <div class="detail">3단계: PIL &rarr; Camera Raw &rarr; 고급<br>MAE > 20 가드레일. 인물 15장 평균 92.2점.</div>
+      <p class="one-liner">Image analysis &rarr; correction plan &rarr; Photoshop MCP non-destructive editing</p>
+      <div class="detail">3 stages: PIL &rarr; Camera Raw &rarr; Advanced<br>MAE > 20 guardrail. Portrait avg score: 92.2.</div>
       <div class="code-evolution" style="margin-top:0.8rem">
-        <div class="code-step"><div class="version">v0.1</div><div class="loc">82줄</div></div>
+        <div class="code-step"><div class="version">v0.1</div><div class="loc">82 LOC</div></div>
         <div class="code-step-arrow">&rarr;</div>
-        <div class="code-step"><div class="version">v0.2</div><div class="loc">65줄</div></div>
+        <div class="code-step"><div class="version">v0.2</div><div class="loc">65 LOC</div></div>
         <div class="code-step-arrow">&rarr;</div>
-        <div class="code-step"><div class="version">v0.4</div><div class="loc final">33줄</div></div>
+        <div class="code-step"><div class="version">v0.4</div><div class="loc final">33 LOC</div></div>
       </div>
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--green)">comad-sleep</h3>
-      <p class="one-liner">REM 수면처럼, 메모리를 자동 스캔/중복 감지/통합</p>
-      <div class="detail">MCP 서버 122줄. <code>info</code> + <code>history</code> 2개 도구.</div>
-      <div class="highlight">"dream" 또는 메모리 > 150줄 시 자동 트리거</div>
+      <p class="one-liner">REM-style automatic memory scan, dedup, and consolidation</p>
+      <div class="detail">MCP server, 122 LOC. <code>info</code> + <code>history</code> 2 tools.</div>
+      <div class="highlight">Auto-triggers on "dream" or when memory exceeds 150 lines</div>
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--amber)">comad-voice</h3>
-      <p class="one-liner">비개발자를 위한 Claude Code 워크플로우 자동화</p>
-      <div class="detail">6개 키워드 트리거. CLAUDE.md 기반. 외부 의존성 0.</div>
-      <div class="highlight">자연어 한마디로 전체 프로세스 자동 제어</div>
+      <p class="one-liner">Natural-language workflow automation for Claude Code</p>
+      <div class="detail">Keyword triggers. CLAUDE.md-based. Zero external dependencies.</div>
+      <div class="highlight">One sentence controls the entire process</div>
     </div>
   </div>
 </div>
@@ -559,94 +533,118 @@
 <div class="container">
   <div class="reveal">
     <div class="section-label">Verified Results</div>
-    <h2>모든 수치는 <em>실전 테스트</em>에서 나왔습니다</h2>
+    <h2>Every number comes from <em>real-world testing</em></h2>
   </div>
   <div class="kpi-grid reveal">
     <div class="kpi"><div class="kpi-val" style="color:var(--green)">1,422</div><div class="kpi-label">Tests</div><div class="kpi-detail">brain + eye + voice CI</div></div>
-    <div class="kpi"><div class="kpi-val" style="color:var(--amber)">92.2</div><div class="kpi-label">Photo Score</div><div class="kpi-detail">인물 15장 블라인드</div></div>
-    <div class="kpi"><div class="kpi-val" style="color:var(--teal)">153</div><div class="kpi-label">arXiv Papers</div><div class="kpi-detail">AI 전 분야 커버</div></div>
-    <div class="kpi"><div class="kpi-val" style="color:var(--accent)">810줄</div><div class="kpi-label">Eye Output</div><div class="kpi-detail">2문장 &rarr; 15섹션</div></div>
-    <div class="kpi"><div class="kpi-val" style="color:var(--green)">$0.60</div><div class="kpi-label">Daily Cost</div><div class="kpi-detail">$4.50에서 87%↓</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--amber)">92.2</div><div class="kpi-label">Photo Score</div><div class="kpi-detail">15 portraits, blind test</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--teal)">153</div><div class="kpi-label">arXiv Papers</div><div class="kpi-detail">Full AI field coverage</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--accent)">810 lines</div><div class="kpi-label">Eye Output</div><div class="kpi-detail">2 sentences &rarr; 15 sections</div></div>
+    <div class="kpi"><div class="kpi-val" style="color:var(--green)">$0.60</div><div class="kpi-label">Daily Cost</div><div class="kpi-detail">87% down from $4.50</div></div>
   </div>
 </div>
 </section>
 
-<!-- ====== METHODOLOGY ====== -->
-<section id="methodology">
+<!-- ====== PRESETS (Customization) ====== -->
+<section id="presets">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Methodology</div>
-    <h2>사람은 설계, <em>AI는 실행</em></h2>
-  </div>
-  <div class="role-grid reveal">
-    <div class="role-col human"><h4>사람 (설계자)</h4><ul><li>시스템 아키텍처 설계</li><li>어떤 문제를 풀 것인지 결정</li><li>품질 기준 설정 (MAE 20, 필독 13%)</li><li>차용할 아이디어 선정</li><li>실전 테스트 결과 판단</li></ul></div>
-    <div class="role-col ai"><h4>AI (Claude Code)</h4><ul><li>코드 구현 + 테스트 작성</li><li>구체적인 해법 코딩</li><li>기준에 맞는 최적화 실행</li><li>차용 포인트 분석 + 자체 구현</li><li>테스트 자동화 + 배치 실행</li></ul></div>
+    <div class="section-label">Customization</div>
+    <h2>One config file, <em>any domain</em></h2>
+    <p class="section-desc">Comad World ships with ready-made presets. Swap one file to retarget the entire knowledge pipeline to your field.</p>
   </div>
 
-  <div class="section-label reveal">Lessons Learned</div>
-  <div class="lesson reveal"><div class="title">프롬프트는 짧을수록 좋다</div><div class="desc">comad-photo: 82줄&rarr;33줄. 에이전트가 오히려 더 나은 판단.</div></div>
-  <div class="lesson reveal"><div class="title">실전 테스트에서 규칙을 도출</div><div class="desc">50장 돌려보고 실패 패턴에서 규칙 추가. MAE 가드, CU 규칙, 스키마 고정 모두 이 방식.</div></div>
-  <div class="lesson reveal"><div class="title">이미 있는 것을 먼저 확인</div><div class="desc">brain: API 크롤러가 이미 있었지만 크론이 claude -p를 사용 중이었음.</div></div>
-  <div class="lesson reveal"><div class="title">외부 의존성 0으로 차용</div><div class="desc">LightRAG, ReMe, SimpleMem — 구조만 참고, 직접 구현.</div></div>
-  <div class="lesson reveal"><div class="title">비용은 사후에 최적화</div><div class="desc">먼저 동작하게, 이후 Sonnet&rarr;Haiku + 아키텍처 변경으로 87% 절감.</div></div>
+  <div class="preset-grid reveal">
+    <div class="preset-card">
+      <h3>AI / Machine Learning</h3>
+      <div class="preset-file">presets/ai-ml.yaml</div>
+      <div class="preset-desc">22 RSS feeds (OpenAI, Anthropic, Google, Meta, xAI, DeepSeek blogs + top researchers) + 10 arXiv categories (cs.AI, cs.CL, cs.LG, cs.CV...)</div>
+    </div>
+    <div class="preset-card">
+      <h3>Web Development</h3>
+      <div class="preset-file">presets/web-dev.yaml</div>
+      <div class="preset-desc">15 RSS feeds (V8 blog, web.dev, CSS-Tricks, Smashing Magazine, MDN, framework blogs)</div>
+    </div>
+    <div class="preset-card">
+      <h3>Finance / Fintech</h3>
+      <div class="preset-file">presets/finance.yaml</div>
+      <div class="preset-desc">10 RSS feeds (FT, Bloomberg, a16z fintech, Stripe blog) + 6 arXiv categories (q-fin.*)</div>
+    </div>
+    <div class="preset-card">
+      <h3>Biotech / Life Sciences</h3>
+      <div class="preset-file">presets/biotech.yaml</div>
+      <div class="preset-desc">8 RSS feeds (Nature, Science, biorxiv highlights) + 5 arXiv categories (q-bio.*)</div>
+    </div>
+  </div>
+
+  <div class="code-flow reveal" style="margin-top:1.5rem;">
+    <span class="dim"># Switch domain in one command</span><br>
+    cp presets/finance.yaml comad.config.yaml<br>
+    <br>
+    <span class="dim"># Or create your own &mdash; just define RSS feeds and arXiv categories</span><br>
+    <span class="hl">sources:</span><br>
+    &nbsp;&nbsp;rss:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;- url: https://your-field-blog.com/feed<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: "Your Field Blog"<br>
+    &nbsp;&nbsp;arxiv:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;categories: [<span class="hl">your.category</span>]
+  </div>
 </div>
 </section>
 
-<!-- ====== CHALLENGES ====== -->
-<section id="challenges">
+<!-- ====== QUICK START ====== -->
+<section id="quickstart">
 <div class="container">
   <div class="reveal">
-    <div class="section-label">Engineering Challenges</div>
-    <h2>13개의 문제, <em>직접 해결</em></h2>
+    <div class="section-label">Quick Start</div>
+    <h2>Up and running in <em>4 commands</em></h2>
   </div>
-  <div class="issue-grid reveal">
-    <div class="issue-card"><div class="badge env">환경</div><div><div class="problem">CRLF &rarr; macOS cron 실패</div><div class="solution">전체 LF 변환</div><div class="project-tag">brain</div></div></div>
-    <div class="issue-card"><div class="badge env">환경</div><div><div class="problem">Python venv 깨짐</div><div class="solution">venv 재생성 + shebang 수정</div><div class="project-tag">eye</div></div></div>
-    <div class="issue-card"><div class="badge env">환경</div><div><div class="problem">Neo4j 포트 충돌</div><div class="solution">포트 분리 (7687/7688)</div><div class="project-tag">eye/brain</div></div></div>
-    <div class="issue-card"><div class="badge cost">비용</div><div><div class="problem">크롤링에 LLM 15K tok/일</div><div class="solution">기존 API 크롤러로 교체 (0 tok)</div><div class="project-tag">brain</div></div></div>
-    <div class="issue-card"><div class="badge cost">비용</div><div><div class="problem">Sonnet 추출 비용</div><div class="solution">Haiku 전환 (67%↓)</div><div class="project-tag">brain</div></div></div>
-    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">필독 40% 구별력 부족</div><div class="solution">4가지 엄격 기준 (13%)</div><div class="project-tag">ear</div></div></div>
-    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">스키마 드리프트</div><div class="solution">템플릿 고정 + 23건 소급</div><div class="project-tag">ear</div></div></div>
-    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">PIL+CameraRaw 이중 (58점)</div><div class="solution">상호 배타 규칙</div><div class="project-tag">photo</div></div></div>
-    <div class="issue-card"><div class="badge quality">품질</div><div><div class="problem">과보정 MAE 35</div><div class="solution">MAE 20 강화 (72&rarr;90)</div><div class="project-tag">photo</div></div></div>
-    <div class="issue-card"><div class="badge stability">안정성</div><div><div class="problem">AppleScript+CU 충돌</div><div class="solution">CU 전용 저장 규칙</div><div class="project-tag">photo</div></div></div>
-    <div class="issue-card"><div class="badge stability">안정성</div><div><div class="problem">Discord 봇 오프라인</div><div class="solution">LAZY 제거 + 플러그인 해결</div><div class="project-tag">ear</div></div></div>
-    <div class="issue-card"><div class="badge stability">안정성</div><div><div class="problem">Stale lock 파일</div><div class="solution">자동 정리 로직</div><div class="project-tag">sleep</div></div></div>
-    <div class="issue-card"><div class="badge bias">편향</div><div><div class="problem">HN+OpenAI 편중</div><div class="solution">25 RSS 균등 + 30% 캡</div><div class="project-tag">brain</div></div></div>
+
+  <div class="code-flow reveal">
+    <span class="dim"># 1. Clone the repo</span><br>
+    git clone https://github.com/kinkos1234/comad-world.git<br>
+    <br>
+    <span class="dim"># 2. Enter the directory</span><br>
+    cd comad-world<br>
+    <br>
+    <span class="dim"># 3. Pick a preset (or create your own)</span><br>
+    cp presets/ai-ml.yaml comad.config.yaml<br>
+    <br>
+    <span class="dim"># 4. Install &amp; start</span><br>
+    ./install.sh
   </div>
+
+  <p class="reveal" style="font-size:0.88rem;color:var(--text-dim);margin-top:1.2rem;max-width:640px;line-height:1.8;">
+    Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup, Neo4j schema initialization, and cron configuration. See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> for detailed instructions.
+  </p>
 </div>
 </section>
 
-<!-- ====== TIMELINE (상세화 — Hugh Kim에서 배운 구성) ====== -->
+<!-- ====== TIMELINE ====== -->
 <section id="timeline">
 <div class="container">
   <div class="reveal">
     <div class="section-label">Timeline</div>
-    <h2>2주간의 기록</h2>
+    <h2>Major milestones</h2>
   </div>
   <div class="timeline reveal">
-    <div class="tl-item"><div class="tl-date">2026-03-21</div><div class="tl-title">comad-eye 첫 커밋</div><div class="tl-detail">Python 3.13 + FastAPI + Neo4j &middot; 온톨로지 시뮬레이션 엔진 &middot; ~8,000 LOC</div></div>
-    <div class="tl-item"><div class="tl-date">2026-03-23</div><div class="tl-title">comad-brain 시작</div><div class="tl-detail">TypeScript + Bun &middot; 5 packages 모노레포 &middot; ~12,000 LOC &middot; Neo4j 지식 그래프</div></div>
-    <div class="tl-item"><div class="tl-date">2026-03-24</div><div class="tl-title">comad-voice 구현</div><div class="tl-detail">CLAUDE.md 기반 &middot; 6 triggers &middot; 외부 의존성 0</div></div>
-    <div class="tl-item"><div class="tl-date">2026-03-25</div><div class="tl-title">comad-sleep 구현</div><div class="tl-detail">Node.js MCP 서버 &middot; 122 LOC &middot; info + history 2 tools</div></div>
-    <div class="tl-item"><div class="tl-date">2026-03-30</div><div class="tl-title">comad-photo 구현</div><div class="tl-detail">Claude Agent &middot; Photoshop MCP + Computer Use &middot; 33 LOC (v0.4)</div></div>
-    <div class="tl-item"><div class="tl-date">2026-04-02~03</div><div class="tl-title">전수 검토 스프린트</div><div class="tl-detail">E2E 60건 &middot; 트렌딩 레포 내재화 5건 &middot; 1,422 tests 달성</div></div>
-    <div class="tl-item"><div class="tl-date">2026-04-04</div><div class="tl-title">고도화 완료</div><div class="tl-detail">비용 87%↓ ($4.50&rarr;$0.60) &middot; Haiku 전환 &middot; 25 RSS 균등배분</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-21</div><div class="tl-title">comad-eye first commit</div><div class="tl-detail">Python 3.13 + FastAPI + Neo4j &middot; Simulation engine &middot; ~8,000 LOC</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-23</div><div class="tl-title">comad-brain started</div><div class="tl-detail">TypeScript + Bun &middot; 5-package monorepo &middot; ~12,000 LOC &middot; Neo4j knowledge graph</div></div>
+    <div class="tl-item"><div class="tl-date">2026-03-30</div><div class="tl-title">Ecosystem complete</div><div class="tl-detail">voice + sleep + photo &middot; All 6 agents operational</div></div>
+    <div class="tl-item"><div class="tl-date">2026-04-03</div><div class="tl-title">Full review sprint</div><div class="tl-detail">E2E 60 tests &middot; 1,422 total tests &middot; Cost 87% reduction</div></div>
+    <div class="tl-item"><div class="tl-date">2026-04-05</div><div class="tl-title">Open source launch</div><div class="tl-detail">comad-world public repo &middot; Config presets &middot; MIT License</div></div>
   </div>
 </div>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>COMAD &mdash; Built with Claude Code in 2 weeks &middot; 2026-03-21 ~ 2026-04-04</p>
+  <p>Comad World &mdash; Open Source AI Agent System &middot; MIT License</p>
   <div class="links">
-    <a href="https://github.com/kinkos1234" target="_blank" rel="noopener">
+    <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-      GitHub
+      GitHub &mdash; comad-world
     </a>
-    <a href="https://github.com/kinkos1234/comad-voice" target="_blank">&rarr; voice</a>
-    <a href="https://github.com/kinkos1234/comad-sleep" target="_blank">&rarr; sleep</a>
-    <a href="https://github.com/kinkos1234/sos" target="_blank">&rarr; eye</a>
   </div>
 </footer>
 
