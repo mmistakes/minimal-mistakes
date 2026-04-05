@@ -564,14 +564,14 @@
   <div class="compact-grid">
     <div class="compact-card reveal">
       <h3 style="color:var(--teal)">comad-ear</h3>
-      <p class="one-liner">Monitors feeds and auto-archives relevant content</p>
-      <div class="detail">3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration</div>
-      <div class="highlight">Configurable RSS sources via YAML preset</div>
+      <p class="one-liner" data-i18n="ear.desc">Monitors feeds and auto-archives relevant content</p>
+      <div class="detail" data-i18n="ear.detail">3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration</div>
+      <div class="highlight" data-i18n="ear.highlight">Configurable RSS sources via YAML preset</div>
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--pink)">comad-photo</h3>
-      <p class="one-liner">Image analysis &rarr; correction plan &rarr; Photoshop MCP non-destructive editing</p>
-      <div class="detail">3 stages: PIL &rarr; Camera Raw &rarr; Advanced<br>MAE > 20 guardrail. Portrait avg score: 92.2.</div>
+      <p class="one-liner" data-i18n="photo.desc">Image analysis &rarr; correction plan &rarr; Photoshop MCP non-destructive editing</p>
+      <div class="detail" data-i18n="photo.detail">3 stages: PIL &rarr; Camera Raw &rarr; Advanced<br>MAE > 20 guardrail. Portrait avg score: 92.2.</div>
       <div class="code-evolution" style="margin-top:0.8rem">
         <div class="code-step"><div class="version">v0.1</div><div class="loc">82 LOC</div></div>
         <div class="code-step-arrow">&rarr;</div>
@@ -582,15 +582,15 @@
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--green)">comad-sleep</h3>
-      <p class="one-liner">REM-style automatic memory scan, dedup, and consolidation</p>
-      <div class="detail">MCP server, 122 LOC. <code>info</code> + <code>history</code> 2 tools.</div>
-      <div class="highlight">Auto-triggers on "dream" or when memory exceeds 150 lines</div>
+      <p class="one-liner" data-i18n="sleep.desc">REM-style automatic memory scan, dedup, and consolidation</p>
+      <div class="detail" data-i18n="sleep.detail">MCP server, 122 LOC. <code>info</code> + <code>history</code> 2 tools.</div>
+      <div class="highlight" data-i18n="sleep.highlight">Auto-triggers on "dream" or when memory exceeds 150 lines</div>
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--amber)">comad-voice</h3>
-      <p class="one-liner">Natural-language workflow automation for Claude Code</p>
-      <div class="detail">Keyword triggers. CLAUDE.md-based. Zero external dependencies.</div>
-      <div class="highlight">One sentence controls the entire process</div>
+      <p class="one-liner" data-i18n="voice.desc">Natural-language workflow automation for Claude Code</p>
+      <div class="detail" data-i18n="voice.detail">Keyword triggers. CLAUDE.md-based. Zero external dependencies.</div>
+      <div class="highlight" data-i18n="voice.highlight">One sentence controls the entire process</div>
     </div>
   </div>
 </div>
@@ -832,6 +832,17 @@ const i18n = {
     'eco.label': 'Ecosystem',
     'eco.title': 'Supporting agents',
     'eco.desc': 'Each focused on its role, all connected to the whole system.',
+    'ear.desc': 'Monitors feeds and auto-archives relevant content',
+    'ear.detail': '3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration',
+    'ear.highlight': 'Configurable RSS sources via YAML preset',
+    'photo.desc': 'Image analysis &rarr; correction plan &rarr; Photoshop MCP non-destructive editing',
+    'photo.detail': '3 stages: PIL &rarr; Camera Raw &rarr; Advanced<br>MAE > 20 guardrail. Portrait avg score: 92.2.',
+    'sleep.desc': 'REM-style automatic memory scan, dedup, and consolidation',
+    'sleep.detail': 'MCP server, 122 LOC. <code>info</code> + <code>history</code> 2 tools.',
+    'sleep.highlight': 'Auto-triggers on "dream" or when memory exceeds 150 lines',
+    'voice.desc': 'Natural-language workflow automation for Claude Code',
+    'voice.detail': 'Keyword triggers. CLAUDE.md-based. Zero external dependencies.',
+    'voice.highlight': 'One sentence controls the entire process',
     'results.label': 'Verified Results',
     'results.title': 'All numbers from <em>real deployments</em>',
     'presets.label': 'Customization',
@@ -914,6 +925,17 @@ const i18n = {
     'eco.label': '\uc5d0\ucf54\uc2dc\uc2a4\ud15c',
     'eco.title': '\uc9c0\uc6d0 \uc5d0\uc774\uc804\ud2b8\ub4e4',
     'eco.desc': '\uac01\uc790\uc758 \uc5ed\ud560\uc5d0 \ucda9\uc2e4\ud558\uba74\uc11c \uc804\uccb4 \uc2dc\uc2a4\ud15c\uacfc \uc5f0\uacb0\ub429\ub2c8\ub2e4.',
+    'ear.desc': 'Discord\uc5d0\uc11c \uae30\uc220 \ub274\uc2a4\ub97c \uc790\ub3d9 \uac10\uc9c0\ud558\uc5ec \uc544\uce74\uc774\ube0c',
+    'ear.detail': '\uad00\ub828\uc131 3\ub2e8\uacc4 \ubd84\ub958 (\ud544\ub3c5 13% / \ucd94\ucc9c 65% / \ucc38\uace0 22%)<br>YAML frontmatter, brain \uc778\uc81c\uc2a4\ud130 \uc790\ub3d9 \uc5f0\ub3d9',
+    'ear.highlight': 'YAML \ud504\ub9ac\uc14b\uc73c\ub85c RSS \uc18c\uc2a4 \uc124\uc815 \uac00\ub2a5',
+    'photo.desc': '\uc0ac\uc9c4 \ubd84\uc11d &rarr; \ubcf4\uc815\uc548 &rarr; Photoshop MCP \ube44\ud30c\uad34 \ubcf4\uc815',
+    'photo.detail': '3\ub2e8\uacc4: PIL &rarr; Camera Raw &rarr; \uace0\uae09<br>MAE > 20 \uac00\ub4dc\ub808\uc77c. \uc778\ubb3c 15\uc7a5 \ud3c9\uade0 92.2\uc810.',
+    'sleep.desc': 'REM \uc218\uba74\ucc98\ub7fc, \uba54\ubaa8\ub9ac\ub97c \uc790\ub3d9 \uc2a4\uce94/\uc911\ubcf5 \uac10\uc9c0/\ud1b5\ud569',
+    'sleep.detail': 'MCP \uc11c\ubc84 122\uc904. <code>info</code> + <code>history</code> 2\uac1c \ub3c4\uad6c.',
+    'sleep.highlight': '"dream" \ub610\ub294 \uba54\ubaa8\ub9ac > 150\uc904 \uc2dc \uc790\ub3d9 \ud2b8\ub9ac\uac70',
+    'voice.desc': '\ube44\uac1c\ubc1c\uc790\ub97c \uc704\ud55c Claude Code \uc6cc\ud06c\ud50c\ub85c\uc6b0 \uc790\ub3d9\ud654',
+    'voice.detail': '\ud0a4\uc6cc\ub4dc \ud2b8\ub9ac\uac70. CLAUDE.md \uae30\ubc18. \uc678\ubd80 \uc758\uc874\uc131 0.',
+    'voice.highlight': '\uc790\uc5f0\uc5b4 \ud55c\ub9c8\ub514\ub85c \uc804\uccb4 \ud504\ub85c\uc138\uc2a4 \uc790\ub3d9 \uc81c\uc5b4',
     'results.label': '\uac80\uc99d\ub41c \uacb0\uacfc',
     'results.title': '\ubaa8\ub4e0 \uc218\uce58\ub294 <em>\uc2e4\uc804 \ud14c\uc2a4\ud2b8</em>\uc5d0\uc11c \ub098\uc654\uc2b5\ub2c8\ub2e4',
     'presets.label': '\ucee4\uc2a4\ud130\ub9c8\uc774\uc9d5',
