@@ -519,8 +519,8 @@
     <div class="tag-row"><span class="tag">Python 3.13</span><span class="tag">FastAPI</span><span class="tag">Next.js 16</span><span class="tag">Neo4j 5</span><span class="tag">Ollama</span><span class="tag">BGE-M3</span></div>
 
     <div class="sub-section">
-      <h4>Pipeline</h4>
-      <div class="code-flow">
+      <h4 data-i18n="eye.pipeline">Pipeline</h4>
+      <div class="code-flow" data-i18n="eye.pipeflow">
         Text input <span class="dim">(news, reports, papers)</span><br>
         &nbsp;&nbsp;<span class="hl">&rarr;</span> Ingestion <span class="dim">(3-tier)</span> &rarr; Graph loading &rarr; Community detection<br>
         &nbsp;&nbsp;<span class="hl">&rarr;</span> Simulation <span class="dim">(N rounds)</span> &rarr; 6-space analysis<br>
@@ -529,25 +529,25 @@
     </div>
 
     <div class="sub-section">
-      <h4>10 Analysis Lenses</h4>
+      <h4 data-i18n="eye.lenstitle">10 Analysis Lenses</h4>
       <div class="lens-grid">
-        <div class="lens-card"><div class="lens-name">Sun Tzu</div><div class="lens-view">Strategy</div><div class="lens-focus">Competitive advantage</div></div>
-        <div class="lens-card"><div class="lens-name">Machiavelli</div><div class="lens-view">Power</div><div class="lens-focus">Stakeholder dynamics</div></div>
-        <div class="lens-card"><div class="lens-name">Clausewitz</div><div class="lens-view">Conflict</div><div class="lens-focus">Friction, center of gravity</div></div>
-        <div class="lens-card"><div class="lens-name">Adam Smith</div><div class="lens-view">Economy</div><div class="lens-focus">Markets, division of labor</div></div>
-        <div class="lens-card"><div class="lens-name">Taleb</div><div class="lens-view">Risk</div><div class="lens-focus">Black swan events</div></div>
-        <div class="lens-card"><div class="lens-name">Kahneman</div><div class="lens-view">Cognition</div><div class="lens-focus">System 1/2</div></div>
-        <div class="lens-card"><div class="lens-name">Hegel</div><div class="lens-view">Dialectics</div><div class="lens-focus">Thesis-antithesis-synthesis</div></div>
-        <div class="lens-card"><div class="lens-name">Darwin</div><div class="lens-view">Evolution</div><div class="lens-focus">Adaptation, selection</div></div>
-        <div class="lens-card"><div class="lens-name">Meadows</div><div class="lens-view">Systems</div><div class="lens-focus">Feedback loops</div></div>
-        <div class="lens-card"><div class="lens-name">Descartes</div><div class="lens-view">Analysis</div><div class="lens-focus">Decomposition, doubt</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.sun">Sun Tzu</div><div class="lens-view" data-i18n="lens.sun.v">Strategy</div><div class="lens-focus" data-i18n="lens.sun.f">Competitive advantage</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.mac">Machiavelli</div><div class="lens-view" data-i18n="lens.mac.v">Power</div><div class="lens-focus" data-i18n="lens.mac.f">Stakeholder dynamics</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.cla">Clausewitz</div><div class="lens-view" data-i18n="lens.cla.v">Conflict</div><div class="lens-focus" data-i18n="lens.cla.f">Friction, center of gravity</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.smi">Adam Smith</div><div class="lens-view" data-i18n="lens.smi.v">Economy</div><div class="lens-focus" data-i18n="lens.smi.f">Markets, division of labor</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.tal">Taleb</div><div class="lens-view" data-i18n="lens.tal.v">Risk</div><div class="lens-focus" data-i18n="lens.tal.f">Black swan events</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.kah">Kahneman</div><div class="lens-view" data-i18n="lens.kah.v">Cognition</div><div class="lens-focus" data-i18n="lens.kah.f">System 1/2</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.heg">Hegel</div><div class="lens-view" data-i18n="lens.heg.v">Dialectics</div><div class="lens-focus" data-i18n="lens.heg.f">Thesis-antithesis-synthesis</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.dar">Darwin</div><div class="lens-view" data-i18n="lens.dar.v">Evolution</div><div class="lens-focus" data-i18n="lens.dar.f">Adaptation, selection</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.mea">Meadows</div><div class="lens-view" data-i18n="lens.mea.v">Systems</div><div class="lens-focus" data-i18n="lens.mea.f">Feedback loops</div></div>
+        <div class="lens-card"><div class="lens-name" data-i18n="lens.des">Descartes</div><div class="lens-view" data-i18n="lens.des.v">Analysis</div><div class="lens-focus" data-i18n="lens.des.f">Decomposition, doubt</div></div>
       </div>
     </div>
 
     <div class="test-result">
       <h4 data-i18n="eye.demo">Live Demo</h4>
-      <p style="font-size:0.86rem;">Input: 2 sentences &rarr; Output: <strong style="color:var(--green)">810-line, 15-section report</strong></p>
-      <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;">Key finding: "MCP serves as bridge node across 3 communities (confidence 70%)"</p>
+      <p style="font-size:0.86rem;" data-i18n="eye.demoresult">Input: 2 sentences &rarr; Output: <strong style="color:var(--green)">810-line, 15-section report</strong></p>
+      <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;" data-i18n="eye.demofinding">Key finding: "MCP serves as bridge node across 3 communities (confidence 70%)"</p>
     </div>
   </div>
 </div>
@@ -829,6 +829,21 @@ const i18n = {
     'eye.badge': 'Prediction Simulation Engine',
     'eye.desc': 'Extracts entities from text, runs propagation simulations, generates comprehensive reports through 10 analysis frameworks.',
     'eye.demo': 'Live Demo',
+    'eye.pipeline': 'Pipeline',
+    'eye.pipeflow': 'Text input <span class="dim">(news, reports, papers)</span><br>&nbsp;&nbsp;<span class="hl">&rarr;</span> Ingestion <span class="dim">(3-tier)</span> &rarr; Graph loading &rarr; Community detection<br>&nbsp;&nbsp;<span class="hl">&rarr;</span> Simulation <span class="dim">(N rounds)</span> &rarr; 6-space analysis<br>&nbsp;&nbsp;<span class="hl">&rarr;</span> Lens deep-analysis <span class="dim">(10 frameworks)</span> &rarr; Report + quality gate',
+    'eye.lenstitle': '10 Analysis Lenses',
+    'eye.demoresult': 'Input: 2 sentences &rarr; Output: <strong style="color:var(--green)">810-line, 15-section report</strong>',
+    'eye.demofinding': 'Key finding: "MCP serves as bridge node across 3 communities (confidence 70%)"',
+    'lens.sun': 'Sun Tzu', 'lens.sun.v': 'Strategy', 'lens.sun.f': 'Competitive advantage',
+    'lens.mac': 'Machiavelli', 'lens.mac.v': 'Power', 'lens.mac.f': 'Stakeholder dynamics',
+    'lens.cla': 'Clausewitz', 'lens.cla.v': 'Conflict', 'lens.cla.f': 'Friction, center of gravity',
+    'lens.smi': 'Adam Smith', 'lens.smi.v': 'Economy', 'lens.smi.f': 'Markets, division of labor',
+    'lens.tal': 'Taleb', 'lens.tal.v': 'Risk', 'lens.tal.f': 'Black swan events',
+    'lens.kah': 'Kahneman', 'lens.kah.v': 'Cognition', 'lens.kah.f': 'System 1/2',
+    'lens.heg': 'Hegel', 'lens.heg.v': 'Dialectics', 'lens.heg.f': 'Thesis-antithesis-synthesis',
+    'lens.dar': 'Darwin', 'lens.dar.v': 'Evolution', 'lens.dar.f': 'Adaptation, selection',
+    'lens.mea': 'Meadows', 'lens.mea.v': 'Systems', 'lens.mea.f': 'Feedback loops',
+    'lens.des': 'Descartes', 'lens.des.v': 'Analysis', 'lens.des.f': 'Decomposition, doubt',
     'eco.label': 'Ecosystem',
     'eco.title': 'Supporting agents',
     'eco.desc': 'Each focused on its role, all connected to the whole system.',
@@ -922,6 +937,21 @@ const i18n = {
     'eye.badge': '\uc608\uce21 \uc2dc\ubbac\ub808\uc774\uc158 \uc5d4\uc9c4',
     'eye.desc': '\ud14d\uc2a4\ud2b8\uc5d0\uc11c \uc5d4\ud2f0\ud2f0\ub97c \ucd94\ucd9c, \uc804\ud30c \uc2dc\ubbac\ub808\uc774\uc158, 10\uac1c \ubd84\uc11d \ud504\ub808\uc784\uc6cc\ud06c\ub85c \uc885\ud569 \ubcf4\uace0\uc11c \uc0dd\uc131.',
     'eye.demo': '\uc2e4\uc81c \uc2dc\uc5f0',
+    'eye.pipeline': '\ud30c\uc774\ud504\ub77c\uc778',
+    'eye.pipeflow': '\ud14d\uc2a4\ud2b8 \uc785\ub825 <span class="dim">(\ub274\uc2a4, \ubcf4\uace0\uc11c, \ub17c\ubb38)</span><br>&nbsp;&nbsp;<span class="hl">&rarr;</span> \uc778\uc81c\uc158 <span class="dim">(3\ub2e8\uacc4)</span> &rarr; \uadf8\ub798\ud504 \ub85c\ub529 &rarr; \ucee4\ubba4\ub2c8\ud2f0 \uac10\uc9c0<br>&nbsp;&nbsp;<span class="hl">&rarr;</span> \uc2dc\ubbac\ub808\uc774\uc158 <span class="dim">(N\ub77c\uc6b4\ub4dc)</span> &rarr; 6\uac1c \uacf5\uac04 \ubd84\uc11d<br>&nbsp;&nbsp;<span class="hl">&rarr;</span> \ub80c\uc988 \uc2ec\uce35\ubd84\uc11d <span class="dim">(10\uac1c \ud504\ub808\uc784\uc6cc\ud06c)</span> &rarr; \ubcf4\uace0\uc11c + \ud488\uc9c8 \uac8c\uc774\ud2b8',
+    'eye.lenstitle': '10\uac1c \ubd84\uc11d \ub80c\uc988',
+    'eye.demoresult': '\uc785\ub825 2\ubb38\uc7a5 &rarr; \ucd9c\ub825 <strong style="color:var(--green)">810\uc904, 15\uc139\uc158 \ubcf4\uace0\uc11c</strong>',
+    'eye.demofinding': '\ud575\uc2ec: "MCP\uac00 3\uac1c \ucee4\ubba4\ub2c8\ud2f0\uc758 \ube0c\ub9bf\uc9c0 \ub178\ub4dc (\uc2e0\ub8b0\ub3c4 70%)"',
+    'lens.sun': '\uc190\uc790\ubcd1\ubc95', 'lens.sun.v': '\uc804\ub7b5', 'lens.sun.f': '\uacbd\uc7c1 \uc6b0\uc704, \ud5c8\uc2e4',
+    'lens.mac': '\ub9c8\ud0a4\uc544\ubca8\ub9ac', 'lens.mac.v': '\uad8c\ub825', 'lens.mac.f': '\uc774\ud574\uad00\uacc4\uc790 \uc5ed\ud559',
+    'lens.cla': '\ud074\ub77c\uc6b0\uc81c\ube44\uce20', 'lens.cla.v': '\uac08\ub4f1', 'lens.cla.f': '\ub9c8\ucc30, \uc911\uc2ec\uc810',
+    'lens.smi': '\uc560\ub364 \uc2a4\ubbf8\uc2a4', 'lens.smi.v': '\uacbd\uc81c', 'lens.smi.f': '\uc2dc\uc7a5, \ubd84\uc5c5',
+    'lens.tal': '\ud0c8\ub808\ube0c', 'lens.tal.v': '\ub9ac\uc2a4\ud06c', 'lens.tal.f': '\ube14\ub799\uc2a4\uc644',
+    'lens.kah': '\uce74\ub108\uba3c', 'lens.kah.v': '\uc778\uc9c0', 'lens.kah.f': '\uc2dc\uc2a4\ud15c 1/2',
+    'lens.heg': '\ud5e4\uac94', 'lens.heg.v': '\ubcc0\uc99d\ubc95', 'lens.heg.f': '\uc815-\ubc18-\ud569',
+    'lens.dar': '\ub2e4\uc708', 'lens.dar.v': '\uc9c4\ud654', 'lens.dar.f': '\uc801\uc751, \uc120\ud0dd',
+    'lens.mea': '\uba54\ub3c4\uc6b0\uc2a4', 'lens.mea.v': '\uc2dc\uc2a4\ud15c', 'lens.mea.f': '\ud53c\ub4dc\ubc31 \ub8e8\ud504',
+    'lens.des': '\ub370\uce74\ub974\ud2b8', 'lens.des.v': '\ubd84\uc11d', 'lens.des.f': '\ubd84\ud574, \ud68c\uc758',
     'eco.label': '\uc5d0\ucf54\uc2dc\uc2a4\ud15c',
     'eco.title': '\uc9c0\uc6d0 \uc5d0\uc774\uc804\ud2b8\ub4e4',
     'eco.desc': '\uac01\uc790\uc758 \uc5ed\ud560\uc5d0 \ucda9\uc2e4\ud558\uba74\uc11c \uc804\uccb4 \uc2dc\uc2a4\ud15c\uacfc \uc5f0\uacb0\ub429\ub2c8\ub2e4.',
