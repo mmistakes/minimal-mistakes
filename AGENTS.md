@@ -12,12 +12,22 @@
 
 - 전역 설정: `_config.yml`
 - 홈: `index.html`
+- 홈 레이아웃: `_layouts/home.html`
 - 상단 메뉴/사이드 메뉴 데이터: `_data/navigation.yml`
+- 언어 전환 include: `_includes/language-switcher.html`
 - 실제 글: `_posts/*.md`
 - 섹션별 아카이브 페이지:
   - `_pages/security.md`
   - `_pages/development.md`
   - `_pages/life.md`
+- 영어 미러 페이지:
+  - `_pages/en-home.md`
+  - `_pages/en-security.md`
+  - `_pages/en-development.md`
+  - `_pages/en-life.md`
+  - `_pages/en-category-archive.md`
+  - `_pages/en-tag-archive.md`
+  - `_pages/en-search.md`
 - 카테고리/태그/검색 페이지:
   - `_pages/category-archive.md`
   - `_pages/tag-archive.md`
@@ -37,10 +47,19 @@
 - `Development` -> `/development/`
 - `Life` -> `/life/`
 
-상단 메뉴는 `_data/navigation.yml`의 `main`에서 관리한다.
+영어 페이지에서는 `/en/...` 경로를 사용하는 미러 메뉴를 쓴다.
 
-사이드바의 `POSTS` 메뉴도 `_data/navigation.yml`의 `sections`에서 관리한다.
-이 영역은 현재 `전체/보안/개발/일상/카테고리/태그/검색`의 한국어 표기를 유지한다.
+상단 메뉴는 `_data/navigation.yml`의 아래 키에서 관리한다.
+
+- `main`: 기본(KOR) 경로용
+- `main_en`: ENG 경로용
+
+사이드바의 `POSTS` 메뉴도 `_data/navigation.yml`에서 관리한다.
+
+- `sections`: 기본(KOR) 경로용
+- `sections_en`: ENG 경로용
+
+라벨은 현재 `전체/보안/개발/일상/카테고리/태그/검색`의 한국어 표기를 유지하지만, ENG 페이지에서는 링크만 `/en/...`로 바뀐다.
 
 ## 새 글 작성 규칙
 
@@ -61,9 +80,27 @@
 layout: single
 title: "글 제목"
 date: 2026-04-07
+lang: ko
+translation_key: example-post
 section: development
 categories: Dev
 tags: [example]
+---
+```
+
+영문 글을 같이 운영할 때는 같은 `translation_key`를 공유하는 영어 포스트를 별도로 만든다.
+
+```yaml
+---
+layout: single
+title: "Post title"
+date: 2026-04-07
+lang: en
+translation_key: example-post
+section: development
+categories: Dev
+tags: [example]
+permalink: /en/dev/example-post/
 ---
 ```
 
@@ -78,6 +115,13 @@ tags: [example]
 섹션 페이지는 `site.posts | where: "section", ...` 방식으로 필터링한다.
 
 즉, 탭에 글이 보이게 하려면 폴더 이동이 아니라 front matter의 `section`을 맞춰야 한다.
+
+추가로 현재는 언어도 함께 필터링한다.
+
+- KOR 페이지는 `lang: ko` 글만 노출
+- ENG 페이지는 `lang: en` 글만 노출
+
+따라서 새 영어 글을 만들 때 `section`만 맞추고 `lang`을 빼먹으면 ENG 섹션에서 보이지 않는다.
 
 ## tags 필드 주의
 
@@ -105,10 +149,23 @@ sidebar:
 
 만약 새 아카이브/소개 페이지를 만들었는데 왼쪽 `POSTS` 메뉴가 사라지면, 먼저 이 설정이 있는지 확인할 것.
 
+영어 미러 페이지를 만들 때도 동일하게 `sidebar.nav: "sections"`를 유지한다.
+영어용 링크 전환은 `_includes/nav_list` 내부에서 `page.lang == "en"`일 때 `sections_en`을 선택하는 방식으로 처리한다.
+
+## 다국어 구조 메모
+
+- 기본(KOR) 페이지는 `lang: ko`
+- 영어 미러 페이지/포스트는 `lang: en`
+- 언어 매칭은 `translation_key`로 연결
+- 헤더의 `KOR / ENG` 버튼은 `_includes/language-switcher.html`에서 현재 페이지와 같은 `translation_key`를 가진 페이지/포스트를 찾아 이동
+- 포스트 하단 카테고리/태그 링크, breadcrumb, 이전/다음 글, 관련 글도 현재 언어 기준으로 동작하도록 수정된 상태
+- 검색 결과도 `document.documentElement.lang` 기준으로 현재 언어 결과만 보이도록 조정된 상태
+
 ## 스타일 관련 메모
 
 - 다크 스킨에서 필요한 일부 보정은 `_includes/head/custom.html` 안의 inline `<style>`로 처리 중
 - 상단 카운트 탭 UI는 제거된 상태다
+- `KOR / ENG` 언어 버튼 스타일도 `_includes/head/custom.html`에 들어 있다
 
 ## 테마 원본/데모 파일
 
@@ -127,10 +184,20 @@ sidebar:
 ## 현재 알려진 구조적 특징
 
 - 스킨은 `_config.yml`에서 `minimal_mistakes_skin: "dark"` 사용 중
-- 홈은 최신 글 목록 구조
+- 홈은 최신 글 목록 구조이며, KOR/ENG 각각 `10개씩` 홈 전용 페이지네이션을 사용
 - 상단 메뉴는 `Security/Development/Life`
 - 사이드 메뉴는 `전체/보안/개발/일상/카테고리/태그/검색`
-- 기존 실제 글은 현재 `section: security` 상태
+- 현재는 KOR/ENG 이중 구조를 가짐
+- 기존 한국어 글 외에 Rust 개발 글 2개도 `lang: ko`, `section: development`로 존재
+- 영어 번역 글은 보안 2개, 개발 2개가 별도 포스트로 존재
+
+## 홈 페이지네이션 메모
+
+- 기본 `jekyll-paginate`는 제거된 상태다.
+- 이유는 KOR/ENG 언어 분리 홈에서 같은 paginator를 공유하면 한국어 홈에 일부 글만 보이는 문제가 생기기 때문이다.
+- 홈 목록은 `_layouts/home.html`에서 현재 언어의 글만 모두 렌더링한 뒤, `assets/js/home-pagination.js`가 `10개씩` 잘라서 보여준다.
+- 페이지 이동은 `/` 또는 `/en/`에 `?page=2` 같은 쿼리스트링을 붙이는 방식이다.
+- 페이지당 개수는 `_config.yml`의 `home_posts_per_page`에서 관리한다.
 
 ## 테스트 메모
 
@@ -144,12 +211,21 @@ bundle exec jekyll serve
 확인할 주요 URL:
 
 - `/`
+- `/?page=2`
+- `/en/`
+- `/en/?page=2`
 - `/security/`
+- `/en/security/`
 - `/development/`
+- `/en/development/`
 - `/life/`
+- `/en/life/`
 - `/categories/`
+- `/en/categories/`
 - `/tags/`
+- `/en/tags/`
 - `/search/`
+- `/en/search/`
 
 이 Codex 세션에서는 `bundle` 명령이 잡히지 않아 런타임 검증이 항상 가능한 것은 아니다.
 가능한 환경이라면 UI/사이드바/탭 색상까지 직접 확인하는 것이 안전하다.

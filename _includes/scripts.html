@@ -5,6 +5,7 @@
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 {% endif %}
+<script src="{{ '/assets/js/home-pagination.js' | relative_url }}"></script>
 
 {% if site.search == true or page.layout == "search" %}
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
