@@ -25,6 +25,8 @@ var idx = lunr(function () {
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
+    var currentLang = document.documentElement.lang || 'ko';
+    var resultsLabel = currentLang === 'en' ? 'Result(s) found' : '개 결과 발견';
     var query = $(this).val().toLowerCase();
     var result =
       idx.query(function (q) {
@@ -39,9 +41,13 @@ $(document).ready(function() {
         })
       });
     resultdiv.empty();
-    resultdiv.prepend('<p class="results__found">'+result.length+' {{ site.data.ui-text[site.locale].results_found | default: "Result(s) found" }}</p>');
+    var visibleResults = 0;
     for (var item in result) {
       var ref = result[item].ref;
+      if (store[ref].lang && store[ref].lang !== currentLang) {
+        continue;
+      }
+      visibleResults += 1;
       if(store[ref].teaser){
         var searchitem =
           '<div class="list__item">'+
@@ -69,5 +75,6 @@ $(document).ready(function() {
       }
       resultdiv.append(searchitem);
     }
+    resultdiv.prepend('<p class="results__found">'+visibleResults+' '+resultsLabel+'</p>');
   });
 });

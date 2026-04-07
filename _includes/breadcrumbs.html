@@ -5,25 +5,39 @@
     {% assign path_type = nil %}
 {% endcase %}
 
+{% assign ui_locale = site.locale %}
+{% assign home_path = "/" %}
+{% if page.lang == "en" %}
+  {% assign ui_locale = "en" %}
+  {% assign home_path = "/en/" %}
+{% endif %}
+
 {% if page.collection != 'posts' %}
   {% assign path_type = nil %}
-  {% assign crumb_path = '/' %}
+  {% assign crumb_path = home_path %}
 {% else %}
   {% assign crumb_path = site.category_archive.path %}
+  {% if page.lang == "en" %}
+    {% assign crumb_path = "/en/categories/" %}
+  {% endif %}
 {% endif %}
 
 <nav class="breadcrumbs">
   <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     {% assign crumbs = page.url | split: '/' %}
+    {% assign crumb_offset = 1 %}
+    {% if page.lang == "en" %}
+      {% assign crumb_offset = 2 %}
+    {% endif %}
     {% assign i = 1 %}
-    {% for crumb in crumbs offset: 1 %}
+    {% for crumb in crumbs offset: crumb_offset %}
       {% if forloop.first %}
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="{{ '/' | relative_url }}" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</span></a>
+          <a href="{{ home_path | relative_url }}" itemprop="item"><span itemprop="name">{{ site.data.ui-text[ui_locale].breadcrumb_home_label | default: "Home" }}</span></a>
 
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
+        <span class="sep">{{ site.data.ui-text[ui_locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
       {% if forloop.last %}
         <li class="current">{{ page.title }}</li>
@@ -33,7 +47,7 @@
           <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
+        <span class="sep">{{ site.data.ui-text[ui_locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
     {% endfor %}
   </ol>

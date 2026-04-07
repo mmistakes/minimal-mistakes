@@ -42,6 +42,7 @@ var store = [
           {%- endif -%}
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
+        "lang": {{ doc.lang | default: "ko" | jsonify }},
         "url": {{ doc.url | relative_url | jsonify }},
         "teaser": {{ teaser | relative_url | jsonify }}
       }{%- unless forloop.last and l -%},{%- endunless -%}
@@ -78,6 +79,7 @@ var store = [
             replace:"</h6>", " "|
           strip_html | strip_newlines | truncatewords: 50 | jsonify }},
         {%- endif -%}
+      "lang": {{ doc.lang | default: "ko" | jsonify }},
       "url": {{ doc.url | absolute_url | jsonify }}
   }{%- unless forloop.last and l -%},{%- endunless -%}
   {%- endfor -%}

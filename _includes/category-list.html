@@ -5,14 +5,21 @@
     {% assign path_type = nil %}
 {% endcase %}
 
+{% assign ui_locale = site.locale %}
+{% assign category_archive_path = site.category_archive.path %}
+{% if page.lang == "en" %}
+  {% assign ui_locale = "en" %}
+  {% assign category_archive_path = "/en/categories/" %}
+{% endif %}
+
 {% if site.category_archive.path %}
   {% assign categories_sorted = page.categories | sort_natural %}
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[ui_locale].categories_label | default: "Categories:" }} </strong>
     <span itemprop="keywords">
     {% for category_word in categories_sorted %}
-      <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      <a href="{{ category_word | slugify | prepend: path_type | prepend: category_archive_path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
     {% endfor %}
     </span>
   </p>

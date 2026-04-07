@@ -7,6 +7,14 @@ main:
   - title: "Life"
     url: /life/
 
+main_en:
+  - title: "Security"
+    url: /en/security/
+  - title: "Development"
+    url: /en/development/
+  - title: "Life"
+    url: /en/life/
+
 sections:
   - title: "POSTS"
     children:
@@ -24,3 +32,21 @@ sections:
         url: /tags/
       - title: "검색"
         url: /search/
+
+sections_en:
+  - title: "POSTS"
+    children:
+      - title: "All"
+        url: /en/
+      - title: "Security"
+        url: /en/security/
+      - title: "Development"
+        url: /en/development/
+      - title: "Life"
+        url: /en/life/
+      - title: "Categories"
+        url: /en/categories/
+      - title: "Tags"
+        url: /en/tags/
+      - title: "Search"
+        url: /en/search/

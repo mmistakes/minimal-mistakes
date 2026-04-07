@@ -2,21 +2,42 @@
 layout: archive
 ---
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
+{% assign current_lang = page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign ui_locale = site.locale %}
+{% if current_lang == "en" %}
+  {% assign ui_locale = "en" %}
 {% endif %}
 
+{{ content }}
+
+{% assign posts = site.posts | where: "lang", current_lang %}
+{% assign posts_per_page = site.home_posts_per_page | default: 10 %}
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
+
+<h3 id="recent-posts" class="archive__subtitle">{{ site.data.ui-text[ui_locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if posts.size > 0 %}
+<div
+  class="entries-{{ entries_layout }}"
+  data-home-pagination
+  data-posts-per-page="{{ posts_per_page }}"
+  data-prev-label="{{ site.data.ui-text[ui_locale].pagination_previous | default: 'Previous' | escape }}"
+  data-next-label="{{ site.data.ui-text[ui_locale].pagination_next | default: 'Next' | escape }}"
+  data-page-label="{{ site.data.ui-text[ui_locale].page | default: 'Page' | escape }}"
+>
   {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+    <div data-home-post-item>
+      {% include archive-single.html type=entries_layout %}
+    </div>
   {% endfor %}
 </div>
-
-{% include paginator.html %}
+<nav class="pagination" data-home-pagination-nav hidden aria-label="{{ site.data.ui-text[ui_locale].page | default: 'Page' }}"></nav>
+{% else %}
+  <p class="archive__item-excerpt">
+    {% if current_lang == "en" %}
+      No posts yet.
+    {% else %}
+      아직 포스트가 없습니다.
+    {% endif %}
+  </p>
+{% endif %}

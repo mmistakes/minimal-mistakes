@@ -8,7 +8,8 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+{% assign html_lang = page.lang | default: site.locale | slice: 0,2 | default: "en" %}
+<html lang="{{ html_lang }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
@@ -16,7 +17,7 @@
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+    {% include masthead.html %}
 
     <div class="initial-content">
       {{ content }}

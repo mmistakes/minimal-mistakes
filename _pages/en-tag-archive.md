@@ -1,10 +1,10 @@
 ---
-title: "태그"
-layout: tags 
-permalink: /tags/
+title: "Tags"
+layout: tags
+permalink: /en/tags/
 author_profile: true
 sidebar:
   nav: "sections"
-lang: ko
+lang: en
 translation_key: page-tags
 ---

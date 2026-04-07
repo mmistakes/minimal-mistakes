@@ -1,9 +1,17 @@
-{% assign navigation = site.data.navigation[include.nav] %}
+{% assign nav_key = include.nav %}
+{% if include.nav == "sections" and page.lang == "en" %}
+  {% assign nav_key = "sections_en" %}
+{% endif %}
+{% assign navigation = site.data.navigation[nav_key] %}
+{% assign ui_locale = site.locale %}
+{% if page.lang == "en" %}
+  {% assign ui_locale = "en" %}
+{% endif %}
 
 <nav class="nav__list nav__list--{{ include.nav }}">
   {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
   <input id="ac-toc-{{ include.nav }}" name="accordion-toc-{{ include.nav }}" type="checkbox"{% if include.nav == "sections" %} checked{% endif %} />
-  <label for="ac-toc-{{ include.nav }}">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+  <label for="ac-toc-{{ include.nav }}">{{ site.data.ui-text[ui_locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     {% for nav in navigation %}
       <li>

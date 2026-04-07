@@ -2,11 +2,13 @@
 layout: archive
 ---
 
+{% assign current_lang = page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+
 {% if page.section_description %}
   <p class="section-archive__description">{{ page.section_description }}</p>
 {% endif %}
 
-{% assign filtered_posts = site.posts | where: "section", page.section_key %}
+{% assign filtered_posts = site.posts | where: "lang", current_lang | where: "section", page.section_key %}
 {% assign entries_layout = page.entries_layout | default: "list" %}
 
 {% if filtered_posts.size > 0 %}
@@ -16,5 +18,11 @@ layout: archive
     {% endfor %}
   </div>
 {% else %}
-  <p class="section-archive__description">아직 등록된 글이 없습니다.</p>
+  <p class="section-archive__description">
+    {% if current_lang == "en" %}
+      No posts have been added yet.
+    {% else %}
+      아직 등록된 글이 없습니다.
+    {% endif %}
+  </p>
 {% endif %}

@@ -2,42 +2,45 @@
 layout: archive
 ---
 
+{% assign current_lang = page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign ui_locale = site.locale %}
+{% if current_lang == "en" %}
+  {% assign ui_locale = "en" %}
+{% endif %}
+{% assign filtered_posts = site.posts | where: "lang", current_lang %}
+{% assign category_names = filtered_posts | map: "categories" | join: "|" | split: "|" | uniq | sort %}
+
 {{ content }}
 
-{% assign categories_max = 0 %}
-{% for category in site.categories %}
-  {% if category[1].size > categories_max %}
-    {% assign categories_max = category[1].size %}
-  {% endif %}
-{% endfor %}
-
 <ul class="taxonomy__index">
-  {% for i in (1..categories_max) reversed %}
-    {% for category in site.categories %}
-      {% if category[1].size == i %}
+  {% for category_name in category_names %}
+    {% if category_name != "" %}
+      {% assign category_posts = filtered_posts | where_exp: "post", "post.categories contains category_name" %}
+      {% if category_posts.size > 0 %}
         <li>
-          <a href="#{{ category[0] | slugify }}">
-            <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          <a href="#{{ category_name | slugify }}">
+            <strong>{{ category_name }}</strong> <span class="taxonomy__count">{{ category_posts.size }}</span>
           </a>
         </li>
       {% endif %}
-    {% endfor %}
+    {% endif %}
   {% endfor %}
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% for i in (1..categories_max) reversed %}
-  {% for category in site.categories %}
-    {% if category[1].size == i %}
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ category[0] }}</h2>
+{% for category_name in category_names %}
+  {% if category_name != "" %}
+    {% assign category_posts = filtered_posts | where_exp: "post", "post.categories contains category_name" %}
+    {% if category_posts.size > 0 %}
+      <section id="{{ category_name | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ category_name }}</h2>
         <div class="entries-{{ entries_layout }}">
-          {% for post in category.last %}
+          {% for post in category_posts %}
             {% include archive-single.html type=entries_layout %}
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[ui_locale].back_to_top | default: 'Back to top' }} &uarr;</a>
       </section>
     {% endif %}
-  {% endfor %}
+  {% endif %}
 {% endfor %}

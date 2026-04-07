@@ -1,10 +1,10 @@
 ---
-title: "검색"
+title: "Search"
 layout: search
-permalink: /search/
+permalink: /en/search/
 author_profile: true
 sidebar:
   nav: "sections"
-lang: ko
+lang: en
 translation_key: page-search
 ---

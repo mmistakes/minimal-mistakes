@@ -1,10 +1,10 @@
 ---
-title: "카테고리"
-layout: categories 
-permalink: /categories/
+title: "Categories"
+layout: categories
+permalink: /en/categories/
 author_profile: true
 sidebar:
   nav: "sections"
-lang: ko
+lang: en
 translation_key: page-categories
 ---
