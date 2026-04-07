@@ -28,3 +28,15 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# Repository cleanup: upstream/demo files not needed for the deployed blog
+.github/
+.travis.yml
+docs/
+test/
+CHANGELOG.md
+screenshot.png
+screenshot-layouts.png
+banner.js
+Rakefile
+staticman.yml

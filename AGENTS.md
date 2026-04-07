@@ -7,6 +7,7 @@
 - 이 저장소는 순수한 블로그 전용 프로젝트라기보다 `Minimal Mistakes` Jekyll 테마 원본 위에 실제 블로그 콘텐츠를 얹은 구조다.
 - 따라서 루트에 테마 소스가 많이 남아 있다.
 - 실제 블로그 운영에 필요한 파일과, upstream 테마/데모 파일을 구분해서 작업해야 한다.
+- `docs/`, `test/`, `.github/` 같은 upstream 보조 자산은 이제 Git 추적 대상에서 제외되어 있을 수 있다. 로컬에 남아 있어도 배포용 저장소 기준으로는 없는 것으로 생각하고 작업하는 편이 맞다.
 
 ## 실제 운영에 중요한 경로
 
@@ -169,15 +170,19 @@ sidebar:
 
 ## 테마 원본/데모 파일
 
-아래 경로는 현재 블로그 운영보다 upstream 테마 성격이 더 강하다.
+아래 경로와 파일은 현재 블로그 운영보다 upstream 테마 성격이 더 강하다.
 
 - `docs/`
 - `test/`
-- 루트의 `README.md`
-- `.github/` 내부 일부 파일
-- `_layouts`, `_includes`, `_sass` 내부의 많은 테마 기본 파일
+- `.github/`
+- `.travis.yml`
+- `CHANGELOG.md`
+- `screenshot.png`
+- `screenshot-layouts.png`
 
-이 파일들이 존재해도 모두 현재 블로그 커스텀 파일은 아니다.
+이들은 배포용 저장소에서 Git 추적 제외 대상으로 정리된 상태일 수 있다.
+
+반면 아래는 여전히 현재 블로그 동작에 직접 영향을 주는 핵심 소스다.
 
 블로그 운영 작업이라면 먼저 `_posts`, `_pages`, `_data`, `index.html`, `images`, `assets/images`, `_includes/head/custom.html` 쪽을 우선 확인할 것.
 
