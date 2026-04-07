@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Rust 01. \uC124\uCE58\uC640 Hello World \uC2E4\uD589\uD558\uAE30"
+lang: ko
+translation_key: rust-install-hello-world
 date: 2026-04-07 09:00:00 +0900
 section: development
 categories: Rust

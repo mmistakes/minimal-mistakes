@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Rust 02. rust-analyzer\uB85C \uB514\uBC84\uAE45\uD558\uAE30"
+lang: ko
+translation_key: rust-debugging-with-rust-analyzer
 date: 2026-04-07 10:00:00 +0900
 section: development
 categories: Rust
