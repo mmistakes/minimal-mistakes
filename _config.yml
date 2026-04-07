@@ -274,6 +274,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: "sections"
       read_time: true
       comments:  true
       share: true

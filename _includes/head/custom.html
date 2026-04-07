@@ -2,4 +2,44 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+<style>
+  .section-tabs__link {
+    background: #20242d;
+    color: #eaeaea;
+  }
+
+  .section-tabs__link:hover {
+    border-color: #34c3c9;
+    background: #24383d;
+    color: #eaeaea;
+  }
+
+  .section-tabs__count {
+    background: #1f4346;
+  }
+
+  .section-tabs__link:not(.is-active) .section-tabs__count {
+    background: #343943;
+  }
+
+  .nav__list--sections .nav__items .active {
+    border-radius: 4px;
+    background: #1f4346;
+  }
+
+  @media (max-width: 1023px) {
+    .nav__list--sections label {
+      display: none;
+    }
+
+    .nav__list--sections .nav__items {
+      max-height: none;
+      opacity: 1;
+      overflow: visible;
+      margin-top: 1em;
+      transform: none;
+    }
+  }
+</style>
+
 <!-- end custom head snippets -->

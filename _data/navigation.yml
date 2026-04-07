@@ -1,24 +1,26 @@
 # main links
 main:
-  - title: "category"
-    url: /categories/
-  - title: "tag"
-    url: /tags/    
-  - title: "search"
-    url: /search/
+  - title: "보안"
+    url: /security/
+  - title: "개발"
+    url: /development/
+  - title: "일상"
+    url: /life/
 
-docs:
-  - title: "CONTENTS"
+sections:
+  - title: "POSTS"
     children:
-      - title: "category"
+      - title: "전체"
+        url: /
+      - title: "보안"
+        url: /security/
+      - title: "개발"
+        url: /development/
+      - title: "일상"
+        url: /life/
+      - title: "카테고리"
         url: /categories/
-      - title: "tag"
+      - title: "태그"
         url: /tags/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+      - title: "검색"
+        url: /search/

@@ -1,0 +1,12 @@
+- key: security
+  title: "보안"
+  url: /security/
+  description: "악성코드, 취약점, 보안 리서치 글을 모아둡니다."
+- key: development
+  title: "개발"
+  url: /development/
+  description: "개발 기록, 트러블슈팅, 코드 실험을 정리합니다."
+- key: life
+  title: "일상"
+  url: /life/
+  description: "가볍게 남기는 일상 메모와 생각을 정리합니다."
