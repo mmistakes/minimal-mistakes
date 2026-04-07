@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "보안"
+  - title: "Security"
     url: /security/
-  - title: "개발"
+  - title: "Development"
     url: /development/
-  - title: "일상"
+  - title: "Life"
     url: /life/
 
 sections:

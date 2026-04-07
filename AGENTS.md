@@ -13,7 +13,6 @@
 - 전역 설정: `_config.yml`
 - 홈: `index.html`
 - 상단 메뉴/사이드 메뉴 데이터: `_data/navigation.yml`
-- 3개 섹션 정의: `_data/sections.yml`
 - 실제 글: `_posts/*.md`
 - 섹션별 아카이브 페이지:
   - `_pages/security.md`
@@ -23,26 +22,25 @@
   - `_pages/category-archive.md`
   - `_pages/tag-archive.md`
   - `_pages/search.md`
-- 섹션 탭 include: `_includes/section-tabs.html`
 - 섹션 아카이브 레이아웃: `_layouts/section-archive.html`
 - 사이드 메뉴 렌더링: `_includes/nav_list`
 - 커스텀 스타일 import 진입점: `assets/css/main.scss`
-- 섹션 탭/섹션 페이지용 스타일: `_sass/custom/_section-tabs.scss`
 - 추가 스타일 보정: `_includes/head/custom.html`
 - 글 본문 이미지: `images/...`
 - 사이트 로고/프로필 이미지: `assets/images/...`
 
 ## 블로그 분류 구조
 
-현재 블로그는 상단 기준으로 아래 3개 탭을 사용한다.
+현재 블로그는 상단 기준으로 아래 3개 메뉴를 사용한다.
 
-- `보안` -> `/security/`
-- `개발` -> `/development/`
-- `일상` -> `/life/`
+- `Security` -> `/security/`
+- `Development` -> `/development/`
+- `Life` -> `/life/`
 
 상단 메뉴는 `_data/navigation.yml`의 `main`에서 관리한다.
 
 사이드바의 `POSTS` 메뉴도 `_data/navigation.yml`의 `sections`에서 관리한다.
+이 영역은 현재 `전체/보안/개발/일상/카테고리/태그/검색`의 한국어 표기를 유지한다.
 
 ## 새 글 작성 규칙
 
@@ -109,13 +107,8 @@ sidebar:
 
 ## 스타일 관련 메모
 
-- 섹션 탭의 기본 스타일은 `_sass/custom/_section-tabs.scss`
-- 다크 스킨에서 보정이 필요한 일부 스타일은 `_includes/head/custom.html` 안의 inline `<style>`로 보정 중
-
-이 구조는 임시 우회가 섞여 있다.
-
-- 가능하면 이후 정리 시 inline 스타일을 `_sass/custom/...` 쪽으로 다시 흡수해도 된다.
-- 다만 지금은 동작 우선 상태이므로, UI 회귀가 없게 확인하면서 옮겨야 한다.
+- 다크 스킨에서 필요한 일부 보정은 `_includes/head/custom.html` 안의 inline `<style>`로 처리 중
+- 상단 카운트 탭 UI는 제거된 상태다
 
 ## 테마 원본/데모 파일
 
@@ -134,10 +127,10 @@ sidebar:
 ## 현재 알려진 구조적 특징
 
 - 스킨은 `_config.yml`에서 `minimal_mistakes_skin: "dark"` 사용 중
-- 홈은 최신 글 목록 + 섹션 탭 구조
-- 상단 메뉴는 `보안/개발/일상`
+- 홈은 최신 글 목록 구조
+- 상단 메뉴는 `Security/Development/Life`
 - 사이드 메뉴는 `전체/보안/개발/일상/카테고리/태그/검색`
-- 기존 실제 글은 현재 보안 섹션에 있음
+- 기존 실제 글은 현재 `section: security` 상태
 
 ## 테스트 메모
 
