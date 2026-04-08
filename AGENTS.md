@@ -60,7 +60,7 @@
 - `sections`: 기본(KOR) 경로용
 - `sections_en`: ENG 경로용
 
-라벨은 현재 `전체/보안/개발/일상/카테고리/태그/검색`의 한국어 표기를 유지하지만, ENG 페이지에서는 링크만 `/en/...`로 바뀐다.
+KOR 페이지 라벨은 `전체/보안/개발/일상/카테고리/태그/검색`이고, ENG 페이지 라벨은 `All/Security/Development/Life/Categories/Tags/Search`를 쓴다.
 
 ## 새 글 작성 규칙
 
@@ -191,7 +191,8 @@ sidebar:
 - 스킨은 `_config.yml`에서 `minimal_mistakes_skin: "dark"` 사용 중
 - 홈은 최신 글 목록 구조이며, KOR/ENG 각각 `10개씩` 홈 전용 페이지네이션을 사용
 - 상단 메뉴는 `Security/Development/Life`
-- 사이드 메뉴는 `전체/보안/개발/일상/카테고리/태그/검색`
+- KOR 사이드 메뉴는 `전체/보안/개발/일상/카테고리/태그/검색`
+- ENG 사이드 메뉴는 `All/Security/Development/Life/Categories/Tags/Search`
 - 현재는 KOR/ENG 이중 구조를 가짐
 - 기존 한국어 글 외에 Rust 개발 글 2개도 `lang: ko`, `section: development`로 존재
 - 영어 번역 글은 보안 2개, 개발 2개가 별도 포스트로 존재
