@@ -43,9 +43,9 @@ cargo --version
 
 If the installation completed successfully, you should see version information like this. The exact version numbers will vary depending on when you install.
 
-![Check rustc version]({{ '/images/rust-install/rustc.png' | relative_url }})
+![Check rustc version]({{ '/images/rust_01/rustc.png' | relative_url }})
 
-![Check cargo version]({{ '/images/rust-install/cargo.png' | relative_url }})
+![Check cargo version]({{ '/images/rust_01/cargo.png' | relative_url }})
 
 ## Print Hello World in VS Code
 

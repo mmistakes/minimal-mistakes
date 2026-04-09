@@ -34,11 +34,11 @@ If you only compile a single file like `rustc hello.rs`, the `rust-analyzer` and
 
 Install the `rust-analyzer` extension from the VS Code extensions panel.
 
-![rust-analyzer]({{ '/images/rust-debug/rust-analyzer.png' | relative_url }})
+![rust-analyzer]({{ '/images/rust_02/rust-analyzer.png' | relative_url }})
 
 Once the extension is installed and you open a Cargo project in VS Code, a `Run | Debug` button appears above `fn main()`.
 
-![Run Debug]({{ '/images/rust-debug/run_debug_%EB%B2%84%ED%8A%BC.png' | relative_url }})
+![Run Debug]({{ '/images/rust_02/run_debug_%EB%B2%84%ED%8A%BC.png' | relative_url }})
 
 Click `Debug` there to enter debug mode right away.
 
@@ -46,7 +46,7 @@ Click `Debug` there to enter debug mode right away.
 
 To use a full debugger workflow more comfortably, it is a good idea to install the `CodeLLDB` extension as well.
 
-![CodeLLDB install]({{ '/images/rust-debug/codeLLDB%EC%84%A4%EC%B9%98.png' | relative_url }})
+![CodeLLDB install]({{ '/images/rust_02/codeLLDB%EC%84%A4%EC%B9%98.png' | relative_url }})
 
 `CodeLLDB` is an LLDB-based debugger extension commonly used for native languages such as Rust in VS Code.
 
@@ -56,11 +56,11 @@ Open the Run and Debug view from the sidebar, or press `Ctrl+Shift+D` to enter t
 
 If no debug configuration exists yet, you will see a link labeled `create a launch.json file`.
 
-![Create launch.json]({{ '/images/rust-debug/create_a_launch_json.file.png' | relative_url }})
+![Create launch.json]({{ '/images/rust_02/create_a_launch_json.file.png' | relative_url }})
 
 Click that link and select `CodeLLDB` from the debugger list.
 
-![Select CodeLLDB]({{ '/images/rust-debug/launch_json_codeLLDB.png' | relative_url }})
+![Select CodeLLDB]({{ '/images/rust_02/launch_json_codeLLDB.png' | relative_url }})
 
 ## What Is launch.json?
 
@@ -120,7 +120,7 @@ A simple pattern is to place a breakpoint with `F9`, start with `F5`, and then u
 
 You can click the gutter next to a line or press `F9` to place a breakpoint. When a red dot appears, the breakpoint is set correctly.
 
-![Breakpoint]({{ '/images/rust-debug/break_point.png' | relative_url }})
+![Breakpoint]({{ '/images/rust_02/break_point.png' | relative_url }})
 
 After placing a breakpoint, press `Debug` or `F5`. Execution stops on that line, and you can inspect variables and the call flow from there.
 
@@ -128,7 +128,7 @@ After placing a breakpoint, press `Debug` or `F5`. Execution stops on that line,
 
 When execution is paused, you can inspect the current variables in the `VARIABLES` section of the debug panel.
 
-![Variables]({{ '/images/rust-debug/%EB%B3%80%EC%88%98%20%ED%98%84%ED%99%A9.png' | relative_url }})
+![Variables]({{ '/images/rust_02/%EB%B3%80%EC%88%98%20%ED%98%84%ED%99%A9.png' | relative_url }})
 
 For example, values such as `x = 10`, `y = 5`, and `sum` can be inspected directly there. Depending on the breakpoint location, some values may not have been computed yet, and some entries may appear as `optimized away`, but this panel is still one of the fastest ways to understand the current state.
 
@@ -136,7 +136,7 @@ For example, values such as `x = 10`, `y = 5`, and `sum` can be inspected direct
 
 You can inspect the function call flow in the `CALL STACK` section.
 
-![Call Stack]({{ '/images/rust-debug/call_stack.png' | relative_url }})
+![Call Stack]({{ '/images/rust_02/call_stack.png' | relative_url }})
 
 This view shows which function you are currently inside and how execution reached that point. If you use `F11`, you can step into functions and see how the call stack changes as you move deeper into the code.
 
@@ -182,7 +182,7 @@ With this setup, the program receives `abcd` and `efgh` as command-line argument
 
 After saving the configuration and starting the debugger again, you can confirm that the arguments were passed correctly in the output.
 
-![Args output]({{ '/images/rust-debug/%EC%9D%B8%EC%9E%90%EC%A0%84%EB%8B%AC%20%ED%99%95%EC%9D%B8.png' | relative_url }})
+![Args output]({{ '/images/rust_02/%EC%9D%B8%EC%9E%90%EC%A0%84%EB%8B%AC%20%ED%99%95%EC%9D%B8.png' | relative_url }})
 
 As shown in the example, `args[0]` contains the executable path, while `args[1] = abcd` and `args[2] = efgh` confirm that the `args` setting in `launch.json` was applied correctly.
 

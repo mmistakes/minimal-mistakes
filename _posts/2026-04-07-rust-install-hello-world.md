@@ -42,9 +42,9 @@ cargo --version
 
 설치가 정상적으로 끝났다면 아래처럼 버전 정보가 출력된다. 버전 번호는 설치 시점에 따라 달라질 수 있다.
 
-![rustc 버전 확인]({{ '/images/rust-install/rustc.png' | relative_url }})
+![rustc 버전 확인]({{ '/images/rust_01/rustc.png' | relative_url }})
 
-![cargo 버전 확인]({{ '/images/rust-install/cargo.png' | relative_url }})
+![cargo 버전 확인]({{ '/images/rust_01/cargo.png' | relative_url }})
 
 ## VS Code에서 Rust로 Hello World 출력하기
 
