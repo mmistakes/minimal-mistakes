@@ -1,0 +1,23 @@
+security:
+  - key: malware-analysis
+    slug: malware-analysis
+    title_ko: 악성코드 분석
+    title_en: Malware Analysis
+    description_ko: 문서형 악성코드와 드로퍼 등 실제 샘플 분석 글을 모아둔 분류다.
+    description_en: A focused archive for hands-on malware analysis posts, including document-based samples and droppers.
+
+development:
+  - key: ai
+    slug: ai
+    title_ko: AI
+    title_en: AI
+    description_ko: AI 도구 활용, 하네스 엔지니어링, 실무 적용 관점의 글을 모아둔 분류다.
+    description_en: A focused archive for posts about AI tooling, harness engineering, and practical engineering workflows.
+  - key: rust
+    slug: rust
+    title_ko: Rust
+    title_en: Rust
+    description_ko: Rust 학습 기록, 실습, 문법 정리, 디버깅 관련 글을 모아둔 분류다.
+    description_en: A focused archive for Rust learning notes, practice posts, syntax walkthroughs, and debugging guides.
+
+life: []

@@ -1,0 +1,26 @@
+{% assign current_lang = include.current_lang | default: page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign section_topics = site.data.section_topics[page.section_key] %}
+
+{% if section_topics and section_topics.size > 0 %}
+  {% assign all_label = "전체" %}
+  {% assign topics_label = "세부 분류" %}
+  {% assign section_url = "/" | append: page.section_key | append: "/" %}
+  {% if current_lang == "en" %}
+    {% assign all_label = "All" %}
+    {% assign topics_label = "Topics" %}
+    {% assign section_url = "/en/" | append: page.section_key | append: "/" %}
+  {% endif %}
+
+  <div class="section-topics">
+    <span class="section-topics__label">{{ topics_label }}</span>
+    <a class="section-topics__link{% unless page.topic_key %} is-active{% endunless %}" href="{{ section_url | relative_url }}">{{ all_label }}</a>
+    {% for topic in section_topics %}
+      {% assign topic_title = topic.title_ko %}
+      {% if current_lang == "en" %}
+        {% assign topic_title = topic.title_en | default: topic.title_ko %}
+      {% endif %}
+      {% assign topic_url = section_url | append: topic.slug | append: "/" %}
+      <a class="section-topics__link{% if page.topic_key == topic.key %} is-active{% endif %}" href="{{ topic_url | relative_url }}">{{ topic_title }}</a>
+    {% endfor %}
+  </div>
+{% endif %}

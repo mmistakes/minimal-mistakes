@@ -5,6 +5,7 @@ lang: en
 translation_key: rust-debugging-with-rust-analyzer
 date: 2026-04-08 10:00:00 +0900
 section: development
+topic_key: rust
 categories: Rust
 tags: [rust, rust-analyzer, codelldb, vscode, debug, cargo]
 author_profile: false

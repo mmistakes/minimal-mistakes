@@ -3,12 +3,18 @@ layout: archive
 ---
 
 {% assign current_lang = page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+{% assign archive_description = page.topic_description | default: page.section_description %}
 
-{% if page.section_description %}
-  <p class="section-archive__description">{{ page.section_description }}</p>
+{% if archive_description %}
+  <p class="section-archive__description">{{ archive_description }}</p>
 {% endif %}
 
+{% include section-topics.html current_lang=current_lang %}
+
 {% assign filtered_posts = site.posts | where: "lang", current_lang | where: "section", page.section_key %}
+{% if page.topic_key %}
+  {% assign filtered_posts = filtered_posts | where: "topic_key", page.topic_key %}
+{% endif %}
 {% assign entries_layout = page.entries_layout | default: "list" %}
 
 {% if filtered_posts.size > 0 %}

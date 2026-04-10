@@ -5,6 +5,7 @@ lang: ko
 translation_key: rust-variables-types-control-flow-functions
 date: 2026-04-09 09:00:00 +0900
 section: development
+topic_key: rust
 categories: Rust
 tags: [rust, variables, types, control-flow, functions, cargo]
 author_profile: false

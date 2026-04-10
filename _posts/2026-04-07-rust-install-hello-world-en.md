@@ -5,6 +5,7 @@ lang: en
 translation_key: rust-install-hello-world
 date: 2026-04-07 09:00:00 +0900
 section: development
+topic_key: rust
 categories: Rust
 tags: [rust, rustup, cargo, rustc, vscode, windows]
 author_profile: false
