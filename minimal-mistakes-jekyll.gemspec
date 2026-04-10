@@ -11,7 +11,20 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files                   = `git ls-files -z`.split("\x0").select do |f|
+  tracked_files = begin
+    `git ls-files -z`.split("\x0")
+  rescue StandardError
+    []
+  end
+
+  if tracked_files.empty?
+    tracked_files = Dir.glob("{assets,_data,_includes,_layouts,_sass}/**/*", File::FNM_DOTMATCH)
+      .select { |path| File.file?(path) } +
+      Dir.glob("{LICENSE,README,CHANGELOG}*", File::FNM_DOTMATCH)
+        .select { |path| File.file?(path) }
+  end
+
+  spec.files                   = tracked_files.select do |f|
     f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
 
