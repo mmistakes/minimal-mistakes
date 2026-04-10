@@ -15,6 +15,7 @@
 - 홈: `index.html`
 - 홈 레이아웃: `_layouts/home.html`
 - 상단 메뉴/사이드 메뉴 데이터: `_data/navigation.yml`
+- 섹션별 세부 분류 데이터: `_data/section_topics.yml`
 - 언어 전환 include: `_includes/language-switcher.html`
 - 실제 글: `_posts/*.md`
 - 섹션별 아카이브 페이지:
@@ -34,6 +35,7 @@
   - `_pages/tag-archive.md`
   - `_pages/search.md`
 - 섹션 아카이브 레이아웃: `_layouts/section-archive.html`
+- 섹션 세부 분류 UI include: `_includes/section-topics.html`
 - 사이드 메뉴 렌더링: `_includes/nav_list`
 - 커스텀 스타일 import 진입점: `assets/css/main.scss`
 - 추가 스타일 보정: `_includes/head/custom.html`
@@ -84,6 +86,7 @@ date: 2026-04-07
 lang: ko
 translation_key: example-post
 section: development
+topic_key: rust
 categories: Dev
 tags: [example]
 ---
@@ -99,6 +102,7 @@ date: 2026-04-07
 lang: en
 translation_key: example-post
 section: development
+topic_key: rust
 categories: Dev
 tags: [example]
 permalink: /en/dev/example-post/
@@ -123,6 +127,14 @@ permalink: /en/dev/example-post/
 - ENG 페이지는 `lang: en` 글만 노출
 
 따라서 새 영어 글을 만들 때 `section`만 맞추고 `lang`을 빼먹으면 ENG 섹션에서 보이지 않는다.
+
+## topic_key 필드 규칙
+
+- `topic_key`는 같은 `section` 안에서 글을 더 세분화할 때 쓴다.
+- 예: `security > malware-analysis`, `development > rust`
+- 상위 섹션 페이지는 여전히 `section` 기준으로 전체 글을 보여준다.
+- 세부 분류 페이지는 `_layouts/section-archive.html`에서 `section + topic_key` 기준으로 다시 좁혀서 보여준다.
+- 세부 분류 목록과 slug는 `_data/section_topics.yml`에서 관리한다.
 
 ## tags 필드 주의
 
