@@ -148,6 +148,10 @@
 
 <link rel="canonical" href="{{ canonical_url }}">
 
+{% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+{% endif %}
+
 {% if page.translation_key %}
   {% assign matched_pages = site.pages | where: "translation_key", page.translation_key %}
   {% assign matched_posts = site.posts | where: "translation_key", page.translation_key %}

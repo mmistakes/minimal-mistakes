@@ -7,4 +7,5 @@ sidebar:
   nav: "sections"
 lang: en
 translation_key: page-search
+robots: "noindex, follow"
 ---

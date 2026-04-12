@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Harness Engineering 10. From Document-Centered Operations to an Observable Harness: A Practical Transition Roadmap"
+title: "Harness Engineering 10. From Documents to an Observable Harness"
 lang: en
 translation_key: from-document-centered-ops-to-observable-harness
 date: 2026-04-19 00:00:00 +0900
