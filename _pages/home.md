@@ -5,15 +5,26 @@ title: Home
 ---
 
 <style>
+  /* --- FIX FOR THE "WHITE BOX" EFFECT --- */
+  /* This targets the theme's container to ensure the background is seamless */
+  .layout--splash .page__content {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
   /* --- GENERAL STYLES --- */
   .intro-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 1rem 2rem 1rem; /* Added bottom padding back for spacing */
+    padding: 4rem 1rem 3rem 1rem;
     max-width: 900px;
     margin: 0 auto;
+    /* Forces removal of any theme-applied card styling */
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
   }
   
   .announcement-box {
@@ -28,11 +39,14 @@ title: Home
   }
   
   .tagline {
-    font-size: 3rem;
+    font-size: 4rem; /* Increased size for a cleaner look */
     font-weight: 800;
     color: #111;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.1;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
   }
   
   .tagline .highlight-train {
@@ -42,47 +56,48 @@ title: Home
   }
   
   .intro-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #444;
     margin-top: 1.5rem;
-    max-width: 700px;
+    max-width: 750px;
+    line-height: 1.6;
   }
 
-  /* --- REFACTORED WRAPPED SECTION (Smaller & Side-by-Side) --- */
+  /* --- REFACTORED WRAPPED SECTION (Seamless) --- */
   .wrapped-section {
-    background-color: #f9fafb;
-    padding: 3rem 1rem;
-    margin-bottom: 3rem;
-    border-top: 1px solid #e5e7eb;
-    border-bottom: 1px solid #e5e7eb;
+    background-color: transparent; 
+    padding: 5rem 1rem;
+    margin-bottom: 2rem;
+    border: none; 
   }
 
   .wrapped-container {
-    max-width: 900px; /* Fits perfectly with your intro width */
+    max-width: 900px;
     margin: 0 auto;
-    display: flex; /* This makes it side-by-side */
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
-    text-align: left; /* Resets the center alignment */
+    gap: 4rem;
+    text-align: left;
   }
 
   .wrapped-content {
-    flex: 1; /* Takes up remaining space */
+    flex: 1;
   }
 
   .wrapped-content h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 800;
     color: #111;
     margin-bottom: 1rem;
     margin-top: 0;
+    letter-spacing: -0.02em;
   }
 
   .wrapped-content p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
+    font-size: 1.15rem;
+    color: #444;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
   }
 
@@ -90,29 +105,23 @@ title: Home
     color: #007bff;
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.05rem;
     display: inline-flex;
     align-items: center;
   }
 
-  .wrapped-link:hover {
-    text-decoration: underline;
-  }
+  .wrapped-link:hover { text-decoration: underline; }
 
-  /* The Image Container - Now constrained to a smaller size */
   .wrapped-image-card {
     flex-shrink: 0;
-    width: 320px; /* Fixed width prevents it from getting too big */
-    border-radius: 12px;
+    width: 350px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
   }
 
-  .wrapped-image-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  }
+  .wrapped-image-card:hover { transform: translateY(-5px); }
 
   .wrapped-image-card img {
     width: 100%;
@@ -121,31 +130,30 @@ title: Home
   }
 
   /* --- EXISTING PREVIEW SECTIONS --- */
-.preview-section {
-    padding: 3rem 1rem;
-    max-width: 1400px; /* Changed from 1200px to 1400px to fit 4 cards */
+  .preview-section {
+    padding: 4rem 1rem;
+    max-width: 1400px;
     margin: 0 auto;
     text-align: center;
   }
 
   .preview-section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 2rem;
   }
 
-.grid-container {
+  .grid-container {
     display: grid;
-    /* Changed 280px to 250px so 4 cards fit easily */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 1rem;
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .button-link {
     display: inline-block;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 2.2rem;
     background-color: #007bff;
     color: white;
     font-weight: 600;
@@ -161,7 +169,7 @@ title: Home
   /* --- CONTACT SECTION --- */
   .contact-section {
     background-color: #f8fafc;
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
     border-top: 1px solid #eaeaea;
   }
   .contact-container {
@@ -171,7 +179,7 @@ title: Home
     flex-direction: column;
     align-items: center;
   }
-  .contact-header { text-align: center; margin-bottom: 2rem; }
+  .contact-header { text-align: center; margin-bottom: 3rem; }
   .contact-details {
     display: flex;
     flex-wrap: wrap;
@@ -181,9 +189,9 @@ title: Home
   }
   .contact-card {
     background-color: white;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,35 +199,17 @@ title: Home
     min-width: 250px;
     flex: 1;
   }
-  .contact-icon { font-size: 2rem; color: #007bff; margin-bottom: 1rem; }
-  .join-button {
-    margin-top: 2rem;
-    padding: 1rem 2.5rem;
-    background-color: #007bff;
-    color: white;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-  }
+  .contact-icon { font-size: 2.5rem; color: #007bff; margin-bottom: 1rem; }
 
   /* --- RESPONSIVE --- */
   @media (max-width: 768px) {
-    .tagline { font-size: 2.2rem; }
-    
-    /* Wrap the flexbox on mobile so image stacks */
+    .tagline { font-size: 2.8rem; }
     .wrapped-container {
-      flex-direction: column-reverse; /* Puts image above or below? Usually below text on mobile looks good, or above. Let's do column so Image is bottom or Text is top. */
       flex-direction: column;
       text-align: center;
-      gap: 2rem;
+      gap: 2.5rem;
     }
-    
-    .wrapped-image-card {
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .wrapped-content { padding-right: 0; }
+    .wrapped-image-card { width: 100%; max-width: 400px; }
   }
 </style>
 
@@ -309,3 +299,6 @@ title: Home
     <a href="#" class="join-button">Contact Us</a>
   </div>
 </section>
+
+
+
