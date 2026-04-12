@@ -491,10 +491,23 @@
     </div>
 
     <div class="sub-section">
+      <h4 data-i18n="brain.bench">GraphRAG Quality Benchmark <span style="color:var(--text-dim);font-size:0.7rem;font-weight:400">(50 questions, 2026-04-13)</span></h4>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:0.6rem;margin-bottom:1rem;">
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--green)">93%</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.bench.recall">Entity Recall</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--green)">93%</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.bench.ground">Grounding Rate</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--teal)">13.8s</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.bench.lat">Avg Latency</div></div>
+        <div style="background:var(--surface2);border-radius:6px;padding:0.8rem;text-align:center;"><div style="font-size:1.3rem;font-weight:800;color:var(--text-bright)">72%</div><div style="font-size:0.68rem;color:var(--text-dim)" data-i18n="brain.bench.hard">Hard Good Rate</div></div>
+      </div>
+      <p style="font-size:0.82rem;line-height:1.7;color:var(--text-dim);" data-i18n="brain.bench.note">Recall <span style="color:var(--green)">83% &rarr; 93%</span>, Latency <span style="color:var(--teal)">20.7s &rarr; 13.8s</span>. Grounding Rate is a hallucination-resistant metric: the fraction of entities cited in the answer that actually exist in the graph.</p>
+    </div>
+
+    <div class="sub-section">
       <h4>Built On</h4>
       <div class="borrow-grid">
         <div class="borrow-card"><div class="origin">LightRAG</div><div class="point">Dual retrieval (Local + Global)</div><div class="improve">&rarr; Added Temporal axis, Claim scoring, ear integration</div></div>
         <div class="borrow-card"><div class="origin">GraphRAG (MS)</div><div class="point">Community-based summarization</div><div class="improve">&rarr; Leiden 3-level hierarchy (22 communities)</div></div>
+        <div class="borrow-card"><div class="origin">Karpathy (simplicity)</div><div class="point" data-i18n="brain.built.karp">"Prompt tokens dominate LLM latency"</div><div class="improve" data-i18n="brain.built.karp.imp">&rarr; 3KB context cap: one-line fix, 33% latency reduction</div></div>
+        <div class="borrow-card"><div class="origin">Vannevar Bush (Memex)</div><div class="point" data-i18n="brain.built.bush">Association belongs in the graph</div><div class="improve" data-i18n="brain.built.bush.imp">&rarr; Static concept map + Neo4j co-occurrence dynamic expansion</div></div>
       </div>
     </div>
 
@@ -566,8 +579,8 @@
     <div class="compact-card reveal">
       <h3 style="color:var(--teal)">comad-ear</h3>
       <p class="one-liner" data-i18n="ear.desc">Monitors feeds and auto-archives relevant content</p>
-      <div class="detail" data-i18n="ear.detail">3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration</div>
-      <div class="highlight" data-i18n="ear.highlight">Configurable RSS sources via YAML preset</div>
+      <div class="detail" data-i18n="ear.detail">3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration<br>Daily HTML digest + must-read articles auto-fed into /search</div>
+      <div class="highlight" data-i18n="ear.highlight">Self-evolution loop closed: ear must-read → /search → adoption</div>
     </div>
     <div class="compact-card reveal">
       <h3 style="color:var(--pink)">comad-photo</h3>
@@ -827,6 +840,16 @@ const i18n = {
     'brain.claims': 'Claim Nodes',
     'brain.keypaper': 'Key papers indexed:',
     'brain.sources28': '28 sources (default AI/ML preset):',
+    'brain.bench': 'GraphRAG Quality Benchmark',
+    'brain.bench.recall': 'Entity Recall',
+    'brain.bench.ground': 'Grounding Rate',
+    'brain.bench.lat': 'Avg Latency',
+    'brain.bench.hard': 'Hard Good Rate',
+    'brain.bench.note': 'Recall 83% → 93%, Latency 20.7s → 13.8s. Grounding Rate is a hallucination-resistant metric: the fraction of entities cited in the answer that actually exist in the graph.',
+    'brain.built.karp': '"Prompt tokens dominate LLM latency"',
+    'brain.built.karp.imp': '→ 3KB context cap: one-line fix, 33% latency reduction',
+    'brain.built.bush': 'Association belongs in the graph',
+    'brain.built.bush.imp': '→ Static concept map + Neo4j co-occurrence dynamic expansion',
     'brain.demo': 'Live Demo',
     'brain.demoq': '"What is MCP and which companies are using it in production?"',
     'eye.badge': 'Prediction Simulation Engine',
@@ -851,8 +874,8 @@ const i18n = {
     'eco.title': 'Supporting agents',
     'eco.desc': 'Each focused on its role, all connected to the whole system.',
     'ear.desc': 'Monitors feeds and auto-archives relevant content',
-    'ear.detail': '3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration',
-    'ear.highlight': 'Configurable RSS sources via YAML preset',
+    'ear.detail': '3-tier relevance classification (must-read 13% / recommended 65% / reference 22%)<br>YAML frontmatter, automatic brain ingester integration<br>Daily HTML digest + must-read articles auto-fed into /search',
+    'ear.highlight': 'Self-evolution loop closed: ear must-read → /search → adoption',
     'photo.desc': 'Image analysis &rarr; correction plan &rarr; Photoshop MCP non-destructive editing',
     'photo.detail': '3 stages: PIL &rarr; Camera Raw &rarr; Advanced<br>MAE > 20 guardrail. Portrait avg score: 92.2.',
     'sleep.desc': 'REM-style automatic memory scan, dedup, and consolidation',
@@ -937,6 +960,16 @@ const i18n = {
     'brain.claims': 'Claim \ub178\ub4dc',
     'brain.keypaper': '\uc8fc\uc694 \ub17c\ubb38 \uc0c9\uc778:',
     'brain.sources28': '28\uac1c \uc218\uc9d1 \uc18c\uc2a4 (\uae30\ubcf8 AI/ML \ud504\ub9ac\uc14b):',
+    'brain.bench': 'GraphRAG 품질 벤치마크',
+    'brain.bench.recall': 'Entity Recall',
+    'brain.bench.ground': 'Grounding Rate',
+    'brain.bench.lat': 'Avg Latency',
+    'brain.bench.hard': 'Hard Good Rate',
+    'brain.bench.note': '이전 대비 Recall 83% → 93%, Latency 20.7s → 13.8s. Grounding Rate는 답변에 인용된 엔티티가 실제 그래프에 존재하는 비율 — hallucination-resistant 메트릭(신규).',
+    'brain.built.karp': '"프롬프트 토큰이 LLM 지연의 주원인"',
+    'brain.built.karp.imp': '→ 3KB context cap 한 줄 수정으로 레이턴시 33% 감소',
+    'brain.built.bush': '연상(association)은 그래프에 살아야 한다',
+    'brain.built.bush.imp': '→ 정적 concept 매핑 + Neo4j 공동등장 기반 동적 확장',
     'brain.demo': '\uc2e4\uc81c \uc2dc\uc5f0',
     'brain.demoq': '"MCP\ub780 \ubb34\uc5c7\uc774\uace0 \uc5b4\ub5a4 \uae30\uc5c5\ub4e4\uc774 \ud504\ub85c\ub355\uc158\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\ub098?"',
     'eye.badge': '\uc608\uce21 \uc2dc\ubbac\ub808\uc774\uc158 \uc5d4\uc9c4',
@@ -961,8 +994,8 @@ const i18n = {
     'eco.title': '\uc9c0\uc6d0 \uc5d0\uc774\uc804\ud2b8\ub4e4',
     'eco.desc': '\uac01\uc790\uc758 \uc5ed\ud560\uc5d0 \ucda9\uc2e4\ud558\uba74\uc11c \uc804\uccb4 \uc2dc\uc2a4\ud15c\uacfc \uc5f0\uacb0\ub429\ub2c8\ub2e4.',
     'ear.desc': 'Discord\uc5d0\uc11c \uae30\uc220 \ub274\uc2a4\ub97c \uc790\ub3d9 \uac10\uc9c0\ud558\uc5ec \uc544\uce74\uc774\ube0c',
-    'ear.detail': '\uad00\ub828\uc131 3\ub2e8\uacc4 \ubd84\ub958 (\ud544\ub3c5 13% / \ucd94\ucc9c 65% / \ucc38\uace0 22%)<br>YAML frontmatter, brain \uc778\uc81c\uc2a4\ud130 \uc790\ub3d9 \uc5f0\ub3d9',
-    'ear.highlight': 'YAML \ud504\ub9ac\uc14b\uc73c\ub85c RSS \uc18c\uc2a4 \uc124\uc815 \uac00\ub2a5',
+    'ear.detail': '\uad00\ub828\uc131 3\ub2e8\uacc4 \ubd84\ub958 (\ud544\ub3c5 13% / \ucd94\ucc9c 65% / \ucc38\uace0 22%)<br>YAML frontmatter, brain \uc778\uc81c\uc2a4\ud130 \uc790\ub3d9 \uc5f0\ub3d9<br>\uc77c\uc77c digest HTML \uc790\ub3d9 \uc0dd\uc131 + \ud544\ub3c5 \uae30\uc0ac \u2192 /search \uc790\ub3d9 \ud53c\ub4dc',
+    'ear.highlight': '\uc790\uac00\uc9c4\ud654 \ub8e8\ud504 \uc644\uc131: ear \ud544\ub3c5 \u2192 /search \u2192 adoption',
     'photo.desc': '\uc0ac\uc9c4 \ubd84\uc11d &rarr; \ubcf4\uc815\uc548 &rarr; Photoshop MCP \ube44\ud30c\uad34 \ubcf4\uc815',
     'photo.detail': '3\ub2e8\uacc4: PIL &rarr; Camera Raw &rarr; \uace0\uae09<br>MAE > 20 \uac00\ub4dc\ub808\uc77c. \uc778\ubb3c 15\uc7a5 \ud3c9\uade0 92.2\uc810.',
     'sleep.desc': 'REM \uc218\uba74\ucc98\ub7fc, \uba54\ubaa8\ub9ac\ub97c \uc790\ub3d9 \uc2a4\uce94/\uc911\ubcf5 \uac10\uc9c0/\ud1b5\ud569',
