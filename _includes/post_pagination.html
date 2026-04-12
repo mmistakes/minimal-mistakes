@@ -10,12 +10,15 @@
     {% assign current_index = forloop.index0 %}
   {% endif %}
 {% endfor %}
-{% assign previous_index = current_index | minus: 1 %}
-{% assign next_index = current_index | plus: 1 %}
-{% if previous_index >= 0 %}
-  {% assign previous_post = language_posts[previous_index] %}
+{% assign newer_index = current_index | minus: 1 %}
+{% assign older_index = current_index | plus: 1 %}
+{% assign last_index = language_posts.size | minus: 1 %}
+{% if older_index <= last_index %}
+  {% assign previous_post = language_posts[older_index] %}
 {% endif %}
-{% assign next_post = language_posts[next_index] %}
+{% if newer_index >= 0 %}
+  {% assign next_post = language_posts[newer_index] %}
+{% endif %}
 
 {% if previous_post or next_post %}
   <nav class="pagination">
