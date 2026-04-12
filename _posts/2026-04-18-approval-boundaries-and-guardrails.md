@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 09. approval과 guardrail이 비어 있으면 agent 시스템은 불안정하다"
+title: "하네스 엔지니어링 09. approval과 guardrail이 비어 있으면 agent 시스템은 불안정하다"
 lang: ko
 translation_key: approval-boundaries-and-guardrails
 date: 2026-04-18 00:00:00 +0900

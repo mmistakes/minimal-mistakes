@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 06. Multi-Agent Is Not the Default"
+title: "Harness Engineering 06. Multi-Agent Is Not the Default"
 lang: en
 translation_key: multi-agent-is-not-the-default
 date: 2026-04-15 00:00:00 +0900

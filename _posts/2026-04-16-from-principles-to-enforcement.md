@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 07. 원칙에서 enforcement로: 문장을 시스템 규칙으로 올리는 법"
+title: "하네스 엔지니어링 07. 원칙에서 enforcement로: 문장을 시스템 규칙으로 올리는 법"
 lang: ko
 translation_key: from-principles-to-enforcement
 date: 2026-04-16 00:00:00 +0900

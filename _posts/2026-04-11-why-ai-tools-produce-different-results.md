@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 01. 왜 AI 코딩 툴을 바꿀 때마다 결과가 달라질까"
+title: "하네스 엔지니어링 01. 왜 AI 코딩 툴을 바꿀 때마다 결과가 달라질까"
 lang: ko
 translation_key: why-ai-tools-produce-different-results
 date: 2026-04-11 00:00:00 +0900

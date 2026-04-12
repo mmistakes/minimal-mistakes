@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 08. Results Alone Are Not Enough; You Need Trace"
+title: "Harness Engineering 08. Results Alone Are Not Enough; You Need Trace"
 lang: en
 translation_key: why-trace-matters-more-than-results
 date: 2026-04-17 00:00:00 +0900

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 03. 프로젝트 지침 파일은 어디까지 써야 할까"
+title: "하네스 엔지니어링 03. 프로젝트 지침 파일은 어디까지 써야 할까"
 lang: ko
 translation_key: project-instruction-files-should-not-be-control-planes
 date: 2026-04-12 00:00:00 +0900

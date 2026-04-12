@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 02. What Is Harness Engineering?"
+title: "Harness Engineering 02. What Is Harness Engineering?"
 lang: en
 translation_key: what-is-harness-engineering
 date: 2026-04-11 00:10:00 +0900

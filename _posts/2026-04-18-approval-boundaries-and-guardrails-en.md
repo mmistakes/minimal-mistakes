@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 09. Agent Systems Become Unstable When Approval Boundaries and Guardrails Are Missing"
+title: "Harness Engineering 09. Agent Systems Become Unstable When Approval Boundaries and Guardrails Are Missing"
 lang: en
 translation_key: approval-boundaries-and-guardrails
 date: 2026-04-18 00:00:00 +0900

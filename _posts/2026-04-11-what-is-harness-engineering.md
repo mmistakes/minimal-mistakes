@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 02. 하네스 엔지니어링이란 무엇인가"
+title: "하네스 엔지니어링 02. 하네스 엔지니어링이란 무엇인가"
 lang: ko
 translation_key: what-is-harness-engineering
 date: 2026-04-11 00:10:00 +0900

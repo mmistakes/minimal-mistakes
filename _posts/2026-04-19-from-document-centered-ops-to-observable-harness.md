@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 10. 문서 중심 운영에서 관측 가능한 하네스로: 실전 전환 로드맵"
+title: "하네스 엔지니어링 10. 문서 중심 운영에서 관측 가능한 하네스로: 실전 전환 로드맵"
 lang: ko
 translation_key: from-document-centered-ops-to-observable-harness
 date: 2026-04-19 00:00:00 +0900

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 04. prose에서 schema로: handoff를 메모가 아니라 계약으로 바꾸는 법"
+title: "하네스 엔지니어링 04. prose에서 schema로: handoff를 메모가 아니라 계약으로 바꾸는 법"
 lang: ko
 translation_key: from-prose-to-schema-turning-handoff-into-a-contract
 date: 2026-04-13 00:00:00 +0900

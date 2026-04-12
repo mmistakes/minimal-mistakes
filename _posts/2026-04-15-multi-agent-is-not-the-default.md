@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 06. 멀티에이전트는 기본값이 아니다"
+title: "하네스 엔지니어링 06. 멀티에이전트는 기본값이 아니다"
 lang: ko
 translation_key: multi-agent-is-not-the-default
 date: 2026-04-15 00:00:00 +0900

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 01. Why Do Results Change When You Switch AI Coding Tools?"
+title: "Harness Engineering 01. Why Do Results Change When You Switch AI Coding Tools?"
 lang: en
 translation_key: why-ai-tools-produce-different-results
 date: 2026-04-11 00:00:00 +0900

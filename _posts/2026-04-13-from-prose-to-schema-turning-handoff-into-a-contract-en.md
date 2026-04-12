@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 04. From Prose to Schema: Turning Handoff into a Contract"
+title: "Harness Engineering 04. From Prose to Schema: Turning Handoff into a Contract"
 lang: en
 translation_key: from-prose-to-schema-turning-handoff-into-a-contract
 date: 2026-04-13 00:00:00 +0900

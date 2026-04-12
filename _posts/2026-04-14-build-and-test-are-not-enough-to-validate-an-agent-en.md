@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 05. Build and Test Are Not Enough to Validate an Agent"
+title: "Harness Engineering 05. Build and Test Are Not Enough to Validate an Agent"
 lang: en
 translation_key: build-and-test-are-not-enough-to-validate-an-agent
 date: 2026-04-14 00:00:00 +0900

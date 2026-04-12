@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 08. 결과만으로는 부족하고 trace가 필요하다"
+title: "하네스 엔지니어링 08. 결과만으로는 부족하고 trace가 필요하다"
 lang: ko
 translation_key: why-trace-matters-more-than-results
 date: 2026-04-17 00:00:00 +0900

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 03. How Far Should a Project Instruction File Go?"
+title: "Harness Engineering 03. How Far Should a Project Instruction File Go?"
 lang: en
 translation_key: project-instruction-files-should-not-be-control-planes
 date: 2026-04-12 00:00:00 +0900

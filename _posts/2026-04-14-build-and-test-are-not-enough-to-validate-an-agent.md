@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "AI 05. build와 test만으로는 agent를 검증할 수 없다"
+title: "하네스 엔지니어링 05. build와 test만으로는 agent를 검증할 수 없다"
 lang: ko
 translation_key: build-and-test-are-not-enough-to-validate-an-agent
 date: 2026-04-14 00:00:00 +0900
