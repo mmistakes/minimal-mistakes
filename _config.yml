@@ -172,6 +172,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - AGENTS.md
 keep_files:
   - .git
   - .svn
