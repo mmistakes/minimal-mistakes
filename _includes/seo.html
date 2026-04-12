@@ -3,6 +3,25 @@
   {%- assign seo_url = site.url | append: site.baseurl -%}
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
+{%- assign current_lang = page.lang | default: site.locale | slice: 0, 2 | default: "ko" -%}
+{%- assign page_locale = site.locale | replace: "-", "_" | default: "en_US" -%}
+{%- if current_lang == "en" -%}
+  {%- assign page_locale = "en_US" -%}
+{%- elsif current_lang == "ko" -%}
+  {%- assign page_locale = "ko_KR" -%}
+{%- endif -%}
+
+{%- assign seo_description_entry = nil -%}
+{%- assign mapped_description = nil -%}
+{%- if page.translation_key -%}
+  {%- assign seo_description_entry = site.data.seo_descriptions[page.translation_key] -%}
+  {%- if seo_description_entry -%}
+    {%- assign mapped_description = seo_description_entry[current_lang] -%}
+    {%- if mapped_description == nil -%}
+      {%- assign mapped_description = seo_description_entry.ko | default: seo_description_entry.en -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
 
 {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
@@ -20,9 +39,9 @@
   {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% endif %}
 
-{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+{%- assign seo_description = page.description | default: mapped_description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
-  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
+  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip | truncate: 170 -%}
 {%- endif -%}
 
 {%- assign author = page.author | default: page.authors[0] | default: site.author -%}
@@ -32,14 +51,29 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url -%}
-{%- assign page_large_image = page_large_image | escape -%}
+{%- assign page_large_image = nil -%}
+{%- if page.header.og_image -%}
+  {%- assign page_large_image = page.header.og_image | absolute_url | escape -%}
+{%- elsif page.header.overlay_image -%}
+  {%- assign page_large_image = page.header.overlay_image | absolute_url | escape -%}
+{%- elsif page.header.image -%}
+  {%- assign page_large_image = page.header.image | absolute_url | escape -%}
+{%- endif -%}
 
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url -%}
-{%- assign page_teaser_image = page_teaser_image | escape -%}
+{%- assign page_teaser_image = nil -%}
+{%- assign page_teaser_source = page.header.teaser | default: site.og_image | default: site.logo -%}
+{%- if page_teaser_source -%}
+  {%- assign page_teaser_image = page_teaser_source | absolute_url | escape -%}
+{%- endif -%}
 
-{%- assign site_og_image = site.og_image | absolute_url -%}
-{%- assign site_og_image = site_og_image | escape -%}
+{%- assign site_og_image = site.og_image | default: site.logo -%}
+{%- if site.og_image -%}
+  {%- assign site_og_image = site.og_image | absolute_url | escape -%}
+{%- elsif site.logo -%}
+  {%- assign site_og_image = site.logo | absolute_url | escape -%}
+{%- endif -%}
+
+{%- assign page_primary_image = page_large_image | default: page_teaser_image | default: site_og_image -%}
 
 {%- if page.date -%}
   {%- assign og_type = "article" -%}
@@ -58,7 +92,7 @@
 {% endif %}
 
 <meta property="og:type" content="{{ og_type }}">
-<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
+<meta property="og:locale" content="{{ page_locale }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 <meta property="og:url" content="{{ canonical_url }}">
@@ -114,6 +148,29 @@
 
 <link rel="canonical" href="{{ canonical_url }}">
 
+{% if page.translation_key %}
+  {% assign matched_pages = site.pages | where: "translation_key", page.translation_key %}
+  {% assign matched_posts = site.posts | where: "translation_key", page.translation_key %}
+  {% assign default_variant = matched_pages | where: "lang", "ko" | first %}
+  {% if default_variant == nil %}
+    {% assign default_variant = matched_posts | where: "lang", "ko" | first %}
+  {% endif %}
+
+  {% for localized_page in matched_pages %}
+    {% if localized_page.lang and localized_page.url %}
+      <link rel="alternate" hreflang="{% if localized_page.lang == 'ko' %}ko{% elsif localized_page.lang == 'en' %}en{% else %}{{ localized_page.lang }}{% endif %}" href="{{ localized_page.url | replace: 'index.html', '' | absolute_url }}">
+    {% endif %}
+  {% endfor %}
+  {% for localized_post in matched_posts %}
+    {% if localized_post.lang and localized_post.url %}
+      <link rel="alternate" hreflang="{% if localized_post.lang == 'ko' %}ko{% elsif localized_post.lang == 'en' %}en{% else %}{{ localized_post.lang }}{% endif %}" href="{{ localized_post.url | replace: 'index.html', '' | absolute_url }}">
+    {% endif %}
+  {% endfor %}
+  {% if default_variant %}
+    <link rel="alternate" hreflang="x-default" href="{{ default_variant.url | replace: 'index.html', '' | absolute_url }}">
+  {% endif %}
+{% endif %}
+
 {% if paginator.previous_page %}
   <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
 {% endif %}
@@ -121,21 +178,61 @@
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
+{% if og_type == "article" %}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    {% if site.social.type == "Organization" %}
-      "@type": "Organization",
-      "url": {{ '/' | absolute_url | jsonify }}{% if site.og_image %},
-      "logo": {{ site_og_image | jsonify }}{% endif %}
-    {% else %}
+    "@type": "BlogPosting",
+    "headline": {{ page.title | default: site.title | markdownify | strip_html | strip_newlines | jsonify }},
+    "description": {{ seo_description | jsonify }},
+    "url": {{ canonical_url | jsonify }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ canonical_url | jsonify }}
+    },
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "dateModified": {% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema | jsonify }}{% else %}{{ page.date | date_to_xmlschema | jsonify }}{% endif %},
+    "inLanguage": {{ current_lang | jsonify }},
+    "author": {
       "@type": "Person",
-      "name": {{ site.social.name | default: site.name | jsonify }},
-      "url": {{ '/' | absolute_url |jsonify }}{% if site.social.links %},
-      "sameAs": {{ site.social.links | jsonify }}{% endif %}
+      "name": {{ author.name | default: author | jsonify }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.name | jsonify }}{% if site_og_image %},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ site_og_image | jsonify }}
+      }{% endif %}
+    }{% if page_primary_image %},
+    "image": [{{ page_primary_image | jsonify }}]
     {% endif %}
   }
 </script>
+{% elsif page.url == "/" or page.url == "/en/" %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ canonical_url | jsonify }},
+    "description": {{ seo_description | jsonify }},
+    "inLanguage": {{ current_lang | jsonify }}{% if site.social.links %},
+    "sameAs": {{ site.social.links | jsonify }}{% endif %}
+  }
+</script>
+{% else %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": {{ page.title | default: site.title | markdownify | strip_html | strip_newlines | jsonify }},
+    "url": {{ canonical_url | jsonify }},
+    "description": {{ seo_description | jsonify }},
+    "inLanguage": {{ current_lang | jsonify }}
+  }
+</script>
+{% endif %}
 
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />

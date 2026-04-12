@@ -1,0 +1,107 @@
+home:
+  ko: "보안, 개발, 일상 글을 한국어와 영어로 정리하는 K4NUL의 기술 블로그."
+  en: "K4NUL's technical blog covering security, development, and practical notes in Korean and English."
+
+section-security:
+  ko: "악성코드 분석, 취약점, 보안 연구 관련 글을 모아 둔 보안 아카이브."
+  en: "Archive of posts on malware analysis, vulnerabilities, and security research."
+
+section-development:
+  ko: "Rust, AI 도구, 하네스 엔지니어링 등 개발 관련 글을 모아 둔 아카이브."
+  en: "Archive of development posts covering Rust, AI tooling, and harness engineering."
+
+section-life:
+  ko: "일상적인 생각과 가벼운 기록을 모아 둔 라이프 아카이브."
+  en: "Archive of casual notes, everyday thoughts, and personal posts."
+
+page-categories:
+  ko: "블로그 글을 카테고리별로 모아 보는 아카이브 페이지."
+  en: "Archive page for browsing the blog by category."
+
+page-tags:
+  ko: "블로그 글을 태그별로 탐색할 수 있는 아카이브 페이지."
+  en: "Archive page for exploring the blog by tag."
+
+page-search:
+  ko: "블로그 전체 글을 제목, 태그, 주제별로 검색하는 페이지."
+  en: "Search page for finding posts across the blog by title, tag, and topic."
+
+topic-security-malware-analysis:
+  ko: "문서형 악성코드 샘플과 exploit 흐름을 분석한 글을 모아 둔 아카이브."
+  en: "Archive of posts analyzing document-based malware samples and exploit chains."
+
+topic-development-ai:
+  ko: "AI 도구 사용, 하네스 엔지니어링, 운영 설계 관련 글을 모아 둔 아카이브."
+  en: "Archive of posts about AI tooling, harness engineering, and operational design."
+
+topic-development-rust:
+  ko: "Rust 설치, 디버깅, 문법 기초를 다루는 글을 모아 둔 아카이브."
+  en: "Archive of Rust posts covering setup, debugging, and language fundamentals."
+
+macro-malware:
+  ko: "매크로 기반 문서형 악성코드 샘플의 실행 흐름과 드로퍼 동작을 분석한 글."
+  en: "Analysis of a macro-based document malware sample, covering its execution flow and dropper behavior."
+
+rtf-malware:
+  ko: "RTF 문서형 악성코드 샘플의 exploit 흐름과 실행 과정을 분석한 글."
+  en: "Analysis of an RTF-based malware sample, focusing on its exploit chain and execution flow."
+
+rust-install-hello-world:
+  ko: "Windows와 VS Code 기준으로 Rust를 설치하고 Hello World를 실행하는 입문 가이드."
+  en: "Beginner-friendly guide to installing Rust on Windows with VS Code and running Hello World."
+
+rust-debugging-with-rust-analyzer:
+  ko: "rust-analyzer와 CodeLLDB로 Rust 프로젝트를 디버깅하는 VS Code 실전 가이드."
+  en: "Practical VS Code guide to debugging Rust projects with rust-analyzer and CodeLLDB."
+
+rust-variables-types-control-flow-functions:
+  ko: "Rust의 변수, 기본 타입, 제어 흐름, 함수를 예제로 정리한 기초 문법 가이드."
+  en: "Beginner guide to Rust variables, basic types, control flow, and functions with examples."
+
+rust-ownership-borrowing-lifetimes:
+  ko: "소유권, 대여, 수명 규칙을 예제로 설명하는 Rust 기초 가이드."
+  en: "Rust fundamentals guide explaining ownership, borrowing, and lifetimes through examples."
+
+what-is-harness-engineering:
+  ko: "하네스 엔지니어링을 AI 주변의 도구, 권한, 검증 구조 설계라는 관점에서 설명한 글."
+  en: "Explains harness engineering as the design of the tools, permissions, and verification around AI."
+
+why-ai-tools-produce-different-results:
+  ko: "AI 코딩 도구를 바꿀 때 결과가 달라지는 이유를 프롬프트 밖의 실행 환경 관점에서 설명한 글."
+  en: "Explains why AI coding tools produce different results by looking beyond prompts to the execution environment."
+
+project-instruction-files-should-not-be-control-planes:
+  ko: "프로젝트 지침 파일이 어디까지 책임져야 하는지와 하네스와의 경계를 다루는 글."
+  en: "Explores what a project instruction file should own and where it should stop inside a larger harness."
+
+rust-structs-enums-pattern-matching-traits:
+  ko: "struct, enum, pattern matching, trait을 예제로 익히는 Rust 기초 가이드."
+  en: "Rust fundamentals guide to structs, enums, pattern matching, and traits with examples."
+
+from-prose-to-schema-turning-handoff-into-a-contract:
+  ko: "handoff를 자유 서술이 아니라 schema 기반 계약으로 바꾸는 이유와 설계 포인트를 정리한 글."
+  en: "Explains why handoffs should move from free-form prose to schema-based contracts and how to design them."
+
+build-and-test-are-not-enough-to-validate-an-agent:
+  ko: "build와 test만으로 agent 작업을 검증하기 어려운 이유와 추가 검증 계층을 설명한 글."
+  en: "Explains why build and test alone are not enough to validate an agent and what extra checks are needed."
+
+multi-agent-is-not-the-default:
+  ko: "멀티에이전트 구성이 항상 정답이 아닌 이유와 단일 에이전트 기준선을 설명한 글."
+  en: "Explains why multi-agent setups are not the default answer and when a single agent is the better baseline."
+
+from-principles-to-enforcement:
+  ko: "자연어 원칙을 실제 시스템 규칙과 강제 장치로 옮기는 방법을 다루는 글."
+  en: "Explains how to turn natural-language principles into concrete system rules and enforcement."
+
+why-trace-matters-more-than-results:
+  ko: "결과만으로는 부족하고 trace가 필요한 이유를 운영, 디버깅, 평가 관점에서 설명한 글."
+  en: "Explains why results alone are not enough and why trace matters for operations, debugging, and evaluation."
+
+approval-boundaries-and-guardrails:
+  ko: "approval 경계와 guardrail이 비어 있을 때 agent 시스템이 흔들리는 이유를 다루는 글."
+  en: "Explains why agent systems become unstable when approval boundaries and guardrails are missing."
+
+from-document-centered-ops-to-observable-harness:
+  ko: "문서 중심 운영에서 관측 가능한 하네스로 옮겨 가는 실전 전환 로드맵을 정리한 글."
+  en: "A practical roadmap for moving from document-centered operations to an observable harness."
