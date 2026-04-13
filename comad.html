@@ -701,7 +701,7 @@
   </div>
 
   <p class="reveal" style="font-size:0.88rem;color:var(--text-dim);margin-top:1.2rem;max-width:640px;line-height:1.8;">
-    <span data-i18n="qs.req">Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup, Neo4j schema initialization, and cron configuration. See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> for detailed instructions.</span>
+    <span data-i18n="qs.req">Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup and Neo4j schema init. For scheduled jobs, run <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">brain/scripts/schedule-install.sh</code> — it auto-detects macOS (LaunchAgents), Linux/WSL (cron), or Windows (Task Scheduler). See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a>.</span>
   </p>
 </div>
 </section>
@@ -891,7 +891,7 @@ const i18n = {
     'presets.desc': 'Comad World ships with ready-made presets. Swap one file to retarget the entire knowledge pipeline to your field.',
     'qs.label': 'Quick Start',
     'qs.title': 'Up and running in <em>4 commands</em>',
-    'qs.req': 'Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup, Neo4j schema initialization, and cron configuration. See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> for detailed instructions.',
+    'qs.req': 'Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup and Neo4j schema init. For scheduled jobs, run <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">brain/scripts/schedule-install.sh</code> — it auto-detects macOS (LaunchAgents), Linux/WSL (cron), or Windows (Task Scheduler). See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a>.',
     'tl.label': 'Timeline',
     'tl.title': 'Major milestones',
     'tl.1': 'comad-eye first commit',
@@ -1011,7 +1011,7 @@ const i18n = {
     'presets.desc': 'Comad World\ub294 \ubbf8\ub9ac \ub9cc\ub4e4\uc5b4\uc9c4 \ud504\ub9ac\uc14b\uc744 \uc81c\uacf5\ud569\ub2c8\ub2e4. \ud30c\uc77c \ud558\ub098\ub97c \ubc14\uaff0 \uc804\uccb4 \uc9c0\uc2dd \ud30c\uc774\ud504\ub77c\uc778\uc744 \uc6d0\ud558\ub294 \ubd84\uc57c\ub85c \uc804\ud658\ud558\uc138\uc694.',
     'qs.label': '\uc2dc\uc791\ud558\uae30',
     'qs.title': '<em>4\uac1c \uba85\ub839\uc5b4</em>\ub85c \uc2dc\uc791',
-    'qs.req': '\ud544\uc694: Node.js 20+, Python 3.13+, Neo4j 5, Bun. \uc124\uce58 \uc2a4\ud06c\ub9bd\ud2b8\uac00 \uc758\uc874\uc131 \uc124\uc815, Neo4j \uc2a4\ud0a4\ub9c8 \ucd08\uae30\ud654, cron \uc124\uc815\uc744 \ucc98\ub9ac\ud569\ub2c8\ub2e4. \uc790\uc138\ud55c \ub0b4\uc6a9\uc740 <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a>\ub97c \ucc38\uc870\ud558\uc138\uc694.',
+    'qs.req': '필요: Node.js 20+, Python 3.13+, Neo4j 5, Bun. 설치 스크립트가 의존성과 Neo4j 스키마 초기화를 처리합니다. 스케줄 작업은 <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">brain/scripts/schedule-install.sh</code>가 OS를 자동 감지해 macOS(LaunchAgents), Linux/WSL(cron), Windows(Task Scheduler) 중 적절한 것을 설치합니다. 자세한 내용은 <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a> 참고.',
     'tl.label': '\ud0c0\uc784\ub77c\uc778',
     'tl.title': '\uc8fc\uc694 \ub9c8\uc77c\uc2a4\ud1a4',
     'tl.1': 'comad-eye \uccab \ucee4\ubc0b',
