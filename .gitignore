@@ -36,7 +36,6 @@ _site
 !.github/workflows/
 .github/workflows/*
 !.github/workflows/refresh-scheduled-posts.yml
-!.github/scheduled-posts-last-build.txt
 .travis.yml
 docs/
 test/
