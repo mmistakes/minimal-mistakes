@@ -1,0 +1,72 @@
+name: Refresh Scheduled Posts
+
+on:
+  schedule:
+    - cron: "5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Detect posts that have crossed their publish time
+        id: gate
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          from datetime import datetime, timezone
+          from pathlib import Path
+          import re
+
+          root = Path(".")
+          stamp_path = root / ".github" / "scheduled-posts-last-build.txt"
+
+          if stamp_path.exists():
+              last_build_raw = stamp_path.read_text(encoding="utf-8").strip()
+              last_build = datetime.fromisoformat(last_build_raw.replace("Z", "+00:00"))
+          else:
+              last_build = datetime.fromtimestamp(0, tz=timezone.utc)
+
+          now = datetime.now(timezone.utc)
+          publishable = []
+          pattern = re.compile(r"^date:\s*(.+)$", re.MULTILINE)
+
+          for post_path in sorted((root / "_posts").glob("*.md")):
+              content = post_path.read_text(encoding="utf-8")
+              match = pattern.search(content)
+              if not match:
+                  continue
+
+              raw_date = match.group(1).strip()
+              published_at = datetime.strptime(raw_date, "%Y-%m-%d %H:%M:%S %z").astimezone(timezone.utc)
+
+              if last_build < published_at <= now:
+                  publishable.append(post_path.name)
+
+          if publishable:
+              stamp_path.write_text(now.replace(microsecond=0).isoformat().replace("+00:00", "Z") + "\n", encoding="utf-8")
+              print("should_commit=true")
+              print(f"published_posts={','.join(publishable)}")
+          else:
+              print("should_commit=false")
+          PY
+
+      - name: Commit refresh stamp
+        if: steps.gate.outputs.should_commit == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/scheduled-posts-last-build.txt
+          git commit -m "Refresh scheduled GitHub Pages build" -m "Published: ${{ steps.gate.outputs.published_posts }}"
+          git push

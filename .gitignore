@@ -31,6 +31,12 @@ _site
 
 # Repository cleanup: upstream/demo files not needed for the deployed blog
 .github/
+!.github/
+.github/*
+!.github/workflows/
+.github/workflows/*
+!.github/workflows/refresh-scheduled-posts.yml
+!.github/scheduled-posts-last-build.txt
 .travis.yml
 docs/
 test/
