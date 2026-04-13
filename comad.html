@@ -356,10 +356,15 @@
     <div class="flow-node" style="color:var(--amber)">voice</div>
   </div>
 
-  <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener" class="btn-primary">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-    <span data-i18n="hero.btn">Get Started</span>
-  </a>
+  <div style="display:flex;gap:0.8rem;flex-wrap:wrap;justify-content:center;">
+    <a href="https://github.com/kinkos1234/comad-world" target="_blank" rel="noopener" class="btn-primary">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      <span data-i18n="hero.btn">Get Started</span>
+    </a>
+    <a href="/comad/guide/" class="btn-primary" style="background:var(--surface2);color:var(--text-bright);border:1px solid var(--border);">
+      <span data-i18n="hero.btn.guide">사용법 가이드 →</span>
+    </a>
+  </div>
 
   <div class="hero-demo">
     <img src="https://raw.githubusercontent.com/kinkos1234/comad-world/main/docs/demo.gif" alt="Comad World Demo — clone, configure, crawl, query" loading="lazy">
@@ -790,6 +795,7 @@ const i18n = {
     'hero.tagline': 'Drowning in articles? Let AI agents <strong>crawl, organize &amp; analyze</strong> for you.',
     'hero.sub': 'Personal knowledge system that builds a searchable graph from RSS, papers &amp; GitHub \u2014 updated daily, driven by one YAML config.',
     'hero.btn': 'Get Started',
+    'hero.btn.guide': 'Usage Guide →',
     'stat.agents': 'Agents',
     'stat.nodes': 'Graph Nodes',
     'stat.loc': 'LOC',
@@ -910,6 +916,7 @@ const i18n = {
     'hero.tagline': '\uae30\uc0ac\uc5d0 \ud30c\ubb3b\ud788\uace0 \uacc4\uc2e0\uac00\uc694? AI \uc5d0\uc774\uc804\ud2b8\uac00 <strong>\uc218\uc9d1, \uc815\ub9ac, \ubd84\uc11d</strong>\ud574\ub4dc\ub9bd\ub2c8\ub2e4.',
     'hero.sub': 'RSS, \ub17c\ubb38, GitHub\uc5d0\uc11c \uac80\uc0c9 \uac00\ub2a5\ud55c \uc9c0\uc2dd \uadf8\ub798\ud504\ub97c \uad6c\ucd95\ud558\ub294 \uac1c\uc778 \uc9c0\uc2dd \uc2dc\uc2a4\ud15c \u2014 \ub9e4\uc77c \uc5c5\ub370\uc774\ud2b8, YAML \uc124\uc815 \ud558\ub098\ub85c \uad6c\ub3d9.',
     'hero.btn': '\uc2dc\uc791\ud558\uae30',
+    'hero.btn.guide': '\uc0ac\uc6a9\ubc95 \uac00\uc774\ub4dc \u2192',
     'stat.agents': '\uc5d0\uc774\uc804\ud2b8',
     'stat.nodes': '\uadf8\ub798\ud504 \ub178\ub4dc',
     'stat.loc': '\ucf54\ub4dc \ub77c\uc778',
