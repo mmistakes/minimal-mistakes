@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comad World — 사용법 가이드</title>
+<meta name="description" content="Comad World의 8개 모듈별 상세 사용 가이드. 설치부터 기능별 시연까지.">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="text-decoration:none;color:var(--text-bright)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html" class="active">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
+
+<section class="hub-hero">
+  <h1>Comad World <em>사용법 가이드</em></h1>
+  <p class="page-desc">
+    각 모듈의 핵심 기능, 실행 명령, 예상 출력을 스크린샷과 함께 단계별로 정리합니다.
+    상단 탭 또는 아래 카드에서 관심 있는 모듈을 선택하세요. 영문 번역은 순차적으로 추가됩니다.
+  </p>
+
+  <div class="callout teal" style="max-width:720px;">
+    <strong>처음 오신 분</strong>이라면 <a href="scheduler.html">스케줄러 설치</a> → <a href="brain.html">Brain (지식 그래프)</a> 순서를 추천합니다. 모든 모듈은 독립적으로도 동작합니다.
+  </div>
+</section>
+
+<div class="hub-grid">
+
+  <a href="scheduler.html" class="hub-card">
+    <span class="kb">0. 공통</span>
+    <h3>스케줄러 <span class="ko">Scheduler</span></h3>
+    <p>macOS LaunchAgents · Linux cron · Windows Task Scheduler. <code>schedule-install.sh</code> 한 번으로 OS 자동 감지.</p>
+  </a>
+
+  <a href="brain.html" class="hub-card">
+    <span class="kb">1. 지식 그래프</span>
+    <h3>Brain <span class="ko">지식 그래프 · GraphRAG</span></h3>
+    <p>크롤링 → 엔티티 추출 → Neo4j → 20+ MCP 도구. GraphRAG 벤치마크 recall 93%, latency 13.8s.</p>
+  </a>
+
+  <a href="ear.html" class="hub-card">
+    <span class="kb">2. 수집</span>
+    <h3>Ear <span class="ko">뉴스 큐레이터</span></h3>
+    <p>Discord 기사 자동 아카이브 · 3단 관련성 분류 · 일일 digest HTML · 필독 기사 자동 /search 피드.</p>
+  </a>
+
+  <a href="eye.html" class="hub-card">
+    <span class="kb">3. 예측</span>
+    <h3>Eye <span class="ko">시뮬레이션 엔진</span></h3>
+    <p>텍스트 → 온톨로지 → 10 분석 렌즈 → 전파 시뮬레이션 → 예측 보고서. Next.js UI + 7 MCP 도구.</p>
+  </a>
+
+  <a href="search.html" class="hub-card">
+    <span class="kb">4. 자기진화</span>
+    <h3>Search <span class="ko">레퍼런스 파이프라인</span></h3>
+    <p>GitHub · npm · PyPI · arXiv 병렬 탐색 · 오프토픽 게이트 · sandbox 검증 · 채택 이력 추적.</p>
+  </a>
+
+  <a href="photo.html" class="hub-card">
+    <span class="kb">5. 창작</span>
+    <h3>Photo <span class="ko">AI 사진 보정</span></h3>
+    <p>이미지 분석 → 보정 계획 → Photoshop MCP 비파괴 편집. MAE 가드, 배치 모드.</p>
+  </a>
+
+  <a href="sleep.html" class="hub-card">
+    <span class="kb">6. 기억</span>
+    <h3>Sleep <span class="ko">메모리 정리</span></h3>
+    <p>Claude Code 프로젝트별 auto memory 전수 스캔 · 중복 감지 · 통합 · MCP 서버로 조회.</p>
+  </a>
+
+  <a href="voice.html" class="hub-card">
+    <span class="kb">7. 오케스트레이션</span>
+    <h3>Voice <span class="ko">워크플로우 하네스</span></h3>
+    <p>CLAUDE.md 트리거 6개. "상황 검토해봐" 한마디로 코드베이스 진단 → 개선 카드 제시.</p>
+  </a>
+
+</div>
+
+</div>
+
+<footer style="text-align:center;color:var(--text-dim);font-size:0.78rem;padding:3rem 1rem 4rem;border-top:1px solid var(--border);margin-top:4rem;">
+  <div>Comad World · <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal)">GitHub</a> · <a href="/comad">소개 페이지</a></div>
+  <div style="margin-top:0.5rem;">MIT License · Claude Code + Neo4j + TypeScript/Bun</div>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

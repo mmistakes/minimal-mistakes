@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스케줄러 — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="text-decoration:none;color:var(--text-bright)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html" class="active">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">목차</div>
+    <a href="#why">문제와 배경</a>
+    <a href="#install">설치</a>
+    <a href="#macos">macOS (LaunchAgents)</a>
+    <a href="#linux">Linux · WSL (cron)</a>
+    <a href="#windows">Windows (Task Scheduler)</a>
+    <a href="#jobs">등록되는 10개 작업</a>
+    <a href="#ops">운영 · 디버깅</a>
+    <a href="#uninstall">제거</a>
+  </aside>
+
+  <main>
+    <h1>스케줄러 <em>Scheduler</em></h1>
+    <p class="page-desc">
+      크롤러 · 다이제스트 · 벤치마크 · 자가진화 루프 등 10개 자동 작업의 스케줄을 OS별 최적 방식으로 등록합니다.
+      단일 명령으로 macOS / Linux / Windows 모두 처리됩니다.
+    </p>
+
+    <h2 id="why">문제와 배경</h2>
+    <p>Comad는 여러 자동 작업이 <code>claude -p</code>를 호출합니다 (엔티티 추출, synth, 답변 생성). 이 CLI는 Claude Max 구독의 OAuth 토큰을 사용자의 <strong>세션 keychain</strong>에서 읽습니다.</p>
+    <p>macOS에서 전통적인 <code>crontab</code>은 Aqua(GUI) 세션 밖에서 실행되므로 keychain 잠금 해제가 되지 않아 <code>claude -p</code>가 <code>exit 1</code>로 조용히 실패합니다. 로그에는 ⚠ 표시만 남고, 결과적으로 노드 추가가 0건인 크롤이 반복됩니다.</p>
+
+    <div class="callout warn">
+      <strong>실제 있었던 증상</strong><br>
+      크롤러가 매일 실행되는 것처럼 보이지만 그래프 노드 수가 거의 늘지 않음 · 벤치마크가 recall 8%로 기록됨 · <code>"⚠ claude -p exited with code 1"</code>이 로그에 반복.
+    </div>
+
+    <p>OS별로 다음 스케줄러는 이 문제를 피합니다:</p>
+    <ul>
+      <li><strong>macOS LaunchAgents</strong> (<code>gui/&lt;uid&gt;</code> 도메인) — GUI 세션을 상속받아 keychain 접근 가능</li>
+      <li><strong>Linux cron</strong> — 세션 keychain이 자연스럽게 전파 (macOS 문제 없음)</li>
+      <li><strong>Windows Task Scheduler</strong> — <code>LogonType=Interactive</code> 모드로 등록하면 로그인 중에만 실행되어 DPAPI/OAuth 보존</li>
+    </ul>
+    <p>모두 기존 <strong>Claude Max 구독만으로 동작</strong>합니다. 추가 API 키를 발급받을 필요가 없습니다.</p>
+
+    <h2 id="install">설치</h2>
+    <p>리포 루트에서 단일 명령만 실행하면 됩니다. 내부에서 <code>uname</code> 또는 환경 변수로 OS를 감지해 올바른 설치 스크립트로 라우팅됩니다.</p>
+    <pre><code><span class="dim"># macOS / Linux / WSL</span>
+zsh brain/scripts/schedule-install.sh</code></pre>
+
+    <pre><code><span class="dim"># Windows (관리자 PowerShell)</span>
+pwsh -File brain\scripts\win-install.ps1</code></pre>
+
+    <figure class="shot placeholder" data-screenshot="scheduler-install-success.png">스크린샷: 설치 성공 출력 (10개 LaunchAgent 등록)</figure>
+
+    <h2 id="macos">macOS — LaunchAgents</h2>
+    <p><code>~/Library/LaunchAgents/com.comad.*.plist</code> 10개가 생성되고 <code>launchctl bootstrap gui/$(id -u)</code>로 즉시 활성화됩니다. 스크립트는 idempotent — 여러 번 실행해도 안전합니다.</p>
+
+    <h3>직접 확인</h3>
+    <pre><code><span class="dim"># 활성 목록</span>
+launchctl list | grep com.comad
+
+<span class="dim"># 단일 작업 수동 실행</span>
+launchctl kickstart gui/$(id -u)/com.comad.ear-digest
+
+<span class="dim"># 상세 상태 (마지막 종료 코드 포함)</span>
+launchctl print gui/$(id -u)/com.comad.ear-digest</code></pre>
+
+    <figure class="shot placeholder" data-screenshot="scheduler-launchctl-list.png">스크린샷: <code>launchctl list | grep com.comad</code> 출력</figure>
+
+    <h2 id="linux">Linux · WSL — cron</h2>
+    <p>스크립트가 <code>crontab -l</code>에 10개 엔트리를 추가합니다. WSL은 <code>/proc/version</code>의 "microsoft" 시그니처로 자동 감지되어 Linux 경로를 탑니다.</p>
+    <pre><code><span class="dim"># 등록 결과 확인</span>
+crontab -l | grep comad-world
+
+<span class="dim"># 실행 로그</span>
+tail -f brain/crawl.log</code></pre>
+
+    <h2 id="windows">Windows — Task Scheduler</h2>
+    <p><code>win-install.ps1</code>은 <code>Register-ScheduledTask</code>로 <code>\Comad\</code> 경로 아래 10개 작업을 만듭니다. 각 작업은:</p>
+    <ul>
+      <li><code>Principal: LogonType=Interactive</code> — 로그인 세션에서만 실행</li>
+      <li><code>cmd.exe /c "bun.exe" run ... *&gt;&gt; log</code> 형태로 stdout/stderr 기록</li>
+      <li>데일리는 <code>Daily</code> 트리거, 주간은 월요일 <code>Weekly</code> 트리거</li>
+    </ul>
+    <pre><code><span class="dim"># 확인</span>
+Get-ScheduledTask -TaskPath '\Comad\*' | Format-Table TaskName,State
+
+<span class="dim"># 단일 실행</span>
+Start-ScheduledTask -TaskName EarDigest -TaskPath '\Comad\'</code></pre>
+
+    <h2 id="jobs">등록되는 10개 작업</h2>
+    <table>
+      <tr><th>이름</th><th>시각</th><th>주기</th><th>역할</th></tr>
+      <tr><td><code>ear-ingest</code></td><td>07:00</td><td>매일</td><td>어제 필독 기사 → /search 자동 피드</td></tr>
+      <tr><td><code>ear-digest</code></td><td>08:00</td><td>매일</td><td>어제 기사들 HTML 다이제스트 생성</td></tr>
+      <tr><td><code>crawl-arxiv</code></td><td>09:00</td><td>매일</td><td>arXiv 논문 크롤 + 인제스트 (limit 200)</td></tr>
+      <tr><td><code>ingest-geeknews</code></td><td>09:30</td><td>매일</td><td>GeekNews 아카이브 → Brain</td></tr>
+      <tr><td><code>crawl-blogs</code></td><td>10:00</td><td>매일</td><td>25 RSS 블로그 + HN 크롤</td></tr>
+      <tr><td><code>crawl-github</code></td><td>11:00</td><td>월요일</td><td>GitHub 트렌딩 레포 크롤</td></tr>
+      <tr><td><code>monitor-upstream</code></td><td>11:30</td><td>월요일</td><td>업스트림 레포 업데이트 감지</td></tr>
+      <tr><td><code>search-weekly</code></td><td>12:00</td><td>월요일</td><td>PUSH 모드 자가 진단 검색</td></tr>
+      <tr><td><code>evolution-loop</code></td><td>12:30</td><td>월요일</td><td>Brain trends → Search → adoption</td></tr>
+      <tr><td><code>run-benchmark</code></td><td>13:00</td><td>월요일</td><td>GraphRAG 50문항 벤치마크</td></tr>
+    </table>
+
+    <h2 id="ops">운영 · 디버깅</h2>
+
+    <h3>로그 파일</h3>
+    <ul>
+      <li><code>brain/crawl.log</code> — 크롤러, ingest, search, benchmark 모두 여기로</li>
+      <li><code>ear/digest.log</code> — 다이제스트만 분리</li>
+      <li><code>brain/evolution-loop.log</code> — evolution-loop 상세</li>
+      <li><code>brain/upstream-monitor.log</code> — upstream 감지 결과</li>
+    </ul>
+
+    <h3>실패하면 먼저 볼 것</h3>
+    <ol>
+      <li><strong>keychain 잠금 여부</strong>: macOS 잠자기 후 키체인 잠기면 다시 로그인해서 unlock</li>
+      <li><strong>Bun/Node 경로</strong>: <code>launchctl print</code>로 <code>EnvironmentVariables.PATH</code> 확인</li>
+      <li><strong>Neo4j 실행 중인지</strong>: <code>docker ps | grep neo4j</code></li>
+      <li><strong>cron 잔여 엔트리</strong>: macOS에서 이전 cron이 살아있으면 중복 실행. <code># MIGRATED_TO_LAUNCHD:</code> 주석 확인</li>
+    </ol>
+
+    <figure class="shot placeholder" data-screenshot="scheduler-logs.png">스크린샷: <code>tail -f brain/crawl.log</code> 실행 중인 로그</figure>
+
+    <h2 id="uninstall">제거</h2>
+    <pre><code><span class="dim"># macOS</span>
+zsh brain/scripts/launchd/uninstall.sh
+
+<span class="dim"># Linux</span>
+crontab -l | grep -v comad-world | crontab -
+
+<span class="dim"># Windows</span>
+pwsh -File brain\scripts\win-install.ps1 -Uninstall</code></pre>
+
+    <div class="callout">
+      cron에서 LaunchAgent로 마이그레이션한 경우 기존 crontab 엔트리는 <code># MIGRATED_TO_LAUNCHD:</code> 주석으로 보존되어 있습니다. 롤백하려면 <code>crontab -e</code>에서 해당 줄의 주석만 제거하면 됩니다.
+    </div>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>brain/scripts/schedule-install.sh</code>, <code>brain/scripts/launchd/</code>, <code>brain/scripts/cron-install.sh</code>, <code>brain/scripts/win-install.ps1</code></p>
+  </main>
+</div>
+
+<footer style="text-align:center;color:var(--text-dim);font-size:0.78rem;padding:3rem 1rem 4rem;border-top:1px solid var(--border);">
+  <a href="index.html">← 가이드 홈</a> · <a href="brain.html">다음: Brain →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>
