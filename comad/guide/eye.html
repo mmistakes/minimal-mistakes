@@ -32,6 +32,7 @@
     <a href="#pipeline">파이프라인 6단계</a>
     <a href="#lenses">분석 렌즈 (10개)</a>
     <a href="#web-ui">웹 UI</a>
+    <a href="#ai-readable">AI 크롤러 대응</a>
     <a href="#mcp">MCP 도구 (7개)</a>
     <a href="#predictions">예측 추적</a>
     <a href="#cors">배포 설정</a>
@@ -130,6 +131,28 @@ cd web && npm install && npm run dev   <span class="dim"># http://localhost:3000
       <img src="assets/img/eye-report.png" alt="Eye report">
       <figcaption>종합 보고서 — 각 렌즈의 핵심 발견, 전파 경로, 예측 타임라인.</figcaption>
     </figure>
+
+    <h2 id="ai-readable">AI 크롤러 대응 (v1.1, 2026-04-13)</h2>
+    <p>초기 프런트엔드는 모든 페이지를 <code>"use client"</code> + <code>useEffect</code>로 구성했기에, AI에게 <code>/analysis?job=…</code>나 <code>/report?job=…</code> 링크를 던지면 빈 스켈레톤만 보고 "이 링크 못 읽어요"라고 답했습니다. 사용자 피드백을 받아 다음과 같이 전환했습니다.</p>
+    <ul>
+      <li><strong>서버 컴포넌트 전환</strong> — <code>/analysis</code>, <code>/report</code>가 server component가 되어 FastAPI에서 분석 데이터를 SSR 시점에 직접 가져옵니다.</li>
+      <li><strong>sr-only SSR preview</strong> — 시각적으로는 숨긴 <code>&lt;section class="sr-only"&gt;</code> 안에 key_findings·공간별 요약·전체 보고서 마크다운을 HTML에 그대로 인라인. AI 크롤러는 JS 실행 없이도 내용을 읽습니다.</li>
+      <li><strong>per-page <code>generateMetadata</code></strong> — title·description을 실제 분석 결과에서 생성. <code>/report?job=abc</code>의 description은 보고서 상위 280자, <code>/analysis?job=abc</code>는 key_findings 상위 3개.</li>
+      <li><strong>OpenGraph · Twitter Card · JSON-LD</strong> — <code>app/layout.tsx</code>에서 <code>SoftwareApplication</code> 스키마 주입.</li>
+      <li><strong><code>public/robots.txt</code></strong> — <code>GPTBot</code>, <code>ChatGPT-User</code>, <code>ClaudeBot</code>, <code>Claude-Web</code>, <code>PerplexityBot</code>, <code>Google-Extended</code>를 명시적으로 <code>Allow</code>.</li>
+      <li><strong>Graceful fallback</strong> — <code>lib/server-api.ts</code>에 <code>server-only</code> 가드, 30초 <code>revalidate</code>, 백엔드가 죽어도 <code>null</code> 반환으로 클라이언트만 렌더.</li>
+    </ul>
+
+    <p>E2E 실측 (jobId <code>7c2a5e33a138</code>, 실제 Neo4j + API 가동):</p>
+    <table>
+      <tr><th>경로</th><th>main body (before)</th><th>main body (after)</th><th>배수</th></tr>
+      <tr><td><code>/report?job=…</code></td><td>18 B</td><td><strong>32,297 B</strong></td><td>×1,794</td></tr>
+      <tr><td><code>/analysis?job=…</code></td><td>34 B</td><td><strong>353 B</strong></td><td>×10</td></tr>
+      <tr><td>title 중복</td><td>5/5 페이지 동일</td><td>5/5 페이지 고유</td><td>—</td></tr>
+      <tr><td>OG / JSON-LD</td><td>0 / 0</td><td>per-page / 전 페이지</td><td>—</td></tr>
+    </table>
+
+    <p class="dim">이제 사용자가 AI에게 <code>/report?job=xxx</code> URL 하나만 던져도 전체 보고서가 요약됩니다. 세부 지침을 따로 주지 않아도 됩니다.</p>
 
     <h2 id="mcp">MCP 도구 (7개)</h2>
     <p>Claude Code에서 자연어로 호출 가능.</p>
