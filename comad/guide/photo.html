@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html" class="active">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Photo</div>
+    <a href="#overview">개요</a>
+    <a href="#install">설치 (Photoshop MCP)</a>
+    <a href="#workflow">보정 워크플로우</a>
+    <a href="#mae">MAE 가드</a>
+    <a href="#batch">배치 모드</a>
+    <a href="#tips">운영 팁</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Photo — <em>AI 사진 보정</em></h1>
+      <p class="page-desc">
+        이미지 분석 → 보정 계획 수립 → Photoshop MCP를 통한 비파괴 편집. Adjustment Layer 기반으로
+        원본을 건드리지 않으며, MAE(Mean Absolute Error) 가드가 과보정을 방지합니다. 인물 배치 평균 92.2점.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Claude Vision</span>
+        <span class="tag">Photoshop MCP</span>
+        <span class="tag accent">PIL + Camera Raw</span>
+        <span class="tag warm">MAE &lt; 20</span>
+        <span class="tag lime">배치 모드</span>
+      </div>
+    </div>
+
+    <h2 id="overview">개요</h2>
+    <p>사진 한 장 또는 폴더를 입력하면, Claude Vision이 각 이미지를 분석해 어떤 보정이 필요한지 구체적 계획(밝기/대비/색온도/채도/선명도)을 만들고, Photoshop에 <strong>비파괴 편집</strong>을 지시합니다. 조정 레이어만 추가되므로 원본 픽셀은 그대로 유지됩니다.</p>
+
+    <div class="callout">
+      <strong>왜 비파괴인가</strong> — 클라이언트가 "이 부분만 좀 덜해달라" 요청했을 때 특정 레이어의 opacity만 조절하면 됨. 처음부터 다시 돌릴 필요 없음.
+    </div>
+
+    <h2 id="install">설치 (Photoshop MCP)</h2>
+<pre><code><span class="dim"># Adobe UXP 패널 (Photoshop 안에서 실행되는 플러그인)</span>
+cd photo
+./install.sh                       <span class="dim"># UXP 패널 + Python MCP 서버 설정</span>
+
+<span class="dim"># Photoshop 실행 → Plugins → Comad Photo 패널 활성화</span>
+
+<span class="dim"># Claude Code에서 MCP 연결 확인</span>
+claude mcp list | grep adobe-photoshop
+<span class="dim"># → adobe-photoshop: ... ✓ Connected</span></code></pre>
+
+    <div class="callout warm">
+      Photoshop은 반드시 <strong>실행 중</strong>이어야 합니다. UXP 플러그인이 Photoshop 내부에 로드되고, Python MCP 서버가 WebSocket으로 UXP와 통신. 3단 구조 → Photoshop ↔ UXP ↔ Python MCP ↔ Claude.
+    </div>
+
+    <h2 id="workflow">보정 워크플로우</h2>
+
+    <h3>대화형 (단일 이미지)</h3>
+<pre><code><span class="kw">You:</span> 이 사진 좀 보정해줘 (파일: portrait.jpg)
+
+<span class="hl">Claude:</span>
+1. 이미지 분석 (Claude Vision):
+   - 인물 사진, 실내 인공광
+   - 노출 약간 부족 (-0.3 EV)
+   - 화이트밸런스 따뜻함 편향 (tint +8 magenta)
+   - 피부톤 채도 살짝 낮음
+
+2. 보정 계획:
+   [1] Levels: input 12-245 (그림자 리프트)
+   [2] Color Balance: Midtones +3 Cyan, -3 Yellow
+   [3] Hue/Saturation: Reds +8 saturation, oranges +6
+   [4] Selective Color (skin): Yellows -5, Reds +2
+
+3. Photoshop MCP 실행 중...
+   ✓ Levels adjustment layer 추가
+   ✓ Color Balance adjustment layer 추가
+   ✓ Hue/Sat adjustment layer 추가
+   ✓ Selective Color adjustment layer 추가
+   <span class="hl">✓ MAE: 14.2 (&lt; 20 threshold)</span>
+
+Total: 4 adjustment layers. 원본 픽셀 무변경.
+"이 부분만 되돌리려면 해당 레이어의 opacity를 조절하세요."</code></pre>
+
+    <h3>동작하는 MCP 도구 (주요)</h3>
+    <ul>
+      <li><code>mcp__adobe-photoshop__add_brightness_contrast_adjustment_layer</code></li>
+      <li><code>mcp__adobe-photoshop__add_color_balance_adjustment_layer</code></li>
+      <li><code>mcp__adobe-photoshop__add_black_and_white_adjustment_layer</code></li>
+      <li><code>mcp__adobe-photoshop__add_vibrance_adjustment_layer</code></li>
+      <li><code>mcp__adobe-photoshop__apply_gaussian_blur</code></li>
+      <li><code>mcp__adobe-photoshop__apply_motion_blur</code></li>
+      <li><code>mcp__adobe-photoshop__remove_background</code> (generative)</li>
+      <li><code>mcp__adobe-photoshop__generate_image</code> (Firefly)</li>
+      <li><code>mcp__adobe-photoshop__generative_fill</code></li>
+      <li><code>mcp__adobe-photoshop__select_sky</code> / <code>select_subject</code></li>
+      <li>레이어 전체 관리 (duplicate/group/rename/visibility)</li>
+      <li>문서 저장 (<code>save_document_as</code> PSD/JPG/PNG)</li>
+    </ul>
+
+    <h2 id="mae">MAE 가드</h2>
+    <p>Mean Absolute Error — 원본과 보정본의 픽셀 차이 평균. 20을 넘으면 과보정으로 판단하고 가장 강한 조정 레이어의 opacity를 낮추거나 제거합니다.</p>
+
+<pre><code>MAE 측정 (grayscale 기준):
+  < 10: 너무 보수적 (거의 변화 없음)
+  <span class="hl">10-20: 자연스러운 보정 (권장)</span>
+  20-30: 눈에 띄는 차이 (스타일 변경)
+  > 30: 과보정 (원본 분위기 손상)</code></pre>
+
+    <div class="callout lime">
+      <strong>실측 결과 (v0.4.0)</strong> — 인물 사진 15장 테스트: 평균 92.2점 (최저 86), MAE 평균 14.8. 배치 모드에서도 품질 일관성 확보.
+    </div>
+
+    <h2 id="batch">배치 모드</h2>
+<pre><code><span class="kw">You:</span> ~/Photos/wedding/ 폴더 전체 보정해줘
+
+<span class="hl">Claude:</span>
+발견: 47 images (JPG)
+로딩 후 일괄 분석...
+  [1/47] IMG_0001.jpg → 기준 톤 샘플 (reference)
+  [2/47] IMG_0002.jpg → reference 기준 매칭
+  ...
+  [47/47] IMG_0047.jpg ✓
+
+Batch complete:
+  성공: 45
+  MAE 경계 초과: 2 (수동 검토 필요)
+  저장: ~/Photos/wedding/edited/*.psd</code></pre>
+
+    <div class="callout">
+      배치 모드의 비밀은 <strong>첫 이미지를 reference tone</strong>으로 삼아 나머지를 매칭한다는 것. 한 이벤트에서 촬영된 사진들이 같은 톤으로 통일됩니다.
+    </div>
+
+    <h2 id="tips">운영 팁</h2>
+
+    <h3>레이어 병합 금지</h3>
+    <p>보정 후 레이어를 합치면 재조정 불가. PSD로 저장하고 필요할 때 JPG로 export만.</p>
+
+    <h3>CU + AppleScript 금지</h3>
+    <p>Photoshop 제어는 오직 MCP 도구만 사용. AppleScript/System Events로 UI 조작은 비결정적이라 배치 실패 원인 1위.</p>
+
+    <h3>CU wait 최소 1초</h3>
+    <p>컴퓨터 유즈(CU)로 Photoshop UI 관찰할 때 wait 1초 미만은 렌더 완료 전이라 false state 잡힘. <code>sleep 1</code> 이상.</p>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>photo/</code>, <code>~/adb-mcp/mcp/ps-mcp.py</code></p>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="search.html">← Search</a> · <a href="index.html">가이드 홈</a> · <a href="sleep.html">다음: Sleep →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

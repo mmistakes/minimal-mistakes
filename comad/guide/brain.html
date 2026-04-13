@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brain — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html" class="active">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Brain</div>
+    <a href="#setup">설치 & 초기 설정</a>
+    <a href="#stats">현재 그래프 규모</a>
+    <a href="#mcp">MCP 도구 (19개)</a>
+    <a href="#ask">GraphRAG 질의 (ask)</a>
+    <a href="#crawl">크롤러 파이프라인</a>
+    <a href="#community">커뮤니티 감지</a>
+    <a href="#visualize">그래프 시각화</a>
+    <a href="#benchmark">품질 벤치마크</a>
+    <a href="#config">comad.config.yaml</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Brain — <em>지식 그래프 + GraphRAG</em></h1>
+      <p class="page-desc">
+        RSS·arXiv·GitHub·HN에서 수집한 기사/논문/레포를 Neo4j 온톨로지로 저장하고 엔티티·관계·Claim을
+        자동 추출합니다. 19개 MCP 도구와 Dual-Retriever GraphRAG로 자연어 질의응답을 제공합니다.
+      </p>
+      <div class="tag-row">
+        <span class="tag">TypeScript</span>
+        <span class="tag">Bun</span>
+        <span class="tag">Neo4j 5</span>
+        <span class="tag accent">MCP 19 tools</span>
+        <span class="tag warm">recall 93%</span>
+        <span class="tag lime">latency 13.8s</span>
+      </div>
+    </div>
+
+    <h2 id="setup">설치 & 초기 설정</h2>
+    <p>Brain은 Neo4j 컨테이너와 Bun 런타임만 있으면 독립 실행됩니다. 최초 1회 실행:</p>
+<pre><code><span class="dim"># 루트에서</span>
+cd brain
+docker compose up -d          <span class="dim"># Neo4j (bolt 7688, http 7475)</span>
+bun install
+bun run setup                 <span class="dim"># 스키마 + 인덱스 + MetaEdge bootstrap</span>
+bun run mcp                   <span class="dim"># MCP 서버 시작</span></code></pre>
+
+    <div class="callout">
+      <code>bun run setup</code>은 Neo4j에 제약조건(constraint) 7개, 풀텍스트 인덱스 4개,
+      MetaEdge 규칙 10개, 석학 렌즈 노드 12개를 한 번에 부트스트랩합니다.
+      중복 실행해도 안전(idempotent)합니다.
+    </div>
+
+    <h2 id="stats">현재 그래프 규모</h2>
+    <p>운영 중인 데이터 예시 (2026-04-13 기준):</p>
+    <table>
+      <tr><th>라벨</th><th>노드 수</th><th>설명</th></tr>
+      <tr><td><code>Claim</code></td><td>9,046</td><td>기사·논문에서 추출된 fact/opinion/prediction</td></tr>
+      <tr><td><code>Topic</code></td><td>8,088</td><td>개념/주제 태그</td></tr>
+      <tr><td><code>Technology</code></td><td>4,457</td><td>라이브러리·프레임워크·프로토콜</td></tr>
+      <tr><td><code>Person</code></td><td>2,361</td><td>연구자·창립자 등 인물</td></tr>
+      <tr><td><code>Organization</code></td><td>1,562</td><td>기업·연구소</td></tr>
+      <tr><td><code>Article</code></td><td>1,553</td><td>원본 기사/블로그 포스트</td></tr>
+      <tr><td><code>Paper</code></td><td>38+</td><td>arXiv 논문</td></tr>
+      <tr><td><code>Repo</code></td><td>100</td><td>GitHub 레포지토리</td></tr>
+    </table>
+
+    <h2 id="mcp">MCP 도구 (19개)</h2>
+    <p>모든 도구는 <code>bun run mcp</code>로 시작되는 MCP 서버 위에서 Claude Code의 자연어 호출로 사용됩니다.</p>
+
+    <table>
+      <tr><th>도구</th><th>용도</th></tr>
+      <tr><td><code>comad_brain_ask</code></td><td>GraphRAG 기반 자연어 질의 → 출처 포함 답변</td></tr>
+      <tr><td><code>comad_brain_search</code></td><td>풀텍스트 검색 (노드 타입 필터 가능)</td></tr>
+      <tr><td><code>comad_brain_recent</code></td><td>최근 N일 추가된 기사/Claim 조회</td></tr>
+      <tr><td><code>comad_brain_stats</code></td><td>그래프 통계 (노드/엣지/라벨별)</td></tr>
+      <tr><td><code>comad_brain_related</code></td><td>엔티티의 관련 노드 N개 추천</td></tr>
+      <tr><td><code>comad_brain_impact</code></td><td>OpenCrab I1~I7 기반 엔티티 영향도 분석</td></tr>
+      <tr><td><code>comad_brain_explore</code></td><td>특정 노드 주변 서브그래프 탐색</td></tr>
+      <tr><td><code>comad_brain_claims</code></td><td>Claim 필터링 (type/confidence/verified)</td></tr>
+      <tr><td><code>comad_brain_claim_timeline</code></td><td>엔티티에 대한 Claim의 시간축 타임라인</td></tr>
+      <tr><td><code>comad_brain_temporal</code></td><td>시점 기준 그래프 스냅샷 쿼리</td></tr>
+      <tr><td><code>comad_brain_stale</code></td><td>오래된/신뢰도 낮은 Claim 탐지</td></tr>
+      <tr><td><code>comad_brain_trend</code></td><td>기간별 언급량 추이</td></tr>
+      <tr><td><code>comad_brain_contradictions</code></td><td>CONTRADICTS 엣지가 있는 Claim 쌍</td></tr>
+      <tr><td><code>comad_brain_communities</code></td><td>커뮤니티 목록 + 구성원</td></tr>
+      <tr><td><code>comad_brain_dedup</code></td><td>중복 엔티티 fuzzy 탐지 + 병합</td></tr>
+      <tr><td><code>comad_brain_meta</code></td><td>MetaEdge 규칙 실행/조회</td></tr>
+      <tr><td><code>comad_brain_refine</code></td><td>엣지 가중치 · 신뢰도 decay · 프루닝 제안</td></tr>
+      <tr><td><code>comad_brain_export</code></td><td>JSON / JSON-LD / CSV 내보내기</td></tr>
+      <tr><td><code>comad_brain_perf</code></td><td>도구별 호출 횟수 · 응답 시간</td></tr>
+    </table>
+
+    <h2 id="ask">GraphRAG 질의 (ask)</h2>
+    <p>가장 자주 쓰는 도구. 자연어 질문 → 엔티티 추출 → Dual-Retriever(Local + Global + Temporal) → 3KB 컨텍스트 자르기 → synth → 출처 포함 답변.</p>
+
+    <h3>Claude Code 안에서</h3>
+    <pre><code><span class="kw">You:</span> MCP란 무엇이고 어떤 기업이 쓰고 있나?
+<span class="dim">(comad_brain_ask 호출 →)</span>
+<span class="hl">Claude:</span> MCP는 JSON-RPC 2.0 기반 오픈 표준으로 OAuth 2.0 통합.
+9개 기업 식별: Anthropic, OpenAI, Google, Microsoft,
+Block, Bloomberg, AWS, Cloudflare, Linux Foundation.
+출처: <span class="dim">[기사: "The MCP protocol landscape", 2026-03-18]</span>
+<span class="dim">[Grounding rate 93% — 인용된 엔티티 모두 그래프에 실제 존재]</span></code></pre>
+
+    <h3>CLI 벤치마크 스크립트로</h3>
+    <pre><code>bun run packages/graphrag/src/run-benchmark.ts</code></pre>
+
+    <div class="feature">
+      <div class="tag-row">
+        <span class="tag warm">벤치마크</span>
+        <span class="tag">50문항</span>
+        <span class="tag">2026-04-13</span>
+      </div>
+      <h4>실제 측정값</h4>
+      <table>
+        <tr><th>지표</th><th>값</th><th>의미</th></tr>
+        <tr><td><strong>Entity Recall</strong></td><td>93%</td><td>답변에 기대 엔티티가 포함된 비율</td></tr>
+        <tr><td><strong>Grounding Rate</strong></td><td>93%</td><td>인용된 엔티티가 실제 그래프에 존재하는 비율 (hallucination 방지)</td></tr>
+        <tr><td><strong>Avg Latency</strong></td><td>13.8s</td><td>질문당 p50 지연</td></tr>
+        <tr><td><strong>Hard Good Rate</strong></td><td>72%</td><td>다중 홉 추론 질문 good 판정 비율</td></tr>
+      </table>
+    </div>
+
+    <h2 id="crawl">크롤러 파이프라인</h2>
+    <p>5개 소스 × 병렬 fetch + Haiku 엔티티 추출 + Neo4j 저장. 모두 <code>--smol</code> 메모리 플래그 적용.</p>
+
+    <table>
+      <tr><th>명령</th><th>소스</th><th>Haiku 사용</th><th>기본 스케줄</th></tr>
+      <tr><td><code>bun run crawl:hn</code></td><td>Hacker News</td><td>◯ (엔티티)</td><td>crawl-blogs와 병합</td></tr>
+      <tr><td><code>bun run crawl:arxiv</code></td><td>arXiv API + 논문 fetch</td><td>◯ (엔티티+Claim)</td><td>매일 09:00 (limit 200)</td></tr>
+      <tr><td><code>bun run crawl:github</code></td><td>GitHub trending</td><td>◯</td><td>월 11:00</td></tr>
+      <tr><td><code>bun run crawl:blogs</code></td><td>25개 블로그 RSS</td><td>◯</td><td>매일 10:00</td></tr>
+      <tr><td><code>bun run crawl:ingest</code></td><td>로컬 JSON 파일 인제스트</td><td>◯</td><td>각 크롤 직후</td></tr>
+      <tr><td><code>bun run crawl:resume</code></td><td>실패한 인제스트 재시도</td><td>—</td><td>수동</td></tr>
+      <tr><td><code>bun run crawl:retry</code></td><td>failed articles 재처리</td><td>—</td><td>수동</td></tr>
+    </table>
+
+    <div class="callout warm">
+      <strong>Content Guard</strong> — 10개 prompt injection 패턴 + invisible Unicode 스캔이 모든 크롤 입력에 자동 적용됩니다. 플래그된 콘텐츠는 정제본으로 대체되거나 격리됩니다.
+    </div>
+
+    <h3>실제 로그 스니펫</h3>
+<pre><code><span class="dim">$ bun run crawl:arxiv -- --limit 100</span>
+arxiv Crawler: target 100 papers
+=== cs.CL (target: 100) ===
+  "language model" offset=0 → 200 found, 100 new (total: 100)
+Collected 100 papers total
+<span class="dim">$ bun run crawl:ingest -- --source arxiv --file /tmp/arxiv.json</span>
+Ingesting 100 items from arxiv...
+  Fetching full content for 100 items (5 workers)...
+<span class="hl">[content-guard] 1 threats in https://arxiv.org/html/...: invisible_unicode_U+200b</span>
+[content-fetcher] Content flagged. Using cleaned version.
+  Entities extracted: 87/100 (claude -p --model haiku)
+  Claims extracted: 312 (avg 3.1/paper)
+  Done: 100/100 items ingested (3.2 min)</code></pre>
+
+    <h2 id="community">커뮤니티 감지</h2>
+    <p>Cypher 기반 label propagation (Community Edition에 GDS 없음). C1→C2→C3 3단계 계층 클러스터링.</p>
+
+<pre><code><span class="dim"># MCP 도구로</span>
+comad_brain_communities   <span class="dim"># 22개 커뮤니티 목록</span>
+
+<span class="dim"># 직접 스크립트로 재실행</span>
+bun run packages/core/src/community-detector.ts</code></pre>
+
+    <table>
+      <tr><th>단계</th><th>단위</th><th>기준</th><th>출력</th></tr>
+      <tr><td>C1 Tech</td><td>Technology 공동등장</td><td>같은 Article에서 함께 언급</td><td>ecosystem 클러스터</td></tr>
+      <tr><td>C2 Topic</td><td>Topic 클러스터</td><td>SUBTOPIC_OF 계층</td><td>주제 카테고리</td></tr>
+      <tr><td>C3 Meta</td><td>C1 + C2 교차</td><td>멤버 중첩 ≥ threshold</td><td>상위 커뮤니티</td></tr>
+    </table>
+
+    <h2 id="visualize">그래프 시각화</h2>
+    <p>Neo4j Browser를 <code>http://localhost:7475</code>에서 열고, 왼쪽 노드 라벨 중 Community를 클릭하면 계층 구조가 보입니다. 또는 커스텀 explorer:</p>
+<pre><code>bun run packages/explorer/src/server.ts
+<span class="dim"># → http://localhost:3001 (D3.js 인터랙티브 뷰)</span></code></pre>
+
+    <figure class="shot">
+      <img src="assets/img/brain-graph-viz.png" alt="Brain knowledge graph visualization">
+      <figcaption>커뮤니티 감지 후 시각화. 각 색상은 다른 커뮤니티 — Tech 클러스터(파랑), AI 안전성 클러스터(오렌지) 등.</figcaption>
+    </figure>
+
+    <h2 id="benchmark">품질 벤치마크</h2>
+    <p>50문항 고정 문제 세트로 주간 측정합니다. 난이도별 recall · grounding rate · latency를 기록해 그래프 성장에 따라 품질이 향상되는지 추적.</p>
+
+<pre><code><span class="dim">$ bun run packages/graphrag/src/run-benchmark.ts</span>
+GraphRAG Benchmark — Starting...
+Graph: 27,320 nodes, 45,103 edges
+
+[b01] easy   Transformer 아키텍처를 처음 제안한 논문은?
+             ✓ 9.9s (recall: 100%, grounding: 100%)
+...
+[b50] hard   Constitutional AI가 RLHF 대비 해결한 문제는?
+             ✓ 15.1s (recall: 100%, grounding: 92%)
+
+═══════════════════════════════════════
+  Good: 25  Partial: 25  Poor: 0
+  <span class="hl">Entity Recall:    93%</span>
+  <span class="hl">Grounding Rate:   93%</span>
+  <span class="hl">Avg Latency:      13.8s</span>
+───────────────────────────────────────
+  easy    recall: 100%  good: 27%
+  medium  recall: 83%   good: 47%
+  hard    recall: 96%   good: 72%
+═══════════════════════════════════════</code></pre>
+
+    <div class="callout lime">
+      <strong>2026-04-13 Phase A/B 개선 효과</strong><br>
+      CONCEPT_EXPANSIONS 추가 + 3KB context cap (Karpathy 지적) + Neo4j 기반 동적 확장(Bush).
+      이전 대비 Recall 83% → 93%, Latency 20.7s → 13.8s, Hard Good Rate 25% → 72%.
+    </div>
+
+    <h2 id="config">comad.config.yaml</h2>
+    <p>도메인을 바꾸려면 YAML 한 파일만 수정합니다. <code>presets/</code> 디렉토리에 AI/ML, Web Dev, Finance, Biotech 4개 템플릿.</p>
+
+<pre><code><span class="kw">interests</span>:
+  high:
+    keywords: [<span class="hl">"LLM"</span>, <span class="hl">"MCP"</span>, <span class="hl">"GraphRAG"</span>, <span class="hl">"Neo4j"</span>]
+
+<span class="kw">sources</span>:
+  rss:
+    - https://openai.com/blog/rss.xml
+    - https://www.anthropic.com/rss.xml
+  arxiv:
+    categories: [cs.CL, cs.LG, cs.AI]
+  hn_queries: [<span class="hl">"MCP"</span>, <span class="hl">"agent"</span>, <span class="hl">"GraphRAG"</span>]
+  github_topics: [<span class="hl">"mcp"</span>, <span class="hl">"llm"</span>, <span class="hl">"rag"</span>]
+
+<span class="kw">must_read_stack</span>:
+  - <span class="hl">"Claude Code"</span>
+  - <span class="hl">"MCP"</span>
+  - <span class="hl">"Neo4j"</span></code></pre>
+
+    <div class="callout">
+      프리셋 전환: <code>cp presets/finance.yaml comad.config.yaml</code> → 크롤러·엔티티 추출·관련성 판정이 전부 금융 도메인으로 재구성됩니다. 코드 변경 없음.
+    </div>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="scheduler.html">← 스케줄러</a> · <a href="index.html">가이드 홈</a> · <a href="ear.html">다음: Ear →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

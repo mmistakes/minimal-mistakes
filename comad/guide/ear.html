@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ear — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html" class="active">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Ear</div>
+    <a href="#overview">개요 & 동작 방식</a>
+    <a href="#bot-setup">Discord 봇 설정</a>
+    <a href="#ccd">ccd 큐레이터 실행</a>
+    <a href="#archive">아카이브 포맷</a>
+    <a href="#digest">일일 digest HTML</a>
+    <a href="#ingest-brain">Brain 인제스트</a>
+    <a href="#feed-search">/search 자동 피드</a>
+    <a href="#config">관심사 프로필</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Ear — <em>뉴스 큐레이터</em></h1>
+      <p class="page-desc">
+        Discord 채널에 공유된 기사 링크를 자동 감지하여, 관련성을 3단계(필독/추천/참고)로 분류하고
+        마크다운으로 아카이브합니다. 매일 아침 digest HTML로 요약되고, 필독 기사는
+        <code>/search</code>로 자동 투입되어 자가진화 루프를 완성합니다.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Claude Code 세션</span>
+        <span class="tag">Discord MCP</span>
+        <span class="tag accent">필독 13%</span>
+        <span class="tag warm">일일 digest</span>
+        <span class="tag lime">→ /search 피드</span>
+      </div>
+    </div>
+
+    <h2 id="overview">개요 & 동작 방식</h2>
+    <p>Ear는 하나의 <strong>롱런닝 Claude Code 세션</strong>입니다. 자체 MCP 도구(<code>discord2</code> 채널)로 메시지를 받아 기사 링크를 감지하고, <code>WebFetch</code>로 원문을 가져와 분석·분류한 뒤 파일로 저장합니다.</p>
+
+<pre><code><span class="dim">Discord 메시지</span>
+  ↓ (discord2 MCP 채널)
+Ear 세션이 수신 감지
+  ↓ WebFetch
+원문 기사 fetch
+  ↓ Claude (이 세션 자체가 분석)
+관련성 3단계 분류
+  ↓
+<span class="hl">ear/archive/YYYY-MM-DD-slug.md</span>  ← YAML frontmatter + 요약
+  ↓
+Discord에 "아카이브 완료!" 짧게 응답</code></pre>
+
+    <div class="callout">
+      Ear 세션은 <code>ccd</code>라는 alias로 기동됩니다 — 별도의 Discord 토큰/채널을 쓰는 두 번째 bot입니다. 관리용 ccc와 분리되어 있어 큐레이션만 담당합니다.
+    </div>
+
+    <h2 id="bot-setup">Discord 봇 설정 (초회 1회)</h2>
+    <ol>
+      <li><a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a>에서 Application 생성 → Bot 추가 → Token 복사</li>
+      <li>Bot → <strong>Privileged Gateway Intents</strong>에서 <code>Message Content Intent</code> 활성화 (필수)</li>
+      <li>OAuth2 → URL Generator에서 scope=<code>bot</code>, 권한=Send/Read/Attach 체크 → 생성된 URL로 봇을 서버에 초대</li>
+      <li>토큰을 <code>~/.claude/channels/discord2/.env</code>에 저장:
+<pre><code>DISCORD_BOT_TOKEN=MTQ4...</code></pre></li>
+    </ol>
+
+    <h2 id="ccd">ccd 큐레이터 실행</h2>
+    <p><code>ccd</code> alias는 Ear 전용 Claude 세션을 시작합니다. <code>~/.zshrc</code>에 다음과 같이 정의됩니다:</p>
+<pre><code>alias ccd='claude --dangerously-skip-permissions \
+  --dangerously-load-development-channels server:discord2 \
+  --append-system-prompt "$(cat ~/Programmer/01-comad/comad-world/ear/CLAUDE.md)"'</code></pre>
+
+    <p>실행하면 상단에 다음과 같이 뜹니다:</p>
+<pre><code><span class="dim">  Listening for channel messages from: server:discord2
+  Experimental · inbound messages will be pushed into this session...</span></code></pre>
+
+    <div class="callout warm">
+      <strong>OAuth 주의</strong> — Ear는 반드시 GUI 세션(터미널 앱)에서 실행. launchd/cron에서 기동하면 OAuth keychain 잠금으로 실패합니다 (<a href="scheduler.html#why">스케줄러 가이드 참고</a>).
+    </div>
+
+    <h2 id="archive">아카이브 포맷</h2>
+    <p>저장 경로: <code>ear/archive/YYYY-MM-DD-slug.md</code> — 슬러그는 기사 제목의 영문 kebab-case. 모든 기사는 동일한 frontmatter 구조를 엄격히 유지합니다.</p>
+
+<pre><code>---
+date: <span class="hl">2026-04-12</span>
+relevance: <span class="hl">필독</span>
+categories: [<span class="hl">AI/LLM</span>, <span class="hl">Tool</span>, <span class="hl">OpenSource</span>]
+geeknews: https://news.hada.io/topic?id=28419
+source: https://github.com/example/repo
+---
+
+# Claude Code Auto Mode를 설계한 방법
+
+## 핵심 요약
+- (3~5개 핵심 포인트)
+
+## 왜 알아야 하는가
+(2~3문장 — 실무 영향)
+
+## 추가 리소스
+- [공식 문서](URL)
+- [관련 GitHub](URL)</code></pre>
+
+    <h3>3단 관련성 기준</h3>
+    <table>
+      <tr><th>등급</th><th>비율</th><th>기준</th></tr>
+      <tr><td><strong>필독</strong> 🔴</td><td>~13%</td><td>현재 스택(Claude Code/MCP/Neo4j/Bun) 직접 영향 · 보안 위협 · 패러다임 변화 · 자기 프로젝트 언급</td></tr>
+      <tr><td><strong>추천</strong> 🟡</td><td>~65%</td><td>핵심 관심 분야지만 당장 영향 없는 기사</td></tr>
+      <tr><td><strong>참고</strong> 🔵</td><td>~22%</td><td>트렌드 가치는 있으나 관련성 낮음</td></tr>
+    </table>
+
+    <h2 id="digest">일일 digest HTML</h2>
+    <p>매일 08:00 (스케줄러에 의해 자동 실행) <code>ear/generate-digest.js</code>가 <em>어제</em> 아카이브된 모든 기사를 모아 <code>ear/digests/YYYY-MM-DD-digest.html</code>로 생성합니다.</p>
+
+<pre><code><span class="dim"># 수동 실행</span>
+node ear/generate-digest.js              <span class="dim"># 어제 기준</span>
+node ear/generate-digest.js 2026-04-12   <span class="dim"># 특정 날짜</span></code></pre>
+
+    <div class="callout warm">
+      <strong>버그 수정 이력 (2026-04-13)</strong> — 이전에는 <code>toISOString()</code>이 UTC 반환이라 KST 08:00 cron에서 "이틀 전"을 타겟했었음. 로컬 컴포넌트 조립으로 수정 + 누락분 백필.
+    </div>
+
+    <h2 id="ingest-brain">Brain 인제스트</h2>
+    <p>Ear의 아카이브는 <code>ingest-geeknews.sh</code> cron(매일 09:30)이 Brain Neo4j로 임포트합니다. GeekNews 외 일반 블로그 포스트도 동일한 frontmatter 구조면 함께 처리됩니다.</p>
+
+<pre><code>bun run packages/ingester/src/geeknews-importer.ts
+<span class="dim"># → ~/Programmer/01-comad/comad-world/ear/archive/*.md 스캔
+# → Article / Topic / Technology 노드 MERGE
+# → 엔티티 추출(Haiku) + Claim 추출</span></code></pre>
+
+    <h2 id="feed-search">/search 자동 피드 (2026-04-13 추가)</h2>
+    <p><code>ear-ingest</code>가 매일 07:00 돌면서 <strong>필독</strong> + 핵심 카테고리(AI/LLM, Tool, OpenSource, Backend, Frontend, DevOps, Database, Language) 기사를 골라 기술 토큰을 추출하고 <code>/search</code>에 쿼리로 투입합니다.</p>
+
+<pre><code>bun run packages/search/src/ear-ingest.ts --since 1     <span class="dim"># 어제만</span>
+bun run packages/search/src/ear-ingest.ts --since 7     <span class="dim"># 지난 1주</span>
+bun run packages/search/src/ear-ingest.ts --dry-run     <span class="dim"># 쿼리만 미리보기</span></code></pre>
+
+    <h3>실제 동작 예</h3>
+<pre><code>ear-ingest: 5 article(s) pass filter (relevance=필독, since=3d)
+ <span class="hl">✓</span> 2026-04-12-managed-agents-brain-hands-separation — 4 queries, <span class="hl">47 adopts</span>
+ <span class="hl">✓</span> 2026-04-10-advisor-strategy-opus-sonnet         — 4 queries, 1 adopt
+ <span class="hl">✓</span> 2026-04-12-meta-hyperagents-self-referential    — 4 queries, 1 adopt
+
+ear-ingest: 5 articles, 12 queries, 49 adopt hits
+log: brain/data/ear-to-search.jsonl</code></pre>
+
+    <div class="callout lime">
+      <strong>자가진화 루프 폐쇄</strong> — Ear가 읽은 기사 → Brain에 노드로 저장 → 매일 아침 /search 쿼리로 변환 → 오프토픽 게이트 통과한 레포를 adoption 후보로 축적. 사람은 아침 digest HTML과 adoption 결과만 확인.
+    </div>
+
+    <h2 id="config">관심사 프로필</h2>
+    <p>Ear의 분류 기준은 <code>ear/CLAUDE.md</code>의 시스템 프롬프트와 <code>comad.config.yaml</code>의 <code>interests</code> 블록으로 구성됩니다. 프리셋 전환 시 자동 재구성.</p>
+
+    <div class="feature">
+      <h4>커스터마이징 포인트</h4>
+      <ul>
+        <li><code>interests.high.keywords</code> — "필독" 판정에 가중치</li>
+        <li><code>must_read_stack</code> — 현재 스택 (직접 영향 기준)</li>
+        <li><code>categories</code> — 분류 태그 화이트리스트</li>
+        <li>봇 응답 말투 — <code>ear/CLAUDE.md</code> "Voice & Tone" 섹션</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>ear/CLAUDE.md</code>, <code>ear/archive/</code>, <code>ear/digests/</code>, <code>ear/generate-digest.js</code>, <code>brain/packages/search/src/ear-ingest.ts</code></p>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="brain.html">← Brain</a> · <a href="index.html">가이드 홈</a> · <a href="eye.html">다음: Eye →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

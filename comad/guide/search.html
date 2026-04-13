@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html" class="active">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Search</div>
+    <a href="#overview">개요</a>
+    <a href="#phase1">Phase 1 — 탐색 & 평가</a>
+    <a href="#evaluator">3축 평가 + 게이트</a>
+    <a href="#phase2">Phase 2 — 플랜 생성</a>
+    <a href="#phase3">Phase 3 — Sandbox 검증</a>
+    <a href="#cache">plan cache</a>
+    <a href="#ear-feed">ear 자동 피드</a>
+    <a href="#stats">대시보드</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Search — <em>자기진화 파이프라인</em></h1>
+      <p class="page-desc">
+        GitHub · npm · PyPI · arXiv 병렬 탐색으로 레포/논문을 발굴 · 3축 평가 · 오프토픽 게이트 ·
+        채택 계획 자동 생성 · git worktree sandbox 검증 · 채택 이력 추적. 전체 3-Phase 파이프라인.
+      </p>
+      <div class="tag-row">
+        <span class="tag">TypeScript</span>
+        <span class="tag">Bun</span>
+        <span class="tag accent">4 sources parallel</span>
+        <span class="tag warm">off-topic gate</span>
+        <span class="tag lime">sandbox retry</span>
+      </div>
+    </div>
+
+    <h2 id="overview">개요</h2>
+    <p>Comad World의 자기진화 축. Brain이 축적한 트렌드를 질의로 변환해 외부에서 관련 레포를 찾고, 엄격한 평가와 sandbox 테스트를 거쳐 <strong>채택 의사결정 이력</strong>을 JSONL에 누적합니다.</p>
+
+<pre><code><span class="dim">쿼리</span>
+ ↓
+<span class="hl">Phase 1</span>  multi-source search (GitHub/npm/PyPI/arXiv 병렬)
+ ↓
+       evaluator (trust/quality/relevance + off-topic gate)
+ ↓       adopt · study · skip 3갈래 판정
+ ↓
+<span class="hl">Phase 2</span>  planner (패턴 레지스트리 기반 적용 계획)
+ ↓       plan-cache에 SHA1(query, constraints)로 저장
+ ↓
+<span class="hl">Phase 3</span>  sandbox (git worktree → bun install → tsc → bun test)
+ ↓       tests-retry(1회) + recordDecision
+ ↓
+plan-decisions.jsonl  ← 채택 이력 누적</code></pre>
+
+    <h2 id="phase1">Phase 1 — 탐색 & 평가</h2>
+<pre><code>bun run packages/search/src/cli.ts "knowledge graph MCP"
+bun run packages/search/src/cli.ts "RAG pipeline" --min-stars 500
+bun run packages/search/src/cli.ts "agent orchestration" --lang typescript --max 10</code></pre>
+
+    <h3>실제 출력</h3>
+<pre><code>[search] Searching multiple sources for: "mcp server stdio bun typescript"
+[search:pypi]        Found 0 packages
+[search:arxiv]       Found 1 papers with code
+[search:npm]         Found 5 packages
+[search:multiSource] 6 results from 3 sources (675ms)
+[search] Found 17 repos for "mcp server stdio bun typescript" (5 sub-queries, 2091ms)
+[search] Evaluating 17 candidates...
+[search] Done in 2104ms: <span class="hl">10 adopt, 2 study, 5 skip</span>
+
+### [ADOPT] neo4j-contrib/mcp-neo4j  (98점, 936 stars)
+Trust: 91 | Quality: 100 | Relevance: 100
+</code></pre>
+
+    <h2 id="evaluator">3축 평가 + 오프토픽 게이트</h2>
+    <p>각 레포는 세 점수를 받고, anti-signal을 감점합니다. 2026-04-13 추가된 <strong>오프토픽 게이트</strong>가 도메인 벗어난 후보(CRAQ같은 genome tool 등)를 차단합니다.</p>
+
+    <table>
+      <tr><th>축</th><th>가중치</th><th>입력</th></tr>
+      <tr><td><strong>trust</strong></td><td>0.2</td><td>star/fork 비율, 최근 커밋, issue 건강도, license 존재</td></tr>
+      <tr><td><strong>quality</strong></td><td>0.3</td><td>README 품질, CI 존재, 테스트 존재, getting-started 섹션</td></tr>
+      <tr><td><strong>relevance</strong></td><td>0.5</td><td><code>comad.config.yaml</code> 키워드 매칭 수</td></tr>
+    </table>
+
+    <h3>Anti-signals (8개)</h3>
+    <ul>
+      <li>마케팅 과잉 README (🚀🔥⚡ 연발, "blazing fast", "revolutionary")</li>
+      <li>라이선스 없음</li>
+      <li>이슈 대비 스타 비율 비정상 (방치 가능성)</li>
+      <li>6개월 이상 커밋 없음</li>
+      <li>스타 대비 포크 극히 낮음 (구경꾼 레포)</li>
+      <li>README에 시작 가이드 없음</li>
+      <li><strong>comad 스택과 무관한 도메인</strong> (genome/finance/game/physics/CMS 등)</li>
+      <li><strong>comad 핵심 키워드 미매치</strong> (knowledge graph/MCP/Neo4j/agent/RAG 중 하나도 없음)</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Adoption gate</strong> — <code>totalScore ≥ 0.5 && antiSignals ≤ 1 && !offTopic && coreMatch</code>. 이전 버전에서 CRAQ(genome assembly)가 "improvement"/"quality" 키워드로 adopt까지 올라갔던 버그를 수정.
+    </div>
+
+    <h2 id="phase2">Phase 2 — 플랜 생성</h2>
+    <p><code>--plan</code> 플래그를 붙이면 adopt 판정된 레포에 대해 패턴 레지스트리(<code>patterns.ts</code>) 기반으로 구체적 파일 변경 계획을 만듭니다.</p>
+
+<pre><code>bun run packages/search/src/cli.ts "mcp server stdio" --plan --plan-count 3</code></pre>
+
+<pre><code>## Adoption Plan: neo4j-contrib/mcp-neo4j
+
+<span class="hl">Summary:</span> 3개 패턴을 brain/packages/mcp-server에 적용
+<span class="hl">Effort:</span>  moderate
+<span class="hl">Target:</span>  brain/packages/graphrag, brain/packages/mcp-server
+
+### Changes (3)
+- <span class="kw">modify</span> brain/packages/graphrag/src/index.ts
+  mcp-neo4j의 RAG 구현 패턴 비교 — retrieval 전략, context window 관리
+  Pattern: <span class="hl">RAG pipeline</span>
+- <span class="kw">modify</span> brain/packages/mcp-server/src/server.ts
+  Pattern: <span class="hl">MCP integration</span>
+
+### Risks
+- <span class="hl">[MEDIUM]</span> MCP 서버 수정은 모든 Claude Code 도구에 영향
+  Mitigation: 기존 테스트 통과 확인 후 반영</code></pre>
+
+    <h2 id="phase3">Phase 3 — Sandbox 검증</h2>
+    <p><code>--apply N</code>으로 N번째 플랜을 실제 git worktree에 격리해 검증합니다. <code>bun install + npx tsc --noEmit + bun test</code> 순서로 실행하고, transient 실패 시 <strong>1회 재시도</strong>합니다.</p>
+
+<pre><code>bun run packages/search/src/cli.ts "mcp server stdio" --max 3 --apply 1
+<span class="dim"># --dry-run 으로 plan 표시만, sandbox 생성 안 함</span></code></pre>
+
+<pre><code>[cache] Reusing 3 plans for "mcp server stdio"
+[search] Sandbox created: .worktrees/search-adopt-neo4j-contrib-mcp-neo4j-...
+
+Running verification (typecheck + tests)...
+### Verification Results
+  Typecheck: <span class="hl">PASS</span>
+  Tests:     <span class="hl">PASS</span>  (152/152)
+  Duration:  4506ms
+  Branch:    search/adopt-neo4j-contrib-mcp-neo4j-1776...
+
+[PASS] All checks passed. Worktree ready for merge.
+
+<span class="dim">→ brain/data/plan-decisions.jsonl 에 기록:</span>
+{"date":"2026-04-13","repo_name":"neo4j-contrib/mcp-neo4j",
+ "patterns":["RAG pipeline","MCP integration"],
+ "decision":"approved","applied":true,"outcome":"positive",...}</code></pre>
+
+    <h2 id="cache">plan-cache</h2>
+    <p><code>--apply 1</code>, <code>--apply 2</code>를 연속 호출할 때 매번 search+plan을 다시 돌리면 30-120초씩 걸리고 외부 API도 호출합니다. plan-cache가 SHA1(query, constraints)로 결과를 1시간 캐시해서 두 번째부터는 sandbox만 바로 생성됩니다.</p>
+
+<pre><code>data/search-cache/a3b5f9c2d1e47890.json
+  {
+    "ts": 1776013505955,
+    "plans": [ ...3 plans... ]
+  }</code></pre>
+
+    <h2 id="ear-feed">ear 자동 피드</h2>
+    <p><code>ear-ingest</code>(매일 07:00)가 어제 필독 기사에서 기술 토큰을 뽑아 <code>/search</code>에 자동 투입합니다. 자세한 내용은 <a href="ear.html#feed-search">Ear 가이드 — /search 자동 피드</a>.</p>
+
+    <h2 id="stats">대시보드</h2>
+<pre><code>bun run packages/search/src/cli.ts --stats</code></pre>
+
+<pre><code>## /search System Health Dashboard
+
+### Metrics Trend
+  Total runs:         23
+  Avg latency:        11,153ms
+  Avg adopt rate:     53.0%
+  Trend:              <span class="hl">improving</span>
+
+### Pattern Confidence
+  RAG pipeline:       5 approvals, 0 reverts  (1.00)
+  MCP integration:    8 approvals, 1 revert   (0.88)
+  Knowledge graph:    3 approvals, 0 reverts  (1.00)
+
+### Survival Analysis
+  Total files tracked:   24
+  Survived:              19
+  Modified:               3
+  Reverted:               2
+  Avg survival score:    0.79</code></pre>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>brain/packages/search/src/{cli,evaluator,planner,sandbox,plan-cache,plan-tracker,survival,ear-ingest}.ts</code>, <code>brain/data/plan-decisions.jsonl</code></p>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="eye.html">← Eye</a> · <a href="index.html">가이드 홈</a> · <a href="photo.html">다음: Photo →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

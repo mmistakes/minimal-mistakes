@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voice — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html" class="active">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Voice</div>
+    <a href="#overview">개요</a>
+    <a href="#claudemd">CLAUDE.md 트리거</a>
+    <a href="#triggers">트리거 목록</a>
+    <a href="#t5-session">T5 — 세션 저장 & 인수인계</a>
+    <a href="#t15-review">T15 — 상황 검토</a>
+    <a href="#chaining">Brain/Ear/Eye 연동</a>
+    <a href="#customize">커스터마이징</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Voice — <em>워크플로우 하네스</em></h1>
+      <p class="page-desc">
+        Claude Code의 루트 <code>CLAUDE.md</code>에 정의된 트리거들이 특정 키워드를 감지해 자동 워크플로우를 발동합니다.
+        "상황 검토해봐" 한마디로 코드베이스 진단이 실행되고, "저장해줘"로 세션 인수인계 문서가 만들어집니다.
+      </p>
+      <div class="tag-row">
+        <span class="tag">CLAUDE.md</span>
+        <span class="tag accent">6 triggers</span>
+        <span class="tag warm">natural language</span>
+        <span class="tag lime">non-developer friendly</span>
+      </div>
+    </div>
+
+    <h2 id="overview">개요</h2>
+    <p>Claude Code는 작업 시작 시 루트 <code>CLAUDE.md</code>를 읽고 그 내용을 시스템 프롬프트로 내재화합니다. Voice는 이 메커니즘을 활용해 <strong>자주 쓰는 워크플로우를 한국어 트리거 키워드로 자동화</strong>합니다.</p>
+
+<pre><code><span class="dim">동작 모델:</span>
+
+Claude Code 시작
+  ↓
+CLAUDE.md 로드 (Nexus + OMC + comad Voice)
+  ↓
+사용자 입력
+  ↓
+키워드 매칭 검사
+  ↓
+  매칭 → 해당 트리거 skill/agent 자동 실행
+  미매칭 → 일반 대화</code></pre>
+
+    <h2 id="claudemd">CLAUDE.md 트리거</h2>
+    <p>Voice의 트리거 정의는 <code>~/.claude/CLAUDE.md</code>의 <strong>Comad Voice</strong> 섹션에 있습니다. 현재 Nexus autonomous trigger(#14~16)와 중복되지 않는 3개만 활성.</p>
+
+<pre><code><span class="dim"># ~/.claude/CLAUDE.md (발췌)</span>
+
+## T0. 온보딩 (첫 세션 감지)
+감지 조건: .comad/ 폴더 없음 + 첫 대화 시작 시
+→ 프로젝트 자동 탐색 + 환영 메시지
+
+## T4. 레포 광택 (Repo Polish)
+감지: "광택", "레포 정리", "repo polish"
+→ SCAN → DIAGNOSE → GENERATE → RELEASE → VERIFY 5단계
+
+## T5. 세션 저장 & 인수인계
+감지: "저장해줘", "여기까지", "다음에 이어서"
+→ git diff 추적 + 세션 요약 파일 생성</code></pre>
+
+    <h2 id="triggers">트리거 목록</h2>
+
+    <table>
+      <tr><th>코드</th><th>트리거</th><th>역할</th></tr>
+      <tr><td><strong>T0</strong></td><td>(자동 감지)</td><td>온보딩 — 프로젝트 자동 탐색 + 가능한 명령 안내</td></tr>
+      <tr><td><strong>T4</strong></td><td>"광택", "레포 정리"</td><td>GitHub 레포를 인기 오픈소스 수준으로 포장 (README 뱃지, CHANGELOG, Issue/PR 템플릿, Social Preview, CI 게이트)</td></tr>
+      <tr><td><strong>T5</strong></td><td>"저장해줘", "여기까지"</td><td>세션 요약 + 인수인계 문서 생성</td></tr>
+      <tr><td><strong>T15</strong></td><td>"상황 검토", "검토해봐", "개선 가능성"</td><td>코드베이스 진단 + 3-5개 개선 카드 제시 (난이도/효과 표기)</td></tr>
+      <tr><td>(Nexus #14)</td><td>"풀사이클", "end-to-end"</td><td>RESEARCH → DECOMPOSE → EXPERIMENT → INTEGRATE → POLISH → DELIVER 6-stage</td></tr>
+      <tr><td>(Nexus #16)</td><td>(자동)</td><td>멀티-AI 병렬 가능 감지 (5-Point 체크리스트)</td></tr>
+    </table>
+
+    <h2 id="t5-session">T5 — 세션 저장 & 인수인계</h2>
+
+<pre><code><span class="kw">You:</span> 저장해줘
+
+<span class="hl">Claude (T5):</span>
+git diff --stat 추적:
+  · 수정 파일: 8개 (brain/packages/graphrag/src/*, 문서 3건)
+  · 실험 결과: benchmark recall 83→93%, latency 20.7→13.8s
+  · 발견 문제: Discord 봇 OAuth 이슈 (메모리 파일로 저장)
+
+세션 요약 저장:
+  .comad/sessions/2026-04-13-1537.md
+  ✓ 완료 작업 6건
+  ✓ 미완료 작업 2건 (meta-edge 분할, 그래프 50K)
+  ✓ 핵심 결정 3건
+  ✓ 주의점 1건
+
+MEMORY.md 업데이트:
+  ✓ 링크 추가: Session 2026-04-13
+
+상태 파일 업데이트:
+  ✓ .comad/state.json (lastSession, pendingTasks)
+
+다음 세션에서 "이어서 해줘" 또는 "어디까지 했어?"로 재개 가능.</code></pre>
+
+    <h2 id="t15-review">T15 — 상황 검토</h2>
+
+<pre><code><span class="kw">You:</span> 검토해봐
+
+<span class="hl">Claude (T15):</span>
+코드베이스 탐색 + 최근 커밋 분석 중...
+
+── 현재 상태 ──────────────
+  · 커밋: 최근 2주 23건, 주로 graphrag 개선
+  · 테스트: 197 pass, 0 fail
+  · 타입체크: 깨끗
+  · 객관적 스코어: 91/100
+
+── 개선 카드 (5개) ────────
+
+[1] <span class="hl">Scalability 71→80</span>  ★★☆ (effort: medium)
+    그래프 27K → 50K 노드로 성장 필요
+    실행: crawl-arxiv --limit 300 × N회 (cron 누적)
+    예상: 2-3주
+
+[2] <span class="hl">Simplicity 94→96</span>  ★☆☆ (effort: low)
+    analysis-tools.ts 444 LOC, resume-ingest.ts 451 LOC 분할
+    실행: 각 파일을 3-4 모듈로 쪼갬
+    예상: 1-2시간
+
+[3] <span class="hl">Performance 91→95</span>  ★★☆ (effort: medium)
+    GraphRAG latency 13.8s → 10s
+    실행: subgraph retriever 쿼리 최적화, synth cache TTL 확대
+    예상: 4-6시간
+
+[4] ear-ingest 쿼리 품질     ★★★ (effort: high)
+[5] 벤치마크 3회 평균화       ★☆☆ (effort: low)
+
+어느 카드부터 진행할까요?</code></pre>
+
+    <div class="callout">
+      T15의 힘은 <strong>구체적 실행 방법</strong>과 <strong>예상 소요 시간</strong>을 같이 제시한다는 것.
+      "더 좋게 만들 수 있을까?"라는 막연한 질문을 실행 가능한 선택지로 바꿉니다.
+    </div>
+
+    <h2 id="chaining">Brain/Ear/Eye 연동</h2>
+    <p>Voice 트리거는 다른 comad 모듈을 호출할 수 있습니다:</p>
+
+    <ul>
+      <li>T15 검토 시 <code>comad_brain_impact</code>로 레퍼런스 엔티티 영향도 분석</li>
+      <li>T5 세션 저장 시 주요 결정을 Brain Neo4j의 <code>Claim</code> 노드로 자동 저장</li>
+      <li>T0 온보딩 시 <code>comad_brain_search</code>로 유사 프로젝트 기존 패턴 조회</li>
+    </ul>
+
+    <h2 id="customize">커스터마이징</h2>
+    <p>새 트리거를 만들려면 <code>~/.claude/CLAUDE.md</code>의 <strong>Comad Voice</strong> 섹션을 편집합니다.</p>
+
+<pre><code>## T&lt;N&gt;. &lt;이름&gt;
+
+**감지 키워드:** "단어1", "단어2", "문장 형태 3", ...
+
+1. &lt;단계 1 설명&gt;
+2. &lt;단계 2 설명&gt;
+   ...
+</code></pre>
+
+    <div class="callout warm">
+      <strong>Nexus autonomous trigger와 중복되지 않게</strong> — Nexus 시스템(CLAUDE.md 상단)이 이미 많은 자동 행동을 정의합니다. 새 트리거는 Nexus에서 커버 안 되는 도메인 특화 작업에만 추가하세요.
+    </div>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>~/.claude/CLAUDE.md</code> (Comad Voice 섹션), <code>voice/</code>, <code>.comad/sessions/</code>, <code>.comad/state.json</code></p>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="sleep.html">← Sleep</a> · <a href="index.html">가이드 홈</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

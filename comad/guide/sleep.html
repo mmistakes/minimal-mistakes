@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html" class="active">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Sleep</div>
+    <a href="#overview">개요</a>
+    <a href="#types">메모리 유형</a>
+    <a href="#trigger">dream 실행</a>
+    <a href="#memory-md">MEMORY.md 인덱스</a>
+    <a href="#mcp">MCP 서버</a>
+    <a href="#policy">정리 정책</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Sleep — <em>메모리 정리 에이전트</em></h1>
+      <p class="page-desc">
+        Claude Code의 프로젝트별 auto memory 디렉토리를 전수 스캔해 중복 감지, 통합, 오래된 기록 정리를 수행합니다.
+        "dream" 한 마디로 발동되며, 변경 이력을 MCP 서버로 조회할 수 있습니다.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Bun</span>
+        <span class="tag">MCP server</span>
+        <span class="tag accent">auto memory</span>
+        <span class="tag warm">cross-project</span>
+      </div>
+    </div>
+
+    <h2 id="overview">개요</h2>
+    <p>Claude Code는 각 프로젝트마다 <code>~/.claude/projects/&lt;cwd&gt;/memory/</code>에 자동 메모리를 저장합니다. 시간이 쌓이면 중복, 오래된 정보, 파편화된 내용이 축적되는데, Sleep이 이를 주기적으로 정리합니다.</p>
+
+<pre><code><span class="dim">Before sleep:</span>
+memory/project_session_20260412.md   (62 lines)
+memory/project_session_20260408.md   (70 lines)
+memory/feedback_ci_check.md          (동일 내용)
+memory/feedback_ci_after_push.md     (거의 동일)
+MEMORY.md                            (1,333 lines, 많은 링크 깨짐)
+
+<span class="dim">After sleep (dream):</span>
+memory/project_session_20260412.md   (5 lines, 요약본)
+memory/project_session_20260408.md   (6 lines)
+<span class="hl">feedback_ci_check.md 삭제</span>
+feedback_ci_after_push.md            (통합 버전)
+MEMORY.md                            (1,166 lines, 링크 전수 검증)</code></pre>
+
+    <h2 id="types">메모리 유형</h2>
+    <p>자동 메모리는 4가지로 분류됩니다. Sleep은 유형별로 다른 정리 정책을 적용합니다.</p>
+
+    <table>
+      <tr><th>유형</th><th>내용</th><th>정리 정책</th></tr>
+      <tr><td><strong>user</strong></td><td>사용자의 역할, 선호, 지식 수준</td><td>거의 변하지 않음. 중복만 제거</td></tr>
+      <tr><td><strong>feedback</strong></td><td>사용자가 준 피드백 (하지 마/계속 이렇게 해)</td><td>유사 항목 통합, 왜 &amp; 언제 적용 명시</td></tr>
+      <tr><td><strong>project</strong></td><td>진행 중인 작업, 목표, 데드라인, 기술 결정</td><td>시간 지난 세션 요약 압축, 최근 3-5개만 상세 유지</td></tr>
+      <tr><td><strong>reference</strong></td><td>외부 시스템 포인터 (Linear 프로젝트 URL 등)</td><td>링크 깨짐 확인, 중복 제거</td></tr>
+    </table>
+
+    <h2 id="trigger">dream 실행</h2>
+    <p>아무 Claude Code 세션에서 "dream" 또는 "정리해줘" 등 트리거 문구를 입력하면 comad-sleep 에이전트가 발동됩니다.</p>
+
+<pre><code><span class="kw">You:</span> dream
+
+<span class="hl">Claude (comad-sleep):</span>
+ComadSleep Report — 2026-04-13T03:13Z
+Scanned: 6 projects, 47 files
+Backup: ~/.claude/memory-backup-2026-04-13T031330
+
+Stale locks removed: 3
+
+Changes (13):
+  · project_improvement_status.md       58줄 → 44줄 (현행화)
+  · project_session_20260412.md         62줄 → 5줄 (04-13이 후속 세션이라 압축)
+  · feedback_ci_check.md                <span class="hl">삭제</span> (ci_after_push와 중복)
+  · feedback_ci_after_push.md           CI 정책 통합본으로 재작성
+  · reference_neo4j_shared.md           eye 포트 7688→7687 (PR #1 반영)
+  · ... (8건 더)
+
+결과:
+  주요 프로젝트 메모리: 693줄 → 533줄 (-23%)
+  전체 메모리: 47 files, 1,166줄
+  22개 MEMORY.md 링크 전수 검증: 전부 OK</code></pre>
+
+    <div class="callout">
+      <strong>백업 자동 생성</strong> — 정리 전 원본이 <code>~/.claude/memory-backup-&lt;timestamp&gt;/</code>에 복사됩니다. 잘못된 병합으로 정보가 사라지면 언제든 복원.
+    </div>
+
+    <h2 id="memory-md">MEMORY.md 인덱스</h2>
+    <p>각 프로젝트의 <code>memory/MEMORY.md</code>는 세부 메모리 파일들을 한 줄 요약으로 엮은 인덱스입니다. Sleep이 항상 이 인덱스의 일관성을 유지합니다.</p>
+
+<pre><code><span class="dim"># memory/MEMORY.md</span>
+- [Session 2026-04-13](project_session_20260413.md) — GraphRAG recall 93%, 크론 OAuth 해결, LaunchAgent 마이그레이션
+- [Session 2026-04-12](project_session_20260412.md) — 자가진화 6 Phase, 스코어 84/100
+- [Pending tasks](project_pending_tasks.md) — meta-edge 분할 · 50K 그래프 성장
+- [/search skill](project_search_skill_plan.md) — 멀티소스 + Neo4j 저장 + 주간 CRON 구현 완료
+- [Design simplicity](feedback_design_simplicity.md) — Karpathy 기준 심플리시티 선호
+- ...</code></pre>
+
+    <h2 id="mcp">MCP 서버 — 조회</h2>
+    <p>comad-sleep은 MCP 서버도 제공합니다. 정리 이력과 메타데이터를 대화로 조회.</p>
+
+    <table>
+      <tr><th>도구</th><th>용도</th></tr>
+      <tr><td><code>comad_sleep_info</code></td><td>마지막 dream 실행 시각, 다음 권장 실행 일정</td></tr>
+      <tr><td><code>comad_sleep_history</code></td><td>최근 N회의 dream 리포트 (무엇이 바뀌었나)</td></tr>
+    </table>
+
+    <h2 id="policy">정리 정책</h2>
+    <p>Sleep이 자동으로 판단하는 규칙들:</p>
+
+    <h3>무엇을 저장하지 말 것 (중복되는 기억)</h3>
+    <ul>
+      <li>코드 패턴/컨벤션/아키텍처 — <code>git log</code>/소스가 진실</li>
+      <li>디버깅 해결책 — 커밋 메시지에 이미 있음</li>
+      <li>현재 대화 중인 task 상태 — 일시적 정보</li>
+      <li>CLAUDE.md에 이미 명시된 것</li>
+    </ul>
+
+    <h3>세션 파일 압축 타이밍</h3>
+    <ul>
+      <li>같은 작업의 후속 세션이 있으면 <strong>이전 세션을 5-10줄로 압축</strong> (링크와 핵심 결정만)</li>
+      <li>30일 이상 지난 세션은 자동 요약 후보</li>
+      <li>"How to apply" 섹션이 있는 기억은 TTL이 명시된 경우에만 삭제</li>
+    </ul>
+
+    <div class="callout warm">
+      <strong>트리거 자동화</strong> — SessionStart hook이 MEMORY.md 라인 수를 확인해 150줄 초과면 "dream"을 제안합니다. 직접 말 안 해도 Claude가 먼저 안내.
+    </div>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>sleep/</code>, <code>sleep/mcp-server/</code>, <code>~/.claude/projects/*/memory/</code></p>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="photo.html">← Photo</a> · <a href="index.html">가이드 홈</a> · <a href="voice.html">다음: Voice →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

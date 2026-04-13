@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eye — Comad 가이드</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/comad" class="brand" style="color:var(--text)">Comad World <span class="sub">가이드</span></a>
+  <nav>
+    <a href="index.html">홈</a>
+    <a href="scheduler.html">스케줄러</a>
+    <a href="brain.html">Brain</a>
+    <a href="ear.html">Ear</a>
+    <a href="eye.html" class="active">Eye</a>
+    <a href="search.html">Search</a>
+    <a href="photo.html">Photo</a>
+    <a href="sleep.html">Sleep</a>
+    <a href="voice.html">Voice</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="toc">
+    <div class="toc-title">Eye</div>
+    <a href="#overview">개요</a>
+    <a href="#install">설치</a>
+    <a href="#pipeline">파이프라인 6단계</a>
+    <a href="#lenses">분석 렌즈 (10개)</a>
+    <a href="#web-ui">웹 UI</a>
+    <a href="#mcp">MCP 도구 (7개)</a>
+    <a href="#predictions">예측 추적</a>
+    <a href="#cors">배포 설정</a>
+  </aside>
+
+  <main>
+    <div class="page-hero">
+      <h1>Eye — <em>예측 시뮬레이션 엔진</em></h1>
+      <p class="page-desc">
+        텍스트 입력(뉴스·보고서·논문)을 온톨로지 그래프로 변환하고, 10개 분석 렌즈를 통해
+        전파 시뮬레이션을 돌려 종합 보고서를 생성합니다. FastAPI 백엔드 + Next.js UI + 7 MCP 도구.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Python 3.13</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Next.js 16</span>
+        <span class="tag">Neo4j 5</span>
+        <span class="tag">Ollama</span>
+        <span class="tag accent">BGE-M3</span>
+        <span class="tag warm">MCP 7 tools</span>
+      </div>
+    </div>
+
+    <h2 id="overview">개요</h2>
+    <p>Brain이 "무엇이 있는가"를 다룬다면, Eye는 "만약 X가 바뀌면 무슨 일이 일어나는가"를 다룹니다. 입력 텍스트에서 엔티티를 뽑아 별도의 Eye Neo4j 인스턴스(port 7687)에 그래프를 만들고, 각 노드의 변화가 이웃 노드에 얼마나 전파되는지 시뮬레이션합니다.</p>
+
+    <figure class="shot">
+      <img src="assets/img/eye-dashboard.png" alt="Eye dashboard">
+      <figcaption>Eye 대시보드 — 분석 목록, 렌즈 선택, 사이드바 네비게이션.</figcaption>
+    </figure>
+
+    <h2 id="install">설치</h2>
+<pre><code><span class="dim"># Python venv + 의존성</span>
+cd eye
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+<span class="dim"># 환경 변수 (2026-04-12 @kht2199 PR로 정규화)</span>
+cp .env.example .env
+<span class="dim"># NEO4J_URI=bolt://localhost:7687  ← 7688이 아닌 7687 (brain과 분리된 DB)</span>
+<span class="dim"># CORS_ALLOW_ORIGINS=http://localhost:3000</span>
+
+<span class="dim"># Neo4j 컨테이너</span>
+docker compose up -d
+
+<span class="dim"># FastAPI</span>
+python -m api.server              <span class="dim"># http://localhost:8000</span>
+
+<span class="dim"># Next.js 프론트엔드</span>
+cd web && npm install && npm run dev   <span class="dim"># http://localhost:3000</span></code></pre>
+
+    <div class="callout warm">
+      Eye와 Brain은 <strong>별도 Neo4j 인스턴스</strong>를 씁니다 — eye:7687, brain:7688. 공유하지 않는 이유는 스키마가 다르고 (Eye는 분석 공간 레이어 포함) 트랜잭션 메모리 경쟁 때문입니다.
+    </div>
+
+    <h2 id="pipeline">파이프라인 6단계</h2>
+    <ol>
+      <li><strong>Ingestion</strong> — 텍스트 입력(파일/URL) 받아 청킹 + 임베딩(BGE-M3)</li>
+      <li><strong>Entity Extraction</strong> — Ollama(또는 Haiku) 기반 엔티티·관계·Claim 추출</li>
+      <li><strong>Graph Construction</strong> — Eye Neo4j에 노드/엣지 MERGE, analysis_space 태깅</li>
+      <li><strong>Community Detection</strong> — Leiden 기반 3단계 계층</li>
+      <li><strong>Propagation Simulation</strong> — 각 렌즈별로 변화 전파 확률 시뮬레이션 (N round)</li>
+      <li><strong>Report Generation</strong> — 렌즈별 해석 + 종합 예측 보고서 생성</li>
+    </ol>
+
+    <figure class="shot">
+      <img src="assets/img/eye-new-analysis.png" alt="New analysis form">
+      <figcaption>새 분석 생성 — 텍스트 붙여넣기, 렌즈 선택, 시뮬레이션 파라미터(round, threshold).</figcaption>
+    </figure>
+
+    <h2 id="lenses">분석 렌즈 (10개)</h2>
+    <p>실존 인물/이론에 기반한 10개 분석 프레임워크. 각 렌즈는 서로 다른 축으로 그래프를 해석합니다.</p>
+
+    <table>
+      <tr><th>렌즈</th><th>기반</th><th>질문</th></tr>
+      <tr><td><strong>Sun Tzu</strong></td><td>손자병법</td><td>상대 조직의 약점·강점·집중 포인트는?</td></tr>
+      <tr><td><strong>Adam Smith</strong></td><td>보이지 않는 손</td><td>자기 이익 추구의 집합이 만드는 시장 균형</td></tr>
+      <tr><td><strong>Taleb</strong></td><td>안티프래질</td><td>꼬리 리스크 · 비대칭 노출 · 블랙스완</td></tr>
+      <tr><td><strong>Kahneman</strong></td><td>Thinking Fast & Slow</td><td>의사결정 편향 · System 1/2</td></tr>
+      <tr><td><strong>Meadows</strong></td><td>시스템 사고</td><td>피드백 루프 · 레버리지 포인트</td></tr>
+      <tr><td>Clausewitz</td><td>전쟁론</td><td>목적 · 수단 · 마찰 (옵션)</td></tr>
+      <tr><td>Darwin</td><td>진화론</td><td>적응 · 선택 압력 (옵션)</td></tr>
+      <tr><td colspan="3" style="color:var(--text-muted);font-style:italic;">+ 3 legacy lenses (Porter's Five Forces, SWOT, PEST)</td></tr>
+    </table>
+
+    <h2 id="web-ui">웹 UI</h2>
+    <p>Next.js 16 기반 React 앱. 분석 실행, 결과 조회, 렌즈별 Q&amp;A, 리포트 다운로드.</p>
+
+    <figure class="shot">
+      <img src="assets/img/eye-qa.png" alt="Eye Q&A">
+      <figcaption>렌즈별 Q&amp;A — 생성된 그래프에 대해 특정 렌즈 관점으로 자연어 질의.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <img src="assets/img/eye-report.png" alt="Eye report">
+      <figcaption>종합 보고서 — 각 렌즈의 핵심 발견, 전파 경로, 예측 타임라인.</figcaption>
+    </figure>
+
+    <h2 id="mcp">MCP 도구 (7개)</h2>
+    <p>Claude Code에서 자연어로 호출 가능.</p>
+    <table>
+      <tr><th>도구</th><th>역할</th></tr>
+      <tr><td><code>comad_eye_analyze</code></td><td>텍스트 제출 → 파이프라인 실행 → 분석 ID 반환</td></tr>
+      <tr><td><code>comad_eye_preflight</code></td><td>입력 검증 · 예상 처리 시간 · 비용 estimate</td></tr>
+      <tr><td><code>comad_eye_ask</code></td><td>특정 분석에 대해 렌즈별 Q&amp;A</td></tr>
+      <tr><td><code>comad_eye_jobs</code></td><td>진행 중인 분석 목록 · 상태 (queued/running/done)</td></tr>
+      <tr><td><code>comad_eye_report</code></td><td>완료된 분석 리포트 조회</td></tr>
+      <tr><td><code>comad_eye_lenses</code></td><td>사용 가능한 렌즈 목록 + 설명</td></tr>
+      <tr><td><code>comad_eye_status</code></td><td>Eye 서비스 헬스 체크</td></tr>
+    </table>
+
+    <h2 id="predictions">예측 추적 (Closed-Loop Learning)</h2>
+    <p>분석 결과에 포함된 예측은 verification deadline과 함께 저장됩니다. 시간이 지난 후 실제 결과를 입력하면 정확도가 측정되고, 그 피드백이 다음 분석에 반영됩니다.</p>
+<pre><code>Prediction: "GPU 가격이 Q4까지 15% 상승할 것"
+verification_deadline: 2026-12-31
+<span class="dim">...시간 경과...</span>
+Actual: 12% (input via web UI)
+→ 해당 유형 예측 정확도: <span class="hl">0.73 → 0.71</span>  (다음 예측 신뢰도 조정)</code></pre>
+
+    <h2 id="cors">배포 설정</h2>
+    <p>프로덕션 배포 시 CORS allowlist를 환경변수로 주입합니다 (하드코딩 해제됨).</p>
+
+<pre><code><span class="dim"># .env</span>
+CORS_ALLOW_ORIGINS=https://eye.example.com,https://app.example.com
+
+<span class="dim"># 또는 구버전 호환 이름</span>
+COMADEYE_CORS_ALLOW_ORIGINS=...</code></pre>
+
+    <div class="callout">
+      값이 비면 <code>http://localhost:3000</code>이 기본값. 여러 오리진은 쉼표로 구분.
+    </div>
+
+    <p style="margin-top:3rem;font-size:0.85rem;color:var(--text-dim);">관련 파일: <code>eye/api/</code>, <code>eye/pipeline/</code>, <code>eye/simulation/</code>, <code>eye/lenses/</code>, <code>eye/web/</code>, <code>eye/.env.example</code></p>
+
+  </main>
+</div>
+
+<footer class="page-foot">
+  <a href="ear.html">← Ear</a> · <a href="index.html">가이드 홈</a> · <a href="search.html">다음: Search →</a>
+</footer>
+
+<script src="assets/js/guide.js"></script>
+</body>
+</html>
