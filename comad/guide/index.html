@@ -100,7 +100,8 @@ comad upgrade --dry-run   <span style="color:var(--text-dim)"># preview changes<
 comad upgrade             <span style="color:var(--text-dim)"># pull + deps + agents + auto-backup</span>
 comad backups             <span style="color:var(--text-dim)"># list snapshots</span>
 comad rollback &lt;ts&gt;       <span style="color:var(--text-dim)"># restore a prior snapshot</span></code></pre>
-  <p style="color:var(--text-dim);font-size:0.82rem;margin-top:0.8rem;">루트 <code>VERSION</code> (semver) + <code>comad.lock</code> (6개 모듈 branch+SHA 고정)으로 package-lock.json처럼 조합을 재현 가능. 기존 설치 사용자는 한 번 <code>git pull origin main &amp;&amp; ./install.sh</code> 하면 <code>comad</code> 명령이 생깁니다. 세부: <a href="https://github.com/kinkos1234/comad-world#upgrading" style="color:var(--teal)">README § Upgrading</a>.</p>
+  <p style="color:var(--text-dim);font-size:0.82rem;margin-top:0.8rem;">루트 <code>VERSION</code> (semver) + <code>comad.lock</code> (6개 모듈 branch+SHA 고정)으로 package-lock.json처럼 조합을 재현 가능. 기존 설치 사용자는 한 번 <code>git pull origin main &amp;&amp; ./install.sh</code> 하면 <code>comad</code> 명령이 생깁니다. 세부: <a href="https://github.com/kinkos1234/comad-world#upgrading" style="color:var(--accent)">README § Upgrading</a>.</p>
+  <p style="color:var(--text-dim);font-size:0.82rem;margin-top:0.4rem;">📂 <strong>경로 무관</strong> — 어느 폴더, 어느 이름으로 클론해도 동작합니다. <code>scripts/comad</code>가 자기 심링크를 따라 repo root를 찾고, <code>scripts/render-templates.sh</code>가 <code>{{COMAD_ROOT}}</code> 플레이스홀더를 install/upgrade 시점에 절대경로로 치환합니다. <code>~/Desktop/내-에이전트</code>, <code>/opt/comad</code> 어디든 OK.</p>
 </div>
 
 </div>
