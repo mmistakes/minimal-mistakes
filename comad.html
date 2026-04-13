@@ -720,6 +720,22 @@
   <p class="reveal" style="font-size:0.88rem;color:var(--text-dim);margin-top:1.2rem;max-width:640px;line-height:1.8;">
     <span data-i18n="qs.req">Requires: Node.js 20+, Python 3.13+, Neo4j 5, Bun. The install script handles dependency setup and Neo4j schema init. For scheduled jobs, run <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">brain/scripts/schedule-install.sh</code> — it auto-detects macOS (LaunchAgents), Linux/WSL (cron), or Windows (Task Scheduler). See the <a href="https://github.com/kinkos1234/comad-world" style="color:var(--teal);text-decoration:none;">README</a>.</span>
   </p>
+
+  <div class="reveal" style="margin-top:2rem;">
+    <div class="section-label" data-i18n="qs.upgrade.label">Upgrading</div>
+    <h3 data-i18n="qs.upgrade.title" style="font-size:1.2rem;margin:0.4rem 0 0.8rem 0;">Already installed? <em>One command.</em></h3>
+    <div class="code-flow">
+      <span class="dim"># Any directory — installed as ~/.local/bin/comad by install.sh</span><br>
+      comad status              <span class="dim"># VERSION + module SHAs</span><br>
+      comad upgrade --dry-run   <span class="dim"># preview changes</span><br>
+      comad upgrade             <span class="dim"># pull + deps + agents + auto-backup</span><br>
+      comad rollback &lt;ts&gt;       <span class="dim"># restore a snapshot</span>
+    </div>
+    <p style="font-size:0.82rem;color:var(--text-dim);margin-top:0.8rem;line-height:1.7;">
+      <span data-i18n="qs.upgrade.note">Under the hood: <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">scripts/upgrade.sh</code> aborts on dirty trees, snapshots <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">comad.config.yaml</code> / <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">.env</code> / <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">~/.claude/agents/</code> to <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">.comad/backups/&lt;ts&gt;/</code>, fast-forwards main + 6 module repos, reinstalls deps, and prints a per-module timed summary.
+      <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">VERSION</code> + <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">comad.lock</code> pin every module SHA like <code style="background:var(--surface2);padding:0.1rem 0.3rem;border-radius:3px;">package-lock.json</code>.</span>
+    </p>
+  </div>
 </div>
 </section>
 
