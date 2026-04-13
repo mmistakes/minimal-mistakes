@@ -424,7 +424,11 @@
       comad status              <span class="dim"># VERSION + module SHAs</span><br>
       comad upgrade --dry-run   <span class="dim"># preview changes</span><br>
       comad upgrade             <span class="dim"># pull + deps + agents + auto-backup</span><br>
-      comad rollback &lt;ts&gt;       <span class="dim"># restore a snapshot</span>
+      comad rollback &lt;ts&gt;       <span class="dim"># restore a snapshot</span><br>
+      <br>
+      make test                 <span class="dim"># brain + eye suites</span><br>
+      make clean                <span class="dim"># dry-run: preview runtime artifacts</span><br>
+      make clean-apply          <span class="dim"># actually delete caches &amp; logs</span>
     </div>
     <p style="font-size:0.82rem;color:var(--text-dim);margin-top:0.8rem;line-height:1.7;">
       <span data-i18n="qs.upgrade.note">Under the hood: <code style="background:var(--surface);padding:0.1rem 0.3rem;border-radius:3px;">scripts/upgrade.sh</code> aborts on dirty trees, snapshots <code style="background:var(--surface);padding:0.1rem 0.3rem;border-radius:3px;">comad.config.yaml</code> / <code style="background:var(--surface);padding:0.1rem 0.3rem;border-radius:3px;">.env</code> / <code style="background:var(--surface);padding:0.1rem 0.3rem;border-radius:3px;">~/.claude/agents/</code> to <code style="background:var(--surface);padding:0.1rem 0.3rem;border-radius:3px;">.comad/backups/&lt;ts&gt;/</code>, fast-forwards main + 6 module repos, reinstalls deps, and prints a per-module timed summary.

@@ -94,13 +94,20 @@
 <div style="margin:3rem 0 1.2rem;">
   <h2 style="font-size:1.2rem;margin:0 0 0.8rem;">업그레이드 <span class="ko" style="font-weight:400;color:var(--text-dim);">Upgrading</span></h2>
   <p style="color:var(--text-dim);margin:0 0 1rem;">이미 설치했다면 <code>comad</code> 한 명령으로 main + 6개 모듈 + deps + agents를 한 번에 업데이트합니다. Dirty tree abort · 자동 스냅샷 · 롤백 지원.</p>
-  <pre style="background:var(--surface2);padding:1rem 1.2rem;border-radius:8px;overflow-x:auto;font-size:0.88rem;line-height:1.6;"><code><span style="color:var(--text-dim)"># Any directory (symlinked to ~/.local/bin/comad by install.sh)</span>
+  <pre style="background:var(--surface);padding:1rem 1.2rem;border-radius:8px;overflow-x:auto;font-size:0.88rem;line-height:1.6;"><code><span style="color:var(--text-dim)"># Any directory (symlinked to ~/.local/bin/comad by install.sh)</span>
 comad status              <span style="color:var(--text-dim)"># VERSION + module SHAs (dirty flagged)</span>
 comad upgrade --dry-run   <span style="color:var(--text-dim)"># preview changes</span>
 comad upgrade             <span style="color:var(--text-dim)"># pull + deps + agents + auto-backup</span>
 comad backups             <span style="color:var(--text-dim)"># list snapshots</span>
-comad rollback &lt;ts&gt;       <span style="color:var(--text-dim)"># restore a prior snapshot</span></code></pre>
+comad rollback &lt;ts&gt;       <span style="color:var(--text-dim)"># restore a prior snapshot</span>
+
+<span style="color:var(--text-dim)"># Or via Makefile from the repo root</span>
+make test                 <span style="color:var(--text-dim)"># full suite (brain + eye)</span>
+make clean                <span style="color:var(--text-dim)"># dry-run: preview 300MB+ of caches &amp; logs</span>
+make clean-apply          <span style="color:var(--text-dim)"># actually delete them</span>
+make clean-deep           <span style="color:var(--text-dim)"># also nuke node_modules / .venv (~3.6 GB)</span></code></pre>
   <p style="color:var(--text-dim);font-size:0.82rem;margin-top:0.8rem;">루트 <code>VERSION</code> (semver) + <code>comad.lock</code> (6개 모듈 branch+SHA 고정)으로 package-lock.json처럼 조합을 재현 가능. 기존 설치 사용자는 한 번 <code>git pull origin main &amp;&amp; ./install.sh</code> 하면 <code>comad</code> 명령이 생깁니다. 세부: <a href="https://github.com/kinkos1234/comad-world#upgrading" style="color:var(--accent)">README § Upgrading</a>.</p>
+  <p style="color:var(--text-dim);font-size:0.82rem;margin-top:0.4rem;">📐 <strong>저장소 전략</strong> — <a href="https://github.com/kinkos1234/comad-world/blob/main/docs/adr/0001-repository-strategy.md" style="color:var(--accent)">ADR 0001</a>: umbrella는 배선(installer / scripts / Makefile / VERSION / comad.lock)을 소유, 각 모듈 디렉터리는 자기 <code>.git</code>이 오너. <strong>Structure Guard CI</strong>가 PR마다 모듈 경계를 자동 검증 — 중복 파일·빌드 산출물 트래킹·VERSION 형식 오류를 막아줍니다.</p>
   <p style="color:var(--text-dim);font-size:0.82rem;margin-top:0.4rem;">📂 <strong>경로 무관</strong> — 어느 폴더, 어느 이름으로 클론해도 동작합니다. <code>scripts/comad</code>가 자기 심링크를 따라 repo root를 찾고, <code>scripts/render-templates.sh</code>가 <code>{{COMAD_ROOT}}</code> 플레이스홀더를 install/upgrade 시점에 절대경로로 치환합니다. <code>~/Desktop/내-에이전트</code>, <code>/opt/comad</code> 어디든 OK.</p>
 </div>
 
