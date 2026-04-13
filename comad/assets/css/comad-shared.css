@@ -1,0 +1,158 @@
+/* Comad Shared — design system shared between landing (/comad) and guide (/comad/guide) */
+
+:root {
+  --bg: #000;
+  --surface: rgba(255,255,255,0.04);
+  --surface-2: rgba(255,255,255,0.06);
+  --surface-3: rgba(255,255,255,0.10);
+  --surface2: rgba(255,255,255,0.06); /* alias for legacy markup */
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.16);
+  --text: #fff;
+  --text-bright: #fff;
+  --text-dim: #868F97;
+  --text-muted: #525863;
+
+  --accent: #479FFA;
+  --accent-soft: rgba(71,159,250,0.12);
+  --accent-dim: rgba(71,159,250,0.10);
+  --warm: #FFA16C;
+  --warm-deep: #551B10;
+  --teal: #FFA16C;          /* legacy teal token mapped to warm orange */
+  --teal-dim: rgba(255,161,108,0.10);
+  --lime: #D6FE51;
+  --green: #34d399;
+  --amber: #fbbf24;
+  --pink: #f472b6;
+
+  --shadow-card: 0 12px 40px rgba(0,0,0,0.32);
+  --shadow-shot: 0 34px 56px rgba(0,0,0,0.42);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+::selection { background: rgba(71,159,250,0.32); color: #fff; }
+img { max-width: 100%; display: block; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--text); }
+
+/* Background ambience (matches guide) */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  background:
+    radial-gradient(ellipse 60vw 50vh at 20% 0%, rgba(71,159,250,0.10), transparent 60%),
+    radial-gradient(ellipse 50vw 40vh at 100% 20%, rgba(255,161,108,0.06), transparent 55%);
+  pointer-events: none; z-index: 0;
+}
+
+/* ─── Top bar (glassmorphic sticky 60px) ─── */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  height: 60px;
+  display: flex; align-items: center;
+  padding: 0 2rem;
+  gap: 1.5rem;
+}
+.topbar .brand { font-weight: 600; color: var(--text); font-size: 0.95rem; letter-spacing: -0.01em; }
+.topbar .brand .sub { color: var(--text-dim); font-weight: 400; margin-left: 0.45rem; font-size: 0.82rem; }
+.topbar nav { margin-left: auto; display: flex; gap: 0.15rem; overflow-x: auto; }
+.topbar nav::-webkit-scrollbar { display: none; }
+.topbar nav a {
+  color: var(--text-dim);
+  padding: 0.55rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 99px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.topbar nav a:hover { color: var(--text); background: var(--surface); }
+.topbar nav a.active { color: var(--text); background: var(--surface-2); }
+
+/* ─── Container & Section ─── */
+.container { max-width: 960px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; }
+section { padding: 5rem 0; border-top: 1px solid var(--border); position: relative; z-index: 1; }
+.section-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); font-weight: 600; margin-bottom: 0.6rem; }
+section h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--text-bright); margin-bottom: 0.8rem; letter-spacing: -0.02em; line-height: 1.35; }
+section h2 em { font-style: normal; color: var(--accent); }
+.section-desc { font-size: 0.95rem; color: var(--text-dim); max-width: 600px; margin-bottom: 2.5rem; line-height: 1.8; }
+
+/* ─── Reveal animation ─── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── Scroll progress ─── */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--warm)); z-index: 10000; transition: width 0.1s; }
+
+/* ─── Code blocks ─── */
+.code-flow {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.84rem; line-height: 2.1;
+  color: var(--accent);
+  overflow-x: auto;
+}
+.code-flow .dim { color: var(--text-dim); }
+.code-flow .hl { color: var(--warm); }
+
+/* ─── Tables ─── */
+table { width: 100%; border-collapse: collapse; font-size: 0.86rem; margin: 0.8rem 0; }
+th { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 2px solid var(--border); color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--border); color: var(--text); }
+tr:hover td { background: var(--surface); }
+td code { background: var(--accent-soft); padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.8rem; color: var(--accent); }
+
+/* ─── Footer ─── */
+footer.site-footer {
+  text-align: center;
+  padding: 3rem 1rem 4rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  position: relative; z-index: 1;
+}
+footer.site-footer .links {
+  display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;
+}
+footer.site-footer .links a {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.78rem; color: var(--text-dim);
+  border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 6px;
+  transition: color 0.2s, border-color 0.2s;
+}
+footer.site-footer .links a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ─── Language toggle ─── */
+.lang-toggle {
+  position: fixed; top: 76px; right: 1.5rem; z-index: 101;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.3rem 0.6rem; font-size: 0.72rem; font-weight: 600; color: var(--text-dim);
+  cursor: pointer; transition: color 0.2s, border-color 0.2s; font-family: inherit;
+}
+.lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.lang-toggle .active { color: var(--accent); }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .topbar { padding: 0 1rem; }
+  .container { padding: 0 1rem; }
+  section { padding: 3.5rem 0; }
+}
