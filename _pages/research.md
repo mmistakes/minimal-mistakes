@@ -5,111 +5,125 @@ layout: splash
 ---
 
 <style>
-.research-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(280px, 320px));
-  gap:30px;
-  margin-top:2rem;
-  align-items:stretch;          
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: stretch;
 }
 
-.research-card{
-  max-width:400px;
-  width:100%;
-  justify-self:center;
+.research-card {
+  display: flex;                
+  flex-direction: column;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
 }
 
-.research-card{
-  display:flex;                
-  flex-direction:column;
-  background:#f9f9f9;
-  padding:16px;
-  border-radius:12px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.05);
-  text-align:center;
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.research-card img{
-  width:100%;
-  height:auto;
-  border-radius:10px;
-  aspect-ratio:16/9;           
-  object-fit:cover;
+.research-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  aspect-ratio: 16/9;           
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.research-card h3{
-  margin-top:1rem;
-  font-size:1.2rem;
+.research-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #2c3e50;
 }
 
-.research-card p{
-  font-size:0.95rem;
-  color:#555;
-  flex:1;                       /* lets description stretch */
+.research-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex: 1; /* allows description to stretch and fill space */
 }
 
-.research-links{
-  margin-top:auto;              /* pins buttons to bottom */
-}
-
-.research-links a{
-  display:inline-block;
-  margin:8px 10px 0;
-  padding:6px 12px;
-  background:#007acc;
-  color:#fff;
-  border-radius:5px;
-  font-size:0.9rem;
-  text-decoration:none;
-}
-
-.research-links a:hover{
-  background:#005eaa;
-}
-
-/* ── Conference tags ── */
-.conf-tag{
-  display:block;
-  margin-top:14px;
-  font-size:0.98rem;
-  font-weight:800;
-  letter-spacing:0.18em;
-  text-transform:uppercase;
-  color:#666;
+/* ── Conference tags as modern pill badges ── */
+.conf-tag {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 1.25rem;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #007acc;
+  background: rgba(0, 122, 204, 0.1);
+  border-radius: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  position:relative;
-  padding-top:6px;
 }
 
-/* subtle divider line above */
-.conf-tag::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:50%;
-  transform:translateX(-50%);
-  width:28px;
-  height:2px;
-  background:#333;
+.research-links {
+  margin-top: auto; /* pins buttons to bottom */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-/* slight hover polish */
-.research-card:hover .conf-tag{
-  letter-spacing:0.22em;
-  color:#444;
+.research-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: #007acc;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  flex: 1; /* makes buttons span evenly if multiple */
+}
+
+.research-links a:hover {
+  background: #005eaa;
 }
 
 /* ── Filter dropdown ── */
-.conf-filter select{
-  margin-top:1.5rem;
-  padding:6px 14px;
-  border:2px solid #007acc;
-  border-radius:20px;
-  background:#fff;
-  color:#007acc;
-  font-size:0.9rem;
-  cursor:pointer;
-  outline:none;
+.conf-filter {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.conf-filter select {
+  padding: 10px 20px;
+  border: 1px solid #dce1e6;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  min-width: 200px;
+  appearance: auto;
+}
+
+.conf-filter select:hover,
+.conf-filter select:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 0 3px rgba(0,122,204,0.1);
 }
 </style>
 
@@ -142,11 +156,11 @@ layout: splash
 
   <!-- Paper 12 -->
   <!-- venue unknown -->
-  <div class="research-card" data-conf="arxiv">
+  <div class="research-card" data-conf="icml">
     <img src="{{ site.baseurl }}/assets/images/research/DINOHash.png" alt="Paper 12">
     <h3>DINOHash: Learning Adversarially Robust Perceptual Hashes from Self-Supervised Features</h3>
     <p>An open-source framework for robust perceptual image hashing, DINOHash enables secure and transformation-resilient provenance detection of AI-generated images.</p>
-    <span class="conf-tag arxiv">ArXiv</span>
+    <span class="conf-tag icml">ICML</span>
     <div class="research-links">
       <a href="https://openreview.net/pdf?id=HrGa8Mq2NE" target="_blank">Paper</a>
     </div>
@@ -188,11 +202,11 @@ layout: splash
 
   <!-- Paper 8 -->
   <!-- venue unknown -->
-  <div class="research-card" data-conf="arxiv">
+  <div class="research-card" data-conf="mlrc">
     <img src="{{ site.baseurl }}/assets/images/research/ReCUDA.png" alt="Paper 8">
     <h3>[Re] CUDA: Curriculum of Data Augmentation for Long‐tailed Recognition</h3>
     <p>Using classwise degree of data augmentation to tackle class imbalance in long tailed dataset</p>
-    <span class="conf-tag arxiv">ArXiv</span>
+    <span class="conf-tag mlrc">MLRC</span>
     <div class="research-links">
       <a href="https://openreview.net/forum?id=Wm6d44I8St" target="_blank">Paper</a>
       <a href="https://github.com/whitewhistle/CUDA-org-" target="_blank">GitHub</a>
@@ -201,11 +215,11 @@ layout: splash
 
   <!-- Paper 7 -->
   <!-- venue unknown -->
-  <div class="research-card" data-conf="arxiv">
+  <div class="research-card" data-conf="neurips">
     <img src="{{ site.baseurl }}/assets/images/research/RiemannSum.png" alt="Paper 7">
     <h3>Riemann Sum Optimization for Accurate Integrated Gradients Computation</h3>
     <p>A mathematical framework to reduce computational complexity of Integrated Gradients</p>
-    <span class="conf-tag arxiv">ArXiv</span>
+    <span class="conf-tag neurips">NeurIPS</span>
     <div class="research-links">
       <a href="https://arxiv.org/abs/2410.04118" target="_blank">Paper</a>
       <a href="https://github.com/ShreeSinghi/RiemannOpt" target="_blank">GitHub</a>
@@ -215,8 +229,8 @@ layout: splash
   <!-- Paper 6 -->
   <div class="research-card" data-conf="tmlr">
     <img src="{{ site.baseurl }}/assets/images/research/StrengtheningInterpretability.png" alt="Paper 6">
-    <h3>A reproducability study of Important Direction Gradient Integration (IDGI)</h3>
-    <p>Highlight key results or methods involved in 1-2 lines.</p>
+    <h3>Strengthening Interpretability: An Investigative Study of Integrated Gradient Methods</h3>
+    <p>This study reproduces IDGI, showing reduced noise and better stability than Integrated Gradients, while analyzing the effect of step size.</p>
     <span class="conf-tag tmlr">TMLR</span>
     <div class="research-links">
       <a href="https://arxiv.org/abs/2409.09043" target="_blank">Paper</a>
@@ -226,15 +240,15 @@ layout: splash
 
   <!-- Paper 5 -->
   <!-- venue unknown -->
-  <div class="research-card" data-conf="arxiv">
+  <div class="research-card" data-conf="neurips">
     <img src="{{ site.baseurl }}/assets/images/research/randomisedsmoothing.png" alt="Paper 5">
     <h3>Rethinking Randomized Smoothing from the Perspective of Scalability</h3>
     <p>A study on randomized smoothing, analysed from the perspective of scalability as a challenge to its continued application</p>
     <!-- <span class="conf-tag unknown">Venue Unknown</span> -->
-    <span class="conf-tag arxiv">ArXiv</span>
+    <span class="conf-tag neurips">NeurIPS</span>
     <div class="research-links">
       <a href="https://openreview.net/forum?id=zkzo72ZQqF" target="_blank">Paper</a>
-      <a href="https://github.com/yourrepo4" target="_blank">GitHub</a>
+      <a href="https://github.com/FireShadow05/accelerated_smoothing" target="_blank">GitHub</a>
     </div>
   </div>
 
