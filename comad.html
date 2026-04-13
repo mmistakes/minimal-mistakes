@@ -568,6 +568,18 @@
       <p style="font-size:0.86rem;" data-i18n="eye.demoresult">Input: 2 sentences &rarr; Output: <strong style="color:var(--green)">810-line, 15-section report</strong></p>
       <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;" data-i18n="eye.demofinding">Key finding: "MCP serves as bridge node across 3 communities (confidence 70%)"</p>
     </div>
+
+    <div class="sub-section">
+      <h4 data-i18n="eye.ai">AI-crawler-readable (v1.1)</h4>
+      <p style="font-size:0.86rem;" data-i18n="eye.ai.desc">
+        <code>/analysis</code> and <code>/report</code> are server components that inline the full analysis and report markdown into the initial HTML (hidden for sighted users, read by AI crawlers).
+        Per-page <code>generateMetadata</code> generates title/description from actual findings. OpenGraph, Twitter Card, and JSON-LD (<code>SoftwareApplication</code>) emitted from the root layout.
+        <code>robots.txt</code> explicitly allows GPTBot, ChatGPT-User, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended.
+      </p>
+      <p style="font-size:0.86rem;color:var(--teal);margin-top:0.3rem;" data-i18n="eye.ai.metric">
+        E2E measurement: <code>/report?job=…</code> initial HTML body <strong>18 B &rarr; 32,297 B</strong> (×1,794) — paste a URL into any AI and it reads the full report.
+      </p>
+    </div>
   </div>
 </div>
 </section>
