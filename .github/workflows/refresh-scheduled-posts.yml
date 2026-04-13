@@ -5,8 +5,8 @@ on:
     branches:
       - master
   schedule:
-    # KST midnight posts are picked up by the first scheduled run after 00:00.
-    - cron: "5 * * * *"
+    # Run every 5 minutes so delayed GitHub schedules are less likely to miss midnight posts.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
