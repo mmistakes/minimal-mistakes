@@ -57,12 +57,11 @@ permalink: /projects/
 
 <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/projects/DL_Playground.png" alt="DL-PLayground">
-    <h3>Pikabot-RL</h3>
+    <h3>DL-PLayground</h3>
     <p>DL-Playground is an interactive, web-based visual editor for designing, prototyping, and understanding PyTorch neural network architectures.</p>
     <div class="project-links">
       <a href="https://github.com/dsgiitr/DL-Playground" target="_blank">GitHub</a>
       <a href="{{ site.baseurl }}/projects/DL_playground/">Details</a>
-      <a herf="https://dlplayground.dsgiitr.in">Demo</a>
     </div>
   </div>
 

@@ -186,7 +186,7 @@ permalink: /events/
 
   </div>
   </div>
-
+{% comment %}
   <!-- Event 6: workshop26 1 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop26_1.png" alt="workshop1">
@@ -219,7 +219,7 @@ permalink: /events/
 
   </div>
   </div>
-
+{% endcomment %}
   <!-- Event 9: workshop25 1 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop1.png" alt="workshop1">
