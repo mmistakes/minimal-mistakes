@@ -69,7 +69,10 @@ zsh brain/scripts/schedule-install.sh</code></pre>
     <pre><code><span class="dim"># Windows (관리자 PowerShell)</span>
 pwsh -File brain\scripts\win-install.ps1</code></pre>
 
-    <figure class="shot placeholder" data-screenshot="scheduler-install-success.png">스크린샷: 설치 성공 출력 (10개 LaunchAgent 등록)</figure>
+    <figure class="shot">
+      <img src="assets/img/scheduler-install-success.png" alt="scheduler install success — 10 LaunchAgents registered">
+      <figcaption>설치 성공 출력 — 10개 LaunchAgent가 등록되고 다음 cron 시각을 기다립니다.</figcaption>
+    </figure>
 
     <h2 id="macos">macOS — LaunchAgents</h2>
     <p><code>~/Library/LaunchAgents/com.comad.*.plist</code> 10개가 생성되고 <code>launchctl bootstrap gui/$(id -u)</code>로 즉시 활성화됩니다. 스크립트는 idempotent — 여러 번 실행해도 안전합니다.</p>
@@ -84,7 +87,10 @@ launchctl kickstart gui/$(id -u)/com.comad.ear-digest
 <span class="dim"># 상세 상태 (마지막 종료 코드 포함)</span>
 launchctl print gui/$(id -u)/com.comad.ear-digest</code></pre>
 
-    <figure class="shot placeholder" data-screenshot="scheduler-launchctl-list.png">스크린샷: <code>launchctl list | grep com.comad</code> 출력</figure>
+    <figure class="shot">
+      <img src="assets/img/scheduler-launchctl-list.png" alt="launchctl list grep com.comad">
+      <figcaption><code>launchctl list | grep com.comad</code> — PID 컬럼이 '-'면 다음 cron 틱 대기 중, 숫자가 보이면 현재 실행 중.</figcaption>
+    </figure>
 
     <h2 id="linux">Linux · WSL — cron</h2>
     <p>스크립트가 <code>crontab -l</code>에 10개 엔트리를 추가합니다. WSL은 <code>/proc/version</code>의 "microsoft" 시그니처로 자동 감지되어 Linux 경로를 탑니다.</p>
@@ -140,7 +146,10 @@ Start-ScheduledTask -TaskName EarDigest -TaskPath '\Comad\'</code></pre>
       <li><strong>cron 잔여 엔트리</strong>: macOS에서 이전 cron이 살아있으면 중복 실행. <code># MIGRATED_TO_LAUNCHD:</code> 주석 확인</li>
     </ol>
 
-    <figure class="shot placeholder" data-screenshot="scheduler-logs.png">스크린샷: <code>tail -f brain/crawl.log</code> 실행 중인 로그</figure>
+    <figure class="shot">
+      <img src="assets/img/scheduler-logs.png" alt="brain crawl.log tail">
+      <figcaption><code>tail -f brain/crawl.log</code> — arXiv·HN·GeekNews 잡이 순차로 실행되며 결과를 한 파일에 누적합니다.</figcaption>
+    </figure>
 
     <h2 id="uninstall">제거</h2>
     <pre><code><span class="dim"># macOS</span>
