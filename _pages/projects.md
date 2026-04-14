@@ -59,11 +59,11 @@ permalink: /projects/
   font-size: 1rem;
   color: #5a6c7d;
   line-height: 1.6;
-  flex-grow: 1; /* Pushes links to bottom */
+  flex-grow: 1; /* Pushes links to the bottom */
   margin-bottom: 24px;
 }
 
-/* Links Container */
+/* Links & Buttons Container */
 .project-links {
   display: flex;
   gap: 12px;
@@ -81,6 +81,7 @@ permalink: /projects/
   transition: all 0.2s ease;
 }
 
+/* Primary Button (Details) */
 .project-links .btn-details {
   background: #007acc;
   color: white;
@@ -90,6 +91,7 @@ permalink: /projects/
   background: #005ea6;
 }
 
+/* Secondary Button (GitHub) */
 .project-links .btn-github {
   background: #24292e;
   color: white;
@@ -110,13 +112,37 @@ permalink: /projects/
 <div class="project-grid">
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/DL_Playground.png" alt="DL-PLayground">
+    <img src="{{ site.baseurl }}/assets/images/projects/DL_Playground.png" alt="DL-Playground">
     <div class="project-card-content">
       <h3>DL-Playground</h3>
-      <p>DL-Playground is an interactive, web-based visual editor for designing, prototyping, and understanding PyTorch neural network architectures.</p>
+      <p>Interactive, web-based visual editor for designing, prototyping, and understanding PyTorch neural network architectures with drag-and-drop interface.</p>
       <div class="project-links">
         <a href="https://github.com/dsgiitr/DL-Playground" target="_blank" class="btn-github">GitHub</a>
         <a href="{{ site.baseurl }}/projects/DL_playground/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/d2l_pytorch.svg" alt="d2l PyTorch">
+    <div class="project-card-content">
+      <h3>d2l-pytorch</h3>
+      <p>Full reproduction of the acclaimed book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/d2l-pytorch" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/d2l-pytorch/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/visualml.png" alt="Visual ML">
+    <div class="project-card-content">
+      <h3>Visual ML</h3>
+      <p>Interactive Visual Machine Learning Demos directly in your browser. Live machine learning training and inference powered by TF JS.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/VisualML" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/visual_ml/" class="btn-details">Details</a>
       </div>
     </div>
   </div>
@@ -133,11 +159,24 @@ permalink: /projects/
     </div>
   </div>
 
+    <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">
+    <div class="project-card-content">
+      <h3>Knowledge Graph Embeddings for VLMs</h3>
+      <p>Analyzing the impact of vector and graph embeddings on retrieval generation of Vision-Language Models on downstream tasks.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/kge-clip" target="_blank" class="btn-github">GitHub</a>
+        <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/" class="btn-details">Details</a>
+      </div>
+    </div>
+
+  </div>
+
   <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/diffusion-everything/banner.png" alt="Diffusion-Everything">
     <div class="project-card-content">
       <h3>Diffusion Everything</h3>
-      <p>Demos involving diffusion models: Training & inference of diffusion on a custom 2D dataset, VAE and latent diffusion models, and more.</p>
+      <p>Comprehensive resource and visualizations of diffusion models: Training, inference, VAE and latent diffusion models with live demos.</p>
       <div class="project-links">
         <a href="https://github.com/dsgiitr/diffusion-everything" target="_blank" class="btn-github">GitHub</a>
         <a href="{{ site.baseurl }}/projects/diffusion-everything/" class="btn-details">Details</a>   
@@ -161,7 +200,7 @@ permalink: /projects/
     <img src="{{ site.baseurl }}/assets/images/research/ImageAlchemy.png" alt="ImageAlchemy">
     <div class="project-card-content">
       <h3>Image-Alchemy</h3>
-      <p>A two-stage personalization pipeline for customized image generation using LoRA-based attention fine-tuning and guided Img2Img synthesis.</p>
+      <p>Two-stage personalization pipeline for customized image generation using LoRA-based attention fine-tuning and guided Img2Img synthesis.</p>
       <div class="project-links">
         <a href="https://github.com/kaustubh202/image-alchemy" target="_blank" class="btn-github">GitHub</a>
         <a href="{{ site.baseurl }}/projects/image_alchemy/" class="btn-details">Details</a>
@@ -170,22 +209,10 @@ permalink: /projects/
   </div>
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/projects/kge.png" alt="KGE">     
-    <div class="project-card-content">
-      <h3>Knowledge Graph Embeddings for VLMs</h3>
-      <p>Analyzing the impact of vector and graph embeddings on retrieval generation of VLMs on downstream tasks.</p>
-      <div class="project-links">
-        <a href="https://github.com/dsgiitr/kge-clip" target="_blank" class="btn-github">GitHub</a>  
-        <a href="https://agam-pandey.gitbook.io/knowledge-graph-embedding-or-dsg-iitr/" class="btn-details">Details</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="project-card">
     <img src="{{ site.baseurl }}/assets/images/projects/feedcode.png" alt="FeedCode">
     <div class="project-card-content">
       <h3>FeedCode</h3>
-      <p>FeedCode is an intelligent LLM feedback tool that provides personalized code reviews based on your coding style and activity.</p>
+      <p>Intelligent LLM feedback tool that provides personalized code reviews based on your coding style and GitHub activity.</p>
       <div class="project-links">
         <a href="https://github.com/AbhishekPanwarr/feedCode" target="_blank" class="btn-github">GitHub</a>
         <a href="{{ site.baseurl }}/projects/visual_ml/" class="btn-details">Details</a>
@@ -194,26 +221,123 @@ permalink: /projects/
   </div>
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/visualml.png" alt="Visual Ml">   
+    <img src="{{ site.baseurl }}/assets/images/adversarial_example.gif" alt="Adversarial Lab">
     <div class="project-card-content">
-      <h3>Visual ML</h3>
-      <p>Interactive Visual Machine Learning Demos directly in your browser. Live machine learning training and inference powered by TF JS.</p>
+      <h3>Adversarial Lab</h3>
+      <p>Web-based tool for visualization and generation of adversarial examples by attacking ImageNet models like VGG, AlexNet, and ResNet.</p>
       <div class="project-links">
-        <a href="https://github.com/dsgiitr/VisualML" target="_blank" class="btn-github">GitHub</a>  
-        <a href="{{ site.baseurl }}/projects/visual_ml/" class="btn-details">Details</a>
+        <a href="https://github.com/dsgiitr/adversarial_lab" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/adversarial_lab/" class="btn-details">Details</a>
       </div>
     </div>
   </div>
 
   <div class="project-card">
-    <img src="{{ site.baseurl }}/assets/images/d2l_pytorch.svg" alt="d2l PyTorch">
+    <img src="{{ site.baseurl }}/assets/images/Eye_In_The_Sky.svg" alt="Eye in the Sky">
     <div class="project-card-content">
-      <h3>d2l-pytorch</h3>
-      <p>This project fully reproduces the highly acclaimed book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.</p>
+      <h3>Eye in the Sky</h3>
+      <p>Winning solution for Inter IIT Tech Meet 2018 satellite image segmentation challenge. Semantic segmentation of remote sensing data.</p>
       <div class="project-links">
-        <a href="https://github.com/dsgiitr/d2l-pytorch" target="_blank" class="btn-github">GitHub</a>
-        <a href="{{ site.baseurl }}/projects/d2l-pytorch/" class="btn-details">Details</a>
+        <a href="https://github.com/dsgiitr/eye_in_the_sky" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/eye_in_the_sky/" class="btn-details">Details</a>
       </div>
     </div>
   </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/generative.jpg" alt="Fortnite AI">
+    <div class="project-card-content">
+      <h3>Fortnite AI Agent</h3>
+      <p>AI agent capable of playing Fortnite using DreamerV3 reinforcement learning with real-time screen capture and input simulation.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/FORT-N-AI" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/fort-n-ai/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/graph_nets.svg" alt="Graph Nets">
+    <div class="project-card-content">
+      <h3>Graph Representation Learning</h3>
+      <p>Simplified yet exhaustive implementation and explanation of various graph representation learning techniques (DeepWalk, GCN, GraphSAGE, GAT).</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/graph_nets" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/graph_nets/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/neural_style.gif" alt="Neural Style Transfer">
+    <div class="project-card-content">
+      <h3>Neural Style Transfer</h3>
+      <p>Keras implementation of neural style transfer that generates images with content from one image and style from another using deep learning.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/neural_style_transfer" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/neural_style/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/np_detection.gif" alt="Number Plate Detection">
+    <div class="project-card-content">
+      <h3>Number Plate Detection</h3>
+      <p>System for detecting and recognizing vehicle number plates using YOLO object detection and OCR techniques for security purposes.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/np_detection" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/np_detection/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/rl2048.jpeg" alt="RL 2048">
+    <div class="project-card-content">
+      <h3>Reinforcement Learning 2048</h3>
+      <p>Implementation of Deep Q-Network using Double Q-Learning to autonomously play the 2048 game and learn optimal strategies.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/RL2048" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/rl2048/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/generative.jpg" alt="Sarcasm Detection">
+    <div class="project-card-content">
+      <h3>Sarcasm Detection using BERT</h3>
+      <p>NLP project exploring contextual sarcasm detection using BERT and LSTM models on news headlines dataset for sentiment understanding.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/sarcasm-detection" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/sarcasm_detection/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/Traffic_sign.jpg" alt="Traffic Sign Classification">
+    <div class="project-card-content">
+      <h3>Traffic Sign Classification</h3>
+      <p>Beginner-friendly computer vision project recognizing 43 different traffic signs from the GTSRB dataset for autonomous vehicle applications.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/traffic_sign_classification" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/traffic_sign_classification/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="{{ site.baseurl }}/assets/images/visualizing_loss.jpg" alt="Visualizing Loss">
+    <div class="project-card-content">
+      <h3>Visualizing Loss Functions</h3>
+      <p>Visualization of different loss and optimization functions using Autoencoders on MNIST to understand their impact on training.</p>
+      <div class="project-links">
+        <a href="https://github.com/dsgiitr/visualizing_loss" target="_blank" class="btn-github">GitHub</a>
+        <a href="{{ site.baseurl }}/projects/visualizing_loss/" class="btn-details">Details</a>
+      </div>
+    </div>
+  </div>
+
 </div>
