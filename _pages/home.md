@@ -149,6 +149,47 @@ title: Home
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 1.5rem;
     margin-bottom: 2rem;
+    align-items: stretch;
+  }
+
+  /* Keep Featured Events cards visually aligned despite different copy lengths. */
+  .grid-container .event-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    height: 100%;
+  }
+
+  .grid-container .event-images {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+  .grid-container .event-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .grid-container .event-card h3 {
+    margin: 0;
+    padding: 0.9rem 0.9rem 0.45rem;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    min-height: 3.4rem;
+    color: #111;
+  }
+
+  .grid-container .event-card p {
+    margin: 0;
+    padding: 0 0.9rem 1rem;
+    line-height: 1.55;
+    color: #444;
   }
 
   .button-link {
