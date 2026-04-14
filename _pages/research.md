@@ -132,6 +132,19 @@ layout: splash
 
 <div class="research-grid">
 
+  <!-- TODO: Add 1 more ICLR paper/blogpost once authors share the link. -->
+
+  <!-- Paper 15 -->
+  <div class="research-card" data-conf="iclr">
+    <img src="{{ site.baseurl }}/assets/images/research/bdense.png" alt="Paper 15">
+    <h3>B-DENSE: Branching for Dense Ensemble Network Supervision Efficiency</h3>
+    <p>An efficient supervision strategy that uses branching in dense ensemble networks to improve training efficiency while preserving predictive performance.</p>
+    <span class="conf-tag iclr">ICLR</span>
+    <div class="research-links">
+      <a href="https://arxiv.org/abs/2602.15971" target="_blank">Paper</a>
+    </div>
+  </div>
+
   <!-- Paper 14 -->
   <div class="research-card" data-conf="aaai">
     <img src="{{ site.baseurl }}/assets/images/research/verifiability-first.png" alt="Paper 14">
