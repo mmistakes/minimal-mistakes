@@ -1,6 +1,6 @@
 ---
 title: "Diffusion Everything"
-layout: single
+layout: project
 permalink: /projects/segment-then-edit/
 ---
 <p align="center">

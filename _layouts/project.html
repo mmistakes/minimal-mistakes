@@ -1,0 +1,176 @@
+---
+layout: splash
+---
+<style>
+  /* Modern Full-Width Container */
+  .project-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .project-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .project-hero h3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #4a5568;
+    flex-wrap: wrap;
+  }
+
+  .project-intro {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #2d3748;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-weight: 500;
+  }
+
+  .demo-video {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    margin: 3rem 0;
+    transition: transform 0.3s ease;
+  }
+
+  .demo-video:hover {
+    transform: scale(1.02);
+  }
+
+  .project-section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .project-section h2 {
+    color: #1a202c;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+
+  .project-section ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+  }
+
+  .project-section li {
+    margin-bottom: 10px;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #007acc;
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 122, 204, 0.3);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 122, 204, 0.4);
+    background-color: #005ea6;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #24292e;
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(36, 41, 46, 0.3);
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(36, 41, 46, 0.4);
+    background-color: #1b1f23;
+  }
+</style>
+
+<div class="project-container">
+  <div class="project-hero">
+    <h1 style="font-size: 3.5rem; color: #1a202c; margin-bottom: 0.5rem;">{{ page.title_main | default: page.title }}</h1>
+    
+    {% if page.subtitle %}
+      <p style="font-size: 1.5rem; color: #718096; margin-top: 0;">{{ page.subtitle }}</p>
+    {% endif %}
+
+    {% if page.collaborator_name %}
+      <h3>
+        Built in collaboration with 
+        <a href="https://dsgiitr.in/" target="_blank">
+          <img src="{{ site.baseurl }}/assets/images/dsg-logo.png" width="45" style="vertical-align: middle;" alt="DSG Logo">
+        </a>
+        &nbsp;×&nbsp;
+        <a href="{{ page.collaborator_url }}" target="_blank">
+          <img src="{{ page.collaborator_logo }}" width="{{ page.collaborator_logo_width | default: '50' }}" style="vertical-align: middle; border-radius: 5px;" alt="{{ page.collaborator_name }} Logo">
+        </a>
+      </h3>
+    {% endif %}
+  </div>
+
+  {{ content }}
+
+  {% if page.live_url or page.github_url %}
+    <div class="action-buttons">
+      {% if page.live_url %}
+        <a href="{{ page.live_url }}" target="_blank" class="btn-primary">
+          <i class="fas fa-external-link-alt"></i> Try Live Demo
+        </a>
+      {% endif %}
+      
+      {% if page.github_url %}
+        <a href="{{ page.github_url }}" target="_blank" class="btn-secondary">
+          <i class="fab fa-github"></i> View Source Code
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

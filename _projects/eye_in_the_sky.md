@@ -1,6 +1,6 @@
 ---
 title: "Eye in the Sky: Image segmentation challenge Inter IIT 2018"
-layout: single
+layout: project
 permalink: /projects/eye_in_the_sky/
 ---
 ![img_seg]({{ site.baseurl }}/assets/images/Eye_In_The_Sky.svg)

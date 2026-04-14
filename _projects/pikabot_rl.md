@@ -1,6 +1,6 @@
 ---
 title: "Pikabot RL"
-layout: single
+layout: project
 permalink: /projects/pikabot_rl/
 ---
 ![pikabot rl]({{ site.baseurl }}/assets/images/projects/pikebotrl.png)

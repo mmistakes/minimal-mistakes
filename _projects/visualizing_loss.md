@@ -1,6 +1,6 @@
 ---
 title: "Visualizing Loss Functions"
-layout: single
+layout: project
 permalink: /projects/visualizing_loss/
 ---
 ![visualizing_loss]({{ site.baseurl }}/assets/images/visualizing_loss.jpg)

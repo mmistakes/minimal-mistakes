@@ -1,6 +1,6 @@
 ---
 title: "Image-Alchemy"
-layout: single
+layout: project
 permalink: /projects/image_alchemy/
 ---
 ![Image alchemy Banner]({{ site.baseurl }}/assets/images/image alchemy cover photo.png)

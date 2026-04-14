@@ -1,6 +1,6 @@
 ---
 title: "Beginner Friendly Project: Traffic Sign Classification"
-layout: single
+layout: project
 permalink: /projects/traffic_sign_classification/
 ---
 ![traffic_sign]({{ site.baseurl }}/assets/images/Traffic_sign.jpg)

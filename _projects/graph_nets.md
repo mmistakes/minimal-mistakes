@@ -1,6 +1,6 @@
 ---
 title: "Graph Representation Learning"
-layout: single
+layout: project
 permalink: /projects/graph_nets/
 ---
 ![Graph Nets Project Banner]({{ site.baseurl }}/assets/images/graph_nets.svg)
