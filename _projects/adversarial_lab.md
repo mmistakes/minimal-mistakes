@@ -1,6 +1,6 @@
 ---
 title: "Adversarial Lab"
-layout: single
+layout: project
 permalink: /projects/adversarial_lab/
 ---
 ![Adv_ex]({{ site.baseurl }}/assets/images/adversarial_example.gif)

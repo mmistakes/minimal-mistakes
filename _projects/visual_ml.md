@@ -1,6 +1,6 @@
 ---
 title: "Visual ML"
-layout: single
+layout: project
 permalink: /projects/visual_ml/
 ---
 ![visual ml]({{ site.baseurl }}/assets/images/visualml.png)

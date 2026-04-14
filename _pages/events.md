@@ -186,12 +186,11 @@ permalink: /events/
 
   </div>
   </div>
-{% comment %}
   <!-- Event 6: workshop26 1 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop26_1.png" alt="workshop1">
-    <h3>Workshop: Diffusing Faces:- A Hand On AI Journey</h3>
-    <p>...</p>
+    <h3>2025 Workshop: Diffusing Faces - A Hands On AI Journey</h3>
+    <p>We explored the fascinating world of diffusion models, showing how AI can smoothly transform and merge facial features. Through live coding and interactive demos, participants experienced firsthand how creativity and advanced machine learning come together to generate striking visual results.</p>
     <div class="event-links">
       <a href="https://www.instagram.com/p/DN8xx0Dkr35/?utm_source=ig_web_button_share_sheet" target="_blank">Details</a>
 
@@ -201,8 +200,8 @@ permalink: /events/
   <!-- Event 7: workshop26 2 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop26_2.png" alt="workshop1">
-    <h3>Workshop: Build Your First LLM</h3>
-    <p>...</p>
+    <h3>2025 Workshop: Build Your First LLM</h3>
+    <p>This session unpacked how machines grasp and generate human language. From learning patterns in text to predicting and creating meaningful sentences, we guided participants through the inner workings of modern language models in an engaging, easy-to-follow way.</p>
     <div class="event-links">
       <a href="https://www.instagram.com/p/DPHK5aeEpyJ/?utm_source=ig_web_button_share_sheet" target="_blank">Details</a>
 
@@ -212,18 +211,17 @@ permalink: /events/
   <!-- Event 8: workshop26 3 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop26_3.png" alt="workshop26_1">
-    <h3>Workshop: Seeing The World Through Pixels</h3>
-    <p>...</p>
+    <h3>2025 Workshop: Seeing The World Through Pixels</h3>
+    <p>In this interactive workshop, we demystified computer vision by starting from the basics—pixels and filters—and building up to object detection and image captioning. With hands-on activities, participants discovered how machines interpret and describe the visual world.</p>
     <div class="event-links">
       <a href="https://www.instagram.com/p/DPwqDeJEnvd/?utm_source=ig_web_button_share_sheet" target="_blank">Details</a>
 
   </div>
   </div>
-{% endcomment %}
   <!-- Event 9: workshop25 1 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop1.png" alt="workshop1">
-    <h3>Workshop: How To Build Your 1st ML Project</h3>
+    <h3>2024 Workshop: How To Build Your 1st ML Project</h3>
     <p>To turn freshers' nervous energy into confidence, DSG members shared how to start building their , the challenges they faced, and how you can do it too.Participants write fascinating blogs on a variety of tech topics with a chance to secure direct interviews for DSG recruitments.</p>
     <div class="event-links">
       <a href="https://www.instagram.com/p/DE8_DhvPy6h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
@@ -234,7 +232,7 @@ permalink: /events/
   <!-- Event 10: workshop25 2 -->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop2.png" alt="workshop2">
-    <h3>Workshop: ML Optimisation for Beginners</h3>
+    <h3>2024 Workshop: ML Optimisation for Beginners</h3>
     <p>An engaging session where attendees explored the essentials of machine learning optimization, its key techniques, algorithms, and real-world applications guided by DSG members with hands-on exercises to help grasp these concepts practically</p>
     <div class="event-links">
       <a href="https://www.instagram.com/p/DBK9PpRvLrw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Details</a>
@@ -245,7 +243,7 @@ permalink: /events/
   <!-- Event 11: workshop25 3-->
   <div class="event-card">
     <img src="{{ site.baseurl }}/assets/images/events/workshop3.png" alt="workshop3">
-    <h3>Workshop: Brainwaves to Bytes</h3>
+    <h3>2024 Workshop: Brainwaves to Bytes</h3>
     <p>To build an AI from scratch, we helped build fully functional neural network from scratch using Python—and hit 95% accuracy on predicting handwritten digits in order to lower the entry barrier into this unique field.</p>
     <div class="event-links">
       <a href="https://www.instagram.com/p/DBawa3MP3o2/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Details</a>

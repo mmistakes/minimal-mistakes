@@ -1,6 +1,6 @@
 ---
 title: "d2l-pytorch"
-layout: single
+layout: project
 permalink: /projects/d2l-pytorch/
 ---
 ![d2l-pytorch]({{ site.baseurl }}/assets/images/d2l_pytorch.svg)

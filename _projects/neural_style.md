@@ -1,6 +1,6 @@
 ---
 title: "Neural Style Transfer"
-layout: single
+layout: project
 permalink: /projects/neural_style/
 ---
 ![style_transfer]({{ site.baseurl }}/assets/images/neural_style.gif)

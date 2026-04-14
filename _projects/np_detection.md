@@ -1,6 +1,6 @@
 ---
 title: "Number Plate Detection"
-layout: single
+layout: project
 permalink: /projects/np_detection/
 ---
 ![NP]({{ site.baseurl }}/assets/images/np_detection.gif)

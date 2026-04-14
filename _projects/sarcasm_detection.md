@@ -1,6 +1,6 @@
 ---
 title: "Sarcasm Detection using BERT"
-layout: single
+layout: project
 permalink: /projects/sarcasm_detection/
 ---
 
