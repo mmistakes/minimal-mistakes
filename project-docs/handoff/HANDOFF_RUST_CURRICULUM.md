@@ -3,13 +3,13 @@
 ## Snapshot
 
 - 목적: Rust 시리즈 전체 구조와 다음 발행 우선순위를 유지한다.
-- 현재 공개 상태: Rust 01~07 발행 완료
-- 다음 우선순위: Rust 08
+- 현재 공개 상태: Rust 01~08 발행 완료
+- 다음 우선순위: Rust 09
 - 바로 다음 실행 메모: `HANDOFF_NEXT_RUST_POST.md`
 
 ## Current State
 
-현재 공개된 Rust 시리즈는 아래 7편이다.
+현재 공개된 Rust 시리즈는 아래 8편이다.
 
 1. `Rust 01. 설치와 Hello World 실행하기`
    KOR: `_posts/2026-04-07-rust-install-hello-world.md`
@@ -32,6 +32,9 @@
 7. `Rust 07. Modules, Smart Pointers, Concurrency, Async 기초`
    KOR: `_posts/2026-04-14-rust-modules-smart-pointers-concurrency-async.md`
    ENG: `_posts/2026-04-14-rust-modules-smart-pointers-concurrency-async-en.md`
+8. `Rust 08. Vec, String, &str, HashMap 기초`
+   KOR: `_posts/2026-04-15-rust-vec-string-str-hashmap.md`
+   ENG: `_posts/2026-04-15-rust-vec-string-str-hashmap-en.md`
 
 ## What The Series Already Covers Well
 
@@ -42,16 +45,16 @@
 - struct, enum, match, trait
 - generics, `Result`, closure, iterator
 - module, smart pointer, concurrency, async 개요
+- `Vec`, `String`, `&str`, `HashMap` 기초와 단어 빈도 수 예제
 
 ## Current Coverage Summary
 
-- 현재 시리즈는 `입문 -> 초급 핵심 개념` 구간까지 연결되어 있다.
+- 현재 시리즈는 `입문 -> 초급 핵심 개념 -> 자주 쓰는 컬렉션과 문자열` 구간까지 연결되어 있다.
 
 ## Main Gaps To Fill
 
 다음 커리큘럼에서는 아래 공백을 메우는 것이 중요하다.
 
-- 컬렉션과 문자열 실전 사용
 - crate/package/project layout
 - testing
 - file I/O와 CLI 입력 처리
@@ -60,7 +63,7 @@
 
 ## Gap Summary
 
-- 위 공백을 채워야 독자가 "문법을 읽는 상태"에서 "작은 도구를 직접 만드는 상태"로 넘어갈 수 있다.
+- 위 공백을 채워야 독자가 "문법과 컬렉션을 이해한 상태"에서 "작은 도구를 직접 만드는 상태"로 넘어갈 수 있다.
 
 ## Target Reader
 
@@ -81,19 +84,7 @@
 
 ## Recommended Roadmap
 
-현재 01~07 이후 권장 발행 순서는 아래와 같다.
-
-### Rust 08
-
-- KOR title: `Rust 08. Vec, String, &str, HashMap 기초`
-- ENG title: `Rust 08. Vec, String, &str, and HashMap Basics`
-- translation_key: `rust-vec-string-str-hashmap`
-- 핵심 목표:
-  컬렉션과 문자열의 기본 사용법을 익히고, 실제 예제에서 owned data와 borrowed data가 어떻게 같이 등장하는지 보여준다.
-- 꼭 포함할 내용:
-  `Vec`, `String`, `&str`, `HashMap`, 반복, 조회, 기본 변환
-- 추천 종합 예제:
-  단어 빈도 수 세기
+현재 08편 이후 권장 발행 순서는 아래와 같다.
 
 ### Rust 09
 
@@ -101,7 +92,7 @@
 - ENG title: `Rust 09. Crates, Packages, and Project Layout`
 - translation_key: `rust-crates-packages-project-layout`
 - 핵심 목표:
-  07편의 module 소개를 실전 프로젝트 구조 관점으로 확장한다.
+  07편의 module 소개와 08편의 컬렉션 실습을 실제 Cargo 프로젝트 구조로 연결한다.
 - 꼭 포함할 내용:
   `cargo new --lib`, `main.rs`, `lib.rs`, `mod`, `use`, `pub`, 여러 파일로 나누기
 - 추천 종합 예제:
@@ -178,6 +169,7 @@
 - `categories: Rust`
 - `sidebar.nav: "sections"`
 - `search: true`
+- front matter에 `description`도 함께 넣을 것
 - 영어 글에는 명시적 `permalink` 추가
 - `_data/seo_descriptions.yml`에 같은 `translation_key`로 설명 추가
 
@@ -187,6 +179,7 @@
 ---
 layout: single
 title: "Rust NN. 제목"
+description: "검색과 공유에 쓸 한 줄 설명"
 lang: ko
 translation_key: rust-example-key
 date: 2026-04-15 09:00:00 +0900
@@ -205,6 +198,7 @@ search: true
 ---
 layout: single
 title: "Rust NN. English Title"
+description: "One-line description for search and sharing"
 lang: en
 translation_key: rust-example-key
 date: 2026-04-15 09:00:00 +0900
@@ -228,6 +222,7 @@ permalink: /en/rust/example-permalink/
 - 06, 07처럼 주제가 많아지는 경우 이후 글에서는 범위를 더 좁게 잡는 편이 좋다
 - 실전 예제를 반드시 넣을 것
 - 개념 설명만 끝내지 말고 마지막에 작은 종합 예제를 둘 것
+- 바뀌기 쉬운 설명은 시점을 적고, 사실 주장에는 가능하면 공식 문서 근거를 붙일 것
 
 ## Validation Checklist Per Post
 
@@ -250,20 +245,20 @@ permalink: /en/rust/example-permalink/
 - `Rust 17. Async Rust with Tokio`
 - `Rust 18. Web Basics with Axum or Actix`
 
-하지만 현재 시리즈 우선순위는 위 확장보다 08~13의 실용 구간을 완성하는 쪽이 맞다.
+하지만 현재 시리즈 우선순위는 위 확장보다 09~13의 실용 구간을 완성하는 쪽이 맞다.
 
 ## Execution Priority
 
 실제 작업 우선순위는 아래 순서로 고정하는 것을 권장한다.
 
-1. Rust 08 제작
-2. Rust 08 SEO description 반영
+1. Rust 09 제작
+2. Rust 09 SEO description 반영
 3. KOR/ENG 링크와 아카이브 노출 검증
-4. 그 다음 Rust 09 제작
+4. 그 다음 Rust 10 제작
 
 ## Current Required Action
 
-- 다음 액션은 `Rust 08` 작성이다.
+- 다음 액션은 `Rust 09` 작성이다.
 
 ## Related File
 
