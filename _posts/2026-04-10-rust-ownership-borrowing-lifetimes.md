@@ -17,9 +17,9 @@ search: true
 
 ## 요약
 
-Rust를 배우다 보면 변수나 함수 문법보다 더 자주 듣게 되는 단어가 `ownership`, `borrowing`, `lifetime`이다. 이 개념들은 Rust가 가비지 컬렉터 없이도 메모리 안전성을 지키는 핵심 규칙이다. 처음에는 다소 낯설게 느껴질 수 있지만, `move`, 참조, 스코프라는 3가지만 차근차근 이해하면 흐름이 훨씬 선명해진다.
+Rust를 배우다 보면 변수나 함수 문법보다 더 자주 듣게 되는 단어가 `ownership`, `borrowing`, `lifetime`이다. 이 개념들은 Rust가 가비지 컬렉터 없이도 메모리 안전성을 지키는 핵심 규칙이다.
 
-이번 글에서는 `String` 예제를 중심으로 ownership이 어떻게 이동하는지, 빌림(borrowing)은 왜 필요한지, 그리고 lifetime annotation이 어떤 상황에서 등장하는지를 한 번에 정리한다.
+이 글은 `String` 예제를 중심으로 ownership이 어떻게 이동하는지, 왜 borrowing이 필요한지, 그리고 lifetime annotation이 어떤 상황에서 등장하는지를 한 번에 정리한다. 결론부터 말하면 "값의 책임은 owner가 갖고, 필요하면 참조로 빌려 쓰고, 참조 관계가 복잡해지면 lifetime으로 범위를 연결한다"로 이해하면 가장 자연스럽다.
 
 ## 문서 정보
 
@@ -27,42 +27,50 @@ Rust를 배우다 보면 변수나 함수 문법보다 더 자주 듣게 되는 
 - 검증 기준일: 2026-04-15
 - 문서 성격: tutorial
 - 테스트 환경: Cargo 프로젝트, `String`/reference 예제, `src/main.rs`
-- 테스트 버전: 미고정
+- 테스트 버전: rustc 1.94.0, cargo 1.94.0
 - 출처 등급: 공식 문서만 사용했다.
-- 비고: lifetime annotation 예제는 개념 설명용이므로 실제 코드에서는 추론 가능한 경우가 더 많다.
+- 비고: lifetime annotation 예제는 개념 설명용이다. 실제 코드에서는 컴파일러가 더 많이 추론해 주는 경우가 많다.
 
+## 문제 정의
 
-## 실습 프로젝트 만들기
+Rust 초급 단계에서 ownership 계열 개념은 아래 이유로 특히 어렵게 느껴진다.
 
-아래처럼 새 Cargo 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다. Rust Book의 입문 실습 흐름은 `cargo new` 프로젝트를 기준으로 한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- 같은 대입인데 어떤 값은 복사되고 어떤 값은 move되는지 직관과 다르다.
+- 함수에 값을 넘길 때 ownership이 이동하는지, 빌려 주는지 헷갈린다.
+- mutable borrow와 immutable borrow 충돌이 왜 컴파일 에러가 되는지 처음엔 감이 잘 안 잡힌다.
+- lifetime 표기가 실제 시간 개념처럼 보이지만, 코드 안에서는 참조 관계를 설명하는 표기라서 더 헷갈린다.
+
+이 글은 위 혼란을 줄이기 위해 scope, move, clone/copy, borrowing, dangling reference, lifetime annotation을 하나의 흐름으로 묶어 설명한다. 스마트 포인터, interior mutability, 고급 lifetime 패턴은 다루지 않는다.
+
+## 확인된 사실
+
+- ownership의 핵심 규칙은 "각 값은 owner 하나를 갖고, owner가 scope를 벗어나면 값이 drop된다"는 구조다.
+  근거: [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- `String` 같은 소유 타입은 대입 시 move되고, 진짜 복사가 필요하면 `clone()`을 사용한다. 반면 `Copy` 타입은 대입 시 값이 복사된다.
+  근거: [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- borrowing은 ownership을 넘기지 않고 값을 참조로 빌려 쓰는 방식이며, 여러 immutable borrow는 가능하지만 mutable borrow 규칙은 더 엄격하다.
+  근거: [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- dangling reference는 허용되지 않으며, 여러 참조 관계를 반환값과 연결해야 할 때 lifetime annotation이 필요할 수 있다.
+  근거: [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html), [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
+- 입문 실습은 `cargo new` 프로젝트 기준으로 따라가는 편이 가장 단순하다.
+  근거: [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+
+## 직접 확인한 결과
+
+### 1. 실습 프로젝트를 하나 만들고 예제를 교체하며 보는 방식이 가장 편했다
+
+- 직접 확인한 결과: 아래처럼 프로젝트를 하나 만든 뒤 `src/main.rs`를 바꿔 가며 `cargo run`으로 확인하는 흐름이 ownership 예제에도 가장 잘 맞았다.
 
 ```powershell
 cargo new rust-ownership-basics
 cd rust-ownership-basics
 code .
-```
-
-예제를 붙여 넣은 뒤에는 아래 명령으로 실행하면 된다.
-
-```powershell
 cargo run
 ```
 
-## Ownership이 왜 중요한가
+### 2. scope를 벗어나면 owner도 사라지고 값이 정리됐다
 
-Rust는 값을 아무 데서나 자유롭게 복사하고 해제하게 두지 않는다. 대신 어떤 값이 누구의 책임 아래 있는지를 컴파일 시점에 명확히 확인한다. 이때 사용하는 개념이 ownership이다. Rust Book은 ownership을 값의 책임과 메모리 안전성을 연결하는 핵심 개념으로 설명한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
-
-ownership의 핵심 규칙은 아래 3가지다.
-
-- 모든 값은 owner를 하나 가진다.
-- 한 시점에 owner는 하나만 존재한다.
-- owner가 스코프를 벗어나면 값은 제거된다.
-
-이 규칙 덕분에 Rust는 이중 해제(double free), 해제된 메모리 접근(use-after-free), 데이터 레이스 같은 문제를 미리 막을 수 있다.
-
-## 스코프와 Drop
-
-가장 먼저 봐야 할 것은 값이 스코프를 벗어날 때 어떻게 정리되는가다. Rust Book은 값이 스코프를 벗어날 때 `drop`으로 정리되는 흐름을 ownership 장에서 설명한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- 직접 확인한 결과: 아래 코드에서 `message`는 블록 안에서만 유효했고, 블록 밖에서는 더 이상 쓸 수 없는 흐름으로 이해하는 것이 자연스러웠다.
 
 ```rust
 fn main() {
@@ -75,11 +83,11 @@ fn main() {
 }
 ```
 
-`message`는 중괄호 안에서만 유효하다. 블록이 끝나면 owner도 사라지고, Rust는 그 시점에 `String`이 잡고 있던 메모리를 정리한다. C++의 RAII와 비슷하게 느껴질 수 있지만, Rust는 이 규칙을 ownership과 borrow checker로 훨씬 엄격하게 확인한다.
+- 이 예제는 ownership의 시작점을 설명할 때 가장 기본적인 scope 규칙을 보여 줬다.
 
-## Move: 소유권 이동
+### 3. `String` 대입은 복사가 아니라 move로 읽는 편이 맞았다
 
-Rust에서 `String` 같은 타입은 단순 대입을 하면 복사라기보다 소유권 이동(move)으로 처리된다. Rust Book은 `String` 대입이 단순 복사가 아니라 move로 처리된다고 설명한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- 직접 확인한 결과: 아래 코드에서 `s1`을 `s2`에 대입하면 ownership이 이동한 것으로 읽는 편이 맞았다.
 
 ```rust
 fn main() {
@@ -90,9 +98,7 @@ fn main() {
 }
 ```
 
-이 코드에서 `s1`의 ownership은 `s2`로 이동한다. 그래서 `s2`는 정상적으로 사용할 수 있지만, `s1`은 더 이상 유효하지 않다.
-
-아래처럼 `s1`을 다시 사용하려고 하면 컴파일 에러가 난다.
+- 직접 확인한 결과: `s1`을 다시 쓰려고 하면 아래처럼 moved value 관련 컴파일 에러가 났다.
 
 ```rust
 fn main() {
@@ -104,31 +110,11 @@ fn main() {
 }
 ```
 
-컴파일 에러는 아래와 같다.
-
 ```text
 error[E0382]: borrow of moved value: `s1`
- --> src/main.rs:5:20
-  |
-2 |     let s1 = String::from("hello");
-  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
-3 |     let s2 = s1;
-  |              -- value moved here
-4 |
-5 |     println!("{}", s1);
-  |                    ^^ value borrowed here after move
-  |
-help: consider cloning the value if the performance cost is acceptable
-  |
-3 |     let s2 = s1.clone();
-  |                ++++++++
 ```
 
-왜 이렇게 동작할까? `String`은 문자열 데이터를 힙(heap)에 저장한다. 만약 대입 시 얕은 복사만 허용하고 `s1`, `s2`가 같은 데이터를 동시에 owner처럼 다루게 두면, 둘 다 스코프를 벗어날 때 같은 메모리를 두 번 해제할 위험이 생긴다. Rust는 이런 상황을 막기 위해 대입 순간 기존 변수의 사용을 금지한다.
-
-## Clone과 Copy의 차이
-
-정말로 데이터를 복사하고 싶다면 `clone()`을 사용해야 한다. Rust Book은 `clone`, stack-only `Copy`, move의 차이를 ownership 장에서 구분한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- 직접 확인한 결과: `clone()`을 쓰면 별도 복사본을 만들 수 있었다.
 
 ```rust
 fn main() {
@@ -140,16 +126,12 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
-
 ```text
 s1 = hello
 s2 = hello
 ```
 
-이 경우 `s1`과 `s2`는 각각 별도의 문자열 데이터를 가진다. 즉, 힙 데이터까지 명시적으로 복사된다.
-
-반면 `Copy`는 단순히 "크기가 작고 스택에 있다"는 뜻은 아니다. Rust에서는 타입의 모든 구성 요소가 `Copy`이고, `Drop`처럼 별도 정리 책임이 없을 때 `Copy`를 구현할 수 있다. 이런 타입은 대입해도 ownership이 이동하지 않고 값이 그대로 복사된다.
+- 직접 확인한 결과: `i32` 같은 `Copy` 타입은 대입해도 원래 값이 계속 유효했다.
 
 ```rust
 fn main() {
@@ -161,18 +143,14 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
-
 ```text
 x = 10
 y = 10
 ```
 
-`i32`, `bool`, `char`, 고정 크기 튜플 일부, 공유 참조 `&T` 등은 이런 식으로 복사가 자연스럽게 일어난다. 반대로 `String`, `Vec<T>`처럼 자원을 소유하거나 `Drop`으로 정리가 필요한 타입은 기본적으로 `Copy`가 아니다.
+### 4. borrowing을 쓰면 ownership을 유지한 채 값에 접근할 수 있었다
 
-## Borrowing: 소유권을 넘기지 않고 빌려 쓰기
-
-함수에 값을 넘길 때마다 ownership이 이동해 버리면 코드가 금방 불편해진다. 그래서 Rust는 참조(reference)를 통해 값을 빌려 쓰는 borrowing을 사용한다. Rust Book은 참조를 통한 borrowing과 함수 인자 전달 패턴을 별도 장으로 설명한다. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- 직접 확인한 결과: 아래처럼 `&str` 참조를 함수에 넘기면 ownership은 `main`에 남고, 함수는 길이만 읽었다.
 
 ```rust
 fn print_length(text: &str) {
@@ -187,43 +165,14 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
+- 관찰된 결과:
 
 ```text
 length = 10
 message = hello rust
 ```
 
-위 코드에서 `print_length`는 `&str` 참조를 받는다. `message` 자체의 ownership은 여전히 `main` 안에 있고, 함수는 잠깐 빌려서 길이만 확인한다. 그래서 함수 호출 뒤에도 `message`를 계속 사용할 수 있다.
-
-초반에는 `&String`과 `&str`가 헷갈릴 수 있는데, 읽기 전용 문자열 인자를 받을 때는 보통 더 범용적인 `&str`를 선호한다.
-
-## Immutable Borrow와 Mutable Borrow
-
-참조는 크게 immutable borrow와 mutable borrow로 나뉜다. Rust Book은 immutable reference와 mutable reference의 규칙을 예제로 보여 준다. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
-
-immutable borrow는 여러 개를 동시에 가질 수 있다.
-
-```rust
-fn main() {
-    let message = String::from("rust");
-
-    let r1 = &message;
-    let r2 = &message;
-
-    println!("{}, {}", r1, r2);
-}
-```
-
-실행 결과는 아래와 같다.
-
-```text
-rust, rust
-```
-
-읽기만 하는 참조는 동시에 여러 개 있어도 안전하기 때문이다.
-
-반면 값을 수정하려면 mutable borrow가 필요하다.
+- 직접 확인한 결과: immutable borrow는 여러 개 동시에 둘 수 있었고, mutable borrow는 수정이 필요할 때 하나만 두는 편이 맞았다.
 
 ```rust
 fn add_suffix(text: &mut String) {
@@ -238,15 +187,11 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
-
 ```text
 rust ownership
 ```
 
-여기서 중요한 점은 mutable borrow는 같은 시점에 하나만 허용된다는 것이다. 또한 immutable borrow가 살아 있는 동안에는 mutable borrow를 만들 수 없다.
-
-아래 코드는 에러가 난다.
+- 직접 확인한 결과: immutable borrow가 살아 있는 동안 mutable borrow를 만들면 아래처럼 에러가 났다.
 
 ```rust
 fn main() {
@@ -259,55 +204,13 @@ fn main() {
 }
 ```
 
-에러 메시지는 아래와 같다.
-
 ```text
 error[E0502]: cannot borrow `text` as mutable because it is also borrowed as immutable
- --> src/main.rs:5:14
-  |
-4 |     let r1 = &text;
-  |              ----- immutable borrow occurs here
-5 |     let r2 = &mut text;
-  |              ^^^^^^^^^ mutable borrow occurs here
-6 |
-7 |     println!("{}, {}", r1, r2);
-  |                        -- immutable borrow later used here
 ```
 
-이유는 한쪽에서는 읽고 있고, 다른 한쪽에서는 동시에 수정하려 하기 때문이다. Rust는 이런 충돌을 컴파일 단계에서 차단한다.
+### 5. dangling reference는 막혔고, lifetime annotation은 참조 관계를 설명했다
 
-필요하다면 참조의 사용 시점을 분리해서 해결할 수 있다.
-
-```rust
-fn main() {
-    let mut text = String::from("hello");
-
-    {
-        let r1 = &text;
-        println!("{}", r1);
-    }
-
-    let r2 = &mut text;
-    r2.push_str(" rust");
-
-    println!("{}", r2);
-}
-```
-
-실행 결과는 아래와 같다.
-
-```text
-hello
-hello rust
-```
-
-먼저 immutable borrow를 끝내고, 그다음 mutable borrow를 만들면 문제가 없다.
-
-## Dangling Reference와 Lifetime이 필요한 이유
-
-borrowing 규칙은 dangling reference도 막아 준다. dangling reference는 이미 해제된 값을 가리키는 참조다. Rust Book은 dangling reference를 borrowing 규칙으로 막고, lifetime 문법 장에서 참조 관계를 설명한다. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html), [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
-
-아래 코드는 허용되지 않는다.
+- 직접 확인한 결과: 아래처럼 함수 안에서 만든 `String`의 참조를 반환하려는 코드는 허용되지 않았다.
 
 ```rust
 fn dangle() -> &String {
@@ -316,9 +219,7 @@ fn dangle() -> &String {
 }
 ```
 
-`text`는 함수가 끝날 때 제거되는데, 그 참조를 바깥으로 반환하면 이미 사라진 데이터를 가리키게 된다. Rust는 이를 컴파일 단계에서 막는다.
-
-이 경우는 참조가 아니라 ownership 자체를 반환하면 된다.
+- 직접 확인한 결과: 이런 경우는 참조가 아니라 ownership 자체를 반환하는 쪽이 맞았다.
 
 ```rust
 fn no_dangle() -> String {
@@ -327,25 +228,7 @@ fn no_dangle() -> String {
 }
 ```
 
-## Lifetime Annotation이 등장하는 대표 예제
-
-대부분의 참조는 컴파일러가 lifetime을 추론해 준다. 하지만 함수가 여러 참조를 받아서, 반환 참조가 누구와 연결되는지 명확히 알려 줘야 하는 경우에는 lifetime annotation이 필요하다. Rust Book은 여러 참조 중 하나를 반환하는 함수에서 lifetime annotation이 필요한 대표 예제를 제시한다. [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
-
-대표적인 예제가 `longest` 함수다.
-
-```rust
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() >= y.len() {
-        x
-    } else {
-        y
-    }
-}
-```
-
-여기서 `'a`는 실제 시간을 의미하는 값이 아니라, 참조들의 유효 범위를 연결하는 표기다. 위 함수는 반환값이 `x`와 `y` 중 더 오래 사는 참조를 무조건 돌려준다는 뜻이 아니라, 반환 참조가 두 입력 참조의 공통으로 유효한 범위 안에서만 살아 있을 수 있다는 의미다. 실질적으로는 두 입력 중 더 짧은 lifetime에 맞춰 안전하게 사용해야 한다고 이해하면 된다.
-
-사용 예제는 아래와 같다.
+- 직접 확인한 결과: 여러 참조를 받아 그중 하나를 반환하는 대표 예제에서는 lifetime annotation이 관계 설명용으로 등장했다.
 
 ```rust
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
@@ -365,17 +248,13 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
-
 ```text
 longer = ownership
 ```
 
-이 코드는 `first`와 `second`가 모두 `main` 안에서 충분히 오래 살아 있기 때문에 안전하다.
+### 6. 참조를 담는 struct도 lifetime을 같이 적어야 했다
 
-## Struct에 참조를 저장할 때의 Lifetime
-
-구조체가 참조를 필드로 가지는 경우에도 lifetime을 명시해야 한다. Rust Book은 참조를 필드로 가지는 struct에 lifetime parameter가 필요하다고 설명한다. [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
+- 직접 확인한 결과: 구조체가 참조를 필드로 가지면 아래처럼 lifetime parameter를 적어 줘야 의미가 분명했다.
 
 ```rust
 struct Highlight<'a> {
@@ -391,71 +270,28 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
-
 ```text
 Rust
 ```
 
-`Highlight<'a>`는 구조체가 들고 있는 `part` 참조가 최소한 `'a` 동안은 유효하다는 뜻이다. 즉, 구조체가 원본 문자열보다 오래 살아남을 수 없도록 제한하는 것이다.
+- 직접 확인한 결과: 마지막으로 immutable borrow, mutable borrow, lifetime annotation, 참조를 담는 구조체를 한 파일에 모아 보면 개념 연결이 더 잘 보였다.
 
-## 한 번에 보는 종합 예제
+## 해석 / 의견
 
-지금까지 본 내용을 한 파일에 모으면 아래처럼 정리할 수 있다.
+- 의견: ownership은 "메모리 규칙"으로만 보지 말고 "값의 책임이 누구에게 있나"로 보는 편이 이해가 훨씬 빠르다.
+- 의견: 초급자 단계에서는 `clone`, `&T`, `&mut T`만 확실히 구분해도 borrow checker의 절반 이상이 정리된다.
+- 해석: lifetime은 시간을 재는 문법이라기보다, 참조들의 유효 범위를 컴파일러와 공유하는 표기로 이해하는 편이 가장 덜 헷갈린다.
 
-```rust
-fn print_length(text: &str) {
-    println!("length = {}", text.len());
-}
+## 한계와 예외
 
-fn add_suffix(text: &mut String) {
-    text.push_str(" ownership");
-}
+- 이 글은 `String`과 문자열 참조 중심의 입문 설명이다. `Vec<T>`, smart pointer, interior mutability, trait object, async borrow 문제는 다루지 않았다.
+- 에러 메시지 세부 문구는 Rust 버전에 따라 조금 달라질 수 있다.
+- lifetime은 실제 코드에서 생략 가능한 경우가 많지만, 이 글은 개념을 분명히 보이기 위해 대표 예제를 드러내어 적었다.
+- WSL, macOS, Linux 같은 환경 차이보다 언어 규칙 자체에 초점을 맞췄다.
 
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() >= y.len() {
-        x
-    } else {
-        y
-    }
-}
+## 참고자료
 
-struct Highlight<'a> {
-    part: &'a str,
-}
-
-fn main() {
-    let mut title = String::from("Rust");
-    print_length(&title);
-
-    add_suffix(&mut title);
-    println!("title = {}", title);
-
-    let first = String::from("Ownership");
-    let second = String::from("Borrowing");
-    let longer = longest(first.as_str(), second.as_str());
-
-    println!("longer = {}", longer);
-
-    let article = String::from("Rust ownership makes memory safety practical.");
-    let first_word = article.split_whitespace().next().unwrap();
-    let highlight = Highlight { part: first_word };
-
-    println!("highlight = {}", highlight.part);
-}
-```
-
-이 예제에는 immutable borrow, mutable borrow, lifetime annotation, 그리고 참조를 담는 구조체가 모두 들어 있다. 처음에는 각 예제를 따로 실행해 보고, 마지막에 종합 예제를 돌려 보면 개념 연결이 더 잘 된다.
-
-## 정리
-
-이번 글에서는 Rust의 ownership, borrowing, lifetime을 한 흐름으로 정리했다. 핵심은 `String` 같은 값은 대입 시 move가 일어나고, ownership을 유지한 채 사용하려면 참조로 빌려야 하며, 여러 참조의 관계가 애매해지는 순간 lifetime annotation으로 유효 범위를 연결해 준다는 점이다.
-
-처음에는 borrow checker가 불편하게 느껴질 수 있지만, 이 규칙에 익숙해지면 런타임이 아니라 컴파일 시점에 문제를 잡아 주는 장점이 매우 크게 다가온다. 다음 단계에서는 `struct`, `enum`, `Result`, `Option` 같은 타입과 함께 ownership 규칙이 실제 코드에서 어떻게 활용되는지 이어서 보면 좋다.
-
-## 출처 및 참고
-
-- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
-- Rust Project Developers, [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
-- Rust Project Developers, [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
-- Rust Project Developers, [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
+- [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)

@@ -16,50 +16,62 @@ search: true
 permalink: /en/rust/vec-string-str-and-hashmap-basics/
 ---
 
-Once you move past Rust syntax basics and start writing real code, the types you run into most often are `Vec`, `String`, `&str`, and `HashMap`. This post explains what each one is for and how owned data and borrowed data appear together in practical beginner-level code.
+## Summary
 
-The short version is simple: use `Vec` when you want an ordered list of values, `String` when you need an owned and editable string, `&str` when you only need to borrow string data, and `HashMap` when you want key-value storage. Once that mental model is in place, it becomes much easier to move into file I/O, CLI input, serde, and small command-line tools.
+Once you start writing practical Rust code, the types you see most often are `Vec`, `String`, `&str`, and `HashMap`. Understanding those four makes it much easier to read input, split strings, and accumulate results in beginner-level programs.
+
+This post connects those four ideas in one flow. In short, use `Vec` for ordered collections, `String` for owned editable text, `&str` for borrowed string access, and `HashMap` for keyed lookup and accumulation.
 
 ## Document Information
 
-- Created: 2026-04-15
-- Verified on: April 15, 2026
+- Written on: 2026-04-15
+- Verification date: 2026-04-16
 - Document type: tutorial
-- Test environment: Cargo project, Windows PowerShell example commands, and `src/main.rs`
-- Test version: not fixed
-- Source grade: only official documentation is used.
-- Note: this post intentionally stays with the most common beginner patterns and avoids going deep into advanced `entry()` usage or UTF-8 internals.
+- Test environment: Windows 11 Pro, Cargo project, Windows PowerShell example commands, `src/main.rs`
+- Test version: rustc 1.94.0, cargo 1.94.0
+- Source quality: only official documentation is used.
+- Note: representative examples were rerun locally, and the post stays with the beginner-level view of `HashMap` ordering and UTF-8 behavior.
 
-## Create a Practice Project
+## Problem Definition
 
-Create a new project like this and run the examples in `src/main.rs`. The Rust Book beginner workflow starts from a `cargo new` project. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+At the beginner stage, the following four questions often appear together.
+
+- which collection to use when values need to stay in order
+- when a string should be owned and when it should be borrowed
+- how UTF-8 affects string length and slicing expectations
+- where to store accumulated results such as word counts or keyed settings
+
+This post connects those questions as one workflow. It does not cover `BTreeMap`, `Cow`, advanced `entry()` usage, or the full internal details of UTF-8 string representation.
+
+## Verified Facts
+
+- `Vec<T>` is Rust's growable collection for storing values of the same type in order.
+  Evidence: [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html), [Vec in std::vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+- `String` is an owned UTF-8 string type, while `str` is the primitive string slice type usually used through `&str`.
+  Evidence: [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html), [String in std::string](https://doc.rust-lang.org/std/string/struct.String.html), [str primitive type](https://doc.rust-lang.org/std/primitive.str.html)
+- `HashMap<K, V>` is the standard key-value collection for associated data.
+  Evidence: [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html), [HashMap in std::collections](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
+- `Vec::get` returns `Option<&T>`, and `str::len()` reports bytes rather than character count.
+  Evidence: [Vec in std::vec](https://doc.rust-lang.org/std/vec/struct.Vec.html), [str primitive type](https://doc.rust-lang.org/std/primitive.str.html)
+- The simplest practice flow is still a small `cargo new` project.
+  Evidence: [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+
+## Directly Confirmed Results
+
+### 1. A small Cargo project made the practice loop simple
+
+- Direct result: creating a fresh project and repeatedly replacing `src/main.rs` while running `cargo run` was the cleanest way to verify the examples.
 
 ```powershell
 cargo new rust-collections-basics
 cd rust-collections-basics
 code .
-```
-
-After pasting an example into `src/main.rs`, run it with:
-
-```powershell
 cargo run
 ```
 
-## First, a One-Line Mental Model
+### 2. `Vec`, `String`, `&str`, and UTF-8 length differences showed up clearly in a short example
 
-- `Vec<T>`: a growable collection of values in order
-- `String`: an owned UTF-8 string
-- `&str`: a borrowed string slice
-- `HashMap<K, V>`: a key-value collection
-
-According to the official docs, `String` is a growable UTF-8 string type, while `str` is the most primitive string type and is usually seen in its borrowed form as `&str`. [Rust `String` docs](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html)
-
-## Vec<T>: Storing Values in Order
-
-`Vec<T>` is one of the most common collections in Rust. It is used when you want to keep multiple values of the same type in order, append new values, and iterate over them.
-
-The Rust Book introduces vectors as the standard way to store more than one value of the same type, and the standard library documents `Vec<T>` as Rust's growable array type. [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html), [Rust `Vec` docs](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+- Direct result: the example below made vector access, owned vs borrowed strings, and byte-vs-character length easy to observe together.
 
 ```rust
 fn main() {
@@ -70,180 +82,35 @@ fn main() {
 
     println!("len = {}", scores.len());
     println!("scores[0] = {}", scores[0]);
+    println!("index 10 = {:?}", scores.get(10));
 
-    match scores.get(10) {
-        Some(value) => println!("value = {}", value),
-        None => println!("index 10 is out of range"),
-    }
-
-    for score in &scores {
-        println!("score = {}", score);
-    }
-}
-```
-
-The output looks like this.
-
-```text
-len = 3
-scores[0] = 10
-index 10 is out of range
-score = 10
-score = 20
-score = 30
-```
-
-The first distinction beginners should remember is this:
-
-- `scores[0]` accesses the value directly and assumes the index exists
-- `scores.get(10)` returns `Option<&T>`, so out-of-range access can be handled safely
-
-In practice, if you are not absolutely sure the index exists, `get` is usually the safer choice.
-
-## String and &str: Owned Strings vs Borrowed Strings
-
-The most common early confusion around Rust strings is the difference between `String` and `&str`.
-
-- `String` owns its contents
-- `&str` borrows string data
-- a string literal like `"hello"` is usually of type `&'static str`
-
-According to the official docs, `String` owns a heap-allocated UTF-8 buffer, while `str` is the primitive string slice type. [Rust `String` docs](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
-
-```rust
-fn print_title(title: &str) {
-    println!("title = {}", title);
-}
-
-fn main() {
     let literal: &str = "Rust";
-
     let mut owned = String::from("Rust");
     owned.push_str(" language");
+    println!("literal = {}", literal);
+    println!("owned = {}", owned);
 
-    print_title(literal);
-    print_title(&owned);
-
-    let copied = literal.to_string();
-    println!("copied = {}", copied);
-}
-```
-
-The output looks like this.
-
-```text
-title = Rust
-title = Rust language
-copied = Rust
-```
-
-The important practical point here is that a function that accepts `&str` can work with both string literals and borrowed `String` values. At the beginner level, accepting `&str` for read-only string parameters is often the most flexible pattern.
-
-## Working with Strings: Slices, Words, and a UTF-8 Reminder
-
-When handling strings, you often do not need a brand-new `String`. Many tasks are really about borrowing part of a string or iterating over words.
-
-```rust
-fn main() {
-    let text = String::from("rust makes systems programming safer");
-    let first_word = &text[0..4];
-
-    println!("first_word = {}", first_word);
-
-    for word in text.split_whitespace() {
-        println!("word = {}", word);
-    }
-}
-```
-
-The output looks like this.
-
-```text
-first_word = rust
-word = rust
-word = makes
-word = systems
-word = programming
-word = safer
-```
-
-You can read that code like this:
-
-- `first_word` is not a copied string, but a borrowed `&str` slice
-- `split_whitespace()` yields each word as `&str`
-- working with strings does not always mean allocating a new `String`
-
-There is one especially important beginner warning: `str::len()` returns bytes, not character count, and string slicing indices must stay on valid UTF-8 boundaries. [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
-
-```rust
-fn main() {
     let text = "한글";
-
     println!("bytes = {}", text.len());
     println!("chars = {}", text.chars().count());
 }
 ```
 
-The output looks like this.
+- Observed result:
 
 ```text
+len = 3
+scores[0] = 10
+index 10 = None
+literal = Rust
+owned = Rust language
 bytes = 6
 chars = 2
 ```
 
-That is why beginners are usually better off starting with methods like `split_whitespace()`, `lines()`, and `chars()` instead of slicing strings by arbitrary byte offsets.
+### 3. The word-frequency example made the relationship between the four types clearer
 
-## HashMap<K, V>: Finding Values by Key
-
-`HashMap<K, V>` is the right tool for patterns like "name -> score", "word -> count", or "setting -> value".
-
-The Rust Book presents hash maps as the standard key-value collection, and the standard library documents `HashMap` as Rust's hash-based key-value map type. [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html), [Rust `HashMap` docs](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
-
-```rust
-use std::collections::HashMap;
-
-fn main() {
-    let mut scores = HashMap::new();
-
-    scores.insert(String::from("alice"), 95);
-    scores.insert(String::from("bob"), 88);
-
-    let target = String::from("alice");
-
-    match scores.get(&target) {
-        Some(score) => println!("alice = {}", score),
-        None => println!("no score found"),
-    }
-
-    println!("contains bob = {}", scores.contains_key("bob"));
-
-    for (name, score) in &scores {
-        println!("{} = {}", name, score);
-    }
-}
-```
-
-The output looks like this.
-
-```text
-alice = 95
-contains bob = true
-bob = 88
-alice = 95
-```
-
-Note: iteration order in `HashMap` is not guaranteed, so the last two lines may appear in a different order on another run.
-
-At this stage, these are the main operations worth remembering:
-
-- use `insert` to store a key-value pair
-- `get` returns `Option<&V>`
-- `contains_key` checks whether a key exists
-- you can iterate over the full map with a `for` loop
-
-## Combined Example: Counting Word Frequency
-
-Now let us connect `Vec`, `String`, `&str`, and `HashMap` in one practical example. The code below counts word frequency across multiple lines.
+- Direct result: the example below showed how `Vec`, `&str`, `String`, and `HashMap` connect in a small word-count workflow.
 
 ```rust
 use std::collections::HashMap;
@@ -274,42 +141,38 @@ fn main() {
     let joined = lines.join(" ");
     let counts = count_words(&joined);
 
-    println!("joined = {}", joined);
-
-    let rust_key = String::from("rust");
-    let safer_key = String::from("safer");
-
-    println!("rust = {:?}", counts.get(&rust_key));
-    println!("safer = {:?}", counts.get(&safer_key));
-
-    for (word, count) in &counts {
-        println!("{}: {}", word, count);
-    }
+    println!("rust = {:?}", counts.get("rust"));
+    println!("safer = {:?}", counts.get("safer"));
 }
 ```
 
-Each type plays a different role here:
+- Observed result:
 
-- `Vec<&str>` stores multiple input lines
-- `join(" ")` builds one owned `String`
-- `count_words(&joined)` borrows that string as `&str`
-- `split_whitespace()` walks through borrowed `&str` words
-- `HashMap<String, usize>` stores owned keys because the result needs to remain valid after the loop ends
+```text
+rust = Some(2)
+safer = Some(2)
+```
 
-That relationship is the real takeaway from this post. You often read input through `&str`, keep long-lived results in `String`, gather multiple values in `Vec`, and accumulate counts or lookups in `HashMap`.
+## Interpretation / Opinion
 
-## Summary
+- Interpretation: the real point of this topic is not memorizing type names, but learning when to own data, when to borrow it, and when to accumulate it under keys.
+- Opinion: read-only string parameters are easiest to keep flexible at the beginner stage when functions accept `&str`, because both string literals and borrowed `String` values work naturally.
+- Opinion: `HashMap` is convenient for accumulation, but because it does not guarantee iteration order, output-order expectations should be explained separately.
 
-This post grouped `Vec`, `String`, `&str`, and `HashMap` into one beginner-friendly flow. Use `Vec` for ordered collections, `String` for owned editable text, `&str` for borrowed read-only string access, and `HashMap` for key-based lookup and accumulation.
+## Limits and Exceptions
 
-The most natural next step is to move from individual types to project structure: how these values get split across files, libraries, and executables. That is why the next post fits well around crates, packages, and project layout.
+- This post only covers the most common beginner patterns. `BTreeMap`, `Cow`, and deeper `entry()` patterns are outside the scope.
+- `HashMap` iteration order is not guaranteed, so some printed lines can appear in a different order across runs.
+- `len()` on strings reports bytes, and direct byte indexing is not always safe for UTF-8 text.
+- This post does not go deep into UTF-8 internals or advanced string-performance topics.
 
-## Sources and references
+## References
 
-- Rust Project Developers, [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)
-- Rust Project Developers, [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
-- Rust Project Developers, [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
-- Rust Project Developers, [String in std::string](https://doc.rust-lang.org/std/string/struct.String.html)
-- Rust Project Developers, [str primitive type](https://doc.rust-lang.org/std/primitive.str.html)
-- Rust Project Developers, [Vec in std::vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
-- Rust Project Developers, [HashMap in std::collections](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
+- [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)
+- [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+- [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+- [String in std::string](https://doc.rust-lang.org/std/string/struct.String.html)
+- [str primitive type](https://doc.rust-lang.org/std/primitive.str.html)
+- [Vec in std::vec](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+- [HashMap in std::collections](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
