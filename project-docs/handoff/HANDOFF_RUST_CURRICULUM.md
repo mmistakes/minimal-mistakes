@@ -1,7 +1,11 @@
 # Rust Curriculum Handoff
 
-이 문서는 현재 Rust 시리즈의 상태와 앞으로 이어서 만들 전체 커리큘럼을 정리한 handoff다.
-목표는 다음 작업자가 "다음 글 한 편"이 아니라 "시리즈 전체 구조"를 보고 일관되게 이어서 발행할 수 있게 만드는 것이다.
+## Snapshot
+
+- 목적: Rust 시리즈 전체 구조와 다음 발행 우선순위를 유지한다.
+- 현재 공개 상태: Rust 01~07 발행 완료
+- 다음 우선순위: Rust 08
+- 바로 다음 실행 메모: `HANDOFF_NEXT_RUST_POST.md`
 
 ## Current State
 
@@ -39,7 +43,9 @@
 - generics, `Result`, closure, iterator
 - module, smart pointer, concurrency, async 개요
 
-즉, 현재 시리즈는 `입문 -> 초급 핵심 개념`까지는 이미 연결돼 있다.
+## Current Coverage Summary
+
+- 현재 시리즈는 `입문 -> 초급 핵심 개념` 구간까지 연결되어 있다.
 
 ## Main Gaps To Fill
 
@@ -52,7 +58,9 @@
 - 직렬화/역직렬화
 - 작은 결과물을 만드는 mini project
 
-이 여섯 축이 채워져야 독자가 "문법을 읽는 상태"에서 "작은 도구를 직접 만드는 상태"로 넘어갈 수 있다.
+## Gap Summary
+
+- 위 공백을 채워야 독자가 "문법을 읽는 상태"에서 "작은 도구를 직접 만드는 상태"로 넘어갈 수 있다.
 
 ## Target Reader
 
@@ -63,7 +71,7 @@
 
 ## Curriculum Goal
 
-시리즈의 목표는 Rust를 깊게 완주하는 것이 아니라, 아래 수준까지 안정적으로 올리는 것이다.
+시리즈의 목표는 Rust를 깊게 완주하는 것이 아니라 아래 수준까지 안정적으로 올리는 것이다.
 
 - Cargo 프로젝트를 만들고 실행할 수 있다
 - ownership과 borrowing을 이해하고 오류 메시지를 덜 두려워한다
@@ -253,10 +261,10 @@ permalink: /en/rust/example-permalink/
 3. KOR/ENG 링크와 아카이브 노출 검증
 4. 그 다음 Rust 09 제작
 
-즉, 다음 액션은 여전히 `Rust 08` 작성이다.
+## Current Required Action
+
+- 다음 액션은 `Rust 08` 작성이다.
 
 ## Related File
-
-다음 1편만 바로 작성해야 할 때는 아래 문서를 함께 볼 것.
 
 - `HANDOFF_NEXT_RUST_POST.md`

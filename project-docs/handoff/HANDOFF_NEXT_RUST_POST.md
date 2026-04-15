@@ -1,8 +1,11 @@
 # Next Rust Post Handoff
 
-전체 시리즈 로드맵은 `HANDOFF_RUST_CURRICULUM.md`를 참고할 것.
+## Snapshot
 
-이 문서는 다음 Rust 포스팅 제작을 바로 이어서 진행할 수 있도록 남기는 handoff다.
+- 전체 시리즈 로드맵: `HANDOFF_RUST_CURRICULUM.md`
+- 대상 글: `Rust 08`
+- 권장 주제: `Vec`, `String`, `&str`, `HashMap`
+- 목적: 다음 Rust 포스트 1편을 바로 제작할 수 있는 실행 기준을 남긴다.
 
 ## Recommended Next Post
 
@@ -24,8 +27,10 @@
 - English post:
   `_posts/2026-04-15-rust-vec-string-str-hashmap-en.md`
 
-날짜는 handoff 작성 시점 기준으로 제안한 값이다.
-실제 발행일이 달라지면 파일명과 front matter `date`를 함께 맞출 것.
+## Date Handling
+
+- 날짜는 handoff 작성 시점 기준 제안값이다.
+- 실제 발행일이 달라지면 파일명과 front matter `date`를 함께 맞춘다.
 
 ## Front Matter Draft
 
@@ -145,4 +150,6 @@ rust-vec-string-str-hashmap:
 - `Rust 09. Cargo, Crates, Modules, Project Layout`
 - `Rust 09. Testing in Rust`
 
-현재 시리즈의 빈 구간을 메우는 관점에서는 `collections -> project layout/testing -> file I/O -> serde -> mini project` 순서가 가장 안정적이다.
+## Roadmap Note
+
+- 현재 시리즈의 빈 구간을 메우는 관점에서는 `collections -> project layout/testing -> file I/O -> serde -> mini project` 순서가 가장 안정적이다.
