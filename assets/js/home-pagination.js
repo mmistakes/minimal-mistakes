@@ -33,6 +33,7 @@
     var link = document.createElement("a");
 
     link.textContent = label;
+    link.setAttribute("data-scroll-ignore", "");
 
     if (options.disabled) {
       link.href = "#";
