@@ -29,6 +29,7 @@
 ## 작업별 참조 문서
 
 - 글 작성, front matter, 섹션/태그 규칙: `project-docs/CONTENT_RULES.md`
+- 출처 표기, 주장-근거 연결, 사실/의견 분리: `project-docs/SOURCING_AND_TRUST.md`
 - 메뉴, 다국어, 페이지네이션, 스타일, 검증: `project-docs/SITE_OPERATIONS.md`
 - handoff 인덱스와 읽기 순서: `project-docs/handoff/README.md`
 
