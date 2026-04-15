@@ -17,9 +17,18 @@ permalink: /en/rust/variables-types-control-flow-and-functions/
 
 When you first learn Rust, the most important syntax to understand is variables, types, control flow, and functions. Once these four are clear, later topics such as `struct`, `enum`, `ownership`, and borrowing become much easier to follow. This post walks through each topic one by one and includes small examples you can run right away.
 
+## Verification scope and reproducibility
+
+- As of: April 15, 2026, checked chapter 3 of the Rust Book and the standard Cargo beginner workflow.
+- Source grade: only official documentation is used.
+- Reproduction environment: Cargo project, Windows PowerShell example commands, and `src/main.rs`.
+- Note: example outputs are shown for explanation, and exact diagnostics can vary by Rust version.
+
+
 ## Create a Practice Project
 
 You can create a new Cargo project like this and run the examples in `src/main.rs`.
+Source: the Rust Book introduces beginner practice through a `cargo new` project flow. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-basic-syntax
@@ -36,6 +45,7 @@ cargo run
 ## Variables
 
 In Rust, variables are immutable by default. That means a value declared with `let` cannot be assigned again unless you explicitly make it mutable with `let mut`.
+Source: the Rust Book variable chapter covers default immutability, `mut`, and shadowing together. [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
 
 The example below shows an immutable variable, a mutable variable, and shadowing in one place.
 
@@ -93,6 +103,7 @@ Shadowing is different from `mut`. With `mut`, you update the same variable. Wit
 ## Types
 
 Rust has strong type inference, so you often do not need to write types explicitly. Still, it helps to see the main beginner-level types in one place before moving on. A compact summary looks like this.
+Source: the Rust Book data types chapter introduces scalar and compound types and explains why type annotations are sometimes needed. [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
 
 | Category | Types | Description |
 | --- | --- | --- |
@@ -163,6 +174,7 @@ Control flow determines the order in which your program runs. In Rust, the most 
 ### if
 
 Use `if` when you want to run different code depending on a condition.
+Source: the Rust Book control flow chapter explains that `if` requires a `bool` condition and can be used as an expression. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -200,6 +212,7 @@ The output looks like this.
 ### loop
 
 `loop` repeats forever until it reaches `break`.
+Source: the Rust Book documents `loop` together with `break` values. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -226,6 +239,7 @@ One nice Rust feature is that `loop` can return a value through `break`. In this
 ### while
 
 Use `while` when repetition should continue only as long as a condition is true.
+Source: the Rust Book shows `while` as the basic condition-controlled repetition form. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -249,6 +263,7 @@ The output looks like this.
 ### for
 
 `for` is the most common way to iterate over arrays, vectors, ranges, and other iterable values.
+Source: the Rust Book introduces `for` with arrays and ranges. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -273,6 +288,7 @@ In real Rust code, `for` is usually preferred over manual counting with `while`,
 ### match
 
 When you want clearer branching, `match` appears very often in Rust code.
+Source: `match` is explained in depth later in the Rust Book, but it fits naturally into the beginner control-flow discussion here. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html), [match](https://doc.rust-lang.org/book/ch06-02-match.html)
 
 ```rust
 fn main() {
@@ -298,6 +314,7 @@ The output looks like this.
 ## Functions
 
 Functions are the basic unit for grouping repeated logic and separating inputs from outputs. In Rust, you define a function with the `fn` keyword.
+Source: the Rust Book function chapter covers `fn`, parameters, return types, expressions, and semicolons. [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)
 
 ```rust
 fn print_user(name: &str, age: u32) {
@@ -405,3 +422,12 @@ This single example includes variables, types, `if`, `while`, `for`, `match`, fu
 This post covered the basics of variables, types, control flow, and functions in Rust. Once you understand the difference between `let` and `let mut`, common built-in types, the role of `if/loop/while/for/match`, and how function parameters and return values work, learning the next Rust topics becomes much easier.
 
 A good next step is to move on to `ownership`, borrowing, and references, which explain how Rust achieves memory safety without giving up performance.
+
+## Sources and references
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
+- Rust Project Developers, [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+- Rust Project Developers, [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)
+- Rust Project Developers, [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
+- Rust Project Developers, [match](https://doc.rust-lang.org/book/ch06-02-match.html)

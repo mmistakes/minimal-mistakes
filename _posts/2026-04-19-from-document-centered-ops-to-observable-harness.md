@@ -16,13 +16,24 @@ search: false
 
 문서를 더 길게 쓰는 것만으로는 해결되지 않는다. 시리즈 전체를 관통한 문제의식도 결국 여기로 모인다. AGENTS.md나 CLAUDE.md 같은 지침 파일을 더 촘촘히 쓰는 일은 출발점일 수는 있지만, 그 자체가 하네스를 만들어 주지는 않는다. 이번 최종편에서는 지금까지의 논의를 묶어, 문서 중심 운영에서 관측 가능하고 검증 가능한 하네스로 실제로 어떻게 전환할 수 있는지 정리해보려 한다.
 
+## 검증 기준과 해석 경계
+
+- 시점: 2026-04-15 기준 OpenAI Codex 문서, OpenAI 공식 API 문서, Anthropic Claude Code 문서를 확인했다.
+- 출처 등급: 공식 문서 우선, 개념을 처음 소개한 vendor-authored 글만 보조로 사용했다.
+- 사실 범위: `AGENTS.md`, memory/settings, hooks, subagents, approvals, sandboxing, eval, trace처럼 문서로 확인 가능한 기능만 사실로 적었다.
+- 해석 범위: `harness engineering`, `control plane`, `contract`, `enforcement`, `observable harness` 같은 표현은 이 시리즈에서 쓰는 운영 개념이며, 별도 근거 줄이 없는 경우 필자의 해석이다.
+
+
 ## 지금까지의 문제를 한 문장으로 다시 정리하면
 
 문제가 된 것은 문서가 적어서가 아니라, 하네스가 문서에만 머물러 있었다는 점이다. 좋은 원칙이 자연어로만 남아 있으면 놓치기 쉽고, handoff는 흩어지고, eval은 결과물만 보게 되고, trace와 guardrail이 비면 시스템은 겉보기보다 훨씬 불안정해진다.
+해석: 이 절은 시리즈 전체를 한 문장으로 요약하는 필자의 관점이다. 다만 공식 문서들을 보면 instruction file, hooks, eval, trace, approvals가 실제로 분리된 운영 계층으로 존재한다. 근거: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
 
 ## 전환의 핵심 원칙
 
 전환의 방향은 복잡하지 않다. 문서에 몰려 있던 역할을 여러 층으로 다시 나누면 된다.
+문서로 확인 가능한 사실: 공식 문서에는 이미 instruction, automation/hooks, evaluation, trace, approval/permission이 분리된 계층으로 등장한다. 근거: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
+해석: 이 글의 전환 원칙은 그 계층들을 운영 구조로 재배치하는 필자의 권고다.
 
 1. 프로젝트 지침 파일은 entrypoint로 경량화한다.
 2. 세부 운영 문서는 별도 경로로 분리한다.
@@ -39,6 +50,7 @@ search: false
 ## 현실적인 적용 순서
 
 현실에서는 한 번에 다 바꾸기보다 점진적으로 재구성하는 편이 낫다.
+해석: 어떤 순서로 옮길지는 필자의 단계적 도입안이다. 공식 문서가 특정 순서를 강제하는 것은 아니다.
 
 1. 프로젝트 지침 파일을 먼저 경량화한다. 저장소의 핵심 기대치와 참조 경로만 남긴다.
 2. 운영 절차와 기준은 별도 문서로 분리한다. 사람을 위한 설명과 시스템 규칙을 섞지 않는다.
@@ -50,6 +62,7 @@ search: false
 ## 작은 프로젝트에서는 어떻게 시작할 수 있는가
 
 작은 프로젝트라면 더 단순하게 시작해도 된다. 예를 들어 4주 전환안은 아래처럼 잡을 수 있다.
+해석: 이 절의 4주 계획은 필자의 제안이다. 다만 출발점으로 instruction, hooks, eval, trace, approvals 같은 분리된 계층을 확인할 수 있다는 점은 공식 문서로 뒷받침된다. 근거: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
 
 1. 1주차: 지침 파일을 반으로 줄이고, 세부 문서를 별도 폴더로 뺀다.
 2. 2주차: handoff schema 하나와 docs freshness check 하나를 도입한다.
@@ -77,3 +90,13 @@ search: false
 ## 마무리하며
 
 가장 먼저 할 일은 지침 파일을 더 길게 쓰는 것이 아니라, 지금 그 파일이 너무 많은 역할을 떠안고 있는지 보는 것이다. 그다음에는 반복적으로 놓치는 규칙 하나를 골라 schema나 check로 바꿔보는 편이 좋다. handoff 하나를 구조화하고, 문서 갱신 하나를 CI로 올리고, trace 필드 몇 개를 남기는 것만으로도 시스템은 눈에 띄게 달라질 수 있다. 작은 프로젝트라면 더더욱 한 번에 다 하려 하지 말고, 가장 자주 흔들리는 지점부터 바깥 레이어로 옮기면 된다. 이 시리즈가 끝나는 지점은 결론이라기보다 출발선에 가깝다. 이제 필요한 것은 더 많은 문서가 아니라, 더 잘 보이고 더 잘 검증되는 운영 구조다.
+
+## 출처 및 참고
+
+- OpenAI, [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
+- OpenAI, [Hooks](https://developers.openai.com/codex/hooks)
+- OpenAI, [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+- OpenAI, [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading)
+- OpenAI, [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+- Anthropic, [Hooks reference](https://code.claude.com/docs/en/hooks)
+- Anthropic, [Permissions](https://code.claude.com/docs/en/permissions)

@@ -16,9 +16,18 @@ search: true
 
 Rust를 처음 공부할 때 가장 먼저 익혀야 하는 문법은 변수, 타입, 제어흐름, 함수다. 이 4가지를 이해하면 이후에 `struct`, `enum`, `ownership`, `borrow` 같은 개념을 배울 때도 훨씬 수월하다. 이 글에서는 Cargo 프로젝트 하나를 기준으로 각 문법을 하나씩 설명하고, 바로 실행해 볼 수 있는 예제까지 함께 정리한다.
 
+## 검증 기준과 재현 범위
+
+- 시점: 2026-04-15 기준 Rust Book 3장과 Cargo 기본 흐름을 확인했다.
+- 출처 등급: 공식 문서만 사용했다.
+- 재현 환경: Cargo 프로젝트, Windows PowerShell 예시 명령, `src/main.rs`.
+- 주의: 예제 출력은 코드 구조 설명용이며, 타입 표기와 에러 메시지 일부는 Rust 버전에 따라 달라질 수 있다.
+
+
 ## 실습 프로젝트 만들기
 
 예제는 아래처럼 새 Cargo 프로젝트를 만든 뒤 `src/main.rs`에서 실행하면 된다.
+근거: Rust Book은 초기 실습 흐름을 `cargo new` 프로젝트 기준으로 설명한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-basic-syntax
@@ -35,6 +44,7 @@ cargo run
 ## 변수
 
 Rust의 변수는 기본적으로 변경 불가능하다. 즉, `let`으로 만든 값은 다시 대입할 수 없고, 값을 바꾸려면 `mut`를 붙여 `let mut` 형태로 선언해야 한다.
+근거: Rust Book의 변수 장은 기본 불변성, `mut`, shadowing을 함께 설명한다. [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
 
 아래 예제는 변경 불가능한 변수, 변경 가능한 변수, 그리고 섀도잉(shadowing)을 함께 보여 준다.
 
@@ -92,6 +102,7 @@ fn main() {
 ## 타입
 
 Rust는 타입 추론이 꽤 강한 편이라 많은 경우 타입을 직접 쓰지 않아도 된다. 하지만 Rust에 어떤 타입들이 있는지 한 번에 보고 넘어가면 이후 문법을 이해하기가 훨씬 편하다. 먼저 초반에 자주 보게 되는 기본 타입들을 표로 정리하면 아래와 같다.
+근거: Rust Book의 데이터 타입 장은 스칼라, 복합 타입, 타입 명시가 필요한 대표 사례를 다룬다. [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
 
 | 분류 | 타입 | 설명 |
 | --- | --- | --- |
@@ -162,6 +173,7 @@ fn main() {
 ### if
 
 `if`는 조건에 따라 다른 코드를 실행할 때 사용한다.
+근거: Rust Book의 제어흐름 장은 `if`가 `bool` 조건을 요구하고 표현식으로도 쓰인다고 설명한다. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -199,6 +211,7 @@ fn main() {
 ### loop
 
 `loop`는 명시적으로 `break`를 만날 때까지 계속 반복한다.
+근거: Rust Book은 `loop`와 `break` 반환값 패턴을 공식 예제로 설명한다. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -225,6 +238,7 @@ Rust의 `loop`는 `break`와 함께 값을 돌려줄 수 있다는 점이 특징
 ### while
 
 `while`은 조건이 참인 동안 반복할 때 사용한다.
+근거: Rust Book은 조건 기반 반복에서 `while` 사용 예시를 제공한다. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -248,6 +262,7 @@ fn main() {
 ### for
 
 `for`는 배열, 벡터, 범위 같은 반복 가능한 값을 순회할 때 가장 자주 쓰는 문법이다.
+근거: Rust Book은 배열과 범위를 순회할 때 `for`를 사용하는 흐름을 소개한다. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 
 ```rust
 fn main() {
@@ -272,6 +287,7 @@ fn main() {
 ### match
 
 Rust에서 분기 처리를 더 명확하게 쓰고 싶을 때는 `match`가 매우 자주 등장한다.
+근거: Rust Book은 `match`를 6장에서 자세히 다루지만, 제어흐름 기초와 함께 보면 분기 구조 이해에 도움이 된다. [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html), [match](https://doc.rust-lang.org/book/ch06-02-match.html)
 
 ```rust
 fn main() {
@@ -297,6 +313,7 @@ fn main() {
 ## 함수
 
 함수는 반복되는 코드를 묶고, 입력과 출력을 명확하게 나누는 가장 기본적인 단위다. Rust에서는 `fn` 키워드로 함수를 정의한다.
+근거: Rust Book의 함수 장은 `fn`, 인자, 반환 타입, 표현식과 세미콜론 차이를 함께 설명한다. [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)
 
 ```rust
 fn print_user(name: &str, age: u32) {
@@ -404,3 +421,12 @@ fn main() {
 이번 글에서는 Rust의 가장 기본이 되는 변수, 타입, 제어흐름, 함수를 한 번에 정리했다. `let`과 `let mut`의 차이, 숫자와 문자 같은 기본 타입, `if/loop/while/for/match`의 용도, 그리고 함수의 인자와 반환값 문법을 이해하면 이후 문법을 익히는 속도가 훨씬 빨라진다.
 
 다음 단계로는 `ownership`, `borrow`, `reference`를 배우면서 왜 Rust가 메모리 안전성과 성능을 동시에 가져갈 수 있는지 이해해 보면 좋다.
+
+## 출처 및 참고
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
+- Rust Project Developers, [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+- Rust Project Developers, [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)
+- Rust Project Developers, [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
+- Rust Project Developers, [match](https://doc.rust-lang.org/book/ch06-02-match.html)

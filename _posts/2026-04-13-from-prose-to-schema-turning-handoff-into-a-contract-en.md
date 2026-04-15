@@ -17,9 +17,18 @@ permalink: /en/ai/from-prose-to-schema-turning-handoff-into-a-contract/
 
 Part 3 argued that files like `AGENTS.md` and `CLAUDE.md` should stay closer to entrypoints than to control planes. But even if those instruction files are written well, the system can still wobble if the actual handoff between steps remains little more than a natural-language note. That is why this post focuses on the next layer down: why handoff should be treated less like a memo and more like a structured contract.
 
+## Verification scope and interpretation boundary
+
+- As of: April 15, 2026, checked OpenAI Codex docs, OpenAI platform docs, and Anthropic Claude Code docs.
+- Source grade: official docs first, plus vendor-authored engineering posts only when a concept is introduced there.
+- Fact boundary: only documented features such as `AGENTS.md`, memory/settings, hooks, subagents, approvals, sandboxing, evals, and trace are treated as factual claims.
+- Interpretation boundary: terms like `harness engineering`, `control plane`, `contract`, `enforcement`, and `observable harness` are operating abstractions used in this series unless a source line says otherwise.
+
+
 ## Why Natural-Language Handoff Feels Convenient
 
 Natural-language handoff feels reasonable at first. It is quick to write, easy to adjust to the situation, and flexible enough that a human reader can usually fill in the missing context. In a small team or a short experiment, it is very easy to think, "As long as the main idea is written down, that should be enough."
+Interpretation: this section explains why prose handoff feels familiar to people. The official docs do not define handoff in exactly these terms, but both OpenAI and Anthropic expose more structured operating surfaces through hooks, permissions, and trace. Source: [OpenAI hooks](https://developers.openai.com/codex/hooks), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
 
 A handoff like this is very common:
 
@@ -30,6 +39,7 @@ To a human reader, that sounds understandable. Something was changed, exceptions
 ## Why It Is Still Unstable
 
 The first problem is omission detection. If the handoff does not explicitly say which files changed, what risks remain, or what the next agent must verify, it is hard to catch that automatically. A sentence that reads naturally is not the same thing as a handoff that contains all required information.
+Documented fact: OpenAI's eval guide says AI systems need task-specific criteria and measurable signals, and the trace grading guide treats traces as structured evaluation inputs. Source: [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading)
 
 The second problem is parsing. Humans infer missing meaning from context, but a follow-up agent or an automated step cannot do that reliably. "Roughly checked the tests" might mean unit tests, a quick manual click-through, or just one local run. That ambiguity becomes especially costly in multi-agent workflows.
 
@@ -40,12 +50,14 @@ Whether the tool is Codex, Claude Code, or something else, any environment that 
 ## Why Handoff Should Be a Contract
 
 From a harness engineering perspective, handoff is closer to a contract than a memo. A memo is useful for saying, "Here is roughly what happened." A contract is useful for saying, "Here is what the next step may safely rely on." For handoff to function as a contract, it needs required fields and a structure whose presence can be checked.
+Interpretation: `contract` is my operating term here, not a vendor-defined keyword. The direction behind it is that hooks, permissions, and traces work best when required fields and rules are explicit rather than implied. Source: [OpenAI hooks](https://developers.openai.com/codex/hooks), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Claude hooks](https://code.claude.com/docs/en/hooks)
 
 That shift matters for more than tidiness. Once a schema exists, automatic validation becomes possible. Missing information becomes detectable. Follow-up work becomes more predictable. The moment prose turns into schema, handoff stops depending only on the reader's judgment and starts becoming something the system itself can work with.
 
 ## What Kinds of Fields Can Be Structured?
 
 For example, a handoff can be fixed into a YAML shape like this:
+Documented fact: the hooks, permissions, and trace docs treat events, approval conditions, and evaluation inputs as explicit structured data. Source: [OpenAI hooks](https://developers.openai.com/codex/hooks), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
 
 ```yaml
 owner_team: backend-platform
@@ -85,3 +97,11 @@ If you want to validate omissions and stabilize follow-up work, handoff has to m
 ## Preview of the Next Post
 
 The next post will explore why build and test alone are not enough to validate an agent. A product can pass its tests while the agent still violates working conventions, misses intended checks, or creates unstable output. Some failures show up in the build, but others appear in the way work is carried out and handed over. That is why the next step is to separate product correctness from agent correctness. Once handoff becomes a contract, the next question is whether that contract is actually leading to the kind of outcomes you want.
+
+## Sources and references
+
+- OpenAI, [Hooks](https://developers.openai.com/codex/hooks)
+- OpenAI, [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+- OpenAI, [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading)
+- Anthropic, [Hooks reference](https://code.claude.com/docs/en/hooks)
+- Anthropic, [Permissions](https://code.claude.com/docs/en/permissions)

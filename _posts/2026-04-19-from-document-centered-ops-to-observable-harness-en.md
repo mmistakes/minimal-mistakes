@@ -17,13 +17,24 @@ permalink: /en/ai/from-document-centered-ops-to-an-observable-harness/
 
 Writing longer documents is not the solution. That is where the entire series eventually lands. Files like `AGENTS.md` or `CLAUDE.md` can be useful starting points, but making them denser does not magically create a harness. In this final post, I want to gather the discussion into a practical roadmap for moving from document-centered operations to a harness that is observable and verifiable.
 
+## Verification scope and interpretation boundary
+
+- As of: April 15, 2026, checked OpenAI Codex docs, OpenAI platform docs, and Anthropic Claude Code docs.
+- Source grade: official docs first, plus vendor-authored engineering posts only when a concept is introduced there.
+- Fact boundary: only documented features such as `AGENTS.md`, memory/settings, hooks, subagents, approvals, sandboxing, evals, and trace are treated as factual claims.
+- Interpretation boundary: terms like `harness engineering`, `control plane`, `contract`, `enforcement`, and `observable harness` are operating abstractions used in this series unless a source line says otherwise.
+
+
 ## If You Compress the Problem into One Sentence
 
 The real issue was never that there were too few documents. It was that too much of the harness still lived only inside documents. When good principles remain only as prose, they are easy to miss. Handoffs drift, eval looks only at artifacts, and trace and guardrails remain too thin to stabilize the system.
+Interpretation: this section is my own one-sentence summary of the series. The factual anchor is that the official docs already separate instruction files, hooks, eval, trace, and approvals into distinct operating layers. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
 
 ## Core Principles of the Transition
 
 The direction of change is actually straightforward. Responsibilities that were overloaded into documentation have to be redistributed across multiple layers.
+Documented fact: the official docs already expose instruction, automation/hooks, evaluation, trace, and approval or permission as separate layers. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
+Interpretation: the transition principles in this post are my recommendation for turning those layers into an operating design.
 
 1. Keep the project instruction file light and treat it as an entrypoint.
 2. Split detailed operating documents into separate locations.
@@ -40,6 +51,7 @@ Taken together, the official documentation and case studies point to a broadly s
 ## A Realistic Order of Adoption
 
 In practice, this is easier to do as a gradual reconstruction than as one massive rewrite.
+Interpretation: the adoption order here is my staged rollout recommendation. The official docs do not prescribe this exact sequence.
 
 1. Lighten the project instruction file first. Leave only core expectations and reference paths.
 2. Split detailed operating procedures into separate documents so explanation and system rules stop competing in the same place.
@@ -51,6 +63,7 @@ In practice, this is easier to do as a gradual reconstruction than as one massiv
 ## How Small Projects Can Start
 
 Small projects can begin even more simply. A practical four-week transition plan might look like this.
+Interpretation: the four-week plan is my proposal. The factual basis is simply that instruction, hooks, eval, trace, and approvals already exist as separate documented layers. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
 
 1. Week 1: cut the instruction file in half and move detailed procedures into separate docs.
 2. Week 2: introduce one handoff schema and one docs freshness check.
@@ -78,3 +91,13 @@ Harness engineering is not about writing more guidance; it is about moving opera
 ## Closing Thoughts
 
 The best place to start is not by extending the instruction file, but by checking whether that file is carrying too many responsibilities already. After that, pick one rule that is repeatedly missed and turn it into a schema or a check. Even one structured handoff, one docs freshness check, or a few trace fields can noticeably change how stable the system feels. In a small project, it is usually better to move one shaky area into an outer layer than to attempt a total redesign. In that sense, the end of this series is closer to a starting line than a conclusion. What matters now is not more documentation, but an operating structure that is easier to observe and easier to verify.
+
+## Sources and references
+
+- OpenAI, [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
+- OpenAI, [Hooks](https://developers.openai.com/codex/hooks)
+- OpenAI, [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+- OpenAI, [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading)
+- OpenAI, [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+- Anthropic, [Hooks reference](https://code.claude.com/docs/en/hooks)
+- Anthropic, [Permissions](https://code.claude.com/docs/en/permissions)

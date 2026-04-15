@@ -19,9 +19,18 @@ After learning ownership, borrowing, and lifetimes, the next step is understandi
 
 This post walks through `struct`, `enum`, pattern matching, and `trait` as one connected set of ideas so you can build a solid mental model of how Rust organizes data and behavior.
 
+## Verification scope and reproducibility
+
+- As of: April 15, 2026, checked chapters 5 and 6 of the Rust Book plus the trait chapter in chapter 10.
+- Source grade: only official documentation is used.
+- Reproduction environment: Cargo project, `src/main.rs`, and basic enum and trait examples.
+- Note: this post stays at the beginner level and does not try to cover advanced patterns or the full trait-bound system.
+
+
 ## Create a Practice Project
 
 Create a new Cargo project like this and run the examples in `src/main.rs`.
+Source: the Rust Book beginner examples assume a `cargo new` project. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-structs-enums-traits
@@ -38,6 +47,7 @@ cargo run
 ## Struct: Grouping Related Data
 
 Use a `struct` when you want to group several related fields under one type name. For example, instead of storing user information in separate variables, you can represent it as one user type.
+Source: the Rust Book introduces structs as the basic custom type for grouping related data. [Defining and Instantiating Structs](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
 
 ```rust
 struct User {
@@ -97,6 +107,7 @@ Because the function parameter `username` has the same name as the struct field 
 ## Adding Methods with impl
 
 To attach behavior to a `struct`, Rust uses an `impl` block.
+Source: the Rust Book explains method syntax and `impl` blocks in the struct chapter. [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
 
 ```rust
 struct Rectangle {
@@ -141,6 +152,7 @@ You could write these as standalone functions, but when a behavior belongs close
 ## Enum: Representing One of Several Cases
 
 If a `struct` stores several fields at the same time, an `enum` stores exactly one variant out of several choices.
+Source: the Rust Book introduces enums as types whose values are one of several variants. [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)
 
 ```rust
 enum Message {
@@ -205,6 +217,7 @@ The output looks like this.
 ## Pattern Matching: match and if let
 
 The most common way to read values out of an enum is with `match`. It is powerful because Rust requires you to handle every possible case.
+Source: the Rust Book presents `match` and `if let` as the core branching tools around enums. [match](https://doc.rust-lang.org/book/ch06-02-match.html), [Concise Control Flow with if let](https://doc.rust-lang.org/book/ch06-03-if-let.html)
 
 ```rust
 enum Ticket {
@@ -257,6 +270,7 @@ You can think of `if let` as a compact version of `match`. Use `match` when you 
 ## Trait: Defining Shared Behavior
 
 A `trait` is a shared behavior contract that multiple types can implement. If you know Java interfaces, that is a useful first comparison, but they are not identical. Rust traits can provide default method implementations, and having a method with the same name does not automatically mean a type implements the trait.
+Source: the Rust Book explains traits as the way Rust defines shared behavior across types. [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)
 
 ```rust
 trait Summary {
@@ -377,3 +391,13 @@ This example includes a `struct`, an `enum`, `match`, `if let`, and a `trait` in
 This post covered `struct`, `enum`, pattern matching, and `trait`, which are some of the most important tools for modeling data in Rust. `struct` is great for grouping related fields, `enum` is powerful for representing one of several safe cases, `match` and `if let` let you read those cases clearly, and `trait` lets different types share common behavior.
 
 A practical next step is to move on to topics such as `Vec`, `HashMap`, iterators, and error handling, where the `struct`, `enum`, and `trait` ideas from this post start connecting to more realistic application code.
+
+## Sources and references
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [Defining and Instantiating Structs](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
+- Rust Project Developers, [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
+- Rust Project Developers, [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)
+- Rust Project Developers, [match](https://doc.rust-lang.org/book/ch06-02-match.html)
+- Rust Project Developers, [Concise Control Flow with if let](https://doc.rust-lang.org/book/ch06-03-if-let.html)
+- Rust Project Developers, [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)

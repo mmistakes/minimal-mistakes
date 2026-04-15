@@ -19,9 +19,18 @@ Once you get more comfortable with Rust, four topics start appearing everywhere:
 
 This post explains those four topics at a beginner-friendly level. Each one may look like separate syntax at first, but in real Rust code they very often work together.
 
+## Verification scope and reproducibility
+
+- As of: April 15, 2026, checked chapters 9, 10, and 13 of the Rust Book.
+- Source grade: only official documentation is used.
+- Reproduction environment: Cargo project, `src/main.rs`, and examples built around `Result` and iterators.
+- Note: this post is a beginner-oriented summary, so it does not try to cover every iterator adaptor or advanced error-design pattern.
+
+
 ## Create a Practice Project
 
 Create a new Cargo project like this and run the examples in `src/main.rs`.
+Source: the Rust Book beginner examples assume a `cargo new` workflow. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-generics-errors-closures
@@ -38,6 +47,7 @@ cargo run
 ## Generics: Generalizing Over Types
 
 Generics let you reuse the same logic across multiple types. For example, a function that finds the largest value can work for an array of `i32` values and also for an array of `char` values.
+Source: the Rust Book introduces generic type parameters as the basic way to remove repetition and generalize code over types. [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
 
 ```rust
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
@@ -93,6 +103,7 @@ The output looks like this.
 ## Error Handling: Result and the ? Operator
 
 Rust does not hide the possibility of failure. Recoverable errors are usually represented with `Result<T, E>`, where success is `Ok` and failure is `Err`.
+Source: the Rust Book explains recoverable errors primarily through `Result<T, E>` and the `?` operator. [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
 
 ```rust
 fn safe_divide(a: f64, b: f64) -> Result<f64, String> {
@@ -149,6 +160,7 @@ If `?` sees an `Err`, it returns that error immediately to the outer function. I
 ## Closures: Anonymous Functions
 
 A closure is a function without a name that you can define inline and store in a variable. It is commonly used for short logic or when you want to capture values from the surrounding environment.
+Source: the Rust Book describes closures as anonymous functions that can capture environment values. [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
 
 ```rust
 fn main() {
@@ -183,6 +195,7 @@ At the beginner level, it is enough to think of a closure as a short function yo
 ## Iterators: Flexible Collection Processing
 
 An iterator is an abstraction for pulling values out one by one. In Rust, iterators appear not only with `for` loops but also with method chains such as `map`, `filter`, `sum`, and `collect`. An important detail is that adapters like `map` and `filter` are lazy: the work is actually performed only when the iterator is consumed by something like `sum`, `collect`, or a `for` loop.
+Source: the Rust Book explains iterators as Rust's composable, lazy iteration interface. [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
 
 ```rust
 fn main() {
@@ -256,3 +269,11 @@ It is often easiest to run each topic separately first and then return to this c
 This post covered `generics`, error handling, closures, and iterators in one flow. Generics let you reuse logic across types, `Result` and `?` let you handle failure safely, closures let you pass short pieces of logic around, and iterators make collection processing much clearer.
 
 A practical next step is to move on to topics such as collections, deeper ownership patterns, modules, crates, or async Rust, where these abstraction tools start showing up even more naturally in real application code.
+
+## Sources and references
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+- Rust Project Developers, [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+- Rust Project Developers, [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
+- Rust Project Developers, [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)

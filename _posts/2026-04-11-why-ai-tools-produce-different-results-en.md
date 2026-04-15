@@ -21,9 +21,19 @@ In this post, "AI tools" mainly refers to AI coding tools such as Codex, Claude 
 
 For a personal experiment, some variation may be acceptable. In team development, especially in enterprise environments, the standard changes. What matters is not whether you get one impressive result once, but whether you can ask for similar work again and still get a predictable outcome. That is why this post approaches the question "Why do different tools produce different results?" not as a model ranking exercise, but from the perspective of the working environment and the surrounding structure.
 
+## Verification scope and interpretation boundary
+
+- As of: April 15, 2026, checked OpenAI Codex docs, OpenAI platform docs, and Anthropic Claude Code docs.
+- Source grade: official docs first, plus vendor-authored engineering posts only when a concept is introduced there.
+- Fact boundary: only documented features such as `AGENTS.md`, memory/settings, hooks, subagents, approvals, sandboxing, evals, and trace are treated as factual claims.
+- Interpretation boundary: terms like `harness engineering`, `control plane`, `contract`, `enforcement`, and `observable harness` are operating abstractions used in this series unless a source line says otherwise.
+
+
 ## Why Do the Results Differ Even for the Same Request?
 
 The first explanation that comes to mind is model differences. Each model and product differs somewhat in model family, version or snapshot, tuning, system instructions, and response tendencies. Because of that, the same sentence can lead each tool to focus on different clues and default to different styles of response.
+Documented fact: Codex documents `AGENTS.md`, hooks, skills, subagents, sandboxing, and approvals as separate operating surfaces, while Claude Code documents memory, settings, hooks, and subagents separately. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Skills](https://developers.openai.com/codex/skills), [Subagents](https://developers.openai.com/codex/subagents), [Sandboxing](https://developers.openai.com/codex/concepts/sandboxing), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings), [Claude Code hooks](https://code.claude.com/docs/en/hooks), [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+Interpretation: the discussion below about model and product differences is an operating explanation of how those control surfaces shape output variation.
 
 But the difference does not stop there. Interpretation matters too. If you ask a person to "build a login API," one person may picture the bare minimum while another may imagine validation, security edge cases, and tests. AI behaves similarly. The shorter the request is, the more blanks it contains, and each tool fills in those blanks differently.
 
@@ -32,6 +42,7 @@ The baseline assumptions also vary. Some tools assume an existing project is alr
 ## Factors Beyond the Model That Change the Output
 
 In practice, factors outside the model can matter as much as model capability itself. AI always works inside some kind of project context. Existing code structure, naming rules, folder layout, chosen frameworks, and even the team's review culture all pull the output in certain directions.
+Documented fact: OpenAI treats context, workflow design, and evaluation as separate design concerns in both the harness engineering article and the official eval guide. Source: [Harness engineering](https://openai.com/index/harness-engineering/), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
 
 The presence or absence of rule files matters as well. If rules such as "keep error responses consistent," "separate the service layer," "do not leave lint warnings," or "no merge without tests" are already defined, the AI works within that structure. Without that kind of harness, even repeated runs of the same task can produce different folder layouts, shifting function names, and inconsistent code style.
 
@@ -75,6 +86,7 @@ If you go one step further and structure the context as Context / Problem / Solu
 ## What Matters More in Enterprise Environments?
 
 For a personal project, getting a quick draft may be enough. If the service still has to be maintained six months later, the standard changes. In enterprise settings, what matters is not a flashy first result, but a state where similar work does not swing too wildly from one run to the next. The kind of predictability discussed here is not mathematical idempotence in the strict sense. It is closer to practical repeatability: asking again and getting similar quality and structure.
+Interpretation: the emphasis on repeatable quality and maintainability is my operating criterion. The official eval guide supports that direction by stressing repeated measurement and task-specific evaluation rather than one-off success. Source: [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
 
 Another important point is human-readable code. The goal is not code that is merely convenient for AI to produce, but code that humans can read, modify, and review without too much friction. That is why linters, style rules, naming conventions, and structural rules matter. In the end, people are the ones who inherit the code AI writes.
 
@@ -83,6 +95,7 @@ Documentation is also an asset. Meeting notes, planning docs, change logs, and P
 ## Why Harness Engineering Comes Up
 
 At this point, the phrase "harness engineering" comes up naturally. It is not yet a fully standardized textbook term, but it is increasingly used to describe an approach that focuses less on the prompt itself and more on designing the full execution environment. OpenAI discussed a similar idea in its February 11, 2026 article [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/). It may sound complicated, but the core idea is simple. Instead of expecting one prompt line to do everything, you design the surrounding environment such as code structure, naming rules, linters, tests, and work procedures so that different models are more likely to produce similar and predictable results.
+Documented fact: OpenAI published [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/) on February 11, 2026. Interpretation: this series uses the term a little more broadly as an operating-design concept.
 
 In that sense, the more important question is not "Which model is best?" but "What kind of structure does that model work inside?" This post sets up that problem first. The next post will look more directly at what harness engineering actually means in practice.
 
@@ -99,3 +112,18 @@ Differences in AI output are shaped not only by model capability, but also by th
 ## Preview of the Next Post
 
 The next post will take a closer look at what harness engineering actually is. It will start with the difference between writing better prompts and designing a better execution environment. It will also explore how code rules, tests, documentation, and evaluation criteria come together as part of a working harness. If you want output that is less tied to a specific model and more predictably repeatable, this is where the design question starts to become concrete. It is also the point where AI stops being just a tool and starts becoming part of an operating system for work.
+
+## Sources and references
+
+- OpenAI, [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
+- OpenAI, [Hooks](https://developers.openai.com/codex/hooks)
+- OpenAI, [Agent Skills](https://developers.openai.com/codex/skills)
+- OpenAI, [Subagents](https://developers.openai.com/codex/subagents)
+- OpenAI, [Sandboxing](https://developers.openai.com/codex/concepts/sandboxing)
+- OpenAI, [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+- OpenAI, [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
+- OpenAI, [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+- Anthropic, [How Claude remembers your project](https://code.claude.com/docs/en/memory)
+- Anthropic, [Claude Code settings](https://code.claude.com/docs/en/settings)
+- Anthropic, [Hooks reference](https://code.claude.com/docs/en/hooks)
+- Anthropic, [Create custom subagents](https://code.claude.com/docs/en/sub-agents)

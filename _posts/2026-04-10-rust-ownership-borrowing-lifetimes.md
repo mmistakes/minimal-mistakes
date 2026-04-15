@@ -18,9 +18,18 @@ Rust를 배우다 보면 변수나 함수 문법보다 더 자주 듣게 되는 
 
 이번 글에서는 `String` 예제를 중심으로 ownership이 어떻게 이동하는지, 빌림(borrowing)은 왜 필요한지, 그리고 lifetime annotation이 어떤 상황에서 등장하는지를 한 번에 정리한다.
 
+## 검증 기준과 재현 범위
+
+- 시점: 2026-04-15 기준 Rust Book 4장과 10장 lifetime 문법을 확인했다.
+- 출처 등급: 공식 문서만 사용했다.
+- 재현 환경: Cargo 프로젝트, `String`/reference 예제, `src/main.rs`.
+- 주의: lifetime annotation 예제는 개념 설명용이므로 실제 코드에서는 추론 가능한 경우가 더 많다.
+
+
 ## 실습 프로젝트 만들기
 
 아래처럼 새 Cargo 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다.
+근거: Rust Book의 입문 실습 흐름은 `cargo new` 프로젝트를 기준으로 한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-ownership-basics
@@ -37,6 +46,7 @@ cargo run
 ## Ownership이 왜 중요한가
 
 Rust는 값을 아무 데서나 자유롭게 복사하고 해제하게 두지 않는다. 대신 어떤 값이 누구의 책임 아래 있는지를 컴파일 시점에 명확히 확인한다. 이때 사용하는 개념이 ownership이다.
+근거: Rust Book은 ownership을 값의 책임과 메모리 안전성을 연결하는 핵심 개념으로 설명한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ownership의 핵심 규칙은 아래 3가지다.
 
@@ -49,6 +59,7 @@ ownership의 핵심 규칙은 아래 3가지다.
 ## 스코프와 Drop
 
 가장 먼저 봐야 할 것은 값이 스코프를 벗어날 때 어떻게 정리되는가다.
+근거: Rust Book은 값이 스코프를 벗어날 때 `drop`으로 정리되는 흐름을 ownership 장에서 설명한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ```rust
 fn main() {
@@ -66,6 +77,7 @@ fn main() {
 ## Move: 소유권 이동
 
 Rust에서 `String` 같은 타입은 단순 대입을 하면 복사라기보다 소유권 이동(move)으로 처리된다.
+근거: Rust Book은 `String` 대입이 단순 복사가 아니라 move로 처리된다고 설명한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ```rust
 fn main() {
@@ -99,6 +111,7 @@ fn main() {
 ## Clone과 Copy의 차이
 
 정말로 데이터를 복사하고 싶다면 `clone()`을 사용해야 한다.
+근거: Rust Book은 `clone`, stack-only `Copy`, move의 차이를 ownership 장에서 구분한다. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ```rust
 fn main() {
@@ -137,6 +150,7 @@ fn main() {
 ## Borrowing: 소유권을 넘기지 않고 빌려 쓰기
 
 함수에 값을 넘길 때마다 ownership이 이동해 버리면 코드가 금방 불편해진다. 그래서 Rust는 참조(reference)를 통해 값을 빌려 쓰는 borrowing을 사용한다.
+근거: Rust Book은 참조를 통한 borrowing과 함수 인자 전달 패턴을 별도 장으로 설명한다. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
 
 ```rust
 fn print_length(text: &str) {
@@ -162,6 +176,7 @@ fn main() {
 ## Immutable Borrow와 Mutable Borrow
 
 참조는 크게 immutable borrow와 mutable borrow로 나뉜다.
+근거: Rust Book은 immutable reference와 mutable reference의 규칙을 예제로 보여 준다. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
 
 immutable borrow는 여러 개를 동시에 가질 수 있다.
 
@@ -249,6 +264,7 @@ fn main() {
 ## Dangling Reference와 Lifetime이 필요한 이유
 
 borrowing 규칙은 dangling reference도 막아 준다. dangling reference는 이미 해제된 값을 가리키는 참조다.
+근거: Rust Book은 dangling reference를 borrowing 규칙으로 막고, lifetime 문법 장에서 참조 관계를 설명한다. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html), [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
 아래 코드는 허용되지 않는다.
 
@@ -273,6 +289,7 @@ fn no_dangle() -> String {
 ## Lifetime Annotation이 등장하는 대표 예제
 
 대부분의 참조는 컴파일러가 lifetime을 추론해 준다. 하지만 함수가 여러 참조를 받아서, 반환 참조가 누구와 연결되는지 명확히 알려 줘야 하는 경우에는 lifetime annotation이 필요하다.
+근거: Rust Book은 여러 참조 중 하나를 반환하는 함수에서 lifetime annotation이 필요한 대표 예제를 제시한다. [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
 대표적인 예제가 `longest` 함수다.
 
@@ -317,6 +334,7 @@ fn main() {
 ## Struct에 참조를 저장할 때의 Lifetime
 
 구조체가 참조를 필드로 가지는 경우에도 lifetime을 명시해야 한다.
+근거: Rust Book은 참조를 필드로 가지는 struct에 lifetime parameter가 필요하다고 설명한다. [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
 ```rust
 struct Highlight<'a> {
@@ -391,3 +409,10 @@ fn main() {
 이번 글에서는 Rust의 ownership, borrowing, lifetime을 한 흐름으로 정리했다. 핵심은 `String` 같은 값은 대입 시 move가 일어나고, ownership을 유지한 채 사용하려면 참조로 빌려야 하며, 여러 참조의 관계가 애매해지는 순간 lifetime annotation으로 유효 범위를 연결해 준다는 점이다.
 
 처음에는 borrow checker가 불편하게 느껴질 수 있지만, 이 규칙에 익숙해지면 런타임이 아니라 컴파일 시점에 문제를 잡아 주는 장점이 매우 크게 다가온다. 다음 단계에서는 `struct`, `enum`, `Result`, `Option` 같은 타입과 함께 ownership 규칙이 실제 코드에서 어떻게 활용되는지 이어서 보면 좋다.
+
+## 출처 및 참고
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- Rust Project Developers, [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- Rust Project Developers, [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)

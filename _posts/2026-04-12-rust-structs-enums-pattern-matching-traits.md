@@ -18,9 +18,18 @@ search: true
 
 이번 글에서는 `struct`, `enum`, pattern matching, `trait`를 한 흐름으로 정리하면서, Rust에서 데이터와 동작을 어떻게 설계하는지 기초를 잡아 본다.
 
+## 검증 기준과 재현 범위
+
+- 시점: 2026-04-15 기준 Rust Book 5장, 6장, 10장 trait 장을 확인했다.
+- 출처 등급: 공식 문서만 사용했다.
+- 재현 환경: Cargo 프로젝트, `src/main.rs`, 기본 enum/trait 예제.
+- 주의: 이 글은 입문 수준의 핵심 문법에 집중하며, advanced pattern과 generic trait bound 전체를 다루지는 않는다.
+
+
 ## 실습 프로젝트 만들기
 
 아래처럼 새 Cargo 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다.
+근거: Rust Book 입문 예제는 `cargo new` 프로젝트를 기준으로 설명한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-structs-enums-traits
@@ -37,6 +46,7 @@ cargo run
 ## Struct: 관련 데이터를 하나로 묶기
 
 `struct`는 서로 관련된 여러 필드를 하나의 이름 아래 묶고 싶을 때 사용한다. 예를 들어 사용자 정보를 각각 따로 변수로 두는 대신, 하나의 사용자 타입으로 표현할 수 있다.
+근거: Rust Book은 struct를 관련 데이터를 하나의 custom type으로 묶는 기본 방법으로 소개한다. [Defining and Instantiating Structs](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
 
 ```rust
 struct User {
@@ -96,6 +106,7 @@ fn main() {
 ## impl로 Struct에 메서드 붙이기
 
 Rust에서 `struct`에 동작을 붙일 때는 `impl` 블록을 사용한다.
+근거: Rust Book은 method syntax와 `impl` block을 struct 장에서 설명한다. [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
 
 ```rust
 struct Rectangle {
@@ -140,6 +151,7 @@ fn main() {
 ## Enum: 여러 경우 중 하나를 표현하기
 
 `struct`가 여러 필드를 동시에 가지는 타입이라면, `enum`은 여러 variant 중 정확히 하나를 가지는 타입이다.
+근거: Rust Book은 enum을 여러 variant 중 하나를 표현하는 타입으로 소개한다. [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)
 
 ```rust
 enum Message {
@@ -204,6 +216,7 @@ fn main() {
 ## Pattern Matching: match와 if let
 
 enum을 꺼내 쓸 때 가장 자주 쓰는 문법은 `match`다. `match`는 모든 경우를 빠짐없이 처리하도록 강제하기 때문에 안전하다.
+근거: Rust Book은 `match`와 `if let`을 enum 분기 처리의 핵심 도구로 설명한다. [match](https://doc.rust-lang.org/book/ch06-02-match.html), [Concise Control Flow with if let](https://doc.rust-lang.org/book/ch06-03-if-let.html)
 
 ```rust
 enum Ticket {
@@ -256,6 +269,7 @@ fn main() {
 ## Trait: 여러 타입의 공통 동작 정의하기
 
 `trait`는 여러 타입이 공유해야 하는 동작의 약속이라고 보면 된다. Java의 interface와 비슷하게 느껴질 수 있지만 완전히 같지는 않다. Rust의 trait는 기본 메서드 구현을 둘 수도 있고, 같은 이름의 메서드가 있다고 해서 자동으로 trait를 만족하는 것도 아니다.
+근거: Rust Book은 trait를 여러 타입이 공유하는 동작 계약으로 설명한다. [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)
 
 ```rust
 trait Summary {
@@ -376,3 +390,13 @@ fn main() {
 이번 글에서는 Rust에서 데이터를 다루는 핵심 도구인 `struct`, `enum`, pattern matching, `trait`를 한 번에 정리했다. `struct`는 관련 필드를 묶는 데 적합하고, `enum`은 여러 경우 중 하나를 안전하게 표현하는 데 강력하다. 여기에 `match`와 `if let`을 이용하면 각 경우를 명확하게 꺼내 처리할 수 있고, `trait`를 사용하면 서로 다른 타입에 공통 동작을 부여할 수 있다.
 
 다음 단계에서는 `Vec`, `HashMap`, iterator, error handling 같은 주제로 넘어가면서, 지금 배운 `struct`와 `enum`, `trait`가 실제 애플리케이션 코드에서 어떻게 연결되는지 이어서 보면 좋다.
+
+## 출처 및 참고
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [Defining and Instantiating Structs](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
+- Rust Project Developers, [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
+- Rust Project Developers, [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)
+- Rust Project Developers, [match](https://doc.rust-lang.org/book/ch06-02-match.html)
+- Rust Project Developers, [Concise Control Flow with if let](https://doc.rust-lang.org/book/ch06-03-if-let.html)
+- Rust Project Developers, [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)

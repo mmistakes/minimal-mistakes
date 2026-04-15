@@ -19,9 +19,18 @@ When learning Rust, the terms you hear over and over are `ownership`, `borrowing
 
 This post explains how ownership moves, why borrowing is needed, and when lifetime annotations appear, all centered around small `String` examples you can run right away.
 
+## Verification scope and reproducibility
+
+- As of: April 15, 2026, checked chapter 4 of the Rust Book together with the lifetime syntax section in chapter 10.
+- Source grade: only official documentation is used.
+- Reproduction environment: Cargo project, `String` and reference examples, and `src/main.rs`.
+- Note: lifetime annotation examples are shown for explanation; in real code, the compiler often infers more than beginners expect.
+
+
 ## Create a Practice Project
 
 Create a new Cargo project like this and run each example in `src/main.rs`.
+Source: the Rust Book beginner workflow starts from a `cargo new` project. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-ownership-basics
@@ -38,6 +47,7 @@ cargo run
 ## Why Ownership Matters
 
 Rust does not allow values to be copied and freed casually from anywhere in the program. Instead, it checks at compile time who is responsible for each value. That idea is ownership.
+Source: the Rust Book presents ownership as the core model for tracking value responsibility and memory safety. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 The three core ownership rules are:
 
@@ -50,6 +60,7 @@ Because of these rules, Rust can prevent problems such as double free, use-after
 ## Scope and Drop
 
 The first thing to understand is what happens when a value leaves its scope.
+Source: the Rust Book explains that values are cleaned up when they leave scope. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ```rust
 fn main() {
@@ -67,6 +78,7 @@ fn main() {
 ## Move: Ownership Transfer
 
 With a type such as `String`, assignment is treated as a move rather than a simple copy.
+Source: the Rust Book explains that assigning a `String` is a move, not a deep copy. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ```rust
 fn main() {
@@ -100,6 +112,7 @@ Why does Rust do this? A `String` stores its character data on the heap. If Rust
 ## Clone vs Copy
 
 If you really want a separate copy of the data, use `clone()`.
+Source: the Rust Book distinguishes `clone`, stack-only `Copy`, and move semantics in the ownership chapter. [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
 
 ```rust
 fn main() {
@@ -138,6 +151,7 @@ Types such as `i32`, `bool`, `char`, some fixed-size tuples, and shared referenc
 ## Borrowing: Using a Value Without Taking Ownership
 
 If every function call moved ownership, Rust would become awkward very quickly. To avoid that, Rust lets you borrow a value through a reference.
+Source: the Rust Book explains borrowing through references and function arguments in a dedicated section. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
 
 ```rust
 fn print_length(text: &str) {
@@ -163,6 +177,7 @@ Early on, `&String` and `&str` can feel confusing. In practice, when a function 
 ## Immutable Borrow and Mutable Borrow
 
 References are mainly divided into immutable borrow and mutable borrow.
+Source: the Rust Book documents the rules for immutable and mutable references with examples. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
 
 You can have multiple immutable borrows at the same time.
 
@@ -250,6 +265,7 @@ Once the immutable borrow is finished, creating the mutable borrow becomes fine.
 ## Dangling References and Why Lifetimes Matter
 
 Borrowing rules also prevent dangling references. A dangling reference is a reference that points to data that has already been dropped.
+Source: the Rust Book shows how borrowing rules prevent dangling references, and the lifetime chapter explains how reference relationships are expressed. [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html), [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
 The following code is not allowed.
 
@@ -274,6 +290,7 @@ fn no_dangle() -> String {
 ## A Classic Lifetime Annotation Example
 
 For many references, the compiler can infer lifetimes automatically. But when a function accepts multiple references and returns one of them, you sometimes need to describe the relationship explicitly with a lifetime annotation.
+Source: the Rust Book uses the “return one of two references” pattern as the classic motivation for explicit lifetime annotations. [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
 The classic example is `longest`.
 
@@ -318,6 +335,7 @@ This is safe because both `first` and `second` live long enough inside `main`.
 ## Lifetimes in Structs That Store References
 
 If a struct stores a reference in one of its fields, it also needs a lifetime parameter.
+Source: the Rust Book explains that structs containing references need lifetime parameters. [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)
 
 ```rust
 struct Highlight<'a> {
@@ -392,3 +410,10 @@ This example includes immutable borrowing, mutable borrowing, lifetime annotatio
 This post covered ownership, borrowing, and lifetimes as one connected flow. The key idea is that values such as `String` move by default, references let you use a value without taking ownership, and lifetime annotations describe how borrowed references are related when the compiler needs help.
 
 The borrow checker can feel strict at first, but once you get used to it, you start seeing the benefit of catching memory safety problems during compilation rather than at runtime. A practical next step is to continue with `struct`, `enum`, `Result`, and `Option`, where these ownership rules become even more meaningful in real Rust code.
+
+## Sources and references
+
+- Rust Project Developers, [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+- Rust Project Developers, [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- Rust Project Developers, [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- Rust Project Developers, [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)

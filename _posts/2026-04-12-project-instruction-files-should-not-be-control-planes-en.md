@@ -17,9 +17,18 @@ permalink: /en/ai/how-far-should-a-project-instruction-file-go/
 
 A good instruction file is not a document that tries to contain everything. It is a document that clarifies what belongs where. In part 2, I described harness engineering as the work of designing the full environment in which AI operates. This time, I want to look at one of the closest layers in that environment: the project instruction file. Whether it is called `AGENTS.md` or `CLAUDE.md`, the more important question is what role that file should play as the project's entrypoint.
 
+## Verification scope and interpretation boundary
+
+- As of: April 15, 2026, checked OpenAI Codex docs, OpenAI platform docs, and Anthropic Claude Code docs.
+- Source grade: official docs first, plus vendor-authored engineering posts only when a concept is introduced there.
+- Fact boundary: only documented features such as `AGENTS.md`, memory/settings, hooks, subagents, approvals, sandboxing, evals, and trace are treated as factual claims.
+- Interpretation boundary: terms like `harness engineering`, `control plane`, `contract`, `enforcement`, and `observable harness` are operating abstractions used in this series unless a source line says otherwise.
+
+
 ## Why Do Project Instruction Files Matter?
 
 If an AI coding tool is going to work inside a project, it needs project-level expectations and context. Without basic information such as how to read the repository structure, what matters most, and where to find detailed procedures, the agent has to keep guessing. That is why OpenAI describes `AGENTS.md` as a guidance file for exploring a codebase, running tests, and following project conventions, while Anthropic describes `CLAUDE.md` as a file for project-specific persistent instructions. The key point is not the filename. It is the shared role of acting as an entrypoint that conveys project rules and context.
+Documented fact: OpenAI describes `AGENTS.md` as a guidance file for exploring the codebase, running tests, and following project conventions, while Anthropic documents `CLAUDE.md` and memory as project-specific persistent instruction layers. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings)
 
 ## Why Do We Want to Put Everything in One File?
 
@@ -30,6 +39,7 @@ The temptation is understandable. If the project instruction file is the first t
 ## When That Happens, the Entrypoint Starts Resembling a Control Plane
 
 Imagine a single file that contains the operating model, commit policy, team responsibility boundaries, documentation update duties, handoff rules, verification procedures, and agent mapping. At a glance, that sounds thorough. In practice, though, the information density rises too quickly, and it becomes hard to tell which items are core principles and which are exceptions or implementation details. Human-facing explanation, procedural documentation, verification rules, and operating policy all get mixed together. That is how you end up in a state where everything is important, so nothing stands out as truly important.
+Interpretation: `control plane` here is not an official vendor feature name. It is my metaphor for an entrypoint file that has accumulated too many operating responsibilities. Source for the official entrypoint role: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory)
 
 This is why the real problem is not file length by itself. A short file can still be overloaded, and a long file can still work if the role boundaries are clear. What matters more is information density and mixed responsibilities. An entrypoint should help the agent orient itself. Once it also starts carrying behavior that belongs in a `control plane`, the reading burden grows, and rules that should have moved into automation or validation stay buried in prose.
 
@@ -42,6 +52,7 @@ What mattered in that experience was not a lesson like "write shorter files." Th
 ## What Should Stay, and What Should Move Out?
 
 What belongs in a project instruction file is usually more limited than people expect.
+Interpretation: the split I recommend here is an operating design choice, not a vendor-prescribed checklist. The documented common ground is that both systems use an entrypoint layer for project-level instructions. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings)
 
 - Core expectations of the repository
 - Basic working principles
@@ -69,6 +80,7 @@ Once responsibilities are split this way, the project instruction file becomes a
 ## The Same Principle Applies to Codex and Claude Code
 
 This is not a tool-specific trick. `AGENTS.md` in Codex and `CLAUDE.md` in Claude Code have different names, but they share the same broad function: they communicate project-level expectations and context. On the Codex side, `AGENTS.md` can be understood as an entrypoint for repository rules and expectations. On the Claude Code side, `CLAUDE.md`, according to the official documentation, can likewise be understood as part of the project's instruction layer.
+Documented fact: both Codex and Claude Code officially expose a project-level instruction layer even though the filenames differ. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings)
 
 The point is not that one approach is better than the other. The more useful observation is that both tools can run into similar problems when the project instruction file becomes too dense. Even if the filenames differ, the risk of turning an entrypoint into a de facto `control plane` is a shared operating principle, not a product-specific quirk.
 
@@ -85,3 +97,9 @@ A project instruction file should be an entrypoint that explains core expectatio
 ## Preview of the Next Post
 
 The next post will focus on the shift from prose to schema. It will start with why natural-language rules like "leave a handoff" are directionally correct but still weak at the system level. From there, it will look at what changes when handoff becomes a contract rather than a note. The important shift is not writing stricter sentences, but reducing omission through verifiable structure. Once the boundary of the project instruction file is clear, the next step is to design the layer outside it.
+
+## Sources and references
+
+- OpenAI, [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
+- Anthropic, [How Claude remembers your project](https://code.claude.com/docs/en/memory)
+- Anthropic, [Claude Code settings](https://code.claude.com/docs/en/settings)
