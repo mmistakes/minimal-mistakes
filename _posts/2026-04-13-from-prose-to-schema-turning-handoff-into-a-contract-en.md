@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains why handoffs should move from free-form prose to schema-based contracts and how to design them."
 title: "Harness Engineering 04. From Prose to Schema: Turning Handoff into a Contract"
 lang: en
 translation_key: from-prose-to-schema-turning-handoff-into-a-contract
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/from-prose-to-schema-turning-handoff-into-a-contract/
 ---
+
+## Summary
 
 Part 3 argued that files like `AGENTS.md` and `CLAUDE.md` should stay closer to entrypoints than to control planes. But even if those instruction files are written well, the system can still wobble if the actual handoff between steps remains little more than a natural-language note. That is why this post focuses on the next layer down: why handoff should be treated less like a memo and more like a structured contract.
 

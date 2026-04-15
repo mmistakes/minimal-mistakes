@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Rust의 변수, 기본 타입, 제어 흐름, 함수를 예제로 정리한 기초 문법 가이드."
 title: "Rust 03. 변수, 타입, 제어흐름, 함수 기초"
 lang: ko
 translation_key: rust-variables-types-control-flow-functions
@@ -14,14 +15,19 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust를 처음 공부할 때 가장 먼저 익혀야 하는 문법은 변수, 타입, 제어흐름, 함수다. 이 4가지를 이해하면 이후에 `struct`, `enum`, `ownership`, `borrow` 같은 개념을 배울 때도 훨씬 수월하다. 이 글에서는 Cargo 프로젝트 하나를 기준으로 각 문법을 하나씩 설명하고, 바로 실행해 볼 수 있는 예제까지 함께 정리한다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust Book 3장과 Cargo 기본 흐름을 확인했다.
+- 작성일: 2026-04-09
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, Windows PowerShell 예시 명령, `src/main.rs`
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Cargo 프로젝트, Windows PowerShell 예시 명령, `src/main.rs`.
-- 주의: 예제 출력은 코드 구조 설명용이며, 타입 표기와 에러 메시지 일부는 Rust 버전에 따라 달라질 수 있다.
+- 비고: 예제 출력은 코드 구조 설명용이며, 타입 표기와 에러 메시지 일부는 Rust 버전에 따라 달라질 수 있다.
 
 
 ## 실습 프로젝트 만들기
@@ -78,7 +84,20 @@ fn main() {
 
 Rust는 이 경우 `count`가 불변 변수이므로 재할당할 수 없다고 알려 준다.
 
-![불변 변수 재할당 에러]({{ '/images/rust_03/let_error.png' | relative_url }})
+```text
+error[E0384]: cannot assign twice to immutable variable `count`
+ --> src/main.rs:3:5
+  |
+2 |     let count = 10;
+  |         ----- first assignment to `count`
+3 |     count = 20;
+  |     ^^^^^^^^^^ cannot assign twice to immutable variable
+  |
+help: consider making this binding mutable
+  |
+2 |     let mut count = 10;
+  |         +++
+```
 
 값을 바꾸고 싶다면 아래처럼 `mut`를 붙여 선언해야 한다.
 
@@ -93,7 +112,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/변수예제결과.png' | relative_url }}" alt="변수 예제 결과">
+```text
+count = 20
+```
 
 섀도잉(shadowing)은 `mut`와 다르다. `mut`는 같은 변수의 값을 변경하는 것이고, 섀도잉(shadowing)은 같은 이름의 새 변수를 다시 만드는 것이다. 그래서 섀도잉(shadowing)은 타입까지 바꾸는 데 쓸 수 있다.
 
@@ -135,7 +156,14 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/타입예제결과.png' | relative_url }}" alt="타입 예제 결과">
+```text
+age = 29
+temperature = 36.5
+is_rust_fun = true
+grade = A
+language = Rust
+message = hello
+```
 
 위 예제에서 특히 자주 쓰는 타입은 아래처럼 보면 된다.
 
@@ -159,7 +187,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/문자열파싱예제.png' | relative_url }}" alt="문자열 파싱 예제 결과">
+```text
+guess = 42
+```
 
 `parse()`만 보면 문자열을 어떤 숫자 타입으로 바꿔야 하는지 애매하기 때문에, `guess: i32`처럼 타입을 알려 줘야 컴파일러가 올바르게 처리할 수 있다.
 
@@ -185,7 +215,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/if문예제.png' | relative_url }}" alt="if문 예제 결과">
+```text
+홀수입니다.
+```
 
 Rust의 `if`는 조건식이 반드시 `bool`이어야 한다. C 언어나 JavaScript처럼 숫자를 조건문에 바로 넣는 방식은 허용되지 않는다.
 
@@ -202,7 +234,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/if 표현식 예제 결과.png' | relative_url }}" alt="if 표현식 예제 결과">
+```text
+result = pass
+```
 
 ### loop
 
@@ -226,7 +260,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/loop예제 결과.png' | relative_url }}" alt="loop 예제 결과">
+```text
+result = 30
+```
 
 Rust의 `loop`는 `break`와 함께 값을 돌려줄 수 있다는 점이 특징이다. 위 예제에서는 `count == 3`일 때 `30`이 `result`에 저장된다.
 
@@ -249,7 +285,12 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/while예제 결과.png' | relative_url }}" alt="while 예제 결과">
+```text
+remaining = 3
+remaining = 2
+remaining = 1
+start
+```
 
 반복 횟수가 조건에 의해 자연스럽게 줄어드는 경우에는 `while`이 읽기 쉽다.
 
@@ -273,7 +314,14 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/for문 예제 결과.png' | relative_url }}" alt="for문 예제 결과">
+```text
+tool = rustc
+tool = cargo
+tool = clippy
+number = 1
+number = 2
+number = 3
+```
 
 실무에서도 단순 카운팅 반복보다 `for`를 훨씬 많이 쓴다. 특히 컬렉션을 돌 때는 `while`보다 `for`가 더 안전하고 코드도 짧다.
 
@@ -298,7 +346,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/match문 예제 결과.png' | relative_url }}" alt="match문 예제 결과">
+```text
+grade = B
+```
 
 `match`는 값의 경우를 빠짐없이 처리하도록 강제하는 데 강점이 있다. 그래서 단순한 `if/else if`보다 더 읽기 쉽고 안전한 경우가 많다.
 
@@ -336,7 +386,11 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_03/함수 예제 결과.png' | relative_url }}" alt="함수 예제 결과">
+```text
+name = K4NUL, age = 30
+sum = 30
+bigger = 11
+```
 
 이 예제에서 볼 점은 아래와 같다.
 

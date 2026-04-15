@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "A practical roadmap for moving from document-centered operations to an observable harness."
 title: "Harness Engineering 10. From Documents to an Observable Harness"
 lang: en
 translation_key: from-document-centered-ops-to-observable-harness
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/from-document-centered-ops-to-an-observable-harness/
 ---
+
+## Summary
 
 Writing longer documents is not the solution. That is where the entire series eventually lands. Files like `AGENTS.md` or `CLAUDE.md` can be useful starting points, but making them denser does not magically create a harness. In this final post, I want to gather the discussion into a practical roadmap for moving from document-centered operations to a harness that is observable and verifiable.
 

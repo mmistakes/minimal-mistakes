@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains harness engineering as the design of the tools, permissions, and verification around AI."
 title: "Harness Engineering 02. What Is Harness Engineering?"
 lang: en
 translation_key: what-is-harness-engineering
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/what-is-harness-engineering/
 ---
+
+## Summary
 
 The key point from part 1 was that getting one plausible result is less important than achieving repeatability, where asking again still produces similar quality and structure. Writing a good operations document does not create that repeatability by itself. Clear principles are necessary, but they are not enough. So what exactly is harness engineering?
 

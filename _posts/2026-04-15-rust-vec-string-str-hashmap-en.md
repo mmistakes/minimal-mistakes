@@ -20,12 +20,15 @@ Once you move past Rust syntax basics and start writing real code, the types you
 
 The short version is simple: use `Vec` when you want an ordered list of values, `String` when you need an owned and editable string, `&str` when you only need to borrow string data, and `HashMap` when you want key-value storage. Once that mental model is in place, it becomes much easier to move into file I/O, CLI input, serde, and small command-line tools.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked against the official Rust Book and Rust standard library documentation.
+- Created: 2026-04-15
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, Windows PowerShell example commands, and `src/main.rs`
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Cargo project, Windows PowerShell example commands, and `src/main.rs`.
-- Opinion: this post intentionally stays with the most common beginner patterns and avoids going deep into advanced `entry()` usage or UTF-8 internals.
+- Note: this post intentionally stays with the most common beginner patterns and avoids going deep into advanced `entry()` usage or UTF-8 internals.
 
 ## Create a Practice Project
 
@@ -81,7 +84,14 @@ fn main() {
 
 The output looks like this.
 
-![Console output showing the Vec example length, first element, out-of-range lookup, and iteration results]({{ '/images/rust_08/vec 예제결과.png' | relative_url }})
+```text
+len = 3
+scores[0] = 10
+index 10 is out of range
+score = 10
+score = 20
+score = 30
+```
 
 The first distinction beginners should remember is this:
 
@@ -121,7 +131,11 @@ fn main() {
 
 The output looks like this.
 
-![Console output showing the String and &str example with a string literal and an owned string]({{ '/images/rust_08/string과 &str 예제 결과.png' | relative_url }})
+```text
+title = Rust
+title = Rust language
+copied = Rust
+```
 
 The important practical point here is that a function that accepts `&str` can work with both string literals and borrowed `String` values. At the beginner level, accepting `&str` for read-only string parameters is often the most flexible pattern.
 
@@ -144,7 +158,14 @@ fn main() {
 
 The output looks like this.
 
-![Console output showing the first borrowed slice and each word returned by split_whitespace]({{ '/images/rust_08/문자열 다루기 예제 결과 1.png' | relative_url }})
+```text
+first_word = rust
+word = rust
+word = makes
+word = systems
+word = programming
+word = safer
+```
 
 You can read that code like this:
 
@@ -165,7 +186,10 @@ fn main() {
 
 The output looks like this.
 
-![Console output showing the difference between byte length and character count for a Korean string]({{ '/images/rust_08/문자열 다루기 예제 결과 2.png' | relative_url }})
+```text
+bytes = 6
+chars = 2
+```
 
 That is why beginners are usually better off starting with methods like `split_whitespace()`, `lines()`, and `chars()` instead of slicing strings by arbitrary byte offsets.
 
@@ -201,7 +225,12 @@ fn main() {
 
 The output looks like this.
 
-![Console output showing the HashMap example with the alice lookup, bob key check, and full map iteration]({{ '/images/rust_08/hashmap 예제 결과.png' | relative_url }})
+```text
+alice = 95
+contains bob = true
+bob = 88
+alice = 95
+```
 
 Note: iteration order in `HashMap` is not guaranteed, so the last two lines may appear in a different order on another run.
 

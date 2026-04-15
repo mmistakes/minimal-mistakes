@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "자연어 원칙을 실제 시스템 규칙과 강제 장치로 옮기는 방법을 다루는 글."
 title: "하네스 엔지니어링 07. 원칙에서 enforcement로: 문장을 시스템 규칙으로 올리는 법"
 lang: ko
 translation_key: from-principles-to-enforcement
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 좋은 규칙을 써놨는데도 왜 자꾸 놓치게 될까. 이 질문은 하네스 엔지니어링을 하다 보면 꽤 빨리 만나게 된다. 문서에 원칙이 잘 적혀 있어도 agent는 상황에 따라 그 규칙을 놓칠 수 있고, 사람 역시 바쁜 순간에는 빠뜨릴 수 있다. 그래서 이번 글에서는 좋은 원칙을 문장으로 써두는 것과, 실제로 지켜지게 만드는 것이 왜 다른지 이야기해보려 한다.
 

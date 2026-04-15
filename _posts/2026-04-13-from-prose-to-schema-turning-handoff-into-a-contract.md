@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "handoff를 자유 서술이 아니라 schema 기반 계약으로 바꾸는 이유와 설계 포인트를 정리한 글."
 title: "하네스 엔지니어링 04. prose에서 schema로: handoff를 메모가 아니라 계약으로 바꾸는 법"
 lang: ko
 translation_key: from-prose-to-schema-turning-handoff-into-a-contract
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 3편에서 본 핵심은 프로젝트 지침 파일이 control plane이 아니라 entrypoint에 가까워야 한다는 점이었다. 하지만 지침 파일을 잘 정리해도, 실제 작업 인계가 여전히 자연어 메모 수준에 머물면 시스템은 쉽게 흔들린다. 그래서 이번 글에서는 handoff를 왜 구조화된 계약으로 봐야 하는지 이야기해보려 한다.
 

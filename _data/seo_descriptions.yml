@@ -35,8 +35,8 @@ topic-development-ai:
   en: "Archive of posts about AI tooling, harness engineering, and operational design."
 
 topic-development-rust:
-  ko: "Rust 설치, 디버깅, 문법 기초를 다루는 글을 모아 둔 아카이브."
-  en: "Archive of Rust posts covering setup, debugging, and language fundamentals."
+  ko: "Rust 설치, 디버깅, 문법 기초부터 testing, file I/O, serde, 작은 CLI 프로젝트까지 다루는 아카이브."
+  en: "Archive of Rust posts covering setup, debugging, language fundamentals, testing, file I/O, serde, and small CLI projects."
 
 macro-malware:
   ko: "매크로 기반 문서형 악성코드 샘플의 실행 흐름과 드로퍼 동작을 분석한 글."
@@ -89,6 +89,26 @@ rust-modules-smart-pointers-concurrency-async:
 rust-vec-string-str-hashmap:
   ko: "Vec, String, &str, HashMap를 예제로 익히는 Rust 기초 가이드."
   en: "Rust fundamentals guide to Vec, String, &str, and HashMap with examples."
+
+rust-crates-packages-project-layout:
+  ko: "Cargo 프로젝트에서 crate, package, main.rs, lib.rs, mod, use, pub 구조를 익히는 Rust 가이드."
+  en: "Rust guide to crates, packages, main.rs, lib.rs, mod, use, and pub in a Cargo project."
+
+rust-testing-basics:
+  ko: "cargo test, unit test, integration test, assert_eq!, Result 반환 테스트를 익히는 Rust 테스트 입문 가이드."
+  en: "Beginner-friendly Rust testing guide to cargo test, unit tests, integration tests, assert_eq!, and Result-based tests."
+
+rust-file-io-and-cli-input:
+  ko: "std::fs::read_to_string, write, std::env::args, Result를 이용해 파일과 CLI 입력을 다루는 Rust 가이드."
+  en: "Rust guide to file and CLI input with std::fs::read_to_string, write, std::env::args, and Result."
+
+rust-serde-json-toml-basics:
+  ko: "serde, serde_json, toml로 Rust 타입과 JSON/TOML 데이터를 직렬화·역직렬화하는 기초 가이드."
+  en: "Beginner-friendly Rust guide to serializing and deserializing JSON and TOML with serde, serde_json, and toml."
+
+rust-build-a-small-cli-project:
+  ko: "지금까지 배운 Rust 기초를 묶어 작은 word counter CLI를 만드는 실전 가이드."
+  en: "Practical Rust guide to building a small word counter CLI by combining project structure, file input, collections, and tests."
 
 from-prose-to-schema-turning-handoff-into-a-contract:
   ko: "handoff를 자유 서술이 아니라 schema 기반 계약으로 바꾸는 이유와 설계 포인트를 정리한 글."

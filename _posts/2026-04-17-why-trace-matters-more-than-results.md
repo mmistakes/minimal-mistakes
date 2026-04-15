@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "결과만으로는 부족하고 trace가 필요한 이유를 운영, 디버깅, 평가 관점에서 설명한 글."
 title: "하네스 엔지니어링 08. 결과만으로는 부족하고 trace가 필요하다"
 lang: ko
 translation_key: why-trace-matters-more-than-results
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 결과는 남았는데, 왜 그렇게 했는지는 모른다. 하네스 엔지니어링을 하다 보면 이 상황이 꽤 자주 문제로 떠오른다. 코드 결과물도 있고 실행 로그도 있는데, 왜 이 팀이 owner였는지, 왜 이 tool을 골랐는지, 왜 sub-agent에게 넘겼는지, 어느 지점에서 handoff가 실패했는지는 보이지 않는 경우다. 그래서 이번 글에서는 결과 로그와 trace 안의 판단 근거가 왜 다른지, 그리고 왜 trace가 있어야 개선이 가능해지는지 이야기해보려 한다.
 

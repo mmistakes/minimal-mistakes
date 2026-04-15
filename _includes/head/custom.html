@@ -246,6 +246,57 @@
     line-height: 1.45;
   }
 
+  .page__content .result-intro {
+    margin-bottom: 0.45rem;
+    color: #f6f8fa;
+    font-weight: 650;
+  }
+
+  .page__content .result-block {
+    position: relative;
+    margin: 0.75rem 0 1.5rem;
+  }
+
+  .page__content .result-block::before {
+    content: attr(data-result-label);
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.45rem;
+    padding: 0.28rem 0.7rem;
+    border-radius: 999px;
+    background: #00adb5;
+    color: #132026;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .page__content .result-block[data-result-tone="error"]::before {
+    background: #ff8a65;
+    color: #281510;
+  }
+
+  .page__content .result-block[data-result-tone="info"]::before {
+    background: #8cd1d4;
+    color: #132026;
+  }
+
+  .page__content .result-block,
+  .page__content .result-block .highlight,
+  .page__content .result-block pre.highlight {
+    background: transparent;
+  }
+
+  .page__content .result-block .highlight,
+  .page__content .result-block > pre,
+  .page__content .result-block pre.highlight {
+    border: 1px solid #2f666c;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #132027 0%, #10181e 100%);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+  }
+
   @media (max-width: 1023px) {
     .nav__list--sections label {
       display: none;
@@ -273,5 +324,76 @@
     }
   }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const paragraphs = document.querySelectorAll(".page__content p");
+
+    function getResultMeta(text, codeText) {
+      const trimmed = text.trim();
+      const lower = trimmed.toLowerCase();
+      const code = (codeText || "").trim();
+      const isKorean = /[가-힣]/.test(trimmed);
+
+      if (
+        /컴파일 에러|컴파일 오류|에러 메시지/.test(trimmed) ||
+        lower.includes("compiler error") ||
+        lower.includes("compiler output") ||
+        lower.includes("error message") ||
+        /^error\[e\d+\]/i.test(code)
+      ) {
+        return {
+          label: isKorean ? "컴파일 오류" : "Compiler Error",
+          tone: "error",
+        };
+      }
+
+      if (/버전 정보/.test(trimmed) || lower.includes("version information")) {
+        return {
+          label: isKorean ? "버전 정보" : "Version Info",
+          tone: "info",
+        };
+      }
+
+      if (
+        /실행 결과|출력 결과|가능한 출력 예시|예시 출력/.test(trimmed) ||
+        lower.includes("output looks like this") ||
+        lower.includes("one possible output") ||
+        lower.includes("confirm that the arguments were passed correctly in the output") ||
+        lower.includes("the result is the same") ||
+        lower.includes("the output will be")
+      ) {
+        return {
+          label: isKorean ? "실행 결과" : "Output",
+          tone: "output",
+        };
+      }
+
+      return null;
+    }
+
+    paragraphs.forEach(function (paragraph) {
+      const next = paragraph.nextElementSibling;
+      if (!next || !next.matches("div.highlighter-rouge, figure.highlight")) {
+        return;
+      }
+
+      const codeElement = next.querySelector("code");
+      const meta = getResultMeta(
+        paragraph.textContent || "",
+        codeElement ? codeElement.textContent : next.textContent || ""
+      );
+
+      if (!meta) {
+        return;
+      }
+
+      paragraph.classList.add("result-intro");
+      next.classList.add("result-block");
+      next.setAttribute("data-result-label", meta.label);
+      next.setAttribute("data-result-tone", meta.tone);
+    });
+  });
+</script>
 
 <!-- end custom head snippets -->

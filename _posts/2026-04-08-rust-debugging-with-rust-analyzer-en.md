@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Practical VS Code guide to debugging Rust projects with rust-analyzer and CodeLLDB."
 title: "Rust 02. Debugging with rust-analyzer and CodeLLDB"
 lang: en
 translation_key: rust-debugging-with-rust-analyzer
@@ -17,12 +18,15 @@ permalink: /en/rust/debugging-with-rust-analyzer-and-codelldb/
 
 When debugging Rust in VS Code, one of the most practical setups is to use `rust-analyzer` together with `CodeLLDB`. This post walks through the basic debugging flow, including breakpoints, variables, the call stack, and argument-based debugging with `launch.json`.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked against the current VS Code, rust-analyzer, and CodeLLDB documentation.
+- Created: 2026-04-08
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, VS Code, `rust-analyzer`, `CodeLLDB`, with Windows-style example paths
+- Test version: not fixed
 - Source grade: only official documentation and the original CodeLLDB repository are used.
-- Reproduction environment: Cargo project, VS Code, `rust-analyzer`, `CodeLLDB`, with Windows-style example paths.
-- Opinion: this post chooses the `rust-analyzer + CodeLLDB` workflow because it is one of the easiest setups for beginners to reason about step by step.
+- Note: this post chooses the `rust-analyzer + CodeLLDB` workflow because it is one of the easiest setups for beginners to reason about step by step.
 
 ## What to Know First
 
@@ -190,11 +194,15 @@ With this setup, the program receives `abcd` and `efgh` as command-line argument
 
 ## Verifying the Output
 
-After saving the configuration and starting the debugger again, you can confirm that the arguments were passed correctly in the output.
+After saving the configuration and starting the debugger again, you can confirm that the arguments were passed correctly in the output. The executable path depends on your environment, so the example below uses a placeholder.
 
-![Args output]({{ '/images/rust_02/%EC%9D%B8%EC%9E%90%EC%A0%84%EB%8B%AC%20%ED%99%95%EC%9D%B8.png' | relative_url }})
+```text
+args[0] = <executable path>
+args[1] = abcd
+args[2] = efgh
+```
 
-As shown in the example, `args[0]` contains the executable path, while `args[1] = abcd` and `args[2] = efgh` confirm that the `args` setting in `launch.json` was applied correctly.
+As shown in the example output, `args[0]` contains the executable path, while `args[1] = abcd` and `args[2] = efgh` confirm that the `args` setting in `launch.json` was applied correctly.
 
 ## Summary
 

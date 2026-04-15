@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "멀티에이전트 구성이 항상 정답이 아닌 이유와 단일 에이전트 기준선을 설명한 글."
 title: "하네스 엔지니어링 06. 멀티에이전트는 기본값이 아니다"
 lang: ko
 translation_key: multi-agent-is-not-the-default
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 에이전트가 많을수록 더 똑똑해질 것 같다는 직관은 꽤 강하다. planner가 계획하고, executor가 구현하고, verifier가 검증하고, doc-writer가 문서를 맡으면 더 체계적으로 보이기 때문이다. 하지만 실제 운영에서는 이 분업 구조가 항상 이득이 되지 않는다. 그래서 이번 글에서는 멀티에이전트가 무조건 좋은 기본값이 아니라, 조건부 전략이어야 하는 이유를 이야기해보려 한다.
 

@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains why agent systems become unstable when approval boundaries and guardrails are missing."
 title: "Harness Engineering 09. Agent Systems Need Approval Boundaries and Guardrails"
 lang: en
 translation_key: approval-boundaries-and-guardrails
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/approval-boundaries-and-guardrails/
 ---
+
+## Summary
 
 If a system has many rules and still feels unsafe, the missing piece is often the boundary. A team may have role separation, verification rules, and good documentation principles, yet some actions still execute too easily and some inputs are trusted too quickly. That is why this post focuses on the difference between good operating documents and safe execution boundaries, and on why approval boundaries and guardrails need to be part of an agent system from the beginning.
 

@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Rust fundamentals guide explaining ownership, borrowing, and lifetimes through examples."
 title: "Rust 04. Ownership, Borrowing, and Lifetimes"
 lang: en
 translation_key: rust-ownership-borrowing-lifetimes
@@ -19,11 +20,14 @@ When learning Rust, the terms you hear over and over are `ownership`, `borrowing
 
 This post explains how ownership moves, why borrowing is needed, and when lifetime annotations appear, all centered around small `String` examples you can run right away.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked chapter 4 of the Rust Book together with the lifetime syntax section in chapter 10.
+- Created: 2026-04-10
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, `String` and reference examples, and `src/main.rs`
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Cargo project, `String` and reference examples, and `src/main.rs`.
 - Note: lifetime annotation examples are shown for explanation; in real code, the compiler often infers more than beginners expect.
 
 
@@ -101,7 +105,23 @@ fn main() {
 
 The compiler output looks like this.
 
-<img src="{{ '/images/rust_04/move 소유권 이동 오류 결과.png' | relative_url }}" alt="Move ownership transfer error output">
+```text
+error[E0382]: borrow of moved value: `s1`
+ --> src/main.rs:5:20
+  |
+2 |     let s1 = String::from("hello");
+  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     let s2 = s1;
+  |              -- value moved here
+4 |
+5 |     println!("{}", s1);
+  |                    ^^ value borrowed here after move
+  |
+help: consider cloning the value if the performance cost is acceptable
+  |
+3 |     let s2 = s1.clone();
+  |                ++++++++
+```
 
 Why does Rust do this? A `String` stores its character data on the heap. If Rust allowed both `s1` and `s2` to behave like owners of the same heap allocation, both of them could try to free the same memory when leaving scope. Rust prevents that by invalidating the old binding at the point of the move.
 
@@ -121,7 +141,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/clone과 copy의 차이 결과 1.png' | relative_url }}" alt="Clone example output">
+```text
+s1 = hello
+s2 = hello
+```
 
 In this case, `s1` and `s2` each own their own heap data.
 
@@ -139,7 +162,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/clone과 copy의 차이 결과 2.png' | relative_url }}" alt="Copy example output">
+```text
+x = 10
+y = 10
+```
 
 Types such as `i32`, `bool`, `char`, some fixed-size tuples, and shared references like `&T` copy naturally. Types that own resources or require cleanup, such as `String` and `Vec<T>`, are not `Copy` by default.
 
@@ -162,7 +188,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/Borrowing 결과.png' | relative_url }}" alt="Borrowing example output">
+```text
+length = 10
+message = hello rust
+```
 
 Here, `print_length` receives a `&str` reference. Ownership of `message` stays in `main`, and the function only borrows it briefly to read the length. That is why `message` is still available after the function call.
 
@@ -187,7 +216,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 결과 1.png' | relative_url }}" alt="Immutable borrow example output">
+```text
+rust, rust
+```
 
 That is safe because both references only read the same value.
 
@@ -208,7 +239,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 결과 2.png' | relative_url }}" alt="Mutable borrow example output">
+```text
+rust ownership
+```
 
 The key rule is that only one mutable borrow is allowed at a time. Also, you cannot create a mutable borrow while immutable borrows are still alive.
 
@@ -227,7 +260,18 @@ fn main() {
 
 The compiler error looks like this.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 오류 결과.png' | relative_url }}" alt="Immutable and mutable borrow conflict error output">
+```text
+error[E0502]: cannot borrow `text` as mutable because it is also borrowed as immutable
+ --> src/main.rs:5:14
+  |
+4 |     let r1 = &text;
+  |              ----- immutable borrow occurs here
+5 |     let r2 = &mut text;
+  |              ^^^^^^^^^ mutable borrow occurs here
+6 |
+7 |     println!("{}, {}", r1, r2);
+  |                        -- immutable borrow later used here
+```
 
 Rust rejects this because one reference wants to read while the other wants to modify the same value at the same time.
 
@@ -251,7 +295,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 결과 3.png' | relative_url }}" alt="Separated borrow example output">
+```text
+hello
+hello rust
+```
 
 Once the immutable borrow is finished, creating the mutable borrow becomes fine.
 
@@ -319,7 +366,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/lifetime Annotation 예제.png' | relative_url }}" alt="Lifetime annotation example output">
+```text
+longer = ownership
+```
 
 This is safe because both `first` and `second` live long enough inside `main`.
 
@@ -343,7 +392,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_04/struct에 참조를 저장할 때의 Lifetime 결과.png' | relative_url }}" alt="Struct reference lifetime output">
+```text
+Rust
+```
 
 `Highlight<'a>` means the `part` reference inside the struct must remain valid for at least `'a`. In other words, the struct is not allowed to outlive the original string it refers to.
 

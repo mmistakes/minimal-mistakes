@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains why results alone are not enough and why trace matters for operations, debugging, and evaluation."
 title: "Harness Engineering 08. Results Alone Are Not Enough; You Need Trace"
 lang: en
 translation_key: why-trace-matters-more-than-results
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/why-trace-matters-more-than-the-result/
 ---
+
+## Summary
 
 The result is preserved, but no one knows why the system acted that way. In harness engineering, that situation becomes a real problem surprisingly often. The code output is there and the execution log exists, but the reasoning is missing: why this team was chosen as the owner, why this tool was selected, why the task was delegated to a sub-agent, or where a handoff actually failed. That is why this post focuses on the difference between result logs and the decision-relevant layer inside a trace, and why trace is what makes real improvement possible.
 

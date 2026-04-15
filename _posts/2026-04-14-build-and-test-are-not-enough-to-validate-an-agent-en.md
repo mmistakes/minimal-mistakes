@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains why build and test alone are not enough to validate an agent and what extra checks are needed."
 title: "Harness Engineering 05. Build and Test Are Not Enough to Validate an Agent"
 lang: en
 translation_key: build-and-test-are-not-enough-to-validate-an-agent
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/build-and-test-are-not-enough-to-validate-an-agent/
 ---
+
+## Summary
 
 It is possible for all tests to pass while the overall operation still feels unstable. In agent systems, that is not a contradiction. Build, test, lint, and audit can all come back green without proving that the work was routed correctly, handed off clearly, or documented properly. That is why this post separates product validation from agent validation.
 

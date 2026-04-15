@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "module, smart pointer, concurrency, async를 예제로 익히는 Rust 기초 가이드."
 title: "Rust 07. Modules, Smart Pointers, Concurrency, Async 기초"
 lang: ko
 translation_key: rust-modules-smart-pointers-concurrency-async
@@ -14,16 +15,21 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust를 어느 정도 익히고 나면 문법 하나하나보다 "코드를 어떻게 나눌지", "값을 어떻게 안전하게 공유할지", "여러 작업을 동시에 어떻게 처리할지"가 더 중요해진다. 이때 자주 마주치는 주제가 `module`, smart pointer, concurrency, async다.
 
 이번 글에서는 네 가지를 초급자 기준으로 정리한다. `module`은 코드를 구조화하는 도구이고, smart pointer는 값의 소유와 접근 방식을 더 정교하게 제어하게 해 준다. concurrency는 여러 작업을 동시에 진행하는 방법이고, async는 대기 시간이 많은 작업을 효율적으로 다루는 방식이다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust Book 7장, 15장, 16장과 Async Book을 확인했다.
+- 작성일: 2026-04-14
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, `src/main.rs`, thread와 async 예제
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Cargo 프로젝트, `src/main.rs`, thread와 async 예제.
-- 주의: async 예제는 runtime 선택 전의 개념 설명 수준이며, 실제 네트워크 async는 별도 executor 문서와 함께 봐야 한다.
+- 비고: async 예제는 runtime 선택 전의 개념 설명 수준이며, 실제 네트워크 async는 별도 executor 문서와 함께 봐야 한다.
 
 
 ## 실습 프로젝트 만들기
@@ -176,9 +182,15 @@ fn main() {
 }
 ```
 
-실행 결과는 아래와 같다.
+한 가지 가능한 출력 예시는 아래와 같다. 스레드 스케줄링에 따라 줄 순서는 실행마다 달라질 수 있다.
 
-<img src="{{ '/images/rust_07/concurrency 예제 결과 1.png' | relative_url }}" alt="concurrency 예제 결과 1">
+```text
+main thread = 1
+spawned thread = 1
+main thread = 2
+spawned thread = 2
+spawned thread = 3
+```
 
 `thread::spawn`은 새 스레드를 만들고, `join()`은 해당 스레드가 끝날 때까지 기다린다.
 

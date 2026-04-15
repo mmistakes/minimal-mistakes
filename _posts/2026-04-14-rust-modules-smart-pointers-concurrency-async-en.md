@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Rust fundamentals guide to modules, smart pointers, concurrency, and async with examples."
 title: "Rust 07. Modules, Smart Pointers, Concurrency, and Async"
 lang: en
 translation_key: rust-modules-smart-pointers-concurrency-async
@@ -19,11 +20,14 @@ Once you become a little more comfortable with Rust, the focus starts shifting f
 
 This post explains those four ideas at a beginner-friendly level. A module helps structure code, smart pointers give you finer control over ownership and access, concurrency helps you handle multiple tasks safely, and async is designed for situations where waiting is a big part of the job.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked chapters 7, 15, and 16 of the Rust Book together with the Async Book.
+- Created: 2026-04-14
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, `src/main.rs`, and examples using threads and async syntax
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Cargo project, `src/main.rs`, and examples using threads and async syntax.
 - Note: the async examples in this post stay at the concept level before choosing a production runtime.
 
 
@@ -177,9 +181,15 @@ fn main() {
 }
 ```
 
-The output looks like this.
+One possible output is below. The line order can change between runs depending on thread scheduling.
 
-<img src="{{ '/images/rust_07/concurrency 예제 결과 1.png' | relative_url }}" alt="Concurrency example output 1">
+```text
+main thread = 1
+spawned thread = 1
+main thread = 2
+spawned thread = 2
+spawned thread = 3
+```
 
 `thread::spawn` creates a new thread, and `join()` waits for that thread to finish.
 

@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "generics, error handling, closure, iterator를 예제로 익히는 Rust 기초 가이드."
 title: "Rust 06. Generics, Error Handling, Closures, Iterators 기초"
 lang: ko
 translation_key: rust-generics-error-handling-closures-iterators
@@ -14,16 +15,21 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust를 조금 더 익숙하게 쓰기 시작하면, 같은 로직을 여러 타입에 재사용하는 방법, 실패를 안전하게 처리하는 방법, 함수를 값처럼 다루는 방법, 그리고 컬렉션 데이터를 깔끔하게 순회하는 방법이 중요해진다. 이때 핵심이 되는 주제가 `generics`, error handling, closure, iterator다.
 
 이번 글에서는 이 네 가지를 초급자 기준으로 정리한다. 각각 따로 보면 문법처럼 느껴질 수 있지만, 실제 Rust 코드에서는 자주 함께 등장한다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust Book 9장, 10장, 13장을 확인했다.
+- 작성일: 2026-04-13
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, `src/main.rs`, `Result`와 iterator 예제
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Cargo 프로젝트, `src/main.rs`, `Result`와 iterator 예제.
-- 주의: 이 글은 초반 실무 감각을 잡기 위한 요약이므로 iterator adaptor 전체나 고급 에러 설계는 생략한다.
+- 비고: 이 글은 초반 실무 감각을 잡기 위한 요약이므로 iterator adaptor 전체나 고급 에러 설계는 생략한다.
 
 
 ## 실습 프로젝트 만들기
@@ -70,7 +76,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/Generics 타입 일반화하기 예제 결과 1.png' | relative_url }}" alt="Generics 타입 일반화하기 예제 결과 1">
+```text
+largest number = 40
+largest char = z
+```
 
 여기서 `T`는 아직 구체적으로 정해지지 않은 타입 자리라고 보면 된다. 대신 아무 타입이나 받을 수 있는 것은 아니고, `>` 비교를 위해 `PartialOrd`, 값을 복사해서 반환하기 위해 `Copy`가 필요하다는 조건을 붙였다.
 
@@ -93,7 +102,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/Generics 타입 일반화하기 예제 결과 2.png' | relative_url }}" alt="Generics 타입 일반화하기 예제 결과 2">
+```text
+int_point = (10, 20)
+float_point = (1.5, 2.5)
+```
 
 `Point<T>`는 같은 타입 `T`를 가지는 좌표를 표현한다. 이처럼 generic을 쓰면 코드 중복을 줄이면서도 타입 안전성은 그대로 유지할 수 있다.
 
@@ -125,7 +137,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/Error handling 예제 결과 1.png' | relative_url }}" alt="Error handling 예제 결과 1">
+```text
+result = 5
+error = 0으로 나눌 수 없습니다.
+```
 
 이 예제처럼 `match`로 `Ok`와 `Err`를 나누어 처리하면, 실패 상황을 빼먹지 않고 다룰 수 있다.
 
@@ -149,7 +164,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/Error handling 예제 결과 2.png' | relative_url }}" alt="Error handling 예제 결과 2">
+```text
+sum = 30
+```
 
 `?`는 `Err`가 나오면 바로 바깥으로 반환하고, `Ok`면 안의 값만 꺼내는 역할을 한다. 단, 이런 조기 반환이 가능하려면 바깥 함수의 반환 타입도 `Result`처럼 그 error와 호환되어야 한다. 그래서 여러 단계의 실패 가능성이 있는 코드를 훨씬 읽기 쉽게 만들 수 있다.
 
@@ -168,7 +185,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/closures 예제 결과 1.png' | relative_url }}" alt="closures 예제 결과 1">
+```text
+result = 15
+```
 
 위 예제에서 closure는 바깥 변수 `bonus`를 그대로 사용한다. 이런 식으로 주변 스코프 값을 캡처한다는 점이 일반 함수와 closure의 큰 차이 중 하나다.
 
@@ -183,7 +202,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/closures 예제 결과 2.png' | relative_url }}" alt="closures 예제 결과 2">
+```text
+result = 12
+```
 
 초반에는 closure를 "잠깐 쓰는 짧은 함수"라고 이해해도 충분하다.
 
@@ -208,7 +229,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_06/Iterators 예제 결과.png' | relative_url }}" alt="Iterators 예제 결과">
+```text
+total = 12
+```
 
 이 코드는 아래 흐름으로 읽으면 된다.
 

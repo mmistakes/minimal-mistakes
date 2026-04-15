@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Beginner guide to Rust variables, basic types, control flow, and functions with examples."
 title: "Rust 03. Variables, Types, Control Flow, and Functions"
 lang: en
 translation_key: rust-variables-types-control-flow-functions
@@ -17,11 +18,14 @@ permalink: /en/rust/variables-types-control-flow-and-functions/
 
 When you first learn Rust, the most important syntax to understand is variables, types, control flow, and functions. Once these four are clear, later topics such as `struct`, `enum`, `ownership`, and borrowing become much easier to follow. This post walks through each topic one by one and includes small examples you can run right away.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked chapter 3 of the Rust Book and the standard Cargo beginner workflow.
+- Created: 2026-04-09
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, Windows PowerShell example commands, and `src/main.rs`
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Cargo project, Windows PowerShell example commands, and `src/main.rs`.
 - Note: example outputs are shown for explanation, and exact diagnostics can vary by Rust version.
 
 
@@ -79,7 +83,20 @@ fn main() {
 
 In this case, Rust reports that `count` is immutable and cannot be assigned again.
 
-![Immutable variable reassignment error]({{ '/images/rust_03/let_error.png' | relative_url }})
+```text
+error[E0384]: cannot assign twice to immutable variable `count`
+ --> src/main.rs:3:5
+  |
+2 |     let count = 10;
+  |         ----- first assignment to `count`
+3 |     count = 20;
+  |     ^^^^^^^^^^ cannot assign twice to immutable variable
+  |
+help: consider making this binding mutable
+  |
+2 |     let mut count = 10;
+  |         +++
+```
 
 If you want to change the value, you need to declare it with `mut` like this.
 
@@ -94,7 +111,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/변수예제결과.png' | relative_url }}" alt="Variables example output">
+```text
+count = 20
+```
 
 Shadowing is different from `mut`. With `mut`, you update the same variable. With shadowing, you create a new variable with the same name. Because of that, shadowing can also be used to change the type associated with a name.
 
@@ -136,7 +155,14 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/타입예제결과.png' | relative_url }}" alt="Types example output">
+```text
+age = 29
+temperature = 36.5
+is_rust_fun = true
+grade = A
+language = Rust
+message = hello
+```
 
 In that example, the most commonly used types are:
 
@@ -160,7 +186,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/문자열파싱예제.png' | relative_url }}" alt="String parsing example output">
+```text
+guess = 42
+```
 
 From `parse()` alone, the compiler cannot know which numeric type you want. Writing `guess: i32` gives the compiler the exact target type.
 
@@ -186,7 +214,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/if문예제.png' | relative_url }}" alt="If statement example output">
+```text
+It is odd.
+```
 
 In Rust, the condition in `if` must always be a `bool`. Unlike some other languages, you cannot place a number directly in the condition.
 
@@ -203,7 +233,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/if 표현식 예제 결과.png' | relative_url }}" alt="If expression example output">
+```text
+result = pass
+```
 
 ### loop
 
@@ -227,7 +259,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/loop예제 결과.png' | relative_url }}" alt="Loop example output">
+```text
+result = 30
+```
 
 One nice Rust feature is that `loop` can return a value through `break`. In this example, `30` is stored in `result`.
 
@@ -250,7 +284,12 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/while예제 결과.png' | relative_url }}" alt="While example output">
+```text
+remaining = 3
+remaining = 2
+remaining = 1
+start
+```
 
 `while` reads well when the condition naturally becomes false as the loop progresses.
 
@@ -274,7 +313,14 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/for문 예제 결과.png' | relative_url }}" alt="For example output">
+```text
+tool = rustc
+tool = cargo
+tool = clippy
+number = 1
+number = 2
+number = 3
+```
 
 In real Rust code, `for` is usually preferred over manual counting with `while`, especially when iterating over a collection.
 
@@ -299,7 +345,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/match문 예제 결과.png' | relative_url }}" alt="Match example output">
+```text
+grade = B
+```
 
 `match` is powerful because it encourages you to handle every possible case. In many situations, that makes it safer and easier to read than a long `if/else if` chain.
 
@@ -337,7 +385,11 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_03/함수 예제 결과.png' | relative_url }}" alt="Functions example output">
+```text
+name = K4NUL, age = 30
+sum = 30
+bigger = 11
+```
 
 Important details here are:
 

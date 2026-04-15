@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explores what a project instruction file should own and where it should stop inside a larger harness."
 title: "Harness Engineering 03. How Far Should a Project Instruction File Go?"
 lang: en
 translation_key: project-instruction-files-should-not-be-control-planes
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/how-far-should-a-project-instruction-file-go/
 ---
+
+## Summary
 
 A good instruction file is not a document that tries to contain everything. It is a document that clarifies what belongs where. In part 2, I described harness engineering as the work of designing the full environment in which AI operates. This time, I want to look at one of the closest layers in that environment: the project instruction file. Whether it is called `AGENTS.md` or `CLAUDE.md`, the more important question is what role that file should play as the project's entrypoint.
 

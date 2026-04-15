@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains how to turn natural-language principles into concrete system rules and enforcement."
 title: "Harness Engineering 07. Turning Principles into Enforceable Rules"
 lang: en
 translation_key: from-principles-to-enforcement
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/from-principles-to-enforcement/
 ---
+
+## Summary
 
 Why do teams keep missing good rules even after those rules are written down clearly? That question appears quickly once you start thinking in harness-engineering terms. Principles written in documentation still matter, but both humans and agents can miss them in practice. That is why this post looks at the difference between writing a good rule in prose and making that rule actually enforceable.
 

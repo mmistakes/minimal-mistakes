@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "소유권, 대여, 수명 규칙을 예제로 설명하는 Rust 기초 가이드."
 title: "Rust 04. Ownership, Borrowing, Lifetime 기초"
 lang: ko
 translation_key: rust-ownership-borrowing-lifetimes
@@ -14,16 +15,21 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust를 배우다 보면 변수나 함수 문법보다 더 자주 듣게 되는 단어가 `ownership`, `borrowing`, `lifetime`이다. 이 개념들은 Rust가 가비지 컬렉터 없이도 메모리 안전성을 지키는 핵심 규칙이다. 처음에는 다소 낯설게 느껴질 수 있지만, `move`, 참조, 스코프라는 3가지만 차근차근 이해하면 흐름이 훨씬 선명해진다.
 
 이번 글에서는 `String` 예제를 중심으로 ownership이 어떻게 이동하는지, 빌림(borrowing)은 왜 필요한지, 그리고 lifetime annotation이 어떤 상황에서 등장하는지를 한 번에 정리한다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust Book 4장과 10장 lifetime 문법을 확인했다.
+- 작성일: 2026-04-10
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, `String`/reference 예제, `src/main.rs`
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Cargo 프로젝트, `String`/reference 예제, `src/main.rs`.
-- 주의: lifetime annotation 예제는 개념 설명용이므로 실제 코드에서는 추론 가능한 경우가 더 많다.
+- 비고: lifetime annotation 예제는 개념 설명용이므로 실제 코드에서는 추론 가능한 경우가 더 많다.
 
 
 ## 실습 프로젝트 만들기
@@ -100,7 +106,23 @@ fn main() {
 
 컴파일 에러는 아래와 같다.
 
-<img src="{{ '/images/rust_04/move 소유권 이동 오류 결과.png' | relative_url }}" alt="move 소유권 이동 오류 결과">
+```text
+error[E0382]: borrow of moved value: `s1`
+ --> src/main.rs:5:20
+  |
+2 |     let s1 = String::from("hello");
+  |         -- move occurs because `s1` has type `String`, which does not implement the `Copy` trait
+3 |     let s2 = s1;
+  |              -- value moved here
+4 |
+5 |     println!("{}", s1);
+  |                    ^^ value borrowed here after move
+  |
+help: consider cloning the value if the performance cost is acceptable
+  |
+3 |     let s2 = s1.clone();
+  |                ++++++++
+```
 
 왜 이렇게 동작할까? `String`은 문자열 데이터를 힙(heap)에 저장한다. 만약 대입 시 얕은 복사만 허용하고 `s1`, `s2`가 같은 데이터를 동시에 owner처럼 다루게 두면, 둘 다 스코프를 벗어날 때 같은 메모리를 두 번 해제할 위험이 생긴다. Rust는 이런 상황을 막기 위해 대입 순간 기존 변수의 사용을 금지한다.
 
@@ -120,7 +142,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/clone과 copy의 차이 결과 1.png' | relative_url }}" alt="clone과 copy의 차이 결과 1">
+```text
+s1 = hello
+s2 = hello
+```
 
 이 경우 `s1`과 `s2`는 각각 별도의 문자열 데이터를 가진다. 즉, 힙 데이터까지 명시적으로 복사된다.
 
@@ -138,7 +163,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/clone과 copy의 차이 결과 2.png' | relative_url }}" alt="clone과 copy의 차이 결과 2">
+```text
+x = 10
+y = 10
+```
 
 `i32`, `bool`, `char`, 고정 크기 튜플 일부, 공유 참조 `&T` 등은 이런 식으로 복사가 자연스럽게 일어난다. 반대로 `String`, `Vec<T>`처럼 자원을 소유하거나 `Drop`으로 정리가 필요한 타입은 기본적으로 `Copy`가 아니다.
 
@@ -161,7 +189,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/Borrowing 결과.png' | relative_url }}" alt="Borrowing 결과">
+```text
+length = 10
+message = hello rust
+```
 
 위 코드에서 `print_length`는 `&str` 참조를 받는다. `message` 자체의 ownership은 여전히 `main` 안에 있고, 함수는 잠깐 빌려서 길이만 확인한다. 그래서 함수 호출 뒤에도 `message`를 계속 사용할 수 있다.
 
@@ -186,7 +217,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 결과 1.png' | relative_url }}" alt="immutable borrow와 mutable borrow 결과 1">
+```text
+rust, rust
+```
 
 읽기만 하는 참조는 동시에 여러 개 있어도 안전하기 때문이다.
 
@@ -207,7 +240,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 결과 2.png' | relative_url }}" alt="immutable borrow와 mutable borrow 결과 2">
+```text
+rust ownership
+```
 
 여기서 중요한 점은 mutable borrow는 같은 시점에 하나만 허용된다는 것이다. 또한 immutable borrow가 살아 있는 동안에는 mutable borrow를 만들 수 없다.
 
@@ -226,7 +261,18 @@ fn main() {
 
 에러 메시지는 아래와 같다.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 오류 결과.png' | relative_url }}" alt="immutable borrow와 mutable borrow 오류 결과">
+```text
+error[E0502]: cannot borrow `text` as mutable because it is also borrowed as immutable
+ --> src/main.rs:5:14
+  |
+4 |     let r1 = &text;
+  |              ----- immutable borrow occurs here
+5 |     let r2 = &mut text;
+  |              ^^^^^^^^^ mutable borrow occurs here
+6 |
+7 |     println!("{}, {}", r1, r2);
+  |                        -- immutable borrow later used here
+```
 
 이유는 한쪽에서는 읽고 있고, 다른 한쪽에서는 동시에 수정하려 하기 때문이다. Rust는 이런 충돌을 컴파일 단계에서 차단한다.
 
@@ -250,7 +296,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/immutable borrow와 mutable borrow 결과 3.png' | relative_url }}" alt="immutable borrow와 mutable borrow 결과 3">
+```text
+hello
+hello rust
+```
 
 먼저 immutable borrow를 끝내고, 그다음 mutable borrow를 만들면 문제가 없다.
 
@@ -318,7 +367,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/lifetime Annotation 예제.png' | relative_url }}" alt="lifetime annotation 예제 결과">
+```text
+longer = ownership
+```
 
 이 코드는 `first`와 `second`가 모두 `main` 안에서 충분히 오래 살아 있기 때문에 안전하다.
 
@@ -342,7 +393,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_04/struct에 참조를 저장할 때의 Lifetime 결과.png' | relative_url }}" alt="struct에 참조를 저장할 때의 lifetime 결과">
+```text
+Rust
+```
 
 `Highlight<'a>`는 구조체가 들고 있는 `part` 참조가 최소한 `'a` 동안은 유효하다는 뜻이다. 즉, 구조체가 원본 문자열보다 오래 살아남을 수 없도록 제한하는 것이다.
 

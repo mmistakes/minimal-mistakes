@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Rust fundamentals guide to generics, error handling, closures, and iterators with examples."
 title: "Rust 06. Generics, Error Handling, Closures, and Iterators"
 lang: en
 translation_key: rust-generics-error-handling-closures-iterators
@@ -19,11 +20,14 @@ Once you get more comfortable with Rust, four topics start appearing everywhere:
 
 This post explains those four topics at a beginner-friendly level. Each one may look like separate syntax at first, but in real Rust code they very often work together.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked chapters 9, 10, and 13 of the Rust Book.
+- Created: 2026-04-13
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, `src/main.rs`, and examples built around `Result` and iterators
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Cargo project, `src/main.rs`, and examples built around `Result` and iterators.
 - Note: this post is a beginner-oriented summary, so it does not try to cover every iterator adaptor or advanced error-design pattern.
 
 
@@ -71,7 +75,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/Generics 타입 일반화하기 예제 결과 1.png' | relative_url }}" alt="Generics example output 1">
+```text
+largest number = 40
+largest char = z
+```
 
 Here, `T` is a placeholder for a type that will be decided later. Rust still does not accept just any type here. The function requires `PartialOrd` so values can be compared with `>`, and `Copy` so the chosen value can be returned by value.
 
@@ -94,7 +101,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/Generics 타입 일반화하기 예제 결과 2.png' | relative_url }}" alt="Generics example output 2">
+```text
+int_point = (10, 20)
+float_point = (1.5, 2.5)
+```
 
 `Point<T>` represents a coordinate whose `x` and `y` share the same type `T`. This is a typical way to reduce duplication while keeping strong type safety.
 
@@ -126,7 +136,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/Error handling 예제 결과 1.png' | relative_url }}" alt="Error handling example output 1">
+```text
+result = 5
+error = Cannot divide by zero.
+```
 
 With `match`, you handle both `Ok` and `Err` explicitly, which makes failure cases much harder to ignore by accident.
 
@@ -150,7 +163,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/Error handling 예제 결과 2.png' | relative_url }}" alt="Error handling example output 2">
+```text
+sum = 30
+```
 
 If `?` sees an `Err`, it returns that error immediately to the outer function. If it sees an `Ok`, it unwraps the inner value. However, this only works when the outer function returns a compatible type such as `Result`. That makes multi-step fallible code much easier to read.
 
@@ -169,7 +184,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/closures 예제 결과 1.png' | relative_url }}" alt="Closures example output 1">
+```text
+result = 15
+```
 
 In this example, the closure uses the outer variable `bonus` directly. Capturing surrounding values like this is one of the main differences between closures and ordinary functions.
 
@@ -184,7 +201,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/closures 예제 결과 2.png' | relative_url }}" alt="Closures example output 2">
+```text
+result = 12
+```
 
 At the beginner level, it is enough to think of a closure as a short function you create on the spot.
 
@@ -209,7 +228,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_06/Iterators 예제 결과.png' | relative_url }}" alt="Iterators example output">
+```text
+total = 12
+```
 
 You can read this flow like this:
 

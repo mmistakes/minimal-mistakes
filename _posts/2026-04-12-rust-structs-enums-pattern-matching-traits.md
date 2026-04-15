@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "struct, enum, pattern matching, trait을 예제로 익히는 Rust 기초 가이드."
 title: "Rust 05. Structs, Enums, Pattern Matching, Traits 기초"
 lang: ko
 translation_key: rust-structs-enums-pattern-matching-traits
@@ -14,16 +15,21 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 이전 글에서 ownership, borrowing, lifetime을 정리했다면, 이제는 실제 데이터를 어떻게 모델링하고 공통 동작을 어떻게 표현할지 배울 차례다. Rust에서는 여러 필드를 하나로 묶을 때 `struct`를 사용하고, 여러 경우 중 하나를 표현할 때 `enum`을 사용한다. 그리고 `match`와 `if let`은 이런 값을 안전하게 분기 처리하는 핵심 문법이며, `trait`는 여러 타입이 같은 동작을 공유하도록 만드는 도구다.
 
 이번 글에서는 `struct`, `enum`, pattern matching, `trait`를 한 흐름으로 정리하면서, Rust에서 데이터와 동작을 어떻게 설계하는지 기초를 잡아 본다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust Book 5장, 6장, 10장 trait 장을 확인했다.
+- 작성일: 2026-04-12
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, `src/main.rs`, 기본 enum/trait 예제
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Cargo 프로젝트, `src/main.rs`, 기본 enum/trait 예제.
-- 주의: 이 글은 입문 수준의 핵심 문법에 집중하며, advanced pattern과 generic trait bound 전체를 다루지는 않는다.
+- 비고: 이 글은 입문 수준의 핵심 문법에 집중하며, advanced pattern과 generic trait bound 전체를 다루지는 않는다.
 
 
 ## 실습 프로젝트 만들기
@@ -68,7 +74,11 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/struct예제 결과1.png' | relative_url }}" alt="struct 예제 결과 1">
+```text
+username = k4nul
+active = true
+sign_in_count = 1
+```
 
 `User`처럼 이름 있는 필드를 가지는 형태를 named struct라고 보면 된다. 각 값이 어떤 의미인지 이름으로 바로 드러나기 때문에 읽기가 쉽다.
 
@@ -97,7 +107,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/sturct예제 결과2.png' | relative_url }}" alt="struct 예제 결과 2">
+```text
+rustacean
+```
 
 여기서는 함수 인자 이름 `username`과 struct 필드 이름 `username`이 같기 때문에 `username: username`을 줄여서 쓸 수 있다.
 
@@ -139,7 +151,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/impl로 struct에 메서드 붙이기 예제 결과.png' | relative_url }}" alt="impl로 struct에 메서드 붙이기 예제 결과">
+```text
+area = 600
+can_hold = true
+```
 
 여기서 `&self`는 현재 인스턴스를 참조로 받는다는 뜻이다. 즉, `rect1.area()`는 내부적으로 `Rectangle::area(&rect1)`처럼 호출된다고 생각하면 이해하기 쉽다.
 
@@ -187,7 +202,11 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/enum 예제 결과 1.png' | relative_url }}" alt="enum 예제 결과 1">
+```text
+quit
+move to (10, 20)
+text = hello
+```
 
 중요한 점은 각 variant가 서로 다른 형태의 데이터를 가질 수 있다는 것이다. `Quit`는 데이터가 없고, `Move`는 named field를 가지며, `Write`는 `String` 하나를 담고, `ChangeColor`는 튜플처럼 값을 담는다.
 
@@ -205,7 +224,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/enum 예제 결과 2.png' | relative_url }}" alt="enum 예제 결과 2">
+```text
+some_number = Some(10)
+no_number = None
+```
 
 `Option<T>`는 값이 있을 수도 없을 수도 있다는 가능성을 타입 수준에서 드러낸다. 다른 언어의 `null`처럼 애매하게 두지 않고, 그 가능성을 처리하지 않은 채 일반 값처럼 사용하지 못하게 막는 것이 핵심이다. 실제로는 `match`, `if let`, 여러 메서드, `?` 등을 통해 안전하게 다룬다.
 
@@ -237,7 +259,11 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/pattern matching 예제 결과 1.png' | relative_url }}" alt="pattern matching 예제 결과 1">
+```text
+normal ticket
+vip level = 3
+staff = admin
+```
 
 `match` 안에서는 variant에 들어 있던 값을 바로 꺼내서 사용할 수 있다. `Ticket::Vip(level)`에서 `level`, `Ticket::Staff(name)`에서 `name`이 바로 바인딩되는 부분이 핵심이다.
 
@@ -257,7 +283,9 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/pattern matching 예제 결과 2.png' | relative_url }}" alt="pattern matching 예제 결과 2">
+```text
+max = 5
+```
 
 `if let`은 `match`의 축약형처럼 생각하면 된다. 경우가 많을 때는 `match`, 특정 패턴 하나만 빠르게 다룰 때는 `if let`이 잘 어울린다.
 
@@ -314,7 +342,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-<img src="{{ '/images/rust_05/Trait 예제 결과.png' | relative_url }}" alt="trait 예제 결과">
+```text
+summary = Rust Traits - K4NUL
+summary = Rust 1.xx Released (Dev Reporter)
+```
 
 핵심은 `BlogPost`와 `NewsArticle`의 구조는 다르지만, 둘 다 `Summary`라는 같은 동작을 제공할 수 있다는 점이다. 그래서 `notify` 함수는 구체 타입을 몰라도 `Summary`를 구현했다는 사실만 알면 호출할 수 있다.
 

@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "build와 test만으로 agent 작업을 검증하기 어려운 이유와 추가 검증 계층을 설명한 글."
 title: "하네스 엔지니어링 05. build와 test만으로는 agent를 검증할 수 없다"
 lang: ko
 translation_key: build-and-test-are-not-enough-to-validate-an-agent
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 테스트가 모두 통과했는데도 운영은 흔들릴 수 있다. 얼핏 이상하게 들리지만, agent 시스템에서는 꽤 자주 만나는 장면이다. build, test, lint, audit가 모두 초록불이어도, 그 일이 올바른 방식으로 라우팅되었는지, handoff가 충분했는지, 문서가 최신 상태인지까지 보장되지는 않는다. 그래서 이번 글에서는 제품 검증과 agent 검증을 왜 구분해서 봐야 하는지 이야기해보려 한다.
 

@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "문서 중심 운영에서 관측 가능한 하네스로 옮겨 가는 실전 전환 로드맵을 정리한 글."
 title: "하네스 엔지니어링 10. 문서 중심 운영에서 관측 가능한 하네스로: 실전 전환 로드맵"
 lang: ko
 translation_key: from-document-centered-ops-to-observable-harness
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 문서를 더 길게 쓰는 것만으로는 해결되지 않는다. 시리즈 전체를 관통한 문제의식도 결국 여기로 모인다. AGENTS.md나 CLAUDE.md 같은 지침 파일을 더 촘촘히 쓰는 일은 출발점일 수는 있지만, 그 자체가 하네스를 만들어 주지는 않는다. 이번 최종편에서는 지금까지의 논의를 묶어, 문서 중심 운영에서 관측 가능하고 검증 가능한 하네스로 실제로 어떻게 전환할 수 있는지 정리해보려 한다.
 

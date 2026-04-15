@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Rust fundamentals guide to structs, enums, pattern matching, and traits with examples."
 title: "Rust 05. Structs, Enums, Pattern Matching, and Traits"
 lang: en
 translation_key: rust-structs-enums-pattern-matching-traits
@@ -19,11 +20,14 @@ After learning ownership, borrowing, and lifetimes, the next step is understandi
 
 This post walks through `struct`, `enum`, pattern matching, and `trait` as one connected set of ideas so you can build a solid mental model of how Rust organizes data and behavior.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked chapters 5 and 6 of the Rust Book plus the trait chapter in chapter 10.
+- Created: 2026-04-12
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Cargo project, `src/main.rs`, and basic enum and trait examples
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Cargo project, `src/main.rs`, and basic enum and trait examples.
 - Note: this post stays at the beginner level and does not try to cover advanced patterns or the full trait-bound system.
 
 
@@ -69,7 +73,11 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/struct예제 결과1.png' | relative_url }}" alt="Struct example output 1">
+```text
+username = k4nul
+active = true
+sign_in_count = 1
+```
 
 This is a named-field struct. Because each value has a field name, the meaning of each piece of data is easy to read.
 
@@ -98,7 +106,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/sturct예제 결과2.png' | relative_url }}" alt="Struct example output 2">
+```text
+rustacean
+```
 
 Because the function parameter `username` has the same name as the struct field `username`, Rust lets you shorten `username: username` to just `username`.
 
@@ -140,7 +150,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/impl로 struct에 메서드 붙이기 예제 결과.png' | relative_url }}" alt="Impl methods example output">
+```text
+area = 600
+can_hold = true
+```
 
 Here, `&self` means the method receives a reference to the current instance. A simple way to think about `rect1.area()` is that it behaves like `Rectangle::area(&rect1)`.
 
@@ -188,7 +201,11 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/enum 예제 결과 1.png' | relative_url }}" alt="Enum example output 1">
+```text
+quit
+move to (10, 20)
+text = hello
+```
 
 The important detail is that each variant can carry a different shape of data. `Quit` carries nothing, `Move` has named fields, `Write` stores a single `String`, and `ChangeColor` stores values like a tuple.
 
@@ -206,7 +223,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/enum 예제 결과 2.png' | relative_url }}" alt="Enum example output 2">
+```text
+some_number = Some(10)
+no_number = None
+```
 
 `Option<T>` safely represents the possibility that a value may be present or absent at the type level. Instead of leaving this vague like `null` in some languages, Rust prevents you from using it like an ordinary value until that possibility has been handled. In practice, you often do that with `match`, `if let`, helper methods, or `?`.
 
@@ -238,7 +258,11 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/pattern matching 예제 결과 1.png' | relative_url }}" alt="Pattern matching output 1">
+```text
+normal ticket
+vip level = 3
+staff = admin
+```
 
 Inside `match`, you can immediately bind values stored inside a variant. That is the key idea in `Ticket::Vip(level)` and `Ticket::Staff(name)`.
 
@@ -258,7 +282,9 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/pattern matching 예제 결과 2.png' | relative_url }}" alt="Pattern matching output 2">
+```text
+max = 5
+```
 
 You can think of `if let` as a compact version of `match`. Use `match` when you need full branching, and `if let` when you want to focus on one pattern quickly.
 
@@ -315,7 +341,10 @@ fn main() {
 
 The output looks like this.
 
-<img src="{{ '/images/rust_05/Trait 예제 결과.png' | relative_url }}" alt="Trait example output">
+```text
+summary = Rust Traits - K4NUL
+summary = Rust 1.xx Released (Dev Reporter)
+```
 
 The important point is that `BlogPost` and `NewsArticle` have different structures, but both can provide the same `Summary` behavior. Because of that, `notify` does not need to know the concrete type. It only needs to know that the value implements `Summary`.
 

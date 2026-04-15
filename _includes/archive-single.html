@@ -11,6 +11,7 @@
 {% endif %}
 
 {% assign teaser_alt = post.header.image_description | default: post.title | markdownify | strip_html | strip_newlines | escape_once %}
+{% assign archive_description = post.description | default: post.excerpt %}
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
@@ -27,6 +28,6 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if archive_description %}<p class="archive__item-excerpt" itemprop="description">{{ archive_description | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>

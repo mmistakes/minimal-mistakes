@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains why AI coding tools produce different results by looking beyond prompts to the execution environment."
 title: "Harness Engineering 01. Why Do Results Change When You Switch AI Coding Tools?"
 lang: en
 translation_key: why-ai-tools-produce-different-results
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/why-do-results-change-when-you-switch-ai-coding-tools/
 ---
+
+## Summary
 
 If you try a few AI coding tools, you quickly notice a familiar pattern. You ask for the same feature, but one tool spreads the work across a large file structure while another packs everything into a single file. One tool adds tests, while another leaves a note saying tests could be added later. At first that difference can feel interesting. In a real project, though, it creates a different problem. The more the output fluctuates, the higher the maintenance risk becomes.
 

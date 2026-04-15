@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Beginner-friendly guide to installing Rust on Windows with VS Code and running Hello World."
 title: "Rust 01. Install Rust and Run Hello World"
 lang: en
 translation_key: rust-install-hello-world
@@ -15,13 +16,18 @@ search: true
 permalink: /en/rust/install-rust-and-run-hello-world/
 ---
 
+## Summary
+
 When you first start with Rust, it is usually much easier to install everything through the official installer, `rustup`, instead of installing the compiler by itself. This post walks through the most basic setup flow on Windows with VS Code, ending with a simple `Hello, world!` program.
 
-## Verification scope and reproducibility
+## Document Information
 
-- As of: April 15, 2026, checked the official Rust install page, `rustup` documentation, the Rust Book, and VS Code Rust docs.
+- Created: 2026-04-07
+- Verified on: April 15, 2026
+- Document type: tutorial
+- Test environment: Windows PowerShell, VS Code, `rustup`, `rustc`, and `cargo`
+- Test version: not fixed
 - Source grade: only official documentation is used.
-- Reproduction environment: Windows PowerShell, VS Code, `rustup`, `rustc`, and `cargo`.
 - Note: version numbers and installer screens change over time, so confirm them on your own machine at install time.
 
 
@@ -52,9 +58,10 @@ cargo --version
 
 If the installation completed successfully, you should see version information like this. The exact version numbers will vary depending on when you install.
 
-![Check rustc version]({{ '/images/rust_01/rustc.png' | relative_url }})
-
-![Check cargo version]({{ '/images/rust_01/cargo.png' | relative_url }})
+```text
+rustc 1.94.0 (4a4ef493e 2026-03-02)
+cargo 1.94.0 (85eff7c80 2026-01-15)
+```
 
 ## Print Hello World in VS Code
 

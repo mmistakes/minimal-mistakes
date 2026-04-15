@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "프로젝트 지침 파일이 어디까지 책임져야 하는지와 하네스와의 경계를 다루는 글."
 title: "하네스 엔지니어링 03. 프로젝트 지침 파일은 어디까지 써야 할까"
 lang: ko
 translation_key: project-instruction-files-should-not-be-control-planes
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 좋은 지침 파일은 모든 것을 담는 문서가 아니라, 무엇을 어디에 둘지 경계를 정리하는 문서다. 2편에서 하네스 엔지니어링을 "AI가 일하는 환경 전체를 설계하는 일"로 설명했다면, 이번에는 그 가까운 레이어인 프로젝트 지침 파일을 보려 한다. AGENTS.md든 CLAUDE.md든 이름보다 중요한 것은, 그 파일이 프로젝트의 entrypoint로서 어떤 역할을 맡아야 하느냐다.
 

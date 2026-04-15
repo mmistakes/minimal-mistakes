@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "approval 경계와 guardrail이 비어 있을 때 agent 시스템이 흔들리는 이유를 다루는 글."
 title: "하네스 엔지니어링 09. approval과 guardrail이 비어 있으면 agent 시스템은 불안정하다"
 lang: ko
 translation_key: approval-boundaries-and-guardrails
@@ -13,6 +14,8 @@ sidebar:
   nav: "sections"
 search: false
 ---
+
+## 요약
 
 규칙은 많았는데도 왠지 불안하다면, 경계가 비어 있을 가능성이 크다. 역할 분리도 있고 검증 규칙도 있고 문서 원칙도 잘 적혀 있는데, 막상 운영해 보면 어떤 행동은 너무 쉽게 실행되고 어떤 입력은 너무 쉽게 믿어지는 경우가 있다. 그래서 이번 글에서는 좋은 운영 문서와 안전한 실행 경계가 왜 다른 문제인지, 그리고 approval boundary와 guardrail이 왜 agent 시스템에 처음부터 필요했는지를 이야기해보려 한다.
 

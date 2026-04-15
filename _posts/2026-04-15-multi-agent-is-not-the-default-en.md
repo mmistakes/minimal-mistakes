@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Explains why multi-agent setups are not the default answer and when a single agent is the better baseline."
 title: "Harness Engineering 06. Multi-Agent Is Not the Default"
 lang: en
 translation_key: multi-agent-is-not-the-default
@@ -14,6 +15,8 @@ sidebar:
 search: false
 permalink: /en/ai/multi-agent-is-not-the-default/
 ---
+
+## Summary
 
 It is easy to assume that more agents automatically make the system smarter. A planner can plan, an executor can implement, a verifier can review, and a doc-writer can update documentation. On paper, that looks disciplined and efficient. In practice, though, that division of labor is not always a win. That is why this post argues that multi-agent should not be treated as the default, but as a conditional strategy.
 

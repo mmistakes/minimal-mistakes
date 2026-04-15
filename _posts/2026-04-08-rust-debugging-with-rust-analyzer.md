@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "rust-analyzer와 CodeLLDB로 Rust 프로젝트를 디버깅하는 VS Code 실전 가이드."
 title: "Rust 02. rust-analyzer\uC640 CodeLLDB\uB85C \uB514\uBC84\uAE45\uD558\uAE30"
 lang: ko
 translation_key: rust-debugging-with-rust-analyzer
@@ -14,14 +15,19 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust를 VS Code에서 디버깅할 때는 `rust-analyzer`와 `CodeLLDB`를 함께 사용하는 구성이 가장 이해하기 쉽다. 이 글은 기본 디버깅 키 사용법부터 브레이크 포인트, 변수 창, Call Stack 확인 방법, 그리고 `launch.json`을 이용한 인자 전달 디버깅까지 한 번에 정리한 내용이다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 VS Code, rust-analyzer, CodeLLDB 문서를 확인했다.
+- 작성일: 2026-04-08
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, VS Code, `rust-analyzer`, `CodeLLDB`, Windows 예시 경로
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서와 원저자 저장소만 사용했다.
-- 재현 환경: Cargo 프로젝트, VS Code, `rust-analyzer`, `CodeLLDB`, Windows 예시 경로 기준이다.
-- 의견: 이 글은 여러 디버깅 조합 중에서도 입문자가 흐름을 이해하기 쉬운 `rust-analyzer + CodeLLDB` 구성을 중심으로 정리한다.
+- 비고: 이 글은 여러 디버깅 조합 중에서도 입문자가 흐름을 이해하기 쉬운 `rust-analyzer + CodeLLDB` 구성을 중심으로 정리한다.
 
 ## 먼저 알아둘 점
 
@@ -189,11 +195,15 @@ fn main() {
 
 ## 인자 전달 결과 확인
 
-설정을 저장한 뒤 다시 디버깅을 실행하면 출력 결과에서 인자가 정상적으로 들어온 것을 확인할 수 있다.
+설정을 저장한 뒤 다시 디버깅을 실행하면 출력 결과에서 인자가 정상적으로 들어온 것을 확인할 수 있다. 실행 파일 경로는 환경에 따라 달라지므로 아래 예시에서는 자리표시자로 적었다.
 
-![Args output]({{ '/images/rust_02/%EC%9D%B8%EC%9E%90%EC%A0%84%EB%8B%AC%20%ED%99%95%EC%9D%B8.png' | relative_url }})
+```text
+args[0] = <실행 파일 경로>
+args[1] = abcd
+args[2] = efgh
+```
 
-예시 화면처럼 `args[0]`에는 실행 파일 경로가 출력되고, `args[1] = abcd`, `args[2] = efgh`가 보이면 `launch.json`의 `args` 설정이 정상적으로 적용된 것이다.
+예시 출력처럼 `args[0]`에는 실행 파일 경로가 출력되고, `args[1] = abcd`, `args[2] = efgh`가 보이면 `launch.json`의 `args` 설정이 정상적으로 적용된 것이다.
 
 ## 정리
 

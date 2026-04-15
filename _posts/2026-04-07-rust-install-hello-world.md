@@ -1,5 +1,6 @@
 ---
 layout: single
+description: "Windows와 VS Code 기준으로 Rust를 설치하고 Hello World를 실행하는 입문 가이드."
 title: "Rust 01. \uC124\uCE58\uC640 Hello World \uC2E4\uD589\uD558\uAE30"
 lang: ko
 translation_key: rust-install-hello-world
@@ -14,14 +15,19 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust를 처음 시작할 때는 컴파일러만 따로 설치하기보다 공식 설치 도구인 `rustup`으로 한 번에 설치하는 방법이 가장 편하다. 이 글은 Windows와 VS Code 기준으로 Rust를 설치하고, `Hello, world!`를 출력하는 가장 기본적인 흐름을 정리한 내용이다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust 공식 설치 페이지, `rustup` 문서, Rust Book, VS Code 공식 문서를 확인했다.
+- 작성일: 2026-04-07
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Windows PowerShell, VS Code, `rustup`, `rustc`, `cargo`
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Windows PowerShell, VS Code, `rustup`, `rustc`, `cargo`.
-- 주의: 버전 번호와 설치 화면은 자주 바뀌므로, 설치 시점의 실제 출력은 직접 확인해야 한다.
+- 비고: 버전 번호와 설치 화면은 자주 바뀌므로, 설치 시점의 실제 출력은 직접 확인해야 한다.
 
 
 ## Rust 설치 도구 사이트 위치
@@ -51,9 +57,10 @@ cargo --version
 
 설치가 정상적으로 끝났다면 아래처럼 버전 정보가 출력된다. 버전 번호는 설치 시점에 따라 달라질 수 있다.
 
-![rustc 버전 확인]({{ '/images/rust_01/rustc.png' | relative_url }})
-
-![cargo 버전 확인]({{ '/images/rust_01/cargo.png' | relative_url }})
+```text
+rustc 1.94.0 (4a4ef493e 2026-03-02)
+cargo 1.94.0 (85eff7c80 2026-01-15)
+```
 
 ## VS Code에서 Rust로 Hello World 출력하기
 

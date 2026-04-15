@@ -15,16 +15,21 @@ sidebar:
 search: true
 ---
 
+## 요약
+
 Rust 기본 문법을 익힌 뒤 실제 코드를 쓰기 시작하면 가장 자주 만나는 타입은 `Vec`, `String`, `&str`, `HashMap`이다. 이 글은 이 네 가지가 각각 어떤 역할을 하는지, 그리고 owned data와 borrowed data가 실제 코드에서 어떻게 함께 등장하는지를 초급자 기준으로 정리한다.
 
 결론부터 말하면 여러 값을 순서대로 담을 때는 `Vec`, 수정 가능한 소유 문자열은 `String`, 빌려 읽는 문자열은 `&str`, 키-값 저장은 `HashMap`을 쓰면 된다. 이 감각이 잡히면 다음 단계인 file I/O, CLI 입력 처리, serde, 작은 CLI 프로젝트로 넘어갈 때 훨씬 덜 막힌다.
 
-## 검증 기준과 재현 범위
+## 문서 정보
 
-- 시점: 2026-04-15 기준 Rust Book과 Rust 표준 라이브러리 공식 문서를 확인했다.
+- 작성일: 2026-04-15
+- 검증 기준일: 2026-04-15
+- 문서 성격: tutorial
+- 테스트 환경: Cargo 프로젝트, Windows PowerShell 예시 명령, `src/main.rs`
+- 테스트 버전: 미고정
 - 출처 등급: 공식 문서만 사용했다.
-- 재현 환경: Cargo 프로젝트, Windows PowerShell 예시 명령, `src/main.rs` 기준이다.
-- 의견: 이번 글은 초급자 기준으로 가장 자주 쓰는 패턴만 다루고, `entry()` API 심화나 UTF-8 내부 표현 심화는 일부러 넓히지 않았다.
+- 비고: 이번 글은 초급자 기준으로 가장 자주 쓰는 패턴만 다루고, `entry()` API 심화나 UTF-8 내부 표현 심화는 일부러 넓히지 않았다.
 
 ## 실습 프로젝트 만들기
 
@@ -80,7 +85,14 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-![Vec 예제에서 길이, 첫 원소, 범위 밖 조회, 반복 출력이 보이는 콘솔 결과]({{ '/images/rust_08/vec 예제결과.png' | relative_url }})
+```text
+len = 3
+scores[0] = 10
+index 10 is out of range
+score = 10
+score = 20
+score = 30
+```
 
 여기서 초급자가 먼저 구분해야 할 것은 아래 두 가지다.
 
@@ -120,7 +132,11 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-![String과 &str 예제에서 문자열 리터럴과 소유 문자열 출력 결과가 보이는 콘솔 화면]({{ '/images/rust_08/string과 &str 예제 결과.png' | relative_url }})
+```text
+title = Rust
+title = Rust language
+copied = Rust
+```
 
 이 예제에서 중요한 포인트는 `print_title`이 `&str`를 받기 때문에 string literal도 넣을 수 있고, `String`도 `&owned`처럼 빌려서 넣을 수 있다는 점이다. 초급 단계에서는 "읽기만 하는 함수 인자"를 `&str`로 받는 습관이 가장 실용적이다.
 
@@ -143,7 +159,14 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-![문자열 슬라이스와 split_whitespace 결과로 첫 단어와 각 단어가 출력된 콘솔 화면]({{ '/images/rust_08/문자열 다루기 예제 결과 1.png' | relative_url }})
+```text
+first_word = rust
+word = rust
+word = makes
+word = systems
+word = programming
+word = safer
+```
 
 이 코드는 아래 흐름으로 읽으면 된다.
 
@@ -164,7 +187,10 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-![한글 문자열에서 바이트 수와 문자 수 차이가 출력된 콘솔 화면]({{ '/images/rust_08/문자열 다루기 예제 결과 2.png' | relative_url }})
+```text
+bytes = 6
+chars = 2
+```
 
 이 예제에서 `len()`은 바이트 수를 보여 준다. 그래서 문자열 처리 초반에는 임의의 바이트 인덱스로 자르기보다 `split_whitespace()`, `lines()`, `chars()` 같은 메서드를 먼저 익히는 편이 훨씬 안전하다.
 
@@ -200,7 +226,12 @@ fn main() {
 
 실행 결과는 아래와 같다.
 
-![HashMap 예제에서 alice 조회와 bob 키 존재 여부, 전체 순회 결과가 보이는 콘솔 화면]({{ '/images/rust_08/hashmap 예제 결과.png' | relative_url }})
+```text
+alice = 95
+contains bob = true
+bob = 88
+alice = 95
+```
 
 주의: `HashMap` 순회 결과의 출력 순서는 보장되지 않으므로 마지막 두 줄의 순서는 실행마다 달라질 수 있다.
 
