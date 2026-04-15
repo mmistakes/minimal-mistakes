@@ -11,7 +11,7 @@ tags: [rust, rustup, cargo, rustc, vscode, windows]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 Rust를 처음 시작할 때는 컴파일러만 따로 설치하기보다 공식 설치 도구인 `rustup`으로 한 번에 설치하는 방법이 가장 편하다. 이 글은 Windows와 VS Code 기준으로 Rust를 설치하고, `Hello, world!`를 출력하는 가장 기본적인 흐름을 정리한 내용이다.

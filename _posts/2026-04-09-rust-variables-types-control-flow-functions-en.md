@@ -11,7 +11,7 @@ tags: [rust, variables, types, control-flow, functions, cargo]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/variables-types-control-flow-and-functions/
 ---
 

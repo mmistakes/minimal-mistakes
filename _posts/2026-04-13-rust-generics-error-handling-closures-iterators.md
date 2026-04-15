@@ -11,7 +11,7 @@ tags: [rust, generics, error-handling, closures, iterators]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 Rust를 조금 더 익숙하게 쓰기 시작하면, 같은 로직을 여러 타입에 재사용하는 방법, 실패를 안전하게 처리하는 방법, 함수를 값처럼 다루는 방법, 그리고 컬렉션 데이터를 깔끔하게 순회하는 방법이 중요해진다. 이때 핵심이 되는 주제가 `generics`, error handling, closure, iterator다.

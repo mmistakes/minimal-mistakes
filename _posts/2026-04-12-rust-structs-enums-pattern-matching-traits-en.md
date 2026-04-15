@@ -11,7 +11,7 @@ tags: [rust, structs, enums, pattern-matching, traits]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/structs-enums-pattern-matching-and-traits/
 ---
 

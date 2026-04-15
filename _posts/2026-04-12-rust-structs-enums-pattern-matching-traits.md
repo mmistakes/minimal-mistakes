@@ -11,7 +11,7 @@ tags: [rust, structs, enums, pattern-matching, traits]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 이전 글에서 ownership, borrowing, lifetime을 정리했다면, 이제는 실제 데이터를 어떻게 모델링하고 공통 동작을 어떻게 표현할지 배울 차례다. Rust에서는 여러 필드를 하나로 묶을 때 `struct`를 사용하고, 여러 경우 중 하나를 표현할 때 `enum`을 사용한다. 그리고 `match`와 `if let`은 이런 값을 안전하게 분기 처리하는 핵심 문법이며, `trait`는 여러 타입이 같은 동작을 공유하도록 만드는 도구다.

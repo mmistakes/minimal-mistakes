@@ -11,7 +11,7 @@ tags: [rust, rust-analyzer, codelldb, vscode, debug, cargo]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/debugging-with-rust-analyzer-and-codelldb/
 ---
 

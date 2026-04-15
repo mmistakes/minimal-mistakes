@@ -11,7 +11,7 @@ tags: [rust, rustup, cargo, rustc, vscode, windows]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/install-rust-and-run-hello-world/
 ---
 

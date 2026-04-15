@@ -11,7 +11,7 @@ tags: [rust, variables, types, control-flow, functions, cargo]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 Rust를 처음 공부할 때 가장 먼저 익혀야 하는 문법은 변수, 타입, 제어흐름, 함수다. 이 4가지를 이해하면 이후에 `struct`, `enum`, `ownership`, `borrow` 같은 개념을 배울 때도 훨씬 수월하다. 이 글에서는 Cargo 프로젝트 하나를 기준으로 각 문법을 하나씩 설명하고, 바로 실행해 볼 수 있는 예제까지 함께 정리한다.

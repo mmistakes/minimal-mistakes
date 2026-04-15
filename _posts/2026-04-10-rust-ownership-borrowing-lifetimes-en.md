@@ -11,7 +11,7 @@ tags: [rust, ownership, borrowing, lifetimes, references]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/ownership-borrowing-and-lifetimes/
 ---
 

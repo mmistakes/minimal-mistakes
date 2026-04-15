@@ -11,7 +11,7 @@ tags: [rust, rust-analyzer, codelldb, vscode, debug, cargo]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 Rust를 VS Code에서 디버깅할 때는 `rust-analyzer`와 `CodeLLDB`를 함께 사용하는 구성이 가장 이해하기 쉽다. 이 글은 기본 디버깅 키 사용법부터 브레이크 포인트, 변수 창, Call Stack 확인 방법, 그리고 `launch.json`을 이용한 인자 전달 디버깅까지 한 번에 정리한 내용이다.

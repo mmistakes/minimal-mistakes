@@ -11,7 +11,7 @@ tags: [rust, ownership, borrowing, lifetimes, references]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 Rust를 배우다 보면 변수나 함수 문법보다 더 자주 듣게 되는 단어가 `ownership`, `borrowing`, `lifetime`이다. 이 개념들은 Rust가 가비지 컬렉터 없이도 메모리 안전성을 지키는 핵심 규칙이다. 처음에는 다소 낯설게 느껴질 수 있지만, `move`, 참조, 스코프라는 3가지만 차근차근 이해하면 흐름이 훨씬 선명해진다.

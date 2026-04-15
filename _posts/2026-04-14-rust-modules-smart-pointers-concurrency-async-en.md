@@ -11,7 +11,7 @@ tags: [rust, modules, smart-pointers, concurrency, async]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/modules-smart-pointers-concurrency-and-async/
 ---
 

@@ -11,7 +11,7 @@ tags: [rust, generics, error-handling, closures, iterators]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 permalink: /en/rust/generics-error-handling-closures-and-iterators/
 ---
 

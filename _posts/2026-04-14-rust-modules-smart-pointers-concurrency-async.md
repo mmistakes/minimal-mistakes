@@ -11,7 +11,7 @@ tags: [rust, modules, smart-pointers, concurrency, async]
 author_profile: false
 sidebar:
   nav: "sections"
-search: false
+search: true
 ---
 
 Rust를 어느 정도 익히고 나면 문법 하나하나보다 "코드를 어떻게 나눌지", "값을 어떻게 안전하게 공유할지", "여러 작업을 동시에 어떻게 처리할지"가 더 중요해진다. 이때 자주 마주치는 주제가 `module`, smart pointer, concurrency, async다.
