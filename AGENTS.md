@@ -209,6 +209,14 @@ sidebar:
 - 기존 한국어 글 외에 Rust 개발 글 2개도 `lang: ko`, `section: development`로 존재
 - 영어 번역 글은 보안 2개, 개발 2개가 별도 포스트로 존재
 
+## handoff 메모
+
+- Rust 시리즈 전체 커리큘럼 handoff는 `HANDOFF_RUST_CURRICULUM.md`에 둔다.
+- 바로 다음 Rust 포스트 1편 제작용 handoff는 `HANDOFF_NEXT_RUST_POST.md`에 둔다.
+- Rust 포스팅 작업을 이어받을 때는 먼저 `HANDOFF_RUST_CURRICULUM.md`로 전체 순서와 공백을 보고, 실제 작성 직전에는 `HANDOFF_NEXT_RUST_POST.md`를 확인하는 순서가 안전하다.
+- 새 Rust 글을 발행했거나, 시리즈 번호/주제/순서를 바꿨다면 handoff 문서도 같이 갱신해야 한다.
+- AGENTS.md에는 handoff의 존재와 위치만 남기고, 개별 글 아웃라인이나 발행 로드맵 같은 세부 계획은 handoff 문서 쪽에 유지하는 편이 낫다.
+
 ## 홈 페이지네이션 메모
 
 - 기본 `jekyll-paginate`는 제거된 상태다.
