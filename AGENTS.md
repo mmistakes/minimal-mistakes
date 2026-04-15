@@ -39,6 +39,11 @@
 - 태그는 `tag:`가 아니라 `tags:`를 사용한다.
 - KOR/ENG 쌍은 `translation_key`로 연결한다.
 - 영어 미러 페이지/포스트에는 `lang: en`을 반드시 넣는다.
+- 새 글 front matter에는 최소한 `title`, `date`, `lang`, `translation_key`, `section`, `tags`를 넣고, 검색 랜딩에 쓸 `description`도 함께 관리한다.
+- 영어 미러 포스트에는 `permalink`를 명시하고, KOR/ENG 쌍의 제목·요약·본문 구조가 크게 어긋나지 않게 맞춘다.
+- 글 제목은 검색 의도가 드러나게 구체적으로 쓰고, 첫 단락 2~3문장 안에 주제·대상·문제·결론을 요약한다.
+- 같은 `topic_key` 시리즈 글은 허브/관련 글 연결이 이어지도록 주제 축을 유지한다.
+- 이미지 alt는 `images`, `image`, `img` 같은 일반 문구를 쓰지 말고 화면 의미가 드러나는 설명형 문구를 쓴다.
 - `POSTS` 사이드바가 필요한 페이지는 `sidebar.nav: "sections"`를 유지한다.
 - Rust 시리즈 번호, 주제, 순서가 바뀌면 관련 handoff 문서도 함께 갱신한다.
 
