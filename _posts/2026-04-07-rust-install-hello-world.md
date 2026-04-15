@@ -26,8 +26,7 @@ Rust를 처음 시작할 때는 컴파일러만 따로 설치하기보다 공식
 
 ## Rust 설치 도구 사이트 위치
 
-Rust 공식 설치 페이지와 `rustup` 사이트는 아래 경로에서 확인할 수 있다.
-근거: Rust 프로젝트는 설치를 공식 설치 페이지와 `rustup` 경로로 안내하고, rustup book은 툴체인 관리 역할을 설명한다. [Rust install page](https://www.rust-lang.org/tools/install), [rustup site](https://rustup.rs/), [rustup book](https://rust-lang.github.io/rustup/)
+Rust 공식 설치 페이지와 `rustup` 사이트는 아래 경로에서 확인할 수 있다. Rust 프로젝트는 설치를 공식 설치 페이지와 `rustup` 경로로 안내하고, rustup book은 툴체인 관리 역할을 설명한다. [Rust install page](https://www.rust-lang.org/tools/install), [rustup site](https://rustup.rs/), [rustup book](https://rust-lang.github.io/rustup/)
 
 - Rust install page: <https://www.rust-lang.org/tools/install>
 - rustup site: <https://rustup.rs/>
@@ -36,8 +35,7 @@ Rust 공식 설치 페이지와 `rustup` 사이트는 아래 경로에서 확인
 
 ## Rust 설치 도구 설치 방법
 
-Windows 기준 설치 순서는 아래와 같다.
-근거: Rust Book의 설치 장과 rustup 문서는 표준 설치 흐름과 설치 후 버전 확인 과정을 안내한다. [Installation](https://doc.rust-lang.org/book/ch01-01-installation.html), [rustup book](https://rust-lang.github.io/rustup/)
+Windows 기준 설치 순서는 아래와 같다. Rust Book의 설치 장과 rustup 문서는 표준 설치 흐름과 설치 후 버전 확인 과정을 안내한다. [Installation](https://doc.rust-lang.org/book/ch01-01-installation.html), [rustup book](https://rust-lang.github.io/rustup/)
 
 1. 위 공식 사이트에 접속한다.
 2. Windows용 `rustup-init.exe`를 다운로드한다.
@@ -59,8 +57,7 @@ cargo --version
 
 ## VS Code에서 Rust로 Hello World 출력하기
 
-VS Code에서 Rust를 작업할 때는 확장 메뉴에서 `rust-analyzer`를 같이 설치해 두면 자동완성, 문법 검사, 오류 표시를 편하게 사용할 수 있다.
-근거: VS Code 공식 Rust 문서는 `rust-analyzer`를 기본 편집 확장으로 안내한다. [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)
+VS Code에서 Rust를 작업할 때는 확장 메뉴에서 `rust-analyzer`를 같이 설치해 두면 자동완성, 문법 검사, 오류 표시를 편하게 사용할 수 있다. VS Code 공식 Rust 문서는 `rust-analyzer`를 기본 편집 확장으로 안내한다. [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)
 
 새 폴더를 하나 만든 뒤 VS Code로 열고, `hello.rs` 파일을 생성한 다음 아래 코드를 작성한다.
 
@@ -74,8 +71,7 @@ fn main() {
 
 ## rustc로 빌드하는 방법
 
-단일 파일을 빠르게 테스트할 때는 `rustc` 명령으로 바로 빌드할 수 있다.
-근거: Rust Book의 `Hello, world!` 장은 단일 파일을 `rustc`로 컴파일하고 실행하는 흐름을 설명한다. [Hello, World!](https://doc.rust-lang.org/book/ch01-02-hello-world.html)
+단일 파일을 빠르게 테스트할 때는 `rustc` 명령으로 바로 빌드할 수 있다. Rust Book의 `Hello, world!` 장은 단일 파일을 `rustc`로 컴파일하고 실행하는 흐름을 설명한다. [Hello, World!](https://doc.rust-lang.org/book/ch01-02-hello-world.html)
 
 먼저 `hello.rs` 파일에 아래 코드를 저장한다.
 
@@ -105,8 +101,7 @@ Hello, world!
 
 ## cargo로 빌드하는 방법
 
-실제 프로젝트는 보통 `cargo`를 사용해 생성하고 관리한다. `cargo`는 빌드뿐 아니라 실행, 의존성 관리, 프로젝트 구조 생성까지 함께 처리해 준다.
-근거: Rust Book은 실제 프로젝트 흐름을 `cargo new`, `cargo build`, `cargo run` 기준으로 설명한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+실제 프로젝트는 보통 `cargo`를 사용해 생성하고 관리한다. `cargo`는 빌드뿐 아니라 실행, 의존성 관리, 프로젝트 구조 생성까지 함께 처리해 준다. Rust Book은 실제 프로젝트 흐름을 `cargo new`, `cargo build`, `cargo run` 기준으로 설명한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 먼저 새 프로젝트를 생성한다.
 

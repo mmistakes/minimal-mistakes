@@ -28,28 +28,28 @@ The result is preserved, but no one knows why the system acted that way. In harn
 ## Result Logs and the Decision-Relevant Layer of Trace
 
 Result logs usually record what happened. They show whether tests passed, which files changed, which commands were run, and what the final artifact looked like. That is useful and necessary.
-Documented fact: OpenAI's Agents SDK guide explicitly talks about keeping a “full trace of what happened,” and the trace grading guide treats traces as evaluation inputs. Source: [Agents SDK](https://developers.openai.com/api/docs/guides/agents-sdk), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading)
+Documented fact: OpenAI's Agents SDK guide explicitly talks about keeping a “full trace of what happened,” and the trace grading guide treats traces as evaluation inputs([Agents SDK](https://developers.openai.com/api/docs/guides/agents-sdk), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading))
 
 What I mean here by the decision-relevant layer of trace is not a formal vendor term, but a descriptive way to point at the parts of a trace that preserve decision context: why the platform team was chosen instead of the auth team, why a certain analysis tool was used instead of a simpler one, why a sub-agent was introduced, or why a handoff happened at that specific point. Storing the result and preserving that decision context may look similar, but they serve different purposes.
 
 ## What Goes Wrong When Trace Is Missing
 
 When trace is weak, teams are forced to guess from the output alone. Imagine a case where the final code exists, but the work was routed to the wrong owner. Looking at the result may tell you who ended up touching the code, but not why that routing decision happened. That means the next fix often becomes guesswork rather than a real improvement to the harness.
-Interpretation: this section explains the operational problem of reconstructing failures from outputs alone. The factual anchor is that trace is meant to carry more than the final artifact, including intermediate decisions and tool use. Source: [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading)
+Interpretation: this section explains the operational problem of reconstructing failures from outputs alone. The factual anchor is that trace is meant to carry more than the final artifact, including intermediate decisions and tool use([Trace grading](https://developers.openai.com/api/docs/guides/trace-grading))
 
 Tool choice works the same way. An execution log may show which tool was used, but not why it was chosen. Without that reason, the same poor choice can repeat while the harness team still lacks a clear place to intervene. Handoff failure is similar. The result may show that information was missing, but only trace can show which step failed to pass it along.
 
 ## What Kinds of Reasoning Should Be Preserved?
 
 This does not mean recording every thought in exhaustive detail. It means preserving the minimum reasoning needed for improvement. At a minimum, it helps to capture why an owner was selected, why a tool was chosen, whether a sub-agent was used and why, when the handoff happened, and whether scope was narrowed or expanded.
-Interpretation: the specific minimum fields listed here are my recommendation. The official direction behind them is that trace grading evaluates reasoning process and tool path, not just the final answer. Source: [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Subagents](https://developers.openai.com/codex/subagents)
+Interpretation: the specific minimum fields listed here are my recommendation. The official direction behind them is that trace grading evaluates reasoning process and tool path, not just the final answer([Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Subagents](https://developers.openai.com/codex/subagents))
 
 With that kind of trace, teams can later see decisions like "this change touches both `payments/` and `docs/payments.md`, so the payments owner should handle it" or "a sub-agent was used not for parallelism, but because a distinct domain context was required." At that point, trace stops being a debugging note and starts becoming harness-improvement data.
 
 ## How Trace Connects to Eval
 
 Trace is the raw material for eval. If a wrong-owner routing eval fails, trace helps distinguish whether the issue came from a bad ownership decision, stale ownership mapping, or a missing routing rule. Tool-choice eval works the same way. Looking only at the output makes it hard to tell the difference between a lucky success and a well-justified success. Trace makes that difference visible.
-Documented fact: OpenAI officially documents trace grading as an evaluation technique. Source: [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)
+Documented fact: OpenAI officially documents trace grading as an evaluation technique([Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices))
 
 Imagine a task that ended successfully, but the trace shows that a sub-agent was unnecessary, handoff leaked information twice, and documentation updates were delayed. The product result may still be acceptable, but the orchestration quality was weak. Trace is what reveals that gap.
 

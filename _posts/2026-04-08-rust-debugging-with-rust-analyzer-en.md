@@ -26,9 +26,8 @@ When debugging Rust in VS Code, one of the most practical setups is to use `rust
 
 ## What to Know First
 
-The approach in this post assumes you are working with a Cargo project created with `cargo new project-name`.
+The approach in this post assumes you are working with a Cargo project created with `cargo new project-name`. The official VS Code Rust guide describes the debugging workflow around Cargo projects and `rust-analyzer` ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)).
 
-Source: the official VS Code Rust guide describes the debugging workflow around Cargo projects and `rust-analyzer` ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)).
 
 For example:
 
@@ -42,8 +41,7 @@ If you only compile a single file like `rustc hello.rs`, the `rust-analyzer` and
 
 ## Install rust-analyzer
 
-Install the `rust-analyzer` extension from the VS Code extensions panel.
-Source: the official VS Code Rust guide recommends installing `rust-analyzer` as the default Rust extension, and the rust-analyzer book is the primary upstream reference for the language server itself ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust); [rust-analyzer book](https://rust-analyzer.github.io/book/)).
+Install the `rust-analyzer` extension from the VS Code extensions panel. The official VS Code Rust guide recommends installing `rust-analyzer` as the default Rust extension, and the rust-analyzer book is the primary upstream reference for the language server itself ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust); [rust-analyzer book](https://rust-analyzer.github.io/book/)).
 
 ![rust-analyzer]({{ '/images/rust_02/rust-analyzer.png' | relative_url }})
 
@@ -51,8 +49,7 @@ Direct observation: in the author's local environment, opening a Cargo project i
 
 ![Run Debug]({{ '/images/rust_02/run_debug_%EB%B2%84%ED%8A%BC.png' | relative_url }})
 
-Click `Debug` there to enter debug mode right away.
-Source: the official VS Code Rust guide documents the same flow through the `rust-analyzer` extension, including the `Run | Debug` CodeLens and the `Rust Analyzer: Debug` command ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)).
+Click `Debug` there to enter debug mode right away. The official VS Code Rust guide documents the same flow through the `rust-analyzer` extension, including the `Run | Debug` CodeLens and the `Rust Analyzer: Debug` command ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)).
 
 ## Install CodeLLDB
 
@@ -61,8 +58,7 @@ Opinion: this post keeps using `CodeLLDB` even in the Windows example so the wal
 
 ![CodeLLDB install]({{ '/images/rust_02/codeLLDB%EC%84%A4%EC%B9%98.png' | relative_url }})
 
-`CodeLLDB` is an LLDB-based debugger extension commonly used for native languages such as Rust in VS Code.
-Source: as of April 15, 2026, the official VS Code Rust guide points Windows users to the Microsoft C++ extension first and macOS/Linux users to `CodeLLDB`, while the original CodeLLDB repository is the upstream reference for the extension itself ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust); [CodeLLDB repository](https://github.com/vadimcn/codelldb)).
+`CodeLLDB` is an LLDB-based debugger extension commonly used for native languages such as Rust in VS Code. As of April 15, 2026, the official VS Code Rust guide points Windows users to the Microsoft C++ extension first and macOS/Linux users to `CodeLLDB`, while the original CodeLLDB repository is the upstream reference for the extension itself ([Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust); [CodeLLDB repository](https://github.com/vadimcn/codelldb)).
 
 ## Open Debug Mode with Ctrl+Shift+D
 
@@ -78,8 +74,7 @@ Click that link and select `CodeLLDB` from the debugger list.
 
 ## What Is launch.json?
 
-`launch.json` is the configuration file that tells VS Code how to start debugging. It defines which debugger to use, which executable to launch, which working directory to use, and what arguments should be passed to the program.
-Source: the official VS Code debug configuration guide describes `.vscode/launch.json` as the place where debugger configuration, executable path, working directory, and arguments are defined ([Visual Studio Code debug configuration](https://code.visualstudio.com/docs/debugtest/debugging-configuration)).
+`launch.json` is the configuration file that tells VS Code how to start debugging. It defines which debugger to use, which executable to launch, which working directory to use, and what arguments should be passed to the program. The official VS Code debug configuration guide describes `.vscode/launch.json` as the place where debugger configuration, executable path, working directory, and arguments are defined ([Visual Studio Code debug configuration](https://code.visualstudio.com/docs/debugtest/debugging-configuration)).
 
 It is usually stored at:
 
@@ -129,8 +124,7 @@ When you are just starting, these four keys are enough to understand the main fl
 - `F10`: Step over one line at a time
 - `F11`: Step one line at a time, but enter a function if one is called
 
-A simple pattern is to place a breakpoint with `F9`, start with `F5`, and then use `F10` and `F11` to inspect the flow.
-Source: those keys follow the default VS Code debugging shortcuts ([Debug code with Visual Studio Code](https://code.visualstudio.com/docs/debugtest/debugging)).
+A simple pattern is to place a breakpoint with `F9`, start with `F5`, and then use `F10` and `F11` to inspect the flow. Those keys follow the default VS Code debugging shortcuts ([Debug code with Visual Studio Code](https://code.visualstudio.com/docs/debugtest/debugging)).
 
 ## Setting a Breakpoint
 

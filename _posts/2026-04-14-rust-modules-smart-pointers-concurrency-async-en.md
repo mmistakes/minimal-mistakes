@@ -29,8 +29,7 @@ This post explains those four ideas at a beginner-friendly level. A module helps
 
 ## Create a Practice Project
 
-Create a new Cargo project like this and run the examples in `src/main.rs`.
-Source: the Rust Book beginner workflow assumes a `cargo new` project structure. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+Create a new Cargo project like this and run the examples in `src/main.rs`. The Rust Book beginner workflow assumes a `cargo new` project structure. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-modules-concurrency
@@ -46,8 +45,7 @@ cargo run
 
 ## Modules: Organizing Code by Meaning
 
-In Rust, a module is a way to split code into logical units and access them through paths. In a tiny example, everything can live in one file, but as code grows, `mod`, `pub`, and path usage become much more important.
-Source: chapter 7 of the Rust Book explains packages, crates, modules, and paths as the core structure tools. [Managing Growing Projects with Packages, Crates, and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)
+In Rust, a module is a way to split code into logical units and access them through paths. In a tiny example, everything can live in one file, but as code grows, `mod`, `pub`, and path usage become much more important. Chapter 7 of the Rust Book explains packages, crates, modules, and paths as the core structure tools. [Managing Growing Projects with Packages, Crates, and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)
 
 The simplest example looks like this.
 
@@ -98,13 +96,11 @@ As a project grows, modules stop feeling like a small syntax feature and start b
 
 ## Smart Pointers: More Precise Value Management
 
-Basic references and ownership rules already solve many problems in Rust, but more advanced situations often require smart pointers. A smart pointer is not just an address. It is a type that carries extra behavior and metadata around that value.
-Source: chapter 15 of the Rust Book explains smart pointers as types with extra metadata and behavior beyond ordinary references. [Smart Pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)
+Basic references and ownership rules already solve many problems in Rust, but more advanced situations often require smart pointers. A smart pointer is not just an address. It is a type that carries extra behavior and metadata around that value. Chapter 15 of the Rust Book explains smart pointers as types with extra metadata and behavior beyond ordinary references. [Smart Pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)
 
 ### Box<T>
 
-`Box<T>` is the most basic smart pointer for storing a value on the heap.
-Source: the Rust Book presents `Box<T>` as the basic tool for heap allocation and recursive-type patterns. [Using Box<T> to Point to Data on the Heap](https://doc.rust-lang.org/book/ch15-01-box.html)
+`Box<T>` is the most basic smart pointer for storing a value on the heap. The Rust Book presents `Box<T>` as the basic tool for heap allocation and recursive-type patterns. [Using Box<T> to Point to Data on the Heap](https://doc.rust-lang.org/book/ch15-01-box.html)
 
 ```rust
 fn main() {
@@ -117,8 +113,7 @@ This looks simple, but the important detail is that the value lives on the heap 
 
 ### Rc<T>
 
-`Rc<T>` allows shared ownership of a value in a single-threaded context.
-Source: the Rust Book explains `Rc<T>` as the single-threaded multiple-ownership smart pointer. [Rc<T>, the Reference Counted Smart Pointer](https://doc.rust-lang.org/book/ch15-04-rc.html)
+`Rc<T>` allows shared ownership of a value in a single-threaded context. The Rust Book explains `Rc<T>` as the single-threaded multiple-ownership smart pointer. [Rc<T>, the Reference Counted Smart Pointer](https://doc.rust-lang.org/book/ch15-04-rc.html)
 
 ```rust
 use std::rc::Rc;
@@ -139,8 +134,7 @@ The name `clone()` can make this look like a deep data copy, but `Rc::clone` doe
 
 ### RefCell<T>
 
-`RefCell<T>` is used for the interior mutability pattern, where you want to change a value even when the outer binding itself is not declared as mutable.
-Source: the Rust Book explains `RefCell<T>` through interior mutability and runtime borrow checking. [RefCell<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
+`RefCell<T>` is used for the interior mutability pattern, where you want to change a value even when the outer binding itself is not declared as mutable. The Rust Book explains `RefCell<T>` through interior mutability and runtime borrow checking. [RefCell<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
 
 ```rust
 use std::cell::RefCell;
@@ -158,8 +152,7 @@ Normally, many borrow rules are checked at compile time. `RefCell<T>` shifts som
 
 ## Concurrency: Handling Multiple Tasks at Once
 
-Rust's concurrency model is especially strong because of its safety guarantees. Even when you create threads, Rust tries hard to stop unsafe sharing and data races before they happen.
-Source: chapter 16 of the Rust Book covers threads, message passing, and shared-state concurrency. [Fearless Concurrency](https://doc.rust-lang.org/book/ch16-00-concurrency.html)
+Rust's concurrency model is especially strong because of its safety guarantees. Even when you create threads, Rust tries hard to stop unsafe sharing and data races before they happen. Chapter 16 of the Rust Book covers threads, message passing, and shared-state concurrency. [Fearless Concurrency](https://doc.rust-lang.org/book/ch16-00-concurrency.html)
 
 The most basic example is creating a thread.
 
@@ -244,8 +237,7 @@ Here, `Arc<T>` provides shared ownership across multiple threads, and `Mutex<T>`
 
 ## Async: Doing Useful Work While Waiting
 
-If concurrency is the broad idea of handling multiple tasks, async is especially powerful for tasks that spend a lot of time waiting, such as network requests or file I/O. The key ideas are `async` and `await`.
-Source: the Async Book explains async and await in terms of cooperative concurrency and futures. [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
+If concurrency is the broad idea of handling multiple tasks, async is especially powerful for tasks that spend a lot of time waiting, such as network requests or file I/O. The key ideas are `async` and `await`. The Async Book explains async and await in terms of cooperative concurrency and futures. [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
 
 Async examples usually require a runtime. One of the most common beginner-friendly setups uses Tokio. In a fresh Cargo project, you need to add Tokio to `Cargo.toml` before the examples below will compile.
 

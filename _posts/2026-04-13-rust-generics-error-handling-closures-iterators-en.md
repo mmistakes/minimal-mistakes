@@ -29,8 +29,7 @@ This post explains those four topics at a beginner-friendly level. Each one may 
 
 ## Create a Practice Project
 
-Create a new Cargo project like this and run the examples in `src/main.rs`.
-Source: the Rust Book beginner examples assume a `cargo new` workflow. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+Create a new Cargo project like this and run the examples in `src/main.rs`. The Rust Book beginner examples assume a `cargo new` workflow. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-generics-errors-closures
@@ -46,8 +45,7 @@ cargo run
 
 ## Generics: Generalizing Over Types
 
-Generics let you reuse the same logic across multiple types. For example, a function that finds the largest value can work for an array of `i32` values and also for an array of `char` values.
-Source: the Rust Book introduces generic type parameters as the basic way to remove repetition and generalize code over types. [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+Generics let you reuse the same logic across multiple types. For example, a function that finds the largest value can work for an array of `i32` values and also for an array of `char` values. The Rust Book introduces generic type parameters as the basic way to remove repetition and generalize code over types. [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
 
 ```rust
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
@@ -102,8 +100,7 @@ The output looks like this.
 
 ## Error Handling: Result and the ? Operator
 
-Rust does not hide the possibility of failure. Recoverable errors are usually represented with `Result<T, E>`, where success is `Ok` and failure is `Err`.
-Source: the Rust Book explains recoverable errors primarily through `Result<T, E>` and the `?` operator. [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+Rust does not hide the possibility of failure. Recoverable errors are usually represented with `Result<T, E>`, where success is `Ok` and failure is `Err`. The Rust Book explains recoverable errors primarily through `Result<T, E>` and the `?` operator. [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
 
 ```rust
 fn safe_divide(a: f64, b: f64) -> Result<f64, String> {
@@ -159,8 +156,7 @@ If `?` sees an `Err`, it returns that error immediately to the outer function. I
 
 ## Closures: Anonymous Functions
 
-A closure is a function without a name that you can define inline and store in a variable. It is commonly used for short logic or when you want to capture values from the surrounding environment.
-Source: the Rust Book describes closures as anonymous functions that can capture environment values. [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
+A closure is a function without a name that you can define inline and store in a variable. It is commonly used for short logic or when you want to capture values from the surrounding environment. The Rust Book describes closures as anonymous functions that can capture environment values. [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
 
 ```rust
 fn main() {
@@ -194,8 +190,7 @@ At the beginner level, it is enough to think of a closure as a short function yo
 
 ## Iterators: Flexible Collection Processing
 
-An iterator is an abstraction for pulling values out one by one. In Rust, iterators appear not only with `for` loops but also with method chains such as `map`, `filter`, `sum`, and `collect`. An important detail is that adapters like `map` and `filter` are lazy: the work is actually performed only when the iterator is consumed by something like `sum`, `collect`, or a `for` loop.
-Source: the Rust Book explains iterators as Rust's composable, lazy iteration interface. [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
+An iterator is an abstraction for pulling values out one by one. In Rust, iterators appear not only with `for` loops but also with method chains such as `map`, `filter`, `sum`, and `collect`. An important detail is that adapters like `map` and `filter` are lazy: the work is actually performed only when the iterator is consumed by something like `sum`, `collect`, or a `for` loop. The Rust Book explains iterators as Rust's composable, lazy iteration interface. [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
 
 ```rust
 fn main() {

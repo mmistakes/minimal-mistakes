@@ -28,8 +28,7 @@ Rust를 조금 더 익숙하게 쓰기 시작하면, 같은 로직을 여러 타
 
 ## 실습 프로젝트 만들기
 
-아래처럼 새 Cargo 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다.
-근거: Rust Book의 입문 예제는 `cargo new` 기반 실습 흐름을 전제로 한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+아래처럼 새 Cargo 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다. Rust Book의 입문 예제는 `cargo new` 기반 실습 흐름을 전제로 한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-generics-errors-closures
@@ -45,8 +44,7 @@ cargo run
 
 ## Generics: 타입을 일반화하기
 
-generic은 같은 로직을 여러 타입에 재사용할 수 있게 해 주는 문법이다. 예를 들어 가장 큰 값을 찾는 함수는 `i32` 배열에도, `char` 배열에도 비슷한 방식으로 쓸 수 있다.
-근거: Rust Book은 generic type parameter를 중복 제거와 재사용을 위한 핵심 문법으로 소개한다. [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+generic은 같은 로직을 여러 타입에 재사용할 수 있게 해 주는 문법이다. 예를 들어 가장 큰 값을 찾는 함수는 `i32` 배열에도, `char` 배열에도 비슷한 방식으로 쓸 수 있다. Rust Book은 generic type parameter를 중복 제거와 재사용을 위한 핵심 문법으로 소개한다. [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
 
 ```rust
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
@@ -101,8 +99,7 @@ fn main() {
 
 ## Error Handling: Result와 ? 연산자
 
-Rust는 실패 가능성을 숨기지 않는다. recoverable error는 보통 `Result<T, E>`로 표현하고, 성공이면 `Ok`, 실패면 `Err`를 사용한다.
-근거: Rust Book은 recoverable error를 `Result<T, E>`와 `?` 연산자 중심으로 설명한다. [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+Rust는 실패 가능성을 숨기지 않는다. recoverable error는 보통 `Result<T, E>`로 표현하고, 성공이면 `Ok`, 실패면 `Err`를 사용한다. Rust Book은 recoverable error를 `Result<T, E>`와 `?` 연산자 중심으로 설명한다. [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
 
 ```rust
 fn safe_divide(a: f64, b: f64) -> Result<f64, String> {
@@ -158,8 +155,7 @@ fn main() {
 
 ## Closures: 이름 없는 함수
 
-closure는 이름 없이 바로 정의해서 변수에 담아 둘 수 있는 함수다. 보통 짧은 로직을 전달하거나, 주변 환경의 값을 캡처할 때 자주 쓴다.
-근거: Rust Book은 closure를 환경을 캡처할 수 있는 익명 함수로 설명한다. [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
+closure는 이름 없이 바로 정의해서 변수에 담아 둘 수 있는 함수다. 보통 짧은 로직을 전달하거나, 주변 환경의 값을 캡처할 때 자주 쓴다. Rust Book은 closure를 환경을 캡처할 수 있는 익명 함수로 설명한다. [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
 
 ```rust
 fn main() {
@@ -193,8 +189,7 @@ fn main() {
 
 ## Iterators: 컬렉션을 유연하게 순회하기
 
-iterator는 데이터를 하나씩 꺼내며 처리하는 추상화다. Rust에서는 `for`문뿐 아니라 `map`, `filter`, `sum`, `collect` 같은 메서드 체이닝과 함께 자주 등장한다. 여기서 `map`이나 `filter` 같은 단계는 바로 계산을 끝내는 것이 아니라, `sum`, `collect`, `for`처럼 실제로 소비하는 시점에 평가된다는 점도 중요하다.
-근거: Rust Book은 iterator를 지연 평가와 조합 가능한 순회 인터페이스로 설명한다. [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
+iterator는 데이터를 하나씩 꺼내며 처리하는 추상화다. Rust에서는 `for`문뿐 아니라 `map`, `filter`, `sum`, `collect` 같은 메서드 체이닝과 함께 자주 등장한다. 여기서 `map`이나 `filter` 같은 단계는 바로 계산을 끝내는 것이 아니라, `sum`, `collect`, `for`처럼 실제로 소비하는 시점에 평가된다는 점도 중요하다. Rust Book은 iterator를 지연 평가와 조합 가능한 순회 인터페이스로 설명한다. [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
 
 ```rust
 fn main() {

@@ -29,8 +29,7 @@ The short version is simple: use `Vec` when you want an ordered list of values, 
 
 ## Create a Practice Project
 
-Create a new project like this and run the examples in `src/main.rs`.
-Source: the Rust Book beginner workflow starts from a `cargo new` project. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+Create a new project like this and run the examples in `src/main.rs`. The Rust Book beginner workflow starts from a `cargo new` project. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-collections-basics
@@ -51,15 +50,13 @@ cargo run
 - `&str`: a borrowed string slice
 - `HashMap<K, V>`: a key-value collection
 
-According to the official docs, `String` is a growable UTF-8 string type, while `str` is the most primitive string type and is usually seen in its borrowed form as `&str`.
-Source: [Rust `String` docs](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html)
+According to the official docs, `String` is a growable UTF-8 string type, while `str` is the most primitive string type and is usually seen in its borrowed form as `&str`. [Rust `String` docs](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html)
 
 ## Vec<T>: Storing Values in Order
 
 `Vec<T>` is one of the most common collections in Rust. It is used when you want to keep multiple values of the same type in order, append new values, and iterate over them.
 
-The Rust Book introduces vectors as the standard way to store more than one value of the same type, and the standard library documents `Vec<T>` as Rust's growable array type.
-Source: [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html), [Rust `Vec` docs](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+The Rust Book introduces vectors as the standard way to store more than one value of the same type, and the standard library documents `Vec<T>` as Rust's growable array type. [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html), [Rust `Vec` docs](https://doc.rust-lang.org/std/vec/struct.Vec.html)
 
 ```rust
 fn main() {
@@ -101,8 +98,7 @@ The most common early confusion around Rust strings is the difference between `S
 - `&str` borrows string data
 - a string literal like `"hello"` is usually of type `&'static str`
 
-According to the official docs, `String` owns a heap-allocated UTF-8 buffer, while `str` is the primitive string slice type.
-Source: [Rust `String` docs](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+According to the official docs, `String` owns a heap-allocated UTF-8 buffer, while `str` is the primitive string slice type. [Rust `String` docs](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
 
 ```rust
 fn print_title(title: &str) {
@@ -156,8 +152,7 @@ You can read that code like this:
 - `split_whitespace()` yields each word as `&str`
 - working with strings does not always mean allocating a new `String`
 
-There is one especially important beginner warning: `str::len()` returns bytes, not character count, and string slicing indices must stay on valid UTF-8 boundaries.
-Source: [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+There is one especially important beginner warning: `str::len()` returns bytes, not character count, and string slicing indices must stay on valid UTF-8 boundaries. [Rust `str` docs](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
 
 ```rust
 fn main() {
@@ -178,8 +173,7 @@ That is why beginners are usually better off starting with methods like `split_w
 
 `HashMap<K, V>` is the right tool for patterns like "name -> score", "word -> count", or "setting -> value".
 
-The Rust Book presents hash maps as the standard key-value collection, and the standard library documents `HashMap` as Rust's hash-based key-value map type.
-Source: [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html), [Rust `HashMap` docs](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
+The Rust Book presents hash maps as the standard key-value collection, and the standard library documents `HashMap` as Rust's hash-based key-value map type. [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html), [Rust `HashMap` docs](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
 
 ```rust
 use std::collections::HashMap;

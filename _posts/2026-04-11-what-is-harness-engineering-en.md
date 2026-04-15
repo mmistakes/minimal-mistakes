@@ -51,11 +51,9 @@ That realization mattered because it changed the direction of the work. Instead 
 
 Opinion: looking at Codex and Claude Code side by side makes the concept clearer. The goal of the comparison here is not to rank them, but to surface a shared design principle.
 
-According to the official documentation, Codex treats `AGENTS.md` as an instruction file read before work begins and documents hooks, skills, subagents, sandboxing, and approvals as separate layers of configuration or control.
-Source: [OpenAI Codex AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Skills](https://developers.openai.com/codex/skills), [Subagents](https://developers.openai.com/codex/subagents), [Sandboxing](https://developers.openai.com/codex/concepts/sandboxing), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+According to the official documentation, Codex treats `AGENTS.md` as an instruction file read before work begins and documents hooks, skills, subagents, sandboxing, and approvals as separate layers of configuration or control. [OpenAI Codex AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Skills](https://developers.openai.com/codex/skills), [Subagents](https://developers.openai.com/codex/subagents), [Sandboxing](https://developers.openai.com/codex/concepts/sandboxing), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
 
-According to the official documentation, Claude Code documents memory, settings, hooks, and subagents as independent mechanisms. Its subagent documentation explicitly describes subagents as specialized assistants with their own context window and permissions.
-Source: [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings), [Claude Code hooks](https://code.claude.com/docs/en/hooks), [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+According to the official documentation, Claude Code documents memory, settings, hooks, and subagents as independent mechanisms. Its subagent documentation explicitly describes subagents as specialized assistants with their own context window and permissions. [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings), [Claude Code hooks](https://code.claude.com/docs/en/hooks), [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
 
 My interpretation is that both tools are better understood not as a single prompt file, but as a combination of components that separate context, configuration, automation, and verification.
 

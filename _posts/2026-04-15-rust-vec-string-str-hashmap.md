@@ -28,8 +28,7 @@ Rust 기본 문법을 익힌 뒤 실제 코드를 쓰기 시작하면 가장 자
 
 ## 실습 프로젝트 만들기
 
-아래처럼 새 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다.
-근거: Rust Book은 기본 컬렉션 실습도 `cargo new` 프로젝트 기준으로 진행한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+아래처럼 새 프로젝트를 만든 뒤 `src/main.rs`에서 예제를 하나씩 실행해 보면 된다. Rust Book은 기본 컬렉션 실습도 `cargo new` 프로젝트 기준으로 진행한다. [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
 ```powershell
 cargo new rust-collections-basics
@@ -50,15 +49,13 @@ cargo run
 - `&str`: 문자열을 빌려 보는 string slice
 - `HashMap<K, V>`: 키로 값을 찾는 key-value collection
 
-공식 문서 기준으로 `String`은 UTF-8로 인코딩된 growable string이고, `str`은 가장 기본적인 문자열 타입이며 보통 borrowed form인 `&str`로 사용된다.
-근거: [Rust `String` 문서](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` 문서](https://doc.rust-lang.org/std/primitive.str.html)
+공식 문서 기준으로 `String`은 UTF-8로 인코딩된 growable string이고, `str`은 가장 기본적인 문자열 타입이며 보통 borrowed form인 `&str`로 사용된다. [Rust `String` 문서](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` 문서](https://doc.rust-lang.org/std/primitive.str.html)
 
 ## Vec<T>: 같은 타입 값을 순서대로 담기
 
 `Vec<T>`는 가장 자주 쓰는 컬렉션이다. 여러 값을 순서대로 저장하고, `push`로 값을 추가하고, 반복문으로 순회하는 패턴이 매우 흔하다.
 
-Rust Book도 vector를 "같은 타입 값을 하나 이상 저장하는 방법"으로 설명하고, 표준 라이브러리 문서는 `Vec<T>`를 growable array type으로 제공한다.
-근거: [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html), [Rust `Vec` 문서](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+Rust Book도 vector를 "같은 타입 값을 하나 이상 저장하는 방법"으로 설명하고, 표준 라이브러리 문서는 `Vec<T>`를 growable array type으로 제공한다. [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html), [Rust `Vec` 문서](https://doc.rust-lang.org/std/vec/struct.Vec.html)
 
 ```rust
 fn main() {
@@ -100,8 +97,7 @@ fn main() {
 - `&str`은 문자열을 빌려 본다.
 - 문자열 리터럴 `"hello"`의 타입은 보통 `&'static str`이다.
 
-공식 문서 기준으로 `String`은 내용을 소유하고 heap-allocated buffer에 저장하며, `str`은 primitive string slice 타입이다.
-근거: [Rust `String` 문서](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` 문서](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+공식 문서 기준으로 `String`은 내용을 소유하고 heap-allocated buffer에 저장하며, `str`은 primitive string slice 타입이다. [Rust `String` 문서](https://doc.rust-lang.org/std/string/struct.String.html), [Rust `str` 문서](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
 
 ```rust
 fn print_title(title: &str) {
@@ -155,8 +151,7 @@ fn main() {
 - `split_whitespace()`는 공백 기준으로 잘라서 각 단어를 `&str`로 돌려준다.
 - 즉, 문자열을 다룬다고 해서 매번 새 `String`을 만들어야 하는 것은 아니다.
 
-다만 초급자에게 중요한 주의점도 있다. `str::len()`은 글자 수가 아니라 바이트 수를 반환하고, 문자열 슬라이스 인덱스는 UTF-8 문자 경계를 지켜야 한다.
-근거: [Rust `str` 문서](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+다만 초급자에게 중요한 주의점도 있다. `str::len()`은 글자 수가 아니라 바이트 수를 반환하고, 문자열 슬라이스 인덱스는 UTF-8 문자 경계를 지켜야 한다. [Rust `str` 문서](https://doc.rust-lang.org/std/primitive.str.html), [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
 
 ```rust
 fn main() {
@@ -177,8 +172,7 @@ fn main() {
 
 `HashMap<K, V>`는 "이름 -> 점수", "단어 -> 빈도 수", "설정 이름 -> 값"처럼 키로 값을 빠르게 찾고 싶을 때 쓴다.
 
-Rust Book은 hash map을 key-value association 저장 방식으로 설명하고, 표준 라이브러리는 `HashMap`을 일반적인 key-value collection으로 제공한다.
-근거: [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html), [Rust `HashMap` 문서](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
+Rust Book은 hash map을 key-value association 저장 방식으로 설명하고, 표준 라이브러리는 `HashMap`을 일반적인 key-value collection으로 제공한다. [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html), [Rust `HashMap` 문서](https://doc.rust-lang.org/std/collections/struct.HashMap.html)
 
 ```rust
 use std::collections::HashMap;

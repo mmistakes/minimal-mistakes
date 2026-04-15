@@ -27,12 +27,12 @@ search: false
 ## 지금까지의 문제를 한 문장으로 다시 정리하면
 
 문제가 된 것은 문서가 적어서가 아니라, 하네스가 문서에만 머물러 있었다는 점이다. 좋은 원칙이 자연어로만 남아 있으면 놓치기 쉽고, handoff는 흩어지고, eval은 결과물만 보게 되고, trace와 guardrail이 비면 시스템은 겉보기보다 훨씬 불안정해진다.
-해석: 이 절은 시리즈 전체를 한 문장으로 요약하는 필자의 관점이다. 다만 공식 문서들을 보면 instruction file, hooks, eval, trace, approvals가 실제로 분리된 운영 계층으로 존재한다. 근거: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
+해석: 이 절은 시리즈 전체를 한 문장으로 요약하는 필자의 관점이다. 다만 공식 문서들을 보면 instruction file, hooks, eval, trace, approvals가 실제로 분리된 운영 계층으로 존재한다([OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions))
 
 ## 전환의 핵심 원칙
 
 전환의 방향은 복잡하지 않다. 문서에 몰려 있던 역할을 여러 층으로 다시 나누면 된다.
-문서로 확인 가능한 사실: 공식 문서에는 이미 instruction, automation/hooks, evaluation, trace, approval/permission이 분리된 계층으로 등장한다. 근거: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions)
+문서로 확인 가능한 사실: 공식 문서에는 이미 instruction, automation/hooks, evaluation, trace, approval/permission이 분리된 계층으로 등장한다([OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security), [Claude hooks](https://code.claude.com/docs/en/hooks), [Claude permissions](https://code.claude.com/docs/en/permissions))
 해석: 이 글의 전환 원칙은 그 계층들을 운영 구조로 재배치하는 필자의 권고다.
 
 1. 프로젝트 지침 파일은 entrypoint로 경량화한다.
@@ -62,7 +62,7 @@ search: false
 ## 작은 프로젝트에서는 어떻게 시작할 수 있는가
 
 작은 프로젝트라면 더 단순하게 시작해도 된다. 예를 들어 4주 전환안은 아래처럼 잡을 수 있다.
-해석: 이 절의 4주 계획은 필자의 제안이다. 다만 출발점으로 instruction, hooks, eval, trace, approvals 같은 분리된 계층을 확인할 수 있다는 점은 공식 문서로 뒷받침된다. 근거: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+해석: 이 절의 4주 계획은 필자의 제안이다. 다만 출발점으로 instruction, hooks, eval, trace, approvals 같은 분리된 계층을 확인할 수 있다는 점은 공식 문서로 뒷받침된다([OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Evaluation best practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices), [Trace grading](https://developers.openai.com/api/docs/guides/trace-grading), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security))
 
 1. 1주차: 지침 파일을 반으로 줄이고, 세부 문서를 별도 폴더로 뺀다.
 2. 2주차: handoff schema 하나와 docs freshness check 하나를 도입한다.

@@ -50,11 +50,9 @@ search: false
 
 의견: 이 지점에서 Codex와 Claude Code를 함께 보면 개념이 더 또렷해진다. 이 비교의 목적은 우열 평가가 아니라 공통 설계 원리를 드러내는 데 있다.
 
-공식 문서 기준으로 Codex는 `AGENTS.md`를 작업 전에 읽는 지침 파일로 설명하고, hooks, skills, subagents, sandboxing, approvals를 각각 별도 설정 계층으로 문서화한다.
-근거: [OpenAI Codex AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Skills](https://developers.openai.com/codex/skills), [Subagents](https://developers.openai.com/codex/subagents), [Sandboxing](https://developers.openai.com/codex/concepts/sandboxing), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+공식 문서 기준으로 Codex는 `AGENTS.md`를 작업 전에 읽는 지침 파일로 설명하고, hooks, skills, subagents, sandboxing, approvals를 각각 별도 설정 계층으로 문서화한다. [OpenAI Codex AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Hooks](https://developers.openai.com/codex/hooks), [Skills](https://developers.openai.com/codex/skills), [Subagents](https://developers.openai.com/codex/subagents), [Sandboxing](https://developers.openai.com/codex/concepts/sandboxing), [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
 
-공식 문서 기준으로 Claude Code도 memory, settings, hooks, subagents를 각각 독립된 메커니즘으로 설명한다. 특히 subagent는 별도 context window와 permissions를 가진 specialized assistant로 문서화되어 있다.
-근거: [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings), [Claude Code hooks](https://code.claude.com/docs/en/hooks), [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
+공식 문서 기준으로 Claude Code도 memory, settings, hooks, subagents를 각각 독립된 메커니즘으로 설명한다. 특히 subagent는 별도 context window와 permissions를 가진 specialized assistant로 문서화되어 있다. [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings), [Claude Code hooks](https://code.claude.com/docs/en/hooks), [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
 
 내 해석: 그래서 두 도구 모두 하네스를 단일 프롬프트 파일이 아니라, 문맥, 설정, 자동화, 검증을 나눠 담는 여러 구성 요소의 조합으로 다룬다고 보는 편이 타당하다.
 

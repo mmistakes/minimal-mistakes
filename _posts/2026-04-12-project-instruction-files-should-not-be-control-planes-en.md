@@ -28,7 +28,7 @@ A good instruction file is not a document that tries to contain everything. It i
 ## Why Do Project Instruction Files Matter?
 
 If an AI coding tool is going to work inside a project, it needs project-level expectations and context. Without basic information such as how to read the repository structure, what matters most, and where to find detailed procedures, the agent has to keep guessing. That is why OpenAI describes `AGENTS.md` as a guidance file for exploring a codebase, running tests, and following project conventions, while Anthropic describes `CLAUDE.md` as a file for project-specific persistent instructions. The key point is not the filename. It is the shared role of acting as an entrypoint that conveys project rules and context.
-Documented fact: OpenAI describes `AGENTS.md` as a guidance file for exploring the codebase, running tests, and following project conventions, while Anthropic documents `CLAUDE.md` and memory as project-specific persistent instruction layers. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings)
+Documented fact: OpenAI describes `AGENTS.md` as a guidance file for exploring the codebase, running tests, and following project conventions, while Anthropic documents `CLAUDE.md` and memory as project-specific persistent instruction layers([OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings))
 
 ## Why Do We Want to Put Everything in One File?
 
@@ -52,7 +52,7 @@ What mattered in that experience was not a lesson like "write shorter files." Th
 ## What Should Stay, and What Should Move Out?
 
 What belongs in a project instruction file is usually more limited than people expect.
-Interpretation: the split I recommend here is an operating design choice, not a vendor-prescribed checklist. The documented common ground is that both systems use an entrypoint layer for project-level instructions. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings)
+Interpretation: the split I recommend here is an operating design choice, not a vendor-prescribed checklist. The documented common ground is that both systems use an entrypoint layer for project-level instructions([OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings))
 
 - Core expectations of the repository
 - Basic working principles
@@ -80,7 +80,7 @@ Once responsibilities are split this way, the project instruction file becomes a
 ## The Same Principle Applies to Codex and Claude Code
 
 This is not a tool-specific trick. `AGENTS.md` in Codex and `CLAUDE.md` in Claude Code have different names, but they share the same broad function: they communicate project-level expectations and context. On the Codex side, `AGENTS.md` can be understood as an entrypoint for repository rules and expectations. On the Claude Code side, `CLAUDE.md`, according to the official documentation, can likewise be understood as part of the project's instruction layer.
-Documented fact: both Codex and Claude Code officially expose a project-level instruction layer even though the filenames differ. Source: [OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings)
+Documented fact: both Codex and Claude Code officially expose a project-level instruction layer even though the filenames differ([OpenAI AGENTS.md](https://developers.openai.com/codex/guides/agents-md), [Anthropic memory](https://code.claude.com/docs/en/memory), [Claude Code settings](https://code.claude.com/docs/en/settings))
 
 The point is not that one approach is better than the other. The more useful observation is that both tools can run into similar problems when the project instruction file becomes too dense. Even if the filenames differ, the risk of turning an entrypoint into a de facto `control plane` is a shared operating principle, not a product-specific quirk.
 
