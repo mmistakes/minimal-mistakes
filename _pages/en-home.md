@@ -10,18 +10,13 @@ lang: en
 translation_key: home
 ---
 
-This blog collects practical notes on malware analysis, Rust, AI tooling, and harness engineering in both Korean and English. The site is organized around document malware analysis, Rust learning guides, and operational writing about AI systems.
+<div class="home-intro">
+  <p class="home-intro__lead">This blog covers malware analysis, Rust, AI tooling, and harness engineering. Posts are organized in Korean and English around document malware research, Rust learning guides, and practical writing about AI system operations.</p>
 
-## Key Sections
-
-- [Security Research and Malware Analysis](/en/security/)
-- [Development Notes for Rust and AI Tooling](/en/development/)
-- [Rust Learning Guides](/en/development/rust/)
-- [AI Tooling and Harness Engineering](/en/development/ai/)
-
-## Suggested Starting Points
-
-- [Install Rust and Run Hello World](/en/rust/install-rust-and-run-hello-world/)
-- [Debugging with rust-analyzer and CodeLLDB](/en/rust/debugging-with-rust-analyzer-and-codelldb/)
-- [What Is Harness Engineering?](/en/ai/what-is-harness-engineering/)
-- [Why Multi-Agent Is Not the Default](/en/ai/multi-agent-is-not-the-default/)
+  <h2 class="home-intro__title">Focus Areas</h2>
+  <ul class="home-intro__links">
+    <li><a href="/en/security/">Security Research and Malware Analysis</a></li>
+    <li><a href="/en/development/rust/">Rust Learning Guides</a></li>
+    <li><a href="/en/development/ai/">AI Tooling and Harness Engineering</a></li>
+  </ul>
+</div>

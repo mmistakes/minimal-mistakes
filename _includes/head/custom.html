@@ -4,8 +4,63 @@
 
 <link rel="icon" type="image/png" href="{{ '/assets/images/k4nulA.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/images/k4nulA.png' | relative_url }}">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 
 <style>
+  :root {
+    --site-font-sans: "Pretendard Variable", "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  }
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: var(--site-font-sans);
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .page__title,
+  .archive__item-title,
+  .page__meta,
+  .page__content,
+  .page__content p,
+  .page__content li,
+  .page__content dt,
+  .page__content dd,
+  .sidebar,
+  .nav__title,
+  .toc,
+  .masthead,
+  .pagination,
+  .author__name,
+  .author__bio,
+  .page__related {
+    font-family: var(--site-font-sans);
+  }
+
+  .page__content {
+    line-height: 1.72;
+    word-break: keep-all;
+  }
+
+  .page__content p,
+  .page__content li {
+    color: #eef1f4;
+  }
+
+  .page__content strong,
+  .page__content em {
+    color: #f7f9fb;
+  }
+
   .section-archive__description {
     margin: -0.5rem 0 1.5rem;
     color: #aeb5be;
@@ -89,7 +144,49 @@
     background: #1f4346;
   }
 
+  .home-intro {
+    margin-bottom: 1.75rem;
+  }
+
+  .home-intro__lead {
+    margin-bottom: 1rem;
+    color: #d6d9de;
+  }
+
+  .home-intro__title {
+    margin: 0 0 0.65rem;
+    color: #f2f4f6;
+  }
+
+  .home-intro__links {
+    margin: 0 0 1.5rem 1.1rem;
+    padding: 0;
+  }
+
+  .home-intro__links li {
+    margin-bottom: 0.45rem;
+    color: #d6d9de;
+  }
+
+  .home-intro__links a {
+    color: #8cd1d4;
+    text-decoration: none;
+  }
+
+  .home-intro__links a:visited {
+    color: #8cd1d4;
+  }
+
+  .home-intro__links a:hover {
+    color: #c9f2f4;
+    text-decoration: underline;
+  }
+
   .topic-series-nav {
+    clear: both;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
     margin: 2rem 0 1.5rem;
     padding: 1.25rem;
     border: 1px solid #3d4653;
