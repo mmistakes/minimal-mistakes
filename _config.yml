@@ -171,10 +171,13 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
+  - /docs # ignore internal docs and legacy Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
   - AGENTS.md
   - /project-docs
+  - /templates
+  - /skills
+  - /_posts/AGENTS.md
 keep_files:
   - .git
   - .svn

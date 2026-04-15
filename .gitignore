@@ -37,7 +37,6 @@ _site
 .github/workflows/*
 !.github/workflows/refresh-scheduled-posts.yml
 .travis.yml
-docs/
 test/
 CHANGELOG.md
 screenshot.png
