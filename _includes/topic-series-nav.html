@@ -1,0 +1,73 @@
+{% assign current_lang = page.lang | default: site.locale | slice: 0,2 | default: "ko" %}
+
+{% if page.id and page.topic_key and page.section %}
+  {% assign series_posts = site.posts | where: "lang", current_lang | where: "section", page.section | where: "topic_key", page.topic_key | sort: "date" %}
+  {% if series_posts.size > 1 %}
+    {% assign current_index = nil %}
+    {% assign previous_post = nil %}
+    {% assign next_post = nil %}
+    {% assign topic_archive = site.pages | where: "lang", current_lang | where: "section_key", page.section | where: "topic_key", page.topic_key | first %}
+
+    {% for candidate in series_posts %}
+      {% if candidate.id == page.id %}
+        {% assign current_index = forloop.index0 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if current_index != nil %}
+      {% assign previous_index = current_index | minus: 1 %}
+      {% assign next_index = current_index | plus: 1 %}
+
+      {% for candidate in series_posts %}
+        {% if forloop.index0 == previous_index %}
+          {% assign previous_post = candidate %}
+        {% endif %}
+        {% if forloop.index0 == next_index %}
+          {% assign next_post = candidate %}
+        {% endif %}
+      {% endfor %}
+
+      {% if current_lang == "en" %}
+        {% assign nav_title = "Series Navigation" %}
+        {% assign nav_description = "Follow the same topic in order or jump back to the topic archive." %}
+        {% assign archive_label = "Topic Archive" %}
+        {% assign previous_label = "Previous" %}
+        {% assign next_label = "Next" %}
+      {% else %}
+        {% assign nav_title = "시리즈 탐색" %}
+        {% assign nav_description = "같은 주제의 글을 순서대로 읽거나 주제 아카이브로 이동할 수 있습니다." %}
+        {% assign archive_label = "주제 아카이브" %}
+        {% assign previous_label = "이전 글" %}
+        {% assign next_label = "다음 글" %}
+      {% endif %}
+
+      <nav class="topic-series-nav" aria-label="{{ nav_title }}">
+        <p class="topic-series-nav__eyebrow">{{ nav_title }}</p>
+        <p class="topic-series-nav__description">{{ nav_description }}</p>
+        <div class="topic-series-nav__grid">
+          {% if topic_archive %}
+            <a class="topic-series-nav__card" href="{{ topic_archive.url | relative_url }}">
+              <span class="topic-series-nav__label">{{ archive_label }}</span>
+              <strong class="topic-series-nav__title">{{ topic_archive.title }}</strong>
+            </a>
+          {% endif %}
+
+          {% if previous_post %}
+            <a class="topic-series-nav__card" href="{{ previous_post.url | relative_url }}">
+              <span class="topic-series-nav__label">{{ previous_label }}</span>
+              <strong class="topic-series-nav__title">{{ previous_post.title }}</strong>
+            </a>
+          {% endif %}
+
+          {% if next_post %}
+            <a class="topic-series-nav__card" href="{{ next_post.url | relative_url }}">
+              <span class="topic-series-nav__label">{{ next_label }}</span>
+              <strong class="topic-series-nav__title">{{ next_post.title }}</strong>
+            </a>
+          {% endif %}
+        </div>
+      </nav>
+    {% endif %}
+  {% endif %}
+{% endif %}

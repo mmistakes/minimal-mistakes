@@ -10,11 +10,13 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign teaser_alt = post.header.image_description | default: post.title | markdownify | strip_html | strip_newlines | escape_once %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
+        <img src="{{ teaser | relative_url }}" alt="{{ teaser_alt }}">
       </div>
     {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">

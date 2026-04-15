@@ -8,4 +8,5 @@ sidebar:
 lang: ko
 translation_key: page-search
 robots: "noindex, follow"
+sitemap: false
 ---

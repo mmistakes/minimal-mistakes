@@ -150,6 +150,8 @@
 
 {% if page.robots %}
   <meta name="robots" content="{{ page.robots }}">
+{% else %}
+  <meta name="robots" content="max-image-preview:large">
 {% endif %}
 
 {% if page.translation_key %}

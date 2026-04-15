@@ -89,6 +89,66 @@
     background: #1f4346;
   }
 
+  .topic-series-nav {
+    margin: 2rem 0 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid #3d4653;
+    border-radius: 12px;
+    background: #161c22;
+  }
+
+  .topic-series-nav__eyebrow {
+    margin: 0 0 0.35rem;
+    color: #8f98a3;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .topic-series-nav__description {
+    margin: 0 0 1rem;
+    color: #c7ccd3;
+    font-size: 0.95rem;
+  }
+
+  .topic-series-nav__grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .topic-series-nav__card {
+    display: block;
+    padding: 0.9rem 1rem;
+    border: 1px solid #49515e;
+    border-radius: 10px;
+    background: #1d242c;
+    color: #d6d9de;
+    text-decoration: none;
+  }
+
+  .topic-series-nav__card:hover {
+    border-color: #00adb5;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .topic-series-nav__label {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #8f98a3;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .topic-series-nav__title {
+    display: block;
+    line-height: 1.45;
+  }
+
   @media (max-width: 1023px) {
     .nav__list--sections label {
       display: none;
