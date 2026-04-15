@@ -29,6 +29,8 @@ This post focuses on the relationship between packages and crates, the differenc
 - Document type: tutorial
 - Test environment: Windows 11, PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
+- Source grade: only official documentation is used.
+- Note: this post stays focused on the basic structure of a single Cargo package and intentionally leaves out broader topics such as workspaces and features.
 
 ## Problem Definition
 

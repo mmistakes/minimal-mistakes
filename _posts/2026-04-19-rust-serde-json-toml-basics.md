@@ -28,6 +28,8 @@ search: true
 - 문서 성격: tutorial
 - 테스트 환경: Windows 11, PowerShell, Cargo CLI 예시
 - 테스트 버전: rustc 1.94.0, cargo 1.94.0, serde 1.x, serde_json 1.x, toml 1.x
+- 출처 등급: 공식 문서와 공식 crate 문서를 사용했다.
+- 비고: 이 글은 typed struct 기반의 기본 직렬화·역직렬화 흐름에 집중하며, 커스텀 attribute나 고급 enum tagging 전략은 다루지 않는다.
 
 ## 문제 정의
 

@@ -29,6 +29,8 @@ This post introduces `cargo test`, `#[test]`, `assert_eq!`, `#[cfg(test)]`, inte
 - Document type: tutorial
 - Test environment: Windows 11, PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
+- Source grade: only official documentation is used.
+- Note: this post focuses on the beginner testing workflow and intentionally leaves broader topics such as async testing and property-based testing for separate material.
 
 ## Problem Definition
 

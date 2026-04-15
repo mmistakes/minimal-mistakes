@@ -29,6 +29,8 @@ This post focuses on the simplest pattern: accept a file path from the command l
 - Document type: tutorial
 - Test environment: Windows 11, PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
+- Source grade: only official documentation is used.
+- Note: this post covers only the basic pattern for small UTF-8 text CLI tools and leaves out large-file streaming and advanced argument parsers.
 
 ## Problem Definition
 

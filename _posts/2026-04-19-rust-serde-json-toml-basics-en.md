@@ -29,6 +29,8 @@ This post introduces the most basic pattern for JSON and TOML using `serde`, `se
 - Document type: tutorial
 - Test environment: Windows 11, PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0, serde 1.x, serde_json 1.x, toml 1.x
+- Source grade: official documentation and official crate documentation are used.
+- Note: this post stays with the basic typed struct workflow for serialization and deserialization and does not cover custom attributes or advanced enum tagging strategies.
 
 ## Problem Definition
 
