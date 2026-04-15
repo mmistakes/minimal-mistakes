@@ -24,10 +24,10 @@ This post focuses on the simplest pattern: accept a file path from the command l
 
 ## Document Information
 
-- Created: 2026-04-15
-- Verified on: 2026-04-15
+- Written on: 2026-04-15
+- Verification date: 2026-04-16
 - Document type: tutorial
-- Test environment: Windows 11, PowerShell, Cargo CLI examples
+- Test environment: Windows 11 Pro, Windows PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
 - Source grade: only official documentation is used.
 - Note: this post covers only the basic pattern for small UTF-8 text CLI tools and leaves out large-file streaming and advanced argument parsers.
@@ -43,7 +43,7 @@ It is hard to feel that you have really learned Rust if every example ends at sy
 
 This post stays with the most basic text-file workflow. Large-file streaming, binary data, and advanced argument parsing libraries are intentionally left out.
 
-## Confirmed Facts
+## Verified Facts
 
 - According to the standard library docs, `std::env::args` returns an iterator over the command-line arguments of the current process, and the first item is typically the program path.
   Evidence: [std::env::args](https://doc.rust-lang.org/std/env/fn.args.html)
@@ -92,7 +92,7 @@ The key reading order for that code is:
 
 That structure matters because it connects naturally to testing. Once the actual text-processing logic is separated from file I/O, it can be tested without creating files at all.
 
-## Directly Reproduced Results
+## Directly Confirmed Results
 
 - Directly confirmed result: the Rust toolchain versions available in the current writing environment were:
 

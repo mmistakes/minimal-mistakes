@@ -24,11 +24,11 @@ This post introduces the most basic pattern for JSON and TOML using `serde`, `se
 
 ## Document Information
 
-- Created: 2026-04-15
-- Verified on: 2026-04-15
+- Written on: 2026-04-15
+- Verification date: 2026-04-16
 - Document type: tutorial
-- Test environment: Windows 11, PowerShell, Cargo CLI examples
-- Test version: rustc 1.94.0, cargo 1.94.0, serde 1.x, serde_json 1.x, toml 1.x
+- Test environment: Windows 11 Pro, Windows PowerShell, Cargo CLI examples
+- Test version: rustc 1.94.0, cargo 1.94.0, serde 1.0.228, serde_json 1.0.149, toml 1.1.2+spec-1.1.0
 - Source grade: official documentation and official crate documentation are used.
 - Note: this post stays with the basic typed struct workflow for serialization and deserialization and does not cover custom attributes or advanced enum tagging strategies.
 
@@ -42,7 +42,7 @@ After file I/O and CLI input, the next natural step is external data formats. Be
 
 This post stays with the most basic typed-data conversion flow. It does not cover custom serializers, high-performance streaming parsers, or more advanced enum-tagging strategies.
 
-## Confirmed Facts
+## Verified Facts
 
 - According to the official documentation, Serde is a framework for serializing and deserializing Rust data structures, with `Serialize` and `Deserialize` as its central traits.
   Evidence: [Serde crate docs](https://docs.rs/serde/latest/serde/), [Serde overview](https://serde.rs/)
@@ -114,7 +114,7 @@ debug = true
 
 The important design point is that even when the external format changes, the application can keep using the same internal Rust type. That makes the struct the stable boundary and the file format the replaceable layer.
 
-## Directly Reproduced Results
+## Directly Confirmed Results
 
 - Directly confirmed result: the Rust toolchain versions available in the current writing environment were:
 

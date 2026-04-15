@@ -24,10 +24,12 @@ Rust 시리즈를 따라오며 설치, 디버깅, 기초 문법, ownership, modu
 ## 문서 정보
 
 - 작성일: 2026-04-15
-- 검증 기준일: 2026-04-15
+- 검증 기준일: 2026-04-16
 - 문서 성격: tutorial
-- 테스트 환경: Windows 11, PowerShell, Cargo CLI 예시
+- 테스트 환경: Windows 11 Pro, Windows PowerShell, Cargo CLI 예시
 - 테스트 버전: rustc 1.94.0, cargo 1.94.0
+- 출처 등급: 공식 문서만 사용했다.
+- 비고: 이 글은 표준 라이브러리 기반 mini project 흐름에 집중하며, `clap` 같은 인자 파서나 고급 텍스트 전처리는 범위에서 제외한다.
 
 ## 문제 정의
 
@@ -140,7 +142,7 @@ fn sorts_by_frequency_descending() {
 - `lib.rs`와 `main.rs`: 프로젝트 구조 분리
 - `tests/`: 검증 흐름 추가
 
-## 직접 재현한 결과
+## 직접 확인한 결과
 
 - 직접 확인한 결과: 현재 작성 환경에서 Rust toolchain 버전은 아래와 같았다.
 
@@ -188,7 +190,7 @@ running 2 tests
 test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 ```
 
-- 직접 재현 범위의 한계: 대표 입력 파일 기준의 실행과 테스트는 임시 Cargo 프로젝트에서 확인했지만, 큰 입력 파일, 구두점 처리, stop-word 제거 같은 확장 요구사항까지는 검증하지 않았다.
+- 직접 확인 범위의 한계: 대표 입력 파일 기준의 실행과 테스트는 임시 Cargo 프로젝트에서 확인했지만, 큰 입력 파일, 구두점 처리, stop-word 제거 같은 확장 요구사항까지는 검증하지 않았다.
 
 ## 해석 / 의견
 

@@ -24,10 +24,10 @@ This post introduces `cargo test`, `#[test]`, `assert_eq!`, `#[cfg(test)]`, inte
 
 ## Document Information
 
-- Created: 2026-04-15
-- Verified on: 2026-04-15
+- Written on: 2026-04-15
+- Verification date: 2026-04-16
 - Document type: tutorial
-- Test environment: Windows 11, PowerShell, Cargo CLI examples
+- Test environment: Windows 11 Pro, Windows PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
 - Source grade: only official documentation is used.
 - Note: this post focuses on the beginner testing workflow and intentionally leaves broader topics such as async testing and property-based testing for separate material.
@@ -42,7 +42,7 @@ At the beginner stage, it is easy to think that a successful run means the progr
 
 The goal of this post is to treat testing not as a heavy process, but as the default way to keep small Rust programs safe to change.
 
-## Confirmed Facts
+## Verified Facts
 
 - According to the official Cargo docs, `cargo test` builds and runs the tests for a project.
   Evidence: [cargo-test(1)](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
@@ -111,7 +111,7 @@ fn integration_test_uses_public_api() {
 
 One practical detail is that the package name `rust-testing-basics` is accessed in code as `rust_testing_basics`. This structure also prepares you well for later posts, because once file I/O or CLI logic is added, you can still keep the core logic testable inside `lib.rs`.
 
-## Directly Reproduced Results
+## Directly Confirmed Results
 
 - Directly confirmed result: the Rust toolchain versions available in the current writing environment were:
 

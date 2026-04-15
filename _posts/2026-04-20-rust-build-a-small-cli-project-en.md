@@ -24,11 +24,13 @@ This post uses a small `word counter` CLI as the example and connects project st
 
 ## Document Information
 
-- Created: 2026-04-15
-- Verified on: 2026-04-15
+- Written on: 2026-04-15
+- Verification date: 2026-04-16
 - Document type: tutorial
-- Test environment: Windows 11, PowerShell, Cargo CLI examples
+- Test environment: Windows 11 Pro, Windows PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
+- Source quality: only official documentation is used.
+- Note: this post focuses on a standard-library-based mini project flow and leaves out argument parsers like `clap` and more advanced text preprocessing.
 
 ## Problem Definition
 
@@ -42,7 +44,7 @@ A common problem while learning Rust is this: each concept makes sense on its ow
 
 The goal of this post is not to introduce new syntax, but to connect previously learned pieces into one small CLI project.
 
-## Confirmed Facts
+## Verified Facts
 
 - According to the official Rust Book, a Cargo package can contain both a binary crate and a library crate, which makes it possible to keep reusable logic in the library layer.
   Evidence: [Packages and Crates](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html)
@@ -141,7 +143,7 @@ That example shows how the earlier concepts connect:
 - `lib.rs` and `main.rs`: separate structure and behavior
 - `tests/`: add verification
 
-## Directly Reproduced Results
+## Directly Confirmed Results
 
 - Directly confirmed result: the Rust toolchain versions available in the current writing environment were:
 

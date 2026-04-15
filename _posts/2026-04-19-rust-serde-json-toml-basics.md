@@ -24,10 +24,10 @@ search: true
 ## 문서 정보
 
 - 작성일: 2026-04-15
-- 검증 기준일: 2026-04-15
+- 검증 기준일: 2026-04-16
 - 문서 성격: tutorial
-- 테스트 환경: Windows 11, PowerShell, Cargo CLI 예시
-- 테스트 버전: rustc 1.94.0, cargo 1.94.0, serde 1.x, serde_json 1.x, toml 1.x
+- 테스트 환경: Windows 11 Pro, Windows PowerShell, Cargo CLI 예시
+- 테스트 버전: rustc 1.94.0, cargo 1.94.0, serde 1.0.228, serde_json 1.0.149, toml 1.1.2+spec-1.1.0
 - 출처 등급: 공식 문서와 공식 crate 문서를 사용했다.
 - 비고: 이 글은 typed struct 기반의 기본 직렬화·역직렬화 흐름에 집중하며, 커스텀 attribute나 고급 enum tagging 전략은 다루지 않는다.
 
@@ -113,7 +113,7 @@ debug = true
 
 여기서 핵심은 JSON과 TOML이 달라도 애플리케이션 내부에서는 같은 `AppConfig` 타입을 쓸 수 있다는 점이다. 즉, 외부 포맷이 달라져도 내부 로직은 struct 경계로 안정화할 수 있다.
 
-## 직접 재현한 결과
+## 직접 확인한 결과
 
 - 직접 확인한 결과: 현재 작성 환경에서 Rust toolchain 버전은 아래와 같았다.
 
@@ -145,7 +145,7 @@ port = 8080
 debug = true
 ```
 
-- 직접 재현 범위의 한계: JSON/TOML 기본 변환 예제는 임시 Cargo 프로젝트에서 실행했지만, 중첩 타입, enum tagging, 커스텀 attribute 같은 확장 케이스는 검증하지 않았다.
+- 직접 확인 범위의 한계: JSON/TOML 기본 변환 예제는 임시 Cargo 프로젝트에서 실행했지만, 중첩 타입, enum tagging, 커스텀 attribute 같은 확장 케이스는 검증하지 않았다.
 
 ## 해석 / 의견
 

@@ -24,10 +24,10 @@ This post focuses on the relationship between packages and crates, the differenc
 
 ## Document Information
 
-- Created: 2026-04-15
-- Verified on: 2026-04-15
+- Written on: 2026-04-15
+- Verification date: 2026-04-16
 - Document type: tutorial
-- Test environment: Windows 11, PowerShell, Cargo CLI examples
+- Test environment: Windows 11 Pro, Windows PowerShell, Cargo CLI examples
 - Test version: rustc 1.94.0, cargo 1.94.0
 - Source grade: only official documentation is used.
 - Note: this post stays focused on the basic structure of a single Cargo package and intentionally leaves out broader topics such as workspaces and features.
@@ -42,7 +42,7 @@ After learning basic `module` syntax, beginners often get stuck at the next step
 
 This post stays intentionally narrow. It explains how to read and split one Cargo project, without going into wider topics like workspaces, publishing, features, or path dependencies.
 
-## Confirmed Facts
+## Verified Facts
 
 - According to the official Rust Book, a Cargo package is the unit described by `Cargo.toml`, and a package can contain at most one library crate and any number of binary crates.
   Evidence: [Packages and Crates](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html)
@@ -105,7 +105,7 @@ fn main() {
 
 The important beginner takeaway is that execution starts in `main.rs`, but the real logic does not need to stay there. Once you move reusable code into `lib.rs` and its modules, later topics like testing, file I/O, CLI tools, and small projects become much easier to structure.
 
-## Directly Reproduced Results
+## Directly Confirmed Results
 
 - Directly confirmed result: the Rust toolchain versions available in the current writing environment were:
 
