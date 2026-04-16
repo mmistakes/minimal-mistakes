@@ -20,12 +20,14 @@ layout: single
 ---
 
 ## Research Interests  
-
+- Computer Vision
 
 ---
 
 ## Projects  
-
+- **Veritus 360**- A real-time, streaming financial intelligence platform using Pathway, enabling live
+Customer-360 profiles from transaction and onboarding data
+- **Magnikaru**- A chess engine that uses deep learning-based value function to guide optimal move selection
 
 
 ---
