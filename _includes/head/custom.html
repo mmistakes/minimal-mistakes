@@ -252,6 +252,18 @@
     font-weight: 650;
   }
 
+  .page__content .result-intro-list {
+    margin: 0.35rem 0 0.45rem 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .page__content .result-intro-list li {
+    margin: 0;
+    color: #f6f8fa;
+    font-weight: 700;
+  }
+
   .page__content .result-block {
     position: relative;
     margin: 0.75rem 0 1.5rem;
@@ -327,7 +339,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const paragraphs = document.querySelectorAll(".page__content p");
+    const blocks = document.querySelectorAll(".page__content div.highlighter-rouge, .page__content figure.highlight");
 
     function getResultMeta(text, codeText) {
       const trimmed = text.trim();
@@ -356,7 +368,9 @@
       }
 
       if (
-        /실행 결과|출력 결과|가능한 출력 예시|예시 출력/.test(trimmed) ||
+        /실행 결과|출력 결과|관찰된 결과|관찰 결과|가능한 출력 예시|예시 출력/.test(trimmed) ||
+        lower.includes("observed result") ||
+        lower.includes("observed output") ||
         lower.includes("output looks like this") ||
         lower.includes("one possible output") ||
         lower.includes("confirm that the arguments were passed correctly in the output") ||
@@ -372,26 +386,61 @@
       return null;
     }
 
-    paragraphs.forEach(function (paragraph) {
-      const next = paragraph.nextElementSibling;
-      if (!next || !next.matches("div.highlighter-rouge, figure.highlight")) {
+    function getLeadNode(block) {
+      const prev = block.previousElementSibling;
+      if (!prev) {
+        return null;
+      }
+
+      if (prev.matches("p")) {
+        return {
+          node: prev,
+          text: prev.textContent || "",
+          type: "paragraph",
+        };
+      }
+
+      if (
+        prev.matches("ul") &&
+        prev.children.length === 1 &&
+        prev.firstElementChild &&
+        prev.firstElementChild.matches("li")
+      ) {
+        return {
+          node: prev,
+          text: prev.firstElementChild.textContent || "",
+          type: "list",
+        };
+      }
+
+      return null;
+    }
+
+    blocks.forEach(function (block) {
+      const lead = getLeadNode(block);
+      if (!lead) {
         return;
       }
 
-      const codeElement = next.querySelector("code");
+      const codeElement = block.querySelector("code");
       const meta = getResultMeta(
-        paragraph.textContent || "",
-        codeElement ? codeElement.textContent : next.textContent || ""
+        lead.text,
+        codeElement ? codeElement.textContent : block.textContent || ""
       );
 
       if (!meta) {
         return;
       }
 
-      paragraph.classList.add("result-intro");
-      next.classList.add("result-block");
-      next.setAttribute("data-result-label", meta.label);
-      next.setAttribute("data-result-tone", meta.tone);
+      if (lead.type === "paragraph") {
+        lead.node.classList.add("result-intro");
+      } else if (lead.type === "list") {
+        lead.node.classList.add("result-intro-list");
+      }
+
+      block.classList.add("result-block");
+      block.setAttribute("data-result-label", meta.label);
+      block.setAttribute("data-result-tone", meta.tone);
     });
   });
 </script>

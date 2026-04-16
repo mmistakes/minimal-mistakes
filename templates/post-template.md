@@ -49,7 +49,7 @@ sidebar:
   example-command --version
   ```
 
-- 관찰된 결과: ...
+- 실행 결과: ...
 
 직접 재현이 없다면 그 이유를 적는다.
 
