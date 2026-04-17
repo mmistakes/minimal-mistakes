@@ -29,7 +29,7 @@
     <div class="toc-title">Ear</div>
     <a href="#overview">개요 & 동작 방식</a>
     <a href="#bot-setup">Discord 봇 설정</a>
-    <a href="#ccd">ccd 큐레이터 실행</a>
+    <a href="#modes">운영 모드</a>
     <a href="#archive">아카이브 포맷</a>
     <a href="#digest">일일 digest HTML</a>
     <a href="#ingest-brain">Brain 인제스트</a>
@@ -82,7 +82,19 @@ Discord에 "아카이브 완료!" 짧게 응답</code></pre>
 <pre><code>DISCORD_BOT_TOKEN=MTQ4...</code></pre></li>
     </ol>
 
-    <h2 id="ccd">ccd 큐레이터 실행</h2>
+    <h2 id="modes">운영 모드</h2>
+    <p>Ear는 두 가지 실행 방식을 지원합니다. 기본은 <strong>Mode B</strong>(LaunchAgent REST 폴링)입니다 — 터미널을 닫아도 24/7 동작하고 Discord IDENTIFY 쿼터를 소비하지 않습니다. Mode A(인터랙티브 ccd)는 실시간 반응이 필요할 때만 사용합니다.</p>
+
+    <table>
+      <tr><th></th><th>Mode A — 인터랙티브 <code>ccd</code></th><th>Mode B — <code>ear-poll</code> LaunchAgent <strong>(기본)</strong></th></tr>
+      <tr><td>실행 방식</td><td>터미널에서 <code>ccd</code> alias 실행</td><td><code>install.sh</code>가 자동 등록 (15분마다 REST 폴링)</td></tr>
+      <tr><td>지연</td><td>실시간 (gateway push)</td><td>최대 15분</td></tr>
+      <tr><td>가용성</td><td>터미널 창이 열려 있는 동안만</td><td>24/7 (launchd가 관리)</td></tr>
+      <tr><td>IDENTIFY 쿼터</td><td>세션당 1회</td><td><strong>0회</strong> (gateway 미사용)</td></tr>
+      <tr><td>MCP 로딩</td><td>discord2 MCP 상주</td><td>메시지 처리 시점에만 one-shot <code>claude -p</code> (MCP 미로드)</td></tr>
+    </table>
+
+    <h3>Mode A — 인터랙티브 ccd</h3>
     <p><code>ccd</code> alias는 Ear 전용 Claude 세션을 시작합니다. <code>~/.zshrc</code>에 다음과 같이 정의됩니다:</p>
 <pre><code>alias ccd='claude --dangerously-skip-permissions \
   --dangerously-load-development-channels server:discord2 \
@@ -93,7 +105,28 @@ Discord에 "아카이브 완료!" 짧게 응답</code></pre>
   Experimental · inbound messages will be pushed into this session...</span></code></pre>
 
     <div class="callout warm">
-      <strong>OAuth 주의</strong> — Ear는 반드시 GUI 세션(터미널 앱)에서 실행. launchd/cron에서 기동하면 OAuth keychain 잠금으로 실패합니다 (<a href="scheduler.html#why">스케줄러 가이드 참고</a>).
+      <strong>OAuth 주의 (Mode A에 한함)</strong> — 인터랙티브 <code>ccd</code>는 반드시 GUI 세션(터미널 앱)에서 실행. launchd/cron에서 기동하면 OAuth keychain 잠금으로 실패합니다 (<a href="scheduler.html#why">스케줄러 가이드 참고</a>). Mode B는 launchd <code>gui/&lt;uid&gt;</code> 도메인에서 정상 동작합니다 — REST 호출만 하고 OAuth-기반 <code>claude -p</code>는 메시지가 도착했을 때만 invoke하기 때문입니다.
+    </div>
+
+    <h3>Mode B — ear-poll LaunchAgent <strong>(기본·권장)</strong></h3>
+    <p><code>~/.claude/channels/discord2/.env</code>에 <code>DISCORD_BOT_TOKEN</code>만 저장해두면 <code>install.sh</code>가 자동으로 <code>com.comad.ear-poll</code>을 등록합니다 (토큰이 없으면 조용히 skip). 15분 간격으로 <code>/channels/:id/messages?after=&lt;last&gt;</code>를 polling해서 새 메시지에 대해서만 <code>claude -p</code>를 one-shot 실행합니다.</p>
+
+<pre><code><span class="dim"># 설치 (Mode B는 환경파일만 있으면 자동 등록)</span>
+zsh brain/scripts/launchd/install.sh
+
+<span class="dim"># 상태 확인</span>
+launchctl list | grep com.comad.ear-poll
+
+<span class="dim"># 즉시 실행 (다음 15분을 기다리지 않고)</span>
+launchctl kickstart gui/$(id -u)/com.comad.ear-poll
+
+<span class="dim"># 로그</span>
+tail -f ear/poll-ear.log</code></pre>
+
+    <p>핵심: 매 메시지마다 <code>claude -p --strict-mcp-config --mcp-config ear/poll-no-mcp.json</code>으로 호출하므로 <strong>MCP가 절대 로드되지 않습니다</strong> — Discord IDENTIFY 쿼터 소비량은 0입니다.</p>
+
+    <div class="callout warm">
+      <strong>⚠ Discord IDENTIFY 함정</strong> — Discord gateway는 bot당 <strong>1000/day</strong> IDENTIFY 쿼터가 있습니다. 과거 <code>ccd</code>를 <code>KeepAlive=true</code> LaunchAgent로 감싸서 상시 실행하려 시도했다가 TTY 없는 launchd 환경에서 즉시 crash → 30초마다 재시작 → 매 재시작이 discord2 MCP를 spawn → <strong>8시간 만에 1000/1000 소진</strong>하는 사고가 있었습니다 (2026-04-16). 교훈: <em>절대</em> 인터랙티브 <code>ccd</code>를 launchd/systemd에서 감싸지 마세요. 24/7 운영은 Mode B(REST 폴링)가 유일한 정답입니다. 응급 복구는 Discord Developer Portal에서 <strong>토큰 회전</strong>(쿼터 즉시 리셋).
     </div>
 
     <h2 id="archive">아카이브 포맷</h2>

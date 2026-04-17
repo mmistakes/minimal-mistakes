@@ -32,7 +32,7 @@
     <a href="#macos">macOS (LaunchAgents)</a>
     <a href="#linux">Linux · WSL (cron)</a>
     <a href="#windows">Windows (Task Scheduler)</a>
-    <a href="#jobs">등록되는 10개 작업</a>
+    <a href="#jobs">등록되는 10~11개 작업</a>
     <a href="#ops">운영 · 디버깅</a>
     <a href="#uninstall">제거</a>
   </aside>
@@ -113,7 +113,7 @@ Get-ScheduledTask -TaskPath '\Comad\*' | Format-Table TaskName,State
 <span class="dim"># 단일 실행</span>
 Start-ScheduledTask -TaskName EarDigest -TaskPath '\Comad\'</code></pre>
 
-    <h2 id="jobs">등록되는 10개 작업</h2>
+    <h2 id="jobs">등록되는 10~11개 작업</h2>
     <table>
       <tr><th>이름</th><th>시각</th><th>주기</th><th>역할</th></tr>
       <tr><td><code>ear-ingest</code></td><td>07:00</td><td>매일</td><td>어제 필독 기사 → /search 자동 피드</td></tr>
@@ -126,7 +126,9 @@ Start-ScheduledTask -TaskName EarDigest -TaskPath '\Comad\'</code></pre>
       <tr><td><code>search-weekly</code></td><td>12:00</td><td>월요일</td><td>PUSH 모드 자가 진단 검색</td></tr>
       <tr><td><code>evolution-loop</code></td><td>12:30</td><td>월요일</td><td>Brain trends → Search → adoption</td></tr>
       <tr><td><code>run-benchmark</code></td><td>13:00</td><td>월요일</td><td>GraphRAG 50문항 벤치마크</td></tr>
+      <tr><td><code>ear-poll</code> <sup>*</sup></td><td>—</td><td>매 15분 (StartInterval)</td><td>Discord 채널 폴링 · 신규 메시지 dispatch (Mode B, optional)</td></tr>
     </table>
+    <p><small><sup>*</sup> <code>ear-poll</code>은 <code>~/.claude/channels/discord2/.env</code>가 존재할 때 <code>install.sh</code>가 자동 등록합니다. 토큰이 없는 환경(신규 clone 등)에서는 조용히 skip되므로 <strong>10개</strong>만 등록됩니다. 자세한 모드 비교는 <a href="ear.html#modes">Ear 가이드</a> 참고.</small></p>
 
     <h2 id="ops">운영 · 디버깅</h2>
 
