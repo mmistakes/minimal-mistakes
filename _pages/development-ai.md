@@ -22,3 +22,4 @@ AI 코딩 도구 자체보다 그 주변의 권한 경계, 검증 흐름, handof
 - [프로젝트 instruction file이 control plane이 되면 안 되는 이유](/ai/project-instruction-files-should-not-be-control-planes/)
 - [멀티 에이전트가 기본값이 아닌 이유](/ai/multi-agent-is-not-the-default/)
 - [문서 중심 운영에서 observable harness로 가는 방법](/ai/from-document-centered-ops-to-observable-harness/)
+- [토큰 관리 시리즈](/development/token-management/)

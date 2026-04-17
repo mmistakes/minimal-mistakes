@@ -22,3 +22,4 @@ This topic archive focuses on how AI coding tools actually operate inside a larg
 - [Project Instruction Files Should Not Be Control Planes](/en/ai/how-far-should-a-project-instruction-file-go/)
 - [Why Multi-Agent Is Not the Default](/en/ai/multi-agent-is-not-the-default/)
 - [From Document-Centered Ops to an Observable Harness](/en/ai/from-document-centered-ops-to-observable-harness/)
+- [Token Management Series](/en/development/token-management/)

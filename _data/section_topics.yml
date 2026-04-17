@@ -13,6 +13,12 @@ development:
     title_en: AI
     description_ko: AI 도구 활용, 하네스 엔지니어링, 실무 적용 관점의 글을 모아둔 분류다.
     description_en: A focused archive for posts about AI tooling, harness engineering, and practical engineering workflows.
+  - key: token-management
+    slug: token-management
+    title_ko: 토큰 관리
+    title_en: Token Management
+    description_ko: 토큰 관리, 컨텍스트 설계, 상태 요약, 압축 전략을 다루는 연재와 글을 모아둔 분류다.
+    description_en: A focused archive for posts about token management, context design, working-state summaries, and compression strategy.
   - key: rust
     slug: rust
     title_ko: Rust
