@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://k4nul.github.io/sitemap.xml
+Sitemap: https://www.k4nul.com/sitemap.xml
