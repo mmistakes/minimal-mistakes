@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Enhancements
+
+- Respect custom parameters in yiq-contrast-color function (#5453)
+- Allow specifying `rtl` in both page and layout (#5460)
+- Add title attribute to video iframes for accessibility (#5471)
+
 ## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 
 ### Enhancements
