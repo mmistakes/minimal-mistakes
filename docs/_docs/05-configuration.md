@@ -218,11 +218,11 @@ By default your site title is used in the masthead. You can override this text b
 masthead_title: "My Custom Title"
 ```
 
-### Site RTL direction
+### Site direction
 
-`site.rtl` is used to turn the direction of the page into right to left. This option can be used for RTL languages (like Arabic, Persian, etc)
+`site.direction` is used to sets the direction of the page. This option can be used for RTL languages (like Arabic, Persian, etc)
 
-_Example:_ `rtl: true` sets the direction of the page to right to left. By default this option is `rtl: false`.
+_Example:_ `direction: rtl` sets the direction of the page to right to left. By default this option is `direction: ltr`.
 
 ### Breadcrumb navigation (beta)
 
