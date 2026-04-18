@@ -32,6 +32,12 @@ sections:
         url: /tags/
       - title: "검색"
         url: /search/
+      - title: "소개"
+        url: /about/
+      - title: "문의"
+        url: /contact/
+      - title: "개인정보 처리방침"
+        url: /privacy-policy/
 
 sections_en:
   - title: "POSTS"
@@ -50,3 +56,9 @@ sections_en:
         url: /en/tags/
       - title: "Search"
         url: /en/search/
+      - title: "About"
+        url: /about/
+      - title: "Contact"
+        url: /contact/
+      - title: "Privacy Policy"
+        url: /privacy-policy/

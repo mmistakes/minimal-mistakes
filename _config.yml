@@ -137,6 +137,12 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/k4nul"
+    - label: "Contact"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "/contact/"
+    - label: "Privacy Policy"
+      icon: "fas fa-fw fa-user-shield"
+      url: "/privacy-policy/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   # url:
