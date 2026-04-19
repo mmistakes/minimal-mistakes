@@ -27,7 +27,7 @@ minimal mistakes
 
 ## Customizing
 
-To modify or add your own scripts include them in [`assets/js/_main.js`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/js/_main.js) and then rebuild using `npm run build:js`. See below for more details.
+To modify or add your own scripts include them in [`assets/js/_main.js`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/js/_main.js) and then rebuild using `bundle exec rake js`. See below for more details.
 
 If you add additional scripts to `assets/js/plugins/` and would like them concatenated with the others, be sure to update the `uglify` script in [`package.json`](https://github.com/mmistakes/minimal-mistakes/blob/master/package.json). Same goes for scripts that you remove.
 
@@ -52,7 +52,7 @@ after_footer_scripts:
 
 ## Build process
 
-In an effort to reduce dependencies a set of [**npm scripts**](https://css-tricks.com/why-npm-scripts/) are used to build `main.min.js` instead of task runners like [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/). If those tools are more your style then by all means use them instead :wink:.
+In an effort to reduce dependencies a set of [**Rake** rules](https://github.com/ruby/rake) are used to build `main.min.js` instead of task runners like [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/). If those tools are more your style then by all means use them instead :wink:.
 
 To get started:
 
@@ -63,20 +63,16 @@ To get started:
 **Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`](https://github.com/{{ site.repository }}/blob/master/package.json) prior to running `npm install`.
 {: .notice--warning}
 
-If all goes well, running `npm run build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
+If all goes well, running `bundle exec rake js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
 
 ## Debugging
 
-The minified JavaScript is harder to debug in the browser than the raw source. To stop the minification and bundle all the JavaScript as-is --- open up `package.json` and edit the value `scripts.uglify` from:
+The minified JavaScript is harder to debug in the browser than the raw source. To stop the minification and bundle all the JavaScript as-is --- open up `Rakefile` and edit the block of `file JS_TARGET` like this:
 
-```json
-  "scripts": {
-    "uglify": "uglifyjs [...] -c -m -o assets/js/main.min.js",
-```
-
-To the following:
-
-```json
-  "scripts": {
-    "uglify": "cat [...] > assets/js/main.min.js",
+```diff
+ file JS_TARGET => ["_includes/copyright.js"] + JS_FILES do |t|
+-  sh Shellwords.join(%w[npx uglifyjs -c --comments /@mmistakes/ --source-map -m -o] +
++  sh Shellwords.join(%w[cat >] +
+     [t.name] + t.prerequisites)
+ end
 ```
