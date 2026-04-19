@@ -7,6 +7,11 @@
 - Respect custom parameters in yiq-contrast-color function (#5453)
 - Allow specifying `rtl` in both page and layout (#5460)
 - Add title attribute to video iframes for accessibility (#5471)
+- Silence "Sass @import rules are deprecated" warning
+
+### Documentation
+
+- Update /docs/javascript/ to reflect changes in `0b8b523`
 
 ## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 

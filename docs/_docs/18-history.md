@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2026-04-18T22:24:10+08:00'
+last_modified_at: '2026-04-19T21:51:22+08:00'
 toc: false
 ---
 
@@ -22,6 +22,11 @@ toc: false
 - Respect custom parameters in yiq-contrast-color function [#5453](https://github.com/mmistakes/minimal-mistakes/issues/5453)
 - Allow specifying `rtl` in both page and layout [#5460](https://github.com/mmistakes/minimal-mistakes/issues/5460)
 - Add title attribute to video iframes for accessibility [#5471](https://github.com/mmistakes/minimal-mistakes/issues/5471)
+- Silence "Sass @import rules are deprecated" warning
+
+### Documentation
+
+- Update /docs/javascript/ to reflect changes in `0b8b523`
 
 ## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 
