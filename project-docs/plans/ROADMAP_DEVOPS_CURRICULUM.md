@@ -2,9 +2,9 @@
 
 ## Snapshot
 
-- 검토 기준일: 2026-04-19
+- 검토 기준일: 2026-04-20
 - 목적: `development` 아래 `devops` 허브 후보와 관련 연재 구조를 보관한다.
-- 현재 상태: 계획만 정리된 상태이며, `_data/section_topics.yml`, `_pages/`, `_posts/`에는 아직 반영하지 않았다.
+- 현재 상태: Docker 01~05 KOR/ENG 포스트를 `_posts/`에 반영했고, 2026-04-21부터 2026-04-30까지 하루 간격 발행으로 맞췄다. 다만 `_data/section_topics.yml`과 `_pages/`에는 아직 `devops` 허브 메타데이터를 추가하지 않았다.
 - 권장 구조: `section: development`, `topic_key: devops`
 - 권장 순서: `Docker -> Jenkins -> K8S`
 - 별도 분리 주제: `cloud`는 이 로드맵에 섞지 않고 추후 별도 계획으로 다룬다.
@@ -21,8 +21,8 @@
 
 1. Docker 01. 컨테이너와 VM은 무엇이 다른가
 2. Docker 02. 이미지, 레이어, 태그, digest를 어떻게 이해해야 하는가
-3. Docker 03. Dockerfile 기본 문법과 빌드 흐름
-4. Docker 04. 이미지 빌드 최적화와 캐시가 깨지는 지점
+3. Docker 03. Dockerfile 기본 문법과 build context를 어떻게 이해해야 하는가
+4. Docker 04. 이미지 빌드가 느려지는 이유와 캐시가 깨지는 지점
 5. Docker 05. 레지스트리 푸시와 배포용 이미지 관리 기준
 
 ### Jenkins
