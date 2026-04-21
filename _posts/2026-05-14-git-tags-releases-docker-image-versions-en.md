@@ -70,12 +70,13 @@ The Git tag points to source history. The Docker digest pins image content.
 - Directly checked result: on 2026-04-21, I created an annotated tag in a temporary repository and confirmed which commit it pointed to.
 
 ```powershell
+git tag -a v1.0.0 -m "Release v1.0.0"
 git tag -a v1.0.1 -m "Release v1.0.1"
 git tag --list
 git show --stat --oneline v1.0.1
 ```
 
-- Result summary: `git tag --list` printed `v1.0.0` and `v1.0.1`. `git show --stat --oneline v1.0.1` showed the `Release v1.0.1` tag message and the target commit `8cd1bb0 Add rebase work amended`.
+- Result summary: `git tag --list` printed `v1.0.0` and `v1.0.1`. `git show --stat --oneline v1.0.1` showed the `Release v1.0.1` tag message and the target commit.
 
 ## Interpretation / Opinion
 
@@ -95,4 +96,3 @@ The reproduction only created Git tags. Docker image build and push are based on
 - GitHub Docs, [About releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 - Docker Docs, [docker image tag](https://docs.docker.com/reference/cli/docker/image/tag/)
 - Docker Docs, [docker image push](https://docs.docker.com/reference/cli/docker/image/push/)
-

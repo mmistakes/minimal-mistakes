@@ -71,11 +71,35 @@ git push origin main
 - 직접 확인한 결과: 2026-04-21 임시 bare 저장소를 만들고, `origin` remote를 추가한 뒤 push, clone, coworker commit, fetch, fast-forward merge를 재현했다.
 
 ```powershell
+New-Item -ItemType Directory -Path git-remote-demo
+Set-Location git-remote-demo
+
+git init -b main local
+Set-Location local
+git config user.name "Codex Test"
+git config user.email "codex@example.invalid"
+Set-Content -LiteralPath app.txt -Value "initial"
+git add app.txt
+git commit -m "Add app"
+
+Set-Location ..
 git init --bare remote.git
+git --git-dir=remote.git symbolic-ref HEAD refs/heads/main
+Set-Location local
 git remote add origin ../remote.git
 git push -u origin main
+
+Set-Location ..
 git clone remote.git coworker
-# coworker clone에서 commit 후 push
+Set-Location coworker
+git config user.name "Codex Coworker"
+git config user.email "coworker@example.invalid"
+Set-Content -LiteralPath remote.txt -Value "remote work"
+git add remote.txt
+git commit -m "Add remote work"
+git push origin main
+
+Set-Location ../local
 git fetch origin
 git status --short --branch
 git merge origin/main --ff-only
@@ -101,4 +125,3 @@ git merge origin/main --ff-only
 - Git, [git fetch](https://git-scm.com/docs/git-fetch)
 - Git, [git pull](https://git-scm.com/docs/git-pull)
 - Git, [git push](https://git-scm.com/docs/git-push)
-

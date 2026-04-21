@@ -69,12 +69,13 @@ Git tag는 source history 지점이고, Docker digest는 image content 고정값
 - 직접 확인한 결과: 2026-04-21 임시 저장소에서 annotated tag를 만들고 tag가 특정 commit을 가리키는 것을 확인했다.
 
 ```powershell
+git tag -a v1.0.0 -m "Release v1.0.0"
 git tag -a v1.0.1 -m "Release v1.0.1"
 git tag --list
 git show --stat --oneline v1.0.1
 ```
 
-- 실행 결과 요약: `git tag --list`는 `v1.0.0`과 `v1.0.1`을 출력했다. `git show --stat --oneline v1.0.1`은 `Release v1.0.1` tag 메시지와 해당 tag가 가리키는 `8cd1bb0 Add rebase work amended` commit을 보여줬다.
+- 실행 결과 요약: `git tag --list`는 `v1.0.0`과 `v1.0.1`을 출력했다. `git show --stat --oneline v1.0.1`은 `Release v1.0.1` tag 메시지와 해당 tag가 가리키는 commit을 보여줬다.
 
 ## 해석 / 의견
 
@@ -94,4 +95,3 @@ git show --stat --oneline v1.0.1
 - GitHub Docs, [About releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 - Docker Docs, [docker image tag](https://docs.docker.com/reference/cli/docker/image/tag/)
 - Docker Docs, [docker image push](https://docs.docker.com/reference/cli/docker/image/push/)
-

@@ -68,26 +68,57 @@ This reapplies the feature branch's commits on top of `main`. The resulting cont
 - Directly checked result: on 2026-04-21, I created a `rebase-demo` branch, advanced `main`, and rebased `rebase-demo` onto `main`.
 
 ```powershell
-git switch main
+New-Item -ItemType Directory -Path git-rebase-demo
+Set-Location git-rebase-demo
+
+git init -b main local
+Set-Location local
+git config user.name "Codex Test"
+git config user.email "codex@example.invalid"
+Set-Content -LiteralPath README.md -Value "base"
+git add README.md
+git commit -m "Initial commit"
+
+Set-Location ..
+git init --bare remote.git
+git --git-dir=remote.git symbolic-ref HEAD refs/heads/main
+Set-Location local
+git remote add origin ../remote.git
+git push -u origin main
+
 git switch -c rebase-demo
 Set-Content -LiteralPath rebase.txt -Value "rebase work"
 git add rebase.txt
 git commit -m "Add rebase work"
+git push -u origin rebase-demo
+$before = git rev-parse --short HEAD
+
 git switch main
 Set-Content -LiteralPath base.txt -Value "base work"
 git add base.txt
 git commit -m "Advance main"
+
 git switch rebase-demo
 git rebase main
+$afterRebase = git rev-parse --short HEAD
+
+Set-Content -LiteralPath rebase.txt -Value "rebase work amended"
+git add rebase.txt
+git commit --amend -m "Add rebase work amended"
+$afterAmend = git rev-parse --short HEAD
+git push --force-with-lease origin rebase-demo
+git log --oneline --decorate -3
 ```
 
-- Result summary: after rebase, the `Add rebase work` commit was positioned after the `Advance main` commit. I then pushed `rebase-demo` to an isolated bare remote, amended the commit with `git commit --amend`, and ran `git push --force-with-lease origin rebase-demo`. The forced update succeeded in that isolated repository.
+- Result summary: `$before`, `$afterRebase`, and `$afterAmend` were different values. After rebase, the `Add rebase work` commit was recreated after the `Advance main` commit, and amend changed the commit again. In the isolated bare remote, `git push --force-with-lease origin rebase-demo` exited with code `0` because the remote-tracking ref still matched the expected value.
 
 ## Interpretation / Opinion
 
 My judgment is that rebase should first be taught as "a tool that rewrites history," not merely as "a tool that makes history pretty." It is helpful for cleaning up a personal branch before review, but changing a branch that other people depend on creates recovery work for them.
 
 Force push follows the same rule. It has legitimate uses, but it should not be a default habit. Branches such as `main`, `release`, or production deployment branches are usually better protected by branch protection and review policies.
+
+`--force-with-lease` is safer than plain `--force`, but it is not an absolute lock. It protects the update by checking that the remote ref still has the value you expect, so environments with background fetches or multiple remote configurations need extra care.
 
 ## Limits and Exceptions
 
@@ -100,4 +131,3 @@ The reproduction used only an isolated bare remote. In real hosted repositories,
 - Git, [git rebase](https://git-scm.com/docs/git-rebase)
 - Git, [git commit](https://git-scm.com/docs/git-commit)
 - Git, [git push](https://git-scm.com/docs/git-push)
-

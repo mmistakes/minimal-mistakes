@@ -71,7 +71,9 @@ git log --oneline
 - 직접 확인한 결과: 2026-04-21 Windows PowerShell에서 임시 저장소를 만들고 `app.txt`를 추가한 뒤 commit을 생성했다.
 
 ```powershell
-git init -b main demo
+New-Item -ItemType Directory -Path git-record-demo
+Set-Location git-record-demo
+git init -b main .
 git config user.name "Codex Test"
 git config user.email "codex@example.invalid"
 Set-Content -LiteralPath app.txt -Value "line 1"
@@ -106,4 +108,3 @@ git log --oneline -1
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)
 - Git, [git add](https://git-scm.com/docs/git-add)
 - Git, [git commit](https://git-scm.com/docs/git-commit)
-

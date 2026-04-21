@@ -72,7 +72,9 @@ Editing a file and recording history are not the same action. Git history consis
 - Directly checked result: on 2026-04-21, I created a temporary repository, added `app.txt`, and created a commit.
 
 ```powershell
-git init -b main demo
+New-Item -ItemType Directory -Path git-record-demo
+Set-Location git-record-demo
+git init -b main .
 git config user.name "Codex Test"
 git config user.email "codex@example.invalid"
 Set-Content -LiteralPath app.txt -Value "line 1"
@@ -107,4 +109,3 @@ The reproduction used only a local repository. Remote repositories, branch prote
 - Git, [Git Glossary](https://git-scm.com/docs/gitglossary)
 - Git, [git add](https://git-scm.com/docs/git-add)
 - Git, [git commit](https://git-scm.com/docs/git-commit)
-

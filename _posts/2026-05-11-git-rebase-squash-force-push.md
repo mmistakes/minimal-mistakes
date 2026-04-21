@@ -67,26 +67,57 @@ git rebase main
 - 직접 확인한 결과: 2026-04-21 임시 저장소에서 `rebase-demo` branch를 만든 뒤 `main`이 앞서가게 만들고, `git rebase main`으로 branch를 다시 얹었다.
 
 ```powershell
-git switch main
+New-Item -ItemType Directory -Path git-rebase-demo
+Set-Location git-rebase-demo
+
+git init -b main local
+Set-Location local
+git config user.name "Codex Test"
+git config user.email "codex@example.invalid"
+Set-Content -LiteralPath README.md -Value "base"
+git add README.md
+git commit -m "Initial commit"
+
+Set-Location ..
+git init --bare remote.git
+git --git-dir=remote.git symbolic-ref HEAD refs/heads/main
+Set-Location local
+git remote add origin ../remote.git
+git push -u origin main
+
 git switch -c rebase-demo
 Set-Content -LiteralPath rebase.txt -Value "rebase work"
 git add rebase.txt
 git commit -m "Add rebase work"
+git push -u origin rebase-demo
+$before = git rev-parse --short HEAD
+
 git switch main
 Set-Content -LiteralPath base.txt -Value "base work"
 git add base.txt
 git commit -m "Advance main"
+
 git switch rebase-demo
 git rebase main
+$afterRebase = git rev-parse --short HEAD
+
+Set-Content -LiteralPath rebase.txt -Value "rebase work amended"
+git add rebase.txt
+git commit --amend -m "Add rebase work amended"
+$afterAmend = git rev-parse --short HEAD
+git push --force-with-lease origin rebase-demo
+git log --oneline --decorate -3
 ```
 
-- 실행 결과 요약: rebase 후 `rebase-demo`의 `Add rebase work` commit은 `Advance main` commit 뒤에 위치했다. 이후 isolated bare remote에 `rebase-demo`를 push하고 `git commit --amend`로 commit을 다시 만든 뒤 `git push --force-with-lease origin rebase-demo`를 실행했으며, forced update가 성공했다.
+- 실행 결과 요약: `$before`, `$afterRebase`, `$afterAmend` 값은 서로 달랐다. rebase 후 `rebase-demo`의 `Add rebase work` commit은 `Advance main` commit 뒤에 다시 만들어졌고, amend 후 commit도 다시 바뀌었다. isolated bare remote에서 `git push --force-with-lease origin rebase-demo`는 원격 추적 ref가 기대한 값과 맞아 exit code `0`으로 끝났다.
 
 ## 해석 / 의견
 
 내 판단으로는 rebase는 "이력을 예쁘게 만드는 도구"가 아니라 "이력을 다시 쓰는 도구"로 먼저 배워야 한다. 개인 branch에서 PR을 올리기 전 작은 commit들을 정리하는 데는 좋지만, 다른 사람이 이미 기반으로 삼은 branch를 바꾸면 상대방에게 복구 비용이 생긴다.
 
 force push도 마찬가지다. 필요한 순간은 있지만 기본값이 되어서는 안 된다. 특히 `main`, `release`, 운영 배포 branch처럼 여러 사람이 의존하는 branch에서는 branch protection과 리뷰 정책으로 막아 두는 편이 일반적으로 안전하다.
+
+`--force-with-lease`는 일반 `--force`보다 안전한 선택지지만, 절대적인 잠금 장치는 아니다. 이 옵션은 원격 ref가 내가 기대한 값과 같을 때만 update하려는 보호 장치에 가깝기 때문에, background fetch나 여러 remote 설정이 섞인 환경에서는 동작 조건을 더 조심해서 봐야 한다.
 
 ## 한계와 예외
 
@@ -99,4 +130,3 @@ force push도 마찬가지다. 필요한 순간은 있지만 기본값이 되어
 - Git, [git rebase](https://git-scm.com/docs/git-rebase)
 - Git, [git commit](https://git-scm.com/docs/git-commit)
 - Git, [git push](https://git-scm.com/docs/git-push)
-

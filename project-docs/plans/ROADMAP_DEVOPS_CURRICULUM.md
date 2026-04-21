@@ -4,7 +4,7 @@
 
 - 검토 기준일: 2026-04-21
 - 목적: `development` 아래 `devops` 허브 후보와 관련 연재 구조를 보관한다.
-- 현재 상태: Docker 01~05 포스트를 `_posts/`에 반영했고, Docker 다음 흐름은 Git 기초와 협업 흐름으로 전환한다. 다만 `_data/section_topics.yml`과 `_pages/`에는 아직 `devops` 허브 메타데이터를 추가하지 않았다.
+- 현재 상태: Docker 01~05와 Git 01~08 KOR/ENG 포스트를 `_posts/`에 반영했다. Git 글은 2026-05-01부터 2026-05-16까지 예약 발행 일정으로 두었으므로, 2026-04-21 기준 일반 Jekyll build에서는 future post로 skip된다. 다만 `_data/section_topics.yml`과 `_pages/`에는 아직 `devops` 허브 메타데이터를 추가하지 않았다.
 - 권장 구조: `section: development`, `topic_key: devops`
 - 권장 순서: `Docker -> Git -> Jenkins -> K8S`
 - 별도 분리 주제: `cloud`는 이 로드맵에 섞지 않고 추후 별도 계획으로 다룬다.
@@ -69,7 +69,7 @@
 - Jenkins 파트는 Git과 Docker 흐름을 자동화하는 방향으로 설치부터 Jenkinsfile까지 단계적으로 쌓는다.
 - Kubernetes 파트는 설치 글만 이어 가지 않고 manifest, 운영 설정, storage까지 확장한다.
 - `MetalLB`, `OpenEBS`는 Kubernetes 기본 개념과 섞이지 않도록 번외 주제로 분리한다.
-- 실제 발행을 시작하면 각 글마다 `검증 기준일`, `테스트 환경`, `테스트 버전`, `직접 재현한 결과`, `한계와 예외`를 채운다.
+- 후속 Jenkins/K8S 글도 각 글마다 `검증 기준일`, `테스트 환경`, `테스트 버전`, `직접 재현한 결과`, `한계와 예외`를 채운다.
 
 ## Update Triggers
 
