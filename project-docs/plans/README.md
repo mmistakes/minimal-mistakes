@@ -7,7 +7,7 @@
 
 ## 현재 활성 계획
 
-- `ROADMAP_DEVOPS_CURRICULUM.md`: `development` 아래 `devops` 허브 후보와 `Docker -> Jenkins -> K8S` 25편 구성을 정리한 로드맵
+- `ROADMAP_DEVOPS_CURRICULUM.md`: `development` 아래 `devops` 허브 후보와 `Docker -> Git -> Jenkins -> K8S` 33편 구성을 정리한 로드맵
 - `ROADMAP_CODEX_PRACTICAL_USAGE.md`: `development` 아래 `ai` 허브에 연결할 "Codex 실전 활용" 10편 구성을 정리한 로드맵
 
 ## 권장 읽기 순서
