@@ -43,18 +43,25 @@ At the beginner stage, the following four questions often appear together even t
 
 This post connects those questions at the beginner level. It does not cover lifetime-heavy generic design, custom error architecture, the full iterator adaptor space, or async streams.
 
+How to read this post: do not treat the four topics as a list to memorize. Read them as roles inside a data-processing flow. Generics keep one shape of logic open to multiple types, `Result` exposes failure, and closures plus iterators let you compose small transformation steps.
+
 ## Verified Facts
 
 - Generic type parameters are Rust's basic tool for reducing duplication across types.
   Evidence: [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+  Meaning: generics do not mean "accept literally anything." They mean "apply the same code shape to types that meet the required conditions."
 - Recoverable errors are typically expressed with `Result<T, E>`, and the `?` operator shortens propagation inside compatible return types.
   Evidence: [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+  Meaning: failure is visible in the return type, so the caller must handle both success and error paths in code.
 - A closure is an anonymous function that can capture values from its surrounding environment.
   Evidence: [Closures](https://doc.rust-lang.org/book/ch13-01-closures.html)
+  Meaning: closures are useful when a short rule needs to be passed around while still reading values from the current scope.
 - Iterator adapters such as `map` and `filter` are usually lazy, and work happens when the iterator is consumed by something like `sum`, `collect`, or a `for` loop.
   Evidence: [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)
+  Meaning: an iterator chain is a staged description of work. The work usually happens when the chain is consumed.
 - The simplest beginner practice flow is still a small `cargo new` project.
   Evidence: [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+  Meaning: this topic benefits from rerunning both success and failure cases in the same small project.
 
 ## Directly Confirmed Results
 
@@ -112,6 +119,8 @@ largest number = 40
 error = Cannot divide by zero.
 ```
 
+- How to read this: `largest` reuses one algorithm for values that can be compared and copied. `safe_divide` does not hide failure in a print statement; it returns `Result`, and the caller chooses how to handle `Ok` and `Err`.
+
 ### 3. Closures and iterators worked well as one data-processing flow
 
 - Direct result: the example below showed environment capture by a closure and a small iterator pipeline in one place.
@@ -139,6 +148,8 @@ fn main() {
 closure result = 15
 total = 12
 ```
+
+- How to read this: `add_bonus` behaves like a small function that can read `bonus` from the surrounding scope. The iterator chain shows the data-processing order directly: keep even numbers, double them, then sum them.
 
 ### 4. The combined example showed why these four ideas often appear together
 
@@ -175,11 +186,13 @@ numbers = [10, 20, 30]
 doubled_total = 138
 ```
 
+- How to read this: `parse_values` turns a slice of strings into a `Vec<T>`, but returns early with a `Result` if parsing fails. The `?` operator is not hiding errors; it is a short form for passing them outward through the current function's return type.
+
 ## Interpretation / Opinion
 
-- Interpretation: generics, `Result`, closures, and iterators usually appear in real Rust code as one flow of reading, transforming, and safely returning data, not as isolated syntax features.
-- Opinion: for beginners, iterators are easier to read when introduced as visible data-processing pipelines rather than as just a different way to write loops.
-- Opinion: the `?` operator becomes much easier to use later in file I/O or parsing code once it is understood first as control flow for early error return.
+- Key decision at this stage: generics, `Result`, closures, and iterators usually appear in real Rust code as one flow of reading, transforming, and safely returning data, not as isolated syntax features.
+- Decision rule: if a loop is mostly a sequence of transformations, consider an iterator chain; if failure can occur, expose it in the return type with `Result`.
+- Interpretation: the `?` operator becomes much easier to use later in file I/O or parsing code once it is understood first as control flow for early error return.
 
 ## Limits and Exceptions
 
@@ -187,6 +200,7 @@ doubled_total = 138
 - The differences between `Fn`, `FnMut`, and `FnOnce`, along with deeper borrow behavior around closures, are not covered here.
 - Lazy iterator behavior matters, but this post only touches the basic consumption points such as `sum()` and `collect()`.
 - Exact output and diagnostic wording can vary by Rust version, and this post does not compare macOS, Linux, or WSL-specific behavior.
+- Remaining questions after this post include custom error types, lifetime-heavy generic APIs, and iterator performance details. Those fit better after a few practical projects.
 
 ## References
 

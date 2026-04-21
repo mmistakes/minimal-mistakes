@@ -42,16 +42,22 @@ At the beginning, Rust installation usually feels ambiguous in three places.
 
 This post only covers the minimum path needed to reduce that confusion: install, verify, and run `Hello, world!`. It does not cover advanced installer flags, WSL, macOS/Linux, or toolchain override topics.
 
+How to read this post: treat `rustup` as the entry point for installing and updating the toolchain, `rustc` as the compiler you can call directly, and `cargo` as the project workflow tool. At this stage, you do not need to memorize every option. The important part is knowing which tool to reach for in each situation.
+
 ## Verified Facts
 
 - The official Rust install page and the `rustup` site guide users through the `rustup` installation path.
   Evidence: [Install Rust](https://www.rust-lang.org/tools/install), [rustup.rs](https://rustup.rs/)
+  Meaning: "Installing Rust" here does not mean downloading only the `rustc` executable. It means setting up the standard path for managing the Rust toolchain.
 - The Rust Book installation chapter describes verifying the installation with `rustc --version`.
   Evidence: [Installation](https://doc.rust-lang.org/book/ch01-01-installation.html)
+  Meaning: if this command prints a version, the terminal can find the Rust compiler and the basic PATH/toolchain connection is working.
 - The Rust Book separates the single-file `rustc` flow from the project-oriented `cargo new`, `cargo build`, and `cargo run` flow.
   Evidence: [Hello, World!](https://doc.rust-lang.org/book/ch01-02-hello-world.html), [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+  Meaning: `rustc` and `cargo` are not competing tools. `rustc` is the compiler, while `cargo` wraps project creation, builds, runs, and dependency management.
 - The official VS Code Rust guide recommends `rust-analyzer` as the editor extension.
   Evidence: [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)
+  Meaning: `rust-analyzer` does not install Rust. It helps the editor understand Rust code.
 
 ## Directly Confirmed Results
 
@@ -70,6 +76,8 @@ cargo --version
 rustc 1.94.0 (4a4ef493e 2026-03-02)
 cargo 1.94.0 (85eff7c80 2026-01-15)
 ```
+
+- How to read this: if both commands print versions, the installation and terminal setup are good enough for the rest of this beginner flow. The exact versions become the reference point for interpreting later outputs.
 
 - The reproducible path is:
 
@@ -105,7 +113,7 @@ rustc hello.rs
 Hello, world!
 ```
 
-- This path is useful for a quick one-file syntax check, but it does not give you a project structure or dependency management.
+- How to read this: `rustc hello.rs` is the shortest path from one source file to an executable. It is useful for a quick one-file syntax check, but it does not give you a project structure or dependency management.
 
 ### 4. Creating and running a project with `cargo`
 
@@ -131,13 +139,15 @@ fn main() {
 Hello, world!
 ```
 
+- How to read this: `cargo run` builds if needed and then runs the project. For beginners, it is the default command for repeatedly running a growing Rust project.
+
 - Direct result: when using `cargo build`, the executable was created under `target\debug\hello-rust.exe`.
 
 ## Interpretation / Opinion
 
-- Opinion: for beginners, the cleanest mental model is "Rust installation means installing the toolchain through `rustup`."
-- Opinion: `rustc` is useful for a very quick single-file check, but if you expect the code to grow, it is better to get used to `cargo` as early as possible.
-- Interpretation: the most natural beginner sequence is "verify installation -> run one `rustc` example -> move into a `cargo new` project."
+- Key decision at this stage: for beginners, the cleanest mental model is "Rust installation means installing the toolchain through `rustup`."
+- Decision rule: use `rustc` for a one-file syntax check, and use `cargo` for code you expect to keep changing or growing.
+- Recommended flow: the most natural beginner sequence is "verify installation -> run one `rustc` example -> move into a `cargo new` project."
 
 ## Limits and Exceptions
 
@@ -145,6 +155,7 @@ Hello, world!
 - The exact `rustup-init.exe` screens and defaults can change over time.
 - The scope is limited to installation and the first successful run. Toolchain overrides, nightly, cross-compilation, and C++ toolchain edge cases are intentionally left out.
 - VS Code is optional. Rust installation and `rustc`/`cargo` usage do not require a specific editor.
+- Remaining questions after this post include switching between toolchains, deciding when nightly is appropriate, and handling platform-specific native build tool issues. Those belong in an installation deep dive.
 
 ## References
 

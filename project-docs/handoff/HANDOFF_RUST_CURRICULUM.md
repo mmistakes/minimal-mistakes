@@ -40,23 +40,23 @@
 
 ### 예약 발행 완료
 
-9. `Rust 09. Crates, Packages, and Project Layout`
+9. `Rust 09. Crate, Package, 프로젝트 구조 이해하기`
    date: `2026-04-16 09:00:00 +0900`
    KOR: `_posts/2026-04-16-rust-crates-packages-project-layout.md`
    ENG: `_posts/2026-04-16-rust-crates-packages-project-layout-en.md`
-10. `Rust 10. Testing in Rust`
+10. `Rust 10. Rust 테스트 기초`
     date: `2026-04-17 09:00:00 +0900`
     KOR: `_posts/2026-04-17-rust-testing-basics.md`
     ENG: `_posts/2026-04-17-rust-testing-basics-en.md`
-11. `Rust 11. File I/O and Command-Line Input`
+11. `Rust 11. 파일 I/O와 커맨드라인 입력`
     date: `2026-04-18 09:00:00 +0900`
     KOR: `_posts/2026-04-18-rust-file-io-and-cli-input.md`
     ENG: `_posts/2026-04-18-rust-file-io-and-cli-input-en.md`
-12. `Rust 12. Serde with JSON and TOML Basics`
+12. `Rust 12. Serde로 JSON/TOML 다루기`
     date: `2026-04-19 09:00:00 +0900`
     KOR: `_posts/2026-04-19-rust-serde-json-toml-basics.md`
     ENG: `_posts/2026-04-19-rust-serde-json-toml-basics-en.md`
-13. `Rust 13. Build a Small CLI Project`
+13. `Rust 13. 작은 CLI 프로젝트 만들기`
     date: `2026-04-20 09:00:00 +0900`
     KOR: `_posts/2026-04-20-rust-build-a-small-cli-project.md`
     ENG: `_posts/2026-04-20-rust-build-a-small-cli-project-en.md`

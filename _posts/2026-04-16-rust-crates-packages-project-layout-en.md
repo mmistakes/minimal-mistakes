@@ -42,16 +42,22 @@ After learning basic `module` syntax, beginners often get stuck at the next step
 
 This post stays intentionally narrow. It explains how to read and split one Cargo project, without going into wider topics like workspaces, publishing, features, or path dependencies.
 
+How to read this post: separate the bundle Cargo manages from the code unit Rust compiles. At the beginner stage, it is possible to put everything in `main.rs`, but it is more useful to learn how the entry point and reusable logic can be separated.
+
 ## Verified Facts
 
 - According to the official Rust Book, a Cargo package is the unit described by `Cargo.toml`, and a package can contain at most one library crate and any number of binary crates.
   Evidence: [Packages and Crates](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html)
+  Meaning: a package is the project bundle Cargo manages, while a crate is a compilation unit.
 - According to the official docs, a binary crate has a `main` function as its entry point, while a library crate exposes reusable functionality.
   Evidence: [Packages and Crates](https://doc.rust-lang.org/book/ch07-01-packages-and-crates.html)
+  Meaning: execution belongs in the binary crate, and reusable or testable logic is usually better placed in the library crate.
 - According to the official docs, `mod` defines modules, `use` brings a path into the current scope, and `pub` controls visibility.
   Evidence: [Defining Modules to Control Scope and Privacy](https://doc.rust-lang.org/book/ch07-02-defining-modules-to-control-scope-and-privacy.html), [Paths for Referring to an Item in the Module Tree](https://doc.rust-lang.org/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html), [Bringing Paths into Scope with the use Keyword](https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html)
+  Meaning: `mod`, `use`, and `pub` do not do the same job. `mod` connects a module, `use` shortens access to a path, and `pub` defines what crosses the API boundary.
 - According to the official docs, modules can be moved into separate files and connected from the crate root.
   Evidence: [Separating Modules into Different Files](https://doc.rust-lang.org/book/ch07-05-separating-modules-into-different-files.html)
+  Meaning: splitting a file is not enough by itself. The crate root still has to connect that module into the module tree.
 
 A useful beginner mental model is this layout:
 
@@ -121,6 +127,8 @@ rustc 1.94.0 (4a4ef493e 2026-03-02)
 cargo 1.94.0 (85eff7c80 2026-01-15)
 ```
 
+- How to read this: these are the tool versions used to run the structure example. The project layout rules are stable for this beginner use case, but warning text and command output can still vary by version.
+
 - Directly confirmed result: when I ran the `main.rs` example in a temporary Cargo project with the same structure as the post, the output was:
 
 ```powershell
@@ -134,13 +142,15 @@ sum = 30
 diff = 15
 ```
 
+- How to read this: `main.rs` only wires the run together, while the actual arithmetic functions come from the library crate module. This output confirms that `lib.rs`, `math.rs`, and `use rust_layout_demo::math` are connected correctly.
+
 - Limitation of direct reproduction: I reproduced the representative example in a temporary Cargo project, but I did not add a separate example project to this repository.
 
 ## Interpretation / Opinion
 
-- My interpretation is that the most important early distinction is this: a package is the Cargo-managed bundle, while a crate is the compilation unit.
-- Opinion: once a function looks reusable, moving it out of `main.rs` and into a library module usually makes testing and future refactoring easier.
-- Opinion: `pub` should be treated as an API boundary, not as a convenience switch. Keeping most items private by default tends to produce cleaner project structure.
+- Key decision at this stage: the most important early distinction is this: a package is the Cargo-managed bundle, while a crate is the compilation unit.
+- Decision rule: keep execution wiring in `main.rs`, and move reusable or testable logic into `lib.rs` and its modules.
+- Interpretation: `pub` should be treated as an API boundary, not as a convenience switch. Keeping most items private by default tends to produce cleaner project structure.
 
 ## Limits and Exceptions
 
@@ -148,6 +158,7 @@ diff = 15
 - It does not go into finer visibility details such as `pub(crate)`, `super`, or deeper nested module layouts.
 - You can build a Rust program without a library crate. Still, once the project grows, the `lib.rs` split often becomes easier to maintain.
 - Package names with hyphens introduce additional crate-name details in code, but this post keeps the example intentionally simple.
+- Remaining questions after this post include workspaces, feature flags, publishing, and path dependencies. Those belong in a project-operations layer rather than this beginner layout article.
 
 ## References
 

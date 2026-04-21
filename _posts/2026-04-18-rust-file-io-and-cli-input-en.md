@@ -43,16 +43,22 @@ It is hard to feel that you have really learned Rust if every example ends at sy
 
 This post stays with the most basic text-file workflow. Large-file streaming, binary data, and advanced argument parsing libraries are intentionally left out.
 
+How to read this post: separate code that touches the outside world from code that only calculates. Reading arguments and files can fail, but a function that counts lines and words should be easy to test with the same input string every time.
+
 ## Verified Facts
 
 - According to the standard library docs, `std::env::args` returns an iterator over the command-line arguments of the current process, and the first item is typically the program path.
   Evidence: [std::env::args](https://doc.rust-lang.org/std/env/fn.args.html)
+  Meaning: the first file path from the user is usually not `args[0]`; it is the next argument, which is why the example uses `nth(1)`.
 - According to the standard library docs, `std::fs::read_to_string` reads a whole file into a `String`, and non-UTF-8 data can cause an error.
   Evidence: [std::fs::read_to_string](https://doc.rust-lang.org/std/fs/fn.read_to_string.html)
+  Meaning: this API is simple for small UTF-8 text files, but it also means the whole file is loaded into memory and decoded as UTF-8.
 - According to the standard library docs, `std::fs::write` writes a byte sequence to a file, creating it if needed and replacing the full contents if it already exists.
   Evidence: [std::fs::write](https://doc.rust-lang.org/std/fs/fn.write.html)
+  Meaning: `write` should be read as overwrite behavior, not append behavior.
 - According to the official Rust Book, `Result` and the `?` operator form the basic pattern for propagating recoverable errors to the caller.
   Evidence: [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+  Meaning: instead of crashing through `unwrap`, the example lets missing files or invalid input travel through the function's return type.
 
 One of the smallest useful examples is a CLI that counts lines and words in a text file.
 
@@ -108,6 +114,8 @@ rustc 1.94.0 (4a4ef493e 2026-03-02)
 cargo 1.94.0 (85eff7c80 2026-01-15)
 ```
 
+- How to read this: these are the tool versions used for the CLI example. Path syntax, shell behavior, and error messages can vary across environments.
+
 - Directly confirmed result: when I placed the following `sample.txt` next to the example and ran the program, the result was:
 
 ```text
@@ -127,6 +135,8 @@ lines = 2
 words = 8
 ```
 
+- How to read this: in `cargo run --quiet -- sample.txt`, the value after the second `--` is passed to the program. The output confirms that `main` received the path, read the file, and called the text-counting function.
+
 - Directly confirmed result: the generated `summary.txt` contained:
 
 ```text
@@ -135,13 +145,15 @@ lines = 2
 words = 8
 ```
 
+- How to read this: the screen output and file output match because the same `summary` string is sent to both places. A real tool may choose to separate terminal messages from saved output format.
+
 - Limitation of direct reproduction: I reproduced the flow with a sample file in a temporary Cargo project, but I did not validate larger files, non-UTF-8 input, or additional error paths.
 
 ## Interpretation / Opinion
 
-- My view is that the first important CLI skill is not a powerful parser library, but clean input/output boundaries.
-- Opinion: keep file reading, argument handling, and user-facing errors in `main`, while moving text processing into separate functions.
-- Opinion: for small UTF-8 text files, `read_to_string` is the simplest place to start. Going too early into buffering and streaming can hide the larger structure beginners need to learn first.
+- Key decision at this stage: the first important CLI skill is not a powerful parser library, but clean input/output boundaries.
+- Decision rule: keep file reading, argument handling, and user-facing errors in `main`, while moving text processing into separate functions.
+- Interpretation: for small UTF-8 text files, `read_to_string` is the simplest place to start. Going too early into buffering and streaming can hide the larger structure beginners need to learn first.
 
 ## Limits and Exceptions
 
@@ -149,6 +161,7 @@ words = 8
 - `read_to_string` loads the whole file into memory, which may not fit very large files or binary data.
 - `write` replaces the existing contents, so append-style output needs a different API.
 - Real CLI tools may need crates like `clap`, `BufRead`, and more specific error types, but this post intentionally stays with the simplest standard-library pattern.
+- Remaining questions after this post include large-file streaming, binary file handling, CLI option parsing, and error-message UX. Those require separate design decisions for real tools.
 
 ## References
 

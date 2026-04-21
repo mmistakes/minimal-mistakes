@@ -43,18 +43,25 @@ At the beginner stage, the following four topics are easy to understand separate
 
 This post focuses on connecting those ideas inside one Cargo project you can run immediately. It does not cover `struct`, `enum`, `Result`, `Option`, or advanced pattern matching.
 
+How to read this post: follow the sequence "create a value, attach a type, choose a flow, group code into a function." At this stage, it is more important to recognize whether a line creates a new binding, changes an existing value, or returns a value from a branch than to memorize every built-in type.
+
 ## Verified Facts
 
 - Rust variables are immutable by default, and `mut` and shadowing are different concepts.
   Evidence: [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
+  Meaning: `let` does not create a slot you can freely change later. Rust asks you to show whether you intend mutation or a new binding.
 - Rust data types are grouped into scalar and compound types, and `parse()` is a common case where an explicit type annotation is needed.
   Evidence: [Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+  Meaning: types are not just a list to memorize. They are expectations you share with the compiler, especially when one operation could produce multiple possible types.
 - `if` requires a `bool`, `loop` can return a value through `break`, and `while` and `for` are used for different repetition patterns.
   Evidence: [Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
+  Meaning: Rust keeps conditions and returned values explicit. That strictness catches many accidental branches early.
 - Rust functions are defined with `fn`, and if the last expression has no semicolon, that value becomes the return value.
   Evidence: [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)
+  Meaning: the distinction between statements and expressions is central to understanding Rust return values.
 - The beginner practice flow is built around `cargo new`.
   Evidence: [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+  Meaning: even when you only edit one file, a Cargo project lets this practice flow grow naturally into testing, modules, and dependencies later.
 
 ## Directly Confirmed Results
 
@@ -96,6 +103,8 @@ level = 2
 spaces length = 3
 ```
 
+- How to read this: `count` is bound once and not changed, `level` is reassigned because it is mutable, and `spaces` is a new binding with the same name rather than a mutation of the old value.
+
 - Direct result: reassigning an immutable variable produced a compiler error like the one below.
 
 ```rust
@@ -108,6 +117,8 @@ fn main() {
 ```text
 error[E0384]: cannot assign twice to immutable variable `count`
 ```
+
+- How to read this: this error does not mean Rust forbids reassignment everywhere. It means this binding was immutable. Use `let mut count` when you intend mutation, or shadowing when you intend a new binding.
 
 ### 3. Types were easier to learn through the most common examples first
 
@@ -155,6 +166,8 @@ fn main() {
 guess = 42
 ```
 
+- How to read this: `"42"` is a string and `guess` is an `i32`. The important point is not just that parsing succeeded, but that the code made the target type explicit.
+
 ### 4. Control flow forms had slightly different roles
 
 - Direct result: `if` required a `bool` condition and worked well for a simple branch like this.
@@ -174,6 +187,8 @@ fn main() {
 ```text
 It is odd.
 ```
+
+- How to read this: the condition must evaluate to a `bool`, such as `number % 2 == 0`. Do not read Rust `if` conditions like C-style truthy numbers.
 
 - Direct result: `loop` could return a value through `break`.
 
@@ -196,6 +211,8 @@ fn main() {
 ```text
 result = 30
 ```
+
+- How to read this: `loop` is not only for endless repetition. With `break count * 10`, the loop can produce a value that gets stored in a variable.
 
 - Direct result: `while` worked naturally for condition-based repetition, `for` for arrays and ranges, and `match` for value-based branching.
 
@@ -266,7 +283,7 @@ sum = 30
 bigger = 11
 ```
 
-- Direct result: adding a semicolon to the final expression of a returning function changed the flow into `()` and no longer matched the intended return type.
+- How to read this: the last lines in `add` and `max` are expressions, so they become return values. Adding a semicolon to the final expression of a returning function changed the flow into `()` and no longer matched the intended return type.
 
 ### 6. The combined example made the connections clearer
 
@@ -312,8 +329,8 @@ fn main() {
 
 ## Interpretation / Opinion
 
-- Opinion: for beginners, variables, types, control flow, and functions are easier to learn by rerunning one `main.rs` file than by memorizing each rule separately.
-- Opinion: it is more practical to learn the most common types first than to try to memorize the full type list all at once.
+- Key decision at this stage: variables, types, control flow, and functions are easier to learn by rerunning one `main.rs` file than by memorizing each rule separately.
+- Decision rule: learn the types you will keep seeing first, such as `i32`, `bool`, `&str`, and `String`, instead of trying to memorize the full type list at once.
 - Interpretation: the most important outcome at this stage is not "knowing a lot of syntax," but building a feel for storing values, branching, repeating, and grouping code into functions.
 
 ## Limits and Exceptions
@@ -322,6 +339,7 @@ fn main() {
 - Exact diagnostics and some inferred behavior can vary across Rust versions.
 - This post does not cover macOS, Linux, or WSL-specific differences.
 - `match` is a much deeper topic, but here it is only used as an entry-level branching example.
+- Remaining questions after this post include `Option`, `Result`, and how ownership affects function arguments. Those are better handled in the ownership and error-handling posts.
 
 ## References
 

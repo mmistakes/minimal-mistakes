@@ -42,18 +42,24 @@ After file I/O and CLI input, the next natural step is external data formats. Be
 
 This post stays with the most basic typed-data conversion flow. It does not cover custom serializers, high-performance streaming parsers, or more advanced enum-tagging strategies.
 
+How to read this post: treat the Rust struct as the stable internal boundary and the external format as the layer being converted. It is more important to define the type your program wants than to manually inspect JSON or TOML strings.
+
 ## Verified Facts
 
 - According to the official documentation, Serde is a framework for serializing and deserializing Rust data structures, with `Serialize` and `Deserialize` as its central traits.
   Evidence: [Serde crate docs](https://docs.rs/serde/latest/serde/), [Serde overview](https://serde.rs/)
+  Meaning: Serde is not JSON-specific. It is the common framework that lets Rust types move to and from multiple data formats.
 - According to the official docs, enabling the `derive` feature allows automatic generation of `Serialize` and `Deserialize` implementations for structs and enums.
   Evidence: [Using derive](https://serde.rs/derive.html)
+  Meaning: for straightforward fields and names, you can start without hand-writing conversion code.
 - According to the official docs, `serde_json::from_str` and `serde_json::to_string_pretty` are used to convert between JSON strings and Rust values.
   Evidence: [serde_json crate docs](https://docs.rs/serde_json/latest/serde_json/)
+  Meaning: JSON can be parsed into a typed Rust value instead of being manipulated as raw strings.
 - According to the official docs, `toml::from_str` and `toml::to_string_pretty` are used to convert between TOML strings and Rust values.
   Evidence: [toml crate docs](https://docs.rs/toml/latest/toml/)
+  Meaning: even when the file format is TOML, the internal Rust boundary can remain the same `AppConfig` type.
 
-As of April 15, 2026, the `latest` pages on docs.rs supported using dependency lines like:
+As of April 16, 2026, the `latest` pages on docs.rs supported using dependency lines like:
 
 ```toml
 [dependencies]
@@ -130,6 +136,8 @@ rustc 1.94.0 (4a4ef493e 2026-03-02)
 cargo 1.94.0 (85eff7c80 2026-01-15)
 ```
 
+- How to read this: the Rust toolchain version is only part of the reproduction context. For Serde examples, the `serde`, `serde_json`, and `toml` crate versions also matter.
+
 - Directly confirmed result: when I combined the JSON and TOML examples into one `main` function in a temporary Cargo project with `serde`, `serde_json`, and `toml` added, the output was:
 
 ```powershell
@@ -146,13 +154,15 @@ port = 8080
 debug = true
 ```
 
+- How to read this: the key result is that the same `AppConfig` type was produced from both JSON and TOML. Different external formats can still converge on one internal Rust type.
+
 - Limitation of direct reproduction: I reproduced the basic JSON and TOML conversion flow in a temporary Cargo project, but I did not validate extended cases such as nested types, enum tagging, or custom field attributes.
 
 ## Interpretation / Opinion
 
-- My view is that the most important beginner Serde habit is to define a type boundary first instead of manually manipulating raw JSON strings.
-- Opinion: for small config files and API responses, deserializing directly into a struct is usually easier to validate, test, and maintain than starting from a generic `Value` or map.
-- Opinion: format-specific parsing crates may change over time, but internal application types tend to live longer, so it is worth stabilizing the struct design early.
+- Key decision at this stage: the most important beginner Serde habit is to define a type boundary first instead of manually manipulating raw JSON strings.
+- Decision rule: deserialize into a struct when the fields are reasonably known, and reserve dynamic values such as `serde_json::Value` for data that is truly flexible.
+- Interpretation: format-specific parsing crates may change over time, but internal application types tend to live longer, so it is worth stabilizing the struct design early.
 
 ## Limits and Exceptions
 
@@ -160,6 +170,7 @@ debug = true
 - Large JSON streams or very strict validation requirements may need different tools and patterns.
 - TOML and JSON have different representation rules, so the same struct will not always map equally naturally in every case.
 - Dependency versions can change over time, so in a real project it is safer to check the post's verification date together with the latest crate pages.
+- Remaining questions after this post include attributes such as rename and flatten, enum tagging, borrowed deserialization, and validation layers. Those belong in a Serde deep dive.
 
 ## References
 

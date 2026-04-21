@@ -43,16 +43,22 @@ At the beginning, Rust debugging in VS Code usually feels unclear in four places
 
 This post only covers the basic Cargo-project path needed to reduce that confusion. It does not cover WSL, remote containers, multiple binaries, test debugging, or advanced LLDB settings.
 
+How to read this post: separate the layer that helps the editor understand code from the layer that actually stops and inspects a running program. `rust-analyzer` helps with analysis and debug entry points. `CodeLLDB` and `launch.json` define the executable, working directory, and arguments for a reproducible debug session.
+
 ## Verified Facts
 
 - The official VS Code Rust guide explains the workflow around Cargo projects and `rust-analyzer`.
   Evidence: [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)
+  Meaning: opening a Cargo project gives VS Code and `rust-analyzer` enough structure to connect editor features with the Rust build flow.
 - The official VS Code debug configuration guide explains that `.vscode/launch.json` is where debugger type, executable path, working directory, and arguments are defined.
   Evidence: [Visual Studio Code debug configuration](https://code.visualstudio.com/docs/debugtest/debugging-configuration)
+  Meaning: `launch.json` is not just a button configuration file. It stores the conditions needed to reproduce a debug run.
 - The official VS Code debugging guide documents the standard debug keys such as `F5`, `F9`, `F10`, and `F11`.
   Evidence: [Debug code with Visual Studio Code](https://code.visualstudio.com/docs/debugtest/debugging)
+  Meaning: at the beginner stage, you do not need every debugger feature. Start with break, continue, step over, and step into.
 - `rust-analyzer` is the main editing and language-analysis layer, while `CodeLLDB` is an LLDB-based debugger extension.
   Evidence: [rust-analyzer book](https://rust-analyzer.github.io/book/), [CodeLLDB repository](https://github.com/vadimcn/codelldb)
+  Meaning: if code lenses or diagnostics are missing, inspect `rust-analyzer` first. If breakpoints or launch behavior fail, inspect `CodeLLDB` and the debug configuration first.
 
 ## Directly Confirmed Results
 
@@ -66,7 +72,7 @@ cd rust-debug-demo
 code .
 ```
 
-- Direct result: a single-file flow such as `rustc hello.rs` worked for compilation, but it was a poor fit for the `rust-analyzer + CodeLLDB` walkthrough used in this post.
+- How to read this: the goal is to let VS Code recognize the Cargo project root. A single-file flow such as `rustc hello.rs` worked for compilation, but it was a poor fit for the `rust-analyzer + CodeLLDB` walkthrough used in this post.
 
 ### 2. Installing `rust-analyzer` made debug entry much easier
 
@@ -76,6 +82,8 @@ code .
 ![Run Debug]({{ '/images/rust_02/run_debug_%EB%B2%84%ED%8A%BC.png' | relative_url }})
 
 - Direct result: that button, or the `Rust Analyzer: Debug` command, was enough to enter the first debug session.
+
+- How to read this: seeing `Run | Debug` means the editor has connected the current function to the Cargo project. If it does not appear, check that the project root is open and that `rust-analyzer` is running.
 
 ### 3. `CodeLLDB` and `launch.json` fixed the execution conditions
 
@@ -108,6 +116,8 @@ code .
 ```powershell
 cargo build
 ```
+
+- How to read this: `program` is the executable path, `args` are the values passed to the program, and `cwd` is the working directory. When a debug session fails, these three fields are the first things to inspect.
 
 ### 4. Breakpoints, variables, and the call stack were easiest to learn in this order
 
@@ -164,12 +174,12 @@ args[1] = abcd
 args[2] = efgh
 ```
 
-- Direct result: `args[0]` was the executable path, and the values from `launch.json` appeared starting at `args[1]` and `args[2]`.
+- How to read this: `args[0]` is not the first option you typed. It usually represents the executable path. The values from `launch.json` appeared starting at `args[1]` and `args[2]`.
 
 ## Interpretation / Opinion
 
-- Opinion: for beginners, it is easier to learn one debugger stack consistently than to mix several debugger extensions at once. `rust-analyzer + CodeLLDB` is a practical pair for that.
-- Opinion: Cargo projects connect more naturally to `Run | Debug`, `launch.json`, and the generated executable path than single-file examples do.
+- Key decision at this stage: for beginners, it is easier to learn one debugger stack consistently than to mix several debugger extensions at once. `rust-analyzer + CodeLLDB` is a practical pair for that.
+- Decision rule: if the target is still a single file, first move it into a Cargo project; if the same debug setup will be repeated, pin it in `launch.json`.
 - Interpretation: `launch.json` is not just an option file. It is the reproducibility layer that pins down which executable, working directory, and arguments are used during a debug session.
 
 ## Limits and Exceptions
@@ -178,6 +188,7 @@ args[2] = efgh
 - Button placement, menu labels, and onboarding text can vary across VS Code, `rust-analyzer`, and `CodeLLDB` versions.
 - The official VS Code Rust guide sometimes points Windows users to the Microsoft C++ extension first. This post stays with `CodeLLDB` to keep the walkthrough on one debugger stack.
 - Test debugging, attach mode, multiple binaries, and larger workspace setups are outside the scope of this post.
+- Remaining questions after this post include test debugging, attach debugging, and remote-environment debugging. Those need separate treatment because the target process and debugger connection change.
 
 ## References
 

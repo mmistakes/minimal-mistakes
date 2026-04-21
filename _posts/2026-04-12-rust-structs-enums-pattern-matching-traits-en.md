@@ -43,20 +43,28 @@ At the beginner stage, the following four questions are easy to learn separately
 
 This post focuses on connecting those questions inside one runnable Rust project. It does not cover advanced derive usage, the full space of trait bounds, trait objects, or advanced pattern guards.
 
+How to read this post: think in the sequence "shape the data, restrict the possible states, extract the state, then name shared behavior." `struct`, `enum`, `match`, and `trait` feel much less separate when you read them as tools for building a small domain model.
+
 ## Verified Facts
 
 - A `struct` is Rust's basic tool for grouping related data into a custom type.
   Evidence: [Defining and Instantiating Structs](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
+  Meaning: a struct lets several values travel together under a meaningful type name instead of being passed around as disconnected fields.
 - An `impl` block is the standard way to place methods close to the type they belong to.
   Evidence: [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
+  Meaning: putting behavior near the type makes the code easier to read and gives callers the natural `value.method()` style.
 - An `enum` represents exactly one variant out of several possibilities, and each variant can carry different data.
   Evidence: [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)
+  Meaning: instead of scattering states across strings or numeric codes, you can put all valid cases in one type.
 - `match` requires exhaustive handling, while `if let` is the concise form for focusing on one pattern.
   Evidence: [match](https://doc.rust-lang.org/book/ch06-02-match.html), [Concise Control Flow with if let](https://doc.rust-lang.org/book/ch06-03-if-let.html)
+  Meaning: `match` helps the compiler catch missing state handling, while `if let` keeps one-case checks readable.
 - A `trait` defines a shared behavior contract that multiple types can implement.
   Evidence: [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)
+  Meaning: for beginners, a trait is best read first as a promise that a type provides certain behavior.
 - The easiest beginner practice flow is built around a small `cargo new` project.
   Evidence: [Hello, Cargo!](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
+  Meaning: modeling examples are easiest to understand when you can change the types and rerun the same small project.
 
 ## Directly Confirmed Results
 
@@ -114,6 +122,8 @@ area = 600
 can_hold = true
 ```
 
+- How to read this: `Rectangle` groups width and height into one meaningful value, while `area` and `can_hold` are behavior attached to that type. The point is not only the arithmetic, but the data-behavior grouping.
+
 ### 3. `enum`, `match`, and `if let` worked well as one branching flow
 
 - Direct result: the example below showed enum-based branching and the compact one-pattern style of `if let` together.
@@ -148,6 +158,8 @@ fn main() {
 vip level = 3
 max = 5
 ```
+
+- How to read this: `Ticket::Vip(3)` means the value is in the VIP state and carries a level. `match` handles every ticket shape, while `if let` extracts only the one `Some` case we care about.
 
 ### 4. A combined example made the division of roles much clearer
 
@@ -205,13 +217,13 @@ fn main() {
 summary = Rust Structs and Traits [published]
 ```
 
-- Direct result: if not every enum variant is constructed in the example, Rust can emit `dead_code`-style warnings. In this case that was caused by the shortened teaching example, not by an invalid concept.
+- How to read this: `Article` holds data, `PostState` limits valid states, `status_label` interprets those states, and `Summary` names shared behavior. If not every enum variant is constructed in the example, Rust can emit `dead_code`-style warnings. In this case that was caused by the shortened teaching example, not by an invalid concept.
 
 ## Interpretation / Opinion
 
-- Interpretation: `struct`, `enum`, `match`, and `trait` are easier to understand as tools that share the larger job of data modeling and behavior design, not as isolated pieces of syntax.
-- Opinion: for beginners, `trait` is easier to learn first as "a shared contract across types" than as an abstract language feature.
-- Opinion: `if let` is best introduced as a readability shortcut for one pattern, not as a replacement for exhaustive `match`.
+- Key decision at this stage: `struct`, `enum`, `match`, and `trait` are easier to understand as tools that share the larger job of data modeling and behavior design, not as isolated pieces of syntax.
+- Decision rule: use `struct` for field groups, `enum` for a closed set of states, `match` for state-specific handling, and `trait` for shared behavior across types.
+- Interpretation: `if let` is best introduced as a readability shortcut for one pattern, not as a replacement for exhaustive `match`.
 
 ## Limits and Exceptions
 
@@ -219,6 +231,7 @@ summary = Rust Structs and Traits [published]
 - Depending on the snippet, warnings such as unused variants can appear, and exact warning text can vary across Rust versions.
 - `Option<T>` and `Result<T, E>` are important enum examples, but this post only mentions that connection briefly.
 - This post does not cover environment-specific differences on macOS, Linux, or WSL.
+- Remaining questions after this post include generic trait bounds, trait objects, and derive macro usage. Those fit better in trait deep dives or error-handling posts.
 
 ## References
 
