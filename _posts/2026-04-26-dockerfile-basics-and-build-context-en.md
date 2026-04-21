@@ -25,11 +25,11 @@ The practical conclusion is that beginners should understand Dockerfiles as "ima
 ## Document Information
 
 - Written on: 2026-04-20
-- Verification date: 2026-04-20
+- Verification date: 2026-04-21
 - Document type: analysis
-- Test environment: no direct execution test. In the current Windows PowerShell writing environment, the `docker` CLI was unavailable, so this post follows official Docker documentation and official command examples.
-- Test version: local Docker CLI/Engine version unavailable; Docker official docs checked on 2026-04-20
-- Source grade: only official Docker documentation is used.
+- Test environment: Windows PowerShell with Docker Desktop for Windows. After restarting Docker Desktop and the `docker-desktop` WSL distribution, tests ran on the `desktop-linux` context with Linux containers.
+- Test version: Docker Desktop 4.70.0(224270), Docker CLI/Engine 29.4.0(API 1.54), Docker Compose v5.1.2, Docker Buildx v0.33.0-desktop.1. Docker official docs were checked on 2026-04-20.
+- Source grade: official Docker documentation and local reproduced results are used.
 - Note: this post stays with the fundamental relationship between Dockerfiles and build context. It does not yet cover multi-stage builds, build secrets, or advanced build arguments.
 
 ## Problem Definition
@@ -83,14 +83,17 @@ The key is that the last `.` matters as much as the Dockerfile itself, because i
 
 ## Directly Reproduced Results
 
-- Directly confirmed result: as of 2026-04-20, the `docker` command was not available in the current PowerShell writing environment.
+- Directly confirmed result: on 2026-04-21, I created temporary build contexts from Windows PowerShell and verified Dockerfile build, `.dockerignore` exclusion, exec-form `CMD`, and the `ENTRYPOINT` plus `CMD` relationship.
 
 ```powershell
-docker --version
+docker build -t codex/context-test:0.1.0 <temp-context>
+docker run --rm codex/context-test:0.1.0
+docker build -t codex/entrypoint-test:0.1.0 <temp-context>
+docker run --rm codex/entrypoint-test:0.1.0
+docker run --rm codex/entrypoint-test:0.1.0 custom
 ```
 
-- Result summary: I could not directly build or run Dockerfile examples in this environment.
-- No direct reproduction: the Dockerfile examples and explanations of build context, `.dockerignore`, `CMD`, and `ENTRYPOINT` therefore follow the official Docker documentation verified on 2026-04-20.
+- Result summary: in a context where `.dockerignore` excluded `ignored.txt`, running the image built with `COPY . .` printed `context-ok:app-ok`. That test confirms `app.txt` was copied and `ignored.txt` was excluded. For an image with `ENTRYPOINT ["echo", "entry"]` and `CMD ["default"]`, the default run printed `entry default`, and passing `custom` printed `entry custom`.
 
 ## Interpretation / Opinion
 
@@ -111,7 +114,7 @@ This post does not cover multi-stage builds, `ARG`, `ENV`, build secrets, cache 
 
 Also, a base image may already define a `WORKDIR`. Still, as the official docs point out, explicitly setting `WORKDIR` in your own image is usually safer because it avoids unintended operations in unknown directories.
 
-Because the Docker CLI is unavailable in the current writing environment, I could not directly rerun `docker build`, `docker run`, or `.dockerignore` behavior here. The factual layer is therefore limited to what the official Docker documentation explicitly states as of 2026-04-20.
+The direct reproduction used small temporary contexts based on `alpine:3.20`. I did not separately run multi-stage builds, `ARG`, `ENV`, build secrets, cache mounts, health checks, or non-root-user setup. Those advanced Dockerfile topics remain outside the scope of this post.
 
 ## References
 

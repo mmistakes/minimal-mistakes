@@ -25,11 +25,11 @@ The practical conclusion is simple. Tags are convenient for people and workflows
 ## Document Information
 
 - Written on: 2026-04-20
-- Verification date: 2026-04-20
+- Verification date: 2026-04-21
 - Document type: analysis
-- Test environment: no direct execution test. In the current Windows PowerShell writing environment, the `docker` CLI was unavailable, so this post follows official Docker documentation and official command examples.
-- Test version: local Docker CLI/Engine version unavailable; Docker official docs checked on 2026-04-20
-- Source grade: only official Docker documentation is used.
+- Test environment: Windows PowerShell with Docker Desktop for Windows. After restarting Docker Desktop and the `docker-desktop` WSL distribution, tests ran on the `desktop-linux` context with Linux containers.
+- Test version: Docker Desktop 4.70.0(224270), Docker CLI/Engine 29.4.0(API 1.54), Docker Compose v5.1.2, Docker Buildx v0.33.0-desktop.1. Docker official docs were checked on 2026-04-20.
+- Source grade: official Docker documentation and local reproduced results are used.
 - Note: this post does not cover multi-platform manifests or image signing. It stays with the minimum concepts needed to separate tags from digests.
 
 ## Problem Definition
@@ -70,14 +70,18 @@ The first and third lines are human-friendly naming flows. The second is the exa
 
 ## Directly Reproduced Results
 
-- Directly confirmed result: as of 2026-04-20, the `docker` command was not available in the current PowerShell writing environment.
+- Directly confirmed result: on 2026-04-21, I pulled `alpine:3.20`, inspected its RepoDigest, pulled by digest, and created an additional local tag from Windows PowerShell.
 
+{% raw %}
 ```powershell
-docker --version
+docker pull alpine:3.20
+docker image inspect alpine:3.20 --format '{{index .RepoDigests 0}}'
+docker pull alpine@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc
+docker image tag alpine:3.20 codex/alpine-test:verified
 ```
+{% endraw %}
 
-- Result summary: without the Docker CLI, I could not directly rerun `docker pull`, `docker image tag`, or `docker image inspect` examples here.
-- No direct reproduction: the command patterns and distinctions in this post therefore follow the official Docker documentation verified on 2026-04-20.
+- Result summary: the RepoDigest for `alpine:3.20` was `alpine@sha256:d9e853e87e55526f6b2917df91a2115c36dd7c696a35be12163d44e6e2a4b6bc`. Pulling the same digest reported the image as up to date. The local tag `codex/alpine-test:verified` pointed to the same image ID as `alpine:3.20`.
 
 ## Interpretation / Opinion
 
@@ -100,7 +104,7 @@ This post does not cover multi-platform images, manifest lists, OCI layout detai
 
 Also, saying "tags can change" does not mean "never use tags." Tags are still useful for development, QA, collaboration, and release naming. The real point is that when exact reproducibility matters, you should record the digest alongside the tag.
 
-Because the Docker CLI is unavailable in the current writing environment, I could not include direct `pull`, `tag`, or `inspect` outputs. The factual layer of this post is therefore limited to what the official Docker documentation explicitly describes as of 2026-04-20.
+The direct reproduction used a single `alpine:3.20` image reference. I did not separately test multi-platform images, manifest lists, OCI layout details, or content trust. The general tag-and-digest explanation is limited to the Docker documentation and the local command results above.
 
 ## References
 

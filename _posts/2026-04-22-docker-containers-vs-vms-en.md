@@ -25,11 +25,11 @@ This post starts the Docker section by clarifying the difference between contain
 ## Document Information
 
 - Written on: 2026-04-20
-- Verification date: 2026-04-20
+- Verification date: 2026-04-21
 - Document type: analysis
-- Test environment: no direct execution test. In the current Windows PowerShell writing environment, the `docker` CLI was unavailable, so this post is organized from official Docker documentation and official command examples.
-- Test version: local Docker CLI/Engine version unavailable; Docker official docs checked on 2026-04-20
-- Source grade: only official Docker documentation is used.
+- Test environment: Windows PowerShell with Docker Desktop for Windows. After restarting Docker Desktop and the `docker-desktop` WSL distribution, tests ran on the `desktop-linux` context with Linux containers.
+- Test version: Docker Desktop 4.70.0(224270), Docker CLI/Engine 29.4.0(API 1.54), Docker Compose v5.1.2, Docker Buildx v0.33.0-desktop.1. Docker official docs were checked on 2026-04-20.
+- Source grade: official Docker documentation and local reproduced results are used.
 - Note: this is not a deep kernel-level security article about cgroups or namespaces. It focuses on the minimum runtime model needed before moving to Dockerfile and registry topics.
 
 ## Problem Definition
@@ -70,14 +70,20 @@ That example captures Docker’s shortest core path: start from an image, run it
 
 ## Directly Reproduced Results
 
-- Directly confirmed result: as of 2026-04-20, the `docker` command was not available in the current PowerShell writing environment.
+- Directly confirmed result: on 2026-04-21, both Docker CLI and Docker Engine responded from Windows PowerShell. I reproduced the basic container flow: run a container, inspect it with `docker ps`, reach it over HTTP, and stop it. I used host port `18080` instead of `8080` to avoid a local port collision.
 
+{% raw %}
 ```powershell
-docker --version
+docker version --format 'Client={{.Client.Version}} Server={{.Server.Version}} API={{.Server.APIVersion}} OS={{.Server.Os}}/{{.Server.Arch}}'
+docker run -d --rm --name codex-welcome-test -p 18080:80 docker/welcome-to-docker:latest
+docker ps --filter 'name=codex-welcome-test'
+Invoke-WebRequest -Uri 'http://localhost:18080' -UseBasicParsing
+docker stop codex-welcome-test
 ```
+{% endraw %}
 
-- Result summary: the shell could not resolve the `docker` CLI, so I could not directly rerun container examples from this environment.
-- No direct reproduction: the command examples and runtime descriptions in this post therefore follow the official Docker documentation as verified on 2026-04-20.
+- Result summary: `docker version` printed Client/Server `29.4.0`, and the Server OS was `linux/amd64`. The `docker/welcome-to-docker:latest` container appeared as `Up` in `docker ps`, `http://localhost:18080` returned HTTP `200`, and `docker stop` removed the test container.
+- Storage check: I wrote `volume-ok` into a named volume from one container and read the same value from another container. I also mounted a temporary host directory as a bind mount and read `bind-ok` from inside an Alpine container.
 
 ## Interpretation / Opinion
 
@@ -99,7 +105,7 @@ This post does not explain Docker isolation at the kernel-feature level. Topics 
 
 This post also stays with Linux-container mental models. The Docker docs explicitly treat native Windows containers as a different case, so Windows-container image compatibility and storage-driver details are outside the scope here.
 
-Most importantly, the current writing environment does not have the Docker CLI installed, so I could not directly rerun the container and storage examples. The factual layer in this post is therefore limited to what the official Docker documentation explicitly describes.
+The 2026-04-21 reproduction used Linux containers on Docker Desktop. I did not test native Windows containers, rootless mode, user namespace isolation, or Docker Desktop file-sharing behavior on other operating systems. The run example uses host port `18080`, so only the host-side port differs from the official `8080` example.
 
 ## References
 

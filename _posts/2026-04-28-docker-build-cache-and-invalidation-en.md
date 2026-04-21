@@ -25,11 +25,11 @@ The practical conclusion is that, at the beginner stage, perceived build speed d
 ## Document Information
 
 - Written on: 2026-04-20
-- Verification date: 2026-04-20
+- Verification date: 2026-04-21
 - Document type: analysis
-- Test environment: no direct execution test. In the current Windows PowerShell writing environment, the `docker` CLI was unavailable, so this post follows official Docker documentation and official command examples.
-- Test version: local Docker CLI/Engine version unavailable; Docker official docs checked on 2026-04-20
-- Source grade: only official Docker documentation is used.
+- Test environment: Windows PowerShell with Docker Desktop for Windows. After restarting Docker Desktop and the `docker-desktop` WSL distribution, tests ran on the `desktop-linux` context with Linux containers.
+- Test version: Docker Desktop 4.70.0(224270), Docker CLI/Engine 29.4.0(API 1.54), Docker Compose v5.1.2, Docker Buildx v0.33.0-desktop.1. Docker official docs were checked on 2026-04-20.
+- Source grade: official Docker documentation and local reproduced results are used.
 - Note: this post covers the basic cache rules and the most important beginner optimization patterns. It does not go deep into remote cache configuration for CI systems.
 
 ## Problem Definition
@@ -88,14 +88,17 @@ tmp*
 
 ## Directly Reproduced Results
 
-- Directly confirmed result: as of 2026-04-20, the `docker` command was not available in the current PowerShell writing environment.
+- Directly confirmed result: on 2026-04-21, I built the same Dockerfile repeatedly from Windows PowerShell, then changed only `app.txt` and checked which steps were reused from cache.
 
 ```powershell
-docker --version
+docker build --progress=plain -t codex/cache-test:0.2.0 <temp-context>
+docker build --progress=plain -t codex/cache-test:0.2.0 <temp-context>
+# change only app.txt
+docker build --progress=plain -t codex/cache-test:0.2.1 <temp-context>
+docker run --rm codex/cache-test:0.2.1
 ```
 
-- Result summary: I could not directly compare `docker build`, `--no-cache`, or `docker builder prune` behavior in this environment.
-- No direct reproduction: the cache rules, invalidation patterns, and Dockerfile examples in this post therefore follow the official Docker documentation verified on 2026-04-20.
+- Result summary: the second unchanged build showed 5 `CACHED` steps. After changing only `app.txt`, the build reused `COPY package.txt .` and `RUN cp package.txt package.copy`, while `COPY app.txt .` and `RUN cp app.txt app.copy` ran again. Running the final image printed the updated `app-v2-...` value.
 
 ## Interpretation / Opinion
 
@@ -117,7 +120,7 @@ This is not a benchmark post with measured timings from repeated builds across r
 
 Also, cache mounts, external cache, and registry cache depend on the builder and CI environment you use. This post stays with the concepts and beginner-level optimization patterns explicitly documented by Docker.
 
-Because the Docker CLI is unavailable in the current writing environment, I could not directly run repeated builds here to observe cache reuse and invalidation. The factual layer is therefore limited to what the official Docker documentation explicitly states.
+The direct reproduction only observed cache reuse with a small temporary Dockerfile. I did not benchmark real project build times, remote cache, registry cache, or cache mount performance. This post therefore does not make quantitative speedup claims.
 
 ## References
 
