@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 04. Why Docker Builds Become Slow and Where Cache Gets Invalidated"
 description: "Explains how Docker build cache is reused, when cache gets invalidated, and why Dockerfile ordering matters."
-date: 2026-04-28 09:00:00 +0900
+date: 2026-04-24 09:00:00 +0900
 lang: en
 translation_key: docker-build-cache-and-invalidation
 section: development

@@ -2,9 +2,9 @@
 
 ## Snapshot
 
-- 검토 기준일: 2026-04-21
+- 검토 기준일: 2026-04-22
 - 목적: `development` 아래 `devops` 허브 후보와 관련 연재 구조를 보관한다.
-- 현재 상태: Docker 01~05와 Git 01~08 KOR/ENG 포스트를 `_posts/`에 반영했다. Git 글은 2026-05-01부터 2026-05-16까지 예약 발행 일정으로 두었으므로, 2026-04-21 기준 일반 Jekyll build에서는 future post로 skip된다. 다만 `_data/section_topics.yml`과 `_pages/`에는 아직 `devops` 허브 메타데이터를 추가하지 않았다.
+- 현재 상태: Docker 01~05와 Git 01~08 KOR/ENG 포스트를 `_posts/`에 반영했다. Docker 01~05는 2026-04-21부터 2026-04-25까지 주제 기준 하루 간격으로 발행하고, 같은 주제의 KOR/ENG 번역 쌍은 동일 날짜에 발행한다. Git 글은 2026-05-01부터 2026-05-16까지 예약 발행 일정으로 두었으므로, 2026-04-22 기준 일반 Jekyll build에서는 2026-04-23 이후 글이 future post로 skip된다. 다만 `_data/section_topics.yml`과 `_pages/`에는 아직 `devops` 허브 메타데이터를 추가하지 않았다.
 - 권장 구조: `section: development`, `topic_key: devops`
 - 권장 순서: `Docker -> Git -> Jenkins -> K8S`
 - 별도 분리 주제: `cloud`는 이 로드맵에 섞지 않고 추후 별도 계획으로 다룬다.

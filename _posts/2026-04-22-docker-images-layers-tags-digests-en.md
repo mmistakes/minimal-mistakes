@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 02. How to Understand Images, Layers, Tags, and Digests"
 description: "Explains the differences between Docker images, layers, tags, and digests, and what should stay mutable versus pinned for deployment."
-date: 2026-04-24 09:00:00 +0900
+date: 2026-04-22 09:00:00 +0900
 lang: en
 translation_key: docker-images-layers-tags-digests
 section: development

@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 03. How to Understand Dockerfile Basics and Build Context"
 description: "Explains Dockerfiles, WORKDIR, CMD, ENTRYPOINT, build context, and .dockerignore from a beginner perspective."
-date: 2026-04-26 09:00:00 +0900
+date: 2026-04-23 09:00:00 +0900
 lang: en
 translation_key: dockerfile-basics-and-build-context
 section: development

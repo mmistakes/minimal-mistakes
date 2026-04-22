@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 04. 이미지 빌드가 느려지는 이유와 캐시가 깨지는 지점"
 description: "Docker build cache가 어떻게 재사용되고 언제 invalidation되는지, Dockerfile 순서가 왜 중요한지 정리한 글."
-date: 2026-04-27 09:00:00 +0900
+date: 2026-04-24 09:00:00 +0900
 lang: ko
 translation_key: docker-build-cache-and-invalidation
 section: development

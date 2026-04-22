@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 02. 이미지, 레이어, 태그, digest를 어떻게 이해해야 하는가"
 description: "Docker image, layer, tag, digest의 차이와 배포 시 무엇을 가변 값으로 두고 무엇을 고정해야 하는지 정리한 글."
-date: 2026-04-23 09:00:00 +0900
+date: 2026-04-22 09:00:00 +0900
 lang: ko
 translation_key: docker-images-layers-tags-digests
 section: development

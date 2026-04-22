@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 05. 레지스트리 푸시와 배포용 이미지 관리 기준"
 description: "Docker registry, repository, tag, push 흐름과 배포용 이미지 관리 기준을 초급자 관점에서 정리한 글."
-date: 2026-04-29 09:00:00 +0900
+date: 2026-04-25 09:00:00 +0900
 lang: ko
 translation_key: docker-registry-push-and-image-management
 section: development

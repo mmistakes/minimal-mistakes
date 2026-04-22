@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 01. What Is Different Between Containers and VMs?"
 description: "Explains Docker containers versus VMs from a beginner perspective, including images, writable layers, volumes, and bind mounts."
-date: 2026-04-22 09:00:00 +0900
+date: 2026-04-21 09:00:00 +0900
 lang: en
 translation_key: docker-containers-vs-vms
 section: development

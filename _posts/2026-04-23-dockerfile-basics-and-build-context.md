@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 03. Dockerfile 기본 문법과 build context를 어떻게 이해해야 하는가"
 description: "Dockerfile, WORKDIR, CMD, ENTRYPOINT, build context, .dockerignore를 초급자 관점에서 정리한 글."
-date: 2026-04-25 09:00:00 +0900
+date: 2026-04-23 09:00:00 +0900
 lang: ko
 translation_key: dockerfile-basics-and-build-context
 section: development

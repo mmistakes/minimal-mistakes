@@ -2,7 +2,7 @@
 layout: single
 title: "Docker 05. Registry Push and Image Management Criteria for Deployment"
 description: "A beginner-focused explanation of Docker registry, repository, tag, push flow, and image management criteria for deployment."
-date: 2026-04-30 09:00:00 +0900
+date: 2026-04-25 09:00:00 +0900
 lang: en
 translation_key: docker-registry-push-and-image-management
 section: development
