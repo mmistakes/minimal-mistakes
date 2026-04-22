@@ -5,12 +5,18 @@
 html,
 body {
   font-family: var(--font-body);
+  scroll-padding-top: 5.5rem;
 }
 
 body {
   background: transparent;
   color: var(--text-high);
   line-height: 1.75;
+}
+
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--brand) 45%, #ffffff 55%);
+  outline-offset: 2px;
 }
 
 h1, h2, h3, h4 {
@@ -35,4 +41,8 @@ h1, h2, h3, h4 {
 
 .initial-content {
   position: relative;
+}
+
+.ui-shell :focus-visible {
+  border-radius: 10px;
 }

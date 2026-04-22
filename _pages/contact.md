@@ -12,7 +12,7 @@ author_profile: false
 
 <section class="ui-section">
   <p>Contact only via LinkedIn or Twitter.</p>
-  <ul>
+  <ul class="ui-contact-links">
     <li><a href="https://www.linkedin.com/in/sahil-satralkar-1a61b042/">LinkedIn</a></li>
     <li><a href="https://x.com/sahilsatralkar">Twitter</a></li>
   </ul>

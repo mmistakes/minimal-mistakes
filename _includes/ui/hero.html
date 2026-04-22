@@ -7,6 +7,9 @@
       src="{{ hero_avatar | relative_url }}"
       alt="{{ site.author.name | default: "Profile photo" }}"
       loading="lazy"
+      width="138"
+      height="138"
+      decoding="async"
     />
   {% endif %}
 
@@ -17,7 +20,9 @@
     <h1>{{ include.title }}</h1>
     <p>{{ include.subtitle }}</p>
     {% if include.cta_text and include.cta_link %}
+    <div class="ui-hero__actions">
       <a class="ui-button" href="{{ include.cta_link }}">{{ include.cta_text }}</a>
+    </div>
     {% endif %}
   </div>
 </section>

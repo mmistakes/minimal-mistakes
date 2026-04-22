@@ -11,7 +11,8 @@
 .ui-shell {
   margin: clamp(1.4rem, 2.5vw, 2rem) auto 0;
   padding-bottom: 3.5rem;
-  width: var(--content-width);
+  width: min(100%, var(--content-width));
+  padding-inline: clamp(0.8rem, 2vw, var(--page-gutter));
 }
 
 .ui-page {
@@ -19,7 +20,7 @@
   border: 1px solid color-mix(in srgb, var(--line-soft) 65%, #fff 35%);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
-  padding: clamp(1.4rem, 3vw, 2.6rem);
+  padding: clamp(1rem, 2.8vw, 2.6rem);
 }
 
 .ui-section {
@@ -27,7 +28,8 @@
 }
 
 .ui-section__title {
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.22;
 }
 
 .ui-grid {
@@ -43,9 +45,31 @@
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.ui-stack {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.ui-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ui-section > :first-child {
+  margin-top: 0;
+}
+
+.ui-section ul {
+  margin-top: 0;
+  padding-left: 1.25rem;
+}
+
 @media (min-width: 760px) {
   .ui-page {
     padding: clamp(1.8rem, 3vw, 2.8rem);
+    margin-inline: 0;
   }
 
   .ui-grid--2 {
@@ -60,5 +84,9 @@
 @media (min-width: 980px) {
   .ui-grid--3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ui-shell {
+    padding-inline: 0;
   }
 }
