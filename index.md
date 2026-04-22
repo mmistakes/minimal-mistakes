@@ -5,7 +5,7 @@ author_profile: false
 permalink: /
 ---
 
-{% include ui/hero.html kicker="iOS Development Portfolio" title="Hi, I'm Sahil 👋" subtitle="I design and ship polished iOS experiences with Swift, SwiftUI, and a strong focus on usability, performance, and product clarity." cta_text="View portfolio" cta_link="/portfolio/" %}
+{% include ui/hero.html title="Hi, I'm Sahil 👋" subtitle="I design and ship polished iOS experiences with Swift, SwiftUI, and a strong focus on usability, performance, and product clarity." cta_text="View portfolio" cta_link="/portfolio/" %}
 
 <section class="ui-section">
   <h2 class="ui-section__title">What I do</h2>

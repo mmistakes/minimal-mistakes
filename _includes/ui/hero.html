@@ -11,7 +11,9 @@
   {% endif %}
 
   <div class="ui-hero__content">
-    <p class="ui-kicker">{{ include.kicker }}</p>
+    {% if include.kicker %}
+      <p class="ui-kicker">{{ include.kicker }}</p>
+    {% endif %}
     <h1>{{ include.title }}</h1>
     <p>{{ include.subtitle }}</p>
     {% if include.cta_text and include.cta_link %}

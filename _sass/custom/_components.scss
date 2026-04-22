@@ -48,6 +48,7 @@
 
 .ui-hero {
   position: relative;
+  isolation: isolate;
   display: grid;
   gap: 1rem;
   border: 1px solid var(--line);
@@ -63,13 +64,19 @@
   aspect-ratio: 1;
   border-radius: 22%;
   justify-self: start;
-  border: 3px solid #fff;
   object-fit: cover;
-  box-shadow: var(--shadow-card);
+  background: transparent;
+  border: none;
+  filter: brightness(1.12) saturate(1.06);
+  box-shadow: 0 16px 28px rgba(25, 43, 84, 0.18);
+  position: relative;
+  z-index: 1;
 }
 
 .ui-hero__content {
   min-width: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .ui-hero::after {
@@ -82,6 +89,8 @@
   border-radius: 999px;
   transform: rotate(5deg);
   filter: blur(1px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .ui-kicker {
