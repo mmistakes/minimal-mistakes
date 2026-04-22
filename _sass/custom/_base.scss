@@ -1,0 +1,38 @@
+/*
+ * Base typography and global resets for the redesigned interface.
+ */
+
+html,
+body {
+  font-family: var(--font-body);
+}
+
+body {
+  background: transparent;
+  color: var(--text-high);
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.014em;
+}
+
+.page__inner-wrap,
+.archive {
+  background: transparent;
+}
+
+.page__content,
+.archive__content {
+  margin-top: 0;
+}
+
+.author__avatar img,
+.author__avatar {
+  border-radius: 999px;
+}
+
+.initial-content {
+  position: relative;
+}

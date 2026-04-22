@@ -1,0 +1,240 @@
+/*
+ * Reusable components for the redesigned UI.
+ */
+
+.site-logo img,
+.author__avatar img {
+  border-radius: 16px;
+}
+
+.masthead {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 40;
+}
+
+.masthead__inner-wrap {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, #ffffff 88%, #ffffff 12%);
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  box-shadow: 0 16px 30px rgba(33, 55, 103, 0.08);
+}
+
+.masthead .site-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-right: 1rem;
+}
+
+.greedy-nav .visible-links {
+  margin-left: 0.4rem;
+}
+
+.greedy-nav .masthead__menu-item a {
+  color: var(--text-high);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+}
+
+.greedy-nav .masthead__menu-item a:hover {
+  background: color-mix(in srgb, var(--brand) 8%, transparent 92%);
+  text-decoration: none;
+}
+
+.ui-hero {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  background: linear-gradient(130deg, #ffffff, #f0f5ff 58%, #e5edff);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.ui-hero::after {
+  content: "";
+  position: absolute;
+  inset: -90px auto auto 58%;
+  width: 260px;
+  aspect-ratio: 1;
+  background: color-mix(in srgb, var(--brand) 10%, #ffffff 90%);
+  border-radius: 999px;
+  transform: rotate(5deg);
+  filter: blur(1px);
+}
+
+.ui-kicker {
+  margin: 0 0 0.75rem;
+  color: #30476a;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ui-hero h1 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.95rem, 5vw, 3rem);
+}
+
+.ui-hero p {
+  max-width: 64ch;
+}
+
+.ui-button,
+.btn.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--brand) 34%, var(--brand-2) 10%);
+  background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.65rem 1.1rem;
+  text-decoration: none;
+}
+
+.ui-button:hover,
+.btn.btn--primary:hover {
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.ui-grid__card {
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  background: #f8faff;
+}
+
+.ui-grid__card img {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+}
+
+.ui-grid__card h3 {
+  margin: 0.6rem 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.ui-portfolio-card {
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  padding: 1.1rem;
+}
+
+.ui-portfolio-card .ui-portfolio-card__image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line-soft);
+}
+
+.ui-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #ebf0ff;
+  color: #30476a;
+  border-radius: 999px;
+  padding: 0.32rem 0.65rem;
+  display: inline-flex;
+}
+
+.ui-divider {
+  border: 0;
+  border-top: 1px solid var(--line-soft);
+  margin: 1.2rem 0;
+}
+
+.ui-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ui-form label {
+  font-weight: 600;
+}
+
+.ui-form input,
+.ui-form select,
+.ui-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.72rem 0.8rem;
+  font: inherit;
+  background: #fff;
+}
+
+.ui-form button {
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+}
+
+.ui-cta {
+  background: linear-gradient(120deg, #17254f, #1f3b8f);
+  color: #f4f7ff;
+  border-radius: var(--radius-lg);
+  padding: clamp(1rem, 2.8vw, 1.4rem);
+}
+
+.taxonomy__index li a {
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.taxonomy__index li a:hover {
+  border-color: var(--brand);
+}
+
+.page__title {
+  margin-top: 0;
+}
+
+.page__content h2 {
+  margin-top: 0.9rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ui-hero {
+    animation: heroFadeIn 0.72s ease both;
+  }
+
+  .ui-portfolio-card {
+    animation: cardFadeIn 0.72s ease both;
+  }
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

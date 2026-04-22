@@ -7,12 +7,8 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-/* Custom styles */
-.author__avatar img {
-  border-radius: 50% !important;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  width: 120px !important;
-  height: 120px !important;
-}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "custom/tokens";
+@import "custom/base";
+@import "custom/layout";
+@import "custom/components";

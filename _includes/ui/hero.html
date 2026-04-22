@@ -1,0 +1,8 @@
+<section class="ui-hero ui-section">
+  <p class="ui-kicker">{{ include.kicker }}</p>
+  <h1>{{ include.title }}</h1>
+  <p>{{ include.subtitle }}</p>
+  {% if include.cta_text and include.cta_link %}
+    <a class="ui-button" href="{{ include.cta_link }}">{{ include.cta_text }}</a>
+  {% endif %}
+</section>

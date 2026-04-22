@@ -1,0 +1,64 @@
+/*
+ * Layout primitives for responsive structure.
+ */
+
+.layout-container {
+  width: var(--content-width);
+  margin-inline: auto;
+  padding: 0 var(--page-gutter);
+}
+
+.ui-shell {
+  margin: clamp(1.4rem, 2.5vw, 2rem) auto 0;
+  padding-bottom: 3.5rem;
+  width: var(--content-width);
+}
+
+.ui-page {
+  background: color-mix(in srgb, var(--surface-1) 90%, #fff 10%);
+  border: 1px solid color-mix(in srgb, var(--line-soft) 65%, #fff 35%);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(1.4rem, 3vw, 2.6rem);
+}
+
+.ui-section {
+  margin-block: var(--space-lg);
+}
+
+.ui-section__title {
+  margin-bottom: 0.9rem;
+}
+
+.ui-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.ui-grid--2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.ui-grid--3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 760px) {
+  .ui-page {
+    padding: clamp(1.8rem, 3vw, 2.8rem);
+  }
+
+  .ui-grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ui-grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .ui-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

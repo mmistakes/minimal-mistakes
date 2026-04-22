@@ -1,0 +1,34 @@
+/*
+ * UI design tokens for the redesign.
+ */
+
+:root {
+  --font-display: "Space Grotesk", "Trebuchet MS", sans-serif;
+  --font-body: "Outfit", "Segoe UI", sans-serif;
+  --surface-0: #f6f8ff;
+  --surface-1: #fefefe;
+  --surface-2: #10182b;
+  --text-high: #0f1726;
+  --text-muted: #54627d;
+  --text-on-dark: #eff3ff;
+  --brand: #2563eb;
+  --brand-2: #7c3aed;
+  --line: #dde5fb;
+  --line-soft: #e8eeff;
+  --shadow-soft: 0 18px 45px rgba(13, 22, 41, 0.08);
+  --shadow-card: 0 16px 30px rgba(34, 54, 99, 0.08);
+  --radius-xl: 26px;
+  --radius-lg: 18px;
+  --radius-sm: 12px;
+  --content-width: min(1120px, 92vw);
+  --page-gutter: clamp(1rem, 3vw, 2rem);
+  --space-lg: clamp(1.4rem, 2.5vw, 2.2rem);
+  --space-md: clamp(1rem, 2vw, 1.4rem);
+}
+
+.layout--home-custom,
+.layout--page-custom,
+.layout--archive-custom {
+  background: radial-gradient(circle at top right, #e4ecff 0%, transparent 44%), var(--surface-0);
+  color: var(--text-high);
+}
