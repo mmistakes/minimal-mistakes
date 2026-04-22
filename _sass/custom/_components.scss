@@ -48,12 +48,28 @@
 
 .ui-hero {
   position: relative;
+  display: grid;
+  gap: 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   padding: clamp(1.4rem, 4vw, 2.4rem);
   background: linear-gradient(130deg, #ffffff, #f0f5ff 58%, #e5edff);
   box-shadow: var(--shadow-card);
   overflow: hidden;
+}
+
+.ui-hero__avatar {
+  width: 122px;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  justify-self: start;
+  border: 3px solid #fff;
+  object-fit: cover;
+  box-shadow: var(--shadow-card);
+}
+
+.ui-hero__content {
+  min-width: 0;
 }
 
 .ui-hero::after {
@@ -212,6 +228,17 @@
 
   .ui-portfolio-card {
     animation: cardFadeIn 0.72s ease both;
+  }
+}
+
+@media (min-width: 760px) {
+  .ui-hero {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .ui-hero__avatar {
+    width: 138px;
   }
 }
 
