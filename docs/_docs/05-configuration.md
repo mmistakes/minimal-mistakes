@@ -259,11 +259,13 @@ defaults:
 
 To disable post date for a post, add `show_date: false` to its YAML Front Matter, overriding what was set in `_config.yml`.
 
-When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is `"%B %-d, %Y"`, which will be displayed like "February 24, 2016". You can choose your date format by referencing this [cheat sheet](https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet). For example, use your date format in `_config.yml`.
+When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is `"%B %-d, %Y"`, which will be displayed like "February 24, 2016". You can choose your date format by referencing this [cheat sheet](https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet). For example, to use ISO 8601 style dates, use this date format:
 
 ```yaml
 date_format: "%Y-%m-%d"
 ```
+
+You can set a custom `date_format` for the entire site as a top-level entry in `_config.yml`. You can override the site's `date_format` for a specific post by putting it in the YAML Front Matter, or for groups of posts in the `_config.yml` defaults (just like you can with `show_date`).
 
 ### Reading time
 
