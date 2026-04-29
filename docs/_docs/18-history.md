@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2026-04-19T21:51:22+08:00'
+last_modified_at: '2026-04-30T01:55:45+08:00'
 toc: false
 ---
 
@@ -23,6 +23,7 @@ toc: false
 - Allow specifying `rtl` in both page and layout [#5460](https://github.com/mmistakes/minimal-mistakes/issues/5460)
 - Add title attribute to video iframes for accessibility [#5471](https://github.com/mmistakes/minimal-mistakes/issues/5471)
 - Silence "Sass @import rules are deprecated" warning
+- Allow per-post or per-collection `date_format` values. [#5477](https://github.com/mmistakes/minimal-mistakes/issues/5477)
 
 ### Documentation
 

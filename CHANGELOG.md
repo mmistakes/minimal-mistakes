@@ -8,6 +8,7 @@
 - Allow specifying `rtl` in both page and layout (#5460)
 - Add title attribute to video iframes for accessibility (#5471)
 - Silence "Sass @import rules are deprecated" warning
+- Allow per-post or per-collection `date_format` values. (#5477)
 
 ### Documentation
 
