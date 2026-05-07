@@ -1,3 +1,10 @@
+---
+title: "fuzzing과fuzzer"
+layout: single
+date: 2026-05-08
+categories: [BugBounty]
+---
+
 목표
 퍼징이 무엇인지 공부하고 여러가지 퍼저에 대해 알아보자
 
