@@ -6,6 +6,7 @@ categories: [document]
 ---
 
 <br>
+
 #### 침입 탐지 및 방지 시스템
 
 #### IDS(침입 탐지 시스템)란
