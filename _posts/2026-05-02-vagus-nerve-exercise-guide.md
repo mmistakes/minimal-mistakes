@@ -2,29 +2,35 @@
 layout: single
 title: "The Vagus Nerve Exercise Guide: Physical Resets for Longevity"
 date: 2026-05-02
-description: "Three evidence-based physical exercises to stimulate the Vagus nerve and improve autonomic balance in seniors."
-image: 
-  path: /assets/images/vagus-exercise.webp
-  alt: "Vagus nerve stimulation exercises"
 category: "[Health Research, Physical Therapy]"
 tags: [vagus-nerve, autonomic-nervous-system, senior-fitness, longevity, neuroprotection]
-math: true
-toc: true
-last_modified_at: 2026-05-07
+description: "Explore evidence-based physical interventions designed to optimize vagal tone and stimulate parasympathetic nervous system recovery. This comprehensive health literacy guide translates clinical neurological data into actionable somatic resets—including targeted breathing architectures, ocular resets, and baroreceptor stimulation—to improve biometric stress resilience and support long-term senior longevity."
+excerpt: "Unlock the power of your parasympathetic nervous system. Discover practical, scientifically backed physical exercises to stimulate your vagal tone, lower cortisol, and boost longevity."
+header:
+  overlay_image: /assets/images/vagus-exercise.webp
+  teaser: /assets/images/vagus-exercise.webp
+  overlay_filter: 0.5
+last_modified_at: 2026-05-17
 ---
 Following our [Gut-Brain Nutrition Protocol]({{ '/2026/05/gut-brain-nutrition-protocol-lbd.md' | relative_url }}), we now address the physical side of the Vagus Highway. While nutrition provides the fuel, targeted movement provides the "signal" to keep the autonomic nervous system in a state of rest, digest, and repair.
 
 ---
 
-![Vagus Nerve Anatomy]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/vagus-anatomy-path.webp' | relative_url }})
+![Vagus Nerve Anatomy]({{ site.baseurl }}/assets/images/vagus-anatomy-path.webp' | relative_url }})
 {: .normal }
+
 _**Figure 1:** The Vagus nerve (Cranial Nerve X) is the longest nerve of the autonomic nervous system, traveling from the brainstem through the neck and thorax to the abdomen._
 
 ---
 
 Stimulating the Vagus nerve—often called **Vagus Nerve Stimulation (VNS)**—can be done safely at home through non-invasive techniques that utilize the body's natural reflexes.
+
 ---
-![Infographic showing six vagus nerve stimulation exercises: deep breathing, gargling, humming, cold exposure, meditation, and yoga]({{ site.urlimg }}{{ site.urlimg }}/assets/images/vagus-exercise.webp)**Figure 2** **Vagus Nerve Activation:** Simple daily exercises that strengthen gut‑brain communication and support healthy motility
+
+![Infographic showing six vagus nerve stimulation exercises: deep breathing, gargling, humming, cold exposure, meditation, and yoga]({{ site.baseurl }}/assets/images/vagus-exercise.webp)
+
+_**Figure 2** **Vagus Nerve Activation:** Simple daily exercises that strengthen gut‑brain communication and support healthy motility_
+
 ---
 
 ## 1. The Diaphragmatic "Box Breath" 🫁
@@ -71,8 +77,9 @@ The Vagus nerve is connected to the vocal cords and the muscles at the back of t
 ---
 
 
-![Vagus Nerve Physical Resets Summary]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/vagus-resets-summary2.webp' | relative_url }})
+![Vagus Nerve Physical Resets Summary]({{ site.baseurl }}/assets/images/vagus-resets-summary2.webp' | relative_url }})
 {: .normal }
+
 _**Figure 3:** The 2026 AgingHealth Vagal Reset Protocol: A combination of breathwork, thermal stimulus, and vocal activation for autonomic stability._
 
 ---
