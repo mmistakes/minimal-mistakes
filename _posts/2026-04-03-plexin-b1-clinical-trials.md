@@ -1,27 +1,21 @@
 ---
-layout: single
+layout: post
 title: "Plexin-B1 Clinical Trials: The 2026 Update"
 date: 2026-04-03
 description: "A research summary regarding metabolic waste clearance and neuro-inflammatory markers."
-image: 
-  path: /assets/images/astrocyte-amyloid-interactions.webp
-  alt: Illustration of astrocyte-amyloid interactions.
 tags: ["Clinical Research", "Neurology", "Metabolic Health"]
-math: true
-toc: true
-last_modified_at: 2026-05-07
 ---
+
 If 2024 was the year we discovered the "Plexin-B1 Stop Sign," then **2026 is the year we learned how to ignore it.**
 
 As a health researcher, I’ve been tracking the shift from simple amyloid-clearing drugs (like Lecanemab) to **cellular-behavior therapeutics**. The goal is no longer just to dissolve plaque, but to teach the brain’s support cells—astrocytes and microglia—how to manage it properly. 
 
 ---
 
-![Illustration of astrocyte-amyloid interaction in a clinical setting.]({{ site.urlimg }}{{ site.urlimg }}/assets/images/astrocyte-amyloid-interactions.webp)
+![Illustration of astrocyte-amyloid interaction in a clinical setting.](/assets/images/astrocyte-amyloid-interactions.webp)
 *Figure 1: Retraining the Brain—Clinical trials in 2026 are focusing on calming "angry" astrocytes and restoring their ability to corral toxic proteins via the Plexin-B1 pathway.*
 
 ---
-
 
 ### 1. The SIGNAL-AD Trial: Pepinemab’s Progress
 The most advanced clinical effort in the Plexin-B1 space centers on **Pepinemab**, a monoclonal antibody designed to block **SEMA4D**.
