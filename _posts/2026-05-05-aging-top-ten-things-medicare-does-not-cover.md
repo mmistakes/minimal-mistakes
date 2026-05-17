@@ -4,7 +4,7 @@ date: 2026-05-05 05:20:00 -0600
 categories: [Health Literacy, Senior Advocacy]
 tags: [Medicare, Insurance, Dental Care, Hearing Aids, Long-Term Care]
 description: "Identify the critical coverage limitations within original Medicare (Part A and Part B) with this evidence-based 2026 policy guide. Translating complex insurance architecture into clear health literacy, this analysis breaks down the top ten healthcare exclusions—including long-term custodial care, routine dental, vision, and hearing services—to help older adults mitigate financial risk and optimize supplemental coverage."
-excerpt:"Navigate the hidden out-of-pocket costs of original Medicare. Discover the top ten medical services not covered in 2026 and learn how to close these critical coverage gaps."
+excerpt: "Navigate the hidden out-of-pocket costs of original Medicare. Discover the top ten medical services not covered in 2026 and learn how to close these critical coverage gaps."
 header:
   overlay_image: /assets/images/seniors-healthcare-review.webp
   teaser: /assets/images/seniors-healthcare-review.webp
