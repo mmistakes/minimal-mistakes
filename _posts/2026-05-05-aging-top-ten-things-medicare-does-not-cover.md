@@ -38,15 +38,19 @@ These gaps can create financial strain and, more importantly, limit access to pr
 **Why it matters:** In 2026, we know that oral inflammation is a direct driver of **heart disease** and **metabolic risk**. 
 * **Your Options:** Medicare Advantage (Part C) plans, stand-alone dental insurance, or local dental schools.
 
-
+---
 
 ### 2. Vision Exams & Eyeglasses
 **The Gap:** Routine eye exams and the cost of glasses or contacts are not covered.
 * **Your Options:** Retail optical discounts, senior-specific vision plans, or Part C allowances.
+  
+---
 
 ### 3. Hearing Aids & Exams
 **The Gap:** Most hearing exams and all hearing aids are excluded.
 * **Your Options:** **FDA-approved OTC hearing aids** are the 2026 gold standard for affordability. Some Advantage plans now offer fixed-copay benefits for high-end devices.
+
+---
 
 ### 4. Long-Term Care (Custodial Care)
 **The Gap:** Medicare does **not** pay for help with "Activities of Daily Living" (bathing, dressing, eating). 
@@ -54,7 +58,7 @@ These gaps can create financial strain and, more importantly, limit access to pr
 {: .prompt-warning }
 > **Crucial Note:** This is the most common reason for financial depletion among seniors. Plan for this early.
 
-
+---
 
 ### 5. Routine Foot Care (Podiatry)
 **The Gap:** Nail trimming and callus removal are generally excluded unless you have **Diabetes** or a vascular condition.
@@ -68,13 +72,19 @@ These gaps can create financial strain and, more importantly, limit access to pr
 **The Gap:** Medicare only covers acupuncture for chronic low back pain.
 * **Your Options:** Community acupuncture clinics or specific "Special Needs" Medicare Advantage plans.
 
+---
+
 ### 8. Cosmetic Surgery
 **The Gap:** Procedures done strictly for appearance are excluded. 
 * **Note:** Reconstructive surgery after a trauma or cancer (like mastectomy) **is** covered.
 
+---
+
 ### 9. Personal Comfort Items
 **The Gap:** If you are hospitalized, items like TVs, phone services, or private rooms (without medical need) are excluded.
 * **Your Options:** Use your own devices and utilize the free Wi-Fi now standard in 2026 hospitals.
+
+---
 
 ### 10. Concierge Medicine Fees
 **The Gap:** "Membership" or "Boutique" fees for enhanced access to a doctor are not covered.
