@@ -3,12 +3,12 @@ title: "Navigating Medicare in 2026: A Senior’s Guide to Coverage & Advocacy"
 date: 2026-05-04 11:00:00 -0600
 categories: [Health Literacy, Senior Advocacy]
 tags: [Medicare, Insurance, Patient Tools, Healthspan, 2026 Reforms]
-image: 
-  path: /assets/images/2026-medicare-guide.webp
-  alt: "Illustration of Medicare Parts A, B, C, and D with 2026 updates."
-description: "A comprehensive 2026 guide to Medicare, covering the new $2,000 drug cap, enrollment strategies, and choosing between Original Medicare and Advantage."
-math: true
-toc: true
+description: "Navigate the 2026 structural updates to the Medicare ecosystem with this comprehensive senior health literacy guide. Learn how to evaluate changes to Part A, Part B, and Part D prescription drug benefits, decode enrollment timelines, and leverage patient advocacy strategies to maximize your healthcare coverage."
+excerpt: "Master your healthcare options with our definitive senior's guide to Medicare in 2026. Learn how to navigate policy changes, optimize your benefits, and advocate for your care."
+header: 
+  overlay_image: /assets/images/2026-medicare-guide.webp
+  teaser: /assets/images/2026-medicare-guide.webp
+  overlay_filter: 0.5
 last_modified_at: 2026-05-07
 ---
 ## Why Medicare Literacy is Part of Your Health Defense
