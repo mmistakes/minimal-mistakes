@@ -2,15 +2,15 @@
 layout: single
 title: "Rheumatoid Arthritis & Vitamin D: The 2026 Deep Dive"
 date: 2026-04-29
-description: "A clinical look at RA diagnostics and the lifestyle catalysts that calm the immune system."
-image: 
-  path: /assets/images/ra-joint-inflammation.webp
-  alt: Diagram of joint inflammation in Rheumatoid Arthritis
 category: "[Autoimmune]"
 tags: [rheumatoid arthritis, vitamin d, inflammation]
-math: true
-toc: true
-last_modified_at: 2026-05-07
+description: "Rheumatoid Arthritis & Vitamin D: The 2026 Deep Dive explores how modern diagnostics, immune biomarkers, and lifestyle factors shape the RA journey—especially for adults over 55. It covers new research on Anti-CCP, VDR sensitivity, inflammaging, and micronutrients that activate Vitamin D’s immune-calming effects, offering insights on early detection, targeted labs, and daily habits to reduce flares."
+excerpt: "Rheumatoid arthritis starts silently in the immune system, not the joints. By 2026, early detection focuses on markers like Anti-CCP, hs-CRP, and Vitamin D receptor sensitivity. Vitamin D acts as an immune modulator, but needs magnesium, zinc, and gut health to work fully. This guide explores how lifestyle, lab work, and co-factors can help calm inflammation and reshape the RA journey—especially for those over 55."
+header:
+  overlay_image: /assets/images/ra-joint-inflammation.webp
+  teaser: /assets/images/ra-joint-inflammation.webp
+  overlay_filter: 0.5
+last_modified_at: 2026-05-18
 ---
 ## 🦴 Rheumatoid Arthritis: When “Self” Becomes “Target”
 
@@ -26,9 +26,7 @@ Together, these create a **“Triple Threat”** to balance, mobility, and indep
 
 ---
 
-
-![Diagram of joint inflammation in Rheumatoid Arthritis]({{ site.urlimg }}{{ site.urlimg }}/assets/images/ra-joint-inflammation.webp)**Figure 1:** A medical illustration showing a cross-section of a joint. One side shows healthy, the other showing the "synovial thickening" (the red inflammation) of RA.
-
+![Diagram of joint inflammation in Rheumatoid Arthritis]({{ site.baseurl }}/assets/images/ra-joint-inflammation.webp)**Figure 1:** A medical illustration showing a cross-section of a joint. One side shows healthy, the other showing the "synovial thickening" (the red inflammation) of RA.
 
 ---
 
