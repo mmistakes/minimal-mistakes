@@ -17,7 +17,7 @@ words_per_minute: 200
 
 # Features
 breadcrumbs: true
-search: true
+search: false             # 👈 Change this to false to kill the broken script injector
 search_full_content: true
 enable_copy_code_button: true
 
