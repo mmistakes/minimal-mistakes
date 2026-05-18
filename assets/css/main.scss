@@ -24,10 +24,10 @@ $right-sidebar-width: 260px;
   }
 }
 
-/* 3. CENTER THE MASTER WRAPPER */
+/* 3. CENTER THE MASTER WRAPPER (FIXED) */
 .wrapper {
   max-width: $max-width;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  clear: both;
 }
