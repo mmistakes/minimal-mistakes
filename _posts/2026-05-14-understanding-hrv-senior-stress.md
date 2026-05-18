@@ -2,7 +2,7 @@
 layout: single
 title: "Understanding Heart Rate Variability (HRV): Your Body’s Built-in Stress Monitor"
 date: 2026-05-14
-categories: [Clinical Data, Health Literacy]
+categories: [Clinical-Data, Health-Literacy]
 tags: [Longevity, Seniors, Wellness, HRV]
 header:
   overlay_image: /assets/images/understanding-hrv-senior-stress-header.webp
