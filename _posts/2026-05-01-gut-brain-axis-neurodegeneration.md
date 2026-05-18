@@ -9,7 +9,7 @@ excerpt: "Explore how the gut-brain axis directly influences brain health. Disco
 header:
   overlay_image: /assets/images/vagus-nerve-pathway.webp
   teaser: /assets/images/vagus-nerve-pathway.webp
-aoverlay_filter: 0.5
+  overlay_filter: 0.5
 last_modified_at: 2026-05-17
 ---
 **The 2026 'Bottom‑Up' Consensus**  
