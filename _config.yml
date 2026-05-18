@@ -102,6 +102,7 @@ defaults:
       toc_sticky: true
       entries_layout: "grid"
       show_glossary_link: true
+      search: true
 # Giscus Comment Settings
 comments:
   provider: "giscus"
