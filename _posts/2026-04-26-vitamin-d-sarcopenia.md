@@ -2,15 +2,15 @@
 layout: single
 title: "Vitamin D and Sarcopenia: The 2026 Muscle Health Update"
 date: 2026-04-26
-description: "A research update on how Vitamin D deficiency accelerates muscle loss in seniors."
-image: 
-  path: /assets/images/vitamin-d-protein.webp
-  alt: The Vitamin D Muscle Triad
 category: "[Health Research]"
 tags: [sarcopenia, geriatrics]
-math: true
-toc: true
-last_modified_at: 2026-05-07
+description: "Discover the 2026 Muscle Health Update regarding Vitamin D and its relationship with sarcopenia. This essential nutrient plays a crucial role in maintaining muscle health and strength, particularly in older adults. Understanding its effects can provide valuable insights into combating age-related muscle decline."
+excerpt: "Stay informed with the 2026 Muscle Health Update on Vitamin D and sarcopenia. Uncover essential information to support muscle health and prevent decline."
+header:
+  overlay_image: /assets/images/vitamin-d-protein.webp
+  teaser: /assets/images/vitamin-d-protein.webp
+  overlay_filter: 0.5
+last_modified_at: 2026-05-18
 ---
 Sarcopenia is no longer viewed as an inevitable consequence of aging. It is a *modifiable metabolic condition* — and Vitamin D status is one of its most overlooked contributors.
 
