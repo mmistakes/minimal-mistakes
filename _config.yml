@@ -59,20 +59,20 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
 
-# Plugins (Fixed and Complete)
+# Plugins
 plugins:
-  - jekyll-paginate-v2  # <--- Changed this line
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
 whitelist:
-  - jekyll-paginate-v2  # <--- Changed this line
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-feed
 
-# Updated Pagination V2 configuration block
+# Pagination V2 configuration block
 pagination:
   enabled: true
   per_page: 12
@@ -82,6 +82,10 @@ pagination:
   sort_field: "date"
   sort_reverse: true
 
+# Search Settings
+search_provider: lunr
+lunr:
+  search_within_pages: true
 
 # Front Matter Defaults (Global Settings for all 330 posts)
 defaults:
@@ -103,9 +107,11 @@ defaults:
       entries_layout: "grid"
       show_glossary_link: true
       search: true
-search_provider: lunr # 👈
-lunr:
-  search_within_pages: true
+  - scope:
+      path: "assets"
+    values:
+      layout: nil
+
 # Giscus Comment Settings
 comments:
   provider: "giscus"
