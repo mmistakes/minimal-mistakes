@@ -103,7 +103,7 @@ defaults:
       entries_layout: "grid"
       show_glossary_link: true
       search: true
-search_provider: lunr
+search_provider: lunr # 👈
 lunr:
   search_within_pages: true
 # Giscus Comment Settings
