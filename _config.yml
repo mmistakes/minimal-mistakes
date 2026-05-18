@@ -101,7 +101,7 @@ defaults:
       toc_icon: "heart-pulse"
       toc_sticky: true
       entries_layout: "grid"
-
+      show_glossary_link: true
 # Giscus Comment Settings
 comments:
   provider: "giscus"

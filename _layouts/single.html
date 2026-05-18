@@ -50,6 +50,9 @@ layout: default
           </aside>
         {% endif %}
         {{ content }}
+        {% if page.show_glossary_link %}
+        {% include glossary-link.html %}
+        d{% endif %}
         <div class="post-content">
 </div>
 
