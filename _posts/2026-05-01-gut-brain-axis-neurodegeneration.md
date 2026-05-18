@@ -19,7 +19,7 @@ Emerging research suggests that the abnormal proteins found in Lewy Body Dementi
 
 ---
 
-![Vagus Nerve Pathway]({{ site.baseurl }}/images/vagus-nerve-pathway.webp')
+![Vagus Nerve Pathway]({{ site.baseurl }}/assets/images/vagus-nerve-pathway.webp)
 {: .normal }
 _**Figure 1:** The Vagus nerve acts as a bidirectional highway, carrying alpha‑synuclein "seeds" from the gut to the brain._
 
