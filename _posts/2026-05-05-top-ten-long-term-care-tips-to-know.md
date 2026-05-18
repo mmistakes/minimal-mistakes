@@ -3,19 +3,12 @@ title: "Planning for Resilience: Top Ten Long-Term Care Tips for 2026"
 date: 2026-05-05 20:42:00 -0600
 categories: [Senior Advocacy, Long-Term Care]
 tags: [NIA, NIH, Caregiving, Aging in Place, Health Literacy]
-header:
+excerpt: "An elderly man in a wheelchair, illustrating the importance of proactive care planning."
+description: "A 2026 guide to long-term care planning based on National Institute on Aging (NIA) standards, featuring a decision tree for families and caregivers."
 header:
   overlay_image: /assets/images/elderly-waiting.webp
   teaser: /assets/images/elderly-waiting.webp
-excerpt: "An elderly man in a wheelchair, illustrating the importance of proactive care planning."
-description: "A 2026 guide to long-term care planning based on National Institute on Aging (NIA) standards, featuring a decision tree for families and caregivers."
-author_profile: true
-read_time: true
-share: true
-related: true
-
-math: true
-toc: true
+  overlay_filter: 0.5
 last_modified_at: 2026-05-07
 ---
 ## The National Institute on Aging (NIA): Why It Matters in 2026
