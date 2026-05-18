@@ -2,9 +2,9 @@
 layout: single
 title: "The Vagus Highway: How the Gut-Brain Axis Drives Neurodegeneration"
 date: 2026-05-01
-category: "[Health Research, Longevity Series]"
+categories: [Health Research, Longevity Series]
 tags: [gut-brain-axis, neurodegeneration, alpha-synuclein, vagus-nerve, microbiome]
-description: "Analyze the bidirectional signaling of the gut-brain axis and its role in accelerating neurodegenerative diseases. This evidence-based guide maps the "vagus highway," detailing how gut microbiota dysbiosis, systemic inflammation, and alpha-synuclein pathology travel along vagal afferent fibers to trigger neuroinflammation and cognitive decline in older adults."
+description: "Analyze the bidirectional signaling of the gut-brain axis and its role in accelerating neurodegenerative diseases. This evidence-based guide maps the 'vagus highway,' detailing how gut microbiota dysbiosis, systemic inflammation, and alpha-synuclein pathology travel along vagal afferent fibers to trigger neuroinflammation and cognitive decline in older adults."
 excerpt: "Explore how the gut-brain axis directly influences brain health. Discover the clinical mechanisms tracking how gut health issues travel up the vagus nerve to drive neurodegeneration."
 header:
   overlay_image: /assets/images/vagus-nerve-pathway.webp
@@ -12,6 +12,7 @@ header:
   overlay_filter: 0.5
 last_modified_at: 2026-05-17
 ---
+
 **The 2026 'Bottom‑Up' Consensus**  
 Emerging research suggests that the abnormal proteins found in Lewy Body Dementia (LBD) may actually originate in the enteric nervous system—the "brain in the gut"—before traveling up the vagus nerve to the brain.
 {: .prompt-info }
