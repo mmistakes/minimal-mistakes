@@ -2,12 +2,14 @@
 layout: single
 title: "Oxalates: Do They Cause Health Issues?"
 date: 2023-09-11
-description: "High oxalate intake can bind to minerals, forming crystals linked to kidney stones, gout, and joint pain—potentially contributing to inflammation."
-math: true
-image: "/assets/images/oxalate-infographic.webp"
 tags: [Nutrition, Kidney, Digestive, Metabolism]
-toc: true
-last_modified_at: 2026-05-07
+description: "High oxalate intake can bind to minerals, forming crystals linked to kidney stones, gout, and joint pain—potentially contributing to inflammation."
+excerpt: "High oxalate intake can bind to minerals, forming crystals linked to kidney stones, gout, and joint pain—potentially contributing to inflammation."
+header:
+  overlay_image: /assets/images/oxalate-infographic.webp
+  teaser: /assets/images/oxalate-infographic.webp
+  overlay_filter: 0.5
+last_modified_at: 2026-05-17
 ---
 Oxalates have become a major talking point in nutrition and wellness circles, especially among people interested in **kidney health**, **gut health**, inflammation, and plant-based diets. 
 
