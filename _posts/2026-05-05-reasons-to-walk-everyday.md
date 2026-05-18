@@ -7,7 +7,7 @@ tags: [Walking, Heart Health, Diabetes, Mental Health, Sarcopenia]
 description: "Explore the multi-system impact of consistent mechanical loading and aerobic activity for seniors. From improving sleep architecture and immune system vigilance to mitigating age-related muscle loss and cognitive decline, this guide breaks down ten powerful reasons why a daily walk is the ultimate low-barrier blueprint for functional independence in 2026."
 excerpt: "Step up your health with ten clinical reasons to build a daily walking habit. See how daily movement fights cognitive decline, protects bone density, and extends active longevity."
 header:
-  overlay_image: /assets/infograghic-reasons-walk1.webp
+  overlay_image: /assets/images/infograghic-reasons-walk1.webp
   teaser: /assets/images/infograghic-reasons-walk1.webp
   overlay_filter: 0.5
 last_modified_at: 2026-05-17
