@@ -4,7 +4,8 @@ minimal_mistakes_skin: "mint"
 
 # Site Settings
 locale: "en-US"
-title: "Aging-Health"
+title: "Aging Health"
+logo: "/assets/images/logo.png"
 title_separator: "-"
 subtitle: "Patient Advocacy & Geriatric Literacy"
 description: "Independent health research and patient advocacy focusing on geriatric health literacy, clinical data interpretation, and longevity."
@@ -21,11 +22,12 @@ search: false             # 👈 Change this to false to kill the broken script 
 search_full_content: true
 enable_copy_code_button: true
 
-# Site Author
+# Site Author Profile
 author:
-  name: "Tommy T Douglas"
-  avatar: "/assets/images/bio-photo.webp"
-  bio: "Independent health researcher and patient advocate."
+  name: "Tommy T. Douglas"
+  avatar: "/assets/images/avatar.png"
+  bio: "Independent health researcher and geriatric patient advocate."
+
   location: "USA"
   links:
     - label: "Email"
@@ -134,3 +136,5 @@ footer:
       url: "/disclaimer/"
     - label: "Privacy Policy"
       url: "/privacy-policy/"
+# Search Engine & Social Share Defaults
+og_image: "/assets/images/avatar.png"
