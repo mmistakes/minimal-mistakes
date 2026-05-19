@@ -128,5 +128,9 @@ comments:
 # Footer Links
 footer:
   links:
+    - label: "Site Index"
+      url: "/sitemap/"
     - label: "Disclaimer"
       url: "/disclaimer/"
+    - label: "Privacy Policy"
+      url: "/privacy-policy/"
