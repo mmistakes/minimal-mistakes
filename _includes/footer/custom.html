@@ -1,3 +1,18 @@
 <!-- start custom footer snippets -->
+<div id="cookie-notice" style="display:none; position:fixed; bottom:20px; left:20px; right:20px; background:#222; color:#fff; padding:15px; text-align:center; z-index:9999; border-radius:4px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <span>We utilize basic aggregate metrics to improve your research reading experience. By continuing to browse, you agree to our <a href="/privacy-policy/" style="color:#6eb958; text-decoration:underline;">Privacy Policy</a>.</span>
+  <button onclick="acceptCookies()" style="background:#6eb958; color:#fff; border:none; padding:5px 15px; margin-left:15px; cursor:pointer; border-radius:3px;">Got it</button>
+</div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if(!localStorage.getItem("cookie_accepted")) {
+      document.getElementById("cookie-notice").style.display = "block";
+    }
+  });
+  function acceptCookies() {
+    localStorage.setItem("cookie_accepted", "true");
+    document.getElementById("cookie-notice").style.display = "none";
+  }
+</script>
 <!-- end custom footer snippets -->
