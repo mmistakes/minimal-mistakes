@@ -2,7 +2,7 @@
 layout: single
 title: "Flu and RSV Guide: Enduring the 'Twin-Viremic' Season"
 date: 2026-04-23
-categories:[Research]
+categories: [Research]
 tags: [Health, Cognitive Health, Immune Health, Infections]
 description: "A senior-focused guide to navigating Flu and RSV season. Learn the key differences in symptoms, preventative steps, and when to seek medical care."
 excerpt: "As cooler weather sets in, respiratory viruses like Flu and RSV present unique risks for older adults. Let's break down the distinct warning signs, protective measures, and practical steps you can take to shield your health this season."
