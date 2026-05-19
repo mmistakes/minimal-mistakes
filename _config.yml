@@ -125,3 +125,8 @@ comments:
     input_position: "bottom"
     theme: "light"
     lang: "en"
+# Footer Links
+footer:
+  links:
+    - label: "Disclaimer"
+      url: "/disclaimer/"
