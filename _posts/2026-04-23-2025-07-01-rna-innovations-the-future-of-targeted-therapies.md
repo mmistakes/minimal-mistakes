@@ -18,7 +18,12 @@ Advancements in **mRNA vaccines** and **gene silencing technologies** are reshap
 
 Together, these innovations deepen our understanding of disease mechanisms, accelerate the rise of personalized medicine, and signal a major shift toward targeted, molecular-level therapies.
 
-{% include medical-disclaimer.html %}
+---
+<div style="background:#fafafa; border:1px solid #ddd; font-size:15px; margin:16px 0; padding:12px;">
+  <strong>Medical Disclaimer:</strong> This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
+</div>
+
+---
 
 ![Stylized illustration of RNA molecules (mRNA, siRNA, ASO) interacting with cellular structures, representing targeted gene modulation.]({{ site.baseurl }}/assets/images/rna-therapeutics.webp)
 *The intricate world of RNA molecules is unlocking a new era of targeted therapeutics, offering highly precise treatments for a wide range of diseases.*
