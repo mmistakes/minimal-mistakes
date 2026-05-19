@@ -2,4 +2,28 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
 <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
-
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Check if the user has already accepted the privacy notice
+    if (!localStorage.getItem("cookie_accepted")) {
+      
+      // 1. Create the visual container dynamically via JavaScript
+      var notice = document.createElement('div');
+      notice.id = 'cookie-notice';
+      notice.style.cssText = 'position:fixed; bottom:20px; left:20px; right:20px; background:#222; color:#fff; padding:15px; text-align:center; z-index:9999; border-radius:4px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-family: sans-serif; font-size: 14px;';
+      
+      // 2. Inject the inner HTML compliance messaging text
+      notice.innerHTML = 'We utilize basic aggregate metrics to improve your research reading experience. By continuing to browse, you agree to our <a href="/privacy-policy/" style="color:#6eb958; text-decoration:underline;">Privacy Policy</a>.' +
+                         '<button id="accept-cookie-btn" style="background:#6eb958; color:#fff; border:none; padding:5px 15px; margin-left:15px; cursor:pointer; border-radius:3px; font-weight:bold;">Got it</button>';
+      
+      // 3. Drop the banner physically onto the very base of the webpage body
+      document.body.appendChild(notice);
+      
+      // 4. Attach the instant click dismissal rule
+      document.getElementById('accept-cookie-btn').addEventListener('click', function() {
+        localStorage.setItem("cookie_accepted", "true");
+        document.getElementById('cookie-notice').style.display = 'none';
+      });
+    }
+  });
+</script>
