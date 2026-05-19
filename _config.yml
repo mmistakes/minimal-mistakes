@@ -130,3 +130,12 @@ footer:
   links:
     - label: "Disclaimer"
       url: "/disclaimer/"
+ # Footer Links
+footer:
+  links:
+    - label: "Index Sitemap"
+      url: "/sitemap/"
+    - label: "Disclaimer"
+      url: "/disclaimer/"
+    - label: "Privacy Policy"
+      url: "/privacy-policy/"     
