@@ -9,5 +9,9 @@ main:
     url: "/categories/#longevity"
   - title: "Glossary"
     url: /glossary/
+  - title: "About"
+    url: /about/
+  - title: "Research Index"
+    url: /sitemap/
   - title: "Search"
     url: /search/  
