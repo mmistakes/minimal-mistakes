@@ -4,13 +4,13 @@ title: "Understanding Lab Results: A Senior’s Guide to Common Blood Tests"
 date: 2026-05-13
 categories: [Health Literacy]
 tags: [Clinical Data, Seniors, Wellness]
-author_profile: true
-read_time: true
-share: true
-related: true
+description: "Learn how to read your complete blood count (CBC), metabolic panels, and lipid profiles with this straightforward, senior-focused guide to common lab results."
+excerpt: "Fasting for a blood test is routine, but reading the actual printout can feel like trying to crack a secret code. Let’s break down common markers like CBC, BMP, and lipids so you can feel confident and prepared during your next doctor's visit."
 header:
   overlay_image: "/assets/images/lab-results-guide.webp"
   teaser: "/assets/images/lab-results-guide.webp"
+  overlay_filter: 0.5
+last_modified_at: 2026-05-18
 ---
 
 Navigating medical care often feels like learning a second language. Between the acronyms and the ranges, a simple blood work report can look more like a math puzzle than a health update. 
