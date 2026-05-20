@@ -930,4 +930,13 @@ Low BCAA State🧬A metabolic imbalance in cirrhosis where branched-chain amino 
 Catabolic Overnight Shift🌜The nighttime metabolic pattern in cirrhosis where the body rapidly breaks down muscle due to limited glycogen stores.
 Energy Partitioning Failure⚙️A disruption in how the body allocates carbohydrates, fats, and proteins, common in advanced liver disease. 
 Inflammation-Driven Muscle Loss🔥Muscle wasting caused by chronic inflammation, altered amino acid balance, and impaired liver function. 
-  
+APOE-e4: A well-documented genetic variant that significantly influences lipid metabolism and elevates the risk profile for developing late-onset Alzheimer's disease.
+ARIA-E (Amyloid-Related Imaging Abnormalities - Edema): A serious clinical complication where fluid builds up inside brain tissue due to rapid vascular alterations during plaque clearance.
+Astrocytes: Highly active, star-shaped support cells in the central nervous system responsible for maintaining the blood-brain barrier and regulating neurovascular health.
+CAR (Chimeric Antigen Receptor) Technology: A bio-engineering method that inserts synthetic receptors into cells, training them to target and bind to specific pathological proteins.
+Combination Therapy: The simultaneous or precisely sequenced use of multiple distinct therapeutic agents to target different biological pathways of a single complex disease.
+GFAP (Glial Fibrillary Acidic Protein): A structural protein found within astrocytes; its elevated presence in a standard blood sample serves as an objective marker for neuro-inflammation.
+MABs (Monoclonal Antibodies): Laboratory-engineered proteins designed to recognize, attach to, and clear specific pathological targets (like amyloid plaques) from body tissues.
+Phagocytosis: The cellular process by which specialized cells engulf, ingest, and digest solid particles or toxic protein accumulations.
+Plexin-B1: A crucial regulatory protein produced by helper cells that directly influences how brain cells physically interact with, encircle, and compress toxic proteins.
+SEMA4D (Semaphorin 4D): An extracellular signaling protein that acts as the primary chemical trigger to block astrocyte protective behaviors when bound to the Plexin-B1 receptor.  
