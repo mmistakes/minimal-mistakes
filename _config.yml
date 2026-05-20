@@ -18,7 +18,7 @@ words_per_minute: 200
 
 # Features
 breadcrumbs: true
-search: false             # 👈 Change this to false to kill the broken script injector
+search: true
 search_full_content: true
 enable_copy_code_button: true
 
@@ -35,11 +35,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tomglo10"
-    # Placeholder for future donation/support model if needed:
-    # - label: "Support"
-    #   icon: "fas fa-fw fa-heart"
-    #   links:
-    - https://buymeacoffee.com/aginghealth
+    - label: "Support"
+      icon: "fas fa-fw fa-heart"
+      url: "https://buymeacoffee.com/aginghealth"
 
 # Reading Files
 include:
@@ -131,6 +129,7 @@ comments:
     input_position: "bottom"
     theme: "light"
     lang: "en"
+
 # Footer Links
 footer:
   links:
@@ -140,5 +139,7 @@ footer:
       url: "/disclaimer/"
     - label: "Privacy Policy"
       url: "/privacy-policy/"
+
 # Search Engine & Social Share Defaults
 og_image: "/assets/images/avatar.png"
+google_site_verification: "58bf1f2989715102"
