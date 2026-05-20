@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "The Stealth Metabolic Trap: Understanding Sarcopenic Obesity"
-date: 2026-05-20T08:00:00+00:00
+date: 2026-05-19T08:00:00+00:00
 categories: ["Heart & Metabolic"]
 tags: ["Sarcopenia", "Obesity", "Metabolic Health", "Geriatric Literacy", "Nutrition"]
 description: "Sarcopenic obesity is the hidden cross-section of muscle wasting and increased body fat. Discover why your bathroom scale is lying to you and how to defend your physical independence."
@@ -10,7 +10,7 @@ header:
   overlay_image: /assets/images/sarcopenic-obesity-header.webp
   teaser: /assets/images/sarcopenic-obesity-header.webp
   overlay_filter: 0.5
-last_modified_at: 2026-05-20
+last_modified_at: 2026-05-19
 ---
 
 The baseline bathroom scale is fundamentally lying to you. For decades, seniors have been conditioned to use their total body weight as the primary diagnostic metric for physical health. If the scale stays stable, we assume our health trajectory is locked in.
