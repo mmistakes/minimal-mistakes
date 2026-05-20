@@ -15,7 +15,9 @@ last_modified_at: 2026-05-20
 
 In 2026, convenience in food choices remains highly prized, yet it frequently carries an unseen, steep metabolic toll. For individuals navigating Type 2 Diabetes (T2D), maintaining a healthy clinical trajectory involves far more than just tracking carbohydrate counts and counting calories—it requires an acute awareness of the industrial **food additives** that actively interfere with cellular insulin signaling and compromise gut barrier architecture.
 
-> **⚠️ Medical Disclaimer:** This guide is designed for educational and patient-advocacy purposes only. Clinical research on specific food additives is often observational; please use this data as an evidence-based starting point for targeted discussions with your clinical nutritionist or endocrinologist.
+---
+
+**⚠️ Medical Disclaimer:** This guide is designed for educational and patient-advocacy purposes only. Clinical research on specific food additives is often observational; please use this data as an evidence-based starting point for targeted discussions with your clinical nutritionist or endocrinologist.
 
 ---
 
