@@ -10,7 +10,7 @@ header:
   overlay_image: /assets/images/doctor-clown.webp
   teaser: /assets/images/doctor-clown.webp
   overlay_filter: 0.5
-last_modified_at: 2026-05-20
+last_modified_at: 2026-05-19
 ---
 
 A great healthcare partner offers support, clinical guidance, and genuine encouragement—just like any strong, long-term relationship. The right **doctor actively listens to your goals**, respects your values, and works directly with you to build a preventative strategy that fits your life.
