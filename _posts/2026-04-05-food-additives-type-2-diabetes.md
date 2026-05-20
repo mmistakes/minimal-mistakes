@@ -19,14 +19,14 @@ In 2026, convenience in food choices remains highly prized, yet it frequently ca
 
 ---
 
-While traditional medical guidelines focus heavily on macro-nutritional balances, the **non-nutritive additives** found across the modern ultra-processed food landscape—particularly chemical emulsifiers such as carboxymethylcellulose (CMC) and polysorbate 80—are increasingly recognized as hidden drivers of severe metabolic dysfunction.
-
-For those managing Type 2 Diabetes, these additives go beyond being mere inert texturizers; they act as highly bioactive agents that erode the protective mucus layer of the digestive tract, alter the microbiome, and trigger low-grade systemic inflammation.
+![Older woman examining an ingredient list.](/assets/images/ingredient-study.webp)
+*Figure 1: Becoming a "Medical Detective" in the grocery aisle. True label literacy requires looking past front-of-pack health claims and examining the fine-print additive blocks.*
 
 ---
 
-![Older woman examining an ingredient list.](/assets/images/ingredient-study.webp)
-*Figure 1: Becoming a "Medical Detective" in the grocery aisle. True label literacy requires looking past front-of-pack health claims and examining the fine-print additive blocks.*
+While traditional medical guidelines focus heavily on macro-nutritional balances, the **non-nutritive additives** found across the modern ultra-processed food landscape—particularly chemical emulsifiers such as carboxymethylcellulose (CMC) and polysorbate 80—are increasingly recognized as hidden drivers of severe metabolic dysfunction.
+
+For those managing Type 2 Diabetes, these additives go beyond being mere inert texturizers; they act as highly bioactive agents that erode the protective mucus layer of the digestive tract, alter the microbiome, and trigger low-grade systemic inflammation.
 
 ---
 
