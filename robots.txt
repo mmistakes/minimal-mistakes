@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Explicitly invite AI search agents to parse our medical index
+User-agent: Google-Agent
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://aginghealth.website/sitemap/

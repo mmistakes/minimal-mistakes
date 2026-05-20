@@ -27,7 +27,6 @@ author:
   name: "Tommy T. Douglas"
   avatar: "/assets/images/avatar.png"
   bio: "Independent health researcher and geriatric patient advocate."
-
   location: "USA"
   links:
     - label: "Email"
@@ -36,6 +35,11 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/tomglo10"
+    # Placeholder for future donation/support model if needed:
+    # - label: "Support"
+    #   icon: "fas fa-fw fa-heart"
+    #   links:
+    - https://buymeacoffee.com/aginghealth
 
 # Reading Files
 include:
