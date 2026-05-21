@@ -19,7 +19,7 @@ Before assuming a memory lapse is a permanent brain tissue failure, patient advo
 
 ---
 
-![Dementia umbrella classification illustration.](/assets/images/sarcopenia-metabolic-cycle.webp)
+![Infographic illustrating the Sarcopenia Metabolic Cycle. The diagram  shows a circular cycle with labeled arrows connecting the various stages.](/assets/images/sarcopenia-metabolic-cycle.webp)
 *Figure 1: The Diagnostic Framework. Understanding that dementia is a broad clinical "syndrome" rather than a single disease entity is the non-negotiable first step toward accurate senior health literacy.*
 
 ---
