@@ -7,11 +7,9 @@ tags: ["Functional Fitness", "Metabolism", "Longevity", "Inflammaging", "Healths
 description: "Moving beyond single-disease reactive care. Discover how 2026 geroscience uses biological age pacing and systemic resilience to treat the root drivers of aging."
 excerpt: "Your birthday is a static number; your actual rate of biological aging is a dynamic variable. Learn how treating inflammaging and protecting physical function extends true healthspan."
 header:
-  overlay_image: /assets/images/seniors-exercise.webp
-  teaser: /assets/images/seniors-exercise.webp
+  overlay_image: /assets/images/intrinsic-capacity.webp
+  teaser: /assets/images/intrinsic-capacity.webp
   overlay_filter: 0.5
-math: true
-toc: true
 last_modified_at: 2026-05-21
 ---
 
@@ -23,7 +21,7 @@ The modern paradigm has shifted entirely to **System-Wide Resilience**. Instead 
 
 ---
 
-![Seniors practicing resistance and balance loading.](/assets/images/seniors-exercise.webp)
+![Seniors practicing resistance and balance loading.](/assets/images/intrinsic-capacity.webp)
 *Figure 1: Shifting the Focus to Intrinsic Capacity. Modern longevity frameworks prioritize measurable metrics of physical function, cognitive reserve, and system-wide resilience over simple chronological lifespan markers.*
 
 ---
