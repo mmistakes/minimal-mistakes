@@ -23,6 +23,7 @@ From workplace chronic stressors and economic volatility to algorithmic digital 
 ---
 
 ![Illustration of mood extremes in bipolar disorder](/assets/images/manic-depressive-disorder.webp)
+
 *Figure 1: Characterizing Emotional Extremes. A clinical visualization mapping the intense neurochemical and psychological shifts across mood states, illustrating how neurochemical dynamics dictate our baseline perception of reality.*
 
 ---
