@@ -4,13 +4,12 @@ title: "Unlocking Brain Potential: Surprising Links Between Liver and Neurology"
 permalink: /posts/mini-stroke-prevention-liver-pressure-carvedilol/
 date: 2026-02-22
 description: "Why managing liver pressure protects your brain: Exploring the connection between portal hypertension, Carvedilol, and TIA prevention."
-image: 
-  path: /assets/images/transient-ischemic-attack .webp
-  alt: "3D visualization of a transient ischemic attack"
+header:
+  overlay_image /assets/images/transient-ischemic-attack .webp
+  teaser: /assets/images/transient-ischemic-attack .webp
+  overlay_filter: 0.5
 category: "[Neurology, Liver Health]"
-tags: [TIA, stroke-prevention, portal-hypertension, carvedilol, senior-health]
-math: true
-toc: true
+tags: [TIA, stroke-prevention, portal-hypertension, carvedilol, senior-healt]
 last_modified_at: 2026-05-07
 ---
 ## The Vascular Bridge: Managing Liver Pressure to Protect the Brain

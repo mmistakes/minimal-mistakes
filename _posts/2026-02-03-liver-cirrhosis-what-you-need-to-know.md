@@ -6,12 +6,11 @@ permalink: /posts/liver-cirrhosis-understanding-decompensation/
 date: 2026-02-03
 description: "A clinical and personal guide to managing decompensated liver cirrhosis, focusing on portal hypertension, variceal banding, and the brain-liver axis."
 header:
-  image: /assets/images/liver-cirrhosis.webp
-  og_image: /assets/images/liver-cirrhosis.webp
+  overlay_image: /assets/images/liver-cirrhosis.webp
+  teaser: /assets/images/liver-cirrhosis.webp
+  overlay_filter: 0.5
 category: [Patient Advocacy, Lifestyle]
 tags: [Cognitive Health, Cardiovascular, Liver Health, Diabetes]
-math: true
-toc: true
 last_modified_at: 2026-05-22
 ---
 

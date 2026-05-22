@@ -5,12 +5,11 @@ permalink: /posts/understanding-diabetes-managing-blood-sugar/
 date: 2026-02-02T00:06:00+00:00
 description: "A clinical and practical guide to blood sugar stability, evaluating insulin resistance, the 'Standard American Diet' crisis, and microvascular complications."
 header:
-  image: /assets/images/diet-metabolic-impact.webp
-  og_image: /assets/images/diet-metabolic-impact.webp
+  overlay_image: /assets/images/diet-metabolic-impact.webp
+  teaser: /assets/images/diet-metabolic-impact.webp
+  overlay_filter: 0.5
 category: [Patient Advocacy, Diabetes]
 tags: [Cognitive Health, Cardiovascular, Immune Health, Diabetes, Nutrition, Liver Health]
-math: true
-toc: true
 last_modified_at: 2026-05-22
 ---
 

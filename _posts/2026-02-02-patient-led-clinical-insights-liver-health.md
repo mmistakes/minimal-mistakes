@@ -5,12 +5,11 @@ permalink: /posts/patient-led-clinical-insights-liver-health/
 date: 2026-02-02
 description: "Translating high-level clinical data into health literacy for seniors managing cirrhosis and portal hypertension."
 header:
-  image: /assets/images/esophageal-varices.webp
-  og_image: /assets/images/esophageal-varices.webp
+  overlay_image: /assets/images/esophageal-varices.webp
+  teaser: /assets/images/esophageal-varices.webp
+  overlay_filter: 0.5
 category: [Patient Advocacy]
 tags: [Liver Health, Immune Health, Patient Advocacy]
-math: false
-toc: true
 last_modified_at: 2026-05-22
 ---
 

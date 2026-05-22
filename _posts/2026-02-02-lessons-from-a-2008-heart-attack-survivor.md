@@ -5,12 +5,11 @@ permalink: /posts/lessons-from-a-2008-heart-attack-survivor/
 date: 2026-02-02
 description: "A personal look at the link between Type 2 Diabetes and cardiovascular events, including the role of GLP-1 medications in vascular protection."
 header:
-  image: /assets/images/heart-chest-pain.webp
-  og_image: /assets/images/heart-chest-pain.webp
+  overlay_image: /assets/images/heart-chest-pain.webp
+  teaser: /assets/images/heart-chest-pain.webp
+  overlay_filter: 0.5
 category: [Patient Advocacy, Cardiovascular]
 tags: [Cardiovascular, Heart, Inflammation, Diabetes, Patient Advocacy]
-math: false
-toc: true
 last_modified_at: 2026-05-22
 ---
 

@@ -4,13 +4,12 @@ title: "Colon Cancer: From Genetic Roots to Precision Breakthroughs"
 permalink: /posts/colon-cancer-genetic-roots-precision-breakthroughs/
 date: 2026-02-15
 description: "Exploring the Swedish MakA toxin breakthrough, the PIK3 signaling pathway, and tactical screening for high-risk families."
-image: 
-  path: /assets/images/colibactin-maka.webp
-  alt: "The Tale of Two Toxins: Colibactin vs MakA"
+header:
+  overlay_image: /assets/images/colibactin-maka.webp
+  teaser: /assets/images/colibactin-maka.webp
+  overlay_filter: 0.5
 category: "[Oncology, Patient Advocacy]"
 tags: [colon-cancer, precision-medicine, genetics, screening, clinical-trials]
-math: true
-toc: true
 last_modified_at: 2026-05-07
 ---
 ## Colon Cancer: From Family Risk to the Swedish "Smart Toxin" Breakthrough

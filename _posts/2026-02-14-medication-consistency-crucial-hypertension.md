@@ -4,13 +4,12 @@ title: "Why Medication Consistency is Crucial for Hypertension"
 permalink: /posts/medication-consistency-crucial-hypertension/
 date: 2026-02-14
 description: "When 'just a nosebleed' is a warning sign: Exploring the dangers of inconsistent blood pressure care and the importance of steady regulation."
-image: 
-  path: /assets/images/preventing-complications.webp
-  alt: "Educational illustration of hypertension risks and medication consistency"
+header:
+  overlay_image:  /assets/images/preventing-complications.webp
+  teaser: /assets/images/preventing-complications.webp
+  overlay_filter: 0.5
 category: "[Cardiovascular, Patient Advocacy]"
 tags: [hypertension, medication-safety, senior-health, heart-health]
-math: true
-toc: true
 last_modified_at: 2026-05-07
 ---
 ## When "Just a Nosebleed" is a Warning Sign

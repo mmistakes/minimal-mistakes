@@ -5,12 +5,11 @@ permalink: /posts/brain-health-is-alzheimers-really-type-3-diabetes/
 date: 2026-02-03T06:46:00+00:00
 description: "Exploring the metabolic link between insulin resistance, cerebral glucose hypometabolism, and the neurodegenerative pathways of Alzheimer's disease."
 header:
-  image: /assets/images/diabetes-type-3.webp
+  overlay_image: /assets/images/diabetes-type-3.webp
   og_image: /assets/images/diabetes-type-3.webp
+  overlay_filter: 0.5
 category: [Clinical Research, Cognitive Health]
 tags: [Cognitive Health, Cardiovascular, Diabetes, Inflammation]
-math: true
-toc: true
 last_modified_at: 2026-05-22
 ---
 

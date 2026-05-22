@@ -3,7 +3,13 @@ layout: post
 title: "Mini-Stroke Symptoms? The First 48 Hours Matter Most for Prevention"
 date: 2026-01-31T07:09:00+00:00
 description: "Identify TIA using BE-FAST: Balance, Eyes, Face, Arm, Speech, Time. Learn why 2026 guidelines treat mini strokes as a 911 emergency."
-tags: ['❤️ Cardiovascular & T2D', '🧠 Cognitive Health', '🛡️ Liver & Immune Health', '🌱 Senior Longevity', 'Heart', 'Prevention']
+excerpt: 
+header:
+  overlay_image /assets/images/dna-double-helix.webp
+  teaser: /assets/images/dna-double-helix.webp
+  overlay_filter: 0.5
+last_modified_at: 2026-05-18
+
 ---
 
 <div style="background-color: #f8f9fa; border-left: 5px solid #0056b3; padding: 15px; margin-bottom: 25px; font-family: sans-serif;">

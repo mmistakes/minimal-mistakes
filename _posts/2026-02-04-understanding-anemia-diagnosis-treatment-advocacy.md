@@ -4,13 +4,12 @@ title: "Understanding Anemia: A Guide to Diagnosis, Treatment, and Advocacy"
 permalink: /posts/anemia-what-you-need-to-know/
 date: 2026-02-04
 description: "A patient-centered guide to anemia: Understanding why red blood cell counts drop, the 'Hepcidin barrier' in chronic illness, and the path to effective repletion."
-image: 
-  path: /assets/images/severe-anemia-liver-disease.webp
-  alt: "Medical illustration showing symptoms of severe anemia and liver disease"
+header:
+  overlay_image:  /assets/images/severe-anemia-liver-disease.webp  
+  teaser: /assets/images/severe-anemia-liver-disease.webp 
+  overlay_filter: 0.5
 category: "[Hematology, Patient Advocacy]"
 tags: [anemia, iron-deficiency, cirrhosis, chronic-inflammation, health-literacy]
-math: true
-toc: true
 last_modified_at: 2026-05-07
 ---
 ## Anemia: A Signal, Not Just a Diagnosis

@@ -5,12 +5,11 @@ permalink: /posts/quitting-smoking-psoriasis-inflammation/
 date: 2026-02-16
 description: "A 7-year reflection on how nicotine cessation fundamentally shifts systemic inflammation and improves plaque psoriasis outcomes."
 header:
-  image: /assets/images/the-smoker.webp
-  og_image: /assets/images/the-smoker.webp
+  overlay_image: /assets/images/the-smoker.webp
+  teaser: /assets/images/the-smoker.webp
+  overlay_filter: 0.5
 category: [Patient Advocacy, Lifestyle]
 tags: [psoriasis, smoking-cessation, inflammation, cytokines, skin-health]
-math: true
-toc: true
 last_modified_at: 2026-05-22
 ---
 

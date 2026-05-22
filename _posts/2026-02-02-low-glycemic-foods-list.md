@@ -5,12 +5,11 @@ permalink: /posts/low-glycemic-foods-list-sugar-management/
 date: 2026-02-02
 description: "Master blood sugar with the senior guide to low-glycemic living and vascular defense."
 header:
-  image: /assets/images/produce-shopping.webp
-  og_image: /assets/images/produce-shopping.webp
+  overlay_image: /assets/images/produce-shopping.webp
+  teaser: /assets/images/produce-shopping.webp
+  overlay_filter: 0.5
 category: [Patient Advocacy, Diabetes]
 tags: [Advocacy, Cognitive Health, Longevity, Cardiovascular, Diabetes, Nutrition, Prevention]
-math: false
-toc: true
 last_modified_at: 2026-05-22
 ---
 

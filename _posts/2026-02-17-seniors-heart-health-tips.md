@@ -4,9 +4,10 @@ title: "Heart Health in Later Years: Managing Valve Disease and Biological Aging
 permalink: /posts/seniors-heart-health-tips/
 date: 2026-02-17
 description: "Exploring the rise of silent valve disease, the clinical debate over statins in the elderly, and how 2026 research is targeting the mechanisms of biological aging."
-image: 
-  path: /assets/images/heart-health.webp
-  alt: "Maintaining an active lifestyle is crucial for cardiovascular resilience in senior years."
+header: 
+  overlay_path: /assets/images/heart-health.webp
+  teaser: /assets/images/heart-health.webp
+  overlay_filter: 0.5
 categories: [Cardiovascular, Longevity]
 tags: [heart-health, valve-disease, statins, biological-aging, senior-advocacy]
 math: true
