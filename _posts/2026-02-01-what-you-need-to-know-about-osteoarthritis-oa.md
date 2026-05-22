@@ -6,11 +6,10 @@ date: 2026-02-01T02:45:00+00:00
 description: "A comprehensive clinical and lifestyle guide to managing Osteoarthritis, navigating metabolic joint inflammation, and treating muscle as medicine."
 header:
   image: /assets/images/arthritis-pain-crippled-hands.webp
-  og_image: /assets/images/arthritis-pain-crippled-hands.webp
+  teaser: /assets/images/arthritis-pain-crippled-hands.webp
+  overlay_filter: 0.5  
 category: [Patient Advocacy, Bone Health]
 tags: [Clinical Research, Nutrition, Aging Well, Bone Health]
-math: false
-toc: true
 last_modified_at: 2026-05-22
 ---
 
