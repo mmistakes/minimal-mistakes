@@ -34,11 +34,17 @@ To associate additional log file name patterns, to be viewed by **.log plugin**,
 
 ![Log File Type Settings](/assets/images/log/ss-log-settings-file-type.png)
 
+### ANSI Escape Codes
+
+When a log file contains ANSI escape codes, **.log plugin** applies text styling according to those codes and hides the raw escape sequences for a cleaner view. Files opened with ANSI styling are **read-only**.
+
+This behavior can be toggled per file when relevant — see [Display Transformation](/.log/view-and-navigate/#display-transforms).
+
 ## File Size Thresholds
 
 To ensure responsive performance, JetBrains IDE has a file size threshold for in-memory content loading.
 
-When a log file exceeds this threshold (default 20 MB), it is opened as a **Large File** with pagination and large-file view optimization. The file is **read-only** in this mode. Text search may be slower while disk I/O is performed.
+When a log file exceeds this threshold (default 20 MB), it is opened as a **Large File** with pagination and large-file view optimization. The file is **read-only** in this mode. Text search may be slower while disk I/O is performed. On the other hand file scrolling and overall UX may be more responsive,
 
 **Note**: Problem inspections are not supported for log files opened as Large Files. See [Navigation - Problem Inspections](/.log/view-and-navigate/#navigation---problem-inspections) for details.
 {: .notice--info}
@@ -46,6 +52,4 @@ When a log file exceeds this threshold (default 20 MB), it is opened as a **Larg
 **Note**: If performance issues are encountered, [please report](/.log/view-and-navigate/#submitting-issues--feature-requests) the details including file size, typical log line length, typical log snippet and preferably also host CPU/memory specs.
 {: .notice--warning}
 
-## ANSI Escape Codes
 
-When a log file contains ANSI escape codes, **.log plugin** applies text styling according to those codes and hides the raw escape sequences for a cleaner view. Files opened with ANSI styling are **read-only**.

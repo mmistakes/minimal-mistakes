@@ -3,7 +3,7 @@ title: "View & Navigate"
 title_category: ".log"
 permalink: /.log/view-and-navigate/
 excerpt: ".log JetBrains IDE Plugin main features"
-modified: 2025-02-19T19:00:00+02:00
+modified: 2025-05-22T19:00:00+02:00
 ---
 
 ## Syntax Highlighting
@@ -54,6 +54,33 @@ By default, only **Errors** are cycled through with problem navigation. To inclu
 **Note:** There is a cap on the maximum reported problems for performance. If there's a need to increase this cap, please [report an issue](#submitting-issues--feature-requests), so we can consider adding a setting for that.
 {: .notice--info}
 
+## Display Transformation
+
+**.log** automatically detects and applies display transformations to improve log readability. Each transformation can be toggled on or off independently per file.
+
+### ANSI Escape Codes
+
+When a log file contains ANSI escape codes (terminal color/style sequences), **.log** automatically strips them and applies the corresponding text styling for a clean, readable view.
+color scheme can be 
+
+### Epoch Timestamps
+
+When a log file contains numeric Unix timestamps (epoch seconds or milliseconds), **.log** automatically converts them to human-readable date/time format.
+
+### Toggling Transformation
+
+Toggle buttons appear in the top-right area of the editor when the relevant content is detected:
+- **ANSI** — toggles ANSI code stripping and formatting
+- **Timestamps** — toggles epoch-to-datetime conversion
+
+Both toggles are also accessible via **Find Action** (`⌘+⇧+A | Ctrl+⇧+A`):
+- Search: *Remove ANSI escape codes*
+- Search: *Convert epoch timestamps*
+
+Transformations are applied when log file is opened. Disabling a toggle restores the raw content for that feature. Toggle state is maintained per file for the duration of the IDE session.
+
+![Display Transforms: ANSI and Timestamps toggles](/assets/images/log/ss-log-display-conversion-ansi-and-timestamps.gif)
+
 ## Planned Features
 
 Following features are planned for 2026:
@@ -71,4 +98,3 @@ Please submit feature requests & issues on [.log Github issue tracker](https://g
 If the issue concerns incorrect highlighting of log formats, please include:
 - A snippet of the log file that reproduces the issue.
 - Specify the elements (e.g., log level, timestamp) that are not highlighted correctly.
-
