@@ -36,8 +36,10 @@ testme:
         url: /.log/
       - title: "Install"
         url: /.log/installation/
-      - title: "View & Navigate"
-        url: /.log/view-and-navigate/
+      - title: "Log Files"
+        url: /.log/log-files/
+      - title: "Console Output"
+        url: /.log/console-log-support/
       - title: "Settings"
         url: /.log/settings/
 #      - title: "Release Notes"

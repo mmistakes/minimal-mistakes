@@ -3,7 +3,7 @@ title: "Settings"
 title_category: ".log"
 permalink: /.log/settings/
 excerpt: ".log JetBrains IDE Plugin Settings"
-modified: 2025-02-19T19:00:00+02:00
+modified: 2026-05-22T19:00:00+02:00
 ---
 
 ## Customizing Color Scheme
@@ -16,7 +16,7 @@ To set custom colors/styles for log file elements (i.e. timestamps, log levels, 
 - Select **Log Files** from the list of file types.
 
 2. Adjust Specific Colors for Log Elements:
-- In the **Logs** color scheme settings, you’ll see options for various log elements such as:
+- In the **Logs** color scheme settings, you'll see options for various log elements such as:
   - Log Levels (e.g., INFO, WARN, ERROR)
   - Timestamps, Category, Context id...
   - ANSI Color Codes (foreground & background color only)
@@ -34,11 +34,11 @@ To associate additional log file name patterns, to be viewed by **.log plugin**,
 
 ![Log File Type Settings](/assets/images/log/ss-log-settings-file-type.png)
 
-### ANSI Escape Codes
+## ANSI Escape Codes
 
 When a log file contains ANSI escape codes, **.log plugin** applies text styling according to those codes and hides the raw escape sequences for a cleaner view. Files opened with ANSI styling are **read-only**.
 
-This behavior can be toggled per file when relevant — see [Display Transformation](/.log/view-and-navigate/#display-transforms).
+This behavior can be toggled per file when relevant — see [Display Transformation](/.log/log-files/#display-transformation).
 
 ## File Size Thresholds
 
@@ -46,10 +46,10 @@ To ensure responsive performance, JetBrains IDE has a file size threshold for in
 
 When a log file exceeds this threshold (default 20 MB), it is opened as a **Large File** with pagination and large-file view optimization. The file is **read-only** in this mode. Text search may be slower while disk I/O is performed. On the other hand file scrolling and overall UX may be more responsive,
 
-**Note**: Problem inspections are not supported for log files opened as Large Files. See [Navigation - Problem Inspections](/.log/view-and-navigate/#navigation---problem-inspections) for details.
+**Note**: Problem inspections are not supported for log files opened as Large Files. See [Navigation - Problem Inspections](/.log/log-files/#navigation---problem-inspections) for details.
 {: .notice--info}
 
-**Note**: If performance issues are encountered, [please report](/.log/view-and-navigate/#submitting-issues--feature-requests) the details including file size, typical log line length, typical log snippet and preferably also host CPU/memory specs.
+**Note**: If performance issues are encountered, [please report](/.log/log-files/#submitting-issues--feature-requests) the details including file size, typical log line length, typical log snippet and preferably also host CPU/memory specs.
 {: .notice--warning}
 
 
