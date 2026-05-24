@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+# Theme
+remote_theme             : "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # Site Settings
 locale                   : "en"
 title                    : "WeirdDev"
@@ -17,9 +21,11 @@ repository               : "wrdv/wrdv.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 160
+search                   : true # enable built-in search
+search_full_content      : true
+
 comments:
-  provider               : "muut"
-#  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "muut", "custom"
+  provider               : false # disabled (was "muut" which is defunct)
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -73,10 +79,10 @@ social:
 
 # Analytics
 analytics:
-#  provider               : false # false (default), "google", "google-universal", "custom"
-  provider               : "google-tag"
+  provider               : "google-gtag"
   google:
     tracking_id          : G-GHCM9DKR91
+    anonymize_ip         : false
 
 
 # Site Author
@@ -87,28 +93,7 @@ author:
   location         : "TA"
   email            :
   uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "wrdv/testme-idea"
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
@@ -187,6 +172,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -195,6 +182,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 
 # Archives
@@ -213,17 +202,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
 
 # HTML Compression
@@ -251,7 +229,7 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
       permalink: blog/:categories/:title

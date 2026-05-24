@@ -1,8 +1,117 @@
+/* ==========================================================================
+   Theme Toggle (Dark/Light mode)
+   ========================================================================== */
+
+/*
+ * Light theme overrides applied via data-theme="light" on <html>.
+ * Dark is the default skin (set via minimal_mistakes_skin in _config.yml).
+ * We override CSS custom properties here for the light variant.
+ */
+html[data-theme="light"] {
+  --background-color: #fff;
+  --text-color: #393e46;
+  --headline-color: #222831;
+  --link-color: #52adc8;
+  --masthead-background: #fff;
+  --masthead-link-color: #393e46;
+  --footer-background: #f2f2f2;
+  --code-background: #f5f5f5;
+  --border-color: #e0e0e0;
+  --nav-background: #fff;
+  --nav-border-color: #e0e0e0;
+
+  // Override dark skin colors for light mode
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  .masthead {
+    background-color: var(--masthead-background);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .greedy-nav {
+    background: var(--masthead-background);
+
+    a {
+      color: var(--masthead-link-color);
+    }
+  }
+
+  .page__footer {
+    background-color: var(--footer-background);
+    color: var(--text-color);
+  }
+
+  .page__content {
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--headline-color);
+    }
+    a {
+      color: var(--link-color);
+    }
+  }
+
+  .sidebar {
+    a {
+      color: var(--text-color);
+    }
+  }
+
+  .nav__list .nav__items a {
+    color: var(--text-color);
+    &.active {
+      color: var(--link-color);
+    }
+  }
+
+  .page {
+    color: var(--text-color);
+  }
+
+  .archive__item-title a {
+    color: var(--headline-color);
+  }
+
+  pre, code {
+    background-color: var(--code-background);
+  }
+
+  .notice, .notice--info, .notice--warning, .notice--success, .notice--danger {
+    background-color: var(--code-background);
+    color: var(--text-color);
+  }
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  color: inherit;
+  font-size: 1.1rem;
+  line-height: 1;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  .theme-toggle__icon--dark,
+  .theme-toggle__icon--light {
+    display: none; // JS controls visibility
+  }
+}
+
+/* ==========================================================================
+   Site-specific custom styles
+   ========================================================================== */
+
 .wd-logo-medium{
   width:15em;
   float:left;
 }
-//todo add media query
 
 .weird-about.page__hero--overlay{
    a,
@@ -17,7 +126,6 @@
   padding-left: 2em;
   padding-right: 1em;
   float: left;
-  //margin-left: 12%;
 }
 .weird-intro.page__hero--overlay{
    a,
@@ -33,21 +141,20 @@
   padding-left: 2em;
   padding-right: 1em;
   float: left;
-  //margin-left: 12%;
 }
 
 div.weird-about .smaller {
   font-size: 50%;
 }
 .handy{
-  font-family: $caveat;
-  color: $handy-color!important;
+  font-family: 'Caveat', cursive;
+  color: #075B84 !important;
   font-size: 1.7em;
   &.font-effect-crackle {
-    color: $handy-color!important;
+    color: #075B84 !important;
   }
   &.font-effect-putting-green {
-    color: $handy-color!important;
+    color: #075B84 !important;
     font-weight: bold;
   }
   &.bigger{
@@ -61,10 +168,9 @@ div.comic.shadowy{
 }
 .shadowy{
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  //color: #101010;
 }
 .deep-blue{
-  color: $handy-color;
+  color: #075B84;
 }
 .turquoise-glow{
   color: #06DEEC;
@@ -108,14 +214,14 @@ div.comic.shadowy{
   width: 100px;
   height: 100px;
 
-  @include breakpoint($large) {
+  @media (min-width: 64em) {
     display: block;
     width: auto;
     height: auto;
   }
 
   img {
-    @include breakpoint($large) {
+    @media (min-width: 64em) {
       padding: 5px;
     }
   }
@@ -124,12 +230,12 @@ div.comic.shadowy{
   margin-bottom: 1.5rem;
 }
 .docs-guide .sidebar.sticky{
-  @include breakpoint($large) {
+  @media (min-width: 64em) {
     opacity: initial;
   }
 }
 .docs-guide .sidebar.sticky .nav__list{
-  @include breakpoint($large) {
+  @media (min-width: 64em) {
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
@@ -139,7 +245,7 @@ div.comic.shadowy{
   }
 }
 .docs-guide .page{
-  @include breakpoint($large) {
+  @media (min-width: 64em) {
     padding-top: 0.6rem;
   }
 }

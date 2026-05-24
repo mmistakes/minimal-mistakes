@@ -1,6 +1,6 @@
-y# Development Setup — WeirdDev Site
+# Development Setup — WeirdDev Site
 
-This Jekyll site based on [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/) runs on Ruby and Bundler.
+This Jekyll site based on [Minimal Mistakes Theme](https://mmistakes.github.io/minimal-mistakes/) (v4.26.2, via `remote_theme`) runs on Ruby and Bundler.
 
 ## Quick Start (Windows)
 
@@ -95,12 +95,39 @@ bundle _2.5.23_ exec jekyll serve --port 4001
 ridk install
 ```
 
+## Architecture
+
+### Theme Integration
+The site uses **Minimal Mistakes 4.26.2** via `jekyll-remote-theme`. This means:
+- Theme layouts, includes, and assets are fetched from GitHub at build time
+- Only **custom overrides** live in this repo (see below)
+- Upgrading the theme = changing the version tag in `_config.yml`
+
+### Custom Overrides (files in this repo that override the remote theme)
+| File | Purpose |
+|------|---------|
+| `_layouts/default.html` | Adds AdSense script, `data-theme` attribute |
+| `_includes/masthead.html` | Adds dark/light theme toggle button |
+| `_includes/sidebar.html` | Custom `top_image` and promo section |
+| `_includes/head/custom.html` | Favicons + theme persistence script |
+| `_includes/footer/custom.html` | Privacy Policy link |
+| `_sass/_custom.scss` | All site-specific styles + light theme override |
+| `assets/js/theme-toggle.js` | Dark/light mode toggle logic |
+
+### Dark/Light Theme Toggle
+- **Default theme**: dark (set via `minimal_mistakes_skin: "dark"` in `_config.yml`)
+- Toggle button in the masthead (moon/sun icon)
+- User preference stored in `localStorage` (`wd-theme` key)
+- Light mode is a CSS override layer on top of the dark skin
+
 ## Stack
 
 - **Ruby:** 3.2.11 (with MSYS2 DevKit)
 - **Bundler:** 2.5.23 (per `Gemfile.lock`)
 - **Jekyll:** 3.10.0 (via `github-pages` gem)
-- **Theme:** Minimal Mistakes
+- **Theme:** Minimal Mistakes 4.26.2 (via `jekyll-remote-theme`)
+- **Icons:** Font Awesome 6 (CDN)
+- **Search:** Lunr.js (built-in)
 
 ## Resources
 

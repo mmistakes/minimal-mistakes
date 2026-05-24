@@ -1,11 +1,21 @@
 <!-- start custom head snippets -->
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
-
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/assets/images/favicon/manifest.json">
 <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#252a34">
+
+<!-- Dark/Light theme toggle: apply saved preference before paint to avoid flash -->
+<script>
+(function() {
+  var saved = localStorage.getItem('wd-theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  }
+})();
+</script>
+
 <!-- end custom head snippets -->
