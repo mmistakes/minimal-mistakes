@@ -7,6 +7,7 @@ description: "A clinical review of how the ketogenic diet impacts ketosis, blood
 header:
   image: /assets/images/ketogenic-pathway.webp
   og_image: /assets/images/ketogenic-pathway.webp
+  teaser: /assets/images/ketogenic-pathway.webp
   overlay_filter: 0.5
 category: [Clinical Research, Nutrition]
 tags: [Nutrition, Diabetes, Neurology, Metabolic Health]
