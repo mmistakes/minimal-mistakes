@@ -5,7 +5,7 @@ permalink: /posts/mini-stroke-prevention-liver-pressure-carvedilol/
 date: 2026-02-22
 description: "Why managing liver pressure protects your brain: Exploring the connection between portal hypertension, Carvedilol, and TIA prevention."
 header:
-  overlay_image /assets/images/transient-ischemic-attack .webp
+  overlay_image: /assets/images/transient-ischemic-attack .webp
   teaser: /assets/images/transient-ischemic-attack .webp
   overlay_filter: 0.5
 category: "[Neurology, Liver Health]"

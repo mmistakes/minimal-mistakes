@@ -5,8 +5,8 @@ date: 2026-01-31T07:09:00+00:00
 description: "Identify TIA using BE-FAST: Balance, Eyes, Face, Arm, Speech, Time. Learn why 2026 guidelines treat mini strokes as a 911 emergency."
 excerpt: 
 header:
-  overlay_image /assets/images/dna-double-helix.webp
-  teaser: /assets/images/dna-double-helix.webp
+  overlay_image: /assets/images/mri.webp
+  teaser: /assets/images/mri.webp
   overlay_filter: 0.5
 last_modified_at: 2026-05-18
 
@@ -25,8 +25,7 @@ last_modified_at: 2026-05-18
 <p>A <strong>transient ischemic attack (TIA)</strong>, commonly referred to as a "mini-stroke," is a brief halt in blood flow to the brain. While symptoms typically resolve within an hour and don't cause permanent damage, they are a <strong>medical emergency</strong>. Think of a TIA as a "warning stroke"—it is the strongest indicator that a major, life-altering stroke could occur imminently.</p>
 
 <div style="text-align: center; margin: 20px 0;">
-  <img alt="MRI machine for medical imaging" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgevn6ZRkmbTtCtCGKYqWq9D6bSYNAd0hI8Tu60tBh75Sp6LJTMMFfs-wWDdSEHyzmd1Art8aYRAB6gl8NnmUvYU9LHW-w_Fmk6cMN1gqlE2TqMk3ZpHH4VFz7ntMdlSLvHHY7dub1A0V5sl4_iIFzONBWT6GFbSYBZharYIdOXojwc8lCjlQkuiM-lhwrs/s16000/MRI%20machine%20for%20medical%20imaging..webp" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px;" />
-  <p style="font-size: 12px; color: #666;">Modern MRI technology is the gold standard for detecting "silent" strokes and assessing brain tissue health after a TIA.</p>
+!["MRI machine for medical imaging"] ({{ site.baseurl }}/assets/images/mri.webp)Modern MRI technology is the gold standard for detecting "silent" strokes and assessing brain tissue health after a TIA.</p>
 </div>
 
 <h2 style="text-align: left;">New Standard: Think BE-FAST, Not Just FAST</h2>
