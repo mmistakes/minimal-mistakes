@@ -7,6 +7,7 @@ date: 2026-02-03
 description: "A clinical and personal guide to managing decompensated liver cirrhosis, focusing on portal hypertension, variceal banding, and the brain-liver axis."
 header:
   overlay_image: /assets/images/liver-cirrhosis.webp
+  og_image: /assets/images/liver-cirrhosis.webp
   teaser: /assets/images/liver-cirrhosis.webp
   overlay_filter: 0.5
 category: [Patient Advocacy, Lifestyle]
