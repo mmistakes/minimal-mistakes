@@ -1,4 +1,3 @@
-Markdown
 ---
 layout: single
 title: "Liver Cirrhosis: Understanding Decompensation and Portal Hypertension"
