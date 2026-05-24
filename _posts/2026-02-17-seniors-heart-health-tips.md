@@ -5,8 +5,8 @@ permalink: /posts/seniors-heart-health-tips/
 date: 2026-02-17
 description: "Exploring the rise of silent valve disease, the clinical debate over statins in the elderly, and how 2026 research is targeting the mechanisms of biological aging."
 header: 
-  overlay_path: /assets/images/heart-health.webp
-  teaser: /assets/images/heart-health.webp
+  overlay_path: /assets/cardiovascular-resilience.webp
+  teaser: /assets/images/cardiovascular-resilience.webp
   overlay_filter: 0.5
 categories: [Cardiovascular, Longevity]
 tags: [heart-health, valve-disease, statins, biological-aging, senior-advocacy]
@@ -23,7 +23,7 @@ This research update explores the rise of silent valve disease, the debate surro
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Senior Heart Health]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/heart-health.webp' | relative_url }})
+![Senior Heart Health]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/cardiovascular-resilience.webp' | relative_url }})
 {: .normal }
 _**Figure 1:** Cardiovascular resilience in senior years depends on a combination of movement, metabolic stability, and clinical oversight._
 
