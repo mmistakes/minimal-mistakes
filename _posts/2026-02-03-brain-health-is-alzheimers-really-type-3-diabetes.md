@@ -6,6 +6,7 @@ date: 2026-02-03T06:46:00+00:00
 description: "Exploring the metabolic link between insulin resistance, cerebral glucose hypometabolism, and the neurodegenerative pathways of Alzheimer's disease."
 header:
   overlay_image: /assets/images/diabetes-type-3.webp
+  teaser: /assets/images/diabetes-type-3.webp
   og_image: /assets/images/diabetes-type-3.webp
   overlay_filter: 0.5
 category: [Clinical Research, Cognitive Health]
