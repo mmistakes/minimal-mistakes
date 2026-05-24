@@ -7,8 +7,8 @@ tags: ["Cognitive Health", "Type 2 Diabetes", "Liver Health"]
 description: "Discover the critical vascular bridge connecting liver portal hypertension, blood pressure stability, and structural mini-stroke (TIA) risks."
 excerpt: "Is it a localized vascular block or systemic metabolic fog? Learn how managing liver pressure directly shields your brain's delicate capillary networks."
 header:
-  overlay_image: /assets/images/Transient-Ischemic-Attack.webp
-  teaser: /assets/images/Transient-Ischemic-Attack.webp
+  overlay_image: /assets/images/transient-Ischemic-Attack.webp
+  teaser: /assets/images/transient-ischemic-attack.webp
   overlay_filter: 0.5
 last_modified_at: 2026-05-20
 ---
@@ -17,7 +17,7 @@ A Transient Ischemic Attack (TIA), commonly referred to as a mini-stroke, is an 
 
 ---
 
-![3D visualization of a TIA.](/assets/images/Transient-Ischemic-Attack.webp)
+![3D visualization of a TIA.](/assets/images/transient-ischemic-attack.webp)
 *Figure 1: The Vascular Emergency. A transient ischemic attack occurs when a temporary micro-clot briefly cuts off oxygen delivery to localized brain tissue, highlighting the immediate need to stabilize systemic blood flow.*
 
 ---
