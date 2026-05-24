@@ -5,8 +5,8 @@ permalink: /posts/mini-stroke-prevention-liver-pressure-carvedilol/
 date: 2026-02-22
 description: "Why managing liver pressure protects your brain: Exploring the connection between portal hypertension, Carvedilol, and TIA prevention."
 header:
-  overlay_image: /assets/images/transient-ischemic-attack .webp
-  teaser: /assets/images/transient-ischemic-attack .webp
+  overlay_image: /assets/images/transient-ischemic-attack.webp
+  teaser: /assets/images/transient-ischemic-attack.webp
   overlay_filter: 0.5
 category: "[Neurology, Liver Health]"
 tags: [TIA, stroke-prevention, portal-hypertension, carvedilol, senior-healt]
@@ -22,7 +22,7 @@ A Transient Ischemic Attack (TIA), or "mini-stroke," is a medical warning shot. 
 
 ---
 
-![Image of a transient ischemic attack (TIA)]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/transient-ischemic-attack .webp' | relative_url }})
+![Image of a transient ischemic attack (TIA)]({{'/assets/images/transient-ischemic-attack.webp| relative_url }})
 {: .normal }
 _**Figure 1:** A temporary blood clot briefly blocks blood flow to the brain. In patients with liver disease, systemic pressure instability can increase the frequency of these events._
 
