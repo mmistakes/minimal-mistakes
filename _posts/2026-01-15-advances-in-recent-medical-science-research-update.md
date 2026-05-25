@@ -6,10 +6,10 @@ categories: ["Longevity"]
 tags: ["Clinical Research", "Prevention", "Senior Health", "Biomarkers"]
 description: "Medical science advances in 2026 showcase AI diagnostics, gene therapy, spatial biology, and early‑detection tools that improve senior health outcomes."
 excerpt: "Medical science has entered a highly transformative period. Discover how AI co-pilots, spatial biology, and early-detection tracking tools are shifting from the research lab into real-world senior care."
-# Native Flexible-Jekyll relative image strings
+# Direct root variable injection
+image: "assets/images/ai-driven-diagnostics.webp"
 feature_image: "assets/images/ai-driven-diagnostics.webp"
 thumbnail: "assets/images/ai-driven-diagnostics.webp"
-image: "assets/images/ai-driven-diagnostics.webp"
 math: true
 toc: true
 last_modified_at: 2026-05-25
@@ -55,7 +55,8 @@ Catching cellular irregularities early and stopping them before they require lat
 Biotechnology research has hit a massive inflection point. Platforms are no longer restricted to broad tissue analysis; they can now evaluate cellular mechanics in real time.
 
 ---
-![Image demonstrating spatial biology mapping identical cytokines inside a tissue sample]({{ '/assets/images/spatial-cytokines-mapping.webp"| relative_url }})_Image demonstrating spatial biology mapping identical cytokines inside a tissue sample_
+![Image demonstrating spatial biology mapping identical cytokines inside a tissue sample]({{ '/assets/images/spatial-cytokines-mapping.webp"| relative_url }})
+_Image demonstrating spatial biology mapping identical cytokines inside a tissue sample_
 
 ---
 ### Emerging Biotech Performance Levers:
