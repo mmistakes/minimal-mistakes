@@ -1,14 +1,17 @@
 ---
-layout: post
+# Minimal Mistakes strict layout flag
+layout: single
 title: "Advances in Recent Medical Science Research: 2026 Update"
 date: 2026-01-15T23:08:00+00:00
 categories: ["Longevity"]
 tags: ["Clinical Research", "Prevention", "Senior Health", "Biomarkers"]
 description: "Medical science advances in 2026 showcase AI diagnostics, gene therapy, spatial biology, and early‑detection tools that improve senior health outcomes."
 excerpt: "Medical science has entered a highly transformative period. Discover how AI co-pilots, spatial biology, and early-detection tracking tools are shifting from the research lab into real-world senior care."
-math: true
-toc: true
-last_modified_at: 2026-05-25
+# Native Minimal Mistakes header array execution
+header:
+  overlay_image: "/assets/images/ai-driven-diagnostics.webp"
+  teaser: "/assets/images/ai-driven-diagnostics.webp"
+  overlay_filter: 0.5
 ---
 
 Medical science has entered one of its most transformative, rapid periods of acceleration in decades. What once lived exclusively within isolated research laboratories or early-stage animal models has officially crossed the threshold into real-world clinical practice, fundamentally reshaping how chronic conditions are detected, managed, and prevented.
