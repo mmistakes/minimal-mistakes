@@ -7,8 +7,8 @@ tags: ["Cardiovascular", "Immune Health", "Diabetes", "Nutrition", "Prevention"]
 description: "A clinical review of the ATP III criteria for metabolic syndrome in psoriasis patients, tracking systemic inflammation and mortality risks."
 excerpt: "People with psoriasis are significantly more likely to develop metabolic syndrome. Discover how chronic immune overdrive accelerates fat accumulation and vascular failure."
 header:
-  overlay_image: /assets/images/psoriasis-metabolic-syndrome.webp
-  teaser: /assets/images/psoriasis-metabolic-syndrome.webp
+  overlay_image: /assets/images/psoriasis-pathomechanisms.webp
+  teaser: /assets/images/psoriasis-pathomechanisms.webp
   overlay_filter: 0.5
 toc: true
 toc_label: "On This Page"
@@ -26,7 +26,9 @@ When your immune system is persistently hyper-activated, it fundamentally alters
 ⚠️ **Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not substitute for professional medical advice, diagnosis, or targeted clinical treatment plans. Always consult your board-certified physician or specialist before making modifications to your care structure or lifestyle protocols.  
 {.prompt-warning}
 
-*Figure 1: The Bio-Metabolic Web.* The pathomechanism of psoriasis reveals how overactive T-cells and circulating cytokines jump directly from dermal tissue beds into the deep vascular network, altering endocrine homeostasis.
+![Psoriasis Pathomechanisms Infographic.*} ({{ '/assets/images/psoriasis-pathomechanisms.webp' | relative_url }})
+
+_The pathomechanism of psoriasis reveals how overactive T-cells and circulating cytokines jump directly from dermal tissue beds into the deep vascular network, altering endocrine homeostasis._
 
 👉 **Related Pillar Article:** *Psoriasis-Metabolic Syndrome Connection: Mortality Risk*
 
