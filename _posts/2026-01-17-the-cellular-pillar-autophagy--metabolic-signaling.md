@@ -7,16 +7,15 @@ tags: ["Microbiome", "Metabolism", "Cardiovascular", "Brain Health", "Senior Hea
 description: "A comprehensive clinical translation tracking the intersections of autophagy pathways, NAD+ delivery science, and core metabolic health markers."
 excerpt: "Aging happens when cellular 'trash' piles up. Learn how to optimize the mTOR/AMPK seesaw, bypass the NAD+ transport bottleneck, and implement an objective five-point metabolic audit."
 header:
-overlay_image: /assets/images/autophagy-metabolic-health.webp
-teaser: /assets/images/autophagy-metabolic-health.webp
-overlay_filter: 0.5
+  overlay_image: /assets/images/autophagy-metabolic-health.webp
+  teaser: /assets/images/autophagy-metabolic-health.webp
+  overlay_filter: 0.5
 toc: true
 toc_label: "On This Page"
 toc_icon: "dna"
 math: true
 last_modified_at: 2026-05-24
 ---
-
 Aging happens at a foundational level when intracellular *trash*—such as misfolded proteins, cross-linked aggregates, and worn-out, dysfunctional mitochondria—begins to pile up inside the cellular matrix. Shifting the body out of an uninterrupted, nutrient-saturated growth state into a restorative housekeeping mode requires precise management of advanced metabolic signaling paths.
 
 By actively leveraging the interactions between **AMPK** activation, **NAD**⁺/sirtuin pathways, and targeted lifestyle modifications, patient advocates can clear out systemic debris and slow down age-related physical decline.
@@ -25,6 +24,7 @@ By actively leveraging the interactions between **AMPK** activation, **NAD**⁺/
 ⚠️ Medical Disclaimer: This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider before initiating significant fasts, intensive exercise shifts, or alternative metabolic supplement protocols, especially if managing chronic conditions.{.prompt-warning}
 
 ---
+
 ![Infographic-style illustration showing autophagy and metabolic health with DNA, mitochondria, and cellular renewal symbols.}
 ({{ '/assets/images/autophagy-metabolic-health.webp' | relative_url }})
 _Figure 1: Longevity Signaling Networks. Cellular rejuvenation operates as an active, mechanical process driven by nutrient availability, mitochondrial optimization, and continuous waste clearance pathways._
