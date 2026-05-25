@@ -28,6 +28,7 @@ When your immune system is persistently hyper-activated, it shifts your blood ve
 {.prompt-warning}
 
 ![Psoriasis and the Heart](/assets/images/heart.webp)
+
 *Figure 1: The Inflammatory Spread. Psoriasis is a systemic autoimmune fire. Left unmanaged, circulating cytokines migrate from dermal tissue beds directly into the coronary arteries, causing accelerated vascular irritation.*
 
 ---
