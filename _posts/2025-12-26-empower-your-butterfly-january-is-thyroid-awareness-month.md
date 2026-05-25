@@ -7,8 +7,8 @@ tags: ["Senior Health", "Prevention", "Mindset", "Biomarkers"]
 description: "A patient's blueprint for Thyroid Awareness Month, detailing laboratory trends, subclinical conditions, and active self-advocacy strategies."
 excerpt: "The thyroid gland acts as the body's master thermostat. Discover how to identify hidden malfunctions, evaluate full biomarker panels, and lead your next medical consultation."
 header:
-  overlay_image: "/assets/images/butterfly-gland.webp"
-  teaser: "/assets/images/butterfly-gland.webp"
+  overlay_image: "/assets/images/butterfy-gland.webp"
+  teaser: "/assets/images/butterfy-gland.webp"
   overlay_filter: 0.5
 toc: true
 toc_label: "Research Highlights"
@@ -29,7 +29,7 @@ As an independent health researcher, I have spent considerable time parsing clin
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Anatomy of the human thyroid gland]({{ '/assets/images/butterfly-gland.webp' | relative_url }})
+![Anatomy of the human thyroid gland]({{ '/assets/images/butterfy-gland.webp' | relative_url }})
 *Figure 1: The Endocrine Engine. Though tiny, the thyroid gland synthesizes cellular messengers that regulate basal metabolic rates across every organ system in the body.*
 
 ---
