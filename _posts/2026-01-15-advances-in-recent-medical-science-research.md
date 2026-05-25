@@ -7,9 +7,9 @@ tags: ["Clinical Research", "Prevention", "Senior Health", "Biomarkers"]
 description: "Medical science advances in 2026 showcase AI diagnostics, gene therapy, spatial biology, and early‑detection tools that improve senior health outcomes."
 excerpt: "Medical science has entered a highly transformative period. Discover how AI co-pilots, spatial biology, and early-detection tracking tools are shifting from the research lab into real-world senior care."
 header:
-  overlay_image: "assets/images/ai‑driven-diagnostics.webp
+  overlay_image: /assets/images/ai-driven-diagnostics.webp
   overlay_filter: 0.5
-teaser: "assets/images/ai-driven-diagnostics.webp"
+teaser: /assets/images/ai-driven-diagnostics.webp
 toc: true
 toc_label: "On This Page"
 toc_icon: "microscope"
