@@ -15,7 +15,6 @@ main:
     url: /sitemap/
   - title: "Search"
     url: /search/  
-YAML
 footer:
   - title: "Trust & Policies"
     children:
