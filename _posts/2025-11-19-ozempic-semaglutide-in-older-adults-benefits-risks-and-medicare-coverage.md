@@ -46,10 +46,7 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '💪 Fun
     <strong>Medical Disclaimer:</strong> This content is for informational purposes and reflects 2026 clinical guidelines. I am an advocate, not a doctor. Always consult your medical partner before starting GLP-1 therapy.
   </div>
 
-  <div style="margin: 30px 0px; text-align: center;">
-    <img alt="Rendering of a GLP-1 agonist injection pen next to a glowing heart outline" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2qnGxJgVwMIq8qezv2qrjmAg3HhPlkj4IxPQiJg-i_EoH2WbW69RCiZFzcusTAyGLup89QFf5pHrFrsJtt6uWi9VwYJ3c0_QIoPSjolALmPgJyRSfxwXlI51DKpIkKbSpjXqp4NiR4VHl-db2E90uJ8n6cv6wpL87i5RaiVLfP8etTwzAFg_t1UjXE96I/s16000/GLP-1_Heart_Protection.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" />
-    <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">Semaglutide: A visual metaphor for the cardiovascular protection offered to older adults.</p>
-  </div>
+ ![Rendering of a GLP-1 agonist injection pen next to a glowing heart outline.]({{ '/assets/images/ glp-1-injection-pen-healthy-heart.webp'| relative_url }})_Semaglutide: A visual metaphor for the cardiovascular protection offered to older adults._
 
   <div class="ah-card">
     <h2 class="ah-title">The "Three-Way" Mechanism: How it Protects You</h2>
