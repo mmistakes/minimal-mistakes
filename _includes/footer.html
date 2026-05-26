@@ -26,24 +26,30 @@
 {% endif %}
 
 {% if site.data.navigation.footer %}
-<div class="page__footer-pages" style="margin-bottom: 1rem;">
-  <ul class="footer-links" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 15px; flex-wrap: wrap;">
+<div class="page__footer-pages" style="margin-bottom: 1.5rem;">
+  <ul class="footer-links" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px;">
     {% for section in site.data.navigation.footer %}
       {% if section.children %}
         {% for child in section.children %}
-          <li>
+          <li class="footer-link-item" style="display: inline-flex; align-items: center;">
             <a href="{{ child.url | relative_url }}" style="text-decoration: none; font-weight: 600; font-size: 0.85rem;">
               {{ child.title }}
             </a>
           </li>
-          {% unless forloop.last %}
-            <li style="color: #7a8288; font-size: 0.85rem;" aria-hidden="true">|</li>
-          {% endunless %}
         {% endfor %}
       {% endif %}
     {% endfor %}
   </ul>
 </div>
+
+<style>
+  .footer-link-item + .footer-link-item::before {
+    content: "|";
+    color: #7a8288;
+    font-size: 0.85rem;
+    margin-right: 12px;
+  }
+</style>
 {% endif %}
 
 <div class="page__footer-copyright">&copy; {% assign site_time = site.time | date: '%Y' %}{% if site.footer.since and site_time != site.footer.since %}{{ site.footer.since }} - {% endif %}{{ site_time }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title | escape_once | strip }}</a>. {{ site.data.ui-text[locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
