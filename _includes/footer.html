@@ -2,6 +2,7 @@
 {% unless site.atom_feed.hide %}
   {% assign show_atom = true %}
 {% endunless %}
+
 {% if site.footer.links or show_atom %}
 <div class="page__footer-follow">
   <ul class="social-icons">
@@ -20,6 +21,27 @@
     {% unless site.atom_feed.hide %}
       <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> {{ site.data.ui-text[locale].feed_label | default: "Feed" }}</a></li>
     {% endunless %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.data.navigation.footer %}
+<div class="page__footer-pages" style="margin-bottom: 1rem;">
+  <ul class="footer-links" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 15px; flex-wrap: wrap;">
+    {% for section in site.data.navigation.footer %}
+      {% if section.children %}
+        {% for child in section.children %}
+          <li>
+            <a href="{{ child.url | relative_url }}" style="text-decoration: none; font-weight: 600; font-size: 0.85rem;">
+              {{ child.title }}
+            </a>
+          </li>
+          {% unless forloop.last %}
+            <li style="color: #7a8288; font-size: 0.85rem;" aria-hidden="true">|</li>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
   </ul>
 </div>
 {% endif %}
