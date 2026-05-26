@@ -15,3 +15,11 @@ main:
     url: /sitemap/
   - title: "Search"
     url: /search/  
+YAML
+footer:
+  - title: "Trust & Policies"
+    children:
+      - title: "Sources Policy"
+        url: /sources-citations-policy/
+      - title: "Editorial Policy"
+        url: /editorial-policy/
