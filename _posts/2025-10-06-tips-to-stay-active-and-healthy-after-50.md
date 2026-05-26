@@ -3,8 +3,8 @@ layout: post
 title: "Tips to Stay Active and Healthy After 50"
 date: 2025-10-06
 description: "Explore effective strategies for Baby Boomers to maintain an active lifestyle. Learn how to age gracefully and enjoy every moment of life!"
-image: "/assets/images/old-love.webp"
-tags: ["Clinical Research", "Cardiovascular", "Liver & Immune Health", "Stress", "Community", "Aging Well", "Longevity"]
+image: "/assets/images/joyful-older-couple.webp"
+tags: 
 ---
 
 ## A Complete Guide for Baby Boomers Aging with Confidence
@@ -13,7 +13,7 @@ Aging after 50 is no longer about slowing down—it’s about staying engaged, i
 
 ---
 
-![A joyful older couple embraces retirement outdoors, by the pool, exploring nature and creating cherished memories together and with friends.](/assets/images/old-love.webp)
+![A joyful older couple embraces retirement outdoors, by the pool, exploring nature and creating cherished memories together and with friends.](/assets/images/joyful-older-couple.webp)
 *Figure 1: A happy elderly couple enjoys retirement outdoors, exploring nature and making memories together.*
 
 ---
