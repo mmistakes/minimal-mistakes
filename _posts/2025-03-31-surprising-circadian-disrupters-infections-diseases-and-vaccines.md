@@ -31,7 +31,7 @@ While historical medical frameworks often evaluated neurological clocks and immu
 
 ---
 
-![Conceptual representation of health disruptions intersecting with time metrics]({{ '/assets/images/ circadian-disrupters-clock.webp'| relative_url }})
+![Conceptual representation of health disruptions intersecting with time metrics]({{ '/assets/images/circadian-disrupters-clock.webp' | relative_url })})
 *Figure 1: Pathogenic Chronobiology. Beyond environmental light cues, localized molecular immune signals and inflammatory cytokine spikes possess the direct capacity to reshape the firing rate of your master clock.*
 
 ---
