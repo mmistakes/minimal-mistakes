@@ -85,11 +85,23 @@ pagination:
   limit: 0
   sort_field: "date"
   sort_reverse: true
-
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - category_index.html
+    permalink: "/category/:name/"
+  tags:
+    layouts:
+      - tag_index.html
+    permalink: "/tag/:name/"
 # Search Settings
 search_provider: lunr
 lunr:
   search_within_pages: true
+
+# Global Media Configuration Variables
+img_url: "/assets/images"
 
 # Front Matter Defaults (Global Settings for all 330 posts)
 defaults:
@@ -121,7 +133,7 @@ comments:
   provider: "giscus"
   giscus:
     repo_id: "R_kgDOSdr1qQ"
-    category: "Senior Healtk" 
+    category: "Senior Health" 
     category_id: "DIC_kwDOSdr1qc4C9Itp"
     mapping: "pathname"
     strict: "0"
