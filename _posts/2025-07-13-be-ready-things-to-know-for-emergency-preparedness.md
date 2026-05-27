@@ -29,7 +29,7 @@ This guide breaks down the essential emergency equipment, medication tracking sa
 > **⚠️ Medical Disclaimer:** This material reflects updated 2026 Federal Emergency Management Agency (FEMA) directives and National Institute on Aging (NIA) safety parameters. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Family packing a structured emergency go-bag together]({{ '/assets/images/emergency-prepared-family.webp' | relative_url })})
+![Family packing a structured emergency go-bag together]![Family packing a structured emergency go-bag together]({{ '/assets/images/emergency-prepared-family.webp' | relative_url }})
 *Figure 1: Proactive Security. Do not wait for an active environmental alert to organize your resources. Building a multi-tier emergency kit provides immediate safety, stability, and absolute peace of mind.*
 
 ---
@@ -56,7 +56,11 @@ Flooding represents the most common and widely distributed natural hazard on the
 * *The Core Safety Rule:* **"Turn around, don't drown."** Less than six inches of moving water can break traction with your footwear, and two feet of water will carry away most standard passenger vehicles. 
 * *Action Step:* Identify whether your home base sits within a high-risk flood zone, elevate your primary household utilities, and maintain an inventory of rapidly deployable sandbags.
 
-[Image diagram detailing flood water levels and the minimum depths required to sweep away pedestrians versus standard passenger vehicles]
+---
+
+[Image diagram detailing flood water levels and the minimum depths required to sweep away pedestrians versus standard passenger vehicles]({{ '/assets/images/ turn-around-dont-drown.webp'| relative_url }})
+
+---
 
 ### 2. Earthquakes & Crustal Shifts
 Earthquakes are sudden releases of accumulated kinetic energy tracking across tectonic plate fault lines within the Earth's crust. 
@@ -104,7 +108,11 @@ A heavy-duty, high-volume storage bin designed to sustain your entire household 
 
 During widespread regional emergencies, localized cellular networks quickly become overloaded or experience total power failure, rendering standard text messages and voice calls useless. 
 
-[Image outlining an emergency communication flow chart routing through a central out-of-state contact]
+---
+
+![Image outlining an emergency communication flow chart routing through a central out-of-state contact]({{ '/assets/images/ emergency-communication-plan.webp'| relative_url }})
+
+---
 
 Establish an unyielding communication protocol before an event takes place:
 * **The Out-of-State Contact Node:** Designate a trusted friend or relative living completely outside your immediate geographical region to serve as your family’s central check-in point. During local grid overloads, long-distance lines frequently remain operational when local intra-city calls fail to connect.
@@ -126,8 +134,11 @@ A crisis introduces sudden, unexpected out-of-pocket variables that can place im
 
 Older adults face sharply elevated physiological and systemic risks during natural disasters due to dependency on chronic medication tracks, limited physical mobility, and hidden social isolation variables. 
 
-[Image checklist highlighting specific senior needs: medication timelines, alternative refrigeration, and mobility aid staging]
+---
 
+![Image checklist highlighting specific senior needs: medication timelines, alternative refrigeration, and mobility aid staging]({{ '/assets/images/ seniors-needs-emergency-checklist.webp'| relative_url }})
+
+---
 If you are an independent senior or managing care for an aging spouse, apply these explicit directives:
 
 ### 1. The Proactive Medication Strategy
