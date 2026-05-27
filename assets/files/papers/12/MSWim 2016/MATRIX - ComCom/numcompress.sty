@@ -1,0 +1,175 @@
+%%
+%% This is file 'numcompress.sty',
+%%
+%% Copyright (C) 2009 River Valley Technologies 
+%%                    <latex.support@river-valley.com>
+%% 
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.2
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% $Id: numcompress.sty 144 2009-10-08 04:04:13Z rishi $
+%%
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/numcompress.sty $
+%%
+\newif\ifdots \dotstrue
+\newif\ifnumcompress \numcompresstrue
+
+\DeclareOption{dots}{\global\dotstrue}
+\DeclareOption{nodots}{\global\dotsfalse}
+\DeclareOption{compress}{\global\numcompresstrue}
+\DeclareOption{nocompress}{\global\numcompressfalse}
+
+\ProcessOptions
+
+\def\removeDot#1{\def\tmp{#1}%
+    \ifx\tmp\@empty\else\@removeDot#1\@nil\fi}
+
+\def\@removeDot#1\@nil{\edef\fchar{\expandafter\@car#1\@nil}%
+      \edef\rchar{\expandafter\@cdr#1!\@nil}%
+      \def\@xmltempa{.}\def\@xmltempb{!}%
+      \ifx\fchar\@xmltempb\relax\else%
+      \ifx\fchar\@xmltempa\relax\else%
+      \fchar\ignorespaces\fi\removeDot{\rchar}\fi}
+
+
+\def\First[#1]{\csname First#1\endcsname}
+\def\Second[#1]{\csname Second#1\endcsname}
+
+\def\parseFirstPage#1{\@tempcnta=0
+  \@tfor\@digits:=#1\do{%
+    {\global\advance\@tempcnta by 1
+      \expandafter\xdef\csname
+      First\the\@tempcnta\endcsname{\@digits}%
+      \xdef\flength{\the\@tempcnta}}}}
+
+\def\parseSecondPage#1{\@tempcnta=0
+  \@tfor\@digits:=#1\do{%
+    {\global\advance\@tempcnta by 1
+      \expandafter\xdef\csname
+      Second\the\@tempcnta\endcsname{\@digits}%
+      \xdef\llength{\the\@tempcnta}}}}
+
+\newif\ifdissimilar\dissimilarfalse
+\def\checkequal#1#2{\edef\Farg{#1}\edef\Sarg{#2}%
+      \edef\One{A}%
+      \ifcat\One\Farg \relax\else%
+      \ifdissimilar\Sarg\else%
+      \ifnum\Farg=\Sarg\relax\else\Sarg\dissimilartrue\fi\fi\fi}
+%
+\let\@@fpage\@empty
+\let\@@lpage\@empty
+\def\fpage@compress#1{%
+      \gdef\@@fpage{#1}%
+            \edef\llength{0}%
+            \parseFirstPage{#1}%
+      \ifnum\flength=\llength%
+       \gdef\@fpage{\@@fpage}%
+       \gdef\@lpage{%
+        \@ifundefined{Second1}{}{\checkequal{\First[1]}{\Second[1]}}%
+        \@ifundefined{Second2}{}{\checkequal{\First[2]}{\Second[2]}}%
+        \@ifundefined{Second3}{}{\checkequal{\First[3]}{\Second[3]}}%
+        \@ifundefined{Second4}{}{\checkequal{\First[4]}{\Second[4]}}%
+        \@ifundefined{Second5}{}{\checkequal{\First[5]}{\Second[5]}}%
+      }%
+      \else%
+       \gdef\@fpage{\@@fpage}%
+       \gdef\@lpage{\@@lpage}%
+     \fi}
+
+\def\lpage@compress#1{%
+        \gdef\@@lpage{#1}%
+        \parseSecondPage{#1}%
+      \ifnum\flength=\llength%
+       \gdef\@fpage{\@@fpage}%
+       \gdef\@lpage{%
+       \edef\One{A}%
+       \edef\xFirst{\First[1]}%
+       \edef\xSecond{\Second[1]}%
+       \ifcat\One\xSecond\relax%
+          \ifx\xFirst\xSecond%
+           \@ifundefined{Second1}{}{\checkequal{\First[1]}{\Second[1]}}%
+           \@ifundefined{Second2}{}{\checkequal{\First[2]}{\Second[2]}}%
+           \@ifundefined{Second3}{}{\checkequal{\First[3]}{\Second[3]}}%
+           \@ifundefined{Second4}{}{\checkequal{\First[4]}{\Second[4]}}%
+           \@ifundefined{Second5}{}{\checkequal{\First[5]}{\Second[5]}}%
+          \else#1\fi%
+      \else%
+          \ifx\xFirst\xSecond%
+           \@ifundefined{Second1}{}{\checkequal{\First[1]}{\Second[1]}}%
+           \@ifundefined{Second2}{}{\checkequal{\First[2]}{\Second[2]}}%
+           \@ifundefined{Second3}{}{\checkequal{\First[3]}{\Second[3]}}%
+           \@ifundefined{Second4}{}{\checkequal{\First[4]}{\Second[4]}}%
+           \@ifundefined{Second5}{}{\checkequal{\First[5]}{\Second[5]}}%
+        \else#1\fi%
+      \fi%
+      }%
+    \else
+      \gdef\@fpage{\@@fpage}%
+      \gdef\@lpage{%
+      \edef\Targ{#1}%
+      \edef\One{A}%
+      \edef\xFirst{\First[1]}%
+      \edef\xSecond{\Second[1]}%
+      \ifx\xFirst\xSecond
+         \ifcat\One\xSecond\relax\else\@@lpage\fi%
+      \else#1\fi%
+      }%
+  \fi}
+
+\newwrite\xx
+\immediate\openout\xx=tmpbib.tex
+
+\gdef\@@@pages#1#2{\def\next{#2}%
+  \immediate\write\xx{[\the\c@NAT@ctr.]\space [#1][#2]}%
+  \fpage@compress{#1}%\ifx\next\@empty\relax\else
+   \lpage@compress{#2}%\fi
+  {\@fpage\ifx\next\@empty\relax\else
+    --\@lpage\fi}\resetall}
+
+\def\mk@empty#1{\@tempcnta=1
+  \loop\ifnum\@tempcnta<6
+    \expandafter\let\csname#1\the\@tempcnta\endcsname\relax
+    \advance\@tempcnta by 1 \repeat}
+\def\resetall{\let\@lpage\@empty\let\@fpage\@empty
+   \def\flength{0}\def\llength{0}%
+   \let\@@fpage\@empty\let\@@lpage\@empty
+   \mk@empty{First}\mk@empty{Second}}
+
+
+\ifdots
+ \gdef\xfnm[#1]{\unskip\space#1}
+ \def\bibinfo#1#2{\@ifnextchar.{\@@bibinfo{#1}{#2}}{\@@@bibinfo{#1}{#2}}}
+ \def\@@@bibinfo#1#2{\def\next{#1}%
+   \def\@@@pg{pages}\def\@@@au{author}%
+   \ifx\next\@@@pg\bibpages{#2}\else
+   \ifx\next\@@@au\bibauthor{#2}\else
+   #2\fi\fi}
+ \def\@@bibinfo#1#2.{\def\next{#1}%
+  \def\@@@pg{pages}\def\@@@au{author}%
+  \ifx\next\@@@pg\bibpages{#2}.\else
+  \ifx\next\@@@au\bibauthor{#2}\else
+  #2.\fi\fi}
+\else
+ \gdef\xfnm[#1]{\unskip\space\removeDot{#1}}
+ \def\bibinfo#1#2{\def\next{#1}%
+   \def\@@@pg{pages}\def\@@@au{author}%
+   \ifx\next\@@@pg\bibpages{#2}\else
+   \ifx\next\@@@au\bibauthor{#2}\else
+   #2\fi\fi}
+\fi
+
+\ifnumcompress
+ \def\bibpages#1{\@@bibpages#1\@nil}
+ \def\@@bibpages#1--#2\@nil{\@@@pages{#1}{#2}}
+\else
+ \def\bibpages#1{#1}
+\fi
+
+\def\bibauthor#1{#1}
+
+

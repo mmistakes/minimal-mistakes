@@ -1,0 +1,34 @@
+[2017-05-28 00:20:06] experiments-matrix-101: OK
+
+[2017-05-28 00:23:05] experiments-matrix-101: OK
+
+[2017-05-28 00:26:42] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: org.contikios.cooja.corecomm.Lib1.init()V
+	at org.contikios.cooja.corecomm.Lib1.init(Native Method)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:50)
+	... 13 more
+
+
+[2017-05-28 00:26:44] experiments-matrix-101: OK
+
+[2017-05-28 00:29:48] experiments-matrix-101: OK
+
+[2017-05-28 00:33:10] experiments-matrix-101: OK
+
+[2017-05-28 00:36:26] experiments-matrix-101: OK
+
+[2017-05-28 00:40:41] experiments-matrix-101: OK
+
+[2017-05-28 00:44:04] experiments-matrix-101: OK
+
+[2017-05-28 00:47:36] experiments-matrix-101: OK
+

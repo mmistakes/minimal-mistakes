@@ -1,0 +1,14 @@
+\section{Related work}
+\label{sec:related-work}
+
+In the world of tiny (IoT) several mobility-enabling routing protocols have been proposed. Firstly we highlight $\mu$Matrix's features against its original static version \cite{Peres:2016}. Then, we survey recent protocols in the context of 6LoWPAN and put them in perspective with $\mu$Matrix. 
+  
+Matrix was originally proposed without support for mobility\cite{Peres:2016}. If a node moved from its home location, the hierarchical IPv6 address allocation would become invalid and compromise downward routing. Although RPL~\cite{rfc6550} is the standard protocol for 6LoWPANs, it presents limitations, for example, in mobility scenarios, scalability issues, reliability and robustness for point-to-multipoint traffic~\cite{iova2016rpl, Peres:2016}. Most recent mobile-enabled routing protocols are RPL extensions. They deal with mobile issues, but they do not handle RPL drawbacks. Co-RPL~\cite{gaddour2014co} provides mobility support to RPL but without Trickle. This turns Co-RPL more responsive but has higher overhead. MMRPL~\cite{cobarzan2014analysis} modifies the RPL beacon periodicity by replacing the Trickle mechanism with a Reverse Trickle-Like. Their Reverse Trickle decays exponentially, while our approach quickly goes to the minimum after an unacknowledged beacon. MMRPL also needs some static nodes. In ME-RPL~\cite{el2012mobility}, static nodes have higher priority than mobile ones. ME-RPL requires some fixed nodes. The memory requirement to downward routes is still prohibitive. mRPL~\cite{fotouhi2015mrpl} proposes a hand-off mechanism for mobile nodes in RPL by separating nodes into mobile (MN) or serving access point (AP). They use smart-HOP algorithm on MN nodes to perform hand-off between AP. 
+
+XCTP~\cite{santos2015extend} extends CTP to support bidirectional traffic. XCTP does not support IPv6 addressing and any-to-any traffic. Hydro~\cite{dawson2010hydro} fills the gap of any-to-any traffic, but it requires static nodes with a large memory to perform the routing and support mobility nodes.
+
+Mobile IP~\cite{perkins2011mobility} and Hierarchical Mobile IPv6 (HMIPv6) Mobility Management~\cite{rfc5380} are standards for IPv6 networks for handling local mobility. However, they are not designed for 6LoWPANs, they do not present a mobility detection or adjustable timers. LOAD~\cite{kim20076lowpan} and DYMO-Low~\cite{kim2007dynamic} are 6LoWPAN protocols inspired in AODV and DYMO, but they are not suitable for mobile networks.
+
+Table~\ref{tab:rel-works} summarizes properties of the related protocols.
+
+\input{related-work-table}

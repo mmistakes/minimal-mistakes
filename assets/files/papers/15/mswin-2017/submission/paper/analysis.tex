@@ -1,0 +1,63 @@
+
+\section{Complexity Analysis}
+\label{sec:analysis}
+
+For the formal analysis, we assume a synchronous communication message-passing model with no faults. Thus, all nodes start executing the algorithm simultaneously and the time is divided into synchronous rounds, i.e., when a message is sent from node $v$ to its neighbor $u$ in time-slot $t$, it must arrive at $u$ before time-slot $t + 1$, and $d(v,u)$ is the shortest path length between $v$ and $u$ in $Ctree \cup IPtree \cup RCtree$. The performance of $\mu$Matrix in faulty scenarios is analyzed through simulations in Section \ref{sec:evaluation}.
+
+\subsection{Memory footprint}
+\label{subsec:memory-footprint}
+
+As described in Section~\ref{sec:design}, the temporary routing information needed to maintain mobility is stored in the $Mtable$ data structure of some nodes. Each entry is kept for at most $TTL_{max}$ seconds, a time interval pre-configured by the network operator, and is deleted unless a \texttt{keepRoute} beacon is received. In the following theorem, we bound the total number of $Mtable$ entries in the network, necessary to manage routing of each mobile node $\mu \in CTree$.
+
+\begin{theorem}\label{thm:memOneNode}
+The memory footprint to manage the mobility of one node $\mu \in Ctree$ with $\mu$Matrix is $\mathcal{M}(\mu)=O(depth(Ctree))$.
+\end{theorem}
+
+\begin{proof}
+Consider a node $\mu \in Ctree$ that has moved from its home location in time-slot $t_0$ and returned in time-slot $t_f$. Consider the (permanent) $IPparent(\mu)$ and the (temporary) $CTparent_{i}(\mu)$ in time-slot $t_0 < t_i < t_f$. A routing entry for the temporary location of $\mu$ will be stored in the $Mtable$ of every node comprising the shortest path between $IPparent(\mu)$ and $CTparent_{i}(\mu)$. Moreover, if $\mu$ has descendants in the IPtree, i.e, $k(\mu)=|IPchildren(\mu)|>0$, then each node $c\in IPchildre(\mu)$ will send a temporary (bi-directional) route request to their respective $CTparent_{i}(c)$, and a (temporary) routing entry will be stored in the Mtable of every node comprising the shortest path between $CTparent_{i}(c)$ and $IPparent(\mu)$. Therefore, the total memory footprint to manage the mobility of a node $\mu$ is:
+\begin{eqnarray*}
+    \mathcal{M}(\mu) & = &  d(CTparent_{i}(\mu), IPparent(\mu)) + 1 \nonumber \\
+                     & + & \sum_{c \in IPchildren(\mu)} (d(CTparent_{i}(c), IPparent(\mu))+1) \nonumber \\
+                    & \leq & (k(\mu)+1) \times (depth(Ctree)+1) \nonumber \\
+                    &=& O(depth(Ctree)) \qedhere \nonumber
+\end{eqnarray*}
+\end{proof}
+
+Theorem~\ref{thm:memOneNode} implies that the total memory footprint to manage the mobility of $m$ nodes is $O(m \times depth(Ctree))$. Note that $\mu$Matrix preserves locality when managing mobile routing information of a node $\mu$, since no $Mtable$ needs to be updated at nodes above the $LCA(IPparent(\mu),CTparent(\mu))$.
+
+\subsection{Control message overhead}
+\label{subsec:control-message-overhead}
+
+Control messages used by $\mu$Matrix are comprised of three types: (1) those used by Matrix to set up the initial IPtree and address allocation; (2) \texttt{hasMoved} beacons, defined in Section~\ref{subsec:reverse-tt}; and (3) \texttt{keepRoute} beacons, defined in Section \ref{subsubsec:controlDataStructures}. 
+
+For any network of size $n$ with a spanning collection tree Ctree rooted at node $r$, the message and time complexity of Matrix protocol in the address allocation phase is $\mathcal{M}sg(Matrix^{IP}$ $(Ctree))$ = $O(n)$ and $\mathcal{T}(Matrix^{IP}$ $(Ctree))$ = $O(depth(Ctree))$, respectively, which is asymptotically optimal, as proved in \cite{Peres:2016}. Next we bound the number of control messages of type (2) and (3).
+
+\begin{theorem}\label{thm:costOverOneNode}
+Consider a network with $n$ nodes, with a spanning collection tree $Ctree$ rooted at node $r$, and $m$ mobility events, consisting of $m$ nodes $\mu_i$, changing location during time intervals $\Delta_i \leq \Delta$ time-slots.
+Moreover, consider the \texttt{hasMoved} beacon parameters $I_{min}$, $I_{max}$ and $I_k$ and the \texttt{keepRoute} beacon interval of $\delta$ time-slots. The control message complexity of $\mu$Matrix to perform
+routing under mobility of $m$ nodes is 
+\begin{eqnarray}
+\mathcal{M}sg(\mu Matrix(Ctree)) &=&O\left(\frac{m\times I_k}{I_{min}} + \frac{n}{I_{max}}\right) \nonumber\\
+&+& O\left(\frac{m \times \Delta}{\delta} depth(Ctree)\right).\nonumber
+\end{eqnarray}
+\end{theorem}
+\begin{proof}
+Firstly, we bound the number of \texttt{hasMoved} beacons, which are sent periodically by all nodes in order to detect mobility events. As described in Section~\ref{subsec:reverse-tt}, when there is no mobility, the periodicity of \texttt{hasMoved} beacons is $1/I_{max}$. If some node $\mu$ has moved (an ack is lost), then $I_k$ messages are sent in intervals of $I_{min}$ time-slots. Using the fact that the network is a tree and the number of edges is $O(n)$, this gives a total of messages $$Msg(\mu Matrix^{\texttt{hM}}(Ctree)) = O\left(\frac{m\times I_k}{I_{min}} + \frac{n}{I_{max}}\right).$$
+
+Now, we bound the number of \texttt{keepRoute} beacons. As described in Section~\ref{sec:design}, mobile nodes send periodic \texttt{keepRoute} beacons at a frequency of $\delta$ to keep the $Mtable$s up-to-date. Consider a node $\mu \in Ctree$ that has moved from its home location in time-slot $t_0$ and returned in time-slot $t_f$. Consider the $IPparent(\mu)$, $CTparent_i(\mu)$ in time-slot $t_0 < t_i < t_f$, and $\Delta = t_f - t_0$. When $\mu$ is attached to a $CTparent_i(\mu)$, $\mu$ sends \texttt{keepRoute} beacons at a rate of $\delta$ for at most $\Delta$ time-slots, such beacons travel the shortest path $|(CTparent_i(\mu),$ $IPparent(\mu))|$ $\leq $ $2 \times depth(Ctree)$. Furthermore, if $\mu$ has descendants, i.e., $k(\mu) = $ $|IPchildren(\mu)|$ $ > 0$, then each node $c \in IPchildren(\mu)$ will also send \texttt{keepRoute} beacons at a rate of $\delta$ for at most $\Delta$ time-slots, such beacons will travel the shortest path $|(CTparent_i(c),$ $IPparent(\mu))|$ $\leq $ $2 \times depth(Ctree)$. Therefore, the total control overhead to manage the mobility of a node $\mu$ is $ \leq 2$ $\times depth(Ctree) (k(\mu) + 1) \Delta/\delta$, which results in $$\mathcal{M}sg(\mu Matrix^{\texttt{kR}}(Ctree))=O\left(\frac{m \times \Delta}{\delta} depth(Ctree)\right).$$ Finally, the total control overhead is bounded by: $$\mathcal{M}sg(\mu Matrix) = \mathcal{M}sg(\mu Matrix^{\texttt{hM}}) + \mathcal{M}sg(\mu Matrix^{\texttt{kR}})\qedhere$$ 
+\end{proof}
+
+Once again $\mu$Matrix preserves locality when managing mobile routing state of a node $\mu$ since no messages need to be sent to nodes above the $LCA(IPparent(\mu),CTparent(\mu))$.
+
+\subsection{Routing path distortion}
+\label{subsec:path-distortion}
+
+We analyze the route length of messages, addressed to mobile nodes. Consider the underlying collection protocol (e.g. CTP or RPL), which dynamically optimizes the (bottom-up, or upwards) links in the collection tree $CTree$, according to some metric, such as ETX. We define an \textit{optimal route} length as the distance of the shortest path between $(s,d)$, comprised of the upwards links of the collection tree $CTree$ and the downwards links of the union of the IPv6 address tree and the reverse-collection tree, i.e., $IPtree \cup RCtree$. 
+
+\begin{theorem}
+\label{theo:optimal-routing} $\mu$Matrix presents optimal path distortion under mobility, i.e., all messages are routed along shortest paths towards mobile destination nodes.
+\end{theorem}
+
+\begin{proof}
+Consider a mobile node $\mu \in CTree$, which has moved from its home location in time-slot $t_0$. Messages addressed to $\mu$ and originated by some node $\eta \in Ctree$ in time-slot $t_i > t_0$ can belong to traffic flows of three kinds: (1) bottom-up: $LCA_i(\mu,\eta)=\mu$; (2) top-down: $LCA_i(\mu,\eta)=\eta$; and (3) any-to-any: $LCA_i(\mu,\eta)$ $\neq \mu $ $\neq \eta$. In case (1), messages are forwarded using the underlying collection protocol, using the upwards links of the collection tree CTree, which is optimal. In case (2), messages are forwarded using Mtables of $\eta$ and its descendents, until reaching the mobile location of $\mu$ in some time-slot $t_f>t_0$. This path is comprised of the downwards links of $IPtree \cup RCtree$ in time-slot $t_0 < t_i \leq t_f$, which is the optimal route from $\eta$ to the mobile location of $\mu$ in that time-slot. In case (3), the route between $\eta$ and $LCA_i(\mu,\eta)$ falls into the case (1) and the route between $LCA_j(\mu,\eta)$ and $\mu$ falls into the case (2), for some $t_0 < t_i \leq t_j \leq t_f$, which is optimal.
+\end{proof}

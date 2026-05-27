@@ -1,0 +1,55 @@
+\begin{tikzpicture}[
+    ->,>=stealth',shorten >=1pt,auto,semithick, transform shape,
+    node distance=1cm and 1.3cm,
+    simpleNode/.style={
+        circle,very thick,minimum size=6mm,
+        draw=black!50, top color=white,bottom color=black!20,font=\ttfamily,
+        align=center
+    },
+    nilNode/.style={},
+    emphGrayEdge/.style={edge from parent/.style={dashed,gray,draw}},
+    emphRedEdge/.style={edge from parent/.style={solid,red, very thick, draw}},
+    normEdge/.style={edge from parent/.style={solid,black,thin,draw}},
+    normDashedEdge/.style={edge from parent/.style={dashed,black,thin,draw}}
+    ]
+    
+    \node (A) [simpleNode, label={above:0 to 255}] {a};
+    \node (B) [simpleNode, below left = of A, pin={[pin distance=0.7cm, pin edge={-, shorten <= 1pt, red}, red] left: 70\%} ] {b};
+    \node (C) [simpleNode, below = of A, pin={[pin distance=0.3cm, pin edge={-, shorten <= 1pt, red}, red] right: 10\%}] {c};
+    \node (D) [simpleNode, below right = of A, pin={[pin distance=0.3cm, pin edge={-, shorten <= 1pt, red}, red] right: 20\%}] {d};
+    \node (E) [simpleNode, below left = of B, pin={[pin distance=0.3cm, pin edge={-, shorten <= 1pt, red}, red] right: 80\%}] {e};
+    \node (F) [simpleNode, below = of B, pin={[pin distance=0.3cm, pin edge={-, shorten <= 1pt, red}, red] right: 20\%}] {f};
+    \node (G) [auto, below = of C] {};
+    \node (H) [auto, below = of D] {};
+    \node (I) [auto, below right = of D] {};
+    \node (J) [auto, below left = of E] {};
+    \node (L) [auto, below = of E] {};
+    \node (M) [auto, below = of F] {};
+    
+    \path 
+        (B) edge [gray] node {} (A) %uppward edge
+        (C) edge [gray] node {} (A) %uppward edge
+        (D) edge [gray] node {} (A) %uppward edge
+        (E) edge [gray] node {} (B) %uppward edge
+        (F) edge [gray] node {} (B) %uppward edge
+        (J) edge [gray, dashed] node {} (E) %uppward edge
+        (L) edge [gray, dashed] node {} (E) %uppward edge
+        (M) edge [gray, dashed] node {} (F) %uppward edge
+        % (G) edge [gray, dashed] node {} (C) %uppward edge
+        (H) edge [gray, dashed] node {} (D) %uppward edge
+        % (I) edge [gray, dashed] node {} (D) %uppward edge
+        
+        (A) edge [bend right] node [pos = 0.7, left] {16 to 183} (B) %downward edge
+        (A) edge [bend left] node [pos = 0.7, left] {184 to 207} (C) %downward edge
+        (A) edge [bend left] node [pos = 0.7, right] {208 to 255} (D) %downward edge
+        (B) edge [bend right] node [pos = 0.7, left] {27 to 151} (E) %downward edge
+        (B) edge [bend left] node [pos = 0.7, right] {152 to 182} (F) %downward edge
+        (E) edge [bend right, dashed] node {} (J) %downward edge
+        (E) edge [bend left, dashed] node {} (L) %downward edge
+        (F) edge [bend left, dashed] node {} (M) %downward edge
+        % (C) edge [bend left, dashed] node {} (G) %downward edge
+        (D) edge [bend left, dashed] node {} (H) %downward edge
+        % (D) edge [bend left, dashed] node {} (I) %downward edge
+        ;
+        
+\end{tikzpicture}

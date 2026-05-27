@@ -1,0 +1,23 @@
+\section{Introduction}
+\label{sec:introduction}
+
+%##########################################################
+%                     SEC INTRODUCTION                    %
+%##########################################################
+
+\acp{wsn} are composed of a large number of nodes with sensing, computation, and wireless communication capability. These networks have computing and communication energy constraints. Many applications in \ac{wsn} need to transport large amount of data (image, audio, video monitoring). These applications are not tolerant to data loss, thus it is important to provide mechanisms to reliable collect data.
+
+The \acp{wsn} have the following communication paradigms: \textit{many-to-one} (data collection), \textit{one-to-many} (data dissemination), and a more complex way that enables communication \textit{any-to-any}. First two paradigms allow the collection and dissemination of data respectively. However, with routing on only one direction, it is infeasible to build reliable mechanisms to ensure the delivery of data end-to-end. \textit{Any-to-any} communication paradigm allows communication between any pair of nodes in the network, but adds more complexity and also requires large amounts of memory to store all possible routes.
+
+In this work, we present \acf{xctp}, a routing protocol that is an extension of the \ac{ctp}. \ac{ctp} creates a routing tree to transfer data from one or more sensors nodes to a root (sink) node. But, \ac{ctp} does not create the reverse path between the root node and sensors. This reverse path is important, for example, for feedback commands or acknowledgment packets. \ac{xctp} enables communication in both ways: root to node and node to root. \ac{xctp} requires low storage of states and very low additional overhead in packets.
+
+Our main contribution are as follows:
+\begin{itemize}
+     \item We propose \acl{xctp} (\ac{xctp}), which allows routing of messages in the reverse direction of \ac{ctp}, using a few extra memory to store reverse routes.
+     \item We compare the performance of \ac{xctp}, \ac{aodv}, \ac{rpl}, and \ac{ctp}. In the experiments, \ac{xctp} proved to be more reliable, efficient, agile, and robust.
+     \item We show that it is possible to implement reliable data transport protocol over \ac{xctp}.
+\end{itemize}
+
+\ac{ctp} optimizes data traffic towards the root thus achieves high packet delivery rate. However, our \ac{xctp} approach goes beyond, allowing bi-directional communication between sensor nodes and the root. \ac{xctp} and \textit{any-to-any} routing protocols enable reliable communication. However, \ac{xctp} reduces the cost to store routes, since \ac{xctp} does not need to maintain routes to every peer.
+
+Our work is organized as follows. In the next section, we present some works related to \ac{xctp}. In Section~\ref{sec:problem}, we formally define the problem being solved in this work. We describe \ac{xctp} architecture in Section~\ref{sec:solution}. We compare \ac{xctp} with \ac{aodv}, \ac{rpl}, \ac{ctp}, and present the simulation results in Section~\ref{sec:evaluation}. Finally, we conclude in Section~\ref{sec:conclusion}.

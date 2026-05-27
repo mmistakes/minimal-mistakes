@@ -1,0 +1,14 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: paper.aux
+The style file: plain.bst
+Database file #1: reference.bib
+Warning--entry type for "MultiHopLQI" isn't style-file defined
+--line 10 of file reference.bib
+Warning--entry type for "dymo" isn't style-file defined
+--line 68 of file reference.bib
+Warning--entry type for "tymo" isn't style-file defined
+--line 73 of file reference.bib
+Warning--to sort, need author or key in dymo
+Warning--to sort, need author or key in MultiHopLQI
+Warning--to sort, need author or key in tymo
+Warning--empty journal in RPL
+(There were 7 warnings)

@@ -1,0 +1,147 @@
+[03:04:40 - main] [Cooja.java:1315] [INFO] - > Starting Cooja
+[03:04:40 - main] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux.config
+[03:04:40 - main] [Cooja.java:2886] [INFO] - External tools user settings: /home/matrix/.cooja.user.properties
+[03:04:40 - main] [Simulation.java:422] [INFO] - Simulation random seed: -9009411589884620622
+[03:04:40 - main] [CompileContiki.java:140] [INFO] - > make matrix-experiments.cooja TARGET=cooja 
+[03:04:40 - main] [ContikiMoteType.java:404] [INFO] - Creating core communicator between Java class Lib1 and Contiki library '/home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype184.cooja'
+[03:04:41 - main] [ContikiMoteType.java:573] [INFO] - Parsed section at 0x24020 ( 404 == 0x194 bytes)
+[03:04:41 - main] [ContikiMoteType.java:573] [INFO] - Parsed section at 0x241c0 ( 51448 == 0xc8f8 bytes)
+[03:04:41 - main] [ContikiMoteType.java:500] [INFO] - mtype184.cooja: offsetting Cooja mote address space: 0x82bdc000
+[03:04:41 - main] [ContikiMoteType.java:573] [INFO] - Parsed section at 0x82c00020 ( 404 == 0x194 bytes)
+[03:04:41 - main] [ContikiMoteType.java:573] [INFO] - Parsed section at 0x82c001c0 ( 51448 == 0xc8f8 bytes)
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [ContikiRadio.java:397] [INFO] - Radio bitrate reconfigured to (kbps): 250.0
+[03:04:41 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.SimControl
+[03:04:41 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.Visualizer
+[03:04:41 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.LogListener
+[03:04:41 - main] [Cooja.java:1781] [INFO] - Visualized plugin was not started: class org.contikios.cooja.plugins.TimeLine
+[03:04:41 - main] [Mobility.java:83] [INFO] - Mobility plugin started at (ms): 0
+[03:04:41 - main] [Mobility.java:115] [INFO] - Parsing position file: /home/matrix/contiki-matrix/tools/cooja/matrix-sim/high-mob-traces/6.txt
+[03:04:42 - main] [Mobility.java:140] [INFO] - Loaded 20524 positions
+[03:04:42 - main] [ScriptRunner.java:430] [INFO] - Test script deactivated
+[03:04:42 - main] [LogScriptEngine.java:265] [INFO] - Script timeout in 5400000 ms
+[03:04:42 - main] [ScriptRunner.java:387] [INFO] - Test script activated
+[03:04:42 - Thread-2] [Simulation.java:253] [INFO] - Simulation main loop started, system time: 1495951482712
+[03:04:45 - Thread-2] [Mote2MoteRelations.java:187] [WARN] - No destination mote with ID: 0
+[03:04:46 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 5,00%, done in 79,7 sec
+[03:04:47 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 10,00%, done in 46,6 sec
+[03:04:50 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 15,00%, done in 42,5 sec
+[03:04:52 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 20,00%, done in 38,2 sec
+[03:05:00 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 25,00%, done in 52,4 sec
+[03:05:17 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 30,00%, done in 81,8 sec
+[03:05:30 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 35,00%, done in 89,3 sec
+[03:05:53 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 40,00%, done in 106,7 sec
+[03:06:43 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 45,00%, done in 147,7 sec
+[03:07:36 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 50,00%, done in 173,6 sec
+[03:08:37 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 55,00%, done in 192,4 sec
+[03:09:04 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 60,00%, done in 174,5 sec
+[03:09:12 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 65,00%, done in 145,0 sec
+[03:09:19 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 70,00%, done in 118,4 sec
+[03:09:27 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 75,00%, done in 94,9 sec
+[03:09:34 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 80,00%, done in 72,9 sec
+[03:09:36 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 85,00%, done in 51,9 sec
+[03:09:40 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 90,00%, done in 33,1 sec
+[03:09:45 - Thread-2] [LogScriptEngine.java:389] [INFO] - Test script at 95,00%, done in 16,0 sec
+[03:09:50 - Thread-2] [LogScriptEngine.java:375] [INFO] - Timeout event @ 5400000000
+[03:09:50 - Thread-1] [LogScriptEngine.java:309] [INFO] - Test script finished
+[03:09:50 - Thread-2] [Simulation.java:312] [INFO] - Simulation main loop stopped, system time: 1495951790244	Duration: 307532 ms	Simulated time 5401669 ms	Ratio 17.56457539378016
+[03:09:50 - AWT-EventQueue-0] [ScriptRunner.java:430] [INFO] - Test script deactivated

@@ -1,0 +1,50 @@
+body {
+  text-align:justify;
+}
+
+//.author__name::after,
+.site-title::after{
+  content: "";
+  display: inline-block;
+  width: 0.4em;
+  height: 1em;
+  margin-left: 0.15em;
+  background-color: currentColor;
+  vertical-align: -0.12em;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+#mynetwork {
+  width: 100%;
+  height: 800px;
+  //border: 1px solid lightgray;
+  //background-color: #333333;
+}
+
+
+.author__avatar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.author__avatar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.author__content {
+  text-align: center;
+}
+
+.author__name {
+  text-align: center;
+}

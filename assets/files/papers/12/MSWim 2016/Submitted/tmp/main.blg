@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: abbrv.bst
+Database file #1: references.bib
+Warning--entry type for "2016techreport" isn't style-file defined
+--line 2883 of file references.bib
+You've used 19 entries,
+            2118 wiz_defined-function locations,
+            626 strings with 7924 characters,
+and the built_in function-call counts, 8215 in all, are:
+= -- 787
+> -- 482
+< -- 9
++ -- 189
+- -- 170
+* -- 597
+:= -- 1324
+add.period$ -- 62
+call.type$ -- 19
+change.case$ -- 141
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 305
+empty$ -- 589
+format.name$ -- 170
+if$ -- 1749
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 17
+newline$ -- 98
+num.names$ -- 38
+pop$ -- 169
+preamble$ -- 1
+purify$ -- 122
+quote$ -- 0
+skip$ -- 230
+stack$ -- 0
+substring$ -- 422
+swap$ -- 97
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 76
+warning$ -- 0
+while$ -- 69
+width$ -- 21
+write$ -- 215
+(There was 1 warning)

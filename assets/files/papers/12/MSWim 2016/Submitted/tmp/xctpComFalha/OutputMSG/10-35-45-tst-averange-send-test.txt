@@ -1,0 +1,10 @@
+1-topo-average-send:980.9
+2-topo-average-send:984.9
+3-topo-average-send:973.7
+4-topo-average-send:987.1
+5-topo-average-send:980.2
+6-topo-average-send:986.0
+7-topo-average-send:979.7
+8-topo-average-send:978.0
+9-topo-average-send:916.6
+10-topo-average-send:964.1

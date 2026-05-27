@@ -1,7 +1,19 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  #- title: "Bio"
+  #  url: "/bio/"
+  #- title: "Blog"
+  #  url: "/blog/"
+  - title: "Publications"
+    url: "/publications/"
+  #- title: "Teaching"
+  #  url: "/teaching/"
+  #- title: "FAQ"
+  #  url: "/faq/"
+  #- title: "All posts"
+  #  url: "/categories/"
+  #- title: "Terms &amp; Privacy Policy"
+  #  url: /terms/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,3 +22,31 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sbrc:
+  - title: "Menu"
+    children:
+      - title: "Home"
+        url: /papers/Internet-das-coisas-da-teroria-a-pratica/
+      - title: "Livro oficial"
+        url: /assets/files/MinicursosSBRC2016.pdf
+      - title: "Versão estendida"
+        url: "#"
+      - title: "Apresentação"
+        url: "https://docs.google.com/presentation/d/17TW56zIYed5eUlTE3cXNTjpchWeo8GBm/edit?usp=sharing&ouid=107168111322241120444&rtpof=true&sd=true"
+        #url: "https://www.dropbox.com/s/yhwbe5uzjm0x7ny/apresentacao-BRUNO_v2.pptx?dl=0"
+      - title: "Hands on"
+        url: /iot-hands-on/
+      - title: "Leitura extra"
+        url: /iot-leitura-extra/
+      - title: "Vídeos"
+        url: /iot-videos/
+
+mmatrix-journal:
+  - title: "Menu"
+    children:
+      - title: "Home"
+        url: /papers/Mobile-Matrix-Routing-under-Mobility-in-IoT-IoMT-and-Social-IoT/
+      - title: "PDF"
+        url: /#
+      - title: "Code"
+        url: /mmatrix-code/

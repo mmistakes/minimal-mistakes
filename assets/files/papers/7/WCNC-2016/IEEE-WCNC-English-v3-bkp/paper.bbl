@@ -1,0 +1,114 @@
+\begin{thebibliography}{10}
+
+\bibitem{tymo}
+Tymo: Dymo on tinyos.
+\newblock \url{http://tinyos.stanford.edu/tinyos-wiki/index.php/Tymo}, 2008.
+
+\bibitem{dymo}
+Dynamic manet on-demand (aodvv2) routing draft-ietf-manet-dymo-26.
+\newblock \url{http://tools.ietf.org/html/draft-ietf-manet-dymo-26}, 2013.
+
+\bibitem{MultiHopLQI}
+The multihoplqi protocol.
+\newblock \url{http://www.tinyos.net/tinyos-2.x/tos/lib/net/lqi/}, 2014.
+
+\bibitem{deluge}
+Adam Chlipala, Jonathan Hui, and Gilman Tolle.
+\newblock Deluge: data dissemination for network reprogramming at scale.
+\newblock {\em University of California, Berkeley, Tech. Rep}, 2004.
+
+\bibitem{hydro}
+Stephen Dawson-Haggerty, Arsalan Tavakoli, and David Culler.
+\newblock Hydro: A hybrid routing protocol for low-power and lossy networks.
+\newblock In {\em Smart Grid Communications (SmartGridComm)}. IEEE, 2010.
+
+\bibitem{contiki}
+A~Dunkels, B.~Gronvall, and T.~Voigt.
+\newblock Contiki - a lightweight and flexible operating system for tiny
+  networked sensors.
+\newblock In {\em Local Computer Networks, 2004. 29th Annual IEEE International
+  Conference on}, 2004.
+
+\bibitem{ctp}
+Omprakash Gnawali, Rodrigo Fonseca, Kyle Jamieson, David Moss, and Philip
+  Levis.
+\newblock Collection tree protocol.
+\newblock In {\em {Proceedings of the 7th ACM Conference on Embedded Networked
+  Sensor Systems}}, November 2009.
+
+\bibitem{directedDiffusion}
+C.~Intanagonwiwat, R.~Govindan, D.~Estrin, J.~Heidemann, and F.~Silva.
+\newblock Directed diffusion for wireless sensor networking.
+\newblock {\em Networking, IEEE/ACM Transactions on}, 2003.
+
+\bibitem{DSR}
+D~Johnson, Y~Hu, D~Maltz, et~al.
+\newblock The dynamic source routing protocol for mobile ad hoc networks.
+\newblock Technical report, RFC 4728, 2007.
+
+\bibitem{flush}
+Sukun Kim, Rodrigo Fonseca, Prabal Dutta, Arsalan Tavakoli, David Culler,
+  Philip Levis, Scott Shenker, and Ion Stoica.
+\newblock Flush: A reliable bulk transport protocol for multihop wireless
+  networks.
+\newblock In {\em Proceedings of the 5th International Conference on Embedded
+  Networked Sensor Systems}. ACM, 2007.
+
+\bibitem{tossim}
+Philip Levis, Nelson Lee, Matt Welsh, and David Culler.
+\newblock Tossim: Accurate and scalable simulation of entire tinyos
+  applications.
+\newblock In {\em Proceedings of the 1st international conference on Embedded
+  networked sensor systems}. ACM, 2003.
+
+\bibitem{tinyos}
+Philip Levis, Sam Madden, Joseph Polastre, Robert Szewczyk, Kamin Whitehouse,
+  Alec Woo, David Gay, Jason Hill, Matt Welsh, Eric Brewer, et~al.
+\newblock Tinyos: An operating system for sensor networks.
+\newblock In {\em Ambient intelligence}. Springer, 2005.
+
+\bibitem{trickle}
+Philip~Alexander Levis, Neil Patel, David Culler, and Scott Shenker.
+\newblock {\em Trickle: A self regulating algorithm for code propagation and
+  maintenance in wireless sensor networks}.
+\newblock Computer Science Division, University of California, 2003.
+
+\bibitem{RCRT}
+Jeongyeup Paek and Ramesh Govindan.
+\newblock Rcrt: Rate-controlled reliable transport for wireless sensor
+  networks.
+\newblock In {\em Proceedings of the 5th International Conference on Embedded
+  Networked Sensor Systems}. ACM, 2007.
+
+\bibitem{AODV}
+Charles~E Perkins and Elizabeth~M Royer.
+\newblock Ad-hoc on-demand distance vector routing.
+\newblock In {\em Mobile Computing Systems and Applications, 1999. Proceedings.
+  WMCSA'99. Second IEEE Workshop on}. IEEE, 1999.
+
+\bibitem{betaFactor}
+Kannan Srinivasan, Maria~A Kazandjieva, Saatvik Agarwal, and Philip Levis.
+\newblock The $\beta$-factor: measuring wireless link burstiness.
+\newblock In {\em Proceedings of the 6th ACM conference on Embedded network
+  sensor systems}. ACM, 2008.
+
+\bibitem{STCP}
+Xin-Sheng Wang, Yong-Zhao Zhan, and Liang min Wang.
+\newblock Stcp: Secure topology control protocol for wireless sensor networks
+  based on hexagonal mesh.
+\newblock In {\em Wireless Communications, Networking and Mobile Computing,
+  2008. WiCOM '08. 4th International Conference on}, 2008.
+
+\bibitem{RPL}
+Tim Winter.
+\newblock Rpl: Ipv6 routing protocol for low-power and lossy networks.
+\newblock 2012.
+
+\bibitem{mintroute}
+Alec Woo, Terence Tong, and David Culler.
+\newblock Taming the underlying challenges of reliable multihop routing in
+  sensor networks.
+\newblock In {\em Proceedings of the 1st International Conference on Embedded
+  Networked Sensor Systems}. ACM, 2003.
+
+\end{thebibliography}

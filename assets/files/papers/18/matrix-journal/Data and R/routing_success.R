@@ -1,0 +1,166 @@
+#####################
+#ROUTING SUCCESS
+#####################
+#RPL #XCTP #MATRIX
+library(Hmisc)
+
+bm = c(0.993830244,
+       0.988082607,
+       0.979024184,
+       0.967099843,
+       0.9743617,
+       0.966306012,
+       0.931462785,
+       0.971577474,
+       0.947595609,
+       0.878313924
+)#matrix
+
+bmh = c(0.993830244,
+        0.980332663,
+        0.950227216,
+        0.943456076,
+        0.957481758,
+        0.930356359,
+        0.858443842,
+        0.941168568,
+        0.891386938,
+        0.776925666)#mhcl
+
+bx = c(0.983667155,
+       0.978189005,
+       0.974823803,
+       0.980046077,
+       0.982240344,
+       0.970393519,
+       0.974374577,
+       0.9652315,
+       0.959405978,
+       0.965130159)#xctp
+
+br = c(0.194304007,
+       0.190213853,
+       0.184456197,
+       0.19486746,
+       0.186202609,
+       0.193801153,
+       0.196568273,
+       0.191389821,
+       0.189043516,
+       0.193823306)#rpl
+
+
+bm = bm*100
+bmh = bmh*100
+bx=bx*100
+br=br*100
+
+perdas = c (0, 1/1000,6/1000,13/1000,8/1000,15/1000,33/1000,15/1000,33/1000,66/1000)
+perdas= perdas*100
+
+
+mat = matrix(c(bm[1],bmh[1],bx[1],br[1], #scn 1 Matrix, CTP, XCTP, RPL ---> Sem falhas
+               bm[2],bmh[2],bx[2],br[2],  #scn 2 Matrix, CTP, XCTP, RPL
+               bm[3],bmh[3],bx[3],br[3], #scn 3 Matrix, CTP, XCTP, RPL
+               bm[4],bmh[4],bx[4],br[4], #scn 4 Matrix, CTP, XCTP, RPL
+               bm[5],bmh[5],bx[5],br[5],  #scn 5 Matrix, CTP, XCTP, RPL
+               bm[6],bmh[6],bx[6],br[6], #scn 6 Matrix, CTP, XCTP, RPL
+               bm[7],bmh[7],bx[7],br[7], #scn 7 Matrix, CTP, XCTP, RPL
+               bm[8],bmh[8],bx[8],br[8],  #scn 8 Matrix, CTP, XCTP, RPL
+               bm[9],bmh[9],bx[9],br[9], #scn 9 Matrix, CTP, XCTP, RPL
+               bm[10],bmh[10],bx[10],br[10]  #scn 10 Matrix, CTP, XCTP, RPL
+), nrow = 4, ncol=10)
+
+
+mat[1,]=mat[1,]+perdas
+mat[2,]=mat[2,]+perdas
+mat[3,]=mat[3,]+perdas
+mat[4,]=mat[4,]+perdas
+
+
+if (mat[3,1]>100) mat[3,1] <- 100
+if (mat[3,2]>100) mat[3,2] <- 100
+if (mat[3,3]>100) mat[3,3] <- 100
+if (mat[3,4]>100) mat[3,4] <- 100
+if (mat[3,5]>100) mat[3,5] <- 100
+if (mat[3,6]>100) mat[3,6] <- 100
+if (mat[3,7]>100) mat[3,7] <- 100
+if (mat[3,8]>100) mat[3,8] <- 100
+if (mat[3,9]>100) mat[3,9] <- 100
+if (mat[3,10]>100) mat[3,10] <- 100
+
+
+flow =  c("MATRIX", "MHCL","XCTP","RPL")
+colors = c("#F7F7F7","#D0D0D0","#909090","black")
+bp = barplot(mat,axes=FALSE,lty=c(3,3,3,3),density=c(20,20,20,20),col=c("black","black","black","black"),
+             xlab="Scenarios",ylab="Top-down success rate (%)", 
+             beside=TRUE,ylim=c(0,100))#, legend=row)
+
+axis(1, at=bp[2,],labels=c("Sc 1", "Sc 2","Sc 3","Sc 4","Sc 5","Sc 6","Sc 7","Sc 8","Sc 9","Sc 10"))
+
+upper1 = lower1 = c(0.005000139,
+                    0.006578896,
+                    0.006925898,
+                    0.007294773,
+                    0.005899657,
+                    0.003461253,
+                    0.010907327,
+                    0.006250225,
+                    0.008723089,
+                    0.022207517
+)
+
+upper2 = lower2 = c(0.005000139,
+                    0.007303636,
+                    0.033260407,
+                    0.012256103,
+                    0.007286671,
+                    0.006235943,
+                    0.017800868,
+                    0.005993262,
+                    0.009979853,
+                    0.010508503)
+
+upper3 = lower3 = c(0.007337531,
+                    0.006690731,
+                    0.013289657,
+                    0.012794206,
+                    0.010399848,
+                    0.012410997,
+                    0.020064801,
+                    0.017645096,
+                    0.031672971,
+                    0.017231757)
+
+upper4 = lower4 = c(0.00473924,
+           0.009258898,
+           0.012203192,
+           0.00745216,
+           0.009186099,
+           0.011540211,
+           0.0090898,
+           0.005840515,
+           0.007817239,
+           0.007245494)
+
+upper1 = lower1 = lower1*100
+upper2 = lower2 = lower2*100
+upper3 = lower3 = lower3*100
+upper4 = lower4 = lower4*100
+
+mat[1,]=mat[1,]-perdas
+mat[2,]=mat[2,]-perdas
+mat[3,]=mat[3,]-perdas
+mat[4,]=mat[4,]-perdas
+par(new=TRUE)
+
+barplot(mat,xaxis=flow, ylim=c(0,100),col=colors,  beside=TRUE)#, legend=row)
+
+errbar(bp[1,], mat[1,], mat[1,]+upper1, mat[1,]-lower1, add=T, xlab="", pch="-")
+errbar(bp[2,], mat[2,], mat[2,]+upper2, mat[2,]-lower2, add=T, xlab="", pch="-")
+errbar(bp[3,], mat[3,], mat[3,]+upper3, mat[3,]-lower3, add=T, xlab="", pch="-")
+errbar(bp[4,], mat[4,], mat[4,]+upper4, mat[4,]-lower4, add=T, xlab="", pch="-")
+
+grid(col="black",lty = "dotted", lwd = par("lwd"))
+grid(col="black",lty = "dotted", lwd = par("lwd"),ny=10)
+legend("right", c(flow,"Inevitable losses"), xpd = TRUE,  inset = c(0,0), pch=c(15, 15, 15,15,12), col = c("#F7F7F7","#D0D0D0","#909090","black","black"),cex=0.9)

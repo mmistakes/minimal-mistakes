@@ -1,0 +1,86 @@
+\documentclass[10pt, conference]{IEEEtran}
+
+%\usepackage{setspace} %For \doublespacing
+
+\usepackage{graphicx,url}
+%\usepackage{subfigure}
+\usepackage[tight,footnotesize]{subfigure}
+%\usepackage{enumitem}
+
+%\usepackage[brazil]{babel}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{acronym}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{paralist}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% \usepackage[none]{hyphenat}
+
+\sloppy
+
+\begin{document}
+
+\input{acronyms.tex}
+%\begin{frontmatter}
+
+\title{\acl{xctp}}
+
+\author{\IEEEauthorblockN{Bruno P. Santos and Marcos A. M. Vieira, and Luiz F. M. Vieira} \IEEEauthorblockA{Computer Science Department\\ Universidade Federal de Minas Gerais, Brazil\\
+Email: \{bruno.ps, mmvieira, lfvieira\}@dcc.ufmg.br} }
+
+%\author{Luiz Filipe Menezes Vieira, Mathias Falconi Kriebel, \\Marcos Augusto Menezes Vieira, Mario Fernando Montenegro Campos}
+%\author{Luiz H. B. Sardinha, Luiz F. M. Vieira*, Marcos A. M. Vieira}
+
+
+%\address{Computer Science Department -- Federal University of Minas Gerais (UFMG)\\
+%  mathiasfk@ufmg.br, \{aaneto, lfvieira, mmvieira, mario\}@dcc.ufmg.br \\
+%Corresponding author*: Phone: 55-31-34095860 Fax: 55-31-34095858
+%  }
+
+
+\maketitle
+
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+
+%\begin{keyword}
+%Aerial Vehicles; ad hoc networks; sensor networks; propagation; two-ray model;
+%mobile networks
+%\end{keyword}
+
+%\end{frontmatter}
+%\vspace{4mm} \noindent {\bf Categories and Subject Descriptors:} C.2.1 {[Computer Communication Networks]}: {Network Architecture and Design.} Subjects: Wireless communication; Network communications.
+%
+%\vspace{1mm} \noindent {\bf General Terms:} Aerial Vehicles, Networks.
+%
+%\vspace{1mm} \noindent {\bf Keywords:} Aerial Vehicles, ad hoc networks, sensor
+%networks, propagation, two-ray model, mobile networks.
+
+%\doublespacing
+
+\acresetall
+
+\input{introduction.tex}
+
+\input{related-work.tex}
+
+\input{problem.tex}
+
+\input{solution.tex}
+
+\input{evaluation.tex}
+
+\input{conclusion.tex}
+
+
+%\bibliographystyle{plain}
+\bibliographystyle{IEEEtran}
+\bibliography{reference}
+
+
+\end{document}

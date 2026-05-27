@@ -1,0 +1,102 @@
+\documentclass[final, 5p, times]{elsarticle}
+
+% \usepackage{lineno}
+\usepackage{flushend} % flush remaning refs to second page column
+\usepackage{hyperref}
+\usepackage{graphicx,url}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{algpseudocode,algorithm}
+\usepackage{pifont}
+\usepackage{xcolor}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{units}
+\usepackage{tikz}
+\usepackage[]{forest}
+\usetikzlibrary{backgrounds,positioning}
+\usetikzlibrary{arrows,automata,graphs,shapes}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\newtheorem{theorem}{Theorem}
+% \modulolinenumbers[5]
+
+\journal{Computer Networks}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Matrix: Multihop Address allocation and dynamic any-To-any Routing for
+6LoWPAN}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+\author[ufmgaddress]{\mbox{Bruna Peres}\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{bperes@dcc.ufmg.br}
+
+\author[ufmgaddress]{\mbox{Bruno P. Santos}}
+\ead{bruno.ps@dcc.ufmg.br}
+
+\author[ufmgaddress]{\mbox{Otavio A. de O. Souza}}
+\ead{oaugusto@dcc.ufmg.br}
+
+
+\author[ufmgaddress]{\mbox{Olga Goussevskaia}}
+\ead{olga@dcc.ufmg.br}
+
+\author[ufmgaddress]{\mbox{Marcos A. M. Vieira}}
+\ead{mmvieira@dcc.ufmg.br}
+
+\author[ufmgaddress]{\mbox{Luiz F. M. Vieira}}
+\ead{lfvieira@dcc.ufmg.br}
+
+\author[ufmgaddress]{\mbox{Antonio A. F. Loureiro}}
+\ead{loureiro@dcc.ufmg.br}
+
+\address[ufmgaddress]{Department of Computer Science, Universidade Federal de Minas Gerais (UFMG)\\ Av. Antonio Carlos 6627, Belo Horizonte, MG, Brazil.}
+
+
+
+\begin{abstract}
+Standard routing protocols for IPv6 over Low power Wireless Personal Area Networks (6LoWPAN) are mainly designed for data collection applications and work by establishing a tree-based network topology,  enables packets to be sent upwards, from the leaves to the root, adapting to dynamics of low-power communication links.
+In this work, we propose Matrix, a platform-independent routing protocol that utilizes the existing tree structure of the network to enable reliable and efficient any-to-any data traffic in 6LoWPAN.
+Matrix uses hierarchical IPv6 address assignment to
+optimize routing table size while preserving bidirectional routing.
+Moreover, it uses a local broadcast mechanism to forward messages to the right subtree when a persistent node or link failures occur. We
+implemented Matrix on TinyOS and evaluated its performance both
+analytically and through simulations on TOSSIM. Our results showed
+that the proposed protocol is superior to available protocols for 6LoWPAN when it comes to any-to-any data communication, concerning reliability, message efficiency, and memory footprint.
+\end{abstract}
+
+\begin{keyword}
+6LoWPAN \sep IPv6 \sep CTP \sep RPL \sep any-to-any routing \sep fault tolerance
+\end{keyword}
+
+
+\end{frontmatter}
+
+% \linenumbers
+
+\input{tikz-config.tex}
+\input{intro}
+\input{matrix}
+\input{analysis}
+\input{results-new}
+\input{related}
+\input{conclusions}
+
+\section*{Acknowledgements }
+This work was supported in part by CAPES, CNPq and FAPEMIG.
+
+
+\bibliography{mybib}
+
+\end{document} 

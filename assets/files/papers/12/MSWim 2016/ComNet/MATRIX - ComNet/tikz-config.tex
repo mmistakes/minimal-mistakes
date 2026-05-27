@@ -1,0 +1,38 @@
+\tikzset{
+itria/.style={
+  draw,dashed,shape border uses incircle,
+  isosceles triangle,shape border rotate=90,yshift=-1.45cm},
+rtria/.style={
+  draw,dashed,shape border uses incircle,
+  isosceles triangle,isosceles triangle apex angle=90,
+  shape border rotate=-45,yshift=0.2cm,xshift=0.5cm},
+ritria/.style={
+  draw,dashed,shape border uses incircle,
+  isosceles triangle,isosceles triangle apex angle=110,
+  shape border rotate=-55,yshift=0.1cm},
+letria/.style={
+  draw,dashed,shape border uses incircle,
+  isosceles triangle,isosceles triangle apex angle=110,
+  shape border rotate=235,yshift=0.1cm}
+}
+\tikzset{
+    simpleNode/.style={
+        circle,very thick,minimum size=6mm,
+        draw=black!50, top color=white,bottom color=black!20,font=\ttfamily,
+        align=center
+    },
+    rootNode/.style={simpleNode,
+        % The shape:
+        rectangle, rounded corners=0,minimum size=6mm,
+        % Font
+        font=\ttfamily},
+    triangleNode/.style = {
+        draw,dashed,shape border uses incircle, isosceles triangle,shape border rotate=90,yshift=-1cm, minimum size=8mm
+        %simpleNode, anchor=north,draw, isosceles triangle,draw,shape border rotate=90,isosceles triangle stretches=true,inner sep=0,font=\ttfamily
+        },
+    nilNode/.style={},
+    emphGrayEdge/.style={edge from parent/.style={dashed,gray,draw}},
+    emphRedEdge/.style={edge from parent/.style={solid,red, very thick, draw}},
+    normEdge/.style={edge from parent/.style={solid,black,thin,draw}},
+    normDashedEdge/.style={edge from parent/.style={dashed,black,thin,draw}}
+}

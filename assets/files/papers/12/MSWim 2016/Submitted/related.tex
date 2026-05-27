@@ -1,0 +1,82 @@
+\section{Related Work}
+\label{sec:related}
+
+%We present the related works dividing it into four parts, ranging from older to recent works. In the first one, we compare MATRIX with well known routing protocols. The second one, we %highlight the differences between MATRIX and state-of-the-art routing protocols. Next, we discuss about the MATRIX address allocation schemes and the literature protocols approaches. %Finally, we conduct and overview of more recent routing protocols for 6LoWPAN and put in evidence the differences among them and MATRIX.
+
+%\subsection{Traditional routing \textcolor{red}{[talvez remover]}}
+
+AODV\cite{perkins2003ad} and DSR\cite{johnson2007rfc} are
+traditional wireless protocols that allow any-to-any communication,
+but they were designed for 802.11 and require too many states or
+apply several overheads on the packet header.
+%Our approach differ from traditional routing protocols by enabling any-to-any routes with low cost of states and overheads, also MATRIX provides by default IPv6 address allocation.
+In the context of low-power and lossy networks, CTP\cite{Fonseca:2009} and
+CodeDrip\cite{junior2014codedrip} were designed for bottom-up and
+top-down data flows, respectively. They support communication in only one
+direction.
+
+%There are a bulk of widely known routing protocols for LoWPANs. In general, they are specialized in a specific routing paradigm. For example, CTP\cite{Fonseca:2009} and %CodeDrip\cite{junior2014codedrip} were designed respectively to bottom-up and top-down data flows. They support only one of the paradigms. Another protocols like %AODV\cite{perkins2003ad} and DSR\cite{johnson2007rfc} allows any-to-any communication, but they require or large amount of states or apply several overheads on the packets header. Our %approach differ from traditional routing protocols by enabling any-to-any routes with low cost of states and overheads, also MATRIX provides by default IPv6 address allocation.
+
+%\subsection{Optimized routing \textcolor{red}{[talvez remover]}}
+
+%MATRIX works different by take advantage of a already Ctree (supplied by RPL or CTP for instance) and stores very small states to maintain top-down routes.
+%MATRIX resembles XCTP in the routing schemes, however our approach keeps pro-actively (by default) upwards and downwards routes. Also, MATRIX is enabled for 6LoWPAN networks while %XCTP is not. This last one, makes MATRIX more scalable and suitable for IoT demands.
+
+State-of-the-art routing protocols for 6lowPAN that enable
+any-to-any communication are RPL\cite{rfc6550}, XCTP\cite{xctp}, and
+Hydro\cite{hydro}. RPL allows two modes of operation (storing and
+non-storing) for downwards data flows. The non-storing mode is based
+on source routing, and the storing mode pro-actively maintains an
+entry in the routing table of every node on the path from the root
+to each destination, which is not scalable to even moderate-size
+networks. XCTP is an extension of CTP and is based on a reactive
+reverse collection route creating between the root and every source
+node. An entry in the reverse-route table is kept for every data
+flow at each node on the path between the source and the
+destination, which is also not scalable in terms of memory
+footprint.
+%XCTP is suitable for applications that require a small
+%number of reliable end-to-end data flows. Moreover, communication
+%needs to be started by the source nodes. The authors argue that
+%reverse routes can be pro-actively maintained, but additional
+%beacons are required.
+Hydro protocol, like RPL, is based on a DAG
+(directed acyclic graph) for bottom-up communication. Source nodes
+need to periodically send reports to the border router, which builds
+a global view (typically incomplete) of the network topology.
+%We present Hydro, a hybrid routing protocol that combines
+%local agility with centralized control. In-network nodes use
+%distributed DAG formation to provide default routes to border
+%routers, concurrently forming the foundation for triangle pointto-point
+%routing. Border Routers build a global, but typically
+%incomplete, view of the network using topology reports received
+%from in-network nodes, and subsequently install optimized routes
+%in the network for active point-to-point flows
+
+%\subsection{Addressing Routing \textcolor{red}{[talvez remover]}}
+
+%MATRIX provides a multihop hierarchical IPv6 address allocation in order to optimize downward routing table size, while preserving bidirectional routing. Unlike our approach, XCTP %does not support IPv6 addressing. RPL and Hydro originally can be used with IPv6, but they are regardless hierarchical way. Also, RPL and Hydro employ complex mechanism to supply %any-to-any communication, MATRIX to accomplish that relies in its hierarchical IPv6 assignment to be scalable and simple implementation, beyond that MATRIX implements local broadcasts %to overcome links failures. These features are fundamental to devices with low footprint, which usually running over low power links like 802.15.4.
+
+%\subsection{Recent routing protocols \textcolor{red}{[talvez remover]}}
+
+Some more recent protocols \cite{Palani2015, Moghadam:2015:MMR:2766739.2766774,
+7374975} modified RPL to include new features. In~\cite{Palani2015}, a
+load-balance technique is applied over nodes to decrease power consumption. In
+\cite{Moghadam:2015:MMR:2766739.2766774, 7374975}, they provide multi-path
+routing protocols to improve throughput and fault tolerance.
+
+Matrix differs from previous work by providing a reliable and scalable solution
+for any-to-any routing in 6LoWLAN, both in terms of routing table size and
+control message overhead. Moreover, it allocates global and structured IPv6
+addresses to all nodes, which allow nodes to act as destinations integrated into
+the Internet, contributing to the realization of the Internet of Things.
+%In this sense, MATRIX is different from these approaches by building up
+% downwards routes to any-to-any flows in scalable way. Beyond that, MATRIX can be easily linked to other routing %protocol that builds CTrees (for instance, CTP or RPL). These feature makes the MATRIX adaptive to improvements on CTrees routing protocols, while provides scalable any-to-any routing %and hierarchical IPv6 address allocation.
+
+%\textcolor{red}{OLD related work}
+
+%CTP\cite{Fonseca:2009} and eXtend CTP~\cite{xctp} are related protocols. CTP is an efficient data collection protocol that uses 4-bit \cite{fonseca2007four} metric to estimate the link quality and route cost. Data and control packets are used to obtain the link quality on CTP. MultiHopLQI~\cite{MultiHopLQI} and MintRoute~\cite{mintroute} have the same propose of CTP, but CTP overcome them as shown in~\cite{Fonseca:2009}. CTP maintains a dynamic tree for upward routing traffic, in order to perform collection. However, CTP does not allow downward traffic. XCTP is an extension of CTP. Besides creating unicast routes to a data collection point, XCTP also creates unicast routes from the root to the sensors. In~\cite{xctp}, the authors argue that XCTP is a reliable collection protocol, in which any-to-any routes are possible and its robustness is maintained when facing topology changes. The authors also show that XCTP requires less memory than other protocols like RPL and Hydro in the evaluated scenarios. Unlike XCTP, our protocol store only local topology information, while intermediate XCTP nodes keep tracking several downward routes to make bidirectional communication. Moreover, XCTP solely allows fixed ID addressing, whereas Matrix allows IPv6 address enabling hierarchical routing. Thereby, XCTP does not allow traffic origination outside the local network because its table information is gathered in a reactive manner, i. e., XCTP stores reverse routes when an upward message is sent.
+
+%Hydro~\cite{hydro} and RPL~\cite{rfc6550} are protocols that aim at maintaining any-to-any communication in L2Ns. Hydro differs from our approach, which focus in creating any-to-any routes with minimal memory and control packets overhead. Hydro demands several and powerful sink nodes while Matrix does not assume this. RPL discovers the routes by disseminating Destination Advertisement Object (DAO) messages, that announce routes for each destination. While RPL requires more control packets to create downward routes than XCTP, Matrix has an intermediate value. This is because Matrix takes advantage of CTP's control packets and only uses some packets to discover downward routes. Matrix also avoid memory overhead by storing only local routes information, while RPL and XCTP do not.
+
+%Matrix is a reliable any-to-any protocol with a small memory requirement for routing table. Since Matrix runs on top of a routing protocol, its cost depends on the underlying routing protocol. We use CTP, a collection protocol, as routing protocol in our implementation. Each node running Matrix protocol is able to perform any-to-any communication. Matrix does that by only storing in routing tables information of the direct children of the node in the acyclic topology. This makes memory requirements small while allowing any-to-any routing as well as others state-of-the-art protocols. Besides, Matrix enables IPv6 over sensor network unlike most of the mentioned protocols. Matrix has a setup phase, in which nodes receive an IPv6 address. This setup phase is based on a Multihop Host Configuration strategy that explores cycle-free network structures in low-power wireless networks to generate and assign IPv6 addresses to nodes, proposed in \cite{mhcl}. MHCL generates and assigns IPv6 addresses which reflect the topology of the underlying wireless network. However, MHCL was implemented as a subroutine of RPL protocol in Contiki OS. In this work, we implemented MHCL as a subroutine of Matrix protocol, as described in Section~\ref{sec:mhcl}.

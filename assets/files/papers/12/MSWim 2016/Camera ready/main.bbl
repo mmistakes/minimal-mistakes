@@ -1,0 +1,120 @@
+\begin{thebibliography}{10}
+
+\bibitem{Baccour:2012}
+N.~Baccour, A.~Koub\^{a}a, L.~Mottola, M.~A. Z\'{u}\~{n}iga, H.~Youssef, C.~A.
+  Boano, and M.~Alves.
+\newblock Radio link quality estimation in wireless sensor networks: A survey.
+\newblock {\em ACM Trans. Sen. Netw.}, 8(4):34:1--34:33, Sept. 2012.
+
+\bibitem{Clark:1991}
+B.~N. Clark, C.~J. Colbourn, and D.~S. Johnson.
+\newblock Unit disk graphs.
+\newblock {\em Discrete Math.}, 86(1-3):165--177, Jan. 1991.
+
+\bibitem{hydro}
+S.~Dawson-Haggerty, A.~Tavakoli, and D.~Culler.
+\newblock Hydro: A hybrid routing protocol for low-power and lossy networks.
+\newblock In {\em Smart Grid Communications (SmartGridComm)}. IEEE, 2010.
+
+\bibitem{Dunkels:2004}
+A.~Dunkels, B.~Gronvall, and T.~Voigt.
+\newblock Contiki - a lightweight and flexible operating system for tiny
+  networked sensors.
+\newblock In {\em IEEE LCN}, pages 455--462, Washington, DC, USA, 2004. IEEE
+  Computer Society.
+
+\bibitem{Eriksson:2009}
+J.~Eriksson, F.~\"{O}sterlind, N.~Finne, N.~Tsiftes, A.~Dunkels, T.~Voigt,
+  R.~Sauter, and P.~J. Marr\'{o}n.
+\newblock Cooja/mspsim: Interoperability testing for wireless sensor networks.
+\newblock In {\em Proceedings of the 2Nd International Conference on Simulation
+  Tools and Techniques}, Simutools'09, pages 27:1--27:7, 2009.
+
+\bibitem{Fonseca:2009}
+O.~Gnawali, R.~Fonseca, K.~Jamieson, D.~Moss, and P.~Levis.
+\newblock Collection tree protocol.
+\newblock In {\em Proceedings of the 7th ACM Conference on Embedded Networked
+  Sensor Systems}, SenSys '09, pages 1--14, 2009.
+
+\bibitem{johnson2007rfc}
+D.~Johnson, Y.~Hu, and D.~Maltz.
+\newblock {The dynamic source routing protocol (DSR) for mobile ad hoc networks
+  for IPV4}.
+\newblock {\em RFC: 4728}, 2007.
+
+\bibitem{junior2014codedrip}
+N.~d. S.~R. J{\'u}nior, M.~A. Vieira, L.~F. Vieira, and O.~Gnawali.
+\newblock Codedrip: Data dissemination protocol with network coding for
+  wireless sensor networks.
+\newblock In {\em Wireless Sensor Networks}, pages 34--49. Springer, 2014.
+
+\bibitem{tossim}
+P.~Levis, N.~Lee, M.~Welsh, and D.~Culler.
+\newblock Tossim: Accurate and scalable simulation of entire tinyos
+  applications.
+\newblock In {\em Proceedings of the 1st International Conference on Embedded
+  Networked Sensor Systems}, SenSys '03, pages 126--137, New York, NY, USA,
+  2003. ACM.
+
+\bibitem{tinyos}
+P.~Levis, S.~Madden, J.~Polastre, R.~Szewczyk, K.~Whitehouse, A.~Woo, D.~Gay,
+  J.~Hill, M.~Welsh, E.~Brewer, et~al.
+\newblock Tinyos: An operating system for sensor networks.
+\newblock In {\em Ambient intelligence}. Springer, 2005.
+
+\bibitem{Levis:2004}
+P.~Levis, N.~Patel, D.~Culler, and S.~Shenker.
+\newblock Trickle: A self-regulating algorithm for code propagation and
+  maintenance in wireless sensor networks.
+\newblock In {\em Proceedings of the 1st Conference on Symposium on Networked
+  Systems Design and Implementation - Volume 1}, NSDI'04, pages 2--2, 2004.
+
+\bibitem{7374975}
+M.~A. Lodhi, A.~Rehman, M.~M. Khan, and F.~B. Hussain.
+\newblock Multiple path rpl for low power lossy networks.
+\newblock In {\em Wireless and Mobile (APWiMob), 2015 IEEE Asia Pacific
+  Conference on}, pages 279--284, Aug 2015.
+
+\bibitem{Moghadam:2015:MMR:2766739.2766774}
+M.~N. Moghadam, H.~Taheri, and M.~Karrari.
+\newblock Multi-class multipath routing protocol for low power wireless
+  networks with heuristic optimal load distribution.
+\newblock {\em Wirel. Pers. Commun.}, 82(2):861--881, May 2015.
+
+\bibitem{Palani2015}
+U.~Palani, V.~Alamelumangai, and A.~Nachiappan.
+\newblock {Hybrid routing and load balancing protocol for wireless sensor
+  network}.
+\newblock {\em Wireless Networks}, pages 1--8, 2015.
+
+\bibitem{2016techreport}
+B.~Peres and O.~Goussevskaia.
+\newblock {MHCL: IPv6 Multihop Host Configuration for Low-Power Wireless
+  Networks }.
+\newblock \url{http://arxiv.org/abs/1606.02674}, 2016.
+
+\bibitem{mhcl}
+B.~S. Peres and O.~Goussevskaia.
+\newblock {Alocacao de Enderecos IPv6 em Redes Multi-hop de Radios de Baixa
+  Potencia}.
+\newblock In {\em Computer Networks and Distributed Systems (SBRC), 2015
+  Brazilian Symposium on}, May 2015.
+
+\bibitem{perkins2003ad}
+C.~Perkins, E.~Belding-Royer, and S.~Das.
+\newblock {Ad hoc on demand distance vector (AODV) routing (RFC 3561)}.
+\newblock {\em IETF MANET Working Group}, 2003.
+
+\bibitem{xctp}
+B.~P. Santos, M.~A. Vieira, and L.~F. Vieira.
+\newblock extend collection tree protocol.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2015 IEEE}, pages 1512--1517, March 2015.
+
+\bibitem{rfc6550}
+T.~Winter, P.~Thubert, A.~Brandt, J.~Hui, R.~Kelsey, P.~Levis, K.~Pister,
+  R.~Struik, J.~Vasseur, and R.~Alexander.
+\newblock {RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks}.
+\newblock RFC 6550 (Proposed Standard), 2012.
+
+\end{thebibliography}

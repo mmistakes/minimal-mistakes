@@ -1,0 +1,64 @@
+\section{Related Work}
+\label{sec:related}
+
+AODV~\cite{perkins2003ad} and DSR~\cite{johnson2007rfc} are
+traditional wireless protocols that allow any-to-any communication,
+but they were designed for 802.11 and require too many states or
+apply several overheads on the packet header.
+In the context of low-power and lossy networks, CTP~\cite{Fonseca:2009} and
+CodeDrip~\cite{junior2014codedrip} were designed for bottom-up and
+top-down data flows, respectively. They support communication in only one
+direction.
+
+State-of-the-art routing protocols for 6lowPAN that enable
+any-to-any communication are RPL~\cite{rfc6550}, XCTP~\cite{xctp}, and
+Hydro~\cite{hydro}. RPL allows two modes of operation (storing and
+non-storing) for downwards data flows. The non-storing mode is based
+on source routing, and the storing mode pro-actively maintains an
+entry in the routing table of every node on the path from the root
+to each destination, which is not scalable to even moderate-size
+networks. XCTP is an extension of CTP and is based on a reactive
+reverse collection route creating between the root and every source
+node. An entry in the reverse-route table is kept for every data
+flow at each node on the path between the source and the
+destination, which is also not scalable in terms of memory
+footprint. Hydro protocol, like RPL, is based on a DAG
+(directed acyclic graph) for bottom-up communication. Source nodes
+need to periodically send reports to the border router, which builds
+a global view (typically incomplete) of the network topology. Table \ref{tab:comparative} shows a comparison between the cited protocols for 6LoWPANs.
+
+Some more recent protocols \cite{Palani2015, Moghadam:2015:MMR:2766739.2766774,
+7374975} modified RPL to include new features. In~\cite{Palani2015}, a
+load-balance technique is applied over nodes to decrease power consumption. In
+\cite{Moghadam:2015:MMR:2766739.2766774, 7374975}, they provide multipath
+routing protocols to improve throughput and fault tolerance.
+
+
+\begin{table}[]
+\centering
+\caption{Comparison between related protocols for 6LoWPAN.}
+\label{tab:comparative}
+\begin{tabular}{@{}cccclc@{}}
+\toprule
+\textbf{}                   & \textbf{MATRIX} & \textbf{RPL}                 & \textbf{CTP} & \textbf{XCTP}        \\ \midrule
+\textbf{Bottom-up traffic}          & \checkmark    & \checkmark                      & \checkmark   & \checkmark           \\
+\textbf{Top-down traffic}           & \checkmark      & \checkmark                     &              & \checkmark           \\
+
+
+\textbf{Any-to-any traffic}           & \checkmark      & \checkmark                     &              &             \\
+
+\textbf{Address-allocation} & \checkmark      &                               & \multicolumn{1}{l}{}
+ \\ 
+ 
+ 
+ \textbf{Memory efficiency}           & \checkmark      &                      &  \checkmark            &             \\
+ 
+ 
+ 
+ \textbf{Fault tolerance}           & \checkmark      &                      &              & \checkmark            \\
+ 
+ 
+ 
+ \bottomrule
+\end{tabular}
+\end{table}

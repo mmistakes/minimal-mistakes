@@ -1,0 +1,93 @@
+\begin{algorithm}[!th]
+
+% \small
+\footnotesize
+\SetKwInOut{Parameter}{Parameter}
+\SetKwInOut{Note}{Note}
+\SetKwInOut{Meaning}{Meaning}
+
+\SetKwFunction{FMain}{Main}
+\SetKwFunction{FkeepRotine}{startKR}
+\SetKwFunction{FrmRotine}{rmRotine}
+
+
+\SetKwProg{Fn}{Func}{:}{\KwRet}
+
+\SetAlgoLined
+\SetNlSty{texttt}{(}{)}
+
+% \Parameter{$\delta$ fixed time period between consecutive \texttt{keepRoute} beacons}
+% \Note{\FrmRotine is optional}
+
+% $n.IP =$ Node IPv6, $n.R = $ Node range, $type = $ message type.
+
+\Fn{\FMain{newState}}{
+    
+    \If{$newState = HL$}{
+        startReverseTrickleTimer($IPparent(n)$)\; \label{alg:line:start-rtt}
+        \If{$PRVparent(n) \neq \varnothing$}{
+            rmRoute($PRVparent(n), \{n.IP\}$)\;
+            $PRVparent(n) = CTparent(n)$\;
+        }
+        
+        \uIf{$previousState = NM $} { \label{alg:line:nm-back-home}
+            rmRoute($PRVparent(n), \{ n.IP \}$)\;
+            stopKR()\;
+        }
+        \ElseIf{$previousState = PM $} { \label{alg:line:pm-back-home}
+            rmRoute($PRVparent(n), \{ n.IP, n.Range\}$)\;
+            stopKR()\;
+        }
+    }
+    
+    \If{$newState = SM$}{
+        findWhoMoved()\;    \label{alg:line:who-moved}
+    }
+
+    \If{$newState = NM$}{  \label{alg:line:nm-state}
+        cleanMtable()\;
+        \While{$findNewCTparent() = NULL$}{
+            triggerNewParent()\;
+        }
+        \If{$newParent() \neq IPparent(n)$}{ \label{alg:line:nm-loop}
+            \If{$PRVparent(n) \neq \{\varnothing\}$ and $newParent() \neq PRVparent(n)$}{
+                rmRoute($PRVparent(n), \{n.IP\}$)\; \label{alg:line:nm-rmRoute}
+                $PRVparent(n) = CTparent(n)$\;
+            }
+            restartReverseTricklerTimer($CTparent(n)$)\;
+            startKR($IPparent(n), \{n.IP\}, \delta$)\; \label{alg:line:nm-keep-route}
+        }
+    }                       \label{alg:line:nm-state-end}
+        
+    \If{$newState = PM$}{
+        \While{$findNewCTparent() = NULL$}{
+            triggerNewParent()\;
+        }
+        \If{$newParent() \neq IPparent(n)$}{ \label{alg:line:begin-pm-loop}
+            \eIf{$IPchildren(n) \neq \{\varnothing\}$}{ 
+                startKR($n.IP, \{n.IP, n.Range\}, \delta$);
+            }{
+                startKR($n.IP, \{n.IP\}, \delta$);
+            }
+            \If{$PRVparent(n) \neq \{\varnothing\}$ and $newParent() \neq PRVparent(n)$}{
+                rmRoute($PRVparent(n), \{n.IP\}$)\; \label{alg:line:pm-rmRoute}
+                $PRVparent(n) = CTparent(n)$\;
+            }
+            restartReverseTricklerTimer($CTparent(n)$)\;
+        }                                   \label{alg:line:end-pm-loop}
+    }
+}
+
+\Fn{\FkeepRotine{$dest, payload, f$}}{
+    \ForEach{$\delta$ time-slots}{
+        sendBeacon($dest, payload, type.KeepRoute$)
+    }
+}
+
+\Fn{\FrmRotine{$dest, payload$}}{
+    sendBeacon($dest, payload, type.rmRoute$)
+}
+\caption{Mobile Engine}
+\label{alg:mobile-engine}
+
+\end{algorithm}

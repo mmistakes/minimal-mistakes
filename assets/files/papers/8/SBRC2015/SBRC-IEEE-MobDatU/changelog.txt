@@ -1,0 +1,677 @@
+
+
+ Changelog history of the IEEEtran LaTeX class.
+ 2007/03/05
+ by Michael Shell (MDS)
+ http://www.michaelshell.org/
+
+
+
+*******
+ 3/2007 V1.7a (MDS) changes:
+
+ 1) Corrected problem of unwanted two column peer review title page format.
+    Thanks to Virgilio Rodriguez for reporting this bug.
+
+ 2) "depreciated" -> "deprecated". Thanks to Virgilio Rodriguez for
+    suggesting this change.
+
+
+
+*******
+ 1/2007 V1.7 (MDS) changes:
+
+ 1) New class option compsoc to support the IEEE Computer Society format.
+
+ 2) New class option captionsoff disables the display of figure/table
+    captions. endfloat.sty is now mentioned in the docs. Thanks to Geoff
+    Walker for suggesting these changes.
+
+ 3) Fixed compatibility issues with subfig.sty and caption.sty. Thanks to
+    Steven Douglas Cochran and Axel Sommerfeldt for suggesting this change.
+
+ 4) New \CLASSINPUT, \CLASSOPTION and \CLASSINFO interface allows for more
+    user control and conditional compilation.
+
+ 5) \ifcenterfigcaptions (\centerfigcaptionstrue, \centerfigcaptionsfalse),
+    \CMPARstart and \overrideIEEEmargins have been removed and no are
+    longer supported. The effect of \overrideIEEEmargins can be mimicked
+    via the more general \CLASSINPUT interface:
+    % US letter paper:
+    \newcommand{\CLASSINPUTinnersidemargin}{0.775in}
+    \newcommand{\CLASSINPUToutersidemargin}{0.585in}
+    % A4 paper:
+    \newcommand{\CLASSINPUTinnersidemargin}{17mm}
+    \newcommand{\CLASSINPUToutersidemargin}{11.647mm}
+
+ 6) Several commands and environments have been deprecated in favor of
+    replacements with IEEE prefixes to better avoid potential future name
+    clashes with other packages. Legacy code retained to allow the use of
+    the obsolete forms (for now), but with a warning message to the console
+    during compilation:
+    \IEEEauthorblockA, \IEEEauthorblockN, \IEEEauthorrefmark,
+    \IEEEbiography, \IEEEbiographynophoto, \IEEEkeywords, \IEEEPARstart,
+    \IEEEproof, \IEEEpubid, \IEEEpubidadjcol, \IEEEQED, \IEEEQEDclosed,
+    \IEEEQEDopen, \IEEEspecialpapernotice. IEEEtran.cls now redefines
+    \proof in way to avoid problems with the amsthm.sty package.
+    For IED lists:
+    \IEEEiedlabeljustifyc, \IEEEiedlabeljustifyl, \IEEEiedlabeljustifyr,
+    \IEEEnocalcleftmargin, \IEEElabelindent, \IEEEsetlabelwidth,
+    \IEEEusemathlabelsep
+
+ 7) These commands/lengths now require the IEEE prefix and do not have
+    legacy support: \IEEEnormaljot.
+    For IED lists: \ifIEEEnocalcleftmargin, \ifIEEEnolabelindentfactor,
+    \IEEEiedlistdecl, \IEEElabelindentfactor
+
+ 8) \normalsizebaselineskip skip replaced by
+    \CLASSINFOnormalsizebaselineskip (nonrubber dimen) length.
+    Also, new \CLASSINFOnormalsizeunitybaselineskip (nonrubber dimen)
+    provided.
+
+ 9) Now defaults to using Alpha numbering rather than Roman for appendices
+    numbering. This is because Alpha numbering is more common and avoids
+    problems with theorem numbering. \ifuseRomanappendices
+    (\useRomanappendicestrue, \useRomanappendicesfalse) is no longer
+    supported. Instead, use the new class option romanappendices if Roman
+    appendices numbering is desired. Thanks to Leonid Mirkin for reporting
+    the problem with theorems in appendices and suggesting changes.
+
+10) Improved paper size setting code for pdflatex.
+
+11) Better handling of theorem numbering when using the section counter
+    within the appendix(cies). Thanks to Leonid Mirkin for suggesting
+    this change.
+
+12) Fixed bug that caused equations at the end of theorems to be too
+    close to the line below them.
+
+13) Provided hook to conference mode console notice and changed notice to
+    better support conferences that use A4 paper. Thanks to Volker Kuhlmann
+    for suggesting this change.
+
+14) \IEEEauthorrefmark made robust to allow it to be used in \thanks
+    without a leading \protect
+
+15) Improved \textunderscore to provide a much better fake _ when used with
+    OT1 encoding. Under OT1, detect use of pcr or cmtt \ttfamily and use
+    available true _ glyph for those two typewriter fonts.
+
+16) Revised internal \@sect command to be more robust for users who employ
+    modified section heading formats. Thanks to Zarko F. Cucej for
+    suggesting this change.
+
+17) Improved \thesubsubsection definition to prevent breaks at the hyphen.
+    Thanks to Moritz Borgmann for suggesting this change. Thanks to
+    Dan Luecking and Heiko Oberdiek for explaining some of the various
+    alternatives and techniques to fix it.
+
+18) No longer provide \NAT@parse hack to get cite.sty to play (somewhat)
+    with hyperref.sty as this is already included in cite.sty version
+    4.0 (2003-05-27) and later.
+
+19) At the beginning of document, set the default style of url.sty to be
+    the same as the current text font - as is done in IEEE journals.
+
+20) Corrected excessive line spacing in journal table captions. Thanks to
+    Moritz Borgmann for suggesting this change.
+
+21) Corrected \thesubsubsection to use the "I-A1" format IEEE uses rather
+    than "I-A.1" as was done before. Ditto for \theparagraph. Thanks to
+    Moritz Borgmann for suggesting this change.
+
+22) Enclose papersize specials within \AtBeginDvi in case someone wants
+    to make a format with IEEEtran. Thanks to Moritz Borgmann for
+    suggesting this change.
+
+23) Eliminated the small space after abstract and keywords dash as IEEE
+    now does. Thanks to Moritz Borgmann for suggesting this change.
+
+24) IEEEkeywords is no longer locked out in conference mode
+
+25) Increase defaults of \binoppenalty and \relpenalty to discourage
+    breaks within equations. Thanks to Moritz Borgmann for suggesting
+    this change.
+
+26) Support optional argument for IEEEproof. Thanks to Ingo Steinwart for
+    suggesting this change. Also, start a new \par with \IEEEproof.
+
+27) Add support for an optional argument to \bstctlcite.
+
+28) Changed \topfraction and \dbltopfraction from 1.0 to 0.9. Thanks to
+    Donald Arseneau for suggesting this change.
+
+
+*******
+ 09/2005 V1.6c (MDS) changes:
+
+ 1) Changed endfigure/endfloat definitions so as not to cause problems with
+    preview-LaTeX and other packages. Thanks to Stephan Heuel and David
+    Kastrup for reporting this problem.
+
+
+
+*******
+ 11/2002 V1.6b (MDS) changes:
+
+ 1) Fixed problem with figure captions when using hyperref. Thanks to 
+    Leandro Barajas and Michael Bassetti for reporting this bug.
+
+ 2) Provide a fake nabib command \NAT@parse so that hyperref will not
+    interfere with the operation of cite.sty. However, as a result citation
+    numbers will not be hyperlinked. Also, natbib will not be able to work
+    with IEEEtran. However, this is perhaps the best solution until
+    cite.sty and hyperref.sty are able to co-exist with each other.
+    It easy enough to override the fake command via:
+    \makeatletter
+    \let\NAT@parse\undefined
+    \makeatother
+
+ 3) Revised font selection method so as not to have problems when used
+    with setspace.sty. Thanks to Zhang Yan for reporting this bug.
+
+ 4) Added \special to feed papersize to dvips. Thanks to Moritz Borgmann 
+    for suggesting this feature.
+
+ 5) In addition to the IEEE IED lists, the original IED style list
+    environments (as is done in article.cls) are now provided as
+    LaTeXitemize, LaTeXenumerate, and LaTeXdescription. Also, users can
+    now redefine \makelabel within IEEE IED list controls. There may be
+    some use for this in specialized applications. Thanks to Eli Barzilay
+    for suggesting this feature.
+
+ 6) \table* now defaults to \footnotesize text like \table.
+
+ 7) The draft modes now no longer force a pagebreak after the title.
+    Thanks to Christian Peel for suggesting this change.
+
+ 8) New draftclsnofoot mode is like draftcls, but does not display the
+    date and the word "DRAFT" at the foot of the page. Thanks to
+    Christian Peel for suggesting this feature.
+
+ 9) New peerreview and peerreviewca modes with \IEEEpeerreviewmaketitle
+    command allows for a "cover" titlepage for anonymous peer review.
+    Except for the cover titlepage, peerreview is much like journal mode.
+    peerreviewca is like peerreview, but allows the author names to be
+    entered and formatted as under conference mode so that author
+    affiliations and contact information can be easily seen on the cover
+    page. Thanks to Eric Benedict for suggesting this feature.
+
+
+
+*******
+ 7/2002 V1.6 (MDS) changes:
+ 
+ 1) Added conference mode via conference option. Defaults to the
+    traditional journal mode. e.g., \documentclass[conference]{IEEEtran}
+ 
+ 2) Added support for A4 paper via new a4paper option. Pdflatex's paper
+    size lengths are now automatically set to the proper paper size being
+    used.
+ 
+ 3) Revised margins again. Page text is now horizontally centered.
+    Conference mode increases the top and bottom margins with the bottom
+    margin being slightly larger. For A4 paper, the top margin and text
+    typesetting will not change from those of US letter paper, but the side
+    margins will be smaller and the bottom margin will be larger than that
+    of US letter. All per IEEE specs.
+
+ 4) Fixed footnote line spacing anomaly in draft mode. 
+    Thanks to Alberto Rodriguez for reporting this bug.
+    
+    Also, slightly revised footnote and \thanks note spacing.
+    Set \interfootnotelinepenalty=10000 to prevent LaTeX
+    from breaking footnotes across multiple pages or columns.
+
+ 5) Fixed bug that caused overwritten photo areas and sometimes anomalous
+    spacing when a new paragraph was started within a biography. Also,
+    the presence of \par's, new lines or spaces at the beginning of
+    abstract, keywords, biography, or biographynophoto will no longer
+    affect the first word spacing.
+    Thanks to Eric Durant for reporting this bug.
+    
+    The biography environment now does a better job in preventing
+    a biography photo area from being broken across pages or columns.
+
+ 6) Fixed whitespace between \cite entries bug. i.e.,
+    both \cite{einstein24, knuth84} and \cite{einstein24,knuth84}
+    are now valid. \cite is now a robust command as it should be.
+    IEEEtran now no longer defines the old non-standard \shortcite or 
+    \citename.
+    
+    The base IEEEtran.cls does not sort citation numbers or produce ranges
+    for three or more consecutive numbers. However, V1.6 of IEEEtran.cls 
+    now pre-defines the following format control macros to facilitate easy
+    use with Donald Arseneau's cite.sty package (tested with cite.sty V3.9):  
+
+    \def\citepunct{], [}
+    \def\citedash{]--[}
+    
+    cite.sty is standard on most LaTeX sytems and can be obtained from
+    www.ctan.org. Thanks to Donald Arseneau for creating cite.sty,
+    providing the required format arguments to produce the IEEE style
+    and designing a cite interface capable of handling the IEEE citation
+    style.
+    
+    Note: Historically, IEEE has wanted authors to "hardcode" symbolics.
+    (i.e., replace all \cite{} with fixed [x]). However, it now seems that
+    most electronic manuscript submissions to IEEE are in .pdf format, and 
+    as such, do not require the LaTeX document reference numbers to be hard
+    coded. If an author is required to submit actual LaTeX files, I do
+    recommend that the bibliography file (.bbl) be copied into the .tex
+    document and the \bibliographystyle{} and \bibliography{} commands be
+    commented out so that the .tex file does not depend on (potentially
+    lengthy and/or confidential) external bibliography database files
+
+ 7) Adjusted some spacing parameters. The spacing above and below equations
+    has been revised (to a typical IEEE value). \jot now has a decent value.
+    The title text is now exactly 24pt. (On a related note, \fontsubfuzz has
+    been increased to 0.9pt to prevent annoying font substitution warnings
+    when using the Computer Modern fonts that use the 24.88pt size.)
+    In V1.6, \small is now 8.5pt in 9pt docs because \footnotesize is 8pt.
+    For 9pt docs, you should probably go ahead and use \footnotesize when
+    you need text a little smaller than \normalsize.
+    The interword spacing has been adjusted to be extremely close to that
+    which IEEE uses. You can use a new class option, nofonttune, if you need
+    to disable the adjusting of the interword spacing. This adjustment and
+    an increase to \hyphenpenalty have greatly reduced the amount of
+    hyphenation in a typical paper.
+       The baselineskip for the normalsize fonts has been tweaked to reduce
+    underfull vboxes on journal paper columns with only paragraphs. 
+    Conference mode does the same thing but by also tweaking the \textheight
+    slightly off 9.25in (IEEE spec) to ensure an integer number of lines per
+    page. Draft (also draftcls) mode has also been revised to reduce
+    underfull vbox warnings. However, draft mode can still produce underfull
+    vboxes (a direct result of the increase in line spacing and margins) if:
+    A non-normalsize font occupies an entire column (abstract and index
+    terms take up a whole column by themselves); or the beginning of a
+    section occurs near the end of a column and cannot be squeezed into the
+    bottom, etc. This is normal as draft mode's liberal spacings cannot
+    guarantee perfect formatting.
+
+ 8) New biographynophoto environment for biographies without photos.
+    Usage: 
+    
+    \begin{biographynophoto}{author name}
+    biography text here 
+    \end{biographynophoto}
+    
+ 9) Fixed bug that produced multiple table of contents entries for papers
+    with more than one biography. Also, biography now works better with
+    hyperref.
+ 
+10) New \sublargesize font size command provides for 11pt text in a 10pt
+    document. (Needed for things like author names.) For documents not
+    using 10pt normal size text, \sublargesize is currently identical 
+    to \large.
+
+11) New \IEEEmembership command to provide correct font to indicate IEEE
+    membership for journal papers.
+
+12) Fixed author name line overflow problem when in journal mode. This
+    problem had been introduced in V1.5 in my rush to get \and to work for
+    conferences. \and is unneeded (and invalid) in journal mode. For 
+    conference mode, \and will work as expected and features an optional
+    spacing argument. i.e., \and[\hspace{5ex}] 
+    \and will default (recommended) to using \hfill which will result in
+    equal spacing between author blocks.
+ 
+13) New \authorblockN, \authorblockA and \authorrefmark commands to 
+    facilitate easy formatting of author names, affiliations and cross
+    reference symbols, respectively, when in conference mode. These 
+    three commands are to be used only for conference papers.
+    In conference mode, \author text is placed within a modified tabular
+    environment (somewhat like article.cls). So, within \author in
+    conference mode, you should not try to enclose multiple \\ within an
+    environment or command (other than the argument braces of
+    \authorblockX{}). For example:
+    
+    \author{\authorblockN{{John Doe \\ Jane Doe}}} % WRONG!
+    
+    will generate an error. 
+  
+    Note that font size/attribute changes will now persists across \\
+    within \author. (But, not across author blocks nor across \and.)
+    However, with the new commands, there should be no need to alter any
+    font attributes within \author. All text sizing and spacing within 
+    \author{} and the author block commands is per IEEE specs for both 
+    conference and journal modes. (In conference mode, the author names
+    are only very slightly larger than the affiliations which are in normal
+    size.) For specialized applications you can alter the justification of
+    author lines by placing \hfill at the beginning or at the end of a line.
+    The interline spacing within \author is determined by the font
+    attributes that are in effect at the end of each line within author.
+ 
+14) Because the titles and author name blocks use different font
+    sizes/styles from the main text, it was possible that two column papers
+    with titles that span both columns (standard journal and conference
+    papers, but not technotes) with certain numbers of lines for the title
+    and authors' name/affiliations can cause underfull vbox problems
+    (paragraphs with large spacings between them) in the second column of
+    the main text on the title page - if there were no new sections,
+    equations or figures in this column (they would provide some needed
+    rubber spacing). The use of things like special paper notices and
+    publisher ID marks also affected this issue. The problem could not
+    happen in the first column because the first column has a rubber length
+    around the heading of the first section. Furthermore, problems seldom
+    occurred on pages after the first as the margins had been chosen not to
+    cause it with the popular font sizes. Rubber lengths after the author
+    names would not fix this problem.
+       Auto-calculating a "good" spacing after the title is a tad difficult
+    to do in LaTeX. However, I am pleased to report that V1.6 has this new
+    capability - "dynamically determined title spacing". IEEEtran will now
+    measure the height of all the title and author text in \maketitle
+    and then calculate a rigid (non-rubber) spacer to follow that meets
+    IEEE specs and also produces a \textheight on the title page that
+    ensures an integer number of normalsized lines on the rest of the page.
+    Single column  papers, and two column papers with the title entirely in
+    column one (technotes) do not need dynamic rigid spacing and therefore
+    use standard rubber spacers.
+    
+    Note: This problem can still crop up if you use floats that span both
+    columns (i.e., figure*). It has been a decade+ long limitation with
+    LaTeX that the stretchable portion of \dbltextfloatsep is ignored. 
+    If you get a problem with underful vbox warnings and paragraphs that
+    "are pulled apart" on page with a float that spans both columns, tweak
+    the space between the figure and the main text a little:
+    
+    \vskip 5pt
+    \end{figure*}
+    
+    If you can't find a value that fixes both columns, you are going to
+    have to put a rubber spacer somewhere in one or both of the columns.
+15) Because of change #14 above, those of you using \pubid will, as of V1.6,
+    have to place it *before* \maketitle in order for it have the intended 
+    affect. The dynamic spacer algorithm must see if you are using \pubid
+    when \maketitle is called. \pubidadjcol works as before except that it
+    now has additional logic to prevent it from doing anything if \pubid
+    was never called.
+    
+16) In some unusual, non-standard circumstances, an author may desire to
+    alter the spacing after the title area or put some unusual text above
+    the main text. For instance, to stop a bad break when a new section
+    occurs right at the start of the second page. This is difficult to do
+    when the title spans both columns of two column text since LaTeX treats
+    such title text as a type of float. A new command,
+    \IEEEaftertitletext{}, gives access to the end of that produced by
+    \maketitle. The types of things that can go into \IEEEaftertitletext
+    are the same as those into \twocolumn[] - no \par, but \\ are OK. There
+    is no restriction on the range of spacings that can be used. e.g.,
+    \IEEEaftertitletext{\vspace{-100pt}} will push the main text well into
+    the title and \IEEEaftertitletext{\vspace{100pt}} will push it far down
+    the page. You will have complete control. If used, place
+    \IEEEaftertitletext{} before \maketitle like \title and \author.
+    IEEEtran's dynamic title spacing intentionally does not take into
+    consideration the contents of \IEEEaftertitletext{} when determining
+    the spacer after the title area (otherwise it would try to second
+    guess you), so the user will have manually adjust the height of the
+    contents in \IEEEaftertitletext{} if the problem discussed in #14 above
+    should develop. A safe bet is to keep the height of contents of
+    \IEEEaftertitletext{} to integer multiples of \baselineskip, e.g.,
+    \IEEEaftertitletext{\vspace{-1\baselineskip}} 
+    
+    Because it can result in an IEEE nonstandard format, the use of
+    \IEEEaftertitletext{} is discouraged. Possible uses include (1) the use
+    of IEEEtran for non-IEEE work with different title spacing requirements,
+    or (2) as an emergency manual override if a problem should develop in 
+    IEEEtran's automatic spacing algorithm.
+ 
+17) completely rewritten \PARstart to:
+    a. no longer have problems when the user begins an environment
+       within the paragraph that uses \PARstart.
+    b. auto-detect and use the current font family
+    c. revise handling of the space at the end of the first word so that
+       interword glue will now work as normal.
+    d. produce correctly aligned edges for the (two) indented lines.
+
+    Because the current font family is now auto-detected, there is no
+    longer any need for \CMPARstart - it is now the same as \PARstart.
+   
+18) There is now a new "open box" Q.E.D. symbol (\QEDopen) as well as the
+    original default (\QED) closed one (\QEDclosed). Some journals use
+    the open form. To make \proof use the open form, just do:
+    \renewcommand{\QED}{\QEDopen}
+
+19) Additional \typeout{} notices added to warn the user when unusual 
+    settings/commands are detected or as reminders to avoid common errors
+    when in conference mode.
+
+20) IEEEtran now provides \abovecaptionskip and \belowcaptionskip skip
+    registers because article class provides them and some packages
+    may error if they are missing. However, IEEEtran only uses 
+    \abovecaptionskip for actual caption spacing.
+
+21) Fixed bug that prevented users from redefining the section headings
+    to use arabic digits. Thanks to Richardt H. Wilkinson for reporting
+    this bug.
+
+22) Code cleaned up to be more efficient with the use of TeX registers;
+    removed some old LaTeX 2.09 code; revised option processing to 
+    LaTeX2e standard; eliminated unwanted "phantom" spaces in some
+    environments.
+
+23) Added new \IEEEeqnarray, \IEEEeqnarraybox, \IEEEeqnarrayboxm and 
+    \IEEEeqnarrayboxt environments to provide superior alternatives to the
+    standard LaTeX \eqnarray, \array and \tabular. Additional new support
+    commands include \IEEEeqnarraydecl, \IEEEeqnarrayboxdecl,
+    \IEEEeqnarraymathstyle, \IEEEeqnarraytextstyle, \yesnumber.
+    \IEEEnonumber, \IEEEyesnumber, \IEEEyessubnumber, \IEEEeqnarraynumspace,
+    \IEEEeqnarraymulticol, \IEEEeqnarrayomit, \IEEEeqnarraydefcol,
+    \IEEEeqnarraydefcolsep, \IEEEeqnarrayseprow, \IEEEeqnarrayseprowcut,
+    \IEEEeqnarrayrulerow, \IEEEeqnarraydblrulerowcut,
+    \IEEEeqnarraystrutmode, \IEEEeqnarraystrutsize,
+    \IEEEeqnarraystrutsizeadd, \IEEEvisiblestrutstrue,
+    \IEEEvisiblestrutsfalse and \IEEEstrut.
+    These are documented in the user's guide.
+    
+24) V1.6 changed back to using () around theorem names (which are also now
+    in italics) as this is what IEEE is using now. Thanks to Christian Peel
+    for reporting this. Also, when section numbers are used as the first
+    part of theorem numbers, display them in arabic, not Roman.
+    
+25) New \IEEEtriggeratref{X} command allows a page break to be triggered
+    just before the given reference number "X". This is most useful when
+    balancing the columns on the last page and a \newpage between references
+    is desired. \IEEEtriggercmd{X} allows a different command to be executed
+    at trigger.
+
+
+
+*******
+ 7/2001 V1.5 (MDS) changes:
+
+
+ 1) Fixed \and within \author bug: (! Misplaced \crcr. \endtabular ->\crcr)
+    Thanks to Rainer Dorsch for discovering and reporting that \and 
+    did not work.
+    
+ 2) Fixed the biography environment so that if a biography's text is shorter
+    than the area allocated for the photo, a collision with the next
+    biography does not occur. You can now put real graphics (using the
+    graphicx package) into the biography photo box with a new optional 
+    argument of the biography command! For example:
+    
+    \begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,
+                      keepaspectratio]{./tux.eps}}]{Linux Penguin}
+    
+    will use the specified graphic as the author's photo. The photo area is
+    exactly 1in wide by 1.25in high - as is done in IEEE Transactions. Try
+    to keep the same 4:5 aspect ratio if scanning/cropping your photos. 
+    Note the need for the extra set of enclosing braces around the
+    \includegraphics. Without it, The LaTeX parser may get confused when it
+    sees the \includegraphics's brackets within the biography's optional
+    argument. Due to the length of the \includegraphics command, you may
+    wish to define your own shorthand form of it. I have not done so with
+    IEEEtran to prevent dependence on the graphicx package. If you do not
+    use the optional argument, or leave it empty, a standard frame box
+    with the words "Place Photo Here" will be used. If you want the space
+    to remain completely empty, you can do:
+    
+    \begin{biography}[\mbox{}]{The Invisible Man} 
+    
+    The interface to biography's optional argument is into a
+    1in X 1.25in minipage in which the argument text is centered both 
+    horizontally and vertically:
+    
+    \begin{minipage}[b][1.25in][c]{1in}%
+    \centering
+    #1%
+    \end{minipage}
+    
+    Within the biography environment, \unitlength is set to 1in.
+    With this in mind, you can even design your own custom frameboxes.
+    For instance:
+    
+    \begin{biography}[\framebox(1,1.25){\parbox[][\height
+                     ][c]{0.9in}{\centering PLACE\\ PHOTO\\
+                                  HERE}}]{Author Name}
+    
+    will yield the same type of result as the default photo box.
+    
+    Thanks to Herbert Voss for discovering the collision bug, suggesting
+    the ability to handle graphics and providing some prototype code.
+
+
+
+*******
+ 3/2001 V1.4 (MDS) changes:
+
+
+ 1) New "draftcls" and "final" options have been added.
+    Thanks to Dragan Cvetkovic for suggesting an option like draftcls.
+    
+ 2) Documentation changes to reflect the fact that this IEEEtran.cls 
+    is no longer beta test.
+
+ 3) Slightly revised caption sizes. Figure and table captions are now 
+    in \footnotesize, not \small as before.
+
+ 4) Allow user to control figure caption justification. IEEEtran.cls 
+    normally defaults to left justified as is done in Transactions.
+    However, for conferences, you may wish to issue the command:
+    \centerfigcaptionstrue
+    in the preamble. Short (less than one line long) figure captions
+    will then be centered. Multi-line figure captions will always be 
+    properly left justified. V1.6: This is already done for you when
+    using the conference mode.
+
+
+
+*******
+ 1/2001 V1.3 
+ Michael Shell (MDS) made extensive changes and additions:
+
+
+ BUGS FIXED (and many others too numerous to mention!):
+ 1) Fixed improper alignment with itemized, enumerated and
+    description lists. Added new controls to these three
+    environments so that it is easy to get the alignment IEEE
+    uses. Furthermore, the itemize, enumerate and description lists
+    no longer force a new paragraph to begin at the end the list
+    (\par). (Sometimes lists are used within paragraphs.) 
+ 
+ 2) JVH's fixes now allow things like $\mathbf{N}(0,P(0))$
+    to work properly without needing the extra braces:
+    ${\mathbf{N}}(0,P(0))$. There is no longer any dependence
+    on the "rawfonts" and "oldlfont" packages. Thanks Juergen! 
+ 
+ 3) Fixed underfull hbox errors and incorrect reference number
+    alignment when the number of references in the bibliography
+    exceeded 9 entries (which is almost every paper!).
+  
+ 4) Removed dependence on the LaTeX sizexx.clo files.
+    Now, 9pt documents should work correctly even on systems that
+    lack a size9.clo file. This is most often used in conjunction
+    with the option "technote" for "correspondence" papers like those
+    in IEEE Transactions on Information Theory. For virtually all
+    other papers, 10pt is used and so it is the default.
+    Some improper font sizes have been corrected. \footnotesize is
+    now 8pt in 9pt docs, so footnotes in technotes should be the
+    correct size now. 
+ 
+ 5) Added \interlinepenalty within the bibliography section to discourage
+    LaTeX from breaking within a reference. IEEE almost never breaks within
+    a reference and when they do it is usually in technotes
+    (correspondence papers). You may get an underfull vbox warning in the
+    bibliography indicating that the spacing just before the "REFERENCES" 
+    section is larger than normal, but the final result will be more like 
+    what IEEE will publish. See the comments in the BIBLIOGRAPHY section
+    around line 2034 below if you want to change this behavior.
+
+ 6) No longer "blows up" when you use \paragraph and have a table
+    of contents.
+ 
+ 7) Theorem environment changed, (but for V1.6, back to the old way, sigh).
+ 
+ 8) Figure captions adjusted: IEEE left (not center) justifies
+    figure captions (for journals) and does not indent figure caption text.
+ 
+ 9) Adjusted some spacings in the table of contents(TOC))/list-of-figures/
+    list-of-tables so that section/table numbers will not so easily 
+    collide with the titles. Section VIII was usually the worst offender.
+    Still doesn't right justify the section numbers, but neither does 
+    article.cls (This must be why LaTeX likes the x.y.z section numbering
+    scheme unlike I, II, III, etc. of IEEE. )
+    It may be "normal" as it is (left justified). sigh.
+ 
+10) Now uses "index terms" now as a heading instead of "keywords".
+    Furthermore, the "index terms" and "abstract" headings are in bold
+    italic. This is how IEEE does things.
+
+11) \thebibliography and \biography now put entries into
+    the table of contents for you.
+
+*******
+
+
+
+
+
+
+ *******
+ 9/2000 (JVH) changes: (now designated as V1.2)
+ 
+ made some corrections to get closer to LaTeX2e
+ 20000906 Juergen v.Hagen
+ vonhagen@ihefiji.etec.uni-karlsruhe.de
+
+ Permission to redistribute granted as of December 2000.
+ *******
+
+
+
+
+
+ *******
+ 
+ 1996 (JWD) LaTeX2e version: (now designated as V1.1)
+  
+ In the most recent TeXhax digest, there was a request for a copy of
+ IEEEtrans.sty modified to work with LaTeX2e.  I have a version I
+ modified to make it IEEEtrans.cls, which I have sent to the person
+ making the request and am now sending to you to consider posting to
+ the archives.
+ --
+ Jon Dixon
+ dixonj@colorado.edu
+ http://spot.colorado.edu/~dixonj/
+
+*******
+
+
+
+
+
+*******
+
+ 30-August-1993 original LaTeX 2.09 version (IEEEtran.sty),
+ (now designated as V1.0):
+
+ by Gerry Murray and Silvano Balemi
+ Automatic Control Lab, ETH Zurich, Switzerland
+ balemi@aut.ee.ethz.ch
+
+*******
+
+
+

@@ -1,0 +1,41 @@
+mean,error,protocol,scn,y_facet,x_facet
+1790.5,72.67926809,CTP,1,Static,Static
+1869.6,65.03342292,CTP,2,Low Prob.,Short Dur.
+1842.8,89.15552683,CTP,3,Low Prob.,Mod. Dur.
+1929.9,87.37866535,CTP,4,Low Prob.,Long Dur.
+1951.6,101.5723961,CTP,5,Mod. Prob.,Short Dur.
+2054.1,177.2637316,CTP,6,Mod. Prob.,Mod. Dur.
+2198.6,193.0177342,CTP,7,Mod. Prob.,Long Dur.
+2090,159.3867699,CTP,8,High Prob.,Short Dur.
+2861.3,745.802264,CTP,9,High Prob.,Mod. Dur.
+3272.6,901.0531139,CTP,10,High Prob.,Long Dur.
+1790.5,72.67926809,XCTP,1,Static,Static
+1869.6,65.03342292,XCTP,2,Low Prob.,Short Dur.
+1842.8,89.15552683,XCTP,3,Low Prob.,Mod. Dur.
+1929.9,87.37866535,XCTP,4,Low Prob.,Long Dur.
+1951.6,101.5723961,XCTP,5,Mod. Prob.,Short Dur.
+2054.1,177.2637316,XCTP,6,Mod. Prob.,Mod. Dur.
+2198.6,193.0177342,XCTP,7,Mod. Prob.,Long Dur.
+2090,159.3867699,XCTP,8,High Prob.,Short Dur.
+2861.3,745.802264,XCTP,9,High Prob.,Mod. Dur.
+3272.6,901.0531139,XCTP,10,High Prob.,Long Dur.
+2111.9,55.55831178,MATRIX,1,Static,Static
+2326.6,174.9395689,MATRIX,2,Low Prob.,Short Dur.
+2391.8,138.1467603,MATRIX,3,Low Prob.,Mod. Dur.
+2562.8,271.6087489,MATRIX,4,Low Prob.,Long Dur.
+2493.7,103.388832,MATRIX,5,Mod. Prob.,Short Dur.
+2798.9,175.526309,MATRIX,6,Mod. Prob.,Mod. Dur.
+3171,281.7475148,MATRIX,7,Mod. Prob.,Long Dur.
+2921.2,201.2618795,MATRIX,8,High Prob.,Short Dur.
+3210.6,247.0200584,MATRIX,9,High Prob.,Mod. Dur.
+4234.6,619.210374,MATRIX,10,High Prob.,Long Dur.
+9356.4,95.94865523,RPL,1,Static,Static
+9342.7,73.80786336,RPL,2,Low Prob.,Short Dur.
+9544,192.9384165,RPL,3,Low Prob.,Mod. Dur.
+9319.8,142.6518053,RPL,4,Low Prob.,Long Dur.
+9414.5,96.92154806,RPL,5,Mod. Prob.,Short Dur.
+9415.6,148.7025722,RPL,6,Mod. Prob.,Mod. Dur.
+9289.8,104.0241437,RPL,7,Mod. Prob.,Long Dur.
+9322.2,79.3109706,RPL,8,High Prob.,Short Dur.
+9406.1,91.62431577,RPL,9,High Prob.,Mod. Dur.
+9309,120.476241,RPL,10,High Prob.,Long Dur.

@@ -1,0 +1,139 @@
+\section{Evaluation}
+\label{sec:results}
+
+In this section, we evaluate Matrix performance against state-of-the-art protocols such as RPL~\cite{rfc6550}, CTP~\cite{Fonseca:2009} and XCTP~\cite{xctp}. In order to do that, we conduct a bulk of experiments through simulation, although Matrix' code is ready to run into real devices. We divide the experiments into three main classes: \textit{memory efficiency, protocol overhead, and protocol reliability}. 
+
+In terms of memory efficiency, we analyze the routing table usage as demand measurement to perform routing, and RAM and ROM footprint as requisites to deploy the protocols. Also, we measured the protocols cost regarding control message overhead to build and maintain routing structures updated, in both dynamic and static scenarios. We also measure the protocol reliability in terms of delivered data packets in both dynamic and static scenarios.
+
+\subsection{Simulation setup}\label{subsec:sim}
+
+Matrix was implemented as a subroutine of CTP in TinyOS~\cite{tinyos} and the experiments were run using the TOSSIM simulator~\cite{tossim}. We compare Matrix with and without the local broadcast mechanism, to which we refer as MHCL. XCTP also was implemented in TinyOS. RPL was implemented in ContikiOS~\cite{Dunkels:2004} and was simulated on Cooja~\cite{Eriksson:2009}.
+
+
+\begin{table}[!t]
+\centering
+% \resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\multicolumn{1}{l}{\textbf{Parameter}} & \textbf{Value} \\ \midrule
+Base Station                           & 1 center       \\
+Number of Nodes                        & 100            \\
+Radio Range ($m$)                      & 100            \\
+Density ($nodes/m^{2}$)                & 10             \\
+Number of experiments                  & 10             \\
+Path Loss Exponent                     & 4.7            \\
+Power decay (dB)                       & 55.4           \\
+Shadowing Std Dev (dB)                 & 3.2            \\
+Simulation duration                    & 20 min            \\
+Application messages                   & 10 per node \\
+Max. Routing table size                & 20 entries \\
+\bottomrule
+\end{tabular}
+% }
+\caption{Simulation parameters}
+\label{tab:conf}
+\end{table}
+
+Firstly, we run the protocols over a static network scenario without link or node failures. Table~\ref{tab:conf} lists the default simulation parameters for non-faulty scenario. We use the $LinkLayerModel$ tool from TinyOS to generate the topology and connectivity model. We also simulated a range of faulty scenarios, based on experimental data collected from TelosB sensor motes, deployed in an outdoor environment~\cite{Baccour:2012}. In each scenario, after every \unit[60]{s} of simulation, each node shutdowns its radio with probability $\sigma$ and keeps the radio off for a time interval uniformly distributed in $[\varepsilon - 5, \varepsilon + 5]$ seconds. Table~\ref{tab:scn} presents a range of values for A and B, in which A scales from low to high probabilities, and B from short to long time interval. So, each scenario represents a combination of values of $\sigma$ and $\varepsilon$. Note that these are all node-failure scenarios, which are significantly harsher than models that simulate link or per-packet failures only.
+
+\begin{table}[!t]
+\centering
+\caption{Faulty network scenarios}
+\label{tab:scn}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}l|ccc@{}}
+\toprule
+\multicolumn{1}{c|}{\textbf{Probability ($\sigma$) $\setminus$ Duration ($\varepsilon$)}} & \textbf{Short Dur.}           & \textbf{Moderate Dur.}        & \textbf{Long Dur.}            \\ \midrule
+\textbf{Low Prob.}                                                                        & (\unit[1]{\%}, \unit[10]{s})  & (\unit[1]{\%}, \unit[20]{s})  & (\unit[1]{\%}, \unit[40]{s})  \\
+\textbf{Moderate Prob.}                                                                   & (\unit[5]{\%}, \unit[10]{s})  & (\unit[5]{\%}, \unit[20]{s})  & (\unit[5]{\%}, \unit[40]{s})  \\
+\textbf{High Prob.}                                                                       & (\unit[10]{\%}, \unit[10]{s}) & (\unit[10]{\%}, \unit[20]{s}) & (\unit[10]{\%}, \unit[40]{s}) \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
+
+On top of the network layer, we ran two different applications: top-down and any-to-any. In the top-down application, each node sends 10 messages to the root and the root replies with an acknowledgment. In the any-to-any application, each node chooses randomly 10 destination addresses and sends one message to each of those addresses. Nodes start sending application messages \unit[90]{s} after the simulation has started. The entire simulation takes 20 minutes. Each simulation was run 10 times. In each plot, the curve or bars represent the average, and the error bars the confidence interval of 95\%. For each protocol, only results relevant to each plot were included: e.g., CTP does not have a reverse routing table to performs top-down routing, and MHCL differs from Matrix only in faulty scenarios; otherwise, it performs equally and therefore was omitted.
+
+\subsection{Results}\label{subsec:res}
+
+Firstly, we turn our attention to memory efficiency of each protocol. To evaluate the use of routing tables, we compare the number of entries utilized by each protocol. Each node was allocated a routing table of maximum size equal to 20 entries. In Figure \ref{fig:table-usage}, we show the CCDFs (complementary cumulative distribution functions) of the percentage of routing table usage among nodes\footnote{We measured the routing table usage of each node in one-minute intervals, then took the average over 20 minutes.} for Matrix, RPL, XCTP, and MHCL.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/new-ccdf-t-usage}
+    \caption{Routing table usage CCDF. (Maximum table size = 20)}
+    \label{fig:table-usage}
+\end{figure}
+
+In this plot, Matrix was simulated in the faulty scenario, where $\sigma$ and $\varepsilon$ were set to High Probability and Long Duration, respectively (Table \ref{tab:scn}). Note that $>35\%$ of nodes are leaves, i.e., do not have any descendants in the collection tree topology, and therefore use zero routing table entries.
+
+As we can see, RPL is the only protocol that uses 100\% of table entries for some nodes ($\geq25\%$ of nodes have their tables full). This is because RPL, in the storing mode, pro-actively maintains an entry in the routing table of every node on the path from the root to each destination, which quickly fills the available memory and forces packets to be dropped.
+
+XCTP reactively stores reverse routes only when required. Therefore, the number of routing entries used by XCTP depends on the number of data flows going through each node. Since the simulated flows were widely spaced during the simulation time, the XCTP was able to perform efficiently.
+
+The difference between MHCL and Matrix is small: MHCL stores only the IPtree structure, whereas Matrix stores IPtree and RCtree data; the latter are kept only temporarily during parent changes in the collection tree, so its average memory usage is low.
+
+\begin{figure}[!th]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/new-ram-rom-usage}
+    \caption{Code and memory footprint in bytes.}
+    \label{fig:footprint}
+\end{figure}
+
+Figure~\ref{fig:footprint} compares RAM and ROM footprints in the protocol stack of CTP, RPL, XCTP, and Matrix. We can see that Matrix adds only a little more than \unit[7]{Kb} of code to CTP, allowing this protocol to perform any-to-any communication with high scalability. When compared with RPL, the execution code of Matrix requires less RAM. Compared to XCTP, Matrix uses almost the same amount of RAM.
+
+\begin{figure}[t]
+    \centering
+    \subfigure[Static scenario \label{fig:beacons-static}]{
+        \includegraphics[width=.6\linewidth]{./Images/new-beacons-scn-1-static}
+    }
+    
+    \subfigure[Faulty scenarios \label{fig:beacons-faulty}]{
+        \includegraphics[width=1\linewidth]{./Images/new-beacons-scn-2-to-10-grid}
+    }
+    
+    \caption{Number of control packets.}
+    \label{fig:beacons}
+\end{figure}
+
+In order to evaluate the protocols cost, we measure the protocols overhead to create and maintain the routing structures. Figure~\ref{fig:beacons} illustrates the amount of control traffic in our experiments (the total number of beacons sent during the entire simulation). Figure~\ref{fig:beacons-static} shows the protocols cost for static scenario. Matrix sends fewer control packets than RPL, because it only sends additional beacons during network initialization and in case of collection tree topology updates, whereas RPL has a communication intensive maintenance of downward routes during the entire execution time. Since XCTP is a reactive protocol, it does not send additional control packets, when compared to CTP. Figure~\ref{fig:beacons-faulty} reports the protocols cost to every combination of faulty parameters. Again, the protocols behaviour repeat, but the total amount of control packets increases due the network dynamics. In the worst scenario case (high probability and long duration), Matrix presents 45\% less control overhead than RPL. Matrix sends 22\% more beacons than XCP and CTP. However, Matrix maintains downwards routes unlike XCTP and CTP.
+
+\begin{figure}[t]
+    \centering
+    \subfigure[Static scenario \label{fig:top-down-static}]{
+        \includegraphics[width=.6\linewidth]{./Images/new-top-down-success-static}
+    }
+    
+    \subfigure[Faulty scenarios\label{fig:top-down-faulty}]{
+        \includegraphics[width=1\linewidth]{./Images/new-top-down-success-grid}
+    }
+    \caption{Top-down routing success rate.}
+    \label{fig:txdwn}
+\end{figure}
+
+To evaluate the protocols reliability, we analyze the delivery rate. In Figure~\ref{fig:txdwn} we compare top-down routing success rate. We measured the total number of application (ack) messages sent downwards and successfully received by the destination.\footnote{We do not plot the success rate of bottom-up traffic, since it is done by the underlying collection protocol, without any intervention from Matrix.} In the plot, ``inevitable losses'' (unfilled bars) refers to the number of messages that were lost due to a failure of the destination node, in which case, there was no valid path to the destination and the packet loss was inevitable. The remaining messages were lost due to wireless collisions and node failures on the packet's path. 
+
+Figure~\ref{fig:top-down-static} shows the protocols top-down success rate for the static scenario. All protocols present high top-down success rate except RPL, which present poor delivery rate. RPL proactively stores entries in the routing table, thus nodes table nearby the root node quickly fill their entries and lack memory to store all top-down routes. In Figure~\ref{fig:top-down-faulty}, we present the protocols performance under faulty scenarios. We can see that, when a valid path exists to the destination, the top-down success rate of Matrix varies between 95\% and 99\%. In the harshest faulty (High Prob. and Long Dur.), without the local broadcast mechanism, MHCL delivers 85\% of top-down messages. With the local broadcast activated, the success rate increases to 95\%, i.e., roughly 2/3 of otherwise lost messages succeed in reaching the final destination. Note that external factors may be causing RPL's low success rate. Since RPL was the only protocol implemented on Contiki and evaluated in Cooja, native protocols from this OS can interfere with the results. In \cite{Bezunartea:2016}, the authors show how different radio duty cycling mechanisms affect the performance of a RPL network. However, RPL delivered less than $20\%$ of messages in all simulated scenarios due to lack of memory to store routes.  Since XCTP is a reactive protocol, it adapts best to failures and dynamics, because downward routes are updated when a message travels upwards. In this way, the top-down success rate of XCTP is higher even in the presence of failures.
+
+\begin{figure}[t]
+    \centering
+    \subfigure[Static scenario \label{fig:a2a-static}]{
+        \includegraphics[width=.6\linewidth]{./Images/new-a2a-success-static}
+    }
+    
+    \subfigure[Faulty scenarios \label{fig:a2a-faulty}]{
+        \includegraphics[width=1\linewidth]{./Images/new-a2a-success-grid}
+    }
+    \caption{Any-to-any routing success rate.}
+    \label{fig:txany}
+\end{figure}
+
+In Figure~\ref{fig:txany} we compare the any-to-any success rate. We measured the total number of messages sent by a node that was successfully received by the destination. In this application, each node chooses randomly a destination address and sends a message to this node. We can see that, as expected, there is no significant difference between any-to-any and top-down traffic patterns. Matrix performs any-to-any routing with 90\% to 100\% success rate, when a valid path exists to the destination. The success rate of RPL remains low, due to lack of memory to store all the routing information needed. 
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/new-response-success-per-response-time}
+    \caption{Response success rate.}
+    \label{fig:txrsp}
+\end{figure}
+
+Finally, in Figure~\ref{fig:txrsp} we compare the response rate of Matrix and XCTP. We calculate the rate of reply by dividing the number of acknowledgments sent by the root by the number of messages received by the root. We vary the reply delay, that is, upon receipt of a message, the root will reply with an acknowledgment after $x$ milliseconds, where $x \in  \{$ $100$, $200$, $225$, $250$, $275$, $300$, $325$, $350$, $375$, $400$, $800$ $\}$. We can see that the performance of XCTP is highly dependent on the number of data flows. By increasing the application response delay, the number of simultaneous flows increases and the response success rate decreases, because nodes can not store all the information needed. Matrix, on the other hand, does not depend on the number of flows, and the routing table usage is bounded by the number of children of each node.

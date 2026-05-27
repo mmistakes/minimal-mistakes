@@ -1,0 +1,74 @@
+\section{Complexity Analysis}\label{sec:analysis}
+
+In this section, we assume a synchronous communication model with
+point-to-point message passing. In this model, all nodes start
+executing the algorithm simultaneously and time is divided into
+synchronous rounds, i.e., when a message is sent from node $v$ to
+its neighbor $u$ at time-slot $t$, it must arrive at $u$ before
+time-slot $t+1$.
+
+We first analyze the message and time complexity of the IPv6 address
+allocation phase of Matrix. Then, we look into the message
+complexity of the control plane of Matrix after the network
+initialization phase.
+
+Note that Matrix requires that an underlying acyclic topology (Ctree) has
+been constructed by the network before the address allocation starts, i.e.,
+every node knows who its parent in the Ctree is.
+Moreover, one of the building blocks of Matrix is the IPv6 multihop host
+configuration, performed by MHCL \cite{2016techreport}.
+
+\begin{theorem} \cite{2016techreport} For any network of size $n$ with a
+spanning collection tree $Ctree$ rooted at node $root$, the message and time
+complexity of Matrix protocol in the address allocation phase is
+$Msg(Matrix^{IP}(Ctree, root))$ = $O(n)$ and $Time(Matrix^{IP}$ $(T, root))$
+= $O(depth(Ctree))$, respectively. This message and time complexity is
+asymptotically optimal.
+\end{theorem}
+\begin{proof}
+The address allocation phase is comprised of a tree broadcast and a tree
+convergecast.
+In the broadcast operation, a message (with address allocation information) must be
+sent to every node by the respective parent, which needs $\Omega(n)$ messages.
+Moreover the message sent by the root must reach every node at distance
+$depth(Ctree)$ hops away, which needs $\Omega(depth(Ctree))$ time-slots.
+Similarly, in the convergecast operation, every node must send a message to its
+parent after having received a message from its children, which needs
+$\Omega(n)$ messages. Also, a message sent by every leaf node must reach the
+root, at distance $\leq depth(Ctree)$, which needs $\Omega(depth(Ctree))$
+time-slots.
+\end{proof}
+
+
+Next, we examine the communication cost of the routines involved in
+the alternative routing, performed in the presence of persistent
+node and link failures.
+
+\begin{theorem} Consider a network with $n$ nodes and a failure event that
+causes $\mathcal{L_{CT}}$ links to change in the collection tree Ctree for at
+most $\Delta$ ms.
+Moreover, consider a beacon interval of $\delta$ ms.
+The control message complexity of Matrix to perform
+alternative routing is $Msg(Matrix^{RC})$ = $O(n)$.
+\end{theorem}
+\begin{proof}
+Consider the $\mathcal{L_{CT}}$ link changes in the collection tree
+Ctree. Note that $\mathcal{L_{CT}} = O(n)$ since Ctree is acyclic
+and, therefore, has at most $n-1$ links. Every link that was changed
+must be inserted in the RCtree table of the respective (new) parent
+and kept during the interval $\Delta$ using regularly sent beacons
+from the child to the parent. Given a beacon interval of $\delta$,
+the total number of control messages is bounded by
+${\Delta}/{\delta} \times \mathcal{L_{CT}} = O(n)$.
+\end{proof}
+
+Note that, in reality, the assumptions of synchrony and
+point-to-point message delivery do not hold in a 6LoWPAN. The moment
+in which each node joins the tree varies from node to node, such
+that nodes closer to the root tend to start executing the address
+allocation protocol earlier than nodes farther away from the root.
+Moreover, collisions, node and link failures can cause delays and
+prevent messages from being delivered. We analyze the performance of
+Matrix in an asynchronous model with collisions and transient node
+and link failures of variable duration through simulations in
+Section~\ref{sec:results}.

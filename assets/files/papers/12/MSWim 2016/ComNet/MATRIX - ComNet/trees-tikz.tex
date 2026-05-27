@@ -1,0 +1,158 @@
+\begin{figure*}[t]
+% \setlength\belowcaptionskip{-5ex}
+\begin{center}
+    \subfigure[Ctree structure, ID inside the nodes.\label{fig:t1}]
+    {
+        \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+       level/.style={sibling distance=10mm, level distance = 1.2cm}]
+        
+        \node (1) [rootNode] {BR};
+        \node (2) [simpleNode, below = of 1] {2};
+        \node (3) [simpleNode, below left = 8mm of 2] {3};
+        \node (4) [simpleNode, below right = 8mm of 2] {4};
+        \node (5) [simpleNode, left = of 1] {5};
+        \node (6) [simpleNode, below right = 5mm of 5] {6};
+        \node (7) [simpleNode, left = of 6] {7};
+        \node (8) [simpleNode, below left = of 6] {8};
+        
+        \node (cloud) [cloud, draw,cloud puffs=15,cloud puff arc=180, aspect=2, inner ysep=.2em, above right = 4mm of 1,] {\scriptsize Internet};
+        
+        \node[draw, align=left] at (-2,1.5) 
+                {
+                \textbf{Ctree}
+                };
+        
+        \path 
+            (1) edge [-, dashed] node {} (cloud) %uppward edge
+            (2) edge [] node {} (1) %uppward edge
+            (5) edge [] node {} (1) %uppward edge
+            (3) edge [] node {} (2) %uppward edge
+            (4) edge [] node {} (2) %uppward edge
+            (6) edge [] node {} (5) %uppward edge
+            (7) edge [] node {} (6) %uppward edge
+            (8) edge [] node {} (6) %uppward edge
+        ;
+        
+        \end{tikzpicture}
+    }
+    \qquad
+    \subfigure[IP addres assignment by MATRIX hierarchical distribution. Simplified 8-bit IP inside the nodes.\label{fig:t2}]
+    {
+        \begin{tikzpicture}[<-,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+       level/.style={sibling distance=10mm, level distance = 1.2cm}]
+        
+        \node (1) [rootNode] {0};
+        \node (2) [simpleNode, below = 10mm of 1] {\footnotesize 199A};
+        \node (3) [simpleNode, below left = 6mm of 2] {\footnotesize 3F9F};
+        \node (4) [simpleNode, below right = 6mm of 2] {\footnotesize 2084};
+        \node (5) [simpleNode, left = of 1] {\footnotesize 6EB8};
+        \node (6) [simpleNode, below right = 5mm of 5] {\footnotesize 6ED9};
+        \node (7) [simpleNode, left = of 6] {\footnotesize 977D};
+        \node (8) [simpleNode, below left = of 6] {\footnotesize 7D6D};
+        
+        \node (cloud) [cloud, draw,cloud puffs=15,cloud puff arc=180, aspect=2, inner ysep=.2em, above right = 4mm of 1,] {\scriptsize Internet};
+        
+        \node[draw, align=left] at (-1.5,1.5) 
+                {
+                \textbf{IPtree}
+                };
+        
+        \path 
+            (1) edge [-, dashed] node {} (cloud) %uppward edge
+            (2) edge [] node {} (1) %uppward edge
+            (5) edge [] node {} (1) %uppward edge
+            (3) edge [] node {} (2) %uppward edge
+            (4) edge [] node {} (2) %uppward edge
+            (6) edge [] node {} (5) %uppward edge
+            (7) edge [] node {} (6) %uppward edge
+            (8) edge [] node {} (6) %uppward edge
+        ;
+        
+        \end{tikzpicture}
+    }
+    
+    \subfigure[Links failure cause topology changes.\label{fig:t3}]
+    {
+        \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+           level/.style={sibling distance=9.5mm, level distance = 1.2cm}]
+        
+        \node (1) [rootNode] {BR};
+        \node (2) [simpleNode, below = of 1] {2};
+        \node (3) [simpleNode, below left = 8mm of 2] {3};
+        \node (4) [simpleNode, below right = 8mm of 2] {4};
+        \node (5) [simpleNode, left = of 1] {5};
+        \node (6) [simpleNode, below right = 5mm of 5] {6};
+        \node (7) [simpleNode, left = of 6] {7};
+        \node (8) [simpleNode, below left = of 6] {8};
+        
+        \node (cloud) [cloud, draw,cloud puffs=15,cloud puff arc=180, aspect=2, inner ysep=.2em, above right = 4mm of 1,] {\scriptsize Internet};
+        
+        \node[draw, align=left] at (-1.5,1.5) 
+                {
+                \textbf{Ctree} \textbf{\textcolor{red}{changes}}
+                };
+        
+        \path 
+            (1) edge [-, dashed] node {} (cloud) %uppward edge
+            (2) edge [] node {} (1) %uppward edge
+            (5) edge [] node {} (1) %uppward edge
+            (3) edge [gray, dashed] node [gray, sloped, pos=.7] {\textbf{x}} (2) %uppward edge
+            (4) edge [] node {} (2) %uppward edge
+            (6) edge [] node {} (5) %uppward edge
+            (7) edge [] node {} (6) %uppward edge
+            (8) edge [gray, dashed] node [gray, sloped, pos=.7] {\textbf{x}} (6) %uppward edge
+            
+            (3) edge [->, red] node {} (6) %uppward edge
+            (8) edge [->, red] node {} (3) %uppward edge
+            
+            
+        ;
+        
+        \end{tikzpicture}
+    }
+    \qquad
+    \subfigure[RCtree adapts to topology changes.\label{fig:t4}]
+    {
+        \begin{tikzpicture}[<-,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+           level/.style={sibling distance=10.5mm, level distance = 1.2cm}]
+        
+        \node (1) [rootNode] {0};
+        \node (2) [simpleNode, below = 10mm of 1] {\footnotesize 199A};
+        \node (3) [simpleNode, below left = 6mm of 2] {\footnotesize 3F9F};
+        \node (4) [simpleNode, below right = 6mm of 2] {\footnotesize 2084};
+        \node (5) [simpleNode, left = of 1] {\footnotesize 6EB8};
+        \node (6) [simpleNode, below right = 5mm of 5] {\footnotesize 6ED9};
+        \node (7) [simpleNode, left = of 6] {\footnotesize 977D};
+        \node (8) [simpleNode, below left = of 6] {\footnotesize 7D6D};
+        
+        \node (cloud) [cloud, draw,cloud puffs=15,cloud puff arc=180, aspect=2, inner ysep=.2em, above right = 4mm of 1,] {\scriptsize Internet};
+        
+        \node[draw, align=left] at (-1.5,1.5) 
+                {
+                \textbf{\textcolor{red}{RCtree $\cup$}} \textbf{IPtree}
+                };
+        
+        \path 
+            (1) edge [-, dashed] node {} (cloud) %uppward edge
+            (2) edge [] node {} (1) %uppward edge
+            (5) edge [] node {} (1) %uppward edge
+            (3) edge [dashed] node {} (2) %uppward edge
+            (4) edge [] node {} (2) %uppward edge
+            (6) edge [] node {} (5) %uppward edge
+            (7) edge [] node {} (6) %uppward edge
+            (8) edge [dashed] node {} (6) %uppward edge
+            
+            (3) edge [red] node {} (6) %uppward edge
+            (8) edge [red] node {} (3) %uppward edge
+            
+            
+        ;
+        
+        \end{tikzpicture}
+    }
+    
+    % \vspace{-0.5cm}
+    \caption{RCtree example: before and after two links change in the collection tree.}
+    \label{fig:layers}
+\end{center}
+\end{figure*}

@@ -17,17 +17,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "Bruno P. S."
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Bruno Pereira dos Santos"
+description              : "This is a Bruno Pereira dos Santos home page!"
+url                      : "https://bps90.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : bps90/bps90.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "/assets/images/default-teaser.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Bruno P. S." # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -114,28 +114,40 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Bruno Pereira dos Santos"
+  avatar           : /assets/images/bio-logo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Professor of Computer Science at [DCC-UFBA, Brazil, 2022-current.](https://computacao.ufba.br/)"
+  location         : "Salvador - BA - Brazil"
   email            :
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
+    - label: "bruno.ps@ufba.br"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bruno.ps@ufba.br"
+    - label: "bruno.ps@dcc.ufmg.br"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bruno.ps@dcc.ufmg.br"
+    - label: "Google Scholar profile"
+      icon: "fa fa-graduation-cap"
+      url: "https://scholar.google.com.br/citations?user=ZsOumAMAAAAJ&hl"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0003-4501-2323"
+    - label: "Lattes CV"
+      icon: "fa fa-address-card"
+      url: "http://lattes.cnpq.br/0092226104911153"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-square-x-twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
-      icon: "fab fa-fw fa-square-facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/bps90"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -327,8 +339,45 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      read_time: false
+      comments: true
+      share: false
       related: true
+      classes: wide
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      classes: wide
+  # _blog
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      classes: wide
 
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  blog:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/

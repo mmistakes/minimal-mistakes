@@ -1,0 +1,132 @@
+\begin{figure*}[th]
+\begin{center}
+    \subfigure[\texttt{x} has a message to node \texttt{d} \label{fig:lb1}]
+    {
+        \begin{tikzpicture}[<-,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+       level/.style={sibling distance=10mm, level distance = 1.1cm}]
+        
+       \node [simpleNode] (P) {P}
+            child{node [simpleNode] (A) {A}
+                {node [triangleNode, top color=white,bottom color=white] (1) {}}
+                }
+            child{node [simpleNode] (X) {X} 
+                child{node [simpleNode] (C) {C}
+                    {node [triangleNode, top color=white,bottom color=white] (2) {}
+                        child{node [simpleNode] (D) {D}}
+                        }
+                    }
+                }
+        ;
+        
+        \node (IPparent) [below right = 2mm of X] {\scriptsize \begin{tabular}{l} CTparent(c) \\ IPparent(c) \end{tabular}};
+        \path (X) edge [-] (IPparent);
+        
+        \node (PKT) [rectangle, font=\ttfamily, draw, above right = .3mm of X] {\small \begin{tabular}{l} Message \\ dst: d\end{tabular}};
+        
+        \end{tikzpicture}
+    }
+    \,
+    \subfigure[Link failure causes CTparent(\texttt{c}) to change\label{fig:lb2}]
+    {
+        \begin{tikzpicture}[<-,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+       level/.style={sibling distance=10mm, level distance = 1.1cm}]
+        
+        \node [simpleNode] (P) {P}
+            child{node [simpleNode] (A) {A}
+                {node [triangleNode, top color=white,bottom color=white] (1) {}}
+                }
+            child{node [simpleNode] (X) {X} 
+                child[emphGrayEdge]{node [simpleNode] (C) {C}
+                    {node [triangleNode, nilNode, color=black] (2) {}
+                        child[normEdge]{node [simpleNode, solid] (D) {D}}
+                        }
+                    edge from parent [] node [right, red] {x}
+                    }
+                }
+        ;
+        
+        \node (IPparent) [below right = 2mm of X] {\scriptsize \begin{tabular}{l} IPparent(c) \end{tabular}};
+        \path (X) edge [-] (IPparent);
+        
+        \node (CTparent) [above left = 2mm of A] {\scriptsize \begin{tabular}{l} CTparent(c) \end{tabular}};
+        \path (A) edge [-] (CTparent);
+        
+        \node (PKT) [rectangle, font=\ttfamily, draw, above right = .3mm of X] {\small \begin{tabular}{l} Message \\ dst: d\end{tabular}};
+        
+        \path (C) edge [->] node {} (A);
+        
+        \end{tikzpicture}
+    }
+ 
+    \subfigure[\texttt{x} tries sending by Local Broadcast\label{fig:lb3}]
+    {
+        \begin{tikzpicture}[<-,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+           level/.style={sibling distance=10mm, level distance = 1.1cm}]
+        
+        \node [simpleNode] (P) {P}
+            child{node [simpleNode] (A) {A}
+                {node [triangleNode, top color=white,bottom color=white] (1) {}}
+                }
+            child{node [simpleNode] (X) {X} 
+                child[emphGrayEdge]{node [simpleNode] (C) {C}
+                    {node [triangleNode, color=black] (2) {}
+                        child[normEdge]{node [simpleNode, solid] (D) {D}}
+                        }
+                    }
+                }
+        ;
+        
+        \draw[solid] (.5,-1.1) circle (.6);
+        \draw[dotted] (.5,-1.1) circle (1);
+        
+        \node (IPparent) [below right = .2mm of X] {\scriptsize \begin{tabular}{l} IPparent(c) \end{tabular}};
+        \path (X) edge [-] (IPparent);
+        
+        \node (CTparent) [above left = 0.2mm of A] {\scriptsize \begin{tabular}{l} CTparent(c) \end{tabular}};
+        \path (A) edge [-] (CTparent);
+        
+        \node (PKT) [rectangle, font=\ttfamily, draw, above right = .3mm of X] {\small \begin{tabular}{l} Anyone \\ knows d?\end{tabular}};
+        
+        \path (C) edge [->] node {} (A);
+        
+        \end{tikzpicture}
+    }
+    \,
+    \subfigure[\texttt{a} forwards messages targeted to \texttt{c'} sub-tree while CTparent(\texttt{c}) = \texttt{a}\label{fig:lb4}]
+    {
+        \begin{tikzpicture}[<-,>=stealth',shorten >=1pt,auto,semithick,transform shape,
+           level/.style={sibling distance=8mm, level distance = 1.1cm}]
+           
+        \node [simpleNode] (P) {P}
+            child{node [simpleNode] (A) {A}
+                {node [triangleNode, top color=white,bottom color=white] (1) {}}
+                }
+            child{node [simpleNode] (X) {X} 
+                child[emphGrayEdge]{node [simpleNode] (C) {C}
+                    {node [triangleNode, nilNode, color=black] (2) {}
+                        child[normEdge]{node [simpleNode, solid] (D) {D}}
+                        }
+                    }
+                }
+        ;
+        
+        \node (IPparent) [below right = .2mm of X] {\scriptsize \begin{tabular}{l} IPparent(c) \end{tabular}};
+        \path (X) edge [-] (IPparent);
+        
+        \node (CTparent) [below left = .2mm of A] {\scriptsize \begin{tabular}{l} CTparent(c) \end{tabular}};
+        \path (A) edge [-] (CTparent);
+        
+        \node (PKT) [rectangle, font=\ttfamily, draw, above left = .3mm of A] {\small \begin{tabular}{l} Message \\ dst: d\end{tabular}};
+        
+        \path (C) edge [->] node {} (A);
+        
+        \path (PKT) edge [->, bend left, red] node {} (D);
+        
+        \end{tikzpicture}
+    }
+    
+    % \vspace{-0.5cm}
+    \caption{Alternative top-down routing upon Ctree change.}
+    \label{fig:localbroadcast}
+\end{center}
+\end{figure*}

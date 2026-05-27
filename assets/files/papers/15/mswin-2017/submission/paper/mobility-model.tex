@@ -1,0 +1,13 @@
+\section{CRWP Mobility Model}
+\label{sec:mobility-model}
+
+Here, we propose the Cyclical Random Waypoint Mobility Model (CRWP), a mobility model based on the Random Waypoint~\cite{bai2004survey}. CRWP is useful to model scenarios where some of the entities move to different destinations, and eventually, they return to their initial positions. Which is the case of people and their portable devices in offices, universities, hospitals, factories, etc.
+
+In CRWP, the entities move independently to random destinations and speeds as in RWP. When an entity arrives at the destination, it stops for a given time $T_{pause}$. A difference in CRWP is that after $n$ chosen destinations, the mobile entity returns to its initial position. Besides that, only $k\%$ of mobile entities are outside of their initial position in each instant of time.
+CRWP has four parameters: 
+\begin{inparaenum}[i)]
+    \item \textit{PerMobNodes:} maximum percentage of entities that are mobile in each instant of time;
+    \item \textit{Stops:} number of stops that the mobile entity do before returning to its original position; 
+    \item \textit{Speed:} speed which the mobile entity moves;
+    \item \textit{$T_{pause}$:} the amount of time that the entity stays in a destination position.
+\end{inparaenum}

@@ -1,0 +1,10 @@
+1-topo-average-receive:963.9
+2-topo-average-receive:942.9
+3-topo-average-receive:950.9
+4-topo-average-receive:958.7
+5-topo-average-receive:956.9
+6-topo-average-receive:954.9
+7-topo-average-receive:967.2
+8-topo-average-receive:960.5
+9-topo-average-receive:912.6
+10-topo-average-receive:817.9

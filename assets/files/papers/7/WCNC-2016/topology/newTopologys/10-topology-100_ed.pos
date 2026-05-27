@@ -1,0 +1,232 @@
+Number of nodes: 100
+
+------------------------------------------------------
+General Config
+------------------------------------------------------
+Command Line arguments: -project Routing -gen 100 Routing:RoutingNode Random -overwrite Confsimulation/numNodes=100 Confsimulation/idexecution=10 Confsimulation/Metric/strategy=ETX Confsimulation/GenerateTopology=TRUE Confsimulation/Protocol=SinkBetweenness Confsimulation/Protocol/FuncAggrName=PERIODIC_SIMPLE_AGGR Confsimulation/Protocol/timeInAggregation=1 mobility=false dimX=560 dimY=560 dimZ=0 GeometricNodeCollection/rMax=100 UDG/rMax=100 Node/defaultSize=25 exitOnTerminationInGUI=true AutoStart=true -rounds 10000000 -refreshRate 1000 
+Java VM arguments: -Xmx2500m 
+Class path: binaries/bin:binaries/jdom.jar
+------------------------------------------------------
+Configuration settings
+------------------------------------------------------
+ Simulation Area
+    dimensions = 2
+    dimX = 560
+    dimY = 560
+    dimZ = 0
+ Simulation
+    asynchronousMode = true
+    mobility = false
+    interference = false
+    interferenceIsAdditive = false
+    canReceiveWhileSending = true
+    canReceiveMultiplePacketsInParallel = true
+    edgeType = projects.Routing.nodes.edges.WeightEdge
+    exitOnTerminationInGUI = true
+    initializeConnectionsOnStartup = true
+    refreshRate = 1000
+    generateNAckMessages = true
+    handleEmptyEventQueue = true
+    javaCmd = java
+    javaVMmaxMem = 2500
+ Random number generators
+    useSameSeedAsInPreviousRun = false
+    useFixedSeed = false
+    fixedSeed = -129684127495064208
+ Logging
+    logFileName = logfile.txt
+    outputToConsole = true
+    logToTimeDirectory = false
+    logConfiguration = true
+    eagerFlush = false
+ GUI
+    extendedControl = true
+    drawArrows = false
+    zoomStep = 1.2
+    wheelZoomStep = 1.05
+    minZoomFactor = 0.05
+    draw3DGraphNodesInProperOrder = true
+    usePerspectiveView = true
+    perspectiveViewDistance = 40
+ Background map in 2D
+    useMap = false
+    map = images/map.jpg
+ Models
+    DefaultMessageTransmissionModel = Routing:TransModel
+    DefaultConnectivityModel = Routing:ConnectModel
+    DefaultDistributionModel = PositionFile
+    DefaultInterferenceModel = NoInterference
+    DefaultMobilityModel = NoMobility
+    DefaultReliabilityModel = ReliableDelivery
+    DefaultNodeImplementation = Routing:RoutingNode
+    showModelsOfAllProjects = false
+ Node storage, position transformation
+    guiPositionTransformation2D = sinalgo.gui.transformation.Transformation2D
+    guiPositionTransformation3D = sinalgo.gui.transformation.Transformation3D
+    nodeCollection2D = sinalgo.runtime.nodeCollection.Geometric2DNodeCollection
+    nodeCollection3D = sinalgo.runtime.nodeCollection.Geometric3DNodeCollection
+ Export Settings
+    epsToPdfCommand = epstopdf %s
+    epsDrawDeploymentAreaBoundingBox = true
+    epsDrawBackgroundWhite = true
+ Animation Settings
+    showMessageAnimations = false
+    messageAnimationEnvelopeWidth = 30.0
+    messageAnimationEnvelopeHeight = 20.0
+    messageAnimationEnvelopeColor = r=255,g=255,b=0
+ Diverse Settings
+    showOptimizationHints = true
+    drawEdges = true
+    drawNodes = true
+    shownEventQueueSize = 20
+    outputTextFieldHeight = 200
+    arrowLength = 8
+    arrowWidth = 1
+    defaultRoundNumber = 1
+------------------------------------------------------
+Custom settings
+------------------------------------------------------
+ autostart = true
+ confsimulation/generatetopology = TRUE
+ confsimulation/idexecution = 10
+ confsimulation/metric/strategy = ETX
+ confsimulation/numnodes = 100
+ confsimulation/protocol = SinkBetweenness
+ confsimulation/protocol/funcaggrname = PERIODIC_SIMPLE_AGGR
+ confsimulation/protocol/timeinaggregation = 1
+ confsimulation/traffic/distribution = poisson
+ confsimulation/traffic/lambda = 10
+ confsimulation/traffic/percentnodes = 50
+ geometricnodecollection/rmax = 100
+ messagetransmission/constanttime = 1
+ node/defaultsize = 25
+ qudg/connectionprobability = 0.6
+ qudg/probabilitytype = constant
+ qudg/rmax = 50
+ qudg/rmin = 30
+ randomdirection/movetime/distribution = Uniform
+ randomdirection/movetime/max = 20
+ randomdirection/movetime/min = 5
+ randomdirection/nodespeed/distribution = Gaussian
+ randomdirection/nodespeed/mean = 10
+ randomdirection/nodespeed/variance = 20
+ randomdirection/waitingtime/distribution = Poisson
+ randomdirection/waitingtime/lambda = 10
+ randomwaypoint/speed/distribution = Gaussian
+ randomwaypoint/speed/mean = 10
+ randomwaypoint/speed/variance = 20
+ randomwaypoint/waitingtime/distribution = Poisson
+ randomwaypoint/waitingtime/lambda = 10
+ sinr/alpha = 2
+ sinr/beta = 0.7
+ sinr/noise = 0
+ udg/rmax = 100
+------------------------------------------------------
+Seed for Random Number Generators
+------------------------------------------------------
+ Randomly selected seed: -129684127495064208
+------------------------------------------------------
+End of settings
+------------------------------------------------------
+
+#####----- start of node posiitons -----#####
+280.0, 280.0, -1.0E-7
+137.5578511823359, 124.66812579738752, -1.0E-7
+277.6592548381465, 161.34816446264387, -1.0E-7
+483.5371396057037, 403.96112259684037, -1.0E-7
+78.37404643857255, 460.72253567851624, -1.0E-7
+28.226332369243707, 253.3650485148821, -1.0E-7
+294.6089910192586, 238.78158992876135, -1.0E-7
+197.96378651575162, 47.62439208665839, -1.0E-7
+321.2762978900171, 231.80531756971638, -1.0E-7
+427.7232394733038, 455.53245070341154, -1.0E-7
+395.4137529753124, 54.07873383399629, -1.0E-7
+430.3322051500874, 52.08041529290974, -1.0E-7
+238.54339423903832, 308.728949007011, -1.0E-7
+482.38049766503633, 529.4223802356935, -1.0E-7
+63.24828025626427, 299.70113433887036, -1.0E-7
+105.13641216757915, 123.78250603060985, -1.0E-7
+185.9960329328694, 351.648220540567, -1.0E-7
+515.585702286893, 339.10302165014235, -1.0E-7
+213.7850215789162, 126.9311438887359, -1.0E-7
+97.00464900052559, 49.40287702672283, -1.0E-7
+15.235617201626317, 328.8481861891991, -1.0E-7
+410.27593648007894, 40.489530934533, -1.0E-7
+207.29604290530344, 397.63406497469833, -1.0E-7
+376.4525087362326, 167.83751484596155, -1.0E-7
+326.7789856551148, 280.6911516288554, -1.0E-7
+527.871962537666, 161.119886328975, -1.0E-7
+451.49237614988226, 170.9370283155117, -1.0E-7
+209.42016750936696, 17.050006194702625, -1.0E-7
+468.7741268421464, 337.07455633947495, -1.0E-7
+73.34049732785722, 170.8635033037549, -1.0E-7
+219.78805416666614, 217.01257701228948, -1.0E-7
+310.28135251785307, 22.94168512006692, -1.0E-7
+335.984488458877, 290.58698414824465, -1.0E-7
+276.0717418151571, 480.74985493009893, -1.0E-7
+49.67652202008501, 50.154104538308964, -1.0E-7
+388.0115223128814, 37.435672978985146, -1.0E-7
+283.72930939654276, 407.5499642706033, -1.0E-7
+296.2599376081859, 67.10474983593501, -1.0E-7
+305.90684960069683, 313.3308639485674, -1.0E-7
+225.20261193001085, 432.96228500242825, -1.0E-7
+331.4675884874335, 259.13298504165044, -1.0E-7
+226.4743834183753, 538.1817551318894, -1.0E-7
+513.1471476990924, 86.40989227064937, -1.0E-7
+249.61208136841827, 400.53326267684264, -1.0E-7
+530.712955418797, 334.7293615776845, -1.0E-7
+498.1082629534453, 160.47616198776376, -1.0E-7
+282.82298393605913, 110.23251322133704, -1.0E-7
+497.9335907789998, 558.5924434546994, -1.0E-7
+31.96727046209734, 139.78011670404095, -1.0E-7
+22.392996675684156, 141.9091606547084, -1.0E-7
+558.8179211165606, 98.73278307214919, -1.0E-7
+371.47679470119556, 319.83023105272036, -1.0E-7
+365.3601642470921, 60.23385434729406, -1.0E-7
+15.665556567757308, 249.0695433391607, -1.0E-7
+126.72391182072153, 291.2854051215105, -1.0E-7
+43.443983424779056, 203.14947367736465, -1.0E-7
+109.6821314395716, 415.82973048776455, -1.0E-7
+438.57606830983246, 175.7005892067885, -1.0E-7
+391.32909320421226, 177.4707321085694, -1.0E-7
+37.490692479547796, 377.9702010549654, -1.0E-7
+184.49878592311265, 224.39118794601157, -1.0E-7
+198.92348631373048, 259.61952919668454, -1.0E-7
+207.03022765918183, 346.4441275145347, -1.0E-7
+117.25814601588452, 308.06071495332276, -1.0E-7
+500.0335366960514, 19.317956470140444, -1.0E-7
+87.80658674371227, 325.2571906838263, -1.0E-7
+205.8575627860181, 113.0974177393268, -1.0E-7
+446.5648428337559, 22.082571690971278, -1.0E-7
+199.50640473680897, 322.46377160902057, -1.0E-7
+278.7780097293857, 49.0051237065685, -1.0E-7
+367.79948566916033, 513.1998437861423, -1.0E-7
+279.9447794861838, 318.03687204674804, -1.0E-7
+428.61635270155205, 394.5873847677743, -1.0E-7
+39.688633451267286, 464.5580132411132, -1.0E-7
+478.11441529355824, 559.7058981387435, -1.0E-7
+223.21991544983774, 468.7995597865619, -1.0E-7
+306.854701675942, 345.56422196715226, -1.0E-7
+166.9098736177548, 205.43859996554923, -1.0E-7
+376.31756260683767, 552.4177600438055, -1.0E-7
+243.79426213600632, 535.9328646742056, -1.0E-7
+435.3370777744828, 306.5464013898847, -1.0E-7
+391.62153731703035, 381.8927095514731, -1.0E-7
+401.52997285748796, 53.18971071080667, -1.0E-7
+310.35715483901987, 418.96085403959404, -1.0E-7
+415.84143360294433, 26.258371272147578, -1.0E-7
+387.85242004711273, 209.34198426271968, -1.0E-7
+338.8773837506553, 118.86197878531246, -1.0E-7
+41.68330218396308, 227.2961411524437, -1.0E-7
+515.7395665157471, 153.61594080810883, -1.0E-7
+271.96151273011185, 365.5816874213335, -1.0E-7
+351.6263766367345, 484.1116103967206, -1.0E-7
+44.216850901716015, 542.005651889898, -1.0E-7
+393.5098163705133, 448.85583628361496, -1.0E-7
+543.2469783076264, 393.9110535228796, -1.0E-7
+243.74531672341408, 446.40789341049407, -1.0E-7
+478.1272732817425, 154.60256887564236, -1.0E-7
+259.51819364633957, 385.3637762402156, -1.0E-7
+435.37071882776274, 129.38391755351108, -1.0E-7
+257.5776388005487, 25.259633950865997, -1.0E-7
+371.5243443369407, 210.05228364948584, -1.0E-7

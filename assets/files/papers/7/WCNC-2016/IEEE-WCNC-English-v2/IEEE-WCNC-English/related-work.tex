@@ -1,0 +1,84 @@
+\section{Related Work}
+\label{sec:related-work}
+
+
+%##########################################################
+%                     SEC RELATED WORK                    %
+%##########################################################
+
+
+\input{table.tex}
+
+We present in Table~\ref{tab:comp-paradigmas} the main related
+protocols. We classified them according to the communication
+paradigm (\textit{any-to-any}, \textit{many-to-one},
+\textit{one-to-many}). Table~\ref{tab:comp-paradigmas} shows that
+\ac{xctp} is, to the best of our knowledge, the only Reliable
+Collection protocol. In other words, it is a data collection
+protocol that also allows unicast routes root-to-node. Besides that,
+it offers an interface that facilitates the development of reliable
+end-to-end transport protocols.
+
+From the protocols presented in Table~\ref{tab:comp-paradigmas},
+Directed Diffusion\cite{directedDiffusion}, (DIP, DRIP,
+DHV)\cite{tinyos} are used for dissemination of small data packets
+in the network. DIP, DRIP, DHV offers eventual consistency models
+and use timers based on Trickle\cite{trickle}. DRIP treats each
+information as a separated entity, which allows more control of when
+and how fast the data will be disseminated. DIP and DHV treat data
+as a group, meaning that control and dissemination parameters are
+applied equally for all data.
+
+
+\ac{ctp} and Deluge are related protocols. \ac{ctp} is a data
+collection protocol that uses \ac{etx} metric to estimate the link
+quality and route cost. Data and control packets are used to obtain
+the link quality. \ac{xctp} is an extension of the \ac{ctp}
+protocol. Besides creating unicast routes to a data collection
+point, \ac{xctp} also creates unicast routes from the root to the
+sensors. Deluge is a protocol that operates under the
+\textit{one-to-many} paradigm, which has the objective to propagate
+large amount of data, as is the case, when reprogramming the network
+nodes.
+
+
+%Hydro~\cite{hydro} and RPL~\cite{RPL} are protocols that aim at maintaining
+%\textit{any-to-any} communication in \ac{wsn}. Hydro differs from our approach,
+%which focus in creating unicast routes to exchange messages in both directions
+%root-to-node and vice-versa. \ac{rpl} disseminates \ac{dao} messages through
+%the network to announce routes for various destines inside a \ac{rpl} network.
+%\ac{rpl} has two ways to send data, either up the tree or down the tree. 
+%Upward routing has great scaling properties. But, downward routing does not scale 
+%as well because the number of routes each node needs to have room for increases 
+%linearly with network size. \ac{xctp}, different from \ac{rpl}, does not need 
+%extra control messages to create downward routes, XCTP allows that non utilized downward routes be removed through of \acs{ttl}-based policies, avoids extra costs to keep state with \textit{peer-to-peer} routes that are under-utilized in WSN.
+Hydro~\cite{hydro} and \ac{rpl}~\cite{RPL} are protocols that aim at
+maintaining any-to-any communication in \ac{wsn}. Hydro differs from
+our approach, which focus in creating unicast routes to exchange
+messages in both directions root-to-node and vice-versa. Routing
+Protocol for low-power and lossy networks (RPL) disseminates
+Destination Advertisement Object (DAO) messages to announce routes
+for each destination. While \ac{rpl} requires control packets to
+create downward routes, XCTP does not have this overhead since XCTP
+takes advantage of the data packets. XCTP also allows non utilized
+downward routes to be removed through TTL-based policy, avoiding
+memory overhead to store states with peer-to-peer routes that are
+under-utilized in \ac{wsn}.
+
+
+\ac{aodv}~\cite{AODV} and \ac{dsr}~\cite{DSR} are on-demand routing
+protocols for \textit{any-to-any} communication. \ac{aodv} floods
+the network with messages RREQ to build a path till the destination.
+On the other hand, \ac{dsr} protocol uses the packet header to store
+the route path. Unlike \ac{dsr}, our protocol does not store any
+routing information in the packet header. \ac{aodv} protocol has
+some similarity with \ac{xctp} in the strategy of storing the
+reverse path. However \ac{xctp}, unlike \ac{aodv}, does not save
+routes that are not reverse among the sensor nodes and the base
+station. Dymo~\cite{dymo} is the \ac{aodv} successor, however it is
+optimized for MANETs.
+
+
+None of the protocols here related allow sending unicast messages in
+ \textit{root-to-node} direction and vice versa, except those
+ \textit{any-to-any} protocols that require large amount of information to be stored or control messages.

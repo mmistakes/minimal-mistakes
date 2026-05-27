@@ -1,0 +1,160 @@
+[2017-05-28 12:58:03] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype54.cooja: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype54.cooja: undefined symbol: log_printf
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:49)
+	... 13 more
+
+
+[2017-05-28 12:58:05] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype982.cooja: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype982.cooja: undefined symbol: log_printf
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:49)
+	... 13 more
+
+
+[2017-05-28 12:58:07] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3432)
+	... 3 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Bad return value
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:269)
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:100)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:328)
+	... 6 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: 
+	at org.contikios.cooja.dialogs.CompileContiki$3.run(CompileContiki.java:218)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[2017-05-28 12:58:08] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3432)
+	... 3 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Bad return value
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:269)
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:100)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:328)
+	... 6 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: 
+	at org.contikios.cooja.dialogs.CompileContiki$3.run(CompileContiki.java:218)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[2017-05-28 12:58:09] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype238.cooja: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype238.cooja: undefined symbol: log_printf
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:49)
+	... 13 more
+
+
+[2017-05-28 12:58:11] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype543.cooja: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype543.cooja: undefined symbol: log_printf
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:49)
+	... 13 more
+
+
+[2017-05-28 12:58:12] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3432)
+	... 3 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Bad return value
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:269)
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:100)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:328)
+	... 6 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: 
+	at org.contikios.cooja.dialogs.CompileContiki$3.run(CompileContiki.java:218)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[2017-05-28 12:58:13] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3432)
+	... 3 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Bad return value
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:269)
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:100)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:328)
+	... 6 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: 
+	at org.contikios.cooja.dialogs.CompileContiki$3.run(CompileContiki.java:218)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[2017-05-28 12:58:14] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3432)
+	... 3 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Bad return value
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:269)
+	at org.contikios.cooja.dialogs.CompileContiki.compile(CompileContiki.java:100)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:328)
+	... 6 more
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: 
+	at org.contikios.cooja.dialogs.CompileContiki$3.run(CompileContiki.java:218)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[2017-05-28 12:58:15] experiments-matrix-101: FAIL
+-- NO TEST INFO AVAILABLE (experiments-matrix-101.info) --
+-- NO TEST OUTPUT AVAILABLE (experiments-matrix-101.log) --
+-- COOJA OUTPUT (tail experiments-matrix-101.cooja_log) --
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype298.cooja: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype298.cooja: undefined symbol: log_printf
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:49)
+	... 13 more
+
+

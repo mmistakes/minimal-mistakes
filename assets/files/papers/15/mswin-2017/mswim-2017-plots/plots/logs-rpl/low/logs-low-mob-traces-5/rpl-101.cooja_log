@@ -1,0 +1,38 @@
+[00:53:38 - main] [Cooja.java:1324] [INFO] - > Starting Cooja
+[00:53:38 - main] [Cooja.java:2865] [INFO] - External tools default settings: /external_tools_linux.config
+[00:53:38 - main] [Cooja.java:2895] [INFO] - External tools user settings: /home/user/.cooja.user.properties
+[00:53:38 - main] [Simulation.java:420] [INFO] - Simulation random seed: 4648386259789160222
+[00:53:39 - main] [CompileContiki.java:140] [INFO] - > make udp-server.cooja TARGET=cooja 
+[00:53:39 - main] [ContikiMoteType.java:406] [INFO] - Creating core communicator between Java class Lib1 and Contiki library '/home/user/contiki/examples/ipv6/rpl-udp/obj_cooja/mtype20.cooja
+[00:53:39 - main] [ContikiMoteType.java:575] [INFO] - Parsed section at 0x2b020 ( 564 == 0x234 bytes)
+[00:53:39 - main] [ContikiMoteType.java:575] [INFO] - Parsed section at 0x2b260 ( 33192 == 0x81a8 bytes)
+[00:53:39 - main] [ContikiMoteType.java:502] [INFO] - mtype20.cooja: offsetting Cooja mote address space: 0xb25c0000
+[00:53:39 - main] [ContikiMoteType.java:575] [INFO] - Parsed section at 0xb25eb020 ( 564 == 0x234 bytes)
+[00:53:39 - main] [ContikiMoteType.java:575] [INFO] - Parsed section at 0xb25eb260 ( 33192 == 0x81a8 bytes)
+[00:53:39 - main] [CompileContiki.java:140] [INFO] - > make udp-client.cooja TARGET=cooja 
+[00:53:40 - main] [ContikiMoteType.java:406] [INFO] - Creating core communicator between Java class Lib2 and Contiki library '/home/user/contiki/examples/ipv6/rpl-udp/obj_cooja/mtype946.cooja
+[00:53:40 - main] [Cooja.java:1346] [FATAL] - Exception when loading simulation: 
+org.contikios.cooja.Cooja$SimulationCreationException: Mote type creation error: Error when creating corecomm instance: Lib2
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3458)
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3370)
+	at org.contikios.cooja.Cooja.quickStartSimulationConfig(Cooja.java:1339)
+	at org.contikios.cooja.Cooja.main(Cooja.java:3248)
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Error when creating corecomm instance: Lib2
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:343)
+	at org.contikios.cooja.contikimote.ContikiMoteType.doInit(ContikiMoteType.java:407)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:368)
+	at org.contikios.cooja.contikimote.ContikiMoteType.setConfigXML(ContikiMoteType.java:1335)
+	at org.contikios.cooja.Simulation.setConfigXML(Simulation.java:689)
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3440)
+	... 3 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:334)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: org.contikios.cooja.corecomm.Lib2.init()V
+	at org.contikios.cooja.corecomm.Lib2.init(Native Method)
+	at org.contikios.cooja.corecomm.Lib2.<init>(Lib2.java:50)
+	... 13 more

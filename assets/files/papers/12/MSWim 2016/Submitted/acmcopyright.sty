@@ -1,0 +1,221 @@
+%%
+%% This is file `acmcopyright.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% acmcopyright.dtx  (with options: `style')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from acmcopyright.sty.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file acmcopyright.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{acmcopyright}
+[2014/06/29 v1.2 Copyright statemens for ACM classes]
+\newif\if@printcopyright
+\@printcopyrighttrue
+\newif\if@printpermission
+\@printpermissiontrue
+\newif\if@acmowned
+\@acmownedtrue
+\RequirePackage{xkeyval}
+\define@choicekey*{ACM@}{acmcopyrightmode}[%
+  \acm@copyrightinput\acm@copyrightmode]{none,acmcopyright,acmlicensed,%
+  rightsretained,usgov,usgovmixed,cagov,cagovmixed,%
+  licensedusgovmixed,licensedcagovmixed,othergov,licensedothergov}{%
+  \@printpermissiontrue
+  \@printcopyrighttrue
+  \@acmownedtrue
+  \ifnum\acm@copyrightmode=0\relax % none
+   \@printpermissionfalse
+   \@printcopyrightfalse
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=2\relax % acmlicensed
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=3\relax % rightsretained
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=4\relax % usgov
+   \@printpermissiontrue
+   \@printcopyrightfalse
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=6\relax % cagov
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=8\relax % licensedusgovmixed
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=9\relax % licensedcagovmixed
+   \@acmownedfalse
+  \fi
+  \ifnum\acm@copyrightmode=10\relax % othergov
+   \@acmownedtrue
+  \fi
+  \ifnum\acm@copyrightmode=11\relax % licensedothergov
+   \@acmownedfalse
+   \@printcopyrightfalse
+  \fi}
+\def\setcopyright#1{\setkeys{ACM@}{acmcopyrightmode=#1}}
+\setcopyright{acmcopyright}
+\def\@copyrightowner{%
+  \ifcase\acm@copyrightmode\relax % none
+  \or % acmcopyright
+  ACM.
+  \or % acmlicensed
+  Copyright held by the owner/author(s). Publication rights licensed to
+  ACM.
+  \or % rightsretained
+  Copyright held by the owner/author(s).
+  \or % usgov
+  \or % usgovmixed
+  ACM.
+  \or % cagov
+  Crown in Right of Canada.
+  \or %cagovmixed
+  ACM.
+  \or %licensedusgovmixed
+  Copyright held by the owner/author(s). Publication rights licensed to
+  ACM.
+  \or %licensedcagovmixed
+  Copyright held by the owner/author(s). Publication rights licensed to
+  ACM.
+  \or % othergov
+  ACM.
+  \or % licensedothergov
+  \fi}
+\def\@copyrightpermission{%
+  \ifcase\acm@copyrightmode\relax % none
+  \or % acmcopyright
+   Permission to make digital or hard copies of all or part of this
+   work for personal or classroom use is granted without fee provided
+   that copies are not made or distributed for profit or commercial
+   advantage and that copies bear this notice and the full citation on
+   the first page. Copyrights for components of this work owned by
+   others than ACM must be honored. Abstracting with credit is
+   permitted. To copy otherwise, or republish, to post on servers or to
+   redistribute to lists, requires prior specific permission
+   and\hspace*{.5pt}/or  a fee. Request permissions from
+   permissions@acm.org.
+  \or % acmlicensed
+   Permission to make digital or hard copies of all or part of this
+   work for personal or classroom use is granted without fee provided
+   that copies are not made or distributed for profit or commercial
+   advantage and that copies bear this notice and the full citation on
+   the first page. Copyrights for components of this work owned by
+   others than the author(s) must be honored. Abstracting with credit
+   is permitted.  To copy otherwise, or republish, to post on servers
+   or to  redistribute to lists, requires prior specific permission
+   and\hspace*{.5pt}/or  a fee. Request permissions from
+   permissions@acm.org.
+  \or % rightsretained
+   Permission to make digital or hard copies of part or all of this work
+   for personal or classroom use is granted without fee provided that
+   copies are not made or distributed for profit or commercial advantage
+   and that copies bear this notice and the full citation on the first
+   page. Copyrights for third-party components of this work must be
+   honored. For all other uses, contact the
+   owner\hspace*{.5pt}/author(s).
+  \or % usgov
+   This paper is authored by an employee(s) of the United States
+   Government and is in the public domain. Non-exclusive copying or
+   redistribution is allowed, provided that the article citation is
+   given and the authors and agency are clearly identified as its
+   source.
+  \or % usgovmixed
+   ACM acknowledges that this contribution was authored or co-authored
+   by an employee, or contractor of the national government. As such,
+   the Government retains a nonexclusive, royalty-free right to
+   publish or reproduce this article, or to allow others to do so, for
+   Government purposes only. Permission to make digital or hard copies
+   for personal or classroom use is granted. Copies must bear this
+   notice and the full citation on the first page. Copyrights for
+   components of this work owned by others than ACM must be
+   honored. To copy otherwise, distribute, republish, or post,
+   requires prior specific permission and\hspace*{.5pt}/or a
+   fee. Request permissions from permissions@acm.org.
+  \or % cagov
+   This article was authored by employees of the Government of Canada.
+   As such, the Canadian government retains all interest in the
+   copyright to this work and grants to ACM a nonexclusive,
+   royalty-free right to publish or reproduce this article, or to allow
+   others to do so, provided that clear attribution is given both to
+   the authors and the Canadian government agency employing them.
+   Permission to make digital or hard copies for personal or classroom
+   use is granted. Copies must bear this notice and the full citation
+   on the first page.  Copyrights for components of this work owned by
+   others than the Canadain Government must be honored. To copy
+   otherwise, distribute, republish, or post, requires prior specific
+   permission and\hspace*{.5pt}/or a fee. Request permissions from
+   permissions@acm.org.
+  \or % cagovmixed
+   ACM acknowledges that this contribution was co-authored by an
+   affiliate of the national government of Canada. As such, the Crown
+   in Right of Canada retains an equal interest in the copyright.
+   Reprints must include clear attribution to ACM and the author's
+   government agency affiliation.  Permission to make digital or hard
+   copies for personal or classroom use is granted.  Copies must bear
+   this notice and the full citation on the first page. Copyrights for
+   components of this work owned by others than ACM must be honored.
+   To copy otherwise, distribute, republish, or post, requires prior
+   specific permission and\hspace*{.5pt}/or a fee. Request permissions
+   from permissions@acm.org.
+  \or % licensedusgovmixed
+   Publication rights licensed to ACM. ACM acknowledges that this
+   contribution was authored or co-authored by an employee, contractor
+   or affiliate of the United States government. As such, the
+   Government retains a nonexclusive, royalty-free right to publish or
+   reproduce this article, or to allow others to do so, for Government
+   purposes only.
+  \or % licensedcagovmixed
+   Publication rights licensed to ACM. ACM acknowledges that this
+   contribution was authored or co-authored by an employee, contractor
+   or affiliate of the national government of Canada. As such, the
+   Government retains a nonexclusive, royalty-free right to publish or
+   reproduce this article, or to allow others to do so, for Government
+   purposes only.
+  \or % othergov
+   ACM acknowledges that this contribution was authored or co-authored
+   by an employee, contractor or affiliate of a national government. As
+   such, the Government retains a nonexclusive, royalty-free right to
+   publish or reproduce this article, or to allow others to do so, for
+   Government purposes only.
+  \or % licensedothergov
+   Publication rights licensed to ACM. ACM acknowledges that this
+   contribution was authored or co-authored by an employee, contractor
+   or affiliate of a national government. As such, the Government
+   retains a nonexclusive, royalty-free right to publish or reproduce
+   this article, or to allow others to do so, for Government purposes
+   only.
+  \fi}
+\endinput
+%%
+%% End of file `acmcopyright.sty'.

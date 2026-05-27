@@ -1,0 +1,44 @@
+\begin{table}[ht]
+\centering
+
+\caption{Comparison of communication paradigms.}
+\label{tab:comp-paradigmas}
+
+
+%\resizebox{\linewidth}{!}{%
+%\tiny
+\begin{tabular}{|c|c|c|c|}
+\hline \rowcolor[HTML]{cccccc}
+\textbf{One-to-Many}       & \multicolumn{2}{c|}{\cellcolor[HTML]{cccccc}\textbf{Many-to-One}} & \textbf{Any-to-Any}              \\ \rowcolor[HTML]{cccccc}
+\textbf{(Dissemination)}       & \multicolumn{2}{c|}{\cellcolor[HTML]{cccccc}\textbf{(Collection)}} & \textbf{(P2P)}      \\ \hline
+\rowcolor[HTML]{cccccc}
+\textit{\textbf{Unreliable}} & \textit{\textbf{Unreliable}}  & \textit{\textbf{Reliable}}       & \textit{\textbf{Reliable}} \\ \hline
+Directed Diffusion~\cite{directedDiffusion}           & CTP~\cite{ctp}                          &                                  & AODV~\cite{AODV}, DYMO~\cite{dymo}                  \\ \cline{1-2} \cline{4-4}
+(DIP, DRIP, DHV)~\cite{tinyos}               & MultiHopLQI~\cite{MultiHopLQI}                    &                                  & DSR~\cite{DSR}, Hydro~\cite{hydro}                      \\ \cline{1-2} \cline{4-4}
+Deluge~\cite{deluge}                      & MintRoute~\cite{mintroute}                     & \multirow{-3}{*}{\textbf{XCTP}}  & RPL~\cite{RPL}                       \\ \hline
+\end{tabular}
+%}
+
+
+\end{table}
+
+
+
+
+%\begin{table}[!t]
+%\centering
+%    \begin{tabular}{|c|c|c|}
+%    \hline
+%    Unreliable Collection & Reliable Collection & P2P       \\
+%    \hline
+%    CTP           & \multirow{3}{*}{XCTP}   &   AODV, Tymo  \\
+%    %\cline{1-1} \cline{3-3}
+%
+%    MultiHopLQI   &                         &   DSR         \\
+%    %\cline{1-1} \cline{3-3}
+%
+%    MintRoute     &                         &   Hydro       \\
+%    \hline
+%    \end{tabular}
+%\caption{Tabela comparativa.}
+%\end{table}

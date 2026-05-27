@@ -1,0 +1,205 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Tolle:2005}
+G.~Tolle, J.~Polastre, R.~Szewczyk, D.~Culler, N.~Turner, K.~Tu, S.~Burgess,
+  T.~Dawson, P.~Buonadonna, D.~Gay, W.~Hong, A macroscope in the redwoods, in:
+  Proceedings of the 3rd International Conference on Embedded Networked Sensor
+  Systems, SenSys '05, 2005, pp. 51--63.
+
+\bibitem{Vicaire:2009}
+P.~Vicaire, T.~He, Q.~Cao, T.~Yan, G.~Zhou, L.~Gu, L.~Luo, R.~Stoleru, J.~A.
+  Stankovic, T.~F. Abdelzaher, Achieving long-term surveillance in vigilnet,
+  ACM Trans. Sen. Netw. 5~(1) (2009) 9:1--9:39.
+
+\bibitem{Werner-Allen:2006}
+G.~Werner-Allen, K.~Lorincz, J.~Johnson, J.~Lees, M.~Welsh, Fidelity and yield
+  in a volcano monitoring sensor network, in: Proceedings of the 7th Symposium
+  on Operating Systems Design and Implementation, OSDI '06, 2006, pp. 381--396.
+
+\bibitem{Levis2005}
+{Levis, Philip and Madden, Sam and Polastre, Joseph and Szewczyk, Robert and
+  Whitehouse, Kamin and Woo, Alec and Gay, David and Hill, Jason and Welsh,
+  Matt and Brewer, Eric and others}, {TinyOS: An operating system for sensor
+  networks}, Ambient intelligence 35 (2005) 115--148.
+
+\bibitem{Dunkels:2004}
+A.~Dunkels, B.~Gronvall, T.~Voigt, Contiki - a lightweight and flexible
+  operating system for tiny networked sensors, in: IEEE LCN, IEEE Computer
+  Society, Washington, DC, USA, 2004, pp. 455--462.
+
+\bibitem{Fonseca:2009}
+O.~Gnawali, R.~Fonseca, K.~Jamieson, D.~Moss, P.~Levis, Collection tree
+  protocol, in: Proceedings of the 7th ACM Conference on Embedded Networked
+  Sensor Systems, SenSys '09, 2009, pp. 1--14.
+
+\bibitem{rfc6550}
+T.~Winter, P.~Thubert, A.~Brandt, J.~Hui, R.~Kelsey, P.~Levis, K.~Pister,
+  R.~Struik, J.~Vasseur, R.~Alexander, {RPL: IPv6 Routing Protocol for
+  Low-Power and Lossy Networks}, RFC 6550 (Proposed Standard) (2012).
+
+\bibitem{Rein12}
+A.~Reinhardt, O.~Morar, S.~Santini, S.~Zoller, R.~Steinmetz, Cbfr: Bloom filter
+  routing with gradual forgetting for tree-structured wireless sensor networks
+  with mobile nodes, in: World of Wireless, Mobile and Multimedia Networks
+  (WoWMoM), 2012 IEEE International Symposium on a, 2012, pp. 1--9.
+\newblock \href {http://dx.doi.org/10.1109/WoWMoM.2012.6263685}
+  {\path{doi:10.1109/WoWMoM.2012.6263685}}.
+
+\bibitem{Duque13}
+S.~Duquennoy, O.~Landsiedel, T.~Voigt,
+  \href{http://doi.acm.org/10.1145/2517351.2517369}{Let the tree bloom:
+  Scalable opportunistic routing with orpl}, in: Proceedings of the 11th ACM
+  Conference on Embedded Networked Sensor Systems, SenSys '13, ACM, New York,
+  NY, USA, 2013, pp. 2:1--2:14.
+\newblock \href {http://dx.doi.org/10.1145/2517351.2517369}
+  {\path{doi:10.1145/2517351.2517369}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2517351.2517369}
+
+\bibitem{xctp}
+B.~P. Santos, M.~A. Vieira, L.~F. Vieira, e{X}tend collection tree protocol,
+  in: Wireless Communications and Networking Conference (WCNC), 2015 IEEE,
+  2015, pp. 1512--1517.
+\newblock \href {http://dx.doi.org/10.1109/WCNC.2015.7127692}
+  {\path{doi:10.1109/WCNC.2015.7127692}}.
+
+\bibitem{Levis:2004}
+P.~Levis, N.~Patel, D.~Culler, S.~Shenker, Trickle: A self-regulating algorithm
+  for code propagation and maintenance in wireless sensor networks, in:
+  Proceedings of the 1st Conference on Symposium on Networked Systems Design
+  and Implementation - Volume 1, NSDI'04, 2004, pp. 2--2.
+
+\bibitem{Clark:1991}
+B.~N. Clark, C.~J. Colbourn, D.~S. Johnson, Unit disk graphs, Discrete Math.
+  86~(1-3) (1991) 165--177.
+
+\bibitem{tinyos}
+{Levis, Philip and Madden, Sam and Polastre, Joseph and Szewczyk, Robert and
+  Whitehouse, Kamin and Woo, Alec and Gay, David and Hill, Jason and Welsh,
+  Matt and Brewer, Eric and others}, {TinyOS: An operating system for sensor
+  networks}, Ambient intelligence 35 (2005) 115--148.
+
+\bibitem{tossim}
+P.~Levis, N.~Lee, M.~Welsh, D.~Culler,
+  \href{http://doi.acm.org/10.1145/958491.958506}{Tossim: Accurate and scalable
+  simulation of entire tinyos applications}, in: Proceedings of the 1st
+  International Conference on Embedded Networked Sensor Systems, SenSys '03,
+  ACM, New York, NY, USA, 2003, pp. 126--137.
+\newblock \href {http://dx.doi.org/10.1145/958491.958506}
+  {\path{doi:10.1145/958491.958506}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/958491.958506}
+
+\bibitem{Eriksson:2009}
+J.~Eriksson, F.~\"{O}sterlind, N.~Finne, N.~Tsiftes, A.~Dunkels, T.~Voigt,
+  R.~Sauter, P.~J. Marr\'{o}n, Cooja/mspsim: Interoperability testing for
+  wireless sensor networks, in: Proceedings of the 2Nd International Conference
+  on Simulation Tools and Techniques, Simutools'09, 2009, pp. 27:1--27:7.
+
+\bibitem{Baccour:2012}
+N.~Baccour, A.~Koub\^{a}a, L.~Mottola, M.~A. Z\'{u}\~{n}iga, H.~Youssef, C.~A.
+  Boano, M.~Alves, Radio link quality estimation in wireless sensor networks: A
+  survey, ACM Trans. Sen. Netw. 8~(4) (2012) 34:1--34:33.
+
+\bibitem{Bezunartea:2016}
+M.~Bezunartea, M.~Gamallo, J.~Tiberghien, K.~Steenhaut,
+  \href{http://doi.acm.org/10.1145/2988272.2988279}{How interactions between
+  rpl and radio duty cycling protocols affect qos in wireless sensor networks},
+  in: Proceedings of the 12th ACM Symposium on QoS and Security for Wireless
+  and Mobile Networks, Q2SWinet '16, ACM, New York, NY, USA, 2016, pp.
+  135--138.
+\newblock \href {http://dx.doi.org/10.1145/2988272.2988279}
+  {\path{doi:10.1145/2988272.2988279}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2988272.2988279}
+
+\bibitem{AODV}
+C.~E. Perkins, E.~M. Royer, Ad-hoc on-demand distance vector routing, in:
+  Mobile Computing Systems and Applications, 1999. Proceedings. WMCSA'99.
+  Second IEEE Workshop on, 1999.
+
+\bibitem{DSR}
+D.~Johnson, Y.~Hu, D.~Maltz, et~al., The dynamic source routing protocol for
+  mobile ad hoc networks, Tech. rep., RFC 4728 (2007).
+
+\bibitem{dymo}
+Dynamic manet on-demand (aodvv2) routing draft-ietf-manet-dymo-26.,
+  \url{http://tools.ietf.org/html/draft-ietf-manet-dymo-26} (2013).
+
+\bibitem{junior2014codedrip}
+N.~d. S.~R. J{\'u}nior, M.~A. Vieira, L.~F. Vieira, O.~Gnawali, Codedrip: Data
+  dissemination protocol with network coding for wireless sensor networks, in:
+  Wireless Sensor Networks, Springer, 2014, pp. 34--49.
+
+\bibitem{fonseca2007four}
+R.~Fonseca, O.~Gnawali, K.~Jamieson, P.~Levis, Four-bit wireless link
+  estimation., in: HotNets, 2007.
+
+\bibitem{MultiHopLQI}
+{MultiHopLQI.}, \url{http://www.tinyos.net/tinyos-2.x/tos/lib/net/lqi/} (2014).
+
+\bibitem{mintroute}
+A.~Woo, T.~Tong, D.~Culler, Taming the underlying challenges of reliable
+  multihop routing in sensor networks, in: International Conference on Embedded
+  Networked Sensor Systems, ACM, 2003.
+
+\bibitem{Santos2017}
+B.~P. Santos, L.~F. Vieira, M.~A. Vieira, {CGR: Centrality-based Green Routing
+  for Low-Power and Lossy Networks}, Computer Networks (2017) --\href
+  {http://dx.doi.org/https://doi.org/10.1016/j.comnet.2017.09.009}
+  {\path{doi:https://doi.org/10.1016/j.comnet.2017.09.009}}.
+
+\bibitem{hydro}
+{Dawson-Haggerty, Stephen and Tavakoli, Arsalan and Culler, David}, {Hydro: A
+  hybrid routing protocol for low-power and lossy networks}, in: Smart Grid
+  Communications (SmartGridComm), 2010 First IEEE International Conference on,
+  IEEE, 2010, pp. 268--273.
+
+\bibitem{Palani2015}
+U.~Palani, V.~Alamelumangai, A.~Nachiappan,
+  \href{http://dx.doi.org/10.1007/s11276-015-1110-1}{{Hybrid routing and load
+  balancing protocol for wireless sensor network}}, Wireless Networks (2015)
+  1--8\href {http://dx.doi.org/10.1007/s11276-015-1110-1}
+  {\path{doi:10.1007/s11276-015-1110-1}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1007/s11276-015-1110-1}
+
+\bibitem{Moghadam:2015:MMR:2766739.2766774}
+M.~N. Moghadam, H.~Taheri, M.~Karrari,
+  \href{http://dx.doi.org/10.1007/s11277-014-2257-2}{Multi-class multipath
+  routing protocol for low power wireless networks with heuristic optimal load
+  distribution}, Wirel. Pers. Commun. 82~(2) (2015) 861--881.
+\newblock \href {http://dx.doi.org/10.1007/s11277-014-2257-2}
+  {\path{doi:10.1007/s11277-014-2257-2}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1007/s11277-014-2257-2}
+
+\bibitem{7374975}
+M.~A. Lodhi, A.~Rehman, M.~M. Khan, F.~B. Hussain, Multiple path rpl for low
+  power lossy networks, in: Wireless and Mobile (APWiMob), 2015 IEEE Asia
+  Pacific Conference on, 2015, pp. 279--284.
+\newblock \href {http://dx.doi.org/10.1109/APWiMob.2015.7374975}
+  {\path{doi:10.1109/APWiMob.2015.7374975}}.
+
+\bibitem{peres:2016}
+B.~S. Peres, O.~A. d.~O. Souza, B.~P. Santos, E.~R.~A. Junior, O.~Goussevskaia,
+  M.~A.~M. Vieira, L.~F.~M. Vieira, A.~A.~F. Loureiro, Matrix: Multihop address
+  allocation and dynamic any-to-any routing for 6lowpan, in: Proceedings of the
+  19th ACM International Conference on Modeling, Analysis and Simulation of
+  Wireless and Mobile Systems, MSWiM '16, ACM, New York, NY, USA, 2016, pp.
+  302--309.
+\newblock \href {http://dx.doi.org/10.1145/2988287.2989139}
+  {\path{doi:10.1145/2988287.2989139}}.
+
+\bibitem{mhclSBRC}
+B.~S. Peres, O.~Goussevskaia, Ipv6 multihop host configuration for low-power
+  wireless networks, in: Computer Networks and Distributed Systems (SBRC), 2015
+  XXXIII Brazilian Symposium on, 2015, pp. 189--198.
+\newblock \href {http://dx.doi.org/10.1109/SBRC.2015.31}
+  {\path{doi:10.1109/SBRC.2015.31}}.
+
+\bibitem{mobileip}
+E.~C.~Perkins, D.~Johnson, J.~Arkko, Mobility support in ipv6, Tech. rep., RFC
+  6275 (2011).
+
+\end{thebibliography}

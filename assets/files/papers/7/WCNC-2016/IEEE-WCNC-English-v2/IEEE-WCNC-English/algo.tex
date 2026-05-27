@@ -1,0 +1,23 @@
+\begin{algorithm}[!t]
+    \caption{Internal operation sendTo() interface.}
+    \label{alg:1}
+    \begin{algorithmic}[1]
+        %\REQUIRE $n \geq 0 \vee x \neq 0$
+        %\ENSURE $y = x^n$
+        
+        \IF{$isDataXCTP(pkt)~or~isAckXCTP(pkt)$}
+            \IF{$pkt.destination = my.addr$}
+                \STATE \textit{// Process package locally.}
+            \ELSIF{$pkt.nextHop = nextHop(pkt.dest)$}
+                \STATE \textit{// Send unicast message to neighbor in reverse flow.}
+            \ELSE
+                \STATE \textit{// Drop pkt or forwards to the root.}
+            \ENDIF
+        \ELSE
+            \STATE \textit{// Normally forwards packets through tree \ac{xctp}.}
+            \STATE pkt.nextHop = nexHop()
+            \STATE forward(pkt)
+        \ENDIF
+    \end{algorithmic}
+\end{algorithm}
+

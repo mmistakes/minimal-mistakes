@@ -1,0 +1,45 @@
+\section{Related Work}
+\label{sec:related}
+
+AODV~\cite{AODV} and DSR~\cite{DSR} are on-demand routing protocols for any-to-any communication. AODV floods the network with messages RREQ to build a path till the destination. On the other hand, the DSR protocol uses the packet header to store the route path. Unlike DSR, our protocol does not store any routing path information in the packet header. The AODV protocol has some similarity with XCTP in the strategy of storing the reverse path. Performing a conceptual comparative between these protocols with Matrix, it is easy to see that Matrix does not save entire routes either in tables or packets. Dymo~\cite{dymo} is the AODV successor, however, it is optimized for MANETs. In the context of low-power and lossy networks, CTP~\cite{Fonseca:2009} and CodeDrip~\cite{junior2014codedrip} were designed for bottom-up and top-down data flow, respectively. They support communication in only one direction. CodeDrip is a dissemination protocol that uses network coding to recover lost packets by combining received packets. Our approach is an any-to-any protocol that also enables dissemination. CTP is an efficient data collection protocol that uses 4-bit \cite{fonseca2007four} metric to estimate the link quality and route cost. Data and control packets are used to obtain the link quality on CTP. MultiHopLQI~\cite{MultiHopLQI} and MintRoute~\cite{mintroute} have the same propose of CTP, but CTP overcomes them as shown in~\cite{Fonseca:2009}. CGR~\cite{Santos2017} is a collection routing protocol that considers both centrality and energy to improve network performance and decrease power consumption.
+
+State-of-the-art routing protocols for 6LoWPAN that enable any-to-any communication are RPL~\cite{rfc6550}, XCTP~\cite{xctp}, and Hydro~\cite{hydro}. RPL allows two modes of operation (storing and non-storing) for downwards data flow. The non-storing mode is based on source routing, and the storing mode pro-actively maintains an entry in the routing table of every node on the path from the root to each destination, which is not scalable to even moderate-size networks. XCTP is an extension of CTP and is based on a reactive reverse collection route creating between the root and every source node. An entry in the reverse-route table is kept for every data flow at each node on the path between the source and the destination, which is also not scalable in terms of memory footprint. Hydro protocol, like RPL, is based on a DAG (directed acyclic graph) for bottom-up communication. Source nodes need to periodically send reports to the border router, which builds a global view (typically incomplete) of the network topology. 
+
+More recent protocols \cite{Palani2015,Moghadam:2015:MMR:2766739.2766774,7374975} modified RPL to include new features. In~\cite{Palani2015}, a load-balance technique is applied over nodes to decrease power consumption. In \cite{Moghadam:2015:MMR:2766739.2766774, 7374975}, they provide multipath routing protocols to improve throughput and fault tolerance.
+
+\textcolor{blue}{This work is based on preliminary conference versions \cite{peres:2016, mhclSBRC}. In \cite{mhclSBRC}, MHCL, a preliminary proposal of the hierarchical address allocation scheme, was presented. 
+MHCL differs from Matrix because MHCL is not fault tolerant and does not deal with network dynamics. 
+In \cite{peres:2016}, a preliminary evaluation of Matrix was presented, however, the communication routines of the addressing phase were not described in detail. In the present journal version, additional experiments were executed, comparing XCTP~\cite{xctp}, a new baseline protocol that implements reverse routing, against Matrix. 
+In particular, we characterized scenarios in which XCTP has severely degraded performance in top-down routing, whereas Matrix’s performance is unaffected. Finally, a new data traffic pattern application was implemented and evaluated in the simulations, namely Any-to-Any routing.}
+
+Table \ref{tab:comparative} shows a comparison between the 6LoWPANs protocols used in the analysis.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}cccclc@{}}
+\toprule
+\textbf{}                   & \textbf{Matrix} & \textbf{RPL}                 & \textbf{CTP} & \textbf{XCTP}        \\ \midrule
+\textbf{Bottom-up traffic}          & \ding{51}    & \ding{51}                      & \ding{51}   & \ding{51}           \\
+\textbf{Top-down traffic}           & \ding{51}      & \ding{51}                     &              & \ding{51}           \\
+
+
+\textbf{Any-to-any traffic}           & \ding{51}      & \ding{51}                     &              &             \\
+
+\textbf{Address-allocation} & \ding{51}      &                               & \multicolumn{1}{l}{}
+ \\ 
+ 
+ 
+ \textbf{Memory efficiency}           & \ding{51}      &                      &  \ding{51}            &             \\
+ 
+ 
+ 
+ \textbf{Fault tolerance}           & \ding{51}      &                      &              & \ding{51}            \\
+ 
+ 
+ 
+ \bottomrule
+\end{tabular}
+\caption{Comparison between related protocols for 6LoWPAN.}
+\label{tab:comparative}
+\end{table}
+

@@ -1,0 +1,38 @@
+\section{problem}
+\label{sec:problem}
+
+%##########################################################
+%                     SEC PROBLEM                         %
+%##########################################################
+
+The data delivery reliability is one of the most challenging
+problems in \ac{wsn}, due to frequent link instability in fractions
+of a seconds, many times in less than $1s$\cite{betaFactor}.
+Therefore, it brings basic requirements that are fundamental for any
+routing protocol for \ac{l2ns}:
+\begin{inparaenum}
+    \item \textbf{reliability}, it should deliver the largest possible amount of packets, when there is route between the participants communication;
+    \item \textbf{robustness}, the protocol should operate in different topologies, loads, amount of sensor nodes and in the presence of failures;
+    \item \textbf{efficiency}, the protocol must deliver packets with the least amount of transmissions, save energy and keep the least amount of possible states.
+\end{inparaenum}
+
+%Um alternativa para coletar dados de modo confiável, robusto e
+%eficiente é utilizando \ac{xctp}. Este protocolo equilibra os
+%compromissos impostos pelas três metas fundamentais das \ac{wsn}.
+%\ac{xctp} ajusta o modelo de comunicação de coletas de dados para
+%fornecer rotas que viabilizem que comandos de feedback, mensagens de
+%confirmação ou mensagens de controle sejam trocadas de forma
+%bi-direcional entre qualquer nó sensor e a estação base.
+%\ac{xctp} permite que protocolos de transporte de dados com
+%confirmação sejam construídos . Deste modo, \ac{xctp} viabiliza a
+%entrega de dados confiável.
+
+An alternative to collecting data in a reliable, robust and
+efficiently mode is using \ac{xctp}. This protocol balances the
+compromises imposed by the three fundamental goals of \ac{wsn}.
+\ac{xctp} adjusts the communication model for data collection to
+provide routes that enable feedback commands, confirmation messages
+ or control messages to be exchanged in bi-directional form between
+any sensor node and the base station. \ac{xctp} allows data
+transport protocols with confirmation be built. Thus, \ac{xctp}
+enables reliable data deliver.

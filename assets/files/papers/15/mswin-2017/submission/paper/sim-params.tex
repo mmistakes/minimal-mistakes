@@ -1,0 +1,31 @@
+\begin{table}[!t]
+\centering
+\caption{Simulation parameters}
+\label{tab:sim-params}
+\resizebox{\linewidth}{!}{%
+\footnotesize
+\begin{tabular}{llcc}
+\hline
+\textbf{Simulation parameter}       & \multicolumn{3}{c}{\textbf{Values}}                                         \\ \hline
+Simulation time                     & \multicolumn{3}{l}{\unit[1.5]{h}}                                           \\
+\# Nodes                            & \multicolumn{3}{l}{1 center root, 100 nodes in grid}                        \\
+Mobility Model                      & \multicolumn{3}{l}{CRWP}                                                    \\
+Application data packets            & \multicolumn{3}{l}{\unitfrac[20]{pkt}{node}, Rate = \unitfrac[1]{pkt}{min}} \\
+Radio environment                   & \multicolumn{3}{l}{\unit[50]{m} UDGM constant loss}                         \\
+Area of deployment                  & \multicolumn{3}{l}{\unit[400]{m} $\times$\unit[400]{m}}                     \\
+Reverse Trickle                     & \multicolumn{3}{l}{$I_{max} = $ \unit[60]{s}, $I_{min} = $ \unit[1]{s}, $I_k = 3$}  \\
+RPL Trickle                         & \multicolumn{3}{l}{$I_{max} = $ \unit[60]{s}}                               \\
+\texttt{keepRoute} beaconing period & \multicolumn{3}{l}{$\delta = $ \unit[60]{s}}                         \\
+$Mtable$                            & \multicolumn{3}{l}{$TTL_{max} = $ \unit[90]{s}, Size = \unit[20]{entries}}  \\
+RPL downwards table                 & \multicolumn{3}{l}{Size = \unit[20]{entries}}                               \\
+\# mobility traces                  & \multicolumn{3}{l}{\unitfrac[10]{traces}{scenario}}                         \\
+Number of experiments               & \multicolumn{3}{l}{\unitfrac[10]{runs}{trace}}                              \\
+Node Speed                          & \multicolumn{3}{l}{constant \unitfrac[4]{m}{s}}                             \\
+$T_{pause}$                         & \multicolumn{3}{l}{constant \unit[300]{s}}                                  \\
+\# node stops                       & \multicolumn{3}{l}{Uniform Dist. in $[1, 3]$ stops}                         \\ %\hline
+%\multicolumn{4}{c}{\textbf{Mobility Scenarios}}                                                                   \\ %\hline
+                                    & \multicolumn{1}{c}{\textbf{Low}}    & \textbf{Moderate}   & \textbf{High}   \\
+PerMobNode                          & \multicolumn{1}{c}{$5\%$}           & $10\%$              & $15\%$          \\ \hline
+\end{tabular}
+}
+\end{table}

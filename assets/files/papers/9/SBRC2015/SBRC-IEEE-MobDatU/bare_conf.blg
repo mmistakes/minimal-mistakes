@@ -1,0 +1,21 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: bare_conf.aux
+The style file: IEEEtran.bst
+Database file #1: bibfile.bib
+You're missing a field name---line 478 of file bibfile.bib
+ :  
+ :  %pages = {37--42},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "twitterapi" isn't style-file defined
+--line 1048 of file bibfile.bib
+I was expecting a `,' or a `}'---line 1060 of file bibfile.bib
+ : 
+ : %}http://toilers.mines.edu/Public/Code/
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+(There were 2 error messages)

@@ -1,0 +1,35 @@
+[12:58:35 - main] [Cooja.java:1315] [INFO] - > Starting Cooja
+[12:58:35 - main] [Cooja.java:2856] [INFO] - External tools default settings: /external_tools_linux.config
+[12:58:35 - main] [Cooja.java:2886] [INFO] - External tools user settings: /home/matrix/.cooja.user.properties
+[12:58:35 - main] [Simulation.java:422] [INFO] - Simulation random seed: -1886260543275043826
+[12:58:35 - main] [CompileContiki.java:140] [INFO] - > make matrix-experiments.cooja TARGET=cooja 
+[12:58:36 - main] [ContikiMoteType.java:404] [INFO] - Creating core communicator between Java class Lib1 and Contiki library '/home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype946.cooja'
+[12:58:36 - main] [Cooja.java:1337] [FATAL] - Exception when loading simulation: 
+org.contikios.cooja.Cooja$SimulationCreationException: Mote type creation error: Error when creating corecomm instance: Lib1
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3451)
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3361)
+	at org.contikios.cooja.Cooja.quickStartSimulationConfig(Cooja.java:1330)
+	at org.contikios.cooja.Cooja.main(Cooja.java:3239)
+Caused by: org.contikios.cooja.MoteType$MoteTypeCreationException: Error when creating corecomm instance: Lib1
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:346)
+	at org.contikios.cooja.contikimote.ContikiMoteType.doInit(ContikiMoteType.java:405)
+	at org.contikios.cooja.contikimote.ContikiMoteType.configureAndInit(ContikiMoteType.java:366)
+	at org.contikios.cooja.contikimote.ContikiMoteType.setConfigXML(ContikiMoteType.java:1333)
+	at org.contikios.cooja.Simulation.setConfigXML(Simulation.java:703)
+	at org.contikios.cooja.Cooja.loadSimulationConfig(Cooja.java:3432)
+	... 3 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:338)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype946.cooja: /home/matrix/contiki-matrix/examples/rime/obj_cooja/mtype946.cooja: undefined symbol: log_printf
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1824)
+	at java.lang.Runtime.load0(Runtime.java:809)
+	at java.lang.System.load(System.java:1086)
+	at org.contikios.cooja.corecomm.Lib1.<init>(Lib1.java:49)
+	... 13 more

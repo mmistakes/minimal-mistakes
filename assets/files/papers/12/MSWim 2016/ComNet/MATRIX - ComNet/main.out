@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Design overview}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{MHCL: Multihop Host Configuration for 6LoWPAN}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Control plane: distributed tree structures}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Data plane: any-to-any routing}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Fault tolerance and network dynamics}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Alternative routing: geometric rationale}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Complexity Analysis}{}% 8
+\BOOKMARK [1][-]{section.4}{Evaluation}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Simulation setup}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Results}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Related Work}{}% 12
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 13

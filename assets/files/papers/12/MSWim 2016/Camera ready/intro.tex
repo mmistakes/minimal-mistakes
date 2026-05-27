@@ -1,0 +1,131 @@
+\section{Introduction}
+
+IPv6 over Low-power Wireless Personal Area Networks
+(6LoWPAN) is a working group
+inspired by the idea that even the smallest low-power devices should
+be able to run the Internet Protocol to become part of the Internet
+of Things. Standard routing protocols for 6LowPAN, such as CTP
+(Collection Tree Protocol~\cite{Fonseca:2009}) and RPL (IPv6 Routing
+Protocol for Low-Power and Lossy Networks~\cite{rfc6550}), have two
+distinctive characteristics: communication devices use unstructured
+IPv6 addresses that do not reflect the topology of the network
+(typically derived from their MAC addresses), and routing lacks
+support for any-to-any communication since it is based on
+distributed collection tree structures focused on bottom-up data
+flows (from the leaves to the root).
+The problem with such one-directional routing is that it makes it
+inefficient to build important network functions, such as
+configuration routines and reliable mechanisms to ensure the
+delivery of end-to-end data.
+
+Even though CTP does not support any-to-any traffic, the specification of
+RPL defines two modes of operation for top-down data flows: the non-storing
+mode, which uses source routing, and the storing mode, in which each node
+maintains a routing table for all possible destinations. This requires $O(n)$
+space (where $n$ is the total number of nodes), which is unfeasible for
+memory-constrained devices.
+
+Some works have addressed this problem from different perspectives.
+In \cite{2016techreport}, the authors proposed a hierarchical IPv6 address
+allocation scheme, referred to as MHCL, to enable any-to-any routing
+by incorporating network topology information into the IPv6 address,
+assigned to each node in a multihop fashion. MHCL was implemented as
+a subroutine of RPL and showed to enable any-to-any routing using
+compact routing tables. MHCL stores the IPv6 address range of the
+entire subtree rooted at a child node in a single routing table
+entry, which results in $O(k)$ memory space, where $k$ is the number
+of one-hop descendants of a node in the collection tree. The
+downside of MHCL is that it was not designed to deal with network faults
+and dynamic network topologies since a message can be dropped
+whenever a node or link failure occurs in the address hierarchy.
+
+In this work, we build upon the idea of using hierarchical IPv6
+address allocation and propose Matrix, a routing scheme for dynamic
+network topologies and fault-tolerant any-to-any data flows in
+6LoWPAN. Matrix assumes there is an underlying collection tree
+topology (provided by CTP or RPL, for instance), in which nodes have
+static locations, i.e., are not mobile, and links are dynamics,
+i.e., nodes might choose different parents according to link quality
+dynamics. Matrix uses only one-hop information in the routing tables
+and implements a local broadcast mechanism to forward messages to
+the right subtree when node or link failures occur.
+
+After the network has been initialized and all nodes
+have received an IPv6 address range, three simultaneous distributed trees are
+maintained by all nodes:
+the collection tree (Ctree), the IPv6 address tree (IPtree), and the
+reverse collection tree (RCtree).
+Initially, any-to-any packet forwarding is performed using Ctree for
+bottom-up and IPtree for top-down data flows. Whenever a node or
+link fails or Ctree changes, the new link is added in the reverse
+direction into RCtree and is maintained as long as this topology
+change persists. Top-down data packets are then forwarded from
+IPtree to RCtree via a local broadcast. The node that receives a
+local-broadcast checks whether it knows the subtree of the
+destination IPv6 address: if yes then it forwards the packet to the
+right subtree via RCtree and the packet continues its path in the
+IPtree until the final destination.
+
+
+Why is this approach robust to network dynamics? Routing is
+performed using the address hierarchy represented by the IPtree, so
+whenever a link or node fails, messages addressed to destinations in
+the corresponding subtree may be lost. Matrix uses the (dynamic)
+reverse collection tree and the local broadcast mechanism to forward
+messages to the right subtree, as long as an alternative route
+exists. Note that this local rerouting mechanism does not
+guarantee that all messages will be delivered. We argue that the probability that the message
+will be forwarded to the appropriate subtree is
+high, as long as there is a valid path, due to the geometric properties of wireless
+networks. Our simulations showed that this intuition is, in fact, correct.
+
+
+Why does this approach scale? Each node stores only one-hop
+neighborhood information, namely: the id of its parent in Ctree, the
+IPv6 address ranges of its children in the IPtree, and the IPv6
+address ranges of its (temporary) children in the RCtree. Therefore,
+the memory footprint at each node is $O(k)$, where $k$ is the number
+of children at any given moment in time. The impact of such low
+memory footprint on the end-to-end routing success is impressive:
+whereas RPL delivers less than 20\% of packets in some
+scenarios, Matrix delivers 99\% of packets
+successfully, without end-to-end mechanisms.
+
+
+We evaluated the
+proposed protocol both analytically and by simulation. Even though Matrix is
+platform-independent, we implemented it as a subroutine of CTP on TinyOS and conducted
+simulations on TOSSIM.
+The results showed that, when it comes to any-to-any communication, Matrix
+presents significant gains in terms of reliability (higher any-to-any message
+delivery) and scalability (presenting a
+constant, as opposed to linear, memory complexity at each node) at a moderate
+cost of additional control messages, when compared to other state-of-the-art
+protocols, such as RPL. 
+
+
+To sum up, Matrix achieves the following essential goals that motivated our work:
+\begin{itemize}
+  \item \textbf{Any-to-any routing}: Matrix enables end-to-end connectivity
+  between hosts located within or outside the 6LoWPAN.
+  \item \textbf{Memory efficiency}: Matrix uses compact routing tables and,
+  therefore, is scalable to very large networks.
+  \item \textbf{Reliability}: Matrix achieves $99\%$ delivery
+  without end-to-end mechanisms, and delivers $\geq 95\%$ of
+  end-to-end packets when a route exists under challenging network conditions.
+  \item \textbf{Communication efficiency}: Matrix uses adaptive beaconing based
+  on Trickle algorithm \cite{Levis:2004} to minimize the number of control
+  messages in dynamic network topologies (except with node mobility).
+  \item \textbf{Hardware independence}: Matrix does not rely on specific radio
+  chip features, and only assumes an underlying collection tree structure.
+  \item \textbf{IoT integration}: Matrix allocates global (and structured) IPv6
+addresses to all nodes, which allow nodes to act as destinations integrated into
+the Internet, contributing to the realization of the Internet of Things.
+\end{itemize}
+
+
+The rest of this paper is organized as follows. In
+Section~\ref{sec:matrix} we describe the Matrix protocol design. In
+Section~\ref{sec:analysis}, we analyze the message complexity of the protocol.
+In Section~\ref{sec:results} we present our analytical and simulation results.
+In Section~\ref{sec:related} we discuss some related work. Finally, in Section~\ref{sec:conclusion} we present the concluding remarks.

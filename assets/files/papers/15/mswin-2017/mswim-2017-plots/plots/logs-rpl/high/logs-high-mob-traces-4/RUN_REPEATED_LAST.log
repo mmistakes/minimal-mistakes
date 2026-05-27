@@ -1,0 +1,24 @@
+[2017-05-30 21:27:34] rpl-101: OK
+
+[2017-05-30 21:33:02] rpl-101: FAIL
+-- NO TEST INFO AVAILABLE (rpl-101.info) --
+-- NO TEST OUTPUT AVAILABLE (rpl-101.log) --
+-- COOJA OUTPUT (tail rpl-101.cooja_log) --
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.contikios.cooja.CoreComm.createCoreComm(CoreComm.java:334)
+	... 8 more
+Caused by: java.lang.UnsatisfiedLinkError: org.contikios.cooja.corecomm.Lib2.init()V
+	at org.contikios.cooja.corecomm.Lib2.init(Native Method)
+	at org.contikios.cooja.corecomm.Lib2.<init>(Lib2.java:50)
+	... 13 more
+
+
+[2017-05-30 21:33:04] rpl-101: OK
+
+[2017-05-30 21:38:09] rpl-101: OK
+
+[2017-05-30 21:43:26] rpl-101: OK
+
