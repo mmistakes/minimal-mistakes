@@ -54,7 +54,8 @@ The critical necessity of long-term caregiver continuity is sharply highlighted 
 
 This condition manifests through a complex phenotype including severe autism spectrum disorder, deep obsessive-compulsive traits, global developmental delays, and profound attentional deficits.
 
-[Image diagram showcasing the localized genetic duplication mapping of the short arm of chromosome 8 in Tetrasomy 8p mosaicism]
+
+1[Image diagram showcasing the localized genetic duplication mapping of the short arm of chromosome 8 in Tetrasomy 8p mosaicism]({{ '/assets/images/ localized-genetic-duplication.webp'| relative_url }})
 
 Managing a highly complex neuro-developmental condition requires specialized, intuitive behavioral monitoring. Over a rolling 2.5-year window, Josephine’s caregiver, Alanys Ortiz—a Venezuelan immigrant working under Temporary Protected Status (TPS)—developed highly precise pattern recognition to read Josephine’s subtle, non-verbal cues:
 * **Micro-Expression Isolations:** Flagging finger-fidgeting as a primary metric for systemic fatigue and recognizing unique dental variations as indications of physical pain.
