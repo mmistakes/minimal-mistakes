@@ -45,10 +45,10 @@ tags: ["Cardiovascular", "Senior Longevity", "Cognitive Health", "Diabetes"]
 
 ## Don't Ignore the Warning Signs
 
-Type 2 diabetes often develops slowly, and many people miss the early clues. Catching symptoms early facilitates more [productive conversations with your healthcare team](https://www.aginghealth.website/2025/07/ai-in-healthcare.html) and clarifies which lifestyle changes are necessary. > **Medical Disclaimer:** This content is for informational purposes only. Always consult a qualified healthcare provider regarding any medical condition.
+Type 2 diabetes often develops slowly, and many people miss the early clues. Catching symptoms early facilitates more [productive conversations with your healthcare team](https://www.aginghealth.website/posts/ai-in-healthcare/) and clarifies which lifestyle changes are necessary. > **Medical Disclaimer:** This content is for informational purposes only. Always consult a qualified healthcare provider regarding any medical condition.
 
 ![Belly fat contributes to developing diabetes](/assets/images/prediabetes.webp)
-*Reducing abdominal fat is a key strategy to [lower the likelihood](https://www.aginghealth.website/2023/11/foods-raise-lower-testosterone.html) of developing prediabetes.*
+*Reducing abdominal fat is a key strategy to [lower the likelihood](https://www.aginghealth.website/posts/foods-raise-lower-testosterone/) of developing prediabetes.*
 
 ---
 

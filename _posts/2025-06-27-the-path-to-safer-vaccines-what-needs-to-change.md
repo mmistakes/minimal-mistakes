@@ -171,7 +171,7 @@ The annual budget has remained stuck at roughly $20 million for decades. This li
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2025/06/the-path-to-safer-vaccines-what-needs.html"
+        "@id": "https://www.aginghealth.website/posts/the-path-to-safer-vaccines-what-needs/"
       },
       "headline": "The Path to Safer Vaccines: What Needs to Change?",
       "description": "An evidence-based public health review auditing active vaccine safety surveillance infrastructure, rare adverse events, and federal compensation program metrics.",

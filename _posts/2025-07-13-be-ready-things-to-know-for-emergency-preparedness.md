@@ -58,7 +58,7 @@ Flooding represents the most common and widely distributed natural hazard on the
 
 ---
 
-[Image diagram detailing flood water levels and the minimum depths required to sweep away pedestrians versus standard passenger vehicles]({{ '/assets/images/ turn-around-dont-drown.webp'| relative_url }})
+[Image diagram detailing flood water levels and the minimum depths required to sweep away pedestrians versus standard passenger vehicles]({{ '/assets/images/turn-around-dont-drown.webp'| relative_url }})
 
 ---
 
@@ -69,7 +69,7 @@ Earthquakes are sudden releases of accumulated kinetic energy tracking across te
 
 ### 3. Severe Blizzards & Deep Winter Freezes
 Characterized by sustained high winds, blinding snowfall, and extreme sub-zero temperatures. Freezing events quickly knock out overhead power lines, paralyze local transportation pipelines, and rapidly drop interior home temperatures into the danger zone for **hypothermia**.
-* *Action Step:* Pre-stage alternative, indoor-safe non-electric heating options, lock down thermal window barriers, and preserve an un-compromised inventory of shelf-stable food and winter insulation. Learn how severe cold weather loops impact cardiac stress profiles by reading our [Heart Attack Risk and Weather Guide](/2024/06/is-heart-attack-risk-increased-more-by.html).
+* *Action Step:* Pre-stage alternative, indoor-safe non-electric heating options, lock down thermal window barriers, and preserve an un-compromised inventory of shelf-stable food and winter insulation. Learn how severe cold weather loops impact cardiac stress profiles by reading our [Heart Attack Risk and Weather Guide](/posts/is-heart-attack-risk-increased-more-by/).
 
 ### 4. Wildfires & Defensive Zones
 Rapidly spreading fires that advance with immense velocity, fueled heavily by prolonged seasonal droughts and high surface winds. 
@@ -110,7 +110,7 @@ During widespread regional emergencies, localized cellular networks quickly beco
 
 ---
 
-![Image outlining an emergency communication flow chart routing through a central out-of-state contact]({{ '/assets/images/ emergency-communication-plan.webp'| relative_url }})
+![Image outlining an emergency communication flow chart routing through a central out-of-state contact]({{ '/assets/images/emergency-communication-plan.webp'| relative_url }})
 
 ---
 
@@ -136,7 +136,7 @@ Older adults face sharply elevated physiological and systemic risks during natur
 
 ---
 
-![Image checklist highlighting specific senior needs: medication timelines, alternative refrigeration, and mobility aid staging]({{ '/assets/images/ seniors-needs-emergency-checklist.webp'| relative_url }})
+![Image checklist highlighting specific senior needs: medication timelines, alternative refrigeration, and mobility aid staging]({{ '/assets/images/seniors-needs-emergency-checklist.webp'| relative_url }})
 
 ---
 If you are an independent senior or managing care for an aging spouse, apply these explicit directives:
@@ -211,7 +211,7 @@ Seniors using power-dependent devices (like oxygen concentrators or nebulizers) 
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2025/07/emergency-preparedness-guide.html"
+        "@id": "https://www.aginghealth.website/posts/emergency-preparedness-guide/"
       },
       "headline": "Be Ready: Things to Know For Emergency Preparedness",
       "description": "An expert-backed emergency preparedness blueprint tailored for independent seniors, detailing mobile kit parameters, family communication plans, and property protection steps.",

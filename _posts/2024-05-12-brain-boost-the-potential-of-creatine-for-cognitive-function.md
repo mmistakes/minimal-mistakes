@@ -103,10 +103,10 @@ tags: ['Neurological', 'Dementia', 'Nutrition', 'Aging Well', '🧠 Cognitive He
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/2026/03/pathology-disease-diagnosis.html">Pathology</a> | 
-      <a href="https://www.aginghealth.website/2026/02/alzheimers-type-3-diabetes-insulin-resistance.html">Metabolism</a> | 
-      <a href="https://www.aginghealth.website/2026/03/ozempic-older-adults-benefits-medicare.html">Ozempic/GLP-1</a> | 
-      <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html">Liver</a>
+      <a href="https://www.aginghealth.website/posts/pathology-disease-diagnosis/">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts/ozempic-older-adults-benefits-medicare/">Ozempic/GLP-1</a> | 
+      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a>
     </p>
   </div>
 

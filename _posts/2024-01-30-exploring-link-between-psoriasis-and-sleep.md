@@ -58,8 +58,8 @@ Many patients report flare-ups following periods of poor sleep, likely due to in
 
 ## 📘 Related Patient Resources
 * **The Log:** Track your sleep and inflammation patterns with the [Daily Glucose Tracker](https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing).
-* **The Foundation:** New to these topics? Read the [Beginner’s Guide to Diabetes](https://www.aginghealth.website/2024/01/diabetes.html).
-* **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html).
+* **The Foundation:** New to these topics? Read the [Beginner’s Guide to Diabetes](https://www.aginghealth.website/posts/diabetes/).
+* **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/).
 
 <div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Psoriasis is now managed as a systemic inflammatory event. Clinical targets emphasize metabolic support with high-quality protein ($1.2\text{--}1.6 \text{ g/kg}$) to maintain skin cell turnover and lean muscle mass.

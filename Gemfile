@@ -8,6 +8,7 @@ gem "jekyll-gist"
 gem "jekyll-feed"
 gem "jemoji"
 gem "kramdown-parser-gfm"
+gem 'html-proofer'
 
 # Add this line to satisfy the Minimal Mistakes grid layout
 gem "jekyll-paginate-v2", "~> 3.0"

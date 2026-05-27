@@ -17,7 +17,7 @@ last_modified_at: 2026-05-20
 
 In **2026**, healthy aging is no longer defined merely as the passive absence of disease or the simple extension of chronological lifespan—it focuses aggressively on expanding **health span**, the proportion of life spent maintaining physical strength, metabolic flexibility, mental clarity, and absolute functional independence. 
 
-Extensive clinical trial data reveals that targeted movement therapies, biomarker-driven prevention strategies, and [proactive, peer-level physician partnerships](/2026/01/medical-questionnaires-confuse-patients.html) can significantly elevate an individual's intrinsic physical and mental capacities well into their advanced years.
+Extensive clinical trial data reveals that targeted movement therapies, biomarker-driven prevention strategies, and [proactive, peer-level physician partnerships](/posts/medical-questionnaires-confuse-patients/) can significantly elevate an individual's intrinsic physical and mental capacities well into their advanced years.
 
 > **⚠️ Medical Disclaimer:** This material is intended for informational and educational patient-advocacy purposes only. It does not substitute for professional medical advice, diagnosis, or clinical treatment. Always seek direct advice from a board-certified healthcare professional regarding any specific health concerns.
 
@@ -30,7 +30,7 @@ Extensive clinical trial data reveals that targeted movement therapies, biomarke
 
 ## Why Healthy Aging Is a Global Health Focus
 
-According to demographic metrics compiled by the World Health Organization (WHO), adults over the age of 65 represent the fastest-growing segment of the global population. This historic shift has driven an explosion in translational medicine, demonstrating that structured lifestyle interventions—specifically progressive mechanical resistance loading—can directly [delay, mitigate, or entirely reverse the systemic impacts of chronic disease processes](/2024/07/loneliness-chronic-disease.html).
+According to demographic metrics compiled by the World Health Organization (WHO), adults over the age of 65 represent the fastest-growing segment of the global population. This historic shift has driven an explosion in translational medicine, demonstrating that structured lifestyle interventions—specifically progressive mechanical resistance loading—can directly [delay, mitigate, or entirely reverse the systemic impacts of chronic disease processes](/posts/loneliness-chronic-disease/).
 
 ### The Modern Aging Framework
 * **Aging Is Not Synonymous with Decline:** Human functional abilities can be actively enhanced at nearly any stage of life through targeted, progressive cellular and mechanical stressors.
@@ -59,7 +59,7 @@ Use this strategic decision tool to evaluate your current functional baseline an
 | :--- | :--- | :--- |
 | **1. Recent Fall History** | Have you experienced a slip, trip, or loss of balance within the past 12 months? | • **Yes:** Advance immediately to Step 2.<br>• **No:** Proceed straight to Step 3. |
 | **2. Structural Bone & Joint Status** | Do you have a formal diagnosis of osteoporosis, severe osteoarthritis, or chronic vertigo? | • **Yes:** Seek a prescription for supervised physical therapy or clinical exercise physiology.<br>• **No:** Begin low-impact strength training under professional guidance. |
-| **3. Real-World Mobility Barriers** | Do you experience stiffness or difficulty when rising from a standard chair or navigating stairs? | • **Yes:** Implement a functional strength program focused on leg power and hip mobility.<br>• **No:** Integrate [preventive strength and creatine protocols](/2024/03/creatine-older-adults-maintain-muscle.html) to guard your future reserve. |
+| **3. Real-World Mobility Barriers** | Do you experience stiffness or difficulty when rising from a standard chair or navigating stairs? | • **Yes:** Implement a functional strength program focused on leg power and hip mobility.<br>• **No:** Integrate [preventive strength and creatine protocols](/posts/creatine-older-adults-maintain-muscle/) to guard your future reserve. |
 
 ---
 

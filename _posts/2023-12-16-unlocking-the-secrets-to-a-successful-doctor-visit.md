@@ -19,12 +19,12 @@ tags: ['Aging Well', 'Advocacy', 'Longevity']
     </tr>
   </tbody>
 </table>
-<p>To maximize the effectiveness of your doctor's visit, preparation is key. By taking the time to organize your thoughts and gather <a href="https://www.randomthoughts.bio/2024/07/trust-in-public-health.html">relevant information</a>, you can ensure a productive and informative appointment.</p>
+<p>To maximize the effectiveness of your doctor's visit, preparation is key. By taking the time to organize your thoughts and gather <a href="https://www.randomthoughts.bio/posts/trust-in-public-health/">relevant information</a>, you can ensure a productive and informative appointment.</p>
 <h3><strong>1. Prepare a List of Topics and Questions:</strong></h3>
 <ul>
-  <li><strong>Identify your health concerns:</strong> Write down any new <a href="https://www.randomthoughts.bio/2024/05/gerd-beyond-the-burn.html">symptoms</a>, ongoing health issues, or specific worries you'd like to discuss.</li>
+  <li><strong>Identify your health concerns:</strong> Write down any new <a href="https://www.randomthoughts.bio/posts/gerd-beyond-the-burn/">symptoms</a>, ongoing health issues, or specific worries you'd like to discuss.</li>
   <li>
-    <strong>Formulate clear questions:</strong> Jot down any <a href="https://www.randomthoughts.bio/2024/03/question-ask-doctor.html">questions you have for your doctor</a>, such as:
+    <strong>Formulate clear questions:</strong> Jot down any <a href="https://www.randomthoughts.bio/posts/question-ask-doctor/">questions you have for your doctor</a>, such as:
     <ul>
       <li>"What are the possible causes of my symptoms?"</li>
       <li>"What treatment options are available?"</li>
@@ -69,14 +69,14 @@ tags: ['Aging Well', 'Advocacy', 'Longevity']
   <li><b>Use specific search terms: </b>Instead of broad searches like "stomach pain," use specific details like "sharp abdominal pain after eating fatty foods." This refines your search and yields more relevant information.</li>
 </ul>
 <ul>
-  <li><b>Understand medical terminology:</b> <a href="https://www.randomthoughts.bio/2024/05/understanding-medical-information.html">Familiarize yourself with terms </a>related to your symptoms. This will improve your comprehension of medical information and communication with healthcare providers. Websites like WebMD offer symptom checker tools and medical dictionaries.</li>
+  <li><b>Understand medical terminology:</b> <a href="https://www.randomthoughts.bio/posts/understanding-medical-information/">Familiarize yourself with terms </a>related to your symptoms. This will improve your comprehension of medical information and communication with healthcare providers. Websites like WebMD offer symptom checker tools and medical dictionaries.</li>
 </ul>
 <ul>
-  <li><b>Research limitations:</b> Remember that online <a href="https://www.randomthoughts.bio/2024/07/how-medical-research-works.html">research</a> is a tool, not a definitive answer. Approach information critically, compare information from multiple sources, and be cautious of sensationalized claims or quick fixes. Use your research to enhance your discussions with healthcare providers, not to replace their expertise.</li>
+  <li><b>Research limitations:</b> Remember that online <a href="https://www.randomthoughts.bio/posts/how-medical-research-works/">research</a> is a tool, not a definitive answer. Approach information critically, compare information from multiple sources, and be cautious of sensationalized claims or quick fixes. Use your research to enhance your discussions with healthcare providers, not to replace their expertise.</li>
 </ul>
 <h3><br /></h3><h3>7. Pack Your Insurance Armor: Conquer Check-In</h3>
 <ul>
-  <li><b>Gather your essentials:</b> Bring your <a href="https://www.randomthoughts.bio/2023/11/what-types-of-insurance-should-i-have.html">insurance</a> card, photo ID, and any referral forms from other providers.</li>
+  <li><b>Gather your essentials:</b> Bring your <a href="https://www.randomthoughts.bio/posts/what-types-of-insurance-should-i-have/">insurance</a> card, photo ID, and any referral forms from other providers.</li>
   <li><b>Understand your coverage:</b> Familiarize yourself with your deductible, co-pays, and covered services.</li>
   <li><b>Prepare for check-in:</b> Complete any online forms or paperwork in advance, if possible.</li>
   <li><b>Plan for potential delays: </b>Bring a book, download podcasts, or bring a small notebook to keep yourself occupied.</li>
@@ -94,7 +94,7 @@ tags: ['Aging Well', 'Advocacy', 'Longevity']
   <li><b>Ask for clarification:</b> Don't hesitate to ask questions if you don't understand something.</li>
   <li><b>Be honest and transparent:</b> Share all relevant information with your doctor.</li>
   <li><b>Provide context:</b> Describe the onset, duration, severity, and any triggers or factors that affect your symptoms.</li>
-  <li><b>Prepare a list of questions: </b>Write down your <a href="https://www.randomthoughts.bio/2023/12/science-questions.html">questions</a> beforehand to ensure you don't forget anything.</li>
+  <li><b>Prepare a list of questions: </b>Write down your <a href="https://www.randomthoughts.bio/posts/science-questions/">questions</a> beforehand to ensure you don't forget anything.</li>
   <li><b>Remember: </b>Communication is a two-way street. Actively participate in the conversation and work with your doctor to achieve the best possible health outcomes.</li>
 </ul>
 <h3><br /></h3><h3>10. Note-Taking Tactics for Your Doctor's Appointment</h3>
@@ -152,7 +152,7 @@ tags: ['Aging Well', 'Advocacy', 'Longevity']
   <li><strong>Communicate openly and honestly:</strong> Share all relevant information with your doctor, including any concerns or questions.</li>
   <li><strong>Come prepared:</strong> Gather your medical records, list of concerns, and questions before your appointment.</li>
   <li><strong>Trust your instincts:</strong> If something feels off, don't hesitate to raise your concerns with your doctor.</li>
-  <li><strong>Collaborate with your healthcare team:</strong> Respect your <a href="https://www.randomthoughts.bio/2024/06/ent-doctor.html">doctor's expertise</a>, but also actively participate in your care decisions.</li>
+  <li><strong>Collaborate with your healthcare team:</strong> Respect your <a href="https://www.randomthoughts.bio/posts/ent-doctor/">doctor's expertise</a>, but also actively participate in your care decisions.</li>
   <li><strong>Consider bringing a support person:</strong> A friend or family member can provide moral support and help you remember important information.</li>
 </ul>
 <h4><strong>Beginning with a New Doctor</strong></h4>

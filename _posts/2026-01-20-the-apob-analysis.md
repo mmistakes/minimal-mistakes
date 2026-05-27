@@ -47,7 +47,7 @@ By measuring the cumulative concentration of ApoB in a standard plasma draw, we 
 
 If a lipid transport vehicle possesses an ApoB tag, it has the mechanical capability to breach the fragile endothelial lining of your arteries, become trapped within the sub-endothelial space (the intima), oxidize, and initiate the slow process of **atherosclerosis** (arterial hardening).
 
-👉 *Related Archive:* [Precision Diagnostics and Genomic Medicine](/2024/03/genomic-medicine.html)
+👉 *Related Archive:* [Precision Diagnostics and Genomic Medicine](/posts/genomic-medicine/)
 
 ---
 

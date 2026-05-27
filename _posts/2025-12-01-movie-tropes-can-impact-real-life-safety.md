@@ -160,7 +160,7 @@ By actively developing your media literacy, you can enjoy cinematic storytelling
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.aginghealth.website/2025/11/movie-myth-24-hour-missing-person-rule-danger.html"
+    "@id": "https://www.aginghealth.website/posts/movie-myth-24-hour-missing-person-rule-danger/"
   },
   "headline": "Dangerous TV & Movie Myths: From the 24-Hour Missing Person Rule to Defibrillator Jolts and CPR Miracles",
   "description": "Hollywood medicine makes for drama but can mislead audiences. Myths like the 24-hour missing person rule, shocking a flatline with a defibrillator, instant CPR revival, bullet removal heroics, and harmless knockouts all distort real health and safety practices.",

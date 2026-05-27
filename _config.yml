@@ -11,6 +11,7 @@ subtitle: "Patient Advocacy & Geriatric Literacy"
 description: "Independent health research and patient advocacy focusing on geriatric health literacy, clinical data interpretation, and longevity."
 url: "https://aginghealth.website"
 baseurl: ""
+permalink: /:categories/:year/:month/:day/:title.html
 
 # Repository Settings
 repository: "tomglo10/aging-research"
@@ -85,16 +86,10 @@ pagination:
   limit: 0
   sort_field: "date"
   sort_reverse: true
+
 autopages:
-  enabled: true
-  categories:
-    layouts:
-      - category_index.html
-    permalink: "/category/:name/"
-  tags:
-    layouts:
-      - tag_index.html
-    permalink: "/tag/:name/"
+  enabled: false
+
 # Search Settings
 search_provider: lunr
 lunr:
@@ -123,6 +118,10 @@ defaults:
       entries_layout: "grid"
       show_glossary_link: true
       search: true
+      category_archive:
+        type: false
+      tag_archive:
+        type: false
   - scope:
       path: "assets"
     values:

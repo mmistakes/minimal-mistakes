@@ -13,7 +13,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
 <p style="color: #2f3b40; font-size: 1.05rem; line-height: 1.65;"><span style="font-family: inherit;">
   Recent studies have shed new light on the critical role of microglia in the progression of Alzheimer’s disease, 
   revealing how these 
-  <a href="https://www.aginghealth.website/2024/07/mind-over-matter-brain-immune-system.html" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Mind Over Matter Brain Immune System">
+  <a href="https://www.aginghealth.website/posts/mind-over-matter-brain-immune-system/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Mind Over Matter Brain Immune System">
      specialized immune cells in the brain
   </a>
   <strong>contribute to neurodegeneration</strong>. Microglia act as the brain’s first line of defense, clearing debris and maintaining neural health. 
@@ -30,7 +30,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   Researchers have also identified <strong>Shp2</strong>, a signaling protein, as a promising therapeutic target. 
   Modulating Shp2 activity may help regulate microglial behavior — reducing harmful inflammation while preserving their protective functions. 
   These findings open new avenues for treatments aimed at slowing or 
-  <a href="https://www.aginghealth.website/2024/06/psoriasis-to-psoriatic-arthritis-progression.html" rel="dofollow" style="color: #0b63c5; font-weight: 600;">
+  <a href="https://www.aginghealth.website/posts/psoriasis-to-psoriatic-arthritis-progression/" rel="dofollow" style="color: #0b63c5; font-weight: 600;">
      halting the progression
   </a>
   of Alzheimer’s disease.
@@ -65,7 +65,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   <li>
     <span style="font-family: inherit;"><strong>Lipid droplets in microglia</strong>, once ignored, are now seen as a hallmark of Alzheimer’s. 
     They may connect 
-    <a href="https://www.aginghealth.website/2025/10/female-neurodegeneration-mechanisms-estrogen-genetics.html" style="color: #0b63c5; font-weight: 600;" target="_blank">
+    <a href="https://www.aginghealth.website/posts/female-neurodegeneration-mechanisms-estrogen-genetics/" style="color: #0b63c5; font-weight: 600;" target="_blank">
        APOE4 gene
     </a> 
     variants to nerve‑cell death and offer a unified theory of disease progression.
@@ -173,11 +173,11 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
 <p style="color: #2f3b40; font-size: 1.05rem; line-height: 1.65;"><span style="font-family: inherit;">
   This research marks a paradigm shift in Alzheimer’s science. By focusing on microglial stress responses and their lipid metabolism, 
   scientists are uncovering new strategies to slow or even reverse disease progression. It 
-  <a href="https://www.aginghealth.website/2025/10/xylitol-teeth-bones-immune-gut-health.html" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Xylitol Teeth Bones Immune Gut Health">
+  <a href="https://www.aginghealth.website/posts/xylitol-teeth-bones-immune-gut-health/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Xylitol Teeth Bones Immune Gut Health">
      underscores the importance of immune health
   </a>
   in 
-  <a href="https://www.aginghealth.website/2024/05/tips-for-healthy-brain-aging.html" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Tips For Healthy Brain Aging">
+  <a href="https://www.aginghealth.website/posts/tips-for-healthy-brain-aging/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Tips For Healthy Brain Aging">
      brain aging and offers renewed hope
   </a>
   for millions affected by AD.
@@ -236,7 +236,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
 <p style="color: #2f3b40; font-size: 1.05rem; line-height: 1.65;"><span style="font-family: inherit;">
   Shp2’s dual role — protective in some contexts, harmful in others — makes it a compelling target for next‑generation therapies. 
   By 
-  <a href="https://www.aginghealth.website/2024/06/understanding-fibromyalgia.html" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Understanding Fibromyalgia">
+  <a href="https://www.aginghealth.website/posts/understanding-fibromyalgia/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Understanding Fibromyalgia">
      understanding how Shp2 behaves in different neurodegenerative
   </a>
   conditions, scientists hope to:
@@ -255,7 +255,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
 <p style="color: #2f3b40; font-size: 1.05rem; line-height: 1.65;"><span style="font-family: inherit;">
   As research into microglia and Shp2 converges, a new model of Alzheimer’s emerges — one that includes immune regulation, protein clearance, and stress signaling. 
   Targeting both <strong>microglia and Shp2 may offer synergistic benefits</strong> and 
-  <a href="https://www.aginghealth.website/2024/06/neurological-disorders-ai-brain-mapping.html" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Neurological Disorders Ai Brain Mapping">
+  <a href="https://www.aginghealth.website/posts/neurological-disorders-ai-brain-mapping/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Neurological Disorders Ai Brain Mapping">
      reshape how we treat brain disorders
   </a>.
 </span></p>
@@ -410,7 +410,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.aginghealth.website/2024/09/beyond-neurons-new-culprit-alzheimers-plaque-formation.html"
+    "@id": "https://www.aginghealth.website/posts/beyond-neurons-new-culprit-alzheimers-plaque-formation/"
   },
   "image": {
     "@type": "ImageObject",

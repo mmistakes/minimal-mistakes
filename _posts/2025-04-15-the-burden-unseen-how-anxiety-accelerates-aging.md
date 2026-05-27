@@ -75,7 +75,7 @@ This state of unyielding unease generates significant friction inside daily oper
 
 To fully map how chronic anxiety alters the aging curve, we must analyze the exact biochemical pathways activated by prolonged sympathetic nervous system activation:
 
-[Image detailing the HPA axis pathway showing how chronic perception of stress drives sustained cortisol release from the adrenal glands, triggering telomere shortening and systemic inflammation]({{ '/assets/images/ the-hpa-axis.webp'| relative_url }})
+[Image detailing the HPA axis pathway showing how chronic perception of stress drives sustained cortisol release from the adrenal glands, triggering telomere shortening and systemic inflammation]({{ '/assets/images/the-hpa-axis.webp'| relative_url }})
 
 ### 1. Telomere Atrophy Metrics
 Telomeres are specialized, repetitive DNA-protein complexes that cap the terminal ends of eukaryotic chromosomes, shielding our genetic material from structural degradation. With each sequential cell division, telomeres naturally shorten; once they hit a critically truncated length, the host cell enters a state of permanent arrest known as **cellular senescence**. 
@@ -182,7 +182,7 @@ Older adults often internalize emotional distress or display a pattern of somati
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2025/04/anxiety-accelerates-aging.html"
+        "@id": "https://www.aginghealth.website/posts/anxiety-accelerates-aging/"
       },
       "headline": "The Burden Unseen: How Anxiety Accelerates Aging",
       "description": "An evidence-based clinical review charting the psychoneuroimmunology pathways of chronic stress, cortisol-driven telomere shortening, and cognitive reserve preservation.",

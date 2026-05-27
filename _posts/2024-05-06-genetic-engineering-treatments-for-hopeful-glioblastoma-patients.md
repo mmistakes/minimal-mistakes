@@ -120,10 +120,10 @@ tags: ['🧬 Clinical Research', '⚖️ Patient Advocacy', '🧠 Cognitive Heal
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes, he specializes in translating complex medical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/2026/02/diabetes-heart-attack-survivor-lessons.html">Heart</a> | 
-      <a href="https://www.aginghealth.website/2026/02/alzheimers-type-3-diabetes-insulin-resistance.html">Metabolism</a> | 
-      <a href="https://www.aginghealth.website/2025/07/wisdom-aging-brain-cognitive-shifts.html">Brain</a> | 
-      <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html">Liver</a>
+      <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">Heart</a> | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/">Brain</a> | 
+      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a>
     </p>
   </div>
 

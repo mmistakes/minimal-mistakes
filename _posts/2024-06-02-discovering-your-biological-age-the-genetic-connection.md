@@ -155,10 +155,10 @@ tags: ['🧬 Clinical Research', '❤️ Cardiovascular & T2D', '🛡️ Liver &
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He specializes in translating complex genomic data into actionable health literacy for seniors, focusing on metabolic, vascular, and cellular resilience.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/2024/05/what-is-a-pathologist.html">Pathology</a> | 
-      <a href="https://www.aginghealth.website/2026/02/alzheimers-type-3-diabetes-insulin-resistance.html">Brain Metabolism</a> | 
-      <a href="https://www.aginghealth.website/2024/05/heart-attack-prevention-signs-and-what-to-do.html">Heart Health</a> | 
-      <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html">Liver Resilience</a>
+      <a href="https://www.aginghealth.website/posts/what-is-a-pathologist/">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Brain Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-signs-and-what-to-do/">Heart Health</a> | 
+      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver Resilience</a>
     </p>
   </div>
 

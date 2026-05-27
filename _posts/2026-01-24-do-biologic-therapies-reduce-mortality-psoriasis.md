@@ -98,7 +98,7 @@ Extensive multi-center registry datasets and real-world observational tracking s
 **Tommy T. Douglas** is an independent health researcher, author, and patient advocate. Having survived a primary myocardial infarction in 2008 and successfully managing a complex Type 2 Diabetes profile for nearly two decades utilizing targeted Metformin and GLP-1 therapies, he dedicates his technical work to translating advanced immunological and vascular data into actionable health literacy for senior populations.
 
 **Explore the Aging Health Core Hubs:**
-[Heart & Vascular Safety](/posts/lessons-from-a-2008-heart-attack-survivor/) | [Metabolic Optimization](/posts/brain-health-is-alzheimers-really-type-3-diabetes/) | [Brain Reserve & Neurology](/posts/wisdom-aging-brain-cognitive-shifts/) | [Advanced Liver Literacy](/posts/liver-cirrhosis-what-you-need-to-know/)
+[Heart & Vascular Safety](/posts/lessons-from-a-2008-heart-attack-survivor/) | [Metabolic Optimization](/posts/brain-health-is-alzheimers-really-type-3-diabetes/) | [Brain Reserve & Neurology](/posts/wisdom-aging-brain-cognitive-shifts/) | [Advanced Liver Literacy](/2023/09/liver-cirrhosis-what-you-need-to-know.html)
 
 ---
 

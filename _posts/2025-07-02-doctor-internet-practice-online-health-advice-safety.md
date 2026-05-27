@@ -55,14 +55,14 @@ However, when a patient lacks the advanced clinical training required to context
 The institutional normalization of "Dr. Google" and corporate diagnostic hubs has fundamentally re-engineered the entry points of modern healthcare:
 * Patients frequently arrive at outpatient checkups pre-loaded with extensive printouts or theoretical self-diagnoses.
 * Healthcare networks are continuously adjusting to this reality, retraining clinicians to actively guide patients through their online findings rather than dismissing them.
-* Cultivating open, objective dialogue regarding source quality allows for more collaborative care choices. Turn your digital research into a functional framework for live checkups by reviewing our [Geriatric Medical Conversation Roadmap](/2024/06/ent-doctor.html).
+* Cultivating open, objective dialogue regarding source quality allows for more collaborative care choices. Turn your digital research into a functional framework for live checkups by reviewing our [Geriatric Medical Conversation Roadmap](/posts/ent-doctor/).
 
 ---
 
 ## ⚠️ The Severe Risks of Online Self-Diagnosis
 ---
 
-![Image illustrating the feedback loop of cyberchondria: minor symptom leads to catastrophic search result, causing acute physiological stress]({{ '/assets/images/ cyberchondria-feedback-loop.webp'| relative_url }})
+![Image illustrating the feedback loop of cyberchondria: minor symptom leads to catastrophic search result, causing acute physiological stress]({{ '/assets/images/cyberchondria-feedback-loop.webp'| relative_url }})
 
 ---
 
@@ -103,7 +103,7 @@ Before allowing any piece of digital health content to influence your medical wo
 
 ---
 
-![Image infographic mapping out the C.R.A.P. framework: Currency, Reliability, Authority, and Purpose]({{ '/assets/images/ crap-framework.webp'| relative_url }})
+![Image infographic mapping out the C.R.A.P. framework: Currency, Reliability, Authority, and Purpose]({{ '/assets/images/crap-framework.webp'| relative_url }})
 
 ---
 
@@ -193,7 +193,7 @@ Apply the C.R.A.P. test metrics: confirm the information is current (modified wi
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2025/06/digital-doctor-dilemma-online-health-risks.html"
+        "@id": "https://www.aginghealth.website/posts/digital-doctor-dilemma-online-health-risks/"
       },
       "headline": "Why Self-Diagnosing on the Internet Can Be Dangerous and When to See a Real Doctor",
       "description": "An expert-backed informatics review outlining the cognitive distortions of cyberchondria, the mechanics of digital misinformation, and methods to evaluate health content safely.",

@@ -70,10 +70,10 @@ tags: ['🛡️ Liver & Immune Health', '🧬 Clinical Research', 'Nutrition', '
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/2026/02/diabetes-heart-attack-survivor-lessons.html" target="_blank" rel="noopener noreferrer nofollow">Heart</a> |
-    <a href="https://www.aginghealth.website/2026/02/alzheimers-type-3-diabetes-insulin-resistance.html" target="_blank" rel="noopener noreferrer nofollow">Metabolism</a> |
-    <a href="https://www.aginghealth.website/2025/07/wisdom-aging-brain-cognitive-shifts.html" target="_blank" rel="noopener noreferrer nofollow">Brain</a> |
-    <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html" target="_blank" rel="noopener">Liver</a>
+    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" target="_blank" rel="noopener noreferrer nofollow">Heart</a> |
+    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" target="_blank" rel="noopener noreferrer nofollow">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" target="_blank" rel="noopener noreferrer nofollow">Brain</a> |
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" target="_blank" rel="noopener">Liver</a>
   </p>
 </div>  
 <h3 style="text-align: left;">Fact Check Sources and Further Reading</h3>

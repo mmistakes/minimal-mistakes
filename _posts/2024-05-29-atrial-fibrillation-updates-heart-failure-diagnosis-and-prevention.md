@@ -113,7 +113,7 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
       <tr>
         <td><strong>Sinus Rhythm</strong></td>
         <td>The normal, steady beat of a healthy heart.</td>
-        <td>Use your <a href="https://www.aginghealth.website/2026/04/seniors-biohacking-2026.html" target="_blank">Smart Tech</a> to track how much time you spend in Sinus vs. AFib.</td>
+        <td>Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech</a> to track how much time you spend in Sinus vs. AFib.</td>
       </tr>
     </tbody></table>
 
@@ -131,10 +131,10 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/2024/03/hematologists.html" target="_blank">Hematology</a> | 
-      <a href="https://www.aginghealth.website/2026/03/ozempic-older-adults-benefits-medicare.html" target="_blank">Diabetes</a> | 
-      <a href="https://www.aginghealth.website/2024/07/coronary-heart-disease-womens-health-initiative.html" target="_blank">Heart Attack Awareness</a> | 
-      <a href="https://www.aginghealth.website/2024/10/gerd-and-sepsis-a-dangerous-connection.html" target="_blank">GERD and Sepsis</a>
+      <a href="https://www.aginghealth.website/posts/hematologists/" target="_blank">Hematology</a> | 
+      <a href="https://www.aginghealth.website/posts/ozempic-older-adults-benefits-medicare/" target="_blank">Diabetes</a> | 
+      <a href="https://www.aginghealth.website/posts/coronary-heart-disease-womens-health-initiative/" target="_blank">Heart Attack Awareness</a> | 
+      <a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/" target="_blank">GERD and Sepsis</a>
     </p>
   </div>
 

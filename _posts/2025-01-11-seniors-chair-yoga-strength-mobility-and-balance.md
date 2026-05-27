@@ -38,14 +38,14 @@ So, what makes chair yoga worth adding to your routine? Let <strong>us explore t
 <div class="section-key-points">
   <h4>Key Points</h4>
   <ul>
-    <li>Research shows chair yoga can reduce pain and <a href="https://www.aginghealth.website/2024/06/tbi-in-older-adults-fall-prevention-recovery.html" rel="dofollow" title="The Connection Between Falls and Traumatic Brain Injury"><b>fatigue in older adults with osteoarthritis</b></a>.</li>
+    <li>Research shows chair yoga can reduce pain and <a href="https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/" rel="dofollow" title="The Connection Between Falls and Traumatic Brain Injury"><b>fatigue in older adults with osteoarthritis</b></a>.</li>
     <li>Benefits such as improved gait speed may continue for months after completing a program.</li>
     <li>Chair yoga is a promising non‑drug option for managing chronic joint discomfort.</li>
   </ul>
 </div>
 
 <p>
-A randomized controlled trial in South Florida evaluated the effects of Sit ’N’ Fit Chair Yoga on older adults with lower‑extremity osteoarthritis. The study included 131 community‑dwelling adults who participated in either chair yoga or a <a href="https://www.aginghealth.website/2024/03/senior-health-education.html" rel="dofollow"><strong>health education program</strong></a>, attending sessions twice a week for eight weeks.
+A randomized controlled trial in South Florida evaluated the effects of Sit ’N’ Fit Chair Yoga on older adults with lower‑extremity osteoarthritis. The study included 131 community‑dwelling adults who participated in either chair yoga or a <a href="https://www.aginghealth.website/posts/senior-health-education/" rel="dofollow"><strong>health education program</strong></a>, attending sessions twice a week for eight weeks.
 </p>
 
 <p>
@@ -93,7 +93,7 @@ Overall, the eight‑week chair yoga program reduced pain and fatigue and improv
 </div>
 
 <p>
-Before beginning, choose a sturdy chair with armrests and enough space to move freely. Wear loose, comfortable clothing. It’s always wise to speak with your <strong>doctor before starting a new exercise program</strong>, especially if you have <a href="https://www.aginghealth.website/2024/03/toxic-stress-links-health-links-conditions.html" rel="dofollow"><strong>underlying health conditions</strong></a>.
+Before beginning, choose a sturdy chair with armrests and enough space to move freely. Wear loose, comfortable clothing. It’s always wise to speak with your <strong>doctor before starting a new exercise program</strong>, especially if you have <a href="https://www.aginghealth.website/posts/toxic-stress-links-health-links-conditions/" rel="dofollow"><strong>underlying health conditions</strong></a>.
 </p>
 
 <h3>Basic Chair Yoga Poses</h3>
@@ -210,18 +210,18 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 <h3><strong>Chair Yoga Resources</strong></h3>
 
 <ul>
-  <li><strong>Online Classes:</strong> Many platforms offer senior‑friendly chair yoga, including YouTube, fitness apps, and online studios. Try <a href="https://www.aginghealth.website/2025/01/seniors-chair-yoga-free-for-strength.html" rel="dofollow"><strong>these free options</strong></a>.</li>
+  <li><strong>Online Classes:</strong> Many platforms offer senior‑friendly chair yoga, including YouTube, fitness apps, and online studios. Try <a href="https://www.aginghealth.website/posts/seniors-chair-yoga-free-for-strength/" rel="dofollow"><strong>these free options</strong></a>.</li>
   <li><strong>Community Centers:</strong> Local senior centers often host guided chair yoga sessions.</li>
   <li><strong>Books and DVDs:</strong> Instructional materials can help you practice at your own pace.</li>
 </ul>
 <div class="module key-points-module">
   <h3>Key Points Summary</h3>
   <ul>
-    <li>Chair yoga is a gentle, accessible form of movement suitable for <a href="https://www.aginghealth.website/2025/12/imagination-reality-health-connection-seniors.html" rel="dofollow" title="The Power of the Mind's Eye: How Imagination Improves Health"><b>seniors and individuals</b></a> with limited mobility.</li>
+    <li>Chair yoga is a gentle, accessible form of movement suitable for <a href="https://www.aginghealth.website/posts/imagination-reality-health-connection-seniors/" rel="dofollow" title="The Power of the Mind's Eye: How Imagination Improves Health"><b>seniors and individuals</b></a> with limited mobility.</li>
     <li>Research shows chair yoga can reduce pain, improve gait speed, and support emotional well-being.</li>
     <li>Simple poses such as forward folds, twists, and shoulder rolls can improve flexibility and reduce tension.</li>
     <li>Chair yoga supports balance, circulation, strength, and relaxation.</li>
-    <li>Always consult a <a href="https://www.aginghealth.website/2025/07/ai-in-healthcare.html" rel="dofollow" title="Harnessing the AI Healthcare Revolution"><b>healthcare professional before beginning a new exercise</b></a> routine.</li>
+    <li>Always consult a <a href="https://www.aginghealth.website/posts/ai-in-healthcare/" rel="dofollow" title="Harnessing the AI Healthcare Revolution"><b>healthcare professional before beginning a new exercise</b></a> routine.</li>
   </ul>
 </div>
 <div class="module glossary-module">
@@ -230,7 +230,7 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
     <li><strong>Mobility:</strong> The ability to move freely and comfortably.</li>
     <li><strong>Range of Motion:</strong> How far a joint can move in different directions.</li>
     <li><strong>Mindfulness:</strong> A practice of staying present and aware during movement or breathing.</li>
-    <li><strong>Circulation:</strong> The <a href="https://www.aginghealth.website/2024/10/in-the-blood.html" rel="dofollow" title="Key Insights Blood Tests Reveal About Your Health"><b>movement of blood throughout the body</b></a>.</li>
+    <li><strong>Circulation:</strong> The <a href="https://www.aginghealth.website/posts/in-the-blood/" rel="dofollow" title="Key Insights Blood Tests Reveal About Your Health"><b>movement of blood throughout the body</b></a>.</li>
     <li><strong>Nonpharmacologic:</strong> A treatment approach that does not involve medication.</li>
     <li><strong>Spinal Flexibility:</strong> The ability of the spine to bend and move comfortably.</li>
   </ul>
@@ -238,7 +238,7 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 <div class="module senior-questions-module">
   <h3>Common Questions Seniors Ask</h3>
   <ul>
-    <li>Is chair <a href="https://www.aginghealth.website/2024/06/staying-safe-from-extreme-heat-older-adults.html" rel="dofollow" title="Why Older Adults Need Extra Protection In Hot Weather"><b>yoga safe for older adults with limited</b></a> mobility?</li>
+    <li>Is chair <a href="https://www.aginghealth.website/posts/staying-safe-from-extreme-heat-older-adults/" rel="dofollow" title="Why Older Adults Need Extra Protection In Hot Weather"><b>yoga safe for older adults with limited</b></a> mobility?</li>
     <li>Can chair yoga really help reduce pain?</li>
     <li>How often should I practice chair yoga?</li>
     <li>Do I need special equipment to get started?</li>
@@ -263,7 +263,7 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
   <h3>Recap Summary</h3>
   <p><strong>What is Chair Yoga?</strong> A gentle form of yoga practiced while seated or using a chair for support.</p>
   <p><strong>Benefits:</strong> Improved flexibility, balance, circulation, strength, and reduced stress.</p>
-  <p><strong>Research:</strong> <a href="https://www.aginghealth.website/2023/11/what-new-studies-show-about-slowing.html" rel="dofollow" title="What New Studies Show About Slowing"><b>Studies show chair yoga can reduce pain</b></a> and fatigue in older adults with osteoarthritis.</p>
+  <p><strong>Research:</strong> <a href="https://www.aginghealth.website/posts/what-new-studies-show-about-slowing/" rel="dofollow" title="What New Studies Show About Slowing"><b>Studies show chair yoga can reduce pain</b></a> and fatigue in older adults with osteoarthritis.</p>
   <p><strong>Basic Poses:</strong> Forward fold, spinal twist, shoulder rolls, cat–cow, eagle arms.</p>
   <p><strong>Tips:</strong> Use a sturdy chair, breathe deeply, start slowly, and listen to your body.</p>
   <p><strong>Safety:</strong> Consult your doctor before beginning any new exercise routine.</p>
@@ -288,17 +288,17 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 <h3><strong>Disclaimer</strong></h3>
 
 <p>
-This guide is for general informational purposes only and does not <a href="https://www.aginghealth.website/2024/09/medical-debt.html" rel="dofollow"><strong>constitute medical advice</strong></a>. Always consult a <a href="https://www.aginghealth.website/2025/07/ai-in-healthcare.html" rel="dofollow"><strong>qualified healthcare professional</strong></a> before beginning any new exercise program.
+This guide is for general informational purposes only and does not <a href="https://www.aginghealth.website/posts/medical-debt/" rel="dofollow"><strong>constitute medical advice</strong></a>. Always consult a <a href="https://www.aginghealth.website/posts/ai-in-healthcare/" rel="dofollow"><strong>qualified healthcare professional</strong></a> before beginning any new exercise program.
 </p>
 
 <p>
-By incorporating chair yoga into your routine, you <a href="https://www.aginghealth.website/2024/07/metformin-benefits.html" rel="dofollow" title="Metformin's Surprising Benefits Beyond Diabetes"><b>may experience benefits ranging from improved mobility</b></a> to enhanced mental well‑being. Start slowly, listen to your body, and enjoy the journey.
+By incorporating chair yoga into your routine, you <a href="https://www.aginghealth.website/posts/metformin-benefits/" rel="dofollow" title="Metformin's Surprising Benefits Beyond Diabetes"><b>may experience benefits ranging from improved mobility</b></a> to enhanced mental well‑being. Start slowly, listen to your body, and enjoy the journey.
 </p>
 
 <h3><strong>Note</strong></h3>
 
 <p>
-This <a href="https://www.aginghealth.website/2024/04/blog-post.html" rel="dofollow"><strong>blog post</strong></a> is <a href="https://www.aginghealth.website/2025/01/seniors-chair-yoga-free-for-strength.html" rel="dofollow" title="Seniors Chair Yoga Free For Strength"><b>designed to support seniors exploring chair yoga</b></a>. Individual experiences may vary, and professional guidance is recommended when beginning any new activity.
+This <a href="https://www.aginghealth.website/posts/blog-post/" rel="dofollow"><strong>blog post</strong></a> is <a href="https://www.aginghealth.website/posts/seniors-chair-yoga-free-for-strength/" rel="dofollow" title="Seniors Chair Yoga Free For Strength"><b>designed to support seniors exploring chair yoga</b></a>. Individual experiences may vary, and professional guidance is recommended when beginning any new activity.
 </p>
 
 <h3>Fact‑Check Sources and Resources</h3>

@@ -34,7 +34,7 @@ Psoriasis is a chronic, immune-mediated inflammatory disease driven by an overac
 
 While raised, scaly skin plaques are the most visible manifestation of this condition, these circulating cytokines travel continuously throughout the bloodstream. This chronic exposure systematically damages the lining of blood vessels, liver tissues, and the endocrine system.
 
-👉 *Related Archive:* [Systemic Inflammation in Psoriasis: Beyond the Skin](/2024/03/chronic-inflammation-causes-symptoms-treatment.html)
+👉 *Related Archive:* [Systemic Inflammation in Psoriasis: Beyond the Skin](/posts/chronic-inflammation-causes-symptoms-treatment/)
 
 ---
 
@@ -56,7 +56,7 @@ To be formally diagnosed with metabolic syndrome under the standardized **Adult 
 | **High Serum Triglycerides** | Fasting blood triglyceride levels equal to or exceeding **150 mg/dL**. | Track your lipid panels annually alongside your comprehensive metabolic chemistry. |
 | **Low HDL Cholesterol** | High-Density Lipoprotein levels below **40 mg/dL** for men, or below **50 mg/dL** for women. | Optimize dietary fats to support protective lipid transport carriers. |
 
-👉 *Related Archive:* [Metabolic Syndrome Criteria and Long-Term Health Risks](/2024/05/dementia-mortality-lucidity-sleep-apnea-aging-brain.html)
+👉 *Related Archive:* [Metabolic Syndrome Criteria and Long-Term Health Risks](/posts/dementia-mortality-lucidity-sleep-apnea-aging-brain/)
 
 ---
 This continuous inflammatory cycle accelerates **atherosclerosis** (the rapid buildup of arterial plaque). This mechanism explains why cardiovascular disease stands as the leading cause of death in psoriasis patients worldwide.

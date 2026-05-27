@@ -37,10 +37,10 @@ tags: ['Immune Health', 'Heart Health', 'Diabetes', 'Nutrition']
 <h2>The Sodium Problem: More Than Just Salt</h2>
 <h3>Section‑Level Key Points</h3>
 <ul>
-<li>Sodium <a href="https://www.aginghealth.website/2024/10/in-the-blood.html" rel="dofollow" title="In The Blood"><b>affects blood pressure and fluid balance</b></a>.</li>
+<li>Sodium <a href="https://www.aginghealth.website/posts/in-the-blood/" rel="dofollow" title="In The Blood"><b>affects blood pressure and fluid balance</b></a>.</li>
 <li>Risk is higher for older adults and those with chronic disease.</li>
 </ul>
-<p>Excess sodium increases blood volume, <a href="https://www.aginghealth.website/2024/08/what-is-crispr-how-does-it-work.html" rel="dofollow" title="What Is Crispr How Does It Work"><b>forcing the heart to work harder</b></a> and raising blood pressure. The American Heart Association and FDA reaffirmed in 2024–2025 that reducing sodium could prevent <strong>hundreds of <a href="https://www.aginghealth.website/2026/01/psoriasis-and-cardiovascular-disease.html" rel="dofollow" title="Psoriasis and Cardiovascular Disease: What Patients Need to Know"><b>thousands of cardiovascular</b></a> events</strong> (<a href="https://newsroom.heart.org/news/what-if-sodium-in-packaged-foods-was-reduced-for-an-entire-continent?utm_source=openai" target="_blank">newsroom.heart.org</a>).</p>
+<p>Excess sodium increases blood volume, <a href="https://www.aginghealth.website/posts/what-is-crispr-how-does-it-work/" rel="dofollow" title="What Is Crispr How Does It Work"><b>forcing the heart to work harder</b></a> and raising blood pressure. The American Heart Association and FDA reaffirmed in 2024–2025 that reducing sodium could prevent <strong>hundreds of <a href="https://www.aginghealth.website/posts/psoriasis-and-cardiovascular-disease/" rel="dofollow" title="Psoriasis and Cardiovascular Disease: What Patients Need to Know"><b>thousands of cardiovascular</b></a> events</strong> (<a href="https://newsroom.heart.org/news/what-if-sodium-in-packaged-foods-was-reduced-for-an-entire-continent?utm_source=openai" target="_blank">newsroom.heart.org</a>).</p>
 <hr />
 <h2>Ultra‑Processed Ingredients: The Hidden Layer</h2>
 <h3>Section‑Level Key Points</h3>
@@ -144,7 +144,7 @@ Homemade or frozen low‑sodium soups offer better control.</p>
 <li>Ultra‑processing adds hidden risks.</li>
 <li>Labels require careful reading.</li>
 <li>Health conditions amplify impact.</li>
-<li>Small <a href="https://www.aginghealth.website/2024/07/metformin-benefits.html" rel="dofollow" title="Metformin's Surprising Benefits Beyond Diabetes"><b>changes yield measurable benefits</b></a>.</li>
+<li>Small <a href="https://www.aginghealth.website/posts/metformin-benefits/" rel="dofollow" title="Metformin's Surprising Benefits Beyond Diabetes"><b>changes yield measurable benefits</b></a>.</li>
 </ul>
 <hr />
 <h2>Conclusion</h2>
@@ -160,13 +160,13 @@ Homemade or frozen low‑sodium soups offer better control.</p>
   <p style="text-align: left;">
     <span style="font-family: Roboto;"><strong>The Foundation:</strong>
     New to this?
-    <a href="https://www.aginghealth.website/2024/01/diabetes.html" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes</a>.
   </span></p>
 
   <p style="text-align: left;">
     <span style="font-family: Roboto;"><strong>Liver Health:</strong>
-    <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis</a>.
   </span></p>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "The Ripple Effect: Immigration's Impact on Caregiving"
-permalink: /2025/04/immigration-crackdowns-caregiving-industry-impact.html
+permalink: /posts/immigration-crackdowns-caregiving-industry-impact/
 date: 2025-04-06T22:14:00+00:00
 categories: ["Longevity"]
 tags: ["Senior Health", "Prevention", "Advocacy"]
@@ -55,7 +55,7 @@ The critical necessity of long-term caregiver continuity is sharply highlighted 
 This condition manifests through a complex phenotype including severe autism spectrum disorder, deep obsessive-compulsive traits, global developmental delays, and profound attentional deficits.
 
 
-1[Image diagram showcasing the localized genetic duplication mapping of the short arm of chromosome 8 in Tetrasomy 8p mosaicism]({{ '/assets/images/ localized-genetic-duplication.webp'| relative_url }})
+1[Image diagram showcasing the localized genetic duplication mapping of the short arm of chromosome 8 in Tetrasomy 8p mosaicism]({{ '/assets/images/localized-genetic-duplication.webp'| relative_url }})
 
 Managing a highly complex neuro-developmental condition requires specialized, intuitive behavioral monitoring. Over a rolling 2.5-year window, Josephine’s caregiver, Alanys Ortiz—a Venezuelan immigrant working under Temporary Protected Status (TPS)—developed highly precise pattern recognition to read Josephine’s subtle, non-verbal cues:
 * **Micro-Expression Isolations:** Flagging finger-fidgeting as a primary metric for systemic fatigue and recognizing unique dental variations as indications of physical pain.
@@ -106,7 +106,7 @@ When professional, foreign-born care pathways collapse, the resulting uncompensa
 To absorb the grueling 24/7 requirements of managing a disabled child or an aging senior with advanced cognitive decline, primary family members are frequently forced to reduce their professional employment hours or exit the formal labor market entirely. This contraction limits household earning potential, drives up long-term dependency on public assistance programs, and impairs the family's broad economic mobility.
 
 ### 2. The Mental Health Toll of Chronic Hypervigilance
-Family caregivers thrust into long-term, un-moderated care scenarios demonstrate a marked, measurable escalation in clinical anxiety, sleep fragmentation, and depressive states. Navigating advanced behavioral issues without professional support loops drives a state of persistent neuroendocrine stress. Protect your psychological wellness by checking our comprehensive guide on managing [Mental Health and Self-Care Structures](/2023/12/mental-health-self-care.html).
+Family caregivers thrust into long-term, un-moderated care scenarios demonstrate a marked, measurable escalation in clinical anxiety, sleep fragmentation, and depressive states. Navigating advanced behavioral issues without professional support loops drives a state of persistent neuroendocrine stress. Protect your psychological wellness by checking our comprehensive guide on managing [Mental Health and Self-Care Structures](/posts/mental-health-self-care/).
 
 ---
 
@@ -168,7 +168,7 @@ Several states have launched collaborative language-integrated training programs
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2025/04/immigration-crackdowns-caregiving-industry-impact.html"
+        "@id": "https://www.aginghealth.website/posts/immigration-crackdowns-caregiving-industry-impact/"
       },
       "headline": "The Ripple Effect: Immigration's Impact on Caregiving",
       "description": "An evidence-based structural review analyzing the correlation between federal immigration restrictions and long-term care staffing shortages.",

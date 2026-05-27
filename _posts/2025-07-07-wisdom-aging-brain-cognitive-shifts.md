@@ -83,7 +83,7 @@ Understanding that the brain continuously re-wires its pathways allows us to tak
 
 ---
 
-![Image outlining the lifestyle elements that maximize cognitive reserve: education, microvascular protection, movement, and social density]({{ '/assets/images/ maximize-cognitive-reserve.webp'| relative_url }})
+![Image outlining the lifestyle elements that maximize cognitive reserve: education, microvascular protection, movement, and social density]({{ '/assets/images/maximize-cognitive-reserve.webp'| relative_url }})
 
 ---
 

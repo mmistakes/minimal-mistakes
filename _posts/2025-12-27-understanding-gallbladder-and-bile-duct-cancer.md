@@ -41,7 +41,7 @@ The biliary system is a network of plumbing vessels responsible for moving **bil
 
 ---
 
-[Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct]({{ '/assets/images/ human-biliary-system.webp'| relative_url }}) _Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct._
+[Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct]({{ '/assets/images/human-biliary-system.webp'| relative_url }}) _Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct._
 
 ---
 

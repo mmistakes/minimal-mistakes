@@ -179,7 +179,7 @@ Yes. Because symptoms like confusion, slower cognitive processing, and temporary
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2024/06/tbi-in-older-adults-fall-prevention-recovery.html"
+        "@id": "https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/"
       },
       "headline": "The Connection Between Falls and Traumatic Brain Injury",
       "description": "An evidence-based guide mapping the intersection of age-related gait instability, muscle loss, and traumatic brain injury in older adults.",

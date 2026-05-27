@@ -31,10 +31,10 @@ When cirrhosis sets in, normal blood flow is severely impaired, leading to a con
 #### 🔹 Liver Cirrhosis
 * Cirrhosis is advanced scarring of the liver caused by chronic injury such as hepatitis, alcohol use, or fatty liver disease.
 * Scarring disrupts normal blood flow, leading to portal hypertension.
-* [**Portal hypertension forces blood into smaller veins**](https://www.aginghealth.website/2024/10/in-the-blood.html "Key Insights Blood Tests Reveal About Your Health"), creating varices.
+* [**Portal hypertension forces blood into smaller veins**](https://www.aginghealth.website/posts/in-the-blood/ "Key Insights Blood Tests Reveal About Your Health"), creating varices.
 
 #### 🔹 Varices
-* Varices are enlarged veins—most commonly in the [**esophagus or stomach—caused**](https://www.aginghealth.website/2024/12/barretts-esophagus-guide.html "Barretts Esophagus Guide") by rerouted blood flow.
+* Varices are enlarged veins—most commonly in the [**esophagus or stomach—caused**](https://www.aginghealth.website/posts/barretts-esophagus-guide/ "Barretts Esophagus Guide") by rerouted blood flow.
 * They often cause no symptoms until they bleed.
 * Bleeding varices are a medical emergency.
 
@@ -85,7 +85,7 @@ The situation escalates when varices bleed, marking a medical emergency blurred 
 
 ## The Tipping Point: Risks of Variceal Bleeding
 
-Not all varices will bleed, but certain conditions raise the stakes. [**Factors that significantly increase the risk include**](https://www.aginghealth.website/2024/06/is-alzheimers-inherited-risk-factors.html "Is Alzheimers Inherited Risk Factors"):
+Not all varices will bleed, but certain conditions raise the stakes. [**Factors that significantly increase the risk include**](https://www.aginghealth.website/posts/is-alzheimers-inherited-risk-factors/ "Is Alzheimers Inherited Risk Factors"):
 
 * **Size of the varices**: Bigger veins are more susceptible.
 * **Presence of red marks on the varices**: Indicators of thinning walls during an endoscopy.
@@ -102,7 +102,7 @@ The first bleeding episode is alarmingly life-threatening, heralding a high mort
 Treating esophageal varices focuses on preventing the first bleeding episode and managing those that occur. Here are the primary strategies to combat this threat:
 
 ### Medications
-1. **Non-selective beta-blockers (e.g., propranolol, nadolol)**: These [**work by lowering portal vein pressure**](https://www.aginghealth.website/2024/08/what-is-crispr-how-does-it-work.html "CRISPR Explained: A Beginner's Guide to Gene Editing").
+1. **Non-selective beta-blockers (e.g., propranolol, nadolol)**: These [**work by lowering portal vein pressure**](https://www.aginghealth.website/posts/what-is-crispr-how-does-it-work/ "CRISPR Explained: A Beginner's Guide to Gene Editing").
 2. **Vasoconstrictors (e.g., octreotide)**: Used during acute bleeding to reduce blood flow to varices.
 
 ### Endoscopic Therapies
@@ -111,14 +111,14 @@ These involve using an endoscope to approach the issue directly. Some popular me
 * **Endoscopic Sclerotherapy**: A solution injected into varices that causes them to scar and close off.
 
 ### Transjugular Intrahepatic Portosystemic Shunt (TIPS)
-For cases that cannot be [**managed through medications**](https://www.aginghealth.website/2024/06/summer-safety-medications-heat-dehydration-sunburn.html "Summer Safety Medications Heat Dehydration Sunburn") or endoscopic methods, TIPS may be used to create a shunt between the portal vein and hepatic vein to reduce pressure.
+For cases that cannot be [**managed through medications**](https://www.aginghealth.website/posts/summer-safety-medications-heat-dehydration-sunburn/ "Summer Safety Medications Heat Dehydration Sunburn") or endoscopic methods, TIPS may be used to create a shunt between the portal vein and hepatic vein to reduce pressure.
 
 ---
 
 ## ⭐ TIPS Explained in Plain Language
 
 ### What a TIPS Is
-A **TIPS** is a small tube placed inside the liver to help blood flow more easily. It lowers the high pressure that builds up when the liver is scarred from cirrhosis. This [**pressure is what causes dangerous problems**](https://www.aginghealth.website/2024/06/high-blood-pressure-symptoms-causes-treatments.html "High Blood Pressure Symptoms Causes Treatments") like belly fluid and bleeding veins.
+A **TIPS** is a small tube placed inside the liver to help blood flow more easily. It lowers the high pressure that builds up when the liver is scarred from cirrhosis. This [**pressure is what causes dangerous problems**](https://www.aginghealth.website/posts/high-blood-pressure-symptoms-causes-treatments/ "High Blood Pressure Symptoms Causes Treatments") like belly fluid and bleeding veins.
 
 ### Why Doctors Recommend It
 A TIPS may be suggested when:
@@ -159,7 +159,7 @@ If TIPS isn't possible, the main option is removing fluid when needed (paracente
 
 For individuals with severe liver disease, liver transplantation becomes a viable option. This method, although potentially lifesaving, contends with long waiting lists due to a shortage of donors.
 
-* A liver transplant replaces a [**severely damaged liver with a healthy one**](https://www.aginghealth.website/2024/03/healthy-after-65.html "Getting by in Later Life: Healthy Past 65") from a deceased or living donor.
+* A liver transplant replaces a [**severely damaged liver with a healthy one**](https://www.aginghealth.website/posts/healthy-after-65/ "Getting by in Later Life: Healthy Past 65") from a deceased or living donor.
 * It's used for **liver failure** or **liver cancer** when no other treatment can keep someone alive.
 * Candidates must meet medical criteria and are placed on a national waiting list ranked by urgency.
 * Matching depends on **blood type**, **body size**, **location**, and **medical need**.
@@ -181,7 +181,7 @@ Cirrhosis causes serious complications like **ascites**, **variceal bleeding**, 
 * Some newer or experimental options—like **midodrine**, **clonidine**, **vaptans**, and **LOLA**—show mixed results and aren't widely recommended yet.
 * **Statins** **may offer protective benefits in early cirrhosis**, but safety in advanced disease is still being studied.
 * **Proton pump inhibitors (PPIs)** are often overused and may increase infection risk; they should only be taken when truly needed.
-* **Anticoagulation** can [**help prevent or treat portal vein clots**](https://www.aginghealth.website/2024/01/watchman-device-prevent-clots.html "Watchman Device Prevent Clots") in **selected patients and may slow disease progression**.
+* **Anticoagulation** can [**help prevent or treat portal vein clots**](https://www.aginghealth.website/posts/watchman-device-prevent-clots/ "Watchman Device Prevent Clots") in **selected patients and may slow disease progression**.
 * Overall, treatment focuses on **preventing complications**, **supporting quality of life**, and **individualizing medications** based on each person's stage of cirrhosis.
 
 ---
@@ -214,8 +214,8 @@ Complications are rare but can happen. Here are some to keep an eye on:
 3. **Healing varies depending** on varices location and severity
 4. **Regular Follow-Up Endoscopies**: Scheduled visits to track healing and identify new varices are crucial.
 5. **Medication Adherence**: Stay consistent with prescribed medications to lower future bleeding risks.
-6. **Managing Liver Disease**: Abstaining from [**alcohol and following a nutritious diet**](https://www.aginghealth.website/2023/09/the-carnivore-diet-what-is-it-and-how.html "The Carnivore Diet - What is it and How Does it Work?") is vital.
-7. **Preventing Infections**: Be [**proactive about vaccinations**](https://www.aginghealth.website/2024/12/dangers-of-skipping-childhood-vaccinations.html "Dangers Of Skipping Childhood Vaccinations") and maintaining hygiene.
+6. **Managing Liver Disease**: Abstaining from [**alcohol and following a nutritious diet**](https://www.aginghealth.website/posts/the-carnivore-diet-what-is-it-and-how/ "The Carnivore Diet - What is it and How Does it Work?") is vital.
+7. **Preventing Infections**: Be [**proactive about vaccinations**](https://www.aginghealth.website/posts/dangers-of-skipping-childhood-vaccinations/ "Dangers Of Skipping Childhood Vaccinations") and maintaining hygiene.
 8. **Recognizing Warning Signs**: Stay alert for any symptoms of rebleeding, like vomiting blood.
 9. **Emotional Well-being**: It's okay to seek support to cope with the fear or anxiety that can stem from chronic illness.
 
@@ -236,10 +236,10 @@ Complications are rare but can happen. Here are some to keep an eye on:
 ### Again, With the Diet
 * Start with liquids right after the procedure.
 * Stay hydrated but avoid alcohol completely.
-* Consult your [**doctor for assistance in quitting alcohol**](https://www.aginghealth.website/2024/06/ent-doctor.html "Your ENT: The Inside Scoop on Ear, Nose, and Throat Doctors") if needed.
+* Consult your [**doctor for assistance in quitting alcohol**](https://www.aginghealth.website/posts/ent-doctor/ "Your ENT: The Inside Scoop on Ear, Nose, and Throat Doctors") if needed.
 
 ### Medicines and Your Doctor
-* Follow your [**healthcare team's advice regarding medications**](https://www.aginghealth.website/2025/07/ai-in-healthcare.html "Ai In Healthcare").
+* Follow your [**healthcare team's advice regarding medications**](https://www.aginghealth.website/posts/ai-in-healthcare/ "Ai In Healthcare").
 * Attend all follow-up appointments and stay informed about your test results.
 
 ---
@@ -260,7 +260,7 @@ Complications are rare but can happen. Here are some to keep an eye on:
 
 **Can varices come back after treatment?** Yes. Ongoing monitoring is important because new varices can form or previously treated ones can recur.
 
-**Does banding cure cirrhosis?** No. Banding treats varices, not the [**underlying liver disease**](https://www.aginghealth.website/2025/11/prevent-reverse-fatty-liver-disease-seniors.html "Prevent Reverse Fatty Liver Disease Seniors").
+**Does banding cure cirrhosis?** No. Banding treats varices, not the [**underlying liver disease**](https://www.aginghealth.website/posts/prevent-reverse-fatty-liver-disease-seniors/ "Prevent Reverse Fatty Liver Disease Seniors").
 
 **What are TIPS?** A procedure that creates a channel inside the liver to reduce portal pressure.
 
@@ -282,7 +282,7 @@ Complications are rare but can happen. Here are some to keep an eye on:
 
 ## In Conclusion
 
-Experiencing [**ruptured varices and undergoing banding**](https://www.aginghealth.website/2025/04/liver-cirrhosis-varices-banding-recovery.html "Liver Cirrhosis Varices Banding Recovery") is a significant medical event. While challenging, it plays a pivotal role in preventing life-threatening bleeding. By grasping the [**complexities of varices and liver ailments**](https://www.aginghealth.website/2025/11/liver-health-carvedilol-varices-cirrhosis.html "Liver Health Carvedilol Varices Cirrhosis"), adhering to medical advice, and making necessary lifestyle changes, individuals can navigate life post-banding, [**steering towards better health effectively**](https://www.aginghealth.website/2024/12/pooping-more-often-better-health.html "Pooping More Often: A Key to Better Health?").
+Experiencing [**ruptured varices and undergoing banding**](https://www.aginghealth.website/posts/liver-cirrhosis-varices-banding-recovery/ "Liver Cirrhosis Varices Banding Recovery") is a significant medical event. While challenging, it plays a pivotal role in preventing life-threatening bleeding. By grasping the [**complexities of varices and liver ailments**](https://www.aginghealth.website/posts/liver-health-carvedilol-varices-cirrhosis/ "Liver Health Carvedilol Varices Cirrhosis"), adhering to medical advice, and making necessary lifestyle changes, individuals can navigate life post-banding, [**steering towards better health effectively**](https://www.aginghealth.website/posts/pooping-more-often-better-health/ "Pooping More Often: A Key to Better Health?").
 
 ---
 

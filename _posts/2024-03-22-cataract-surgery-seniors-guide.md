@@ -11,7 +11,7 @@ tags: ["Eye Care", "Longevity", "Clinical Research", "Aging Well"]
 
 As we grow older, our eyes naturally change, and one of the most common age-related conditions is cataracts. Cataracts occur when the eye's lens becomes cloudy, leading to blurred vision, glare, and difficulty seeing clearly. 
 
-The good news is that cataract surgery remains one of the safest and most effective procedures in [modern eye care](https://www.aginghealth.website/2024/03/see-clearly15-eye-care-tips.html), often restoring vision within days and dramatically improving quality of life for seniors. 
+The good news is that cataract surgery remains one of the safest and most effective procedures in [modern eye care](https://www.aginghealth.website/posts/see-clearly15-eye-care-tips/), often restoring vision within days and dramatically improving quality of life for seniors. 
 
 ---
 
@@ -21,14 +21,14 @@ The good news is that cataract surgery remains one of the safest and most effect
 ---
 
 ## A Personal Perspective on Vision
-A few years ago, both my wife and sister underwent cataract surgery at different eye centers using slightly different techniques. Their experiences highlighted how important it is for [older adults to understand](https://www.aginghealth.website/2024/06/tbi-in-older-adults-fall-prevention-recovery.html) what the procedure involves -- from surgery to recovery and long-term benefits.
+A few years ago, both my wife and sister underwent cataract surgery at different eye centers using slightly different techniques. Their experiences highlighted how important it is for [older adults to understand](https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/) what the procedure involves -- from surgery to recovery and long-term benefits.
 
 Later, I needed surgery as well. My nuclear cataracts were progressing slowly, but posterior subcapsular cataracts (PSC) developed -- a faster-growing type that can rapidly worsen vision. This combination made earlier surgery necessary.
 
 ---
 
 ## 1. What Are Cataracts?
-Cataracts occur when the eye's natural lens becomes cloudy, causing blurred vision, glare, faded colors, and difficulty seeing at night. They usually develop slowly with age but can [accelerate due to diabetes](https://www.aginghealth.website/2024/01/diabetes.html), steroid use, genetics, or eye injury.
+Cataracts occur when the eye's natural lens becomes cloudy, causing blurred vision, glare, faded colors, and difficulty seeing at night. They usually develop slowly with age but can [accelerate due to diabetes](https://www.aginghealth.website/posts/diabetes/), steroid use, genetics, or eye injury.
 
 ### Three Main Types
 * **Nuclear Cataracts:** Form in the center of the lens, causing yellowing and night vision problems.
@@ -61,7 +61,7 @@ Surgery is typically recommended when blurred vision or glare sensitivity interf
 ## FAQ: Quick Facts
 * **Which cataract grows fastest?** Posterior subcapsular cataracts (PSC) generally progress more rapidly than other types.
 * **Is a "secondary cataract" real?** It is actually *posterior capsule opacification* (PCO), a common clouding that occurs after surgery. It is easily fixed with a quick YAG laser treatment.
-* **How do I prevent infection?** Follow your drop schedule strictly. Whether you use daily drops or receive a medication implant during surgery, these are critical for preventing [infection and inflammation](https://www.aginghealth.website/2025/07/infection-vs-inflammation-guide.html).
+* **How do I prevent infection?** Follow your drop schedule strictly. Whether you use daily drops or receive a medication implant during surgery, these are critical for preventing [infection and inflammation](https://www.aginghealth.website/posts/infection-vs-inflammation-guide/).
 
 ---
 

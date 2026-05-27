@@ -191,7 +191,7 @@ Yes. Risks can be substantially lowered by maintaining strict adherence to the C
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/2026/04/senior-care-ai-early-sepsis-detection-saves-lives.html"
+        "@id": "https://www.aginghealth.website/posts/senior-care-ai-early-sepsis-detection-saves-lives/"
       },
       "headline": "Senior Care: AI's Early Sepsis Detection Saves Lives",
       "description": "An evidence-based evaluation mapping how routine senior wellness checkups pair with real-time AI predictive models to disarm early, atypical sepsis.",

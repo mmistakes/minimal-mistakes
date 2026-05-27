@@ -23,7 +23,7 @@ Every year, as the temperature drops, a familiar sense of anxiety ripples throug
 {: .notice--info}
 **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 
-Understanding the nuance between flu and RSV symptoms is not just a [matter of curiosity](#)—it is a critical tool for patient advocacy. When you walk into a [doctor's office or an urgent care center](https://www.aginghealth.website/2024/12/when-to-seek-treatment-at-urgent-care.html), being able to articulate specific symptoms and understand the diagnostic process can significantly improve the quality of care you receive.
+Understanding the nuance between flu and RSV symptoms is not just a [matter of curiosity](#)—it is a critical tool for patient advocacy. When you walk into a [doctor's office or an urgent care center](https://www.aginghealth.website/posts/when-to-seek-treatment-at-urgent-care/), being able to articulate specific symptoms and understand the diagnostic process can significantly improve the quality of care you receive.
 
 This guide aims to demystify these pathogens, explore the current treatment landscape, and look ahead at the **future of respiratory medicine**.
 
@@ -49,7 +49,7 @@ The flu typically hits like a freight train. One hour you feel fine; the next, y
 ### The RSV Signature
 In contrast, RSV often begins more like a standard cold but migrates deeper into the chest. For many adults, RSV presents as a persistent, wheezing cough. In the elderly, RSV can lead to severe **secondary infections** like **pneumonia more rapidly** than the flu might in a healthy individual.
 
-A primary differentiator is the presence of wheezing. RSV [causes inflammation in the small airways](https://www.aginghealth.website/2024/03/chronic-inflammation-causes-symptoms-treatment.html) (bronchioles), leading to a whistling sound during breathing that is less common in uncomplicated influenza.
+A primary differentiator is the presence of wheezing. RSV [causes inflammation in the small airways](https://www.aginghealth.website/posts/chronic-inflammation-causes-symptoms-treatment/) (bronchioles), leading to a whistling sound during breathing that is less common in uncomplicated influenza.
 
 ## From Swabs to Solutions: Diagnostic Testing
 
@@ -76,7 +76,7 @@ We are entering a "Golden Age" of vaccinology. mRNA technology is being leverage
 
 ## Conclusion: Empowering the Patient
 
-Navigating respiratory season requires a shift from passive patient to active participant. By [recognizing the nuances](https://www.aginghealth.website/2024/06/dementia-awareness-recognizing-early.html) of symptoms and understanding diagnostic options, you can engage in more productive dialogues with your physician.
+Navigating respiratory season requires a shift from passive patient to active participant. By [recognizing the nuances](https://www.aginghealth.website/posts/dementia-awareness-recognizing-early/) of symptoms and understanding diagnostic options, you can engage in more productive dialogues with your physician.
 
 Don't be afraid to ask: *"Which test are we using?"* or *"Am I a candidate for antivirals?"* Knowledge is the best defense.
 
@@ -89,7 +89,7 @@ Don't be afraid to ask: *"Which test are we using?"* or *"Am I a candidate for a
 *   **Multiplex PCR:** A laboratory technique that detects multiple different viruses from a single sample.
 *   **Monoclonal Antibodies:** Proteins that mimic the immune system's ability to fight pathogens.
 *   **Passive Immunity:** Protection provided by antibodies produced outside the body.
-*   **Neuraminidase Inhibitors:** Drugs (like Tamiflu) that block the enzyme viruses use to [spread from cell to cell](https://www.aginghealth.website/2024/09/age-reversal-harvard-mit-cell-restoral.html).
+*   **Neuraminidase Inhibitors:** Drugs (like Tamiflu) that block the enzyme viruses use to [spread from cell to cell](https://www.aginghealth.website/posts/age-reversal-harvard-mit-cell-restoral/).
 
 ---
 

@@ -74,8 +74,8 @@ While CRISPR (Gene Editing) permanently changes DNA, **RNA-Silencing** simply "m
 
 ## Related Patient Resources
 * **The Log:** Track your metabolic metrics with the [Daily Glucose Tracker](https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing).
-* **The Foundation:** New to this? Read my [Beginner’s Guide to Diabetes](https://www.aginghealth.website/2024/01/diabetes.html).
-* **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html).
+* **The Foundation:** New to this? Read my [Beginner’s Guide to Diabetes](https://www.aginghealth.website/posts/diabetes/).
+* **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/).
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake ($1.2\text{--}1.5 \text{ g/kg}$) to prevent sarcopenia. Portal hypertension targets for esophageal varices now align with a systemic blood pressure of $<130/80 \text{ mmHg}$.

@@ -121,9 +121,9 @@ Yes. Fat‑soluble vitamins can accumulate and cause toxicity when taken in exce
 
 ## Related Resources
 - Beginner’s Guide to Diabetes  
-  /2024/01/diabetes.html  
+  /posts/diabetes/  
 - Liver Health and Metabolic Risk  
-  /2023/09/liver-cirrhosis-what-you-need-to-know.html  
+  /posts/liver-cirrhosis-what-you-need-to-know/  
 
 ---
 

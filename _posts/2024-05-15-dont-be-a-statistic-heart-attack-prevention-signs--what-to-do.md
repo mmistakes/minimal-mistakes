@@ -116,10 +116,10 @@ tags: ['🛡️ Liver & Immune Health', '❤️ Cardiovascular & T2D', '🌱 Sen
     <h3 class="ah-title" style="text-align: left;">About the Researcher</h3>
     <p style="text-align: left;"><strong>Tommy T. Douglas</strong> is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes, he specializes in translating complex medical data into actionable health literacy for seniors.</p>
     <p style="text-align: left;"><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/2025/10/female-neurodegeneration-mechanisms-estrogen-genetics.htmll">Pathology</a> | 
-      <a href="https://www.aginghealth.website/2026/02/alzheimers-type-3-diabetes-insulin-resistance.html">Metabolism</a> | 
-      <a href="https://www.aginghealth.website/2025/07/wisdom-aging-brain-cognitive-shifts.html">Brain</a> | 
-      <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html">Liver</a>
+      <a href="https://www.aginghealth.website/posts/female-neurodegeneration-mechanisms-estrogen-genetics/l">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/">Brain</a> | 
+      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a>
     </p>
   </div>
 

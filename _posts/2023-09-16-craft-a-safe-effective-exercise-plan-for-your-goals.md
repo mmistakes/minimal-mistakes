@@ -11,7 +11,7 @@ tags: ['Senior Longevity', 'Cardiovascular', 'Functional Fitness', 'Immune Healt
 
 <p>
 A clinically guided approach to movement, strength, and 
-<a href="https://www.aginghealth.website/2024/06/tbi-in-older-adults-fall-prevention-recovery.html" target="_blank">
+<a href="https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/" target="_blank">
 balance for older adults
 </a>. By blending medical knowledge with real‑world application, older adults can improve mobility, confidence, and reduce fall risk.
 </p>
@@ -141,7 +141,7 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <div class="clinic-card clinician-note">
 <strong>Conversation Starter:</strong><br />
 “I’m building an exercise routine and would like your guidance to ensure it’s safe for my health conditions.”
-</div><div class="clinic-card clinician-note"><p>&nbsp;</p><p><strong>Case Study:</strong> &nbsp;My&nbsp;<a href="https://www.aginghealth.website/2026/02/diabetes-heart-attack-survivor-lessons.html">2008 Heart Attack Survival Story</a>&nbsp;and the&nbsp;<a href="https://www.aginghealth.website/2024/01/diabetes.html">Diabetes Link.</a></p><p>To see how I am connecting these dots, read my latest research on<strong>&nbsp;</strong>Is&nbsp;<a href="https://www.aginghealth.website/2026/02/alzheimers-type-3-diabetes-insulin-resistance.html">Alzheimer’s Really Type 3 Diabetes?</a></p><p><strong>The Log:</strong>&nbsp;Start tracking your "Mental Clarity" score on my&nbsp;<a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing">Daily Glucose Tracker</a>.</p></div>
+</div><div class="clinic-card clinician-note"><p>&nbsp;</p><p><strong>Case Study:</strong> &nbsp;My&nbsp;<a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">2008 Heart Attack Survival Story</a>&nbsp;and the&nbsp;<a href="https://www.aginghealth.website/posts/diabetes/">Diabetes Link.</a></p><p>To see how I am connecting these dots, read my latest research on<strong>&nbsp;</strong>Is&nbsp;<a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Alzheimer’s Really Type 3 Diabetes?</a></p><p><strong>The Log:</strong>&nbsp;Start tracking your "Mental Clarity" score on my&nbsp;<a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing">Daily Glucose Tracker</a>.</p></div>
 
 <!--SOURCES-->
 <div class="sources-box">

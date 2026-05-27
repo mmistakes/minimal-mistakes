@@ -269,14 +269,14 @@ symptoms and promote overall well‑being.<br /><br /><table cellpadding="0" cel
   <p>
     <strong>The Foundation:</strong>
     New to this?
-    <a href="https://www.aginghealth.website/2024/01/diabetes.html" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
     </a>.
   </p>
 
   <p>
     <strong>Liver Health:</strong>
-    <a href="https://www.aginghealth.website/2023/09/liver-cirrhosis-what-you-need-to-know.html" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
     </a>.
   </p>
