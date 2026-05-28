@@ -11,7 +11,7 @@ tags: ['Advocacy','Equality']
   <tbody>
     <tr>
       <td>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDwEXTBQISkBWxu8_XNMp4a7mqBNE2Gn9h6BgY7jPhi1m7zwlbAKK3AQxkeZcQfC9I4xJsOguL6gDD87Vmu7OPrxQZPxHq9PM2qNl780W-TDUyQTrWGvJyNYxc6LS35uzSxvHymIGnkZPJ-1EjF4-E5Zrwpu2MeM-G6NPvwdQw9OUGf1fAB76V-mt3gpTO/s999/A%20older%20male%20working%20on%20a%20desktop%20PC%20in%20an%20office%20a%20sign%20reads%20Social%20Security.webp"><img alt="A person sitting at a desk, looking at a computer screen, researching Social Security benefits." src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDwEXTBQISkBWxu8_XNMp4a7mqBNE2Gn9h6BgY7jPhi1m7zwlbAKK3AQxkeZcQfC9I4xJsOguL6gDD87Vmu7OPrxQZPxHq9PM2qNl780W-TDUyQTrWGvJyNYxc6LS35uzSxvHymIGnkZPJ-1EjF4-E5Zrwpu2MeM-G6NPvwdQw9OUGf1fAB76V-mt3gpTO/s16000/A%20older%20male%20working%20on%20a%20desktop%20PC%20in%20an%20office%20a%20sign%20reads%20Social%20Security.webp" title="A Person Researching Social Security Benefits" /></a>
+        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDwEXTBQISkBWxu8_XNMp4a7mqBNE2Gn9h6BgY7jPhi1m7zwlbAKK3AQxkeZcQfC9I4xJsOguL6gDD87Vmu7OPrxQZPxHq9PM2qNl780W-TDUyQTrWGvJyNYxc6LS35uzSxvHymIGnkZPJ-1EjF4-E5Zrwpu2MeM-G6NPvwdQw9OUGf1fAB76V-mt3gpTO/s999/A%20older%20male%20working%20on%20a%20desktop%20PC%20in%20an%20office%20a%20sign%20reads%20Social%20Security.webp"><img alt="A person sitting at a desk, looking at a computer screen, researching Social Security benefits." src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDwEXTBQISkBWxu8_XNMp4a7mqBNE2Gn9h6BgY7jPhi1m7zwlbAKK3AQxkeZcQfC9I4xJsOguL6gDD87Vmu7OPrxQZPxHq9PM2qNl780W-TDUyQTrWGvJyNYxc6LS35uzSxvHymIGnkZPJ-1EjF4-E5Zrwpu2MeM-G6NPvwdQw9OUGf1fAB76V-mt3gpTO/s16000/A%20older%20male%20working%20on%20a%20desktop%20PC%20in%20an%20office%20a%20sign%20reads%20Social%20Security.webp" title="A Person Researching Social Security Benefits" />
       </td>
     </tr>
     <tr>
@@ -37,7 +37,7 @@ tags: ['Advocacy','Equality']
   <li><strong>Diversify your retirement income:</strong> Relying solely on Social Security is risky. Consider other sources of retirement income, such as 401(k)s, IRAs, and pensions.</li>
   <li><strong>Monitor your Social Security statement:</strong> Regularly review your Social Security statement to ensure your earnings history is accurate.</li>
   <li>
-    <strong>Consult with a financial advisor:</strong> A <a href="https://www.randomthoughts.bio/posts/what-paperwork-do-i-need-to-keep/">financial advisor</a> can help you develop a personalized retirement plan that meets your specific needs and goals.
+    <strong>Consult with a financial advisor:</strong> A <a href="https://www.randomthoughts.bio/posts/what-paperwork-do-i-need-to-keep/">financial advisor can help you develop a personalized retirement plan that meets your specific needs and goals.
   </li>
 </ul>
 <h2>Additional Considerations</h2>
@@ -45,7 +45,7 @@ tags: ['Advocacy','Equality']
   <li><strong>Disability benefits:</strong> Social Security also provides disability benefits to individuals who are unable to work due to a medical condition. The eligibility requirements for disability benefits are strict, and the application process can be complex.  </li>
   <li><strong>Survivor benefits:</strong> Survivor benefits are available to spouses and children of deceased workers who were eligible for Social Security benefits.</li>
   <li>
-    <strong>Medicare:</strong> <a href="https://www.randomthoughts.bio/posts/top-ten-things-medicare-does-not-cover/">Medicare</a> is a federal <a href="https://www.randomthoughts.bio/posts/what-types-of-insurance-should-i-have/">health insurance</a> program for people aged 65 and older, as well as younger people with certain disabilities.
+    <strong>Medicare:</strong> <a href="https://www.randomthoughts.bio/posts/top-ten-things-medicare-does-not-cover/">Medicare is a federal <a href="https://www.randomthoughts.bio/posts/what-types-of-insurance-should-i-have/">health insurance program for people aged 65 and older, as well as younger people with certain disabilities.
   </li>
 </ul>
 <h2>Conclusion</h2>
@@ -55,15 +55,15 @@ tags: ['Advocacy','Equality']
 <h3>Additional Resources and Information:</h3>
 <ul>
   <li>
-    <a href="https://www.ssa.gov/">Social Security Administration: </a>
+    <a href="https://www.ssa.gov/">Social Security Administration: 
   </li>
   <li>
-    <a href="https://www.aarp.org/">AARP: </a>
+    <a href="https://www.aarp.org/">AARP: 
   </li>
   <li>
-    <a href="https://www.nasdaq.com/">NASDAQ: </a>
+    <a href="https://www.nasdaq.com/">NASDAQ: 
   </li>
   <li>
-    <a href="https://www.bankrate.com/">Bankrate:</a>
-  </li><li><a href="https://www.linkerfinancial.com/social-security">Social Security</a></li>
+    <a href="https://www.bankrate.com/">Bankrate:
+  </li><li><a href="https://www.linkerfinancial.com/social-security">Social Security</li>
 </ul>

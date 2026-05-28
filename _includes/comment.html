@@ -5,7 +5,7 @@
   <div class="comment__content-wrapper">
     <h3 class="comment__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
       {% unless include.url == blank %}
-        <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</a></span>
+        <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</span>
       {% else %}
         <span itemprop="name">{{ include.name }}</span>
       {% endunless %}
@@ -14,7 +14,7 @@
       {% if include.date %}
         {% if include.index %}<a href="#comment{{ include.index }}" itemprop="url">{% endif %}
         <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
-        {% if include.index %}</a>{% endif %}
+        {% if include.index %}{% endif %}
       {% endif %}
     </p>
     <div itemprop="text">{{ include.message | markdownify }}</div>

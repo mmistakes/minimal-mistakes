@@ -294,7 +294,7 @@ Experiencing [**ruptured varices and undergoing banding**](https://www.agingheal
     <li>Esophageal varices. (2025). Retrieved 19 July 2025, from https://www.mayoclinic.org/diseases-conditions/esophageal-varices/diagnosis-treatment/drc-20351544</li>
     <li>Esophageal Varices. (2025). Retrieved 19 July 2025, from https://my.clevelandclinic.org/health/diseases/15429-esophageal-varices</li>
     <li>Variceal Banding: What to Expect at Home. (2025). Retrieved 19 July 2025, from https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.variceal-banding-what-to-expect-at-home.acg8952</li>
-    <li><a href="https://liverfoundation.org/liver-diseases/treatment/transjugular-intrahepatic-portosystemic-shunt-tips/">Transjugular Intrahepatic Portosystemic Shunt: TIPS</a></li>
+    <li><a href="https://liverfoundation.org/liver-diseases/treatment/transjugular-intrahepatic-portosystemic-shunt-tips/">Transjugular Intrahepatic Portosystemic Shunt: TIPS</li>
     <li>Kockerling, David et al. "Current and future pharmacological therapies for managing cirrhosis and its complications." <i>World journal of gastroenterology</i> vol. 25,8 (2019): 888-908. doi:10.3748/wjg.v25.i8.888</li>
   </ol>
 </div>

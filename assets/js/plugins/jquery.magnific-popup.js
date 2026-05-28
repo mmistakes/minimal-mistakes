@@ -1047,7 +1047,7 @@
     options: {
       settings: null,
       cursor: 'mfp-ajax-cur',
-      tError: '<a href="%url%">The content</a> could not be loaded.'
+      tError: '<a href="%url%">The content could not be loaded.'
     },
 
     proto: {
@@ -1144,7 +1144,7 @@
       cursor: 'mfp-zoom-out-cur',
       titleSrc: 'title',
       verticalFit: true,
-      tError: '<a href="%url%">The image</a> could not be loaded.'
+      tError: '<a href="%url%">The image could not be loaded.'
     },
 
     proto: {

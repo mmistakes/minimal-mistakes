@@ -76,7 +76,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
       achieving higher efficacy.</li><li><b style="font-weight: bold;">Reduced Systemic Toxicity:</b>
       Since the drug is contained within the lungs and the algae themselves are biocompatible, the rest of the body is
       spared from the "chemo-fog" and organ damage.</li><li><span style="font-weight: bold;"><b>Natural Clearance:</b>
-      </span>Once the cargo is delivered, the algae are naturally broken down or cleared by the body’s <a href="https://www.aginghealth.website/posts/mind-over-matter-brain-immune-system/" rel="dofollow" title="Mind Over Matter Brain Immune System"><b>immune system without</b></a>
+      </span>Once the cargo is delivered, the algae are naturally broken down or cleared by the body’s <a href="https://www.aginghealth.website/posts/mind-over-matter-brain-immune-system/" rel="dofollow" title="Mind Over Matter Brain Immune System"><b>immune system without</b>
       leaving toxic residues.</li></ul>
     <p style="text-align: left;"></p><ul>
 </ul>
@@ -110,7 +110,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
 <h2>The Road to 2030: Challenges Ahead</h2>
 <p>
   While the "micro-warriors" are successful in lab settings and mouse models, the path to widespread clinical use
-  involves several hurdles:</p><ul style="text-align: left;"><li><b>Manufacturing:</b> Scaling the production of living "biohybrids" while maintaining drug-load consistency.</li><li><b> Control Mechanisms: </b>Refining how we "steer" these bots once they are <a href="https://www.aginghealth.website/posts/human-body-rare-intriguing-medical-facts/" rel="dofollow" title="Human Body Rare Intriguing Medical Facts"><b>inside the human body</b></a>.</li><li><b> Regulatory Pathways:</b> The FDA requires rigorous human trials to ensure that introducing living organisms into the lungs does not trigger adverse inflammatory responses.</li></ul><hr />
+  involves several hurdles:</p><ul style="text-align: left;"><li><b>Manufacturing:</b> Scaling the production of living "biohybrids" while maintaining drug-load consistency.</li><li><b> Control Mechanisms: </b>Refining how we "steer" these bots once they are <a href="https://www.aginghealth.website/posts/human-body-rare-intriguing-medical-facts/" rel="dofollow" title="Human Body Rare Intriguing Medical Facts"><b>inside the human body</b>.</li><li><b> Regulatory Pathways:</b> The FDA requires rigorous human trials to ensure that introducing living organisms into the lungs does not trigger adverse inflammatory responses.</li></ul><hr />
 <h2>Empowering the Patient</h2>
 <p>Knowledge is the best tool for advocacy. If you or a loved one are navigating a diagnosis, consider these steps:</p>
 <p style="text-align: left;"></p><ol style="text-align: left;"><li><b>Request Biomarker Testing:</b>
@@ -118,7 +118,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
       <b>ALK, EGFR, or KRAS</b>
       is essential for accessing targeted therapies like Lorlatinib or Osimertinib.</li><li><b>Explore Clinical Trials:</b>
       Modern portals like
-      <a href="https://clinicaltrials.gov/" target="_blank">ClinicalTrials.gov</a>
+      <a href="https://clinicaltrials.gov/" target="_blank">ClinicalTrials.gov
       or the NCI matching service can connect you with the next generation of therapies, including microrobotics
       research.</li><li><b>Join a Community:</b>
       Groups like the
@@ -138,7 +138,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
       <b>Preclinical (Animal Models).</b></li><li><span style="font-weight: bold;"><b>Key 2026 Breakthrough:</b>
       </span>Researchers at UC San Diego recently pivoted from invasive tracheal tubes to a
       nebulized (breathable)
-      delivery method. In <a href="https://www.aginghealth.website/posts/cirrhosis-protein-targets-march-2026/" rel="dofollow" title="Cirrhosis Protein Targets March 2026"><b>March 2026 studies</b></a>, mice that "inhaled" these algae-bots showed a
+      delivery method. In <a href="https://www.aginghealth.website/posts/cirrhosis-protein-targets-march-2026/" rel="dofollow" title="Cirrhosis Protein Targets March 2026"><b>March 2026 studies</b>, mice that "inhaled" these algae-bots showed a
       100% survival rate
       in pneumonia models and a significant reduction in metastatic lung tumor growth.</li><li><span style="font-weight: bold;"><b>The Path to Phase 1:</b>
       </span>The primary hurdles before human trials begin are
@@ -220,7 +220,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
   </tbody>
 </table>
 <p><i>*Based on 2025 Matching-Adjusted Indirect Comparison (MAIC) data.</i></p>
-<h3>Key Differentiators</h3><ol style="text-align: left;"><li><b>The "Unreached" Median: </b>In the landmark CROWN trial (updated through 2025), the median progression-free survival (PFS) for Lorlatinib has still not been reached. This is the longest PFS ever recorded for a single-agent targeted therapy in any solid tumor.</li><li><b>The Safety Trade-off:</b> * Lorlatinib: Higher incidence of Grade 3/4 side effects (approx. 77%), primarily lipid elevations (cholesterol) and unique cognitive/mood changes (e.g., "brain fog" or irritability).</li><li><b>Alectinib: </b>Widely considered the "gentlest" of the three, with a much lower rate of severe adverse events, making it a common choice for patients who prioritize immediate quality of life.</li><li><b> Sequencing Strategy: </b>Real-world data from late 2025 suggests that starting with Alectinib/Brigatinib and "saving" Lorlatinib for second-line use is still common, but the superior 5-year frontline data for Lorlatinib is pushing many oncologists to use it as the first <a href="https://www.aginghealth.website/posts/genetic-engineering-brain-tumors-glioblastoma-treatment/" rel="dofollow" title="Genetic Engineering Brain Tumors Glioblastoma Treatment"><b>treatment to prevent brain</b></a> metastases from ever forming.</li></ol><hr />
+<h3>Key Differentiators</h3><ol style="text-align: left;"><li><b>The "Unreached" Median: </b>In the landmark CROWN trial (updated through 2025), the median progression-free survival (PFS) for Lorlatinib has still not been reached. This is the longest PFS ever recorded for a single-agent targeted therapy in any solid tumor.</li><li><b>The Safety Trade-off:</b> * Lorlatinib: Higher incidence of Grade 3/4 side effects (approx. 77%), primarily lipid elevations (cholesterol) and unique cognitive/mood changes (e.g., "brain fog" or irritability).</li><li><b>Alectinib: </b>Widely considered the "gentlest" of the three, with a much lower rate of severe adverse events, making it a common choice for patients who prioritize immediate quality of life.</li><li><b> Sequencing Strategy: </b>Real-world data from late 2025 suggests that starting with Alectinib/Brigatinib and "saving" Lorlatinib for second-line use is still common, but the superior 5-year frontline data for Lorlatinib is pushing many oncologists to use it as the first <a href="https://www.aginghealth.website/posts/genetic-engineering-brain-tumors-glioblastoma-treatment/" rel="dofollow" title="Genetic Engineering Brain Tumors Glioblastoma Treatment"><b>treatment to prevent brain</b> metastases from ever forming.</li></ol><hr />
 <h3>Summary for Patients</h3>
 <p>
   If you are weighing these options,
@@ -339,7 +339,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
 
     <p style="text-align: left;"></p><ul style="text-align: left;"><li><b>Lorlatinib:</b>
       Best for long-term survival and brain protection; requires active mood/lipid management.</li><li><b>Alectinib:</b>
-      Best for patients who want a "simpler" daily experience with <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="dofollow" title="Wisdom Aging Brain Cognitive Shifts"><b>fewer cognitive shifts</b></a>, though it carries a higher
+      Best for patients who want a "simpler" daily experience with <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="dofollow" title="Wisdom Aging Brain Cognitive Shifts"><b>fewer cognitive shifts</b>, though it carries a higher
       risk of the cancer eventually breaking through in the brain.</li></ul><p></p><ul>
 </ul>
 <p>As of mid-2026, the 5-year data from the
@@ -416,22 +416,22 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
 <hr />
 <h3>Quick Update: Algae-Bot Trial Milestones</h3>
 <p>For the "micro-warriors" part of your query, here is the specific 2026 update on trial phases:</p><ul style="text-align: left;"><li><b>Phase 0 (Micro-dosing): </b>Small-scale human "exploratory" trials using nebulized (inhaled) algae-bots have begun at select centers in California and the UK. These are checking for "Safety and Distribution"—essentially proving the algae get to the tumor and leave the body without causing inflammation.</li><li><b> The "Inhaled" Shift: </b>The 2026 focus is entirely on non-invasive delivery . Researchers are using a "dry powder" algae-bot formulation that can be stored at room temperature, which was the final hurdle for clinical trial logistics.</li></ul>
-Disclaimer: This information is for educational purposes and reflects <a href="https://www.aginghealth.website/posts/dementia-research-2026-ptau217-blood-test-breakthroughs/" rel="dofollow" title="Dementia Research 2026 Ptau217 Blood Test Breakthroughs"><b>research trends as of 2026</b></a>. Always consult with an
+Disclaimer: This information is for educational purposes and reflects <a href="https://www.aginghealth.website/posts/dementia-research-2026-ptau217-blood-test-breakthroughs/" rel="dofollow" title="Dementia Research 2026 Ptau217 Blood Test Breakthroughs"><b>research trends as of 2026</b>. Always consult with an
 oncologist or medical professional before making treatment decisions.
 <br />
 <div class="clinic-citations">
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
 <div><ol style="text-align: left;"><li><a href="https://www.targetedonc.com/view/fda-grants-rmat-designation-to-inhalable-gene-therapy-for-advanced-lung-tumors#:~:text=1.,US%20FDA.">
-  FDA Grants RMAT Designation to Inhalable Gene Therapy for Advanced Lung Tumors | Targeted Oncology&nbsp;</a></li><li><a href="https://www.targetedonc.com/view/fda-grants-rmat-designation-to-inhalable-gene-therapy-for-advanced-lung-tumors#:~:text=1.,US%20FDA.">Immunotherapy,
+  FDA Grants RMAT Designation to Inhalable Gene Therapy for Advanced Lung Tumors | Targeted Oncology&nbsp;</li><li><a href="https://www.targetedonc.com/view/fda-grants-rmat-designation-to-inhalable-gene-therapy-for-advanced-lung-tumors#:~:text=1.,US%20FDA.">Immunotherapy,
   Biomarkers, and Cancer Pathways
-</a>
+
 <a href="https://respiratory-therapy.com/disorders-diseases/cardiopulmonary-thoracic/lung-cancer/lorlatinib-improves-progression-free-survival-alk-positive-nsclc-trial/#:~:text=At%20the%20time%20of%20analysis,for%20ALK%2Dpositive%20advanced%20NSCLC.">
-  Lorlatinib Boosts Progression</a></li><li><a href="https://respiratory-therapy.com/disorders-diseases/cardiopulmonary-thoracic/lung-cancer/lorlatinib-improves-progression-free-survival-alk-positive-nsclc-trial/#:~:text=At%20the%20time%20of%20analysis,for%20ALK%2Dpositive%20advanced%20NSCLC.">Free Survival in ALK-Positive NSCLC | Respiratory Therapy&nbsp;</a></li><li><a href="https://ascopubs.org/doi/10.1200/JCO.24.00581#:~:text=After%205%20years%20of%20follow%2Dup%2C%20lorlatinib%20continued%20to%20show,still%20not%20reached%20with%20lorlatinib.">
-  Lorlatinib Versus Crizotinib in Patients With Advanced ALK</a></li><li><a href="https://ascopubs.org/doi/10.1200/JCO.24.00581#:~:text=After%205%20years%20of%20follow%2Dup%2C%20lorlatinib%20continued%20to%20show,still%20not%20reached%20with%20lorlatinib.">Positive Non–Small Cell Lung Cancer: 5-Year Outcomes From
+  Lorlatinib Boosts Progression</li><li><a href="https://respiratory-therapy.com/disorders-diseases/cardiopulmonary-thoracic/lung-cancer/lorlatinib-improves-progression-free-survival-alk-positive-nsclc-trial/#:~:text=At%20the%20time%20of%20analysis,for%20ALK%2Dpositive%20advanced%20NSCLC.">Free Survival in ALK-Positive NSCLC | Respiratory Therapy&nbsp;</li><li><a href="https://ascopubs.org/doi/10.1200/JCO.24.00581#:~:text=After%205%20years%20of%20follow%2Dup%2C%20lorlatinib%20continued%20to%20show,still%20not%20reached%20with%20lorlatinib.">
+  Lorlatinib Versus Crizotinib in Patients With Advanced ALK</li><li><a href="https://ascopubs.org/doi/10.1200/JCO.24.00581#:~:text=After%205%20years%20of%20follow%2Dup%2C%20lorlatinib%20continued%20to%20show,still%20not%20reached%20with%20lorlatinib.">Positive Non–Small Cell Lung Cancer: 5-Year Outcomes From
   the Phase III CROWN Study | Journal of Clinical Oncology
-</a></li><li><a href="https://www.oncology-central.com/asco-2024-lorlatinib-yields-longest-ever-pfs-recorded-for-alk-nsclc-patients/#:~:text=Lorlatinib%20is%20the%20only%20ALK,Center%2C%20Melbourne%2C%20Australia).">&nbsp; &nbsp;ASCO 2024: lorlatinib yields longest ever PFS recorded for ALK+ NSCLC patients - Oncology Central
-</a></li><li><a href="https://www.onclive.com/view/strategic-and-safe-lorlatinib-use-is-key-to-optimal-alk-nsclc-management#:~:text=%5BLorlatinib%5D%20comes%20in%2025%2D,settle%20down%20at%2075%20mg.">Strategic and Safe Lorlatinib Use Is Key to Optimal ALK+ NSCLC Management | OncLive</a></li><li><a href="https://jacobsschool.ucsd.edu/news/release/3960?id=3960#:~:text=The%20active%20algae%20provides%20the,and%20distribute%20the%20medication%20throughout.">Breathing in Therapeutic Microrobots Treats Life-threatening Pneumonia in Mice</a></li></ol></div><style>/* ============================================================
+</li><li><a href="https://www.oncology-central.com/asco-2024-lorlatinib-yields-longest-ever-pfs-recorded-for-alk-nsclc-patients/#:~:text=Lorlatinib%20is%20the%20only%20ALK,Center%2C%20Melbourne%2C%20Australia).">&nbsp; &nbsp;ASCO 2024: lorlatinib yields longest ever PFS recorded for ALK+ NSCLC patients - Oncology Central
+</li><li><a href="https://www.onclive.com/view/strategic-and-safe-lorlatinib-use-is-key-to-optimal-alk-nsclc-management#:~:text=%5BLorlatinib%5D%20comes%20in%2025%2D,settle%20down%20at%2075%20mg.">Strategic and Safe Lorlatinib Use Is Key to Optimal ALK+ NSCLC Management | OncLive</li><li><a href="https://jacobsschool.ucsd.edu/news/release/3960?id=3960#:~:text=The%20active%20algae%20provides%20the,and%20distribute%20the%20medication%20throughout.">Breathing in Therapeutic Microrobots Treats Life-threatening Pneumonia in Mice</li></ol></div><style>/* ============================================================
    CLINICAL CITATIONS CARD
    ============================================================ */
 .item-view .clinic-citations {

@@ -16,7 +16,7 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
     <li><strong>Omega‑3s:</strong> fish, flax, chia, walnuts</li>
     <li><strong>B12:</strong> consider fortified foods/supplements if advised</li>
   </ul>
-  <p><em>Medical note:</em> If you have kidney disease, diabetes, or take blood thinners, talk with a clinician before major diet changes.<span></span></p><a name='more'></a><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiooa77vbIAdKXiAacg2SGzSaQ6EuvRQT33A3Xdr-sZIlvW1LhsGjthfB1l-JWZVF5rJ0zb_7ZvbBb61KNxZDzwVndLxPzuMh_kF6qZmWsPbq6a-94e7b11Tlr6l-LocLRAFjQs6pT-571u6V_7t3R09wlFkNpRvvXzV4ijItXDxB50_5_7rqw7Xj8bzTkG/s1485/Healthy%20Food.webp" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="A warm, realistic oil painting of a doctor in a sunlit classroom pointing to a large, colorful healthy food chart. The chart features fruits, vegetables, whole grains, lean proteins, and healthy fats in a clinic-style layout. A small group of engaged seniors sits at desks, leaning forward with curiosity. The scene is rendered in Norman Rockwell’s Americana style with rich textures and gentle humor." border="0" data-original-height="1485" data-original-width="990" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiooa77vbIAdKXiAacg2SGzSaQ6EuvRQT33A3Xdr-sZIlvW1LhsGjthfB1l-JWZVF5rJ0zb_7ZvbBb61KNxZDzwVndLxPzuMh_kF6qZmWsPbq6a-94e7b11Tlr6l-LocLRAFjQs6pT-571u6V_7t3R09wlFkNpRvvXzV4ijItXDxB50_5_7rqw7Xj8bzTkG/s16000/Healthy%20Food.webp" title="Doctor Teaching Nutrition in a Sunlit Senior Classroom" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Nutrition education for older adults—Rockwell-style storytelling meets clinic-style clarity. A doctor explains healthy eating using a vivid food chart, while seniors listen with warmth and curiosity. Senior-friendly nutrition chart illustration.</td></tr></tbody></table><br /><p></p><h2 style="text-align: left;">Vitality Through Nutrition: A Simple Guide for Senior Health</h2></section>
+  <p><em>Medical note:</em> If you have kidney disease, diabetes, or take blood thinners, talk with a clinician before major diet changes.<span></span></p><a name='more'><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiooa77vbIAdKXiAacg2SGzSaQ6EuvRQT33A3Xdr-sZIlvW1LhsGjthfB1l-JWZVF5rJ0zb_7ZvbBb61KNxZDzwVndLxPzuMh_kF6qZmWsPbq6a-94e7b11Tlr6l-LocLRAFjQs6pT-571u6V_7t3R09wlFkNpRvvXzV4ijItXDxB50_5_7rqw7Xj8bzTkG/s1485/Healthy%20Food.webp" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="A warm, realistic oil painting of a doctor in a sunlit classroom pointing to a large, colorful healthy food chart. The chart features fruits, vegetables, whole grains, lean proteins, and healthy fats in a clinic-style layout. A small group of engaged seniors sits at desks, leaning forward with curiosity. The scene is rendered in Norman Rockwell’s Americana style with rich textures and gentle humor." border="0" data-original-height="1485" data-original-width="990" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiooa77vbIAdKXiAacg2SGzSaQ6EuvRQT33A3Xdr-sZIlvW1LhsGjthfB1l-JWZVF5rJ0zb_7ZvbBb61KNxZDzwVndLxPzuMh_kF6qZmWsPbq6a-94e7b11Tlr6l-LocLRAFjQs6pT-571u6V_7t3R09wlFkNpRvvXzV4ijItXDxB50_5_7rqw7Xj8bzTkG/s16000/Healthy%20Food.webp" title="Doctor Teaching Nutrition in a Sunlit Senior Classroom" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Nutrition education for older adults—Rockwell-style storytelling meets clinic-style clarity. A doctor explains healthy eating using a vivid food chart, while seniors listen with warmth and curiosity. Senior-friendly nutrition chart illustration.</td></tr></tbody></table><br /><p></p><h2 style="text-align: left;">Vitality Through Nutrition: A Simple Guide for Senior Health</h2></section>
 
 <div class="key-facts">
   <h3>Key Facts (Easy to Reference)</h3>
@@ -166,20 +166,20 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
     Start tracking your "Mental Clarity" score with my
     <a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
       Daily Glucose Tracker
-    </a>.
+    .
   </p>
   <p>
     <strong>The Foundation:</strong>
     New to this?
     <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
-    </a>.
+    .
   </p>
   <p>
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-    </a>  </p></div></div>
+      </p></div></div>
 <div aria-label="Article review and citations" class="citation-box">
   <h2>How We Use Sources</h2>
   <p>We prioritize evidence-based health information from reputable medical organizations, academic institutions, and government health agencies. This article is educational and not a substitute for medical advice.</p>

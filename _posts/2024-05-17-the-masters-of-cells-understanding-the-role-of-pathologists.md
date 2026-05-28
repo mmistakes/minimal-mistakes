@@ -35,7 +35,7 @@ tags: ['🛡️ Liver & Immune Health', '⚖️ Patient Advocacy', 'Dementia']
 
   <div class="ah-card">
     <h2 class="ah-title">Pathology: The Science Behind the Diagnosis</h2>
-    <p>Pathology is the study of disease at the cellular and molecular levels. These highly trained physicians serve as the bridge between raw biological data and actual patient care. Whether it's a routine blood test or a complex biopsy for <a href="https://www.aginghealth.website/posts/choosing-medical-partner-guide-medicare-nih/">choosing a medical partner</a>, the pathologist's eyes are the final authority.</p>
+    <p>Pathology is the study of disease at the cellular and molecular levels. These highly trained physicians serve as the bridge between raw biological data and actual patient care. Whether it's a routine blood test or a complex biopsy for <a href="https://www.aginghealth.website/posts/choosing-medical-partner-guide-medicare-nih/">choosing a medical partner, the pathologist's eyes are the final authority.</p>
     
     <h3>Key Subspecialties in 2026:</h3>
     <ul>
@@ -95,7 +95,7 @@ tags: ['🛡️ Liver & Immune Health', '⚖️ Patient Advocacy', 'Dementia']
 
   <div class="ah-card">
     <h2 class="ah-title">The Pathologist’s Impact on Your Outcome</h2>
-    <p>From cancer detection to the investigation of <a href="https://www.aginghealth.website/posts/seniors-mental-health-internal-medicine/">senior mental health</a>, pathologists ensure that the treatment you receive is based on <strong>Fact</strong>, not <strong>Guesswork</strong>. They are the ultimate truth-tellers in medicine.</p>
+    <p>From cancer detection to the investigation of <a href="https://www.aginghealth.website/posts/seniors-mental-health-internal-medicine/">senior mental health, pathologists ensure that the treatment you receive is based on <strong>Fact</strong>, not <strong>Guesswork</strong>. They are the ultimate truth-tellers in medicine.</p>
   </div>
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
@@ -109,6 +109,6 @@ tags: ['🛡️ Liver & Immune Health', '⚖️ Patient Advocacy', 'Dementia']
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
 </div>

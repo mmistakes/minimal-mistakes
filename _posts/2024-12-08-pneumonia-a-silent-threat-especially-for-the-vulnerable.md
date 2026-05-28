@@ -105,7 +105,7 @@ Pneumonia remains a serious and potentially life‑threatening illness, especial
       <ul class="ah-list">
         <li itemprop="citation">
           Centers for Disease Control and Prevention (CDC). Pneumonia.  
-          <a href="https://www.cdc.gov/pneumonia" rel="noopener">cdc.gov</a>
+          <a href="https://www.cdc.gov/pneumonia" rel="noopener">cdc.gov
         </li>
       </ul>
     </div>
@@ -118,7 +118,7 @@ Pneumonia remains a serious and potentially life‑threatening illness, especial
       <ul class="ah-list">
         <li itemprop="citation">
           CDC. Pneumococcal Vaccination Guidance for Adults.  
-          <a href="https://www.cdc.gov/pneumococcal" rel="noopener">cdc.gov</a>
+          <a href="https://www.cdc.gov/pneumococcal" rel="noopener">cdc.gov
         </li>
       </ul>
     </div>
@@ -131,7 +131,7 @@ Pneumonia remains a serious and potentially life‑threatening illness, especial
       <ul class="ah-list">
         <li itemprop="citation">
           CDC. Key Facts About Seasonal Flu Vaccine Benefits.  
-          <a href="https://www.cdc.gov/flu" rel="noopener">cdc.gov</a>
+          <a href="https://www.cdc.gov/flu" rel="noopener">cdc.gov
         </li>
       </ul>
     </div>
@@ -144,7 +144,7 @@ Pneumonia remains a serious and potentially life‑threatening illness, especial
       <ul class="ah-list">
         <li itemprop="citation">
           World Health Organization (WHO). Pneumonia Fact Sheet.  
-          <a href="https://www.who.int/news-room/fact-sheets/detail/pneumonia" rel="noopener">who.int</a>
+          <a href="https://www.who.int/news-room/fact-sheets/detail/pneumonia" rel="noopener">who.int
         </li>
       </ul>
     </div>
@@ -157,7 +157,7 @@ Pneumonia remains a serious and potentially life‑threatening illness, especial
       <ul class="ah-list">
         <li itemprop="citation">
           American Lung Association. Pneumonia Overview.  
-          <a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/pneumonia" rel="noopener">lung.org</a>
+          <a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/pneumonia" rel="noopener">lung.org
         </li>
       </ul>
     </div>

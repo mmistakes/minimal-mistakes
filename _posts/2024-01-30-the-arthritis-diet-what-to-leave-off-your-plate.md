@@ -15,7 +15,7 @@ tags: ['Functional Fitness', 'Liver health','Immune Health', 'Inflammation', 'Nu
   </header>
   <section class="post-content" itemprop="articleBody">
     <p>Arthritis impacts over 58 million adults in the United States. While there is no "magic cure" diet, extensive research demonstrates that nutrition plays a significant role in managing systemic inflammation and reducing the frequency of painful flare-ups. Understanding what to <em>remove</em> from your plate is often the most critical first step.</p>
-<a name='more'></a>
+<a name='more'>
     <div style="background: rgb(250, 250, 250); border: 1px solid rgb(221, 221, 221); font-size: 15px; margin: 16px 0px; padding: 12px;"><strong>Medical Disclaimer:</strong> This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.</div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;">
  <tbody><tr><td style="text-align: center;"><img alt="A senior woman thoughtfully examining a plate of fresh food, a romaine salad, sliced cucumbers, celery and carrot sticks, next to a simple glass of water and freshly grilled salmon symbolizing healthy food choices for joint pain relief. A professional style oil painting." border="0" data-original-height="520" data-original-width="925" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ilGuImohN24MvrLzkIg05TSy_qle5yneu1Gs1iyma2L6Ut2VGg_x55-in8ZCO6K6d3_UdQLFvfK1Efx40tPNuSmtLus1CQaXvGrGzK-YdYMiAvwWYacQDx89Q8Gm1PHf58-jrece6lmfqvY2r5IBMqZ9_ZQEtaozZwSOtu9foIG1wlhFjhm_6yEiM69G/s16000/Anti-inflammatory%20lunch.webp" title="An anti-inflammatory diet" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Small dietary changes can make a big difference in managing joint pain. Focus on fresh, whole foods to soothe inflammation.</td></tr></tbody></table><p></p><div class="editor-note" style="background-color: #f9f9f9; border-left: 5px solid rgb(74, 144, 226); margin: 1.5rem 0px; padding: 1rem;"><strong>Tommy’s Take:</strong> As someone who quit smoking 7 years ago to manage my own health, I learned that systemic inflammation is a "total body" effort. Just as I wish I’d quit smoking sooner, many patients find that they wish they had addressed these dietary triggers years earlier. Your joints are living tissue—give them the right environment to heal.
     </div>   
@@ -106,7 +106,7 @@ tags: ['Functional Fitness', 'Liver health','Immune Health', 'Inflammation', 'Nu
     are excellent sources of plant‑based protein and beneficial phytonutrients.&nbsp;
   </li>
 </ul>
-<a href="https://health.clevelandclinic.org/anti-inflammatory-diet">According to The Cleveland Clinic</a>
+<a href="https://health.clevelandclinic.org/anti-inflammatory-diet">According to The Cleveland Clinic
 , following an anti‑inflammatory diet that
 
   <strong>includes these foods can help ease arthritis</strong>
@@ -263,7 +263,7 @@ symptoms and promote overall well‑being.<br /><br /><table cellpadding="0" cel
     Start tracking your "Mental Clarity" score with my
     <a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
       Daily Glucose Tracker
-    </a>.
+    .
   </p>
 
   <p>
@@ -271,14 +271,14 @@ symptoms and promote overall well‑being.<br /><br /><table cellpadding="0" cel
     New to this?
     <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
-    </a>.
+    .
   </p>
 
   <p>
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-    </a>.
+    .
   </p>
 </div>
 
@@ -288,22 +288,22 @@ symptoms and promote overall well‑being.<br /><br /><table cellpadding="0" cel
     <li>
       <a href="https://www.verywellhealth.com/foods-to-avoid-with-arthritis-5090739" rel="noopener" target="_blank">
         17 Foods to Avoid With Arthritis and What to Eat Instead
-      </a>
+      
     </li>
     <li>
       <a href="https://www.medicalnewstoday.com/articles/foods-to-avoid-with-arthritis" rel="noopener" target="_blank">
         8 Foods to Avoid With Arthritis and Recipes to Try
-      </a>
+      
     </li>
     <li>
       <a href="https://www.healthline.com/health/foods-for-arthritis" rel="noopener" target="_blank">
         The 10 Best Foods to Eat If You Have Arthritis
-      </a>
+      
     </li>
     <li>
       <a href="https://www.healthline.com/nutrition/foods-to-avoid-arthritis" rel="noopener" target="_blank">
         Foods and Beverages to Avoid With Arthritis
-      </a>
+      
     </li>
   </ol>
     </div>

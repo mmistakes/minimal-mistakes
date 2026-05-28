@@ -109,9 +109,9 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
   <div class="ah-card">
     <h2 class="ah-title">Everything You Need to Know: My GERD Gallery</h2>
     <ul>
-      <li><a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/">GERD and Sepsis: The Inflammatory Bridge</a></li>
-      <li><a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Using Smart Tech to Monitor HRV and Stress Spikes</a></li>
-      <li><a href="https://www.aginghealth.website/posts/what-is-a-gastroenterologist/">When to See a Gastroenterologist</a></li>
+      <li><a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/">GERD and Sepsis: The Inflammatory Bridge</li>
+      <li><a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Using Smart Tech to Monitor HRV and Stress Spikes</li>
+      <li><a href="https://www.aginghealth.website/posts/what-is-a-gastroenterologist/">When to See a Gastroenterologist</li>
     </ul>
   </div>
 
@@ -130,6 +130,6 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
   </div>
 
   <p style="text-align: center; color: #64748b; font-size: 0.9rem;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
 </div>

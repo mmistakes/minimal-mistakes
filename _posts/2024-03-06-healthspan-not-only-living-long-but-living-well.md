@@ -89,7 +89,7 @@ A practical marker of insulin sensitivity and metabolic-vascular strain.
 <div class="research-header">
 <h2>The Big 6 + The Seventh Pillar</h2>
 <p>
-To extend healthspan, <a href="https://www.aginghealth.website/posts/big-six-pillars-optimal-aging-health/">we must master the <b>Big 6</b></a>:
+To extend healthspan, <a href="https://www.aginghealth.website/posts/big-six-pillars-optimal-aging-health/">we must master the <b>Big 6</b>:
 Nutrition, Movement, Sleep, Stress Regulation, Social Connection, and Mental Health —
 while integrating the <b>Seventh Pillar: Medical Oversight</b> to monitor vascular risk.
 </p>
@@ -129,7 +129,7 @@ Nutrition directly influences microbial byproducts and downstream cardiovascular
 </table>
 
 <div class="citation-box">
-<h2 style="text-align: left;">The Advanced Lipid Audit Checklist</h2><h3><p style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; color: #0e101a; margin-bottom: 0pt; margin-top: 0pt;"><span data-preserver-spaces="true" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; font-weight: normal; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-size: small;">Standard blood tests often miss the "hidden trucks" on the arterial highway. Use this checklist to ensure your next lab review covers the markers that actually determine your risk for a major vascular event.</span></span></p></h3><h3 style="text-align: left;">1. The "ApoB" Particle Count</h3>While LDL measures the weight of the cholesterol, <a href="https://www.aginghealth.website/posts/apob-analysis-heart-health-longevity/" target="_blank">ApoB</a> measures the total number of atherogenic (plaque-forming) particles.</div><div class="citation-box"><ul style="text-align: left;"><li><b>Target:</b> Aim for lower ApoB levels (typically &lt;60-80 mg/dL for high-risk individuals).</li><li><b>Advocate Question:</b> "Given my history, should we be targeting a specific ApoB number rather than just an LDL weight?"</li></ul><h3 style="text-align: left;">2. The "Lp(a)" Genetic Marker</h3>Lp(a) is a sticky, genetically determined lipoprotein that isn't usually included in a standard panel. It is a major driver of early <a href="cardiovascular issues" target="_blank">cardiovascular issues</a>.</div><div class="citation-box"><ul style="text-align: left;"><li><b>Target:</b> Generally, &lt;30-50 mg/dL (or &lt;75-125 nmol/L).</li><li><b>Advocate Question:</b> "Since Lp(a) is genetic and doesn't change with diet, can we test this once to establish my baseline risk?"</li></ul><h3 style="text-align: left;">3. The Triglyceride/HDL Ratio</h3>This is a powerful "proxy" for insulin sensitivity—a key factor in the Type 3 Diabetes (Alzheimer's) connection.</div><div class="citation-box"><b>Target:</b> A ratio of 2:1 or lower (e.g., Triglycerides 100 / HDL 50 = 2.0).<br /><b>Advocate Question:</b> "My ratio is [X]. Does this suggest I should focus more on carbohydrate management (Pillar 1) to improve my insulin sensitivity?"
+<h2 style="text-align: left;">The Advanced Lipid Audit Checklist</h2><h3><p style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; color: #0e101a; margin-bottom: 0pt; margin-top: 0pt;"><span data-preserver-spaces="true" style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; font-weight: normal; margin-bottom: 0pt; margin-top: 0pt;"><span style="font-size: small;">Standard blood tests often miss the "hidden trucks" on the arterial highway. Use this checklist to ensure your next lab review covers the markers that actually determine your risk for a major vascular event.</span></span></p></h3><h3 style="text-align: left;">1. The "ApoB" Particle Count</h3>While LDL measures the weight of the cholesterol, <a href="https://www.aginghealth.website/posts/apob-analysis-heart-health-longevity/" target="_blank">ApoB measures the total number of atherogenic (plaque-forming) particles.</div><div class="citation-box"><ul style="text-align: left;"><li><b>Target:</b> Aim for lower ApoB levels (typically &lt;60-80 mg/dL for high-risk individuals).</li><li><b>Advocate Question:</b> "Given my history, should we be targeting a specific ApoB number rather than just an LDL weight?"</li></ul><h3 style="text-align: left;">2. The "Lp(a)" Genetic Marker</h3>Lp(a) is a sticky, genetically determined lipoprotein that isn't usually included in a standard panel. It is a major driver of early <a href="cardiovascular issues" target="_blank">cardiovascular issues.</div><div class="citation-box"><ul style="text-align: left;"><li><b>Target:</b> Generally, &lt;30-50 mg/dL (or &lt;75-125 nmol/L).</li><li><b>Advocate Question:</b> "Since Lp(a) is genetic and doesn't change with diet, can we test this once to establish my baseline risk?"</li></ul><h3 style="text-align: left;">3. The Triglyceride/HDL Ratio</h3>This is a powerful "proxy" for insulin sensitivity—a key factor in the Type 3 Diabetes (Alzheimer's) connection.</div><div class="citation-box"><b>Target:</b> A ratio of 2:1 or lower (e.g., Triglycerides 100 / HDL 50 = 2.0).<br /><b>Advocate Question:</b> "My ratio is [X]. Does this suggest I should focus more on carbohydrate management (Pillar 1) to improve my insulin sensitivity?"
 <div class="clinical-audit-tool" style="background-color: #fffbeb; border-radius: 12px; border: 2px solid rgb(217, 119, 6); font-family: &quot;Roboto Serif&quot;, serif; margin: 40px 0px; padding: 25px;">
   <h3 style="color: #92400e; margin-top: 0px; text-align: center;">📋 Lipid Audit: Advocacy Checklist</h3>
   <p style="color: #78350f; font-size: 0.9rem; margin-bottom: 20px; text-align: center;">
@@ -180,22 +180,22 @@ Nutrition directly influences microbial byproducts and downstream cardiovascular
   <h3>📚 References and Citations</h3>
 <ol>
 <li><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2827753" target="_blank">
-Global Healthspan-Lifespan Gaps Among 183 WHO Member States – JAMA Network Open</a></li>
+Global Healthspan-Lifespan Gaps Among 183 WHO Member States – JAMA Network Open</li>
 
 <li><a href="https://time.com/6341027/what-is-healthspan-vs-lifespan/" target="_blank">
-Why Healthspan May Be More Important Than Lifespan – TIME</a></li>
+Why Healthspan May Be More Important Than Lifespan – TIME</li>
 
 <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6136295/" target="_blank">
-How Healthy Is the Healthspan Concept? – NIH PMC</a></li>
+How Healthy Is the Healthspan Concept? – NIH PMC</li>
 
 <li><a href="https://www.genome.gov/genetics-glossary/Telomere" target="_blank">
-Telomeres and Cellular Aging – National Human Genome Research Institute</a></li>
+Telomeres and Cellular Aging – National Human Genome Research Institute</li>
 
 <li><a href="https://www.cdc.gov/mmwr/volumes/73/wr/mm7324a1.htm" target="_blank">
-Loneliness and Mental Health – CDC MMWR</a></li>
+Loneliness and Mental Health – CDC MMWR</li>
 
 <li><a href="https://www.news-medical.net/news/20250114/Gut-microbes-revealed-as-hidden-drivers-of-aging-and-cellular-decline.aspx" target="_blank">
-Gut Microbes and Cellular Aging – News Medical</a></li>
+Gut Microbes and Cellular Aging – News Medical</li>
 </ol>
 </div>
 

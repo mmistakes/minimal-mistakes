@@ -13,7 +13,7 @@
         <li>
           <a href="#{{ item[0] | slugify }}">
             <strong>{{ item[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
-          </a>
+          
         </li>
       {% endif %}
     {% endfor %}
@@ -31,7 +31,7 @@
             {% include archive-single.html locale=locale type=entries_layout %}
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;
       </section>
     {% endif %}
   {% endfor %}

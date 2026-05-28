@@ -35,7 +35,7 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', '❤️ Cardiovascular 
 
   <div class="ah-card">
     <h2 class="ah-title">Understanding the Network: CNS vs. PNS</h2>
-    <p>To advocate for yourself, you must understand the "map" of your symptoms. The nervous system is divided into two primary zones:</p><p><br /></p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMDk2aR-qEoRXZLI_K46mq7CNBG3hcc1cWB0wZwuSYXOwVcTgaXC7hFB8xV-V6-uRMw5NLOjR2l8EFsYfxIai44cmaZk6GV40s9XD0Fr5xb55vMRxjTRqNfHhoRNh1qaGZcx7ve6w_8Thhb98jtSv2cmi2sklxZiM8YJCgISOCeqPCT1It6rUuypTv7Zbs/s945/PNS%20vs%20CNS%20Sci%E2%80%91Fi.webp" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="Digital infographic comparing the Peripheral Nervous System (PNS) and Central Nervous System (CNS) against a sci-fi background. Left side shows yellow peripheral nerves branching from the spine; right side highlights the brain and spinal cord in glowing red and blue. Futuristic interface elements and holographic overlays frame both systems." border="0" data-original-height="544" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMDk2aR-qEoRXZLI_K46mq7CNBG3hcc1cWB0wZwuSYXOwVcTgaXC7hFB8xV-V6-uRMw5NLOjR2l8EFsYfxIai44cmaZk6GV40s9XD0Fr5xb55vMRxjTRqNfHhoRNh1qaGZcx7ve6w_8Thhb98jtSv2cmi2sklxZiM8YJCgISOCeqPCT1It6rUuypTv7Zbs/s16000/PNS%20vs%20CNS%20Sci%E2%80%91Fi.webp" title="Peripheral vs Central Nervous System – Sci-Fi Anatomy Split" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">A medically accurate visual split of the human nervous system: the Peripheral Nervous System (PNS) radiates outward in yellow, while the Central Nervous System (CNS) glows in red and blue. Set against a sci-fi backdrop, this educational image contrasts nerve distribution and control centers with cinematic clarity.</td></tr></tbody></table><br /><p></p><ul><li><strong>Central Nervous System (CNS):</strong> The "Command Center" (Brain and Spinal Cord). It processes every thought, emotion, and command.</li>
+    <p>To advocate for yourself, you must understand the "map" of your symptoms. The nervous system is divided into two primary zones:</p><p><br /></p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMDk2aR-qEoRXZLI_K46mq7CNBG3hcc1cWB0wZwuSYXOwVcTgaXC7hFB8xV-V6-uRMw5NLOjR2l8EFsYfxIai44cmaZk6GV40s9XD0Fr5xb55vMRxjTRqNfHhoRNh1qaGZcx7ve6w_8Thhb98jtSv2cmi2sklxZiM8YJCgISOCeqPCT1It6rUuypTv7Zbs/s945/PNS%20vs%20CNS%20Sci%E2%80%91Fi.webp" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="Digital infographic comparing the Peripheral Nervous System (PNS) and Central Nervous System (CNS) against a sci-fi background. Left side shows yellow peripheral nerves branching from the spine; right side highlights the brain and spinal cord in glowing red and blue. Futuristic interface elements and holographic overlays frame both systems." border="0" data-original-height="544" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMDk2aR-qEoRXZLI_K46mq7CNBG3hcc1cWB0wZwuSYXOwVcTgaXC7hFB8xV-V6-uRMw5NLOjR2l8EFsYfxIai44cmaZk6GV40s9XD0Fr5xb55vMRxjTRqNfHhoRNh1qaGZcx7ve6w_8Thhb98jtSv2cmi2sklxZiM8YJCgISOCeqPCT1It6rUuypTv7Zbs/s16000/PNS%20vs%20CNS%20Sci%E2%80%91Fi.webp" title="Peripheral vs Central Nervous System – Sci-Fi Anatomy Split" /></td></tr><tr><td class="tr-caption" style="text-align: center;">A medically accurate visual split of the human nervous system: the Peripheral Nervous System (PNS) radiates outward in yellow, while the Central Nervous System (CNS) glows in red and blue. Set against a sci-fi backdrop, this educational image contrasts nerve distribution and control centers with cinematic clarity.</td></tr></tbody></table><br /><p></p><ul><li><strong>Central Nervous System (CNS):</strong> The "Command Center" (Brain and Spinal Cord). It processes every thought, emotion, and command.</li>
       <li><strong>Peripheral Nervous System (PNS):</strong> The "Communication Highway." These are the nerves that branch out to your fingertips, toes, and internal organs.</li>
     </ul>
     <div class="ah-accent-card">
@@ -111,10 +111,10 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', '❤️ Cardiovascular 
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart |
+    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism |
+    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
   </p>
 </div></div>
 
@@ -124,20 +124,20 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', '❤️ Cardiovascular 
     Start tracking your "Mental Clarity" score with my
     <a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
       Daily Glucose Tracker
-    </a>.
+    .
   </p>
   <p>
     <strong>The Foundation:</strong>
     New to this?
     <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
-    </a>.
+    .
   </p>
   <p>
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-    </a>  </p></div>
+      </p></div>
     <div class="ah-accent-card" style="background: rgb(255, 245, 245); border-left-color: rgb(229, 62, 62); margin-top: 15px;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If your doctor says "There's no cure, just take this pain pill," translate that to: <em>"We are treating the symptom, not the root cause."</em> Ask: <strong>"How are we stopping the active damage from progressing?"</strong>
     </div>
@@ -152,7 +152,7 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', '❤️ Cardiovascular 
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p><script type="application/ld+json">
 {
   "@context": "https://schema.org",

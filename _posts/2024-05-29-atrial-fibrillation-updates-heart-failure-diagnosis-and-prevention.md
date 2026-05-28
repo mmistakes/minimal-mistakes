@@ -113,7 +113,7 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
       <tr>
         <td><strong>Sinus Rhythm</strong></td>
         <td>The normal, steady beat of a healthy heart.</td>
-        <td>Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech</a> to track how much time you spend in Sinus vs. AFib.</td>
+        <td>Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech to track how much time you spend in Sinus vs. AFib.</td>
       </tr>
     </tbody></table>
 
@@ -131,10 +131,10 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/hematologists/" target="_blank">Hematology</a> | 
-      <a href="https://www.aginghealth.website/posts/ozempic-older-adults-benefits-medicare/" target="_blank">Diabetes</a> | 
-      <a href="https://www.aginghealth.website/posts/coronary-heart-disease-womens-health-initiative/" target="_blank">Heart Attack Awareness</a> | 
-      <a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/" target="_blank">GERD and Sepsis</a>
+      <a href="https://www.aginghealth.website/posts/hematologists/" target="_blank">Hematology | 
+      <a href="https://www.aginghealth.website/posts/ozempic-older-adults-benefits-medicare/" target="_blank">Diabetes | 
+      <a href="https://www.aginghealth.website/posts/coronary-heart-disease-womens-health-initiative/" target="_blank">Heart Attack Awareness | 
+      <a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/" target="_blank">GERD and Sepsis
     </p>
   </div>
 
@@ -149,5 +149,5 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a></p>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</p>
 </div>

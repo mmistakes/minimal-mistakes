@@ -15,7 +15,7 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', 'Neurological', 'Dement
 <li>Brain infections</li>
 <li>Neurodegenerative diseases (such as Alzheimer disease or frontotemporal degeneration)</li>
 </ul>
-<p>Aphasia affects language — <strong>not intelligence</strong>. Individuals with aphasia typically retain their reasoning ability, personality, and awareness.<span></span></p><a name='more'></a><figure class="image">
+<p>Aphasia affects language — <strong>not intelligence</strong>. Individuals with aphasia typically retain their reasoning ability, personality, and awareness.<span></span></p><a name='more'><figure class="image">
   <img alt="A hand holds a sci-fi styled AAC tablet with glowing blue edges and a holographic grid of colorful communication symbols, including icons for “I want,” “Go,” “Eat,” “Help,” and “Speak,” set against a blurred futuristic cityscape." decoding="async" fetchpriority="high" loading="eager" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgI9b13oHIe0jmCbGrpl1NBcdMOu1Hv2IJAtDEoA3Nxk52STvUOYC5wrM-zgCSOJhIz0vCH0PSF1QxyigkWSnhK5G3Vv-jxnOQdymCuUngHlaNPlpYj6tcapsRF_df09I3MVGjyUmdKwMH1h7Y-c8JtT_s_3Quovuo9Y7O5GjlQFdpsOAF43Xxt8mGgf1d3/s16000/Sci-fi%20AAC%20device.webp" title="Futuristic AAC Device Interface" />
   <figcaption style="text-align: center;">
     Sci-fi AAC device with holographic pictogram grid—designed for expressive communication in futuristic care environments.
@@ -67,7 +67,7 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', 'Neurological', 'Dement
 <h3 style="text-align: left;">Primary Progressive Aphasia (PPA)</h3><ul>
 <li>Gradual worsening of language</li>
 <li>Caused by neurodegenerative disease</li>
-<li>May be <a href="https://www.aginghealth.website/posts/digital-speech-analysis-frontotemporal-degeneration/" rel="dofollow" title="Digital Speech Analysis Frontotemporal Degeneration"><b>associated with frontotemporal degeneration</b></a> or Alzheimer pathology³</li>
+<li>May be <a href="https://www.aginghealth.website/posts/digital-speech-analysis-frontotemporal-degeneration/" rel="dofollow" title="Digital Speech Analysis Frontotemporal Degeneration"><b>associated with frontotemporal degeneration</b> or Alzheimer pathology³</li>
 </ul>
 <hr />
 <h2 style="text-align: left;">What Causes Aphasia?</h2><h2></h2><h3 style="text-align: left;">1. Stroke (Most Common Cause)</h3><p style="text-align: left;"><span style="font-size: small;"><span style="font-weight: normal;">Ischemic or hemorrhagic stroke affecting the left hemisphere (dominant language side in most people) is the leadi</span></span><span style="font-size: small; font-weight: normal;">ng cause. ²</span></p>
@@ -131,7 +131,7 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', 'Neurological', 'Dement
 <hr />
 <h3 style="text-align: left;">4. Family &amp; Caregiver Involvement</h3><p>Caregiver training improves communication success and long-term outcomes. Support groups are also beneficial.</p>
 <hr />
-<h2 style="text-align: left;">Can Aphasia Be Prevented?</h2><p>While there is no definitive method to prevent aphasia, taking steps to reduce the risk of stroke can significantly lower the likelihood of developing the condition. <a href="https://www.aginghealth.website/posts/Maintaining-healthy-blood-pressure/" rel="dofollow" title="Maintaining Healthy Blood Pressure"><b>Maintaining a healthy lifestyle</b></a> through regular exercise, a balanced diet, <a href="https://www.aginghealth.website/posts/in-the-blood/" rel="dofollow" title="Key Insights Blood Tests Reveal About Your Health"><b>controlling blood pressure and cholesterol levels</b></a>, avoiding smoking, and managing <a href="https://www.aginghealth.website/posts/toxic-stress-links-health-links-conditions/" rel="dofollow" title="Toxic Stress Links Health Links Conditions"><b>chronic health conditions</b></a> are key strategies in minimizing stroke risk and, in turn, reducing the chance of aphasia.</p>
+<h2 style="text-align: left;">Can Aphasia Be Prevented?</h2><p>While there is no definitive method to prevent aphasia, taking steps to reduce the risk of stroke can significantly lower the likelihood of developing the condition. <a href="https://www.aginghealth.website/posts/Maintaining-healthy-blood-pressure/" rel="dofollow" title="Maintaining Healthy Blood Pressure"><b>Maintaining a healthy lifestyle</b> through regular exercise, a balanced diet, <a href="https://www.aginghealth.website/posts/in-the-blood/" rel="dofollow" title="Key Insights Blood Tests Reveal About Your Health"><b>controlling blood pressure and cholesterol levels</b>, avoiding smoking, and managing <a href="https://www.aginghealth.website/posts/toxic-stress-links-health-links-conditions/" rel="dofollow" title="Toxic Stress Links Health Links Conditions"><b>chronic health conditions</b> are key strategies in minimizing stroke risk and, in turn, reducing the chance of aphasia.</p>
 <h3 style="text-align: left;">Stroke Risk Reduction Includes:</h3>
 <ul>
 <li>Controlling blood pressure</li>
@@ -184,11 +184,11 @@ Early intervention improves long-term outcomes.
 
     Tommy T. Douglas is an independent health researcher and patient advocate. 
 
-    A <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="dofollow" title="Diabetes Heart Attack Survivor Lessons"><b>survivor of a major heart attack</b></a> (2008) who <a href="https://www.aginghealth.website/posts/diabetes/" rel="dofollow" title="Understanding Diabetes And Managing Blood Sugar"><b>manages Type 2 Diabetes</b></a> with 
+    A <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="dofollow" title="Diabetes Heart Attack Survivor Lessons"><b>survivor of a major heart attack</b> (2008) who <a href="https://www.aginghealth.website/posts/diabetes/" rel="dofollow" title="Understanding Diabetes And Managing Blood Sugar"><b>manages Type 2 Diabetes</b> with 
 
     Metformin and GLP‑1 therapy (Ozempic), he specializes in translating complex 
 
-    medical <a href="https://www.aginghealth.website/posts/seniors-health-nutrition/" rel="dofollow" title="Seniors Health Nutrition"><b>data into actionable health literacy for seniors</b></a>.
+    medical <a href="https://www.aginghealth.website/posts/seniors-health-nutrition/" rel="dofollow" title="Seniors Health Nutrition"><b>data into actionable health literacy for seniors</b>.
 
   </p>
 
@@ -200,13 +200,13 @@ Early intervention improves long-term outcomes.
 
   <p class="topic-links">
 
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
+    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart |
 
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism |
 
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
+    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
 
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
 
   </p><h1>AMA-Format Medical References</h1><p class="topic-links">
 </p><ol>

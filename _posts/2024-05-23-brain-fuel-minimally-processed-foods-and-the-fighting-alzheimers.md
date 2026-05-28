@@ -124,7 +124,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
   </div>
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Steps for Brain Resilience</h2>
-    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The MPF Pivot:</strong> Swap one ultra-processed snack for a minimally processed one (e.g., nuts or berries) daily.</li><li><input type="checkbox" /> <strong>Glymphatic Drainage:</strong> Prioritize 7–9 hours of sleep. This is when the brain’s "janitorial service" (the glymphatic system) is most active.</li><li><input type="checkbox" /> <strong>Bio-Hacking Monitoring:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech</a> to track <strong>Heart Rate Variability (HRV)</strong>—a key indicator of how your brain is managing systemic stress.</li></ul><ul class="ah-checklist">
+    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The MPF Pivot:</strong> Swap one ultra-processed snack for a minimally processed one (e.g., nuts or berries) daily.</li><li><input type="checkbox" /> <strong>Glymphatic Drainage:</strong> Prioritize 7–9 hours of sleep. This is when the brain’s "janitorial service" (the glymphatic system) is most active.</li><li><input type="checkbox" /> <strong>Bio-Hacking Monitoring:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech to track <strong>Heart Rate Variability (HRV)</strong>—a key indicator of how your brain is managing systemic stress.</li></ul><ul class="ah-checklist">
     </ul>
   </div>
 
@@ -132,10 +132,10 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating complex data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/what-is-a-pathologist/">Pathology</a> | 
-      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-men-women/">Heart Attack Awareness</a> | 
-      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver Health</a>
+      <a href="https://www.aginghealth.website/posts/what-is-a-pathologist/">Pathology | 
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic | 
+      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-men-women/">Heart Attack Awareness | 
+      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver Health
     </p>
   </div>
 
@@ -150,6 +150,6 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
 </div>

@@ -1,0 +1,1245 @@
+/usr/local/rvm/gems/default/gems/io-event-1.14.3/lib/io/event/support.rb:41: warning: IO::Buffer is experimental and both the Ruby and C interface may change in the future!
+For the Images check, the following failures were found:
+
+* At ./_site/2023/08/30/family-health-vaccines-choosing-pharmacies-or-clinics-for-care.html:403:
+
+  internal image /assets/images/vaccination.webp does not exist
+
+* At ./_site/2023/08/30/family-health-vaccines-choosing-pharmacies-or-clinics-for-care.html:556:
+
+  internal image /assets/images/vaccination.webp does not exist
+
+* At ./_site/2023/09/11/oxalates-do-they-may-cause-health-issues.html:426:
+
+  image link /assets/images/oxalate-infographic.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/2023/09/13/should-seniors-take-vitamins-evidencebased-guidance.html:403:
+
+  internal image /assets/images/pharmacy.webp does not exist
+
+* At ./_site/2023/09/13/should-seniors-take-vitamins-evidencebased-guidance.html:593:
+
+  internal image /assets/images/pharmacy.webp does not exist
+
+* At ./_site/2023/09/19/navigating-the-canned-soup-nutritional-minefield.html:399:
+
+  internal image /assets/images/soup.webp does not exist
+
+* At ./_site/2023/09/19/navigating-the-canned-soup-nutritional-minefield.html:599:
+
+  internal image /assets/images/soup.webp does not exist
+
+* At ./_site/2023/09/20/chitin-for-digestion-and-weight-loss-benefits-risks-and-evidence.html:394:
+
+  internal image /assets/images/mushrooms.webp does not exist
+
+* At ./_site/2023/09/20/chitin-for-digestion-and-weight-loss-benefits-risks-and-evidence.html:538:
+
+  internal image /assets/images/mushrooms.webp does not exist
+
+* At ./_site/2023/09/23/vaccines-after-50-to-stay-healthy-and-safe.html:396:
+
+  internal image /assets/images/the-jab.webp does not exist
+
+* At ./_site/2023/09/23/vaccines-after-50-to-stay-healthy-and-safe.html:549:
+
+  internal image /assets/images/the-jab.webp does not exist
+
+* At ./_site/2023/09/27/psoriasis-causes-symptoms-and-treatments.html:398:
+
+  internal image /assets/images/psoriasis-elbow.webp does not exist
+
+* At ./_site/2023/09/27/psoriasis-causes-symptoms-and-treatments.html:534:
+
+  internal image /assets/images/psoriasis-elbow.webp does not exist
+
+* At ./_site/2023/10/08/gluten-linked-issues-you-may-not-know.html:400:
+
+  internal image /assets/images/structure-small-intestine-villi.webp does not exist
+
+* At ./_site/2023/10/08/gluten-linked-issues-you-may-not-know.html:492:
+
+  internal image /assets/images/structure-small-intestine-villi.webp does not exist
+
+* At ./_site/2023/10/10/dont-ignore-the-warning-signs-of-type-2-diabetes.html:432:
+
+  internal image /assets/images/prediabetes.webp does not exist
+
+* At ./_site/2023/10/10/dont-ignore-the-warning-signs-of-type-2-diabetes.html:549:
+
+  internal image /assets/images/prediabetes.webp does not exist
+
+* At ./_site/2023/10/29/sustainable-living-a-green-healthy-life-that-truly-lasts.html:406:
+
+  internal image /assets/images/energy‑efficient.webp does not exist
+
+* At ./_site/2023/10/29/sustainable-living-a-green-healthy-life-that-truly-lasts.html:508:
+
+  internal image /assets/images/energy‑efficient.webp does not exist
+
+* At ./_site/2023/12/16/9-tips-healthy-aging.html:396:
+
+  internal image /assets/images/park-bench.webp does not exist
+
+* At ./_site/2023/12/16/9-tips-healthy-aging.html:502:
+
+  internal image /assets/images/park-bench.webp does not exist
+
+* At ./_site/2023/12/21/local-food-movement-benefits.html:398:
+
+  internal image /assets/images/farmer's-market.webp does not exist
+
+* At ./_site/2023/12/21/local-food-movement-benefits.html:479:
+
+  internal image /assets/images/farmer's-market.webp does not exist
+
+* At ./_site/2023/12/21/prison-study-women-punished-more-minor-violations.html:394:
+
+  internal image /assets/images/prison-women.webp does not exist
+
+* At ./_site/2023/12/21/prison-study-women-punished-more-minor-violations.html:468:
+
+  internal image /assets/images/prison-women.webp does not exist
+
+* At ./_site/2024/01/02/autoimmune-diseases-women-gender-gap.html:398:
+
+  internal image /assets/images/woman-autoimmune.webp does not exist
+
+* At ./_site/2024/01/02/autoimmune-diseases-women-gender-gap.html:475:
+
+  internal image /assets/images/woman-autoimmune.webp does not exist
+
+* At ./_site/2024/01/09/fitness-after-fifty-data-longevity.html:400:
+
+  internal image /assets/images/senior-power.webp does not exist
+
+* At ./_site/2024/01/09/fitness-after-fifty-data-longevity.html:415:
+
+  internal image /assets/images/zones.webp does not exist
+
+* At ./_site/2024/01/09/fitness-after-fifty-data-longevity.html:515:
+
+  internal image /assets/images/senior-power.webp does not exist
+
+* At ./_site/2024/01/09/fitness-after-fifty-data-longevity.html:530:
+
+  internal image /assets/images/zones.webp does not exist
+
+* At ./_site/2024/01/17/watchman-device-minimally-invasive-heart-technology.html:406:
+
+  internal image /assets/images/assets/images/catheter-ablation.webp does not exist
+
+* At ./_site/2024/01/17/watchman-device-minimally-invasive-heart-technology.html:502:
+
+  internal image /assets/images/assets/images/catheter-ablation.webp does not exist
+
+* At ./_site/2024/01/20/autoimmune-arthritis-types-symptoms.html:398:
+
+  internal image /assets/images/senior-walks-with-pain.webp does not exist
+
+* At ./_site/2024/01/20/autoimmune-arthritis-types-symptoms.html:417:
+
+  internal image /assets/images/rheumatoid-arthritis.webp does not exist
+
+* At ./_site/2024/01/20/autoimmune-arthritis-types-symptoms.html:497:
+
+  internal image /assets/images/senior-walks-with-pain.webp does not exist
+
+* At ./_site/2024/01/20/autoimmune-arthritis-types-symptoms.html:516:
+
+  internal image /assets/images/rheumatoid-arthritis.webp does not exist
+
+* At ./_site/2024/01/21/physical-therapy-autoimmune-arthritis.html:398:
+
+  internal image /assets/images/physical-therapy.webp does not exist
+
+* At ./_site/2024/01/21/physical-therapy-autoimmune-arthritis.html:410:
+
+  internal image /assets/images/rheumatoid-arthritis-joint-immune-response.webp does not exist
+
+* At ./_site/2024/01/21/physical-therapy-autoimmune-arthritis.html:535:
+
+  internal image /assets/images/physical-therapy.webp does not exist
+
+* At ./_site/2024/01/21/physical-therapy-autoimmune-arthritis.html:547:
+
+  internal image /assets/images/rheumatoid-arthritis-joint-immune-response.webp does not exist
+
+* At ./_site/2024/01/22/autoimmune-arthritis-2026-roadmap.html:409:
+
+  internal image /assets/images/rheumatoid-arthritis-joint-immune-response.webp does not exist
+
+* At ./_site/2024/01/22/autoimmune-arthritis-2026-roadmap.html:528:
+
+  internal image /assets/images/rheumatoid-arthritis-joint-immune-response.webp does not exist
+
+* At ./_site/2024/01/30/exploring-link-between-psoriasis-and-sleep.html:398:
+
+  internal image /assets/images/sleep-psoriasis.webp does not exist
+
+* At ./_site/2024/01/30/exploring-link-between-psoriasis-and-sleep.html:478:
+
+  internal image /assets/images/sleep-psoriasis.webp does not exist
+
+* At ./_site/2024/02/01/strong-bones-build-stronger-denser-bones.html:396:
+
+  internal image /assets/images/strong-bones.webp does not exist
+
+* At ./_site/2024/02/01/strong-bones-build-stronger-denser-bones.html:524:
+
+  internal image /assets/images/strong-bones.webp does not exist
+
+* At ./_site/2024/03/01/frontotemporal-dementia-unique-memory-loss.html:398:
+
+  internal image /assets/images/alzheimer's-frontotemporal-dementia.webp does not exist
+
+* At ./_site/2024/03/01/frontotemporal-dementia-unique-memory-loss.html:487:
+
+  internal image /assets/images/alzheimer's-frontotemporal-dementia.webp does not exist
+
+* At ./_site/2024/03/23/hearing-aids-necessity-cognitive-health.html:397:
+
+  internal image /assets/images/tom-hearing-aid.webp does not exist
+
+* At ./_site/2024/03/23/hearing-aids-necessity-cognitive-health.html:470:
+
+  internal image /assets/images/tom-hearing-aid.webp does not exist
+
+* At ./_site/2024/03/23/why-family-medicine-is-your-key-to-lifelong-health.html:398:
+
+  internal image /assets/images/primary-care-physicians.webp does not exist
+
+* At ./_site/2024/03/23/why-family-medicine-is-your-key-to-lifelong-health.html:471:
+
+  internal image /assets/images/primary-care-physicians.webp does not exist
+
+* At ./_site/2024/08/09/crispr-explained-a-beginners-guide-to-gene-editing.html:396:
+
+  image https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9ROcEEl52SpqWo6cx_vN38EcTucsiHybZ66-X8UlIvZaUrx1YaK8GN0icZx-z-UhauUct6H1ZmYwLkprAYq-PLZbfkV98_TqE6kEXUgyQ-T4cUl1U99gn47G0X1uYtGnz17Wzjw8LpiZ_kVavc1-VWIhjBjq065GB8upWELKN701egSnYSGmv73c6D3UN/s16000/CRISPR-Cas9-mechanism-of-Action-CRISPR-Cas9-system-targeting-a-DNA-sequence-adjacent-to.webp does not have an alt attribute
+
+* At ./_site/2024/08/09/crispr-explained-a-beginners-guide-to-gene-editing.html:418:
+
+  image https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9ROcEEl52SpqWo6cx_vN38EcTucsiHybZ66-X8UlIvZaUrx1YaK8GN0icZx-z-UhauUct6H1ZmYwLkprAYq-PLZbfkV98_TqE6kEXUgyQ-T4cUl1U99gn47G0X1uYtGnz17Wzjw8LpiZ_kVavc1-VWIhjBjq065GB8upWELKN701egSnYSGmv73c6D3UN/s16000/CRISPR-Cas9-mechanism-of-Action-CRISPR-Cas9-system-targeting-a-DNA-sequence-adjacent-to.webp does not have an alt attribute
+
+* At ./_site/[autoimmune]/2026/04/29/rheumatoid-arthritis-vitamin-d.html:443:
+
+  image link /assets/images/ra-joint-inflammation.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/[autoimmune]/2026/04/29/rheumatoid-arthritis-vitamin-d.html:470:
+
+  internal image /assets/images/vitamin-d-immune-action.webp does not exist
+
+* At ./_site/[autoimmune]/2026/04/29/rheumatoid-arthritis-vitamin-d.html:772:
+
+  internal image /assets/images/patient-physician-consultation.webp does not exist
+
+* At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:448:
+
+  image link /assets/images/vagus-exercise.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/brain-mind/2026/04/10/seniors-mental-health-internal-medicine.html:433:
+
+  internal image /assets/mental-health-counseling.webp does not exist
+
+* At ./_site/brain-mind/longevity/2026/01/20/why-akkermansia-is-the-next-frontier-in-weight-management.html:467:
+
+  internal image /assets/images/ does not exist
+
+* At ./_site/clinical-data/health-literacy/2025/07/01/rna-innovations-the-future-of-targeted-therapies.html:450:
+
+  image link /assets/images/rna-therapeutics.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/exercise/longevity/2026/05/05/reasons-to-walk-everyday.html:443:
+
+  image link /assets/images/infograghic-reasons-walk1.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/health literacy/senior-advocacy/2026/05/05/aging-top-ten-things-medicare-does-not-cover.html:444:
+
+  image link /assets/images/seniors-healthcare-review.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/health research/longevity series/2026/05/01/gut-brain-axis-neurodegeneration.html:442:
+
+  image link /assets/images/vagus-nerve-pathway.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/health research/longevity series/2026/05/01/gut-brain-axis-neurodegeneration.html:464:
+
+  image link /assets/images/enteric-origin-brainstem-pathway.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/heart-metabolic/2026/05/19/the-stealth-metabolic-trap-understanding-sarcopenic-obesity.html:456:
+
+  image link /assets/images/sarcopenia-metabolic-cycle.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:474:
+
+  internal image /assets/images/spatial-cytokines-mapping.webp does not exist
+
+For the Links check, the following failures were found:
+
+* At ./_site/2023/09/19/navigating-the-canned-soup-nutritional-minefield.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2023/09/19/navigating-the-canned-soup-nutritional-minefield.html:595:
+
+  'a' tag is missing a reference
+
+* At ./_site/2023/12/05/top-ten-reasons-to-walk-everyday.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2023/12/05/top-ten-reasons-to-walk-everyday.html:539:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/01/30/the-arthritis-diet-what-to-leave-off-your-plate.html:401:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/01/30/the-arthritis-diet-what-to-leave-off-your-plate.html:845:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/04/nias-50-year-history-of-aging-and-alzheimers-research.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/04/nias-50-year-history-of-aging-and-alzheimers-research.html:416:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/12/silent-symptoms-of-dementia-early-detection.html:396:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/12/silent-symptoms-of-dementia-early-detection.html:807:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/18/atrial-fibrillation-causes-symptoms-and-treatments.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/18/atrial-fibrillation-causes-symptoms-and-treatments.html:557:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/18/top-senior-health-crises-causes-and-solutions.html:406:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/18/top-senior-health-crises-causes-and-solutions.html:668:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/27/senior-health-the-role-of-nutrition-in-aging-well.html:402:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/02/27/senior-health-the-role-of-nutrition-in-aging-well.html:675:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/05/tummy-troubles-helpful-home-remedies-for-diarrhea.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/05/tummy-troubles-helpful-home-remedies-for-diarrhea.html:535:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/09/edema-information-about-causes-and-effective-treatments.html:393:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/09/edema-information-about-causes-and-effective-treatments.html:512:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/15/internal-medicine-a-cornerstone-of-adult-healthcare.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/15/internal-medicine-a-cornerstone-of-adult-healthcare.html:802:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/16/defying-age-secrets-to-thriving-health-past-65.html:393:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/16/defying-age-secrets-to-thriving-health-past-65.html:685:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/22/the-silent-epidemic-recognizing-undiagnosed-mild-cognitive-impairment.html:398:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/22/the-silent-epidemic-recognizing-undiagnosed-mild-cognitive-impairment.html:695:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/24/nurse-practitioner-vs-physician-assistant-decoding-healthcare-roles.html:393:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/24/nurse-practitioner-vs-physician-assistant-decoding-healthcare-roles.html:527:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/25/sweet-study-sugar-substitutes-and-artificial-sweeteners.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/25/sweet-study-sugar-substitutes-and-artificial-sweeteners.html:445:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/26/understanding-aphasia-causes-symptoms-and-treatments.html:403:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/03/26/understanding-aphasia-causes-symptoms-and-treatments.html:713:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/09/psoriasis-comorbidities-link-to-systemic-inflammation-and-traes.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/09/psoriasis-comorbidities-link-to-systemic-inflammation-and-traes.html:468:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/13/is-variceal-hemorrhage-life-threatening-in-liver-disease.html:393:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/13/is-variceal-hemorrhage-life-threatening-in-liver-disease.html:457:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/14/understanding-the-role-of-a-gastroenterologist.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/14/understanding-the-role-of-a-gastroenterologist.html:595:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/23/microplastics-in-our-bodies-a-looming-threat.html:393:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/23/microplastics-in-our-bodies-a-looming-threat.html:406:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/28/dont-ignore-difficulty-swallowing-understanding-dysphagia.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/04/28/dont-ignore-difficulty-swallowing-understanding-dysphagia.html:410:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/05/03/building-life-from-scratch-artificial-cell-research-in-2024.html:395:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/05/03/building-life-from-scratch-artificial-cell-research-in-2024.html:411:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/05/05/how-to-experience-a-good-nights-sleep.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/05/05/how-to-experience-a-good-nights-sleep.html:626:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/05/06/genetic-engineering-treatments-for-hopeful-glioblastoma-patients.html:524:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/06/genetic-engineering-treatments-for-hopeful-glioblastoma-patients.html:667:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/07/aging-hormones-how-an-endocrinologist-helps-you-thrive.html:519:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/07/aging-hormones-how-an-endocrinologist-helps-you-thrive.html:657:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/10/your-livers-champion-unveiling-the-role-of-a-hepatologist.html:507:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/10/your-livers-champion-unveiling-the-role-of-a-hepatologist.html:633:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/12/brain-boost-the-potential-of-creatine-for-cognitive-function.html:509:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/12/brain-boost-the-potential-of-creatine-for-cognitive-function.html:637:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/15/dont-be-a-statistic-heart-attack-prevention-signs-what-to-do.html:523:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/15/dont-be-a-statistic-heart-attack-prevention-signs-what-to-do.html:665:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/16/demystifying-medical-information-understanding-complex-medical-terms.html:513:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/16/demystifying-medical-information-understanding-complex-medical-terms.html:645:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/17/bird-flu-outbreak-separating-fact-from-fear-2026-update.html:518:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/17/bird-flu-outbreak-separating-fact-from-fear-2026-update.html:655:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/17/neuropathy-a-silent-threatpossibly-underdiagnosed-and-undertreated.html:538:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/17/neuropathy-a-silent-threatpossibly-underdiagnosed-and-undertreated.html:719:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/17/the-masters-of-cells-understanding-the-role-of-pathologists.html:495:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/17/the-masters-of-cells-understanding-the-role-of-pathologists.html:609:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/18/mastering-mindfulness-a-beginners-journey-2024-update.html:524:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/18/mastering-mindfulness-a-beginners-journey-2024-update.html:666:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/18/wet-age-related-macular-degeneration-wet-amd-need-to-know.html:522:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/18/wet-age-related-macular-degeneration-wet-amd-need-to-know.html:663:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/19/beyond-the-burn-digesting-knowledge-of-gerd.html:516:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/19/beyond-the-burn-digesting-knowledge-of-gerd.html:651:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/23/brain-fuel-minimally-processed-foods-and-the-fighting-alzheimers.html:536:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/23/brain-fuel-minimally-processed-foods-and-the-fighting-alzheimers.html:691:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/25/do-ultra-processed-foods-affect-brain-function.html:539:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/25/do-ultra-processed-foods-affect-brain-function.html:697:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/28/dementia-new-insights-on-memory-loss-and-the-brain.html:528:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/28/dementia-new-insights-on-memory-loss-and-the-brain.html:675:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/29/atrial-fibrillation-updates-heart-failure-diagnosis-and-prevention.html:535:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/29/atrial-fibrillation-updates-heart-failure-diagnosis-and-prevention.html:688:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/31/aging-and-the-challenge-for-pain-management-providers.html:528:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/31/aging-and-the-challenge-for-pain-management-providers.html:674:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/31/excess-ammonia-in-blood-dangers-symptoms-causes-and-treatment.html:510:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/05/31/excess-ammonia-in-blood-dangers-symptoms-causes-and-treatment.html:638:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/01/skin-to-joints-the-progression-of-psoriasis-to-psoriatic-arthritis.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/01/skin-to-joints-the-progression-of-psoriasis-to-psoriatic-arthritis.html:811:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/02/discovering-your-biological-age-the-genetic-connection.html:559:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/02/discovering-your-biological-age-the-genetic-connection.html:737:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/02/why-older-adults-need-extra-protection-in-hot-weather.html:526:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/02/why-older-adults-need-extra-protection-in-hot-weather.html:671:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/03/can-your-speech-predict-frontotemporal-degeneration.html:525:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/03/can-your-speech-predict-frontotemporal-degeneration.html:669:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/06/09/understanding-lewy-body-dementia-and-the-latest-research.html:591:
+
+  http://www.lbda.org/ is not an HTTPS link
+
+* At ./_site/2024/06/09/understanding-lewy-body-dementia-and-the-latest-research.html:591:
+
+  http://www.nia.nih.gov/ is not an HTTPS link
+
+* At ./_site/2024/06/09/understanding-lewy-body-dementia-and-the-latest-research.html:799:
+
+  http://www.lbda.org/ is not an HTTPS link
+
+* At ./_site/2024/06/09/understanding-lewy-body-dementia-and-the-latest-research.html:799:
+
+  http://www.nia.nih.gov/ is not an HTTPS link
+
+* At ./_site/2024/06/21/lou-gehrigs-disease-als-symptoms-diagnosis-and-future-hope.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/21/lou-gehrigs-disease-als-symptoms-diagnosis-and-future-hope.html:551:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/26/itchy-eyelid-psoriasis-psoriatic-arthritis-and-mental-fatigue.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/26/itchy-eyelid-psoriasis-psoriatic-arthritis-and-mental-fatigue.html:472:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/29/beat-the-heat-how-some-medications-affect-your-body-in-summer.html:394:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/29/beat-the-heat-how-some-medications-affect-your-body-in-summer.html:562:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/30/psoriasis-your-skin-saltwater-chlorine-and-swimming.html:397:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/06/30/psoriasis-your-skin-saltwater-chlorine-and-swimming.html:497:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/07/09/understanding-shingles-essential-insights-and-prevention-tips.html:405:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/07/09/understanding-shingles-essential-insights-and-prevention-tips.html:451:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/07/19/fall-allergies-dont-let-autumn-spoil-your-fun.html:401:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/07/19/fall-allergies-dont-let-autumn-spoil-your-fun.html:775:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/07/21/the-brains-orchestra-the-gene-regulation-networks.html:487:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/07/21/the-brains-orchestra-the-gene-regulation-networks.html:593:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:412:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:820:
+
+  'a' tag is missing a reference
+
+* At ./_site/2024/11/29/cortisol-the-stress-hormone-and-its-health-impact.html:496:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2024/11/29/cortisol-the-stress-hormone-and-its-health-impact.html:611:
+
+  http://aginghealth.website is not an HTTPS link
+
+* At ./_site/2025/01/16/the-connection-of-glucose-metabolism-and-alzheimers.html:400:
+
+  'a' tag is missing a reference
+
+* At ./_site/2025/01/16/the-connection-of-glucose-metabolism-and-alzheimers.html:637:
+
+  'a' tag is missing a reference
+
+* At ./_site/2025/02/01/why-tylenol-is-often-safer-than-advil-for-liver-patients.html:396:
+
+  'a' tag is missing a reference
+
+* At ./_site/2025/02/01/why-tylenol-is-often-safer-than-advil-for-liver-patients.html:592:
+
+  'a' tag is missing a reference
+
+* At ./_site/clinical research/2024/08/10/crispr-gene-editing-is-reshaping-medicine-and-healthcare.html:444:
+
+  /assets/images/crispr-cas9-mechanism.webp is a protocol-relative URL, use explicit https:// instead
+
+* At ./_site/nutrition/2024/08/16/intermittent-fasting-cutting-the-hype-debunking-myths.html:525:
+
+  /assets/images/visceral-subcutaneous-fat.webp is a protocol-relative URL, use explicit https:// instead
+
+For the Links > Internal check, the following failures were found:
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:396:
+
+  internally linking to /posts/essential-health-screenings-seniors-aging/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:408:
+
+  internally linking to /posts/what-types-of-insurance-should-i-have/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:409:
+
+  internally linking to /posts/digital-doctor-dilemma-online-health-risks/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:414:
+
+  internally linking to /posts/healthy-after-65/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:419:
+
+  internally linking to /posts/alleviate-nausea/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:421:
+
+  internally linking to /posts/sleep-apnea/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:459:
+
+  internally linking to /posts/essential-health-screenings-seniors-aging/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:471:
+
+  internally linking to /posts/what-types-of-insurance-should-i-have/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:472:
+
+  internally linking to /posts/digital-doctor-dilemma-online-health-risks/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:477:
+
+  internally linking to /posts/healthy-after-65/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:482:
+
+  internally linking to /posts/alleviate-nausea/, which does not exist
+
+* At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:484:
+
+  internally linking to /posts/sleep-apnea/, which does not exist
+
+* At ./_site/2023/09/04/grains-friend-or-foe-whole-grains-and-health.html:646:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/2023/09/04/grains-friend-or-foe-whole-grains-and-health.html:911:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:512:
+
+  internally linking to /posts/diabetes-heart-attack-survivor-lessons/, which does not exist
+
+* At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:513:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:673:
+
+  internally linking to /posts/diabetes-heart-attack-survivor-lessons/, which does not exist
+
+* At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:674:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/2024/01/21/frozen-shoulder-treatment-options.html:473:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/2024/01/21/frozen-shoulder-treatment-options.html:595:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/2024/03/06/healthspan-not-only-living-long-but-living-well.html:520:
+
+  internally linking to cardiovascular issues, which does not exist
+
+* At ./_site/2024/03/06/healthspan-not-only-living-long-but-living-well.html:780:
+
+  internally linking to cardiovascular issues, which does not exist
+
+* At ./_site/2024/06/01/skin-to-joints-the-progression-of-psoriasis-to-psoriatic-arthritis.html:536:
+
+  internally linking to YOUR_URL_HERE, which does not exist
+
+* At ./_site/2024/06/01/skin-to-joints-the-progression-of-psoriasis-to-psoriatic-arthritis.html:953:
+
+  internally linking to YOUR_URL_HERE, which does not exist
+
+* At ./_site/2024/07/05/social-connection-loneliness-has-links-to-chronic-disease.html:429:
+
+  internally linking to Loneliness affects more than just emotions—it takes a toll on physical health too. Research shows a strong link between social isolation and a higher risk of chronic illnesses. According to the CDC, being socially isolated or lonely can raise the chances of developing serious issues like heart disease, stroke, type 2 diabetes, depression, anxiety, self-harm, dementia, and even dying earlier. A study in the Annals of Behavioral Medicine also found that loneliness and isolation are tied to heart disease and type 2 diabetes, with these links explained by existing psychological and behavioral factors. All of this highlights just how important staying socially connected is for overall health., which does not exist
+
+* At ./_site/2024/07/05/social-connection-loneliness-has-links-to-chronic-disease.html:514:
+
+  internally linking to Loneliness affects more than just emotions—it takes a toll on physical health too. Research shows a strong link between social isolation and a higher risk of chronic illnesses. According to the CDC, being socially isolated or lonely can raise the chances of developing serious issues like heart disease, stroke, type 2 diabetes, depression, anxiety, self-harm, dementia, and even dying earlier. A study in the Annals of Behavioral Medicine also found that loneliness and isolation are tied to heart disease and type 2 diabetes, with these links explained by existing psychological and behavioral factors. All of this highlights just how important staying socially connected is for overall health., which does not exist
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:681:
+
+  internally linking to /alzheimers-type-3-diabetes, which does not exist
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:687:
+
+  internally linking to /psoriasis-cardiovascular-risk, which does not exist
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:693:
+
+  internally linking to /psoriasis-treatment-abbie-assist, which does not exist
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:1089:
+
+  internally linking to /alzheimers-type-3-diabetes, which does not exist
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:1095:
+
+  internally linking to /psoriasis-cardiovascular-risk, which does not exist
+
+* At ./_site/2024/08/16/crispr-beyond-the-hype-challenges-and-the-road-ahead.html:1101:
+
+  internally linking to /psoriasis-treatment-abbie-assist, which does not exist
+
+* At ./_site/[health research, nutrition]/2026/05/01/gut-brain-nutrition-protocol-lbd.html:545:
+
+  internally linking to /posts/gut-brain-axis-neurodegeneration/, which does not exist
+
+* At ./_site/[health research, nutrition]/2026/05/01/gut-brain-nutrition-protocol-lbd.html:546:
+
+  internally linking to /posts/choosing-medical-partner-guide/, which does not exist
+
+* At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:427:
+
+  internally linking to /2026/05/gut-brain-nutrition-protocol-lbd.md, which does not exist
+
+* At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:544:
+
+  internally linking to /2026/03/choosing-medical-partner-guide.md, which does not exist
+
+* At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:551:
+
+  internally linking to /2026/04/vagus-nerve-neurodegeneration.md, which does not exist
+
+* At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:552:
+
+  internally linking to /2026/05/gut-brain-nutrition-protocol-lbd.md, which does not exist
+
+* At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:553:
+
+  internally linking to /2026/03/choosing-medical-partner-guide.md, which does not exist
+
+* At ./_site/brain-mind/2026/01/09/brain-health-secrets-exploring-neuroplasticity-benefits.html:529:
+
+  internally linking to /posts/why-akkermansia-is-the-next-frontier-in-weight-management/, which does not exist
+
+* At ./_site/brain-mind/2026/03/08/mind-matters-cultivating-mental-health.html:427:
+
+  internally linking to /posts/cognitive-reframing-cbt-guide/, which does not exist
+
+* At ./_site/brain-mind/2026/03/08/mind-matters-cultivating-mental-health.html:574:
+
+  internally linking to /posts/diabetes-heart-attack-survivor-lessons/, which does not exist
+
+* At ./_site/brain-mind/2026/03/08/mind-matters-cultivating-mental-health.html:575:
+
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+
+* At ./_site/brain-mind/longevity/2026/01/20/why-akkermansia-is-the-next-frontier-in-weight-management.html:470:
+
+  internally linking to /posts/gut-health-weight-loss/, which does not exist
+
+* At ./_site/categories/index.html:4063:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:5970:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:6893:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:7469:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:7964:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:8307:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:8572:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:8756:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:8913:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9072:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9205:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9321:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9413:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9521:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9617:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9702:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9755:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9808:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9868:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9935:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:9992:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10045:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10098:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10149:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10201:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10252:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10303:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10354:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10405:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10456:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10511:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10562:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/categories/index.html:10613:
+
+  internally linking to #page-title; the file exists, but the hash 'page-title' does not
+
+* At ./_site/cognitive health/mental wellness/2026/05/05/perception-vs-reality-health.html:646:
+
+  internally linking to /posts/cortisol-stress-hormone-effects-management/, which does not exist
+
+* At ./_site/exercise/longevity/2026/05/05/reasons-to-walk-everyday.html:561:
+
+  internally linking to /posts/the-protein-paradox-deficiency-signs/, which does not exist
+
+* At ./_site/health literacy/senior-advocacy/2026/05/04/medicare-basics-senior-guide.html:571:
+
+  internally linking to /assets/pdf/2026-Biological-Age-Tracker-Guide.pdf, which does not exist
+
+* At ./_site/health literacy/senior-advocacy/2026/05/05/aging-top-ten-things-medicare-does-not-cover.html:615:
+
+  internally linking to /posts/medicare-basics-senior-guide/, which does not exist
+
+* At ./_site/health research/longevity series/2026/05/01/gut-brain-axis-neurodegeneration.html:579:
+
+  internally linking to /posts/lewy-body-dementia-guide/, which does not exist
+
+* At ./_site/heart-metabolic/2026/01/20/the-apob-analysis.html:457:
+
+  internally linking to /posts/genomic-medicine/, which does not exist
+
+* At ./_site/heart-metabolic/2026/01/24/psoriasis-metabolic-syndrome-connection-mortality-risk.html:447:
+
+  internally linking to /posts/chronic-inflammation-causes-symptoms-treatment/, which does not exist
+
+* At ./_site/heart-metabolic/2026/01/24/psoriasis-metabolic-syndrome-connection-mortality-risk.html:498:
+
+  internally linking to /posts/dementia-mortality-lucidity-sleep-apnea-aging-brain/, which does not exist
+
+* At ./_site/heart-metabolic/2026/01/24/systemic-inflammation-in-psoriasis-beyond-the-skin.html:439:
+
+  internally linking to /posts/psoriasis-metabolic-syndrome-connection-mortality-risk/, which does not exist
+
+* At ./_site/heart-metabolic/2026/01/24/systemic-inflammation-in-psoriasis-beyond-the-skin.html:511:
+
+  internally linking to /posts/psoriasis-metabolic-syndrome-connection-mortality-risk/, which does not exist
+
+* At ./_site/human-anatomy/wellness/2023/11/11/biological-stories-hidden-wonders.html:490:
+
+  internally linking to /posts/dementia-research-2026-ptau217-blood-test-breakthroughs/, which does not exist
+
+* At ./_site/human-anatomy/wellness/2023/11/11/biological-stories-hidden-wonders.html:493:
+
+  internally linking to /posts/genomic-medicine-2026-senior-health-guide/, which does not exist
+
+* At ./_site/longevity/2025/07/02/doctor-internet-practice-online-health-advice-safety.html:469:
+
+  internally linking to /posts/ent-doctor/, which does not exist
+
+* At ./_site/longevity/2025/07/13/be-ready-things-to-know-for-emergency-preparedness.html:487:
+
+  internally linking to /posts/is-heart-attack-risk-increased-more-by/, which does not exist
+
+* At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:465:
+
+  internally linking to /posts/heartburn-vs-heart-attack-know-the-warning-signs/, which does not exist
+
+* At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:476:
+
+  internally linking to /posts/senior-care-ai-early-sepsis-detection-saves-lives/, which does not exist
+
+* At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:524:
+
+  internally linking to /posts/the-essential-health-screenings-guide-for-seniors/, which does not exist
+
+* At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:542:
+
+  internally linking to /posts/support-senior-mental-health/, which does not exist
+
+* At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:548:
+
+  internally linking to /posts/tbi-in-older-adults-fall-prevention-recovery/, which does not exist
+
+* At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:452:
+
+  internally linking to /posts/senior-health-education/, which does not exist
+
+* At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:466:
+
+  internally linking to /posts/precision-medicine-aging/, which does not exist
+
+* At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:521:
+
+  internally linking to /posts/genomics-and-longevity/, which does not exist
+
+* At ./_site/longevity/2026/01/17/the-comprehensive-protocol-to-human-longevity.html:451:
+
+  internally linking to /posts/the-protein-paradox-metabolism-amino/, which does not exist
+
+* At ./_site/longevity/2026/01/17/the-comprehensive-protocol-to-human-longevity.html:456:
+
+  internally linking to /search/label/Neuro, which does not exist
+
+* At ./_site/longevity/2026/03/31/healthy-aging-evidence-based-tips.html:431:
+
+  internally linking to /posts/medical-questionnaires-confuse-patients/, which does not exist
+
+* At ./_site/longevity/2026/03/31/healthy-aging-evidence-based-tips.html:446:
+
+  internally linking to /posts/loneliness-chronic-disease/, which does not exist
+
+* At ./_site/longevity/2026/03/31/healthy-aging-evidence-based-tips.html:495:
+
+  internally linking to /posts/creatine-older-adults-maintain-muscle/, which does not exist
+
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:481:
+
+  internally linking to /home-safety-checklist/, which does not exist
+
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:513:
+
+  internally linking to /home-safety-checklist/, which does not exist
+
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:514:
+
+  internally linking to /how-we-research/, which does not exist
+
+* At ./_site/posts/dementia-awareness-early-symptoms-metabolic-fog/index.html:504:
+
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+
+* At ./_site/posts/do-biologic-therapies-reduce-mortality-psoriasis/index.html:500:
+
+  internally linking to /posts/big-six-pillars-optimal-aging-health/, which does not exist
+
+* At ./_site/posts/immigration-crackdowns-caregiving-industry-impact/index.html:518:
+
+  internally linking to /posts/mental-health-self-care/, which does not exist
+
+* At ./_site/posts/lessons-from-a-2008-heart-attack-survivor/index.html:539:
+
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+
+* At ./_site/posts/low-glycemic-foods-list-sugar-management/index.html:550:
+
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+
+* At ./_site/posts/low-glycemic-foods-sugar-management/index.html:398:
+
+  internally linking to assets/img/glycemic-load-index.webp, which does not exist
+
+* At ./_site/posts/low-glycemic-foods-sugar-management/index.html:435:
+
+  internally linking to /how-we-research/#Glycemic-Load, which does not exist
+
+* At ./_site/posts/mini-stroke-prevention-liver-pressure-carvedilol/index.html:508:
+
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+
+* At ./_site/posts/mini-stroke-symptoms-first-48-hours-prevention/index.html:545:
+
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+
+* At ./_site/posts/patient-led-clinical-insights-liver-health/index.html:495:
+
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+
+* At ./_site/posts/psoriasis-and-cardiovascular-disease/index.html:418:
+
+  internally linking to /posts/big-six-pillars-optimal-aging-health/, which does not exist
+
+* At ./_site/posts/quitting-smoking-psoriasis-inflammation/index.html:500:
+
+  internally linking to /posts/arthritis-foods-to-avoid/, which does not exist
+
+* At ./_site/posts/seniors-heart-health-tips/index.html:441:
+
+  internally linking to /posts/big-six-pillars-optimal-aging-health/, which does not exist
+
+* At ./_site/posts/vaccines-infections-diseases-circadian-rhythm/index.html:498:
+
+  internally linking to /posts/is-heart-attack-risk-increased-more-by/, which does not exist
+
+* At ./_site/posts/wisdom-aging-brain-cognitive-shifts/index.html:476:
+
+  internally linking to /posts/dementia-early-symptoms-vs-metabolic-fog/, which does not exist
+
+* At ./_site/senior-advocacy/long-term care/2026/05/06/top-ten-long-term-care-tips-to-know.html:593:
+
+  internally linking to /posts/medicare-basics-senior-guide/, which does not exist
+
+
+HTML-Proofer found 309 failures!

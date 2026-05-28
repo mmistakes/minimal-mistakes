@@ -6,7 +6,7 @@ description: ""
 tags: ['🧬 Clinical Research', '❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '🌱 Senior Longevity', '💪 Functional Fitness']
 ---
 
-<h2 style="text-align: left;">An Introduction to the Connection Between Psoriasis and Psoriatic Arthritis</h2><p style="font-size: medium; font-weight: 400;">Psoriasis is a chronic, immune‑mediated inflammatory disease that primarily affects the skin, causing red or violaceous patches covered with silvery‑white scales. Beyond its visible effects, psoriasis is a systemic condition that can influence overall health and quality of life. For some individuals, psoriasis is limited to the skin; for others, it can progress to a related inflammatory joint disease known as psoriatic arthritis (PsA).<span></span></p><a name='more'></a><p></p><p style="font-size: medium; font-weight: 400;">Understanding the relationship between psoriasis and psoriatic arthritis is essential, as early recognition and treatment of joint symptoms can prevent long‑term joint damage and disability.</p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqKk-r8EQjvjANx4IMF4RsDHpOgv8tKJmhzwsMerUgY5kvpn08PZaqf7_QwBWVpWfqf2lcB_3uslCPCQDVBdDJsenWAh5QgbpdLlD8pjvE5HTiNccWpn4iQ3BB36HHrDod9c8SphJ3Hyq_xR8c4iIz6Qt5nUlZWdshdTRvFlq4cQlelbwpfAxh9ig_ACce/s925/Scaly%20patches%20of%20psoriasis%20on%20hands.webp" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="The image presents a close-up view of psoriasis-affected skin on a person's hand, highlighting the scaly patches. It effectively demonstrates the texture and visual characteristics of the condition, highlighting the typical scaling and inflammation associated with psoriasis." border="0" data-original-height="523" data-original-width="925" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqKk-r8EQjvjANx4IMF4RsDHpOgv8tKJmhzwsMerUgY5kvpn08PZaqf7_QwBWVpWfqf2lcB_3uslCPCQDVBdDJsenWAh5QgbpdLlD8pjvE5HTiNccWpn4iQ3BB36HHrDod9c8SphJ3Hyq_xR8c4iIz6Qt5nUlZWdshdTRvFlq4cQlelbwpfAxh9ig_ACce/s16000/Scaly%20patches%20of%20psoriasis%20on%20hands.webp" title="Psoriasis on the skin of the hands" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><span face="Inter, sans-serif" style="background-color: white; color: #1c1c1c; font-size: 15.75px; text-align: start; white-space-collapse: break-spaces;">Psoriasis can be a challenging condition to manage, as it manifests in various ways from person to person. Some may experience small, dandruff-like scales, while others face more extensive outbreaks covering larger areas of their skin. Understanding this diversity is important, as it can significantly impact an individual's daily life and self-esteem.</span></td></tr></tbody></table><p></p><div><p>Psoriasis is a chronic, immune‑mediated inflammatory disease that primarily affects the skin, causing red or violaceous patches covered with silvery‑white scales. Beyond its visible effects, psoriasis is a systemic condition that can influence overall health and quality of life. For some individuals, psoriasis is limited to the skin; for others, it can progress to a related inflammatory joint disease known as psoriatic arthritis (PsA).</p><p>Understanding the relationship between psoriasis and psoriatic arthritis is essential, as early recognition and treatment of joint symptoms can prevent long‑term joint damage and disability.
+<h2 style="text-align: left;">An Introduction to the Connection Between Psoriasis and Psoriatic Arthritis</h2><p style="font-size: medium; font-weight: 400;">Psoriasis is a chronic, immune‑mediated inflammatory disease that primarily affects the skin, causing red or violaceous patches covered with silvery‑white scales. Beyond its visible effects, psoriasis is a systemic condition that can influence overall health and quality of life. For some individuals, psoriasis is limited to the skin; for others, it can progress to a related inflammatory joint disease known as psoriatic arthritis (PsA).<span></span></p><a name='more'><p></p><p style="font-size: medium; font-weight: 400;">Understanding the relationship between psoriasis and psoriatic arthritis is essential, as early recognition and treatment of joint symptoms can prevent long‑term joint damage and disability.</p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqKk-r8EQjvjANx4IMF4RsDHpOgv8tKJmhzwsMerUgY5kvpn08PZaqf7_QwBWVpWfqf2lcB_3uslCPCQDVBdDJsenWAh5QgbpdLlD8pjvE5HTiNccWpn4iQ3BB36HHrDod9c8SphJ3Hyq_xR8c4iIz6Qt5nUlZWdshdTRvFlq4cQlelbwpfAxh9ig_ACce/s925/Scaly%20patches%20of%20psoriasis%20on%20hands.webp" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="The image presents a close-up view of psoriasis-affected skin on a person's hand, highlighting the scaly patches. It effectively demonstrates the texture and visual characteristics of the condition, highlighting the typical scaling and inflammation associated with psoriasis." border="0" data-original-height="523" data-original-width="925" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqKk-r8EQjvjANx4IMF4RsDHpOgv8tKJmhzwsMerUgY5kvpn08PZaqf7_QwBWVpWfqf2lcB_3uslCPCQDVBdDJsenWAh5QgbpdLlD8pjvE5HTiNccWpn4iQ3BB36HHrDod9c8SphJ3Hyq_xR8c4iIz6Qt5nUlZWdshdTRvFlq4cQlelbwpfAxh9ig_ACce/s16000/Scaly%20patches%20of%20psoriasis%20on%20hands.webp" title="Psoriasis on the skin of the hands" /></td></tr><tr><td class="tr-caption" style="text-align: center;"><span face="Inter, sans-serif" style="background-color: white; color: #1c1c1c; font-size: 15.75px; text-align: start; white-space-collapse: break-spaces;">Psoriasis can be a challenging condition to manage, as it manifests in various ways from person to person. Some may experience small, dandruff-like scales, while others face more extensive outbreaks covering larger areas of their skin. Understanding this diversity is important, as it can significantly impact an individual's daily life and self-esteem.</span></td></tr></tbody></table><p></p><div><p>Psoriasis is a chronic, immune‑mediated inflammatory disease that primarily affects the skin, causing red or violaceous patches covered with silvery‑white scales. Beyond its visible effects, psoriasis is a systemic condition that can influence overall health and quality of life. For some individuals, psoriasis is limited to the skin; for others, it can progress to a related inflammatory joint disease known as psoriatic arthritis (PsA).</p><p>Understanding the relationship between psoriasis and psoriatic arthritis is essential, as early recognition and treatment of joint symptoms can prevent long‑term joint damage and disability.
 </p>
 
 <h2 style="text-align: left;">Understanding Psoriasis and Psoriatic Arthritis</h2>
@@ -300,7 +300,7 @@ Psoriasis and psoriatic arthritis are closely connected immune‑mediated condit
       <ul class="ah-list">
         <li itemprop="citation">
           Mayo Clinic. Psoriatic Arthritis: Symptoms &amp; Causes.  
-          <a href="https://www.mayoclinic.org/diseases-conditions/psoriatic-arthritis/symptoms-causes/syc-20354076" rel="noopener">mayoclinic.org</a>
+          <a href="https://www.mayoclinic.org/diseases-conditions/psoriatic-arthritis/symptoms-causes/syc-20354076" rel="noopener">mayoclinic.org
         </li>
       </ul>
     </div>
@@ -313,7 +313,7 @@ Psoriasis and psoriatic arthritis are closely connected immune‑mediated condit
       <ul class="ah-list">
         <li itemprop="citation">
           National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS). Psoriatic Arthritis Overview.  
-          <a href="https://www.niams.nih.gov/health-topics/psoriatic-arthritis" rel="noopener">niams.nih.gov</a>
+          <a href="https://www.niams.nih.gov/health-topics/psoriatic-arthritis" rel="noopener">niams.nih.gov
         </li>
       </ul>
     </div>
@@ -326,7 +326,7 @@ Psoriasis and psoriatic arthritis are closely connected immune‑mediated condit
       <ul class="ah-list">
         <li itemprop="citation">
           National Psoriasis Foundation. Psoriatic Arthritis Screening Test (PEST).  
-          <a href="https://www.psoriasis.org/psoriatic-arthritis-screening-test/" rel="noopener">psoriasis.org</a>
+          <a href="https://www.psoriasis.org/psoriatic-arthritis-screening-test/" rel="noopener">psoriasis.org
         </li>
       </ul>
     </div>
@@ -339,7 +339,7 @@ Psoriasis and psoriatic arthritis are closely connected immune‑mediated condit
       <ul class="ah-list">
         <li itemprop="citation">
           Arthritis Foundation. Psoriatic Arthritis.  
-          <a href="https://www.arthritis.org/diseases/psoriatic-arthritis" rel="noopener">arthritis.org</a>
+          <a href="https://www.arthritis.org/diseases/psoriatic-arthritis" rel="noopener">arthritis.org
         </li>
       </ul>
     </div>
@@ -352,7 +352,7 @@ Psoriasis and psoriatic arthritis are closely connected immune‑mediated condit
       <ul class="ah-list">
         <li itemprop="citation">
           GRAPPA. Treatment Recommendations Overview.  
-          <a href="https://www.jrheum.org/content/jrheum/50/Suppl_2/31.full-text.pdf" rel="noopener">jrheum.org</a>
+          <a href="https://www.jrheum.org/content/jrheum/50/Suppl_2/31.full-text.pdf" rel="noopener">jrheum.org
         </li>
       </ul>
     </div>
@@ -365,7 +365,7 @@ Psoriasis and psoriatic arthritis are closely connected immune‑mediated condit
       <ul class="ah-list">
         <li itemprop="citation">
           Dactylitis Review Informing GRAPPA Recommendations.  
-          <a href="https://www.jrheum.org/content/50/2/265" rel="noopener">jrheum.org</a>
+          <a href="https://www.jrheum.org/content/50/2/265" rel="noopener">jrheum.org
         </li>
       </ul>
     </div>

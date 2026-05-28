@@ -33,7 +33,7 @@ layout: default
         <header>
           {% if page.title -%}
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+            <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
           </h1>
           {%- endif %}
           {% include page__meta.html locale=locale %}
@@ -58,7 +58,7 @@ layout: default
 
 <!-- This auto-adds the glossary to every post -->
 {% include glossary.md %}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[locale].ext_link_label | default: "Direct Link" }}</div>{% endif %}
       </section>
 
       <footer class="page__meta">

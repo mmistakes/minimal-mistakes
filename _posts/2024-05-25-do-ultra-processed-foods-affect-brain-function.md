@@ -112,7 +112,7 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '❤️ Cardiovascula
       <tr>
         <td><strong>Cognitive Decline</strong></td>
         <td>The slowing of your brain's processing speed and memory.</td>
-        <td>Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech</a> to track <strong>HRV</strong> and <strong>Sleep Quality</strong>.</td>
+        <td>Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech to track <strong>HRV</strong> and <strong>Sleep Quality</strong>.</td>
       </tr>
       <tr>
         <td><strong>Vascular Scuffing</strong></td>
@@ -135,10 +135,10 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '❤️ Cardiovascula
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating complex data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">Pathology</a> | 
-      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-signs-and-what-to-do/" target="_blank">Heart Attack Awareness</a> | 
-      <a href="https://www.aginghealth.website/posts/cortisol-stress-hormone-effects-management/" target="_blank">Stress &amp; Metabolism</a>
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">Pathology | 
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic | 
+      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-signs-and-what-to-do/" target="_blank">Heart Attack Awareness | 
+      <a href="https://www.aginghealth.website/posts/cortisol-stress-hormone-effects-management/" target="_blank">Stress &amp; Metabolism
     </p>
   </div>
 
@@ -153,6 +153,6 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '❤️ Cardiovascula
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
 </div>

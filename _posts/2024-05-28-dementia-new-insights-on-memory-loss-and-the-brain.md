@@ -124,10 +124,10 @@ tags: ['🌱 Senior Longevity', '🧬 Clinical Research', '🧠 Cognitive Health
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He specializes in translating complex data into actionable health literacy for seniors, focusing on the intersection of heart health, diabetes, and neural resilience.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/food-additives-and-type-2-diabetes-risk/">Diabetes</a> | 
-      <a href="https://www.aginghealth.website/posts/seniors-mental-health-internal-medicine/">Stress</a> | 
-      <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech</a> | 
-      <a href="https://www.aginghealth.website/posts/cirrhosis-protein-targets-march-2026/">Heart</a>
+      <a href="https://www.aginghealth.website/posts/food-additives-and-type-2-diabetes-risk/">Diabetes | 
+      <a href="https://www.aginghealth.website/posts/seniors-mental-health-internal-medicine/">Stress | 
+      <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech | 
+      <a href="https://www.aginghealth.website/posts/cirrhosis-protein-targets-march-2026/">Heart
     </p>
   </div>
 
@@ -142,6 +142,6 @@ tags: ['🌱 Senior Longevity', '🧬 Clinical Research', '🧠 Cognitive Health
   </div>
 
   <p style="text-align: center; color: #64748b; font-size: 0.9rem;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
 </div>

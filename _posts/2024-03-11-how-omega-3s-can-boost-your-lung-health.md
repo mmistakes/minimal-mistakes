@@ -94,7 +94,7 @@ healing but may be detrimental in excess.
     and vegetable oils, leading to an imbalance in omega-6 and omega-3 fatty acids.&nbsp;&nbsp;
   </span></li>
   <li>
-    <span style="font-family: inherit;"><b>Historically, people had a healthier <a href="https://www.aginghealth.website/posts/omega-3-fatty-acids-complete-guide/" title="Omega 3 Fatty Acids Complete Guide" rel="dofollow"><b>ratio of these fatty acids</b></a>,</b>
+    <span style="font-family: inherit;"><b>Historically, people had a healthier <a href="https://www.aginghealth.website/posts/omega-3-fatty-acids-complete-guide/" title="Omega 3 Fatty Acids Complete Guide" rel="dofollow"><b>ratio of these fatty acids</b>,</b>
     which supported better health.&nbsp;&nbsp;
   </span></li>
   <li>
@@ -116,7 +116,7 @@ healing but may be detrimental in excess.
   </span></li>
   <li>
     <span style="font-family: inherit;"><b>Studies show that sufficient omega-3 intake</b>
-    is important for overall <a href="https://www.aginghealth.website/posts/coronary-heart-disease-womens-health-initiative/" title="Coronary Heart Disease Womens Health Initiative" rel="dofollow"><b>health and disease prevention</b></a>.
+    is important for overall <a href="https://www.aginghealth.website/posts/coronary-heart-disease-womens-health-initiative/" title="Coronary Heart Disease Womens Health Initiative" rel="dofollow"><b>health and disease prevention</b>.
   </span></li>
 </ul>
 
@@ -130,13 +130,13 @@ for people to incorporate them into their diets regardless of their dietary pref
 </span><h4><span style="font-family: inherit;">These essential fatty acids offer numerous benefits, including:</span></h4>
 
 <ul>
-  <li><b><span style="font-family: inherit;">Improved heart <a href="https://www.aginghealth.website/posts/in-the-blood/" title="In The Blood" rel="dofollow"><b>health by lowering blood pressure and cholesterol</b></a> levels</span></b></li>
+  <li><b><span style="font-family: inherit;">Improved heart <a href="https://www.aginghealth.website/posts/in-the-blood/" title="In The Blood" rel="dofollow"><b>health by lowering blood pressure and cholesterol</b> levels</span></b></li>
   <li><b><span style="font-family: inherit;">Enhanced brain function</span></b></li>
   <li><b><span style="font-family: inherit;">Reduced risk of chronic diseases</span></b></li>
   <li><b><span style="font-family: inherit;">Novel studies show improves lung health</span></b></li>
 </ul><span style="font-family: inherit;">
 
-Omega-3s play a crucial <a href="https://www.aginghealth.website/posts/boost-brain-health/" title="Boost Brain Health" rel="dofollow"><b>role in cardiovascular health and brain development</b></a>, especially during pregnancy and early
+Omega-3s play a crucial <a href="https://www.aginghealth.website/posts/boost-brain-health/" title="Boost Brain Health" rel="dofollow"><b>role in cardiovascular health and brain development</b>, especially during pregnancy and early
 childhood.
 
 </span><h3><span style="font-family: inherit;">Omega-6 Fatty Acids: Importance and Risks</span></h3>
@@ -170,7 +170,7 @@ childhood.
   <li>
     <span style="font-family: inherit;"><b>Explore Supplement Options:&nbsp;</b>
     If you struggle to consume enough omega-3s through food, consider omega-3 supplements such as fish oil or
-    algae-based options. These supplements can provide <a href="https://www.aginghealth.website/posts/cardiologists-heart-health/" title="Cardiologists Heart Health" rel="dofollow"><b>essential fatty acids that support heart health</b></a>, reduce
+    algae-based options. These supplements can provide <a href="https://www.aginghealth.website/posts/cardiologists-heart-health/" title="Cardiologists Heart Health" rel="dofollow"><b>essential fatty acids that support heart health</b>, reduce
     inflammation, and enhance brain function.
   </span></li>
   <li>
@@ -268,11 +268,11 @@ By incorporating these practices into your lifestyle, you can help maintain heal
 <p>Omega-3s can boost the quality of life for people with chronic lung diseases by supporting both physical and mental well-being. They may help improve exercise tolerance, which is often reduced due to lower lung function and limited oxygen delivery, and they can also enhance mood and cognitive function, which may be affected by stress, anxiety, depression, or low oxygen levels.&nbsp;&nbsp;</p><p>Optimizing omega-3 intake is important, with adults generally recommended to consume 250 to 500 mg daily. This can come from two servings of fatty fish a week—like salmon, tuna, mackerel, or sardines—or from supplements.&nbsp;</p><p>It’s best to check with a doctor before starting supplements to ensure the right dosage and avoid potential interactions with medications. The exact amount needed can vary based on age, gender, and health, but aiming for at least 250 mg of EPA and DHA per day is a good general guideline, with adjustments made for individual needs.&nbsp;&nbsp;</p>
 <h2><span style="font-family: inherit;">The Latest Research on Maintaining Healthy Lungs Beyond Omega 3's</span></h2><span style="font-family: inherit;">
 In the field of respiratory health, Omega-3 fatty acids have emerged as a crucial component. Nevertheless, recent
-studies have unveiled novel approaches to promoting optimal lung function. Let us <a href="https://www.aginghealth.website/posts/sugar-substitutes-latest-research/" title="Sugar Substitutes Latest Research" rel="dofollow"><b>explore the latest research</b></a> findings
+studies have unveiled novel approaches to promoting optimal lung function. Let us <a href="https://www.aginghealth.website/posts/sugar-substitutes-latest-research/" title="Sugar Substitutes Latest Research" rel="dofollow"><b>explore the latest research</b> findings
 on enhancing lung health beyond the realm of Omega-3s.&nbsp;</span><h3 style="text-align: left;">A new type of cell deep within the human lungs<span style="font-family: inherit;">&nbsp;</span></h3><div><span style="font-family: inherit;"></span></div><div><span style="font-family: inherit;">Researchers at the Perelman School of Medicine have made a groundbreaking discovery in the field of lung health. Deep
 within the human lungs, a new type of cell has been identified, known as respiratory airway secretory cells (RASCs).
 These cells, located in small airways near the alveoli, possess stem-cell-like qualities that enable them to regenerate
-essential cells for alveolar function.&nbsp;</span><div><span style="font-family: inherit;"><br />The study suggests that factors such as <a href="https://www.aginghealth.website/posts/loneliness-chronic-disease/" title="Loneliness Chronic Disease" rel="dofollow"><b>cigarette smoking and chronic obstructive pulmonary disease</b></a> (COPD) can hinder
+essential cells for alveolar function.&nbsp;</span><div><span style="font-family: inherit;"><br />The study suggests that factors such as <a href="https://www.aginghealth.website/posts/loneliness-chronic-disease/" title="Loneliness Chronic Disease" rel="dofollow"><b>cigarette smoking and chronic obstructive pulmonary disease</b> (COPD) can hinder
 the regenerative abilities of RASCs, offering new possibilities for treating COPD and other lung diseases. This
 significant finding enhances our understanding of lung mechanisms and opens the door to innovative therapeutic avenues
 for lung health.```
@@ -289,7 +289,7 @@ for lung health.```
 <p>AI is opening up exciting possibilities for improving lung cancer care through data-driven methods. With progress in radiomics and machine learning, diagnostic imaging and treatment choices can become more precise. While there are still hurdles to overcome, access to large datasets and effective platforms will help AI research in lung cancer become more accurate, reproducible, and useful.&nbsp;</p><p>Growing interest in AI tools for oncology, especially among younger professionals, suggests AI will be a major player in the future of lung cancer management.</p>
 <h2><span style="font-family: inherit;">Talk to Your Doctor About Your Lung Health</span></h2>
 <p><span style="font-family: inherit;">
-  If you have any concerns or <a href="https://www.aginghealth.website/posts/omega-3s-lung-health/" title="Omega 3s Lung Health" rel="dofollow"><b>questions about your lung health</b></a>, you should always seek professional medical advice. Your
+  If you have any concerns or <a href="https://www.aginghealth.website/posts/omega-3s-lung-health/" title="Omega 3s Lung Health" rel="dofollow"><b>questions about your lung health</b>, you should always seek professional medical advice. Your
   doctor can help you diagnose any lung problems, prescribe the appropriate treatment, and monitor your progress.
   Omega-3s can be a helpful addition to your lung care plan, but they are not a cure-all or a replacement for your
   doctor's guidance.
@@ -342,7 +342,7 @@ for lung health.```
 </table>
 <h3><span style="font-family: inherit;">Conclusion:</span></h3>
 
-<p><span style="font-family: inherit;">Omega-3s are important nutrients with anti-inflammatory benefits that can help people with chronic lung diseases by easing airway <a href="https://www.aginghealth.website/posts/chronic-inflammation-causes-symptoms-treatment/" title="Chronic Inflammation Causes Symptoms Treatment" rel="dofollow"><b>inflammation and relieving symptoms</b></a>. They can also boost overall quality of life by supporting both physical and mental well-being. You can get omega-3s from eating fatty fish or taking supplements, but it’s best to check with a doctor before starting any supplement routine. #HealthTech
+<p><span style="font-family: inherit;">Omega-3s are important nutrients with anti-inflammatory benefits that can help people with chronic lung diseases by easing airway <a href="https://www.aginghealth.website/posts/chronic-inflammation-causes-symptoms-treatment/" title="Chronic Inflammation Causes Symptoms Treatment" rel="dofollow"><b>inflammation and relieving symptoms</b>. They can also boost overall quality of life by supporting both physical and mental well-being. You can get omega-3s from eating fatty fish or taking supplements, but it’s best to check with a doctor before starting any supplement routine. #HealthTech
 </span></p>
 <div class="patient sources-box" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
   <h3>📘 Related Patient Resources</h3>
@@ -350,26 +350,26 @@ for lung health.```
     Start tracking your "Mental Clarity" score with my
     <a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
       Daily Glucose Tracker
-    </a>.
+    .
   </p>
   <p>
     <strong>The Foundation:</strong>
     New to this?
     <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
-    </a>.
+    .
   </p>
   <p>
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-    </a>  </p></div></div>
+      </p></div></div>
 <div class="clinic-citations">
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
-<a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;"></a><ol style="text-align: left;"><a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;"></a><li><a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;"></a><a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;">Omega-3 fatty acids appear promising for maintaining lung health | National Institutes of Health (NIH)</a></li><li><a href="https://www.atsjournals.org/doi/full/10.1164/rccm.202301-0074OC" style="font-family: inherit;">Investigating Associations of Omega-3 Fatty Acids, Lung Function Decline, and Airway Obstruction | American
-        Journal of Respiratory and Critical Care Medicine</a></li><li><a href="https://academic.oup.com/milmed/article/179/suppl_11/2/4210235?searchresult=1" style="font-family: inherit;">Effect of Omega-3 Fatty Acids on Biomarkers of Inflammation: A Rapid Evidence Assessment of the Literature |
-        Military Medicine | Oxford Academic</a></li><li><span style="font-family: inherit;">Omega-3 Fatty Acids, Fish Oil, and Heart Health | Penn Medicine [pennmedicine.org]</span></li><li><span style="font-family: inherit;">Yang HX et al. Effects of n−3 fatty acid supplements on inflammatory markers in patients with asthma: a
+<a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;"><ol style="text-align: left;"><a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;"><li><a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;"><a href="https://www.nih.gov/news-events/news-releases/omega-3-fatty-acids-appear-promising-maintaining-lung-health" style="font-family: inherit;">Omega-3 fatty acids appear promising for maintaining lung health | National Institutes of Health (NIH)</li><li><a href="https://www.atsjournals.org/doi/full/10.1164/rccm.202301-0074OC" style="font-family: inherit;">Investigating Associations of Omega-3 Fatty Acids, Lung Function Decline, and Airway Obstruction | American
+        Journal of Respiratory and Critical Care Medicine</li><li><a href="https://academic.oup.com/milmed/article/179/suppl_11/2/4210235?searchresult=1" style="font-family: inherit;">Effect of Omega-3 Fatty Acids on Biomarkers of Inflammation: A Rapid Evidence Assessment of the Literature |
+        Military Medicine | Oxford Academic</li><li><span style="font-family: inherit;">Omega-3 Fatty Acids, Fish Oil, and Heart Health | Penn Medicine [pennmedicine.org]</span></li><li><span style="font-family: inherit;">Yang HX et al. Effects of n−3 fatty acid supplements on inflammatory markers in patients with asthma: a
       meta-analysis. Ann Allergy Asthma Immunol. 2019;122(2):139-148.e4.</span></li><li><span style="font-family: inherit;">Huang Z et al. Effects of n−3 polyunsaturated fatty acid supplementation on inflammatory biomarkers and clinical
       outcomes in chronic obstructive pulmonary disease: a systematic review and meta-analysis. Clin Nutr.
       2019;38(4):1561-1571.</span></li><li><span style="font-family: inherit;">National Institutes of Health. Omega-3 Fatty Acids Fact Sheet for Health Professionals.

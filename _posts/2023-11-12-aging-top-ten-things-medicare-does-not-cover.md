@@ -12,7 +12,7 @@ tags: ['🌱 Senior Longevity', '⚖️ Patient Advocacy', '💪 Functional Fitn
       <td style="text-align: center;">
         <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibSItjEVVPuTSN8cjSqcYSfQDiNNq1keyjpP-Xglq8FPj06wQ1gDdSIQVwKlvKKUwfK8vu6ugbu1mg8s9cBNsmYSZZnIEfMouEvu3mKhm2MjYR6Mkso9VTybujtn2C0357XZmfsAsFK4Bso9xrPK4j39o1VUWnOTHZIQ_fDMcKb2_HrnMydWuxgu_ziFJd/s925/A%20warm,%20realistic%20scene%20of%20a%20senior%20and%20caregiver%20reviewing%20healthcare%20documents%20at%20a%20kitchen%20table..webp" style="display: inline-block; margin: auto;">
           <img alt="Older adult reviewing Medicare coverage options with a caregiver at a kitchen table." border="0" data-original-height="520" data-original-width="925" decoding="async" loading="eager" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibSItjEVVPuTSN8cjSqcYSfQDiNNq1keyjpP-Xglq8FPj06wQ1gDdSIQVwKlvKKUwfK8vu6ugbu1mg8s9cBNsmYSZZnIEfMouEvu3mKhm2MjYR6Mkso9VTybujtn2C0357XZmfsAsFK4Bso9xrPK4j39o1VUWnOTHZIQ_fDMcKb2_HrnMydWuxgu_ziFJd/s16000/A%20warm,%20realistic%20scene%20of%20a%20senior%20and%20caregiver%20reviewing%20healthcare%20documents%20at%20a%20kitchen%20table..webp" style="display: block; margin: 0px auto;" title="Senior Planning for Medicare Gaps" />
-        </a>
+        
         <span class="tr-caption" style="display: block; margin-top: 6px;">
           Understanding Medicare exclusions helps seniors plan confidently for future care.
         </span>
@@ -43,13 +43,13 @@ your health, independence, and financial stability as you age.
   <li style="text-align: left;">Medicare does not cover several essential services such as dental, vision, hearing, and long-term care.</li>
   <li style="text-align: left;">Many exclusions can be addressed through Medicare Advantage, Medigap, stand-alone insurance, or community programs.</li>
   <li style="text-align: left;">Planning early helps prevent surprise bills and improves access to needed care.</li>
-  <li style="text-align: left;">Seniors should <a href="https://www.aginghealth.website/posts/metformin-benefits/" rel="dofollow" title="Metformin's Surprising Benefits Beyond Diabetes"><b>review coverage annually because benefits and costs</b></a> change.</li>
+  <li style="text-align: left;">Seniors should <a href="https://www.aginghealth.website/posts/metformin-benefits/" rel="dofollow" title="Metformin's Surprising Benefits Beyond Diabetes"><b>review coverage annually because benefits and costs</b> change.</li>
   <li style="text-align: left;">Understanding exclusions empowers better healthcare conversations.</li>
 </ul>
 
 <h2 style="text-align: left;">Top Ten Things Medicare Does Not Cover (With Options)</h2>
 
-<h3 style="text-align: left;">1. Dental Care (Routine &amp; Major)</h3><p style="text-align: left;"><b>What Medicare Does Not Cover:</b></p><p></p><div style="text-align: left;">Original Medicare excludes routine dental exams, cleanings, fillings, root canals, dentures, and&nbsp;</div><div style="text-align: left;">implants.</div><p></p><p style="text-align: left;"><b>Why It Matters:</b></p><p style="text-align: left;">Dental <a href="https://www.aginghealth.website/posts/cardiologists-heart-health/" rel="dofollow" title="Cardiologists Heart Health"><b>health is closely linked to heart disease</b></a>, diabetes, and cognitive decline — yet seniors often skip care due to cost.</p><b><div style="text-align: left;"><b>Possible Options:</b></div></b><p style="text-align: left;"></p><ul style="text-align: left;"><li>Medicare Advantage plans with dental benefits</li><li>Stand‑alone dental insurance</li><li>Dental schools offering reduced‑cost services</li><li>Community health centers with sliding‑scale fees</li></ul><p></p><p style="text-align: left;"><span style="font-size: small;"><b>Section Key Point:</b> Dental care is one of the most expensive and commonly overlooked Medicare exclusions.</span></p><ul>
+<h3 style="text-align: left;">1. Dental Care (Routine &amp; Major)</h3><p style="text-align: left;"><b>What Medicare Does Not Cover:</b></p><p></p><div style="text-align: left;">Original Medicare excludes routine dental exams, cleanings, fillings, root canals, dentures, and&nbsp;</div><div style="text-align: left;">implants.</div><p></p><p style="text-align: left;"><b>Why It Matters:</b></p><p style="text-align: left;">Dental <a href="https://www.aginghealth.website/posts/cardiologists-heart-health/" rel="dofollow" title="Cardiologists Heart Health"><b>health is closely linked to heart disease</b>, diabetes, and cognitive decline — yet seniors often skip care due to cost.</p><b><div style="text-align: left;"><b>Possible Options:</b></div></b><p style="text-align: left;"></p><ul style="text-align: left;"><li>Medicare Advantage plans with dental benefits</li><li>Stand‑alone dental insurance</li><li>Dental schools offering reduced‑cost services</li><li>Community health centers with sliding‑scale fees</li></ul><p></p><p style="text-align: left;"><span style="font-size: small;"><b>Section Key Point:</b> Dental care is one of the most expensive and commonly overlooked Medicare exclusions.</span></p><ul>
 </ul>
 
 <h3 style="text-align: left;">2. Vision Exams, Eyeglasses &amp; Contacts</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div></b><div><div style="text-align: left;"><span style="font-weight: 700;"><br /></span></div><div style="text-align: left;">Routine eye exams, glasses, and contact lenses are excluded under Original Medicare.</div><div style="text-align: left;"><br /></div><b><div style="text-align: left;"><b>Possible Options:</b></div></b><div><ul style="text-align: left;"><li>Medicare Advantage plans with vision benefits</li><li>Discount vision programs</li><li>Retail optical centers with senior discounts</li></ul></div><ul>
@@ -71,7 +71,7 @@ your health, independence, and financial stability as you age.
 
   <div class="tree-step">
     <h3 style="text-align: left;">2. Do you have chronic conditions requiring ongoing support?</h3>
-    <p style="text-align: left;"><strong>Yes:</strong> Explore <a href="https://www.aginghealth.website/posts/medicare-advantage-plans/" rel="dofollow" title="Seniors: About Medicare Advantage Plans"><b>Medigap or Medicare Advantage with disease-management programs</b></a>.</p>
+    <p style="text-align: left;"><strong>Yes:</strong> Explore <a href="https://www.aginghealth.website/posts/medicare-advantage-plans/" rel="dofollow" title="Seniors: About Medicare Advantage Plans"><b>Medigap or Medicare Advantage with disease-management programs</b>.</p>
     <p style="text-align: left;"><strong>No:</strong> Continue to Step 3.</p>
   </div>
 
@@ -121,7 +121,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
   </div>
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;">🛡️<b>Medigap:&nbsp;</b>A private <a href="https://www.aginghealth.website/posts/what-types-of-insurance-should-i-have/" rel="dofollow" title="Medicare Basics for Aging Adults: Coverage, Costs &amp; Enrollment"><b>supplemental insurance policy that helps pay deductibles</b></a>, coinsurance, and copayments not covered by Original Medicare.</div>
+    <div class="icon" style="text-align: left;">🛡️<b>Medigap:&nbsp;</b>A private <a href="https://www.aginghealth.website/posts/what-types-of-insurance-should-i-have/" rel="dofollow" title="Medicare Basics for Aging Adults: Coverage, Costs &amp; Enrollment"><b>supplemental insurance policy that helps pay deductibles</b>, coinsurance, and copayments not covered by Original Medicare.</div>
   </div>
 
   <div class="glossary-card" style="text-align: left;">
@@ -133,7 +133,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
   </div>
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;"><b>🏥Concierge Medicine</b>: A <a href="https://www.aginghealth.website/posts/medical-questionnaires-confuse-patients/" rel="dofollow" title="Medical Questionnaires: Why They Confuse Patients and Fixes"><b>membership-based medical model where patients pay</b></a> a fee for enhanced access and longer visits.</div>
+    <div class="icon" style="text-align: left;"><b>🏥Concierge Medicine</b>: A <a href="https://www.aginghealth.website/posts/medical-questionnaires-confuse-patients/" rel="dofollow" title="Medical Questionnaires: Why They Confuse Patients and Fixes"><b>membership-based medical model where patients pay</b> a fee for enhanced access and longer visits.</div>
   </div>
 
   <div class="glossary-card">
@@ -368,7 +368,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 
   <div class="compare-card">
     <h3 style="text-align: left;">Hearing Aids</h3>
-    <p style="text-align: left;"><strong>Not Covered:</strong> <a href="https://www.aginghealth.website/posts/using-hearing-aids-necessary-challenge/" rel="dofollow" title="Hearing Aids: A Necessity for Hearing Loss"><b>Hearing aids and most hearing exams</b></a>.</p>
+    <p style="text-align: left;"><strong>Not Covered:</strong> <a href="https://www.aginghealth.website/posts/using-hearing-aids-necessary-challenge/" rel="dofollow" title="Hearing Aids: A Necessity for Hearing Loss"><b>Hearing aids and most hearing exams</b>.</p>
     <p style="text-align: left;"><strong>Options:</strong> OTC hearing aids, Advantage plans.</p>
   </div>
 
@@ -500,7 +500,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     <div class="risk-icon" style="text-align: left;">⚠️</div>
     <div>
       <h3 style="text-align: left;">Adults Living Alone</h3>
-      <p style="text-align: left;">Those without caregiver support may face higher risks when <a href="https://www.aginghealth.website/2024/04/ senior-dental-care-medicare.html" rel="dofollow" title="Smiling Through the Decades: Oral Health Care for Seniors"><b>Medicare excludes essential services like home care</b></a> or custodial care.</p>
+      <p style="text-align: left;">Those without caregiver support may face higher risks when <a href="https://www.aginghealth.website/2024/04/ senior-dental-care-medicare.html" rel="dofollow" title="Smiling Through the Decades: Oral Health Care for Seniors"><b>Medicare excludes essential services like home care</b> or custodial care.</p>
     </div>
   </div>
 
@@ -618,7 +618,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 
 
 <p style="text-align: left;">
-This guide <a href="https://www.aginghealth.website/posts/top-ten-things-medicare-does-not-cover/" rel="dofollow" title="Top Ten Things Medicare Does Not Cover"><b>breaks down the top ten Medicare exclusions</b></a>, explains practical alternatives, and provides tools to help you
+This guide <a href="https://www.aginghealth.website/posts/top-ten-things-medicare-does-not-cover/" rel="dofollow" title="Top Ten Things Medicare Does Not Cover"><b>breaks down the top ten Medicare exclusions</b>, explains practical alternatives, and provides tools to help you
 make confident, informed healthcare decisions.</p><div><section class="clinic-cta" id="cta">
 </section>
 

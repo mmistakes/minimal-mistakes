@@ -21,7 +21,7 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
 <p>When we struggle to hear, we aren't just missing out on conversation; we are starving our brains of the stimulation required to stay sharp.</p>
 <h3><b>The Science: Why Your Ears Affect Your Mind</b></h3>
 <p>Research from <i>The Lancet</i> and the <i>National Institute on Aging (NIA)</i> points to three primary reasons why hearing loss accelerates cognitive decline:</p>
-<ol style="text-align: left;"><li><b style="font-weight: bold;">Cognitive Load:</b> When your ears don't capture sound clearly, your brain has to work "overtime" to fill in the gaps. This siphons energy away from the parts of your <a href="https://www.aginghealth.website/posts/working-memory-insights-brain-cells-focus-storage/" title="Decoding the Dance of Focus: Latest Insights on Working Memory" rel="dofollow"><b>brain used for memory and executive</b></a> function.</li><li><span style="font-weight: bold;"><b>Brain Atrophy:</b> </span>The "Use It or Lose It" rule applies here. Without auditory stimulation, the parts of the brain responsible for processing sound can actually shrink or become less efficient.</li><li><span style="font-weight: bold;"><b>Social Isolation:</b> </span>If you can't hear, you stop engaging. This withdrawal leads to loneliness, which is a known independent trigger for dementia.</li></ol>
+<ol style="text-align: left;"><li><b style="font-weight: bold;">Cognitive Load:</b> When your ears don't capture sound clearly, your brain has to work "overtime" to fill in the gaps. This siphons energy away from the parts of your <a href="https://www.aginghealth.website/posts/working-memory-insights-brain-cells-focus-storage/" title="Decoding the Dance of Focus: Latest Insights on Working Memory" rel="dofollow"><b>brain used for memory and executive</b> function.</li><li><span style="font-weight: bold;"><b>Brain Atrophy:</b> </span>The "Use It or Lose It" rule applies here. Without auditory stimulation, the parts of the brain responsible for processing sound can actually shrink or become less efficient.</li><li><span style="font-weight: bold;"><b>Social Isolation:</b> </span>If you can't hear, you stop engaging. This withdrawal leads to loneliness, which is a known independent trigger for dementia.</li></ol>
     <p style="text-align: left;"></p><ol start="1">
 </ol>
 <h3><b>The Tinnitus Factor: A 25-Year Battle</b></h3>
@@ -46,11 +46,11 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
 <h3><b>2. How long does it take for the brain to "rewire" after getting hearing aids?</b>&nbsp;</h3>
 <p><span><span>Your brain needs a "plasticity period" of about 30 to 90 days to adjust. Because I’ve worn aids for two years now, I can tell you that the first few weeks feel loud and overwhelming, but that is actually the sound of your brain "waking up" and building new neural pathways.</span></span></p>
 <h3><b>3. Does psoriasis-related inflammation impact hearing loss?</b>&nbsp;</h3>
-<p><span><span>Yes. <a href="https://www.aginghealth.website/posts/systemic-inflammation-in-psoriasis/" title="Systemic Inflammation In Psoriasis" rel="dofollow"><b>Systemic inflammation from autoimmune conditions like psoriasis</b></a> can affect the delicate vascular structures of the inner ear. If you have chronic inflammation, you should have your hearing checked more frequently, as your risk for sensorineural hearing loss may be higher.</span></span></p>
+<p><span><span>Yes. <a href="https://www.aginghealth.website/posts/systemic-inflammation-in-psoriasis/" title="Systemic Inflammation In Psoriasis" rel="dofollow"><b>Systemic inflammation from autoimmune conditions like psoriasis</b> can affect the delicate vascular structures of the inner ear. If you have chronic inflammation, you should have your hearing checked more frequently, as your risk for sensorineural hearing loss may be higher.</span></span></p>
 <h3><b>4. Are OTC hearing aids effective for dementia prevention?</b>&nbsp;</h3>
 <p><span><span>Over the counter (OTC) aids are excellent for mild-to-moderate loss. However, if your goal is dementia prevention, you need a device that excels at "speech-in-noise" processing. If the device only makes everything louder without making it clearer, it won't reduce the "cognitive load" on your brain.</span></span></p>
 <h3><b>5. Can hearing aids help with "Liver Fog" (Hepatic Encephalopathy)?</b>&nbsp;</h3>
-<p><span><span>Hearing aids won't fix your liver, but they reduce your <span>Total Cognitive Burden</span>. When you are already dealing with the "brain fog" of ammonia buildup from cirrhosis, having to struggle to hear makes the fatigue even worse. Clearing the auditory channel leaves you with more <a href="https://www.aginghealth.website/posts/metabolic-syndrome-criteria-and-health/" title="Metabolic Syndrome Criteria And Health" rel="dofollow"><b>energy to manage your metabolic health</b></a>.</span></span></p>
+<p><span><span>Hearing aids won't fix your liver, but they reduce your <span>Total Cognitive Burden</span>. When you are already dealing with the "brain fog" of ammonia buildup from cirrhosis, having to struggle to hear makes the fatigue even worse. Clearing the auditory channel leaves you with more <a href="https://www.aginghealth.website/posts/metabolic-syndrome-criteria-and-health/" title="Metabolic Syndrome Criteria And Health" rel="dofollow"><b>energy to manage your metabolic health</b>.</span></span></p>
 <h2><b>Tinnitus Management: Reclaiming the Brain’s Processing Power</b></h2>
 
   <p><span><span>If you’ve lived with tinnitus as long as I have, you know it isn't just a sound; it’s a constant "tax" on your concentration. For 25 years, my brain had to filter out a persistent ringing while simultaneously trying to capture meaningful data. This is what we </span>call <span>auditory fatigue</span><span>.</span></span></p>
@@ -112,23 +112,23 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
     <tbody>
       <tr>
         <td><span><b>The Lancet Commission</b></span></td>
-        <td><span>Hearing loss identified as the #1 <a href="https://www.aginghealth.website/2024/07/ shingles-vaccine-body-fat-dementia-risk.html" title="%20shingles Vaccine Body Fat Dementia Risk" rel="dofollow"><b>modifiable risk factor for dementia</b></a>.</span></td>
-        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667%2823%2900048-8/fulltext" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View Study</a></link-block></span></td>
+        <td><span>Hearing loss identified as the #1 <a href="https://www.aginghealth.website/2024/07/ shingles-vaccine-body-fat-dementia-risk.html" title="%20shingles Vaccine Body Fat Dementia Risk" rel="dofollow"><b>modifiable risk factor for dementia</b>.</span></td>
+        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667%2823%2900048-8/fulltext" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View Study</link-block></span></td>
       </tr>
       <tr>
         <td><span><b>National Institute on Aging</b></span></td>
         <td><span>ACHIEVE trial: Hearing aids slowed cognitive decline by 48% in at-risk seniors.</span></td>
-        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.nia.nih.gov/news/hearing-aids-slow-cognitive-decline-people-high-risk" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View NIA Report</a></link-block></span></td>
+        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.nia.nih.gov/news/hearing-aids-slow-cognitive-decline-people-high-risk" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View NIA Report</link-block></span></td>
       </tr>
       <tr>
         <td><span><b>Johns Hopkins Medicine</b></span></td>
         <td><span>Link between hearing loss severity and dementia probability.</span></td>
-        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.medicalnewstoday.com/articles/hearing-loss-and-dementia" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View Resource</a></link-block></span></td>
+        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.medicalnewstoday.com/articles/hearing-loss-and-dementia" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View Resource</link-block></span></td>
       </tr>
       <tr>
         <td><span><b>Medicare.gov</b></span></td>
         <td><span>Current status of hearing aid coverage and diagnostic support.</span></td>
-        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.medicare.gov/coverage/hearing-aids" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View Coverage</a></link-block></span></td>
+        <td><span><link-block class="ng-star-inserted"><a class="ng-star-inserted" decode-="" href="https://www.medicare.gov/coverage/hearing-aids" jslog="197247;track:generic_click,impression,attention;BardVeMetadataKey:[[&quot;r_b248423e0fd5ea58&quot;,&quot;c_5471144693cb0541&quot;,null,&quot;rc_0afc88bed050d16e&quot;,null,null,&quot;en&quot;,null,1,null,null,1,0]]" rel="noopener" target="_blank">View Coverage</link-block></span></td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +179,7 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
       "name": "Can hearing aids help with 'Liver Fog' (Hepatic Encephalopathy)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hearing aids do not treat liver issues, but they reduce the 'total cognitive burden.' By making communication easier, they allow a patient with cirrhosis to better manage the <a href="https://www.aginghealth.website/posts/psoriasis-eyelids-psoriatic-arthritis-mental-fatigue/" title="Psoriasis Eyelids Psoriatic Arthritis Mental Fatigue" rel="dofollow"><b>mental fatigue associated with ammonia</b></a> buildup."
+        "text": "Hearing aids do not treat liver issues, but they reduce the 'total cognitive burden.' By making communication easier, they allow a patient with cirrhosis to better manage the <a href="https://www.aginghealth.website/posts/psoriasis-eyelids-psoriatic-arthritis-mental-fatigue/" title="Psoriasis Eyelids Psoriatic Arthritis Mental Fatigue" rel="dofollow"><b>mental fatigue associated with ammonia</b> buildup."
       }
     }
   ]

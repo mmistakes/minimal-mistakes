@@ -26,7 +26,7 @@ investigations, or click into a category for targeted research.
     <li>
       <a href="#{{ year.name }}">
         <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-      </a>
+      
     </li>
   {% endfor %}
 </ul>
@@ -40,6 +40,6 @@ investigations, or click into a category for targeted research.
         {% include archive-single.html locale=locale type=entries_layout %}
       {% endfor %}
     </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;
   </section>
 {% endfor %}

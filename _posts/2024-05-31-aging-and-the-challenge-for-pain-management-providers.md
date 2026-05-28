@@ -116,7 +116,7 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🧬 Clinical Rese
   </div>
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Strategies for 2026 Resilience</h2>
-    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The "Gear Shift" Test:</strong> Use a <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech</a> watch to track your <strong>HRV (Heart Rate Variability)</strong>. If your HRV is consistently low, your body is in a high-stress pain state, even if you feel "fine."</li><li><input type="checkbox" /> <strong>Physical Satiety:</strong> Use aquatic therapy or low-impact walking to stimulate <strong>Endorphin</strong> production—the body's natural painkiller.</li><li><input type="checkbox" /> <strong>The BCAA Buffering:</strong> Consider branched-chain amino acids to support muscle repair without the ammonia load, as discussed in our <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" target="_blank">Liver Health guide</a>.</li></ul><ul class="ah-checklist">
+    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The "Gear Shift" Test:</strong> Use a <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech watch to track your <strong>HRV (Heart Rate Variability)</strong>. If your HRV is consistently low, your body is in a high-stress pain state, even if you feel "fine."</li><li><input type="checkbox" /> <strong>Physical Satiety:</strong> Use aquatic therapy or low-impact walking to stimulate <strong>Endorphin</strong> production—the body's natural painkiller.</li><li><input type="checkbox" /> <strong>The BCAA Buffering:</strong> Consider branched-chain amino acids to support muscle repair without the ammonia load, as discussed in our <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" target="_blank">Liver Health guide.</li></ul><ul class="ah-checklist">
     </ul>
   </div>
 
@@ -124,10 +124,10 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🧬 Clinical Rese
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He specializes in translating complex clinical data into actionable health literacy for seniors, focusing on the intersection of metabolic, vascular, and neural health.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/beyond-neurons-new-culprit-alzheimers-plaque-formation/" target="_blank">Neurological</a> | 
-      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/" target="_blank">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-signs-and-what-to-do/" target="_blank">Heart</a> | 
-      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" target="_blank">Brain Metabolism</a>
+      <a href="https://www.aginghealth.website/posts/beyond-neurons-new-culprit-alzheimers-plaque-formation/" target="_blank">Neurological | 
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/" target="_blank">GLP-1/Ozempic | 
+      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-signs-and-what-to-do/" target="_blank">Heart | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" target="_blank">Brain Metabolism
     </p>
   </div>
 
@@ -142,5 +142,5 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🧬 Clinical Rese
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a></p>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</p>
 </div>

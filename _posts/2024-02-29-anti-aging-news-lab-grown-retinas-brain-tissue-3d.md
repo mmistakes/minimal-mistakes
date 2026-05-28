@@ -30,7 +30,7 @@ tags: ['🌱 Senior Longevity', '🛡️ Liver & Immune Health', '🧠 Cognitive
           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq_HVGgre_urdWXjMxqlGoRlu0YNb-v3xbcQ2myN_FxpOwaYrLfUY1nFfXdizc6-1yEOHqkEljjCyzetLAtsleyzV75J-b0cUGbBChbHvDCJDnbj8jNTNkfpGDkZTXe0apgOQ9J4frwwfPMMwlsvXXcujCmvdtx1gwCsEDRIKSd-BzKKJw6KbK4PIBNUle/s16000/Retinas.webp"
                alt="A highly detailed AI close‑up of a woman’s eye with a vivid blue iris, paired with the look of lab‑grown retinal tissue. Sharp textures, reflective highlights, and a clean biomedical aesthetic"
                title="AI close‑up of a woman’s eye" />
-        </a>
+        
       </td>
     </tr>
     <tr>
@@ -260,9 +260,9 @@ tags: ['🌱 Senior Longevity', '🛡️ Liver & Immune Health', '🧠 Cognitive
   ]
 }</script><div><h3 style="text-align: left;"><span style="font-family: inherit;">Regenerative Medicine and Cellular Engineering</span></h3>
 <ul>
-<li><a href="https://www.aginghealth.website/posts/wet-age-related-macular-degeneration-understanding-and-prevention/" target="_blank"><span style="font-family: inherit;">Macular Degeneration</span></a></li>
-<li><a href="https://www.aginghealth.website/posts/neurological-disorders-ai-brain-mapping/" target="_blank"><span style="font-family: inherit;">Precision Neurology</span></a></li>
-<li><a href="https://www.aginghealth.website/posts/age-reversal-harvard-mit-cell-restoral/"><span style="font-family: inherit;">Aging and Senescence Biology</span></a></li><li><span style="background-color: white; color: #334155;"><span style="font-family: inherit;"><a href="https://www.aginghealth.website/posts/artificial-cell-research-breakthroughs/" target="_blank">Manipulating DNA and proteins</a></span></span></li></ul></div><div><h3 style="text-align: left;"><span style="font-family: inherit;">Citations</span></h3><p><strong><span style="font-family: inherit;">Retinal Development &amp; Color Vision</span></strong></p>
+<li><a href="https://www.aginghealth.website/posts/wet-age-related-macular-degeneration-understanding-and-prevention/" target="_blank"><span style="font-family: inherit;">Macular Degeneration</span></li>
+<li><a href="https://www.aginghealth.website/posts/neurological-disorders-ai-brain-mapping/" target="_blank"><span style="font-family: inherit;">Precision Neurology</span></li>
+<li><a href="https://www.aginghealth.website/posts/age-reversal-harvard-mit-cell-restoral/"><span style="font-family: inherit;">Aging and Senescence Biology</span></li><li><span style="background-color: white; color: #334155;"><span style="font-family: inherit;"><a href="https://www.aginghealth.website/posts/artificial-cell-research-breakthroughs/" target="_blank">Manipulating DNA and proteins</span></span></li></ul></div><div><h3 style="text-align: left;"><span style="font-family: inherit;">Citations</span></h3><p><strong><span style="font-family: inherit;">Retinal Development &amp; Color Vision</span></strong></p>
 <ul>
 <li><span style="font-family: inherit;">Hadyniak SE et al. <em>PLoS Biology</em> (2024). Retinoic acid regulates human green and red cone specification.</span></li>
 </ul>

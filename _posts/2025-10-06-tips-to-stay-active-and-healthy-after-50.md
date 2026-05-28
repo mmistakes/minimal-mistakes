@@ -151,11 +151,11 @@ As the human body matches older age brackets, it experiences a decline in anabol
 <div style="background: #f4f7f9; border-left: 6px solid #1565c0; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 2px 6px rgba(0,0,0,0.05); font-family: sans-serif; color: #333;">
   <h3 style="margin-top: 0; color: #0d47a1; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px;">🔵 Longevity Research & Clinical Registries</h3>
   
-  <p><strong>1. National Institute on Aging (NIA).</strong> (2025). <em>Strategic Longevity Metrics: Research Guidelines on Building Cognitive Reserve, Preventing Sarcopenia, and Fostering Healthy Aging Trajectories.</em> Available at: <a href="https://www.nia.nih.gov/" target="_blank" style="color: #1565c0; text-decoration: none; font-weight: bold;">nia.nih.gov/healthy-aging</a></p>
+  <p><strong>1. National Institute on Aging (NIA).</strong> (2025). <em>Strategic Longevity Metrics: Research Guidelines on Building Cognitive Reserve, Preventing Sarcopenia, and Fostering Healthy Aging Trajectories.</em> Available at: <a href="https://www.nia.nih.gov/" target="_blank" style="color: #1565c0; text-decoration: none; font-weight: bold;">nia.nih.gov/healthy-aging</p>
   
-  <p><strong>2. Centers for Disease Control and Prevention (CDC).</strong> (2025). <em>Physical Activity Frameworks, Strength Benchmarks, and Fall Mitigation Modalities for Geriatric Populations.</em> Available at: <a href="https://www.cdc.gov/" target="_blank" style="color: #1565c0; text-decoration: none; font-weight: bold;">cdc.gov/older-adult-health</a></p>
+  <p><strong>2. Centers for Disease Control and Prevention (CDC).</strong> (2025). <em>Physical Activity Frameworks, Strength Benchmarks, and Fall Mitigation Modalities for Geriatric Populations.</em> Available at: <a href="https://www.cdc.gov/" target="_blank" style="color: #1565c0; text-decoration: none; font-weight: bold;">cdc.gov/older-adult-health</p>
   
-  <p><strong>3. Social Security Administration & AARP Coalition.</strong> (2025). *Retirement Infrastructure, Part D Resource Allocation Models, and Financial Safety Planning After 50.* Available at: <a href="https://www.aarp.org/" target="_blank" style="color: #1565c0; text-decoration: none; font-weight: bold;">aarp.org/retirement-planning</a></p>
+  <p><strong>3. Social Security Administration & AARP Coalition.</strong> (2025). *Retirement Infrastructure, Part D Resource Allocation Models, and Financial Safety Planning After 50.* Available at: <a href="https://www.aarp.org/" target="_blank" style="color: #1565c0; text-decoration: none; font-weight: bold;">aarp.org/retirement-planning</p>
   
   <div style="border-top: 1px solid #d6e2f0; margin-top: 1rem; padding-top: 0.5rem; font-size: 0.9rem; font-weight: bold; color: #555; text-align: center;">
     ✔ Verified institutional clinical guidelines &nbsp;|&nbsp; ✔ Certified public health registries

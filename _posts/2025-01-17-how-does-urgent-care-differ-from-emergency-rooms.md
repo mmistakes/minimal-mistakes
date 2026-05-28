@@ -14,7 +14,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
   <span style="color: #0e101a;">By </span>
   <a class="editor-rtfLink" href="https://www.aginghealth.website/p/aging-health-author-tommy-douglas.html" style="color: #4a6ee0;" target="_blank">
     <span>Tommy T Douglas</span>
-  </a>
+  
   <span style="color: #0e101a;">, Amateur Health Researcher and Blogger</span>
 </div>
 
@@ -44,7 +44,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
                    data-original-width="925"
                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTc-srrDTPSugppt5LLiflWX_UYQQ8cG5dmPKbbtBA0sho73MiHR1YUhgMoVvTOpxjBXvRAvrJLnDvjUTt_fjG7e97GswDTaIyw2KzOk7ZW8w31XmlIWMLTFbqp6OJYobChahk_yjeBVdrqIKprI0MY7ymuJAilb-y59l0FNryrrxXEbWpOeczwurzwWnK/s16000/A%20split%20side%20by%20side%20view%20showing%20an%20urgent%20care%20center%20and%20an%20emergency%20room,%20highlighting%20their%20differences%20in%20appearance%20and%20signage..webp"
                    title="Urgent Care vs Emergency Room" />
-            </a>
+            
           </td>
         </tr>
         <tr>

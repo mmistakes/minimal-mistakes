@@ -15,7 +15,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   revealing how these 
   <a href="https://www.aginghealth.website/posts/mind-over-matter-brain-immune-system/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Mind Over Matter Brain Immune System">
      specialized immune cells in the brain
-  </a>
+  
   <strong>contribute to neurodegeneration</strong>. Microglia act as the brain’s first line of defense, clearing debris and maintaining neural health. 
   But in Alzheimer’s, they can become overactive, driving 
   <strong>chronic inflammation and collateral neuronal damage</strong>.
@@ -32,7 +32,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   These findings open new avenues for treatments aimed at slowing or 
   <a href="https://www.aginghealth.website/posts/psoriasis-to-psoriatic-arthritis-progression/" rel="dofollow" style="color: #0b63c5; font-weight: 600;">
      halting the progression
-  </a>
+  
   of Alzheimer’s disease.
 </span></p>
 
@@ -67,7 +67,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
     They may connect 
     <a href="https://www.aginghealth.website/posts/female-neurodegeneration-mechanisms-estrogen-genetics/" style="color: #0b63c5; font-weight: 600;" target="_blank">
        APOE4 gene
-    </a> 
+     
     variants to nerve‑cell death and offer a unified theory of disease progression.
   </span></li>
 </ul>
@@ -175,11 +175,11 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   scientists are uncovering new strategies to slow or even reverse disease progression. It 
   <a href="https://www.aginghealth.website/posts/xylitol-teeth-bones-immune-gut-health/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Xylitol Teeth Bones Immune Gut Health">
      underscores the importance of immune health
-  </a>
+  
   in 
   <a href="https://www.aginghealth.website/posts/tips-for-healthy-brain-aging/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Tips For Healthy Brain Aging">
      brain aging and offers renewed hope
-  </a>
+  
   for millions affected by AD.
 </span></p>
 
@@ -238,7 +238,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   By 
   <a href="https://www.aginghealth.website/posts/understanding-fibromyalgia/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Understanding Fibromyalgia">
      understanding how Shp2 behaves in different neurodegenerative
-  </a>
+  
   conditions, scientists hope to:
 </span></p>
 
@@ -257,7 +257,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
   Targeting both <strong>microglia and Shp2 may offer synergistic benefits</strong> and 
   <a href="https://www.aginghealth.website/posts/neurological-disorders-ai-brain-mapping/" rel="dofollow" style="color: #0b63c5; font-weight: 600;" title="Neurological Disorders Ai Brain Mapping">
      reshape how we treat brain disorders
-  </a>.
+  .
 </span></p>
 <span style="font-family: inherit;"><style>
 /* Glossary Highlight */
@@ -374,19 +374,19 @@ tags: ['❤️ Cardiovascular & T2D', '🧬 Clinical Research', '🛡️ Liver &
     <li itemprop="citation" itemscope="" itemtype="https://schema.org/CreativeWork">
       <span style="font-family: inherit;"><span class="citation-source" itemprop="name">Smith J, et al.</span> 
       Advanced Lipid Markers and Cardiovascular Risk. 
-      <a class="citation-url" href="#" itemprop="url">https://example.com/lipid-audit</a>
+      <a class="citation-url" href="#" itemprop="url">https://example.com/lipid-audit
         <meta content="2024" itemprop="datePublished"></meta></span></li>
 
     <li itemprop="citation" itemscope="" itemtype="https://schema.org/CreativeWork">
       <span style="font-family: inherit;"><span class="citation-source" itemprop="name">American Heart Association.</span> 
       Understanding ApoB and Lp(a) in Secondary Prevention. 
-      <a class="citation-url" href="#" itemprop="url">https://example.com/aha-apob</a>
+      <a class="citation-url" href="#" itemprop="url">https://example.com/aha-apob
         <meta content="2023" itemprop="datePublished"></meta></span></li>
 
     <li itemprop="citation" itemscope="" itemtype="https://schema.org/CreativeWork">
       <span style="font-family: inherit;"><span class="citation-source" itemprop="name">Doe R.</span> 
       Triglyceride/HDL Ratio as a Metabolic Indicator. 
-      <a class="citation-url" href="#" itemprop="url">https://example.com/tg-hdl</a></span>
+      <a class="citation-url" href="#" itemprop="url">https://example.com/tg-hdl</span>
       <meta content="2022" itemprop="datePublished"></meta>
     </li>
 </section>

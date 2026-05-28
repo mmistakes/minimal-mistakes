@@ -107,10 +107,10 @@ tags: ['🛡️ Liver & Immune Health', 'Neurological', 'Dementia', 'Liver', 'Pr
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). Managing liver cirrhosis and Type 2 Diabetes, he uses himself as a "case study" to bridge the gap between clinical research and real-life patient survival.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/female-neurodegeneration-mechanisms-estrogen-genetics/" target="_blank">Metabolic</a> | 
-      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/" target="_blank">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts/bio-hacking-for-seniors/" target="_blank">Smart Tech</a> | 
-      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" target="_blank">Brain Metabolism</a>
+      <a href="https://www.aginghealth.website/posts/female-neurodegeneration-mechanisms-estrogen-genetics/" target="_blank">Metabolic | 
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/" target="_blank">GLP-1/Ozempic | 
+      <a href="https://www.aginghealth.website/posts/bio-hacking-for-seniors/" target="_blank">Smart Tech | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" target="_blank">Brain Metabolism
     </p>
   </div>
 
@@ -124,5 +124,5 @@ tags: ['🛡️ Liver & Immune Health', 'Neurological', 'Dementia', 'Liver', 'Pr
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a></p>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</p>
 </div>

@@ -103,10 +103,10 @@ tags: ['🌱 Senior Longevity', 'Neurological', 'Dementia', 'Mind', 'Stress', 'A
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart |
+    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism |
+    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
   </p>
 </div>
 
@@ -116,20 +116,20 @@ tags: ['🌱 Senior Longevity', 'Neurological', 'Dementia', 'Mind', 'Stress', 'A
     Start tracking your "Mental Clarity" score with my
     <a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing" rel="noopener noreferrer" target="_blank">
       Daily Glucose Tracker
-    </a>.
+    .
   </p>
   <p>
     <strong>The Foundation:</strong>
     New to this?
     <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
-    </a>.
+    .
   </p>
   <p>
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-    </a>  </p></div>
+      </p></div>
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">Summary &amp; Sources</h3>
     <p>Mindfulness is your "Inner Lab." By practicing daily, you are gathering the data needed to manage your own neuro-resilience.</p>
@@ -138,5 +138,5 @@ tags: ['🌱 Senior Longevity', 'Neurological', 'Dementia', 'Mind', 'Stress', 'A
   </div>
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
-    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website</a>
+    Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p></div>
