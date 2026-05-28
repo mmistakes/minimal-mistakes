@@ -8,13 +8,13 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '💪 Functio
 
 <h2>Understanding How Temperature Extremes Affect Heart Health</h2>
 <p>Extreme temperatures, whether hot or cold, can affect the <a href="https://www.aginghealth.website/posts/is-heart-attack-risk-increased-more-by/" title="Is Heart Attack Risk Increased More By" rel="dofollow"><b>risk of heart</b> attacks. Research shows that cold weather carries a greater risk, often causing a noticeable rise in cases during the winter months. People, especially those with heart problems, should be cautious and take extra care in extreme weather.<span></span></p><!--more--><div style="margin: 30px 0px; text-align: center;"><img alt="A split-image representing the cardiovascular impact of extreme cold and extreme heat on heart health." border="0" data-original-height="532" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFuCntdjUCDHqrzhvnGnIM3Qh3Y48U8cR5UMxxzP1t6PFrnTiQHRngaM_83q9cCYN258n2qcr-53BbYFoRmIcvEE-FyWR4ZqDA9MnQRqMLe6_dwy72j0-uFAa9UBCulyoFMVYaf1jYm09oXHMA_ehECAK27LfNaNQzi_dRm3C4gMe68gi8UfTuKbOAffXv/s16000/Hot%20Cold.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" title="The cardiovascular impact of extreme cold and extreme heat on heart health." />
-    <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">Engaging in physical activity during both warm and chilly conditions can significantly contribute to maintaining and enhancing your cardiovascular health.</p></div>
+    <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">Engaging in physical activity during both warm and chilly conditions can significantly contribute to maintaining and enhancing your cardiovascular health.</p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 Your heart works nonstop, like a powerful engine—but extreme heat and cold can put it under serious strain. In hot
 weather, it pumps harder to cool you down; in cold, blood pressure rises as vessels tighten, increasing heart attack
 risk. Older adults, those with heart disease, high blood pressure, or obesity are especially vulnerable. Stay safe by
 staying hydrated, dressing for the weather, avoiding intense activity during temperature extremes, and checking in with
-  your care team—your heart will thank you.</div>
+  your care team—your heart will thank you.
 <p></p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h2>Climate Change Adaptation and Cardiovascular Health</h2>
@@ -48,7 +48,7 @@ staying hydrated, dressing for the weather, avoiding intense activity during tem
   , and colleagues conducted the study using country-level mortality data, encompassing 1,847 locations in 32 countries
   on five continents, accounting for 98.5% of the global population. The highest numbers of temperature-related deaths
   were in Central Asia and Eastern Europe, with Asia experiencing a higher prevalence of excess cold-related deaths.
-  </p></div>
+  </p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h2><strong>Cold Weather and Heart Disease: Unveiling the Chilling Truth</strong></h2>
 <p>
@@ -123,7 +123,7 @@ staying hydrated, dressing for the weather, avoiding intense activity during tem
     conditions.
   </li>
 </ul>
-  <p></p></div>
+  <p></p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h2><strong>Extreme temperatures and the risk of heart attack: Who is most vulnerable?</strong></h2>
 <p>Certain individuals are more susceptible to the dangers of extreme temperatures and heart health. These include:</p>
@@ -164,13 +164,13 @@ important for anyone with heart issues to be extra careful in such weather to he
 <h3>Sleep Apnea:&nbsp;</h3>
 Obesity is a <a href="https://www.aginghealth.website/posts/sleep-apnea/" title="Sleep Apnea" rel="dofollow"><b>major cause of obstructive sleep apnea</b> (OSA), a condition where breathing repeatedly stops during the night
 due to a blocked airway. Extra weight, especially around the neck, can narrow the throat, while belly fat can reduce
-lung capacity, making airway collapse more likely.&nbsp;</div><div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">These pauses in breathing put stress on the heart and can worsen other health problems. The cycle continues as sleep messes with hunger hormones, boosting appetite and making weight gain harder to control. The upside is that losing weight can significantly ease symptoms, break the cycle and improve both <a href="https://www.aginghealth.website/posts/sleep-and-heart-health-catching-up-on/" title="Sleep And Heart Health Catching Up On" rel="dofollow"><b>sleep and heart health</b>.</div><div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;"><h3 style="text-align: left;">&nbsp;Inflammation:</h3><p>
+lung capacity, making airway collapse more likely.&nbsp;<div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">These pauses in breathing put stress on the heart and can worsen other health problems. The cycle continues as sleep messes with hunger hormones, boosting appetite and making weight gain harder to control. The upside is that losing weight can significantly ease symptoms, break the cycle and improve both <a href="https://www.aginghealth.website/posts/sleep-and-heart-health-catching-up-on/" title="Sleep And Heart Health Catching Up On" rel="dofollow"><b>sleep and heart health</b>.<div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;"><h3 style="text-align: left;">&nbsp;Inflammation:</h3><p>
   Obesity often leads to chronic, low-grade <a href="https://www.aginghealth.website/posts/in-the-blood/" title="In The Blood" rel="dofollow"><b>inflammation that damages blood vessels and raises</b> the risk of clots.
   Extreme temperatures can make things worse—heat puts extra stress on the body and weakens immunity, while cold might
   spark natural anti-inflammatory responses that could offer some benefit.&nbsp;</p><p>This highlights the close connection between
   weight, inflammation, and environment, especially when it comes to heart health. Recognizing these links can help
   protect those most vulnerable during heatwaves or cold spells.
-  </p></div>
+  </p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h2>Protecting Your Heart in All Seasons</h2>
 <p>You can protect your heart year-round by:&nbsp;</p>
@@ -194,7 +194,7 @@ lung capacity, making airway collapse more likely.&nbsp;</div><div class="box" s
   If you feel chest pain, dizziness, or shortness of breath, seek help right away—your heart’s telling you something
   important.
 </p>
-  <ul></ul></div>
+  <ul></ul>
 <h2>The Science of the "Thermal Stress Test"</h2>
 
   <p>
@@ -249,7 +249,7 @@ lung capacity, making airway collapse more likely.&nbsp;</div><div class="box" s
       The Inflammation Link: As we’ve seen in recent Alzheimer's research, chronic low-grade inflammation (often present
       in obesity) impairs the body's ability to handle the "cytokine storm" that can be triggered by heat exhaustion.
     </li>
-  </ul></div>
+  </ul>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h3>Conclusion:</h3>
 <p>
@@ -258,9 +258,9 @@ lung capacity, making airway collapse more likely.&nbsp;</div><div class="box" s
   appropriately for the weather, and staying informed about potential dangers, we can keep our hearts safe all year
   round. Remember, consulting with your doctor for personalized advice is always recommended, particularly if you have
   any concerns about your heart health.
-  </p></div>
+  </p>
 
-<div class="clinic-citations">
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
 <ol>
@@ -328,4 +328,4 @@ lung capacity, making airway collapse more likely.&nbsp;</div><div class="box" s
   margin-bottom: 0.9rem;
   line-height: 1.55;
   font-size: 1.05rem;
-}</style></ol></div>
+}</style></ol>

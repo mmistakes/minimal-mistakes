@@ -158,8 +158,8 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', 'Neurological', 'Dement
 
 Early intervention improves long-term outcomes.
 
-</div>
-<div><p><br /></p></div>
+
+<p><br /></p>
 <hr />
 <h1>Frequently Asked Questions (FAQ)</h1>
 <h3>1. Can aphasia go away completely?</h3>
@@ -176,7 +176,7 @@ Early intervention improves long-term outcomes.
 <hr />
 <h3>5. How soon should speech therapy begin after a stroke?</h3>
 <p>Speech therapy typically begins as soon as the patient is medically stable. Early rehabilitation is associated with better outcomes. ⁴</p>
-<div class="clinic-trust-card">
+
 
   <h3>About the Researcher</h3>
 
@@ -216,7 +216,7 @@ Early intervention improves long-term outcomes.
 <li>Brady MC, Kelly H, Godwin J, Enderby P. Speech and language therapy for aphasia following stroke. <em>Cochrane Database Syst Rev.</em> 2016;6(6):CD000425.</li>
 <li>Shah-Basak PP, Norise C, Garcia G, et al. Individualized transcranial direct current stimulation for post-stroke aphasia rehabilitation. <em>Front Hum Neurosci.</em> 2020;14:558244.</li></ol>
 
-</div>
+
 
 <script type="application/ld+json">
 {
@@ -268,4 +268,4 @@ Early intervention improves long-term outcomes.
 </script>
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

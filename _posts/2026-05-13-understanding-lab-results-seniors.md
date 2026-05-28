@@ -18,7 +18,7 @@ Navigating the world of medical care can often feel like trying to learn a secon
 For many seniors, improving health literacy starts with understanding what these numbers signify and how they impact daily life. It is crucial to be able to interpret these values accurately to make informed decisions about your health. 
 
 ---
-![Elderly couple reviewing lab results beside blood test vials, clipboard, and stethoscope under the title “Understanding Lab Results: A Senior’s Guide to Common Blood Tests.”]({{ '/assets/images/lab-results-guide.webp' | relative_url }})
+![Elderly couple reviewing lab results beside blood test vials, clipboard, and stethoscope under the title “Understanding Lab Results: A Senior’s Guide to Common Blood Tests.”](![](/assets/images/lab-results-guide.webp' | relative_url ))
 Seniors learning how to read common blood test results with confidence and clarity.
 
 ---

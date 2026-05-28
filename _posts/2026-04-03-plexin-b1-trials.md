@@ -91,4 +91,3 @@ If a senior's personal "Alzheimer's profile" is driven primarily by intense neur
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Alert:</strong> When analyzing your personal neurology lab reports, remember that a high amyloid score alone does not paint the whole picture. Insist that your care team run a comprehensive **Plasma GFAP assay**. Identifying whether your brain's astrocytes are locked in a Plexin-B1 frozen state allows you to target your lifestyle and clinical trial options with true metabolic precision.
-</div>

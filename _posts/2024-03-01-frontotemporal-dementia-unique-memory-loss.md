@@ -66,7 +66,7 @@ Because FTD involves **Anosognosia** - a lack of insight - the person often does
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake ($1.2\text{--}1.5 \text{ g/kg}$) to prevent sarcopenia. Proper metabolic health is essential to support the brain's "Executive Suite" during neurodegenerative stress.
-</div>
+
 
 <script type="application/ld+json">
 {

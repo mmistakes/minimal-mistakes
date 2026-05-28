@@ -26,7 +26,7 @@ Anxiety is a complex, multi-layered mental health condition marked by persistent
 > **⚠️ Medical Disclaimer:** This material reflects current 2026 psychoneuroimmunology datasets, epigenetic clock registries, and clinical neuro-geriatric guidelines. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent symptom matrix.
 ---
 
-![Hands resting calmly to symbolize stress reduction and mindfulness]({{ '/assets/images/unseen-burden.webp' | relative_url }})
+![Hands resting calmly to symbolize stress reduction and mindfulness](![](/assets/images/unseen-burden.webp' | relative_url ))
 *Figure 1: The Invisible Stressor. Cultivating psychological resilience and emotional regulation is a foundational pillar of gracefully preserving longevity. Intercepting chronic stress safeguards long-term biological integrity.*
 
 ---
@@ -75,7 +75,7 @@ This state of unyielding unease generates significant friction inside daily oper
 
 To fully map how chronic anxiety alters the aging curve, we must analyze the exact biochemical pathways activated by prolonged sympathetic nervous system activation:
 
-[Image detailing the HPA axis pathway showing how chronic perception of stress drives sustained cortisol release from the adrenal glands, triggering telomere shortening and systemic inflammation]({{ '/assets/images/the-hpa-axis.webp'| relative_url }})
+[Image detailing the HPA axis pathway showing how chronic perception of stress drives sustained cortisol release from the adrenal glands, triggering telomere shortening and systemic inflammation](![](/assets/images/the-hpa-axis.webp'| relative_url ))
 
 ### 1. Telomere Atrophy Metrics
 Telomeres are specialized, repetitive DNA-protein complexes that cap the terminal ends of eukaryotic chromosomes, shielding our genetic material from structural degradation. With each sequential cell division, telomeres naturally shorten; once they hit a critically truncated length, the host cell enters a state of permanent arrest known as **cellular senescence**. 

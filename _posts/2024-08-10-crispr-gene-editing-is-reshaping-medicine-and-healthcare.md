@@ -99,7 +99,7 @@ We are living at the dawn of the genomic medicine era. As delivery vehicles evol
 
 ---
 
-<div class="clinic-citations">
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
     <li>Doudna, J. A., &amp; Charpentier, E. (2014). The new frontier of genome engineering with CRISPR-Cas9. <i>Science</i>, 346(6213), 1258096.</li>
@@ -108,11 +108,11 @@ We are living at the dawn of the genomic medicine era. As delivery vehicles evol
     <li>Gootenberg, J. S., et al. (2017). Nucleic acid detection with CRISPR-Cas13a/SHERLOCK. <i>Science</i>, 356(6336), 438-442.</li>
     <li>National Institutes of Health. (2025). Longitudinal monitoring of off-target profiles in commercialized ex vivo somatic gene therapeutics.</li>
   </ol>
-</div>
+
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Clinical Milestone:</strong> Real-world post-market surveillance of the first FDA-approved CRISPR therapeutic (Casgevy for Sickle Cell Disease) confirms persistent therapeutic fetal hemoglobin expression past the two-year mark, showing excellent long-term safety profiles.
-</div>
+
 
 <script type="application/ld+json">
 {

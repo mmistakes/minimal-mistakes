@@ -94,4 +94,4 @@ Absolutely not. Commercial consumer kits rely primarily on basic genotyping (spo
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Geriatric Genomics Update:</strong> Emerging precision medicine guidelines emphasize that when reviewing Polygenic Risk Scores (PRS) for older adults, clinicians must heavily weigh epigenetic lifestyle modifications. Phenotypic expression of late-onset metabolic risks can be fundamentally altered by targeted functional fitness and clinical nutritional protocols implemented in later life.
-</div>
+

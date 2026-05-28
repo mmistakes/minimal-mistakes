@@ -30,7 +30,7 @@ In rural sectors, its presence is even more vital, functioning as the primary ec
 > **⚠️ Medical Policy Disclaimer:** This material reflects active 2026 federal legislative spending shifts, healthcare informatics tracking, and rural public health registries. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any specific health concern.
 {.prompt-warning}
 
-![Small modern rural hospital at dawn]({{ '/assets/images/small-town-hospital.webp' | relative_url }})
+![Small modern rural hospital at dawn](![](/assets/images/small-town-hospital.webp' | relative_url ))
 *Figure 1: Essential Infrastructure. Rural hospitals serve as the primary defensive perimeter for community wellness. When their financial sustainability is compromised by Medicaid funding shifts, the safety of the entire local population is placed at immediate risk.*
 
 ---
@@ -125,7 +125,7 @@ The REH designation acts as a vital regulatory safety valve. It allows a financi
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

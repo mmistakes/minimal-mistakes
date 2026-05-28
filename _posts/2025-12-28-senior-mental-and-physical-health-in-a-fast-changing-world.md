@@ -39,7 +39,7 @@ Arthur, at 74, recalls a childhood defined by rotary phones, physical paper maps
 
 Like many of his peers, he feels the rapid pace of the 21st century, where the world accelerates daily and the landscape of senior mental and physical health shifts beneath our feet.
 
-![Senior man using modern tech tools in a garden]({{ '/assets/images/health-tech.webp' | relative_url }})
+![Senior man using modern tech tools in a garden](![](/assets/images/health-tech.webp' | relative_url ))
 *Figure 1: Bridging the Divide. Older adults are increasingly leveraging targeted age-tech applications to build a physical safety net while preserving vital social channels.*
 
 In this modern era, successful aging is no longer about passively getting by. It demands actively thriving within an integrated digital architecture while protecting the deep somatic wisdom of a life well-lived. This guide unpacks the physical and neurological strategies necessary to claim your health span with absolute independence.
@@ -170,7 +170,7 @@ As you adopt new longevity tools, protecting your personal health records from e
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Protecting your cognitive vitality requires active, lifestyle-driven somatic preservation. To build muscle reserve and safeguard your liver health, aim for a daily intake of <strong>1.2 to 1.5 grams of high-quality protein per kilogram of body weight</strong>. If you are navigating portal hypertension or tracking vascular markers, ensure your resting blood pressure stays held strictly <strong>under 130/80 mmHg</strong> to prevent microvascular damage and preserve your long-term independence.
-</div>
+
 
 <script type="application/ld+json">
 {

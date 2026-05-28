@@ -57,7 +57,7 @@ There is no one-size-fits-all treatment, but you can improve the resilience of y
 
 <div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Psoriasis and Leaky Gut are increasingly managed as linked systemic inflammatory events. Clinical targets emphasize metabolic support with high-quality protein ($1.2\text{--}1.6 \text{ g/kg}$) to maintain skin cell turnover and lean muscle mass.
-</div>
+
 
 <script type="application/ld+json">
 {

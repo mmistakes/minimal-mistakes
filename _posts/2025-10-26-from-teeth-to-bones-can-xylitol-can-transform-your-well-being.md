@@ -29,7 +29,7 @@ But what exactly separates xylitol from conventional table sugar, and how does i
 > **⚠️ Medical Disclaimer:** This material reflects current 2025/2026 clinical guidelines and National Institutes of Health (NIH) research briefs. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Infographic of xylitol health benefits]({{ '/assets/images/xylitol-benefits.webp' | relative_url }})
+![Infographic of xylitol health benefits](![](/assets/images/xylitol-benefits.webp' | relative_url ))
 *Figure 1: The Polyol Profile. Xylitol acts as a functional tool for healthy aging, supporting dental enamel remineralization and maintaining flat postprandial glucose curves.*
 
 ---
@@ -167,7 +167,7 @@ When optimizing your nutritional baseline to preserve your physical independence
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

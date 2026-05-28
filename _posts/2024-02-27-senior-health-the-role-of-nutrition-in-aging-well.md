@@ -18,7 +18,7 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
   </ul>
   <p><em>Medical note:</em> If you have kidney disease, diabetes, or take blood thinners, talk with a clinician before major diet changes.<span></span></p><a name='more'><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiooa77vbIAdKXiAacg2SGzSaQ6EuvRQT33A3Xdr-sZIlvW1LhsGjthfB1l-JWZVF5rJ0zb_7ZvbBb61KNxZDzwVndLxPzuMh_kF6qZmWsPbq6a-94e7b11Tlr6l-LocLRAFjQs6pT-571u6V_7t3R09wlFkNpRvvXzV4ijItXDxB50_5_7rqw7Xj8bzTkG/s1485/Healthy%20Food.webp" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="A warm, realistic oil painting of a doctor in a sunlit classroom pointing to a large, colorful healthy food chart. The chart features fruits, vegetables, whole grains, lean proteins, and healthy fats in a clinic-style layout. A small group of engaged seniors sits at desks, leaning forward with curiosity. The scene is rendered in Norman Rockwell’s Americana style with rich textures and gentle humor." border="0" data-original-height="1485" data-original-width="990" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiooa77vbIAdKXiAacg2SGzSaQ6EuvRQT33A3Xdr-sZIlvW1LhsGjthfB1l-JWZVF5rJ0zb_7ZvbBb61KNxZDzwVndLxPzuMh_kF6qZmWsPbq6a-94e7b11Tlr6l-LocLRAFjQs6pT-571u6V_7t3R09wlFkNpRvvXzV4ijItXDxB50_5_7rqw7Xj8bzTkG/s16000/Healthy%20Food.webp" title="Doctor Teaching Nutrition in a Sunlit Senior Classroom" /></td></tr><tr><td class="tr-caption" style="text-align: center;">Nutrition education for older adults—Rockwell-style storytelling meets clinic-style clarity. A doctor explains healthy eating using a vivid food chart, while seniors listen with warmth and curiosity. Senior-friendly nutrition chart illustration.</td></tr></tbody></table><br /><p></p><h2 style="text-align: left;">Vitality Through Nutrition: A Simple Guide for Senior Health</h2></section>
 
-<div class="key-facts">
+
   <h3>Key Facts (Easy to Reference)</h3>
   <ul>
     <li><strong>Protein</strong> supports muscle maintenance as we age.</li>
@@ -27,7 +27,7 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
     <li><strong>Omega‑3s</strong> support heart health and may support brain function.</li>
     <li><strong>Vitamin B12</strong> supports nerves and red blood cell production.</li>
   </ul>
-</div>
+
 
 <p>As we age, our bodies change. Many older adults gain weight more easily, lose muscle, and feel less hungry than they used to. These changes can increase the risk of chronic conditions such as heart disease, diabetes, osteoporosis, and cognitive decline. The good news is that proper nutrition can help seniors stay strong, independent, and energized.</p>
 
@@ -160,7 +160,7 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
 <p>Good nutrition is one of the most powerful tools seniors have to protect their health, independence, and quality of life. By focusing on key nutrients, staying hydrated, and choosing simple, nourishing foods, older adults can enjoy more energy and vitality in their golden years.</p>
 
 <p>Always consult a healthcare provider or registered dietitian for personalized nutrition advice.</p>
-<div class="patient sources-box" style="background-color: #e0f2f1; border-left: 4px solid rgb(0, 77, 64); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;"><div class="patient-resources-box">
+<div class="patient sources-box" style="background-color: #e0f2f1; border-left: 4px solid rgb(0, 77, 64); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
   <h3>📘 Related Patient Resources</h3>
   <p>    <strong>The Log:</strong>
     Start tracking your "Mental Clarity" score with my
@@ -179,7 +179,7 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-      </p></div></div>
+      </p>
 <div aria-label="Article review and citations" class="citation-box">
   <h2>How We Use Sources</h2>
   <p>We prioritize evidence-based health information from reputable medical organizations, academic institutions, and government health agencies. This article is educational and not a substitute for medical advice.</p>
@@ -197,7 +197,7 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
   </ol>
 
   <p><strong>Medical Disclaimer:</strong> Always talk with a healthcare professional before making major diet changes, especially if you have chronic conditions or take prescription medications.</p>
-</div>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -268,4 +268,4 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
 
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

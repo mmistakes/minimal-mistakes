@@ -10,7 +10,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
   Delays in treating mild cognitive impairment often occur because it remains undiagnosed until it is sometimes too
   late.
 </h2>
-<div>
+
   <p style="text-align: left;"></p>
   <p style="text-align: left;">Dementia isn’t just a regular part of getting older. While normal aging might cause the occasional lapse in memory, dementia brings a steady decline in memory, thinking skills, and daily abilities. Mild Cognitive Impairment (MCI) falls somewhere in between, but many older adults go undiagnosed. Research shows that only a small number of expected MCI cases are detected, and most primary care providers overlook the early signs.&nbsp;<span></span></p><a name='more'> &nbsp;<p></p>
   <table class="tr-caption-container" style="float: left;">
@@ -34,17 +34,17 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
   <br />
   <p></p>
   <br />
-</div>
-<div>
+
+
   <del><br /></del>
-</div>
-<div>
+
+
   <br />
-  <div>
+  
     <h2 style="text-align: left;"><br /></h2>
-    <div>
-      <div><span style="font-size: normal;"></span></div>
-      <div><br /></div>
+    
+      <span style="font-size: normal;"></span>
+      <br />
       <h4 style="text-align: left;"><br /></h4>
       <h4><br /></h4>
       <h4><br /></h4>
@@ -52,21 +52,21 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
       <h4><br /></h4>
       <br />
       <br />
-    </div>
-    <div><br /></div>
-    <div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div>
+    
+    <br />
+    <br /><br /><br /><br /><br />
       Detecting MCI early is essential because it can progress to dementia at a rate of 10–15% per year and often
       precedes Alzheimer’s disease. Some causes, such as medication effects, thyroid issues, or vitamin B12 deficiency,
       are reversible.&nbsp;
-    </div>
-    <div><br /></div>
-    <div>
+    
+    <br />
+    
       New treatments like lecanemab and donanemab offer the greatest benefit in the earliest stages, making timely
       diagnosis even more important. Seniors and families should discuss memory concerns during routine visits and use
       the Medicare Annual Wellness Visit to request a cognitive assessment.
-    </div>
-    <div><br /></div>
-    <div>
+    
+    <br />
+    
       <h2 style="text-align: left;">What Is the Main Distinction Between Dementia and Normal Aging?</h2>
       The key difference lies in impact.
       <br />
@@ -74,12 +74,12 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
       do not interfere with daily life. Dementia, by contrast, involves a progressive decline in memory, language,
       judgment, and problem‑solving that disrupts independence and everyday activities. It is not an expected part of
       aging.
-    </div>
-    <div>
+    
+    
       <h2 style="text-align: left;">Undiagnosed Mild Cognitive Impairment in Older Adults</h2>
-      <div>Two major studies highlight how often early <a href="https://www.aginghealth.website/posts/making-your-home-safe-for-cognitive-decline/" rel="dofollow" title="Making Your Home Safe For Cognitive Decline"><b>cognitive decline is missed</b>:</div>
-    </div>
-    <div>
+      Two major studies highlight how often early <a href="https://www.aginghealth.website/posts/making-your-home-safe-for-cognitive-decline/" rel="dofollow" title="Making Your Home Safe For Cognitive Decline"><b>cognitive decline is missed</b>:
+    
+    
       <h3>Study 1: Medicare Data (2015–2019)</h3>
       Researchers reviewed records from 40 million adults aged 65+.
       <br />
@@ -179,7 +179,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
 </section>
 
      
-    <div class="clinic-card citations-card">
+    
   <h3>Key Evidence on Mild Cognitive Impairment and Early Alzheimer’s</h3>
   <ul>
     <li>
@@ -200,9 +200,9 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
       Monoclonal antibody with positive phase 3 results; FDA approval anticipated following successful trials in early Alzheimer’s. 
     </li>
   </ul>
-</div>
+
 <div class="patient sources-box" style="background-color: #e3f2fd; border-left: 4px solid rgb(0, 0, 139); border-radius: 15px; margin-top: 2rem; padding-left: 1rem;">
-<div class="clinic-trust-card">
+
   <h3>About the Researcher</h3>
   <p>
     Tommy T. Douglas is an independent health researcher and patient advocate. 
@@ -219,10 +219,10 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
     <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
   </p><br />
-</div></div>
 
-  </div>
-</div>
+
+  
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -290,7 +290,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
 
 
 
-</div>
+
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

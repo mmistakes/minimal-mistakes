@@ -10,7 +10,7 @@ title_separator: "-"
 subtitle: "Patient Advocacy & Geriatric Literacy"
 description: "Independent health research and patient advocacy focusing on geriatric health literacy, clinical data interpretation, and longevity."
 url: "https://aginghealth.website"
-baseurl: "/"
+baseurl: ""
 permalink: /:categories/:year/:month/:day/:title.html
 
 # Repository Settings

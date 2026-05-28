@@ -23,7 +23,7 @@ As an independent researcher tracking complex metabolic pathways, I have learned
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Infographic displaying the metabolic pathways connecting liver function and brain health]({{ '/assets/images/sarcopenia-metabolic-cycle.webp' | relative_url }})
+![Infographic displaying the metabolic pathways connecting liver function and brain health](![](/assets/images/sarcopenia-metabolic-cycle.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Systemic toxins like excess ammonia or advanced glycation end-products readily pass the blood-brain barrier, inducing severe cognitive fog that mimics progressive neurodegeneration._
 

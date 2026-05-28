@@ -42,23 +42,23 @@ Vaccines do more than just prevent a "fever." For the senior population, they pr
 ---
 
 ###  Senior Vaccine Dashboard
-<div class="vaccine-card-grid">
-  <div class="vaccine-card">
+
+  
     <h3>Influenza</h3>
     <p><strong>Frequency:</strong> Annually (Fall)</p>
     <p><strong>Benefit:</strong> Prevents secondary pneumonia.</p>
-  </div>
-  <div class="vaccine-card">
+  
+  
     <h3>Shingrix</h3>
     <p><strong>Frequency:</strong> 2-dose series (Once)</p>
     <p><strong>Benefit:</strong> Protects against debilitating nerve pain.</p>
-  </div>
-  <div class="vaccine-card">
+  
+  
     <h3>Tdap</h3>
     <p><strong>Frequency:</strong> Every 10 Years</p>
     <p><strong>Benefit:</strong> Protects against Tetanus and Pertussis.</p>
-  </div>
-</div>
+  
+
 
 ---
 

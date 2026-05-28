@@ -26,7 +26,7 @@ However, as we venture deeper into modern cognitive neuroscience, research confi
 
 As an independent health researcher focused on the physiological pathways of aging, I have spent years tracking variables to discover how to support a resilient health span. While a nutrient-dense diet and structured progressive resistance movement form the structural foundation, there is a third biological pillar that remains criminally overlooked: the profound, two-way feedback connection between human imagination and physical reality.
 
-![Senior woman visualizing health and peace]({{ '/assets/images/mind-body-connection.webp' | relative_url }})
+![Senior woman visualizing health and peace](![](/assets/images/mind-body-connection.webp' | relative_url ))
 *Figure 1: The Inner Landscape. High-resolution functional imaging demonstrates that the human brain utilizes nearly identical neural pathways to process a vivid mental visualization as it does to navigate a real-world physical event.*
 
 By understanding how your brain exploits this biological "loophole," you can actively employ focused mental rehearsal to optimize your physical mobility, reduce systemic inflammation, and preserve your independent quality of life.
@@ -183,8 +183,8 @@ By consciously instructing your brain to project strength, vitality, and indepen
   
   <div style="border-top: 1px solid #d6e2f0; margin-top: 1rem; padding-top: 0.5rem; font-size: 0.9rem; font-weight: bold; color: #555; text-align: center;">
     ✔ Peer-reviewed sources &nbsp;|&nbsp; ✔ Academic research institutions &nbsp;|&nbsp; ✔ Clinical health systems
-  </div>
-</div>
+  
+
 
 ---
 
@@ -196,7 +196,7 @@ By consciously instructing your brain to project strength, vitality, and indepen
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global hormone balance requires active structural care. To preserve lean mass reserves and safeguard your liver environment, aim for a daily high-quality protein intake of <strong>1.2 to 1.5 grams per kilogram of body weight</strong>. If you are tracking macrovascular health indices or portal parameters, maintain your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to protect your delicate microvascular layout from stress.
-</div>
+
 
 <script type="application/ld+json">
 {

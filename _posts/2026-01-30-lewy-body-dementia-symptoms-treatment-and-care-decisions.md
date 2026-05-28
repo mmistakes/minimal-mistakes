@@ -20,7 +20,7 @@ Lewy Body Dementia (LBD) stands as one of the most frequently misdiagnosed neuro
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Lewy Body Dementia care discussion]({{ '/assets/images/lbd.webp' | relative_url }})
+![Lewy Body Dementia care discussion](![](/assets/images/lbd.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Developing a shared understanding of Lewy Body Dementia between families and clinicians optimizes treatment safety and preserves patient independence._
 

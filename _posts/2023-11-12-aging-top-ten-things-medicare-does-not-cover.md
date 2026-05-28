@@ -49,49 +49,49 @@ your health, independence, and financial stability as you age.
 
 <h2 style="text-align: left;">Top Ten Things Medicare Does Not Cover (With Options)</h2>
 
-<h3 style="text-align: left;">1. Dental Care (Routine &amp; Major)</h3><p style="text-align: left;"><b>What Medicare Does Not Cover:</b></p><p></p><div style="text-align: left;">Original Medicare excludes routine dental exams, cleanings, fillings, root canals, dentures, and&nbsp;</div><div style="text-align: left;">implants.</div><p></p><p style="text-align: left;"><b>Why It Matters:</b></p><p style="text-align: left;">Dental <a href="https://www.aginghealth.website/posts/cardiologists-heart-health/" rel="dofollow" title="Cardiologists Heart Health"><b>health is closely linked to heart disease</b>, diabetes, and cognitive decline — yet seniors often skip care due to cost.</p><b><div style="text-align: left;"><b>Possible Options:</b></div></b><p style="text-align: left;"></p><ul style="text-align: left;"><li>Medicare Advantage plans with dental benefits</li><li>Stand‑alone dental insurance</li><li>Dental schools offering reduced‑cost services</li><li>Community health centers with sliding‑scale fees</li></ul><p></p><p style="text-align: left;"><span style="font-size: small;"><b>Section Key Point:</b> Dental care is one of the most expensive and commonly overlooked Medicare exclusions.</span></p><ul>
+<h3 style="text-align: left;">1. Dental Care (Routine &amp; Major)</h3><p style="text-align: left;"><b>What Medicare Does Not Cover:</b></p><p></p><div style="text-align: left;">Original Medicare excludes routine dental exams, cleanings, fillings, root canals, dentures, and&nbsp;<div style="text-align: left;">implants.<p></p><p style="text-align: left;"><b>Why It Matters:</b></p><p style="text-align: left;">Dental <a href="https://www.aginghealth.website/posts/cardiologists-heart-health/" rel="dofollow" title="Cardiologists Heart Health"><b>health is closely linked to heart disease</b>, diabetes, and cognitive decline — yet seniors often skip care due to cost.</p><b><div style="text-align: left;"><b>Possible Options:</b></b><p style="text-align: left;"></p><ul style="text-align: left;"><li>Medicare Advantage plans with dental benefits</li><li>Stand‑alone dental insurance</li><li>Dental schools offering reduced‑cost services</li><li>Community health centers with sliding‑scale fees</li></ul><p></p><p style="text-align: left;"><span style="font-size: small;"><b>Section Key Point:</b> Dental care is one of the most expensive and commonly overlooked Medicare exclusions.</span></p><ul>
 </ul>
 
-<h3 style="text-align: left;">2. Vision Exams, Eyeglasses &amp; Contacts</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div></b><div><div style="text-align: left;"><span style="font-weight: 700;"><br /></span></div><div style="text-align: left;">Routine eye exams, glasses, and contact lenses are excluded under Original Medicare.</div><div style="text-align: left;"><br /></div><b><div style="text-align: left;"><b>Possible Options:</b></div></b><div><ul style="text-align: left;"><li>Medicare Advantage plans with vision benefits</li><li>Discount vision programs</li><li>Retail optical centers with senior discounts</li></ul></div><ul>
+<h3 style="text-align: left;">2. Vision Exams, Eyeglasses &amp; Contacts</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></b><div style="text-align: left;"><span style="font-weight: 700;"><br /></span><div style="text-align: left;">Routine eye exams, glasses, and contact lenses are excluded under Original Medicare.<div style="text-align: left;"><br /><b><div style="text-align: left;"><b>Possible Options:</b></b><ul style="text-align: left;"><li>Medicare Advantage plans with vision benefits</li><li>Discount vision programs</li><li>Retail optical centers with senior discounts</li></ul><ul>
 </ul>
 
-<h3 style="text-align: left;">3. Hearing Aids &amp; Hearing Exams</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div></b></div><div><div style="text-align: left;"><span style="font-weight: 700;"><br /></span></div><div style="text-align: left;">Hearing aids and most hearing exams are not covered.</div><div style="text-align: left;"><br /></div><b><div style="text-align: left;"><b>Possible Options:</b></div></b><p style="text-align: left;"></p><ul style="text-align: left;"><li>Medicare Advantage plans with hearing benefits</li><li>Over‑the‑counter FDA‑approved hearing aids</li><li>Audiology clinics offering payment plan</li></ul><p></p><ul>
+<h3 style="text-align: left;">3. Hearing Aids &amp; Hearing Exams</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></b><div style="text-align: left;"><span style="font-weight: 700;"><br /></span><div style="text-align: left;">Hearing aids and most hearing exams are not covered.<div style="text-align: left;"><br /><b><div style="text-align: left;"><b>Possible Options:</b></b><p style="text-align: left;"></p><ul style="text-align: left;"><li>Medicare Advantage plans with hearing benefits</li><li>Over‑the‑counter FDA‑approved hearing aids</li><li>Audiology clinics offering payment plan</li></ul><p></p><ul>
 </ul>
 
-<h3 style="text-align: left;">4. Long-Term Care (Custodial Care)</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div></b><p style="text-align: left;">Medicare excludes long‑term custodial care, including help with bathing, dressing, eating, and daily living activities.</p><b><div style="text-align: left;"><b>Possible Options:</b></div></b><p></p><ul style="text-align: left;"><li>Long‑term care insurance</li><li>Hybrid life‑insurance/long‑term‑care policies</li><li>Medicaid (for those who qualify)</li><li>Veterans’ benefits</li><li>Community‑based aging services</li></ul><p></p><p style="text-align: left;"><b>Section Key Point:</b> Long‑term care is the single largest financial risk for aging adults.</p><h3 style="text-align: left;">5. Routine Foot Care &amp; Podiatry</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div></b><p style="text-align: left;">Routine foot care, callus removal, and nail trimming are excluded unless medically necessary.</p><b><div style="text-align: left;"><b>Possible Options:</b></div></b><p></p><ul style="text-align: left;"><li>Medicare Advantage plans with limited podiatry benefits</li><li>Community podiatry clinics</li><li>Diabetic foot care exceptions (covered under specific conditions)</li></ul><p></p><ul>
-</ul><h3 style="text-align: left;">6. Cosmetic Surgery</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div></b></div><div><div style="text-align: left;"><span style="font-weight: 700;"><br /></span></div><div style="text-align: left;">Cosmetic procedures for appearance only — such as facelifts, liposuction, or wrinkle treatments — are excluded.</div><div style="text-align: left;"><br /></div><b><div style="text-align: left;"><b>Possible Options:</b></div></b><div><ul style="text-align: left;"><li>Only medically necessary reconstructive procedures may be covered</li><li>Payment plans through cosmetic surgery centers</li></ul></div><h3 style="text-align: left;">7. Acupuncture (Limited Coverage)</h3><div style="text-align: left;">What Medicare Does Not Cover:</div><div style="text-align: left;"><br /></div><div style="text-align: left;">Medicare covers acupuncture only for chronic low back pain — all other uses are excluded.</div><div style="text-align: left;"><br /></div><div style="text-align: left;">Possible Options:</div></div><div><div><ul style="text-align: left;"><li>Medicare Advantage plans with expanded alternative therapy benefits</li><li>Community acupuncture clinics offering low‑cost group sessions</li></ul></div><h3 style="text-align: left;">8. Care Outside the United States</h3><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div><div style="text-align: left;"><b><br /></b></div><div style="text-align: left;">Most medical care outside the U.S. is excluded.</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><b>Possible Options:</b></div><div><ul style="text-align: left;"><li>Medigap Plans C, D, F, G, M, and N (limited foreign travel emergency coverage)</li><li>Travel medical insurance</li><li>Medicare Advantage plans with limited international coverage</li></ul></div><div><h3 style="text-align: left;">9. Personal Comfort Items</h3><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div><div style="text-align: left;"><b><br /></b></div><div style="text-align: left;">Items such as hospital TVs, phones, or personal convenience items are excluded.</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><b>Possible Options:</b></div><div style="text-align: left;"><b><br /></b></div><div><ul style="text-align: left;"><li>Bring personal items from home</li><li>Ask hospitals about low‑cost alternatives</li></ul></div><h3 style="text-align: left;">10. Concierge Medicine &amp; Membership Fees</h3><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></div><div style="text-align: left;"><b><br /></b></div><div style="text-align: left;">Membership fees for concierge or boutique medical practices are excluded.</div><div style="text-align: left;"><br /></div><div style="text-align: left;"><b>Possible Options:</b></div><div><ul style="text-align: left;"><li>Traditional primary care</li><li>Medicare Advantage plans with enhanced care coordination</li><li>Community health clinics</li></ul></div></div>
+<h3 style="text-align: left;">4. Long-Term Care (Custodial Care)</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></b><p style="text-align: left;">Medicare excludes long‑term custodial care, including help with bathing, dressing, eating, and daily living activities.</p><b><div style="text-align: left;"><b>Possible Options:</b></b><p></p><ul style="text-align: left;"><li>Long‑term care insurance</li><li>Hybrid life‑insurance/long‑term‑care policies</li><li>Medicaid (for those who qualify)</li><li>Veterans’ benefits</li><li>Community‑based aging services</li></ul><p></p><p style="text-align: left;"><b>Section Key Point:</b> Long‑term care is the single largest financial risk for aging adults.</p><h3 style="text-align: left;">5. Routine Foot Care &amp; Podiatry</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></b><p style="text-align: left;">Routine foot care, callus removal, and nail trimming are excluded unless medically necessary.</p><b><div style="text-align: left;"><b>Possible Options:</b></b><p></p><ul style="text-align: left;"><li>Medicare Advantage plans with limited podiatry benefits</li><li>Community podiatry clinics</li><li>Diabetic foot care exceptions (covered under specific conditions)</li></ul><p></p><ul>
+</ul><h3 style="text-align: left;">6. Cosmetic Surgery</h3><b><div style="text-align: left;"><b>What Medicare Does Not Cover:</b></b><div style="text-align: left;"><span style="font-weight: 700;"><br /></span><div style="text-align: left;">Cosmetic procedures for appearance only — such as facelifts, liposuction, or wrinkle treatments — are excluded.<div style="text-align: left;"><br /><b><div style="text-align: left;"><b>Possible Options:</b></b><ul style="text-align: left;"><li>Only medically necessary reconstructive procedures may be covered</li><li>Payment plans through cosmetic surgery centers</li></ul><h3 style="text-align: left;">7. Acupuncture (Limited Coverage)</h3><div style="text-align: left;">What Medicare Does Not Cover:<div style="text-align: left;"><br /><div style="text-align: left;">Medicare covers acupuncture only for chronic low back pain — all other uses are excluded.<div style="text-align: left;"><br /><div style="text-align: left;">Possible Options:<ul style="text-align: left;"><li>Medicare Advantage plans with expanded alternative therapy benefits</li><li>Community acupuncture clinics offering low‑cost group sessions</li></ul><h3 style="text-align: left;">8. Care Outside the United States</h3><div style="text-align: left;"><b>What Medicare Does Not Cover:</b><div style="text-align: left;"><b><br /></b><div style="text-align: left;">Most medical care outside the U.S. is excluded.<div style="text-align: left;"><br /><div style="text-align: left;"><b>Possible Options:</b><ul style="text-align: left;"><li>Medigap Plans C, D, F, G, M, and N (limited foreign travel emergency coverage)</li><li>Travel medical insurance</li><li>Medicare Advantage plans with limited international coverage</li></ul><h3 style="text-align: left;">9. Personal Comfort Items</h3><div style="text-align: left;"><b>What Medicare Does Not Cover:</b><div style="text-align: left;"><b><br /></b><div style="text-align: left;">Items such as hospital TVs, phones, or personal convenience items are excluded.<div style="text-align: left;"><br /><div style="text-align: left;"><b>Possible Options:</b><div style="text-align: left;"><b><br /></b><ul style="text-align: left;"><li>Bring personal items from home</li><li>Ask hospitals about low‑cost alternatives</li></ul><h3 style="text-align: left;">10. Concierge Medicine &amp; Membership Fees</h3><div style="text-align: left;"><b>What Medicare Does Not Cover:</b><div style="text-align: left;"><b><br /></b><div style="text-align: left;">Membership fees for concierge or boutique medical practices are excluded.<div style="text-align: left;"><br /><div style="text-align: left;"><b>Possible Options:</b><ul style="text-align: left;"><li>Traditional primary care</li><li>Medicare Advantage plans with enhanced care coordination</li><li>Community health clinics</li></ul>
 <section class="clinic-tree" id="decision-tree">
   <h2 style="text-align: left;">Coverage Decision Tree</h2>
 
-  <div class="tree-step">
+  
     <h3 style="text-align: left;">1. Do you need dental, vision, or hearing care?</h3>
     <p style="text-align: left;"><strong>Yes:</strong> Consider Medicare Advantage or stand-alone plans.</p>
     <p style="text-align: left;"><strong>No:</strong> Continue to Step 2.</p>
-  </div>
+  
 
-  <div class="tree-step">
+  
     <h3 style="text-align: left;">2. Do you have chronic conditions requiring ongoing support?</h3>
     <p style="text-align: left;"><strong>Yes:</strong> Explore <a href="https://www.aginghealth.website/posts/medicare-advantage-plans/" rel="dofollow" title="Seniors: About Medicare Advantage Plans"><b>Medigap or Medicare Advantage with disease-management programs</b>.</p>
     <p style="text-align: left;"><strong>No:</strong> Continue to Step 3.</p>
-  </div>
+  
 
-  <div class="tree-step">
+  
     <h3 style="text-align: left;">3. Are you concerned about long-term care needs?</h3>
     <p style="text-align: left;"><strong>Yes:</strong> Look into long-term care insurance or Medicaid planning.</p>
     <p style="text-align: left;"><strong>No:</strong> Continue to Step 4.</p>
-  </div>
+  
 
-  <div class="tree-step">
+  
     <h3 style="text-align: left;">4. Do you travel internationally?</h3>
     <p style="text-align: left;"><strong>Yes:</strong> Consider Medigap with foreign travel emergency coverage.</p>
     <p style="text-align: left;"><strong>No:</strong> Continue to Step 5.</p>
-  </div>
+  
 
-  <div class="tree-step">
+  
     <h3 style="text-align: left;">5. Do you want predictable out-of-pocket costs?</h3>
     <p style="text-align: left;"><strong>Yes:</strong> Medigap may be a good fit.</p>
     <p style="text-align: left;"><strong>No:</strong> Medicare Advantage may offer more flexibility.</p>
-  </div>
+  
 </section>
 <style>
   .clinic-tree .tree-step {
@@ -106,39 +106,39 @@ your health, independence, and financial stability as you age.
 
 
 
-<h2 style="text-align: left;">Real‑Life Case Studies</h2></div><h3 style="text-align: left;">Case Study 1: The Dental Surprise</h3><div style="text-align: left;">Linda, age 72, needed a root canal and crown. She assumed
+<h2 style="text-align: left;">Real‑Life Case Studies</h2><h3 style="text-align: left;">Case Study 1: The Dental Surprise</h3><div style="text-align: left;">Linda, age 72, needed a root canal and crown. She assumed
 Medicare would help — but learned Medicare does not cover routine or major dental care. Her $2,400 bill forced her to
 delay treatment. Afterward, she enrolled in a Medicare Advantage plan with dental benefits, reducing future costs
-dramatically.</div><div style="text-align: left;"><br /></div><h3 style="text-align: left;">Case Study 2: The Hearing Aid Dilemma</h3><div style="text-align: left;">George, age 78, struggled with hearing loss but avoided hearing aids
+dramatically.<div style="text-align: left;"><br /><h3 style="text-align: left;">Case Study 2: The Hearing Aid Dilemma</h3><div style="text-align: left;">George, age 78, struggled with hearing loss but avoided hearing aids
 due to cost. After discovering Medicare excludes hearing aids, he purchased an FDA‑approved over‑the‑counter device for
-$899 — a fraction of the traditional price — and regained independence.</div><h3 style="text-align: left;">Case Study 3: The Long‑Term Care Wake‑Up
-Call</h3><div><div style="text-align: left;">Maria, age 81, developed mobility issues requiring daily assistance. Her family was shocked to learn Medicare
-excludes custodial long‑term care. Medicaid ultimately became her primary support after a financial eligibility review.</div><section class="clinic-glossary" id="glossary">
+$899 — a fraction of the traditional price — and regained independence.<h3 style="text-align: left;">Case Study 3: The Long‑Term Care Wake‑Up
+Call</h3><div style="text-align: left;">Maria, age 81, developed mobility issues requiring daily assistance. Her family was shocked to learn Medicare
+excludes custodial long‑term care. Medicaid ultimately became her primary support after a financial eligibility review.<section class="clinic-glossary" id="glossary">
   <h2 style="text-align: left;">Glossary</h2>
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;">🧓<b>Custodial Care:&nbsp;</b>Non-medical assistance with daily living activities such as bathing, dressing, and eating. Medicare does not cover this type of long-term support.</div>
-  </div>
+    <div class="icon" style="text-align: left;">🧓<b>Custodial Care:&nbsp;</b>Non-medical assistance with daily living activities such as bathing, dressing, and eating. Medicare does not cover this type of long-term support.
+  
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;">🛡️<b>Medigap:&nbsp;</b>A private <a href="https://www.aginghealth.website/posts/what-types-of-insurance-should-i-have/" rel="dofollow" title="Medicare Basics for Aging Adults: Coverage, Costs &amp; Enrollment"><b>supplemental insurance policy that helps pay deductibles</b>, coinsurance, and copayments not covered by Original Medicare.</div>
-  </div>
+    <div class="icon" style="text-align: left;">🛡️<b>Medigap:&nbsp;</b>A private <a href="https://www.aginghealth.website/posts/what-types-of-insurance-should-i-have/" rel="dofollow" title="Medicare Basics for Aging Adults: Coverage, Costs &amp; Enrollment"><b>supplemental insurance policy that helps pay deductibles</b>, coinsurance, and copayments not covered by Original Medicare.
+  
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;">✈️<b>Foreign Travel Emergency Coverage:&nbsp;</b>Limited emergency medical coverage outside the U.S. included in certain Medigap plans.</div>
-  </div>
+    <div class="icon" style="text-align: left;">✈️<b>Foreign Travel Emergency Coverage:&nbsp;</b>Limited emergency medical coverage outside the U.S. included in certain Medigap plans.
+  
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;"><b>⚕️Chronic Low Back Pain:&nbsp;</b>Low back pain lasting 12 weeks or longer. Medicare covers acupuncture only for this condition.</div>
-  </div>
+    <div class="icon" style="text-align: left;"><b>⚕️Chronic Low Back Pain:&nbsp;</b>Low back pain lasting 12 weeks or longer. Medicare covers acupuncture only for this condition.
+  
 
   <div class="glossary-card" style="text-align: left;">
-    <div class="icon" style="text-align: left;"><b>🏥Concierge Medicine</b>: A <a href="https://www.aginghealth.website/posts/medical-questionnaires-confuse-patients/" rel="dofollow" title="Medical Questionnaires: Why They Confuse Patients and Fixes"><b>membership-based medical model where patients pay</b> a fee for enhanced access and longer visits.</div>
-  </div>
+    <div class="icon" style="text-align: left;"><b>🏥Concierge Medicine</b>: A <a href="https://www.aginghealth.website/posts/medical-questionnaires-confuse-patients/" rel="dofollow" title="Medical Questionnaires: Why They Confuse Patients and Fixes"><b>membership-based medical model where patients pay</b> a fee for enhanced access and longer visits.
+  
 
-  <div class="glossary-card">
-    <div class="icon" style="text-align: left;">🦽<b>Durable Medical Equipment (DME):&nbsp;</b>Medically necessary equipment such as walkers or oxygen equipment. Covered only when strict Medicare criteria are met.</div><div class="icon" style="text-align: left;"><br /></div>
-  </div>
+  
+    <div class="icon" style="text-align: left;">🦽<b>Durable Medical Equipment (DME):&nbsp;</b>Medically necessary equipment such as walkers or oxygen equipment. Covered only when strict Medicare criteria are met.<div class="icon" style="text-align: left;"><br />
+  
 </section>
 <style>
   .clinic-glossary {
@@ -213,7 +213,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 }
 </style>
 <h2>Senior Medicare Questions (Blue‑Trust)</h2>
-<div class="ah-card">
+
   <h3>Does Medicare Pay for Dental Implants?</h3>
   <p>Original Medicare does <strong>not</strong> cover dental implants, routine dental care, or tooth extractions. Seniors usually rely on:</p>
   <ul>
@@ -222,9 +222,9 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     <li><strong>Dental discount programs</strong> for reduced fees</li>
     <li><strong>Dental schools</strong> and community clinics offering lower‑cost implant services</li>
   </ul>
-  <div class="ah-note">Medicare covers dental work only when it is part of a covered medical procedure.</div>
-</div>
-<div class="ah-card">
+  Medicare covers dental work only when it is part of a covered medical procedure.
+
+
   <h3>How Can Older Adults Get Affordable Hearing Aids?</h3>
   <p>Medicare does <strong>not</strong> cover hearing aids or routine hearing exams. Seniors often reduce costs through:</p>
   <ul>
@@ -234,9 +234,9 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     <li><strong>State assistive‑technology programs</strong> and nonprofit foundations</li>
     <li><strong>University audiology clinics</strong> offering reduced‑fee fittings</li>
   </ul>
-  <div class="ah-note">OTC hearing aids are often the most affordable option for many older adults.</div>
-</div>
-<div class="ah-card">
+  OTC hearing aids are often the most affordable option for many older adults.
+
+
   <h3>Is Long‑Term Care Insurance Worth It After 70?</h3>
   <p>Policies purchased after age 70 are typically <strong>expensive</strong> and require medical underwriting, but they may still help seniors who:</p>
   <ul>
@@ -245,8 +245,8 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     <li>Want to reduce reliance on family caregivers</li>
   </ul>
   <p>Alternatives include hybrid life/LTC policies, short‑term care insurance, or planning for Medicaid if long‑term needs become substantial.</p>
-</div>
-<div class="ah-card">
+
+
   <h3>What Vision Benefits Exist If Medicare Doesn’t Cover Glasses?</h3>
   <p>Original Medicare does <strong>not</strong> cover routine eye exams or eyeglasses, but seniors can access vision care through:</p>
   <ul>
@@ -255,9 +255,9 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     <li><strong>Retail optical centers</strong> and discount programs</li>
     <li><strong>State aging services</strong> offering low‑cost glasses</li>
   </ul>
-  <div class="ah-note">Medicare covers eye care when tied to a medical condition, even if it doesn’t cover glasses.</div>
-</div>
-<div class="ah-card">
+  Medicare covers eye care when tied to a medical condition, even if it doesn’t cover glasses.
+
+
   <h3>How Do I Avoid Surprise Medical Bills?</h3>
   <p>Seniors can reduce unexpected Medicare charges by:</p>
   <ul>
@@ -267,8 +267,8 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     <li>Requesting an <strong>ABN</strong> if a service may not be covered</li>
     <li>Reviewing plan costs during <strong>Open Enrollment</strong></li>
   </ul>
-  <div class="ah-note">“Medicare assignment” is one of the strongest protections against surprise bills.</div>
-</div>
+  “Medicare assignment” is one of the strongest protections against surprise bills.
+
 <section class="clinic-faq" id="faqs">
   <h2 style="text-align: left;">Frequently Asked Questions</h2>
 
@@ -314,9 +314,9 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 <section class="clinic-keypoints" id="key-points">
   <h2 style="text-align: left;">Key Points</h2>
 
-  <div class="kp-card">
-    <div class="kp-icon" style="text-align: left;"><ul style="text-align: left;"><li>📌Medicare does not cover several essential services such as dental, vision, hearing, and long-term care.</li><li>💡Many coverage gaps can be filled with Medicare Advantage, Medigap, or stand-alone insurance plans.</li><li>🧭Planning early helps seniors avoid surprise medical bills and maintain access to needed care.</li><li>📊Long-term care is the largest uncovered expense and requires separate planning.</li><li>🔍Reviewing Medicare options annually ensures you stay aligned with changing benefits and costs.</li></ul></div>
-  </div>
+  
+    <div class="kp-icon" style="text-align: left;"><ul style="text-align: left;"><li>📌Medicare does not cover several essential services such as dental, vision, hearing, and long-term care.</li><li>💡Many coverage gaps can be filled with Medicare Advantage, Medigap, or stand-alone insurance plans.</li><li>🧭Planning early helps seniors avoid surprise medical bills and maintain access to needed care.</li><li>📊Long-term care is the largest uncovered expense and requires separate planning.</li><li>🔍Reviewing Medicare options annually ensures you stay aligned with changing benefits and costs.</li></ul>
+  
 
   
 
@@ -354,35 +354,35 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 <section class="clinic-compare" id="comparison-cards">
   <h2 style="text-align: left;">Top Medicare Exclusions (At a Glance)</h2>
 
-  <div class="compare-card">
+  
     <h3 style="text-align: left;">Dental Care</h3>
     <p style="text-align: left;"><strong>Not Covered:</strong> Cleanings, fillings, dentures, implants.</p>
     <p style="text-align: left;"><strong>Options:</strong> Medicare Advantage, dental insurance, dental schools.</p>
-  </div>
+  
 
-  <div class="compare-card">
+  
     <h3 style="text-align: left;">Vision Care</h3>
     <p style="text-align: left;"><strong>Not Covered:</strong> Routine exams, glasses, contacts.</p>
     <p style="text-align: left;"><strong>Options:</strong> Advantage plans, discount vision programs.</p>
-  </div>
+  
 
-  <div class="compare-card">
+  
     <h3 style="text-align: left;">Hearing Aids</h3>
     <p style="text-align: left;"><strong>Not Covered:</strong> <a href="https://www.aginghealth.website/posts/using-hearing-aids-necessary-challenge/" rel="dofollow" title="Hearing Aids: A Necessity for Hearing Loss"><b>Hearing aids and most hearing exams</b>.</p>
     <p style="text-align: left;"><strong>Options:</strong> OTC hearing aids, Advantage plans.</p>
-  </div>
+  
 
-  <div class="compare-card">
+  
     <h3 style="text-align: left;">Long-Term Care</h3>
     <p style="text-align: left;"><strong>Not Covered:</strong> Custodial care, daily living support.</p>
     <p style="text-align: left;"><strong>Options:</strong> LTC insurance, Medicaid, hybrid policies.</p>
-  </div>
+  
 
-  <div class="compare-card">
+  
     <h3 style="text-align: left;">Care Outside the U.S.</h3>
     <p style="text-align: left;"><strong>Not Covered:</strong> Most international medical care.</p>
     <p style="text-align: left;"><strong>Options:</strong> Medigap travel coverage, travel insurance.</p>
-  </div>
+  
 </section>
 
 <style>
@@ -407,45 +407,45 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 <section class="clinic-mythfact" id="myth-fact">
   <h2 style="text-align: left;">Myth vs. Fact: Medicare Coverage</h2>
 
-  <div class="mf-card">
-    <div class="mf-icon" style="text-align: left;">❌</div>
-    <div>
+  
+    <div class="mf-icon" style="text-align: left;">❌
+    
       <h3 style="text-align: left;">Myth: Medicare covers all my healthcare needs.</h3>
       <p style="text-align: left;">Fact: Original Medicare leaves major gaps, including dental, vision, hearing, and long-term care. Seniors often face significant out-of-pocket costs unless they add supplemental coverage.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="mf-card">
-    <div class="mf-icon" style="text-align: left;">❌</div>
-    <div>
+  
+    <div class="mf-icon" style="text-align: left;">❌
+    
       <h3 style="text-align: left;">Myth: Medicare pays for nursing home care.</h3>
       <p style="text-align: left;">Fact: Medicare only covers short-term skilled nursing after a qualifying hospital stay. It does <strong>not</strong> cover custodial long-term care, which is the most common type of support older adults need.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="mf-card">
-    <div class="mf-icon" style="text-align: left;">❌</div>
-    <div>
+  
+    <div class="mf-icon" style="text-align: left;">❌
+    
       <h3 style="text-align: left;">Myth: Medicare covers routine dental, vision, and hearing services.</h3>
       <p style="text-align: left;">Fact: These services are excluded from Original Medicare. Many seniors rely on Medicare Advantage or stand-alone plans to fill these gaps.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="mf-card">
-    <div class="mf-icon" style="text-align: left;">❌</div>
-    <div>
+  
+    <div class="mf-icon" style="text-align: left;">❌
+    
       <h3 style="text-align: left;">Myth: Medicare covers medical care outside the United States.</h3>
       <p style="text-align: left;">Fact: Medicare provides almost no coverage outside the U.S. Some Medigap plans offer limited emergency benefits, but most international care is out-of-pocket.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="mf-card">
-    <div class="mf-icon" style="text-align: left;">❌</div>
-    <div>
+  
+    <div class="mf-icon" style="text-align: left;">❌
+    
       <h3 style="text-align: left;">Myth: Medicare Advantage and Medigap are the same thing.</h3>
       <p style="text-align: left;">Fact: Medicare Advantage replaces Original Medicare with a private plan, while Medigap supplements Original Medicare. They cannot be used together.</p>
-    </div>
-  </div>
+    
+  
 </section>
 <style>
   .clinic-mythfact h2 {
@@ -480,45 +480,45 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 <section class="clinic-risk" id="risk-factors">
   <h2 style="text-align: left;">Risk Factors: Who Is Most Affected by Medicare Coverage Gaps?</h2>
 
-  <div class="risk-card">
-    <div class="risk-icon" style="text-align: left;">⚠️</div>
-    <div>
+  
+    <div class="risk-icon" style="text-align: left;">⚠️
+    
       <h3 style="text-align: left;">Older Adults with Chronic Conditions</h3>
       <p style="text-align: left;">Chronic illnesses often require ongoing dental, vision, hearing, and long-term care services — many of which Medicare does not cover.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="risk-card">
-    <div class="risk-icon" style="text-align: left;">⚠️</div>
-    <div>
+  
+    <div class="risk-icon" style="text-align: left;">⚠️
+    
       <h3 style="text-align: left;">Seniors on Fixed or Limited Income</h3>
       <p style="text-align: left;">Unexpected out-of-pocket costs for dental work, hearing aids, or long-term care can strain retirement budgets.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="risk-card">
-    <div class="risk-icon" style="text-align: left;">⚠️</div>
-    <div>
+  
+    <div class="risk-icon" style="text-align: left;">⚠️
+    
       <h3 style="text-align: left;">Adults Living Alone</h3>
       <p style="text-align: left;">Those without caregiver support may face higher risks when <a href="https://www.aginghealth.website/2024/04/ senior-dental-care-medicare.html" rel="dofollow" title="Smiling Through the Decades: Oral Health Care for Seniors"><b>Medicare excludes essential services like home care</b> or custodial care.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="risk-card">
-    <div class="risk-icon" style="text-align: left;">⚠️</div>
-    <div>
+  
+    <div class="risk-icon" style="text-align: left;">⚠️
+    
       <h3 style="text-align: left;">Frequent Travelers</h3>
       <p style="text-align: left;">Medicare provides almost no coverage outside the U.S., <b>leaving international travelers vulnerable to high medical</b> bills.</p>
-    </div>
-  </div>
+    
+  
 
-  <div class="risk-card">
-    <div class="risk-icon" style="text-align: left;">⚠️</div>
-    <div>
+  
+    <div class="risk-icon" style="text-align: left;">⚠️
+    
       <h3 style="text-align: left;">Individuals Without Supplemental Coverage</h3>
       <p style="text-align: left;">Those without Medigap, Medicare Advantage, or stand-alone plans face the highest financial exposure.</p>
-    </div>
-  </div>
+    
+  
 </section>
 <style>
   .clinic-risk h2 {
@@ -558,7 +558,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
     Whether you're a patient, caregiver, or family member, understanding Medicare’s coverage gaps is the first step toward protecting health, independence, and financial stability.
   </p>
 
-  <div class="cta-box">
+  
     <h3 style="text-align: left;">For Patients</h3>
     <ul>
       <li style="text-align: left;">Review your current Medicare plan and identify uncovered services.</li>
@@ -566,9 +566,9 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
       <li style="text-align: left;">Compare Medicare Advantage and Medigap options annually.</li>
       <li style="text-align: left;">Plan ahead for long-term care and home support needs.</li>
     </ul>
-  </div>
+  
 
-  <div class="cta-box">
+  
     <h3 style="text-align: left;">For Caregivers</h3>
     <ul>
       <li style="text-align: left;">Help your loved one understand what Medicare does and does not cover.</li>
@@ -576,7 +576,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
       <li style="text-align: left;">Document care needs and track out-of-pocket expenses.</li>
       <li style="text-align: left;">Encourage early planning for long-term care and home safety.</li>
     </ul>
-  </div>
+  
 
   <p class="cta-footer" style="text-align: left;">
     Taking action now can prevent costly surprises later. Start the conversation today — your future self will thank you.
@@ -619,7 +619,7 @@ excludes custodial long‑term care. Medicaid ultimately became her primary supp
 
 <p style="text-align: left;">
 This guide <a href="https://www.aginghealth.website/posts/top-ten-things-medicare-does-not-cover/" rel="dofollow" title="Top Ten Things Medicare Does Not Cover"><b>breaks down the top ten Medicare exclusions</b>, explains practical alternatives, and provides tools to help you
-make confident, informed healthcare decisions.</p><div><section class="clinic-cta" id="cta">
+make confident, informed healthcare decisions.</p><section class="clinic-cta" id="cta">
 </section>
 
 <style>
@@ -781,4 +781,4 @@ make confident, informed healthcare decisions.</p><div><section class="clinic-ct
   ]
 }
 </script>
-  </div></div>
+  

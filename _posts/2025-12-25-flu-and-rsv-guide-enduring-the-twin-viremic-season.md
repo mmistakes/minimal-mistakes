@@ -17,7 +17,7 @@ last_modified_at: 2026-04-23
 
 Every year, as the temperature drops, a familiar sense of anxiety ripples through households and clinics alike. We enter the season of respiratory viruses, where the distinction between a "bad cold" and a serious medical event becomes blurry. In recent years, the spotlight has shifted from just the seasonal flu to include Respiratory Syncytial Virus (RSV).
 
-![Medical illustration comparing the structural differences between the Influenza virus and RSV.]({{ '/assets/images/influenza-rsv-flu-respiratory.webp' | relative_url }})
+![Medical illustration comparing the structural differences between the Influenza virus and RSV.](![](/assets/images/influenza-rsv-flu-respiratory.webp' | relative_url ))
 *Understanding the structural differences between these two viruses helps scientists develop targeted vaccines and treatments.*
 
 {: .notice--info}

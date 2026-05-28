@@ -45,29 +45,29 @@ If gas is accompanied by severe abdominal pain, sudden changes in bowel habits, 
 
 ## 🛠️ The "Gas Type" Field Guide
 
-<div class="fart-card-grid">
-  <div class="fart-card">
+
+  
     <h3 class="fart-title">The High-Fiber Hero</h3>
     <ul>
       <li>Caused by beans, veggies, and oats.</li>
       <li>Sign of a healthy, active microbiome.</li>
     </ul>
-  </div>
-  <div class="fart-card">
+  
+  
     <h3 class="fart-title">The Silent But Deadly</h3>
     <ul>
       <li>High sulfur content (eggs, garlic, onions).</li>
       <li>Odor comes from sulfur-producing bacteria.</li>
     </ul>
-  </div>
-  <div class="fart-card">
+  
+  
     <h3 class="fart-title">The Lactulose Launcher</h3>
     <ul>
       <li>Common in liver health management.</li>
       <li>Sign that ammonia is being cleared.</li>
     </ul>
-  </div>
-</div>
+  
+
 
 <style>
 .fart-card-grid {
@@ -94,7 +94,7 @@ If gas is accompanied by severe abdominal pain, sudden changes in bowel habits, 
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake ($1.2\text{--}1.5 \text{ g/kg}$) to prevent sarcopenia. Portal hypertension targets for esophageal varices now align with a systemic blood pressure of $<130/80 \text{ mmHg}$.
-</div>
+
 
 <script type="application/ld+json">
 {

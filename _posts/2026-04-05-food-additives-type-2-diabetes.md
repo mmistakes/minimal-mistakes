@@ -140,4 +140,4 @@ Check your current kitchen pantry and refrigerator items for these three high-ri
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Note:</strong> When transitioning away from ultra-processed options, do not fall into the trap of buying specialized, expensive 'diabetes-friendly' meal replacement bars or shakes. These products are routinely loaded with industrial emulsifiers, artificial texturizers, and chemical shelf-stabilizers that undermine your long-term gut health and cellular recovery. Stick to whole, single-ingredient foods whenever possible.
-</div>
+

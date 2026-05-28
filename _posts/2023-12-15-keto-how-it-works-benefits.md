@@ -25,7 +25,7 @@ For older adults navigating the interlocking challenges of metabolic syndrome, i
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Diagram of the Ketogenic metabolic pathway showing the liver converting fats into ketone bodies for brain energy]({{ '/assets/images/ketogenic-pathway.webp' | relative_url }})
+![Diagram of the Ketogenic metabolic pathway showing the liver converting fats into ketone bodies for brain energy](![](/assets/images/ketogenic-pathway.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** The metabolic mechanics of nutritional ketosis provide an alternative energetic pathway, allowing tissues to bypass standard glucose barriers to fuel cellular respiration._
 

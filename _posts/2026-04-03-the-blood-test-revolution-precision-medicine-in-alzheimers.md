@@ -94,4 +94,3 @@ If you or a loved one are undergoing an annual wellness review or a cognitive as
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Note:</strong> If your physician claims that blood tests for Alzheimer's are 'experimental' or 'unreliable,' they are operating on guidelines that are outdated. Print out recent primary care consensus data and advocate specifically for a CLIA-validated p-tau217 assay to ensure you catch changes during your optimal 3-to-4-year proactive window.
-</div>

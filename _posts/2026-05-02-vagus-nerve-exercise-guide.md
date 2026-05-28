@@ -16,7 +16,7 @@ Following our [Gut-Brain Nutrition Protocol]({{ '/2026/05/gut-brain-nutrition-pr
 
 ---
 
-![Vagus Nerve Anatomy]({{ site.baseurl }}/assets/images/vagus-anatomy-path.webp' | relative_url }})
+![Vagus Nerve Anatomy](![](/assets/images/vagus-anatomy-path.webp' | relative_url ))
 {: .normal }
 
 _**Figure 1:** The Vagus nerve (Cranial Nerve X) is the longest nerve of the autonomic nervous system, traveling from the brainstem through the neck and thorax to the abdomen._
@@ -44,7 +44,7 @@ The Vagus nerve passes through the diaphragm. When you breathe deeply, the physi
 
 ---
 
-![Diaphragmatic Breathing and Vagus Stimulation]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/diaphragm-vagus.webp' | relative_url }})
+![Diaphragmatic Breathing and Vagus Stimulation](![](/assets/images/diaphragm-vagus.webp' | relative_url ))
 {: .normal }
 _**Figure 3:** Proper diaphragmatic expansion (belly breathing) provides the mechanical stimulus required to signal the Vagus nerve to lower the heart rate._
 ---
@@ -77,7 +77,7 @@ The Vagus nerve is connected to the vocal cords and the muscles at the back of t
 ---
 
 
-![Vagus Nerve Physical Resets Summary]({{ site.baseurl }}/assets/images/vagus-resets-summary2.webp' | relative_url }})
+![Vagus Nerve Physical Resets Summary](![](/assets/images/vagus-resets-summary2.webp' | relative_url ))
 {: .normal }
 
 _**Figure 3:** The 2026 AgingHealth Vagal Reset Protocol: A combination of breathwork, thermal stimulus, and vocal activation for autonomic stability._

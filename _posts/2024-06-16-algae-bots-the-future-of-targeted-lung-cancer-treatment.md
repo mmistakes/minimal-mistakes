@@ -13,7 +13,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
   —capable of administering chemotherapy directly to tumors marks a paradigm shift in oncology. These "micro-warriors,"
   engineered to navigate the respiratory environment, target tumors with high precision, offering a future that is more
   effective and significantly less toxic than systemic "blanket" chemotherapy.<span></span></p><!--more--><div style="margin: 30px 0px; text-align: center;"><img alt="An older patient using a medical nebulizer for non-invasive delivery of algae-based microrobots to treat lung cancer." border="0" data-original-height="532" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuzNV1Ha2L2t__aNrxLXmPPluyHaeli_7dpus9o4H9Br09jyPylZmvalzUtZ32sjIx08cm63ZBw6Ql5pylkkHmC6EkBMx50aErI8XwfB9_gKtBrK53DdsnFeT5uR41oui3LcnUk_aNna59b_Y6za_IJEFsVr7p90T92P63kb-hw1VuvPRDs_n3su0OKN_O/s16000/a%20modern%20medical%20nebulizer..webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" title="Inhalable Algae Bot Therapy 2026" />
-    <p style="color: #666666; font-size: 1rem; font-style: italic; margin-top: 10px;">In 2026, the transition to nebulized (inhaled) delivery means "micro-warriors" can be administered without anesthesia, significantly improving patient comfort and accessibility.</p></div>
+    <p style="color: #666666; font-size: 1rem; font-style: italic; margin-top: 10px;">In 2026, the transition to nebulized (inhaled) delivery means "micro-warriors" can be administered without anesthesia, significantly improving patient comfort and accessibility.</p>
 <table>
   <thead>
     <tr>
@@ -419,10 +419,10 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Trials', 'Ca
 Disclaimer: This information is for educational purposes and reflects <a href="https://www.aginghealth.website/posts/dementia-research-2026-ptau217-blood-test-breakthroughs/" rel="dofollow" title="Dementia Research 2026 Ptau217 Blood Test Breakthroughs"><b>research trends as of 2026</b>. Always consult with an
 oncologist or medical professional before making treatment decisions.
 <br />
-<div class="clinic-citations">
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
-<div><ol style="text-align: left;"><li><a href="https://www.targetedonc.com/view/fda-grants-rmat-designation-to-inhalable-gene-therapy-for-advanced-lung-tumors#:~:text=1.,US%20FDA.">
+<ol style="text-align: left;"><li><a href="https://www.targetedonc.com/view/fda-grants-rmat-designation-to-inhalable-gene-therapy-for-advanced-lung-tumors#:~:text=1.,US%20FDA.">
   FDA Grants RMAT Designation to Inhalable Gene Therapy for Advanced Lung Tumors | Targeted Oncology&nbsp;</li><li><a href="https://www.targetedonc.com/view/fda-grants-rmat-designation-to-inhalable-gene-therapy-for-advanced-lung-tumors#:~:text=1.,US%20FDA.">Immunotherapy,
   Biomarkers, and Cancer Pathways
 
@@ -431,7 +431,7 @@ oncologist or medical professional before making treatment decisions.
   Lorlatinib Versus Crizotinib in Patients With Advanced ALK</li><li><a href="https://ascopubs.org/doi/10.1200/JCO.24.00581#:~:text=After%205%20years%20of%20follow%2Dup%2C%20lorlatinib%20continued%20to%20show,still%20not%20reached%20with%20lorlatinib.">Positive Non–Small Cell Lung Cancer: 5-Year Outcomes From
   the Phase III CROWN Study | Journal of Clinical Oncology
 </li><li><a href="https://www.oncology-central.com/asco-2024-lorlatinib-yields-longest-ever-pfs-recorded-for-alk-nsclc-patients/#:~:text=Lorlatinib%20is%20the%20only%20ALK,Center%2C%20Melbourne%2C%20Australia).">&nbsp; &nbsp;ASCO 2024: lorlatinib yields longest ever PFS recorded for ALK+ NSCLC patients - Oncology Central
-</li><li><a href="https://www.onclive.com/view/strategic-and-safe-lorlatinib-use-is-key-to-optimal-alk-nsclc-management#:~:text=%5BLorlatinib%5D%20comes%20in%2025%2D,settle%20down%20at%2075%20mg.">Strategic and Safe Lorlatinib Use Is Key to Optimal ALK+ NSCLC Management | OncLive</li><li><a href="https://jacobsschool.ucsd.edu/news/release/3960?id=3960#:~:text=The%20active%20algae%20provides%20the,and%20distribute%20the%20medication%20throughout.">Breathing in Therapeutic Microrobots Treats Life-threatening Pneumonia in Mice</li></ol></div><style>/* ============================================================
+</li><li><a href="https://www.onclive.com/view/strategic-and-safe-lorlatinib-use-is-key-to-optimal-alk-nsclc-management#:~:text=%5BLorlatinib%5D%20comes%20in%2025%2D,settle%20down%20at%2075%20mg.">Strategic and Safe Lorlatinib Use Is Key to Optimal ALK+ NSCLC Management | OncLive</li><li><a href="https://jacobsschool.ucsd.edu/news/release/3960?id=3960#:~:text=The%20active%20algae%20provides%20the,and%20distribute%20the%20medication%20throughout.">Breathing in Therapeutic Microrobots Treats Life-threatening Pneumonia in Mice</li></ol><style>/* ============================================================
    CLINICAL CITATIONS CARD
    ============================================================ */
 .item-view .clinic-citations {
@@ -462,4 +462,4 @@ oncologist or medical professional before making treatment decisions.
   margin-bottom: 0.9rem;
   line-height: 1.55;
   font-size: 1.05rem;
-}</style></ol></div>
+}</style></ol>

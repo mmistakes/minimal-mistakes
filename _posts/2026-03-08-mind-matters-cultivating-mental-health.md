@@ -16,9 +16,9 @@ last_modified_at: 2026-05-21
 
 From workplace chronic stressors and economic volatility to algorithmic digital burnout, modern life presents an unrelenting series of psychological demands. For older adults and patient advocates, learning how to actively [protect and strengthen your mental health]({{ '/posts/cognitive-reframing-cbt-guide/' | relative_url }}) is not merely a lifestyle preference—it represents one of the most critical, high-leverage investments you can make to extend your functional health span, protect cognitive reserve, and preserve longevity.
 
-<div class="notice--warning">
+
 <strong>⚠️ Medical Disclaimer:</strong> This clinical translation material is intended for informational and educational patient-advocacy purposes only. It does not substitute for professional medical advice, diagnosis, or targeted clinical treatment. Always consult a board-certified healthcare provider regarding any persistent psychological or physiological condition.
-</div>
+
 
 ---
 
@@ -89,10 +89,10 @@ Transitioning away from an inadequate care match to seek professional therapy or
 * **Clinical Psychologists:** Doctoral-level specialists (PhD or PsyD) trained in comprehensive cognitive assessment, identifying subconscious distortions, and delivering structured psychological therapies.
 * **Licensed Counselors & Therapists:** Mental health professionals who provide practical, immediate therapeutic strategies to navigate situational stress, medical grief processing, or structural lifestyle transitions.
 
-<div class="notice--danger">
+
 <strong>🚨 Immediate Crisis Intervention Connection:</strong><br>
 If you or a loved one are experiencing an acute psychological crisis, overwhelming panic, or thoughts of self-harm, call or text <strong>988</strong> to access the National Suicide & Crisis Lifeline. This service provides free, confidential, 24/7 access to trained crisis specialists.
-</div>
+
 
 ---
 
@@ -112,10 +112,10 @@ If you or a loved one are experiencing an acute psychological crisis, overwhelmi
 
 ---
 
-<div class="notice--info">
+
 <strong>🎯 May 2026 Clinical Target: Vascular Health & The Mind</strong><br>
 To preserve cognitive reserve, protect your brain's nightly glymphatic waste clearance paths, and reduce vascular-related brain fog, older adults should maintain a resting blood pressure tightly <strong>under 130/80 mmHg</strong>. Chronic hypertension damages the brain’s microvascular system and directly accelerates emotional and cognitive fatigue.
-</div>
+
 
 ---
 

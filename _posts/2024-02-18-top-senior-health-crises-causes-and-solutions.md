@@ -17,7 +17,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
 </ol><p>
 
 </p><p>These conditions are frequently interrelated and often exacerbated by multimorbidity, polypharmacy, and functional decline. Early screening, risk stratification, and interdisciplinary coordination significantly improve outcomes.<span></span></p><a name='more'><p></p><ul>
-</ul><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left;"><tbody><tr><td style="text-align: center;"><img alt="Healthcare professional checking an elderly man’s blood pressure in a modern clinic setting with soft natural light." border="0" data-original-height="1367" data-original-width="990" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLyw1Yyn2PMRIzwdgbcy2nVprMxCqGePo9tAp2jfCRMZ8rDakSh8KORngrve1whwuwj_VX7Mf80SFfc4U1-Br2ISzlEWZqJitrii40tx1Llnazss3yDHHgqYSorICllQVMLgwgHSQteGC0eoEyJJJkFsTj31M5JA1FoXGuGZ_hbAw_64oHL1A8pcz6C3Eq/s16000/wellness%20check.webp" title="Compassionate Geriatric Care in a Modern Clinic" /></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="text-align: left;">Preventive monitoring and early intervention are essential in reducing senior health crises.<br /><br /></span></td></tr></tbody></table><br /><div><br /></div>
+</ul><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left;"><tbody><tr><td style="text-align: center;"><img alt="Healthcare professional checking an elderly man’s blood pressure in a modern clinic setting with soft natural light." border="0" data-original-height="1367" data-original-width="990" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLyw1Yyn2PMRIzwdgbcy2nVprMxCqGePo9tAp2jfCRMZ8rDakSh8KORngrve1whwuwj_VX7Mf80SFfc4U1-Br2ISzlEWZqJitrii40tx1Llnazss3yDHHgqYSorICllQVMLgwgHSQteGC0eoEyJJJkFsTj31M5JA1FoXGuGZ_hbAw_64oHL1A8pcz6C3Eq/s16000/wellness%20check.webp" title="Compassionate Geriatric Care in a Modern Clinic" /></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="text-align: left;">Preventive monitoring and early intervention are essential in reducing senior health crises.<br /><br /></span></td></tr></tbody></table><br /><br />
 <hr />
 <h2>1. Cardiovascular Disease</h2><h3>Why It’s a Crisis</h3>
 
@@ -63,7 +63,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
 </ul>
 <p><strong>Prevention Strategy:</strong> Annual mobility screening starting at age 65.</p>
 <hr />
-<h2>3. Cognitive Decline &amp; Dementia</h2>Why It’s a Crisis<div><br />Alzheimer’s disease and related dementias significantly impact independence, safety, and family systems.<h1>
+<h2>3. Cognitive Decline &amp; Dementia</h2>Why It’s a Crisis<br />Alzheimer’s disease and related dementias significantly impact independence, safety, and family systems.<h1>
 </h1><h3>Causes</h3>
 <ul>
 <li>Age-related neurodegeneration</li>
@@ -135,7 +135,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
 <h3>5. What is proactive geriatric resilience planning?</h3>
 <p>It is a preventive strategy combining medical, mobility, nutrition, and cognitive planning to reduce crisis risk.</p><h2>Glossary of Important Terms</h2><p><strong>Frailty:</strong> A clinical syndrome involving reduced strength and physiological reserve.</p><p><strong>Polypharmacy:</strong> Use of multiple medications, increasing adverse event risk.</p><p><strong>Geriatric Assessment:</strong> Multidimensional evaluation of medical, psychological, and functional capability.</p><p><strong>Chronic Inflammation:</strong> Persistent low-level inflammation contributing to age-related diseases.</p><p><strong>Remote Patient Monitoring (RPM):</strong> Technology-enabled health tracking outside clinical settings.</p><p><strong>Activities of Daily Living (ADLs):</strong> Basic tasks such as bathing, dressing, eating.</p>
 <hr />
-<div class="clinic-trust-card">
+
   <h3>About the Researcher</h3>
   <p>
     Tommy T. Douglas is an independent health researcher and patient advocate. 
@@ -152,7 +152,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
     <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
   </p>
-</div>
+
 <h2>Source &amp; Citations Box</h2><p><strong>Primary Sources:</strong></p><ul>
 <li>Centers for Disease Control and Prevention (CDC)</li>
 <li>National Institute on Aging (NIA)</li>
@@ -219,7 +219,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
 }
 }]
 }
-</script></div>
+</script>
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

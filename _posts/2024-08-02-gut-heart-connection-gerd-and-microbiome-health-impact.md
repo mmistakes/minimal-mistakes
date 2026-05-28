@@ -123,7 +123,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧠 Cognitive
 <button onclick="document.body.classList.toggle('audit-mode')">
   Toggle Sources
 </button>
-<div class="sources-block">
+
   <b>Sources:</b>
   <ol>
 
@@ -138,4 +138,3 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧠 Cognitive
   </ol>
 
 
-</div>

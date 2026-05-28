@@ -25,7 +25,7 @@ If this high-pressure bottleneck is left unmanaged, the fluid backflow places se
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Vascular illustration of the portal venous system showing blood flow backpressure and esophageal varices]({{ '/assets/images/liver-vascular-pressure.webp' | relative_url }})
+![Vascular illustration of the portal venous system showing blood flow backpressure and esophageal varices](![](/assets/images/liver-vascular-pressure.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** When scarred liver tissue creates an internal blockage, blood flow forces its way backward into collateral channels, dramatically increasing systemic hydrostatic tension and macrovascular strain._
 

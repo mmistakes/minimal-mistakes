@@ -123,4 +123,3 @@ Incorporate these direct targets into your upcoming longevity and metabolic cons
 
 <div style="background: rgb(254, 245, 231); border-left: 5px solid rgb(243, 156, 18); color: #333333; font-family: sans-serif; margin-top: 20px; padding: 15px;">
 <strong>May 2026 Clinical Update:</strong> Optimizing your metabolic health span requires looking past surface trends to actively support your deep gut-brain axis. To ensure your vascular safety net remains fully intact, maintain your resting systemic blood pressure tightly <strong>under 130/80 mmHg</strong>. Pair this with a dedicated intake of <strong>1.2 to 1.6 grams of high-quality protein per kilogram of body weight daily</strong> to protect your structural muscle architecture, and use targeted prebiotics to fuel the cellular gatekeepers of your metabolism.
-</div>

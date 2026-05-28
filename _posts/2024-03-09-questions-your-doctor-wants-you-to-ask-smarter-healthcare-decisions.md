@@ -31,7 +31,7 @@ Asking thoughtful questions during medical appointments improves outcomes and re
 These essential questions help you get the most value from every appointment:
 </p>
 
-<h4 style="text-align: left;"><strong>What is my diagnosis?</strong>&nbsp;</h4>Ask for a clear explanation of your condition and how it may affect your health now and in the future.<br /><h4 style="text-align: left;">What treatment options are available? </h4>Learn about all available options, including benefits, risks, and expected outcomes.<br /><h4 style="text-align: left;">What are the risks and benefits of each treatment?</h4>Understanding trade-offs helps you choose the most appropriate care.<br /><h4 style="text-align: left;"><strong>What lifestyle changes can improve my health?</strong>&nbsp;</h4>Ask about diet, exercise, sleep, and <a href="https://www.aginghealth.website/posts/cortisol-stress-hormone-effects-management/" title="Cortisol Stress Hormone Effects Management" rel="dofollow"><b>stress management strategies</b>.<br /><h4 style="text-align: left;"><strong>How can I prevent this condition from returning or worsening?</strong>&nbsp;</h4><div>Prevention is often as important as treatment.<br /><h4 style="text-align: left;"><strong>What medications am I taking and why?</strong>&nbsp;</h4></div><div>Understand purpose, dosage, timing, and interactions.<br /><h4 style="text-align: left;"><strong>What side effects should I watch for?</strong>&nbsp;</h4></div><div>Know what’s normal, what’s serious, and when to seek help.<br /><h4 style="text-align: left;">What should I do if I experience side effects? </h4></div><div>Ask about next steps before problems arise.<br /><h4 style="text-align: left;"><strong>Are there alternative or complementary treatments?</strong>&nbsp;</h4></div><div>Discuss safety and effectiveness before trying non‑traditional options.<br /><h4 style="text-align: left;"><strong>How often should I schedule follow‑up visits?</strong>&nbsp;</h4></div><div>Regular monitoring supports long‑term health.<br /><h4 style="text-align: left;"><strong>How will this treatment affect my daily life?</strong>&nbsp;</h4></div><div>Ask about work, physical activity, travel, or social limitations.<br /><h4 style="text-align: left;">How can I track my symptoms or progress? </h4></div><div>Monitoring helps determine if treatment is working.<br /><h4 style="text-align: left;">What happens if I don’t follow this treatment plan? </h4></div><div>Understanding risks reinforces adherence.<br /><h4 style="text-align: left;">What resources can help me manage my condition? </h4></div><div>Ask about educational materials, apps, or support groups.<br /><ul>
+<h4 style="text-align: left;"><strong>What is my diagnosis?</strong>&nbsp;</h4>Ask for a clear explanation of your condition and how it may affect your health now and in the future.<br /><h4 style="text-align: left;">What treatment options are available? </h4>Learn about all available options, including benefits, risks, and expected outcomes.<br /><h4 style="text-align: left;">What are the risks and benefits of each treatment?</h4>Understanding trade-offs helps you choose the most appropriate care.<br /><h4 style="text-align: left;"><strong>What lifestyle changes can improve my health?</strong>&nbsp;</h4>Ask about diet, exercise, sleep, and <a href="https://www.aginghealth.website/posts/cortisol-stress-hormone-effects-management/" title="Cortisol Stress Hormone Effects Management" rel="dofollow"><b>stress management strategies</b>.<br /><h4 style="text-align: left;"><strong>How can I prevent this condition from returning or worsening?</strong>&nbsp;</h4>Prevention is often as important as treatment.<br /><h4 style="text-align: left;"><strong>What medications am I taking and why?</strong>&nbsp;</h4>Understand purpose, dosage, timing, and interactions.<br /><h4 style="text-align: left;"><strong>What side effects should I watch for?</strong>&nbsp;</h4>Know what’s normal, what’s serious, and when to seek help.<br /><h4 style="text-align: left;">What should I do if I experience side effects? </h4>Ask about next steps before problems arise.<br /><h4 style="text-align: left;"><strong>Are there alternative or complementary treatments?</strong>&nbsp;</h4>Discuss safety and effectiveness before trying non‑traditional options.<br /><h4 style="text-align: left;"><strong>How often should I schedule follow‑up visits?</strong>&nbsp;</h4>Regular monitoring supports long‑term health.<br /><h4 style="text-align: left;"><strong>How will this treatment affect my daily life?</strong>&nbsp;</h4>Ask about work, physical activity, travel, or social limitations.<br /><h4 style="text-align: left;">How can I track my symptoms or progress? </h4>Monitoring helps determine if treatment is working.<br /><h4 style="text-align: left;">What happens if I don’t follow this treatment plan? </h4>Understanding risks reinforces adherence.<br /><h4 style="text-align: left;">What resources can help me manage my condition? </h4>Ask about educational materials, apps, or support groups.<br /><ul>
 </ul>
 
 <h2>How to Prepare for a Productive Doctor’s Appointment</h2>
@@ -69,7 +69,7 @@ Chronic conditions require ongoing communication, monitoring, and adjustment. <a
 <h3>How do I talk to my doctor about mental health?</h3>
 <p>
 <a href="https://www.aginghealth.website/posts/seniors-mental-health-internal-medicine/" title="Seniors Mental Health Internal Medicine" rel="dofollow"><b>Mental health is a vital</b> part of overall well‑being. If you’re experiencing emotional or psychological concerns, your doctor can assess your needs and guide you toward appropriate care.
-  </p></div></div>
+  </p>
 
 <h2>Conclusion: Take an Active Role in Your Health</h2>
 
@@ -162,7 +162,7 @@ Asking the right questions transforms you from a passive patient into an informe
 }</script>
 </p><p><strong>Disclaimer:</strong> This content is for informational purposes only and does not replace professional medical advice. Always consult a qualified healthcare provider for diagnosis and treatment decisions.
 </p>
-<div class="clinic-citations">
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
 
@@ -281,4 +281,4 @@ Asking the right questions transforms you from a passive patient into an informe
   line-height: 1.55;
   font-size: 1.05rem;
 }</style>
-</p></ol></div><p></p>
+</p></ol><p></p>

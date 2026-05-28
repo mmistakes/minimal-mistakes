@@ -33,30 +33,30 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
 }
 </script>
 
-<div class="ah-container">
+
   <h2 style="text-align: left;">Neural Integrity: Diet, Immunity, and the Fight Against "Type 3 Diabetes"</h2>
 
   <p>The human brain is a bio-energetic marvel, but as we age, it becomes increasingly vulnerable to <strong>Metabolic Drift</strong>. As an independent researcher and T2D survivor, I’ve found that cognitive decline isn't just "bad luck"—it is often the result of chronic systemic inflammation and brain insulin resistance. In 2026, we treat the brain not just as a hard drive for memories, but as an engine that requires clean fuel and a robust internal cleanup crew.</p>
 
-  <div class="ah-disclaimer">
+  
     <strong>Medical Disclaimer:</strong> Cognitive decline is multi-factorial. This guide focuses on metabolic and immunological strategies. Always consult your neurologist for a comprehensive "Cognitive Screen" if you notice persistent memory shifts.
-  </div>
+  
 
   <div style="margin: 30px 0px; text-align: center;">
     <img alt="A balanced meal with vibrant vegetables and fish for brain health" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg92IAUV5p9mcarm7AynCxo0jmMj0Bt_3aLUD21rIYqEKl-ySEv8rh8ESnvCRNFRZLrHs-Ayt3znFTobNBOZkcOqdd1-D6dfHwXbehhgGXzVNBLQ5saeTk4sv0jU28iIGnP6M_o4gnvAMuHd0KZcyw0o3Kj_BK0obd1Pf_q9rUFuD475FbGB8PhD1MjXnaG/s16000/Brain_Health_Diet.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" />
     <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">Fuel for Thought: Minimally processed foods are the building blocks of neural resilience.</p>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">The Power of Minimally Processed Foods (MPF)</h2>
     <p>A diet high in <strong>Ultra-Processed Foods (UPF)</strong> acts like a "metabolic clog" for your neurons. UPFs are loaded with additives that disrupt the gut-brain axis and trigger neuro-inflammation. Conversely, Minimally Processed Foods protect the brain by providing <strong>Phytochemicals</strong> and stable glucose levels.</p>
     <ul>
       <li><strong>MPF Examples:</strong> Fresh produce, cold-pressed oils (Olive/Avocado), whole grains like Quinoa, and high-quality lean proteins.</li>
       <li><strong>The MIND Diet Strategy:</strong> Focus on green leafy vegetables daily, berries twice a week, and fatty fish (Omega-3s) at least once a week to maintain synaptic flexibility.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-update-box">
+  
     <h3 class="ah-title" style="color: #1d4ed8;">🔬 March 2026 Clinical Synthesis: The Immune Cleanup</h3>
     <p>Breakthroughs in 2026 imaging have confirmed that Alzheimer’s isn't just about "plaques"—it’s about the failure of <strong>Microglia</strong> (the brain’s immune cleanup crew).</p>
     <ul>
@@ -64,9 +64,9 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
       <li><strong>Protein Target ($1.2\text{--}1.6 \text{ g/kg}$):</strong> To support the high metabolic cost of neuro-immunology, we target a daily protein intake of <strong>1.2–1.6 g/kg</strong>. This provides the amino acids necessary for T-cell production and neural repair.</li>
       <li><strong>Vascular Stability:</strong> For heart survivors, brain health depends on <strong>Vascular Integrity</strong>. Target a systemic BP of <strong>&lt;130/80 mmHg</strong> to prevent "micro-scuffing" of the blood-brain barrier.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">The "Type 3 Diabetes" Link</h2>
     <p>Researchers now frequently refer to Alzheimer's as <strong>Type 3 Diabetes</strong> because the brain's ability to utilize insulin to process glucose begins to fail. This leads to neural starvation and plaque buildup.</p>
     <table class="ah-table-grid">
@@ -91,7 +91,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
         <td>Supports <strong>Anabolic Drive</strong> and prevents muscle wasting (Sarcopenia).</td>
       </tr>
     </tbody></table>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(253, 252, 251); border: 2px dashed rgb(13, 148, 136);">
     <h2 class="ah-title" style="border-bottom: 2px solid rgb(13, 148, 136);">🗣️ The Patient Translation: Neuro-Advocacy</h2>
@@ -120,13 +120,13 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
 
     <div class="ah-accent-card" style="background: rgb(255, 245, 245); border-left-color: rgb(229, 62, 62); margin-top: 15px;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If a doctor says your memory slips are "just getting older," translate that to: <em>"We are ignoring the metabolic drivers of my cognitive decline."</em> Ask for a <strong>Full Metabolic Panel</strong> and a <strong>Cognitive Baseline</strong> test.
-    </div>
-  </div>
+    
+  
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Steps for Brain Resilience</h2>
     <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The MPF Pivot:</strong> Swap one ultra-processed snack for a minimally processed one (e.g., nuts or berries) daily.</li><li><input type="checkbox" /> <strong>Glymphatic Drainage:</strong> Prioritize 7–9 hours of sleep. This is when the brain’s "janitorial service" (the glymphatic system) is most active.</li><li><input type="checkbox" /> <strong>Bio-Hacking Monitoring:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech to track <strong>Heart Rate Variability (HRV)</strong>—a key indicator of how your brain is managing systemic stress.</li></ul><ul class="ah-checklist">
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">About the Researcher</h3>
@@ -137,7 +137,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
       <a href="https://www.aginghealth.website/posts/heart-attack-prevention-men-women/">Heart Attack Awareness | 
       <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver Health
     </p>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">Sources and Clinical Citations</h3>
@@ -147,9 +147,8 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Dementia', 'Nutritio
       <li><strong>Journal Neurology:</strong> Dietary Patterns and Long-term Cognitive Resilience.</li>
       <li><strong>MIND Diet Study:</strong> Hybrid Mediterranean-DASH approach for neuroprotection.</li>
     </ul>
-  </div>
+  
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
     Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
-</div>

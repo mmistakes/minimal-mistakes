@@ -22,7 +22,7 @@ tags: ['❤️ Cardiovascular & T2D', '🌱 Senior Longevity', '⚖️ Patient A
   <p style="font-size: 1rem; color: #666; font-style: italic; margin-top: 10px;">
     Proactive management and early intervention are the <b>cornerstones of modern heart health.</b>
   </p>
-</div>
+
 <p><br /></p>
 <h2><b>Coronary Revascularization: Is Sooner Always Better?</b></h2>
 <p>

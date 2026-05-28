@@ -20,7 +20,7 @@ Managing Type 2 Diabetes is often described as a passive "balancing act." Howeve
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![A senior couple at a local farmer's market buying low glycemic vegetables]({{ '/assets/images/produce-shopping.webp' | relative_url }})
+![A senior couple at a local farmer's market buying low glycemic vegetables](![](/assets/images/produce-shopping.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Selecting locally sourced, nutrient-dense produce is a vital first line of defense in stabilizing baseline metabolic parameters._
 

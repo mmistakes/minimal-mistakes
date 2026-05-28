@@ -300,7 +300,7 @@ As we delve into the proteomic fingerprint of aging and neurodegeneration, we're
       <td>Stabilizes misfolded proteins (Chaperone-like).</td>
     </tr>
   </tbody>
-</table><strong><br /></strong><div><strong>Focus:</strong> <i>"How to <b>use Urolithin A foods to reduce brain</b> age gap"</i> - Integrating pomegranate arils or juice into your post-workout meal is the most bioavailable way to trigger these "cleaner" molecules naturally.
+</table><strong><br /></strong><strong>Focus:</strong> <i>"How to <b>use Urolithin A foods to reduce brain</b> age gap"</i> - Integrating pomegranate arils or juice into your post-workout meal is the most bioavailable way to trigger these "cleaner" molecules naturally.
 <h3>FAQ's</h3>
 <h3>1. What is proteomics, and why is it important?</h3>
 <p><strong>Proteomics</strong> is the study of proteins that reveals how proteins function within biological systems, <a href="https://www.aginghealth.website/posts/toxic-stress-links-health-links-conditions/" rel="dofollow" title="Toxic Stress Links Health Links Conditions"><b>providing insights into health conditions</b> like aging and neurodegeneration.</p>
@@ -322,7 +322,7 @@ As we delve into the proteomic fingerprint of aging and neurodegeneration, we're
 <h3><strong>Fact-Check &amp; Peer-Reviewed Sources (Updated 2026)</strong></h3><button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
 
 <ol>
   <li><strong><strong>Global Neurodegeneration Proteomics Consortium:</strong> <a href="https://www.neuroproteome.org/">Mapping the Proteomic Landscape of AD, PD, and FTD</strong></li>
@@ -358,7 +358,7 @@ As we delve into the proteomic fingerprint of aging and neurodegeneration, we're
     <h4 id="global-initiatives"><span style="font-family: inherit;">🌍 Global Initiatives</span></h4>
     <ol style="text-align: left;"><li><a href="https://www.nature.com/articles/s41591-025-03834-0.pdf" style="font-size: 1.1rem;"><span style="font-family: inherit;">
           The Global Neurodegeneration Proteomics Consortium: biomarker and drug target discovery for common neurodegenerative diseases and aging — Nature Medicine</span></li></ol><ul>
-    </ul><div><ul style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; color: #0e101a; font-size: medium; margin-bottom: 0pt; margin-top: 0pt;"><li style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; list-style-type: disc; margin-bottom: 0pt; margin-top: 0pt;"><em style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; margin-bottom: 0pt; margin-top: 0pt;">Disclaimer: This content is for informational purposes only. "Brain age" testing and proteomic signatures are evolving fields; always consult a neurologist or certified longevity physician for medical diagnostics.</em></li></ul></div>
+    </ul><ul style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; color: #0e101a; font-size: medium; margin-bottom: 0pt; margin-top: 0pt;"><li style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; list-style-type: disc; margin-bottom: 0pt; margin-top: 0pt;"><em style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; margin-bottom: 0pt; margin-top: 0pt;">Disclaimer: This content is for informational purposes only. "Brain age" testing and proteomic signatures are evolving fields; always consult a neurologist or certified longevity physician for medical diagnostics.</em></li></ul>
   </section>
 
 
@@ -392,4 +392,4 @@ As we delve into the proteomic fingerprint of aging and neurodegeneration, we're
   }
 }
 </script></span>
-</div><br /><br /></div>
+<br /><br />

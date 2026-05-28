@@ -21,21 +21,21 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
 .ah-checklist li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; }
 </style>
 
-<div class="ah-container">
+
   <h2 style="text-align: left;">Decoding the Voice: How Digital Speech Analysis is Catching FTD a Decade Early</h2>
 
   <p>Discovering groundbreaking ways to diagnose <strong>Frontotemporal Dementia (FTD)</strong> is no longer on the horizon—it is here. By harnessing the power of AI-driven digital analysis, a simple 60-second speech test can now identify the "linguistic fingerprints" of neurodegeneration. As an independent researcher, I am tracking how this technology moves us from reactive care to <strong>Predictive Neuro-Advocacy</strong>.</p>
 
-  <div class="ah-disclaimer">
+  
     <strong>Medical Disclaimer:</strong> Digital speech analysis is a screening tool, not a standalone diagnosis. FTD is a complex condition requiring evaluation by a neurologist or neuropsychologist. Early signals allow for earlier lifestyle and metabolic interventions.
-  </div>
+  
 
   <div style="margin: 30px 0px; text-align: center;">
     <img alt="Doctor reviewing digital visualization of speech patterns for FTD detection" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCnc9jKSRPf2nYKdXCY4mw0cJJfuW_zwYMsgaLT5OeejlpMuHHwiwUU9bAurE15SkT5BLj4Z3OQpeF_zjFtaDRGZuOFmPN8P81Euux0yafjVh4BEdM-28yRGUStAinWnkq6IDeMQ0cy9w1nr8TpO25pEbHmoz_i_07cF-rcfcqhsFp6Yoxs4mvsDnQAoZ_/s16000/Speech_Analysis_FTD.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" />
     <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">The Digital Stethoscope: Analyzing the pauses, pitch, and word choice that the human ear might miss.</p>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">What the AI Hears: The 20-Year UPenn/Columbia Study</h2>
     <p>A landmark study published in <em>Neurology</em> followed participants for two decades. Researchers found that individuals carrying FTD-risk genes began showing "micro-shifts" in their speech long before they felt a single symptom. The AI focused on four key biological markers:</p>
     <ul>
@@ -44,9 +44,9 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
       <li><strong>Filler Words:</strong> An uptick in "um," "uh," and "like" can signal a breakdown in the language-planning network.</li>
       <li><strong>Prosody:</strong> Subtle flattening of pitch and volume, often mistaken for "just being tired."</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-update-box">
+  
     <h3 class="ah-title" style="color: #1d4ed8;">🔬 March 2026 Clinical Synthesis: The Neuro-Metabolic Link</h3>
     <p>In 2026, we don't treat the brain in isolation. <strong>Speech is a metabolic function.</strong> If your energy levels are crashing, your speech patterns will follow.</p>
     <ul>
@@ -54,9 +54,9 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
       <li><strong>Vascular Pressure:</strong> Chronic hypertension "scuffs" the small vessels in the temporal lobe. We maintain a BP target of <strong>&lt;130/80 mmHg</strong> to preserve the language network.</li>
       <li><strong>The Douglas Tip:</strong> If your speech feels "thick" or slow, check your <strong>Ammonia levels</strong>. As discussed in our <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Hyperammonemia guide, a spike in blood toxins can mimic early FTD symptoms.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">Speech Analysis vs. Traditional Imaging</h2>
     <table class="ah-table-grid">
       <tbody><tr class="ah-table-header">
@@ -80,7 +80,7 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
         <td>Can be done via <strong>Telemedicine</strong> or smartphone.</td>
       </tr>
     </tbody></table>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(253, 252, 251); border: 2px dashed rgb(13, 148, 136);">
     <h2 class="ah-title" style="border-bottom: 2px solid rgb(13, 148, 136);">🗣️ The Patient Translation: FTD Literacy</h2>
@@ -109,13 +109,13 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
 
     <div class="ah-accent-card" style="background: rgb(255, 245, 245); border-left-color: rgb(229, 62, 62); margin-top: 15px;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If a doctor says your slurred speech is "just age," translate that to: <em>"We are ignoring a neuromuscular or neurodegenerative signal."</em> Demand a <strong>Digital Speech Biomarker Screen</strong> or a referral to a Speech-Language Pathologist (SLP).
-    </div>
-  </div>
+    
+  
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Steps for 2026 Resilience</h2>
     <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The "Reading Aloud" Test:</strong> Spend 5 minutes a day reading a book aloud. Note any stumbles or fatigue in the jaw—this is a baseline for your own neuro-health.</li><li><input type="checkbox" /> <strong>Smart Tech Monitoring:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Digital Assistant (Alexa/Siri) to track your interaction speed. If you find yourself having to repeat commands more often, it may be a change in your own articulation.</li><li><input type="checkbox" /> <strong>Hydration for Clarity:</strong> Dehydration thickens saliva and slows neural firing. Drink 60-80oz of water to maintain the fluid environment the brain needs for language.</li></ul><ul class="ah-checklist">
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">About the Researcher</h3>
@@ -126,7 +126,7 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
       <a href="https://www.aginghealth.website/posts/gerd-atrial-fibrillation-gut-microbiome-health/">GERD and Heart Health | 
       <a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/">GERD and Sepsis
     </p>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">Sources &amp; Clinical Resources</h3>
@@ -136,9 +136,8 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
       <li><strong>UPenn / Columbia Research:</strong> 20-Year Longitudinal Study on Speech Biomarkers.</li>
       <li><strong>Boston Diagnostic Aphasia Examination:</strong> Standards for language assessment.</li>
     </ul>
-  </div>
+  
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
     Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
-</div>

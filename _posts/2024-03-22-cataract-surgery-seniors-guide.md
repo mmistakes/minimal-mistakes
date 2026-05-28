@@ -70,7 +70,7 @@ Surgery is typically recommended when blurred vision or glare sensitivity interf
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake ($1.2\text{--}1.5 \text{ g/kg}$) to prevent sarcopenia. Proper visual acuity is a critical modifiable factor in maintaining the physical activity levels required for metabolic health.
-</div>
+
 
 <script type="application/ld+json">
 {

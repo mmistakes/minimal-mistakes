@@ -31,7 +31,7 @@ While historical medical frameworks often evaluated neurological clocks and immu
 
 ---
 
-![An intricately designed clock featuring hands pointing to various times, adorned with images of viruses, bacteria, and a syringe.]({{ '/assets/images/circadian-disrupters-clock.webp' | relative_url }})
+![An intricately designed clock featuring hands pointing to various times, adorned with images of viruses, bacteria, and a syringe.](![](/assets/images/circadian-disrupters-clock.webp' | relative_url ))
 *Figure 1: Pathogenic Chronobiology. Beyond environmental light cues, localized molecular immune signals and inflammatory cytokine spikes possess the direct capacity to reshape the firing rate of your master clock.*
 
 ---
@@ -180,7 +180,7 @@ A zeitgeber (German for "time giver") is any external environmental or behaviora
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -27,7 +27,7 @@ The most comprehensive scientific synthesis completed to date—a definitive ser
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![How ultra-processed foods damage the body]({{ '/assets/images/infographic-ultra-processed-food-body-damage.webp' | relative_url }})
+![How ultra-processed foods damage the body](![](/assets/images/infographic-ultra-processed-food-body-damage.webp' | relative_url ))
 *Figure 1: Systemic Compromise. Industrial chemical additives, high caloric densities, and stripped food matrices trigger low-grade chronic inflammation from the intestinal lining outward.*
 
 This rigorous systematic evaluation, conducted by an international panel of 43 leading clinical experts, assessed data across 104 long-term studies encompassing hundreds of thousands of participants. Their consensus was sobering: 92 of those long-term tracking models confirmed that a high intake of UPFs directly amplifies your statistical risk for multiple chronic conditions and drives **accelerated all-cause mortality**. [1]
@@ -175,7 +175,7 @@ To fully support tissue repair, maintain healthy skin cell turnover, and protect
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

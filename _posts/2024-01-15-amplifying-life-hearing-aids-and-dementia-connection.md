@@ -100,7 +100,7 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
     </tbody>
   </table>
 <h3>Research Citations &amp; Source Box</h3>
-<div class="horizontal-scroll-wrapper">
+
   <table>
     <thead>
       <tr>
@@ -132,7 +132,7 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
       </tr>
     </tbody>
   </table>
-</div>
+
 <h3>Medical Disclaimer</h3>This content is for educational purposes only. Tommy T. Douglas is an independent researcher, not a doctor or audiologist. If you have sudden hearing loss or severe tinnitus, consult a medical professional immediately.<br />
 <table>
   <tbody>
@@ -194,4 +194,4 @@ tags: ['Clinical Research', 'Cognitive Health', 'Mind']
 </script>
                     <br><div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Psoriasis is now managed as a systemic inflammatory event. Clinical targets emphasize metabolic support with high-quality protein (<strong>1.2-1.6 g/kg</strong>) to maintain skin cell turnover and lean muscle mass.
-                    </div>
+                    

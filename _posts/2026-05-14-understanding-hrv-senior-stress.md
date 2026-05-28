@@ -17,7 +17,7 @@ However, HRV is frequently misunderstood. It is not your heart rate. Instead, it
 
 ---
 
-![HRV Data Visualization]({{ '/assets/images/understanding-hrv-senior-stress-header.webp' | relative_url }})
+![HRV Data Visualization](![](/assets/images/understanding-hrv-senior-stress-header.webp' | relative_url ))
 *Learn how HRV reveals your body’s stress and recovery balance — your built-in wellness monitor.*
 
 ---

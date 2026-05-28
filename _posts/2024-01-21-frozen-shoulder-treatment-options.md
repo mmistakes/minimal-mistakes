@@ -81,7 +81,7 @@ One of the biggest hurdles in recovering from conditions like adhesive capsuliti
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (1.2-1.5 g/kg) to prevent sarcopenia. Portal hypertension targets for esophageal varices now align with a systemic blood pressure of less than 130/80 mmHg.
-</div>
+
 
 ---
 
@@ -92,7 +92,7 @@ One of the biggest hurdles in recovering from conditions like adhesive capsuliti
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake ($1.2\text{--}1.5 \text{ g/kg}$) to prevent sarcopenia. Portal hypertension targets now align with a systemic blood pressure of $<130/80 \text{ mmHg}$.
-</div>
+
 
 <script type="application/ld+json">
 {

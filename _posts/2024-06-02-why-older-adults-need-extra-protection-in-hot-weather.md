@@ -21,21 +21,21 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
 .ah-checklist li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; }
 </style>
 
-<div class="ah-container">
+
   <h2 style="text-align: left;">Heatwave Advocacy: Why Summer is the Ultimate Metabolic Stress Test</h2>
 
   <p>Warm summer days are a source of joy, but in 2026, escalating global temperatures represent a significant clinical threat to the aging population. As an independent researcher and heart survivor (2008), I’ve learned that our bodies don't just "feel hot"—they undergo a complex <strong>Thermoregulatory Failure</strong>. When the cooling system breaks down, every other system (heart, kidneys, brain) is pushed to its breaking point.</p>
 
-  <div class="ah-disclaimer">
+  
     <strong>⚠️ Emergency Warning:</strong> Heatstroke is a medical emergency. If an older adult displays confusion, stops sweating, or has a body temperature above 103°F, call 911 immediately.
-  </div>
+  
 
   <div style="margin: 30px 0px; text-align: center;">
     <img alt="Senior woman relaxing in a shaded chair with a refreshing drink" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxjCwzv2Z_h-9YxhqTkcdbZjEKUAtTc47gFCWf8nLkSX5pE572t0cjxgaV4BL7WdJ6VWKh_JQnRGLqls_HQmIt4OxA4k3DI2WLA2o50f2kdLKceFAzUCkL2-DQHB66W4GxkF1D-q2W6wXqTWI0O5MRyDkvIisiY-XFKT2mt1-RjcYP9DLytDaWedsYNTMu/s16000/Summer_Relaxation_Safety.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" />
     <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">Strategic Shade: Protecting yourself from direct UV exposure is the first step in thermal defense.</p>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">The "Broken Thermostat" of Aging</h2>
     <p>As we age, our <strong>Thermoregulation</strong>—the body's ability to maintain a steady 98.6°F—begins to decline. This isn't just about feeling the heat; it's a structural change in how our skin and blood vessels respond.</p>
     
@@ -44,18 +44,18 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
       <li><strong>Vascular Stiffness:</strong> The blood vessels near the skin don't dilate as effectively, trapping heat deep inside the core.</li>
       <li><strong>Thirst Desynchronization:</strong> The brain’s "thirst signal" often lags behind the body's actual hydration needs.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-update-box">
+  
     <h3 class="ah-title" style="color: #1d4ed8;">🔬 March 2026 Clinical Synthesis: The Hydration-Protein Axis</h3>
     <p>In 2026, advocacy for heat resilience emphasizes that <strong>Muscle is Water</strong>. If you are losing muscle mass (sarcopenia), you are losing your body's primary reservoir for hydration.</p>
     <ul style="text-align: left;"><li><strong>Protein Resilience&nbsp;</strong>Your body needs more protein—about 1.2 to 1.6 grams for every kilogram you weigh<strong>:</strong> We target a high protein intake to maintain lean muscle mass. This muscle act as a "sponge" that holds the fluids you need to survive a heatwave.</li>
       <li><strong>Vascular Pressure:</strong> Heat spikes the heart rate. For heart survivors, maintaining a blood pressure of <strong>&lt;130/80 mmHg</strong> ensures the heart isn't overworked while trying to cool the body.</li>
       <li><strong>The Ammonia Warning:</strong> As discussed in our <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Hyperammonemia guide, dehydration can spike blood ammonia levels, leading to sudden confusion (HE) in liver patients.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">Heat vs. Chronic Conditions: The Multiplier Effect</h2>
     <p>Extreme heat doesn't just make you sweat; it acts as a "chemical stressor" that worsens existing diseases:</p>
     <table class="ah-table-grid">
@@ -81,7 +81,7 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
       </tr>
     </tbody></table>
     
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(253, 252, 251); border: 2px dashed rgb(13, 148, 136);">
     <h2 class="ah-title" style="border-bottom: 2px solid rgb(13, 148, 136);">🗣️ The Patient Translation: Heat Literacy</h2>
@@ -110,13 +110,13 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
 
     <div class="ah-accent-card" style="background: rgb(255, 245, 245); border-left-color: rgb(229, 62, 62); margin-top: 15px;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If a medication (like a Beta-Blocker or Diuretic) makes you "feel fine" in the heat, translate that to: <em>"My body's natural alarm system is suppressed."</em> You must stay in the shade <strong>even if you don't feel hot</strong>.
-    </div>
-  </div>
+    
+  
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Strategies for Summer Safety</h2>
     <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The Urine Check:</strong> Aim for a "Pale Straw" color. If it's dark amber, you are in the <strong>Danger Zone</strong> for kidney stress and ammonia buildup.</li><li>[Image of a urine color hydration chart]</li><li><input type="checkbox" /> <strong>The "Fan Fallacy":</strong> Fans do not cool the air; they just move it. If the room is over 95°F, fans can actually <em>increase</em> heat exhaustion. Use AC or cool baths instead.</li><li><input type="checkbox" /> <strong>Bio-Hacking for Heat:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech to track your <strong>Resting Heart Rate</strong>. A jump of 10+ BPM while sitting still is a sign of thermal stress.</li></ul><ul class="ah-checklist">
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">About the Researcher</h3>
@@ -127,7 +127,7 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
       <a href="https://www.aginghealth.website/posts/is-heart-attack-risk-increased-more-by/">Heart | 
       <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Brain
     </p>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">Sources &amp; Clinical Citations</h3>
@@ -137,9 +137,8 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
       <li><strong>Cleveland Clinic:</strong> Heatstroke vs. Heat Exhaustion Symptoms.</li>
       <li><strong>Mayo Clinic News Network:</strong> Dehydration and Chronic Disease Complications.</li>
     </ul>
-  </div>
+  
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
     Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
-</div>

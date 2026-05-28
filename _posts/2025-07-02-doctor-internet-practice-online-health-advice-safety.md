@@ -29,7 +29,7 @@ This comprehensive guide audits the physiological and psychological effects of u
 > **⚠️ Medical Disclaimer:** This material reflects current 2025/2026 public health informatics and clinical safety metrics. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Senior man looking up medical symptoms online]({{ '/assets/images/searching-for-health-advice.webp' | relative_url }})
+![Senior man looking up medical symptoms online](![](/assets/images/searching-for-health-advice.webp' | relative_url ))
 *Figure 1: Digital Triage. The sheer volume of medical algorithms, forum posts, and unverified symptom checkers can easily induce acute confusion, making source validation a mandatory self-care protocol.*
 
 ---
@@ -62,7 +62,7 @@ The institutional normalization of "Dr. Google" and corporate diagnostic hubs ha
 ## ⚠️ The Severe Risks of Online Self-Diagnosis
 ---
 
-![Image illustrating the feedback loop of cyberchondria: minor symptom leads to catastrophic search result, causing acute physiological stress]({{ '/assets/images/cyberchondria-feedback-loop.webp'| relative_url }})
+![Image illustrating the feedback loop of cyberchondria: minor symptom leads to catastrophic search result, causing acute physiological stress](![](/assets/images/cyberchondria-feedback-loop.webp'| relative_url ))
 
 ---
 
@@ -103,7 +103,7 @@ Before allowing any piece of digital health content to influence your medical wo
 
 ---
 
-![Image infographic mapping out the C.R.A.P. framework: Currency, Reliability, Authority, and Purpose]({{ '/assets/images/crap-framework.webp'| relative_url }})
+![Image infographic mapping out the C.R.A.P. framework: Currency, Reliability, Authority, and Purpose](![](/assets/images/crap-framework.webp'| relative_url ))
 
 ---
 
@@ -183,7 +183,7 @@ Apply the C.R.A.P. test metrics: confirm the information is current (modified wi
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

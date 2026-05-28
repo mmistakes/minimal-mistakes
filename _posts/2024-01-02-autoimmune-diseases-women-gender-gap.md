@@ -64,7 +64,7 @@ Visit the [Arthritis Foundation](https://www.arthritis.org/) to learn more and g
 
 <div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Psoriasis is now managed as a systemic inflammatory event. Clinical targets emphasize metabolic support with high-quality protein (<strong>1.2–1.6 g/kg</strong>) to maintain skin cell turnover and lean muscle mass.
-</div>
+
 
 <script type="application/ld+json">
 {

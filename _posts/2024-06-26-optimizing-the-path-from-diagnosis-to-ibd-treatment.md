@@ -101,10 +101,10 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '🧠 Cog
  <button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
   <ol>
-    <p style="text-align: left;"></p><ol style="text-align: left;"><li><a href="https://www.crohnscolitisfoundation.org/">Crohn's and Colitis Foundation</li><li><a href="https://gastro.org/press-releases/aga-12-point-plan-improve-ibd-care/">American Gastroenterological Association (AGA) 12-Point Plan</li><li><a href="https://www.sciencedirect.com/science/article/abs/pii/S2468125322000218">International Organization for the Study of IBD (IOIBD) Consensus</li></ol><p></p></ol></div>
+    <p style="text-align: left;"></p><ol style="text-align: left;"><li><a href="https://www.crohnscolitisfoundation.org/">Crohn's and Colitis Foundation</li><li><a href="https://gastro.org/press-releases/aga-12-point-plan-improve-ibd-care/">American Gastroenterological Association (AGA) 12-Point Plan</li><li><a href="https://www.sciencedirect.com/science/article/abs/pii/S2468125322000218">International Organization for the Study of IBD (IOIBD) Consensus</li></ol><p></p></ol>
   
   
 
-<p style="background-color: ghostwhite; color: #444444; font-size: 1.1rem;"><i>Disclaimer: This content is for informational purposes only and does not constitute medical advice. Always seek the advice of your physician regarding a medical condition.</i></p></div>
+<p style="background-color: ghostwhite; color: #444444; font-size: 1.1rem;"><i>Disclaimer: This content is for informational purposes only and does not constitute medical advice. Always seek the advice of your physician regarding a medical condition.</i></p>

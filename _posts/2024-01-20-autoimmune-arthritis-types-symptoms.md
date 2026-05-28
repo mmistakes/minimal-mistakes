@@ -74,7 +74,7 @@ Treatment focuses on reducing systemic inflammation, protecting joint integrity,
 
 <div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Psoriasis and PsA are now managed as systemic inflammatory events. Clinical targets emphasize metabolic support with high-quality protein ($1.2\text{--}1.6 \text{ g/kg}$) to maintain skin cell turnover and protect lean muscle mass.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -12,7 +12,7 @@ balance issues. It’s caused by the loss of <a href="https://www.aginghealth.we
 alpha-synuclein and influenced by both genetics and environmental factors.<span><!--more--></span>&nbsp;<img alt="A visual representation of Parkinson's symptoms like micrographia alongside advanced Deep Brain Stimulation tuning technology." src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix9sAuI8wCSysDNFBH24ZqPfXFlUg6TOS4v_DweFVoxrFvmU9dZV8DAjeOwuveUpYauwkMP3oTfje7m5_mlAM0g0Lt2nZKbCr0x1whiw7xNt57oZSTlXx1mi9Oyn7GB4_bP97RQWR25GlMP2bGb8i_q46cpaj5gek0IgYSS1EaWtKsEFKbv86NR0UgleaT/s16000/Cleartune.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%; text-align: center;" title="A visual representation of Parkinson's symptoms like micrographia alongside advanced Deep Brain Stimulation tuning technology." /><div style="margin: 30px 0px; text-align: center;"><p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">
           Living with Parkinson’s presents significant challenges, yet maintaining hope and a positive outlook can
           profoundly impact the journey. While optimism does not eliminate difficulties, it can strengthen resilience,
-          enhance overall well-being, and foster continued engagement in life.&nbsp;</p></div>
+          enhance overall well-being, and foster continued engagement in life.&nbsp;</p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h3>1. The "Pre-Motor" Warning Signs</h3>
 Recent research has revealed that Parkinson’s disease often originates in the gut and nasal pathways years before the
@@ -33,7 +33,7 @@ hallmark tremors become evident. This early onset can manifest through subtle bu
     <b>The Sleep Link:</b>
     REM Sleep Behavior Disorder (acting out dreams) is now recognized as a <a href="https://www.aginghealth.website/posts/new-biomarker-early-detection-als-ftd/" title="New Biomarker Early Detection Als Ftd" rel="dofollow"><b>major early biomarker</b>.
   </li>
-</ul></div>
+</ul>
 <div class="patient sources-box" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h3>2. The 2026 Diagnostic Revolution</h3>
 The era of “wait and see” in Parkinson’s disease is drawing to a close. <a href="https://www.aginghealth.website/posts/the-best-technology-advances-of-last/" title="The Best Technology Advances Of Last" rel="dofollow"><b>Advances in diagnostic technology</b>, particularly
@@ -89,7 +89,7 @@ mental health.&nbsp;&nbsp;
   <i>what</i>
   you eat to ensure your medication actually works. If you feel like you're "on" periods are becoming unpredictable, the
   culprit might not be the disease, but your dinner.
-</p></div>
+</p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h2>Parkinson’s Nutrition 2026: Protein Timing &amp; Levodopa Absorption</h2>
 <h3><b>1. The "Competition" at the Gate</b></h3>
@@ -177,7 +177,7 @@ mental health.&nbsp;&nbsp;
   <b>high-dose B6 supplements</b>
   (over 50mg) for those on Levodopa, as it can cause the medication to convert to dopamine
   <i>outside</i>
-  the brain, increasing side effects and reducing effectiveness.</p></div>
+  the brain, increasing side effects and reducing effectiveness.</p>
 <div class="box" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
 <h2>From Laser-Guided Flooring to Acoustic Cueing—How 2026 Technology is Ending "Freezing of Gait"</h2>
 <p>
@@ -256,8 +256,8 @@ mental health.&nbsp;&nbsp;
       that shift from high-blue light in the morning (to boost dopamine sensitivity) to warm, amber light in the evening
       (to encourage natural melatonin production). This "lighting therapy" is now a standard non-drug intervention for
       managing the non-motor symptoms of PD.</li></ul><p></p><ul>
-  </ul></div>
-<div class="clinic-citations">
+  </ul>
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
 <p></p>

@@ -19,7 +19,7 @@ For many families, colon cancer is a shadow that looms over generations. Having 
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![MakA Toxin vs Colibactin]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/colibactin-maka.webp' | relative_url }})
+![MakA Toxin vs Colibactin](![](/assets/images/colibactin-maka.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** The Tale of Two Toxins: Colibactin acts as a DNA-damaging "villain," while MakA emerges as a "hero" that selectively targets tumor cells._
 

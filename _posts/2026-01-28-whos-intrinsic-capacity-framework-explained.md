@@ -25,7 +25,7 @@ The WHO defines **Intrinsic Capacity (IC)** as *the composite of all the physica
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Infographic detailing the World Health Organization ICOPE model for senior healthcare]({{ '/assets/images/intrinsic-capacity2.webp' | relative_url }})
+![Infographic detailing the World Health Organization ICOPE model for senior healthcare](![](/assets/images/intrinsic-capacity2.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** The shift from a disease-centered model to a function-centered paradigm allows healthcare managers to detect early functional vulnerabilities before irreversible disability takes root._
 

@@ -36,7 +36,7 @@ tomorrow. 🌟
     It’s not just about living longer—it’s about thriving. Small, consistent steps today can lead to a sharper,
     healthier mind for years to come. 🌱💪
   </li>
-  </ul></div>
+  </ul>
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding: 1rem;">
 <h3>1. The Tetanus-Parkinson’s Link: From Lead to Evidence</h3>
 In 2024, the idea that a tetanus shot could protect the brain was a "preprint curiosity." By April 2026, formal
@@ -98,7 +98,7 @@ The <a href="https://www.aginghealth.website/posts/dementia-research-2026-ptau21
     Even for those with a high genetic predisposition, a 5-point improvement in "Brain Care" scores correlates with a
     <a href="https://www.aginghealth.website/2024/07/ shingles-vaccine-body-fat-dementia-risk.html" title="%20shingles Vaccine Body Fat Dementia Risk" rel="dofollow"><b>dramatically reduced risk of dementia</b>, stroke, and late-life depression.
   </li>
-  </ul></div>
+  </ul>
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding: 1rem;">  
 <h2>  🧠  <strong>Clinical Summary: Tetanus &amp; Diphtheria Boosters (2025 Evidence)</strong></h2>
 <p>
@@ -133,10 +133,10 @@ The <a href="https://www.aginghealth.website/posts/dementia-research-2026-ptau21
     Boosters remain appropriate for <b>pregnancy,</b>&nbsp;<strong>travel to endemic regions,</strong>&nbsp;and
     <strong>wound management.</strong></li>
 </ul>
-  <p></p></div>
+  <p></p>
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding: 1rem;">
 <h2>Fact-Check Sources:</h2>
 <a href="https://www.medrxiv.org/content/10.1101/2024.05.03.24306800v1.full"><ol style="text-align: left;"><a href="https://www.medrxiv.org/content/10.1101/2024.05.03.24306800v1.full"><li><a href="https://www.medrxiv.org/content/10.1101/2024.05.03.24306800v1.full"><a href="https://www.medrxiv.org/content/10.1101/2024.05.03.24306800v1.full">Tetanus vaccination is associated with decreased incidence of Parkinson’s disease and slower progression | medRxiv</li><li><a href="https://www.medscape.com/viewarticle/tetanus-shots-lifesavers-or-overkill-2025a1000kqd">Tetanus Shots: Lifesavers or Overkill?Medscape</li><li><a href="https://www.drugs.com/history/kisunla.html">Kisunla (donanemab-azbt) FDA Approval History - Drugs.com</li><li><a href="https://eastonad.ucla.edu/patient-care/alzheimers-disease-treatments/donanemab#:~:text=Donanemab%20(Kisunla%E2%84%A2)%20is%20a,after%209%20months%20of%20treatment.">Donanemab, Kisunla, FDA approved, Alzheimer's drug | Alzheimer’s Research &amp; Care Center</li><li><a href="https://www.nih.gov/news-events/news-releases/new-clinical-assessment-tool-improves-dementia-care-actions-primary-care-patients#:~:text=Study%20participants%20were%20randomly%20assigned,care%20compared%20to%20standard%20care.">New clinical assessment tool improves dementia care actions in primary care patients | National Institutes of
       Health (NIH)</li><li><a href="https://www.advisory.com/daily-briefing/2026/03/30/midlife-choices#:~:text=The%20median%20age%20was%2058,%2C%20and%20late%2Dlife%20depression.">
       Can lifestyle changes lower your risk of dementia?</li></ol><ul>
-  </ul></div>
+  </ul>

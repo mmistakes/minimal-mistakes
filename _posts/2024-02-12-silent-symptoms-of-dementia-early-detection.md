@@ -209,7 +209,7 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
 <li>Early medical evaluation improves care planning.</li>
 <li>Brain health habits may slow cognitive decline.</li>
 </ul>
-<hr /><div class="clinic-trust-card">
+<hr />
   <h3>About the Researcher</h3>
   <p>
     Tommy T. Douglas is an independent health researcher and patient advocate. 
@@ -226,9 +226,9 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
     <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
   </p>
-</div>
 
-<div class="patient sources-box" style="background-color: #e0f2f1; border-left: 4px solid rgb(0, 77, 64); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;"><div class="patient-resources-box">
+
+<div class="patient sources-box" style="background-color: #e0f2f1; border-left: 4px solid rgb(0, 77, 64); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
   <h3>📘 Related Patient Resources</h3>
   <p>    <strong>The Log:</strong>
     Start tracking your "Mental Clarity" score with my
@@ -247,7 +247,7 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-      </p></div></div>
+      </p>
 <h2>📚 Citations &amp; Authoritative Sources</h2>
 <p>The information in this article is supported by guidance from:</p>
 <ul>
@@ -257,7 +257,7 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
 <li>World Health Organization (WHO)</li>
 <li>National Institute of Neurological Disorders and Stroke (NINDS)</li>
 </ul>
-<p>For medical concerns, always consult a licensed healthcare professional.</p><div><div class="separator" style="clear: both; text-align: center;"></div></div><script type="application/ld+json">
+<p>For medical concerns, always consult a licensed healthcare professional.</p><div class="separator" style="clear: both; text-align: center;"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -382,4 +382,4 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
 </script>
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

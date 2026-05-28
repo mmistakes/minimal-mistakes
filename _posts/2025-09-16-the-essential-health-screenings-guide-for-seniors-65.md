@@ -27,7 +27,7 @@ As our bodies advance into late-life frameworks, the goal of medicine shifts. We
 > **⚠️ Medical Disclaimer:** This material reflects current 2026 clinical guidelines from the U.S. Preventive Services Task Force (USPSTF) and the Centers for Disease Control and Prevention (CDC). It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Essential health screenings for adults 65 and older]({{ '/assets/images/health-screenings-for-seniors.webp' | relative_url }})
+![Essential health screenings for adults 65 and older](![](/assets/images/health-screenings-for-seniors.webp' | relative_url ))
 *Figure 1: Proactive Longevity. Preventive care serves as an early-warning radar system, allowing older adults to disarm latent health risks long before they progress into acute healthcare crises.*
 
 ---
@@ -202,7 +202,7 @@ To ensure you access your covered preventive health benefits without triggering 
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

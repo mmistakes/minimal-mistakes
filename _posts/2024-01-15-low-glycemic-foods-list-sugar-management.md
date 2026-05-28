@@ -20,7 +20,7 @@ Managing [Type 2 Diabetes]({{ '/posts/diabetes-guide/' | relative_url }}) is oft
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Low Glycemic Farmers Market]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/low-glycemic-foods-farmers-market.webp' | relative_url }})
+![Low Glycemic Farmers Market](![](/assets/images/low-glycemic-foods-farmers-market.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Fresh, locally sourced vegetables are the cornerstone of a vascular defense strategy._
 

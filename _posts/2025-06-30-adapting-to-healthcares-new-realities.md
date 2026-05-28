@@ -28,7 +28,7 @@ As federal policy frameworks shift, digital care platforms evolve, and intensive
 > **⚠️ Medical Policy Disclaimer:** This material is updated to reflect active 2026 legislative shifts, federal budget modifications, and Centers for Disease Control and Prevention (CDC) population health parameters. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any personal medical condition.
 {.prompt-warning}
 
-![The historical continuum of medicine and medical care changes]({{ '/assets/images/history-of-medicine.webp' | relative_url }})
+![The historical continuum of medicine and medical care changes](![](/assets/images/history-of-medicine.webp' | relative_url ))
 *Figure 1: Persistent Adaptation. Throughout history, the evolution of healthcare has been defined by structural transformations that reflect our changing understanding of human biology, societal needs, and technological breakthroughs.*
 
 ---

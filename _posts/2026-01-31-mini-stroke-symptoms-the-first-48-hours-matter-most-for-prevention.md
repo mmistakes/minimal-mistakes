@@ -24,7 +24,7 @@ Think of a TIA as a clinical "warning stroke"—it is the single strongest physi
 > **Expertise & Experience Note:** Updated to reflect the latest American Heart Association (AHA) statistical updates. As a patient advocate who has successfully navigated complex cardiovascular protocols—including the surgical placement of a **Watchman Device** to manage structural stroke risks without the long-term use of systemically taxing blood thinners—I share this breakdown to help older adults and caregivers maximize the critical window of early neurological intervention.
 {: .prompt-info }
 
-![Modern MRI technology for brain health]({{ '/assets/images/mri.webp' | relative_url }})
+![Modern MRI technology for brain health](![](/assets/images/mri.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Diffusion-weighted MRI technology stands as the clinical gold standard for detecting microvascular blockages, identifying 'silent' brain tissue lesions, and assessing structural neurological health immediately following a TIA._
 

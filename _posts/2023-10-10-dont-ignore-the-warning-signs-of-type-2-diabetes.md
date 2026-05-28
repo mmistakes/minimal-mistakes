@@ -59,43 +59,43 @@ Type 2 diabetes often develops slowly, and many people miss the early clues. Cat
 3. **Blurry Vision:** Fluid shifts in the eye as blood sugar rises can cause temporary vision changes.
 4. **Slow Healing:** Impaired circulation linked to high glucose can slow the recovery of cuts or scrapes.
 
-<div class="symptom-card-grid">
-  <div class="symptom-card">
+
+  
     <h3 class="symptom-title">Metabolic Signs</h3>
     <ul>
       <li>Unexplained hunger</li>
       <li>Slow wound healing</li>
       <li>Darkened skin patches</li>
     </ul>
-  </div>
-  <div class="symptom-card">
+  
+  
     <h3 class="symptom-title">Neurological Signs</h3>
     <ul>
       <li>Tingling in hands/feet</li>
       <li>Balance issues</li>
       <li>Burning sensations</li>
     </ul>
-  </div>
-</div>
+  
+
 
 ---
 
 ## 🛠️ Interactive Decision Tree
-<div class="decision-tree">
+
   <h3>Should I Ask My Doctor About Testing?</h3>
   <p><strong>1. Do you experience frequent urination?</strong><br>Yes → See Step 3 | No → Continue</p>
   <p><strong>2. Do you feel unusually tired after eating?</strong><br>Yes → See Step 3 | No → Continue</p>
   <p><strong>3. Result:</strong> Testing may be appropriate. Bring these specific observations to your next clinical appointment.</p>
-</div>
+
 
 ---
 
 ## 📖 Clinical Glossary
-<div class="glossary-block">
+
   <p><strong>A1C:</strong> A blood test measuring average glucose levels over the past 2-3 months.</p>
   <p><strong>Insulin Resistance:</strong> When the body's cells do not respond effectively to insulin, causing glucose to rise.</p>
   <p><strong>Neuropathy:</strong> Nerve damage that can cause tingling or numbness, often in the extremities.</p>
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -19,7 +19,7 @@ As an independent researcher living with complex chronic conditions, I focus on 
 
  ---
 
-![Medical illustration of the portal venous system and esophageal varices]({{ '/assets/images/esophageal-varices.webp' | relative_url }})
+![Medical illustration of the portal venous system and esophageal varices](![](/assets/images/esophageal-varices.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Advanced liver scarring creates a high-pressure backflow throughout the portal vein, forcing blood into the fragile collateral vessels of the gastrointestinal tract and increasing the risk of variceal bleeding._
 

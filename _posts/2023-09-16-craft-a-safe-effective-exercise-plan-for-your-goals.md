@@ -18,38 +18,38 @@ balance for older adults
 
 <span><!--more--></span>
 
-<div class="clinic-card disclaimer">
+
 <strong>Medical Disclaimer:</strong>
 This content is for educational purposes only and does not replace professional medical advice. Always consult a qualified healthcare provider.
-</div>
+
 
 ![Older adults exercising with resistance bands at home](/assets/images/exercising.webp)
 *Figure 1: Gentle resistance band exercise for older adults in a safe home environment.*
 
 
 <!--WHY IT MATTERS-->
-<div class="clinic-card">
+
 <h3>Why Exercise Matters More With Age</h3>
 <p>
 Regular physical activity helps older adults maintain independence, improve sleep,
 protect brain health, and reduce the risk of falls, heart disease, diabetes, and dementia.
 </p>
-</div>
+
 
 <!--STEP 1-->
-<div class="clinic-card">
+
 <h3>Step 1: Clinical Self‑Assessment</h3>
 <ul>
 <li>Review medical conditions (heart, joint, balance, lung)</li>
 <li>Check medications that affect blood pressure or hydration</li>
 <li>Start slow — even 5–10 minutes is beneficial</li>
 </ul>
-</div>
+
 
 <!--STEP 2-->
-<div class="clinic-grid">
 
-<div class="clinic-card">
+
+
 <h4>Aerobic (Cardio)</h4>
 <p>Improves heart, lung, and brain health</p>
 <ul>
@@ -57,9 +57,9 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li>Swimming</li>
 <li>Chair aerobics</li>
 </ul>
-</div>
 
-<div class="clinic-card">
+
+
 <h4>Strength Training</h4>
 <p>Preserves muscle and bone</p>
 <ul>
@@ -67,9 +67,9 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li>Light weights</li>
 <li>Wall push‑ups</li>
 </ul>
-</div>
 
-<div class="clinic-card">
+
+
 <h4>Balance Training</h4>
 <p>Reduces fall risk</p>
 <ul>
@@ -77,9 +77,9 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li>Heel‑to‑toe walking</li>
 <li>Standing leg lifts</li>
 </ul>
-</div>
 
-<div class="clinic-card">
+
+
 <h4>Flexibility</h4>
 <p>Improves comfort and range of motion</p>
 <ul>
@@ -87,22 +87,22 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li>Yoga</li>
 <li>Shoulder rolls</li>
 </ul>
-</div>
 
-</div>
+
+
 
 <!--GUIDELINES-->
-<div class="clinic-card">
+
 <h3>Recommended Weekly Targets</h3>
 <ul>
 <li>150 minutes of moderate aerobic activity</li>
 <li>Strength training 2 days per week</li>
 <li>Balance exercises 3+ times per week</li>
 </ul>
-</div>
+
 
 <!--WEEKLY PLAN-->
-<div class="clinic-card">
+
 <h3>Senior‑Friendly Weekly Exercise Plan</h3>
 <ul>
 <li><strong>Monday:</strong> 20‑minute walk + balance drills</li>
@@ -113,10 +113,10 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li><strong>Saturday:</strong> Optional swim or tai chi</li>
 <li><strong>Sunday:</strong> Rest or light stretching</li>
 </ul>
-</div>
+
 
 <!--SAFETY-->
-<div class="clinic-card caution">
+
 <h3>Safety First — Red Flags</h3>
 <ul>
 <li>Chest pain or pressure</li>
@@ -124,10 +124,10 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li>Sudden shortness of breath</li>
 <li>Joint pain that worsens</li>
 </ul>
-</div>
+
 
 <!--TAKEAWAYS-->
-<div class="clinic-card">
+
 <h3>Key Clinical Takeaways</h3>
 <ul>
 <li>Exercise supports healthy aging when done safely</li>
@@ -135,23 +135,23 @@ protect brain health, and reduce the risk of falls, heart disease, diabetes, and
 <li>Even 10 minutes daily provides benefit</li>
 <li>Always individualize plans with a clinician</li>
 </ul>
-</div>
+
 
 <!--CLINICIAN PROMPT-->
-<div class="clinic-card clinician-note">
+
 <strong>Conversation Starter:</strong><br />
 “I’m building an exercise routine and would like your guidance to ensure it’s safe for my health conditions.”
-</div><div class="clinic-card clinician-note"><p>&nbsp;</p><p><strong>Case Study:</strong> &nbsp;My&nbsp;<a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">2008 Heart Attack Survival Story&nbsp;and the&nbsp;<a href="https://www.aginghealth.website/posts/diabetes/">Diabetes Link.</p><p>To see how I am connecting these dots, read my latest research on<strong>&nbsp;</strong>Is&nbsp;<a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Alzheimer’s Really Type 3 Diabetes?</p><p><strong>The Log:</strong>&nbsp;Start tracking your "Mental Clarity" score on my&nbsp;<a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing">Daily Glucose Tracker.</p></div>
+<p>&nbsp;</p><p><strong>Case Study:</strong> &nbsp;My&nbsp;<a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">2008 Heart Attack Survival Story&nbsp;and the&nbsp;<a href="https://www.aginghealth.website/posts/diabetes/">Diabetes Link.</p><p>To see how I am connecting these dots, read my latest research on<strong>&nbsp;</strong>Is&nbsp;<a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Alzheimer’s Really Type 3 Diabetes?</p><p><strong>The Log:</strong>&nbsp;Start tracking your "Mental Clarity" score on my&nbsp;<a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing">Daily Glucose Tracker.</p>
 
 <!--SOURCES-->
-<div class="sources-box">
+
 <h3>Professional Sources</h3>
 <ul>
 <li><a href="https://www.nia.nih.gov/health/exercise-and-physical-activity">National Institute on Aging</li>
 <li><a href="https://www.cdc.gov/physicalactivity/basics/older_adults/">CDC – Older Adult Physical Activity</li>
 <li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20045506">Mayo Clinic – Exercise Safety</li>
 </ul>
-</div>
+
 
 <script type="application/ld+json">
 {

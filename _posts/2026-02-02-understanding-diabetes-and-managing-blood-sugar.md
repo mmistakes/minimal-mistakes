@@ -24,7 +24,7 @@ Diabetes is not merely a "blood sugar problem"—it is a complex, systemic metab
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Infographic comparing a healthy pancreas and cell vs insulin resistance in a cell under a Standard American Diet environment]({{ '/assets/images/diet-metabolic-impact.webp' | relative_url }})
+![Infographic comparing a healthy pancreas and cell vs insulin resistance in a cell under a Standard American Diet environment](![](/assets/images/diet-metabolic-impact.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** The Standard American Diet (SAD) acts as a primary catalyst for metabolic dysfunction, overwhelming cellular insulin receptors with refined sugars and highly processed fats._
 
@@ -63,7 +63,7 @@ When neurons become unable to process glucose for fuel, it accelerates amyloid-b
 
 Unmanaged blood sugar does not sit harmlessly in the blood. Microscopically, chronic hyperglycemia acts like "shards of glass" scraping against the delicate endothelial lining of your blood vessels. This damage splits into two main structural categories: microvascular (small vessel) and macrovascular (large vessel) complications.
 
-![Clinical comparison showing a healthy human retina versus a retina damaged by microaneurysms and hemorrhages from diabetic retinopathy]({{ '/assets/images/diabetic-retinopathy-comparison.webp' | relative_url }})
+![Clinical comparison showing a healthy human retina versus a retina damaged by microaneurysms and hemorrhages from diabetic retinopathy](![](/assets/images/diabetic-retinopathy-comparison.webp' | relative_url ))
 {: .normal }
 _**Figure 2:** Long-term exposure to high glucose concentrations weakens capillary walls, causing the microaneurysms, leaky vessels, and hemorrhages characteristic of diabetic retinopathy._
 
@@ -99,7 +99,7 @@ Overcoming insulin resistance requires a structured, multi-faceted medical and l
     <p>Glucose Level: _________ mg/dL</p>
     <p>Medication Administered (e.g., Metformin): [ Yes / No ]</p>
     <p>Subjective Energy / Clarity (1-10): _________</p>
-  </div>
+  
 </details>
 
 <details class="tracker-section" style="cursor: pointer; padding: 0.8em; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 0.5em; background: #fafafa;">
@@ -109,7 +109,7 @@ Overcoming insulin resistance requires a structured, multi-faceted medical and l
     <p>Post-Breakfast Glucose: _________ mg/dL | Estimated Carbs: ____g</p>
     <p>Post-Lunch Glucose: _________ mg/dL | Estimated Carbs: ____g</p>
     <p>Post-Dinner Glucose: _________ mg/dL | Estimated Carbs: ____g</p>
-  </div>
+  
 </details>
 
 <details class="tracker-section" style="cursor: pointer; padding: 0.8em; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 0.5em; background: #fafafa;">
@@ -119,7 +119,7 @@ Overcoming insulin resistance requires a structured, multi-faceted medical and l
     <p>Injection Site (Circle): Abdomen / Thigh / Upper Arm</p>
     <p>Observed Side Effects / Gastrointestinal Notes:</p>
     <p>__________________________________________________________________</p>
-  </div>
+  
 </details>
 
 <p style="color: #666; font-size: 0.85em; font-style: italic; margin-top: 0.5em;">Note: Always review your personalized logs with your endocrinologist before adjusting any medication dosages.</p>

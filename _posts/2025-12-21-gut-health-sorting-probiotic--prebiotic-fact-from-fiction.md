@@ -27,7 +27,7 @@ From yogurt commercials promising "regularity" to expensive capsules claiming to
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Senior woman in a kitchen holding a glass of kefir]({{ '/assets/images/probiotic-prebiotics.webp' | relative_url }})
+![Senior woman in a kitchen holding a glass of kefir](![](/assets/images/probiotic-prebiotics.webp' | relative_url ))
 *Figure 1: The Perimeter Approach. True gastrointestinal resilience is built on a diverse array of whole, fiber-dense plants and traditionally fermented foods rather than processed probiotic snacks.*
 
 ---
@@ -140,7 +140,7 @@ Somatic ingredients that calm local digestion, optimize motility, and reduce age
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Managing your internal micro-ecology demands comprehensive metabolic support. To preserve your lean muscle mass and insulate your liver from fatty deposition loops, maintain a high-quality protein intake target of <strong>1.2 to 1.5 grams per kilogram of body weight daily</strong>. If you are tracking macrovascular safety loops or portal pressures, keep your resting blood pressure held strictly <strong>under 130/80 mmHg</strong> to protect your delicate capillary grids from excessive stress.
-</div>
+
 
 ---
 

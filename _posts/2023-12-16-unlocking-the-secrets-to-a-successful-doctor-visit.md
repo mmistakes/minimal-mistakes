@@ -33,7 +33,7 @@ tags: ['Aging Well', 'Advocacy', 'Longevity']
     </ul>
   </li>
   <li><strong>Prioritize your concerns:</strong> Determine the most pressing issues to address during your limited appointment time.</li>
-</ul><div><br /></div>
+</ul><br />
 <h3><strong>2. Gather Your Medical Information:</strong></h3>
 <ul>
   <li><strong>Schedule and contact information:</strong> Note the date, time, and location of your appointment, along with the doctor's name and contact information.</li>
@@ -82,14 +82,14 @@ tags: ['Aging Well', 'Advocacy', 'Longevity']
   <li><b>Plan for potential delays: </b>Bring a book, download podcasts, or bring a small notebook to keep yourself occupied.</li>
   <li><b>Contact your insurance company or doctor's office with any questions regarding coverage or required documents.</b></li>
   <li><b>Utilize online resources: </b>Utilize your insurance company's app or online portal for convenient access to coverage details, form downloads, and appointment scheduling.</li>
-</ul><div><br /></div><h3 style="text-align: left;">8. Embrace the Early Bird: Conquering Check-In with Punctuality Power!</h3><ul>
+</ul><br /><h3 style="text-align: left;">8. Embrace the Early Bird: Conquering Check-In with Punctuality Power!</h3><ul>
   <li><b>Arrive early: </b>Aim to arrive 15-20 minutes before your scheduled appointment time.</li>
   <li><b>Complete paperwork efficiently:</b> Take advantage of the extra time to complete any necessary forms at your own pace.</li>
   <li><b>Complete pre-appointment checks:</b> Utilize the time to complete any pre-appointment checks like blood pressure or temperature.</li>
   <li><b>Reduce stress: </b>Early arrival allows you to settle in, relax, and gather your thoughts before your appointment.</li>
   <li><b>Show respect: </b>Punctuality demonstrates respect for your doctor and other patients.</li>
   <li><b>Check for specific instructions:</b> Contact your doctor's office to confirm any specific check-in procedures or paperwork requirements.</li>
-</ul><div><br /></div><h3 style="text-align: left;">9. Speak Up and Be Heard: Conquering Communication at Your Doctor's Appointment</h3><ul>
+</ul><br /><h3 style="text-align: left;">9. Speak Up and Be Heard: Conquering Communication at Your Doctor's Appointment</h3><ul>
   <li><b>Communicate effectively: </b>Clearly and concisely describe your symptoms, concerns, and questions.</li>
   <li><b>Ask for clarification:</b> Don't hesitate to ask questions if you don't understand something.</li>
   <li><b>Be honest and transparent:</b> Share all relevant information with your doctor.</li>

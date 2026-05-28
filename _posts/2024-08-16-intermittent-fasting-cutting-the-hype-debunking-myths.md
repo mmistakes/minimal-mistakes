@@ -134,7 +134,7 @@ Intermittent fasting is an excellent tool for optimizing metabolic health, enhan
 
 ---
 
-<div class="clinic-citations">
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
     <li>Welton, S., et al. (2020). Intermittent fasting and weight loss: Systematic review. <i>Canadian Family Physician</i>, 66(2), 117-125.</li>
@@ -143,11 +143,11 @@ Intermittent fasting is an excellent tool for optimizing metabolic health, enhan
     <li>American Heart Association. (2024). 8-hour time-restricted eating linked to a 91% higher risk of cardiovascular death. <i>AHA Scientific Sessions Epidemiology/Lifestyle</i>.</li>
     <li>Johns Hopkins Medicine. (2024). Pilot study provides blueprint for evaluating diet's direct longitudinal effect on complex brain health markers.</li>
   </ol>
-</div>
+
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Editorial Update:</strong> Current geriatric nutrition guidelines caution seniors practicing IF against extending fasting windows past 16 hours without active clinical supervision, due to the heightened risk of age-related sarcopenia and lean muscle mass depletion.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -19,45 +19,45 @@ tags: ['🛡️ Liver & Immune Health', '❤️ Cardiovascular & T2D']
 .ah-table-header { background: #003b4a; color: white; font-weight: 700; }
 </style>
 
-<div class="ah-container">
+
   <h2 style="text-align: left;">Medical Jargon: Your 2026 Guide to Clinical Health Literacy</h2>
 
   <p>Navigating modern medical information can feel like trying to find your way through a maze of Latin roots and cryptic abbreviations. In my journey as an independent researcher, I’ve found that "feeling overwhelmed" is the most common reason patients stop advocating for themselves. This guide is designed to strip away the mystery and provide you with the resources to speak the language of your clinical team.</p>
 
-  <div class="ah-disclaimer">
+  
     <strong>Medical Disclaimer:</strong> This guide is for educational purposes. Understanding jargon is a tool for communication, not a substitute for professional diagnosis or the advice of your medical partner.
-  </div>
+  
 
   <div style="text-align: center; margin: 30px 0;">
     <img alt="Person thoughtfully focused on a medical document to improve health literacy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNaJHxOtSe4oRcu4pIbP6YgCo0I1toyXGppY82go5pxoS9quFjt2wcCGqRp-mWr0OLAbnyXXRKoVX7PF1UsW8ClUcATE9ZjT8y4XMC5JEWuURxVY_ukgssRgMplptImv9cNHEDVdzYUWXchHVMYrY2vZwNnZFNGsSxibfiX4CNEE7_fmVa1Uh8H4vLVT_q/s16000/Person_Reading_Medical_Report.webp" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
     <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px;">Knowledge is Power: Interpreting your own medical records is the first step in advocacy.</p>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">Why is Medical Language So Confusing?</h2>
     <p>Medical terminology isn't designed to be secretive; it's designed for <strong>precision</strong>. Most terms are rooted in Greek or Latin to ensure that a doctor in Tokyo and a doctor in Missouri mean the exact same thing when they say "Myocardial Infarction."</p>
     <ul>
       <li><strong>Standardization:</strong> Using specific codes ensures your insurance and specialists are on the same page.</li>
       <li><strong>The Evolution Gap:</strong> Medical science moves faster than our everyday vocabulary. Terms like "Systemic Inflammatory Event" or "Metabolic Flexibility" are 2026 concepts that haven't hit the mainstream dictionary yet.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">The Douglas Method for Clinical Literacy</h2>
     <p>When you sit down with your doctor, use these four tactical strategies to stay in control:</p>
-    <div class="ah-accent-card">
+    
       <ol>
         <li><strong>Leverage the Portal:</strong> Request access to your Patient Portal <em>before</em> the follow-up. Read the "Assessment and Plan" section while you are at home and calm.</li>
         <li><strong>Request "Standard English":</strong> If a doctor uses a term like "Etiology," ask: "What is the primary cause in plain English?"</li>
         <li><strong>Record the High-Frequency Terms:</strong> Write down any word ending in "-itis" (inflammation), "-opathy" (disease), or "-osis" (condition).</li>
         <li><strong>The 10-Minute Recap:</strong> At the end of the visit, say: "To ensure I have clinical literacy on my case, can I summarize my understanding back to you?"</li>
       </ol>
-    </div>
-  </div>
+    
+  
 
   
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">2026 High-Frequency Glossary</h2>
     <table class="ah-table-grid">
       <tr class="ah-table-header">
@@ -89,22 +89,22 @@ tags: ['🛡️ Liver & Immune Health', '❤️ Cardiovascular & T2D']
         <td>Heart failure where the heart is "too weak to squeeze" vs. "too stiff to fill."</td>
       </tr>
     </table>
-  </div>
+  
 
   <div class="ah-card" style="border: 2px dashed #0d9488; background: #fdfcfb;">
     <h2 class="ah-title" style="border-bottom: 2px solid #0d9488;">🗣️ The Patient Translation: Advocacy in Action</h2>
     <div class="ah-accent-card" style="margin-top: 15px; background: #fff5f5; border-left-color: #e53e3e;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If a doctor says your symptoms are "atypical" or "psychosomatic," translate that to: <em>"We haven't found the biological trigger yet."</em> In 2026, we look for <strong>Systemic Inflammation</strong> or <strong>Metabolic Lag</strong>. Don't let your symptoms be dismissed as "all in your head."
-    </div>
-  </div>
-  <div class="ah-update-box">
+    
+  
+  
     <h3 class="ah-title" style="color:#f39c12;">🔬 March 2026 Clinical Synthesis: Inflammation & Protein</h3>
     <p>As an advocate, I am tracking two critical shifts in 2026 care standards that you should discuss with your doctor:</p>
     <ul>
       <li><strong>Psoriasis is Systemic:</strong> We no longer treat Psoriasis as a "skin thing." It is a systemic inflammatory event. To manage this, target high-quality protein intake (<strong>1.2–1.6 g/kg</strong>) to support skin turnover without losing muscle mass.</li>
       <li><strong>The Liver/Vascular Link:</strong> If you are managing Cirrhosis or Portal Hypertension, your target systemic blood pressure is now strictly <strong>&lt;130 mmHg</strong>. This protects the delicate vessels in the esophagus and stomach.</li>
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background:#f1f5f9;">
     <h3 class="ah-title">About the Researcher</h3>
@@ -115,7 +115,7 @@ tags: ['🛡️ Liver & Immune Health', '❤️ Cardiovascular & T2D']
       <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/">Brain | 
       <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver
     </p>
-  </div>
+  
 
   <div class="ah-card" style="background:#f1f5f9;">
     <h3 class="ah-title">Trustworthy 2026 Resources</h3>
@@ -124,9 +124,8 @@ tags: ['🛡️ Liver & Immune Health', '❤️ Cardiovascular & T2D']
       <li><strong>MedlinePlus:</strong> Excellent for basic drug and condition summaries.</li>
       <li><strong>The Douglas Daily Glucose Tracker:</strong> <a href="https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing">Track your "Mental Clarity" score here.</li>
     </ul>
-  </div>
+  
 
   <p style="text-align: center; color: #64748b; font-size: 0.9rem;">
     Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
-</div>

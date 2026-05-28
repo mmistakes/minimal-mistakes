@@ -31,7 +31,7 @@ But for hundreds of thousands of individuals—particularly older adults who hav
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Anatomical connection between the liver and lungs in Alpha-1 deficiency]({{ '/assets/images/liver-lung-alpha-1.webp' | relative_url }})
+![Anatomical connection between the liver and lungs in Alpha-1 deficiency](![](/assets/images/liver-lung-alpha-1.webp' | relative_url ))
 *Figure 1: The Core Synthesis Route. While Alpha-1 Antitrypsin protein performs its most vital protective work deep within your lower lung tissue, it is manufactured exclusively inside your liver cells.*
 
 This underlying genetic condition is known as **Alpha-1 Antitrypsin Deficiency (A1AD)**. It is one of the most frequently missed diagnoses in modern pulmonology because its presentation looks completely identical to standard, age-related asthma or Chronic Obstructive Pulmonary Disease (COPD). 
@@ -162,7 +162,7 @@ A genetic diagnosis does not change who you are; it empowers you with the data-d
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Protecting your vital organs requires looking at the body as an interconnected system. To prevent muscle loss (sarcopenia) from throwing off your metabolic balance, prioritize an intake of <strong>1.2 to 1.5 grams of high-quality protein per kilogram of body weight daily</strong>. Furthermore, if you are managing complications like portal hypertension or tracking vascular markers, keep your resting blood pressure held strictly <strong>under 130/80 mmHg</strong> to shelter your delicate vascular networks from excessive pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

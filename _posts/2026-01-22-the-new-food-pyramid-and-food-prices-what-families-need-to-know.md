@@ -144,6 +144,6 @@ When discussing alternative, lower-carbohydrate food pyramids with your family's
 
 <div style="background:#f7fafa; padding:15px; border-left:5px solid #004d40; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Summary:</strong> Protecting your family's metabolic health does not require buying into overpriced health trends or extreme, unsustainable diets. True longevity is achieved by executing the basic biological fundamentals safely on a budget: prioritizing high-quality protein at 1.2 to 1.6 g/kg to insulate lean muscle, eliminating refined industrial starches to defend insulin sensitivity, and maintaining your resting blood pressure tightly <strong>under 130/80 mmHg</strong> to safeguard your vascular piping. Master the basics, control your budget, and protect your family's engine.
-</div>
+
 
 

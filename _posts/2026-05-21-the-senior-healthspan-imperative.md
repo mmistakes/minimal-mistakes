@@ -92,10 +92,10 @@ To protect your brain’s nightly glymphatic waste clearance pathways and safegu
 
 ---
 
-<div class="notice--primary">
+
 <strong>📋 The System-Wide Resilience Audit</strong><br><br>
 Bring these direct, evidence-based talking points to your upcoming annual physical or wellness review to transition your care model toward a longevity-first framework:
-</div>
+
 
 > “Instead of evaluating my health through chronological age averages, can we run advanced biomarker panels—including an hs-CRP inflammation audit—to establish my baseline biological aging rate?”
 
@@ -132,6 +132,6 @@ A persistent, low-grade inflammatory immune state that develops with aging and d
 
 ---
 
-<div class="notice--info">
+
 <strong>🚀 Production Deployment Instructions</strong>
-</div>
+

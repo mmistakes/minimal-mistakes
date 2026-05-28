@@ -231,28 +231,28 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🌱 Senior Lo
 <p>Family history, lifestyle assessment, and regular checkups help identify risks early and guide personalized prevention strategies.</p>
 <h4>10. The future is hopeful.</h4>
 <p>Research is accelerating, uncovering new risk factors and prevention pathways that empower people long before symptoms appear.</p><h2 style="text-align: left;">Is Alzheimer's Inherited? FAQ</h2>
-<div class="faq-section">
-  <div class="faq-item">
+
+  
     <h3 class="faq-question">What is the role of parental lineage in Alzheimer's disease?</h3>
     <p class="faq-answer">The 2023 study found that people whose mothers had memory issues showed higher levels of amyloid beta plaques, a key marker of Alzheimer's. This suggests a stronger genetic influence from the maternal side. Understanding your family history can help you take proactive steps to reduce your risk. If your mother had memory issues, it's essential to discuss your risk with your doctor and consider preventative measures.</p>
-  </div>
-  <div class="faq-item">
+  
+  
     <h3 class="faq-question">How can environmental factors affect dementia risk?</h3>
     <p class="faq-answer">Environmental factors like air quality, neighborhood, and occupational risks can significantly impact dementia risk. Achieving better air quality and addressing these risks can help mitigate the risk of dementia. Simple steps like using air purifiers, avoiding heavily polluted areas, and following safety protocols at work can make a difference. By taking these precautions, you can reduce your exposure to harmful environmental factors.</p>
-  </div>
-  <div class="faq-item">
+  
+  
     <h3 class="faq-question">Can public health interventions reduce dementia incidence?</h3>
     <p class="faq-answer">Yes, public health interventions can be effective in reducing dementia incidence. By targeting environmental factors like air quality and occupational risks, interventions can help mitigate the risk of dementia. This can include initiatives like improving air quality, promoting safe working conditions, and educating the public about dementia risk factors. These efforts can have a significant impact on reducing the incidence of dementia in communities.</p>
-  </div>
-  <div class="faq-item">
+  
+  
     <h3 class="faq-question">Why should I prioritize air quality to reduce dementia risk?</h3>
     <p class="faq-answer">Prioritizing air quality is essential to reduce dementia risk because poor air quality can increase your exposure to harmful pollutants. These pollutants can damage brain cells and contribute to the development of dementia. By taking steps to improve air quality, such as using air purifiers or avoiding polluted areas, you can reduce your risk of dementia. This is especially important for seniors, as they may be more vulnerable to the effects of air pollution.</p>
-  </div>
-  <div class="faq-item">
+  
+  
     <h3 class="faq-question">What are the best ways to mitigate dementia risk?</h3>
     <p class="faq-answer">The best ways to mitigate dementia risk include maintaining a healthy lifestyle, managing chronic conditions, and reducing exposure to environmental risks. This can include regular exercise, a balanced diet, and stress management. Additionally, staying mentally and socially active can help build cognitive reserve and reduce dementia risk. By taking these proactive steps, you can reduce your risk of dementia and promote overall brain health.</p>
-  </div>
-</div>
+  
+
  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -304,7 +304,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🌱 Senior Lo
 <button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
 <ol>
   <li style="text-align: left;">
     <a href="https://www.alz.org/alzheimers-dementia/what-is-alzheimers/causes-and-risk-factors">What Causes Alzheimer's Disease? | Alzheimer's Association
@@ -323,4 +323,4 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🌱 Senior Lo
   <li style="text-align: left;">
     <a href="https://www.medicalnewstoday.com/articles/alzheimers-early-age-at-menopause-late-start-to-hormone-therapy-may-be-a-risk-factor#The-link-between-menopause-and-Alzheimers">Alzheimer's: Early menopause, late start to hormone therapy ups risk (medicalnewstoday.com)
   </li>
-  </ol></div>
+  </ol>

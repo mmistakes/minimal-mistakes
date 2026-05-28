@@ -18,7 +18,7 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
     </tr>
   </tbody>
 </table><br />
-<div>
+
   <h3>What is Hepatic Encephalopathy?</h3>
   <p>HE is a spectrum of brain dysfunction caused by liver failure or portosystemic shunting. Essentially, the liver can no longer filter neurotoxins, allowing them to circulate and impact the central nervous system. This ranges from "covert" (subtle) changes to "overt" (severe) symptoms.</p>
   <h3>Recognizing the Symptoms (Covert vs. Overt)</h3>
@@ -51,8 +51,8 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
     <li><strong>Lactulose:</strong> The first-choice therapy to help the body flush ammonia.</li>
     <li><strong>Rifaximin:</strong> An effective "add-on" medication used to prevent HE from recurring.</li>
   </ul>
-  <div>
-    <div>
+  
+    
       <h1>✅ FAQ: Liver Disease, Brain Fog, and Cognition</h1>
       <h3>1. Can liver inflammation cause brain fog without cirrhosis?</h3>
       <p>Yes. Even early‑stage liver inflammation or fibrosis can impair cognition through inflammatory signaling and toxin accumulation before cirrhosis develops.</p>
@@ -64,10 +64,10 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
       <p>NAFLD promotes systemic inflammation, insulin resistance, and gut dysbiosis, all of which contribute to brain fog and cognitive decline.</p>
       <h3>5. Does treating liver disease improve memory and focus?</h3>
       <p>Clinical evidence shows that improving liver function and reducing inflammation can stabilize or improve cognitive performance in many patients.</p>
-    </div>
-  </div>
-  <div>
-   <div class="clinic-trust-card">
+    
+  
+  
+   
   <h3>About the Researcher</h3>
   <p>
     Tommy T. Douglas is an independent health researcher and patient advocate. 
@@ -84,9 +84,9 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
     <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain |
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver
   </p>
-</div>
 
-<div class="patient sources-box" style="background-color: #e0f2f1; border-left: 4px solid rgb(0, 77, 64); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;"><div class="patient-resources-box">
+
+<div class="patient sources-box" style="background-color: #e0f2f1; border-left: 4px solid rgb(0, 77, 64); border-radius: 12px; margin-top: 2rem; padding-left: 1rem;">
   <h3>📘 Related Patient Resources</h3>
   <p>    <strong>The Log:</strong>
     Start tracking your "Mental Clarity" score with my
@@ -105,7 +105,7 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
     <strong>Liver Health:</strong>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
-      </p></div></div> 
+      </p> 
     <h3><b>Clinical References &amp; Verification</b></h3>
     <blockquote>
       <p><b>Transparency Note:</b> Every article in the <i>Aging Health</i> library is synthesized from peer-reviewed clinical data and cross-referenced with lived experience.</p>
@@ -146,7 +146,7 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
         </tr>
       </tbody>
     </table>
-  </div>
+  
 
   <hr />
 
@@ -192,7 +192,7 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health']
   ]
 }
 </script>
- </div>
+ 
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

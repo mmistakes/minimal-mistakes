@@ -21,41 +21,41 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
 @media (max-width: 600px) { .ah-compare-grid { grid-template-columns: 1fr; } }
 </style>
 
-<div class="ah-container">
+
   <h2 style="text-align: left;">Chest Pain Confusion: GERD, Heart Attacks, and the 2026 Advocacy Protocol</h2>
 
   <p>After my heart attack in 2008, I learned a humbling lesson: once you’ve had a cardiac event, you lose the privilege of "ignoring" chest pain. Every twinge becomes a high-stakes gamble. As an independent researcher and survivor, I know the drill—the frantic drive to the ER, the "GI Cocktail," and the 24-hour observation "just in case." But in 2026, we have the tools to move from <strong>Panic</strong> to <strong>Precision</strong>.</p>
 
-  <div class="ah-disclaimer">
+  
     <strong>⚠️ Emergency Protocol:</strong> If you have a history of heart disease and experience <em>new or worsening</em> chest pain, call 911. Never attempt to "diagnose" yourself at home during an acute event.
-  </div>
+  
 
   <div style="text-align: center; margin: 30px 0;">
     <img alt="Man with painful chest expression and red glow over heart" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqbTk0DD58ofMfSdkUFK_K0tzuhds2AnPB1AGgo3XwX-vSBJAyX-rwe0MvTNban4T98XnfcONqycvOD0BxHCKSz07OqX1MWMZd6_UvZHfj1FZiFkysv8HeH61qLWHalgOXGFxgilWdPGbzxFv1yU1T6xAN691k4EUnqtnptiIBJ2tWrdSL5d8SFW5wiqWK/s16000/Chest_Pain_Confusion.webp" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
     <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px;">The Great Mimic: Acid reflux and cardiac distress share the same nerve pathways.</p>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">Why the Overlap Happens</h2>
     <p>The esophagus and the heart are neighbors. Both are serviced by the <strong>Vagus Nerve</strong>, which can "blur" the signals sent to the brain. This is why an esophageal spasm can feel like a heart attack, and why a "mild" heart attack can be mistaken for indigestion.</p>
     <ul>
       <li><strong>Esophageal Spasm:</strong> Triggered by acid, this can cause a crushing sensation identical to angina.</li>
       <li><strong>Referenced Pain:</strong> Inflammation in the esophagus can radiate to the neck and jaw, mirroring cardiac warning signs.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-update-box">
+  
     <h3 class="ah-title" style="color:#1d4ed8;">🔬 March 2026 Clinical Synthesis: The "LES" Defense</h3>
     <p>Managing GERD isn't just about taking Protonix (pantoprazole). It's about maintaining the <strong>Lower Esophageal Sphincter (LES)</strong>—the muscular gatekeeper of the stomach.</p>
     <ul>
       <li><strong>Protein Target ($1.2\text{--}1.5 \text{ g/kg}$):</strong> Maintaining muscle mass in the diaphragm and the LES is your first mechanical line of defense. Strong muscles keep the acid down.</li>
       <li><strong>Vascular Pressure:</strong> For heart survivors, maintaining a blood pressure of <strong>&lt;130/80 mmHg</strong> reduces the "back-pressure" on the diaphragm, which can help alleviate reflux symptoms.</li>
     </ul>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h3 class="ah-title">🔥 GERD vs. ❤️ Heart Attack: The 2026 Comparison</h3>
-    <div class="ah-compare-grid">
+    
       <div class="ah-card" style="margin:0; border-left: 6px solid #ff6b6b;">
         <h4 style="color:#c0392b;">The "Gerd Attack"</h4>
         <ul style="font-size:0.9rem;">
@@ -64,7 +64,7 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
           <li><strong>Relieved</strong> by antacids or water.</li>
           <li>Includes a sour/bitter taste in the mouth.</li>
         </ul>
-      </div>
+      
       <div class="ah-card" style="margin:0; border-left: 6px solid #1d4ed8;">
         <h4 style="color:#0d47a1;">The "Heart Event"</h4>
         <ul style="font-size:0.9rem;">
@@ -73,9 +73,9 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
           <li>Accompanied by <strong>shortness of breath</strong> or cold sweats.</li>
           <li>Often radiates to the <strong>left arm or jaw</strong>.</li>
         </ul>
-      </div>
-    </div>
-  </div>
+      
+    
+  
 
   <div class="ah-card" style="border: 2px dashed #0d9488; background: #fdfcfb;">
     <h2 class="ah-title" style="border-bottom: 2px solid #0d9488;">🗣️ The Patient Translation: Chest Pain Advocacy</h2>
@@ -104,21 +104,21 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
 
     <div class="ah-accent-card" style="margin-top: 15px; background: #fff5f5; border-left-color: #e53e3e;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If a clinician dismisses your pain as "just gas" without an EKG or blood-work, translate that to: <em>"We are skipping the essential diagnostic screening."</em> Demand a 12-lead EKG to rule out a "Silent MI" (Heart Attack).
-    </div>
-  </div>
-  <div class="ah-card">
+    
+  
+  
     <h2 class="ah-title">Everything You Need to Know: My GERD Gallery</h2>
     <ul>
       <li><a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/">GERD and Sepsis: The Inflammatory Bridge</li>
       <li><a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Using Smart Tech to Monitor HRV and Stress Spikes</li>
       <li><a href="https://www.aginghealth.website/posts/what-is-a-gastroenterologist/">When to See a Gastroenterologist</li>
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background:#f1f5f9;">
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical data into actionable health literacy for seniors.</p>
-  </div>
+  
 
   <div class="ah-card" style="background:#f1f5f9;">
     <h3 class="ah-title">Sources and Clinical Resources</h3>
@@ -127,9 +127,8 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', '⚖️ P
       <li><strong>Cleveland Clinic:</strong> Distinguishing GERD from Cardiac Angina.</li>
       <li><strong>Mayo Clinic:</strong> Complications of Chronic Acid Reflux.</li>
     </ul>
-  </div>
+  
 
   <p style="text-align: center; color: #64748b; font-size: 0.9rem;">
     Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
-</div>

@@ -27,7 +27,7 @@ As contemporary medicine successfully extends biological lifespans, the reality 
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Senior couple using a tablet on a porch]({{ '/assets/images/senior-couple-tablet-digital-loving-moment.webp' | relative_url }})
+![Senior couple using a tablet on a porch](![](/assets/images/senior-couple-tablet-digital-loving-moment.webp' | relative_url ))
 *Figure 1: Connected Care. Integrating targeted digital literacy with daily emotional boundaries allows spousal care partners to access virtual clinical support without leaving home.*
 
 The relentless rise of complex, overlapping conditions like heart failure, chronic obstructive pulmonary disease (COPD), and progressive dementias has created a vast, quiet cohort of **"hidden patients."** These are senior caregivers who manage highly complex medication schedules, transport a partner to frequent specialist check-ups, and handle intensive physical transfers, all while ignoring their own age-related physical declines. 
@@ -156,7 +156,7 @@ Protecting your household asset tree from being entirely depleted by long-term c
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Protecting your vital organs requires looking at the body as an interconnected system. To prevent muscle loss (sarcopenia) from throwing off your metabolic balance during periods of high caregiving stress, prioritize an intake of <strong>1.2 to 1.5 grams of high-quality protein per kilogram of body weight daily</strong>. Furthermore, if you are managing complications like portal hypertension or tracking vascular markers, keep your resting blood pressure held strictly <strong>under 130/80 mmHg</strong> to shelter your delicate vascular networks from excessive pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

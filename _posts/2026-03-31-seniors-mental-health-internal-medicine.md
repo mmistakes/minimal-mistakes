@@ -89,4 +89,3 @@ An active senior managing both long-standing heart disease and Type 2 Diabetes b
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Guidance:</strong> If you or a loved one are experiencing unexplained drops in daily energy, changes in sleep architecture, or new mental fog, do not dismiss it as 'just getting old.' Arrive at your next appointment with a complete printout of your current medication list and request a full metabolic panel to check your thyroid and B12 baselines. Protecting your mental health begins by treating your physical engine with precision.
-</div>

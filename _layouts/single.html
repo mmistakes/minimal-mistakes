@@ -32,34 +32,31 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title -%}
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
-          </h1>
+  <h1 id="page-title" class="page__title p-name" itemprop="headline">
+  <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+  </h1>
           {%- endif %}
           {% include page__meta.html locale=locale %}
         </header>
       {% endunless %}
 
-      <section class="page__content e-content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[locale].toc_label | default: "On this page" }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-            </nav>
-          </aside>
-        {% endif %}
-        {{ content }}
-        {% if page.show_glossary_link %}
-        {% include glossary-link.html %}
-        d{% endif %}
-        <div class="post-content">
-</div>
-
-<!-- This auto-adds the glossary to every post -->
-{% include glossary.md %}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[locale].ext_link_label | default: "Direct Link" }}</div>{% endif %}
-      </section>
+     <section class="page__content e-content" itemprop="text">
+  {% if page.toc %}
+    <!-- ... (keep your TOC aside code here) ... -->
+  {% endif %}
+  
+  {{ content }}
+  
+  {% if page.show_glossary_link %}
+    {% include glossary-link.html %}
+  {% endif %}
+  
+  {% include glossary.md %}
+  
+  {% if page.link %}
+    <div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[locale].ext_link_label | default: "Direct Link" }}</a></div>
+  {% endif %}
+</section>
 
       <footer class="page__meta">
         {% if site.data.ui-text[locale].meta_label %}

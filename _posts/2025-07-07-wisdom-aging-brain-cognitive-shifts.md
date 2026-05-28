@@ -28,7 +28,7 @@ While certain cognitive parameters undeniably shift as the decades advance, this
 > **⚠️ Medical Disclaimer:** This material reflects updated 2026 cognitive neurology data and neuroplasticity studies. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![An older man smiling thoughtfully symbolizing wisdom]({{ '/assets/images/portrait-older-man-glow-head-symbolize-wisdom.webp' | relative_url }})
+![An older man smiling thoughtfully symbolizing wisdom](![](/assets/images/portrait-older-man-glow-head-symbolize-wisdom.webp' | relative_url ))
 *Figure 1: The Matrix of Experience. As we age, the continuous accumulation of diverse world knowledge shifts our primary thinking patterns away from rapid abstract computation and toward highly sophisticated 'Crystallized Intelligence' structures.*
 
 ---
@@ -83,7 +83,7 @@ Understanding that the brain continuously re-wires its pathways allows us to tak
 
 ---
 
-![Image outlining the lifestyle elements that maximize cognitive reserve: education, microvascular protection, movement, and social density]({{ '/assets/images/maximize-cognitive-reserve.webp'| relative_url }})
+![Image outlining the lifestyle elements that maximize cognitive reserve: education, microvascular protection, movement, and social density](![](/assets/images/maximize-cognitive-reserve.webp'| relative_url ))
 
 ---
 
@@ -136,7 +136,7 @@ Implement these four science-backed strategies to fortify your cognitive reserve
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

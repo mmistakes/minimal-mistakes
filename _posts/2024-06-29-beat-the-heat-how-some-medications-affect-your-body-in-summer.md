@@ -16,7 +16,7 @@ tags: ['🧬 Clinical Research', '🧠 Cognitive Health', '❤️ Cardiovascular
   <li>Some medications can cause photosensitivity, which makes sunburn happen faster and feel more severe (common examples include doxycycline, ciprofloxacin, sulfa drugs, and some acne retinoids).</li>
   <li>Heat exhaustion can become heatstroke, <a href="https://www.aginghealth.website/posts/heartburn-vs-heart-attack-know-the-warning-signs/" rel="dofollow" title="Heartburn Vs Heart Attack Know The Warning Signs"><b>watch for warning signs like</b> dizziness, heavy sweating, nausea, weakness, and confusion, get to a cooler place and seek emergency help if severe.</li>
   <li>People taking these medications should plan for heat safety, stay hydrated, avoid peak heat, use shade and light clothing, protect skin with SPF 30+ sunscreen, and talk with a clinician before changing any dose.</li>
-</ul><h2 style="text-align: left;">Very Important Disclaimer:&nbsp;&nbsp;</h2><div>Do not discontinue the use of any prescribed medications without first consulting a qualified healthcare provider.</div>
+</ul><h2 style="text-align: left;">Very Important Disclaimer:&nbsp;&nbsp;</h2>Do not discontinue the use of any prescribed medications without first consulting a qualified healthcare provider.
 <h2>Understanding Heat-Related Illnesses</h2>
 <p>Heat-related illnesses like heat <a href="https://www.aginghealth.website/posts/heatstroke-prevention-summer-safety/" rel="dofollow" title="Understanding Heatstroke, Prevention Tips, and How to Stay Safe"><b>exhaustion and heatstroke</b> happen when the body can't cool itself properly, and they can become serious fast without prompt care. Heat exhaustion can cause moist skin, dizziness, headaches, muscle cramps, extreme thirst, heavy sweating, dehydration, fainting, nausea, vomiting, and weakness. </p>
 <p>It usually develops after long exposure to high temperatures, especially with physical activity, and can progress to heatstroke if untreated. Heatstroke is more severe, triggered by prolonged heat or intense exertion, and can damage the brain, heart, kidneys, and muscles. </p>
@@ -138,7 +138,7 @@ tags: ['🧬 Clinical Research', '🧠 Cognitive Health', '❤️ Cardiovascular
 <button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
 <ol>
 
 <ol>
@@ -149,7 +149,7 @@ tags: ['🧬 Clinical Research', '🧠 Cognitive Health', '❤️ Cardiovascular
   <li>
     "The Sun and Your Medicine | FDA". Www.Fda.Gov, 2025, <a href="https://www.fda.gov/drugs/special-features/sun-and-your-medicine">https://www.fda.gov/drugs/special-features/sun-and-your-medicine. Accessed 26 Dec 2025.
   </li><li>"Written by Colette Bouchez. Sun-Sensitizing Drugs". Www.Webmd.Com, 2025, <a href="https://www.webmd.com/skin-problems-and-treatments/sun-sensitizing-drugs">https://www.webmd.com/skin-problems-and-treatments/sun-sensitizing-drugs. Accessed 26 Dec 2025.</li><li>"Is Your Medication Making You Sun-Sensitive?". Svmc.Org, 2025, <a href="https://svmc.org/news-events/article/your-medication-making-you-sun-sensitive.">https://svmc.org/news-events/article/your-medication-making-you-sun-sensitive. Accessed 26 Dec 2025.</li>
-</ol></ol></div><p></p>
+</ol></ol><p></p>
                     <br><div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Psoriasis is now managed as a systemic inflammatory event. Clinical targets emphasize metabolic support with high-quality protein (<strong>1.2-1.6 g/kg</strong>) to maintain skin cell turnover and lean muscle mass.
-                    </div>
+                    

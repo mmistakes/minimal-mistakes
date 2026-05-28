@@ -29,7 +29,7 @@ This guide breaks down the essential emergency equipment, medication tracking sa
 > **⚠️ Medical Disclaimer:** This material reflects updated 2026 Federal Emergency Management Agency (FEMA) directives and National Institute on Aging (NIA) safety parameters. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Family packing a structured emergency go-bag together]![Family packing a structured emergency go-bag together]({{ '/assets/images/emergency-prepared-family.webp' | relative_url }})
+![Family packing a structured emergency go-bag together]![Family packing a structured emergency go-bag together](![](/assets/images/emergency-prepared-family.webp' | relative_url ))
 *Figure 1: Proactive Security. Do not wait for an active environmental alert to organize your resources. Building a multi-tier emergency kit provides immediate safety, stability, and absolute peace of mind.*
 
 ---
@@ -58,7 +58,7 @@ Flooding represents the most common and widely distributed natural hazard on the
 
 ---
 
-[Image diagram detailing flood water levels and the minimum depths required to sweep away pedestrians versus standard passenger vehicles]({{ '/assets/images/turn-around-dont-drown.webp'| relative_url }})
+[Image diagram detailing flood water levels and the minimum depths required to sweep away pedestrians versus standard passenger vehicles](![](/assets/images/turn-around-dont-drown.webp'| relative_url ))
 
 ---
 
@@ -110,7 +110,7 @@ During widespread regional emergencies, localized cellular networks quickly beco
 
 ---
 
-![Image outlining an emergency communication flow chart routing through a central out-of-state contact]({{ '/assets/images/emergency-communication-plan.webp'| relative_url }})
+![Image outlining an emergency communication flow chart routing through a central out-of-state contact](![](/assets/images/emergency-communication-plan.webp'| relative_url ))
 
 ---
 
@@ -136,7 +136,7 @@ Older adults face sharply elevated physiological and systemic risks during natur
 
 ---
 
-![Image checklist highlighting specific senior needs: medication timelines, alternative refrigeration, and mobility aid staging]({{ '/assets/images/seniors-needs-emergency-checklist.webp'| relative_url }})
+![Image checklist highlighting specific senior needs: medication timelines, alternative refrigeration, and mobility aid staging](![](/assets/images/seniors-needs-emergency-checklist.webp'| relative_url ))
 
 ---
 If you are an independent senior or managing care for an aging spouse, apply these explicit directives:
@@ -201,7 +201,7 @@ Seniors using power-dependent devices (like oxygen concentrators or nebulizers) 
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -26,9 +26,9 @@ Understanding this distinction shifts how we track metabolic data, allowing pati
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not substitute for professional medical advice, diagnosis, or clinical treatment plans. Always consult your board-certified cardiologist or lipid specialist before modifying your medical or lifestyle protocol.
 {.prompt-warning}
 
-<div class="notice--info">
+
 <strong>The Transit Analogy:</strong> Traditional LDL-C testing is like weighing a fleet of cargo trucks to guess how many there are on the highway. ApoB testing is like counting the actual number of trucks on the road. Because a truck can crash into the arterial wall regardless of whether it is completely full or half-empty, the total physical vehicle count is what dictates your true risk.
-</div>
+
 
 ---
 
@@ -131,7 +131,7 @@ Bring these data-driven target questions to your upcoming physical or specialize
 
 <div style="background:#f4f7f9; padding:25px; border-left:5px solid #004d40; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Guidance:</strong> True vascular preservation is not built on speculative lifestyle fads; it is won by managing the mechanical fundamentals of circulation. To protect your cognitive reserve and defend your vascular pipelines, maintain your resting systemic blood pressure target tightly <strong>under 130/80 mmHg</strong>. Pair this with a dedicated intake of 1.2 to 1.6 g/kg of complete protein to fight muscle loss, and use precise biomarker tracking to keep your ApoB particles low. Count your particles, optimize your numbers, and protect your engine.
-</div>
+
 
 <script type="application/ld+json">
 {

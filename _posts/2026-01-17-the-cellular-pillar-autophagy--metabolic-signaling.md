@@ -26,7 +26,7 @@ By actively leveraging the interactions between **AMPK** activation, **NAD**⁺/
 ---
 
 ![Infographic-style illustration showing autophagy and metabolic health with DNA, mitochondria, and cellular renewal symbols.}
-({{ '/assets/images/autophagy-metabolic-health.webp' | relative_url }})
+(![](/assets/images/autophagy-metabolic-health.webp' | relative_url ))
 _Figure 1: Longevity Signaling Networks. Cellular rejuvenation operates as an active, mechanical process driven by nutrient availability, mitochondrial optimization, and continuous waste clearance pathways._
 
 ---

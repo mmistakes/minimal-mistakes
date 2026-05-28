@@ -17,7 +17,7 @@ For nearly thirty years, seniors diagnosed with advanced liver disease (cirrhosi
 
 The underlying logic seemed entirely sound at the time. The liver is the primary organ responsible for processing protein. Medical theory dictated that if the liver was scarred and damaged, doctors should lessen its daily workload by asking the body to digest far less protein. We were told to "rest the liver."
 
-![Liver and Muscle Health]({{ '/assets/images/2026-updates.webp' | relative_url }})
+![Liver and Muscle Health](![](/assets/images/2026-updates.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Shifting the Clinical Paradigm. Modern hepatology guidelines demonstrate that resting the liver by restricting protein is an obsolete strategy. The modern focus centers on muscle preservation and metabolic support._
 

@@ -1,4 +1,8 @@
 ---
+layout: single
+title: "---"
+---
+---
 title: "Planning for Resilience: Top Ten Long-Term Care Tips for 2026"
 date: 2026-05-05 20:42:00 -0600
 categories: [senior-advocacy, Long-Term Care]
@@ -19,7 +23,7 @@ For independent researchers and advocates, the NIA provides the evidence-based b
 
 ---
 
-![An elderly man in a wheelchair, illustrating the importance of proactive care planning.]({{ '/assets/images/elderly-waiting.webp' | relative_url }})  
+![An elderly man in a wheelchair, illustrating the importance of proactive care planning.](![](/assets/images/elderly-waiting.webp' | relative_url ))  
 **Figure 1** The presence of an elderly man in a wheelchair in a room serves as a poignant reminder of the critical importance of extended care. This powerful image underscores the need for ongoing support and assistance for those who can no longer fully care for themselves.
 
 ---
@@ -91,21 +95,21 @@ Routine screenings and managing chronic conditions (like Type 2 Diabetes) reduce
 ## 🧭 Decision Tree: Choosing the Right Care
 
 <section class="clinic-tree" id="ltc-decision-tree">
-  <div class="tree-step">
+  
     ###1. Need help with daily activities (ADLs)?
     <p>**Yes:</strong> Consider home-care aides or assisted living.</p>
     <p>**No:</strong> Explore community-based wellness programs.</p>
-  </div>
-  <div class="tree-step">
+  
+  
     ###2. Need 24-hour medical monitoring?
     <p>**Yes:</strong> Skilled Nursing Facility (SNF) or Long-Term Acute Care.</p>
     <p>**No:</strong> Assisted Living or Home Health Care.</p>
-  </div>
-  <div class="tree-step">
+  
+  
     ###3. Cognitive decline affecting safety?
     <p>**Yes:</strong> Memory Care with secure perimeters.</p>
     <p>**No:</strong> Continue with standard aging-in-place supports.</p>
-  </div>
+  
 </section>
 
 <style>

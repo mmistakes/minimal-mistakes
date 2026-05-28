@@ -108,7 +108,7 @@ A 72-year-old woman mentioned small memory lapses during a checkup. Her clinicia
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (1.2-1.5 g/kg) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <130/80 mmHg.
-</div>
+
 
 <script type="application/ld+json">
 {

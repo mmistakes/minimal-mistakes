@@ -193,7 +193,7 @@ tags: ['💪 Functional Fitness', '❤️ Cardiovascular & T2D', '🛡️ Liver 
 <p><strong>Q: If I've had Chikungunya once, can I get it again?</strong> <strong>A:</strong> Current research suggests that a single <a href="https://www.aginghealth.website/posts/infection-vs-inflammation-guide/" rel="dofollow" title="Infection Vs Inflammation Guide"><b>infection with Chikungunya</b> likely provides <strong>lifelong immunity</strong>. However, you can still contract Dengue (which has four different strains) or Zika, as the antibodies do not cross-protect against different viruses.</p>
 <p><strong>Q: Is "Microcephaly" still the only concern with Zika in 2026?</strong>&nbsp;</p><p><strong>A:</strong> While pregnancy remains the highest risk, 2026 data show a stronger correlation between Zika and <strong>Guillain-Barré Syndrome (GBS)</strong> in adults-a rare <a href="https://www.aginghealth.website/posts/mind-over-matter-brain-immune-system/" rel="dofollow" title="Mind Over Matter: Brain's Control Over the Immune System | AGING HEALTH"><b>condition where the immune system attacks</b> the nerves. If you experience tingling or weakness in your legs following a mosquito-related illness, <a href="https://www.aginghealth.website/posts/medical-debt/" rel="dofollow" title="Medical Debt"><b>seek medical attention immediately</b>.</p><div style="background-color: #fdfdfd; border-top: 3px solid rgb(0, 77, 64); color: #444444; font-size: 1.1rem; margin-top: 20px;"><button onclick="document.body.classList.toggle('audit-mode')">Toggle Sources
 </button>
-<div class="sources-block">
+
   <b>Sources:</b>
   <ol>
 
@@ -205,7 +205,7 @@ tags: ['💪 Functional Fitness', '❤️ Cardiovascular & T2D', '🛡️ Liver 
   </li>
   <li style="text-align: left;">Yale Climate Change Communication: <a href="https://climatecommunication.yale.edu/">https://climatecommunication.yale.edu/
   </li>
-  </ol></div>
+  </ol>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -234,4 +234,4 @@ tags: ['💪 Functional Fitness', '❤️ Cardiovascular & T2D', '🛡️ Liver 
     "@id": "https://www.aginghealth.website/posts/dengue-fever-climate-change-spread-prevention/"
   }
 }
-</script></div></div></div></div></div></div></div></div></div></div>
+</script>

@@ -22,7 +22,7 @@ As someone who recently hit a seven-year "quit-anniversary," I can tell you that
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Illustration of the burden of nicotine addiction on health]({{ '/assets/images/the-smoker.webp' | relative_url }})
+![Illustration of the burden of nicotine addiction on health](![](/assets/images/the-smoker.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Nicotine addiction acts as a systemic chemical trigger, keeping the immune system in a state of high alert and worsening plaque symptoms._
 

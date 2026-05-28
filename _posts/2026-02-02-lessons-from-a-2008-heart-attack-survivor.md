@@ -20,7 +20,7 @@ In 2008, my life changed forever when I suffered a heart attack. I had to learn 
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Heart attack symptoms and chest pain illustration]({{ '/assets/images/heart-chest-pain.webp' | relative_url }})
+![Heart attack symptoms and chest pain illustration](![](/assets/images/heart-chest-pain.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** The cardiac event I survived in 2008 is commonly referred to in clinical settings as a 'Widow Maker' heart attack._
 

@@ -11,7 +11,7 @@ tags: ["Clinical Research", "Immune Health", "Functional Fitness", "Genetics"]
   <h2 style="color: #003333; margin-top: 0px;">Living Research: My 4-Year Psoriasis Journey</h2>
   <p>I don't just study psoriasis; I live it. For over four years, I have managed flare-ups primarily on my feet and legs. Recently, my journey took a turn as I began developing symptoms of <b>Psoriatic Arthritis</b>—a challenging progression where the immune system moves from the skin to the joints.</p>
   <p><b>The Cost of Care:</b> Two years ago, when my insurance stopped covering Humira, I turned to <b>AbbVie Assist</b>. Without manufacturer patient assistance, the biologic therapy that keeps my symptoms stable would be inaccessible. This guide combines personal advocacy with clinical data to help you navigate both the physical and financial hurdles of this condition.</p>
-</div>
+
 
 ![Close-up of plaque psoriasis on a patient's elbow, illustrating silvery scales and inflammation.](/assets/images/psoriasis-elbow.webp)
 *Figure 1: Psoriasis is a systemic autoimmune disorder; early detection and intervention are essential for preventing joint damage.*

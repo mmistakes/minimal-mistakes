@@ -26,7 +26,7 @@ The physical journey through our later years is a testament to lifetime resilien
 > **⚠️ Medical Disclaimer:** This material reflects current 2026 emergency medicine datasets and clinical trial registries. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 ---
 
-![AI-driven sepsis alert system monitoring a patient]({{ '/assets/images/ai-early-sepsis-alert-system.webp' | relative_url }})
+![AI-driven sepsis alert system monitoring a patient](![](/assets/images/ai-early-sepsis-alert-system.webp' | relative_url ))
 
 *Figure 1: Predictive Surveillance. Real-time clinical algorithms evaluate dozens of shifting Electronic Health Record (EHR) variables simultaneously, catching hidden infection patterns long before human observation registers a physical change.*
 
@@ -181,7 +181,7 @@ Yes. Risks can be substantially lowered by maintaining strict adherence to the C
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -26,7 +26,7 @@ When your immune system is persistently hyper-activated, it fundamentally alters
 ⚠️ **Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not substitute for professional medical advice, diagnosis, or targeted clinical treatment plans. Always consult your board-certified physician or specialist before making modifications to your care structure or lifestyle protocols.  
 {.prompt-warning}
 
-![Psoriasis Pathomechanisms Infographic.*} ({{ '/assets/images/psoriasis-pathomechanisms.webp' | relative_url }})
+![Psoriasis Pathomechanisms Infographic.*} (![](/assets/images/psoriasis-pathomechanisms.webp' | relative_url ))
 
 _The pathomechanism of psoriasis reveals how overactive T-cells and circulating cytokines jump directly from dermal tissue beds into the deep vascular network, altering endocrine homeostasis._
 

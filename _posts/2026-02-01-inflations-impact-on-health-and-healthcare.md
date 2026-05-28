@@ -22,7 +22,7 @@ Navigating the current economic landscape requires a proactive, deliberate shift
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![An older individual managing household bills next to pill bottles]({{ '/assets/images/inflation-healthcare.webp' | relative_url }})
+![An older individual managing household bills next to pill bottles](![](/assets/images/inflation-healthcare.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Healthcare advocacy demands that patients work collaboratively with clinicians to manage the critical intersection of medical necessity and fixed financial boundaries._
 

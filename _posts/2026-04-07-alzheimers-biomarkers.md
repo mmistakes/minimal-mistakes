@@ -98,4 +98,3 @@ Take these direct, evidence-based questions to your next primary care or neurolo
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Alert:</strong> If your local healthcare provider is still relying exclusively on paper-based cognitive memory tests to evaluate your long-term brain health, present this automated biomarker data directly. Catching changes inside the proactive 3-to-4-year molecular window allows you to take control of your functional longevity before structural tissue damage occurs.
-</div>

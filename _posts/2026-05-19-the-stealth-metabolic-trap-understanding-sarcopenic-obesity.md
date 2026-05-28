@@ -128,4 +128,4 @@ Monitor changes in your waist-to-hip ratio and functional strength levels. If yo
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Clinical Strategy Note:</strong> When managing sarcopenic obesity, completely ignore the scale for the first 90 days of your protocol. Focus entirely on tracking incremental gains in your functional physical strength, your systemic energy levels, and your overall waist-to-hip measurements.
-</div>
+

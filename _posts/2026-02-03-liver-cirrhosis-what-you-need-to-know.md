@@ -24,7 +24,7 @@ Managing decompensated liver cirrhosis is a full-time job for both the body and 
 > **Medical Disclaimer:** This content is for informational purposes only. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Medical illustration showing cirrhosis scarring on a human liver]({{ '/assets/images/liver-cirrhosis.webp' | relative_url }})
+![Medical illustration showing cirrhosis scarring on a human liver](![](/assets/images/liver-cirrhosis.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Cirrhosis is characterized by severe, irreversible fibrotic scarring that directly impairs systemic metabolic processing and blood filtration._
 

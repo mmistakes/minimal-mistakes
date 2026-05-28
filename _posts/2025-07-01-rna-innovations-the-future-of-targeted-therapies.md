@@ -21,7 +21,7 @@ Together, these innovations deepen our understanding of disease mechanisms, acce
 ---
 <div style="background:#fafafa; border:1px solid #ddd; font-size:15px; margin:16px 0; padding:12px;">
   <strong>Medical Disclaimer:</strong> This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
-</div>
+
 
 ---
 
@@ -161,7 +161,7 @@ Yes, approved RNA-based treatments undergo rigorous clinical trials and have dem
     <li>Teng M, Xia ZJ, Lo N, et al. Assembling the RNA therapeutics toolbox. <i>Med Rev (2021)</i>. 2024;4(2):110-128. doi:10.1515/mr-2023-0062</li>
     <li>Shahid Z, Simpson B, Miao KH, et al. Genetics, Histone Code. In: <i>StatPearls [Internet]</i>. Treasure Island (FL): StatPearls Publishing; 2025. Available from: https://www.ncbi.nlm.nih.gov/books/NBK538477/</li>
   </ol>
-</div>
+
 
 <script>
 function toggleReferences() {

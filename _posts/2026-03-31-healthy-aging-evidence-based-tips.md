@@ -102,7 +102,7 @@ This success mirrors modern clinical trial insights: **passive restriction accel
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Clinical Update:</strong> For advanced longevity and liver health management, consensus guidelines suggest aiming for a clean protein target of 1.2 to 1.5 grams per kilogram of body weight daily to counter age-related anabolic resistance. Additionally, to protect cerebrovascular framework integrity and minimize portal pressure variations, maintain a strict resting systemic blood pressure baseline of under 130/80 mmHg.
-</div>
+
 
 <script type="application/ld+json">
 {

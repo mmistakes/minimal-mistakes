@@ -80,7 +80,7 @@ Currently, there is no cure for Celiac disease; however, the only effective trea
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">  
 <strong>March 2026 Clinical Update:</strong> Current liver health advocacy highlights the importance of high protein intake (1.2-1.5 g/kg) to prevent muscle loss (sarcopenia). For individuals with Celiac disease, proper healing of the intestine is essential to ensure that this protein is absorbed and used effectively for metabolic stability.  
-</div>  
+  
 
 <script type="application/ld+json">  
 {  

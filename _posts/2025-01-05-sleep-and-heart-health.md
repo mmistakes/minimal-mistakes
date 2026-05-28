@@ -91,4 +91,4 @@ Making sleep a top priority is crucial for lowering the chances of developing ca
 
 <div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
 **March 2026 Clinical Update:** Psoriasis is now managed as a systemic inflammatory event. Clinical targets emphasize metabolic support with high-quality protein (**1.2-1.6 g/kg**) to maintain skin cell turnover and lean muscle mass.
-</div>
+

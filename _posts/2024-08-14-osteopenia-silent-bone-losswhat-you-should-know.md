@@ -121,12 +121,12 @@ Understanding osteopenia is crucial for maintaining bone health and preventing m
   <li><strong>Lifestyle modifications are essential:</strong> Incorporating weight-bearing exercise, a <a href="https://www.aginghealth.website/posts/the-carnivore-diet-what-is-it-and-how/" rel="dofollow" title="The Carnivore Diet What Is It And How"><b>balanced diet rich in calcium and vitamin</b> D, and avoiding harmful habits like smoking can significantly impact bone health.</li>
   <li><strong>Medical management is available:</strong> In some cases, medications may be necessary to slow down bone loss and increase bone density.</li>
   <li><strong>Prevention starts young:</strong> <a href="https://www.aginghealth.website/posts/build-strong-bones/" rel="dofollow" title="Build Strong Bones"><b>Building strong bones during childhood and adolescence</b> lays the foundation for lifelong bone health.</li>
-</ul>Remember, osteopenia is not a life sentence. By working closely with your healthcare provider and adopting a proactive approach, you can effectively manage this condition and reduce your risk of fractures.Take control of your bone health today. Make informed decisions about your lifestyle, nutrition, and medical care. Your bones are the framework that supports your entire body - treat them with the care they deserve.<div><br /></div><div>As a personal note, I recently learned that my wife, at the age of 70, has been diagnosed with osteopenia. This experience has highlighted the importance of understanding this condition and taking steps to manage it. It's a journey we're embarking on together, and I'm grateful for the <a href="https://www.aginghealth.website/posts/us-healthcare/" rel="dofollow" title="Us Healthcare"><b>information and support available to help us</b> navigate this path. <br /><br />
+</ul>Remember, osteopenia is not a life sentence. By working closely with your healthcare provider and adopting a proactive approach, you can effectively manage this condition and reduce your risk of fractures.Take control of your bone health today. Make informed decisions about your lifestyle, nutrition, and medical care. Your bones are the framework that supports your entire body - treat them with the care they deserve.<br />As a personal note, I recently learned that my wife, at the age of 70, has been diagnosed with osteopenia. This experience has highlighted the importance of understanding this condition and taking steps to manage it. It's a journey we're embarking on together, and I'm grateful for the <a href="https://www.aginghealth.website/posts/us-healthcare/" rel="dofollow" title="Us Healthcare"><b>information and support available to help us</b> navigate this path. <br /><br />
 <!--Toggle Button-->
 <button onclick="document.body.classList.toggle('audit-mode')" style="margin: 0.5em 0px; padding: 0.3em 0.6em;">
   Toggle Sources
 </button>
-<div class="sources-block">
+
   <b>Sources:</b>
   <ul>
    
@@ -153,6 +153,5 @@ Understanding osteopenia is crucial for maintaining bone health and preventing m
   </li>
 
   </ul>
-</div>
 
-</div>
+

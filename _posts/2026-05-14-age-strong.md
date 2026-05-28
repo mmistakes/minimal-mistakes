@@ -12,7 +12,7 @@ excerpt: "Building muscle as we age is not just a physical challenge—it’s a 
 
 ---
 
-![Senior male at gym being guided in resistance training.] ({{ '/assets/images/older-adult-performing-resistance-training.webp' | relative_url }})  
+![Senior male at gym being guided in resistance training.] (![](/assets/images/older-adult-performing-resistance-training.webp' | relative_url ))  
 *Caption: Resistance training supports both physical strength and psychological resilience across all stages of aging.*
 
 ---

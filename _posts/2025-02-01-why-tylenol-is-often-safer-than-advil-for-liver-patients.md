@@ -82,7 +82,7 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🛡️ Liver & Im
   </li>
   <li>
     <p><strong>The Interval Matters:</strong> Instead of taking 1,000mg at once, take 500mg more frequently. This prevents "spiking" the levels in your blood.</p></li><li><p><b>Acetaminophen</b> is generally the preferred pain <a href="https://www.aginghealth.website/posts/the-fart-why-do-people-pass-gas/" rel="dofollow" title="The Fart Why Do People Pass Gas"><b>reliever for people</b> with cirrhosis when used at low-dose, short‑term, and under clinical guidance.</p></li><li><b>Safe use depends on monitored intake</b>, staying within a recommended dose, and respecting the therapeutic window and safe threshold set by a clinician.</li><li><b>Risk increases with hepatotoxicity</b>, overdose, chronic use, or impaired metabolism caused by advanced liver disease.</li><li><b>Exceeding limits can lead to liver failure,</b> toxic accumulation, cirrhosis complications, a narrow margin for error, and enzyme depletion.</li><li><b>Always follow physician‑approved plans </b>and avoid self‑medication, <a href="https://www.aginghealth.website/posts/multiple-sclerosis-symptoms-diagnosis-treatment/" rel="dofollow" title="Multiple Sclerosis Symptoms Diagnosis Treatment"><b>especially with multiple</b> products containing acetaminophen.</li></ol><p style="text-align: left;"></p><ol>
-</ol><div></div>
+</ol>
 <h2>Glossary of Terms</h2>
 <ul>
   <li>
@@ -138,7 +138,7 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🛡️ Liver & Im
 <button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
 
 <ol>
   <li>
@@ -152,7 +152,7 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🛡️ Liver & Im
   </li>
   <li>
     <p><span style="font-family: inherit;"><b>"Lenz, P. Hepatology Clinical". </b>Onlinelibrary.Wiley.Com, 2025, https://onlinelibrary.wiley.com/doi/10.1111/jgh.16700?msockid=3410d2858e4a620e0597c4478f1d63c2. Accessed 30 Dec 2025.</span></p></li><li><p><span style="font-family: inherit;"><span style="background-color: white; color: #1b1b1b;">Thomson, Mary J et al. “Optimizing medication management for patients with cirrhosis: Evidence-based strategies and their outcomes.”&nbsp;</span><i style="background-color: white; box-sizing: inherit; color: #1b1b1b; font-size-adjust: inherit;">Liver international : official journal of the International Association for the Study of the Liver</i><span style="background-color: white; color: #1b1b1b;">&nbsp;vol. 38,11 (2018): 1882-1890. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6202194/">doi:10.1111/liv.13892</span></span></p></li>
-  </ol></div>
+  </ol>
 
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -171,4 +171,4 @@ tags: ['⚖️ Patient Advocacy', '💪 Functional Fitness', '🛡️ Liver & Im
 }</script>
                     <br><div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
                     <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong><130/80 mmHg</strong>.
-                    </div>
+                    

@@ -1,4 +1,8 @@
 ---
+layout: single
+title: "---"
+---
+---
 title: "Navigating Medicare in 2026: A Senior’s Guide to Coverage & Advocacy"
 date: 2026-05-04 11:00:00 -0600
 categories: [Health Literacy, senior-advocacy]

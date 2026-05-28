@@ -71,62 +71,62 @@ Probiotic-rich foods like yogurt, kefir, kimchi, sauerkraut, miso, and kombucha 
 <!-- 🔵 Aging Health — Clinic-Style Explainer Card: Gut-Brain Communication -->
 <div class="ah-card ah-blue-trust" itemscope itemtype="https://schema.org/CreativeWork">
 
-  <div class="ah-card-header">
+  
     <span class="ah-icon">🔵</span>
     <h3 itemprop="headline">How the Gut Talks to the Brain</h3>
-  </div>
+  
 
-  <div class="ah-card-body">
+  
 
     <!-- Vagus Nerve -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🧠</span> The Vagus Nerve: The Body’s Information Highway
-      </div>
+      
       <p>
         The vagus nerve carries real‑time updates from the gut to the brain — including signals about inflammation, stress, fullness, and discomfort. About 80% of vagus nerve traffic flows <em>from the gut upward</em>, not the other way around.
       </p>
-    </div>
+    
 
     <!-- Neurotransmitters -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">⚡</span> Neurotransmitters Made in the Gut
-      </div>
+      
       <p>
         Gut bacteria help produce neurotransmitters like serotonin, dopamine, and GABA. These chemicals influence mood, stress tolerance, sleep, and cognitive clarity.
       </p>
-    </div>
+    
 
     <!-- Immune Signals -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🛡️</span> Immune Messengers & Inflammation Signals
-      </div>
+      
       <p>
         When the gut becomes irritated or inflamed, immune messengers called cytokines travel through the bloodstream and alert the brain. This can trigger fatigue, brain fog, or changes in appetite.
       </p>
-    </div>
+    
 
     <!-- Microbial Metabolites -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🧬</span> Microbial Metabolites That Influence the Brain
-      </div>
+      
       <p>
         Healthy gut microbes produce short‑chain fatty acids (SCFAs) that support the gut lining, reduce inflammation, and help regulate stress responses in the brain.
       </p>
-    </div>
+    
 
 
   <!-- Credibility Footer -->
-  <div class="ah-card-footer">
+  
     <span class="ah-badge">✔ Evidence-based physiology</span>
     <span class="ah-badge">✔ Microbiome research</span>
     <span class="ah-badge">✔ Senior-friendly explanation</span>
-  </div>
+  
 
-</div>
+
 
 <!-- Minimal inline CSS (Blogger-safe) -->
 <style>
@@ -143,86 +143,86 @@ Probiotic-rich foods like yogurt, kefir, kimchi, sauerkraut, miso, and kombucha 
 
 
     <!-- Stress Feedback Loop -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🔄</span> The Stress Feedback Loop
-      </div>
+      
       <p>
         Stress hormones like cortisol can thin the gut lining and reduce microbial diversity. This weakens the gut’s ability to send calm, balanced signals back to the brain — creating a cycle of stress and digestive symptoms.
       </p>
-    </div>
+    
 
-  </div>
+  
 <!-- 🔵 Aging Health — Clinic-Style Explainer Card: Microbiome Resilience -->
 <div class="ah-card ah-blue-trust" itemscope itemtype="https://schema.org/CreativeWork">
 
-  <div class="ah-card-header">
+  
     <span class="ah-icon">🔵</span>
     <h3 itemprop="headline">What Microbiome Resilience Really Means</h3>
-  </div>
+  
 
-  <div class="ah-card-body">
+  
 
     <!-- Microbial Diversity -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🧬</span> Diverse Microbes = Stronger Defenses
-      </div>
+      
       <p>
         A resilient microbiome has a wide variety of beneficial bacteria. Diversity helps the gut recover from stress, illness, antibiotics, and dietary changes without losing stability.
       </p>
-    </div>
+    
 
     <!-- Mucus Barrier -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🛡️</span> A Healthy Mucus Barrier Protects the Gut
-      </div>
+      
       <p>
         Certain microbes — like <em>Akkermansia muciniphila</em> — strengthen the gut’s mucus layer. This barrier prevents inflammation and keeps harmful substances from leaking into the bloodstream.
       </p>
-    </div>
+    
 
     <!-- SCFAs -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">⚡</span> Microbial Metabolites That Keep You Balanced
-      </div>
+      
       <p>
         Beneficial bacteria produce short‑chain fatty acids (SCFAs) that support immune balance, reduce inflammation, and help regulate stress responses throughout the body.
       </p>
-    </div>
+    
 
     <!-- Recovery After Disruption -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🔄</span> How the Microbiome Recovers After Disruption
-      </div>
+      
       <p>
         A resilient microbiome can bounce back after antibiotics, illness, or dietary stress. Fiber, fermented foods, hydration, and sleep all help beneficial bacteria regrow and stabilize.
       </p>
-    </div>
+    
 
     <!-- Stress & Microbiome -->
-    <div class="ah-section">
-      <div class="ah-section-title">
+    
+      
         <span class="ah-icon">🌿</span> Stress Can Weaken Microbiome Stability
-      </div>
+      
       <p>
         Chronic stress reduces microbial diversity and thins the gut lining. This makes the microbiome more vulnerable to inflammation and slows recovery after illness.
       </p>
-    </div>
+    
 
-  </div>
+  
 
   <!-- Credibility Footer -->
-  <div class="ah-card-footer">
+  
     <span class="ah-badge">✔ Microbiome science</span>
     <span class="ah-badge">✔ Gut barrier health</span>
     <span class="ah-badge">✔ Senior-friendly explanation</span>
-  </div>
+  
 
-</div>
+
 
 <!-- Minimal inline CSS (Blogger-safe) -->
 <style>
@@ -237,10 +237,10 @@ Probiotic-rich foods like yogurt, kefir, kimchi, sauerkraut, miso, and kombucha 
 .ah-icon {font-size:1.1rem;}
 </style>
   
-<div class="sources-block">  <h3 style="text-align: left;">Scholarly Sources</h3>
+  <h3 style="text-align: left;">Scholarly Sources</h3>
 <a href="https://www.medicalnewstoday.com/articles/gut-microbiome-may-influence-stress">Stress: Could a healthy gut microbiome make you more resilient? (medicalnewstoday.com)<br /><a href="https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2019.03067/full">Frontiers | Gut Microbiota Are Associated With Psychological Stress-Induced Defections in Intestinal and Blood-Brain Barriers (frontiersin.org)<br /><a href="https://www.everydayhealth.com/emotional-health/your-gut-bacteria-may-affect-how-well-you-cope-with-stress/">Stress and the Gut Microbiome: What's the Link? (everydayhealth.com)<br /><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234057/">Regulation of Neurotransmitters by the Gut Microbiota and Effects on Cognition in Neurological Disorders - PMC (nih.gov)<br /><a href="https://onlinelibrary.wiley.com/doi/10.1111/jgh.16619#:~:text=SCFAs%20can%20downregulate%20the%20levels%20of%20blood%20sugar,useful%20for%20preventing%20and%20treating%20IBD%20and%20CRC.">Short‐chain fatty acids: bridges between diet, gut microbiota, and health - Wang - Journal of Gastroenterology and Hepatology - Wiley Online Library<br /><a href="https://health.wusf.usf.edu/npr-health/2024-06-24/your-gut-microbes-may-influence-how-you-handle-stress">Your gut microbes may influence how you handle stress | Health News Florida (usf.edu)<br /><a href="https://www.everydayhealth.com/digestive-health/gut-microbiome/">What Is the Gut Microbiome? (everydayhealth.com)<br />
     <a href="https://www.uclahealth.org/news/release/resiliency-shaped-activity-gut-microbiome-and-brain#:~:text=A%20new%20UCLA%20Health%20study%20has%20found%20that,healthy%20gut%2C%20with%20reduced%20inflammation%20and%20gut%20barrier.">Resiliency shaped by activity in the gut microbiome and brain - Microbiome | UCLA Health<ol>
-  </ol></div><article></article></article><style>div.sources-block {
+  </ol><article></article></article><style>div.sources-block {
   background-color: #e3f2fd;
   padding-left: 20px;
   padding-right: 20px;

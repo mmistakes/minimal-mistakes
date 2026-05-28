@@ -21,7 +21,7 @@ The current landscape of breakthroughs spans integrated artificial intelligence,
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![A clinician reviewing a holographic medical dashboard glowing in cool dark‑blue light.]({{ '/assets/images/ai-driven-diagnostics.webp' | relative_url }})
+![A clinician reviewing a holographic medical dashboard glowing in cool dark‑blue light.](![](/assets/images/ai-driven-diagnostics.webp' | relative_url ))
 *Figure 1: The Modern Clinical Dashboard. Senior health literacy is being vastly enhanced by next-generation predictive algorithms, rapid spatial sequencing, and home-based clinical-grade diagnostic tools.*
 
 ---
@@ -59,7 +59,7 @@ Catching cellular irregularities early and stopping them before they require lat
 
 Biotechnology research has hit a massive inflection point. Platforms are no longer restricted to broad tissue analysis; they can now evaluate cellular mechanics in real time.
 
-![Image demonstrating spatial biology mapping identical cytokines inside a tissue sample]({{ '/assets/images/spatial-cytokines-mapping.webp' | relative_url }})
+![Image demonstrating spatial biology mapping identical cytokines inside a tissue sample](![](/assets/images/spatial-cytokines-mapping.webp' | relative_url ))
 *Figure 2: Spatial Resolution. Advanced multi-omic processing maps the absolute micro-locations of inflammatory cytokines natively inside a living tissue sample.*
 
 #### Emerging Biotech Performance Levers:

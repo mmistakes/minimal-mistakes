@@ -66,7 +66,7 @@ Use that is **not daily and not ongoing**. Persistent constipation should prompt
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (1.2-1.5 g/kg) to prevent sarcopenia. Since chronic constipation and stimulant overuse can interfere with nutrient absorption, maintaining a healthy "Transit Time" is essential for liver and muscle stability.
-</div>
+
 
 <script type="application/ld+json">
 {

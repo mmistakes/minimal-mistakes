@@ -91,20 +91,20 @@ Yes, you can switch back during the Annual Enrollment Period (October 15 to Dece
 
 ## Glossary of Medicare Terms for Aging Health  
 
-<div class="ah-glossary">  
-  <div class="ah-term">  
+  
+    
     <h3>Medicare Advantage (Part C)</h3>  
     <p>A private insurance option that combines hospital, medical, and prescription drug coverage into a single plan, often with extra benefits.</p>  
-  </div>  
-  <div class="ah-term">  
+    
+    
     <h3>Formulary</h3>  
     <p>The list of prescription medications covered by a plan, organized into different cost tiers.</p>  
-  </div>  
-  <div class="ah-term">  
+    
+    
     <h3>Out-of-Pocket Maximum</h3>  
     <p>The highest amount you will pay in a year for covered healthcare services, providing essential protection against large medical bills.</p>  
-  </div>  
-</div>  
+    
+  
 
 <style>  
 .ah-glossary { margin: 1.5rem 0; display: grid; gap: 1rem; }  
@@ -128,7 +128,7 @@ Yes, you can switch back during the Annual Enrollment Period (October 15 to Dece
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">  
 <strong>March 2026 Clinical Update:</strong> Current recommendations for liver health emphasize a high-protein diet (1.2-1.5 g/kg) to prevent muscle loss (sarcopenia). Targets for portal hypertension related to esophageal or gastric varices now align with maintaining systemic blood pressure below 130/80 mmHg.  
-</div>  
+  
 
 <script type="application/ld+json">  
 {  

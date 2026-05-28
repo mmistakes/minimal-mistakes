@@ -8,7 +8,7 @@ tags: ['Immune Health', 'Heart Health', 'Diabetes', 'Nutrition']
 ---
 
 <h2 style="text-align: left;">Navigating the Canned Soup Nutritional Minefield: A Smart Consumer’s Guide
-</h2><p style="text-align: left;">Canned soup can be convenient and affordable, but it often hides excessive sodium, ultra‑processed ingredients, and chemical exposures that may affect heart, kidney, and metabolic health. Understanding labels, formulations, and alternatives helps consumers make safer, smarter choices—especially for those managing chronic conditions.<span></span></p><a name='more'><div style="background: rgb(250, 250, 250); border: 1px solid rgb(221, 221, 221); font-size: 15px; margin: 16px 0px; padding: 12px;"><strong>Medical Disclaimer:</strong> This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.</div>
+</h2><p style="text-align: left;">Canned soup can be convenient and affordable, but it often hides excessive sodium, ultra‑processed ingredients, and chemical exposures that may affect heart, kidney, and metabolic health. Understanding labels, formulations, and alternatives helps consumers make safer, smarter choices—especially for those managing chronic conditions.<span></span></p><a name='more'><div style="background: rgb(250, 250, 250); border: 1px solid rgb(221, 221, 221); font-size: 15px; margin: 16px 0px; padding: 12px;"><strong>Medical Disclaimer:</strong> This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 
 ---
 
@@ -149,7 +149,7 @@ Homemade or frozen low‑sodium soups offer better control.</p>
 <hr />
 <h2>Conclusion</h2>
 <p>Canned soup isn’t the villain—but it isn’t harmless either. With <b>rising rates of heart disease and hypertension</b>, <b>understanding how everyday foods influence health</b> is critical. By learning to decode labels, recognize ultra‑processing, and assess personal risk, consumers can transform a common pantry item from a nutritional liability into an informed choice. Knowledge empowers better conversations—and better outcomes.<br />
-</p><div class="patient-resources-box">
+</p>
   <h3><span style="font-family: Roboto;">📘 Related Patient Resources</span></h3>
 
   <p style="text-align: left;">
@@ -169,7 +169,7 @@ Homemade or frozen low‑sodium soups offer better control.</p>
     <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis.
   </span></p>
-</div>
+
  <style>.patient-resources-box {
   background-color: #faf9fa;
   padding-left: 25px;

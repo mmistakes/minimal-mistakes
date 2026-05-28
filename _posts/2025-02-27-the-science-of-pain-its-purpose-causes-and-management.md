@@ -27,7 +27,7 @@ Pain is a universal human experience—seemingly straightforward on the surface,
 > **⚠️ Clinical Review Disclaimer:** This material reflects active 2026 neuro-geriatric tracking guidelines, modern pain neuroscience education (PNE) data, and bio-signal surveillance standards. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified specialist regarding complex chronic symptoms.
 ---
 
-![Infographic tracking neurobiology pain pathways through the spinal cord]({{ '/assets/images/the-journey-of-pain-infographic.webp' | relative_url }})
+![Infographic tracking neurobiology pain pathways through the spinal cord](![](/assets/images/the-journey-of-pain-infographic.webp' | relative_url ))
 *Figure 1: The Sensory Axis. Understanding the precise relationship between ascending peripheral nerve bundles and local neurotransmitter release is mandatory for modernizing how we intercept chronic neurobiological distress.*
 
 ---
@@ -186,7 +186,7 @@ Spinal Cord Stimulation devices deliver mild electrical micro-pulses directly to
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -28,7 +28,7 @@ The structural stability of the United States long-term care system is increasin
 
 ---
 
-![Immigrant caregiver offering dedicated support to a patient]({{ '/assets/images/immigration-caregiving-workforce.webp' | relative_url }})
+![Immigrant caregiver offering dedicated support to a patient](![](/assets/images/immigration-caregiving-workforce.webp' | relative_url ))
 *Figure 1: The Caregiving Ecosystem. Direct care professionals establish intricate communication loops and intuitive behavioral supports with their clients over multiple years. Abruptly breaking these lines threatens patient stability and elevates caregiver burnout.*
 
 ---
@@ -55,7 +55,7 @@ The critical necessity of long-term caregiver continuity is sharply highlighted 
 This condition manifests through a complex phenotype including severe autism spectrum disorder, deep obsessive-compulsive traits, global developmental delays, and profound attentional deficits.
 
 
-1[Image diagram showcasing the localized genetic duplication mapping of the short arm of chromosome 8 in Tetrasomy 8p mosaicism]({{ '/assets/images/localized-genetic-duplication.webp'| relative_url }})
+1[Image diagram showcasing the localized genetic duplication mapping of the short arm of chromosome 8 in Tetrasomy 8p mosaicism](![](/assets/images/localized-genetic-duplication.webp'| relative_url ))
 
 Managing a highly complex neuro-developmental condition requires specialized, intuitive behavioral monitoring. Over a rolling 2.5-year window, Josephine’s caregiver, Alanys Ortiz—a Venezuelan immigrant working under Temporary Protected Status (TPS)—developed highly precise pattern recognition to read Josephine’s subtle, non-verbal cues:
 * **Micro-Expression Isolations:** Flagging finger-fidgeting as a primary metric for systemic fatigue and recognizing unique dental variations as indications of physical pain.
@@ -158,7 +158,7 @@ Several states have launched collaborative language-integrated training programs
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

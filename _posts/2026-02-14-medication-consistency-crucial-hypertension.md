@@ -19,7 +19,7 @@ We often think of high blood pressure as a numbers game we play at the doctor’
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Preventing Complications]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/preventing-complications.webp' | relative_url }})
+![Preventing Complications](![](/assets/images/preventing-complications.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Following your medication instructions is the most powerful way to prevent serious complications like stroke or organ damage._
 
@@ -75,14 +75,14 @@ We later learned she hadn't been taking her maintenance medication consistently.
     <div style="margin-bottom: 15px;">
         <label>Systolic (Top Number):</label><br>
         <input id="systolic" type="number" placeholder="e.g. 135" style="width: 100%; padding: 8px;">
-    </div>
+    
     <div style="margin-bottom: 15px;">
         <label>Diastolic (Bottom Number):</label><br>
         <input id="diastolic" type="number" placeholder="e.g. 85" style="width: 100%; padding: 8px;">
-    </div>
+    
     <button onclick="checkBloodPressure()" style="background: #1e3a8a; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Check My Category</button>
-    <div id="bp-result" style="margin-top: 20px; font-weight: bold; color: #1e3a8a;"></div>
-</div>
+    <div id="bp-result" style="margin-top: 20px; font-weight: bold; color: #1e3a8a;">
+
 
 <script>
 function checkBloodPressure() {

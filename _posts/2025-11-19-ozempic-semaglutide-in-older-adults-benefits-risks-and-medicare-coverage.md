@@ -29,7 +29,7 @@ For the aging body, our primary medical objective cannot simply be rapid weight 
 > **⚠️ Medical Disclaimer:** This material reflects current 2026 clinical guidelines and Centers for Medicare & Medicaid Services (CMS) directives. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![GLP-1 injection pen next to a vascular heart profile]({{ '/assets/images/glp-1-injection-pen-healthy-heart.webp' | relative_url }})
+![GLP-1 injection pen next to a vascular heart profile](![](/assets/images/glp-1-injection-pen-healthy-heart.webp' | relative_url ))
 *Figure 1: High-Density Protection. Beyond glucose homeostasis, GLP-1 receptors located within vascular tissue walls help pacify chronic systemic inflammation and lower arterial wall stress.*
 
 ---

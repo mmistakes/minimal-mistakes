@@ -23,7 +23,7 @@ Each one is a biological masterpiece, built from a unique sequence of amino acid
 
 ---
 
-![Protein deficiency fatigue]({{ '/assets/images/fatigue.webp' | relative_url }})  
+![Protein deficiency fatigue](![](/assets/images/fatigue.webp' | relative_url ))  
 _Figure 1: Persistent fatigue is often the first warning sign that the body is harvesting muscle for energy._
 
 ---

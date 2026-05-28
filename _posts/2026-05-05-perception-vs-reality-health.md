@@ -19,7 +19,7 @@ Have you ever truly questioned the essence of reality? In the journey of health 
 
 ---
 
-![Perception vs Reality Infographic]({{ '/assets/images/perception-reality.webp' | relative_url }})
+![Perception vs Reality Infographic](![](/assets/images/perception-reality.webp' | relative_url ))
 _Figure 1: Our perception filters experiences through beliefs and emotions. What we expect often becomes what we see._
 
 ---

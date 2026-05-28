@@ -29,7 +29,7 @@ With the correct lifestyle interventions, aging shifts from a period of inevitab
 
 ---
 
-![Older couple enjoying active retirement outdoors]({{ '/assets/images/joyful-older-couple.webp' | relative_url }})
+![Older couple enjoying active retirement outdoors](![](/assets/images/joyful-older-couple.webp' | relative_url ))
 *Figure 1: Lifestyle Synergy. Balancing consistent mechanical movement, targeted nutrition boundaries, and close primary care relationships forms the structural foundation of successful aging.*
 
 ---
@@ -159,8 +159,8 @@ As the human body matches older age brackets, it experiences a decline in anabol
   
   <div style="border-top: 1px solid #d6e2f0; margin-top: 1rem; padding-top: 0.5rem; font-size: 0.9rem; font-weight: bold; color: #555; text-align: center;">
     ✔ Verified institutional clinical guidelines &nbsp;|&nbsp; ✔ Certified public health registries
-  </div>
-</div>
+  
+
 
 ---
 
@@ -172,7 +172,7 @@ As the human body matches older age brackets, it experiences a decline in anabol
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

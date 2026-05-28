@@ -29,7 +29,7 @@ The historical data surrounding the scale of global immunization campaigns demon
 > **⚠️ Medical Policy Disclaimer:** This material reflects current 2026 public health data, active Federal Injury Compensation registries, and peer-reviewed neurological and cardiovascular safety trials. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms.
 {.prompt-warning}
 
-![Clinical technician examining a vaccine vial in a laboratory]({{ '/assets/images/vaccine-surveillance-laboratory.webp' | relative_url }})
+![Clinical technician examining a vaccine vial in a laboratory](![](/assets/images/vaccine-surveillance-laboratory.webp' | relative_url ))
 *Figure 1: Advanced Immunological Tracking. True commitment to vaccine safety demands well-funded, independent surveillance platforms capable of isolating precise genetic biomarkers before wide-scale clinical administration.*
 
 ---

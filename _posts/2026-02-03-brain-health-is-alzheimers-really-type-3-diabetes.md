@@ -23,7 +23,7 @@ Emerging peer-reviewed clinical research suggests a profoundly logical connectio
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Conceptual medical illustration of a human brain showing neural pathways overlaid with glowing glucose molecules and DNA strands]({{ '/assets/images/diabetes-type-3.webp' | relative_url }})
+![Conceptual medical illustration of a human brain showing neural pathways overlaid with glowing glucose molecules and DNA strands](![](/assets/images/diabetes-type-3.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Recent clinical research establishes a strict metabolic link between chronic insulin resistance and neurodegenerative pathways, prompting scientists to categorize Alzheimer's as Type 3 Diabetes._
 

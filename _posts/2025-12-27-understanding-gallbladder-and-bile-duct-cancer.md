@@ -27,7 +27,7 @@ Gallbladder and bile duct cancers, although rare, are critical health conditions
 
 ---
 
-![Anatomy of the gallbladder and biliary tree]({{ '/assets/images/gallbladder-bile-duct-cancer-infographic.webp' | relative_url }})
+![Anatomy of the gallbladder and biliary tree](![](/assets/images/gallbladder-bile-duct-cancer-infographic.webp' | relative_url ))
 *Figure 1: Biliary Tract Anatomy. Effective digestion relies on the seamless flow of bile from the liver, through the hepatic ducts, into storage within the gallbladder, and out into the small intestine.*
 
 ---
@@ -41,7 +41,7 @@ The biliary system is a network of plumbing vessels responsible for moving **bil
 
 ---
 
-[Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct]({{ '/assets/images/human-biliary-system.webp'| relative_url }}) _Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct._
+[Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct](![](/assets/images/human-biliary-system.webp'| relative_url )) _Image of human biliary system showing gallbladder, hepatic ducts, and common bile duct._
 
 ---
 
@@ -154,7 +154,7 @@ Bring these data-driven, practical questions to your next specialist consultatio
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Protecting your vital digestive framework requires active, holistic support. To maintain cellular strength and insulate your body against age-related muscle loss (sarcopenia) during treatment, ensure your diet targets a high-quality protein intake of <strong>1.2 to 1.5 grams per kilogram of body weight daily</strong>. Furthermore, if you are monitoring fluid retention or portal hypertension risks, keep your resting blood pressure held strictly <strong>under 130/80 mmHg</strong> to shelter your underlying microvascular piping.
-</div>
+
 
 <script type="application/ld+json">
 {

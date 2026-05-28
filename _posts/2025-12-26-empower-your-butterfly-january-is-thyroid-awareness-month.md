@@ -29,7 +29,7 @@ As an independent health researcher, I have spent considerable time parsing clin
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Anatomy of the human thyroid gland]({{ '/assets/images/butterfy-gland.webp' | relative_url }})
+![Anatomy of the human thyroid gland](![](/assets/images/butterfy-gland.webp' | relative_url ))
 *Figure 1: The Endocrine Engine. Though tiny, the thyroid gland synthesizes cellular messengers that regulate basal metabolic rates across every organ system in the body.*
 
 ---
@@ -157,4 +157,3 @@ While medical hormone replacement (such as Levothyroxine or combination T4/T3 th
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global hormone balance requires active structural care. To preserve lean mass reserves and safeguard your liver environment, aim for a daily high-quality protein intake of <strong>1.2 to 1.5 grams per kilogram of body weight</strong>. If you are tracking macrovascular health indices or portal parameters, maintain your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to protect your delicate microvascular layout from stress.
-</div>

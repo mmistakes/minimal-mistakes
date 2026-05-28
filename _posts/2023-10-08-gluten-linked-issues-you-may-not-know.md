@@ -66,7 +66,7 @@ The "Gut-Brain Axis" is highly sensitive to gluten-related inflammation. Clinica
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (1.2-1.5 g/kg) to prevent sarcopenia. Since gluten-free diets can sometimes be low in protein or high in refined starches, seniors must be intentional about maintaining these protein targets for metabolic and liver stability.
-</div>
+
 
 <script type="application/ld+json">
 {

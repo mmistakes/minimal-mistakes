@@ -16,14 +16,14 @@ This guide introduces simple chair yoga poses that can help increase flexibility
 
 <h3>Chair Yoga: A Gentle Approach to Fitness</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Chair yoga allows seniors to enjoy the benefits of yoga without getting on the floor.</li>
     <li>It supports mobility, balance, and relaxation in a safe, accessible way.</li>
     <li>It is suitable for all fitness levels, including those with chronic conditions.</li>
   </ul>
-</div>
+
 
 <p>
 Chair yoga is a gentle, adaptable form of yoga practiced while seated or using a chair for stability. It is especially <strong>beneficial for seniors</strong> and individuals with limited mobility because it removes the need to get down on the floor or perform strenuous poses. Its greatest strength is inclusivity — people of all ages and abilities can participate comfortably.
@@ -35,14 +35,14 @@ So, what makes chair yoga worth adding to your routine? Let <strong>us explore t
 
 <h3>Impact of Chair Yoga on Pain Relief and Function in Older Adults With Osteoarthritis</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Research shows chair yoga can reduce pain and <a href="https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/" rel="dofollow" title="The Connection Between Falls and Traumatic Brain Injury"><b>fatigue in older adults with osteoarthritis</b>.</li>
     <li>Benefits such as improved gait speed may continue for months after completing a program.</li>
     <li>Chair yoga is a promising non‑drug option for managing chronic joint discomfort.</li>
   </ul>
-</div>
+
 
 <p>
 A randomized controlled trial in South Florida evaluated the effects of Sit ’N’ Fit Chair Yoga on older adults with lower‑extremity osteoarthritis. The study included 131 community‑dwelling adults who participated in either chair yoga or a <a href="https://www.aginghealth.website/posts/senior-health-education/" rel="dofollow"><strong>health education program</strong>, attending sessions twice a week for eight weeks.
@@ -58,14 +58,14 @@ Overall, the eight‑week chair yoga program reduced pain and fatigue and improv
 
 <h3>Benefits of Chair Yoga for Seniors</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Chair yoga supports joint mobility, balance, and circulation.</li>
     <li>It can reduce stress and promote relaxation through mindful breathing.</li>
     <li>It is gentle enough for beginners yet effective for building strength.</li>
   </ul>
-</div>
+
 
 <ul>
   <li><strong>Improved Flexibility and Range of Motion:</strong> Regular practice helps maintain joint mobility and ease stiffness.</li>
@@ -83,14 +83,14 @@ Overall, the eight‑week chair yoga program reduced pain and fatigue and improv
 
 <h3>Chair Yoga: Getting Started</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Use a sturdy chair without wheels for safety.</li>
     <li>Wear comfortable clothing and ensure you have space to move.</li>
     <li>Consult your <b>doctor before beginning any new exercise routine</b>.</li>
   </ul>
-</div>
+
 
 <p>
 Before beginning, choose a sturdy chair with armrests and enough space to move freely. Wear loose, comfortable clothing. It’s always wise to speak with your <strong>doctor before starting a new exercise program</strong>, especially if you have <a href="https://www.aginghealth.website/posts/toxic-stress-links-health-links-conditions/" rel="dofollow"><strong>underlying health conditions</strong>.
@@ -102,14 +102,14 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 
 <h3>Seated Forward Fold</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Helps stretch the back and hamstrings while seated.</li>
     <li>Encourages gentle relaxation and deeper breathing.</li>
     <li>Safe for beginners and those with limited mobility.</li>
   </ul>
-</div>
+
 
 <ul>
   <li>Sit upright in your chair with your spine tall.</li>
@@ -119,14 +119,14 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 
 <h3>Seated Spinal Twist</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Supports spinal mobility and reduces stiffness.</li>
     <li>Helps release tension in the back and shoulders.</li>
     <li>Can be performed gently to avoid strain.</li>
   </ul>
-</div>
+
 
 <ul>
   <li>Sit upright with your spine tall.</li>
@@ -137,14 +137,14 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 
 <h3>Shoulder Rolls</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Releases shoulder tension and improves posture.</li>
     <li>Encourages better circulation in the upper body.</li>
     <li>Simple and safe for all fitness levels.</li>
   </ul>
-</div>
+
 
 <ul>
   <li>Sit upright with your spine tall.</li>
@@ -154,14 +154,14 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 
 <h3>Cat–Cow</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Improves spinal flexibility and mobility.</li>
     <li>Helps reduce stiffness in the back and neck.</li>
     <li>Pairs movement with breath for relaxation.</li>
   </ul>
-</div>
+
 
 <ul>
   <li>Sit upright with your spine tall.</li>
@@ -172,14 +172,14 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 
 <h3>Eagle Arms</h3>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Stretches the shoulders and upper back.</li>
     <li>Helps relieve tension from sitting or computer use.</li>
     <li>Can be modified for comfort.</li>
   </ul>
-</div>
+
 
 <ul>
   <li>Sit upright with your spine tall.</li>
@@ -190,14 +190,14 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
 
 <h2>Tips for Practicing Chair Yoga</h2>
 
-<div class="section-key-points">
+
   <h4>Key Points</h4>
   <ul>
     <li>Start slowly and build confidence over time.</li>
     <li>Use your breath to guide movement and relaxation.</li>
     <li>Comfort and safety come first — always listen to your body.</li>
   </ul>
-</div>
+
 
 <ul>
   <li><strong>Focus on your breath:</strong> Slow, steady breathing deepens relaxation.</li>
@@ -214,7 +214,7 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
   <li><strong>Community Centers:</strong> Local senior centers often host guided chair yoga sessions.</li>
   <li><strong>Books and DVDs:</strong> Instructional materials can help you practice at your own pace.</li>
 </ul>
-<div class="module key-points-module">
+
   <h3>Key Points Summary</h3>
   <ul>
     <li>Chair yoga is a gentle, accessible form of movement suitable for <a href="https://www.aginghealth.website/posts/imagination-reality-health-connection-seniors/" rel="dofollow" title="The Power of the Mind's Eye: How Imagination Improves Health"><b>seniors and individuals</b> with limited mobility.</li>
@@ -223,8 +223,8 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
     <li>Chair yoga supports balance, circulation, strength, and relaxation.</li>
     <li>Always consult a <a href="https://www.aginghealth.website/posts/ai-in-healthcare/" rel="dofollow" title="Harnessing the AI Healthcare Revolution"><b>healthcare professional before beginning a new exercise</b> routine.</li>
   </ul>
-</div>
-<div class="module glossary-module">
+
+
   <h3>Glossary</h3>
   <ul>
     <li><strong>Mobility:</strong> The ability to move freely and comfortably.</li>
@@ -234,8 +234,8 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
     <li><strong>Nonpharmacologic:</strong> A treatment approach that does not involve medication.</li>
     <li><strong>Spinal Flexibility:</strong> The ability of the spine to bend and move comfortably.</li>
   </ul>
-</div>
-<div class="module senior-questions-module">
+
+
   <h3>Common Questions Seniors Ask</h3>
   <ul>
     <li>Is chair <a href="https://www.aginghealth.website/posts/staying-safe-from-extreme-heat-older-adults/" rel="dofollow" title="Why Older Adults Need Extra Protection In Hot Weather"><b>yoga safe for older adults with limited</b> mobility?</li>
@@ -245,9 +245,9 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
     <li>Can chair yoga improve balance even if I can’t stand well?</li>
     <li>Is chair yoga helpful for stress and anxiety?</li>
   </ul>
-</div>
 
-<div class="module senior-quick-tips">
+
+
   <h3>Senior Quick Tips</h3>
   <ul>
     <li><strong>Start slow:</strong> Even 5 minutes of gentle movement can make a difference.</li>
@@ -257,9 +257,9 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
     <li><strong>Stop if it hurts:</strong> Chair yoga should feel gentle, never painful.</li>
     <li><strong>Practice regularly:</strong> Consistency brings the best results.</li>
   </ul>
-</div>
 
-<div class="module printable-summary">
+
+
   <h3>Recap Summary</h3>
   <p><strong>What is Chair Yoga?</strong> A gentle form of yoga practiced while seated or using a chair for support.</p>
   <p><strong>Benefits:</strong> Improved flexibility, balance, circulation, strength, and reduced stress.</p>
@@ -267,12 +267,12 @@ Before beginning, choose a sturdy chair with armrests and enough space to move f
   <p><strong>Basic Poses:</strong> Forward fold, spinal twist, shoulder rolls, cat–cow, eagle arms.</p>
   <p><strong>Tips:</strong> Use a sturdy chair, breathe deeply, start slowly, and listen to your body.</p>
   <p><strong>Safety:</strong> Consult your doctor before beginning any new exercise routine.</p>
-</div>
 
-<div class="module cta-module">
+
+
   <h3>Next Steps</h3>
   <p>Chair yoga is a gentle way to support mobility, strength, and relaxation. Explore more senior-friendly wellness guides or speak with your healthcare provider for personalized recommendations.</p>
-</div>
+
 
 
 

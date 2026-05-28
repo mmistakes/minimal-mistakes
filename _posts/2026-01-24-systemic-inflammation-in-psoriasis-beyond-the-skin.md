@@ -160,7 +160,7 @@ Because systemic inflammation operates silently beneath the skin, ensure your pr
 
 <div style="background:#fef5e7; padding:15px; border-left:5px solid #f39c12; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Update:</strong> Psoriasis must be managed as a full-body systemic inflammatory event, not a simple cosmetic skin problem. To protect your independence and maximize your health span, focus heavily on supporting your metabolism. Target a high-quality protein intake of **1.2 to 1.6 grams per kilogram of body weight daily** to maintain rapid skin cell turnover while preserving lean muscle mass, and verify that your blood pressure remains safely **under 130/80 mmHg**.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -27,7 +27,7 @@ Health agencies now recognize that confusing administrative design is more than 
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![Infographic explaining why medical questionnaires confuse patients]({{ '/assets/images/medical-questionnaires-often-confuse-patients.webp' | relative_url }})
+![Infographic explaining why medical questionnaires confuse patients](![](/assets/images/medical-questionnaires-often-confuse-patients.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** When intake forms are visually dense and text-heavy, the resulting cognitive overload causes patients to guess or skip critical health fields._
 
@@ -115,7 +115,7 @@ Marcus, a 42-year-old living with chronic lower back pain, routinely marked his 
   <div style="padding-top: 0.8em; color: #333; line-height: 1.6;">
     <p>• <strong>Have you ever felt completely uncertain about how to accurately answer a specific question on a medical intake sheet?</strong></p>
     <p>→ <strong>YES:</strong> Avoid guessing. Leave the field blank and actively ask the medical assistant for clarification using plain, everyday language.</p>
-  </div>
+  
 </details>
 
 <details class="tracker-section" style="cursor: pointer; padding: 0.8em; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 0.5em; background: #fafafa;">
@@ -123,7 +123,7 @@ Marcus, a 42-year-old living with chronic lower back pain, routinely marked his 
   <div style="padding-top: 0.8em; color: #333; line-height: 1.6;">
     <p>• <strong>Are you currently managing multiple chronic health conditions or a complex, multi-tiered medication list?</strong></p>
     <p>→ <strong>YES:</strong> Bring a pre-printed, master list of your precise medications and history to the clinic. Do not try to rewrite complex pharmaceutical names from memory into small form blanks under time pressure.</p>
-  </div>
+  
 </details>
 
 <details class="tracker-section" style="cursor: pointer; padding: 0.8em; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 0.5em; background: #fafafa;">
@@ -131,7 +131,7 @@ Marcus, a 42-year-old living with chronic lower back pain, routinely marked his 
   <div style="padding-top: 0.8em; color: #333; line-height: 1.6;">
     <p>• <strong>Do electronic patient portals or online pre-visit questionnaires cause you acute stress or visual frustration?</strong></p>
     <p>→ <strong>YES:</strong> You are legally entitled to alternatives. Call the office ahead of time and state: <em>"I require a physical paper copy of my intake documents or direct staff assistance to complete my check-in parameters."</em></p>
-  </div>
+  
 </details>
 
 ---

@@ -77,4 +77,3 @@ Print out this targeted checklist and present it directly to your care team duri
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Clinical Target Update:</strong> In patients managing liver portal hypertension alongside vascular stroke risk profiles, modern consensus guidelines emphasize maintaining a strict resting systemic blood pressure target of **under 130/80 mmHg** to safeguard delicate cerebral capillaries. Additionally, ensure your daily nutrition targets **1.2 to 1.5 grams of protein per kilogram of body weight** from senior-optimized sources to proactively combat muscle wasting.
-</div>

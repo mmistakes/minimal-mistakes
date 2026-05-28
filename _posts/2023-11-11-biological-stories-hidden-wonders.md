@@ -1,4 +1,8 @@
 ---
+layout: single
+title: "---"
+---
+---
 title: "The Body’s Hidden Wonders: A Collection of Biological Stories"
 date: 2023-11-11 15:33:00 -0600
 categories: [human-anatomy, Wellness]

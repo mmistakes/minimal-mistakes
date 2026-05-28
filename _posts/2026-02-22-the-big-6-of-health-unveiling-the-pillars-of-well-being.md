@@ -134,7 +134,7 @@ Copy and print this high-contrast check-sheet to log your daily baseline habits.
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Guidance:</strong> True longevity is not built on complex, unaligned health trends; it is won by mastering the foundational variables of human biology. To protect your cognitive reserve and insulate your vascular piping, maintain a strict resting systemic blood pressure target of <strong>under 130/80 mmHg</strong>. Pair this with a dedicated focus on hitting your daily senior protein goals to keep your structural engine resilient and command your independent health span.
-</div>
+
 
 <script type="application/ld+json">
 {

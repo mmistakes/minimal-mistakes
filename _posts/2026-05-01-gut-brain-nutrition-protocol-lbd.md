@@ -20,7 +20,7 @@ To stabilize the intestinal epithelial barrier ("Leaky Gut") and maximize the pr
 
 In senior health, we often face a "tug-of-war" between preventing **Sarcopenia** (muscle loss) and maintaining **Microbiome Diversity**. The 2026 protocol prioritizes both by focusing on high-quality amino acids paired with fermentable fibers.
 
-![Gut Microbiome Fueling]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/microbiome-fiber.webp' | relative_url }})
+![Gut Microbiome Fueling](![](/assets/images/microbiome-fiber.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Short-chain fatty acids (SCFAs) like Butyrate act as the primary energy source for the cells lining the gut, effectively 'sealing' the barrier against neuro-toxins._
 
@@ -69,7 +69,7 @@ Constipation—slowed motility—is one of the earliest signs of Gut‑Brain axi
 2. **The 12‑Hour Reset:**  
    A simple **12‑hour overnight fast** (e.g., 7 PM → 7 AM) activates the **Migrating Motor Complex (MMC)**, the gut’s built‑in “street sweeper” that clears residual debris from the small intestine.
 
-![Enteric Nervous System and Motility]({{ site.urlimg }}{{ site.urlimg }}{{ '/assets/images/gut-motility-vagus.webp' | relative_url }})
+![Enteric Nervous System and Motility](![](/assets/images/gut-motility-vagus.webp' | relative_url ))
 {: .normal }
 _**Figure 2:** Proper gut motility is a Vagus‑mediated process. Slowed transit time is now recognized as a major risk factor for early‑stage neurodegeneration._
 

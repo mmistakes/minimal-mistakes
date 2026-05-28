@@ -286,7 +286,7 @@ Experiencing [**ruptured varices and undergoing banding**](https://www.agingheal
 
 ---
 
-<div class="clinic-citations">
+
   <h2 class="cc-heading">Clinical Citations</h2>
   <ol class="cc-list">
     <li>Esophageal Varices with or Without Rupture. (2025). Retrieved 19 July 2025, from https://www.verywellhealth.com/esophageal-varices-8628975</li>
@@ -297,11 +297,11 @@ Experiencing [**ruptured varices and undergoing banding**](https://www.agingheal
     <li><a href="https://liverfoundation.org/liver-diseases/treatment/transjugular-intrahepatic-portosystemic-shunt-tips/">Transjugular Intrahepatic Portosystemic Shunt: TIPS</li>
     <li>Kockerling, David et al. "Current and future pharmacological therapies for managing cirrhosis and its complications." <i>World journal of gastroenterology</i> vol. 25,8 (2019): 888-908. doi:10.3748/wjg.v25.i8.888</li>
   </ol>
-</div>
+
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Current advocacy for liver health emphasizes high-protein intake (<strong>1.2-1.5 g/kg</strong>) to prevent sarcopenia. Portal hypertension targets for esophageal or gastric varices now align with a systemic blood pressure of <strong>&lt;130/80 mmHg</strong>.
-</div>
+
 
 <script type="application/ld+json">
 {

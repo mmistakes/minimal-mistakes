@@ -82,7 +82,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧠 Cognitive Health', '🌱 Senior Long
 <button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
   <b>References:</b>
   <ol>
 <li><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/barretts-esophagus/symptoms-causes"><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/barretts-esophagus/symptoms-causes">Symptoms &amp; Causes of Barrett's Esophagus - NIDDK</li><li><a href="https://www.mayoclinic.org/diseases-conditions/barretts-esophagus/symptoms-causes/syc-20352841">Barrett's esophagus - Symptoms and causes - Mayo Clinic</li><li><a href="https://my.clevelandclinic.org/health/diseases/14432-barretts-esophagus">Barrett’s Esophagus: Symptoms, Causes, Treatments &amp; Medications</li><li><a href="https://www.cancer.org/cancer/types/esophagus-cancer/causes-risks-prevention/prevention.html">Can Esophageal Cancer Be Prevented? | Preventing Esophagus Cancer | American Cancer Society</li></ol><ul>

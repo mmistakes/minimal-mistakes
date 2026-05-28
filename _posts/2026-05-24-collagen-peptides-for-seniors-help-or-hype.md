@@ -114,7 +114,7 @@ Incorporate these target questions into your upcoming clinical check-up or use t
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Guidance:</strong> Oral collagen peptides are not a magic cure-all, nor are they complete snake oil. The clinical data confirms they provide substantial, measurable support to preserve bone density and improve joint capsule comfort. However, they only function optimally when nested inside a comprehensive lifestyle structure. To build true system-wide resilience, combine your bioactive peptides with progressive resistance exercises, protect your nightly glymphatic sleep cycles, and keep your systemic blood pressure targets held tightly under 130/80 mmHg.
-</div>
+
 
 <script type="application/ld+json">
 {

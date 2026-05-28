@@ -13,7 +13,7 @@ tags: ['❤️ Cardiovascular & T2D', '🛡️ Liver & Immune Health', 'Aging We
   condition that can be managed and even reversed. By integrating high-leucine protein intake with consistent resistance
   training and modern bio-sensing technology, seniors can maintain their independence and significantly reduce the risk
   of falls and metabolic disease.  </p><div style="margin: 30px 0px; text-align: center;"><img alt="Anatomical comparison of healthy muscle tissue versus sarcopenia-affected muscle with fat infiltration." border="0" data-original-height="531" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ6TGfyyvGH_eHfXW-pzxIX9IC86MqUfNQu5z8BvQYv6aSNC7REa8A9E2Fno0fcZNcZtcKIrBXk0sh5fzQjD4H9uwCVwlPWKpx0Sxm8DZmYD4TUwkTRl6OKYZu_dJ_UVbg0JZqVoAsQdHwEUSikeVNpfWDGHKeaz9lQYRyaaSD-ZE-QBfMYDi7V93BM1-v/s16000/Human%20Leg%20Sarcopenia.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" title="The Microscopic View of Muscle Wasting" />
-    <p style="color: #666666; font-size: 1rem; font-style: italic; margin-top: 10px;">&gt;Sarcopenia involves both a loss of muscle volume and a decrease in the quality of the remaining tissue.</p></div>
+    <p style="color: #666666; font-size: 1rem; font-style: italic; margin-top: 10px;">&gt;Sarcopenia involves both a loss of muscle volume and a decrease in the quality of the remaining tissue.</p>
 <h2><b>Introduction: The Silent Erosion of Strength</b></h2>
 <p>
   As we move through the middle and later years of our lives, there is a quiet, often invisible change occurring within

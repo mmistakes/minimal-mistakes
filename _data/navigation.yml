@@ -8,7 +8,7 @@ main:
   - title: "Longevity"
     url: "/categories/#longevity"
   - title: "Glossary"
-    url: /glossary/
+    url: "{{ '/glossary/' | relative_url }}"
   - title: "About"
     url: /about/
   - title: "Research Index"

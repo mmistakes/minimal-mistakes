@@ -31,7 +31,7 @@ But here is the absolute truth: **the 24-hour waiting rule is an entirely fictit
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Urgent search tracking indicators]({{ '/assets/images/missing-person-report-quickly.webp' | relative_url }})
+![Urgent search tracking indicators](![](/assets/images/missing-person-report-quickly.webp' | relative_url ))
 *Figure 1: The Critical Window. Statistical data confirms that the location recovery rate for a missing individual peaks sharply within the first few hours, directly penalizing any delay in reporting.*
 
 ---
@@ -139,8 +139,8 @@ By actively developing your media literacy, you can enjoy cinematic storytelling
   
   <div style="border-top: 1px solid #d6e2f0; margin-top: 1rem; padding-top: 0.5rem; font-size: 0.9rem; font-weight: bold; color: #555; text-align: center;">
     ✔ Verified legal statutes &nbsp;|&nbsp; ✔ Certified emergency academies &nbsp;|&nbsp; ✔ Clinical trauma datasets
-  </div>
-</div>
+  
+
 
 ---
 
@@ -152,7 +152,7 @@ By actively developing your media literacy, you can enjoy cinematic storytelling
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) during periods of high crisis stress, target a stable protein intake of <strong>1.2 to 1.5 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

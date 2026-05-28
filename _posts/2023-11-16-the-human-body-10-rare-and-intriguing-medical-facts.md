@@ -196,7 +196,7 @@ induced in humans.
     <li>• Induced torpor and human hibernation research</li>
     <li>• Rare human biology and uncommon physiology</li>
   </ul>
-</div>
+
 
 <h3>List of Sources for Factchecking:</h3>
 <ol>
@@ -353,4 +353,4 @@ induced in humans.
       }
     }
   ]
-}</script><p></p></div>
+}</script><p></p>

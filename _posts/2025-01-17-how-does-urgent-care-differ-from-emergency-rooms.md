@@ -10,13 +10,13 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
   <span style="font-family: inherit;">Navigating Your Healthcare Choices: Urgent Care vs. Emergency Rooms</span>
 </h2>
 
-<div>
+
   <span style="color: #0e101a;">By </span>
   <a class="editor-rtfLink" href="https://www.aginghealth.website/p/aging-health-author-tommy-douglas.html" style="color: #4a6ee0;" target="_blank">
     <span>Tommy T Douglas</span>
   
   <span style="color: #0e101a;">, Amateur Health Researcher and Blogger</span>
-</div>
+
 
 <p style="text-align: left;">
   <span style="font-family: inherit;">
@@ -30,7 +30,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
   </span>
 </p>
 
-<div>
+
   <span style="font-family: inherit;">
     <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;">
       <tbody>
@@ -59,7 +59,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
 
   <h2><span style="font-family: inherit;">What Is Urgent Care?</span></h2>
   <h3><span style="font-family: inherit;">Definition and Services Offered</span></h3>
-</div>
+
 
 
 <p style="text-align: left;">
@@ -176,7 +176,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
 <h3><span style="font-family: inherit;">Citations</span></h3><button onclick="document.body.classList.toggle('audit-mode')">
   Toggle References
 </button>
-<div class="sources-block">
+
 <ol>
 <li>N Alaqil, Nasser Abullah et al. "The Role of Urgent Care Clinics in Alleviating Emergency Department Congestion: A Systematic Review of Patient Outcomes and Resource Utilization." <i>Cureus</i> vol. 17,4 e81919. 8 Apr. 2025, doi:10.7759/cureus.81919</li>
 <li>Allen, Lindsay et al. "The impact of urgent care centers on nonemergent emergency department visits." <i>Health services research</i> vol. 56,4 (2021): 721-730. doi:10.1111/1475-6773.13631</li>
@@ -207,4 +207,4 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
       "url": "https://blogger.googleusercontent.com/img/a/AVvXsEj8O3QqKxNi88bqDRileLsbaARdeVJ8_Kx12getkGm9tcdAB9iLjAkiNxLLLg_7U0-B75dak1bSxDOcp-TpOoLArnTjiH9nGO7eW8e3etPn3vtaaW2NE4HFOFtFAC4FlBYQwZlRZ67asv9EK44a0HZeuErKrzcYp0WOSAHrVVGRaoKYRuq9-lToAByjanNw=s283"
     }
   }
-}</script.</span></div></script></span>
+}</script.</span></script></span>

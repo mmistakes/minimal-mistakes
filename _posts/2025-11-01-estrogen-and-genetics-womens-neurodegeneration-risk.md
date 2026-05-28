@@ -29,7 +29,7 @@ These sex-specific risks are shaped directly by post-menopausal estrogen withdra
 > **⚠️ Medical Disclaimer:** This material reflects current 2026 neuro-immunology datasets and clinical trials. It is constructed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Sex-Specific Neuroprotection and Vulnerability inside the Brain]({{ '/assets/images/apoe-4.webp' | relative_url }})
+![Sex-Specific Neuroprotection and Vulnerability inside the Brain](![](/assets/images/apoe-4.webp' | relative_url ))
 *Figure 1: The Neuro-Endocrine Interface. Estrogen receptor distribution, X-linked microglial transcriptional states, and lipid-carrier mutations coalesce to shape unique pathways of neuroprotection or vulnerability.*
 
 ---
@@ -185,7 +185,7 @@ Yes, recent preclinical data published in *Science Translational Medicine* revea
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

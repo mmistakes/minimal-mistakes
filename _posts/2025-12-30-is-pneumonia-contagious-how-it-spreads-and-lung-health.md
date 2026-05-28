@@ -27,7 +27,7 @@ With the severe, overlapping respiratory surges documented throughout late 2024 
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Diagram of the human respiratory system]({{ '/assets/images/human-respiratory-system.webp' | relative_url }}) 
+![Diagram of the human respiratory system](![](/assets/images/human-respiratory-system.webp' | relative_url )) 
 *Figure 1: Pathogen entry routes. Infectious pneumonia settles deep within the alveoli—the microscopic air sacs responsible for matching systemic blood flow with fresh oxygen exchange.*
 
 ---
@@ -157,7 +157,7 @@ No. Cold air cannot cause an infection on its own; only pathogens can trigger pn
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Update:</strong> Protecting your vital organs requires looking at the body as an interconnected system. To prevent muscle loss (sarcopenia) from throwing off your metabolic balance, prioritize an intake of <strong>1.2 to 1.5 grams of high-quality protein per kilogram of body weight daily</strong>. Furthermore, if you are managing complications like portal hypertension or esophageal varices, keep your resting blood pressure held strictly <strong>under 130/80 mmHg</strong> to shelter your delicate vascular networks from excessive pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {

@@ -33,7 +33,7 @@ The profound silver lining? The liver possesses a unique, highly resilient capac
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Seniors reversing fatty liver disease through diet and lifestyle]({{ '/assets/images/reverse-fatty-liver-disease.webp' | relative_url }})
+![Seniors reversing fatty liver disease through diet and lifestyle](![](/assets/images/reverse-fatty-liver-disease.webp' | relative_url ))
 *Figure 1: Cellular Restoration. Shifting your nutritional architecture away from refined carbohydrates allows hepatocytes to shed accumulated fat droplets and halt inflammatory signaling.*
 
 ---

@@ -20,7 +20,7 @@ Osteoarthritis (OA) is frequently dismissed as the "creaky syndrome," an inevita
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
 
-![An older person with hands intertwined showing arthritis pain and stiffness]({{ '/assets/images/arthritis-pain-crippled-hands.webp' | relative_url }})
+![An older person with hands intertwined showing arthritis pain and stiffness](![](/assets/images/arthritis-pain-crippled-hands.webp' | relative_url ))
 {: .normal }
 _**Figure 1:** Advanced osteoarthritis in the hands causes visible joint remodeling, making fine motor tasks intensely painful and disruptive to daily independence._
 

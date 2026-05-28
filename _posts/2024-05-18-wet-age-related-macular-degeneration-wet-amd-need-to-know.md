@@ -21,44 +21,44 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '❤️ Cardi
 .ah-checklist li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; }
 </style>
 
-<div class="ah-container">
+
   <h2 style="text-align: left;">Wet AMD: Beyond the Commercials to Clinical Reality</h2>
 
   <p>Wet Age-Related Macular Degeneration (Wet AMD) is frequently discussed in television commercials, but for a senior navigating this diagnosis, it represents a high-stakes race against time. Unlike the slow progression of "Dry" AMD, the "Wet" form is a <strong>vascular crisis</strong> occurring in the back of your eye.</p>
 
-  <div class="ah-disclaimer">
+  
     <strong>Medical Disclaimer:</strong> This content is for informational purposes only. Sudden vision changes are a medical emergency. Consult an ophthalmologist or retina specialist immediately.
-  </div>
+  
 
   <div style="margin: 30px 0px; text-align: center;">
     <img alt="The complex anatomy of the eye highlighting the macula" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_3pVqWGovV5AQGbkiyGXJccYzZz_zlrwbtKekZrhi0AKG2P61NUpnDh5SQIPDpSZXspG3hIGHZoWki1drmx_W9VeO0iBOGkmv9GeUSYcMmlx4ixlsKw9XcoEDyN6EYpFRz_lVfLIhCs0C4CUonfKjSDfLKVTTdLPqwtMACpo2WUr3jkttexPyrxLahwC3/s16000/Wet_AMD_Eye_Anatomy.webp" style="border-radius: 12px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" />
     <p style="color: #666666; font-size: 0.9rem; font-style: italic; margin-top: 10px;">The Macula: Responsible for your sharp, central "reading" vision.</p>
-  </div>
+  
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">What Exactly is "Wet" AMD?</h2>
     <p>AMD is the leading cause of vision loss for those over 50. It comes in two stages:</p>
     <ul>
       <li><strong>Dry AMD:</strong> A slow deterioration where light-sensitive cells in the macula break down over years.</li>
       <li><strong>Wet AMD:</strong> An aggressive turn where abnormal blood vessels grow under the macula and <strong>leak</strong> blood or fluid. This leakage causes rapid, often permanent damage to your central vision.</li>
     </ul>
-    <div class="ah-accent-card">
+    
       <strong>The 90% Statistic:</strong> While only 10% of AMD cases are the "Wet" type, this form is responsible for <strong>90% of AMD-related blindness</strong>.
-    </div>
-  </div>
+    
+  
 
-  <div class="ah-update-box">
+  
     <h3 class="ah-title" style="color: #1d4ed8;">🔬 March 2026 Clinical Synthesis: The Anti-VEGF Era</h3>
     <p>In 2026, we have moved beyond "managing" Wet AMD to <strong>active suppression</strong>. The current gold standard involves Anti-VEGF injections (like Eylea HD or Vabysmo) that act as a "dry-up" signal for leaky vessels.</p>
     <ul>
       <li><strong>Long-Acting Formulas:</strong> New 2026 drug delivery systems allow for fewer injections (often every 3-4 months instead of every month), maintaining better quality of life.</li>
       <li><strong>The "Metabolic Eye" Link:</strong> We now know that <strong>Uncontrolled High Blood Pressure</strong> is a major catalyst for vessel leakage. Keeping your systemic BP below 130/80 is a direct ocular intervention.</li>
     </ul>
-  </div>
+  
 
   
 
-  <div class="ah-card">
+  
     <h2 class="ah-title">Identifying the "Metamorphopsia" (Distortion)</h2>
     <p>The hallmark of Wet AMD is not just "blur," but <strong>distortion</strong>. If straight lines (like a door frame or a line of text) look wavy or "broken," your macula is likely being displaced by fluid.</p>
     <h3>The Advocacy Checklist:</h3>
@@ -67,7 +67,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '❤️ Cardi
       <li><input type="checkbox" /> Have you noticed a sudden loss of color brightness?</li>
       <li><input type="checkbox" /> Are you using an <strong>Amsler Grid</strong> daily to monitor for new waves?</li>
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(253, 252, 251); border: 2px dashed rgb(13, 148, 136);">
     <h2 class="ah-title" style="border-bottom: 2px solid rgb(13, 148, 136);">🗣️ The Patient Translation: Eye Care vs. Reality</h2>
@@ -101,16 +101,16 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '❤️ Cardi
 
     <div class="ah-accent-card" style="background: rgb(255, 245, 245); border-left-color: rgb(229, 62, 62); margin-top: 15px;">
       <strong>⚠️ The "Red Flag" Translation:</strong> If a doctor says, "We'll check you again in 6 months" while you have new waviness, translate that to: <em>"We are risking permanent scarring."</em> Wet AMD can cause irreversible loss in <strong>weeks</strong>. Ask for an immediate <strong>OCT (Optical Coherence Tomography)</strong> scan.
-    </div>
-  </div>
-  <div class="ah-card">
+    
+  
+  
     <h2 class="ah-title">Living with Vision Loss: Agency and Tools</h2>
     <p>Diagnosis is not the end of independence. In 2026, low-vision rehabilitation and <strong>adaptive technology</strong> (like high-contrast screen readers and AI-powered glasses) are standard care.</p>
     <ul>
       <li><strong>The 10-Year Rule:</strong> If you have a family history, start annual dilated exams 10 years earlier than their diagnosis.</li>
       <li><strong>Lifestyle:</strong> Quitting smoking is the #1 modifiable risk factor to stop AMD progression.</li>
     </ul>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">About the Researcher</h3>
@@ -121,7 +121,7 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '❤️ Cardi
       <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/">Brain | 
       <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver
     </p>
-  </div>
+  
 
   <div class="ah-card" style="background: rgb(241, 245, 249);">
     <h3 class="ah-title">Clinical Citations &amp; Resources</h3>
@@ -132,10 +132,9 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '❤️ Cardi
     </ul>
     <div class="ah-update-box" style="margin-top: 10px;">
       <strong>March 2026 Update:</strong> High-protein intake (<strong>1.2–1.5 g/kg</strong>) is now standard advocacy for aging adults to prevent sarcopenia, while blood pressure targets for all vascular-related chronic conditions now align with <strong>&lt;130 mmHg</strong>.
-    </div>
-  </div>
+    
+  
 
   <p style="color: #64748b; font-size: 0.9rem; text-align: center;">
     Provided by Tommy T. Douglas | <a href="http://aginghealth.website">AgingHealth.website
   </p>
-</div>

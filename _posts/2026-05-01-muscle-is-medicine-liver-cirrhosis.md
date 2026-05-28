@@ -109,4 +109,4 @@ No. Modern consensus confirms that restricting protein does not cure encephalopa
 
 <div style="background:#f4f7f9; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>May 2026 Patient Advocacy Alert:</strong> When tracking your daily nutrition totals, prioritize high-quality protein sources containing rich concentrations of leucine (such as eggs, poultry, and pure whey or targeted plant-based isolates). These amino acids provide the strongest biological signal to trigger muscle repair in older adults with compromised metabolic capacity.
-</div>
+

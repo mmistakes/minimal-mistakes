@@ -51,7 +51,7 @@ tags: ['🌱 Senior Longevity', 'Community', 'Equality', 'Advocacy']
 <ul>
   <li><b>Lower Quality of Life:</b> <a href="https://www.randomthoughts.bio/posts/ageism-in-the-workplace/">Ageism negatively impacts the physical and mental health of older adults, diminishing their quality of life. It often leads to social isolation, limited healthcare access, and fewer engagement opportunities, increasing feelings of loneliness and depression. Consequently, older individuals may lose vitality and resilience, hindering their enjoyment of life and sense of purpose.</li>
 </ul>
-<h3>Combating Ageism: A Call to Action</h3>Addressing discrimination and racism in healthcare is crucial for ensuring older adults have fair access to services and quality care. By confronting these issues, we can foster an inclusive environment that meets the diverse needs of seniors, leading to better health outcomes and a more equitable healthcare system.<div><br /></div><div>Here are some strategies that can help:
+<h3>Combating Ageism: A Call to Action</h3>Addressing discrimination and racism in healthcare is crucial for ensuring older adults have fair access to services and quality care. By confronting these issues, we can foster an inclusive environment that meets the diverse needs of seniors, leading to better health outcomes and a more equitable healthcare system.<br />Here are some strategies that can help:
 <h3>Self-Advocacy: </h3>
 <p>It is essential for older adults to take an active role in self-advocacy. This means they should not hesitate to voice their concerns when faced with discriminatory practices or racist attitudes from healthcare professionals. By asserting their rights, they can engage in meaningful dialogue, seek clarification on their treatment, and communicate any apprehensions they may have regarding their care.</p>
 <h3>Know Your Rights: </h3>
@@ -74,14 +74,14 @@ tags: ['🌱 Senior Longevity', 'Community', 'Equality', 'Advocacy']
 <p>Taking Action:</p>
 <p>If you suspect you've experienced ageism in healthcare, don't hesitate to speak up. Advocate for yourself and seek a second opinion if necessary. Additionally, reporting incidents of age bias to the <a href="https://www.randomthoughts.bio/posts/np-vs-pa-difference/">healthcare provider or relevant authorities can help address the issue.</p>
 <p>Together, we can work towards a healthcare system free from ageism, where all individuals receive care based on their needs, not their age.</p>
-<style>.active,.collapsible:hover{background-color:#ccc}.collapsible{background-color:#f9f9f9;border:none;color:#444;cursor:pointer;font-size:15px;outline:none;padding:10px;text-align:left;width:100%}.content{background-color:#f1f1f1;display:none;overflow:hidden;padding:0 18px}</style> <button class="collapsible"><span style="color: #004d40; font-size: 1.5em 600;"><span style="font-family: Jura; font-size: x-large;"><b>➽Fact Check Sources and Further Reading</b></span></span></button><div class="content">
+<style>.active,.collapsible:hover{background-color:#ccc}.collapsible{background-color:#f9f9f9;border:none;color:#444;cursor:pointer;font-size:15px;outline:none;padding:10px;text-align:left;width:100%}.content{background-color:#f1f1f1;display:none;overflow:hidden;padding:0 18px}</style> <button class="collapsible"><span style="color: #004d40; font-size: 1.5em 600;"><span style="font-family: Jura; font-size: x-large;"><b>➽Fact Check Sources and Further Reading</b></span></span></button>
   <p>1. <a href="https://www.medicalnewstoday.com/articles/ageism#types" target="_blank">What is ageism? Types, examples, and impact on health (medicalnewstoday.com)</p>
   <p>2. <a href="https://www.randomthoughts.bio/posts/health-disparities-equity-equality/" target="_blank">Bridging the Divide: Health Disparities, Equity, and Equality (randomthoughts.bio</p>
   <p>3. <a href="https://www.commonwealthfund.org/publications/issue-briefs/2022/apr/how-discrimination-in-health-care-affects-older-americans" target="_blank">How Discrimination in Health Care Affects Older Americans | Commonwealth Fund</p>
   <p>4. <a href="https://www.diversityscience.org/diverse-patient-care/?msclkid=94264a02558e172f39ce2c335f07551f" target="_blank">Training in evidence-based best practices for diverse patients. Clinician-approved. (diversityscience.org)</p>
   <p>5. <a href="https://www.healthyagingpoll.org/reports-more/report/everyday-ageism-and-health" target="_blank">Everyday Ageism and Health | National Poll on Healthy Aging (healthyagingpoll.org)</p>
    <!--Add more sources as needed-->
-</div>
+
 <script>
   var coll = document.getElementsByClassName("collapsible");
   for (var i = 0; i < coll.length; i++) {
@@ -95,4 +95,4 @@ tags: ['🌱 Senior Longevity', 'Community', 'Equality', 'Advocacy']
       }
     });
   }
-</script></div>
+</script>

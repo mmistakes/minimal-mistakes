@@ -143,4 +143,4 @@ tags: ['🛡️ Liver & Immune Health', '🌱 Senior Longevity', '❤️ Cardiov
   <li>
     <a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/esophagitis">Esophagitis | Johns Hopkins Medicine
   </li>
-</ul></div>
+</ul>

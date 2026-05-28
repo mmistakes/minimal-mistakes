@@ -29,7 +29,7 @@ Data reveals that falls are the primary driver of **Traumatic Brain Injury (TBI)
 > **⚠️ Medical Disclaimer:** This material is designed strictly for educational and patient self-advocacy purposes. It does not replace professional medical advice, clinical diagnosis, or structured therapeutic protocols. Always consult a qualified healthcare provider regarding any persistent physiological symptoms or complex chronic conditions.
 {.prompt-warning}
 
-![Senior woman walking safely with a cane]({{ '/assets/images/senior-woman-walk-safe.webp' | relative_url }})
+![Senior woman walking safely with a cane](![](/assets/images/senior-woman-walk-safe.webp' | relative_url ))
 *Figure 1: Active Stability. Maintaining functional muscle mass, optimizing sensory inputs, and utilizing appropriate mobility aids are necessary strategies to break the fall-trauma cycle.*
 
 ---
@@ -171,7 +171,7 @@ Yes. Because symptoms like confusion, slower cognitive processing, and temporary
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">
 <strong>March 2026 Clinical Update:</strong> Supporting your global organ environment demands comprehensive metabolic preservation. To safeguard your skeletal frame against accelerated muscle loss (sarcopenia) and support systemic cellular turnover, maintain a stable protein intake of <strong>1.2 to 1.6 grams per kilogram of body weight daily</strong>. If you are managing macrovascular concerns or tracking portal pressures, hold your resting blood pressure strictly <strong>under 130/80 mmHg</strong> to isolate your delicate neurovascular arrays from pressure strains.
-</div>
+
 
 <script type="application/ld+json">
 {
