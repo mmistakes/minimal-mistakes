@@ -177,7 +177,7 @@ The interplay between reality and perception invites ongoing introspection. When
 ### Sources & Further Reading (2025-2026)
 * **National Institutes of Health:** [How the Brain Constructs Perception](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5573739/)
 * **American Psychological Association:** [Perception vs. Reality in Psychology](https://www.apa.org/science/about/psa/2019/02/perception-reality)
-* **Aging Health Research:** [Cortisol and Its Impact on Senior Health.](/posts/cortisol-stress-hormone-effects-management/)
+* **Aging Health Research:** [Cortisol and Its Impact on Senior Health.](/posts//cortisol-stress-hormone-effects-management/)
 
 <script type="application/ld+json">
 {

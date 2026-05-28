@@ -2,7 +2,7 @@
 layout: single
 title: "Food Additives & Type 2 Diabetes: The Hidden Metabolic Cost"
 date: 2026-04-10T11:00:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Metabolism", "Type 2 Diabetes", "Nutrition", "Gut Health", "Food Science"]
 description: "A comprehensive 2026 researcher's guide explaining how common industrial emulsifiers and stabilizers disrupt insulin signaling and damage the gut lining."
 excerpt: "Exposing the hidden metabolic cost of non-nutritive food additives. Discover how common emulsifiers alter gut architecture and drive systemic insulin resistance."

@@ -106,7 +106,7 @@ include a mild fever, muscle aches, and headaches.
     <li>
       <p>
         <b>The "Partnership" Angle:</b>
-        Provide a list of "Red Flags" for when a <a href="https://www.aginghealth.website/posts/the-importance-of-senior-home-health/" title="The Importance Of Senior Home Health" rel="dofollow"><b>senior should stop home</b></a> care and contact their physician (e.g.,
+        Provide a list of "Red Flags" for when a <a href="https://www.aginghealth.website/posts//the-importance-of-senior-home-health/" title="The Importance Of Senior Home Health" rel="dofollow"><b>senior should stop home</b></a> care and contact their physician (e.g.,
         inability to keep down clear liquids for 12 hours, dark urine, or extreme dizziness).
       </p>
     </li>
@@ -139,7 +139,7 @@ include a mild fever, muscle aches, and headaches.
 </div>
 <div><br /></div>
 <div>
-  If you’ve had norovirus, avoid cooking for others for at least three days, and follow <a href="https://www.aginghealth.website/posts/bird-flu-outbreak-facts-and-safety-tips/" title="Bird Flu Outbreak Facts And Safety Tips" rel="dofollow"><b>food safety tips</b></a> like cooking
+  If you’ve had norovirus, avoid cooking for others for at least three days, and follow <a href="https://www.aginghealth.website/posts//bird-flu-outbreak-facts-and-safety-tips/" title="Bird Flu Outbreak Facts And Safety Tips" rel="dofollow"><b>food safety tips</b></a> like cooking
   seafood to at least145°F (63°C), rinsing produce well, and using separate cutting boards for raw and cooked
   foods.&nbsp;
 </div>
@@ -331,10 +331,10 @@ include a mild fever, muscle aches, and headaches.
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" target="_blank" rel="noopener noreferrer nofollow">Heart</a> |
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" target="_blank" rel="noopener noreferrer nofollow">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" target="_blank" rel="noopener noreferrer nofollow">Brain</a> |
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" target="_blank" rel="noopener">Liver</a>
+    <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" target="_blank" rel="noopener noreferrer nofollow">Heart</a> |
+    <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/" target="_blank" rel="noopener noreferrer nofollow">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/" target="_blank" rel="noopener noreferrer nofollow">Brain</a> |
+    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" target="_blank" rel="noopener">Liver</a>
   </p><br />
 </div>
 </div>
@@ -355,7 +355,7 @@ include a mild fever, muscle aches, and headaches.
   </a>
 </div>
 <style>
-  /* <a href="https://www.aginghealth.website/posts/big-six-pillars-optimal-aging-health/" title="Big Six Pillars Optimal Aging Health" rel="dofollow"><b>Aging Health Clinical</b></a> Table Style */
+  /* <a href="https://www.aginghealth.website/posts//big-six-pillars-optimal-aging-health/" title="Big Six Pillars Optimal Aging Health" rel="dofollow"><b>Aging Health Clinical</b></a> Table Style */
 
 
 .ah-research-table {

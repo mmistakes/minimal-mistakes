@@ -2,7 +2,7 @@
 layout: single
 title: "Plexin-B1: The Cellular GPS Guiding Alzheimer's Research"
 date: 2026-04-01T08:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Senior Longevity", "Clinical Research", "Cognitive Health", "Genetics", "Clinical Trials"]
 description: "How the Plexin-B1 protein acts as a cellular GPS guiding brain cells and emerging 2026 advancements in glymphatic waste management."
 excerpt: "Alzheimer's is shifting from a 'protein problem' to a 'traffic management' problem. Discover how Plexin-B1 guides brain cells and how to optimize your nightly glymphatic flush."

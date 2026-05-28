@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Inflation's Impact on Health and Healthcare: A Senior Citizen's Guide"
-permalink: /posts/inflation-impact-senior-healthcare-advocacy/
+permalink: /posts//inflation-impact-senior-healthcare-advocacy/
 date: 2026-02-01T01:00:00+00:00
 category: [Patient Advocacy]
 tags: [Diabetes, Heart Health, Advocacy, Aging Well, Longevity]
@@ -91,8 +91,8 @@ Hospital billing environments are prone to clerical errors. When facing a signif
 ## 📘 Companion Research Libraries
 
 *   **The Tracker:** Take systemic control of your daily home numbers and medication timing by accessing my interactive [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
-*   **The Foundation:** New to managing metabolic markers and protecting your blood vessels? Build your baseline health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-*   **The Neuro Axis:** Explore how systemic metabolic parameters directly impact cognitive longevity by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+*   **The Foundation:** New to managing metabolic markers and protecting your blood vessels? Build your baseline health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+*   **The Neuro Axis:** Explore how systemic metabolic parameters directly impact cognitive longevity by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 
 ---
 
@@ -107,7 +107,7 @@ Hospital billing environments are prone to clerical errors. When facing a signif
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

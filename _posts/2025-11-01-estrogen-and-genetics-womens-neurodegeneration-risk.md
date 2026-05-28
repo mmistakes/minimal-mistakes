@@ -2,7 +2,7 @@
 layout: single
 title: "Estrogen and Genetics: Women's Neurodegeneration Risk"
 date: 2025-11-01T15:35:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Senior Health", "Prevention", "Heart", "Biomarkers"]
 description: "An evidence-based evaluation of women's elevated risk for Alzheimer's and MS, analyzing estrogen loss, X-chromosome genes, and microglial priming."
 excerpt: "Women do not simply live longer with neurodegenerative disease—they experience distinct biological vectors shaped by estrogen withdrawal and X-chromosome dosage."

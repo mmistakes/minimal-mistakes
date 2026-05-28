@@ -1,7 +1,7 @@
 ---
 title: "Medicare Gaps: Top Ten Things Not Covered in 2026"
 date: 2026-05-05 05:20:00 -0600
-categories: [Health Literacy, Senior Advocacy]
+categories: [Health Literacy, senior-advocacy]
 tags: [Medicare, Insurance, Dental Care, Hearing Aids, Long-Term Care]
 description: "Identify the critical coverage limitations within original Medicare (Part A and Part B) with this evidence-based 2026 policy guide. Translating complex insurance architecture into clear health literacy, this analysis breaks down the top ten healthcare exclusions—including long-term custodial care, routine dental, vision, and hearing services—to help older adults mitigate financial risk and optimize supplemental coverage."
 excerpt: "Navigate the hidden out-of-pocket costs of original Medicare. Discover the top ten medical services not covered in 2026 and learn how to close these critical coverage gaps."
@@ -142,7 +142,7 @@ Medicare is an incredible foundation, but it is not a "shield" against all costs
 * **Medicare.gov (2026):** *Official Medicare & You Handbook.*
 * **CMS (2025):** *Inflation Reduction Act: The $2,000 Part D Cap Explained.*
 * **National Institute on Aging:** *Long-Term Care Planning Guide.*
-* **Aging Health Research (2026):** [Navigating Medicare: A Senior’s Guide.](/posts/medicare-basics-senior-guide/)
+* **Aging Health Research (2026):** [Navigating Medicare: A Senior’s Guide.](/posts//medicare-basics-senior-guide/)
 
 <script type="application/ld+json">
 {

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Understanding Anemia: A Guide to Diagnosis, Treatment, and Advocacy"
-permalink: /posts/anemia-what-you-need-to-know/
+permalink: /posts//anemia-what-you-need-to-know/
 date: 2026-02-04
 description: "A patient-centered guide to anemia: Understanding why red blood cell counts drop, the 'Hepcidin barrier' in chronic illness, and the path to effective repletion."
 header:
@@ -102,9 +102,9 @@ Typically when hemoglobin drops below **7 or 8 g/dL**, or if you are experiencin
 ---
 
 ### About the Researcher
-**Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a [major heart attack]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) who manages Type 2 Diabetes and Cirrhosis, he specializes in translating complex lab data into actionable health literacy.
+**Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a [major heart attack]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) who manages Type 2 Diabetes and Cirrhosis, he specializes in translating complex lab data into actionable health literacy.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

@@ -2,7 +2,7 @@
 layout: single
 title: "Seniors’ Mental Health: The Internal Medicine Connection"
 date: 2026-04-10T11:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: [Mental Health, Internal Medicine, Geriatrics, Depression, Stress]
 description: "An in-depth look at why internal medicine acts as the frontline defense for mental health in seniors, highlighting how late-life depression arises from a complex interplay of physical and social influences."
 excerpt: "Late-life depression routinely masks itself as physical pain or memory loss. Discover how internal medicine specialists untangle polypharmacy and uncover root causes."

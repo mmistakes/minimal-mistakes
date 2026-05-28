@@ -2,7 +2,7 @@
 layout: single
 title: "The Power of the Mind's Eye: How Imagination Improves Health"
 date: 2025-12-19T23:32:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Mindset", "Neuroplasticity", "Prevention", "Senior Health"]
 description: "Discover how your thoughts and dreams influence your biology. Learn to harness your imagination for a vibrant, youthful life and age with vitality."
 excerpt: "The phrase 'it's all in your head' isn't a dismissal—it is a biological roadmap. Discover how your brain's predictive coding networks map mental imagery directly onto physical tissues."
@@ -206,7 +206,7 @@ By consciously instructing your brain to project strength, vitality, and indepen
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/imagination-reality-health-connection-seniors/"
+        "@id": "https://www.aginghealth.website/posts//imagination-reality-health-connection-seniors/"
       },
       "headline": "The Power of the Mind's Eye: How Imagination Improves Health",
       "description": "Discover how the connection between imagination and reality influences aging. Learn science-backed mental techniques to improve your physical health.",

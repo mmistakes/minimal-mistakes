@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "A Low-Glycemic Foods List for Sugar Management"
-permalink: /posts/low-glycemic-foods-list-sugar-management/
+permalink: /posts//low-glycemic-foods-list-sugar-management/
 date: 2026-02-02
 description: "Master blood sugar with the senior guide to low-glycemic living and vascular defense."
 header:
@@ -100,8 +100,8 @@ Vascular protection requires careful selectivity regarding dietary fat architect
 ## 📘 Essential Patient Resources
 
 * **The Tracker:** Take complete control of your daily home numbers by downloading and completing the interactive [Daily Glucose and Medication Tracker]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
-* **The Recovery Journey:** Read my historical analysis of vascular preservation and health tracking following a significant cardiovascular event in my [Lessons from a 2008 Heart Attack Survivor]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) report.
-* **The Neuro-Metabolic Connection:** Explore how unmanaged insulin resistance can cross the blood-brain barrier to accelerate cognitive issues by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Recovery Journey:** Read my historical analysis of vascular preservation and health tracking following a significant cardiovascular event in my [Lessons from a 2008 Heart Attack Survivor]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) report.
+* **The Neuro-Metabolic Connection:** Explore how unmanaged insulin resistance can cross the blood-brain barrier to accelerate cognitive issues by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 
 ---
 
@@ -116,13 +116,13 @@ Vascular protection requires careful selectivity regarding dietary fat architect
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in translating complex clinical data, wastewater monitoring trends, and peer-reviewed metabolic literature into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
-* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts/the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
-* [**Liver Health: Understanding Decompensation and Portal Hypertension**]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }})
+* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts//the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
+* [**Liver Health: Understanding Decompensation and Portal Hypertension**]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }})
 
 <script type="application/ld+json">
 {

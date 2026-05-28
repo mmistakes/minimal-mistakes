@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Why Medication Consistency is Crucial for Hypertension"
-permalink: /posts/medication-consistency-crucial-hypertension/
+permalink: /posts//medication-consistency-crucial-hypertension/
 date: 2026-02-14
 description: "When 'just a nosebleed' is a warning sign: Exploring the dangers of inconsistent blood pressure care and the importance of steady regulation."
 header:
@@ -116,7 +116,7 @@ function checkBloodPressure() {
 ### About the Researcher
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major heart attack who manages Type 2 Diabetes, he specializes in translating complex medical data into actionable health literacy.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

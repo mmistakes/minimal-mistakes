@@ -110,10 +110,10 @@ tags: ['🛡️ Liver & Immune Health', '❤️ Cardiovascular & T2D']
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes with Metformin and GLP-1 therapy, he specializes in translating complex medical data into actionable health literacy.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">Heart</a> | 
-      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
-      <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/">Brain</a> | 
-      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a>
+      <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/">Heart</a> | 
+      <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/">Brain</a> | 
+      <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/">Liver</a>
     </p>
   </div>
 

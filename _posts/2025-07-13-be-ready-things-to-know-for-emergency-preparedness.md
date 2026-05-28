@@ -69,7 +69,7 @@ Earthquakes are sudden releases of accumulated kinetic energy tracking across te
 
 ### 3. Severe Blizzards & Deep Winter Freezes
 Characterized by sustained high winds, blinding snowfall, and extreme sub-zero temperatures. Freezing events quickly knock out overhead power lines, paralyze local transportation pipelines, and rapidly drop interior home temperatures into the danger zone for **hypothermia**.
-* *Action Step:* Pre-stage alternative, indoor-safe non-electric heating options, lock down thermal window barriers, and preserve an un-compromised inventory of shelf-stable food and winter insulation. Learn how severe cold weather loops impact cardiac stress profiles by reading our [Heart Attack Risk and Weather Guide](/posts/is-heart-attack-risk-increased-more-by/).
+* *Action Step:* Pre-stage alternative, indoor-safe non-electric heating options, lock down thermal window barriers, and preserve an un-compromised inventory of shelf-stable food and winter insulation. Learn how severe cold weather loops impact cardiac stress profiles by reading our [Heart Attack Risk and Weather Guide](/posts//is-heart-attack-risk-increased-more-by/).
 
 ### 4. Wildfires & Defensive Zones
 Rapidly spreading fires that advance with immense velocity, fueled heavily by prolonged seasonal droughts and high surface winds. 
@@ -211,7 +211,7 @@ Seniors using power-dependent devices (like oxygen concentrators or nebulizers) 
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/emergency-preparedness-guide/"
+        "@id": "https://www.aginghealth.website/posts//emergency-preparedness-guide/"
       },
       "headline": "Be Ready: Things to Know For Emergency Preparedness",
       "description": "An expert-backed emergency preparedness blueprint tailored for independent seniors, detailing mobile kit parameters, family communication plans, and property protection steps.",

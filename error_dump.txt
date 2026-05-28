@@ -1,0 +1,8 @@
+Running 3 checks (Images, Links, Scripts) in ["./_site"] on *.html files ...
+
+
+Checking 2196 internal links
+Checking internal link hashes in 151 files
+Ran on 371 files!
+
+

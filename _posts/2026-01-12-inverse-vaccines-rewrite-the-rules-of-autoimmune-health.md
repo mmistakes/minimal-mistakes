@@ -2,7 +2,7 @@
 layout: single
 title: "Inverse Vaccines Rewrite the Rules of Autoimmune Health"
 date: 2026-01-12T06:10:05+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Immune Health", "Prevention", "Biomarkers", "Senior Health"]
 description: "A patient's guide to inverse vaccines and antigen-specific immunotherapy, exploring how liver-targeted tolerance therapies are resetting autoimmune care."
 excerpt: "Traditional vaccines prepare the body to fight pathogens. Inverse vaccines do the exact opposite—they teach the immune system to ignore healthy cells, offering a surgical reset for autoimmunity."

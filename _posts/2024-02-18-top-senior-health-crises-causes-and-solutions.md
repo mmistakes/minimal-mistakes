@@ -44,7 +44,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
 <hr />
 <h2>2. Falls and Mobility-Related Injuries</h2><h3>Why It’s a Crisis</h3>
 
-<p><a href="https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/" target="_blank">Falls are the leading cause of injury-related death among seniors</a>.</p>
+<p><a href="https://www.aginghealth.website/posts//tbi-in-older-adults-fall-prevention-recovery/" target="_blank">Falls are the leading cause of injury-related death among seniors</a>.</p>
 <h3>Causes</h3>
 <ul>
 <li>Muscle weakness</li>
@@ -57,7 +57,7 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
 <ul>
 <li>Fall risk assessments</li>
 <li>Strength and balance training (Tai Chi, PT programs)</li>
-<li><a href="https://www.aginghealth.website/posts/making-your-home-safe-for-cognitive-decline/" target="_blank">Home safety modifications</a></li>
+<li><a href="https://www.aginghealth.website/posts//making-your-home-safe-for-cognitive-decline/" target="_blank">Home safety modifications</a></li>
 <li>Medication review</li>
 <li>Assistive mobility devices</li>
 </ul>
@@ -147,10 +147,10 @@ tags: ['💪 Functional Fitness', '🧠 Cognitive Health', '❤️ Cardiovascula
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
+    <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
+    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
   </p>
 </div>
 <h2>Source &amp; Citations Box</h2><p><strong>Primary Sources:</strong></p><ul>

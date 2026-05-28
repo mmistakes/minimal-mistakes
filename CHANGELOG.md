@@ -156,7 +156,7 @@ Special thanks to @bexelbie for their contributions in this release.
 - Remove unused classes from `_layouts/single.html`.
 - Migrate npm run scripts to Ruby Rake tasks.
 - Add Rake task `version` for updating all hard-coded version numbers from `package.json` all at once.
-- Merge `categories` and `tags` layout into `_includes/posts-taxonomy.html`.
+- Merge `categories` and `tags` layout into `_includes/posts/-taxonomy.html`.
 - Update Social Sharing links section. [#4066](https://github.com/mmistakes/minimal-mistakes/pull/4066)
 
 ## [4.25.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.25.1)
@@ -871,7 +871,7 @@ Special thanks to @bexelbie for their contributions in this release.
 - Remove Alexa.com verification due to retiring of "[Claim Your Site](https://support.alexa.com/hc/en-us/articles/219135887)" feature. [#1350](https://github.com/mmistakes/minimal-mistakes/issues/1350)
 - Disable analytics in `development` environment. [#1362](https://github.com/mmistakes/minimal-mistakes/pull/1362)
 - Disable comments in `development` environment. [#1363](https://github.com/mmistakes/minimal-mistakes/pull/1363)
-- Exclude specific pages/posts from search index by adding `search: false` to the YAML Front Matter. [#1369](https://github.com/mmistakes/minimal-mistakes/pull/1369)
+- Exclude specific pages/posts/ from search index by adding `search: false` to the YAML Front Matter. [#1369](https://github.com/mmistakes/minimal-mistakes/pull/1369)
 - Add optional `description` key to masthead links for clarifying their purpose with the `title` attribute. [#1380](https://github.com/mmistakes/minimal-mistakes/pull/1380)
 - Incorporate site search into masthead. [#1383](https://github.com/mmistakes/minimal-mistakes/pull/1383)
 - Update gem dependencies. [#1388](https://github.com/mmistakes/minimal-mistakes/pull/1388)

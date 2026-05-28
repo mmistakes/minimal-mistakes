@@ -2,7 +2,7 @@
 layout: single
 title: "Alzheimer's Combination Therapy: The 2026 Shift"
 date: 2026-04-16T08:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Alzheimer's", "Neurology", "Geriatrics", "Clinical Research", "Pharmacology"]
 description: "A 2026 research update on multi-front Alzheimer's strategies pairing monoclonal amyloid-clearing antibodies with Plexin-B1 inhibitors for enhanced neurovascular protection."
 excerpt: "The single-drug paradigm has collapsed. Discover how pairing anti-amyloid 'cleaners' with Plexin-B1 'cellular compactors' is doubling safety and efficiency in early dementia care."

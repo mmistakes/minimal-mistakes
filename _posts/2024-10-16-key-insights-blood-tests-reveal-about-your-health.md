@@ -9,7 +9,7 @@ tags: ['❤️ Cardiovascular & T2D', '🧠 Cognitive Health', '🛡️ Liver & 
 <h2>🧬 Uncovering Hidden Insights: What Your Blood Reveals About Alzheimer’s, Heart Health, and Longevity</h2>
 <p style="text-align: left;">
   Blood tests are no longer just about checking for anemia or basic infections. In 2026, blood biomarkers have become
-  the "software code" of the human body, allowing us to peek into our future <a href="https://www.aginghealth.website/posts/digital-doctor-dilemma-online-health-risks/" rel="dofollow" title="Digital Doctor Dilemma Online Health Risks"><b>health risks decades</b></a> before symptoms
+  the "software code" of the human body, allowing us to peek into our future <a href="https://www.aginghealth.website/posts//digital-doctor-dilemma-online-health-risks/" rel="dofollow" title="Digital Doctor Dilemma Online Health Risks"><b>health risks decades</b></a> before symptoms
   appear.
 </p><p style="text-align: left;">
 This guide explores the groundbreaking shift from reactive diagnostics to proactive longevity medicine.<span></span></p><!--more--><p></p><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left;"><tbody><tr><td style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEkqEdEE-CX-h9-AbInhGUjrK-Q3jgIrvjMZW5CspTIAU5bKm99NtOfQfegYbZJU13h3uVF7bTOeMwUbONxWu82r6JNo2314oR3npBw3hMgZmMR_41nb-jDucbR0Ch6fYmk_8hyphenhyphenud6e5gYFk77A-4SdZ-0mtatVVXLKR68eBMyftoTuAduQQGLmc_S6OLG/s925/In%20a%20high-tech%20office%20doctors%20examines%20blood%20work%20on%20a%20holographic%20computer.webp" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img alt="A doctor and assistant examine blood work on a computer." border="0" data-original-height="525" data-original-width="925" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEkqEdEE-CX-h9-AbInhGUjrK-Q3jgIrvjMZW5CspTIAU5bKm99NtOfQfegYbZJU13h3uVF7bTOeMwUbONxWu82r6JNo2314oR3npBw3hMgZmMR_41nb-jDucbR0Ch6fYmk_8hyphenhyphenud6e5gYFk77A-4SdZ-0mtatVVXLKR68eBMyftoTuAduQQGLmc_S6OLG/s16000/In%20a%20high-tech%20office%20doctors%20examines%20blood%20work%20on%20a%20holographic%20computer.webp" title="Unraveling the Mysteries of Blood Tests" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Blood tests can reveal a wealth of information about your health, from common conditions to early signs of serious diseases.<br /></td></tr></tbody></table><br /><div>&nbsp;<div class="biomarker-card">
@@ -114,7 +114,7 @@ function sortTable(n) {
 <h3>🫀 2. Predicting Heart Disease in Women: The 30-Year Window</h3>
 
   <p>
-    Recent <a href="https://www.aginghealth.website/posts/what-new-studies-show-about-slowing/" rel="dofollow" title="What New Studies Show About Slowing"><b>longitudinal studies show</b></a> that three specific markers can predict a woman's cardiovascular risk up to
+    Recent <a href="https://www.aginghealth.website/posts//what-new-studies-show-about-slowing/" rel="dofollow" title="What New Studies Show About Slowing"><b>longitudinal studies show</b></a> that three specific markers can predict a woman's cardiovascular risk up to
     <strong>30 years in advance</strong>
     .
   </p>
@@ -125,7 +125,7 @@ function sortTable(n) {
         A "sticky" genetic particle. Unlike LDL, your levels are determined at birth and don't change with diet. Knowing
         this number early is vital for
         <strong>
-          <a href="https://www.aginghealth.website/posts/apob-analysis-heart-health-longevity/" target="_blank">
+          <a href="https://www.aginghealth.website/posts//apob-analysis-heart-health-longevity/" target="_blank">
             preventing premature heart attacks
           </a>
         </strong>
@@ -166,7 +166,7 @@ function sortTable(n) {
     <li>
       <p>
         <strong>Proteomics:</strong>
-        A newer field that analyzes protein patterns. <a href="https://www.aginghealth.website/posts/new-aging-research-march-2024/" rel="dofollow" title="New Aging Research March 2024"><b>New research suggests</b></a> these tests can detect many
+        A newer field that analyzes protein patterns. <a href="https://www.aginghealth.website/posts//new-aging-research-march-2024/" rel="dofollow" title="New Aging Research March 2024"><b>New research suggests</b></a> these tests can detect many
         <strong>Stage I cancers</strong>
         that imaging would normally miss.
       </p>
@@ -233,12 +233,12 @@ function sortTable(n) {
     <strong>Q: Why is my Lp(a) high if my LDL is low?</strong>
     <strong>A:</strong>
     Lp(a) is purely genetic. It is not influenced by statins, exercise, or keto diets. If your Lp(a) is high, you are at
-    a higher risk for <a href="https://www.aginghealth.website/posts/in-the-blood/" rel="dofollow" title="In The Blood"><b>blood clots and arterial narrowing regardless</b></a> of your "standard" cholesterol score.
+    a higher risk for <a href="https://www.aginghealth.website/posts//in-the-blood/" rel="dofollow" title="In The Blood"><b>blood clots and arterial narrowing regardless</b></a> of your "standard" cholesterol score.
   </p>
   <p>
     <strong>Q: How often should a senior have liver function tests?</strong>
     <strong>A:</strong>
-    If you are <a href="https://www.aginghealth.website/posts/taking-vitamins-daily-isnt-best-for/" rel="dofollow" title="Taking Vitamins Daily Isn't Best for Health"><b>taking more than three daily</b></a> medications (polypharmacy), LFTs should be checked at least
+    If you are <a href="https://www.aginghealth.website/posts//taking-vitamins-daily-isnt-best-for/" rel="dofollow" title="Taking Vitamins Daily Isn't Best for Health"><b>taking more than three daily</b></a> medications (polypharmacy), LFTs should be checked at least
     <strong>every 6 months</strong>
     to ensure your liver is processing those drugs without cellular damage.
   </p>

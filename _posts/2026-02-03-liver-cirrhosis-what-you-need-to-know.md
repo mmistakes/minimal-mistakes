@@ -1,7 +1,10 @@
 ---
 layout: single
 title: "Liver Cirrhosis: Understanding Decompensation and Portal Hypertension"
-permalink: /posts/liver-cirrhosis-understanding-decompensation/
+redirect_from:
+  - /2023/09/liver-cirrhosis-what-you-need-to-know.html
+  - /posts//liver-cirrhosis-what-you-need-to-know/
+permalink: /posts//liver-cirrhosis-understanding-decompensation/
 date: 2026-02-03
 description: "A clinical and personal guide to managing decompensated liver cirrhosis, focusing on portal hypertension, variceal banding, and the brain-liver axis."
 header:
@@ -89,7 +92,7 @@ Current clinical practice guidelines highlight individualized therapy pathways t
 ---
 
 ### The Liver-Brain Connection
-Metabolic health is intricately interconnected across major organs. Emerging data regarding **Type 3 Diabetes** reveals that insulin resistance combined with chronic, liver-driven cytokine signaling can prompt sustained neuroinflammation. To explore how systemic metabolic disorders compromise cognitive function over time, read my full analysis: [Is Alzheimer’s Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+Metabolic health is intricately interconnected across major organs. Emerging data regarding **Type 3 Diabetes** reveals that insulin resistance combined with chronic, liver-driven cytokine signaling can prompt sustained neuroinflammation. To explore how systemic metabolic disorders compromise cognitive function over time, read my full analysis: [Is Alzheimer’s Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 
 ---
 
@@ -140,14 +143,14 @@ Metabolic health is intricately interconnected across major organs. Emerging dat
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in translating complex clinical data, metabolic metrics, and peer-reviewed gastroenterology journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
 * [**The Log Dashboard: Daily Glucose and Medication Tracker**]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }})
-* [**The Core Frontier: Low-Glycemic Foods List for Sugar Management**]({{ '/posts/low-glycemic-foods-list-sugar-management/' | relative_url }})
-* [**The Structural Engine: Managing Liver Pressure with Carvedilol**]({{ '/posts/mini-stroke-prevention-liver-pressure-carvedilol/' | relative_url }})
+* [**The Core Frontier: Low-Glycemic Foods List for Sugar Management**]({{ '/posts//low-glycemic-foods-list-sugar-management/' | relative_url }})
+* [**The Structural Engine: Managing Liver Pressure with Carvedilol**]({{ '/posts//mini-stroke-prevention-liver-pressure-carvedilol/' | relative_url }})
 
 <script type="application/ld+json">
 {

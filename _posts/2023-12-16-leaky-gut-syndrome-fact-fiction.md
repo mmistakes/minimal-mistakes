@@ -23,7 +23,7 @@ Leaky gut syndrome is hypothesized to involve increased intestinal permeability,
 ## 1. Inflammation and the Gut Barrier
 Chronic inflammation can harm the delicate gut lining. This is a complex biological reaction to pathogens or irritants, involving immune cells and molecular mediators. 
 
-While short-term inflammation helps the body heal, **chronic inflammation** is detrimental. It is a known risk factor for cardiovascular issues and may downregulate the Vitamin D receptors (**VDR**) we’ve discussed in our [sarcopenia research](https://www.aginghealth.website/posts/vitamin-d-sarcopenia-fast-twitch/).
+While short-term inflammation helps the body heal, **chronic inflammation** is detrimental. It is a known risk factor for cardiovascular issues and may downregulate the Vitamin D receptors (**VDR**) we’ve discussed in our [sarcopenia research](https://www.aginghealth.website/posts//vitamin-d-sarcopenia-fast-twitch/).
 
 ---
 
@@ -33,7 +33,7 @@ Adverse reactions to gluten, dairy, or eggs can trigger immune responses that po
 * **Food Allergies:** Occur when the immune system mistakenly identifies a protein as harmful, producing **IgE antibodies**. This triggers histamine release, leading to hives, swelling, or even anaphylaxis.
 * **Food Sensitivities:** Arise from the body's inability to properly digest certain foods. Symptoms like gas, bloating, and fatigue are common, but they do **not** engage the immune system in the same way an allergy does.
 
-If you suspect a sensitivity, [proactive healthcare and regular checkups](https://www.aginghealth.website/posts/9-tips-for-healthy-aging/) are your best tools for diagnosis.
+If you suspect a sensitivity, [proactive healthcare and regular checkups](https://www.aginghealth.website/posts//9-tips-for-healthy-aging/) are your best tools for diagnosis.
 
 ---
 
@@ -42,7 +42,7 @@ Stress releases **cortisol**, a hormone that can wreak havoc on the gut lining. 
 
 ### Management Strategies for Seniors:
 * **Quality Sleep:** Ensure at least 7 hours to keep cortisol levels regulated.
-* **Active Movement:** Regular [exercise and strength training](https://www.aginghealth.website/posts/healthy-aging-2026-evidence-tips/) reduce systemic stress.
+* **Active Movement:** Regular [exercise and strength training](https://www.aginghealth.website/posts//healthy-aging-2026-evidence-tips/) reduce systemic stress.
 * **Social Connection:** Spending time with loved ones buffers the physiological impact of stress.
 
 ---

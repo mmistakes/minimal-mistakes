@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Adapting to HealthCare's New Realities"
-permalink: /posts/navigating-maze-of-modern-healthcare/
+permalink: /posts//navigating-maze-of-modern-healthcare/
 date: 2025-06-30T18:28:00+00:00
 categories: ["Longevity"]
 tags: ["Senior Health", "Prevention", "Biomarkers", "Advocacy"]
@@ -164,7 +164,7 @@ Prioritize proactive preventive wellness visits. Because value-based care financ
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/navigating-maze-of-modern-healthcare/"
+        "@id": "https://www.aginghealth.website/posts//navigating-maze-of-modern-healthcare/"
       },
       "headline": "Adapting to HealthCare's New Realities",
       "description": "A comprehensive analysis of how 2026 legislative policy reforms, ACA subsidy sunsets, and value-based hospital frameworks alter the modern consumer health path.",

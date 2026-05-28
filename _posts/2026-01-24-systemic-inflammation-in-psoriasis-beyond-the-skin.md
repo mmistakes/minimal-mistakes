@@ -2,7 +2,7 @@
 layout: single
 title: "Systemic Inflammation in Psoriasis: Beyond the Skin"
 date: 2026-01-24T14:48:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Cardiovascular", "Immune Health", "Diabetes", "Nutrition", "Prevention"]
 description: "A deep dive into the systemic nature of psoriasis, exploring how circulating cytokines damage the heart, metabolic pathways, joints, and organs."
 excerpt: "Psoriasis is not merely a cosmetic skin condition; it is a full-body immune crisis. Discover the molecular pathways driving vascular and metabolic decline."
@@ -27,7 +27,7 @@ Understanding this systemic reality is essential to bypass diagnostic delays, co
 ![Systemic inflammation in psoriasis infographic](/assets/images/psoriasis-beyond-skin-infographic.webp)
 *Figure 1: The Systemic Target Map. Psoriasis-driven inflammation circulates continuously through the bloodstream, impacting blood vessel elasticity, glucose metabolism, and musculoskeletal structure far beneath the skin.*
 
-👉 **Related Cornerstone Guide:** [Psoriasis-Metabolic Syndrome Connection: Mortality Risk](/posts/psoriasis-metabolic-syndrome-connection-mortality-risk/)
+👉 **Related Cornerstone Guide:** [Psoriasis-Metabolic Syndrome Connection: Mortality Risk](/posts//psoriasis-metabolic-syndrome-connection-mortality-risk/)
 
 ---
 
@@ -60,7 +60,7 @@ Review how these specific circulating cytokines drive both surface skin cell rep
 | **IL-23** (Interleukin-23) | Acts as the upstream switch that keeps pro-inflammatory T-cells turned on. | Destabilizes metabolic homeostasis, shifting tissues toward systemic insulin resistance. |
 | **IL-6** (Interleukin-6) | Amplifies localized tissue swelling, redness, and microvascular heat. | Signals the liver to overproduce C-Reactive Protein (CRP), accelerating systemic inflammaging. |
 
-👉 *Related Archive:* [Inflammatory Cytokines and Cardiovascular Risk in Psoriasis](/posts/do-biologic-therapies-reduce-mortality-psoriasis/)
+👉 *Related Archive:* [Inflammatory Cytokines and Cardiovascular Risk in Psoriasis](/posts//do-biologic-therapies-reduce-mortality-psoriasis/)
 
 ---
 
@@ -74,7 +74,7 @@ Because circulating cytokines irritate the internal lining of your blood vessels
 ### 2. The Metabolic Engine
 Systemic cytokine surges directly interrupt cellular glucose and lipid processing. This block triggers peripheral insulin resistance, forcing the pancreas to overproduce insulin. This metabolic loop increases the long-term risk of developing type 2 diabetes, central visceral obesity, and dyslipidemia (unstable cholesterol profiles).
 
-👉 *Related Archive:* [Metabolic Syndrome Criteria and Long-Term Health Risks](/posts/psoriasis-metabolic-syndrome-connection-mortality-risk/)
+👉 *Related Archive:* [Metabolic Syndrome Criteria and Long-Term Health Risks](/posts//psoriasis-metabolic-syndrome-connection-mortality-risk/)
 
 ### 3. Liver and Kidney Filtration Layers
 Circulating inflammatory markers fundamentally alter how the liver stores lipids, significantly increasing the risk of developing Non-Alcoholic Fatty Liver Disease (NAFLD). Simultaneously, chronic cytokine exposure strains delicate kidney filtration beds, contributing to low-grade Chronic Kidney Disease (CKD) if left unmonitored.

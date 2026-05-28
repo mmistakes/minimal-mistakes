@@ -64,9 +64,9 @@ When most people think about celiac disease, they picture digestive symptoms—b
 <p>These nutrients are essential for cardiac muscle function. Nutrient deficiency cardiomyopathy has been documented in case reports involving untreated celiac patients citeturn0search5.</p>
 <hr />
 <h2 style="text-align: left;">Real-Life Case Studies</h2><h3 style="text-align: left;">Case Study 1: Reversible Cardiomyopathy After Gluten-Free Diet</h3>
-<p>A 38-year-old woman <a href="https://www.aginghealth.website/posts/timing-revascularization-heart-failure-propranolol-migraine-stroke/" rel="dofollow" title="Timing Revascularization Heart Failure Propranolol Migraine Stroke"><b>presented with heart failure</b></a> symptoms. Testing revealed undiagnosed celiac disease and severe iron deficiency. After initiating a gluten-free diet and correcting deficiencies, her cardiac function improved significantly within 12 months.</p>
+<p>A 38-year-old woman <a href="https://www.aginghealth.website/posts//timing-revascularization-heart-failure-propranolol-migraine-stroke/" rel="dofollow" title="Timing Revascularization Heart Failure Propranolol Migraine Stroke"><b>presented with heart failure</b></a> symptoms. Testing revealed undiagnosed celiac disease and severe iron deficiency. After initiating a gluten-free diet and correcting deficiencies, her cardiac function improved significantly within 12 months.</p>
 <hr />
-<h3 style="text-align: left;">Case Study 2: Silent Gluten Cardiomyopathy</h3><p>A 45-year-old man with <a href="https://www.aginghealth.website/posts/what-is-celiac-disease/" rel="dofollow" title="What Is Celiac Disease"><b>biopsy-confirmed celiac disease but inconsistent dietary adherence</b></a> developed progressive ventricular dilation. No genetic or viral causes were found. Strict dietary compliance stabilized cardiac function.</p>
+<h3 style="text-align: left;">Case Study 2: Silent Gluten Cardiomyopathy</h3><p>A 45-year-old man with <a href="https://www.aginghealth.website/posts//what-is-celiac-disease/" rel="dofollow" title="What Is Celiac Disease"><b>biopsy-confirmed celiac disease but inconsistent dietary adherence</b></a> developed progressive ventricular dilation. No genetic or viral causes were found. Strict dietary compliance stabilized cardiac function.</p>
 <hr />
 <h3 style="text-align: left;">Case Study 3: Pediatric Presentation</h3><p>A 12-year-old child diagnosed with celiac disease during evaluation for unexplained fatigue was incidentally found to have reduced ejection fraction. Early dietary management prevented progression.</p>
 <hr />
@@ -124,7 +124,7 @@ When most people think about celiac disease, they picture digestive symptoms—b
 <hr />
 <h3 style="text-align: left;">Glossary</h3><ul>
 <li><strong>Dilated Cardiomyopathy (DCM):</strong> Enlargement and weakening of the heart muscle.</li>
-<li><strong>Ejection Fraction:</strong> <a href="https://www.aginghealth.website/posts/in-the-blood/" rel="dofollow" title="In The Blood"><b>Percentage of blood pumped</b></a> out of the ventricle with each beat.</li>
+<li><strong>Ejection Fraction:</strong> <a href="https://www.aginghealth.website/posts//in-the-blood/" rel="dofollow" title="In The Blood"><b>Percentage of blood pumped</b></a> out of the ventricle with each beat.</li>
 <li><strong>Anti-tTG Antibodies:</strong> Autoantibodies used in diagnosing celiac disease.</li>
 <li><strong>Malabsorption:</strong> Impaired nutrient absorption in the intestine.</li>
 <li><strong>Myocardial Remodeling:</strong> Structural changes in heart muscle.</li>
@@ -138,12 +138,12 @@ When most people think about celiac disease, they picture digestive symptoms—b
 <h3>3. Should all celiac patients get echocardiograms?</h3>
 <p>Routine screening is not universally recommended but may be considered in symptomatic individuals.</p>
 <h3>4. What is subclinical celiac heart involvement?</h3>
-<p>A theoretical concept describing mild, asymptomatic cardiac changes <a href="https://www.aginghealth.website/posts/chronic-inflammation-causes-symptoms-treatment/" rel="dofollow" title="Chronic Inflammation Causes Symptoms Treatment"><b>linked to chronic inflammation</b></a>.</p>
+<p>A theoretical concept describing mild, asymptomatic cardiac changes <a href="https://www.aginghealth.website/posts//chronic-inflammation-causes-symptoms-treatment/" rel="dofollow" title="Chronic Inflammation Causes Symptoms Treatment"><b>linked to chronic inflammation</b></a>.</p>
 <h3>5. How common is this complication?</h3>
-<p>It appears rare; large <a href="https://www.aginghealth.website/posts/what-new-studies-show-about-slowing/" rel="dofollow" title="What New Studies Show About Slowing"><b>population studies show</b></a> low prevalence but increased vigilance is advised.</p>
+<p>It appears rare; large <a href="https://www.aginghealth.website/posts//what-new-studies-show-about-slowing/" rel="dofollow" title="What New Studies Show About Slowing"><b>population studies show</b></a> low prevalence but increased vigilance is advised.</p>
 <hr />
 <h1></h1>
-<h3 style="text-align: left;">Conclusion</h3><p>The relationship between <strong>celiac disease</strong> and dilated cardiomyopathy remains uncommon but clinically meaningful. While most individuals with celiac disease will never experience cardiac complications, persistent inflammation, autoimmunity, and nutrient deficiencies may create <a href="https://www.aginghealth.website/posts/toxic-stress-links-health-links-conditions/" rel="dofollow" title="Toxic Stress Links Health Links Conditions"><b>conditions that stress the heart</b></a>.</p>
+<h3 style="text-align: left;">Conclusion</h3><p>The relationship between <strong>celiac disease</strong> and dilated cardiomyopathy remains uncommon but clinically meaningful. While most individuals with celiac disease will never experience cardiac complications, persistent inflammation, autoimmunity, and nutrient deficiencies may create <a href="https://www.aginghealth.website/posts//toxic-stress-links-health-links-conditions/" rel="dofollow" title="Toxic Stress Links Health Links Conditions"><b>conditions that stress the heart</b></a>.</p>
 <p>Empowered patients who understand these connections can:</p>
 <ul>
 <li>Recognize warning signs early</li>
@@ -207,7 +207,7 @@ Metabolic and Nutritional Issues</a></li>
           "name": "What is the entero-cardiac axis?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The entero-cardiac axis describes the proposed interaction between chronic <a href="https://www.aginghealth.website/posts/systemic-inflammation-in-psoriasis/" title="Systemic Inflammation In Psoriasis" rel="dofollow"><b>intestinal inflammation and cardiovascular health via systemic</b></a> immune signaling."
+            "text": "The entero-cardiac axis describes the proposed interaction between chronic <a href="https://www.aginghealth.website/posts//systemic-inflammation-in-psoriasis/" title="Systemic Inflammation In Psoriasis" rel="dofollow"><b>intestinal inflammation and cardiovascular health via systemic</b></a> immune signaling."
           }
         }
       ]
@@ -235,7 +235,7 @@ Metabolic and Nutritional Issues</a></li>
         {
           "@type": "DefinedTerm",
           "name": "Malabsorption",
-          "description": "Impaired absorption of <a href="https://www.aginghealth.website/posts/gut-health-secrets-small-intestine-neuroprotection/" title="Gut Health Secrets Small Intestine Neuroprotection" rel="dofollow"><b>nutrients from the small intestine</b></a>."
+          "description": "Impaired absorption of <a href="https://www.aginghealth.website/posts//gut-health-secrets-small-intestine-neuroprotection/" title="Gut Health Secrets Small Intestine Neuroprotection" rel="dofollow"><b>nutrients from the small intestine</b></a>."
         },
         {
           "@type": "DefinedTerm",

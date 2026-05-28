@@ -51,7 +51,7 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
     <p>In 2026, advocacy for heat resilience emphasizes that <strong>Muscle is Water</strong>. If you are losing muscle mass (sarcopenia), you are losing your body's primary reservoir for hydration.</p>
     <ul style="text-align: left;"><li><strong>Protein Resilience&nbsp;</strong>Your body needs more protein—about 1.2 to 1.6 grams for every kilogram you weigh<strong>:</strong> We target a high protein intake to maintain lean muscle mass. This muscle act as a "sponge" that holds the fluids you need to survive a heatwave.</li>
       <li><strong>Vascular Pressure:</strong> Heat spikes the heart rate. For heart survivors, maintaining a blood pressure of <strong>&lt;130/80 mmHg</strong> ensures the heart isn't overworked while trying to cool the body.</li>
-      <li><strong>The Ammonia Warning:</strong> As discussed in our <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Hyperammonemia guide</a>, dehydration can spike blood ammonia levels, leading to sudden confusion (HE) in liver patients.</li>
+      <li><strong>The Ammonia Warning:</strong> As discussed in our <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/">Hyperammonemia guide</a>, dehydration can spike blood ammonia levels, leading to sudden confusion (HE) in liver patients.</li>
     </ul>
   </div>
 
@@ -114,7 +114,7 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
   </div>
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Strategies for Summer Safety</h2>
-    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The Urine Check:</strong> Aim for a "Pale Straw" color. If it's dark amber, you are in the <strong>Danger Zone</strong> for kidney stress and ammonia buildup.</li><li>[Image of a urine color hydration chart]</li><li><input type="checkbox" /> <strong>The "Fan Fallacy":</strong> Fans do not cool the air; they just move it. If the room is over 95°F, fans can actually <em>increase</em> heat exhaustion. Use AC or cool baths instead.</li><li><input type="checkbox" /> <strong>Bio-Hacking for Heat:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech</a> to track your <strong>Resting Heart Rate</strong>. A jump of 10+ BPM while sitting still is a sign of thermal stress.</li></ul><ul class="ah-checklist">
+    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The Urine Check:</strong> Aim for a "Pale Straw" color. If it's dark amber, you are in the <strong>Danger Zone</strong> for kidney stress and ammonia buildup.</li><li>[Image of a urine color hydration chart]</li><li><input type="checkbox" /> <strong>The "Fan Fallacy":</strong> Fans do not cool the air; they just move it. If the room is over 95°F, fans can actually <em>increase</em> heat exhaustion. Use AC or cool baths instead.</li><li><input type="checkbox" /> <strong>Bio-Hacking for Heat:</strong> Use your <a href="https://www.aginghealth.website/posts//seniors-biohacking-2026/">Smart Tech</a> to track your <strong>Resting Heart Rate</strong>. A jump of 10+ BPM while sitting still is a sign of thermal stress.</li></ul><ul class="ah-checklist">
     </ul>
   </div>
 
@@ -122,10 +122,10 @@ tags: ['⚖️ Patient Advocacy', '🧠 Cognitive Health', '🛡️ Liver & Immu
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and cirrhosis, specializing in translating clinical weather-related risks into actionable safety protocols for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/brain-health-diet-immunity/">Nutrition</a> | 
-      <a href="https://www.aginghealth.website/posts/what-types-of-insurance-should-i-have/">Medicare</a> | 
-      <a href="https://www.aginghealth.website/posts/is-heart-attack-risk-increased-more-by/">Heart</a> | 
-      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Brain</a>
+      <a href="https://www.aginghealth.website/posts//brain-health-diet-immunity/">Nutrition</a> | 
+      <a href="https://www.aginghealth.website/posts//what-types-of-insurance-should-i-have/">Medicare</a> | 
+      <a href="https://www.aginghealth.website/posts//is-heart-attack-risk-increased-more-by/">Heart</a> | 
+      <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/">Brain</a>
     </p>
   </div>
 

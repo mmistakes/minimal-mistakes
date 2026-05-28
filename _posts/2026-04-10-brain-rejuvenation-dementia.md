@@ -2,7 +2,7 @@
 layout: single
 title: "The Dawn of Brain Rejuvenation: Hope for Dementia in 2026"
 date: 2026-04-10T09:30:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Dementia Research", "Geriatric", "Physiology", "Brain Health"]
 description: "Examining the transformative shift in 2026 from simply managing dementia to actively rejuvenating the brain, enabled by automated p-tau217 blood assays and engineered young immune cells."
 excerpt: "The paradigm has shifted from managing symptoms to actively reprogramming the aging brain. Discover the 2026 breakthroughs in cellular manufacturing and digital neuro-therapeutics."

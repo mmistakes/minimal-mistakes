@@ -2,7 +2,7 @@
 layout: single
 title: "Unlocking Brain Potential: Surprising Links Between Liver and Neurology"
 date: 2026-02-22T21:58:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Cognitive Health", "Type 2 Diabetes", "Liver Health"]
 description: "Discover the critical vascular bridge connecting liver portal hypertension, blood pressure stability, and structural mini-stroke (TIA) risks."
 excerpt: "Is it a localized vascular block or systemic metabolic fog? Learn how managing liver pressure directly shields your brain's delicate capillary networks."

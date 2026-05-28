@@ -1,7 +1,7 @@
 ---
 title: "Planning for Resilience: Top Ten Long-Term Care Tips for 2026"
 date: 2026-05-05 20:42:00 -0600
-categories: [Senior Advocacy, Long-Term Care]
+categories: [senior-advocacy, Long-Term Care]
 tags: [NIA, NIH, Caregiving, Aging in Place, Health Literacy]
 description: "A practical, evidence-based guide for seniors and caregivers, summarizing NIA advice, 2026 updates, and home-readiness strategies. It covers proactive planning, finances, safety, cognitive health, and gut-brain science in ten easy steps—designed for quick reading and care planning."
 excerpt: "This guide helps older adults and caregivers plan ahead to stay independent, avoid crises, and create a safer aging environment. It turns long-term care into proactive resilience—covering finances, home safety, mobility, and brain health—with 2026 NIA tips, checklists, and science-backed strategies to empower families before a health event hits."
@@ -159,7 +159,7 @@ The NIA's research shows that the most successful aging journeys are those that 
 ### Sources & Further Reading
 * **NIA (2026):** [Long-Term Care Planning Guide](https://www.nia.nih.gov/health/long-term-care/planning-long-term-care)
 * **NIH (2025):** [The Role of Sarcopenia in Senior Independence](https://www.nih.gov/news-events/)
-* **Aging Health Research:** [Navigating Medicare in 2026](/posts/medicare-basics-senior-guide/)
+* **Aging Health Research:** [Navigating Medicare in 2026](/posts//medicare-basics-senior-guide/)
 
 <script type="application/ld+json">
 {

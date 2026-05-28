@@ -2,7 +2,7 @@
 layout: single
 title: "The Biomarker Breakthrough: Alzheimer’s Blood Tests in 2026"
 date: 2026-04-10T08:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Alzheimer's", "Diagnostics", "Biomarkers", "Neurology"]
 description: "The age of invasive spinal taps is over. In 2026, automated p-tau217 blood tests offer 90%+ accuracy in predicting Alzheimer's symptoms years in advance."
 excerpt: "A simple blood draw at your primary doctor's office can now reveal the molecular secrets of the brain with 90%+ diagnostic accuracy. Discover the 2026 biomarker revolution."

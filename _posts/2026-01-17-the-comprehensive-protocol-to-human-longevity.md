@@ -41,7 +41,7 @@ To shield the aging frame from functional decline, geroscience prioritizes objec
 ### I. Physical Capacity & Muscle Mass Architecture
 Your lean muscle volume, cardiorespiratory efficiency, and grip strength operate as direct, independent clinical predictors of all-cause mortality. Preserving your structural chassis ensures your body retains its physical independence, can survive acute metabolic shocks, and maintains a highly responsive disposal sink for dietary glucose.
 
-👉 *Explore Strength Data:* [The Protein Paradox, Metabolism, and Amino Acid Kinetics](/posts/the-protein-paradox-metabolism-amino/)
+👉 *Explore Strength Data:* [The Protein Paradox, Metabolism, and Amino Acid Kinetics](/posts//the-protein-paradox-metabolism-amino/)
 
 ### II. Neuro-Protection & Brain Reserve
 Insulating your brain from cognitive fatigue requires strict management of sleep architecture and blood vessel protection. Optimizing your nightly recovery windows allows your brain's glymphatic system to actively clear neurotoxic proteins, keeping your executive processing lanes clear.

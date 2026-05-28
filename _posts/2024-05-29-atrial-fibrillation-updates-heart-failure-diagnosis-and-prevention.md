@@ -39,7 +39,7 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
 
   <div class="ah-card">
     <h2 class="ah-title">The "1 in 3" Risk: New Data from the BMJ</h2>
-    <p>A massive cohort study analyzing over 3.5 million adults has officially upgraded the lifetime risk of AFib from 1 in 4 to <strong>1 in 3</strong>. But the most critical finding for senior advocacy is the complication breakdown:</p>
+    <p>A massive cohort study analyzing over 3.5 million adults has officially upgraded the lifetime risk of AFib from 1 in 4 to <strong>1 in 3</strong>. But the most critical finding for senior-advocacy is the complication breakdown:</p>
     <ul>
       <li><strong>42% Lifetime Risk of Heart Failure:</strong> The irregular, rapid ventricular response in AFib literally "starves" the heart muscle of energy, leading to <strong>Tachycardia-induced Cardiomyopathy</strong>.</li>
       <li><strong>21% Risk of Stroke:</strong> While stroke remains a major threat, our current prevention strategies (like anticoagulants) have kept this number stable, while heart failure rates are climbing.</li>
@@ -113,7 +113,7 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
       <tr>
         <td><strong>Sinus Rhythm</strong></td>
         <td>The normal, steady beat of a healthy heart.</td>
-        <td>Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech</a> to track how much time you spend in Sinus vs. AFib.</td>
+        <td>Use your <a href="https://www.aginghealth.website/posts//seniors-biohacking-2026/" target="_blank">Smart Tech</a> to track how much time you spend in Sinus vs. AFib.</td>
       </tr>
     </tbody></table>
 
@@ -131,10 +131,10 @@ tags: ['⚖️ Patient Advocacy', '❤️ Cardiovascular & T2D', '💪 Functiona
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/hematologists/" target="_blank">Hematology</a> | 
-      <a href="https://www.aginghealth.website/posts/ozempic-older-adults-benefits-medicare/" target="_blank">Diabetes</a> | 
-      <a href="https://www.aginghealth.website/posts/coronary-heart-disease-womens-health-initiative/" target="_blank">Heart Attack Awareness</a> | 
-      <a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/" target="_blank">GERD and Sepsis</a>
+      <a href="https://www.aginghealth.website/posts//hematologists/" target="_blank">Hematology</a> | 
+      <a href="https://www.aginghealth.website/posts//ozempic-older-adults-benefits-medicare/" target="_blank">Diabetes</a> | 
+      <a href="https://www.aginghealth.website/posts//coronary-heart-disease-womens-health-initiative/" target="_blank">Heart Attack Awareness</a> | 
+      <a href="https://www.aginghealth.website/posts//gerd-and-sepsis-a-dangerous-connection/" target="_blank">GERD and Sepsis</a>
     </p>
   </div>
 

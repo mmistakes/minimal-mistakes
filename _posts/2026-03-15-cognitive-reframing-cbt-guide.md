@@ -2,7 +2,7 @@
 layout: single
 title: "Mind Matters: Cognitive Reframing Techniques for Seniors"
 date: 2026-04-10T08:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Advocacy", "Stress", "Brain Health", "Mindset"]
 description: "Discover cognitive reframing methods to challenge distorted thought patterns and develop emotional resilience using evidence-based CBT strategies."
 excerpt: "Don't let medical anxiety hijack your physiology. Learn how to apply evidence-based Cognitive Behavioral Therapy (CBT) tools to reframe automatic negative thoughts."

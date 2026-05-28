@@ -3,7 +3,7 @@ layout: single
 title: "New Science Reveals How Ultra-Processed Foods Damage Your Body"
 date: 2025-11-19T18:36:00+00:00
 categories: ["Metabolism"]
-tags: ["Senior Health", "Prevention", "Biomarkers", "Brain & Mind"]
+tags: ["Senior Health", "Prevention", "Biomarkers", "brain-mind"]
 description: "The world's largest review links Ultra-Processed Foods (UPFs) to dementia, heart disease, and physical decline in every major organ system. Learn how to protect your health."
 excerpt: "A landmark systematic review delivers a stark warning: humans are not biologically adapted to consume industrialized Group 4 formulations. Discover the exact mechanisms of harm from the gut outward."
 header:

@@ -2,7 +2,7 @@
 layout: single
 title: "The ApoB Analysis: The Ultimate Predictor of Heart Health"
 date: 2026-01-20T22:33:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Cardiovascular", "Longevity", "Heart", "Prevention", "Biomarkers"]
 description: "ApoB predicts heart disease better than LDL cholesterol. Learn to optimize longevity and reduce your particle count through lifestyle and science."
 excerpt: "Standard cholesterol tests measure the weight of cholesterol, but ApoB counts the actual plaque-forming vehicles. Discover the metric that dictates true vascular longevity."
@@ -47,7 +47,7 @@ By measuring the cumulative concentration of ApoB in a standard plasma draw, we 
 
 If a lipid transport vehicle possesses an ApoB tag, it has the mechanical capability to breach the fragile endothelial lining of your arteries, become trapped within the sub-endothelial space (the intima), oxidize, and initiate the slow process of **atherosclerosis** (arterial hardening).
 
-👉 *Related Archive:* [Precision Diagnostics and Genomic Medicine](/posts/genomic-medicine/)
+👉 *Related Archive:* [Precision Diagnostics and Genomic Medicine](/posts//genomic-medicine/)
 
 ---
 

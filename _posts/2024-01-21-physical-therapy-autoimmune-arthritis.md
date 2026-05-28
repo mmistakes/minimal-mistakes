@@ -61,8 +61,8 @@ Therapists use pacing strategies and energy-conservation techniques. By teaching
 
 ## Related Patient Resources
 * **The Log:** Track your mobility and clarity with the [Daily Glucose Tracker](https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing).
-* **The Foundation:** Read my [Beginner’s Guide to Diabetes](https://www.aginghealth.website/posts/diabetes/).
-* **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/).
+* **The Foundation:** Read my [Beginner’s Guide to Diabetes](https://www.aginghealth.website/posts//diabetes/).
+* **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/).
 
 ---
 

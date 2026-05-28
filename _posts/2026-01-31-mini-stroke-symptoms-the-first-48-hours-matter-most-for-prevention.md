@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Mini-Stroke Symptoms? The First 48 Hours Matter Most for Prevention"
-permalink: /posts/mini-stroke-symptoms-first-48-hours-prevention/
+permalink: /posts//mini-stroke-symptoms-first-48-hours-prevention/
 date: 2026-01-31T07:09:00+00:00
 description: "Identify TIA using BE-FAST: Balance, Eyes, Face, Arm, Speech, Time. Learn why 2026 guidelines treat mini strokes as a 911 emergency."
 header:
@@ -104,8 +104,8 @@ When an individual enters an emergency department or neurology clinic with a sus
 
 ## 📘 Companion Patient Resources
 
-* **The Baseline:** New to navigating metabolic tracking and protecting your blood vessels from systemic damage? Build your foundational health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Neuro-Metabolic Link:** Explore how chronic insulin resistance can escape the peripheral vascular system and alter cognitive health by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Baseline:** New to navigating metabolic tracking and protecting your blood vessels from systemic damage? Build your foundational health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Neuro-Metabolic Link:** Explore how chronic insulin resistance can escape the peripheral vascular system and alter cognitive health by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 * **The Log Matrix:** Reclaim control over your numbers by deploying my mobile-optimized, touch-responsive [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
 
 ---
@@ -121,13 +121,13 @@ When an individual enters an emergency department or neurology clinic with a sus
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, regional wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults. After personally navigating the challenges of Non-Valvular Atrial Fibrillation (NVAF) and undergoing a successful Watchman Device implantation in response to blood-thinner complications, he provides a unique "lived experience" perspective on cardiovascular longevity.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
-* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts/the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
-* [**Liver Health: Understanding Decompensation and Portal Hypertension**]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }})
+* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts//the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
+* [**Liver Health: Understanding Decompensation and Portal Hypertension**]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }})
 
 <script type="application/ld+json">
 {

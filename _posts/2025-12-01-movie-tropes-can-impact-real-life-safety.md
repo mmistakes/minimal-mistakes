@@ -2,7 +2,7 @@
 layout: single
 title: "Dangerous Media & Medical Myths: Unmasking Screen Fiction vs. Real-Life Emergency Safety"
 date: 2025-12-01T01:18:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Senior Health", "Prevention", "Mindset", "Infections"]
 description: "Hollywood medicine prioritizes high-octane drama over clinical accuracy. Discover the dangerous, real-world health risks of relying on screen-written emergency tropes."
 excerpt: "The 24-hour missing person rule from television is an absolute myth. Learn why waiting to report an emergency or misinterpreting cardiac arrest protocols puts your family at structural risk."
@@ -160,7 +160,7 @@ By actively developing your media literacy, you can enjoy cinematic storytelling
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.aginghealth.website/posts/movie-myth-24-hour-missing-person-rule-danger/"
+    "@id": "https://www.aginghealth.website/posts//movie-myth-24-hour-missing-person-rule-danger/"
   },
   "headline": "Dangerous TV & Movie Myths: From the 24-Hour Missing Person Rule to Defibrillator Jolts and CPR Miracles",
   "description": "Hollywood medicine makes for drama but can mislead audiences. Myths like the 24-hour missing person rule, shocking a flatline with a defibrillator, instant CPR revival, bullet removal heroics, and harmless knockouts all distort real health and safety practices.",

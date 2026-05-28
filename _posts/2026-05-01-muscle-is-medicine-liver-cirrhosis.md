@@ -2,7 +2,7 @@
 layout: single
 title: "Muscle is Medicine: The 2026 Protein Flip in Liver Cirrhosis"
 date: 2026-05-01T09:00:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: [Liver Health, Cirrhosis, Sarcopenia, Nutrition, Metabolism]
 description: "For decades, seniors with cirrhosis were told to restrict protein. In 2026, research shows high protein is essential to fight sarcopenia, clear ammonia, and preserve life."
 excerpt: "Exposing the dangerous myth of protein restriction in liver disease. Discover why muscle is a vital metabolic detoxification organ in advanced cirrhosis."

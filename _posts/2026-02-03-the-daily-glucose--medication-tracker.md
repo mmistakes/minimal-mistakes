@@ -4,6 +4,9 @@ title: "The Daily Glucose & Medication Tracker"
 date: 2026-02-03T00:16:00+00:00
 description: ""
 tags: []
+# Add these lines to fix the broken links in your other posts:
+redirect_from:
+  - /p/the-daily-glucose-medication-tracker/
 ---
 
 <div style="max-width: 800px; margin: auto; padding: 20px; border: 2px solid #0c343d; border-radius: 10px; font-family: 'Helvetica', sans-serif; color: #333;">

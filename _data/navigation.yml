@@ -1,10 +1,10 @@
 main:
   - title: "Home"
     url: /
-  - title: "Brain & Mind"
+  - title: "brain-mind"
     url: "/categories/#brain-mind"
-  - title: "Heart & Metabolic"
-    url: "/categories/#heart-metabolic"
+  - title: "heart-metabolic"
+    url: "/heart-metabolic/"
   - title: "Longevity"
     url: "/categories/#longevity"
   - title: "Glossary"

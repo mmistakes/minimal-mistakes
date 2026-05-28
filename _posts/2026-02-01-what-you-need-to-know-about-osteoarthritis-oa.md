@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "What You Need to Know About Osteoarthritis (OA)"
-permalink: /posts/understanding-osteoarthritis-joint-health/
+permalink: /posts//understanding-osteoarthritis-joint-health/
 date: 2026-02-01T02:45:00+00:00
 description: "A comprehensive clinical and lifestyle guide to managing Osteoarthritis, navigating metabolic joint inflammation, and treating muscle as medicine."
 header:
@@ -166,14 +166,14 @@ Protect your joints while sleeping by using supportive pillows. If you manage hi
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, regional wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
 * [**The Log: Daily Glucose and Medication Tracker Log**]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }})
-* [**The Foundation: Beginner's Guide to Diabetes and Vascular Defense**]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }})
-* [**A Low-Glycemic Foods List for Sugar Management**]({{ '/posts/low-glycemic-foods-list-sugar-management/' | relative_url }})
+* [**The Foundation: Beginner's Guide to Diabetes and Vascular Defense**]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }})
+* [**A Low-Glycemic Foods List for Sugar Management**]({{ '/posts//low-glycemic-foods-list-sugar-management/' | relative_url }})
 
 ---
 

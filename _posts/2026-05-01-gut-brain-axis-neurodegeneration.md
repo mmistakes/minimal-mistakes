@@ -123,4 +123,4 @@ By strengthening the gut barrier, supporting microbial diversity, and reducing i
 ### Sources & Further Reading
 1. **Journal of Neuroinflammation (2025):** Alpha-synuclein transport via the Vagus Nerve.
 2. **Gut-Brain Consortium (2026):** Clinical guidelines for microbiome support in LBD.
-3. **Aging Health Research:** [Understanding LBD Symptoms & Care]({{ '/posts/lewy-body-dementia-guide/' | relative_url }})
+3. **Aging Health Research:** [Understanding LBD Symptoms & Care]({{ '/posts//lewy-body-dementia-guide/' | relative_url }})

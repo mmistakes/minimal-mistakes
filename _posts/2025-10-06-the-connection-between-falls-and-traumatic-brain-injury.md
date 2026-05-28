@@ -1,9 +1,11 @@
 ---
 layout: single
 title: "The Connection Between Falls and Traumatic Brain Injury"
+redirect_from:
+  - /posts//falls-and-traumatic-brain-injury/
 date: 2025-10-06T01:37:00+00:00
 categories: ["Longevity"]
-tags: ["Senior Health", "Prevention", "Biomarkers", "Brain & Mind"]
+tags: ["Senior Health", "Prevention", "Biomarkers", "brain-mind"]
 description: "Explore the critical link between falls and traumatic brain injury (TBI) in seniors. Learn science-backed neuro-fall prevention and home safety strategies."
 excerpt: "A fall from standing height isn't just an orthopedic concern—it is a leading driver of neurotrauma in older adults. Discover how aging physiology amplifies head impacts."
 header:
@@ -179,7 +181,7 @@ Yes. Because symptoms like confusion, slower cognitive processing, and temporary
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/"
+        "@id": "https://www.aginghealth.website/posts//tbi-in-older-adults-fall-prevention-recovery/"
       },
       "headline": "The Connection Between Falls and Traumatic Brain Injury",
       "description": "An evidence-based guide mapping the intersection of age-related gait instability, muscle loss, and traumatic brain injury in older adults.",

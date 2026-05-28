@@ -9,7 +9,7 @@ tags: ["Liver Health", "Cardiovascular", "Stress", "Nutrition", "Environment"]
 
 ## Practical Steps to Live Greener and Healthier
 
-Sustainable living isn't just about the planet—it directly improves your health, lowers long-term costs, and reduces disease risk. Small, practical changes in food, energy, and daily habits can deliver [immediate personal benefits](https://www.aginghealth.website/posts/metformin-benefits/) while supporting environmental sustainability. > **Medical Disclaimer:** This content is for informational and educational purposes only. Always consult a qualified healthcare provider regarding any medical condition.
+Sustainable living isn't just about the planet—it directly improves your health, lowers long-term costs, and reduces disease risk. Small, practical changes in food, energy, and daily habits can deliver [immediate personal benefits](https://www.aginghealth.website/posts//metformin-benefits/) while supporting environmental sustainability. > **Medical Disclaimer:** This content is for informational and educational purposes only. Always consult a qualified healthcare provider regarding any medical condition.
 
 ![Sustainable living for health and well-being](/assets/images/sustainable-living.webp)
 *Everyday choices that support a greener planet often support a healthier body.*
@@ -29,7 +29,7 @@ Sustainable living means meeting today's needs without compromising future gener
 
 ### The Health Connection:
 * **Cleaner Air, Stronger Lungs:** Reducing fossil fuel use lowers air pollution—a major contributor to asthma, heart disease, and stroke.
-* **Healthier Diets:** [Climate-smart meals](https://www.aginghealth.website/posts/food-additives-and-type-2-diabetes-risk/) rich in plants are linked to lower risks of diabetes and cardiovascular disease.
+* **Healthier Diets:** [Climate-smart meals](https://www.aginghealth.website/posts//food-additives-and-type-2-diabetes-risk/) rich in plants are linked to lower risks of diabetes and cardiovascular disease.
 * **Mental Well-Being:** Nature exposure and active transport (walking/cycling) improve mood and reduce anxiety.
 
 ---

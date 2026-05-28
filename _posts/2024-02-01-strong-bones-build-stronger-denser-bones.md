@@ -88,7 +88,7 @@ Walking is excellent for heart health, but it provides only mild bone loading. A
 ### About the Researcher
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes, he specializes in translating complex 2026 medical data into actionable health literacy for seniors.
 
-**Explore more:** [Heart](https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/) | [Metabolism](https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/) | [Brain](https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/) | [Liver](https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/)
+**Explore more:** [Heart](https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/) | [Metabolism](https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/) | [Brain](https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/) | [Liver](https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/)
 
 ---
 

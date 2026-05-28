@@ -260,9 +260,9 @@ tags: ['🌱 Senior Longevity', '🛡️ Liver & Immune Health', '🧠 Cognitive
   ]
 }</script><div><h3 style="text-align: left;"><span style="font-family: inherit;">Regenerative Medicine and Cellular Engineering</span></h3>
 <ul>
-<li><a href="https://www.aginghealth.website/posts/wet-age-related-macular-degeneration-understanding-and-prevention/" target="_blank"><span style="font-family: inherit;">Macular Degeneration</span></a></li>
-<li><a href="https://www.aginghealth.website/posts/neurological-disorders-ai-brain-mapping/" target="_blank"><span style="font-family: inherit;">Precision Neurology</span></a></li>
-<li><a href="https://www.aginghealth.website/posts/age-reversal-harvard-mit-cell-restoral/"><span style="font-family: inherit;">Aging and Senescence Biology</span></a></li><li><span style="background-color: white; color: #334155;"><span style="font-family: inherit;"><a href="https://www.aginghealth.website/posts/artificial-cell-research-breakthroughs/" target="_blank">Manipulating DNA and proteins</a></span></span></li></ul></div><div><h3 style="text-align: left;"><span style="font-family: inherit;">Citations</span></h3><p><strong><span style="font-family: inherit;">Retinal Development &amp; Color Vision</span></strong></p>
+<li><a href="https://www.aginghealth.website/posts//wet-age-related-macular-degeneration-understanding-and-prevention/" target="_blank"><span style="font-family: inherit;">Macular Degeneration</span></a></li>
+<li><a href="https://www.aginghealth.website/posts//neurological-disorders-ai-brain-mapping/" target="_blank"><span style="font-family: inherit;">Precision Neurology</span></a></li>
+<li><a href="https://www.aginghealth.website/posts//age-reversal-harvard-mit-cell-restoral/"><span style="font-family: inherit;">Aging and Senescence Biology</span></a></li><li><span style="background-color: white; color: #334155;"><span style="font-family: inherit;"><a href="https://www.aginghealth.website/posts//artificial-cell-research-breakthroughs/" target="_blank">Manipulating DNA and proteins</a></span></span></li></ul></div><div><h3 style="text-align: left;"><span style="font-family: inherit;">Citations</span></h3><p><strong><span style="font-family: inherit;">Retinal Development &amp; Color Vision</span></strong></p>
 <ul>
 <li><span style="font-family: inherit;">Hadyniak SE et al. <em>PLoS Biology</em> (2024). Retinoic acid regulates human green and red cone specification.</span></li>
 </ul>

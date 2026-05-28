@@ -2,7 +2,7 @@
 layout: single
 title: "Why Akkermansia is the Next Frontier in Weight Management"
 date: 2026-01-20T21:06:00+00:00
-categories: ["Brain & Mind", "Longevity"]
+categories: ["brain-mind", "Longevity"]
 tags: ["Cognitive Health", "Liver Health", "Immune Health", "Microbiome", "Metabolism"]
 description: "Unpacking Akkermansia muciniphila: How this gut super-strain strengthens the intestinal mucus barrier and naturally triggers GLP-1 pathways for metabolic control."
 excerpt: "If the gut microbiome is a bustling city, Akkermansia is the elite maintenance crew. Discover the science behind the P9 protein and its native hunger-regulation pathways."
@@ -51,7 +51,7 @@ Akkermansia has been clinically shown to naturally secrete a specific, heat-stab
 )
 *Figure 2: Microbiome Density Auditing. Comprehensive population tracking demonstrates a direct, inverse correlation between baseline Akkermansia density and elevated body mass markers.*
 
-👉 *Related Archive:* [Investigating the Link Between Gut Microbiome and Weight Management](/posts/gut-health-weight-loss/)
+👉 *Related Archive:* [Investigating the Link Between Gut Microbiome and Weight Management](/posts//gut-health-weight-loss/)
 
 ---
 

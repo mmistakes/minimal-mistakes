@@ -37,7 +37,7 @@ According to tracking data from Mass General Brigham, medical artificial intelli
 
 By automating clinical transcription and sorting complex testing data, these engines drastically reduce medical errors and relieve cognitive load, allowing doctors to dedicate more focus to the patient.
 
-👉 **Related Guide:** [How AI Supports Early Detection in Senior Care](/posts/senior-health-education/)
+👉 **Related Guide:** [How AI Supports Early Detection in Senior Care](/posts//senior-health-education/)
 
 ---
 
@@ -51,7 +51,7 @@ While brilliant curative gene therapies and precision monoclonal antibodies exis
 
 Catching cellular irregularities early and stopping them before they require late-stage, invasive hospitalization not only improves the patient's daily independence, but it drives down total lifetime healthcare costs.
 
-👉 **Related Guide:** [Precision Medicine and Aging: Clinical Insights](/posts/precision-medicine-aging/)
+👉 **Related Guide:** [Precision Medicine and Aging: Clinical Insights](/posts//precision-medicine-aging/)
 
 ---
 
@@ -100,7 +100,7 @@ Annual technology showcases like CES demonstrate a clear shift toward embedding 
 **Q: How is gene therapy shifting away from rare disease applications?**
 **A:** Early gene editing required harvesting cells, modifying them in a lab, and transplanting them back into a patient. In 2026, targeted delivery systems allow therapeutic tools to travel through the bloodstream and edit specific cells natively inside the body, opening up treatment paths for common chronic conditions like cardiovascular disease and type 2 diabetes.
 
-👉 **Related Guide:** [Genomics, Longevity, and the Future of Preventive Health](/posts/genomics-and-longevity/)
+👉 **Related Guide:** [Genomics, Longevity, and the Future of Preventive Health](/posts//genomics-and-longevity/)
 
 ---
 

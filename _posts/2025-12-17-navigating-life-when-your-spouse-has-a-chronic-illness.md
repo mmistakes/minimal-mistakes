@@ -164,7 +164,7 @@ Protecting your household asset tree from being entirely depleted by long-term c
   "@type": "MedicalWebPage",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://aginghealth.website/posts/navigating-life-when-your-spouse-has-a-chronic-illness/"
+    "@id": "https://aginghealth.website/posts//navigating-life-when-your-spouse-has-a-chronic-illness/"
   },
   "name": "Navigating Life When Your Spouse Has a Chronic Illness",
   "description": "A medically reviewed guide to supporting a spouse living with a chronic illness, including communication strategies, caregiver well-being, symptom awareness, and practical daily adjustments.",

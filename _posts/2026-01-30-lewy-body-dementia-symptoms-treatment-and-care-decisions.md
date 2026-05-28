@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Lewy Body Dementia: Symptoms, Treatment, and Care Decisions"
-permalink: /posts/lewy-body-dementia-symptoms-care/
+permalink: /posts//lewy-body-dementia-symptoms-care/
 date: 2026-01-30T20:21:00+00:00
 description: "A patient-centered guide to understanding Lewy Body Dementia (LBD) symptoms, distinguishing it from Alzheimer's, and navigating high medication sensitivities."
 header:

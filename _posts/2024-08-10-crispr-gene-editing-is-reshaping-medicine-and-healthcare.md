@@ -14,7 +14,7 @@ last_modified_at: 2026-05-19
 ---
 ## Unlocking the Power of CRISPR for Treating Diseases
 
-The ability to precisely edit the structural building blocks of life holds immense promise for addressing some of [**humanity's most challenging health issues**](https://www.aginghealth.website/posts/seniors-health-issues/ "Seniors Health Issues"). CRISPR, with its revolutionary precision, is at the absolute forefront of this medical revolution. This post explores the vast clinical potential of CRISPR in modern healthcare, moving from the correction of rare monogenic disorders to the development of novel targeted therapies.
+The ability to precisely edit the structural building blocks of life holds immense promise for addressing some of [**humanity's most challenging health issues**](https://www.aginghealth.website/posts//seniors-health-issues/ "Seniors Health Issues"). CRISPR, with its revolutionary precision, is at the absolute forefront of this medical revolution. This post explores the vast clinical potential of CRISPR in modern healthcare, moving from the correction of rare monogenic disorders to the development of novel targeted therapies.
 
 ---
 

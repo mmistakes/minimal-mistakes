@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Medical Questionnaires: Why They Confuse Patients and Fixes"
-permalink: /posts/medical-questionnaires-confuse-patients-fixes/
+permalink: /posts//medical-questionnaires-confuse-patients-fixes/
 date: 2026-01-27T23:29:00+00:00
 description: "Why medical intake forms and symptom checklists confuse patients, and evidence-based health literacy fixes for better clinical outcomes."
 header:
@@ -147,8 +147,8 @@ Marcus, a 42-year-old living with chronic lower back pain, routinely marked his 
 ## 📘 Companion Patient Resources
 
 * **The Log Matrix:** Protect your clinical history by maintaining an objective, clear record of your daily metrics, blood sugar trends, and physical symptoms using my [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
-* **The Baseline Framework:** New to tracking metabolic markers and navigating chronic health charts? Build your foundational health literacy with my complete [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Neuro-Metabolic Connection:** Explore how unmanaged blood sugar fluctuations can disrupt your cognitive processing speed and working memory by reviewing [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Baseline Framework:** New to tracking metabolic markers and navigating chronic health charts? Build your foundational health literacy with my complete [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Neuro-Metabolic Connection:** Explore how unmanaged blood sugar fluctuations can disrupt your cognitive processing speed and working memory by reviewing [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 
 ---
 
@@ -163,7 +163,7 @@ Marcus, a 42-year-old living with chronic lower back pain, routinely marked his 
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in translating complex clinical data, regional wastewater monitoring trends, and peer-reviewed literature into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

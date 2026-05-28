@@ -213,7 +213,7 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
   <h3>About the Researcher</h3>
   <p>
     Tommy T. Douglas is an independent health researcher and patient advocate. 
-    A <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="dofollow" title="Lessons from a 2008 Heart Attack Survivor"><b>survivor of a major heart attack</b></a> (2008) who <a href="https://www.aginghealth.website/posts/diabetes/" rel="dofollow" title="Understanding Diabetes And Managing Blood Sugar"><b>manages Type 2 Diabetes</b></a> with 
+    A <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" rel="dofollow" title="Lessons from a 2008 Heart Attack Survivor"><b>survivor of a major heart attack</b></a> (2008) who <a href="https://www.aginghealth.website/posts//diabetes/" rel="dofollow" title="Understanding Diabetes And Managing Blood Sugar"><b>manages Type 2 Diabetes</b></a> with 
     Metformin and GLP‑1 therapy (Ozempic), he specializes in translating complex 
     medical data into actionable health literacy for seniors.
   </p>
@@ -221,10 +221,10 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
+    <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
+    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
   </p>
 </div>
 
@@ -239,13 +239,13 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
   <p>
     <strong>The Foundation:</strong>
     New to this?
-    <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts//diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
     </a>.
   </p>
   <p>
     <strong>Liver Health:</strong>
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
     </a>  </p></div></div>
 <h2>📚 Citations &amp; Authoritative Sources</h2>
@@ -269,7 +269,7 @@ often go unnoticed.</span></b><span style="font-family: &quot;Calibri&quot;,sans
         "@id": "https://www.yourwebsite.com/recognizing-early-signs-of-dementia"
       },
       "headline": "Recognizing Early Signs of Dementia: A Senior-Friendly Guide",
-      "description": "Learn how to <a href="https://www.aginghealth.website/posts/recognizing-early-dementia-signs-metabolic-fog/" title="Recognizing Early Dementia Signs Metabolic Fog" rel="dofollow"><b>recognize the early signs of dementia</b></a>, including memory loss, confusion, and personality changes. Senior-friendly and medically informed guidance for families and caregivers.",
+      "description": "Learn how to <a href="https://www.aginghealth.website/posts//recognizing-early-dementia-signs-metabolic-fog/" title="Recognizing Early Dementia Signs Metabolic Fog" rel="dofollow"><b>recognize the early signs of dementia</b></a>, including memory loss, confusion, and personality changes. Senior-friendly and medically informed guidance for families and caregivers.",
       "image": "https://www.yourwebsite.com/images/early-signs-of-dementia.jpg",
       "author": {
         "@type": "Person",

@@ -18,9 +18,9 @@ Trackers: Use the provided links to open your own private copy of our health tra
 3. Navigating by Category
 If you are looking for information on a specific part of your health, use the top navigation menu:
 
-Brain & Mind: Focuses on cognitive resilience and neurological health.
+brain-mind: Focuses on cognitive resilience and neurological health.
 
-Heart & Metabolic: Covers vascular defense, blood sugar, and heart health.
+heart-metabolic: Covers vascular defense, blood sugar, and heart health.
 
 Longevity: Explores the latest 2026 science on aging gracefully and maintaining muscle.
 

@@ -15,7 +15,7 @@ tags: ['⚖️ Patient Advocacy', '🧬 Clinical Research', '🌱 Senior Longevi
 <li>Master’s degree in physician assistant studies</li>
 <li>Medical model education similar to physician training</li>
 </ul><p>NP programs follow the <strong>nursing model</strong>, emphasizing holistic, preventive, and patient-centered care.<br />
-PA programs follow the <strong>medical model</strong>, emphasizing <a href="https://www.aginghealth.website/posts/mpox-symptoms-causes-diagnosis-treatment/" rel="dofollow" title="Mpox Symptoms Causes Diagnosis Treatment"><b>disease diagnosis and treatment</b></a>.</p><hr /><h2 style="text-align: left;">Scope of Practice: NP vs PA</h2><h3>Nurse Practitioner Scope of Practice</h3><p>NP practice authority varies by state and is categorized as:</p><ul>
+PA programs follow the <strong>medical model</strong>, emphasizing <a href="https://www.aginghealth.website/posts//mpox-symptoms-causes-diagnosis-treatment/" rel="dofollow" title="Mpox Symptoms Causes Diagnosis Treatment"><b>disease diagnosis and treatment</b></a>.</p><hr /><h2 style="text-align: left;">Scope of Practice: NP vs PA</h2><h3>Nurse Practitioner Scope of Practice</h3><p>NP practice authority varies by state and is categorized as:</p><ul>
 <li><strong>Full Practice Authority</strong> – Can practice independently without physician oversight</li>
 <li><strong>Reduced Practice</strong> – Requires collaborative agreement</li>
 <li><strong>Restricted Practice</strong> – Requires physician supervision</li>
@@ -71,7 +71,7 @@ PA programs follow the <strong>medical model</strong>, emphasizing <a href="http
 <li>Rural healthcare needs</li>
 </ul><p>Both professions rank among the fastest-growing healthcare careers in the U.S.</p><hr /><h2 style="text-align: left;">Why NPs and PAs Are Critical to the Future of Healthcare</h2><p>The U.S. healthcare system faces:</p><ul>
 <li>Primary care physician shortages</li>
-<li>Increasing <a href="https://www.aginghealth.website/posts/loneliness-chronic-disease/" rel="dofollow" title="Loneliness Chronic Disease"><b>demand for chronic disease</b></a> management</li>
+<li>Increasing <a href="https://www.aginghealth.website/posts//loneliness-chronic-disease/" rel="dofollow" title="Loneliness Chronic Disease"><b>demand for chronic disease</b></a> management</li>
 <li>Rising healthcare costs</li>
 </ul><p>NPs and PAs provide cost-effective, high-quality care that improves system efficiency while maintaining strong patient satisfaction levels.</p><p>Their collaborative care model enhances:</p><ul>
 <li>Continuity of care</li>
@@ -99,7 +99,7 @@ PA programs follow the <strong>medical model</strong>, emphasizing <a href="http
 
 <p><em>Source: U.S. Bureau of Labor Statistics (May 2024 data, released 2025–2026).</em></p><h2 style="text-align: left;">
 <div class="clinic-trust-card">
-  <h3>About the Researcher</h3><span style="font-size: 19px;"><span style="font-weight: normal;">Tommy T. Douglas is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes with Metformin and GLP‑1 therapy (Ozempic), he specializes in translating complex medical data into actionable health literacy for seniors.</span><br /><span>Explore more by topic:</span><br /> <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">Heart</a> | <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/">Brain</a> | <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a></span>
+  <h3>About the Researcher</h3><span style="font-size: 19px;"><span style="font-weight: normal;">Tommy T. Douglas is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes with Metformin and GLP‑1 therapy (Ozempic), he specializes in translating complex medical data into actionable health literacy for seniors.</span><br /><span>Explore more by topic:</span><br /> <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/">Heart</a> | <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/">Brain</a> | <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/">Liver</a></span>
 </div><div class="clinic-trust-card"><span style="font-weight: normal;"><br /></span></div>  
   <em>Sources</em></h2>
  <ul style="text-align: left;"><li>Bureau of Labor Statistics (.gov)</li><li>American Association of Nurse Practitioners (AANP)</li><li>American Academy of Physician Associates (AAPA)</li></ul></div> 

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Heart Health in Later Years: Managing Valve Disease and Biological Aging"
-permalink: /posts/seniors-heart-health-tips/
+permalink: /posts//seniors-heart-health-tips/
 date: 2026-02-17
 description: "Exploring the rise of silent valve disease, the clinical debate over statins in the elderly, and how 2026 research is targeting the mechanisms of biological aging."
 header: 
@@ -71,7 +71,7 @@ While statins are proven to reduce heart attack and stroke risk, they are not un
 > ### 🎯 March 2026 Clinical Update: Resilience Targets
 > * **Blood Pressure:** To protect the delicate cerebral and cardiac micro-vasculature, the 2026 target for seniors is now **<130/80 mmHg**.
 > * **Protein Support:** To combat sarcopenia and support the mechanical repair of heart tissue, seniors must target **1.2–1.6 g/kg** of high-quality protein (USDA 2026).
-> * **Vascular Integrity:** Maintaining these targets is essential for those managing [**Type 3 Diabetes**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) pathways or [**Liver Pressure**]({{ '/posts/mini-stroke-prevention-liver-pressure-carvedilol/' | relative_url }}).
+> * **Vascular Integrity:** Maintaining these targets is essential for those managing [**Type 3 Diabetes**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) pathways or [**Liver Pressure**]({{ '/posts//mini-stroke-prevention-liver-pressure-carvedilol/' | relative_url }}).
 {: .prompt-info }
 
 ---
@@ -81,8 +81,8 @@ While statins are proven to reduce heart attack and stroke risk, they are not un
 Current treatments effectively manage the *symptoms* of heart disease, but the frontier of 2026 cardiology is shifting toward addressing the *mechanisms* of aging itself.
 
 1.  **Cellular Senescence:** Researchers are exploring "Senolytics"—drugs that clear out "zombie cells" that cause systemic inflammation.
-2.  **Epigenetic Reversal:** Healthy behaviors (The [**Big 6 Pillars**]({{ '/posts/big-six-pillars-optimal-aging-health/' | relative_url }})) are now clinically proven to "turn back" the biological clock of heart cells.
-3.  **Metabolic Repair:** Using medications like GLP-1s not just for weight, but for their direct [**vascular protection**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) properties.
+2.  **Epigenetic Reversal:** Healthy behaviors (The [**Big 6 Pillars**]({{ '/posts//big-six-pillars-optimal-aging-health/' | relative_url }})) are now clinically proven to "turn back" the biological clock of heart cells.
+3.  **Metabolic Repair:** Using medications like GLP-1s not just for weight, but for their direct [**vascular protection**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) properties.
 
 ---
 
@@ -93,9 +93,9 @@ Current treatments effectively manage the *symptoms* of heart disease, but the f
 ---
 
 ### About the Researcher
-**Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a [**major heart attack (2008)**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) who manages Type 2 Diabetes, he specializes in translating complex cardiovascular data into actionable health literacy for the aging population.
+**Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a [**major heart attack (2008)**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) who manages Type 2 Diabetes, he specializes in translating complex cardiovascular data into actionable health literacy for the aging population.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/low-glycemic-foods-sugar-management/' | relative_url }}) | [**Brain**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//low-glycemic-foods-sugar-management/' | relative_url }}) | [**Brain**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

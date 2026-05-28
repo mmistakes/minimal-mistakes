@@ -3,7 +3,7 @@ layout: single
 title: "Senior Care: AI's Early Sepsis Detection Saves Lives"
 date: 2026-04-23T08:00:00+00:00
 categories: ["Metabolism"]
-tags: ["Senior Health", "Prevention", "Biomarkers", "Brain & Mind"]
+tags: ["Senior Health", "Prevention", "Biomarkers", "brain-mind"]
 description: "Discover how routine senior health screenings pair with cutting-edge AI technology to detect and prevent sepsis, a leading silent threat to older adults."
 excerpt: "Routine medical checkups are a senior's primary defense against silent conditions. Now, advanced AI-driven alert systems are adding an invisible layer of real-time safety, identifying life-threatening sepsis hours before clinical symptoms appear."
 header:
@@ -191,7 +191,7 @@ Yes. Risks can be substantially lowered by maintaining strict adherence to the C
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/senior-care-ai-early-sepsis-detection-saves-lives/"
+        "@id": "https://www.aginghealth.website/posts//senior-care-ai-early-sepsis-detection-saves-lives/"
       },
       "headline": "Senior Care: AI's Early Sepsis Detection Saves Lives",
       "description": "An evidence-based evaluation mapping how routine senior wellness checkups pair with real-time AI predictive models to disarm early, atypical sepsis.",

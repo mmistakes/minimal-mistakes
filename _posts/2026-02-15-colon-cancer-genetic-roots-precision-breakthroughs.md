@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Colon Cancer: From Genetic Roots to Precision Breakthroughs"
-permalink: /posts/colon-cancer-genetic-roots-precision-breakthroughs/
+permalink: /posts//colon-cancer-genetic-roots-precision-breakthroughs/
 date: 2026-02-15
 description: "Exploring the Swedish MakA toxin breakthrough, the PIK3 signaling pathway, and tactical screening for high-risk families."
 header:
@@ -90,11 +90,11 @@ Since early-onset colon cancer is on the rise, we must follow the **10-Year Rule
 ### About the Researcher
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major heart attack, he specializes in translating complex genomic data into actionable health literacy for seniors and high-risk families.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 ### 📘 Related Patient Resources
 * [**Seniors Home Safety Checklist**]({{ '/home-safety-checklist/' | relative_url }}): Essential for post-surgical recovery and TBI prevention.
 * [**How We Research**]({{ '/how-we-research/' | relative_url }}): Learn more about our clinical verification process and 2026 standards.
-* [**Beginner’s Guide to Diabetes**]({{ '/posts/diabetes-guide/' | relative_url }}): Managing metabolic health to support cancer resilience.
+* [**Beginner’s Guide to Diabetes**]({{ '/posts//diabetes-guide/' | relative_url }}): Managing metabolic health to support cancer resilience.
 ---
 
 ### Glossary & Sources

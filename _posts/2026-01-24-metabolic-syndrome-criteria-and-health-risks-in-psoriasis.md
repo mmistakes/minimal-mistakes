@@ -2,7 +2,7 @@
 layout: single
 title: "Metabolic Syndrome Criteria and Health Risks in Psoriasis"
 date: 2026-01-24T16:53:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Cardiovascular", "Immune Health", "Diabetes", "Nutrition", "Prevention"]
 description: "A clinical review of the ATP III criteria for metabolic syndrome in psoriasis patients, tracking systemic inflammation and mortality risks."
 excerpt: "People with psoriasis are significantly more likely to develop metabolic syndrome. Discover how chronic immune overdrive accelerates fat accumulation and vascular failure."

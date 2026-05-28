@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Psoriasis and Cardiovascular Disease: What Patients Need to Know"
-permalink: /posts/psoriasis-and-cardiovascular-disease/
+permalink: /posts//psoriasis-and-cardiovascular-disease/
 date: 2026-01-24T08:00:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: [psoriasis, heart-health, systemic-inflammation, atherosclerosis, stroke-prevention]
 description: "Why heart disease is the leading cause of death in psoriasis patients: Exploring the link between chronic systemic inflammation and arterial health."
 excerpt: "Psoriasis is an inflammatory fire that spreads from the skin into the coronary arteries. Discover why heart disease is the leading mortality risk for psoriasis patients and how to protect your vessels."
@@ -37,7 +37,7 @@ When your immune system is persistently hyper-activated, it shifts your blood ve
 
 As someone who survived a **major heart attack in 2008** and has spent years auditing health data, I know firsthand the invisible, life-threatening link between chronic metabolic stress and vascular failure. For decades, traditional medicine told us that psoriasis was "just a cosmetic skin condition." Today, we know the definitive truth: it is a full-body inflammatory event.
 
-If you have psoriasis, you aren't just managing surface-level skin plaques—you are managing your systemic longevity. My goal as a patient advocate is to empower you to catch the subtle warning signs of "silent inflammation" before they damage your coronary arteries the way mine were damaged. You can refer to my [**Big 6 Pillars of Health**](/posts/big-six-pillars-optimal-aging-health/) to see exactly how I construct my daily vascular safety net.
+If you have psoriasis, you aren't just managing surface-level skin plaques—you are managing your systemic longevity. My goal as a patient advocate is to empower you to catch the subtle warning signs of "silent inflammation" before they damage your coronary arteries the way mine were damaged. You can refer to my [**Big 6 Pillars of Health**](/posts//big-six-pillars-optimal-aging-health/) to see exactly how I construct my daily vascular safety net.
 
 ---
 
@@ -64,7 +64,7 @@ The most dangerous mechanism involves how inflammatory cytokines, specifically *
 
 The severe vascular friction caused by psoriasis does not operate in a vacuum. The identical cytokine surges that irritate your blood vessels simultaneously block insulin receptors on your muscle and liver tissues, worsening peripheral insulin resistance. 
 
-In clinical geroscience, this persistent cellular insulin resistance inside the brain is recognized as a primary driver of neuro-degeneration—a concept researchers call [**Type 3 Diabetes**](/posts/brain-health-is-alzheimers-really-type-3-diabetes/).
+In clinical geroscience, this persistent cellular insulin resistance inside the brain is recognized as a primary driver of neuro-degeneration—a concept researchers call [**Type 3 Diabetes**](/posts//brain-health-is-alzheimers-really-type-3-diabetes/).
 
 ```text
        [Active Psoriatic Cytokine Surge (TNF-α & IL-17)]

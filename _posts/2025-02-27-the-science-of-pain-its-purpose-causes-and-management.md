@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "The Science of Pain: Its Purpose, Causes, and Management"
-permalink: /posts/the-science-of-pain-biological-origins-management/
+permalink: /posts//the-science-of-pain-biological-origins-management/
 date: 2025-02-27T18:25:00+00:00
 categories: ["Longevity"]
 tags: ["Senior Health", "Prevention", "Biomarkers", "Advocacy"]
@@ -196,7 +196,7 @@ Spinal Cord Stimulation devices deliver mild electrical micro-pulses directly to
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/the-science-of-pain-biological-origins-management/"
+        "@id": "https://www.aginghealth.website/posts//the-science-of-pain-biological-origins-management/"
       },
       "headline": "The Science of Pain: Its Purpose, Causes, and Management",
       "description": "An evidence-based neurobiology review charting the physiological stages of nociception, the mechanical sub-types of chronic pain, and advanced neuromodulation technology.",

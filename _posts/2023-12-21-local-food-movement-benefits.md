@@ -24,7 +24,7 @@ The local food movement connects consumers directly with the people who grow the
 * **Farmers Markets:** Direct-to-public sales from local producers.
 * **CSAs (Community Supported Agriculture):** A subscription model for weekly farm-fresh deliveries.
 * **Farm-to-Table:** Restaurants that prioritize local sourcing.
-* **Community Gardens:** Shared spaces for growing your own food, which supports [functional fitness and movement](https://www.aginghealth.website/posts/healthy-aging-2026-evidence-tips/).
+* **Community Gardens:** Shared spaces for growing your own food, which supports [functional fitness and movement](https://www.aginghealth.website/posts//healthy-aging-2026-evidence-tips/).
 
 ---
 
@@ -39,7 +39,7 @@ The local food movement connects consumers directly with the people who grow the
 Locally sourced produce is typically harvested at its peak. This results in higher nutrient content (especially Vitamin C and antioxidants) and superior flavor. Many local farmers also prioritize sustainable practices, reducing your exposure to synthetic pesticides.
 
 ### 2. Reduced Carbon Footprint
-Shorter transportation distances significantly reduce the greenhouse gas emissions associated with food distribution. This aligns with our goals for [sustainable living and better respiratory health](https://www.aginghealth.website/posts/sustainable-living-green-healthy-life/).
+Shorter transportation distances significantly reduce the greenhouse gas emissions associated with food distribution. This aligns with our goals for [sustainable living and better respiratory health](https://www.aginghealth.website/posts//sustainable-living-green-healthy-life/).
 
 ### 3. Food Security and Resilience
 A strong local food system enhances community resilience by reducing reliance on long-distance transportation and increasing access to fresh, whole foods.
@@ -49,7 +49,7 @@ A strong local food system enhances community resilience by reducing reliance on
 ## Tips for Getting the Best Produce and Meat
 * **Visit Early:** The best selection is always available first thing in the morning.
 * **Ask Questions:** Talk to farmers about their growing practices—especially regarding soil health and pesticide use.
-* **Buy in Season:** Nature provides exactly what we need when we need it. [Seasonal eating](https://www.aginghealth.website/posts/9-tips-for-healthy-aging/) ensures you get the most nutrient-dense options.
+* **Buy in Season:** Nature provides exactly what we need when we need it. [Seasonal eating](https://www.aginghealth.website/posts//9-tips-for-healthy-aging/) ensures you get the most nutrient-dense options.
 
 ---
 

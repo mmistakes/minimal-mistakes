@@ -2,7 +2,7 @@
 layout: single
 title: "The Blood Test Revolution: Precision Medicine in Alzheimer’s"
 date: 2026-04-03T08:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Cognitive Health", "Dementia", "Neurology", "Clinical Research"]
 description: "How p-tau217 blood biomarkers and AI-driven 'Molecular Subtyping' are replacing expensive PET scans and matching patients to targeted Alzheimer's therapies in 2026."
 excerpt: "The diagnostic barrier has collapsed. Discover how a simple blood draw can now detect Alzheimer’s pathology with 90%+ accuracy years before symptoms show."

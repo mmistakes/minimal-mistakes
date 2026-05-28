@@ -116,10 +116,10 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', '❤️ Cardi
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical endocrine data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts/what-is-a-pathologist/">Pathology</a> | 
-      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts/cortisol-stress-hormone-effects-management/">Stress/Cortisol</a> | 
-      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a>
+      <a href="https://www.aginghealth.website/posts//what-is-a-pathologist/">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts//taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
+      <a href="https://www.aginghealth.website/posts//cortisol-stress-hormone-effects-management/">Stress/Cortisol</a> | 
+      <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/">Liver</a>
     </p>
   </div>
 

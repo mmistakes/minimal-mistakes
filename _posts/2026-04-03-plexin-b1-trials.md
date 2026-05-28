@@ -2,7 +2,7 @@
 layout: single
 title: "Plexin-B1 Clinical Trials: The 2026 Update"
 date: 2026-04-03T09:00:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Clinical Research", "Neurology", "Metabolic Health"]
 description: "A comprehensive 2026 research summary mapping how cellular-behavior therapeutics and Plexin-B1 inhibitors alter neuro-inflammatory markers."
 excerpt: "Moving beyond amyloid clearing. Discover how 2026 clinical trials are retraining astrocytes and microglia to actively contain and detoxify neurodegenerative plaques."

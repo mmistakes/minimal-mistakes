@@ -77,7 +77,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
     </div>
     <div>
       <h2 style="text-align: left;">Undiagnosed Mild Cognitive Impairment in Older Adults</h2>
-      <div>Two major studies highlight how often early <a href="https://www.aginghealth.website/posts/making-your-home-safe-for-cognitive-decline/" rel="dofollow" title="Making Your Home Safe For Cognitive Decline"><b>cognitive decline is missed</b></a>:</div>
+      <div>Two major studies highlight how often early <a href="https://www.aginghealth.website/posts//making-your-home-safe-for-cognitive-decline/" rel="dofollow" title="Making Your Home Safe For Cognitive Decline"><b>cognitive decline is missed</b></a>:</div>
     </div>
     <div>
       <h3>Study 1: Medicare Data (2015–2019)</h3>
@@ -114,7 +114,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
         <li><b>Thyroid disorders</b></li>
         <li><b>Vitamin B12 deficiency</b></li>
       </ul>
-      <a href="https://www.aginghealth.website/posts/is-alzheimers-inherited-risk-factors/" rel="dofollow" title="Is Alzheimers Inherited Risk Factors"><b>Managing risk factors</b></a> — high blood pressure, cholesterol, inactivity — also helps protect cognitive health.
+      <a href="https://www.aginghealth.website/posts//is-alzheimers-inherited-risk-factors/" rel="dofollow" title="Is Alzheimers Inherited Risk Factors"><b>Managing risk factors</b></a> — high blood pressure, cholesterol, inactivity — also helps protect cognitive health.
       <br />
       <h2 style="text-align: left;">Lecanemab and Donanemab: New Hope in Alzheimer’s Treatment</h2>
       <ul style="text-align: left;">
@@ -140,7 +140,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
       up concerns during routine visits and request a formal cognitive assessment.
       <br />
       The Medicare Annual Wellness Visit includes a cognitive check, yet only about half of eligible adults use this
-      benefit. Cognitive questions should become as routine as asking about <a href="https://www.aginghealth.website/posts/akkermansia-gut-health-weight-loss/" rel="dofollow" title="Akkermansia Gut Health Weight Loss"><b>unexplained weight loss</b></a> or falls.
+      benefit. Cognitive questions should become as routine as asking about <a href="https://www.aginghealth.website/posts//akkermansia-gut-health-weight-loss/" rel="dofollow" title="Akkermansia Gut Health Weight Loss"><b>unexplained weight loss</b></a> or falls.
       <br />
       <h3 style="text-align: left;">In Conclusion</h3>
       Delays in diagnosing Mild Cognitive Impairment can profoundly affect older adults.
@@ -171,7 +171,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
   <h4>Can Mild Cognitive Impairment be reversible?</h4>
   <p>Sometimes. Medication side effects, thyroid problems, and vitamin B12 deficiency can cause reversible cognitive symptoms. </p>
 
-  <h4>What <a href="https://www.aginghealth.website/posts/new-treatments-for-obstructive-sleep-apnea/" rel="dofollow" title="New Treatments For Obstructive Sleep Apnea"><b>new treatments are available</b></a> for early Alzheimer’s?</h4>
+  <h4>What <a href="https://www.aginghealth.website/posts//new-treatments-for-obstructive-sleep-apnea/" rel="dofollow" title="New Treatments For Obstructive Sleep Apnea"><b>new treatments are available</b></a> for early Alzheimer’s?</h4>
   <p>Lecanemab (FDA‑approved 2023) and donanemab (in late‑stage review) target amyloid plaques and work best in early disease, including MCI due to Alzheimer’s. </p>
 
   <h4>When should seniors talk to a doctor about memory concerns?</h4>
@@ -214,10 +214,10 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
-    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
-    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
+    <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
+    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
   </p><br />
 </div></div>
 
@@ -249,7 +249,7 @@ tags: ['🧠 Cognitive Health', '⚖️ Patient Advocacy', 'Mind', 'Dementia']
       "name": "How often is Mild Cognitive Impairment missed in primary care?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Large Medicare analyses suggest only about 8% of expected Mild Cognitive Impairment cases are diagnosed, leaving <a href="https://www.aginghealth.website/posts/tbi-in-older-adults-fall-prevention-recovery/" title="Tbi In Older Adults Fall Prevention Recovery" rel="dofollow"><b>millions of older adults</b></a> undetected."
+        "text": "Large Medicare analyses suggest only about 8% of expected Mild Cognitive Impairment cases are diagnosed, leaving <a href="https://www.aginghealth.website/posts//tbi-in-older-adults-fall-prevention-recovery/" title="Tbi In Older Adults Fall Prevention Recovery" rel="dofollow"><b>millions of older adults</b></a> undetected."
       }
     },
     {

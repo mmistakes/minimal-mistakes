@@ -2,7 +2,7 @@
 layout: single
 title: "The Burden Unseen: How Anxiety Accelerates Aging"
 date: 2025-04-15T19:23:00+00:00
-categories: ["Brain & Mind"]
+categories: ["brain-mind"]
 tags: ["Senior Health", "Prevention", "Biomarkers", "Aging Well"]
 description: "Learn how chronic anxiety affects aging and discover effective strategies for healthier living. Improve your body and mind for a better quality of life."
 excerpt: "Chronic anxiety is far more than a psychological strain. Explore the molecular mechanisms of stress-induced aging, from telomere shortening to systemic neuroprogression."
@@ -182,7 +182,7 @@ Older adults often internalize emotional distress or display a pattern of somati
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts/anxiety-accelerates-aging/"
+        "@id": "https://www.aginghealth.website/posts//anxiety-accelerates-aging/"
       },
       "headline": "The Burden Unseen: How Anxiety Accelerates Aging",
       "description": "An evidence-based clinical review charting the psychoneuroimmunology pathways of chronic stress, cortisol-driven telomere shortening, and cognitive reserve preservation.",

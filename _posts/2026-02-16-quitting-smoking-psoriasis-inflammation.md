@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "How Quitting Smoking Reduces Inflammation and Changes Psoriasis Symptoms"
-permalink: /posts/quitting-smoking-psoriasis-inflammation/
+permalink: /posts//quitting-smoking-psoriasis-inflammation/
 date: 2026-02-16
 description: "A 7-year reflection on how nicotine cessation fundamentally shifts systemic inflammation and improves plaque psoriasis outcomes."
 header:
@@ -93,7 +93,7 @@ Absolutely. While many smokers believe cigarettes calm their nerves, nicotine ac
 > While nicotine cessation is the single largest lever for stabilizing your skin health, metabolic stability forms the core foundation of long-term tissue recovery:
 > * **Protein Support:** Aim for **1.2–1.6 g/kg** of high-quality protein daily to support healthy structural skin cell turnover and repair during recovery.
 > * **Vascular Integrity:** Maintain a strict blood pressure target of **<130/80 mmHg** to optimize arterial delivery and tissue oxygenation to healing skin layers.
-> * **Dietary Optimization:** Lower overall systemic load by actively avoiding common dietary triggers. Review the comprehensive [**Anti-Inflammatory Arthritis Diet**]({{ '/posts/arthritis-foods-to-avoid/' | relative_url }}) guide.
+> * **Dietary Optimization:** Lower overall systemic load by actively avoiding common dietary triggers. Review the comprehensive [**Anti-Inflammatory Arthritis Diet**]({{ '/posts//arthritis-foods-to-avoid/' | relative_url }}) guide.
 {: .prompt-info }
 
 ---
@@ -101,13 +101,13 @@ Absolutely. While many smokers believe cigarettes calm their nerves, nicotine ac
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A seven-year smoke-free survivor of a major cardiac event, he specializes in translating complex clinical data, wastewater tracking, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
-* [**Beginner's Guide to Diabetes**]({{ '/posts/diabetes-guide/' | relative_url }})
-* [**How Metabolic Syndrome Impacts Liver Cirrhosis**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+* [**Beginner's Guide to Diabetes**]({{ '/posts//diabetes-guide/' | relative_url }})
+* [**How Metabolic Syndrome Impacts Liver Cirrhosis**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 <script type="application/ld+json">
 {

@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Mini-Stroke Prevention: Managing Liver Pressure with Carvedilol"
-permalink: /posts/mini-stroke-prevention-liver-pressure-carvedilol/
+permalink: /posts//mini-stroke-prevention-liver-pressure-carvedilol/
 date: 2026-02-22T08:14:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Cardiovascular", "Liver Health", "Prevention", "Patient Advocacy"]
 description: "Understanding the dangerous link between portal hypertension, systemic blood pressure spikes, and transient ischemic attacks (TIAs)."
 header:
@@ -99,8 +99,8 @@ If you are prescribed Carvedilol to manage this delicate brain-liver-heart loop,
 ## 📘 Companion Patient Resources
 
 * **The Tracker Dashboard:** Log your daily home blood pressure readings, fasting glucose entries, and medication consistency scores inside my mobile-optimized [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
-* **The Stroke Emergency Protocol:** Learn why modern clinical guidelines have expanded from the basic FAST model to the high-alert BE-FAST framework by reading [Don't Dismiss It: Why Temporary Stroke Symptoms Demand Action]({{ '/posts/mini-stroke-symptoms-first-48-hours-prevention/' | relative_url }}).
-* **The Nutritional Blueprint:** Explore how managing your dietary intake protects lean muscle reserves—your body's crucial secondary filtration sink—by reviewing [The Great Protein Flip: Why 'Resting the Liver' is Outdated]({{ '/posts/the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }}).
+* **The Stroke Emergency Protocol:** Learn why modern clinical guidelines have expanded from the basic FAST model to the high-alert BE-FAST framework by reading [Don't Dismiss It: Why Temporary Stroke Symptoms Demand Action]({{ '/posts//mini-stroke-symptoms-first-48-hours-prevention/' | relative_url }}).
+* **The Nutritional Blueprint:** Explore how managing your dietary intake protects lean muscle reserves—your body's crucial secondary filtration sink—by reviewing [The Great Protein Flip: Why 'Resting the Liver' is Outdated]({{ '/posts//the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }}).
 
 ---
 
@@ -115,7 +115,7 @@ If you are prescribed Carvedilol to manage this delicate brain-liver-heart loop,
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in translating complex clinical data, local wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

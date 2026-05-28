@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Lessons from a 2008 Heart Attack Survivor"
-permalink: /posts/lessons-from-a-2008-heart-attack-survivor/
+permalink: /posts//lessons-from-a-2008-heart-attack-survivor/
 date: 2026-02-02
 description: "A personal look at the link between Type 2 Diabetes and cardiovascular events, including the role of GLP-1 medications in vascular protection."
 header:
@@ -92,9 +92,9 @@ GLP-1 receptors do not exist solely within the gastrointestinal tract to manage 
 
 ## 📘 Essential Patient Resources
 
-* **The Foundation:** New to tracking your metabolic health maps? Stabilize your baseline health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Neuro Axis:** Explore how chronic insulin resistance crosses the blood-brain barrier to accelerate severe cognitive changes by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
-* **The Liver Connection:** Learn how systemic metabolic syndrome impacts vascular backup pressures within digestive tract networks by reviewing [Liver Cirrhosis: Understanding Decompensation and Portal Hypertension]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }}).
+* **The Foundation:** New to tracking your metabolic health maps? Stabilize your baseline health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Neuro Axis:** Explore how chronic insulin resistance crosses the blood-brain barrier to accelerate severe cognitive changes by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Liver Connection:** Learn how systemic metabolic syndrome impacts vascular backup pressures within digestive tract networks by reviewing [Liver Cirrhosis: Understanding Decompensation and Portal Hypertension]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }}).
 
 ---
 
@@ -109,14 +109,14 @@ GLP-1 receptors do not exist solely within the gastrointestinal tract to manage 
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, regional wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
 * [**The Log: Daily Glucose and Medication Tracker**]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }})
-* [**A Low-Glycemic Foods List for Sugar Management**]({{ '/posts/low-glycemic-foods-list-sugar-management/' | relative_url }})
-* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts/the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
+* [**A Low-Glycemic Foods List for Sugar Management**]({{ '/posts//low-glycemic-foods-list-sugar-management/' | relative_url }})
+* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts//the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
 
 <script type="application/ld+json">
 {

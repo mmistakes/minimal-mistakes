@@ -1,7 +1,11 @@
 ---
 layout: single
 title: "Understanding Diabetes and Managing Blood Sugar"
-permalink: /posts/understanding-diabetes-managing-blood-sugar/
+redirect_from:
+  - /2024/01/diabetes.html
+  - /posts//diabetes/
+  - /posts//diabetes-guide/
+permalink: /posts//understanding-diabetes-managing-blood-sugar/
 date: 2026-02-02T00:06:00+00:00
 description: "A clinical and practical guide to blood sugar stability, evaluating insulin resistance, the 'Standard American Diet' crisis, and microvascular complications."
 header:
@@ -159,14 +163,14 @@ Overcoming insulin resistance requires a structured, multi-faceted medical and l
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in translating complex clinical data, wastewater monitoring patterns, and peer-reviewed metabolic literature into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
 * [**The Log: Daily Glucose and Medication Tracker**]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }})
-* [**The Frontier: Is Alzheimer's Disease Actually Type 3 Diabetes?**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }})
-* [**Liver Health: Navigating Portal Hypertension and Decompensation**]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }})
+* [**The Frontier: Is Alzheimer's Disease Actually Type 3 Diabetes?**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }})
+* [**Liver Health: Navigating Portal Hypertension and Decompensation**]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }})
 
 ---
 

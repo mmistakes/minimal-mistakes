@@ -2,7 +2,7 @@
 layout: single
 title: "The Stealth Metabolic Trap: Understanding Sarcopenic Obesity"
 date: 2026-05-19T08:00:00+00:00
-categories: ["Heart & Metabolic"]
+categories: ["heart-metabolic"]
 tags: ["Sarcopenia", "Obesity", "Metabolic Health", "Geriatric Literacy", "Nutrition"]
 description: "Sarcopenic obesity is the hidden cross-section of muscle wasting and increased body fat. Discover why your bathroom scale is lying to you and how to defend your physical independence."
 excerpt: "Exposing the hidden synergy between muscle loss and fat accumulation. Learn why standard BMI charts fail seniors and how to audit your true metabolic composition."

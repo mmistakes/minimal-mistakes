@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Patient-Led Clinical Insights: Advocating for Liver Health"
-permalink: /posts/patient-led-clinical-insights-liver-health/
+permalink: /posts//patient-led-clinical-insights-liver-health/
 date: 2026-02-02
 description: "Translating high-level clinical data into health literacy for seniors managing cirrhosis and portal hypertension."
 header:
@@ -71,8 +71,8 @@ In my research and advocacy initiatives, I cross-reference clinical updates from
 
 ## 📘 Essential Patient Resources
 
-* **The Foundation:** New to managing metabolic markers? Build your baseline health literacy with my comprehensive [Beginner’s Guide to Diabetes and Blood Sugar Stability]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Brain Axis:** Explore how chronic insulin resistance and liver-driven inflammation can cross into the nervous system by reading [Is Alzheimer’s Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Foundation:** New to managing metabolic markers? Build your baseline health literacy with my comprehensive [Beginner’s Guide to Diabetes and Blood Sugar Stability]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Brain Axis:** Explore how chronic insulin resistance and liver-driven inflammation can cross into the nervous system by reading [Is Alzheimer’s Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 * **The Tracker:** Take control of your daily home numbers by accessing my interactive [Daily Glucose and Medication Tracker]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}) layout.
 
 ---
@@ -88,13 +88,13 @@ In my research and advocacy initiatives, I cross-reference clinical updates from
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in translating complex clinical data, wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
-* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts/the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
-* [**Liver Health: Understanding Decompensation and Portal Hypertension**]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }})
+* [**The Great Protein Flip: Why 'Resting the Liver' is Outdated**]({{ '/posts//the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }})
+* [**Liver Health: Understanding Decompensation and Portal Hypertension**]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }})
 
 <script type="application/ld+json">
 {
