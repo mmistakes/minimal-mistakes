@@ -63,7 +63,7 @@ Executing the dietary protein flip is only half of a comprehensive longevity str
 
 Think of your circulatory architecture like a high-pressure garden hose. When blood flow encounters a blocked, scarred liver, fluid pressure mounts inside the portal vein. If your systemic blood pressure profiles spike unpredictably, that pressure hits the weakest, thinnest vessels in the esophagus, increasing the risk of a dangerous bleed. 
 
-Maintaining your resting blood pressure tightly **under 130/80 mmHg** acts like turning down the main water tap—safeguarding those fragile weak points and keeping your vascular system stable. For a deeper breakdown of managing these vascular bottleneck pressures, see my guide on [Navigating Portal Hypertension and Decompensation]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }}).
+Maintaining your resting blood pressure tightly **under 130/80 mmHg** acts like turning down the main water tap—safeguarding those fragile weak points and keeping your vascular system stable. For a deeper breakdown of managing these vascular bottleneck pressures, see my guide on [Navigating Portal Hypertension and Decompensation]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }}).
 
 ---
 
@@ -133,14 +133,14 @@ For older adults navigating advanced chronic illness, maintaining muscle mass is
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, wastewater monitoring trends, and peer-reviewed metabolic literature into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
 * [**The Log: Daily Glucose and Medication Tracker**]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }})
-* [**The Foundation: Beginner’s Guide to Diabetes and Blood Sugar Stability**]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }})
-* [**The Frontier: Is Alzheimer's Disease Actually Type 3 Diabetes?**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }})
+* [**The Foundation: Beginner’s Guide to Diabetes and Blood Sugar Stability**]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }})
+* [**The Frontier: Is Alzheimer's Disease Actually Type 3 Diabetes?**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }})
 
 <script type="application/ld+json">
 {

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Keto Diet: Metabolic Mechanisms and Neurological Benefits"
-permalink: /posts//keto-diet-metabolic-mechanisms-neurological-benefits/
+permalink: /posts/keto-diet-metabolic-mechanisms-neurological-benefits/
 date: 2026-04-16
 description: "A clinical review of how the ketogenic diet impacts ketosis, blood sugar control, and neurodegenerative conditions like Alzheimer's."
 header:
@@ -112,8 +112,8 @@ Because nutritional ketosis fundamentally alters fluid handling and electrolyte 
 ## 📘 Companion Patient Resources
 
 * **The Dashboard:** Take systematic command of your daily biological metrics, post-meal blood sugar curves, and medication timing slots with my responsive [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
-* **The Baseline Framework:** New to analyzing systemic insulin resistance parameters? Solidify your baseline health literacy with my complete [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Core Frontier:** Explore the comprehensive biochemical evidence linking chronic hyperinsulinemia directly to neurodegenerative pathways by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Baseline Framework:** New to analyzing systemic insulin resistance parameters? Solidify your baseline health literacy with my complete [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Core Frontier:** Explore the comprehensive biochemical evidence linking chronic hyperinsulinemia directly to neurodegenerative pathways by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 
 ---
 
@@ -128,7 +128,7 @@ Because nutritional ketosis fundamentally alters fluid handling and electrolyte 
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, regional wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults. Having successfully managed Type 2 Diabetes since his 2008 heart attack, he delivers a unique "lived experience" perspective on full-body vascular preservation.
 
-[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

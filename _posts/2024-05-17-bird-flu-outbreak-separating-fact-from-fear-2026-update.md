@@ -107,7 +107,7 @@ tags: ['🛡️ Liver & Immune Health', '⚖️ Patient Advocacy', '❤️ Cardi
   </div>
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Prevention: The Bio-Hacker’s Protocol</h2>
-    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The 165°F Rule:</strong> Always cook poultry to an internal temperature of 165°F. Use a digital thermometer; "clear juices" are not a clinical measurement.</li><li><input type="checkbox" /> <strong>Wearable Monitoring:</strong> As discussed in our <a href="https://www.aginghealth.website/posts//seniors-biohacking-2026/" target="_blank">Smart Tech Guide</a>, use your smart ring or watch to track <strong>Heart Rate Variability (HRV)</strong>. A sudden drop in HRV can signal your body is fighting a virus before you feel a fever.</li><li><input type="checkbox" /> <strong>The "Firm Yolk" Standard:</strong> Cook eggs until yolks and whites are firm to ensure any potential viral particles are neutralized.</li></ul><ul class="ah-checklist">
+    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The 165°F Rule:</strong> Always cook poultry to an internal temperature of 165°F. Use a digital thermometer; "clear juices" are not a clinical measurement.</li><li><input type="checkbox" /> <strong>Wearable Monitoring:</strong> As discussed in our <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/" target="_blank">Smart Tech Guide</a>, use your smart ring or watch to track <strong>Heart Rate Variability (HRV)</strong>. A sudden drop in HRV can signal your body is fighting a virus before you feel a fever.</li><li><input type="checkbox" /> <strong>The "Firm Yolk" Standard:</strong> Cook eggs until yolks and whites are firm to ensure any potential viral particles are neutralized.</li></ul><ul class="ah-checklist">
     </ul>
   </div>
 
@@ -115,10 +115,10 @@ tags: ['🛡️ Liver & Immune Health', '⚖️ Patient Advocacy', '❤️ Cardi
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating complex clinical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/">Heart</a> | 
-      <a href="https://www.aginghealth.website/posts//what-is-a-pathologist/">Pathology</a> | 
-      <a href="https://www.aginghealth.website/posts//taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/">Liver</a>
+      <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/">Heart</a> | 
+      <a href="https://www.aginghealth.website/posts/what-is-a-pathologist/">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
+      <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Liver</a>
     </p>
   </div>
 

@@ -52,7 +52,7 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
     <ul>
       <li><strong>Protein Resilience&nbsp;</strong>Your body needs more protein—about 1.2 to 1.6 grams for every kilogram you weigh<strong>:</strong> We target high-protein intake to maintain the neural neurotransmitters required for rapid speech processing.</li>
       <li><strong>Vascular Pressure:</strong> Chronic hypertension "scuffs" the small vessels in the temporal lobe. We maintain a BP target of <strong>&lt;130/80 mmHg</strong> to preserve the language network.</li>
-      <li><strong>The Douglas Tip:</strong> If your speech feels "thick" or slow, check your <strong>Ammonia levels</strong>. As discussed in our <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/">Hyperammonemia guide</a>, a spike in blood toxins can mimic early FTD symptoms.</li>
+      <li><strong>The Douglas Tip:</strong> If your speech feels "thick" or slow, check your <strong>Ammonia levels</strong>. As discussed in our <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/">Hyperammonemia guide</a>, a spike in blood toxins can mimic early FTD symptoms.</li>
     </ul>
   </div>
 
@@ -113,7 +113,7 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
   </div>
   <div class="ah-card" style="text-align: left;">
     <h2 class="ah-title">Tactical Steps for 2026 Resilience</h2>
-    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The "Reading Aloud" Test:</strong> Spend 5 minutes a day reading a book aloud. Note any stumbles or fatigue in the jaw—this is a baseline for your own neuro-health.</li><li><input type="checkbox" /> <strong>Smart Tech Monitoring:</strong> Use your <a href="https://www.aginghealth.website/posts//seniors-biohacking-2026/">Digital Assistant</a> (Alexa/Siri) to track your interaction speed. If you find yourself having to repeat commands more often, it may be a change in your own articulation.</li><li><input type="checkbox" /> <strong>Hydration for Clarity:</strong> Dehydration thickens saliva and slows neural firing. Drink 60-80oz of water to maintain the fluid environment the brain needs for language.</li></ul><ul class="ah-checklist">
+    <ul style="text-align: left;"><li><input type="checkbox" /> <strong>The "Reading Aloud" Test:</strong> Spend 5 minutes a day reading a book aloud. Note any stumbles or fatigue in the jaw—this is a baseline for your own neuro-health.</li><li><input type="checkbox" /> <strong>Smart Tech Monitoring:</strong> Use your <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Digital Assistant</a> (Alexa/Siri) to track your interaction speed. If you find yourself having to repeat commands more often, it may be a change in your own articulation.</li><li><input type="checkbox" /> <strong>Hydration for Clarity:</strong> Dehydration thickens saliva and slows neural firing. Drink 60-80oz of water to maintain the fluid environment the brain needs for language.</li></ul><ul class="ah-checklist">
     </ul>
   </div>
 
@@ -121,10 +121,10 @@ tags: ['🧠 Cognitive Health', 'Neurological', 'Dementia', 'Genetics', 'Trials'
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes and specializes in translating clinical research into actionable health literacy for seniors, focusing on the future of digital diagnostics.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts//glucose-metabolism-alzheimers-disease/">Neurological</a> | 
-      <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/">Brain Metabolism</a> | 
-      <a href="https://www.aginghealth.website/posts//gerd-atrial-fibrillation-gut-microbiome-health/">GERD and Heart Health</a> | 
-      <a href="https://www.aginghealth.website/posts//gerd-and-sepsis-a-dangerous-connection/">GERD and Sepsis</a>
+      <a href="https://www.aginghealth.website/posts/glucose-metabolism-alzheimers-disease/">Neurological</a> | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Brain Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts/gerd-atrial-fibrillation-gut-microbiome-health/">GERD and Heart Health</a> | 
+      <a href="https://www.aginghealth.website/posts/gerd-and-sepsis-a-dangerous-connection/">GERD and Sepsis</a>
     </p>
   </div>
 

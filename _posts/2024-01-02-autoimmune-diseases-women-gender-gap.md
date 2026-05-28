@@ -21,10 +21,10 @@ Autoimmune diseases occur when the immune system mistakenly attacks healthy cell
 ## The "Big Three" in Women's Health
 
 ### 1. Rheumatoid Arthritis (RA)
-Women are three times more likely than men to develop RA. This chronic condition causes systemic inflammation in the joints, leading to stiffness, pain, and eventual deformity. As an advocate for [functional fitness](https://www.aginghealth.website/posts//healthy-aging-2026-evidence-tips/), it is clear that early intervention is key to maintaining mobility.
+Women are three times more likely than men to develop RA. This chronic condition causes systemic inflammation in the joints, leading to stiffness, pain, and eventual deformity. As an advocate for [functional fitness](https://www.aginghealth.website/posts/healthy-aging-2026-evidence-tips/), it is clear that early intervention is key to maintaining mobility.
 
 ### 2. Lupus (SLE)
-Lupus is a complex condition where the immune system attacks various tissues, including the skin, kidneys, and nervous system. It is often triggered by infections or environmental stressors, making it difficult to diagnose without a [proactive healthcare approach](https://www.aginghealth.website/posts//9-tips-for-healthy-aging/).
+Lupus is a complex condition where the immune system attacks various tissues, including the skin, kidneys, and nervous system. It is often triggered by infections or environmental stressors, making it difficult to diagnose without a [proactive healthcare approach](https://www.aginghealth.website/posts/9-tips-for-healthy-aging/).
 
 ### 3. Hashimoto's Thyroiditis
 Women are diagnosed with this thyroid disorder eight times more often than men. It can lead to profound fatigue, weight gain, and mood swings, significantly impacting a patient's quality of life.

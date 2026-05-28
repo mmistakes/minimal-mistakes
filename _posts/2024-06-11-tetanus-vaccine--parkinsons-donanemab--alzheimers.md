@@ -13,13 +13,13 @@ decline. 💉🧠<span><!--more--></span>
 <figure style="margin: 30px 0px; text-align: center;">
   <img alt="A high‑tech digital illustration of the brain titled 'Neuro‑Map.' The left side shows a TD tetanus‑diphtheria vaccine vial and syringe reinforcing dopamine pathways with glowing green and blue circuits. The right side shows Y‑shaped Kisunla antibodies clearing red and orange amyloid plaques. The brain is surrounded by holographic grids and cosmic light, symbolizing neural repair and rejuvenation." loading="eagar" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjazF8fAtHUwrkiPXsIlnguTUC3sGxwPs7c7SbGZAjHnHq5Ee5HFIBr3qxrBKZx4BtmQ-xC0el6QFmlif8o2v2uisJxiw6OUs9i9F1Fd0StZFqaDn_9YNoBjlHpAyF2Le1j-_tIRlIFj8LdAAPJoppf__us0wofktJ3M-IZ70fV-RhvNpaZXATVGINu7IyQ/s16000/Neuro-Map%20of%20Brain%20w.webp" style="border-radius: 12px; border: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; max-width: 100%;" title="Neuro‑Map: Tetanus Vaccine Reinforcement and Kisunla Antibody Clearance" />
   <figcaption style="color: #666666; font-size: 1rem; font-style: italic; margin-top: 10px;">
-This educational visual contrasts two neuroprotective mechanisms: dopamine pathway reinforcement associated with tetanus‑derived immune activation, and amyloid plaque clearance by Kisunla antibodies. The left hemisphere glows with green‑blue neural energy, while the right shows antibodies dismantling toxic plaques. The cosmic interface evokes the frontier of <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/" title="Wisdom Aging Brain Cognitive Shifts" rel="dofollow"><b>neuroimmunology and brain</b></a> restoration.
+This educational visual contrasts two neuroprotective mechanisms: dopamine pathway reinforcement associated with tetanus‑derived immune activation, and amyloid plaque clearance by Kisunla antibodies. The left hemisphere glows with green‑blue neural energy, while the right shows antibodies dismantling toxic plaques. The cosmic interface evokes the frontier of <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" title="Wisdom Aging Brain Cognitive Shifts" rel="dofollow"><b>neuroimmunology and brain</b></a> restoration.
   </figcaption>
 </figure>
 
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding: 1rem;">
 Pair that with daily wins—eating well, moving your body, staying curious, and connecting with others—and you’re building
-a <a href="https://www.aginghealth.website/posts//boost-brain-health/" title="Boost Brain Health" rel="dofollow"><b>fortress for your long-term brain health</b></a>. It’s all about stacking smart choices today for a sharper, stronger
+a <a href="https://www.aginghealth.website/posts/boost-brain-health/" title="Boost Brain Health" rel="dofollow"><b>fortress for your long-term brain health</b></a>. It’s all about stacking smart choices today for a sharper, stronger
 tomorrow. 🌟
 <br />
 <ul>
@@ -28,7 +28,7 @@ tomorrow. 🌟
     and complications that can worsen cognitive decline. 💉🧠
   </li>
   <li>
-    Pair that with a brain-healthy lifestyle: <a href="https://www.aginghealth.website/posts//why-eat-more-choline/" title="Why Eat More Choline" rel="dofollow"><b>eat antioxidant-rich foods</b></a>, <a href="https://www.aginghealth.website/posts//in-the-blood/" title="In The Blood" rel="dofollow"><b>stay active to boost blood flow</b></a>, challenge
+    Pair that with a brain-healthy lifestyle: <a href="https://www.aginghealth.website/posts/why-eat-more-choline/" title="Why Eat More Choline" rel="dofollow"><b>eat antioxidant-rich foods</b></a>, <a href="https://www.aginghealth.website/posts/in-the-blood/" title="In The Blood" rel="dofollow"><b>stay active to boost blood flow</b></a>, challenge
     your mind, and stay socially connected. Together, these choices build cognitive resilience and support long-term
     brain health.
   </li>
@@ -40,7 +40,7 @@ tomorrow. 🌟
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid rgb(13, 71, 161); border-radius: 12px; margin-top: 2rem; padding: 1rem;">
 <h3>1. The Tetanus-Parkinson’s Link: From Lead to Evidence</h3>
 In 2024, the idea that a tetanus shot could protect the brain was a "preprint curiosity." By April 2026, formal
-retrospective studies involving over 140,000 patients have <a href="https://www.aginghealth.website/posts//imagination-reality-health-connection-seniors/" title="Imagination Reality Health Connection Seniors" rel="dofollow"><b>validated this connection</b></a>.
+retrospective studies involving over 140,000 patients have <a href="https://www.aginghealth.website/posts/imagination-reality-health-connection-seniors/" title="Imagination Reality Health Connection Seniors" rel="dofollow"><b>validated this connection</b></a>.
 <br />
 <ul>
   <li>
@@ -85,12 +85,12 @@ We have standardized the naming of this tool to 5-Cog.
   </li>
 </ul>
 <h3>4. Lifestyle vs. Genetics: The LIBRA Equalizer</h3>
-The <a href="https://www.aginghealth.website/posts//dementia-research-2026-ptau217-blood-test-breakthroughs/" title="Dementia Research 2026 Ptau217 Blood Test Breakthroughs" rel="dofollow"><b>2026 consensus on dementia prevention</b></a> is clear: your genes are not your destiny.
+The <a href="https://www.aginghealth.website/posts/dementia-research-2026-ptau217-blood-test-breakthroughs/" title="Dementia Research 2026 Ptau217 Blood Test Breakthroughs" rel="dofollow"><b>2026 consensus on dementia prevention</b></a> is clear: your genes are not your destiny.
 <br />
 <ul>
   <li>
     <b>The LIBRA Score:</b>
-    Using the <a href="https://www.aginghealth.website/posts//brain-health-diet-immunity/" title="Brain Health Diet Immunity" rel="dofollow"><b>LIfestyle for BRAin health</b></a> (LIBRA) score, researchers found that high-quality lifestyle choices (exercise,
+    Using the <a href="https://www.aginghealth.website/posts/brain-health-diet-immunity/" title="Brain Health Diet Immunity" rel="dofollow"><b>LIfestyle for BRAin health</b></a> (LIBRA) score, researchers found that high-quality lifestyle choices (exercise,
     Mediterranean diet, social engagement) can significantly offset the risk posed by the APOE ε4 allele.
   </li>
   <li>
@@ -124,7 +124,7 @@ The <a href="https://www.aginghealth.website/posts//dementia-research-2026-ptau2
   </li>
   <li>Antibody half‑life is long (tetanus ~11 years; diphtheria ~19 years).</li>
   <li>
-    <a href="https://www.aginghealth.website/posts//us-healthcare/" title="Us Healthcare" rel="dofollow"><b>Eliminating routine adult boosters in the US</b></a> could save
+    <a href="https://www.aginghealth.website/posts/us-healthcare/" title="Us Healthcare" rel="dofollow"><b>Eliminating routine adult boosters in the US</b></a> could save
     <strong>~$1 billion annually.</strong></li>
   <li>
     WHO has

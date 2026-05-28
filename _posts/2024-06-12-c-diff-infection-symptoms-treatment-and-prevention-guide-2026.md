@@ -10,8 +10,8 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health', 'Infections', '
 <p>
   <b>C. Diff Infection</b>
   is a resilient bacterial challenge that often arises after antibiotic use disrupts the natural balance of the gut. By
-  <a href="https://www.aginghealth.website/posts//understanding-fibromyalgia/" title="Understanding Fibromyalgia" rel="dofollow"><b>understanding the shift toward microbiota-based therapies</b></a> and stringent environmental hygiene, patients can
-  effectively manage <a href="https://www.aginghealth.website/posts//high-blood-pressure-symptoms-causes-treatments/" title="High Blood Pressure Symptoms Causes Treatments" rel="dofollow"><b>symptoms and significantly reduce the high</b></a> risk of recurrence.<span></span></p><!--more--> <div style="text-align: center; margin: 30px 0;"><img alt="Medical illustration comparing a healthy gut microbiome to a C. diff infected colon." border="0" data-original-height="535" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGz3G7KgPAU0xGR1VrTtKKaT_S-3rlBYRa_twNGMwBPpu9ktKb8qKxLKmnfLbnho6a_bAnpppvdjaE4fln5ZfRa1GdJ6_iGihGv_iinpQfPA0NBc1-gV_ySchGhr9CyxqP0ffwOSiGGYG3kWgBhA3eU2Hc8msJNw1dzKp1WCEUrg3UKgiQXy_2zJZdsWl2/s16000/Human%20Colon%20Cross-Se.webp" title="The Microscopic Battle: C. Diff vs. Healthy Gut Bacteria" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+  <a href="https://www.aginghealth.website/posts/understanding-fibromyalgia/" title="Understanding Fibromyalgia" rel="dofollow"><b>understanding the shift toward microbiota-based therapies</b></a> and stringent environmental hygiene, patients can
+  effectively manage <a href="https://www.aginghealth.website/posts/high-blood-pressure-symptoms-causes-treatments/" title="High Blood Pressure Symptoms Causes Treatments" rel="dofollow"><b>symptoms and significantly reduce the high</b></a> risk of recurrence.<span></span></p><!--more--> <div style="text-align: center; margin: 30px 0;"><img alt="Medical illustration comparing a healthy gut microbiome to a C. diff infected colon." border="0" data-original-height="535" data-original-width="945" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGz3G7KgPAU0xGR1VrTtKKaT_S-3rlBYRa_twNGMwBPpu9ktKb8qKxLKmnfLbnho6a_bAnpppvdjaE4fln5ZfRa1GdJ6_iGihGv_iinpQfPA0NBc1-gV_ySchGhr9CyxqP0ffwOSiGGYG3kWgBhA3eU2Hc8msJNw1dzKp1WCEUrg3UKgiQXy_2zJZdsWl2/s16000/Human%20Colon%20Cross-Se.webp" title="The Microscopic Battle: C. Diff vs. Healthy Gut Bacteria" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
     <p style="font-size:1rem; color: #666; font-style: italic; margin-top: 10px;">A visual representation of how C. diff disrupts the intestinal lining.</p></div>
 <hr />
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding: 1rem;">
@@ -27,7 +27,7 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health', 'Infections', '
 <p>
   Historically viewed as a "hospital-only" problem, C. diff has evolved. In 2026, community-acquired cases are rising,
   making it essential for every adult to understand the mechanics of this infection. Whether you are currently battling
-  a diagnosis or are a <a href="https://www.aginghealth.website/posts//ai-in-healthcare/" title="Ai In Healthcare" rel="dofollow"><b>healthcare advocate for a loved one</b></a>, this guide serves as your comprehensive roadmap. Internal
+  a diagnosis or are a <a href="https://www.aginghealth.website/posts/ai-in-healthcare/" title="Ai In Healthcare" rel="dofollow"><b>healthcare advocate for a loved one</b></a>, this guide serves as your comprehensive roadmap. Internal
   Medicine, a cornerstone of adult healthcare, focuses heavily on the interplay between the microbiome and overall
   systemic health; understanding C. diff is a vital part of that education.
 </p>
@@ -52,7 +52,7 @@ tags: ['🛡️ Liver & Immune Health', '🧠 Cognitive Health', 'Infections', '
 <h3><b>The Role of Toxins A and B</b></h3>
 <p>
   The severity of the infection is largely determined by two toxins: Toxin A (an enterotoxin) and Toxin B (a cytotoxin).
-  These toxins cause fluid secretion and mucosal damage, leading to the <a href="https://www.aginghealth.website/posts//lou-gehrigs-disease-als-symptoms/" title="Lou Gehrigs Disease Als Symptoms" rel="dofollow"><b>hallmark symptoms of the disease</b></a>. In some
+  These toxins cause fluid secretion and mucosal damage, leading to the <a href="https://www.aginghealth.website/posts/lou-gehrigs-disease-als-symptoms/" title="Lou Gehrigs Disease Als Symptoms" rel="dofollow"><b>hallmark symptoms of the disease</b></a>. In some
   aggressive strains, such as the ribotype 027, the bacteria produce even higher levels of these toxins, leading to more
   severe clinical outcomes.
 </p>
@@ -139,7 +139,7 @@ Watery diarrhea 10 to 15 times a day.</li><li>Abdominal cramping and pain, which
       A reliable, time-tested antibiotic used for decades, though it has a higher rate of recurrence than Fidaxomicin.</li></ul><p></p><ul>
 </ul>
 <h3><b>Microbiota-Based Therapies</b></h3>
-<p>For recurrent cases, the goal is to <a href="https://www.aginghealth.website/posts//stress-gut-bacteria-microbiome-resilience/" title="Stress Gut Bacteria Microbiome Resilience" rel="dofollow"><b>repopulate the gut with healthy bacteria</b></a>.</p>
+<p>For recurrent cases, the goal is to <a href="https://www.aginghealth.website/posts/stress-gut-bacteria-microbiome-resilience/" title="Stress Gut Bacteria Microbiome Resilience" rel="dofollow"><b>repopulate the gut with healthy bacteria</b></a>.</p>
 
     <p style="text-align: left;"></p><ul style="text-align: left;"><li><b>Fecal Microbiota Transplant (FMT):</b>
       Transferring healthy stool from a donor into the patient's colon.</li><li><b>Oral Microbiota Capsules (e.g., Vowst):</b>
@@ -239,7 +239,7 @@ Watery diarrhea 10 to 15 times a day.</li><li>Abdominal cramping and pain, which
 <div class="clinic-trust-card" style="background-color: #fafafa; border-left: 6px solid #0d47a1; border-radius: 12px; margin-top: 2rem; padding: 1rem;">
 <h2><b>Frequently Asked Questions</b></h2>
 <p>
-  <b>1. Is C. <a href="https://www.aginghealth.website/posts//is-pneumonia-contagious/" title="Is Pneumonia Contagious" rel="dofollow"><b>diff contagious after 48 hours</b></a> of antibiotics?</b>
+  <b>1. Is C. <a href="https://www.aginghealth.website/posts/is-pneumonia-contagious/" title="Is Pneumonia Contagious" rel="dofollow"><b>diff contagious after 48 hours</b></a> of antibiotics?</b>
   While the
   <i>symptoms</i>
   may start to improve, you are still shedding spores. Patients should remain in isolation until they have had no
@@ -273,7 +273,7 @@ Watery diarrhea 10 to 15 times a day.</li><li>Abdominal cramping and pain, which
   is more than a medical diagnosis; it is a life-altering event that requires a shift in how we view hygiene,
   antibiotics, and our own internal ecosystems. By focusing on the "Internal Medicine" approach—looking at the patient
   as a whole rather than just a set of symptoms—we can move toward a future where recurrence is rare and recovery is
-  total. Stay proactive, wash your hands with soap, and <a href="https://www.aginghealth.website/posts//question-ask-doctor/" title="Question Ask Doctor" rel="dofollow"><b>never hesitate to ask your doctor</b></a> about the latest
+  total. Stay proactive, wash your hands with soap, and <a href="https://www.aginghealth.website/posts/question-ask-doctor/" title="Question Ask Doctor" rel="dofollow"><b>never hesitate to ask your doctor</b></a> about the latest
   microbiota-based therapies.
 </p>
   <hr /></div>

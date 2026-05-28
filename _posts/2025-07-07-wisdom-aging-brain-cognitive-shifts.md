@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "The Evolving Mind: Embracing the Wisdom of the Aging Brain"
-permalink: /posts//wisdom-aging-brain-cognitive-shifts/
+permalink: /posts/wisdom-aging-brain-cognitive-shifts/
 date: 2025-07-07T09:00:00+00:00
 categories: ["brain-mind"]
 tags: ["Senior Health", "Prevention", "Biomarkers", "Aging Well"]
@@ -91,8 +91,8 @@ Implement these four science-backed strategies to fortify your cognitive reserve
 
 * **Embrace Intentional Novelty:** Passive mental activities will not stimulate neuroplasticity. Force your brain to expand its physical layout by tackling highly challenging, unfamiliar skills. Commit to studying a complex foreign language, mastering a new musical instrument, or learning computer programming.
 * **Maintain High Social Density:** Engaging regularly in deep, intellectually stimulating group discussions requires your brain to simultaneously execute verbal processing, emotional decoding, and working memory recall. Protecting your social networks acts as a direct buffer against cognitive isolation.
-* **Harden Your Physical Foundation:** The microvascular health of your brain dictates its capacity for synaptic growth. Engage in consistent physical movement to maximize cerebral blood flow, drive the expression of Brain-Derived Neurotrophic Factor (BDNF), and protect delicate neural networks from physical trauma. Learn how mechanical safety insulates long-term brain health in our [Falls and Traumatic Brain Injury Prevention Protocol](/posts//falls-and-traumatic-brain-injury/).
-* **Suppress Inflammatory Metabolic Fog:** Unregulated systemic inflammation directly accelerates cognitive breakdown by causing local microglial cells to prune away healthy synapses. Control your dietary triggers, reduce processed items, and prioritize deep sleep parameters to keep your brain's clearing mechanisms operating efficiently. Track how metabolic changes intersect with clarity on our [Dementia vs. Metabolic Fog Identification Matrix](/posts//dementia-early-symptoms-vs-metabolic-fog/).
+* **Harden Your Physical Foundation:** The microvascular health of your brain dictates its capacity for synaptic growth. Engage in consistent physical movement to maximize cerebral blood flow, drive the expression of Brain-Derived Neurotrophic Factor (BDNF), and protect delicate neural networks from physical trauma. Learn how mechanical safety insulates long-term brain health in our [Falls and Traumatic Brain Injury Prevention Protocol](/posts/falls-and-traumatic-brain-injury/).
+* **Suppress Inflammatory Metabolic Fog:** Unregulated systemic inflammation directly accelerates cognitive breakdown by causing local microglial cells to prune away healthy synapses. Control your dietary triggers, reduce processed items, and prioritize deep sleep parameters to keep your brain's clearing mechanisms operating efficiently. Track how metabolic changes intersect with clarity on our [Dementia vs. Metabolic Fog Identification Matrix](/posts/dementia-early-symptoms-vs-metabolic-fog/).
 
 ---
 
@@ -146,7 +146,7 @@ Implement these four science-backed strategies to fortify your cognitive reserve
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/"
+        "@id": "https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/"
       },
       "headline": "The Evolving Mind: Embracing the Wisdom of the Aging Brain",
       "description": "An evidence-based neurological guide evaluating the cognitive strengths of healthy aging, crystallized intelligence parameters, and strategies to expand cognitive reserve.",

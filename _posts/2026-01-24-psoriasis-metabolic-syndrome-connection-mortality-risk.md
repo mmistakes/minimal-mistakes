@@ -34,7 +34,7 @@ Psoriasis is a chronic, immune-mediated inflammatory disease driven by an overac
 
 While raised, scaly skin plaques are the most visible manifestation of this condition, these circulating cytokines travel continuously throughout the bloodstream. This chronic exposure systematically damages the lining of blood vessels, liver tissues, and the endocrine system.
 
-👉 *Related Archive:* [Systemic Inflammation in Psoriasis: Beyond the Skin](/posts//chronic-inflammation-causes-symptoms-treatment/)
+👉 *Related Archive:* [Systemic Inflammation in Psoriasis: Beyond the Skin](/posts/chronic-inflammation-causes-symptoms-treatment/)
 
 ---
 
@@ -52,11 +52,11 @@ To be formally diagnosed with metabolic syndrome under the standardized **Adult 
 | :--- | :--- | :--- |
 | **Abdominal Obesity** | Waist circumference greater than **102 cm (40 in)** for men, or **88 cm (35 in)** for women. | Monitor visceral fat accumulation using a standard measuring tape. |
 | **Elevated Blood Pressure** | Resting systemic blood pressure equal to or exceeding **130/85 mmHg**, or active use of antihypertensive medication. | Log home blood pressure readings under a resting, calm baseline. |
-| **Hyperglycemia / Insulin Resistance** | Fasting plasma glucose equal to or exceeding **100 mg/dL**, or a previous diagnosis of type 2 diabetes. | Audit your [Type 3 Diabetes insulin sensitivity parameters](/posts//brain-health-is-alzheimers-really-type-3-diabetes/). |
+| **Hyperglycemia / Insulin Resistance** | Fasting plasma glucose equal to or exceeding **100 mg/dL**, or a previous diagnosis of type 2 diabetes. | Audit your [Type 3 Diabetes insulin sensitivity parameters](/posts/brain-health-is-alzheimers-really-type-3-diabetes/). |
 | **High Serum Triglycerides** | Fasting blood triglyceride levels equal to or exceeding **150 mg/dL**. | Track your lipid panels annually alongside your comprehensive metabolic chemistry. |
 | **Low HDL Cholesterol** | High-Density Lipoprotein levels below **40 mg/dL** for men, or below **50 mg/dL** for women. | Optimize dietary fats to support protective lipid transport carriers. |
 
-👉 *Related Archive:* [Metabolic Syndrome Criteria and Long-Term Health Risks](/posts//dementia-mortality-lucidity-sleep-apnea-aging-brain/)
+👉 *Related Archive:* [Metabolic Syndrome Criteria and Long-Term Health Risks](/posts/dementia-mortality-lucidity-sleep-apnea-aging-brain/)
 
 ---
 This continuous inflammatory cycle accelerates **atherosclerosis** (the rapid buildup of arterial plaque). This mechanism explains why cardiovascular disease stands as the leading cause of death in psoriasis patients worldwide.

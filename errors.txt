@@ -719,51 +719,51 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:396:
 
-  internally linking to /posts//essential-health-screenings-seniors-aging/, which does not exist
+  internally linking to /posts/essential-health-screenings-seniors-aging/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:408:
 
-  internally linking to /posts//what-types-of-insurance-should-i-have/, which does not exist
+  internally linking to /posts/what-types-of-insurance-should-i-have/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:409:
 
-  internally linking to /posts//digital-doctor-dilemma-online-health-risks/, which does not exist
+  internally linking to /posts/digital-doctor-dilemma-online-health-risks/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:414:
 
-  internally linking to /posts//healthy-after-65/, which does not exist
+  internally linking to /posts/healthy-after-65/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:419:
 
-  internally linking to /posts//alleviate-nausea/, which does not exist
+  internally linking to /posts/alleviate-nausea/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:421:
 
-  internally linking to /posts//sleep-apnea/, which does not exist
+  internally linking to /posts/sleep-apnea/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:459:
 
-  internally linking to /posts//essential-health-screenings-seniors-aging/, which does not exist
+  internally linking to /posts/essential-health-screenings-seniors-aging/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:471:
 
-  internally linking to /posts//what-types-of-insurance-should-i-have/, which does not exist
+  internally linking to /posts/what-types-of-insurance-should-i-have/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:472:
 
-  internally linking to /posts//digital-doctor-dilemma-online-health-risks/, which does not exist
+  internally linking to /posts/digital-doctor-dilemma-online-health-risks/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:477:
 
-  internally linking to /posts//healthy-after-65/, which does not exist
+  internally linking to /posts/healthy-after-65/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:482:
 
-  internally linking to /posts//alleviate-nausea/, which does not exist
+  internally linking to /posts/alleviate-nausea/, which does not exist
 
 * At ./_site/2023/08/23/how-hvac-maintenance-impacts-health.html:484:
 
-  internally linking to /posts//sleep-apnea/, which does not exist
+  internally linking to /posts/sleep-apnea/, which does not exist
 
 * At ./_site/2023/08/30/family-health-vaccines-choosing-pharmacies-or-clinics-for-care.html:187:
 
@@ -791,11 +791,11 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/2023/09/04/grains-friend-or-foe-whole-grains-and-health.html:646:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/2023/09/04/grains-friend-or-foe-whole-grains-and-health.html:911:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/2023/09/04/how-to-stay-keto-on-a-budget-17-easy-tips.html:187:
 
@@ -1375,19 +1375,19 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:512:
 
-  internally linking to /posts//diabetes-heart-attack-survivor-lessons/, which does not exist
+  internally linking to /posts/diabetes-heart-attack-survivor-lessons/, which does not exist
 
 * At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:513:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:673:
 
-  internally linking to /posts//diabetes-heart-attack-survivor-lessons/, which does not exist
+  internally linking to /posts/diabetes-heart-attack-survivor-lessons/, which does not exist
 
 * At ./_site/2024/01/17/seniors-medicare-advantage-plans.html:674:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/2024/01/17/watchman-device-minimally-invasive-heart-technology.html:187:
 
@@ -1427,11 +1427,11 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/2024/01/21/frozen-shoulder-treatment-options.html:473:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/2024/01/21/frozen-shoulder-treatment-options.html:595:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/2024/01/21/physical-therapy-autoimmune-arthritis.html:187:
 
@@ -3495,11 +3495,11 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/[health research, nutrition]/2026/05/01/gut-brain-nutrition-protocol-lbd.html:545:
 
-  internally linking to /posts//gut-brain-axis-neurodegeneration/, which does not exist
+  internally linking to /posts/gut-brain-axis-neurodegeneration/, which does not exist
 
 * At ./_site/[health research, nutrition]/2026/05/01/gut-brain-nutrition-protocol-lbd.html:546:
 
-  internally linking to /posts//choosing-medical-partner-guide/, which does not exist
+  internally linking to /posts/choosing-medical-partner-guide/, which does not exist
 
 * At ./_site/[health research, physical therapy]/2026/05/02/vagus-nerve-exercise-guide.html:242:
 
@@ -3635,7 +3635,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/brain & mind/2026/01/09/brain-health-secrets-exploring-neuroplasticity-benefits.html:529:
 
-  internally linking to /posts//why-akkermansia-is-the-next-frontier-in-weight-management/, which does not exist
+  internally linking to /posts/why-akkermansia-is-the-next-frontier-in-weight-management/, which does not exist
 
 * At ./_site/brain & mind/2026/02/22/unlocking-brain-potential-surprising-links-between-liver-and-neurology.html:242:
 
@@ -3671,15 +3671,15 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/brain & mind/2026/03/08/mind-matters-cultivating-mental-health.html:427:
 
-  internally linking to /posts//cognitive-reframing-cbt-guide/, which does not exist
+  internally linking to /posts/cognitive-reframing-cbt-guide/, which does not exist
 
 * At ./_site/brain & mind/2026/03/08/mind-matters-cultivating-mental-health.html:574:
 
-  internally linking to /posts//diabetes-heart-attack-survivor-lessons/, which does not exist
+  internally linking to /posts/diabetes-heart-attack-survivor-lessons/, which does not exist
 
 * At ./_site/brain & mind/2026/03/08/mind-matters-cultivating-mental-health.html:575:
 
-  internally linking to /posts//alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
+  internally linking to /posts/alzheimers-type-3-diabetes-insulin-resistance/, which does not exist
 
 * At ./_site/brain & mind/2026/04/01/plexin-b1-and-other-advancements-in-alzheimers-research.html:242:
 
@@ -3831,7 +3831,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/brain & mind/longevity/2026/01/20/why-akkermansia-is-the-next-frontier-in-weight-management.html:470:
 
-  internally linking to /posts//gut-health-weight-loss/, which does not exist
+  internally linking to /posts/gut-health-weight-loss/, which does not exist
 
 * At ./_site/categories/index.html:4063:
 
@@ -4067,7 +4067,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/cognitive health/mental wellness/2026/05/05/perception-vs-reality-health.html:646:
 
-  internally linking to /posts//cortisol-stress-hormone-effects-management/, which does not exist
+  internally linking to /posts/cortisol-stress-hormone-effects-management/, which does not exist
 
 * At ./_site/exercise/longevity/2026/05/05/reasons-to-walk-everyday.html:242:
 
@@ -4091,7 +4091,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/exercise/longevity/2026/05/05/reasons-to-walk-everyday.html:561:
 
-  internally linking to /posts//the-protein-paradox-deficiency-signs/, which does not exist
+  internally linking to /posts/the-protein-paradox-deficiency-signs/, which does not exist
 
 * At ./_site/health literacy/2026/05/13/understanding-lab-results-seniors.html:242:
 
@@ -4155,7 +4155,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/health literacy/senior advocacy/2026/05/05/aging-top-ten-things-medicare-does-not-cover.html:615:
 
-  internally linking to /posts//medicare-basics-senior-guide/, which does not exist
+  internally linking to /posts/medicare-basics-senior-guide/, which does not exist
 
 * At ./_site/health research/longevity series/2026/05/01/gut-brain-axis-neurodegeneration.html:242:
 
@@ -4179,7 +4179,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/health research/longevity series/2026/05/01/gut-brain-axis-neurodegeneration.html:579:
 
-  internally linking to /posts//lewy-body-dementia-guide/, which does not exist
+  internally linking to /posts/lewy-body-dementia-guide/, which does not exist
 
 * At ./_site/heart-metabolic/2026/01/12/inverse-vaccines-rewrite-the-rules-of-autoimmune-health.html:242:
 
@@ -4215,7 +4215,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/heart-metabolic/2026/01/20/the-apob-analysis.html:457:
 
-  internally linking to /posts//genomic-medicine/, which does not exist
+  internally linking to /posts/genomic-medicine/, which does not exist
 
 * At ./_site/heart-metabolic/2026/01/24/metabolic-syndrome-criteria-and-health-risks-in-psoriasis.html:242:
 
@@ -4251,11 +4251,11 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/heart-metabolic/2026/01/24/psoriasis-metabolic-syndrome-connection-mortality-risk.html:447:
 
-  internally linking to /posts//chronic-inflammation-causes-symptoms-treatment/, which does not exist
+  internally linking to /posts/chronic-inflammation-causes-symptoms-treatment/, which does not exist
 
 * At ./_site/heart-metabolic/2026/01/24/psoriasis-metabolic-syndrome-connection-mortality-risk.html:498:
 
-  internally linking to /posts//dementia-mortality-lucidity-sleep-apnea-aging-brain/, which does not exist
+  internally linking to /posts/dementia-mortality-lucidity-sleep-apnea-aging-brain/, which does not exist
 
 * At ./_site/heart-metabolic/2026/01/24/systemic-inflammation-in-psoriasis-beyond-the-skin.html:242:
 
@@ -4275,11 +4275,11 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/heart-metabolic/2026/01/24/systemic-inflammation-in-psoriasis-beyond-the-skin.html:439:
 
-  internally linking to /posts//psoriasis-metabolic-syndrome-connection-mortality-risk/, which does not exist
+  internally linking to /posts/psoriasis-metabolic-syndrome-connection-mortality-risk/, which does not exist
 
 * At ./_site/heart-metabolic/2026/01/24/systemic-inflammation-in-psoriasis-beyond-the-skin.html:511:
 
-  internally linking to /posts//psoriasis-metabolic-syndrome-connection-mortality-risk/, which does not exist
+  internally linking to /posts/psoriasis-metabolic-syndrome-connection-mortality-risk/, which does not exist
 
 * At ./_site/heart-metabolic/2026/03/28/cirrhosis-protein-targets.html:242:
 
@@ -4371,11 +4371,11 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/human anatomy/wellness/2023/11/11/biological-stories-hidden-wonders.html:490:
 
-  internally linking to /posts//dementia-research-2026-ptau217-blood-test-breakthroughs/, which does not exist
+  internally linking to /posts/dementia-research-2026-ptau217-blood-test-breakthroughs/, which does not exist
 
 * At ./_site/human anatomy/wellness/2023/11/11/biological-stories-hidden-wonders.html:493:
 
-  internally linking to /posts//genomic-medicine-2026-senior-health-guide/, which does not exist
+  internally linking to /posts/genomic-medicine-2026-senior-health-guide/, which does not exist
 
 * At ./_site/liver health/2025/04/29/liver-cirrhosis-and-varices-symptoms-risks-treatments.html:242:
 
@@ -4427,7 +4427,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/longevity/2025/07/02/doctor-internet-practice-online-health-advice-safety.html:469:
 
-  internally linking to /posts//ent-doctor/, which does not exist
+  internally linking to /posts/ent-doctor/, which does not exist
 
 * At ./_site/longevity/2025/07/13/be-ready-things-to-know-for-emergency-preparedness.html:242:
 
@@ -4447,7 +4447,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/longevity/2025/07/13/be-ready-things-to-know-for-emergency-preparedness.html:487:
 
-  internally linking to /posts//is-heart-attack-risk-increased-more-by/, which does not exist
+  internally linking to /posts/is-heart-attack-risk-increased-more-by/, which does not exist
 
 * At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:242:
 
@@ -4467,23 +4467,23 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:465:
 
-  internally linking to /posts//heartburn-vs-heart-attack-know-the-warning-signs/, which does not exist
+  internally linking to /posts/heartburn-vs-heart-attack-know-the-warning-signs/, which does not exist
 
 * At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:476:
 
-  internally linking to /posts//senior-care-ai-early-sepsis-detection-saves-lives/, which does not exist
+  internally linking to /posts/senior-care-ai-early-sepsis-detection-saves-lives/, which does not exist
 
 * At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:524:
 
-  internally linking to /posts//the-essential-health-screenings-guide-for-seniors/, which does not exist
+  internally linking to /posts/the-essential-health-screenings-guide-for-seniors/, which does not exist
 
 * At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:542:
 
-  internally linking to /posts//support-senior-mental-health/, which does not exist
+  internally linking to /posts/support-senior-mental-health/, which does not exist
 
 * At ./_site/longevity/2025/07/22/harnessing-the-ai-healthcare-revolution.html:548:
 
-  internally linking to /posts//tbi-in-older-adults-fall-prevention-recovery/, which does not exist
+  internally linking to /posts/tbi-in-older-adults-fall-prevention-recovery/, which does not exist
 
 * At ./_site/longevity/2025/09/16/the-essential-health-screenings-guide-for-seniors-65.html:242:
 
@@ -4631,15 +4631,15 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:452:
 
-  internally linking to /posts//senior-health-education/, which does not exist
+  internally linking to /posts/senior-health-education/, which does not exist
 
 * At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:466:
 
-  internally linking to /posts//precision-medicine-aging/, which does not exist
+  internally linking to /posts/precision-medicine-aging/, which does not exist
 
 * At ./_site/longevity/2026/01/15/medical-science-advances-2026.html:521:
 
-  internally linking to /posts//genomics-and-longevity/, which does not exist
+  internally linking to /posts/genomics-and-longevity/, which does not exist
 
 * At ./_site/longevity/2026/01/17/the-cellular-pillar-autophagy-metabolic-signaling.html:242:
 
@@ -4675,7 +4675,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/longevity/2026/01/17/the-comprehensive-protocol-to-human-longevity.html:451:
 
-  internally linking to /posts//the-protein-paradox-metabolism-amino/, which does not exist
+  internally linking to /posts/the-protein-paradox-metabolism-amino/, which does not exist
 
 * At ./_site/longevity/2026/01/17/the-comprehensive-protocol-to-human-longevity.html:456:
 
@@ -4731,15 +4731,15 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/longevity/2026/03/31/healthy-aging-evidence-based-tips.html:431:
 
-  internally linking to /posts//medical-questionnaires-confuse-patients/, which does not exist
+  internally linking to /posts/medical-questionnaires-confuse-patients/, which does not exist
 
 * At ./_site/longevity/2026/03/31/healthy-aging-evidence-based-tips.html:446:
 
-  internally linking to /posts//loneliness-chronic-disease/, which does not exist
+  internally linking to /posts/loneliness-chronic-disease/, which does not exist
 
 * At ./_site/longevity/2026/03/31/healthy-aging-evidence-based-tips.html:495:
 
-  internally linking to /posts//creatine-older-adults-maintain-muscle/, which does not exist
+  internally linking to /posts/creatine-older-adults-maintain-muscle/, which does not exist
 
 * At ./_site/longevity/2026/04/03/choosing-medical-partner.html:242:
 
@@ -5001,249 +5001,249 @@ For the Links > Internal check, the following failures were found:
 
   internally linking to /06, which does not exist
 
-* At ./_site/posts//anemia-what-you-need-to-know/index.html:243:
+* At ./_site/posts/anemia-what-you-need-to-know/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//brain-health-is-alzheimers-really-type-3-diabetes/index.html:243:
+* At ./_site/posts/brain-health-is-alzheimers-really-type-3-diabetes/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//brain-health-is-alzheimers-really-type-3-diabetes/index.html:526:
+* At ./_site/posts/brain-health-is-alzheimers-really-type-3-diabetes/index.html:526:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//colon-cancer-genetic-roots-precision-breakthroughs/index.html:243:
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//colon-cancer-genetic-roots-precision-breakthroughs/index.html:481:
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:481:
 
   internally linking to /home-safety-checklist/, which does not exist
 
-* At ./_site/posts//colon-cancer-genetic-roots-precision-breakthroughs/index.html:513:
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:513:
 
   internally linking to /home-safety-checklist/, which does not exist
 
-* At ./_site/posts//colon-cancer-genetic-roots-precision-breakthroughs/index.html:514:
+* At ./_site/posts/colon-cancer-genetic-roots-precision-breakthroughs/index.html:514:
 
   internally linking to /how-we-research/, which does not exist
 
-* At ./_site/posts//dementia-awareness-early-symptoms-metabolic-fog/index.html:242:
+* At ./_site/posts/dementia-awareness-early-symptoms-metabolic-fog/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//dementia-awareness-early-symptoms-metabolic-fog/index.html:502:
+* At ./_site/posts/dementia-awareness-early-symptoms-metabolic-fog/index.html:502:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//dementia-awareness-early-symptoms-metabolic-fog/index.html:504:
+* At ./_site/posts/dementia-awareness-early-symptoms-metabolic-fog/index.html:504:
 
-  internally linking to /posts//the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
 
-* At ./_site/posts//do-biologic-therapies-reduce-mortality-psoriasis/index.html:242:
-
-  internally linking to /posts/, which does not exist
-
-* At ./_site/posts//do-biologic-therapies-reduce-mortality-psoriasis/index.html:500:
-
-  internally linking to /posts//big-six-pillars-optimal-aging-health/, which does not exist
-
-* At ./_site/posts//immigration-crackdowns-caregiving-industry-impact/index.html:242:
+* At ./_site/posts/do-biologic-therapies-reduce-mortality-psoriasis/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//immigration-crackdowns-caregiving-industry-impact/index.html:518:
+* At ./_site/posts/do-biologic-therapies-reduce-mortality-psoriasis/index.html:500:
 
-  internally linking to /posts//mental-health-self-care/, which does not exist
+  internally linking to /posts/big-six-pillars-optimal-aging-health/, which does not exist
 
-* At ./_site/posts//inflation-impact-senior-healthcare-advocacy/index.html:243:
+* At ./_site/posts/immigration-crackdowns-caregiving-industry-impact/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//inflation-impact-senior-healthcare-advocacy/index.html:482:
+* At ./_site/posts/immigration-crackdowns-caregiving-industry-impact/index.html:518:
+
+  internally linking to /posts/mental-health-self-care/, which does not exist
+
+* At ./_site/posts/inflation-impact-senior-healthcare-advocacy/index.html:243:
+
+  internally linking to /posts/, which does not exist
+
+* At ./_site/posts/inflation-impact-senior-healthcare-advocacy/index.html:482:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//keto-diet-metabolic-mechanisms-neurological-benefits/index.html:208:
+* At ./_site/posts/keto-diet-metabolic-mechanisms-neurological-benefits/index.html:208:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//keto-diet-metabolic-mechanisms-neurological-benefits/index.html:523:
+* At ./_site/posts/keto-diet-metabolic-mechanisms-neurological-benefits/index.html:523:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//lessons-from-a-2008-heart-attack-survivor/index.html:243:
+* At ./_site/posts/lessons-from-a-2008-heart-attack-survivor/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//lessons-from-a-2008-heart-attack-survivor/index.html:537:
+* At ./_site/posts/lessons-from-a-2008-heart-attack-survivor/index.html:537:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//lessons-from-a-2008-heart-attack-survivor/index.html:539:
+* At ./_site/posts/lessons-from-a-2008-heart-attack-survivor/index.html:539:
 
-  internally linking to /posts//the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
 
-* At ./_site/posts//lewy-body-dementia-symptoms-care/index.html:208:
-
-  internally linking to /posts/, which does not exist
-
-* At ./_site/posts//liver-cirrhosis-understanding-decompensation/index.html:208:
+* At ./_site/posts/lewy-body-dementia-symptoms-care/index.html:208:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//liver-cirrhosis-understanding-decompensation/index.html:565:
+* At ./_site/posts/liver-cirrhosis-understanding-decompensation/index.html:208:
+
+  internally linking to /posts/, which does not exist
+
+* At ./_site/posts/liver-cirrhosis-understanding-decompensation/index.html:565:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//low-glycemic-foods-list-sugar-management/index.html:243:
+* At ./_site/posts/low-glycemic-foods-list-sugar-management/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//low-glycemic-foods-list-sugar-management/index.html:514:
+* At ./_site/posts/low-glycemic-foods-list-sugar-management/index.html:514:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//low-glycemic-foods-list-sugar-management/index.html:550:
+* At ./_site/posts/low-glycemic-foods-list-sugar-management/index.html:550:
 
-  internally linking to /posts//the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
 
-* At ./_site/posts//low-glycemic-foods-sugar-management/index.html:189:
+* At ./_site/posts/low-glycemic-foods-sugar-management/index.html:189:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//low-glycemic-foods-sugar-management/index.html:398:
+* At ./_site/posts/low-glycemic-foods-sugar-management/index.html:398:
 
   internally linking to assets/img/glycemic-load-index.webp, which does not exist
 
-* At ./_site/posts//low-glycemic-foods-sugar-management/index.html:435:
+* At ./_site/posts/low-glycemic-foods-sugar-management/index.html:435:
 
   internally linking to /how-we-research/#Glycemic-Load, which does not exist
 
-* At ./_site/posts//medicaid-cuts-rural-hospitals-health-impact/index.html:242:
+* At ./_site/posts/medicaid-cuts-rural-hospitals-health-impact/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//medical-questionnaires-confuse-patients-fixes/index.html:208:
+* At ./_site/posts/medical-questionnaires-confuse-patients-fixes/index.html:208:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//medical-questionnaires-confuse-patients-fixes/index.html:552:
+* At ./_site/posts/medical-questionnaires-confuse-patients-fixes/index.html:552:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//medication-consistency-crucial-hypertension/index.html:243:
+* At ./_site/posts/medication-consistency-crucial-hypertension/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//mini-stroke-prevention-liver-pressure-carvedilol/index.html:208:
+* At ./_site/posts/mini-stroke-prevention-liver-pressure-carvedilol/index.html:208:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//mini-stroke-prevention-liver-pressure-carvedilol/index.html:506:
+* At ./_site/posts/mini-stroke-prevention-liver-pressure-carvedilol/index.html:506:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//mini-stroke-prevention-liver-pressure-carvedilol/index.html:508:
+* At ./_site/posts/mini-stroke-prevention-liver-pressure-carvedilol/index.html:508:
 
-  internally linking to /posts//the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
 
-* At ./_site/posts//mini-stroke-symptoms-first-48-hours-prevention/index.html:243:
+* At ./_site/posts/mini-stroke-symptoms-first-48-hours-prevention/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//mini-stroke-symptoms-first-48-hours-prevention/index.html:511:
+* At ./_site/posts/mini-stroke-symptoms-first-48-hours-prevention/index.html:511:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//mini-stroke-symptoms-first-48-hours-prevention/index.html:545:
+* At ./_site/posts/mini-stroke-symptoms-first-48-hours-prevention/index.html:545:
 
-  internally linking to /posts//the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
 
-* At ./_site/posts//navigating-maze-of-modern-healthcare/index.html:242:
-
-  internally linking to /posts/, which does not exist
-
-* At ./_site/posts//patient-led-clinical-insights-liver-health/index.html:243:
+* At ./_site/posts/navigating-maze-of-modern-healthcare/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//patient-led-clinical-insights-liver-health/index.html:461:
+* At ./_site/posts/patient-led-clinical-insights-liver-health/index.html:243:
+
+  internally linking to /posts/, which does not exist
+
+* At ./_site/posts/patient-led-clinical-insights-liver-health/index.html:461:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//patient-led-clinical-insights-liver-health/index.html:495:
+* At ./_site/posts/patient-led-clinical-insights-liver-health/index.html:495:
 
-  internally linking to /posts//the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
+  internally linking to /posts/the-great-protein-flip-why-resting-the-liver-is-outdated/, which does not exist
 
-* At ./_site/posts//psoriasis-and-cardiovascular-disease/index.html:242:
-
-  internally linking to /posts/, which does not exist
-
-* At ./_site/posts//psoriasis-and-cardiovascular-disease/index.html:418:
-
-  internally linking to /posts//big-six-pillars-optimal-aging-health/, which does not exist
-
-* At ./_site/posts//quitting-smoking-psoriasis-inflammation/index.html:243:
+* At ./_site/posts/psoriasis-and-cardiovascular-disease/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//quitting-smoking-psoriasis-inflammation/index.html:500:
+* At ./_site/posts/psoriasis-and-cardiovascular-disease/index.html:418:
 
-  internally linking to /posts//arthritis-foods-to-avoid/, which does not exist
+  internally linking to /posts/big-six-pillars-optimal-aging-health/, which does not exist
 
-* At ./_site/posts//seniors-heart-health-tips/index.html:189:
-
-  internally linking to /posts/, which does not exist
-
-* At ./_site/posts//seniors-heart-health-tips/index.html:441:
-
-  internally linking to /posts//big-six-pillars-optimal-aging-health/, which does not exist
-
-* At ./_site/posts//the-science-of-pain-biological-origins-management/index.html:242:
+* At ./_site/posts/quitting-smoking-psoriasis-inflammation/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//understanding-diabetes-managing-blood-sugar/index.html:243:
+* At ./_site/posts/quitting-smoking-psoriasis-inflammation/index.html:500:
+
+  internally linking to /posts/arthritis-foods-to-avoid/, which does not exist
+
+* At ./_site/posts/seniors-heart-health-tips/index.html:189:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//understanding-diabetes-managing-blood-sugar/index.html:565:
+* At ./_site/posts/seniors-heart-health-tips/index.html:441:
+
+  internally linking to /posts/big-six-pillars-optimal-aging-health/, which does not exist
+
+* At ./_site/posts/the-science-of-pain-biological-origins-management/index.html:242:
+
+  internally linking to /posts/, which does not exist
+
+* At ./_site/posts/understanding-diabetes-managing-blood-sugar/index.html:243:
+
+  internally linking to /posts/, which does not exist
+
+* At ./_site/posts/understanding-diabetes-managing-blood-sugar/index.html:565:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//understanding-osteoarthritis-joint-health/index.html:208:
+* At ./_site/posts/understanding-osteoarthritis-joint-health/index.html:208:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//understanding-osteoarthritis-joint-health/index.html:623:
+* At ./_site/posts/understanding-osteoarthritis-joint-health/index.html:623:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//vaccines-infections-diseases-circadian-rhythm/index.html:242:
+* At ./_site/posts/vaccines-infections-diseases-circadian-rhythm/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//vaccines-infections-diseases-circadian-rhythm/index.html:498:
+* At ./_site/posts/vaccines-infections-diseases-circadian-rhythm/index.html:498:
 
-  internally linking to /posts//is-heart-attack-risk-increased-more-by/, which does not exist
+  internally linking to /posts/is-heart-attack-risk-increased-more-by/, which does not exist
 
-* At ./_site/posts//whos-intrinsic-capacity-framework-explained/index.html:243:
+* At ./_site/posts/whos-intrinsic-capacity-framework-explained/index.html:243:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//whos-intrinsic-capacity-framework-explained/index.html:571:
+* At ./_site/posts/whos-intrinsic-capacity-framework-explained/index.html:571:
 
   internally linking to /p/the-daily-glucose-medication-tracker/, which does not exist
 
-* At ./_site/posts//wisdom-aging-brain-cognitive-shifts/index.html:242:
+* At ./_site/posts/wisdom-aging-brain-cognitive-shifts/index.html:242:
 
   internally linking to /posts/, which does not exist
 
-* At ./_site/posts//wisdom-aging-brain-cognitive-shifts/index.html:476:
+* At ./_site/posts/wisdom-aging-brain-cognitive-shifts/index.html:476:
 
-  internally linking to /posts//dementia-early-symptoms-vs-metabolic-fog/, which does not exist
+  internally linking to /posts/dementia-early-symptoms-vs-metabolic-fog/, which does not exist
 
 * At ./_site/research/2026/04/23/flu-and-rsv-guide-enduring-the-twin-viremic-season.html:242:
 
@@ -5283,7 +5283,7 @@ For the Links > Internal check, the following failures were found:
 
 * At ./_site/senior-advocacy/long-term care/2026/05/06/top-ten-long-term-care-tips-to-know.html:593:
 
-  internally linking to /posts//medicare-basics-senior-guide/, which does not exist
+  internally linking to /posts/medicare-basics-senior-guide/, which does not exist
 
 
 HTML-Proofer found 1320 failures!

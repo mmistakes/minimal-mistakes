@@ -101,10 +101,10 @@ You aren't just one person; you are a galaxy of **30 trillion human cells**. Eac
 > Staying current helps you make informed decisions. When you understand that your bones respond to stress or your liver can regenerate, you realize that your health is not a "fixed" state, but a dynamic one you can influence.
 
 **Does music therapy actually change the brain?**
-Yes! As we discussed in our [Dementia Research 2026](/posts//dementia-research-2026-ptau217-blood-test-breakthroughs/) update, music can activate "detour" pathways in the brain, helping to bypass damaged memory centers.
+Yes! As we discussed in our [Dementia Research 2026](/posts/dementia-research-2026-ptau217-blood-test-breakthroughs/) update, music can activate "detour" pathways in the brain, helping to bypass damaged memory centers.
 
 **How do advancements like CRISPR affect my cells?**
-Technologies like [CRISPR](/posts//genomic-medicine-2026-senior-health-guide/) allow scientists to "edit" the instructions within those 30 trillion cells, potentially fixing genetic errors that lead to disease.
+Technologies like [CRISPR](/posts/genomic-medicine-2026-senior-health-guide/) allow scientists to "edit" the instructions within those 30 trillion cells, potentially fixing genetic errors that lead to disease.
 
 ---
 

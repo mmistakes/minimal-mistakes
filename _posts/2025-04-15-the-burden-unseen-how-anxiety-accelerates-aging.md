@@ -182,7 +182,7 @@ Older adults often internalize emotional distress or display a pattern of somati
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//anxiety-accelerates-aging/"
+        "@id": "https://www.aginghealth.website/posts/anxiety-accelerates-aging/"
       },
       "headline": "The Burden Unseen: How Anxiety Accelerates Aging",
       "description": "An evidence-based clinical review charting the psychoneuroimmunology pathways of chronic stress, cortisol-driven telomere shortening, and cognitive reserve preservation.",

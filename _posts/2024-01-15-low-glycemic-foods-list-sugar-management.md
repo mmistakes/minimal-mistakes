@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "A Low-Glycemic Foods List for Sugar Management"
-permalink: /posts//low-glycemic-foods-sugar-management/
+permalink: /posts/low-glycemic-foods-sugar-management/
 date: 2024-01-15
 description: "Mastering blood sugar through 'Vascular Defense': A senior's guide to understanding the Glycemic Index vs. Glycemic Load."
 image: 
@@ -15,7 +15,7 @@ last_modified_at: 2026-05-07
 ---
 ## Mastering Blood Sugar: The Senior’s Guide to Low-Glycemic Living
 
-Managing [Type 2 Diabetes]({{ '/posts//diabetes-guide/' | relative_url }}) is often described as a "balancing act." However, after years of navigating my own glucose levels with Metformin and Ozempic, I prefer to think of it as **Vascular Defense**. Every time we choose a low-glycemic food, we are protecting our heart and kidneys from the "sugar spikes" that cause long-term scarring.
+Managing [Type 2 Diabetes]({{ '/posts/diabetes-guide/' | relative_url }}) is often described as a "balancing act." However, after years of navigating my own glucose levels with Metformin and Ozempic, I prefer to think of it as **Vascular Defense**. Every time we choose a low-glycemic food, we are protecting our heart and kidneys from the "sugar spikes" that cause long-term scarring.
 
 > **Medical Disclaimer:** This content is for informational and educational purposes only. It does not replace professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider regarding any medical condition.
 {: .prompt-warning }
@@ -48,7 +48,7 @@ When shopping, prioritize foods with a **GI of 55 or lower**. These digest slowl
 ### 🥦 Vegetables for Stability (The Anchors)
 * **Leafy Greens:** Spinach, Kale, and Collards (essential for fiber).
 * **Cruciferous:** Broccoli, Cauliflower, and Brussels Sprouts.
-* **Alliums:** Onions and Garlic (excellent for [cardiovascular resilience]({{ '/posts//medication-consistency-crucial-hypertension/' | relative_url }})).
+* **Alliums:** Onions and Garlic (excellent for [cardiovascular resilience]({{ '/posts/medication-consistency-crucial-hypertension/' | relative_url }})).
 * **The "Crunch":** Celery, Peppers, and Cucumbers.
 
 ### 🍓 Fruits for the Sweet Tooth
@@ -74,15 +74,15 @@ Many "whole grain" breads are still highly processed. I recommend testing your b
 > ### 🎯 March 2026 Clinical Update: Resilience Targets
 > * **Protein Support:** To prevent sarcopenia and support metabolic integrity, seniors must aim for **1.2–1.6 g/kg** of high-quality protein (USDA 2026).
 > * **Vascular Integrity:** Maintain a systemic blood pressure of **<130/80 mmHg** to protect the delicate vessels from the dual pressure of hypertension and glucose spikes.
-> * **Liver Health:** If managing portal hypertension, these targets are essential for maintaining the [Vascular Bridge]({{ '/posts//mini-stroke-prevention-liver-pressure-carvedilol/' | relative_url }}).
+> * **Liver Health:** If managing portal hypertension, these targets are essential for maintaining the [Vascular Bridge]({{ '/posts/mini-stroke-prevention-liver-pressure-carvedilol/' | relative_url }}).
 {: .prompt-info }
 
 ---
 
 ### About the Researcher
-**Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a [major heart attack]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) who manages Type 2 Diabetes, he specializes in translating complex nutritional data into actionable health literacy.
+**Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a [major heart attack]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) who manages Type 2 Diabetes, he specializes in translating complex nutritional data into actionable health literacy.
 
-[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
@@ -94,7 +94,7 @@ Many "whole grain" breads are still highly processed. I recommend testing your b
 
 ### 📥 Patient Tools
 * [**Download: Daily Glucose and Medication Tracker (PDF)**](https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing)
-* [**Research: Is Alzheimer's Really Type 3 Diabetes?**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }})
+* [**Research: Is Alzheimer's Really Type 3 Diabetes?**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }})
 
 <script type="application/ld+json">
 {

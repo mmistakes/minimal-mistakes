@@ -159,7 +159,7 @@ The NIA's research shows that the most successful aging journeys are those that 
 ### Sources & Further Reading
 * **NIA (2026):** [Long-Term Care Planning Guide](https://www.nia.nih.gov/health/long-term-care/planning-long-term-care)
 * **NIH (2025):** [The Role of Sarcopenia in Senior Independence](https://www.nih.gov/news-events/)
-* **Aging Health Research:** [Navigating Medicare in 2026](/posts//medicare-basics-senior-guide/)
+* **Aging Health Research:** [Navigating Medicare in 2026](/posts/medicare-basics-senior-guide/)
 
 <script type="application/ld+json">
 {

@@ -197,7 +197,7 @@ tags: ['❤️ Cardiovascular & T2D', '⚖️ Patient Advocacy', '🧬 Clinical 
   "headline": "How Does Urgent Care Differ from Emergency Rooms?",
   "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLKYXeCXf9EiuiZEFNqAEYdlTrHbBk2EGTw9duxvkO3yrSYkJqK0Dqdy_q1ra8wjuwhIIWt_ph2RWPMH8ADyA-J_wfO9D_P536Q412bE78CResqlxKfyxTZFahvofNbw5skbFj8A2-es-PF0MWNGG8Lovgb_Avo2Muta4yyNkNvf9-CTk/s1600/Tommy%20Douglas.webp",
   "datePublished": "2023-10-01",
-  "mainEntityOfPage": "https://www.aginghealth.website/posts//when-to-seek-treatment-at-urgent-care/",
+  "mainEntityOfPage": "https://www.aginghealth.website/posts/when-to-seek-treatment-at-urgent-care/",
   "description": "Discover the key differences between urgent care and emergency rooms. Empower yourself with essential knowledge to enhance healthcare conversations.",
   "publisher": {
     "@type": "Organization",

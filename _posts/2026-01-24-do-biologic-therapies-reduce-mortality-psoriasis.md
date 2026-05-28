@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Do Biologic Therapies Reduce Mortality in Psoriasis?"
-permalink: /posts//do-biologic-therapies-reduce-mortality-psoriasis/
+permalink: /posts/do-biologic-therapies-reduce-mortality-psoriasis/
 date: 2026-01-24T08:00:00+00:00
 categories: ["heart-metabolic"]
 tags: [biologics, psoriasis, inflammation, mortality-risk, cardiovascular-health]
@@ -18,7 +18,7 @@ last_modified_at: 2026-05-21
 
 Psoriasis is no longer viewed in modern clinical medicine as "just a skin condition." It is an aggressive, systemic inflammatory event associated with a statistically significant increase in both all-cause and cardiovascular mortality, particularly in patients presenting with moderate-to-severe disease expression. 
 
-As our foundational understanding of the [Vascular Bridge](/posts//mini-stroke-prevention-liver-pressure-carvedilol/) has grown, a critical, life-saving question has taken center stage in geroscience: **Can targeted biologic therapies actually protect our internal organs and help us live longer?**
+As our foundational understanding of the [Vascular Bridge](/posts/mini-stroke-prevention-liver-pressure-carvedilol/) has grown, a critical, life-saving question has taken center stage in geroscience: **Can targeted biologic therapies actually protect our internal organs and help us live longer?**
 
 > **⚠️ Medical Disclaimer:** This clinical translation material is intended for informational and educational patient-advocacy purposes only. It does not substitute for professional medical advice, diagnosis, or targeted clinical treatment. Always consult a board-certified healthcare provider or dermatologist before executing changes to your systemic therapy protocol.
 {.prompt-warning}
@@ -74,7 +74,7 @@ Extensive multi-center registry datasets and real-world observational tracking s
 
 > ### 🎯 May 2026 Clinical Update: Systemic Advocacy Targets
 > * **Advanced Protein Sourcing:** To properly support rapid skin cell turnover and protect lean skeletal muscle mass during systemic therapy, older adults should target **1.2 to 1.6 grams of protein per kilogram of body weight daily**.
-> * **Metabolic Synergy Support:** Successfully dampening systemic inflammation directly improves peripheral insulin sensitivity. Monitor your fasting glucose and A1C levels closely if you are also managing [Type 3 Diabetes](/posts//brain-health-is-alzheimers-really-type-3-diabetes/) or metabolic insulin pathways.
+> * **Metabolic Synergy Support:** Successfully dampening systemic inflammation directly improves peripheral insulin sensitivity. Monitor your fasting glucose and A1C levels closely if you are also managing [Type 3 Diabetes](/posts/brain-health-is-alzheimers-really-type-3-diabetes/) or metabolic insulin pathways.
 > * **Vascular Safety Parameter:** To protect your brain's delicate capillary networks and maintain optimal circulation, verify that your resting blood pressure is held tightly at the neuro-protective target of **under 130/80 mmHg**.
 {.prompt-info}
 
@@ -83,7 +83,7 @@ Extensive multi-center registry datasets and real-world observational tracking s
 ## 🧐 Psoriasis & Biologics FAQ
 
 **Q: Can a biologic therapy fully replace the need for diet and lifestyle adjustments?**
-**A:** Absolutely not. Biologic therapies are incredibly powerful tools to disrupt the cellular inflammatory cascade, but they operate best when embedded inside a comprehensive [Big 6 Pillars](/posts//big-six-pillars-optimal-aging-health/) lifestyle strategy. True, long-term vascular protection still requires a solid framework of anti-inflammatory nutrition, consistent movement, and active sleep hygiene.
+**A:** Absolutely not. Biologic therapies are incredibly powerful tools to disrupt the cellular inflammatory cascade, but they operate best when embedded inside a comprehensive [Big 6 Pillars](/posts/big-six-pillars-optimal-aging-health/) lifestyle strategy. True, long-term vascular protection still requires a solid framework of anti-inflammatory nutrition, consistent movement, and active sleep hygiene.
 
 **Q: Are biologic therapies safe for seniors managing multiple chronic conditions?**
 **A:** Current 2026 clinical data demonstrates a highly favorable safety profile for older adults, provided a comprehensive baseline screening is conducted. Your care team must rule out latent infections (like tuberculosis) and evaluate your personal heart history, as specific older classes of TNF-inhibitors are contraindicated in patients with advanced, NYHA Class III or IV heart failure.
@@ -98,7 +98,7 @@ Extensive multi-center registry datasets and real-world observational tracking s
 **Tommy T. Douglas** is an independent health researcher, author, and patient advocate. Having survived a primary myocardial infarction in 2008 and successfully managing a complex Type 2 Diabetes profile for nearly two decades utilizing targeted Metformin and GLP-1 therapies, he dedicates his technical work to translating advanced immunological and vascular data into actionable health literacy for senior populations.
 
 **Explore the Aging Health Core Hubs:**
-[Heart & Vascular Safety](/posts//lessons-from-a-2008-heart-attack-survivor/) | [Metabolic Optimization](/posts//brain-health-is-alzheimers-really-type-3-diabetes/) | [Brain Reserve & Neurology](/posts//wisdom-aging-brain-cognitive-shifts/) | [Advanced Liver Literacy](/2023/09/liver-cirrhosis-what-you-need-to-know.html)
+[Heart & Vascular Safety](/posts/lessons-from-a-2008-heart-attack-survivor/) | [Metabolic Optimization](/posts/brain-health-is-alzheimers-really-type-3-diabetes/) | [Brain Reserve & Neurology](/posts/wisdom-aging-brain-cognitive-shifts/) | [Advanced Liver Literacy](/2023/09/liver-cirrhosis-what-you-need-to-know.html)
 
 ---
 

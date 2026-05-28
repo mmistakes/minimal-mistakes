@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "WHO’s Intrinsic Capacity Framework Explained"
-permalink: /posts//whos-intrinsic-capacity-framework-explained/
+permalink: /posts/whos-intrinsic-capacity-framework-explained/
 date: 2026-01-28T05:17:41+00:00
 description: "A comprehensive clinical and advocacy guide to the World Health Organization's Intrinsic Capacity model, shifting care from disease to functional longevity."
 header:
@@ -144,8 +144,8 @@ Focusing on individual capacity ensures precise, personalized intervention, redu
 
 ## 📘 Companion Patient Resources
 
-* **The Baseline:** New to managing metabolic parameters and protecting your blood vessels from systemic damage? Build your foundational health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Neuro Axis:** Explore how systemic metabolic changes impact cerebral glucose consumption and cognitive domain scores by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
+* **The Baseline:** New to managing metabolic parameters and protecting your blood vessels from systemic damage? Build your foundational health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Neuro Axis:** Explore how systemic metabolic changes impact cerebral glucose consumption and cognitive domain scores by reading [Is Alzheimer's Disease Actually Type 3 Diabetes?]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}).
 * **The Log Matrix:** Reclaim control over your physical metrics by using my mobile-optimized [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
 
 ---
@@ -161,7 +161,7 @@ Focusing on individual capacity ensures precise, personalized intervention, redu
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, regional wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

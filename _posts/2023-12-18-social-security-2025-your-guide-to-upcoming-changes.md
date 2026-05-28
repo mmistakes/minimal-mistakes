@@ -37,7 +37,7 @@ tags: ['Advocacy','Equality']
   <li><strong>Diversify your retirement income:</strong> Relying solely on Social Security is risky. Consider other sources of retirement income, such as 401(k)s, IRAs, and pensions.</li>
   <li><strong>Monitor your Social Security statement:</strong> Regularly review your Social Security statement to ensure your earnings history is accurate.</li>
   <li>
-    <strong>Consult with a financial advisor:</strong> A <a href="https://www.randomthoughts.bio/posts//what-paperwork-do-i-need-to-keep/">financial advisor</a> can help you develop a personalized retirement plan that meets your specific needs and goals.
+    <strong>Consult with a financial advisor:</strong> A <a href="https://www.randomthoughts.bio/posts/what-paperwork-do-i-need-to-keep/">financial advisor</a> can help you develop a personalized retirement plan that meets your specific needs and goals.
   </li>
 </ul>
 <h2>Additional Considerations</h2>
@@ -45,7 +45,7 @@ tags: ['Advocacy','Equality']
   <li><strong>Disability benefits:</strong> Social Security also provides disability benefits to individuals who are unable to work due to a medical condition. The eligibility requirements for disability benefits are strict, and the application process can be complex.  </li>
   <li><strong>Survivor benefits:</strong> Survivor benefits are available to spouses and children of deceased workers who were eligible for Social Security benefits.</li>
   <li>
-    <strong>Medicare:</strong> <a href="https://www.randomthoughts.bio/posts//top-ten-things-medicare-does-not-cover/">Medicare</a> is a federal <a href="https://www.randomthoughts.bio/posts//what-types-of-insurance-should-i-have/">health insurance</a> program for people aged 65 and older, as well as younger people with certain disabilities.
+    <strong>Medicare:</strong> <a href="https://www.randomthoughts.bio/posts/top-ten-things-medicare-does-not-cover/">Medicare</a> is a federal <a href="https://www.randomthoughts.bio/posts/what-types-of-insurance-should-i-have/">health insurance</a> program for people aged 65 and older, as well as younger people with certain disabilities.
   </li>
 </ul>
 <h2>Conclusion</h2>

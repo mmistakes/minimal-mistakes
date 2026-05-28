@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "The Ripple Effect: Immigration's Impact on Caregiving"
-permalink: /posts//immigration-crackdowns-caregiving-industry-impact/
+permalink: /posts/immigration-crackdowns-caregiving-industry-impact/
 date: 2025-04-06T22:14:00+00:00
 categories: ["Longevity"]
 tags: ["Senior Health", "Prevention", "Advocacy"]
@@ -106,7 +106,7 @@ When professional, foreign-born care pathways collapse, the resulting uncompensa
 To absorb the grueling 24/7 requirements of managing a disabled child or an aging senior with advanced cognitive decline, primary family members are frequently forced to reduce their professional employment hours or exit the formal labor market entirely. This contraction limits household earning potential, drives up long-term dependency on public assistance programs, and impairs the family's broad economic mobility.
 
 ### 2. The Mental Health Toll of Chronic Hypervigilance
-Family caregivers thrust into long-term, un-moderated care scenarios demonstrate a marked, measurable escalation in clinical anxiety, sleep fragmentation, and depressive states. Navigating advanced behavioral issues without professional support loops drives a state of persistent neuroendocrine stress. Protect your psychological wellness by checking our comprehensive guide on managing [Mental Health and Self-Care Structures](/posts//mental-health-self-care/).
+Family caregivers thrust into long-term, un-moderated care scenarios demonstrate a marked, measurable escalation in clinical anxiety, sleep fragmentation, and depressive states. Navigating advanced behavioral issues without professional support loops drives a state of persistent neuroendocrine stress. Protect your psychological wellness by checking our comprehensive guide on managing [Mental Health and Self-Care Structures](/posts/mental-health-self-care/).
 
 ---
 
@@ -168,7 +168,7 @@ Several states have launched collaborative language-integrated training programs
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//immigration-crackdowns-caregiving-industry-impact/"
+        "@id": "https://www.aginghealth.website/posts/immigration-crackdowns-caregiving-industry-impact/"
       },
       "headline": "The Ripple Effect: Immigration's Impact on Caregiving",
       "description": "An evidence-based structural review analyzing the correlation between federal immigration restrictions and long-term care staffing shortages.",

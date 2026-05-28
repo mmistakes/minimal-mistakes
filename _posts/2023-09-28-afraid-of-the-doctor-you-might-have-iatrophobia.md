@@ -71,7 +71,7 @@ You don't have to "just deal with it." There are proven ways to lower the stakes
 
 ---
 
-**Case Study:** My [2008 Heart Attack Survival Story](https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/) was a turning point. I had to face my own medical anxieties to survive, and it’s why I advocate for transparency today.
+**Case Study:** My [2008 Heart Attack Survival Story](https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/) was a turning point. I had to face my own medical anxieties to survive, and it’s why I advocate for transparency today.
 
 **The Log:** Track your stress levels alongside your vitals using my [Daily Glucose Tracker](https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing).
 

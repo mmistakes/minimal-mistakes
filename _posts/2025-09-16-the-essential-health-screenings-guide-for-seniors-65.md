@@ -212,7 +212,7 @@ To ensure you access your covered preventive health benefits without triggering 
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//the-essential-health-screenings-guide-for-seniors/"
+        "@id": "https://www.aginghealth.website/posts/the-essential-health-screenings-guide-for-seniors/"
       },
       "headline": "The Essential Health Screenings Guide for Seniors (65+)",
       "description": "An expert-backed preventive roadmap detailing necessary cancer screenings, metabolic biomarkers, and vaccine schedules for older adults under Medicare.",

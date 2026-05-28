@@ -76,7 +76,7 @@ One of the biggest hurdles in recovering from conditions like adhesive capsuliti
 
 ## Related Patient Resources
 * **The Log:** Track your sleep and clarity with the [Daily Glucose Tracker](https://docs.google.com/document/d/1V-LyZEo4kh6KtSfjfhPWiGfaigwlRvmAGoYCJ2aaTdM/edit?usp=sharing).
-* **The Bridge:** Is Alzheimer's Really [Type 3 Diabetes](/posts//alzheimers-type-3-diabetes-insulin-resistance/)?
+* **The Bridge:** Is Alzheimer's Really [Type 3 Diabetes](/posts/alzheimers-type-3-diabetes-insulin-resistance/)?
 * **Liver Health:** How [metabolic syndrome impacts liver cirrhosis](/2023/09/liver-cirrhosis-what-you-need-to-know.html).
 
 <div style="background:#e8f4f8; padding:15px; border-left:5px solid #2980b9; margin-top:20px; font-family: sans-serif; color: #333;">

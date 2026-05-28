@@ -89,5 +89,5 @@ Use this AgingHealth 2026 standard when preparing a meal:
 {: .prompt-tip }
 
 ### Related Research
-* [The Vagus Highway: Neurodegeneration Explained]({{ '/posts//gut-brain-axis-neurodegeneration/' | relative_url }})
-* [Choosing Your Medical Partner]({{ '/posts//choosing-medical-partner-guide/' | relative_url }})
+* [The Vagus Highway: Neurodegeneration Explained]({{ '/posts/gut-brain-axis-neurodegeneration/' | relative_url }})
+* [Choosing Your Medical Partner]({{ '/posts/choosing-medical-partner-guide/' | relative_url }})

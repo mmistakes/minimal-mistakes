@@ -93,10 +93,10 @@ tags: ['💪 Functional Fitness', '❤️ Cardiovascular & T2D', '🛡️ Liver 
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and survivor of a major heart attack (2008). He manages Type 2 Diabetes with Metformin and Ozempic and specializes in translating clinical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts//what-is-a-pathologist/">Pathology</a> | 
-      <a href="https://www.aginghealth.website/posts//taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts//seniors-biohacking-2026/">Smart Tech</a> | 
-      <a href="https://www.aginghealth.website/posts//cirrhosis-protein-targets-march-2026/">Heart</a>
+      <a href="https://www.aginghealth.website/posts/what-is-a-pathologist/">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts/taking-ozempic-good-bad-seniors-guide/">GLP-1/Ozempic</a> | 
+      <a href="https://www.aginghealth.website/posts/seniors-biohacking-2026/">Smart Tech</a> | 
+      <a href="https://www.aginghealth.website/posts/cirrhosis-protein-targets-march-2026/">Heart</a>
     </p>
   </div>
 

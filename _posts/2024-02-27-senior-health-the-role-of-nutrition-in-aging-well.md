@@ -171,13 +171,13 @@ tags: ['💪 Functional Fitness', '🛡️ Liver & Immune Health', '🌱 Senior 
   <p>
     <strong>The Foundation:</strong>
     New to this?
-    <a href="https://www.aginghealth.website/posts//diabetes/" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
     </a>.
   </p>
   <p>
     <strong>Liver Health:</strong>
-    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
     </a>  </p></div></div>
 <div aria-label="Article review and citations" class="citation-box">

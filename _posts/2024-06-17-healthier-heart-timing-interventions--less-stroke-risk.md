@@ -121,7 +121,7 @@ tags: ['❤️ Cardiovascular & T2D', '🌱 Senior Longevity', '⚖️ Patient A
 <hr />
 <h2><b>2026 Clinical Summary &amp; Lifestyle Guidelines</b></h2>
 <p>
-  Optimizing heart and <a href="https://www.aginghealth.website/posts//boost-brain-health/" title="Boost Brain Health" rel="dofollow"><b>brain health is an integrated journey</b></a>. While medications like Propranolol and procedures like
+  Optimizing heart and <a href="https://www.aginghealth.website/posts/boost-brain-health/" title="Boost Brain Health" rel="dofollow"><b>brain health is an integrated journey</b></a>. While medications like Propranolol and procedures like
   revascularization are vital, the foundation remains a heart-healthy lifestyle.
 </p>
 <h3><b>The "Essential 8" for 2026</b></h3>
@@ -131,9 +131,9 @@ tags: ['❤️ Cardiovascular & T2D', '🌱 Senior Longevity', '⚖️ Patient A
   and
   <b>Ischemic Heart Disease (IHD)</b>
   has shifted toward "Aggressive Early Revascularization." This is because diabetes accelerates atherosclerosis
-  (hardening of the arteries), <a href="https://www.aginghealth.website/posts//in-the-blood/" title="In The Blood" rel="dofollow"><b>making the timing of blood flow restoration</b></a> even more critical than in non-diabetic
+  (hardening of the arteries), <a href="https://www.aginghealth.website/posts/in-the-blood/" title="In The Blood" rel="dofollow"><b>making the timing of blood flow restoration</b></a> even more critical than in non-diabetic
 </p>
-<p>Here is how the <a href="https://www.aginghealth.website/posts//diabetes/" title="Diabetes" rel="dofollow"><b>revascularization strategy and timing change when diabetes</b></a> is in the picture:</p>
+<p>Here is how the <a href="https://www.aginghealth.website/posts/diabetes/" title="Diabetes" rel="dofollow"><b>revascularization strategy and timing change when diabetes</b></a> is in the picture:</p>
 <h3>1. The "Synergy" of Timing: Why Earlier is Better</h3>
 <p>
   For a patient with diabetes, the "hibernating" heart muscle (tissue that is alive but not pumping due to low blood
@@ -149,7 +149,7 @@ tags: ['❤️ Cardiovascular & T2D', '🌱 Senior Longevity', '⚖️ Patient A
   (CABG).
 </p>
 
-    <p style="text-align: left;"></p><ul style="text-align: left;"><li><b>The FREEDOM &amp; FAME Trials (Updated 2025):</b> These studies confirm that for diabetic patients with "multivessel disease" (blockages in more than one artery), Bypass Surgery (CABG) provides a significantly higher 5-year survival rate and a lower <a href="https://www.aginghealth.website/posts//is-heart-attack-risk-increased-more-by/" title="Is Heart Attack Risk Increased More By" rel="dofollow"><b>risk of repeat heart</b></a> attacks compared to stents.</li><li><b>The Rationale: </b>Diabetic blockages tend to be "diffuse" (spread out through the whole artery) rather than "focal" (in one spot). A bypass "jumps over" the entire diseased segment, whereas a stent only opens one small area.</li></ul><p></p><ul>
+    <p style="text-align: left;"></p><ul style="text-align: left;"><li><b>The FREEDOM &amp; FAME Trials (Updated 2025):</b> These studies confirm that for diabetic patients with "multivessel disease" (blockages in more than one artery), Bypass Surgery (CABG) provides a significantly higher 5-year survival rate and a lower <a href="https://www.aginghealth.website/posts/is-heart-attack-risk-increased-more-by/" title="Is Heart Attack Risk Increased More By" rel="dofollow"><b>risk of repeat heart</b></a> attacks compared to stents.</li><li><b>The Rationale: </b>Diabetic blockages tend to be "diffuse" (spread out through the whole artery) rather than "focal" (in one spot). A bypass "jumps over" the entire diseased segment, whereas a stent only opens one small area.</li></ul><p></p><ul>
 </ul>
 <h3>3. The "Triple Threat" Management (SGLT2 + GLP-1 + Revascularization)</h3>
 <p>
@@ -159,7 +159,7 @@ tags: ['❤️ Cardiovascular & T2D', '🌱 Senior Longevity', '⚖️ Patient A
 Revascularization:</b>
       Restores the plumbing (blood flow).</li><li><b>SGLT2 Inhibitors </b>(e.g., Empagliflozin):
       Reduces fluid overload and protects the kidneys.</li><li><b>GLP-1 Receptor Agonists</b> (e.g., Semaglutide):
-      Reduces the <a href="https://www.aginghealth.website/posts//systemic-inflammation-in-psoriasis/" title="Systemic Inflammation In Psoriasis" rel="dofollow"><b>systemic inflammation that causes the blockages</b></a> to form in the first place.</li></ol>
+      Reduces the <a href="https://www.aginghealth.website/posts/systemic-inflammation-in-psoriasis/" title="Systemic Inflammation In Psoriasis" rel="dofollow"><b>systemic inflammation that causes the blockages</b></a> to form in the first place.</li></ol>
     <p style="text-align: left;"></p><ol start="1">
 </ol>
 <h3>4. Silent Ischemia: The "Hidden" Timing Risk</h3>
@@ -179,7 +179,7 @@ The Challenge:
       a major heart failure event occurs.</li></ul><p></p><ul>
 </ul>
 <h3>Summary Questions for Your Doctor</h3>
-<p>If you or someone you care about is dealing with both <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" title="Diabetes Heart Attack Survivor Lessons" rel="dofollow"><b>diabetes and heart</b></a> disease, think about asking:</p><p></p><ol style="text-align: left;"><li>Given my diabetes, is my heart disease 'multivessel,' and would a bypass (CABG) provide better long-term
+<p>If you or someone you care about is dealing with both <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" title="Diabetes Heart Attack Survivor Lessons" rel="dofollow"><b>diabetes and heart</b></a> disease, think about asking:</p><p></p><ol style="text-align: left;"><li>Given my diabetes, is my heart disease 'multivessel,' and would a bypass (CABG) provide better long-term
         protection than a stent?</li><li>Since I may not feel traditional chest pain, what objective tests (like an Echo) should we use to monitor my
         revascularization timing?</li><li>Are we using an SGLT2 inhibitor to protect my heart function alongside our plans for revascularization?</li></ol><p></p>
     <p style="text-align: left;"></p><ul>
@@ -192,6 +192,6 @@ The Challenge:
       Revascularization timing in IHD patients. (medRxiv)</i></li><li><i>Jeong et al. (2024):</i>
       Propranolol and stroke risk reduction. (medRxiv)</li><li><i>American Heart Association:</i>
       Guidelines for CAD and Heart Failure management.</li><li><i>American Migraine Foundation:</i>
-      <a href="https://www.aginghealth.website/posts//is-there-link-between-liver-health-and/" title="Is There Link Between Liver Health And" rel="dofollow"><b>Link between neurological health and cardiovascular risk</b></a>.</li></ol></i>
+      <a href="https://www.aginghealth.website/posts/is-there-link-between-liver-health-and/" title="Is There Link Between Liver Health And" rel="dofollow"><b>Link between neurological health and cardiovascular risk</b></a>.</li></ol></i>
     <p style="text-align: left;"></p><ul>
 </ul>

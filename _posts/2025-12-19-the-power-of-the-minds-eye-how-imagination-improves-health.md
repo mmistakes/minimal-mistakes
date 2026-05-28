@@ -206,7 +206,7 @@ By consciously instructing your brain to project strength, vitality, and indepen
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//imagination-reality-health-connection-seniors/"
+        "@id": "https://www.aginghealth.website/posts/imagination-reality-health-connection-seniors/"
       },
       "headline": "The Power of the Mind's Eye: How Imagination Improves Health",
       "description": "Discover how the connection between imagination and reality influences aging. Learn science-backed mental techniques to improve your physical health.",

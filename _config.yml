@@ -123,10 +123,10 @@ defaults:
       entries_layout: "grid"
       show_glossary_link: true
       search: true
-     category_archive:
-      type: false
-     tag_archive:
-      type: false
+      category_archive:
+        type: false
+      tag_archive:
+        type: false
 
   - scope:
       path: "assets"

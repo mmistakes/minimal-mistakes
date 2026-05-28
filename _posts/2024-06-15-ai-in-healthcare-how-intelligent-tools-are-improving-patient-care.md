@@ -141,7 +141,7 @@ decisions.
 </p>
 <hr />
 <h2 style="text-align: left;">Ethics, Safety, and Trust</h2><p>
-  The <a href="https://www.aginghealth.website/posts//senior-health-fast-changing-world/" title="Senior Health Fast Changing World" rel="dofollow"><b>World Health Organization</b></a> released formal guidance in 2024 emphasizing transparency, bias mitigation, and human
+  The <a href="https://www.aginghealth.website/posts/senior-health-fast-changing-world/" title="Senior Health Fast Changing World" rel="dofollow"><b>World Health Organization</b></a> released formal guidance in 2024 emphasizing transparency, bias mitigation, and human
   oversight in healthcare AI systems. These principles ensure AI remains aligned with patient safety and equity.
   <a href="https://www.who.int/news/item/18-01-2024-who-releases-ai-ethics-and-governance-guidance-for-large-multi-modal-models">
     [who.int]
@@ -188,14 +188,14 @@ decisions.
 <hr />
 <h3 style="text-align: left;">Key Takeaways</h3><ul>
   <li>AI in healthcare supports—not replaces—clinicians</li>
-  <li>Real-world <a href="https://www.aginghealth.website/posts//what-new-studies-show-about-slowing/" title="What New Studies Show About Slowing" rel="dofollow"><b>studies show improved</b></a> efficiency and safety</li>
+  <li>Real-world <a href="https://www.aginghealth.website/posts/what-new-studies-show-about-slowing/" title="What New Studies Show About Slowing" rel="dofollow"><b>studies show improved</b></a> efficiency and safety</li>
   <li>Patients benefit from more personalized, timely care</li>
   <li>Ethical oversight and transparency are essential</li>
   <li>Informed patients have better healthcare conversations</li>
 </ul>
 <hr />
 <h3 style="text-align: left;">Conclusion: A Shared Future</h3><p>
-  <a href="https://www.aginghealth.website/posts//ai-in-healthcare/" title="Ai In Healthcare" rel="dofollow"><b>AI in healthcare represents a shift toward</b></a>
+  <a href="https://www.aginghealth.website/posts/ai-in-healthcare/" title="Ai In Healthcare" rel="dofollow"><b>AI in healthcare represents a shift toward</b></a>
   <strong>collaborative intelligence</strong>
   , where technology enhances human care rather than overshadowing it. When patients understand how AI supports medical
   decisions, they become active participants—asking better questions, building trust, and shaping safer, more effective

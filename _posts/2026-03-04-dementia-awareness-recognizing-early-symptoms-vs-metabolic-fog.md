@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Dementia Awareness: Recognizing Early Symptoms vs. Metabolic Fog"
-permalink: /posts//dementia-awareness-early-symptoms-metabolic-fog/
+permalink: /posts/dementia-awareness-early-symptoms-metabolic-fog/
 date: 2026-03-04T22:10:00+00:00
 categories: ["brain-mind"]
 tags: ["Cognitive Health", "Cardiovascular", "Liver Health", "Dementia", "Type 2 Diabetes"]
@@ -92,8 +92,8 @@ To prevent a temporary metabolic glitch from being misdiagnosed as an irreversib
 ## 📘 Companion Patient Resources
 
 * **The Log Matrix:** Pinpoint exactly when your brain fog peaks relative to your carbohydrate consumption by keeping a detailed log with my mobile-optimized [Daily Glucose and Medication Tracker Log]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }}).
-* **The Baseline Framework:** New to analyzing insulin profiles and protecting your blood vessels from sugar damage? Solidify your core health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts//understanding-diabetes-managing-blood-sugar/' | relative_url }}).
-* **The Liver Frontier:** Learn why modern hepatology standard guidelines have discarded traditional low-protein diets in favor of protecting lean muscle mass by reading [The Great Protein Flip: Why 'Resting the Liver' is Outdated]({{ '/posts//the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }}).
+* **The Baseline Framework:** New to analyzing insulin profiles and protecting your blood vessels from sugar damage? Solidify your core health literacy with my [Beginner's Guide to Understanding Diabetes and Blood Sugar]({{ '/posts/understanding-diabetes-managing-blood-sugar/' | relative_url }}).
+* **The Liver Frontier:** Learn why modern hepatology standard guidelines have discarded traditional low-protein diets in favor of protecting lean muscle mass by reading [The Great Protein Flip: Why 'Resting the Liver' is Outdated]({{ '/posts/the-great-protein-flip-why-resting-the-liver-is-outdated/' | relative_url }}).
 
 ---
 
@@ -108,7 +108,7 @@ To prevent a temporary metabolic glitch from being misdiagnosed as an irreversib
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, regional wastewater monitoring trends, and peer-reviewed journals into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

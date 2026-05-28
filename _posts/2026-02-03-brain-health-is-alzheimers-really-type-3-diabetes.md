@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Brain Health: Is Alzheimer's Really Type 3 Diabetes?"
-permalink: /posts//brain-health-is-alzheimers-really-type-3-diabetes/
+permalink: /posts/brain-health-is-alzheimers-really-type-3-diabetes/
 date: 2026-02-03T06:46:00+00:00
 description: "Exploring the metabolic link between insulin resistance, cerebral glucose hypometabolism, and the neurodegenerative pathways of Alzheimer's disease."
 header:
@@ -120,14 +120,14 @@ As the body ages, maintaining precise glycemic control becomes a primary pillar 
 ### About the Author
 **Tommy T. Douglas** is an independent health researcher and patient advocate. A survivor of a major cardiac event, he specializes in cross-linking complex clinical data, wastewater monitoring, and peer-reviewed metabolic literature into accessible, actionable health literacy for older adults.
 
-[**Heart**]({{ '/posts//lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts//brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[**Heart**]({{ '/posts/lessons-from-a-2008-heart-attack-survivor/' | relative_url }}) | [**Metabolism**]({{ '/posts/brain-health-is-alzheimers-really-type-3-diabetes/' | relative_url }}) | [**Brain**]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [**Liver**]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 
 ### Related Patient Resources
 * [**The Log: Daily Glucose and Medication Tracker**]({{ '/p/the-daily-glucose-medication-tracker/' | relative_url }})
-* [**The Foundation: Beginner’s Guide to Diabetes**]({{ '/posts//diabetes-guide/' | relative_url }})
-* [**Liver Health: How Metabolic Syndrome Impacts Liver Cirrhosis**]({{ '/posts//liver-cirrhosis-understanding-decompensation/' | relative_url }})
+* [**The Foundation: Beginner’s Guide to Diabetes**]({{ '/posts/diabetes-guide/' | relative_url }})
+* [**Liver Health: How Metabolic Syndrome Impacts Liver Cirrhosis**]({{ '/posts/liver-cirrhosis-understanding-decompensation/' | relative_url }})
 
 <script type="application/ld+json">
 {

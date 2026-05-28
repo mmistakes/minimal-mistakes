@@ -21,13 +21,13 @@ description: >
 # ── Images ──────────────────────────────────────────────────
 header:
   # Full-width hero at the top of the post page
-  overlay_image: /assets/images/posts//your-post-hero.jpg
+  overlay_image: /assets/images/posts/your-post-hero.jpg
   overlay_filter: "linear-gradient(135deg, rgba(8,28,58,0.80) 0%, rgba(0,96,150,0.45) 100%)"
   caption: "Image credit: Source Name"
 
   # ↓ THIS IS THE KEY ONE — drives all three sidebar/grid thumbnails
   # Recommended size: 400×225 px (16:9)
-  teaser: /assets/images/posts//your-post-teaser.jpg
+  teaser: /assets/images/posts/your-post-teaser.jpg
 
 # ── Taxonomy ────────────────────────────────────────────────
 # First entry drives the "· Category" label on grid cards
@@ -57,7 +57,7 @@ sidebar:
   nav: "main"       # remove to hide sidebar on this post
 
 # ── Open Graph ──────────────────────────────────────────────
-og_image: /assets/images/posts//your-post-teaser.jpg
+og_image: /assets/images/posts/your-post-teaser.jpg
 
 last_modified_at: 2026-05-14
 ---

@@ -142,7 +142,7 @@ Medicare is an incredible foundation, but it is not a "shield" against all costs
 * **Medicare.gov (2026):** *Official Medicare & You Handbook.*
 * **CMS (2025):** *Inflation Reduction Act: The $2,000 Part D Cap Explained.*
 * **National Institute on Aging:** *Long-Term Care Planning Guide.*
-* **Aging Health Research (2026):** [Navigating Medicare: A Senior’s Guide.](/posts//medicare-basics-senior-guide/)
+* **Aging Health Research (2026):** [Navigating Medicare: A Senior’s Guide.](/posts/medicare-basics-senior-guide/)
 
 <script type="application/ld+json">
 {

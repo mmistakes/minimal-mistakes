@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Surprising Circadian Disrupters: Infections, Diseases, and Vaccines"
-permalink: /posts//vaccines-infections-diseases-circadian-rhythm/
+permalink: /posts/vaccines-infections-diseases-circadian-rhythm/
 date: 2025-03-31T15:48:00+00:00
 categories: ["Longevity"]
 tags: ["Senior Health", "Prevention", "Biomarkers"]
@@ -118,7 +118,7 @@ This molecular override is the precise mechanism that induces the classic sympto
 When an individual navigates a progressive, long-term chronic condition, the persistent background stress continuously degrades the stability of their internal timing networks:
 
 * **Metabolic Dysregulation:** Conditions like Type 2 diabetes fracture normal circadian loops. Severe insulin resistance alters the peripheral clocks of the liver and skeletal muscle tissues, locking the patient into an inflammatory feedback loop marked by erratic fasting blood sugar spikes and sleep fragmentation.
-* **Hormonal and Vascular Imbalances:** Chronic cardiovascular diseases degrade the natural nocturnal dipping profile of your blood pressure and disrupt normal evening melatonin production, increasing your long-term risk for advanced vascular events. Learn how these vascular changes cross paths with seasonal thermal changes on our [Vascular Strain and Cold Weather Guide](/posts//is-heart-attack-risk-increased-more-by/).
+* **Hormonal and Vascular Imbalances:** Chronic cardiovascular diseases degrade the natural nocturnal dipping profile of your blood pressure and disrupt normal evening melatonin production, increasing your long-term risk for advanced vascular events. Learn how these vascular changes cross paths with seasonal thermal changes on our [Vascular Strain and Cold Weather Guide](/posts/is-heart-attack-risk-increased-more-by/).
 * **Treatment-Induced Fatigue:** Standard clinical interventions required to manage advanced conditions—including targeted chemotherapies or long-term high-dose steroid regimens—frequently possess toxic profiles that directly fracture your natural sleep architecture.
 
 ---
@@ -190,7 +190,7 @@ A zeitgeber (German for "time giver") is any external environmental or behaviora
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//vaccines-infections-diseases-circadian-rhythm/"
+        "@id": "https://www.aginghealth.website/posts/vaccines-infections-diseases-circadian-rhythm/"
       },
       "headline": "Surprising Circadian Disrupters: Infections, Diseases, and Vaccines",
       "description": "A medically reviewed guide examining how acute infection cytokines, vaccine reactogenicity, and chronic diseases disrupt the hypothalamic master clock.",

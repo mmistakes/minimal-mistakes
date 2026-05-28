@@ -111,10 +111,10 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', '❤️ Cardiovascular 
   <p><b>Explore more by topic:</b></p>
 
   <p class="topic-links">
-    <a href="https://www.aginghealth.website/posts//diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
-    <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
-    <a href="https://www.aginghealth.website/posts//wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
-    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
+    <a href="https://www.aginghealth.website/posts/diabetes-heart-attack-survivor-lessons/" rel="noopener noreferrer nofollow" target="_blank">Heart</a> |
+    <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/" rel="noopener noreferrer nofollow" target="_blank">Metabolism</a> |
+    <a href="https://www.aginghealth.website/posts/wisdom-aging-brain-cognitive-shifts/" rel="noopener noreferrer nofollow" target="_blank">Brain</a> |
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener" target="_blank">Liver</a>
   </p>
 </div></div>
 
@@ -129,13 +129,13 @@ tags: ['🌱 Senior Longevity', '🧠 Cognitive Health', '❤️ Cardiovascular 
   <p>
     <strong>The Foundation:</strong>
     New to this?
-    <a href="https://www.aginghealth.website/posts//diabetes/" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/diabetes/" rel="noopener noreferrer" target="_blank">
       Read my Beginner’s Guide to Diabetes
     </a>.
   </p>
   <p>
     <strong>Liver Health:</strong>
-    <a href="https://www.aginghealth.website/posts//liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
+    <a href="https://www.aginghealth.website/posts/liver-cirrhosis-what-you-need-to-know/" rel="noopener noreferrer" target="_blank">
       How metabolic syndrome impacts liver cirrhosis
     </a>  </p></div>
     <div class="ah-accent-card" style="background: rgb(255, 245, 245); border-left-color: rgb(229, 62, 62); margin-top: 15px;">

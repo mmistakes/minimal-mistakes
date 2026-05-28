@@ -14,7 +14,7 @@ toc_icon: "brain"
 last_modified_at: 2026-05-21
 ---
 
-From workplace chronic stressors and economic volatility to algorithmic digital burnout, modern life presents an unrelenting series of psychological demands. For older adults and patient advocates, learning how to actively [protect and strengthen your mental health]({{ '/posts//cognitive-reframing-cbt-guide/' | relative_url }}) is not merely a lifestyle preference—it represents one of the most critical, high-leverage investments you can make to extend your functional health span, protect cognitive reserve, and preserve longevity.
+From workplace chronic stressors and economic volatility to algorithmic digital burnout, modern life presents an unrelenting series of psychological demands. For older adults and patient advocates, learning how to actively [protect and strengthen your mental health]({{ '/posts/cognitive-reframing-cbt-guide/' | relative_url }}) is not merely a lifestyle preference—it represents one of the most critical, high-leverage investments you can make to extend your functional health span, protect cognitive reserve, and preserve longevity.
 
 <div class="notice--warning">
 <strong>⚠️ Medical Disclaimer:</strong> This clinical translation material is intended for informational and educational patient-advocacy purposes only. It does not substitute for professional medical advice, diagnosis, or targeted clinical treatment. Always consult a board-certified healthcare provider regarding any persistent psychological or physiological condition.
@@ -127,7 +127,7 @@ To preserve cognitive reserve, protect your brain's nightly glymphatic waste cle
 
 ## Explore the Aging Health System Hubs
 
-[Heart & Vascular Safety]({{ '/posts//diabetes-heart-attack-survivor-lessons/' | relative_url }}) | [Metabolic Optimization]({{ '/posts//alzheimers-type-3-diabetes-insulin-resistance/' | relative_url }}) | [Brain Reserve & Neurology]({{ '/posts//wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [Advanced Liver Literacy]({{ '/posts//liver-cirrhosis-what-you-need-to-know/' | relative_url }})
+[Heart & Vascular Safety]({{ '/posts/diabetes-heart-attack-survivor-lessons/' | relative_url }}) | [Metabolic Optimization]({{ '/posts/alzheimers-type-3-diabetes-insulin-resistance/' | relative_url }}) | [Brain Reserve & Neurology]({{ '/posts/wisdom-aging-brain-cognitive-shifts/' | relative_url }}) | [Advanced Liver Literacy]({{ '/posts/liver-cirrhosis-what-you-need-to-know/' | relative_url }})
 
 ---
 

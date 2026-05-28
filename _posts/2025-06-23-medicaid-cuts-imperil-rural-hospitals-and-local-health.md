@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Medicaid Cuts Imperil Rural Hospitals and Local Health"
-permalink: /posts//medicaid-cuts-rural-hospitals-health-impact/
+permalink: /posts/medicaid-cuts-rural-hospitals-health-impact/
 date: 2025-06-23T11:59:00+00:00
 categories: ["Longevity"]
 tags: ["Senior Health", "Prevention", "Biomarkers", "Advocacy"]
@@ -135,7 +135,7 @@ The REH designation acts as a vital regulatory safety valve. It allows a financi
       "@type": "MedicalWebPage",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.aginghealth.website/posts//medicaid-cuts-rural-hospitals-health-impact/"
+        "@id": "https://www.aginghealth.website/posts/medicaid-cuts-rural-hospitals-health-impact/"
       },
       "headline": "Medicaid Cuts Imperil Rural Hospitals and Local Health",
       "description": "An evidence-based policy review auditing the impact of federal Medicaid matching cuts on rural uncompensated care burdens and community medical center closures.",

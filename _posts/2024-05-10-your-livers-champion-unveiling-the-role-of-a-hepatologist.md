@@ -104,10 +104,10 @@ tags: ['⚖️ Patient Advocacy', '🛡️ Liver & Immune Health', 'Liver', 'Dig
     <h3 class="ah-title">About the Researcher</h3>
     <p><strong>Tommy T. Douglas</strong> is an independent health researcher and patient advocate. A survivor of a major heart attack (2008) who manages Type 2 Diabetes, he specializes in translating complex medical data into actionable health literacy for seniors.</p>
     <p><strong>Explore more by topic:</strong> 
-      <a href="https://www.aginghealth.website/posts//pathology-disease-diagnosis/">Pathology</a> | 
-      <a href="https://www.aginghealth.website/posts//alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
-      <a href="https://www.aginghealth.website/posts//ozempic-older-adults-benefits-medicare/">GLP-1/Ozempic</a> | 
-      <a href="https://www.aginghealth.website/posts//heart-attack-prevention-men-women/">Heart</a>
+      <a href="https://www.aginghealth.website/posts/pathology-disease-diagnosis/">Pathology</a> | 
+      <a href="https://www.aginghealth.website/posts/alzheimers-type-3-diabetes-insulin-resistance/">Metabolism</a> | 
+      <a href="https://www.aginghealth.website/posts/ozempic-older-adults-benefits-medicare/">GLP-1/Ozempic</a> | 
+      <a href="https://www.aginghealth.website/posts/heart-attack-prevention-men-women/">Heart</a>
     </p>
   </div>
 
