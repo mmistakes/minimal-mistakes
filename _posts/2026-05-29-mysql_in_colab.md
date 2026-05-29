@@ -71,7 +71,7 @@ drive.mount('/content/drive')
 !mysql -u root --password='' 학교DB < /content/drive/MyDrive/mysql_data_com33/학교DB.sql
 ```
 
-## 5. 실습 데이터 저장하기 (Export / Backup)
+## 5. 실습 데이터 저장하기 (Export / Backup)  
 
 ```
 # 백업 전 데이터베이스 존재 여부 체크
@@ -83,7 +83,3 @@ drive.mount('/content/drive')
 !mysqldump -u root --password='' mysql > /content/drive/MyDrive/mysql_data_com33/mysql.sql
 !mysqldump -u root --password='' 학교DB > /content/drive/MyDrive/mysql_data_com33/학교DB.sql
 ```
-
-
-5. 
-
