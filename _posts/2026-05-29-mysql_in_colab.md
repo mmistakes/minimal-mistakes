@@ -83,3 +83,6 @@ drive.mount('/content/drive')
 !mysqldump -u root --password='' mysql > /content/drive/MyDrive/mysql_data_com33/mysql.sql
 !mysqldump -u root --password='' 학교DB > /content/drive/MyDrive/mysql_data_com33/학교DB.sql
 ```
+
+<img width="3146" height="1099" alt="image" src="https://github.com/user-attachments/assets/bb84af22-21a9-4267-8c9a-1277714df554" />
+
