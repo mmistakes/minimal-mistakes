@@ -86,3 +86,9 @@ drive.mount('/content/drive')
 
 <img width="3146" height="1099" alt="image" src="https://github.com/user-attachments/assets/bb84af22-21a9-4267-8c9a-1277714df554" />
 
+<img width="1868" height="1309" alt="image" src="https://github.com/user-attachments/assets/97ac5c69-b617-4178-84d8-41869e736d13" />  
+
+<img width="1858" height="895" alt="image" src="https://github.com/user-attachments/assets/f3fe27da-1e73-483f-9d3f-f727224b97b4" />
+
+<img width="1850" height="1219" alt="image" src="https://github.com/user-attachments/assets/09946b8c-097e-45f5-bb7b-8e86d3cdabb2" />
+
