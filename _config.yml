@@ -1,7 +1,5 @@
 # Theme Settings
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "mint"
-
+remote_theme: "jekyll/minima@1e8a445"
 # Site Settings
 locale: "en-US"
 title: "Aging Health"
