@@ -56,7 +56,7 @@ drive.mount('/content/drive')
 !service mysql start
 ```
 
-## 4. 백업 데이터 불러오기 (Import)
+## 4. 백업 데이터 불러오기
  - 새로운 세션을 열었거나 DB를 초기화했다면, 이전에 구글 드라이브에 저장해 두었던 .sql 파일들을 가져와 복구해야 합니다.
  - 데이터베이스를 먼저 생성한 뒤, 리다이렉션 기호(<)를 이용해 백업 파일을 밀어 넣습니다. (초기 root 계정은 비밀번호가 설정되어 있지 않습니다.)
    
@@ -71,7 +71,7 @@ drive.mount('/content/drive')
 !mysql -u root --password='' 학교DB < /content/drive/MyDrive/mysql_data_com33/학교DB.sql
 ```
 
-## 5. 실습 데이터 저장하기 (Export / Backup)  
+## 5. 실습 데이터 저장하기
 
 ```
 # 백업 전 데이터베이스 존재 여부 체크
