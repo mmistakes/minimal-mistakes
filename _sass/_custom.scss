@@ -24,6 +24,14 @@ html[data-theme="light"] {
   background-color: var(--background-color);
   color: var(--text-color);
 
+  // Top-level override: the dark skin sets body { color: #eaeaea } directly,
+  // which wins over the html-level color above and bleeds into all inheriting
+  // elements (p, excerpts, etc.). Overriding body here fixes the cascade.
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
   .masthead {
     background-color: var(--masthead-background);
     border-bottom: 1px solid var(--border-color);
@@ -69,6 +77,20 @@ html[data-theme="light"] {
   }
 
   .archive__item-title a {
+    color: var(--headline-color);
+  }
+  .page__meta, .comment__date{
+    color: var(--text-color);
+  }
+  .page__title {
+    color: var(--headline-color);
+    // In collection pages the title text is wrapped in an <a> tag
+    a {
+      color: var(--headline-color);
+    }
+  }
+
+  .archive__subtitle {
     color: var(--headline-color);
   }
 
