@@ -1,4 +1,5 @@
 ---
+redirect_to: "https://netfoundry.io/docs/platform/api-guides/authentication"
 permalink: /guides/authentication/
 redirect_from:
   - /v2/guides/authentication/

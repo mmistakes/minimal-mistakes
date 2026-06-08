@@ -1,4 +1,5 @@
 ---
+redirect_to: "https://netfoundry.io/docs/platform/api-guides/"
 title: Install Ziti in Kubernetes
 excerpt: Install a Helm chart for secure access to cluster services.
 tags:

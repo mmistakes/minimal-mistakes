@@ -1,5 +1,6 @@
 ---
 title: Overview
+redirect_to: "https://netfoundry.io/docs/platform/api-guides/"
 permalink: /guides/introduction/
 redirect_from:
     - /guides/

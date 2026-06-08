@@ -9,7 +9,7 @@ header:
   actions:
     - btn_class: "btn--primary"
       label: "LEARN MORE"
-      url: "/guides/introduction/"
+      url: "https://netfoundry.io/docs/platform/api-guides/"
 title: "NetFoundry API"
 excerpt: "Documentation and Tools"
 feature_row:

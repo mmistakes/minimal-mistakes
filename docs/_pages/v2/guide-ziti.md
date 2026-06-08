@@ -1,5 +1,6 @@
 ---
 title: OpenZiti
+redirect_to: "https://netfoundry.io/docs/platform/api-guides/"
 permalink: /guides/ziti/
 redirect_from:
     - /v2/guides/ziti/
