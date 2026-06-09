@@ -1,5 +1,6 @@
 ---
 title: "REST Examples"
+redirect_to: "https://netfoundry.io/docs/platform/api-guides/provision-network"
 permalink: /guides/rest/
 redirect_from:
   - /v2/guides/hello-world/

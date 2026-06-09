@@ -1,4 +1,5 @@
 ---
+redirect_to: "https://netfoundry.io/docs/platform/api-guides/"
 permalink: /guides/demo/
 redirect_from:
   - /v2/guides/demo/
