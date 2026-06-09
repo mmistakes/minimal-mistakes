@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin    : "catpuccin_mocha" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "en-US"
@@ -20,7 +20,7 @@ direction                : # "ltr" (default), "rtl" # set the direction of the p
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Tatjana (Tanja) Schmidt"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -114,55 +114,48 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Tatjana Schmidt"
+  avatar           : "/assets/images/20250515_181347.jpg"
+  bio              : "I’m a fourth-year PhD student and a systems neuroscientist. My main interest lies in using diffusion MRI to investigate the microstructural correlates of white matter pathology across diseases, with the goal of biophysically informed and clinically useful characterisation of WM changes. Other areas of interest are dMRI modeling and analysis, open science and reproducibility, as well as teaching (currently Medical Physics for undergraduates). I’m a member of the International Society for Magnetic Resonance in Medicine and the International Society for Tractography. Outside of the lab you can find me rowing, coxing or running (at most two out of the three at the same time)."
+  location         : "Cambridge"
+  email            : "ts887@cam.ac.uk"
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-square-x-twitter"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-square-facebook"
-      # url: "https://facebook.com/"
+      # url: "mailto:ts887@cam.ac.uk"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: "https://github.com/MRTanja"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      # url: "https://www.linkedin.com/in/tatjana-schmidt-793a78b0/"
+    - label: "Orcid"
+      icon: "fab fa-fw fa-linkedin"
+      # url: "https://orcid.org/my-orcid?orcid=0000-0002-3840-6300"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-linkedin"
+      # url: "https://scholar.google.com/citations?user=S_SwJWkAAAAJ&hl=en&inst=6810896796868835251&oi=ao"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-square-x-twitter"
-      # url:
-      # rel: "me"  # optional: adds rel attribute (e.g. for IndieWeb web sign-in)
-    - label: "Facebook"
-      icon: "fab fa-fw fa-square-facebook"
-      # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-square-envelope"
+      # url: "mailto:ts887@cam.ac.uk"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-  since: "2013"
+      # url: "https://github.com/MRTanja"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      # url: "https://www.linkedin.com/in/tatjana-schmidt-793a78b0/"
+    - label: "Orcid"
+      icon: "fab fa-fw fa-linkedin"
+      # url: "https://orcid.org/my-orcid?orcid=0000-0002-3840-6300"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-linkedin"
+      # url: "https://scholar.google.com/citations?user=S_SwJWkAAAAJ&hl=en&inst=6810896796868835251&oi=ao"
+  since: "2026"
 
 
 # Reading Files
