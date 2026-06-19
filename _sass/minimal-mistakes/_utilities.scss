@@ -312,7 +312,7 @@ $text-alignments: left, right, start, end, center, justify;
       inset-inline-start: 0;
       width: 100%;
       height: 100%;
-      opacity: 0;
+      opacity: 0.01;
       background-color: $background-color;
       -webkit-transition: $global-transition;
       transition: $global-transition;
@@ -558,12 +558,12 @@ pre {
       top: 0.25em;
       inset-inline-end: 0.25em;
       &.copied {
-        opacity: 0;
+        opacity: 0.01;
       }
     }
 
     &.copied i {
-      opacity: 0;
+      opacity: 0.01;
       &.copied {
         opacity: 1;
       }
