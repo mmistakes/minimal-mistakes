@@ -1,0 +1,80 @@
+---
+permalink: /contact/
+layout: page
+title: "Contact"
+---
+{% assign c = site.data.contact %}
+
+<div class="col-760">
+
+  <!-- Header -->
+  <section class="contact-header">
+    <div class="section-label">
+      <span class="section-label-text">Contact</span>
+      <span class="section-rule"></span>
+    </div>
+    <h1>{{ c.header.title }}</h1>
+    <p>{{ c.header.intro }}</p>
+  </section>
+
+  <!-- Cards -->
+  <section class="contact-grid">
+
+    <!-- Email composer -->
+    <div class="contact-card">
+      <div class="contact-card-label">Email me about</div>
+      <div class="contact-select-wrap">
+        <select id="contact-reason" class="contact-select">
+          {% for reason in c.reasons %}
+          <option>{{ reason }}</option>
+          {% endfor %}
+        </select>
+        <span class="contact-select-chevron">{% include icon.html name="chevron-down" size="14" %}</span>
+      </div>
+      <a id="compose-btn" href="mailto:{{ c.email }}?subject=%5Bgauthamkumaran.dev%5D%20{{ c.reasons[0] | url_encode }}" class="compose-btn">
+        {% include icon.html name="envelope" size="16" %}
+        Compose email
+      </a>
+      <div class="contact-email-display">{{ c.email }}</div>
+    </div>
+
+    <!-- LinkedIn -->
+    <a href="{{ c.linkedin.url }}" class="linkedin-card">
+      <div>
+        <div class="linkedin-card-icon">{% include icon.html name="linkedin" size="26" %}</div>
+        <div class="linkedin-card-title">{{ c.linkedin.title }}</div>
+        <div class="linkedin-card-desc">{{ c.linkedin.description }}</div>
+      </div>
+      <div class="linkedin-card-link">{{ c.linkedin.handle }} →</div>
+    </a>
+
+  </section>
+
+  <!-- Elsewhere -->
+  <section class="elsewhere-section">
+    <div class="elsewhere-label">Elsewhere</div>
+    <div class="elsewhere-links">
+      {% for link in c.elsewhere %}
+      <a href="{{ link.url }}">{% include icon.html name=link.icon size="16" %}{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact-footer">
+    <div class="contact-footer-text">{{ c.footer.location }}</div>
+    <div class="contact-footer-text">{{ c.footer.reply_time }}</div>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var select = document.getElementById('contact-reason');
+    var btn = document.getElementById('compose-btn');
+    function update() {
+      btn.href = 'mailto:{{ c.email }}?subject=' + encodeURIComponent('[gauthamkumaran.dev] ' + select.value);
+    }
+    select.addEventListener('change', update);
+  })();
+</script>

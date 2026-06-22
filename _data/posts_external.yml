@@ -1,0 +1,17 @@
+- title: "Encoder-Decoder Models for Multistep Time-Series Forecasting"
+  url: "https://medium.com/data-science/encoder-decoder-model-for-multistep-time-series-forecasting-using-pytorch-5d54c6af6e60"
+  date: "2020-10-01"
+  excerpt: "A from-scratch PyTorch walkthrough of seq2seq forecasting — the architecture behind a 15% energy-OPEX cut across 5,000+ 5G cells."
+  read_time: 12
+  source: "Towards Data Science"
+  thumb: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*UtLG2Al5bybvrRYguEnh8w.jpeg"
+  external: true
+
+- title: "Similar-Image Recommendations with FastAI and Annoy"
+  url: "https://medium.com/data-science/similar-images-recommendations-using-fastai-and-annoy-16d6ceb3b809"
+  date: "2019-06-01"
+  excerpt: "Building a visual 'more like this' feature with transfer-learned CNN embeddings and approximate nearest neighbours."
+  read_time: 9
+  source: "Towards Data Science"
+  thumb: "https://miro.medium.com/v2/resize:fit:3200/format:webp/1*xJ0MjCfbwQ4v2dhXe3JCIg.png"
+  external: true

@@ -1,0 +1,10 @@
+hero:
+  name_line1: "Gautham"
+  name_line2: "Kumaran"
+  role:
+    - "Applied AI Engineer"
+    - "Senior Data Scientist"
+  bio: "Ten years turning ML into measurable impact across FinTech, fraud, telecom and e-commerce."
+
+footer:
+  location: "Dubai, UAE · © 2026"

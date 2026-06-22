@@ -1,0 +1,18 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    {% if page.url == '/about/' %}
+      <a href="/about/" class="nav-brand nav-monogram">GK</a>
+    {% else %}
+      <a href="/about/" class="nav-brand nav-wordmark">Gautham Kumaran</a>
+    {% endif %}
+    <div class="nav-links">
+      <a href="/about/"{% if page.url == '/about/' %} class="active"{% endif %}>About</a>
+      <a href="/blog/"{% if page.url == '/blog/' or page.layout == 'post' %} class="active"{% endif %}>Blog</a>
+      <a href="/contact/"{% if page.url == '/contact/' %} class="active"{% endif %}>Contact</a>
+      <span class="nav-sep"></span>
+      <button data-theme-toggle title="Toggle theme" class="theme-toggle">
+        {% include icon.html name="moon" size="15" %}
+      </button>
+    </div>
+  </div>
+</nav>

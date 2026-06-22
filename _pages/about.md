@@ -1,78 +1,79 @@
 ---
 permalink: /about/
+layout: page
 title: "About"
 ---
+{% assign about = site.data.about %}
+{% assign career = site.data.career %}
+{% assign posts = site.data.posts_external %}
+{% assign social = site.data.social %}
 
-Applied AI Engineer and Senior Data Scientist with 10+ years of experience turning ML into measurable business impact across FinTech, Fraud, Telecom, and E-Commerce. I build AI agents and the evaluation systems behind them to translate new capabilities into operational impact.
+<div class="col-760">
 
----
+  <!-- Hero -->
+  <section class="about-hero">
+    <h1 class="display-name">{{ about.hero.name_line1 }}<br>{{ about.hero.name_line2 }}</h1>
+    <div class="hero-rule"></div>
+    <div class="hero-lockup">
+      <div class="hero-role">{{ about.hero.role | join: "<br>" }}</div>
+      <p class="hero-bio">{{ about.hero.bio }}</p>
+    </div>
+  </section>
 
-## Experience
+  <!-- Career -->
+  <section class="career-section">
+    <div class="section-label">
+      <span class="section-label-text">01 — Career</span>
+      <span class="section-rule"></span>
+    </div>
+    <div>
+      {% for job in career %}
+      <div class="timeline-entry">
+        <div class="timeline-year">{{ job.start }}<br><span class="year-end">{{ job.end }}</span></div>
+        <div class="timeline-rail">
+          {% unless forloop.last %}<div class="timeline-rail-line"></div>{% endunless %}
+          <div class="timeline-dot{% if job.current %} current{% endif %}"></div>
+        </div>
+        <div>
+          <div class="timeline-company">{{ job.company }}{% if job.company_sub %} <span class="timeline-company-sub">{{ job.company_sub }}</span>{% endif %}</div>
+          <div class="timeline-role">{{ job.role }} · {{ job.location }}</div>
+          <div class="timeline-desc">{{ job.description }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 
-### Careem — Senior Data Scientist II
-*Jan 2022 – Present · Dubai, UAE*
+  <!-- Writing -->
+  <section class="writing-section">
+    <div class="section-label">
+      <span class="section-label-text">02 — Recent writing</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="writing-list">
+      {% for post in posts %}
+      <a href="{{ post.url }}" class="writing-item" target="_blank" rel="noopener">
+        <div>
+          <div class="writing-item-title">{{ post.title }}</div>
+          <div class="writing-item-source">{{ post.source }}</div>
+        </div>
+        <div class="writing-item-year">{{ post.date | date: "%Y" }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="view-all">
+      <a href="/blog/">View all writing →</a>
+    </div>
+  </section>
 
-Senior Data Scientist for Integrity (Fraud) and Payments.
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-copy">{{ about.footer.location }}</div>
+    <div class="footer-socials">
+      {% for link in social %}
+      <a href="{{ link.url }}" title="{{ link.label }}">{% include icon.html name=link.icon %}</a>
+      {% endfor %}
+    </div>
+  </footer>
 
-- Built an **Agentic RAG** system on LangGraph to automate fraud alert investigation, cutting time-to-react from 6hr to <15min; SLM-based routing and semantic caching reduced token usage by 40%.
-- Engineered a multi-tool **Slack agent** that autonomously explains fraud control decisions by retrieving decision logs, control logic, and fraud pattern docs — with context-aware redaction of sensitive thresholds for external users.
-- Developed a **3DS trigger model** (CatBoost + Snorkel weak-supervised learning) that reduced chargeback losses by 94% ($1.4M bottom-line impact) while increasing Payment Success Rate by 3%.
-- Architected Integrity's **anomaly detection platform** routing diverse time-series signals to Prophet/ADTK models, shrinking time-to-detect fraud from 1 week to 6hr.
-- Cut Remittance reactivation spend by 72% using a **causal uplift model** to target only users with a positive incremental response.
-
----
-
-### Etisalat — Senior Data Scientist
-*Dec 2019 – Dec 2021 · Dubai, UAE*
-
-Core member of the 5G Network Intelligence & AI Research Group.
-
-- Developed a **seq2seq LSTM Encoder-Decoder** to forecast traffic demand across 5,000+ 5G cells, reducing power consumption OPEX by 15% with <0.3% traffic loss. Architecture open-sourced as [pytorch-ts](https://github.com/zalandoresearch/pytorch-ts).
-- Reduced on-field drive tests by 50% using **DBSCAN clustering** on crowdsourced user probe data to surface poor-connectivity pockets.
-- Collaborated with **Microsoft** on a Zero-touch 5G configuration initiative, automating site parameter recommendations to cut new site deployment time by up to 60%.
-- Cut network fault resolution time from hours to minutes with an automated diagnostic engine combining time-series anomaly detection and FP-Growth root cause analysis.
-
----
-
-### Unthink AI (YFret Technologies) — Data Scientist
-*Feb 2017 – Dec 2019 · Bangalore, India*
-
-Early engineering hire at an E-commerce Search & Recommendation as a Service startup.
-
-- Built a real-time personalized recommendation engine using **session-context Fasttext embeddings** and Elasticsearch, delivering a 45% CTR uplift and 30% conversion lift on 6M visits/month at <200ms latency.
-- Architected a click-stream data pipeline on **AWS Kinesis, Lambda, S3, and Athena** processing 10M events/month.
-
----
-
-### SAP Labs — Associate Developer
-*Feb 2016 – Feb 2017 · Bangalore, India*
-
-Engineering member of the S/4HANA Sales Cloud team, building CRM and sales cloud apps using SAP UI5.
-
----
-
-## Skills
-
-| Category | Tools & Technologies |
-|---|---|
-| **Agentic & LLM** | LangGraph, LangChain, LlamaIndex, OpenAI SDK, MCP, LangSmith, Weaviate, Ragas |
-| **ML & Deep Learning** | PyTorch, CatBoost, LightGBM, XGBoost, Snorkel, Prophet, ADTK, Hugging Face Transformers, Faiss, CausalML |
-| **Expertise** | Agentic RAG, LLM Evaluation, Search & Ranking, Fraud & Risk Modeling, Anomaly Detection, Time-Series Forecasting, Uplift Modeling, A/B Testing |
-| **Languages** | Python, SQL, PySpark, C++ |
-| **Cloud & Infra** | AWS (SageMaker, Lambda, S3, Athena, Kinesis), Docker, Airflow |
-| **MLOps** | MLflow, W&B, FastAPI, Git, CI/CD |
-
----
-
-## Education
-
-**B.Tech in Information Technology** · SSN College of Engineering, Chennai · 2012–2016
-
----
-
-## Achievements & Publications
-
-- **Solo Silver Medal** — OSIC Pulmonary Fibrosis Progression · Kaggle, Oct 2020
-- **Solo Bronze Medal** — Cassava Leaf Disease Classification · Kaggle, Feb 2021
-- [Encoder-Decoder Model for Multistep Time Series Forecasting Using PyTorch](https://towardsdatascience.com) · Towards Data Science
-- [Similar Images Recommendations using FastAI and Annoy](https://towardsdatascience.com) · Towards Data Science
+</div>

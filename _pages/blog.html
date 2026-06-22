@@ -1,0 +1,42 @@
+---
+permalink: /blog/
+layout: page
+title: "Blog"
+---
+{% assign all_posts = site.data.posts_external | sort: 'date' | reverse %}
+{% assign total = all_posts | size %}
+
+<div class="col-880">
+
+  <!-- Header -->
+  <section class="blog-header">
+    <div class="section-label">
+      <span class="section-label-text">Writing</span>
+      <span class="section-rule"></span>
+      <span class="section-count">{% if total < 10 %}0{{ total }}{% else %}{{ total }}{% endif %} essays</span>
+    </div>
+    <h1>Notes on applied machine learning.</h1>
+    <p>Practical write-ups on time-series, recommendation systems, and the engineering craft behind shipping models — published on Medium.</p>
+  </section>
+
+  <!-- Grid -->
+  <div class="cards-grid">
+    {% for post in all_posts %}
+      <a href="{{ post.url }}" class="card" target="_blank" rel="noopener">
+        <div class="card-thumb-std">
+          {% if post.thumb %}
+            <img src="{{ post.thumb }}" alt="{{ post.title }}" class="card-thumb-img">
+          {% else %}
+            <span class="card-thumb-caption">{{ post.thumb_caption | default: "[ figure ]" }}</span>
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <div class="card-title">{{ post.title }}</div>
+          <div class="card-excerpt">{{ post.excerpt | truncate: 130 }}</div>
+          <div class="card-meta-std">{{ post.source }} · {{ post.date | date: "%Y" }} · {{ post.read_time }} min</div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+
+</div>

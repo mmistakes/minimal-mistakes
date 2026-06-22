@@ -1,4 +1,5 @@
 ---
+published: false
 ---
 /* === DESIGN TOKENS === */
 :root {
@@ -390,7 +391,7 @@ a { color: inherit; text-decoration: none; }
 }
 .card-thumb-featured {
   aspect-ratio: 16/10;
-  background: repeating-linear-gradient(135deg, var(--stripe) 0 2px, transparent 2px 12px);
+  background: var(--surface);
   border-right: 1px solid var(--rule);
   display: flex;
   align-items: flex-end;
@@ -459,21 +460,14 @@ a { color: inherit; text-decoration: none; }
 }
 .card-thumb-std {
   aspect-ratio: 16/9;
-  background: var(--rule);
+  background: repeating-linear-gradient(135deg, var(--stripe) 0 2px, transparent 2px 12px);
   border-bottom: 1px solid var(--rule);
   display: flex;
   align-items: flex-end;
   padding: 14px;
-  overflow: hidden;
 }
 .card-thumb-std .card-thumb-caption {
   font-size: 10px;
-}
-.card-thumb-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 .card-body {
   padding: 24px 24px 26px;

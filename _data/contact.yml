@@ -1,0 +1,33 @@
+header:
+  title: "Let's talk."
+  intro: "The fastest way to reach me is a message on LinkedIn or a direct email. Pick a reason below and it'll set up your email with the right subject line."
+
+email: "gautham.kumaran11@gmail.com"
+
+reasons:
+  - "A job opportunity"
+  - "Consulting or advisory"
+  - "A collaboration"
+  - "Speaking or writing"
+  - "Just saying hello"
+
+linkedin:
+  url: "https://linkedin.com/in/gautham20"
+  handle: "linkedin.com/in/gautham20"
+  title: "Message me on LinkedIn"
+  description: "Best for quick intros, roles, and staying in touch."
+
+elsewhere:
+  - label: "GitHub"
+    url: "https://github.com/gautham20"
+    icon: "github"
+  - label: "Kaggle"
+    url: "https://kaggle.com/gautham20"
+    icon: "kaggle"
+  - label: "Medium"
+    url: "https://medium.com/@gautham20"
+    icon: "medium"
+
+footer:
+  location: "Dubai, UAE · © 2026"
+  reply_time: "Usually replies within a day"

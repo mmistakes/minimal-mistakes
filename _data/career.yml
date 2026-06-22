@@ -1,0 +1,32 @@
+- company: "Careem"
+  role: "Senior Data Scientist II"
+  location: "Dubai"
+  start: "2022"
+  end: "Now"
+  current: true
+  description: "Agentic RAG systems and risk models for Integrity & Payments — cut fraud reaction time from hours to minutes and chargeback losses by 94%."
+
+- company: "Etisalat"
+  role: "Senior Data Scientist"
+  location: "Dubai"
+  start: "2019"
+  end: "2021"
+  current: false
+  description: "Core of the 5G Network Intelligence & AI research group — forecasting demand across 5,000+ cells to cut energy OPEX by 15%."
+
+- company: "Unthink AI"
+  company_sub: "· YFret"
+  role: "Data Scientist"
+  location: "Bangalore"
+  start: "2017"
+  end: "2019"
+  current: false
+  description: "Early hire building real-time e-commerce search & personalization — recommendation engine serving 6M visits/month."
+
+- company: "SAP Labs"
+  role: "Associate Developer"
+  location: "Bangalore"
+  start: "2016"
+  end: "2017"
+  current: false
+  description: "Engineering on the S/4HANA Sales Cloud team — CRM and sales apps with SAP UI5."

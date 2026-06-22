@@ -1,0 +1,19 @@
+- label: "GitHub"
+  url: "https://github.com/gautham20"
+  icon: "github"
+
+- label: "Kaggle"
+  url: "https://kaggle.com/gautham20"
+  icon: "kaggle"
+
+- label: "LinkedIn"
+  url: "https://linkedin.com/in/gautham20"
+  icon: "linkedin"
+
+- label: "Medium"
+  url: "https://medium.com/@gautham20"
+  icon: "medium"
+
+- label: "Email"
+  url: "mailto:gautham.kumaran11@gmail.com"
+  icon: "email"
