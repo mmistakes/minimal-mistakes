@@ -12,9 +12,9 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 [![Minimal Mistakes live preview][2]][1]
 
 [1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
+[2]: docs/screenshot.png (live preview)
 
-![layout examples](screenshot-layouts.png)
+![layout examples](docs/screenshot-layouts.png)
 
 ## Notable features
 
@@ -36,19 +36,19 @@ This theme comes in 11 different skins (in addition to the default one).
 
 | `air`                                                                                                                                                                                 | `contrast`                                                                                                                                                                                           | `dark`                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![air skin](assets/images/air-skin-archive.png)](assets/images/air-skin-archive-large.png) | [![contrast skin](assets/images/contrast-skin-archive.png)](assets/images/contrast-skin-archive-large.png) | [![dark skin](assets/images/dark-skin-archive.png)](assets/images/dark-skin-archive-large.png) |
+| [![air skin](docs/assets/images/air-skin-archive.png)](docs/assets/images/air-skin-archive-large.png) | [![contrast skin](docs/assets/images/contrast-skin-archive.png)](docs/assets/images/contrast-skin-archive-large.png) | [![dark skin](docs/assets/images/dark-skin-archive.png)](docs/assets/images/dark-skin-archive-large.png) |
 
 | `dirt`                                                                                                                                                                                   | `mint`                                                                                                                                                                                   | `sunrise`                                                                                                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![dirt skin](assets/images/dirt-skin-archive.png)](assets/images/dirt-skin-archive-large.png) | [![mint skin](assets/images/mint-skin-archive.png)](assets/images/mint-skin-archive-large.png) | [![sunrise skin](assets/images/sunrise-skin-archive.png)](assets/images/sunrise-skin-archive-large.png) |
+| [![dirt skin](docs/assets/images/dirt-skin-archive.png)](docs/assets/images/dirt-skin-archive-large.png) | [![mint skin](docs/assets/images/mint-skin-archive.png)](docs/assets/images/mint-skin-archive-large.png) | [![sunrise skin](docs/assets/images/sunrise-skin-archive.png)](docs/assets/images/sunrise-skin-archive-large.png) |
 
 | `aqua`                                                                                                                                                                                   | `neon`                                                                                                                                                                                   | `plum`                                                                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![aqua skin](assets/images/aqua-skin-archive.png)](assets/images/aqua-skin-archive-large.png) | [![neon skin](assets/images/neon-skin-archive.png)](assets/images/neon-skin-archive-large.png) | [![plum skin](assets/images/plum-skin-archive.png)](assets/images/plum-skin-archive-large.png) |
+| [![aqua skin](docs/assets/images/aqua-skin-archive.png)](docs/assets/images/aqua-skin-archive-large.png) | [![neon skin](docs/assets/images/neon-skin-archive.png)](docs/assets/images/neon-skin-archive-large.png) | [![plum skin](docs/assets/images/plum-skin-archive.png)](docs/assets/images/plum-skin-archive-large.png) |
 
 | `catppuccin_latte` | `catppuccin_mocha` |
 | --- | --- |
-| ![catppuccin_latte skin](assets/images/catppuccin_latte-skin-archive-large.png) | ![catppuccin_mocha skin](assets/images/catppuccin_mocha-skin-archive-large.png) |
+| ![catppuccin_latte skin](docs/assets/images/catppuccin_latte-skin-archive-large.png) | ![catppuccin_mocha skin](docs/assets/images/catppuccin_mocha-skin-archive-large.png) |
 ## Demo pages
 
 | Name                                            | Description                                                   |
