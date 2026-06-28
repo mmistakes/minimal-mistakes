@@ -174,7 +174,7 @@ $text-alignments: left, right, start, end, center, justify;
 
 .full {
   @include breakpoint($large) {
-    margin-inline-end: -1 * span(2.5 of 12) !important;
+    margin-inline-end: -1 * $right-sidebar-width-narrow !important;
   }
 }
 
