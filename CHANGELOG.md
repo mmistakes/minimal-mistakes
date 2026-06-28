@@ -9,10 +9,13 @@
 - Add title attribute to video iframes for accessibility (#5471)
 - Silence "Sass @import rules are deprecated" warning
 - Allow per-post or per-collection `date_format` values. (#5477)
+- Replace inline style `padding-left` with `padding-inline-start` for RTL support (#5480)
 
-### Documentation
+### Documentation & Maintenance
 
 - Update /docs/javascript/ to reflect changes in `0b8b523`
+- Update bad-pr.yml script from ubuntu-slim to ubuntu-latest (#5483)
+- Use relative paths for README images (#5488)
 
 ## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 

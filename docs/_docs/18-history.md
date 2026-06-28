@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2026-04-30T01:55:45+08:00'
+last_modified_at: '2026-06-28T19:52:07+08:00'
 toc: false
 ---
 
@@ -24,10 +24,13 @@ toc: false
 - Add title attribute to video iframes for accessibility [#5471](https://github.com/mmistakes/minimal-mistakes/issues/5471)
 - Silence "Sass @import rules are deprecated" warning
 - Allow per-post or per-collection `date_format` values. [#5477](https://github.com/mmistakes/minimal-mistakes/issues/5477)
+- Replace inline style `padding-left` with `padding-inline-start` for RTL support [#5480](https://github.com/mmistakes/minimal-mistakes/issues/5480)
 
-### Documentation
+### Documentation & Maintenance
 
 - Update /docs/javascript/ to reflect changes in `0b8b523`
+- Update bad-pr.yml script from ubuntu-slim to ubuntu-latest [#5483](https://github.com/mmistakes/minimal-mistakes/issues/5483)
+- Use relative paths for README images [#5488](https://github.com/mmistakes/minimal-mistakes/issues/5488)
 
 ## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 
