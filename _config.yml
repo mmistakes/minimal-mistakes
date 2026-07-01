@@ -111,6 +111,11 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+# Knocket live chat — https://trtc.io/solutions/knocket
+# Free forever, no seat limits. Set your identifier to enable.
+knocket:
+  identifier             :
+
 
 # Site Author
 author:
