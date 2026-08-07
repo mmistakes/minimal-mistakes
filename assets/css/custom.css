@@ -31,3 +31,29 @@ code, pre {
   color: #dddddd !important;
   background-color: #111111 !important;
 }
+
+/* AI Feed */
+.ai-feed-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ai-feed-item {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #333333;
+}
+
+.ai-feed-source {
+  display: inline-block;
+  min-width: 9em;
+  font-size: 0.85em;
+  color: #999999 !important;
+  text-transform: uppercase;
+}
+
+.ai-feed-date {
+  display: inline-block;
+  min-width: 6em;
+  font-size: 0.85em;
+  color: #777777 !important;
+}

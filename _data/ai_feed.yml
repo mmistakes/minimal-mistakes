@@ -1,0 +1,305 @@
+- source: arXiv (cs.AI)
+  title: 'Agentic Nesting: A New Methodology for Existing Enterprise Application Integration
+    and Services'
+  link: https://arxiv.org/abs/2608.05159
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'The Ignition Index: Measuring Global Workspace Dynamics in Language Models'
+  link: https://arxiv.org/abs/2608.05160
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'Woodpecker Distillation: Weak Models Diagnose Reasoning Bugs in Strong Models'
+  link: https://arxiv.org/abs/2608.05168
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'From Continuous Predictors to Clinical Thresholds: Early Evidence on Performance
+    Trade-offs of Guideline-Based Categorisation for Ischaemic Stroke Outcome Prediction'
+  link: https://arxiv.org/abs/2608.05203
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse'
+  link: https://arxiv.org/abs/2608.05204
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'Abstract Event Causal Rules: Induction and Application'
+  link: https://arxiv.org/abs/2608.05205
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'Otter: A Time-Aware, History-Conditioned Human Chess AI'
+  link: https://arxiv.org/abs/2608.05206
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search
+    Agents'
+  link: https://arxiv.org/abs/2608.05212
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'PD-GS: Phoneme-Driven 3DGS for Audio-Driven Talking Heads'
+  link: https://arxiv.org/abs/2608.05218
+  date: '2026-08-07'
+- source: arXiv (cs.AI)
+  title: 'When Privileged Guidance Misaligns: State-Matched Routing and Contextualized
+    Self-Distillation for Multi-Turn Agents'
+  link: https://arxiv.org/abs/2608.05219
+  date: '2026-08-07'
+- source: OpenAI
+  title: How HSP GRUPPE builds AI capabilities for tax advisory
+  link: https://openai.com/index/hsp-gruppe
+  date: '2026-08-07'
+- source: Anthropic
+  title: Improving Fable 5's biology safeguards
+  link: https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
+  date: '2026-08-07'
+- source: Hugging Face Blog
+  title: Baseten on Hugging Face Inference Providers 🔥
+  link: https://huggingface.co/blog/baseten
+  date: '2026-08-06'
+- source: OpenAI
+  title: Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for
+    free users
+  link: https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt
+  date: '2026-08-06'
+- source: OpenAI
+  title: Working with the American Psychological Association on youth mental health
+    and AI
+  link: https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai
+  date: '2026-08-06'
+- source: OpenAI
+  title: 'From asking to doing: How the world is putting ChatGPT to work'
+  link: https://openai.com/index/how-the-world-is-putting-chatgpt-to-work
+  date: '2026-08-06'
+- source: Google DeepMind
+  title: 'WeatherNext: AI model achieves breakthrough in forecasting cyclones'
+  link: https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
+  date: '2026-08-06'
+- source: Hugging Face Papers
+  title: 'MameLoshnLM: Yiddish Language Model and Evaluation Benchmark'
+  link: https://huggingface.co/papers/2608.05850
+  date: '2026-08-05'
+- source: Hugging Face Papers
+  title: Continual Learning in Transition
+  link: https://huggingface.co/papers/2608.06216
+  date: '2026-08-05'
+- source: Hugging Face Papers
+  title: Task-Conditional Flow Matching for Balanced Multilingual Text Embedding Adaptation
+  link: https://huggingface.co/papers/2608.05785
+  date: '2026-08-05'
+- source: Hugging Face Papers
+  title: 'From Economic Agents to Agentic Economies: A Systems Blueprint for Economic
+    World Models'
+  link: https://huggingface.co/papers/2608.06020
+  date: '2026-08-05'
+- source: Hugging Face Papers
+  title: 'MASS: Multiplayer World Models with Authoritative Shared State'
+  link: https://huggingface.co/papers/2608.06257
+  date: '2026-08-05'
+- source: Hugging Face Papers
+  title: 'EffectLearner: World-Aware Object-Effect Reasoning for Real-World Video
+    Object Removal'
+  link: https://huggingface.co/papers/2608.05565
+  date: '2026-08-05'
+- source: Hugging Face Blog
+  title: Deploy local agents everywhere with LFM2.5-2.6B
+  link: https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b
+  date: '2026-08-04'
+- source: OpenAI
+  title: Third-party cyber evaluations involving OpenAI models
+  link: https://openai.com/index/third-party-cyber-evaluations-involving-openai-models
+  date: '2026-08-04'
+- source: OpenAI
+  title: New ways to learn and teach with ChatGPT Work and Codex
+  link: https://openai.com/index/learn-teach-chatgpt-work-codex
+  date: '2026-08-04'
+- source: Hugging Face Papers
+  title: 'Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding
+    Generation for Modern Greek across Specialist Domains'
+  link: https://huggingface.co/papers/2608.05138
+  date: '2026-08-04'
+- source: Hugging Face Papers
+  title: 'ContextMaster: Interactive Multi-Shot Video Creation via Fixed-Budget Sparse
+    Context Routing'
+  link: https://huggingface.co/papers/2608.04956
+  date: '2026-08-04'
+- source: Hugging Face Papers
+  title: 'Invisible Shortcuts: Why Vision Encoders Know Your Camera'
+  link: https://huggingface.co/papers/2608.05424
+  date: '2026-08-04'
+- source: Anthropic
+  title: Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs
+    Officer
+  link: https://www.anthropic.com/news/tino-cuellar
+  date: '2026-08-04'
+- source: OpenAI
+  title: Apple is getting this wrong
+  link: https://openai.com/index/apple-is-getting-this-wrong
+  date: '2026-08-03'
+- source: OpenAI
+  title: How we built a realtime system for responsive voice AI in six months
+  link: https://openai.com/index/continuous-voice-interaction-with-gpt-live
+  date: '2026-08-03'
+- source: OpenAI
+  title: Circles powers telco personalization with OpenAI technology
+  link: https://openai.com/index/circles
+  date: '2026-08-03'
+- source: OpenAI
+  title: Ten advances in mathematics and theoretical computer science
+  link: https://openai.com/index/ten-advances-in-mathematics
+  date: '2026-08-01'
+- source: Hugging Face Blog
+  title: 'GPU Management: Why Idle GPUs Are the New Grounded Aircraft'
+  link: https://huggingface.co/blog/Dharma-AI/gpu-management
+  date: '2026-07-30'
+- source: Google DeepMind
+  title: 'Gemini Robotics ER 2: powering robotics with video understanding, task orchestration,
+    and multi-robot collaboration'
+  link: https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/
+  date: '2026-07-30'
+- source: Anthropic
+  title: Investigating three real-world incidents in our cybersecurity evaluations
+  link: https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals
+  date: '2026-07-30'
+- source: Google DeepMind
+  title: We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality,
+    lyrics, vocals, and creative control
+  link: https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/
+  date: '2026-07-29'
+- source: Hugging Face Papers
+  title: 'OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use
+    Reward Models'
+  link: https://huggingface.co/papers/2607.28609
+  date: '2026-07-29'
+- source: Hugging Face Blog
+  title: 'The OlmoEarth Platform: Geospatial inference at planetary scale'
+  link: https://huggingface.co/blog/allenai/olmoearth-infrastructure
+  date: '2026-07-28'
+- source: Google DeepMind
+  title: Gemini Robotics 2 brings whole body intelligence to robots
+  link: https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+  date: '2026-07-28'
+- source: Hugging Face Blog
+  title: 'NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical
+    Robotics'
+  link: https://huggingface.co/blog/nvidia/cosmos-h-dreams
+  date: '2026-07-27'
+- source: Hugging Face Blog
+  title: 'Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July
+    2026 Incident'
+  link: https://huggingface.co/blog/agent-intrusion-technical-timeline
+  date: '2026-07-27'
+- source: Anthropic
+  title: Our position on open-weights models
+  link: https://www.anthropic.com/news/position-open-weights-models
+  date: '2026-07-27'
+- source: Anthropic
+  title: Cognizant and Anthropic expand their partnership to bring Claude to enterprise
+    clients
+  link: https://www.anthropic.com/news/cognizant-anthropic
+  date: '2026-07-27'
+- source: Anthropic
+  title: Introducing Claude Opus 5
+  link: https://www.anthropic.com/news/claude-opus-5
+  date: '2026-07-24'
+- source: Hugging Face Blog
+  title: Bringing Nunchaku 4-bit Diffusion Inference to Diffusers
+  link: https://huggingface.co/blog/nunchaku-diffusers
+  date: '2026-07-23'
+- source: Google DeepMind
+  title: 'Accelerating the frontiers of scientific discovery: Google’s $40M commitment
+    to the Genesis Mission'
+  link: https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/
+  date: '2026-07-22'
+- source: Anthropic
+  title: A research agenda for the Economic Futures Research Fund
+  link: https://www.anthropic.com/news/economic-futures-research-fund-agenda
+  date: '2026-07-22'
+- source: Anthropic
+  title: Ask Claude about the Anthropic Economic Index
+  link: https://www.anthropic.com/news/anthropic-economic-index-connector
+  date: '2026-07-22'
+- source: Hugging Face Blog
+  title: 'Grabette: an open system to record robot-manipulation data'
+  link: https://huggingface.co/blog/grabette
+  date: '2026-07-21'
+- source: Google DeepMind
+  title: Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber
+  link: https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/
+  date: '2026-07-21'
+- source: Anthropic
+  title: Anthropic is donating another $20 million to Public First Action
+  link: https://www.anthropic.com/news/donation-public-first-action
+  date: '2026-07-21'
+- source: Anthropic
+  title: Apply for Anthropic’s AI for Science rare disease research grants
+  link: https://www.anthropic.com/news/rare-disease-research-grants
+  date: '2026-07-20'
+- source: Google DeepMind
+  title: Introducing Gemini 3.5 Flash Cyber
+  link: https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/
+  date: '2026-07-17'
+- source: Hugging Face Blog
+  title: Newer Models, Same Advantage
+  link: https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages
+  date: '2026-07-16'
+- source: Hugging Face Blog
+  title: Security incident disclosure — July 2026
+  link: https://huggingface.co/blog/security-incident-july-2026
+  date: '2026-07-16'
+- source: Google DeepMind
+  title: Our approach to bioresilience
+  link: https://deepmind.google/blog/our-approach-to-bioresilience/
+  date: '2026-07-16'
+- source: Google DeepMind
+  title: Empowering India’s next generation of innovators with ATL Saathi
+  link: https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/
+  date: '2026-07-13'
+- source: Google DeepMind
+  title: Google DeepMind and A24 announce first-of-its-kind research partnership
+  link: https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/
+  date: '2026-07-03'
+- source: The Batch
+  title: Search The Batch
+  link: https://www.deeplearning.ai/the-batch/search
+  date: ''
+- source: The Batch
+  title: Opus Outshines Even Fable, Inside the Hugging Face Hack, AI Companies Spend
+    Big for Compute
+  link: https://www.deeplearning.ai/the-batch/issue-364
+  date: ''
+- source: The Batch
+  title: Introducing DeepLearning.AI Pro
+  link: https://www.deeplearning.ai/the-batch/introducing-deeplearning-ai-pro
+  date: ''
+- source: The Batch
+  title: Reinforcement Learning Heats Up, White House Orders Muscular AI Policy, Computer
+    Use Gains Momentum, Fine Control of Fine-Tuning
+  link: https://www.deeplearning.ai/the-batch/issue-286
+  date: ''
+- source: The Batch
+  title: 'DeepSeek Sharpens Its Reasoning: DeepSeek-R1, an affordable rival to OpenAI’s
+    o1'
+  link: https://www.deeplearning.ai/the-batch/deepseek-r1-an-affordable-rival-to-openais-o1
+  date: ''
+- source: The Batch
+  title: Kimi K3 Redraws the Open Frontier, Muse Spark 1.1 Undercuts Competitors,
+    Cloudflare Moves to Cut Off Crawlers
+  link: https://www.deeplearning.ai/the-batch/issue-363
+  date: ''
+- source: The Batch
+  title: AI Overviews Land Google In Hot Water, GPT-Live Puts Reasoning in the Background,
+    How to Tell If Your Model is Manipulative
+  link: https://www.deeplearning.ai/the-batch/issue-362
+  date: ''
+- source: The Batch
+  title: Restoration of Claude Fable 5, Gemini's Video Dev Engine, DeepSeek Speeds
+    Up Speculative Decoding
+  link: https://www.deeplearning.ai/the-batch/issue-361
+  date: ''
+- source: The Batch
+  title: OpenAI’s GPT-5.6 Family, New Ways to Train Robots, Models Invoking Models
+  link: https://www.deeplearning.ai/the-batch/issue-360
+  date: ''
+- source: The Batch
+  title: A New Generation Studies AI, Apple's Recipe for On-Device Models, GLM5.2
+    Tackles Open-Ended Problems
+  link: https://www.deeplearning.ai/the-batch/issue-359
+  date: ''

@@ -8,6 +8,8 @@ main:
     url: /projects/
   - title: "Toolbox"
     url: /toolbox/
+  - title: "AI Feed"
+    url: /ai-feed/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
