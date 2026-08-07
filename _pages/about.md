@@ -28,6 +28,9 @@ short description about team
 <div style="text-align: center;">
 <a href="https://partner3-website.com" target="_blank">
 <img src="{{ site.baseurl }}/assets/logos/CovAID.png" alt="Partner 3" style="width: 100%; aspect-ratio: 1 / 1; object-fit: contain; border: 1px solid #eee; border-radius: 8px; padding: 10px;">
+
+
+  
 </a>
 <p style="margin-top: 10px; font-weight: 600;">Partner Three</p>
 </div>
