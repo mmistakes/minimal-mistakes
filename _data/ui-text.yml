@@ -528,6 +528,7 @@ de: &DEFAULT_DE
   search_placeholder_text    : "Suchbegriff eingeben..."
   search_algolia_no_results  :
   results_found              : "Ergebnis(se) gefunden"
+  back_to_top                : "Nach oben"
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
