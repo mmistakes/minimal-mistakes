@@ -16,9 +16,29 @@
 {% endcapture %}
 {% assign video_src = video_src | strip %}
 
+{% capture video_title %}
+  {% if include.title %}
+    {{ include.title }}
+  {% else %}
+    {% case video_provider %}
+    {% when "vimeo" %}
+      Vimeo video player
+    {% when "youtube" %}
+      YouTube video player
+    {% when "google-drive" %}
+      Google Drive video player
+    {% when "bilibili" %}
+      Bilibili video player
+    {% else %}
+      Video player
+    {% endcase %}
+  {% endif %}
+{% endcapture %}
+{% assign video_title = video_title | strip %}
+
 <!-- Courtesy of embedresponsively.com -->
 {% unless video_src == "" %}
   <div class="responsive-video-container">
-    <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="{{ video_src }}" title="{{ video_title }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 {% endunless %}

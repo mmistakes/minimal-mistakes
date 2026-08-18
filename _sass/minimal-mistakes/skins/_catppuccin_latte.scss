@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Catppuccin Latte skin
+   ========================================================================== */
+
+/* Colors */
+$palette: (
+  "latte": (
+    "rosewater": #dc8a78,
+    "flamingo": #dd7878,
+    "pink": #ea76cb,
+    "mauve": #8839ef,
+    "red": #d20f39,
+    "maroon": #e64553,
+    "peach": #fe640b,
+    "yellow": #df8e1d,
+    "green": #40a02b,
+    "teal": #179299,
+    "sky": #04a5e5,
+    "sapphire": #209fb5,
+    "blue": #1e66f5,
+    "lavender": #7287fd,
+    "text": #4c4f69,
+    "subtext1": #5c5f77,
+    "subtext0": #6c6f85,
+    "overlay2": #7c7f93,
+    "overlay1": #8c8fa1,
+    "overlay0": #9ca0b0,
+    "surface2": #acb0be,
+    "surface1": #bcc0cc,
+    "surface0": #ccd0da,
+    "crust": #dce0e8,
+    "mantle": #e6e9ef,
+    "base": #eff1f5,
+  )
+);
+
+/*
+   Colors
+   ========================================================================== */
+
+$background-color: map-get(map-get($palette, "latte"), "base") !default;
+$text-color: map-get(map-get($palette, "latte"), "text") !default;
+$primary-color: map-get(map-get($palette, "latte"), "red") !default;
+
+$border-color: transparent !default;
+$code-background-color: mix2(#000, $background-color, 15%) !default;
+$code-background-color-dark: mix(#000, $background-color, 20%) !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
+$footer-background-color: map-get(map-get($palette, "latte"), "mantle") !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+
+$gray: map-get(map-get($palette, "latte"), "crust") !default;
+$dark-gray: mix(#000, $gray, 50%) !default;
+$darker-gray: mix(#000, $gray, 60%) !default;
+$light-gray: mix(#fff, $gray, 50%) !default;
+$lighter-gray: mix(#fff, $gray, 90%) !default;
+
+$code-background-color: #fafafa !default;
+$code-background-color-dark: $light-gray !default;
+$text-color: map-get(map-get($palette, "latte"), "text") !default;
+$muted-text-color: mix(#fff, $text-color, 20%) !default;
+$border-color: $lighter-gray !default;
+$form-background-color: $lighter-gray !default;
+
+$primary-color: map-get(map-get($palette, "latte"), "flamingo") !default;
+$success-color: map-get(map-get($palette, "latte"), "green") !default;
+$warning-color: map-get(map-get($palette, "latte"), "peach") !default;
+$danger-color: map-get(map-get($palette, "latte"), "red") !default;
+$info-color: map-get(map-get($palette, "latte"), "sky") !default;
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
+
+/* links */
+$link-color: mix(#000, $info-color, 20%) !default;
+$link-color-hover: mix(#000, $link-color, 25%) !default;
+$link-color-visited: mix(#fff, $link-color, 15%) !default;
+$masthead-link-color: $primary-color !default;
+$masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
+$navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}

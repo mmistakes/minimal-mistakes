@@ -1,42 +1,37 @@
 ---
 ---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+{% include copyright.html %}
+<html lang="{{ locale | replace: '_', '-' | default: 'en' }}" class="no-js" dir="{{ page.direction | default: layout.direction | default: site.direction | default: 'ltr' }}">
   <head>
-    {% include head.html %}
+    {% include head.html locale=locale %}
     {% include head/custom.html %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
+    {% include_cached skip-links.html locale=locale %}
+    {% include_cached masthead.html locale=locale %}
 
     <div class="initial-content">
       {{ content }}
+      {% include after-content.html %}
     </div>
 
     {% if site.search == true %}
       <div class="search-content">
-        {% include_cached search/search_form.html %}
+        {% include_cached search/search_form.html locale=locale %}
       </div>
     {% endif %}
 
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
-        {% include_cached footer.html %}
+        {% include_cached footer.html locale=locale %}
       </footer>
     </div>
 
-    {% include scripts.html %}
-
+    {% include scripts.html locale=locale %}
   </body>
 </html>

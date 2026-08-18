@@ -13,8 +13,7 @@
 
   &__inner-wrap {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     padding: 1em;
     max-width: 100%;
     display: -webkit-box;
@@ -59,17 +58,16 @@
 }
 
 .masthead__menu {
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+  float: inline-start;
+  margin-inline: 0;
   width: 100%;
   clear: both;
 
   .site-nav {
-    margin-left: 0;
+    margin-inline-start: 0;
 
     @include breakpoint($small) {
-      float: right;
+      float: inline-end;
     }
   }
 
@@ -87,7 +85,7 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-inline-end: 2em;
     font-weight: 700;
   }
 }

@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Catppuccin Mocha skin
+   ========================================================================== */
+
+/* Colors */
+$palette: (
+  "mocha": (
+    "rosewater": #f5e0dc,
+    "flamingo": #f2cdcd,
+    "pink": #f5c2e7,
+    "mauve": #cba6f7,
+    "red": #f38ba8,
+    "maroon": #eba0ac,
+    "peach": #fab387,
+    "yellow": #f9e2af,
+    "green": #a6e3a1,
+    "teal": #94e2d5,
+    "sky": #89dceb,
+    "sapphire": #74c7ec,
+    "blue": #89b4fa,
+    "lavender": #b4befe,
+    "text": #cdd6f4,
+    "subtext1": #bac2de,
+    "subtext0": #a6adc8,
+    "overlay2": #9399b2,
+    "overlay1": #7f849c,
+    "overlay0": #6c7086,
+    "surface2": #585b70,
+    "surface1": #45475a,
+    "surface0": #313244,
+    "base": #1e1e2e,
+    "mantle": #181825,
+    "crust": #11111b,
+  )
+);
+
+$background-color: map-get(map-get($palette, "mocha"), "base") !default;
+$text-color: map-get(map-get($palette, "mocha"), "text") !default;
+$primary-color: map-get(map-get($palette, "mocha"), "red") !default;
+
+$border-color: transparent !default;
+$code-background-color: mix(#000, $background-color, 15%) !default;
+$code-background-color-dark: mix(#000, $background-color, 20%) !default;
+$form-background-color: mix(#000, $background-color, 15%) !default;
+$footer-background-color: map-get(map-get($palette, "mocha"), "mantle") !default;
+$link-color: $primary-color !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
+/* neon syntax highlighting (base16) */
+$base00: #1e1e2e !default;
+$base01: #181825 !default;
+$base02: #313244 !default;
+$base03: #45475a !default;
+$base04: #585b70 !default;
+$base05: #cdd6f4 !default;
+$base06: #f5e0dc !default;
+$base07: #b4befe !default;
+$base08: #f38ba8 !default;
+$base09: #fab387 !default;
+$base0a: #f9e2af !default;
+$base0b: #a6e3a1 !default;
+$base0c: #94e2d5 !default;
+$base0d: #89b4fa !default;
+$base0e: #cba6f7 !default;
+$base0f: #f2cdcd !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+/* next/previous buttons */
+.pagination--pager {
+  color: $text-color;
+  background-color: $primary-color;
+  border-color: transparent;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
+
+
+::selection {
+  background:  $primary-color !important;
+  color: $background-color !important;
+}
