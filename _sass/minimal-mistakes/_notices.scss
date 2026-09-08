@@ -46,10 +46,10 @@
   }
 
   a {
-    color: mix(#000, $notice-color, 10%);
+    color: mix($text-color, $notice-color, 10%);
 
     &:hover {
-      color: mix(#000, $notice-color, 50%);
+      color: mix($text-color, $notice-color, 50%);
     }
   }
 
