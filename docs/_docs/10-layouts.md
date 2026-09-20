@@ -648,7 +648,7 @@ Multiple blocks can also be added by following the example below:
 ```yaml
 sidebar:
   - title: "Title"
-    image: http://placehold.it/350x250
+    image: https://placeholder.photo/350x250
     image_alt: "image"
     text: "Some text here."
   - title: "Another Title"
