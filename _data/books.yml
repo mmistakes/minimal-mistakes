@@ -21,6 +21,13 @@
   group_by: part
   open: false
 
+- title: "Clean Code"
+  author: "Robert C. Martin"
+  collection: cleancode
+  sort_by: chapter
+  group_by: part
+  open: false
+
 - title: "Design Patterns — Study Guide"
   author: "original guide to the 23 GoF patterns"
   collection: guides
