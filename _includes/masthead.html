@@ -1,15 +1,34 @@
 {% assign locale = include.locale | default: site.locale %}
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
+{% assign masthead_lang = page.lang %}
+{% unless masthead_lang %}
+  {% assign masthead_url_parts = page.url | split: '/' %}
+  {% if masthead_url_parts[1] == 'id' or masthead_url_parts[1] == 'en' or masthead_url_parts[1] == 'ja' %}
+    {% assign masthead_lang = masthead_url_parts[1] %}
+  {% endif %}
+{% endunless %}
+
+{% case masthead_lang %}
+  {% when "id" %}
+    {% assign masthead_title = "Beranda" %}
+  {% when "en" %}
+    {% assign masthead_title = "Home" %}
+  {% when "ja" %}
+    {% assign masthead_title = "ホーム" %}
+  {% else %}
+    {% assign masthead_title = site.masthead_title | default: site.title %}
+{% endcase %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ masthead_title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title | escape_once | strip }}
+          {{ masthead_title | escape_once | strip }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
         </a>
         <ul class="visible-links">

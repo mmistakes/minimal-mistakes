@@ -10,6 +10,12 @@ Aturan:
 
 ---
 
+## #17 | judul situs masthead multibahasa (id, en, ja)
+- Tanggal: 2026-10-03
+- File: `HISTORY.md`, `_includes/masthead.html`
+- Alasan: menyesuaikan teks judul situs yang tampil di masthead (`site-title` dan alt `site-logo`) agar dinamis mengikuti bahasa halaman (`page.lang` dengan fallback deteksi prefix URL: `Beranda` untuk `id`, `Home` untuk `en`, `ホーム` untuk `ja`). Halaman tanpa prefix bahasa (seperti `404.html` dan `index.html`) tetap memakai fallback `site.masthead_title | default: site.title` ("Main Page") sehingga tidak kosong. Nilai `title` di `_config.yml` tidak diubah, tidak ada penambahan CSS atau warna hardcode, masthead tetap dipanggil via `include` (bukan `include_cached`), dan navigasi ganti bahasa tidak terganggu.
+- Catatan: render belum diverifikasi lokal (Jekyll tidak terpasang). Tag `<title>` di tab browser (`_includes/seo.html`) juga menggunakan `site.title` dan dilaporkan ke pemilik tanpa diubah.
+
 ## #16 | buat halaman 404 tiga bahasa (id, en, ja)
 - Tanggal: 2026-10-03
 - File: `404.html`, `CATATAN.md`, `HISTORY.md`
