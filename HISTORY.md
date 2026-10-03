@@ -10,6 +10,12 @@ Aturan:
 
 ---
 
+## #21 | sembunyikan easter egg Kanade dari mesin pencari
+- Tanggal: 2026-10-04
+- File: `HISTORY.md`, `_config.yml`
+- Alasan: menyembunyikan halaman easter egg Kanade dari mesin pencari. Telah diverifikasi bahwa keempat halaman HTML murni (`奏/index.html`, `奏/id/index.html`, `奏/en/index.html`, `奏/ja/index.html`) sudah memiliki tag `<meta name="robots" content="noindex, nofollow">`. Karena plugin `jekyll-sitemap` aktif, ditambahkan entri `defaults` pada `_config.yml` dengan scope path `奏` dan `values: sitemap: false` untuk mengeluarkan halaman-halaman tersebut dari sitemap tanpa harus menambahkan front matter pada file HTML murni.
+
+
 ## #20 | judul tab, hreflang, dan deskripsi per bahasa
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`, `_includes/seo.html`, `_layouts/default.html`, `_pages/en-main.md`, `_pages/id-main.md`, `_pages/ja-main.md`
