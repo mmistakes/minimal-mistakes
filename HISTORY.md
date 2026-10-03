@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #19 | aturan commit dan push mandiri untuk agent di CATATAN.md
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`
+- Alasan: memperbarui aturan di bagian "Aturan untuk agent" pada CATATAN.md agar agent melakukan commit dan push secara mandiri menggunakan alur 7 langkah (verifikasi git status, pembaruan HISTORY.md, staging per nama file tanpa git add -A atau ., commit lengkap dengan trailer Co-authored-by Claude dan Gemini, push ke branch aktif tanpa force push atau perubahan branch/config, penghentian dan pelaporan saat error, serta pelaporan file yang diubah dan hash commit di akhir tugas). Menghapus kalimat lama yang bertentangan terkait verifikasi lama, larangan commit dan push bagi agent, serta saran pesan commit untuk pemilik.
+
 ## #18 | hapus nama situs dari teks footer
 - Tanggal: 2026-10-03
 - File: `HISTORY.md`, `_includes/footer.html`
