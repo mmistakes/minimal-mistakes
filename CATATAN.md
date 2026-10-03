@@ -97,7 +97,7 @@ Aturan mapping:
 - Jangan ubah file di luar tugas.
 - Di akhir, kabari file apa saja yang diubah.
 - Di akhir tugas, tambahkan satu entri di `HISTORY.md` (paling atas): nomor, judul singkat, tanggal, file yang diubah, alasan. Jangan ubah entri lama. Kalau tidak yakin tanggalnya, tulis "tidak tercatat", jangan menebak.
-- Sebelum menulis daftar file di entri HISTORY.md, verifikasi dengan `git show <commit-hash> --name-only --oneline`. Hanya file yang benar-benar ada di commit yang boleh ditulis. Kalau commit hash tidak diketahui, tulis "tidak tercatat" untuk daftar file.
+- Sebelum menulis daftar file di entri HISTORY.md, jalankan `git status --short` dan tulis hanya file yang muncul di sana. Jangan commit dan jangan push, itu dikerjakan pemilik. Kalau ada file yang muncul di status tapi bukan bagian dari tugas ini, laporkan ke pemilik, jangan dimasukkan ke entri. Kalau daftar file tidak diketahui, tulis "tidak tercatat".
 - Aturan tema:
   - Layout halaman bebas dan boleh berbeda-beda. Yang wajib sama di semua halaman hanya palet warnanya (palet Kanade).
   - Palet tersedia sebagai CSS custom properties (`:root { --kanade-... }`) lewat `assets/css/kanade-palette.css` (hasil kompilasi Jekyll dari `assets/css/kanade-palette.scss`). File skin dan semua halaman mengambil warna dari sini.

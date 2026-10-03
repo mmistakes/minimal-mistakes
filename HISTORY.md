@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #7 | perbaiki aturan verifikasi file
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`
+- Alasan: mengganti aturan verifikasi daftar file dari `git show` menjadi `git status --short` di CATATAN.md karena commit dan push dikerjakan oleh pemilik (belum ada commit saat agent selesai).
+
 ## #6 | kerangka easter egg Kanade
 - Tanggal: 2026-09-21
 - File: `奏/index.html`, `奏/id/index.html`, `奏/en/index.html`, `奏/ja/index.html`, `_pages/id-main.md`, `_pages/en-main.md`, `_pages/ja-main.md`, `CATATAN.md`
