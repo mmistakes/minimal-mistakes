@@ -83,7 +83,7 @@ Aturan mapping:
 - [x] Halaman tujuan per bahasa
 - [x] Tombol ganti bahasa per bahasa
 - [x] Redirect otomatis sesuai bahasa browser
-- [ ] Isi HOME (ringkasan diri, motto 3E sebagai link, dua bagian buka-tutup)
+- [x] Isi HOME (ringkasan diri, motto 3E sebagai link, dua bagian buka-tutup)
 - [ ] Halaman 3E
 - [ ] Halaman About (latar belakang, pengalaman hidup, CV)
 - [ ] Halaman Contact

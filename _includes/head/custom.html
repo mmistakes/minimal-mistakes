@@ -25,6 +25,48 @@
   opacity: 0.5;
   outline: none;
 }
+
+/* HOME: motto 3E sebagai link ke halaman 3E */
+.home-motto {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.home-motto a {
+  color: var(--kanade-text);
+  text-decoration: underline dotted var(--kanade-accent);
+  text-underline-offset: 0.25em;
+  transition: color 0.2s ease;
+}
+.home-motto a::after {
+  content: " →";
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.home-motto a:hover,
+.home-motto a:focus-visible {
+  color: var(--kanade-accent);
+  text-decoration-style: solid;
+}
+.home-motto a:hover::after,
+.home-motto a:focus-visible::after {
+  opacity: 1;
+}
+
+/* HOME: bagian buka-tutup portofolio */
+.home-portfolio {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border: 1px solid var(--kanade-accent);
+  border-radius: 4px;
+}
+.home-portfolio summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+.home-portfolio summary:hover,
+.home-portfolio summary:focus-visible {
+  color: var(--kanade-accent);
+}
 </style>
 
 <!-- end custom head snippets -->

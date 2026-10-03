@@ -10,6 +10,12 @@ Aturan:
 
 ---
 
+## #8 | isi HOME (id, en, ja)
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`, `_includes/head/custom.html`, `_pages/en-main.md`, `_pages/id-main.md`, `_pages/ja-main.md`
+- Alasan: mengisi HOME di tiga bahasa dengan isi yang sama: nama lengkap + ringkasan (placeholder [TEKS DARI MIZO]), motto 3E sebagai link (href sementara `#`, ada tooltip `title` dan perubahan warna/garis bawah + panah saat hover), serta dua bagian buka-tutup `<details markdown="1">` (Main Portfolio 3 item, Additional Portfolio 9 item, belum ada link karena slug belum ditentukan). CSS baru di `_includes/head/custom.html` hanya memakai `--kanade-text` dan `--kanade-accent`. Salam pembuka tidak diubah.
+- Catatan: render belum diverifikasi lokal (Ruby/Jekyll tidak terpasang di mesin agent). Cek tampilan setelah push.
+
 ## #7 | perbaiki aturan verifikasi file
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`
