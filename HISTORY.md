@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #13 | link Medium dan Substack di halaman Writing (id, en, ja)
+- Tanggal: 2026-10-03
+- File: `HISTORY.md`, `_pages/en-portfolio-writing.md`, `_pages/id-portfolio-writing.md`, `_pages/ja-portfolio-writing.md`
+- Alasan: menambahkan dua tombol link ke halaman profil publik Medium dan Substack pada halaman portofolio Writing di tiga bahasa (id, en, ja) tepat di bawah teks placeholder [TEKS DARI MIZO]. Menggunakan struktur dan class yang sama dengan HOME (`ul.home-links` > `a.home-btn`), urutan Medium lalu Substack, dibuka di tab baru (`target="_blank" rel="noopener noreferrer"`), serta memanfaatkan styling yang sudah ada di `_includes/head/custom.html` tanpa penambahan CSS atau style inline.
+
 ## #12 | siapkan verifikasi domain Discord lewat HTTPS
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`, `_config.yml`, `.well-known/discord`
