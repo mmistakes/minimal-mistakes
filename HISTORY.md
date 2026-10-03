@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #18 | hapus nama situs dari teks footer
+- Tanggal: 2026-10-03
+- File: `HISTORY.md`, `_includes/footer.html`
+- Alasan: menghapus nama situs (dan tautan site.copyright/site.title) dari teks copyright di footer sehingga teks hanya menampilkan rentang tahun hak cipta diikuti dengan teks "Powered by Jekyll & Minimal Mistakes" ("© 2013 - 2026. Powered by Jekyll & Minimal Mistakes."). Rentang tahun dan cara perhitungannya tidak diubah, tautan Jekyll dan Minimal Mistakes dipertahankan, tanda baca titik diletakkan tepat setelah tahun tanpa spasi berlebih, teks footer tetap sama di semua bahasa, serta tidak ada penambahan CSS atau warna hardcode.
+
 ## #17 | judul situs masthead multibahasa (id, en, ja)
 - Tanggal: 2026-10-03
 - File: `HISTORY.md`, `_includes/masthead.html`
