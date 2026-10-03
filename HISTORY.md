@@ -10,6 +10,12 @@ Aturan:
 
 ---
 
+## #10 | tombol link HOME ke semua sub-halaman (id, en, ja)
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`, `_includes/head/custom.html`, `_pages/en-main.md`, `_pages/id-main.md`, `_pages/ja-main.md`
+- Alasan: menghubungkan HOME ke halaman di mapping. Motto 3E sekarang ke `/{lang}/3e/` (tooltip dan efek hover tidak diubah). Isi dua `<details markdown="1">` diganti daftar HTML berisi tombol link (`ul.home-links` > `a.home-btn`, tanpa JavaScript): 3 Main Portfolio + 9 Additional Portfolio, ditambah tombol About dan Contact di bawahnya (tugas opsional). Teks tombol mengikuti bahasa halaman (en "Japanese Language" jadi "Japanese", ja "人事（HR）" jadi "HR", sesuai permintaan). Urutan dan jumlah tombol sama di tiga bahasa (15 href per halaman termasuk 3E). CSS tombol hanya memakai `--kanade-bg`, `--kanade-text`, `--kanade-accent`; hover dibatasi `@media (hover: hover)`, ada `:active` untuk layar sentuh, `:focus-visible` dengan outline, tinggi minimum 2.75rem. Dua komentar lama ("href sementara" dan "Link sub-halaman dikosongkan") dihapus karena sudah tidak berlaku. Status fitur ditambah satu baris. Salam pembuka dan [TEKS DARI MIZO] tidak diubah.
+- Catatan: dicek manual. Semua 45 href cocok dengan permalink di `_pages/`, tidak ada link ke halaman yang belum ada. Render belum diverifikasi lokal (Jekyll tidak terpasang).
+
 ## #9 | kerangka 15 sub-halaman (id, en, ja)
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`,

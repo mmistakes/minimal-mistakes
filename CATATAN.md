@@ -111,6 +111,7 @@ halaman setara; selalu membuka halaman pilih bahasa, lalu kartu mengarah ke `/{l
 - [x] Tombol ganti bahasa per bahasa
 - [x] Redirect otomatis sesuai bahasa browser
 - [x] Isi HOME (ringkasan diri, motto 3E sebagai link, dua bagian buka-tutup)
+- [x] Link dari HOME ke semua sub-halaman (3E, 12 portofolio, About, Contact) lewat tombol
 - [/] Halaman 3E — kerangka selesai, isi menunggu Mizo
 - [/] Halaman About (latar belakang, pengalaman hidup, CV) — kerangka selesai, isi menunggu Mizo
 - [/] Halaman Contact — kerangka selesai, isi menunggu Mizo

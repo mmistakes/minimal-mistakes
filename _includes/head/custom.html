@@ -67,6 +67,63 @@
 .home-portfolio summary:focus-visible {
   color: var(--kanade-accent);
 }
+
+/* HOME: tombol link ke sub-halaman (portofolio, About, Contact) */
+.home-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0.6rem;
+  margin: 0.75em 0;
+  padding: 0;
+  list-style: none;
+}
+.home-links li {
+  margin: 0;
+}
+.home-pages {
+  margin-top: 1.5em;
+}
+.page__content .home-links a.home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.5em 0.9em;
+  border: 1px solid var(--kanade-accent);
+  border-radius: 4px;
+  background-color: var(--kanade-bg);
+  color: var(--kanade-text);
+  font-size: 0.9em;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+@media (hover: hover) {
+  .page__content .home-links a.home-btn:hover {
+    background-color: var(--kanade-accent);
+    color: var(--kanade-bg);
+    text-decoration: none;
+  }
+}
+.page__content .home-links a.home-btn:active {
+  background-color: var(--kanade-accent);
+  color: var(--kanade-bg);
+}
+.page__content .home-links a.home-btn:focus {
+  outline: none;
+}
+.page__content .home-links a.home-btn:focus-visible {
+  background-color: var(--kanade-accent);
+  color: var(--kanade-bg);
+  outline: 2px solid var(--kanade-text);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page__content .home-links a.home-btn {
+    transition: none;
+  }
+}
 </style>
 
 <!-- end custom head snippets -->

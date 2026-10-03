@@ -12,32 +12,39 @@ Halo! Selamat datang di portofolio saya. Halaman ini masih dalam tahap pengemban
 
 [TEKS DARI MIZO]
 
-<!-- href sementara: ganti ke URL halaman 3E setelah slug ditentukan -->
-<p class="home-motto"><a href="#" title="Baca tentang framework 3E">Equilibrium Equivalence Equity</a></p>
+<p class="home-motto"><a href="/id/3e/" title="Baca tentang framework 3E">Equilibrium Equivalence Equity</a></p>
 
-<!-- Link sub-halaman dikosongkan dulu, slug belum ditentukan -->
 <details class="home-portfolio" markdown="1">
 <summary markdown="span">Portofolio Utama</summary>
 
-- Psikologi
-- HR
-- Bahasa Jepang
+<ul class="home-links">
+<li><a class="home-btn" href="/id/portfolio/psychology/">Psikologi</a></li>
+<li><a class="home-btn" href="/id/portfolio/hr/">HR</a></li>
+<li><a class="home-btn" href="/id/portfolio/japanese/">Bahasa Jepang</a></li>
+</ul>
 
 </details>
 
 <details class="home-portfolio" markdown="1">
 <summary markdown="span">Portofolio Tambahan</summary>
 
-- Coding
-- Analisis Data
-- Desain
-- Ilustrasi
-- Menulis
-- Musik
-- Second Brain
-- Olahraga
-- Memasak
+<ul class="home-links">
+<li><a class="home-btn" href="/id/portfolio/coding/">Coding</a></li>
+<li><a class="home-btn" href="/id/portfolio/data-analysis/">Analisis Data</a></li>
+<li><a class="home-btn" href="/id/portfolio/design/">Desain</a></li>
+<li><a class="home-btn" href="/id/portfolio/illustration/">Ilustrasi</a></li>
+<li><a class="home-btn" href="/id/portfolio/writing/">Menulis</a></li>
+<li><a class="home-btn" href="/id/portfolio/music/">Musik</a></li>
+<li><a class="home-btn" href="/id/portfolio/second-brain/">Second Brain</a></li>
+<li><a class="home-btn" href="/id/portfolio/sport/">Olahraga</a></li>
+<li><a class="home-btn" href="/id/portfolio/cooking/">Memasak</a></li>
+</ul>
 
 </details>
+
+<ul class="home-links home-pages">
+<li><a class="home-btn" href="/id/about/">Tentang</a></li>
+<li><a class="home-btn" href="/id/contact/">Kontak</a></li>
+</ul>
 
 <a href="/奏/" class="kanade-trigger" aria-hidden="true" tabindex="-1">奏</a>
