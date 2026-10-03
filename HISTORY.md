@@ -10,6 +10,12 @@ Aturan:
 
 ---
 
+## #15 | perbaiki tombol ganti bahasa (membawa ke halaman setara)
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`, `_includes/masthead.html`
+- Alasan: mengubah tombol ganti bahasa di masthead agar dinamis menampilkan link ke dua bahasa lainnya (bukan ke `/?pilih`) untuk halaman yang sedang aktif. Tujuan link dihitung dengan Liquid (`replace_first`) dengan mengganti prefix bahasa di `page.url` (misalnya `/id/portfolio/hr/` menjadi `/en/portfolio/hr/`). Jika halaman tidak memiliki prefix `/id/`, `/en/`, atau `/ja/`, tombol fallback ke `/?pilih`. Label memakai nama asli tiap bahasa. Paragraf usang di `CATATAN.md` dihapus dan status fitur diperbarui.
+- Catatan: dicek manual permalink di `_pages/` sudah setara antarbahasa. Render belum diverifikasi lokal (Jekyll tidak terpasang).
+
 ## #14 | aturan co-author commit
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`

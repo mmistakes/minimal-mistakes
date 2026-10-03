@@ -92,8 +92,7 @@ File di `_pages/` bernama `{lang}-{slug}.md`, `/` di slug diganti `-`
 | Additional: Sport | `/{lang}/portfolio/sport/` |
 | Additional: Cooking | `/{lang}/portfolio/cooking/` |
 
-Catatan: tombol ganti bahasa (`_data/navigation.yml` → `/?pilih`) belum membawa ke
-halaman setara; selalu membuka halaman pilih bahasa, lalu kartu mengarah ke `/{lang}/main/`.
+
 
 ## Keputusan
 - Bahasa: Indonesia, English, Jepang
@@ -108,7 +107,7 @@ halaman setara; selalu membuka halaman pilih bahasa, lalu kartu mengarah ke `/{l
 ## Status fitur
 - [x] Halaman pilih bahasa
 - [x] Halaman tujuan per bahasa
-- [x] Tombol ganti bahasa per bahasa
+- [x] Tombol ganti bahasa (dinamis membawa ke halaman setara)
 - [x] Redirect otomatis sesuai bahasa browser
 - [x] Isi HOME (ringkasan diri, motto 3E sebagai link, dua bagian buka-tutup)
 - [x] Link dari HOME ke semua sub-halaman (3E, 12 portofolio, About, Contact) lewat tombol

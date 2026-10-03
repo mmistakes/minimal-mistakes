@@ -14,13 +14,41 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{% if link.url == "/?pilih" %}{{ page.change_lang_text | default: "Change language" }}{% else %}{{ link.title }}{% endif %}</a>
-            </li>
+            {% if link.url == "/?pilih" %}
+              {% assign url_parts = page.url | split: '/' %}
+              {% assign current_lang = url_parts[1] %}
+              {% if current_lang == 'id' or current_lang == 'en' or current_lang == 'ja' %}
+                {% assign prefix = '/' | append: current_lang | append: '/' %}
+                
+                {% if current_lang != 'id' %}
+                  <li class="masthead__menu-item">
+                    <a href="{{ page.url | replace_first: prefix, '/id/' | relative_url }}">Bahasa Indonesia</a>
+                  </li>
+                {% endif %}
+                {% if current_lang != 'en' %}
+                  <li class="masthead__menu-item">
+                    <a href="{{ page.url | replace_first: prefix, '/en/' | relative_url }}">English</a>
+                  </li>
+                {% endif %}
+                {% if current_lang != 'ja' %}
+                  <li class="masthead__menu-item">
+                    <a href="{{ page.url | replace_first: prefix, '/ja/' | relative_url }}">日本語</a>
+                  </li>
+                {% endif %}
+              {% else %}
+                <li class="masthead__menu-item">
+                  <a href="{{ '/?pilih' | relative_url }}">{{ page.change_lang_text | default: "Change language" }}</a>
+                </li>
+              {% endif %}
+            {% else %}
+              <li class="masthead__menu-item">
+                <a
+                  href="{{ link.url | relative_url }}"
+                  {% if link.description %} title="{{ link.description }}"{% endif %}
+                  {% if link.target %} target="{{ link.target }}"{% endif %}
+                >{{ link.title }}</a>
+              </li>
+            {% endif %}
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
