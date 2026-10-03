@@ -120,6 +120,7 @@ File di `_pages/` bernama `{lang}-{slug}.md`, `/` di slug diganti `-`
 - [/] Easter egg Kanade (3 bahasa) — kerangka selesai, teks masih [TEKS DARI MIZO]
 - [x] Desain visual dan warna theme (unsur Kanade)
 - [x] Halaman 404 (tiga bahasa: id, en, ja)
+- [x] SEO dan meta tags multibahasa (judul tab, hreflang, lang attribute, deskripsi per bahasa)
 
 ## Aturan untuk agent
 - Kerjakan satu tugas per sesi.

@@ -4,6 +4,7 @@ title: "Beranda"
 permalink: /id/main/
 lang: id
 change_lang_text: "Ganti bahasa"
+description: "Portofolio Mizo Arkatama Renaldy. Menampilkan karya dan proyek di bidang Psikologi, HR, dan Bahasa Jepang."
 ---
 
 Halo! Selamat datang di portofolio saya. Halaman ini masih dalam tahap pengembangan — nantikan konten selengkapnya! 🚧

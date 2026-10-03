@@ -4,6 +4,7 @@ title: "Home"
 permalink: /en/main/
 lang: en
 change_lang_text: "Change language"
+description: "Portfolio of Mizo Arkatama Renaldy. Showcasing works and projects in Psychology, HR, and Japanese language."
 ---
 
 Hello! Welcome to my portfolio. This page is still under construction — stay tuned for more content! 🚧

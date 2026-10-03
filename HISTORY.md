@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #20 | judul tab, hreflang, dan deskripsi per bahasa
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`, `_includes/seo.html`, `_layouts/default.html`, `_pages/en-main.md`, `_pages/id-main.md`, `_pages/ja-main.md`
+- Alasan: menyesuaikan meta tag SEO agar mendukung situs multibahasa. Tag `<title>` di tab browser sekarang mengambil dari `page.title` halaman ditambah `site.name` jika ada, dan fallback ke logika lama untuk halaman tanpa prefix bahasa. Menambahkan atribut `lang` pada `<html>` yang menyesuaikan prefix bahasa halaman (`page.lang` dengan fallback URL) dan fallback ke nilai locale untuk halaman root. Menambahkan empat tag `<link rel="alternate" hreflang="...">` (id, en, ja, x-default) pada setiap halaman berprefix untuk memudahkan mesin pencari mengindeks versi setara, dengan mengecualikan halaman kanji 奏, root, dan 404. Terakhir, menambahkan front matter `description` di tiga halaman HOME (`-main.md`) yang berfungsi sebagai fallback `seo_description` untuk sub-halaman di masing-masing bahasa jika tidak memiliki deskripsi sendiri.
+
 ## #19 | aturan commit dan push mandiri untuk agent di CATATAN.md
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`

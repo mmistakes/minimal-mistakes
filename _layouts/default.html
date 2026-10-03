@@ -1,10 +1,20 @@
 ---
 ---
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
+{%- assign html_lang = page.lang -%}
+{%- unless html_lang -%}
+  {%- assign url_parts = page.url | split: '/' -%}
+  {%- if url_parts[1] == 'id' or url_parts[1] == 'en' or url_parts[1] == 'ja' -%}
+    {%- assign html_lang = url_parts[1] -%}
+  {%- endif -%}
+{%- endunless -%}
+{%- unless html_lang -%}
+  {%- assign html_lang = locale | replace: '_', '-' | default: 'en' -%}
+{%- endunless -%}
 
 <!doctype html>
 {% include copyright.html %}
-<html lang="{{ locale | replace: '_', '-' | default: 'en' }}" class="no-js" dir="{{ page.direction | default: layout.direction | default: site.direction | default: 'ltr' }}">
+<html lang="{{ html_lang }}" class="no-js" dir="{{ page.direction | default: layout.direction | default: site.direction | default: 'ltr' }}">
   <head>
     {% include head.html locale=locale %}
     {% include head/custom.html %}

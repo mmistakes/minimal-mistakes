@@ -2,11 +2,21 @@
 <!-- begin _includes/seo.html -->
 {%- assign title_separator = site.title_separator | default: '-' -%}
 
-{%- assign page_title = page.title | default: site.title | replace: '|', '&#124;' -%}
-{%- if page_title contains site.title -%}
-  {%- assign seo_title = page_title | replace: '|', '&#124;' -%}
+{%- assign url_parts = page.url | split: '/' -%}
+{%- assign current_lang = url_parts[1] -%}
+{%- if current_lang == 'id' or current_lang == 'en' or current_lang == 'ja' -%}
+  {%- assign seo_title = page.title -%}
+  {%- if site.name -%}
+    {%- assign seo_title = seo_title | append: " " | append: title_separator | append: " " | append: site.name -%}
+  {%- endif -%}
+  {%- assign seo_title = seo_title | replace: '|', '&#124;' -%}
 {%- else -%}
-  {%- assign seo_title = page_title | append: " " | append: title_separator | append: " " | append: site.title | replace: '|', '&#124;' -%}
+  {%- assign page_title = page.title | default: site.title | replace: '|', '&#124;' -%}
+  {%- if page_title contains site.title -%}
+    {%- assign seo_title = page_title | replace: '|', '&#124;' -%}
+  {%- else -%}
+    {%- assign seo_title = page_title | append: " " | append: title_separator | append: " " | append: site.title | replace: '|', '&#124;' -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
@@ -14,7 +24,23 @@
 
 {%- assign canonical_url = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url %}
 
-{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+{%- if current_lang == 'id' or current_lang == 'en' or current_lang == 'ja' -%}
+  {%- assign lang_prefix = '/' | append: current_lang | append: '/' -%}
+  <link rel="alternate" hreflang="id" href="{{ page.url | replace_first: lang_prefix, '/id/' | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ page.url | replace_first: lang_prefix, '/en/' | absolute_url }}">
+  <link rel="alternate" hreflang="ja" href="{{ page.url | replace_first: lang_prefix, '/ja/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+{%- endif -%}
+
+{%- assign seo_description = page.description | default: page.excerpt -%}
+{%- unless seo_description -%}
+  {%- if current_lang == 'id' or current_lang == 'en' or current_lang == 'ja' -%}
+    {%- assign main_page_url = '/' | append: current_lang | append: '/main/' -%}
+    {%- assign main_page = site.pages | where: "url", main_page_url | first -%}
+    {%- assign seo_description = main_page.description -%}
+  {%- endif -%}
+{%- endunless -%}
+{%- assign seo_description = seo_description | default: site.description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
