@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #11 | perbarui acuan slug URL di CATATAN.md
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`
+- Alasan: memperbarui baris usang di bagian "Aturan mapping" pada CATATAN.md yang sebelumnya menyatakan bahwa slug URL tiap sub-halaman belum ditentukan, menjadi menunjuk ke bagian "Slug URL" sebagai sumber yang berlaku. Bagian lain tidak diubah.
+
 ## #10 | tombol link HOME ke semua sub-halaman (id, en, ja)
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`, `_includes/head/custom.html`, `_pages/en-main.md`, `_pages/id-main.md`, `_pages/ja-main.md`

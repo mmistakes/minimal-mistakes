@@ -66,8 +66,7 @@ Aturan mapping:
 - Elemen buka-tutup dipakai di HOME saja. Pakai tag `<details>` (tanpa JavaScript).
   Kalau isinya Markdown, tambahkan `markdown="1"` di tag `<details>`.
 - Konten paling mentok: embed video YouTube atau foto yang ditempel langsung.
-- Slug URL tiap sub-halaman belum ditentukan, putuskan saat halamannya dikerjakan
-  dan catat di bawah ini.
+- Slug URL tiap sub-halaman mengacu ke bagian "Slug URL" di bawah sebagai sumber yang berlaku.
 
 ## Slug URL
 Sama di semua bahasa, huruf kecil, bahasa Inggris. `{lang}` = `id`, `en`, `ja`.
