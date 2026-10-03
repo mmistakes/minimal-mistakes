@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #14 | aturan co-author commit
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`
+- Alasan: menambahkan satu aturan baru di bagian "Aturan untuk agent" pada CATATAN.md agar agent menuliskan saran pesan commit lengkap beserta dua baris trailer Co-authored-by (Claude dan Gemini (Antigravity)) yang dipisah satu baris kosong di akhir tugas, serta menegaskan bahwa agent tidak menjalankan git commit.
+
 ## #13 | link Medium dan Substack di halaman Writing (id, en, ja)
 - Tanggal: 2026-10-03
 - File: `HISTORY.md`, `_pages/en-portfolio-writing.md`, `_pages/id-portfolio-writing.md`, `_pages/ja-portfolio-writing.md`
