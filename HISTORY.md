@@ -10,6 +10,11 @@ Aturan:
 
 ---
 
+## #12 | siapkan verifikasi domain Discord lewat HTTPS
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`, `_config.yml`, `.well-known/discord`
+- Alasan: menyiapkan verifikasi domain Discord lewat HTTPS dengan membuat file `.well-known/discord` berisi satu baris kode verifikasi `dh=11a13d75cc51e5695ff63a9f2cb6af048da6da90` tanpa baris kosong tambahan, menambahkan `.well-known` ke daftar `include:` di `_config.yml` agar tidak diabaikan Jekyll, dan menambahkan catatan di bagian Gotcha pada `CATATAN.md` mengenai verifikasi Discord dan larangan membuat file `.nojekyll`.
+
 ## #11 | perbarui acuan slug URL di CATATAN.md
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`

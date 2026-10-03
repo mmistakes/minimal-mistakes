@@ -169,6 +169,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - .well-known
 exclude:
   - CATATAN.md
   - "*.sublime-project"

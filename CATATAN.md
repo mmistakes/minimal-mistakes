@@ -103,6 +103,7 @@ halaman setara; selalu membuka halaman pilih bahasa, lalu kartu mengarah ke `/{l
 ## Gotcha (jangan diulang)
 - Jangan pakai include_cached untuk masthead, karena teksnya beda per bahasa
   (dulu bikin tombol "ganti bahasa" selalu berbahasa Inggris).
+- Verifikasi Discord memakai `.well-known/discord` dengan `include: [".well-known"]` di _config.yml, dan jangan pernah menambah .nojekyll karena situs ini butuh Jekyll.
 
 ## Status fitur
 - [x] Halaman pilih bahasa
