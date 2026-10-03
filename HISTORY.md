@@ -10,6 +10,15 @@ Aturan:
 
 ---
 
+## #9 | kerangka 15 sub-halaman (id, en, ja)
+- Tanggal: 2026-10-03
+- File: `CATATAN.md`, `HISTORY.md`,
+  `_pages/en-3e.md`, `_pages/en-about.md`, `_pages/en-contact.md`, `_pages/en-portfolio-coding.md`, `_pages/en-portfolio-cooking.md`, `_pages/en-portfolio-data-analysis.md`, `_pages/en-portfolio-design.md`, `_pages/en-portfolio-hr.md`, `_pages/en-portfolio-illustration.md`, `_pages/en-portfolio-japanese.md`, `_pages/en-portfolio-music.md`, `_pages/en-portfolio-psychology.md`, `_pages/en-portfolio-second-brain.md`, `_pages/en-portfolio-sport.md`, `_pages/en-portfolio-writing.md`,
+  `_pages/id-3e.md`, `_pages/id-about.md`, `_pages/id-contact.md`, `_pages/id-portfolio-coding.md`, `_pages/id-portfolio-cooking.md`, `_pages/id-portfolio-data-analysis.md`, `_pages/id-portfolio-design.md`, `_pages/id-portfolio-hr.md`, `_pages/id-portfolio-illustration.md`, `_pages/id-portfolio-japanese.md`, `_pages/id-portfolio-music.md`, `_pages/id-portfolio-psychology.md`, `_pages/id-portfolio-second-brain.md`, `_pages/id-portfolio-sport.md`, `_pages/id-portfolio-writing.md`,
+  `_pages/ja-3e.md`, `_pages/ja-about.md`, `_pages/ja-contact.md`, `_pages/ja-portfolio-coding.md`, `_pages/ja-portfolio-cooking.md`, `_pages/ja-portfolio-data-analysis.md`, `_pages/ja-portfolio-design.md`, `_pages/ja-portfolio-hr.md`, `_pages/ja-portfolio-illustration.md`, `_pages/ja-portfolio-japanese.md`, `_pages/ja-portfolio-music.md`, `_pages/ja-portfolio-psychology.md`, `_pages/ja-portfolio-second-brain.md`, `_pages/ja-portfolio-sport.md`, `_pages/ja-portfolio-writing.md`
+- Alasan: merealisasikan kerangka "Mapping web": 15 halaman (3E, About, Contact, 3 Main Portfolio, 9 Additional Portfolio) x 3 bahasa = 45 file. Front matter meniru halaman main (`layout: single`, `lang`, `change_lang_text`), permalink sesuai slug baru, title dalam bahasa halaman; body hanya `[TEKS DARI MIZO]`. Slug dicatat di bagian baru "Slug URL" di CATATAN.md, Status fitur ditandai [/]. HOME, easter egg, dan halaman pilih bahasa tidak disentuh; belum ada link dari HOME.
+- Catatan: Jekyll tidak terpasang, dicek manual (45 file baru, tidak ada permalink ganda, front matter valid, UTF-8 tanpa BOM). Tombol ganti bahasa belum membawa ke halaman setara (selalu ke `/?pilih` lalu ke `/{lang}/main/`); dilaporkan ke pemilik, tidak diperbaiki.
+
 ## #8 | isi HOME (id, en, ja)
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`, `_includes/head/custom.html`, `_pages/en-main.md`, `_pages/id-main.md`, `_pages/ja-main.md`

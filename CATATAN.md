@@ -69,6 +69,33 @@ Aturan mapping:
 - Slug URL tiap sub-halaman belum ditentukan, putuskan saat halamannya dikerjakan
   dan catat di bawah ini.
 
+## Slug URL
+Sama di semua bahasa, huruf kecil, bahasa Inggris. `{lang}` = `id`, `en`, `ja`.
+File di `_pages/` bernama `{lang}-{slug}.md`, `/` di slug diganti `-`
+(contoh: `id-3e.md`, `id-portfolio-psychology.md`).
+
+| Halaman | Slug |
+|---|---|
+| HOME | `/{lang}/main/` |
+| 3E | `/{lang}/3e/` |
+| About | `/{lang}/about/` |
+| Contact | `/{lang}/contact/` |
+| Main Portfolio: Psikologi | `/{lang}/portfolio/psychology/` |
+| Main Portfolio: HR | `/{lang}/portfolio/hr/` |
+| Main Portfolio: Bahasa Jepang | `/{lang}/portfolio/japanese/` |
+| Additional: Coding | `/{lang}/portfolio/coding/` |
+| Additional: Data Analysis | `/{lang}/portfolio/data-analysis/` |
+| Additional: Design | `/{lang}/portfolio/design/` |
+| Additional: Illustration | `/{lang}/portfolio/illustration/` |
+| Additional: Writing | `/{lang}/portfolio/writing/` |
+| Additional: Music | `/{lang}/portfolio/music/` |
+| Additional: Second Brain | `/{lang}/portfolio/second-brain/` |
+| Additional: Sport | `/{lang}/portfolio/sport/` |
+| Additional: Cooking | `/{lang}/portfolio/cooking/` |
+
+Catatan: tombol ganti bahasa (`_data/navigation.yml` → `/?pilih`) belum membawa ke
+halaman setara; selalu membuka halaman pilih bahasa, lalu kartu mengarah ke `/{lang}/main/`.
+
 ## Keputusan
 - Bahasa: Indonesia, English, Jepang
 - Halaman pilih bahasa tetap bisa dibuka manual lewat /?pilih
@@ -84,11 +111,11 @@ Aturan mapping:
 - [x] Tombol ganti bahasa per bahasa
 - [x] Redirect otomatis sesuai bahasa browser
 - [x] Isi HOME (ringkasan diri, motto 3E sebagai link, dua bagian buka-tutup)
-- [ ] Halaman 3E
-- [ ] Halaman About (latar belakang, pengalaman hidup, CV)
-- [ ] Halaman Contact
-- [ ] Halaman Main Portfolio (Psikologi, HR, Bahasa Jepang)
-- [ ] Halaman Additional Portfolio (9 halaman)
+- [/] Halaman 3E — kerangka selesai, isi menunggu Mizo
+- [/] Halaman About (latar belakang, pengalaman hidup, CV) — kerangka selesai, isi menunggu Mizo
+- [/] Halaman Contact — kerangka selesai, isi menunggu Mizo
+- [/] Halaman Main Portfolio (Psikologi, HR, Bahasa Jepang) — kerangka selesai, isi menunggu Mizo
+- [/] Halaman Additional Portfolio (9 halaman) — kerangka selesai, isi menunggu Mizo
 - [/] Easter egg Kanade (3 bahasa) — kerangka selesai, teks masih [TEKS DARI MIZO]
 - [x] Desain visual dan warna theme (unsur Kanade)
 
