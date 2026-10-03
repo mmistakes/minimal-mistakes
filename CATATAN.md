@@ -6,6 +6,7 @@ Static saja (tanpa backend). Tema tidak akan diupdate dari upstream, boleh edit 
 
 ## Struktur teknis
 - index.html: halaman pilih bahasa (3 kartu) + redirect otomatis sesuai bahasa browser
+- 404.html: halaman 404 tiga bahasa (id, en, ja) tanpa JavaScript + tombol ke /?pilih
 - _pages/: halaman per bahasa (/id/main/, /en/main/, /ja/main/)
 - Kode bahasa yang dipakai: id, en, ja (bukan jp)
 - Site title: "Main Page"
@@ -118,6 +119,7 @@ File di `_pages/` bernama `{lang}-{slug}.md`, `/` di slug diganti `-`
 - [/] Halaman Additional Portfolio (9 halaman) — kerangka selesai, isi menunggu Mizo
 - [/] Easter egg Kanade (3 bahasa) — kerangka selesai, teks masih [TEKS DARI MIZO]
 - [x] Desain visual dan warna theme (unsur Kanade)
+- [x] Halaman 404 (tiga bahasa: id, en, ja)
 
 ## Aturan untuk agent
 - Kerjakan satu tugas per sesi.

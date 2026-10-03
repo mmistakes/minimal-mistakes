@@ -10,6 +10,12 @@ Aturan:
 
 ---
 
+## #16 | buat halaman 404 tiga bahasa (id, en, ja)
+- Tanggal: 2026-10-03
+- File: `404.html`, `CATATAN.md`, `HISTORY.md`
+- Alasan: membuat halaman 404 di root (`404.html`) berisi pesan judul dan satu kalimat singkat "halaman tidak ditemukan" dalam tiga bahasa (Indonesia, English, 日本語) secara berurutan, tanpa JavaScript dan tanpa redirect otomatis. Dilengkapi tombol link ke `/?pilih` dengan label tiga bahasa menggunakan class yang sudah ada (`ul.home-links` > `a.home-btn`) dan palet Kanade via layout Minimal Mistakes (`layout: single`). Tombol ganti bahasa di masthead jatuh ke fallback `/?pilih` via `change_lang_text`. Struktur teknis dan status fitur di CATATAN.md diperbarui.
+- Catatan: render belum diverifikasi lokal (Jekyll tidak terpasang).
+
 ## #15 | perbaiki tombol ganti bahasa (membawa ke halaman setara)
 - Tanggal: 2026-10-03
 - File: `CATATAN.md`, `HISTORY.md`, `_includes/masthead.html`
