@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-y: scroll;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html,
+body {
+  @apply size-full;
+}
+
+body {
+  @apply font-sans antialiased;
+  @apply flex flex-col;
+  @apply bg-stone-100 dark:bg-stone-900;
+  @apply text-black/50 dark:text-white/75;
+}
+
+header {
+  @apply fixed top-0 left-0 right-0 z-50 py-5;
+  @apply bg-stone-100/75 dark:bg-stone-900/25;
+  @apply backdrop-blur-sm saturate-200;
+}
+
+main {
+  @apply flex-1 py-32;
+}
+
+footer {
+  @apply py-5 text-sm;
+}
+
+article {
+  @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
+  @apply prose-headings:font-semibold prose-p:font-serif;
+  @apply prose-headings:text-black prose-headings:dark:text-white;
+}
+
+@layer utilities {
+  article a {
+    @apply font-sans text-current underline underline-offset-2;
+    @apply decoration-black/15 dark:decoration-white/30;
+    @apply transition-colors duration-300 ease-in-out;
+  }
+  article a:hover {
+    @apply text-black dark:text-white;
+    @apply decoration-black/25 dark:decoration-white/50;
+  }
+}
+
+.animate {
+  @apply opacity-0 translate-y-3;
+  @apply transition-all duration-700 ease-out;
+}
+
+.animate.show {
+  @apply opacity-100 translate-y-0;
+}
+
+html #back-to-top {
+  @apply opacity-0 pointer-events-none;
+}
+
+html.scrolled #back-to-top {
+  @apply opacity-100 pointer-events-auto;
+}

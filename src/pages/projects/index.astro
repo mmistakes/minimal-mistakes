@@ -1,0 +1,35 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import RepoCard from "@components/RepoCard.astro";
+import Link from "@components/Link.astro";
+import { getRepos } from "@lib/github";
+import { PROJECTS, GITHUB } from "@consts";
+
+const repos = await getRepos();
+---
+
+<PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
+  <Container>
+    <div class="space-y-10">
+      <div class="animate font-semibold text-black dark:text-white">
+        Projects
+      </div>
+      <ul class="animate flex flex-col gap-4">
+        {
+          repos.map((repo) => (
+            <li>
+              <RepoCard repo={repo} />
+            </li>
+          ))
+        }
+      </ul>
+      <p class="animate">
+        More on
+        <Link href={`https://github.com/${GITHUB.USERNAME}`} external>
+          GitHub
+        </Link>.
+      </p>
+    </div>
+  </Container>
+</PageLayout>
