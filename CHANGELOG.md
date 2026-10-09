@@ -6,6 +6,10 @@
 
 - Change link color mixing in notices to use `$text-color` (#5527)
 
+### Bug Fixes
+
+- Fix `.page__content :first-child` from #5103 removes the top margin of nested first children. (#5538)
+
 ## [4.28.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.1)
 
 ### Enhancements

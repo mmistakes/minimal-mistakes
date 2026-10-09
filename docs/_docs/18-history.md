@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2026-09-08T16:19:33+08:00'
+last_modified_at: '2026-10-09T16:31:57+08:00'
 toc: false
 ---
 
@@ -20,6 +20,10 @@ toc: false
 ### Enhancements
 
 - Change link color mixing in notices to use `$text-color` [#5527](https://github.com/mmistakes/minimal-mistakes/issues/5527)
+
+### Bug Fixes
+
+- Fix `.page__content :first-child` from #5103 removes the top margin of nested first children. [#5538](https://github.com/mmistakes/minimal-mistakes/issues/5538)
 
 ## [4.28.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.1)
 
