@@ -1,4 +1,12 @@
 (function () {
+  // Open links to other sites in a new tab
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    if (/^https?:$/.test(link.protocol) && link.host !== location.host) {
+      link.target = "_blank";
+      link.rel = "noopener";
+    }
+  });
+
   // Mobile menu toggle
   var button = document.querySelector(".site-nav .menu-icon");
   var menu = document.querySelector(".site-nav .menu");
