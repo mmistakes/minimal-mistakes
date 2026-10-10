@@ -1,0 +1,91 @@
+.pub-section + .pub-section {
+  margin-top: $spacing-unit + 10px;
+}
+
+.pub-container {
+  display: flex;
+  align-items: center;
+  gap: $spacing-half;
+  margin: 0 0 20px;
+
+  @include media-query(680px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+.pub-teaser-image {
+  flex: 0 0 180px;
+  max-width: 180px;
+
+  img {
+    display: block;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  @include media-query(680px) {
+    flex-basis: auto;
+    max-width: 300px;
+  }
+}
+
+.pub-contents {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: $grey-color-dark;
+}
+
+.pub-title {
+  display: inline-block;
+  margin-bottom: 2px;
+  color: $brand-color;
+  font-size: 105%;
+  font-weight: 500;
+
+  &:hover {
+    color: $grey-color-dark;
+  }
+}
+
+// Titles without a paper link are not clickable, so don't color them like links
+span.pub-title {
+  color: $text-color;
+}
+
+.pub-authors strong {
+  color: $text-color;
+  font-weight: 600;
+}
+
+.pub-meta {
+  font-weight: 500;
+
+  a {
+    color: $grey-color-dark;
+
+    &:hover {
+      color: $brand-color;
+      background-color: $grey-color-light;
+    }
+  }
+}
+
+.pub-sep {
+  margin: 0 4px;
+  color: $grey-color;
+}
+
+.pub-note {
+  color: $accent-color;
+  font-weight: 600;
+}
+
+.pub-empty {
+  color: $grey-color;
+}
+
+.pub-section:first-of-type h2 {
+  margin-top: 0;
+}

@@ -1,38 +1,10 @@
-# Homepage profile data for the Blog MVP redesign.
-# Keep this file as the single source for the new homepage profile panel.
-name: "Junbo Koh"
-position: "M.A. in Educational Technology & Integrated Major in Applied Data Science"
-headline: "Ongoing learner, practitioner, and researcher"
-affiliation: "Learning Sciences Research Institute, SNU"
-affiliation_url: "https://ls.snu.ac.kr/eng/main/"
-location:
-email: "gtkobo92@snu.ac.kr"
-
-# No profile image is committed yet. The homepage layout should render without
-# an avatar when this value is blank.
-avatar:
+# Profile photo shown on the home page (top right).
+# Put the image in assets/img/ and set the path, e.g. "/assets/img/profile.jpg".
+avatar: "/assets/img/profile.jpg"
 avatar_alt: "Junbo Koh"
 
-bio:
-  - "I am an ongoing learner, practitioner, and researcher."
-  - "Currently Master's student, Educational Technology, Seoul National University."
-
-links:
-  - label: "Google Scholar"
-    icon: "google-scholar"
-    url: "https://scholar.google.com/citations?user=2hDR1lgAAAAJ&hl=en"
-  - label: "ResearchGate"
-    icon: "fab fa-researchgate"
-    url: "https://www.researchgate.net/profile/Junbo-Koh"
-  - label: "CV"
-    icon: "cv"
-    url: "https://docs.google.com/document/d/1PGgfaXFf4T5BaNPduZi3TPmRhdUfYt5ULsStewoAdBs/edit?usp=sharing"
-  - label: "GitHub"
-    icon: "github"
-    url: "https://github.com/Ridealist/"
-  - label: "LinkedIn"
-    icon: "linkedin"
-    url: "https://www.linkedin.com/in/junbokoh92/"
-
-# Optional links are intentionally omitted until real URLs are available.
-optional_links:
+# CV page. Embeds the PDF at `pdf`; falls back to a link to `url` if `pdf` is empty.
+# To update: in Google Docs, File > Download > PDF, then replace assets/files/cv.pdf.
+cv:
+  pdf: "/assets/files/cv.pdf"
+  url: "https://docs.google.com/document/d/1PGgfaXFf4T5BaNPduZi3TPmRhdUfYt5ULsStewoAdBs/edit?usp=sharing"

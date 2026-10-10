@@ -1,21 +1,5 @@
-# Homepage news items.
-# Keep dates in ISO format for sorting; use label for display text when needed.
+# Home page news, shown newest first.
+# `text` supports Markdown, e.g. "Paper accepted to [CHI 2026](https://chi2026.acm.org/)!"
 items:
   - date: 2026-06-24
-    label: "2026.06"
-    text: "Reorganizing this site into an academic profile and learning archive."
-    links: []
-
-  - date: 2024-03-18
-    label: "2024.03"
-    text: "Added notes on"
-    links:
-      - label: "problem analysis"
-        url: "/isd/problem-analysis/"
-
-  - date: 2024-02-26
-    label: "2024.02"
-    text: "Added notes on"
-    links:
-      - label: "fine-tuning LLMs"
-        url: "/llm/fine-tuning-llm/"
+    text: "Reorganized this site into an academic homepage."

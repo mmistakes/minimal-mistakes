@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="page">
+  {%- if page.title and page.hide_title != true %}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif %}
+  {{ content }}
+</article>

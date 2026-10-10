@@ -1,0 +1,58 @@
+# Build the site with Jekyll 4 (same as local), check links, and deploy to GitHub Pages.
+# Requires: Settings > Pages > Build and deployment > Source = "GitHub Actions".
+name: Build and deploy
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Build
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      # Internal links and images only; external sites are too flaky to block on.
+      # The multi-categorical-classification post references notebook images that were never committed.
+      - name: Check links
+        run: bundle exec htmlproofer _site --disable-external --ignore-files "/multi-categorical-classification/"
+
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

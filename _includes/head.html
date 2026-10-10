@@ -1,31 +1,51 @@
-{% assign locale = include.locale | default: site.locale %}
-<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% include seo.html locale=locale %}
+  {%- if page.title and page.url != "/" -%}
+    {%- assign page_title = page.title | append: " | " | append: site.title -%}
+  {%- else -%}
+    {%- assign page_title = site.title | append: " | " | append: site.tagline -%}
+  {%- endif -%}
+  {%- assign page_description = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 -%}
+  {%- assign page_image = page.og_image | default: site.og_image | default: site.data.profile.avatar -%}
 
-<link href="/assets/css/syntax.css" rel="stylesheet">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-{% unless site.atom_feed.hide %}
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-{% endunless %}
-
-{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  {% if site.enable_copy_code_button -%}
-    window.enable_copy_code_button = true;
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  {%- if page_image %}
+  <meta property="og:image" content="{{ page_image | absolute_url }}">
   {%- endif %}
-</script>
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/logo.ico/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/logo.ico/favicon-16x16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/logo.ico/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/logo.ico/site.webmanifest' | relative_url }}">
 
-{% if site.head_scripts %}
-  {% for script in site.head_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {%- if page.layout == "post" %}
+  <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
+  {%- endif %}
+  {%- feed_meta %}
+
+  {%- if jekyll.environment == "production" and site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {%- endif %}
+</head>

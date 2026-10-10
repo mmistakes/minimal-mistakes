@@ -1,0 +1,12 @@
+# Display names for post categories (slug used in front matter -> label on the site).
+# A category missing here is shown as its slug.
+llm: "LLM"
+hci: "HCI"
+woowacourse: "Woowa Tech Course"
+dl4coders: "fastai"
+oop: "OOP"
+datascience: "Data Science"
+deeplearning: "Deep Learning"
+designpattern: "Design Pattern"
+isd: "ISD"
+etc: "Etc"

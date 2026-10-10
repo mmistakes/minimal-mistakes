@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      {{ site.title }}{% if site.tagline %}<span class="site-tagline">{{ site.tagline }}</span>{% endif %}
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <button type="button" class="menu-icon" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <div class="menu">
+        {%- for item in site.header.pages %}
+          {%- assign item_url = item.url | relative_url %}
+          {%- assign is_active = false %}
+          {%- if item.url == "/" %}
+            {%- if page.url == "/" %}{% assign is_active = true %}{% endif %}
+          {%- elsif page.url contains item.url %}
+            {%- assign is_active = true %}
+          {%- elsif item.url == "/blog/" and page.collection == "posts" %}
+            {%- assign is_active = true %}
+          {%- endif %}
+          <a class="page-link{% if is_active %} is-active{% endif %}" href="{{ item_url }}">{{ item.name }}</a>
+        {%- endfor %}
+      </div>
+    </nav>
+  </div>
+</header>
