@@ -19,6 +19,7 @@ Source of [ridealist.github.io](https://ridealist.github.io): an academic homepa
 3. [Development](#development)
 4. [Deployment](#deployment)
 5. [Credits](#credits)
+6. [License](#license)
 
 ## Site structure
 
@@ -175,6 +176,10 @@ The repository setting **Settings → Pages → Build and deployment → Source*
 
 ## Credits
 
-- Design adapted from [Bay](https://github.com/eliottvincent/bay) by Eliott Vincent (MIT License).
+- Design adapted from [Bay](https://github.com/eliottvincent/bay) by Eliott Vincent (ISC License).
 - Page layout inspired by [jeongeonpark.com](https://jeongeonpark.com/); publication sections inspired by [yoonsu0816.github.io](https://yoonsu0816.github.io/).
 - Icons from [Font Awesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/).
+
+## License
+
+The source code is released under the [MIT License](LICENSE). This covers the code only: blog posts, publication data, the CV, and images are © Junbo Koh, all rights reserved. Bay's ISC license notice is included in [`LICENSE`](LICENSE).
