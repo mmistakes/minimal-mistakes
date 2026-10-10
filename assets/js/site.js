@@ -27,8 +27,10 @@
     if (headings.length > 0) toc.hidden = false;
   }
   // Chip filters driven by the URL hash: blog categories (/blog/#llm) and publication topics (/publications/#nlp)
-  var setupFilter = function (chips, groupSelector) {
+  // With `limit`, the unfiltered list shows only the first `limit` items until the `more` button is clicked.
+  var setupFilter = function (chips, groupSelector, limit, more) {
     if (!chips) return;
+    var expanded = false;
     var applyFilter = function () {
       var current = decodeURIComponent(location.hash.slice(1));
       if (!chips.querySelector('[data-category="' + current + '"]')) current = "";
@@ -37,16 +39,26 @@
         chip.classList.toggle("is-active", active);
         chip.setAttribute("aria-current", active ? "true" : "false");
       });
+      if (current) expanded = false; // back on All, the list folds again
+      var max = !current && limit && !expanded ? limit : Infinity;
+      var shown = 0;
+      var total = 0;
       document.querySelectorAll(groupSelector).forEach(function (group) {
         var visible = 0;
         group.querySelectorAll("[data-categories]").forEach(function (item) {
           var match = !current || item.getAttribute("data-categories").split(" ").indexOf(current) !== -1;
-          item.hidden = !match;
-          if (match) visible++;
+          if (match) total++;
+          item.hidden = !match || shown >= max;
+          if (!item.hidden) { shown++; visible++; }
         });
         group.hidden = visible === 0;
       });
+      if (more) more.hidden = shown >= total;
     };
+    if (more) more.querySelector("button").addEventListener("click", function () {
+      expanded = true;
+      applyFilter();
+    });
     chips.querySelector('[data-category=""]').addEventListener("click", function (event) {
       event.preventDefault();
       history.pushState(null, "", location.pathname);
@@ -55,6 +67,6 @@
     window.addEventListener("hashchange", applyFilter);
     applyFilter();
   };
-  setupFilter(document.querySelector("[data-blog-categories]"), "[data-blog-year]");
+  setupFilter(document.querySelector("[data-blog-categories]"), "[data-blog-year]", 10, document.querySelector("[data-show-more]"));
   setupFilter(document.querySelector("[data-pub-tags]"), "[data-filter-group]");
 })();

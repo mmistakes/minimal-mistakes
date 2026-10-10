@@ -78,3 +78,24 @@ a.blog-post-category {
     color: $brand-color;
   }
 }
+
+.blog-more {
+  margin-top: $spacing-half;
+  text-align: center;
+
+  button {
+    padding: 6px 18px;
+    border: 1px solid $grey-color-light;
+    border-radius: 999px;
+    background: none;
+    color: $grey-color-dark;
+    font: inherit;
+    font-size: $small-font-size;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $brand-color;
+      color: $brand-color;
+    }
+  }
+}

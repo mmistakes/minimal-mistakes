@@ -40,3 +40,6 @@ permalink: /blog/
   </ul>
 </section>
 {%- endfor %}
+<div class="blog-more" data-show-more hidden>
+  <button type="button">Show all {{ site.posts.size }} posts</button>
+</div>
