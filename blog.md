@@ -15,7 +15,7 @@ permalink: /blog/
     {%- for category in categories %}
       {%- if category[1].size == n %}
         {%- assign slug = category[0] %}
-  <a class="blog-category-chip" href="#{{ slug }}" data-category="{{ slug }}">{{ site.data.categories[slug] | default: slug }} <span class="blog-category-count">{{ n }}</span></a>
+  <a class="blog-category-chip" id="{{ slug }}" href="#{{ slug }}" data-category="{{ slug }}">{{ site.data.categories[slug] | default: slug }} <span class="blog-category-count">{{ n }}</span></a>
       {%- endif %}
     {%- endfor %}
   {%- endfor %}

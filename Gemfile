@@ -8,3 +8,8 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
 end
+
+# Link/image checks in CI: bundle exec htmlproofer _site --disable-external
+group :test do
+  gem "html-proofer", "~> 5.0"
+end

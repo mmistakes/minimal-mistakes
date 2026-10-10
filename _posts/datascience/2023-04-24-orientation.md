@@ -12,7 +12,7 @@ categories:
 
 
 
-- [네이버 부스트코스](https://www.boostcourse.org/)에서 운영하는 [쇼핑데이터를 활용한 머신러닝](www.boostcourse.org/ai224) 강좌를 들으며 작성하는 포스팅입니다.
+- [네이버 부스트코스](https://www.boostcourse.org/)에서 운영하는 [쇼핑데이터를 활용한 머신러닝](https://www.boostcourse.org/ai224) 강좌를 들으며 작성하는 포스팅입니다.
 
 ![SCR-20230718-tnuh](../../assets/img/2023-04-24-orientation/SCR-20230718-tnuh.png)
 
