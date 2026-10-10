@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {%- for category in page.categories %} · <a class="post-category" href="{{ '/blog/' | relative_url }}#{{ category }}">{{ site.data.categories[category] | default: category | upcase }}</a>{% endfor %}
+    </p>
+  </header>
+
+  {%- if page.toc %}
+  <nav class="post-toc" data-toc hidden>
+    <strong>Contents</strong>
+    <ul></ul>
+  </nav>
+  {%- endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {%- if page.previous or page.next %}
+  <nav class="post-nav" aria-label="Post navigation">
+    {%- if page.previous %}
+    <a class="post-nav-prev" href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+    {%- endif %}
+    {%- if page.next %}
+    <a class="post-nav-next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+
+  {%- if page.comments and site.utterances.repo %}
+  <section class="post-comments">
+    <script src="https://utteranc.es/client.js"
+            repo="{{ site.utterances.repo }}"
+            issue-term="{{ site.utterances.issue_term | default: 'pathname' }}"
+            theme="{{ site.utterances.theme | default: 'github-light' }}"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </section>
+  {%- endif %}
+</article>
+
+{%- if page.use_math %}
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+{%- endif %}

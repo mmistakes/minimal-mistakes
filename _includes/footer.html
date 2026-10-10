@@ -1,27 +1,31 @@
-{% assign locale = include.locale | default: site.locale %}
-{% unless site.atom_feed.hide %}
-  {% assign show_atom = true %}
-{% endunless %}
-{% if site.footer.links or show_atom %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[locale].follow_label }}</strong></li>
-    {% endif %}
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        {%- for item in site.footer.contact %}
+          <div class="social-link">
+            <i class="{{ item.icon }}" aria-hidden="true"></i>
+            <a href="{{ item.url }}">{{ item.value | default: item.name }}</a>
+          </div>
+        {%- endfor %}
+      </div>
 
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer{% if link.rel %} {{ link.rel }}{% endif %}"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label | escape_once | strip }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+      <div class="footer-col">
+        <h4>FOLLOW</h4>
+        {%- for item in site.footer.follow %}
+          <div class="social-link">
+            <i class="{{ item.icon }}" aria-hidden="true"></i>
+            <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.value | default: item.name }}</a>
+          </div>
+        {%- endfor %}
+      </div>
 
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> {{ site.data.ui-text[locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
-</div>
-{% endif %}
-
-<div class="page__footer-copyright">&copy; {% assign site_time = site.time | date: '%Y' %}{% if site.footer.since and site_time != site.footer.since %}{{ site.footer.since }} - {% endif %}{{ site_time }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title | escape_once | strip }}</a>. {{ site.data.ui-text[locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+      <div class="footer-col powered-by">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+        <p>Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>, design adapted from <a href="https://github.com/eliottvincent/bay" target="_blank" rel="noopener">Bay</a></p>
+        <p>Last updated: {{ site.time | date: "%b %Y" }}</p>
+      </div>
+    </div>
+  </div>
+</footer>

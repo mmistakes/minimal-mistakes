@@ -1,0 +1,31 @@
+{%- comment -%}
+  One publication row. Usage: {% include publication.html publication=item %}
+{%- endcomment -%}
+{%- assign pub = include.publication -%}
+{%- assign title_url = pub.url -%}
+<div class="pub-container"{% if pub.id %} id="{{ pub.id }}"{% endif %}>
+  {%- if pub.image %}
+  <div class="pub-teaser-image">
+    <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
+  </div>
+  {%- endif %}
+  <div class="pub-contents">
+    {%- if title_url %}
+      {%- if title_url contains "://" %}{% assign title_href = title_url %}{% else %}{% assign title_href = title_url | relative_url %}{% endif %}
+      <a class="pub-title" href="{{ title_href }}" target="_blank" rel="noopener">{{ pub.title }}</a><br>
+    {%- else %}
+      <span class="pub-title">{{ pub.title }}</span><br>
+    {%- endif %}
+    <span class="pub-authors">{{ pub.authors | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span><br>
+    <span class="pub-meta">
+      {%- if pub.venue %}<span class="pub-venue">{{ pub.venue }}</span>{% endif -%}
+      {%- for link in pub.links %}
+        {%- if link.url %}
+          {%- if link.url contains "://" %}{% assign link_href = link.url %}{% else %}{% assign link_href = link.url | relative_url %}{% endif -%}
+          <span class="pub-sep">|</span><a href="{{ link_href }}" target="_blank" rel="noopener">{{ link.label }}</a>
+        {%- endif %}
+      {%- endfor -%}
+      {%- if pub.note %}<span class="pub-sep">|</span><span class="pub-note">{{ pub.note }}</span>{% endif -%}
+    </span>
+  </div>
+</div>

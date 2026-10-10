@@ -1,0 +1,172 @@
+/**
+ * Reset
+ */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, table {
+  margin-bottom: $spacing-half;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: $spacing-unit;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+hr {
+  height: 1px;
+  margin: $spacing-unit 0;
+  border: 0;
+  background: $grey-color-light;
+}
+
+blockquote {
+  color: $grey-color-semidark;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-half;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Code
+ */
+pre,
+code {
+  font-family: $mono-font-family;
+  font-size: 13px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #f6f8fa;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+.highlight {
+  background: transparent;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-collapse: collapse;
+}
+
+.post-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+
+  th,
+  td {
+    padding: 4px 10px;
+    border: 1px solid $grey-color-light;
+  }
+
+  th {
+    background: #f6f8fa;
+    font-weight: 600;
+  }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: $content-width - ($spacing-unit * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @include media-query($on-laptop) {
+    padding-right: $spacing-half;
+    padding-left: $spacing-half;
+  }
+}
+
+[hidden] {
+  display: none !important;
+}

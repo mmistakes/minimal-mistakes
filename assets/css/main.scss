@@ -1,35 +1,40 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
+# Front matter tells Jekyll to compile this file.
 ---
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Layout and type are adapted from the Bay Jekyll theme
+// (https://github.com/eliottvincent/bay, MIT License).
 
+$base-font-family: Inter, "Source Sans Pro", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
+$heading-font-family: Poppins, "DM Sans", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
+$mono-font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+$base-font-size: 15px;
+$small-font-size: 13px;
+$base-line-height: 1.7;
 
-html {
-    font-size: 16px; // change to whatever
-    
-    @include breakpoint($medium) {
-        font-size: 18px; // change to whatever
-    }
-    
-    @include breakpoint($large) {
-        font-size: 18px; // change to whatever
-    }
-    
-    @include breakpoint($x-large) {
-        font-size: 18px; // change to whatever
-    }
+$spacing-unit: 30px;
+$spacing-half: 15px;
+
+$text-color: #111111;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae7;
+$accent-color: #e8890c;
+
+$grey-color: #828282;
+$grey-color-light: #e8e8e8;
+$grey-color-semidark: #5c5c5c;
+$grey-color-dark: #424242;
+
+$content-width: 750px;
+$on-mobile: 500px;
+$on-laptop: 800px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
 
-code {
-    background-color: rgb(230, 230, 230);
-    border: 1px solid #C1C1C1;
-    border-radius: 1px;
-    padding: 1px;
-}
-
-@import "site/academic-tone";
+@import "base", "layout", "home", "publications", "blog", "post";

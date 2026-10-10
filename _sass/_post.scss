@@ -1,0 +1,88 @@
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  margin: 0 0 8px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+
+  @include media-query($on-mobile) {
+    font-size: 26px;
+  }
+}
+
+.post-meta {
+  margin: 0;
+  color: $grey-color;
+
+  a {
+    color: $grey-color;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+.post-toc {
+  margin-bottom: $spacing-unit;
+  padding: 12px 16px;
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
+  background: #fafafa;
+  font-size: 14px;
+
+  strong {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  ul {
+    margin: 0 0 0 18px;
+  }
+
+  .toc-h3 {
+    margin-left: 16px;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  overflow-wrap: break-word;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  img {
+    margin: 6px 0;
+  }
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: $spacing-unit;
+  padding-top: $spacing-half;
+  border-top: 1px solid $grey-color-light;
+  font-size: 14px;
+
+  .post-nav-next {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.post-comments {
+  margin-top: $spacing-unit;
+}

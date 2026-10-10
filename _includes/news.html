@@ -1,0 +1,19 @@
+{%- comment -%}
+  News table, newest first. Items come from _data/news.yml.
+  Usage: {% include news.html %}
+{%- endcomment -%}
+{%- assign news_items = site.data.news.items | sort: "date" | reverse -%}
+{%- if news_items.size > 0 %}
+<div class="news">
+  <table>
+    {%- for item in news_items %}
+      <tr>
+        <td class="news-date">{{ item.label | default: item.date | date: "%b %Y" }}</td>
+        <td>
+          {{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
+        </td>
+      </tr>
+    {%- endfor %}
+  </table>
+</div>
+{%- endif %}

@@ -1,0 +1,60 @@
+.profile-pic {
+  float: right;
+  width: 192px;
+  margin: 0 0 $spacing-half 20px;
+  border: 1px solid #ccc;
+
+  @include media-query($on-mobile) {
+    float: none;
+    display: block;
+    margin: 0 0 20px;
+  }
+}
+
+.home-intro a {
+  font-weight: 500;
+}
+
+.home-divider {
+  clear: both;
+}
+
+.news {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: $spacing-unit;
+
+  table {
+    margin: 0;
+  }
+
+  td {
+    padding: 0 0 6px;
+    vertical-align: top;
+  }
+
+  .news-date {
+    min-width: 80px;
+    padding-right: 12px;
+    color: $brand-color;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  a {
+    font-weight: 500;
+  }
+}
+
+.cv-embed {
+  // Wider than the text column, centered on the page (like the reference CV page)
+  position: relative;
+  left: 50%;
+  display: block;
+  width: 1000px;
+  max-width: calc(100vw - #{$spacing-unit});
+  height: 1000px;
+  max-height: calc(100vh - 120px);
+  min-height: 600px;
+  transform: translateX(-50%);
+}

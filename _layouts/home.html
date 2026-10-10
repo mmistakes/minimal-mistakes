@@ -1,21 +1,18 @@
 ---
-layout: archive
+layout: default
 ---
-{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
+{%- assign profile = site.data.profile -%}
+<div class="home">
+  {%- if profile.avatar %}
+  <img class="profile-pic" src="{{ profile.avatar | relative_url }}" alt="{{ profile.avatar_alt | default: site.title }}">
+  {%- endif %}
 
-{{ content }}
+  <div class="home-intro">
+    {{ content }}
+  </div>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[locale].recent_posts | default: "Recent Posts" }}</h3>
+  <hr class="home-divider">
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html locale=locale entries=posts type=entries_layout %}
+  <h2>News</h2>
+  {% include news.html %}
 </div>
-
-{% include paginator.html locale=locale %}
