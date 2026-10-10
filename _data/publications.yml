@@ -3,12 +3,14 @@
 #   conferences -> "Conference and Journal Papers"
 #   demos       -> "Posters, Demos, Workshop Papers"
 # Empty sections are hidden. Entries are listed in the order written here.
+# `tags` drive the filter chips at the top of the page (/publications/#nlp).
 #
 # Example entry:
 # - id: "paper-short-name"          # optional anchor, link as /publications/#paper-short-name
 #   title: "Paper title"
 #   authors: "**Junbo Koh**, Coauthor A, Coauthor B"   # Markdown; bold your name
 #   venue: "CHI 2026"
+#   tags: [aied, nlp]                                  # filter chips; slugs from _data/publication_tags.yml
 #   image: "/assets/img/publications/example.png"     # optional teaser
 #   note: "Honorable Mention"                          # optional
 #   url: "https://example.com/paper.pdf"               # optional; makes the title a link
@@ -21,6 +23,7 @@
 preprints:
   - title: "Rewarding How Models Think Pedagogically: Integrating Pedagogical Reasoning and Thinking Rewards for LLMs in Education"
     authors: "Unggi Lee, Jiyeong Bae, Jaehyeon Park, Haeun Park, Taejun Park, Younghoon Jeon, Sungmin Cho, **Junbo Koh**, Yeil Jeong, and Gyeonggeon Lee"
+    tags: [nlp]
     venue: "arXiv:2601.14560 (2026)"
     note: "Under review"
     url: "https://arxiv.org/abs/2601.14560"
@@ -30,6 +33,7 @@ preprints:
 
   - title: "OpenLearnLM Benchmark: A Unified Framework for Evaluating Knowledge, Skill, and Attitude in Educational Large Language Models"
     authors: "Unggi Lee, Sookbun Lee, Heungsoo Choi, Jinseo Lee, Haeun Park, Younghoon Jeon, Sungmin Cho, Minju Kang, **Junbo Koh**, Jiyeong Bae, Minwoo Nam, Juyeon Eun, Yeonji Jung, and Yeil Jeong"
+    tags: [nlp]
     venue: "arXiv:2601.13882 (2026)"
     note: "Under review"
     url: "https://arxiv.org/abs/2601.13882"
@@ -41,28 +45,25 @@ conferences:
   # 2026
   - title: "Peer and Tutor in One: A Productive Failure-Based Architecture for Multi-Role Conversational Agents in Physics Learning"
     authors: "**Junbo Koh**, Minsun Cho, and Sunyoung Keum"
+    tags: [aied]
     venue: "AIED 2026: The 27th International Conference on Artificial Intelligence in Education"
     url: "https://link.springer.com/chapter/10.1007/978-3-032-29760-0_17"
     links:
       - label: "Springer"
         url: "https://link.springer.com/chapter/10.1007/978-3-032-29760-0_17"
 
-  - title: "Agents for Agency: Development of AI Agents to Support Agency in Generative AI-Integrated Data Analysis"
-    authors: "**Junbo Koh**, Woohyeok Kang, Yohan Jo, and Cheolil Lim"
-    venue: "ICER 2026: The 26th International Conference on Education Research"
-    links:
-      - label: "Conference"
-        url: "https://icer.snu.ac.kr/main/main.php"
-
-  - title: "Design and Development of an AI System for Generating Instructional Materials Based on Instructional Design Principles: A Case Study of Korean Medicine Education"
-    authors: "Cheolil Lim, **Junbo Koh**, Hoetaek Rah, Gyuri Byun, and Hyesung Kwon"
-    venue: "2026 Spring Conference of the Korean Society for Educational Technology"
+  - title: "Learner Experiences of Bounded Artificial Agency in Inquiry Learning: Between Pedagogical Steering and Frustration"
+    authors: "**Junbo Koh**, Minsun Cho, Jahyun Jeong, Yoomin Kim, Chanhui Kim, and Sunyoung Keum"
+    tags: [edutech]
+    venue: "British Journal of Educational Technology"
+    note: "SSCI, Q1, Under review"
 
   # 2025
   - title: "Development and Implementation of a Generative Artificial Intelligence-Enhanced Simulation to Enhance Problem-Solving Skills for Pre-Service Teachers"
     authors: "Jieun Lim, Unggi Lee, **Junbo Koh**, Yeil Jeong, Yunseo Lee, Gyuri Byun, Haewon Jung, Yoonsun Jang, Sanghyeok Lee, and Jewoong Moon"
+    tags: [edutech]
     venue: "Computers & Education, 232, 105306 (2025)"
-    note: "SSCI, Q1"
+    note: "SCIE/SSCI, Q1"
     url: "https://doi.org/10.1016/j.compedu.2025.105306"
     links:
       - label: "DOI"
@@ -70,6 +71,7 @@ conferences:
 
   - title: "Generative Artificial Intelligence in Educational Game Design: Nuanced Challenges, Design Implications, and Future Research"
     authors: "Jewoong Moon, Unggi Lee, **Junbo Koh**, Yeil Jeong, Yunseo Lee, Gyuri Byun, and Jieun Lim"
+    tags: [edutech]
     venue: "Technology, Knowledge and Learning, 30, 447–459 (2025)"
     url: "https://doi.org/10.1007/s10758-024-09756-z"
     links:
@@ -78,20 +80,29 @@ conferences:
 
   - title: "Pedagogy-R1: Pedagogical Large Reasoning Model and Well-balanced Educational Benchmark"
     authors: "Unggi Lee, Jaeyong Lee, Jiyeong Bae, Yeil Jeong, **Junbo Koh**, Gyeonggeon Lee, Gunho Lee, Taekyung Ahn, and Hyeoncheol Kim"
+    tags: [nlp]
     venue: "CIKM 2025: The 34th ACM International Conference on Information and Knowledge Management"
+    url: "https://dl.acm.org/doi/10.1145/3746252.3761133"
     links:
+      - label: "ACM DL"
+        url: "https://dl.acm.org/doi/10.1145/3746252.3761133"
       - label: "Conference"
         url: "https://cikm2025.org/"
 
   - title: "LLaVA-Docent-V2: Improving Data Quality to Train Large Multimodal Models for Art Appreciation Education"
     authors: "Unggi Lee, Yoorim Son, Jaeyoon Shin, Gyuri Byun, Yunseo Lee, **Junbo Koh**, Minji Jeon, and Hyeoncheol Kim"
+    tags: [aied]
     venue: "ITS 2025: The 21st International Conference on Intelligent Tutoring Systems"
+    url: "https://link.springer.com/chapter/10.1007/978-3-031-98284-2_17"
     links:
+      - label: "Springer"
+        url: "https://link.springer.com/chapter/10.1007/978-3-031-98284-2_17"
       - label: "Conference"
         url: "https://iis-international.org/its2025-generative-systems/"
 
   - title: "A Development of a Simulation-Based AI System for Supporting Physics Inquiry-Based Learning"
     authors: "**Junbo Koh**, Chanhui Kim, Yoomin Kim, Jahyun Jeong, Minsun Cho, Jiwoong Park, and Sunyoung Keum"
+    tags: [edutech]
     venue: "AECT 2025: Association for Educational Communications and Technology International Convention"
     links:
       - label: "Conference"
@@ -99,98 +110,37 @@ conferences:
 
   - title: "Clarifying AI Education: A Scoping Review of AI-Utilization and AI-Convergence Education in Korean Elementary Education"
     authors: "Kyungwook Jeong, **Junbo Koh**, Yeono Son, Minsung Kim, and Sunyoung Keum"
+    tags: [edutech]
     venue: "AECT 2025: Association for Educational Communications and Technology International Convention"
     links:
       - label: "Conference"
         url: "https://www.aect.org/events/event-description?CalendarEventKey=440d8814-367b-407a-8a2a-0196022eecc4&Home=%2Fhome"
 
-  - title: "AIED for Student Agency in the Generative AI Era: A Scoping Review"
-    authors: "**Junbo Koh**"
-    venue: "ICoME 2025: The 23rd International Conference for Media in Education"
-    links:
-      - label: "Conference"
-        url: "https://www.icome.media/"
-
-  - title: "Development of an Agentic AI for Novice Instructional Designers"
-    authors: "Unggi Lee, Hyeseong Kwon, **Junbo Koh**, Yeil Jeong, Gyuri Byun, Junseo Kim, Minji Jeon, and Cheolil Lim"
-    venue: "ICER 2025: The 25th International Conference on Education Research"
-    links:
-      - label: "Conference"
-        url: "https://icer.snu.ac.kr/main/main.php"
-
-  - title: "Development of a Teacher Competency Model for AI Digital Textbook-Integrated Instruction"
-    authors: "Kungwook Jeong, Daeun Jeong, Hyejin Lee, and **Junbo Koh**\\*"
-    venue: "Journal of Educational Technology, 41(4), 1643–1682 (2025)"
-    note: "Corresponding author"
-    url: "https://doi.org/10.17232/KSET.41.4.1643"
+  # 2024
+  - title: "I See You: Teacher Analytics with GPT-4 Vision-Powered Observational Assessment"
+    authors: "Unggi Lee, Yeil Jeong, **Junbo Koh**, Gyuri Byun, Yunseo Lee, Hyunwoong Lee, Seunmin Eun, Jewoong Moon, Cheolil Lim, and Hyeoncheol Kim"
+    tags: [edutech]
+    venue: "Smart Learning Environments, 11(1), 48 (2024)"
+    note: "SSCI, Q1"
+    url: "https://doi.org/10.1186/s40561-024-00335-4"
     links:
       - label: "DOI"
-        url: "https://doi.org/10.17232/KSET.41.4.1643"
+        url: "https://doi.org/10.1186/s40561-024-00335-4"
 
-  - title: "Development of a Prototype Simulation-Based AI System to Support Physics Inquiry Learning"
-    authors: "**Junbo Koh**, Jiwoong Park, Chanhui Kim, Yoomin Kim, and Sunyoung Keum"
-    venue: "The Journal of Educational Information and Media, 31(2), 493–517 (2025)"
-    url: "https://doi.org/10.15833/KAFEIAM.31.2.493"
+  - title: "Can ChatGPT Be a Debate Partner? Developing ChatGPT-Based Application “DEBO” for Debate Education, Findings and Limitations"
+    authors: "Unggi Lee, Yeil Jeong, **Junbo Koh**, Gyuri Byun, Yunseo Lee, Youngsun Hwang, Hyeoncheol Kim, and Cheolil Lim"
+    tags: [edutech]
+    venue: "Educational Technology & Society, 27(2), 321–346 (2024)"
+    note: "SSCI, Q1"
+    url: "https://www.jstor.org/stable/48766178"
     links:
-      - label: "DOI"
-        url: "https://doi.org/10.15833/KAFEIAM.31.2.493"
-
-  - title: "A Scoping Review of AI Utilization and AI Convergence Education in Korean Elementary Education"
-    authors: "Kungwook Jeong, **Junbo Koh**, Yeono Son, Minsung Kim, and Sunyoung Keum"
-    venue: "The Journal of Educational Information and Media, 31(1), 169–193 (2025)"
-    url: "https://doi.org/10.15833/KAFEIAM.31.1.169"
-    links:
-      - label: "DOI"
-        url: "https://doi.org/10.15833/KAFEIAM.31.1.169"
-
-  - title: "Learner Perceptions and the Feasibility of Implementing AI Tutors in Distance Universities: Focusing on Improvements to the Current Tutoring System"
-    authors: "Jahyun Jeong, **Junbo Koh**, and Haengsu Shin"
-    venue: "Journal of Lifelong Learning Society, 21(3), 82–112 (2025)"
-    url: "https://doi.org/10.26857/JLLS.2025.8.21.3.82"
-    links:
-      - label: "DOI"
-        url: "https://doi.org/10.26857/JLLS.2025.8.21.3.82"
-
-  - title: "Designing a Mathematics Dashboard for Data-Driven Personalized Instruction: Focusing on the Cognitive Diagnostic Assessment Platform ‘MathCoDi’"
-    authors: "Eunseon Lim, Hyowon Wang, Juhyeon Park, **Junbo Koh**, Cheolil Lim, and Yunjoo Yoo"
-    venue: "Journal of Educational Technology, 41(2), 509–546 (2025)"
-    url: "https://doi.org/10.17232/KSET.41.2.509"
-    links:
-      - label: "DOI"
-        url: "https://doi.org/10.17232/KSET.41.2.509"
-
-  - title: "Development of a Programming-Based Instructional Program to Enhance Digital Competency of Pre-Service Social Studies Teachers"
-    authors: "Sang-Il Lee, Bokyung Go, **Junbo Koh**, Sechang Kim, Woohyung Kim, and Cheolil Lim"
-    venue: "Journal of Educational Technology, 41(1), 79–109 (2025)"
-    url: "https://doi.org/10.17232/KSET.41.1.79"
-    links:
-      - label: "DOI"
-        url: "https://doi.org/10.17232/KSET.41.1.79"
-
-  - title: "Development of a Teacher Competency Model for AI Digital Textbook-Integrated Instruction: Based on the High-Touch High-Tech Approach"
-    authors: "Kungwook Jeong, Daeun Jeong, Hyejin Lee, and **Junbo Koh**\\*"
-    venue: "2025 Joint Fall Conference of the Korean Association for Educational Information and Media and the Korean Society for Educational Technology"
-    note: "Corresponding author"
-
-  - title: "Development of Pedagogical Reasoning and a Pedagogical Benchmark for Large Language Models"
-    authors: "Unggi Lee, Jaeyong Lee, **Junbo Koh**, and Gyeonggeon Lee"
-    venue: "2025 Spring Conference of the Korean Society for Educational Technology"
-
-  - title: "Exploring Pre-Service Teacher Education Approaches for Enhancing AI Digital Textbook Utilization Competencies Based on Educational Needs Analysis"
-    authors: "Cheolil Lim, **Junbo Koh**, Juhyun Park, Seongkyung Park, Junseo Kim, and Kungwook Jeong"
-    venue: "2025 Spring Conference of the Korean Society for Educational Technology"
-
-  - title: "Development of a Simulation-Based AI System to Support Physics Inquiry Processes"
-    authors: "**Junbo Koh**, Jiwoong Park, Chanhui Kim, Yoomin Kim, and Sunyoung Keum"
-    venue: "2025 Spring Conference of the Korean Association for Educational Information and Media"
-
-  - title: "Development of a Large Language Model-Based ISD Agent to Support Novice Instructional Designers"
-    authors: "Hyesung Kwon, **Junbo Koh**, Yeil Jeong, Gyuri Byun, Junseo Kim, Cheolil Lim, Unggi Lee, and Minji Jeon"
-    venue: "2025 Spring Conference of the Korean Association for Educational Information and Media"
+      - label: "JSTOR"
+        url: "https://www.jstor.org/stable/48766178"
 
 demos:
   - title: "Slidecaster: Human-AI Collaborative Authoring of Pedagogically Grounded Micro-Learning Videos"
     authors: "**Junbo Koh**, Hoetaek Rah, Hyeseong Kwon, Gyuri Byun, and Cheolil Lim"
+    tags: [aied]
     venue: "AIED 2026: The 27th International Conference on Artificial Intelligence in Education"
     note: "Demo"
     links:
@@ -199,10 +149,16 @@ demos:
 
   - title: "Agent for Agency: Developing an AI Agent to Support Student Agency in Generative AI–Supported Learning Environments"
     authors: "**Junbo Koh**, Jiyoon Han, Woohyeok Kang, Cheolil Lim, and Yohan Jo"
+    tags: [aied]
     venue: "LAK26: The 16th International Learning Analytics and Knowledge Conference"
     note: "Poster"
 
-  - title: "A Study on Teacher Education University Faculty Members' Perceptions of the Functions and Use of AI Digital Textbooks"
-    authors: "Cheolil Lim, Seongkyung Park, Juhyun Park, **Junbo Koh**, Junseo Kim, and Kungwook Jeong"
-    venue: "2025 Spring Conference of the Korean Society for Educational Technology"
-    note: "Poster"
+  - title: "Generative Agent for Teacher Training: Designing Educational Problem-Solving Simulations with Large Language Model-Based Agents for Pre-Service Teachers"
+    authors: "Unggi Lee, Sanghyeok Lee, **Junbo Koh**, Yeil Jeong, Haewon Jung, Gyuri Byun, Yunseo Lee, Jewoong Moon, Jieun Lim, and Hyeoncheol Kim"
+    tags: [aied]
+    venue: "NeurIPS 2023 Workshop on Generative AI for Education (GAIED)"
+    note: "Workshop Paper"
+    url: "https://neurips.cc/virtual/2023/79074"
+    links:
+      - label: "NeurIPS"
+        url: "https://neurips.cc/virtual/2023/79074"

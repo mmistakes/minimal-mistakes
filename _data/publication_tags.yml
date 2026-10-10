@@ -1,0 +1,4 @@
+# Filter chips on the Publications page, in display order (slug used in `tags` -> label on the site).
+aied: "AIED"
+nlp: "NLP"
+edutech: "EduTech"

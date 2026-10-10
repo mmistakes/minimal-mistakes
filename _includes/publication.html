@@ -3,7 +3,7 @@
 {%- endcomment -%}
 {%- assign pub = include.publication -%}
 {%- assign title_url = pub.url -%}
-<div class="pub-container"{% if pub.id %} id="{{ pub.id }}"{% endif %}>
+<div class="pub-container"{% if pub.id %} id="{{ pub.id }}"{% endif %} data-categories="{{ pub.tags | join: ' ' }}">
   {%- if pub.image %}
   <div class="pub-teaser-image">
     <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">

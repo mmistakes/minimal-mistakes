@@ -26,9 +26,9 @@
     });
     if (headings.length > 0) toc.hidden = false;
   }
-  // Blog category filter, driven by the URL hash (/blog/#llm)
-  var chips = document.querySelector("[data-blog-categories]");
-  if (chips) {
+  // Chip filters driven by the URL hash: blog categories (/blog/#llm) and publication topics (/publications/#nlp)
+  var setupFilter = function (chips, groupSelector) {
+    if (!chips) return;
     var applyFilter = function () {
       var current = decodeURIComponent(location.hash.slice(1));
       if (!chips.querySelector('[data-category="' + current + '"]')) current = "";
@@ -37,9 +37,9 @@
         chip.classList.toggle("is-active", active);
         chip.setAttribute("aria-current", active ? "true" : "false");
       });
-      document.querySelectorAll("[data-blog-year]").forEach(function (group) {
+      document.querySelectorAll(groupSelector).forEach(function (group) {
         var visible = 0;
-        group.querySelectorAll("li[data-categories]").forEach(function (item) {
+        group.querySelectorAll("[data-categories]").forEach(function (item) {
           var match = !current || item.getAttribute("data-categories").split(" ").indexOf(current) !== -1;
           item.hidden = !match;
           if (match) visible++;
@@ -54,5 +54,7 @@
     });
     window.addEventListener("hashchange", applyFilter);
     applyFilter();
-  }
+  };
+  setupFilter(document.querySelector("[data-blog-categories]"), "[data-blog-year]");
+  setupFilter(document.querySelector("[data-pub-tags]"), "[data-filter-group]");
 })();
