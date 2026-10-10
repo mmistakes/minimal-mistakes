@@ -56,5 +56,27 @@
   height: 1000px;
   max-height: calc(100vh - 120px);
   min-height: 600px;
+  border: 1px solid $grey-color-light;
   transform: translateX(-50%);
+}
+
+.cv-actions {
+  // Same width and centering as .cv-embed, so the links line up with its right edge
+  position: relative;
+  left: 50%;
+  width: 1000px;
+  max-width: calc(100vw - #{$spacing-unit});
+  margin-bottom: 10px;
+  transform: translateX(-50%);
+  font-size: $small-font-size;
+  font-weight: 500;
+  text-align: right;
+
+  a {
+    color: $grey-color-dark;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
 }

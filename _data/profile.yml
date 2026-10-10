@@ -3,8 +3,9 @@
 avatar: "/assets/img/profile.jpg"
 avatar_alt: "Junbo Koh"
 
-# CV page. Embeds the PDF at `pdf`; falls back to a link to `url` if `pdf` is empty.
-# To update: in Google Docs, File > Download > PDF, then replace assets/files/cv.pdf.
+# CV page. Embeds the Google Doc `google_doc` (the ID in docs.google.com/document/d/<ID>/edit),
+# so edits to the doc show up on the site without a rebuild. The doc must be shared as
+# "Anyone with the link: Viewer". Falls back to a link to `url` if `google_doc` is empty.
 cv:
-  pdf: "/assets/files/cv.pdf"
+  google_doc: "1PGgfaXFf4T5BaNPduZi3TPmRhdUfYt5ULsStewoAdBs"
   url: "https://docs.google.com/document/d/1PGgfaXFf4T5BaNPduZi3TPmRhdUfYt5ULsStewoAdBs/edit?usp=sharing"

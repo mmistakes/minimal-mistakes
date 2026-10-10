@@ -29,7 +29,7 @@ Source of [ridealist.github.io](https://ridealist.github.io): an academic homepa
 | Home `/` | `index.md` | Intro text, profile photo, News |
 | Publications `/publications/` | `publications.md` | Generated from `_data/publications.yml` |
 | Blog `/blog/` | `blog.md` | Posts in `_posts/`, grouped by year, with a category filter |
-| CV `/cv/` | `cv.md` | Embeds `assets/files/cv.pdf` |
+| CV `/cv/` | `cv.md` | Embeds the CV Google Doc (live) |
 
 Most content lives in YAML files under `_data/`, so day-to-day updates rarely need HTML changes.
 
@@ -135,12 +135,12 @@ comments: false  # optional: comments (utterances) are on by default
 
 ### CV
 
-The CV page embeds `assets/files/cv.pdf`. To update it, export the Google Doc as PDF (File → Download → PDF) and replace that file. The paths are set in `_data/profile.yml`:
+The CV page embeds the CV Google Doc, so edits to the doc appear on the site without a rebuild. It also offers a "Download PDF" link that exports the latest version of the doc. The doc must be shared as "Anyone with the link: Viewer". The source is set in `_data/profile.yml`:
 
 ```yml
 cv:
-  pdf: "/assets/files/cv.pdf"
-  url: "https://docs.google.com/document/d/..."   # fallback link if pdf is empty
+  google_doc: "1PGgf..."                          # ID from docs.google.com/document/d/<ID>/edit
+  url: "https://docs.google.com/document/d/..."   # fallback link if google_doc is empty
 ```
 
 ## Development
