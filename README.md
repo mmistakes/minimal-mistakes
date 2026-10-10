@@ -4,7 +4,8 @@
 
 Source of [ridealist.github.io](https://ridealist.github.io): an academic homepage built with Jekyll. The design is adapted from the [Bay](https://github.com/eliottvincent/bay) theme by Eliott Vincent, with the layout modeled on [jeongeonpark.com](https://jeongeonpark.com/).
 
-![Home page](docs/screenshot.png)
+![Bay theme demo](docs/bay-screenshot.png)
+*The original [Bay](https://github.com/eliottvincent/bay) theme demo (screenshot from the Bay repository, ISC License).*
 
 ## Table of contents
 
